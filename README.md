@@ -4,4 +4,4 @@
 
 ## ALL TUTORIALS & PROJECTS
 
-## [My Tutorials](https://github.com/omeatai/src-AI-Software/tree/main/src-tutorials)
+## [My Tutorials](https://github.com/omeatai/src-AI-Software/tree/main/)
