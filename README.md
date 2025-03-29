@@ -26,7 +26,7 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 </details>
 
 <details>
-  <summary>💼 Projects</summary>
+  <summary>💼 Projects/Portfolio</summary>
 
   - [ ] [1. AWS PROJECTS]()
   - [ ] [2. AZURE PROJECTS]()
@@ -44,8 +44,8 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
   - [ ] [3. HTML & CSS TUTORIALS]()
   - [ ] [4. JAVASCRIPT TUTORIALS]() 
   - [ ] [5. REACT TUTORIALS]()
-  - [ ] [5. NODE & NEXT TUTORIALS]()
-  - [ ] [5. JAVA TUTORIALS]()
+  - [ ] [6. NODE & NEXT TUTORIALS]()
+  - [ ] [7. JAVA TUTORIALS]()
 
 </details>
 
