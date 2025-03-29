@@ -29,14 +29,14 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
   <summary>💼 Projects</summary>
   
   <details>
-  <summary>🏀 AWS Projects</summary>
+  <summary>AWS Projects</summary>
   
   - [ ] [1. AWS]()
 
   </details>
 
   <details>
-  <summary>🏀 AZURE Projects</summary>
+  <summary>AZURE Projects</summary>
   
   - [ ] [1. AWS]()
 
@@ -45,24 +45,24 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 </details>
 
 <details>
-  <summary>👨🏽‍🎓Tutorials</summary>
+  <summary>🟨 Tutorials</summary>
 
   <details>
-  <summary>🏀 Python Tutorials</summary>
+  <summary>Python Tutorials</summary>
   
   - [ ] [1. AWS]()
 
   </details>
 
   <details>
-  <summary>🏀 Linux Tutorials</summary>
+  <summary>Linux Tutorials</summary>
   
   - [ ] [1. AWS]()
 
   </details>
 
   <details>
-  <summary>🏀 React Tutorials</summary>
+  <summary>React Tutorials</summary>
   
   - [ ] [1. AWS]()
 
