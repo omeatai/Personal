@@ -27,21 +27,16 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 
 <details>
   <summary>💼 Projects</summary>
-  
-  <details>
-  <summary>AWS Projects</summary>
-  
+
   - [ ] [1. AWS]()
-
-  </details>
-
-  <details>
-  <summary>AZURE Projects</summary>
-  
-  - [ ] [1. AWS]()
-
-  </details>
-
+  - [ ] [2. AWS]()
+  - [ ] [3. AWS]()
+  - [ ] [4. AWS]()
+  - [ ] [5. AWS]()
+  - [ ] [6. AWS]()
+  - [ ] [7. AWS]()
+  - [ ] [8. AWS]()
+ 
 </details>
 
 <details>
