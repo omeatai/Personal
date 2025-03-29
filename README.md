@@ -3,8 +3,8 @@
 <details>
   <summary>🚀 About Me</summary>
 
-  - [ ] Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthusiast, and Cloud Engineer with a strong background in Software Engineering and Business Analysis.
-  - [ ] I’m passionate about securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
+Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthusiast, and Cloud Engineer with a strong background in Software Engineering and Business Analysis. I’m passionate about securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
+
   - [ ] 📌Cybersecurity & SOC Experience
       - [ ] ⚡Conducted threat detection and incident response using Splunk and network monitoring tools.
       - [ ] ⚡Performed penetration testing with Nmap, Nessus, and Metasploit to assess system vulnerabilities.
