@@ -28,14 +28,45 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 <details>
   <summary>💼 Projects</summary>
   
-  - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+  <details>
+  <summary>🏀 AWS Projects</summary>
+  
+  - [ ] [1. AWS]()
+
+  </details>
+
+  <details>
+  <summary>🏀 AZURE Projects</summary>
+  
+  - [ ] [1. AWS]()
+
+  </details>
 
 </details>
 
 <details>
-  <summary>👨🏻‍💻 Tutorials</summary>
+  <summary>👨🏽‍🎓Tutorials</summary>
+
+  <details>
+  <summary>🏀 Python Tutorials</summary>
   
-  - [ ] [https://github.com/omeatai/src-AI-Software/tree/main/](https://github.com/omeatai/src-AI-Software/tree/main/)
+  - [ ] [1. AWS]()
+
+  </details>
+
+  <details>
+  <summary>🏀 Linux Tutorials</summary>
+  
+  - [ ] [1. AWS]()
+
+  </details>
+
+  <details>
+  <summary>🏀 React Tutorials</summary>
+  
+  - [ ] [1. AWS]()
+
+  </details>
 
 </details>
 
