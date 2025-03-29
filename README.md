@@ -46,3 +46,16 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 - [ ] [7. JAVA TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
 
 </details>
+
+<details>
+  <summary>🟨 Youtube Channels</summary>
+
+- [ ] [1. PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
+- [ ] [2. LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
+- [ ] [3. HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
+- [ ] [4. JAVASCRIPT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/javascript/README.md)
+- [ ] [5. REACT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
+- [ ] [6. NODE & NEXT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/node/README.md)
+- [ ] [7. JAVA TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
+
+</details>
