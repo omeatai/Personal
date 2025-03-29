@@ -48,7 +48,7 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 </details>
 
 <details>
-  <summary>🟨 Youtube Channels</summary>
+  <summary>🔴 Youtube Channels</summary>
 
 - [ ] [1. PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [2. LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
