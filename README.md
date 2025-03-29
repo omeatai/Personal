@@ -58,7 +58,6 @@
 <details>
   <summary>🟥 Youtube Channels</summary>
 
-- [ ] [1. PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [CodingAddict](https://www.codingaddict.io/)
 - [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
 - [ ] [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode/playlists)
