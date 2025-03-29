@@ -1,16 +1,23 @@
 # Personal
 
 <details>
-  <summary>My Portfolio</summary>
+  <summary>My Website</summary>
   
-  - [ ] My Website - [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+  - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 
 </details>
 
 <details>
-  <summary>My Tutorials</summary>
+  <summary>Project</summary>
   
-  - [ ] Tutorials - [My Tutorials](https://github.com/omeatai/src-AI-Software/tree/main/)
+  - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
+
+<details>
+  <summary>Tutorials</summary>
+  
+  - [ ] [https://github.com/omeatai/src-AI-Software/tree/main/](https://github.com/omeatai/src-AI-Software/tree/main/)
 
 </details>
 
