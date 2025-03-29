@@ -1,4 +1,4 @@
-# Python Tutorials
+# Linux Tutorials
 
 <details>
   <summary>🚀 About Me</summary>
