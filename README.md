@@ -31,8 +31,6 @@ Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Enthus
 - [ ] [1. AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [2. AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 - [ ] [3. AWS]()
-- [ ] [4. AWS]()
-- [ ] [5. AWS]()
 
 </details>
 
