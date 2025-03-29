@@ -31,14 +31,14 @@
 - [ ] [1. AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [2. AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 - [ ] [3. DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
-- [ ] [3. REACT-FIREBASE-TODO-APP](https://github.com/omeatai/Firebase-Todo-App)
-- [ ] [3. NEXT-OPEN-WEATHER-APP](https://github.com/omeatai/open-weather-app)
-- [ ] [3. REACT-CHATBOT-APP](https://github.com/omeatai/ChatBot-API)
-- [ ] [3. REACT-MOVIE-SEARCH-APP](https://github.com/omeatai/Movie-search-app)
-- [ ] [3. REACT-QR-CODE-GENERATOR-APP](https://github.com/omeatai/QRcode-Generator)
-- [ ] [3. NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
-- [ ] [3. MERN-PROJECT-LIBRARY-TRACKER](https://github.com/omeatai/mern-project-library-tracker)
-- [ ] [3. MERN-PROJECT-AUTH-REDUX-TOOLKIT-APP](https://github.com/omeatai/mern-project-auth-redux)
+- [ ] [4. REACT-FIREBASE-TODO-APP](https://github.com/omeatai/Firebase-Todo-App)
+- [ ] [5. NEXT-OPEN-WEATHER-APP](https://github.com/omeatai/open-weather-app)
+- [ ] [6. REACT-CHATBOT-APP](https://github.com/omeatai/ChatBot-API)
+- [ ] [7. REACT-MOVIE-SEARCH-APP](https://github.com/omeatai/Movie-search-app)
+- [ ] [8. REACT-QR-CODE-GENERATOR-APP](https://github.com/omeatai/QRcode-Generator)
+- [ ] [9. NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
+- [ ] [10. MERN-PROJECT-LIBRARY-TRACKER](https://github.com/omeatai/mern-project-library-tracker)
+- [ ] [11. MERN-PROJECT-AUTH-REDUX-TOOLKIT-APP](https://github.com/omeatai/mern-project-auth-redux)
 
 </details>
 
