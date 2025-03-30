@@ -1,0 +1,11 @@
+.app--input {
+  font-size: 2rem;
+  width: 60vw;
+  max-width: 720px;
+  padding: 15px 60px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  line-height: 30px;
+}
