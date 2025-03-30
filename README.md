@@ -240,7 +240,7 @@
   - [ ] [11-AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
   - [ ] [12-BUILD SCALABLE APPLICATIONS USING DOCKER AND KUBERNETES](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
   - [ ] [13-AWS SERVERLESS APIS & APPS - A COMPLETE INTRODUCTION](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
-  - [ ] [14-THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/
+  - [ ] [14-THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
   - [ ] [15-LEARN TO DEPLOY CONTAINERS ON AWS IN 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
   - [ ] [16-AWS LAMBDA AND THE SERVERLESS FRAMEWORK - HANDS ON LEARNING!](https://www.udemy.com/course/aws-lambda-serverless/)
   - [ ] [17-AWS LAMBDA, PYTHON(BOTO3) & SERVERLESS- BEGINNER TO ADVANCED](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
