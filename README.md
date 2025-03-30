@@ -298,7 +298,7 @@
 </details>
 
 <details>
-  <summary>📁Others</summary>
+  <summary>🥪Others</summary>
 
 - [ ] [W3SCHOOLS](https://www.w3schools.com/)
 
