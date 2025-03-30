@@ -28,31 +28,31 @@
 <details>
   <summary>💼 Projects/Portfolio</summary>
 
-- [ ] [1. AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
-- [ ] [2. AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
-- [ ] [3. DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
-- [ ] [4. REACT-FIREBASE-TODO-APP](https://github.com/omeatai/Firebase-Todo-App)
-- [ ] [5. NEXT-OPEN-WEATHER-APP](https://github.com/omeatai/open-weather-app)
-- [ ] [6. REACT-CHATBOT-APP](https://github.com/omeatai/ChatBot-API)
-- [ ] [7. REACT-MOVIE-SEARCH-APP](https://github.com/omeatai/Movie-search-app)
-- [ ] [8. REACT-QR-CODE-GENERATOR-APP](https://github.com/omeatai/QRcode-Generator)
-- [ ] [9. NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
-- [ ] [10. MERN-PROJECT-LIBRARY-TRACKER](https://github.com/omeatai/mern-project-library-tracker)
-- [ ] [11. MERN-PROJECT-AUTH-REDUX-TOOLKIT-APP](https://github.com/omeatai/mern-project-auth-redux)
+- [ ] [AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
+- [ ] [AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
+- [ ] [DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
+- [ ] [REACT-FIREBASE-TODO-APP](https://github.com/omeatai/Firebase-Todo-App)
+- [ ] [NEXT-OPEN-WEATHER-APP](https://github.com/omeatai/open-weather-app)
+- [ ] [REACT-CHATBOT-APP](https://github.com/omeatai/ChatBot-API)
+- [ ] [REACT-MOVIE-SEARCH-APP](https://github.com/omeatai/Movie-search-app)
+- [ ] [REACT-QR-CODE-GENERATOR-APP](https://github.com/omeatai/QRcode-Generator)
+- [ ] [NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
+- [ ] [MERN-PROJECT-LIBRARY-TRACKER](https://github.com/omeatai/mern-project-library-tracker)
+- [ ] [MERN-PROJECT-AUTH-REDUX-TOOLKIT-APP](https://github.com/omeatai/mern-project-auth-redux)
 
 </details>
 
 <details>
   <summary>📂Tutorials</summary>
 
-- [ ] [1. PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
-- [ ] [2. LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
-- [ ] [3. HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
-- [ ] [4. JAVASCRIPT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/javascript/README.md)
-- [ ] [5. REACT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
-- [ ] [6. REACT NATIVE TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/reactn/README.md)
-- [ ] [7. NODE & NEXT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/node/README.md)
-- [ ] [8. JAVA TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
+- [ ] [PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
+- [ ] [LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
+- [ ] [HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
+- [ ] [JAVASCRIPT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/javascript/README.md)
+- [ ] [REACT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
+- [ ] [REACT NATIVE TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/reactn/README.md)
+- [ ] [NODE & NEXT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/node/README.md)
+- [ ] [JAVA TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
 
 </details>
 
@@ -94,103 +94,103 @@
 </details>
 
 <details>
-  <summary>🔒Hosts</summary>
+  <summary>☀️Hosts</summary>
 
-- [ ] [1-VERCEL](https://vercel.com/dashboard)
-- [ ] [2-NETLIFY](https://app.netlify.com/teams/omeatai/overview)
-- [ ] [3-CPANEL](https://cpanel-p3.web-hosting.com/cpsess5287646472/frontend/jupiter/index.html?login=1&post_login=79973471504338)
-- [ ] [4-NAMECHEAP](https://ap.www.namecheap.com/)
-- [ ] [5-MONGODB ATLAS](https://cloud.mongodb.com/)
-- [ ] [6-SUPABASE](https://supabase.com/dashboard/projects)
-- [ ] [7-FIREBASE](https://firebase.google.com/)
-- [ ] [8-IMGBB](https://anyi-o.imgbb.com/)
+- [ ] [VERCEL](https://vercel.com/dashboard)
+- [ ] [NETLIFY](https://app.netlify.com/teams/omeatai/overview)
+- [ ] [CPANEL](https://cpanel-p3.web-hosting.com/cpsess5287646472/frontend/jupiter/index.html?login=1&post_login=79973471504338)
+- [ ] [NAMECHEAP](https://ap.www.namecheap.com/)
+- [ ] [MONGODB ATLAS](https://cloud.mongodb.com/)
+- [ ] [SUPABASE](https://supabase.com/dashboard/projects)
+- [ ] [FIREBASE](https://firebase.google.com/)
+- [ ] [IMGBB](https://anyi-o.imgbb.com/)
 
 </details>
 
 <details>
   <summary>🔒APIs</summary>
 
-- [ ] [1-PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
-- [ ] [2-PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
-- [ ] [3-THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
-- [ ] [4-RANDOM USER GENERATOR](https://randomuser.me/)[WWW](https://randomuser.me/api/)
-- [ ] [5-RANDOM USERS](https://xsgames.co/randomusers/)
-- [ ] [6-JSON PLACEHOLDER](https://jsonplaceholder.typicode.com/)
-- [ ] [7-OPEN WEATHER MAP](https://openweathermap.org/api)
-- [ ] [8-COIN MARKET CAP](https://coinmarketcap.com/api/)
-- [ ] [9-NEWS API](https://newsapi.org/docs/get-started)
-- [ ] [10-REST COUNTRIES](https://restcountries.com/)
-- [ ] [11-COUNTRY FLAGS](https://restcountries.com/#flags)
-- [ ] [12-COUNTRY CODES](https://restcountries.com/#country-codes)
-- [ ] [13-COUNTRY CURRENCY](https://restcountries.com/#currency)
-- [ ] [14-COUNTRY LANGUAGES](https://restcountries.com/#languages)
-- [ ] [15-COUNTRY TIME ZONES](https://restcountries.com/#timezones)
-- [ ] [16-COUNTRY POPULATION](https://restcountries.com/#population)
+- [ ] [PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
+- [ ] [PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
+- [ ] [THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
+- [ ] [RANDOM USER GENERATOR](https://randomuser.me/)[WWW](https://randomuser.me/api/)
+- [ ] [RANDOM USERS](https://xsgames.co/randomusers/)
+- [ ] [JSON PLACEHOLDER](https://jsonplaceholder.typicode.com/)
+- [ ] [OPEN WEATHER MAP](https://openweathermap.org/api)
+- [ ] [COIN MARKET CAP](https://coinmarketcap.com/api/)
+- [ ] [NEWS API](https://newsapi.org/docs/get-started)
+- [ ] [REST COUNTRIES](https://restcountries.com/)
+- [ ] [COUNTRY FLAGS](https://restcountries.com/#flags)
+- [ ] [COUNTRY CODES](https://restcountries.com/#country-codes)
+- [ ] [COUNTRY CURRENCY](https://restcountries.com/#currency)
+- [ ] [COUNTRY LANGUAGES](https://restcountries.com/#languages)
+- [ ] [COUNTRY TIME ZONES](https://restcountries.com/#timezones)
+- [ ] [COUNTRY POPULATION](https://restcountries.com/#population)
 
 </details>
 
 <details>
-  <summary>🔒Frameworks</summary>
+  <summary>🔔Frameworks</summary>
 
-- [ ] [1-REACT](https://react.dev/learn)
-- [ ] [2-NEXTJS](https://nextjs.org/docs)
-- [ ] [3-EXPRESS](https://expressjs.com/en/starter/installing.html)
-- [ ] [4-DJANGO](https://www.djangoproject.com/)
-- [ ] [5-DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
-- [ ] [6-DJANGO REST FRAMEWORK API](https://www.django-rest-framework.org/api-guide/)
-- [ ] [7-DJANGO REST FRAMEWORK AUTH](https://www.django-rest-framework.org/api-guide/authentication/)
-- [ ] [8-DJANGO REST FRAMEWORK PERMISSIONS](https://www.django-rest-framework.org/api-guide/permissions/)
-- [ ] [9-DJANGO REST FRAMEWORK VIEWS](https://www.django-rest-framework.org/api-guide/viewsets/)
-- [ ] [10-DJANGO CLASSES](https://ccbv.co.uk/)
-- [ ] [11-LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
-- [ ] [12-LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
-
-</details>
-
-<details>
-  <summary>🔒Libraries</summary>
-
-- [ ] [1-REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
-- [ ] [2-REACT STRAP](https://reactstrap.github.io/)
-- [ ] [3-ANT DESIGN](https://ant.design/docs/react/introduce)
-- [ ] [4-SHADCN](https://ui.shadcn.com/docs/installation)
-- [ ] [5-MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
-- [ ] [6-TAILWINDCSS](https://tailwindcss.com/docs/installation)
-- [ ] [7-HEADLESS UI](https://headlessui.com/)
-- [ ] [8-SEMANTIC UI](https://react.semantic-ui.com/usage)
-- [ ] [9-SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity)
-- [ ] [10-SANITY STUDIO](https://www.sanity.io/manage)
-- [ ] [11-STRAPI](https://docs.strapi.io/dev-docs/intro)
-- [ ] [12-STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
-- [ ] [13-LODASH](https://lodash.com/docs/)
-- [ ] [14-LOREM IPSUM](https://www.lipsum.com/)
-- [ ] [15-VITE](https://vitejs.dev/)
-- [ ] [16-PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
+- [ ] [REACT](https://react.dev/learn)
+- [ ] [NEXTJS](https://nextjs.org/docs)
+- [ ] [EXPRESS](https://expressjs.com/en/starter/installing.html)
+- [ ] [DJANGO](https://www.djangoproject.com/)
+- [ ] [DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
+- [ ] [DJANGO REST FRAMEWORK API](https://www.django-rest-framework.org/api-guide/)
+- [ ] [DJANGO REST FRAMEWORK AUTH](https://www.django-rest-framework.org/api-guide/authentication/)
+- [ ] [DJANGO REST FRAMEWORK PERMISSIONS](https://www.django-rest-framework.org/api-guide/permissions/)
+- [ ] [DJANGO REST FRAMEWORK VIEWS](https://www.django-rest-framework.org/api-guide/viewsets/)
+- [ ] [DJANGO CLASSES](https://ccbv.co.uk/)
+- [ ] [LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
+- [ ] [LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
 
 </details>
 
 <details>
-  <summary>🔒Lab/Editor</summary>
+  <summary>📁Libraries</summary>
 
-- [ ] [1-REPLIT](https://replit.com/)
-- [ ] [2-GLITCH](https://glitch.com/)
-- [ ] [3-CODEPEN](https://codepen.io/)
-- [ ] [4-CODESANDBOX](https://codesandbox.io/)
-- [ ] [5-STACKBLITZ](https://stackblitz.com/)
-- [ ] [6-PLAYCODE](https://playcode.io/)
-- [ ] [7-STACKOVERFLOW](https://stackoverflow.com/)
-- [ ] [8-DEV](https://dev.to/)
-- [ ] [9-CONVERTCASE](https://convertcase.net/)
-- [ ] [10-CANVA](https://www.canva.com/)
-- [ ] [11-IPICCY](https://ipiccy.com/)
-- [ ] [12-JSON VIEWER](https://codebeautify.org/jsonviewer)
-- [ ] [13-JSON FORMATTER](https://jsonformatter.org/)
-- [ ] [14-JSON EDITOR](https://jsoneditoronline.org/)
+- [ ] [REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
+- [ ] [REACT STRAP](https://reactstrap.github.io/)
+- [ ] [ANT DESIGN](https://ant.design/docs/react/introduce)
+- [ ] [SHADCN](https://ui.shadcn.com/docs/installation)
+- [ ] [MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
+- [ ] [TAILWINDCSS](https://tailwindcss.com/docs/installation)
+- [ ] [HEADLESS UI](https://headlessui.com/)
+- [ ] [SEMANTIC UI](https://react.semantic-ui.com/usage)
+- [ ] [SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity)
+- [ ] [SANITY STUDIO](https://www.sanity.io/manage)
+- [ ] [STRAPI](https://docs.strapi.io/dev-docs/intro)
+- [ ] [STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
+- [ ] [LODASH](https://lodash.com/docs/)
+- [ ] [LOREM IPSUM](https://www.lipsum.com/)
+- [ ] [VITE](https://vitejs.dev/)
+- [ ] [PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
 
 </details>
 
 <details>
-  <summary>🔒AI</summary>
+  <summary>🔑Lab/Editor</summary>
+
+- [ ] [REPLIT](https://replit.com/)
+- [ ] [GLITCH](https://glitch.com/)
+- [ ] [CODEPEN](https://codepen.io/)
+- [ ] [CODESANDBOX](https://codesandbox.io/)
+- [ ] [STACKBLITZ](https://stackblitz.com/)
+- [ ] [PLAYCODE](https://playcode.io/)
+- [ ] [STACKOVERFLOW](https://stackoverflow.com/)
+- [ ] [DEV](https://dev.to/)
+- [ ] [CONVERTCASE](https://convertcase.net/)
+- [ ] [CANVA](https://www.canva.com/)
+- [ ] [IPICCY](https://ipiccy.com/)
+- [ ] [JSON VIEWER](https://codebeautify.org/jsonviewer)
+- [ ] [JSON FORMATTER](https://jsonformatter.org/)
+- [ ] [JSON EDITOR](https://jsoneditoronline.org/)
+
+</details>
+
+<details>
+  <summary>🔲AI</summary>
 
 - [ ] [CHATGPT](https://chat.openai.com/)
 - [ ] [PERPLEXITY AI](https://www.perplexity.ai/)
@@ -205,7 +205,7 @@
 </details>
 
 <details>
-  <summary>🔒AWS</summary>
+  <summary>📀AWS</summary>
 
 - [ ] QUIZ
   - [ ] [EXAM TOPICS FOLDERS](https://quizlet.com/omeatai/folders)
@@ -227,110 +227,71 @@
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional/)
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
 - [ ] COURSES
-  - [ ] [1-AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
-  - [ ] [2-ULTIMATE AWS CERTIFIED CLOUD PRACTITIONER CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
-  - [ ] [3-AMAZON WEB SERVICES (AWS) CERTIFIED - 4 CERTIFICATIONS!](https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/)
-  - [ ] [4-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE SAA-C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
-  - [ ] [5-ULTIMATE AWS CERTIFIED DEVELOPER ASSOCIATE 2023 NEW DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
-  - [ ] [6-ULTIMATE AWS CERTIFIED SYSOPS ADMINISTRATOR ASSOCIATE 2023](https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/)
-  - [ ] [7-ULTIMATE AWS CERTIFIED SECURITY SPECIALTY SCS-C02](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
-  - [ ] [8-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT PROFESSIONAL 2023](https://www.udemy.com/course/aws-solutions-architect-professional/)]
-  - [ ] [9-AWS CERTIFIED DEVOPS ENGINEER PROFESSIONAL 2023 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/)
-  - [ ] [10-AWS APPSYNC & AMPLIFY WITH REACT & GRAPHQL - COMPLETE GUIDE](https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/)
-  - [ ] [11-AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
-  - [ ] [12-BUILD SCALABLE APPLICATIONS USING DOCKER AND KUBERNETES](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
-  - [ ] [13-AWS SERVERLESS APIS & APPS - A COMPLETE INTRODUCTION](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
-  - [ ] [14-THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
-  - [ ] [15-LEARN TO DEPLOY CONTAINERS ON AWS IN 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
-  - [ ] [16-AWS LAMBDA AND THE SERVERLESS FRAMEWORK - HANDS ON LEARNING!](https://www.udemy.com/course/aws-lambda-serverless/)
-  - [ ] [17-AWS LAMBDA, PYTHON(BOTO3) & SERVERLESS- BEGINNER TO ADVANCED](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
-  - [ ] [18-SERVERLESS USING AWS LAMBDA FOR PYTHON DEVELOPERS](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
-  - [ ] [19-DEVOPS DEPLOYMENT AUTOMATION WITH TERRAFORM, AWS AND DOCKER](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
-  - [ ] [20-DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
+  - [ ] [AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
+  - [ ] [ULTIMATE AWS CERTIFIED CLOUD PRACTITIONER CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+  - [ ] [AMAZON WEB SERVICES (AWS) CERTIFIED - 4 CERTIFICATIONS!](https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/)
+  - [ ] [ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE SAA-C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
+  - [ ] [ULTIMATE AWS CERTIFIED DEVELOPER ASSOCIATE 2023 NEW DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
+  - [ ] [ULTIMATE AWS CERTIFIED SYSOPS ADMINISTRATOR ASSOCIATE 2023](https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/)
+  - [ ] [ULTIMATE AWS CERTIFIED SECURITY SPECIALTY SCS-C02](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
+  - [ ] [ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT PROFESSIONAL 2023](https://www.udemy.com/course/aws-solutions-architect-professional/)]
+  - [ ] [AWS CERTIFIED DEVOPS ENGINEER PROFESSIONAL 2023 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/)
+  - [ ] [AWS APPSYNC & AMPLIFY WITH REACT & GRAPHQL - COMPLETE GUIDE](https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/)
+  - [ ] [AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
+  - [ ] [BUILD SCALABLE APPLICATIONS USING DOCKER AND KUBERNETES](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
+  - [ ] [-AWS SERVERLESS APIS & APPS - A COMPLETE INTRODUCTION](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
+  - [ ] [THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
+  - [ ] [LEARN TO DEPLOY CONTAINERS ON AWS IN 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
+  - [ ] [AWS LAMBDA AND THE SERVERLESS FRAMEWORK - HANDS ON LEARNING!](https://www.udemy.com/course/aws-lambda-serverless/)
+  - [ ] [AWS LAMBDA, PYTHON(BOTO3) & SERVERLESS- BEGINNER TO ADVANCED](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
+  - [ ] [SERVERLESS USING AWS LAMBDA FOR PYTHON DEVELOPERS](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
+  - [ ] [DEVOPS DEPLOYMENT AUTOMATION WITH TERRAFORM, AWS AND DOCKER](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
+  - [ ] [DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
 
 </details>
 
 <details>
-  <summary>FIGMA</summary>
+  <summary>🎷FIGMA</summary>
 
-[0-UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
-
-[0-DREAMAXHQ](https://app.dreamaxhq.com/courses/)
-
-[1-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
-
-[2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
-
-[3-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
-
-[4-STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
-
-[5-MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
-
-[6-DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
-
-[7-FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
-
-[8-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
-
-[9-FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
-
-[10-FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
-
-[11-FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
-
-[12-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
-
-[13-DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
-
-[14-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
-
-[15-FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
-
-[16-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
-
-[17-FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
-
-[18-WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
-
-[19-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
-
-[20-FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
-
-[21-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
-
-[22-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
-
-[23-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
-
-[24-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
-
-[25-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
-
-[26-FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
-
-[27-RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
-
-[28-DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
-
-[29-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
-
-[30-FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
-
-[31-FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
-
-[32-NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
-
-[33-WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
-
-[34-CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
-
-[35-FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
-
-[36-THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
-
-[37-FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
-
-[38-THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
+- [ ] [UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
+- [ ] [DREAMAXHQ](https://app.dreamaxhq.com/courses/)
+- [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
+- [ ] [UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
+- [ ] [FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
+- [ ] [STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
+- [ ] [MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
+- [ ] [DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
+- [ ] [FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
+- [ ] [FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
+- [ ] [FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
+- [ ] [FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
+- [ ] [FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
+- [ ] [INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
+- [ ] [DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
+- [ ] [-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
+- [ ] [FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
+- [ ] [DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
+- [ ] [FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
+- [ ] [WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
+- [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
+- [ ] [FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
+- [ ] [FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
+- [ ] [FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
+- [ ] [HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
+- [ ] [MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
+- [ ] [FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
+- [ ] [FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
+- [ ] [RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
+- [ ] [DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
+- [ ] [INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
+- [ ] [FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
+- [ ] [FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
+- [ ] [NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
+- [ ] [WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
+- [ ] [CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
+- [ ] [FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
+- [ ] [THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
+- [ ] [FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
+- [ ] [THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
 
 </details>
