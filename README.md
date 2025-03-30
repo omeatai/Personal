@@ -300,6 +300,10 @@
 <details>
   <summary>🥪Others</summary>
 
-- [ ] [W3SCHOOLS](https://www.w3schools.com/)
+- [ ] [x-react-ecommerce](https://github.com/omeatai/Personal/tree/main/Others/x-react-ecommerce)
+- [ ] [video-streamer-pro](https://github.com/omeatai/Personal/tree/main/Others/video-streamer-pro)
+- [ ] [django-api-recipe-app](https://github.com/omeatai/Personal/tree/main/Others/django-api-recipe-app)
+- [ ] [azure-commands](https://github.com/omeatai/Personal/tree/main/Others/azure-commands)
+- [ ] [avgee](https://github.com/omeatai/Personal/tree/main/Others/avgee)
 
 </details>
