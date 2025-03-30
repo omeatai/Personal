@@ -1,0 +1,41 @@
+{
+  "name": "video-streaming-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start-nodemon": "nodemon server.js",
+    "pm2-start": "pm2 start server.js -i 2",
+    "pm2-stop": "pm2 stop all",
+    "pm2-delete": "pm2 delete all",
+    "pm2-list": "pm2 ls",
+    "pm2-monit": "pm2 monit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-sslify": "^1.2.0",
+    "express-validator": "^7.0.1",
+    "follow-redirects": "^1.15.2",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mysql2": "^3.4.0",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^1.14.9",
+    "pm2": "^2.10.4",
+    "randomstring": "^1.3.0"
+  }
+}

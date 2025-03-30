@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/web/css/home.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <%- include('partials/nav.ejs') %>
+    <!-- Header-->
+    <header class="bg-gradient text-black">
+      <div class="container px-4 text-center">
+        <h1 class="title fw-bolder">
+          Welcome to
+          <span class="title-span"><%= title %></span>
+        </h1>
+        <h2 class="lead fw-bolder"><%= subtitle %></h2>
+        <a class="btn btn-lg btn-danger" href="#courses">Start Learning!</a>
+      </div>
+    </header>
+    <!-- About section-->
+    <section id="courses">
+      <main class="main">
+        <section>
+          <div class="home--title--container">
+            <h2 class="home--title"><%= heading %></h2>
+          </div>
+
+          <div class="home--container">
+            <% data.forEach(entry => { %>
+            <div class="home--card">
+              <a href="http://localhost:8000/<%= entry.digit %>">
+                <video
+                  class="home--video"
+                  width="100%"
+                  max-height="100%"
+                  controlsList="nodownload"
+                  oncontextmenu="return false;"
+                >
+                  <source
+                    src="/videoplayer/<%= entry.name %>#t=15"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="/videoplayer/<%= entry.name %>#t=15"
+                    type="video/ogg"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+              <div class="home--card--title"><%= entry.name %></div>
+            </div>
+
+            <% }); %>
+          </div>
+          <div class="pagination">
+            <!-- paginator    -->
+            <%- include('partials/paginator.ejs') %>
+          </div>
+        </section>
+      </main>
+    </section>
+    <!-- Footer-->
+    <%- include('partials/footer.ejs') %>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

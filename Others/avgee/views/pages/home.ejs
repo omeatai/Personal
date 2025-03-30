@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs') %>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/web/home/css/home.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <%- include('./partials/nav.ejs') %>
+    <!-- Header-->
+    <header class="text-black hblock">
+      <div class="header-container px-4 text-center">
+        <h1 class="title fw-bolder">
+          Welcome to
+          <span><button class="title-span"><%= title %></button></span>
+        </h1>
+        <h2 class="lead subtitle fw-bold"><%= subtitle %></h2>
+        <div>
+          <a class="btn btn-xs btn-danger title-btn" href="#courses"
+            >Start Learning!</a
+          >
+          <a class="btn btn-xs btn-dark title-btn" href="#">Listen to Audio</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="searchbar">
+      <form action="/" method="post" class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          name="searchvalue"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+    <!-- About section-->
+    <section id="courses">
+      <main class="main">
+        <section>
+          <div class="home--container">
+            <% data.forEach(entry => { %>
+            <div class="home--card">
+              <a href="<%= webname %>video?id=<%= entry.digit %>">
+                <video
+                  class="home--video hover-to-play"
+                  width="100%"
+                  max-height="100%"
+                  controlsList="nodownload"
+                  oncontextmenu="return false;"
+                >
+                  <source
+                    src="/videoplayer?videoname=<%= entry.name %>#t=20"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="/videoplayer?videoname=<%= entry.name %>#t=20"
+                    type="video/avi"
+                  />
+                  <source
+                    src="/videoplayer?videoname=<%= entry.name %>#t=20"
+                    type="video/ogg"
+                  />
+                 <source
+                    src="/videoplayer?videoname=<%= entry.name %>#t=20"
+                    type="video/mkv"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+              <div class="home--card--title"><%= entry.name %></div>
+            </div>
+
+            <% }); %>
+          </div>
+          <div class="pagination">
+            <!-- paginator    -->
+            <%- include('./partials/paginator.ejs') %>
+          </div>
+        </section>
+      </main>
+    </section>
+    <!-- Footer-->
+    <%- include('./partials/footer.ejs') %>
+    <!-- Core theme JS-->
+    <script src="/web/home/js/home.js"></script>
+  </body>
+</html>

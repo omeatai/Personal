@@ -1,0 +1,22 @@
+<div class="break"></div>
+<!--Display the links to the pages-->
+<% if(page > 1) { %>
+<a href="/?page=<%=1%>"
+  ><button type="button" class="btn btn-sm btn-danger">First</button></a
+>
+<a href="/?page=<%=page-1%>"
+  ><button type="button" class="btn btn-sm btn-dark"><</button></a
+>
+<% } %> <% for(let i = iterator; i <= endingLink; i++) { %> <% if(i === page) {
+%>
+<a class="selected Link" href="/?page=<%=i%>"
+  ><button type="button" class="btn btn-sm btn-dark">Page <%=i%></button></a
+>
+<% continue; %> <% } %> <% } %> <% if(page < numberOfPages) { %>
+<a href="/?page=<%=page+1%>"
+  ><button type="button" class="btn btn-sm btn-dark">></button></a
+>
+<a href="/?page=<%=numberOfPages%>"
+  ><button type="button" class="btn btn-sm btn-danger">Last</button></a
+>
+<% } %>
