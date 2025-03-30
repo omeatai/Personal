@@ -130,277 +130,207 @@
 </details>
 
 <details>
-  <summary>APIs</summary>
+  <summary>🔒Frameworks</summary>
+
+- [ ] [1-REACT](https://react.dev/learn)
+- [ ] [2-NEXTJS](https://nextjs.org/docs)
+- [ ] [3-EXPRESS](https://expressjs.com/en/starter/installing.html)
+- [ ] [4-DJANGO](https://www.djangoproject.com/)
+- [ ] [5-DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
+- [ ] [6-DJANGO REST FRAMEWORK API](https://www.django-rest-framework.org/api-guide/)
+- [ ] [7-DJANGO REST FRAMEWORK AUTH](https://www.django-rest-framework.org/api-guide/authentication/)
+- [ ] [8-DJANGO REST FRAMEWORK PERMISSIONS](https://www.django-rest-framework.org/api-guide/permissions/)
+- [ ] [9-DJANGO REST FRAMEWORK VIEWS](https://www.django-rest-framework.org/api-guide/viewsets/)
+- [ ] [10-DJANGO CLASSES](https://ccbv.co.uk/)
+- [ ] [11-LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
+- [ ] [12-LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
 
 </details>
 
 <details>
-  <summary>FRAMEWORKS</summary>
+  <summary>🔒Libraries</summary>
 
-###### [1-DJANGO](https://www.djangoproject.com/)
-
-###### [1B-DJANGO CLASSES](https://ccbv.co.uk/)
-
-###### [2-DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
-
-###### [3-REACT](https://react.dev/learn)
-
-###### [4-NEXTJS](https://nextjs.org/docs)
-
-###### [5-LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
-
-###### [6-LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
-
-</details>
-
-<details>
-  <summary>LIBRARIES</summary>
-
-###### [1-SHADCN](https://ui.shadcn.com/docs/installation)
-
-###### [2-MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
-
-###### [3-TAILWINDCSS](https://tailwindcss.com/docs/installation)
-
-###### [4-HEADLESS UI](https://headlessui.com/)
-
-###### [5-SEMANTIC UI](https://react.semantic-ui.com/usage)
-
-###### [6-SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity) | [SANITY STUDIO](https://www.sanity.io/manage)
-
-###### [7-STRAPI](https://docs.strapi.io/dev-docs/intro)
-
-###### [8-STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
-
-###### [9-LODASH](https://lodash.com/docs/)
-
-###### [10-LOREM IPSUM](https://www.lipsum.com/)
-
-###### [11-VITE](https://vitejs.dev/)
-
-###### [12-REACT BOOTSTRAP](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
-
-###### [13-PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
+- [ ] [1-REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
+- [ ] [2-REACT STRAP](https://reactstrap.github.io/)
+- [ ] [3-ANT DESIGN](https://ant.design/docs/react/introduce)
+- [ ] [4-SHADCN](https://ui.shadcn.com/docs/installation)
+- [ ] [5-MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
+- [ ] [6-TAILWINDCSS](https://tailwindcss.com/docs/installation)
+- [ ] [7-HEADLESS UI](https://headlessui.com/)
+- [ ] [8-SEMANTIC UI](https://react.semantic-ui.com/usage)
+- [ ] [9-SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity)
+- [ ] [10-SANITY STUDIO](https://www.sanity.io/manage)
+- [ ] [11-STRAPI](https://docs.strapi.io/dev-docs/intro)
+- [ ] [12-STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
+- [ ] [13-LODASH](https://lodash.com/docs/)
+- [ ] [14-LOREM IPSUM](https://www.lipsum.com/)
+- [ ] [15-VITE](https://vitejs.dev/)
+- [ ] [16-PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
 
 </details>
 
 <details>
-  <summary>LAB</summary>
+  <summary>🔒Lab/Editor</summary>
 
-###### [1-REPLIT](https://replit.com/@omeatai)
-
-</details>
-
-<details>
-  <summary>EDITOR</summary>
-
-###### [1-CONVERTCASE](https://convertcase.net/)
-
-###### [2-CANVA](https://www.canva.com/)
-
-###### [3-IPICCY](https://ipiccy.com/)
-
-###### [4-JSON VIEWER](https://codebeautify.org/jsonviewer)
-
-</details>
-
-<details>
-  <summary>AI</summary>
-
-###### [1-SUNO AI](https://app.suno.ai/)
-
-###### [2-CHATGPT](https://chat.openai.com/)
-
-###### [3-ANTHROPIC](https://claude.ai/chats)
-
-###### [4-PERPLEXITY AI](https://www.perplexity.ai/)
-
-###### [5-PI AI](https://claude.ai/chats)
-
-###### [6-POE](https://poe.com/)
-
-###### [7-ELEVENLABS](https://elevenlabs.io/speech-synthesis)
-
-###### [8-RUNWAYML](https://app.runwayml.com/)
-
-###### [9-DECOHERENCE.CO](https://app.decoherence.co/stablevideo)
-
-###### [10-GETIMG.AI](https://getimg.ai/)
+- [ ] [1-REPLIT](https://replit.com/)
+- [ ] [2-GLITCH](https://glitch.com/)
+- [ ] [3-CODEPEN](https://codepen.io/)
+- [ ] [4-CODESANDBOX](https://codesandbox.io/)
+- [ ] [5-STACKBLITZ](https://stackblitz.com/)
+- [ ] [6-PLAYCODE](https://playcode.io/)
+- [ ] [7-STACKOVERFLOW](https://stackoverflow.com/)
+- [ ] [8-DEV](https://dev.to/)
+- [ ] [9-CONVERTCASE](https://convertcase.net/)
+- [ ] [10-CANVA](https://www.canva.com/)
+- [ ] [11-IPICCY](https://ipiccy.com/)
+- [ ] [12-JSON VIEWER](https://codebeautify.org/jsonviewer)
+- [ ] [13-JSON FORMATTER](https://jsonformatter.org/)
+- [ ] [14-JSON EDITOR](https://jsoneditoronline.org/)
 
 </details>
 
 <details>
-  <summary>AWS QUIZ</summary>
+  <summary>🔒AI</summary>
 
-###### [1-EXAM TOPICS FOLDERS](https://quizlet.com/omeatai/folders)
-
-###### [2-AMAZON CERTIFIED CLOUD PRACTITIONER (CLF-C02) FOLDER](https://quizlet.com/omeatai/folders/amazon-certified-cloud-practitioner-clf-c02/sets)
-
-###### [3-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT (SAA-C03) FOLDER](https://quizlet.com/omeatai/folders/amazon-aws-certified-solutions-architect-saa-c03/sets)
-
-</details>
-
-<details>
-  <summary>AWS EXAMS</summary>
-
-###### [0-EXAM TOPICS](https://www.examtopics.com/exams/amazon/)
-
-###### [1-AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C01](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
-
-###### [2-AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C02](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner-clf-c02/)
-
-###### [3-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c02/)
-
-###### [4-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C03 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c03/)
-
-###### [4B-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C03 EXAM](https://www.freecram.net/question/Amazon.SAA-C03.v2023-11-20.q231/a-serverless-application-uses-amazon-api-gateway-aws-lambda-and-amazon-dynamodb-the-lambda-function)
-
-###### [5-AMAZON AWS CERTIFIED DEVELOPER - ASSOCIATE DVA-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate/)
-
-###### [6-AMAZON AWS CERTIFIED DEVELOPER - ASSOCIATE DVA-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate-dva-c02/)
-
-###### [7-AMAZON AWS CERTIFIED SYSOPS ADMINISTRATOR - ASSOCIATE EXAM (SOA-C01)](https://www.examtopics.com/exams/amazon/aws-sysops/)
-
-###### [8-AMAZON AWS CERTIFIED SYSOPS ADMINISTRATOR - ASSOCIATE EXAM (SOA-C02)](https://www.examtopics.com/exams/amazon/aws-certified-sysops-administrator-associate/)
-
-###### [9- AMAZON AWS CERTIFIED SECURITY - SPECIALTY SCS-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty/)
-
-###### [10-AMAZON AWS CERTIFIED SECURITY - SPECIALTY SCS-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c02/)
-
-###### [11-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional/)
-
-###### [12-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
+- [ ] [CHATGPT](https://chat.openai.com/)
+- [ ] [PERPLEXITY AI](https://www.perplexity.ai/)
+- [ ] [CLAUDE](https://claude.ai/)
+- [ ] [POE](https://poe.com/)
+- [ ] [ELEVENLABS](https://elevenlabs.io/speech-synthesis)
+- [ ] [RUNWAYML](https://app.runwayml.com/)
+- [ ] [DECOHERENCE.CO](https://app.decoherence.co/stablevideo)
+- [ ] [GETIMG.AI](https://getimg.ai/)
+- [ ] [SUNO AI](https://app.suno.ai/)
 
 </details>
 
 <details>
-  <summary>AWS COURSES</summary>
+  <summary>🔒AWS</summary>
 
-###### [1-AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
-
-###### [2-ULTIMATE AWS CERTIFIED CLOUD PRACTITIONER CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
-
-###### [3-AMAZON WEB SERVICES (AWS) CERTIFIED - 4 CERTIFICATIONS!](https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/)
-
-###### [4-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE SAA-C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
-
-###### [5-ULTIMATE AWS CERTIFIED DEVELOPER ASSOCIATE 2023 NEW DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
-
-###### [6-ULTIMATE AWS CERTIFIED SYSOPS ADMINISTRATOR ASSOCIATE 2023](https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/)
-
-###### [7-ULTIMATE AWS CERTIFIED SECURITY SPECIALTY SCS-C02](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
-
-###### [8-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT PROFESSIONAL 2023](https://www.udemy.com/course/aws-solutions-architect-professional/)
-
-###### [9-AWS CERTIFIED DEVOPS ENGINEER PROFESSIONAL 2023 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/)
-
-###### [10-AWS APPSYNC & AMPLIFY WITH REACT & GRAPHQL - COMPLETE GUIDE](https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/)
-
-###### [11-AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
-
-###### [12-BUILD SCALABLE APPLICATIONS USING DOCKER AND KUBERNETES](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
-
-###### [13-AWS SERVERLESS APIS & APPS - A COMPLETE INTRODUCTION](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
-
-###### [14-THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
-
-###### [15-LEARN TO DEPLOY CONTAINERS ON AWS IN 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
-
-###### [16-AWS LAMBDA AND THE SERVERLESS FRAMEWORK - HANDS ON LEARNING!](https://www.udemy.com/course/aws-lambda-serverless/)
-
-###### [17-AWS LAMBDA, PYTHON(BOTO3) & SERVERLESS- BEGINNER TO ADVANCED](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
-
-###### [18-SERVERLESS USING AWS LAMBDA FOR PYTHON DEVELOPERS](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
-
-###### [19-DEVOPS DEPLOYMENT AUTOMATION WITH TERRAFORM, AWS AND DOCKER](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
-
-###### [20-DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
+- [ ] QUIZ
+  - [ ] [EXAM TOPICS FOLDERS](https://quizlet.com/omeatai/folders)
+  - [ ] [AMAZON CERTIFIED CLOUD PRACTITIONER (CLF-C02) FOLDER](https://quizlet.com/omeatai/folders/amazon-certified-cloud-practitioner-clf-c02/sets)
+  - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT (SAA-C03) FOLDER](https://quizlet.com/omeatai/folders/amazon-aws-certified-solutions-architect-saa-c03/sets)
+- [ ] EXAMS
+  - [ ] [EXAM TOPICS](https://www.examtopics.com/exams/amazon/)
+  - [ ] [AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C01](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
+  - [ ] [AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C02](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner-clf-c02/)
+  - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c02/)
+  - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C03 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c03/)
+  - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C03B EXAM](https://www.freecram.net/question/Amazon.SAA-C03.v2023-11-20.q231/a-serverless-application-uses-amazon-api-gateway-aws-lambda-and-amazon-dynamodb-the-lambda-function)
+  - [ ] [AMAZON AWS CERTIFIED DEVELOPER - ASSOCIATE DVA-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate/)
+  - [ ] [AMAZON AWS CERTIFIED DEVELOPER - ASSOCIATE DVA-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate-dva-c02/)
+  - [ ] [AMAZON AWS CERTIFIED SYSOPS ADMINISTRATOR - ASSOCIATE EXAM (SOA-C01)](https://www.examtopics.com/exams/amazon/aws-sysops/)
+  - [ ] [AMAZON AWS CERTIFIED SYSOPS ADMINISTRATOR - ASSOCIATE EXAM (SOA-C02)](https://www.examtopics.com/exams/amazon/aws-certified-sysops-administrator-associate/)
+  - [ ] [AMAZON AWS CERTIFIED SECURITY - SPECIALTY SAS-C01](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-sas-c01/)
+  - [ ] [AMAZON AWS CERTIFIED SECURITY - SPECIALTY SCS-C02](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c02/)
+  - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional/)
+  - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
+- [ ] COURSES
+  - [ ] [1-AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
+  - [ ] [2-ULTIMATE AWS CERTIFIED CLOUD PRACTITIONER CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+  - [ ] [3-AMAZON WEB SERVICES (AWS) CERTIFIED - 4 CERTIFICATIONS!](https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/)
+  - [ ] [4-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE SAA-C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
+  - [ ] [5-ULTIMATE AWS CERTIFIED DEVELOPER ASSOCIATE 2023 NEW DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
+  - [ ] [6-ULTIMATE AWS CERTIFIED SYSOPS ADMINISTRATOR ASSOCIATE 2023](https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/)
+  - [ ] [7-ULTIMATE AWS CERTIFIED SECURITY SPECIALTY SCS-C02](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
+  - [ ] [8-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT PROFESSIONAL 2023](https://www.udemy.com/course/aws-solutions-architect-professional/)]
+  - [ ] [9-AWS CERTIFIED DEVOPS ENGINEER PROFESSIONAL 2023 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/)
+  - [ ] [10-AWS APPSYNC & AMPLIFY WITH REACT & GRAPHQL - COMPLETE GUIDE](https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/)
+  - [ ] [11-AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
+  - [ ] [12-BUILD SCALABLE APPLICATIONS USING DOCKER AND KUBERNETES](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
+  - [ ] [13-AWS SERVERLESS APIS & APPS - A COMPLETE INTRODUCTION](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
+  - [ ] [14-THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/
+  - [ ] [15-LEARN TO DEPLOY CONTAINERS ON AWS IN 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
+  - [ ] [16-AWS LAMBDA AND THE SERVERLESS FRAMEWORK - HANDS ON LEARNING!](https://www.udemy.com/course/aws-lambda-serverless/)
+  - [ ] [17-AWS LAMBDA, PYTHON(BOTO3) & SERVERLESS- BEGINNER TO ADVANCED](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
+  - [ ] [18-SERVERLESS USING AWS LAMBDA FOR PYTHON DEVELOPERS](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
+  - [ ] [19-DEVOPS DEPLOYMENT AUTOMATION WITH TERRAFORM, AWS AND DOCKER](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
+  - [ ] [20-DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
 
 </details>
 
 <details>
   <summary>FIGMA</summary>
 
-###### [0-UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
+[0-UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
 
-###### [0-DREAMAXHQ](https://app.dreamaxhq.com/courses/)
+[0-DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 
-###### [1-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
+[1-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
 
-###### [2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
+[2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
 
-###### [3-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
+[3-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
 
-###### [4-STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
+[4-STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
 
-###### [5-MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
+[5-MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
 
-###### [6-DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
+[6-DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
 
-###### [7-FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
+[7-FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
 
-###### [8-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
+[8-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
 
-###### [9-FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
+[9-FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
 
-###### [10-FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
+[10-FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
 
-###### [11-FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
+[11-FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
 
-###### [12-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
+[12-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
 
-###### [13-DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
+[13-DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
 
-###### [14-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
+[14-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
 
-###### [15-FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
+[15-FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
 
-###### [16-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
+[16-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
 
-###### [17-FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
+[17-FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
 
-###### [18-WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
+[18-WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
 
-###### [19-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
+[19-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
 
-###### [20-FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
+[20-FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
 
-###### [21-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
+[21-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
 
-###### [22-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
+[22-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
 
-###### [23-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
+[23-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
 
-###### [24-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
+[24-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
 
-###### [25-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
+[25-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
 
-###### [26-FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
+[26-FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
 
-###### [27-RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
+[27-RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
 
-###### [28-DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
+[28-DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
 
-###### [29-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
+[29-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
 
-###### [30-FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
+[30-FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
 
-###### [31-FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
+[31-FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
 
-###### [32-NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
+[32-NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
 
-###### [33-WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
+[33-WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
 
-###### [34-CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
+[34-CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
 
-###### [35-FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
+[35-FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
 
-###### [36-THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
+[36-THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
 
-###### [37-FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
+[37-FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
 
-###### [38-THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
-
-</details>
+[38-THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
 
 </details>
