@@ -57,7 +57,7 @@
 </details>
 
 <details>
-  <summary>🟥 Youtube Channels</summary>
+  <summary>🟥Youtube Channels</summary>
 
 - [ ] [CodingAddict](https://www.codingaddict.io/)
 - [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
@@ -94,41 +94,43 @@
 </details>
 
 <details>
-  <summary>🔒Others</summary>
+  <summary>🔒Hosts</summary>
+
+- [ ] [1-VERCEL](https://vercel.com/dashboard)
+- [ ] [2-NETLIFY](https://app.netlify.com/teams/omeatai/overview)
+- [ ] [3-CPANEL](https://cpanel-p3.web-hosting.com/cpsess5287646472/frontend/jupiter/index.html?login=1&post_login=79973471504338)
+- [ ] [4-NAMECHEAP](https://ap.www.namecheap.com/)
+- [ ] [5-MONGODB ATLAS](https://cloud.mongodb.com/)
+- [ ] [6-SUPABASE](https://supabase.com/dashboard/projects)
+- [ ] [7-FIREBASE](https://firebase.google.com/)
+- [ ] [8-IMGBB](https://anyi-o.imgbb.com/)
+
+</details>
 
 <details>
-  <summary>HOSTS</summary>
+  <summary>🔒APIs</summary>
 
-###### [1-VERCEL](https://vercel.com/dashboard)
-
-###### [2-NETLIFY](https://app.netlify.com/teams/omeatai/overview)
-
-###### [3-CPANEL](https://cpanel-p3.web-hosting.com/cpsess5287646472/frontend/jupiter/index.html?login=1&post_login=79973471504338)
-
-###### [4-NAMECHEAP](https://ap.www.namecheap.com/)
-
-###### [5-MONGODB ATLAS](https://cloud.mongodb.com/)
-
-###### [6-SUPABASE](https://supabase.com/dashboard/projects)
-
-###### [7-FIREBASE](https://firebase.google.com/)
-
-###### [8-IMGBB](https://anyi-o.imgbb.com/)
+- [ ] [1-PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
+- [ ] [2-PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
+- [ ] [3-THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
+- [ ] [4-RANDOM USER GENERATOR](https://randomuser.me/)[WWW](https://randomuser.me/api/)
+- [ ] [5-RANDOM USERS](https://xsgames.co/randomusers/)
+- [ ] [6-JSON PLACEHOLDER](https://jsonplaceholder.typicode.com/)
+- [ ] [7-OPEN WEATHER MAP](https://openweathermap.org/api)
+- [ ] [8-COIN MARKET CAP](https://coinmarketcap.com/api/)
+- [ ] [9-NEWS API](https://newsapi.org/docs/get-started)
+- [ ] [10-REST COUNTRIES](https://restcountries.com/)
+- [ ] [11-COUNTRY FLAGS](https://restcountries.com/#flags)
+- [ ] [12-COUNTRY CODES](https://restcountries.com/#country-codes)
+- [ ] [13-COUNTRY CURRENCY](https://restcountries.com/#currency)
+- [ ] [14-COUNTRY LANGUAGES](https://restcountries.com/#languages)
+- [ ] [15-COUNTRY TIME ZONES](https://restcountries.com/#timezones)
+- [ ] [16-COUNTRY POPULATION](https://restcountries.com/#population)
 
 </details>
 
 <details>
   <summary>APIs</summary>
-
-###### [1-PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
-
-###### [2-PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
-
-###### [3-THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
-
-###### [4-RANDOM USER GENERATOR](https://randomuser.me/)[WWW](https://randomuser.me/api/)
-
-###### [5-RANDOM USERS](https://xsgames.co/randomusers/)
 
 </details>
 
