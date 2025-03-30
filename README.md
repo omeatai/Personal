@@ -94,6 +94,24 @@
 </details>
 
 <details>
+  <summary>🔔Frameworks</summary>
+
+- [ ] [REACT](https://react.dev/learn)
+- [ ] [NEXTJS](https://nextjs.org/docs)
+- [ ] [EXPRESS](https://expressjs.com/en/starter/installing.html)
+- [ ] [DJANGO](https://www.djangoproject.com/)
+- [ ] [DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
+- [ ] [DJANGO REST FRAMEWORK API](https://www.django-rest-framework.org/api-guide/)
+- [ ] [DJANGO REST FRAMEWORK AUTH](https://www.django-rest-framework.org/api-guide/authentication/)
+- [ ] [DJANGO REST FRAMEWORK PERMISSIONS](https://www.django-rest-framework.org/api-guide/permissions/)
+- [ ] [DJANGO REST FRAMEWORK VIEWS](https://www.django-rest-framework.org/api-guide/viewsets/)
+- [ ] [DJANGO CLASSES](https://ccbv.co.uk/)
+- [ ] [LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
+- [ ] [LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
+
+</details>
+
+<details>
   <summary>☀️Hosts</summary>
 
 - [ ] [VERCEL](https://vercel.com/dashboard)
@@ -126,24 +144,6 @@
 - [ ] [COUNTRY LANGUAGES](https://restcountries.com/#languages)
 - [ ] [COUNTRY TIME ZONES](https://restcountries.com/#timezones)
 - [ ] [COUNTRY POPULATION](https://restcountries.com/#population)
-
-</details>
-
-<details>
-  <summary>🔔Frameworks</summary>
-
-- [ ] [REACT](https://react.dev/learn)
-- [ ] [NEXTJS](https://nextjs.org/docs)
-- [ ] [EXPRESS](https://expressjs.com/en/starter/installing.html)
-- [ ] [DJANGO](https://www.djangoproject.com/)
-- [ ] [DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
-- [ ] [DJANGO REST FRAMEWORK API](https://www.django-rest-framework.org/api-guide/)
-- [ ] [DJANGO REST FRAMEWORK AUTH](https://www.django-rest-framework.org/api-guide/authentication/)
-- [ ] [DJANGO REST FRAMEWORK PERMISSIONS](https://www.django-rest-framework.org/api-guide/permissions/)
-- [ ] [DJANGO REST FRAMEWORK VIEWS](https://www.django-rest-framework.org/api-guide/viewsets/)
-- [ ] [DJANGO CLASSES](https://ccbv.co.uk/)
-- [ ] [LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
-- [ ] [LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
 
 </details>
 
