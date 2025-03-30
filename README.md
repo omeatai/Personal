@@ -114,6 +114,7 @@
 <details>
   <summary>📁Libraries</summary>
 
+- [ ] [W3SCHOOLS](https://www.w3schools.com/)
 - [ ] [REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
 - [ ] [REACT STRAP](https://reactstrap.github.io/)
 - [ ] [ANT DESIGN](https://ant.design/docs/react/introduce)
@@ -293,5 +294,12 @@
 - [ ] [THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
 - [ ] [FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
 - [ ] [THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
+
+</details>
+
+<details>
+  <summary>📁Others</summary>
+
+- [ ] [W3SCHOOLS](https://www.w3schools.com/)
 
 </details>
