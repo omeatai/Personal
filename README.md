@@ -112,6 +112,28 @@
 </details>
 
 <details>
+  <summary>📁Libraries</summary>
+
+- [ ] [REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
+- [ ] [REACT STRAP](https://reactstrap.github.io/)
+- [ ] [ANT DESIGN](https://ant.design/docs/react/introduce)
+- [ ] [SHADCN](https://ui.shadcn.com/docs/installation)
+- [ ] [MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
+- [ ] [TAILWINDCSS](https://tailwindcss.com/docs/installation)
+- [ ] [HEADLESS UI](https://headlessui.com/)
+- [ ] [SEMANTIC UI](https://react.semantic-ui.com/usage)
+- [ ] [SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity)
+- [ ] [SANITY STUDIO](https://www.sanity.io/manage)
+- [ ] [STRAPI](https://docs.strapi.io/dev-docs/intro)
+- [ ] [STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
+- [ ] [LODASH](https://lodash.com/docs/)
+- [ ] [LOREM IPSUM](https://www.lipsum.com/)
+- [ ] [VITE](https://vitejs.dev/)
+- [ ] [PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
+
+</details>
+
+<details>
   <summary>☀️Hosts</summary>
 
 - [ ] [VERCEL](https://vercel.com/dashboard)
@@ -144,28 +166,6 @@
 - [ ] [COUNTRY LANGUAGES](https://restcountries.com/#languages)
 - [ ] [COUNTRY TIME ZONES](https://restcountries.com/#timezones)
 - [ ] [COUNTRY POPULATION](https://restcountries.com/#population)
-
-</details>
-
-<details>
-  <summary>📁Libraries</summary>
-
-- [ ] [REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
-- [ ] [REACT STRAP](https://reactstrap.github.io/)
-- [ ] [ANT DESIGN](https://ant.design/docs/react/introduce)
-- [ ] [SHADCN](https://ui.shadcn.com/docs/installation)
-- [ ] [MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
-- [ ] [TAILWINDCSS](https://tailwindcss.com/docs/installation)
-- [ ] [HEADLESS UI](https://headlessui.com/)
-- [ ] [SEMANTIC UI](https://react.semantic-ui.com/usage)
-- [ ] [SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity)
-- [ ] [SANITY STUDIO](https://www.sanity.io/manage)
-- [ ] [STRAPI](https://docs.strapi.io/dev-docs/intro)
-- [ ] [STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
-- [ ] [LODASH](https://lodash.com/docs/)
-- [ ] [LOREM IPSUM](https://www.lipsum.com/)
-- [ ] [VITE](https://vitejs.dev/)
-- [ ] [PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
 
 </details>
 
