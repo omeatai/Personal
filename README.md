@@ -94,7 +94,7 @@
 </details>
 
 <details>
-  <summary>🔔Frameworks</summary>
+  <summary>🏀Frameworks</summary>
 
 - [ ] [REACT](https://react.dev/learn)
 - [ ] [NEXTJS](https://nextjs.org/docs)
