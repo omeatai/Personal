@@ -1,0 +1,38 @@
+<section class="login--section">
+
+  <div class="login--container">
+    <form action="/verify-login" method="post" class="login--form">
+      <h1 class="login--title">Login</h1>
+      <div class="login--input--container">
+        <label for="username" class="form-label login--username--label">Email
+          address</label>
+        <input
+          type="email"
+          class="form-control login--input"
+          id="username"
+          name="username"
+          placeholder="name@example.com"
+          value=""
+          required
+        />
+      </div>
+      <div class="login--input--container">
+        <label
+          for="password"
+          class="form-label login--password--label"
+        >Password</label>
+        <input
+          type="password"
+          class="form-control login--input"
+          id="password"
+          name="password"
+          placeholder="*******************"
+          value=""
+          required
+        />
+      </div>
+
+      <input class="btn btn-dark input--btn" type="submit" value="Enter" />
+    </form>
+  </div>
+</section>

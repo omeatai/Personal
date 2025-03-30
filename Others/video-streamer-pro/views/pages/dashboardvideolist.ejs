@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/dashboardhead.ejs') %>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+      <%- include('./partials/dashboardnav.ejs') %>
+    </nav>
+    <!-- Page Content-->
+    <section>
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-lg-12">
+            <h1 class="dashboard-title">Video List</h1>
+            <p class="dashboard-subtitle">List of all the Videos.</p>
+            <div class="row">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">id</th>
+                    <th scope="col">Digit</th>
+                    <th scope="col">Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% result.forEach(function(video) { %>
+                  <tr>
+                    <th scope="row"><%= video.count %></th>
+                    <td><%= video.id %></td>
+                    <td><%= video.digit %></td>
+                    <td><%= video.name %></td>
+                  </tr>
+                  <% }); %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./partials/dashboardfooter.ejs') %>
+  </body>
+</html>
