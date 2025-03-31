@@ -38,6 +38,11 @@
 - [ ] [Standard Protocols - SSH Server](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d3)
 - [ ] [Cyber Threat Intelligence](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d4)
 - [ ] [Threat Intelligence & Actionable Intelligence](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d5)
+- [ ] [Cyber Kill Chain, Diamond Model & Threat Actors](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d1)
+- [ ] [Reactive vs Proactive Threat Detection](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d2)
+- [ ] [SIEM Architecture & Implementation](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d3)
+- [ ] [Threat Defense Investigation & Research Report](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d4)
+- [ ] [Forensic Roles, Logs and Captures](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d5)
 
 ## OTHERS
 
