@@ -23,7 +23,11 @@
 - [ ] [Security Operations](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d3)
 - [ ] [Security Posture](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d4)
 - [ ] [GRC Management Landscape](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d5)
-- [ ] 
+- [ ] [Control Implementation, Remediation & Compliance](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d1)
+- [ ] [Risk & Compliance](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d2)
+- [ ] [The Nature of Vulnerabilities](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d3)
+- [ ] [Vulnerability Assessments and Results](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d4)
+- [ ] [Results and Remediations](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d5)
 
 ## OTHERS
 
