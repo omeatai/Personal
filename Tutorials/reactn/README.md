@@ -1,8 +1,5 @@
 # React Native Tutorials
 
-<details>
-  <summary>🚀 About Me</summary>
+- [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
+- [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
-
-</details>
