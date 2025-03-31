@@ -48,6 +48,11 @@
 - [ ] [File Recovery with FTK Imager](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d3)
 - [ ] [Windows Registry Forensics](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d4)
 - [ ] [Role of Forensics in Malware Analysis](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d5)
+- [ ] [Security Mindset and Frameworks](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d1)
+- [ ] [Implement Effective Access Management & Data Security](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d2)
+- [ ] [Secure Application Development Practices](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d3)
+- [ ] [Incident Management & Fostering Security-aware Culture](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d4)
+- [ ] [Security Architecture Recommendations](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d5)
 
 ## OTHERS
 
