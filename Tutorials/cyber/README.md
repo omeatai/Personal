@@ -16,7 +16,19 @@
 
 ## LetsEncrypt
 
-- [ ] [Career Compass program in the Alumni cohort](https://web.compass.lighthouselabs.ca/p/cc/journeys/67)
+- [ ] [Cybersecurity for Students](https://app.letsdefend.io/path/cybersecurity-for-students)
+- [ ] [Career Switch to Cybersecurity](https://app.letsdefend.io/path/career-switch-to-cybersecurity)
+- [ ] [CompTIA CySA+ Preparation Path](https://app.letsdefend.io/path/comptia-cysa-preparation-path)
+- [ ] [Google Cybersecurity Certificate Preparation Path](https://app.letsdefend.io/path/google-cybersecurity-certificate-preparation)
+- [ ] [SOC Analyst Learning Path](https://app.letsdefend.io/path/soc-analyst-learning-path)
+- [ ] [SIEM Engineer Career Path](https://app.letsdefend.io/path/siem-engineer-career-path)
+- [ ] [Incident Responder Path](https://app.letsdefend.io/path/incident-responder-path)
+- [ ] [DFIR Learning Path](https://app.letsdefend.io/path/dfir-learning-path)
+- [ ] [Detection Engineering Path](https://app.letsdefend.io/path/detection-engineering-path)
+- [ ] [Malware Analysis Skill Path](https://app.letsdefend.io/path/malware-analysis-skill-path)
+- [ ] [Information Security Specialist Career Path](http://app.letsdefend.io/path/information-security-specialist-career-path)
+- [ ] [AWS Security Learning Path](https://app.letsdefend.io/path/aws-security-learning-path)
+- [ ] [Programming for Cybersecurity](https://app.letsdefend.io/path/programming-for-cybersecurity)
 
 ## LHL
 
