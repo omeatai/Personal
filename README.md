@@ -47,12 +47,14 @@
 
 - [ ] [PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
+- [ ] [WINDOWS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/windows/README.md)
 - [ ] [HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
 - [ ] [JAVASCRIPT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/javascript/README.md)
 - [ ] [REACT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
 - [ ] [REACT NATIVE TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/reactn/README.md)
 - [ ] [NODE & NEXT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/node/README.md)
 - [ ] [JAVA TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
+- [ ] [OTHERS](https://github.com/omeatai/Personal/blob/main/Tutorials/src/README.md)
 
 </details>
 
