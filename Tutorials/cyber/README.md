@@ -43,6 +43,11 @@
 - [ ] [SIEM Architecture & Implementation](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d3)
 - [ ] [Threat Defense Investigation & Research Report](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d4)
 - [ ] [Forensic Roles, Logs and Captures](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d5)
+- [ ] [Forensic Selection Criteria](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d1)
+- [ ] [Forensic Optimization and Investigation](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d2)
+- [ ] [File Recovery with FTK Imager](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d3)
+- [ ] [Windows Registry Forensics](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d4)
+- [ ] [Role of Forensics in Malware Analysis](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d5)
 
 ## OTHERS
 
