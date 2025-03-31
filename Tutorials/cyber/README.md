@@ -1,5 +1,23 @@
 # Cybersecurity Tutorials
 
+## TryHackMe
+
+- [ ] [Pre Security](https://tryhackme.com/path/outline/presecurity)
+- [ ] [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
+- [ ] [SOC Level 1](https://tryhackme.com/path/outline/soclevel1)
+- [ ] [SOC Level 2](https://tryhackme.com/path/outline/soclevel2)
+- [ ] [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
+- [ ] [Web Fundamentals](https://tryhackme.com/path/outline/web)
+- [ ] [Web Application Pentesting](https://tryhackme.com/path/outline/webapppentesting)
+- [ ] [Red Teaming](https://tryhackme.com/path/outline/redteaming)
+- [ ] [Security Engineer](https://tryhackme.com/path/outline/security-engineer-training)
+- [ ] [DevSecOps](https://tryhackme.com/path/outline/devsecops)
+- [ ] [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
+
+## LetsEncrypt
+
+- [ ] [Career Compass program in the Alumni cohort](https://web.compass.lighthouselabs.ca/p/cc/journeys/67)
+
 ## LHL
 
 - [ ] [Career Compass program in the Alumni cohort](https://web.compass.lighthouselabs.ca/p/cc/journeys/67)
