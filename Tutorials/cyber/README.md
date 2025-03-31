@@ -28,7 +28,14 @@
 - [ ] [The Nature of Vulnerabilities](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d3)
 - [ ] [Vulnerability Assessments and Results](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d4)
 - [ ] [Results and Remediations](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d5)
+- [ ] [Staffing the IR Team](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d1)
+- [ ] [Incodence Escalation](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d2)
+- [ ] [IR, Playbooks and Policy](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d3)
+- [ ] [Escalation Research Discussion](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d4)
+- [ ] [Encryption Tools](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d5)
 
 ## OTHERS
 
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+
