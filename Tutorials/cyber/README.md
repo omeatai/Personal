@@ -18,6 +18,12 @@
 - [ ] [Python Programming II](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d3)
 - [ ] [RegEx and Bash](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d4)
 - [ ] [Custom Scripting](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d5)
+- [ ] [Using Code as Your Superpower](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d1)
+- [ ] [The Blue Team](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d2)
+- [ ] [Security Operations](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d3)
+- [ ] [Security Posture](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d4)
+- [ ] [GRC Management Landscape](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d5)
+- [ ] 
 
 ## OTHERS
 
