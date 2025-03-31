@@ -29,10 +29,15 @@
 - [ ] [Vulnerability Assessments and Results](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d4)
 - [ ] [Results and Remediations](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d5)
 - [ ] [Staffing the IR Team](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d1)
-- [ ] [Incodence Escalation](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d2)
+- [ ] [Incidence Escalation](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d2)
 - [ ] [IR, Playbooks and Policy](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d3)
 - [ ] [Escalation Research Discussion](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d4)
 - [ ] [Encryption Tools](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d5)
+- [ ] [Cryptographic Methods](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d1)
+- [ ] [Cryptography Recap](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d2)
+- [ ] [Standard Protocols - SSH Server](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d3)
+- [ ] [Cyber Threat Intelligence](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d4)
+- [ ] [Threat Intelligence & Actionable Intelligence](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d5)
 
 ## OTHERS
 
