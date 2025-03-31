@@ -45,6 +45,7 @@
 <details>
   <summary>📂Tutorials</summary>
 
+- [ ] [CYBERSECURITY TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cyber/README.md)
 - [ ] [PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
 - [ ] [WINDOWS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/windows/README.md)
