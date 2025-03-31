@@ -1,6 +1,8 @@
 # Python Tutorials
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
+- [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
+- [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 - [ ] [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
 - [ ] [The Complete Python Developer - zero-to-mastery](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
 - [ ] [The Ultimate Python Unit Testing Course](https://www.udemy.com/course/python-unit-testing/)
