@@ -45,6 +45,7 @@
 <details>
   <summary>📂Tutorials</summary>
 
+- [ ] [CLOUD & AI TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cloud/README.md)
 - [ ] [CYBERSECURITY TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cyber/README.md)
 - [ ] [PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [LINUX TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)

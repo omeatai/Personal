@@ -1,3 +1,3 @@
-# Cybersecurity Tutorials
+# Cloud & AI Tutorials
 
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
