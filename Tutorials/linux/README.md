@@ -10,5 +10,5 @@
 - [ ] [How to Install Ubuntu Linux on a Virtual Machine](https://www.udemy.com/course/quick-guide-on-installing-ubuntu-linux-beginner-to-advanced/)
 - [ ] [Linux for Network Engineers: Practical Linux with GNS3](https://www.udemy.com/course/linux-for-network-engineers-practical-linux-with-gns3/)
 - [ ] [Ace Linux Interviews: All Levels Mastered](https://www.udemy.com/course/top-linux-interview-questions-answers-beginner-advanced/)
-- [ ] [Microsoft Windows Server 2016 Training for Beginners](https://www.udemy.com/course/windows-server-2016/)
+
 
