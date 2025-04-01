@@ -47,8 +47,8 @@
 
 - [ ] [CLOUD & AI TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cloud/README.md)
 - [ ] [CYBERSECURITY TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cyber/README.md)
-- [ ] [PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [LINUX & WINDOWS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
+- [ ] [PYTHON TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
 - [ ] [JAVASCRIPT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/javascript/README.md)
 - [ ] [REACT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
