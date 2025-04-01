@@ -1,4 +1,6 @@
-# Linux Tutorials
+# Linux & Windows Tutorials
+
+## Linux
 
 - [ ] [Linux in Cloud]()
 - [ ] [Linux for Beginners](https://www.udemy.com/course/linuxforbeginners/)
@@ -11,4 +13,7 @@
 - [ ] [Linux for Network Engineers: Practical Linux with GNS3](https://www.udemy.com/course/linux-for-network-engineers-practical-linux-with-gns3/)
 - [ ] [Ace Linux Interviews: All Levels Mastered](https://www.udemy.com/course/top-linux-interview-questions-answers-beginner-advanced/)
 
+## Windows
+
+- [ ] [Microsoft Windows Server 2016 Training for Beginners](https://www.udemy.com/course/windows-server-2016/)
 
