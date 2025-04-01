@@ -1,6 +1,12 @@
 # Cloud & AI Tutorials
 
+
+## Cloud
+
 - [ ] [Docker & Kubernetes: The Practical Guide](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
+
+## AI
+
 - [ ] [Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)](https://www.udemy.com/course/nextjs-chatgpt/)
 - [ ] [Next JS & Open AI / GPT: Next-generation Next JS & AI apps](https://www.udemy.com/course/next-js-ai/)
 - [ ] [Introduction to OpenAI API & ChatGPT API for Developers](https://www.udemy.com/course/introduction-to-openai-api-chatgpt-api-chatgpt-plugins/)
