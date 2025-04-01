@@ -1,8 +1,3 @@
 # Windows Tutorials
 
-<details>
-  <summary>🚀 About Me</summary>
-
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
-
-</details>
+- [ ] [Microsoft Windows Server 2016 Training for Beginners](https://www.udemy.com/course/windows-server-2016/)
