@@ -39,7 +39,8 @@
 <details>
   <summary>🧑‍💻Tutors</summary>
 
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+- [ ] [Bro Code](https://www.youtube.com/@BroCodez)
+- [ ] [Bharath Thippireddy](https://www.udemy.com/user/bharaththippireddy/)
 
 </details>
 
