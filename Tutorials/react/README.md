@@ -35,6 +35,11 @@
 - [ ] [React JS Full Course 2024 | 6+ Projects | 15 Hours](https://www.youtube.com/watch?v=dz458ZkBMak&t=52416s)
 - [ ] [Build 25 React JS Projects in 10 Hours | React Interview Questions 2023](https://www.youtube.com/watch?v=l3A9OcUd_Us)
 - [ ] [Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects](https://www.youtube.com/watch?v=x4rFhThSX04&t=1s)
+- [ ] [50+ HOURS REACT.JS 19 MONSTER CLASS](https://www.youtube.com/watch?v=M9O5AjEFzKw)
+- [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=qnwFpjIqsrA&t=4s)
+- [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
+- [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
+- [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 - [ ] [Full Stack Web Development using the MERN stack and DEVOPS](https://www.udemy.com/course/full-stack-web-development-using-the-mern-stack-and-devops/)
@@ -80,6 +85,8 @@
 - [ ] [Next JS 15 E-Commerce 2025 - Arcjet, Prisma, Postgress, Docker, Zustand, Paypal | Part 1](https://www.youtube.com/watch?v=Q2MQQKYzmMU)
 - [ ] [Next JS 15 E-Commerce 2025 - Arcjet, Prisma, Postgress, Docker, Zustand, Paypal | Part 2](https://www.youtube.com/watch?v=jtP0K1wsH6w)
 - [ ] [Next.js Full Course 2024 | Learn Next.js 14 In One Video | 14 Hours](https://www.youtube.com/watch?v=mQnWCmVErnw)
+- [ ] [THE BIGGEST NEXT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=QIDkK0FbXDc)
+- [ ] [THE BIGGEST NEXT.JS 15 COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=kiPrrtclZOA)
       
 ## Node
 
@@ -104,6 +111,7 @@
 - [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
 - [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 - [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
+- [ ] [Master React Native 2024: Comprehensive Course with Expo, Expo Router, TypeScript, Zustand](https://www.youtube.com/watch?v=a_SthPXtV6c)
 
 ## Testing & Design
 
