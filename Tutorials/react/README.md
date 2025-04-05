@@ -1,4 +1,4 @@
-# JS/React/RN/Next/Node Tutorials
+# JS/TS/React/RN/Next/Node Tutorials
 
 ## Javascript
 
