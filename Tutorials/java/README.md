@@ -14,6 +14,7 @@
 - [ ] [Advanced Java Course - Whizlabs](https://www.whizlabs.com/advanced-java-course/)
 - [ ] [Spring Framework Basics - Whizlabs](https://www.whizlabs.com/spring-framework-basics-video-course/)
 - [ ] [Oracle Certified Professional, Java SE 8 Programmer (1Z0-809) - Whizlabs](https://www.whizlabs.com/ocpjp-scjp/)
+- [ ] [Core Java Made Easy (Covers the latest Java 18)](https://www.udemy.com/course/corejavamadeeasy/)
 
 
 
