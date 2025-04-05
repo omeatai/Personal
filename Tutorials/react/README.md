@@ -45,7 +45,7 @@
 - [ ] [Next.js 15 Tutorial - Beginner to Advanced-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
 - [ ] [Learn Next.js 15 in 1 hour - Beginner Tutorial-CE](https://www.youtube.com/watch?v=_EgI9WH8q1A)
 - [ ] [Next.js 14 Tutorial - Beginner to Advanced -Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
-- [ ] [Next.js Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
+- [ ] [Next.js 13 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
 - [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
