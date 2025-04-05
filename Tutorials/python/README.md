@@ -34,6 +34,7 @@
 
 - [ ] [Python Django - The Practical Guide](https://www.udemy.com/course/python-django-the-practical-guide/)
 - [ ] [React and Django: A Practical Guide with Docker](https://www.udemy.com/course/react-django-admin/)
+- [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with Django and React](https://www.udemy.com/course/react-django-authentication)
 - [ ] [Django Core: Build & Deploy Web Project With Python & Django](https://www.udemy.com/course/complete-django-masterclass/)
 - [ ] [Build a Backend REST API with Python & Django - Advanced](https://www.udemy.com/course/django-python-advanced/)
