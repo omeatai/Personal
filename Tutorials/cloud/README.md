@@ -2,11 +2,11 @@
 
 ## Cloud
 
+- [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
 - [ ] [The Complete Guide to Build Serverless Applications on AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
 - [ ] [AWS Lambda and the Serverless Framework - Hands On Learning!](https://www.udemy.com/course/aws-lambda-serverless/)
 - [ ] [AWS Lambda, Python(Boto3) & Serverless- Beginner to Advanced](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
-- [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [DevOps Deployment Automation with Terraform, AWS and Docker](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
 - [ ] [Learn to Deploy Containers on AWS in 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
 - [ ] [Docker & Kubernetes: The Practical Guide](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
