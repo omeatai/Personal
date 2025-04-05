@@ -25,6 +25,7 @@
 - [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
 - [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
+- [ ] [Practical React-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM)
 - [ ] [Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects](https://www.youtube.com/watch?v=x4rFhThSX04&t=52144s)
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
@@ -40,12 +41,19 @@
 - [ ] [React - Build your React](https://www.udemy.com/course/creative-tim/)
 - [ ] [React Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG)
 - [ ] [React Query Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
+- [ ] [React Render Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg7czgqpQIBEAHn8D6l530t)
+- [ ] [React Hooks Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)
 - [ ] [React Hook Form Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjmgBr1327BA5bVXoQH-w5s)
-- [ ] [Redux Toolkit Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
+- [ ] [React Redux Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK)
+- [ ] [React Redux Toolkit Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
+- [ ] [React Table Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgWTSrDiwmUsl4ZvipOw9Cz)
 - [ ] [React Styled Components-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgu-G08-7ovbN9EyhF_cltM)
 - [ ] [React Material UI Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO)
+- [ ] [React Formik Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu)
+- [ ] [React Storybook Tutorial-Playlist](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhC-j3x3t9la8-GQJGViDQk)
 - [ ] [Design Tips for Developers-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiNfZK3QmKLnrPcSAX32INO)
 - [ ] [JSON Server Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
+- [ ] [React TypeScript Webpack Setup-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo)
 
 ## Next
 
@@ -83,6 +91,7 @@
 
 - [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
 - [ ] [Expo Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
+- [ ] [Vue JS 3 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
 
 <details>
   <summary>🧑‍💻Tutors</summary>
