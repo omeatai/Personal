@@ -4,6 +4,7 @@
 
 - [ ] [Java Full Course for free ☕ (2025)](https://www.youtube.com/watch?v=xTtL8E4LzTQ)
 - [ ] [Java Full Course for free ☕ (2021)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+- [ ] [Java tutorial for beginners 2025 ☕ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOj_NOZYq_R2PECIMglLemc)
 - [ ] [Complete Java, Spring, and Microservices course](https://www.youtube.com/playlist?list=PLsyeobzWxl7q6oUFts2erdot6jxF_lisP)
 - [ ] [Build & Deploy a Production-Ready Patient Management System with Microservices: Java Spring Boot AWS](https://www.youtube.com/watch?v=tseqdcFfTUY)
 - [ ] [Java Bootcamp: Learn Java with Hands-On Projects](https://www.youtube.com/watch?v=PWMuZqxtJK4)
