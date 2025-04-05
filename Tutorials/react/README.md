@@ -7,6 +7,7 @@
 - [ ] [JavaScript Crash Course - Tutorial for Complete Beginners-CE](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
 - [ ] [Advanced JavaScript Crash Course-CE](https://www.youtube.com/watch?v=R9I85RhI7Cg)
 - [ ] [ES6 and Typescript Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
+- [ ] [Asynchronous JavaScript Crash Course-CE](https://www.youtube.com/watch?v=exBgWAIeIeg)
 - [ ] [JavaScript Algorithms and Data Structures-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
 - [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
 - [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
@@ -40,6 +41,7 @@
 
 ## Next
 
+- [ ] [Next.js 14 Tutorial - Beginner to Advanced -Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
@@ -47,6 +49,7 @@
       
 ## Node
 
+- [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
 - [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
 
