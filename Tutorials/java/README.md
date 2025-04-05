@@ -21,6 +21,8 @@
   <summary>🧑‍💻Tutors</summary>
 
 - [ ] [Rayan Slim](https://www.youtube.com/@RayanSlim087/videos)
+- [ ] [Bro Code](https://www.youtube.com/@BroCodez)
+- [ ] [Bharath Thippireddy](https://www.udemy.com/user/bharaththippireddy/)
 
 </details>
 
