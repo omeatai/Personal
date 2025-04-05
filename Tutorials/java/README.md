@@ -15,6 +15,7 @@
 - [ ] [Spring Framework Basics - Whizlabs](https://www.whizlabs.com/spring-framework-basics-video-course/)
 - [ ] [Oracle Certified Professional, Java SE 8 Programmer (1Z0-809) - Whizlabs](https://www.whizlabs.com/ocpjp-scjp/)
 - [ ] [Core Java Made Easy (Covers the latest Java 18)](https://www.udemy.com/course/corejavamadeeasy/)
+- [ ] [Java Design Patterns](https://www.udemy.com/course/java-design-patterns/)
 
 
 
