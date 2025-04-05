@@ -37,8 +37,6 @@
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 - [ ] [Full Stack Web Development using the MERN stack and DEVOPS](https://www.udemy.com/course/full-stack-web-development-using-the-mern-stack-and-devops/)
 - [ ] [React - Beginner to Advanced (+ Redux & Ecommerce App)](https://www.udemy.com/course/react-beginner-to-advanced-with-redux-ecommerce-app/)
-- [ ] [MERN Stack Bootcamp 2023 - MongoDB, Express, React & NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
-- [ ] [Advanced MERN Stack Authentication](https://www.udemy.com/course/advanced-mern-stack-authentication/)
 - [ ] [React & TypeScript - The Practical Guide](https://www.udemy.com/course/react-typescript-the-practical-guide/)
 - [ ] [React and Typescript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 - [ ] [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
@@ -89,8 +87,10 @@
 - [ ] [Node JS Full Course 2025 Part 2| Microservices, Redis, CI CD, Docker, VPS Hosting | Hostinger | Part 2](https://www.youtube.com/watch?v=_f7h6xQXiLA)
 - [ ] [Node JS Full Course 2025 Part 3| PostgreSQL, Prisma, Nest JS, Bun, Hono, Prometheus, Grafana | Part 3](https://www.youtube.com/watch?v=pa9xqOnorx0)
 - [ ] [MERN Stack Full Course - ECommerce App with Admin Panel : React, Redux Toolkit, Tailwind, MongoDB](https://www.youtube.com/watch?v=_4CPp670fK4)
+- [ ] [MERN Stack Bootcamp 2023 - MongoDB, Express, React & NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
+- [ ] [Advanced MERN Stack Authentication](https://www.udemy.com/course/advanced-mern-stack-authentication/)
 - [ ] [How To Deploy MERN Stack App | Deploy MERN Stack E-Commerce App](https://www.youtube.com/watch?v=39DloCh510E)
-- [ ] [MERN Mastery: Building a Scalable Movies App for Ultimate User Experience](
+- [ ] [MERN Mastery: Building a Scalable Movies App for Ultimate User Experience](https://www.youtube.com/watch?v=Bd1EBSCu2os)
 - [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
 - [ ] [Socket.IO Mastery: Learn Real-Time Web Development](https://www.youtube.com/watch?v=EtG0tv2a9Uw)
 
