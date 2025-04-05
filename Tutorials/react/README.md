@@ -32,6 +32,18 @@
 - [ ] [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/)
 - [ ] [React in easy steps with Node and Java Backend](https://www.udemy.com/course/reactjs-in-easy-steps/)
 
+## Next
+
+- [ ] [NextJS Developer](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
+- [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
+- [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
+- [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+      
+## Node
+
+- [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
+- [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+
 ## React Native
 
 - [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
