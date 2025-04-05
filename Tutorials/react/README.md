@@ -4,8 +4,12 @@
 
 - [ ] [JavaScript Full Course for free 🌐 (2024)](https://www.youtube.com/watch?v=lfmg-EJ8gm4)
 - [ ] [JavaScript tutorial for beginners 🌐 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv)
+- [ ] [JavaScript Crash Course - Tutorial for Complete Beginners-CE](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
+- [ ] [Advanced JavaScript Crash Course-CE](https://www.youtube.com/watch?v=R9I85RhI7Cg)
 - [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
 - [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
+- [ ] [JavaScript Tutorial Full Course - Beginner to Pro-SuperSimpleDev](https://www.youtube.com/watch?v=EerdGm-ehJQ)
+- [ ] [JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022) - Clever Programmer](https://www.youtube.com/watch?v=lI1ae4REbFM)
 
 
 ## Typescript
