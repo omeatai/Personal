@@ -12,8 +12,7 @@
 - [ ] [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
-- [ ] [REST APIs with Flask and Python in 2025](https://www.udemy.com/course/rest-api-flask-and-python/)
-- [ ] [Python Mega Course: Learn Python in 60 Days, Build 20 Apps](https://www.udemy.com/course/the-python-mega-course/)
+- [ ] [Python for Everybody - Full University Python Course](https://www.youtube.com/watch?v=8DvywoWv6fI)
 
 ## Python Testing & Design
 
