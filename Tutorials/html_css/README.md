@@ -1,5 +1,6 @@
 # HTML & CSS Tutorials
 
+- [ ] [Web Development Crash Courses 2023-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhuX4qGvFx-wPy_MEi6Jdp7)
 - [ ] [Master HTML and CSS in 6 Hours | HTML and CSS full Course 2024](https://www.youtube.com/watch?v=PIhmTGiKKkg)
 - [ ] [The Complete Full-Stack Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 - [ ] [The Web Developer Bootcamp 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)
