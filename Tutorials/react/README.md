@@ -16,6 +16,7 @@
 - [ ] [JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022) - Clever Programmer](https://www.youtube.com/watch?v=lI1ae4REbFM)
 - [ ] [Top 50 JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=Mv3m7YaZ4lA)
 - [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
+- [ ] [From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps](https://www.youtube.com/watch?v=H3XIJYEPdus)
 
 ## Typescript
 
@@ -29,6 +30,7 @@
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
 - [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
 - [ ] [Practical React-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM)
+- [ ] [Master ReactJS in 7 Hours with 10 Real-World Projects 2023](https://www.youtube.com/watch?v=XrwsMN2IWnE)
 - [ ] [All React 19 Features Explained 2025](https://www.youtube.com/watch?v=d01RPL_hveo)
 - [ ] [React JS Full Course 2024 | 6+ Projects | 15 Hours](https://www.youtube.com/watch?v=dz458ZkBMak&t=52416s)
 - [ ] [Build 25 React JS Projects in 10 Hours | React Interview Questions 2023](https://www.youtube.com/watch?v=l3A9OcUd_Us)
@@ -84,6 +86,7 @@
 - [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
 - [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+- [ ] [The Complete Node.js Bootcamp: From Beginner to Expert ](https://www.youtube.com/watch?v=EsUL2bfKKLc)
 - [ ] [Node JS Full Course 2025 Part 1| Complete Backend Development Course | Part 1](https://www.youtube.com/watch?v=MIJt9H69QVc)
 - [ ] [Node JS Full Course 2025 Part 2| Microservices, Redis, CI CD, Docker, VPS Hosting | Hostinger | Part 2](https://www.youtube.com/watch?v=_f7h6xQXiLA)
 - [ ] [Node JS Full Course 2025 Part 3| PostgreSQL, Prisma, Nest JS, Bun, Hono, Prometheus, Grafana | Part 3](https://www.youtube.com/watch?v=pa9xqOnorx0)
@@ -132,5 +135,6 @@
 
 - [ ] [My VSCode Setup 🔥🔥](https://www.youtube.com/watch?v=qBE1tdu5cTM)
 - [ ] [Mastering Go: A Comprehensive Guide to Golang Programming](https://www.youtube.com/watch?v=N2GWXuj_IWg)
+- [ ] [Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!](https://www.youtube.com/watch?v=pgWZLS75Nmo)
 
 </details>
