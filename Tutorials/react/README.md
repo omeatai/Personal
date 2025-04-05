@@ -14,3 +14,17 @@
 - [ ] [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
 - [ ] [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/)
 
+<details>
+  <summary>🧑‍💻Tutors</summary>
+
+- [ ] [Bro Code](https://www.youtube.com/@BroCodez)
+
+</details>
+
+
+<details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
