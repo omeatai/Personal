@@ -42,6 +42,8 @@
 - [ ] [DJANGO REST FRAMEWORK - Build efficient backend with Django](https://www.udemy.com/course/django-rest-framework-api/)
 - [ ] [Django Rest Framework](https://www.udemy.com/course/djangorestframework/)
 - [ ] [Django for Python Developers](https://www.udemy.com/course/django-for-python-developers)
+- [ ] [Docker for Python Django Developers](https://www.udemy.com/course/docker-for-python-django-developers/)
+- [ ] [AI with GitHub Copilot for Python & Django REST Developers](https://www.udemy.com/course/mastering-github-copilot-for-python-django-rest-developers/)
 
 <details>
   <summary>🧑‍💻Tutors</summary>
