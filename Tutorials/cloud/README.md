@@ -38,3 +38,17 @@
 - [ ] [Ultimate AWS Certified Solutions Architect Professional 2025](https://www.udemy.com/course/aws-solutions-architect-professional/)
 - [ ] [AWS Certified DevOps Engineer Professional 2025 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on)
 
+<details>
+  <summary>🧑‍💻Tutors</summary>
+
+- [ ] [Learn Kubernetes with KodeKloud](https://www.youtube.com/playlist?list=PL2We04F3Y_43dAehLMT5GxJhtk3mJtkl5)
+
+</details>
+
+
+<details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
