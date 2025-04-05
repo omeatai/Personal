@@ -73,6 +73,7 @@
 ## Electron
 
 - [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
+- [ ] [Expo Router Tutorial](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
 
 <details>
   <summary>🧑‍💻Tutors</summary>
