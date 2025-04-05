@@ -46,6 +46,7 @@
   <summary>🧑‍💻Tutors</summary>
 
 - [ ] [Bro Code](https://www.youtube.com/@BroCodez)
+- [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
 
 </details>
 
