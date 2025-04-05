@@ -38,6 +38,14 @@
 - [ ] [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/)
 - [ ] [React in easy steps with Node and Java Backend](https://www.udemy.com/course/reactjs-in-easy-steps/)
 - [ ] [React - Build your React](https://www.udemy.com/course/creative-tim/)
+- [ ] [React Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG)
+- [ ] [React Query Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
+- [ ] [React Hook Form Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjmgBr1327BA5bVXoQH-w5s)
+- [ ] [Redux Toolkit Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
+- [ ] [React Styled Components-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgu-G08-7ovbN9EyhF_cltM)
+- [ ] [React Material UI Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO)
+- [ ] [Design Tips for Developers-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiNfZK3QmKLnrPcSAX32INO)
+- [ ] [JSON Server Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 
 ## Next
 
@@ -69,6 +77,7 @@
 - [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
 - [ ] [Automated testing using supertest and Jest](https://www.udemy.com/course/automated-testing-using-supertest-and-jest/)
 - [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
+- [ ] [React Testing Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
 
 ## Electron
 
