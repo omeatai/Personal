@@ -14,6 +14,8 @@
 - [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
 - [ ] [JavaScript Tutorial Full Course - Beginner to Pro-SuperSimpleDev](https://www.youtube.com/watch?v=EerdGm-ehJQ)
 - [ ] [JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022) - Clever Programmer](https://www.youtube.com/watch?v=lI1ae4REbFM)
+- [ ] [Top 50 JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=Mv3m7YaZ4lA)
+- [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
 
 ## Typescript
 
@@ -26,6 +28,8 @@
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
 - [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
 - [ ] [Practical React-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM)
+- [ ] [All React 19 Features Explained 2025](https://www.youtube.com/watch?v=d01RPL_hveo)
+- [ ] [React JS Full Course 2024 | 6+ Projects | 15 Hours](https://www.youtube.com/watch?v=dz458ZkBMak&t=52416s)
 - [ ] [Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects](https://www.youtube.com/watch?v=x4rFhThSX04&t=52144s)
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
@@ -42,10 +46,12 @@
 - [ ] [React Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG)
 - [ ] [React Query Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
 - [ ] [React Render Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg7czgqpQIBEAHn8D6l530t)
+- [ ] [All React Hooks Explained in 1 Hour | React JS Hooks Interview Questions | React Hooks Crash Course](https://www.youtube.com/watch?v=2YsQgB0IUPY)
 - [ ] [React Hooks Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)
 - [ ] [React Hook Form Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjmgBr1327BA5bVXoQH-w5s)
 - [ ] [React Redux Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK)
 - [ ] [React Redux Toolkit Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
+- [ ] [Learn Redux Toolkit in 1 Hour | Redux Toolkit Crash Course | Redux Toolkit Tutorial](https://www.youtube.com/watch?v=A8blgpj78kM)
 - [ ] [React Table Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgWTSrDiwmUsl4ZvipOw9Cz)
 - [ ] [React Styled Components-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgu-G08-7ovbN9EyhF_cltM)
 - [ ] [React Material UI Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO)
@@ -54,6 +60,7 @@
 - [ ] [Design Tips for Developers-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiNfZK3QmKLnrPcSAX32INO)
 - [ ] [JSON Server Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 - [ ] [React TypeScript Webpack Setup-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo)
+- [ ] [Top 10 React JS Interview Questions | React Interview Questions and Answers](https://www.youtube.com/watch?v=YLXQMtb3Lns)
 
 ## Next
 
@@ -66,18 +73,27 @@
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+- [ ] [Next JS 15 E-Commerce 2025 - Arcjet, Prisma, Postgress, Docker, Zustand, Paypal | Part 1](https://www.youtube.com/watch?v=Q2MQQKYzmMU)
+- [ ] [Next JS 15 E-Commerce 2025 - Arcjet, Prisma, Postgress, Docker, Zustand, Paypal | Part 2](https://www.youtube.com/watch?v=jtP0K1wsH6w)
+- [ ] [Next.js Full Course 2024 | Learn Next.js 14 In One Video | 14 Hours](https://www.youtube.com/watch?v=mQnWCmVErnw)
       
 ## Node
 
 - [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
 - [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+- [ ] [Node JS Full Course 2025 Part 1| Complete Backend Development Course | Part 1](https://www.youtube.com/watch?v=MIJt9H69QVc)
+- [ ] [Node JS Full Course 2025 Part 2| Microservices, Redis, CI CD, Docker, VPS Hosting | Hostinger | Part 2](https://www.youtube.com/watch?v=_f7h6xQXiLA)
+- [ ] [Node JS Full Course 2025 Part 3| PostgreSQL, Prisma, Nest JS, Bun, Hono, Prometheus, Grafana | Part 3](https://www.youtube.com/watch?v=pa9xqOnorx0)
+- [ ] [MERN Stack Full Course - ECommerce App with Admin Panel : React, Redux Toolkit, Tailwind, MongoDB](https://www.youtube.com/watch?v=_4CPp670fK4)
+- [ ] [How To Deploy MERN Stack App | Deploy MERN Stack E-Commerce App](https://www.youtube.com/watch?v=39DloCh510E)
 
 ## React Native
 
 - [ ] [React Native Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
 - [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
 - [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
+- [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
 
 ## Testing & Design
 
@@ -98,6 +114,7 @@
 
 - [ ] [Bro Code](https://www.youtube.com/@BroCodez)
 - [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
+- [ ] [Sangam Mukherjee](https://www.youtube.com/@sangammukherjee/videos)
 
 </details>
 
