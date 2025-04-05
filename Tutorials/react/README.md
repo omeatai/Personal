@@ -6,6 +6,8 @@
 - [ ] [JavaScript tutorial for beginners 🌐 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv)
 - [ ] [JavaScript Crash Course - Tutorial for Complete Beginners-CE](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
 - [ ] [Advanced JavaScript Crash Course-CE](https://www.youtube.com/watch?v=R9I85RhI7Cg)
+- [ ] [ES6 and Typescript Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
+- [ ] [JavaScript Algorithms and Data Structures-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
 - [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
 - [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
 - [ ] [JavaScript Tutorial Full Course - Beginner to Pro-SuperSimpleDev](https://www.youtube.com/watch?v=EerdGm-ehJQ)
