@@ -3,6 +3,7 @@
 ## Python Basics
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
+- [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
 - [ ] [Python for beginners](https://www.udemy.com/course/python-core-and-advanced/)
 - [ ] [Python For Beginners: Scripting Programming With Python 3](https://www.udemy.com/course/python-scripting/)
 - [ ] [Learn To Code From Scratch With Python 3](https://www.udemy.com/course/learn-to-code-from-scratch-with-python-3/)
@@ -10,6 +11,8 @@
 - [ ] [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
+- [ ] [REST APIs with Flask and Python in 2025](https://www.udemy.com/course/rest-api-flask-and-python/)
+- [ ] [Python Mega Course: Learn Python in 60 Days, Build 20 Apps](https://www.udemy.com/course/the-python-mega-course/)
 
 ## Python Testing & Design
 
@@ -18,6 +21,7 @@
 
 ## Python Data Structures and Algorithms
 
+- [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
