@@ -52,6 +52,7 @@
 - [ ] [React Redux Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK)
 - [ ] [React Redux Toolkit Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
 - [ ] [Learn Redux Toolkit in 1 Hour | Redux Toolkit Crash Course | Redux Toolkit Tutorial](https://www.youtube.com/watch?v=A8blgpj78kM)
+- [ ] [Mastering Redux Toolkit and RTK Query](https://www.youtube.com/watch?v=CI8VeG0GI-M)
 - [ ] [React Table Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgWTSrDiwmUsl4ZvipOw9Cz)
 - [ ] [React Styled Components-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgu-G08-7ovbN9EyhF_cltM)
 - [ ] [React Material UI Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO)
