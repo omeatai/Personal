@@ -34,7 +34,7 @@
 
 ## Next
 
-- [ ] [NextJS Developer](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
+- [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
