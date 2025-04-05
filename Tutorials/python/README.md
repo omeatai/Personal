@@ -4,9 +4,11 @@
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
 - [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
+- [ ] [Python for Everyone: From Zero to Hero 6 Hours Complete Course](https://www.youtube.com/watch?v=JZDQKj9BOoc)
 - [ ] [Python Full Course for free 🐍 (2021](https://www.youtube.com/watch?v=XKHEtdqhLK8)
 - [ ] [Python Full Course for free 🐍 (2024)](https://www.youtube.com/watch?v=ix9cRaBkVe0&t=1s)
 - [ ] [Python tutorial for beginners 🐍 (2024) Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
+- [ ] [Python Tutorial for Beginners - Learn Python in 5 Hours](https://www.youtube.com/watch?v=t8pPdKYpowI)
 - [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
 - [ ] [Python for beginners](https://www.udemy.com/course/python-core-and-advanced/)
 - [ ] [Python For Beginners: Scripting Programming With Python 3](https://www.udemy.com/course/python-scripting/)
@@ -16,6 +18,7 @@
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
 - [ ] [Python for Everybody - Full University Python Course](https://www.youtube.com/watch?v=8DvywoWv6fI)
+- [ ] [Mastering OpenAI Python & JavaScript APIs](https://www.youtube.com/watch?v=Us-kPtnaFU8)
 
 ## Python Testing & Design
 
@@ -29,6 +32,7 @@
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
+- [ ] [ALL IN ONE: Data Structures & Algorithms In JavaScript Complete Course 2024 By HuXn](https://www.youtube.com/watch?v=wBtPGnVnA9g)
 
 ## Django
 
@@ -45,6 +49,10 @@
 - [ ] [Django for Python Developers](https://www.udemy.com/course/django-for-python-developers)
 - [ ] [Docker for Python Django Developers](https://www.udemy.com/course/docker-for-python-django-developers/)
 - [ ] [AI with GitHub Copilot for Python & Django REST Developers](https://www.udemy.com/course/mastering-github-copilot-for-python-django-rest-developers/)
+
+## SQL
+
+- [ ] [MySQL: From Beginner to Monster Level (4-Hour Complete Course)](https://www.youtube.com/watch?v=h4R-nJbM_ac)
 
 <details>
   <summary>🧑‍💻Tutors</summary>
