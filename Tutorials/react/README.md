@@ -1,4 +1,4 @@
-# JS/React/React Native Tutorials
+# JS/React/RN/Next/Node Tutorials
 
 ## Javascript
 
