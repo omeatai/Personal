@@ -8,6 +8,7 @@
 - [ ] [Advanced JavaScript Crash Course-CE](https://www.youtube.com/watch?v=R9I85RhI7Cg)
 - [ ] [ES6 and Typescript Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
 - [ ] [Asynchronous JavaScript Crash Course-CE](https://www.youtube.com/watch?v=exBgWAIeIeg)
+- [ ] [JavaScript Promises for Complete Beginners-CE](https://www.youtube.com/watch?v=YiYtwbnPfkY)
 - [ ] [JavaScript Algorithms and Data Structures-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
 - [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
 - [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
@@ -24,6 +25,8 @@
 
 - [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
+- [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
+- [ ] [Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects](https://www.youtube.com/watch?v=x4rFhThSX04&t=52144s)
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 - [ ] [React - Build your React](https://www.udemy.com/course/creative-tim/)
@@ -41,6 +44,7 @@
 
 ## Next
 
+- [ ] [Learn Next.js 15 in 1 hour - Beginner Tutorial-CE](https://www.youtube.com/watch?v=_EgI9WH8q1A)
 - [ ] [Next.js 14 Tutorial - Beginner to Advanced -Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
@@ -55,6 +59,7 @@
 
 ## React Native
 
+- [ ] [React Native Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
 - [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
 - [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 
@@ -62,6 +67,10 @@
 
 - [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
 - [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
+
+## Electron
+
+- [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
 
 <details>
   <summary>🧑‍💻Tutors</summary>
