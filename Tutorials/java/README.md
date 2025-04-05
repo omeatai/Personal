@@ -8,6 +8,10 @@
 - [ ] [Java Bootcamp: Learn Java with Hands-On Projects](https://www.youtube.com/watch?v=PWMuZqxtJK4)
 - [ ] [Java Full Stack Development with Spring Boot: MVC & REST API](https://www.youtube.com/watch?v=8s1dYvV3TPo)
 - [ ] [12-Hour Full Java Tutorial (2024 Edition)](https://www.youtube.com/watch?v=i0uDfudnrCc)
+- [ ] [Java For Beginners - Whizlabs](https://www.whizlabs.com/java-for-beginners/)
+- [ ] [Advanced Java Course](https://www.whizlabs.com/advanced-java-course/)
+- [ ] [Spring Framework Basics](https://www.whizlabs.com/spring-framework-basics-video-course/)
+- [ ] [Oracle Certified Professional, Java SE 8 Programmer (1Z0-809)](https://www.whizlabs.com/ocpjp-scjp/)
 
 
 
