@@ -4,6 +4,9 @@
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
 - [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
+- [ ] [Python Full Course for free 🐍 (2021](https://www.youtube.com/watch?v=XKHEtdqhLK8)
+- [ ] [Python Full Course for free 🐍 (2024)](https://www.youtube.com/watch?v=ix9cRaBkVe0&t=1s)
+- [ ] [Python tutorial for beginners 🐍 (2024) Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
 - [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
 - [ ] [Python for beginners](https://www.udemy.com/course/python-core-and-advanced/)
 - [ ] [Python For Beginners: Scripting Programming With Python 3](https://www.udemy.com/course/python-scripting/)
@@ -21,6 +24,7 @@
 
 ## Python Data Structures and Algorithms
 
+- [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
