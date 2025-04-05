@@ -40,6 +40,8 @@
 - [ ] [Django & Django REST Framework with React Frontend](https://www.udemy.com/course/django-django-rest-framework-build-rest-api-in-python/)
 - [ ] [Build REST APIs with Django REST Framework and Python](https://www.udemy.com/course/django-rest-framework/)
 - [ ] [DJANGO REST FRAMEWORK - Build efficient backend with Django](https://www.udemy.com/course/django-rest-framework-api/)
+- [ ] [Django Rest Framework](https://www.udemy.com/course/djangorestframework/)
+- [ ] [Django for Python Developers](https://www.udemy.com/course/django-for-python-developers)
 
 <details>
   <summary>🧑‍💻Tutors</summary>
