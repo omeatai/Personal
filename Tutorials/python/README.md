@@ -27,6 +27,7 @@
 
 ## Python Data Structures and Algorithms
 
+- [ ] [70 Leetcode problems in 5+ hours (every data structure)](https://www.youtube.com/watch?v=lvO88XxNAzs)
 - [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
 - [ ] [Data Structures and Algorithms 📈 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZON1eaqfafTnEexRzuHbfZX8)
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
