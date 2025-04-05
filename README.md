@@ -50,8 +50,7 @@
 - [ ] [LINUX & WINDOWS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
 - [ ] [PYTHON/DJANGO TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
 - [ ] [HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
-- [ ] [JS/REACT/REACT NATIVE TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
-- [ ] [NODE/NEXT TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/node/README.md)
+- [ ] [JS/REACT/RN/NEXT/NODE TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
 - [ ] [JAVA TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
 - [ ] [OTHERS](https://github.com/omeatai/Personal/blob/main/Tutorials/src/README.md)
 
