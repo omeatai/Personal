@@ -36,6 +36,20 @@
 - [ ] [Build REST APIs with Django REST Framework and Python](https://www.udemy.com/course/django-rest-framework/)
 - [ ] [DJANGO REST FRAMEWORK - Build efficient backend with Django](https://www.udemy.com/course/django-rest-framework-api/)
 
+<details>
+  <summary>🧑‍💻Tutors</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
+
+
+<details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
 
 
 
