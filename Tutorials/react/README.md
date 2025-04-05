@@ -1,4 +1,13 @@
-# React Tutorials
+# JS/React/React Native Tutorials
+
+## Javascript
+
+- [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
+- [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
+- [ ] [TypeScript Developer Course in 2025 – Beginner to Expert](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
+- [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
+
+## React
 
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
@@ -13,6 +22,12 @@
 - [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
 - [ ] [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
 - [ ] [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/)
+
+## React Native
+
+- [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
+- [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
+
 
 <details>
   <summary>🧑‍💻Tutors</summary>
