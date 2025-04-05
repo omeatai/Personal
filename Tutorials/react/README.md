@@ -19,6 +19,7 @@
 
 ## Typescript
 
+- [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
 - [ ] [TypeScript Developer Course in 2025 – Beginner to Expert](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
 - [ ] [TYPESCRIPT FOR BEGINNERS](https://www.udemy.com/course/typescript-for-beginners/)
 
@@ -68,6 +69,7 @@
 - [ ] [Next.js 15 Full Tutorial - Beginner to Advanced](https://www.youtube.com/watch?v=k7o9R6eaSes)
 - [ ] [Next.js 15 Tutorial - Beginner to Advanced-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
 - [ ] [Learn Next.js 15 in 1 hour - Beginner Tutorial-CE](https://www.youtube.com/watch?v=_EgI9WH8q1A)
+- [ ] [Mastering Next.js 14: A Comprehensive Guide to the Latest Features and Advanced Concepts!](https://www.youtube.com/watch?v=GowPe3iiqTs)
 - [ ] [Next.js 14 Tutorial - Beginner to Advanced -Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - [ ] [Next.js 13 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
 - [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
@@ -88,6 +90,9 @@
 - [ ] [Node JS Full Course 2025 Part 3| PostgreSQL, Prisma, Nest JS, Bun, Hono, Prometheus, Grafana | Part 3](https://www.youtube.com/watch?v=pa9xqOnorx0)
 - [ ] [MERN Stack Full Course - ECommerce App with Admin Panel : React, Redux Toolkit, Tailwind, MongoDB](https://www.youtube.com/watch?v=_4CPp670fK4)
 - [ ] [How To Deploy MERN Stack App | Deploy MERN Stack E-Commerce App](https://www.youtube.com/watch?v=39DloCh510E)
+- [ ] [MERN Mastery: Building a Scalable Movies App for Ultimate User Experience](
+- [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
+- [ ] [Socket.IO Mastery: Learn Real-Time Web Development](https://www.youtube.com/watch?v=EtG0tv2a9Uw)
 
 ## React Native
 
@@ -116,6 +121,7 @@
 - [ ] [Bro Code](https://www.youtube.com/@BroCodez)
 - [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
 - [ ] [Sangam Mukherjee](https://www.youtube.com/@sangammukherjee/videos)
+- [ ] [HuXn WebDev](https://www.youtube.com/@huxnwebdev/videos)
 
 </details>
 
@@ -123,6 +129,7 @@
 <details>
   <summary>🚀Other Resources</summary>
 
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+- [ ] [My VSCode Setup 🔥🔥](https://www.youtube.com/watch?v=qBE1tdu5cTM)
+- [ ] [Mastering Go: A Comprehensive Guide to Golang Programming](https://www.youtube.com/watch?v=N2GWXuj_IWg)
 
 </details>
