@@ -104,4 +104,6 @@
 - [ ] [Complete Cyber Security Practice Tests & Interview Questions](https://www.udemy.com/course/complete-cyber-security-practice-tests-interview-questions/?couponCode=24T2MT111524)
 - [ ] [Free Splunk Tutorial - Splunk Basics Course](https://www.udemy.com/course/splunk-basics-course/)
 - [ ] [Free Splunk Tutorial - *NEW* A No-Nonsense Splunk Course | Getting Started Guide](https://www.udemy.com/course/no-nonsense-course-on-using-splunk/)
+- [ ] [Google Cybersecurity](https://www.coursera.org/professional-certificates/google-cybersecurity#courses)
+
 
