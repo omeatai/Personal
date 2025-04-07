@@ -92,7 +92,7 @@
 </details>
 
 <details>
-  <summary>🔑Editor and Tools</summary>
+  <summary>🔑Editors and Tools</summary>
 
 - [ ] [REPLIT](https://replit.com/)
 - [ ] [GLITCH](https://glitch.com/)
