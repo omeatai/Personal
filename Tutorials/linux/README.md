@@ -2,7 +2,7 @@
 
 ## Linux
 
-- [ ] [Linux in Cloud]()
+- [ ] [Linux in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/AlAHFLO3RpNDs1zS2H7AwAU?e=UXeChK)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
 - [ ] [Vi and Vim editor - Fundamentals](https://www.whizlabs.com/learn-vi-and-vim-editor/)
 - [ ] [Linux for Beginners](https://www.udemy.com/course/linuxforbeginners/)
