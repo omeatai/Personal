@@ -1,4 +1,4 @@
-# Cybersecurity Tutorials
+# Cybersecurity & Networking Tutorials
 
 ## TryHackMe
 
@@ -86,6 +86,7 @@
 
 ## OTHERS
 
+- [ ] [Whizlabs Training](https://www.whizlabs.com/)
 - [ ] [Cisco Netacad Introduction to Cybersecurity](https://www.netacad.com/launch?id=dc0847b7-d6fc-4597-bc31-38ddd6b07a2f&tab=curriculum&view=85ac3a97-7f9d-547f-8ca6-a7161c819b4b)
 - [ ] [Complete Ethical Hacking Bootcamp](https://www.udemy.com/course/complete-ethical-hacking-bootcamp-zero-to-mastery/?couponCode=24T2MT111524)
 - [ ] [Kali Linux Fundamentals For Ethical Hackers - Full Course!](https://www.udemy.com/course/kali-linux-essentials-for-ethical-hackers-beginners-guide/?couponCode=24T2MT111524)
@@ -118,3 +119,4 @@
 - [ ] [Learning Python 3 Network Programming for Network Engineers](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/?couponCode=24T2MT111524)
 - [ ] [Free DevOps Tutorial - Net DevOps: Cisco Python, Automation, NETCONF, SDN, Docker](https://www.udemy.com/course/net-devops-cisco-python-automation-netconf-sdn-docker/)
 - [ ] [Free Python Network Programming Tutorial - Network Automation - Python3 and Ansible](https://www.udemy.com/course/network-automation-python3-and-ansible-feb-2020-batch/)
+
