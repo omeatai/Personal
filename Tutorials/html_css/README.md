@@ -65,11 +65,12 @@
 <details>
   <summary>🧑‍💻Tutors</summary>
 
-- [ ] [Bro Code](https://www.youtube.com/@BroCodez)
-- [ ] [Bharath Thippireddy](https://www.udemy.com/user/bharaththippireddy/)
-- [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
-- [ ] [Sangam Mukherjee](https://www.youtube.com/@sangammukherjee/videos)
 - [ ] [CodingAddict](https://www.codingaddict.io/)
+- [ ] [Bro Code](https://www.youtube.com/@BroCodez)
+- [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
+- [ ] [Bharath Thippireddy](https://www.udemy.com/user/bharaththippireddy/)
+- [ ] [Sangam Mukherjee](https://www.youtube.com/@sangammukherjee/videos)
+- [ ] [HuXn WebDev](https://www.youtube.com/@huxnwebdev/videos)
 - [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
 - [ ] [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode/playlists)
 - [ ] [Net Ninja](https://www.youtube.com/@NetNinja/playlists)
@@ -102,7 +103,6 @@
 - [ ] [EdRoh](https://www.youtube.com/@EdRohDev/videos)
 
 </details>
-
 
 <details>
   <summary>🚀Other Resources</summary>
