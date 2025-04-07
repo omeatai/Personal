@@ -109,6 +109,7 @@
 
 ## NETWORKING
 
+- [ ] [IP Addressing and Subnetting](https://www.whizlabs.com/ip-addressing-and-subnetting/)
 - [ ] [GNS3 Build 3 Network Applications with Python](https://gns3.teachable.com/courses/)
 - [ ] [Build 3 Network Applications with Python and Machine Learning](https://gns3.teachable.com/courses/enrolled/2601147)
 - [ ] [GNS3 Fundamentals (Official Course) Part 1](https://www.udemy.com/course/gns3-fundamentals-official-course-part-1/?couponCode=24T2MT111524)
