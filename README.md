@@ -154,7 +154,7 @@
 </details>
 
 <details>
-  <summary>🔲AI</summary>
+  <summary>🔲AI Tools</summary>
 
 - [ ] [CHATGPT](https://chat.openai.com/)
 - [ ] [PERPLEXITY AI](https://www.perplexity.ai/)
