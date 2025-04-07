@@ -120,3 +120,11 @@
 - [ ] [Free DevOps Tutorial - Net DevOps: Cisco Python, Automation, NETCONF, SDN, Docker](https://www.udemy.com/course/net-devops-cisco-python-automation-netconf-sdn-docker/)
 - [ ] [Free Python Network Programming Tutorial - Network Automation - Python3 and Ansible](https://www.udemy.com/course/network-automation-python3-and-ansible-feb-2020-batch/)
 
+<details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
+
+
