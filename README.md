@@ -57,7 +57,7 @@
 </details>
 
 <details>
-  <summary>🏀Frameworks</summary>
+  <summary>🏀Frameworks & Libraries</summary>
 
 - [ ] [REACT](https://react.dev/learn)
 - [ ] [NEXTJS](https://nextjs.org/docs)
@@ -71,12 +71,6 @@
 - [ ] [DJANGO CLASSES](https://ccbv.co.uk/)
 - [ ] [LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
 - [ ] [LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
-
-</details>
-
-<details>
-  <summary>📁Libraries</summary>
-
 - [ ] [W3SCHOOLS](https://www.w3schools.com/)
 - [ ] [REACT BOOTSTRAP](https://react-bootstrap.github.io/getting-started/introduction/)
 - [ ] [REACT STRAP](https://reactstrap.github.io/)
@@ -94,6 +88,36 @@
 - [ ] [LOREM IPSUM](https://www.lipsum.com/)
 - [ ] [VITE](https://vitejs.dev/)
 - [ ] [PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
+
+</details>
+
+<details>
+  <summary>🔑Editor and Tools</summary>
+
+- [ ] [REPLIT](https://replit.com/)
+- [ ] [GLITCH](https://glitch.com/)
+- [ ] [CODEPEN](https://codepen.io/)
+- [ ] [CODESANDBOX](https://codesandbox.io/)
+- [ ] [STACKBLITZ](https://stackblitz.com/)
+- [ ] [PLAYCODE](https://playcode.io/)
+- [ ] [STACKOVERFLOW](https://stackoverflow.com/)
+- [ ] [DEV](https://dev.to/)
+- [ ] [CONVERTCASE](https://convertcase.net/)
+- [ ] [CANVA](https://www.canva.com/)
+- [ ] [IPICCY](https://ipiccy.com/)
+- [ ] [JSON VIEWER](https://codebeautify.org/jsonviewer)
+- [ ] [JSON FORMATTER](https://jsonformatter.org/)
+- [ ] [JSON EDITOR](https://jsoneditoronline.org/)
+- [ ] [NotebookLM](https://notebooklm.google.com/)
+- [ ] [Welcome to Compass](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d3)
+- [ ] [Huntr - Job Application Tracker & CRM](https://huntr.co/track/boards/670809c695f377004acaffe3/board)
+- [ ] [SpiceWorks](https://on.spiceworks.com/tickets/open/1?sort=updated_at-desc)
+- [ ] [ServiceNow - Now Learning](https://nowlearning.servicenow.com/lxp/en/pages/servicenow)
+- [ ] [Haveibeenpwned: Check if your email has been compromised in a data breach](https://haveibeenpwned.com/)
+- [ ] [Virus-Total Search](https://www.virustotal.com/gui/home/search)
+- [ ] [VirusShare.com](https://virusshare.com/hashes)
+- [ ] [Text to Visuals-Napkin AI](https://www.napkin.ai/)
+- [ ] [PyPI · The Python Package Index](https://pypi.org/)
 
 </details>
 
@@ -130,26 +154,6 @@
 - [ ] [COUNTRY LANGUAGES](https://restcountries.com/#languages)
 - [ ] [COUNTRY TIME ZONES](https://restcountries.com/#timezones)
 - [ ] [COUNTRY POPULATION](https://restcountries.com/#population)
-
-</details>
-
-<details>
-  <summary>🔑Lab/Editor</summary>
-
-- [ ] [REPLIT](https://replit.com/)
-- [ ] [GLITCH](https://glitch.com/)
-- [ ] [CODEPEN](https://codepen.io/)
-- [ ] [CODESANDBOX](https://codesandbox.io/)
-- [ ] [STACKBLITZ](https://stackblitz.com/)
-- [ ] [PLAYCODE](https://playcode.io/)
-- [ ] [STACKOVERFLOW](https://stackoverflow.com/)
-- [ ] [DEV](https://dev.to/)
-- [ ] [CONVERTCASE](https://convertcase.net/)
-- [ ] [CANVA](https://www.canva.com/)
-- [ ] [IPICCY](https://ipiccy.com/)
-- [ ] [JSON VIEWER](https://codebeautify.org/jsonviewer)
-- [ ] [JSON FORMATTER](https://jsonformatter.org/)
-- [ ] [JSON EDITOR](https://jsoneditoronline.org/)
 
 </details>
 
