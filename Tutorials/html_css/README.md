@@ -63,6 +63,14 @@
 </details>
 
 <details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
+
+
+<details>
   <summary>🧑‍💻Tutors</summary>
 
 - [ ] [CodingAddict](https://www.codingaddict.io/)
@@ -101,12 +109,5 @@
 - [ ] [HuXn WebDev](https://www.youtube.com/@huxnwebdev/videos)
 - [ ] [Chaoo Charles](https://www.youtube.com/@ChaooCharles/featured)
 - [ ] [EdRoh](https://www.youtube.com/@EdRohDev/videos)
-
-</details>
-
-<details>
-  <summary>🚀Other Resources</summary>
-
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 
 </details>
