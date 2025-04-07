@@ -59,13 +59,6 @@
 </details>
 
 <details>
-  <summary>🚀Other Resources</summary>
-
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
-
-</details>
-
-<details>
   <summary>🎷FIGMA</summary>
 
 - [ ] [UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
@@ -110,3 +103,13 @@
 - [ ] [THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
 
 </details>
+
+<details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+
+</details>
+
+
+
