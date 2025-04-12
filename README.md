@@ -30,6 +30,9 @@
 
 - [ ] [AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
+- [ ] [SOFTWARE-PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
+- [ ] [PYTHON-DJANGO-FLASK-LABS-IFEANYI](https://github.com/omeatai/PYTHON-DJANGO-FLASK-LABS-IFEANYI/blob/main/README.md)
+- [ ] [JS-REACT-NODE-LABS-IFEANYI](https://github.com/omeatai/JS-REACT-NODE-LABS-IFEANYI/blob/main/README.md)
 - [ ] [DJANGO-BLOG-APP](https://github.com/omeatai/project-django-blog-app)
 - [ ] [REACT-FIREBASE-TODO-APP](https://github.com/omeatai/project-firebase-todo-app)
 - [ ] [NEXT-OPEN-WEATHER-APP](https://github.com/omeatai/project-open-weather-app)
