@@ -1,4 +1,5 @@
 # JS/REACT/RN/NEXT/NODE Tutorials
+by Ifeanyi Omeata
 
 ## Javascript
 
