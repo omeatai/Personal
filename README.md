@@ -28,9 +28,9 @@
 <details>
   <summary>💼 Projects/Portfolio</summary>
 
+- [ ] [SOFTWARE-PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
 - [ ] [AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
-- [ ] [SOFTWARE-PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
 - [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 - [ ] [PYTHON-DJANGO-FLASK-LABS-IFEANYI](https://github.com/omeatai/PYTHON-DJANGO-FLASK-LABS-IFEANYI/blob/main/README.md)
