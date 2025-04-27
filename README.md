@@ -36,7 +36,6 @@
 - [ ] [PYTHON-DJANGO-FLASK-LABS-IFEANYI](https://github.com/omeatai/PYTHON-DJANGO-FLASK-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JS-REACT-NODE-LABS-IFEANYI](https://github.com/omeatai/JS-REACT-NODE-LABS-IFEANYI/blob/main/README.md)
 
-
 </details>
 
 
@@ -72,9 +71,7 @@
 </details>
 
 <details>
-  <summary>📂Tutorials-Cloud & AI</summary>
-
-# Cloud & AI Tutorials
+  <summary>📂Cloud </summary>
 
 ## Cloud
 
@@ -88,6 +85,11 @@
 - [ ] [Docker & Kubernetes: The Practical Guide](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 - [ ] [Build Scalable Applications using Docker and Kubernetes](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
 
+</details>
+
+<details>
+  <summary>📂AI</summary>
+
 ## AI
 
 - [ ] [Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)](https://www.udemy.com/course/nextjs-chatgpt/)
@@ -100,6 +102,11 @@
 - [ ] [LangChain Mastery: Build GenAI Apps with LangChain & Pinecone](https://www.udemy.com/course/master-langchain-pinecone-openai-build-llm-applications/)
 - [ ] [Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4](https://www.udemy.com/course/mastering-openai/)
 - [ ] [Master OpenAI API and ChatGPT API with Python](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
+
+</details>
+
+<details>
+  <summary>📂AWS CERT</summary>
 
 ## AWS CERT
 
@@ -130,6 +137,9 @@
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
 
 </details>
+
+
+
 
 <details>
   <summary>📂Tutorials-Cybersecurity & Networking Tutorials</summary>
