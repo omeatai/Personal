@@ -473,22 +473,8 @@
 
 ## React
 
-##### Youtube
+##### Udemy
 
-- [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
-- [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
-- [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
-- [ ] [Practical React-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM)
-- [ ] [Master ReactJS in 7 Hours with 10 Real-World Projects 2023](https://www.youtube.com/watch?v=XrwsMN2IWnE)
-- [ ] [All React 19 Features Explained 2025](https://www.youtube.com/watch?v=d01RPL_hveo)
-- [ ] [React JS Full Course 2024 | 6+ Projects | 15 Hours](https://www.youtube.com/watch?v=dz458ZkBMak&t=52416s)
-- [ ] [Build 25 React JS Projects in 10 Hours | React Interview Questions 2023](https://www.youtube.com/watch?v=l3A9OcUd_Us)
-- [ ] [Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects](https://www.youtube.com/watch?v=x4rFhThSX04&t=1s)
-- [ ] [50+ HOURS REACT.JS 19 MONSTER CLASS](https://www.youtube.com/watch?v=M9O5AjEFzKw)
-- [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=qnwFpjIqsrA&t=4s)
-- [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
-- [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
-- [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
 - [ ] [React JS Frontend Web Development for Beginners](https://www.udemy.com/course/react-tutorial/)
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
@@ -500,6 +486,14 @@
 - [ ] [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/)
 - [ ] [React in easy steps with Node and Java Backend](https://www.udemy.com/course/reactjs-in-easy-steps/)
 - [ ] [React - Build your React](https://www.udemy.com/course/creative-tim/)
+- [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+
+##### Youtube
+
+- [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
+- [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
+- [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
+- [ ] [Practical React-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM)
 - [ ] [React Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG)
 - [ ] [React Query Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
 - [ ] [React Render Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg7czgqpQIBEAHn8D6l530t)
@@ -519,9 +513,27 @@
 - [ ] [JSON Server Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 - [ ] [React TypeScript Webpack Setup-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo)
 - [ ] [Top 10 React JS Interview Questions | React Interview Questions and Answers](https://www.youtube.com/watch?v=YLXQMtb3Lns)
-- [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+- [ ] [Master ReactJS in 7 Hours with 10 Real-World Projects 2023](https://www.youtube.com/watch?v=XrwsMN2IWnE)
+- [ ] [All React 19 Features Explained 2025](https://www.youtube.com/watch?v=d01RPL_hveo)
+- [ ] [React JS Full Course 2024 | 6+ Projects | 15 Hours](https://www.youtube.com/watch?v=dz458ZkBMak&t=52416s)
+- [ ] [Build 25 React JS Projects in 10 Hours | React Interview Questions 2023](https://www.youtube.com/watch?v=l3A9OcUd_Us)
+- [ ] [Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects](https://www.youtube.com/watch?v=x4rFhThSX04&t=1s)
+- [ ] [50+ HOURS REACT.JS 19 MONSTER CLASS](https://www.youtube.com/watch?v=M9O5AjEFzKw)
+- [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=qnwFpjIqsrA&t=4s)
+- [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
+- [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
+- [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
 
 ## Next
+
+##### Udemy
+
+- [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
+- [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
+- [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
+- [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+
+### Youtube
 
 - [ ] [Next.js 15 Full Tutorial - Beginner to Advanced](https://www.youtube.com/watch?v=k7o9R6eaSes)
 - [ ] [Next.js 15 Tutorial - Beginner to Advanced-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
@@ -529,10 +541,6 @@
 - [ ] [Mastering Next.js 14: A Comprehensive Guide to the Latest Features and Advanced Concepts!](https://www.youtube.com/watch?v=GowPe3iiqTs)
 - [ ] [Next.js 14 Tutorial - Beginner to Advanced -Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - [ ] [Next.js 13 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
-- [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
-- [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
-- [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
-- [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 - [ ] [Next JS 15 E-Commerce 2025 - Arcjet, Prisma, Postgress, Docker, Zustand, Paypal | Part 1](https://www.youtube.com/watch?v=Q2MQQKYzmMU)
 - [ ] [Next JS 15 E-Commerce 2025 - Arcjet, Prisma, Postgress, Docker, Zustand, Paypal | Part 2](https://www.youtube.com/watch?v=jtP0K1wsH6w)
 - [ ] [Next.js Full Course 2024 | Learn Next.js 14 In One Video | 14 Hours](https://www.youtube.com/watch?v=mQnWCmVErnw)
@@ -554,17 +562,22 @@
 
 ## NodeJs
 
+##### Udemy
+
 - [ ] [NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)](https://www.udemy.com/course/nodejs-the-complete-guide/)
-- [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
 - [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+- [ ] [MERN Stack Bootcamp 2023 - MongoDB, Express, React & NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
+- [ ] [Advanced MERN Stack Authentication](https://www.udemy.com/course/advanced-mern-stack-authentication/)
+
+##### Youtube
+
+- [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [ ] [The Complete Node.js Bootcamp: From Beginner to Expert ](https://www.youtube.com/watch?v=EsUL2bfKKLc)
 - [ ] [Node JS Full Course 2025 Part 1| Complete Backend Development Course | Part 1](https://www.youtube.com/watch?v=MIJt9H69QVc)
 - [ ] [Node JS Full Course 2025 Part 2| Microservices, Redis, CI CD, Docker, VPS Hosting | Hostinger | Part 2](https://www.youtube.com/watch?v=_f7h6xQXiLA)
 - [ ] [Node JS Full Course 2025 Part 3| PostgreSQL, Prisma, Nest JS, Bun, Hono, Prometheus, Grafana | Part 3](https://www.youtube.com/watch?v=pa9xqOnorx0)
 - [ ] [MERN Stack Full Course - ECommerce App with Admin Panel : React, Redux Toolkit, Tailwind, MongoDB](https://www.youtube.com/watch?v=_4CPp670fK4)
-- [ ] [MERN Stack Bootcamp 2023 - MongoDB, Express, React & NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
-- [ ] [Advanced MERN Stack Authentication](https://www.udemy.com/course/advanced-mern-stack-authentication/)
 - [ ] [How To Deploy MERN Stack App | Deploy MERN Stack E-Commerce App](https://www.youtube.com/watch?v=39DloCh510E)
 - [ ] [MERN Mastery: Building a Scalable Movies App for Ultimate User Experience](https://www.youtube.com/watch?v=Bd1EBSCu2os)
 - [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
@@ -583,9 +596,14 @@
 
 ## React Native
 
-- [ ] [React Native Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
+##### Udemy
+
 - [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
 - [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
+
+##### Youtube
+
+- [ ] [React Native Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
 - [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
 - [ ] [Master React Native 2024: Comprehensive Course with Expo, Expo Router, TypeScript, Zustand](https://www.youtube.com/watch?v=a_SthPXtV6c)
 - [ ] [React Native Course for Beginners in 2025 | Build a Full Stack React Native App](https://youtu.be/f8Z9JyB2EIE?si=bnqS2Uv_fVCeUPh8)
@@ -599,6 +617,7 @@
 
 ## Java Basics
 
+- [ ] [Core Java Made Easy (Covers the latest Java 18)](https://www.udemy.com/course/corejavamadeeasy/)
 - [ ] [Java Full Course for free ☕ (2025)](https://www.youtube.com/watch?v=xTtL8E4LzTQ)
 - [ ] [Java Full Course for free ☕ (2021)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
 - [ ] [Java tutorial for beginners 2025 ☕ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOj_NOZYq_R2PECIMglLemc)
@@ -607,7 +626,6 @@
 - [ ] [Java For Beginners - Whizlabs](https://www.whizlabs.com/java-for-beginners/)
 - [ ] [Advanced Java Course - Whizlabs](https://www.whizlabs.com/advanced-java-course/)
 - [ ] [Oracle Certified Professional, Java SE 8 Programmer (1Z0-809) - Whizlabs](https://www.whizlabs.com/ocpjp-scjp/)
-- [ ] [Core Java Made Easy (Covers the latest Java 18)](https://www.udemy.com/course/corejavamadeeasy/)
 
 ## Java Testing & Design
 
