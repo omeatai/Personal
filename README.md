@@ -286,6 +286,15 @@
 
 </details>
 
+<details>
+  <summary>📂Docker & Kubernetes</summary>
+
+## SQL
+
+- [ ] [Docker & Kubernetes: The Practical Guide (2025 Edition)](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
+
+</details>
+
 
 <details>
   <summary>📂Python & Django </summary>
@@ -440,12 +449,14 @@
 - [ ] [Top 50 JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=Mv3m7YaZ4lA)
 - [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
 - [ ] [From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps](https://www.youtube.com/watch?v=H3XIJYEPdus)
+- [ ] [JavaScript - The Complete Guide 2025 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
 
 ## Typescript
 
 - [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
 - [ ] [TypeScript Developer Course in 2025 – Beginner to Expert](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
 - [ ] [TYPESCRIPT FOR BEGINNERS](https://www.udemy.com/course/typescript-for-beginners/)
+- [ ] [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
 
 ## Testing & Design
 
@@ -462,6 +473,8 @@
 
 ## React
 
+##### Youtube
+
 - [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
 - [ ] [ReactJS Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
@@ -476,6 +489,7 @@
 - [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
 - [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
 - [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
+- [ ] [React JS Frontend Web Development for Beginners](https://www.udemy.com/course/react-tutorial/)
 - [ ] [Complete React Developer (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [ ] [React - The Complete Guide 2025 (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 - [ ] [Full Stack Web Development using the MERN stack and DEVOPS](https://www.udemy.com/course/full-stack-web-development-using-the-mern-stack-and-devops/)
@@ -505,6 +519,7 @@
 - [ ] [JSON Server Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 - [ ] [React TypeScript Webpack Setup-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo)
 - [ ] [Top 10 React JS Interview Questions | React Interview Questions and Answers](https://www.youtube.com/watch?v=YLXQMtb3Lns)
+- [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
 ## Next
 
@@ -535,10 +550,11 @@
 </details>
 
 <details>
-  <summary>📂Node & Electron</summary>
+  <summary>📂NodeJs & Electron</summary>
 
-## Node
+## NodeJs
 
+- [ ] [NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)](https://www.udemy.com/course/nodejs-the-complete-guide/)
 - [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
 - [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
@@ -572,6 +588,7 @@
 - [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 - [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
 - [ ] [Master React Native 2024: Comprehensive Course with Expo, Expo Router, TypeScript, Zustand](https://www.youtube.com/watch?v=a_SthPXtV6c)
+- [ ] [React Native Course for Beginners in 2025 | Build a Full Stack React Native App](https://youtu.be/f8Z9JyB2EIE?si=bnqS2Uv_fVCeUPh8)
 
 </details>
 
