@@ -36,14 +36,7 @@
 
 
 
-
-
-
-
-
-
-
-### TUTORIALS
+### MY TUTORIALS
 
 <details>
   <summary>📂Cloud </summary>
