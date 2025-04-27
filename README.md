@@ -550,12 +550,6 @@
 - [ ] [THE BIGGEST NEXT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=QIDkK0FbXDc)
 - [ ] [THE BIGGEST NEXT.JS 15 COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=kiPrrtclZOA)
 
-## Electron
-
-- [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
-- [ ] [Expo Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
-- [ ] [Vue JS 3 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
-
 ## Testing & Design
 
 - [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
@@ -567,7 +561,7 @@
 </details>
 
 <details>
-  <summary>📂Node</summary>
+  <summary>📂Node & Electron</summary>
 
 ## Node
 
@@ -586,6 +580,12 @@
 - [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
 - [ ] [Socket.IO Mastery: Learn Real-Time Web Development](https://www.youtube.com/watch?v=EtG0tv2a9Uw)
 
+## Electron
+
+- [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
+- [ ] [Expo Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
+- [ ] [Vue JS 3 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
+
 </details>
 
 <details>
@@ -602,19 +602,50 @@
 </details>
 
 <details>
-  <summary>📂Tutorials</summary>
+  <summary>📂Java & Spring</summary>
 
-- [ ] [CLOUD & AI TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cloud/README.md)
-- [ ] [CYBERSECURITY & NETWORKING TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/cyber/README.md)
-- [ ] [LINUX & WINDOWS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/linux/README.md)
-- [ ] [PYTHON/DJANGO TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/python/README.md)
-- [ ] [HTML & CSS TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css/README.md)
-- [ ] [JS/REACT/RN/NEXT/NODE TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/react/README.md)
-- [ ] [JAVA/SPRING TUTORIALS](https://github.com/omeatai/Personal/blob/main/Tutorials/java/README.md)
-- [ ] [OTHERS](https://github.com/omeatai/Personal/blob/main/Tutorials/src/README.md)
+# Java & Spring Tutorials
+
+## Java Basics
+
+- [ ] [Java Full Course for free ☕ (2025)](https://www.youtube.com/watch?v=xTtL8E4LzTQ)
+- [ ] [Java Full Course for free ☕ (2021)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+- [ ] [Java tutorial for beginners 2025 ☕ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOj_NOZYq_R2PECIMglLemc)
+- [ ] [Java Bootcamp: Learn Java with Hands-On Projects](https://www.youtube.com/watch?v=PWMuZqxtJK4)
+- [ ] [12-Hour Full Java Tutorial (2024 Edition)](https://www.youtube.com/watch?v=i0uDfudnrCc)
+- [ ] [Java For Beginners - Whizlabs](https://www.whizlabs.com/java-for-beginners/)
+- [ ] [Advanced Java Course - Whizlabs](https://www.whizlabs.com/advanced-java-course/)
+- [ ] [Oracle Certified Professional, Java SE 8 Programmer (1Z0-809) - Whizlabs](https://www.whizlabs.com/ocpjp-scjp/)
+- [ ] [Core Java Made Easy (Covers the latest Java 18)](https://www.udemy.com/course/corejavamadeeasy/)
+
+## Java Testing & Design
+
+- [ ] [Java Design Patterns](https://www.udemy.com/course/java-design-patterns/)
+
+## Spring MVC
+
+- [ ] [Java Full Stack Development with Spring Boot: MVC & REST API](https://www.youtube.com/watch?v=8s1dYvV3TPo)
+- [ ] [Spring Framework Basics - Whizlabs](https://www.whizlabs.com/spring-framework-basics-video-course/)
+- [ ] [Complete Java, Spring, and Microservices course](https://www.youtube.com/playlist?list=PLsyeobzWxl7q6oUFts2erdot6jxF_lisP)
+- [ ] [Build & Deploy a Production-Ready Patient Management System with Microservices: Java Spring Boot AWS](https://www.youtube.com/watch?v=tseqdcFfTUY)
 
 </details>
 
+<details>
+  <summary>📂Other Tutorials</summary>
+
+# Other Tutorials
+
+- [ ] [RabbitMQ In Practice](https://www.udemy.com/course/rabbitmq-in-practice/)
+- [ ] [Redis: The Complete Developer's Guide](https://www.udemy.com/course/redis-the-complete-developers-guide-p)
+- [ ] [Complete Angular Developer Bootcamp](https://www.udemy.com/course/complete-angular-developer-zero-to-mastery/)
+- [ ] [Angular - The Complete Guide (2025 Edition)](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
+- [ ] [Angular (Full App) with Angular Material, Angularfire & NgRx](https://www.udemy.com/course/angular-full-app-with-angular-material-angularfire-ngrx/)
+- [ ] [GraphQL in React.js and Node.js](https://www.udemy.com/course/graph-ql/)
+- [ ] [GraphQL - A Primer](https://www.udemy.com/course/graphql-a-primer/)
+- [ ] [GraphQL from Ground Up](https://www.udemy.com/course/graphql-from-ground-up/)
+
+</details>
 
 
 
