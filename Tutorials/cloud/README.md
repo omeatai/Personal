@@ -11,9 +11,6 @@
 - [ ] [Learn to Deploy Containers on AWS in 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
 - [ ] [Docker & Kubernetes: The Practical Guide](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 - [ ] [Build Scalable Applications using Docker and Kubernetes](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
-- [ ] [AWS APPSYNC & AMPLIFY WITH REACT & GRAPHQL - COMPLETE GUIDE](https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/)
-- [ ] [AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
-- [ ] [DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
 
 ## AI
 
