@@ -303,13 +303,9 @@
 
 ## Python Basics
 
+##### Udemy
+
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
-- [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
-- [ ] [Python for Everyone: From Zero to Hero 6 Hours Complete Course](https://www.youtube.com/watch?v=JZDQKj9BOoc)
-- [ ] [Python Full Course for free 🐍 (2021](https://www.youtube.com/watch?v=XKHEtdqhLK8)
-- [ ] [Python Full Course for free 🐍 (2024)](https://www.youtube.com/watch?v=ix9cRaBkVe0&t=1s)
-- [ ] [Python tutorial for beginners 🐍 (2024) Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
-- [ ] [Python Tutorial for Beginners - Learn Python in 5 Hours](https://www.youtube.com/watch?v=t8pPdKYpowI)
 - [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
 - [ ] [Python for beginners](https://www.udemy.com/course/python-core-and-advanced/)
 - [ ] [Python For Beginners: Scripting Programming With Python 3](https://www.udemy.com/course/python-scripting/)
@@ -318,6 +314,15 @@
 - [ ] [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
+
+##### Youtube
+
+- [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
+- [ ] [Python for Everyone: From Zero to Hero 6 Hours Complete Course](https://www.youtube.com/watch?v=JZDQKj9BOoc)
+- [ ] [Python Full Course for free 🐍 (2021](https://www.youtube.com/watch?v=XKHEtdqhLK8)
+- [ ] [Python Full Course for free 🐍 (2024)](https://www.youtube.com/watch?v=ix9cRaBkVe0&t=1s)
+- [ ] [Python tutorial for beginners 🐍 (2024) Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
+- [ ] [Python Tutorial for Beginners - Learn Python in 5 Hours](https://www.youtube.com/watch?v=t8pPdKYpowI)
 - [ ] [Python for Everybody - Full University Python Course](https://www.youtube.com/watch?v=8DvywoWv6fI)
 - [ ] [Mastering OpenAI Python & JavaScript APIs](https://www.youtube.com/watch?v=Us-kPtnaFU8)
 
@@ -328,15 +333,22 @@
 
 ## Python Data Structures and Algorithms
 
-- [ ] [70 Leetcode problems in 5+ hours (every data structure)](https://www.youtube.com/watch?v=lvO88XxNAzs)
-- [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
-- [ ] [Data Structures and Algorithms 📈 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZON1eaqfafTnEexRzuHbfZX8)
+##### Udemy
+
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
+
+##### Youtube
+
+- [ ] [70 Leetcode problems in 5+ hours (every data structure)](https://www.youtube.com/watch?v=lvO88XxNAzs)
+- [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
+- [ ] [Data Structures and Algorithms 📈 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZON1eaqfafTnEexRzuHbfZX8)
 - [ ] [ALL IN ONE: Data Structures & Algorithms In JavaScript Complete Course 2024 By HuXn](https://www.youtube.com/watch?v=wBtPGnVnA9g)
 
 ## Django
+
+##### Udemy
 
 - [ ] [Python Django - The Practical Guide](https://www.udemy.com/course/python-django-the-practical-guide/)
 - [ ] [React and Django: A Practical Guide with Docker](https://www.udemy.com/course/react-django-admin/)
@@ -434,6 +446,14 @@
 
 ## Javascript
 
+##### Udemy
+
+- [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
+- [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
+- [ ] [JavaScript - The Complete Guide 2025 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
+
+##### Youtube
+
 - [ ] [JavaScript Full Course for free 🌐 (2024)](https://www.youtube.com/watch?v=lfmg-EJ8gm4)
 - [ ] [JavaScript tutorial for beginners 🌐 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv)
 - [ ] [JavaScript Crash Course - Tutorial for Complete Beginners-CE](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
@@ -442,21 +462,22 @@
 - [ ] [Asynchronous JavaScript Crash Course-CE](https://www.youtube.com/watch?v=exBgWAIeIeg)
 - [ ] [JavaScript Promises for Complete Beginners-CE](https://www.youtube.com/watch?v=YiYtwbnPfkY)
 - [ ] [JavaScript Algorithms and Data Structures-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
-- [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
-- [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
 - [ ] [JavaScript Tutorial Full Course - Beginner to Pro-SuperSimpleDev](https://www.youtube.com/watch?v=EerdGm-ehJQ)
 - [ ] [JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022) - Clever Programmer](https://www.youtube.com/watch?v=lI1ae4REbFM)
 - [ ] [Top 50 JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=Mv3m7YaZ4lA)
 - [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
 - [ ] [From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps](https://www.youtube.com/watch?v=H3XIJYEPdus)
-- [ ] [JavaScript - The Complete Guide 2025 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
 
 ## Typescript
+
+##### Udemy
 
 - [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
 - [ ] [TypeScript Developer Course in 2025 – Beginner to Expert](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
 - [ ] [TYPESCRIPT FOR BEGINNERS](https://www.udemy.com/course/typescript-for-beginners/)
 - [ ] [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
+
+##### Youtube
 
 ## Testing & Design
 
