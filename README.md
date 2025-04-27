@@ -472,12 +472,13 @@
 
 ##### Udemy
 
-- [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
 - [ ] [TypeScript Developer Course in 2025 – Beginner to Expert](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
 - [ ] [TYPESCRIPT FOR BEGINNERS](https://www.udemy.com/course/typescript-for-beginners/)
 - [ ] [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
 
 ##### Youtube
+
+- [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
 
 ## Testing & Design
 
@@ -509,7 +510,7 @@
 - [ ] [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
 - [ ] [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/)
 - [ ] [React in easy steps with Node and Java Backend](https://www.udemy.com/course/reactjs-in-easy-steps/)
-- [ ] [React - Build your React](https://www.udemy.com/course/creative-tim/)
+- [ ] [React - Build your React App fast using React Design System](https://www.udemy.com/course/creative-tim/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
 ##### Youtube
