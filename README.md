@@ -380,6 +380,7 @@
 
 # HTML & CSS Tutorials
 
+- [ ] [Complete Web & Mobile Designer: UI/UX, Figma](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
 - [ ] [Web Development Crash Courses 2023-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhuX4qGvFx-wPy_MEi6Jdp7)
 - [ ] [Master HTML and CSS in 6 Hours | HTML and CSS full Course 2024](https://www.youtube.com/watch?v=PIhmTGiKKkg)
 - [ ] [The Complete Full-Stack Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
@@ -398,7 +399,6 @@
 
 ## Figma
 
-- [ ] [UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
 - [ ] [DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 - [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
 - [ ] [UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
