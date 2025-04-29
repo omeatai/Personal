@@ -5,7 +5,7 @@
 
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 
-🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Cybersecurity Analyst and Cloud Engineer, with a strong background in Software Engineering. I’m passionate about application development, securing cloud environments, protecting systems, and ensuring compliance with industry standards.
+🔆Hi, I'm Ifeanyi, a dynamic solutions-driven Cybersecurity Analyst and Cloud Engineer, with a strong background in Software Engineering. I’m passionate about application development, securing cloud environments, protecting systems, and ensuring compliance with industry standards.
 
 - [ ] 📌Cloud Software Engineering & Software Development
   - [ ] ⚡Designed scalable web applications using Python, Django, and REST APIs, ensuring high performance and security.
