@@ -692,6 +692,14 @@
 </details>
 
 <details>
+  <summary>🚀Other Resources</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+- [ ] [My VSCode Setup 🔥🔥](https://www.youtube.com/watch?v=qBE1tdu5cTM)
+
+</details>
+
+<details>
   <summary>🧑‍💻Tutors</summary>
 
 - [ ] [Learn Kubernetes with KodeKloud](https://www.youtube.com/playlist?list=PL2We04F3Y_43dAehLMT5GxJhtk3mJtkl5)
@@ -736,13 +744,7 @@
 </details>
 
 
-<details>
-  <summary>🚀Other Resources</summary>
 
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
-- [ ] [My VSCode Setup 🔥🔥](https://www.youtube.com/watch?v=qBE1tdu5cTM)
-
-</details>
 
 
 
