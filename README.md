@@ -4,6 +4,7 @@
   <summary>🚀 About Me</summary>
 
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+- [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
 
 🔆Hi, I'm Ifeanyi, a dynamic solutions-driven Cybersecurity Analyst and Cloud Engineer, with a strong background in Software Engineering. I’m passionate about application development, securing cloud environments, protecting systems, and ensuring compliance with industry standards.
 
