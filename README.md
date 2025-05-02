@@ -21,8 +21,7 @@
 
 </details>
 
-<details>
-  <summary>💼 Projects/Portfolio</summary>
+### 💼 Projects/Portfolio
 
 - [ ] [SOFTWARE-PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
 - [ ] [AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
@@ -31,10 +30,6 @@
 - [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 - [ ] [PYTHON-DJANGO-FLASK-LABS-IFEANYI](https://github.com/omeatai/PYTHON-DJANGO-FLASK-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JS-REACT-NODE-LABS-IFEANYI](https://github.com/omeatai/JS-REACT-NODE-LABS-IFEANYI/blob/main/README.md)
-
-</details>
-
-
 
 
 ### MY TUTORIALS
