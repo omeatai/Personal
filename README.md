@@ -30,8 +30,9 @@
 - [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 - [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
 - [ ] [DJANGO-LABS-IFEANYI](https://github.com/omeatai/DJANGO-LABS-IFEANYI/blob/main/README.md)
-- [ ] [JS-REACT-NODE-LABS-IFEANYI](https://github.com/omeatai/JS-REACT-NODE-LABS-IFEANYI/blob/main/README.md)
-
+- [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
+- [ ] [NODE-LABS-IFEANYI](https://github.com/omeatai/NODE-LABS-IFEANYI/blob/main/README.md)
+- [ ] [JS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
 
 ### MY TUTORIALS
 
