@@ -287,7 +287,7 @@
 <details>
   <summary>📂Docker & Kubernetes</summary>
 
-## SQL
+## Docker & Kubernetes
 
 - [ ] [Docker & Kubernetes: The Practical Guide (2025 Edition)](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 
