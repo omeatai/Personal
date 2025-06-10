@@ -9,34 +9,23 @@
 🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
 
 📌Cloud Software Engineering
-⚡Designed scalable web applications using Python, Django, and REST APIs, ensuring high performance and security.
-⚡Built dynamic, user-centric interfaces with React, improving user experience across platforms.
-⚡Developed and maintained secure APIs with Django Rest Framework (DRF), Node.js, and Next.js.
+- [ ] ⚡Designed scalable web applications using Python, Django, and REST APIs, ensuring high performance and security.
+- [ ] ⚡Built dynamic, user-centric interfaces with React, improving user experience across platforms.
+- [ ] ⚡Developed and maintained secure APIs with Django Rest Framework (DRF), Node.js, and Next.js.
 
 📌Cybersecurity & SOC Experience
-⚡Conducted threat detection and incident response using Splunk and network monitoring tools.
-⚡Performed penetration testing with Nmap, Nessus, and Metasploit to assess system vulnerabilities.
-⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS frameworks.
-⚡Investigated digital evidence using forensic tools to identify security breaches.
-⚡Applied GRC principles to align security policies with organizational goals and maintain compliance.
+- [ ] ⚡Conducted threat detection and incident response using Splunk and network monitoring tools.
+- [ ] ⚡Performed penetration testing with Nmap, Nessus, and Metasploit to assess system vulnerabilities.
+- [ ] ⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS frameworks.
+- [ ] ⚡Investigated digital evidence using forensic tools to identify security breaches.
+- [ ] ⚡Applied GRC principles to align security policies with organizational goals and maintain compliance.
 
 🛠️ Skills & Tools
-✅Software Development: Python, Django, React, REST APIs, Node.js, Next.js
-✅Cybersecurity: Threat Detection, Incident Response, Penetration Testing, SIEM (Splunk), Network Security
-✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
-✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
-✅Customer Support: Zendesk, CRM Platforms, Ticketing Systems
-
-- [ ] 📌Cloud Software Engineering & Software Development
-  - [ ] ⚡Designed scalable web applications using Python, Django, and REST APIs, ensuring high performance and security.
-  - [ ] ⚡Built dynamic, user-centric interfaces with React, improving user experience across platforms.
-  - [ ] ⚡Developed and maintained secure APIs with Django Rest Framework (DRF), Node.js, and Next.js.
-- [ ] 📌Cybersecurity & SOC Experience
-  - [ ] ⚡Conducted threat detection and incident response using Splunk and network monitoring tools.
-  - [ ] ⚡Performed penetration testing with Nmap, Nessus, and Metasploit to assess system vulnerabilities.
-  - [ ] ⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS frameworks.
-  - [ ] ⚡Investigated digital evidence using forensic tools to identify security breaches.
-  - [ ] ⚡Applied GRC principles to align security policies with organizational goals and maintain compliance.
+- [ ] ✅Software Development: Python, Django, React, REST APIs, Node.js, Next.js
+- [ ] ✅Cybersecurity: Threat Detection, Incident Response, Penetration Testing, SIEM (Splunk), Network Security
+- [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
+- [ ] ✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
+- [ ] ✅Customer Support: Zendesk, CRM Platforms, Ticketing Systems
 
 </details>
 
