@@ -10,7 +10,7 @@
 
 📌Cloud Software Engineering
 - [ ] ⚡Designed and built scalable web applications using Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS and REST APIs, ensuring high performance and security.
-- [ ] ⚡Built dynamic, user-centric interfaces with React, improving user experience across platforms.
+- [ ] ⚡Built dynamic, user-centric interfaces with Figma, React and React Native, improving user experience across platforms.
 - [ ] ⚡Developed and maintained secure APIs with Django Rest Framework (DRF), Node.js, and Next.js.
 
 📌Cybersecurity & SOC Experience
