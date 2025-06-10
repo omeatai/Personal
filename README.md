@@ -24,6 +24,7 @@
 ### MY PROJECTS & PORTFOLIO 💼 
 
 - [ ] [ALL SOFTWARE-PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
+- [ ] [ALL CYBERSECURITY PROJECTS](https://docs.google.com/document/d/1U1xe2pl0LvR-GBGsy2m3pMkDmZ624lxpGtCyh8jFkmA/edit?usp=sharing)
 - [ ] [AWS LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE LABS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
