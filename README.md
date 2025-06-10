@@ -6,7 +6,7 @@
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
 
-🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
+🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, AI Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
 
 📌Cloud Software Engineering
 - [ ] ⚡Designed and built scalable web applications using Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS and REST APIs, ensuring high performance and security.
@@ -21,7 +21,7 @@
 - [ ] ⚡Applied GRC principles to align security policies with organizational goals and maintain compliance.
 
 🛠️ Skills & Tools
-- [ ] ✅Software Development: Python, Django, React, REST APIs, Node.js, Next.js
+- [ ] ✅Software Development: Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS, Azure.
 - [ ] ✅Cybersecurity: Threat Detection, Incident Response, Penetration Testing, SIEM (Splunk), Network Security
 - [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
 - [ ] ✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
