@@ -53,6 +53,7 @@
 
 ### MY TUTORIALS
 
+- [ ] [All Tutors](https://ifeanyiomeata.com/)
 - [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://ifeanyiomeata.com/)
 - [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://www.linkedin.com/in/omeatai/)
 - [ ] [Python | Django | Flask | SQL | Data Science](https://www.linkedin.com/in/omeatai/)
@@ -60,6 +61,7 @@
 - [ ] [React | React Native | NodeJs | NextJs](https://www.linkedin.com/in/omeatai/)
 - [ ] [Java | Spring](https://www.linkedin.com/in/omeatai/)
 - [ ] [C# | C++ | .NET | ASP.NET](https://www.linkedin.com/in/omeatai/)
+- [ ] [Other Tutorials](https://www.linkedin.com/in/omeatai/)
 
 ### MY TOOLS
 
