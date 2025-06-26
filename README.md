@@ -59,7 +59,7 @@
 - [ ] [HTML | CSS | Javascript | Typescript](https://www.linkedin.com/in/omeatai/)
 - [ ] [React | React Native | NodeJs | NextJs](https://www.linkedin.com/in/omeatai/)
 - [ ] [Java | Spring](https://www.linkedin.com/in/omeatai/)
-- [ ] [C# | .NET | ASP.NET](https://www.linkedin.com/in/omeatai/)
+- [ ] [C# | C++ | .NET | ASP.NET](https://www.linkedin.com/in/omeatai/)
 
 ### MY TOOLS
 
