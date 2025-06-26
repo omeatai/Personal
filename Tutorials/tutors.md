@@ -1,6 +1,5 @@
 
-<details>
-  <summary>🧑‍💻Tutors</summary>
+## 🧑‍💻Tutors
 
 - [ ] [Learn Kubernetes with KodeKloud](https://www.youtube.com/playlist?list=PL2We04F3Y_43dAehLMT5GxJhtk3mJtkl5)
 - [ ] [Rayan Slim](https://www.youtube.com/@RayanSlim087/videos)
@@ -41,4 +40,3 @@
 - [ ] [Chaoo Charles](https://www.youtube.com/@ChaooCharles/featured)
 - [ ] [EdRoh](https://www.youtube.com/@EdRohDev/videos)
 
-</details>
