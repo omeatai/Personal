@@ -3,9 +3,6 @@
 <details>
   <summary>🚀 About Me</summary>
 
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
-- [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
-
 🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, AI Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
 
 📌Cloud Software Engineering
@@ -28,6 +25,14 @@
 - [ ] ✅Customer Support: Zendesk, CRM Platforms, Ticketing Systems
 
 </details>
+
+<details>
+  <summary>👍🏻 My Links</summary>
+
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+- [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
+
+</details>  
 
 ### MY PROJECTS & PORTFOLIO 💼 
 
