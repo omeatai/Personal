@@ -1,4 +1,4 @@
-# Personal
+# Ifeanyi Omeata | Software Engineer | AI Cloud Engineer | Cybersecurity Analyst
 
 <details>
   <summary>🚀 About Me</summary>
