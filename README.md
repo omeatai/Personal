@@ -52,9 +52,6 @@
 
 </details>  
 
-### MY PROJECTS & PORTFOLIO 💼 
-
-
 ### MY TUTORIALS
 
 <details>
