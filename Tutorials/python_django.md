@@ -1,12 +1,11 @@
 
-<details>
-  <summary>📂Python & Django </summary>
 
 # Python Tutorials
 
 ## Python Basics
 
-##### Udemy
+<details>
+  <summary>📂Udemy </summary>
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
 - [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
@@ -18,7 +17,10 @@
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
 
-##### Youtube
+</details>
+
+<details>
+  <summary>📂YouTube </summary>
 
 - [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
 - [ ] [Python for Everyone: From Zero to Hero 6 Hours Complete Course](https://www.youtube.com/watch?v=JZDQKj9BOoc)
@@ -28,6 +30,8 @@
 - [ ] [Python Tutorial for Beginners - Learn Python in 5 Hours](https://www.youtube.com/watch?v=t8pPdKYpowI)
 - [ ] [Python for Everybody - Full University Python Course](https://www.youtube.com/watch?v=8DvywoWv6fI)
 - [ ] [Mastering OpenAI Python & JavaScript APIs](https://www.youtube.com/watch?v=Us-kPtnaFU8)
+
+</details>
 
 ## Python Testing & Design
 
