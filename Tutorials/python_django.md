@@ -1,6 +1,6 @@
 
 
-# Python Tutorials
+# PYTHON TUTORIALS
 
 ## Python Basics
 
@@ -45,18 +45,24 @@
 
 ## Python Data Structures and Algorithms
 
-##### Udemy
+<details>
+  <summary>📂Udemy </summary>
 
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
-##### Youtube
+</details>
+
+<details>
+  <summary>📂Youtube </summary>
 
 - [ ] [70 Leetcode problems in 5+ hours (every data structure)](https://www.youtube.com/watch?v=lvO88XxNAzs)
 - [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
 - [ ] [Data Structures and Algorithms 📈 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZON1eaqfafTnEexRzuHbfZX8)
 - [ ] [ALL IN ONE: Data Structures & Algorithms In JavaScript Complete Course 2024 By HuXn](https://www.youtube.com/watch?v=wBtPGnVnA9g)
+
+</details>
 
 ## Django
 
