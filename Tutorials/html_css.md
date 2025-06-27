@@ -1,19 +1,20 @@
+# HTML & CSS TUTORIALS
 
-<details>
-  <summary>📂HTML & CSS</summary>
-
-# HTML & CSS Tutorials
+#### 📂Udemy
 
 - [ ] [Complete Web & Mobile Designer: UI/UX, Figma](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
-- [ ] [Web Development Crash Courses 2023-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhuX4qGvFx-wPy_MEi6Jdp7)
-- [ ] [Master HTML and CSS in 6 Hours | HTML and CSS full Course 2024](https://www.youtube.com/watch?v=PIhmTGiKKkg)
 - [ ] [The Complete Full-Stack Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 - [ ] [The Web Developer Bootcamp 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)
 - [ ] [50 Projects In 50 Days - HTML, CSS & JavaScript](https://www.udemy.com/course/50-projects-50-days/)
 - [ ] [10 Mega Responsive Websites with HTML, CSS, and JavaScript](https://www.udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/)
 - [ ] [Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 
-## Sanityio & Strapi
+#### 📂YouTube
+
+- [ ] [Web Development Crash Courses 2023-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhuX4qGvFx-wPy_MEi6Jdp7)
+- [ ] [Master HTML and CSS in 6 Hours | HTML and CSS full Course 2024](https://www.youtube.com/watch?v=PIhmTGiKKkg)
+
+## SANITYIO & STRAPI
 
 - [ ] [Sanity Crash Course: Learn The Basics in 20 Minutes!](https://www.youtube.com/watch?v=bDVAQZVeebw)
 - [ ] [Sanity.io Crash Course | Headless CMS](https://www.youtube.com/watch?v=32RP-sG1njE)
@@ -21,7 +22,7 @@
 - [ ] [Strapi (Headless CMS) Crash Course](https://www.youtube.com/watch?v=KttoG7wDJP0)
 - [ ] [Personal Website Tutorial with Next.js 13, Sanity.io, TailwindCSS, and TypeScript](https://www.youtube.com/watch?v=OcTPaUfay5I)
 
-## Figma
+## FIGMA TUTORIAL
 
 - [ ] [DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 - [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
