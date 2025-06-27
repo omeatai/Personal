@@ -1,9 +1,4 @@
-<details>
-  <summary>📂Java & Spring</summary>
-
-# Java & Spring Tutorials
-
-## Java Basics
+# JAVA BASICS
 
 ##### Udemy
 
@@ -20,11 +15,11 @@
 - [ ] [Java Bootcamp: Learn Java with Hands-On Projects](https://www.youtube.com/watch?v=PWMuZqxtJK4)
 - [ ] [12-Hour Full Java Tutorial (2024 Edition)](https://www.youtube.com/watch?v=i0uDfudnrCc)
 
-## Java Testing & Design
+# JAVA TESTING & DESIGN
 
 - [ ] [Java Design Patterns](https://www.udemy.com/course/java-design-patterns/)
 
-## Spring MVC
+# SPRING MVC
 
 - [ ] [Spring Framework Basics - Whizlabs](https://www.whizlabs.com/spring-framework-basics-video-course/)
 - [ ] [Java Full Stack Development with Spring Boot: MVC & REST API](https://www.youtube.com/watch?v=8s1dYvV3TPo)
