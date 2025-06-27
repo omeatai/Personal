@@ -1,9 +1,4 @@
-
-
-<details>
-  <summary>📂React & NextJs</summary>
-
-## React
+# REACT TUTORIAL
 
 ##### Udemy
 
@@ -59,7 +54,15 @@
 - [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
 - [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
 
-## Next
+# REACT TESTING & DESIGN
+
+- [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
+- [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
+- [ ] [Automated testing using supertest and Jest](https://www.udemy.com/course/automated-testing-using-supertest-and-jest/)
+- [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
+- [ ] [React Testing Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
+
+# NEXTJS TUTORIAL
 
 ##### Udemy
 
@@ -68,7 +71,7 @@
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
-### Youtube
+##### Youtube
 
 - [ ] [Next.js 15 Full Tutorial - Beginner to Advanced](https://www.youtube.com/watch?v=k7o9R6eaSes)
 - [ ] [Next.js 15 Tutorial - Beginner to Advanced-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
@@ -82,20 +85,7 @@
 - [ ] [THE BIGGEST NEXT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=QIDkK0FbXDc)
 - [ ] [THE BIGGEST NEXT.JS 15 COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=kiPrrtclZOA)
 
-## Testing & Design
-
-- [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
-- [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
-- [ ] [Automated testing using supertest and Jest](https://www.udemy.com/course/automated-testing-using-supertest-and-jest/)
-- [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
-- [ ] [React Testing Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
-
-</details>
-
-<details>
-  <summary>📂NodeJs & Electron</summary>
-
-## NodeJs
+# NODEJS
 
 ##### Udemy
 
@@ -118,18 +108,13 @@
 - [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
 - [ ] [Socket.IO Mastery: Learn Real-Time Web Development](https://www.youtube.com/watch?v=EtG0tv2a9Uw)
 
-## Electron
+# ELECTRON TUTORIAL
 
 - [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
 - [ ] [Expo Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
 - [ ] [Vue JS 3 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
 
-</details>
-
-<details>
-  <summary>📂React Native</summary>
-
-## React Native
+# REACT NATIVE
 
 ##### Udemy
 
@@ -142,5 +127,3 @@
 - [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
 - [ ] [Master React Native 2024: Comprehensive Course with Expo, Expo Router, TypeScript, Zustand](https://www.youtube.com/watch?v=a_SthPXtV6c)
 - [ ] [React Native Course for Beginners in 2025 | Build a Full Stack React Native App](https://youtu.be/f8Z9JyB2EIE?si=bnqS2Uv_fVCeUPh8)
-
-</details>
