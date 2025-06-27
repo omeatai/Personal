@@ -14,7 +14,7 @@
 - [ ] [Web Development Crash Courses 2023-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhuX4qGvFx-wPy_MEi6Jdp7)
 - [ ] [Master HTML and CSS in 6 Hours | HTML and CSS full Course 2024](https://www.youtube.com/watch?v=PIhmTGiKKkg)
 
-## SANITYIO & STRAPI
+# SANITYIO & STRAPI
 
 - [ ] [Sanity Crash Course: Learn The Basics in 20 Minutes!](https://www.youtube.com/watch?v=bDVAQZVeebw)
 - [ ] [Sanity.io Crash Course | Headless CMS](https://www.youtube.com/watch?v=32RP-sG1njE)
@@ -22,7 +22,7 @@
 - [ ] [Strapi (Headless CMS) Crash Course](https://www.youtube.com/watch?v=KttoG7wDJP0)
 - [ ] [Personal Website Tutorial with Next.js 13, Sanity.io, TailwindCSS, and TypeScript](https://www.youtube.com/watch?v=OcTPaUfay5I)
 
-## JAVASCRIPT TUTORIAL
+# JAVASCRIPT TUTORIAL
 
 ##### Udemy
 
@@ -46,7 +46,7 @@
 - [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
 - [ ] [From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps](https://www.youtube.com/watch?v=H3XIJYEPdus)
 
-## JAVASCRIPT TESTING & DESIGN
+# JAVASCRIPT TESTING & DESIGN
 
 - [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
 - [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
@@ -54,7 +54,7 @@
 - [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
 - [ ] [React Testing Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
 
-## TYPESCRIPT TUTORIAL
+# TYPESCRIPT TUTORIAL
 
 ##### Udemy
 
@@ -66,7 +66,7 @@
 
 - [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
 
-## FIGMA TUTORIAL
+# FIGMA TUTORIAL
 
 - [ ] [DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 - [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
@@ -108,4 +108,3 @@
 - [ ] [FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
 - [ ] [THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
 
-</details>
