@@ -1,5 +1,5 @@
 
-## Cybersecurity Tutorials
+## CYBERSECURITY TUTORIALS
 
 #### TryHackMe
 
@@ -122,7 +122,7 @@
 - [ ] [Free DevOps Tutorial - Net DevOps: Cisco Python, Automation, NETCONF, SDN, Docker](https://www.udemy.com/course/net-devops-cisco-python-automation-netconf-sdn-docker/)
 - [ ] [Free Python Network Programming Tutorial - Network Automation - Python3 and Ansible](https://www.udemy.com/course/network-automation-python3-and-ansible-feb-2020-batch/)
 
-## Linux
+## LINUX
 
 - [ ] [Linux in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/AlAHFLO3RpNDs1zS2H7AwAU?e=UXeChK)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
@@ -153,7 +153,7 @@
 - [ ] [Full Linux+ (XK0-005 - 2024) Course Pt. 1 | Linux+ Training](https://www.youtube.com/watch?v=UOjUIm6qoFs)
 - [ ] [Full Linux+ (XK0-005 - 2024) Course Pt.2 | Linux+ Training](https://www.youtube.com/watch?v=0aY05ip36-A)
 
-## Windows
+## WINDOWS
 
 - [ ] [Microsoft Windows Server 2016 Training for Beginners](https://www.udemy.com/course/windows-server-2016/)
 - [ ] [Windows Server 2019 Administration-WL](https://www.whizlabs.com/windows-server-administration/)
