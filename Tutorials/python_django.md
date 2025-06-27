@@ -1,11 +1,6 @@
+# PYTHON BASICS
 
-
-# PYTHON TUTORIALS
-
-## Python Basics
-
-<details>
-  <summary>📂Udemy </summary>
+## 📂Udemy
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
 - [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
@@ -17,10 +12,7 @@
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
 
-</details>
-
-<details>
-  <summary>📂YouTube </summary>
+## 📂Youtube
 
 - [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
 - [ ] [Python for Everyone: From Zero to Hero 6 Hours Complete Course](https://www.youtube.com/watch?v=JZDQKj9BOoc)
@@ -31,43 +23,31 @@
 - [ ] [Python for Everybody - Full University Python Course](https://www.youtube.com/watch?v=8DvywoWv6fI)
 - [ ] [Mastering OpenAI Python & JavaScript APIs](https://www.youtube.com/watch?v=Us-kPtnaFU8)
 
-</details>
+# PYTHON TESTING & DESIGN
 
-## Python Testing & Design
-
-<details>
-  <summary>📂Udemy </summary>
+## 📂Udemy
 
 - [ ] [The Ultimate Python Unit Testing Course](https://www.udemy.com/course/python-unit-testing/)
 - [ ] [Design Patterns in Python](https://www.udemy.com/course/design-patterns-python/)
 
-</details>
+# PYTHON DATA & ALGORITHMS
 
-## Python Data Structures and Algorithms
-
-<details>
-  <summary>📂Udemy </summary>
+## 📂Udemy
 
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
-</details>
-
-<details>
-  <summary>📂Youtube </summary>
+## 📂Youtube
 
 - [ ] [70 Leetcode problems in 5+ hours (every data structure)](https://www.youtube.com/watch?v=lvO88XxNAzs)
 - [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
 - [ ] [Data Structures and Algorithms 📈 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZON1eaqfafTnEexRzuHbfZX8)
 - [ ] [ALL IN ONE: Data Structures & Algorithms In JavaScript Complete Course 2024 By HuXn](https://www.youtube.com/watch?v=wBtPGnVnA9g)
 
-</details>
-
 # DJANGO TUTORIALS
 
-<details>
-  <summary>📂Udemy</summary>
+## 📂Udemy
 
 - [ ] [Python Django - The Practical Guide](https://www.udemy.com/course/python-django-the-practical-guide/)
 - [ ] [React and Django: A Practical Guide with Docker](https://www.udemy.com/course/react-django-admin/)
@@ -83,13 +63,9 @@
 - [ ] [Docker for Python Django Developers](https://www.udemy.com/course/docker-for-python-django-developers/)
 - [ ] [AI with GitHub Copilot for Python & Django REST Developers](https://www.udemy.com/course/mastering-github-copilot-for-python-django-rest-developers/)
 
-</details>
-
 # SQL TUTORIALS
 
-<details>
-  <summary>📂SQL</summary>
+## 📂Udemy
 
 - [ ] [MySQL: From Beginner to Monster Level (4-Hour Complete Course)](https://www.youtube.com/watch?v=h4R-nJbM_ac)
 
-</details>
