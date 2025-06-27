@@ -108,12 +108,6 @@
 - [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
 - [ ] [Socket.IO Mastery: Learn Real-Time Web Development](https://www.youtube.com/watch?v=EtG0tv2a9Uw)
 
-# ELECTRON TUTORIAL
-
-- [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
-- [ ] [Expo Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
-- [ ] [Vue JS 3 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
-
 # REACT NATIVE
 
 ##### Udemy
@@ -127,3 +121,9 @@
 - [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
 - [ ] [Master React Native 2024: Comprehensive Course with Expo, Expo Router, TypeScript, Zustand](https://www.youtube.com/watch?v=a_SthPXtV6c)
 - [ ] [React Native Course for Beginners in 2025 | Build a Full Stack React Native App](https://youtu.be/f8Z9JyB2EIE?si=bnqS2Uv_fVCeUPh8)
+
+# ELECTRON TUTORIAL
+
+- [ ] [Electron js Tutorials-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
+- [ ] [Expo Router Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA)
+- [ ] [Vue JS 3 Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
