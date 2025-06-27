@@ -46,7 +46,7 @@
 - [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
 - [ ] [From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps](https://www.youtube.com/watch?v=H3XIJYEPdus)
 
-## TESTING & DESIGN
+## JAVASCRIPT TESTING & DESIGN
 
 - [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
 - [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
