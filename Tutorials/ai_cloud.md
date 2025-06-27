@@ -1,8 +1,4 @@
 
-
-<details>
-  <summary>📂AI</summary>
-
 ## AI
 
 - [ ] [Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)](https://www.udemy.com/course/nextjs-chatgpt/)
@@ -16,11 +12,6 @@
 - [ ] [Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4](https://www.udemy.com/course/mastering-openai/)
 - [ ] [Master OpenAI API and ChatGPT API with Python](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
-</details>
-
-<details>
-  <summary>📂Cloud </summary>
-
 ## Cloud
 
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
@@ -32,11 +23,6 @@
 - [ ] [Learn to Deploy Containers on AWS in 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
 - [ ] [Docker & Kubernetes: The Practical Guide](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 - [ ] [Build Scalable Applications using Docker and Kubernetes](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
-
-</details>
-
-<details>
-  <summary>📂AWS CERT</summary>
 
 ## AWS CERT
 
@@ -51,6 +37,7 @@
 - [ ] [AWS Certified DevOps Engineer Professional 2025 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on)
 
 ## AWS EXAMS
+
   - [ ] [EXAM TOPICS](https://www.examtopics.com/exams/amazon/)
   - [ ] [AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C01](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
   - [ ] [AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C02](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner-clf-c02/)
@@ -66,16 +53,9 @@
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional/)
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
 
-</details>
-
-
-<details>
-  <summary>📂Docker & Kubernetes</summary>
-
 ## Docker & Kubernetes
 
 - [ ] [Docker & Kubernetes: The Practical Guide (2025 Edition)](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 
-</details>
 
 
