@@ -35,8 +35,13 @@
 
 ## Python Testing & Design
 
+<details>
+  <summary>📂Udemy </summary>
+
 - [ ] [The Ultimate Python Unit Testing Course](https://www.udemy.com/course/python-unit-testing/)
 - [ ] [Design Patterns in Python](https://www.udemy.com/course/design-patterns-python/)
+
+</details>
 
 ## Python Data Structures and Algorithms
 
@@ -71,7 +76,6 @@
 - [ ] [Docker for Python Django Developers](https://www.udemy.com/course/docker-for-python-django-developers/)
 - [ ] [AI with GitHub Copilot for Python & Django REST Developers](https://www.udemy.com/course/mastering-github-copilot-for-python-django-rest-developers/)
 
-</details>
 
 <details>
   <summary>📂SQL</summary>
