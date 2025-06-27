@@ -53,15 +53,15 @@
 
 ### MY TUTORIALS
 
-- [ ] [All Tutors](https://ifeanyiomeata.com/)
-- [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://ifeanyiomeata.com/)
-- [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://www.linkedin.com/in/omeatai/)
-- [ ] [Python | Django | Flask | SQL | Data Science](https://www.linkedin.com/in/omeatai/)
-- [ ] [HTML | CSS | Javascript | Typescript](https://www.linkedin.com/in/omeatai/)
-- [ ] [React | React Native | NodeJs | NextJs](https://www.linkedin.com/in/omeatai/)
-- [ ] [Java | Spring](https://www.linkedin.com/in/omeatai/)
-- [ ] [C# | C++ | .NET | ASP.NET](https://www.linkedin.com/in/omeatai/)
-- [ ] [Other Tutorials](https://www.linkedin.com/in/omeatai/)
+- [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
+- [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://github.com/omeatai/Personal/blob/main/Tutorials/ai_cloud.md)
+- [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://github.com/omeatai/Personal/blob/main/Tutorials/cybersecurity.md)
+- [ ] [Python | Django | Flask | SQL | Data Science](https://github.com/omeatai/Personal/blob/main/Tutorials/python_django.md)
+- [ ] [HTML | CSS | Javascript | Typescript](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css.md)
+- [ ] [React | React Native | NodeJs | NextJs](https://github.com/omeatai/Personal/blob/main/Tutorials/react_node.md)
+- [ ] [Java | Spring](https://github.com/omeatai/Personal/blob/main/Tutorials/java_spring.md)
+- [ ] [C# | C++ | .NET | ASP.NET](https://github.com/omeatai/Personal/blob/main/Tutorials/c%2B%2B.md)
+- [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
 ### MY TOOLS
 
