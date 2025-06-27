@@ -1,6 +1,6 @@
 # PYTHON BASICS
 
-## 📂Udemy
+#### 📂Udemy
 
 - [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
 - [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
@@ -12,7 +12,7 @@
 - [ ] [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
 - [ ] [Python & Cryptocurrency API: Build 5 Real World Applications](https://www.udemy.com/course/coinmarketcap)
 
-## 📂Youtube
+#### 📂Youtube
 
 - [ ] [Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
 - [ ] [Python for Everyone: From Zero to Hero 6 Hours Complete Course](https://www.youtube.com/watch?v=JZDQKj9BOoc)
@@ -25,20 +25,20 @@
 
 # PYTHON TESTING & DESIGN
 
-## 📂Udemy
+#### 📂Udemy
 
 - [ ] [The Ultimate Python Unit Testing Course](https://www.udemy.com/course/python-unit-testing/)
 - [ ] [Design Patterns in Python](https://www.udemy.com/course/design-patterns-python/)
 
 # PYTHON DATA & ALGORITHMS
 
-## 📂Udemy
+#### 📂Udemy
 
 - [ ] [Complete Python With DSA Bootcamp + LEETCODE Exercises](https://www.udemy.com/course/complete-python-dsa-bootcamp)
 - [ ] [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [ ] [Data Structures and Algorithms Python: The Complete Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
-## 📂Youtube
+#### 📂Youtube
 
 - [ ] [70 Leetcode problems in 5+ hours (every data structure)](https://www.youtube.com/watch?v=lvO88XxNAzs)
 - [ ] [Learn Data Structures and Algorithms for free](https://www.youtube.com/watch?v=CBYHwZcbD-s)
@@ -47,7 +47,7 @@
 
 # DJANGO TUTORIALS
 
-## 📂Udemy
+#### 📂Udemy
 
 - [ ] [Python Django - The Practical Guide](https://www.udemy.com/course/python-django-the-practical-guide/)
 - [ ] [React and Django: A Practical Guide with Docker](https://www.udemy.com/course/react-django-admin/)
@@ -65,7 +65,7 @@
 
 # SQL TUTORIALS
 
-## 📂Udemy
+#### 📂Udemy
 
 - [ ] [MySQL: From Beginner to Monster Level (4-Hour Complete Course)](https://www.youtube.com/watch?v=h4R-nJbM_ac)
 
