@@ -12,6 +12,10 @@
 - [ ] [Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4](https://www.udemy.com/course/mastering-openai/)
 - [ ] [Master OpenAI API and ChatGPT API with Python](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
+## Docker & Kubernetes
+
+- [ ] [Docker & Kubernetes: The Practical Guide (2025 Edition)](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
+
 ## AWS Cloud
 
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
@@ -52,10 +56,3 @@
   - [ ] [AMAZON AWS CERTIFIED SECURITY - SPECIALTY SCS-C02](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c02/)
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional/)
   - [ ] [AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
-
-## Docker & Kubernetes
-
-- [ ] [Docker & Kubernetes: The Practical Guide (2025 Edition)](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
-
-
-
