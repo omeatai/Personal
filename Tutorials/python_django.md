@@ -64,9 +64,10 @@
 
 </details>
 
-## Django
+# DJANGO TUTORIALS
 
-##### Udemy
+<details>
+  <summary>📂Udemy</summary>
 
 - [ ] [Python Django - The Practical Guide](https://www.udemy.com/course/python-django-the-practical-guide/)
 - [ ] [React and Django: A Practical Guide with Docker](https://www.udemy.com/course/react-django-admin/)
@@ -82,11 +83,12 @@
 - [ ] [Docker for Python Django Developers](https://www.udemy.com/course/docker-for-python-django-developers/)
 - [ ] [AI with GitHub Copilot for Python & Django REST Developers](https://www.udemy.com/course/mastering-github-copilot-for-python-django-rest-developers/)
 
+</details>
+
+# SQL TUTORIALS
 
 <details>
   <summary>📂SQL</summary>
-
-## SQL
 
 - [ ] [MySQL: From Beginner to Monster Level (4-Hour Complete Course)](https://www.youtube.com/watch?v=h4R-nJbM_ac)
 
