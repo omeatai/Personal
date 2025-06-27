@@ -12,7 +12,7 @@
 - [ ] [Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4](https://www.udemy.com/course/mastering-openai/)
 - [ ] [Master OpenAI API and ChatGPT API with Python](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
-## Cloud
+## AWS Cloud
 
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
