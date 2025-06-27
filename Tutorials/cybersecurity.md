@@ -1,10 +1,7 @@
 
-<details>
-  <summary>📂Cybersecurity</summary>
+## Cybersecurity Tutorials
 
-# Cybersecurity Tutorials
-
-## TryHackMe
+#### TryHackMe
 
 - [ ] [Pre Security](https://tryhackme.com/path/outline/presecurity)
 - [ ] [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
@@ -18,7 +15,7 @@
 - [ ] [DevSecOps](https://tryhackme.com/path/outline/devsecops)
 - [ ] [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
 
-## LetsEncrypt
+#### LetsEncrypt
 
 - [ ] [Cybersecurity for Students](https://app.letsdefend.io/path/cybersecurity-for-students)
 - [ ] [Career Switch to Cybersecurity](https://app.letsdefend.io/path/career-switch-to-cybersecurity)
@@ -34,7 +31,7 @@
 - [ ] [AWS Security Learning Path](https://app.letsdefend.io/path/aws-security-learning-path)
 - [ ] [Programming for Cybersecurity](https://app.letsdefend.io/path/programming-for-cybersecurity)
 
-## LHL
+#### LHL
 
 - [ ] [Career Compass program in the Alumni cohort](https://web.compass.lighthouselabs.ca/p/cc/journeys/67)
 - [ ] [Introduction](https://web.compass.lighthouselabs.ca/p/cyber/days/w01d1)
@@ -88,11 +85,6 @@
 - [ ] [Incident Management & Fostering Security-aware Culture](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d4)
 - [ ] [Security Architecture Recommendations](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d5)
 
-</details>
-
-<details>
-  <summary>📂Ethical Hacking & Networking</summary>
-
 ## ETHICAL HACKING
 
 - [ ] [Whizlabs Training](https://www.whizlabs.com/)
@@ -130,11 +122,6 @@
 - [ ] [Free DevOps Tutorial - Net DevOps: Cisco Python, Automation, NETCONF, SDN, Docker](https://www.udemy.com/course/net-devops-cisco-python-automation-netconf-sdn-docker/)
 - [ ] [Free Python Network Programming Tutorial - Network Automation - Python3 and Ansible](https://www.udemy.com/course/network-automation-python3-and-ansible-feb-2020-batch/)
 
-</details>
-
-<details>
-  <summary>📂Linux</summary>
-
 ## Linux
 
 - [ ] [Linux in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/AlAHFLO3RpNDs1zS2H7AwAU?e=UXeChK)
@@ -166,15 +153,7 @@
 - [ ] [Full Linux+ (XK0-005 - 2024) Course Pt. 1 | Linux+ Training](https://www.youtube.com/watch?v=UOjUIm6qoFs)
 - [ ] [Full Linux+ (XK0-005 - 2024) Course Pt.2 | Linux+ Training](https://www.youtube.com/watch?v=0aY05ip36-A)
 
-</details>
-
-
-<details>
-  <summary>📂Windows </summary>
-
 ## Windows
 
 - [ ] [Microsoft Windows Server 2016 Training for Beginners](https://www.udemy.com/course/windows-server-2016/)
 - [ ] [Windows Server 2019 Administration-WL](https://www.whizlabs.com/windows-server-administration/)
-
-</details>
