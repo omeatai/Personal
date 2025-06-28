@@ -1,9 +1,9 @@
 
 ## 🧑‍💻Tutors
 
+- [ ] [CodingAddict](https://www.codingaddict.io/)
 - [ ] [Learn Kubernetes with KodeKloud](https://www.youtube.com/playlist?list=PL2We04F3Y_43dAehLMT5GxJhtk3mJtkl5)
 - [ ] [Rayan Slim](https://www.youtube.com/@RayanSlim087/videos)
-- [ ] [CodingAddict](https://www.codingaddict.io/)
 - [ ] [Bro Code](https://www.youtube.com/@BroCodez)
 - [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
 - [ ] [Bharath Thippireddy](https://www.udemy.com/user/bharaththippireddy/)
