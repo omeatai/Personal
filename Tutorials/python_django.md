@@ -2,8 +2,6 @@
 
 ##### Udemy
 
-- [ ] [Python in Cloud](https://1drv.ms/f/c/5C5CBDC51C14B6A6/Av2umMy67y9EhNH5gA3dQAk?e=FKmEZk)
-- [ ] [Python for Beginners - Whizlabs](https://www.whizlabs.com/python-fundamentals/)
 - [ ] [Python for beginners](https://www.udemy.com/course/python-core-and-advanced/)
 - [ ] [Python For Beginners: Scripting Programming With Python 3](https://www.udemy.com/course/python-scripting/)
 - [ ] [Learn To Code From Scratch With Python 3](https://www.udemy.com/course/learn-to-code-from-scratch-with-python-3/)
