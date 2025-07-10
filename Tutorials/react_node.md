@@ -19,7 +19,8 @@
 - [ ] [React - Build your React App fast using React Design System](https://www.udemy.com/course/creative-tim/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
-##### Youtube
+<details>
+  <summary>🚀 Youtube</summary>
 
 - [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
@@ -54,6 +55,8 @@
 - [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
 - [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
 - [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
+
+</details>
 
 # REACT TESTING & DESIGN
 
