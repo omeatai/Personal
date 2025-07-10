@@ -49,7 +49,6 @@
 - [ ] [Django for Python Developers](https://www.udemy.com/course/django-for-python-developers)
 - [ ] [Docker for Python Django Developers](https://www.udemy.com/course/docker-for-python-django-developers/)
 - [ ] [Django Rest Framework](https://www.udemy.com/course/djangorestframework/)
-- [ ] [AI with GitHub Copilot for Python & Django REST Developers](https://www.udemy.com/course/mastering-github-copilot-for-python-django-rest-developers/)
 - [ ] [Django Core: Build & Deploy Web Project With Python & Django](https://www.udemy.com/course/complete-django-masterclass/)
 - [ ] [Build REST APIs with Django REST Framework and Python](https://www.udemy.com/course/django-rest-framework/)
 - [ ] [Build a Backend REST API with Python & Django - Advanced](https://www.udemy.com/course/django-python-advanced/)
