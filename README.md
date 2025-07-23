@@ -1,4 +1,4 @@
-# Ifeanyi Omeata | Software Engineer | Cybersecurity Analyst
+# Ifeanyi Omeata | Software Engineer | Cybersecurity
 
 <details>
   <summary>🚀 About Me</summary>
