@@ -1,4 +1,4 @@
-# Ifeanyi Omeata | Software Engineer | AI Cloud Engineer | Cybersecurity Analyst
+# Ifeanyi Omeata | Software Engineer | Cybersecurity Analyst
 
 <details>
   <summary>🚀 About Me</summary>
