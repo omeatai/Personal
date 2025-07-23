@@ -1,7 +1,7 @@
 # Ifeanyi Omeata | Software Engineer | Cybersecurity
 
 <details>
-  <summary>🚀 About Me</summary>
+  <summary>🧑‍💻 About Me</summary>
 
 🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, AI Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
 
@@ -27,7 +27,7 @@
 </details>
 
 <details>
-  <summary>👍🏻 My Links</summary>
+  <summary>🚀 My Links</summary>
 
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
