@@ -48,7 +48,7 @@
 - [ ] [NODE-LABS-IFEANYI](https://github.com/omeatai/NODE-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
 
-### MY TUTORIALS
+### 🏛️ MY TUTORIALS
 
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
 - [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://github.com/omeatai/Personal/blob/main/Tutorials/ai_cloud.md)
@@ -60,7 +60,7 @@
 - [ ] [C# | C++ | .NET | ASP.NET](https://github.com/omeatai/Personal/blob/main/Tutorials/c%2B%2B.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
-### MY TOOLS
+### ⚙️ MY TOOLS
 
 <details>
   <summary>🏀Frameworks & Libraries</summary>
