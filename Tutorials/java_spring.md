@@ -23,6 +23,8 @@
 
 - [ ] [Spring Framework Basics - Whizlabs](https://www.whizlabs.com/spring-framework-basics-video-course/)
 - [ ] [Java Full Stack Development with Spring Boot: MVC & REST API](https://www.youtube.com/watch?v=8s1dYvV3TPo)
+- [ ] [The ULTIMATE Guide to Spring Boot: Spring Boot for Beginners](https://www.youtube.com/watch?v=Nv2DERaMx-4)
+- [ ] [Spring Boot Tutorial for Beginners 2025](https://www.youtube.com/watch?v=gJrjgg1KVL4)
 - [ ] [Complete Java, Spring, and Microservices course](https://www.youtube.com/playlist?list=PLsyeobzWxl7q6oUFts2erdot6jxF_lisP)
 - [ ] [Build & Deploy a Production-Ready Patient Management System with Microservices: Java Spring Boot AWS](https://www.youtube.com/watch?v=tseqdcFfTUY)
 
