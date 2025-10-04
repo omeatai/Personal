@@ -55,7 +55,6 @@
 - [ ] [AWS-CLOUD LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
-- [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://github.com/omeatai/Personal/blob/main/Tutorials/ai_cloud.md)
 - [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://github.com/omeatai/Personal/blob/main/Tutorials/cybersecurity.md)
 - [ ] [Java | Spring](https://github.com/omeatai/Personal/blob/main/Tutorials/java_spring.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
