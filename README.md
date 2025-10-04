@@ -60,7 +60,6 @@
 - [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://github.com/omeatai/Personal/blob/main/Tutorials/cybersecurity.md)
 - [ ] [React | React Native | NodeJs | NextJs](https://github.com/omeatai/Personal/blob/main/Tutorials/react_node.md)
 - [ ] [Java | Spring](https://github.com/omeatai/Personal/blob/main/Tutorials/java_spring.md)
-- [ ] [C# | C++ | .NET | ASP.NET](https://github.com/omeatai/Personal/blob/main/Tutorials/c%2B%2B.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
 ### ⚙️ MY TOOLS
