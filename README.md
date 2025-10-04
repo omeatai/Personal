@@ -59,7 +59,6 @@
 - [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://github.com/omeatai/Personal/blob/main/Tutorials/ai_cloud.md)
 - [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://github.com/omeatai/Personal/blob/main/Tutorials/cybersecurity.md)
 - [ ] [Python | Django | Flask | SQL | Data Science](https://github.com/omeatai/Personal/blob/main/Tutorials/python_django.md)
-- [ ] [HTML | CSS | Javascript | Typescript](https://github.com/omeatai/Personal/blob/main/Tutorials/html_css.md)
 - [ ] [React | React Native | NodeJs | NextJs](https://github.com/omeatai/Personal/blob/main/Tutorials/react_node.md)
 - [ ] [Java | Spring](https://github.com/omeatai/Personal/blob/main/Tutorials/java_spring.md)
 - [ ] [C# | C++ | .NET | ASP.NET](https://github.com/omeatai/Personal/blob/main/Tutorials/c%2B%2B.md)
