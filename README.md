@@ -6,11 +6,13 @@
 🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, AI Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
 
 📌Cloud Software Engineering
+
 - [ ] ⚡Designed and built scalable web applications using Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS and REST APIs, ensuring high performance and security.
 - [ ] ⚡Built dynamic, user-centric interfaces with Figma, React and React Native, improving user experience across platforms.
 - [ ] ⚡Developed and maintained secure APIs with Django Rest Framework (DRF), Node.js, and Next.js.
 
 📌Cybersecurity & SOC Experience
+
 - [ ] ⚡Conducted threat detection and incident response using Splunk and network monitoring tools.
 - [ ] ⚡Performed penetration testing with Nmap, Nessus, and Metasploit to assess system vulnerabilities.
 - [ ] ⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS frameworks.
@@ -18,6 +20,7 @@
 - [ ] ⚡Applied GRC principles to align security policies with organizational goals and maintain compliance.
 
 🛠️ Skills & Tools
+
 - [ ] ✅Software Development: Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS, Azure.
 - [ ] ✅Cybersecurity: Threat Detection, Incident Response, Penetration Testing, SIEM (Splunk), Network Security
 - [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
@@ -32,7 +35,7 @@
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
 
-</details>  
+</details>
 
 ### 💼 MY PROJECTS AND PORTFOLIO
 
@@ -43,14 +46,14 @@
 
 - [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
 - [ ] [DJANGO-LABS-IFEANYI](https://github.com/omeatai/DJANGO-LABS-IFEANYI/blob/main/README.md)
+- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
+- [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 - [ ] [HTML-CSS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
 - [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
 - [ ] [NODE-LABS-IFEANYI](https://github.com/omeatai/NODE-LABS-IFEANYI/blob/main/README.md)
 - [ ] [AWS LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE LABS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
-- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
-- [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
 - [ ] [AI | Cloud | Docker | Kubernetes | DevOps](https://github.com/omeatai/Personal/blob/main/Tutorials/ai_cloud.md)
