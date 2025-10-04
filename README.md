@@ -44,10 +44,10 @@
 
 ### 🏛️ MY LABS
 
-- [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
-- [ ] [DJANGO-LABS-IFEANYI](https://github.com/omeatai/DJANGO-LABS-IFEANYI/blob/main/README.md)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
 - [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
+- [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
+- [ ] [DJANGO-LABS-IFEANYI](https://github.com/omeatai/DJANGO-LABS-IFEANYI/blob/main/README.md)
 - [ ] [HTML-CSS-LABS-IFEANYI](https://github.com/omeatai/HTML-CSS-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
 - [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
