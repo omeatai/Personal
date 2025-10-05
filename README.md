@@ -52,6 +52,7 @@
 - [ ] [JS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
 - [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
 - [ ] [NODE-LABS-IFEANYI](https://github.com/omeatai/NODE-LABS-IFEANYI/blob/main/README.md)
+- [ ] [JAVA-LABS-IFEANYI](https://github.com/omeatai/JAVA-LABS-IFEANYI/blob/main/README.md)
 - [ ] [AWS-CLOUD LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
