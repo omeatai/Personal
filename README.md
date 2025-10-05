@@ -57,7 +57,6 @@
 
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
 - [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://github.com/omeatai/Personal/blob/main/Tutorials/cybersecurity.md)
-- [ ] [Java | Spring](https://github.com/omeatai/Personal/blob/main/Tutorials/java_spring.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
 ### ⚙️ MY TOOLS
