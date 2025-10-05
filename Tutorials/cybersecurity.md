@@ -1,4 +1,3 @@
-
 ## CYBERSECURITY TUTORIALS
 
 #### TryHackMe
@@ -31,60 +30,6 @@
 - [ ] [AWS Security Learning Path](https://app.letsdefend.io/path/aws-security-learning-path)
 - [ ] [Programming for Cybersecurity](https://app.letsdefend.io/path/programming-for-cybersecurity)
 
-#### LHL
-
-- [ ] [Career Compass program in the Alumni cohort](https://web.compass.lighthouselabs.ca/p/cc/journeys/67)
-- [ ] [Introduction](https://web.compass.lighthouselabs.ca/p/cyber/days/w01d1)
-- [ ] [Linux Overview](https://web.compass.lighthouselabs.ca/p/cyber/days/w01d2)
-- [ ] [Network Overview](https://web.compass.lighthouselabs.ca/p/cyber/days/w01d3)
-- [ ] [Network Administration](https://web.compass.lighthouselabs.ca/p/cyber/days/w01d4)
-- [ ] [Logs](https://web.compass.lighthouselabs.ca/p/cyber/days/w01d5)
-- [ ] [Tools Commands and Troubleshooting with Wireshark](https://web.compass.lighthouselabs.ca/p/cyber/days/w02d1)
-- [ ] [Risk & Vulnerability Assessment](https://web.compass.lighthouselabs.ca/p/cyber/days/w02d2)
-- [ ] [Threat Landscape](https://web.compass.lighthouselabs.ca/p/cyber/days/w02d3)
-- [ ] [Attack Patterns Logs](https://web.compass.lighthouselabs.ca/p/cyber/days/w02d4)
-- [ ] [Attack Patterns Network](https://web.compass.lighthouselabs.ca/p/cyber/days/w02d5)
-- [ ] [Develop a Monitoring Solution](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d1)
-- [ ] [Python Programming I](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d2)
-- [ ] [Python Programming II](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d3)
-- [ ] [RegEx and Bash](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d4)
-- [ ] [Custom Scripting](https://web.compass.lighthouselabs.ca/p/cyber/days/w03d5)
-- [ ] [Using Code as Your Superpower](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d1)
-- [ ] [The Blue Team](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d2)
-- [ ] [Security Operations](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d3)
-- [ ] [Security Posture](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d4)
-- [ ] [GRC Management Landscape](https://web.compass.lighthouselabs.ca/p/cyber/days/w04d5)
-- [ ] [Control Implementation, Remediation & Compliance](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d1)
-- [ ] [Risk & Compliance](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d2)
-- [ ] [The Nature of Vulnerabilities](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d3)
-- [ ] [Vulnerability Assessments and Results](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d4)
-- [ ] [Results and Remediations](https://web.compass.lighthouselabs.ca/p/cyber/days/w05d5)
-- [ ] [Staffing the IR Team](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d1)
-- [ ] [Incidence Escalation](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d2)
-- [ ] [IR, Playbooks and Policy](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d3)
-- [ ] [Escalation Research Discussion](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d4)
-- [ ] [Encryption Tools](https://web.compass.lighthouselabs.ca/p/cyber/days/w06d5)
-- [ ] [Cryptographic Methods](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d1)
-- [ ] [Cryptography Recap](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d2)
-- [ ] [Standard Protocols - SSH Server](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d3)
-- [ ] [Cyber Threat Intelligence](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d4)
-- [ ] [Threat Intelligence & Actionable Intelligence](https://web.compass.lighthouselabs.ca/p/cyber/days/w07d5)
-- [ ] [Cyber Kill Chain, Diamond Model & Threat Actors](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d1)
-- [ ] [Reactive vs Proactive Threat Detection](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d2)
-- [ ] [SIEM Architecture & Implementation](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d3)
-- [ ] [Threat Defense Investigation & Research Report](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d4)
-- [ ] [Forensic Roles, Logs and Captures](https://web.compass.lighthouselabs.ca/p/cyber/days/w08d5)
-- [ ] [Forensic Selection Criteria](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d1)
-- [ ] [Forensic Optimization and Investigation](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d2)
-- [ ] [File Recovery with FTK Imager](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d3)
-- [ ] [Windows Registry Forensics](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d4)
-- [ ] [Role of Forensics in Malware Analysis](https://web.compass.lighthouselabs.ca/p/cyber/days/w09d5)
-- [ ] [Security Mindset and Frameworks](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d1)
-- [ ] [Implement Effective Access Management & Data Security](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d2)
-- [ ] [Secure Application Development Practices](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d3)
-- [ ] [Incident Management & Fostering Security-aware Culture](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d4)
-- [ ] [Security Architecture Recommendations](https://web.compass.lighthouselabs.ca/p/cyber/days/w10d5)
-
 ## ETHICAL HACKING
 
 - [ ] [Whizlabs Training](https://www.whizlabs.com/)
@@ -105,7 +50,7 @@
 - [ ] [CyberSecurity Bootcamp: The Ultimate Beginner's Course](https://www.udemy.com/course/personal-digital-security-everyone-must-have-cybersecurity/?couponCode=24T2MT111524)
 - [ ] [Complete Cyber Security Practice Tests & Interview Questions](https://www.udemy.com/course/complete-cyber-security-practice-tests-interview-questions/?couponCode=24T2MT111524)
 - [ ] [Free Splunk Tutorial - Splunk Basics Course](https://www.udemy.com/course/splunk-basics-course/)
-- [ ] [Free Splunk Tutorial - *NEW* A No-Nonsense Splunk Course | Getting Started Guide](https://www.udemy.com/course/no-nonsense-course-on-using-splunk/)
+- [ ] [Free Splunk Tutorial - _NEW_ A No-Nonsense Splunk Course | Getting Started Guide](https://www.udemy.com/course/no-nonsense-course-on-using-splunk/)
 - [ ] [Google Cybersecurity](https://www.coursera.org/professional-certificates/google-cybersecurity#courses)
 
 ## NETWORKING
