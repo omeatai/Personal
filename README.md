@@ -57,8 +57,6 @@
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
-- [ ] [Cybersecurity | Hacking | Networking | Linux | Windows](https://github.com/omeatai/Personal/blob/main/Tutorials/cybersecurity.md)
-
 ### ⚙️ MY TOOLS
 
 <details>
