@@ -44,14 +44,12 @@
 
 ### 🏛️ MY LABS
 
-- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
-- [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
-- [ ] [AWS-CLOUD LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
+- [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
 - [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JAVA-LABS-IFEANYI](https://github.com/omeatai/JAVA-LABS-IFEANYI/blob/main/README.md)
-- [ ] [HTML-CSS-LABS-IFEANYI](https://github.com/omeatai/HTML-CSS-LABS-IFEANYI/blob/main/README.md)
-- [ ] [JS-LABS-IFEANYI](https://github.com/omeatai/JS-LABS-IFEANYI/blob/main/README.md)
-- [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
+- [ ] [AWS-CLOUD LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
+- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
+- [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
