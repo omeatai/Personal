@@ -41,6 +41,7 @@
 
 - [ ] [ALL SOFTWARE PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
 - [ ] [ALL CYBERSECURITY PROJECTS](https://docs.google.com/document/d/1U1xe2pl0LvR-GBGsy2m3pMkDmZ624lxpGtCyh8jFkmA/edit?usp=sharing)
+- [ ] [PRACTICE PROJECTS](https://github.com/omeatai/projects-v1)
 
 ### 🏛️ MY LABS
 
