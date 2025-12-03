@@ -10,35 +10,35 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 
 🔐 Network Engineering & Cybersecurity
 
-⚡Designed, configured, and troubleshot LAN/WAN, VLANs, routing, switching, and firewall rules to ensure secure, high-performance network operations.
-⚡Performed network monitoring, packet analysis, and traffic diagnostics using enterprise-grade tools.
-⚡Improved network reliability through structured documentation, change management, and proactive issue resolution.
-⚡Conducted threat detection, SIEM monitoring, and incident response using Splunk and network security tools.
-⚡Performed penetration testing and vulnerability assessments with Nmap, Nessus, and Metasploit.
-⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, and other governance frameworks.
-⚡Investigated digital evidence and suspicious activity using forensic methodologies.
+- [ ] ⚡Designed, configured, and troubleshot LAN/WAN, VLANs, routing, switching, and firewall rules to ensure secure, high-performance network operations.
+- [ ] ⚡Performed network monitoring, packet analysis, and traffic diagnostics using enterprise-grade tools.
+- [ ] ⚡Improved network reliability through structured documentation, change management, and proactive issue resolution.
+- [ ] ⚡Conducted threat detection, SIEM monitoring, and incident response using Splunk and network security tools.
+- [ ] ⚡Performed penetration testing and vulnerability assessments with Nmap, Nessus, and Metasploit.
+- [ ] ⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, and other governance frameworks.
+- [ ] ⚡Investigated digital evidence and suspicious activity using forensic methodologies.
 
 ☁️ Cloud Engineering
 
-⚡Built and managed cloud infrastructures on AWS and Azure, including EC2, VPC, S3, IAM, Azure AD, and advanced networking architectures.
-⚡Configured and administered IAM roles, policies, RBAC, MFA, conditional access, and secure identity governance across cloud environments.
-⚡Implemented secure cloud access controls, automation workflows, and environment hardening for highly scalable and resilient deployments.
+- [ ] ⚡Built and managed cloud infrastructures on AWS and Azure, including EC2, VPC, S3, IAM, Azure AD, and advanced networking architectures.
+- [ ] ⚡Configured and administered IAM roles, policies, RBAC, MFA, conditional access, and secure identity governance across cloud environments.
+- [ ] ⚡Implemented secure cloud access controls, automation workflows, and environment hardening for highly scalable and resilient deployments.
 
 📌Software Engineering
 
-⚡Designed and deployed scalable applications using JavaScript, TypeScript, Java, Python, React, Node, Django, and REST APIs.
-⚡Built user-centric interfaces with React, React Native, and Figma.
-⚡Developed secure backend services and APIs using Node, Java, and Django REST Framework.
+- [ ] ⚡Designed and deployed scalable applications using JavaScript, TypeScript, Java, Python, React, Node, Django, and REST APIs.
+- [ ] ⚡Built user-centric interfaces with React, React Native, and Figma.
+- [ ] ⚡Developed secure backend services and APIs using Node, Java, and Django REST Framework.
 
 🛠️ Skills & Tools
 
-✅Networking: Routing & Switching, VLANs, Firewalls, DNS, DHCP, VPNs, Packet Analysis
-✅Cloud: AWS, Azure, EC2, VPC, IAM, S3, Lambda, Cloud Networking
-✅Cybersecurity: Threat Detection, Incident Response, Pen Testing, SIEM (Splunk), QA Testing, Vulnerability Management
-✅Software Development: Javascript, Java, React, Typescript, Node, Python, Django, AWS, Azure.
-✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
-✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
-✅Customer Support: Zendesk, Jira, Trello, CRM Platforms, Ticketing Systems.
+- [ ] ✅Networking: Routing & Switching, VLANs, Firewalls, DNS, DHCP, VPNs, Packet Analysis
+- [ ] ✅Cloud: AWS, Azure, EC2, VPC, IAM, S3, Lambda, Cloud Networking
+- [ ] ✅Cybersecurity: Threat Detection, Incident Response, Pen Testing, SIEM (Splunk), QA Testing, Vulnerability Management
+- [ ] ✅Software Development: Javascript, Java, React, Typescript, Node, Python, Django, AWS, Azure.
+- [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
+- [ ] ✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
+- [ ] ✅Customer Support: Zendesk, Jira, Trello, CRM Platforms, Ticketing Systems.
 
 🚀 Let’s Connect!
 🔍 Open to Remote, Hybrid, and On-Site Opportunities
