@@ -3,29 +3,44 @@
 <details>
   <summary>🧑‍💻 About Me</summary>
 
-🔆Hi, I'm Ifeanyi, a dynamic and solutions-driven Software Engineer, AI Cloud Engineer and Cybersecurity Analyst and Enthusiast. I'm passionate about building and deploying applications in the Cloud, securing cloud environments, protecting networks, applications and systems, and ensuring compliance with industry standards.
+🚀 About Me
 
-📌Cloud Software Engineering
+Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong capabilities in Cloud Engineering, Cybersecurity, and Software Development. I specialize in designing, securing, and optimizing modern networked environments while ensuring reliability, compliance, and excellent user experience across systems.
 
-- [ ] ⚡Designed and built scalable web applications using Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS and REST APIs, ensuring high performance and security.
-- [ ] ⚡Built dynamic, user-centric interfaces with Figma, React and React Native, improving user experience across platforms.
-- [ ] ⚡Developed and maintained secure APIs with Django Rest Framework (DRF), Node.js, and Next.js.
+🔐 Network Engineering & Cybersecurity
 
-📌Cybersecurity & SOC Experience
+⚡Designed, configured, and troubleshot LAN/WAN, VLANs, routing, switching, and firewall rules to ensure secure, high-performance network operations.
+⚡Performed network monitoring, packet analysis, and traffic diagnostics using enterprise-grade tools.
+⚡Improved network reliability through structured documentation, change management, and proactive issue resolution.
+⚡Conducted threat detection, SIEM monitoring, and incident response using Splunk and network security tools.
+⚡Performed penetration testing and vulnerability assessments with Nmap, Nessus, and Metasploit.
+⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, and other governance frameworks.
+⚡Investigated digital evidence and suspicious activity using forensic methodologies.
 
-- [ ] ⚡Conducted threat detection and incident response using Splunk and network monitoring tools.
-- [ ] ⚡Performed penetration testing with Nmap, Nessus, and Metasploit to assess system vulnerabilities.
-- [ ] ⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS frameworks.
-- [ ] ⚡Investigated digital evidence using forensic tools to identify security breaches.
-- [ ] ⚡Applied GRC principles to align security policies with organizational goals and maintain compliance.
+☁️ Cloud Engineering
+
+⚡Built and managed cloud infrastructures on AWS and Azure, including EC2, VPC, S3, IAM, Azure AD, and advanced networking architectures.
+⚡Configured and administered IAM roles, policies, RBAC, MFA, conditional access, and secure identity governance across cloud environments.
+⚡Implemented secure cloud access controls, automation workflows, and environment hardening for highly scalable and resilient deployments.
+
+📌Software Engineering
+
+⚡Designed and deployed scalable applications using JavaScript, TypeScript, Java, Python, React, Node, Django, and REST APIs.
+⚡Built user-centric interfaces with React, React Native, and Figma.
+⚡Developed secure backend services and APIs using Node, Java, and Django REST Framework.
 
 🛠️ Skills & Tools
 
-- [ ] ✅Software Development: Javascript, React, Typescript, Node, Next.js, Python, Django, Flask, AWS, Azure.
-- [ ] ✅Cybersecurity: Threat Detection, Incident Response, Penetration Testing, SIEM (Splunk), Network Security
-- [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
-- [ ] ✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
-- [ ] ✅Customer Support: Zendesk, CRM Platforms, Ticketing Systems
+✅Networking: Routing & Switching, VLANs, Firewalls, DNS, DHCP, VPNs, Packet Analysis
+✅Cloud: AWS, Azure, EC2, VPC, IAM, S3, Lambda, Cloud Networking
+✅Cybersecurity: Threat Detection, Incident Response, Pen Testing, SIEM (Splunk), QA Testing, Vulnerability Management
+✅Software Development: Javascript, Java, React, Typescript, Node, Python, Django, AWS, Azure.
+✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
+✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
+✅Customer Support: Zendesk, Jira, Trello, CRM Platforms, Ticketing Systems.
+
+🚀 Let’s Connect!
+🔍 Open to Remote, Hybrid, and On-Site Opportunities
 
 </details>
 
