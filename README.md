@@ -3,7 +3,8 @@
 <details>
   <summary>🧑‍💻 About Me</summary>
 
-🚀 About Me
+- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
+- [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
 
 Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong capabilities in Cloud Engineering, Cybersecurity, and Software Development. I specialize in designing, securing, and optimizing modern networked environments while ensuring reliability, compliance, and excellent user experience across systems.
 
@@ -41,14 +42,6 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 
 🚀 Let’s Connect!
 🔍 Open to Remote, Hybrid, and On-Site Opportunities
-
-</details>
-
-<details>
-  <summary>🚀 My Links</summary>
-
-- [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
-- [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
 
 </details>
 
