@@ -53,6 +53,7 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 
 ### 🏛️ MY LABS
 
+- [ ] [Cloud-Infrastructure-Engineer-Security](https://github.com/omeatai/Cloud-Infrastructure-Engineer-Security)
 - [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
 - [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
 - [ ] [JAVA-LABS-IFEANYI](https://github.com/omeatai/JAVA-LABS-IFEANYI/blob/main/README.md)
