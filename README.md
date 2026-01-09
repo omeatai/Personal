@@ -53,21 +53,72 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 
 ### 🏛️ COURSES
 
-- [ ] [REACT](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
-- [ ] [PYTHON](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
-- [ ] [JAVA](https://github.com/omeatai/JAVA-LABS-IFEANYI/blob/main/README.md)
-- [ ] [AWS-CLOUD LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
+- [ ] [DEVOPS](https://github.com/omeatai/Personal/blob/main/Files/devops.md)
+- [ ] [HTML/CSS](https://github.com/omeatai/Personal/blob/main/Files/html_css.md)
+- [ ] [JAVASCRIPT](https://github.com/omeatai/Personal/blob/main/Files/javascript.md)
+- [ ] [TYPESCRIPT](https://github.com/omeatai/Personal/blob/main/Files/typescript.md)
+- [ ] [REACT](https://github.com/omeatai/Personal/blob/main/Files/react.md)
+- [ ] [NODE](https://github.com/omeatai/Personal/blob/main/Files/nodejs.md)
+- [ ] [REACT-NATIVE](https://github.com/omeatai/Personal/blob/main/Files/react_native.md)
+- [ ] [PYTHON](https://github.com/omeatai/Personal/blob/main/Files/python.md)
+- [ ] [DJANGO](https://github.com/omeatai/Personal/blob/main/Files/django.md)
+- [ ] [JAVA](https://github.com/omeatai/Personal/blob/main/Files/java.md)
+- [ ] [SPRING-MVC](https://github.com/omeatai/Personal/blob/main/Files/spring_mvc.md)
+- [ ] [SQL](https://github.com/omeatai/Personal/blob/main/Files/sql.md)
+- [ ] [AI](https://github.com/omeatai/artificial_intelligence.md)
+- [ ] [AWS](https://github.com/omeatai/Personal/blob/main/Files/aws.md)
+- [ ] [AZURE](https://github.com/omeatai/Personal/blob/main/Files/azure.md)
+- [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
-- [ ] [LINUX](https://github.com/omeatai/LINUX-LABS-IFEANYI)
-- [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
-- [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
+- [ ] [QA](https://github.com/omeatai/quality_assurance.md)
 
 ### ⚙️ MY TOOLS
 
 <details>
   <summary>🏀All Tutors</summary>
 
-</details>  
+## 🧑‍💻Tutors
+
+- [ ] [CodingAddict](https://www.codingaddict.io/)
+- [ ] [Learn Kubernetes with KodeKloud](https://www.youtube.com/playlist?list=PL2We04F3Y_43dAehLMT5GxJhtk3mJtkl5)
+- [ ] [Rayan Slim](https://www.youtube.com/@RayanSlim087/videos)
+- [ ] [Bro Code](https://www.youtube.com/@BroCodez)
+- [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
+- [ ] [Bharath Thippireddy](https://www.udemy.com/user/bharaththippireddy/)
+- [ ] [Sangam Mukherjee](https://www.youtube.com/@sangammukherjee/videos)
+- [ ] [HuXn WebDev](https://www.youtube.com/@huxnwebdev/videos)
+- [ ] [Codevolution](https://www.youtube.com/@Codevolution/playlists)
+- [ ] [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode/playlists)
+- [ ] [Net Ninja](https://www.youtube.com/@NetNinja/playlists)
+- [ ] [freeCodeCamp.org](https://www.youtube.com/@freecodecamp/videos)
+- [ ] [Traversy Media](https://www.youtube.com/@TraversyMedia/videos)
+- [ ] [JavaScript Mastery](https://www.youtube.com/@javascriptmastery/videos)
+- [ ] [code with lari](https://www.youtube.com/@codewithlari/videos)
+- [ ] [Jan Marshal](https://www.youtube.com/@janmarshalcoding/videos)
+- [ ] [Coding With Dawid](https://www.youtube.com/@CodingWithDawid/videos)
+- [ ] [TubeGuruji](https://www.youtube.com/@tubeguruji/videos)
+- [ ] [9jaCoder](https://www.youtube.com/@9jaCoder/videos)
+- [ ] [Elliott Chong](https://www.youtube.com/@elliottchong/videos)
+- [ ] [Code With Antonio](https://www.youtube.com/@codewithantonio/videos)
+- [ ] [Kishan Sheth](https://www.youtube.com/@KishanSheth21/videos)
+- [ ] [Code Bootcamp](https://www.youtube.com/@CodeBootcampCom/videos)
+- [ ] [Lama Dev](https://www.youtube.com/@LamaDev/videos)
+- [ ] [Daily Tuition](https://www.youtube.com/@DailyTuition/videos)
+- [ ] [IndGeek](https://www.youtube.com/@indgeek/videos)
+- [ ] [Code With Vini](https://www.youtube.com/@codewithvini1644/videos)
+- [ ] [PedroTech](https://www.youtube.com/@PedroTechnologies/videos)
+- [ ] [Zpunet](https://www.youtube.com/@zpunet/videos)
+- [ ] [NewAwesomeTech](https://www.youtube.com/@NewAwesomeTech/videos)
+- [ ] [Emilian Kasemi](https://www.youtube.com/@the_rings_of_saturn/videos)
+- [ ] [Sonny Sangha](https://www.youtube.com/@SonnySangha/videos)
+- [ ] [Becodemy](https://www.youtube.com/@BecodemyOfficial/videos)
+- [ ] [Sangam Mukherjee](https://www.youtube.com/@sangammukherjee3009/videos)
+- [ ] [Milad Tech](https://www.youtube.com/@miladtech/videos)
+- [ ] [HuXn WebDev](https://www.youtube.com/@huxnwebdev/videos)
+- [ ] [Chaoo Charles](https://www.youtube.com/@ChaooCharles/featured)
+- [ ] [EdRoh](https://www.youtube.com/@EdRohDev/videos)
+
+</details>
 
 <details>
   <summary>🏀Frameworks & Libraries</summary>
