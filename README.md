@@ -70,8 +70,8 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 - [ ] [AWS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 - [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
-- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
 - [ ] [QA](https://github.com/omeatai/quality_assurance.md)
+- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
 
 ### ⚙️ MY TOOLS
 
