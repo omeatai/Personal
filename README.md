@@ -51,15 +51,14 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 - [ ] [ALL CYBERSECURITY PROJECTS](https://docs.google.com/document/d/1U1xe2pl0LvR-GBGsy2m3pMkDmZ624lxpGtCyh8jFkmA/edit?usp=sharing)
 - [ ] [PRACTICE PROJECTS I](https://github.com/omeatai/projects-v1)
 
-### 🏛️ MY LABS
+### 🏛️ COURSES
 
-- [ ] [Cloud-Infrastructure-Engineer-Security](https://github.com/omeatai/Cloud-Infrastructure-Engineer-Security)
-- [ ] [REACT-LABS-IFEANYI](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
-- [ ] [PYTHON-LABS-IFEANYI](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
-- [ ] [JAVA-LABS-IFEANYI](https://github.com/omeatai/JAVA-LABS-IFEANYI/blob/main/README.md)
+- [ ] [REACT](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/README.md)
+- [ ] [PYTHON](https://github.com/omeatai/PYTHON-LABS-IFEANYI/blob/main/README.md)
+- [ ] [JAVA](https://github.com/omeatai/JAVA-LABS-IFEANYI/blob/main/README.md)
 - [ ] [AWS-CLOUD LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
-- [ ] [LINUX-LABS-IFEANYI](https://github.com/omeatai/LINUX-LABS-IFEANYI)
+- [ ] [LINUX](https://github.com/omeatai/LINUX-LABS-IFEANYI)
 - [ ] [All Tutors](https://github.com/omeatai/Personal/blob/main/Tutorials/tutors.md)
 - [ ] [Other Tutorials](https://github.com/omeatai/Personal/blob/main/Tutorials/others.md)
 
