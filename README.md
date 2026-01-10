@@ -53,6 +53,7 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 
 ### 🏛️ COURSES
 
+- [ ] [COPILOT](https://github.com/omeatai/Personal/blob/main/Files/copilot.md)
 - [ ] [GIT](https://github.com/omeatai/Personal/blob/main/Files/git.md)
 - [ ] [DEVOPS](https://github.com/omeatai/Personal/blob/main/Files/devops.md)
 - [ ] [HTML/CSS](https://github.com/omeatai/Personal/blob/main/Files/html_css.md)
