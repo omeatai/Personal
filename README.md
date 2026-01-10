@@ -66,11 +66,11 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 - [ ] [JAVA](https://github.com/omeatai/Personal/blob/main/Files/java.md)
 - [ ] [SPRING-MVC](https://github.com/omeatai/Personal/blob/main/Files/spring_mvc.md)
 - [ ] [SQL](https://github.com/omeatai/Personal/blob/main/Files/sql.md)
-- [ ] [AI](https://github.com/omeatai/artificial_intelligence.md)
+- [ ] [AI](https://github.com/omeatai/Personal/blob/main/Files/artificial_intelligence.md)
 - [ ] [AWS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 - [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
-- [ ] [QA](https://github.com/omeatai/quality_assurance.md)
+- [ ] [QA](https://github.com/omeatai/Personal/blob/main/Files/quality_assurance.md)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
 
 ### ⚙️ MY TOOLS
