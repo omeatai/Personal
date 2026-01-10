@@ -1,5 +1,7 @@
 # GIT by Ifeanyi Omeata
 
+### GIT COURSES
+
 <details>
   <summary>CRASH COURSE</summary>
   
@@ -123,9 +125,6 @@ git restore --staged {Filename}
 
 
 </details>
-
-
-### GIT COURSES
 
 <details>
   <summary>Git Beginner</summary>
