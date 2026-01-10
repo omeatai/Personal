@@ -1,6 +1,6 @@
 # TYPESCRIPT by Ifeanyi Omeata
 
-### TYPESCRIPT COURSES
+## TYPESCRIPT COURSES
 
 <details>
   <summary>TYPESCRIPT FOR BEGINNERS</summary>
