@@ -4,7 +4,7 @@
 
 ### [ALL AWS Cloud LABS & PROJECTS - HERE](https://github.com/omeatai/AWS-LABS-IFEANYI/blob/main/labs/1.md)
 
-# AWS COURSES
+## AWS COURSES
 
 <details>
   <summary>Serverless using AWS Lambda for Python Developers</summary>
