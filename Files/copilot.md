@@ -1,6 +1,6 @@
 # COPILOT by Ifeanyi Omeata
 
-### COPILOT COURSES
+## COPILOT COURSES
 
 <details>
   <summary>GitHub Copilot Beginner to Pro - AI for Coding & Development</summary>
