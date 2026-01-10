@@ -101,7 +101,7 @@
 </details>
 
 
-### REACT TESTING & DESIGN
+## REACT TESTING & DESIGN
 
 <details>
   <summary>JavaScript Unit Testing - The Practical Guide</summary>
@@ -139,7 +139,7 @@
 </details>
 
 
-### NEXTJS BASICS
+## NEXTJS COURSES
 
 <details>
   <summary>NextJS Developer-zero-to-mastery</summary>
