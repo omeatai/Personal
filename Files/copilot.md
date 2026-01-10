@@ -1,5 +1,12 @@
 # COPILOT by Ifeanyi Omeata
 
-### COPILOT BASICS
+### COPILOT COURSES
 
-- [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
+<details>
+  <summary>GitHub Copilot Beginner to Pro - AI for Coding & Development</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/github-copilot/learn/lecture)
+- [ ] [Introduction](https://www.udemy.com/course/github-copilot/learn/lecture/54062401)
+- [ ] [Set up local machine with Github Copilot](https://www.udemy.com/course/github-copilot/learn/lecture/53719561)
+
+<details>
