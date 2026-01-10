@@ -1,6 +1,6 @@
 # GIT by Ifeanyi Omeata
 
-### GIT COURSES
+## GIT COURSES
 
 <details>
   <summary>CRASH COURSE</summary>
