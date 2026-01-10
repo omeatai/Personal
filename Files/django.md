@@ -3,13 +3,6 @@
 ## DJANGO COURSES
 
 <details>
-  <summary>Django Python Web Framework for Beginners</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/navinreddy-django-basic-tutorial/)
-
-</details>
-
-<details>
   <summary>Python Django - The Practical Guide</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/python-django-the-practical-guide/)
