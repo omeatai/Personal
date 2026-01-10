@@ -3,13 +3,6 @@
 ### JAVASCRIPT COURSES
 
 <details>
-  <summary>JavaScript Data Structures & Algorithms + LEETCODE Exercises</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/data-structures-algorithms-javascript/)
-
-</details>
-
-<details>
   <summary>Modern JavaScript From The Beginning 2.0 (Just Updated)</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/modern-javascript-from-the-beginning/)
@@ -43,6 +36,14 @@
 - [ ] [COURSE](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
 
 </details>
+
+<details>
+  <summary>JavaScript Data Structures & Algorithms + LEETCODE Exercises</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/data-structures-algorithms-javascript/)
+
+</details>
+
 
 
 
