@@ -1,7 +1,5 @@
 # GIT by Ifeanyi Omeata
 
-### CRASH COURSE
-
 <details>
   <summary>CRASH COURSE</summary>
   
