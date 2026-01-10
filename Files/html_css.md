@@ -1,16 +1,27 @@
 # HTML/CSS by Ifeanyi Omeata
 
-## CODING ADDICT
+## CODING ADDICT - JANIS SMILGA
 
-- [ ] [DREAMAXHQ](https://app.dreamaxhq.com/courses/)
-- [ ] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products) 
-- [ ] [JS Fundamentals](https://www.codingaddict.io/l/products) 
-- [ ] [TS Fundamentals](https://www.codingaddict.io/l/products)
-- [ ] [REACT Fundamentals](https://www.codingaddict.io/l/products)
-- [ ] [NODE Fundamentals](https://www.codingaddict.io/l/products)
+
+- [ ] [HTML&CSS Tutorial and Projects Course](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/)
+- [ ] [Complete React, Next.js & TypeScript Projects Course 2025](https://www.udemy.com/course/react-tutorial-and-projects-course/)
+- [ ] [Mastering NextJS 14 & OpenAI](https://www.udemy.com/course/nextjs-open-ai/)
+- [ ] [MERN 2025 Edition - MongoDB, Express, React and NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-and-nodejs/)
+- [ ] [NodeJS Tutorial and Projects Course](https://www.udemy.com/course/nodejs-tutorial-and-projects-course/)
+- [ ] [Javascript Tutorial and Projects Course](https://www.udemy.com/course/javascript-tutorial-for-beginners-w/)
+- [ ] [React Styled Components Course (V5)](https://www.udemy.com/course/styled-components-tutorial-and-project-course/)
+- [ ] [Serverless Functions with Netlify](https://www.udemy.com/course/serverless-functions-with-netlify/)
+- [ ] [Gatsby.js 3 Tutorial and Projects Course](https://www.udemy.com/course/gatsby-tutorial-and-projects-course)
+- [ ] [AWS CDK v2 with TypeScript – Build and Deploy Projects](https://www.udemy.com/course/aws-cdk-v2-with-typescript-build-and-deploy-projects/)
+- [ ] [Practical Git and GitHub: From Basics to Pro Workflows](https://www.udemy.com/course/practical-git-and-github-from-basics-to-pro-workflows)
+- [ ] [Mastering Jest Testing with TypeScript and Node.js](https://www.udemy.com/course/mastering-jest-testing-with-typescript-and-nodejs/)
+- [ ] [Mastering React Testing: RTL, Vitest & MSW](https://www.udemy.com/course/mastering-react-testing-rtl-vitest-msw/)
+- [ ] [Mastering Next.js 14 - Build Airbnb Clone from Scratch](https://www.udemy.com/course/mastering-nextjsbuild-an-airbnb-clone-from-scratch-2024/)
+- [ ] [Practical Typescript](https://www.udemy.com/course/practical-typescript/)
 
 ## HTML/CSS COURSES
 
+- [ ] [DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 - [ ] [The Full-Stack Web Development Bootcamp 2025](https://www.udemy.com/course/full-stack-web-development-bootcamp-complete-course-2025)
 - [ ] [The Complete Full-Stack Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 - [ ] [The Web Developer Bootcamp 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)
@@ -19,47 +30,3 @@
 - [ ] [Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 - [ ] [Complete Web & Mobile Designer: UI/UX, Figma](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
 
-
-### YOUTUBE & FIGMA
-
-
-- [ ] [Web Development Crash Courses 2023-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhuX4qGvFx-wPy_MEi6Jdp7)
-- [ ] [Master HTML and CSS in 6 Hours | HTML and CSS full Course 2024](https://www.youtube.com/watch?v=PIhmTGiKKkg)
-- [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
-- [ ] [UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
-- [ ] [FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
-- [ ] [STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
-- [ ] [MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
-- [ ] [DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
-- [ ] [FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
-- [ ] [FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
-- [ ] [FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
-- [ ] [FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
-- [ ] [FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
-- [ ] [INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
-- [ ] [DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
-- [ ] [-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
-- [ ] [FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
-- [ ] [DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
-- [ ] [FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
-- [ ] [WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
-- [ ] [FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
-- [ ] [FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
-- [ ] [FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
-- [ ] [FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
-- [ ] [HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
-- [ ] [MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
-- [ ] [FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
-- [ ] [FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
-- [ ] [RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
-- [ ] [DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
-- [ ] [INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
-- [ ] [FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
-- [ ] [FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
-- [ ] [NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
-- [ ] [WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
-- [ ] [CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
-- [ ] [FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
-- [ ] [THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
-- [ ] [FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
-- [ ] [THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
