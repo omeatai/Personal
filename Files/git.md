@@ -1,5 +1,10 @@
-# INTRODUCTION
+# GIT by Ifeanyi Omeata
 
+### CRASH COURSE
+
+<details>
+  <summary>CRASH COURSE</summary>
+  
 ## Initialize Git
 
 ```bs
@@ -117,3 +122,44 @@ git log --oneline
 git restore {Filename}
 git restore --staged {Filename}
 ```
+
+
+</details>
+
+
+### GIT COURSES
+
+<details>
+  <summary>Git Beginner</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/github-copilot/)
+- [ ] [Introduction](https://www.udemy.com/course/github-copilot/learn/lecture/54062401)
+- [ ] [Set up local machine with Github Copilot](https://www.udemy.com/course/github-copilot/learn/lecture/53719561)
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
