@@ -1,6 +1,6 @@
 # PYTHON by Ifeanyi Omeata
 
-## PYTHON COURSES
+## PYTHON & AI COURSES
 
 <details>
   <summary>Python for beginners</summary>
