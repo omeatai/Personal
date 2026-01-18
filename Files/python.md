@@ -125,7 +125,7 @@
 
 
 
-## AWS COURSES
+## AI & AWS COURSES
 
 <details>
   <summary>Serverless using AWS Lambda for Python Developers</summary>
@@ -161,9 +161,6 @@
 - [ ] [COURSE](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
 
 </details>
-
-
-## AI COURSES
 
 <details>
   <summary>Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)</summary>
