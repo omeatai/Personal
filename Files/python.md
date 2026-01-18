@@ -52,27 +52,6 @@
 </details>
 
 <details>
-  <summary>Python for Beginners - Go from Java to Python in 100 Steps</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/learn-python-programming-for-java-programmers)
-
-</details>
-
-<details>
-  <summary>Python For Beginners: Scripting Programming With Python 3</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/python-scripting/)
-
-</details>
-
-<details>
-  <summary>Learn To Code From Scratch With Python 3</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/learn-to-code-from-scratch-with-python-3/)
-
-</details>
-
-<details>
   <summary>100 Days of Code: The Complete Python Pro Bootcamp</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/100-days-of-code/)
@@ -83,6 +62,13 @@
   <summary>Python & Cryptocurrency API: Build 5 Real World Applications</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/coinmarketcap)
+
+</details>
+
+<details>
+  <summary>Python for Beginners - Go from Java to Python in 100 Steps</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/learn-python-programming-for-java-programmers)
 
 </details>
 
