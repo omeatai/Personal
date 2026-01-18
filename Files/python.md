@@ -10,6 +10,20 @@
 </details>
 
 <details>
+  <summary>Serverless using AWS Lambda for Python Developers</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
+
+</details>
+
+<details>
+  <summary>Langchain for beginners : Build GenAI LLM Apps in Easy Steps</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/langchain-for-beginners-build-genai-llm-apps-in-easy-steps/)
+
+</details>
+
+<details>
   <summary>Python for Beginners with Telusko</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/python-tutorials-for-by-navinreddy/)
@@ -72,19 +86,7 @@
 
 </details>
 
-<details>
-  <summary>Serverless using AWS Lambda for Python Developers</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
 
-</details>
-
-<details>
-  <summary>Langchain for beginners : Build GenAI LLM Apps in Easy Steps</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/langchain-for-beginners-build-genai-llm-apps-in-easy-steps/)
-
-</details>
 
 
 ### PYTHON TESTING & DESIGN
