@@ -75,7 +75,7 @@
 
 
 
-### PYTHON TESTING & DESIGN
+## PYTHON TESTING & DESIGN
 
 <details>
   <summary>The Ultimate Python Unit Testing Course</summary>
@@ -92,7 +92,7 @@
 </details>
 
 
-### PYTHON DATA & ALGORITHMS
+## PYTHON DATA & ALGORITHMS
 
 <details>
   <summary>Python Logical Programs and Data Structures for beginners</summary>
@@ -121,6 +121,8 @@
 - [ ] [COURSE](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
 </details>
+
+
 
 
 ## AWS COURSES
