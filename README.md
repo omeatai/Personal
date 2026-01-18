@@ -50,6 +50,8 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 - [ ] [ALL SOFTWARE PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
 - [ ] [ALL CYBERSECURITY PROJECTS](https://docs.google.com/document/d/1U1xe2pl0LvR-GBGsy2m3pMkDmZ624lxpGtCyh8jFkmA/edit?usp=sharing)
 - [ ] [PRACTICE PROJECTS I](https://github.com/omeatai/projects-v1)
+- [ ] [AWS LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
+- [ ] [AZURE LABS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 
 ### 🏛️ COURSES
 
@@ -67,8 +69,6 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Network Engineer with strong
 - [ ] [JAVA](https://github.com/omeatai/Personal/blob/main/Files/java.md)
 - [ ] [SPRING-MVC](https://github.com/omeatai/Personal/blob/main/Files/spring_mvc.md)
 - [ ] [SQL](https://github.com/omeatai/Personal/blob/main/Files/sql.md)
-- [ ] [AWS](https://github.com/omeatai/AWS-LABS-IFEANYI)
-- [ ] [AZURE](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 - [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
 - [ ] [QA](https://github.com/omeatai/Personal/blob/main/Files/quality_assurance.md)
 - [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
