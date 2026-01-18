@@ -31,6 +31,20 @@
 </details>
 
 <details>
+  <summary>The Complete Python Developer - zero-to-mastery</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
+
+</details>
+
+<details>
+  <summary>Automate the Boring Stuff with Python Programming</summary>
+  
+- [ ] [COURSE](https://www.udemy.com/course/automate/)
+
+</details>
+
+<details>
   <summary>Python Bootcamp: Beginner to Master Programming</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/python-programming-for-beginners-with-exercises/)
@@ -59,23 +73,9 @@
 </details>
 
 <details>
-  <summary>The Complete Python Developer - zero-to-mastery</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
-
-</details>
-
-<details>
   <summary>100 Days of Code: The Complete Python Pro Bootcamp</summary>
   
 - [ ] [COURSE](https://www.udemy.com/course/100-days-of-code/)
-
-</details>
-
-<details>
-  <summary>Automate the Boring Stuff with Python Programming</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/automate/)
 
 </details>
 
