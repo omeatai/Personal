@@ -48,11 +48,10 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabil
 ### 💼 MY PROJECTS AND PORTFOLIO
 
 - [ ] [ALL SOFTWARE PROJECTS](https://github.com/omeatai/SOFTWARE-PROJECTS)
-- [ ] [ALL CYBERSECURITY PROJECTS](https://docs.google.com/document/d/1U1xe2pl0LvR-GBGsy2m3pMkDmZ624lxpGtCyh8jFkmA/edit?usp=sharing)
+- [ ] [ALL CYBERSECURITY PROJECTS](https://github.com/omeatai/SECURITY-PROJECTS)
 - [ ] [PRACTICE PROJECTS I](https://github.com/omeatai/projects-v1)
 - [ ] [AWS LABS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE LABS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
-- [ ] [SECURITY-LABS-IFEANYI](https://github.com/omeatai/SECURITY-LABS-IFEANYI)
 
 ### 🏛️ COURSES
 
