@@ -54,13 +54,13 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabil
 
 ### 🏛️ COURSES
 
+- [ ] [AWS](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
 - [ ] [DEVOPS](https://github.com/omeatai/Personal/blob/main/Files/devops.md)
 - [ ] [JANIS](https://github.com/omeatai/Personal/blob/main/Files/janis.md)
 - [ ] [HTML/CSS](https://github.com/omeatai/Personal/blob/main/Files/html_css.md)
 - [ ] [JAVASCRIPT](https://github.com/omeatai/Personal/blob/main/Files/javascript.md)
 - [ ] [REACT](https://github.com/omeatai/Personal/blob/main/Files/react.md)
 - [ ] [PYTHON](https://github.com/omeatai/Personal/blob/main/Files/python.md)
-- [ ] [AWS](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
 - [ ] [JAVA](https://github.com/omeatai/Personal/blob/main/Files/java.md)
 - [ ] [SQL](https://github.com/omeatai/Personal/blob/main/Files/sql.md)
 - [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)

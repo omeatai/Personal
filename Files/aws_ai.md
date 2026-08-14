@@ -9,6 +9,7 @@
 ## AWS CERTIFIED COURSES
 
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
+- [ ] [**LAB 1** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
 - [ ] [Aws certified cloud practitioner](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+cloud+practitioner)
 - [ ] [Aws certified ai practitioner](https://www.udemy.com/courses/search/?q=aws+certified+ai+practitioner&src=sac&kw=AWS+Certified+AI+Pra)
@@ -23,7 +24,6 @@
 - [ ] [Aws certified security specialty](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+security+specialty)
 - [ ] [Aws certified advanced networking](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+advanced+networking)
 - [ ] [AWS certified machine learning specialty](https://www.udemy.com/courses/search/?src=ukw&q=AWS+certified+machine+learning+specialty)
-
 
 ## AWS LABS COURSES
 
