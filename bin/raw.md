@@ -1,121 +1,259 @@
-## Welcome to the Course
+## The SAA-C03 Exam
 
-Hello and welcome to this course.
+Hello everyone and welcome to this video.
 
-The first thing I'd like to say is congratulations on being here and investing in yourself.
+In this video,
 
-Now this course and all of the associated resources we've put together are designed to ensure you have
+I'm going to walk you through the details of the SAAC03 exam,
 
-the best chance to pass your exam. No matter what your background.
+that's the code for the AWS Certified Solutions Architect Associate exam.
 
-Everyone can pass this exam with the right resources and the right approach to study.
+So let's get into the details.
 
-So, how do you go about using all of these resources to your best advantage?
+This exam is an associate level certification exam,
 
-Firstly, I'd like to point you towards the course download lesson, which is the last lesson in this
+that means it's between the foundational
 
-section.
+and then the professional level.
 
-In that lesson, you'll find a link to our website.
+So it does require that you have some
 
-From that page, you'll be able to download the code that you need for the hands-on lessons in this
+experience and knowledge
 
-course.
+of AWS and experience in the industry.
 
-You'll also find a study guide, which can give you a very good idea of how to approach study.
+Now,
 
-Now it is a guideline really.
+don't worry if you don't have that because we will take you from the beginning,
 
-You can follow it to the latter if you like, or you might sort of tailor it to your own needs, depending
+it just makes it a bit easier if you do
 
-on how much time you have each day to allocate to study.
+have some background and understanding of things like compute,
 
-You'll also find the slides from the course, which you can download and peruse at your leisure offline.
+storage,
 
-There are two types of lessons in this course.
+networking and databases.
 
-The first is the theory lessons.
+Now the length of this exam is 130 minutes,
 
-Now in those, I try to keep things as visual as possible with lots of animated diagrams to help you
+and there are 65 questions.
 
-to understand the concepts.
+At the associate level,
 
-Then we go into hands-on lessons.
+the questions are scenario-based,
 
-You'll identify those because the name of the lesson has HOL at the beginning.
+and some of those scenarios can be quite complex,
 
-Hands-on lessons are where you have an opportunity to go into the AWS console in your own free tier
+and the answers themselves can be quite tricky.
 
-account and follow along with what I do so that you can learn some really valuable hands-on skills.
+Often I'll find that there's maybe two answers which look very,
 
-At the end of each section, you'll find a couple of additional lessons.
+very tempting to choose,
 
-One is the Architecture Patterns.
+and one of them is still clearly wrong,
 
-What I do in those lessons is I try to introduce you to a way of taking the knowledge you've just learned
+but you've gotta try and work that out,
 
-and putting it into the types of scenarios that you find in the workplace and also on the exam.
+so it can become a little bit tricky sometimes,
 
-So it's about understanding particular problems that companies are trying to solve with the technologies
+uh,
 
-you've just learned about.
+you might find that you're spending a few minutes on a question,
 
-I go through some example requirements and the best solutions for them.
+but be careful of the timer because the time is counting down
 
-Then I have the exam crams.
+and you wanna make sure you have enough time.
 
-Exam crams are a really fast-paced way of going through essentially a list of bullet points, key facts
+So
 
-that you just need to understand for the exam.
+uh don't get stuck on a question for too long,
 
-Now, that's good for last minute revision
+mark it for review and come back to it,
 
-after you've been through the section, you've understood the theory, you've practiced hands-on, and
+and you'll find that some of the other questions
 
-now you just want to go through very quickly and get to the core facts.
+you'll be able to answer much more quickly.
 
-At the end of each section, you'll also find a quiz.
+The cost is $150.
 
-The quiz will test your understanding of the knowledge you've just learned.
+If you've done another certification before,
 
-Quizzes are not meant to reflect the style of the exam questions. Those can be found in our practice
+make sure you remember to
 
-tests.
+have,
 
-Now, I do highly recommend that you use our full practice test course to make sure that you've got
+get your voucher,
 
-a broad understanding of the types of questions that come up, and really hone your skills on problem
+so you get a 50% discount,
 
-solving and coming up with the best solutions.
+assuming you passed the previous exam.
 
-Quick tip. If at any point in the course you find that I'm going too fast or too slow for you, you can
+Delivery method is testing center or online,
 
-always change the playback speed.
+so you can go into a testing center
 
-And there are also subtitles which you can enable or disable at any time
+or as long as you fulfill the basic requirements,
 
-if you want to read along as well. The last thing I want to mention is our cheat sheets.
+then you can do it online,
 
-You'll find links at the end of each section.
+so you need a quiet space,
 
-Now they are a list of the core knowledge that often comes up in the exams that are a good way of quickly
+a quiet room,
 
-getting to the knowledge you need without getting bogged down in all the hundreds of pages you'll find
+no one else around,
 
-on AWS.
+no noise,
 
-So hopefully they're a really useful resource for you too.
+clutter-free desk,
 
-So those are all the resources available to you. Now,
+and once you sign up,
 
-I do highly recommend that you follow through the course in order. I do build on concepts and we work
+they will email you and give you some details there,
 
-through labs and use things that we've created in previous sections.
+you can even do a technical check
 
-So it's really much better if you follow through the course in order and don't skip any lessons.
+and make sure your networking is OK,
 
-So that's it.
+your camera's working,
 
-As I mentioned, there's a lot of resources here and absolutely everything you need to pass the exam.
+and your microphone as well.
 
-So, I hope you enjoy the course and I'll see you in the next lesson.
+Scoring is scale scoring between 100 and 1000 points.
+
+They don't tell us any more than that,
+
+so it's a little bit of a black box,
+
+but basically you need to get 720 points out of 1000,
+
+so around 72%
+
+to get a pass mark.
+
+Question format is multiple choice and multiple response,
+
+so with multiple choice,
+
+that means you're gonna have 4 answers,
+
+one of them is correct,
+
+3 are not.
+
+With multiple response,
+
+it varies from 2 or more correct responses
+
+from 5 or more options.
+
+There's no hands-on component or anything like that,
+
+it's purely just multi-choice and multiple response questions.
+
+For the SAAC 03,
+
+it's broken into four domains,
+
+and these really sort of reflect the architectural considerations we have,
+
+which are security,
+
+resilience,
+
+performance,
+
+and cost.
+
+So the first one is design secure architectures.
+
+The first task statement
+
+within this domain is design secure access to AWS resources,
+
+so you need to know what security controls you can apply
+
+to make sure the resources are secured well.
+
+You also need to know how to design secure workloads and applications
+
+and determine appropriate data security controls.
+
+That's a responsibility of you as a customer
+
+in AWS.
+
+Domain 2 is design resilient architectures.
+
+You need to know how to design scalable and loosely coupled architectures
+
+and highly available and or fault-tolerant architectures as well.
+
+Domain 3 is design high-performing architectures.
+
+So you need to know how to ensure
+
+that storage solutions are scalable and performant,
+
+and the same for elastic compute solutions as well,
+
+so you need to understand the various different methods
+
+and controls that you have and deployment options you have available to you
+
+for ensuring that performance meets specified requirements.
+
+Task statement 3.3 is determine high-performing database solutions,
+
+so
+
+you might implement things like
+
+uh uh scalable storage
+
+or perhaps caching for the database.
+
+3.4 is determine high-performing and or scalable network architectures,
+
+and 3.5 is determine high-performing data ingestion
+
+and transformation solutions.
+
+For domain 4,
+
+now we get to cost-optimized architectures,
+
+you need to know how to design cost-optimized storage solutions,
+
+cost-optimized compute solutions,
+
+cost-optimized database solutions,
+
+and cost-optimized
+
+network architectures.
+
+That's it for this overview of the exam,
+
+and if you want some more details,
+
+including the ability to review the InScope services,
+
+which AWS services are or potentially might be
+
+included in your exam,
+
+you can go straight to the AWS exam guide,
+
+I'll add a link to
+
+this lesson.
+
+Of course,
+
+don't worry,
+
+we do cover all of those services in the course as well,
+
+we're constantly updating and making sure that we have everything
+
+covered that you need to know for your exam.
