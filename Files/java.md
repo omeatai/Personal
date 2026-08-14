@@ -1,305 +1,82 @@
 # JAVA by Ifeanyi Omeata
 
+## COURSES
+
+- [ ] [JAVA](https://www.udemy.com/courses/search/?src=ukw&q=java)
+- [ ] [JAVA TESTING](https://www.udemy.com/courses/search/?src=ukw&q=java+testing)
+- [ ] [JAVA CLOUD](https://www.udemy.com/courses/search/?src=ukw&q=java+aws)
+- [ ] [SPRING MVC](https://www.udemy.com/courses/search/?src=ukw&q=spring+mvc)
+
 ## JAVA COURSES
 
-<details>
-  <summary>Java Spring Framework, Spring Boot, Spring AI - Gen AI</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/spring-5-with-spring-boot-2/)
-
-</details>
-
-<details>
-  <summary>Java Programming for Complete Beginners</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-programming-tutorial-for-beginners)
-
-</details>
-
-<details>
-  <summary>Spring 6 & Spring Boot 3: AI, Security, Docker, Cloud</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/spring-framework-boot/)
-
-</details>
-
-<details>
-  <summary>Spring AI - GenAI with Telusko</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/spring-ai-genai)
-
-</details>
-
-<details>
-  <summary>Java for Beginners</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-for-beginners-telusko/)
-
-</details>
-
-<details>
-  <summary>Java for Programmers Crash Course</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-for-programmers-crash-course/)
-
-</details>
-
-<details>
-  <summary>Core Java Made Easy (Covers the latest Java 18)</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/corejavamadeeasy)
-
-</details>
-
-<details>
-  <summary>Serverless using AWS Lambda for Java Developers</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/serverless-programming-using-aws-lambda-for-java-developers/)
-
-</details>
-
-<details>
-  <summary>Spring Security Fundamentals (OAuth ,JWT,CSRF and more)</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/spring-security-fundamentals/)
-
-</details>
-
-<details>
-  <summary>Clean Code with Java: Learn Simple Design, Refactoring & TDD</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-clean-code-with-refactoring-and-tdd/)
-
-</details>
-
-<details>
-  <summary>Java Design Patterns</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-design-patterns/)
-
-</details>
-
-<details>
-  <summary>Java Design Patterns: The Complete Masterclass - 21 Patterns</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-design-patterns-the-complete-masterclass/)
-
-</details>
-
-<details>
-  <summary>Java Web Services</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-web-services/)
-
-</details>
-
-<details>
-  <summary>Java Web Services Part 2 - SOAP and REST Security</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/javawebservicespart2/)
-
-</details>
-
-<details>
-  <summary>JDBC Servlets and JSP - Java Web Development Fundamentals</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/jdbcservletsandjsp/)
-
-</details>
-
-<details>
-  <summary>Java Message Service - JMS Fundamentals</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-message-service-jms-fundamentals/)
-
-</details>
-
-<details>
-  <summary>Spring Data JPA Using Hibernate</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/spring-data-jpa-using-hibernate/)
-
-</details>
-
-<details>
-  <summary>Master Hibernate and JPA with Spring Boot in 100 Steps</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/hibernate-jpa-tutorial-for-beginners-in-100-steps/)
-
-</details>
-
-<details>
-  <summary>Generative AI for Java Developers with Azure OpenAI ChatGPT</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/generative-ai-for-java-developers-with-azure-openai/)
-
-</details>
-
-<details>
-  <summary>Generative AI in a Weekend: Learn ChatGPT and OpenAI</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/generative-ai-with-chatgpt-and-openai-api/)
-
-</details>
-
-<details>
-  <summary>Kafka fundamentals for Java Developers</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/kafka-fundamentals-for-java-developers/)
-
-</details>
-
-<details>
-  <summary>Java Logical Programs and Data Structures For Beginners</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-logical-programs/)
-
-</details>
-
-<details>
-  <summary>Learn Java Functional Programming with Lambdas & Streams</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/functional-programming-with-java/)
-
-</details>
-
-<details>
-  <summary>React in easy steps with Node and Java Backend</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/reactjs-in-easy-steps/)
-
-</details>
-
-<details>
-  <summary>REST APIs using Spring Data REST</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/microservices-rest-apis-using-spring-data-rest/)
-
-</details>
-
-<details>
-  <summary>Go Java Full Stack with Spring Boot and Angular</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/full-stack-application-development-with-spring-boot-and-angular/)
-
-</details>
-
-<details>
-  <summary>Java Programming Interview Guide : 200+ Questions & Answers</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/java-interview-questions-and-answers/)
-
-</details>
-
-<details>
-  <summary>Spring & Spring Boot Interview Guide</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/spring-interview-questions-and-answers/)
-
-</details>
-
-<details>
-  <summary>AWS Interview Guide - Get Ready for AWS Interview</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/aws-interview-questions-answers/)
-
-</details>
-
-<details>
-  <summary>Eclipse Tutorial For Beginners : Learn Java IDE in 10 Steps</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/eclipse-java-tutorial-for-beginners/)
-
-</details>
-
+- [ ] [Java Spring Framework, Spring Boot, Spring AI - Gen AI](https://www.udemy.com/course/spring-5-with-spring-boot-2/)
+- [ ] [Java Programming for Complete Beginners](https://www.udemy.com/course/java-programming-tutorial-for-beginners)
+- [ ] [Spring 6 & Spring Boot 3: AI, Security, Docker, Cloud](https://www.udemy.com/course/spring-framework-boot/)
+- [ ] [Spring AI - GenAI with Telusko](https://www.udemy.com/course/spring-ai-genai)
+- [ ] [Java for Beginners](https://www.udemy.com/course/java-for-beginners-telusko/)
+- [ ] [Java for Programmers Crash Course](https://www.udemy.com/course/java-for-programmers-crash-course/)
+- [ ] [Core Java Made Easy (Covers the latest Java 18)](https://www.udemy.com/course/corejavamadeeasy)
+- [ ] [Serverless using AWS Lambda for Java Developers](https://www.udemy.com/course/serverless-programming-using-aws-lambda-for-java-developers/)
+- [ ] [Spring Security Fundamentals (OAuth ,JWT,CSRF and more)](https://www.udemy.com/course/spring-security-fundamentals/)
+- [ ] [Clean Code with Java: Learn Simple Design, Refactoring & TDD](https://www.udemy.com/course/java-clean-code-with-refactoring-and-tdd/)
+- [ ] [Java Design Patterns](https://www.udemy.com/course/java-design-patterns/)
+- [ ] [Java Design Patterns: The Complete Masterclass - 21 Patterns](https://www.udemy.com/course/java-design-patterns-the-complete-masterclass/)
+- [ ] [Java Web Services](https://www.udemy.com/course/java-web-services/)
+- [ ] [Java Web Services Part 2 - SOAP and REST Security](https://www.udemy.com/course/javawebservicespart2/)
+- [ ] [JDBC Servlets and JSP - Java Web Development Fundamentals](https://www.udemy.com/course/jdbcservletsandjsp/)
+- [ ] [Java Message Service - JMS Fundamentals](https://www.udemy.com/course/java-message-service-jms-fundamentals/)
+- [ ] [Spring Data JPA Using Hibernate](https://www.udemy.com/course/spring-data-jpa-using-hibernate/)
+- [ ] [Master Hibernate and JPA with Spring Boot in 100 Steps](https://www.udemy.com/course/hibernate-jpa-tutorial-for-beginners-in-100-steps/)
+- [ ] [Generative AI for Java Developers with Azure OpenAI ChatGPT](https://www.udemy.com/course/generative-ai-for-java-developers-with-azure-openai/)
+- [ ] [Generative AI in a Weekend: Learn ChatGPT and OpenAI](https://www.udemy.com/course/generative-ai-with-chatgpt-and-openai-api/)
+- [ ] [Kafka fundamentals for Java Developers](https://www.udemy.com/course/kafka-fundamentals-for-java-developers/)
+- [ ] [Java Logical Programs and Data Structures For Beginners](https://www.udemy.com/course/java-logical-programs/)
+- [ ] [Learn Java Functional Programming with Lambdas & Streams](https://www.udemy.com/course/functional-programming-with-java/)
+- [ ] [React in easy steps with Node and Java Backend](https://www.udemy.com/course/reactjs-in-easy-steps/)
+- [ ] [REST APIs using Spring Data REST](https://www.udemy.com/course/microservices-rest-apis-using-spring-data-rest/)
+- [ ] [Go Java Full Stack with Spring Boot and Angular](https://www.udemy.com/course/full-stack-application-development-with-spring-boot-and-angular/)
+- [ ] [Java Programming Interview Guide : 200+ Questions & Answers](https://www.udemy.com/course/java-interview-questions-and-answers/)
+- [ ] [Spring & Spring Boot Interview Guide](https://www.udemy.com/course/spring-interview-questions-and-answers/)
+- [ ] [AWS Interview Guide - Get Ready for AWS Interview](https://www.udemy.com/course/aws-interview-questions-answers/)
+- [ ] [Eclipse Tutorial For Beginners : Learn Java IDE in 10 Steps](https://www.udemy.com/course/eclipse-java-tutorial-for-beginners/)
 
 ## JAVA TESTING & DESIGN
 
-<details>
-  <summary>JUnit and Mockito Crash Course</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/junitandmockitocrashcourse/)
-
-</details>
-
-<details>
-  <summary>Master Java Unit Testing with Spring Boot & Mockito</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/learn-unit-testing-with-spring-boot/)
-
-</details>
-
-<details>
-  <summary>Learn Java Unit Testing with Junit & Mockito in 30 Steps</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/mockito-tutorial-with-junit-examples/)
-
-</details>
-
-<details>
-  <summary>Selenium WebDriver & Java - Automation with Selenium</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/automation-testing-with-selenium-and-java-for-beginners/)
-
-</details>
-
+- [ ] [JUnit and Mockito Crash Course](https://www.udemy.com/course/junitandmockitocrashcourse/)
+- [ ] [Master Java Unit Testing with Spring Boot & Mockito](https://www.udemy.com/course/learn-unit-testing-with-spring-boot/)
+- [ ] [Learn Java Unit Testing with Junit & Mockito in 30 Steps](https://www.udemy.com/course/mockito-tutorial-with-junit-examples/)
+- [ ] [Selenium WebDriver & Java - Automation with Selenium](https://www.udemy.com/course/automation-testing-with-selenium-and-java-for-beginners/)
 
 ## JAVA CLOUD - AZURE & AWS
 
-<details>
-  <summary>Master AWS Lambda: Go Serverless with AWS</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/serverless-tutorial-aws-lambda-and-azure-functions/)
-
-</details>
-
-<details>
-  <summary>Docker for Beginners: DevOps for Java & Spring Boot</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/docker-course-with-java-and-spring-boot-for-beginners/)
-
-</details>
-
-<details>
-  <summary>Learn Cloud Computing with AWS in a Weekend</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/cloud-computing-aws/)
-
-</details>
-
-<details>
-  <summary>Learn AWS - Java Spring Boot to AWS Elastic Beanstalk</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/)
-
-</details>
-
-<details>
-  <summary>Learn Azure Web Apps - Java Spring Boot Apps to Azure</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/deploy-spring-boot-to-azure/)
-
-</details>
-
-<details>
-  <summary>Docker in AWS - Java Spring Boot to AWS Fargate & ECS</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/deploy-spring-microservices-to-aws-with-ecs-and-aws-fargate/)
-
-</details>
-
-<details>
-  <summary>Kubernetes for Beginners: Google Cloud, AWS & Azure</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/kubernetes-crash-course-for-java-developers/)
-
-</details>
-
-<details>
-  <summary>Learn DevOps: Docker, Kubernetes, Terraform and Azure DevOps</summary>
-  
-- [ ] [COURSE](https://www.udemy.com/course/devops-with-docker-kubernetes-and-azure-devops/)
-
-</details>
+- [ ] [Master AWS Lambda: Go Serverless with AWS](https://www.udemy.com/course/serverless-tutorial-aws-lambda-and-azure-functions/)
+- [ ] [Docker for Beginners: DevOps for Java & Spring Boot](https://www.udemy.com/course/docker-course-with-java-and-spring-boot-for-beginners/)
+- [ ] [Learn Cloud Computing with AWS in a Weekend](https://www.udemy.com/course/cloud-computing-aws/)
+- [ ] [Learn AWS - Java Spring Boot to AWS Elastic Beanstalk](https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/)
+- [ ] [Learn Azure Web Apps - Java Spring Boot Apps to Azure](https://www.udemy.com/course/deploy-spring-boot-to-azure/)
+- [ ] [Docker in AWS - Java Spring Boot to AWS Fargate & ECS](https://www.udemy.com/course/deploy-spring-microservices-to-aws-with-ecs-and-aws-fargate/)
+- [ ] [Kubernetes for Beginners: Google Cloud, AWS & Azure](https://www.udemy.com/course/kubernetes-crash-course-for-java-developers/)
+- [ ] [Learn DevOps: Docker, Kubernetes, Terraform and Azure DevOps](https://www.udemy.com/course/devops-with-docker-kubernetes-and-azure-devops/)
 
 
+## SPRING_MVC COURSES
+
+- [ ] [Spring Framework In Easy Steps](https://www.udemy.com/course/springframeworkineasysteps/)
+- [ ] [Spring Boot Fundamentals](https://www.udemy.com/course/springbootfundamentals/)
+- [ ] [Spring MVC For Beginners - Build Java Web App in 25 Steps](https://www.udemy.com/course/spring-mvc-tutorial-for-beginners-step-by-step/)
+- [ ] [Master Java Web Services and REST API with Spring Boot](https://www.udemy.com/course/spring-web-services-tutorial/)
+- [ ] [Spring Framework Master Class - Java Spring the Modern Way](https://www.udemy.com/course/spring-tutorial-for-beginners/)
+- [ ] [Master Spring Boot 3 & Spring Framework 6 with Java](https://www.udemy.com/course/spring-boot-and-spring-framework-tutorial-for-beginners/)
+- [ ] [Spring Cloud Fundamentals](https://www.udemy.com/course/spring-cloud-fundamentals/)
+- [ ] [REST APIs using Spring Data REST](https://www.udemy.com/course/microservices-rest-apis-using-spring-data-rest/)
+- [ ] [Project Development Using Spring Boot](https://www.udemy.com/course/end-to-end-java-project-development-using-spring-boot/)
+- [ ] [Master Microservices with Spring Boot and Spring Cloud](https://www.udemy.com/course/microservices-with-spring-boot-and-spring-cloud/)
+- [ ] [Master Microservices with SpringBoot, Docker, Kubernetes](https://www.udemy.com/course/master-microservices-with-spring-docker-kubernetes/)
+- [ ] [DevOps Tools and AWS for Java Microservice Developers](https://www.udemy.com/course/devops-tools-and-aws-for-java-microservice-developers/)
+- [ ] [Spring Boot 3, Spring 6 & Hibernate for Beginners](https://www.udemy.com/course/spring-hibernate-tutorial/)
+- [ ] [Java Spring Framework, Spring Boot, Spring AI - Gen AI](https://www.udemy.com/course/spring-5-with-spring-boot-2/)
+- [ ] [Spring Security Fundamentals (OAuth ,JWT, CSRF and more)](https://www.udemy.com/course/spring-security-fundamentals/)
+- [ ] [Spring AI for beginners : Build GenAI LLM Apps in Easy Steps](https://www.udemy.com/course/spring-ai-for-beginners-build-genai-llm-apps-in-easy-steps/)
+- [ ] [Amazon Q Developer for Java & Spring Boot Developers](https://www.udemy.com/course/amazon-q-developer-for-java-spring-boot-developers/)
+- [ ] [AI with GitHub Copilot for Java & Spring Boot Developers](https://www.udemy.com/course/mastering-github-copilot-for-java-spring-boot-developers/)
+- [ ] [Java Message Service - JMS Fundamentals](https://www.udemy.com/course/java-message-service-jms-fundamentals/)
