@@ -9,8 +9,8 @@
 
 ## GIT
 
-- [ ] [01-The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/)
-- [ ] [01-LAB](https://github.com/omeatai/Personal/blob/main/Files/devops/01.md)
+- [ ] [The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/)
+- [ ] [LAB-01](https://github.com/omeatai/Personal/blob/main/Files/devops/01.md)
 - [ ] [Git Made Easy: A Crash Course for Beginners](https://www.udemy.com/course/git-essentials-for-beginners/)
 - [ ] [Learn Git and GitHub in One Day (2026)](https://www.udemy.com/course/git-and-github-course/)
 
