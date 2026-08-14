@@ -1,43 +1,18 @@
 # DEVOPS by Ifeanyi Omeata
 
-## DEVOPS COURSES
+## COURSES
 
 - [ ] [GIT COURSES](https://www.udemy.com/courses/search/?src=ukw&q=Git)
+- [ ] [DEVOPS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=devops)
 
-<details>
-  <summary>DevOps Deployment Automation with Terraform, AWS and Docker</summary>
+## DEVOPS
 
-- [ ] [COURSE](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
+- [ ] [DevOps Deployment Automation with Terraform, AWS and Docker](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
+- [ ] [Learn to Deploy Containers on AWS in 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
+- [ ] [Docker & Kubernetes: The Practical Guide](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
+- [ ] [Build Scalable Applications using Docker and Kubernetes](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
+- [ ] [Docker & Kubernetes: The Practical Guide (2025 Edition)](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 
-</details>
-
-<details>
-  <summary>Learn to Deploy Containers on AWS in 2022</summary>
-
-- [ ] [COURSE](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
-
-</details>
-
-<details>
-  <summary>Docker & Kubernetes: The Practical Guide</summary>
-
-- [ ] [COURSE](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
-
-</details>
-
-<details>
-  <summary>Build Scalable Applications using Docker and Kubernetes</summary>
-
-- [ ] [COURSE](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
-
-</details>
-
-<details>
-  <summary>Docker & Kubernetes: The Practical Guide (2025 Edition)</summary>
-
-- [ ] [COURSE](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
-
-</details>
 
 
 
