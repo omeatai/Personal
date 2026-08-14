@@ -8,6 +8,7 @@
 - [ ] [DEVSECOPS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=devsecops)
 - [ ] [DOCKER](https://www.udemy.com/courses/search/?src=ukw&q=docker)
 - [ ] [KUBERNETES](https://www.udemy.com/courses/search/?q=kubernetes&src=sac&kw=kube)
+- [ ] [TERRAFORM](https://www.udemy.com/courses/search/?q=terraform&src=sac&kw=terra)
 
 ## GIT
 
