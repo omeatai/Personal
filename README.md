@@ -58,7 +58,6 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabil
 - [ ] [JANIS](https://github.com/omeatai/Personal/blob/main/Files/janis.md)
 - [ ] [HTML/CSS](https://github.com/omeatai/Personal/blob/main/Files/html_css.md)
 - [ ] [JAVASCRIPT](https://github.com/omeatai/Personal/blob/main/Files/javascript.md)
-- [ ] [TYPESCRIPT](https://github.com/omeatai/Personal/blob/main/Files/typescript.md)
 - [ ] [REACT](https://github.com/omeatai/Personal/blob/main/Files/react.md)
 - [ ] [NODE](https://github.com/omeatai/Personal/blob/main/Files/nodejs.md)
 - [ ] [REACT-NATIVE](https://github.com/omeatai/Personal/blob/main/Files/react_native.md)

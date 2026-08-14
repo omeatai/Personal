@@ -2,7 +2,7 @@
 
 ## COURSES
 
-- [ ] [CODING ADDICT - JANIS SMILGA](https://www.udemy.com/user/janis-smilga-3/)
+- [ ] [CODING ADDICT - JANIS SMILGA](https://www.udemy.com/courses/search/?src=ukw&q=JANIS+SMILGA)
 
 ## CODING ADDICT - JANIS SMILGA
 
