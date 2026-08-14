@@ -1,2 +1,0 @@
-# AI by Ifeanyi Omeata
-

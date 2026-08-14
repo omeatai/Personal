@@ -1,0 +1,42 @@
+---
+description: Convert HTML details/summary accordions into markdown checkboxes using the summary as the link label
+alwaysApply: false
+---
+
+# Accordions to Checkboxes
+
+When this rule is applied to a file, find every HTML accordion (`<details>` / `<summary>`) and replace it with a markdown checkbox. Edit the file in place. Leave headings, already-converted checkboxes, and non-accordion content unchanged.
+
+## Primary transform (course accordion)
+
+Replace each accordion whose body is a single generic link (`COURSE`, `LINK`, `VIDEO`, or similar placeholder text) with one checkbox. Use the **summary text** as the label and the **inner URL** as the href.
+
+**Before:**
+
+```markdown
+<details>
+  <summary>Python for beginners</summary>
+
+- [ ] [COURSE](https://www.udemy.com/course/python-core-and-advanced/)
+
+</details>
+```
+
+**After:**
+
+```markdown
+- [ ] [Python for beginners](https://www.udemy.com/course/python-core-and-advanced/)
+```
+
+## Rules
+
+- Output format: `- [ ] [summary text](url)`
+- Keep summary wording, spacing, and emoji exactly
+- Preserve checked state: `- [x]` stays `- [x]`
+- One blank line between converted items; keep existing `##` / `###` section headings
+- Strip `<details>`, `<summary>`, and `</details>` — do not leave leftover HTML
+- If the inner link already uses a real title (not a placeholder), still prefer the **summary** as the checkbox label when there is only one URL
+- If the accordion has **multiple** named checkbox links, unwrap the HTML and keep those checkboxes as-is; turn the summary into a `###` heading only when it is a section label (not generic text like "Click to expand!")
+- If the body is not a link (images, paragraphs, mixed prose), unwrap the accordion and keep the body; do not invent a checkbox
+- Do not wrap, nest, or re-accordion converted items
+- Repeat until no `<details>` remain in the file
