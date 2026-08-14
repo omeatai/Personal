@@ -54,8 +54,6 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabil
 
 ### 🏛️ COURSES
 
-- [ ] [COPILOT](https://github.com/omeatai/Personal/blob/main/Files/copilot.md)
-- [ ] [GIT](https://github.com/omeatai/Personal/blob/main/Files/git.md)
 - [ ] [DEVOPS](https://github.com/omeatai/Personal/blob/main/Files/devops.md)
 - [ ] [HTML/CSS](https://github.com/omeatai/Personal/blob/main/Files/html_css.md)
 - [ ] [JAVASCRIPT](https://github.com/omeatai/Personal/blob/main/Files/javascript.md)
@@ -232,16 +230,5 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabil
 - [ ] [DECOHERENCE.CO](https://app.decoherence.co/stablevideo)
 - [ ] [GETIMG.AI](https://getimg.ai/)
 - [ ] [SUNO AI](https://app.suno.ai/)
-
-</details>
-
-<details>
-  <summary>🥪Others</summary>
-
-- [ ] [x-react-ecommerce](https://github.com/omeatai/Personal/tree/main/Others/x-react-ecommerce)
-- [ ] [video-streamer-pro](https://github.com/omeatai/Personal/tree/main/Others/video-streamer-pro)
-- [ ] [django-api-recipe-app](https://github.com/omeatai/Personal/tree/main/Others/django-api-recipe-app)
-- [ ] [azure-commands](https://github.com/omeatai/Personal/tree/main/Others/azure-commands)
-- [ ] [avgee](https://github.com/omeatai/Personal/tree/main/Others/avgee)
 
 </details>
