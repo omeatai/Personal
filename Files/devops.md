@@ -3,7 +3,22 @@
 ## COURSES
 
 - [ ] [GIT COURSES](https://www.udemy.com/courses/search/?src=ukw&q=Git)
+- [ ] [GITHUB ACTIONS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=Github+actions)
 - [ ] [DEVOPS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=devops)
+
+## GIT
+
+- [ ] [The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/)
+- [ ] [LAB](https://www.udemy.com/course/git-and-github-bootcamp/)
+- [ ] [Git Made Easy: A Crash Course for Beginners](https://www.udemy.com/course/git-essentials-for-beginners/)
+- [ ] [Learn Git and GitHub in One Day (2026)](https://www.udemy.com/course/git-and-github-course/)
+
+## GITHUB ACTIONS
+
+- [ ] [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/)
+- [ ] [GitHub Actions: The Complete Guide from Beginner to Expert](https://www.udemy.com/course/mastering-github-actions-beginner-to-expert/)
+- [ ] [Hands-On CI/CD with GitHub Actions | Absolute Practical](https://www.udemy.com/course/hands-on-cicd-with-github-actions-absolute-practical/)
+- [ ] [Learn Github Actions for CI/CD DevOps Pipelines](https://www.udemy.com/course/learn-github-actions-ci-cd-devops-pipelines/)
 
 ## DEVOPS
 
