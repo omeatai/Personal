@@ -62,7 +62,6 @@ Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabil
 - [ ] [PYTHON](https://github.com/omeatai/Personal/blob/main/Files/python.md)
 - [ ] [AWS](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
 - [ ] [JAVA](https://github.com/omeatai/Personal/blob/main/Files/java.md)
-- [ ] [SPRING-MVC](https://github.com/omeatai/Personal/blob/main/Files/spring_mvc.md)
 - [ ] [SQL](https://github.com/omeatai/Personal/blob/main/Files/sql.md)
 - [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
 - [ ] [QA](https://github.com/omeatai/Personal/blob/main/Files/quality_assurance.md)
