@@ -6,6 +6,8 @@
 - [ ] [GITHUB ACTIONS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=Github+actions)
 - [ ] [DEVOPS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=devops)
 - [ ] [DEVSECOPS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=devsecops)
+- [ ] [DOCKER](https://www.udemy.com/courses/search/?src=ukw&q=docker)
+- [ ] [KUBERNETES](https://www.udemy.com/courses/search/?q=kubernetes&src=sac&kw=kube)
 
 ## GIT
 
