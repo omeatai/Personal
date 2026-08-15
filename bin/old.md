@@ -68,6 +68,9 @@ Status 200 indicates a page that exists and was successfully accessed. Use disco
 
 No code sections in this room; the activity uses terminal commands (Gobuster) and the web interface only.
 
+<details>
+  <summary>Questions and Answers</summary>
+
 ## Questions and Answers
 
 ### Question 1: Which process involves simulating a hacker's actions to find vulnerabilities in a system?
@@ -76,6 +79,8 @@ No code sections in this room; the activity uses terminal commands (Gobuster) an
 <summary>Answer</summary>
 
 - [x] Offensive Security.
+
+</details>
 
 </details>
 
@@ -182,6 +187,9 @@ There is no programming component in this room. Instead, you work with visual di
 ```py
 # No code snippets for the Intro to LAN room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -360,6 +368,8 @@ There is no programming component in this room. Instead, you work with visual di
 
 </details>
 
+</details>
+
 ## Summary
 
 The Intro to LAN room explains how local area networks are structured using different topologies, and how devices like switches and routers move traffic efficiently and reliably. You learn the trade-offs between star, bus, and ring designs, and see how topology flaws can cause failures. The room also introduces subnetting, ARP, and DHCP, showing how networks are divided, how devices discover each other’s hardware addresses, and how IP addresses are automatically assigned. Together, these concepts form the core of how LANs are built, managed, and kept functioning.
@@ -370,6 +380,11 @@ The Intro to LAN room explains how local area networks are structured using diff
 - [Intro to LAN - Youtube](https://www.youtube.com/watch?v=csYtPidvvFQ)
 
 </details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
 
 ### Question 2: What is the main goal of offensive security?
 
@@ -498,6 +513,8 @@ The Intro to LAN room explains how local area networks are structured using diff
 
 </details>
 
+</details>
+
 ## Summary
 
 Offensive Security is about thinking like an attacker to find and fix weaknesses. This room introduces the idea by having you use Gobuster to find a hidden bank-transfer page on FakeBank, then perform a simulated transfer. You use the terminal (Gobuster with `-u` and `-w`), interpret results (e.g. Status 200), and complete the task in the browser. The room also briefly covers learning habits and offensive roles such as Penetration Tester, Red Teamer, and Security Engineer.
@@ -570,6 +587,9 @@ There is no code implementation focus in this lesson. Instead, it emphasises pro
 ```py
 # No code samples for this defensive security introduction
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -749,6 +769,8 @@ There is no code implementation focus in this lesson. Instead, it emphasises pro
 
 </details>
 
+</details>
+
 ## Summary
 
 This lesson shifts from attacking to defending, showing how blue teams work to prevent, detect, and respond to threats. You learned about defensive tasks such as awareness, asset management, patching, firewalls and IPS, logging and monitoring, and specialised areas like SOC operations, threat intelligence, DFIR, and malware analysis. The scenario with a SIEM and alerts illustrates how analysts triage events and identify real threats. Together, these concepts form the foundation of a robust, threat‑informed defensive posture.
@@ -806,6 +828,9 @@ There is no specific code implementation in this exercise. The emphasis is on un
 ```py
 # No code samples for this defensive security exercise
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -924,6 +949,8 @@ There is no specific code implementation in this exercise. The emphasis is on un
 
 </details>
 
+</details>
+
 ## Summary
 
 In this TryHackMe room, you approach security from the defender’s perspective. You monitor a simulated banking environment, review alerts, identify a suspicious source IP and an attacker probing an admin URL, and then apply defensive actions such as IP blocking, rate limiting, and updating rules. The exercise reinforces the core idea that defensive security is about early detection, investigation, and containment of attacks to keep systems secure.
@@ -1037,6 +1064,9 @@ There is no code to write or analyse in this room. The emphasis is on understand
 ```py
 # No code snippets for the Careers in Cyber room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1158,6 +1188,8 @@ There is no code to write or analyse in this room. The emphasis is on understand
 
 </details>
 
+</details>
+
 ## Summary
 
 The Careers in Cyber room outlines why cyber security is a high-opportunity field and introduces key roles such as Security Analyst, Security Engineer, Incident Responder, Digital Forensics Analyst, Malware Analyst, Penetration Tester, and Red Teamer. For each role, you learn the core responsibilities and how they contribute to defending organisations or understanding threats. The room also points you to TryHackMe learning paths and career guides so you can start building the practical skills and knowledge required for your target role.
@@ -1258,6 +1290,9 @@ This room focuses on conceptual networking foundations and simple command-line u
 ```py
 # No programming examples in this networking fundamentals room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1399,6 +1434,8 @@ This room focuses on conceptual networking foundations and simple command-line u
 
 </details>
 
+</details>
+
 ## Summary
 
 This room explains networking in both everyday and technical terms, showing that networks are simply collections of connected things. You learn how the Internet is a giant network made of many private and public networks, and how devices identify themselves using IP and MAC addresses. The room introduces IPv4 vs IPv6, demonstrates why MAC spoofing can undermine weak access controls, and shows how `ping` and ICMP are used to test connectivity. These fundamentals provide a base for understanding more advanced networking and cyber security concepts.
@@ -1499,6 +1536,9 @@ There is no programming component in this room. The focus is on network design, 
 ```py
 # No code snippets for the Intro to LAN room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1698,6 +1738,8 @@ There is no programming component in this room. The focus is on network design, 
 
 </details>
 
+</details>
+
 ## Summary
 
 The Intro to LAN room explains how local area networks can be built using different topologies—star, bus, and ring—and what trade‑offs each design introduces in terms of cost, scalability, and reliability. It shows how switches and routers move traffic efficiently, how subnetting divides a larger network into smaller, manageable pieces, and how ARP and DHCP help devices discover each other and automatically obtain IP addresses. Through an interactive lab, you see how single points of failure and design weaknesses can break networks and practice reasoning about resilience. Together, these concepts give you a solid foundation for understanding and troubleshooting LANs.
@@ -1785,6 +1827,9 @@ There is no direct programming component in this room. Instead, you focus on how
 ```py
 # No code snippets for the OSI Model room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1977,6 +2022,8 @@ There is no direct programming component in this room. Instead, you focus on how
 
 </details>
 
+</details>
+
 ## Summary
 
 The OSI Model organises networking into seven logical layers, from the physical movement of bits up to the user‑facing applications. Each layer has a specific role: the Physical and Data Link layers handle signals and local addressing, the Network and Transport layers route and reliably deliver data using IP, TCP, and UDP, and the Session, Presentation, and Application layers manage sessions, translation, security, and user interaction. By understanding how encapsulation works and what happens at each layer, you can reason about where problems occur, why certain protocols are used, and how different systems interoperate. Hands‑on activities like the OSI dungeon reinforce layer order and responsibilities through practice.
@@ -2101,6 +2148,9 @@ There is no dedicated programming component; instead, you focus on how network p
 ```py
 # No direct code samples for the Packets & Frames room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -2288,6 +2338,8 @@ There is no dedicated programming component; instead, you focus on how network p
 
 </details>
 
+</details>
+
 ## Summary
 
 The Packets & Frames room deepens your understanding of how data is structured and transported on networks. You learn the distinction between packets and frames across OSI layers, see how IP and TCP/UDP headers support routing and reliability, and explore how the TCP/IP model maps to practical networking. By comparing TCP and UDP, examining key headers, and working with common ports and simple labs, you build intuition for how real‑world traffic is formed, transmitted, and interpreted. This knowledge is essential for analysing network behaviour and troubleshooting connectivity issues in later security work.
@@ -2360,6 +2412,9 @@ There is no programming track in this room; learning is conceptual plus interact
 ```py
 # No code snippets for the Extending Your Network room.
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -2545,6 +2600,8 @@ There is no programming track in this room; learning is conceptual plus interact
 
 </details>
 
+</details>
+
 ## Summary
 
 **Extending Your Network** ties together how internal services are exposed (**port forwarding** on the **router**), how **firewalls** enforce allow/deny policy at layers **3 and 4** using **stateful** or **stateless** inspection, and how **VPNs** (PPP, PPTP, **IPSec**) extend and protect connectivity. You also reinforce **routing** vs switching, **Layer 2 vs Layer 3** switches, and **VLAN** segmentation. Hands-on items include a **firewall** rules lab, a **packet/network simulator** with TCP handshake visibility, and flags that anchor the concepts in practice.
@@ -2636,6 +2693,9 @@ _acme-challenge.example.com TXT "token_value_here"
 _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com; adkim=s; aspf=s; pct=100"
 @ TXT "MS=ms12345678"
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -2822,6 +2882,8 @@ _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com
 
 </details>
 
+</details>
+
 ## Summary
 
 **DNS in Detail** explains how names map to addresses, how **FQDNs** are built from TLDs, registrable labels, and subdomains, and how **A**, **AAAA**, **CNAME**, **MX**, and **TXT** records differ. You follow the **recursive** resolution path from cache and ISP resolvers through **root** and **TLD** servers to **authoritative** data, and you see how **TTL** controls caching. The hands-on zone reinforces reading **CNAME**, **TXT**, **MX** priority, and **A** records in a realistic lookup workflow.
@@ -2951,6 +3013,9 @@ Content-Length: 98
 <body>Welcome To TryHackMe.com</body>
 </html>
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -3145,6 +3210,8 @@ Content-Length: 98
 
 </details>
 
+</details>
+
 ## Summary
 
 **HTTP in Detail** explains how browsers and servers exchange resources using **URLs**, **HTTP/1.1** request lines and **headers**, and structured **responses** with **status codes** from **1xx** through **5xx**. You compare **GET**, **POST**, **PUT**, and **DELETE**, interpret common codes like **200**, **201**, **401**, **404**, and **503**, and see how **cookies** compensate for HTTP’s **stateless** nature via **`Set-Cookie`** and **`Cookie`**. The mock certificate exercise and the **request emulator** turn the theory into short, flag-based practice.
@@ -3254,6 +3321,9 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
   Click Me!
 </button>
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -3406,6 +3476,8 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
 
 </details>
 
+</details>
+
 ## Summary
 
 **How Websites Work** ties together **browser ↔ server** requests, **front end** vs **back end**, and the **HTML / CSS / JavaScript** stack. You practise **HTML structure** and **attributes** (`class`, `id`, `src`), use **View Page Source** to audit pages, complete small **HTML/JS** labs for flags (**`HTMLHERO`**, **`DOGHTML`**, **`JSISFUN`**), find **exposed secrets** like **`testpasswd`**, and see how **HTML injection** (**`HTML_INJ3CTI0N`**) arises when **input is not sanitised**.
@@ -3492,6 +3564,9 @@ Rendered response to the client:
   </body>
 </html>
 ```
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -3635,6 +3710,8 @@ Rendered response to the client:
 <summary>Answer</summary>
 
 - [x] **Static** content is served **unchanged** from files; **dynamic** content is **generated or selected per request** on the **backend** before the response is sent.
+
+</details>
 
 </details>
 

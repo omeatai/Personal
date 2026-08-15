@@ -18,7 +18,7 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
    - Lab (step-by-step process as in `bin/lab_sample.md`; see Lab rules below)
    - Terminal Commands (fenced `bash` blocks with explanations)
    - Code (fenced code blocks with explanations)
-   - Questions and Answers (10–20 Q&A in nested `<details><summary>Answer</summary>`; see bullet rule below)
+   - Questions and Answers (10–20 Q&A **inside a child accordion**; each answer uses nested `<details><summary>Answer</summary>`; see Q&A child accordion and bullet rules below)
    - Summary
    - References
 5. **Generate** 10–20 revision Q&A from the content to aid study.
@@ -26,12 +26,32 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 
 ## Format Requirements
 
-- Use HTML `<details>` and `<summary>` for accordion-style sections as in `bin/old.md`.
-- **Accordion spacing:** For every `<details>` block, put **one blank line** after the closing `</summary>` tag and **one blank line** before `</details>`, so the inner content is visually separated from the tags. This applies to **topic** accordions (e.g. `<summary>Topic Title</summary>`) and to **Q&A** accordions (`<summary>Answer</summary>`).
+- Use HTML `<details>` and `<summary>` for accordion-style sections as in `bin/old.md` and `bin/sample.md`.
+- **Accordion spacing:** For every `<details>` block, put **one blank line** after the closing `</summary>` tag and **one blank line** before `</details>`, so the inner content is visually separated from the tags. This applies to **topic** accordions (e.g. `<summary>Topic Title</summary>`), the **Q&A child** accordion (`<summary>Questions and Answers</summary>`), and **answer** accordions (`<summary>Answer</summary>`).
 - Title for the accordion comes from the first `#` heading in `bin/raw.md`.
 - First reference in References must be the source page link (pasted at the top of `bin/raw.md`).
 - Every other link from the raw notes should also be added under References after that first link.
-- Each Q&A uses nested `<details><summary>Answer</summary>` with the answer inside, with blank lines after `</summary>` and before `</details>` as in **Accordion spacing** above.
+- **Q&A child accordion:** Do **not** put the 10–20 questions directly in the topic accordion. After **Code** (and before **Summary**), wrap **all** questions in one inner `<details>` whose summary is `Questions and Answers`. Opening the topic must show Introduction through Code, then this closed child, then Summary and References—so the page does not stretch with every Q&A. Match `bin/old.md` and `bin/sample.md`:
+
+```markdown
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Example question?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Example answer.
+
+</details>
+
+</details>
+```
+
+- Each Q&A uses nested `<details><summary>Answer</summary>` **inside that child accordion**, with blank lines after `</summary>` and before `</details>` as in **Accordion spacing** above.
 - **Answer formatting:** Inside `<details><summary>Answer</summary>`, use **checked task-list lines** (`- [x] …`) for every answer line—whether there is **one** fact or **many**. Do **not** use plain `- ` without `[x]` in Q&A answers. For multiple items, put **one `- [x]` line per item**, not one long comma-separated sentence.
 - **Lab:** Place `## Lab` immediately after Detailed Explanation. If the raw transcript includes a lab, hands-on project, or console/CLI walkthrough, generate a step-by-step process matching `bin/lab_sample.md` (use `###` under `## Lab` so tasks stay inside this section):
   - Start with `### **Overview**` using `- [ ]` lines that state the goal and what you will do.
@@ -43,7 +63,7 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 
 ## Content Guidelines
 
-- For **Questions and Answers**, always format the answer body with **`- [x]`** lines inside `<details>`, not bare paragraphs or plain `-` bullets.
+- For **Questions and Answers**, put every question inside the **child** accordion (`<summary>Questions and Answers</summary>`). Always format the answer body with **`- [x]`** lines inside `<details>`, not bare paragraphs or plain `-` bullets. Do not leave Q&A in the topic body outside that child.
 - One topic per accordion.
 - Preserve all explanations, lab steps, terminal commands, and code from the raw content.
 - Use checkboxes (`- [x]`) for breakdown items in Detailed Explanation.
@@ -57,5 +77,6 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 | ---------------------- | -------------------------------------- |
 | Input (raw paste)      | `bin/raw.md`                           |
 | Accordion template     | `bin/old.md`                           |
+| Compact Q&A-child sample | `bin/sample.md`                      |
 | Lab template           | `bin/lab_sample.md`                    |
 | Output (append target) | The file named when applying this rule |
