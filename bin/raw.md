@@ -1,259 +1,137 @@
-## The SAA-C03 Exam
+## Create your own free AWS account
 
-Hello everyone and welcome to this video.
+Welcome back in this video.
 
-In this video,
+I'm going to give you a brief overview of what Aws accounts are,
 
-I'm going to walk you through the details of the SAAC03 exam,
+how we create them and how we manage them.
 
-that's the code for the AWS Certified Solutions Architect Associate exam.
+And then in the next lesson,
 
-So let's get into the details.
+I'm gonna show you how to create your own free tour account on Aws.
 
-This exam is an associate level certification exam,
+So to get started, what do you need to open an Aws account?
 
-that means it's between the foundational
+First thing is you will need a credit card.
 
-and then the professional level.
+Secondly, you're going to need a unique email address and by unique, I mean,
 
-So it does require that you have some
+it cannot be associated with any other Aws account.
 
-experience and knowledge
+Now you can create multiple Aws accounts but you
 
-of AWS and experience in the industry.
+will need a different email address for them.
 
-Now,
+But the credit card can be the same.
 
-don't worry if you don't have that because we will take you from the beginning,
+I often use dynamic email aliases.
 
-it just makes it a bit easier if you do
+So if your email address was John at gmail.com,
 
-have some background and understanding of things like compute,
+you can do John plus Aws account one at gmail.com and then Aws account two
 
-storage,
+at gmail.com and so on. That's a dynamic email alias.
 
-networking and databases.
+It works with Gmail, it works with some other mail services as well.
 
-Now the length of this exam is 130 minutes,
+So once you've got these two things, you can create an Aws account.
 
-and there are 65 questions.
+Now, when you do so
 
-At the associate level,
+it's gonna create something called the account root user.
 
-the questions are scenario-based,
+Now the account root user logs in with the
 
-and some of those scenarios can be quite complex,
+email address that you created the account with.
 
-and the answers themselves can be quite tricky.
+So there's gonna be an email address and a password.
 
-Often I'll find that there's maybe two answers which look very,
+Now, the root user has full control over the account.
 
-very tempting to choose,
+You also cannot limit most of the permissions associated with the root user.
 
-and one of them is still clearly wrong,
+For that reason. It's an all powerful account
 
-but you've gotta try and work that out,
+and we don't want to use it.
 
-so it can become a little bit tricky sometimes,
+The best practice is to set a very strong password and then
 
-uh,
+not use the root user account unless you specifically need to.
 
-you might find that you're spending a few minutes on a question,
+What we do instead is we use the identity and access management service. I am
 
-but be careful of the timer because the time is counting down
+with I am we can create users, groups, roles and policies.
 
-and you wanna make sure you have enough time.
+So what we do is we create a user account,
 
-So
+we then create a group to put the user into and
 
-uh don't get stuck on a question for too long,
+then we associate a policy that has permissions to that group.
 
-mark it for review and come back to it,
+You'll see how to do this in another lesson
 
-and you'll find that some of the other questions
+that user can have uh a user name, like your own name. I use Neil, of course.
 
-you'll be able to answer much more quickly.
+And so that is the user that you are then going to use subsequently to log in to Aws.
 
-The cost is $150.
+So it's very important to remember that it is an I am best practice to create
 
-If you've done another certification before,
+individual users and to avoid using the
 
-make sure you remember to
+root account unless you specifically need to.
 
-have,
+And there are a few cases where the root account is required.
 
-get your voucher,
+So we have our aws account, we can log in through the management console.
 
-so you get a 50% discount,
+That's gonna be the easiest way to get started.
 
-assuming you passed the previous exam.
+And from there, what we need to do is authenticate.
 
-Delivery method is testing center or online,
+So when we log in with an I AM principle, like a user account,
 
-so you can go into a testing center
+we essentially have to authenticate.
 
-or as long as you fulfill the basic requirements,
+And of course, we have these different methods of accessing AWS and managing it.
 
-then you can do it online,
+We can use the console. We can also use the command line interface.
 
-so you need a quiet space,
+Or if we're developing code,
 
-a quiet room,
+we can leverage the API through a software development kit,
 
-no one else around,
+but we always need to authenticate prove who
 
-no noise,
+that we are. Who we say we are.
 
-clutter-free desk,
+For example, with a user name and password.
 
-and once you sign up,
+If you're logging into the management console,
 
-they will email you and give you some details there,
+then we get authorized to access certain resources.
 
-you can even do a technical check
+And this is defined through policies.
 
-and make sure your networking is OK,
+The policies define what resources we're allowed to
 
-your camera's working,
+access and what level of access we have.
 
-and your microphone as well.
+For example, we might have access to EC2 instances, R DS, databases,
 
-Scoring is scale scoring between 100 and 1000 points.
+S free and low balances.
 
-They don't tell us any more than that,
+Now, all identities and resources are created within the AWS account.
 
-so it's a little bit of a black box,
+There are ways that you can have multiple account
 
-but basically you need to get 720 points out of 1000,
+structures where you can centralize some of the management,
 
-so around 72%
+but each of the users will exist in one place and then
 
-to get a pass mark.
+you have to implement measures to access resources across a different accounts.
 
-Question format is multiple choice and multiple response,
+So that's it for this lesson.
 
-so with multiple choice,
+We're gonna go ahead in the next lesson and create our free to account
 
-that means you're gonna have 4 answers,
-
-one of them is correct,
-
-3 are not.
-
-With multiple response,
-
-it varies from 2 or more correct responses
-
-from 5 or more options.
-
-There's no hands-on component or anything like that,
-
-it's purely just multi-choice and multiple response questions.
-
-For the SAAC 03,
-
-it's broken into four domains,
-
-and these really sort of reflect the architectural considerations we have,
-
-which are security,
-
-resilience,
-
-performance,
-
-and cost.
-
-So the first one is design secure architectures.
-
-The first task statement
-
-within this domain is design secure access to AWS resources,
-
-so you need to know what security controls you can apply
-
-to make sure the resources are secured well.
-
-You also need to know how to design secure workloads and applications
-
-and determine appropriate data security controls.
-
-That's a responsibility of you as a customer
-
-in AWS.
-
-Domain 2 is design resilient architectures.
-
-You need to know how to design scalable and loosely coupled architectures
-
-and highly available and or fault-tolerant architectures as well.
-
-Domain 3 is design high-performing architectures.
-
-So you need to know how to ensure
-
-that storage solutions are scalable and performant,
-
-and the same for elastic compute solutions as well,
-
-so you need to understand the various different methods
-
-and controls that you have and deployment options you have available to you
-
-for ensuring that performance meets specified requirements.
-
-Task statement 3.3 is determine high-performing database solutions,
-
-so
-
-you might implement things like
-
-uh uh scalable storage
-
-or perhaps caching for the database.
-
-3.4 is determine high-performing and or scalable network architectures,
-
-and 3.5 is determine high-performing data ingestion
-
-and transformation solutions.
-
-For domain 4,
-
-now we get to cost-optimized architectures,
-
-you need to know how to design cost-optimized storage solutions,
-
-cost-optimized compute solutions,
-
-cost-optimized database solutions,
-
-and cost-optimized
-
-network architectures.
-
-That's it for this overview of the exam,
-
-and if you want some more details,
-
-including the ability to review the InScope services,
-
-which AWS services are or potentially might be
-
-included in your exam,
-
-you can go straight to the AWS exam guide,
-
-I'll add a link to
-
-this lesson.
-
-Of course,
-
-don't worry,
-
-we do cover all of those services in the course as well,
-
-we're constantly updating and making sure that we have everything
-
-covered that you need to know for your exam.
+and make sure you've got a unique email address and a credit card ready.
