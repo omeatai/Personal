@@ -3,13 +3,16 @@
 
 ## Introduction
 
-Short intro for the topic. Opening this section should show the notes, lab, commands, and code—not a long list of revision questions.
+Short intro for the topic. Opening this section should show Introduction, Detailed Explanation, four closed child accordions, then Summary and References.
 
 ## Detailed Explanation
 
 - [x] **Key idea**
   - Supporting detail
   - Another supporting detail
+
+<details>
+  <summary>Lab</summary>
 
 ## Lab
 
@@ -19,17 +22,29 @@ No labs in this topic; the content is conceptual only.
 
 - [ ] Review the notes; there is no console walkthrough here.
 
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 ```bash
 # No commands in this topic.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 ```text
 # No code snippets in this topic.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -41,17 +56,19 @@ No labs in this topic; the content is conceptual only.
 <details>
 <summary>Answer</summary>
 
-- [x] A compact sample of the notes accordion, with Q&A hidden in a **child** accordion.
+- [x] A compact sample of the notes accordion, with Lab, Terminal Commands, Code, and Q&A hidden in **child** accordions.
 
 </details>
 
-### Question 2: Why are the questions inside a child accordion?
+### Question 2: Which headings stay visible when you open a topic?
 
 <details>
 <summary>Answer</summary>
 
-- [x] So opening the **topic** does not stretch the page with 10–20 Q&A items.
-- [x] Open **Questions and Answers** only when you want to revise.
+- [x] **Introduction**
+- [x] **Detailed Explanation**
+- [x] **Summary**
+- [x] **References**
 
 </details>
 
@@ -59,7 +76,7 @@ No labs in this topic; the content is conceptual only.
 
 ## Summary
 
-The topic accordion holds the notes. Revision Q&A live in the inner **Questions and Answers** accordion.
+The topic accordion holds the notes. Lab, commands, code, and revision Q&A live in inner child accordions.
 
 ## References
 

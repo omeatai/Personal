@@ -36,6 +36,9 @@ In this TryHackMe lesson, you are guided through hacking your first website in a
   - Break topics down, focus on an area you like, and practice regularly (e.g. daily on TryHackMe)
   - Example offensive roles: Penetration Tester (find exploitable vulnerabilities), Red Teamer (simulate adversary), Security Engineer (design and maintain security controls)
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 Gobuster is used to discover hidden directories and pages on a target website. `-u` sets the target URL and `-w` specifies the wordlist; `dir` runs directory/file brute-force mode.
@@ -64,9 +67,16 @@ Gobuster v2.0.1              OJ Reeves (@TheColonial)
 
 Status 200 indicates a page that exists and was successfully accessed. Use discovered paths (e.g. `/bank-transfer`) in the browser to continue the exercise.
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No code sections in this room; the activity uses terminal commands (Gobuster) and the web interface only.
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -172,6 +182,9 @@ The **Intro to LAN** TryHackMe room builds on basic networking concepts by focus
     - **DHCP ACK** – the server acknowledges and confirms the lease.
   - This automation simplifies IP management, especially in large LANs.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is mostly conceptual and uses interactive labs through the browser. There are no specific command-line tools emphasised beyond what you have learned previously; the focus is on understanding topologies, devices, and protocols like ARP and DHCP.
@@ -180,6 +193,11 @@ This room is mostly conceptual and uses interactive labs through the browser. Th
 # No primary terminal commands highlighted in this LAN topology and subnetting room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no programming component in this room. Instead, you work with visual diagrams, interactive labs, and conceptual models of how LAN devices and protocols operate.
@@ -187,6 +205,8 @@ There is no programming component in this room. Instead, you work with visual di
 ```py
 # No code snippets for the Intro to LAN room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -572,6 +592,9 @@ Defensive security spans tasks such as user awareness training, asset management
   - Examples: multiple failed logins (possibly user error or brute force), connections from unknown IPs
   - Analysts investigate, correlate events, and identify indicators such as flags (e.g. `THM{THREAT-BLOCKED}`) during exercises
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is largely conceptual and interface‑driven (SIEM simulation, dashboards) rather than command‑line heavy; there are no specific terminal commands required beyond interacting with the training environment.
@@ -580,6 +603,11 @@ This room is largely conceptual and interface‑driven (SIEM simulation, dashboa
 # No primary terminal command focus in this defensive room
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no code implementation focus in this lesson. Instead, it emphasises processes (SOC, DFIR, IR phases) and analysis of alerts, logs, and malware behaviour.
@@ -587,6 +615,8 @@ There is no code implementation focus in this lesson. Instead, it emphasises pro
 ```py
 # No code samples for this defensive security introduction
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -812,6 +842,9 @@ This TryHackMe room introduces defensive security from the defender’s point of
   - Updating security rules and adding defensive controls help prevent similar attacks in the future.
   - Stopping the attacker while you investigate and fix vulnerabilities is known as containment.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is primarily focused on using a graphical monitoring dashboard and simulated controls rather than running terminal commands. You interact with the interface to view alerts, identify the malicious IP, and apply blocking and rate-limiting actions.
@@ -821,6 +854,11 @@ This room is primarily focused on using a graphical monitoring dashboard and sim
 # actions are taken via the monitoring dashboard UI.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no specific code implementation in this exercise. The emphasis is on understanding alerts, recognising suspicious behaviour, and applying defensive actions (blocking IPs, rate limiting, updating rules) through the simulated environment.
@@ -828,6 +866,8 @@ There is no specific code implementation in this exercise. The emphasis is on un
 ```py
 # No code samples for this defensive security exercise
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -1049,6 +1089,9 @@ The **Careers in Cyber** TryHackMe room gives an overview of key cyber security 
     - Red Teamer
   - Career Guides: Red Teaming roles, salaries, and opportunities.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is informational and career-focused; it does not centre on specific terminal commands. Instead, it introduces you to roles and suggests learning paths and resources that will later involve hands-on labs and command-line work.
@@ -1057,6 +1100,11 @@ This room is informational and career-focused; it does not centre on specific te
 # No primary terminal commands for this careers overview room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no code to write or analyse in this room. The emphasis is on understanding job roles, not on implementing technical solutions directly within the exercise.
@@ -1064,6 +1112,8 @@ There is no code to write or analyse in this room. The emphasis is on understand
 ```py
 # No code snippets for the Careers in Cyber room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -1269,6 +1319,9 @@ The **What is Networking?** TryHackMe room introduces networking from first prin
   - Example: pinging `192.168.1.254` and seeing multiple ICMP packets sent and received with an average time.
   - In the lab, you ping `8.8.8.8` to reveal a flag.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 The main command-line tool introduced is `ping`, which tests connectivity and latency between devices using ICMP.
@@ -1283,6 +1336,11 @@ ping 8.8.8.8
 
 On most systems, `ping` will send multiple packets and show statistics including packets sent/received and average round-trip time.
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 This room focuses on conceptual networking foundations and simple command-line usage rather than programming. There are no specific code samples to implement; instead you practice using built-in tools like `ping` and visualise IP and MAC addressing.
@@ -1290,6 +1348,8 @@ This room focuses on conceptual networking foundations and simple command-line u
 ```py
 # No programming examples in this networking fundamentals room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -1521,6 +1581,9 @@ The **Intro to LAN** TryHackMe room explores how Local Area Networks (LANs) are 
   - You explore how single points of failure and design weaknesses cause outages.
   - Completing the lab and breaking the topologies as instructed yields the flag `THM{TOPOLOGY_FLAWS}`.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is primarily conceptual and uses interactive browser‑based labs rather than CLI tools. There is no specific terminal command focus beyond your existing networking knowledge.
@@ -1529,6 +1592,11 @@ This room is primarily conceptual and uses interactive browser‑based labs rath
 # No primary terminal commands for the Intro to LAN room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no programming component in this room. The focus is on network design, behaviour, and protocols rather than writing or analysing code.
@@ -1536,6 +1604,8 @@ There is no programming component in this room. The focus is on network design, 
 ```py
 # No code snippets for the Intro to LAN room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -1812,6 +1882,9 @@ The **OSI Model** (Open Systems Interconnection Model) is a fundamental networki
   - A gamified exercise where you climb layers of the OSI model in the correct order.
   - Escaping the dungeon rewards you with the flag `THM{OSI_DUNGEON_ESCAPED}` and reinforces layer ordering.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room focuses on conceptual understanding of OSI layers and protocol behaviour rather than specific command‑line tools. Any practical elements are delivered through interactive labs (such as the OSI dungeon game) rather than CLI usage.
@@ -1820,6 +1893,11 @@ This room focuses on conceptual understanding of OSI layers and protocol behavio
 # No primary terminal commands for the OSI Model room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no direct programming component in this room. Instead, you focus on how network protocols and layers interact, which underpins how applications and services are implemented in code elsewhere.
@@ -1827,6 +1905,8 @@ There is no direct programming component in this room. Instead, you focus on how
 ```py
 # No code snippets for the OSI Model room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -2132,6 +2212,9 @@ The **Packets & Frames** TryHackMe room explains how data is broken into smaller
   - Another challenge involves connecting to IP `8.8.8.8` on port `1234`, which returns the flag `THM{YOU_CONNECTED_TO_A_PORT}`.
   - Additional tasks reinforce concepts of TCP vs UDP, and using ports in practice.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is primarily conceptual and uses static or browser‑based labs rather than heavy command‑line interaction. You may, however, conceptually work with tools like `netcat` or similar to connect to specific IP:port combinations in practical challenges.
@@ -2141,6 +2224,11 @@ This room is primarily conceptual and uses static or browser‑based labs rather
 nc 8.8.8.8 1234
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no dedicated programming component; instead, you focus on how network protocols structure and move data. Any code‑like interactions are typically done through network tools or lab interfaces.
@@ -2148,6 +2236,8 @@ There is no dedicated programming component; instead, you focus on how network p
 ```py
 # No direct code samples for the Packets & Frames room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -2396,6 +2486,9 @@ The **Extending Your Network** TryHackMe room builds on core LAN ideas by coveri
   - Use **Chrome** or **Firefox**. Send a **TCP** packet from **computer1** to **computer3** to reveal the flag `THM{YOU'VE_GOT_DATA}`.
   - The room also asks how many **HANDSHAKE** entries appear in the **Network Log** (answer in the Q&A section).
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is taught mainly through diagrams, firewall and VPN concepts, and **in-browser** labs (firewall static site, packet simulator). Router and firewall **configuration** is usually done through a **web administration** interface on the device rather than a fixed CLI script in the lesson.
@@ -2405,6 +2498,11 @@ This room is taught mainly through diagrams, firewall and VPN concepts, and **in
 # Port forwarding and firewall rules are typically applied in the router/gateway admin UI.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no programming track in this room; learning is conceptual plus interactive web labs.
@@ -2412,6 +2510,8 @@ There is no programming track in this room; learning is conceptual plus interact
 ```py
 # No code snippets for the Extending Your Network room.
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -2656,6 +2756,9 @@ There is no programming track in this room; learning is conceptual plus interact
 - [x] **TTL (Time To Live)**
   - A number in **seconds** telling resolvers how long they may **cache** that record before refreshing.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 The room’s embedded tool shows equivalent CLI commands. On Linux/macOS you can query records with **`dig`** or **`nslookup`**. Replace the domain with your target.
@@ -2683,6 +2786,11 @@ nslookup -type=A www.example.com
 nslookup -type=MX example.com
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 TXT records are plain strings. Examples from the room’s style of content:
@@ -2693,6 +2801,8 @@ _acme-challenge.example.com TXT "token_value_here"
 _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com; adkim=s; aspf=s; pct=100"
 @ TXT "MS=ms12345678"
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -2968,6 +3078,9 @@ _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com
   - Cookies are set via **`Set-Cookie`** responses and returned on subsequent requests in the **`Cookie`** header (often **not** the cleartext password—a **token**).
   - Use **Developer Tools → Network** to inspect requests, responses, and **Cookies** per resource.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 You can reproduce many room ideas with **`curl`**: methods, headers, and viewing status lines. Replace hosts and paths as needed.
@@ -2988,6 +3101,11 @@ curl -i -X PUT -d "username=admin" https://example.com/user/2
 # DELETE
 curl -i -X DELETE https://example.com/user/1
 ```
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
@@ -3013,6 +3131,8 @@ Content-Length: 98
 <body>Welcome To TryHackMe.com</body>
 </html>
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -3276,6 +3396,9 @@ Content-Length: 98
   - **Sanitise** (filter) input before use; **never trust user input**; related deeper topics include **SQL injection** on the server side.
   - Room task: inject HTML so a **malicious link** to `http://hacker.com` appears → flag **`HTML_INJ3CTI0N`**.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 The room emphasises **browser** tools and **view source**. On the command line you can still **fetch** HTML to inspect (similar to viewing source offline):
@@ -3289,6 +3412,11 @@ Use **find** / **grep** locally on saved HTML if you mirror a page for review (o
 ```bash
 grep -n "password\|passwd\|secret" saved.html
 ```
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
@@ -3321,6 +3449,8 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
   Click Me!
 </button>
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>
@@ -3531,6 +3661,9 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
 - [x] **Quiz task**
   - Drag-and-drop tiles into the **correct order** of how a **request to a website** works; correct slots turn **green**, wrong **red**; avoid **refreshing** (resets tiles). Flag: **`THM{YOU_GOT_THE_ORDER}`**.
 
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 Default **document roots** are configuration choices—on Linux servers you often see:
@@ -3546,6 +3679,11 @@ dir C:\inetpub\wwwroot
 ```
 
 Use your distro’s package docs to locate **`nginx`** / **`apache2`** site configs for **virtual hosts** (e.g. under `/etc/nginx/sites-enabled/` or `/etc/apache2/sites-available/`).
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
@@ -3564,6 +3702,8 @@ Rendered response to the client:
   </body>
 </html>
 ```
+
+</details>
 
 <details>
   <summary>Questions and Answers</summary>

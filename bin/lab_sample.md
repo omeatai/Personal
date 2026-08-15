@@ -2,25 +2,24 @@
 
 > **Playlist:** [AWS Cloud LABS](https://www.youtube.com/playlist?list=PL6rbQ5F5xbtUDapCqcNV0srF8Uu-8RtSt)
 
-
 ## Introduction
-
 
 **KMS** creates and stores **encryption keys** and performs **encrypt/decrypt** operations without exposing key material. This lab creates a **symmetric CMK**, separates **administrators** vs **users** of the key in IAM, and uses the **CLI** on EC2 with access keys to **encrypt** a file to ciphertext and **decrypt** it back—illustrating **envelope-style** thinking (data keys are internal; you pass plaintext/ciphertext to KMS APIs).
 
-
 ## Technologies and tools used
 
+| Piece                             | Role                                                    |
+| --------------------------------- | ------------------------------------------------------- |
+| **KMS key**                       | Logical key with ARN, alias, rotation settings.         |
+| **Symmetric encryption**          | Same key encrypts and decrypts (most S3/EBS use cases). |
+| **`aws kms encrypt` / `decrypt`** | CLI calls; ciphertext is base64-wrapped in CLI output.  |
 
-| Piece | Role |
-|-------|------|
-| **KMS key** | Logical key with ARN, alias, rotation settings. |
-| **Symmetric encryption** | Same key encrypts and decrypts (most S3/EBS use cases). |
-| **`aws kms encrypt` / `decrypt`** | CLI calls; ciphertext is base64-wrapped in CLI output. |
+<details>
+  <summary>Lab</summary>
 
+## Lab
 
 ## Step-by-step lab walkthrough
-
 
 <a href="https://youtu.be/M1-2kR5WXrs"><img src="https://github.com/user-attachments/assets/0955529d-1e92-4714-8494-fbd282e31bd3" width="720" height="400" /></a>
 
@@ -179,8 +178,8 @@
 
 ✅ Successfully encrypted, decrypted, and re-encrypted data using AWS KMS! 🎉
 
+</details>
 
 ## Conclusion
-
 
 You created **KMSGroup**, users **KeyManager** / **KeyEncryption**, a key **Admin**, and on EC2 ran **encrypt → decrypt → re-encrypt** on a sample file. **Security:** do not use weak shared passwords in production; use **IAM Identity Center** and **roles**. **CLI note:** `fileb://` reads binary; on **Windows** use **WSL** or **PowerShell** careful encoding if you replicate byte pipelines. Prefer **IAM roles on EC2** instead of long-term access keys when possible.
