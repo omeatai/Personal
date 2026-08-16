@@ -1,141 +1,255 @@
-## Setup Individual User Account
+## Setup Multi-Factor Authentication
 
-Welcome to another lesson.
+In this lesson,
 
-In this lesson, we're going to create an individual user account that we can then use to log in to
+you'll learn about the IAM
 
-AWS.
+authentication methods and multi-factor authentication.
 
-So there are two different types of user.
+So firstly,
 
-One is the root user.
+let's look at the different authentication methods available within AWS.
 
-The root user is the user that was created using an email address that we specified when we created
+IAM
 
-our AWS account.
+So here we have a user account called John. John wants to access
 
-The root user account has full and unrestricted access to the account and it's very difficult, in fact,
+AWS
 
-to remove any of those permissions or privileges.
+and so he logs into the console
 
-That means it's a very powerful user and it's a best practice not to use that user account.
+using a user name and a password optionally, he can supply
 
-So now that we've created our account, the best practice is you create a really strong password, you
+a MFA token, a multi
 
-hide that password away and you don't use your root user account again.
+factor authentication token.
 
-So what we should do is create an Iam user.
+We'll talk about that a bit more in a moment
 
-This will have a friendly name like John plus the account ID or Alias.
+and this provides access to the management console.
 
-That's what you then use to sign in to the console and we can apply permissions using an Iam permissions
+So user name and password is used to access the management console.
 
-policy.
+John is authenticated
 
-So let's head back to the AWS management console and create our Iam user.
+and can then be authorized to perform operations through the console.
 
-I'm back in the console here and I'm still logged in with my root user account and I'm on the Iam management
+On the other hand, John might want to use the CLI or the API
 
-console here so you can just search for Iam.
+for this we can use what are called access keys.
 
-If you just log back in again, go to Iam and you should see a page that's very similar to this one.
+These are composed of an access key ID and a secret access key.
 
-So what we need to do here is choose users and then add users and I'm going to give mine a name.
+And you can think of this also as like a
 
-Simply going to be Neil.
+user name and password and it's called long term credentials.
 
-I do want to provide user access to the management console, so I need to select this option here.
+You create this and it's stored in your account and you can use it long term,
 
-I recommend using a user in a federated identity through identity sensor.
+you actually have to download a copy of this to be able to use it
 
-We're not going to use that option.
+yourself and then you're able to use it for as long as this access key is
 
-We're going to create an Iam user for password.
+active within your account. So this is for the
 
-I'm going to specify a custom password and I don't want to be forced to change it at next login.
+AWS API, whether you're using the CLI
 
-I can now click on next I can choose to add permissions to my user.
+or directly through programmatic input via the API itself.
 
-I'm not going to do that yet.
+So access keys are used for programmatic access,
 
-I'm just going to click on next and then create user.
+user names and passwords are used for console access.
 
-So I now have a user account created.
+So let's look at multi factor authentication.
 
-I can sign in to the console using this sign in URL, or I can specify this account alias when specifying
+So let's look at multi factor authentication with multi factor authentication.
 
-an Iam user, I will need to also use the username.
+We have the something you know element.
 
-I'll show you how to do this in a moment.
+That's what we're all used to, which is a password.
 
-So let's return to the users list.
+So the password is hopefully something complex,
 
-Now.
+but you don't want to write it down or share it with people. It's a secret.
 
-One of the most important things to understand is that our user account does not have any permissions
+It's something that only you should know. So that's your password.
 
-by default.
+We then add a second element and that is
 
-If I select my user, we can see that there are no permissions policies assigned, and if I go to groups,
+something that you have something that you have can be
 
-there are no groups assigned.
+a smartphone with an application on it that generates a token or it can
 
-Now, one of the best ways to assign the permissions to our user account is through a group.
+be a physical token like the picture on the right hand side here.
 
-So what I can do is go to user groups, create group.
+So something
 
-I'm going to call this one simply admins.
+which has cryptography in.
 
-It's going to be a very powerful group.
+So it uses encryption and various algorithms to prove that
 
-It's going to have full administrator access.
+you actually have that physical device in your possession.
 
-So if I just search for administrator, we should find this administrator access managed policy here.
+So now even if someone finds out your password, they need to have this device as well.
 
-This one is managed by AWS.
+A third way is called biometrics. That's something you are.
 
-It's pre-created for us.
+So things like retina scans and fingerprints, we don't use those in
 
-If I click on the little plus, we can actually see the policy the way that these policies are defined
+AWS, but we do have the something you have factor here. The second factor can be
 
-is using Json code, that's JavaScript object notation and you'll learn how to read these.
+a authentication code or a token
 
-This is a very simple one.
+that might be from a physical device.
 
-Effectively, this policy says that the effect should be to allow all actions.
+So we have our user, our user has a password, then we add that second element.
 
-So the star is what's known as a wildcard.
+So we could use a virtual MFA device.
 
-Allow all actions on all resources.
+For example, Google authenticator on your smart phone or a hardware device.
 
-So basically allow everything so very powerful.
+The hardware device can use security keys and what
 
-Let's create the group and now we can go into the group and we can add users.
+are called time based one time password tokens.
 
-So I'm going to click on Add users, select my user account, and then add users and that's it.
+It's a best practice that we enable multi factual authetication for the
 
-I now have the permissions that I need.
+root account and also for our own individual IAM user accounts as well.
 
-This is a full administrative user now with full access permissions to AWS.
+So then of course,
 
-So let's log in as our Iam user in the top right hand corner, I'm going to sign out of my account,
+we are less prone to any issues from losing
 
-then I'm going to choose log back in again and now I'm going to specify Iam user instead of root user.
+our passwords or someone guessing what our password is.
 
-I need to specify the account id.
+We now have to have that physical device present
 
-Mine is DCT Dash Labs, dash AWS, then click on next and enter the username and the password.
+whenever we want to log in through the console.
 
-Then I should be able to log in and that's it.
+Now, we can also use multi factor authentication
 
-I am now logged in to my account as my individual user.
+with the CLI
 
-In the top right hand corner.
+and the API as well and that will cover in a bit more detail later on in the course.
 
-We can see that I'm now logged in as Neil at DCT Dash Labs, Dash AWS.
+Hi guys.
 
-So that's it.
+In this lesson we're gonna set
 
-That's how simple it is to create a user and this user will have full administrative permissions.
+up Multi-Factor Authentication
 
-And this is the user account I'm going to use for all of the lessons in the remainder of the course.
+for our IAM user account.
+
+I'm logged into the AWS Management console
+
+and I'm logged in with my individual IAM user.
+
+As you can see, there are a couple
+
+of security recommendations.
+
+One is to add MFA for the root user,
+
+and the other is to add MFA for ourselves,
+
+so our individual IAM user account.
+
+I'm gonna show you how to set it up for yourself.
+
+You can also log in and set it up
+
+for the root user account as well.
+
+You could choose the 'Add MFA" button,
+
+but I'm gonna go to the user account
+
+and show you how to do it here.
+
+I'm gonna choose my username,
+
+go to "Security credentials",
+
+and then I want to assign an MFA device.
+
+The MFA device can use an authenticator app,
+
+for example, Google Authenticator or Authy.
+
+I'm gonna choose one called Authy
+
+and I'm gonna give it a name "AuthyPhone".
+
+There's also an option to use security keys
+
+and hardware tokens.
+
+So let's click on "Next".
+
+Now, there are three steps.
+
+The first one is to install the application
+
+such as Google Authenticator
+
+on your mobile device or computer.
+
+Then you need to open your Authenticator app
+
+and show the QR code on this page,
+
+and then use the app to scan the code.
+
+Alternatively, you can type in a secret key.
+
+I'm gonna show the QR code
+
+and then I'm gonna use my app
+
+to scan the QR code.
+
+Once you've done that,
+
+you should enter your MFA code
+
+that's on your application.
+
+So mine is 414018.
+
+Then I need to wait for that code to expire
+
+and get the next code
+
+and enter that one on the second code box here.
+
+My next code is 561486.
+
+Okay, now I can add MFA.
+
+So that's done.
+
+I'm now able to use MFA to log into my account.
+
+So let's log out
+
+and I'm gonna try to log back in again.
+
+So let's sign into the console,
+
+enter my account id, my username and my password,
+
+and then of course it's gonna ask me
+
+for that second factor of authentication,
+
+the MFA code.
+
+My current code is 820902.
+
+So let's submit that code
+
+and now I'm logged back in again.
+
+So now we have two-factor authentication
+
+for our account.
