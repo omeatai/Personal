@@ -1,0 +1,156 @@
+---
+description: Read one named tutorial section from the browser, run its examples in code_sandbox, snap code and results, and append an accordion to Files/html/tutorial.md
+alwaysApply: false
+---
+
+# HTML Tutorial Section Rule
+
+When the user says **"apply to \<Section\>"** (or similar, e.g. `@html_tutorial.mdc apply to HTML Introduction`), document **one** tutorial section from the **open browser tab** (or the site they name, default [W3Schools HTML](https://www.w3schools.com/html/default.asp)).
+
+Do **not** crawl the whole course. One apply = one accordion.
+
+## Workflow Steps
+
+1. **Read** `Personal/bin/format.md` once — it is the only format sample. Match its section order, accordion nesting, checkbox style, Lab tasks, spacing, and child-accordion layout.
+2. **Open the section in the browser**
+   - Use the existing Cursor browser tab if it is already on the tutorial site.
+   - If not, navigate to the site, then click the named item in the left/sidebar (or in-page heading). Example: **HTML Introduction**.
+   - If the name does not match, list nearby nav items and stop — do not guess a different section.
+   - Scroll the **full** section. Read headings, notes, examples, exercises, and warnings. Capture the **section URL**.
+3. **Rebuild examples in the sandbox**
+   - Create `Personal/Files/html/code_sandbox/<slug>/` (`HTML Introduction` → `html-introduction`).
+   - Write runnable files (`index.html`, extra `.css` / `.js` only if the section uses them). Recreate the site’s examples faithfully; do not invent extra features.
+   - If the section has **no** runnable example, skip the run/snap steps and say so in Lab and Code.
+4. **Run the example**
+   - Serve the sandbox over **http** (Cursor browser blocks `file://`). From `code_sandbox`, use a local static server, then open `http://127.0.0.1:<port>/<slug>/`.
+   - Confirm the page matches the tutorial example (heading, paragraph, output).
+   - Stop the server when snaps are done.
+5. **Snap source and result**
+   - **Result:** screenshot the **running** sandbox page in the Cursor browser. That is the code result.
+   - **Code:** snap the sandbox source. Prefer **CodeSnap** (`CodeSnap 📸` / `codesnap.start`) on the editor selection. If the agent cannot fire CodeSnap, screenshot the example as shown (tutorial editor or sandbox source) and still save a PNG.
+   - Save PNGs under `Personal/Files/html/code_sandbox/snaps/`:
+     - `<slug>-code.png` (and `-01-code.png` if several examples)
+     - `<slug>-result.png`
+   - Embed **relative** images from `tutorial.md`: `./code_sandbox/snaps/<file>.png`
+6. **Append** one formatted accordion to `Personal/Files/html/tutorial.md`. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
+7. If `tutorial.md` has no `#` title yet, start the file with `# HTML Tutorial` then the accordion.
+
+## Format Requirements
+
+Same rules as `Personal/.cursor/rules/notes_doc.mdc` and `Personal/bin/format.md`:
+
+- Topic accordion `<summary>` = the section title the user named (e.g. `HTML Introduction`).
+- **Accordion spacing:** one blank line after every `</summary>` and one blank line before every `</details>`.
+- **Introduction**, **Detailed Explanation**, **Summary**, **References** = plain `##` headings (not child accordions).
+- **Lab**, **Terminal Commands**, **Code**, **Questions and Answers** = closed child accordions, in that order, after Detailed Explanation.
+- Detailed Explanation uses `- [x]` items. Lab uses `- [ ]` tasks (`### **Overview**`, `### **Task N: Title**`).
+- Q&A: 5–10 questions; each answer is nested `<details><summary>Answer</summary>` with **only** `- [x]` lines.
+- First References link = the **section URL** from the browser. Then other links from that page.
+- Put **result snaps** in Detailed Explanation next to the idea they prove, and again in **Code** with the fenced source. Put **code snaps** in the Code child.
+
+````markdown
+<details>
+  <summary>HTML Introduction</summary>
+
+## Introduction
+
+Short what/why for this section only.
+
+## Detailed Explanation
+
+- [x] **Point from the page**
+  - Sub-point.
+
+<img alt="html-introduction result" src="./code_sandbox/snaps/html-introduction-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+### **Overview**
+
+- [ ] Recreate the section example in `code_sandbox/html-introduction/` and open it in the browser.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8765 --bind 127.0.0.1
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-introduction/index.html`
+
+<img alt="html-introduction source" src="./code_sandbox/snaps/html-introduction-code.png" />
+
+```html
+<!-- tested sandbox source -->
+```
+
+<img alt="html-introduction result" src="./code_sandbox/snaps/html-introduction-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Example?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Example answer.
+
+</details>
+
+</details>
+
+## Summary
+
+...
+
+## References
+
+- [HTML Introduction (W3Schools)](https://www.w3schools.com/html/html_intro.asp)
+
+</details>
+````
+
+## Content Guidelines
+
+- Document **this section only**. Do not mix in the next/previous chapter.
+- Preserve the site’s explanations, examples, and exercises. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
+- Lab = how to run **this** sandbox folder and what “done” looks like (the snapped result).
+- Terminal Commands = only commands you actually used (server, open URL). If none, keep the child with a one-line placeholder.
+- Code = the **tested** sandbox files, not untested copy-paste from the site.
+- If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
+
+## File Paths
+
+| Purpose               | Path                                                  |
+| --------------------- | ----------------------------------------------------- |
+| Format sample         | `Personal/bin/format.md`                              |
+| Output (append)       | `Personal/Files/html/tutorial.md`                     |
+| Sandbox (per section) | `Personal/Files/html/code_sandbox/<slug>/`            |
+| Snaps                 | `Personal/Files/html/code_sandbox/snaps/`             |
+| This rule             | `Personal/Files/html/.cursor/rules/html_tutorial.mdc` |
+
+## Invocation
+
+```text
+@Personal/Files/html/.cursor/rules/html_tutorial.mdc apply to HTML Introduction
+```
