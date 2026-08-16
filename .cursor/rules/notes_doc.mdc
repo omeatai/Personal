@@ -10,28 +10,27 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 ## Workflow Steps
 
 1. **Read** `bin/raw.md` for the raw content.
-2. **Read** `bin/old.md` for the accordion template (match its section order, checkbox style, and spacing).
-3. **Read** `bin/lab_sample.md` for the Lab section template (Overview, Task headings, `- [ ]` steps).
-4. **Analyze** the raw content and map it to the accordion structure:
+2. **Read** `bin/format.md` once — it is the only format sample. Match its section order, accordion nesting, checkbox style, Lab tasks, spacing, and child-accordion layout. Do not look for other template files.
+3. **Analyze** the raw content and map it to the accordion structure:
    - Introduction (plain heading — **not** a child accordion)
    - Detailed Explanation (plain heading — **not** a child accordion; use `- [x]` checkboxes and sub-items)
-   - Lab (**child accordion**; step-by-step process as in `bin/lab_sample.md`; see Lab rules below)
+   - Lab (**child accordion**; step-by-step process as in `bin/format.md`; see Lab rules below)
    - Terminal Commands (**child accordion**; fenced `bash` blocks with explanations)
    - Code (**child accordion**; fenced code blocks with explanations)
    - Questions and Answers (**child accordion**; 10–20 Q&A; each answer uses nested `<details><summary>Answer</summary>`; see child-accordion and bullet rules below)
    - Summary (plain heading — **not** a child accordion)
    - References (plain heading — **not** a child accordion)
-5. **Generate** 10–20 revision Q&A from the content to aid study.
-6. **Append** (do not overwrite) the formatted accordion to the **file the user named** when applying this rule. If they did not name a target file, ask which file to append to before writing.
+4. **Generate** 10–20 revision Q&A from the content to aid study.
+5. **Append** (do not overwrite) the formatted accordion to the **file the user named** when applying this rule. If they did not name a target file, ask which file to append to before writing.
 
 ## Format Requirements
 
-- Use HTML `<details>` and `<summary>` for accordion-style sections as in `bin/old.md` and `bin/sample.md`.
+- Use HTML `<details>` and `<summary>` for accordion-style sections as in `bin/format.md`.
 - **Accordion spacing:** For every `<details>` block, put **one blank line** after the closing `</summary>` tag and **one blank line** before `</details>`, so the inner content is visually separated from the tags. This applies to **topic** accordions (e.g. `<summary>Topic Title</summary>`), **child** accordions (`Lab`, `Terminal Commands`, `Code`, `Questions and Answers`), and **answer** accordions (`<summary>Answer</summary>`).
 - Title for the accordion comes from the first `#` heading in `bin/raw.md`.
 - First reference in References must be the source page link (pasted at the top of `bin/raw.md`).
 - Every other link from the raw notes should also be added under References after that first link.
-- **Child accordions:** Opening a topic must **not** stretch the page with Lab, Terminal Commands, Code, or Q&A. Those four stay in their own closed inner `<details>` blocks. Leave **Introduction**, **Detailed Explanation**, **Summary**, and **References** as normal `##` headings (never wrap those four in child accordions). After Detailed Explanation, emit the four children in this order, then Summary and References. Match `bin/old.md`, `bin/sample.md`, and `bin/lab_sample.md`:
+- **Child accordions:** Opening a topic must **not** stretch the page with Lab, Terminal Commands, Code, or Q&A. Those four stay in their own closed inner `<details>` blocks. Leave **Introduction**, **Detailed Explanation**, **Summary**, and **References** as normal `##` headings (never wrap those four in child accordions). After Detailed Explanation, emit the four children in this order, then Summary and References. Match `bin/format.md`:
 
 ````markdown
 <details>
@@ -86,11 +85,11 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 
 - Each Q&A uses nested `<details><summary>Answer</summary>` **inside the Questions and Answers child accordion**, with blank lines after `</summary>` and before `</details>` as in **Accordion spacing** above.
 - **Answer formatting:** Inside `<details><summary>Answer</summary>`, use **checked task-list lines** (`- [x] …`) for every answer line—whether there is **one** fact or **many**. Do **not** use plain `- ` without `[x]` in Q&A answers. For multiple items, put **one `- [x]` line per item**, not one long comma-separated sentence.
-- **Lab:** Place the **Lab** child accordion immediately after Detailed Explanation (do not leave `## Lab` in the topic body outside that child). If the raw transcript includes a lab, hands-on project, or console/CLI walkthrough, generate a step-by-step process matching `bin/lab_sample.md` (use `###` under `## Lab` so tasks stay inside this section):
+- **Lab:** Place the **Lab** child accordion immediately after Detailed Explanation (do not leave `## Lab` in the topic body outside that child). If the raw transcript includes a lab, hands-on project, or console/CLI walkthrough, generate a step-by-step process matching `bin/format.md` (use `###` under `## Lab` so tasks stay inside this section):
   - Start with `### **Overview**` using `- [ ]` lines that state the goal and what you will do.
   - Then numbered tasks as `### **Task N: Title**` with `- [ ]` steps (unchecked, so the reader can tick them while doing the lab).
   - Nest sub-steps under a task; put console clicks, names, regions, and exact values on their own `- [ ]` lines.
-  - Include fenced `bash` / `json` / other code in the task where it is used; wrap long policy/config JSON in `<details>` as in `bin/lab_sample.md`.
+  - Include fenced `bash` / `json` / other code in the task where it is used; wrap long policy/config JSON in `<details>` as in `bin/format.md`.
   - End the last task with a short success line when the lab has a clear completion point.
   - If there is **no** lab or project in `bin/raw.md`, still include `## Lab` with a brief placeholder, same pattern as Terminal Commands / Code when empty, e.g. `No labs in this topic; the content is conceptual only.`
 
@@ -101,7 +100,7 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 - One topic per accordion.
 - Preserve all explanations, lab steps, terminal commands, and code from the raw content.
 - Use checkboxes (`- [x]`) for breakdown items in Detailed Explanation.
-- Use unchecked checkboxes (`- [ ]`) for Lab walkthrough steps (as in `bin/lab_sample.md`); do not use `- [x]` in Lab.
+- Use unchecked checkboxes (`- [ ]`) for Lab walkthrough steps (as in `bin/format.md`); do not use `- [x]` in Lab.
 - Include sub-items where appropriate.
 - If Terminal Commands, Code, or Lab has no content, still emit the **child accordion** with the heading and a brief placeholder (do not omit the Lab child).
 
@@ -110,7 +109,5 @@ When the user says **"apply the notes_doc rule"** (or similar, e.g. "apply notes
 | Purpose                        | Path                                   |
 | ------------------------------ | -------------------------------------- |
 | Input (raw paste)              | `bin/raw.md`                           |
-| Accordion template             | `bin/old.md`                           |
-| Compact child-accordion sample | `bin/sample.md`                        |
-| Lab template                   | `bin/lab_sample.md`                    |
+| Format sample (read this only) | `bin/format.md`                        |
 | Output (append target)         | The file named when applying this rule |
