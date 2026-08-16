@@ -1,183 +1,141 @@
-## Creating IAM Users and Groups
+## Setup Individual User Account
 
-Welcome back in this lesson.
+Welcome to another lesson.
 
-We're going to head to the I AM service and we're gonna create a user
+In this lesson, we're going to create an individual user account that we can then use to log in to
 
-account that we can log in with and assign that user account to a group.
+AWS.
 
-And then I'm gonna show you how you can actually log in as that user.
+So there are two different types of user.
 
-I'm back in the AWS management console. I'm gonna click on I AM
+One is the root user.
 
-and I'm in the identity and access management service.
+The root user is the user that was created using an email address that we specified when we created
 
-Now, what we're going to do is we're going to create a user
+our AWS account.
 
-at the moment. There are no user accounts in this account.
+The root user account has full and unrestricted access to the account and it's very difficult, in fact,
 
-First, I'm gonna create a user group,
+to remove any of those permissions or privileges.
 
-the user group is the way that we're
+That means it's a very powerful user and it's a best practice not to use that user account.
 
-gonna assign the permissions to the user account.
+So now that we've created our account, the best practice is you create a really strong password, you
 
-So we assign the permissions to the group and then we add
+hide that password away and you don't use your root user account again.
 
-the user to the group and the user will inherit those permissions.
+So what we should do is create an Iam user.
 
-So what I'm gonna do here is create a group.
+This will have a friendly name like John plus the account ID or Alias.
 
-I'm simply gonna call this one admins because the account
+That's what you then use to sign in to the console and we can apply permissions using an Iam permissions
 
-I'm going to create is gonna be an administrative account.
+policy.
 
-Then I need to attach a permissions policy here.
+So let's head back to the AWS management console and create our Iam user.
 
-I'm gonna choose administrator access. This is a very powerful policy.
+I'm back in the console here and I'm still logged in with my root user account and I'm on the Iam management
 
-The policies are written in javascript object notation
+console here so you can just search for Iam.
 
-if I expand the policy here, we can see the
+If you just log back in again, go to Iam and you should see a page that's very similar to this one.
 
-JSON code. So here this statement is fairly straightforward.
+So what we need to do here is choose users and then add users and I'm going to give mine a name.
 
-The effect is to allow
+Simply going to be Neil.
 
-the action is a star. A star is a wildcard, it means anything.
+I do want to provide user access to the management console, so I need to select this option here.
 
-So any action, all actions
+I recommend using a user in a federated identity through identity sensor.
 
-and then the resources are star as well.
+We're not going to use that option.
 
-So another wildcard so essentially allow all actions
+We're going to create an Iam user for password.
 
-on all resources so you can do anything.
+I'm going to specify a custom password and I don't want to be forced to change it at next login.
 
-So that's what I want for this particular user account.
+I can now click on next I can choose to add permissions to my user.
 
-So I selected administrator access and then in the bottom right hand corner,
+I'm not going to do that yet.
 
-I'm going to create that group.
+I'm just going to click on next and then create user.
 
-So now I have my admin
+So I now have a user account created.
 
-group. Next, I'm gonna click on users and create user.
+I can sign in to the console using this sign in URL, or I can specify this account alias when specifying
 
-I'm gonna provide a name. I'm simply gonna call my Neil.
+an Iam user, I will need to also use the username.
 
-Next,
+I'll show you how to do this in a moment.
 
-I'm gonna select this option to provide the
+So let's return to the users list.
 
-user with access to the management console.
+Now.
 
-That means I'll be able to log in to the
+One of the most important things to understand is that our user account does not have any permissions
 
-management console rather than just using programmatic access methods.
+by default.
 
-Now, here we're given a choice, we can create an I AM user.
+If I select my user, we can see that there are no permissions policies assigned, and if I go to groups,
 
-But what Aws are recommending is that we use the I Am Identity Center.
+there are no groups assigned.
 
-Now,
+Now, one of the best ways to assign the permissions to our user account is through a group.
 
-I am identity center provides some amazing features like single sign
+So what I can do is go to user groups, create group.
 
-on it provides access to business applications and multiple accounts.
+I'm going to call this one simply admins.
 
-It's a very,
+It's going to be a very powerful group.
 
-very useful service and Aws are now trying to encourage people to start using it.
+It's going to have full administrator access.
 
-We will get into that later in the course. However, we do need to learn.
+So if I just search for administrator, we should find this administrator access managed policy here.
 
-I Am as well because it's core to the Aws exams
+This one is managed by AWS.
 
-and it's what I'm gonna use for a lot of.
+It's pre-created for us.
 
-So I'm actually using I Am for most of my accounts
+If I click on the little plus, we can actually see the policy the way that these policies are defined
 
-because I don't need single sign on in many cases.
+is using Json code, that's JavaScript object notation and you'll learn how to read these.
 
-So here we're going to create an I AM user.
+This is a very simple one.
 
-I'm gonna set a custom password and I'm gonna deselect
+Effectively, this policy says that the effect should be to allow all actions.
 
-this requirement to change the password at the next login.
+So the star is what's known as a wildcard.
 
-And then I'm gonna click on next.
+Allow all actions on all resources.
 
-We now have the option to add the user to a group,
+So basically allow everything so very powerful.
 
-which is exactly what we're going to do by selecting admins.
+Let's create the group and now we can go into the group and we can add users.
 
-We could also copy permissions from existing users or attach policies directly.
+So I'm going to click on Add users, select my user account, and then add users and that's it.
 
-But when we want to create multiple users who have the same permissions,
+I now have the permissions that I need.
 
-it's better to create a group rather than attaching policies
+This is a full administrative user now with full access permissions to AWS.
 
-directly to every individual user account from a management perspective.
+So let's log in as our Iam user in the top right hand corner, I'm going to sign out of my account,
 
-It's much easier. Now, I've selected my group, I'll click on next
+then I'm going to choose log back in again and now I'm going to specify Iam user instead of root user.
 
-and then create user. Now we're presented with the console sign in details.
+I need to specify the account id.
 
-We already know these from earlier on. This is what we're going to use to log in.
+Mine is DCT Dash Labs, dash AWS, then click on next and enter the username and the password.
 
-I'm gonna copy this so I can go straight across and
+Then I should be able to log in and that's it.
 
-show you how to log in as this user account.
+I am now logged in to my account as my individual user.
 
-We know that the user name is Neil and the
+In the top right hand corner.
 
-console password is available here for us to copy.
+We can see that I'm now logged in as Neil at DCT Dash Labs, Dash AWS.
 
-Uh At this point in time, we won't be able to see it again.
+So that's it.
 
-We would have to change it in the future if we forget what it is.
+That's how simple it is to create a user and this user will have full administrative permissions.
 
-So I'm done with creating the user account.
-
-I can return back to the user list here and I'm going
-
-to open a private window so I can log in separately.
-
-So here I'm using a private window.
-
-I'm gonna paste in the sign in link for I am.
-
-This takes me to the login page. I'm gonna enter my user name
-
-and then my password and then simply sign in.
-
-So now I'm signed in
-
-and I'm signed in with my individual user account for some reason.
-
-It's, it's put me into Ohio. I was in us East before.
-
-So let's just change back to us east.
-
-Most of the labs that we do in the course are gonna be run using North Virginia.
-
-It's not always essential,
-
-but often it is required depending on the code that we
-
-provide for you or the specific instructions that we show you.
-
-So you can now see that I'm logged in as Neil at D CD lab training. Ok.
-
-So I'm logged in as my individual user account
-
-and this account has full administrative permissions so we can use it for
-
-all of the lab exercises that we're going to perform in this course.
-
-And from now on,
-
-you should be logging in with your individual I
-
-am user account and not with your root account.
+And this is the user account I'm going to use for all of the lessons in the remainder of the course.
