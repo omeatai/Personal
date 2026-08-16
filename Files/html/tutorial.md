@@ -3284,8 +3284,10 @@ Background color (`background.html`):
 <h1 style="background-color:DodgerBlue;">Hello World</h1>
 
 <p style="background-color:Tomato;">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+  nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+  enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+  nisl ut aliquip ex ea commodo consequat.
 </p>
 ```
 
@@ -3298,9 +3300,15 @@ Text color (`text.html`):
 ```html
 <h3 style="color:Tomato;">Hello World</h3>
 
-<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p style="color:DodgerBlue;">
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+  nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</p>
 
-<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p style="color:MediumSeaGreen;">
+  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+  lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
 ```
 
 <img alt="html-colors text result" src="./code_sandbox/snaps/html-colors-02-result.png" />
@@ -3332,7 +3340,9 @@ Color values (`values.html`):
 
 <p>Same as color name "Tomato", but 50% transparent:</p>
 <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">
+  hsla(9, 100%, 64%, 0.5)
+</h1>
 ```
 
 <img alt="html-colors values result" src="./code_sandbox/snaps/html-colors-04-result.png" />
@@ -3512,10 +3522,10 @@ Specify colors with **names** (140 standard names) or with **RGB / HEX / HSL / R
   - A style on a parent applies to children. If `body` text is blue, headings and paragraphs inherit it unless you set something else.
 - [x] **HTML style tags**
 
-| Tag      | Description                                              |
-| -------- | -------------------------------------------------------- |
-| `<style>` | Style information for an HTML document                  |
-| `<link>`  | A link between a document and an external resource      |
+| Tag       | Description                                        |
+| --------- | -------------------------------------------------- |
+| `<style>` | Style information for an HTML document             |
+| `<link>`  | A link between a document and an external resource |
 
 <details>
   <summary>Lab</summary>
@@ -3588,15 +3598,21 @@ Internal (`internal.html`):
 
 ```html
 <head>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
+  <style>
+    body {
+      background-color: powderblue;
+    }
+    h1 {
+      color: blue;
+    }
+    p {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
 </body>
 ```
 
@@ -3608,7 +3624,7 @@ External HTML (`external.html`):
 
 ```html
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 ```
 
@@ -3819,5 +3835,1572 @@ Add CSS inline (`style`), internally (`<style>` in `<head>`), or externally (`<l
 - [MDN: Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started)
 - [MDN: `<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)
 - [MDN: `<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
+
+</details>
+<details>
+  <summary>HTML Links</summary>
+
+## Introduction
+
+HTML links are **hyperlinks**. Click one to jump to another document. The mouse pointer becomes a **hand** over a link. A link can be **text**, an **image**, or another element. The `<a>` tag defines a hyperlink; **`href`** is the destination.
+
+## Detailed Explanation
+
+- [x] **Syntax**
+  - `<a href="url">link text</a>`
+  - The **link text** is what the reader sees; clicking it goes to the URL.
+
+<img alt="html-links syntax" src="./code_sandbox/snaps/html-links-code.png" />
+
+- [x] **Default look**
+  - Unvisited: underlined **blue**.
+  - Visited: underlined **purple**.
+  - Active: underlined **red**.
+  - You can restyle links with CSS.
+- [x] **A basic link**
+  - Example: Visit W3Schools.com.
+  - Sandbox: `code_sandbox/html-links/index.html`.
+
+<img alt="html-links basic result" src="./code_sandbox/snaps/html-links-result.png" />
+
+- [x] **The `target` attribute**
+  - Where to open the document.
+  - `_self` — same window/tab (default).
+  - `_blank` — new window or tab.
+  - `_parent` — parent frame.
+  - `_top` — full window.
+  - Sandbox: `code_sandbox/html-links/target.html`.
+
+<img alt="html-links target result" src="./code_sandbox/snaps/html-links-01-result.png" />
+
+- [x] **Absolute vs relative URLs**
+  - **Absolute** — full address (`https://www.w3.org/`, Google).
+  - **Relative** — a page on the same site (no `https://www` part).
+  - The chapter uses `html_images.asp` and `/css/default.asp`. The sandbox uses local `images.html` and `css.html` so the relative links run offline.
+  - Sandbox: `code_sandbox/html-links/urls.html`.
+
+<img alt="html-links urls result" src="./code_sandbox/snaps/html-links-02-result.png" />
+
+- [x] **Image as a link**
+  - Put `<img>` inside `<a>`.
+  - The page uses `smiley.gif` and `href="default.asp"`. The sandbox uses `smiley.png` and `href="index.html"` (the gif URL was blocked; the image is a local 42×42 smiley).
+  - Sandbox: `code_sandbox/html-links/image.html`.
+
+<img alt="html-links image result" src="./code_sandbox/snaps/html-links-03-result.png" />
+
+- [x] **Email link**
+  - `href="mailto:someone@example.com"` opens the user’s mail program.
+  - Sandbox: `code_sandbox/html-links/email.html`.
+
+<img alt="html-links email result" src="./code_sandbox/snaps/html-links-04-result.png" />
+
+- [x] **Button as a link**
+  - A `<button>` needs **JavaScript** for the click (`onclick` + `document.location`).
+  - The page uses `default.asp`; the sandbox uses `index.html`.
+  - Sandbox: `code_sandbox/html-links/button.html`.
+
+<img alt="html-links button result" src="./code_sandbox/snaps/html-links-05-result.png" />
+
+- [x] **Link titles**
+  - The `title` attribute is extra info, usually a **tooltip** on hover.
+  - Sandbox: `code_sandbox/html-links/title.html`.
+
+<img alt="html-links title result" src="./code_sandbox/snaps/html-links-06-result.png" />
+
+- [x] **More path forms**
+  - Full URL, site path (`/html/default.asp`), or same-folder file (`default.asp`).
+  - File paths are covered in **HTML File Paths**. Link **colors** and **bookmarks** are the next sidebar pages.
+
+| Tag   | Description         |
+| ----- | ------------------- |
+| `<a>` | Defines a hyperlink |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the link examples: a W3Schools link, `_blank`, absolute vs relative URLs, an image link, mailto, a button, and a titled tooltip link.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-links` file.
+- [ ] Success: blue underlined Visit W3Schools.com; Visit W3Schools! opens a new tab; W3C/Google plus local Images/CSS links; yellow smiley is a link; Send email; HTML Tutorial button; Visit our HTML Tutorial (tooltip on hover).
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-links/`
+- [ ] `http://127.0.0.1:8766/html-links/target.html`
+- [ ] `http://127.0.0.1:8766/html-links/urls.html`
+- [ ] `http://127.0.0.1:8766/html-links/image.html`
+- [ ] `http://127.0.0.1:8766/html-links/email.html`
+- [ ] `http://127.0.0.1:8766/html-links/button.html`
+- [ ] `http://127.0.0.1:8766/html-links/title.html`
+
+<img alt="html-links result" src="./code_sandbox/snaps/html-links-result.png" />
+
+The link examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-links/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Syntax:
+
+<img alt="html-links syntax source" src="./code_sandbox/snaps/html-links-code.png" />
+
+```html
+<a href="url">link text</a>
+```
+
+Basic link (`index.html`):
+
+<img alt="html-links basic source" src="./code_sandbox/snaps/html-links-01-code.png" />
+
+```html
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+```
+
+<img alt="html-links basic result" src="./code_sandbox/snaps/html-links-result.png" />
+
+Target (`target.html`):
+
+<img alt="html-links target source" src="./code_sandbox/snaps/html-links-02-code.png" />
+
+```html
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+```
+
+<img alt="html-links target result" src="./code_sandbox/snaps/html-links-01-result.png" />
+
+Absolute vs relative (`urls.html`):
+
+<img alt="html-links urls source" src="./code_sandbox/snaps/html-links-03-code.png" />
+
+```html
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="images.html">HTML Images</a></p>
+<p><a href="css.html">CSS Tutorial</a></p>
+```
+
+<img alt="html-links urls result" src="./code_sandbox/snaps/html-links-02-result.png" />
+
+Image as a link (`image.html`):
+
+<img alt="html-links image source" src="./code_sandbox/snaps/html-links-04-code.png" />
+
+```html
+<a href="index.html">
+  <img src="smiley.png" alt="HTML tutorial" style="width:42px;height:42px;" />
+</a>
+```
+
+<img alt="html-links image result" src="./code_sandbox/snaps/html-links-03-result.png" />
+
+Email (`email.html`):
+
+<img alt="html-links email source" src="./code_sandbox/snaps/html-links-05-code.png" />
+
+```html
+<a href="mailto:someone@example.com">Send email</a>
+```
+
+<img alt="html-links email result" src="./code_sandbox/snaps/html-links-04-result.png" />
+
+Button (`button.html`):
+
+<img alt="html-links button source" src="./code_sandbox/snaps/html-links-06-code.png" />
+
+```html
+<button onclick="document.location='index.html'">HTML Tutorial</button>
+```
+
+<img alt="html-links button result" src="./code_sandbox/snaps/html-links-05-result.png" />
+
+Title (`title.html`):
+
+<img alt="html-links title source" src="./code_sandbox/snaps/html-links-07-code.png" />
+
+```html
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"
+  >Visit our HTML Tutorial</a
+>
+```
+
+<img alt="html-links title result" src="./code_sandbox/snaps/html-links-06-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Which tag defines a hyperlink, and which attribute is the destination?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **`<a>`** tag.
+- [x] The **`href`** attribute.
+
+</details>
+
+### Question 2: How do unvisited, visited, and active links look by default?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Unvisited: underlined **blue**.
+- [x] Visited: underlined **purple**.
+- [x] Active: underlined **red**.
+
+</details>
+
+### Question 3: What does `target="_blank"` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Opens the document in a **new** window or tab.
+- [x] `_self` is the default (same window/tab).
+
+</details>
+
+### Question 4: What is the difference between an absolute URL and a relative URL?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Absolute** is a full web address (`https://…`).
+- [x] **Relative** is a page on the **same site** (no `https://www` part).
+
+</details>
+
+### Question 5: How do you make an image a link?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Put the **`<img>`** tag **inside** the **`<a>`** tag.
+
+</details>
+
+### Question 6: How do you create an email link?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **`mailto:`** in `href` (for example `mailto:someone@example.com`).
+
+</details>
+
+### Question 7: How do you make a button act as a link?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Add **JavaScript** on the click (`onclick` and `document.location`).
+- [x] A button is **not** a link by itself.
+
+</details>
+
+### Question 8: What does the `title` attribute show on a link?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Extra information, usually as a **tooltip** when the mouse is over the element.
+
+</details>
+
+</details>
+
+## Summary
+
+Use `<a href="…">` for hyperlinks. `target` chooses the window (`_blank` for a new tab). Absolute URLs are full addresses; relative URLs stay on the site. Wrap `<img>` in `<a>` for an image link, use `mailto:` for email, JavaScript for a button, and `title` for a tooltip.
+
+## References
+
+- [HTML Links Hyperlinks (W3Schools)](https://www.w3schools.com/html/html_links.asp)
+- [Try it Yourself: tryhtml_links_w3schools](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools)
+- [Try it Yourself: tryhtml_links_target](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target)
+- [Try it Yourself: tryhtml_links](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links)
+- [Try it Yourself: tryhtml_links_image](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image)
+- [Try it Yourself: tryhtml_links_email](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_email)
+- [Try it Yourself: tryhtml_links_button_element](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button_element)
+- [Try it Yourself: tryhtml_links_title](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title)
+- [HTML Link Colors](https://www.w3schools.com/html/html_links_colors.asp)
+- [HTML Link Bookmarks](https://www.w3schools.com/html/html_links_bookmarks.asp)
+- [MDN: `<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+
+</details>
+<details>
+  <summary>HTML Images</summary>
+
+## Introduction
+
+Images improve how a page looks. The empty `<img>` tag **links** an image into the page (it is a holding space, not “inserted” bytes). Required attributes: **`src`** (path) and **`alt`** (alternate text). Nested sidebar pages cover **image maps**, **background images**, and **`<picture>`**.
+
+## Detailed Explanation
+
+- [x] **Syntax**
+  - `<img src="url" alt="alternatetext">`
+  - No end tag. Only attributes.
+
+<img alt="html-images syntax" src="./code_sandbox/snaps/html-images-01-code.png" />
+
+- [x] **`src`**
+  - Path (URL) to the image.
+  - The **browser** fetches it when the page loads, so the file must stay where `src` points.
+  - If it cannot find the image: broken-link icon + **alt** text.
+  - Examples on the page: `pic_trulli.jpg`, `img_girl.jpg`, `img_chania.jpg`.
+  - Sandbox: `code_sandbox/html-images/index.html` (Trulli).
+
+<img alt="html-images trulli result" src="./code_sandbox/snaps/html-images-result.png" />
+
+- [x] **`alt`**
+  - Required. Shown if the image cannot be viewed (slow connection, bad `src`, or a **screen reader**).
+  - The value should **describe** the image.
+  - Wrong filename example: `wrongname.gif` with `alt="Flowers in Chania"`.
+  - Sandbox: `code_sandbox/html-images/wrong.html`.
+
+<img alt="html-images alt result" src="./code_sandbox/snaps/html-images-01-result.png" />
+
+- [x] **Width and height**
+  - Prefer `style="width:…;height:…"` (pixels).
+  - Or `width` and `height` attributes (always pixels).
+  - Always set size so the page does not **flicker** while the image loads.
+  - Prefer **style** so a stylesheet cannot override the size (`width: 100%` in a sheet would stretch the `width`/`height` attributes, not the style).
+  - Sandbox: `size.html` (style 500×600), `attributes.html` (width/height attributes), `style.html` (html5.gif).
+
+<img alt="html-images size result" src="./code_sandbox/snaps/html-images-03-result.png" />
+
+- [x] **Other folders and other servers**
+  - Sub-folder: include the folder in `src` (`images/html5.gif` in the sandbox; the page shows `/images/html5.gif`).
+  - Another server: **absolute URL**. External images may be copyrighted, and you cannot control if they disappear.
+  - Sandbox: `folder.html`, `external.html`.
+- [x] **Animated GIFs**
+  - HTML allows animated GIFs (`programming.gif`).
+  - Sandbox: `animated.html`.
+- [x] **Image as a link**
+  - Put `<img>` inside `<a>` (same idea as the Links chapter).
+  - Sandbox: `link.html`.
+- [x] **Image floating**
+  - CSS `float:right` / `float:left` beside text.
+  - Sandbox: `float.html`.
+
+<img alt="html-images float result" src="./code_sandbox/snaps/html-images-02-result.png" />
+
+- [x] **Common formats** (all major browsers): APNG, GIF, ICO, JPEG, PNG, SVG.
+- [x] **Caution:** large images slow the page. Use them carefully.
+
+| Tag         | Description                            |
+| ----------- | -------------------------------------- |
+| `<img>`     | Defines an image                       |
+| `<map>`     | Defines an image map                   |
+| `<area>`    | Clickable area inside an image map     |
+| `<picture>` | Container for multiple image resources |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the image examples: Trulli photo, broken `src` with alt text, sized girl photo, and floated smileys.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open the `html-images` files.
+- [ ] Success: Trulli photo; broken icon + “Flowers in Chania”; large girl-in-jacket photo; smileys floated right then left of the sentences.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-images/`
+- [ ] `http://127.0.0.1:8766/html-images/wrong.html`
+- [ ] `http://127.0.0.1:8766/html-images/size.html`
+- [ ] `http://127.0.0.1:8766/html-images/float.html`
+- [ ] Also: `girl.html`, `chania.html`, `style.html`, `folder.html`, `external.html`, `animated.html`, `link.html`.
+
+<img alt="html-images result" src="./code_sandbox/snaps/html-images-result.png" />
+
+The image examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-images/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Syntax:
+
+<img alt="html-images syntax source" src="./code_sandbox/snaps/html-images-01-code.png" />
+
+```html
+<img src="url" alt="alternatetext" />
+```
+
+Trulli (`index.html`):
+
+<img alt="html-images trulli source" src="./code_sandbox/snaps/html-images-code.png" />
+
+```html
+<img src="pic_trulli.jpg" alt="Italian Trulli" />
+```
+
+<img alt="html-images trulli result" src="./code_sandbox/snaps/html-images-result.png" />
+
+Broken `src` / alt (`wrong.html`):
+
+<img alt="html-images wrong source" src="./code_sandbox/snaps/html-images-02-code.png" />
+
+```html
+<img src="wrongname.gif" alt="Flowers in Chania" />
+```
+
+<img alt="html-images alt result" src="./code_sandbox/snaps/html-images-01-result.png" />
+
+Size (`size.html`):
+
+```html
+<img
+  src="img_girl.jpg"
+  alt="Girl in a jacket"
+  style="width:500px;height:600px;"
+/>
+```
+
+<img alt="html-images size result" src="./code_sandbox/snaps/html-images-03-result.png" />
+
+Float (`float.html`):
+
+<img alt="html-images float source" src="./code_sandbox/snaps/html-images-03-code.png" />
+
+```html
+<p>
+  <img
+    src="smiley.gif"
+    alt="Smiley face"
+    style="float:right;width:42px;height:42px;"
+  />
+  The image will float to the right of the text.
+</p>
+
+<p>
+  <img
+    src="smiley.gif"
+    alt="Smiley face"
+    style="float:left;width:42px;height:42px;"
+  />
+  The image will float to the left of the text.
+</p>
+```
+
+<img alt="html-images float result" src="./code_sandbox/snaps/html-images-02-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Is `<img>` empty, and which two attributes are required?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** It has **no** end tag.
+- [x] **`src`** (path) and **`alt`** (alternate text).
+
+</details>
+
+### Question 2: What happens if the browser cannot find the image?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It shows a **broken-link** icon and the **alt** text.
+
+</details>
+
+### Question 3: Why set width and height, and why prefer `style`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] So the page does not **flicker** while the image loads.
+- [x] **`style`** keeps a stylesheet from changing the size.
+
+</details>
+
+### Question 4: How do you load an image from a sub-folder or another server?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Sub-folder: include the **folder name** in `src`.
+- [x] Other server: an **absolute URL**. Watch copyright and that the file can vanish.
+
+</details>
+
+### Question 5: How do you make an image a link, or float it beside text?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Put `<img>` **inside** `<a>`.
+- [x] Use CSS **`float:left`** or **`float:right`**.
+
+</details>
+
+### Question 6: Name common image formats all major browsers support.
+
+<details>
+<summary>Answer</summary>
+
+- [x] APNG, GIF, ICO, JPEG, PNG, SVG.
+
+</details>
+
+</details>
+
+## Summary
+
+`<img src="…" alt="…">` embeds an image (empty tag). Always set **alt** and a size (`style` preferred). Sub-folders and absolute URLs work for `src`. GIFs can animate. Wrap `<img>` in `<a>` for a link; use `float` to sit beside text. Large images slow the page.
+
+## References
+
+- [HTML Images (W3Schools)](https://www.w3schools.com/html/html_images.asp)
+- [Try it Yourself: tryhtml_images_trulli](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli)
+- [Try it Yourself: tryhtml_images_wrongname](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_wrongname)
+- [Try it Yourself: tryhtml_images_size](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_size)
+- [Try it Yourself: tryhtml_images_float](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_float)
+- [HTML Image Map](https://www.w3schools.com/html/html_images_imagemap.asp)
+- [HTML Background Images](https://www.w3schools.com/html/html_images_background.asp)
+- [The Picture Element](https://www.w3schools.com/html/html_images_picture.asp)
+- [MDN: `<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+
+</details>
+<details>
+  <summary>HTML Project</summary>
+
+## Introduction
+
+**HTML Project: Personal Page** is a guided, in-browser project (not a static example page). You build a **personal bio** with formatted text, a list, an image, and links, one step at a time in W3Schools’ editor. Difficulty: Easy. Reward: **+70 XP**.
+
+## Detailed Explanation
+
+- [x] **What you build**
+  - Your first real HTML page: a personal bio.
+  - Skills: **text formatting**, **`<ul>` / `<li>`**, **`<a>`**, **`<img>`**.
+- [x] **How it works**
+  - Follow steps on the left (each stepper dot is one chunk). Read instructions, the “What to do” checklist, and hints.
+  - Write code on the right. Files auto-save. Use **Preview** to see the page.
+  - Click **Check code** to grade that step against the rubric.
+  - Pass a step to move on. Pass **every** step to finish and earn the XP.
+- [x] **How it’s graded**
+  - The project is **5 steps**, each with its own pass criterion.
+  - Example criteria: the page has **exactly one `<h1>`**; the page has **at least one intro paragraph**.
+  - Click **Check code** on every step.
+- [x] **Start Building Now**
+  - Opens an **embedded editor** in a new tab. No installs.
+  - File: `index.html`.
+  - There is no local sandbox copy of the interactive grader.
+
+<img alt="html-project landing" src="./code_sandbox/snaps/html-project-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Complete the W3Schools **Personal Page** project in their editor.
+
+### **Overview**
+
+- [ ] Open the project page and start the embedded editor.
+- [ ] Success: all 5 steps pass Check code (one `<h1>`, intro paragraph, list, image, links) and you earn +70 XP.
+
+### **Task 1: Run the official project**
+
+- [ ] Open `https://www.w3schools.com/html/html_project_bio.php`.
+- [ ] Click **Start Building Now**.
+- [ ] Complete each of the **5 steps**. Click **Check code** on every step.
+
+No local sandbox folder: this chapter is the interactive editor, not a static example.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No local server for this chapter. The project runs in the W3Schools editor.
+
+```text
+# No local commands. Use Start Building Now on the project page.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No tested sandbox files. The runnable example is the site’s editor. Skills to use:
+
+```html
+<h1>Your name</h1>
+<p>Intro paragraph.</p>
+<ul>
+  <li>List item</li>
+</ul>
+<img src="photo.jpg" alt="Description" />
+<a href="https://example.com">A link</a>
+```
+
+<img alt="html-project landing" src="./code_sandbox/snaps/html-project-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What do you build in this project?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **personal bio** page.
+- [x] With formatted text, a **list**, an **image**, and **links**.
+
+</details>
+
+### Question 2: How many steps are there, and what is the XP?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **5** steps.
+- [x] **+70 XP** if you pass them all.
+
+</details>
+
+### Question 3: How do you check a step?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Click **Check code**.
+- [x] The site grades that step’s rubric.
+
+</details>
+
+### Question 4: Give two example pass criteria from the page.
+
+<details>
+<summary>Answer</summary>
+
+- [x] The page has **exactly one `<h1>`**.
+- [x] The page has **at least one intro paragraph**.
+
+</details>
+
+### Question 5: Which HTML features does the bio page use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Formatted **text**, a **list**, an **image**, and **links**.
+
+</details>
+
+</details>
+
+## Summary
+
+This sidebar item is a **5-step** interactive project: build a personal bio using formatting, lists, images, and links in the W3Schools editor. Check each step; pass all five for +70 XP. There is no local sandbox example.
+
+## References
+
+- [HTML Project: Personal Page (W3Schools)](https://www.w3schools.com/html/html_project_bio.php)
+
+</details>
+<details>
+  <summary>HTML Favicon</summary>
+
+## Introduction
+
+A **favicon** is a small image next to the page title in the **browser tab**. Add it with `<link rel="icon">` in `<head>` after `<title>`. Keep the image **simple** and **high contrast**. A common filename is `favicon.ico`.
+
+## Detailed Explanation
+
+- [x] **Where it shows**
+  - Left of the page title in the tab.
+- [x] **How to add it**
+  - Save the image in the site root, or in an `images` folder.
+  - In `index.html`, after `<title>`: `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">`.
+  - Reload; the tab should show the icon.
+  - You can make a favicon on sites like favicon.cc.
+  - The sandbox uses a local `favicon.ico` and `href="favicon.ico"`.
+  - Sandbox: `code_sandbox/html-favicon/index.html`. Tab title: **My Page Title**.
+
+<img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
+
+- [x] **Format support**
+  - Edge, Chrome, Firefox, Opera, and Safari all support **ICO, PNG, GIF, JPEG, and SVG**.
+- [x] **Chapter summary**
+  - Use the HTML `<link>` element to insert a favicon.
+
+| Tag      | Description                                              |
+| -------- | -------------------------------------------------------- |
+| `<link>` | Relationship between a document and an external resource |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Serve the favicon sandbox and confirm the heading, paragraph, and tab title **My Page Title**.
+
+### **Overview**
+
+- [ ] Open `html-favicon/index.html` over HTTP.
+- [ ] Success: “This is a Heading”, “This is a paragraph.”, tab title **My Page Title**.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-favicon/`
+
+<img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
+
+The favicon example matches the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-favicon/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-favicon/index.html`
+
+<img alt="html-favicon source" src="./code_sandbox/snaps/html-favicon-code.png" />
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+
+<img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
+
+The chapter example used `href="/images/favicon.ico"`. The sandbox uses a local `favicon.ico` so it loads offline.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is a favicon?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **small image** next to the page title in the **browser tab**.
+
+</details>
+
+### Question 2: Which tag adds a favicon?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<link rel="icon" type="image/x-icon" href="…">` in **`<head>`**, after **`<title>`**.
+
+</details>
+
+### Question 3: What kind of image works well?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **simple** image with **high contrast**.
+- [x] A common name is **`favicon.ico`**.
+
+</details>
+
+### Question 4: Which formats do major browsers support?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **ICO, PNG, GIF, JPEG, SVG** (Edge, Chrome, Firefox, Opera, Safari).
+
+</details>
+
+### Question 5: Where do you save the favicon file?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the **site root**, or in an **`images`** folder.
+- [x] Then point `href` at that file.
+
+</details>
+
+</details>
+
+## Summary
+
+Add a favicon with `<link rel="icon">` in `<head>` after `<title>`. Store `favicon.ico` in the root or an images folder. Use a simple high-contrast image. ICO, PNG, GIF, JPEG, and SVG work in current major browsers.
+
+## References
+
+- [HTML Favicon (W3Schools)](https://www.w3schools.com/html/html_favicon.asp)
+- [favicon.cc](https://www.favicon.cc)
+- [MDN: Adding a favicon](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata#adding_custom_icons_to_your_site)
+- [MDN: `<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
+
+</details>
+<details>
+  <summary>HTML Page Title</summary>
+
+## Introduction
+
+Every page should have a **`<title>`** that describes what the page means. The title appears in the **browser tab**, in **favorites**, and in **search results**. It matters for **SEO**.
+
+## Detailed Explanation
+
+- [x] **The title element**
+  - Goes in `<head>`.
+  - Example title: **HTML Tutorial**.
+  - Body: `The content of the document......`
+  - Sandbox: `code_sandbox/html-page-title/index.html`. Tab title: **HTML Tutorial**.
+
+<img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
+
+- [x] **What is a good title?**
+  - Describe the **content and meaning** of the page.
+  - Search engines use it when **ranking** results.
+  - `<title>` also: toolbar title, favorites name, search-result title.
+  - Make it **accurate and meaningful**.
+
+| Tag       | Description                       |
+| --------- | --------------------------------- |
+| `<title>` | Defines the title of the document |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Serve the page-title sandbox and confirm the tab title is **HTML Tutorial**.
+
+### **Overview**
+
+- [ ] Open `html-page-title/index.html` over HTTP.
+- [ ] Success: tab title **HTML Tutorial**; body “The content of the document......”
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-page-title/`
+
+<img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
+
+The page-title example matches the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-page-title/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-page-title/index.html`
+
+<img alt="html-page-title source" src="./code_sandbox/snaps/html-page-title-code.png" />
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+    The content of the document......
+  </body>
+</html>
+```
+
+<img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Where does `<title>` go, and where is it shown?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the **`<head>`**.
+- [x] In the browser **title bar / tab**.
+
+</details>
+
+### Question 2: Why is the page title important for SEO?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Search engines use it when **ordering** results.
+- [x] It also appears as the **search-result** title.
+
+</details>
+
+### Question 3: What else uses the title besides the tab?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The name when the page is added to **favorites**.
+- [x] The title in **search engine** listings.
+
+</details>
+
+### Question 4: What makes a good title?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It describes the **content and meaning** of the page.
+- [x] It is **accurate and meaningful**.
+
+</details>
+
+### Question 5: What title does the chapter example use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **HTML Tutorial**.
+
+</details>
+
+</details>
+
+## Summary
+
+Put a meaningful `<title>` in `<head>`. It labels the tab, favorites, and search results, and it feeds SEO. The chapter example title is **HTML Tutorial**.
+
+## References
+
+- [HTML Page Title (W3Schools)](https://www.w3schools.com/html/html_page_title.asp)
+- [MDN: `<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
+- [Google: Title links](https://developers.google.com/search/docs/appearance/title-link)
+
+</details>
+<details>
+  <summary>HTML Tables</summary>
+
+## Introduction
+
+HTML tables arrange data in **rows** and **columns**. A table is cells inside rows. Nested sidebar pages cover borders, sizes, headers in more depth, padding, colspan/rowspan, styling, and colgroup. This chapter is the **HTML Tables** overview.
+
+## Detailed Explanation
+
+- [x] **Define a table**
+  - `<table>` wraps the grid.
+  - Example: Company / Contact / Country with Alfreds Futterkiste (Germany) and Centro comercial Moctezuma (Mexico).
+  - Sandbox: `code_sandbox/html-tables/index.html` (with a 1px black border so the grid is visible, as in the Try it examples).
+
+<img alt="html-tables company result" src="./code_sandbox/snaps/html-tables-result.png" />
+
+- [x] **Table cells (`<td>`)**
+  - **td** = table data. Content is between `<td>` and `</td>`.
+  - A cell can hold text, images, lists, links, even other tables.
+  - Example: Emil, Tobias, Linus in one row.
+  - Sandbox: `cells.html`.
+
+<img alt="html-tables cells result" src="./code_sandbox/snaps/html-tables-01-result.png" />
+
+- [x] **Table rows (`<tr>`)**
+  - **tr** = table row. Starts with `<tr>`, ends with `</tr>`.
+  - You can have as many rows as you like; keep the **same number of cells** in each row (uneven rows come in a later chapter).
+  - Example: names row plus 16 / 14 / 10.
+  - Sandbox: `rows.html`.
+
+<img alt="html-tables rows result" src="./code_sandbox/snaps/html-tables-02-result.png" />
+
+- [x] **Table headers (`<th>`)**
+  - Use `<th>` instead of `<td>` for header cells.
+  - **th** = table header. Default: **bold** and **centered** (changeable with CSS).
+  - Example: Person 1 / 2 / 3, then names, then ages.
+  - Sandbox: `headers.html`.
+
+<img alt="html-tables headers result" src="./code_sandbox/snaps/html-tables-03-result.png" />
+
+| Tag          | Description                           |
+| ------------ | ------------------------------------- |
+| `<table>`    | Defines a table                       |
+| `<th>`       | Defines a header cell                 |
+| `<tr>`       | Defines a row                         |
+| `<td>`       | Defines a cell                        |
+| `<caption>`  | Defines a table caption               |
+| `<colgroup>` | Group of columns for formatting       |
+| `<col>`      | Column properties inside `<colgroup>` |
+| `<thead>`    | Groups header content                 |
+| `<tbody>`    | Groups body content                   |
+| `<tfoot>`    | Groups footer content                 |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the table examples: company table, one-row cells, two data rows, and a header row.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-tables` file.
+- [ ] Success: bordered Company/Contact/Country table; Emil Tobias Linus; names plus ages; Person 1–3 headers bold and centered.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-tables/`
+- [ ] `http://127.0.0.1:8766/html-tables/cells.html`
+- [ ] `http://127.0.0.1:8766/html-tables/rows.html`
+- [ ] `http://127.0.0.1:8766/html-tables/headers.html`
+
+<img alt="html-tables result" src="./code_sandbox/snaps/html-tables-result.png" />
+
+The table examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-tables/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Company table (`index.html`):
+
+<img alt="html-tables company source" src="./code_sandbox/snaps/html-tables-code.png" />
+
+```html
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+```
+
+<img alt="html-tables company result" src="./code_sandbox/snaps/html-tables-result.png" />
+
+Cells (`cells.html`):
+
+<img alt="html-tables cells source" src="./code_sandbox/snaps/html-tables-01-code.png" />
+
+```html
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+```
+
+<img alt="html-tables cells result" src="./code_sandbox/snaps/html-tables-01-result.png" />
+
+Rows (`rows.html`):
+
+<img alt="html-tables rows source" src="./code_sandbox/snaps/html-tables-02-code.png" />
+
+```html
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+```
+
+<img alt="html-tables rows result" src="./code_sandbox/snaps/html-tables-02-result.png" />
+
+Headers (`headers.html`):
+
+<img alt="html-tables headers source" src="./code_sandbox/snaps/html-tables-03-code.png" />
+
+```html
+<table>
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+```
+
+<img alt="html-tables headers result" src="./code_sandbox/snaps/html-tables-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does an HTML table consist of?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Table cells** inside **rows** and **columns**.
+- [x] Wrapped in **`<table>`**.
+
+</details>
+
+### Question 2: What does `<td>` stand for, and what can a cell contain?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Table data**.
+- [x] Text, images, lists, links, other tables, and more.
+
+</details>
+
+### Question 3: What does `<tr>` stand for, and how many cells per row?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Table row**.
+- [x] Keep the **same number of cells** in each row (exceptions later).
+
+</details>
+
+### Question 4: How do header cells differ from data cells?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **`<th>`** instead of **`<td>`**.
+- [x] Default look: **bold** and **centered**.
+
+</details>
+
+### Question 5: Which extra table tags does this chapter list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<caption>`, `<colgroup>`, `<col>`.
+- [x] `<thead>`, `<tbody>`, `<tfoot>`.
+
+</details>
+
+### Question 6: How did the Try it examples make the grid visible?
+
+<details>
+<summary>Answer</summary>
+
+- [x] CSS: `table, th, td { border: 1px solid black; }`.
+
+</details>
+
+</details>
+
+## Summary
+
+Use `<table>` with `<tr>` rows and `<td>` cells. `<th>` is a header cell (bold, centered by default). Keep cell counts even across rows unless a later chapter covers spanning.
+
+## References
+
+- [HTML Tables (W3Schools)](https://www.w3schools.com/html/html_tables.asp)
+- [Try it Yourself: tryhtml_table_intro](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro)
+- [Try it Yourself: tryhtml_table3](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3)
+- [Try it Yourself: tryhtml_table4](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table4)
+- [Try it Yourself: tryhtml_table5](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table5)
+- [Try it Yourself: tryhtml_table6](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table6)
+- [Table Borders](https://www.w3schools.com/html/html_table_borders.asp)
+- [MDN: `<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+- [MDN: `<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)
+- [MDN: `<td>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)
+
+</details>
+<details>
+  <summary>HTML Lists</summary>
+
+## Introduction
+
+HTML lists group related items. This chapter covers **unordered** lists (`<ul>`), **ordered** lists (`<ol>`), and **description** lists (`<dl>` / `<dt>` / `<dd>`). Nested sidebar pages cover unordered, ordered, and other lists in more detail.
+
+## Detailed Explanation
+
+- [x] **Unordered list**
+  - Starts with `<ul>`. Each item is `<li>`.
+  - Default marker: **bullets** (small black circles).
+  - Example: Coffee, Tea, Milk.
+  - Sandbox: `code_sandbox/html-lists/index.html`.
+
+<img alt="html-lists unordered result" src="./code_sandbox/snaps/html-lists-result.png" />
+
+- [x] **Ordered list**
+  - Starts with `<ol>`. Each item is `<li>`.
+  - Default marker: **numbers**.
+  - Same three drinks, numbered.
+  - Sandbox: `ordered.html`.
+
+<img alt="html-lists ordered result" src="./code_sandbox/snaps/html-lists-01-result.png" />
+
+- [x] **Description list**
+  - A list of **terms** with a **description** of each.
+  - `<dl>` — the list. `<dt>` — the term. `<dd>` — the description.
+  - Example: Coffee — black hot drink; Milk — white cold drink.
+  - Sandbox: `description.html`.
+
+<img alt="html-lists description result" src="./code_sandbox/snaps/html-lists-02-result.png" />
+
+| Tag    | Description                              |
+| ------ | ---------------------------------------- |
+| `<ul>` | Defines an unordered list                |
+| `<ol>` | Defines an ordered list                  |
+| `<li>` | Defines a list item                      |
+| `<dl>` | Defines a description list               |
+| `<dt>` | Defines a term in a description list     |
+| `<dd>` | Describes the term in a description list |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the three list types: bullets, numbers, and term/description pairs.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-lists` file.
+- [ ] Success: Coffee/Tea/Milk as bullets; the same three numbered; Coffee and Milk with indented descriptions.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-lists/`
+- [ ] `http://127.0.0.1:8766/html-lists/ordered.html`
+- [ ] `http://127.0.0.1:8766/html-lists/description.html`
+
+<img alt="html-lists result" src="./code_sandbox/snaps/html-lists-result.png" />
+
+The list examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-lists/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Unordered (`index.html`):
+
+<img alt="html-lists unordered source" src="./code_sandbox/snaps/html-lists-code.png" />
+
+```html
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
+
+<img alt="html-lists unordered result" src="./code_sandbox/snaps/html-lists-result.png" />
+
+Ordered (`ordered.html`):
+
+<img alt="html-lists ordered source" src="./code_sandbox/snaps/html-lists-01-code.png" />
+
+```html
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+```
+
+<img alt="html-lists ordered result" src="./code_sandbox/snaps/html-lists-01-result.png" />
+
+Description (`description.html`):
+
+<img alt="html-lists description source" src="./code_sandbox/snaps/html-lists-02-code.png" />
+
+```html
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+```
+
+<img alt="html-lists description result" src="./code_sandbox/snaps/html-lists-02-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Which tags make an unordered list, and what is the default marker?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<ul>` with `<li>` items.
+- [x] Default marker: **bullets** (small black circles).
+
+</details>
+
+### Question 2: Which tags make an ordered list, and what is the default marker?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<ol>` with `<li>` items.
+- [x] Default marker: **numbers**.
+
+</details>
+
+### Question 3: Which three tags make a description list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<dl>` — the list.
+- [x] `<dt>` — the term.
+- [x] `<dd>` — the description.
+
+</details>
+
+### Question 4: What is a description list for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A list of **terms**, each with a **description**.
+
+</details>
+
+### Question 5: Which tag is a list item in both unordered and ordered lists?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`<li>`**.
+
+</details>
+
+### Question 6: Where does this chapter send you for more list detail?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Unordered Lists**, **Ordered Lists**, and **Other Lists**.
+
+</details>
+
+</details>
+
+## Summary
+
+Use `<ul>` for bullets, `<ol>` for numbers, and `<li>` for items in both. Use `<dl>`, `<dt>`, and `<dd>` for terms and their descriptions.
+
+## References
+
+- [HTML Lists (W3Schools)](https://www.w3schools.com/html/html_lists.asp)
+- [Try it Yourself: tryhtml_lists_unordered](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered)
+- [Try it Yourself: tryhtml_lists_ordered](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered)
+- [Try it Yourself: tryhtml_lists_description](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_description)
+- [Unordered Lists](https://www.w3schools.com/html/html_lists_unordered.asp)
+- [Ordered Lists](https://www.w3schools.com/html/html_lists_ordered.asp)
+- [Other Lists](https://www.w3schools.com/html/html_lists_other.asp)
+- [MDN: `<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+- [MDN: `<ol>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+- [MDN: `<dl>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)
 
 </details>
