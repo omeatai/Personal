@@ -1,13 +1,13 @@
 ---
-description: Read one named tutorial section from the browser, run its examples in code_sandbox, snap code and results, and append an accordion to Files/html/tutorial.md
+description: Read named tutorial section(s) from the browser (single or range), run examples in code_sandbox, snap code and results, and append accordion(s) to Files/html/tutorial.md
 alwaysApply: false
 ---
 
 # HTML Tutorial Section Rule
 
-When the user says **"apply to \<Section\>"** (or similar, e.g. `@html_tutorial.mdc apply to HTML Introduction`), document **one** tutorial section from the **open browser tab** (or the site they name, default [W3Schools HTML](https://www.w3schools.com/html/default.asp)).
+When the user says **"apply to \<Section\>"** (or similar, e.g. `@html_tutorial.mdc apply to HTML Introduction`), document that tutorial section from the **open browser tab** (or the site they name, default [W3Schools HTML](https://www.w3schools.com/html/default.asp)).
 
-Do **not** crawl the whole course. One apply = one accordion.
+They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to HTML Editors to HTML Headings`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one accordion. A range = one accordion per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → snap → append) before starting the next.
 
 ## Workflow Steps
 
@@ -24,6 +24,7 @@ Do **not** crawl the whole course. One apply = one accordion.
 4. **Run the example**
    - Serve the sandbox over **http** (Cursor browser blocks `file://`). From `code_sandbox`, use a local static server, then open `http://127.0.0.1:<port>/<slug>/`.
    - Confirm the page matches the tutorial example (heading, paragraph, output).
+   - If the example **errors** or will not run, research a fix — prefer **official docs** (MDN, WHATWG HTML, W3C). Tutorial sites often keep older snippets after the spec or browsers have moved on. Use the current correct syntax in the sandbox, and note the mismatch in Detailed Explanation / Code (what the page showed vs what works now). Do not invent unrelated features.
    - Stop the server when snaps are done.
 5. **Snap source and result**
    - **Result:** screenshot the **running** sandbox page in the Cursor browser. That is the code result.
@@ -32,7 +33,7 @@ Do **not** crawl the whole course. One apply = one accordion.
      - `<slug>-code.png` (and `-01-code.png` if several examples)
      - `<slug>-result.png`
    - Embed **relative** images from `tutorial.md`: `./code_sandbox/snaps/<file>.png`
-6. **Append** one formatted accordion to `Personal/Files/html/tutorial.md`. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
+6. **Append** one formatted accordion per section to `Personal/Files/html/tutorial.md`. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
 7. If `tutorial.md` has no `#` title yet, start the file with `# HTML Tutorial` then the accordion.
 
 ## Format Requirements
@@ -132,11 +133,11 @@ Sandbox: `code_sandbox/html-introduction/index.html`
 
 ## Content Guidelines
 
-- Document **this section only**. Do not mix in the next/previous chapter.
-- Preserve the site’s explanations, examples, and exercises. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
+- Document **this section only** (even inside a range). Do not mix in the next/previous chapter.
+- Preserve the site’s explanations, examples, and exercises. Rewrite for study; do not paste ads, nav chrome, or cookie banners. If official docs required a newer syntax than the page, keep both: the page’s idea and the working current form.
 - Lab = how to run **this** sandbox folder and what “done” looks like (the snapped result).
 - Terminal Commands = only commands you actually used (server, open URL). If none, keep the child with a one-line placeholder.
-- Code = the **tested** sandbox files, not untested copy-paste from the site.
+- Code = the **tested** sandbox files, not untested copy-paste from the site. If you had to update outdated snippets, the fenced source is what actually ran.
 - If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
 
 ## File Paths
@@ -153,4 +154,5 @@ Sandbox: `code_sandbox/html-introduction/index.html`
 
 ```text
 @Personal/Files/html/.cursor/rules/html_tutorial.mdc apply to HTML Introduction
+@Personal/Files/html/.cursor/rules/html_tutorial.mdc apply to HTML Editors to HTML Headings
 ```

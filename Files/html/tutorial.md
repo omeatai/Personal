@@ -346,3 +346,306 @@ HTML is **Hyper Text Markup Language**: elements describe page **structure** and
 - [W3C HTML5.2 Recommendation](https://www.w3.org/TR/html52/)
 
 </details>
+
+<details>
+  <summary>HTML Editors</summary>
+
+## Introduction
+
+You do not need a professional IDE to learn HTML. A **simple text editor**—**Notepad** on Windows or **TextEdit** on Mac—is enough to write a page, save it as **`.htm` / `.html`** with **UTF-8** encoding, and open it in a browser. This section walks through that workflow and also points to W3Schools’ **online editor** (“Try it Yourself”) for fast tests.
+
+## Detailed Explanation
+
+- [x] **A simple text editor is enough**
+  - Web pages *can* be built with professional HTML editors.
+  - For **learning**, the tutorial recommends **Notepad** (PC) or **TextEdit** (Mac).
+  - Writing tags by hand in a plain editor is a good way to learn HTML.
+- [x] **Step 1 (PC): Open Notepad**
+  - **Windows 8 or later:** open the **Start** screen (Windows logo, bottom left) and type **Notepad**.
+  - **Windows 7 or earlier:** **Start** → **Programs** → **Accessories** → **Notepad**.
+- [x] **Step 1 (Mac): Open TextEdit and set it to plain HTML**
+  - **Finder** → **Applications** → **TextEdit**.
+  - **Preferences** → **Format** → choose **Plain Text** so files save correctly.
+  - Under **Open and Save**, check **Display HTML files as HTML code instead of formatted text**.
+  - Then open a **new document** for the code.
+- [x] **Step 2: Write some HTML**
+  - Copy this document into the editor (sandbox: `code_sandbox/html-editors/index.html`).
+
+<img alt="html-editors source" src="./code_sandbox/snaps/html-editors-code.png" />
+
+- [x] **Step 3: Save the HTML page**
+  - **File** → **Save as**.
+  - Name it **`index.htm`** (or **`index.html`**—the extensions are equivalent).
+  - Set encoding to **UTF-8** (preferred for HTML files).
+- [x] **Step 4: View it in a browser**
+  - Double-click the file, or right-click → **Open with** your browser.
+  - The browser shows **My First Heading** and **My first paragraph.** (it does not print the tags).
+
+<img alt="html-editors result" src="./code_sandbox/snaps/html-editors-result.png" />
+
+- [x] **W3Schools online editor (“Try it Yourself”)**
+  - Edit HTML and see the result in the browser.
+  - Useful for **fast tests**; it has **color coding** and can **save / share** code.
+  - That example uses a `<title>` (**Page Title**), heading **This is a Heading**, and paragraph **This is a paragraph.** Sandbox: `code_sandbox/html-editors/tryit.html`.
+
+<img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Write the Notepad example locally, serve it (Cursor blocks `file://`), and confirm the heading and paragraph. Optionally open the Try it Yourself copy.
+
+### **Overview**
+
+- [ ] Recreate both section examples in `code_sandbox/html-editors/` and open them in the browser.
+- [ ] You will:
+  - [ ] Save the Notepad document as `index.html`.
+  - [ ] Save the online-editor document as `tryit.html`.
+  - [ ] Serve `code_sandbox` over HTTP.
+  - [ ] Confirm **My First Heading** / **My first paragraph.** on `index.html`.
+  - [ ] Confirm tab **Page Title**, **This is a Heading**, and **This is a paragraph.** on `tryit.html`.
+- [ ] Success: both pages match the snapped results.
+
+### **Task 1: Create the Notepad example**
+
+- [ ] Open `Personal/Files/html/code_sandbox/html-editors/index.html`.
+- [ ] Use this document (same as the W3Schools Notepad step):
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+
+### **Task 2: Create the Try it Yourself example**
+
+- [ ] Open `Personal/Files/html/code_sandbox/html-editors/tryit.html`.
+- [ ] Use this document:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+### **Task 3: Serve and open the pages**
+
+- [ ] From `Personal/Files/html/code_sandbox`, start a static server:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] Open `http://127.0.0.1:8766/html-editors/`.
+- [ ] Check: **My First Heading** and **My first paragraph.**
+
+<img alt="html-editors result" src="./code_sandbox/snaps/html-editors-result.png" />
+
+- [ ] Open `http://127.0.0.1:8766/html-editors/tryit.html`.
+- [ ] Check: tab **Page Title**, heading **This is a Heading**, paragraph **This is a paragraph.**
+
+<img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
+
+Both editor examples are running and match the section.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+Serve the sandbox so the Cursor browser can load the examples (it cannot open `file://`).
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-editors/` and `http://127.0.0.1:8766/html-editors/tryit.html`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-editors/index.html` (Notepad / save-as `index.htm` example)
+
+<img alt="html-editors source" src="./code_sandbox/snaps/html-editors-code.png" />
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+
+<img alt="html-editors result" src="./code_sandbox/snaps/html-editors-result.png" />
+
+Sandbox: `code_sandbox/html-editors/tryit.html` (online editor example)
+
+<img alt="html-editors tryit source" src="./code_sandbox/snaps/html-editors-01-code.png" />
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+<img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Do you need a professional HTML editor to learn HTML?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** A **simple text editor** is enough.
+- [x] The tutorial recommends **Notepad** (PC) or **TextEdit** (Mac).
+
+</details>
+
+### Question 2: How do you open Notepad on Windows 8 or later?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Open the **Start** screen (Windows logo, bottom left).
+- [x] Type **Notepad**.
+
+</details>
+
+### Question 3: What TextEdit settings are required on Mac?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Preferences** → **Format** → **Plain Text**.
+- [x] Under **Open and Save**, check **Display HTML files as HTML code instead of formatted text**.
+
+</details>
+
+### Question 4: What filename and encoding should you use when saving?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Name the file **`index.htm`** (or **`index.html`**).
+- [x] Set encoding to **UTF-8**.
+
+</details>
+
+### Question 5: Is there a difference between `.htm` and `.html`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Either extension works.
+- [x] The choice is up to you.
+
+</details>
+
+### Question 6: How do you view the saved HTML page?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Open the file in a **browser**.
+- [x] Double-click it, or right-click and choose **Open with**.
+
+</details>
+
+### Question 7: What does the Notepad example display in the browser?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A heading: **My First Heading**.
+- [x] A paragraph: **My first paragraph.**
+
+</details>
+
+### Question 8: What is the W3Schools “Try it Yourself” editor for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Edit HTML and **view the result** in the browser.
+- [x] It is useful for **testing code fast**.
+- [x] It has **color coding** and can **save and share** code.
+
+</details>
+
+### Question 9: What extra markup does the Try it Yourself example add compared with the Notepad snippet?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A `<head>` with `<title>Page Title</title>`.
+- [x] Different body text: **This is a Heading** and **This is a paragraph.**
+
+</details>
+
+### Question 10: Why is UTF-8 mentioned when saving?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **UTF-8** is the **preferred encoding** for HTML files.
+
+</details>
+
+</details>
+
+## Summary
+
+Learn HTML in a **plain text editor** (Notepad or TextEdit). Write a basic document, save it as **`index.htm` / `.html`** with **UTF-8**, and open it in a browser. **`.htm` and `.html` are the same.** On Mac, TextEdit must use **Plain Text** and must show HTML as **code**. The **Try it Yourself** online editor is for quick tests with color coding. The Notepad sample renders **My First Heading**; the online sample adds a **Page Title** tab and **This is a Heading**.
+
+## References
+
+- [HTML Editors (W3Schools)](https://www.w3schools.com/html/html_editors.asp)
+- [Try it Yourself: tryhtml_editors](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editors)
+
+</details>
+
