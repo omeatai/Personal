@@ -3165,3 +3165,659 @@ Comments use `<!-- … -->` (`!` only on the start tag). They do **not** display
 - [WHATWG: Comments](https://html.spec.whatwg.org/multipage/syntax.html#comments)
 
 </details>
+<details>
+  <summary>HTML Colors</summary>
+
+## Introduction
+
+HTML colors are specified with **predefined color names**, or with **RGB**, **HEX**, **HSL**, **RGBA**, or **HSLA** values. This chapter shows named colors on backgrounds, then the same idea for **text** and **borders**, and finally the numeric color-value forms (including 50% transparency).
+
+## Detailed Explanation
+
+- [x] **Color names**
+  - A color can be a **name** such as Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet, LightGray.
+  - HTML supports **140 standard color names**.
+  - Sandbox: `code_sandbox/html-colors/index.html`.
+
+<img alt="html-colors names result" src="./code_sandbox/snaps/html-colors-result.png" />
+
+- [x] **Background color**
+  - Set an element’s background with `style="background-color:…"` (DodgerBlue heading, Tomato paragraph).
+  - Sandbox: `code_sandbox/html-colors/background.html`.
+
+<img alt="html-colors background result" src="./code_sandbox/snaps/html-colors-01-result.png" />
+
+- [x] **Text color**
+  - Set text with `style="color:…"` (Tomato heading, DodgerBlue and MediumSeaGreen paragraphs).
+  - Sandbox: `code_sandbox/html-colors/text.html`.
+
+<img alt="html-colors text result" src="./code_sandbox/snaps/html-colors-02-result.png" />
+
+- [x] **Border color**
+  - Set a border with `style="border:2px solid …"` (Tomato, DodgerBlue, Violet).
+  - Sandbox: `code_sandbox/html-colors/border.html`.
+
+<img alt="html-colors border result" src="./code_sandbox/snaps/html-colors-03-result.png" />
+
+- [x] **Color values**
+  - Besides names, use **RGB**, **HEX**, **HSL**, **RGBA**, and **HSLA**.
+  - `rgb(255, 99, 71)`, `#ff6347`, and `hsl(9, 100%, 64%)` are the same as **Tomato**.
+  - RGBA / HSLA add an **alpha** channel; `0.5` is **50% transparent**.
+  - RGB, HEX, and HSL are covered in more depth on the following color pages.
+  - Sandbox: `code_sandbox/html-colors/values.html`.
+
+<img alt="html-colors values result" src="./code_sandbox/snaps/html-colors-04-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the color examples: named color bars, background and text colors, colored borders, and Tomato as RGB / HEX / HSL / RGBA / HSLA.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-colors` file.
+- [ ] Success: eight named color headings; DodgerBlue heading + Tomato paragraph; Tomato / DodgerBlue / MediumSeaGreen text; three bordered Hello World headings; five Tomato-equivalent value bars (two semi-transparent).
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-colors/`
+- [ ] `http://127.0.0.1:8766/html-colors/background.html`
+- [ ] `http://127.0.0.1:8766/html-colors/text.html`
+- [ ] `http://127.0.0.1:8766/html-colors/border.html`
+- [ ] `http://127.0.0.1:8766/html-colors/values.html`
+
+<img alt="html-colors result" src="./code_sandbox/snaps/html-colors-result.png" />
+
+The color examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-colors/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Color names (`index.html`):
+
+<img alt="html-colors names source" src="./code_sandbox/snaps/html-colors-code.png" />
+
+```html
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+```
+
+<img alt="html-colors names result" src="./code_sandbox/snaps/html-colors-result.png" />
+
+Background color (`background.html`):
+
+<img alt="html-colors background source" src="./code_sandbox/snaps/html-colors-01-code.png" />
+
+```html
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+```
+
+<img alt="html-colors background result" src="./code_sandbox/snaps/html-colors-01-result.png" />
+
+Text color (`text.html`):
+
+<img alt="html-colors text source" src="./code_sandbox/snaps/html-colors-02-code.png" />
+
+```html
+<h3 style="color:Tomato;">Hello World</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+```
+
+<img alt="html-colors text result" src="./code_sandbox/snaps/html-colors-02-result.png" />
+
+Border color (`border.html`):
+
+<img alt="html-colors border source" src="./code_sandbox/snaps/html-colors-03-code.png" />
+
+```html
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+```
+
+<img alt="html-colors border result" src="./code_sandbox/snaps/html-colors-03-result.png" />
+
+Color values (`values.html`):
+
+<img alt="html-colors values source" src="./code_sandbox/snaps/html-colors-04-code.png" />
+
+```html
+<p>Same as color name "Tomato":</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+```
+
+<img alt="html-colors values result" src="./code_sandbox/snaps/html-colors-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How can you specify a color in HTML?
+
+<details>
+<summary>Answer</summary>
+
+- [x] With a **predefined color name**.
+- [x] Or with **RGB**, **HEX**, **HSL**, **RGBA**, or **HSLA** values.
+
+</details>
+
+### Question 2: How many standard color names does HTML support?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **140** standard color names.
+
+</details>
+
+### Question 3: Which CSS property sets an element’s background color?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `background-color` (for example `style="background-color:DodgerBlue;"`).
+
+</details>
+
+### Question 4: Which CSS property sets text color?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `color` (for example `style="color:Tomato;"`).
+
+</details>
+
+### Question 5: How does the chapter set a colored border?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `style="border:2px solid Tomato;"` (or DodgerBlue / Violet).
+
+</details>
+
+### Question 6: Name three value forms that match the color Tomato.
+
+<details>
+<summary>Answer</summary>
+
+- [x] `rgb(255, 99, 71)`
+- [x] `#ff6347`
+- [x] `hsl(9, 100%, 64%)`
+
+</details>
+
+### Question 7: What do RGBA and HSLA add compared with RGB and HSL?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **alpha** channel (transparency).
+- [x] In the example, `0.5` is **50% transparent**.
+
+</details>
+
+### Question 8: Where does this chapter send you for more on RGB, HEX, and HSL?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **next chapters** (RGB, HEX, HSL pages).
+
+</details>
+
+</details>
+
+## Summary
+
+Specify colors with **names** (140 standard names) or with **RGB / HEX / HSL / RGBA / HSLA**. Use `background-color` for backgrounds, `color` for text, and `border` for borders. `rgb(255, 99, 71)`, `#ff6347`, and `hsl(9, 100%, 64%)` equal Tomato; RGBA and HSLA add transparency.
+
+## References
+
+- [HTML Colors (W3Schools)](https://www.w3schools.com/html/html_colors.asp)
+- [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp)
+- [Try it Yourself: tryhtml_color_names](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names)
+- [Try it Yourself: tryhtml_color_background](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_background)
+- [Try it Yourself: tryhtml_color_text](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_text)
+- [Try it Yourself: tryhtml_color_border](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_border)
+- [Try it Yourself: tryhtml_color_values](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_values)
+- [HTML RGB](https://www.w3schools.com/html/html_colors_rgb.asp)
+- [HTML HEX](https://www.w3schools.com/html/html_colors_hex.asp)
+- [HTML HSL](https://www.w3schools.com/html/html_colors_hsl.asp)
+- [MDN: color](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+- [MDN: background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+
+</details>
+<details>
+  <summary>HTML CSS</summary>
+
+## Introduction
+
+**CSS** (Cascading Style Sheets) formats the layout of a webpage: color, font, size, spacing, position, backgrounds, and different displays for different devices. You can add CSS in **three** ways: **inline**, **internal**, and **external**. Cascading means a style on a parent also applies to children unless you override it.
+
+## Detailed Explanation
+
+- [x] **What is CSS?**
+  - Cascading Style Sheets.
+  - Saves work: one sheet can control **many** pages.
+  - Formats layout: color, font, text size, spacing, positioning, backgrounds, responsive displays.
+- [x] **Three ways to add CSS**
+  - **Inline** — `style` attribute on one element.
+  - **Internal** — `<style>` in the page `<head>`.
+  - **External** — `<link rel="stylesheet" href="…">` to a `.css` file.
+  - External files are the usual way for a site. This chapter uses inline and internal a lot because they are easier to try.
+- [x] **Inline CSS**
+  - Unique style on a **single** element.
+  - Example: blue `<h1>`, red `<p>`.
+  - Sandbox: `code_sandbox/html-css/index.html`.
+
+<img alt="html-css inline result" src="./code_sandbox/snaps/html-css-result.png" />
+
+- [x] **Internal CSS**
+  - Style for a **single page**, inside `<style>` in `<head>`.
+  - Example: powderblue `body`, blue headings, red paragraphs (all `h1` / `p` on that page).
+  - Sandbox: `code_sandbox/html-css/internal.html`.
+
+<img alt="html-css internal result" src="./code_sandbox/snaps/html-css-01-result.png" />
+
+- [x] **External CSS**
+  - One sheet for **many** pages.
+  - Link it from each page’s `<head>`: `<link rel="stylesheet" href="styles.css">`.
+  - The `.css` file is plain CSS only (no HTML).
+  - Changing that one file can restyle a whole site.
+  - Sandbox: `code_sandbox/html-css/external.html` + `styles.css` (looks the same as internal).
+
+<img alt="html-css external result" src="./code_sandbox/snaps/html-css-02-result.png" />
+
+- [x] **CSS colors, fonts, and sizes**
+  - `color` — text color.
+  - `font-family` — font (verdana heading, courier paragraph).
+  - `font-size` — size (`300%` / `160%` in the example).
+  - Sandbox: `code_sandbox/html-css/fonts.html`.
+
+<img alt="html-css fonts result" src="./code_sandbox/snaps/html-css-03-result.png" />
+
+- [x] **Border, padding, and margin**
+  - `border` — a border around an element (almost any element).
+  - `padding` — space **inside** the border (text to border).
+  - `margin` — space **outside** the border.
+  - Sandbox: `border.html`, `padding.html`, `margin.html`.
+
+<img alt="html-css border result" src="./code_sandbox/snaps/html-css-04-result.png" />
+
+<img alt="html-css padding result" src="./code_sandbox/snaps/html-css-05-result.png" />
+
+<img alt="html-css margin result" src="./code_sandbox/snaps/html-css-06-result.png" />
+
+- [x] **Linking to an external sheet (paths)**
+  - Full URL: `href="https://www.w3schools.com/html/styles.css"`.
+  - Site path: `href="/html/styles.css"`.
+  - Same folder: `href="styles.css"`.
+  - File paths are covered later in **HTML File Paths**.
+- [x] **Cascade tip**
+  - A style on a parent applies to children. If `body` text is blue, headings and paragraphs inherit it unless you set something else.
+- [x] **HTML style tags**
+
+| Tag      | Description                                              |
+| -------- | -------------------------------------------------------- |
+| `<style>` | Style information for an HTML document                  |
+| `<link>`  | A link between a document and an external resource      |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run inline, internal, and external CSS, then fonts, border, padding, and margin.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-css` file.
+- [ ] Success: blue heading + red paragraph (inline); powderblue page with blue heading and red paragraph (internal and external); large verdana heading + larger courier paragraph; powderblue-bordered paragraph; extra inner space (padding); extra outer space (margin).
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-css/`
+- [ ] `http://127.0.0.1:8766/html-css/internal.html`
+- [ ] `http://127.0.0.1:8766/html-css/external.html`
+- [ ] `http://127.0.0.1:8766/html-css/fonts.html`
+- [ ] `http://127.0.0.1:8766/html-css/border.html`
+- [ ] `http://127.0.0.1:8766/html-css/padding.html`
+- [ ] `http://127.0.0.1:8766/html-css/margin.html`
+
+<img alt="html-css result" src="./code_sandbox/snaps/html-css-result.png" />
+
+The CSS examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-css/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Inline (`index.html`):
+
+<img alt="html-css inline source" src="./code_sandbox/snaps/html-css-code.png" />
+
+```html
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+```
+
+<img alt="html-css inline result" src="./code_sandbox/snaps/html-css-result.png" />
+
+Internal (`internal.html`):
+
+<img alt="html-css internal source" src="./code_sandbox/snaps/html-css-01-code.png" />
+
+```html
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+```
+
+<img alt="html-css internal result" src="./code_sandbox/snaps/html-css-01-result.png" />
+
+External HTML (`external.html`):
+
+<img alt="html-css external source" src="./code_sandbox/snaps/html-css-02-code.png" />
+
+```html
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+`styles.css`:
+
+<img alt="html-css styles.css source" src="./code_sandbox/snaps/html-css-03-code.png" />
+
+```css
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+```
+
+<img alt="html-css external result" src="./code_sandbox/snaps/html-css-02-result.png" />
+
+Fonts (`fonts.html`):
+
+<img alt="html-css fonts source" src="./code_sandbox/snaps/html-css-04-code.png" />
+
+```css
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+```
+
+<img alt="html-css fonts result" src="./code_sandbox/snaps/html-css-03-result.png" />
+
+Border (`border.html`):
+
+<img alt="html-css border source" src="./code_sandbox/snaps/html-css-05-code.png" />
+
+```css
+p {
+  border: 2px solid powderblue;
+}
+```
+
+<img alt="html-css border result" src="./code_sandbox/snaps/html-css-04-result.png" />
+
+Padding (`padding.html`):
+
+<img alt="html-css padding source" src="./code_sandbox/snaps/html-css-06-code.png" />
+
+```css
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+```
+
+<img alt="html-css padding result" src="./code_sandbox/snaps/html-css-05-result.png" />
+
+Margin (`margin.html`):
+
+<img alt="html-css margin source" src="./code_sandbox/snaps/html-css-07-code.png" />
+
+```css
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+```
+
+<img alt="html-css margin result" src="./code_sandbox/snaps/html-css-06-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does CSS stand for, and what is it for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Cascading Style Sheets**.
+- [x] It formats the **layout** of a webpage (color, font, size, spacing, position, backgrounds, devices).
+
+</details>
+
+### Question 2: What are the three ways to add CSS to HTML?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Inline** — `style` attribute.
+- [x] **Internal** — `<style>` in `<head>`.
+- [x] **External** — `<link>` to a `.css` file.
+
+</details>
+
+### Question 3: What does “cascading” mean here?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A style on a **parent** also applies to **children**.
+- [x] You can still override it on a child.
+
+</details>
+
+### Question 4: When do you use inline CSS?
+
+<details>
+<summary>Answer</summary>
+
+- [x] For a **unique** style on a **single** HTML element.
+- [x] It uses the **`style`** attribute.
+
+</details>
+
+### Question 5: Where does internal CSS go?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the **`<head>`**, inside a **`<style>`** element.
+- [x] It styles **that page** (for example all `h1` and `p` elements).
+
+</details>
+
+### Question 6: How do you attach an external style sheet?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<link rel="stylesheet" href="styles.css">` in `<head>`.
+- [x] The file must be **CSS only** and end with **`.css`**.
+- [x] One file can change the look of a **whole site**.
+
+</details>
+
+### Question 7: Which properties set text color, font, and size?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `color`
+- [x] `font-family`
+- [x] `font-size`
+
+</details>
+
+### Question 8: What is the difference between padding and margin?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Padding** is space **inside** the border (text to border).
+- [x] **Margin** is space **outside** the border.
+
+</details>
+
+### Question 9: Which tags belong in `<head>` for CSS?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<style>` for internal CSS.
+- [x] `<link>` for an external sheet.
+
+</details>
+
+### Question 10: How can you point `href` at an external sheet?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **full URL**.
+- [x] A **path** on the site (for example `/html/styles.css`).
+- [x] A **same-folder** filename (`styles.css`).
+
+</details>
+
+</details>
+
+## Summary
+
+Add CSS inline (`style`), internally (`<style>` in `<head>`), or externally (`<link>` to a `.css` file). External sheets scale to a whole site. Use `color`, `font-family`, and `font-size` for text; `border`, `padding` (inside), and `margin` (outside) for boxes. Styles cascade from parent to child unless overridden.
+
+## References
+
+- [HTML Styles CSS (W3Schools)](https://www.w3schools.com/html/html_css.asp)
+- [Try it Yourself: tryhtml_css_inline](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline)
+- [Try it Yourself: tryhtml_css_internal](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal)
+- [Try it Yourself: tryhtml_css_external](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external)
+- [Try it Yourself: tryhtml_css_fonts](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_fonts)
+- [Try it Yourself: tryhtml_css_borders](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_borders)
+- [Try it Yourself: tryhtml_css_padding](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_padding)
+- [Try it Yourself: tryhtml_css_margin](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_margin)
+- [Try it Yourself: tryhtml_css_external_url](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_url)
+- [CSS Tutorial (W3Schools)](https://www.w3schools.com/css/default.asp)
+- [MDN: Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started)
+- [MDN: `<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)
+- [MDN: `<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
+
+</details>

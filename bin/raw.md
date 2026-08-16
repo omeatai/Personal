@@ -1,121 +1,277 @@
-## Permissions Boundaries
+## IAM policy evaluation
 
-In this lesson, I'm going to cover permissions boundaries, permissions,
+In this lesson, you'll learn about IAM policy evaluation.
 
-boundaries are an advanced feature of I AM in
+So you need to understand the evaluation logic.
 
-which we can define the maximum permissions that are available
+So what happens when somebody tries to make access to a particular resource?
 
-to an I AM entity via an identity based policy.
+What is the process?
 
-So I will explain to you why that's
+And this is the chart, the evaluation logic workflow that comes from
 
-important and how we can implement permissions boundaries.
+AWS. I'm going to read through this.
 
-So let's start with an example here. We have Joanne.
+Firstly, up in the top left here,
 
-Joanne needs to access certain resources in AWS.
+every decision starts with a deny.
 
-She's been assigned some permissions via this policy which is a developer policy
+So remember all permissions are not allowed by default, everything is denied
 
-and it allows full control of S3 cloudwatch easy two and I am.
+and then AWS
 
-In addition to
+is going to look for and allow of some sort.
 
-the identity based policy,
+So it needs to evaluate all the applicable policies.
 
-we've also assigned a permissions boundary to Joanne.
+Now, is there an explicit deny?
 
-Now you can see the permissions boundary has fewer permissions.
+Remember that an explicit deny will always override
 
-It only has S3 cloud watch and EC2,
+any allow.
 
-the permissions boundary is actually there to set the maximum permissions that
+So immediately the final decision is deny if there is an explicit deny.
 
-the entity can have and they're assigned to users and to roles.
+Now, if not
 
-So in this case, assigned to
+the process continues.
 
-Joan directly what this means is even though theoretically,
+AWS is going to check is the principal's account, a member of an organization
 
-Joanne should have I am permissions via this developer
+with an applicable service control policy.
 
-policy where she has full control of this service.
+Now, if that isn't the case, then
 
-It's not present at all on the permissions boundary,
+the process just goes on to the next stage. If it is the case,
 
-which means it's actually limited.
+it needs to check if there's an allow. So if there's an SCP
 
-Therefore, she can do things like list buckets in Amazon S3.
+but it doesn't have an allow, then deny
 
-But Joanne will not be able to create a user account in. I am.
+is the final decision
 
-The permissions boundary has restricted the maximum
+if there isn allow, then again, we carry on to the next stage.
 
-permissions that we can assign to Joanne.
+Does the requested resource have a resource based policy?
 
-So why is this important?
+Remember,
 
-Well,
+resource based policies apply to things like S3 with bucket policies.
 
-let's have a look at one particular potential attack which can be
+Now, if there is a resource based policy,
 
-mitigated by using a permissions boundary
+it needs to check for and allow and if there is,
 
-and that's called privilege escalation.
+then you need to understand the process for resource based policies
 
-So here's the scenario we have Lindsay
+and how they work together with the identity based policy.
 
-Lindsay has I am full access.
+Well, look at that later.
 
-Therefore, she can do anything she wants to do in I am but not any other Aws service.
+Now, if there isn't an allow,
 
-So she can't launch easy two instances for example or create VPC S.
+then it needs to continue checking the identity based policy.
 
-Now, Lindsay goes ahead and creates a user. We'll call the user X user,
+If there is an identity based policy that applies,
 
-that user, she then assigns administrator access permissions,
+then the process continues and it's going to check for an allow.
 
-she's able to do this because she has I am full access permissions.
+If not, then, well, we don't have and allow in the resource based policy.
 
-She can create users and assign any policy she wants to them.
+If there is one and we don't have one and identity based policy. So of course,
 
-So Lindsay applies the administrator access and ex
+it's an implicit deny.
 
-user now becomes more powerful than her.
+Now, if there isn't allow, then again, the process will continue.
 
-She can then log in with the ex user account
+So, so there is an allow for the action
 
-and do something that perhaps she shouldn't,
+but then AWS will check if the principal has a permissions boundary applied.
 
-which is to go and mine Bitcoins on company dollars.
+If the answer is yes, then again,
 
-So this is a privilege escalation attack.
+it's going to check for an allow in the permissions boundary that's applied
 
-Lindsay has created a user and that user has more permissions than she does
+to that principle.
 
-and she's able to then log in as that user and perform api actions.
+If that's good, then we carry on. If not, there's a deny.
 
-OK? So this is bad news. Let's mitigate this problem with a permissions boundary.
+In the last stage here, AWS is going to check is the principal a session principle.
 
-So here we have Lindsay, she has I am full access. She still needs those permissions.
+If the answer is no, then there's an allow
 
-That is her job role.
+if the answer is yes then it needs to check for a session policy
 
-However,
+with an allow, it will go to allow and if not a deny.
 
-what we do then is add the permissions boundary.
+And again, it will check here.
 
-The permissions boundary ensures that users created by Lindsay
+Is this a role session?
 
-have the same or fewer permissions than her.
+If yes, then allow. And if not, then no,
 
-So Lindsay still can create the ex user account
+this is a bit complicated. I know,
 
-and assign the administrator access permissions policy.
+but it's worth spending a bit of time understanding this evaluation logic.
 
-But when she logs in as that user,
+Now, what are the steps for authorizing requests?
 
-she won't have more permissions than she already does.
+So we can have our request coming from a variety of sources, the console,
 
-So that is preventing privilege escalation using a permissions boundary.
+the CLI or the API,
+
+they go through to IAM.
+
+And the first thing that needs to happen is authentication.
+
+AWS needs to authenticate the principle that makes the request.
+
+So for example,
+
+a user name and password for the console that checks that you
+
+are who you say you are because you know the password.
+
+So perhaps a user is logging in.
+
+Now the request context is formed.
+
+The request context includes the actions,
+
+these are the actions or operations that the principle in this case,
+
+the user account wants to perform
+
+the resources are the resources objects,
+
+the AWS services, for example, on which the actions need to be performed.
+
+The principle,
+
+the user role, Federated user or application that sent the request
+
+is identified in the request context
+
+and then environment data. So
+
+information about the IP address to user agent SSL status and so on
+
+is also present because for example, you might have a policy
+
+that restricts access based on the source IP address.
+
+That's why that information is important
+
+in the request context.
+
+Next, we have the resource data,
+
+data related to the resource that is being requested.
+
+Number two, in the second stage, here
+
+is processing the request context.
+
+So in this case, the user has an identity based policy applied
+
+and the S3 bucket they're trying to access has a resource based policy applied.
+
+So AWS will evaluate whether to authorize that access
+
+and it will do so by evaluating all the policies within the account.
+
+In this case,
+
+the user wants to retrieve an object using the S3
+
+get object API action and has been granted that access
+
+and that is that final stage.
+
+So that's determining whether a request is allowed or denied.
+
+Now, there are a few different types of policy.
+
+We've talked about identity based policies before
+
+these are attached to users, groups and roles
+
+and resource policies which are attached to resources,
+
+defining the permissions for a specific principle to access the resource.
+
+We also have permissions boundaries,
+
+these set the maximum permissions that identity based policies can grant
+
+and IAM entity.
+
+And also we have organizations, service control policies.
+
+They specify the maximum permissions for
+
+an organization or an organizational unit
+
+and the accounts that are created or contained within that organization Oor OU
+
+lastly, we have session policies,
+
+these are used with the assumed role API actions.
+
+In this final slide,
+
+I want to show you another visual representation
+
+of how policies are evaluated within AWS.
+
+So we have an identity based policy
+
+and resource based policy.
+
+Now what happens when we have these multiple policies applied?
+
+Well, what actually happens
+
+is the effective permissions are those
+
+that are granted
+
+in either the identity based policy or the resource based policy.
+
+Next, we have an identity based policy
+
+and the permissions boundary.
+
+In this case,
+
+the effective permissions are only
+
+the permissions that are allowed in both the identity based policy
+
+and that are allowed through the permissions boundary.
+
+And then lastly, we have an identity based policy
+
+and an organization's SCP.
+
+And again, in this case,
+
+the effective permissions are those that are granted in both the SCP
+
+and the identity based policy.
+
+And there are some determination rules
+
+by default or requests are implicitly denied
+
+though the root user has full access,
+
+an explicit allow in an identity based or resource based policy
+
+overrides this default.
+
+And if a permissions boundary organizations SCP or session policy is present,
+
+it might override the allow with an implicit deny.
+
+Lastly, an explicit deny in any policy overrides any allows.
