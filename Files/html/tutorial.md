@@ -357,7 +357,7 @@ You do not need a professional IDE to learn HTML. A **simple text editor**—**N
 ## Detailed Explanation
 
 - [x] **A simple text editor is enough**
-  - Web pages *can* be built with professional HTML editors.
+  - Web pages _can_ be built with professional HTML editors.
   - For **learning**, the tutorial recommends **Notepad** (PC) or **TextEdit** (Mac).
   - Writing tags by hand in a plain editor is a good way to learn HTML.
 - [x] **Step 1 (PC): Open Notepad**
@@ -416,13 +416,11 @@ Write the Notepad example locally, serve it (Cursor blocks `file://`), and confi
 ```html
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h1>My First Heading</h1>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -434,15 +432,13 @@ Write the Notepad example locally, serve it (Cursor blocks `file://`), and confi
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -496,13 +492,11 @@ Sandbox: `code_sandbox/html-editors/index.html` (Notepad / save-as `index.htm` e
 ```html
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h1>My First Heading</h1>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -515,15 +509,13 @@ Sandbox: `code_sandbox/html-editors/tryit.html` (online editor example)
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -766,12 +758,10 @@ Sandbox: `code_sandbox/html-basic/index.html`
 ```html
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -815,7 +805,7 @@ Image (`img.html`):
 <img alt="html-basic image source" src="./code_sandbox/snaps/html-basic-04-code.png" />
 
 ```html
-<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" />
 ```
 
 <img alt="html-basic image result" src="./code_sandbox/snaps/html-basic-04-result.png" />
@@ -1050,12 +1040,10 @@ Nested document: `code_sandbox/html-elements/index.html`
 ```html
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -1067,12 +1055,10 @@ Omitted end tags: `code_sandbox/html-elements/no-endtag.html`
 
 ```html
 <html>
-<body>
-
-<p>This is a paragraph
-<p>This is a paragraph
-
-</body>
+  <body>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+  </body>
 </html>
 ```
 
@@ -1083,7 +1069,10 @@ Line break: `code_sandbox/html-elements/br.html`
 <img alt="html-elements br source" src="./code_sandbox/snaps/html-elements-02-code.png" />
 
 ```html
-<p>This is a <br> paragraph with a line break.</p>
+<p>
+  This is a <br />
+  paragraph with a line break.
+</p>
 ```
 
 <img alt="html-elements br result" src="./code_sandbox/snaps/html-elements-02-result.png" />
@@ -1194,5 +1183,525 @@ An element is **start tag + content + end tag**, except **empty** elements like 
 
 </details>
 
+<details>
+  <summary>HTML Attributes</summary>
 
+## Introduction
 
+HTML **attributes** add extra information about an element. They go in the **start tag**, usually as `name="value"`. This chapter covers **`href`**, **`src`**, **`width`/`height`**, **`alt`**, **`style`**, **`lang`**, and **`title`**, plus quoting and lowercase conventions.
+
+## Detailed Explanation
+
+- [x] **Attribute rules**
+  - All HTML elements can have attributes.
+  - Attributes provide **additional information** about elements.
+  - Always specified in the **start tag**.
+  - Usually **name/value** pairs: `name="value"`.
+- [x] **The `href` attribute**
+  - `<a>` is a hyperlink. **`href`** is the URL it goes to.
+  - Sandbox: `code_sandbox/html-attributes/href.html`.
+
+<img alt="html-attributes href result" src="./code_sandbox/snaps/html-attributes-result.png" />
+
+- [x] **The `src` attribute**
+  - `<img>` embeds an image. **`src`** is the path.
+  - **Absolute URL:** full address, e.g. `https://www.w3schools.com/images/img_girl.jpg`. External images can be copyrighted or disappear.
+  - **Relative URL:** no domain. `img_girl.jpg` is relative to the **current page**; `/images/img_girl.jpg` is relative to the **domain**.
+  - Prefer **relative** URLs so they do not break if the domain changes.
+- [x] **`width` and `height`**
+  - Size the image in **pixels**.
+  - Example: `width="500"` `height="600"` with `src="img_girl.jpg"`.
+  - Sandbox: `code_sandbox/html-attributes/img.html`.
+
+<img alt="html-attributes img size result" src="./code_sandbox/snaps/html-attributes-01-result.png" />
+
+- [x] **The `alt` attribute**
+  - **Required** on `<img>`. Alternate text if the image cannot be shown (slow connection, bad `src`, or a screen reader).
+  - Broken `src` (`img_typo.jpg`) still shows **Girl with a jacket**.
+  - Sandbox: `code_sandbox/html-attributes/alt-error.html`.
+
+<img alt="html-attributes alt fallback result" src="./code_sandbox/snaps/html-attributes-02-result.png" />
+
+- [x] **The `style` attribute**
+  - Adds styles (color, font, size, and more).
+  - Example: red paragraph.
+  - Sandbox: `code_sandbox/html-attributes/style.html`.
+
+<img alt="html-attributes style result" src="./code_sandbox/snaps/html-attributes-03-result.png" />
+
+- [x] **The `lang` attribute**
+  - Put **`lang`** on `<html>` to declare the page language (helps search engines and browsers).
+  - English: `<html lang="en">`. Country: `<html lang="en-US">` (language + country).
+- [x] **The `title` attribute**
+  - Extra information about an element.
+  - Shown as a **tooltip** on mouse over.
+  - Sandbox: `code_sandbox/html-attributes/title.html` (`title="I'm a tooltip"`).
+
+<img alt="html-attributes title result" src="./code_sandbox/snaps/html-attributes-04-result.png" />
+
+- [x] **Lowercase and quotes**
+  - The HTML standard does not require lowercase names or quotes, but **W3C recommends** both; **XHTML requires** them.
+  - W3Schools always uses **lowercase names** and **quoted values**.
+  - Quotes are **required** when the value has a **space** (`title=Description of W3Schools` fails).
+  - Double quotes are most common; use single quotes if the value itself contains double quotes (or the reverse).
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the href, sized image, broken-image alt, style, and title sandboxes.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-attributes` example.
+- [ ] Success: blue **Visit W3Schools** link; 500×600 photo; alt text **Girl with a jacket** on a missing file; red paragraph; tooltip paragraph.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-attributes/href.html`
+- [ ] `http://127.0.0.1:8766/html-attributes/img.html`
+- [ ] `http://127.0.0.1:8766/html-attributes/alt-error.html`
+- [ ] `http://127.0.0.1:8766/html-attributes/style.html`
+- [ ] `http://127.0.0.1:8766/html-attributes/title.html` (hover for the tooltip)
+
+<img alt="html-attributes href result" src="./code_sandbox/snaps/html-attributes-result.png" />
+
+The attribute examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-attributes/href.html`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+`href` (`href.html`):
+
+<img alt="html-attributes href source" src="./code_sandbox/snaps/html-attributes-code.png" />
+
+```html
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+```
+
+<img alt="html-attributes href result" src="./code_sandbox/snaps/html-attributes-result.png" />
+
+Image size (`img.html`):
+
+<img alt="html-attributes img source" src="./code_sandbox/snaps/html-attributes-01-code.png" />
+
+```html
+<img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600" />
+```
+
+<img alt="html-attributes img size result" src="./code_sandbox/snaps/html-attributes-01-result.png" />
+
+Broken image + `alt` (`alt-error.html`):
+
+<img alt="html-attributes alt-error source" src="./code_sandbox/snaps/html-attributes-02-code.png" />
+
+```html
+<img src="img_typo.jpg" alt="Girl with a jacket" />
+```
+
+<img alt="html-attributes alt fallback result" src="./code_sandbox/snaps/html-attributes-02-result.png" />
+
+`style` (`style.html`):
+
+<img alt="html-attributes style source" src="./code_sandbox/snaps/html-attributes-03-code.png" />
+
+```html
+<p style="color:red;">This is a red paragraph.</p>
+```
+
+<img alt="html-attributes style result" src="./code_sandbox/snaps/html-attributes-03-result.png" />
+
+`title` (`title.html`):
+
+<img alt="html-attributes title source" src="./code_sandbox/snaps/html-attributes-04-code.png" />
+
+```html
+<p title="I'm a tooltip">This is a paragraph.</p>
+```
+
+<img alt="html-attributes title result" src="./code_sandbox/snaps/html-attributes-04-result.png" />
+
+`lang` on the document (used on these sandbox files):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    ...
+  </body>
+</html>
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Where do you put attributes, and in what form?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the **start tag**.
+- [x] Usually **name/value** pairs: `name="value"`.
+
+</details>
+
+### Question 2: What does `href` on `<a>` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It specifies the **URL** of the page the link goes to.
+
+</details>
+
+### Question 3: Absolute vs relative `src` — which is safer for your own images?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Relative** URLs (no domain).
+- [x] They do not break if you **change domain**.
+- [x] Absolute URLs point at another site and can vanish or be copyrighted.
+
+</details>
+
+### Question 4: Why set `width` and `height` on `<img>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They specify the image size in **pixels**.
+
+</details>
+
+### Question 5: Why is `alt` required?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is the **alternate text** if the image cannot be displayed.
+- [x] Used for slow connections, bad `src`, and **screen readers**.
+
+</details>
+
+### Question 6: What does `lang` on `<html>` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Declares the **language** of the page.
+- [x] Helps **search engines** and **browsers**.
+- [x] Example: `lang="en"` or `lang="en-US"`.
+
+</details>
+
+### Question 7: What does `title` show?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Extra information as a **tooltip** when you mouse over the element.
+
+</details>
+
+### Question 8: Must attribute names be lowercase and values quoted?
+
+<details>
+<summary>Answer</summary>
+
+- [x] HTML does **not require** either.
+- [x] **W3C recommends** lowercase and quotes; **XHTML requires** them.
+- [x] Quotes are needed when the value contains a **space**.
+
+</details>
+
+### Question 9: When do you use single quotes around an attribute value?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When the value itself contains **double quotes**.
+- [x] Or use double quotes if the value contains **single quotes**.
+
+</details>
+
+</details>
+
+## Summary
+
+Attributes live in the **start tag** as `name="value"`. **`href`** is the link URL, **`src`** the image path (prefer **relative**), **`width`/`height`** size in pixels, **`alt`** fallback text, **`style`** inline CSS, **`lang`** the page language, **`title`** a tooltip. Use **lowercase names** and **quoted values**.
+
+## References
+
+- [HTML Attributes (W3Schools)](https://www.w3schools.com/html/html_attributes.asp)
+- [Try it Yourself: tryhtml_attributes_link](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_link)
+- [Try it Yourself: tryhtml_attributes_img](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img)
+- [Try it Yourself: tryhtml_attributes_alt_error](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt_error)
+- [Try it Yourself: tryhtml_attributes_style](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_style)
+- [Try it Yourself: tryhtml_attributes_title](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title)
+- [HTML Attribute Reference](https://www.w3schools.com/tags/ref_attributes.asp)
+- [HTML Language Code Reference](https://www.w3schools.com/tags/ref_language_codes.asp)
+- [MDN: HTML attribute reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes)
+
+</details>
+
+<details>
+  <summary>HTML Headings</summary>
+
+## Introduction
+
+HTML **headings** are titles and subtitles on a page. They use `<h1>` through `<h6>`: **`<h1>` is most important**, **`<h6>` least**. Search engines and skimmers use them for **structure**. Use headings for **headings**, not just to make text big.
+
+## Detailed Explanation
+
+- [x] **`<h1>` to `<h6>`**
+  - Headings are titles or subtitles you want on a webpage.
+  - `<h1>` = most important; `<h6>` = least important.
+  - Browsers add **margin** (white space) before and after a heading.
+  - Sandbox: `code_sandbox/html-headings/index.html`.
+
+<img alt="html-headings h1 to h6 result" src="./code_sandbox/snaps/html-headings-result.png" />
+
+- [x] **Headings are important**
+  - Search engines **index** structure and content from headings.
+  - Users often **skim** by headings, so headings should show the **document structure**.
+  - Use `<h1>` for the **main** heading, then `<h2>`, then less important `<h3>`, and so on.
+  - Example outline: **Travel Guide** (`h1`) → **Europe** / **Asia** (`h2`) → countries (`h3`).
+  - **Tip:** use **only one `<h1>` per page** — it is the main topic or title.
+  - **Note:** use heading tags for headings only. **Do not** use them just to make text BIG or bold.
+  - Sandbox: `code_sandbox/html-headings/structure.html`.
+
+<img alt="html-headings structure result" src="./code_sandbox/snaps/html-headings-01-result.png" />
+
+- [x] **Bigger headings**
+  - Each heading has a **default size**.
+  - You can change size with the **`style`** attribute and CSS **`font-size`**.
+  - Example: `<h1 style="font-size:60px;">Heading 1</h1>`.
+  - That still **is** a heading (for structure); the style only changes how large it looks.
+  - Sandbox: `code_sandbox/html-headings/size.html`.
+
+<img alt="html-headings font-size result" src="./code_sandbox/snaps/html-headings-02-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the six heading levels, the Travel Guide outline, and the 60px `<h1>`.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open the three `html-headings` files.
+- [ ] Success: Heading 1–6 shrink in size; Travel Guide nests continents under one `h1`; the sized `h1` is visually larger than the default.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-headings/`
+- [ ] `http://127.0.0.1:8766/html-headings/structure.html`
+- [ ] `http://127.0.0.1:8766/html-headings/size.html`
+
+<img alt="html-headings h1 to h6 result" src="./code_sandbox/snaps/html-headings-result.png" />
+
+The heading examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-headings/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Levels 1–6 (`index.html`):
+
+<img alt="html-headings h1 to h6 source" src="./code_sandbox/snaps/html-headings-code.png" />
+
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+<img alt="html-headings h1 to h6 result" src="./code_sandbox/snaps/html-headings-result.png" />
+
+Document structure (`structure.html`):
+
+<img alt="html-headings structure source" src="./code_sandbox/snaps/html-headings-01-code.png" />
+
+```html
+<h1>Travel Guide</h1>
+
+<h2>Europe</h2>
+<h3>France</h3>
+<h3>Italy</h3>
+
+<h2>Asia</h2>
+<h3>India</h3>
+<h3>Thailand</h3>
+```
+
+<img alt="html-headings structure result" src="./code_sandbox/snaps/html-headings-01-result.png" />
+
+Custom size (`size.html`):
+
+<img alt="html-headings font-size source" src="./code_sandbox/snaps/html-headings-02-code.png" />
+
+```html
+<h1 style="font-size:60px;">Heading 1</h1>
+```
+
+<img alt="html-headings font-size result" src="./code_sandbox/snaps/html-headings-02-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Which tags define HTML headings?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<h1>` through `<h6>`.
+- [x] `<h1>` is the **most important**; `<h6>` is the **least important**.
+
+</details>
+
+### Question 2: Do browsers add space around headings?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** They add **margin** (white space) before and after a heading.
+
+</details>
+
+### Question 3: Why do search engines care about headings?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They use headings to **index** the **structure and content** of the page.
+
+</details>
+
+### Question 4: How should you order heading levels?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<h1>` for the **main** heading.
+- [x] Then `<h2>`, then less important `<h3>`, and so on.
+
+</details>
+
+### Question 5: How many `<h1>` elements should a page have, according to this chapter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Only one** `<h1>` per page.
+- [x] It represents the **main topic or title**.
+
+</details>
+
+### Question 6: Should you use heading tags just to make text look big?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Use headings for **headings only**.
+- [x] Do not use them just to make text **BIG** or **bold**.
+
+</details>
+
+### Question 7: How do you change a heading’s visual size without changing its level?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use the **`style`** attribute with CSS **`font-size`**.
+- [x] Example: `<h1 style="font-size:60px;">Heading 1</h1>`.
+
+</details>
+
+### Question 8: In the Travel Guide example, what is `<h1>` vs `<h2>` vs `<h3>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<h1>`: **Travel Guide** (page topic).
+- [x] `<h2>`: **Europe** and **Asia** (regions).
+- [x] `<h3>`: countries (**France**, **Italy**, **India**, **Thailand**).
+
+</details>
+
+</details>
+
+## Summary
+
+Headings are `<h1>`–`<h6>`: **h1 most important**, **h6 least**. They outline the page for **search engines** and **skimmers**. Use **one `<h1>`**, then `<h2>`, then `<h3>`. Do **not** fake size with heading tags; if you need a larger look, keep the heading and set **`font-size`** with **`style`**. Browsers add **margin** around headings.
+
+## References
+
+- [HTML Headings (W3Schools)](https://www.w3schools.com/html/html_headings.asp)
+- [Try it Yourself: tryhtml_headings](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings)
+- [Try it Yourself: tryhtml_headings_structure](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_structure)
+- [Try it Yourself: tryhtml_headings_size](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size)
+- [HTML headings tag reference](https://www.w3schools.com/tags/tag_hn.asp)
+- [MDN: Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
+
+</details>
