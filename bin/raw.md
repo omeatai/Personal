@@ -1,255 +1,121 @@
-## Setup Multi-Factor Authentication
+## Permissions Boundaries
 
-In this lesson,
+In this lesson, I'm going to cover permissions boundaries, permissions,
 
-you'll learn about the IAM
+boundaries are an advanced feature of I AM in
 
-authentication methods and multi-factor authentication.
+which we can define the maximum permissions that are available
 
-So firstly,
+to an I AM entity via an identity based policy.
 
-let's look at the different authentication methods available within AWS.
+So I will explain to you why that's
 
-IAM
+important and how we can implement permissions boundaries.
 
-So here we have a user account called John. John wants to access
+So let's start with an example here. We have Joanne.
 
-AWS
+Joanne needs to access certain resources in AWS.
 
-and so he logs into the console
+She's been assigned some permissions via this policy which is a developer policy
 
-using a user name and a password optionally, he can supply
+and it allows full control of S3 cloudwatch easy two and I am.
 
-a MFA token, a multi
+In addition to
 
-factor authentication token.
+the identity based policy,
 
-We'll talk about that a bit more in a moment
+we've also assigned a permissions boundary to Joanne.
 
-and this provides access to the management console.
+Now you can see the permissions boundary has fewer permissions.
 
-So user name and password is used to access the management console.
+It only has S3 cloud watch and EC2,
 
-John is authenticated
+the permissions boundary is actually there to set the maximum permissions that
 
-and can then be authorized to perform operations through the console.
+the entity can have and they're assigned to users and to roles.
 
-On the other hand, John might want to use the CLI or the API
+So in this case, assigned to
 
-for this we can use what are called access keys.
+Joan directly what this means is even though theoretically,
 
-These are composed of an access key ID and a secret access key.
+Joanne should have I am permissions via this developer
 
-And you can think of this also as like a
+policy where she has full control of this service.
 
-user name and password and it's called long term credentials.
+It's not present at all on the permissions boundary,
 
-You create this and it's stored in your account and you can use it long term,
+which means it's actually limited.
 
-you actually have to download a copy of this to be able to use it
+Therefore, she can do things like list buckets in Amazon S3.
 
-yourself and then you're able to use it for as long as this access key is
+But Joanne will not be able to create a user account in. I am.
 
-active within your account. So this is for the
+The permissions boundary has restricted the maximum
 
-AWS API, whether you're using the CLI
+permissions that we can assign to Joanne.
 
-or directly through programmatic input via the API itself.
+So why is this important?
 
-So access keys are used for programmatic access,
+Well,
 
-user names and passwords are used for console access.
+let's have a look at one particular potential attack which can be
 
-So let's look at multi factor authentication.
+mitigated by using a permissions boundary
 
-So let's look at multi factor authentication with multi factor authentication.
+and that's called privilege escalation.
 
-We have the something you know element.
+So here's the scenario we have Lindsay
 
-That's what we're all used to, which is a password.
+Lindsay has I am full access.
 
-So the password is hopefully something complex,
+Therefore, she can do anything she wants to do in I am but not any other Aws service.
 
-but you don't want to write it down or share it with people. It's a secret.
+So she can't launch easy two instances for example or create VPC S.
 
-It's something that only you should know. So that's your password.
+Now, Lindsay goes ahead and creates a user. We'll call the user X user,
 
-We then add a second element and that is
+that user, she then assigns administrator access permissions,
 
-something that you have something that you have can be
+she's able to do this because she has I am full access permissions.
 
-a smartphone with an application on it that generates a token or it can
+She can create users and assign any policy she wants to them.
 
-be a physical token like the picture on the right hand side here.
+So Lindsay applies the administrator access and ex
 
-So something
+user now becomes more powerful than her.
 
-which has cryptography in.
+She can then log in with the ex user account
 
-So it uses encryption and various algorithms to prove that
+and do something that perhaps she shouldn't,
 
-you actually have that physical device in your possession.
+which is to go and mine Bitcoins on company dollars.
 
-So now even if someone finds out your password, they need to have this device as well.
+So this is a privilege escalation attack.
 
-A third way is called biometrics. That's something you are.
+Lindsay has created a user and that user has more permissions than she does
 
-So things like retina scans and fingerprints, we don't use those in
+and she's able to then log in as that user and perform api actions.
 
-AWS, but we do have the something you have factor here. The second factor can be
+OK? So this is bad news. Let's mitigate this problem with a permissions boundary.
 
-a authentication code or a token
+So here we have Lindsay, she has I am full access. She still needs those permissions.
 
-that might be from a physical device.
+That is her job role.
 
-So we have our user, our user has a password, then we add that second element.
+However,
 
-So we could use a virtual MFA device.
+what we do then is add the permissions boundary.
 
-For example, Google authenticator on your smart phone or a hardware device.
+The permissions boundary ensures that users created by Lindsay
 
-The hardware device can use security keys and what
+have the same or fewer permissions than her.
 
-are called time based one time password tokens.
+So Lindsay still can create the ex user account
 
-It's a best practice that we enable multi factual authetication for the
+and assign the administrator access permissions policy.
 
-root account and also for our own individual IAM user accounts as well.
+But when she logs in as that user,
 
-So then of course,
+she won't have more permissions than she already does.
 
-we are less prone to any issues from losing
-
-our passwords or someone guessing what our password is.
-
-We now have to have that physical device present
-
-whenever we want to log in through the console.
-
-Now, we can also use multi factor authentication
-
-with the CLI
-
-and the API as well and that will cover in a bit more detail later on in the course.
-
-Hi guys.
-
-In this lesson we're gonna set
-
-up Multi-Factor Authentication
-
-for our IAM user account.
-
-I'm logged into the AWS Management console
-
-and I'm logged in with my individual IAM user.
-
-As you can see, there are a couple
-
-of security recommendations.
-
-One is to add MFA for the root user,
-
-and the other is to add MFA for ourselves,
-
-so our individual IAM user account.
-
-I'm gonna show you how to set it up for yourself.
-
-You can also log in and set it up
-
-for the root user account as well.
-
-You could choose the 'Add MFA" button,
-
-but I'm gonna go to the user account
-
-and show you how to do it here.
-
-I'm gonna choose my username,
-
-go to "Security credentials",
-
-and then I want to assign an MFA device.
-
-The MFA device can use an authenticator app,
-
-for example, Google Authenticator or Authy.
-
-I'm gonna choose one called Authy
-
-and I'm gonna give it a name "AuthyPhone".
-
-There's also an option to use security keys
-
-and hardware tokens.
-
-So let's click on "Next".
-
-Now, there are three steps.
-
-The first one is to install the application
-
-such as Google Authenticator
-
-on your mobile device or computer.
-
-Then you need to open your Authenticator app
-
-and show the QR code on this page,
-
-and then use the app to scan the code.
-
-Alternatively, you can type in a secret key.
-
-I'm gonna show the QR code
-
-and then I'm gonna use my app
-
-to scan the QR code.
-
-Once you've done that,
-
-you should enter your MFA code
-
-that's on your application.
-
-So mine is 414018.
-
-Then I need to wait for that code to expire
-
-and get the next code
-
-and enter that one on the second code box here.
-
-My next code is 561486.
-
-Okay, now I can add MFA.
-
-So that's done.
-
-I'm now able to use MFA to log into my account.
-
-So let's log out
-
-and I'm gonna try to log back in again.
-
-So let's sign into the console,
-
-enter my account id, my username and my password,
-
-and then of course it's gonna ask me
-
-for that second factor of authentication,
-
-the MFA code.
-
-My current code is 820902.
-
-So let's submit that code
-
-and now I'm logged back in again.
-
-So now we have two-factor authentication
-
-for our account.
+So that is preventing privilege escalation using a permissions boundary.
