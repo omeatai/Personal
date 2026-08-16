@@ -1,393 +1,183 @@
-## AWS Identity and Access Management
+## Creating IAM Users and Groups
 
-Welcome to the AWS Identity and Access Management section. So the very first thing you need to understand
+Welcome back in this lesson.
 
-in quite a bit of detail to work with AWS is how to securely connect to your AWS account, both through
+We're going to head to the I AM service and we're gonna create a user
 
-the console, through the command line, and through the API.
+account that we can log in with and assign that user account to a group.
 
-So we need to learn about the various different constructs, users, groups, roles, and policies.
+And then I'm gonna show you how you can actually log in as that user.
 
-We also need to learn how we can authenticate and be authorized to then access AWS services. And we
+I'm back in the AWS management console. I'm gonna click on I AM
 
-can do that through various things, including access keys, identity-based policies and resource-based
+and I'm in the identity and access management service.
 
-policies.
+Now, what we're going to do is we're going to create a user
 
-We can also configure multi-factor authentication and password policies to make sure that our accounts
+at the moment. There are no user accounts in this account.
 
-are as secure as possible.
+First, I'm gonna create a user group,
 
-So you'll learn how to use the AWS IAM service in this section, and also the various best practices
+the user group is the way that we're
 
-that you need to know both for the exam and just to make sure that your accounts are secure.
+gonna assign the permissions to the user account.
 
--: Hey guys, welcome to this lesson.
+So we assign the permissions to the group and then we add
 
-In this lesson I'm gonna cover the AWS Identity
+the user to the group and the user will inherit those permissions.
 
-and Access Management Service known as IAM
+So what I'm gonna do here is create a group.
 
-or also sometimes called IAM
+I'm simply gonna call this one admins because the account
 
-So IAM is a really important service to understand
+I'm going to create is gonna be an administrative account.
 
-because it's the service that we use
+Then I need to attach a permissions policy here.
 
-for authentication and authorization.
+I'm gonna choose administrator access. This is a very powerful policy.
 
-So here we have an AWS account with AWS IAM.
+The policies are written in javascript object notation
 
-Of course, there's different ways that we can manage AWS.
+if I expand the policy here, we can see the
 
-We've got the console.
+JSON code. So here this statement is fairly straightforward.
 
-We've got the command line interface
+The effect is to allow
 
-and the API through SDKs.
+the action is a star. A star is a wildcard, it means anything.
 
-So through IAM, we can create things like users and roles.
+So any action, all actions
 
-We can use federated users
+and then the resources are star as well.
 
-and we can enable authentication for applications as well.
+So another wildcard so essentially allow all actions
 
-Now, all IAM principles must be authenticated
+on all resources so you can do anything.
 
-to send requests.
+So that's what I want for this particular user account.
 
-In other words, to send any kind of API request to AWS.
+So I selected administrator access and then in the bottom right hand corner,
 
-A principle is a person
+I'm going to create that group.
 
-or application that makes a request for an action,
+So now I have my admin
 
-that's an API action or operation on an AWS resource.
+group. Next, I'm gonna click on users and create user.
 
-Now, firstly, we have authentication.
+I'm gonna provide a name. I'm simply gonna call my Neil.
 
-So that's essentially proving that you are
+Next,
 
-who you say you are.
+I'm gonna select this option to provide the
 
-For example, by supplying a password,
+user with access to the management console.
 
-then we need authorization.
+That means I'll be able to log in to the
 
-Authorization is where we either are allowed
+management console rather than just using programmatic access methods.
 
-or denied access to resources.
+Now, here we're given a choice, we can create an I AM user.
 
-And here we have policies like identity-based policies
+But what Aws are recommending is that we use the I Am Identity Center.
 
-and resource-based policies,
+Now,
 
-which define what we are allowed to do.
+I am identity center provides some amazing features like single sign
 
-So first through authentication,
+on it provides access to business applications and multiple accounts.
 
-we prove we are who we say we are.
+It's a very,
 
-Then AWS determines what we are allowed to actually do.
+very useful service and Aws are now trying to encourage people to start using it.
 
-For example, performing API actions,
+We will get into that later in the course. However, we do need to learn.
 
-like run instances on EC2 that launches a virtual server,
+I Am as well because it's core to the Aws exams
 
-get bucket retrieves information about buckets
+and it's what I'm gonna use for a lot of.
 
-and create user means to create a user in IAM.
+So I'm actually using I Am for most of my accounts
 
-So the API actions are authorized on the AWS resources.
+because I don't need single sign on in many cases.
 
-A few of the core components of IAM are users, user groups,
+So here we're going to create an I AM user.
 
-roles and policies.
+I'm gonna set a custom password and I'm gonna deselect
 
-User groups are used for adding users
+this requirement to change the password at the next login.
 
-and then applying permissions policies.
+And then I'm gonna click on next.
 
-So we have the user account,
+We now have the option to add the user to a group,
 
-you can log in with a user account.
+which is exactly what we're going to do by selecting admins.
 
-We have the policy that determines
+We could also copy permissions from existing users or attach policies directly.
 
-what users are allowed to do,
+But when we want to create multiple users who have the same permissions,
 
-what API actions are they allowed
+it's better to create a group rather than attaching policies
 
-to take in the account or on a specific resource.
+directly to every individual user account from a management perspective.
 
-And so the way that we apply these policies
+It's much easier. Now, I've selected my group, I'll click on next
 
-to multiple users is by attaching them to a user group.
+and then create user. Now we're presented with the console sign in details.
 
-So if we have several people
+We already know these from earlier on. This is what we're going to use to log in.
 
-who have a common job role, we can attach a policy
+I'm gonna copy this so I can go straight across and
 
-that provides the permissions they need to do their job,
+show you how to log in as this user account.
 
-put all those users in the group,
+We know that the user name is Neil and the
 
-and now we only have one permissions policy to manage.
+console password is available here for us to copy.
 
-So the user will gain the permissions applied to the group
+Uh At this point in time, we won't be able to see it again.
 
-through the policy,
+We would have to change it in the future if we forget what it is.
 
-these are called identity-based policies.
+So I'm done with creating the user account.
 
-They get applied to users, groups and roles.
+I can return back to the user list here and I'm going
 
-And roles are used for delegation,
+to open a private window so I can log in separately.
 
-and they are assumed.
+So here I'm using a private window.
 
-We'll talk a bit more about that later.
+I'm gonna paste in the sign in link for I am.
 
-But essentially what's happening here
+This takes me to the login page. I'm gonna enter my user name
 
-is a role is an identity
+and then my password and then simply sign in.
 
-which has permissions assigned to it via policy
+So now I'm signed in
 
-and then you can assume the role
+and I'm signed in with my individual user account for some reason.
 
-and take on whatever those permissions are.
+It's, it's put me into Ohio. I was in us East before.
 
-It's kind of like putting that hat on,
+So let's just change back to us east.
 
-that's why it's a picture of a hat.
+Most of the labs that we do in the course are gonna be run using North Virginia.
 
-You might put a hat on for your development role
+It's not always essential,
 
-and take on the development permissions.
+but often it is required depending on the code that we
 
-Maybe then you're gonna do a CIS ops role.
+provide for you or the specific instructions that we show you.
 
-You take off your development hat, put on the the role hat
+So you can now see that I'm logged in as Neil at D CD lab training. Ok.
 
-for development, and you become a developer,
+So I'm logged in as my individual user account
 
-so that's what a role is.
+and this account has full administrative permissions so we can use it for
 
-We'll look at that more a bit later on.
+all of the lab exercises that we're going to perform in this course.
 
-Now the policies define the permissions for the identities
+And from now on,
 
-or resources they are associated with.
+you should be logging in with your individual I
 
-Let's look at IAM users in a bit more detail.
-
-When you created your account, you supplied an email address
-
-and that created the root user account.
-
-And as I've mentioned before,
-
-the root user has full permissions
-
-and you can't restrict most of those permissions.
-
-So it's a best practice not to use that account.
-
-What you should do is set a very strong password
-
-and enable multifactor authentication.
-
-Then we're gonna create user accounts.
-
-You can create up to 5,000 individual user accounts,
-
-and those user accounts will have no permissions by default,
-
-that's a really important point to remember.
-
-So if you create a user account,
-
-that user can log in
-
-if you enable management console access,
-
-but they can't do anything at all,
-
-unless you specifically apply permissions to them.
-
-So here we have a user. We've got Andrea.
-
-Now, Andrea, when she logs in, we'll use her friendly name.
-
-The friendly name is just a simple text string.
-
-In this case it's actually her name, Andrea.
-
-So you can log in very simply with Andrea.
-
-and then a password.
-
-Now, there's actually,
-
-for every resource in AWS,
-
-there's an Amazon resource name, okay.
-
-You can see that here.
-
-Now the text in red is the account number.
-
-We can see a little bit,
-
-it's an ARN, so it's an Amazon resource name,
-
-it's an AWS resource, it's an IAM resource.
-
-This is the account number,
-
-we know that this type of resource is a user,
-
-and then the friendly name is Andrea.
-
-So that's a unique identifier for that resource within AWS.
-
-Now, Andrea can log in via these different mechanisms.
-
-We've got the management console
-
-for which you use a username and password
-
-and potentially multifactor authentication.
-
-And then for the command line interface
-
-and the API, we can use access keys.
-
-So let's move on to user groups.
-
-Great thing about user groups is it helps us
-
-from a management perspective.
-
-Here we've got the admin group,
-
-the development group, and the operations group.
-
-We can add our users in.
-
-Some users might be in multiple groups,
-
-and the groups are then used to apply permissions, okay.
-
-So now we can take a permissions policy
-
-that's relevant to those specific groups of users
-
-and apply it to the group,
-
-and those users will automatically
-
-inherit those permissions.
-
-Now, if a user is in multiple groups,
-
-they will gain multiple sets of permissions
-
-and they're combined together.
-
-So the user will gain the permissions applied to the group
-
-through the permissions policy.
-
-For authentication methods, we can use a username password
-
-with a multifactor authentication token
-
-for that extra factual security.
-
-We can use that mechanism for connecting
-
-to the management console using an IAM account.
-
-So here John is authenticated
-
-and perform operations through the console.
-
-Now, the other ways are the command line interface
-
-and the API.
-
-For this, we need to gain some credentials.
-
-There's a couple of ways of doing this.
-
-One is by generating something called an access key ID
-
-and a secret access key,
-
-it's kind of like a username and password.
-
-And these can be used via the CLI and the API
-
-to authenticate to the AWS API.
-
-And we can use something called
-
-the AWS Security Token Service
-
-to generate short-term credentials as well.
-
-So access keys are used for programmatic access.
-
-I'll just finish this lesson by summarizing the differences
-
-between the root user and an IAM user.
-
-So remember that the root user is the one
-
-in which you log in with the email address
-
-that you used when you created the account,
-
-and it has full access and is unrestricted,
-
-also difficult to restrict.
-
-Some permissions cannot be restricted
-
-for the root user account.
-
-There are some actions which you need the root user
-
-to perform, but mostly once we've got our account up
-
-and running, we don't need it.
-
-So we can lock it away and not use that account.
-
-And then we have our IAM user, which has a friendly name.
-
-And when we log in using this user account,
-
-we will supply either the alias for the account
-
-or the account ID itself
-
-and the permissions assigned to an IAM user come
-
-through permissions policies.
-
-If there's no permissions policies applied
-
-to this user directly
-
-or via any groups that the user is a member of,
-
-then they won't have any permissions.
-
-So you have to enable permissions
-
-by assigning policies either directly
-
-or usually preferably through a user group instead.
+am user account and not with your root account.
