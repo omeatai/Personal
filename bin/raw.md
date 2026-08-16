@@ -1,283 +1,171 @@
-## Configure Account and Create a Budget
+## Install Tools and Configure AWS CLI
 
-In this lesson,
+Hey guys, a very quick lesson.
 
-we're gonna make a few configuration changes to our account
+Just to advise you on some of the tools that you're going
 
-and we're also gonna set a budget which will alert us
+to need to install as well as the AWS command line interface.
 
-when we are forecast to or have exceeded a certain
+First thing you need to do is make sure
 
-threshold in terms of the dollars spent each month.
+that before you finish this section of the course,
 
-So what we're gonna do is we're going to set an.
+the very last lesson of this section has some code.
 
-Account Alias,
+What you need to do is when you go to that lesson,
 
-that makes it easier to log in when we're
+you will find a link that will take you over to a github
 
-using the identity and access management service for login.
+page. And from there, you can download the code
 
-And we're going to enable access to billing for IAM users.
+if you're a bit more advanced and you know how to use GIT,
 
-We'll update our billing preferences with a few settings,
+you can also simply synchronize the repository.
 
-and then we're gonna create a budget that has an alarm associated with it.
+The next thing you need to do is install visual studio code.
 
-I'm logged into my account,
+We're going to be using visual studio code
 
-currently I'm still using the root user.
+so that we can open various different code,
 
-We're gonna set up an IAM user a bit later on.
+snippets and instruction files.
 
-And what I want to do now is I want
+So on Google here, I'm simply gonna search for visual studio code.
 
-to navigate to the identity and access management service,
+This is a Microsoft product. It's completely free.
 
-so I can simply search for IAM and I favoriteed mine.
+And if you find it on the internet,
 
-When I click on IAM that's gonna take me over to the console for this service.
+you're going to be able to download it
 
-Now we can see in the top right hand corner here that IAM is a global service.
+for your operating system and simply install it.
 
-We don't need to select a specific region.
+So that's all you need to do,
 
-That means that we only have to create the resources like user accounts in one place.
+whichever operating system you have just choose the
 
-Now on the right hand side here we've got AWS account,
+relevant download and then install visual studio code.
 
-we can see the account ID,
+The next thing you need to do is install the AWS command line interface
 
-that's a number,
+again on Google. I'm simply going to search for AWS command line interface.
 
-and then we've got this account alias.
+And here I want to click on the install or update to the latest version of the AWS CLI.
 
-Now we can see here there's a sign in URL for IAM users.
+OK. So we will be able to run command line.
 
-We're gonna create users in future lessons.
+This will enable us to run CLI commands from our computers.
 
-Now it includes the account ID by default.
+Now, what you can see here is we've got Linux
 
-That's not really ideal,
+Mac Os and Windows.
 
-it's not easy to remember.
+So just choose the relevant operating system and follow
 
-So what we're going to do is create an account alias.
+the instructions to install the package on your computer.
 
-Now I've set my account name to DCT Lab training.
+Lastly, we want to check that we can access aws cloudshell.
 
-If you need to change that,
+Cloudshell provides a command line interface in the cloud.
 
-you can do so on the account tab,
+I prefer using it these days over the AWS CLI on my computer. In most cases,
 
-we'll be going there shortly.
+it's also preconfigured with credentials for the command line interface.
 
-So I'm gonna try and create a alias which is the same.
+After you've installed it,
 
-Now this does need to be unique across
+you won't be able to run any aws commands because you haven't authenticated.
 
-AWS.
+I'm gonna show you how to configure credentials a bit later
 
-So let's see if I can get this one.
+on after we've created our individual I am user account,
 
-And that works,
+but cloudshell is already authenticated as you as the user you're logged in with.
 
-so I do now have that alias.
+So it's a really easy way of accessing the command line interface in the cloud
 
-If you try and use the same one,
+back in the aws management console.
 
-it won't work because it's now been taken.
+I'm simply gonna search for cloudshell, click on cloudshell.
 
-That means that I can click on the sign in URL and simply use this for logging in.
+And what this should do is spin up an environment for us which usually takes
 
-So I'm gonna take a note of this somewhere so that later
+up to 30 seconds.
 
-on I can use it for logging in as an IAM user.
+Now, I do know that some students have had challenges with getting cloudshell.
 
-The next thing we're going to do is we're
+It's something to do with Aws restricting access to cloudshell for
 
-gonna make some changes to our account settings.
+new accounts with new credit cards that they haven't seen before.
 
-So I'm gonna click in the top right hand corner here,
+I've used the same credit card over multiple accounts, so I don't have an issue, but I
 
-select account.
+have known some students to have experienced that problem.
 
-On this page we can change the account name if we need to.
+If that's the case, you'll need to contact Aws support and ask them to enable it.
 
-I've already set mine to the account name that I want.
+If they won't do it initially,
 
-Let's scroll down on this page a little bit.
+then you just have to use the AWS command line interface on your computer,
 
-We can see some of the regions that have been enabled by default.
+which I will show you how to do
 
-So not all regions are enabled by default.
+the actual aws CLI commands are identical.
 
-You do have to enable certain regions if you want to use them.
+It doesn't matter whether you're using cloudshell or your own computer.
 
-In this case,
+However, of course, your operating system commands are gonna be different.
 
-plenty of regions are enabled for me.
+This is a Linux command line interface here on your computer.
+
+You might be using windows.
+
+If that's the case,
+
+then navigating your file system is gonna be
+
+slightly different to what I do in cloudshell.
+
+But the actual cli commands will be the same.
+
+Now, we can see that the font's quite small on cloudshell.
+
+In the top right hand corner,
+
+I can adjust the settings and make it a bit larger.
+
+So now you can see more easily if I run aws help,
+
+then we should see the help interface for the AWS command line interface and
+
+I can use my space bar just to go through and see the various options
+
+and type Q
+
+to quid out of there. Then I can run commands like AWS S3 LS.
+
+If I had any buckets, any folders in my Amazon S3 service,
+
+then I would be able to see them.
 
 Now,
 
-down here we can see this IAM user and roll access to billing information.
-
-Once we've created an administrative user account using IAM,
-
-we're no longer going to log in as the root account.
-
-Sometimes you'll want to access billing information
-
-and it will tell you you have to log in
-
-as a route account.
-
-If we enable this setting,
-
-then we don't need to do that,
-
-we can actually assign the relevant permissions through IAM.
-
-And then access the billing information when we need to.
-
-So I've set that setting.
-
-Next on the left-hand side,
-
-I'm gonna come down to billing preferences.
-
-In here under alert preferences,
-
-I want to select this option to receive AWS free tier alerts
-
-and receive cloudwatch billing alerts.
-
-And I need to put in my email address here.
-
-This means I'm going to receive an email alert if
-
-I use up my credits for free tier usage.
-
-On the left-hand side,
-
-I'm going to enable this option to receive
-
-my invoices by PDF so I get them attached to my email.
-
-It's easier than having to come back into AWS to look up
-
-what I've been charged for.
-
-The last thing to do now is on the left-hand side under budgets and planning,
-
-I'm going to click on budgets.
-
-This takes me to the AWS budgets service.
-
-Here we're gonna create a budget
-
-and under budget setup,
-
-I'm going to use a template.
-
-Now it's up to you,
-
-you can use a zero spend budget if you're really cost sensitive.
-
-I like to just set a monthly cost budget
-
-and I'll just set it to
-
-$5.
-
-This means that I'm going to get an alert
-
-in my email
-
-when I'm forecast to reach my $5 across the month or I actually reach it.
-
-And in fact,
-
-it says here that I'll be notified in two
-
-times.
-
-One is when my actual spend reaches 85%,
-
-and
-
-then secondly,
-
-when my actual spend reaches 100%.
-
-So you get a couple of emails here.
-
-There are the occasional charges for certain things like hosted zones,
-
-once we create a route 53 hosted zone,
-
-it's less than $1 a month usually for a hosted zone.
-
-And then there's some other small charges,
-
-occasionally a couple of dollars here and there,
-
-but we shouldn't go over $5 except when we actually register a domain,
-
-which will take us over that because
-
-the cheapest domains are about $5 or $6.
-
-OK,
-
-so I'm gonna enter my email address and create budget,
-
-and that's all I need to do,
-
-it's gonna set everything up for me.
-
-And that's it,
-
-I've set up my budget.
-
-Very,
-
-very important step here,
-
-you wanna make sure you do this.
-
-As long as you follow my instructions and shut down and terminate resources,
-
-you should not exceed this budget except when you're registering the domain.
+I don't have any because this a brand new account.
 
 However,
 
-if you forget something,
+we can tell by the fact that I didn't receive an
 
-at least you've got a backup and you're gonna get an email and that's gonna warn you.
+error message that I do have credentials to perform that operation.
 
-And then you can come into.
+So that's the good thing about cloudshell.
 
-The Cost Explorer service.
+It's preconfigured with credentials for us. So that's it for this video.
 
-OK,
+Make sure you download the code, make sure you install visual studio code,
 
-so on the left-hand side here,
+install the command line interface if you want to
 
-if I just scroll up,
+be able to run the cli on your computer
 
-we've got this costs Explorer.
-
-In Cost Explorer,
-
-you can have a look at a breakdown of your spend.
-
-OK,
-
-there's nothing here yet,
-
-so it says I have to wait 24 hours cos I've just opened this account.
-
-But then you'll be able to come in here and see an itemized breakdown
-
-of your spend.
+and make sure that you can access cloudshell and you're all set up.
