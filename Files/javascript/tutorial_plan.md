@@ -54,9 +54,9 @@ do **not** duplicate it.
 
 ## Resume pointer
 
-- **Next task:** `0.1` — JS Home (start of the improvement pass from the top).
-- **Last completed:** none yet (plan just created).
-- **Notes:** `tutorial.md` currently has older accordions for JS Introduction → JS String Reference; these are the `(exists — improve)` pages.
+- **Next task:** `0.3` — JS Where To (improvement pass; user requested range JS Introduction → JS Strings).
+- **Last completed:** `0.2` JS Introduction — rewritten to per-example standard (4 example blocks, per-example code+result snaps).
+- **Notes:** `tutorial.md` currently has older accordions for JS Introduction → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
 
 ---
 
@@ -113,7 +113,7 @@ do **not** duplicate it.
 ### S0 — Getting Started
 
 - [ ] `0.1` JS Home — `default.asp` (new)
-- [ ] `0.2` JS Introduction — `js_intro.asp` (exists — improve)
+- [x] `0.2` JS Introduction — `js_intro.asp` (exists — improve)
 - [ ] `0.3` JS Where To — `js_whereto.asp` (exists — improve)
 - [ ] `0.4` JS Output — `js_output.asp` (exists — improve)
 

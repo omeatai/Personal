@@ -11,87 +11,118 @@ JavaScript is the **programming language of the web**. This section shows what i
 
 ## Detailed Explanation
 
-- [x] **What JavaScript can do**
-  - It is the programming language of the **web**.
+- [x] **JavaScript is the programming language of the web**
   - It can **calculate**, **manipulate**, and **validate** data.
-  - It can **update and change** both **HTML** and **CSS**.
-- [x] **JavaScript can change HTML content**
-  - One HTML method is **`getElementById()`**.
-  - The example **finds** the element with `id="demo"` and sets its **`innerHTML`** to `Hello JavaScript`.
-  - Sandbox: `code_sandbox/js-introduction/index.html`. Click **Click Me!** and the paragraph becomes **Hello JavaScript**.
+  - It can **update and change** both **HTML** and **CSS** live in the page.
+- [x] **The common pattern in every example below**
+  - **Select** an element, then **change** something about it.
+  - Selection here uses **`document.getElementById("id")`** — it finds the one element whose `id` matches.
+  - What you change is either its **content** (`innerHTML`), an **attribute** (`src`), or its **style** (`style.fontSize`, `style.display`).
+- [x] **How the sandbox demos capture the "after" state**
+  - Each demo keeps the original button so you can click it yourself.
+  - It also runs the same statement automatically when the URL ends in **`?run`**, so the screenshots below show the exact outcome the click produces.
 
-<img alt="js-introduction result" src="./code_sandbox/snaps/js-introduction-result.png" />
+### **Example 1: Change HTML content**
 
-- [x] **Quotes**
-  - JavaScript accepts both **double** and **single** quotes.
-  - Same idea: `document.getElementById('demo').innerHTML = 'Hello JavaScript';`
-- [x] **JavaScript can change HTML attribute values**
-  - The light-bulb demo changes the **`src`** of an `<img>`.
-  - Sandbox: `code_sandbox/js-introduction/lightbulb.html` (local SVG on/off images instead of the site’s GIF files).
-- [x] **JavaScript can change HTML styles (CSS)**
-  - Changing style is a variant of changing an **attribute**.
-  - Example: `document.getElementById("demo").style.fontSize = "35px";`
-  - Sandbox: `code_sandbox/js-introduction/style.html`.
-- [x] **JavaScript can hide HTML elements**
-  - Hide by setting **`display`** to **`none`**: `document.getElementById("demo").style.display = "none";`
-- [x] **JavaScript can show HTML elements**
-  - Show by setting **`display`** to **`block`**: `document.getElementById("demo").style.display = "block";`
-  - Sandbox: `code_sandbox/js-introduction/hide-show.html`.
-- [x] **Did you know? Java vs JavaScript**
-  - **JavaScript and Java** are **completely different** languages (concept and design).
-  - JavaScript was invented by **Brendan Eich** in **1995**.
-  - It became an **ECMA** standard in **1997**.
-  - **ECMA-262** is the official name of the **standard**.
-  - **ECMAScript** is the official name of the **language**.
-- [x] **Exercise on the page**
-  - True or False: **JAVA is short for JavaScript.**
-  - **False.** Java and JavaScript are different languages.
+- [x] **`document.getElementById("demo")`** finds the `<p id="demo">`, and **`.innerHTML = "Hello JavaScript"`** replaces everything inside that paragraph.
+- [x] The statement lives in the button's **`onclick`**, so it runs **once per click**.
+- [x] **Quotes are interchangeable:** `innerHTML = "Hello JavaScript"` and `innerHTML = 'Hello JavaScript'` behave identically — JavaScript accepts both **double** and **single** quotes for strings.
+- [x] `innerHTML` parses its value as **HTML**, so `"<b>Hi</b>"` would render bold, not literal tags.
 
 Sandbox: `code_sandbox/js-introduction/index.html`
 
-Tested source (W3Schools **change HTML content** example):
-
-<img alt="js-introduction source" src="./code_sandbox/snaps/js-introduction-code.png" />
-
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="color-scheme" content="light" />
-    <title>JS Introduction</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background: #fff;
-        color: #111;
-        font-family: sans-serif;
-      }
-      body {
-        padding: 16px;
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>What Can JavaScript Do?</h2>
-    <p id="demo">JavaScript can change HTML content.</p>
-    <button
-      type="button"
-      onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'"
-    >
-      Click Me!
-    </button>
-  </body>
-</html>
+<h2>What Can JavaScript Do?</h2>
+<p id="demo">JavaScript can change HTML content.</p>
+<button
+  type="button"
+  onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'"
+>
+  Click Me!
+</button>
 ```
 
-Rendered result after clicking **Click Me!**:
+<img alt="js-introduction example 1 source" src="./code_sandbox/snaps/js-introduction-01-code.png" />
 
-<img alt="js-introduction result" src="./code_sandbox/snaps/js-introduction-result.png" />
+<img alt="js-introduction example 1 result" src="./code_sandbox/snaps/js-introduction-01-result.png" />
 
-Related sandbox files: `style.html`, `hide-show.html`, `lightbulb.html`.
+- [x] **Outcome:** before the click the paragraph reads **JavaScript can change HTML content.**; after the click (shown above) it reads **Hello JavaScript**.
+
+### **Example 2: Change an HTML attribute value**
+
+- [x] The light-bulb demo swaps the **`src`** attribute of an `<img id="myImage">` between two files.
+- [x] **Turn on the light** sets `src = "pic_bulbon.svg"`; **Turn off the light** sets `src = "pic_bulboff.svg"`.
+- [x] Changing an attribute is the same select-then-assign pattern; only the property (`.src`) differs.
+- [x] The sandbox uses local **SVG** on/off bulbs instead of the site's GIF files, so it works fully offline.
+
+Sandbox: `code_sandbox/js-introduction/lightbulb.html`
+
+```html
+<p>JavaScript can change HTML attribute values.</p>
+<button onclick="document.getElementById('myImage').src = 'pic_bulbon.svg'">
+  Turn on the light
+</button>
+<button onclick="document.getElementById('myImage').src = 'pic_bulboff.svg'">
+  Turn off the light
+</button>
+<img id="myImage" src="pic_bulboff.svg" width="100" height="180" />
+```
+
+<img alt="js-introduction example 2 source" src="./code_sandbox/snaps/js-introduction-02-code.png" />
+
+<img alt="js-introduction example 2 result" src="./code_sandbox/snaps/js-introduction-02-result.png" />
+
+- [x] **Outcome:** the page starts on the grey **off** bulb; running the "on" statement swaps the image to the yellow **on** bulb (shown above) without reloading the page.
+
+### **Example 3: Change an HTML style (CSS)**
+
+- [x] Changing style is a variant of changing an attribute — you assign to properties on the element's **`style`** object.
+- [x] `document.getElementById("demo").style.fontSize = "35px"` enlarges the paragraph text.
+- [x] CSS property names become **camelCase** in JavaScript: `font-size` → `fontSize`, `background-color` → `backgroundColor`.
+- [x] The value is a **string with units** (`"35px"`), not a bare number.
+
+Sandbox: `code_sandbox/js-introduction/style.html`
+
+```html
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+<button onclick="document.getElementById('demo').style.fontSize = '35px'">
+  Click Me!
+</button>
+```
+
+<img alt="js-introduction example 3 source" src="./code_sandbox/snaps/js-introduction-03-code.png" />
+
+<img alt="js-introduction example 3 result" src="./code_sandbox/snaps/js-introduction-03-result.png" />
+
+- [x] **Outcome:** the paragraph jumps from normal size to a large **35px** heading-sized line (shown above).
+
+### **Example 4: Hide and show elements**
+
+- [x] Visibility is controlled through the **`display`** style.
+- [x] **Hide:** `style.display = "none"` removes the element from the layout (it disappears and takes no space).
+- [x] **Show:** `style.display = "block"` puts it back.
+- [x] One demo holds both buttons so you can toggle the paragraph off and on.
+
+Sandbox: `code_sandbox/js-introduction/hide-show.html`
+
+```html
+<p id="demo">JavaScript can hide and show HTML elements.</p>
+<button onclick="document.getElementById('demo').style.display = 'none'">Hide</button>
+<button onclick="document.getElementById('demo').style.display = 'block'">Show</button>
+```
+
+<img alt="js-introduction example 4 source" src="./code_sandbox/snaps/js-introduction-04-code.png" />
+
+<img alt="js-introduction example 4 result" src="./code_sandbox/snaps/js-introduction-04-result.png" />
+
+- [x] **Outcome:** the demo loads with the paragraph visible plus **Hide** / **Show** buttons (shown above). Clicking **Hide** makes the paragraph vanish; clicking **Show** brings it back.
+
+### **Did You Know? Java vs JavaScript**
+
+- [x] **JavaScript and Java** are **completely different** languages, in both concept and design — the shared word "Java" is historical marketing, not a technical relationship.
+- [x] JavaScript was invented by **Brendan Eich** in **1995** and became an **ECMA** standard in **1997**.
+- [x] **ECMA-262** is the official name of the **standard**; **ECMAScript** is the official name of the **language**.
+- [x] **Page exercise —** *True or False: "JAVA is short for JavaScript."* → **False.**
 
 <details>
   <summary>Terminal Commands</summary>

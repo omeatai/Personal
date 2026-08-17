@@ -36,5 +36,10 @@
       width="100"
       height="180"
     />
+    <script>
+      if (new URLSearchParams(location.search).has("run")) {
+        document.getElementById("myImage").src = "pic_bulbon.svg";
+      }
+    </script>
   </body>
 </html>
