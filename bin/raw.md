@@ -1,277 +1,161 @@
-## IAM policy evaluation
+## IAM policy structure
 
-In this lesson, you'll learn about IAM policy evaluation.
+In this lesson, I'm going to go through I AM policy structure.
 
-So you need to understand the evaluation logic.
+I'm gonna help you to understand how to read
 
-So what happens when somebody tries to make access to a particular resource?
+JSON policies and how to utilize
 
-What is the process?
+JSON policies in I am.
 
-And this is the chart, the evaluation logic workflow that comes from
+So firstly, just as a reminder, of course, in AWS, everything is an API action.
 
-AWS. I'm going to read through this.
+So whenever you're performing anything through the console, the CLI or the SDK,
 
-Firstly, up in the top left here,
+what you're actually doing is making an API call.
 
-every decision starts with a deny.
+Each service has its own set of API actions.
 
-So remember all permissions are not allowed by default, everything is denied
+And those are those particular individual actions that
 
-and then AWS
+we're trying to perform for that service.
 
-is going to look for and allow of some sort.
+So if we go in a console and launch an EC2 instance,
 
-So it needs to evaluate all the applicable policies.
+what's happening behind the scenes is an API action is
 
-Now, is there an explicit deny?
+being called and that is the EC2 run instances.
 
-Remember that an explicit deny will always override
+If we stop an R DS database via the CLI or the console,
 
-any allow.
+it's the R DS stop DB instance API action that is taking place.
 
-So immediately the final decision is deny if there is an explicit deny.
+So every service has these API actions
 
-Now, if not
+and we can get very specific in our policies if we wish to
 
-the process continues.
+in order to restrict or allow specific individual API actions,
 
-AWS is going to check is the principal's account, a member of an organization
+or we can have more broad reaching policies that
 
-with an applicable service control policy.
+allow or deny an entire service or more.
 
-Now, if that isn't the case, then
+So let's have a look at an I AM policy.
 
-the process just goes on to the next stage. If it is the case,
+Now, the first thing to note is they're written in javascript object notation.
 
-it needs to check if there's an allow. So if there's an SCP
+All of the policies in Aws are Jason.
 
-but it doesn't have an allow, then deny
+Now the version at the top here, don't worry about this date.
 
-is the final decision
+It's not a incorrect date, it's actually correct. So this is just a version of
 
-if there isn allow, then again, we carry on to the next stage.
+JSON policy statements that are being used.
 
-Does the requested resource have a resource based policy?
+Next, we have a statement
 
-Remember,
+and the statement is essentially a block of code
 
-resource based policies apply to things like S3 with bucket policies.
+and each statement
 
-Now, if there is a resource based policy,
+has a series of individual actions, effects resources and so on.
 
-it needs to check for and allow and if there is,
+And they're all evaluated together,
 
-then you need to understand the process for resource based policies
+a policy may contain more than one permission statement.
 
-and how they work together with the identity based policy.
+So this block here could be followed by another one. And then there would be a comma
 
-Well, look at that later.
+with
 
-Now, if there isn't an allow,
+JSON. We've got to be very specific about the uh the formatting.
 
-then it needs to continue checking the identity based policy.
+So if you miss a comma, for example, it does break the code.
 
-If there is an identity based policy that applies,
+So um usually the policy editors will highlight that for us.
 
-then the process continues and it's going to check for an allow.
+For example, if you're using visual studio code and often
 
-If not, then, well, we don't have and allow in the resource based policy.
+uh within the AWS management console as well, it will point out where the issues lie.
 
-If there is one and we don't have one and identity based policy. So of course,
+Now, the effect is either allow or deny. Those are the only two effects that we have.
 
-it's an implicit deny.
+So do we wanna deny something or do we want to allow it?
 
-Now, if there isn't allow, then again, the process will continue.
+Next, we have the actions,
 
-So, so there is an allow for the action
+the actions list,
 
-but then AWS will check if the principal has a permissions boundary applied.
+the specific resource operations that the policy is going to affect.
 
-If the answer is yes, then again,
+So are we allowing
 
-it's going to check for an allow in the permissions boundary that's applied
+S3 Dynamo DB or are we denying S3 dynamo DB?
 
-to that principle.
+So we specify whether we want to allow or deny.
 
-If that's good, then we carry on. If not, there's a deny.
+Then what specifically is that we want to allow or deny
 
-In the last stage here, AWS is going to check is the principal a session principle.
+here, we can see that we have a series of API actions
 
-If the answer is no, then there's an allow
+S3 star, that's a wild card. That means all S3 actions,
 
-if the answer is yes then it needs to check for a session policy
+Dynamo DB, we've got a bit more specific,
 
-with an allow, it will go to allow and if not a deny.
+but we've gone down to describe level and then we have a wild card.
 
-And again, it will check here.
+So there's probably several API actions that start with the word describe.
 
-Is this a role session?
+So it might be described table or something like that.
 
-If yes, then allow. And if not, then no,
+So there'll be a series of those and we want to allow all of them.
 
-this is a bit complicated. I know,
+So we can get very specific if we want to or we can keep it a bit more generic.
 
-but it's worth spending a bit of time understanding this evaluation logic.
+Now, the resource lists the specific resources that the policy applies to.
 
-Now, what are the steps for authorizing requests?
+So here we have the s reaction with a wild card. So all s reactions,
 
-So we can have our request coming from a variety of sources, the console,
+then we have two
 
-the CLI or the API,
+of these resources for the S3 bucket.
 
-they go through to IAM.
+So this is the A RN the Amazon resource name for a specific S3 bucket.
 
-And the first thing that needs to happen is authentication.
+But why have we got two lines here? We've got one with a slash star.
 
-AWS needs to authenticate the principle that makes the request.
+Well,
 
-So for example,
+the slash star means that we're assigning some
 
-a user name and password for the console that checks that you
+of the permissions to objects within the bucket.
 
-are who you say you are because you know the password.
+Whereas this here is the bucket level.
 
-So perhaps a user is logging in.
+So within S3, there are bucket level API actions and object level API actions.
 
-Now the request context is formed.
+Those are the the files that are actually stored in the
 
-The request context includes the actions,
+bucket that they can have their own permissions assigned to them.
 
-these are the actions or operations that the principle in this case,
+So what we do with the star means all of the bucket level and
 
-the user account wants to perform
+all of the object level permissions are going to be in this case allowed.
 
-the resources are the resources objects,
+And so we have to specify two resources, one for the bucket,
 
-the AWS services, for example, on which the actions need to be performed.
+one for the objects in the bucket.
 
-The principle,
+And then we've got a dynamo DB table.
 
-the user role, Federated user or application that sent the request
+We specify the exact table with the account number in the region in
 
-is identified in the request context
+the middle here as well as the table name on the end.
 
-and then environment data. So
+Now, as I've mentioned, a star is a wild card. So it means everything from that point.
 
-information about the IP address to user agent SSL status and so on
+In this case, S3 colon star means
 
-is also present because for example, you might have a policy
+every API action that starts with S3.
 
-that restricts access based on the source IP address.
-
-That's why that information is important
-
-in the request context.
-
-Next, we have the resource data,
-
-data related to the resource that is being requested.
-
-Number two, in the second stage, here
-
-is processing the request context.
-
-So in this case, the user has an identity based policy applied
-
-and the S3 bucket they're trying to access has a resource based policy applied.
-
-So AWS will evaluate whether to authorize that access
-
-and it will do so by evaluating all the policies within the account.
-
-In this case,
-
-the user wants to retrieve an object using the S3
-
-get object API action and has been granted that access
-
-and that is that final stage.
-
-So that's determining whether a request is allowed or denied.
-
-Now, there are a few different types of policy.
-
-We've talked about identity based policies before
-
-these are attached to users, groups and roles
-
-and resource policies which are attached to resources,
-
-defining the permissions for a specific principle to access the resource.
-
-We also have permissions boundaries,
-
-these set the maximum permissions that identity based policies can grant
-
-and IAM entity.
-
-And also we have organizations, service control policies.
-
-They specify the maximum permissions for
-
-an organization or an organizational unit
-
-and the accounts that are created or contained within that organization Oor OU
-
-lastly, we have session policies,
-
-these are used with the assumed role API actions.
-
-In this final slide,
-
-I want to show you another visual representation
-
-of how policies are evaluated within AWS.
-
-So we have an identity based policy
-
-and resource based policy.
-
-Now what happens when we have these multiple policies applied?
-
-Well, what actually happens
-
-is the effective permissions are those
-
-that are granted
-
-in either the identity based policy or the resource based policy.
-
-Next, we have an identity based policy
-
-and the permissions boundary.
-
-In this case,
-
-the effective permissions are only
-
-the permissions that are allowed in both the identity based policy
-
-and that are allowed through the permissions boundary.
-
-And then lastly, we have an identity based policy
-
-and an organization's SCP.
-
-And again, in this case,
-
-the effective permissions are those that are granted in both the SCP
-
-and the identity based policy.
-
-And there are some determination rules
-
-by default or requests are implicitly denied
-
-though the root user has full access,
-
-an explicit allow in an identity based or resource based policy
-
-overrides this default.
-
-And if a permissions boundary organizations SCP or session policy is present,
-
-it might override the allow with an implicit deny.
-
-Lastly, an explicit deny in any policy overrides any allows.
+That's all of the API actions for the Amazon S3 service.

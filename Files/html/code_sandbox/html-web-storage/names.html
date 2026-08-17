@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <p id="result"></p>
+    <script>
+      const x = document.getElementById("result");
+      if (typeof Storage !== "undefined") {
+        localStorage.setItem("lastname", "Smith");
+        localStorage.setItem("bgcolor", "yellow");
+        x.innerHTML = localStorage.getItem("lastname");
+        x.style.backgroundColor = localStorage.getItem("bgcolor");
+      } else {
+        x.innerHTML = "Sorry, no Web storage support!";
+      }
+    </script>
+  </body>
+</html>

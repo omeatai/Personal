@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      #div1 {
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+    </style>
+    <script>
+      function dragstartHandler(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+      function dragoverHandler(ev) {
+        ev.preventDefault();
+      }
+      function dropHandler(ev) {
+        ev.preventDefault();
+        const data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+    <p>Drag the W3Schools image into the rectangle.</p>
+    <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <br />
+    <img
+      id="img1"
+      src="img_logo.gif"
+      draggable="true"
+      ondragstart="dragstartHandler(event)"
+      width="336"
+      height="69"
+      alt="W3Schools"
+    />
+  </body>
+</html>

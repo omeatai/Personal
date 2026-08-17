@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <p id="result"></p>
+    <p>
+      <button type="button" onclick="clickCounter()">Click me!</button>
+    </p>
+    <p>This count is for this tab session only.</p>
+    <script>
+      function clickCounter() {
+        const x = document.getElementById("result");
+        if (typeof Storage !== "undefined") {
+          if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+          } else {
+            sessionStorage.clickcount = 1;
+          }
+          x.innerHTML =
+            "You have clicked the button " +
+            sessionStorage.clickcount +
+            " time(s) in this session!";
+        } else {
+          x.innerHTML = "Sorry, no Web storage support!";
+        }
+      }
+    </script>
+  </body>
+</html>
