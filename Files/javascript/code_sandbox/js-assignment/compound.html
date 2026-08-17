@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Assignment - Compound</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Arithmetic Assignment (x = 10, y = 5)</h2>
+    <pre id="demo"></pre>
+    <script>
+      let y = 5;
+      let lines = [];
+
+      let x = 10;
+      x = y;
+      lines.push("x = y     -> " + x + "     (same as x = y)");
+
+      x = 10;
+      x += y;
+      lines.push("x += y    -> " + x + "    (same as x = x + y)");
+
+      x = 10;
+      x -= y;
+      lines.push("x -= y    -> " + x + "     (same as x = x - y)");
+
+      x = 10;
+      x *= y;
+      lines.push("x *= y    -> " + x + "    (same as x = x * y)");
+
+      x = 10;
+      x **= y;
+      lines.push("x **= y   -> " + x + " (same as x = x ** y)");
+
+      x = 10;
+      x /= y;
+      lines.push("x /= y    -> " + x + "     (same as x = x / y)");
+
+      x = 10;
+      x %= y;
+      lines.push("x %= y    -> " + x + "     (same as x = x % y)");
+
+      document.getElementById("demo").innerText = lines.join("\n");
+    </script>
+  </body>
+</html>

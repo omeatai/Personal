@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Assignment - Other compounds</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>-=  *=  **=  /=  %=</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = 10;
+      x -= 5;
+      let a = 10;
+      a *= 5;
+      let b = 10;
+      b **= 5;
+      let c = 10;
+      c /= 5;
+      let d = 10;
+      d %= 5;
+      document.getElementById("demo").innerText =
+        "let x = 10; x -= 5;   -> " +
+        x +
+        "\n" +
+        "let a = 10; a *= 5;   -> " +
+        a +
+        "\n" +
+        "let b = 10; b **= 5;  -> " +
+        b +
+        "\n" +
+        "let c = 10; c /= 5;   -> " +
+        c +
+        "\n" +
+        "let d = 10; d %= 5;   -> " +
+        d;
+    </script>
+  </body>
+</html>

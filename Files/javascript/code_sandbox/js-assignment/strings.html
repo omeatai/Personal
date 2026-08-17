@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Assignment - Strings</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>String Assignment</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "Hello";
+      let assigned = text;
+      text += " World";
+      document.getElementById("demo").innerText =
+        'let text = "Hello";          -> "' +
+        assigned +
+        '"\n' +
+        'text += " World";            -> "' +
+        text +
+        '"';
+    </script>
+  </body>
+</html>

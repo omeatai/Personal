@@ -54,9 +54,9 @@ do **not** duplicate it.
 
 ## Resume pointer
 
-- **Next task:** `2.3` — JS Assignment (improvement pass; user requested range JS Introduction → JS Strings).
-- **Last completed:** `2.2` JS Arithmetic — rewritten to per-example standard (basic math, modulus/power, increment/decrement, precedence).
-- **Notes:** `tutorial.md` currently has older accordions for JS Introduction → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
+- **Next task:** `2.4` — JS Comparisons (improvement pass; user requested range JS Introduction → JS Strings).
+- **Last completed:** `2.3` JS Assignment — rewritten to per-example standard (`=`, `+=`, other compounds, strings, `&&=`, `||=`, `??=`, spread).
+- **Notes:** `tutorial.md` currently has older accordions for JS Comparisons → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
 
 ---
 
@@ -131,7 +131,7 @@ do **not** duplicate it.
 
 - [x] `2.1` JS Operators — `js_operators.asp` (exists — improve)
 - [x] `2.2` JS Arithmetic — `js_arithmetic.asp` (exists — improve)
-- [ ] `2.3` JS Assignment — `js_assignment.asp` (exists — improve)
+- [x] `2.3` JS Assignment — `js_assignment.asp` (exists — improve)
 - [ ] `2.4` JS Comparisons — `js_comparisons.asp` (exists — improve)
 
 ### S3 — Conditionals

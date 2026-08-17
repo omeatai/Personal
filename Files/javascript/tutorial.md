@@ -107,8 +107,12 @@ Sandbox: `code_sandbox/js-introduction/hide-show.html`
 
 ```html
 <p id="demo">JavaScript can hide and show HTML elements.</p>
-<button onclick="document.getElementById('demo').style.display = 'none'">Hide</button>
-<button onclick="document.getElementById('demo').style.display = 'block'">Show</button>
+<button onclick="document.getElementById('demo').style.display = 'none'">
+  Hide
+</button>
+<button onclick="document.getElementById('demo').style.display = 'block'">
+  Show
+</button>
 ```
 
 <img alt="js-introduction example 4 source" src="./code_sandbox/snaps/js-introduction-04-code.png" />
@@ -122,7 +126,7 @@ Sandbox: `code_sandbox/js-introduction/hide-show.html`
 - [x] **JavaScript and Java** are **completely different** languages, in both concept and design — the shared word "Java" is historical marketing, not a technical relationship.
 - [x] JavaScript was invented by **Brendan Eich** in **1995** and became an **ECMA** standard in **1997**.
 - [x] **ECMA-262** is the official name of the **standard**; **ECMAScript** is the official name of the **language**.
-- [x] **Page exercise —** *True or False: "JAVA is short for JavaScript."* → **False.**
+- [x] **Page exercise —** _True or False: "JAVA is short for JavaScript."_ → **False.**
 
 <details>
   <summary>Terminal Commands</summary>
@@ -667,7 +671,7 @@ Sandbox: `code_sandbox/js-output/console.html`
 - [x] JavaScript has **no** print object and cannot access output devices.
 - [x] The one exception is **`window.print()`**, which opens the browser's print dialog for the current window: `<button onclick="window.print()">Print this page</button>`.
 - [x] This opens the OS/browser print dialog (not screenshotted here), so it is documented as code only.
-- [x] **Page exercise —** *Which is NOT correct output syntax?* → **`body.html()`** (there is no such method; the valid ones are `window.alert()`, `console.log()`, `document.write()`).
+- [x] **Page exercise —** _Which is NOT correct output syntax?_ → **`body.html()`** (there is no such method; the valid ones are `window.alert()`, `console.log()`, `document.write()`).
 
 <details>
   <summary>Terminal Commands</summary>
@@ -817,12 +821,12 @@ Sandbox: `code_sandbox/js-syntax/literals.html`
 
 ```javascript
 // Numbers, with or without decimals
-10.50;
+10.5;
 1001;
 
 // Strings, in double or single quotes
-"John Doe";
-"John Doe";
+("John Doe");
+("John Doe");
 ```
 
 <img alt="js-syntax example 1 source" src="./code_sandbox/snaps/js-syntax-01-code.png" />
@@ -895,7 +899,7 @@ let lastname = "Peterson"; // different variable!
 <img alt="js-syntax example 4 result" src="./code_sandbox/snaps/js-syntax-04-result.png" />
 
 - [x] **Outcome:** the page shows **lastName = Doe** and **lastname = Peterson** side by side — proof the two names are distinct.
-- [x] **Page exercise —** *Correct syntax to assign a value?* → **`x = 5`** (not `x : 5`, `x == 5`, or `x -> 5`).
+- [x] **Page exercise —** _Correct syntax to assign a value?_ → **`x = 5`** (not `x : 5`, `x == 5`, or `x -> 5`).
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1096,19 +1100,19 @@ myFunction();
 - [x] **Line length:** for readability, keep lines under ~**80 characters**; if a statement is too long, break it **after an operator** (e.g. after `=`).
 - [x] **Keywords** often start a statement and name the action to perform. They are **reserved words** and cannot be used as variable names:
 
-| Keyword    | Description                                     |
-| ---------- | ----------------------------------------------- |
-| `var`      | Declares a variable                             |
-| `let`      | Declares a block variable                       |
-| `const`    | Declares a block constant                       |
-| `if`       | Marks statements to run on a condition          |
-| `switch`   | Marks statements to run in different cases      |
-| `for`      | Marks statements to run in a loop               |
-| `function` | Declares a function                             |
-| `return`   | Exits a function                                |
-| `try`      | Implements error handling for a block           |
+| Keyword    | Description                                |
+| ---------- | ------------------------------------------ |
+| `var`      | Declares a variable                        |
+| `let`      | Declares a block variable                  |
+| `const`    | Declares a block constant                  |
+| `if`       | Marks statements to run on a condition     |
+| `switch`   | Marks statements to run in different cases |
+| `for`      | Marks statements to run in a loop          |
+| `function` | Declares a function                        |
+| `return`   | Exits a function                           |
+| `try`      | Implements error handling for a block      |
 
-- [x] **Page exercise —** *How many statements in `let a = 5; let b = 6; c = a + b;`?* → **3** (each `;`-separated instruction is one statement).
+- [x] **Page exercise —** _How many statements in `let a = 5; let b = 6; c = a + b;`?_ → **3** (each `;`-separated instruction is one statement).
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1299,7 +1303,7 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 <img alt="js-comments example 3 result" src="./code_sandbox/snaps/js-comments-03-result.png" />
 
 - [x] **Outcome:** the heading stays **Heading** (its change was commented out) while the paragraph becomes **My first paragraph.** — proof the commented line never executed.
-- [x] **Page exercise —** *Correct comment syntax?* → **`// this is a comment`** (not `#`, `''`, or `##`).
+- [x] **Page exercise —** _Correct comment syntax?_ → **`// this is a comment`** (not `#`, `''`, or `##`).
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1407,12 +1411,14 @@ Sandbox: `code_sandbox/js-variables/declare.html`
 ```javascript
 let x = 5;
 let y = 6;
-let z = x + y;                  // declared with let
-const a = 5, b = 6, c = a + b;  // declared with const
+let z = x + y; // declared with let
+const a = 5,
+  b = 6,
+  c = a + b; // declared with const
 
-let carName;                    // declared, no value yet -> undefined
+let carName; // declared, no value yet -> undefined
 const before = carName;
-carName = "Volvo";              // assign later with =
+carName = "Volvo"; // assign later with =
 ```
 
 <img alt="js-variables example 1 source" src="./code_sandbox/snaps/js-variables-01-code.png" />
@@ -1453,14 +1459,14 @@ let $myMoney = 5;
 Sandbox: `code_sandbox/js-variables/datatypes.html`
 
 ```javascript
-const pi = 3.14;              // number: no quotes
-let person = "John Doe";      // string: in quotes
+const pi = 3.14; // number: no quotes
+let person = "John Doe"; // string: in quotes
 let answer = "Yes I am!";
 
 // one statement, many variables (commas, can span lines)
 let p2 = "John Doe",
-    carName = "Volvo",
-    price = 200;
+  carName = "Volvo",
+  price = 200;
 ```
 
 <img alt="js-variables example 3 source" src="./code_sandbox/snaps/js-variables-03-code.png" />
@@ -1479,13 +1485,13 @@ Sandbox: `code_sandbox/js-variables/arithmetic.html`
 
 ```javascript
 let x = 5;
-x = x + 5;                        // = assigns; x becomes 10 (not algebra equality)
+x = x + 5; // = assigns; x becomes 10 (not algebra equality)
 
-let sum = 5 + 2 + 3;              // numbers add -> 10
-let name = "John" + " " + "Doe";  // strings concatenate
+let sum = 5 + 2 + 3; // numbers add -> 10
+let name = "John" + " " + "Doe"; // strings concatenate
 
-let mix1 = "5" + 2 + 3;           // string first -> "523"
-let mix2 = 2 + 3 + "5";           // numbers add first, then concatenate -> "55"
+let mix1 = "5" + 2 + 3; // string first -> "523"
+let mix2 = 2 + 3 + "5"; // numbers add first, then concatenate -> "55"
 ```
 
 <img alt="js-variables example 4 source" src="./code_sandbox/snaps/js-variables-04-code.png" />
@@ -1660,7 +1666,7 @@ Sandbox: `code_sandbox/js-let/block.html`
 let x = 10;
 // Here x is 10
 {
-  let x = 2;   // a different x, only visible inside { }
+  let x = 2; // a different x, only visible inside { }
   // Here x is 2
 }
 // Here x is 10 again
@@ -1684,7 +1690,7 @@ Sandbox: `code_sandbox/js-let/varleak.html`
 var x = 10;
 // Here x is 10
 {
-  var x = 2;   // SAME x -> changes the outer variable
+  var x = 2; // SAME x -> changes the outer variable
   // Here x is 2
 }
 // Here x is 2  (var leaked out of the block!)
@@ -1706,12 +1712,12 @@ Sandbox: `code_sandbox/js-let/redeclare.html`
 
 ```javascript
 var x = 2;
-var x = 3;      // var: redeclaration in the same scope is allowed
+var x = 3; // var: redeclaration in the same scope is allowed
 
 let y = 2;
 // let y = 3;   // SAME scope -> SyntaxError (not allowed)
 {
-  let y = 3;    // OK: a new block is a new scope
+  let y = 3; // OK: a new block is a new scope
 }
 ```
 
@@ -1723,7 +1729,7 @@ let y = 2;
 
 ### **Example 4: Hoisting (`var` vs `let`)**
 
-- [x] **`var` is hoisted and initialized to `undefined`**, so using it *before* its line does not error — you just read `undefined`.
+- [x] **`var` is hoisted and initialized to `undefined`**, so using it _before_ its line does not error — you just read `undefined`.
 - [x] **`let` is hoisted but NOT initialized**; the span before its declaration is the **temporal dead zone**, and reading it there throws a **`ReferenceError`**.
 - [x] The demo uses `try/catch` so the `ReferenceError` can be caught and shown instead of stopping the script.
 
@@ -1731,12 +1737,12 @@ Sandbox: `code_sandbox/js-let/hoisting.html`
 
 ```javascript
 // var is hoisted and auto-initialized to undefined
-typeof x;   // "undefined" (used before its line, no error)
+typeof x; // "undefined" (used before its line, no error)
 var x = 5;
 
 // let is hoisted but NOT initialized (temporal dead zone)
 try {
-  y;        // ReferenceError: used before its line
+  y; // ReferenceError: used before its line
 } catch (e) {
   // e.name === "ReferenceError"
 }
@@ -1903,7 +1909,7 @@ Sandbox: `code_sandbox/js-const/reassign.html`
 ```javascript
 const PI = 3.14159265359;
 
-PI = 3.14;      // TypeError: cannot reassign a const
+PI = 3.14; // TypeError: cannot reassign a const
 
 // const PI;     // SyntaxError: must assign at declaration
 // PI = 3.14;
@@ -1926,10 +1932,10 @@ Sandbox: `code_sandbox/js-const/arrays.html`
 ```javascript
 const cars = ["Saab", "Volvo", "BMW"];
 
-cars[0] = "Toyota";   // change an element - OK
-cars.push("Audi");    // add an element   - OK
+cars[0] = "Toyota"; // change an element - OK
+cars.push("Audi"); // add an element   - OK
 
-cars = ["Toyota"];    // TypeError: cannot reassign the array
+cars = ["Toyota"]; // TypeError: cannot reassign the array
 ```
 
 <img alt="js-const example 2 source" src="./code_sandbox/snaps/js-const-02-code.png" />
@@ -1949,8 +1955,8 @@ Sandbox: `code_sandbox/js-const/objects.html`
 ```javascript
 const car = { type: "Fiat", model: "500", color: "white" };
 
-car.color = "red";       // change a property - OK
-car.owner = "Johnson";   // add a property    - OK
+car.color = "red"; // change a property - OK
+car.owner = "Johnson"; // add a property    - OK
 
 car = { type: "Volvo" }; // TypeError: cannot reassign the object
 ```
@@ -1972,12 +1978,12 @@ Sandbox: `code_sandbox/js-const/scope.html`
 ```javascript
 const x = 10;
 {
-  const x = 2;   // a separate block-scoped const
+  const x = 2; // a separate block-scoped const
   // here x is 2
 }
 // here x is 10 again
 
-y;               // ReferenceError: temporal dead zone
+y; // ReferenceError: temporal dead zone
 const y = 5;
 ```
 
@@ -2127,14 +2133,14 @@ A JavaScript variable can hold **8 types** of data. Use **`typeof`** to find the
 Sandbox: `code_sandbox/js-types/typeof.html`
 
 ```javascript
-typeof "John";       // "string"
-typeof 3.14;         // "number"
-typeof true;         // "boolean"
-typeof 42n;          // "bigint"
-typeof { name: "x" };// "object"
-typeof [1, 2, 3];    // "object"  (arrays are objects)
-typeof null;         // "object"  (historic quirk)
-typeof undefined;    // "undefined"
+typeof "John"; // "string"
+typeof 3.14; // "number"
+typeof true; // "boolean"
+typeof 42n; // "bigint"
+typeof { name: "x" }; // "object"
+typeof [1, 2, 3]; // "object"  (arrays are objects)
+typeof null; // "object"  (historic quirk)
+typeof undefined; // "undefined"
 ```
 
 <img alt="js-types example 1 source" src="./code_sandbox/snaps/js-types-01-code.png" />
@@ -2152,8 +2158,8 @@ typeof undefined;    // "undefined"
 Sandbox: `code_sandbox/js-types/strings.html`
 
 ```javascript
-let carName1 = "Volvo XC60";   // double quotes
-let carName2 = 'Volvo XC60';   // single quotes
+let carName1 = "Volvo XC60"; // double quotes
+let carName2 = "Volvo XC60"; // single quotes
 
 // quotes inside are OK if they don't match the outer quotes
 let answer1 = "It's alright";
@@ -2176,11 +2182,11 @@ let answer3 = 'He is called "Johnny"';
 Sandbox: `code_sandbox/js-types/numbers.html`
 
 ```javascript
-let x1 = 34.00;   // with decimals    -> 34
-let x2 = 34;      // without decimals -> 34
+let x1 = 34.0; // with decimals    -> 34
+let x2 = 34; // without decimals -> 34
 
-let y = 123e5;    // scientific -> 12300000
-let z = 123e-5;   // scientific -> 0.00123
+let y = 123e5; // scientific -> 12300000
+let z = 123e-5; // scientific -> 0.00123
 
 let big = 9999999999999999; // beyond safe integer -> rounds
 ```
@@ -2195,20 +2201,20 @@ let big = 9999999999999999; // beyond safe integer -> rounds
 
 - [x] A **boolean** is only **`true`** or **`false`**; comparison operators (`>`, `<`, `==`, `!=`) return booleans.
 - [x] A variable declared with **no value** is **`undefined`** in both **value and type**.
-- [x] An **empty string** `""` is a perfectly legal **string** — it is *not* `undefined`. (And remember `typeof null` is `"object"`.)
+- [x] An **empty string** `""` is a perfectly legal **string** — it is _not_ `undefined`. (And remember `typeof null` is `"object"`.)
 
 Sandbox: `code_sandbox/js-types/booleans.html`
 
 ```javascript
-let b = (10 > 9);   // true
-let c = (10 > 11);  // false
+let b = 10 > 9; // true
+let c = 10 > 11; // false
 
-let car;            // declared, no value -> undefined
-let carEmpty = "";  // an empty string is a legal string
+let car; // declared, no value -> undefined
+let carEmpty = ""; // an empty string is a legal string
 
-typeof car;         // "undefined"
-typeof carEmpty;    // "string"
-typeof null;        // "object" (known quirk)
+typeof car; // "undefined"
+typeof carEmpty; // "string"
+typeof null; // "object" (known quirk)
 ```
 
 <img alt="js-types example 4 source" src="./code_sandbox/snaps/js-types-04-code.png" />
@@ -2357,24 +2363,27 @@ Operators perform **math and logic**. This page introduces **assignment (`=`)**,
 
 ### **Example 1: Arithmetic operators**
 
-- [x] `+ - * /` do the usual math; **`%`** is the **remainder (modulus)** and **`**`** is **exponentiation (power)**.
+- [x] `+ - * /` do the usual math; **`%`** is the **remainder (modulus)** and **`**`** is **exponentiation (power)\*\*.
 - [x] **`++`** and **`--`** increment/decrement a variable by 1.
 - [x] Division can produce a **float** (`10 / 3` → `3.333…`).
 
 Sandbox: `code_sandbox/js-operators/arithmetic.html`
 
 ```javascript
-let a = 10, b = 3;
+let a = 10,
+  b = 3;
 
-a + b;   // 13   addition
-a - b;   // 7    subtraction
-a * b;   // 30   multiplication
-a / b;   // 3.33 division
-a % b;   // 1    remainder (modulus)
-a ** b;  // 1000 exponentiation (power)
+a + b; // 13   addition
+a - b; // 7    subtraction
+a * b; // 30   multiplication
+a / b; // 3.33 division
+a % b; // 1    remainder (modulus)
+a ** b; // 1000 exponentiation (power)
 
-let x = 5; x++;  // 6  increment
-let y = 5; y--;  // 4  decrement
+let x = 5;
+x++; // 6  increment
+let y = 5;
+y--; // 4  decrement
 ```
 
 <img alt="js-operators example 1 source" src="./code_sandbox/snaps/js-operators-01-code.png" />
@@ -2385,20 +2394,20 @@ let y = 5; y--;  // 4  decrement
 
 ### **Example 2: Assignment operators**
 
-- [x] **`=`** assigns; the compound forms **`+= -= *= /= %= **=`** apply the operation to the current value and store the result.
+- [x] **`=`** assigns; the compound forms **`+= -= \*= /= %= **=`\*\* apply the operation to the current value and store the result.
 - [x] `x += 5` is exactly shorthand for `x = x + 5`.
 - [x] The demo threads one `x` through every operator so you can watch it change.
 
 Sandbox: `code_sandbox/js-operators/assignment.html`
 
 ```javascript
-let x = 10;   // =    x is 10
-x += 5;       // +=   x is 15
-x -= 3;       // -=   x is 12
-x *= 2;       // *=   x is 24
-x /= 4;       // /=   x is 6
-x %= 4;       // %=   x is 2
-x **= 3;      // **=  x is 8
+let x = 10; // =    x is 10
+x += 5; // +=   x is 15
+x -= 3; // -=   x is 12
+x *= 2; // *=   x is 24
+x /= 4; // /=   x is 6
+x %= 4; // %=   x is 2
+x **= 3; // **=  x is 8
 ```
 
 <img alt="js-operators example 2 source" src="./code_sandbox/snaps/js-operators-02-code.png" />
@@ -2416,14 +2425,14 @@ x **= 3;      // **=  x is 8
 Sandbox: `code_sandbox/js-operators/comparison.html`
 
 ```javascript
-10 == "10";   // true   loose equality (value only)
-10 === "10";  // false  strict equality (value + type)
-10 != 8;      // true   not equal
-10 > 8;       // true   greater than
+10 == "10"; // true   loose equality (value only)
+10 === "10"; // false  strict equality (value + type)
+10 != 8; // true   not equal
+10 > 8; // true   greater than
 
-10 > 5 && 10 < 20;  // true   && AND
-10 > 5 || 10 > 20;  // true   || OR
-!(10 > 5);          // false  !  NOT
+10 > 5 && 10 < 20; // true   && AND
+10 > 5 || 10 > 20; // true   || OR
+!(10 > 5); // false  !  NOT
 ```
 
 <img alt="js-operators example 3 source" src="./code_sandbox/snaps/js-operators-03-code.png" />
@@ -2443,14 +2452,14 @@ Sandbox: `code_sandbox/js-operators/strings.html`
 ```javascript
 let text1 = "John";
 let text2 = "Doe";
-text1 + " " + text2;   // "John Doe"  concatenation
+text1 + " " + text2; // "John Doe"  concatenation
 
 let greet = "Hello";
-greet += " World";     // "Hello World"  append with +=
+greet += " World"; // "Hello World"  append with +=
 
-5 + 5;        // 10       number + number
-"5" + 5;      // "55"     string + number -> string
-"Hello" + 5;  // "Hello5" string + number -> string
+5 + 5; // 10       number + number
+"5" + 5; // "55"     string + number -> string
+"Hello" + 5; // "Hello5" string + number -> string
 ```
 
 <img alt="js-operators example 4 source" src="./code_sandbox/snaps/js-operators-04-code.png" />
@@ -2599,12 +2608,13 @@ Arithmetic operators work on **numbers** (literals or variables). The numbers ar
 Sandbox: `code_sandbox/js-arithmetic/basic.html`
 
 ```javascript
-let a = 100, b = 50;   // operands 100 and 50
+let a = 100,
+  b = 50; // operands 100 and 50
 
-a + b;   // 150   +  add
-a - b;   // 50    -  subtract
-a * b;   // 5000  *  multiply
-a / b;   // 2     /  divide
+a + b; // 150   +  add
+a - b; // 50    -  subtract
+a * b; // 5000  *  multiply
+a / b; // 2     /  divide
 ```
 
 <img alt="js-arithmetic example 1 source" src="./code_sandbox/snaps/js-arithmetic-01-code.png" />
@@ -2613,21 +2623,21 @@ a / b;   // 2     /  divide
 
 - [x] **Outcome:** `150, 50, 5000, 2`.
 
-### **Example 2: Modulus (`%`) and exponentiation (`**`)**
+### **Example 2: Modulus (`%`) and exponentiation (`**`)\*\*
 
 - [x] **`%`** returns the **remainder** of a division (`5 % 2` → `1`); it is `0` when one number divides the other evenly.
-- [x] **`**`** raises to a power (`5 ** 2` → `25`) and is **equivalent to `Math.pow(x, y)`**.
+- [x] **`**`** raises to a power (`5 ** 2`→`25`) and is **equivalent to `Math.pow(x, y)`\*\*.
 - [x] `%` is handy for even/odd checks and cycling through ranges.
 
 Sandbox: `code_sandbox/js-arithmetic/modulus.html`
 
 ```javascript
-5 % 2;    // 1    % remainder (modulus)
-10 % 3;   // 1
-9 % 3;    // 0    evenly divisible
+5 % 2; // 1    % remainder (modulus)
+10 % 3; // 1
+9 % 3; // 0    evenly divisible
 
-5 ** 2;   // 25   ** exponentiation (power)
-2 ** 10;  // 1024
+5 ** 2; // 25   ** exponentiation (power)
+2 ** 10; // 1024
 Math.pow(5, 2); // 25  same as 5 ** 2
 ```
 
@@ -2647,13 +2657,13 @@ Sandbox: `code_sandbox/js-arithmetic/incdec.html`
 
 ```javascript
 let x = 5;
-let post = x++;   // postfix: returns 5 (old), x becomes 6
+let post = x++; // postfix: returns 5 (old), x becomes 6
 
 let y = 5;
-let pre = ++y;    // prefix:  returns 6 (new), y becomes 6
+let pre = ++y; // prefix:  returns 6 (new), y becomes 6
 
 let z = 8;
-z--;              // decrement: z becomes 7
+z--; // decrement: z becomes 7
 ```
 
 <img alt="js-arithmetic example 3 source" src="./code_sandbox/snaps/js-arithmetic-03-code.png" />
@@ -2666,15 +2676,15 @@ z--;              // decrement: z becomes 7
 
 - [x] **`*` and `/` run before `+` and `-`**, so `100 + 50 * 3` is **250**, not `(100 + 50) * 3`.
 - [x] **Parentheses** override the order: `(100 + 50) * 3` is **450**.
-- [x] Operators of the **same** precedence run **left to right** (`100 + 50 - 3`), except **`**`** which is **right to left** (`2 ** 3 ** 2` is `2 ** 9` = 512).
+- [x] Operators of the **same** precedence run **left to right** (`100 + 50 - 3`), except **`**`** which is **right to left** (`2 ** 3 ** 2`is`2 \*\* 9` = 512).
 
 Sandbox: `code_sandbox/js-arithmetic/precedence.html`
 
 ```javascript
-100 + 50 * 3;    // 250   * runs before +
-(100 + 50) * 3;  // 450   parentheses first
-100 + 50 - 3;    // 147   same level -> left to right
-2 ** 3 ** 2;     // 512   ** is right to left: 2 ** (3 ** 2)
+100 + 50 * 3; // 250   * runs before +
+(100 + 50) * 3; // 450   parentheses first
+100 + 50 - 3; // 147   same level -> left to right
+2 ** (3 ** 2); // 512   ** is right to left: 2 ** (3 ** 2)
 ```
 
 <img alt="js-arithmetic example 4 source" src="./code_sandbox/snaps/js-arithmetic-04-code.png" />
@@ -2773,7 +2783,7 @@ Then open `http://127.0.0.1:8770/js-arithmetic/`.
 <summary>Answer</summary>
 
 - [x] **Left to right** (e.g. `100 + 50 - 3`).
-- [x] Exception: **`**`** evaluates **right to left**.
+- [x] Exception: **`**`** evaluates **right to left\*\*.
 
 </details>
 
@@ -2796,35 +2806,193 @@ Arithmetic uses operands and operators: `+ - * / % ++ -- **`. `%` is the remaind
 
 ## Introduction
 
-Assignment operators **put values into variables**. The simple operator is **`=`**. Compound forms (`+=`, `-=`, `*=`, `**=`, `/=`, `%=`) update in place. ES2020 adds logical assignment (`&&=`, `||=`, `??=`).
+Assignment operators **put values into variables**. The simple operator is **`=`**. Compound forms (`+=`, `-=`, `*=`, `**=`, `/=`, `%=`) update a variable in place (`x += 5` means `x = x + 5`). On strings, `+=` **concatenates**. ES2020 adds logical assignment (`&&=`, `||=`, `??=`). This page also shows the **spread** `...` operator, which splits an iterable into individual elements.
 
 ## Detailed Explanation
 
-- [x] **Given `x = 10` and `y = 5`**
-  - `=` assigns; `+=` adds; `-=` subtracts; `*=` multiplies; `**=` exponentiates; `/=` divides; `%=` remainder.
-  - `x += 5` is the same as `x = x + 5`.
-- [x] **Strings**
-  - `=` assigns a string.
-  - `+=` **concatenates** onto a string (`text1 += "nice day"`).
-- [x] **Logical assignment (ES2020)**
-  - `&&=` assigns the second value if the first is **true**.
-  - `||=` assigns the second value if the first is **false**.
-  - `??=` assigns the second value if the first is **`null` or `undefined`**.
-- [x] **Spread `...`**
-  - Splits iterables into individual elements (mentioned on this page).
+- [x] **Assignment operators assign values to JavaScript variables.** Given `x = 10` and `y = 5`:
+  - `=` copies the right-hand value (`x = y` → `x` is `5`).
+  - `+=` `-=` `*=` `**=` `/=` `%=` mean `x = x + y`, `x = x - y`, and so on.
+  - The page table also lists object-property shorthand `x: 45` (same idea as `size.x = 45`) — that is **object syntax**, not a standalone assignment operator you write as `x: 45` by itself.
+- [x] **Logical assignment (ES2020)** uses truthiness / nullishness, not arithmetic:
+  - `&&=` assigns the right-hand value only if the left is **truthy**.
+  - `||=` assigns the right-hand value only if the left is **falsy**.
+  - `??=` assigns the right-hand value only if the left is **`null` or `undefined`** (nullish). `0` and `""` are falsy but **not** nullish.
+- [x] **The eight falsy values** are `false`, `0`, `-0`, `0n`, `""` / `''` / `` ` ` `` (empty strings), `null`, `undefined`, and `NaN`. Common traps that are actually **truthy**: `"0"`, `"false"`, `[]`, `{}`.
 
-Sandbox: `code_sandbox/js-assignment/index.html`
+### **Example 1: Simple assignment (`=`)**
 
-<img alt="js-assignment source" src="./code_sandbox/snaps/js-assignment-code.png" />
+- [x] **`=`** evaluates the right-hand side, then stores that value in the variable on the left.
+- [x] The right-hand side can be a **literal** (`10`) or an **expression** (`10 + y`). The expression runs first, then the result is assigned.
+- [x] After `let y = 5`, `let z = 10 + y` stores **15** in `z`. `y` itself is unchanged.
+
+Sandbox: `code_sandbox/js-assignment/simple.html`
+
+```javascript
+let x = 10;
+let y = 5;
+let z = 10 + y;
+```
+
+<img alt="js-assignment example 1 source" src="./code_sandbox/snaps/js-assignment-01-code.png" />
+
+<img alt="js-assignment example 1 result" src="./code_sandbox/snaps/js-assignment-01-result.png" />
+
+- [x] **Outcome:** `x` is **10**, `y` is **5**, and `z` is **15**.
+
+### **Example 2: Addition assignment (`+=`)**
+
+- [x] **`x += 5`** is exactly **`x = x + 5`**. It reads the current value, adds 5, and writes the sum back.
+- [x] Starting at `10`, `x += 5` leaves `x` at **15**.
+- [x] Do not confuse `+=` with `=+` (a unary plus after `=`). Always write the operator as **`+=`**.
+
+Sandbox: `code_sandbox/js-assignment/add.html`
 
 ```javascript
 let x = 10;
 x += 5;
 ```
 
-Rendered result:
+<img alt="js-assignment example 2 source" src="./code_sandbox/snaps/js-assignment-02-code.png" />
 
-<img alt="js-assignment result" src="./code_sandbox/snaps/js-assignment-result.png" />
+<img alt="js-assignment example 2 result" src="./code_sandbox/snaps/js-assignment-02-result.png" />
+
+- [x] **Outcome:** after `x += 5`, `x` is **15**.
+
+### **Example 3: Other arithmetic assignments (`-= *= **= /= %=`)**
+
+- [x] Each compound operator is shorthand for using the same variable on both sides:
+  - `x -= 5` → `x = x - 5` → **5**
+  - `a *= 5` → `a = a * 5` → **50**
+  - `b **= 5` → `b = b ** 5` → **100000** (`10` to the power of `5`)
+  - `c /= 5` → `c = c / 5` → **2**
+  - `d %= 5` → `d = d % 5` → **0** (10 divides evenly by 5)
+- [x] The page table uses the same numbers with `x = 10` and `y = 5` (`x += y` → 15, `x **= y` → 100000, and so on).
+- [x] Reset the variable to `10` before each line if you want to compare operators; otherwise each compound mutates the previous result.
+
+Sandbox: `code_sandbox/js-assignment/others.html`
+
+```javascript
+let x = 10; x -= 5;   // 5
+let a = 10; a *= 5;   // 50
+let b = 10; b **= 5;  // 100000
+let c = 10; c /= 5;   // 2
+let d = 10; d %= 5;   // 0
+```
+
+<img alt="js-assignment example 3 source" src="./code_sandbox/snaps/js-assignment-03-code.png" />
+
+<img alt="js-assignment example 3 result" src="./code_sandbox/snaps/js-assignment-03-result.png" />
+
+- [x] **Outcome:** the five results are **5, 50, 100000, 2, 0**.
+
+### **Example 4: String assignment (`=` and `+=`)**
+
+- [x] **`=`** stores a string just like a number: `let text = "Hello"` makes `text` the string **Hello**.
+- [x] On strings, **`+=` concatenates** (it does not add numbers). `"Hello" + " World"` becomes **Hello World** — note the leading space in `" World"` or the words glue together.
+- [x] Only `=` and `+=` are used for string assignment on this page. `-=` / `*=` and the rest are for numbers.
+
+Sandbox: `code_sandbox/js-assignment/strings.html`
+
+```javascript
+let text = "Hello";
+text += " World";
+```
+
+<img alt="js-assignment example 4 source" src="./code_sandbox/snaps/js-assignment-04-code.png" />
+
+<img alt="js-assignment example 4 result" src="./code_sandbox/snaps/js-assignment-04-result.png" />
+
+- [x] **Outcome:** `text` starts as **Hello** and becomes **Hello World** after `+=`.
+
+### **Example 5: Logical AND assignment (`&&=`)**
+
+- [x] **`x &&= 10`** assigns `10` to `x` **only if `x` is truthy**. If `x` is falsy, `x` is left alone (short-circuit).
+- [x] `let y = x &&= 10` stores the **result of that assignment expression** in `y` (the new `x` if assignment happened, otherwise the original falsy `x`).
+- [x] Truthy starters `true` and `1` become **10**. Falsy starters `false`, `0`, `undefined`, and `null` stay as they were.
+- [x] This operator is an **ES2020** feature.
+
+Sandbox: `code_sandbox/js-assignment/and.html`
+
+```javascript
+let x = true;      let y = x &&= 10;
+let x = false;     let y = x &&= 10;
+let x = 1;         let y = x &&= 10;
+let x = 0;         let y = x &&= 10;
+let x = undefined; let y = x &&= 10;
+let x = null;      let y = x &&= 10;
+```
+
+<img alt="js-assignment example 5 source" src="./code_sandbox/snaps/js-assignment-05-code.png" />
+
+<img alt="js-assignment example 5 result" src="./code_sandbox/snaps/js-assignment-05-result.png" />
+
+- [x] **Outcome:** truthy `x` becomes **10**; falsy `x` stays `false`, `0`, `undefined`, or `null`. `y` matches `x` in every row.
+
+### **Example 6: Logical OR assignment (`||=`)**
+
+- [x] **`x ||= 10`** assigns `10` **only if `x` is falsy**. If `x` is already truthy, it is left alone.
+- [x] Falsy starters `false`, `null`, and `undefined` all become **10**. Truthy `true` stays **true**.
+- [x] This is a common pattern for default values (`name ||= "Guest"`), but it will also overwrite `0` and `""` because those are falsy — use `??=` when you only want to fill in `null` / `undefined`.
+- [x] **ES2020** feature.
+
+Sandbox: `code_sandbox/js-assignment/or.html`
+
+```javascript
+let x = false;     let y = x ||= 10;
+let x = true;      let y = x ||= 10;
+let x = null;      let y = x ||= 10;
+let x = undefined; let y = x ||= 10;
+```
+
+<img alt="js-assignment example 6 source" src="./code_sandbox/snaps/js-assignment-06-code.png" />
+
+<img alt="js-assignment example 6 result" src="./code_sandbox/snaps/js-assignment-06-result.png" />
+
+- [x] **Outcome:** `false` / `null` / `undefined` become **10**; `true` stays **true**.
+
+### **Example 7: Nullish coalescing assignment (`??=`)**
+
+- [x] **`x ??= 10`** assigns `10` **only if `x` is `null` or `undefined`**. Other falsy values (`0`, `""`, `false`) are kept.
+- [x] An uninitialized `let a;` is `undefined`, so `a ??= 10` becomes **10**. `b = 0` stays **0**. `null` and `undefined` become **10**. An already-set `x = 10` stays **10**.
+- [x] Prefer `??=` over `||=` when `0` or an empty string is a valid stored value.
+- [x] **ES2020** feature.
+
+Sandbox: `code_sandbox/js-assignment/nullish.html`
+
+```javascript
+let a;             a ??= 10;
+let b = 0;         b ??= 10;
+let c = null;      c ??= 10;
+let d = undefined; d ??= 10;
+let x = 10; let y = 5; x ??= 10;
+```
+
+<img alt="js-assignment example 7 source" src="./code_sandbox/snaps/js-assignment-07-code.png" />
+
+<img alt="js-assignment example 7 result" src="./code_sandbox/snaps/js-assignment-07-result.png" />
+
+- [x] **Outcome:** `a`, `c`, and `d` become **10**; `b` stays **0**; `x` stays **10**.
+
+### **Example 8: Spread (`...`)**
+
+- [x] **`...`** splits an iterable into individual elements. A string is iterable **character by character**.
+- [x] `Math.min(...text)` with `text = "12345"` is `Math.min("1","2","3","4","5")`, which coerces to numbers and returns **1**. `Math.max` returns **5**.
+- [x] Spread is not an assignment operator; the page includes it here because it is used when passing many values (including into assignments and function calls).
+
+Sandbox: `code_sandbox/js-assignment/spread.html`
+
+```javascript
+let text = "12345";
+let min = Math.min(...text);
+let max = Math.max(...text);
+```
+
+<img alt="js-assignment example 8 source" src="./code_sandbox/snaps/js-assignment-08-code.png" />
+
+<img alt="js-assignment example 8 result" src="./code_sandbox/snaps/js-assignment-08-result.png" />
+
+- [x] **Outcome:** `Math.min(...text)` is **1** and `Math.max(...text)` is **5**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -2845,31 +3013,111 @@ Then open `http://127.0.0.1:8770/js-assignment/`.
 
 ## Questions and Answers
 
-### Question 1: What is `x += 10` if `x` started at 5?
+### Question 1: What is `x += 5` if `x` started at 10?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **15.** Same as `x = x + 10`.
+- [x] **15.** Same as `x = x + 5`.
 
 </details>
 
-### Question 2: Can `+=` be used on strings?
+### Question 2: What is `10 **= 5` (starting `b = 10; b **= 5`)?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **100000** — ten to the power of five.
+- [x] Same as `b = b ** 5`.
+
+</details>
+
+### Question 3: What is `10 %= 5`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **0** — 10 divides evenly by 5, so the remainder is 0.
+
+</details>
+
+### Question 4: Can `+=` be used on strings?
 
 <details>
 <summary>Answer</summary>
 
 - [x] **Yes.** It **concatenates**.
+- [x] `"Hello"` then `+= " World"` becomes **Hello World**.
 
 </details>
 
-### Question 3: What does `??=` do?
+### Question 5: What does `x &&= 10` do when `x` is `true` vs `false`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Assigns the right-hand value if the left is **`null` or `undefined`**.
-- [x] ES2020 feature.
+- [x] If `x` is **truthy** (`true`, `1`), it becomes **10**.
+- [x] If `x` is **falsy** (`false`, `0`, `null`, `undefined`), it is left unchanged.
+
+</details>
+
+### Question 6: What does `x ||= 10` do when `x` is `true` vs `false`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] If `x` is **falsy**, it becomes **10**.
+- [x] If `x` is **truthy** (`true`), it stays **true**.
+
+</details>
+
+### Question 7: What does `??=` do with `0` vs `null`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `0 ??= 10` stays **0** — zero is not nullish.
+- [x] `null ??= 10` becomes **10**.
+- [x] Only **`null`** and **`undefined`** trigger the assignment.
+
+</details>
+
+### Question 8: Name the eight falsy values.
+
+<details>
+<summary>Answer</summary>
+
+- [x] `false`, `0`, `-0`, `0n`, empty strings (`""`, `''`, empty template), `null`, `undefined`, `NaN`.
+- [x] `"0"`, `"false"`, `[]`, and `{}` are **truthy**.
+
+</details>
+
+### Question 9: What do `Math.min(... "12345")` and `Math.max(... "12345")` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **1** and **5**.
+- [x] Spread turns the string into the characters `"1"` … `"5"`, which coerce to numbers.
+
+</details>
+
+### Question 10: When should you use `??=` instead of `||=` for a default?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **`??=`** when **`0`** or an **empty string** is a valid value you must keep.
+- [x] **`||=`** would overwrite those because they are falsy.
+
+</details>
+
+### Question 11: Is `&&=` / `||=` / `??=` old JavaScript?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** They are **ES2020** features.
 
 </details>
 
@@ -2877,12 +3125,15 @@ Then open `http://127.0.0.1:8770/js-assignment/`.
 
 ## Summary
 
-**`=`** assigns. **`+= -= \*= **= /= %=`** update in place (`x += y`means`x = x + y`). On strings, **`+=` concatenates**. Logical assignment (`&&= ||= ??=`) is ES2020.
+**`=`** assigns a value (literal or expression). Compound arithmetic operators (`+= -= *= **= /= %=`) mean `x = x ⊕ value`. On strings, **`+=` concatenates**. Logical assignment is ES2020: **`&&=`** writes when the left is truthy, **`||=`** when it is falsy, **`??=`** only when it is `null` or `undefined` (`0` is kept). Spread **`...`** unpacks iterables — `"12345"` into `Math.min` / `Math.max` yields **1** and **5**.
 
 ## References
 
 - [JS Assignment (W3Schools)](https://www.w3schools.com/js/js_assignment.asp)
 - [MDN: Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment)
+- [MDN: Logical AND assignment (&&=)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)
+- [MDN: Nullish coalescing assignment (??=)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment)
+- [MDN: Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 </details>
 

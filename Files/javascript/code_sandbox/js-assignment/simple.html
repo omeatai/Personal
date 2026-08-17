@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Assignment - Simple =</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The = Operator</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = 10;
+      let y = 5;
+      let z = 10 + y;
+      document.getElementById("demo").innerText =
+        'let x = 10;          -> x = ' +
+        x +
+        "\n" +
+        "let y = 5;\n" +
+        "let z = 10 + y;      -> z = " +
+        z;
+    </script>
+  </body>
+</html>

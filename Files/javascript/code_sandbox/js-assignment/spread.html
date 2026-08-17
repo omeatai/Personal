@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Assignment - Spread</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The Spread (...) Operator</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "12345";
+      let min = Math.min(...text);
+      let max = Math.max(...text);
+      document.getElementById("demo").innerText =
+        'let text = "12345";\n' +
+        "Math.min(...text) = " +
+        min +
+        "\n" +
+        "Math.max(...text) = " +
+        max;
+    </script>
+  </body>
+</html>

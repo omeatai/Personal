@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Assignment - &&=</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The &&= Operator (ES2020)</h2>
+    <pre id="demo"></pre>
+    <script>
+      function show(label, x) {
+        let y = (x &&= 10);
+        return label + "  y = x &&= 10  -> x = " + x + ", y = " + y;
+      }
+      document.getElementById("demo").innerText = [
+        show("x = true     ", true),
+        show("x = false    ", false),
+        show("x = 1        ", 1),
+        show("x = 0        ", 0),
+        show("x = undefined", undefined),
+        show("x = null     ", null),
+      ].join("\n");
+    </script>
+  </body>
+</html>
