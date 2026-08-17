@@ -800,48 +800,102 @@ JavaScript **syntax** is the set of rules for writing the language. Values are *
 
 ## Detailed Explanation
 
-- [x] **Two types of values**
-  - **Literals** — fixed values.
-  - **Variables** — variable values.
-- [x] **Literals**
-  - **Numbers** are written with or without decimals: `10.50` and `1001`.
-  - **Strings** are text in **double or single quotes**: `"John Doe"` and `'John Doe'`.
-- [x] **Keywords**
-  - Keywords define **actions**.
-  - **`let`** and **`const`** create variables: `let x = 5;` and `const fname = "John";`.
-  - Keywords are **case-sensitive**. JavaScript does **not** treat `LET` or `Let` as `let`.
-- [x] **Variables and identifiers**
-  - Variables are **containers** for data values.
-  - Each must have a **unique name** (an **identifier**).
-  - Identifier rules: start with a **letter**, **`_`**, or **`$`**; digits allowed **after** the first character; cannot be a **reserved keyword**; **case-sensitive**.
-- [x] **Operators**
-  - **Assignment** `=` assigns values: `x = 6`.
-  - **Arithmetic** `+ - * /` compute values: `let sum = x + y;` and `5 * 10`.
-- [x] **Expressions**
-  - A combination of values, variables, and operators that **computes to a value**.
-  - `(5 + 6) * 10` evaluates to **110**.
-  - `"John" + " " + "Doe"` evaluates to **John Doe**.
-- [x] **Case sensitive**
-  - Identifiers are case sensitive: `lastName` and `lastname` are **different** variables.
-- [x] **Camel case**
-  - Hyphens (`first-name`) are **not allowed** (reserved for subtraction).
-  - Underscore: `first_name`.
-  - **Upper Camel Case (Pascal Case):** `FirstName`.
-  - **Lower camel case:** `firstName` — JavaScript programmers **tend to use** this.
+- [x] **Syntax = the rules for how programs are constructed**
+  - Declaring variables (`let x = 5;`), computing values (`let z = x + y;`), and comments (`// ...`) are all governed by syntax rules.
+- [x] **Two kinds of values**
+  - **Literals** are fixed values written directly in code.
+  - **Variables** are named containers whose value can change.
+- [x] Each example below is a small page that computes real values with `<script>` and prints them, so you can see what the rules produce.
 
-Sandbox: `code_sandbox/js-syntax/index.html`
+### **Example 1: Literals (fixed values)**
 
-<img alt="js-syntax source" src="./code_sandbox/snaps/js-syntax-code.png" />
+- [x] **Number literals** are written with or without decimals: `10.50` (shows as `10.5`) and `1001`.
+- [x] **String literals** are text wrapped in **double or single quotes**: `"John Doe"` and `'John Doe'` are equally valid.
+- [x] A literal is just the value itself — no name attached.
+
+Sandbox: `code_sandbox/js-syntax/literals.html`
+
+```javascript
+// Numbers, with or without decimals
+10.50;
+1001;
+
+// Strings, in double or single quotes
+"John Doe";
+"John Doe";
+```
+
+<img alt="js-syntax example 1 source" src="./code_sandbox/snaps/js-syntax-01-code.png" />
+
+<img alt="js-syntax example 1 result" src="./code_sandbox/snaps/js-syntax-01-result.png" />
+
+- [x] **Outcome:** the page prints the numbers **10.5, 1001** and the strings **"John Doe", 'John Doe'**, confirming both number forms and both quote styles are valid.
+
+### **Example 2: Keywords, variables, and identifiers**
+
+- [x] **Keywords** define actions. **`let`** and **`const`** both create variables (`let x = 5;`, `const fname = "John";`).
+- [x] Keywords are **case-sensitive**: `LET` or `Let` is **not** the keyword `let`.
+- [x] A variable can be **defined first and assigned later** (`let y;` then `y = 6;`).
+- [x] **Identifier rules:** must start with a **letter, `_`, or `$`**; may contain digits after the first character; cannot be a **reserved keyword**; and are **case-sensitive**.
+
+Sandbox: `code_sandbox/js-syntax/variables.html`
 
 ```javascript
 let x = 5;
-let y = 6;
-let sum = x + y;
+const fname = "John";
+
+let y;
+y = 6;
 ```
 
-Rendered result:
+<img alt="js-syntax example 2 source" src="./code_sandbox/snaps/js-syntax-02-code.png" />
 
-<img alt="js-syntax result" src="./code_sandbox/snaps/js-syntax-result.png" />
+<img alt="js-syntax example 2 result" src="./code_sandbox/snaps/js-syntax-02-result.png" />
+
+- [x] **Outcome:** the page reports **let x = 5**, **const fname = "John"**, and **y = 6** — the define-then-assign step worked.
+
+### **Example 3: Operators and expressions**
+
+- [x] The **assignment** operator `=` stores a value; **arithmetic** operators `+ - * /` compute values.
+- [x] An **expression** combines values, variables, and operators and **evaluates to a single value**: `(5 + 6) * 10` → **110** (parentheses first).
+- [x] With strings, `+` means **concatenation**: `"John" + " " + "Doe"` → **"John Doe"**.
+
+Sandbox: `code_sandbox/js-syntax/expressions.html`
+
+```javascript
+let x = 5,
+  y = 6;
+let sum = x + y; // 11
+5 * 10; // 50
+(5 + 6) * 10; // 110
+"John" + " " + "Doe"; // "John Doe"
+```
+
+<img alt="js-syntax example 3 source" src="./code_sandbox/snaps/js-syntax-03-code.png" />
+
+<img alt="js-syntax example 3 result" src="./code_sandbox/snaps/js-syntax-03-result.png" />
+
+- [x] **Outcome:** the page prints **x + y = 11**, **5 \* 10 = 50**, **(5 + 6) \* 10 = 110**, and **"John" + " " + "Doe" = John Doe**.
+
+### **Example 4: Case sensitivity and camelCase**
+
+- [x] Identifiers are **case-sensitive**: `lastName` and `lastname` are **two different variables** holding different values.
+- [x] Naming conventions: **hyphens are not allowed** (`first-name` is reserved for subtraction); underscore (`first_name`), **UpperCamelCase/Pascal** (`FirstName`), and **lowerCamelCase** (`firstName`) are all possible.
+- [x] JavaScript programmers **conventionally use lowerCamelCase** for variables.
+
+Sandbox: `code_sandbox/js-syntax/case.html`
+
+```javascript
+let lastName = "Doe";
+let lastname = "Peterson"; // different variable!
+```
+
+<img alt="js-syntax example 4 source" src="./code_sandbox/snaps/js-syntax-04-code.png" />
+
+<img alt="js-syntax example 4 result" src="./code_sandbox/snaps/js-syntax-04-result.png" />
+
+- [x] **Outcome:** the page shows **lastName = Doe** and **lastname = Peterson** side by side — proof the two names are distinct.
+- [x] **Page exercise —** *Correct syntax to assign a value?* → **`x = 5`** (not `x : 5`, `x == 5`, or `x -> 5`).
 
 <details>
   <summary>Terminal Commands</summary>
