@@ -1,161 +1,211 @@
-## IAM policy structure
+## IAM policy simulator
 
-In this lesson, I'm going to go through I AM policy structure.
+In this lesson,
 
-I'm gonna help you to understand how to read
+I'm gonna show you another tool for IAM,
 
-JSON policies and how to utilize
+which is the IAM policy simulator.
 
-JSON policies in I am.
+Now again, you'll find the link
 
-So firstly, just as a reminder, of course, in AWS, everything is an API action.
+for this attached to the lesson.
 
-So whenever you're performing anything through the console, the CLI or the SDK,
+Otherwise, just search for IAM policy simulator.
 
-what you're actually doing is making an API call.
+You should end up on a page like this one.
 
-Each service has its own set of API actions.
+Now what we've got here is on the left
 
-And those are those particular individual actions that
+we have to select the context.
 
-we're trying to perform for that service.
+So are we gonna apply this simulation to specific users,
 
-So if we go in a console and launch an EC2 instance,
+groups, or roles?
 
-what's happening behind the scenes is an API action is
+Users is the default, here I can see my groups.
 
-being called and that is the EC2 run instances.
+I've just got one, my admin group,
 
-If we stop an R DS database via the CLI or the console,
+and then roles, a whole bunch of roles.
 
-it's the R DS stop DB instance API action that is taking place.
+So I'll put it back to users.
 
-So every service has these API actions
+I've got two user accounts, the Neil user account,
 
-and we can get very specific in our policies if we wish to
+that's my one with full admin permissions.
 
-in order to restrict or allow specific individual API actions,
+And then I've got testuser,
 
-or we can have more broad reaching policies that
+which we use for the IAM policy generator lesson.
 
-allow or deny an entire service or more.
+So that user should only have access
 
-So let's have a look at an I AM policy.
+to a few API actions for S3
 
-Now, the first thing to note is they're written in javascript object notation.
+and EC2 instance API actions as well.
 
-All of the policies in Aws are Jason.
+So that would be a good user to run this simulation against
 
-Now the version at the top here, don't worry about this date.
+because obviously it has very limited permissions in AWS.
 
-It's not a incorrect date, it's actually correct. So this is just a version of
+So if I choose testuser, now we can see that it lists
 
-JSON policy statements that are being used.
+whatever policies, permissions, boundaries, et cetera,
 
-Next, we have a statement
+that are actually attached to this user account.
 
-and the statement is essentially a block of code
+So we'd actually be able to see here,
 
-and each statement
+oh well the user has an inline policy,
 
-has a series of individual actions, effects resources and so on.
+which is this test poll.
 
-And they're all evaluated together,
+There might be other IAM policies applied
 
-a policy may contain more than one permission statement.
+as well via groups and that kind of thing.
 
-So this block here could be followed by another one. And then there would be a comma
+Or maybe there's a permissions boundary
 
-with
+or we wanna simulate a permissions boundary,
 
-JSON. We've got to be very specific about the uh the formatting.
+which we can actually do here as well.
 
-So if you miss a comma, for example, it does break the code.
+So in this case, we have this policy attached.
 
-So um usually the policy editors will highlight that for us.
+So all I'm gonna do here is I'm just trying to see, okay,
 
-For example, if you're using visual studio code and often
+I've attached this policy to this user
 
-uh within the AWS management console as well, it will point out where the issues lie.
+and I wanna see through this console what permissions
 
-Now, the effect is either allow or deny. Those are the only two effects that we have.
+that user is going to have access to.
 
-So do we wanna deny something or do we want to allow it?
+Now, if you had a very big complex policy
 
-Next, we have the actions,
+or you have a series of different policies applied,
 
-the actions list,
+some through groups, some through permissions policies
 
-the specific resource operations that the policy is going to affect.
+attached to the inline,
 
-So are we allowing
+to the user account, for example,
 
-S3 Dynamo DB or are we denying S3 dynamo DB?
+then this becomes a lot better
 
-So we specify whether we want to allow or deny.
+'cause you're trying to work out what is the aggregate
 
-Then what specifically is that we want to allow or deny
+permissions that the user's gonna have.
 
-here, we can see that we have a series of API actions
+This is a very simple example,
 
-S3 star, that's a wild card. That means all S3 actions,
+but it just shows you how to use it.
 
-Dynamo DB, we've got a bit more specific,
+So we have the inline policy. Now I can select services.
 
-but we've gone down to describe level and then we have a wild card.
+So for example, if I choose EC2, choose the EC2 option here,
 
-So there's probably several API actions that start with the word describe.
+then I can choose specific actions
 
-So it might be described table or something like that.
+or I can just select all of them, I've selected all
 
-So there'll be a series of those and we want to allow all of them.
+and then run a simulation.
 
-So we can get very specific if we want to or we can keep it a bit more generic.
+And of course we can see lots
 
-Now, the resource lists the specific resources that the policy applies to.
+and lots of permissions are allowed, okay?
 
-So here we have the s reaction with a wild card. So all s reactions,
+They're basically all allowed.
 
-then we have two
+That's in the EC2 context.
 
-of these resources for the S3 bucket.
+If I chose EC2 autoscaling,
 
-So this is the A RN the Amazon resource name for a specific S3 bucket.
+well I didn't allow that in the policy,
 
-But why have we got two lines here? We've got one with a slash star.
+so I should get a bunch of denied.
 
-Well,
+So let's run a simulation,
 
-the slash star means that we're assigning some
+just make sure I've got everything.
 
-of the permissions to objects within the bucket.
+I'll clear this out. Sometimes it's a little bit finicky.
 
-Whereas this here is the bucket level.
+And then run a simulation again, select all, run.
 
-So within S3, there are bucket level API actions and object level API actions.
+Okay, now we get denied.
 
-Those are the the files that are actually stored in the
+So now you can see Amazon EC2 autoscaling.
 
-bucket that they can have their own permissions assigned to them.
+All of these are being denied.
 
-So what we do with the star means all of the bucket level and
+What about S3?
 
-all of the object level permissions are going to be in this case allowed.
+So if I go to S3, type S3 here, select S3,
 
-And so we have to specify two resources, one for the bucket,
+I'm just gonna clear these results.
 
-one for the objects in the bucket.
+Now for the S3 actions, again,
 
-And then we've got a dynamo DB table.
+I could choose these specific actions,
 
-We specify the exact table with the account number in the region in
+or in my case, I'm just gonna select everything,
 
-the middle here as well as the table name on the end.
+run the simulation, and I get a lot of denied.
 
-Now, as I've mentioned, a star is a wild card. So it means everything from that point.
+I only actually allowed a few permissions.
 
-In this case, S3 colon star means
+So yeah, we can see here get bucket location,
 
-every API action that starts with S3.
+that's allowed, we've got get objects,
 
-That's all of the API actions for the Amazon S3 service.
+and then we've got list all my buckets and list bucket.
+
+So we can see exactly what this user will be able to do.
+
+Now you may notice at the top here,
+
+the mode is existing policies.
+
+You can also choose new policy
+
+and that's where you get this policy sandbox.
+
+So now you can actually add your code in.
+
+So you might be able to add some more restrictive code.
+
+Let's do that, let's actually take
+
+this policy statement here
+
+which we created in the previous lesson.
+
+And I'm gonna paste that in.
+
+And what I'll do now is maybe I will just
+
+restrict the actions a little bit more.
+
+So I'll take these ones out, apply this policy,
+
+I'll clear the results, run the simulation again,
+
+have to select all, run simulation,
+
+and now of course I get access denied
+
+for a lot more permissions.
+
+I've still got the get objects
+
+and I've still got the list all my buckets.
+
+But those are the only permissions.
+
+So in this mode, you can now put in a policy that you plan
+
+to apply to a user, or a group or a role,
+
+and then you can actually simulate what permissions
+
+that user, group, or role would actually provide.
