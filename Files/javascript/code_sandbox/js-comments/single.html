@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Comments - Single Line</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h1 id="myH">Heading</h1>
+    <p id="myP">Paragraph</p>
+    <pre id="calc"></pre>
+    <script>
+      // Change heading:
+      document.getElementById("myH").innerHTML = "My First Page";
+      // Change paragraph:
+      document.getElementById("myP").innerHTML = "My first paragraph.";
+      let x = 5; // Declare x, give it the value of 5
+      let y = x + 2; // Declare y, give it the value of x + 2
+      document.getElementById("calc").innerText =
+        "x = " + x + ", y = x + 2 = " + y;
+    </script>
+  </body>
+</html>

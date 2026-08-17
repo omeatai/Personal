@@ -54,8 +54,8 @@ do **not** duplicate it.
 
 ## Resume pointer
 
-- **Next task:** `1.3` — JS Comments (improvement pass; user requested range JS Introduction → JS Strings).
-- **Last completed:** `1.2` JS Statements — rewritten to per-example standard (order, semicolons, code blocks + keywords table).
+- **Next task:** `1.4` — JS Variables (improvement pass; user requested range JS Introduction → JS Strings).
+- **Last completed:** `1.3` JS Comments — rewritten to per-example standard (single-line, multi-line, prevent execution).
 - **Notes:** `tutorial.md` currently has older accordions for JS Introduction → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
 
 ---
@@ -121,7 +121,7 @@ do **not** duplicate it.
 
 - [x] `1.1` JS Syntax — `js_syntax.asp` (exists — improve)
 - [x] `1.2` JS Statements — `js_statements.asp` (exists — improve)
-- [ ] `1.3` JS Comments — `js_comments.asp` (exists — improve)
+- [x] `1.3` JS Comments — `js_comments.asp` (exists — improve)
 - [ ] `1.4` JS Variables — `js_variables.asp` (exists — improve)
 - [ ] `1.5` JS Let — `js_let.asp` (exists — improve)
 - [ ] `1.6` JS Const — `js_const.asp` (exists — improve)

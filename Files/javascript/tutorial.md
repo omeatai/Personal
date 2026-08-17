@@ -1228,37 +1228,78 @@ Comments **explain** code and make it **readable**. They can also **prevent exec
 
 ## Detailed Explanation
 
-- [x] **Single-line comments**
-  - Start with **`//`**.
-  - Text from `//` to the **end of the line** is ignored.
-  - Use them **before** a line or **at the end** of a line (`let x = 5; // Declare x...`).
-- [x] **Multi-line comments**
-  - Start with **`/*`** and end with **`*/`**.
-  - Any text between them is ignored.
-  - Also called a **comment block**.
-- [x] **What is most common?**
-  - **Single-line** comments are most common.
-  - **Block** comments are often used for **formal documentation**.
-- [x] **Prevent execution**
-  - Suitable for **code testing**.
-  - Putting **`//`** in front of a line turns it from executable code into a comment.
-  - A **comment block** can disable **multiple** lines.
+- [x] **Comments do two jobs**
+  - **Explain** code so it is easier to read.
+  - **Prevent execution** of a line or block while you test alternatives.
+- [x] Comments are ignored by the engine — they never affect the output, only the readability/behaviour of which lines run.
 
-Sandbox: `code_sandbox/js-comments/index.html`
+### **Example 1: Single-line comments (`//`)**
 
-<img alt="js-comments source" src="./code_sandbox/snaps/js-comments-code.png" />
+- [x] A `//` comment runs from the `//` to the **end of the line**; everything after it on that line is ignored.
+- [x] Two placements: **on their own line** before code (`// Change heading:`) or **at the end** of a code line (`let x = 5; // Declare x`).
+- [x] Comments do not stop the real statements — the heading/paragraph still change and `x`, `y` are still computed.
+
+Sandbox: `code_sandbox/js-comments/single.html`
 
 ```javascript
 // Change heading:
 document.getElementById("myH").innerHTML = "My First Page";
-
 // Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+
+let x = 5; // Declare x, give it the value of 5
+let y = x + 2; // Declare y, give it the value of x + 2
+```
+
+<img alt="js-comments example 1 source" src="./code_sandbox/snaps/js-comments-01-code.png" />
+
+<img alt="js-comments example 1 result" src="./code_sandbox/snaps/js-comments-01-result.png" />
+
+- [x] **Outcome:** despite the comments, the heading becomes **My First Page**, the paragraph **My first paragraph.**, and the page prints **x = 5, y = x + 2 = 7**.
+
+### **Example 2: Multi-line comments (`/* ... */`)**
+
+- [x] Everything between **`/*`** and **`*/`** is ignored, across as many lines as you like — a **comment block**.
+- [x] Block comments are handy for a few lines of explanation or **formal documentation**; single-line `//` comments are the more common day-to-day style.
+- [x] The two real statements after the block still run.
+
+Sandbox: `code_sandbox/js-comments/multi.html`
+
+```javascript
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myP"
+*/
+document.getElementById("myH").innerHTML = "My First Page";
 document.getElementById("myP").innerHTML = "My first paragraph.";
 ```
 
-Rendered result:
+<img alt="js-comments example 2 source" src="./code_sandbox/snaps/js-comments-02-code.png" />
 
-<img alt="js-comments result" src="./code_sandbox/snaps/js-comments-result.png" />
+<img alt="js-comments example 2 result" src="./code_sandbox/snaps/js-comments-02-result.png" />
+
+- [x] **Outcome:** the block is ignored and both statements run, so the page shows **My First Page** and **My first paragraph.** — identical to Example 1's heading/paragraph.
+
+### **Example 3: Using comments to prevent execution**
+
+- [x] Adding `//` in front of a statement turns it into a comment, so it **does not run** — great for temporarily disabling code while testing.
+- [x] Here the heading-change line is commented out, so the `<h1>` keeps its original text **Heading**, while the paragraph line still runs.
+- [x] A `/* ... */` block can disable **several** lines at once.
+
+Sandbox: `code_sandbox/js-comments/prevent.html`
+
+```javascript
+//document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+```
+
+<img alt="js-comments example 3 source" src="./code_sandbox/snaps/js-comments-03-code.png" />
+
+<img alt="js-comments example 3 result" src="./code_sandbox/snaps/js-comments-03-result.png" />
+
+- [x] **Outcome:** the heading stays **Heading** (its change was commented out) while the paragraph becomes **My first paragraph.** — proof the commented line never executed.
+- [x] **Page exercise —** *Correct comment syntax?* → **`// this is a comment`** (not `#`, `''`, or `##`).
 
 <details>
   <summary>Terminal Commands</summary>
