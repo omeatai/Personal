@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Const - Block Scope & Hoisting</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Block Scope & Hoisting</h2>
+    <pre id="demo"></pre>
+    <script>
+      const x = 10;
+      let out = "outer const x = " + x + "\n";
+      {
+        const x = 2; // a separate block-scoped const
+        out += "block const x = " + x + "\n";
+      }
+      out += "outer const x = " + x + " (unchanged)\n";
+      try {
+        y; // access before its declaration line
+      } catch (e) {
+        out += "access y before 'const y' -> " + e.name + " (temporal dead zone)";
+      }
+      const y = 5;
+      document.getElementById("demo").innerText = out;
+    </script>
+  </body>
+</html>

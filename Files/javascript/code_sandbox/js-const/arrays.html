@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Const - Constant Arrays</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Constant Arrays</h2>
+    <pre id="demo"></pre>
+    <script>
+      const cars = ["Saab", "Volvo", "BMW"];
+      cars[0] = "Toyota"; // change an element - OK
+      cars.push("Audi"); // add an element - OK
+      let msg = "after edits: " + cars.join(", ") + "\n";
+      try {
+        cars = ["Toyota", "Volvo", "Audi"]; // reassign the array - NOT OK
+      } catch (e) {
+        msg += "cars = [...]  -> " + e.name + " (cannot reassign the array)";
+      }
+      document.getElementById("demo").innerText = msg;
+    </script>
+  </body>
+</html>

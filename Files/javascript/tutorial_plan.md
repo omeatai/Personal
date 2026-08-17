@@ -54,8 +54,8 @@ do **not** duplicate it.
 
 ## Resume pointer
 
-- **Next task:** `1.6` — JS Const (improvement pass; user requested range JS Introduction → JS Strings).
-- **Last completed:** `1.5` JS Let — rewritten to per-example standard (block scope, var leak, redeclare, hoisting/TDZ).
+- **Next task:** `1.7` — JS Types (improvement pass; user requested range JS Introduction → JS Strings).
+- **Last completed:** `1.6` JS Const — rewritten to per-example standard (no reassign, constant arrays, constant objects, block scope/hoisting).
 - **Notes:** `tutorial.md` currently has older accordions for JS Introduction → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
 
 ---
@@ -124,7 +124,7 @@ do **not** duplicate it.
 - [x] `1.3` JS Comments — `js_comments.asp` (exists — improve)
 - [x] `1.4` JS Variables — `js_variables.asp` (exists — improve)
 - [x] `1.5` JS Let — `js_let.asp` (exists — improve)
-- [ ] `1.6` JS Const — `js_const.asp` (exists — improve)
+- [x] `1.6` JS Const — `js_const.asp` (exists — improve)
 - [ ] `1.7` JS Types — `js_types.asp` (exists — improve)
 
 ### S2 — Operators

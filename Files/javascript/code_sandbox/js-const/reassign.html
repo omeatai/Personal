@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Const - Cannot Reassign</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>const Cannot Be Reassigned</h2>
+    <pre id="demo"></pre>
+    <script>
+      let msg = "";
+      const PI = 3.14159265359;
+      msg += "const PI = " + PI + "\n";
+      try {
+        PI = 3.14; // reassigning a const throws
+      } catch (e) {
+        msg += "PI = 3.14            -> " + e.name + " (cannot reassign)\n";
+      }
+      msg += "'const PI;' (no value)  -> SyntaxError (must assign now)";
+      document.getElementById("demo").innerText = msg;
+    </script>
+  </body>
+</html>
