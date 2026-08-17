@@ -1,5 +1,5 @@
 ---
-description: Read named tutorial section(s) from the W3Schools JavaScript site, run examples in code_sandbox, snap code and results, and append a study accordion to Files/javascript/tutorial.md
+description: Read named tutorial section(s) from the W3Schools JavaScript site, run every example in code_sandbox, snap code and results, and append one detailed study accordion per section to Files/javascript/tutorial.md
 alwaysApply: false
 ---
 
@@ -7,23 +7,23 @@ alwaysApply: false
 
 When the user says **"apply to \<Section\>"** (or similar, e.g. `@javascript_tutorial.mdc apply to JS Introduction`), document that tutorial section from the **open browser tab** (or the site they name, default [W3Schools JavaScript](https://www.w3schools.com/js/default.asp)).
 
-They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to JS Introduction to JS Comments`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one accordion. A range = one accordion per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → snap → append) before starting the next.
+They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to JS Introduction to JS Comments`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one accordion. A range = one accordion per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → run → snap → append) before starting the next.
 
-This output is a **study tutorial**, not a thin recap. The reader should be able to learn the section from the accordion alone: every idea explained, every site example rebuilt, every result shown.
+This output is a **detailed study tutorial**, not a thin recap. The reader must be able to learn the whole section from the accordion alone — without ever opening W3Schools. That means **every idea explained in depth, every site example rebuilt and run, extra clarifying examples added where they help, and every result shown as a snap with a written description of what happened.** When in doubt, add more explanation and more examples, not less.
 
 ## Workflow Steps
 
-1. **Read** `Personal/bin/format.md` once for **accordion spacing and Q&A nesting only**. Do **not** copy its Lab or Code children. This rule’s heading order and Detailed Explanation layout win.
+1. **Read** `Personal/bin/format.md` once for **accordion spacing and Q&A nesting only**. Ignore its Lab and Code children — they are removed in this rule. This rule’s heading order and Detailed Explanation layout win.
 2. **Open the section in the browser**
    - Default site: [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp).
    - Use the existing Cursor browser tab if it is already on that tutorial.
    - If not, navigate to the site, then click the named item in the left/sidebar (or in-page heading). Example: **JS Introduction**.
    - If the name does not match, list nearby nav items and stop — do not guess a different section.
-   - Scroll the **full** section. Read headings, notes, examples, exercises, tables, and warnings. Capture the **section URL**.
+   - Scroll the **full** section. Read every heading, note, example, exercise, table, and warning. Capture the **section URL**.
 3. **Rebuild examples in the sandbox**
    - Create `Personal/Files/javascript/code_sandbox/<slug>/` (`JS Introduction` → `js-introduction`).
    - Write runnable files. Prefer `index.html` with the section’s scripts (inline `<script>` or `script.js` if the page uses a separate file). Extra `.css` only if the section uses it. Extra HTML files (`source.html`, extra demos) when the page has several Tryit examples.
-   - Recreate **every** Tryit / runnable example on the page. Do not invent extra features, and do not drop examples to save space.
+   - Recreate **every** Tryit / runnable example on the page. Do not invent unrelated features, and do not drop examples to save space. You **may** add small extra variations when they make a concept clearer — label them as your own example.
    - If the section is **console-only** (no DOM output), still keep a small `index.html` when the tutorial shows a browser Tryit, **or** use a `.js` file run with `node` when the page is clearly Node/console. Match the tutorial’s environment.
    - If the section has **no** runnable example, skip the run/snap steps and say so in Detailed Explanation.
 4. **Run the example**
@@ -35,16 +35,17 @@ This output is a **study tutorial**, not a thin recap. The reader should be able
 5. **Snap source and result**
    - **Result:** screenshot the **running** sandbox page in the Cursor browser (or the terminal output for Node-only examples). That is the outcome the reader must see.
    - **Code:** snap the sandbox source. Prefer **CodeSnap** (`CodeSnap 📸` / `codesnap.start`) on the editor selection. If the agent cannot fire CodeSnap, screenshot the example as shown (tutorial editor or sandbox source) and still save a PNG.
-   - Save PNGs under `Personal/Files/javascript/code_sandbox/snaps/`:
-     - `<slug>-code.png` (and `-01-code.png`, `-02-code.png` if several examples)
-     - `<slug>-result.png` (and `-01-result.png`, `-02-result.png` if several results)
+   - Save PNGs under `Personal/Files/javascript/code_sandbox/snaps/`. Use **per-example numbering** so each example has its own pair:
+     - `<slug>-01-code.png`, `<slug>-02-code.png`, …
+     - `<slug>-01-result.png`, `<slug>-02-result.png`, …
+     - A single-example section may use `<slug>-code.png` / `<slug>-result.png`.
    - Embed **relative** images from `tutorial.md`: `./code_sandbox/snaps/<file>.png`
 6. **Append** one formatted accordion per section to `Personal/Files/javascript/tutorial.md`. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
 7. If `tutorial.md` has no `#` title yet, start the file with `# JavaScript Tutorial` then the accordion.
 
 ## Format Requirements
 
-Accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Personal/bin/format.md`. Heading **order and children** follow this rule (not Lab/Code from those files):
+Accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Personal/bin/format.md`. Heading **order and children** follow this rule:
 
 - Topic accordion `<summary>` = the section title the user named (e.g. `JS Introduction`).
 - **Accordion spacing:** one blank line after every `</summary>` and one blank line before every `</details>`.
@@ -52,23 +53,22 @@ Accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Person
 - After Detailed Explanation, only these **closed child accordions**, in this order:
   1. **Terminal Commands**
   2. **Questions and Answers**
-- **Do not** emit a **Lab** child. **Do not** emit a **Code** child. All code, code snaps, and result snaps live in **Detailed Explanation**.
-- Detailed Explanation uses `- [x]` items, `###` subheadings per example, fenced code, and `<img>` snaps (see **Detailed Explanation** below).
-- Q&A: **8–15** questions that cover the examples, not just definitions; each answer is nested `<details><summary>Answer</summary>` with **only** `- [x]` lines.
+- **No `Lab` section.** **No separate `Code` section.** All prose, fenced code, code snaps, and result snaps live **inside Detailed Explanation**, next to the idea they demonstrate.
+- Q&A: **8–15** questions that cover the actual examples (inputs, outputs, pitfalls), not just definitions; each answer is nested `<details><summary>Answer</summary>` with **only** `- [x]` lines.
 - First References link = the **section URL** from the browser. Then other links from that page (and MDN / ECMA-262 when you used them).
 - If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
 
-### Detailed Explanation (the study body)
+### Detailed Explanation (the merged study body)
 
-Write this section as a **guided tutorial**. After a short concept list, walk **every** example from the page in order. For each example:
+This is the heart of the tutorial and absorbs what used to be the separate **Code** section. Write it as a **guided, example-driven walkthrough**. Start with a short `- [x]` concept list, then walk **every** example from the page in order (plus any extra variations you add). **For each example, always include all five parts, in this order:**
 
-1. Name it with `### **Example N: Title**` (title from the page, or a clear label).
-2. Explain **what it does, why it works, and what to notice** (scope, quotes, return values, pitfalls). Use `- [x]` lines and nested sub-points. Do not stop at one sentence.
-3. Show the **tested** sandbox source in a fenced block (`html` / `javascript` / `css` as appropriate). That source is what actually ran — not an untested paste from the site.
-4. Put the **code snap** (`<slug>-NN-code.png`) immediately after the fence.
-5. Put the **result snap** (`<slug>-NN-result.png`) immediately after that, and one `- [x]` line that states the visible outcome in words (so the image is not the only explanation).
+1. **Heading** — `### **Example N: Title**` (title from the page, or a clear label).
+2. **Explanation** — `- [x]` lines describing **what it does, why it works, and what to notice** (scope, quotes, return values, edge cases, pitfalls, "do not" advice). Be generous: multiple bullets and nested sub-points, not one sentence. Explain any table, note, or warning here in the same style.
+3. **Tested code** — a fenced block (`javascript` / `html` / `css`) with the **actual sandbox source that ran** (never an untested paste from the site). Mention the sandbox path, e.g. `Sandbox: code_sandbox/<slug>/index.html`.
+4. **Code snap** — `<img ... src="./code_sandbox/snaps/<slug>-NN-code.png" />` right after the fence.
+5. **Result snap + written outcome** — `<img ... src="./code_sandbox/snaps/<slug>-NN-result.png" />`, immediately followed by at least one `- [x]` line that **describes the outcome in words** ("the paragraph now reads **Hello JavaScript**", "the console logs `15`"). The image must never be the only explanation of the result.
 
-Cover tables, notes, warnings, and “do not” advice from the page in the same `- [x]` style, next to the example they belong to. If official docs required newer syntax than the page, keep **both**: the page’s idea and the working current form.
+Cover **all** examples this way — do not summarize several into one. If official docs required newer syntax than the page, keep **both**: the page’s idea and the working current form, and say how they differ. Prefer thoroughness: more examples and richer explanation is the goal.
 
 ````markdown
 <details>
@@ -88,7 +88,7 @@ What this section is, why it matters, and what you will be able to do after read
 
 - [x] **`getElementById("demo")`** finds the element, then **`innerHTML`** replaces its contents.
 - [x] Quotes may be double or single; both are valid JavaScript strings.
-- [x] Clicking the button runs the statement once; the paragraph becomes **Hello JavaScript**.
+- [x] Clicking the button runs the statement once.
 
 Sandbox: `code_sandbox/js-introduction/index.html`
 
@@ -107,12 +107,12 @@ Sandbox: `code_sandbox/js-introduction/index.html`
 
 <img alt="js-introduction example 1 result" src="./code_sandbox/snaps/js-introduction-01-result.png" />
 
-- [x] **Outcome:** after the click, the paragraph text is **Hello JavaScript**.
+- [x] **Outcome:** before the click the paragraph reads **A Paragraph.**; after the click it reads **Hello JavaScript**.
 
 ### **Example 2: Next Tryit from the page**
 
-- [x] Explain this example in full (inputs, statements, result).
-- [x] Show tested code, then code snap, then result snap, then a one-line outcome.
+- [x] Explain this example in full (inputs, statements, result, pitfalls).
+- [x] Show tested code, then code snap, then result snap, then a `- [x]` outcome line.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -161,9 +161,9 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 
 - Document **this section only** (even inside a range). Do not mix in the next/previous chapter.
 - Preserve the site’s explanations, examples, exercises, tables, and warnings. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
-- **Be thorough.** Prefer more examples and more explanation over a short recap. A reader who never opens W3Schools should still understand the section.
+- **Be thorough.** Every example on the page gets its own `### Example` block with explanation, tested code, code snap, result snap, and a written outcome. Add extra examples when they clarify a concept.
 - Terminal Commands = only commands you actually used (server, open URL, `node`). If none, keep the child with a one-line placeholder.
-- Fenced code in Detailed Explanation is the **tested** sandbox source. If you updated outdated snippets, fence what actually ran and say how it differs from the page.
+- Fenced code is the **tested** sandbox source. If you updated outdated snippets, fence what actually ran and say how it differs from the page.
 - If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
 
 ## File Paths
