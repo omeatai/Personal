@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Variables - Declaring</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Declaring Variables</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = 5;
+      let y = 6;
+      let z = x + y; // declared with let
+      const a = 5,
+        b = 6,
+        c = a + b; // declared with const
+      let carName; // declared, no value yet -> undefined
+      const before = carName;
+      carName = "Volvo"; // assign later with =
+      document.getElementById("demo").innerText =
+        "let:   x + y = " + z + "\n" +
+        "const: a + b = " + c + "\n" +
+        "carName before assign = " + before + "\n" +
+        "carName after assign  = " + carName;
+    </script>
+  </body>
+</html>

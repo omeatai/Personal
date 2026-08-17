@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Variables - Assignment & Arithmetic</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Assignment &amp; Arithmetic</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = 5;
+      x = x + 5; // = assigns; x becomes 10 (not algebra equality)
+      let sum = 5 + 2 + 3;
+      let name = "John" + " " + "Doe";
+      let mix1 = "5" + 2 + 3; // string first -> concatenation
+      let mix2 = 2 + 3 + "5"; // numbers add first, then concatenate
+      document.getElementById("demo").innerText =
+        "x = x + 5 -> " + x + "\n" +
+        "5 + 2 + 3 = " + sum + "\n" +
+        '"John" + " " + "Doe" = ' + name + "\n" +
+        '"5" + 2 + 3 = ' + mix1 + "\n" +
+        '2 + 3 + "5" = ' + mix2;
+    </script>
+  </body>
+</html>

@@ -1391,52 +1391,108 @@ Variables are **containers** (labels) for data. You can declare them in **four**
 
 ## Detailed Explanation
 
-- [x] **Declaring with `let` and `const`**
-  - `let x = 5; let y = 6; let z = x + y;`
-  - `const x = 5; const y = 6; const z = x + y;`
-- [x] **Identifiers**
-  - Names can be short (`x`) or descriptive (`carName`).
-  - Must not start with a **number** (so identifiers are distinct from numbers).
-  - **`_`** is treated as a letter (`_lastName`). A convention is to start “private” names with underscore.
-  - **`$`** is treated as a letter (`$`, `$$$`, `$myMoney`). Libraries often use `$` as an alias for a main function.
-- [x] **Declaring**
-  - Creating a variable is **declaring** it.
-  - After `let carName;` the value is **`undefined`** until you assign with **`=`**.
-  - Most often you assign when you declare: `let carName = "Volvo";`.
-- [x] **When to use `const` vs `let`**
-  - Always use **`const`** if the value should not change.
-  - Mixed example: `const price1 = 5; const price2 = 6; let total = price1 + price2;` — prices cannot change; **total** can.
-- [x] **Automatic declaration (not recommended)**
-  - Undeclared variables are declared on first use: `x = 5; y = 6; z = x + y;`.
-  - Declare **all** variables at the **beginning** of a script.
-- [x] **`var` (not recommended)**
-  - Used in all JavaScript **before 2015**.
-  - **`let`** and **`const`** were new in **2015**.
-- [x] **Practice**
-  - Always declare variables.
-  - Always use `const` if the value (or the type, for arrays/objects) should not change.
-  - Only use `let` if you cannot use `const`.
-  - Avoid `var`.
-- [x] **Data types (preview)**
-  - Think of **numbers** (no quotes) and **strings** (quotes) for now.
-  - `let x = 5 + 2 + 3;` is **10**.
-  - `let x = "John" + " " + "Doe";` is **John Doe**.
-  - `let x = "5" + 2 + 3;` is **`523`** — a number in quotes makes the rest **concatenate** as strings.
-  - The equal-to operator is **`==`**, not a single `=`.
+- [x] **Variables are containers for data** — labels you attach to values so you can reuse them by name.
+- [x] **Four ways to declare:** automatically (undeclared, not recommended), **`var`** (pre‑2015, avoid), **`let`**, and **`const`**.
+- [x] **Modern rule of thumb:** use **`const`** by default; switch to **`let`** only when the value must change; avoid **`var`** and undeclared variables.
+- [x] **Identifiers (names)** can be short (`x`) or descriptive (`carName`); they may contain letters, digits, `_`, and `$`, but **cannot start with a digit** (that is how JS tells identifiers from numbers). They are **case sensitive** and cannot be reserved words.
 
-Sandbox: `code_sandbox/js-variables/index.html`
+### **Example 1: Declaring variables (`let` / `const` / `undefined`)**
 
-<img alt="js-variables source" src="./code_sandbox/snaps/js-variables-code.png" />
+- [x] `let` and `const` both **create** (declare) a variable; you can compute from other variables (`let z = x + y;`).
+- [x] `const` can declare several names in **one statement** with commas (`const a = 5, b = 6, c = a + b;`).
+- [x] Declaring **without** a value (`let carName;`) leaves it as **`undefined`** until you assign with **`=`** later (`carName = "Volvo";`).
+
+Sandbox: `code_sandbox/js-variables/declare.html`
 
 ```javascript
 let x = 5;
 let y = 6;
-let z = x + y;
+let z = x + y;                  // declared with let
+const a = 5, b = 6, c = a + b;  // declared with const
+
+let carName;                    // declared, no value yet -> undefined
+const before = carName;
+carName = "Volvo";              // assign later with =
 ```
 
-Rendered result:
+<img alt="js-variables example 1 source" src="./code_sandbox/snaps/js-variables-01-code.png" />
 
-<img alt="js-variables result" src="./code_sandbox/snaps/js-variables-result.png" />
+<img alt="js-variables example 1 result" src="./code_sandbox/snaps/js-variables-01-result.png" />
+
+- [x] **Outcome:** `x + y` is **11** and `a + b` is **11**; `carName` reads **undefined** before assignment and **Volvo** after — proof that a bare `let` starts life as `undefined`.
+
+### **Example 2: Identifiers (`_` and `$` count as letters)**
+
+- [x] **`_`** is treated as a letter, so `_lastName`, `_x`, `_100` are valid names; a common convention is to start "private" names with an underscore.
+- [x] **`$`** is also treated as a letter, so `$`, `$$$`, `$myMoney` are valid; libraries (e.g. jQuery) often use `$` as an alias for a main function.
+- [x] Digits are allowed **after** the first character (`_100`), but a name may **never begin** with a digit.
+
+Sandbox: `code_sandbox/js-variables/identifiers.html`
+
+```javascript
+let _lastName = "Johnson";
+let _x = 2;
+let _100 = 5;
+let $ = "Hello World";
+let $$$ = 2;
+let $myMoney = 5;
+```
+
+<img alt="js-variables example 2 source" src="./code_sandbox/snaps/js-variables-02-code.png" />
+
+<img alt="js-variables example 2 result" src="./code_sandbox/snaps/js-variables-02-result.png" />
+
+- [x] **Outcome:** every name resolves normally — `_lastName = Johnson`, `$ = Hello World`, `$myMoney = 5` — showing `_` and `$` are ordinary letters to JavaScript.
+
+### **Example 3: Data types & multiple declarations**
+
+- [x] **Numbers** are written **without quotes** (`const pi = 3.14;`); **strings** are wrapped in **quotes** (`let person = "John Doe";`).
+- [x] You can declare **many variables in one statement**, separating them with commas — and the statement can **span several lines**.
+- [x] Choosing `const` vs `let` is about whether the value should change, not about its type.
+
+Sandbox: `code_sandbox/js-variables/datatypes.html`
+
+```javascript
+const pi = 3.14;              // number: no quotes
+let person = "John Doe";      // string: in quotes
+let answer = "Yes I am!";
+
+// one statement, many variables (commas, can span lines)
+let p2 = "John Doe",
+    carName = "Volvo",
+    price = 200;
+```
+
+<img alt="js-variables example 3 source" src="./code_sandbox/snaps/js-variables-03-code.png" />
+
+<img alt="js-variables example 3 result" src="./code_sandbox/snaps/js-variables-03-result.png" />
+
+- [x] **Outcome:** `pi = 3.14`, `person = "John Doe"`, and the comma‑separated statement declares all three of `p2`, `carName`, `price` at once (`John Doe`, `Volvo`, `200`).
+
+### **Example 4: Assignment & arithmetic (`=` and `+`)**
+
+- [x] The **`=`** operator **assigns**, it is not algebra: `x = x + 5` reads the old `x` (5), adds 5, and stores **10** back. The equal‑to comparison operator is **`==`**, not a single `=`.
+- [x] With numbers, **`+`** adds (`5 + 2 + 3` → **10**); with strings, **`+`** concatenates (`"John" + " " + "Doe"` → **John Doe**).
+- [x] Mixing types depends on **order**: `"5" + 2 + 3` starts with a string → **`523`**; but `2 + 3 + "5"` adds the numbers first, then concatenates → **`55`**.
+
+Sandbox: `code_sandbox/js-variables/arithmetic.html`
+
+```javascript
+let x = 5;
+x = x + 5;                        // = assigns; x becomes 10 (not algebra equality)
+
+let sum = 5 + 2 + 3;              // numbers add -> 10
+let name = "John" + " " + "Doe";  // strings concatenate
+
+let mix1 = "5" + 2 + 3;           // string first -> "523"
+let mix2 = 2 + 3 + "5";           // numbers add first, then concatenate -> "55"
+```
+
+<img alt="js-variables example 4 source" src="./code_sandbox/snaps/js-variables-04-code.png" />
+
+<img alt="js-variables example 4 result" src="./code_sandbox/snaps/js-variables-04-result.png" />
+
+- [x] **Outcome:** `x` becomes **10**, `sum` is **10**, `name` is **John Doe**, `"5" + 2 + 3` is **523**, and `2 + 3 + "5"` is **55** — the classic left‑to‑right `+` quirk.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1515,11 +1571,60 @@ Then open `http://127.0.0.1:8770/js-variables/`.
 
 </details>
 
+### Question 7: What are the four ways to declare a variable?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Automatically** (undeclared, not recommended), **`var`**, **`let`**, and **`const`**.
+
+</details>
+
+### Question 8: Can you declare several variables in one statement?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes** — separate them with **commas**: `let p = "John Doe", carName = "Volvo", price = 200;`.
+- [x] The statement can span **multiple lines**.
+
+</details>
+
+### Question 9: What is the difference between `=` and `==`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`=`** is the **assignment** operator (store a value).
+- [x] **`==`** is the **equal‑to** comparison operator.
+
+</details>
+
+### Question 10: What does `2 + 3 + "5"` evaluate to, and why?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`55`** (a string).
+- [x] JavaScript works **left to right**: `2 + 3` adds to **5**, then `5 + "5"` concatenates to **`"55"`**.
+
+</details>
+
+### Question 11: How do numbers and strings look different in code?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Numbers** are written **without quotes** (`3.14`).
+- [x] **Strings** are written **inside quotes** (`"John Doe"`).
+
+</details>
+
 </details>
 
 ## Summary
 
-Variables hold data. Prefer **`const`**, then **`let`**; avoid **`var`** and automatic declaration. Names cannot start with a digit; `_` and `$` count as letters. Assign with **`=`**. Putting a number in **quotes** concatenates instead of adding (`"5" + 2 + 3` → **523**).
+Variables hold data. Prefer **`const`**, then **`let`**; avoid **`var`** and automatic declaration. Names cannot start with a digit; `_` and `$` count as letters. Assign with **`=`** (compare with **`==`**). With `+`, numbers add and strings concatenate, and order matters: `"5" + 2 + 3` → **523** but `2 + 3 + "5"` → **55**.
 
 ## References
 

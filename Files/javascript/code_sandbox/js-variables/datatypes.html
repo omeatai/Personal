@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Variables - Data Types & Multiple</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Data Types &amp; Multiple Declarations</h2>
+    <pre id="demo"></pre>
+    <script>
+      const pi = 3.14;
+      let person = "John Doe";
+      let answer = "Yes I am!";
+      let p2 = "John Doe",
+        carName = "Volvo",
+        price = 200;
+      document.getElementById("demo").innerText =
+        "pi = " + pi + " (number, no quotes)\n" +
+        'person = "' + person + '" (string, in quotes)\n' +
+        "answer = " + answer + "\n" +
+        "one statement -> person=" +
+        p2 +
+        ", carName=" +
+        carName +
+        ", price=" +
+        price;
+    </script>
+  </body>
+</html>
