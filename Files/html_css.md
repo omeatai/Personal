@@ -12,6 +12,7 @@
 - [ ] [**-- LAB 1 --** | HTML Tutorial](https://github.com/omeatai/Personal/blob/main/Files/html/tutorial.md)
 - [ ] [CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [ ] [JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+- [ ] [**-- LAB 2 --** | JavaScript Tutorial](https://github.com/omeatai/Personal/blob/main/Files/javascript/tutorial.md)
 - [ ] [jQuery Tutorial](https://www.w3schools.com/jquery/default.asp)
 - [ ] [React Tutorial](https://www.w3schools.com/react/default.asp)
 - [ ] [Vue Tutorial](https://www.w3schools.com/vue/default.asp)
