@@ -9780,3 +9780,2995 @@ A URL is `scheme://prefix.domain:port/path/filename`. Use `https` for encrypted 
 - [MDN: `encodeURIComponent()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
 
 </details>
+
+<details>
+  <summary>HTML vs. XHTML</summary>
+
+## Introduction
+
+**XHTML** is a **stricter, XML-based** version of HTML. This chapter defines XHTML, why it exists (well-formed markup and stricter error handling), and the rules that differ from HTML: a mandatory XHTML doctype and `xmlns`, required document elements, proper nesting, closed tags (including empty elements), lowercase names, quoted attributes, and **no attribute minimization**.
+
+## Detailed Explanation
+
+- [x] **What is XHTML?**
+  - **X**HTML = **EX**tensible **H**yper**T**ext **M**arkup **L**anguage.
+  - A **stricter**, more **XML-based** version of HTML.
+  - HTML defined as an **XML application**.
+  - Supported by all major browsers.
+- [x] **Why XHTML?**
+  - XML documents must be **well-formed**.
+  - XHTML makes HTML more **extensible** and easier to mix with other data formats (such as XML).
+  - Browsers **ignore many HTML errors** and still try to display the page. XHTML uses **much stricter error handling**.
+- [x] **Most important differences from HTML**
+  - `<!DOCTYPE>` is **mandatory**.
+  - The **`xmlns`** attribute on `<html>` is **mandatory**.
+  - `<html>`, `<head>`, `<title>`, and `<body>` are **mandatory**.
+  - Elements must always be **properly nested**.
+  - Elements must always be **closed**.
+  - Elements must always be in **lowercase**.
+  - Attribute names must always be in **lowercase**.
+  - Attribute values must always be **quoted**.
+  - Attribute **minimization is forbidden**.
+- [x] **Minimum XHTML document**
+  - Use an **XHTML 1.1** doctype and `xmlns="http://www.w3.org/1999/xhtml"` on `<html>`.
+  - Sandbox: `code_sandbox/html-xhtml/index.html`.
+  - The page shows **some content here...** (tab title: **Title of document**).
+  - Served here as `text/html` so Chrome still displays it. True XHTML is `application/xhtml+xml` and **stops on well-formedness errors**.
+
+<img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
+
+- [x] **Proper nesting and closed elements**
+  - Correct: `<b><i>Some text</i></b>`. Wrong: `<b><i>Some text</b></i>`.
+  - Every `<p>` needs `</p>`. Unclosed paragraphs are invalid XHTML.
+  - Sandbox: `nested.html`.
+
+<img alt="html-xhtml nested result" src="./code_sandbox/snaps/html-xhtml-01-result.png" />
+
+- [x] **Empty elements must be closed**
+  - Correct: `<br />`, `<hr />`, `<img src="happy.gif" alt="Happy face" />`.
+  - Wrong in XHTML: `<br>`, `<hr>`, `<img src="happy.gif" alt="Happy face">`.
+  - Sandbox: `empty.html`.
+
+<img alt="html-xhtml empty elements result" src="./code_sandbox/snaps/html-xhtml-02-result.png" />
+
+- [x] **Lowercase names, quoted values, no minimization**
+  - Use `<body>` / `<p>` / `href`, not `<BODY>` / `<P>` / `HREF`.
+  - Quote values: `href="https://www.w3schools.com/html/"` — not `href=https://www.w3schools.com/html/`.
+  - Write `checked="checked"` and `disabled="disabled"`, not bare `checked` / `disabled`.
+  - Sandbox: `attributes.html`.
+
+<img alt="html-xhtml attributes result" src="./code_sandbox/snaps/html-xhtml-03-result.png" />
+
+- [x] **Validate**
+  - The chapter links a **W3C Markup Validation Service** box for checking a URL.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the minimum XHTML document, then the nested, empty-element, and attribute pages.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-xhtml` file.
+- [ ] You will:
+  - [ ] See **some content here...** on the minimum document.
+  - [ ] See **Some text** (bold italic) and two paragraphs.
+  - [ ] See a break, a horizontal rule, and a smiley `img`.
+  - [ ] See a quoted link, a checked checkbox, and a disabled text field.
+- [ ] Success: all four pages render; empty tags use trailing `/>`; the checkbox is checked and the last name field is disabled.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-xhtml/`
+- [ ] `http://127.0.0.1:8766/html-xhtml/nested.html`
+- [ ] `http://127.0.0.1:8766/html-xhtml/empty.html`
+- [ ] `http://127.0.0.1:8766/html-xhtml/attributes.html`
+
+<img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
+
+The XHTML examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-xhtml/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Minimum document (`index.html`):
+
+<img alt="html-xhtml source" src="./code_sandbox/snaps/html-xhtml-code.png" />
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Title of document</title>
+</head>
+<body>
+  some content here...
+</body>
+</html>
+```
+
+<img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
+
+Nested and closed (`nested.html`):
+
+<img alt="html-xhtml nested source" src="./code_sandbox/snaps/html-xhtml-01-code.png" />
+
+```html
+<b><i>Some text</i></b>
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+```
+
+<img alt="html-xhtml nested result" src="./code_sandbox/snaps/html-xhtml-01-result.png" />
+
+Empty elements (`empty.html`):
+
+<img alt="html-xhtml empty source" src="./code_sandbox/snaps/html-xhtml-02-code.png" />
+
+```html
+A break: <br />
+A horizontal rule: <hr />
+An image: <img src="happy.gif" alt="Happy face" />
+```
+
+<img alt="html-xhtml empty result" src="./code_sandbox/snaps/html-xhtml-02-result.png" />
+
+Attributes (`attributes.html`):
+
+<img alt="html-xhtml attributes source" src="./code_sandbox/snaps/html-xhtml-03-code.png" />
+
+```html
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+<input type="checkbox" name="vehicle" value="car" checked="checked" />
+<input type="text" name="lastname" disabled="disabled" />
+```
+
+<img alt="html-xhtml attributes result" src="./code_sandbox/snaps/html-xhtml-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does XHTML stand for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **EXtensible HyperText Markup Language**.
+- [x] A stricter, more **XML-based** version of HTML.
+
+</details>
+
+### Question 2: How is XHTML related to XML?
+
+<details>
+<summary>Answer</summary>
+
+- [x] XHTML is HTML defined as an **XML application**.
+- [x] XML documents must be **well-formed**.
+
+</details>
+
+### Question 3: Why was XHTML developed?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To make HTML more **extensible** and flexible with other formats (such as XML).
+- [x] HTML browsers often **ignore errors**; XHTML uses **stricter error handling**.
+
+</details>
+
+### Question 4: Which doctype and namespace does the minimum example use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] XHTML **1.1** doctype: `-//W3C//DTD XHTML 1.1//EN`.
+- [x] `xmlns="http://www.w3.org/1999/xhtml"` on `<html>`.
+
+</details>
+
+### Question 5: Which elements are mandatory in XHTML?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<!DOCTYPE>`, `<html>` with **`xmlns`**, `<head>`, `<title>`, and `<body>`.
+
+</details>
+
+### Question 6: What is wrong with `<b><i>Some text</b></i>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The tags **cross**; they are not properly nested.
+- [x] Correct: `<b><i>Some text</i></b>`.
+
+</details>
+
+### Question 7: How must empty elements be written?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They must be **closed**: `<br />`, `<hr />`, `<img ... />`.
+- [x] Bare `<br>` / `<hr>` / `<img>` is wrong in XHTML.
+
+</details>
+
+### Question 8: Must element and attribute names be lowercase?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** `<BODY>` and `HREF` are invalid XHTML.
+- [x] Use `<body>` and `href`.
+
+</details>
+
+### Question 9: Must attribute values be quoted?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** `href="https://www.w3schools.com/html/"` is correct.
+- [x] Unquoted `href=https://www.w3schools.com/html/` is wrong.
+
+</details>
+
+### Question 10: What is attribute minimization, and is it allowed?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Writing `checked` or `disabled` with **no value**.
+- [x] **Forbidden** in XHTML: use `checked="checked"` and `disabled="disabled"`.
+
+</details>
+
+</details>
+
+## Summary
+
+XHTML is HTML as XML: well-formed, lowercase, fully nested and closed (including `<br />`), with quoted attributes and no minimization. A valid document needs the XHTML doctype, `xmlns` on `<html>`, plus `<head>`, `<title>`, and `<body>`. Browsers forgive HTML errors; XHTML does not.
+
+## References
+
+- [HTML Versus XHTML (W3Schools)](https://www.w3schools.com/html/html_xhtml.asp)
+- [XML Tutorial (W3Schools)](https://www.w3schools.com/xml/default.asp)
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [MDN: XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML)
+- [XHTML 1.1 (W3C)](https://www.w3.org/TR/xhtml11/)
+
+</details>
+
+<details>
+  <summary>HTML Forms</summary>
+
+## Introduction
+
+An HTML **form** collects **user input**, most often sent to a **server** for processing. This chapter introduces `<form>` and `<input>`, **text fields**, `<label>`, **radio buttons**, **checkboxes**, the **submit** button (`action`), and why every submitted field needs a **`name`**.
+
+## Detailed Explanation
+
+- [x] **`<form>`**
+  - Container for input elements: text fields, checkboxes, radio buttons, submit buttons, and more.
+  - Form elements are covered in **HTML Form Elements**.
+- [x] **`<input>`**
+  - The most used form element. Appearance depends on **`type`**.
+
+| Type                    | Description                                      |
+| ----------------------- | ------------------------------------------------ |
+| `type="text"`           | Single-line text field                           |
+| `type="radio"`          | One of many choices                              |
+| `type="checkbox"`       | Zero or more of many choices                     |
+| `type="submit"`         | Submit the form                                  |
+| `type="button"`         | Clickable button                                 |
+
+  - All types: **HTML Input Types**.
+- [x] **Text fields**
+  - `<input type="text">` is a **single-line** field. Default width is **20 characters**.
+  - The form box itself is **not visible**.
+  - Sandbox: `code_sandbox/html-forms/index.html`.
+
+<img alt="html-forms text fields result" src="./code_sandbox/snaps/html-forms-result.png" />
+
+- [x] **`<label>`**
+  - Labels a form control. Screen readers read the label when the control is focused.
+  - Clicking the label text also activates small controls (radio/checkbox).
+  - Bind with **`for`** on `<label>` equal to **`id`** on `<input>`.
+- [x] **Radio buttons**
+  - `<input type="radio">` — select **ONE** of a limited set.
+  - Same **`name`** (`fav_language`) groups the options.
+  - Sandbox: `radio.html`.
+
+<img alt="html-forms radio result" src="./code_sandbox/snaps/html-forms-01-result.png" />
+
+- [x] **Checkboxes**
+  - `<input type="checkbox">` — select **ZERO or MORE** options.
+  - Sandbox: `checkbox.html`.
+
+<img alt="html-forms checkbox result" src="./code_sandbox/snaps/html-forms-02-result.png" />
+
+- [x] **Submit button**
+  - `<input type="submit">` sends data to the **form-handler** in **`action`** (here `/action_page.php`).
+  - Example values: **John** / **Doe**.
+  - Sandbox: `submit.html`.
+
+<img alt="html-forms submit result" src="./code_sandbox/snaps/html-forms-03-result.png" />
+
+- [x] **`name` is required to submit**
+  - If **`name` is omitted**, that field is **not sent**.
+  - Sandbox: `no-name.html` — First name has `id` and `value="John"` but **no `name`**.
+
+<img alt="html-forms missing name result" src="./code_sandbox/snaps/html-forms-04-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the text, radio, checkbox, submit, and missing-`name` forms.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-forms` file.
+- [ ] You will:
+  - [ ] See empty **First name** / **Last name** fields.
+  - [ ] Choose one of HTML / CSS / JavaScript.
+  - [ ] Tick bike / car / boat independently.
+  - [ ] Submit **John** / **Doe** (local `/action_page.php` will 404; the form markup is the point).
+  - [ ] See the no-`name` First name field still display **John**.
+- [ ] Success: labels sit above or beside the matching controls; radios share one group; checkboxes are independent.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-forms/`
+- [ ] `http://127.0.0.1:8766/html-forms/radio.html`
+- [ ] `http://127.0.0.1:8766/html-forms/checkbox.html`
+- [ ] `http://127.0.0.1:8766/html-forms/submit.html`
+- [ ] `http://127.0.0.1:8766/html-forms/no-name.html`
+
+<img alt="html-forms result" src="./code_sandbox/snaps/html-forms-result.png" />
+
+The form examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-forms/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Text fields (`index.html`):
+
+<img alt="html-forms text source" src="./code_sandbox/snaps/html-forms-code.png" />
+
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```
+
+<img alt="html-forms text fields result" src="./code_sandbox/snaps/html-forms-result.png" />
+
+Radio (`radio.html`):
+
+<img alt="html-forms radio source" src="./code_sandbox/snaps/html-forms-01-code.png" />
+
+```html
+<p>Choose your favorite Web language:</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+<img alt="html-forms radio result" src="./code_sandbox/snaps/html-forms-01-result.png" />
+
+Checkboxes (`checkbox.html`):
+
+<img alt="html-forms checkbox source" src="./code_sandbox/snaps/html-forms-02-code.png" />
+
+```html
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+
+<img alt="html-forms checkbox result" src="./code_sandbox/snaps/html-forms-02-result.png" />
+
+Submit (`submit.html`):
+
+<img alt="html-forms submit source" src="./code_sandbox/snaps/html-forms-03-code.png" />
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<img alt="html-forms submit result" src="./code_sandbox/snaps/html-forms-03-result.png" />
+
+Missing `name` (`no-name.html`):
+
+<img alt="html-forms missing name source" src="./code_sandbox/snaps/html-forms-04-code.png" />
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<img alt="html-forms missing name result" src="./code_sandbox/snaps/html-forms-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is an HTML form for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To **collect user input**.
+- [x] The input is most often sent to a **server** for processing.
+
+</details>
+
+### Question 2: What does `<form>` contain?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Input elements: text fields, checkboxes, radio buttons, submit buttons, and so on.
+
+</details>
+
+### Question 3: Which attribute changes how `<input>` looks?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`type`** — for example `text`, `radio`, `checkbox`, `submit`, `button`.
+
+</details>
+
+### Question 4: What is the default width of a text field?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **20 characters**.
+- [x] The form container itself is **not visible**.
+
+</details>
+
+### Question 5: How do you bind a `<label>` to an input?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set **`for`** on the label equal to the input’s **`id`**.
+
+</details>
+
+### Question 6: Why use `<label>` besides visible text?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Screen readers **read the label** when the control is focused.
+- [x] Clicking the label toggles small controls (radio/checkbox).
+
+</details>
+
+### Question 7: Radio vs checkbox?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Radio: select **ONE** of a limited set (same `name` groups them).
+- [x] Checkbox: select **ZERO or MORE** options.
+
+</details>
+
+### Question 8: How does submit know where to send data?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The form’s **`action`** attribute (the form-handler, often a server script).
+
+</details>
+
+### Question 9: What happens if an input has no `name`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] That field’s value is **not submitted** at all.
+
+</details>
+
+</details>
+
+## Summary
+
+`<form>` holds controls. `<input type="text|radio|checkbox|submit|button">` covers the common cases. Pair `<label for>` with `id`. Radios pick one; checkboxes pick any. Submit uses `action`. Every field you want sent needs a **`name`**.
+
+## References
+
+- [HTML Forms (W3Schools)](https://www.w3schools.com/html/html_forms.asp)
+- [Try it Yourself: tryhtml_form_text](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_text)
+- [Try it Yourself: tryhtml_form_radio](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio)
+- [Try it Yourself: tryhtml_input_checkbox](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox)
+- [Try it Yourself: tryhtml_form_submit](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit)
+- [Try it Yourself: tryhtml_form_submit_id](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit_id)
+- [HTML Form Elements](https://www.w3schools.com/html/html_form_elements.asp)
+- [HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
+- [MDN: `<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+- [MDN: `<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+
+</details>
+
+<details>
+  <summary>HTML Form Attributes</summary>
+
+## Introduction
+
+This chapter covers attributes of **`<form>`**: **`action`**, **`target`**, **`method`** (GET vs POST), **`autocomplete`**, and **`novalidate`**, plus a short list of the other form attributes.
+
+## Detailed Explanation
+
+- [x] **`action`**
+  - What to do when the form is **submitted**. Usually a **server file** that handles the data.
+  - Example: `action="/action_page.php"` with John / Doe.
+  - **Tip:** If `action` is omitted, it is the **current page**.
+  - Sandbox: `code_sandbox/html-form-attributes/index.html`.
+
+<img alt="html-form-attributes action result" src="./code_sandbox/snaps/html-form-attributes-result.png" />
+
+- [x] **`target`** — where to show the response
+
+| Value       | Description                    |
+| ----------- | ------------------------------ |
+| `_blank`    | New window or tab              |
+| `_self`     | Current window (**default**)   |
+| `_parent`   | Parent frame                   |
+| `_top`      | Full body of the window        |
+| `framename` | A named iframe                 |
+
+  - Example: `target="_blank"`.
+  - Sandbox: `target.html`.
+
+<img alt="html-form-attributes target result" src="./code_sandbox/snaps/html-form-attributes-01-result.png" />
+
+- [x] **`method`** — HTTP method (default **GET**)
+  - **GET:** data appended to the **URL** as name/value pairs. Visible in the address bar. URL length limit (~**2048** characters). Can be **bookmarked**. Never use GET for **sensitive** data. Good for search-style queries.
+  - **POST:** data in the **HTTP request body**, not in the URL. **No size limit**. Cannot bookmark the submission.
+  - **Tip:** Always use **POST** for sensitive or personal information.
+  - The page uses `action="/action_page.php"`. The sandbox GET/POST demo uses `action=""` so Submit GET shows `?fname=John&lname=Doe` locally.
+  - Sandbox: `method.html`.
+
+<img alt="html-form-attributes method result" src="./code_sandbox/snaps/html-form-attributes-02-result.png" />
+
+- [x] **`autocomplete`**
+  - `on` or `off` for the whole form. `on` fills values the user entered before.
+  - A field can override: `autocomplete="off"` on the email input.
+  - Sandbox: `autocomplete.html`.
+
+<img alt="html-form-attributes autocomplete result" src="./code_sandbox/snaps/html-form-attributes-03-result.png" />
+
+- [x] **`novalidate`**
+  - Boolean. When present, the browser **does not validate** inputs on submit (so an invalid email can still submit).
+  - Sandbox: `novalidate.html`.
+
+<img alt="html-form-attributes novalidate result" src="./code_sandbox/snaps/html-form-attributes-04-result.png" />
+
+- [x] **All `<form>` attributes** (from the page)
+
+| Attribute         | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| `accept-charset`  | Character encodings for submission                       |
+| `action`          | Where to send the form-data                              |
+| `autocomplete`    | Autocomplete on or off                                   |
+| `enctype`         | How to encode data (`method="post"` only)                |
+| `method`          | HTTP method                                              |
+| `name`            | Name of the form                                         |
+| `novalidate`      | Skip validation on submit                                |
+| `rel`             | Relationship to a linked resource                        |
+| `target`          | Where to display the response                            |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Compare `action`, `target="_blank"`, GET vs POST, autocomplete, and novalidate.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-form-attributes` file.
+- [ ] You will:
+  - [ ] See John/Doe with Submit (`action` and `target` pages).
+  - [ ] Submit GET and watch the query string; Submit POST and see no query string.
+  - [ ] Try autocomplete after typing a name once.
+  - [ ] Submit a non-email string with `novalidate` (browser should not block it).
+- [ ] Success: GET puts `fname`/`lname` in the URL; POST does not; novalidate skips email checking.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-form-attributes/`
+- [ ] `http://127.0.0.1:8766/html-form-attributes/target.html`
+- [ ] `http://127.0.0.1:8766/html-form-attributes/method.html`
+- [ ] `http://127.0.0.1:8766/html-form-attributes/autocomplete.html`
+- [ ] `http://127.0.0.1:8766/html-form-attributes/novalidate.html`
+
+<img alt="html-form-attributes result" src="./code_sandbox/snaps/html-form-attributes-result.png" />
+
+The form-attribute examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-form-attributes/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+`action` (`index.html`):
+
+<img alt="html-form-attributes action source" src="./code_sandbox/snaps/html-form-attributes-code.png" />
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<img alt="html-form-attributes action result" src="./code_sandbox/snaps/html-form-attributes-result.png" />
+
+`target` (`target.html`):
+
+<img alt="html-form-attributes target source" src="./code_sandbox/snaps/html-form-attributes-01-code.png" />
+
+```html
+<form action="/action_page.php" target="_blank">
+```
+
+<img alt="html-form-attributes target result" src="./code_sandbox/snaps/html-form-attributes-01-result.png" />
+
+`method` (`method.html`):
+
+<img alt="html-form-attributes method source" src="./code_sandbox/snaps/html-form-attributes-02-code.png" />
+
+```html
+<form action="/action_page.php" method="get">
+<form action="/action_page.php" method="post">
+```
+
+<img alt="html-form-attributes method result" src="./code_sandbox/snaps/html-form-attributes-02-result.png" />
+
+`autocomplete` (`autocomplete.html`):
+
+<img alt="html-form-attributes autocomplete source" src="./code_sandbox/snaps/html-form-attributes-03-code.png" />
+
+```html
+<form action="/action_page.php" autocomplete="on">
+```
+
+<img alt="html-form-attributes autocomplete result" src="./code_sandbox/snaps/html-form-attributes-03-result.png" />
+
+`novalidate` (`novalidate.html`):
+
+<img alt="html-form-attributes novalidate source" src="./code_sandbox/snaps/html-form-attributes-04-code.png" />
+
+```html
+<form action="/action_page.php" novalidate>
+```
+
+<img alt="html-form-attributes novalidate result" src="./code_sandbox/snaps/html-form-attributes-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `action` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Sets the **form-handler** (usually a server file).
+- [x] If omitted, the action is the **current page**.
+
+</details>
+
+### Question 2: What is the default `target`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`_self`** — the response opens in the **current window**.
+- [x] `_blank` opens a **new tab**.
+
+</details>
+
+### Question 3: What is the default HTTP method for a form?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **GET**.
+
+</details>
+
+### Question 4: Why avoid GET for passwords?
+
+<details>
+<summary>Answer</summary>
+
+- [x] GET puts data in the **URL**, so it is **visible**.
+- [x] URLs are also limited (~**2048** characters).
+
+</details>
+
+### Question 5: When should you use POST?
+
+<details>
+<summary>Answer</summary>
+
+- [x] For **sensitive or personal** data.
+- [x] For **large** payloads (no size limit like GET).
+- [x] POST submissions **cannot be bookmarked**.
+
+</details>
+
+### Question 6: What does `autocomplete="on"` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The browser can **fill values** the user entered before.
+- [x] A single input can set `autocomplete="off"` to override.
+
+</details>
+
+### Question 7: What does `novalidate` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is a **boolean** attribute.
+- [x] When present, the form is **not validated** on submit.
+
+</details>
+
+### Question 8: Which form attribute sets encoding for POST?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`enctype`** — how form-data is encoded (POST only).
+
+</details>
+
+</details>
+
+## Summary
+
+`action` is the handler (current page if omitted). `target` defaults to `_self`. `method` defaults to GET (URL, bookmarkable, not for secrets); use POST for sensitive or large data. `autocomplete` can be on/off; `novalidate` skips checking.
+
+## References
+
+- [HTML Form Attributes (W3Schools)](https://www.w3schools.com/html/html_forms_attributes.asp)
+- [HTML Forms](https://www.w3schools.com/html/html_forms.asp)
+- [MDN: `<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+- [MDN: HTTP GET vs POST](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data)
+
+</details>
+
+<details>
+  <summary>HTML Form Elements</summary>
+
+## Introduction
+
+This chapter lists every common control you can put in a `<form>`: `<input>`, `<label>`, `<select>` / `<option>` / `<optgroup>`, `<textarea>`, `<button>`, `<fieldset>` / `<legend>`, `<datalist>`, and `<output>`.
+
+## Detailed Explanation
+
+- [x] **`<form>` can contain** `<input>` `<label>` `<select>` `<textarea>` `<button>` `<fieldset>` `<legend>` `<datalist>` `<output>` `<option>` `<optgroup>`.
+- [x] **`<input>`** — most used; `type` changes the control. Sandbox: `code_sandbox/html-form-elements/index.html` (text field plus a car `<select>` with **Fiat** pre-selected).
+
+<img alt="html-form-elements input select result" src="./code_sandbox/snaps/html-form-elements-result.png" />
+
+- [x] **`<label>`** — `for` must match the control’s `id`. Helps screen readers and makes small radios/checkboxes easier to click.
+- [x] **`<select>` / `<option>`**
+  - Drop-down. First option is selected unless another has **`selected`**.
+  - **`size`** — how many options are visible.
+  - **`multiple`** — select more than one.
+  - Sandbox: `select.html`.
+
+<img alt="html-form-elements select size multiple result" src="./code_sandbox/snaps/html-form-elements-01-result.png" />
+
+- [x] **`<textarea>`**
+  - Multi-line field. **`rows`** = visible lines, **`cols`** = visible width.
+  - Example text: **The cat was playing in the garden.**
+  - Size can also be set with CSS (`width` / `height`).
+  - Sandbox: `textarea.html`.
+
+<img alt="html-form-elements textarea result" src="./code_sandbox/snaps/html-form-elements-02-result.png" />
+
+- [x] **`<button>`**
+  - Example: `onclick="alert('Hello World!')"` — **Click Me!**
+  - **Always set `type`**. Browsers disagree on the default (`submit` vs `button`).
+  - Sandbox: `button.html`.
+
+<img alt="html-form-elements button result" src="./code_sandbox/snaps/html-form-elements-03-result.png" />
+
+- [x] **`<fieldset>` and `<legend>`**
+  - Group related fields; legend is the caption (**Personalia:**).
+  - Sandbox: `fieldset.html`.
+
+<img alt="html-form-elements fieldset result" src="./code_sandbox/snaps/html-form-elements-04-result.png" />
+
+- [x] **`<datalist>`**
+  - Predefined suggestions. Input **`list`** must match datalist **`id`**.
+  - Browsers: Edge, Firefox, Chrome, Opera, Safari.
+  - Sandbox: `datalist.html`.
+
+<img alt="html-form-elements datalist result" src="./code_sandbox/snaps/html-form-elements-05-result.png" />
+
+- [x] **`<output>`**
+  - Shows a calculation. `oninput="x.value=parseInt(a.value)+parseInt(b.value)"` — range + number.
+  - The sum updates when you move the slider or change the number (starts empty until input).
+  - Sandbox: `output.html`.
+
+<img alt="html-form-elements output result" src="./code_sandbox/snaps/html-form-elements-06-result.png" />
+
+- [x] **Tag list** from the page: `<form>` form; `<input>` control; `<textarea>` multiline; `<label>` label; `<fieldset>` group; `<legend>` caption; `<select>` drop-down; `<optgroup>` option group; `<option>` option; `<button>` button; `<datalist>` suggestions; `<output>` calculation result.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open each form-element demo: select, textarea, button, fieldset, datalist, output.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-form-elements` file.
+- [ ] Success: Fiat is selected; size/multiple lists show several cars; textarea has the cat sentence; **Click Me!** alerts; Personalia fieldset; datalist input; range + number with an output slot.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-form-elements/`
+- [ ] `http://127.0.0.1:8766/html-form-elements/select.html`
+- [ ] `http://127.0.0.1:8766/html-form-elements/textarea.html`
+- [ ] `http://127.0.0.1:8766/html-form-elements/button.html`
+- [ ] `http://127.0.0.1:8766/html-form-elements/fieldset.html`
+- [ ] `http://127.0.0.1:8766/html-form-elements/datalist.html`
+- [ ] `http://127.0.0.1:8766/html-form-elements/output.html`
+
+<img alt="html-form-elements result" src="./code_sandbox/snaps/html-form-elements-result.png" />
+
+The form-element examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-form-elements/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Input + select (`index.html`):
+
+<img alt="html-form-elements source" src="./code_sandbox/snaps/html-form-elements-code.png" />
+
+```html
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+<select id="cars" name="cars">
+  <option value="fiat" selected>Fiat</option>
+</select>
+```
+
+<img alt="html-form-elements input select result" src="./code_sandbox/snaps/html-form-elements-result.png" />
+
+Size / multiple (`select.html`):
+
+<img alt="html-form-elements select source" src="./code_sandbox/snaps/html-form-elements-01-code.png" />
+
+```html
+<select id="cars" name="cars" size="3">
+<select id="cars" name="cars" size="4" multiple>
+```
+
+<img alt="html-form-elements select size multiple result" src="./code_sandbox/snaps/html-form-elements-01-result.png" />
+
+Textarea (`textarea.html`):
+
+<img alt="html-form-elements textarea source" src="./code_sandbox/snaps/html-form-elements-02-code.png" />
+
+```html
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+```
+
+<img alt="html-form-elements textarea result" src="./code_sandbox/snaps/html-form-elements-02-result.png" />
+
+Button (`button.html`):
+
+<img alt="html-form-elements button source" src="./code_sandbox/snaps/html-form-elements-03-code.png" />
+
+```html
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+```
+
+<img alt="html-form-elements button result" src="./code_sandbox/snaps/html-form-elements-03-result.png" />
+
+Fieldset (`fieldset.html`):
+
+<img alt="html-form-elements fieldset source" src="./code_sandbox/snaps/html-form-elements-04-code.png" />
+
+```html
+<fieldset>
+  <legend>Personalia:</legend>
+  ...
+</fieldset>
+```
+
+<img alt="html-form-elements fieldset result" src="./code_sandbox/snaps/html-form-elements-04-result.png" />
+
+Datalist (`datalist.html`):
+
+<img alt="html-form-elements datalist source" src="./code_sandbox/snaps/html-form-elements-05-code.png" />
+
+```html
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Edge">
+</datalist>
+```
+
+<img alt="html-form-elements datalist result" src="./code_sandbox/snaps/html-form-elements-05-result.png" />
+
+Output (`output.html`):
+
+<img alt="html-form-elements output source" src="./code_sandbox/snaps/html-form-elements-06-code.png" />
+
+```html
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0 <input type="range" id="a" name="a" value="50"> 100 +
+  <input type="number" id="b" name="b" value="50">
+  = <output name="x" for="a b"></output>
+</form>
+```
+
+<img alt="html-form-elements output result" src="./code_sandbox/snaps/html-form-elements-06-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Which elements can live in a `<form>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<input>` `<label>` `<select>` `<textarea>` `<button>` `<fieldset>` `<legend>` `<datalist>` `<output>` `<option>` `<optgroup>`.
+
+</details>
+
+### Question 2: How do you pre-select a drop-down option?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Add the **`selected`** attribute on that `<option>`.
+- [x] Otherwise the **first** option is selected.
+
+</details>
+
+### Question 3: What do `size` and `multiple` do on `<select>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `size` — number of **visible** options.
+- [x] `multiple` — allow **more than one** selection.
+
+</details>
+
+### Question 4: What do `rows` and `cols` mean on `<textarea>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `rows` — visible **lines**.
+- [x] `cols` — visible **width**.
+- [x] You can also size it with **CSS**.
+
+</details>
+
+### Question 5: Why set `type` on `<button>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Browsers may use **different default types**.
+- [x] Always specify `type` (`button`, `submit`, or `reset`).
+
+</details>
+
+### Question 6: What are `<fieldset>` and `<legend>` for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<fieldset>` **groups** related controls.
+- [x] `<legend>` is the **caption** for that group.
+
+</details>
+
+### Question 7: How do you hook an input to a `<datalist>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set the input’s **`list`** to the datalist’s **`id`**.
+
+</details>
+
+### Question 8: What does `<output>` show?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **result of a calculation** (often from a script / `oninput`).
+
+</details>
+
+</details>
+
+## Summary
+
+Forms are built from input, label, select/option, textarea, button, fieldset/legend, datalist, and output. Pre-select with `selected`; show more options with `size`/`multiple`. Always set button `type`. Bind datalist with `list`/`id`. Use `<output>` for live totals.
+
+## References
+
+- [HTML Form Elements (W3Schools)](https://www.w3schools.com/html/html_form_elements.asp)
+- [HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
+- [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
+- [MDN: `<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+- [MDN: `<datalist>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)
+- [MDN: `<output>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output)
+
+</details>
+
+<details>
+  <summary>HTML Input Types</summary>
+
+## Introduction
+
+This chapter lists every HTML **`<input type="...">`**. The default type is **`text`**. Many HTML5 types (color, date, email, and so on) show a picker or extra keyboard when the browser supports them.
+
+## Detailed Explanation
+
+- [x] **All types:** `button` `checkbox` `color` `date` `datetime-local` `email` `file` `hidden` `image` `month` `number` `password` `radio` `range` `reset` `search` `submit` `tel` `text` `time` `url` `week`.
+- [x] **`text`** — single-line field (default).
+- [x] **`password`** — characters are **masked** (asterisks or dots).
+- [x] **`submit`** — sends data to `action`. If **`value` is omitted**, the button gets **default text**.
+- [x] **`reset`** — restores **default values**.
+  - Sandbox: `code_sandbox/html-input-types/index.html`.
+
+<img alt="html-input-types text password submit reset result" src="./code_sandbox/snaps/html-input-types-result.png" />
+
+- [x] **`radio`** — **ONLY ONE** of a set. **`checkbox`** — **ZERO or MORE**. **`button`** — clickable (`onclick` alert).
+  - Sandbox: `choices.html`.
+
+<img alt="html-input-types radio checkbox button result" src="./code_sandbox/snaps/html-input-types-01-result.png" />
+
+- [x] **HTML5 types** (sandbox: `html5.html`)
+  - **`color`** — color picker (if supported).
+  - **`date`** — date picker; **`min` / `max`** can restrict (before 1980-01-01 / after 2000-01-01).
+  - **`email`** — may validate on submit; phones often add **.com** to the keyboard.
+  - **`file`** — Browse for uploads.
+  - **`image`** — image used as a **submit** button (`src`, `alt`, width/height).
+  - **`number`** — numeric; example **min 1 max 5**. Also `step`/`value` (0–100 step 10, default 30).
+  - **`range`** — slider; default 0–100. Example volume 0–50.
+  - **`search`** — search field (behaves like text).
+  - **`tel`** — telephone; example `pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"`.
+  - **`url`** — URL; may validate; phones may add **.com**.
+  - **`hidden`** — not shown. Example `custId=3487`. **Not security** — still visible in View Source / DevTools.
+
+<img alt="html-input-types html5 types result" src="./code_sandbox/snaps/html-input-types-02-result.png" />
+
+- [x] **More pickers** (`pickers.html`): **`datetime-local`** (date+time, no time zone), **`month`**, **`time`**, **`week`**.
+
+<img alt="html-input-types date time pickers result" src="./code_sandbox/snaps/html-input-types-03-result.png" />
+
+- [x] **Input restrictions** (preview of the next chapter): `checked` `disabled` `max` `maxlength` `min` `pattern` `readonly` `required` `size` `step` `value`.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open text/password, choices, HTML5 types, and date/time pickers.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-input-types` file.
+- [ ] Success: password is masked; radios vs checkboxes; color/date/email/file/number/range/search/tel/url/hidden/image; datetime-local, month, time, week pickers.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-input-types/`
+- [ ] `http://127.0.0.1:8766/html-input-types/choices.html`
+- [ ] `http://127.0.0.1:8766/html-input-types/html5.html`
+- [ ] `http://127.0.0.1:8766/html-input-types/pickers.html`
+
+<img alt="html-input-types result" src="./code_sandbox/snaps/html-input-types-result.png" />
+
+The input-type examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-input-types/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Text / password / submit / reset (`index.html`):
+
+<img alt="html-input-types source" src="./code_sandbox/snaps/html-input-types-code.png" />
+
+```html
+<input type="text" id="fname" name="fname">
+<input type="password" id="pwd" name="pwd">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+```
+
+<img alt="html-input-types text password submit reset result" src="./code_sandbox/snaps/html-input-types-result.png" />
+
+Choices (`choices.html`):
+
+<img alt="html-input-types choices source" src="./code_sandbox/snaps/html-input-types-01-code.png" />
+
+```html
+<input type="radio" name="fav_language" value="HTML">
+<input type="checkbox" name="vehicle1" value="Bike">
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+```
+
+<img alt="html-input-types radio checkbox button result" src="./code_sandbox/snaps/html-input-types-01-result.png" />
+
+HTML5 types (`html5.html`):
+
+<img alt="html-input-types html5 source" src="./code_sandbox/snaps/html-input-types-02-code.png" />
+
+```html
+<input type="color">
+<input type="date" max="1979-12-31">
+<input type="email">
+<input type="file">
+<input type="number" min="1" max="5">
+<input type="range" min="0" max="50">
+<input type="hidden" name="custId" value="3487">
+<input type="image" src="img_submit.gif" alt="Submit">
+```
+
+<img alt="html-input-types html5 types result" src="./code_sandbox/snaps/html-input-types-02-result.png" />
+
+Pickers (`pickers.html`):
+
+<img alt="html-input-types pickers source" src="./code_sandbox/snaps/html-input-types-03-code.png" />
+
+```html
+<input type="datetime-local">
+<input type="month">
+<input type="time">
+<input type="week">
+```
+
+<img alt="html-input-types date time pickers result" src="./code_sandbox/snaps/html-input-types-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is the default `type` if you omit it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`text`**.
+
+</details>
+
+### Question 2: How does `password` differ from `text`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The characters are **masked** (asterisks or circles).
+
+</details>
+
+### Question 3: What if a submit button has no `value`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The button uses the browser’s **default text**.
+
+</details>
+
+### Question 4: Radio vs checkbox?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Radio: **only one** of a set.
+- [x] Checkbox: **zero or more**.
+
+</details>
+
+### Question 5: Is `type="hidden"` a security feature?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** The value is still in the HTML and DevTools.
+- [x] Do **not** treat hidden fields as secret.
+
+</details>
+
+### Question 6: What does `type="image"` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Uses an **image as a submit button**.
+- [x] Path is **`src`**; include **`alt`**.
+
+</details>
+
+### Question 7: Which types often show a picker?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `color`, `date`, `datetime-local`, `month`, `time`, `week` (browser support varies).
+
+</details>
+
+### Question 8: What do `min`, `max`, and `step` restrict?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Allowed numbers (and dates) and the **interval** (`step`).
+- [x] Example: number 0–100 step 10, default 30.
+
+</details>
+
+</details>
+
+## Summary
+
+`type` chooses the control. Default is text; password masks; submit/reset/image send or restore; radio vs checkbox; HTML5 adds color, dates, email, file, hidden, number, range, search, tel, url, and week. Hidden is not security. Restrictions such as min/max/pattern are covered next.
+
+## References
+
+- [HTML Input Types (W3Schools)](https://www.w3schools.com/html/html_form_input_types.asp)
+- [HTML Input Attributes](https://www.w3schools.com/html/html_form_attributes.asp)
+- [MDN: `<input>` types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)
+
+</details>
+
+<details>
+  <summary>HTML Input Attributes</summary>
+
+## Introduction
+
+This chapter covers attributes of **`<input>`**: **`value`**, **`readonly`**, **`disabled`**, **`size`**, **`maxlength`**, **`min`/`max`**, **`multiple`**, **`pattern`**, **`placeholder`**, **`required`**, **`step`**, **`autofocus`**, **`height`/`width`**, **`list`**, and **`autocomplete`**. Browser checks are **not** enough — the **server** must validate too.
+
+## Detailed Explanation
+
+- [x] **`value`** — initial/default text (John / Doe).
+- [x] **`readonly`** — cannot edit; **can** tab, highlight, copy; **is submitted**.
+- [x] **`disabled`** — unusable / un-clickable; **not submitted**.
+  - Sandbox: `code_sandbox/html-input-attributes/index.html`.
+
+<img alt="html-input-attributes value readonly disabled result" src="./code_sandbox/snaps/html-input-attributes-result.png" />
+
+- [x] **`size`** — visible width in **characters** (default **20**). Works with text, search, tel, url, email, password.
+- [x] **`maxlength`** — max characters; the field **stops accepting** more, but gives **no message** (use JS to alert).
+- [x] **`min` / `max`** — number, range, date, datetime-local, month, time, week.
+- [x] **`multiple`** — more than one value (`email`, `file`).
+- [x] **`pattern`** — regex checked on submit (text, date, search, url, tel, email, password). Use **`title`** to explain (three-letter country code).
+- [x] **`placeholder`** — hint before typing (`123-45-678`).
+- [x] **`required`** — must be filled (text, search, url, tel, email, password, date pickers, number, checkbox, radio, file).
+- [x] **`step`** — legal intervals (`step="3"` → -3, 0, 3, 6…).
+  - Sandbox: `limits.html`.
+
+<img alt="html-input-attributes limits result" src="./code_sandbox/snaps/html-input-attributes-01-result.png" />
+
+- [x] **`autofocus`** — focus on load (omitted from the sandbox so snapping does not steal focus).
+- [x] **`height` / `width`** — size of `type="image"`. Set both so layout does not jump while the image loads.
+- [x] **`list`** — points at a `<datalist>` `id`.
+- [x] **`autocomplete`** — on/off for a form or field (text, search, url, tel, email, password, date pickers, range, color). Some browsers need autocomplete enabled in Preferences.
+  - Sandbox: `extra.html`.
+
+<img alt="html-input-attributes list autocomplete image result" src="./code_sandbox/snaps/html-input-attributes-02-result.png" />
+
+- [x] **Note:** Restrictions are **not foolproof**. Check again on the **server**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Compare readonly vs disabled, then try size, maxlength, pattern, required, and datalist.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-input-attributes` file.
+- [ ] Success: John is readonly (copyable); Doe is disabled (grayed); PIN max 4 chars; country code needs three letters; username is required; datalist + image submit.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-input-attributes/`
+- [ ] `http://127.0.0.1:8766/html-input-attributes/limits.html`
+- [ ] `http://127.0.0.1:8766/html-input-attributes/extra.html`
+
+<img alt="html-input-attributes result" src="./code_sandbox/snaps/html-input-attributes-result.png" />
+
+The input-attribute examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-input-attributes/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Readonly / disabled (`index.html`):
+
+<img alt="html-input-attributes source" src="./code_sandbox/snaps/html-input-attributes-code.png" />
+
+```html
+<input type="text" name="fname" value="John" readonly>
+<input type="text" name="lname" value="Doe" disabled>
+```
+
+<img alt="html-input-attributes value readonly disabled result" src="./code_sandbox/snaps/html-input-attributes-result.png" />
+
+Limits (`limits.html`):
+
+<img alt="html-input-attributes limits source" src="./code_sandbox/snaps/html-input-attributes-01-code.png" />
+
+```html
+<input type="text" size="50">
+<input type="text" maxlength="4" size="4">
+<input type="number" min="1" max="5">
+<input type="file" multiple>
+<input type="text" pattern="[A-Za-z]{3}" title="Three letter country code">
+<input type="tel" placeholder="123-45-678">
+<input type="text" required>
+<input type="number" step="3">
+```
+
+<img alt="html-input-attributes limits result" src="./code_sandbox/snaps/html-input-attributes-01-result.png" />
+
+List / autocomplete / image (`extra.html`):
+
+<img alt="html-input-attributes extra source" src="./code_sandbox/snaps/html-input-attributes-02-code.png" />
+
+```html
+<input list="browsers">
+<input type="email" autocomplete="off">
+<input type="image" src="img_submit.gif" width="48" height="48">
+```
+
+<img alt="html-input-attributes list autocomplete image result" src="./code_sandbox/snaps/html-input-attributes-02-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Is a readonly field submitted? A disabled field?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Readonly: yes** (and you can copy the text).
+- [x] **Disabled: no.**
+
+</details>
+
+### Question 2: What is the default `size`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **20** characters.
+- [x] `size` applies to text, search, tel, url, email, password.
+
+</details>
+
+### Question 3: Does `maxlength` show an error message?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Extra characters are blocked silently.
+- [x] Use **JavaScript** if you want an alert.
+
+</details>
+
+### Question 4: Which types support `multiple`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`email`** and **`file`**.
+
+</details>
+
+### Question 5: How do you explain a `pattern` to the user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set the global **`title`** attribute (for example “Three letter country code”).
+
+</details>
+
+### Question 6: What does `step="3"` allow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Legal numbers such as **-3, 0, 3, 6**, …
+
+</details>
+
+### Question 7: Why set both `height` and `width` on `type="image"`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The browser **reserves space** so the layout does not jump while the image loads.
+
+</details>
+
+### Question 8: Are these attributes enough to secure a form?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Check the values again on the **server**.
+
+</details>
+
+</details>
+
+## Summary
+
+`value` sets defaults. Readonly submits; disabled does not. `size`/`maxlength` shape text; `min`/`max`/`step` shape numbers and dates. Use `pattern`+`title`, `placeholder`, `required`, `multiple`, `list`, and `autocomplete`. Always validate on the server.
+
+## References
+
+- [HTML Input Attributes (W3Schools)](https://www.w3schools.com/html/html_form_attributes.asp)
+- [HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
+- [MDN: `<input>` attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes)
+
+</details>
+
+<details>
+  <summary>Input Form Attributes</summary>
+
+## Introduction
+
+W3Schools page title: **HTML Input form\* Attributes**. These `form*` attributes on **`<input>`** override the parent `<form>`, or associate a control **outside** the form. Covered: **`form`**, **`formaction`**, **`formenctype`**, **`formmethod`**, **`formtarget`**, **`formnovalidate`**, plus form-level **`novalidate`**.
+
+## Detailed Explanation
+
+- [x] **`form`**
+  - Which `<form>` this input belongs to.
+  - Value must equal that form’s **`id`**.
+  - Last name can sit **outside** the form and still submit with `form="form1"`.
+  - Sandbox: `code_sandbox/html-input-form-attributes/index.html`.
+
+<img alt="html-input-form-attributes form= result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
+
+- [x] **Overrides on `type="submit"` and `type="image"`** (except `formnovalidate`: submit only)
+  - **`formaction`** — overrides `action` (example: **Submit as Admin** → `/action_page2.php`).
+  - **`formenctype`** — overrides `enctype` (POST only). Second button: `multipart/form-data`.
+  - **`formmethod`** — overrides `method` (`get` vs `post`). GET is bookmarkable but visible in the URL and size-limited; POST is more robust.
+  - **`formtarget`** — overrides `target` (example: `_blank`).
+  - Sandbox: `override.html`.
+
+<img alt="html-input-form-attributes override buttons result" src="./code_sandbox/snaps/html-input-form-attributes-01-result.png" />
+
+- [x] **`formnovalidate` vs `novalidate`**
+  - `formnovalidate` on a **submit** button skips validation for that click.
+  - `novalidate` on **`<form>`** skips validation for the whole form.
+  - Sandbox: `novalidate.html`.
+
+<img alt="html-input-form-attributes novalidate result" src="./code_sandbox/snaps/html-input-form-attributes-02-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Submit a last name that lives outside the form, then try override buttons and skip-validation submits.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-input-form-attributes` file.
+- [ ] Success: Last name is outside `<form>` but has `form="form1"`; extra submit buttons change action/method/target/enctype; one submit skips email validation.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-input-form-attributes/`
+- [ ] `http://127.0.0.1:8766/html-input-form-attributes/override.html`
+- [ ] `http://127.0.0.1:8766/html-input-form-attributes/novalidate.html`
+
+<img alt="html-input-form-attributes result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
+
+The form* attribute examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-input-form-attributes/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+`form` (`index.html`):
+
+<img alt="html-input-form-attributes source" src="./code_sandbox/snaps/html-input-form-attributes-code.png" />
+
+```html
+<form action="/action_page.php" id="form1">
+  <input type="text" id="fname" name="fname">
+</form>
+<input type="text" id="lname" name="lname" form="form1">
+```
+
+<img alt="html-input-form-attributes form= result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
+
+Overrides (`override.html`):
+
+<img alt="html-input-form-attributes overrides source" src="./code_sandbox/snaps/html-input-form-attributes-01-code.png" />
+
+```html
+<input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+<input type="submit" formmethod="post" value="Submit using POST">
+<input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+<input type="submit" formenctype="multipart/form-data" value="Submit as Multipart">
+```
+
+<img alt="html-input-form-attributes override buttons result" src="./code_sandbox/snaps/html-input-form-attributes-01-result.png" />
+
+Novalidate (`novalidate.html`):
+
+<img alt="html-input-form-attributes novalidate source" src="./code_sandbox/snaps/html-input-form-attributes-02-code.png" />
+
+```html
+<input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+<form action="/action_page.php" novalidate>
+```
+
+<img alt="html-input-form-attributes novalidate result" src="./code_sandbox/snaps/html-input-form-attributes-02-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How can an input outside `<form>` still submit?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set **`form="theFormId"`** equal to the form’s **`id`**.
+
+</details>
+
+### Question 2: What does `formaction` override?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The form’s **`action`**.
+- [x] Works on **`submit`** and **`image`**.
+
+</details>
+
+### Question 3: When does `formenctype` apply?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Only with **`method="post"`**.
+- [x] It overrides the form’s **`enctype`**.
+
+</details>
+
+### Question 4: GET vs POST on a submit button?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `formmethod="get"` — data in the **URL** (bookmarkable, visible, size-limited).
+- [x] `formmethod="post"` — request **body** (not bookmarkable, more robust).
+
+</details>
+
+### Question 5: What does `formtarget="_blank"` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Shows the response in a **new window or tab**.
+- [x] Overrides the form’s **`target`**.
+
+</details>
+
+### Question 6: `formnovalidate` vs `novalidate`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `formnovalidate` — skip validation for **that submit button**.
+- [x] `novalidate` — skip validation for the **whole form**.
+
+</details>
+
+</details>
+
+## Summary
+
+`form` ties an outside input to a form `id`. On submit/image buttons, `formaction`, `formenctype`, `formmethod`, and `formtarget` override the parent form. `formnovalidate` skips checks for one button; `novalidate` skips them for the form.
+
+## References
+
+- [HTML Input form* Attributes (W3Schools)](https://www.w3schools.com/html/html_form_attributes_form.asp)
+- [HTML Form Attributes](https://www.w3schools.com/html/html_forms_attributes.asp)
+- [MDN: `<input>` form attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form)
+- [MDN: `formaction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction)
+
+</details>
+
+<details>
+  <summary>HTML Canvas</summary>
+
+## Introduction
+
+The HTML **`<canvas>`** element is a **container** for graphics drawn **on the fly with JavaScript**. This chapter shows an empty canvas, a **line**, a **circle**, **fill/stroke text**, **linear and radial gradients**, and **`drawImage`**. Canvas is supported by all major browsers.
+
+## Detailed Explanation
+
+- [x] **What canvas is**
+  - Draw paths, boxes, circles, text, and images with JS.
+  - Markup: `<canvas id="myCanvas" width="200" height="100"></canvas>`.
+  - Always set **`id`**, **`width`**, and **`height`**. Add a border with **`style`**. Default: no border, no content.
+  - Sandbox: `code_sandbox/html-canvas/index.html`.
+
+<img alt="html-canvas empty result" src="./code_sandbox/snaps/html-canvas-result.png" />
+
+- [x] **JavaScript drawing** — `getElementById` → `getContext("2d")`.
+  - **Line:** `moveTo(0, 0); lineTo(200, 100); stroke();`
+  - **Circle:** `beginPath(); arc(95, 50, 40, 0, 2 * Math.PI); stroke();`
+  - **Fill text:** `font = "30px Arial"; fillText("Hello World", 10, 50);`
+  - **Stroke text:** `strokeText("Hello World", 10, 50);`
+  - Sandbox: `shapes.html`.
+
+<img alt="html-canvas shapes result" src="./code_sandbox/snaps/html-canvas-01-result.png" />
+
+- [x] **Gradients**
+  - Linear: `createLinearGradient(0, 0, 200, 0)` red → white, then `fillRect(10, 10, 150, 80)`.
+  - Circular: `createRadialGradient(75, 50, 5, 90, 60, 100)`.
+  - Sandbox: `gradient.html`.
+
+<img alt="html-canvas gradients result" src="./code_sandbox/snaps/html-canvas-02-result.png" />
+
+- [x] **Draw image**
+  - `ctx.drawImage(img, 10, 10)` after reading an `<img id="scream">`.
+  - The page script assumes the image is already loaded. The sandbox uses **`window.onload`** so `drawImage` runs after the file is ready (current browsers; otherwise the canvas can stay blank).
+  - Sandbox: `image.html` (local `picture.jpg` stands in for W3Schools’ The Scream).
+
+<img alt="html-canvas drawImage result" src="./code_sandbox/snaps/html-canvas-03-result.png" />
+
+- [x] More in the **HTML Canvas Tutorial**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the empty canvas, then shapes, gradients, and drawImage.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-canvas` file.
+- [ ] Success: empty bordered box; diagonal line, circle, Hello World fill and stroke; red→white linear and radial fills; photo copied onto a second canvas.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-canvas/`
+- [ ] `http://127.0.0.1:8766/html-canvas/shapes.html`
+- [ ] `http://127.0.0.1:8766/html-canvas/gradient.html`
+- [ ] `http://127.0.0.1:8766/html-canvas/image.html`
+
+<img alt="html-canvas result" src="./code_sandbox/snaps/html-canvas-result.png" />
+
+The canvas examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-canvas/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Empty canvas (`index.html`):
+
+<img alt="html-canvas source" src="./code_sandbox/snaps/html-canvas-code.png" />
+
+```html
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+```
+
+<img alt="html-canvas empty result" src="./code_sandbox/snaps/html-canvas-result.png" />
+
+Shapes (`shapes.html`):
+
+<img alt="html-canvas shapes source" src="./code_sandbox/snaps/html-canvas-01-code.png" />
+
+```javascript
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.fillText("Hello World", 10, 50);
+ctx.strokeText("Hello World", 10, 50);
+```
+
+<img alt="html-canvas shapes result" src="./code_sandbox/snaps/html-canvas-01-result.png" />
+
+Gradients (`gradient.html`):
+
+<img alt="html-canvas gradient source" src="./code_sandbox/snaps/html-canvas-02-code.png" />
+
+```javascript
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillRect(10, 10, 150, 80);
+```
+
+<img alt="html-canvas gradients result" src="./code_sandbox/snaps/html-canvas-02-result.png" />
+
+Image (`image.html`):
+
+<img alt="html-canvas image source" src="./code_sandbox/snaps/html-canvas-03-code.png" />
+
+```javascript
+var img = document.getElementById("scream");
+ctx.drawImage(img, 10, 10);
+```
+
+<img alt="html-canvas drawImage result" src="./code_sandbox/snaps/html-canvas-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Does `<canvas>` draw by itself?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** It is only a **container**.
+- [x] You draw with **JavaScript**.
+
+</details>
+
+### Question 2: Which attributes should you always set?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`id`** (for the script), **`width`**, and **`height`**.
+
+</details>
+
+### Question 3: How do you start drawing?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `document.getElementById("myCanvas")`.
+- [x] `getContext("2d")`.
+
+</details>
+
+### Question 4: How do you draw a circle?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `beginPath()` then `arc(x, y, r, 0, 2 * Math.PI)` then `stroke()` (or fill).
+
+</details>
+
+### Question 5: `fillText` vs `strokeText`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `fillText` — solid glyphs.
+- [x] `strokeText` — outlined glyphs.
+
+</details>
+
+### Question 6: Linear vs radial gradient?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `createLinearGradient` — along a line.
+- [x] `createRadialGradient` — from one circle to another.
+- [x] `addColorStop` then `fillStyle` + `fillRect`.
+
+</details>
+
+### Question 7: Why might `drawImage` show a blank canvas?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The image may **not have loaded** yet.
+- [x] Wait for **`load` / `window.onload`** before drawing.
+
+</details>
+
+</details>
+
+## Summary
+
+Canvas is a JS drawing surface. Set id, width, and height; get a 2D context; then stroke paths, arcs, text, gradients, or images. Wait for images to load before `drawImage`.
+
+## References
+
+- [HTML Canvas Graphics (W3Schools)](https://www.w3schools.com/html/html5_canvas.asp)
+- [HTML Canvas Tutorial](https://www.w3schools.com/graphics/canvas_intro.asp)
+- [MDN: `<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
+- [MDN: Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+
+</details>
+
+<details>
+  <summary>HTML SVG</summary>
+
+## Introduction
+
+**SVG** (Scalable Vector Graphics) describes **2D graphics in XML** and can be **embedded in HTML**. Graphics stay sharp when zoomed. This chapter draws a **circle**, **rectangles**, a **star**, a **gradient ellipse with text**, and compares SVG with **canvas**.
+
+## Detailed Explanation
+
+- [x] **What is SVG?**
+  - Vector graphics for the Web, in **XML**.
+  - Elements and attributes can be **animated**.
+  - A **W3C recommendation**; works with CSS, DOM, XSL, and JavaScript.
+  - Supported by all major browsers.
+- [x] **`<svg>`** — container for paths, rectangles, circles, polygons, text, and more.
+- [x] **Circle** — `cx` `cy` `r`, green stroke, yellow fill.
+  - Sandbox: `code_sandbox/html-svg/index.html`.
+
+<img alt="html-svg circle result" src="./code_sandbox/snaps/html-svg-result.png" />
+
+- [x] **More shapes** (`shapes.html`)
+  - Blue rectangle, red stroke.
+  - Rounded rect (`rx` `ry`) with **opacity 0.5**.
+  - Lime/purple **star** polygon, `fill-rule: evenodd`.
+  - Yellow→red **linearGradient** on an ellipse, white **SVG** text. Fallback: “Sorry, your browser does not support inline SVG.”
+
+<img alt="html-svg shapes result" src="./code_sandbox/snaps/html-svg-01-result.png" />
+
+- [x] **SVG vs Canvas**
+
+| SVG                                         | Canvas                                      |
+| ------------------------------------------- | ------------------------------------------- |
+| Resolution independent                      | Resolution dependent                        |
+| Event handlers                              | No event handlers                           |
+| Good text rendering                         | Poor text rendering                         |
+| Slow if complex                             | Can save as .png / .jpg                     |
+| Not suited for games                        | Well suited for graphic-intensive games     |
+
+  - SVG: each shape is an **object** in the DOM; change an attribute and the browser **re-renders**.
+  - Canvas: **pixel by pixel**; once drawn it is **forgotten** — move something and **redraw the whole scene**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the yellow circle, then the rectangle / star / gradient page.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open both `html-svg` files.
+- [ ] Success: yellow circle with green ring; blue rect; faded rounded red square; lime star; yellow-red ellipse with **SVG** text.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-svg/`
+- [ ] `http://127.0.0.1:8766/html-svg/shapes.html`
+
+<img alt="html-svg result" src="./code_sandbox/snaps/html-svg-result.png" />
+
+The SVG examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-svg/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Circle (`index.html`):
+
+<img alt="html-svg circle source" src="./code_sandbox/snaps/html-svg-code.png" />
+
+```html
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+```
+
+<img alt="html-svg circle result" src="./code_sandbox/snaps/html-svg-result.png" />
+
+Shapes (`shapes.html`):
+
+<img alt="html-svg shapes source" src="./code_sandbox/snaps/html-svg-01-code.png" />
+
+```html
+<rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+<polygon points="100,10 40,198 190,78 10,78 160,198" />
+<ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+<text fill="#ffffff" font-size="45" x="50" y="86">SVG</text>
+```
+
+<img alt="html-svg shapes result" src="./code_sandbox/snaps/html-svg-01-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does SVG stand for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Scalable Vector Graphics**.
+- [x] Vector graphics in **XML**, embeddable in HTML.
+
+</details>
+
+### Question 2: Do SVG graphics lose quality when zoomed?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** They are **scalable**.
+
+</details>
+
+### Question 3: What is `<svg>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **container** for SVG graphics (paths, rects, circles, polygons, text).
+
+</details>
+
+### Question 4: Which attributes draw a circle?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`cx`**, **`cy`**, **`r`**, plus stroke/fill.
+
+</details>
+
+### Question 5: How is SVG different from canvas in the DOM?
+
+<details>
+<summary>Answer</summary>
+
+- [x] SVG shapes stay as **objects**; you can attach **event handlers**.
+- [x] Canvas is **pixels**; after drawing, the browser **forgets** the shapes.
+
+</details>
+
+### Question 6: Which is better for games?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Canvas** — suited to graphic-intensive games.
+- [x] SVG is **not** well suited for games and can be slow if complex.
+
+</details>
+
+</details>
+
+## Summary
+
+SVG is XML vector graphics inside `<svg>`. Draw circles, rects, polygons, and gradient text. SVG stays sharp and stays in the DOM; canvas is a pixel buffer you must redraw. Prefer SVG for scalable UI art; canvas for games.
+
+## References
+
+- [HTML SVG Graphics (W3Schools)](https://www.w3schools.com/html/html5_svg.asp)
+- [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
+- [MDN: SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
+- [MDN: `<svg>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg)
+
+</details>
+
+<details>
+  <summary>HTML Media</summary>
+
+## Introduction
+
+**Multimedia** on the web is sound, music, videos, movies, and animations. This chapter lists common **file extensions**, which **video and audio formats HTML supports**, and which older formats do **not** play in browsers. There is **no Try it Yourself** example on this page.
+
+## Detailed Explanation
+
+- [x] **What is multimedia?**
+  - Almost anything you can **hear or see**: images, music, sound, videos, films, animations.
+  - Pages mix **different types and formats**.
+- [x] **Browser support**
+  - Early browsers: **text only**, one font, one color.
+  - Later: colors, fonts, images, and multimedia.
+- [x] **Formats**
+  - Media lives in **files**. The usual hint is the **extension**: `.wav` `.mp3` `.mp4` `.mpg` `.wmv` `.avi`.
+- [x] **Video formats** (page table)
+
+| Format    | File        | Notes                                                                 |
+| --------- | ----------- | --------------------------------------------------------------------- |
+| MPEG      | `.mpg/.mpeg`| First popular web video. **Not supported in HTML** anymore.           |
+| AVI       | `.avi`      | Microsoft. Cameras/TV. Windows, **not browsers**.                     |
+| WMV       | `.wmv`      | Microsoft. **Not browsers**.                                          |
+| QuickTime | `.mov`      | Apple. **Not browsers**.                                              |
+| RealVideo | `.rm/.ram`  | Streaming. **Does not play in browsers**.                             |
+| Flash     | `.swf/.flv` | Often needs a **plug-in**.                                            |
+| Ogg       | `.ogg`      | Theora Ogg. **Supported by HTML**.                                    |
+| WebM      | `.webm`     | Mozilla, Opera, Adobe, Google. **Supported by HTML**.                 |
+| MPEG-4 / MP4 | `.mp4`   | **All browsers**. **Recommended by YouTube**.                         |
+
+  - **Note:** Only **MP4, WebM, and Ogg** video are supported by the HTML standard.
+- [x] **Audio formats**
+
+| Format    | File        | Notes                                                                 |
+| --------- | ----------- | --------------------------------------------------------------------- |
+| MIDI      | `.mid/.midi`| Notes, not recorded sound. **Not browsers**.                          |
+| RealAudio | `.rm/.ram`  | **Does not play in browsers**.                                        |
+| WMA       | `.wma`      | Microsoft. **Not browsers**.                                          |
+| AAC       | `.aac`      | Apple / iTunes. **Not browsers** (as a raw `.aac` type on this page). |
+| WAV       | `.wav`      | IBM/Microsoft. **Supported by HTML**.                                 |
+| Ogg       | `.ogg`      | **Supported by HTML**.                                                |
+| MP3       | `.mp3`      | Best compressed recorded music. **All browsers**.                     |
+| MP4       | `.mp4`      | Video container that can hold audio. **All browsers**.                |
+
+  - **Note:** Only **MP3, WAV, and Ogg** audio are supported by the HTML standard.
+  - If the site is **recorded music**, choose **MP3**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This chapter is a **format reference**. There is no Try it Yourself demo to run.
+
+### **Overview**
+
+- [ ] No sandbox run. Memorize HTML video (**MP4, WebM, Ogg**) and audio (**MP3, WAV, Ogg**).
+- [ ] Success: you can name the HTML-supported types and several types that need a plug-in or desktop player.
+
+### **Task 1: Read the tables**
+
+- [ ] Video HTML: **MP4, WebM, Ogg**. YouTube recommends **MP4**.
+- [ ] Audio HTML: **MP3, WAV, Ogg**. Music sites: **MP3**.
+- [ ] AVI, WMV, MOV, Flash, MIDI, WMA, AAC (as listed here) are **not** the HTML video/audio elements’ standard types.
+
+No runnable example in this chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No server was started for this section (no sandbox page to open).
+
+```bash
+# none
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No tested sandbox files. The chapter has **no code example** — only format tables. Video and audio markup are in the next chapters.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What counts as multimedia here?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Sound, music, videos, movies, animations — anything you can **hear or see**.
+
+</details>
+
+### Question 2: How do you usually tell a media file’s type?
+
+<details>
+<summary>Answer</summary>
+
+- [x] By the **file extension** (`.mp3`, `.mp4`, `.wav`, …).
+
+</details>
+
+### Question 3: Which video formats does HTML support?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MP4**, **WebM**, and **Ogg**.
+
+</details>
+
+### Question 4: Which video format does YouTube recommend?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MP4**.
+
+</details>
+
+### Question 5: Which audio formats does HTML support?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MP3**, **WAV**, and **Ogg**.
+
+</details>
+
+### Question 6: What should a recorded-music site use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MP3** — compressed, high quality, all browsers.
+
+</details>
+
+### Question 7: Do AVI, WMV, and MOV play in the HTML video element?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No** (per this chapter). They play on desktop hardware/OS players, not as HTML-standard video types.
+
+</details>
+
+</details>
+
+## Summary
+
+HTML video is **MP4, WebM, Ogg** (YouTube: MP4). HTML audio is **MP3, WAV, Ogg** (music: MP3). Older types (MPEG, AVI, WMV, MOV, Flash, MIDI, WMA) are not the HTML media standard.
+
+## References
+
+- [HTML Multimedia (W3Schools)](https://www.w3schools.com/html/html_media.asp)
+- [HTML Video](https://www.w3schools.com/html/html5_video.asp)
+- [HTML Audio](https://www.w3schools.com/html/html5_audio.asp)
+- [MDN: Media type and format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Formats)
+
+</details>
+
+<details>
+  <summary>HTML Video</summary>
+
+## Introduction
+
+The HTML **`<video>`** element shows a video on a page. This chapter covers **`controls`**, **`<source>`** fallbacks, **width/height**, **autoplay** (and **muted** autoplay in Chromium), formats (**MP4, WebM, Ogg**), and a small **JavaScript** play/pause/size demo. Sample clip: **Big Buck Bunny**.
+
+## Detailed Explanation
+
+- [x] **Markup**
+  - `controls` adds play, pause, and volume.
+  - Always set **width and height** so the page does not flicker while the video loads.
+  - `<source>` lists alternatives; the browser uses the **first recognized** format.
+  - Text between the tags shows only if `<video>` is **unsupported**.
+  - Sandbox: `code_sandbox/html-video/index.html` (`movie.mp4`).
+
+<img alt="html-video controls result" src="./code_sandbox/snaps/html-video-result.png" />
+
+- [x] **Autoplay**
+  - `autoplay` starts the video automatically.
+  - **Chromium** usually blocks autoplay **with sound**. **Muted autoplay is allowed**: `autoplay muted`.
+  - Sandbox: `autoplay.html`.
+
+<img alt="html-video autoplay muted result" src="./code_sandbox/snaps/html-video-01-result.png" />
+
+- [x] **Formats** — MP4 (`video/mp4`), WebM (`video/webm`), Ogg (`video/ogg`). Safari: MP4 and WebM yes, **Ogg no**. Other listed browsers: all three.
+- [x] **DOM** — methods/properties/events to load, play, pause, set duration and volume.
+  - Buttons: **Play/Pause**, **Big**, **Small**, **Normal**.
+  - Sandbox: `js.html`.
+
+<img alt="html-video javascript controls result" src="./code_sandbox/snaps/html-video-02-result.png" />
+
+- [x] **Tags:** `<video>` video; `<source>` alternate files; `<track>` text tracks.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the controls player, muted autoplay, and the JS size buttons.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-video` file.
+- [ ] Success: Big Buck Bunny with controls; muted autoplay may start on its own; Play/Pause Big Small Normal resize/play the same clip.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-video/`
+- [ ] `http://127.0.0.1:8766/html-video/autoplay.html`
+- [ ] `http://127.0.0.1:8766/html-video/js.html`
+
+<img alt="html-video result" src="./code_sandbox/snaps/html-video-result.png" />
+
+The video examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-video/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Controls (`index.html`):
+
+<img alt="html-video source" src="./code_sandbox/snaps/html-video-code.png" />
+
+```html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+```
+
+<img alt="html-video controls result" src="./code_sandbox/snaps/html-video-result.png" />
+
+Muted autoplay (`autoplay.html`):
+
+<img alt="html-video autoplay source" src="./code_sandbox/snaps/html-video-01-code.png" />
+
+```html
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+```
+
+<img alt="html-video autoplay muted result" src="./code_sandbox/snaps/html-video-01-result.png" />
+
+JavaScript (`js.html`):
+
+<img alt="html-video js source" src="./code_sandbox/snaps/html-video-02-code.png" />
+
+```html
+<button onclick="playPause()">Play/Pause</button>
+<button onclick="makeBig()">Big</button>
+<button onclick="makeSmall()">Small</button>
+<button onclick="makeNormal()">Normal</button>
+```
+
+<img alt="html-video javascript controls result" src="./code_sandbox/snaps/html-video-02-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `controls` add?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Play, pause, and volume (and the rest of the native control bar).
+
+</details>
+
+### Question 2: Why set width and height on `<video>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] So the page does not **flicker** while the video loads.
+
+</details>
+
+### Question 3: How do `<source>` elements work?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They list **alternative files**.
+- [x] The browser uses the **first format it recognizes**.
+
+</details>
+
+### Question 4: How do you autoplay in Chrome?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **`autoplay muted`**.
+- [x] Chromium often **blocks** autoplay with sound.
+
+</details>
+
+### Question 5: Which video formats does HTML support?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MP4**, **WebM**, **Ogg**.
+- [x] Safari does **not** support Ogg in this table.
+
+</details>
+
+### Question 6: Which tags go with video?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<video>`, `<source>`, `<track>`.
+
+</details>
+
+</details>
+
+## Summary
+
+Use `<video>` with `controls`, width/height, and `<source>` fallbacks. Autoplay in Chromium needs `muted`. Formats: MP4, WebM, Ogg. The DOM can play, pause, and resize.
+
+## References
+
+- [HTML Video (W3Schools)](https://www.w3schools.com/html/html5_video.asp)
+- [HTML Audio/Video DOM](https://www.w3schools.com/tags/ref_av_dom.asp)
+- [MDN: `<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
+- [MDN: Autoplay guide](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide)
+
+</details>
+
+<details>
+  <summary>HTML Audio</summary>
+
+## Introduction
+
+The HTML **`<audio>`** element plays a sound file. This chapter covers **`controls`**, **`<source>`** fallbacks, **autoplay** (and **muted** autoplay in Chromium), formats (**MP3, WAV, OGG**), media types, and the Audio/Video **DOM**.
+
+## Detailed Explanation
+
+- [x] **Markup**
+  - `controls` adds play, pause, and volume.
+  - `<source>` lists alternatives; the browser uses the **first recognized** format.
+  - Inner text shows only if `<audio>` is **unsupported**.
+  - Sandbox: `code_sandbox/html-audio/index.html` (`horse.mp3`; the page also lists `horse.ogg`).
+
+<img alt="html-audio controls result" src="./code_sandbox/snaps/html-audio-result.png" />
+
+- [x] **Autoplay**
+  - `autoplay` starts playback automatically.
+  - Chromium usually **blocks** autoplay with sound. **Muted autoplay is allowed**: `controls autoplay muted`.
+  - Sandbox: `autoplay.html`.
+
+<img alt="html-audio autoplay muted result" src="./code_sandbox/snaps/html-audio-01-result.png" />
+
+- [x] **Formats** — MP3 (`audio/mpeg`), WAV (`audio/wav`), OGG (`audio/ogg`). Safari: MP3 and WAV yes, **OGG no**. Edge/IE: WAV and OGG from **Edge 79**.
+- [x] **DOM** — load, play, pause, duration, volume, play/pause events (same family as `<video>`).
+- [x] **Tags:** `<audio>` sound; `<source>` alternate files.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the horse clip with controls, then the muted autoplay version.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open both `html-audio` files.
+- [ ] Success: a native audio bar; muted autoplay may start with volume off.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-audio/`
+- [ ] `http://127.0.0.1:8766/html-audio/autoplay.html`
+
+<img alt="html-audio result" src="./code_sandbox/snaps/html-audio-result.png" />
+
+The audio examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-audio/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Controls (`index.html`):
+
+<img alt="html-audio source" src="./code_sandbox/snaps/html-audio-code.png" />
+
+```html
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+<img alt="html-audio controls result" src="./code_sandbox/snaps/html-audio-result.png" />
+
+Muted autoplay (`autoplay.html`):
+
+<img alt="html-audio autoplay source" src="./code_sandbox/snaps/html-audio-01-code.png" />
+
+```html
+<audio controls autoplay muted>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+```
+
+<img alt="html-audio autoplay muted result" src="./code_sandbox/snaps/html-audio-01-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `controls` add on `<audio>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Play, pause, and volume.
+
+</details>
+
+### Question 2: Which audio formats does HTML support?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MP3**, **WAV**, and **OGG**.
+- [x] Safari: **no OGG** in this table.
+
+</details>
+
+### Question 3: What is the media type for MP3?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`audio/mpeg`**.
+
+</details>
+
+### Question 4: How do you autoplay in Chromium?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **`autoplay muted`**.
+- [x] Autoplay **with sound** is usually blocked.
+
+</details>
+
+### Question 5: What tags are listed for audio?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<audio>` and `<source>`.
+
+</details>
+
+</details>
+
+## Summary
+
+`<audio controls>` plus `<source>` fallbacks plays MP3/WAV/OGG. Autoplay in Chromium needs `muted`. Safari skips OGG. The Audio/Video DOM can play, pause, and report events.
+
+## References
+
+- [HTML Audio (W3Schools)](https://www.w3schools.com/html/html5_audio.asp)
+- [HTML Audio/Video DOM](https://www.w3schools.com/tags/ref_av_dom.asp)
+- [MDN: `<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+
+</details>
+
+<details>
+  <summary>HTML Plug-ins</summary>
+
+## Introduction
+
+**Plug-ins** extend the browser (Java applets, ActiveX, Flash, maps, virus scanners, bank IDs). **Most browsers no longer support** applets, plug-ins, ActiveX, or Shockwave Flash. This chapter still shows **`<object>`** and **`<embed>`** for including HTML or images.
+
+## Detailed Explanation
+
+- [x] **Warning**
+  - Java Applets and plug-ins: **mostly gone**.
+  - **ActiveX**: no longer supported in any browsers.
+  - **Shockwave Flash**: turned off in modern browsers.
+- [x] **`<object>`**
+  - Supported by all browsers. Defines an **embedded object**.
+  - Designed for plug-ins (applets, PDF, Flash) but can include **HTML in HTML** or an **image**.
+  - Examples: `data="snippet.html"` (page used height **500px**; sandbox uses **200px** so the snap fits) and `data="audi.jpeg"`.
+  - Sandbox: `code_sandbox/html-plug-ins/index.html`.
+
+<img alt="html-plug-ins object result" src="./code_sandbox/snaps/html-plug-ins-result.png" />
+
+- [x] **`<embed>`**
+  - Supported in all major browsers. Was used for years but only became part of the spec in **HTML5**.
+  - **No closing tag**; **cannot** contain alternative text.
+  - Examples: `src="audi.jpeg"` and `src="snippet.html"`.
+  - Sandbox: `embed.html`.
+
+<img alt="html-plug-ins embed result" src="./code_sandbox/snaps/html-plug-ins-01-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the object page (nested HTML + image) and the embed page.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open both `html-plug-ins` files.
+- [ ] Success: nested **Snippet** heading; photo via `object` and via `embed`.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-plug-ins/`
+- [ ] `http://127.0.0.1:8766/html-plug-ins/embed.html`
+
+<img alt="html-plug-ins result" src="./code_sandbox/snaps/html-plug-ins-result.png" />
+
+The object/embed examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-plug-ins/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Object (`index.html`):
+
+<img alt="html-plug-ins object source" src="./code_sandbox/snaps/html-plug-ins-code.png" />
+
+```html
+<object width="100%" height="500px" data="snippet.html"></object>
+<object data="audi.jpeg"></object>
+```
+
+<img alt="html-plug-ins object result" src="./code_sandbox/snaps/html-plug-ins-result.png" />
+
+Embed (`embed.html`):
+
+<img alt="html-plug-ins embed source" src="./code_sandbox/snaps/html-plug-ins-01-code.png" />
+
+```html
+<embed src="audi.jpeg">
+<embed width="100%" height="500px" src="snippet.html">
+```
+
+<img alt="html-plug-ins embed result" src="./code_sandbox/snaps/html-plug-ins-01-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What were plug-ins for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Extra programs: Java applets, ActiveX, Flash, maps, virus scans, bank IDs.
+
+</details>
+
+### Question 2: Do modern browsers still run Flash and ActiveX?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** ActiveX is gone; Flash is turned off; applets/plug-ins are largely unsupported.
+
+</details>
+
+### Question 3: What can `<object>` embed today in this chapter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] HTML in HTML (`data="snippet.html"`).
+- [x] An image (`data="audi.jpeg"`).
+
+</details>
+
+### Question 4: How does `<embed>` differ from `<object>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<embed>` has **no closing tag**.
+- [x] It **cannot** hold alternative text.
+- [x] It joined the HTML spec in **HTML5**.
+
+</details>
+
+</details>
+
+## Summary
+
+Plug-ins (Java, ActiveX, Flash) are obsolete. Use `<object>` or `<embed>` to include HTML or images. `<embed>` is empty (no end tag, no fallback text).
+
+## References
+
+- [HTML Plug-ins (W3Schools)](https://www.w3schools.com/html/html_object.asp)
+- [MDN: `<object>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object)
+- [MDN: `<embed>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed)
+
+</details>

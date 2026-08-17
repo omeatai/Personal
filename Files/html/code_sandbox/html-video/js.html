@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <video id="myVideo" width="320" height="240">
+      <source src="movie.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p>
+      <button type="button" onclick="playPause()">Play/Pause</button>
+      <button type="button" onclick="makeBig()">Big</button>
+      <button type="button" onclick="makeSmall()">Small</button>
+      <button type="button" onclick="makeNormal()">Normal</button>
+    </p>
+    <p>Video courtesy of Big Buck Bunny.</p>
+    <script>
+      var vid = document.getElementById("myVideo");
+      function playPause() {
+        if (vid.paused) vid.play();
+        else vid.pause();
+      }
+      function makeBig() {
+        vid.width = 560;
+      }
+      function makeSmall() {
+        vid.width = 320;
+      }
+      function makeNormal() {
+        vid.width = 420;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <p>Linear gradient</p>
+    <canvas id="lin" width="200" height="100" style="border: 1px solid #000"></canvas>
+    <p>Circular gradient</p>
+    <canvas id="rad" width="200" height="100" style="border: 1px solid #000"></canvas>
+    <script>
+      var c = document.getElementById("lin");
+      var ctx = c.getContext("2d");
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+
+      c = document.getElementById("rad");
+      ctx = c.getContext("2d");
+      grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <p>Line</p>
+    <canvas id="line" width="200" height="100" style="border: 1px solid #000"></canvas>
+    <p>Circle</p>
+    <canvas id="circle" width="200" height="100" style="border: 1px solid #000"></canvas>
+    <p>Fill text</p>
+    <canvas id="fill" width="200" height="100" style="border: 1px solid #000"></canvas>
+    <p>Stroke text</p>
+    <canvas id="stroke" width="200" height="100" style="border: 1px solid #000"></canvas>
+    <script>
+      var c = document.getElementById("line");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+
+      c = document.getElementById("circle");
+      ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      c = document.getElementById("fill");
+      ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World", 10, 50);
+
+      c = document.getElementById("stroke");
+      ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Hello World", 10, 50);
+    </script>
+  </body>
+</html>
