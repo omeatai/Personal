@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Types - Strings</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Strings</h2>
+    <pre id="demo"></pre>
+    <script>
+      let carName1 = "Volvo XC60"; // double quotes
+      let carName2 = 'Volvo XC60'; // single quotes
+      let answer1 = "It's alright"; // single quote inside double
+      let answer2 = "He is called 'Johnny'"; // single quotes inside double
+      let answer3 = 'He is called "Johnny"'; // double quotes inside single
+      document.getElementById("demo").innerText =
+        "double quotes:        " + carName1 + "\n" +
+        "single quotes:        " + carName2 + "\n" +
+        "single inside double: " + answer1 + "\n" +
+        "single inside double: " + answer2 + "\n" +
+        "double inside single: " + answer3;
+    </script>
+  </body>
+</html>

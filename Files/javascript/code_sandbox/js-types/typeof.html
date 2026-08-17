@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Types - typeof</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The typeof Operator</h2>
+    <pre id="demo"></pre>
+    <script>
+      let out = "";
+      out += 'typeof "John"       -> ' + typeof "John" + "\n";
+      out += "typeof 3.14         -> " + typeof 3.14 + "\n";
+      out += "typeof true         -> " + typeof true + "\n";
+      out += "typeof 42n (BigInt) -> " + typeof 42n + "\n";
+      out += "typeof {name:'x'}   -> " + typeof { name: "x" } + "\n";
+      out += "typeof [1,2,3]      -> " + typeof [1, 2, 3] + "  (arrays are objects)\n";
+      out += "typeof null         -> " + typeof null + "   (historic quirk)\n";
+      out += "typeof undefined    -> " + typeof undefined;
+      document.getElementById("demo").innerText = out;
+    </script>
+  </body>
+</html>

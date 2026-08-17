@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Types - Numbers</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Numbers</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x1 = 34.0; // with decimals
+      let x2 = 34; // without decimals
+      let y = 123e5; // scientific: 12300000
+      let z = 123e-5; // scientific: 0.00123
+      let big = 9999999999999999; // beyond safe integer -> rounds
+      document.getElementById("demo").innerText =
+        "34.00  -> " + x1 + "\n" +
+        "34     -> " + x2 + "\n" +
+        "123e5   = " + y + "\n" +
+        "123e-5  = " + z + "\n" +
+        "9999999999999999 -> " + big + "  (precision limit)";
+    </script>
+  </body>
+</html>
