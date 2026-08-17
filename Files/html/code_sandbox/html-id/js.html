@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+    <script>
+      function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+      }
+    </script>
+  </body>
+</html>

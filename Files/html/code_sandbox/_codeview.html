@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+    <style>
+      html,
+      body {
+        background: #fff;
+        margin: 0;
+      }
+      #snap-target {
+        display: inline-block;
+        background: #e7e9eb;
+        padding: 16px 16px 20px;
+        font-family: Verdana, Geneva, sans-serif;
+        min-width: 420px;
+        max-width: 720px;
+      }
+      #snap-target h3 {
+        margin: 0 0 12px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .box {
+        background: #fff;
+        border-left: 4px solid #04aa6d;
+        padding: 8px 16px;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 15px;
+        line-height: 1.45;
+        color: #000;
+        overflow-x: auto;
+      }
+      .t {
+        color: #880055;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 12px;
+        background: #04aa6d;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="snap-target">
+      <h3>Example</h3>
+      <div class="box" id="code">Loading…</div>
+      <div class="btn">Try it Yourself »</div>
+    </div>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const src = params.get("src");
+      const snippet = params.get("snippet");
+
+      function highlight(raw) {
+        const esc = raw
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+        return esc.replace(
+          /(&lt;\/?[a-zA-Z0-9]+(?:\s[^&]*?)?&gt;)/g,
+          '<span class="t">$1</span>',
+        );
+      }
+
+      function extractBody(html) {
+        const m = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+        if (!m) return html.trim();
+        return m[1]
+          .replace(/^\n/, "")
+          .replace(/\n[ \t]*$/, "")
+          .replace(/^  /gm, "");
+      }
+
+      async function main() {
+        let text;
+        if (snippet) {
+          text = snippet;
+        } else if (src) {
+          const res = await fetch(src);
+          text = extractBody(await res.text());
+        } else {
+          text = "Missing src=";
+        }
+        document.getElementById("code").innerHTML = highlight(text);
+      }
+      main();
+    </script>
+  </body>
+</html>

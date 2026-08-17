@@ -5404,3 +5404,4379 @@ Use `<ul>` for bullets, `<ol>` for numbers, and `<li>` for items in both. Use `<
 - [MDN: `<dl>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)
 
 </details>
+
+<details>
+  <summary>HTML Block & Inline</summary>
+
+## Introduction
+
+Every HTML element has a default **display** value. The two most common are **block** and **inline**. This chapter compares those display types, lists the tags in each group, and shows **`<div>`** (block container) and **`<span>`** (inline container) with CSS.
+
+## Detailed Explanation
+
+- [x] **Default display**
+  - The browser assigns a default `display` depending on the element type.
+  - The two most common values: **block** and **inline**.
+- [x] **Block-level elements**
+  - Always **start on a new line**.
+  - Browsers add some **margin** before and after.
+  - Take up the **full width** available (stretch left to right).
+  - Two common examples: `<p>` (paragraph) and `<div>` (division / section).
+  - Sandbox: `code_sandbox/html-block-inline/index.html`.
+
+<img alt="html-block-inline p and div result" src="./code_sandbox/snaps/html-block-inline-result.png" />
+
+- [x] **Block-level tags listed on the page**
+  - `<address>` `<article>` `<aside>` `<blockquote>` `<canvas>` `<dd>` `<div>` `<dl>` `<dt>` `<fieldset>` `<figcaption>` `<figure>` `<footer>` `<form>` `<h1>`–`<h6>` `<header>` `<hr>` `<li>` `<main>` `<nav>` `<noscript>` `<ol>` `<p>` `<pre>` `<section>` `<table>` `<tfoot>` `<ul>` `<video>`
+- [x] **Inline elements**
+  - Do **not** start on a new line.
+  - Take up only as much **width as necessary**.
+  - Example: a `<span>` by itself sits on one line.
+  - **Note:** an inline element **cannot contain** a block-level element.
+  - Sandbox: `span.html`.
+
+<img alt="html-block-inline span result" src="./code_sandbox/snaps/html-block-inline-01-result.png" />
+
+- [x] **Inline tags listed on the page**
+  - `<a>` `<abbr>` `<acronym>` `<b>` `<bdo>` `<big>` `<br>` `<button>` `<cite>` `<code>` `<dfn>` `<em>` `<i>` `<img>` `<input>` `<kbd>` `<label>` `<map>` `<object>` `<output>` `<q>` `<samp>` `<script>` `<select>` `<small>` `<span>` `<strong>` `<sub>` `<sup>` `<textarea>` `<time>` `<tt>` `<var>`
+  - HTML5 treats **`<acronym>`**, **`<big>`**, and **`<tt>`** as obsolete (use `<abbr>`, CSS `font-size`, and `<code>` / `<kbd>` / `<samp>` instead). The other tags on the list remain valid.
+- [x] **The `<div>` element**
+  - A **block-level** container for other HTML elements.
+  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
+  - With CSS it can style a **block of content** (example: black background, white text, padding, heading **London** plus a paragraph).
+  - Sandbox: `div.html`. More on `<div>` in the next chapter.
+
+<img alt="html-block-inline styled div result" src="./code_sandbox/snaps/html-block-inline-02-result.png" />
+
+- [x] **The `<span>` element**
+  - An **inline** container for a part of text or a part of a document.
+  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
+  - With CSS it can style **parts of the text** (example: **blue** and **dark green** eye colors).
+  - Sandbox: `span-style.html`.
+
+<img alt="html-block-inline styled span result" src="./code_sandbox/snaps/html-block-inline-03-result.png" />
+
+- [x] **Chapter summary from the page**
+  - Block: new line + full width.
+  - Inline: same line + width as needed.
+  - `<div>` is a block container; `<span>` is an inline container.
+
+| Tag      | Description                                   |
+| -------- | --------------------------------------------- |
+| `<div>`  | Defines a section in a document (block-level) |
+| `<span>` | Defines a section in a document (inline)      |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the four Block & Inline examples: stacked `<p>`/`<div>`, a lone `<span>`, a styled London `<div>`, and colored words inside a sentence.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-block-inline` file.
+- [ ] Success: two stacked **Hello World** lines; one inline **Hello World**; black London box; **blue** / **dark green** in the sentence.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-block-inline/`
+- [ ] `http://127.0.0.1:8766/html-block-inline/span.html`
+- [ ] `http://127.0.0.1:8766/html-block-inline/div.html`
+- [ ] `http://127.0.0.1:8766/html-block-inline/span-style.html`
+
+<img alt="html-block-inline result" src="./code_sandbox/snaps/html-block-inline-result.png" />
+
+The block and inline examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-block-inline/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Block `<p>` and `<div>` (`index.html`):
+
+<img alt="html-block-inline p and div source" src="./code_sandbox/snaps/html-block-inline-code.png" />
+
+```html
+<p>Hello World</p>
+<div>Hello World</div>
+```
+
+<img alt="html-block-inline p and div result" src="./code_sandbox/snaps/html-block-inline-result.png" />
+
+Inline `<span>` (`span.html`):
+
+<img alt="html-block-inline span source" src="./code_sandbox/snaps/html-block-inline-01-code.png" />
+
+```html
+<span>Hello World</span>
+```
+
+<img alt="html-block-inline span result" src="./code_sandbox/snaps/html-block-inline-01-result.png" />
+
+Styled `<div>` (`div.html`):
+
+<img alt="html-block-inline styled div source" src="./code_sandbox/snaps/html-block-inline-02-code.png" />
+
+```html
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>
+    London is the capital city of England. It is the most populous city in the
+    United Kingdom, with a metropolitan area of over 13 million inhabitants.
+  </p>
+</div>
+```
+
+<img alt="html-block-inline styled div result" src="./code_sandbox/snaps/html-block-inline-02-result.png" />
+
+Styled `<span>` (`span-style.html`):
+
+<img alt="html-block-inline styled span source" src="./code_sandbox/snaps/html-block-inline-03-code.png" />
+
+```html
+<p>
+  My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and
+  my father has
+  <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.
+</p>
+```
+
+<img alt="html-block-inline styled span result" src="./code_sandbox/snaps/html-block-inline-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What are the two most common default display values?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Block**.
+- [x] **Inline**.
+
+</details>
+
+### Question 2: How does a block-level element lay out?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It **starts on a new line**.
+- [x] The browser adds **margin** before and after.
+- [x] It takes the **full width** available.
+
+</details>
+
+### Question 3: Which two common tags are block-level in this chapter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`<p>`** (paragraph).
+- [x] **`<div>`** (division / section).
+
+</details>
+
+### Question 4: How does an inline element lay out?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It does **not** start on a new line.
+- [x] It takes only as much **width as necessary**.
+
+</details>
+
+### Question 5: Can an inline element contain a block-level element?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.**
+
+</details>
+
+### Question 6: What is `<div>` used for, and which attributes are common?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **block-level container** for other HTML elements.
+- [x] Common attributes: **`style`**, **`class`**, **`id`**.
+
+</details>
+
+### Question 7: What is `<span>` used for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **inline container** for a part of text or a part of a document.
+- [x] With CSS it styles **parts of the text**.
+
+</details>
+
+### Question 8: Which listed inline tags are obsolete in HTML5?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`<acronym>`** — use **`<abbr>`**.
+- [x] **`<big>`** — use CSS **`font-size`**.
+- [x] **`<tt>`** — use **`<code>`**, **`<kbd>`**, or **`<samp>`**.
+
+</details>
+
+</details>
+
+## Summary
+
+Block elements start on a new line and fill the available width (`<p>`, `<div>`, headings, lists, tables). Inline elements stay in the line and shrink to their content (`<span>`, `<a>`, `<img>`). `<div>` is the generic block container; `<span>` is the generic inline container. Do not nest a block inside an inline element.
+
+## References
+
+- [HTML Block and Inline Elements (W3Schools)](https://www.w3schools.com/html/html_blocks.asp)
+- [Try it Yourself: tryhtml_block_div](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_block_div)
+- [Try it Yourself: tryhtml_inline_span](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_inline_span)
+- [Try it Yourself: tryhtml_div](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div)
+- [Try it Yourself: tryhtml_span](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_span)
+- [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
+- [MDN: Block-level elements](https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content)
+- [MDN: Inline elements](https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content)
+- [MDN: `<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)
+- [MDN: `<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span)
+
+</details>
+
+<details>
+  <summary>HTML Div</summary>
+
+## Introduction
+
+The **`<div>`** element is a **block-level container** for other HTML elements. This chapter shows a full-width `<div>`, grouping content, **centering** with `margin: auto`, **multiple** containers, and four ways to put divs **side by side**: **float**, **inline-block**, **flex**, and **grid**.
+
+## Detailed Explanation
+
+- [x] **The `<div>` element**
+  - Used as a **container** for other HTML elements.
+  - Default: **block** — takes **all available width**, with **line breaks** before and after.
+  - Example: `Lorem Ipsum <div>I am a div</div> dolor sit amet.` renders as three lines because the div breaks the sentence.
+  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
+  - Sandbox: `code_sandbox/html-div/index.html`.
+
+<img alt="html-div full-width result" src="./code_sandbox/snaps/html-div-result.png" />
+
+- [x] **`<div>` as a container**
+  - Often used to **group sections** of a page.
+  - Example: heading **London** plus two paragraphs inside one `<div>`.
+  - Sandbox: `container.html`.
+
+<img alt="html-div container result" src="./code_sandbox/snaps/html-div-01-result.png" />
+
+- [x] **Center-align a `<div>`**
+  - If the div is **not 100% wide**, set CSS **`margin: auto`** to center it.
+  - Example: `div { width: 300px; margin: auto; }`.
+  - Sandbox: `center.html`.
+
+<img alt="html-div centered result" src="./code_sandbox/snaps/html-div-02-result.png" />
+
+- [x] **Multiple `<div>` elements**
+  - You can have **many** `<div>` containers on the same page.
+  - Example: London, Oslo, and Rome stacked as three separate divs.
+  - Sandbox: `multiple.html`.
+
+<img alt="html-div multiple result" src="./code_sandbox/snaps/html-div-03-result.png" />
+
+- [x] **Side by side — overview**
+  - Pages often need two or more divs **in a row**.
+  - Common CSS methods: **float**, **inline-block**, **flex**, **grid**.
+- [x] **Float**
+  - `float` was not originally for aligning divs, but has been used that way for years.
+  - Positions content **horizontally** instead of only vertically.
+  - Wrap columns in `.mycontainer` with `width: 100%; overflow: auto;` and `float: left; width: 33%;` on the inner divs.
+  - Sandbox: `float.html`.
+
+<img alt="html-div float result" src="./code_sandbox/snaps/html-div-04-result.png" />
+
+- [x] **Inline-block**
+  - Change `display` from **block** to **`inline-block`**.
+  - The div **no longer adds a line break** before and after, so siblings sit **side by side**.
+  - Example: `div { width: 30%; display: inline-block; }`.
+  - Sandbox: `inline-block.html`.
+
+<img alt="html-div inline-block result" src="./code_sandbox/snaps/html-div-05-result.png" />
+
+- [x] **Flex**
+  - **Flexbox** is for flexible responsive layout **without float or positioning**.
+  - Surround the column divs with a container and set **`display: flex`**.
+  - Example: `.mycontainer { display: flex; }` and `.mycontainer > div { width: 33%; }`.
+  - Sandbox: `flex.html`.
+
+<img alt="html-div flex result" src="./code_sandbox/snaps/html-div-06-result.png" />
+
+- [x] **Grid**
+  - **CSS Grid** is rows and columns without floats/positioning.
+  - Similar to flex, but you can define **more than one row** and position each row.
+  - Surround columns with a grid container and set **column widths**.
+  - Example: `.grid-container { display: grid; grid-template-columns: 33% 33% 33%; }`.
+  - Sandbox: `grid.html`.
+
+<img alt="html-div grid result" src="./code_sandbox/snaps/html-div-07-result.png" />
+
+| Tag     | Description                                   |
+| ------- | --------------------------------------------- |
+| `<div>` | Defines a section in a document (block-level) |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the full-width div, the London container, the centered 300px box, three stacked cities, and the four side-by-side layouts.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-div` file.
+- [ ] Success: **I am a div** on its own line; London group; centered 300px box; three stacked cities; London/Oslo/Rome in three columns for float, inline-block, flex, and grid.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-div/`
+- [ ] `http://127.0.0.1:8766/html-div/container.html`
+- [ ] `http://127.0.0.1:8766/html-div/center.html`
+- [ ] `http://127.0.0.1:8766/html-div/multiple.html`
+- [ ] `http://127.0.0.1:8766/html-div/float.html`
+- [ ] `http://127.0.0.1:8766/html-div/inline-block.html`
+- [ ] `http://127.0.0.1:8766/html-div/flex.html`
+- [ ] `http://127.0.0.1:8766/html-div/grid.html`
+
+<img alt="html-div result" src="./code_sandbox/snaps/html-div-result.png" />
+
+The div examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-div/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Full-width break (`index.html`):
+
+<img alt="html-div full-width source" src="./code_sandbox/snaps/html-div-code.png" />
+
+```html
+Lorem Ipsum
+<div>I am a div</div>
+dolor sit amet.
+```
+
+<img alt="html-div full-width result" src="./code_sandbox/snaps/html-div-result.png" />
+
+Container (`container.html`):
+
+<img alt="html-div container source" src="./code_sandbox/snaps/html-div-01-code.png" />
+
+```html
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+```
+
+<img alt="html-div container result" src="./code_sandbox/snaps/html-div-01-result.png" />
+
+Center (`center.html`):
+
+<img alt="html-div center source" src="./code_sandbox/snaps/html-div-02-code.png" />
+
+```css
+div {
+  width: 300px;
+  margin: auto;
+}
+```
+
+<img alt="html-div centered result" src="./code_sandbox/snaps/html-div-02-result.png" />
+
+Multiple (`multiple.html`):
+
+<img alt="html-div multiple source" src="./code_sandbox/snaps/html-div-03-code.png" />
+
+```html
+<div><!-- London --></div>
+<div><!-- Oslo --></div>
+<div><!-- Rome --></div>
+```
+
+<img alt="html-div multiple result" src="./code_sandbox/snaps/html-div-03-result.png" />
+
+Float (`float.html`):
+
+<img alt="html-div float source" src="./code_sandbox/snaps/html-div-04-code.png" />
+
+```css
+.mycontainer {
+  width: 100%;
+  overflow: auto;
+}
+.mycontainer div {
+  width: 33%;
+  float: left;
+}
+```
+
+<img alt="html-div float result" src="./code_sandbox/snaps/html-div-04-result.png" />
+
+Inline-block (`inline-block.html`):
+
+<img alt="html-div inline-block source" src="./code_sandbox/snaps/html-div-05-code.png" />
+
+```css
+div {
+  width: 30%;
+  display: inline-block;
+}
+```
+
+<img alt="html-div inline-block result" src="./code_sandbox/snaps/html-div-05-result.png" />
+
+Flex (`flex.html`):
+
+<img alt="html-div flex source" src="./code_sandbox/snaps/html-div-06-code.png" />
+
+```css
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width: 33%;
+}
+```
+
+<img alt="html-div flex result" src="./code_sandbox/snaps/html-div-06-result.png" />
+
+Grid (`grid.html`):
+
+<img alt="html-div grid source" src="./code_sandbox/snaps/html-div-07-code.png" />
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+```
+
+<img alt="html-div grid result" src="./code_sandbox/snaps/html-div-07-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is a `<div>` for, and what is its default display?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **container** for other HTML elements.
+- [x] Default **block**: full width, line breaks before and after.
+
+</details>
+
+### Question 2: Which attributes are common on `<div>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`style`**, **`class`**, and **`id`**.
+- [x] None are required.
+
+</details>
+
+### Question 3: How do you center a `<div>` that is not 100% wide?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set CSS **`margin: auto`**.
+- [x] Example: `width: 300px; margin: auto;`.
+
+</details>
+
+### Question 4: Why does `Lorem Ipsum <div>I am a div</div> dolor sit amet.` become three lines?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The `<div>` is **block-level**.
+- [x] It inserts **line breaks** before and after.
+
+</details>
+
+### Question 5: Which four CSS methods does this chapter use to put divs side by side?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Float**.
+- [x] **Inline-block**.
+- [x] **Flex**.
+- [x] **Grid**.
+
+</details>
+
+### Question 6: How does `display: inline-block` change a div?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It **stops** adding a line break before and after.
+- [x] Sibling divs can sit **side by side**.
+
+</details>
+
+### Question 7: What extra wrapper do flex and grid need?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An outer `<div>` that is the **flex** or **grid** container.
+- [x] Flex: `display: flex`. Grid: `display: grid` plus **column widths**.
+
+</details>
+
+### Question 8: How does grid differ from flex in this chapter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Grid can define **more than one row**.
+- [x] You can **position each row** individually.
+
+</details>
+
+</details>
+
+## Summary
+
+`<div>` is a full-width block container for grouping page sections. Center a narrower div with `margin: auto`. Use many divs on one page. To place them in a row, use float, `inline-block`, flexbox (`display: flex` on a wrapper), or grid (`display: grid` and `grid-template-columns`).
+
+## References
+
+- [HTML Div Element (W3Schools)](https://www.w3schools.com/html/html_div.asp)
+- [Try it Yourself: tryhtml_div1](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div1)
+- [Try it Yourself: tryhtml_div2](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div2)
+- [Try it Yourself: tryhtml_div3](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div3)
+- [Try it Yourself: tryhtml_div4](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div4)
+- [Try it Yourself: tryhtml_div_float](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div_float)
+- [Try it Yourself: tryhtml_div_inline-block](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div_inline-block)
+- [Try it Yourself: tryhtml_div_flex](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div_flex)
+- [Try it Yourself: tryhtml_div_grid](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div_grid)
+- [CSS Float](https://www.w3schools.com/css/css_float.asp)
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+- [CSS Grid](https://www.w3schools.com/css/css_grid.asp)
+- [MDN: `<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)
+
+</details>
+
+<details>
+  <summary>HTML Classes</summary>
+
+## Introduction
+
+The HTML **`class`** attribute names a class for an element. **Multiple elements can share** the same class. CSS uses a **period** plus the class name (`.city`) to style them; JavaScript can select them with **`getElementsByClassName()`**.
+
+## Detailed Explanation
+
+- [x] **The `class` attribute**
+  - Specifies a **class** for an HTML element.
+  - Often points to a **class name in a style sheet**.
+  - JavaScript can also **access and manipulate** elements with that class name.
+  - Example: three `<div class="city">` boxes (London, Paris, Tokyo) share `.city` — tomato background, white text, black border, margin and padding.
+  - Sandbox: `code_sandbox/html-classes/index.html`.
+
+<img alt="html-classes city boxes result" src="./code_sandbox/snaps/html-classes-result.png" />
+
+- [x] **Same class on `<span>`**
+  - Two `<span class="note">` elements share `.note` (`font-size: 120%`, `color: red`).
+  - Example: **Important** in the heading and **important** in the paragraph.
+  - Sandbox: `note.html`.
+
+<img alt="html-classes note spans result" src="./code_sandbox/snaps/html-classes-01-result.png" />
+
+- [x] **Tips from the page**
+  - The `class` attribute can be used on **any HTML element**.
+  - The class name is **case sensitive**.
+- [x] **Syntax for a class**
+  - Write a **period (`.`)** then the class name, then CSS in **curly braces**.
+  - Example: `.city { background-color: tomato; color: white; padding: 10px; }` on three `<h2 class="city">` headings.
+  - Sandbox: `syntax.html`.
+
+<img alt="html-classes syntax result" src="./code_sandbox/snaps/html-classes-02-result.png" />
+
+- [x] **Multiple classes**
+  - An element can belong to **more than one** class.
+  - Separate names with a **space**: `<div class="city main">`.
+  - The element gets styles from **all** listed classes.
+  - Example: London has `city main` (centered); Paris and Tokyo have only `city`.
+  - Sandbox: `multiple.html`.
+
+<img alt="html-classes multiple classes result" src="./code_sandbox/snaps/html-classes-03-result.png" />
+
+- [x] **Different elements can share the same class**
+  - Example: `<h2>` and `<p>` both use `class="city"` and share the style.
+  - Sandbox: `share.html`.
+
+<img alt="html-classes shared class result" src="./code_sandbox/snaps/html-classes-04-result.png" />
+
+- [x] **JavaScript and classes**
+  - `document.getElementsByClassName("city")` returns those elements.
+  - Example: a button hides every `.city` (`display: none` in a loop).
+  - Sandbox: `js.html`. More JavaScript is in a later chapter.
+
+<img alt="html-classes javascript result" src="./code_sandbox/snaps/html-classes-05-result.png" />
+
+- [x] **Chapter summary from the page**
+  - `class` specifies **one or more** class names.
+  - CSS and JavaScript **select** elements by class.
+  - Usable on **any** element; **case sensitive**; different tags can share a class; JS uses **`getElementsByClassName()`**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the shared `.city` boxes, red `.note` spans, class syntax on headings, two classes on London, shared class on `<h2>`/`<p>`, and the hide-cities button.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-classes` file.
+- [ ] Success: three tomato city boxes; red **Important** / **important**; tomato headings; London centered plus Paris/Tokyo left; styled Paris heading and paragraph; button visible above the three cities.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-classes/`
+- [ ] `http://127.0.0.1:8766/html-classes/note.html`
+- [ ] `http://127.0.0.1:8766/html-classes/syntax.html`
+- [ ] `http://127.0.0.1:8766/html-classes/multiple.html`
+- [ ] `http://127.0.0.1:8766/html-classes/share.html`
+- [ ] `http://127.0.0.1:8766/html-classes/js.html`
+- [ ] Optional: click **Hide cities** and confirm the boxes disappear.
+
+<img alt="html-classes result" src="./code_sandbox/snaps/html-classes-result.png" />
+
+The class examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-classes/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Shared `.city` boxes (`index.html`):
+
+<img alt="html-classes city boxes source" src="./code_sandbox/snaps/html-classes-code.png" />
+
+```html
+<style>
+  .city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+</style>
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+```
+
+<img alt="html-classes city boxes result" src="./code_sandbox/snaps/html-classes-result.png" />
+
+`.note` spans (`note.html`):
+
+<img alt="html-classes note source" src="./code_sandbox/snaps/html-classes-01-code.png" />
+
+```html
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+```
+
+<img alt="html-classes note spans result" src="./code_sandbox/snaps/html-classes-01-result.png" />
+
+Class syntax (`syntax.html`):
+
+<img alt="html-classes syntax source" src="./code_sandbox/snaps/html-classes-02-code.png" />
+
+```css
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+```
+
+<img alt="html-classes syntax result" src="./code_sandbox/snaps/html-classes-02-result.png" />
+
+Multiple classes (`multiple.html`):
+
+<img alt="html-classes multiple source" src="./code_sandbox/snaps/html-classes-03-code.png" />
+
+```html
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+```
+
+<img alt="html-classes multiple classes result" src="./code_sandbox/snaps/html-classes-03-result.png" />
+
+Shared class on different tags (`share.html`):
+
+<img alt="html-classes share source" src="./code_sandbox/snaps/html-classes-04-code.png" />
+
+```html
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+```
+
+<img alt="html-classes shared class result" src="./code_sandbox/snaps/html-classes-04-result.png" />
+
+JavaScript (`js.html`):
+
+<img alt="html-classes javascript source" src="./code_sandbox/snaps/html-classes-05-code.png" />
+
+```html
+<script>
+  function myFunction() {
+    var x = document.getElementsByClassName("city");
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+  }
+</script>
+```
+
+<img alt="html-classes javascript result" src="./code_sandbox/snaps/html-classes-05-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does the HTML `class` attribute do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Specifies a **class** for an element.
+- [x] **Multiple** elements can share the same class.
+
+</details>
+
+### Question 2: How do you write a CSS class selector?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **period (`.`)** then the class name.
+- [x] Then properties inside **curly braces** `{}`.
+
+</details>
+
+### Question 3: Can you put `class` on any HTML element, and is the name case sensitive?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes**, it can be used on any HTML element.
+- [x] The class name is **case sensitive**.
+
+</details>
+
+### Question 4: How do you assign multiple classes to one element?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Separate class names with a **space**.
+- [x] Example: `<div class="city main">`.
+- [x] The element gets styles from **all** of those classes.
+
+</details>
+
+### Question 5: Can different tags share one class name?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** Example: `<h2>` and `<p>` both with `class="city"`.
+
+</details>
+
+### Question 6: How does JavaScript select elements by class in this chapter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`document.getElementsByClassName("city")`**.
+- [x] Then loop and change each element (example: `display = "none"`).
+
+</details>
+
+</details>
+
+## Summary
+
+`class` names one or more classes on any element (case sensitive). CSS targets them with `.classname`. Several elements — even different tags — can share a class; one element can have several classes separated by spaces. JavaScript uses `getElementsByClassName()` to find those elements.
+
+## References
+
+- [HTML class Attribute (W3Schools)](https://www.w3schools.com/html/html_classes.asp)
+- [Try it Yourself: tryhtml_classes_capitals](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_capitals)
+- [Try it Yourself: tryhtml_classes_span](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_span)
+- [Try it Yourself: tryhtml_classes_css](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_css)
+- [Try it Yourself: tryhtml_classes_multiple](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_multiple)
+- [Try it Yourself: tryhtml_classes_tags](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_tags)
+- [Try it Yourself: tryhtml_classes_js](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_js)
+- [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [HTML JavaScript](https://www.w3schools.com/html/html_scripts.asp)
+- [MDN: class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
+- [MDN: `getElementsByClassName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+
+</details>
+
+<details>
+  <summary>HTML Id</summary>
+
+## Introduction
+
+The HTML **`id`** attribute gives an element a **unique** name in the document. CSS targets it with a **hash** (`#myHeader`). The same value also makes **bookmarks** (`href="#C4"`) and lets JavaScript use **`getElementById()`**. A **class** may be reused; an **id** may not.
+
+## Detailed Explanation
+
+- [x] **The `id` attribute**
+  - Specifies a **unique id** for an HTML element.
+  - You **cannot** have more than one element with the same `id` in a document.
+  - Used to point to a **specific style** in a style sheet, and by JavaScript to access that element.
+  - CSS syntax: **hash (`#`)** + id name + properties in `{}`.
+  - Example: `<h1 id="myHeader">` styled by `#myHeader` (light blue, padding, centered).
+  - Sandbox: `code_sandbox/html-id/index.html`.
+
+<img alt="html-id header result" src="./code_sandbox/snaps/html-id-result.png" />
+
+- [x] **Id name rules (from the page)**
+  - The id name is **case sensitive**.
+  - Must contain **at least one character**.
+  - **Cannot start with a number**.
+  - Must **not contain whitespaces** (spaces, tabs, and so on).
+- [x] **Difference between class and id**
+  - A **class** name can be used by **multiple** elements.
+  - An **id** name must be used by **only one** element on the page.
+  - Example: unique `#myHeader` (“My Cities”) plus shared `.city` on London, Paris, Tokyo.
+  - Sandbox: `class.html`.
+
+<img alt="html-id class vs id result" src="./code_sandbox/snaps/html-id-01-result.png" />
+
+- [x] **HTML bookmarks with id and links**
+  - Bookmarks let readers **jump** to a part of a (often long) page.
+  - Create the bookmark: `<h2 id="C4">Chapter 4</h2>`.
+  - Same-page link: `<a href="#C4">Jump to Chapter 4</a>`.
+  - Other-page link: `<a href="html_demo.html#C4">Jump to Chapter 4</a>`.
+  - Sandbox: `bookmark.html`.
+
+<img alt="html-id bookmark result" src="./code_sandbox/snaps/html-id-02-result.png" />
+
+- [x] **JavaScript and id**
+  - `document.getElementById("myHeader")` accesses that one element.
+  - Example: set `innerHTML` to **Have a nice day!**.
+  - Sandbox: `js.html`.
+
+<img alt="html-id javascript result" src="./code_sandbox/snaps/html-id-03-result.png" />
+
+- [x] **Chapter summary from the page**
+  - Unique id per document; CSS and JS select it; **case sensitive**; also used for **bookmarks**; JS uses **`getElementById()`**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the unique header style, class vs id, the Chapter 4 jump link, and the JavaScript text change.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-id` file.
+- [ ] Success: centered light-blue **My Header**; **My Cities** plus three tomato headings; **Jump to Chapter 4** link above chapters; **Hello World!** with a change button.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-id/`
+- [ ] `http://127.0.0.1:8766/html-id/class.html`
+- [ ] `http://127.0.0.1:8766/html-id/bookmark.html` (click **Jump to Chapter 4**)
+- [ ] `http://127.0.0.1:8766/html-id/js.html` (optional: click **Change text**)
+
+<img alt="html-id result" src="./code_sandbox/snaps/html-id-result.png" />
+
+The id examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-id/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Unique id (`index.html`):
+
+<img alt="html-id header source" src="./code_sandbox/snaps/html-id-code.png" />
+
+```html
+<style>
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+</style>
+<h1 id="myHeader">My Header</h1>
+```
+
+<img alt="html-id header result" src="./code_sandbox/snaps/html-id-result.png" />
+
+Class vs id (`class.html`):
+
+<img alt="html-id class vs id source" src="./code_sandbox/snaps/html-id-01-code.png" />
+
+```css
+#myHeader {
+  /* one unique id */
+}
+.city {
+  /* many elements */
+}
+```
+
+<img alt="html-id class vs id result" src="./code_sandbox/snaps/html-id-01-result.png" />
+
+Bookmark (`bookmark.html`):
+
+<img alt="html-id bookmark source" src="./code_sandbox/snaps/html-id-02-code.png" />
+
+```html
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+```
+
+<img alt="html-id bookmark result" src="./code_sandbox/snaps/html-id-02-result.png" />
+
+JavaScript (`js.html`):
+
+<img alt="html-id javascript source" src="./code_sandbox/snaps/html-id-03-code.png" />
+
+```html
+<script>
+  function displayResult() {
+    document.getElementById("myHeader").innerHTML = "Have a nice day!";
+  }
+</script>
+```
+
+<img alt="html-id javascript result" src="./code_sandbox/snaps/html-id-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does the `id` attribute specify, and how many elements may share it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **unique id** for an HTML element.
+- [x] **Only one** element per document may use that value.
+
+</details>
+
+### Question 2: How do you write a CSS id selector?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **hash (`#`)** then the id name.
+- [x] Then properties inside **curly braces**.
+
+</details>
+
+### Question 3: What rules apply to an id name?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Case sensitive**.
+- [x] At least **one character**.
+- [x] **Cannot start with a number**.
+- [x] **No whitespaces**.
+
+</details>
+
+### Question 4: How does `class` differ from `id`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **class** can be used by **multiple** elements.
+- [x] An **id** must be used by **only one** element on the page.
+
+</details>
+
+### Question 5: How do you create a same-page bookmark?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Put `id` on the target: `<h2 id="C4">Chapter 4</h2>`.
+- [x] Link with `<a href="#C4">Jump to Chapter 4</a>`.
+
+</details>
+
+### Question 6: How do you link to a bookmark on another page?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use the filename plus the hash: `html_demo.html#C4`.
+
+</details>
+
+### Question 7: How does JavaScript select one element by id?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`document.getElementById("myHeader")`**.
+
+</details>
+
+</details>
+
+## Summary
+
+`id` is unique, case sensitive, and cannot start with a number or contain spaces. CSS uses `#id`. Class can be reused; id cannot. Use `id` plus `href="#id"` for bookmarks, and `getElementById()` in JavaScript.
+
+## References
+
+- [HTML id Attribute (W3Schools)](https://www.w3schools.com/html/html_id.asp)
+- [Try it Yourself: tryhtml_id_css](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_css)
+- [Try it Yourself: tryhtml_id_class](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_class)
+- [Try it Yourself: tryhtml_id_bookmark](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_bookmark)
+- [Try it Yourself: tryhtml_id_js](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_js)
+- [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [HTML JavaScript](https://www.w3schools.com/html/html_scripts.asp)
+- [MDN: id](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id)
+- [MDN: `getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
+</details>
+
+<details>
+  <summary>HTML Buttons</summary>
+
+## Introduction
+
+Buttons let users **interact** with a page: submit forms, run JavaScript, or trigger actions. This chapter covers the **`<button>`** element, CSS styling, **`disabled`**, **`onclick`**, and the **`type`** values **`button`**, **`submit`**, and **`reset`**.
+
+## Detailed Explanation
+
+- [x] **HTML button**
+  - `<button>` defines a **clickable** button.
+  - By itself it **does nothing** until you add an action.
+  - Example: `<button>Click Me</button>`.
+  - Sandbox: `code_sandbox/html-buttons/index.html`.
+
+<img alt="html-buttons click me result" src="./code_sandbox/snaps/html-buttons-result.png" />
+
+- [x] **Styling HTML buttons**
+  - Buttons are often styled with **CSS**.
+  - Example: `<button class="mytestbtn">Green Button</button>` (sandbox uses W3Schools green `#04AA6D`).
+  - Sandbox: `styled.html`.
+
+<img alt="html-buttons styled result" src="./code_sandbox/snaps/html-buttons-01-result.png" />
+
+- [x] **Disabled buttons**
+  - The **`disabled`** attribute makes a button **unclickable**.
+  - Disabled buttons usually appear **faded**.
+  - Example: `<button disabled>Disabled Button</button>`.
+  - Sandbox: `disabled.html`.
+
+<img alt="html-buttons disabled result" src="./code_sandbox/snaps/html-buttons-02-result.png" />
+
+- [x] **Button with JavaScript**
+  - Run JS on click with **`onclick`**.
+  - Example: `<button onclick="alert('Hello!')">Click Me</button>`.
+  - Sandbox: `js.html`. More JS in the HTML JavaScript chapter.
+
+<img alt="html-buttons onclick result" src="./code_sandbox/snaps/html-buttons-03-result.png" />
+
+- [x] **Button types**
+  - **`type="button"`** — normal clickable button (does nothing by default).
+  - **`type="submit"`** — submits a form.
+  - **`type="reset"`** — resets all form fields.
+  - Sandbox: `types.html`.
+
+<img alt="html-buttons types result" src="./code_sandbox/snaps/html-buttons-04-result.png" />
+
+- [x] **Buttons in a form**
+  - Submit sends form data to the server; reset clears the fields.
+  - Example: first-name input, **Submit**, **Reset Form**, `action="/action_page.php"`.
+  - **Always specify `type`**. Inside a form, the **default type is submit**, and browsers may differ if `type` is omitted.
+  - Sandbox: `form.html`. Forms are covered in a later chapter.
+
+<img alt="html-buttons form result" src="./code_sandbox/snaps/html-buttons-05-result.png" />
+
+| Tag        | Description                |
+| ---------- | -------------------------- |
+| `<button>` | Defines a clickable button |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run a plain button, a green styled button, a disabled button, an `onclick` alert, the three types, and a mini form.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-buttons` file.
+- [ ] Success: **Click Me**; green **Green Button**; faded **Disabled Button**; **Click Me** that can alert; three type buttons; first-name field with Submit and Reset.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-buttons/`
+- [ ] `http://127.0.0.1:8766/html-buttons/styled.html`
+- [ ] `http://127.0.0.1:8766/html-buttons/disabled.html`
+- [ ] `http://127.0.0.1:8766/html-buttons/js.html`
+- [ ] `http://127.0.0.1:8766/html-buttons/types.html`
+- [ ] `http://127.0.0.1:8766/html-buttons/form.html`
+
+<img alt="html-buttons result" src="./code_sandbox/snaps/html-buttons-result.png" />
+
+The button examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-buttons/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Basic (`index.html`):
+
+<img alt="html-buttons click me source" src="./code_sandbox/snaps/html-buttons-code.png" />
+
+```html
+<button>Click Me</button>
+```
+
+<img alt="html-buttons click me result" src="./code_sandbox/snaps/html-buttons-result.png" />
+
+Styled (`styled.html`):
+
+<img alt="html-buttons styled source" src="./code_sandbox/snaps/html-buttons-01-code.png" />
+
+```html
+<button class="mytestbtn">Green Button</button>
+```
+
+<img alt="html-buttons styled result" src="./code_sandbox/snaps/html-buttons-01-result.png" />
+
+Disabled (`disabled.html`):
+
+<img alt="html-buttons disabled source" src="./code_sandbox/snaps/html-buttons-02-code.png" />
+
+```html
+<button disabled>Disabled Button</button>
+```
+
+<img alt="html-buttons disabled result" src="./code_sandbox/snaps/html-buttons-02-result.png" />
+
+JavaScript (`js.html`):
+
+<img alt="html-buttons onclick source" src="./code_sandbox/snaps/html-buttons-03-code.png" />
+
+```html
+<button onclick="alert('Hello!')">Click Me</button>
+```
+
+<img alt="html-buttons onclick result" src="./code_sandbox/snaps/html-buttons-03-result.png" />
+
+Types (`types.html`):
+
+<img alt="html-buttons types source" src="./code_sandbox/snaps/html-buttons-04-code.png" />
+
+```html
+<button type="button">Normal Button</button>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+```
+
+<img alt="html-buttons types result" src="./code_sandbox/snaps/html-buttons-04-result.png" />
+
+Form (`form.html`):
+
+<img alt="html-buttons form source" src="./code_sandbox/snaps/html-buttons-05-code.png" />
+
+```html
+<form action="/action_page.php">
+  First name: <input type="text" name="fname" />
+  <button type="submit">Submit</button>
+  <button type="reset">Reset Form</button>
+</form>
+```
+
+<img alt="html-buttons form result" src="./code_sandbox/snaps/html-buttons-05-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `<button>` define, and what happens with no action?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **clickable** button.
+- [x] By itself it **does nothing** until you add an action.
+
+</details>
+
+### Question 2: How do you make a button unclickable?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Add the **`disabled`** attribute.
+- [x] It usually appears **faded**.
+
+</details>
+
+### Question 3: How does this chapter run JavaScript on a click?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **`onclick`** attribute.
+- [x] Example: `onclick="alert('Hello!')"`.
+
+</details>
+
+### Question 4: What are the three `type` values?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`button`** — normal; does nothing by default.
+- [x] **`submit`** — submits a form.
+- [x] **`reset`** — resets form fields.
+
+</details>
+
+### Question 5: Why should you always specify `type` on a button?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Inside a form, the **default type is submit**.
+- [x] Browsers may **behave differently** if `type` is omitted.
+
+</details>
+
+### Question 6: What do submit and reset do in a form?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Submit** sends the form data to the server.
+- [x] **Reset** clears the form fields.
+
+</details>
+
+</details>
+
+## Summary
+
+`<button>` is a clickable control. Style it with CSS, disable it with `disabled`, and run JS with `onclick`. Always set `type`: `button`, `submit`, or `reset`. Inside a form the default is submit.
+
+## References
+
+- [HTML Buttons (W3Schools)](https://www.w3schools.com/html/html_buttons.asp)
+- [Try it Yourself: tryhtml_buttons_basic](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_buttons_basic)
+- [Try it Yourself: tryhtml_buttons_styled](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_buttons_styled)
+- [Try it Yourself: tryhtml_buttons_disabled](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_buttons_disabled)
+- [Try it Yourself: tryhtml_buttons_javascript](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_buttons_javascript)
+- [Try it Yourself: tryhtml_buttons_form](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_buttons_form)
+- [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
+- [MDN: `<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
+
+</details>
+
+<details>
+  <summary>HTML Iframes</summary>
+
+## Introduction
+
+An HTML **iframe** displays a **web page inside a web page**. `<iframe>` is an **inline frame** that embeds another document. This chapter covers **`src`**, **`title`**, **height/width**, **borders**, and using an iframe as a **link target**.
+
+## Detailed Explanation
+
+- [x] **Syntax**
+  - `<iframe src="url" title="description"></iframe>`
+  - **`src`** is the URL of the page to embed.
+  - Always include **`title`** so screen readers can describe the iframe.
+  - Local demo page: `demo_iframe.htm` (the W3Schools examples use the same filename).
+- [x] **Height and width**
+  - Default unit is **pixels**.
+  - Attributes: `height="200" width="300"`.
+  - Or CSS: `style="height:200px;width:300px;"`.
+  - Sandbox: `code_sandbox/html-iframes/index.html` and `css-size.html`.
+
+<img alt="html-iframes size result" src="./code_sandbox/snaps/html-iframes-result.png" />
+
+- [x] **Remove or style the border**
+  - An iframe has a **border by default**.
+  - Remove it: `style="border:none;"`.
+  - Change it: `style="border:2px solid red;"`.
+  - Sandbox: `noborder.html` and `redborder.html`.
+
+<img alt="html-iframes no border result" src="./code_sandbox/snaps/html-iframes-02-result.png" />
+
+<img alt="html-iframes red border result" src="./code_sandbox/snaps/html-iframes-03-result.png" />
+
+- [x] **Iframe as a link target**
+  - The link’s **`target`** must match the iframe’s **`name`**.
+  - Example: `name="iframe_a"` and `<a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a>`.
+  - Sandbox: `target.html`.
+
+<img alt="html-iframes target result" src="./code_sandbox/snaps/html-iframes-04-result.png" />
+
+- [x] **Chapter summary from the page**
+  - `<iframe>` = inline frame; **`src`** = URL; always **`title`**; **height/width** set size; **`border:none;`** removes the border.
+
+| Tag        | Description             |
+| ---------- | ----------------------- |
+| `<iframe>` | Defines an inline frame |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Embed `demo_iframe.htm` with pixel size, CSS size, no border, a red border, and a link that targets the frame.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-iframes` file.
+- [ ] Success: 200×300 frame showing **This page is displayed in an iframe**; same with CSS size; frameless embed; red 2px border; **W3Schools.com** link under a named iframe.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-iframes/`
+- [ ] `http://127.0.0.1:8766/html-iframes/css-size.html`
+- [ ] `http://127.0.0.1:8766/html-iframes/noborder.html`
+- [ ] `http://127.0.0.1:8766/html-iframes/redborder.html`
+- [ ] `http://127.0.0.1:8766/html-iframes/target.html` (click **W3Schools.com** to load it in the frame)
+
+<img alt="html-iframes result" src="./code_sandbox/snaps/html-iframes-result.png" />
+
+The iframe examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-iframes/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Size attributes (`index.html`):
+
+<img alt="html-iframes size source" src="./code_sandbox/snaps/html-iframes-code.png" />
+
+```html
+<iframe
+  src="demo_iframe.htm"
+  height="200"
+  width="300"
+  title="Iframe Example"
+></iframe>
+```
+
+<img alt="html-iframes size result" src="./code_sandbox/snaps/html-iframes-result.png" />
+
+CSS size (`css-size.html`):
+
+<img alt="html-iframes css size source" src="./code_sandbox/snaps/html-iframes-01-code.png" />
+
+```html
+<iframe
+  src="demo_iframe.htm"
+  style="height:200px;width:300px;"
+  title="Iframe Example"
+></iframe>
+```
+
+<img alt="html-iframes css size result" src="./code_sandbox/snaps/html-iframes-01-result.png" />
+
+No border (`noborder.html`):
+
+<img alt="html-iframes no border source" src="./code_sandbox/snaps/html-iframes-02-code.png" />
+
+```html
+<iframe
+  src="demo_iframe.htm"
+  style="border:none;"
+  title="Iframe Example"
+></iframe>
+```
+
+<img alt="html-iframes no border result" src="./code_sandbox/snaps/html-iframes-02-result.png" />
+
+Red border (`redborder.html`):
+
+<img alt="html-iframes red border source" src="./code_sandbox/snaps/html-iframes-03-code.png" />
+
+```html
+<iframe
+  src="demo_iframe.htm"
+  style="border:2px solid red;"
+  title="Iframe Example"
+></iframe>
+```
+
+<img alt="html-iframes red border result" src="./code_sandbox/snaps/html-iframes-03-result.png" />
+
+Target (`target.html`):
+
+<img alt="html-iframes target source" src="./code_sandbox/snaps/html-iframes-04-code.png" />
+
+```html
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+```
+
+<img alt="html-iframes target result" src="./code_sandbox/snaps/html-iframes-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is an HTML iframe for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To display a **web page within a web page**.
+- [x] `<iframe>` embeds another document in the current one.
+
+</details>
+
+### Question 2: Which attributes set the page URL and the accessible name?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`src`** — URL to embed.
+- [x] **`title`** — description for **screen readers** (always include it).
+
+</details>
+
+### Question 3: How do you set iframe size?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `height` and `width` attributes (pixels by default).
+- [x] Or CSS `height` and `width` in the **`style`** attribute.
+
+</details>
+
+### Question 4: How do you remove the default iframe border?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `style="border:none;"`.
+
+</details>
+
+### Question 5: How do you open a link inside an iframe?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Give the iframe a **`name`**.
+- [x] Set the link’s **`target`** to that same name.
+
+</details>
+
+</details>
+
+## Summary
+
+`<iframe src="..." title="...">` embeds another document. Set size with `height`/`width` or CSS. Remove the default border with `border:none`, or restyle it. Point a link at the iframe with matching `name` and `target`.
+
+## References
+
+- [HTML Iframes (W3Schools)](https://www.w3schools.com/html/html_iframe.asp)
+- [Try it Yourself: tryhtml_iframe_height_width](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width)
+- [Try it Yourself: tryhtml_iframe_height_width_css](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width_css)
+- [Try it Yourself: tryhtml_iframe_frameborder](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_frameborder)
+- [Try it Yourself: tryhtml_iframe_border2](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_border2)
+- [Try it Yourself: tryhtml_iframe_target](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target)
+- [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
+- [MDN: `<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
+
+</details>
+
+<details>
+  <summary>HTML JavaScript</summary>
+
+## Introduction
+
+**JavaScript** makes HTML pages more **dynamic and interactive**. This chapter covers the **`<script>`** tag, `getElementById()`, changing **content**, **styles**, and **attributes**, and **`<noscript>`** for browsers without scripts.
+
+## Detailed Explanation
+
+- [x] **My First JavaScript**
+  - A button writes the current **date and time** into a paragraph.
+  - Sandbox: `code_sandbox/html-javascript/index.html`.
+
+<img alt="html-javascript date button result" src="./code_sandbox/snaps/html-javascript-result.png" />
+
+- [x] **The `<script>` tag**
+  - Defines a **client-side script** (JavaScript).
+  - Either contains statements, or points to an external file with **`src`**.
+  - Common uses: image manipulation, form validation, dynamic content.
+  - Selecting an element: **`document.getElementById()`**.
+  - Example: write **Hello JavaScript!** into `id="demo"`.
+  - Sandbox: `content.html`.
+
+<img alt="html-javascript content result" src="./code_sandbox/snaps/html-javascript-01-result.png" />
+
+- [x] **A taste of JavaScript**
+  - **Change content:** `innerHTML = "Hello JavaScript!"`.
+  - **Change styles:** `fontSize`, `color`, `backgroundColor`.
+  - **Change attributes:** `src` on an image (`picture.gif` in the sandbox).
+  - Sandbox: `styles.html` and `attribute.html`.
+
+<img alt="html-javascript styles result" src="./code_sandbox/snaps/html-javascript-02-result.png" />
+
+<img alt="html-javascript attribute result" src="./code_sandbox/snaps/html-javascript-03-result.png" />
+
+- [x] **The `<noscript>` tag**
+  - Alternate content if scripts are **disabled** or unsupported.
+  - Example: `Sorry, your browser does not support JavaScript!`
+  - With JS on, the script runs and noscript is hidden.
+  - Sandbox: `noscript.html`.
+
+<img alt="html-javascript noscript result" src="./code_sandbox/snaps/html-javascript-04-result.png" />
+
+| Tag          | Description                                                         |
+| ------------ | ------------------------------------------------------------------- |
+| `<script>`   | Defines a client-side script                                        |
+| `<noscript>` | Alternate content for users that do not support client-side scripts |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the date button, Hello JavaScript text, styled paragraph, swapped image, and noscript page.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-javascript` file.
+- [ ] Success: **Click me to display Date and Time**; **Hello JavaScript!**; large red-on-yellow text; HTML5 gif (from `picture.gif`); Hello JavaScript with noscript present in the source.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-javascript/`
+- [ ] `http://127.0.0.1:8766/html-javascript/content.html`
+- [ ] `http://127.0.0.1:8766/html-javascript/styles.html`
+- [ ] `http://127.0.0.1:8766/html-javascript/attribute.html`
+- [ ] `http://127.0.0.1:8766/html-javascript/noscript.html`
+
+<img alt="html-javascript result" src="./code_sandbox/snaps/html-javascript-result.png" />
+
+The JavaScript examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-javascript/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Date button (`index.html`):
+
+<img alt="html-javascript date source" src="./code_sandbox/snaps/html-javascript-code.png" />
+
+```html
+<button
+  type="button"
+  onclick="document.getElementById('demo').innerHTML = Date()"
+>
+  Click me to display Date and Time
+</button>
+<p id="demo"></p>
+```
+
+<img alt="html-javascript date button result" src="./code_sandbox/snaps/html-javascript-result.png" />
+
+Change content (`content.html`):
+
+<img alt="html-javascript content source" src="./code_sandbox/snaps/html-javascript-01-code.png" />
+
+```html
+<script>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+```
+
+<img alt="html-javascript content result" src="./code_sandbox/snaps/html-javascript-01-result.png" />
+
+Change styles (`styles.html`):
+
+<img alt="html-javascript styles source" src="./code_sandbox/snaps/html-javascript-02-code.png" />
+
+```js
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+```
+
+<img alt="html-javascript styles result" src="./code_sandbox/snaps/html-javascript-02-result.png" />
+
+Change attributes (`attribute.html`):
+
+<img alt="html-javascript attribute source" src="./code_sandbox/snaps/html-javascript-03-code.png" />
+
+```js
+document.getElementById("image").src = "picture.gif";
+```
+
+<img alt="html-javascript attribute result" src="./code_sandbox/snaps/html-javascript-03-result.png" />
+
+Noscript (`noscript.html`):
+
+<img alt="html-javascript noscript source" src="./code_sandbox/snaps/html-javascript-04-code.png" />
+
+```html
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+```
+
+<img alt="html-javascript noscript result" src="./code_sandbox/snaps/html-javascript-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does JavaScript add to HTML pages?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It makes pages more **dynamic and interactive**.
+
+</details>
+
+### Question 2: What does the `<script>` tag do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Defines a **client-side script** (JavaScript).
+- [x] It can contain statements, or load a file with **`src`**.
+
+</details>
+
+### Question 3: How does this chapter select an HTML element?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`document.getElementById()`**.
+
+</details>
+
+### Question 4: How can JavaScript change content, style, and an attribute?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Content: **`innerHTML`**.
+- [x] Style: properties like **`fontSize`**, **`color`**, **`backgroundColor`**.
+- [x] Attribute: example **`src`** on an image.
+
+</details>
+
+### Question 5: What is `<noscript>` for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Alternate content if scripts are **disabled** or **unsupported**.
+
+</details>
+
+</details>
+
+## Summary
+
+`<script>` holds or loads JavaScript. Use `getElementById()` to change `innerHTML`, CSS styles, or attributes. `<noscript>` is fallback text when JS is off.
+
+## References
+
+- [HTML JavaScript (W3Schools)](https://www.w3schools.com/html/html_scripts.asp)
+- [Try it Yourself: tryhtml_scripts_intro](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_scripts_intro)
+- [Try it Yourself: tryhtml_script](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script)
+- [Try it Yourself: tryhtml_script_html](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_html)
+- [Try it Yourself: tryhtml_script_styles](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_styles)
+- [Try it Yourself: tryhtml_script_attribute](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_attribute)
+- [Try it Yourself: tryhtml_noscript](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_noscript)
+- [JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+- [MDN: `<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+- [MDN: `<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)
+
+</details>
+
+<details>
+  <summary>HTML File Paths</summary>
+
+## Introduction
+
+A **file path** is the location of a file in a site’s folder structure. Paths are used for pages, images, style sheets, and scripts. This chapter compares **absolute** (full URL) and **relative** paths, and recommends relative paths when possible.
+
+## Detailed Explanation
+
+- [x] **File path examples (from the page)**
+
+| Path                              | Description                                        |
+| --------------------------------- | -------------------------------------------------- |
+| `<img src="picture.jpg">`         | Same folder as the current page                    |
+| `<img src="images/picture.jpg">`  | `images` folder in the current folder              |
+| `<img src="/images/picture.jpg">` | `images` folder at the **root** of the current web |
+| `<img src="../picture.jpg">`      | Folder **one level up**                            |
+
+- [x] **Used when linking to**
+  - Web pages, images, style sheets, JavaScripts.
+- [x] **Absolute file paths**
+  - The **full URL** to a file.
+  - Example: `https://www.w3schools.com/images/picture.jpg` (alt **Mountain**).
+  - Sandbox: `code_sandbox/html-filepaths/absolute.html`.
+
+<img alt="html-filepaths absolute result" src="./code_sandbox/snaps/html-filepaths-result.png" />
+
+- [x] **Relative file paths**
+  - Point to a file **relative to the current page**.
+  - Root of the site: `/images/picture.jpg` (sandbox serves this from `code_sandbox/images/`).
+  - Current folder: `images/picture.jpg`.
+  - One level up (example on the page): `../images/picture.jpg` (sandbox: `nested/up.html`).
+  - Sandbox: `root.html`, `folder.html`, `nested/up.html`. Same-folder also: `index.html` (`picture.jpg`).
+
+<img alt="html-filepaths root-relative result" src="./code_sandbox/snaps/html-filepaths-01-result.png" />
+
+<img alt="html-filepaths current-folder result" src="./code_sandbox/snaps/html-filepaths-02-result.png" />
+
+<img alt="html-filepaths parent-folder result" src="./code_sandbox/snaps/html-filepaths-03-result.png" />
+
+- [x] **Best practice**
+  - Prefer **relative** file paths when possible.
+  - Then pages are **not bound** to the current base URL.
+  - Links work on **localhost**, the current public domain, and **future** domains.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Load the mountain image via an absolute URL, a root-relative path, a current-folder path, a parent-folder path, and a same-folder path.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` (root must be this folder so `/images/picture.jpg` works).
+- [ ] Success: the same mountain/trulli photo in all five pages.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-filepaths/absolute.html`
+- [ ] `http://127.0.0.1:8766/html-filepaths/root.html`
+- [ ] `http://127.0.0.1:8766/html-filepaths/folder.html`
+- [ ] `http://127.0.0.1:8766/html-filepaths/nested/up.html`
+- [ ] `http://127.0.0.1:8766/html-filepaths/`
+
+<img alt="html-filepaths result" src="./code_sandbox/snaps/html-filepaths-result.png" />
+
+The file path examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-filepaths/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Absolute (`absolute.html`):
+
+<img alt="html-filepaths absolute source" src="./code_sandbox/snaps/html-filepaths-code.png" />
+
+```html
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" />
+```
+
+<img alt="html-filepaths absolute result" src="./code_sandbox/snaps/html-filepaths-result.png" />
+
+Root-relative (`root.html`):
+
+<img alt="html-filepaths root source" src="./code_sandbox/snaps/html-filepaths-01-code.png" />
+
+```html
+<img src="/images/picture.jpg" alt="Mountain" />
+```
+
+<img alt="html-filepaths root-relative result" src="./code_sandbox/snaps/html-filepaths-01-result.png" />
+
+Current folder (`folder.html`):
+
+<img alt="html-filepaths folder source" src="./code_sandbox/snaps/html-filepaths-02-code.png" />
+
+```html
+<img src="images/picture.jpg" alt="Mountain" />
+```
+
+<img alt="html-filepaths current-folder result" src="./code_sandbox/snaps/html-filepaths-02-result.png" />
+
+Parent folder (`nested/up.html`):
+
+<img alt="html-filepaths parent source" src="./code_sandbox/snaps/html-filepaths-03-code.png" />
+
+```html
+<img src="../images/picture.jpg" alt="Mountain" />
+```
+
+<img alt="html-filepaths parent-folder result" src="./code_sandbox/snaps/html-filepaths-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is a file path?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **location** of a file in a website’s folder structure.
+
+</details>
+
+### Question 2: What does `src="picture.jpg"` mean?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The file is in the **same folder** as the current page.
+
+</details>
+
+### Question 3: What is the difference between `images/` and `/images/`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `images/` is inside the **current folder**.
+- [x] `/images/` is at the **root** of the current web.
+
+</details>
+
+### Question 4: What does `../` mean in a path?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The folder **one level up**.
+
+</details>
+
+### Question 5: What is an absolute file path?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **full URL** to a file.
+
+</details>
+
+### Question 6: Why prefer relative paths?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Pages are **not bound** to the current base URL.
+- [x] Links work on **localhost**, the current domain, and **future** domains.
+
+</details>
+
+</details>
+
+## Summary
+
+Use file paths to locate pages, images, CSS, and JS. Absolute paths are full URLs. Relative paths are same folder, `images/`, `/images/` (site root), or `../` (parent). Prefer relative paths so the site is portable.
+
+## References
+
+- [HTML File Paths (W3Schools)](https://www.w3schools.com/html/html_filepaths.asp)
+- [Try it Yourself: tryhtml_files_absoulute](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute)
+- [Try it Yourself: tryhtml_files_relative](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative)
+- [Try it Yourself: tryhtml_files_relative_1](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative_1)
+- [Try it Yourself: tryhtml_files_relative_2](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative_2)
+- [HTML Images](https://www.w3schools.com/html/html_images.asp)
+- [MDN: URLs and paths](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL)
+
+</details>
+
+<details>
+  <summary>HTML Head</summary>
+
+## Introduction
+
+The HTML **`<head>`** element holds **metadata** (data about data): `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, and `<base>`. Metadata sits between `<html>` and `<body>` and is **not shown** as page content.
+
+## Detailed Explanation
+
+- [x] **The `<head>` element**
+  - Container for metadata between `<html>` and `<body>`.
+  - Typical metadata: document **title**, **character set**, **styles**, **scripts**, other meta information.
+- [x] **The `<title>` element**
+  - **Required.** Text-only title in the **tab / title bar**.
+  - Important for **SEO** (search engines use it in rankings and result titles).
+  - Also used in the toolbar and when the page is added to **favorites**.
+  - Make the title **accurate and meaningful**.
+  - Example: **A Meaningful Page Title**.
+  - Sandbox: `code_sandbox/html-head/index.html`.
+
+<img alt="html-head title result" src="./code_sandbox/snaps/html-head-result.png" />
+
+- [x] **The `<style>` element**
+  - Style information for a **single** page.
+  - Example: powderblue body, red `h1`, blue `p`.
+  - Sandbox: `style.html`.
+
+<img alt="html-head style result" src="./code_sandbox/snaps/html-head-01-result.png" />
+
+- [x] **The `<link>` element**
+  - Relationship to an **external resource**.
+  - Most often: `<link rel="stylesheet" href="mystyle.css">`.
+  - Sandbox: `link.html` + `mystyle.css`.
+
+<img alt="html-head link result" src="./code_sandbox/snaps/html-head-02-result.png" />
+
+- [x] **The `<meta>` element**
+  - Character set, description, keywords, author, viewport; not displayed.
+  - Used by browsers, search engines, and other services.
+  - Examples from the page: `charset="UTF-8"`; keywords; description **Free Web tutorials**; author **John Doe**; `http-equiv="refresh" content="30"` (reload every 30 seconds — omitted from the sandbox so it does not auto-refresh); viewport (below).
+  - Sandbox: `meta.html`.
+
+<img alt="html-head meta result" src="./code_sandbox/snaps/html-head-03-result.png" />
+
+- [x] **Setting the viewport**
+  - Viewport = the user’s **visible area** (smaller on a phone).
+  - Include on **all** pages: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+  - `width=device-width` follows the device screen width; `initial-scale=1.0` is the initial zoom.
+- [x] **The `<script>` element**
+  - Client-side JavaScript.
+  - Example: `myFunction()` writes **Hello JavaScript!** into `#demo`.
+  - Sandbox: `script.html`.
+
+<img alt="html-head script result" src="./code_sandbox/snaps/html-head-04-result.png" />
+
+- [x] **The `<base>` element**
+  - Default **URL and/or target** for relative URLs.
+  - Must have **`href` or `target` or both**.
+  - **Only one** `<base>` per document.
+  - Example: `href="https://www.w3schools.com/" target="_blank"` so `images/stickman.gif` and `tags/tag_base.asp` resolve on W3Schools and open in a new tab.
+  - Sandbox: `base.html`.
+
+<img alt="html-head base result" src="./code_sandbox/snaps/html-head-05-result.png" />
+
+| Tag        | Description                                              |
+| ---------- | -------------------------------------------------------- |
+| `<head>`   | Defines information about the document                   |
+| `<title>`  | Defines the title of a document                          |
+| `<base>`   | Default address or target for all links on a page        |
+| `<link>`   | Relationship between a document and an external resource |
+| `<meta>`   | Metadata about an HTML document                          |
+| `<script>` | A client-side script                                     |
+| `<style>`  | Style information for a document                         |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run the title page, in-page styles, linked CSS, meta page, script button, and base URL page.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-head` file.
+- [ ] Success: body text **The content of the document......** with tab title **A Meaningful Page Title**; powderblue/red/blue page twice (style + link); meta note; **Try it** button; stickman gif plus **HTML base Tag** link.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-head/`
+- [ ] `http://127.0.0.1:8766/html-head/style.html`
+- [ ] `http://127.0.0.1:8766/html-head/link.html`
+- [ ] `http://127.0.0.1:8766/html-head/meta.html`
+- [ ] `http://127.0.0.1:8766/html-head/script.html`
+- [ ] `http://127.0.0.1:8766/html-head/base.html`
+
+<img alt="html-head result" src="./code_sandbox/snaps/html-head-result.png" />
+
+The head examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-head/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Title (`index.html`):
+
+<img alt="html-head title source" src="./code_sandbox/snaps/html-head-code.png" />
+
+```html
+<title>A Meaningful Page Title</title>
+```
+
+<img alt="html-head title result" src="./code_sandbox/snaps/html-head-result.png" />
+
+Style (`style.html`):
+
+<img alt="html-head style source" src="./code_sandbox/snaps/html-head-01-code.png" />
+
+```html
+<style>
+  body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: red;
+  }
+  p {
+    color: blue;
+  }
+</style>
+```
+
+<img alt="html-head style result" src="./code_sandbox/snaps/html-head-01-result.png" />
+
+Link (`link.html`):
+
+<img alt="html-head link source" src="./code_sandbox/snaps/html-head-02-code.png" />
+
+```html
+<link rel="stylesheet" href="mystyle.css" />
+```
+
+<img alt="html-head link result" src="./code_sandbox/snaps/html-head-02-result.png" />
+
+Meta (`meta.html`):
+
+<img alt="html-head meta source" src="./code_sandbox/snaps/html-head-03-code.png" />
+
+```html
+<meta charset="UTF-8" />
+<meta name="description" content="Free Web tutorials" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="author" content="John Doe" />
+```
+
+<img alt="html-head meta result" src="./code_sandbox/snaps/html-head-03-result.png" />
+
+Script (`script.html`):
+
+<img alt="html-head script source" src="./code_sandbox/snaps/html-head-04-code.png" />
+
+```html
+<script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  }
+</script>
+```
+
+<img alt="html-head script result" src="./code_sandbox/snaps/html-head-04-result.png" />
+
+Base (`base.html`):
+
+<img alt="html-head base source" src="./code_sandbox/snaps/html-head-05-code.png" />
+
+```html
+<base href="https://www.w3schools.com/" target="_blank" />
+```
+
+<img alt="html-head base result" src="./code_sandbox/snaps/html-head-05-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `<head>` contain, and is that content shown on the page?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Metadata** (title, charset, styles, scripts, and so on).
+- [x] Metadata is **not displayed** as page content.
+
+</details>
+
+### Question 2: Why is `<title>` required, and why does it matter for SEO?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is **required** and appears in the **tab / title bar**.
+- [x] Search engines use it in **rankings** and **result titles**.
+
+</details>
+
+### Question 3: When do you use `<style>` vs `<link>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<style>` — CSS for a **single** page.
+- [x] `<link rel="stylesheet">` — an **external** style sheet.
+
+</details>
+
+### Question 4: What viewport meta should every page include?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+
+</details>
+
+### Question 5: What are the rules for `<base>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Sets the default **URL and/or target** for relative URLs.
+- [x] Needs **`href` or `target` or both**.
+- [x] **Only one** `<base>` per document.
+
+</details>
+
+</details>
+
+## Summary
+
+`<head>` holds metadata between `<html>` and `<body>`. `<title>` is required and matters for tabs and SEO. Use `<style>` or `<link>` for CSS, `<meta>` for charset/description/keywords/author/viewport, `<script>` for JS, and one `<base>` for default URLs.
+
+## References
+
+- [HTML The Head Element (W3Schools)](https://www.w3schools.com/html/html_head.asp)
+- [Try it Yourself: tryhtml_head_title](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_title)
+- [Try it Yourself: tryhtml_head_style](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_style)
+- [Try it Yourself: tryhtml_head_link](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_link)
+- [Try it Yourself: tryhtml_head_meta](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_meta)
+- [Try it Yourself: tryhtml_head_script](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_script)
+- [Try it Yourself: tryhtml_head_base](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base)
+- [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+- [MDN: `<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
+- [MDN: viewport meta](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+
+</details>
+
+<details>
+  <summary>HTML Layout</summary>
+
+## Introduction
+
+Sites often show content in **multiple columns** (magazine/newspaper). HTML has **semantic** layout tags (`<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, `<footer>`, plus `<details>`/`<summary>`). This chapter also lists four **multicolumn techniques**: CSS **frameworks**, **float**, **flexbox**, and **grid**.
+
+## Detailed Explanation
+
+- [x] **Example layout**
+  - Header **Cities**, a nav of London/Paris/Tokyo, an article about London, and a **Footer**.
+  - Sandbox float version: `code_sandbox/html-layout/index.html`.
+
+<img alt="html-layout float result" src="./code_sandbox/snaps/html-layout-result.png" />
+
+- [x] **HTML layout elements**
+  - `<header>` — header for a document or section.
+  - `<nav>` — a set of navigation links.
+  - `<section>` — a section in a document.
+  - `<article>` — independent, self-contained content.
+  - `<aside>` — content aside from the main content (sidebar).
+  - `<footer>` — footer for a document or section.
+  - `<details>` — extra details the user can open/close.
+  - `<summary>` — heading for `<details>`.
+  - More in the HTML Semantics chapter.
+- [x] **Four layout techniques**
+  - **CSS frameworks** (fast: W3.CSS or Bootstrap).
+  - **CSS float** — easy (`float` and `clear`); elements stay in document flow, which can limit flexibility.
+  - **CSS flexbox** — predictable when the layout must fit **different screen sizes**.
+  - **CSS grid** — rows and columns without floats/positioning.
+- [x] **Float vs flex in the sandbox**
+  - Float: `nav` 30% left, `article` 70% left, `section::after` clears.
+  - Flex: `section { display: flex; }` with the same 30%/70% widths.
+  - Sandbox: `flex.html`.
+
+<img alt="html-layout flex result" src="./code_sandbox/snaps/html-layout-01-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the Cities newspaper layout built with float, then the same structure with flexbox.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open both `html-layout` files.
+- [ ] Success: gray **Cities** header, left nav (London/Paris/Tokyo), main London article, gray **Footer**.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-layout/`
+- [ ] `http://127.0.0.1:8766/html-layout/flex.html`
+
+<img alt="html-layout result" src="./code_sandbox/snaps/html-layout-result.png" />
+
+The layout examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-layout/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Semantic skeleton (float page `index.html`):
+
+<img alt="html-layout float source" src="./code_sandbox/snaps/html-layout-code.png" />
+
+```html
+<header>Cities</header>
+<section>
+  <nav>London Paris Tokyo</nav>
+  <article>London ...</article>
+</section>
+<footer>Footer</footer>
+```
+
+<img alt="html-layout float result" src="./code_sandbox/snaps/html-layout-result.png" />
+
+Flex (`flex.html`):
+
+<img alt="html-layout flex source" src="./code_sandbox/snaps/html-layout-01-code.png" />
+
+```css
+section {
+  display: flex;
+}
+nav {
+  width: 30%;
+}
+article {
+  width: 70%;
+}
+```
+
+<img alt="html-layout flex result" src="./code_sandbox/snaps/html-layout-01-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Which tags define header, nav, main article, sidebar, and footer?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<header>`, `<nav>`, `<article>`, `<aside>`, `<footer>`.
+- [x] Also `<section>` for a document section.
+
+</details>
+
+### Question 2: What are `<details>` and `<summary>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<details>` — extra content the user can **open/close**.
+- [x] `<summary>` — the **heading** for that details box.
+
+</details>
+
+### Question 3: Which four techniques create multicolumn layouts here?
+
+<details>
+<summary>Answer</summary>
+
+- [x] CSS **frameworks**.
+- [x] CSS **float**.
+- [x] CSS **flexbox**.
+- [x] CSS **grid**.
+
+</details>
+
+### Question 4: What is a disadvantage of float layouts?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Floated elements are tied to the **document flow**, which may hurt **flexibility**.
+
+</details>
+
+### Question 5: Why use flexbox for layout?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Elements behave **predictably** across **screen sizes** and devices.
+
+</details>
+
+</details>
+
+## Summary
+
+Use semantic tags for page regions. Build columns with a framework, float, flexbox, or grid. Float is simple but less flexible; flexbox adapts to screen size; grid is rows and columns without floats.
+
+## References
+
+- [HTML Layout Elements and Techniques (W3Schools)](https://www.w3schools.com/html/html_layout.asp)
+- [Try it Yourself: tryhtml_layout_float](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float)
+- [Try it Yourself: tryhtml_layout_flexbox](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox)
+- [HTML Semantics](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [CSS Float](https://www.w3schools.com/css/css_float.asp)
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+- [CSS Grid Intro](https://www.w3schools.com/css/css_grid.asp)
+- [W3.CSS](https://www.w3schools.com/w3css/default.asp)
+- [Bootstrap](https://www.w3schools.com/bootstrap/bootstrap_ver.asp)
+- [MDN: Document and website structure](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Document_and_website_structure)
+
+</details>
+
+<details>
+  <summary>HTML Responsive</summary>
+
+## Introduction
+
+**Responsive web design** makes pages look good on **all devices**. HTML and CSS **resize, hide, shrink, or enlarge** content for desktops, tablets, and phones. This chapter covers the **viewport** meta tag, **responsive images**, **vw** text, **media queries**, and CSS **frameworks** (W3.CSS, Bootstrap).
+
+## Detailed Explanation
+
+- [x] **Viewport**
+  - Add to **all** pages: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+  - Tells the browser how to control **dimensions and scaling**.
+  - Sandbox: `code_sandbox/html-responsive/index.html` (also shows `font-size:10vw`).
+
+<img alt="html-responsive viewport vw result" src="./code_sandbox/snaps/html-responsive-result.png" />
+
+- [x] **Responsive images — `width: 100%`**
+  - The image scales up and down with the browser.
+  - It can grow **larger than the original**.
+  - Sandbox: `width.html`.
+
+<img alt="html-responsive width 100 result" src="./code_sandbox/snaps/html-responsive-01-result.png" />
+
+- [x] **Responsive images — `max-width: 100%`**
+  - Scales **down** if needed, but **never larger** than the original.
+  - Often the **better** choice. Use with `height: auto`.
+  - Sandbox: `maxwidth.html`.
+
+<img alt="html-responsive max-width result" src="./code_sandbox/snaps/html-responsive-02-result.png" />
+
+- [x] **`<picture>` (from the page)**
+  - Different images for different window sizes (`srcset` + `media`).
+  - Example sources: small flower at max 600px, flowers at max 1500px, then a default.
+- [x] **Responsive text size**
+  - Unit **`vw`** = viewport width. `1vw` = 1% of the viewport width.
+  - Example: `<h1 style="font-size:10vw">Hello World</h1>`.
+- [x] **Media queries**
+  - Completely different styles for different sizes.
+  - Example: `.left`/`.right` 20%, `.main` 60% floated; at **max-width 800px** all become **100%** (stack).
+  - Sandbox: `media.html`.
+
+<img alt="html-responsive media query result" src="./code_sandbox/snaps/html-responsive-03-result.png" />
+
+- [x] **Frameworks**
+  - Popular CSS frameworks include responsive design (free, easy).
+  - **W3.CSS** — desktop/tablet/mobile by default; smaller/faster; no jQuery required.
+  - **Bootstrap** — example uses Bootstrap 5 CDN and a three-column row.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the viewport + vw heading, `width:100%` image, `max-width:100%` image, and the three-column media query.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-responsive` file.
+- [ ] Success: large **Hello World**; full-width girl photo; same photo capped at original size; Left/Main/Right columns in a row (window wider than 800px).
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-responsive/`
+- [ ] `http://127.0.0.1:8766/html-responsive/width.html`
+- [ ] `http://127.0.0.1:8766/html-responsive/maxwidth.html`
+- [ ] `http://127.0.0.1:8766/html-responsive/media.html` (narrow the window below 800px to stack the columns)
+
+<img alt="html-responsive result" src="./code_sandbox/snaps/html-responsive-result.png" />
+
+The responsive examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-responsive/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Viewport (`index.html`):
+
+<img alt="html-responsive viewport source" src="./code_sandbox/snaps/html-responsive-code.png" />
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+<img alt="html-responsive viewport vw result" src="./code_sandbox/snaps/html-responsive-result.png" />
+
+`width: 100%` (`width.html`):
+
+<img alt="html-responsive width source" src="./code_sandbox/snaps/html-responsive-01-code.png" />
+
+```html
+<img src="img_girl.jpg" style="width:100%;" />
+```
+
+<img alt="html-responsive width 100 result" src="./code_sandbox/snaps/html-responsive-01-result.png" />
+
+`max-width: 100%` (`maxwidth.html`):
+
+<img alt="html-responsive max-width source" src="./code_sandbox/snaps/html-responsive-02-code.png" />
+
+```html
+<img src="img_girl.jpg" style="max-width:100%;height:auto;" />
+```
+
+<img alt="html-responsive max-width result" src="./code_sandbox/snaps/html-responsive-02-result.png" />
+
+Media query (`media.html`):
+
+<img alt="html-responsive media query source" src="./code_sandbox/snaps/html-responsive-03-code.png" />
+
+```css
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+```
+
+<img alt="html-responsive media query result" src="./code_sandbox/snaps/html-responsive-03-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is responsive web design?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Pages that **look good on all devices**.
+- [x] HTML/CSS **resize, hide, shrink, or enlarge** the layout.
+
+</details>
+
+### Question 2: Which meta tag should every responsive page include?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+
+</details>
+
+### Question 3: Why prefer `max-width: 100%` over `width: 100%` on images?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `width: 100%` can scale **larger than the original**.
+- [x] `max-width: 100%` scales **down only**.
+
+</details>
+
+### Question 4: What does `10vw` mean?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **10% of the viewport width**.
+- [x] `1vw` = 1% of the browser window width.
+
+</details>
+
+### Question 5: What do media queries do in this chapter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Apply **different styles** at different browser sizes.
+- [x] Example: stack columns at **800px** or smaller.
+
+</details>
+
+</details>
+
+## Summary
+
+Add the viewport meta tag. Make images fluid with `max-width: 100%` (or `width: 100%`). Size text with `vw` if you want it to follow the window. Use media queries (and optionally W3.CSS or Bootstrap) for different layouts at different widths.
+
+## References
+
+- [HTML Responsive Web Design (W3Schools)](https://www.w3schools.com/html/html_responsive.asp)
+- [Try it Yourself: tryhtml_responsive_viewport](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_viewport)
+- [Try it Yourself: tryhtml_responsive_image](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_image)
+- [Try it Yourself: tryhtml_responsive_image_maxwidth](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_image_maxwidth)
+- [Try it Yourself: tryhtml_responsive_picture](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_picture)
+- [Try it Yourself: tryhtml_responsive_text](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_text)
+- [Try it Yourself: tryhtml_responsive_media_query](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query)
+- [RWD Tutorial](https://www.w3schools.com/css/css_rwd_intro.asp)
+- [W3.CSS Tutorial](https://www.w3schools.com/w3css/default.asp)
+- [Bootstrap Tutorial](https://www.w3schools.com/bootstrap/bootstrap_ver.asp)
+- [MDN: Responsive design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
+
+</details>
+
+<details>
+  <summary>HTML Computercode</summary>
+
+## Introduction
+
+HTML has elements for **user input and computer code**: `<kbd>`, `<samp>`, `<code>`, `<var>`, and `<pre>`. `<kbd>`, `<samp>`, and `<code>` use the browser’s **monospace** font. `<code>` does **not** keep extra whitespace; wrap it in `<pre>` to preserve line breaks.
+
+## Detailed Explanation
+
+- [x] **`<kbd>` — keyboard input**
+  - Example: Save the document by pressing **Ctrl + S**.
+  - Sandbox: `code_sandbox/html-computercode/index.html`.
+
+<img alt="html-computercode kbd result" src="./code_sandbox/snaps/html-computercode-result.png" />
+
+- [x] **`<samp>` — program output**
+  - Example: **File not found. Press F1 to continue**.
+  - Sandbox: `samp.html`.
+
+<img alt="html-computercode samp result" src="./code_sandbox/snaps/html-computercode-01-result.png" />
+
+- [x] **`<code>` — computer code**
+  - Example: `x = 5; y = 6; z = x + y;` (newlines **collapse**).
+  - Sandbox: `code.html`.
+
+<img alt="html-computercode code result" src="./code_sandbox/snaps/html-computercode-02-result.png" />
+
+- [x] **Preserve line-breaks with `<pre>`**
+  - Put `<code>` inside `<pre>` to keep whitespace and line breaks.
+  - Sandbox: `pre.html`.
+
+<img alt="html-computercode pre result" src="./code_sandbox/snaps/html-computercode-03-result.png" />
+
+- [x] **`<var>` — variables**
+  - Programming or math. Typically **italic**.
+  - Example: area of a triangle 1/2 × **b** × **h**.
+  - Sandbox: `var.html`.
+
+<img alt="html-computercode var result" src="./code_sandbox/snaps/html-computercode-04-result.png" />
+
+| Tag      | Description       |
+| -------- | ----------------- |
+| `<code>` | Programming code  |
+| `<kbd>`  | Keyboard input    |
+| `<samp>` | Computer output   |
+| `<var>`  | A variable        |
+| `<pre>`  | Preformatted text |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open keyboard input, sample output, collapsed code, preformatted code, and italic variables.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-computercode` file.
+- [ ] Success: monospace **Ctrl + S**; **File not found**; one-line `x = 5; y = 6; z = x + y;`; the same three lines stacked; italic **b** and **h**.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-computercode/`
+- [ ] `http://127.0.0.1:8766/html-computercode/samp.html`
+- [ ] `http://127.0.0.1:8766/html-computercode/code.html`
+- [ ] `http://127.0.0.1:8766/html-computercode/pre.html`
+- [ ] `http://127.0.0.1:8766/html-computercode/var.html`
+
+<img alt="html-computercode result" src="./code_sandbox/snaps/html-computercode-result.png" />
+
+The computer-code examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-computercode/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+`<kbd>` (`index.html`):
+
+<img alt="html-computercode kbd source" src="./code_sandbox/snaps/html-computercode-code.png" />
+
+```html
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+```
+
+<img alt="html-computercode kbd result" src="./code_sandbox/snaps/html-computercode-result.png" />
+
+`<samp>` (`samp.html`):
+
+<img alt="html-computercode samp source" src="./code_sandbox/snaps/html-computercode-01-code.png" />
+
+```html
+<p>
+  <samp>File not found.<br />Press F1 to continue</samp>
+</p>
+```
+
+<img alt="html-computercode samp result" src="./code_sandbox/snaps/html-computercode-01-result.png" />
+
+`<code>` (`code.html`):
+
+<img alt="html-computercode code source" src="./code_sandbox/snaps/html-computercode-02-code.png" />
+
+```html
+<code> x = 5; y = 6; z = x + y; </code>
+```
+
+<img alt="html-computercode code result" src="./code_sandbox/snaps/html-computercode-02-result.png" />
+
+`<pre><code>` (`pre.html`):
+
+<img alt="html-computercode pre source" src="./code_sandbox/snaps/html-computercode-03-code.png" />
+
+```html
+<pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+```
+
+<img alt="html-computercode pre result" src="./code_sandbox/snaps/html-computercode-03-result.png" />
+
+`<var>` (`var.html`):
+
+<img alt="html-computercode var source" src="./code_sandbox/snaps/html-computercode-04-code.png" />
+
+```html
+<p>
+  The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where
+  <var>b</var> is the base, and <var>h</var> is the vertical height.
+</p>
+```
+
+<img alt="html-computercode var result" src="./code_sandbox/snaps/html-computercode-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is `<kbd>` for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Keyboard input**.
+- [x] Displayed in the default **monospace** font.
+
+</details>
+
+### Question 2: What is `<samp>` for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Sample output** from a computer program.
+- [x] Also monospace.
+
+</details>
+
+### Question 3: Why wrap `<code>` in `<pre>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<code>` does **not** keep extra whitespace or line-breaks.
+- [x] `<pre>` **preserves** them.
+
+</details>
+
+### Question 4: What is `<var>` for, and how does it usually look?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **variable** in programming or math.
+- [x] Typically displayed in **italic**.
+
+</details>
+
+</details>
+
+## Summary
+
+Use `<kbd>` for keys, `<samp>` for program output, `<code>` for snippets, and `<var>` for variables. Wrap `<code>` in `<pre>` when you need the original line breaks.
+
+## References
+
+- [HTML Computer Code Elements (W3Schools)](https://www.w3schools.com/html/html_computercode_elements.asp)
+- [Try it Yourself: tryhtml_formatting_intro3](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro3)
+- [Try it Yourself: tryhtml_formatting_kbd](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_kbd)
+- [Try it Yourself: tryhtml_formatting_samp](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_samp)
+- [Try it Yourself: tryhtml_formatting_code](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_code)
+- [Try it Yourself: tryhtml_formatting_codepre](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_codepre)
+- [Try it Yourself: tryhtml_formatting_var](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_var)
+- [MDN: `<code>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
+- [MDN: `<pre>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)
+
+</details>
+
+<details>
+  <summary>HTML Semantics</summary>
+
+## Introduction
+
+**Semantic** elements have **meaning** for the browser and the developer (`<article>` vs a meaningless `<div>`). This chapter covers `<section>`, `<article>`, `<header>`, `<footer>`, `<nav>`, `<aside>`, and `<figure>`/`<figcaption>`, plus why the semantic web matters.
+
+## Detailed Explanation
+
+- [x] **What are semantic elements?**
+  - They **clearly describe** their content.
+  - Non-semantic: `<div>`, `<span>` (tell nothing about content).
+  - Semantic: `<img>`, `<table>`, `<article>` (define the content).
+  - Sites used to fake structure with `<div id="nav">`, `<div class="header">`, `<div id="footer">`. HTML now has real tags for those parts.
+- [x] **`<section>`**
+  - A **thematic grouping**, typically with a heading (W3C).
+  - Uses: chapters, introduction, news, contact.
+  - Example: two WWF sections.
+  - Sandbox: `code_sandbox/html-semantics/index.html`.
+
+<img alt="html-semantics section result" src="./code_sandbox/snaps/html-semantics-result.png" />
+
+- [x] **`<article>`**
+  - Independent, self-contained content you could **distribute alone**.
+  - Uses: forum posts, blogs, comments, product cards, newspaper articles.
+  - Nested styled browsers example (Chrome, Firefox, Edge).
+  - Sandbox: `article.html`.
+  - You **cannot** decide nesting from the definitions alone: pages nest `<section>` in `<article>` and the reverse.
+
+<img alt="html-semantics article result" src="./code_sandbox/snaps/html-semantics-01-result.png" />
+
+- [x] **`<header>`**
+  - Introductory content or navigational links: headings, logo, authorship.
+  - Several headers per document are OK.
+  - **Cannot** nest inside `<footer>`, `<address>`, or another `<header>`.
+- [x] **`<footer>`**
+  - Authorship, copyright, contact, sitemap, back-to-top, related docs.
+  - Several footers per document are OK.
+- [x] **`<nav>`**
+  - **Major** navigation blocks only (not every link).
+  - Helps screen readers skip or find nav.
+  - Sandbox: `nav-footer.html`.
+
+<img alt="html-semantics nav footer result" src="./code_sandbox/snaps/html-semantics-02-result.png" />
+
+- [x] **`<aside>`**
+  - Sidebar-like content **indirectly related** to the surroundings.
+  - Example: Epcot paragraph with a floated gray aside.
+  - Sandbox: `aside.html`.
+
+<img alt="html-semantics aside result" src="./code_sandbox/snaps/html-semantics-03-result.png" />
+
+- [x] **`<figure>` and `<figcaption>`**
+  - Self-contained illustrations, diagrams, photos, code listings.
+  - Caption is first or last child of `<figure>`.
+  - Example: Trulli photo, **Fig1. - Trulli, Puglia, Italy.**
+  - Sandbox: `figure.html`.
+
+<img alt="html-semantics figure result" src="./code_sandbox/snaps/html-semantics-04-result.png" />
+
+- [x] **Why semantic elements?**
+  - W3C: a semantic Web lets data be **shared and reused** across applications, enterprises, and communities.
+
+| Tag            | Description                                   |
+| -------------- | --------------------------------------------- |
+| `<article>`    | Independent, self-contained content           |
+| `<aside>`      | Content aside from the page content           |
+| `<details>`    | Extra details the user can view or hide       |
+| `<figcaption>` | Caption for a `<figure>`                      |
+| `<figure>`     | Self-contained illustration / photo / listing |
+| `<footer>`     | Footer for a document or section              |
+| `<header>`     | Header for a document or section              |
+| `<main>`       | Main content of a document                    |
+| `<mark>`       | Marked / highlighted text                     |
+| `<nav>`        | Navigation links                              |
+| `<section>`    | A section in a document                       |
+| `<summary>`    | Visible heading for `<details>`               |
+| `<time>`       | A date/time                                   |
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open WWF sections, nested browser articles, nav+footer, the Epcot aside, and the Trulli figure.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open each `html-semantics` file.
+- [ ] Success: two WWF headings; gray **Most Popular Browsers** cards; HTML\|CSS nav plus author footer; italic gray aside; Trulli photo with caption.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-semantics/`
+- [ ] `http://127.0.0.1:8766/html-semantics/article.html`
+- [ ] `http://127.0.0.1:8766/html-semantics/nav-footer.html`
+- [ ] `http://127.0.0.1:8766/html-semantics/aside.html`
+- [ ] `http://127.0.0.1:8766/html-semantics/figure.html`
+
+<img alt="html-semantics result" src="./code_sandbox/snaps/html-semantics-result.png" />
+
+The semantic examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-semantics/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Section (`index.html`):
+
+<img alt="html-semantics section source" src="./code_sandbox/snaps/html-semantics-code.png" />
+
+```html
+<section>
+  <h1>WWF</h1>
+  <p>...</p>
+</section>
+```
+
+<img alt="html-semantics section result" src="./code_sandbox/snaps/html-semantics-result.png" />
+
+Article (`article.html`):
+
+<img alt="html-semantics article source" src="./code_sandbox/snaps/html-semantics-01-code.png" />
+
+```html
+<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">...</article>
+</article>
+```
+
+<img alt="html-semantics article result" src="./code_sandbox/snaps/html-semantics-01-result.png" />
+
+Nav and footer (`nav-footer.html`):
+
+<img alt="html-semantics nav footer source" src="./code_sandbox/snaps/html-semantics-02-code.png" />
+
+```html
+<nav><a href="/html/">HTML</a> | <a href="/css/">CSS</a></nav>
+<footer>
+  <p>Author: Hege Refsnes</p>
+</footer>
+```
+
+<img alt="html-semantics nav footer result" src="./code_sandbox/snaps/html-semantics-02-result.png" />
+
+Aside (`aside.html`):
+
+<img alt="html-semantics aside source" src="./code_sandbox/snaps/html-semantics-03-code.png" />
+
+```html
+<aside>
+  <p>The Epcot center is a theme park...</p>
+</aside>
+```
+
+<img alt="html-semantics aside result" src="./code_sandbox/snaps/html-semantics-03-result.png" />
+
+Figure (`figure.html`):
+
+<img alt="html-semantics figure source" src="./code_sandbox/snaps/html-semantics-04-code.png" />
+
+```html
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" />
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+```
+
+<img alt="html-semantics figure result" src="./code_sandbox/snaps/html-semantics-04-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What makes an element semantic?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It **clearly describes** its meaning to the browser and the developer.
+- [x] `<div>`/`<span>` are **non-semantic**.
+
+</details>
+
+### Question 2: How does `<section>` differ from `<article>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<section>` — thematic grouping, typically with a **heading**.
+- [x] `<article>` — **independent** content you could publish alone.
+- [x] Either may nest inside the other.
+
+</details>
+
+### Question 3: What belongs in `<nav>` vs ordinary links?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Major** navigation blocks only.
+- [x] Not every link on the page.
+
+</details>
+
+### Question 4: Where can you **not** put `<header>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Not inside `<footer>`, `<address>`, or another `<header>`.
+
+</details>
+
+### Question 5: What are `<figure>` and `<figcaption>` for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<figure>` — self-contained illustration, photo, diagram, or listing.
+- [x] `<figcaption>` — caption as the first or last child.
+
+</details>
+
+</details>
+
+## Summary
+
+Prefer semantic tags over anonymous divs. `<section>` groups themes; `<article>` is standalone; `<header>`/`<footer>`/`<nav>`/`<aside>` mark page regions; `<figure>` captions media. Semantics help people, tools, and reuse of data.
+
+## References
+
+- [HTML Semantic Elements (W3Schools)](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [Try it Yourself: tryhtml5_section](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_section)
+- [Try it Yourself: tryhtml5_article](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_article)
+- [Try it Yourself: tryhtml5_article2](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_article2)
+- [Try it Yourself: tryhtml5_header](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_header)
+- [Try it Yourself: tryhtml5_footer](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_footer)
+- [Try it Yourself: tryhtml5_nav](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_nav)
+- [Try it Yourself: tryhtml5_aside](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_aside)
+- [Try it Yourself: tryhtml5_aside2](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_aside2)
+- [Try it Yourself: tryhtml_figcaption](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_figcaption)
+- [MDN: Semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+
+</details>
+
+<details>
+  <summary>HTML Style Guide</summary>
+
+## Introduction
+
+**Consistent, clean, tidy** HTML is easier for others to read. This chapter is W3Schools’ **coding conventions**: doctype, lowercase names, quoted attributes, titles, `lang`, charset, viewport, comments, CSS/JS loading, and **lowercase file names**.
+
+## Detailed Explanation
+
+- [x] **Always declare document type** first: `<!DOCTYPE html>`.
+- [x] **Lowercase element names** (mixing case looks bad; lowercase is cleaner and easier to type).
+- [x] **Close all elements** even when optional (`<p>...</p>`).
+- [x] **Lowercase attribute names**; **always quote** values (required if the value has spaces). `class=table striped` is invalid.
+- [x] **Images:** always `alt`, plus **width and height** (or CSS size) so the browser can reserve space and reduce flicker.
+- [x] **No spaces around `=`** (`rel="stylesheet"` not `rel = "stylesheet"`).
+- [x] **Avoid long lines**; indent with **two spaces**, not Tab; blank lines only to separate logical blocks.
+- [x] **Never skip `<title>`** (required; SEO; tab; favorites). Example title: **HTML Style Guide and Coding Conventions**.
+- [x] Pages can **validate without** `<html>`/`<body>`/`<head>`, but **always include them**. Omitting `<body>` can break older browsers; omitting html/body can crash DOM/XML tools.
+- [x] Empty elements: `<meta charset="utf-8">` or with a trailing slash. Keep `/` if XML/XHTML software will read the page.
+- [x] Always **`lang`** on `<html>` (search engines and browsers). Example: `lang="en-us"`.
+- [x] Put **`lang` and `charset` as early as possible**. Include the **viewport** meta on every page.
+- [x] Comments: one line `<!-- ... -->`; long comments indented two spaces inside a block comment.
+- [x] Style sheets: `<link rel="stylesheet" href="styles.css">` (`type` not needed). Short CSS can be one line; long rules: `{` on the same line as the selector, two-space indent, semicolon including the last property, quotes only if the value has spaces.
+- [x] Scripts: `<script src="myscript.js">` (`type` not needed). Untidy HTML can cause JS errors: `Demo` vs `demo` are **different** ids.
+- [x] **Lowercase file names** (Apache/Unix are case-sensitive; IIS is not). Extensions: `.html`/`.htm`, `.css`, `.js`. `.htm` and `.html` are the same to browsers. Default filenames: `index.html`, `index.htm`, `default.html`, `default.htm` depending on the server.
+- [x] Sandbox good example: `code_sandbox/html-style-guide/index.html`.
+
+<img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Open the “good” Famous Cities page that follows the style guide (doctype, `lang`, charset, viewport, title, lowercase, quoted attributes, sized image).
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open `html-style-guide/`.
+- [ ] Success: Tokyo/London/Paris copy, HTML5 gif 128×128, tutorial link; tab title **HTML Style Guide and Coding Conventions**.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-style-guide/`
+
+<img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
+
+The style-guide example matches the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-style-guide/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Good document (`index.html`):
+
+<img alt="html-style-guide source" src="./code_sandbox/snaps/html-style-guide-code.png" />
+
+```html
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Style Guide and Coding Conventions</title>
+  </head>
+  <body>
+    <h1>Famous Cities</h1>
+    ...
+  </body>
+</html>
+```
+
+<img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What should be the first line of an HTML file?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<!DOCTYPE html>`.
+
+</details>
+
+### Question 2: Should you close optional tags like `<p>`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** Strongly recommended to close **all** elements.
+
+</details>
+
+### Question 3: When must attribute values be quoted?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Always, by this guide.
+- [x] **Required** if the value contains **spaces**.
+
+</details>
+
+### Question 4: Why set `alt`, width, and height on images?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `alt` if the image **cannot be displayed**.
+- [x] Size lets the browser **reserve space** and reduce flicker.
+
+</details>
+
+### Question 5: Why keep `<html>`, `<head>`, and `<body>` even if validators allow omitting them?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Omitting `<body>` can break **older browsers**.
+- [x] Omitting html/body can crash **DOM and XML** software.
+
+</details>
+
+### Question 6: Why use lowercase file names?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Unix/Apache servers are **case sensitive**.
+- [x] Mixing case can **break the site** after a move to a case-sensitive host.
+
+</details>
+
+</details>
+
+## Summary
+
+Start with `<!DOCTYPE html>`, use lowercase quoted markup, close tags, keep `title`/`lang`/charset/viewport, size images, indent two spaces, load CSS/JS without `type`, and name files in lowercase `.html`.
+
+## References
+
+- [HTML Style Guide (W3Schools)](https://www.w3schools.com/html/html5_syntax.asp)
+- [Try it Yourself: tryhtml_syntax_nobody](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_syntax_nobody)
+- [Try it Yourself: tryhtml_syntax_nohead](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_syntax_nohead)
+- [Try it Yourself: tryhtml_syntax_body](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_syntax_body)
+- [Try it Yourself: tryhtml_syntax_javascript](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_syntax_javascript)
+- [JavaScript Style Guide](https://www.w3schools.com/js/js_conventions.asp)
+- [MDN: HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML)
+
+</details>
+
+<details>
+  <summary>HTML Entities</summary>
+
+## Introduction
+
+Reserved characters in HTML must be replaced with **character entities**. This chapter covers entity **names** (`&lt;`) and **numbers** (`&#60;`), the **non-breaking space**, a table of useful entities, and **combining diacritical marks**.
+
+## Detailed Explanation
+
+- [x] **Reserved characters**
+  - `<` (less than) and `>` (greater than) can be mixed up with tags if you type them as text.
+  - Replace them: `<` → `&lt;` or `&#60;`; `>` → `&gt;`.
+- [x] **Two forms**
+  - Name: `&entity_name;`
+  - Number: `&#entity_number;`
+  - Names are easier to remember. **Entity names are case sensitive.**
+- [x] **Non-breaking space (`&nbsp;` / `&#160;`)**
+  - A space that will **not** wrap to a new line (handy for `§ 10`, `10 km/h`, `10 PM`).
+  - Browsers collapse extra spaces: ten typed spaces become one. Use `&nbsp;` for extra spaces.
+  - Non-breaking hyphen: `&#8209;` (`‑`).
+- [x] **Useful entities** (name / number)
+  - `&lt;` / `&#60;` — less than
+  - `&gt;` / `&#62;` — greater than
+  - `&amp;` / `&#38;` — ampersand
+  - `&quot;` / `&#34;` — double quote
+  - `&apos;` / `&#39;` — single quote
+  - `&copy;` / `&#169;` — copyright
+  - Also: `&cent;` `&pound;` `&yen;` `&euro;` `&reg;` `&trade;`
+- [x] **Combining diacritical marks**
+  - A glyph added to a letter (grave `` ` ``, acute ´). Combine with a letter: `a&#768;` → à, `a&#769;` → á, `a&#770;` → â, `a&#771;` → ã (same for `O`).
+- [x] Sandbox: `code_sandbox/html-entities/index.html`.
+
+<img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Render reserved characters, copyright, non-breaking spaces, and combining accents.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open `html-entities/`.
+- [ ] Success: `<` `>` `&` `© W3Schools.com`, `10 km/h` / `10 PM`, à and á.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-entities/`
+
+<img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
+
+The entity examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-entities/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-entities/index.html`
+
+<img alt="html-entities source" src="./code_sandbox/snaps/html-entities-code.png" />
+
+```html
+<p>Less than: &lt;</p>
+<p>Greater than: &gt;</p>
+<p>Ampersand: &amp;</p>
+<p>Copyright: &copy; W3Schools.com</p>
+<p>10&nbsp;km/h &nbsp; 10&nbsp;PM</p>
+<p>a grave: a&#768; &nbsp; a acute: a&#769;</p>
+```
+
+<img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How do you write a less-than sign as text?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `&lt;` or `&#60;`.
+
+</details>
+
+### Question 2: What is the difference between `&entity_name;` and `&#entity_number;`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Names are easier to remember.
+- [x] Numbers always work; names are **case sensitive**.
+
+</details>
+
+### Question 3: What does `&nbsp;` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A space that will **not** break onto a new line.
+- [x] Also keeps extra spaces the browser would otherwise collapse.
+
+</details>
+
+### Question 4: What is the entity for ampersand?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `&amp;` or `&#38;`.
+
+</details>
+
+### Question 5: How do you combine a grave accent with the letter a?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `a&#768;` → à.
+
+</details>
+
+### Question 6: Are entity names case sensitive?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.**
+
+</details>
+
+</details>
+
+## Summary
+
+Use `&lt;` `&gt;` `&amp;` for reserved characters, `&nbsp;` for sticky or extra spaces, and named or numbered entities for symbols. Combining marks like `&#768;` add accents to letters.
+
+## References
+
+- [HTML Entities (W3Schools)](https://www.w3schools.com/html/html_entities.asp)
+- [Try it Yourself: tryhtml_ent_lt](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_ent_lt)
+- [Try it Yourself: tryhtml_ent_nbsp](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_ent_nbsp)
+- [Try it Yourself: tryhtml_ent_copy](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_ent_copy)
+- [HTML Character Sets](https://www.w3schools.com/charsets/default.asp)
+- [MDN: Character references](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
+
+</details>
+
+<details>
+  <summary>HTML Symbols</summary>
+
+## Introduction
+
+Symbols that are **not on the keyboard** can be added with entity **names**, **decimal** numbers, or **hex** numbers. This chapter shows the euro sign three ways, then tables of common symbols, math operators, and Greek letters.
+
+## Detailed Explanation
+
+- [x] **Three ways to write a symbol** (euro example)
+  - Name: `&euro;`
+  - Decimal: `&#8364;`
+  - Hex: `&#x20AC;`
+  - All three display **€**.
+- [x] **Common symbol entities**
+  - `&copy;` ©, `&reg;` ®, `&trade;` ™, `&euro;` €
+  - Arrows: `&larr;` `&uarr;` `&rarr;` `&darr;`
+  - Cards: `&spades;` `&clubs;` `&hearts;` `&diams;`
+- [x] **Math entities** (examples): `&forall;` `&part;` `&exist;` `&empty;` `&nabla;` `&isin;` `&notin;` `&ni;` `&prod;` `&sum;`
+- [x] **Greek letters** (examples): `&Alpha;` `&Beta;` `&Gamma;` `&Delta;` `&Epsilon;` `&Zeta;`
+- [x] The page also shows more Unicode groups (currency, arrows, weather, chess, music, and so on) as a gallery, with links to full charset references.
+- [x] Sandbox: `code_sandbox/html-symbols/index.html`.
+
+<img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Show the euro three ways, then copyright/arrows, card suits, and a few math/Greek symbols.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open `html-symbols/`.
+- [ ] Success: three **€** lines, then © ® ™ arrows, ♠♣♥♦, and Σ ∞ Α Ω.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-symbols/`
+
+<img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
+
+The symbol examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-symbols/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-symbols/index.html`
+
+<img alt="html-symbols source" src="./code_sandbox/snaps/html-symbols-code.png" />
+
+```html
+<p>I will display &euro;</p>
+<p>I will display &#8364;</p>
+<p>I will display &#x20AC;</p>
+<p>&copy; &reg; &trade; &larr; &uarr; &rarr; &darr;</p>
+<p>&spades; &clubs; &hearts; &diams;</p>
+<p>&sum; &infin; &Alpha; &Omega;</p>
+```
+
+<img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How can you write the euro sign in HTML?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `&euro;` (name), `&#8364;` (decimal), or `&#x20AC;` (hex).
+
+</details>
+
+### Question 2: Why use entities for symbols?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Many symbols are **not on the keyboard**.
+- [x] Names, decimal numbers, or hex numbers all work.
+
+</details>
+
+### Question 3: What entities are ©, ®, and ™?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `&copy;`, `&reg;`, `&trade;`.
+
+</details>
+
+### Question 4: What entities are the four card suits?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `&spades;` `&clubs;` `&hearts;` `&diams;`.
+
+</details>
+
+### Question 5: What is `&sum;`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] N-ary summation (Σ).
+
+</details>
+
+### Question 6: What is `&Alpha;`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Greek capital letter Alpha (Α).
+
+</details>
+
+</details>
+
+## Summary
+
+Add off-keyboard symbols with a name, a decimal (`&#8364;`), or a hex (`&#x20AC;`) entity. The same pattern covers arrows, cards, math, and Greek letters.
+
+## References
+
+- [HTML Symbols (W3Schools)](https://www.w3schools.com/html/html_symbols.asp)
+- [Try it Yourself: tryhtml_utf_euro](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_utf_euro)
+- [Full Symbols Reference](https://www.w3schools.com/charsets/ref_utf_symbols_intro.asp)
+- [Full Math Symbols Reference](https://www.w3schools.com/charsets/ref_utf_math.asp)
+- [Full Greek Reference](https://www.w3schools.com/charsets/ref_utf_greek.asp)
+- [MDN: Named character references](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
+
+</details>
+
+<details>
+  <summary>HTML Emojis</summary>
+
+## Introduction
+
+Emojis look like images, but they are **UTF-8 characters**. This chapter sets `charset="UTF-8"`, shows entity numbers for letters and emojis, and sizes emojis with CSS `font-size` like any other character.
+
+## Detailed Explanation
+
+- [x] **Emojis are characters**, not images — they come from the UTF-8 (Unicode) set (😄 😍 💗). UTF-8 covers almost all characters and symbols.
+- [x] **`charset`**: `<meta charset="UTF-8">`. If omitted, **UTF-8 is the HTML default**.
+- [x] **Entity numbers** for characters you cannot type: start with `&#` and end with `;`.
+  - A is 65, B is 66, C is 67 → `&#65; &#66; &#67;` displays **A B C**.
+- [x] **Emoji numbers** (examples)
+  - 😀 `&#128512;`
+  - 😄 `&#128516;`
+  - 😍 `&#128525;`
+  - 💗 `&#128151;`
+- [x] **Size like text**: `font-size:48px` on a paragraph of emoji entities.
+- [x] Sandbox: `code_sandbox/html-emojis/index.html` (first emoji, sized row, and A B C vs `&#65; &#66; &#67;`).
+
+<img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Show a grinning face, a 48px emoji row, and A B C written both as letters and as entity numbers.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open `html-emojis/`.
+- [ ] Success: **My First Emoji** with 😀; **Sized Emojis** at 48px (😀 😄 😍 💗); two lines that both read **I will display A B C**.
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-emojis/`
+
+<img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
+
+The emoji examples match the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-emojis/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-emojis/index.html`
+
+<img alt="html-emojis source" src="./code_sandbox/snaps/html-emojis-code.png" />
+
+```html
+<h1>My First Emoji</h1>
+<p>&#128512;</p>
+<h1>Sized Emojis</h1>
+<p style="font-size: 48px">&#128512; &#128516; &#128525; &#128151;</p>
+<p>I will display A B C</p>
+<p>I will display &#65; &#66; &#67;</p>
+```
+
+<img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Are emojis images?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** They look like images but are **UTF-8 characters**.
+
+</details>
+
+### Question 2: How do you declare UTF-8 on the page?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<meta charset="UTF-8">`.
+- [x] UTF-8 is already the **HTML default** if you omit it.
+
+</details>
+
+### Question 3: How must an entity number be written?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Start with `&#` and end with `;` (example: `&#65;` is A).
+
+</details>
+
+### Question 4: What entity is the grinning face 😀?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `&#128512;`.
+
+</details>
+
+### Question 5: How do you make emojis larger?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Treat them as text: set **`font-size`** (the chapter uses `48px`).
+
+</details>
+
+### Question 6: What numbers are A, B, and C?
+
+<details>
+<summary>Answer</summary>
+
+- [x] 65, 66, and 67.
+
+</details>
+
+</details>
+
+## Summary
+
+Emojis are UTF-8 letters. Declare `charset="UTF-8"`, write them as `&#number;`, and size them with CSS like any other character.
+
+## References
+
+- [HTML Emojis (W3Schools)](https://www.w3schools.com/html/html_emojis.asp)
+- [Full HTML Emoji Reference](https://www.w3schools.com/charsets/ref_emoji.asp)
+- [Try it Yourself: tryhtml_emoji_128512](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128512)
+- [Unicode Emoji Charts](https://unicode.org/emoji/charts/full-emoji-list.html)
+- [MDN: Unicode](https://developer.mozilla.org/en-US/docs/Glossary/Unicode)
+
+</details>
+
+<details>
+  <summary>HTML Charsets</summary>
+
+## Introduction
+
+A browser must know the **character set** to display a page correctly. This chapter sets `charset` in `<meta>`, compares **ASCII**, **ANSI (Windows-1252)**, **ISO-8859-1**, and **UTF-8**, and shows why UTF-8 is the HTML recommendation.
+
+## Detailed Explanation
+
+- [x] **Specify the set** in a meta tag: `<meta charset="UTF-8">`.
+- [x] The HTML spec encourages **UTF-8** — it covers almost all characters and symbols in the world.
+- [x] **ASCII** — first web encoding; **128** Latin characters: a–z A–Z, 0–9, and some punctuation (`! $ + - ( ) @ < > . # ?`).
+- [x] **ANSI (Windows-1252)** — first Windows set: ASCII for 0–127, extra characters 128–159, same as UTF-8 from 160–255. `<meta charset="Windows-1252">`.
+- [x] **ISO-8859-1** — default for **HTML 4**; 256 characters. ASCII for 0–127, unused 128–159, same as ANSI/UTF-8 from 160–255.
+  - HTML 4: `<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">`
+  - HTML 5: `<meta charset="ISO-8859-1">`
+- [x] **UTF-8**
+  - Same as ASCII for 0–127; unused 128–159; same as ANSI and 8859-1 for 160–255; then continues from 256 to **10 000+** characters.
+  - `<meta charset="UTF-8">`
+- [x] The page galleries **HTML UTF-8 Characters** (Basic Latin, Latin Extended A–E, IPA, punctuation, super/subscript, Braille). Sandbox: `code_sandbox/html-charsets/index.html`.
+
+<img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+The chapter has no Try it Yourself editor. The sandbox is a UTF-8 page that shows Latin, punctuation, and combining diacritics.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open `html-charsets/`.
+- [ ] Success: Basic Latin, Ā Ć Ē, ‰ ‼ ⁇, and à á â ã all render (the file is saved as UTF-8 with `<meta charset="UTF-8">`).
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-charsets/`
+
+<img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
+
+UTF-8 characters display correctly.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-charsets/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Declare UTF-8, then put Unicode in the file:
+
+<img alt="html-charsets source" src="./code_sandbox/snaps/html-charsets-code.png" />
+
+```html
+<meta charset="UTF-8" />
+```
+
+Sandbox body (`html-charsets/index.html`):
+
+```html
+<p>Basic Latin: ABCD abcd 0123 ?#$%</p>
+<p>Latin Extended: Ā Ć Ē</p>
+<p>Punctuation: ‰ ‼ ⁇</p>
+<p>Diacritics: à á â ã</p>
+```
+
+<img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How do you tell the browser the character set?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `<meta charset="UTF-8">` (or another set name).
+
+</details>
+
+### Question 2: Which character set does the HTML spec encourage?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **UTF-8**.
+
+</details>
+
+### Question 3: How many characters did ASCII define?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **128** Latin characters.
+
+</details>
+
+### Question 4: What was the default character set for HTML 4?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **ISO-8859-1**.
+
+</details>
+
+### Question 5: How did HTML 4 vs HTML 5 declare ISO-8859-1?
+
+<details>
+<summary>Answer</summary>
+
+- [x] HTML 4: `<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">`.
+- [x] HTML 5: `<meta charset="ISO-8859-1">`.
+
+</details>
+
+### Question 6: How does UTF-8 relate to ASCII?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Identical to ASCII for values **0–127**.
+- [x] Then it continues from 256 to thousands more characters.
+
+</details>
+
+</details>
+
+## Summary
+
+Put `<meta charset="UTF-8">` in the head. ASCII, ANSI, and ISO-8859-1 cover a small Latin range; UTF-8 includes those values and almost every other character.
+
+## References
+
+- [HTML Encoding / Charsets (W3Schools)](https://www.w3schools.com/html/html_charset.asp)
+- [Full UTF-8 Reference](https://www.w3schools.com/charsets/ref_html_utf8.asp)
+- [HTML Character Sets](https://www.w3schools.com/charsets/default.asp)
+- [MDN: `<meta>` charset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#charset)
+- [WHATWG: Encoding](https://html.spec.whatwg.org/multipage/semantics.html#character-encoding-declaration)
+
+</details>
+
+<details>
+  <summary>HTML URL Encode</summary>
+
+## Introduction
+
+A **URL** is a web address. This chapter explains URL **syntax**, common **schemes**, and **URL encoding**: non-ASCII characters become `%` plus hex, and spaces become `+` or `%20`.
+
+## Detailed Explanation
+
+- [x] **URL = web address** — words (`w3schools.com`) or an IP (`192.68.20.50`). Names are easier to remember.
+- [x] Browsers request pages with a URL. Example: `https://www.w3schools.com/html/default.asp`.
+- [x] **Syntax:** `scheme://prefix.domain:port/path/filename`
+  - **scheme** — service type (`http` or `https`)
+  - **prefix** — domain prefix (default `www` for http)
+  - **domain** — name like `w3schools.com`
+  - **port** — host port (default **80** for http)
+  - **path** — path on the server (omit = site root)
+  - **filename** — document or resource name
+- [x] **Common schemes**
+
+| Scheme  | Short for                          | Used for                        |
+| ------- | ---------------------------------- | ------------------------------- |
+| `http`  | HyperText Transfer Protocol        | Common web pages. Not encrypted |
+| `https` | Secure HyperText Transfer Protocol | Secure web pages. Encrypted     |
+| `ftp`   | File Transfer Protocol             | Downloading or uploading files  |
+| `file`  |                                    | A file on your computer         |
+
+- [x] **URL encoding**
+  - URLs can only be sent using the **ASCII** character set. Non-ASCII must be converted.
+  - Encoding replaces non-ASCII with **`%` + hexadecimal digits**.
+  - URLs cannot contain spaces: a space becomes **`+`** or **`%20`**.
+- [x] **Try It Yourself:** a form `GET`s the input; the browser encodes it before the request. After Submit, the query string shows `+` / `%20` (and UTF-8 sequences such as `%E2%82%AC` for €).
+- [x] **ASCII encoding examples** (page charset is UTF-8 by default in HTML5)
+
+| Character | From Windows-1252 | From UTF-8  |
+| --------- | ----------------- | ----------- |
+| €         | `%80`             | `%E2%82%AC` |
+| £         | `%A3`             | `%C2%A3`    |
+| ©         | `%A9`             | `%C2%A9`    |
+| ®         | `%AE`             | `%C2%AE`    |
+| À         | `%C0`             | `%C3%80`    |
+| Á         | `%C1`             | `%C3%81`    |
+| Â         | `%C2`             | `%C3%82`    |
+| Ã         | `%C3`             | `%C3%83`    |
+| Ä         | `%C4`             | `%C3%84`    |
+| Å         | `%C5`             | `%C3%85`    |
+
+- [x] Sandbox: `code_sandbox/html-url-encode/index.html` (syntax notes + local GET form; the live W3Schools form posts to their server).
+
+<img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Read the URL parts, then submit the form and look at the address bar for encoding.
+
+### **Overview**
+
+- [ ] Serve `code_sandbox` and open `html-url-encode/`.
+- [ ] Success: example URL, syntax line, encoding note, and a **Hello World** field with Submit.
+- [ ] After Submit, the URL includes `?text=Hello+World` (or `%20` depending on the browser).
+
+### **Task 1: Serve and open**
+
+- [ ] From `Personal/Files/html/code_sandbox`:
+
+```bash
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+- [ ] `http://127.0.0.1:8766/html-url-encode/`
+
+<img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
+
+The URL-encode demo matches the chapter.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-url-encode/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/html-url-encode/index.html`
+
+<img alt="html-url-encode source" src="./code_sandbox/snaps/html-url-encode-code.png" />
+
+```html
+<p>Example URL: https://www.w3schools.com/html/default.asp</p>
+<p>Syntax: scheme://prefix.domain:port/path/filename</p>
+<p>Spaces become + or %20. Euro in UTF-8 is %E2%82%AC.</p>
+<form action="" method="get">
+  <label>Try It Yourself: <input name="text" value="Hello World" /></label>
+  <button type="submit">Submit</button>
+</form>
+```
+
+<img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is a URL?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Another word for a **web address**.
+- [x] Browsers use it to request a page from a server.
+
+</details>
+
+### Question 2: What is the URL syntax pattern?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `scheme://prefix.domain:port/path/filename`.
+
+</details>
+
+### Question 3: What is the difference between `http` and `https`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `http` — common web pages, **not encrypted**.
+- [x] `https` — secure web pages, **encrypted**.
+
+</details>
+
+### Question 4: Why encode URLs?
+
+<details>
+<summary>Answer</summary>
+
+- [x] URLs may only use the **ASCII** character set.
+- [x] Non-ASCII characters are replaced with `%` plus hex digits.
+
+</details>
+
+### Question 5: How is a space encoded in a URL?
+
+<details>
+<summary>Answer</summary>
+
+- [x] As a plus (`+`) or as `%20`.
+
+</details>
+
+### Question 6: How is € encoded in UTF-8 vs Windows-1252?
+
+<details>
+<summary>Answer</summary>
+
+- [x] UTF-8: `%E2%82%AC`.
+- [x] Windows-1252: `%80`.
+
+</details>
+
+</details>
+
+## Summary
+
+A URL is `scheme://prefix.domain:port/path/filename`. Use `https` for encrypted pages. Encode non-ASCII as `%HH` and spaces as `+` or `%20`; the encoding depends on the page charset (HTML5 default: UTF-8).
+
+## References
+
+- [HTML URL Encoding (W3Schools)](https://www.w3schools.com/html/html_urlencode.asp)
+- [URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp)
+- [MDN: URLs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL)
+- [MDN: `encodeURIComponent()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
+
+</details>
