@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS String Templates</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript String Templates</h2>
+    <p id="out"></p>
+    <script>
+      let hello = `Hello World!`;
+      let quotes = `He's often called "Johnny"`;
+      let multi = `The quick
+brown fox`;
+      let firstName = "John";
+      let lastName = "Doe";
+      let welcome = `Welcome ${firstName}, ${lastName}!`;
+      let price = 10;
+      let VAT = 0.25;
+      let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+      document.getElementById("out").innerHTML =
+        hello +
+        "<br>" +
+        quotes +
+        "<br>multiline has newline: " +
+        (multi.indexOf("\n") !== -1) +
+        "<br>" +
+        welcome +
+        "<br>" +
+        total;
+    </script>
+  </body>
+</html>

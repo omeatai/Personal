@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Loop for</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript For Loop</h2>
+    <p id="out"></p>
+    <script>
+      let nums = "";
+      for (let i = 0; i < 5; i++) {
+        nums += i + " ";
+      }
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let len = cars.length;
+      let all = "";
+      for (let i = 0; i < len; i++) {
+        all += cars[i] + " ";
+      }
+      let i = 2;
+      let fromTwo = "";
+      for (; i < len; i++) {
+        fromTwo += cars[i] + " ";
+      }
+      i = 0;
+      let inside = "";
+      for (; i < len; ) {
+        inside += cars[i] + " ";
+        i++;
+      }
+      var v = 5;
+      for (var v = 0; v < 10; v++) {}
+      let outerLet = 5;
+      for (let i = 0; i < 10; i++) {}
+      document.getElementById("out").innerHTML =
+        "0..4 -> " +
+        nums.trim() +
+        "<br>cars -> " +
+        all.trim() +
+        "<br>omit exp1 (i=2) -> " +
+        fromTwo.trim() +
+        "<br>omit exp3 (i++ inside) -> " +
+        inside.trim() +
+        "<br>var after loop = " +
+        v +
+        "; outer let stays " +
+        outerLet;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS String Methods</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript String Methods</h2>
+    <p id="out"></p>
+    <script>
+      let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let hello = "HELLO WORLD";
+      let name = "W3Schools";
+      let fruit = "Apple, Banana, Kiwi";
+      let padded = "5".padStart(4, "0");
+      let replaced = "Please visit Microsoft!".replace(
+        "Microsoft",
+        "W3Schools",
+      );
+      document.getElementById("out").innerHTML =
+        "length = " +
+        alphabet.length +
+        "<br>charAt(0) = " +
+        hello.charAt(0) +
+        "<br>at(2) / at(-5) = " +
+        name.at(2) +
+        " / " +
+        name.at(-5) +
+        "<br>slice(7, 13) = " +
+        fruit.slice(7, 13) +
+        "<br>toUpperCase = " +
+        "Hello World!".toUpperCase() +
+        "<br>padStart(4,'0') = " +
+        padded +
+        "<br>replace = " +
+        replaced +
+        "<br>split(' ') = " +
+        "The quick brown fox.".split(" ").join(", ");
+    </script>
+  </body>
+</html>

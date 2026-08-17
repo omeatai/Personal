@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Strings</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Strings</h2>
+    <p id="out"></p>
+    <script>
+      let text = "John Doe";
+      let carName1 = "Volvo XC60";
+      let carName2 = "Volvo XC60";
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'Johnny'";
+      let answer3 = 'He is called "Johnny"';
+      let tpl = `He's often called "Johnny"`;
+      let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let escaped = 'We are the so-called "Vikings" from the north.';
+      let x = "John";
+      let y = new String("John");
+      document.getElementById("out").innerHTML =
+        text +
+        "<br>" +
+        carName1 +
+        " / " +
+        carName2 +
+        "<br>" +
+        answer1 +
+        " | " +
+        answer2 +
+        " | " +
+        answer3 +
+        "<br>template: " +
+        tpl +
+        "<br>length A-Z = " +
+        alphabet.length +
+        "<br>" +
+        escaped +
+        "<br>literal == object: " +
+        (x == y) +
+        "; === " +
+        (x === y);
+    </script>
+  </body>
+</html>

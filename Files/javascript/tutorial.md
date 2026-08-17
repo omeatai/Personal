@@ -2749,3 +2749,1576 @@ Rendered result:
 - [MDN: Logical AND (&&)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
 
 </details>
+
+<details>
+  <summary>JS Loops</summary>
+
+## Introduction
+
+**Loops** run a block **many times**, usually with a **different value** each pass. They replace copy-paste when you walk an **array** (or any repeating work). This overview covers **`for`**, **`while`**, **`do while`**, and **loop scope** with `let`.
+
+## Detailed Explanation
+
+- [x] **Why loops**
+  - Same code, over and over, each time with a different value.
+  - Typical with **arrays**: instead of `text += cars[0]` … `cars[5]`, use `for (let i = 0; i < cars.length; i++)`.
+- [x] **`for`**
+  - `for (expr1; expr2; expr3) { … }`
+  - **expr1** runs **once** before the block (`let i = 0`).
+  - **expr2** is the **condition** (`i < 5`).
+  - **expr3** runs **after each** iteration (`i++`).
+- [x] **Loop scope**
+  - `let` / `const` declared **inside** the loop are visible **only** in the loop.
+  - Outer `let i = 5` stays **5** if the loop declares its own `let i`.
+- [x] **`while`**
+  - Repeats **while the condition is true**: `while (i < 10) { … i++; }`.
+  - If you forget to **increase** the condition variable, the loop **never ends** and can **crash the browser**.
+- [x] **`do while`**
+  - Runs the block **once first**, then tests the condition.
+  - Runs **at least once**, even if the condition starts **false**.
+
+<img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-loops/index.html`. Confirm the cars list, `for` 0..4, `while` / `do while` 0..9, and that the outer `let` stays **5**.
+
+<img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-loops/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-loops/index.html`
+
+<img alt="js-loops source" src="./code_sandbox/snaps/js-loops-code.png" />
+
+```javascript
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+```
+
+Rendered result:
+
+<img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Why use a loop with an array instead of listing each index?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To run the **same code** for **each** element.
+- [x] Example: `for (let i = 0; i < cars.length; i++)` instead of `cars[0]` … `cars[5]`.
+
+</details>
+
+### Question 2: What do the three `for` expressions do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **expr1** runs **once** before the loop (initialize).
+- [x] **expr2** is the **condition** to keep looping.
+- [x] **expr3** runs **after each** iteration (usually increment).
+
+</details>
+
+### Question 3: What happens if you declare `let i` both outside and inside a `for` loop?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The inner `let i` is **only** visible **inside** the loop.
+- [x] The outer `let i` is **unchanged** after the loop.
+
+</details>
+
+### Question 4: When does `do while` run compared with `while`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`do while`** runs the block **once** before testing.
+- [x] It runs **at least once**, even if the condition starts **false**.
+
+</details>
+
+### Question 5: What if you forget to increment the `while` counter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The loop **never ends**.
+- [x] That can **crash the browser**.
+
+</details>
+
+</details>
+
+## Summary
+
+Loops repeat a block: **`for`** (init, condition, step), **`while`** (test then run), **`do while`** (run then test, at least once). Use them for arrays instead of copy-paste. `let`/`const` inside a loop stay **loop-scoped**. Always update the condition variable or the loop never ends.
+
+## References
+
+- [JS Loops (W3Schools)](https://www.w3schools.com/js/js_loops.asp)
+- [MDN: for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+- [MDN: while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+- [MDN: do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+
+</details>
+
+<details>
+  <summary>JS Loop for</summary>
+
+## Introduction
+
+The **`for`** statement creates a loop with **three optional expressions**: initialize, condition, and update. Omit any of them when you set or increment the counter **outside** the header — but if you omit the **condition**, you must **`break`** or the loop never ends.
+
+## Detailed Explanation
+
+- [x] **Syntax**
+  - `for (exp1; exp2; exp3) { // code }`
+  - **exp1** once before the block (`let i = 0`).
+  - **exp2** condition (`i < 5`). If it is **false**, the loop **ends**.
+  - **exp3** after each pass (`i++`).
+- [x] **Cars example**
+  - `const cars = ["BMW", "Volvo", "Saab", "Ford"];`
+  - Loop `i` from `0` to `cars.length - 1` and concatenate names.
+- [x] **exp1 is optional**
+  - Set `i` before the loop, then `for (; i < len; i++)`.
+  - Starting at `i = 2` walks from **Saab** onward.
+- [x] **exp2 is optional**
+  - If omitted, you **must** `break` inside, or the loop **never ends** (browser crash).
+- [x] **exp3 is optional**
+  - Can be `i--`, `i = i + 15`, or increment **inside** the body: `for (; i < len; ) { … i++; }`.
+- [x] **Loop scope: `var` vs `let`**
+  - `var i` in the loop **redeclares** an outer `var i`; after the loop `i` is **10**.
+  - `let i` in the loop does **not** redeclare outer `let i`; outer stays **5**.
+  - Loop `let i` is visible **only inside** the loop.
+
+<img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-loop-for/index.html`. Confirm 0..4, all four cars, omit-exp1 starts at **Saab Ford**, omit-exp3 still lists all cars, `var` after the loop is **10**, and outer `let` stays **5**.
+
+<img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-loop-for/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-loop-for/index.html`
+
+<img alt="js-loop-for source" src="./code_sandbox/snaps/js-loop-for-code.png" />
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + " ";
+}
+```
+
+Rendered result:
+
+<img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Are the three `for` expressions required?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** All three are **optional**.
+- [x] If you omit **exp2** (the condition), you must **`break`** or the loop never ends.
+
+</details>
+
+### Question 2: What is exp1 used for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To **initialize** the loop variable(s), e.g. `let i = 0`.
+- [x] You can set `i` **before** the loop and omit exp1.
+
+</details>
+
+### Question 3: What can exp3 do besides `i++`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Negative increment (`i--`).
+- [x] Larger steps (`i = i + 15`).
+- [x] Or increment **inside** the loop body and omit exp3.
+
+</details>
+
+### Question 4: How does `var` in a `for` header differ from `let`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`var i`** in the loop **redeclares** an outer `var i`; after the loop `i` is **10**.
+- [x] **`let i`** in the loop does **not** change an outer `let i`.
+
+</details>
+
+### Question 5: Where is a `let i` declared in the `for` header visible?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Only inside** the loop.
+
+</details>
+
+</details>
+
+## Summary
+
+**`for (exp1; exp2; exp3)`** initializes, tests, then updates. All three expressions are optional. Omit exp2 only if you **`break`**. `var` in the header leaks out of the loop; **`let` stays loop-scoped**.
+
+## References
+
+- [JS Loop for (W3Schools)](https://www.w3schools.com/js/js_loop_for.asp)
+- [MDN: for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+- [MDN: let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+- [MDN: var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+
+</details>
+
+<details>
+  <summary>JS Loop while</summary>
+
+## Introduction
+
+**While loops** run a block **as long as a condition is true**. JavaScript has **`while`** (test first) and **`do while`** (run first). A `while` is like a `for` with statement 1 and 3 omitted.
+
+## Detailed Explanation
+
+- [x] **Two while loops**
+  - **`while`** — test, then maybe run.
+  - **`do while`** — run once, then test.
+- [x] **`while` syntax**
+  - `while (condition) { // code }`
+  - Example: while `i < 10`, append text and **`i++`**.
+  - Forgetting **`i++`** means the loop **never ends** (browser crash).
+- [x] **`do while` syntax**
+  - `do { // code } while (condition);`
+  - Runs **at least once**, even if the condition starts **false**.
+  - Still increment the counter or it never ends.
+- [x] **`for` vs `while` (same idea)**
+  - `for (; cars[i]; ) { text += cars[i]; i++; }`
+  - `while (cars[i]) { text += cars[i]; i++; }`
+  - Both walk `["BMW", "Volvo", "Saab", "Ford"]` until a falsy slot.
+
+<img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-loop-while/index.html`. Confirm `while` and `do while` print 0..9, and that `for (;cars[i];)` matches `while (cars[i])` (**BMW Volvo Saab Ford**).
+
+<img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-loop-while/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-loop-while/index.html`
+
+<img alt="js-loop-while source" src="./code_sandbox/snaps/js-loop-while-code.png" />
+
+```javascript
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
+```
+
+Rendered result:
+
+<img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What are the two while-style loops?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`while`**
+- [x] **`do while`**
+
+</details>
+
+### Question 2: When does `do while` run if the condition is already false?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It still runs the block **once**.
+- [x] The test happens **after** the first run.
+
+</details>
+
+### Question 3: How is `while` like `for`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Like a `for` with **statement 1 and 3 omitted**.
+- [x] Example: `for (; cars[i]; )` vs `while (cars[i])`.
+
+</details>
+
+### Question 4: What happens if you never increment `i` in a `while`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The loop **never ends**.
+- [x] That can **crash the browser**.
+
+</details>
+
+### Question 5: Does `while (cars[i])` need a length check?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No** in this pattern: it stops when `cars[i]` is **falsy** (`undefined` past the end).
+
+</details>
+
+</details>
+
+## Summary
+
+**`while`** tests then runs. **`do while`** runs then tests (at least once). Both need a changing counter. A `while` matches a `for` with the first and third expressions left empty.
+
+## References
+
+- [JS Loop while (W3Schools)](https://www.w3schools.com/js/js_loop_while.asp)
+- [MDN: while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+- [MDN: do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+
+</details>
+
+<details>
+  <summary>JS Break</summary>
+
+## Introduction
+
+**`break`** **jumps out** of a **loop** or **`switch`**. In a loop it **stops immediately** (no more iterations). In a `switch` it prevents **fall-through**. With a **label**, `break` can leave a **nested loop** or even a **plain `{ }` block**.
+
+## Detailed Explanation
+
+- [x] **Break in loops**
+  - When `break` runs, the loop **terminates**.
+  - Control continues **after** the loop.
+  - Example: `if (i === 3) { break; }` → numbers **0 1 2** only.
+- [x] **Break in `switch`**
+  - Exits the switch after a matching **case**.
+  - Without `break`, execution **falls through** later cases (and `default`).
+- [x] **Labels**
+  - `labelname: statement;` or `labelname: { statements }`
+  - Identifier plus a **colon**.
+- [x] **Labeled `break`**
+  - `break labelname;`
+  - Useful to leave an **outer** loop from an **inner** one.
+  - `break loop1` stops **both** nested loops; `break loop2` stops only the **inner** loop.
+- [x] **Break a code block**
+  - Without a label, `break` only leaves a **loop** or **switch**.
+  - With a label, `break` can leave **any** `{ }` block (example: stop after the second car).
+
+<img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-break/index.html`. Confirm break-at-3 prints **0 1 2**, weekday `switch` has a name, `break loop1` is shorter than `break loop2`, and the labeled block stops at **BMW Volvo**.
+
+<img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-break/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-break/index.html`
+
+<img alt="js-break source" src="./code_sandbox/snaps/js-break-code.png" />
+
+```javascript
+for (let i = 0; i < 10; i++) {
+  if (i === 3) {
+    break;
+  }
+  text += "The number is " + i + " ";
+}
+```
+
+Rendered result:
+
+<img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `break` do in a loop?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It **terminates** the loop immediately.
+- [x] No more iterations run.
+
+</details>
+
+### Question 2: Why is `break` needed in `switch`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To **exit** after a matching case.
+- [x] Without it, execution **falls through** later cases.
+
+</details>
+
+### Question 3: What is a label?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An identifier followed by a **colon**.
+- [x] It names a statement or `{ }` block for flow control.
+
+</details>
+
+### Question 4: `break loop1` vs `break loop2` in nested loops?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`break loop1`** leaves the **outer** loop (stops everything).
+- [x] **`break loop2`** leaves only the **inner** loop.
+
+</details>
+
+### Question 5: Can `break` leave a plain `{ }` block?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes**, if the block has a **label** (`break list`).
+- [x] Without a label, `break` only works in a **loop** or **switch**.
+
+</details>
+
+</details>
+
+## Summary
+
+**`break`** exits a loop or `switch` immediately. In `switch` it stops fall-through. **Labels** let `break` target an outer loop or a named block. `break` and `continue` are the only statements that can jump out of a `{ }` block.
+
+## References
+
+- [JS Break (W3Schools)](https://www.w3schools.com/js/js_break.asp)
+- [MDN: break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break)
+- [MDN: labeled statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label)
+- [MDN: switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+
+</details>
+
+<details>
+  <summary>JS Continue</summary>
+
+## Introduction
+
+**`continue`** **skips the rest of the current iteration** and starts the **next** one. With a **label**, it can skip to the next pass of an **outer** loop, not only the inner one.
+
+## Detailed Explanation
+
+- [x] **Skip one pass**
+  - Remaining code in that iteration is **skipped**.
+  - Processing moves to the **next** iteration.
+  - Example: `if (i === 3) { continue; }` → **1 2 4 5 6 7 8 9** (no 3).
+- [x] **Labels (same idea as `break`)**
+  - `labelname: statement;`
+  - `continue labelname;`
+- [x] **Labeled `continue`**
+  - **`continue loop1`** skips the rest of the **outer** iteration (inner loop does not finish that outer pass).
+  - **`continue loop2`** skips only the **inner** iteration (`3` is omitted; `1 2 4` repeats).
+- [x] **Jump-out statements**
+  - **`break`** and **`continue`** are the only statements that can jump out of a `{ }` block.
+
+<img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-continue/index.html`. Confirm **3** is missing from 1..9, `continue loop1` prints **12121212**, and `continue loop2` prints **124124124124**.
+
+<img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-continue/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-continue/index.html`
+
+<img alt="js-continue source" src="./code_sandbox/snaps/js-continue-code.png" />
+
+```javascript
+for (let i = 1; i < 10; i++) {
+  if (i === 3) {
+    continue;
+  }
+  text += "The number is " + i + " ";
+}
+```
+
+Rendered result:
+
+<img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `continue` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Skips the **rest of the current** iteration.
+- [x] The loop **keeps going** with the next pass.
+
+</details>
+
+### Question 2: How is `continue` different from `break`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`break`** **ends** the loop.
+- [x] **`continue`** **skips one** iteration and continues.
+
+</details>
+
+### Question 3: What does `continue loop1` do in nested loops?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Skips to the next iteration of the **outer** labeled loop.
+- [x] The inner loop does not finish that outer pass.
+
+</details>
+
+### Question 4: What does `continue loop2` do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Skips only the **inner** loop’s current pass.
+- [x] The outer loop still runs its remaining inner iterations.
+
+</details>
+
+### Question 5: Which statements can jump out of a `{ }` block?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`break`**
+- [x] **`continue`**
+
+</details>
+
+</details>
+
+## Summary
+
+**`continue`** skips the rest of **this** iteration and starts the next. Labels let it target an **outer** loop. Unlike `break`, the loop **does not stop**. Only `break` and `continue` jump out of a code block.
+
+## References
+
+- [JS Continue (W3Schools)](https://www.w3schools.com/js/js_continue.asp)
+- [MDN: continue](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue)
+- [MDN: labeled statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label)
+
+</details>
+
+<details>
+  <summary>JS Control Flow</summary>
+
+## Introduction
+
+**Control flow** is the **order** statements run. By default JavaScript goes **top to bottom, left to right**. Conditions, loops, jumps, and function calls **change** that order. JavaScript is **single-threaded** (one thing at a time) unless you use **async** APIs.
+
+## Detailed Explanation
+
+- [x] **Default flow**
+  - Sequential: `let x = 5; let y = 6; let z = x + y;` → **11**.
+- [x] **Conditional control flow**
+  - **`if`**, **`if...else`**, **`switch`**, ternary **`? :`**.
+  - Example: `age >= 18` → **Adult**, else **Minor**.
+- [x] **Loops (repetition)**
+  - **`for`**, **`while`**, **`do...while`**.
+  - Repeat until a condition is false (`i < 5`).
+- [x] **Jump statements**
+  - **`break`** — exit a loop or switch.
+  - **`continue`** — skip this iteration.
+  - **`return`** — exit a function.
+  - **`throw`** — jump to error handling.
+- [x] **Function flow**
+  - Functions are **callable, reusable** blocks.
+  - They run **when called**: `function myFunction(p1, p2) { return p1 * p2; }`.
+- [x] **Single-threaded**
+  - JavaScript does **one thing at a time**.
+  - Slow work (file/network) can **freeze** the page unless you use **asynchronous** programming (later Advanced chapter).
+
+<img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-control-flow/index.html`. Confirm sequential **z = 11**, age 18 → **Adult**, for 0..4, break at 3 → **0 1 2**, and `myFunction(4, 3)` → **12**.
+
+<img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-control-flow/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-control-flow/index.html`
+
+<img alt="js-control-flow source" src="./code_sandbox/snaps/js-control-flow-code.png" />
+
+```javascript
+let x = 5;
+let y = 6;
+let z = x + y;
+```
+
+Rendered result:
+
+<img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is control flow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **order** in which statements execute.
+- [x] Default is **top to bottom**, **left to right**.
+
+</details>
+
+### Question 2: Which statements change flow with conditions?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`if`** / **`if...else`**
+- [x] **`switch`**
+- [x] Ternary **`? :`**
+
+</details>
+
+### Question 3: Name the four jump statements on this page.
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`break`** — exit loop or switch.
+- [x] **`continue`** — skip this iteration.
+- [x] **`return`** — exit a function.
+- [x] **`throw`** — jump to error handling.
+
+</details>
+
+### Question 4: When does a function run?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **When it is called**, not when it is defined.
+
+</details>
+
+### Question 5: What does “JavaScript is single-threaded” mean?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It can do **one thing at a time**.
+- [x] Slow tasks can **freeze** the app unless you use **async** APIs.
+
+</details>
+
+</details>
+
+## Summary
+
+Default flow is sequential. **Conditions** branch, **loops** repeat, **jumps** (`break`, `continue`, `return`, `throw`) cut across that order, and **functions** run when called. JavaScript is **single-threaded**; async work is covered later.
+
+## References
+
+- [JS Control Flow (W3Schools)](https://www.w3schools.com/js/js_control_flow.asp)
+- [MDN: Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [MDN: return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
+- [MDN: throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
+
+</details>
+
+<details>
+  <summary>JS Strings</summary>
+
+## Introduction
+
+**Strings** store **text**. Write them in **single** or **double** quotes (same result), or **backticks** (templates). Use **`length`**, **escape** quotes with `\`, and prefer **literals** over `new String()`.
+
+## Detailed Explanation
+
+- [x] **Quotes**
+  - Zero or more characters inside quotes: `let text = "John Doe";`
+  - `'Volvo XC60'` and `"Volvo XC60"` work the **same**.
+- [x] **Quotes inside quotes**
+  - Inner quotes must **differ** from the outer ones: `"It's alright"`, `'He is called "Johnny"'`.
+- [x] **Template strings (ES6)**
+  - Backticks: `` `He's often called "Johnny"` ``
+  - Allow both quote kinds inside, and **multiline** text.
+- [x] **`length`**
+  - `"ABCDEFGHIJKLMNOPQRSTUVWXYZ".length` is **26**.
+- [x] **Escape characters**
+  - `\"` `\'` `\\` put `"`, `'`, and `\` in a string.
+  - `\n` `\t` and similar exist; most do not matter in HTML.
+- [x] **Long lines**
+  - Break a statement **after an operator**, or split a string with **`+`**.
+- [x] **Do not use `new String()`**
+  - Literals are primitives: `let x = "John";`
+  - `new String("John")` is an **object** — slower, surprising `===` (literal vs object is **false**).
+  - Comparing two String **objects** with `==` / `===` is **false**.
+
+<img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-strings/index.html`. Confirm mixed quotes, template quotes, A–Z **length 26**, escaped Vikings, and `==` true / `===` false for literal vs `new String`.
+
+<img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-strings/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-strings/index.html`
+
+<img alt="js-strings source" src="./code_sandbox/snaps/js-strings-code.png" />
+
+```javascript
+let text = "John Doe";
+let carName1 = "Volvo XC60";
+let carName2 = "Volvo XC60";
+```
+
+Rendered result:
+
+<img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Is there a difference between `'text'` and `"text"`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Single and double quotes work the **same**.
+
+</details>
+
+### Question 2: How do you put a quote inside a string?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use the **other** quote style around the string.
+- [x] Or **escape** with `\'` or `\"`.
+
+</details>
+
+### Question 3: How do template strings differ?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They use **backticks**.
+- [x] They allow **both** quote kinds inside and **multiline** text.
+
+</details>
+
+### Question 4: What does `length` return for A–Z?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **26.**
+
+</details>
+
+### Question 5: Why avoid `new String("John")`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It creates an **object**, not a primitive.
+- [x] It slows code and makes **`===`** fail against a string literal.
+
+</details>
+
+</details>
+
+## Summary
+
+Strings are quoted text. Single and double quotes match; backticks add templates and multiline. Escape with `\`. Use **`length`**. Prefer **literals**; `new String()` is an object and surprises `===`.
+
+## References
+
+- [JS Strings (W3Schools)](https://www.w3schools.com/js/js_strings.asp)
+- [MDN: String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [MDN: Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+</details>
+
+<details>
+  <summary>JS String Templates</summary>
+
+## Introduction
+
+**Template strings** (also called **template literals**) use **backticks** `` ` ``. They allow quotes inside the string, **multiline** text, and **`${…}` interpolation** of variables and expressions. ES6; modern browsers since 2017.
+
+## Detailed Explanation
+
+- [x] **Back-tick syntax**
+  - ``let text = `Hello World!`;``
+- [x] **Quotes inside**
+  - `` `He's often called "Johnny"` ``
+- [x] **Multiline**
+  - Newlines inside backticks are **kept**.
+- [x] **Interpolation**
+  - `` `Welcome ${firstName}, ${lastName}!` ``
+- [x] **Expression substitution**
+  - `` `Total: ${(price * (1 + VAT)).toFixed(2)}` `` → **Total: 12.50** when price is 10 and VAT is 0.25.
+- [x] **HTML templates**
+  - You can build markup strings with backticks and a loop over tags (see the page’s HTML example).
+
+<img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-string-templates/index.html`. Confirm Hello World, mixed quotes, multiline newline **true**, **Welcome John, Doe!**, and **Total: 12.50**.
+
+<img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-templates/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-string-templates/index.html`
+
+<img alt="js-string-templates source" src="./code_sandbox/snaps/js-string-templates-code.png" />
+
+```javascript
+let firstName = "John";
+let lastName = "Doe";
+let text = `Welcome ${firstName}, ${lastName}!`;
+```
+
+Rendered result:
+
+<img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What characters wrap a template string?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Backticks** `` ` ``, not `'` or `"`.
+
+</details>
+
+### Question 2: How do you insert a variable?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`${variable}`** inside the backticks.
+
+</details>
+
+### Question 3: Can you put an expression in `${}`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** Example: `${(price * (1 + VAT)).toFixed(2)}`.
+
+</details>
+
+### Question 4: Do template strings allow multiline text?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** Newlines inside backticks are part of the string.
+
+</details>
+
+### Question 5: When did browsers fully support this?
+
+<details>
+<summary>Answer</summary>
+
+- [x] ES6 feature; modern browsers since **June 2017**.
+
+</details>
+
+</details>
+
+## Summary
+
+Backtick strings hold quotes, multiple lines, and **`${…}`** substitutions (variables or expressions). They are ES6 template literals.
+
+## References
+
+- [JS String Templates (W3Schools)](https://www.w3schools.com/js/js_string_templates.asp)
+- [MDN: Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+</details>
+
+<details>
+  <summary>JS String Methods</summary>
+
+## Introduction
+
+Strings are **primitive and immutable**. Every method returns a **new** string; the original is unchanged. This page covers **length**, character access, **slice/substring**, case, trim, pad, **replace**, and **split** (plus notes on deprecated `substr` and emoji-safe splitting).
+
+## Detailed Explanation
+
+- [x] **Immutable**
+  - Methods never edit in place; they **return a new string**.
+- [x] **`length`**
+  - `"ABCDEFGHIJKLMNOPQRSTUVWXYZ".length` → **26**.
+- [x] **Characters**
+  - `charAt(0)`, `charCodeAt(0)`, `codePointAt(0)`, ES2022 **`at(i)`** (supports **negative** indexes), and `text[0]`.
+  - `[]` looks like an array but is not; missing index is **`undefined`** (`charAt` returns `""`).
+  - `text[0] = "A"` does not change the string.
+- [x] **Parts**
+  - **`slice(start, end)`** — end not included; negatives count from the end. `"Apple, Banana, Kiwi".slice(7, 13)` → **Banana**.
+  - **`substring`** — like slice, but negative start/end become **0**.
+  - **`substr`** — second arg is **length**; **deprecated** (use `slice` / `substring`).
+- [x] **Case, trim, pad, repeat**
+  - `toUpperCase()` / `toLowerCase()`.
+  - `trim()`, `trimStart()`, `trimEnd()`.
+  - `padStart(4, "0")` / `padEnd`; pad a **string** (convert numbers first).
+  - `repeat(count)` copies the string.
+- [x] **Replace**
+  - `replace` changes the **first** match; case-sensitive unless `/i`.
+  - All matches: regex `/g`, or **`replaceAll()`** (ES2021).
+- [x] **`split`**
+  - Turns a string into an array (`""`, `","`, `" "`).
+  - `split("")` is **unsafe** for emojis (breaks UTF-16 surrogates). Prefer **`Intl.Segmenter`** for graphemes.
+
+<img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-string-methods/index.html`. Confirm length **26**, `charAt(0)` **H**, `at(2)` **S**, slice **Banana**, `padStart` **0005**, replace **W3Schools**, and split words.
+
+<img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-methods/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-string-methods/index.html`
+
+<img alt="js-string-methods source" src="./code_sandbox/snaps/js-string-methods-code.png" />
+
+```javascript
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
+```
+
+Rendered result:
+
+<img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Do string methods change the original string?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Strings are **immutable**.
+- [x] Methods return a **new** string.
+
+</details>
+
+### Question 2: What can `at()` do that `charAt()` cannot?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Negative indexes** (count from the end).
+- [x] ES2022 method.
+
+</details>
+
+### Question 3: What does `slice(7, 13)` return from `"Apple, Banana, Kiwi"`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Banana** (end index not included).
+
+</details>
+
+### Question 4: Should you use `substr()`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** It is **deprecated**.
+- [x] Use **`slice()`** or **`substring()`**.
+
+</details>
+
+### Question 5: Why is `split("")` unsafe for emojis?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It splits **UTF-16 code units** and can break surrogate pairs.
+- [x] **`Intl.Segmenter`** is the safe grapheme split.
+
+</details>
+
+</details>
+
+## Summary
+
+String methods return **new** strings. Use `length`, `charAt`/`at`, `slice`/`substring` (not deprecated `substr`), case/trim/pad/repeat, `replace`/`replaceAll`, and `split`. Avoid `split("")` on emoji text.
+
+## References
+
+- [JS String Methods (W3Schools)](https://www.w3schools.com/js/js_string_methods.asp)
+- [MDN: String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [MDN: String.prototype.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/at)
+- [MDN: String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+- [MDN: Intl.Segmenter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter)
+
+</details>
+
+<details>
+  <summary>JS String Search</summary>
+
+## Introduction
+
+Search methods find text **inside** a string: **position** (`indexOf`, `lastIndexOf`, `search`), **matches** (`match`, `matchAll`), or **true/false** (`includes`, `startsWith`, `endsWith`). Positions start at **0**. Missing text is **`-1`**.
+
+## Detailed Explanation
+
+- [x] **`indexOf` / `lastIndexOf`**
+  - First vs **last** occurrence; **`-1`** if not found.
+  - `"Please locate where 'locate' occurs!".indexOf("locate")` → **7**.
+  - Optional second arg: **start position**. `lastIndexOf` searches **backward** from that index.
+- [x] **`search`**
+  - String or **regex**; returns the match **position**.
+  - **Not** the same as `indexOf`: `search` has **no** start-index argument; `indexOf` cannot take a **regex**.
+- [x] **`match` / `matchAll`**
+  - `match` returns an **array** of matches (or first match without `/g`).
+  - `/ain/gi` on the rain sentence finds **ain, AIN, ain, ain**.
+  - `matchAll` (ES2020) returns an **iterator**; regex needs the **`g`** flag.
+- [x] **Boolean checks (ES6)**
+  - `includes("world")`, `startsWith("Hello")`, `endsWith("Doe")`.
+  - All **case-sensitive**; optional start (or length for `endsWith`) argument.
+
+<img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-string-search/index.html`. Confirm `indexOf` **7**, `lastIndexOf` **21**, `search` **7**, four `ain` matches, and the three boolean checks **true**.
+
+<img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-search/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-string-search/index.html`
+
+<img alt="js-string-search source" src="./code_sandbox/snaps/js-string-search-code.png" />
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+```
+
+Rendered result:
+
+<img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `indexOf` return if the text is missing?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`-1`.**
+
+</details>
+
+### Question 2: How do `indexOf` and `search` differ?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`search`** cannot take a **start position**.
+- [x] **`indexOf`** cannot take a **regular expression**.
+
+</details>
+
+### Question 3: What does `lastIndexOf` do with a start index of 15?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It searches **backward** from position 15 toward the start.
+
+</details>
+
+### Question 4: What does `includes` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`true`** or **`false`**.
+- [x] Case-sensitive ES6 method.
+
+</details>
+
+### Question 5: When does `match` return only the first match?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When the regex has **no** `/g` (global) flag.
+
+</details>
+
+</details>
+
+## Summary
+
+Use **`indexOf` / `lastIndexOf` / `search`** for positions (`-1` if missing), **`match` / `matchAll`** for match lists, and **`includes` / `startsWith` / `endsWith`** for booleans. `search` takes regex; `indexOf` takes a start index.
+
+## References
+
+- [JS String Search (W3Schools)](https://www.w3schools.com/js/js_string_search.asp)
+- [MDN: String.prototype.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+- [MDN: String.prototype.search()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+- [MDN: String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+
+</details>
+
+<details>
+  <summary>JS String Reference</summary>
+
+## Introduction
+
+This page is the **complete String reference** (revised July 2025): properties and methods from **`at()`** through **`valueOf()`**. All methods return a **new** value. HTML wrapper methods (`bold()`, `italics()`, …) are **deprecated** — use CSS and the DOM instead.
+
+## Detailed Explanation
+
+- [x] **Core idea**
+  - Methods do **not** change the original string.
+- [x] **Useful names on the table**
+  - Access: `at`, `charAt`, `charCodeAt`, `codePointAt`, `length`.
+  - Search: `indexOf`, `lastIndexOf`, `includes`, `startsWith`, `endsWith`, `search`, `match`, `matchAll`.
+  - Transform: `slice`, `substring`, `concat`, `repeat`, `replace`, `replaceAll`, `split`, `trim` / `trimStart` / `trimEnd`, `padStart` / `padEnd`, case converters.
+  - **`substr()` is deprecated** — use `substring()` or `slice()`.
+- [x] **HTML wrappers (do not use)**
+  - `anchor`, `big`, `blink`, `bold`, `fixed`, `fontcolor`, `fontsize`, `italics`, `link`, `small`, `strike`, `sub`, `sup`.
+  - Deprecated; kept only for compatibility.
+
+<img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Run `code_sandbox/js-string-reference/index.html`. Confirm `trim()` returns a **new** string while the original still has spaces, and that the note prefers **slice/substring** over `substr`.
+
+<img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-reference/`.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Sandbox: `code_sandbox/js-string-reference/index.html`
+
+<img alt="js-string-reference source" src="./code_sandbox/snaps/js-string-reference-code.png" />
+
+```javascript
+let original = " Hello ";
+let trimmed = original.trim();
+```
+
+Rendered result:
+
+<img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Do string methods mutate the original?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** They return a **new** value.
+
+</details>
+
+### Question 2: What should you use instead of `substr()`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`substring()`** or **`slice()`**.
+- [x] `substr()` is **deprecated**.
+
+</details>
+
+### Question 3: Should you use `bold()` / `italics()` string methods?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** HTML wrappers are **deprecated**.
+- [x] Use **CSS** and **DOM** APIs.
+
+</details>
+
+### Question 4: What does `length` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **length** of the string (a property, not a method).
+
+</details>
+
+### Question 5: Where is the full method list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] On [JS String Reference (W3Schools)](https://www.w3schools.com/js/js_string_reference.asp).
+- [x] Also [MDN String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+
+</details>
+
+</details>
+
+## Summary
+
+The String reference lists every property and method. Methods return new strings. Skip **`substr`** and the old **HTML wrapper** methods; style with CSS and the DOM.
+
+## References
+
+- [JS String Reference (W3Schools)](https://www.w3schools.com/js/js_string_reference.asp)
+- [MDN: String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [W3Schools JavaScript Reference](https://www.w3schools.com/jsref/default.asp)
+
+</details>

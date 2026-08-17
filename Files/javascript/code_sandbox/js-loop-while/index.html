@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Loop while</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript While Loops</h2>
+    <p id="out"></p>
+    <script>
+      let i = 0;
+      let w = "";
+      while (i < 10) {
+        w += i + " ";
+        i++;
+      }
+      i = 0;
+      let d = "";
+      do {
+        d += i + " ";
+        i++;
+      } while (i < 10);
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      i = 0;
+      let forText = "";
+      for (; cars[i]; ) {
+        forText += cars[i] + " ";
+        i++;
+      }
+      i = 0;
+      let whileText = "";
+      while (cars[i]) {
+        whileText += cars[i] + " ";
+        i++;
+      }
+      document.getElementById("out").innerHTML =
+        "while 0..9 -> " +
+        w.trim() +
+        "<br>do while 0..9 -> " +
+        d.trim() +
+        "<br>for (;cars[i];) -> " +
+        forText.trim() +
+        "<br>while (cars[i]) -> " +
+        whileText.trim();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Loops</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Loops</h2>
+    <p id="out"></p>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+      let carsText = "";
+      for (let i = 0; i < cars.length; i++) {
+        carsText += cars[i] + " ";
+      }
+      let nums = "";
+      for (let i = 0; i < 5; i++) {
+        nums += i + " ";
+      }
+      let i = 0;
+      let w = "";
+      while (i < 10) {
+        w += i + " ";
+        i++;
+      }
+      i = 0;
+      let d = "";
+      do {
+        d += i + " ";
+        i++;
+      } while (i < 10);
+      let outer = 5;
+      for (let i = 0; i < 10; i++) {}
+      document.getElementById("out").innerHTML =
+        "for cars -> " +
+        carsText.trim() +
+        "<br>for 0..4 -> " +
+        nums.trim() +
+        "<br>while 0..9 -> " +
+        w.trim() +
+        "<br>do while 0..9 -> " +
+        d.trim() +
+        "<br>outer let stays " +
+        outer;
+    </script>
+  </body>
+</html>

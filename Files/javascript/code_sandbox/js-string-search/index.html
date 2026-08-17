@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS String Search</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript String Search</h2>
+    <p id="out"></p>
+    <script>
+      let text = "Please locate where 'locate' occurs!";
+      let rain = "The rain in SPAIN stays mainly in the plain";
+      let hello = "Hello world, welcome to the universe.";
+      document.getElementById("out").innerHTML =
+        "indexOf(locate) = " +
+        text.indexOf("locate") +
+        "<br>lastIndexOf(locate) = " +
+        text.lastIndexOf("locate") +
+        "<br>search(/locate/) = " +
+        text.search(/locate/) +
+        "<br>match(/ain/gi) = " +
+        rain.match(/ain/gi).join(", ") +
+        "<br>includes('world') = " +
+        hello.includes("world") +
+        "<br>startsWith('Hello') = " +
+        hello.startsWith("Hello") +
+        "<br>endsWith('Doe') = " +
+        "John Doe".endsWith("Doe");
+    </script>
+  </body>
+</html>

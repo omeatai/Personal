@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS String Reference</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript String Reference</h2>
+    <p id="out"></p>
+    <script>
+      let original = " Hello ";
+      let trimmed = original.trim();
+      document.getElementById("out").innerHTML =
+        "original still has spaces: '" +
+        original +
+        "'<br>trim() new value: '" +
+        trimmed +
+        "'<br>length = " +
+        "ABC".length +
+        "<br>substr is deprecated; use slice/substring";
+    </script>
+  </body>
+</html>

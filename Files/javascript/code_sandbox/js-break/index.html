@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Break</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Break</h2>
+    <p id="out"></p>
+    <script>
+      let text = "";
+      for (let i = 0; i < 10; i++) {
+        if (i === 3) {
+          break;
+        }
+        text += i + " ";
+      }
+      let day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+      }
+      let t1 = "";
+      loop1: for (let j = 1; j < 5; j++) {
+        loop2: for (let i = 1; i < 5; i++) {
+          if (i === 3) {
+            break loop1;
+          }
+          t1 += i;
+        }
+      }
+      let t2 = "";
+      loop1b: for (let j = 1; j < 5; j++) {
+        loop2b: for (let i = 1; i < 5; i++) {
+          if (i === 3) {
+            break loop2b;
+          }
+          t2 += i;
+        }
+      }
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let block = "";
+      list: {
+        block += cars[0] + " ";
+        block += cars[1] + " ";
+        break list;
+        block += cars[2] + " ";
+        block += cars[3] + " ";
+      }
+      document.getElementById("out").innerHTML =
+        "break at 3 -> " +
+        text.trim() +
+        "<br>switch weekday -> " +
+        day +
+        "<br>break loop1 -> " +
+        t1 +
+        "<br>break loop2 -> " +
+        t2 +
+        "<br>break block -> " +
+        block.trim();
+    </script>
+  </body>
+</html>
