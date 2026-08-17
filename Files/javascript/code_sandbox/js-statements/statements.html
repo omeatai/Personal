@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Statements - Order</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Statements</h2>
+    <pre id="demo"></pre>
+    <p id="msg"></p>
+    <script>
+      let x, y, z; // Statement 1
+      x = 5; // Statement 2
+      y = 6; // Statement 3
+      z = x + y; // Statement 4
+      document.getElementById("demo").innerText =
+        "x = " + x + ", y = " + y + ", z = x + y = " + z;
+      document.getElementById("msg").innerHTML = "Hello Dolly.";
+    </script>
+  </body>
+</html>

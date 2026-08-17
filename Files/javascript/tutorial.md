@@ -1016,42 +1016,99 @@ A computer program is a list of **instructions** to **execute**. Those instructi
 
 ## Detailed Explanation
 
-- [x] **What a statement is**
-  - Statements are composed of **values**, **operators**, **expressions**, **keywords**, and **comments**.
-  - Example statements: `let x, y, z;` then `x = 5;` `y = 6;` `z = x + y;`.
-  - `document.getElementById("demo").innerHTML = "Hello Dolly.";` writes into `#demo`.
-  - Programs (and statements) are often called **JavaScript code**.
-- [x] **Semicolons**
-  - Semicolons **separate** statements.
-  - Add a semicolon at the end of each **executable** statement.
-  - Multiple statements on **one line** are allowed when separated by semicolons: `a = 5; b = 6; c = a + b;`.
-  - Ending with a semicolon is **not required**, but **highly recommended**.
-- [x] **White space**
-  - `let person = "Hege";` and `let person="Hege";` are **equivalent**.
-- [x] **Line length and line breaks**
-  - Prefer lines **not longer than 80 characters**.
-  - If a statement does not fit, break **after an operator**: `document.getElementById("demo").innerHTML =` then `"Hello Dolly!";`.
-- [x] **Code blocks**
-  - Group statements in **curly brackets** `{...}` to run them **together**.
-  - Functions are one place you find blocks. This tutorial uses **2 spaces** of indentation.
-- [x] **Keywords**
-  - Statements often start with a keyword (`var`, `let`, `const`, `if`, `switch`, `for`, `function`, `return`, `try`, …).
-  - Keywords are **reserved** and **cannot** be used as variable names.
+- [x] **A program is a list of statements**
+  - Each **statement** is one instruction; a program is many statements executed **top to bottom, in order**.
+  - In a web page, the **browser** executes them.
+  - Statements are built from **values, operators, expressions, keywords, and comments**.
 
-Sandbox: `code_sandbox/js-statements/index.html`
+### **Example 1: Statements and execution order**
 
-<img alt="js-statements source" src="./code_sandbox/snaps/js-statements-code.png" />
+- [x] The four numbered lines run **in sequence**: declare `x, y, z`; assign `x = 5`; assign `y = 6`; then compute `z = x + y`.
+- [x] Order matters — `z` can only be `11` because `x` and `y` were assigned **before** the `z = x + y` line.
+- [x] The last statement writes **"Hello Dolly."** into `#demo` with `innerHTML`.
+
+Sandbox: `code_sandbox/js-statements/statements.html`
 
 ```javascript
 let x, y, z; // Statement 1
 x = 5; // Statement 2
 y = 6; // Statement 3
 z = x + y; // Statement 4
+document.getElementById("demo").innerHTML = "Hello Dolly.";
 ```
 
-Rendered result:
+<img alt="js-statements example 1 source" src="./code_sandbox/snaps/js-statements-01-code.png" />
 
-<img alt="js-statements result" src="./code_sandbox/snaps/js-statements-result.png" />
+<img alt="js-statements example 1 result" src="./code_sandbox/snaps/js-statements-01-result.png" />
+
+- [x] **Outcome:** the page prints **x = 5, y = 6, z = x + y = 11** and the message **Hello Dolly.**
+
+### **Example 2: Semicolons separate statements**
+
+- [x] A **semicolon** ends an executable statement. Ending statements with `;` is **not strictly required** but **highly recommended**.
+- [x] Because semicolons separate statements, you can even put **several on one line**: `a = 5; b = 6; c = a + b;`.
+- [x] **White space** is ignored: `let person = "Hege";` and `let person="Hege";` are equivalent — put spaces around operators for readability.
+
+Sandbox: `code_sandbox/js-statements/semicolons.html`
+
+```javascript
+let a, b, c; // Declare 3 variables
+a = 5; // Assign 5 to a
+b = 6; // Assign 6 to b
+c = a + b; // Assign the sum to c
+
+// multiple statements on one line are allowed:
+a = 5;
+b = 6;
+c = a + b;
+```
+
+<img alt="js-statements example 2 source" src="./code_sandbox/snaps/js-statements-02-code.png" />
+
+<img alt="js-statements example 2 result" src="./code_sandbox/snaps/js-statements-02-result.png" />
+
+- [x] **Outcome:** the page reports **a = 5, b = 6, c = a + b = 11** — the three statements executed and produced the sum.
+
+### **Example 3: Code blocks**
+
+- [x] Statements grouped inside **curly brackets `{ ... }`** form a **code block** that runs together.
+- [x] Functions are the most common place you meet blocks; this tutorial uses **2 spaces** of indentation.
+- [x] Calling `myFunction()` runs **both** inner statements, filling `#demo1` and `#demo2`.
+
+Sandbox: `code_sandbox/js-statements/blocks.html`
+
+```javascript
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+myFunction();
+```
+
+<img alt="js-statements example 3 source" src="./code_sandbox/snaps/js-statements-03-code.png" />
+
+<img alt="js-statements example 3 result" src="./code_sandbox/snaps/js-statements-03-result.png" />
+
+- [x] **Outcome:** both paragraphs appear — **Hello Dolly!** and **How are you?** — because the block's two statements ran together.
+
+### **Line breaks and keywords (reference)**
+
+- [x] **Line length:** for readability, keep lines under ~**80 characters**; if a statement is too long, break it **after an operator** (e.g. after `=`).
+- [x] **Keywords** often start a statement and name the action to perform. They are **reserved words** and cannot be used as variable names:
+
+| Keyword    | Description                                     |
+| ---------- | ----------------------------------------------- |
+| `var`      | Declares a variable                             |
+| `let`      | Declares a block variable                       |
+| `const`    | Declares a block constant                       |
+| `if`       | Marks statements to run on a condition          |
+| `switch`   | Marks statements to run in different cases      |
+| `for`      | Marks statements to run in a loop               |
+| `function` | Declares a function                             |
+| `return`   | Exits a function                                |
+| `try`      | Implements error handling for a block           |
+
+- [x] **Page exercise —** *How many statements in `let a = 5; let b = 6; c = a + b;`?* → **3** (each `;`-separated instruction is one statement).
 
 <details>
   <summary>Terminal Commands</summary>
