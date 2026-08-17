@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Arithmetic - Increment & Decrement</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Increment & Decrement</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = 5;
+      let post = x++; // postfix: returns the OLD value, then adds 1
+      let y = 5;
+      let pre = ++y; // prefix: adds 1 first, returns the NEW value
+      let z = 8;
+      z--; // decrement by 1
+      document.getElementById("demo").innerText =
+        "x++ : returned " + post + ", x is now " + x + "  (postfix returns old)\n" +
+        "++y : returned " + pre + ", y is now " + y + "  (prefix returns new)\n" +
+        "z-- : z is now " + z;
+    </script>
+  </body>
+</html>

@@ -2587,31 +2587,101 @@ Arithmetic operators work on **numbers** (literals or variables). The numbers ar
 
 ## Detailed Explanation
 
-- [x] **Operators and operands**
-  - Example: `100 + 50` — operands `100` and `50`, operator `+`.
-- [x] **The operators**
-  - `+` add, `-` subtract, `*` multiply, `/` divide.
-  - `%` **modulus** — the **remainder**.
-  - `++` increment, `--` decrement.
-  - `**` exponentiation (`x ** y` is the same as `Math.pow(x, y)`).
-- [x] **Precedence**
-  - `*` and `/` happen **before** `+` and `-`.
-  - `100 + 50 * 3` is **not** `(100 + 50) * 3`.
-  - **Parentheses** change the order: `(100 + 50) * 3`.
-  - Same-precedence ops run **left to right** (`100 + 50 - 3`).
+- [x] **Arithmetic operators work on numbers** (literals or variables). In `100 + 50`, the numbers are the **operands** and `+` is the **operator**.
+- [x] The set is `+ - * / % ** ++ --`, and expressions follow **operator precedence** rules.
+- [x] Each demo below isolates one idea: basic math, remainder/power, increment/decrement, and precedence.
 
-Sandbox: `code_sandbox/js-arithmetic/index.html`
+### **Example 1: Basic arithmetic (`+ - * /`)**
 
-<img alt="js-arithmetic source" src="./code_sandbox/snaps/js-arithmetic-code.png" />
+- [x] The four everyday operators add, subtract, multiply, and divide their operands.
+- [x] Division returns the exact quotient here (`100 / 50` → `2`), but can produce decimals for uneven divisions.
+
+Sandbox: `code_sandbox/js-arithmetic/basic.html`
 
 ```javascript
-let a = 3;
-let x = (100 + 50) * a;
+let a = 100, b = 50;   // operands 100 and 50
+
+a + b;   // 150   +  add
+a - b;   // 50    -  subtract
+a * b;   // 5000  *  multiply
+a / b;   // 2     /  divide
 ```
 
-Rendered result:
+<img alt="js-arithmetic example 1 source" src="./code_sandbox/snaps/js-arithmetic-01-code.png" />
 
-<img alt="js-arithmetic result" src="./code_sandbox/snaps/js-arithmetic-result.png" />
+<img alt="js-arithmetic example 1 result" src="./code_sandbox/snaps/js-arithmetic-01-result.png" />
+
+- [x] **Outcome:** `150, 50, 5000, 2`.
+
+### **Example 2: Modulus (`%`) and exponentiation (`**`)**
+
+- [x] **`%`** returns the **remainder** of a division (`5 % 2` → `1`); it is `0` when one number divides the other evenly.
+- [x] **`**`** raises to a power (`5 ** 2` → `25`) and is **equivalent to `Math.pow(x, y)`**.
+- [x] `%` is handy for even/odd checks and cycling through ranges.
+
+Sandbox: `code_sandbox/js-arithmetic/modulus.html`
+
+```javascript
+5 % 2;    // 1    % remainder (modulus)
+10 % 3;   // 1
+9 % 3;    // 0    evenly divisible
+
+5 ** 2;   // 25   ** exponentiation (power)
+2 ** 10;  // 1024
+Math.pow(5, 2); // 25  same as 5 ** 2
+```
+
+<img alt="js-arithmetic example 2 source" src="./code_sandbox/snaps/js-arithmetic-02-code.png" />
+
+<img alt="js-arithmetic example 2 result" src="./code_sandbox/snaps/js-arithmetic-02-result.png" />
+
+- [x] **Outcome:** the remainders are `1, 1, 0`, and the powers are `25, 1024`, with `Math.pow(5,2)` matching `5 ** 2`.
+
+### **Example 3: Increment (`++`) and decrement (`--`)**
+
+- [x] Both change a variable by **1**, but their **position** matters: **postfix** `x++` returns the **old** value then increments; **prefix** `++y` increments first and returns the **new** value.
+- [x] `--` works the same way for subtracting 1.
+- [x] This old/new distinction matters when you use the result in the same statement.
+
+Sandbox: `code_sandbox/js-arithmetic/incdec.html`
+
+```javascript
+let x = 5;
+let post = x++;   // postfix: returns 5 (old), x becomes 6
+
+let y = 5;
+let pre = ++y;    // prefix:  returns 6 (new), y becomes 6
+
+let z = 8;
+z--;              // decrement: z becomes 7
+```
+
+<img alt="js-arithmetic example 3 source" src="./code_sandbox/snaps/js-arithmetic-03-code.png" />
+
+<img alt="js-arithmetic example 3 result" src="./code_sandbox/snaps/js-arithmetic-03-result.png" />
+
+- [x] **Outcome:** `x++` returned **5** (x is now 6), `++y` returned **6** (y is now 6), and `z--` left `z` at **7**.
+
+### **Example 4: Operator precedence**
+
+- [x] **`*` and `/` run before `+` and `-`**, so `100 + 50 * 3` is **250**, not `(100 + 50) * 3`.
+- [x] **Parentheses** override the order: `(100 + 50) * 3` is **450**.
+- [x] Operators of the **same** precedence run **left to right** (`100 + 50 - 3`), except **`**`** which is **right to left** (`2 ** 3 ** 2` is `2 ** 9` = 512).
+
+Sandbox: `code_sandbox/js-arithmetic/precedence.html`
+
+```javascript
+100 + 50 * 3;    // 250   * runs before +
+(100 + 50) * 3;  // 450   parentheses first
+100 + 50 - 3;    // 147   same level -> left to right
+2 ** 3 ** 2;     // 512   ** is right to left: 2 ** (3 ** 2)
+```
+
+<img alt="js-arithmetic example 4 source" src="./code_sandbox/snaps/js-arithmetic-04-code.png" />
+
+<img alt="js-arithmetic example 4 result" src="./code_sandbox/snaps/js-arithmetic-04-result.png" />
+
+- [x] **Outcome:** `250, 450, 147, 512` — precedence and associativity in action.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -2669,11 +2739,49 @@ Then open `http://127.0.0.1:8770/js-arithmetic/`.
 
 </details>
 
+### Question 5: What are operands and operators?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In `100 + 50`, the **operands** are `100` and `50`, and the **operator** is `+`.
+
+</details>
+
+### Question 6: What is the difference between `x++` and `++x`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`x++`** (postfix) returns the **old** value, then adds 1.
+- [x] **`++x`** (prefix) adds 1 first, then returns the **new** value.
+
+</details>
+
+### Question 7: What is `9 % 3`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **0** — 9 is evenly divisible by 3, so there is no remainder.
+
+</details>
+
+### Question 8: How do operators of the same precedence evaluate?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Left to right** (e.g. `100 + 50 - 3`).
+- [x] Exception: **`**`** evaluates **right to left**.
+
+</details>
+
 </details>
 
 ## Summary
 
-Arithmetic uses operands and operators: `+ - * / % ++ -- **`. `**` matches `Math.pow`. Multiplication/division precede addition/subtraction unless you use **parentheses**.
+Arithmetic uses operands and operators: `+ - * / % ++ -- **`. `%` is the remainder and `**` matches `Math.pow`. Postfix `x++` returns the old value while prefix `++x` returns the new one. Multiplication/division precede addition/subtraction unless you use **parentheses**; same‑level operators run left to right (but `**` is right to left).
 
 ## References
 
