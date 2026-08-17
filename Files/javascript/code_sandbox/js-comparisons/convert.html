@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Comparisons - Convert then compare</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Convert Before You Compare</h2>
+    <pre id="demo"></pre>
+    <script>
+      function vote(label, age) {
+        age = Number(age);
+        let voteable;
+        if (isNaN(age)) {
+          voteable = "Input is not a number";
+        } else {
+          voteable = age < 18 ? "Too young" : "Old enough";
+        }
+        return label + "  ->  " + voteable;
+      }
+      document.getElementById("demo").innerText = [
+        vote("age = 16", 16),
+        vote('age = "21"', "21"),
+        vote('age = "John"', "John"),
+      ].join("\n");
+    </script>
+  </body>
+</html>

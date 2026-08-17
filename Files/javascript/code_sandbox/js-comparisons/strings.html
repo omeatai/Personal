@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Comparisons - Strings</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>String Comparison</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text1 = "A";
+      let text2 = "B";
+      let resultAB = text1 < text2;
+      let n1 = "20";
+      let n2 = "5";
+      let resultNum = n1 < n2;
+      document.getElementById("demo").innerText =
+        '"A" < "B"    -> ' +
+        resultAB +
+        "   (alphabetically)\n" +
+        '"20" < "5"   -> ' +
+        resultNum +
+        '   ("2" comes before "5")';
+    </script>
+  </body>
+</html>

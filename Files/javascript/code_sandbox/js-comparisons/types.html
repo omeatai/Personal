@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Comparisons - Mixed types</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Comparing Different Types</h2>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "2 < 12         -> " +
+        (2 < 12) +
+        "\n" +
+        '2 < "12"       -> ' +
+        (2 < "12") +
+        "   (string converts to number)\n" +
+        '2 < "John"     -> ' +
+        (2 < "John") +
+        "  (NaN comparisons are false)\n" +
+        '2 > "John"     -> ' +
+        (2 > "John") +
+        "\n" +
+        '2 == "John"    -> ' +
+        (2 == "John") +
+        "\n" +
+        '"2" < "12"     -> ' +
+        ("2" < "12") +
+        "  (alphabetically: '2' > '1')\n" +
+        '"2" > "12"     -> ' +
+        ("2" > "12") +
+        "\n" +
+        '"2" == "12"    -> ' +
+        ("2" == "12");
+    </script>
+  </body>
+</html>
