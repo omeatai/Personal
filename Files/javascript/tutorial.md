@@ -541,74 +541,133 @@ JavaScript can **display data** in several ways: **`innerHTML`**, **`innerText`*
 
 ## Detailed Explanation
 
-- [x] **Display possibilities**
-  - Write into an HTML element with **`innerHTML`** (or **`innerText`**).
-  - Write into the HTML output with **`document.write()`**.
-  - Write into an alert box with **`window.alert()`**.
-  - Write into the browser console with **`console.log()`**.
-- [x] **Using `innerHTML`**
-  - Access an element with **`document.getElementById(id)`**.
-  - Use the **`id`** attribute to identify the element.
-  - Set **`innerHTML`** to change the HTML content.
-  - Changing **`innerHTML`** is the **most common** way to display data in HTML.
-  - Sandbox: `code_sandbox/js-output/index.html` writes `<h2>Hello World</h2>` into `#demo`.
+- [x] **JavaScript has four everyday ways to "display" data**
+  - Into an **HTML element** with **`innerHTML`** or **`innerText`**.
+  - Into the **HTML output stream** with **`document.write()`**.
+  - Into an **alert box** with **`window.alert()`**.
+  - Into the **browser console** with **`console.log()`**.
+- [x] **Common access pattern**
+  - Most on-page output starts with **`document.getElementById(id)`** to grab an element by its `id`, then assigns a property.
 
-<img alt="js-output result" src="./code_sandbox/snaps/js-output-result.png" />
+### **Example 1: Using `innerHTML`**
 
-- [x] **Using `innerText`**
-  - Set **`innerText`** to change **plain text** only.
-  - Use **`innerHTML`** when you want to change an **HTML element**.
-  - Use **`innerText`** when you only want to change the **plain text**.
-  - Sandbox: `code_sandbox/js-output/innertext.html`.
-- [x] **Using `document.write()`**
-  - Convenient for **testing**.
-  - Using `document.write()` **after the document is loaded** **deletes all existing HTML**.
-  - Use it **only for testing**.
-  - Sandbox: `code_sandbox/js-output/write.html` writes `5 + 6` (**11**) during parse.
-
-<img alt="js-output document.write result" src="./code_sandbox/snaps/js-output-01-result.png" />
-
-- [x] **Using `window.alert()`**
-  - An **alert box** can display data: `window.alert(5 + 6)`.
-  - You can **skip** the `window` keyword: `alert(5 + 6)`.
-  - **`window`** is the **global scope** object, so methods belong to it by default.
-- [x] **Using `console.log()`**
-  - For **debugging**, call **`console.log()`** in the browser.
-  - Sandbox: `code_sandbox/js-output/console.html` logs `5 + 6`.
-- [x] **JavaScript print**
-  - JavaScript has **no** print object or print methods for output devices.
-  - The exception is **`window.print()`**, which prints the **current window**.
+- [x] `innerHTML` sets the element's content and **parses it as HTML**, so `"<h2>Hello World</h2>"` renders as a real heading.
+- [x] Changing `innerHTML` is the **most common** way to display data in a page.
+- [x] The target `<p id="demo">` starts empty and is filled by the script during load.
 
 Sandbox: `code_sandbox/js-output/index.html`
 
-<img alt="js-output source" src="./code_sandbox/snaps/js-output-code.png" />
-
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="color-scheme" content="light" />
-    <title>JS Output - innerHTML</title>
-    <link rel="stylesheet" href="../sandbox.css" />
-  </head>
-  <body>
-    <h1>My First Web Page</h1>
-    <p>My First Paragraph</p>
-    <p id="demo"></p>
-    <script>
-      document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
-    </script>
-  </body>
-</html>
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+<p id="demo"></p>
+<script>
+  document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+</script>
 ```
 
-Rendered result:
+<img alt="js-output example 1 source" src="./code_sandbox/snaps/js-output-01-code.png" />
 
-<img alt="js-output result" src="./code_sandbox/snaps/js-output-result.png" />
+<img alt="js-output example 1 result" src="./code_sandbox/snaps/js-output-01-result.png" />
 
-`document.write(5 + 6)` during parse (`write.html`):
+- [x] **Outcome:** the empty paragraph becomes a large bold **Hello World** heading (the `<h2>` tags were parsed, not shown literally).
 
-<img alt="js-output document.write result" src="./code_sandbox/snaps/js-output-01-result.png" />
+### **Example 2: Using `innerText`**
+
+- [x] `innerText` sets the element's **plain text**; any HTML in the string would show up **literally**, not rendered.
+- [x] Rule of thumb: use **`innerHTML`** to insert markup, **`innerText`** when you only want text.
+
+Sandbox: `code_sandbox/js-output/innertext.html`
+
+```html
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+<p id="demo"></p>
+<script>
+  document.getElementById("demo").innerText = "Hello World";
+</script>
+```
+
+<img alt="js-output example 2 source" src="./code_sandbox/snaps/js-output-02-code.png" />
+
+<img alt="js-output example 2 result" src="./code_sandbox/snaps/js-output-02-result.png" />
+
+- [x] **Outcome:** the paragraph shows plain, normal-sized **Hello World** — compare with Example 1's big heading to see the `innerHTML` vs `innerText` difference.
+
+### **Example 3: Using `document.write()`**
+
+- [x] `document.write()` writes straight into the HTML output **while the page is parsing** — here it prints `5 + 6`, i.e. **11**.
+- [x] **Warning:** calling `document.write()` **after** the page has finished loading (e.g. from a button) **erases the whole document** and replaces it with the written value.
+- [x] Because of that, `document.write()` should be used **only for quick testing**.
+
+Sandbox: `code_sandbox/js-output/write.html`
+
+```html
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<script>
+  document.write(5 + 6);
+</script>
+
+<!-- After load this wipes the page: -->
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+```
+
+<img alt="js-output example 3 source" src="./code_sandbox/snaps/js-output-03-code.png" />
+
+<img alt="js-output example 3 result" src="./code_sandbox/snaps/js-output-03-result.png" />
+
+- [x] **Outcome:** during load the number **11** appears under the paragraph. If you instead clicked a **Try it** button after load, the entire page would be replaced by a bare **11**.
+
+### **Example 4: Using `window.alert()`**
+
+- [x] `window.alert(5 + 6)` pops a modal **alert box** showing **11**.
+- [x] The **`window`** keyword is **optional** — `alert(5 + 6)` is identical, because `window` is the **global scope object** and its methods are available unqualified.
+- [x] The alert is a **native browser dialog**, so the snap below shows the trigger page; the dialog itself is described in the outcome.
+
+Sandbox: `code_sandbox/js-output/alert.html`
+
+```html
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<script>
+  window.alert(5 + 6);
+  // the window keyword is optional:
+  alert(5 + 6);
+</script>
+```
+
+<img alt="js-output example 4 source" src="./code_sandbox/snaps/js-output-04-code.png" />
+
+<img alt="js-output example 4 result" src="./code_sandbox/snaps/js-output-04-result.png" />
+
+- [x] **Outcome:** clicking **Show alert (5 + 6)** (or loading the auto-run version) opens a native dialog reading **11**; the page underneath is unchanged.
+
+### **Example 5: Using `console.log()`**
+
+- [x] `console.log()` writes to the **browser console** (DevTools), the standard tool for **debugging** — it does **not** change the page.
+- [x] To make the value visible in a screenshot, the sandbox **mirrors** the logged value into an on-page box; the real `console.log(5 + 6)` still runs.
+
+Sandbox: `code_sandbox/js-output/console.html`
+
+```html
+<script>
+  console.log(5 + 6);
+</script>
+```
+
+<img alt="js-output example 5 source" src="./code_sandbox/snaps/js-output-05-code.png" />
+
+<img alt="js-output example 5 result" src="./code_sandbox/snaps/js-output-05-result.png" />
+
+- [x] **Outcome:** the browser console logs **11**; the mirrored on-page box shows **> 11** so you can see the value in the snapshot.
+
+### **JavaScript Print**
+
+- [x] JavaScript has **no** print object and cannot access output devices.
+- [x] The one exception is **`window.print()`**, which opens the browser's print dialog for the current window: `<button onclick="window.print()">Print this page</button>`.
+- [x] This opens the OS/browser print dialog (not screenshotted here), so it is documented as code only.
+- [x] **Page exercise —** *Which is NOT correct output syntax?* → **`body.html()`** (there is no such method; the valid ones are `window.alert()`, `console.log()`, `document.write()`).
 
 <details>
   <summary>Terminal Commands</summary>
