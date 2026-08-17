@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Operators - String Operators</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>String Operators</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text1 = "John";
+      let text2 = "Doe";
+      let full = text1 + " " + text2; // concatenation
+      let greet = "Hello";
+      greet += " World"; // append with +=
+      document.getElementById("demo").innerText =
+        '"John" + " " + "Doe" = ' + full + "\n" +
+        '"Hello" += " World"  = ' + greet + "\n" +
+        "5 + 5       = " + (5 + 5) + "   (number)\n" +
+        '"5" + 5     = ' + ("5" + 5) + '  (string)\n' +
+        '"Hello" + 5 = ' + ("Hello" + 5) + " (string)";
+    </script>
+  </body>
+</html>

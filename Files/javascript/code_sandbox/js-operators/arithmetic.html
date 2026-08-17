@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Operators - Arithmetic</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Arithmetic Operators</h2>
+    <pre id="demo"></pre>
+    <script>
+      let a = 10,
+        b = 3;
+      let inc = 5;
+      inc++; // increment
+      let dec = 5;
+      dec--; // decrement
+      document.getElementById("demo").innerText =
+        "a = 10, b = 3\n" +
+        "a + b  = " + (a + b) + "\n" +
+        "a - b  = " + (a - b) + "\n" +
+        "a * b  = " + (a * b) + "\n" +
+        "a / b  = " + (a / b) + "\n" +
+        "a % b  = " + (a % b) + "   (remainder)\n" +
+        "a ** b = " + (a ** b) + " (power)\n" +
+        "5++ -> " + inc + ",  5-- -> " + dec;
+    </script>
+  </body>
+</html>

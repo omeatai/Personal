@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Operators - Comparison & Logical</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Comparison & Logical Operators</h2>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        '10 == "10"  -> ' + (10 == "10") + "  (loose: value only)\n" +
+        '10 === "10" -> ' + (10 === "10") + "  (strict: value + type)\n" +
+        "10 != 8     -> " + (10 != 8) + "\n" +
+        "10 > 8      -> " + (10 > 8) + "\n" +
+        "(10>5 && 10<20) -> " + (10 > 5 && 10 < 20) + "  (AND)\n" +
+        "(10>5 || 10>20) -> " + (10 > 5 || 10 > 20) + "  (OR)\n" +
+        "!(10 > 5)   -> " + !(10 > 5) + "  (NOT)";
+    </script>
+  </body>
+</html>

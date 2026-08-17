@@ -54,8 +54,8 @@ do **not** duplicate it.
 
 ## Resume pointer
 
-- **Next task:** `2.1` — JS Operators (improvement pass; user requested range JS Introduction → JS Strings).
-- **Last completed:** `1.7` JS Types — rewritten to per-example standard (typeof, strings, numbers, booleans/undefined/empty).
+- **Next task:** `2.2` — JS Arithmetic (improvement pass; user requested range JS Introduction → JS Strings).
+- **Last completed:** `2.1` JS Operators — rewritten to per-example standard (arithmetic, assignment, comparison/logical, string operators).
 - **Notes:** `tutorial.md` currently has older accordions for JS Introduction → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
 
 ---
@@ -129,7 +129,7 @@ do **not** duplicate it.
 
 ### S2 — Operators
 
-- [ ] `2.1` JS Operators — `js_operators.asp` (exists — improve)
+- [x] `2.1` JS Operators — `js_operators.asp` (exists — improve)
 - [ ] `2.2` JS Arithmetic — `js_arithmetic.asp` (exists — improve)
 - [ ] `2.3` JS Assignment — `js_assignment.asp` (exists — improve)
 - [ ] `2.4` JS Comparisons — `js_comparisons.asp` (exists — improve)
