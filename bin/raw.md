@@ -1,211 +1,279 @@
-## IAM policy simulator
+## Access Evaluation Tools
 
-In this lesson,
+In this lesson, we're going to look
 
-I'm gonna show you another tool for IAM,
+at a couple of tools you could use for evaluating
 
-which is the IAM policy simulator.
+the access that users have in the account.
 
-Now again, you'll find the link
+I'm in the IAM Management console here,
 
-for this attached to the lesson.
+and the first place I'm gonna look is Access Analyzer.
 
-Otherwise, just search for IAM policy simulator.
+So Access Analyzer needs to be enabled for your account.
 
-You should end up on a page like this one.
+If it's the first time you're here,
 
-Now what we've got here is on the left
+you'll find a little button.
 
-we have to select the context.
+It's just a single click
 
-So are we gonna apply this simulation to specific users,
+and it will enable it for your account.
 
-groups, or roles?
+And then very quickly,
 
-Users is the default, here I can see my groups.
+it's going to perform this access evaluation.
 
-I've just got one, my admin group,
+Now what it's found here is some findings
 
-and then roles, a whole bunch of roles.
+relating to S3 buckets and IAM roles.
 
-So I'll put it back to users.
+So for example, we can see here that a bucket policy
 
-I've got two user accounts, the Neil user account,
+is allowing access levels of read.
 
-that's my one with full admin permissions.
+And this one is allowing write, read, and list.
 
-And then I've got testuser,
+If you click on the finding ID,
 
-which we use for the IAM policy generator lesson.
+then it's giving you a little bit of a warning here
 
-So that user should only have access
+that this finding is for a resource
 
-to a few API actions for S3
+that is allowing public access.
 
-and EC2 instance API actions as well.
+So of course that could be an issue, not necessarily,
 
-So that would be a good user to run this simulation against
+but if it is, then you can use this finding
 
-because obviously it has very limited permissions in AWS.
+to actually resolve the issue.
 
-So if I choose testuser, now we can see that it lists
+And here it's telling me the actual access level.
 
-whatever policies, permissions, boundaries, et cetera,
+So the API Action S3 get Object is being allowed.
 
-that are actually attached to this user account.
+For the IAM role here,
 
-So we'd actually be able to see here,
+we can see this is in relation to the Cognito service.
 
-oh well the user has an inline policy,
+So there's the access level of write,
 
-which is this test poll.
+and that's for the Assume role with web identity.
 
-There might be other IAM policies applied
+So again, it's just something you might wanna look into.
 
-as well via groups and that kind of thing.
+So this is analyzing access and providing these findings,
 
-Or maybe there's a permissions boundary
+which might warn you about potentially
 
-or we wanna simulate a permissions boundary,
+something that's too open,
 
-which we can actually do here as well.
+that's allowing more access than you might want it to.
 
-So in this case, we have this policy attached.
+There's archive rules here about how you archive.
 
-So all I'm gonna do here is I'm just trying to see, okay,
+You can see the analyzers here as well,
 
-I've attached this policy to this user
+you can create new analyzers
 
-and I wanna see through this console what permissions
+and in the settings here,
 
-that user is going to have access to.
+you can see the Access Analyzer Administrator
 
-Now, if you had a very big complex policy
+and you can optionally add
 
-or you have a series of different policies applied,
+a delegated administrator as well.
 
-some through groups, some through permissions policies
+Another tool we have here is the credential report.
 
-attached to the inline,
+So this is more about credentials obviously.
 
-to the user account, for example,
+You can download this report
 
-then this becomes a lot better
+and it's gonna look something like this.
 
-'cause you're trying to work out what is the aggregate
+So lemme just expand some of these rows or columns.
 
-permissions that the user's gonna have.
+And so what you can see
 
-This is a very simple example,
+is you can see that there's three users in this account,
 
-but it just shows you how to use it.
+plus the root account.
 
-So we have the inline policy. Now I can select services.
+You can see when the user was created,
 
-So for example, if I choose EC2, choose the EC2 option here,
+whether there's a password for console access,
 
-then I can choose specific actions
+when the password was last used, last changed,
 
-or I can just select all of them, I've selected all
+if it's gonna be rotated,
+
+whether MFA has been enabled as well.
+
+So quite a bit of information here
+
+that you can use to understand
+
+how users are set up from a security perspective.
+
+The next tool I'm going to show you is IAM Policy Simulator.
+
+In a Policy Simulator, you can see the users in the account.
+
+Now if I choose a user like Jack
+
+and then select a service, let's say EC2
+
+and maybe I wanna select all actions
 
 and then run a simulation.
 
-And of course we can see lots
+And it's gonna check what access this user has.
 
-and lots of permissions are allowed, okay?
+Now in this case, the user we can see has a policy
 
-They're basically all allowed.
+called Administrator Access applied.
 
-That's in the EC2 context.
+So obviously it's coming back and saying aloud.
 
-If I chose EC2 autoscaling,
+We can clear those results.
 
-well I didn't allow that in the policy,
+And then let's go back
 
-so I should get a bunch of denied.
+and let's just choose this other user, Chris.
 
-So let's run a simulation,
+So Chris has a policy applied called bucket access.
 
-just make sure I've got everything.
+So let's have a look at S3.
 
-I'll clear this out. Sometimes it's a little bit finicky.
+So I'm gonna choose S3,
 
-And then run a simulation again, select all, run.
+but now I'm gonna check specific permissions.
 
-Okay, now we get denied.
+So I'm interested in whether this user can create a bucket.
 
-So now you can see Amazon EC2 autoscaling.
+What about are they able to delete an object
 
-All of these are being denied.
+or delete a bucket?
 
-What about S3?
+Do they have the Get Object API Action?
 
-So if I go to S3, type S3 here, select S3,
+What about list all my buckets?
 
-I'm just gonna clear these results.
+So these are some of the API actions
 
-Now for the S3 actions, again,
+that the user might have.
 
-I could choose these specific actions,
+And so I want to check those specific API actions.
 
-or in my case, I'm just gonna select everything,
+So now I can run the simulation
 
-run the simulation, and I get a lot of denied.
+and we can see that most of these permissions were denied.
 
-I only actually allowed a few permissions.
+Now there might be other permissions
 
-So yeah, we can see here get bucket location,
+that I haven't selected,
 
-that's allowed, we've got get objects,
+but in this case, only list all my buckets has been allowed.
 
-and then we've got list all my buckets and list bucket.
+So that's a useful tool to see
 
-So we can see exactly what this user will be able to do.
+what permissions users are being granted
 
-Now you may notice at the top here,
+based on the policies that they have.
 
-the mode is existing policies.
+The last tool I'm gonna show you is if we go to Roles,
 
-You can also choose new policy
+there's a great tool which can help us with working out
 
-and that's where you get this policy sandbox.
+what permissions we need for a Role.
 
-So now you can actually add your code in.
+So let's choose a Role,
 
-So you might be able to add some more restrictive code.
+maybe I'm gonna choose this
 
-Let's do that, let's actually take
+Elastic Beanstalk EC2 role here.
 
-this policy statement here
+Now this role has multiple policies applied.
 
-which we created in the previous lesson.
+Now at the bottom here,
 
-And I'm gonna paste that in.
+we can see this generate policy option.
 
-And what I'll do now is maybe I will just
+And this generates policies based on Cloudtrail events.
 
-restrict the actions a little bit more.
+So if this role has been used recently
 
-So I'll take these ones out, apply this policy,
+and you have a trail,
 
-I'll clear the results, run the simulation again,
+it's gonna be able to generate a policy
 
-have to select all, run simulation,
+based on the API actions that we used
 
-and now of course I get access denied
+by this role as can be seen in the Cloudtrail trail.
 
-for a lot more permissions.
+So what you do is click on generate policy,
 
-I've still got the get objects
+choose the timeframe.
 
-and I've still got the list all my buckets.
+So maybe I wanna say,
 
-But those are the only permissions.
+yeah, in the last 60 days, choose the trail.
 
-So in this mode, you can now put in a policy that you plan
+I've got a trail in this region,
 
-to apply to a user, or a group or a role,
+specify the regions, so maybe US-East.
 
-and then you can actually simulate what permissions
+And then you can choose to use an existing service role
 
-that user, group, or role would actually provide.
+and generate policy. And then when you do that,
+
+it takes several minutes to generate the policy.
+
+So I actually already did it.
+
+I'll show you one which has completed,
+
+let's just put in EC2,
+
+and I've got this role, which I used recently.
+
+So I did exactly what I just showed you.
+
+And it's generated a policy
+
+and we can now view the generated policy.
+
+In the results here,
+
+we can see an option to review the permissions,
+
+and these are the permissions which
+
+AWS thinks we need for this role.
+
+So I can see the specific actions
+
+for systems manager and EC2.
+
+I could then go and add in
+
+additional permissions if I want to,
+
+and then I can click on next.
+
+I can customize it through the JSON editor here as well.
+
+And also add additional policy items
+
+from the right hand side.
+
+And then you can generate the policy
+
+and then apply the policy to a role.
+
+So that's another useful tool
+
+that can help you to tighten up the permissions
+
+you need to assign in this case to roles.

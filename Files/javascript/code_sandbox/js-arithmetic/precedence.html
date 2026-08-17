@@ -10,10 +10,18 @@
     <pre id="demo"></pre>
     <script>
       document.getElementById("demo").innerText =
-        "100 + 50 * 3   = " + (100 + 50 * 3) + "   (* before +)\n" +
-        "(100 + 50) * 3 = " + ((100 + 50) * 3) + "   (parentheses first)\n" +
-        "100 + 50 - 3   = " + (100 + 50 - 3) + "   (same level, left to right)\n" +
-        "2 ** 3 ** 2    = " + (2 ** 3 ** 2) + "   (** is right to left: 2 ** 9)";
+        "100 + 50 * 3   = " +
+        (100 + 50 * 3) +
+        "   (* before +)\n" +
+        "(100 + 50) * 3 = " +
+        (100 + 50) * 3 +
+        "   (parentheses first)\n" +
+        "100 + 50 - 3   = " +
+        (100 + 50 - 3) +
+        "   (same level, left to right)\n" +
+        "2 ** 3 ** 2    = " +
+        2 ** (3 ** 2) +
+        "   (** is right to left: 2 ** 9)";
     </script>
   </body>
 </html>
