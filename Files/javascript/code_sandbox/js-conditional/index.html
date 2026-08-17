@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Conditional</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Conditional</h2>
+    <p id="out"></p>
+    <script>
+      let hour = 19;
+      let greeting;
+      if (hour < 18) {
+        greeting = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+      let age = 18;
+      let voteable = age < 18 ? "Too young" : "Old enough";
+      document.getElementById("out").innerHTML =
+        "hour 19 if/else → " + greeting + "<br>age 18 ternary → " + voteable;
+    </script>
+  </body>
+</html>

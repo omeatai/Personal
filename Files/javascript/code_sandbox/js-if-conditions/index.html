@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS If Conditions</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript If</h2>
+    <p id="out"></p>
+    <script>
+      if (new Date().getHours() < 18) {
+        document.getElementById("out").innerText = "Good day!";
+      } else {
+        document.getElementById("out").innerText =
+          "Not morning/afternoon (hour >= 18).";
+      }
+      let time = 20;
+      let text;
+      if (time < 18) {
+        text = "Good day";
+      }
+      let extra = "";
+      if (time < 18) {
+        extra = "Good day";
+      } else {
+        extra = "Good evening";
+      }
+      document.getElementById("out").innerHTML +=
+        "<br>time 20 if/else → " + extra;
+    </script>
+  </body>
+</html>

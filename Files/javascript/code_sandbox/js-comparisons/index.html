@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Comparisons</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Comparisons</h2>
+    <p id="out"></p>
+    <script>
+      let x = 5;
+      let lines = [
+        "x == 8 → " + (x == 8),
+        "x == 5 → " + (x == 5),
+        "x === 5 → " + (x === 5),
+        'x === "5" → ' + (x === "5"),
+        "x != 8 → " + (x != 8),
+        "x > 8 → " + (x > 8),
+        '"A" < "B" → ' + ("A" < "B"),
+      ];
+      document.getElementById("out").innerHTML = lines.join("<br>");
+    </script>
+  </body>
+</html>

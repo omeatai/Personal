@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Let</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Let</h2>
+    <p id="inside"></p>
+    <p id="outside"></p>
+    <p id="varLeak"></p>
+    <script>
+      let x = 10;
+      {
+        let x = 2;
+        document.getElementById("inside").innerText =
+          "Inside block, let x = " + x;
+      }
+      document.getElementById("outside").innerText =
+        "Outside block, let x = " + x;
+      var v = 10;
+      {
+        var v = 2;
+      }
+      document.getElementById("varLeak").innerText =
+        "After var block, v = " + v;
+    </script>
+  </body>
+</html>

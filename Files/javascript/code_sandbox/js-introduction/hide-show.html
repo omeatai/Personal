@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Introduction - Hide and Show</title>
+    <style>
+      body {
+        background: #fff;
+        color: #111;
+        font-family: sans-serif;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can hide and show HTML elements.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.display = 'none'"
+    >
+      Hide
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.display = 'block'"
+    >
+      Show
+    </button>
+  </body>
+</html>

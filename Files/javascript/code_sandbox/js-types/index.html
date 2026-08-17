@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Types</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Datatypes</h2>
+    <p id="out"></p>
+    <script>
+      let color = "Yellow";
+      let length = 16;
+      let big = 1234567890123456789012345n;
+      let on = true;
+      const person = { firstName: "John", lastName: "Doe" };
+      let missing;
+      let empty = "";
+      let lines = [
+        "typeof color = " + typeof color,
+        "typeof length = " + typeof length,
+        "typeof big = " + typeof big,
+        "typeof on = " + typeof on,
+        "typeof person = " + typeof person,
+        "typeof missing = " + typeof missing,
+        'empty string value is "" and typeof is ' + typeof empty,
+      ];
+      document.getElementById("out").innerHTML = lines.join("<br>");
+    </script>
+  </body>
+</html>

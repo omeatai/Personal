@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Arithmetic</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Arithmetic</h2>
+    <p id="out"></p>
+    <script>
+      let a = 3;
+      let x = (100 + 50) * a;
+      let lines = [
+        "(100 + 50) * 3 = " + x,
+        "10 + 5 = " + (10 + 5),
+        "10 - 5 = " + (10 - 5),
+        "10 * 5 = " + 10 * 5,
+        "10 / 5 = " + 10 / 5,
+        "10 % 4 = " + (10 % 4),
+        "2 ** 3 = " + 2 ** 3,
+      ];
+      document.getElementById("out").innerHTML = lines.join("<br>");
+    </script>
+  </body>
+</html>

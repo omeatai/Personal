@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Introduction</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #fff;
+        color: #111;
+        font-family: sans-serif;
+      }
+      body {
+        padding: 16px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'"
+    >
+      Click Me!
+    </button>
+    <script>
+      if (new URLSearchParams(location.search).has("clicked")) {
+        document.getElementById("demo").innerHTML = "Hello JavaScript";
+      }
+    </script>
+  </body>
+</html>

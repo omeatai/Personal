@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Introduction - Change Attribute</title>
+    <style>
+      body {
+        background: #fff;
+        color: #111;
+        font-family: sans-serif;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>
+      <button
+        type="button"
+        onclick="document.getElementById('myImage').src = 'pic_bulbon.svg'"
+      >
+        Turn on the light
+      </button>
+      <button
+        type="button"
+        onclick="document.getElementById('myImage').src = 'pic_bulboff.svg'"
+      >
+        Turn off the light
+      </button>
+    </p>
+    <img
+      id="myImage"
+      src="pic_bulboff.svg"
+      alt="Light bulb"
+      width="100"
+      height="180"
+    />
+  </body>
+</html>

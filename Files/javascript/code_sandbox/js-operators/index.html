@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Operators</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Operators</h2>
+    <p id="assign"></p>
+    <p id="add"></p>
+    <p id="concat"></p>
+    <script>
+      let x = 5;
+      document.getElementById("assign").innerText = "x = 5 → " + x;
+      let y = 5 + 2 + 3;
+      document.getElementById("add").innerText = "5 + 2 + 3 = " + y;
+      let z = "John" + " " + "Doe";
+      document.getElementById("concat").innerText =
+        '"John" + " " + "Doe" = ' + z;
+    </script>
+  </body>
+</html>

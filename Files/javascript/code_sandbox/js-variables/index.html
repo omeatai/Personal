@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Variables</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JavaScript Variables</h2>
+    <p id="letEx"></p>
+    <p id="constEx"></p>
+    <p id="mixed"></p>
+    <p id="car"></p>
+    <p id="concat"></p>
+    <script>
+      let x = 5;
+      let y = 6;
+      let z = x + y;
+      document.getElementById("letEx").innerText = "let: x + y = " + z;
+      const a = 5;
+      const b = 6;
+      const c = a + b;
+      document.getElementById("constEx").innerText = "const: a + b = " + c;
+      const price1 = 5;
+      const price2 = 6;
+      let total = price1 + price2;
+      document.getElementById("mixed").innerText = "total = " + total;
+      let carName = "Volvo";
+      document.getElementById("car").innerText = "carName = " + carName;
+      let weird = "5" + 2 + 3;
+      document.getElementById("concat").innerText = '"5" + 2 + 3 = ' + weird;
+    </script>
+  </body>
+</html>
