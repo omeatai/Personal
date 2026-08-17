@@ -276,103 +276,124 @@ In HTML, JavaScript is inserted between **`<script>`** and **`</script>`**. This
 
 ## Detailed Explanation
 
-- [x] **The `<script>` tag**
-  - JavaScript code is inserted between `<script>` and `</script>`.
-  - Example: `document.getElementById("demo").innerHTML = "My First JavaScript";` inside a script tag.
-  - Old examples may use `<script type="text/javascript">`. The **`type` attribute is not required**; JavaScript is the **default** scripting language in HTML.
+- [x] **The `<script>` tag holds JavaScript**
+  - In HTML, code is inserted between **`<script>`** and **`</script>`**.
+  - Old examples may use `<script type="text/javascript">`. The **`type` attribute is not required** — JavaScript is the **default** scripting language in HTML.
+- [x] **Functions and events (previewed here)**
+  - A **function** is a named block of JavaScript that runs only when it is **called**.
+  - Events (like a **button click**) are one way to call a function. `onclick="myFunction()"` wires the click to the function.
+- [x] **Scripts can go in `<head>`, `<body>`, or both**
+  - You can place **any number** of scripts in a document.
+  - Placement changes **when** the code runs relative to the HTML being parsed, which the examples below make concrete.
 
-<img alt="js-where-to source" src="./code_sandbox/snaps/js-where-to-code.png" />
+### **Example 1: The `<script>` tag**
 
-- [x] **Functions and events**
-  - A **function** is a block of JavaScript that runs when it is **called**.
-  - A function can run when an **event** occurs, such as a **button click**.
-  - Functions and events are covered in later chapters.
-- [x] **Head, body, or both**
-  - You can place **any number** of scripts in an HTML document.
-  - Scripts can go in **`<body>`**, **`<head>`**, or **both**.
-- [x] **JavaScript in `<head>`**
-  - The function is defined in `<head>` and **invoked** when the button is clicked.
-  - Sandbox: `code_sandbox/js-where-to/head.html`.
-- [x] **JavaScript in `<body>`**
-  - The same function can sit in the **body**.
-  - **Placing scripts at the bottom of `<body>`** improves display speed, because script interpretation **slows down** display.
-  - Sandbox: `code_sandbox/js-where-to/index.html`. After **Try it**, the paragraph is **Paragraph changed.**
+- [x] A script placed directly in the page runs **as the browser reaches it** while parsing.
+- [x] Here the script sets `#demo`'s `innerHTML` to **"My First JavaScript"**, so the paragraph is already changed by the time you see the page — no button needed.
+- [x] This is the simplest form: inline code, no function, no event.
 
-<img alt="js-where-to result" src="./code_sandbox/snaps/js-where-to-result.png" />
-
-- [x] **External JavaScript**
-  - Scripts can live in external files with the **`.js`** extension.
-  - External files are practical when the **same code** is used on **many pages**.
-  - Reference the file with **`src`**: `<script src="myScript.js"></script>`.
-  - You can put that tag in **`<head>`** or **`<body>`**. The script behaves as if it were **exactly where the tag is**.
-  - **External scripts cannot contain `<script>` tags.**
-  - Sandbox: `code_sandbox/js-where-to/external.html` plus `myScript.js`.
-- [x] **Advantages of external files**
-  - Separates HTML and code.
-  - Makes HTML and JavaScript easier to **read and maintain**.
-  - **Cached** JavaScript files can **speed up** page loads.
-- [x] **Several files**
-  - Use **several** `<script>` tags: `myScript1.js` and `myScript2.js`.
-- [x] **Three ways to reference an external script**
-  - A **full URL** (full web address).
-  - A **file path** (like `/js/`).
-  - **Without any path** (same folder as the HTML).
-
-Sandbox: `code_sandbox/js-where-to/index.html` (script in `<body>`)
-
-The page’s first example is a script that writes into `#demo`:
-
-<img alt="js-where-to source" src="./code_sandbox/snaps/js-where-to-code.png" />
-
-Tested body example (function called from the button):
+Sandbox: `code_sandbox/js-where-to/basic.html`
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="color-scheme" content="light" />
-    <title>JS Where To - Body</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background: #fff;
-        color: #111;
-        font-family: sans-serif;
-      }
-      body {
-        padding: 16px;
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Demo JavaScript in Body</h2>
-    <p id="demo">A Paragraph</p>
-    <button type="button" onclick="myFunction()">Try it</button>
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
-      }
-    </script>
-  </body>
-</html>
+<h2>My First Web Page</h2>
+<p id="demo">A Paragraph.</p>
+<script>
+  document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
 ```
 
-Rendered result after **Try it**:
+<img alt="js-where-to example 1 source" src="./code_sandbox/snaps/js-where-to-01-code.png" />
 
-<img alt="js-where-to result" src="./code_sandbox/snaps/js-where-to-result.png" />
+<img alt="js-where-to example 1 result" src="./code_sandbox/snaps/js-where-to-01-result.png" />
 
-External file `myScript.js`:
+- [x] **Outcome:** the paragraph loads already reading **My First JavaScript** (the inline script ran during page load), instead of the original **A Paragraph.**
+
+### **Example 2: JavaScript in `<head>`**
+
+- [x] The function `myFunction()` is **defined** in the `<head>`, but nothing runs until the button is clicked.
+- [x] `onclick="myFunction()"` **invokes** the function, which sets `#demo` to **"Paragraph changed."**
+- [x] Defining functions in `<head>` keeps them available before the body renders; they just wait to be called.
+
+Sandbox: `code_sandbox/js-where-to/head.html`
+
+```html
+<head>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+</head>
+<body>
+  <h2>Demo JavaScript in Head</h2>
+  <p id="demo">A Paragraph</p>
+  <button type="button" onclick="myFunction()">Try it</button>
+</body>
+```
+
+<img alt="js-where-to example 2 source" src="./code_sandbox/snaps/js-where-to-02-code.png" />
+
+<img alt="js-where-to example 2 result" src="./code_sandbox/snaps/js-where-to-02-result.png" />
+
+- [x] **Outcome:** after clicking **Try it**, the paragraph changes from **A Paragraph** to **Paragraph changed.** (shown above).
+
+### **Example 3: JavaScript in `<body>`**
+
+- [x] The exact same function works when placed at the **bottom of `<body>`**.
+- [x] **Placing scripts at the bottom of `<body>` improves display speed**, because parsing/running scripts can pause rendering — put them after the content they need.
+- [x] Behaviour is identical to Example 2; only the script's position differs.
+
+Sandbox: `code_sandbox/js-where-to/index.html`
+
+```html
+<body>
+  <h2>Demo JavaScript in Body</h2>
+  <p id="demo">A Paragraph</p>
+  <button type="button" onclick="myFunction()">Try it</button>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+</body>
+```
+
+<img alt="js-where-to example 3 source" src="./code_sandbox/snaps/js-where-to-03-code.png" />
+
+<img alt="js-where-to example 3 result" src="./code_sandbox/snaps/js-where-to-03-result.png" />
+
+- [x] **Outcome:** clicking **Try it** again produces **Paragraph changed.** under the **Demo JavaScript in Body** heading (shown above).
+
+### **Example 4: External JavaScript**
+
+- [x] Code can live in a separate **`.js`** file and be loaded with **`src`**: `<script src="myScript.js"></script>`.
+- [x] The external file contains **only** JavaScript — **no `<script>` tags** inside it.
+- [x] The script behaves as if it were written **exactly where the `<script src>` tag sits**; you can put that tag in `<head>` or `<body>`.
+- [x] **Advantages:** separates HTML from code, easier to read/maintain, and **cached** `.js` files speed up later page loads. For several files, use several tags (`myScript1.js`, `myScript2.js`).
+- [x] **Three ways to reference it:** a **full URL** (`https://.../myScript.js`), a **file path** (`/js/myScript.js`), or **no path** (same folder, `myScript.js`).
+
+Sandbox: `code_sandbox/js-where-to/external.html` plus `code_sandbox/js-where-to/myScript.js`
+
+```html
+<!-- external.html -->
+<h2>Demo External JavaScript</h2>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script src="myScript.js"></script>
+```
 
 ```javascript
+// myScript.js
 function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 ```
 
-Loaded with `<script src="myScript.js"></script>` in `external.html`.
+<img alt="js-where-to example 4 source" src="./code_sandbox/snaps/js-where-to-04-code.png" />
+
+<img alt="js-where-to example 4 result" src="./code_sandbox/snaps/js-where-to-04-result.png" />
+
+- [x] **Outcome:** the external `myScript.js` supplies the function; clicking **Try it** changes the paragraph to **Paragraph changed.** exactly like the inline versions (shown above).
 
 <details>
   <summary>Terminal Commands</summary>

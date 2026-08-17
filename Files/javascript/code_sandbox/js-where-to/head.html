@@ -27,5 +27,10 @@
     <h2>Demo JavaScript in Head</h2>
     <p id="demo">A Paragraph</p>
     <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+      if (new URLSearchParams(location.search).has("run")) {
+        myFunction();
+      }
+    </script>
   </body>
 </html>

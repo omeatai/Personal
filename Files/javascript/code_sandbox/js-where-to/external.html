@@ -23,5 +23,10 @@
     <p id="demo">A Paragraph</p>
     <button type="button" onclick="myFunction()">Try it</button>
     <script src="myScript.js"></script>
+    <script>
+      if (new URLSearchParams(location.search).has("run")) {
+        myFunction();
+      }
+    </script>
   </body>
 </html>
