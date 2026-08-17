@@ -47,109 +47,6 @@ JavaScript is the **programming language of the web**. This section shows what i
   - True or False: **JAVA is short for JavaScript.**
   - **False.** Java and JavaScript are different languages.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Recreate the W3Schools **JS Introduction** content-change example, serve it, and confirm the click updates the paragraph.
-
-### **Overview**
-
-- [ ] Build `code_sandbox/js-introduction/index.html` from the section example.
-- [ ] You will:
-  - [ ] Write a heading, a `<p id="demo">`, and a button that sets `innerHTML`.
-  - [ ] Serve `code_sandbox` over HTTP (Cursor browser blocks `file://`).
-  - [ ] Open `http://127.0.0.1:8770/js-introduction/`.
-  - [ ] Click **Click Me!** and confirm the text becomes **Hello JavaScript**.
-- [ ] Success: the running page matches the snapped result below.
-
-### **Task 1: Create the sandbox file**
-
-- [ ] Open `Personal/Files/javascript/code_sandbox/js-introduction/index.html`.
-- [ ] Use this document (same behavior as the W3Schools innerHTML example):
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="color-scheme" content="light" />
-    <title>JS Introduction</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background: #fff;
-        color: #111;
-        font-family: sans-serif;
-      }
-      body {
-        padding: 16px;
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>What Can JavaScript Do?</h2>
-    <p id="demo">JavaScript can change HTML content.</p>
-    <button
-      type="button"
-      onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'"
-    >
-      Click Me!
-    </button>
-  </body>
-</html>
-```
-
-### **Task 2: Serve and open the page**
-
-- [ ] From `Personal/Files/javascript/code_sandbox`, start a static server:
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] In the browser, open `http://127.0.0.1:8770/js-introduction/`.
-- [ ] Check:
-  - [ ] Heading: **What Can JavaScript Do?**
-  - [ ] Paragraph starts as **JavaScript can change HTML content.**
-  - [ ] After **Click Me!**, the paragraph is **Hello JavaScript**.
-
-<img alt="js-introduction result" src="./code_sandbox/snaps/js-introduction-result.png" />
-
-### **Task 3: Optional extra demos**
-
-- [ ] Open `style.html` and click to enlarge the paragraph (`fontSize = 35px`).
-- [ ] Open `hide-show.html` and use **Hide** / **Show**.
-- [ ] Open `lightbulb.html` and toggle the image `src`.
-
-The sandbox example is running and matches the Introduction content-change demo.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-Serve the sandbox so the Cursor browser can load the example (it cannot open `file://`).
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-introduction/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-introduction/index.html`
 
 Tested source (W3Schools **change HTML content** example):
@@ -195,6 +92,20 @@ Rendered result after clicking **Click Me!**:
 <img alt="js-introduction result" src="./code_sandbox/snaps/js-introduction-result.png" />
 
 Related sandbox files: `style.html`, `hide-show.html`, `lightbulb.html`.
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+Serve the sandbox so the Cursor browser can load the example (it cannot open `file://`).
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-introduction/`.
 
 </details>
 
@@ -376,69 +287,6 @@ In HTML, JavaScript is inserted between **`<script>`** and **`</script>`**. This
   - A **file path** (like `/js/`).
   - **Without any path** (same folder as the HTML).
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Recreate the **JavaScript in `<body>`** example, serve it, and confirm the click changes the paragraph.
-
-### **Overview**
-
-- [ ] Build `code_sandbox/js-where-to/index.html` with the function in the body.
-- [ ] You will:
-  - [ ] Write a heading, `<p id="demo">`, a button, and a `<script>` at the bottom of `<body>`.
-  - [ ] Serve `code_sandbox` over HTTP.
-  - [ ] Open `http://127.0.0.1:8770/js-where-to/`.
-  - [ ] Click **Try it** and confirm the text becomes **Paragraph changed.**
-- [ ] Success: the running page matches the snapped result below.
-
-### **Task 1: Create the body example**
-
-- [ ] Open `Personal/Files/javascript/code_sandbox/js-where-to/index.html`.
-- [ ] Place `myFunction` in a `<script>` at the bottom of `<body>` (same as the W3Schools body example).
-
-### **Task 2: Serve and click**
-
-- [ ] From `Personal/Files/javascript/code_sandbox`:
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8770/js-where-to/`.
-- [ ] Click **Try it**. The paragraph should read **Paragraph changed.**
-
-<img alt="js-where-to result" src="./code_sandbox/snaps/js-where-to-result.png" />
-
-### **Task 3: Head and external variants**
-
-- [ ] Open `head.html` and confirm the same click works with the script in `<head>`.
-- [ ] Open `external.html` and confirm `myScript.js` is loaded with `<script src="myScript.js"></script>`.
-
-The body example is running and matches the Where To demo.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-where-to/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-where-to/index.html` (script in `<body>`)
 
 The page’s first example is a script that writes into `#demo`:
@@ -494,6 +342,18 @@ function myFunction() {
 ```
 
 Loaded with `<script src="myScript.js"></script>` in `external.html`.
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-where-to/`.
 
 </details>
 
@@ -667,68 +527,6 @@ JavaScript can **display data** in several ways: **`innerHTML`**, **`innerText`*
   - JavaScript has **no** print object or print methods for output devices.
   - The exception is **`window.print()`**, which prints the **current window**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Recreate the **`innerHTML`** output example and confirm **Hello World** appears as a heading inside `#demo`.
-
-### **Overview**
-
-- [ ] Build `code_sandbox/js-output/index.html`.
-- [ ] You will:
-  - [ ] Add an empty `<p id="demo">`.
-  - [ ] Set `innerHTML` to `"<h2>Hello World</h2>"`.
-  - [ ] Serve `code_sandbox` and open `http://127.0.0.1:8770/js-output/`.
-- [ ] Success: you see **My First Web Page**, **My First Paragraph**, and a **Hello World** heading.
-
-### **Task 1: Create the innerHTML page**
-
-- [ ] Open `Personal/Files/javascript/code_sandbox/js-output/index.html`.
-- [ ] Match the W3Schools innerHTML example (plus the shared light-page stylesheet).
-
-### **Task 2: Serve and confirm**
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8770/js-output/`.
-- [ ] Confirm `#demo` contains an `<h2>Hello World</h2>` (not escaped tags as text).
-
-<img alt="js-output result" src="./code_sandbox/snaps/js-output-result.png" />
-
-### **Task 3: Other output methods**
-
-- [ ] Open `innertext.html` and confirm **Hello World** as plain text (no extra heading element).
-- [ ] Open `write.html` and confirm **11** is written into the page.
-- [ ] Open `console.html` and check the console for **11**.
-- [ ] Do **not** call `document.write()` from a button after load unless you want the page wiped.
-
-The innerHTML example is running and matches the Output demo.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-output/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-output/index.html`
 
 <img alt="js-output source" src="./code_sandbox/snaps/js-output-code.png" />
@@ -759,6 +557,18 @@ Rendered result:
 `document.write(5 + 6)` during parse (`write.html`):
 
 <img alt="js-output document.write result" src="./code_sandbox/snaps/js-output-01-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-output/`.
 
 </details>
 
@@ -908,54 +718,6 @@ JavaScript **syntax** is the set of rules for writing the language. Values are *
   - **Upper Camel Case (Pascal Case):** `FirstName`.
   - **Lower camel case:** `firstName` — JavaScript programmers **tend to use** this.
 
-<img alt="js-syntax result" src="./code_sandbox/snaps/js-syntax-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the syntax sandbox and confirm literals, `let`/`const`, the sum, the expression **110**, and the two different `lastName` / `lastname` values.
-
-### **Overview**
-
-- [ ] Open `code_sandbox/js-syntax/index.html` over HTTP.
-- [ ] Confirm the computed lines match the section examples.
-- [ ] Success: `(5 + 6) * 10 = 110` and `lastName` / `lastname` are different.
-
-### **Task 1: Serve the sandbox**
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8770/js-syntax/`.
-
-<img alt="js-syntax result" src="./code_sandbox/snaps/js-syntax-result.png" />
-
-The syntax examples are running.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-syntax/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-syntax/index.html`
 
 <img alt="js-syntax source" src="./code_sandbox/snaps/js-syntax-code.png" />
@@ -969,6 +731,18 @@ let sum = x + y;
 Rendered result:
 
 <img alt="js-syntax result" src="./code_sandbox/snaps/js-syntax-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-syntax/`.
 
 </details>
 
@@ -1099,54 +873,6 @@ A computer program is a list of **instructions** to **execute**. Those instructi
   - Statements often start with a keyword (`var`, `let`, `const`, `if`, `switch`, `for`, `function`, `return`, `try`, …).
   - Keywords are **reserved** and **cannot** be used as variable names.
 
-<img alt="js-statements result" src="./code_sandbox/snaps/js-statements-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the statements sandbox and confirm **Hello Dolly.** plus the function block output.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox/js-statements/index.html`.
-- [ ] Confirm `#demo` is **Hello Dolly.** and the function writes **Hello Dolly!** and **How are you?**
-- [ ] Success: the page matches the snapped result.
-
-### **Task 1: Serve and open**
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8770/js-statements/`.
-
-<img alt="js-statements result" src="./code_sandbox/snaps/js-statements-result.png" />
-
-The statements example is running.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-statements/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-statements/index.html`
 
 <img alt="js-statements source" src="./code_sandbox/snaps/js-statements-code.png" />
@@ -1161,6 +887,18 @@ z = x + y; // Statement 4
 Rendered result:
 
 <img alt="js-statements result" src="./code_sandbox/snaps/js-statements-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-statements/`.
 
 </details>
 
@@ -1284,54 +1022,6 @@ Comments **explain** code and make it **readable**. They can also **prevent exec
   - Putting **`//`** in front of a line turns it from executable code into a comment.
   - A **comment block** can disable **multiple** lines.
 
-<img alt="js-comments result" src="./code_sandbox/snaps/js-comments-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the comments sandbox. The heading and paragraph should update; commented-out lines must not run.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox/js-comments/index.html`.
-- [ ] Confirm **My First Page** and **My first paragraph.**
-- [ ] Success: the page matches the snapped result.
-
-### **Task 1: Serve and open**
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8770/js-comments/`.
-
-<img alt="js-comments result" src="./code_sandbox/snaps/js-comments-result.png" />
-
-The comments example is running.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-comments/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-comments/index.html`
 
 <img alt="js-comments source" src="./code_sandbox/snaps/js-comments-code.png" />
@@ -1347,6 +1037,18 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 Rendered result:
 
 <img alt="js-comments result" src="./code_sandbox/snaps/js-comments-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-comments/`.
 
 </details>
 
@@ -1459,51 +1161,6 @@ Variables are **containers** (labels) for data. You can declare them in **four**
   - `let x = "5" + 2 + 3;` is **`523`** — a number in quotes makes the rest **concatenate** as strings.
   - The equal-to operator is **`==`**, not a single `=`.
 
-<img alt="js-variables result" src="./code_sandbox/snaps/js-variables-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the variables sandbox and confirm `let`/`const` sums, mixed `total`, `carName`, and `"5" + 2 + 3` → **523**.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox/js-variables/index.html`.
-- [ ] Success: the page matches the snapped result.
-
-### **Task 1: Serve and open**
-
-```bash
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8770/js-variables/`.
-
-<img alt="js-variables result" src="./code_sandbox/snaps/js-variables-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-variables/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-variables/index.html`
 
 <img alt="js-variables source" src="./code_sandbox/snaps/js-variables-code.png" />
@@ -1517,6 +1174,18 @@ let z = x + y;
 Rendered result:
 
 <img alt="js-variables result" src="./code_sandbox/snaps/js-variables-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-variables/`.
 
 </details>
 
@@ -1622,43 +1291,6 @@ Variables hold data. Prefer **`const`**, then **`let`**; avoid **`var`** and aut
   - `var` is hoisted and can be used before the declaration line.
   - `let` is hoisted but **not initialized** — using it before the declaration is a **`ReferenceError`**.
 
-<img alt="js-let result" src="./code_sandbox/snaps/js-let-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-let/index.html` and confirm inner-block `let x` is **2** while outer `let x` stays **10**, and that `var` leaked to **2**.
-
-### **Overview**
-
-- [ ] Open `http://127.0.0.1:8770/js-let/` after serving `code_sandbox`.
-- [ ] Success: the page matches the snapped result.
-
-<img alt="js-let result" src="./code_sandbox/snaps/js-let-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-let/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-let/index.html`
 
 <img alt="js-let source" src="./code_sandbox/snaps/js-let-code.png" />
@@ -1674,6 +1306,18 @@ let x = 10;
 Rendered result:
 
 <img alt="js-let result" src="./code_sandbox/snaps/js-let-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-let/`.
 
 </details>
 
@@ -1769,43 +1413,6 @@ Rendered result:
   - Like `let`, block `const x` is **not** the outer `x`.
   - Using `const` before declaration is a **`ReferenceError`**.
 
-<img alt="js-const result" src="./code_sandbox/snaps/js-const-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-const/index.html` and confirm `PI`, mutated `cars` / `car`, and block-scoped `x`.
-
-### **Overview**
-
-- [ ] Open `http://127.0.0.1:8770/js-const/`.
-- [ ] Success: the page matches the snapped result.
-
-<img alt="js-const result" src="./code_sandbox/snaps/js-const-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-const/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-const/index.html`
 
 <img alt="js-const source" src="./code_sandbox/snaps/js-const-code.png" />
@@ -1819,6 +1426,18 @@ cars.push("Audi");
 Rendered result:
 
 <img alt="js-const result" src="./code_sandbox/snaps/js-const-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-const/`.
 
 </details>
 
@@ -1905,43 +1524,6 @@ A JavaScript variable can hold **8 types** of data. Use **`typeof`** to find the
   - A variable declared with no value is **`undefined`** (type and value).
   - An empty string `""` is a **legal string**, not undefined.
 
-<img alt="js-types result" src="./code_sandbox/snaps/js-types-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-types/index.html` and confirm `typeof` results for string, number, bigint, boolean, object, undefined, and empty string.
-
-### **Overview**
-
-- [ ] Open `http://127.0.0.1:8770/js-types/`.
-- [ ] Success: the page matches the snapped result.
-
-<img alt="js-types result" src="./code_sandbox/snaps/js-types-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-types/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-types/index.html`
 
 <img alt="js-types source" src="./code_sandbox/snaps/js-types-code.png" />
@@ -1955,6 +1537,18 @@ typeof true; // Returns "boolean"
 Rendered result:
 
 <img alt="js-types result" src="./code_sandbox/snaps/js-types-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-types/`.
 
 </details>
 
@@ -2043,38 +1637,6 @@ Operators perform **math and logic**. This page introduces **assignment (`=`)**,
   - Strings compare **alphabetically** (`"A" < "B"`).
   - Logical: `&&` and, `||` or, `!` not (Logical chapter).
 
-<img alt="js-operators result" src="./code_sandbox/snaps/js-operators-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-operators/index.html` and confirm assignment, `5 + 2 + 3`, and `"John Doe"`.
-
-<img alt="js-operators result" src="./code_sandbox/snaps/js-operators-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-operators/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-operators/index.html`
 
 <img alt="js-operators source" src="./code_sandbox/snaps/js-operators-code.png" />
@@ -2088,6 +1650,18 @@ let z = x + y;
 Rendered result:
 
 <img alt="js-operators result" src="./code_sandbox/snaps/js-operators-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-operators/`.
 
 </details>
 
@@ -2162,38 +1736,6 @@ Arithmetic operators work on **numbers** (literals or variables). The numbers ar
   - **Parentheses** change the order: `(100 + 50) * 3`.
   - Same-precedence ops run **left to right** (`100 + 50 - 3`).
 
-<img alt="js-arithmetic result" src="./code_sandbox/snaps/js-arithmetic-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-arithmetic/index.html` and confirm `(100 + 50) * 3` plus the other operator results.
-
-<img alt="js-arithmetic result" src="./code_sandbox/snaps/js-arithmetic-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-arithmetic/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-arithmetic/index.html`
 
 <img alt="js-arithmetic source" src="./code_sandbox/snaps/js-arithmetic-code.png" />
@@ -2206,6 +1748,18 @@ let x = (100 + 50) * a;
 Rendered result:
 
 <img alt="js-arithmetic result" src="./code_sandbox/snaps/js-arithmetic-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-arithmetic/`.
 
 </details>
 
@@ -2287,38 +1841,6 @@ Assignment operators **put values into variables**. The simple operator is **`=`
 - [x] **Spread `...`**
   - Splits iterables into individual elements (mentioned on this page).
 
-<img alt="js-assignment result" src="./code_sandbox/snaps/js-assignment-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-assignment/index.html` and confirm `x += 5` from 10 → **15**, and the concatenated sentence.
-
-<img alt="js-assignment result" src="./code_sandbox/snaps/js-assignment-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-assignment/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-assignment/index.html`
 
 <img alt="js-assignment source" src="./code_sandbox/snaps/js-assignment-code.png" />
@@ -2331,6 +1853,18 @@ x += 5;
 Rendered result:
 
 <img alt="js-assignment result" src="./code_sandbox/snaps/js-assignment-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-assignment/`.
 
 </details>
 
@@ -2403,38 +1937,6 @@ Comparison operators compare two values and **always return `true` or `false`**.
   - `"2" > "12"` is **true** (alphabetically, `"2"` > `"12"`).
   - Convert to the proper type **before** comparing for a secure result.
 
-<img alt="js-comparisons result" src="./code_sandbox/snaps/js-comparisons-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-comparisons/index.html` and confirm `==` vs `===` and `"A" < "B"`.
-
-<img alt="js-comparisons result" src="./code_sandbox/snaps/js-comparisons-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-comparisons/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-comparisons/index.html`
 
 <img alt="js-comparisons source" src="./code_sandbox/snaps/js-comparisons-code.png" />
@@ -2448,6 +1950,18 @@ x != 8; // true
 Rendered result:
 
 <img alt="js-comparisons result" src="./code_sandbox/snaps/js-comparisons-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-comparisons/`.
 
 </details>
 
@@ -2529,38 +2043,6 @@ Comparisons return booleans. Prefer **`===` / `!==`** when types matter. Strings
 - [x] **Ternary `? :`**
   - Shorthand for if/else: `condition ? expression1 : expression2`
 
-<img alt="js-conditional result" src="./code_sandbox/snaps/js-conditional-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-conditional/index.html`. With `hour = 19` you should see **Good evening**; with `age = 18` the ternary should be **Old enough**.
-
-<img alt="js-conditional result" src="./code_sandbox/snaps/js-conditional-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-conditional/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-conditional/index.html`
 
 <img alt="js-conditional source" src="./code_sandbox/snaps/js-conditional-code.png" />
@@ -2576,6 +2058,18 @@ if (hour < 18) {
 Rendered result:
 
 <img alt="js-conditional result" src="./code_sandbox/snaps/js-conditional-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-conditional/`.
 
 </details>
 
@@ -2656,38 +2150,6 @@ The **`if`** statement runs a block when a condition is **true**. Write **`if` i
   - Nested `if` can make code **more complex**.
   - A better solution is the logical **AND** operator: `if (country == "USA" && age >= 16)`.
 
-<img alt="js-if-conditions result" src="./code_sandbox/snaps/js-if-conditions-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-if-conditions/index.html`. Confirm the hour-based greeting and that `time = 20` takes the **else** path (**Good evening**).
-
-<img alt="js-if-conditions result" src="./code_sandbox/snaps/js-if-conditions-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-if-conditions/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-if-conditions/index.html`
 
 <img alt="js-if-conditions source" src="./code_sandbox/snaps/js-if-conditions-code.png" />
@@ -2701,6 +2163,18 @@ if (new Date().getHours() < 18) {
 Rendered result:
 
 <img alt="js-if-conditions result" src="./code_sandbox/snaps/js-if-conditions-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-if-conditions/`.
 
 </details>
 
@@ -2777,38 +2251,6 @@ Rendered result:
   - Runs the block **once first**, then tests the condition.
   - Runs **at least once**, even if the condition starts **false**.
 
-<img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-loops/index.html`. Confirm the cars list, `for` 0..4, `while` / `do while` 0..9, and that the outer `let` stays **5**.
-
-<img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-loops/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-loops/index.html`
 
 <img alt="js-loops source" src="./code_sandbox/snaps/js-loops-code.png" />
@@ -2822,6 +2264,18 @@ for (let i = 0; i < cars.length; i++) {
 Rendered result:
 
 <img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-loops/`.
 
 </details>
 
@@ -2925,38 +2379,6 @@ The **`for`** statement creates a loop with **three optional expressions**: init
   - `let i` in the loop does **not** redeclare outer `let i`; outer stays **5**.
   - Loop `let i` is visible **only inside** the loop.
 
-<img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-loop-for/index.html`. Confirm 0..4, all four cars, omit-exp1 starts at **Saab Ford**, omit-exp3 still lists all cars, `var` after the loop is **10**, and outer `let` stays **5**.
-
-<img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-loop-for/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-loop-for/index.html`
 
 <img alt="js-loop-for source" src="./code_sandbox/snaps/js-loop-for-code.png" />
@@ -2970,6 +2392,18 @@ for (let i = 0; i < 5; i++) {
 Rendered result:
 
 <img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-loop-for/`.
 
 </details>
 
@@ -3068,38 +2502,6 @@ Rendered result:
   - `while (cars[i]) { text += cars[i]; i++; }`
   - Both walk `["BMW", "Volvo", "Saab", "Ford"]` until a falsy slot.
 
-<img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-loop-while/index.html`. Confirm `while` and `do while` print 0..9, and that `for (;cars[i];)` matches `while (cars[i])` (**BMW Volvo Saab Ford**).
-
-<img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-loop-while/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-loop-while/index.html`
 
 <img alt="js-loop-while source" src="./code_sandbox/snaps/js-loop-while-code.png" />
@@ -3114,6 +2516,18 @@ while (i < 10) {
 Rendered result:
 
 <img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-loop-while/`.
 
 </details>
 
@@ -3212,38 +2626,6 @@ Rendered result:
   - Without a label, `break` only leaves a **loop** or **switch**.
   - With a label, `break` can leave **any** `{ }` block (example: stop after the second car).
 
-<img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-break/index.html`. Confirm break-at-3 prints **0 1 2**, weekday `switch` has a name, `break loop1` is shorter than `break loop2`, and the labeled block stops at **BMW Volvo**.
-
-<img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-break/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-break/index.html`
 
 <img alt="js-break source" src="./code_sandbox/snaps/js-break-code.png" />
@@ -3260,6 +2642,18 @@ for (let i = 0; i < 10; i++) {
 Rendered result:
 
 <img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-break/`.
 
 </details>
 
@@ -3355,38 +2749,6 @@ Rendered result:
 - [x] **Jump-out statements**
   - **`break`** and **`continue`** are the only statements that can jump out of a `{ }` block.
 
-<img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-continue/index.html`. Confirm **3** is missing from 1..9, `continue loop1` prints **12121212**, and `continue loop2` prints **124124124124**.
-
-<img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-continue/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-continue/index.html`
 
 <img alt="js-continue source" src="./code_sandbox/snaps/js-continue-code.png" />
@@ -3403,6 +2765,18 @@ for (let i = 1; i < 10; i++) {
 Rendered result:
 
 <img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-continue/`.
 
 </details>
 
@@ -3504,38 +2878,6 @@ Rendered result:
   - JavaScript does **one thing at a time**.
   - Slow work (file/network) can **freeze** the page unless you use **asynchronous** programming (later Advanced chapter).
 
-<img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-control-flow/index.html`. Confirm sequential **z = 11**, age 18 → **Adult**, for 0..4, break at 3 → **0 1 2**, and `myFunction(4, 3)` → **12**.
-
-<img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-control-flow/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-control-flow/index.html`
 
 <img alt="js-control-flow source" src="./code_sandbox/snaps/js-control-flow-code.png" />
@@ -3549,6 +2891,18 @@ let z = x + y;
 Rendered result:
 
 <img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-control-flow/`.
 
 </details>
 
@@ -3653,38 +3007,6 @@ Default flow is sequential. **Conditions** branch, **loops** repeat, **jumps** (
   - `new String("John")` is an **object** — slower, surprising `===` (literal vs object is **false**).
   - Comparing two String **objects** with `==` / `===` is **false**.
 
-<img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-strings/index.html`. Confirm mixed quotes, template quotes, A–Z **length 26**, escaped Vikings, and `==` true / `===` false for literal vs `new String`.
-
-<img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-strings/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-strings/index.html`
 
 <img alt="js-strings source" src="./code_sandbox/snaps/js-strings-code.png" />
@@ -3698,6 +3020,18 @@ let carName2 = "Volvo XC60";
 Rendered result:
 
 <img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-strings/`.
 
 </details>
 
@@ -3790,38 +3124,6 @@ Strings are quoted text. Single and double quotes match; backticks add templates
 - [x] **HTML templates**
   - You can build markup strings with backticks and a loop over tags (see the page’s HTML example).
 
-<img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-string-templates/index.html`. Confirm Hello World, mixed quotes, multiline newline **true**, **Welcome John, Doe!**, and **Total: 12.50**.
-
-<img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-string-templates/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-string-templates/index.html`
 
 <img alt="js-string-templates source" src="./code_sandbox/snaps/js-string-templates-code.png" />
@@ -3835,6 +3137,18 @@ let text = `Welcome ${firstName}, ${lastName}!`;
 Rendered result:
 
 <img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-templates/`.
 
 </details>
 
@@ -3934,38 +3248,6 @@ Strings are **primitive and immutable**. Every method returns a **new** string; 
   - Turns a string into an array (`""`, `","`, `" "`).
   - `split("")` is **unsafe** for emojis (breaks UTF-16 surrogates). Prefer **`Intl.Segmenter`** for graphemes.
 
-<img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-string-methods/index.html`. Confirm length **26**, `charAt(0)` **H**, `at(2)` **S**, slice **Banana**, `padStart` **0005**, replace **W3Schools**, and split words.
-
-<img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-string-methods/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-string-methods/index.html`
 
 <img alt="js-string-methods source" src="./code_sandbox/snaps/js-string-methods-code.png" />
@@ -3978,6 +3260,18 @@ let part = text.slice(7, 13);
 Rendered result:
 
 <img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-methods/`.
 
 </details>
 
@@ -4075,38 +3369,6 @@ Search methods find text **inside** a string: **position** (`indexOf`, `lastInde
   - `includes("world")`, `startsWith("Hello")`, `endsWith("Doe")`.
   - All **case-sensitive**; optional start (or length for `endsWith`) argument.
 
-<img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-string-search/index.html`. Confirm `indexOf` **7**, `lastIndexOf` **21**, `search` **7**, four `ain` matches, and the three boolean checks **true**.
-
-<img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-string-search/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-string-search/index.html`
 
 <img alt="js-string-search source" src="./code_sandbox/snaps/js-string-search-code.png" />
@@ -4119,6 +3381,18 @@ let index = text.indexOf("locate");
 Rendered result:
 
 <img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-search/`.
 
 </details>
 
@@ -4209,38 +3483,6 @@ This page is the **complete String reference** (revised July 2025): properties a
   - `anchor`, `big`, `blink`, `bold`, `fixed`, `fontcolor`, `fontsize`, `italics`, `link`, `small`, `strike`, `sub`, `sup`.
   - Deprecated; kept only for compatibility.
 
-<img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run `code_sandbox/js-string-reference/index.html`. Confirm `trim()` returns a **new** string while the original still has spaces, and that the note prefers **slice/substring** over `substr`.
-
-<img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/javascript/code_sandbox
-py -3 -m http.server 8770 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8770/js-string-reference/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/js-string-reference/index.html`
 
 <img alt="js-string-reference source" src="./code_sandbox/snaps/js-string-reference-code.png" />
@@ -4253,6 +3495,18 @@ let trimmed = original.trim();
 Rendered result:
 
 <img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/javascript/code_sandbox
+py -3 -m http.server 8770 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8770/js-string-reference/`.
 
 </details>
 

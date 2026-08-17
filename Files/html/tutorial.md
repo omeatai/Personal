@@ -64,83 +64,6 @@ HTML is the **standard markup language** for creating Web pages. This section de
   - **2014:** W3C Recommendation: **HTML5**.
   - This tutorial follows the **latest HTML5 standard**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Recreate the W3Schools **HTML Introduction** example locally, serve it, and confirm the heading, paragraph, and tab title.
-
-### **Overview**
-
-- [ ] Build `code_sandbox/html-introduction/index.html` from the section example.
-- [ ] You will:
-  - [ ] Write the HTML5 doctype, `html`, `head`/`title`, and `body` with `<h1>` and `<p>`.
-  - [ ] Serve `code_sandbox` over HTTP (Cursor browser blocks `file://`).
-  - [ ] Open `http://127.0.0.1:8766/html-introduction/`.
-  - [ ] Confirm the tab title is **Page Title**, the heading is **My First Heading**, and the paragraph is **My first paragraph.**
-- [ ] Success: the running page matches the snapped result below.
-
-### **Task 1: Create the sandbox file**
-
-- [ ] Open `Personal/Files/html/code_sandbox/html-introduction/index.html`.
-- [ ] Use this document (same as the W3Schools example):
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-  </body>
-</html>
-```
-
-### **Task 2: Serve and open the page**
-
-- [ ] From `Personal/Files/html/code_sandbox`, start a static server:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] In the browser, open `http://127.0.0.1:8766/html-introduction/`.
-- [ ] Check:
-  - [ ] Tab / title: **Page Title**
-  - [ ] Large heading: **My First Heading**
-  - [ ] Paragraph: **My first paragraph.**
-  - [ ] You should **not** see the tags `<h1>` or `<p>` on the page.
-
-<img alt="html-introduction result" src="./code_sandbox/snaps/html-introduction-result.png" />
-
-The sandbox example is running and matches the Introduction document.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-Serve the sandbox so the Cursor browser can load the example (it cannot open `file://`).
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-introduction/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-introduction/index.html`
 
 Tested source (W3Schools **A Simple HTML Document**):
@@ -163,6 +86,20 @@ Tested source (W3Schools **A Simple HTML Document**):
 Rendered result (browser uses the tags; it does not print them):
 
 <img alt="html-introduction result" src="./code_sandbox/snaps/html-introduction-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+Serve the sandbox so the Cursor browser can load the example (it cannot open `file://`).
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-introduction/`.
 
 </details>
 
@@ -388,103 +325,6 @@ You do not need a professional IDE to learn HTML. A **simple text editor**—**N
   - Useful for **fast tests**; it has **color coding** and can **save / share** code.
   - That example uses a `<title>` (**Page Title**), heading **This is a Heading**, and paragraph **This is a paragraph.** Sandbox: `code_sandbox/html-editors/tryit.html`.
 
-<img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Write the Notepad example locally, serve it (Cursor blocks `file://`), and confirm the heading and paragraph. Optionally open the Try it Yourself copy.
-
-### **Overview**
-
-- [ ] Recreate both section examples in `code_sandbox/html-editors/` and open them in the browser.
-- [ ] You will:
-  - [ ] Save the Notepad document as `index.html`.
-  - [ ] Save the online-editor document as `tryit.html`.
-  - [ ] Serve `code_sandbox` over HTTP.
-  - [ ] Confirm **My First Heading** / **My first paragraph.** on `index.html`.
-  - [ ] Confirm tab **Page Title**, **This is a Heading**, and **This is a paragraph.** on `tryit.html`.
-- [ ] Success: both pages match the snapped results.
-
-### **Task 1: Create the Notepad example**
-
-- [ ] Open `Personal/Files/html/code_sandbox/html-editors/index.html`.
-- [ ] Use this document (same as the W3Schools Notepad step):
-
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>My First Heading</h1>
-
-    <p>My first paragraph.</p>
-  </body>
-</html>
-```
-
-### **Task 2: Create the Try it Yourself example**
-
-- [ ] Open `Personal/Files/html/code_sandbox/html-editors/tryit.html`.
-- [ ] Use this document:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-  </body>
-</html>
-```
-
-### **Task 3: Serve and open the pages**
-
-- [ ] From `Personal/Files/html/code_sandbox`, start a static server:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8766/html-editors/`.
-- [ ] Check: **My First Heading** and **My first paragraph.**
-
-<img alt="html-editors result" src="./code_sandbox/snaps/html-editors-result.png" />
-
-- [ ] Open `http://127.0.0.1:8766/html-editors/tryit.html`.
-- [ ] Check: tab **Page Title**, heading **This is a Heading**, paragraph **This is a paragraph.**
-
-<img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
-
-Both editor examples are running and match the section.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-Serve the sandbox so the Cursor browser can load the examples (it cannot open `file://`).
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-editors/` and `http://127.0.0.1:8766/html-editors/tryit.html`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-editors/index.html` (Notepad / save-as `index.htm` example)
 
 <img alt="html-editors source" src="./code_sandbox/snaps/html-editors-code.png" />
@@ -520,6 +360,20 @@ Sandbox: `code_sandbox/html-editors/tryit.html` (online editor example)
 ```
 
 <img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+Serve the sandbox so the Cursor browser can load the examples (it cannot open `file://`).
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-editors/` and `http://127.0.0.1:8766/html-editors/tryit.html`.
 
 </details>
 
@@ -695,62 +549,6 @@ This chapter shows **basic HTML examples**: a full document, the `<!DOCTYPE html
   - **View Page Source:** `Ctrl`+`U`, or right-click the page → **View Page Source**. Opens a tab with the HTML source.
   - **Inspect an element:** right-click an element (or a blank area) → **Inspect**. Shows HTML and CSS; you can edit them on the fly in the Elements / Styles panel.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run each Basic example from `code_sandbox/html-basic/` and match the snaps.
-
-### **Overview**
-
-- [ ] Recreate the document, headings, paragraphs, link, and image examples.
-- [ ] You will:
-  - [ ] Serve `code_sandbox` over HTTP.
-  - [ ] Open each sandbox file and confirm the output.
-- [ ] Success: the five pages match the snapped results.
-
-### **Task 1: Serve the sandbox**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-### **Task 2: Open each example**
-
-- [ ] Document: `http://127.0.0.1:8766/html-basic/` — **My First Heading** / **My first paragraph.**
-- [ ] Headings: `http://127.0.0.1:8766/html-basic/headings.html` — heading 1, 2, and 3.
-- [ ] Paragraphs: `http://127.0.0.1:8766/html-basic/paragraphs.html` — two paragraphs.
-- [ ] Link: `http://127.0.0.1:8766/html-basic/link.html` — blue underlined **This is a link**.
-- [ ] Image: `http://127.0.0.1:8766/html-basic/img.html` — W3Schools logo at 104×142 with alt **W3Schools.com**.
-
-<img alt="html-basic document result" src="./code_sandbox/snaps/html-basic-result.png" />
-
-The Basic examples are running and match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-basic/` and the other files in that folder.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-basic/index.html`
 
 <img alt="html-basic document source" src="./code_sandbox/snaps/html-basic-code.png" />
@@ -809,6 +607,18 @@ Image (`img.html`):
 ```
 
 <img alt="html-basic image result" src="./code_sandbox/snaps/html-basic-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-basic/` and the other files in that folder.
 
 </details>
 
@@ -984,55 +794,6 @@ An HTML **element** is a **start tag**, **content**, and an **end tag**. Element
   - The HTML standard does not require lowercase, but **W3C recommends lowercase**, and **XHTML requires it**.
   - W3Schools always uses **lowercase** tag names.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the nested document, the omitted-end-tag demo, and the `<br>` demo.
-
-### **Overview**
-
-- [ ] Recreate the three sandbox files and open them over HTTP.
-- [ ] Success: nested page shows heading + paragraph; omitted `</p>` still shows two paragraphs; `<br>` splits one paragraph onto two lines.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] Open `http://127.0.0.1:8766/html-elements/`.
-- [ ] Open `http://127.0.0.1:8766/html-elements/no-endtag.html`.
-- [ ] Open `http://127.0.0.1:8766/html-elements/br.html`.
-
-<img alt="html-elements nested result" src="./code_sandbox/snaps/html-elements-result.png" />
-
-The three element examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-elements/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Nested document: `code_sandbox/html-elements/index.html`
 
 <img alt="html-elements nested source" src="./code_sandbox/snaps/html-elements-code.png" />
@@ -1076,6 +837,18 @@ Line break: `code_sandbox/html-elements/br.html`
 ```
 
 <img alt="html-elements br result" src="./code_sandbox/snaps/html-elements-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-elements/`.
 
 </details>
 
@@ -1245,57 +1018,6 @@ HTML **attributes** add extra information about an element. They go in the **sta
   - Quotes are **required** when the value has a **space** (`title=Description of W3Schools` fails).
   - Double quotes are most common; use single quotes if the value itself contains double quotes (or the reverse).
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the href, sized image, broken-image alt, style, and title sandboxes.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-attributes` example.
-- [ ] Success: blue **Visit W3Schools** link; 500×600 photo; alt text **Girl with a jacket** on a missing file; red paragraph; tooltip paragraph.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-attributes/href.html`
-- [ ] `http://127.0.0.1:8766/html-attributes/img.html`
-- [ ] `http://127.0.0.1:8766/html-attributes/alt-error.html`
-- [ ] `http://127.0.0.1:8766/html-attributes/style.html`
-- [ ] `http://127.0.0.1:8766/html-attributes/title.html` (hover for the tooltip)
-
-<img alt="html-attributes href result" src="./code_sandbox/snaps/html-attributes-result.png" />
-
-The attribute examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-attributes/href.html`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `href` (`href.html`):
 
 <img alt="html-attributes href source" src="./code_sandbox/snaps/html-attributes-code.png" />
@@ -1356,6 +1078,18 @@ Broken image + `alt` (`alt-error.html`):
   </body>
 </html>
 ```
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-attributes/href.html`.
 
 </details>
 
@@ -1509,57 +1243,6 @@ HTML **headings** are titles and subtitles on a page. They use `<h1>` through `<
   - That still **is** a heading (for structure); the style only changes how large it looks.
   - Sandbox: `code_sandbox/html-headings/size.html`.
 
-<img alt="html-headings font-size result" src="./code_sandbox/snaps/html-headings-02-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the six heading levels, the Travel Guide outline, and the 60px `<h1>`.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open the three `html-headings` files.
-- [ ] Success: Heading 1–6 shrink in size; Travel Guide nests continents under one `h1`; the sized `h1` is visually larger than the default.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-headings/`
-- [ ] `http://127.0.0.1:8766/html-headings/structure.html`
-- [ ] `http://127.0.0.1:8766/html-headings/size.html`
-
-<img alt="html-headings h1 to h6 result" src="./code_sandbox/snaps/html-headings-result.png" />
-
-The heading examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-headings/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Levels 1–6 (`index.html`):
 
 <img alt="html-headings h1 to h6 source" src="./code_sandbox/snaps/html-headings-code.png" />
@@ -1602,6 +1285,18 @@ Custom size (`size.html`):
 ```
 
 <img alt="html-headings font-size result" src="./code_sandbox/snaps/html-headings-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-headings/`.
 
 </details>
 
@@ -1757,60 +1452,6 @@ A **paragraph** (`<p>`) is a block of text that **starts on a new line**. Browse
   - Browsers typically show it in a **monospace** font.
   - Sandbox: `code_sandbox/html-paragraphs/pre.html`.
 
-<img alt="html-paragraphs pre result" src="./code_sandbox/snaps/html-paragraphs-05-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the six paragraph examples: two `<p>`s, collapsed whitespace, `<hr>`, `<br>`, poem in `<p>`, poem in `<pre>`.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-paragraphs` file.
-- [ ] Success: two spaced paragraphs; extra source spaces collapsed; two `hr` lines; three-line `<br>` paragraph; poem as one flow in `<p>`; poem layout kept in `<pre>`.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-paragraphs/`
-- [ ] `http://127.0.0.1:8766/html-paragraphs/display.html`
-- [ ] `http://127.0.0.1:8766/html-paragraphs/hr.html`
-- [ ] `http://127.0.0.1:8766/html-paragraphs/br.html`
-- [ ] `http://127.0.0.1:8766/html-paragraphs/poem.html`
-- [ ] `http://127.0.0.1:8766/html-paragraphs/pre.html`
-
-<img alt="html-paragraphs result" src="./code_sandbox/snaps/html-paragraphs-result.png" />
-
-The paragraph examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-paragraphs/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Two paragraphs (`index.html`):
 
 <img alt="html-paragraphs source" src="./code_sandbox/snaps/html-paragraphs-code.png" />
@@ -1890,6 +1531,18 @@ Poem in `<pre>` (`pre.html`):
 ```
 
 <img alt="html-paragraphs pre result" src="./code_sandbox/snaps/html-paragraphs-05-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-paragraphs/`.
 
 </details>
 
@@ -2045,61 +1698,6 @@ The HTML **`style`** attribute adds CSS to an element: **color**, **font**, **si
   - Defines **horizontal** text alignment (`center` in the example).
   - Sandbox: `code_sandbox/html-styles/align.html`.
 
-<img alt="html-styles text-align result" src="./code_sandbox/snaps/html-styles-06-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the seven style examples: intro colors/size, body background, element backgrounds, text color, font-family, font-size, and text-align.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-styles` file.
-- [ ] Success: red/blue/big intro; powderblue page; powderblue heading and tomato paragraph; blue heading and red paragraph; Verdana/Courier; larger percent sizes; centered heading and paragraph.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-styles/`
-- [ ] `http://127.0.0.1:8766/html-styles/background.html`
-- [ ] `http://127.0.0.1:8766/html-styles/background2.html`
-- [ ] `http://127.0.0.1:8766/html-styles/color.html`
-- [ ] `http://127.0.0.1:8766/html-styles/font.html`
-- [ ] `http://127.0.0.1:8766/html-styles/size.html`
-- [ ] `http://127.0.0.1:8766/html-styles/align.html`
-
-<img alt="html-styles result" src="./code_sandbox/snaps/html-styles-result.png" />
-
-The style examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-styles/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Intro colors and size (`index.html`):
 
 <img alt="html-styles source" src="./code_sandbox/snaps/html-styles-code.png" />
@@ -2180,6 +1778,18 @@ Text alignment (`align.html`):
 ```
 
 <img alt="html-styles text-align result" src="./code_sandbox/snaps/html-styles-06-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-styles/`.
 
 </details>
 
@@ -2353,65 +1963,6 @@ HTML has several elements for text with a **special meaning**: bold, important, 
 
 <img alt="html-formatting sub result" src="./code_sandbox/snaps/html-formatting-09-result.png" />
 
-<img alt="html-formatting sup result" src="./code_sandbox/snaps/html-formatting-10-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the formatting examples: intro combo, then each tag (`b`, `strong`, `i`, `em`, `small`, `mark`, `del`, `ins`, `sub`, `sup`).
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-formatting` file.
-- [ ] Success: bold/italic/sub/sup intro; bold vs important; italic vs emphasized; smaller text; yellow highlight on “milk”; strikethrough “blue”; strikethrough plus underlined “red”; subscript; superscript.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-formatting/`
-- [ ] `http://127.0.0.1:8766/html-formatting/b.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/strong.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/i.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/em.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/small.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/mark.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/del.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/ins.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/sub.html`
-- [ ] `http://127.0.0.1:8766/html-formatting/sup.html`
-
-<img alt="html-formatting result" src="./code_sandbox/snaps/html-formatting-result.png" />
-
-The formatting examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-formatting/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Intro (`index.html`):
 
 <img alt="html-formatting source" src="./code_sandbox/snaps/html-formatting-code.png" />
@@ -2523,6 +2074,18 @@ Superscript (`sup.html`):
 ```
 
 <img alt="html-formatting sup result" src="./code_sandbox/snaps/html-formatting-10-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-formatting/`.
 
 </details>
 
@@ -2683,60 +2246,6 @@ This chapter covers **quotation and citation** elements: `<blockquote>`, `<q>`, 
   - Overrides the current **text direction** (`dir="rtl"` in the example).
   - Sandbox: `code_sandbox/html-quotations/bdo.html`.
 
-<img alt="html-quotations bdo result" src="./code_sandbox/snaps/html-quotations-06-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the quotation examples: indented WWF blockquote, short `<q>` with quote marks, WHO abbreviation, italic address, _The Scream_ citation, and RTL `<bdo>`.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-quotations` file.
-- [ ] Success: indented WWF quote; quoted WWF goal; dotted WHO (tooltip “World Health Organization”); italic John Doe address; italic _The Scream_; reversed RTL sentence.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-quotations/`
-- [ ] `http://127.0.0.1:8766/html-quotations/q.html`
-- [ ] `http://127.0.0.1:8766/html-quotations/abbr.html`
-- [ ] `http://127.0.0.1:8766/html-quotations/address.html`
-- [ ] `http://127.0.0.1:8766/html-quotations/cite.html`
-- [ ] `http://127.0.0.1:8766/html-quotations/bdo.html`
-
-<img alt="html-quotations result" src="./code_sandbox/snaps/html-quotations-result.png" />
-
-The quotation examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-quotations/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Intro / blockquote (`index.html`):
 
 <img alt="html-quotations intro" src="./code_sandbox/snaps/html-quotations-code.png" />
@@ -2816,6 +2325,18 @@ Bi-directional override (`bdo.html`):
 ```
 
 <img alt="html-quotations bdo result" src="./code_sandbox/snaps/html-quotations-06-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-quotations/`.
 
 </details>
 
@@ -2963,58 +2484,6 @@ HTML **comments** are **not displayed** in the browser. They document the source
   - `This <!-- great text --> is a paragraph.` displays as “This is a paragraph.”
   - Sandbox: `code_sandbox/html-comments/inline.html`.
 
-<img alt="html-comments inline result" src="./code_sandbox/snaps/html-comments-04-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the comment examples: reminders around a paragraph, a hidden extra paragraph, a hidden image block, and an inline hidden phrase.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-comments` file.
-- [ ] Success: one visible paragraph (comments hidden); two paragraphs with the middle one commented out; two paragraphs with the image block commented out; “This is a paragraph.” without “great text”.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-comments/`
-- [ ] `http://127.0.0.1:8766/html-comments/hide.html`
-- [ ] `http://127.0.0.1:8766/html-comments/hide-block.html`
-- [ ] `http://127.0.0.1:8766/html-comments/inline.html`
-
-<img alt="html-comments result" src="./code_sandbox/snaps/html-comments-result.png" />
-
-The comment examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-comments/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Syntax:
 
 <img alt="html-comments syntax source" src="./code_sandbox/snaps/html-comments-code.png" />
@@ -3079,6 +2548,18 @@ Hide inline (`inline.html`):
 ```
 
 <img alt="html-comments inline result" src="./code_sandbox/snaps/html-comments-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-comments/`.
 
 </details>
 
@@ -3206,59 +2687,6 @@ HTML colors are specified with **predefined color names**, or with **RGB**, **HE
   - RGB, HEX, and HSL are covered in more depth on the following color pages.
   - Sandbox: `code_sandbox/html-colors/values.html`.
 
-<img alt="html-colors values result" src="./code_sandbox/snaps/html-colors-04-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the color examples: named color bars, background and text colors, colored borders, and Tomato as RGB / HEX / HSL / RGBA / HSLA.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-colors` file.
-- [ ] Success: eight named color headings; DodgerBlue heading + Tomato paragraph; Tomato / DodgerBlue / MediumSeaGreen text; three bordered Hello World headings; five Tomato-equivalent value bars (two semi-transparent).
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-colors/`
-- [ ] `http://127.0.0.1:8766/html-colors/background.html`
-- [ ] `http://127.0.0.1:8766/html-colors/text.html`
-- [ ] `http://127.0.0.1:8766/html-colors/border.html`
-- [ ] `http://127.0.0.1:8766/html-colors/values.html`
-
-<img alt="html-colors result" src="./code_sandbox/snaps/html-colors-result.png" />
-
-The color examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-colors/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Color names (`index.html`):
 
 <img alt="html-colors names source" src="./code_sandbox/snaps/html-colors-code.png" />
@@ -3346,6 +2774,18 @@ Color values (`values.html`):
 ```
 
 <img alt="html-colors values result" src="./code_sandbox/snaps/html-colors-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-colors/`.
 
 </details>
 
@@ -3527,59 +2967,6 @@ Specify colors with **names** (140 standard names) or with **RGB / HEX / HSL / R
 | `<style>` | Style information for an HTML document             |
 | `<link>`  | A link between a document and an external resource |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run inline, internal, and external CSS, then fonts, border, padding, and margin.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-css` file.
-- [ ] Success: blue heading + red paragraph (inline); powderblue page with blue heading and red paragraph (internal and external); large verdana heading + larger courier paragraph; powderblue-bordered paragraph; extra inner space (padding); extra outer space (margin).
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-css/`
-- [ ] `http://127.0.0.1:8766/html-css/internal.html`
-- [ ] `http://127.0.0.1:8766/html-css/external.html`
-- [ ] `http://127.0.0.1:8766/html-css/fonts.html`
-- [ ] `http://127.0.0.1:8766/html-css/border.html`
-- [ ] `http://127.0.0.1:8766/html-css/padding.html`
-- [ ] `http://127.0.0.1:8766/html-css/margin.html`
-
-<img alt="html-css result" src="./code_sandbox/snaps/html-css-result.png" />
-
-The CSS examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-css/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Inline (`index.html`):
 
 <img alt="html-css inline source" src="./code_sandbox/snaps/html-css-code.png" />
@@ -3702,6 +3089,18 @@ p {
 ```
 
 <img alt="html-css margin result" src="./code_sandbox/snaps/html-css-06-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-css/`.
 
 </details>
 
@@ -3915,59 +3314,6 @@ HTML links are **hyperlinks**. Click one to jump to another document. The mouse 
 | ----- | ------------------- |
 | `<a>` | Defines a hyperlink |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the link examples: a W3Schools link, `_blank`, absolute vs relative URLs, an image link, mailto, a button, and a titled tooltip link.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-links` file.
-- [ ] Success: blue underlined Visit W3Schools.com; Visit W3Schools! opens a new tab; W3C/Google plus local Images/CSS links; yellow smiley is a link; Send email; HTML Tutorial button; Visit our HTML Tutorial (tooltip on hover).
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-links/`
-- [ ] `http://127.0.0.1:8766/html-links/target.html`
-- [ ] `http://127.0.0.1:8766/html-links/urls.html`
-- [ ] `http://127.0.0.1:8766/html-links/image.html`
-- [ ] `http://127.0.0.1:8766/html-links/email.html`
-- [ ] `http://127.0.0.1:8766/html-links/button.html`
-- [ ] `http://127.0.0.1:8766/html-links/title.html`
-
-<img alt="html-links result" src="./code_sandbox/snaps/html-links-result.png" />
-
-The link examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-links/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Syntax:
 
 <img alt="html-links syntax source" src="./code_sandbox/snaps/html-links-code.png" />
@@ -4055,6 +3401,18 @@ Title (`title.html`):
 ```
 
 <img alt="html-links title result" src="./code_sandbox/snaps/html-links-06-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-links/`.
 
 </details>
 
@@ -4229,57 +3587,6 @@ Images improve how a page looks. The empty `<img>` tag **links** an image into t
 | `<area>`    | Clickable area inside an image map     |
 | `<picture>` | Container for multiple image resources |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the image examples: Trulli photo, broken `src` with alt text, sized girl photo, and floated smileys.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open the `html-images` files.
-- [ ] Success: Trulli photo; broken icon + “Flowers in Chania”; large girl-in-jacket photo; smileys floated right then left of the sentences.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-images/`
-- [ ] `http://127.0.0.1:8766/html-images/wrong.html`
-- [ ] `http://127.0.0.1:8766/html-images/size.html`
-- [ ] `http://127.0.0.1:8766/html-images/float.html`
-- [ ] Also: `girl.html`, `chania.html`, `style.html`, `folder.html`, `external.html`, `animated.html`, `link.html`.
-
-<img alt="html-images result" src="./code_sandbox/snaps/html-images-result.png" />
-
-The image examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-images/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Syntax:
 
 <img alt="html-images syntax source" src="./code_sandbox/snaps/html-images-01-code.png" />
@@ -4345,6 +3652,18 @@ Float (`float.html`):
 ```
 
 <img alt="html-images float result" src="./code_sandbox/snaps/html-images-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-images/`.
 
 </details>
 
@@ -4456,48 +3775,6 @@ Float (`float.html`):
   - File: `index.html`.
   - There is no local sandbox copy of the interactive grader.
 
-<img alt="html-project landing" src="./code_sandbox/snaps/html-project-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Complete the W3Schools **Personal Page** project in their editor.
-
-### **Overview**
-
-- [ ] Open the project page and start the embedded editor.
-- [ ] Success: all 5 steps pass Check code (one `<h1>`, intro paragraph, list, image, links) and you earn +70 XP.
-
-### **Task 1: Run the official project**
-
-- [ ] Open `https://www.w3schools.com/html/html_project_bio.php`.
-- [ ] Click **Start Building Now**.
-- [ ] Complete each of the **5 steps**. Click **Check code** on every step.
-
-No local sandbox folder: this chapter is the interactive editor, not a static example.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No local server for this chapter. The project runs in the W3Schools editor.
-
-```text
-# No local commands. Use Start Building Now on the project page.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 No tested sandbox files. The runnable example is the site’s editor. Skills to use:
 
 ```html
@@ -4511,6 +3788,17 @@ No tested sandbox files. The runnable example is the site’s editor. Skills to 
 ```
 
 <img alt="html-project landing" src="./code_sandbox/snaps/html-project-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No local server for this chapter. The project runs in the W3Schools editor.
+
+```text
+# No local commands. Use Start Building Now on the project page.
+```
 
 </details>
 
@@ -4609,53 +3897,6 @@ A **favicon** is a small image next to the page title in the **browser tab**. Ad
 | -------- | -------------------------------------------------------- |
 | `<link>` | Relationship between a document and an external resource |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Serve the favicon sandbox and confirm the heading, paragraph, and tab title **My Page Title**.
-
-### **Overview**
-
-- [ ] Open `html-favicon/index.html` over HTTP.
-- [ ] Success: “This is a Heading”, “This is a paragraph.”, tab title **My Page Title**.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-favicon/`
-
-<img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
-
-The favicon example matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-favicon/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-favicon/index.html`
 
 <img alt="html-favicon source" src="./code_sandbox/snaps/html-favicon-code.png" />
@@ -4677,6 +3918,18 @@ Sandbox: `code_sandbox/html-favicon/index.html`
 <img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
 
 The chapter example used `href="/images/favicon.ico"`. The sandbox uses a local `favicon.ico` so it loads offline.
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-favicon/`.
 
 </details>
 
@@ -4773,53 +4026,6 @@ Every page should have a **`<title>`** that describes what the page means. The t
 | --------- | --------------------------------- |
 | `<title>` | Defines the title of the document |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Serve the page-title sandbox and confirm the tab title is **HTML Tutorial**.
-
-### **Overview**
-
-- [ ] Open `html-page-title/index.html` over HTTP.
-- [ ] Success: tab title **HTML Tutorial**; body “The content of the document......”
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-page-title/`
-
-<img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
-
-The page-title example matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-page-title/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-page-title/index.html`
 
 <img alt="html-page-title source" src="./code_sandbox/snaps/html-page-title-code.png" />
@@ -4837,6 +4043,18 @@ Sandbox: `code_sandbox/html-page-title/index.html`
 ```
 
 <img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-page-title/`.
 
 </details>
 
@@ -4960,56 +4178,6 @@ HTML tables arrange data in **rows** and **columns**. A table is cells inside ro
 | `<tbody>`    | Groups body content                   |
 | `<tfoot>`    | Groups footer content                 |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the table examples: company table, one-row cells, two data rows, and a header row.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-tables` file.
-- [ ] Success: bordered Company/Contact/Country table; Emil Tobias Linus; names plus ages; Person 1–3 headers bold and centered.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-tables/`
-- [ ] `http://127.0.0.1:8766/html-tables/cells.html`
-- [ ] `http://127.0.0.1:8766/html-tables/rows.html`
-- [ ] `http://127.0.0.1:8766/html-tables/headers.html`
-
-<img alt="html-tables result" src="./code_sandbox/snaps/html-tables-result.png" />
-
-The table examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-tables/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Company table (`index.html`):
 
 <img alt="html-tables company source" src="./code_sandbox/snaps/html-tables-code.png" />
@@ -5098,6 +4266,18 @@ Headers (`headers.html`):
 ```
 
 <img alt="html-tables headers result" src="./code_sandbox/snaps/html-tables-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-tables/`.
 
 </details>
 
@@ -5227,55 +4407,6 @@ HTML lists group related items. This chapter covers **unordered** lists (`<ul>`)
 | `<dt>` | Defines a term in a description list     |
 | `<dd>` | Describes the term in a description list |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the three list types: bullets, numbers, and term/description pairs.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-lists` file.
-- [ ] Success: Coffee/Tea/Milk as bullets; the same three numbered; Coffee and Milk with indented descriptions.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-lists/`
-- [ ] `http://127.0.0.1:8766/html-lists/ordered.html`
-- [ ] `http://127.0.0.1:8766/html-lists/description.html`
-
-<img alt="html-lists result" src="./code_sandbox/snaps/html-lists-result.png" />
-
-The list examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-lists/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Unordered (`index.html`):
 
 <img alt="html-lists unordered source" src="./code_sandbox/snaps/html-lists-code.png" />
@@ -5318,6 +4449,18 @@ Description (`description.html`):
 ```
 
 <img alt="html-lists description result" src="./code_sandbox/snaps/html-lists-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-lists/`.
 
 </details>
 
@@ -5466,56 +4609,6 @@ Every HTML element has a default **display** value. The two most common are **bl
 | `<div>`  | Defines a section in a document (block-level) |
 | `<span>` | Defines a section in a document (inline)      |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the four Block & Inline examples: stacked `<p>`/`<div>`, a lone `<span>`, a styled London `<div>`, and colored words inside a sentence.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-block-inline` file.
-- [ ] Success: two stacked **Hello World** lines; one inline **Hello World**; black London box; **blue** / **dark green** in the sentence.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-block-inline/`
-- [ ] `http://127.0.0.1:8766/html-block-inline/span.html`
-- [ ] `http://127.0.0.1:8766/html-block-inline/div.html`
-- [ ] `http://127.0.0.1:8766/html-block-inline/span-style.html`
-
-<img alt="html-block-inline result" src="./code_sandbox/snaps/html-block-inline-result.png" />
-
-The block and inline examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-block-inline/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Block `<p>` and `<div>` (`index.html`):
 
 <img alt="html-block-inline p and div source" src="./code_sandbox/snaps/html-block-inline-code.png" />
@@ -5566,6 +4659,18 @@ Styled `<span>` (`span-style.html`):
 ```
 
 <img alt="html-block-inline styled span result" src="./code_sandbox/snaps/html-block-inline-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-block-inline/`.
 
 </details>
 
@@ -5755,60 +4860,6 @@ The **`<div>`** element is a **block-level container** for other HTML elements. 
 | ------- | --------------------------------------------- |
 | `<div>` | Defines a section in a document (block-level) |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the full-width div, the London container, the centered 300px box, three stacked cities, and the four side-by-side layouts.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-div` file.
-- [ ] Success: **I am a div** on its own line; London group; centered 300px box; three stacked cities; London/Oslo/Rome in three columns for float, inline-block, flex, and grid.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-div/`
-- [ ] `http://127.0.0.1:8766/html-div/container.html`
-- [ ] `http://127.0.0.1:8766/html-div/center.html`
-- [ ] `http://127.0.0.1:8766/html-div/multiple.html`
-- [ ] `http://127.0.0.1:8766/html-div/float.html`
-- [ ] `http://127.0.0.1:8766/html-div/inline-block.html`
-- [ ] `http://127.0.0.1:8766/html-div/flex.html`
-- [ ] `http://127.0.0.1:8766/html-div/grid.html`
-
-<img alt="html-div result" src="./code_sandbox/snaps/html-div-result.png" />
-
-The div examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-div/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Full-width break (`index.html`):
 
 <img alt="html-div full-width source" src="./code_sandbox/snaps/html-div-code.png" />
@@ -5917,6 +4968,18 @@ Grid (`grid.html`):
 ```
 
 <img alt="html-div grid result" src="./code_sandbox/snaps/html-div-07-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-div/`.
 
 </details>
 
@@ -6093,59 +5156,6 @@ The HTML **`class`** attribute names a class for an element. **Multiple elements
   - CSS and JavaScript **select** elements by class.
   - Usable on **any** element; **case sensitive**; different tags can share a class; JS uses **`getElementsByClassName()`**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the shared `.city` boxes, red `.note` spans, class syntax on headings, two classes on London, shared class on `<h2>`/`<p>`, and the hide-cities button.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-classes` file.
-- [ ] Success: three tomato city boxes; red **Important** / **important**; tomato headings; London centered plus Paris/Tokyo left; styled Paris heading and paragraph; button visible above the three cities.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-classes/`
-- [ ] `http://127.0.0.1:8766/html-classes/note.html`
-- [ ] `http://127.0.0.1:8766/html-classes/syntax.html`
-- [ ] `http://127.0.0.1:8766/html-classes/multiple.html`
-- [ ] `http://127.0.0.1:8766/html-classes/share.html`
-- [ ] `http://127.0.0.1:8766/html-classes/js.html`
-- [ ] Optional: click **Hide cities** and confirm the boxes disappear.
-
-<img alt="html-classes result" src="./code_sandbox/snaps/html-classes-result.png" />
-
-The class examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-classes/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Shared `.city` boxes (`index.html`):
 
 <img alt="html-classes city boxes source" src="./code_sandbox/snaps/html-classes-code.png" />
@@ -6232,6 +5242,18 @@ JavaScript (`js.html`):
 ```
 
 <img alt="html-classes javascript result" src="./code_sandbox/snaps/html-classes-05-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-classes/`.
 
 </details>
 
@@ -6373,56 +5395,6 @@ The HTML **`id`** attribute gives an element a **unique** name in the document. 
 - [x] **Chapter summary from the page**
   - Unique id per document; CSS and JS select it; **case sensitive**; also used for **bookmarks**; JS uses **`getElementById()`**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the unique header style, class vs id, the Chapter 4 jump link, and the JavaScript text change.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-id` file.
-- [ ] Success: centered light-blue **My Header**; **My Cities** plus three tomato headings; **Jump to Chapter 4** link above chapters; **Hello World!** with a change button.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-id/`
-- [ ] `http://127.0.0.1:8766/html-id/class.html`
-- [ ] `http://127.0.0.1:8766/html-id/bookmark.html` (click **Jump to Chapter 4**)
-- [ ] `http://127.0.0.1:8766/html-id/js.html` (optional: click **Change text**)
-
-<img alt="html-id result" src="./code_sandbox/snaps/html-id-result.png" />
-
-The id examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-id/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Unique id (`index.html`):
 
 <img alt="html-id header source" src="./code_sandbox/snaps/html-id-code.png" />
@@ -6480,6 +5452,18 @@ JavaScript (`js.html`):
 ```
 
 <img alt="html-id javascript result" src="./code_sandbox/snaps/html-id-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-id/`.
 
 </details>
 
@@ -6637,58 +5621,6 @@ Buttons let users **interact** with a page: submit forms, run JavaScript, or tri
 | ---------- | -------------------------- |
 | `<button>` | Defines a clickable button |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run a plain button, a green styled button, a disabled button, an `onclick` alert, the three types, and a mini form.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-buttons` file.
-- [ ] Success: **Click Me**; green **Green Button**; faded **Disabled Button**; **Click Me** that can alert; three type buttons; first-name field with Submit and Reset.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-buttons/`
-- [ ] `http://127.0.0.1:8766/html-buttons/styled.html`
-- [ ] `http://127.0.0.1:8766/html-buttons/disabled.html`
-- [ ] `http://127.0.0.1:8766/html-buttons/js.html`
-- [ ] `http://127.0.0.1:8766/html-buttons/types.html`
-- [ ] `http://127.0.0.1:8766/html-buttons/form.html`
-
-<img alt="html-buttons result" src="./code_sandbox/snaps/html-buttons-result.png" />
-
-The button examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-buttons/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Basic (`index.html`):
 
 <img alt="html-buttons click me source" src="./code_sandbox/snaps/html-buttons-code.png" />
@@ -6754,6 +5686,18 @@ Form (`form.html`):
 ```
 
 <img alt="html-buttons form result" src="./code_sandbox/snaps/html-buttons-05-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-buttons/`.
 
 </details>
 
@@ -6888,57 +5832,6 @@ An HTML **iframe** displays a **web page inside a web page**. `<iframe>` is an *
 | ---------- | ----------------------- |
 | `<iframe>` | Defines an inline frame |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Embed `demo_iframe.htm` with pixel size, CSS size, no border, a red border, and a link that targets the frame.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-iframes` file.
-- [ ] Success: 200×300 frame showing **This page is displayed in an iframe**; same with CSS size; frameless embed; red 2px border; **W3Schools.com** link under a named iframe.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-iframes/`
-- [ ] `http://127.0.0.1:8766/html-iframes/css-size.html`
-- [ ] `http://127.0.0.1:8766/html-iframes/noborder.html`
-- [ ] `http://127.0.0.1:8766/html-iframes/redborder.html`
-- [ ] `http://127.0.0.1:8766/html-iframes/target.html` (click **W3Schools.com** to load it in the frame)
-
-<img alt="html-iframes result" src="./code_sandbox/snaps/html-iframes-result.png" />
-
-The iframe examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-iframes/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Size attributes (`index.html`):
 
 <img alt="html-iframes size source" src="./code_sandbox/snaps/html-iframes-code.png" />
@@ -7006,6 +5899,18 @@ Target (`target.html`):
 ```
 
 <img alt="html-iframes target result" src="./code_sandbox/snaps/html-iframes-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-iframes/`.
 
 </details>
 
@@ -7130,57 +6035,6 @@ Target (`target.html`):
 | `<script>`   | Defines a client-side script                                        |
 | `<noscript>` | Alternate content for users that do not support client-side scripts |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the date button, Hello JavaScript text, styled paragraph, swapped image, and noscript page.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-javascript` file.
-- [ ] Success: **Click me to display Date and Time**; **Hello JavaScript!**; large red-on-yellow text; HTML5 gif (from `picture.gif`); Hello JavaScript with noscript present in the source.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-javascript/`
-- [ ] `http://127.0.0.1:8766/html-javascript/content.html`
-- [ ] `http://127.0.0.1:8766/html-javascript/styles.html`
-- [ ] `http://127.0.0.1:8766/html-javascript/attribute.html`
-- [ ] `http://127.0.0.1:8766/html-javascript/noscript.html`
-
-<img alt="html-javascript result" src="./code_sandbox/snaps/html-javascript-result.png" />
-
-The JavaScript examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-javascript/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Date button (`index.html`):
 
 <img alt="html-javascript date source" src="./code_sandbox/snaps/html-javascript-code.png" />
@@ -7240,6 +6094,18 @@ Noscript (`noscript.html`):
 ```
 
 <img alt="html-javascript noscript result" src="./code_sandbox/snaps/html-javascript-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-javascript/`.
 
 </details>
 
@@ -7362,57 +6228,6 @@ A **file path** is the location of a file in a site’s folder structure. Paths 
   - Then pages are **not bound** to the current base URL.
   - Links work on **localhost**, the current public domain, and **future** domains.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Load the mountain image via an absolute URL, a root-relative path, a current-folder path, a parent-folder path, and a same-folder path.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` (root must be this folder so `/images/picture.jpg` works).
-- [ ] Success: the same mountain/trulli photo in all five pages.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-filepaths/absolute.html`
-- [ ] `http://127.0.0.1:8766/html-filepaths/root.html`
-- [ ] `http://127.0.0.1:8766/html-filepaths/folder.html`
-- [ ] `http://127.0.0.1:8766/html-filepaths/nested/up.html`
-- [ ] `http://127.0.0.1:8766/html-filepaths/`
-
-<img alt="html-filepaths result" src="./code_sandbox/snaps/html-filepaths-result.png" />
-
-The file path examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-filepaths/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Absolute (`absolute.html`):
 
 <img alt="html-filepaths absolute source" src="./code_sandbox/snaps/html-filepaths-code.png" />
@@ -7452,6 +6267,18 @@ Parent folder (`nested/up.html`):
 ```
 
 <img alt="html-filepaths parent-folder result" src="./code_sandbox/snaps/html-filepaths-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-filepaths/`.
 
 </details>
 
@@ -7608,58 +6435,6 @@ The HTML **`<head>`** element holds **metadata** (data about data): `<title>`, `
 | `<script>` | A client-side script                                     |
 | `<style>`  | Style information for a document                         |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the title page, in-page styles, linked CSS, meta page, script button, and base URL page.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-head` file.
-- [ ] Success: body text **The content of the document......** with tab title **A Meaningful Page Title**; powderblue/red/blue page twice (style + link); meta note; **Try it** button; stickman gif plus **HTML base Tag** link.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-head/`
-- [ ] `http://127.0.0.1:8766/html-head/style.html`
-- [ ] `http://127.0.0.1:8766/html-head/link.html`
-- [ ] `http://127.0.0.1:8766/html-head/meta.html`
-- [ ] `http://127.0.0.1:8766/html-head/script.html`
-- [ ] `http://127.0.0.1:8766/html-head/base.html`
-
-<img alt="html-head result" src="./code_sandbox/snaps/html-head-result.png" />
-
-The head examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-head/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Title (`index.html`):
 
 <img alt="html-head title source" src="./code_sandbox/snaps/html-head-code.png" />
@@ -7736,6 +6511,18 @@ Base (`base.html`):
 ```
 
 <img alt="html-head base result" src="./code_sandbox/snaps/html-head-05-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-head/`.
 
 </details>
 
@@ -7851,56 +6638,6 @@ Sites often show content in **multiple columns** (magazine/newspaper). HTML has 
   - Flex: `section { display: flex; }` with the same 30%/70% widths.
   - Sandbox: `flex.html`.
 
-<img alt="html-layout flex result" src="./code_sandbox/snaps/html-layout-01-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the Cities newspaper layout built with float, then the same structure with flexbox.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open both `html-layout` files.
-- [ ] Success: gray **Cities** header, left nav (London/Paris/Tokyo), main London article, gray **Footer**.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-layout/`
-- [ ] `http://127.0.0.1:8766/html-layout/flex.html`
-
-<img alt="html-layout result" src="./code_sandbox/snaps/html-layout-result.png" />
-
-The layout examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-layout/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Semantic skeleton (float page `index.html`):
 
 <img alt="html-layout float source" src="./code_sandbox/snaps/html-layout-code.png" />
@@ -7933,6 +6670,18 @@ article {
 ```
 
 <img alt="html-layout flex result" src="./code_sandbox/snaps/html-layout-01-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-layout/`.
 
 </details>
 
@@ -8060,56 +6809,6 @@ Use semantic tags for page regions. Build columns with a framework, float, flexb
   - **W3.CSS** — desktop/tablet/mobile by default; smaller/faster; no jQuery required.
   - **Bootstrap** — example uses Bootstrap 5 CDN and a three-column row.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the viewport + vw heading, `width:100%` image, `max-width:100%` image, and the three-column media query.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-responsive` file.
-- [ ] Success: large **Hello World**; full-width girl photo; same photo capped at original size; Left/Main/Right columns in a row (window wider than 800px).
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-responsive/`
-- [ ] `http://127.0.0.1:8766/html-responsive/width.html`
-- [ ] `http://127.0.0.1:8766/html-responsive/maxwidth.html`
-- [ ] `http://127.0.0.1:8766/html-responsive/media.html` (narrow the window below 800px to stack the columns)
-
-<img alt="html-responsive result" src="./code_sandbox/snaps/html-responsive-result.png" />
-
-The responsive examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-responsive/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Viewport (`index.html`):
 
 <img alt="html-responsive viewport source" src="./code_sandbox/snaps/html-responsive-code.png" />
@@ -8155,6 +6854,18 @@ Media query (`media.html`):
 ```
 
 <img alt="html-responsive media query result" src="./code_sandbox/snaps/html-responsive-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-responsive/`.
 
 </details>
 
@@ -8282,57 +6993,6 @@ HTML has elements for **user input and computer code**: `<kbd>`, `<samp>`, `<cod
 | `<var>`  | A variable        |
 | `<pre>`  | Preformatted text |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open keyboard input, sample output, collapsed code, preformatted code, and italic variables.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-computercode` file.
-- [ ] Success: monospace **Ctrl + S**; **File not found**; one-line `x = 5; y = 6; z = x + y;`; the same three lines stacked; italic **b** and **h**.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-computercode/`
-- [ ] `http://127.0.0.1:8766/html-computercode/samp.html`
-- [ ] `http://127.0.0.1:8766/html-computercode/code.html`
-- [ ] `http://127.0.0.1:8766/html-computercode/pre.html`
-- [ ] `http://127.0.0.1:8766/html-computercode/var.html`
-
-<img alt="html-computercode result" src="./code_sandbox/snaps/html-computercode-result.png" />
-
-The computer-code examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-computercode/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `<kbd>` (`index.html`):
 
 <img alt="html-computercode kbd source" src="./code_sandbox/snaps/html-computercode-code.png" />
@@ -8393,6 +7053,18 @@ z = x + y;
 ```
 
 <img alt="html-computercode var result" src="./code_sandbox/snaps/html-computercode-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-computercode/`.
 
 </details>
 
@@ -8540,57 +7212,6 @@ Use `<kbd>` for keys, `<samp>` for program output, `<code>` for snippets, and `<
 | `<summary>`    | Visible heading for `<details>`               |
 | `<time>`       | A date/time                                   |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open WWF sections, nested browser articles, nav+footer, the Epcot aside, and the Trulli figure.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-semantics` file.
-- [ ] Success: two WWF headings; gray **Most Popular Browsers** cards; HTML\|CSS nav plus author footer; italic gray aside; Trulli photo with caption.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-semantics/`
-- [ ] `http://127.0.0.1:8766/html-semantics/article.html`
-- [ ] `http://127.0.0.1:8766/html-semantics/nav-footer.html`
-- [ ] `http://127.0.0.1:8766/html-semantics/aside.html`
-- [ ] `http://127.0.0.1:8766/html-semantics/figure.html`
-
-<img alt="html-semantics result" src="./code_sandbox/snaps/html-semantics-result.png" />
-
-The semantic examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-semantics/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Section (`index.html`):
 
 <img alt="html-semantics section source" src="./code_sandbox/snaps/html-semantics-code.png" />
@@ -8654,6 +7275,18 @@ Figure (`figure.html`):
 ```
 
 <img alt="html-semantics figure result" src="./code_sandbox/snaps/html-semantics-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-semantics/`.
 
 </details>
 
@@ -8761,55 +7394,6 @@ Prefer semantic tags over anonymous divs. `<section>` groups themes; `<article>`
 - [x] **Lowercase file names** (Apache/Unix are case-sensitive; IIS is not). Extensions: `.html`/`.htm`, `.css`, `.js`. `.htm` and `.html` are the same to browsers. Default filenames: `index.html`, `index.htm`, `default.html`, `default.htm` depending on the server.
 - [x] Sandbox good example: `code_sandbox/html-style-guide/index.html`.
 
-<img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the “good” Famous Cities page that follows the style guide (doctype, `lang`, charset, viewport, title, lowercase, quoted attributes, sized image).
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-style-guide/`.
-- [ ] Success: Tokyo/London/Paris copy, HTML5 gif 128×128, tutorial link; tab title **HTML Style Guide and Coding Conventions**.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-style-guide/`
-
-<img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
-
-The style-guide example matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-style-guide/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Good document (`index.html`):
 
 <img alt="html-style-guide source" src="./code_sandbox/snaps/html-style-guide-code.png" />
@@ -8829,6 +7413,18 @@ Good document (`index.html`):
 ```
 
 <img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-style-guide/`.
 
 </details>
 
@@ -8945,55 +7541,6 @@ Reserved characters in HTML must be replaced with **character entities**. This c
   - A glyph added to a letter (grave `` ` ``, acute ´). Combine with a letter: `a&#768;` → à, `a&#769;` → á, `a&#770;` → â, `a&#771;` → ã (same for `O`).
 - [x] Sandbox: `code_sandbox/html-entities/index.html`.
 
-<img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Render reserved characters, copyright, non-breaking spaces, and combining accents.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-entities/`.
-- [ ] Success: `<` `>` `&` `© W3Schools.com`, `10 km/h` / `10 PM`, à and á.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-entities/`
-
-<img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
-
-The entity examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-entities/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-entities/index.html`
 
 <img alt="html-entities source" src="./code_sandbox/snaps/html-entities-code.png" />
@@ -9008,6 +7555,18 @@ Sandbox: `code_sandbox/html-entities/index.html`
 ```
 
 <img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-entities/`.
 
 </details>
 
@@ -9112,55 +7671,6 @@ Symbols that are **not on the keyboard** can be added with entity **names**, **d
 - [x] The page also shows more Unicode groups (currency, arrows, weather, chess, music, and so on) as a gallery, with links to full charset references.
 - [x] Sandbox: `code_sandbox/html-symbols/index.html`.
 
-<img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Show the euro three ways, then copyright/arrows, card suits, and a few math/Greek symbols.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-symbols/`.
-- [ ] Success: three **€** lines, then © ® ™ arrows, ♠♣♥♦, and Σ ∞ Α Ω.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-symbols/`
-
-<img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
-
-The symbol examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-symbols/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-symbols/index.html`
 
 <img alt="html-symbols source" src="./code_sandbox/snaps/html-symbols-code.png" />
@@ -9175,6 +7685,18 @@ Sandbox: `code_sandbox/html-symbols/index.html`
 ```
 
 <img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-symbols/`.
 
 </details>
 
@@ -9276,55 +7798,6 @@ Emojis look like images, but they are **UTF-8 characters**. This chapter sets `c
 - [x] **Size like text**: `font-size:48px` on a paragraph of emoji entities.
 - [x] Sandbox: `code_sandbox/html-emojis/index.html` (first emoji, sized row, and A B C vs `&#65; &#66; &#67;`).
 
-<img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Show a grinning face, a 48px emoji row, and A B C written both as letters and as entity numbers.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-emojis/`.
-- [ ] Success: **My First Emoji** with 😀; **Sized Emojis** at 48px (😀 😄 😍 💗); two lines that both read **I will display A B C**.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-emojis/`
-
-<img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
-
-The emoji examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-emojis/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-emojis/index.html`
 
 <img alt="html-emojis source" src="./code_sandbox/snaps/html-emojis-code.png" />
@@ -9339,6 +7812,18 @@ Sandbox: `code_sandbox/html-emojis/index.html`
 ```
 
 <img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-emojis/`.
 
 </details>
 
@@ -9439,55 +7924,6 @@ A browser must know the **character set** to display a page correctly. This chap
   - `<meta charset="UTF-8">`
 - [x] The page galleries **HTML UTF-8 Characters** (Basic Latin, Latin Extended A–E, IPA, punctuation, super/subscript, Braille). Sandbox: `code_sandbox/html-charsets/index.html`.
 
-<img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-The chapter has no Try it Yourself editor. The sandbox is a UTF-8 page that shows Latin, punctuation, and combining diacritics.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-charsets/`.
-- [ ] Success: Basic Latin, Ā Ć Ē, ‰ ‼ ⁇, and à á â ã all render (the file is saved as UTF-8 with `<meta charset="UTF-8">`).
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-charsets/`
-
-<img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
-
-UTF-8 characters display correctly.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-charsets/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Declare UTF-8, then put Unicode in the file:
 
 <img alt="html-charsets source" src="./code_sandbox/snaps/html-charsets-code.png" />
@@ -9506,6 +7942,18 @@ Sandbox body (`html-charsets/index.html`):
 ```
 
 <img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-charsets/`.
 
 </details>
 
@@ -9635,56 +8083,6 @@ A **URL** is a web address. This chapter explains URL **syntax**, common **schem
 
 - [x] Sandbox: `code_sandbox/html-url-encode/index.html` (syntax notes + local GET form; the live W3Schools form posts to their server).
 
-<img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Read the URL parts, then submit the form and look at the address bar for encoding.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-url-encode/`.
-- [ ] Success: example URL, syntax line, encoding note, and a **Hello World** field with Submit.
-- [ ] After Submit, the URL includes `?text=Hello+World` (or `%20` depending on the browser).
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-url-encode/`
-
-<img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
-
-The URL-encode demo matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-url-encode/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Sandbox: `code_sandbox/html-url-encode/index.html`
 
 <img alt="html-url-encode source" src="./code_sandbox/snaps/html-url-encode-code.png" />
@@ -9700,6 +8098,18 @@ Sandbox: `code_sandbox/html-url-encode/index.html`
 ```
 
 <img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-url-encode/`.
 
 </details>
 
@@ -9842,61 +8252,6 @@ A URL is `scheme://prefix.domain:port/path/filename`. Use `https` for encrypted 
 - [x] **Validate**
   - The chapter links a **W3C Markup Validation Service** box for checking a URL.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the minimum XHTML document, then the nested, empty-element, and attribute pages.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-xhtml` file.
-- [ ] You will:
-  - [ ] See **some content here...** on the minimum document.
-  - [ ] See **Some text** (bold italic) and two paragraphs.
-  - [ ] See a break, a horizontal rule, and a smiley `img`.
-  - [ ] See a quoted link, a checked checkbox, and a disabled text field.
-- [ ] Success: all four pages render; empty tags use trailing `/>`; the checkbox is checked and the last name field is disabled.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-xhtml/`
-- [ ] `http://127.0.0.1:8766/html-xhtml/nested.html`
-- [ ] `http://127.0.0.1:8766/html-xhtml/empty.html`
-- [ ] `http://127.0.0.1:8766/html-xhtml/attributes.html`
-
-<img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
-
-The XHTML examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-xhtml/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Minimum document (`index.html`):
 
 <img alt="html-xhtml source" src="./code_sandbox/snaps/html-xhtml-code.png" />
@@ -9951,6 +8306,18 @@ Attributes (`attributes.html`):
 ```
 
 <img alt="html-xhtml attributes result" src="./code_sandbox/snaps/html-xhtml-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-xhtml/`.
 
 </details>
 
@@ -10133,65 +8500,6 @@ An HTML **form** collects **user input**, most often sent to a **server** for pr
   - If **`name` is omitted**, that field is **not sent**.
   - Sandbox: `no-name.html` — First name has `id` and `value="John"` but **no `name`**.
 
-<img alt="html-forms missing name result" src="./code_sandbox/snaps/html-forms-04-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the text, radio, checkbox, submit, and missing-`name` forms.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-forms` file.
-- [ ] You will:
-  - [ ] See empty **First name** / **Last name** fields.
-  - [ ] Choose one of HTML / CSS / JavaScript.
-  - [ ] Tick bike / car / boat independently.
-  - [ ] Submit **John** / **Doe** (local `/action_page.php` will 404; the form markup is the point).
-  - [ ] See the no-`name` First name field still display **John**.
-- [ ] Success: labels sit above or beside the matching controls; radios share one group; checkboxes are independent.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-forms/`
-- [ ] `http://127.0.0.1:8766/html-forms/radio.html`
-- [ ] `http://127.0.0.1:8766/html-forms/checkbox.html`
-- [ ] `http://127.0.0.1:8766/html-forms/submit.html`
-- [ ] `http://127.0.0.1:8766/html-forms/no-name.html`
-
-<img alt="html-forms result" src="./code_sandbox/snaps/html-forms-result.png" />
-
-The form examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-forms/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Text fields (`index.html`):
 
 <img alt="html-forms text source" src="./code_sandbox/snaps/html-forms-code.png" />
@@ -10271,6 +8579,18 @@ Missing `name` (`no-name.html`):
 ```
 
 <img alt="html-forms missing name result" src="./code_sandbox/snaps/html-forms-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-forms/`.
 
 </details>
 
@@ -10453,62 +8773,6 @@ This chapter covers attributes of **`<form>`**: **`action`**, **`target`**, **`m
 | `rel`             | Relationship to a linked resource                        |
 | `target`          | Where to display the response                            |
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Compare `action`, `target="_blank"`, GET vs POST, autocomplete, and novalidate.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-form-attributes` file.
-- [ ] You will:
-  - [ ] See John/Doe with Submit (`action` and `target` pages).
-  - [ ] Submit GET and watch the query string; Submit POST and see no query string.
-  - [ ] Try autocomplete after typing a name once.
-  - [ ] Submit a non-email string with `novalidate` (browser should not block it).
-- [ ] Success: GET puts `fname`/`lname` in the URL; POST does not; novalidate skips email checking.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-form-attributes/`
-- [ ] `http://127.0.0.1:8766/html-form-attributes/target.html`
-- [ ] `http://127.0.0.1:8766/html-form-attributes/method.html`
-- [ ] `http://127.0.0.1:8766/html-form-attributes/autocomplete.html`
-- [ ] `http://127.0.0.1:8766/html-form-attributes/novalidate.html`
-
-<img alt="html-form-attributes result" src="./code_sandbox/snaps/html-form-attributes-result.png" />
-
-The form-attribute examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-form-attributes/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `action` (`index.html`):
 
 <img alt="html-form-attributes action source" src="./code_sandbox/snaps/html-form-attributes-code.png" />
@@ -10565,6 +8829,18 @@ Then open `http://127.0.0.1:8766/html-form-attributes/`.
 ```
 
 <img alt="html-form-attributes novalidate result" src="./code_sandbox/snaps/html-form-attributes-04-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-form-attributes/`.
 
 </details>
 
@@ -10727,59 +9003,6 @@ This chapter lists every common control you can put in a `<form>`: `<input>`, `<
 
 - [x] **Tag list** from the page: `<form>` form; `<input>` control; `<textarea>` multiline; `<label>` label; `<fieldset>` group; `<legend>` caption; `<select>` drop-down; `<optgroup>` option group; `<option>` option; `<button>` button; `<datalist>` suggestions; `<output>` calculation result.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open each form-element demo: select, textarea, button, fieldset, datalist, output.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-form-elements` file.
-- [ ] Success: Fiat is selected; size/multiple lists show several cars; textarea has the cat sentence; **Click Me!** alerts; Personalia fieldset; datalist input; range + number with an output slot.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-form-elements/`
-- [ ] `http://127.0.0.1:8766/html-form-elements/select.html`
-- [ ] `http://127.0.0.1:8766/html-form-elements/textarea.html`
-- [ ] `http://127.0.0.1:8766/html-form-elements/button.html`
-- [ ] `http://127.0.0.1:8766/html-form-elements/fieldset.html`
-- [ ] `http://127.0.0.1:8766/html-form-elements/datalist.html`
-- [ ] `http://127.0.0.1:8766/html-form-elements/output.html`
-
-<img alt="html-form-elements result" src="./code_sandbox/snaps/html-form-elements-result.png" />
-
-The form-element examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-form-elements/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Input + select (`index.html`):
 
 <img alt="html-form-elements source" src="./code_sandbox/snaps/html-form-elements-code.png" />
@@ -10866,6 +9089,18 @@ Output (`output.html`):
 ```
 
 <img alt="html-form-elements output result" src="./code_sandbox/snaps/html-form-elements-06-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-form-elements/`.
 
 </details>
 
@@ -11013,56 +9248,6 @@ This chapter lists every HTML **`<input type="...">`**. The default type is **`t
 
 - [x] **Input restrictions** (preview of the next chapter): `checked` `disabled` `max` `maxlength` `min` `pattern` `readonly` `required` `size` `step` `value`.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open text/password, choices, HTML5 types, and date/time pickers.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-input-types` file.
-- [ ] Success: password is masked; radios vs checkboxes; color/date/email/file/number/range/search/tel/url/hidden/image; datetime-local, month, time, week pickers.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-input-types/`
-- [ ] `http://127.0.0.1:8766/html-input-types/choices.html`
-- [ ] `http://127.0.0.1:8766/html-input-types/html5.html`
-- [ ] `http://127.0.0.1:8766/html-input-types/pickers.html`
-
-<img alt="html-input-types result" src="./code_sandbox/snaps/html-input-types-result.png" />
-
-The input-type examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-input-types/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Text / password / submit / reset (`index.html`):
 
 <img alt="html-input-types source" src="./code_sandbox/snaps/html-input-types-code.png" />
@@ -11117,6 +9302,18 @@ Pickers (`pickers.html`):
 ```
 
 <img alt="html-input-types date time pickers result" src="./code_sandbox/snaps/html-input-types-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-input-types/`.
 
 </details>
 
@@ -11253,55 +9450,6 @@ This chapter covers attributes of **`<input>`**: **`value`**, **`readonly`**, **
 
 - [x] **Note:** Restrictions are **not foolproof**. Check again on the **server**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Compare readonly vs disabled, then try size, maxlength, pattern, required, and datalist.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-input-attributes` file.
-- [ ] Success: John is readonly (copyable); Doe is disabled (grayed); PIN max 4 chars; country code needs three letters; username is required; datalist + image submit.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-input-attributes/`
-- [ ] `http://127.0.0.1:8766/html-input-attributes/limits.html`
-- [ ] `http://127.0.0.1:8766/html-input-attributes/extra.html`
-
-<img alt="html-input-attributes result" src="./code_sandbox/snaps/html-input-attributes-result.png" />
-
-The input-attribute examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-input-attributes/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Readonly / disabled (`index.html`):
 
 <img alt="html-input-attributes source" src="./code_sandbox/snaps/html-input-attributes-code.png" />
@@ -11341,6 +9489,18 @@ List / autocomplete / image (`extra.html`):
 ```
 
 <img alt="html-input-attributes list autocomplete image result" src="./code_sandbox/snaps/html-input-attributes-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-input-attributes/`.
 
 </details>
 
@@ -11469,57 +9629,6 @@ W3Schools page title: **HTML Input form\* Attributes**. These `form*` attributes
   - `novalidate` on **`<form>`** skips validation for the whole form.
   - Sandbox: `novalidate.html`.
 
-<img alt="html-input-form-attributes novalidate result" src="./code_sandbox/snaps/html-input-form-attributes-02-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Submit a last name that lives outside the form, then try override buttons and skip-validation submits.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-input-form-attributes` file.
-- [ ] Success: Last name is outside `<form>` but has `form="form1"`; extra submit buttons change action/method/target/enctype; one submit skips email validation.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-input-form-attributes/`
-- [ ] `http://127.0.0.1:8766/html-input-form-attributes/override.html`
-- [ ] `http://127.0.0.1:8766/html-input-form-attributes/novalidate.html`
-
-<img alt="html-input-form-attributes result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
-
-The form* attribute examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-input-form-attributes/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `form` (`index.html`):
 
 <img alt="html-input-form-attributes source" src="./code_sandbox/snaps/html-input-form-attributes-code.png" />
@@ -11556,6 +9665,18 @@ Novalidate (`novalidate.html`):
 ```
 
 <img alt="html-input-form-attributes novalidate result" src="./code_sandbox/snaps/html-input-form-attributes-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-input-form-attributes/`.
 
 </details>
 
@@ -11680,56 +9801,6 @@ The HTML **`<canvas>`** element is a **container** for graphics drawn **on the f
 
 - [x] More in the **HTML Canvas Tutorial**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the empty canvas, then shapes, gradients, and drawImage.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-canvas` file.
-- [ ] Success: empty bordered box; diagonal line, circle, Hello World fill and stroke; red→white linear and radial fills; photo copied onto a second canvas.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-canvas/`
-- [ ] `http://127.0.0.1:8766/html-canvas/shapes.html`
-- [ ] `http://127.0.0.1:8766/html-canvas/gradient.html`
-- [ ] `http://127.0.0.1:8766/html-canvas/image.html`
-
-<img alt="html-canvas result" src="./code_sandbox/snaps/html-canvas-result.png" />
-
-The canvas examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-canvas/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Empty canvas (`index.html`):
 
 <img alt="html-canvas source" src="./code_sandbox/snaps/html-canvas-code.png" />
@@ -11780,6 +9851,18 @@ ctx.drawImage(img, 10, 10);
 ```
 
 <img alt="html-canvas drawImage result" src="./code_sandbox/snaps/html-canvas-03-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-canvas/`.
 
 </details>
 
@@ -11913,54 +9996,6 @@ Canvas is a JS drawing surface. Set id, width, and height; get a 2D context; the
   - SVG: each shape is an **object** in the DOM; change an attribute and the browser **re-renders**.
   - Canvas: **pixel by pixel**; once drawn it is **forgotten** — move something and **redraw the whole scene**.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the yellow circle, then the rectangle / star / gradient page.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open both `html-svg` files.
-- [ ] Success: yellow circle with green ring; blue rect; faded rounded red square; lime star; yellow-red ellipse with **SVG** text.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-svg/`
-- [ ] `http://127.0.0.1:8766/html-svg/shapes.html`
-
-<img alt="html-svg result" src="./code_sandbox/snaps/html-svg-result.png" />
-
-The SVG examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-svg/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Circle (`index.html`):
 
 <img alt="html-svg circle source" src="./code_sandbox/snaps/html-svg-code.png" />
@@ -11985,6 +10020,18 @@ Shapes (`shapes.html`):
 ```
 
 <img alt="html-svg shapes result" src="./code_sandbox/snaps/html-svg-01-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-svg/`.
 
 </details>
 
@@ -12113,27 +10160,11 @@ SVG is XML vector graphics inside `<svg>`. Draw circles, rects, polygons, and gr
   - **Note:** Only **MP3, WAV, and Ogg** audio are supported by the HTML standard.
   - If the site is **recorded music**, choose **MP3**.
 
-<details>
-  <summary>Lab</summary>
+No tested sandbox files. The chapter has **no code example** — only format tables. Video and audio markup are in the next chapters.
 
-## Lab
-
-This chapter is a **format reference**. There is no Try it Yourself demo to run.
-
-### **Overview**
-
-- [ ] No sandbox run. Memorize HTML video (**MP4, WebM, Ogg**) and audio (**MP3, WAV, Ogg**).
-- [ ] Success: you can name the HTML-supported types and several types that need a plug-in or desktop player.
-
-### **Task 1: Read the tables**
-
-- [ ] Video HTML: **MP4, WebM, Ogg**. YouTube recommends **MP4**.
-- [ ] Audio HTML: **MP3, WAV, Ogg**. Music sites: **MP3**.
-- [ ] AVI, WMV, MOV, Flash, MIDI, WMA, AAC (as listed here) are **not** the HTML video/audio elements’ standard types.
-
-No runnable example in this chapter.
-
-</details>
+```text
+# No code snippets in this topic.
+```
 
 <details>
   <summary>Terminal Commands</summary>
@@ -12144,19 +10175,6 @@ No server was started for this section (no sandbox page to open).
 
 ```bash
 # none
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No tested sandbox files. The chapter has **no code example** — only format tables. Video and audio markup are in the next chapters.
-
-```text
-# No code snippets in this topic.
 ```
 
 </details>
@@ -12278,55 +10296,6 @@ The HTML **`<video>`** element shows a video on a page. This chapter covers **`c
 
 - [x] **Tags:** `<video>` video; `<source>` alternate files; `<track>` text tracks.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the controls player, muted autoplay, and the JS size buttons.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-video` file.
-- [ ] Success: Big Buck Bunny with controls; muted autoplay may start on its own; Play/Pause Big Small Normal resize/play the same clip.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-video/`
-- [ ] `http://127.0.0.1:8766/html-video/autoplay.html`
-- [ ] `http://127.0.0.1:8766/html-video/js.html`
-
-<img alt="html-video result" src="./code_sandbox/snaps/html-video-result.png" />
-
-The video examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-video/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Controls (`index.html`):
 
 <img alt="html-video source" src="./code_sandbox/snaps/html-video-code.png" />
@@ -12365,6 +10334,18 @@ JavaScript (`js.html`):
 ```
 
 <img alt="html-video javascript controls result" src="./code_sandbox/snaps/html-video-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-video/`.
 
 </details>
 
@@ -12473,54 +10454,6 @@ The HTML **`<audio>`** element plays a sound file. This chapter covers **`contro
 - [x] **DOM** — load, play, pause, duration, volume, play/pause events (same family as `<video>`).
 - [x] **Tags:** `<audio>` sound; `<source>` alternate files.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the horse clip with controls, then the muted autoplay version.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open both `html-audio` files.
-- [ ] Success: a native audio bar; muted autoplay may start with volume off.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-audio/`
-- [ ] `http://127.0.0.1:8766/html-audio/autoplay.html`
-
-<img alt="html-audio result" src="./code_sandbox/snaps/html-audio-result.png" />
-
-The audio examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-audio/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Controls (`index.html`):
 
 <img alt="html-audio source" src="./code_sandbox/snaps/html-audio-code.png" />
@@ -12545,6 +10478,18 @@ Muted autoplay (`autoplay.html`):
 ```
 
 <img alt="html-audio autoplay muted result" src="./code_sandbox/snaps/html-audio-01-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-audio/`.
 
 </details>
 
@@ -12641,56 +10586,6 @@ Muted autoplay (`autoplay.html`):
   - Examples: `src="audi.jpeg"` and `src="snippet.html"`.
   - Sandbox: `embed.html`.
 
-<img alt="html-plug-ins embed result" src="./code_sandbox/snaps/html-plug-ins-01-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the object page (nested HTML + image) and the embed page.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open both `html-plug-ins` files.
-- [ ] Success: nested **Snippet** heading; photo via `object` and via `embed`.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-plug-ins/`
-- [ ] `http://127.0.0.1:8766/html-plug-ins/embed.html`
-
-<img alt="html-plug-ins result" src="./code_sandbox/snaps/html-plug-ins-result.png" />
-
-The object/embed examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-plug-ins/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Object (`index.html`):
 
 <img alt="html-plug-ins object source" src="./code_sandbox/snaps/html-plug-ins-code.png" />
@@ -12712,6 +10607,18 @@ Embed (`embed.html`):
 ```
 
 <img alt="html-plug-ins embed result" src="./code_sandbox/snaps/html-plug-ins-01-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-plug-ins/`.
 
 </details>
 
@@ -12800,54 +10707,6 @@ The easiest way to play video in HTML is **YouTube**. Skip local format conversi
   - `controls=0` hides the player controls. Default `controls=1` shows them.
   - Sandbox: `params.html`.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the YouTube iframe, then the autoplay/loop/controls variants.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open both `html-youtube` files.
-- [ ] Success: an embedded YouTube player (id `tgbNymZ7vqY`); query params change autoplay, loop, and controls.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-youtube/`
-- [ ] `http://127.0.0.1:8766/html-youtube/params.html`
-
-<img alt="html-youtube result" src="./code_sandbox/snaps/html-youtube-result.png" />
-
-The YouTube embed matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-youtube/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Embed (`index.html`):
 
 <img alt="html-youtube source" src="./code_sandbox/snaps/html-youtube-code.png" />
@@ -12869,6 +10728,18 @@ URL parameters (`params.html`):
 <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
 <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
 ```
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-youtube/`.
 
 </details>
 
@@ -12972,26 +10843,11 @@ A **Web API** is an **Application Programming Interface for the Web**: functions
   - **Request user permission** — for sensitive data (Geolocation), **ask consent** first.
 - [x] **Third-party APIs** are **not** built into the browser. Download their code from the web. Examples: **YouTube** (videos), **Twitter** (tweets), **Facebook** (profile info).
 
-<details>
-  <summary>Lab</summary>
+No tested sandbox files. The chapter has **no code example**.
 
-## Lab
-
-This chapter is conceptual. Hands-on APIs start in the next sections.
-
-### **Overview**
-
-- [ ] No sandbox run. List the six HTML5 APIs and the three safety checks.
-- [ ] Success: you can name Geolocation, Drag and Drop, Web Storage, Web Workers, SSE, and Canvas, plus capability / errors / permission.
-
-### **Task 1: Preview the next chapters**
-
-- [ ] Geolocation, Drag and Drop, Web Storage, Web Workers, and SSE follow this intro.
-- [ ] Canvas was covered earlier under HTML Graphics.
-
-No runnable example in this chapter.
-
-</details>
+```text
+# No code snippets in this topic.
+```
 
 <details>
   <summary>Terminal Commands</summary>
@@ -13002,19 +10858,6 @@ No server was started for this section (no sandbox page to open).
 
 ```bash
 # none
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No tested sandbox files. The chapter has **no code example**.
-
-```text
-# No code snippets in this topic.
 ```
 
 </details>
@@ -13109,54 +10952,6 @@ The **Geolocation API** reads the user’s **current location**. Because that is
 - [x] **Always returned:** `coords.latitude`, `coords.longitude`, `coords.accuracy`. Optional: altitude, altitudeAccuracy, heading, speed, timestamp.
 - [x] **`watchPosition()`** — keeps updating as the user moves (needs a GPS device). **`clearWatch()`** stops it.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Open the Try It page on HTTPS or `127.0.0.1` and allow location.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-geolocation/`.
-- [ ] Click **Try It** and allow (or deny) location.
-- [ ] Success: lat/long, or a clear error such as permission denied.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-geolocation/`
-
-<img alt="html-geolocation result" src="./code_sandbox/snaps/html-geolocation-result.png" />
-
-The geolocation UI matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-geolocation/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `index.html`:
 
 <img alt="html-geolocation source" src="./code_sandbox/snaps/html-geolocation-code.png" />
@@ -13172,6 +10967,18 @@ function getLocation() {
 ```
 
 <img alt="html-geolocation result" src="./code_sandbox/snaps/html-geolocation-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-geolocation/`.
 
 </details>
 
@@ -13265,53 +11072,6 @@ The **HTML Drag and Drop API** lets you **grab** an element and drop it somewher
 
 - [x] **More examples on the page:** drag an `<h1>`, drag an `<a>`, drag an image **back and forth** between two divs.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Drag the logo into the empty rectangle.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-drag-and-drop/`.
-- [ ] Success: the image sits **inside** the bordered box after drop.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-drag-and-drop/`
-
-<img alt="html-drag-and-drop result" src="./code_sandbox/snaps/html-drag-and-drop-result.png" />
-
-The drag-and-drop example matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-drag-and-drop/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `index.html`:
 
 <img alt="html-drag-and-drop source" src="./code_sandbox/snaps/html-drag-and-drop-code.png" />
@@ -13331,6 +11091,18 @@ function dropHandler(ev) {
 ```
 
 <img alt="html-drag-and-drop result" src="./code_sandbox/snaps/html-drag-and-drop-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-drag-and-drop/`.
 
 </details>
 
@@ -13421,57 +11193,6 @@ Mark the source `draggable`, put its id in `dataTransfer` on dragstart, `prevent
 - [x] **sessionStorage counter** — same idea; count is “in this session”.
   - Sandbox: `session.html`.
 
-<img alt="html-web-storage sessionStorage counter result" src="./code_sandbox/snaps/html-web-storage-02-result.png" />
-
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Store Smith/yellow, then click the localStorage and sessionStorage counters.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open each `html-web-storage` file.
-- [ ] Success: **Smith** on a yellow background; local count survives a tab close; session count resets when the tab closes.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-web-storage/`
-- [ ] `http://127.0.0.1:8766/html-web-storage/names.html`
-- [ ] `http://127.0.0.1:8766/html-web-storage/session.html`
-
-<img alt="html-web-storage result" src="./code_sandbox/snaps/html-web-storage-result.png" />
-
-The storage examples match the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-web-storage/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Click counter (`index.html`):
 
 <img alt="html-web-storage counter source" src="./code_sandbox/snaps/html-web-storage-code.png" />
@@ -13507,6 +11228,18 @@ sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
 ```
 
 <img alt="html-web-storage sessionStorage counter result" src="./code_sandbox/snaps/html-web-storage-02-result.png" />
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-web-storage/`.
 
 </details>
 
@@ -13593,54 +11326,6 @@ A **web worker** is an **external JavaScript file** that runs in the **backgroun
 
 - [x] **Workers cannot use** `window`, `document`, or `parent`.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Start the counter worker, watch the number rise, then stop it.
-
-### **Overview**
-
-- [ ] Serve `code_sandbox` and open `html-web-workers/`.
-- [ ] Click **Start Worker**, then **Stop Worker**.
-- [ ] Success: the count increases about twice a second until Stop.
-
-### **Task 1: Serve and open**
-
-- [ ] From `Personal/Files/html/code_sandbox`:
-
-```bash
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-- [ ] `http://127.0.0.1:8766/html-web-workers/`
-
-<img alt="html-web-workers result" src="./code_sandbox/snaps/html-web-workers-result.png" />
-
-The worker example matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox
-python -m http.server 8766 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:8766/html-web-workers/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 `index.html`:
 
 <img alt="html-web-workers source" src="./code_sandbox/snaps/html-web-workers-code.png" />
@@ -13665,6 +11350,18 @@ function timedCount() {
 }
 timedCount();
 ```
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8766/html-web-workers/`.
 
 </details>
 
@@ -13749,55 +11446,6 @@ Put heavy work in an external `.js` worker. `new Worker`, `postMessage`/`onmessa
 
 - [x] **EventSource events:** `onopen` (connected), `onmessage` (data), `onerror` (error).
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-Run the small SSE server (not the static 8766 server) and watch the time lines appear.
-
-### **Overview**
-
-- [ ] Start `sse_server.py` from `html-sse`.
-- [ ] Open `http://127.0.0.1:8767/`.
-- [ ] Success: **Getting server updates** plus repeating “The server time is: …”.
-
-### **Task 1: Serve SSE and open**
-
-- [ ] From `Personal/Files/html/code_sandbox/html-sse`:
-
-```bash
-python sse_server.py
-```
-
-- [ ] `http://127.0.0.1:8767/`
-- [ ] The static `python -m http.server 8766` **cannot** send `text/event-stream` (the page’s PHP `demo_sse.php` is the same idea on a real PHP host).
-
-<img alt="html-sse result" src="./code_sandbox/snaps/html-sse-result.png" />
-
-The SSE demo matches the chapter.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-```bash
-# from Personal/Files/html/code_sandbox/html-sse
-python sse_server.py
-```
-
-Then open `http://127.0.0.1:8767/`.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Page (`index.html`):
 
 <img alt="html-sse source" src="./code_sandbox/snaps/html-sse-code.png" />
@@ -13824,6 +11472,18 @@ flush();
 ```
 
 Python stand-in used in the sandbox (`sse_server.py`): streams `data: The server time is: …` every second on `GET /sse`.
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/html/code_sandbox/html-sse
+python sse_server.py
+```
+
+Then open `http://127.0.0.1:8767/`.
 
 </details>
 
