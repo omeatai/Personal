@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Let - Hoisting</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Hoisting: var vs let</h2>
+    <pre id="demo"></pre>
+    <script>
+      let msg = "";
+
+      // var is hoisted and auto-initialized to undefined
+      msg += "typeof x before 'var x' = " + typeof x + " (hoisted -> undefined)\n";
+      var x = 5;
+      msg += "after 'var x = 5'        -> x = " + x + "\n";
+
+      // let is hoisted but NOT initialized (temporal dead zone)
+      try {
+        msg += y; // access before declaration line
+      } catch (e) {
+        msg += "access y before 'let y'  -> " + e.name + " (temporal dead zone)\n";
+      }
+      let y = 5;
+      msg += "after 'let y = 5'        -> y = " + y;
+
+      document.getElementById("demo").innerText = msg;
+    </script>
+  </body>
+</html>

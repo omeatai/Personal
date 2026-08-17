@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Let - Block Scope</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Block Scope with let</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = 10;
+      let out = "outside before block, x = " + x + "\n";
+      {
+        let x = 2; // a different x, only visible inside { }
+        out += "inside block,        x = " + x + "\n";
+      }
+      out += "outside after block,  x = " + x;
+      document.getElementById("demo").innerText = out;
+    </script>
+  </body>
+</html>

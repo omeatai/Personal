@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="color-scheme" content="light" />
+    <title>JS Let - Redeclaring</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Redeclaring Variables</h2>
+    <pre id="demo"></pre>
+    <script>
+      var x = 2;
+      var x = 3; // var: redeclaration in the same scope IS allowed
+
+      let y = 2; // let: redeclaring y in THIS scope would be a SyntaxError
+      let inner = "";
+      {
+        let y = 3; // OK: a new block is a new scope
+        inner = "inner (new block) let y = " + y;
+      }
+
+      document.getElementById("demo").innerText =
+        "var x = 2; var x = 3;  -> x = " + x + " (allowed)\n" +
+        "outer let y            -> y = " + y + "\n" +
+        inner + "\n" +
+        "SAME-scope 'let y = 2; let y = 3;' -> SyntaxError (not allowed)";
+    </script>
+  </body>
+</html>
