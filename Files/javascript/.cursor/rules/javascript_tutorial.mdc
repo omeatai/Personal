@@ -9,6 +9,13 @@ When the user says **"apply to \<Section\>"** (or similar, e.g. `@javascript_tut
 
 They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to JS Introduction to JS Comments`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one accordion. A range = one accordion per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → run → snap → append) before starting the next.
 
+**Expandable nav groups (do not stop at the parent landing page).** The left sidebar nests pages under a parent dropdown. **JS Dates** expands to **JS Dates**, **JS Date Formats**, **JS Date Get**, **JS Date Set**, **JS Date Methods**. **JS Objects**, **JS Functions**, **JS Arrays**, and other groups work the same way.
+
+- If the user names a **parent group** (alone or as Start/End), include **every nested child** of that group, in sidebar order. `"apply to JS Dates"` means **all five** Date pages, not only `js_dates.asp`.
+- In a range, if **End** is a parent group, continue through **that group's last child**. `"apply to JS Objects to JS Dates"` includes the Object children **and** all Date children. Do **not** treat the first child (the landing page with the same name) as End.
+- If **Start** is a parent group, begin at that group's **first child**.
+- Still do **not** continue into the **next sibling group** (after JS Dates, do not start JS Arrays).
+
 This output is a **detailed study tutorial**, not a thin recap. The reader must be able to learn the whole section from the accordion alone — without ever opening W3Schools. That means **every idea explained in depth, every site example rebuilt and run, extra clarifying examples added where they help, and every result shown as a snap with a written description of what happened.** When in doubt, add more explanation and more examples, not less.
 
 ## Workflow Steps
@@ -230,4 +237,7 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 ```text
 @Personal/Files/javascript/.cursor/rules/javascript_tutorial.mdc apply to JS Introduction
 @Personal/Files/javascript/.cursor/rules/javascript_tutorial.mdc apply to JS Introduction to JS Comments
+@Personal/Files/javascript/.cursor/rules/javascript_tutorial.mdc apply to JS Objects to JS Dates
 ```
+
+The last form includes **JS Objects** through **JS Date Methods** (the last child under **JS Dates**), not only through the JS Dates landing page.

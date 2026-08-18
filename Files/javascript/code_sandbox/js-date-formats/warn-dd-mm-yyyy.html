@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>WARNING new Date(&quot;25-03-2015&quot;) — DD-MM-YYYY</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WARNING new Date(&quot;25-03-2015&quot;) — DD-MM-YYYY</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const d = new Date("25-03-2015");
+      document.getElementById("demo").innerText = "d -> " + String(String(d)) + "\n" + "d.getTime() -> " + String(d.getTime()) + "\n" + "Number.isNaN(d.getTime()) -> " + String(Number.isNaN(d.getTime()));
+    </script>
+  </body>
+</html>

@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `10.2` JS Date Formats (new).
-- **Last completed:** `10.1` JS Dates.
+- **Next task:** `10.3` JS Date Get (new).
+- **Last completed:** `10.2` JS Date Formats.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -230,7 +230,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S10 — Dates
 
 - [x] `10.1` JS Dates — `js_dates.asp` (new)
-- [ ] `10.2` JS Date Formats — `js_date_formats.asp` (new)
+- [x] `10.2` JS Date Formats — `js_date_formats.asp` (new)
 - [ ] `10.3` JS Date Get — `js_date_methods.asp` (new)
 - [ ] `10.4` JS Date Set — `js_date_methods_set.asp` (new)
 - [ ] `10.5` JS Date Methods — `js_date_reference.asp` (new)
