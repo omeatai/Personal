@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Input type — number</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="n" type="number" min="1" value="3">
+    <pre id="demo"></pre>
+    <script>
+      const n = document.getElementById("n");
+      document.getElementById("demo").innerText = "value=" + n.value + " valid=" + n.checkValidity();
+    </script>
+  </body>
+</html>

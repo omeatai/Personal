@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML form validation attributes</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <form id="f"><label>Username: <input name="user" required minlength="3"></label> <label>Email: <input name="email" type="email" required></label> <button type="submit">Register</button></form>
+    <pre id="demo"></pre>
+    <script>
+      const f = document.getElementById("f");
+      f.addEventListener("submit", function (e) { e.preventDefault(); });
+      document.getElementById("demo").innerText = "checkValidity=" + f.checkValidity();
+    </script>
+  </body>
+</html>

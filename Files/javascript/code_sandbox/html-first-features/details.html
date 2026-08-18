@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>The details element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <details open><summary>More information</summary>This text is hidden until the user opens it.</details>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText = "open=" + document.querySelector("details").open;
+    </script>
+  </body>
+</html>
