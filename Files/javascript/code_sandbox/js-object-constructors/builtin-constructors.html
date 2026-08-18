@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Built-in constructors (Math cannot use new)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Built-in constructors (Math cannot use new)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const o = new Object();
+      const a = new Array();
+      const m = new Map();
+      const s = new Set();
+      const d = new Date();
+      const r = new RegExp();
+      const f = new Function();
+      let mathErr;
+      try {
+        new Math();
+      } catch (e) {
+        mathErr = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "new Object -> " + typeof o + "\n" +
+        "new Array -> " + (a instanceof Array) + " length " + a.length + "\n" +
+        "new Map -> " + (m instanceof Map) + "\n" +
+        "new Set -> " + (s instanceof Set) + "\n" +
+        "new Date -> " + (d instanceof Date) + "\n" +
+        "new RegExp -> " + String(r) + "\n" +
+        "new Function -> " + (typeof f) + "\n" +
+        "new Math() -> " + mathErr;
+    </script>
+  </body>
+</html>

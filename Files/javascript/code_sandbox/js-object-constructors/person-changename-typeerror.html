@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Person.changeName then myMother.changeName → TypeError</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Person.changeName then myMother.changeName → TypeError</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+      const myMother = new Person("Sally", "Rally", 48, "green");
+      Person.changeName = function (name) {
+        this.lastName = name;
+      };
+      let err;
+      try {
+        myMother.changeName("Doe");
+      } catch (e) {
+        err = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "myMother.changeName(\"Doe\") -> " + err + "\n" +
+        "myMother.lastName -> " + myMother.lastName;
+    </script>
+  </body>
+</html>

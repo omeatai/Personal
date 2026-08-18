@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Add property to one object: myFather.nationality</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Add property to one object: myFather.nationality</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+      const myFather = new Person("John", "Doe", 50, "blue");
+      const myMother = new Person("Sally", "Rally", 48, "green");
+      myFather.nationality = "English";
+      document.getElementById("demo").innerText = "myFather.nationality -> " + String(myFather.nationality) + "\n" + "myMother.nationality -> " + String(myMother.nationality);
+    </script>
+  </body>
+</html>

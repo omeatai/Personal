@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `8.7` Object Constructors (new).
-- **Last completed:** `8.6` Object Display.
+- **Next task:** `9.1` JS Scope (new).
+- **Last completed:** `8.7` Object Constructors.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -96,7 +96,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [ ] **S5** Strings (5)
 - [x] **S6** Numbers (6)
 - [x] **S7** Functions (10)
-- [ ] **S8** Objects (7)
+- [x] **S8** Objects (7)
 - [ ] **S9** Scope (5)
 - [ ] **S10** Dates (5)
 - [ ] **S11** Arrays (8)
@@ -217,7 +217,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `8.4` Object Methods — `js_object_methods.asp` (new)
 - [x] `8.5` Object this — `js_object_this.asp` (new)
 - [x] `8.6` Object Display — `js_object_display.asp` (new)
-- [ ] `8.7` Object Constructors — `js_object_constructors.asp` (new)
+- [x] `8.7` Object Constructors — `js_object_constructors.asp` (new)
 
 ### S9 — Scope
 

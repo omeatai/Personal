@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Literals vs new (working function expression)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Literals vs new (working function expression)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const primStr = "";
+      const primNum = 0;
+      const primBool = false;
+      const obj = {};
+      const arr = [];
+      const re = /()/;
+      const f = function () {};
+      document.getElementById("demo").innerText = "typeof primStr -> " + String(typeof primStr) + "\n" + "typeof primNum -> " + String(typeof primNum) + "\n" + "typeof primBool -> " + String(typeof primBool) + "\n" + "typeof obj -> " + String(typeof obj) + "\n" + "typeof arr -> " + String(typeof arr) + "\n" + "typeof re -> " + String(typeof re) + "\n" + "typeof f -> " + String(typeof f);
+    </script>
+  </body>
+</html>
