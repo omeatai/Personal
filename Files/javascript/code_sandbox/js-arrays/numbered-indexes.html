@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Numbered indexes (not associative)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Numbered indexes (not associative)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = [];
+      person[0] = "John";
+      person[1] = "Doe";
+      person[2] = 46;
+      document.getElementById("demo").innerText = "person -> " + String(JSON.stringify(person)) + "\n" + "person.length -> " + String(person.length) + "\n" + "person[0] -> " + String(person[0]);
+    </script>
+  </body>
+</html>

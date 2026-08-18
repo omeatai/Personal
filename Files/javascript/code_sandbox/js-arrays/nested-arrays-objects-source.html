@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Nested arrays and objects source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>const myObj = {
+  name: &quot;John&quot;,
+  age: 30,
+  cars: [
+    {name:&quot;Ford&quot;, models:[&quot;Fiesta&quot;, &quot;Focus&quot;, &quot;Mustang&quot;]},
+    {name:&quot;BMW&quot;, models:[&quot;320&quot;, &quot;X3&quot;, &quot;X5&quot;]},
+    {name:&quot;Fiat&quot;, models:[&quot;500&quot;, &quot;Panda&quot;]}
+  ]
+};
+let x = &quot;&quot;;
+for (let i in myObj.cars) {
+  x += myObj.cars[i].name + &quot;: &quot;;
+  for (let j in myObj.cars[i].models) {
+    x += myObj.cars[i].models[j] + &quot; &quot;;
+  }
+}</pre>
+  </body>
+</html>

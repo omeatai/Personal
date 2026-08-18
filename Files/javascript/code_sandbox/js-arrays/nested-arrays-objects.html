@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Nested arrays and objects</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Nested arrays and objects</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myObj = {
+        name: "John",
+        age: 30,
+        cars: [
+          {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+          {name:"BMW", models:["320", "X3", "X5"]},
+          {name:"Fiat", models:["500", "Panda"]}
+        ]
+      };
+      let x = "";
+      for (let i in myObj.cars) {
+        x += myObj.cars[i].name + ": ";
+        for (let j in myObj.cars[i].models) {
+          x += myObj.cars[i].models[j] + " ";
+        }
+      }
+      document.getElementById("demo").innerText = "x -> " + String(x);
+    </script>
+  </body>
+</html>

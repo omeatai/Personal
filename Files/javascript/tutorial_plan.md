@@ -71,13 +71,17 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - **Base URL** for each page: `https://www.w3schools.com/js/<file>.asp`.
 - **Local server** from `Files/javascript/code_sandbox`, e.g. `py -3 -m http.server 8770 --bind 127.0.0.1`,
   then open `http://127.0.0.1:8770/<slug>/`.
+- **Range names are parents.** The user names sidebar **groups**, not the child landing page that
+  reuses the same label. `"apply to JS Objects to JS Dates"` includes every Object child **and**
+  every Date child through **JS Date Methods**, not only `js_dates.asp`. See
+  `Files/javascript/.cursor/rules/javascript_tutorial.mdc`.
 
 ---
 
 ## Resume pointer
 
-- **Next task:** `11.1` JS Arrays (new).
-- **Last completed:** `10.5` JS Date Methods.
+- **Next task:** `11.2` JS Array Constructor (new).
+- **Last completed:** `11.1` JS Arrays.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -237,7 +241,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ### S11 — Arrays
 
-- [ ] `11.1` JS Arrays — `js_arrays.asp` (new)
+- [x] `11.1` JS Arrays — `js_arrays.asp` (new)
 - [ ] `11.2` JS Array Constructor — `js_array_constructor.asp` (new)
 - [ ] `11.3` JS Array Methods — `js_array_methods.asp` (new)
 - [ ] `11.4` JS Array Search — `js_array_search.asp` (new)
