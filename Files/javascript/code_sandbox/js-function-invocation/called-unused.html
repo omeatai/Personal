@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>sayHello() called unused</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>sayHello() called unused</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function sayHello() {
+        return "Hello World";
+      }
+      sayHello();
+      document.getElementById("demo").innerText = "call happened -> " + String("yes") + "\n" + "stored? -> " + String("no") + "\n" + "sayHello() again -> " + String(sayHello());
+    </script>
+  </body>
+</html>

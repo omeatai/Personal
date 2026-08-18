@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Call many times: a, b, c</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Call many times: a, b, c</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function sayHello() {
+        return "Hello World";
+      }
+      let a = sayHello();
+      let b = sayHello();
+      let c = sayHello();
+      document.getElementById("demo").innerText = "a -> " + String(a) + "\n" + "b -> " + String(b) + "\n" + "c -> " + String(c);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Common mistake: no display</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Common mistake: no display</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function sayHello() {
+        return "Hello World";
+      }
+      let hidden = sayHello();
+      // nothing writes hidden to the page in the original mistake
+      document.getElementById("demo").innerText = "hidden (if you look) -> " + String(hidden) + "\n" + "shown on page? -> " + String("only because this demo prints it");
+    </script>
+  </body>
+</html>
