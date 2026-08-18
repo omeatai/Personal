@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>element.attribute — change src, href, id…</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <a id="n" href="next.html">next</a>
+    <pre id="demo"></pre>
+    <script>
+      const a = document.getElementById("n");
+      a.href = "https://example.com";
+      document.getElementById("demo").innerText =
+        "href=" + a.href + "\nattr=" + a.getAttribute("href");
+    </script>
+  </body>
+</html>

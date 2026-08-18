@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>element.onclick = function(){…}</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="myBtn">Click</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("myBtn").onclick = function () {
+        document.getElementById("demo").innerText = "clicked";
+      };
+      document.getElementById("myBtn").click();
+    </script>
+  </body>
+</html>

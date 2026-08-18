@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.getElementsByClassName(name)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p class="intro">A</p><p>B</p><p class="intro">C</p>
+    <pre id="demo"></pre>
+    <script>
+      const x = document.getElementsByClassName("intro");
+      document.getElementById("demo").innerText =
+        "length=" + x.length + " " + x[0].textContent + "," + x[1].textContent;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.createElement()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="host"></div>
+    <pre id="demo"></pre>
+    <script>
+      const p = document.createElement("p");
+      p.textContent = "created";
+      document.getElementById("host").appendChild(p);
+      document.getElementById("demo").innerText = document.getElementById("host").innerHTML;
+    </script>
+  </body>
+</html>

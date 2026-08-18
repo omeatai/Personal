@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.querySelector(selector)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p class="note">old</p><p class="note">also</p>
+    <pre id="demo"></pre>
+    <script>
+      const myPara = document.querySelector(".note");
+      myPara.innerHTML = "Hello World!";
+      document.getElementById("demo").innerText = myPara.innerHTML + " (second still " + document.querySelectorAll(".note")[1].textContent + ")";
+    </script>
+  </body>
+</html>

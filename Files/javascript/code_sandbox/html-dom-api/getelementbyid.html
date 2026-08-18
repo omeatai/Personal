@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.getElementById(id)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="intro">Found me</p>
+    <pre id="demo"></pre>
+    <script>
+      const el = document.getElementById("intro");
+      document.getElementById("demo").innerText =
+        (el ? el.textContent : "null") + " / missing=" + (document.getElementById("nope") === null);
+    </script>
+  </body>
+</html>

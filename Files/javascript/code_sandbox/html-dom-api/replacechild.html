@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>parent.replaceChild()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="host"><span id="old">old</span></div>
+    <pre id="demo"></pre>
+    <script>
+      const neu = document.createElement("strong");
+      neu.textContent = "new";
+      document.getElementById("host").replaceChild(neu, document.getElementById("old"));
+      document.getElementById("demo").innerText = document.getElementById("host").innerHTML;
+    </script>
+  </body>
+</html>

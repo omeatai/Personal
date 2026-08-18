@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>element.innerHTML</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="box"><b>Hi</b></p>
+    <pre id="demo"></pre>
+    <script>
+      const el = document.getElementById("box");
+      document.getElementById("demo").innerText = el.innerHTML;
+      el.innerHTML = "<i>new</i>";
+      document.getElementById("demo").innerText += "\nafter=" + el.innerHTML;
+    </script>
+  </body>
+</html>

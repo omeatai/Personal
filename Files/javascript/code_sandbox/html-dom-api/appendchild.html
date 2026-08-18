@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.appendChild() / parent.appendChild()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="host"></div>
+    <pre id="demo"></pre>
+    <script>
+      const span = document.createElement("span");
+      span.textContent = "appended";
+      document.getElementById("host").appendChild(span);
+      document.getElementById("demo").innerText = document.getElementById("host").textContent;
+    </script>
+  </body>
+</html>
