@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Change an img src attribute</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <img id="myImage" alt="demo" src="smiley.svg" width="48" height="48">
+    <pre id="demo"></pre>
+    <script>
+      const img = document.getElementById("myImage");
+      const before = img.getAttribute("src");
+      img.src = "landscape.svg";
+      document.getElementById("demo").innerText =
+        "beforeAttr=" + before + "\nafterAttr=" + img.getAttribute("src");
+    </script>
+  </body>
+</html>

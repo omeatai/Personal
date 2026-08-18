@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Warning — never document.write() after the document is loaded</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <iframe id="f" style="width:100%;height:70px;border:1px solid #ccc;"></iframe>
+    <pre id="demo"></pre>
+    <script>
+      const d = document.getElementById("f").contentDocument;
+      d.open();
+      d.write("<p id='k'>keep me</p>");
+      d.close();
+      const before = d.body ? d.body.innerText : "";
+      // After load, write() implies open() and replaces the document.
+      // Use a fresh open/write/close so headless Chrome does not hang.
+      d.open();
+      d.write("overwritten");
+      d.close();
+      document.getElementById("demo").innerText =
+        "before=" + before.trim() + "\nafter=" + d.body.innerText.trim();
+    </script>
+  </body>
+</html>

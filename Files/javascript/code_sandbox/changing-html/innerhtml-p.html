@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Change the content of a p element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="p1">Hello World!</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("p1").innerHTML = "New text!";
+      document.getElementById("demo").innerText = document.getElementById("p1").innerHTML;
+    </script>
+  </body>
+</html>

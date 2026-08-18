@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Dynamic HTML content with Date()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="when"></p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("when").innerHTML = "Date : " + Date();
+      document.getElementById("demo").innerText = document.getElementById("when").innerHTML;
+    </script>
+  </body>
+</html>

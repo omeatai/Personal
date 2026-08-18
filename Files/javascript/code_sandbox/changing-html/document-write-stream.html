@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.write() during parse</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <iframe id="f" style="width:100%;height:90px;border:1px solid #ccc;"></iframe>
+    <pre id="demo"></pre>
+    <script>
+      const d = document.getElementById("f").contentDocument;
+      d.open();
+      d.write("<p>Bla bla bla</p><p>" + Date() + "</p><p>Bla bla bla</p>");
+      d.close();
+      document.getElementById("demo").innerText = d.body.innerText.replace(/\s+/g, " ").trim();
+    </script>
+  </body>
+</html>

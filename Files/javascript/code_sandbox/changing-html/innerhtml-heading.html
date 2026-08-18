@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Change the content of an h1 element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="id01">Old Heading</h1>
+    <pre id="demo"></pre>
+    <script>
+      const element = document.getElementById("id01");
+      element.innerHTML = "New Heading";
+      document.getElementById("demo").innerText = element.innerHTML;
+    </script>
+  </body>
+</html>
