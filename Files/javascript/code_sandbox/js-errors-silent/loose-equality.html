@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Loose equality: 5 == &#x27;5&#x27; is true</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Loose equality: 5 == &#x27;5&#x27; is true</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let loose = (5 == "5");
+      let strictEq = (5 === "5");
+      let thrown;
+      try {
+        const a = 5;
+        const b = "5";
+        if (typeof a !== typeof b) throw new TypeError("loose compare mixed types");
+      } catch (e) {
+        thrown = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        '5 == "5" -> ' + loose + "\n" +
+        '5 === "5" -> ' + strictEq + "\n" +
+        "with throw -> " + thrown;
+    </script>
+  </body>
+</html>

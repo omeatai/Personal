@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>parseInt(&#x27;abc&#x27;) is NaN — silent vs throw</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>parseInt(&#x27;abc&#x27;) is NaN — silent vs throw</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const silent = parseInt("abc");
+      let thrown;
+      try {
+        const result = parseInt("abc");
+        if (Number.isNaN(result)) throw new Error("parseInt produced NaN");
+      } catch (e) {
+        thrown = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "silent parseInt(\"abc\") -> " + String(silent) + "\n" +
+        "Number.isNaN(silent) -> " + Number.isNaN(silent) + "\n" +
+        "with throw -> " + thrown;
+    </script>
+  </body>
+</html>

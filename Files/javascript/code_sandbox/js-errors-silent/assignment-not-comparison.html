@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>if (isActive = true) — assignment, not comparison</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>if (isActive = true) — assignment, not comparison</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let result = "Not Active.";
+      let isActive = false;
+      if (isActive = true) {
+        result = "Active!";
+      }
+      let isActive2 = false;
+      let thrown;
+      try {
+        if (isActive2 === true) {
+          thrown = "entered";
+        } else {
+          throw new Error("not active");
+        }
+      } catch (e) {
+        thrown = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "silent result -> " + result + "\n" +
+        "silent isActive -> " + isActive + "\n" +
+        "=== then throw -> " + thrown;
+    </script>
+  </body>
+</html>

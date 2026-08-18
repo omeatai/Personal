@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `18.2` JS Errors Silent (new).
-- **Last completed:** `18.1` JS Errors Intro.
+- **Next task:** `18.3` JS Error Statements (new).
+- **Last completed:** `18.2` JS Errors Silent.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -309,7 +309,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S18 — Errors
 
 - [x] `18.1` JS Errors Intro — `js_errors_intro.asp` (new)
-- [ ] `18.2` JS Errors Silent — `js_errors_silent.asp` (new)
+- [x] `18.2` JS Errors Silent — `js_errors_silent.asp` (new)
 - [ ] `18.3` JS Error Statements — `js_errors.asp` (new)
 - [ ] `18.4` JS Error Object — `js_error_object.asp` (new)
 

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>&#x27;5&#x27; + &#x27;2&#x27; vs &#x27;5&#x27; - &#x27;2&#x27; — silent coercion</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>&#x27;5&#x27; + &#x27;2&#x27; vs &#x27;5&#x27; - &#x27;2&#x27; — silent coercion</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let result1 = ("5" + "2");
+      let result2 = ("5" - "2");
+      let thrown;
+      try {
+        const a = "5";
+        const b = 2;
+        if (typeof a !== typeof b) throw new TypeError("mixed types in +");
+      } catch (e) {
+        thrown = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "'5' + '2' -> " + result1 + " (typeof " + typeof result1 + ")\n" +
+        "'5' - '2' -> " + result2 + " (typeof " + typeof result2 + ")\n" +
+        '"5" + 2 with throw -> ' + thrown;
+    </script>
+  </body>
+</html>
