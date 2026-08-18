@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>findMax using the arguments object</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>findMax using the arguments object</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function findMax() {
+        let max = -Infinity;
+        for (let i = 0; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+        return max;
+      }
+      let x = findMax(1, 123, 500, 115, 44, 88);
+      document.getElementById("demo").innerText = "x -> " + String(x);
+    </script>
+  </body>
+</html>

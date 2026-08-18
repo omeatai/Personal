@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Default parameter y = 10</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Default parameter y = 10</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myFunction(x, y = 10) {
+        return x + y;
+      }
+      let a = myFunction(5);
+      let b = myFunction(5, undefined);
+      let c = myFunction(5, 1);
+      document.getElementById("demo").innerText = "myFunction(5) -> " + String(a) + "\n" + "myFunction(5, undefined) -> " + String(b) + "\n" + "myFunction(5, 1) -> " + String(c);
+    </script>
+  </body>
+</html>

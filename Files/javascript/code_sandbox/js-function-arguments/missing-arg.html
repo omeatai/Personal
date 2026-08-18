@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>multiply(4) missing argument → NaN</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>multiply(4) missing argument → NaN</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function multiply(a, b) {
+        return a * b;
+      }
+      let result = multiply(4);
+      document.getElementById("demo").innerText = "result -> " + String(result) + "\n" + "b -> " + String("undefined (missing)");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Old-style default if y is undefined</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Old-style default if y is undefined</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myFunction(x, y) {
+        if (y === undefined) {
+          y = 2;
+        }
+        return x + y;
+      }
+      let a = myFunction(5);
+      let b = myFunction(5, 3);
+      document.getElementById("demo").innerText = "myFunction(5) -> " + String(a) + "\n" + "myFunction(5, 3) -> " + String(b);
+    </script>
+  </body>
+</html>

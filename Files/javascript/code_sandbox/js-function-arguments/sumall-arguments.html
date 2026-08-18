@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>sumAll using arguments</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>sumAll using arguments</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function sumAll() {
+        let sum = 0;
+        for (let i = 0; i < arguments.length; i++) {
+          sum += arguments[i];
+        }
+        return sum;
+      }
+      let x = sumAll(1, 123, 500, 115, 44, 88);
+      document.getElementById("demo").innerText = "x -> " + String(x);
+    </script>
+  </body>
+</html>
