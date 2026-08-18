@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>carName = Volvo then let carName — ReferenceError (TDZ)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>carName = Volvo then let carName — ReferenceError (TDZ)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let early;
+      try {
+        carName = "Volvo";
+      } catch (e) {
+        early = e.name + ": " + e.message;
+      }
+      let carName;
+      document.getElementById("demo").innerText =
+        "before let carName -> " + early + "\n" +
+        "after let carName -> " + String(carName);
+    </script>
+  </body>
+</html>
