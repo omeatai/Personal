@@ -82,7 +82,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ## Resume pointer
 
 - **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `26.3` HTML First Features.
+- **Last completed:** `26.4` HTML First CSS.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -119,7 +119,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [ ] **S23** Versions (17)
 - [x] **S24** JS HTML DOM (9)
 - [x] **S25** JS HTML Events (7)
-- [ ] **S26** JS HTML First (4)
+- [x] **S26** JS HTML First (4)
 - [ ] **S27** JS Window API / BOM (8)
 - [ ] **S28** JS JSON (8)
 - [ ] **S29** JS Web API (6)
@@ -393,7 +393,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `26.1` HTML First — `js_htmlfirst.asp` (new)
 - [x] `26.2` HTML Progressive — `js_htmlfirst_progressive.asp` (new)
 - [x] `26.3` HTML First Features — `js_htmlfirst_features.asp` (new)
-- [ ] `26.4` HTML First CSS — `js_htmlfirst_css.asp` (new)
+- [x] `26.4` HTML First CSS — `js_htmlfirst_css.asp` (new)
 
 ### S27 — JS Window API (BOM)
 

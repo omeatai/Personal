@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>CSS animations — spinner</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+.spinner {
+  width:40px; height:40px;
+  border:6px solid #ddd;
+  border-top:6px solid #04AA6D;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+    </style>
+  </head>
+  <body>
+    <div class="spinner" id="s"></div>
+    <pre id="demo"></pre>
+    <script>
+      const s = document.getElementById("s");
+      const cs = getComputedStyle(s);
+      document.getElementById("demo").innerText =
+        "animation=" + cs.animationName + " size=" + cs.width;
+    </script>
+  </body>
+</html>

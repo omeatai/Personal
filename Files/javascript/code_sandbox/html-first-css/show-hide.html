@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Show and hide content with CSS (menu)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+.menu-content { display:none; background:#eee; padding:8px; }
+.menu:hover .menu-content, .menu.forced .menu-content { display:block; }
+
+    </style>
+  </head>
+  <body>
+    <div class="menu" id="m">Menu<div class="menu-content">Link 1<br>Link 2</div></div>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("m").classList.add("forced");
+      const c = document.querySelector(".menu-content");
+      document.getElementById("demo").innerText = "display=" + getComputedStyle(c).display + "\n" + c.innerText.replace(/\s+/g, " ");
+    </script>
+  </body>
+</html>

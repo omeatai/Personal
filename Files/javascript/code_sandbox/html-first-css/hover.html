@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Hover effects with :hover</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+button { background-color:#04AA6D; color:white; padding:10px; border:none; }
+button:hover, button.forced { background-color:#059862; }
+
+    </style>
+  </head>
+  <body>
+    <button type='button' id='b'>Hover Over Me</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("b").classList.add("forced");
+      document.getElementById("demo").innerText = "background=" + getComputedStyle(document.getElementById("b")).backgroundColor;
+    </script>
+  </body>
+</html>
