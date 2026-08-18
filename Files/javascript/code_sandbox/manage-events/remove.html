@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Removing events</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="add">Add</button> <button type="button" id="remove">Remove</button> <button type="button" id="test">Test click</button><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      const test = document.getElementById("test");
+      const remove = document.getElementById("remove");
+      const add = document.getElementById("add");
+      function myFunction() { document.getElementById("out").innerHTML += "Hello!"; }
+      add.addEventListener("click", function () { test.addEventListener("click", myFunction); });
+      remove.addEventListener("click", function () { test.removeEventListener("click", myFunction); });
+      add.click();
+      test.click();
+      remove.click();
+      test.click();
+      document.getElementById("demo").innerText = document.getElementById("out").innerHTML;
+    </script>
+  </body>
+</html>

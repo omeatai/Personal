@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>You must pass the same named function to remove</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Click</button>
+    <pre id="demo"></pre>
+    <script>
+      const b = document.getElementById("b");
+      let n = 0;
+      function tick() { n++; }
+      b.addEventListener("click", tick);
+      b.click();
+      b.removeEventListener("click", tick);
+      b.click();
+      document.getElementById("demo").innerText = "ticks=" + n + " (second click ignored)";
+    </script>
+  </body>
+</html>

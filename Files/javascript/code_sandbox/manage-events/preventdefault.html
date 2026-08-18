@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Blocking events — preventDefault on a link</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <a id="link" href="https://www.w3schools.com">Go to W3Schools</a><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      const link = document.getElementById("link");
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("out").innerHTML = "Link blocked!";
+      });
+      link.click();
+      document.getElementById("demo").innerText = document.getElementById("out").innerHTML;
+    </script>
+  </body>
+</html>
