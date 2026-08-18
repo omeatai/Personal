@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>keydown — event.key</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="k"><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      const k = document.getElementById("k");
+      k.addEventListener("keydown", function (event) {
+        document.getElementById("out").innerHTML = "You pressed: " + event.key;
+      });
+      k.dispatchEvent(new KeyboardEvent("keydown", { key: "Z", code: "KeyZ", bubbles: true }));
+      document.getElementById("demo").innerText = document.getElementById("out").innerHTML;
+    </script>
+  </body>
+</html>

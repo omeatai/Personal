@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>event.code — physical key</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>event.code</p>
+    <pre id="demo"></pre>
+    <script>
+      const event = new KeyboardEvent("keydown", { key: "z", code: "KeyZ" });
+      document.getElementById("demo").innerText = "event.code=" + event.code;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Using event.code === &quot;Enter&quot;</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="in01"><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      const in01 = document.getElementById("in01");
+      in01.addEventListener("keydown", function (event) {
+        if (event.code === "Enter") {
+          document.getElementById("out").innerHTML = "Enter was pressed!";
+        }
+      });
+      in01.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", code: "Enter", bubbles: true }));
+      document.getElementById("demo").innerText = document.getElementById("out").innerHTML;
+    </script>
+  </body>
+</html>

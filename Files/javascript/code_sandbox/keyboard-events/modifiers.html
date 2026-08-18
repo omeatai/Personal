@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Modifier keys — ctrlKey, shiftKey, altKey, metaKey</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>modifiers</p>
+    <pre id="demo"></pre>
+    <script>
+      const event = new KeyboardEvent("keydown", { key: "s", code: "KeyS", ctrlKey: true });
+      document.getElementById("demo").innerText =
+        "ctrl=" + event.ctrlKey + " shift=" + event.shiftKey + " key=" + event.key;
+    </script>
+  </body>
+</html>

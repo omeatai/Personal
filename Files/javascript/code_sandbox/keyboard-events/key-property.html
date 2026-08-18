@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>event.key — value of the key</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>event.key</p>
+    <pre id="demo"></pre>
+    <script>
+      const event = new KeyboardEvent("keydown", { key: "z" });
+      document.getElementById("demo").innerText = "event.key=" + event.key;
+    </script>
+  </body>
+</html>
