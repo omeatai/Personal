@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`Number.isSafeInteger()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`Number.isSafeInteger()`</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      Number.isSafeInteger(10);
+      Number.isSafeInteger(12345678901234567890);
+      document.getElementById("demo").innerText = "Number.isSafeInteger(10) -> " + String(Number.isSafeInteger(10)) + "\n" + "Number.isSafeInteger(12345678901234567890) -> " + String(Number.isSafeInteger(12345678901234567890)) + "\n" + "Number.isSafeInteger(9007199254740991) -> " + String(Number.isSafeInteger(9007199254740991)) + "\n" + "Number.isSafeInteger(9007199254740992) -> " + String(Number.isSafeInteger(9007199254740992));
+    </script>
+  </body>
+</html>

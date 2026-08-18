@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`toExponential()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`toExponential()`</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 9.656;
+      x.toExponential(2);
+      x.toExponential(4);
+      x.toExponential(6);
+      document.getElementById("demo").innerText = "toExponential() -> " + String(x.toExponential()) + "\n" + "toExponential(2) -> " + String(x.toExponential(2)) + "\n" + "toExponential(4) -> " + String(x.toExponential(4)) + "\n" + "toExponential(6) -> " + String(x.toExponential(6));
+    </script>
+  </body>
+</html>

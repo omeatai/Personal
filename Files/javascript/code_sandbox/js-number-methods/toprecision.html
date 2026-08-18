@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`toPrecision()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`toPrecision()`</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 9.656;
+      x.toPrecision();
+      x.toPrecision(2);
+      x.toPrecision(4);
+      x.toPrecision(6);
+      document.getElementById("demo").innerText = "toPrecision() -> " + String(x.toPrecision()) + "\n" + "toPrecision(2) -> " + String(x.toPrecision(2)) + "\n" + "toPrecision(4) -> " + String(x.toPrecision(4)) + "\n" + "toPrecision(6) -> " + String(x.toPrecision(6));
+    </script>
+  </body>
+</html>

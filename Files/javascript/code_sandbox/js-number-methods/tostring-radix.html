@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`toString(2)` radix</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`toString(2)` radix</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 123;
+      let text = x.toString(2);
+      document.getElementById("demo").innerText = "text -> " + String(x.toString(2));
+    </script>
+  </body>
+</html>

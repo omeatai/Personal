@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `6.2` JS Number Methods (new).
-- **Last completed:** `6.1` JS Numbers.
+- **Next task:** `6.3` JS Number Properties (new).
+- **Last completed:** `6.2` JS Number Methods.
   **JS String Reference** accordion listed a method table and only fenced `trim()`.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
@@ -191,7 +191,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S6 — Numbers
 
 - [x] `6.1` JS Numbers — `js_numbers.asp` (new)
-- [ ] `6.2` JS Number Methods — `js_number_methods.asp` (new)
+- [x] `6.2` JS Number Methods — `js_number_methods.asp` (new)
 - [ ] `6.3` JS Number Properties — `js_number_properties.asp` (new)
 - [ ] `6.4` JS Number Reference — `js_number_reference.asp` (new)
 - [ ] `6.5` JS Bitwise — `js_bitwise.asp` (new)

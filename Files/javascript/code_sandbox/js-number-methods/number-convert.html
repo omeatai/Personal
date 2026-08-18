@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`Number()` conversions</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`Number()` conversions</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      Number(true);
+      Number(false);
+      Number("10");
+      Number("  10");
+      Number("10  ");
+      Number(" 10  ");
+      Number("10.33");
+      Number("10,33");
+      Number("10 33");
+      Number("John");
+      document.getElementById("demo").innerText = "Number(true) -> " + String(Number(true)) + "\n" + "Number(false) -> " + String(Number(false)) + "\n" + "Number(\"10\") -> " + String(Number("10")) + "\n" + "Number(\"  10\") -> " + String(Number("  10")) + "\n" + "Number(\"10  \") -> " + String(Number("10  ")) + "\n" + "Number(\" 10  \") -> " + String(Number(" 10  ")) + "\n" + "Number(\"10.33\") -> " + String(Number("10.33")) + "\n" + "Number(\"10,33\") -> " + String(Number("10,33")) + "\n" + "Number(\"10 33\") -> " + String(Number("10 33")) + "\n" + "Number(\"John\") -> " + String(Number("John"));
+    </script>
+  </body>
+</html>
