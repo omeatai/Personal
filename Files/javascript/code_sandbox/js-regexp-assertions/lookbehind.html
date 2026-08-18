@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>(?&lt;=...) — previous string</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>(?&lt;=...) — previous string</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "Hello W3Schools";
+      let pattern = /(?<=Hello )W3Schools/;
+      let result = pattern.test(text);
+      document.getElementById("demo").innerText = "result -> " + String(result);
+    </script>
+  </body>
+</html>

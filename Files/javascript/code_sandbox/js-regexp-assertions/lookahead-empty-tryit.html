@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>(?=) empty lookahead — Tryit</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>(?=) empty lookahead — Tryit</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "W3Schools Tutorials";
+      let pattern = new RegExp("W3Schools(?=) Tutorials");
+      let result = pattern.test(text);
+      document.getElementById("demo").innerText = "result -> " + String(result);
+    </script>
+  </body>
+</html>

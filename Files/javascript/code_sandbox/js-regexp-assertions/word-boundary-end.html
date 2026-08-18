@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>LO\b — word boundary at end of LO</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>LO\b — word boundary at end of LO</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "HELLO, LOOK AT YOU!";
+      let result = text.search(/LO\b/);
+      document.getElementById("demo").innerText = "result -> " + String(result);
+    </script>
+  </body>
+</html>
