@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>End simple statements with a semicolon</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>End simple statements with a semicolon</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const cars = ["Volvo", "Saab", "Fiat"];
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue"
+      };
+      document.getElementById("demo").innerText = "cars.length -> " + String(cars.length) + "\n" + "person.firstName -> " + String(person.firstName);
+    </script>
+  </body>
+</html>

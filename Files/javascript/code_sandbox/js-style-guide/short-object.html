@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Short objects may be one compressed line</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Short objects may be one compressed line</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+      document.getElementById("demo").innerText = "firstName -> " + String(person.firstName) + "\n" + "age -> " + String(person.age);
+    </script>
+  </body>
+</html>

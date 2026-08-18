@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>if / else: `{` on the same line as if/else</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>if / else: `{` on the same line as if/else</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function greet(time) {
+        let greeting;
+        if (time < 20) {
+          greeting = "Good day";
+        } else {
+          greeting = "Good evening";
+        }
+        return greeting;
+      }
+      document.getElementById("demo").innerText =
+        "time 15 -> " + greet(15) + "\n" +
+        "time 21 -> " + greet(21);
+    </script>
+  </body>
+</html>

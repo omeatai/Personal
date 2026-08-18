@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>getElementById(&quot;Demo&quot;) vs getElementById(&quot;demo&quot;)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>getElementById(&quot;Demo&quot;) vs getElementById(&quot;demo&quot;)</h2>
+    <p id="demo">target</p>
+    <pre id="demo"></pre>
+    
+    <script>
+      const obj = document.getElementById("Demo");
+      const obj2 = document.getElementById("demo");
+      document.getElementById("demo").innerText =
+        'getElementById("Demo") -> ' + obj + "\n" +
+        'getElementById("demo") -> ' + (obj2 ? obj2.tagName + "#" + obj2.id : null);
+    </script>
+  </body>
+</html>

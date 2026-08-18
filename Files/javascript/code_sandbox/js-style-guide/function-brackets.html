@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Functions: `{` at end of first line; no semicolon after `}`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Functions: `{` at end of first line; no semicolon after `}`</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function toCelsius(fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+      }
+      document.getElementById("demo").innerText = "toCelsius(68) -> " + String(Math.round(toCelsius(68) * 100) / 100);
+    </script>
+  </body>
+</html>

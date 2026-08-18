@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>camelCase identifier names (firstName, lastName)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>camelCase identifier names (firstName, lastName)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let firstName = "John";
+      let lastName = "Doe";
+      let price = 19.90;
+      let tax = 0.20;
+      let fullPrice = price + (price * tax);
+      document.getElementById("demo").innerText = "firstName -> " + String(firstName) + "\n" + "lastName -> " + String(lastName) + "\n" + "fullPrice -> " + String(fullPrice.toFixed(2));
+    </script>
+  </body>
+</html>
