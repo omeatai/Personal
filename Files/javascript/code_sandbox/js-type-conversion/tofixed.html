@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>toFixed(2)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>toFixed(2)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 123.456;
+      x.toFixed(2);
+      document.getElementById("demo").innerText = "x.toFixed(2) -> " + String((123.456).toFixed(2));
+    </script>
+  </body>
+</html>

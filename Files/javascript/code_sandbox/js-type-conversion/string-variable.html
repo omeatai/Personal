@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>String(x) from a number variable</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>String(x) from a number variable</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 123;
+      String(x);
+      document.getElementById("demo").innerText = "String(x) -> " + String(String(x)) + "\n" + "typeof String(x) -> " + String(typeof String(x));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Automatic toString — object → &quot;[object Object]&quot;</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Automatic toString — object → &quot;[object Object]&quot;</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let myVar = {name: "Fjohn"};
+      String(myVar);
+      document.getElementById("demo").innerText = "String(myVar) -> " + String(String(myVar));
+    </script>
+  </body>
+</html>

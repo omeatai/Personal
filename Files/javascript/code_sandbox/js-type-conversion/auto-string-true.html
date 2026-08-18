@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Automatic toString — true → &quot;true&quot;</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Automatic toString — true → &quot;true&quot;</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      String(true);
+      String(false);
+      document.getElementById("demo").innerText = "String(true) -> " + String(String(true)) + "\n" + "String(false) -> " + String(String(false));
+    </script>
+  </body>
+</html>

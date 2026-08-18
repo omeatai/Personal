@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Type Conversion</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JS Type Conversion</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="number-3-14.html">01 — Number(&quot;3.14&quot;)</a></li>
+      <li><a href="number-math-pi.html">02 — Number(Math.PI)</a></li>
+      <li><a href="number-space.html">03 — Number(&quot; &quot;)</a></li>
+      <li><a href="number-empty.html">04 — Number(&quot;&quot;)</a></li>
+      <li><a href="number-99-88.html">05 — Number(&quot;99 88&quot;) — does not convert</a></li>
+      <li><a href="number-john.html">06 — Number(&quot;John&quot;) — does not convert</a></li>
+      <li><a href="parsefloat.html">07 — parseFloat(&quot;10.33&quot;)</a></li>
+      <li><a href="parseint.html">08 — parseInt(&quot;10.33&quot;)</a></li>
+      <li><a href="unary-plus-5.html">09 — unary + on &quot;5&quot;</a></li>
+      <li><a href="unary-plus-john.html">10 — unary + on &quot;John&quot; is NaN</a></li>
+      <li><a href="string-variable.html">11 — String(x) from a number variable</a></li>
+      <li><a href="string-literal.html">12 — String(123)</a></li>
+      <li><a href="string-expression.html">13 — String(100 + 23)</a></li>
+      <li><a href="tostring-variable.html">14 — x.toString()</a></li>
+      <li><a href="tostring-literal.html">15 — (123).toString()</a></li>
+      <li><a href="tostring-expression.html">16 — (100 + 23).toString()</a></li>
+      <li><a href="toexponential.html">17 — toExponential()</a></li>
+      <li><a href="tofixed.html">18 — toFixed(2)</a></li>
+      <li><a href="toprecision.html">19 — toPrecision(4)</a></li>
+      <li><a href="date-to-number.html">20 — Number(date) — ms since epoch</a></li>
+      <li><a href="string-date-now.html">21 — String(Date()) — Date() as a function</a></li>
+      <li><a href="date-fn-tostring.html">22 — Date().toString() — already a string</a></li>
+      <li><a href="getfullyear-tostring.html">23 — getFullYear().toString()</a></li>
+      <li><a href="getmonth-tostring.html">24 — getMonth().toString() — 0-based</a></li>
+      <li><a href="getdate-tostring.html">25 — getDate().toString()</a></li>
+      <li><a href="getday-tostring.html">26 — getDay().toString() — weekday 0–6</a></li>
+      <li><a href="gethours-tostring.html">27 — getHours().toString()</a></li>
+      <li><a href="getminutes-tostring.html">28 — getMinutes().toString() — 0–59 (not 0–23)</a></li>
+      <li><a href="getseconds-tostring.html">29 — getSeconds().toString()</a></li>
+      <li><a href="getmilliseconds-tostring.html">30 — getMilliseconds().toString()</a></li>
+      <li><a href="month-plus-one.html">31 — (getMonth()+1).toString() — 1–12</a></li>
+      <li><a href="month-long-name.html">32 — toLocaleString month:&#x27;long&#x27;</a></li>
+      <li><a href="number-false.html">33 — Number(false) is 0</a></li>
+      <li><a href="number-true.html">34 — Number(true) is 1</a></li>
+      <li><a href="string-false.html">35 — String(false) is &quot;false&quot;</a></li>
+      <li><a href="string-true.html">36 — String(true) is &quot;true&quot;</a></li>
+      <li><a href="false-tostring.html">37 — false.toString() is &quot;false&quot;</a></li>
+      <li><a href="true-tostring.html">38 — true.toString() is &quot;true&quot;</a></li>
+      <li><a href="auto-5-plus-null.html">39 — 5 + null — null becomes 0</a></li>
+      <li><a href="auto-str5-plus-null.html">40 — &quot;5&quot; + null — null becomes &quot;null&quot;</a></li>
+      <li><a href="auto-str5-plus-2.html">41 — &quot;5&quot; + 2 — 2 becomes &quot;2&quot;</a></li>
+      <li><a href="auto-str5-minus-2.html">42 — &quot;5&quot; - 2 — &quot;5&quot; becomes 5</a></li>
+      <li><a href="auto-str5-times-str2.html">43 — &quot;5&quot; * &quot;2&quot; — both become numbers</a></li>
+      <li><a href="auto-string-object.html">44 — Automatic toString — object → &quot;[object Object]&quot;</a></li>
+      <li><a href="auto-string-array.html">45 — Automatic toString — array → &quot;1,2,3,4&quot;</a></li>
+      <li><a href="auto-string-date.html">46 — Automatic toString — Date</a></li>
+      <li><a href="auto-string-number.html">47 — Automatic toString — 123 → &quot;123&quot;</a></li>
+      <li><a href="auto-string-true.html">48 — Automatic toString — true → &quot;true&quot;</a></li>
+      <li><a href="conv-false.html">49 — Convert false</a></li>
+      <li><a href="conv-true.html">50 — Convert true</a></li>
+      <li><a href="conv-0.html">51 — Convert 0</a></li>
+      <li><a href="conv-1.html">52 — Convert 1</a></li>
+      <li><a href="conv-str-0.html">53 — Convert &quot;0&quot;</a></li>
+      <li><a href="conv-str-000.html">54 — Convert &quot;000&quot;</a></li>
+      <li><a href="conv-str-1.html">55 — Convert &quot;1&quot;</a></li>
+      <li><a href="conv-nan.html">56 — Convert NaN</a></li>
+      <li><a href="conv-infinity.html">57 — Convert Infinity</a></li>
+      <li><a href="conv-neginfinity.html">58 — Convert -Infinity</a></li>
+      <li><a href="conv-empty-str.html">59 — Convert &quot;&quot;</a></li>
+      <li><a href="conv-str-20.html">60 — Convert &quot;20&quot;</a></li>
+      <li><a href="conv-str-twenty.html">61 — Convert &quot;twenty&quot;</a></li>
+      <li><a href="conv-empty-arr.html">62 — Convert [ ]</a></li>
+      <li><a href="conv-arr-20.html">63 — Convert [20]</a></li>
+      <li><a href="conv-arr-10-20.html">64 — Convert [10,20]</a></li>
+      <li><a href="conv-arr-twenty.html">65 — Convert [&quot;twenty&quot;]</a></li>
+      <li><a href="conv-arr-ten-twenty.html">66 — Convert [&quot;ten&quot;,&quot;twenty&quot;]</a></li>
+      <li><a href="conv-function.html">67 — Convert function(){}</a></li>
+      <li><a href="conv-object.html">68 — Convert { }</a></li>
+      <li><a href="conv-null.html">69 — Convert null</a></li>
+      <li><a href="conv-undefined.html">70 — Convert undefined</a></li>
+    </ul>
+  </body>
+</html>

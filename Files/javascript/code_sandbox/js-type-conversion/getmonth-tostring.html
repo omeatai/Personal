@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>getMonth().toString() — 0-based</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>getMonth().toString() — 0-based</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const d = new Date("2021-03-25T15:30:45.123Z");
+      d.getMonth().toString();
+      document.getElementById("demo").innerText = "d.getMonth() -> " + String(d.getMonth()) + "\n" + "d.getMonth().toString() -> " + String(d.getMonth().toString());
+    </script>
+  </body>
+</html>

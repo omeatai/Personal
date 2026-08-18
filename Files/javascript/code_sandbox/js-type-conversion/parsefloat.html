@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>parseFloat(&quot;10.33&quot;)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>parseFloat(&quot;10.33&quot;)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      parseFloat("10.33");
+      parseFloat("99 88");
+      document.getElementById("demo").innerText = "parseFloat(\"10.33\") -> " + String(parseFloat("10.33")) + "\n" + "parseFloat(\"99 88\") -> " + String(parseFloat("99 88"));
+    </script>
+  </body>
+</html>

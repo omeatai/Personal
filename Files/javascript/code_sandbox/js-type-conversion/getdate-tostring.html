@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>getDate().toString()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>getDate().toString()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const d = new Date("2021-03-25T15:30:45.123Z");
+      d.getDate().toString();
+      document.getElementById("demo").innerText = "d.getDate() -> " + String(d.getDate()) + "\n" + "d.getDate().toString() -> " + String(d.getDate().toString());
+    </script>
+  </body>
+</html>

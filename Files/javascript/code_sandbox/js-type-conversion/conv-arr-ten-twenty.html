@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Convert [&quot;ten&quot;,&quot;twenty&quot;]</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Convert [&quot;ten&quot;,&quot;twenty&quot;]</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let v = ["ten", "twenty"];
+      document.getElementById("demo").innerText = "Number(v) -> " + String(Number(v)) + "\n" + "String(v) -> " + String(String(v)) + "\n" + "Boolean(v) -> " + String(Boolean(v));
+    </script>
+  </body>
+</html>
