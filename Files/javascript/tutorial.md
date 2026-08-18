@@ -50,9 +50,9 @@ Sandbox: `code_sandbox/js-introduction/index.html`
 </button>
 ```
 
-<img alt="js-introduction example 1 source" src="./code_sandbox/snaps/js-introduction-01-code.png" />
+![js-introduction example 1 source](./code_sandbox/snaps/js-introduction-01-code.png)
 
-<img alt="js-introduction example 1 result" src="./code_sandbox/snaps/js-introduction-01-result.png" />
+![js-introduction example 1 result](./code_sandbox/snaps/js-introduction-01-result.png)
 
 - [x] **Outcome:** before the click the paragraph reads **JavaScript can change HTML content.**; after the click (shown above) it reads **Hello JavaScript**.
 
@@ -77,9 +77,9 @@ Sandbox: `code_sandbox/js-introduction/lightbulb.html`
 <img id="myImage" src="pic_bulboff.svg" width="100" height="180" />
 ```
 
-<img alt="js-introduction example 2 source" src="./code_sandbox/snaps/js-introduction-02-code.png" />
+![js-introduction example 2 source](./code_sandbox/snaps/js-introduction-02-code.png)
 
-<img alt="js-introduction example 2 result" src="./code_sandbox/snaps/js-introduction-02-result.png" />
+![js-introduction example 2 result](./code_sandbox/snaps/js-introduction-02-result.png)
 
 - [x] **Outcome:** the page starts on the grey **off** bulb; running the "on" statement swaps the image to the yellow **on** bulb (shown above) without reloading the page.
 
@@ -100,9 +100,9 @@ Sandbox: `code_sandbox/js-introduction/style.html`
 </button>
 ```
 
-<img alt="js-introduction example 3 source" src="./code_sandbox/snaps/js-introduction-03-code.png" />
+![js-introduction example 3 source](./code_sandbox/snaps/js-introduction-03-code.png)
 
-<img alt="js-introduction example 3 result" src="./code_sandbox/snaps/js-introduction-03-result.png" />
+![js-introduction example 3 result](./code_sandbox/snaps/js-introduction-03-result.png)
 
 - [x] **Outcome:** the paragraph jumps from normal size to a large **35px** heading-sized line (shown above).
 
@@ -126,9 +126,9 @@ Sandbox: `code_sandbox/js-introduction/hide-show.html`
 </button>
 ```
 
-<img alt="js-introduction example 4 source" src="./code_sandbox/snaps/js-introduction-04-code.png" />
+![js-introduction example 4 source](./code_sandbox/snaps/js-introduction-04-code.png)
 
-<img alt="js-introduction example 4 result" src="./code_sandbox/snaps/js-introduction-04-result.png" />
+![js-introduction example 4 result](./code_sandbox/snaps/js-introduction-04-result.png)
 
 - [x] **Outcome:** the demo loads with the paragraph visible plus **Hide** / **Show** buttons (shown above). Clicking **Hide** makes the paragraph vanish; clicking **Show** brings it back.
 
@@ -325,9 +325,9 @@ Sandbox: `code_sandbox/js-where-to/basic.html`
 </script>
 ```
 
-<img alt="js-where-to example 1 source" src="./code_sandbox/snaps/js-where-to-01-code.png" />
+![js-where-to example 1 source](./code_sandbox/snaps/js-where-to-01-code.png)
 
-<img alt="js-where-to example 1 result" src="./code_sandbox/snaps/js-where-to-01-result.png" />
+![js-where-to example 1 result](./code_sandbox/snaps/js-where-to-01-result.png)
 
 - [x] **Outcome:** the paragraph loads already reading **My First JavaScript** (the inline script ran during page load), instead of the original **A Paragraph.**
 
@@ -355,9 +355,9 @@ Sandbox: `code_sandbox/js-where-to/head.html`
 </body>
 ```
 
-<img alt="js-where-to example 2 source" src="./code_sandbox/snaps/js-where-to-02-code.png" />
+![js-where-to example 2 source](./code_sandbox/snaps/js-where-to-02-code.png)
 
-<img alt="js-where-to example 2 result" src="./code_sandbox/snaps/js-where-to-02-result.png" />
+![js-where-to example 2 result](./code_sandbox/snaps/js-where-to-02-result.png)
 
 - [x] **Outcome:** after clicking **Try it**, the paragraph changes from **A Paragraph** to **Paragraph changed.** (shown above).
 
@@ -383,9 +383,9 @@ Sandbox: `code_sandbox/js-where-to/index.html`
 </body>
 ```
 
-<img alt="js-where-to example 3 source" src="./code_sandbox/snaps/js-where-to-03-code.png" />
+![js-where-to example 3 source](./code_sandbox/snaps/js-where-to-03-code.png)
 
-<img alt="js-where-to example 3 result" src="./code_sandbox/snaps/js-where-to-03-result.png" />
+![js-where-to example 3 result](./code_sandbox/snaps/js-where-to-03-result.png)
 
 - [x] **Outcome:** clicking **Try it** again produces **Paragraph changed.** under the **Demo JavaScript in Body** heading (shown above).
 
@@ -415,9 +415,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-where-to example 4 source" src="./code_sandbox/snaps/js-where-to-04-code.png" />
+![js-where-to example 4 source](./code_sandbox/snaps/js-where-to-04-code.png)
 
-<img alt="js-where-to example 4 result" src="./code_sandbox/snaps/js-where-to-04-result.png" />
+![js-where-to example 4 result](./code_sandbox/snaps/js-where-to-04-result.png)
 
 - [x] **Outcome:** the external `myScript.js` supplies the function; clicking **Try it** changes the paragraph to **Paragraph changed.** exactly like the inline versions (shown above).
 
@@ -601,9 +601,9 @@ Sandbox: `code_sandbox/js-output/index.html`
 </script>
 ```
 
-<img alt="js-output example 1 source" src="./code_sandbox/snaps/js-output-01-code.png" />
+![js-output example 1 source](./code_sandbox/snaps/js-output-01-code.png)
 
-<img alt="js-output example 1 result" src="./code_sandbox/snaps/js-output-01-result.png" />
+![js-output example 1 result](./code_sandbox/snaps/js-output-01-result.png)
 
 - [x] **Outcome:** the empty paragraph becomes a large bold **Hello World** heading (the `<h2>` tags were parsed, not shown literally).
 
@@ -624,9 +624,9 @@ Sandbox: `code_sandbox/js-output/innertext.html`
 </script>
 ```
 
-<img alt="js-output example 2 source" src="./code_sandbox/snaps/js-output-02-code.png" />
+![js-output example 2 source](./code_sandbox/snaps/js-output-02-code.png)
 
-<img alt="js-output example 2 result" src="./code_sandbox/snaps/js-output-02-result.png" />
+![js-output example 2 result](./code_sandbox/snaps/js-output-02-result.png)
 
 - [x] **Outcome:** the paragraph shows plain, normal-sized **Hello World** — compare with Example 1's big heading to see the `innerHTML` vs `innerText` difference.
 
@@ -650,9 +650,9 @@ Sandbox: `code_sandbox/js-output/write.html`
 <button type="button" onclick="document.write(5 + 6)">Try it</button>
 ```
 
-<img alt="js-output example 3 source" src="./code_sandbox/snaps/js-output-03-code.png" />
+![js-output example 3 source](./code_sandbox/snaps/js-output-03-code.png)
 
-<img alt="js-output example 3 result" src="./code_sandbox/snaps/js-output-03-result.png" />
+![js-output example 3 result](./code_sandbox/snaps/js-output-03-result.png)
 
 - [x] **Outcome:** during load the number **11** appears under the paragraph. If you instead clicked a **Try it** button after load, the entire page would be replaced by a bare **11**.
 
@@ -675,9 +675,9 @@ Sandbox: `code_sandbox/js-output/alert.html`
 </script>
 ```
 
-<img alt="js-output example 4 source" src="./code_sandbox/snaps/js-output-04-code.png" />
+![js-output example 4 source](./code_sandbox/snaps/js-output-04-code.png)
 
-<img alt="js-output example 4 result" src="./code_sandbox/snaps/js-output-04-result.png" />
+![js-output example 4 result](./code_sandbox/snaps/js-output-04-result.png)
 
 - [x] **Outcome:** clicking **Show alert (5 + 6)** (or loading the auto-run version) opens a native dialog reading **11**; the page underneath is unchanged.
 
@@ -695,9 +695,9 @@ Sandbox: `code_sandbox/js-output/console.html`
 </script>
 ```
 
-<img alt="js-output example 5 source" src="./code_sandbox/snaps/js-output-05-code.png" />
+![js-output example 5 source](./code_sandbox/snaps/js-output-05-code.png)
 
-<img alt="js-output example 5 result" src="./code_sandbox/snaps/js-output-05-result.png" />
+![js-output example 5 result](./code_sandbox/snaps/js-output-05-result.png)
 
 - [x] **Outcome:** the browser console logs **11**; the mirrored on-page box shows **> 11** so you can see the value in the snapshot.
 
@@ -872,9 +872,9 @@ Sandbox: `code_sandbox/js-syntax/literals.html`
 ("John Doe");
 ```
 
-<img alt="js-syntax example 1 source" src="./code_sandbox/snaps/js-syntax-01-code.png" />
+![js-syntax example 1 source](./code_sandbox/snaps/js-syntax-01-code.png)
 
-<img alt="js-syntax example 1 result" src="./code_sandbox/snaps/js-syntax-01-result.png" />
+![js-syntax example 1 result](./code_sandbox/snaps/js-syntax-01-result.png)
 
 - [x] **Outcome:** the page prints the numbers **10.5, 1001** and the strings **"John Doe", 'John Doe'**, confirming both number forms and both quote styles are valid.
 
@@ -896,9 +896,9 @@ let y;
 y = 6;
 ```
 
-<img alt="js-syntax example 2 source" src="./code_sandbox/snaps/js-syntax-02-code.png" />
+![js-syntax example 2 source](./code_sandbox/snaps/js-syntax-02-code.png)
 
-<img alt="js-syntax example 2 result" src="./code_sandbox/snaps/js-syntax-02-result.png" />
+![js-syntax example 2 result](./code_sandbox/snaps/js-syntax-02-result.png)
 
 - [x] **Outcome:** the page reports **let x = 5**, **const fname = "John"**, and **y = 6** — the define-then-assign step worked.
 
@@ -920,9 +920,9 @@ let sum = x + y; // 11
 "John" + " " + "Doe"; // "John Doe"
 ```
 
-<img alt="js-syntax example 3 source" src="./code_sandbox/snaps/js-syntax-03-code.png" />
+![js-syntax example 3 source](./code_sandbox/snaps/js-syntax-03-code.png)
 
-<img alt="js-syntax example 3 result" src="./code_sandbox/snaps/js-syntax-03-result.png" />
+![js-syntax example 3 result](./code_sandbox/snaps/js-syntax-03-result.png)
 
 - [x] **Outcome:** the page prints **x + y = 11**, **5 \* 10 = 50**, **(5 + 6) \* 10 = 110**, and **"John" + " " + "Doe" = John Doe**.
 
@@ -940,9 +940,9 @@ let lastName = "Doe";
 let lastname = "Peterson"; // different variable!
 ```
 
-<img alt="js-syntax example 4 source" src="./code_sandbox/snaps/js-syntax-04-code.png" />
+![js-syntax example 4 source](./code_sandbox/snaps/js-syntax-04-code.png)
 
-<img alt="js-syntax example 4 result" src="./code_sandbox/snaps/js-syntax-04-result.png" />
+![js-syntax example 4 result](./code_sandbox/snaps/js-syntax-04-result.png)
 
 - [x] **Outcome:** the page shows **lastName = Doe** and **lastname = Peterson** side by side — proof the two names are distinct.
 - [x] **Page exercise —** _Correct syntax to assign a value?_ → **`x = 5`** (not `x : 5`, `x == 5`, or `x -> 5`).
@@ -1094,9 +1094,9 @@ z = x + y; // Statement 4
 document.getElementById("demo").innerHTML = "Hello Dolly.";
 ```
 
-<img alt="js-statements example 1 source" src="./code_sandbox/snaps/js-statements-01-code.png" />
+![js-statements example 1 source](./code_sandbox/snaps/js-statements-01-code.png)
 
-<img alt="js-statements example 1 result" src="./code_sandbox/snaps/js-statements-01-result.png" />
+![js-statements example 1 result](./code_sandbox/snaps/js-statements-01-result.png)
 
 - [x] **Outcome:** the page prints **x = 5, y = 6, z = x + y = 11** and the message **Hello Dolly.**
 
@@ -1121,9 +1121,9 @@ b = 6;
 c = a + b;
 ```
 
-<img alt="js-statements example 2 source" src="./code_sandbox/snaps/js-statements-02-code.png" />
+![js-statements example 2 source](./code_sandbox/snaps/js-statements-02-code.png)
 
-<img alt="js-statements example 2 result" src="./code_sandbox/snaps/js-statements-02-result.png" />
+![js-statements example 2 result](./code_sandbox/snaps/js-statements-02-result.png)
 
 - [x] **Outcome:** the page reports **a = 5, b = 6, c = a + b = 11** — the three statements executed and produced the sum.
 
@@ -1144,9 +1144,9 @@ function myFunction() {
 myFunction();
 ```
 
-<img alt="js-statements example 3 source" src="./code_sandbox/snaps/js-statements-03-code.png" />
+![js-statements example 3 source](./code_sandbox/snaps/js-statements-03-code.png)
 
-<img alt="js-statements example 3 result" src="./code_sandbox/snaps/js-statements-03-result.png" />
+![js-statements example 3 result](./code_sandbox/snaps/js-statements-03-result.png)
 
 - [x] **Outcome:** both paragraphs appear — **Hello Dolly!** and **How are you?** — because the block's two statements ran together.
 
@@ -1317,9 +1317,9 @@ let x = 5; // Declare x, give it the value of 5
 let y = x + 2; // Declare y, give it the value of x + 2
 ```
 
-<img alt="js-comments example 1 source" src="./code_sandbox/snaps/js-comments-01-code.png" />
+![js-comments example 1 source](./code_sandbox/snaps/js-comments-01-code.png)
 
-<img alt="js-comments example 1 result" src="./code_sandbox/snaps/js-comments-01-result.png" />
+![js-comments example 1 result](./code_sandbox/snaps/js-comments-01-result.png)
 
 - [x] **Outcome:** despite the comments, the heading becomes **My First Page**, the paragraph **My first paragraph.**, and the page prints **x = 5, y = x + 2 = 7**.
 
@@ -1342,9 +1342,9 @@ document.getElementById("myH").innerHTML = "My First Page";
 document.getElementById("myP").innerHTML = "My first paragraph.";
 ```
 
-<img alt="js-comments example 2 source" src="./code_sandbox/snaps/js-comments-02-code.png" />
+![js-comments example 2 source](./code_sandbox/snaps/js-comments-02-code.png)
 
-<img alt="js-comments example 2 result" src="./code_sandbox/snaps/js-comments-02-result.png" />
+![js-comments example 2 result](./code_sandbox/snaps/js-comments-02-result.png)
 
 - [x] **Outcome:** the block is ignored and both statements run, so the page shows **My First Page** and **My first paragraph.** — identical to Example 1's heading/paragraph.
 
@@ -1362,9 +1362,9 @@ Sandbox: `code_sandbox/js-comments/prevent.html`
 document.getElementById("myP").innerHTML = "My first paragraph.";
 ```
 
-<img alt="js-comments example 3 source" src="./code_sandbox/snaps/js-comments-03-code.png" />
+![js-comments example 3 source](./code_sandbox/snaps/js-comments-03-code.png)
 
-<img alt="js-comments example 3 result" src="./code_sandbox/snaps/js-comments-03-result.png" />
+![js-comments example 3 result](./code_sandbox/snaps/js-comments-03-result.png)
 
 - [x] **Outcome:** the heading stays **Heading** (its change was commented out) while the paragraph becomes **My first paragraph.** — proof the commented line never executed.
 - [x] **Page exercise —** _Correct comment syntax?_ → **`// this is a comment`** (not `#`, `''`, or `##`).
@@ -1493,9 +1493,9 @@ const before = carName;
 carName = "Volvo"; // assign later with =
 ```
 
-<img alt="js-variables example 1 source" src="./code_sandbox/snaps/js-variables-01-code.png" />
+![js-variables example 1 source](./code_sandbox/snaps/js-variables-01-code.png)
 
-<img alt="js-variables example 1 result" src="./code_sandbox/snaps/js-variables-01-result.png" />
+![js-variables example 1 result](./code_sandbox/snaps/js-variables-01-result.png)
 
 - [x] **Outcome:** `x + y` is **11** and `a + b` is **11**; `carName` reads **undefined** before assignment and **Volvo** after — proof that a bare `let` starts life as `undefined`.
 
@@ -1517,9 +1517,9 @@ let $$$ = 2;
 let $myMoney = 5;
 ```
 
-<img alt="js-variables example 2 source" src="./code_sandbox/snaps/js-variables-02-code.png" />
+![js-variables example 2 source](./code_sandbox/snaps/js-variables-02-code.png)
 
-<img alt="js-variables example 2 result" src="./code_sandbox/snaps/js-variables-02-result.png" />
+![js-variables example 2 result](./code_sandbox/snaps/js-variables-02-result.png)
 
 - [x] **Outcome:** every name resolves normally — `_lastName = Johnson`, `$ = Hello World`, `$myMoney = 5` — showing `_` and `$` are ordinary letters to JavaScript.
 
@@ -1543,9 +1543,9 @@ let p2 = "John Doe",
   price = 200;
 ```
 
-<img alt="js-variables example 3 source" src="./code_sandbox/snaps/js-variables-03-code.png" />
+![js-variables example 3 source](./code_sandbox/snaps/js-variables-03-code.png)
 
-<img alt="js-variables example 3 result" src="./code_sandbox/snaps/js-variables-03-result.png" />
+![js-variables example 3 result](./code_sandbox/snaps/js-variables-03-result.png)
 
 - [x] **Outcome:** `pi = 3.14`, `person = "John Doe"`, and the comma‑separated statement declares all three of `p2`, `carName`, `price` at once (`John Doe`, `Volvo`, `200`).
 
@@ -1569,9 +1569,9 @@ let mix1 = "5" + 2 + 3; // string first -> "523"
 let mix2 = 2 + 3 + "5"; // numbers add first, then concatenate -> "55"
 ```
 
-<img alt="js-variables example 4 source" src="./code_sandbox/snaps/js-variables-04-code.png" />
+![js-variables example 4 source](./code_sandbox/snaps/js-variables-04-code.png)
 
-<img alt="js-variables example 4 result" src="./code_sandbox/snaps/js-variables-04-result.png" />
+![js-variables example 4 result](./code_sandbox/snaps/js-variables-04-result.png)
 
 - [x] **Outcome:** `x` becomes **10**, `sum` is **10**, `name` is **John Doe**, `"5" + 2 + 3` is **523**, and `2 + 3 + "5"` is **55** — the classic left‑to‑right `+` quirk.
 
@@ -1755,9 +1755,9 @@ let x = 10;
 // Here x is 10 again
 ```
 
-<img alt="js-let example 1 source" src="./code_sandbox/snaps/js-let-01-code.png" />
+![js-let example 1 source](./code_sandbox/snaps/js-let-01-code.png)
 
-<img alt="js-let example 1 result" src="./code_sandbox/snaps/js-let-01-result.png" />
+![js-let example 1 result](./code_sandbox/snaps/js-let-01-result.png)
 
 - [x] **Outcome:** prints `x = 10` before the block, `x = 2` inside, and `x = 10` again after — the inner `let` never leaked out.
 
@@ -1780,9 +1780,9 @@ var x = 10;
 // Here x is 2  (var leaked out of the block!)
 ```
 
-<img alt="js-let example 2 source" src="./code_sandbox/snaps/js-let-02-code.png" />
+![js-let example 2 source](./code_sandbox/snaps/js-let-02-code.png)
 
-<img alt="js-let example 2 result" src="./code_sandbox/snaps/js-let-02-result.png" />
+![js-let example 2 result](./code_sandbox/snaps/js-let-02-result.png)
 
 - [x] **Outcome:** after the block, `x = 2` — the `var` assignment inside the block **overwrote** the outer value, unlike `let` in Example 1.
 
@@ -1806,9 +1806,9 @@ let y = 2;
 }
 ```
 
-<img alt="js-let example 3 source" src="./code_sandbox/snaps/js-let-03-code.png" />
+![js-let example 3 source](./code_sandbox/snaps/js-let-03-code.png)
 
-<img alt="js-let example 3 result" src="./code_sandbox/snaps/js-let-03-result.png" />
+![js-let example 3 result](./code_sandbox/snaps/js-let-03-result.png)
 
 - [x] **Outcome:** `var x` becomes **3**, the outer `let y` stays **2**, and the block's own `let y` is **3** — same‑scope `let` redeclaration is rejected as a `SyntaxError`.
 
@@ -1835,9 +1835,9 @@ try {
 let y = 5;
 ```
 
-<img alt="js-let example 4 source" src="./code_sandbox/snaps/js-let-04-code.png" />
+![js-let example 4 source](./code_sandbox/snaps/js-let-04-code.png)
 
-<img alt="js-let example 4 result" src="./code_sandbox/snaps/js-let-04-result.png" />
+![js-let example 4 result](./code_sandbox/snaps/js-let-04-result.png)
 
 - [x] **Outcome:** `typeof x` before its line is **undefined** (no error), while touching `y` before its line raises a **ReferenceError** — proof of the temporal dead zone.
 
@@ -2009,9 +2009,9 @@ PI = 3.14; // TypeError: cannot reassign a const
 // PI = 3.14;
 ```
 
-<img alt="js-const example 1 source" src="./code_sandbox/snaps/js-const-01-code.png" />
+![js-const example 1 source](./code_sandbox/snaps/js-const-01-code.png)
 
-<img alt="js-const example 1 result" src="./code_sandbox/snaps/js-const-01-result.png" />
+![js-const example 1 result](./code_sandbox/snaps/js-const-01-result.png)
 
 - [x] **Outcome:** `PI` keeps **3.14159265359**; the reassignment reports **TypeError**, and the note reminds that a value‑less `const` is a `SyntaxError`.
 
@@ -2033,9 +2033,9 @@ cars.push("Audi"); // add an element   - OK
 cars = ["Toyota"]; // TypeError: cannot reassign the array
 ```
 
-<img alt="js-const example 2 source" src="./code_sandbox/snaps/js-const-02-code.png" />
+![js-const example 2 source](./code_sandbox/snaps/js-const-02-code.png)
 
-<img alt="js-const example 2 result" src="./code_sandbox/snaps/js-const-02-result.png" />
+![js-const example 2 result](./code_sandbox/snaps/js-const-02-result.png)
 
 - [x] **Outcome:** after edits the array is **Toyota, Volvo, BMW, Audi**; trying to reassign the whole array raises **TypeError**.
 
@@ -2057,9 +2057,9 @@ car.owner = "Johnson"; // add a property    - OK
 car = { type: "Volvo" }; // TypeError: cannot reassign the object
 ```
 
-<img alt="js-const example 3 source" src="./code_sandbox/snaps/js-const-03-code.png" />
+![js-const example 3 source](./code_sandbox/snaps/js-const-03-code.png)
 
-<img alt="js-const example 3 result" src="./code_sandbox/snaps/js-const-03-result.png" />
+![js-const example 3 result](./code_sandbox/snaps/js-const-03-result.png)
 
 - [x] **Outcome:** the object updates to **type=Fiat, color=red, owner=Johnson**; reassigning the object reports **TypeError**.
 
@@ -2084,9 +2084,9 @@ y; // ReferenceError: temporal dead zone
 const y = 5;
 ```
 
-<img alt="js-const example 4 source" src="./code_sandbox/snaps/js-const-04-code.png" />
+![js-const example 4 source](./code_sandbox/snaps/js-const-04-code.png)
 
-<img alt="js-const example 4 result" src="./code_sandbox/snaps/js-const-04-result.png" />
+![js-const example 4 result](./code_sandbox/snaps/js-const-04-result.png)
 
 - [x] **Outcome:** outer `x` stays **10** while the block's `x` is **2**, and touching `y` before its declaration raises **ReferenceError**.
 
@@ -2248,9 +2248,9 @@ typeof null; // "object"  (historic quirk)
 typeof undefined; // "undefined"
 ```
 
-<img alt="js-types example 1 source" src="./code_sandbox/snaps/js-types-01-code.png" />
+![js-types example 1 source](./code_sandbox/snaps/js-types-01-code.png)
 
-<img alt="js-types example 1 result" src="./code_sandbox/snaps/js-types-01-result.png" />
+![js-types example 1 result](./code_sandbox/snaps/js-types-01-result.png)
 
 - [x] **Outcome:** each value prints its type; note `[1,2,3]` and `null` both come back as **object**, while `undefined` is its own type.
 
@@ -2273,9 +2273,9 @@ let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
 ```
 
-<img alt="js-types example 2 source" src="./code_sandbox/snaps/js-types-02-code.png" />
+![js-types example 2 source](./code_sandbox/snaps/js-types-02-code.png)
 
-<img alt="js-types example 2 result" src="./code_sandbox/snaps/js-types-02-result.png" />
+![js-types example 2 result](./code_sandbox/snaps/js-types-02-result.png)
 
 - [x] **Outcome:** all five strings print intact, including the ones with an inner apostrophe or inner quotes.
 
@@ -2298,9 +2298,9 @@ let z = 123e-5; // scientific -> 0.00123
 let big = 9999999999999999; // beyond safe integer -> rounds
 ```
 
-<img alt="js-types example 3 source" src="./code_sandbox/snaps/js-types-03-code.png" />
+![js-types example 3 source](./code_sandbox/snaps/js-types-03-code.png)
 
-<img alt="js-types example 3 result" src="./code_sandbox/snaps/js-types-03-result.png" />
+![js-types example 3 result](./code_sandbox/snaps/js-types-03-result.png)
 
 - [x] **Outcome:** `34.00` and `34` both show **34**, the `e` forms expand to **12300000** and **0.00123**, and the huge integer rounds to **10000000000000000**.
 
@@ -2325,9 +2325,9 @@ typeof carEmpty; // "string"
 typeof null; // "object" (known quirk)
 ```
 
-<img alt="js-types example 4 source" src="./code_sandbox/snaps/js-types-04-code.png" />
+![js-types example 4 source](./code_sandbox/snaps/js-types-04-code.png)
 
-<img alt="js-types example 4 result" src="./code_sandbox/snaps/js-types-04-result.png" />
+![js-types example 4 result](./code_sandbox/snaps/js-types-04-result.png)
 
 - [x] **Outcome:** `10 > 9` is **true**, `10 > 11` is **false**, an unassigned variable is **undefined**, and `""` still reports type **string** — distinct from `undefined`.
 
@@ -2502,9 +2502,9 @@ let y = 5;
 y--; // 4  decrement
 ```
 
-<img alt="js-operators example 1 source" src="./code_sandbox/snaps/js-operators-01-code.png" />
+![js-operators example 1 source](./code_sandbox/snaps/js-operators-01-code.png)
 
-<img alt="js-operators example 1 result" src="./code_sandbox/snaps/js-operators-01-result.png" />
+![js-operators example 1 result](./code_sandbox/snaps/js-operators-01-result.png)
 
 - [x] **Outcome:** `13, 7, 30, 3.333…, 1, 1000`, and the counters become **6** and **4**.
 
@@ -2527,9 +2527,9 @@ x %= 4; // %=   x is 2
 x **= 3; // **=  x is 8
 ```
 
-<img alt="js-operators example 2 source" src="./code_sandbox/snaps/js-operators-02-code.png" />
+![js-operators example 2 source](./code_sandbox/snaps/js-operators-02-code.png)
 
-<img alt="js-operators example 2 result" src="./code_sandbox/snaps/js-operators-02-result.png" />
+![js-operators example 2 result](./code_sandbox/snaps/js-operators-02-result.png)
 
 - [x] **Outcome:** `x` walks through **10 → 15 → 12 → 24 → 6 → 2 → 8**.
 
@@ -2553,9 +2553,9 @@ Sandbox: `code_sandbox/js-operators/comparison.html`
 !(10 > 5); // false  !  NOT
 ```
 
-<img alt="js-operators example 3 source" src="./code_sandbox/snaps/js-operators-03-code.png" />
+![js-operators example 3 source](./code_sandbox/snaps/js-operators-03-code.png)
 
-<img alt="js-operators example 3 result" src="./code_sandbox/snaps/js-operators-03-result.png" />
+![js-operators example 3 result](./code_sandbox/snaps/js-operators-03-result.png)
 
 - [x] **Outcome:** loose `==` is **true** while strict `===` is **false**; the AND/OR expressions are **true** and the NOT flips to **false**.
 
@@ -2581,9 +2581,9 @@ greet += " World"; // "Hello World"  append with +=
 "Hello" + 5; // "Hello5" string + number -> string
 ```
 
-<img alt="js-operators example 4 source" src="./code_sandbox/snaps/js-operators-04-code.png" />
+![js-operators example 4 source](./code_sandbox/snaps/js-operators-04-code.png)
 
-<img alt="js-operators example 4 result" src="./code_sandbox/snaps/js-operators-04-result.png" />
+![js-operators example 4 result](./code_sandbox/snaps/js-operators-04-result.png)
 
 - [x] **Outcome:** the names join to **John Doe**, `greet` becomes **Hello World**, and mixing a string with a number concatenates (**55**, **Hello5**) while pure numbers add to **10**.
 
@@ -2744,9 +2744,9 @@ a * b; // 5000  *  multiply
 a / b; // 2     /  divide
 ```
 
-<img alt="js-arithmetic example 1 source" src="./code_sandbox/snaps/js-arithmetic-01-code.png" />
+![js-arithmetic example 1 source](./code_sandbox/snaps/js-arithmetic-01-code.png)
 
-<img alt="js-arithmetic example 1 result" src="./code_sandbox/snaps/js-arithmetic-01-result.png" />
+![js-arithmetic example 1 result](./code_sandbox/snaps/js-arithmetic-01-result.png)
 
 - [x] **Outcome:** `150, 50, 5000, 2`.
 
@@ -2769,9 +2769,9 @@ Sandbox: `code_sandbox/js-arithmetic/modulus.html`
 Math.pow(5, 2); // 25  same as 5 ** 2
 ```
 
-<img alt="js-arithmetic example 2 source" src="./code_sandbox/snaps/js-arithmetic-02-code.png" />
+![js-arithmetic example 2 source](./code_sandbox/snaps/js-arithmetic-02-code.png)
 
-<img alt="js-arithmetic example 2 result" src="./code_sandbox/snaps/js-arithmetic-02-result.png" />
+![js-arithmetic example 2 result](./code_sandbox/snaps/js-arithmetic-02-result.png)
 
 - [x] **Outcome:** the remainders are `1, 1, 0`, and the powers are `25, 1024`, with `Math.pow(5,2)` matching `5 ** 2`.
 
@@ -2795,9 +2795,9 @@ let z = 8;
 z--; // decrement: z becomes 7
 ```
 
-<img alt="js-arithmetic example 3 source" src="./code_sandbox/snaps/js-arithmetic-03-code.png" />
+![js-arithmetic example 3 source](./code_sandbox/snaps/js-arithmetic-03-code.png)
 
-<img alt="js-arithmetic example 3 result" src="./code_sandbox/snaps/js-arithmetic-03-result.png" />
+![js-arithmetic example 3 result](./code_sandbox/snaps/js-arithmetic-03-result.png)
 
 - [x] **Outcome:** `x++` returned **5** (x is now 6), `++y` returned **6** (y is now 6), and `z--` left `z` at **7**.
 
@@ -2817,9 +2817,9 @@ Sandbox: `code_sandbox/js-arithmetic/precedence.html`
 2 ** (3 ** 2); // 512   ** is right to left: 2 ** (3 ** 2)
 ```
 
-<img alt="js-arithmetic example 4 source" src="./code_sandbox/snaps/js-arithmetic-04-code.png" />
+![js-arithmetic example 4 source](./code_sandbox/snaps/js-arithmetic-04-code.png)
 
-<img alt="js-arithmetic example 4 result" src="./code_sandbox/snaps/js-arithmetic-04-result.png" />
+![js-arithmetic example 4 result](./code_sandbox/snaps/js-arithmetic-04-result.png)
 
 - [x] **Outcome:** `250, 450, 147, 512` — precedence and associativity in action.
 
@@ -2976,9 +2976,9 @@ let y = 5;
 let z = 10 + y;
 ```
 
-<img alt="js-assignment example 1 source" src="./code_sandbox/snaps/js-assignment-01-code.png" />
+![js-assignment example 1 source](./code_sandbox/snaps/js-assignment-01-code.png)
 
-<img alt="js-assignment example 1 result" src="./code_sandbox/snaps/js-assignment-01-result.png" />
+![js-assignment example 1 result](./code_sandbox/snaps/js-assignment-01-result.png)
 
 - [x] **Outcome:** `x` is **10**, `y` is **5**, and `z` is **15**.
 
@@ -2996,9 +2996,9 @@ let x = 10;
 x += 5;
 ```
 
-<img alt="js-assignment example 2 source" src="./code_sandbox/snaps/js-assignment-02-code.png" />
+![js-assignment example 2 source](./code_sandbox/snaps/js-assignment-02-code.png)
 
-<img alt="js-assignment example 2 result" src="./code_sandbox/snaps/js-assignment-02-result.png" />
+![js-assignment example 2 result](./code_sandbox/snaps/js-assignment-02-result.png)
 
 - [x] **Outcome:** after `x += 5`, `x` is **15**.
 
@@ -3024,9 +3024,9 @@ let c = 10; c /= 5;   // 2
 let d = 10; d %= 5;   // 0
 ```
 
-<img alt="js-assignment example 3 source" src="./code_sandbox/snaps/js-assignment-03-code.png" />
+![js-assignment example 3 source](./code_sandbox/snaps/js-assignment-03-code.png)
 
-<img alt="js-assignment example 3 result" src="./code_sandbox/snaps/js-assignment-03-result.png" />
+![js-assignment example 3 result](./code_sandbox/snaps/js-assignment-03-result.png)
 
 - [x] **Outcome:** the five results are **5, 50, 100000, 2, 0**.
 
@@ -3044,9 +3044,9 @@ let text = "Hello";
 text += " World";
 ```
 
-<img alt="js-assignment example 4 source" src="./code_sandbox/snaps/js-assignment-04-code.png" />
+![js-assignment example 4 source](./code_sandbox/snaps/js-assignment-04-code.png)
 
-<img alt="js-assignment example 4 result" src="./code_sandbox/snaps/js-assignment-04-result.png" />
+![js-assignment example 4 result](./code_sandbox/snaps/js-assignment-04-result.png)
 
 - [x] **Outcome:** `text` starts as **Hello** and becomes **Hello World** after `+=`.
 
@@ -3069,9 +3069,9 @@ let x = undefined; let y = x &&= 10;
 let x = null;      let y = x &&= 10;
 ```
 
-<img alt="js-assignment example 5 source" src="./code_sandbox/snaps/js-assignment-05-code.png" />
+![js-assignment example 5 source](./code_sandbox/snaps/js-assignment-05-code.png)
 
-<img alt="js-assignment example 5 result" src="./code_sandbox/snaps/js-assignment-05-result.png" />
+![js-assignment example 5 result](./code_sandbox/snaps/js-assignment-05-result.png)
 
 - [x] **Outcome:** truthy `x` becomes **10**; falsy `x` stays `false`, `0`, `undefined`, or `null`. `y` matches `x` in every row.
 
@@ -3092,9 +3092,9 @@ let x = null;      let y = x ||= 10;
 let x = undefined; let y = x ||= 10;
 ```
 
-<img alt="js-assignment example 6 source" src="./code_sandbox/snaps/js-assignment-06-code.png" />
+![js-assignment example 6 source](./code_sandbox/snaps/js-assignment-06-code.png)
 
-<img alt="js-assignment example 6 result" src="./code_sandbox/snaps/js-assignment-06-result.png" />
+![js-assignment example 6 result](./code_sandbox/snaps/js-assignment-06-result.png)
 
 - [x] **Outcome:** `false` / `null` / `undefined` become **10**; `true` stays **true**.
 
@@ -3116,9 +3116,9 @@ let d = undefined; d ??= 10;
 let x = 10; let y = 5; x ??= 10;
 ```
 
-<img alt="js-assignment example 7 source" src="./code_sandbox/snaps/js-assignment-07-code.png" />
+![js-assignment example 7 source](./code_sandbox/snaps/js-assignment-07-code.png)
 
-<img alt="js-assignment example 7 result" src="./code_sandbox/snaps/js-assignment-07-result.png" />
+![js-assignment example 7 result](./code_sandbox/snaps/js-assignment-07-result.png)
 
 - [x] **Outcome:** `a`, `c`, and `d` become **10**; `b` stays **0**; `x` stays **10**.
 
@@ -3137,9 +3137,9 @@ let min = Math.min(...text);
 let max = Math.max(...text);
 ```
 
-<img alt="js-assignment example 8 source" src="./code_sandbox/snaps/js-assignment-08-code.png" />
+![js-assignment example 8 source](./code_sandbox/snaps/js-assignment-08-code.png)
 
-<img alt="js-assignment example 8 result" src="./code_sandbox/snaps/js-assignment-08-result.png" />
+![js-assignment example 8 result](./code_sandbox/snaps/js-assignment-08-result.png)
 
 - [x] **Outcome:** `Math.min(...text)` is **1** and `Math.max(...text)` is **5**.
 
@@ -3328,9 +3328,9 @@ x === 5;    // true
 x === "5";  // false  (strict)
 ```
 
-<img alt="js-comparisons example 1 source" src="./code_sandbox/snaps/js-comparisons-01-code.png" />
+![js-comparisons example 1 source](./code_sandbox/snaps/js-comparisons-01-code.png)
 
-<img alt="js-comparisons example 1 result" src="./code_sandbox/snaps/js-comparisons-01-result.png" />
+![js-comparisons example 1 result](./code_sandbox/snaps/js-comparisons-01-result.png)
 
 - [x] **Outcome:** loose `== "5"` is **true**; strict `=== "5"` is **false**.
 
@@ -3356,9 +3356,9 @@ x >= 8;     // false
 x <= 8;     // true
 ```
 
-<img alt="js-comparisons example 2 source" src="./code_sandbox/snaps/js-comparisons-02-code.png" />
+![js-comparisons example 2 source](./code_sandbox/snaps/js-comparisons-02-code.png)
 
-<img alt="js-comparisons example 2 result" src="./code_sandbox/snaps/js-comparisons-02-result.png" />
+![js-comparisons example 2 result](./code_sandbox/snaps/js-comparisons-02-result.png)
 
 - [x] **Outcome:** `!= 8` is **true**; `!== 5` is **false**; `!== "5"` is **true**; `x < 8` and `x <= 8` are **true**; `x > 8` and `x >= 8` are **false**.
 
@@ -3381,9 +3381,9 @@ let n2 = "5";
 n1 < n2;  // true  ("2" before "5")
 ```
 
-<img alt="js-comparisons example 3 source" src="./code_sandbox/snaps/js-comparisons-03-code.png" />
+![js-comparisons example 3 source](./code_sandbox/snaps/js-comparisons-03-code.png)
 
-<img alt="js-comparisons example 3 result" src="./code_sandbox/snaps/js-comparisons-03-result.png" />
+![js-comparisons example 3 result](./code_sandbox/snaps/js-comparisons-03-result.png)
 
 - [x] **Outcome:** `"A" < "B"` is **true**, and `"20" < "5"` is **true** (text order, not numeric order).
 
@@ -3409,9 +3409,9 @@ Sandbox: `code_sandbox/js-comparisons/types.html`
 "2" == "12"     // false
 ```
 
-<img alt="js-comparisons example 4 source" src="./code_sandbox/snaps/js-comparisons-04-code.png" />
+![js-comparisons example 4 source](./code_sandbox/snaps/js-comparisons-04-code.png)
 
-<img alt="js-comparisons example 4 result" src="./code_sandbox/snaps/js-comparisons-04-result.png" />
+![js-comparisons example 4 result](./code_sandbox/snaps/js-comparisons-04-result.png)
 
 - [x] **Outcome:** mixed number/numeric-string works (`2 < "12"` **true**); `"John"` yields **false**; two strings sort alphabetically (`"2" > "12"` **true**).
 
@@ -3434,9 +3434,9 @@ if (isNaN(age)) {
 }
 ```
 
-<img alt="js-comparisons example 5 source" src="./code_sandbox/snaps/js-comparisons-05-code.png" />
+![js-comparisons example 5 source](./code_sandbox/snaps/js-comparisons-05-code.png)
 
-<img alt="js-comparisons example 5 result" src="./code_sandbox/snaps/js-comparisons-05-result.png" />
+![js-comparisons example 5 result](./code_sandbox/snaps/js-comparisons-05-result.png)
 
 - [x] **Outcome:** `16` → **Too young**; `"21"` → **Old enough**; `"John"` → **Input is not a number**.
 
@@ -3610,9 +3610,9 @@ if (hour < 18) {
 }
 ```
 
-<img alt="js-conditional example 1 source" src="./code_sandbox/snaps/js-conditional-01-code.png" />
+![js-conditional example 1 source](./code_sandbox/snaps/js-conditional-01-code.png)
 
-<img alt="js-conditional example 1 result" src="./code_sandbox/snaps/js-conditional-01-result.png" />
+![js-conditional example 1 result](./code_sandbox/snaps/js-conditional-01-result.png)
 
 - [x] **Outcome:** With **hour = 10**, `hour < 18` is **true**, so greeting is **Good day**.
 
@@ -3636,9 +3636,9 @@ if (hour < 18) {
 }
 ```
 
-<img alt="js-conditional example 2 source" src="./code_sandbox/snaps/js-conditional-02-code.png" />
+![js-conditional example 2 source](./code_sandbox/snaps/js-conditional-02-code.png)
 
-<img alt="js-conditional example 2 result" src="./code_sandbox/snaps/js-conditional-02-result.png" />
+![js-conditional example 2 result](./code_sandbox/snaps/js-conditional-02-result.png)
 
 - [x] **Outcome:** With **hour = 20**, `hour < 18` is **false**, so the `else` branch runs and greeting is **Good evening**.
 
@@ -3665,9 +3665,9 @@ if (hour < 10) {
 }
 ```
 
-<img alt="js-conditional example 3 source" src="./code_sandbox/snaps/js-conditional-03-code.png" />
+![js-conditional example 3 source](./code_sandbox/snaps/js-conditional-03-code.png)
 
-<img alt="js-conditional example 3 result" src="./code_sandbox/snaps/js-conditional-03-result.png" />
+![js-conditional example 3 result](./code_sandbox/snaps/js-conditional-03-result.png)
 
 - [x] **Outcome:** With **hour = 8**, the first test `hour < 10` is **true**, so greeting is **Good morning**. The `else if` and `else` blocks do not run.
 
@@ -3697,9 +3697,9 @@ switch (dayNum) {
 }
 ```
 
-<img alt="js-conditional example 4 source" src="./code_sandbox/snaps/js-conditional-04-code.png" />
+![js-conditional example 4 source](./code_sandbox/snaps/js-conditional-04-code.png)
 
-<img alt="js-conditional example 4 result" src="./code_sandbox/snaps/js-conditional-04-result.png" />
+![js-conditional example 4 result](./code_sandbox/snaps/js-conditional-04-result.png)
 
 - [x] **Outcome:** With **dayNum = 3**, `case 3` matches, `break` exits the switch, and day is **Wednesday**.
 
@@ -3719,9 +3719,9 @@ let hour = 10;
 let greeting = (hour < 18) ? "Good day" : "Good evening";
 ```
 
-<img alt="js-conditional example 5 source" src="./code_sandbox/snaps/js-conditional-05-code.png" />
+![js-conditional example 5 source](./code_sandbox/snaps/js-conditional-05-code.png)
 
-<img alt="js-conditional example 5 result" src="./code_sandbox/snaps/js-conditional-05-result.png" />
+![js-conditional example 5 result](./code_sandbox/snaps/js-conditional-05-result.png)
 
 - [x] **Outcome:** **hour 10** → **Good day** (condition true). **hour 20** → **Good evening** (condition false).
 
@@ -3897,9 +3897,9 @@ if (hour < 18) {
 }
 ```
 
-<img alt="js-if-conditions example 1 source" src="./code_sandbox/snaps/js-if-conditions-01-code.png" />
+![js-if-conditions example 1 source](./code_sandbox/snaps/js-if-conditions-01-code.png)
 
-<img alt="js-if-conditions example 1 result" src="./code_sandbox/snaps/js-if-conditions-01-result.png" />
+![js-if-conditions example 1 result](./code_sandbox/snaps/js-if-conditions-01-result.png)
 
 - [x] **Outcome:** **hour = 10** makes `hour < 18` **true**, so greeting is **Good day**.
 
@@ -3921,9 +3921,9 @@ if (age >= 18) {
 }
 ```
 
-<img alt="js-if-conditions example 2 source" src="./code_sandbox/snaps/js-if-conditions-02-code.png" />
+![js-if-conditions example 2 source](./code_sandbox/snaps/js-if-conditions-02-code.png)
 
-<img alt="js-if-conditions example 2 result" src="./code_sandbox/snaps/js-if-conditions-02-result.png" />
+![js-if-conditions example 2 result](./code_sandbox/snaps/js-if-conditions-02-result.png)
 
 - [x] **Outcome:** With **age = 18**, the `if` runs and text is **You can drive**.
 
@@ -3945,9 +3945,9 @@ if (age >= 18) {
 }
 ```
 
-<img alt="js-if-conditions example 3 source" src="./code_sandbox/snaps/js-if-conditions-03-code.png" />
+![js-if-conditions example 3 source](./code_sandbox/snaps/js-if-conditions-03-code.png)
 
-<img alt="js-if-conditions example 3 result" src="./code_sandbox/snaps/js-if-conditions-03-result.png" />
+![js-if-conditions example 3 result](./code_sandbox/snaps/js-if-conditions-03-result.png)
 
 - [x] **Outcome:** With **age = 16**, the `if` does not run, so text stays **You can Not drive**.
 
@@ -3973,9 +3973,9 @@ if (country == "USA") {
 }
 ```
 
-<img alt="js-if-conditions example 4 source" src="./code_sandbox/snaps/js-if-conditions-04-code.png" />
+![js-if-conditions example 4 source](./code_sandbox/snaps/js-if-conditions-04-code.png)
 
-<img alt="js-if-conditions example 4 result" src="./code_sandbox/snaps/js-if-conditions-04-result.png" />
+![js-if-conditions example 4 result](./code_sandbox/snaps/js-if-conditions-04-result.png)
 
 - [x] **Outcome:** **USA** and **age 16** both pass, so nested `if` sets text to **You can drive!**.
 
@@ -3999,9 +3999,9 @@ if (country == "USA" && age >= 16) {
 }
 ```
 
-<img alt="js-if-conditions example 5 source" src="./code_sandbox/snaps/js-if-conditions-05-code.png" />
+![js-if-conditions example 5 source](./code_sandbox/snaps/js-if-conditions-05-code.png)
 
-<img alt="js-if-conditions example 5 result" src="./code_sandbox/snaps/js-if-conditions-05-result.png" />
+![js-if-conditions example 5 result](./code_sandbox/snaps/js-if-conditions-05-result.png)
 
 - [x] **Outcome:** **`&&`** is true for **USA** and **age 16**, so text is **You can drive!** — same outcome as the nested `if`, with one condition.
 
@@ -4177,9 +4177,9 @@ for (let i = 0; i < cars.length; i++) {
 }
 ```
 
-<img alt="js-loops example 1 source" src="./code_sandbox/snaps/js-loops-01-code.png" />
+![js-loops example 1 source](./code_sandbox/snaps/js-loops-01-code.png)
 
-<img alt="js-loops example 1 result" src="./code_sandbox/snaps/js-loops-01-result.png" />
+![js-loops example 1 result](./code_sandbox/snaps/js-loops-01-result.png)
 
 - [x] **Outcome:** The loop concatenates all six names: **BMW Volvo Saab Ford Fiat Audi**.
 
@@ -4200,9 +4200,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-<img alt="js-loops example 2 source" src="./code_sandbox/snaps/js-loops-02-code.png" />
+![js-loops example 2 source](./code_sandbox/snaps/js-loops-02-code.png)
 
-<img alt="js-loops example 2 result" src="./code_sandbox/snaps/js-loops-02-result.png" />
+![js-loops example 2 result](./code_sandbox/snaps/js-loops-02-result.png)
 
 - [x] **Outcome:** The joined text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
 
@@ -4224,9 +4224,9 @@ for (i = 0; i < 10; i++) {
 // Here i is 10
 ```
 
-<img alt="js-loops example 3 source" src="./code_sandbox/snaps/js-loops-03-code.png" />
+![js-loops example 3 source](./code_sandbox/snaps/js-loops-03-code.png)
 
-<img alt="js-loops example 3 result" src="./code_sandbox/snaps/js-loops-03-result.png" />
+![js-loops example 3 result](./code_sandbox/snaps/js-loops-03-result.png)
 
 - [x] **Outcome:** Outer **i** started at **5**. After `for (i = 0; i < 10; i++)`, **i is 10**.
 
@@ -4248,9 +4248,9 @@ for (let i = 0; i < 10; i++) {
 // Here i is 5
 ```
 
-<img alt="js-loops example 4 source" src="./code_sandbox/snaps/js-loops-04-code.png" />
+![js-loops example 4 source](./code_sandbox/snaps/js-loops-04-code.png)
 
-<img alt="js-loops example 4 result" src="./code_sandbox/snaps/js-loops-04-result.png" />
+![js-loops example 4 result](./code_sandbox/snaps/js-loops-04-result.png)
 
 - [x] **Outcome:** After the loop, the **outer** `i` is still **5**. The header `let i` was loop-scoped.
 
@@ -4273,9 +4273,9 @@ while (i < 10) {
 }
 ```
 
-<img alt="js-loops example 5 source" src="./code_sandbox/snaps/js-loops-05-code.png" />
+![js-loops example 5 source](./code_sandbox/snaps/js-loops-05-code.png)
 
-<img alt="js-loops example 5 result" src="./code_sandbox/snaps/js-loops-05-result.png" />
+![js-loops example 5 result](./code_sandbox/snaps/js-loops-05-result.png)
 
 - [x] **Outcome:** The loop prints **The number is 0** … **The number is 9**. After it ends, **i is 10**. Forgetting `i++` would infinite-loop — do **not** run that.
 
@@ -4299,9 +4299,9 @@ do {
 } while (i < 10);
 ```
 
-<img alt="js-loops example 6 source" src="./code_sandbox/snaps/js-loops-06-code.png" />
+![js-loops example 6 source](./code_sandbox/snaps/js-loops-06-code.png)
 
-<img alt="js-loops example 6 result" src="./code_sandbox/snaps/js-loops-06-result.png" />
+![js-loops example 6 result](./code_sandbox/snaps/js-loops-06-result.png)
 
 - [x] **Outcome:** Start **0** prints **The number is 0** … **The number is 9**. Start **10** still runs **once** → **The number is 10**.
 
@@ -4478,9 +4478,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-<img alt="js-loop-for example 1 source" src="./code_sandbox/snaps/js-loop-for-01-code.png" />
+![js-loop-for example 1 source](./code_sandbox/snaps/js-loop-for-01-code.png)
 
-<img alt="js-loop-for example 1 result" src="./code_sandbox/snaps/js-loop-for-01-result.png" />
+![js-loop-for example 1 result](./code_sandbox/snaps/js-loop-for-01-result.png)
 
 - [x] **Outcome:** The text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
 
@@ -4503,9 +4503,9 @@ for (let i = 0; i < len; i++) {
 }
 ```
 
-<img alt="js-loop-for example 2 source" src="./code_sandbox/snaps/js-loop-for-02-code.png" />
+![js-loop-for example 2 source](./code_sandbox/snaps/js-loop-for-02-code.png)
 
-<img alt="js-loop-for example 2 result" src="./code_sandbox/snaps/js-loop-for-02-result.png" />
+![js-loop-for example 2 result](./code_sandbox/snaps/js-loop-for-02-result.png)
 
 - [x] **Outcome:** The collected string is **BMWVolvoSaabFord** (no spaces). **len** is **4**.
 
@@ -4529,9 +4529,9 @@ for (; i < len; i++) {
 }
 ```
 
-<img alt="js-loop-for example 3 source" src="./code_sandbox/snaps/js-loop-for-03-code.png" />
+![js-loop-for example 3 source](./code_sandbox/snaps/js-loop-for-03-code.png)
 
-<img alt="js-loop-for example 3 result" src="./code_sandbox/snaps/js-loop-for-03-result.png" />
+![js-loop-for example 3 result](./code_sandbox/snaps/js-loop-for-03-result.png)
 
 - [x] **Outcome:** Starting at index **2** collects **Saab Ford**.
 
@@ -4556,9 +4556,9 @@ for (; i < len; ) {
 }
 ```
 
-<img alt="js-loop-for example 4 source" src="./code_sandbox/snaps/js-loop-for-04-code.png" />
+![js-loop-for example 4 source](./code_sandbox/snaps/js-loop-for-04-code.png)
 
-<img alt="js-loop-for example 4 result" src="./code_sandbox/snaps/js-loop-for-04-result.png" />
+![js-loop-for example 4 result](./code_sandbox/snaps/js-loop-for-04-result.png)
 
 - [x] **Outcome:** Incrementing inside the body still collects **BMW Volvo Saab Ford**.
 
@@ -4580,9 +4580,9 @@ for (var i = 0; i < 10; i++) {
 // Here i is 10
 ```
 
-<img alt="js-loop-for example 5 source" src="./code_sandbox/snaps/js-loop-for-05-code.png" />
+![js-loop-for example 5 source](./code_sandbox/snaps/js-loop-for-05-code.png)
 
-<img alt="js-loop-for example 5 result" src="./code_sandbox/snaps/js-loop-for-05-result.png" />
+![js-loop-for example 5 result](./code_sandbox/snaps/js-loop-for-05-result.png)
 
 - [x] **Outcome:** **var i** started at **5** and is **10** after the loop — the header `var i` leaked.
 
@@ -4604,9 +4604,9 @@ for (let i = 0; i < 10; i++) {
 // Here i is 5
 ```
 
-<img alt="js-loop-for example 6 source" src="./code_sandbox/snaps/js-loop-for-06-code.png" />
+![js-loop-for example 6 source](./code_sandbox/snaps/js-loop-for-06-code.png)
 
-<img alt="js-loop-for example 6 result" src="./code_sandbox/snaps/js-loop-for-06-result.png" />
+![js-loop-for example 6 result](./code_sandbox/snaps/js-loop-for-06-result.png)
 
 - [x] **Outcome:** Outer **let i** stays **5**. The loop `let i` did **not** leak.
 
@@ -4781,9 +4781,9 @@ while (i < 10) {
 }
 ```
 
-<img alt="js-loop-while example 1 source" src="./code_sandbox/snaps/js-loop-while-01-code.png" />
+![js-loop-while example 1 source](./code_sandbox/snaps/js-loop-while-01-code.png)
 
-<img alt="js-loop-while example 1 result" src="./code_sandbox/snaps/js-loop-while-01-result.png" />
+![js-loop-while example 1 result](./code_sandbox/snaps/js-loop-while-01-result.png)
 
 - [x] **Outcome:** **The number is 0** through **The number is 9**. After the loop, **i is 10**.
 
@@ -4806,9 +4806,9 @@ do {
 } while (i < 10);
 ```
 
-<img alt="js-loop-while example 2 source" src="./code_sandbox/snaps/js-loop-while-02-code.png" />
+![js-loop-while example 2 source](./code_sandbox/snaps/js-loop-while-02-code.png)
 
-<img alt="js-loop-while example 2 result" src="./code_sandbox/snaps/js-loop-while-02-result.png" />
+![js-loop-while example 2 result](./code_sandbox/snaps/js-loop-while-02-result.png)
 
 - [x] **Outcome:** Start **0** → **The number is 0** … **The number is 9**. Start **10** still runs once → **The number is 10**.
 
@@ -4832,9 +4832,9 @@ for (; cars[i]; ) {
 }
 ```
 
-<img alt="js-loop-while example 3 source" src="./code_sandbox/snaps/js-loop-while-03-code.png" />
+![js-loop-while example 3 source](./code_sandbox/snaps/js-loop-while-03-code.png)
 
-<img alt="js-loop-while example 3 result" src="./code_sandbox/snaps/js-loop-while-03-result.png" />
+![js-loop-while example 3 result](./code_sandbox/snaps/js-loop-while-03-result.png)
 
 - [x] **Outcome:** The `for (; cars[i]; )` collector builds **BMWVolvoSaabFord** and stops when `cars[i]` is **undefined** (`i` is **4**).
 
@@ -4858,9 +4858,9 @@ while (cars[i]) {
 }
 ```
 
-<img alt="js-loop-while example 4 source" src="./code_sandbox/snaps/js-loop-while-04-code.png" />
+![js-loop-while example 4 source](./code_sandbox/snaps/js-loop-while-04-code.png)
 
-<img alt="js-loop-while example 4 result" src="./code_sandbox/snaps/js-loop-while-04-result.png" />
+![js-loop-while example 4 result](./code_sandbox/snaps/js-loop-while-04-result.png)
 
 - [x] **Outcome:** `while (cars[i])` also builds **BMWVolvoSaabFord** and stops at **i = 4**.
 
@@ -5035,9 +5035,9 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-<img alt="js-break example 1 source" src="./code_sandbox/snaps/js-break-01-code.png" />
+![js-break example 1 source](./code_sandbox/snaps/js-break-01-code.png)
 
-<img alt="js-break example 1 result" src="./code_sandbox/snaps/js-break-01-result.png" />
+![js-break example 1 result](./code_sandbox/snaps/js-break-01-result.png)
 
 - [x] **Outcome:** **break** at **i === 3** leaves **The number is 0 The number is 1 The number is 2**. **3** is not appended.
 
@@ -5065,9 +5065,9 @@ switch (dayNum) {
 }
 ```
 
-<img alt="js-break example 2 source" src="./code_sandbox/snaps/js-break-02-code.png" />
+![js-break example 2 source](./code_sandbox/snaps/js-break-02-code.png)
 
-<img alt="js-break example 2 result" src="./code_sandbox/snaps/js-break-02-result.png" />
+![js-break example 2 result](./code_sandbox/snaps/js-break-02-result.png)
 
 - [x] **Outcome:** **dayNum = 3** matches **case 3**, `break` exits, and day is **Wednesday**.
 
@@ -5093,9 +5093,9 @@ loop1: for (let j = 1; j < 5; j++) {
 }
 ```
 
-<img alt="js-break example 3 source" src="./code_sandbox/snaps/js-break-03-code.png" />
+![js-break example 3 source](./code_sandbox/snaps/js-break-03-code.png)
 
-<img alt="js-break example 3 result" src="./code_sandbox/snaps/js-break-03-result.png" />
+![js-break example 3 result](./code_sandbox/snaps/js-break-03-result.png)
 
 - [x] **Outcome:** `break loop1` at **i === 3** stops **both** loops. text is **12**.
 
@@ -5121,9 +5121,9 @@ loop1: for (let j = 1; j < 5; j++) {
 }
 ```
 
-<img alt="js-break example 4 source" src="./code_sandbox/snaps/js-break-04-code.png" />
+![js-break example 4 source](./code_sandbox/snaps/js-break-04-code.png)
 
-<img alt="js-break example 4 result" src="./code_sandbox/snaps/js-break-04-result.png" />
+![js-break example 4 result](./code_sandbox/snaps/js-break-04-result.png)
 
 - [x] **Outcome:** `break loop2` stops only the **inner** loop. Four outer passes produce **12121212**.
 
@@ -5150,9 +5150,9 @@ list: {
 }
 ```
 
-<img alt="js-break example 5 source" src="./code_sandbox/snaps/js-break-05-code.png" />
+![js-break example 5 source](./code_sandbox/snaps/js-break-05-code.png)
 
-<img alt="js-break example 5 result" src="./code_sandbox/snaps/js-break-05-result.png" />
+![js-break example 5 result](./code_sandbox/snaps/js-break-05-result.png)
 
 - [x] **Outcome:** `break list` after the second name leaves **BMW Volvo**. Saab and Ford are skipped.
 
@@ -5330,9 +5330,9 @@ for (let i = 1; i < 10; i++) {
 }
 ```
 
-<img alt="js-continue example 1 source" src="./code_sandbox/snaps/js-continue-01-code.png" />
+![js-continue example 1 source](./code_sandbox/snaps/js-continue-01-code.png)
 
-<img alt="js-continue example 1 result" src="./code_sandbox/snaps/js-continue-01-result.png" />
+![js-continue example 1 result](./code_sandbox/snaps/js-continue-01-result.png)
 
 - [x] **Outcome:** `continue` at **i === 3** skips that pass only. The text is **The number is 1 The number is 2 The number is 4 The number is 5 The number is 6 The number is 7 The number is 8 The number is 9**.
 
@@ -5359,9 +5359,9 @@ loop1: for (let j = 1; j < 5; j++) {
 }
 ```
 
-<img alt="js-continue example 2 source" src="./code_sandbox/snaps/js-continue-02-code.png" />
+![js-continue example 2 source](./code_sandbox/snaps/js-continue-02-code.png)
 
-<img alt="js-continue example 2 result" src="./code_sandbox/snaps/js-continue-02-result.png" />
+![js-continue example 2 result](./code_sandbox/snaps/js-continue-02-result.png)
 
 - [x] **Outcome:** `continue loop1` at **i === 3** skips the rest of that **outer** pass. text is **12121212**.
 
@@ -5387,9 +5387,9 @@ loop1: for (let j = 1; j < 5; j++) {
 }
 ```
 
-<img alt="js-continue example 3 source" src="./code_sandbox/snaps/js-continue-03-code.png" />
+![js-continue example 3 source](./code_sandbox/snaps/js-continue-03-code.png)
 
-<img alt="js-continue example 3 result" src="./code_sandbox/snaps/js-continue-03-result.png" />
+![js-continue example 3 result](./code_sandbox/snaps/js-continue-03-result.png)
 
 - [x] **Outcome:** `continue loop2` skips only inner **3**. Each outer pass adds **124**, so text is **124124124124**.
 
@@ -5561,9 +5561,9 @@ let y = 6;
 let z = x + y;
 ```
 
-<img alt="js-control-flow example 1 source" src="./code_sandbox/snaps/js-control-flow-01-code.png" />
+![js-control-flow example 1 source](./code_sandbox/snaps/js-control-flow-01-code.png)
 
-<img alt="js-control-flow example 1 result" src="./code_sandbox/snaps/js-control-flow-01-result.png" />
+![js-control-flow example 1 result](./code_sandbox/snaps/js-control-flow-01-result.png)
 
 - [x] **Outcome:** Sequential assignment yields **x = 5**, **y = 6**, **z = 11**.
 
@@ -5587,9 +5587,9 @@ if (age >= 18) {
 }
 ```
 
-<img alt="js-control-flow example 2 source" src="./code_sandbox/snaps/js-control-flow-02-code.png" />
+![js-control-flow example 2 source](./code_sandbox/snaps/js-control-flow-02-code.png)
 
-<img alt="js-control-flow example 2 result" src="./code_sandbox/snaps/js-control-flow-02-result.png" />
+![js-control-flow example 2 result](./code_sandbox/snaps/js-control-flow-02-result.png)
 
 - [x] **Outcome:** **age 20** → **Adult**. The other branch **age 16** → **Minor**.
 
@@ -5610,9 +5610,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-<img alt="js-control-flow example 3 source" src="./code_sandbox/snaps/js-control-flow-03-code.png" />
+![js-control-flow example 3 source](./code_sandbox/snaps/js-control-flow-03-code.png)
 
-<img alt="js-control-flow example 3 result" src="./code_sandbox/snaps/js-control-flow-03-result.png" />
+![js-control-flow example 3 result](./code_sandbox/snaps/js-control-flow-03-result.png)
 
 - [x] **Outcome:** The loop text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
 
@@ -5636,9 +5636,9 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-<img alt="js-control-flow example 4 source" src="./code_sandbox/snaps/js-control-flow-04-code.png" />
+![js-control-flow example 4 source](./code_sandbox/snaps/js-control-flow-04-code.png)
 
-<img alt="js-control-flow example 4 result" src="./code_sandbox/snaps/js-control-flow-04-result.png" />
+![js-control-flow example 4 result](./code_sandbox/snaps/js-control-flow-04-result.png)
 
 - [x] **Outcome:** `break` at **i === 3** leaves **The number is 0 The number is 1 The number is 2**.
 
@@ -5659,9 +5659,9 @@ function myFunction(p1, p2) {
 myFunction(3, 4);
 ```
 
-<img alt="js-control-flow example 5 source" src="./code_sandbox/snaps/js-control-flow-05-code.png" />
+![js-control-flow example 5 source](./code_sandbox/snaps/js-control-flow-05-code.png)
 
-<img alt="js-control-flow example 5 result" src="./code_sandbox/snaps/js-control-flow-05-result.png" />
+![js-control-flow example 5 result](./code_sandbox/snaps/js-control-flow-05-result.png)
 
 - [x] **Outcome:** **myFunction(3, 4)** returns **12**. The function body runs only when it is **called**.
 
@@ -5853,9 +5853,9 @@ Sandbox: `code_sandbox/js-strings/quotes.html`
 let text = "John Doe";
 ```
 
-<img alt="js-strings example 1 source" src="./code_sandbox/snaps/js-strings-01-code.png" />
+![js-strings example 1 source](./code_sandbox/snaps/js-strings-01-code.png)
 
-<img alt="js-strings example 1 result" src="./code_sandbox/snaps/js-strings-01-result.png" />
+![js-strings example 1 result](./code_sandbox/snaps/js-strings-01-result.png)
 
 - [x] **Outcome:** The variable holds **John Doe**.
 
@@ -5873,9 +5873,9 @@ let carName1 = "Volvo XC60";
 let carName2 = 'Volvo XC60';
 ```
 
-<img alt="js-strings example 2 source" src="./code_sandbox/snaps/js-strings-02-code.png" />
+![js-strings example 2 source](./code_sandbox/snaps/js-strings-02-code.png)
 
-<img alt="js-strings example 2 result" src="./code_sandbox/snaps/js-strings-02-result.png" />
+![js-strings example 2 result](./code_sandbox/snaps/js-strings-02-result.png)
 
 - [x] **Outcome:** Both values are **Volvo XC60**; they compare equal.
 
@@ -5895,9 +5895,9 @@ let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
 ```
 
-<img alt="js-strings example 3 source" src="./code_sandbox/snaps/js-strings-03-code.png" />
+![js-strings example 3 source](./code_sandbox/snaps/js-strings-03-code.png)
 
-<img alt="js-strings example 3 result" src="./code_sandbox/snaps/js-strings-03-result.png" />
+![js-strings example 3 result](./code_sandbox/snaps/js-strings-03-result.png)
 
 - [x] **Outcome:** The three strings are **It's alright**, **He is called 'Johnny'**, and **He is called "Johnny"**.
 
@@ -5914,9 +5914,9 @@ Sandbox: `code_sandbox/js-strings/template-quotes.html`
 let text = `He's often called "Johnny"`;
 ```
 
-<img alt="js-strings example 4 source" src="./code_sandbox/snaps/js-strings-04-code.png" />
+![js-strings example 4 source](./code_sandbox/snaps/js-strings-04-code.png)
 
-<img alt="js-strings example 4 result" src="./code_sandbox/snaps/js-strings-04-result.png" />
+![js-strings example 4 result](./code_sandbox/snaps/js-strings-04-result.png)
 
 - [x] **Outcome:** The template prints **He's often called "Johnny"**.
 
@@ -5934,9 +5934,9 @@ let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length;
 ```
 
-<img alt="js-strings example 5 source" src="./code_sandbox/snaps/js-strings-05-code.png" />
+![js-strings example 5 source](./code_sandbox/snaps/js-strings-05-code.png)
 
-<img alt="js-strings example 5 result" src="./code_sandbox/snaps/js-strings-05-result.png" />
+![js-strings example 5 result](./code_sandbox/snaps/js-strings-05-result.png)
 
 - [x] **Outcome:** A-Z is **26** characters.
 
@@ -5953,9 +5953,9 @@ Sandbox: `code_sandbox/js-strings/escape-double.html`
 let text = "We are the so-called \"Vikings\" from the north.";
 ```
 
-<img alt="js-strings example 6 source" src="./code_sandbox/snaps/js-strings-06-code.png" />
+![js-strings example 6 source](./code_sandbox/snaps/js-strings-06-code.png)
 
-<img alt="js-strings example 6 result" src="./code_sandbox/snaps/js-strings-06-result.png" />
+![js-strings example 6 result](./code_sandbox/snaps/js-strings-06-result.png)
 
 - [x] **Outcome:** The printed text is **We are the so-called "Vikings" from the north.**
 
@@ -5972,9 +5972,9 @@ Sandbox: `code_sandbox/js-strings/escape-single.html`
 let text = 'It\'s alright.';
 ```
 
-<img alt="js-strings example 7 source" src="./code_sandbox/snaps/js-strings-07-code.png" />
+![js-strings example 7 source](./code_sandbox/snaps/js-strings-07-code.png)
 
-<img alt="js-strings example 7 result" src="./code_sandbox/snaps/js-strings-07-result.png" />
+![js-strings example 7 result](./code_sandbox/snaps/js-strings-07-result.png)
 
 - [x] **Outcome:** The printed text is **It's alright.**
 
@@ -5991,9 +5991,9 @@ Sandbox: `code_sandbox/js-strings/escape-backslash.html`
 let text = "The character \\ is called backslash.";
 ```
 
-<img alt="js-strings example 8 source" src="./code_sandbox/snaps/js-strings-08-code.png" />
+![js-strings example 8 source](./code_sandbox/snaps/js-strings-08-code.png)
 
-<img alt="js-strings example 8 result" src="./code_sandbox/snaps/js-strings-08-result.png" />
+![js-strings example 8 result](./code_sandbox/snaps/js-strings-08-result.png)
 
 - [x] **Outcome:** The printed text is **The character \ is called backslash.**
 
@@ -6011,9 +6011,9 @@ document.getElementById("demo").innerHTML =
 "Hello Dolly!";
 ```
 
-<img alt="js-strings example 9 source" src="./code_sandbox/snaps/js-strings-09-code.png" />
+![js-strings example 9 source](./code_sandbox/snaps/js-strings-09-code.png)
 
-<img alt="js-strings example 9 result" src="./code_sandbox/snaps/js-strings-09-result.png" />
+![js-strings example 9 result](./code_sandbox/snaps/js-strings-09-result.png)
 
 - [x] **Outcome:** The output is **Hello Dolly!**
 
@@ -6031,9 +6031,9 @@ document.getElementById("demo").innerHTML = "Hello " +
 "Dolly!";
 ```
 
-<img alt="js-strings example 10 source" src="./code_sandbox/snaps/js-strings-10-code.png" />
+![js-strings example 10 source](./code_sandbox/snaps/js-strings-10-code.png)
 
-<img alt="js-strings example 10 result" src="./code_sandbox/snaps/js-strings-10-result.png" />
+![js-strings example 10 result](./code_sandbox/snaps/js-strings-10-result.png)
 
 - [x] **Outcome:** The joined string is **Hello Dolly!**
 
@@ -6054,9 +6054,9 @@ jumps over
 the lazy dog`;
 ```
 
-<img alt="js-strings example 11 source" src="./code_sandbox/snaps/js-strings-11-code.png" />
+![js-strings example 11 source](./code_sandbox/snaps/js-strings-11-code.png)
 
-<img alt="js-strings example 11 result" src="./code_sandbox/snaps/js-strings-11-result.png" />
+![js-strings example 11 result](./code_sandbox/snaps/js-strings-11-result.png)
 
 - [x] **Outcome:** The string keeps the line breaks: **The quick / brown fox / jumps over / the lazy dog**.
 
@@ -6074,9 +6074,9 @@ let x = "John";
 let y = new String("John");
 ```
 
-<img alt="js-strings example 12 source" src="./code_sandbox/snaps/js-strings-12-code.png" />
+![js-strings example 12 source](./code_sandbox/snaps/js-strings-12-code.png)
 
-<img alt="js-strings example 12 result" src="./code_sandbox/snaps/js-strings-12-result.png" />
+![js-strings example 12 result](./code_sandbox/snaps/js-strings-12-result.png)
 
 - [x] **Outcome:** `x` is a **string** primitive; `y` is an **object**. Both display as **John**.
 
@@ -6095,9 +6095,9 @@ let y = new String("John");
 x == y;
 ```
 
-<img alt="js-strings example 13 source" src="./code_sandbox/snaps/js-strings-13-code.png" />
+![js-strings example 13 source](./code_sandbox/snaps/js-strings-13-code.png)
 
-<img alt="js-strings example 13 result" src="./code_sandbox/snaps/js-strings-13-result.png" />
+![js-strings example 13 result](./code_sandbox/snaps/js-strings-13-result.png)
 
 - [x] **Outcome:** `x == y` is **true**.
 
@@ -6116,9 +6116,9 @@ let y = new String("John");
 x === y;
 ```
 
-<img alt="js-strings example 14 source" src="./code_sandbox/snaps/js-strings-14-code.png" />
+![js-strings example 14 source](./code_sandbox/snaps/js-strings-14-code.png)
 
-<img alt="js-strings example 14 result" src="./code_sandbox/snaps/js-strings-14-result.png" />
+![js-strings example 14 result](./code_sandbox/snaps/js-strings-14-result.png)
 
 - [x] **Outcome:** `x === y` is **false**.
 
@@ -6137,9 +6137,9 @@ let y = new String("John");
 x == y;
 ```
 
-<img alt="js-strings example 15 source" src="./code_sandbox/snaps/js-strings-15-code.png" />
+![js-strings example 15 source](./code_sandbox/snaps/js-strings-15-code.png)
 
-<img alt="js-strings example 15 result" src="./code_sandbox/snaps/js-strings-15-result.png" />
+![js-strings example 15 result](./code_sandbox/snaps/js-strings-15-result.png)
 
 - [x] **Outcome:** `x == y` is **false**.
 
@@ -6158,9 +6158,9 @@ let y = new String("John");
 x === y;
 ```
 
-<img alt="js-strings example 16 source" src="./code_sandbox/snaps/js-strings-16-code.png" />
+![js-strings example 16 source](./code_sandbox/snaps/js-strings-16-code.png)
 
-<img alt="js-strings example 16 result" src="./code_sandbox/snaps/js-strings-16-result.png" />
+![js-strings example 16 result](./code_sandbox/snaps/js-strings-16-result.png)
 
 - [x] **Outcome:** `x === y` is **false**.
 
@@ -6365,9 +6365,9 @@ Sandbox: `code_sandbox/js-string-templates/backticks.html`
 let text = `Hello World!`;
 ```
 
-<img alt="js-string-templates example 1 source" src="./code_sandbox/snaps/js-string-templates-01-code.png" />
+![js-string-templates example 1 source](./code_sandbox/snaps/js-string-templates-01-code.png)
 
-<img alt="js-string-templates example 1 result" src="./code_sandbox/snaps/js-string-templates-01-result.png" />
+![js-string-templates example 1 result](./code_sandbox/snaps/js-string-templates-01-result.png)
 
 - [x] **Outcome:** The template stores **Hello World!**
 
@@ -6384,9 +6384,9 @@ Sandbox: `code_sandbox/js-string-templates/quotes-inside.html`
 let text = `He's often called "Johnny"`;
 ```
 
-<img alt="js-string-templates example 2 source" src="./code_sandbox/snaps/js-string-templates-02-code.png" />
+![js-string-templates example 2 source](./code_sandbox/snaps/js-string-templates-02-code.png)
 
-<img alt="js-string-templates example 2 result" src="./code_sandbox/snaps/js-string-templates-02-result.png" />
+![js-string-templates example 2 result](./code_sandbox/snaps/js-string-templates-02-result.png)
 
 - [x] **Outcome:** The result is **He's often called "Johnny"**.
 
@@ -6407,9 +6407,9 @@ jumps over
 the lazy dog`;
 ```
 
-<img alt="js-string-templates example 3 source" src="./code_sandbox/snaps/js-string-templates-03-code.png" />
+![js-string-templates example 3 source](./code_sandbox/snaps/js-string-templates-03-code.png)
 
-<img alt="js-string-templates example 3 result" src="./code_sandbox/snaps/js-string-templates-03-result.png" />
+![js-string-templates example 3 result](./code_sandbox/snaps/js-string-templates-03-result.png)
 
 - [x] **Outcome:** The four lines are kept, starting with **The quick**.
 
@@ -6428,9 +6428,9 @@ let lastName = "Doe";
 let text = `Welcome ${firstName}, ${lastName}!`;
 ```
 
-<img alt="js-string-templates example 4 source" src="./code_sandbox/snaps/js-string-templates-04-code.png" />
+![js-string-templates example 4 source](./code_sandbox/snaps/js-string-templates-04-code.png)
 
-<img alt="js-string-templates example 4 result" src="./code_sandbox/snaps/js-string-templates-04-result.png" />
+![js-string-templates example 4 result](./code_sandbox/snaps/js-string-templates-04-result.png)
 
 - [x] **Outcome:** The result is **Welcome John, Doe!**
 
@@ -6449,9 +6449,9 @@ let VAT = 0.25;
 let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 ```
 
-<img alt="js-string-templates example 5 source" src="./code_sandbox/snaps/js-string-templates-05-code.png" />
+![js-string-templates example 5 source](./code_sandbox/snaps/js-string-templates-05-code.png)
 
-<img alt="js-string-templates example 5 result" src="./code_sandbox/snaps/js-string-templates-05-result.png" />
+![js-string-templates example 5 result](./code_sandbox/snaps/js-string-templates-05-result.png)
 
 - [x] **Outcome:** The result is **Total: 12.50**.
 
@@ -6475,11 +6475,11 @@ for (const x of tags) {
 html += `</ul>`;
 ```
 
-<img alt="js-string-templates example 6 source" src="./code_sandbox/snaps/js-string-templates-06-code.png" />
+![js-string-templates example 6 source](./code_sandbox/snaps/js-string-templates-06-code.png)
 
-<img alt="js-string-templates example 6 result" src="./code_sandbox/snaps/js-string-templates-06-result.png" />
+![js-string-templates example 6 result](./code_sandbox/snaps/js-string-templates-06-result.png)
 
-- [x] **Outcome:** The generated markup is **<h2>Template Strings</h2><ul><li>template strings</li><li>javascript</li><li>es6</li></ul>**.
+- [x] **Outcome:** The generated markup is `<h2>Template Strings</h2><ul><li>template strings</li><li>javascript</li><li>es6</li></ul>`.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -6569,7 +6569,7 @@ Then open `http://127.0.0.1:8770/js-string-templates/`.
 <details>
 <summary>Answer</summary>
 
-- [x] An **`<h2>Template Strings</h2>`** followed by a **`<ul>`** of three **`<li>`** items: template strings, javascript, es6.
+- [x] **Outcome:** The generated markup is `<h2>Template Strings</h2><ul><li>template strings</li><li>javascript</li><li>es6</li></ul>`.
 
 </details>
 
@@ -6662,9 +6662,9 @@ let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length;
 ```
 
-<img alt="js-string-methods example 1 source" src="./code_sandbox/snaps/js-string-methods-01-code.png" />
+![js-string-methods example 1 source](./code_sandbox/snaps/js-string-methods-01-code.png)
 
-<img alt="js-string-methods example 1 result" src="./code_sandbox/snaps/js-string-methods-01-result.png" />
+![js-string-methods example 1 result](./code_sandbox/snaps/js-string-methods-01-result.png)
 
 - [x] **Outcome:** The length is **26**.
 
@@ -6682,9 +6682,9 @@ let text = "HELLO WORLD";
 let char = text.charAt(0);
 ```
 
-<img alt="js-string-methods example 2 source" src="./code_sandbox/snaps/js-string-methods-02-code.png" />
+![js-string-methods example 2 source](./code_sandbox/snaps/js-string-methods-02-code.png)
 
-<img alt="js-string-methods example 2 result" src="./code_sandbox/snaps/js-string-methods-02-result.png" />
+![js-string-methods example 2 result](./code_sandbox/snaps/js-string-methods-02-result.png)
 
 - [x] **Outcome:** `charAt(0)` is **H**.
 
@@ -6702,9 +6702,9 @@ let text = "HELLO WORLD";
 let char = text.charCodeAt(0);
 ```
 
-<img alt="js-string-methods example 3 source" src="./code_sandbox/snaps/js-string-methods-03-code.png" />
+![js-string-methods example 3 source](./code_sandbox/snaps/js-string-methods-03-code.png)
 
-<img alt="js-string-methods example 3 result" src="./code_sandbox/snaps/js-string-methods-03-result.png" />
+![js-string-methods example 3 result](./code_sandbox/snaps/js-string-methods-03-result.png)
 
 - [x] **Outcome:** The code is **72**.
 
@@ -6722,9 +6722,9 @@ let text = "HELLO WORLD";
 let code = text.codePointAt(0);
 ```
 
-<img alt="js-string-methods example 4 source" src="./code_sandbox/snaps/js-string-methods-04-code.png" />
+![js-string-methods example 4 source](./code_sandbox/snaps/js-string-methods-04-code.png)
 
-<img alt="js-string-methods example 4 result" src="./code_sandbox/snaps/js-string-methods-04-result.png" />
+![js-string-methods example 4 result](./code_sandbox/snaps/js-string-methods-04-result.png)
 
 - [x] **Outcome:** The code point of **H** is **72**.
 
@@ -6742,9 +6742,9 @@ const name = "W3Schools";
 let letter = name.at(2);
 ```
 
-<img alt="js-string-methods example 5 source" src="./code_sandbox/snaps/js-string-methods-05-code.png" />
+![js-string-methods example 5 source](./code_sandbox/snaps/js-string-methods-05-code.png)
 
-<img alt="js-string-methods example 5 result" src="./code_sandbox/snaps/js-string-methods-05-result.png" />
+![js-string-methods example 5 result](./code_sandbox/snaps/js-string-methods-05-result.png)
 
 - [x] **Outcome:** `at(2)` is **S**.
 
@@ -6762,9 +6762,9 @@ const name = "W3Schools";
 let letter = name[2];
 ```
 
-<img alt="js-string-methods example 6 source" src="./code_sandbox/snaps/js-string-methods-06-code.png" />
+![js-string-methods example 6 source](./code_sandbox/snaps/js-string-methods-06-code.png)
 
-<img alt="js-string-methods example 6 result" src="./code_sandbox/snaps/js-string-methods-06-result.png" />
+![js-string-methods example 6 result](./code_sandbox/snaps/js-string-methods-06-result.png)
 
 - [x] **Outcome:** `name[2]` is **S**.
 
@@ -6782,9 +6782,9 @@ const name = "W3Schools";
 let letter = name.at(-5);
 ```
 
-<img alt="js-string-methods example 7 source" src="./code_sandbox/snaps/js-string-methods-07-code.png" />
+![js-string-methods example 7 source](./code_sandbox/snaps/js-string-methods-07-code.png)
 
-<img alt="js-string-methods example 7 result" src="./code_sandbox/snaps/js-string-methods-07-result.png" />
+![js-string-methods example 7 result](./code_sandbox/snaps/js-string-methods-07-result.png)
 
 - [x] **Outcome:** `at(-5)` is **h**.
 
@@ -6803,9 +6803,9 @@ let text = "HELLO WORLD";
 let char = text[0];
 ```
 
-<img alt="js-string-methods example 8 source" src="./code_sandbox/snaps/js-string-methods-08-code.png" />
+![js-string-methods example 8 source](./code_sandbox/snaps/js-string-methods-08-code.png)
 
-<img alt="js-string-methods example 8 result" src="./code_sandbox/snaps/js-string-methods-08-result.png" />
+![js-string-methods example 8 result](./code_sandbox/snaps/js-string-methods-08-result.png)
 
 - [x] **Outcome:** `text[0]` is **H**. `text[99]` is **undefined**.
 
@@ -6827,9 +6827,9 @@ try {
 }
 ```
 
-<img alt="js-string-methods example 9 source" src="./code_sandbox/snaps/js-string-methods-09-code.png" />
+![js-string-methods example 9 source](./code_sandbox/snaps/js-string-methods-09-code.png)
 
-<img alt="js-string-methods example 9 result" src="./code_sandbox/snaps/js-string-methods-09-result.png" />
+![js-string-methods example 9 result](./code_sandbox/snaps/js-string-methods-09-result.png)
 
 - [x] **Outcome:** No exception. The string is still **HELLO WORLD** (`text[0]` remains **H**).
 
@@ -6848,9 +6848,9 @@ let text2 = "World";
 let text3 = text1.concat(" ", text2);
 ```
 
-<img alt="js-string-methods example 10 source" src="./code_sandbox/snaps/js-string-methods-10-code.png" />
+![js-string-methods example 10 source](./code_sandbox/snaps/js-string-methods-10-code.png)
 
-<img alt="js-string-methods example 10 result" src="./code_sandbox/snaps/js-string-methods-10-result.png" />
+![js-string-methods example 10 result](./code_sandbox/snaps/js-string-methods-10-result.png)
 
 - [x] **Outcome:** The joined string is **Hello World**.
 
@@ -6868,9 +6868,9 @@ let text = "Apple, Banana, Kiwi";
 let part = text.slice(7, 13);
 ```
 
-<img alt="js-string-methods example 11 source" src="./code_sandbox/snaps/js-string-methods-11-code.png" />
+![js-string-methods example 11 source](./code_sandbox/snaps/js-string-methods-11-code.png)
 
-<img alt="js-string-methods example 11 result" src="./code_sandbox/snaps/js-string-methods-11-result.png" />
+![js-string-methods example 11 result](./code_sandbox/snaps/js-string-methods-11-result.png)
 
 - [x] **Outcome:** `slice(7, 13)` is **Banana**.
 
@@ -6887,9 +6887,9 @@ let text = "Apple, Banana, Kiwi";
 let part = text.slice(7);
 ```
 
-<img alt="js-string-methods example 12 source" src="./code_sandbox/snaps/js-string-methods-12-code.png" />
+![js-string-methods example 12 source](./code_sandbox/snaps/js-string-methods-12-code.png)
 
-<img alt="js-string-methods example 12 result" src="./code_sandbox/snaps/js-string-methods-12-result.png" />
+![js-string-methods example 12 result](./code_sandbox/snaps/js-string-methods-12-result.png)
 
 - [x] **Outcome:** `slice(7)` is **Banana, Kiwi**.
 
@@ -6906,9 +6906,9 @@ let text = "Apple, Banana, Kiwi";
 let part = text.slice(-12);
 ```
 
-<img alt="js-string-methods example 13 source" src="./code_sandbox/snaps/js-string-methods-13-code.png" />
+![js-string-methods example 13 source](./code_sandbox/snaps/js-string-methods-13-code.png)
 
-<img alt="js-string-methods example 13 result" src="./code_sandbox/snaps/js-string-methods-13-result.png" />
+![js-string-methods example 13 result](./code_sandbox/snaps/js-string-methods-13-result.png)
 
 - [x] **Outcome:** `slice(-12)` is **Banana, Kiwi**.
 
@@ -6925,9 +6925,9 @@ let text = "Apple, Banana, Kiwi";
 let part = text.slice(-12, -6);
 ```
 
-<img alt="js-string-methods example 14 source" src="./code_sandbox/snaps/js-string-methods-14-code.png" />
+![js-string-methods example 14 source](./code_sandbox/snaps/js-string-methods-14-code.png)
 
-<img alt="js-string-methods example 14 result" src="./code_sandbox/snaps/js-string-methods-14-result.png" />
+![js-string-methods example 14 result](./code_sandbox/snaps/js-string-methods-14-result.png)
 
 - [x] **Outcome:** `slice(-12, -6)` is **Banana**.
 
@@ -6945,9 +6945,9 @@ let str = "Apple, Banana, Kiwi";
 let part = str.substring(7, 13);
 ```
 
-<img alt="js-string-methods example 15 source" src="./code_sandbox/snaps/js-string-methods-15-code.png" />
+![js-string-methods example 15 source](./code_sandbox/snaps/js-string-methods-15-code.png)
 
-<img alt="js-string-methods example 15 result" src="./code_sandbox/snaps/js-string-methods-15-result.png" />
+![js-string-methods example 15 result](./code_sandbox/snaps/js-string-methods-15-result.png)
 
 - [x] **Outcome:** `substring(7, 13)` is **Banana**.
 
@@ -6965,9 +6965,9 @@ let str = "Apple, Banana, Kiwi";
 let part = str.substr(7, 6);
 ```
 
-<img alt="js-string-methods example 16 source" src="./code_sandbox/snaps/js-string-methods-16-code.png" />
+![js-string-methods example 16 source](./code_sandbox/snaps/js-string-methods-16-code.png)
 
-<img alt="js-string-methods example 16 result" src="./code_sandbox/snaps/js-string-methods-16-result.png" />
+![js-string-methods example 16 result](./code_sandbox/snaps/js-string-methods-16-result.png)
 
 - [x] **Outcome:** `substr(7, 6)` is **Banana**. Prefer **slice/substring**.
 
@@ -6985,9 +6985,9 @@ let str = "Apple, Banana, Kiwi";
 let part = str.substr(7);
 ```
 
-<img alt="js-string-methods example 17 source" src="./code_sandbox/snaps/js-string-methods-17-code.png" />
+![js-string-methods example 17 source](./code_sandbox/snaps/js-string-methods-17-code.png)
 
-<img alt="js-string-methods example 17 result" src="./code_sandbox/snaps/js-string-methods-17-result.png" />
+![js-string-methods example 17 result](./code_sandbox/snaps/js-string-methods-17-result.png)
 
 - [x] **Outcome:** `substr(7)` is **Banana, Kiwi**.
 
@@ -7005,9 +7005,9 @@ let str = "Apple, Banana, Kiwi";
 let part = str.substr(-4);
 ```
 
-<img alt="js-string-methods example 18 source" src="./code_sandbox/snaps/js-string-methods-18-code.png" />
+![js-string-methods example 18 source](./code_sandbox/snaps/js-string-methods-18-code.png)
 
-<img alt="js-string-methods example 18 result" src="./code_sandbox/snaps/js-string-methods-18-result.png" />
+![js-string-methods example 18 result](./code_sandbox/snaps/js-string-methods-18-result.png)
 
 - [x] **Outcome:** `substr(-4)` is **Kiwi**.
 
@@ -7025,9 +7025,9 @@ let text1 = "Hello World!";
 let text2 = text1.toUpperCase();
 ```
 
-<img alt="js-string-methods example 19 source" src="./code_sandbox/snaps/js-string-methods-19-code.png" />
+![js-string-methods example 19 source](./code_sandbox/snaps/js-string-methods-19-code.png)
 
-<img alt="js-string-methods example 19 result" src="./code_sandbox/snaps/js-string-methods-19-result.png" />
+![js-string-methods example 19 result](./code_sandbox/snaps/js-string-methods-19-result.png)
 
 - [x] **Outcome:** The new string is **HELLO WORLD!**; the original is still **Hello World!**
 
@@ -7044,9 +7044,9 @@ let text1 = "Hello World!";
 let text2 = text1.toLowerCase();
 ```
 
-<img alt="js-string-methods example 20 source" src="./code_sandbox/snaps/js-string-methods-20-code.png" />
+![js-string-methods example 20 source](./code_sandbox/snaps/js-string-methods-20-code.png)
 
-<img alt="js-string-methods example 20 result" src="./code_sandbox/snaps/js-string-methods-20-result.png" />
+![js-string-methods example 20 result](./code_sandbox/snaps/js-string-methods-20-result.png)
 
 - [x] **Outcome:** The result is **hello world!**
 
@@ -7064,9 +7064,9 @@ let text = "Hello world!";
 let result = text.isWellFormed();
 ```
 
-<img alt="js-string-methods example 21 source" src="./code_sandbox/snaps/js-string-methods-21-code.png" />
+![js-string-methods example 21 source](./code_sandbox/snaps/js-string-methods-21-code.png)
 
-<img alt="js-string-methods example 21 result" src="./code_sandbox/snaps/js-string-methods-21-result.png" />
+![js-string-methods example 21 result](./code_sandbox/snaps/js-string-methods-21-result.png)
 
 - [x] **Outcome:** **true** — this string is well formed.
 
@@ -7083,9 +7083,9 @@ let text = "Hello World \uD800";
 let result = text.isWellFormed();
 ```
 
-<img alt="js-string-methods example 22 source" src="./code_sandbox/snaps/js-string-methods-22-code.png" />
+![js-string-methods example 22 source](./code_sandbox/snaps/js-string-methods-22-code.png)
 
-<img alt="js-string-methods example 22 result" src="./code_sandbox/snaps/js-string-methods-22-result.png" />
+![js-string-methods example 22 result](./code_sandbox/snaps/js-string-methods-22-result.png)
 
 - [x] **Outcome:** **false** — the lone surrogate makes the string ill-formed.
 
@@ -7102,9 +7102,9 @@ let text = "Hello World \uD800";
 let result = text.toWellFormed();
 ```
 
-<img alt="js-string-methods example 23 source" src="./code_sandbox/snaps/js-string-methods-23-code.png" />
+![js-string-methods example 23 source](./code_sandbox/snaps/js-string-methods-23-code.png)
 
-<img alt="js-string-methods example 23 result" src="./code_sandbox/snaps/js-string-methods-23-result.png" />
+![js-string-methods example 23 result](./code_sandbox/snaps/js-string-methods-23-result.png)
 
 - [x] **Outcome:** The original is **not** well formed; `toWellFormed()` replaces the lone surrogate with **�**.
 
@@ -7121,9 +7121,9 @@ let text1 = " Hello World! ";
 let text2 = text1.trim();
 ```
 
-<img alt="js-string-methods example 24 source" src="./code_sandbox/snaps/js-string-methods-24-code.png" />
+![js-string-methods example 24 source](./code_sandbox/snaps/js-string-methods-24-code.png)
 
-<img alt="js-string-methods example 24 result" src="./code_sandbox/snaps/js-string-methods-24-result.png" />
+![js-string-methods example 24 result](./code_sandbox/snaps/js-string-methods-24-result.png)
 
 - [x] **Outcome:** The trimmed value is **'Hello World!'**.
 
@@ -7140,9 +7140,9 @@ let text1 = " Hello World! ";
 let text2 = text1.trimStart();
 ```
 
-<img alt="js-string-methods example 25 source" src="./code_sandbox/snaps/js-string-methods-25-code.png" />
+![js-string-methods example 25 source](./code_sandbox/snaps/js-string-methods-25-code.png)
 
-<img alt="js-string-methods example 25 result" src="./code_sandbox/snaps/js-string-methods-25-result.png" />
+![js-string-methods example 25 result](./code_sandbox/snaps/js-string-methods-25-result.png)
 
 - [x] **Outcome:** Leading space is gone; trailing space remains: **'Hello World! '**.
 
@@ -7159,9 +7159,9 @@ let text1 = " Hello World! ";
 let text2 = text1.trimEnd();
 ```
 
-<img alt="js-string-methods example 26 source" src="./code_sandbox/snaps/js-string-methods-26-code.png" />
+![js-string-methods example 26 source](./code_sandbox/snaps/js-string-methods-26-code.png)
 
-<img alt="js-string-methods example 26 result" src="./code_sandbox/snaps/js-string-methods-26-result.png" />
+![js-string-methods example 26 result](./code_sandbox/snaps/js-string-methods-26-result.png)
 
 - [x] **Outcome:** Trailing space is gone; leading space remains: **' Hello World!'**.
 
@@ -7179,9 +7179,9 @@ let text = "5";
 let padded = text.padStart(4, "0");
 ```
 
-<img alt="js-string-methods example 27 source" src="./code_sandbox/snaps/js-string-methods-27-code.png" />
+![js-string-methods example 27 source](./code_sandbox/snaps/js-string-methods-27-code.png)
 
-<img alt="js-string-methods example 27 result" src="./code_sandbox/snaps/js-string-methods-27-result.png" />
+![js-string-methods example 27 result](./code_sandbox/snaps/js-string-methods-27-result.png)
 
 - [x] **Outcome:** The result is **0005**.
 
@@ -7198,9 +7198,9 @@ let text = "5";
 let padded = text.padStart(4, "x");
 ```
 
-<img alt="js-string-methods example 28 source" src="./code_sandbox/snaps/js-string-methods-28-code.png" />
+![js-string-methods example 28 source](./code_sandbox/snaps/js-string-methods-28-code.png)
 
-<img alt="js-string-methods example 28 result" src="./code_sandbox/snaps/js-string-methods-28-result.png" />
+![js-string-methods example 28 result](./code_sandbox/snaps/js-string-methods-28-result.png)
 
 - [x] **Outcome:** The result is **xxx5**.
 
@@ -7218,9 +7218,9 @@ let text = numb.toString();
 let padded = text.padStart(4, "0");
 ```
 
-<img alt="js-string-methods example 29 source" src="./code_sandbox/snaps/js-string-methods-29-code.png" />
+![js-string-methods example 29 source](./code_sandbox/snaps/js-string-methods-29-code.png)
 
-<img alt="js-string-methods example 29 result" src="./code_sandbox/snaps/js-string-methods-29-result.png" />
+![js-string-methods example 29 result](./code_sandbox/snaps/js-string-methods-29-result.png)
 
 - [x] **Outcome:** The padded number-as-string is **0005**.
 
@@ -7237,9 +7237,9 @@ let text = "5";
 let padded = text.padEnd(4, "0");
 ```
 
-<img alt="js-string-methods example 30 source" src="./code_sandbox/snaps/js-string-methods-30-code.png" />
+![js-string-methods example 30 source](./code_sandbox/snaps/js-string-methods-30-code.png)
 
-<img alt="js-string-methods example 30 result" src="./code_sandbox/snaps/js-string-methods-30-result.png" />
+![js-string-methods example 30 result](./code_sandbox/snaps/js-string-methods-30-result.png)
 
 - [x] **Outcome:** The result is **5000**.
 
@@ -7256,9 +7256,9 @@ let text = "5";
 let padded = text.padEnd(4, "x");
 ```
 
-<img alt="js-string-methods example 31 source" src="./code_sandbox/snaps/js-string-methods-31-code.png" />
+![js-string-methods example 31 source](./code_sandbox/snaps/js-string-methods-31-code.png)
 
-<img alt="js-string-methods example 31 result" src="./code_sandbox/snaps/js-string-methods-31-result.png" />
+![js-string-methods example 31 result](./code_sandbox/snaps/js-string-methods-31-result.png)
 
 - [x] **Outcome:** The result is **5xxx**.
 
@@ -7276,9 +7276,9 @@ let text = numb.toString();
 let padded = text.padEnd(4, "0");
 ```
 
-<img alt="js-string-methods example 32 source" src="./code_sandbox/snaps/js-string-methods-32-code.png" />
+![js-string-methods example 32 source](./code_sandbox/snaps/js-string-methods-32-code.png)
 
-<img alt="js-string-methods example 32 result" src="./code_sandbox/snaps/js-string-methods-32-result.png" />
+![js-string-methods example 32 result](./code_sandbox/snaps/js-string-methods-32-result.png)
 
 - [x] **Outcome:** The padded number-as-string is **5000**.
 
@@ -7296,9 +7296,9 @@ let text = "Hello world!";
 let result = text.repeat(2);
 ```
 
-<img alt="js-string-methods example 33 source" src="./code_sandbox/snaps/js-string-methods-33-code.png" />
+![js-string-methods example 33 source](./code_sandbox/snaps/js-string-methods-33-code.png)
 
-<img alt="js-string-methods example 33 result" src="./code_sandbox/snaps/js-string-methods-33-result.png" />
+![js-string-methods example 33 result](./code_sandbox/snaps/js-string-methods-33-result.png)
 
 - [x] **Outcome:** The result is **Hello world!Hello world!**
 
@@ -7315,9 +7315,9 @@ let text = "Hello world!";
 let result = text.repeat(4);
 ```
 
-<img alt="js-string-methods example 34 source" src="./code_sandbox/snaps/js-string-methods-34-code.png" />
+![js-string-methods example 34 source](./code_sandbox/snaps/js-string-methods-34-code.png)
 
-<img alt="js-string-methods example 34 result" src="./code_sandbox/snaps/js-string-methods-34-result.png" />
+![js-string-methods example 34 result](./code_sandbox/snaps/js-string-methods-34-result.png)
 
 - [x] **Outcome:** The result is **Hello world!** repeated **four** times.
 
@@ -7335,9 +7335,9 @@ let text = "Please visit Microsoft!";
 let newText = text.replace("Microsoft", "W3Schools");
 ```
 
-<img alt="js-string-methods example 35 source" src="./code_sandbox/snaps/js-string-methods-35-code.png" />
+![js-string-methods example 35 source](./code_sandbox/snaps/js-string-methods-35-code.png)
 
-<img alt="js-string-methods example 35 result" src="./code_sandbox/snaps/js-string-methods-35-result.png" />
+![js-string-methods example 35 result](./code_sandbox/snaps/js-string-methods-35-result.png)
 
 - [x] **Outcome:** The result is **Please visit W3Schools!**
 
@@ -7354,9 +7354,9 @@ let text = "Please visit Microsoft and Microsoft!";
 let newText = text.replace("Microsoft", "W3Schools");
 ```
 
-<img alt="js-string-methods example 36 source" src="./code_sandbox/snaps/js-string-methods-36-code.png" />
+![js-string-methods example 36 source](./code_sandbox/snaps/js-string-methods-36-code.png)
 
-<img alt="js-string-methods example 36 result" src="./code_sandbox/snaps/js-string-methods-36-result.png" />
+![js-string-methods example 36 result](./code_sandbox/snaps/js-string-methods-36-result.png)
 
 - [x] **Outcome:** Only the first match changes: **Please visit W3Schools and Microsoft!**
 
@@ -7374,9 +7374,9 @@ let text = "Please visit Microsoft!";
 let newText = text.replace("MICROSOFT", "W3Schools");
 ```
 
-<img alt="js-string-methods example 37 source" src="./code_sandbox/snaps/js-string-methods-37-code.png" />
+![js-string-methods example 37 source](./code_sandbox/snaps/js-string-methods-37-code.png)
 
-<img alt="js-string-methods example 37 result" src="./code_sandbox/snaps/js-string-methods-37-result.png" />
+![js-string-methods example 37 result](./code_sandbox/snaps/js-string-methods-37-result.png)
 
 - [x] **Outcome:** Nothing changes: **Please visit Microsoft!**
 
@@ -7394,9 +7394,9 @@ let text = "Please visit Microsoft!";
 let newText = text.replace(/MICROSOFT/i, "W3Schools");
 ```
 
-<img alt="js-string-methods example 38 source" src="./code_sandbox/snaps/js-string-methods-38-code.png" />
+![js-string-methods example 38 source](./code_sandbox/snaps/js-string-methods-38-code.png)
 
-<img alt="js-string-methods example 38 result" src="./code_sandbox/snaps/js-string-methods-38-result.png" />
+![js-string-methods example 38 result](./code_sandbox/snaps/js-string-methods-38-result.png)
 
 - [x] **Outcome:** Case-insensitive replace yields **Please visit W3Schools!**
 
@@ -7414,9 +7414,9 @@ let text = "Please visit Microsoft and Microsoft!";
 let newText = text.replace(/Microsoft/g, "W3Schools");
 ```
 
-<img alt="js-string-methods example 39 source" src="./code_sandbox/snaps/js-string-methods-39-code.png" />
+![js-string-methods example 39 source](./code_sandbox/snaps/js-string-methods-39-code.png)
 
-<img alt="js-string-methods example 39 result" src="./code_sandbox/snaps/js-string-methods-39-result.png" />
+![js-string-methods example 39 result](./code_sandbox/snaps/js-string-methods-39-result.png)
 
 - [x] **Outcome:** Both matches change: **Please visit W3Schools and W3Schools!**
 
@@ -7435,9 +7435,9 @@ text = text.replaceAll("Cats", "Dogs");
 text = text.replaceAll("cats", "dogs");
 ```
 
-<img alt="js-string-methods example 40 source" src="./code_sandbox/snaps/js-string-methods-40-code.png" />
+![js-string-methods example 40 source](./code_sandbox/snaps/js-string-methods-40-code.png)
 
-<img alt="js-string-methods example 40 result" src="./code_sandbox/snaps/js-string-methods-40-result.png" />
+![js-string-methods example 40 result](./code_sandbox/snaps/js-string-methods-40-result.png)
 
 - [x] **Outcome:** The result is **I love dogs. Dogs are very easy to love. Dogs are very popular.**
 
@@ -7456,9 +7456,9 @@ text = text.replaceAll(/Cats/g, "Dogs");
 text = text.replaceAll(/cats/g, "dogs");
 ```
 
-<img alt="js-string-methods example 41 source" src="./code_sandbox/snaps/js-string-methods-41-code.png" />
+![js-string-methods example 41 source](./code_sandbox/snaps/js-string-methods-41-code.png)
 
-<img alt="js-string-methods example 41 result" src="./code_sandbox/snaps/js-string-methods-41-result.png" />
+![js-string-methods example 41 result](./code_sandbox/snaps/js-string-methods-41-result.png)
 
 - [x] **Outcome:** Same result: **I love dogs. Dogs are very easy to love. Dogs are very popular.**
 
@@ -7476,9 +7476,9 @@ let text = "Hi fox!";
 const myArr = text.split("");
 ```
 
-<img alt="js-string-methods example 42 source" src="./code_sandbox/snaps/js-string-methods-42-code.png" />
+![js-string-methods example 42 source](./code_sandbox/snaps/js-string-methods-42-code.png)
 
-<img alt="js-string-methods example 42 result" src="./code_sandbox/snaps/js-string-methods-42-result.png" />
+![js-string-methods example 42 result](./code_sandbox/snaps/js-string-methods-42-result.png)
 
 - [x] **Outcome:** The array is **["H","i"," ","f","o","x","!"]**.
 
@@ -7496,9 +7496,9 @@ let text = "The quick brown fox.";
 const myArr = text.split(" ");
 ```
 
-<img alt="js-string-methods example 43 source" src="./code_sandbox/snaps/js-string-methods-43-code.png" />
+![js-string-methods example 43 source](./code_sandbox/snaps/js-string-methods-43-code.png)
 
-<img alt="js-string-methods example 43 result" src="./code_sandbox/snaps/js-string-methods-43-result.png" />
+![js-string-methods example 43 result](./code_sandbox/snaps/js-string-methods-43-result.png)
 
 - [x] **Outcome:** The array is **["The","quick","brown","fox."]**.
 
@@ -7515,9 +7515,9 @@ let text = "The quick brown fox.";
 const myArr = text.split();
 ```
 
-<img alt="js-string-methods example 44 source" src="./code_sandbox/snaps/js-string-methods-44-code.png" />
+![js-string-methods example 44 source](./code_sandbox/snaps/js-string-methods-44-code.png)
 
-<img alt="js-string-methods example 44 result" src="./code_sandbox/snaps/js-string-methods-44-result.png" />
+![js-string-methods example 44 result](./code_sandbox/snaps/js-string-methods-44-result.png)
 
 - [x] **Outcome:** The array is **["The quick brown fox."]**.
 
@@ -7535,9 +7535,9 @@ let text = "👨‍👩‍👧‍👦";
 const myArr = text.split("");
 ```
 
-<img alt="js-string-methods example 45 source" src="./code_sandbox/snaps/js-string-methods-45-code.png" />
+![js-string-methods example 45 source](./code_sandbox/snaps/js-string-methods-45-code.png)
 
-<img alt="js-string-methods example 45 result" src="./code_sandbox/snaps/js-string-methods-45-result.png" />
+![js-string-methods example 45 result](./code_sandbox/snaps/js-string-methods-45-result.png)
 
 - [x] **Outcome:** The family emoji splits into **many** UTF-16 pieces (length **11**), not one character.
 
@@ -7556,9 +7556,9 @@ const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
 const myArr = Array.from(segmenter.segment(text), (s) => s.segment);
 ```
 
-<img alt="js-string-methods example 46 source" src="./code_sandbox/snaps/js-string-methods-46-code.png" />
+![js-string-methods example 46 source](./code_sandbox/snaps/js-string-methods-46-code.png)
 
-<img alt="js-string-methods example 46 result" src="./code_sandbox/snaps/js-string-methods-46-result.png" />
+![js-string-methods example 46 result](./code_sandbox/snaps/js-string-methods-46-result.png)
 
 - [x] **Outcome:** The segmenter yields **one** grapheme: the family emoji (length **1**).
 
@@ -7793,9 +7793,9 @@ let text = "Please locate where 'locate' occurs!";
 let index = text.indexOf("locate");
 ```
 
-<img alt="js-string-search example 1 source" src="./code_sandbox/snaps/js-string-search-01-code.png" />
+![js-string-search example 1 source](./code_sandbox/snaps/js-string-search-01-code.png)
 
-<img alt="js-string-search example 1 result" src="./code_sandbox/snaps/js-string-search-01-result.png" />
+![js-string-search example 1 result](./code_sandbox/snaps/js-string-search-01-result.png)
 
 - [x] **Outcome:** First **locate** is at index **7**.
 
@@ -7812,9 +7812,9 @@ let text = "Please locate where 'locate' occurs!";
 let index = text.lastIndexOf("locate");
 ```
 
-<img alt="js-string-search example 2 source" src="./code_sandbox/snaps/js-string-search-02-code.png" />
+![js-string-search example 2 source](./code_sandbox/snaps/js-string-search-02-code.png)
 
-<img alt="js-string-search example 2 result" src="./code_sandbox/snaps/js-string-search-02-result.png" />
+![js-string-search example 2 result](./code_sandbox/snaps/js-string-search-02-result.png)
 
 - [x] **Outcome:** Last **locate** is at index **21**.
 
@@ -7831,9 +7831,9 @@ let text = "Please locate where 'locate' occurs!";
 let index = text.lastIndexOf("John");
 ```
 
-<img alt="js-string-search example 3 source" src="./code_sandbox/snaps/js-string-search-03-code.png" />
+![js-string-search example 3 source](./code_sandbox/snaps/js-string-search-03-code.png)
 
-<img alt="js-string-search example 3 result" src="./code_sandbox/snaps/js-string-search-03-result.png" />
+![js-string-search example 3 result](./code_sandbox/snaps/js-string-search-03-result.png)
 
 - [x] **Outcome:** **John** is missing, so the result is **-1**.
 
@@ -7850,9 +7850,9 @@ let text = "Please locate where 'locate' occurs!";
 let index = text.indexOf("locate", 15);
 ```
 
-<img alt="js-string-search example 4 source" src="./code_sandbox/snaps/js-string-search-04-code.png" />
+![js-string-search example 4 source](./code_sandbox/snaps/js-string-search-04-code.png)
 
-<img alt="js-string-search example 4 result" src="./code_sandbox/snaps/js-string-search-04-result.png" />
+![js-string-search example 4 result](./code_sandbox/snaps/js-string-search-04-result.png)
 
 - [x] **Outcome:** From index 15 the next **locate** is at **21**.
 
@@ -7870,9 +7870,9 @@ let text = "Please locate where 'locate' occurs!";
 text.lastIndexOf("locate", 15);
 ```
 
-<img alt="js-string-search example 5 source" src="./code_sandbox/snaps/js-string-search-05-code.png" />
+![js-string-search example 5 source](./code_sandbox/snaps/js-string-search-05-code.png)
 
-<img alt="js-string-search example 5 result" src="./code_sandbox/snaps/js-string-search-05-result.png" />
+![js-string-search example 5 result](./code_sandbox/snaps/js-string-search-05-result.png)
 
 - [x] **Outcome:** Searching backward from 15 finds **7**.
 
@@ -7889,9 +7889,9 @@ let text = "Please locate where 'locate' occurs!";
 text.search("locate");
 ```
 
-<img alt="js-string-search example 6 source" src="./code_sandbox/snaps/js-string-search-06-code.png" />
+![js-string-search example 6 source](./code_sandbox/snaps/js-string-search-06-code.png)
 
-<img alt="js-string-search example 6 result" src="./code_sandbox/snaps/js-string-search-06-result.png" />
+![js-string-search example 6 result](./code_sandbox/snaps/js-string-search-06-result.png)
 
 - [x] **Outcome:** `search("locate")` returns **7**.
 
@@ -7909,9 +7909,9 @@ let text = "Please locate where 'locate' occurs!";
 text.search(/locate/);
 ```
 
-<img alt="js-string-search example 7 source" src="./code_sandbox/snaps/js-string-search-07-code.png" />
+![js-string-search example 7 source](./code_sandbox/snaps/js-string-search-07-code.png)
 
-<img alt="js-string-search example 7 result" src="./code_sandbox/snaps/js-string-search-07-result.png" />
+![js-string-search example 7 result](./code_sandbox/snaps/js-string-search-07-result.png)
 
 - [x] **Outcome:** `search(/locate/)` also returns **7**.
 
@@ -7929,9 +7929,9 @@ let text = "The rain in SPAIN stays mainly in the plain";
 text.match("ain");
 ```
 
-<img alt="js-string-search example 8 source" src="./code_sandbox/snaps/js-string-search-08-code.png" />
+![js-string-search example 8 source](./code_sandbox/snaps/js-string-search-08-code.png)
 
-<img alt="js-string-search example 8 result" src="./code_sandbox/snaps/js-string-search-08-result.png" />
+![js-string-search example 8 result](./code_sandbox/snaps/js-string-search-08-result.png)
 
 - [x] **Outcome:** The first **ain** is at index **5** (in **rain**).
 
@@ -7948,9 +7948,9 @@ let text = "The rain in SPAIN stays mainly in the plain";
 text.match(/ain/);
 ```
 
-<img alt="js-string-search example 9 source" src="./code_sandbox/snaps/js-string-search-09-code.png" />
+![js-string-search example 9 source](./code_sandbox/snaps/js-string-search-09-code.png)
 
-<img alt="js-string-search example 9 result" src="./code_sandbox/snaps/js-string-search-09-result.png" />
+![js-string-search example 9 result](./code_sandbox/snaps/js-string-search-09-result.png)
 
 - [x] **Outcome:** First regex match is still **ain** at index **5**.
 
@@ -7968,9 +7968,9 @@ let text = "The rain in SPAIN stays mainly in the plain";
 text.match(/ain/g);
 ```
 
-<img alt="js-string-search example 10 source" src="./code_sandbox/snaps/js-string-search-10-code.png" />
+![js-string-search example 10 source](./code_sandbox/snaps/js-string-search-10-code.png)
 
-<img alt="js-string-search example 10 result" src="./code_sandbox/snaps/js-string-search-10-result.png" />
+![js-string-search example 10 result](./code_sandbox/snaps/js-string-search-10-result.png)
 
 - [x] **Outcome:** The matches are **ain,ain,ain** (rain, mainly, plain).
 
@@ -7987,9 +7987,9 @@ let text = "The rain in SPAIN stays mainly in the plain";
 text.match(/ain/gi);
 ```
 
-<img alt="js-string-search example 11 source" src="./code_sandbox/snaps/js-string-search-11-code.png" />
+![js-string-search example 11 source](./code_sandbox/snaps/js-string-search-11-code.png)
 
-<img alt="js-string-search example 11 result" src="./code_sandbox/snaps/js-string-search-11-result.png" />
+![js-string-search example 11 result](./code_sandbox/snaps/js-string-search-11-result.png)
 
 - [x] **Outcome:** The matches are **ain,AIN,ain,ain**.
 
@@ -8007,9 +8007,9 @@ let text = "I love cats. Cats are very easy to love. Cats are very popular.";
 const iterator = text.matchAll("Cats");
 ```
 
-<img alt="js-string-search example 12 source" src="./code_sandbox/snaps/js-string-search-12-code.png" />
+![js-string-search example 12 source](./code_sandbox/snaps/js-string-search-12-code.png)
 
-<img alt="js-string-search example 12 result" src="./code_sandbox/snaps/js-string-search-12-result.png" />
+![js-string-search example 12 result](./code_sandbox/snaps/js-string-search-12-result.png)
 
 - [x] **Outcome:** The iterator yields **Cats, Cats** (two capitalized matches).
 
@@ -8026,9 +8026,9 @@ let text = "I love cats. Cats are very easy to love. Cats are very popular.";
 const iterator = text.matchAll(/Cats/g);
 ```
 
-<img alt="js-string-search example 13 source" src="./code_sandbox/snaps/js-string-search-13-code.png" />
+![js-string-search example 13 source](./code_sandbox/snaps/js-string-search-13-code.png)
 
-<img alt="js-string-search example 13 result" src="./code_sandbox/snaps/js-string-search-13-result.png" />
+![js-string-search example 13 result](./code_sandbox/snaps/js-string-search-13-result.png)
 
 - [x] **Outcome:** The iterator yields **Cats, Cats**.
 
@@ -8045,9 +8045,9 @@ let text = "I love cats. Cats are very easy to love. Cats are very popular.";
 const iterator = text.matchAll(/Cats/gi);
 ```
 
-<img alt="js-string-search example 14 source" src="./code_sandbox/snaps/js-string-search-14-code.png" />
+![js-string-search example 14 source](./code_sandbox/snaps/js-string-search-14-code.png)
 
-<img alt="js-string-search example 14 result" src="./code_sandbox/snaps/js-string-search-14-result.png" />
+![js-string-search example 14 result](./code_sandbox/snaps/js-string-search-14-result.png)
 
 - [x] **Outcome:** The iterator yields **cats, Cats, Cats** (three matches).
 
@@ -8065,9 +8065,9 @@ let text = "Hello world, welcome to the universe.";
 text.includes("world");
 ```
 
-<img alt="js-string-search example 15 source" src="./code_sandbox/snaps/js-string-search-15-code.png" />
+![js-string-search example 15 source](./code_sandbox/snaps/js-string-search-15-code.png)
 
-<img alt="js-string-search example 15 result" src="./code_sandbox/snaps/js-string-search-15-result.png" />
+![js-string-search example 15 result](./code_sandbox/snaps/js-string-search-15-result.png)
 
 - [x] **Outcome:** **true** — **world** is in the string.
 
@@ -8085,9 +8085,9 @@ let text = "Hello world, welcome to the universe.";
 text.includes("world", 12);
 ```
 
-<img alt="js-string-search example 16 source" src="./code_sandbox/snaps/js-string-search-16-code.png" />
+![js-string-search example 16 source](./code_sandbox/snaps/js-string-search-16-code.png)
 
-<img alt="js-string-search example 16 result" src="./code_sandbox/snaps/js-string-search-16-result.png" />
+![js-string-search example 16 result](./code_sandbox/snaps/js-string-search-16-result.png)
 
 - [x] **Outcome:** **false** — the search starts past **world**.
 
@@ -8105,9 +8105,9 @@ let text = "Hello world, welcome to the universe.";
 text.startsWith("Hello");
 ```
 
-<img alt="js-string-search example 17 source" src="./code_sandbox/snaps/js-string-search-17-code.png" />
+![js-string-search example 17 source](./code_sandbox/snaps/js-string-search-17-code.png)
 
-<img alt="js-string-search example 17 result" src="./code_sandbox/snaps/js-string-search-17-result.png" />
+![js-string-search example 17 result](./code_sandbox/snaps/js-string-search-17-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -8124,9 +8124,9 @@ let text = "Hello world, welcome to the universe.";
 text.startsWith("world");
 ```
 
-<img alt="js-string-search example 18 source" src="./code_sandbox/snaps/js-string-search-18-code.png" />
+![js-string-search example 18 source](./code_sandbox/snaps/js-string-search-18-code.png)
 
-<img alt="js-string-search example 18 result" src="./code_sandbox/snaps/js-string-search-18-result.png" />
+![js-string-search example 18 result](./code_sandbox/snaps/js-string-search-18-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -8144,9 +8144,9 @@ let text = "Hello world, welcome to the universe.";
 text.startsWith("world", 5);
 ```
 
-<img alt="js-string-search example 19 source" src="./code_sandbox/snaps/js-string-search-19-code.png" />
+![js-string-search example 19 source](./code_sandbox/snaps/js-string-search-19-code.png)
 
-<img alt="js-string-search example 19 result" src="./code_sandbox/snaps/js-string-search-19-result.png" />
+![js-string-search example 19 result](./code_sandbox/snaps/js-string-search-19-result.png)
 
 - [x] **Outcome:** **false** — index 5 is a space, not **w**.
 
@@ -8163,9 +8163,9 @@ let text = "Hello world, welcome to the universe.";
 text.startsWith("world", 6);
 ```
 
-<img alt="js-string-search example 20 source" src="./code_sandbox/snaps/js-string-search-20-code.png" />
+![js-string-search example 20 source](./code_sandbox/snaps/js-string-search-20-code.png)
 
-<img alt="js-string-search example 20 result" src="./code_sandbox/snaps/js-string-search-20-result.png" />
+![js-string-search example 20 result](./code_sandbox/snaps/js-string-search-20-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -8182,9 +8182,9 @@ let text = "John Doe";
 text.endsWith("Doe");
 ```
 
-<img alt="js-string-search example 21 source" src="./code_sandbox/snaps/js-string-search-21-code.png" />
+![js-string-search example 21 source](./code_sandbox/snaps/js-string-search-21-code.png)
 
-<img alt="js-string-search example 21 result" src="./code_sandbox/snaps/js-string-search-21-result.png" />
+![js-string-search example 21 result](./code_sandbox/snaps/js-string-search-21-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -8202,9 +8202,9 @@ let text = "Hello world, welcome to the universe.";
 text.endsWith("world", 11);
 ```
 
-<img alt="js-string-search example 22 source" src="./code_sandbox/snaps/js-string-search-22-code.png" />
+![js-string-search example 22 source](./code_sandbox/snaps/js-string-search-22-code.png)
 
-<img alt="js-string-search example 22 result" src="./code_sandbox/snaps/js-string-search-22-result.png" />
+![js-string-search example 22 result](./code_sandbox/snaps/js-string-search-22-result.png)
 
 - [x] **Outcome:** **true** — the 11-character prefix ends with **world**.
 
@@ -8436,9 +8436,9 @@ name.at(2);
 name.at(-5);
 ```
 
-<img alt="js-string-reference example 1 source" src="./code_sandbox/snaps/js-string-reference-01-code.png" />
+![js-string-reference example 1 source](./code_sandbox/snaps/js-string-reference-01-code.png)
 
-<img alt="js-string-reference example 1 result" src="./code_sandbox/snaps/js-string-reference-01-result.png" />
+![js-string-reference example 1 result](./code_sandbox/snaps/js-string-reference-01-result.png)
 
 - [x] **Outcome:** `at(2)` is **S** (third character); `at(-5)` is **h**.
 
@@ -8457,9 +8457,9 @@ let text = "HELLO WORLD";
 let char = text.charAt(0);
 ```
 
-<img alt="js-string-reference example 2 source" src="./code_sandbox/snaps/js-string-reference-02-code.png" />
+![js-string-reference example 2 source](./code_sandbox/snaps/js-string-reference-02-code.png)
 
-<img alt="js-string-reference example 2 result" src="./code_sandbox/snaps/js-string-reference-02-result.png" />
+![js-string-reference example 2 result](./code_sandbox/snaps/js-string-reference-02-result.png)
 
 - [x] **Outcome:** `charAt(0)` is **H**. `charAt(99)` is an **empty string**.
 
@@ -8477,9 +8477,9 @@ let text = "HELLO WORLD";
 let char = text.charCodeAt(0);
 ```
 
-<img alt="js-string-reference example 3 source" src="./code_sandbox/snaps/js-string-reference-03-code.png" />
+![js-string-reference example 3 source](./code_sandbox/snaps/js-string-reference-03-code.png)
 
-<img alt="js-string-reference example 3 result" src="./code_sandbox/snaps/js-string-reference-03-result.png" />
+![js-string-reference example 3 result](./code_sandbox/snaps/js-string-reference-03-result.png)
 
 - [x] **Outcome:** **72** — the UTF-16 code for **H**.
 
@@ -8497,9 +8497,9 @@ let text = "HELLO WORLD";
 let code = text.codePointAt(0);
 ```
 
-<img alt="js-string-reference example 4 source" src="./code_sandbox/snaps/js-string-reference-04-code.png" />
+![js-string-reference example 4 source](./code_sandbox/snaps/js-string-reference-04-code.png)
 
-<img alt="js-string-reference example 4 result" src="./code_sandbox/snaps/js-string-reference-04-result.png" />
+![js-string-reference example 4 result](./code_sandbox/snaps/js-string-reference-04-result.png)
 
 - [x] **Outcome:** **72** for `'H'`.
 
@@ -8518,9 +8518,9 @@ let text2 = "World";
 let text3 = text1.concat(" ", text2);
 ```
 
-<img alt="js-string-reference example 5 source" src="./code_sandbox/snaps/js-string-reference-05-code.png" />
+![js-string-reference example 5 source](./code_sandbox/snaps/js-string-reference-05-code.png)
 
-<img alt="js-string-reference example 5 result" src="./code_sandbox/snaps/js-string-reference-05-result.png" />
+![js-string-reference example 5 result](./code_sandbox/snaps/js-string-reference-05-result.png)
 
 - [x] **Outcome:** The joined string is **Hello World**.
 
@@ -8538,9 +8538,9 @@ let text = "Hello";
 text.constructor === String;
 ```
 
-<img alt="js-string-reference example 6 source" src="./code_sandbox/snaps/js-string-reference-06-code.png" />
+![js-string-reference example 6 source](./code_sandbox/snaps/js-string-reference-06-code.png)
 
-<img alt="js-string-reference example 6 result" src="./code_sandbox/snaps/js-string-reference-06-result.png" />
+![js-string-reference example 6 result](./code_sandbox/snaps/js-string-reference-06-result.png)
 
 - [x] **Outcome:** `constructor === String` is **true**; the name is **String**.
 
@@ -8558,9 +8558,9 @@ let text = "John Doe";
 text.endsWith("Doe");
 ```
 
-<img alt="js-string-reference example 7 source" src="./code_sandbox/snaps/js-string-reference-07-code.png" />
+![js-string-reference example 7 source](./code_sandbox/snaps/js-string-reference-07-code.png)
 
-<img alt="js-string-reference example 7 result" src="./code_sandbox/snaps/js-string-reference-07-result.png" />
+![js-string-reference example 7 result](./code_sandbox/snaps/js-string-reference-07-result.png)
 
 - [x] **Outcome:** **true** for "Doe"; **false** for "John".
 
@@ -8577,9 +8577,9 @@ Sandbox: `code_sandbox/js-string-reference/fromCharCode.html`
 String.fromCharCode(72, 69, 76, 76, 79);
 ```
 
-<img alt="js-string-reference example 8 source" src="./code_sandbox/snaps/js-string-reference-08-code.png" />
+![js-string-reference example 8 source](./code_sandbox/snaps/js-string-reference-08-code.png)
 
-<img alt="js-string-reference example 8 result" src="./code_sandbox/snaps/js-string-reference-08-result.png" />
+![js-string-reference example 8 result](./code_sandbox/snaps/js-string-reference-08-result.png)
 
 - [x] **Outcome:** The characters spell **HELLO**.
 
@@ -8597,9 +8597,9 @@ let text = "Hello world, welcome to the universe.";
 text.includes("world");
 ```
 
-<img alt="js-string-reference example 9 source" src="./code_sandbox/snaps/js-string-reference-09-code.png" />
+![js-string-reference example 9 source](./code_sandbox/snaps/js-string-reference-09-code.png)
 
-<img alt="js-string-reference example 9 result" src="./code_sandbox/snaps/js-string-reference-09-result.png" />
+![js-string-reference example 9 result](./code_sandbox/snaps/js-string-reference-09-result.png)
 
 - [x] **Outcome:** **true** from the start; **false** if you start searching at index **12** (past "world").
 
@@ -8617,9 +8617,9 @@ let text = "Please locate where 'locate' occurs!";
 let index = text.indexOf("locate");
 ```
 
-<img alt="js-string-reference example 10 source" src="./code_sandbox/snaps/js-string-reference-10-code.png" />
+![js-string-reference example 10 source](./code_sandbox/snaps/js-string-reference-10-code.png)
 
-<img alt="js-string-reference example 10 result" src="./code_sandbox/snaps/js-string-reference-10-result.png" />
+![js-string-reference example 10 result](./code_sandbox/snaps/js-string-reference-10-result.png)
 
 - [x] **Outcome:** First "locate" is at **7**; from index 15 the next is **21**; missing text is **-1**.
 
@@ -8637,9 +8637,9 @@ let ok = "Hello world!".isWellFormed();
 let bad = "Hello World \uD800".isWellFormed();
 ```
 
-<img alt="js-string-reference example 11 source" src="./code_sandbox/snaps/js-string-reference-11-code.png" />
+![js-string-reference example 11 source](./code_sandbox/snaps/js-string-reference-11-code.png)
 
-<img alt="js-string-reference example 11 result" src="./code_sandbox/snaps/js-string-reference-11-result.png" />
+![js-string-reference example 11 result](./code_sandbox/snaps/js-string-reference-11-result.png)
 
 - [x] **Outcome:** Normal text is **true**; a lone surrogate is **false**.
 
@@ -8657,9 +8657,9 @@ let text = "Please locate where 'locate' occurs!";
 text.lastIndexOf("locate");
 ```
 
-<img alt="js-string-reference example 12 source" src="./code_sandbox/snaps/js-string-reference-12-code.png" />
+![js-string-reference example 12 source](./code_sandbox/snaps/js-string-reference-12-code.png)
 
-<img alt="js-string-reference example 12 result" src="./code_sandbox/snaps/js-string-reference-12-result.png" />
+![js-string-reference example 12 result](./code_sandbox/snaps/js-string-reference-12-result.png)
 
 - [x] **Outcome:** Last "locate" is **21**; searching backward from 15 finds **7**; "John" is **-1**.
 
@@ -8677,9 +8677,9 @@ let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length;
 ```
 
-<img alt="js-string-reference example 13 source" src="./code_sandbox/snaps/js-string-reference-13-code.png" />
+![js-string-reference example 13 source](./code_sandbox/snaps/js-string-reference-13-code.png)
 
-<img alt="js-string-reference example 13 result" src="./code_sandbox/snaps/js-string-reference-13-result.png" />
+![js-string-reference example 13 result](./code_sandbox/snaps/js-string-reference-13-result.png)
 
 - [x] **Outcome:** A–Z is **26** characters.
 
@@ -8698,9 +8698,9 @@ Sandbox: `code_sandbox/js-string-reference/localeCompare.html`
 "ab".localeCompare("ab");
 ```
 
-<img alt="js-string-reference example 14 source" src="./code_sandbox/snaps/js-string-reference-14-code.png" />
+![js-string-reference example 14 source](./code_sandbox/snaps/js-string-reference-14-code.png)
 
-<img alt="js-string-reference example 14 result" src="./code_sandbox/snaps/js-string-reference-14-result.png" />
+![js-string-reference example 14 result](./code_sandbox/snaps/js-string-reference-14-result.png)
 
 - [x] **Outcome:** **ab** vs **cd** is negative; reverse is positive; equal strings return **0**.
 
@@ -8718,9 +8718,9 @@ let text = "The rain in SPAIN stays mainly in the plain";
 text.match(/ain/gi);
 ```
 
-<img alt="js-string-reference example 15 source" src="./code_sandbox/snaps/js-string-reference-15-code.png" />
+![js-string-reference example 15 source](./code_sandbox/snaps/js-string-reference-15-code.png)
 
-<img alt="js-string-reference example 15 result" src="./code_sandbox/snaps/js-string-reference-15-result.png" />
+![js-string-reference example 15 result](./code_sandbox/snaps/js-string-reference-15-result.png)
 
 - [x] **Outcome:** The global, case-insensitive match is **ain,AIN,ain,ain**.
 
@@ -8738,9 +8738,9 @@ let text = "I love Cats. Cats are great.";
 Array.from(text.matchAll(/Cats/g), m => m[0]);
 ```
 
-<img alt="js-string-reference example 16 source" src="./code_sandbox/snaps/js-string-reference-16-code.png" />
+![js-string-reference example 16 source](./code_sandbox/snaps/js-string-reference-16-code.png)
 
-<img alt="js-string-reference example 16 result" src="./code_sandbox/snaps/js-string-reference-16-result.png" />
+![js-string-reference example 16 result](./code_sandbox/snaps/js-string-reference-16-result.png)
 
 - [x] **Outcome:** The iterator yields **Cats, Cats** (two matches).
 
@@ -8759,9 +8759,9 @@ text.padEnd(4, "0");
 text.padEnd(4, "x");
 ```
 
-<img alt="js-string-reference example 17 source" src="./code_sandbox/snaps/js-string-reference-17-code.png" />
+![js-string-reference example 17 source](./code_sandbox/snaps/js-string-reference-17-code.png)
 
-<img alt="js-string-reference example 17 result" src="./code_sandbox/snaps/js-string-reference-17-result.png" />
+![js-string-reference example 17 result](./code_sandbox/snaps/js-string-reference-17-result.png)
 
 - [x] **Outcome:** **5000** and **5xxx**.
 
@@ -8780,9 +8780,9 @@ text.padStart(4, "0");
 text.padStart(4, "x");
 ```
 
-<img alt="js-string-reference example 18 source" src="./code_sandbox/snaps/js-string-reference-18-code.png" />
+![js-string-reference example 18 source](./code_sandbox/snaps/js-string-reference-18-code.png)
 
-<img alt="js-string-reference example 18 result" src="./code_sandbox/snaps/js-string-reference-18-result.png" />
+![js-string-reference example 18 result](./code_sandbox/snaps/js-string-reference-18-result.png)
 
 - [x] **Outcome:** **0005** and **xxx5**.
 
@@ -8802,9 +8802,9 @@ String.prototype.exclaim = function () {
 "Hi".exclaim();
 ```
 
-<img alt="js-string-reference example 19 source" src="./code_sandbox/snaps/js-string-reference-19-code.png" />
+![js-string-reference example 19 source](./code_sandbox/snaps/js-string-reference-19-code.png)
 
-<img alt="js-string-reference example 19 result" src="./code_sandbox/snaps/js-string-reference-19-result.png" />
+![js-string-reference example 19 result](./code_sandbox/snaps/js-string-reference-19-result.png)
 
 - [x] **Outcome:** `"Hi".exclaim()` returns **Hi!**.
 
@@ -8822,9 +8822,9 @@ let text = "Ha";
 text.repeat(3);
 ```
 
-<img alt="js-string-reference example 20 source" src="./code_sandbox/snaps/js-string-reference-20-code.png" />
+![js-string-reference example 20 source](./code_sandbox/snaps/js-string-reference-20-code.png)
 
-<img alt="js-string-reference example 20 result" src="./code_sandbox/snaps/js-string-reference-20-result.png" />
+![js-string-reference example 20 result](./code_sandbox/snaps/js-string-reference-20-result.png)
 
 - [x] **Outcome:** **HaHa** and **HaHaHaHa**. The original `Ha` is unchanged.
 
@@ -8842,9 +8842,9 @@ let text = "Please visit Microsoft and Microsoft!";
 text.replace("Microsoft", "W3Schools");
 ```
 
-<img alt="js-string-reference example 21 source" src="./code_sandbox/snaps/js-string-reference-21-code.png" />
+![js-string-reference example 21 source](./code_sandbox/snaps/js-string-reference-21-code.png)
 
-<img alt="js-string-reference example 21 result" src="./code_sandbox/snaps/js-string-reference-21-result.png" />
+![js-string-reference example 21 result](./code_sandbox/snaps/js-string-reference-21-result.png)
 
 - [x] **Outcome:** Without `/g` only the **first** Microsoft changes; with `/g` **both** change.
 
@@ -8862,9 +8862,9 @@ let text = "I love Cats. Cats are great.";
 text.replaceAll("Cats", "Dogs");
 ```
 
-<img alt="js-string-reference example 22 source" src="./code_sandbox/snaps/js-string-reference-22-code.png" />
+![js-string-reference example 22 source](./code_sandbox/snaps/js-string-reference-22-code.png)
 
-<img alt="js-string-reference example 22 result" src="./code_sandbox/snaps/js-string-reference-22-result.png" />
+![js-string-reference example 22 result](./code_sandbox/snaps/js-string-reference-22-result.png)
 
 - [x] **Outcome:** Both **Cats** become **Dogs**: **I love Dogs. Dogs are great.**
 
@@ -8883,9 +8883,9 @@ text.search("locate");
 text.search(/locate/);
 ```
 
-<img alt="js-string-reference example 23 source" src="./code_sandbox/snaps/js-string-reference-23-code.png" />
+![js-string-reference example 23 source](./code_sandbox/snaps/js-string-reference-23-code.png)
 
-<img alt="js-string-reference example 23 result" src="./code_sandbox/snaps/js-string-reference-23-result.png" />
+![js-string-reference example 23 result](./code_sandbox/snaps/js-string-reference-23-result.png)
 
 - [x] **Outcome:** Both forms return **7** for this string.
 
@@ -8905,9 +8905,9 @@ text.slice(7);
 text.slice(-12, -6);
 ```
 
-<img alt="js-string-reference example 24 source" src="./code_sandbox/snaps/js-string-reference-24-code.png" />
+![js-string-reference example 24 source](./code_sandbox/snaps/js-string-reference-24-code.png)
 
-<img alt="js-string-reference example 24 result" src="./code_sandbox/snaps/js-string-reference-24-result.png" />
+![js-string-reference example 24 result](./code_sandbox/snaps/js-string-reference-24-result.png)
 
 - [x] **Outcome:** `slice(7, 13)` is **Banana**; `slice(7)` is **Banana, Kiwi**; `slice(-12, -6)` is **Banana**.
 
@@ -8925,9 +8925,9 @@ let text = "The quick brown fox.";
 text.split(" ");
 ```
 
-<img alt="js-string-reference example 25 source" src="./code_sandbox/snaps/js-string-reference-25-code.png" />
+![js-string-reference example 25 source](./code_sandbox/snaps/js-string-reference-25-code.png)
 
-<img alt="js-string-reference example 25 result" src="./code_sandbox/snaps/js-string-reference-25-result.png" />
+![js-string-reference example 25 result](./code_sandbox/snaps/js-string-reference-25-result.png)
 
 - [x] **Outcome:** `split(" ")` is **["The","quick","brown","fox."]**; `split("")` on `"Hi"` is **["H","i"]**.
 
@@ -8946,9 +8946,9 @@ text.startsWith("Hello");
 text.startsWith("world");
 ```
 
-<img alt="js-string-reference example 26 source" src="./code_sandbox/snaps/js-string-reference-26-code.png" />
+![js-string-reference example 26 source](./code_sandbox/snaps/js-string-reference-26-code.png)
 
-<img alt="js-string-reference example 26 result" src="./code_sandbox/snaps/js-string-reference-26-result.png" />
+![js-string-reference example 26 result](./code_sandbox/snaps/js-string-reference-26-result.png)
 
 - [x] **Outcome:** **true** for "Hello"; **false** for "world" unless you start at index **6**.
 
@@ -8968,9 +8968,9 @@ str.substr(7);
 str.substr(-4);
 ```
 
-<img alt="js-string-reference example 27 source" src="./code_sandbox/snaps/js-string-reference-27-code.png" />
+![js-string-reference example 27 source](./code_sandbox/snaps/js-string-reference-27-code.png)
 
-<img alt="js-string-reference example 27 result" src="./code_sandbox/snaps/js-string-reference-27-result.png" />
+![js-string-reference example 27 result](./code_sandbox/snaps/js-string-reference-27-result.png)
 
 - [x] **Outcome:** `substr(7, 6)` is **Banana**; from 7 to the end is **Banana, Kiwi**; `-4` is **Kiwi**. Prefer **slice/substring**.
 
@@ -8988,9 +8988,9 @@ let str = "Apple, Banana, Kiwi";
 str.substring(7, 13);
 ```
 
-<img alt="js-string-reference example 28 source" src="./code_sandbox/snaps/js-string-reference-28-code.png" />
+![js-string-reference example 28 source](./code_sandbox/snaps/js-string-reference-28-code.png)
 
-<img alt="js-string-reference example 28 result" src="./code_sandbox/snaps/js-string-reference-28-result.png" />
+![js-string-reference example 28 result](./code_sandbox/snaps/js-string-reference-28-result.png)
 
 - [x] **Outcome:** `substring(7, 13)` is **Banana**. Negatives are treated as **0**, so you get the start of the string.
 
@@ -9008,9 +9008,9 @@ let text = "Hello WORLD!";
 text.toLocaleLowerCase();
 ```
 
-<img alt="js-string-reference example 29 source" src="./code_sandbox/snaps/js-string-reference-29-code.png" />
+![js-string-reference example 29 source](./code_sandbox/snaps/js-string-reference-29-code.png)
 
-<img alt="js-string-reference example 29 result" src="./code_sandbox/snaps/js-string-reference-29-result.png" />
+![js-string-reference example 29 result](./code_sandbox/snaps/js-string-reference-29-result.png)
 
 - [x] **Outcome:** The result is **hello world!**.
 
@@ -9028,9 +9028,9 @@ let text = "Hello World!";
 text.toLocaleUpperCase();
 ```
 
-<img alt="js-string-reference example 30 source" src="./code_sandbox/snaps/js-string-reference-30-code.png" />
+![js-string-reference example 30 source](./code_sandbox/snaps/js-string-reference-30-code.png)
 
-<img alt="js-string-reference example 30 result" src="./code_sandbox/snaps/js-string-reference-30-result.png" />
+![js-string-reference example 30 result](./code_sandbox/snaps/js-string-reference-30-result.png)
 
 - [x] **Outcome:** The result is **HELLO WORLD!**.
 
@@ -9048,9 +9048,9 @@ let text1 = "Hello World!";
 let text2 = text1.toLowerCase();
 ```
 
-<img alt="js-string-reference example 31 source" src="./code_sandbox/snaps/js-string-reference-31-code.png" />
+![js-string-reference example 31 source](./code_sandbox/snaps/js-string-reference-31-code.png)
 
-<img alt="js-string-reference example 31 result" src="./code_sandbox/snaps/js-string-reference-31-result.png" />
+![js-string-reference example 31 result](./code_sandbox/snaps/js-string-reference-31-result.png)
 
 - [x] **Outcome:** The new string is **hello world!**; **Hello World!** is still the original.
 
@@ -9068,9 +9068,9 @@ let obj = new String("Hello");
 obj.toString();
 ```
 
-<img alt="js-string-reference example 32 source" src="./code_sandbox/snaps/js-string-reference-32-code.png" />
+![js-string-reference example 32 source](./code_sandbox/snaps/js-string-reference-32-code.png)
 
-<img alt="js-string-reference example 32 result" src="./code_sandbox/snaps/js-string-reference-32-result.png" />
+![js-string-reference example 32 result](./code_sandbox/snaps/js-string-reference-32-result.png)
 
 - [x] **Outcome:** The object’s `toString()` is the primitive **Hello** (`typeof` **string**).
 
@@ -9087,9 +9087,9 @@ let text1 = "Hello World!";
 let text2 = text1.toUpperCase();
 ```
 
-<img alt="js-string-reference example 33 source" src="./code_sandbox/snaps/js-string-reference-33-code.png" />
+![js-string-reference example 33 source](./code_sandbox/snaps/js-string-reference-33-code.png)
 
-<img alt="js-string-reference example 33 result" src="./code_sandbox/snaps/js-string-reference-33-result.png" />
+![js-string-reference example 33 result](./code_sandbox/snaps/js-string-reference-33-result.png)
 
 - [x] **Outcome:** The result is **HELLO WORLD!**.
 
@@ -9107,9 +9107,9 @@ let text = "Hello World \uD800";
 text.toWellFormed();
 ```
 
-<img alt="js-string-reference example 34 source" src="./code_sandbox/snaps/js-string-reference-34-code.png" />
+![js-string-reference example 34 source](./code_sandbox/snaps/js-string-reference-34-code.png)
 
-<img alt="js-string-reference example 34 result" src="./code_sandbox/snaps/js-string-reference-34-result.png" />
+![js-string-reference example 34 result](./code_sandbox/snaps/js-string-reference-34-result.png)
 
 - [x] **Outcome:** The original is **not** well formed; `toWellFormed()` replaces the lone surrogate with **�**.
 
@@ -9127,9 +9127,9 @@ let original = " Hello ";
 let trimmed = original.trim();
 ```
 
-<img alt="js-string-reference example 35 source" src="./code_sandbox/snaps/js-string-reference-35-code.png" />
+![js-string-reference example 35 source](./code_sandbox/snaps/js-string-reference-35-code.png)
 
-<img alt="js-string-reference example 35 result" src="./code_sandbox/snaps/js-string-reference-35-result.png" />
+![js-string-reference example 35 result](./code_sandbox/snaps/js-string-reference-35-result.png)
 
 - [x] **Outcome:** The original still has spaces (`' Hello '`); `trim()` returns **`'Hello'`**.
 
@@ -9146,9 +9146,9 @@ let text1 = " Hello World! ";
 let text2 = text1.trimEnd();
 ```
 
-<img alt="js-string-reference example 36 source" src="./code_sandbox/snaps/js-string-reference-36-code.png" />
+![js-string-reference example 36 source](./code_sandbox/snaps/js-string-reference-36-code.png)
 
-<img alt="js-string-reference example 36 result" src="./code_sandbox/snaps/js-string-reference-36-result.png" />
+![js-string-reference example 36 result](./code_sandbox/snaps/js-string-reference-36-result.png)
 
 - [x] **Outcome:** Leading space remains; the trailing space is gone: **`' Hello World!'`**.
 
@@ -9165,9 +9165,9 @@ let text1 = " Hello World! ";
 let text2 = text1.trimStart();
 ```
 
-<img alt="js-string-reference example 37 source" src="./code_sandbox/snaps/js-string-reference-37-code.png" />
+![js-string-reference example 37 source](./code_sandbox/snaps/js-string-reference-37-code.png)
 
-<img alt="js-string-reference example 37 result" src="./code_sandbox/snaps/js-string-reference-37-result.png" />
+![js-string-reference example 37 result](./code_sandbox/snaps/js-string-reference-37-result.png)
 
 - [x] **Outcome:** Trailing space remains; the leading space is gone: **`'Hello World! '`**.
 
@@ -9185,9 +9185,9 @@ let obj = new String("Hello");
 obj.valueOf();
 ```
 
-<img alt="js-string-reference example 38 source" src="./code_sandbox/snaps/js-string-reference-38-code.png" />
+![js-string-reference example 38 source](./code_sandbox/snaps/js-string-reference-38-code.png)
 
-<img alt="js-string-reference example 38 result" src="./code_sandbox/snaps/js-string-reference-38-result.png" />
+![js-string-reference example 38 result](./code_sandbox/snaps/js-string-reference-38-result.png)
 
 - [x] **Outcome:** `valueOf()` is the primitive **Hello** (`typeof` **string**), while `obj` itself is an **object**.
 
@@ -9209,9 +9209,9 @@ t.link("https://example.com");
 // also: anchor, big, blink, fixed, fontcolor, fontsize, small, strike, sub, sup
 ```
 
-<img alt="js-string-reference example 39 source" src="./code_sandbox/snaps/js-string-reference-39-code.png" />
+![js-string-reference example 39 source](./code_sandbox/snaps/js-string-reference-39-code.png)
 
-<img alt="js-string-reference example 39 result" src="./code_sandbox/snaps/js-string-reference-39-result.png" />
+![js-string-reference example 39 result](./code_sandbox/snaps/js-string-reference-39-result.png)
 
 - [x] **Outcome:** Each call returns a **string of HTML** (for example `bold()` → `<b>Hi</b>`). Do **not** use these; use CSS/DOM instead.
 
@@ -9460,9 +9460,9 @@ let x = 3.14;    // A number with decimals
 let y = 3;       // A number without decimals
 ```
 
-<img alt="js-numbers example 1 source" src="./code_sandbox/snaps/js-numbers-01-code.png" />
+![js-numbers example 1 source](./code_sandbox/snaps/js-numbers-01-code.png)
 
-<img alt="js-numbers example 1 result" src="./code_sandbox/snaps/js-numbers-01-result.png" />
+![js-numbers example 1 result](./code_sandbox/snaps/js-numbers-01-result.png)
 
 - [x] **Outcome:** x is **3.14** and y is **3**. Both have `typeof` **number**.
 
@@ -9480,9 +9480,9 @@ let x = 123e5;    // 12300000
 let y = 123e-5;   // 0.00123
 ```
 
-<img alt="js-numbers example 2 source" src="./code_sandbox/snaps/js-numbers-02-code.png" />
+![js-numbers example 2 source](./code_sandbox/snaps/js-numbers-02-code.png)
 
-<img alt="js-numbers example 2 result" src="./code_sandbox/snaps/js-numbers-02-result.png" />
+![js-numbers example 2 result](./code_sandbox/snaps/js-numbers-02-result.png)
 
 - [x] **Outcome:** x is **12300000**; y is **0.00123**.
 
@@ -9501,9 +9501,9 @@ let x = 999999999999999;   // x will be 999999999999999
 let y = 9999999999999999;  // y will be 10000000000000000
 ```
 
-<img alt="js-numbers example 3 source" src="./code_sandbox/snaps/js-numbers-03-code.png" />
+![js-numbers example 3 source](./code_sandbox/snaps/js-numbers-03-code.png)
 
-<img alt="js-numbers example 3 result" src="./code_sandbox/snaps/js-numbers-03-result.png" />
+![js-numbers example 3 result](./code_sandbox/snaps/js-numbers-03-result.png)
 
 - [x] **Outcome:** x stays **999999999999999**. y rounds to **10000000000000000**.
 
@@ -9520,9 +9520,9 @@ Sandbox: `code_sandbox/js-numbers/float-sum.html`
 let x = 0.2 + 0.1;
 ```
 
-<img alt="js-numbers example 4 source" src="./code_sandbox/snaps/js-numbers-04-code.png" />
+![js-numbers example 4 source](./code_sandbox/snaps/js-numbers-04-code.png)
 
-<img alt="js-numbers example 4 result" src="./code_sandbox/snaps/js-numbers-04-result.png" />
+![js-numbers example 4 result](./code_sandbox/snaps/js-numbers-04-result.png)
 
 - [x] **Outcome:** x is **0.30000000000000004**, not exactly 0.3. `x === 0.3` is **false**.
 
@@ -9539,9 +9539,9 @@ Sandbox: `code_sandbox/js-numbers/float-fix.html`
 let x = (0.2 * 10 + 0.1 * 10) / 10;
 ```
 
-<img alt="js-numbers example 5 source" src="./code_sandbox/snaps/js-numbers-05-code.png" />
+![js-numbers example 5 source](./code_sandbox/snaps/js-numbers-05-code.png)
 
-<img alt="js-numbers example 5 result" src="./code_sandbox/snaps/js-numbers-05-result.png" />
+![js-numbers example 5 result](./code_sandbox/snaps/js-numbers-05-result.png)
 
 - [x] **Outcome:** x is **0.3** and `x === 0.3` is **true**.
 
@@ -9560,9 +9560,9 @@ let y = 20;
 let z = x + y;
 ```
 
-<img alt="js-numbers example 6 source" src="./code_sandbox/snaps/js-numbers-06-code.png" />
+![js-numbers example 6 source](./code_sandbox/snaps/js-numbers-06-code.png)
 
-<img alt="js-numbers example 6 result" src="./code_sandbox/snaps/js-numbers-06-result.png" />
+![js-numbers example 6 result](./code_sandbox/snaps/js-numbers-06-result.png)
 
 - [x] **Outcome:** z is **30** (a number).
 
@@ -9581,9 +9581,9 @@ let y = "20";
 let z = x + y;
 ```
 
-<img alt="js-numbers example 7 source" src="./code_sandbox/snaps/js-numbers-07-code.png" />
+![js-numbers example 7 source](./code_sandbox/snaps/js-numbers-07-code.png)
 
-<img alt="js-numbers example 7 result" src="./code_sandbox/snaps/js-numbers-07-result.png" />
+![js-numbers example 7 result](./code_sandbox/snaps/js-numbers-07-result.png)
 
 - [x] **Outcome:** z is **"1020"** (a string).
 
@@ -9602,9 +9602,9 @@ let y = "20";
 let z = x + y;
 ```
 
-<img alt="js-numbers example 8 source" src="./code_sandbox/snaps/js-numbers-08-code.png" />
+![js-numbers example 8 source](./code_sandbox/snaps/js-numbers-08-code.png)
 
-<img alt="js-numbers example 8 result" src="./code_sandbox/snaps/js-numbers-08-result.png" />
+![js-numbers example 8 result](./code_sandbox/snaps/js-numbers-08-result.png)
 
 - [x] **Outcome:** z is **"1020"**.
 
@@ -9623,9 +9623,9 @@ let y = 20;
 let z = x + y;
 ```
 
-<img alt="js-numbers example 9 source" src="./code_sandbox/snaps/js-numbers-09-code.png" />
+![js-numbers example 9 source](./code_sandbox/snaps/js-numbers-09-code.png)
 
-<img alt="js-numbers example 9 result" src="./code_sandbox/snaps/js-numbers-09-result.png" />
+![js-numbers example 9 result](./code_sandbox/snaps/js-numbers-09-result.png)
 
 - [x] **Outcome:** z is **"1020"**.
 
@@ -9644,9 +9644,9 @@ let y = 20;
 let z = "The result is: " + x + y;
 ```
 
-<img alt="js-numbers example 10 source" src="./code_sandbox/snaps/js-numbers-10-code.png" />
+![js-numbers example 10 source](./code_sandbox/snaps/js-numbers-10-code.png)
 
-<img alt="js-numbers example 10 result" src="./code_sandbox/snaps/js-numbers-10-result.png" />
+![js-numbers example 10 result](./code_sandbox/snaps/js-numbers-10-result.png)
 
 - [x] **Outcome:** z is **"The result is: 1020"**, not "The result is: 30".
 
@@ -9666,9 +9666,9 @@ let z = "30";
 let result = x + y + z;
 ```
 
-<img alt="js-numbers example 11 source" src="./code_sandbox/snaps/js-numbers-11-code.png" />
+![js-numbers example 11 source](./code_sandbox/snaps/js-numbers-11-code.png)
 
-<img alt="js-numbers example 11 result" src="./code_sandbox/snaps/js-numbers-11-result.png" />
+![js-numbers example 11 result](./code_sandbox/snaps/js-numbers-11-result.png)
 
 - [x] **Outcome:** result is **"3030"** because the interpreter works **left to right**.
 
@@ -9686,9 +9686,9 @@ let x = 100;      // x is a number
 let y = "100";    // y is a string
 ```
 
-<img alt="js-numbers example 12 source" src="./code_sandbox/snaps/js-numbers-12-code.png" />
+![js-numbers example 12 source](./code_sandbox/snaps/js-numbers-12-code.png)
 
-<img alt="js-numbers example 12 result" src="./code_sandbox/snaps/js-numbers-12-result.png" />
+![js-numbers example 12 result](./code_sandbox/snaps/js-numbers-12-result.png)
 
 - [x] **Outcome:** x is number **100**; y is string **"100"**.
 
@@ -9707,9 +9707,9 @@ let y = "10";
 let z = x / y;
 ```
 
-<img alt="js-numbers example 13 source" src="./code_sandbox/snaps/js-numbers-13-code.png" />
+![js-numbers example 13 source](./code_sandbox/snaps/js-numbers-13-code.png)
 
-<img alt="js-numbers example 13 result" src="./code_sandbox/snaps/js-numbers-13-result.png" />
+![js-numbers example 13 result](./code_sandbox/snaps/js-numbers-13-result.png)
 
 - [x] **Outcome:** z is **10** (a number).
 
@@ -9728,9 +9728,9 @@ let y = "10";
 let z = x * y;
 ```
 
-<img alt="js-numbers example 14 source" src="./code_sandbox/snaps/js-numbers-14-code.png" />
+![js-numbers example 14 source](./code_sandbox/snaps/js-numbers-14-code.png)
 
-<img alt="js-numbers example 14 result" src="./code_sandbox/snaps/js-numbers-14-result.png" />
+![js-numbers example 14 result](./code_sandbox/snaps/js-numbers-14-result.png)
 
 - [x] **Outcome:** z is **1000**.
 
@@ -9749,9 +9749,9 @@ let y = "10";
 let z = x - y;
 ```
 
-<img alt="js-numbers example 15 source" src="./code_sandbox/snaps/js-numbers-15-code.png" />
+![js-numbers example 15 source](./code_sandbox/snaps/js-numbers-15-code.png)
 
-<img alt="js-numbers example 15 result" src="./code_sandbox/snaps/js-numbers-15-result.png" />
+![js-numbers example 15 result](./code_sandbox/snaps/js-numbers-15-result.png)
 
 - [x] **Outcome:** z is **90**.
 
@@ -9770,9 +9770,9 @@ let y = "10";
 let z = x + y;
 ```
 
-<img alt="js-numbers example 16 source" src="./code_sandbox/snaps/js-numbers-16-code.png" />
+![js-numbers example 16 source](./code_sandbox/snaps/js-numbers-16-code.png)
 
-<img alt="js-numbers example 16 result" src="./code_sandbox/snaps/js-numbers-16-result.png" />
+![js-numbers example 16 result](./code_sandbox/snaps/js-numbers-16-result.png)
 
 - [x] **Outcome:** z is **"10010"**.
 
@@ -9789,9 +9789,9 @@ Sandbox: `code_sandbox/js-numbers/nan-apple.html`
 let x = 100 / "Apple";
 ```
 
-<img alt="js-numbers example 17 source" src="./code_sandbox/snaps/js-numbers-17-code.png" />
+![js-numbers example 17 source](./code_sandbox/snaps/js-numbers-17-code.png)
 
-<img alt="js-numbers example 17 result" src="./code_sandbox/snaps/js-numbers-17-result.png" />
+![js-numbers example 17 result](./code_sandbox/snaps/js-numbers-17-result.png)
 
 - [x] **Outcome:** x is **NaN**.
 
@@ -9808,9 +9808,9 @@ Sandbox: `code_sandbox/js-numbers/divide-numeric-string.html`
 let x = 100 / "10";
 ```
 
-<img alt="js-numbers example 18 source" src="./code_sandbox/snaps/js-numbers-18-code.png" />
+![js-numbers example 18 source](./code_sandbox/snaps/js-numbers-18-code.png)
 
-<img alt="js-numbers example 18 result" src="./code_sandbox/snaps/js-numbers-18-result.png" />
+![js-numbers example 18 result](./code_sandbox/snaps/js-numbers-18-result.png)
 
 - [x] **Outcome:** x is **10**.
 
@@ -9828,9 +9828,9 @@ let x = 100 / "Apple";
 isNaN(x);
 ```
 
-<img alt="js-numbers example 19 source" src="./code_sandbox/snaps/js-numbers-19-code.png" />
+![js-numbers example 19 source](./code_sandbox/snaps/js-numbers-19-code.png)
 
-<img alt="js-numbers example 19 result" src="./code_sandbox/snaps/js-numbers-19-result.png" />
+![js-numbers example 19 result](./code_sandbox/snaps/js-numbers-19-result.png)
 
 - [x] **Outcome:** `isNaN(x)` is **true**. `isNaN(100 / "10")` is **false**.
 
@@ -9849,9 +9849,9 @@ let y = 5;
 let z = x + y;
 ```
 
-<img alt="js-numbers example 20 source" src="./code_sandbox/snaps/js-numbers-20-code.png" />
+![js-numbers example 20 source](./code_sandbox/snaps/js-numbers-20-code.png)
 
-<img alt="js-numbers example 20 result" src="./code_sandbox/snaps/js-numbers-20-result.png" />
+![js-numbers example 20 result](./code_sandbox/snaps/js-numbers-20-result.png)
 
 - [x] **Outcome:** z is **NaN**.
 
@@ -9870,9 +9870,9 @@ let y = "5";
 let z = x + y;
 ```
 
-<img alt="js-numbers example 21 source" src="./code_sandbox/snaps/js-numbers-21-code.png" />
+![js-numbers example 21 source](./code_sandbox/snaps/js-numbers-21-code.png)
 
-<img alt="js-numbers example 21 result" src="./code_sandbox/snaps/js-numbers-21-result.png" />
+![js-numbers example 21 result](./code_sandbox/snaps/js-numbers-21-result.png)
 
 - [x] **Outcome:** z is **"NaN5"**.
 
@@ -9889,9 +9889,9 @@ Sandbox: `code_sandbox/js-numbers/typeof-nan.html`
 typeof NaN;
 ```
 
-<img alt="js-numbers example 22 source" src="./code_sandbox/snaps/js-numbers-22-code.png" />
+![js-numbers example 22 source](./code_sandbox/snaps/js-numbers-22-code.png)
 
-<img alt="js-numbers example 22 result" src="./code_sandbox/snaps/js-numbers-22-result.png" />
+![js-numbers example 22 result](./code_sandbox/snaps/js-numbers-22-result.png)
 
 - [x] **Outcome:** `typeof NaN` is **"number"**.
 
@@ -9911,9 +9911,9 @@ while (myNumber != Infinity) {
 }
 ```
 
-<img alt="js-numbers example 23 source" src="./code_sandbox/snaps/js-numbers-23-code.png" />
+![js-numbers example 23 source](./code_sandbox/snaps/js-numbers-23-code.png)
 
-<img alt="js-numbers example 23 result" src="./code_sandbox/snaps/js-numbers-23-result.png" />
+![js-numbers example 23 result](./code_sandbox/snaps/js-numbers-23-result.png)
 
 - [x] **Outcome:** After the loop, myNumber is **Infinity**.
 
@@ -9931,9 +9931,9 @@ let x = 2 / 0;
 let y = -2 / 0;
 ```
 
-<img alt="js-numbers example 24 source" src="./code_sandbox/snaps/js-numbers-24-code.png" />
+![js-numbers example 24 source](./code_sandbox/snaps/js-numbers-24-code.png)
 
-<img alt="js-numbers example 24 result" src="./code_sandbox/snaps/js-numbers-24-result.png" />
+![js-numbers example 24 result](./code_sandbox/snaps/js-numbers-24-result.png)
 
 - [x] **Outcome:** x is **Infinity**; y is **-Infinity**.
 
@@ -9950,9 +9950,9 @@ Sandbox: `code_sandbox/js-numbers/typeof-infinity.html`
 typeof Infinity;
 ```
 
-<img alt="js-numbers example 25 source" src="./code_sandbox/snaps/js-numbers-25-code.png" />
+![js-numbers example 25 source](./code_sandbox/snaps/js-numbers-25-code.png)
 
-<img alt="js-numbers example 25 result" src="./code_sandbox/snaps/js-numbers-25-result.png" />
+![js-numbers example 25 result](./code_sandbox/snaps/js-numbers-25-result.png)
 
 - [x] **Outcome:** Both Infinity and -Infinity have `typeof` **"number"**.
 
@@ -9970,9 +9970,9 @@ Sandbox: `code_sandbox/js-numbers/hex.html`
 let x = 0xFF;
 ```
 
-<img alt="js-numbers example 26 source" src="./code_sandbox/snaps/js-numbers-26-code.png" />
+![js-numbers example 26 source](./code_sandbox/snaps/js-numbers-26-code.png)
 
-<img alt="js-numbers example 26 result" src="./code_sandbox/snaps/js-numbers-26-result.png" />
+![js-numbers example 26 result](./code_sandbox/snaps/js-numbers-26-result.png)
 
 - [x] **Outcome:** x is **255**.
 
@@ -9996,9 +9996,9 @@ myNumber.toString(8);
 myNumber.toString(2);
 ```
 
-<img alt="js-numbers example 27 source" src="./code_sandbox/snaps/js-numbers-27-code.png" />
+![js-numbers example 27 source](./code_sandbox/snaps/js-numbers-27-code.png)
 
-<img alt="js-numbers example 27 result" src="./code_sandbox/snaps/js-numbers-27-result.png" />
+![js-numbers example 27 result](./code_sandbox/snaps/js-numbers-27-result.png)
 
 - [x] **Outcome:** 32 in those bases is **10**, **20**, **28**, **32**, **40**, **100000**.
 
@@ -10017,9 +10017,9 @@ let x = 123;
 let y = new Number(123);
 ```
 
-<img alt="js-numbers example 28 source" src="./code_sandbox/snaps/js-numbers-28-code.png" />
+![js-numbers example 28 source](./code_sandbox/snaps/js-numbers-28-code.png)
 
-<img alt="js-numbers example 28 result" src="./code_sandbox/snaps/js-numbers-28-result.png" />
+![js-numbers example 28 result](./code_sandbox/snaps/js-numbers-28-result.png)
 
 - [x] **Outcome:** `typeof x` is **"number"**; `typeof y` is **"object"**.
 
@@ -10036,9 +10036,9 @@ let x = 500;
 let y = new Number(500);
 ```
 
-<img alt="js-numbers example 29 source" src="./code_sandbox/snaps/js-numbers-29-code.png" />
+![js-numbers example 29 source](./code_sandbox/snaps/js-numbers-29-code.png)
 
-<img alt="js-numbers example 29 result" src="./code_sandbox/snaps/js-numbers-29-result.png" />
+![js-numbers example 29 result](./code_sandbox/snaps/js-numbers-29-result.png)
 
 - [x] **Outcome:** `x == y` is **true**.
 
@@ -10056,9 +10056,9 @@ let x = 500;
 let y = new Number(500);
 ```
 
-<img alt="js-numbers example 30 source" src="./code_sandbox/snaps/js-numbers-30-code.png" />
+![js-numbers example 30 source](./code_sandbox/snaps/js-numbers-30-code.png)
 
-<img alt="js-numbers example 30 result" src="./code_sandbox/snaps/js-numbers-30-result.png" />
+![js-numbers example 30 result](./code_sandbox/snaps/js-numbers-30-result.png)
 
 - [x] **Outcome:** `x === y` is **false**.
 
@@ -10076,9 +10076,9 @@ let x = new Number(500);
 let y = new Number(500);
 ```
 
-<img alt="js-numbers example 31 source" src="./code_sandbox/snaps/js-numbers-31-code.png" />
+![js-numbers example 31 source](./code_sandbox/snaps/js-numbers-31-code.png)
 
-<img alt="js-numbers example 31 result" src="./code_sandbox/snaps/js-numbers-31-result.png" />
+![js-numbers example 31 result](./code_sandbox/snaps/js-numbers-31-result.png)
 
 - [x] **Outcome:** `x == y` is **false**.
 
@@ -10096,9 +10096,9 @@ let x = new Number(500);
 let y = new Number(500);
 ```
 
-<img alt="js-numbers example 32 source" src="./code_sandbox/snaps/js-numbers-32-code.png" />
+![js-numbers example 32 source](./code_sandbox/snaps/js-numbers-32-code.png)
 
-<img alt="js-numbers example 32 result" src="./code_sandbox/snaps/js-numbers-32-result.png" />
+![js-numbers example 32 result](./code_sandbox/snaps/js-numbers-32-result.png)
 
 - [x] **Outcome:** `x === y` is **false**. Two objects are never equal to each other this way.
 
@@ -10302,9 +10302,9 @@ x.toString();
 (100 + 23).toString();
 ```
 
-<img alt="js-number-methods example 1 source" src="./code_sandbox/snaps/js-number-methods-01-code.png" />
+![js-number-methods example 1 source](./code_sandbox/snaps/js-number-methods-01-code.png)
 
-<img alt="js-number-methods example 1 result" src="./code_sandbox/snaps/js-number-methods-01-result.png" />
+![js-number-methods example 1 result](./code_sandbox/snaps/js-number-methods-01-result.png)
 
 - [x] **Outcome:** All three return **"123"** (a string).
 
@@ -10322,9 +10322,9 @@ let x = 123;
 let text = x.toString(2);
 ```
 
-<img alt="js-number-methods example 2 source" src="./code_sandbox/snaps/js-number-methods-02-code.png" />
+![js-number-methods example 2 source](./code_sandbox/snaps/js-number-methods-02-code.png)
 
-<img alt="js-number-methods example 2 result" src="./code_sandbox/snaps/js-number-methods-02-result.png" />
+![js-number-methods example 2 result](./code_sandbox/snaps/js-number-methods-02-result.png)
 
 - [x] **Outcome:** text is **"1111011"** (123 in binary).
 
@@ -10344,9 +10344,9 @@ x.toExponential(4);
 x.toExponential(6);
 ```
 
-<img alt="js-number-methods example 3 source" src="./code_sandbox/snaps/js-number-methods-03-code.png" />
+![js-number-methods example 3 source](./code_sandbox/snaps/js-number-methods-03-code.png)
 
-<img alt="js-number-methods example 3 result" src="./code_sandbox/snaps/js-number-methods-03-result.png" />
+![js-number-methods example 3 result](./code_sandbox/snaps/js-number-methods-03-result.png)
 
 - [x] **Outcome:** With 2, 4, and 6 digits you get **9.66e+0**, **9.6560e+0**, **9.656000e+0**.
 
@@ -10367,9 +10367,9 @@ x.toFixed(4);
 x.toFixed(6);
 ```
 
-<img alt="js-number-methods example 4 source" src="./code_sandbox/snaps/js-number-methods-04-code.png" />
+![js-number-methods example 4 source](./code_sandbox/snaps/js-number-methods-04-code.png)
 
-<img alt="js-number-methods example 4 result" src="./code_sandbox/snaps/js-number-methods-04-result.png" />
+![js-number-methods example 4 result](./code_sandbox/snaps/js-number-methods-04-result.png)
 
 - [x] **Outcome:** Results: **10**, **9.66**, **9.6560**, **9.656000** (all strings).
 
@@ -10390,9 +10390,9 @@ x.toPrecision(4);
 x.toPrecision(6);
 ```
 
-<img alt="js-number-methods example 5 source" src="./code_sandbox/snaps/js-number-methods-05-code.png" />
+![js-number-methods example 5 source](./code_sandbox/snaps/js-number-methods-05-code.png)
 
-<img alt="js-number-methods example 5 result" src="./code_sandbox/snaps/js-number-methods-05-result.png" />
+![js-number-methods example 5 result](./code_sandbox/snaps/js-number-methods-05-result.png)
 
 - [x] **Outcome:** Results: **9.656**, **9.7**, **9.656**, **9.65600**.
 
@@ -10413,9 +10413,9 @@ x.valueOf();
 (100 + 23).valueOf();
 ```
 
-<img alt="js-number-methods example 6 source" src="./code_sandbox/snaps/js-number-methods-06-code.png" />
+![js-number-methods example 6 source](./code_sandbox/snaps/js-number-methods-06-code.png)
 
-<img alt="js-number-methods example 6 result" src="./code_sandbox/snaps/js-number-methods-06-result.png" />
+![js-number-methods example 6 result](./code_sandbox/snaps/js-number-methods-06-result.png)
 
 - [x] **Outcome:** All three expressions are the primitive **123**.
 
@@ -10442,9 +10442,9 @@ Number("10 33");
 Number("John");
 ```
 
-<img alt="js-number-methods example 7 source" src="./code_sandbox/snaps/js-number-methods-07-code.png" />
+![js-number-methods example 7 source](./code_sandbox/snaps/js-number-methods-07-code.png)
 
-<img alt="js-number-methods example 7 result" src="./code_sandbox/snaps/js-number-methods-07-result.png" />
+![js-number-methods example 7 result](./code_sandbox/snaps/js-number-methods-07-result.png)
 
 - [x] **Outcome:** **1**, **0**, **10**, **10**, **10**, **10**, **10.33**, then **NaN** for comma, space-inside, and John.
 
@@ -10461,9 +10461,9 @@ Sandbox: `code_sandbox/js-number-methods/number-date-epoch.html`
 Number(new Date("1970-01-01"));
 ```
 
-<img alt="js-number-methods example 8 source" src="./code_sandbox/snaps/js-number-methods-08-code.png" />
+![js-number-methods example 8 source](./code_sandbox/snaps/js-number-methods-08-code.png)
 
-<img alt="js-number-methods example 8 result" src="./code_sandbox/snaps/js-number-methods-08-result.png" />
+![js-number-methods example 8 result](./code_sandbox/snaps/js-number-methods-08-result.png)
 
 - [x] **Outcome:** **0** — the epoch itself.
 
@@ -10479,9 +10479,9 @@ Sandbox: `code_sandbox/js-number-methods/number-date-next-day.html`
 Number(new Date("1970-01-02"));
 ```
 
-<img alt="js-number-methods example 9 source" src="./code_sandbox/snaps/js-number-methods-09-code.png" />
+![js-number-methods example 9 source](./code_sandbox/snaps/js-number-methods-09-code.png)
 
-<img alt="js-number-methods example 9 result" src="./code_sandbox/snaps/js-number-methods-09-result.png" />
+![js-number-methods example 9 result](./code_sandbox/snaps/js-number-methods-09-result.png)
 
 - [x] **Outcome:** **86400000**.
 
@@ -10498,9 +10498,9 @@ Sandbox: `code_sandbox/js-number-methods/number-date-2017.html`
 Number(new Date("2017-09-30"));
 ```
 
-<img alt="js-number-methods example 10 source" src="./code_sandbox/snaps/js-number-methods-10-code.png" />
+![js-number-methods example 10 source](./code_sandbox/snaps/js-number-methods-10-code.png)
 
-<img alt="js-number-methods example 10 result" src="./code_sandbox/snaps/js-number-methods-10-result.png" />
+![js-number-methods example 10 result](./code_sandbox/snaps/js-number-methods-10-result.png)
 
 - [x] **Outcome:** **1506729600000** (UTC midnight on that day).
 
@@ -10524,9 +10524,9 @@ parseInt("10 years");
 parseInt("years 10");
 ```
 
-<img alt="js-number-methods example 11 source" src="./code_sandbox/snaps/js-number-methods-11-code.png" />
+![js-number-methods example 11 source](./code_sandbox/snaps/js-number-methods-11-code.png)
 
-<img alt="js-number-methods example 11 result" src="./code_sandbox/snaps/js-number-methods-11-result.png" />
+![js-number-methods example 11 result](./code_sandbox/snaps/js-number-methods-11-result.png)
 
 - [x] **Outcome:** **-10**, **-10**, **10**, **10**, **10**, **10**, **NaN**.
 
@@ -10547,9 +10547,9 @@ parseFloat("10 years");
 parseFloat("years 10");
 ```
 
-<img alt="js-number-methods example 12 source" src="./code_sandbox/snaps/js-number-methods-12-code.png" />
+![js-number-methods example 12 source](./code_sandbox/snaps/js-number-methods-12-code.png)
 
-<img alt="js-number-methods example 12 result" src="./code_sandbox/snaps/js-number-methods-12-result.png" />
+![js-number-methods example 12 result](./code_sandbox/snaps/js-number-methods-12-result.png)
 
 - [x] **Outcome:** **10**, **10.33**, **10**, **10**, **NaN**.
 
@@ -10567,9 +10567,9 @@ Number.isInteger(10);
 Number.isInteger(10.5);
 ```
 
-<img alt="js-number-methods example 13 source" src="./code_sandbox/snaps/js-number-methods-13-code.png" />
+![js-number-methods example 13 source](./code_sandbox/snaps/js-number-methods-13-code.png)
 
-<img alt="js-number-methods example 13 result" src="./code_sandbox/snaps/js-number-methods-13-result.png" />
+![js-number-methods example 13 result](./code_sandbox/snaps/js-number-methods-13-result.png)
 
 - [x] **Outcome:** **true** for 10; **false** for 10.5.
 
@@ -10586,9 +10586,9 @@ Sandbox: `code_sandbox/js-number-methods/isfinite.html`
 Number.isFinite(123);
 ```
 
-<img alt="js-number-methods example 14 source" src="./code_sandbox/snaps/js-number-methods-14-code.png" />
+![js-number-methods example 14 source](./code_sandbox/snaps/js-number-methods-14-code.png)
 
-<img alt="js-number-methods example 14 result" src="./code_sandbox/snaps/js-number-methods-14-result.png" />
+![js-number-methods example 14 result](./code_sandbox/snaps/js-number-methods-14-result.png)
 
 - [x] **Outcome:** **true** for 123; **false** for Infinity and NaN.
 
@@ -10606,9 +10606,9 @@ Sandbox: `code_sandbox/js-number-methods/isnan.html`
 Number.isNaN(123);
 ```
 
-<img alt="js-number-methods example 15 source" src="./code_sandbox/snaps/js-number-methods-15-code.png" />
+![js-number-methods example 15 source](./code_sandbox/snaps/js-number-methods-15-code.png)
 
-<img alt="js-number-methods example 15 result" src="./code_sandbox/snaps/js-number-methods-15-result.png" />
+![js-number-methods example 15 result](./code_sandbox/snaps/js-number-methods-15-result.png)
 
 - [x] **Outcome:** **false** for 123; **true** for NaN. `NaN === NaN` is **false**.
 
@@ -10627,9 +10627,9 @@ Number.isSafeInteger(10);
 Number.isSafeInteger(12345678901234567890);
 ```
 
-<img alt="js-number-methods example 16 source" src="./code_sandbox/snaps/js-number-methods-16-code.png" />
+![js-number-methods example 16 source](./code_sandbox/snaps/js-number-methods-16-code.png)
 
-<img alt="js-number-methods example 16 result" src="./code_sandbox/snaps/js-number-methods-16-result.png" />
+![js-number-methods example 16 result](./code_sandbox/snaps/js-number-methods-16-result.png)
 
 - [x] **Outcome:** **true** for 10 and 2⁵³−1; **false** for the 20-digit literal and 2⁵³.
 
@@ -10650,9 +10650,9 @@ Number.parseFloat("10 years");
 Number.parseFloat("years 10");
 ```
 
-<img alt="js-number-methods example 17 source" src="./code_sandbox/snaps/js-number-methods-17-code.png" />
+![js-number-methods example 17 source](./code_sandbox/snaps/js-number-methods-17-code.png)
 
-<img alt="js-number-methods example 17 result" src="./code_sandbox/snaps/js-number-methods-17-result.png" />
+![js-number-methods example 17 result](./code_sandbox/snaps/js-number-methods-17-result.png)
 
 - [x] **Outcome:** **10**, **10.33**, **10**, **10**, **NaN** — same as `parseFloat`.
 
@@ -10674,9 +10674,9 @@ Number.parseInt("10 years");
 Number.parseInt("years 10");
 ```
 
-<img alt="js-number-methods example 18 source" src="./code_sandbox/snaps/js-number-methods-18-code.png" />
+![js-number-methods example 18 source](./code_sandbox/snaps/js-number-methods-18-code.png)
 
-<img alt="js-number-methods example 18 result" src="./code_sandbox/snaps/js-number-methods-18-result.png" />
+![js-number-methods example 18 result](./code_sandbox/snaps/js-number-methods-18-result.png)
 
 - [x] **Outcome:** Same results as `parseInt`: **-10**, **-10**, **10**, **10**, **10**, **10**, **NaN**.
 
@@ -10695,9 +10695,9 @@ let x = 10;
 x.isInteger();  // TypeError
 ```
 
-<img alt="js-number-methods example 19 source" src="./code_sandbox/snaps/js-number-methods-19-code.png" />
+![js-number-methods example 19 source](./code_sandbox/snaps/js-number-methods-19-code.png)
 
-<img alt="js-number-methods example 19 result" src="./code_sandbox/snaps/js-number-methods-19-result.png" />
+![js-number-methods example 19 result](./code_sandbox/snaps/js-number-methods-19-result.png)
 
 - [x] **Outcome:** The sandbox catches the error: **TypeError** — use `Number.isInteger(x)` instead.
 
@@ -10886,9 +10886,9 @@ Sandbox: `code_sandbox/js-number-properties/epsilon.html`
 let x = Number.EPSILON;
 ```
 
-<img alt="js-number-properties example 1 source" src="./code_sandbox/snaps/js-number-properties-01-code.png" />
+![js-number-properties example 1 source](./code_sandbox/snaps/js-number-properties-01-code.png)
 
-<img alt="js-number-properties example 1 result" src="./code_sandbox/snaps/js-number-properties-01-result.png" />
+![js-number-properties example 1 result](./code_sandbox/snaps/js-number-properties-01-result.png)
 
 - [x] **Outcome:** x is **2.220446049250313e-16**.
 
@@ -10905,9 +10905,9 @@ Sandbox: `code_sandbox/js-number-properties/max-value.html`
 let x = Number.MAX_VALUE;
 ```
 
-<img alt="js-number-properties example 2 source" src="./code_sandbox/snaps/js-number-properties-02-code.png" />
+![js-number-properties example 2 source](./code_sandbox/snaps/js-number-properties-02-code.png)
 
-<img alt="js-number-properties example 2 result" src="./code_sandbox/snaps/js-number-properties-02-result.png" />
+![js-number-properties example 2 result](./code_sandbox/snaps/js-number-properties-02-result.png)
 
 - [x] **Outcome:** x is **1.7976931348623157e+308**.
 
@@ -10925,9 +10925,9 @@ let x = 6;
 x.MAX_VALUE;
 ```
 
-<img alt="js-number-properties example 3 source" src="./code_sandbox/snaps/js-number-properties-03-code.png" />
+![js-number-properties example 3 source](./code_sandbox/snaps/js-number-properties-03-code.png)
 
-<img alt="js-number-properties example 3 result" src="./code_sandbox/snaps/js-number-properties-03-result.png" />
+![js-number-properties example 3 result](./code_sandbox/snaps/js-number-properties-03-result.png)
 
 - [x] **Outcome:** **undefined** — write `Number.MAX_VALUE` instead.
 
@@ -10944,9 +10944,9 @@ Sandbox: `code_sandbox/js-number-properties/min-value.html`
 let x = Number.MIN_VALUE;
 ```
 
-<img alt="js-number-properties example 4 source" src="./code_sandbox/snaps/js-number-properties-04-code.png" />
+![js-number-properties example 4 source](./code_sandbox/snaps/js-number-properties-04-code.png)
 
-<img alt="js-number-properties example 4 result" src="./code_sandbox/snaps/js-number-properties-04-result.png" />
+![js-number-properties example 4 result](./code_sandbox/snaps/js-number-properties-04-result.png)
 
 - [x] **Outcome:** x is **5e-324**.
 
@@ -10963,9 +10963,9 @@ Sandbox: `code_sandbox/js-number-properties/min-safe.html`
 let x = Number.MIN_SAFE_INTEGER;
 ```
 
-<img alt="js-number-properties example 5 source" src="./code_sandbox/snaps/js-number-properties-05-code.png" />
+![js-number-properties example 5 source](./code_sandbox/snaps/js-number-properties-05-code.png)
 
-<img alt="js-number-properties example 5 result" src="./code_sandbox/snaps/js-number-properties-05-result.png" />
+![js-number-properties example 5 result](./code_sandbox/snaps/js-number-properties-05-result.png)
 
 - [x] **Outcome:** x is **-9007199254740991**.
 
@@ -10981,9 +10981,9 @@ Sandbox: `code_sandbox/js-number-properties/max-safe.html`
 let x = Number.MAX_SAFE_INTEGER;
 ```
 
-<img alt="js-number-properties example 6 source" src="./code_sandbox/snaps/js-number-properties-06-code.png" />
+![js-number-properties example 6 source](./code_sandbox/snaps/js-number-properties-06-code.png)
 
-<img alt="js-number-properties example 6 result" src="./code_sandbox/snaps/js-number-properties-06-result.png" />
+![js-number-properties example 6 result](./code_sandbox/snaps/js-number-properties-06-result.png)
 
 - [x] **Outcome:** x is **9007199254740991**.
 
@@ -10999,9 +10999,9 @@ Sandbox: `code_sandbox/js-number-properties/pos-inf.html`
 let x = Number.POSITIVE_INFINITY;
 ```
 
-<img alt="js-number-properties example 7 source" src="./code_sandbox/snaps/js-number-properties-07-code.png" />
+![js-number-properties example 7 source](./code_sandbox/snaps/js-number-properties-07-code.png)
 
-<img alt="js-number-properties example 7 result" src="./code_sandbox/snaps/js-number-properties-07-result.png" />
+![js-number-properties example 7 result](./code_sandbox/snaps/js-number-properties-07-result.png)
 
 - [x] **Outcome:** x is **Infinity**.
 
@@ -11017,9 +11017,9 @@ Sandbox: `code_sandbox/js-number-properties/pos-inf-overflow.html`
 let x = 1 / 0;
 ```
 
-<img alt="js-number-properties example 8 source" src="./code_sandbox/snaps/js-number-properties-08-code.png" />
+![js-number-properties example 8 source](./code_sandbox/snaps/js-number-properties-08-code.png)
 
-<img alt="js-number-properties example 8 result" src="./code_sandbox/snaps/js-number-properties-08-result.png" />
+![js-number-properties example 8 result](./code_sandbox/snaps/js-number-properties-08-result.png)
 
 - [x] **Outcome:** x is **Infinity**.
 
@@ -11035,9 +11035,9 @@ Sandbox: `code_sandbox/js-number-properties/neg-inf.html`
 let x = Number.NEGATIVE_INFINITY;
 ```
 
-<img alt="js-number-properties example 9 source" src="./code_sandbox/snaps/js-number-properties-09-code.png" />
+![js-number-properties example 9 source](./code_sandbox/snaps/js-number-properties-09-code.png)
 
-<img alt="js-number-properties example 9 result" src="./code_sandbox/snaps/js-number-properties-09-result.png" />
+![js-number-properties example 9 result](./code_sandbox/snaps/js-number-properties-09-result.png)
 
 - [x] **Outcome:** x is **-Infinity**.
 
@@ -11053,9 +11053,9 @@ Sandbox: `code_sandbox/js-number-properties/neg-inf-overflow.html`
 let x = -1 / 0;
 ```
 
-<img alt="js-number-properties example 10 source" src="./code_sandbox/snaps/js-number-properties-10-code.png" />
+![js-number-properties example 10 source](./code_sandbox/snaps/js-number-properties-10-code.png)
 
-<img alt="js-number-properties example 10 result" src="./code_sandbox/snaps/js-number-properties-10-result.png" />
+![js-number-properties example 10 result](./code_sandbox/snaps/js-number-properties-10-result.png)
 
 - [x] **Outcome:** x is **-Infinity**.
 
@@ -11071,9 +11071,9 @@ Sandbox: `code_sandbox/js-number-properties/number-nan.html`
 let x = Number.NaN;
 ```
 
-<img alt="js-number-properties example 11 source" src="./code_sandbox/snaps/js-number-properties-11-code.png" />
+![js-number-properties example 11 source](./code_sandbox/snaps/js-number-properties-11-code.png)
 
-<img alt="js-number-properties example 11 result" src="./code_sandbox/snaps/js-number-properties-11-result.png" />
+![js-number-properties example 11 result](./code_sandbox/snaps/js-number-properties-11-result.png)
 
 - [x] **Outcome:** x is **NaN**.
 
@@ -11089,9 +11089,9 @@ Sandbox: `code_sandbox/js-number-properties/nan-from-math.html`
 let x = 100 / "Apple";
 ```
 
-<img alt="js-number-properties example 12 source" src="./code_sandbox/snaps/js-number-properties-12-code.png" />
+![js-number-properties example 12 source](./code_sandbox/snaps/js-number-properties-12-code.png)
 
-<img alt="js-number-properties example 12 result" src="./code_sandbox/snaps/js-number-properties-12-result.png" />
+![js-number-properties example 12 result](./code_sandbox/snaps/js-number-properties-12-result.png)
 
 - [x] **Outcome:** x is **NaN**.
 
@@ -11270,9 +11270,9 @@ let x = 123;
 x.constructor;
 ```
 
-<img alt="js-number-reference example 1 source" src="./code_sandbox/snaps/js-number-reference-01-code.png" />
+![js-number-reference example 1 source](./code_sandbox/snaps/js-number-reference-01-code.png)
 
-<img alt="js-number-reference example 1 result" src="./code_sandbox/snaps/js-number-reference-01-result.png" />
+![js-number-reference example 1 result](./code_sandbox/snaps/js-number-reference-01-result.png)
 
 - [x] **Outcome:** `x.constructor` is the **Number** function.
 
@@ -11288,9 +11288,9 @@ Sandbox: `code_sandbox/js-number-reference/epsilon.html`
 Number.EPSILON;
 ```
 
-<img alt="js-number-reference example 2 source" src="./code_sandbox/snaps/js-number-reference-02-code.png" />
+![js-number-reference example 2 source](./code_sandbox/snaps/js-number-reference-02-code.png)
 
-<img alt="js-number-reference example 2 result" src="./code_sandbox/snaps/js-number-reference-02-result.png" />
+![js-number-reference example 2 result](./code_sandbox/snaps/js-number-reference-02-result.png)
 
 - [x] **Outcome:** **2.220446049250313e-16**.
 
@@ -11307,9 +11307,9 @@ Number.isFinite(123);
 Number.isFinite(Infinity);
 ```
 
-<img alt="js-number-reference example 3 source" src="./code_sandbox/snaps/js-number-reference-03-code.png" />
+![js-number-reference example 3 source](./code_sandbox/snaps/js-number-reference-03-code.png)
 
-<img alt="js-number-reference example 3 result" src="./code_sandbox/snaps/js-number-reference-03-result.png" />
+![js-number-reference example 3 result](./code_sandbox/snaps/js-number-reference-03-result.png)
 
 - [x] **Outcome:** **true**, **false**.
 
@@ -11326,9 +11326,9 @@ Number.isInteger(10);
 Number.isInteger(10.5);
 ```
 
-<img alt="js-number-reference example 4 source" src="./code_sandbox/snaps/js-number-reference-04-code.png" />
+![js-number-reference example 4 source](./code_sandbox/snaps/js-number-reference-04-code.png)
 
-<img alt="js-number-reference example 4 result" src="./code_sandbox/snaps/js-number-reference-04-result.png" />
+![js-number-reference example 4 result](./code_sandbox/snaps/js-number-reference-04-result.png)
 
 - [x] **Outcome:** **true**, **false**.
 
@@ -11345,9 +11345,9 @@ Number.isNaN(123);
 Number.isNaN(NaN);
 ```
 
-<img alt="js-number-reference example 5 source" src="./code_sandbox/snaps/js-number-reference-05-code.png" />
+![js-number-reference example 5 source](./code_sandbox/snaps/js-number-reference-05-code.png)
 
-<img alt="js-number-reference example 5 result" src="./code_sandbox/snaps/js-number-reference-05-result.png" />
+![js-number-reference example 5 result](./code_sandbox/snaps/js-number-reference-05-result.png)
 
 - [x] **Outcome:** **false**, **true**.
 
@@ -11364,9 +11364,9 @@ Number.isSafeInteger(10);
 Number.isSafeInteger(9007199254740992);
 ```
 
-<img alt="js-number-reference example 6 source" src="./code_sandbox/snaps/js-number-reference-06-code.png" />
+![js-number-reference example 6 source](./code_sandbox/snaps/js-number-reference-06-code.png)
 
-<img alt="js-number-reference example 6 result" src="./code_sandbox/snaps/js-number-reference-06-result.png" />
+![js-number-reference example 6 result](./code_sandbox/snaps/js-number-reference-06-result.png)
 
 - [x] **Outcome:** **true**, **false**.
 
@@ -11382,9 +11382,9 @@ Sandbox: `code_sandbox/js-number-reference/max-safe.html`
 Number.MAX_SAFE_INTEGER;
 ```
 
-<img alt="js-number-reference example 7 source" src="./code_sandbox/snaps/js-number-reference-07-code.png" />
+![js-number-reference example 7 source](./code_sandbox/snaps/js-number-reference-07-code.png)
 
-<img alt="js-number-reference example 7 result" src="./code_sandbox/snaps/js-number-reference-07-result.png" />
+![js-number-reference example 7 result](./code_sandbox/snaps/js-number-reference-07-result.png)
 
 - [x] **Outcome:** **9007199254740991**.
 
@@ -11400,9 +11400,9 @@ Sandbox: `code_sandbox/js-number-reference/min-safe.html`
 Number.MIN_SAFE_INTEGER;
 ```
 
-<img alt="js-number-reference example 8 source" src="./code_sandbox/snaps/js-number-reference-08-code.png" />
+![js-number-reference example 8 source](./code_sandbox/snaps/js-number-reference-08-code.png)
 
-<img alt="js-number-reference example 8 result" src="./code_sandbox/snaps/js-number-reference-08-result.png" />
+![js-number-reference example 8 result](./code_sandbox/snaps/js-number-reference-08-result.png)
 
 - [x] **Outcome:** **-9007199254740991**.
 
@@ -11418,9 +11418,9 @@ Sandbox: `code_sandbox/js-number-reference/max-value.html`
 Number.MAX_VALUE;
 ```
 
-<img alt="js-number-reference example 9 source" src="./code_sandbox/snaps/js-number-reference-09-code.png" />
+![js-number-reference example 9 source](./code_sandbox/snaps/js-number-reference-09-code.png)
 
-<img alt="js-number-reference example 9 result" src="./code_sandbox/snaps/js-number-reference-09-result.png" />
+![js-number-reference example 9 result](./code_sandbox/snaps/js-number-reference-09-result.png)
 
 - [x] **Outcome:** **1.7976931348623157e+308**.
 
@@ -11436,9 +11436,9 @@ Sandbox: `code_sandbox/js-number-reference/min-value.html`
 Number.MIN_VALUE;
 ```
 
-<img alt="js-number-reference example 10 source" src="./code_sandbox/snaps/js-number-reference-10-code.png" />
+![js-number-reference example 10 source](./code_sandbox/snaps/js-number-reference-10-code.png)
 
-<img alt="js-number-reference example 10 result" src="./code_sandbox/snaps/js-number-reference-10-result.png" />
+![js-number-reference example 10 result](./code_sandbox/snaps/js-number-reference-10-result.png)
 
 - [x] **Outcome:** **5e-324**.
 
@@ -11454,9 +11454,9 @@ Sandbox: `code_sandbox/js-number-reference/nan.html`
 Number.NaN;
 ```
 
-<img alt="js-number-reference example 11 source" src="./code_sandbox/snaps/js-number-reference-11-code.png" />
+![js-number-reference example 11 source](./code_sandbox/snaps/js-number-reference-11-code.png)
 
-<img alt="js-number-reference example 11 result" src="./code_sandbox/snaps/js-number-reference-11-result.png" />
+![js-number-reference example 11 result](./code_sandbox/snaps/js-number-reference-11-result.png)
 
 - [x] **Outcome:** **NaN**.
 
@@ -11472,9 +11472,9 @@ Sandbox: `code_sandbox/js-number-reference/neg-inf.html`
 Number.NEGATIVE_INFINITY;
 ```
 
-<img alt="js-number-reference example 12 source" src="./code_sandbox/snaps/js-number-reference-12-code.png" />
+![js-number-reference example 12 source](./code_sandbox/snaps/js-number-reference-12-code.png)
 
-<img alt="js-number-reference example 12 result" src="./code_sandbox/snaps/js-number-reference-12-result.png" />
+![js-number-reference example 12 result](./code_sandbox/snaps/js-number-reference-12-result.png)
 
 - [x] **Outcome:** **-Infinity**.
 
@@ -11490,9 +11490,9 @@ Sandbox: `code_sandbox/js-number-reference/pos-inf.html`
 Number.POSITIVE_INFINITY;
 ```
 
-<img alt="js-number-reference example 13 source" src="./code_sandbox/snaps/js-number-reference-13-code.png" />
+![js-number-reference example 13 source](./code_sandbox/snaps/js-number-reference-13-code.png)
 
-<img alt="js-number-reference example 13 result" src="./code_sandbox/snaps/js-number-reference-13-result.png" />
+![js-number-reference example 13 result](./code_sandbox/snaps/js-number-reference-13-result.png)
 
 - [x] **Outcome:** **Infinity**.
 
@@ -11508,9 +11508,9 @@ Sandbox: `code_sandbox/js-number-reference/parsefloat.html`
 Number.parseFloat("10.33 years");
 ```
 
-<img alt="js-number-reference example 14 source" src="./code_sandbox/snaps/js-number-reference-14-code.png" />
+![js-number-reference example 14 source](./code_sandbox/snaps/js-number-reference-14-code.png)
 
-<img alt="js-number-reference example 14 result" src="./code_sandbox/snaps/js-number-reference-14-result.png" />
+![js-number-reference example 14 result](./code_sandbox/snaps/js-number-reference-14-result.png)
 
 - [x] **Outcome:** **10.33**.
 
@@ -11526,9 +11526,9 @@ Sandbox: `code_sandbox/js-number-reference/parseint.html`
 Number.parseInt("10.33 years");
 ```
 
-<img alt="js-number-reference example 15 source" src="./code_sandbox/snaps/js-number-reference-15-code.png" />
+![js-number-reference example 15 source](./code_sandbox/snaps/js-number-reference-15-code.png)
 
-<img alt="js-number-reference example 15 result" src="./code_sandbox/snaps/js-number-reference-15-result.png" />
+![js-number-reference example 15 result](./code_sandbox/snaps/js-number-reference-15-result.png)
 
 - [x] **Outcome:** **10**.
 
@@ -11546,9 +11546,9 @@ Number.prototype.twice = function () { return this * 2; };
 (21).twice();
 ```
 
-<img alt="js-number-reference example 16 source" src="./code_sandbox/snaps/js-number-reference-16-code.png" />
+![js-number-reference example 16 source](./code_sandbox/snaps/js-number-reference-16-code.png)
 
-<img alt="js-number-reference example 16 result" src="./code_sandbox/snaps/js-number-reference-16-result.png" />
+![js-number-reference example 16 result](./code_sandbox/snaps/js-number-reference-16-result.png)
 
 - [x] **Outcome:** **42** — a demo only; prefer a plain function instead of changing `Number.prototype`.
 
@@ -11564,9 +11564,9 @@ Sandbox: `code_sandbox/js-number-reference/toexponential.html`
 (9.656).toExponential(2);
 ```
 
-<img alt="js-number-reference example 17 source" src="./code_sandbox/snaps/js-number-reference-17-code.png" />
+![js-number-reference example 17 source](./code_sandbox/snaps/js-number-reference-17-code.png)
 
-<img alt="js-number-reference example 17 result" src="./code_sandbox/snaps/js-number-reference-17-result.png" />
+![js-number-reference example 17 result](./code_sandbox/snaps/js-number-reference-17-result.png)
 
 - [x] **Outcome:** **"9.66e+0"**.
 
@@ -11582,9 +11582,9 @@ Sandbox: `code_sandbox/js-number-reference/tofixed.html`
 (9.656).toFixed(2);
 ```
 
-<img alt="js-number-reference example 18 source" src="./code_sandbox/snaps/js-number-reference-18-code.png" />
+![js-number-reference example 18 source](./code_sandbox/snaps/js-number-reference-18-code.png)
 
-<img alt="js-number-reference example 18 result" src="./code_sandbox/snaps/js-number-reference-18-result.png" />
+![js-number-reference example 18 result](./code_sandbox/snaps/js-number-reference-18-result.png)
 
 - [x] **Outcome:** **"9.66"**.
 
@@ -11603,9 +11603,9 @@ n.toLocaleString();
 n.toLocaleString('de-DE');
 ```
 
-<img alt="js-number-reference example 19 source" src="./code_sandbox/snaps/js-number-reference-19-code.png" />
+![js-number-reference example 19 source](./code_sandbox/snaps/js-number-reference-19-code.png)
 
-<img alt="js-number-reference example 19 result" src="./code_sandbox/snaps/js-number-reference-19-result.png" />
+![js-number-reference example 19 result](./code_sandbox/snaps/js-number-reference-19-result.png)
 
 - [x] **Outcome:** Default (en) looks like **123,456.789**; German looks like **123.456,789**.
 
@@ -11621,9 +11621,9 @@ Sandbox: `code_sandbox/js-number-reference/toprecision.html`
 (9.656).toPrecision(2);
 ```
 
-<img alt="js-number-reference example 20 source" src="./code_sandbox/snaps/js-number-reference-20-code.png" />
+![js-number-reference example 20 source](./code_sandbox/snaps/js-number-reference-20-code.png)
 
-<img alt="js-number-reference example 20 result" src="./code_sandbox/snaps/js-number-reference-20-result.png" />
+![js-number-reference example 20 result](./code_sandbox/snaps/js-number-reference-20-result.png)
 
 - [x] **Outcome:** **"9.7"**.
 
@@ -11640,9 +11640,9 @@ Sandbox: `code_sandbox/js-number-reference/tostring.html`
 (255).toString(16);
 ```
 
-<img alt="js-number-reference example 21 source" src="./code_sandbox/snaps/js-number-reference-21-code.png" />
+![js-number-reference example 21 source](./code_sandbox/snaps/js-number-reference-21-code.png)
 
-<img alt="js-number-reference example 21 result" src="./code_sandbox/snaps/js-number-reference-21-result.png" />
+![js-number-reference example 21 result](./code_sandbox/snaps/js-number-reference-21-result.png)
 
 - [x] **Outcome:** **"255"** and **"ff"**.
 
@@ -11659,9 +11659,9 @@ let x = new Number(123);
 x.valueOf();
 ```
 
-<img alt="js-number-reference example 22 source" src="./code_sandbox/snaps/js-number-reference-22-code.png" />
+![js-number-reference example 22 source](./code_sandbox/snaps/js-number-reference-22-code.png)
 
-<img alt="js-number-reference example 22 result" src="./code_sandbox/snaps/js-number-reference-22-result.png" />
+![js-number-reference example 22 result](./code_sandbox/snaps/js-number-reference-22-result.png)
 
 - [x] **Outcome:** Primitive **123** (`typeof` **number**).
 
@@ -11833,9 +11833,9 @@ Sandbox: `code_sandbox/js-bitwise/and.html`
 let x = 5 & 1;
 ```
 
-<img alt="js-bitwise example 1 source" src="./code_sandbox/snaps/js-bitwise-01-code.png" />
+![js-bitwise example 1 source](./code_sandbox/snaps/js-bitwise-01-code.png)
 
-<img alt="js-bitwise example 1 result" src="./code_sandbox/snaps/js-bitwise-01-result.png" />
+![js-bitwise example 1 result](./code_sandbox/snaps/js-bitwise-01-result.png)
 
 - [x] **Outcome:** x is **1**.
 
@@ -11852,9 +11852,9 @@ Sandbox: `code_sandbox/js-bitwise/or.html`
 let x = 5 | 1;
 ```
 
-<img alt="js-bitwise example 2 source" src="./code_sandbox/snaps/js-bitwise-02-code.png" />
+![js-bitwise example 2 source](./code_sandbox/snaps/js-bitwise-02-code.png)
 
-<img alt="js-bitwise example 2 result" src="./code_sandbox/snaps/js-bitwise-02-result.png" />
+![js-bitwise example 2 result](./code_sandbox/snaps/js-bitwise-02-result.png)
 
 - [x] **Outcome:** x is **5**.
 
@@ -11871,9 +11871,9 @@ Sandbox: `code_sandbox/js-bitwise/xor.html`
 let x = 5 ^ 1;
 ```
 
-<img alt="js-bitwise example 3 source" src="./code_sandbox/snaps/js-bitwise-03-code.png" />
+![js-bitwise example 3 source](./code_sandbox/snaps/js-bitwise-03-code.png)
 
-<img alt="js-bitwise example 3 result" src="./code_sandbox/snaps/js-bitwise-03-result.png" />
+![js-bitwise example 3 result](./code_sandbox/snaps/js-bitwise-03-result.png)
 
 - [x] **Outcome:** x is **4**.
 
@@ -11890,9 +11890,9 @@ Sandbox: `code_sandbox/js-bitwise/not.html`
 let x = ~5;
 ```
 
-<img alt="js-bitwise example 4 source" src="./code_sandbox/snaps/js-bitwise-04-code.png" />
+![js-bitwise example 4 source](./code_sandbox/snaps/js-bitwise-04-code.png)
 
-<img alt="js-bitwise example 4 result" src="./code_sandbox/snaps/js-bitwise-04-result.png" />
+![js-bitwise example 4 result](./code_sandbox/snaps/js-bitwise-04-result.png)
 
 - [x] **Outcome:** x is **-6**.
 
@@ -11909,9 +11909,9 @@ Sandbox: `code_sandbox/js-bitwise/left-shift.html`
 let x = 5 << 1;
 ```
 
-<img alt="js-bitwise example 5 source" src="./code_sandbox/snaps/js-bitwise-05-code.png" />
+![js-bitwise example 5 source](./code_sandbox/snaps/js-bitwise-05-code.png)
 
-<img alt="js-bitwise example 5 result" src="./code_sandbox/snaps/js-bitwise-05-result.png" />
+![js-bitwise example 5 result](./code_sandbox/snaps/js-bitwise-05-result.png)
 
 - [x] **Outcome:** x is **10**.
 
@@ -11928,9 +11928,9 @@ Sandbox: `code_sandbox/js-bitwise/sign-right.html`
 let x = -5 >> 1;
 ```
 
-<img alt="js-bitwise example 6 source" src="./code_sandbox/snaps/js-bitwise-06-code.png" />
+![js-bitwise example 6 source](./code_sandbox/snaps/js-bitwise-06-code.png)
 
-<img alt="js-bitwise example 6 result" src="./code_sandbox/snaps/js-bitwise-06-result.png" />
+![js-bitwise example 6 result](./code_sandbox/snaps/js-bitwise-06-result.png)
 
 - [x] **Outcome:** x is **-3**.
 
@@ -11947,9 +11947,9 @@ Sandbox: `code_sandbox/js-bitwise/zero-right.html`
 let x = 5 >>> 1;
 ```
 
-<img alt="js-bitwise example 7 source" src="./code_sandbox/snaps/js-bitwise-07-code.png" />
+![js-bitwise example 7 source](./code_sandbox/snaps/js-bitwise-07-code.png)
 
-<img alt="js-bitwise example 7 result" src="./code_sandbox/snaps/js-bitwise-07-result.png" />
+![js-bitwise example 7 result](./code_sandbox/snaps/js-bitwise-07-result.png)
 
 - [x] **Outcome:** `5 >>> 1` is **2**. `-5 >>> 1` is **2147483645** (extra clarifying row).
 
@@ -11967,9 +11967,9 @@ let x = -100;
 x <<= 5;
 ```
 
-<img alt="js-bitwise example 8 source" src="./code_sandbox/snaps/js-bitwise-08-code.png" />
+![js-bitwise example 8 source](./code_sandbox/snaps/js-bitwise-08-code.png)
 
-<img alt="js-bitwise example 8 result" src="./code_sandbox/snaps/js-bitwise-08-result.png" />
+![js-bitwise example 8 result](./code_sandbox/snaps/js-bitwise-08-result.png)
 
 - [x] **Outcome:** x is **-3200**.
 
@@ -11986,9 +11986,9 @@ let x = -100;
 x >>= 5;
 ```
 
-<img alt="js-bitwise example 9 source" src="./code_sandbox/snaps/js-bitwise-09-code.png" />
+![js-bitwise example 9 source](./code_sandbox/snaps/js-bitwise-09-code.png)
 
-<img alt="js-bitwise example 9 result" src="./code_sandbox/snaps/js-bitwise-09-result.png" />
+![js-bitwise example 9 result](./code_sandbox/snaps/js-bitwise-09-result.png)
 
 - [x] **Outcome:** x is **-4** (sign preserved).
 
@@ -12006,9 +12006,9 @@ let x = -100;
 x >>>= 5;
 ```
 
-<img alt="js-bitwise example 10 source" src="./code_sandbox/snaps/js-bitwise-10-code.png" />
+![js-bitwise example 10 source](./code_sandbox/snaps/js-bitwise-10-code.png)
 
-<img alt="js-bitwise example 10 result" src="./code_sandbox/snaps/js-bitwise-10-result.png" />
+![js-bitwise example 10 result](./code_sandbox/snaps/js-bitwise-10-result.png)
 
 - [x] **Outcome:** x is **134217724**.
 
@@ -12026,9 +12026,9 @@ let x = 10;
 x &= 5;
 ```
 
-<img alt="js-bitwise example 11 source" src="./code_sandbox/snaps/js-bitwise-11-code.png" />
+![js-bitwise example 11 source](./code_sandbox/snaps/js-bitwise-11-code.png)
 
-<img alt="js-bitwise example 11 result" src="./code_sandbox/snaps/js-bitwise-11-result.png" />
+![js-bitwise example 11 result](./code_sandbox/snaps/js-bitwise-11-result.png)
 
 - [x] **Outcome:** x is **0**.
 
@@ -12046,9 +12046,9 @@ let x = 10;
 x |= 5;
 ```
 
-<img alt="js-bitwise example 12 source" src="./code_sandbox/snaps/js-bitwise-12-code.png" />
+![js-bitwise example 12 source](./code_sandbox/snaps/js-bitwise-12-code.png)
 
-<img alt="js-bitwise example 12 result" src="./code_sandbox/snaps/js-bitwise-12-result.png" />
+![js-bitwise example 12 result](./code_sandbox/snaps/js-bitwise-12-result.png)
 
 - [x] **Outcome:** x is **15**.
 
@@ -12066,9 +12066,9 @@ let x = 10;
 x ^= 5;
 ```
 
-<img alt="js-bitwise example 13 source" src="./code_sandbox/snaps/js-bitwise-13-code.png" />
+![js-bitwise example 13 source](./code_sandbox/snaps/js-bitwise-13-code.png)
 
-<img alt="js-bitwise example 13 result" src="./code_sandbox/snaps/js-bitwise-13-result.png" />
+![js-bitwise example 13 result](./code_sandbox/snaps/js-bitwise-13-result.png)
 
 - [x] **Outcome:** x is **15**.
 
@@ -12087,9 +12087,9 @@ function dec2bin(dec) {
 }
 ```
 
-<img alt="js-bitwise example 14 source" src="./code_sandbox/snaps/js-bitwise-14-code.png" />
+![js-bitwise example 14 source](./code_sandbox/snaps/js-bitwise-14-code.png)
 
-<img alt="js-bitwise example 14 result" src="./code_sandbox/snaps/js-bitwise-14-result.png" />
+![js-bitwise example 14 result](./code_sandbox/snaps/js-bitwise-14-result.png)
 
 - [x] **Outcome:** `dec2bin(5)` is **101**. `dec2bin(-5)` is the 32-bit two’s complement string.
 
@@ -12107,9 +12107,9 @@ function bin2dec(bin) {
 }
 ```
 
-<img alt="js-bitwise example 15 source" src="./code_sandbox/snaps/js-bitwise-15-code.png" />
+![js-bitwise example 15 source](./code_sandbox/snaps/js-bitwise-15-code.png)
 
-<img alt="js-bitwise example 15 result" src="./code_sandbox/snaps/js-bitwise-15-result.png" />
+![js-bitwise example 15 result](./code_sandbox/snaps/js-bitwise-15-result.png)
 
 - [x] **Outcome:** `"101"` → **5**; `"1111"` → **15**.
 
@@ -12304,9 +12304,9 @@ let x = 999999999999999;   // 15 digits
 let y = 9999999999999999;  // 16 digits
 ```
 
-<img alt="js-bigint example 1 source" src="./code_sandbox/snaps/js-bigint-01-code.png" />
+![js-bigint example 1 source](./code_sandbox/snaps/js-bigint-01-code.png)
 
-<img alt="js-bigint example 1 result" src="./code_sandbox/snaps/js-bigint-01-result.png" />
+![js-bigint example 1 result](./code_sandbox/snaps/js-bigint-01-result.png)
 
 - [x] **Outcome:** x is exact; y becomes **10000000000000000**.
 
@@ -12323,9 +12323,9 @@ let x = Number.MAX_SAFE_INTEGER;
 let y = Number.MIN_SAFE_INTEGER;
 ```
 
-<img alt="js-bigint example 2 source" src="./code_sandbox/snaps/js-bigint-02-code.png" />
+![js-bigint example 2 source](./code_sandbox/snaps/js-bigint-02-code.png)
 
-<img alt="js-bigint example 2 result" src="./code_sandbox/snaps/js-bigint-02-result.png" />
+![js-bigint example 2 result](./code_sandbox/snaps/js-bigint-02-result.png)
 
 - [x] **Outcome:** **9007199254740991** and **-9007199254740991**.
 
@@ -12342,9 +12342,9 @@ let x = 9007199254740991;
 let y = x + 10;
 ```
 
-<img alt="js-bigint example 3 source" src="./code_sandbox/snaps/js-bigint-03-code.png" />
+![js-bigint example 3 source](./code_sandbox/snaps/js-bigint-03-code.png)
 
-<img alt="js-bigint example 3 result" src="./code_sandbox/snaps/js-bigint-03-result.png" />
+![js-bigint example 3 result](./code_sandbox/snaps/js-bigint-03-result.png)
 
 - [x] **Outcome:** y is **9007199254741000** (rounded), not 9007199254741001.
 
@@ -12361,9 +12361,9 @@ let x = -9007199254740991;
 let y = x - 10;
 ```
 
-<img alt="js-bigint example 4 source" src="./code_sandbox/snaps/js-bigint-04-code.png" />
+![js-bigint example 4 source](./code_sandbox/snaps/js-bigint-04-code.png)
 
-<img alt="js-bigint example 4 result" src="./code_sandbox/snaps/js-bigint-04-result.png" />
+![js-bigint example 4 result](./code_sandbox/snaps/js-bigint-04-result.png)
 
 - [x] **Outcome:** y is rounded, not exact min−10.
 
@@ -12381,9 +12381,9 @@ let x = 999999999999999n;
 let y = BigInt("999999999999999");
 ```
 
-<img alt="js-bigint example 5 source" src="./code_sandbox/snaps/js-bigint-05-code.png" />
+![js-bigint example 5 source](./code_sandbox/snaps/js-bigint-05-code.png)
 
-<img alt="js-bigint example 5 result" src="./code_sandbox/snaps/js-bigint-05-result.png" />
+![js-bigint example 5 result](./code_sandbox/snaps/js-bigint-05-result.png)
 
 - [x] **Outcome:** Both are **999999999999999n**. `typeof` is **bigint**.
 
@@ -12400,9 +12400,9 @@ let x = 12345678901234567890n;
 let y = BigInt("12345678901234567890");
 ```
 
-<img alt="js-bigint example 6 source" src="./code_sandbox/snaps/js-bigint-06-code.png" />
+![js-bigint example 6 source](./code_sandbox/snaps/js-bigint-06-code.png)
 
-<img alt="js-bigint example 6 result" src="./code_sandbox/snaps/js-bigint-06-result.png" />
+![js-bigint example 6 result](./code_sandbox/snaps/js-bigint-06-result.png)
 
 - [x] **Outcome:** Both store **12345678901234567890n** exactly; they compare equal.
 
@@ -12419,9 +12419,9 @@ Sandbox: `code_sandbox/js-bigint/bigint-from-number.html`
 let x = BigInt(9999999999999999);
 ```
 
-<img alt="js-bigint example 7 source" src="./code_sandbox/snaps/js-bigint-07-code.png" />
+![js-bigint example 7 source](./code_sandbox/snaps/js-bigint-07-code.png)
 
-<img alt="js-bigint example 7 result" src="./code_sandbox/snaps/js-bigint-07-result.png" />
+![js-bigint example 7 result](./code_sandbox/snaps/js-bigint-07-result.png)
 
 - [x] **Outcome:** x is **10000000000000000n** — the rounding already happened before BigInt saw it. Prefer a **string** or **`n` literal**.
 
@@ -12439,9 +12439,9 @@ let x = BigInt(999999999999999);
 let type = typeof x;
 ```
 
-<img alt="js-bigint example 8 source" src="./code_sandbox/snaps/js-bigint-08-code.png" />
+![js-bigint example 8 source](./code_sandbox/snaps/js-bigint-08-code.png)
 
-<img alt="js-bigint example 8 result" src="./code_sandbox/snaps/js-bigint-08-result.png" />
+![js-bigint example 8 result](./code_sandbox/snaps/js-bigint-08-result.png)
 
 - [x] **Outcome:** type is **"bigint"**.
 
@@ -12460,9 +12460,9 @@ let y = 9007199254740995n;
 let z = x * y;
 ```
 
-<img alt="js-bigint example 9 source" src="./code_sandbox/snaps/js-bigint-09-code.png" />
+![js-bigint example 9 source](./code_sandbox/snaps/js-bigint-09-code.png)
 
-<img alt="js-bigint example 9 result" src="./code_sandbox/snaps/js-bigint-09-result.png" />
+![js-bigint example 9 result](./code_sandbox/snaps/js-bigint-09-result.png)
 
 - [x] **Outcome:** z is the exact product **8114963775263029770004520090025n**.
 
@@ -12482,9 +12482,9 @@ let y = 5;
 let z = Number(x) + y;
 ```
 
-<img alt="js-bigint example 10 source" src="./code_sandbox/snaps/js-bigint-10-code.png" />
+![js-bigint example 10 source](./code_sandbox/snaps/js-bigint-10-code.png)
 
-<img alt="js-bigint example 10 result" src="./code_sandbox/snaps/js-bigint-10-result.png" />
+![js-bigint example 10 result](./code_sandbox/snaps/js-bigint-10-result.png)
 
 - [x] **Outcome:** Mixing throws **TypeError**. `Number(10n) + 5` is **15**.
 
@@ -12502,9 +12502,9 @@ let largeNumber = BigInt("12345678901234567890");
 let num = Number(largeNumber);
 ```
 
-<img alt="js-bigint example 11 source" src="./code_sandbox/snaps/js-bigint-11-code.png" />
+![js-bigint example 11 source](./code_sandbox/snaps/js-bigint-11-code.png)
 
-<img alt="js-bigint example 11 result" src="./code_sandbox/snaps/js-bigint-11-result.png" />
+![js-bigint example 11 result](./code_sandbox/snaps/js-bigint-11-result.png)
 
 - [x] **Outcome:** The Number is **1.2345678901234568e+19** — precision is already lost.
 
@@ -12522,9 +12522,9 @@ let x = 5n;
 let y = Number(x) / 2;
 ```
 
-<img alt="js-bigint example 12 source" src="./code_sandbox/snaps/js-bigint-12-code.png" />
+![js-bigint example 12 source](./code_sandbox/snaps/js-bigint-12-code.png)
 
-<img alt="js-bigint example 12 result" src="./code_sandbox/snaps/js-bigint-12-result.png" />
+![js-bigint example 12 result](./code_sandbox/snaps/js-bigint-12-result.png)
 
 - [x] **Outcome:** `Number(5n) / 2` is **2.5**. `5n / 2n` is **2n**. `1.5n` does not parse.
 
@@ -12543,9 +12543,9 @@ let y = (10n === 10);
 let z = (10n == 10);
 ```
 
-<img alt="js-bigint example 13 source" src="./code_sandbox/snaps/js-bigint-13-code.png" />
+![js-bigint example 13 source](./code_sandbox/snaps/js-bigint-13-code.png)
 
-<img alt="js-bigint example 13 result" src="./code_sandbox/snaps/js-bigint-13-result.png" />
+![js-bigint example 13 result](./code_sandbox/snaps/js-bigint-13-result.png)
 
 - [x] **Outcome:** **true**, **false**, **true**.
 
@@ -12567,9 +12567,9 @@ let z = (a ^ b);
 let n = (~a);
 ```
 
-<img alt="js-bigint example 14 source" src="./code_sandbox/snaps/js-bigint-14-code.png" />
+![js-bigint example 14 source](./code_sandbox/snaps/js-bigint-14-code.png)
 
-<img alt="js-bigint example 14 result" src="./code_sandbox/snaps/js-bigint-14-result.png" />
+![js-bigint example 14 result](./code_sandbox/snaps/js-bigint-14-result.png)
 
 - [x] **Outcome:** **1n**, **7n**, **6n**, **-6n**.
 
@@ -12588,9 +12588,9 @@ let x = (big << 2n);
 let y = (big >> 1n);
 ```
 
-<img alt="js-bigint example 15 source" src="./code_sandbox/snaps/js-bigint-15-code.png" />
+![js-bigint example 15 source](./code_sandbox/snaps/js-bigint-15-code.png)
 
-<img alt="js-bigint example 15 result" src="./code_sandbox/snaps/js-bigint-15-result.png" />
+![js-bigint example 15 result](./code_sandbox/snaps/js-bigint-15-result.png)
 
 - [x] **Outcome:** `10n << 2n` is **40n**; `10n >> 1n` is **5n**. `>>>` throws **TypeError**.
 
@@ -12609,9 +12609,9 @@ let hex = 0x100n;
 let bin = 0b100000000n;
 ```
 
-<img alt="js-bigint example 16 source" src="./code_sandbox/snaps/js-bigint-16-code.png" />
+![js-bigint example 16 source](./code_sandbox/snaps/js-bigint-16-code.png)
 
-<img alt="js-bigint example 16 result" src="./code_sandbox/snaps/js-bigint-16-result.png" />
+![js-bigint example 16 result](./code_sandbox/snaps/js-bigint-16-result.png)
 
 - [x] **Outcome:** All four are **256n**.
 
@@ -12629,9 +12629,9 @@ let oct = 0o400000000000000003n;
 let bin = 0b100000000000000000000000000000000000000000000000000011n;
 ```
 
-<img alt="js-bigint example 17 source" src="./code_sandbox/snaps/js-bigint-17-code.png" />
+![js-bigint example 17 source](./code_sandbox/snaps/js-bigint-17-code.png)
 
-<img alt="js-bigint example 17 result" src="./code_sandbox/snaps/js-bigint-17-result.png" />
+![js-bigint example 17 result](./code_sandbox/snaps/js-bigint-17-result.png)
 
 - [x] **Outcome:** Each prints as a large **…n** integer — no rounding.
 
@@ -12648,9 +12648,9 @@ Sandbox: `code_sandbox/js-bigint/unsafe-eq-number.html`
 9007199254740992 === 9007199254740993;
 ```
 
-<img alt="js-bigint example 18 source" src="./code_sandbox/snaps/js-bigint-18-code.png" />
+![js-bigint example 18 source](./code_sandbox/snaps/js-bigint-18-code.png)
 
-<img alt="js-bigint example 18 result" src="./code_sandbox/snaps/js-bigint-18-result.png" />
+![js-bigint example 18 result](./code_sandbox/snaps/js-bigint-18-result.png)
 
 - [x] **Outcome:** **true** — both round to the same Number.
 
@@ -12666,9 +12666,9 @@ Sandbox: `code_sandbox/js-bigint/unsafe-eq-bigint.html`
 9007199254740992n === 9007199254740993n;
 ```
 
-<img alt="js-bigint example 19 source" src="./code_sandbox/snaps/js-bigint-19-code.png" />
+![js-bigint example 19 source](./code_sandbox/snaps/js-bigint-19-code.png)
 
-<img alt="js-bigint example 19 result" src="./code_sandbox/snaps/js-bigint-19-result.png" />
+![js-bigint example 19 result](./code_sandbox/snaps/js-bigint-19-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -12686,9 +12686,9 @@ JSON.stringify(1n);
 Math.sqrt(16n);
 ```
 
-<img alt="js-bigint example 20 source" src="./code_sandbox/snaps/js-bigint-20-code.png" />
+![js-bigint example 20 source](./code_sandbox/snaps/js-bigint-20-code.png)
 
-<img alt="js-bigint example 20 result" src="./code_sandbox/snaps/js-bigint-20-result.png" />
+![js-bigint example 20 result](./code_sandbox/snaps/js-bigint-20-result.png)
 
 - [x] **Outcome:** Both throw **TypeError**. Convert with `Number(...)` only when the value fits.
 
@@ -12865,9 +12865,9 @@ function sayHello() {
 let text = sayHello();
 ```
 
-<img alt="js-functions example 1 source" src="./code_sandbox/snaps/js-functions-01-code.png" />
+![js-functions example 1 source](./code_sandbox/snaps/js-functions-01-code.png)
 
-<img alt="js-functions example 1 result" src="./code_sandbox/snaps/js-functions-01-result.png" />
+![js-functions example 1 result](./code_sandbox/snaps/js-functions-01-result.png)
 
 - [x] **Outcome:** text is **"Hello World"** after the call.
 
@@ -12887,9 +12887,9 @@ function sayHello() {
 sayHello();
 ```
 
-<img alt="js-functions example 2 source" src="./code_sandbox/snaps/js-functions-02-code.png" />
+![js-functions example 2 source](./code_sandbox/snaps/js-functions-02-code.png)
 
-<img alt="js-functions example 2 result" src="./code_sandbox/snaps/js-functions-02-result.png" />
+![js-functions example 2 result](./code_sandbox/snaps/js-functions-02-result.png)
 
 - [x] **Outcome:** The call returns **Hello World**.
 
@@ -12909,9 +12909,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-functions example 3 source" src="./code_sandbox/snaps/js-functions-03-code.png" />
+![js-functions example 3 source](./code_sandbox/snaps/js-functions-03-code.png)
 
-<img alt="js-functions example 3 result" src="./code_sandbox/snaps/js-functions-03-result.png" />
+![js-functions example 3 result](./code_sandbox/snaps/js-functions-03-result.png)
 
 - [x] **Outcome:** result is **20**.
 
@@ -12931,9 +12931,9 @@ function sayHello() {
 let message = sayHello();
 ```
 
-<img alt="js-functions example 4 source" src="./code_sandbox/snaps/js-functions-04-code.png" />
+![js-functions example 4 source](./code_sandbox/snaps/js-functions-04-code.png)
 
-<img alt="js-functions example 4 result" src="./code_sandbox/snaps/js-functions-04-result.png" />
+![js-functions example 4 result](./code_sandbox/snaps/js-functions-04-result.png)
 
 - [x] **Outcome:** message is **"Hello World"**.
 
@@ -12953,9 +12953,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-functions example 5 source" src="./code_sandbox/snaps/js-functions-05-code.png" />
+![js-functions example 5 source](./code_sandbox/snaps/js-functions-05-code.png)
 
-<img alt="js-functions example 5 result" src="./code_sandbox/snaps/js-functions-05-result.png" />
+![js-functions example 5 result](./code_sandbox/snaps/js-functions-05-result.png)
 
 - [x] **Outcome:** **a, b** are parameters; **4, 5** are arguments. result is **20**.
 
@@ -12975,9 +12975,9 @@ const multiply = function(a, b) {
 let z = multiply(4, 3);
 ```
 
-<img alt="js-functions example 6 source" src="./code_sandbox/snaps/js-functions-06-code.png" />
+![js-functions example 6 source](./code_sandbox/snaps/js-functions-06-code.png)
 
-<img alt="js-functions example 6 result" src="./code_sandbox/snaps/js-functions-06-result.png" />
+![js-functions example 6 result](./code_sandbox/snaps/js-functions-06-result.png)
 
 - [x] **Outcome:** z is **12**. `multiply` is a **function**.
 
@@ -12995,9 +12995,9 @@ const multiply = (a, b) => a * b;
 let z = multiply(4, 5);
 ```
 
-<img alt="js-functions example 7 source" src="./code_sandbox/snaps/js-functions-07-code.png" />
+![js-functions example 7 source](./code_sandbox/snaps/js-functions-07-code.png)
 
-<img alt="js-functions example 7 result" src="./code_sandbox/snaps/js-functions-07-result.png" />
+![js-functions example 7 result](./code_sandbox/snaps/js-functions-07-result.png)
 
 - [x] **Outcome:** z is **20**.
 
@@ -13017,9 +13017,9 @@ function sayHello() {
 let text = sayHello();
 ```
 
-<img alt="js-functions example 8 source" src="./code_sandbox/snaps/js-functions-08-code.png" />
+![js-functions example 8 source](./code_sandbox/snaps/js-functions-08-code.png)
 
-<img alt="js-functions example 8 result" src="./code_sandbox/snaps/js-functions-08-result.png" />
+![js-functions example 8 result](./code_sandbox/snaps/js-functions-08-result.png)
 
 - [x] **Outcome:** text is **"Hello World"** (quiz question 1, answer **B**).
 
@@ -13189,9 +13189,9 @@ function sayHello() {
 }
 ```
 
-<img alt="js-function-intro example 1 source" src="./code_sandbox/snaps/js-function-intro-01-code.png" />
+![js-function-intro example 1 source](./code_sandbox/snaps/js-function-intro-01-code.png)
 
-<img alt="js-function-intro example 1 result" src="./code_sandbox/snaps/js-function-intro-01-result.png" />
+![js-function-intro example 1 result](./code_sandbox/snaps/js-function-intro-01-result.png)
 
 - [x] **Outcome:** `typeof sayHello` is **"function"**. Nothing printed Hello World because it was never called.
 
@@ -13211,9 +13211,9 @@ function sayHello() {
 let message = sayHello();
 ```
 
-<img alt="js-function-intro example 2 source" src="./code_sandbox/snaps/js-function-intro-02-code.png" />
+![js-function-intro example 2 source](./code_sandbox/snaps/js-function-intro-02-code.png)
 
-<img alt="js-function-intro example 2 result" src="./code_sandbox/snaps/js-function-intro-02-result.png" />
+![js-function-intro example 2 result](./code_sandbox/snaps/js-function-intro-02-result.png)
 
 - [x] **Outcome:** message is **"Hello World"**.
 
@@ -13233,9 +13233,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-function-intro example 3 source" src="./code_sandbox/snaps/js-function-intro-03-code.png" />
+![js-function-intro example 3 source](./code_sandbox/snaps/js-function-intro-03-code.png)
 
-<img alt="js-function-intro example 3 result" src="./code_sandbox/snaps/js-function-intro-03-result.png" />
+![js-function-intro example 3 result](./code_sandbox/snaps/js-function-intro-03-result.png)
 
 - [x] **Outcome:** result is **20**.
 
@@ -13256,9 +13256,9 @@ let sum1 = add(5, 5);
 let sum2 = add(50, 50);
 ```
 
-<img alt="js-function-intro example 4 source" src="./code_sandbox/snaps/js-function-intro-04-code.png" />
+![js-function-intro example 4 source](./code_sandbox/snaps/js-function-intro-04-code.png)
 
-<img alt="js-function-intro example 4 result" src="./code_sandbox/snaps/js-function-intro-04-result.png" />
+![js-function-intro example 4 result](./code_sandbox/snaps/js-function-intro-04-result.png)
 
 - [x] **Outcome:** sum1 is **10**; sum2 is **100**.
 
@@ -13280,9 +13280,9 @@ function myFunction() {
 // code here can NOT use carName
 ```
 
-<img alt="js-function-intro example 5 source" src="./code_sandbox/snaps/js-function-intro-05-code.png" />
+![js-function-intro example 5 source](./code_sandbox/snaps/js-function-intro-05-code.png)
 
-<img alt="js-function-intro example 5 result" src="./code_sandbox/snaps/js-function-intro-05-result.png" />
+![js-function-intro example 5 result](./code_sandbox/snaps/js-function-intro-05-result.png)
 
 - [x] **Outcome:** Inside the function, carName is **Volvo**. Outside, reading it throws **ReferenceError**.
 
@@ -13304,9 +13304,9 @@ let text1 = "The temperature is " + x + " Celsius";
 let text2 = "The temperature is " + toCelsius(77) + " Celsius";
 ```
 
-<img alt="js-function-intro example 6 source" src="./code_sandbox/snaps/js-function-intro-06-code.png" />
+![js-function-intro example 6 source](./code_sandbox/snaps/js-function-intro-06-code.png)
 
-<img alt="js-function-intro example 6 result" src="./code_sandbox/snaps/js-function-intro-06-result.png" />
+![js-function-intro example 6 result](./code_sandbox/snaps/js-function-intro-06-result.png)
 
 - [x] **Outcome:** Both strings are **"The temperature is 25 Celsius"**. 77°F is **25**°C.
 
@@ -13482,9 +13482,9 @@ function sayHello() {
 }
 ```
 
-<img alt="js-function-invocation example 1 source" src="./code_sandbox/snaps/js-function-invocation-01-code.png" />
+![js-function-invocation example 1 source](./code_sandbox/snaps/js-function-invocation-01-code.png)
 
-<img alt="js-function-invocation example 1 result" src="./code_sandbox/snaps/js-function-invocation-01-result.png" />
+![js-function-invocation example 1 result](./code_sandbox/snaps/js-function-invocation-01-result.png)
 
 - [x] **Outcome:** The function object exists, but **Hello World** has not been produced yet.
 
@@ -13504,9 +13504,9 @@ function sayHello() {
 sayHello();
 ```
 
-<img alt="js-function-invocation example 2 source" src="./code_sandbox/snaps/js-function-invocation-02-code.png" />
+![js-function-invocation example 2 source](./code_sandbox/snaps/js-function-invocation-02-code.png)
 
-<img alt="js-function-invocation example 2 result" src="./code_sandbox/snaps/js-function-invocation-02-result.png" />
+![js-function-invocation example 2 result](./code_sandbox/snaps/js-function-invocation-02-result.png)
 
 - [x] **Outcome:** The function ran, but the first return value was unused. Calling again still returns **Hello World**.
 
@@ -13525,9 +13525,9 @@ function sayHello() {
 let greeting = sayHello();
 ```
 
-<img alt="js-function-invocation example 3 source" src="./code_sandbox/snaps/js-function-invocation-03-code.png" />
+![js-function-invocation example 3 source](./code_sandbox/snaps/js-function-invocation-03-code.png)
 
-<img alt="js-function-invocation example 3 result" src="./code_sandbox/snaps/js-function-invocation-03-result.png" />
+![js-function-invocation example 3 result](./code_sandbox/snaps/js-function-invocation-03-result.png)
 
 - [x] **Outcome:** greeting is **"Hello World"**.
 
@@ -13547,9 +13547,9 @@ function sayHello() {
 console.log(sayHello());
 ```
 
-<img alt="js-function-invocation example 4 source" src="./code_sandbox/snaps/js-function-invocation-04-code.png" />
+![js-function-invocation example 4 source](./code_sandbox/snaps/js-function-invocation-04-code.png)
 
-<img alt="js-function-invocation example 4 result" src="./code_sandbox/snaps/js-function-invocation-04-result.png" />
+![js-function-invocation example 4 result](./code_sandbox/snaps/js-function-invocation-04-result.png)
 
 - [x] **Outcome:** console.log prints **"Hello World"**; #demo shows the same string.
 
@@ -13569,9 +13569,9 @@ function sayHello() {
 document.getElementById("demo").innerHTML = sayHello();
 ```
 
-<img alt="js-function-invocation example 5 source" src="./code_sandbox/snaps/js-function-invocation-05-code.png" />
+![js-function-invocation example 5 source](./code_sandbox/snaps/js-function-invocation-05-code.png)
 
-<img alt="js-function-invocation example 5 result" src="./code_sandbox/snaps/js-function-invocation-05-result.png" />
+![js-function-invocation example 5 result](./code_sandbox/snaps/js-function-invocation-05-result.png)
 
 - [x] **Outcome:** #demo shows **Hello World**.
 
@@ -13593,9 +13593,9 @@ let b = sayHello();
 let c = sayHello();
 ```
 
-<img alt="js-function-invocation example 6 source" src="./code_sandbox/snaps/js-function-invocation-06-code.png" />
+![js-function-invocation example 6 source](./code_sandbox/snaps/js-function-invocation-06-code.png)
 
-<img alt="js-function-invocation example 6 result" src="./code_sandbox/snaps/js-function-invocation-06-result.png" />
+![js-function-invocation example 6 result](./code_sandbox/snaps/js-function-invocation-06-result.png)
 
 - [x] **Outcome:** a, b, and c are each **Hello World**.
 
@@ -13615,9 +13615,9 @@ function toCelsius(fahrenheit) {
 let value = toCelsius(77);
 ```
 
-<img alt="js-function-invocation example 7 source" src="./code_sandbox/snaps/js-function-invocation-07-code.png" />
+![js-function-invocation example 7 source](./code_sandbox/snaps/js-function-invocation-07-code.png)
 
-<img alt="js-function-invocation example 7 result" src="./code_sandbox/snaps/js-function-invocation-07-result.png" />
+![js-function-invocation example 7 result](./code_sandbox/snaps/js-function-invocation-07-result.png)
 
 - [x] **Outcome:** value is **25**.
 
@@ -13637,9 +13637,9 @@ function toCelsius(fahrenheit) {
 let value = toCelsius;
 ```
 
-<img alt="js-function-invocation example 8 source" src="./code_sandbox/snaps/js-function-invocation-08-code.png" />
+![js-function-invocation example 8 source](./code_sandbox/snaps/js-function-invocation-08-code.png)
 
-<img alt="js-function-invocation example 8 result" src="./code_sandbox/snaps/js-function-invocation-08-result.png" />
+![js-function-invocation example 8 result](./code_sandbox/snaps/js-function-invocation-08-result.png)
 
 - [x] **Outcome:** `typeof value` is **"function"**. The string starts with `function toCelsius`.
 
@@ -13659,9 +13659,9 @@ function sayHello() {
 let text = sayHello;
 ```
 
-<img alt="js-function-invocation example 9 source" src="./code_sandbox/snaps/js-function-invocation-09-code.png" />
+![js-function-invocation example 9 source](./code_sandbox/snaps/js-function-invocation-09-code.png)
 
-<img alt="js-function-invocation example 9 result" src="./code_sandbox/snaps/js-function-invocation-09-result.png" />
+![js-function-invocation example 9 result](./code_sandbox/snaps/js-function-invocation-09-result.png)
 
 - [x] **Outcome:** `text` is the function. `text()` returns **"Hello World"**.
 
@@ -13684,9 +13684,9 @@ function showHello() {
 showHello();
 ```
 
-<img alt="js-function-invocation example 10 source" src="./code_sandbox/snaps/js-function-invocation-10-code.png" />
+![js-function-invocation example 10 source](./code_sandbox/snaps/js-function-invocation-10-code.png)
 
-<img alt="js-function-invocation example 10 result" src="./code_sandbox/snaps/js-function-invocation-10-result.png" />
+![js-function-invocation example 10 result](./code_sandbox/snaps/js-function-invocation-10-result.png)
 
 - [x] **Outcome:** #demo shows **Hello World** after `showHello()` runs.
 
@@ -13708,9 +13708,9 @@ function showHello() {
 }
 ```
 
-<img alt="js-function-invocation example 11 source" src="./code_sandbox/snaps/js-function-invocation-11-code.png" />
+![js-function-invocation example 11 source](./code_sandbox/snaps/js-function-invocation-11-code.png)
 
-<img alt="js-function-invocation example 11 result" src="./code_sandbox/snaps/js-function-invocation-11-result.png" />
+![js-function-invocation example 11 result](./code_sandbox/snaps/js-function-invocation-11-result.png)
 
 - [x] **Outcome:** The button is present, and #demo shows **Hello World**.
 
@@ -13730,9 +13730,9 @@ function sayHello() {
 let text = sayHello();
 ```
 
-<img alt="js-function-invocation example 12 source" src="./code_sandbox/snaps/js-function-invocation-12-code.png" />
+![js-function-invocation example 12 source](./code_sandbox/snaps/js-function-invocation-12-code.png)
 
-<img alt="js-function-invocation example 12 result" src="./code_sandbox/snaps/js-function-invocation-12-result.png" />
+![js-function-invocation example 12 result](./code_sandbox/snaps/js-function-invocation-12-result.png)
 
 - [x] **Outcome:** text is **undefined** because there is no `return`.
 
@@ -13753,9 +13753,9 @@ let hidden = sayHello();
 // nothing writes hidden to the page in the original mistake
 ```
 
-<img alt="js-function-invocation example 13 source" src="./code_sandbox/snaps/js-function-invocation-13-code.png" />
+![js-function-invocation example 13 source](./code_sandbox/snaps/js-function-invocation-13-code.png)
 
-<img alt="js-function-invocation example 13 result" src="./code_sandbox/snaps/js-function-invocation-13-result.png" />
+![js-function-invocation example 13 result](./code_sandbox/snaps/js-function-invocation-13-result.png)
 
 - [x] **Outcome:** The value **Hello World** exists in `hidden`, but a page that never displays it looks empty.
 
@@ -13949,9 +13949,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-function-parameters example 1 source" src="./code_sandbox/snaps/js-function-parameters-01-code.png" />
+![js-function-parameters example 1 source](./code_sandbox/snaps/js-function-parameters-01-code.png)
 
-<img alt="js-function-parameters example 1 result" src="./code_sandbox/snaps/js-function-parameters-01-result.png" />
+![js-function-parameters example 1 result](./code_sandbox/snaps/js-function-parameters-01-result.png)
 
 - [x] **Outcome:** result is **20**.
 
@@ -13971,9 +13971,9 @@ function sayHello(name) {
 let greeting = sayHello("John");
 ```
 
-<img alt="js-function-parameters example 2 source" src="./code_sandbox/snaps/js-function-parameters-02-code.png" />
+![js-function-parameters example 2 source](./code_sandbox/snaps/js-function-parameters-02-code.png)
 
-<img alt="js-function-parameters example 2 result" src="./code_sandbox/snaps/js-function-parameters-02-result.png" />
+![js-function-parameters example 2 result](./code_sandbox/snaps/js-function-parameters-02-result.png)
 
 - [x] **Outcome:** greeting is **"Hello John"**.
 
@@ -13992,9 +13992,9 @@ function toCelsius(fahrenheit) {
 let value = toCelsius(77);
 ```
 
-<img alt="js-function-parameters example 3 source" src="./code_sandbox/snaps/js-function-parameters-03-code.png" />
+![js-function-parameters example 3 source](./code_sandbox/snaps/js-function-parameters-03-code.png)
 
-<img alt="js-function-parameters example 3 result" src="./code_sandbox/snaps/js-function-parameters-03-result.png" />
+![js-function-parameters example 3 result](./code_sandbox/snaps/js-function-parameters-03-result.png)
 
 - [x] **Outcome:** value is **25**.
 
@@ -14013,9 +14013,9 @@ function fullName(firstName, lastName) {
 let name = fullName("John", "Doe");
 ```
 
-<img alt="js-function-parameters example 4 source" src="./code_sandbox/snaps/js-function-parameters-04-code.png" />
+![js-function-parameters example 4 source](./code_sandbox/snaps/js-function-parameters-04-code.png)
 
-<img alt="js-function-parameters example 4 result" src="./code_sandbox/snaps/js-function-parameters-04-result.png" />
+![js-function-parameters example 4 result](./code_sandbox/snaps/js-function-parameters-04-result.png)
 
 - [x] **Outcome:** name is **"John Doe"**.
 
@@ -14035,9 +14035,9 @@ function toCelsius(fahrenheit) {
 let value = toCelsius();
 ```
 
-<img alt="js-function-parameters example 5 source" src="./code_sandbox/snaps/js-function-parameters-05-code.png" />
+![js-function-parameters example 5 source](./code_sandbox/snaps/js-function-parameters-05-code.png)
 
-<img alt="js-function-parameters example 5 result" src="./code_sandbox/snaps/js-function-parameters-05-result.png" />
+![js-function-parameters example 5 result](./code_sandbox/snaps/js-function-parameters-05-result.png)
 
 - [x] **Outcome:** value is **NaN**.
 
@@ -14058,9 +14058,9 @@ let a = myFunction(5);
 let b = myFunction(5, 3);
 ```
 
-<img alt="js-function-parameters example 6 source" src="./code_sandbox/snaps/js-function-parameters-06-code.png" />
+![js-function-parameters example 6 source](./code_sandbox/snaps/js-function-parameters-06-code.png)
 
-<img alt="js-function-parameters example 6 result" src="./code_sandbox/snaps/js-function-parameters-06-result.png" />
+![js-function-parameters example 6 result](./code_sandbox/snaps/js-function-parameters-06-result.png)
 
 - [x] **Outcome:** `myFunction(5)` is **15**. `myFunction(5, 3)` is **8**.
 
@@ -14231,9 +14231,9 @@ function sayHello() {
 let message = sayHello();
 ```
 
-<img alt="js-function-return example 1 source" src="./code_sandbox/snaps/js-function-return-01-code.png" />
+![js-function-return example 1 source](./code_sandbox/snaps/js-function-return-01-code.png)
 
-<img alt="js-function-return example 1 result" src="./code_sandbox/snaps/js-function-return-01-result.png" />
+![js-function-return example 1 result](./code_sandbox/snaps/js-function-return-01-result.png)
 
 - [x] **Outcome:** message is **"Hello World"**.
 
@@ -14252,9 +14252,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-function-return example 2 source" src="./code_sandbox/snaps/js-function-return-02-code.png" />
+![js-function-return example 2 source](./code_sandbox/snaps/js-function-return-02-code.png)
 
-<img alt="js-function-return example 2 result" src="./code_sandbox/snaps/js-function-return-02-result.png" />
+![js-function-return example 2 result](./code_sandbox/snaps/js-function-return-02-result.png)
 
 - [x] **Outcome:** result is **20**.
 
@@ -14274,9 +14274,9 @@ function multiply(a, b) {
 let total = multiply(2, 3) * 10;
 ```
 
-<img alt="js-function-return example 3 source" src="./code_sandbox/snaps/js-function-return-03-code.png" />
+![js-function-return example 3 source](./code_sandbox/snaps/js-function-return-03-code.png)
 
-<img alt="js-function-return example 3 result" src="./code_sandbox/snaps/js-function-return-03-result.png" />
+![js-function-return example 3 result](./code_sandbox/snaps/js-function-return-03-result.png)
 
 - [x] **Outcome:** total is **60**.
 
@@ -14295,9 +14295,9 @@ function fullName(firstName, lastName) {
 let name = fullName("John", "Doe");
 ```
 
-<img alt="js-function-return example 4 source" src="./code_sandbox/snaps/js-function-return-04-code.png" />
+![js-function-return example 4 source](./code_sandbox/snaps/js-function-return-04-code.png)
 
-<img alt="js-function-return example 4 result" src="./code_sandbox/snaps/js-function-return-04-result.png" />
+![js-function-return example 4 result](./code_sandbox/snaps/js-function-return-04-result.png)
 
 - [x] **Outcome:** name is **"John Doe"**.
 
@@ -14318,9 +14318,9 @@ function multiply(a, b) {
 let result = multiply(4, 3);
 ```
 
-<img alt="js-function-return example 5 source" src="./code_sandbox/snaps/js-function-return-05-code.png" />
+![js-function-return example 5 source](./code_sandbox/snaps/js-function-return-05-code.png)
 
-<img alt="js-function-return example 5 result" src="./code_sandbox/snaps/js-function-return-05-result.png" />
+![js-function-return example 5 result](./code_sandbox/snaps/js-function-return-05-result.png)
 
 - [x] **Outcome:** result is **"Done"**, not 12.
 
@@ -14340,9 +14340,9 @@ function multiply(a, b) {
 let result = multiply(4, 3);
 ```
 
-<img alt="js-function-return example 6 source" src="./code_sandbox/snaps/js-function-return-06-code.png" />
+![js-function-return example 6 source](./code_sandbox/snaps/js-function-return-06-code.png)
 
-<img alt="js-function-return example 6 result" src="./code_sandbox/snaps/js-function-return-06-result.png" />
+![js-function-return example 6 result](./code_sandbox/snaps/js-function-return-06-result.png)
 
 - [x] **Outcome:** result is **undefined**.
 
@@ -14366,9 +14366,9 @@ let a = checkAge(15);
 let b = checkAge(21);
 ```
 
-<img alt="js-function-return example 7 source" src="./code_sandbox/snaps/js-function-return-07-code.png" />
+![js-function-return example 7 source](./code_sandbox/snaps/js-function-return-07-code.png)
 
-<img alt="js-function-return example 7 result" src="./code_sandbox/snaps/js-function-return-07-result.png" />
+![js-function-return example 7 result](./code_sandbox/snaps/js-function-return-07-result.png)
 
 - [x] **Outcome:** 15 → **"Too young"**. 21 → **"Access granted"**.
 
@@ -14387,9 +14387,9 @@ function toCelsius(farenheit) {
 document.getElementById("demo").innerHTML = toCelsius(77);
 ```
 
-<img alt="js-function-return example 8 source" src="./code_sandbox/snaps/js-function-return-08-code.png" />
+![js-function-return example 8 source](./code_sandbox/snaps/js-function-return-08-code.png)
 
-<img alt="js-function-return example 8 result" src="./code_sandbox/snaps/js-function-return-08-result.png" />
+![js-function-return example 8 result](./code_sandbox/snaps/js-function-return-08-result.png)
 
 - [x] **Outcome:** #demo shows **25**.
 
@@ -14413,9 +14413,9 @@ let x = onlyLog();
 let y = withReturn();
 ```
 
-<img alt="js-function-return example 9 source" src="./code_sandbox/snaps/js-function-return-09-code.png" />
+![js-function-return example 9 source](./code_sandbox/snaps/js-function-return-09-code.png)
 
-<img alt="js-function-return example 9 result" src="./code_sandbox/snaps/js-function-return-09-result.png" />
+![js-function-return example 9 result](./code_sandbox/snaps/js-function-return-09-result.png)
 
 - [x] **Outcome:** `onlyLog()` returns **undefined**. `withReturn()` returns **"Hello"**.
 
@@ -14597,9 +14597,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-function-arguments example 1 source" src="./code_sandbox/snaps/js-function-arguments-01-code.png" />
+![js-function-arguments example 1 source](./code_sandbox/snaps/js-function-arguments-01-code.png)
 
-<img alt="js-function-arguments example 1 result" src="./code_sandbox/snaps/js-function-arguments-01-result.png" />
+![js-function-arguments example 1 result](./code_sandbox/snaps/js-function-arguments-01-result.png)
 
 - [x] **Outcome:** 4 maps to `a`, 5 maps to `b`. result is **20**.
 
@@ -14625,9 +14625,9 @@ function findMax() {
 let x = findMax(1, 123, 500, 115, 44, 88);
 ```
 
-<img alt="js-function-arguments example 2 source" src="./code_sandbox/snaps/js-function-arguments-02-code.png" />
+![js-function-arguments example 2 source](./code_sandbox/snaps/js-function-arguments-02-code.png)
 
-<img alt="js-function-arguments example 2 result" src="./code_sandbox/snaps/js-function-arguments-02-result.png" />
+![js-function-arguments example 2 result](./code_sandbox/snaps/js-function-arguments-02-result.png)
 
 - [x] **Outcome:** x is **500**.
 
@@ -14650,9 +14650,9 @@ function sumAll() {
 let x = sumAll(1, 123, 500, 115, 44, 88);
 ```
 
-<img alt="js-function-arguments example 3 source" src="./code_sandbox/snaps/js-function-arguments-03-code.png" />
+![js-function-arguments example 3 source](./code_sandbox/snaps/js-function-arguments-03-code.png)
 
-<img alt="js-function-arguments example 3 result" src="./code_sandbox/snaps/js-function-arguments-03-result.png" />
+![js-function-arguments example 3 result](./code_sandbox/snaps/js-function-arguments-03-result.png)
 
 - [x] **Outcome:** x is **871**.
 
@@ -14673,9 +14673,9 @@ let x1 = subtract(10, 5);
 let x2 = subtract(5, 10);
 ```
 
-<img alt="js-function-arguments example 4 source" src="./code_sandbox/snaps/js-function-arguments-04-code.png" />
+![js-function-arguments example 4 source](./code_sandbox/snaps/js-function-arguments-04-code.png)
 
-<img alt="js-function-arguments example 4 result" src="./code_sandbox/snaps/js-function-arguments-04-result.png" />
+![js-function-arguments example 4 result](./code_sandbox/snaps/js-function-arguments-04-result.png)
 
 - [x] **Outcome:** x1 is **5**; x2 is **-5**.
 
@@ -14697,9 +14697,9 @@ function multiply(a, b) {
 let result = multiply(x, y);
 ```
 
-<img alt="js-function-arguments example 5 source" src="./code_sandbox/snaps/js-function-arguments-05-code.png" />
+![js-function-arguments example 5 source](./code_sandbox/snaps/js-function-arguments-05-code.png)
 
-<img alt="js-function-arguments example 5 result" src="./code_sandbox/snaps/js-function-arguments-05-result.png" />
+![js-function-arguments example 5 result](./code_sandbox/snaps/js-function-arguments-05-result.png)
 
 - [x] **Outcome:** result is **30**.
 
@@ -14719,9 +14719,9 @@ function toCelsius(fahrenheit) {
 let value = toCelsius("John");
 ```
 
-<img alt="js-function-arguments example 6 source" src="./code_sandbox/snaps/js-function-arguments-06-code.png" />
+![js-function-arguments example 6 source](./code_sandbox/snaps/js-function-arguments-06-code.png)
 
-<img alt="js-function-arguments example 6 result" src="./code_sandbox/snaps/js-function-arguments-06-result.png" />
+![js-function-arguments example 6 result](./code_sandbox/snaps/js-function-arguments-06-result.png)
 
 - [x] **Outcome:** value is **NaN**.
 
@@ -14741,9 +14741,9 @@ function multiply(a, b) {
 let result = multiply(4);
 ```
 
-<img alt="js-function-arguments example 7 source" src="./code_sandbox/snaps/js-function-arguments-07-code.png" />
+![js-function-arguments example 7 source](./code_sandbox/snaps/js-function-arguments-07-code.png)
 
-<img alt="js-function-arguments example 7 result" src="./code_sandbox/snaps/js-function-arguments-07-result.png" />
+![js-function-arguments example 7 result](./code_sandbox/snaps/js-function-arguments-07-result.png)
 
 - [x] **Outcome:** result is **NaN**.
 
@@ -14767,9 +14767,9 @@ let a = myFunction(5);
 let b = myFunction(5, 3);
 ```
 
-<img alt="js-function-arguments example 8 source" src="./code_sandbox/snaps/js-function-arguments-08-code.png" />
+![js-function-arguments example 8 source](./code_sandbox/snaps/js-function-arguments-08-code.png)
 
-<img alt="js-function-arguments example 8 result" src="./code_sandbox/snaps/js-function-arguments-08-result.png" />
+![js-function-arguments example 8 result](./code_sandbox/snaps/js-function-arguments-08-result.png)
 
 - [x] **Outcome:** `myFunction(5)` is **7**. `myFunction(5, 3)` is **8**.
 
@@ -14791,9 +14791,9 @@ let b = myFunction(5, undefined);
 let c = myFunction(5, 1);
 ```
 
-<img alt="js-function-arguments example 9 source" src="./code_sandbox/snaps/js-function-arguments-09-code.png" />
+![js-function-arguments example 9 source](./code_sandbox/snaps/js-function-arguments-09-code.png)
 
-<img alt="js-function-arguments example 9 result" src="./code_sandbox/snaps/js-function-arguments-09-result.png" />
+![js-function-arguments example 9 result](./code_sandbox/snaps/js-function-arguments-09-result.png)
 
 - [x] **Outcome:** **15**, **15**, and **6**.
 
@@ -14815,9 +14815,9 @@ function sum(...args) {
 let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
 ```
 
-<img alt="js-function-arguments example 10 source" src="./code_sandbox/snaps/js-function-arguments-10-code.png" />
+![js-function-arguments example 10 source](./code_sandbox/snaps/js-function-arguments-10-code.png)
 
-<img alt="js-function-arguments example 10 result" src="./code_sandbox/snaps/js-function-arguments-10-result.png" />
+![js-function-arguments example 10 result](./code_sandbox/snaps/js-function-arguments-10-result.png)
 
 - [x] **Outcome:** x is **326**.
 
@@ -14839,9 +14839,9 @@ let x = 10;
 let y = addOne(x);
 ```
 
-<img alt="js-function-arguments example 11 source" src="./code_sandbox/snaps/js-function-arguments-11-code.png" />
+![js-function-arguments example 11 source](./code_sandbox/snaps/js-function-arguments-11-code.png)
 
-<img alt="js-function-arguments example 11 result" src="./code_sandbox/snaps/js-function-arguments-11-result.png" />
+![js-function-arguments example 11 result](./code_sandbox/snaps/js-function-arguments-11-result.png)
 
 - [x] **Outcome:** x is still **10**. y is **11**.
 
@@ -14862,9 +14862,9 @@ let person = {name: "John"};
 changeName(person);
 ```
 
-<img alt="js-function-arguments example 12 source" src="./code_sandbox/snaps/js-function-arguments-12-code.png" />
+![js-function-arguments example 12 source](./code_sandbox/snaps/js-function-arguments-12-code.png)
 
-<img alt="js-function-arguments example 12 result" src="./code_sandbox/snaps/js-function-arguments-12-result.png" />
+![js-function-arguments example 12 result](./code_sandbox/snaps/js-function-arguments-12-result.png)
 
 - [x] **Outcome:** person.name is **"Jane"** outside the function too.
 
@@ -15050,9 +15050,9 @@ const multiply = function(a, b) {
 };
 ```
 
-<img alt="js-function-expressions example 1 source" src="./code_sandbox/snaps/js-function-expressions-01-code.png" />
+![js-function-expressions example 1 source](./code_sandbox/snaps/js-function-expressions-01-code.png)
 
-<img alt="js-function-expressions example 1 result" src="./code_sandbox/snaps/js-function-expressions-01-result.png" />
+![js-function-expressions example 1 result](./code_sandbox/snaps/js-function-expressions-01-result.png)
 
 - [x] **Outcome:** `typeof multiply` is **"function"**. `multiply(4, 3)` is **12**.
 
@@ -15072,9 +15072,9 @@ const multiply = function(a, b) {
 let z = multiply(4, 3);
 ```
 
-<img alt="js-function-expressions example 2 source" src="./code_sandbox/snaps/js-function-expressions-02-code.png" />
+![js-function-expressions example 2 source](./code_sandbox/snaps/js-function-expressions-02-code.png)
 
-<img alt="js-function-expressions example 2 result" src="./code_sandbox/snaps/js-function-expressions-02-result.png" />
+![js-function-expressions example 2 result](./code_sandbox/snaps/js-function-expressions-02-result.png)
 
 - [x] **Outcome:** z is **12**.
 
@@ -15093,9 +15093,9 @@ const add = function(a, b) {
 };
 ```
 
-<img alt="js-function-expressions example 3 source" src="./code_sandbox/snaps/js-function-expressions-03-code.png" />
+![js-function-expressions example 3 source](./code_sandbox/snaps/js-function-expressions-03-code.png)
 
-<img alt="js-function-expressions example 3 result" src="./code_sandbox/snaps/js-function-expressions-03-result.png" />
+![js-function-expressions example 3 result](./code_sandbox/snaps/js-function-expressions-03-result.png)
 
 - [x] **Outcome:** add(2, 3) is **5**. Note the `;` after the closing `}`.
 
@@ -15118,9 +15118,9 @@ const sayHello = function() {
 let result = run(sayHello);
 ```
 
-<img alt="js-function-expressions example 4 source" src="./code_sandbox/snaps/js-function-expressions-04-code.png" />
+![js-function-expressions example 4 source](./code_sandbox/snaps/js-function-expressions-04-code.png)
 
-<img alt="js-function-expressions example 4 result" src="./code_sandbox/snaps/js-function-expressions-04-result.png" />
+![js-function-expressions example 4 result](./code_sandbox/snaps/js-function-expressions-04-result.png)
 
 - [x] **Outcome:** result is **"Hello"**.
 
@@ -15140,9 +15140,9 @@ const sayHello = function() {
 sayHello();
 ```
 
-<img alt="js-function-expressions example 5 source" src="./code_sandbox/snaps/js-function-expressions-05-code.png" />
+![js-function-expressions example 5 source](./code_sandbox/snaps/js-function-expressions-05-code.png)
 
-<img alt="js-function-expressions example 5 result" src="./code_sandbox/snaps/js-function-expressions-05-result.png" />
+![js-function-expressions example 5 result](./code_sandbox/snaps/js-function-expressions-05-result.png)
 
 - [x] **Outcome:** The call returns **"Hello World"**.
 
@@ -15162,9 +15162,9 @@ function add(a, b) {
 }
 ```
 
-<img alt="js-function-expressions example 6 source" src="./code_sandbox/snaps/js-function-expressions-06-code.png" />
+![js-function-expressions example 6 source](./code_sandbox/snaps/js-function-expressions-06-code.png)
 
-<img alt="js-function-expressions example 6 result" src="./code_sandbox/snaps/js-function-expressions-06-result.png" />
+![js-function-expressions example 6 result](./code_sandbox/snaps/js-function-expressions-06-result.png)
 
 - [x] **Outcome:** sum is **5**. The call before `function add` works.
 
@@ -15184,9 +15184,9 @@ const add = function(a, b) {
 };
 ```
 
-<img alt="js-function-expressions example 7 source" src="./code_sandbox/snaps/js-function-expressions-07-code.png" />
+![js-function-expressions example 7 source](./code_sandbox/snaps/js-function-expressions-07-code.png)
 
-<img alt="js-function-expressions example 7 result" src="./code_sandbox/snaps/js-function-expressions-07-result.png" />
+![js-function-expressions example 7 result](./code_sandbox/snaps/js-function-expressions-07-result.png)
 
 - [x] **Outcome:** The early call throws **ReferenceError** (add is not initialized). After the `const` line, `add(2, 3)` would be **5**.
 
@@ -15357,9 +15357,9 @@ const multiply = (a, b) => a * b;
 let z = multiply(4, 5);
 ```
 
-<img alt="js-function-arrow example 1 source" src="./code_sandbox/snaps/js-function-arrow-01-code.png" />
+![js-function-arrow example 1 source](./code_sandbox/snaps/js-function-arrow-01-code.png)
 
-<img alt="js-function-arrow example 1 result" src="./code_sandbox/snaps/js-function-arrow-01-result.png" />
+![js-function-arrow example 1 result](./code_sandbox/snaps/js-function-arrow-01-result.png)
 
 - [x] **Outcome:** z is **20**.
 
@@ -15378,9 +15378,9 @@ const multiply = function(a, b) {
 let z = multiply(4, 5);
 ```
 
-<img alt="js-function-arrow example 2 source" src="./code_sandbox/snaps/js-function-arrow-02-code.png" />
+![js-function-arrow example 2 source](./code_sandbox/snaps/js-function-arrow-02-code.png)
 
-<img alt="js-function-arrow example 2 result" src="./code_sandbox/snaps/js-function-arrow-02-result.png" />
+![js-function-arrow example 2 result](./code_sandbox/snaps/js-function-arrow-02-result.png)
 
 - [x] **Outcome:** z is also **20**.
 
@@ -15398,9 +15398,9 @@ const hello = () => "Hello World!";
 let text = hello();
 ```
 
-<img alt="js-function-arrow example 3 source" src="./code_sandbox/snaps/js-function-arrow-03-code.png" />
+![js-function-arrow example 3 source](./code_sandbox/snaps/js-function-arrow-03-code.png)
 
-<img alt="js-function-arrow example 3 result" src="./code_sandbox/snaps/js-function-arrow-03-result.png" />
+![js-function-arrow example 3 result](./code_sandbox/snaps/js-function-arrow-03-result.png)
 
 - [x] **Outcome:** text is **"Hello World!"**.
 
@@ -15419,9 +15419,9 @@ const hello = function() {
 let text = hello();
 ```
 
-<img alt="js-function-arrow example 4 source" src="./code_sandbox/snaps/js-function-arrow-04-code.png" />
+![js-function-arrow example 4 source](./code_sandbox/snaps/js-function-arrow-04-code.png)
 
-<img alt="js-function-arrow example 4 result" src="./code_sandbox/snaps/js-function-arrow-04-result.png" />
+![js-function-arrow example 4 result](./code_sandbox/snaps/js-function-arrow-04-result.png)
 
 - [x] **Outcome:** text is **"Hello World!"**.
 
@@ -15438,9 +15438,9 @@ const square = (x) => x * x;
 let z = square(5);
 ```
 
-<img alt="js-function-arrow example 5 source" src="./code_sandbox/snaps/js-function-arrow-05-code.png" />
+![js-function-arrow example 5 source](./code_sandbox/snaps/js-function-arrow-05-code.png)
 
-<img alt="js-function-arrow example 5 result" src="./code_sandbox/snaps/js-function-arrow-05-result.png" />
+![js-function-arrow example 5 result](./code_sandbox/snaps/js-function-arrow-05-result.png)
 
 - [x] **Outcome:** z is **25**.
 
@@ -15457,9 +15457,9 @@ const square = x => x * x;
 let z = square(5);
 ```
 
-<img alt="js-function-arrow example 6 source" src="./code_sandbox/snaps/js-function-arrow-06-code.png" />
+![js-function-arrow example 6 source](./code_sandbox/snaps/js-function-arrow-06-code.png)
 
-<img alt="js-function-arrow example 6 result" src="./code_sandbox/snaps/js-function-arrow-06-result.png" />
+![js-function-arrow example 6 result](./code_sandbox/snaps/js-function-arrow-06-result.png)
 
 - [x] **Outcome:** z is **25**.
 
@@ -15477,9 +15477,9 @@ const hello = (val) => "Hello " + val;
 let text = hello("World");
 ```
 
-<img alt="js-function-arrow example 7 source" src="./code_sandbox/snaps/js-function-arrow-07-code.png" />
+![js-function-arrow example 7 source](./code_sandbox/snaps/js-function-arrow-07-code.png)
 
-<img alt="js-function-arrow example 7 result" src="./code_sandbox/snaps/js-function-arrow-07-result.png" />
+![js-function-arrow example 7 result](./code_sandbox/snaps/js-function-arrow-07-result.png)
 
 - [x] **Outcome:** text is **"Hello World"**.
 
@@ -15497,9 +15497,9 @@ const hello = val => "Hello " + val;
 let text = hello("World");
 ```
 
-<img alt="js-function-arrow example 8 source" src="./code_sandbox/snaps/js-function-arrow-08-code.png" />
+![js-function-arrow example 8 source](./code_sandbox/snaps/js-function-arrow-08-code.png)
 
-<img alt="js-function-arrow example 8 result" src="./code_sandbox/snaps/js-function-arrow-08-result.png" />
+![js-function-arrow example 8 result](./code_sandbox/snaps/js-function-arrow-08-result.png)
 
 - [x] **Outcome:** text is **"Hello World"**.
 
@@ -15519,9 +15519,9 @@ const a = (x, y) => { x * y };
 const c = (x, y) => { return x * y };
 ```
 
-<img alt="js-function-arrow example 9 source" src="./code_sandbox/snaps/js-function-arrow-09-code.png" />
+![js-function-arrow example 9 source](./code_sandbox/snaps/js-function-arrow-09-code.png)
 
-<img alt="js-function-arrow example 9 result" src="./code_sandbox/snaps/js-function-arrow-09-result.png" />
+![js-function-arrow example 9 result](./code_sandbox/snaps/js-function-arrow-09-result.png)
 
 - [x] **Outcome:** `{ x * y }` → **undefined**. `=> return` → **SyntaxError**. `{ return x * y }` → **20**.
 
@@ -15539,9 +15539,9 @@ hello();  // Error
 const hello = () => "Hello";
 ```
 
-<img alt="js-function-arrow example 10 source" src="./code_sandbox/snaps/js-function-arrow-10-code.png" />
+![js-function-arrow example 10 source](./code_sandbox/snaps/js-function-arrow-10-code.png)
 
-<img alt="js-function-arrow example 10 result" src="./code_sandbox/snaps/js-function-arrow-10-result.png" />
+![js-function-arrow example 10 result](./code_sandbox/snaps/js-function-arrow-10-result.png)
 
 - [x] **Outcome:** **ReferenceError** — cannot access `hello` before initialization. After the `const`, `hello()` is **Hello**.
 
@@ -15564,9 +15564,9 @@ const person = {
 let text = person.greet();
 ```
 
-<img alt="js-function-arrow example 11 source" src="./code_sandbox/snaps/js-function-arrow-11-code.png" />
+![js-function-arrow example 11 source](./code_sandbox/snaps/js-function-arrow-11-code.png)
 
-<img alt="js-function-arrow example 11 result" src="./code_sandbox/snaps/js-function-arrow-11-result.png" />
+![js-function-arrow example 11 result](./code_sandbox/snaps/js-function-arrow-11-result.png)
 
 - [x] **Outcome:** text is **"John"**.
 
@@ -15589,9 +15589,9 @@ const person = {
 let text = person.greet();
 ```
 
-<img alt="js-function-arrow example 12 source" src="./code_sandbox/snaps/js-function-arrow-12-code.png" />
+![js-function-arrow example 12 source](./code_sandbox/snaps/js-function-arrow-12-code.png)
 
-<img alt="js-function-arrow example 12 result" src="./code_sandbox/snaps/js-function-arrow-12-result.png" />
+![js-function-arrow example 12 result](./code_sandbox/snaps/js-function-arrow-12-result.png)
 
 - [x] **Outcome:** `person.greet()` is **not** `"John"` (empty string or undefined on the global `this`). Do not use arrows as methods.
 
@@ -15779,9 +15779,9 @@ function sayHello() {
 let text = sayHello();
 ```
 
-<img alt="js-function-quiz example 1 source" src="./code_sandbox/snaps/js-function-quiz-01-code.png" />
+![js-function-quiz example 1 source](./code_sandbox/snaps/js-function-quiz-01-code.png)
 
-<img alt="js-function-quiz example 1 result" src="./code_sandbox/snaps/js-function-quiz-01-result.png" />
+![js-function-quiz example 1 result](./code_sandbox/snaps/js-function-quiz-01-result.png)
 
 - [x] **Outcome:** text is **"Hello World"**. Correct choice: **B**.
 
@@ -15802,9 +15802,9 @@ let x = test;
 let y = test();
 ```
 
-<img alt="js-function-quiz example 2 source" src="./code_sandbox/snaps/js-function-quiz-02-code.png" />
+![js-function-quiz example 2 source](./code_sandbox/snaps/js-function-quiz-02-code.png)
 
-<img alt="js-function-quiz example 2 result" src="./code_sandbox/snaps/js-function-quiz-02-result.png" />
+![js-function-quiz example 2 result](./code_sandbox/snaps/js-function-quiz-02-result.png)
 
 - [x] **Outcome:** `x` is a **function**; `y` is **5**. Correct choice: **C**.
 
@@ -15824,9 +15824,9 @@ function multiply(a, b) {
 let result = multiply(4, 5);
 ```
 
-<img alt="js-function-quiz example 3 source" src="./code_sandbox/snaps/js-function-quiz-03-code.png" />
+![js-function-quiz example 3 source](./code_sandbox/snaps/js-function-quiz-03-code.png)
 
-<img alt="js-function-quiz example 3 result" src="./code_sandbox/snaps/js-function-quiz-03-result.png" />
+![js-function-quiz example 3 result](./code_sandbox/snaps/js-function-quiz-03-result.png)
 
 - [x] **Outcome:** a and b are **parameters**. Correct choice: **B**.
 
@@ -15845,9 +15845,9 @@ function add(a, b) {
 let x = add(2, 3) * 10;
 ```
 
-<img alt="js-function-quiz example 4 source" src="./code_sandbox/snaps/js-function-quiz-04-code.png" />
+![js-function-quiz example 4 source](./code_sandbox/snaps/js-function-quiz-04-code.png)
 
-<img alt="js-function-quiz example 4 result" src="./code_sandbox/snaps/js-function-quiz-04-result.png" />
+![js-function-quiz example 4 result](./code_sandbox/snaps/js-function-quiz-04-result.png)
 
 - [x] **Outcome:** x is **50**. Correct choice: **C**.
 
@@ -15867,9 +15867,9 @@ function multiply(a, b) {
 let result = multiply(4, 3);
 ```
 
-<img alt="js-function-quiz example 5 source" src="./code_sandbox/snaps/js-function-quiz-05-code.png" />
+![js-function-quiz example 5 source](./code_sandbox/snaps/js-function-quiz-05-code.png)
 
-<img alt="js-function-quiz example 5 result" src="./code_sandbox/snaps/js-function-quiz-05-result.png" />
+![js-function-quiz example 5 result](./code_sandbox/snaps/js-function-quiz-05-result.png)
 
 - [x] **Outcome:** result is **undefined**. Correct choice: **C**.
 
@@ -15889,9 +15889,9 @@ function add(a, b) {
 }
 ```
 
-<img alt="js-function-quiz example 6 source" src="./code_sandbox/snaps/js-function-quiz-06-code.png" />
+![js-function-quiz example 6 source](./code_sandbox/snaps/js-function-quiz-06-code.png)
 
-<img alt="js-function-quiz example 6 result" src="./code_sandbox/snaps/js-function-quiz-06-result.png" />
+![js-function-quiz example 6 result](./code_sandbox/snaps/js-function-quiz-06-result.png)
 
 - [x] **Outcome:** Declaration call works: **5**. Expression call before `const` is **ReferenceError**. Correct choice: **A**.
 
@@ -15909,9 +15909,9 @@ const add = (a, b) => a + b;
 let x = add(2, 3);
 ```
 
-<img alt="js-function-quiz example 7 source" src="./code_sandbox/snaps/js-function-quiz-07-code.png" />
+![js-function-quiz example 7 source](./code_sandbox/snaps/js-function-quiz-07-code.png)
 
-<img alt="js-function-quiz example 7 result" src="./code_sandbox/snaps/js-function-quiz-07-result.png" />
+![js-function-quiz example 7 result](./code_sandbox/snaps/js-function-quiz-07-result.png)
 
 - [x] **Outcome:** C runs: **5**. A is **SyntaxError**. B is **SyntaxError**. Correct choice: **C**.
 
@@ -15934,9 +15934,9 @@ const person = {
 let text = person.getName();
 ```
 
-<img alt="js-function-quiz example 8 source" src="./code_sandbox/snaps/js-function-quiz-08-code.png" />
+![js-function-quiz example 8 source](./code_sandbox/snaps/js-function-quiz-08-code.png)
 
-<img alt="js-function-quiz example 8 result" src="./code_sandbox/snaps/js-function-quiz-08-result.png" />
+![js-function-quiz example 8 result](./code_sandbox/snaps/js-function-quiz-08-result.png)
 
 - [x] **Outcome:** text is **"John"**. Correct choice: **C**.
 
@@ -15957,9 +15957,9 @@ const person = {
 let text = person.greet();
 ```
 
-<img alt="js-function-quiz example 9 source" src="./code_sandbox/snaps/js-function-quiz-09-code.png" />
+![js-function-quiz example 9 source](./code_sandbox/snaps/js-function-quiz-09-code.png)
 
-<img alt="js-function-quiz example 9 result" src="./code_sandbox/snaps/js-function-quiz-09-result.png" />
+![js-function-quiz example 9 result](./code_sandbox/snaps/js-function-quiz-09-result.png)
 
 - [x] **Outcome:** `greet()` is **not** `"John"`. Correct choice: **B**.
 
@@ -16144,9 +16144,9 @@ clearTimeout(id);
 clearInterval(id);
 ```
 
-<img alt="js-timers example 1 source" src="./code_sandbox/snaps/js-timers-01-code.png" />
+![js-timers example 1 source](./code_sandbox/snaps/js-timers-01-code.png)
 
-<img alt="js-timers example 1 result" src="./code_sandbox/snaps/js-timers-01-result.png" />
+![js-timers example 1 result](./code_sandbox/snaps/js-timers-01-result.png)
 
 - [x] **Outcome:** The table is listed. A 0 ms timeout then writes **ready** to show setTimeout works.
 
@@ -16166,9 +16166,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-timers example 2 source" src="./code_sandbox/snaps/js-timers-02-code.png" />
+![js-timers example 2 source](./code_sandbox/snaps/js-timers-02-code.png)
 
-<img alt="js-timers example 2 result" src="./code_sandbox/snaps/js-timers-02-result.png" />
+![js-timers example 2 result](./code_sandbox/snaps/js-timers-02-result.png)
 
 - [x] **Outcome:** #demo shows **Hello!** after the delay.
 
@@ -16186,9 +16186,9 @@ setTimeout(myFunction, 3000);     // correct
 setTimeout(myFunction(), 3000);   // incorrect — runs now
 ```
 
-<img alt="js-timers example 3 source" src="./code_sandbox/snaps/js-timers-03-code.png" />
+![js-timers example 3 source](./code_sandbox/snaps/js-timers-03-code.png)
 
-<img alt="js-timers example 3 result" src="./code_sandbox/snaps/js-timers-03-result.png" />
+![js-timers example 3 result](./code_sandbox/snaps/js-timers-03-result.png)
 
 - [x] **Outcome:** The incorrect call runs **immediately**. The correct call would wait.
 
@@ -16206,9 +16206,9 @@ setTimeout(function() {
 }, 3000);
 ```
 
-<img alt="js-timers example 4 source" src="./code_sandbox/snaps/js-timers-04-code.png" />
+![js-timers example 4 source](./code_sandbox/snaps/js-timers-04-code.png)
 
-<img alt="js-timers example 4 result" src="./code_sandbox/snaps/js-timers-04-result.png" />
+![js-timers example 4 result](./code_sandbox/snaps/js-timers-04-result.png)
 
 - [x] **Outcome:** #demo shows **Hello!**.
 
@@ -16227,9 +16227,9 @@ setTimeout(function() { myDisplayer("Timer"); }, 3000);
 myDisplayer("End");
 ```
 
-<img alt="js-timers example 5 source" src="./code_sandbox/snaps/js-timers-05-code.png" />
+![js-timers example 5 source](./code_sandbox/snaps/js-timers-05-code.png)
 
-<img alt="js-timers example 5 result" src="./code_sandbox/snaps/js-timers-05-result.png" />
+![js-timers example 5 result](./code_sandbox/snaps/js-timers-05-result.png)
 
 - [x] **Outcome:** Final accumulated order: **Start End Timer**.
 
@@ -16248,9 +16248,9 @@ setTimeout(function() { myDisplayer("Timer"); }, 0);
 myDisplayer("End");
 ```
 
-<img alt="js-timers example 6 source" src="./code_sandbox/snaps/js-timers-06-code.png" />
+![js-timers example 6 source](./code_sandbox/snaps/js-timers-06-code.png)
 
-<img alt="js-timers example 6 result" src="./code_sandbox/snaps/js-timers-06-result.png" />
+![js-timers example 6 result](./code_sandbox/snaps/js-timers-06-result.png)
 
 - [x] **Outcome:** Order is still **Start End Timer**.
 
@@ -16271,9 +16271,9 @@ let i = 4e7;  // page used 4e9
 while (--i > 0);
 ```
 
-<img alt="js-timers example 7 source" src="./code_sandbox/snaps/js-timers-07-code.png" />
+![js-timers example 7 source](./code_sandbox/snaps/js-timers-07-code.png)
 
-<img alt="js-timers example 7 result" src="./code_sandbox/snaps/js-timers-07-result.png" />
+![js-timers example 7 result](./code_sandbox/snaps/js-timers-07-result.png)
 
 - [x] **Outcome:** After the loop, #demo shows **Timer finished**. The callback waited for the busy loop, not just 1000 ms.
 
@@ -16299,9 +16299,9 @@ function stopTimer() {
 }
 ```
 
-<img alt="js-timers example 8 source" src="./code_sandbox/snaps/js-timers-08-code.png" />
+![js-timers example 8 source](./code_sandbox/snaps/js-timers-08-code.png)
 
-<img alt="js-timers example 8 result" src="./code_sandbox/snaps/js-timers-08-result.png" />
+![js-timers example 8 result](./code_sandbox/snaps/js-timers-08-result.png)
 
 - [x] **Outcome:** #demo shows **Timer stopped** (the 5 s timeout never finished).
 
@@ -16322,9 +16322,9 @@ function showTime() {
 }
 ```
 
-<img alt="js-timers example 9 source" src="./code_sandbox/snaps/js-timers-09-code.png" />
+![js-timers example 9 source](./code_sandbox/snaps/js-timers-09-code.png)
 
-<img alt="js-timers example 9 result" src="./code_sandbox/snaps/js-timers-09-result.png" />
+![js-timers example 9 result](./code_sandbox/snaps/js-timers-09-result.png)
 
 - [x] **Outcome:** A clock time appears in #demo.
 
@@ -16355,9 +16355,9 @@ function stopClock() {
 }
 ```
 
-<img alt="js-timers example 10 source" src="./code_sandbox/snaps/js-timers-10-code.png" />
+![js-timers example 10 source](./code_sandbox/snaps/js-timers-10-code.png)
 
-<img alt="js-timers example 10 result" src="./code_sandbox/snaps/js-timers-10-result.png" />
+![js-timers example 10 result](./code_sandbox/snaps/js-timers-10-result.png)
 
 - [x] **Outcome:** The clock is running; Stop Clock would call `clearInterval`.
 
@@ -16377,9 +16377,9 @@ function showMessage(greeting, name) {
 }
 ```
 
-<img alt="js-timers example 11 source" src="./code_sandbox/snaps/js-timers-11-code.png" />
+![js-timers example 11 source](./code_sandbox/snaps/js-timers-11-code.png)
 
-<img alt="js-timers example 11 result" src="./code_sandbox/snaps/js-timers-11-result.png" />
+![js-timers example 11 result](./code_sandbox/snaps/js-timers-11-result.png)
 
 - [x] **Outcome:** #demo shows **Hello John**.
 
@@ -16400,9 +16400,9 @@ function repeat() {
 repeat();
 ```
 
-<img alt="js-timers example 12 source" src="./code_sandbox/snaps/js-timers-12-code.png" />
+![js-timers example 12 source](./code_sandbox/snaps/js-timers-12-code.png)
 
-<img alt="js-timers example 12 result" src="./code_sandbox/snaps/js-timers-12-result.png" />
+![js-timers example 12 result](./code_sandbox/snaps/js-timers-12-result.png)
 
 - [x] **Outcome:** #demo shows **Hello (tick 2)** after two runs, then stops.
 
@@ -16432,9 +16432,9 @@ function startCountdown() {
 }
 ```
 
-<img alt="js-timers example 13 source" src="./code_sandbox/snaps/js-timers-13-code.png" />
+![js-timers example 13 source](./code_sandbox/snaps/js-timers-13-code.png)
 
-<img alt="js-timers example 13 result" src="./code_sandbox/snaps/js-timers-13-result.png" />
+![js-timers example 13 result](./code_sandbox/snaps/js-timers-13-result.png)
 
 - [x] **Outcome:** Count has decreased from 10 (about 6 after ~4 s of virtual time).
 
@@ -16453,9 +16453,9 @@ setTimeout("myFunction()", 1000);  // not recommended
 setTimeout(myFunction, 1000);     // recommended
 ```
 
-<img alt="js-timers example 14 source" src="./code_sandbox/snaps/js-timers-14-code.png" />
+![js-timers example 14 source](./code_sandbox/snaps/js-timers-14-code.png)
 
-<img alt="js-timers example 14 result" src="./code_sandbox/snaps/js-timers-14-result.png" />
+![js-timers example 14 result](./code_sandbox/snaps/js-timers-14-result.png)
 
 - [x] **Outcome:** Both callbacks run `myFunction`. Prefer the function reference.
 
@@ -16476,9 +16476,9 @@ setTimeout(function() {
 }, 1000);
 ```
 
-<img alt="js-timers example 15 source" src="./code_sandbox/snaps/js-timers-15-code.png" />
+![js-timers example 15 source](./code_sandbox/snaps/js-timers-15-code.png)
 
-<img alt="js-timers example 15 result" src="./code_sandbox/snaps/js-timers-15-result.png" />
+![js-timers example 15 result](./code_sandbox/snaps/js-timers-15-result.png)
 
 - [x] **Outcome:** #demo shows **Finished** after the delayed (smaller) loop.
 
@@ -16496,9 +16496,9 @@ setTimeout(myFunction(), 1000);  // wrong
 setTimeout(myFunction, 1000);    // right
 ```
 
-<img alt="js-timers example 16 source" src="./code_sandbox/snaps/js-timers-16-code.png" />
+![js-timers example 16 source](./code_sandbox/snaps/js-timers-16-code.png)
 
-<img alt="js-timers example 16 result" src="./code_sandbox/snaps/js-timers-16-result.png" />
+![js-timers example 16 result](./code_sandbox/snaps/js-timers-16-result.png)
 
 - [x] **Outcome:** Wrong form: **ran immediately**. Right form waits.
 
@@ -16526,9 +16526,9 @@ function startSlides() {
 }
 ```
 
-<img alt="js-timers example 17 source" src="./code_sandbox/snaps/js-timers-17-code.png" />
+![js-timers example 17 source](./code_sandbox/snaps/js-timers-17-code.png)
 
-<img alt="js-timers example 17 result" src="./code_sandbox/snaps/js-timers-17-result.png" />
+![js-timers example 17 result](./code_sandbox/snaps/js-timers-17-result.png)
 
 - [x] **Outcome:** The label cycles **nature → snow → mountains**. Interval here is **1000** ms so the snap shows a change (the page used **3000** ms).
 
@@ -16738,9 +16738,9 @@ const car = {
 };
 ```
 
-<img alt="js-objects example 1 source" src="./code_sandbox/snaps/js-objects-01-code.png" />
+![js-objects example 1 source](./code_sandbox/snaps/js-objects-01-code.png)
 
-<img alt="js-objects example 1 result" src="./code_sandbox/snaps/js-objects-01-result.png" />
+![js-objects example 1 result](./code_sandbox/snaps/js-objects-01-result.png)
 
 - [x] **Outcome:** car.type is **"Fiat"**. car.start() returns **"started"**.
 
@@ -16760,9 +16760,9 @@ car.model = "500";
 delete car.color;
 ```
 
-<img alt="js-objects example 2 source" src="./code_sandbox/snaps/js-objects-02-code.png" />
+![js-objects example 2 source](./code_sandbox/snaps/js-objects-02-code.png)
 
-<img alt="js-objects example 2 result" src="./code_sandbox/snaps/js-objects-02-result.png" />
+![js-objects example 2 result](./code_sandbox/snaps/js-objects-02-result.png)
 
 - [x] **Outcome:** type is **"Volvo"**, model is **"500"**, color is **undefined**, and `"color" in car` is **false**.
 
@@ -16784,9 +16784,9 @@ const car = {
 let msg = car.start();
 ```
 
-<img alt="js-objects example 3 source" src="./code_sandbox/snaps/js-objects-03-code.png" />
+![js-objects example 3 source](./code_sandbox/snaps/js-objects-03-code.png)
 
-<img alt="js-objects example 3 result" src="./code_sandbox/snaps/js-objects-03-result.png" />
+![js-objects example 3 result](./code_sandbox/snaps/js-objects-03-result.png)
 
 - [x] **Outcome:** msg is **"started"**. `typeof car.start` is **"function"**.
 
@@ -16808,9 +16808,9 @@ const person = {
 };
 ```
 
-<img alt="js-objects example 4 source" src="./code_sandbox/snaps/js-objects-04-code.png" />
+![js-objects example 4 source](./code_sandbox/snaps/js-objects-04-code.png)
 
-<img alt="js-objects example 4 result" src="./code_sandbox/snaps/js-objects-04-result.png" />
+![js-objects example 4 result](./code_sandbox/snaps/js-objects-04-result.png)
 
 - [x] **Outcome:** person.greet() is **"John"** because `this` is `person`.
 
@@ -16830,9 +16830,9 @@ let named = person.name + ", " + person.age;
 let json = JSON.stringify(person);
 ```
 
-<img alt="js-objects example 5 source" src="./code_sandbox/snaps/js-objects-05-code.png" />
+![js-objects example 5 source](./code_sandbox/snaps/js-objects-05-code.png)
 
-<img alt="js-objects example 5 result" src="./code_sandbox/snaps/js-objects-05-result.png" />
+![js-objects example 5 result](./code_sandbox/snaps/js-objects-05-result.png)
 
 - [x] **Outcome:** String(person) is **[object Object]**. Named: **"John, 30"**. JSON: **{"name":"John","age":30}**.
 
@@ -16852,9 +16852,9 @@ function Person(first) {
 const p = new Person("John");
 ```
 
-<img alt="js-objects example 6 source" src="./code_sandbox/snaps/js-objects-06-code.png" />
+![js-objects example 6 source](./code_sandbox/snaps/js-objects-06-code.png)
 
-<img alt="js-objects example 6 result" src="./code_sandbox/snaps/js-objects-06-result.png" />
+![js-objects example 6 result](./code_sandbox/snaps/js-objects-06-result.png)
 
 - [x] **Outcome:** p.firstName is **"John"**. `p instanceof Person` is **true**.
 
@@ -17028,9 +17028,9 @@ Sandbox: `code_sandbox/js-object-intro/car-literal.html`
 const car = { type: "Fiat", model: "500", color: "white" };
 ```
 
-<img alt="js-object-intro example 1 source" src="./code_sandbox/snaps/js-object-intro-01-code.png" />
+![js-object-intro example 1 source](./code_sandbox/snaps/js-object-intro-01-code.png)
 
-<img alt="js-object-intro example 1 result" src="./code_sandbox/snaps/js-object-intro-01-result.png" />
+![js-object-intro example 1 result](./code_sandbox/snaps/js-object-intro-01-result.png)
 
 - [x] **Outcome:** car is a Fiat **500** that is **white**.
 
@@ -17047,9 +17047,9 @@ Sandbox: `code_sandbox/js-object-intro/person-one-line.html`
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 ```
 
-<img alt="js-object-intro example 2 source" src="./code_sandbox/snaps/js-object-intro-02-code.png" />
+![js-object-intro example 2 source](./code_sandbox/snaps/js-object-intro-02-code.png)
 
-<img alt="js-object-intro example 2 result" src="./code_sandbox/snaps/js-object-intro-02-result.png" />
+![js-object-intro example 2 result](./code_sandbox/snaps/js-object-intro-02-result.png)
 
 - [x] **Outcome:** person is **John Doe**, age **50**, eyeColor **blue**.
 
@@ -17071,9 +17071,9 @@ const person = {
 };
 ```
 
-<img alt="js-object-intro example 3 source" src="./code_sandbox/snaps/js-object-intro-03-code.png" />
+![js-object-intro example 3 source](./code_sandbox/snaps/js-object-intro-03-code.png)
 
-<img alt="js-object-intro example 3 result" src="./code_sandbox/snaps/js-object-intro-03-result.png" />
+![js-object-intro example 3 result](./code_sandbox/snaps/js-object-intro-03-result.png)
 
 - [x] **Outcome:** Same object as Example 1: **John**, **50**, **blue**.
 
@@ -17094,9 +17094,9 @@ person.age = 50;
 person.eyeColor = "blue";
 ```
 
-<img alt="js-object-intro example 4 source" src="./code_sandbox/snaps/js-object-intro-04-code.png" />
+![js-object-intro example 4 source](./code_sandbox/snaps/js-object-intro-04-code.png)
 
-<img alt="js-object-intro example 4 result" src="./code_sandbox/snaps/js-object-intro-04-result.png" />
+![js-object-intro example 4 result](./code_sandbox/snaps/js-object-intro-04-result.png)
 
 - [x] **Outcome:** After adding keys, person is again **John Doe**, **50**, **blue**.
 
@@ -17118,9 +17118,9 @@ const person = new Object({
 });
 ```
 
-<img alt="js-object-intro example 5 source" src="./code_sandbox/snaps/js-object-intro-05-code.png" />
+![js-object-intro example 5 source](./code_sandbox/snaps/js-object-intro-05-code.png)
 
-<img alt="js-object-intro example 5 result" src="./code_sandbox/snaps/js-object-intro-05-result.png" />
+![js-object-intro example 5 result](./code_sandbox/snaps/js-object-intro-05-result.png)
 
 - [x] **Outcome:** Works, and `instanceof Object` is **true** — but a literal is the usual choice.
 
@@ -17138,9 +17138,9 @@ const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 let name = person.firstName;
 ```
 
-<img alt="js-object-intro example 6 source" src="./code_sandbox/snaps/js-object-intro-06-code.png" />
+![js-object-intro example 6 source](./code_sandbox/snaps/js-object-intro-06-code.png)
 
-<img alt="js-object-intro example 6 result" src="./code_sandbox/snaps/js-object-intro-06-result.png" />
+![js-object-intro example 6 result](./code_sandbox/snaps/js-object-intro-06-result.png)
 
 - [x] **Outcome:** name is **"John"**.
 
@@ -17158,9 +17158,9 @@ const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 let name = person["firstName"];
 ```
 
-<img alt="js-object-intro example 7 source" src="./code_sandbox/snaps/js-object-intro-07-code.png" />
+![js-object-intro example 7 source](./code_sandbox/snaps/js-object-intro-07-code.png)
 
-<img alt="js-object-intro example 7 result" src="./code_sandbox/snaps/js-object-intro-07-result.png" />
+![js-object-intro example 7 result](./code_sandbox/snaps/js-object-intro-07-result.png)
 
 - [x] **Outcome:** name is **"John"** — same value as the dot form.
 
@@ -17184,9 +17184,9 @@ const person = {
 };
 ```
 
-<img alt="js-object-intro example 8 source" src="./code_sandbox/snaps/js-object-intro-08-code.png" />
+![js-object-intro example 8 source](./code_sandbox/snaps/js-object-intro-08-code.png)
 
-<img alt="js-object-intro example 8 result" src="./code_sandbox/snaps/js-object-intro-08-result.png" />
+![js-object-intro example 8 result](./code_sandbox/snaps/js-object-intro-08-result.png)
 
 - [x] **Outcome:** person.fullName() is **"John Doe"**.
 
@@ -17222,9 +17222,9 @@ const objects = [
 ];
 ```
 
-<img alt="js-object-intro example 9 source" src="./code_sandbox/snaps/js-object-intro-09-code.png" />
+![js-object-intro example 9 source](./code_sandbox/snaps/js-object-intro-09-code.png)
 
-<img alt="js-object-intro example 9 result" src="./code_sandbox/snaps/js-object-intro-09-result.png" />
+![js-object-intro example 9 result](./code_sandbox/snaps/js-object-intro-09-result.png)
 
 - [x] **Outcome:** Primitives: **string, number, bigint, boolean, undefined, symbol, object** (`null`). Objects (and **function**): **object** except a function, whose typeof is **"function"**.
 
@@ -17415,9 +17415,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 let text = person.firstName + " is " + person.age;
 ```
 
-<img alt="js-object-properties example 1 source" src="./code_sandbox/snaps/js-object-properties-01-code.png" />
+![js-object-properties example 1 source](./code_sandbox/snaps/js-object-properties-01-code.png)
 
-<img alt="js-object-properties example 1 result" src="./code_sandbox/snaps/js-object-properties-01-result.png" />
+![js-object-properties example 1 result](./code_sandbox/snaps/js-object-properties-01-result.png)
 
 - [x] **Outcome:** text is **"John is 50"**.
 
@@ -17435,9 +17435,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 let text = person["firstName"] + " is " + person["age"];
 ```
 
-<img alt="js-object-properties example 2 source" src="./code_sandbox/snaps/js-object-properties-02-code.png" />
+![js-object-properties example 2 source](./code_sandbox/snaps/js-object-properties-02-code.png)
 
-<img alt="js-object-properties example 2 result" src="./code_sandbox/snaps/js-object-properties-02-result.png" />
+![js-object-properties example 2 result](./code_sandbox/snaps/js-object-properties-02-result.png)
 
 - [x] **Outcome:** text is **"John is 50"**.
 
@@ -17458,9 +17458,9 @@ let name = person[n2] + " " + person[n2];
 let clarified = person[n1] + " " + person[n2];
 ```
 
-<img alt="js-object-properties example 3 source" src="./code_sandbox/snaps/js-object-properties-03-code.png" />
+![js-object-properties example 3 source](./code_sandbox/snaps/js-object-properties-03-code.png)
 
-<img alt="js-object-properties example 3 result" src="./code_sandbox/snaps/js-object-properties-03-result.png" />
+![js-object-properties example 3 result](./code_sandbox/snaps/js-object-properties-03-result.png)
 
 - [x] **Outcome:** Page code is **"Doe Doe"**. Clarifying example is **"John Doe"**.
 
@@ -17479,9 +17479,9 @@ let x = "age";
 let age = person[x];
 ```
 
-<img alt="js-object-properties example 4 source" src="./code_sandbox/snaps/js-object-properties-04-code.png" />
+![js-object-properties example 4 source](./code_sandbox/snaps/js-object-properties-04-code.png)
 
-<img alt="js-object-properties example 4 result" src="./code_sandbox/snaps/js-object-properties-04-result.png" />
+![js-object-properties example 4 result](./code_sandbox/snaps/js-object-properties-04-result.png)
 
 - [x] **Outcome:** x is **"age"**; age is **50**.
 
@@ -17499,9 +17499,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 person.age = 10;
 ```
 
-<img alt="js-object-properties example 5 source" src="./code_sandbox/snaps/js-object-properties-05-code.png" />
+![js-object-properties example 5 source](./code_sandbox/snaps/js-object-properties-05-code.png)
 
-<img alt="js-object-properties example 5 result" src="./code_sandbox/snaps/js-object-properties-05-result.png" />
+![js-object-properties example 5 result](./code_sandbox/snaps/js-object-properties-05-result.png)
 
 - [x] **Outcome:** person.age is **10**.
 
@@ -17519,9 +17519,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 person.nationality = "English";
 ```
 
-<img alt="js-object-properties example 6 source" src="./code_sandbox/snaps/js-object-properties-06-code.png" />
+![js-object-properties example 6 source](./code_sandbox/snaps/js-object-properties-06-code.png)
 
-<img alt="js-object-properties example 6 result" src="./code_sandbox/snaps/js-object-properties-06-result.png" />
+![js-object-properties example 6 result](./code_sandbox/snaps/js-object-properties-06-result.png)
 
 - [x] **Outcome:** person.nationality is **"English"**.
 
@@ -17539,9 +17539,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 delete person.age;
 ```
 
-<img alt="js-object-properties example 7 source" src="./code_sandbox/snaps/js-object-properties-07-code.png" />
+![js-object-properties example 7 source](./code_sandbox/snaps/js-object-properties-07-code.png)
 
-<img alt="js-object-properties example 7 result" src="./code_sandbox/snaps/js-object-properties-07-result.png" />
+![js-object-properties example 7 result](./code_sandbox/snaps/js-object-properties-07-result.png)
 
 - [x] **Outcome:** person.age is **undefined**. `"age" in person` is **false**.
 
@@ -17559,9 +17559,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 delete person["age"];
 ```
 
-<img alt="js-object-properties example 8 source" src="./code_sandbox/snaps/js-object-properties-08-code.png" />
+![js-object-properties example 8 source](./code_sandbox/snaps/js-object-properties-08-code.png)
 
-<img alt="js-object-properties example 8 result" src="./code_sandbox/snaps/js-object-properties-08-result.png" />
+![js-object-properties example 8 result](./code_sandbox/snaps/js-object-properties-08-result.png)
 
 - [x] **Outcome:** person.age is **undefined**. `"age" in person` is **false**.
 
@@ -17580,9 +17580,9 @@ let hasFirst = ("firstName" in person);
 let hasAge = ("age" in person);
 ```
 
-<img alt="js-object-properties example 9 source" src="./code_sandbox/snaps/js-object-properties-09-code.png" />
+![js-object-properties example 9 source](./code_sandbox/snaps/js-object-properties-09-code.png)
 
-<img alt="js-object-properties example 9 result" src="./code_sandbox/snaps/js-object-properties-09-result.png" />
+![js-object-properties example 9 result](./code_sandbox/snaps/js-object-properties-09-result.png)
 
 - [x] **Outcome:** `"firstName" in person` is **true**. `"age" in person` is **false**.
 
@@ -17607,9 +17607,9 @@ const myObj = {
 };
 ```
 
-<img alt="js-object-properties example 10 source" src="./code_sandbox/snaps/js-object-properties-10-code.png" />
+![js-object-properties example 10 source](./code_sandbox/snaps/js-object-properties-10-code.png)
 
-<img alt="js-object-properties example 10 result" src="./code_sandbox/snaps/js-object-properties-10-result.png" />
+![js-object-properties example 10 result](./code_sandbox/snaps/js-object-properties-10-result.png)
 
 - [x] **Outcome:** myObj.myCars.car2 is **"BMW"**.
 
@@ -17630,9 +17630,9 @@ const myObj = {
 };
 ```
 
-<img alt="js-object-properties example 11 source" src="./code_sandbox/snaps/js-object-properties-11-code.png" />
+![js-object-properties example 11 source](./code_sandbox/snaps/js-object-properties-11-code.png)
 
-<img alt="js-object-properties example 11 result" src="./code_sandbox/snaps/js-object-properties-11-result.png" />
+![js-object-properties example 11 result](./code_sandbox/snaps/js-object-properties-11-result.png)
 
 - [x] **Outcome:** Still **"BMW"**.
 
@@ -17653,9 +17653,9 @@ const myObj = {
 };
 ```
 
-<img alt="js-object-properties example 12 source" src="./code_sandbox/snaps/js-object-properties-12-code.png" />
+![js-object-properties example 12 source](./code_sandbox/snaps/js-object-properties-12-code.png)
 
-<img alt="js-object-properties example 12 result" src="./code_sandbox/snaps/js-object-properties-12-result.png" />
+![js-object-properties example 12 result](./code_sandbox/snaps/js-object-properties-12-result.png)
 
 - [x] **Outcome:** Still **"BMW"**.
 
@@ -17679,9 +17679,9 @@ let p2 = "car2";
 let car = myObj[p1][p2];
 ```
 
-<img alt="js-object-properties example 13 source" src="./code_sandbox/snaps/js-object-properties-13-code.png" />
+![js-object-properties example 13 source](./code_sandbox/snaps/js-object-properties-13-code.png)
 
-<img alt="js-object-properties example 13 result" src="./code_sandbox/snaps/js-object-properties-13-result.png" />
+![js-object-properties example 13 result](./code_sandbox/snaps/js-object-properties-13-result.png)
 
 - [x] **Outcome:** car is **"BMW"**.
 
@@ -17891,9 +17891,9 @@ const person = {
 };
 ```
 
-<img alt="js-object-methods example 1 source" src="./code_sandbox/snaps/js-object-methods-01-code.png" />
+![js-object-methods example 1 source](./code_sandbox/snaps/js-object-methods-01-code.png)
 
-<img alt="js-object-methods example 1 result" src="./code_sandbox/snaps/js-object-methods-01-result.png" />
+![js-object-methods example 1 result](./code_sandbox/snaps/js-object-methods-01-result.png)
 
 - [x] **Outcome:** person.fullName() is **"John Doe"**.
 
@@ -17918,9 +17918,9 @@ const person = {
 let number = person.getId();
 ```
 
-<img alt="js-object-methods example 2 source" src="./code_sandbox/snaps/js-object-methods-02-code.png" />
+![js-object-methods example 2 source](./code_sandbox/snaps/js-object-methods-02-code.png)
 
-<img alt="js-object-methods example 2 result" src="./code_sandbox/snaps/js-object-methods-02-result.png" />
+![js-object-methods example 2 result](./code_sandbox/snaps/js-object-methods-02-result.png)
 
 - [x] **Outcome:** number is **5566**.
 
@@ -17944,9 +17944,9 @@ const person = {
 let name = person.fullName();
 ```
 
-<img alt="js-object-methods example 3 source" src="./code_sandbox/snaps/js-object-methods-03-code.png" />
+![js-object-methods example 3 source](./code_sandbox/snaps/js-object-methods-03-code.png)
 
-<img alt="js-object-methods example 3 result" src="./code_sandbox/snaps/js-object-methods-03-result.png" />
+![js-object-methods example 3 result](./code_sandbox/snaps/js-object-methods-03-result.png)
 
 - [x] **Outcome:** name is **"John Doe"**.
 
@@ -17970,9 +17970,9 @@ const person = {
 let name = person.fullName;
 ```
 
-<img alt="js-object-methods example 4 source" src="./code_sandbox/snaps/js-object-methods-04-code.png" />
+![js-object-methods example 4 source](./code_sandbox/snaps/js-object-methods-04-code.png)
 
-<img alt="js-object-methods example 4 result" src="./code_sandbox/snaps/js-object-methods-04-result.png" />
+![js-object-methods example 4 result](./code_sandbox/snaps/js-object-methods-04-result.png)
 
 - [x] **Outcome:** `typeof name` is **"function"**. The string form is the function source, not **"John Doe"**.
 
@@ -17992,9 +17992,9 @@ person.name = function () {
 };
 ```
 
-<img alt="js-object-methods example 5 source" src="./code_sandbox/snaps/js-object-methods-05-code.png" />
+![js-object-methods example 5 source](./code_sandbox/snaps/js-object-methods-05-code.png)
 
-<img alt="js-object-methods example 5 result" src="./code_sandbox/snaps/js-object-methods-05-result.png" />
+![js-object-methods example 5 result](./code_sandbox/snaps/js-object-methods-05-result.png)
 
 - [x] **Outcome:** person.name() is **"John Doe"**.
 
@@ -18014,9 +18014,9 @@ person.name = function () {
 };
 ```
 
-<img alt="js-object-methods example 6 source" src="./code_sandbox/snaps/js-object-methods-06-code.png" />
+![js-object-methods example 6 source](./code_sandbox/snaps/js-object-methods-06-code.png)
 
-<img alt="js-object-methods example 6 result" src="./code_sandbox/snaps/js-object-methods-06-result.png" />
+![js-object-methods example 6 result](./code_sandbox/snaps/js-object-methods-06-result.png)
 
 - [x] **Outcome:** person.name() is **"JOHN DOE"**.
 
@@ -18188,9 +18188,9 @@ const person = {
 };
 ```
 
-<img alt="js-object-this example 1 source" src="./code_sandbox/snaps/js-object-this-01-code.png" />
+![js-object-this example 1 source](./code_sandbox/snaps/js-object-this-01-code.png)
 
-<img alt="js-object-this example 1 result" src="./code_sandbox/snaps/js-object-this-01-result.png" />
+![js-object-this example 1 result](./code_sandbox/snaps/js-object-this-01-result.png)
 
 - [x] **Outcome:** person.fullName() is **"John Doe"**.
 
@@ -18218,9 +18218,9 @@ const person2 = {
 };
 ```
 
-<img alt="js-object-this example 2 source" src="./code_sandbox/snaps/js-object-this-02-code.png" />
+![js-object-this example 2 source](./code_sandbox/snaps/js-object-this-02-code.png)
 
-<img alt="js-object-this example 2 result" src="./code_sandbox/snaps/js-object-this-02-result.png" />
+![js-object-this example 2 result](./code_sandbox/snaps/js-object-this-02-result.png)
 
 - [x] **Outcome:** person1.hello() is **"Hello John"**. person2.hello() is **"Hello Anna"**.
 
@@ -18237,9 +18237,9 @@ Sandbox: `code_sandbox/js-object-this/this-alone.html`
 let x = this;
 ```
 
-<img alt="js-object-this example 3 source" src="./code_sandbox/snaps/js-object-this-03-code.png" />
+![js-object-this example 3 source](./code_sandbox/snaps/js-object-this-03-code.png)
 
-<img alt="js-object-this example 3 result" src="./code_sandbox/snaps/js-object-this-03-result.png" />
+![js-object-this example 3 result](./code_sandbox/snaps/js-object-this-03-result.png)
 
 - [x] **Outcome:** `String(this)` is **[object Window]**. `this === window` is **true** in this non-strict classic script.
 
@@ -18259,9 +18259,9 @@ function myFunction() {
 let x = myFunction();
 ```
 
-<img alt="js-object-this example 4 source" src="./code_sandbox/snaps/js-object-this-04-code.png" />
+![js-object-this example 4 source](./code_sandbox/snaps/js-object-this-04-code.png)
 
-<img alt="js-object-this example 4 result" src="./code_sandbox/snaps/js-object-this-04-result.png" />
+![js-object-this example 4 result](./code_sandbox/snaps/js-object-this-04-result.png)
 
 - [x] **Outcome:** `String(this)` is **[object Window]**. `this === window` is **true** (non-strict).
 
@@ -18282,9 +18282,9 @@ function strictThis() {
 let x = strictThis();
 ```
 
-<img alt="js-object-this example 5 source" src="./code_sandbox/snaps/js-object-this-05-code.png" />
+![js-object-this example 5 source](./code_sandbox/snaps/js-object-this-05-code.png)
 
-<img alt="js-object-this example 5 result" src="./code_sandbox/snaps/js-object-this-05-result.png" />
+![js-object-this example 5 result](./code_sandbox/snaps/js-object-this-05-result.png)
 
 - [x] **Outcome:** `strictThis()` is **undefined**. `typeof this` is **undefined**.
 
@@ -18452,9 +18452,9 @@ const person = { name: "John", age: 30, city: "New York" };
 let text = person;
 ```
 
-<img alt="js-object-display example 1 source" src="./code_sandbox/snaps/js-object-display-01-code.png" />
+![js-object-display example 1 source](./code_sandbox/snaps/js-object-display-01-code.png)
 
-<img alt="js-object-display example 1 result" src="./code_sandbox/snaps/js-object-display-01-result.png" />
+![js-object-display example 1 result](./code_sandbox/snaps/js-object-display-01-result.png)
 
 - [x] **Outcome:** String(text) is **[object Object]**.
 
@@ -18472,9 +18472,9 @@ const person = { name: "John", age: 30, city: "New York" };
 let text = person.name + "," + person.age + "," + person.city;
 ```
 
-<img alt="js-object-display example 2 source" src="./code_sandbox/snaps/js-object-display-02-code.png" />
+![js-object-display example 2 source](./code_sandbox/snaps/js-object-display-02-code.png)
 
-<img alt="js-object-display example 2 result" src="./code_sandbox/snaps/js-object-display-02-result.png" />
+![js-object-display example 2 result](./code_sandbox/snaps/js-object-display-02-result.png)
 
 - [x] **Outcome:** text is **"John,30,New York"**.
 
@@ -18499,9 +18499,9 @@ for (let x in person) {
 }
 ```
 
-<img alt="js-object-display example 3 source" src="./code_sandbox/snaps/js-object-display-03-code.png" />
+![js-object-display example 3 source](./code_sandbox/snaps/js-object-display-03-code.png)
 
-<img alt="js-object-display example 3 result" src="./code_sandbox/snaps/js-object-display-03-result.png" />
+![js-object-display example 3 result](./code_sandbox/snaps/js-object-display-03-result.png)
 
 - [x] **Outcome:** Correct loop: **"John 30 New York "**. `person.x` yields **"undefined undefined undefined "**.
 
@@ -18520,9 +18520,9 @@ const myArray = Object.values(person);
 let text = myArray.toString();
 ```
 
-<img alt="js-object-display example 4 source" src="./code_sandbox/snaps/js-object-display-04-code.png" />
+![js-object-display example 4 source](./code_sandbox/snaps/js-object-display-04-code.png)
 
-<img alt="js-object-display example 4 result" src="./code_sandbox/snaps/js-object-display-04-result.png" />
+![js-object-display example 4 result](./code_sandbox/snaps/js-object-display-04-result.png)
 
 - [x] **Outcome:** myArray is **["John",30,"New York"]**. text is **"John,30,New York"**.
 
@@ -18543,9 +18543,9 @@ for (let [fruit, value] of Object.entries(fruits)) {
 }
 ```
 
-<img alt="js-object-display example 5 source" src="./code_sandbox/snaps/js-object-display-05-code.png" />
+![js-object-display example 5 source](./code_sandbox/snaps/js-object-display-05-code.png)
 
-<img alt="js-object-display example 5 result" src="./code_sandbox/snaps/js-object-display-05-result.png" />
+![js-object-display example 5 result](./code_sandbox/snaps/js-object-display-05-result.png)
 
 - [x] **Outcome:** text is **"Bananas: 300 Oranges: 200 Apples: 500 "**.
 
@@ -18563,9 +18563,9 @@ const person = { name: "John", age: 30, city: "New York" };
 let text = JSON.stringify(person);
 ```
 
-<img alt="js-object-display example 6 source" src="./code_sandbox/snaps/js-object-display-06-code.png" />
+![js-object-display example 6 source](./code_sandbox/snaps/js-object-display-06-code.png)
 
-<img alt="js-object-display example 6 result" src="./code_sandbox/snaps/js-object-display-06-result.png" />
+![js-object-display example 6 result](./code_sandbox/snaps/js-object-display-06-result.png)
 
 - [x] **Outcome:** text is **{"name":"John","age":30,"city":"New York"}**.
 
@@ -18744,9 +18744,9 @@ function Person(first, last, age, eye) {
 const sample = new Person("John", "Doe", 50, "blue");
 ```
 
-<img alt="js-object-constructors example 1 source" src="./code_sandbox/snaps/js-object-constructors-01-code.png" />
+![js-object-constructors example 1 source](./code_sandbox/snaps/js-object-constructors-01-code.png)
 
-<img alt="js-object-constructors example 1 result" src="./code_sandbox/snaps/js-object-constructors-01-result.png" />
+![js-object-constructors example 1 result](./code_sandbox/snaps/js-object-constructors-01-result.png)
 
 - [x] **Outcome:** `typeof Person` is **"function"**. sample is **John** with **blue** eyes.
 
@@ -18772,9 +18772,9 @@ const mySister = new Person("Anna", "Rally", 18, "green");
 const mySelf = new Person("Johnny", "Rally", 22, "green");
 ```
 
-<img alt="js-object-constructors example 2 source" src="./code_sandbox/snaps/js-object-constructors-02-code.png" />
+![js-object-constructors example 2 source](./code_sandbox/snaps/js-object-constructors-02-code.png)
 
-<img alt="js-object-constructors example 2 result" src="./code_sandbox/snaps/js-object-constructors-02-result.png" />
+![js-object-constructors example 2 result](./code_sandbox/snaps/js-object-constructors-02-result.png)
 
 - [x] **Outcome:** **John**, **Sally**, **Anna**, and **Johnny** — four Person objects.
 
@@ -18799,9 +18799,9 @@ const myFather = new Person("John", "Doe", 50, "blue");
 const myMother = new Person("Sally", "Rally", 48, "green");
 ```
 
-<img alt="js-object-constructors example 3 source" src="./code_sandbox/snaps/js-object-constructors-03-code.png" />
+![js-object-constructors example 3 source](./code_sandbox/snaps/js-object-constructors-03-code.png)
 
-<img alt="js-object-constructors example 3 result" src="./code_sandbox/snaps/js-object-constructors-03-result.png" />
+![js-object-constructors example 3 result](./code_sandbox/snaps/js-object-constructors-03-result.png)
 
 - [x] **Outcome:** Both myFather and myMother have nationality **"English"**.
 
@@ -18826,9 +18826,9 @@ const myMother = new Person("Sally", "Rally", 48, "green");
 myFather.nationality = "English";
 ```
 
-<img alt="js-object-constructors example 4 source" src="./code_sandbox/snaps/js-object-constructors-04-code.png" />
+![js-object-constructors example 4 source](./code_sandbox/snaps/js-object-constructors-04-code.png)
 
-<img alt="js-object-constructors example 4 result" src="./code_sandbox/snaps/js-object-constructors-04-result.png" />
+![js-object-constructors example 4 result](./code_sandbox/snaps/js-object-constructors-04-result.png)
 
 - [x] **Outcome:** myFather.nationality is **"English"**. myMother.nationality is **undefined**.
 
@@ -18852,9 +18852,9 @@ const myFather = new Person("John", "Doe", 50, "blue");
 Person.nationality = "English";
 ```
 
-<img alt="js-object-constructors example 5 source" src="./code_sandbox/snaps/js-object-constructors-05-code.png" />
+![js-object-constructors example 5 source](./code_sandbox/snaps/js-object-constructors-05-code.png)
 
-<img alt="js-object-constructors example 5 result" src="./code_sandbox/snaps/js-object-constructors-05-result.png" />
+![js-object-constructors example 5 result](./code_sandbox/snaps/js-object-constructors-05-result.png)
 
 - [x] **Outcome:** Person.nationality is **"English"**. myFather.nationality is **undefined**.
 
@@ -18879,9 +18879,9 @@ const myMother = new Person("Sally", "Rally", 48, "green");
 Person.prototype.nationality = "English";
 ```
 
-<img alt="js-object-constructors example 6 source" src="./code_sandbox/snaps/js-object-constructors-06-code.png" />
+![js-object-constructors example 6 source](./code_sandbox/snaps/js-object-constructors-06-code.png)
 
-<img alt="js-object-constructors example 6 result" src="./code_sandbox/snaps/js-object-constructors-06-result.png" />
+![js-object-constructors example 6 result](./code_sandbox/snaps/js-object-constructors-06-result.png)
 
 - [x] **Outcome:** Both instances read **"English"** from the prototype.
 
@@ -18907,9 +18907,9 @@ function Person(first, last, age, eyecolor) {
 const myFather = new Person("John", "Doe", 50, "blue");
 ```
 
-<img alt="js-object-constructors example 7 source" src="./code_sandbox/snaps/js-object-constructors-07-code.png" />
+![js-object-constructors example 7 source](./code_sandbox/snaps/js-object-constructors-07-code.png)
 
-<img alt="js-object-constructors example 7 result" src="./code_sandbox/snaps/js-object-constructors-07-result.png" />
+![js-object-constructors example 7 result](./code_sandbox/snaps/js-object-constructors-07-result.png)
 
 - [x] **Outcome:** myFather.fullName() is **"John Doe"**.
 
@@ -18937,9 +18937,9 @@ myMother.changeName = function (name) {
 myMother.changeName("Doe");
 ```
 
-<img alt="js-object-constructors example 8 source" src="./code_sandbox/snaps/js-object-constructors-08-code.png" />
+![js-object-constructors example 8 source](./code_sandbox/snaps/js-object-constructors-08-code.png)
 
-<img alt="js-object-constructors example 8 result" src="./code_sandbox/snaps/js-object-constructors-08-result.png" />
+![js-object-constructors example 8 result](./code_sandbox/snaps/js-object-constructors-08-result.png)
 
 - [x] **Outcome:** myMother.lastName is **"Doe"**. `typeof myFather.changeName` is **"undefined"**. myFather.lastName is still **"Doe"** (his original name).
 
@@ -18966,9 +18966,9 @@ Person.changeName = function (name) {
 myMother.changeName("Doe");
 ```
 
-<img alt="js-object-constructors example 9 source" src="./code_sandbox/snaps/js-object-constructors-09-code.png" />
+![js-object-constructors example 9 source](./code_sandbox/snaps/js-object-constructors-09-code.png)
 
-<img alt="js-object-constructors example 9 result" src="./code_sandbox/snaps/js-object-constructors-09-result.png" />
+![js-object-constructors example 9 result](./code_sandbox/snaps/js-object-constructors-09-result.png)
 
 - [x] **Outcome:** **TypeError: myMother.changeName is not a function** (caught). myMother.lastName stays **"Rally"**.
 
@@ -18995,9 +18995,9 @@ Person.prototype.changeName = function (name) {
 myMother.changeName("Doe");
 ```
 
-<img alt="js-object-constructors example 10 source" src="./code_sandbox/snaps/js-object-constructors-10-code.png" />
+![js-object-constructors example 10 source](./code_sandbox/snaps/js-object-constructors-10-code.png)
 
-<img alt="js-object-constructors example 10 result" src="./code_sandbox/snaps/js-object-constructors-10-result.png" />
+![js-object-constructors example 10 result](./code_sandbox/snaps/js-object-constructors-10-result.png)
 
 - [x] **Outcome:** myMother.lastName is **"Doe"** after the prototype method runs.
 
@@ -19021,9 +19021,9 @@ const f = new Function();
 new Math();
 ```
 
-<img alt="js-object-constructors example 11 source" src="./code_sandbox/snaps/js-object-constructors-11-code.png" />
+![js-object-constructors example 11 source](./code_sandbox/snaps/js-object-constructors-11-code.png)
 
-<img alt="js-object-constructors example 11 result" src="./code_sandbox/snaps/js-object-constructors-11-result.png" />
+![js-object-constructors example 11 result](./code_sandbox/snaps/js-object-constructors-11-result.png)
 
 - [x] **Outcome:** Object/Array/Map/Set/Date/RegExp/Function all construct. **`new Math()` → TypeError: Math is not a constructor**.
 
@@ -19046,9 +19046,9 @@ const re = /()/;
 const f = function () {};
 ```
 
-<img alt="js-object-constructors example 12 source" src="./code_sandbox/snaps/js-object-constructors-12-code.png" />
+![js-object-constructors example 12 source](./code_sandbox/snaps/js-object-constructors-12-code.png)
 
-<img alt="js-object-constructors example 12 result" src="./code_sandbox/snaps/js-object-constructors-12-result.png" />
+![js-object-constructors example 12 result](./code_sandbox/snaps/js-object-constructors-12-result.png)
 
 - [x] **Outcome:** Primitives: **string, number, boolean**. `{}` / `[]` / `/()/` are **object**. `const f = function () {}` is **"function"**.
 
@@ -19261,9 +19261,9 @@ function show() {
 }
 ```
 
-<img alt="js-scope example 1 source" src="./code_sandbox/snaps/js-scope-01-code.png" />
+![js-scope example 1 source](./code_sandbox/snaps/js-scope-01-code.png)
 
-<img alt="js-scope example 1 result" src="./code_sandbox/snaps/js-scope-01-result.png" />
+![js-scope example 1 result](./code_sandbox/snaps/js-scope-01-result.png)
 
 - [x] **Outcome:** x, y, and z are **1**, **2**, **3**. `show()` can read all three: **1, 2, 3**.
 
@@ -19283,9 +19283,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-scope example 2 source" src="./code_sandbox/snaps/js-scope-02-code.png" />
+![js-scope example 2 source](./code_sandbox/snaps/js-scope-02-code.png)
 
-<img alt="js-scope example 2 result" src="./code_sandbox/snaps/js-scope-02-result.png" />
+![js-scope example 2 result](./code_sandbox/snaps/js-scope-02-result.png)
 
 - [x] **Outcome:** Both the outer code and the function see **"Volvo"**.
 
@@ -19307,9 +19307,9 @@ function myFunction() {
 // code here can NOT use carName
 ```
 
-<img alt="js-scope example 3 source" src="./code_sandbox/snaps/js-scope-03-code.png" />
+![js-scope example 3 source](./code_sandbox/snaps/js-scope-03-code.png)
 
-<img alt="js-scope example 3 result" src="./code_sandbox/snaps/js-scope-03-result.png" />
+![js-scope example 3 result](./code_sandbox/snaps/js-scope-03-result.png)
 
 - [x] **Outcome:** Inside the function, carName is **"Volvo"**. Outside, reading it throws **ReferenceError**.
 
@@ -19329,9 +19329,9 @@ Sandbox: `code_sandbox/js-scope/block-let-x.html`
 // x can NOT be used here
 ```
 
-<img alt="js-scope example 4 source" src="./code_sandbox/snaps/js-scope-04-code.png" />
+![js-scope example 4 source](./code_sandbox/snaps/js-scope-04-code.png)
 
-<img alt="js-scope example 4 result" src="./code_sandbox/snaps/js-scope-04-result.png" />
+![js-scope example 4 result](./code_sandbox/snaps/js-scope-04-result.png)
 
 - [x] **Outcome:** Inside the block, x is **2**. Outside, reading x throws **ReferenceError**.
 
@@ -19351,9 +19351,9 @@ Sandbox: `code_sandbox/js-scope/block-var-x.html`
 // x CAN be used here
 ```
 
-<img alt="js-scope example 5 source" src="./code_sandbox/snaps/js-scope-05-code.png" />
+![js-scope example 5 source](./code_sandbox/snaps/js-scope-05-code.png)
 
-<img alt="js-scope example 5 result" src="./code_sandbox/snaps/js-scope-05-result.png" />
+![js-scope example 5 result](./code_sandbox/snaps/js-scope-05-result.png)
 
 - [x] **Outcome:** x is **2** outside the block. `var` in a block is **not recommended**.
 
@@ -19374,9 +19374,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-scope example 6 source" src="./code_sandbox/snaps/js-scope-06-code.png" />
+![js-scope example 6 source](./code_sandbox/snaps/js-scope-06-code.png)
 
-<img alt="js-scope example 6 result" src="./code_sandbox/snaps/js-scope-06-result.png" />
+![js-scope example 6 result](./code_sandbox/snaps/js-scope-06-result.png)
 
 - [x] **Outcome:** After the call, outer code can use carName: **"Volvo"**. Do not rely on this.
 
@@ -19394,9 +19394,9 @@ var carName = "Volvo";
 // code here can use window.carName
 ```
 
-<img alt="js-scope example 7 source" src="./code_sandbox/snaps/js-scope-07-code.png" />
+![js-scope example 7 source](./code_sandbox/snaps/js-scope-07-code.png)
 
-<img alt="js-scope example 7 result" src="./code_sandbox/snaps/js-scope-07-result.png" />
+![js-scope example 7 result](./code_sandbox/snaps/js-scope-07-result.png)
 
 - [x] **Outcome:** `carName` and `window.carName` are both **"Volvo"**.
 
@@ -19414,9 +19414,9 @@ let carName = "Volvo";
 // code here can NOT use window.carName
 ```
 
-<img alt="js-scope example 8 source" src="./code_sandbox/snaps/js-scope-08-code.png" />
+![js-scope example 8 source](./code_sandbox/snaps/js-scope-08-code.png)
 
-<img alt="js-scope example 8 result" src="./code_sandbox/snaps/js-scope-08-result.png" />
+![js-scope example 8 result](./code_sandbox/snaps/js-scope-08-result.png)
 
 - [x] **Outcome:** `carName` is **"Volvo"**. `window.carName` is **undefined**.
 
@@ -19606,9 +19606,9 @@ function myFunction() {
 let result = myFunction();
 ```
 
-<img alt="js-code-blocks example 1 source" src="./code_sandbox/snaps/js-code-blocks-01-code.png" />
+![js-code-blocks example 1 source](./code_sandbox/snaps/js-code-blocks-01-code.png)
 
-<img alt="js-code-blocks example 1 result" src="./code_sandbox/snaps/js-code-blocks-01-result.png" />
+![js-code-blocks example 1 result](./code_sandbox/snaps/js-code-blocks-01-result.png)
 
 - [x] **Outcome:** The block runs when the function is called. result is **3**.
 
@@ -19631,9 +19631,9 @@ function check(n) {
 }
 ```
 
-<img alt="js-code-blocks example 2 source" src="./code_sandbox/snaps/js-code-blocks-02-code.png" />
+![js-code-blocks example 2 source](./code_sandbox/snaps/js-code-blocks-02-code.png)
 
-<img alt="js-code-blocks example 2 result" src="./code_sandbox/snaps/js-code-blocks-02-result.png" />
+![js-code-blocks example 2 result](./code_sandbox/snaps/js-code-blocks-02-result.png)
 
 - [x] **Outcome:** `check(10)` uses the **if** block; `check(3)` uses the **else** block.
 
@@ -19653,9 +19653,9 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
-<img alt="js-code-blocks example 3 source" src="./code_sandbox/snaps/js-code-blocks-03-code.png" />
+![js-code-blocks example 3 source](./code_sandbox/snaps/js-code-blocks-03-code.png)
 
-<img alt="js-code-blocks example 3 result" src="./code_sandbox/snaps/js-code-blocks-03-result.png" />
+![js-code-blocks example 3 result](./code_sandbox/snaps/js-code-blocks-03-result.png)
 
 - [x] **Outcome:** text is **"0 1 2 "** after three iterations.
 
@@ -19677,9 +19677,9 @@ while (i < 3) {
 }
 ```
 
-<img alt="js-code-blocks example 4 source" src="./code_sandbox/snaps/js-code-blocks-04-code.png" />
+![js-code-blocks example 4 source](./code_sandbox/snaps/js-code-blocks-04-code.png)
 
-<img alt="js-code-blocks example 4 result" src="./code_sandbox/snaps/js-code-blocks-04-result.png" />
+![js-code-blocks example 4 result](./code_sandbox/snaps/js-code-blocks-04-result.png)
 
 - [x] **Outcome:** text is **"0 1 2 "**. i is **3** after the loop.
 
@@ -19700,9 +19700,9 @@ Sandbox: `code_sandbox/js-code-blocks/block-let-not-outside.html`
 // x is not accessible here
 ```
 
-<img alt="js-code-blocks example 5 source" src="./code_sandbox/snaps/js-code-blocks-05-code.png" />
+![js-code-blocks example 5 source](./code_sandbox/snaps/js-code-blocks-05-code.png)
 
-<img alt="js-code-blocks example 5 result" src="./code_sandbox/snaps/js-code-blocks-05-result.png" />
+![js-code-blocks example 5 result](./code_sandbox/snaps/js-code-blocks-05-result.png)
 
 - [x] **Outcome:** Inside, x is **10**. Outside, reading x throws **ReferenceError**.
 
@@ -19723,9 +19723,9 @@ Sandbox: `code_sandbox/js-code-blocks/standalone-block-areal.html`
 }
 ```
 
-<img alt="js-code-blocks example 6 source" src="./code_sandbox/snaps/js-code-blocks-06-code.png" />
+![js-code-blocks example 6 source](./code_sandbox/snaps/js-code-blocks-06-code.png)
 
-<img alt="js-code-blocks example 6 result" src="./code_sandbox/snaps/js-code-blocks-06-result.png" />
+![js-code-blocks example 6 result](./code_sandbox/snaps/js-code-blocks-06-result.png)
 
 - [x] **Outcome:** Inside, **areal** is **1000**. Outside, `x`, `y`, and `areal` each throw **ReferenceError**.
 
@@ -19893,9 +19893,9 @@ x = 5;
 var x;
 ```
 
-<img alt="js-hoisting example 1 source" src="./code_sandbox/snaps/js-hoisting-01-code.png" />
+![js-hoisting example 1 source](./code_sandbox/snaps/js-hoisting-01-code.png)
 
-<img alt="js-hoisting example 1 result" src="./code_sandbox/snaps/js-hoisting-01-result.png" />
+![js-hoisting example 1 result](./code_sandbox/snaps/js-hoisting-01-result.png)
 
 - [x] **Outcome:** x is **5**. The declaration was hoisted; the assignment ran first in source order.
 
@@ -19913,9 +19913,9 @@ var x;
 x = 5;
 ```
 
-<img alt="js-hoisting example 2 source" src="./code_sandbox/snaps/js-hoisting-02-code.png" />
+![js-hoisting example 2 source](./code_sandbox/snaps/js-hoisting-02-code.png)
 
-<img alt="js-hoisting example 2 result" src="./code_sandbox/snaps/js-hoisting-02-result.png" />
+![js-hoisting example 2 result](./code_sandbox/snaps/js-hoisting-02-result.png)
 
 - [x] **Outcome:** x is **5** — same result as assigning before `var x`.
 
@@ -19933,9 +19933,9 @@ carName = "Volvo";
 let carName;
 ```
 
-<img alt="js-hoisting example 3 source" src="./code_sandbox/snaps/js-hoisting-03-code.png" />
+![js-hoisting example 3 source](./code_sandbox/snaps/js-hoisting-03-code.png)
 
-<img alt="js-hoisting example 3 result" src="./code_sandbox/snaps/js-hoisting-03-result.png" />
+![js-hoisting example 3 result](./code_sandbox/snaps/js-hoisting-03-result.png)
 
 - [x] **Outcome:** **ReferenceError** — cannot access `carName` before initialization (TDZ).
 
@@ -19955,9 +19955,9 @@ carName = "Volvo";
 const carName;
 ```
 
-<img alt="js-hoisting example 4 source" src="./code_sandbox/snaps/js-hoisting-04-code.png" />
+![js-hoisting example 4 source](./code_sandbox/snaps/js-hoisting-04-code.png)
 
-<img alt="js-hoisting example 4 result" src="./code_sandbox/snaps/js-hoisting-04-result.png" />
+![js-hoisting example 4 result](./code_sandbox/snaps/js-hoisting-04-result.png)
 
 - [x] **Outcome:** **SyntaxError** (missing initializer in const declaration), caught via `new Function`. A raw script tag would not load.
 
@@ -19976,9 +19976,9 @@ var y = 7;
 let text = x + " " + y;
 ```
 
-<img alt="js-hoisting example 5 source" src="./code_sandbox/snaps/js-hoisting-05-code.png" />
+![js-hoisting example 5 source](./code_sandbox/snaps/js-hoisting-05-code.png)
 
-<img alt="js-hoisting example 5 result" src="./code_sandbox/snaps/js-hoisting-05-result.png" />
+![js-hoisting example 5 result](./code_sandbox/snaps/js-hoisting-05-result.png)
 
 - [x] **Outcome:** text is **"5 7"**.
 
@@ -19997,9 +19997,9 @@ let text = x + " " + y;
 var y = 7;
 ```
 
-<img alt="js-hoisting example 6 source" src="./code_sandbox/snaps/js-hoisting-06-code.png" />
+![js-hoisting example 6 source](./code_sandbox/snaps/js-hoisting-06-code.png)
 
-<img alt="js-hoisting example 6 result" src="./code_sandbox/snaps/js-hoisting-06-result.png" />
+![js-hoisting example 6 result](./code_sandbox/snaps/js-hoisting-06-result.png)
 
 - [x] **Outcome:** text is **"5 undefined"**. After the init line, y is **7**.
 
@@ -20019,9 +20019,9 @@ let text = x + " " + y;
 y = 7;
 ```
 
-<img alt="js-hoisting example 7 source" src="./code_sandbox/snaps/js-hoisting-07-code.png" />
+![js-hoisting example 7 source](./code_sandbox/snaps/js-hoisting-07-code.png)
 
-<img alt="js-hoisting example 7 result" src="./code_sandbox/snaps/js-hoisting-07-result.png" />
+![js-hoisting example 7 result](./code_sandbox/snaps/js-hoisting-07-result.png)
 
 - [x] **Outcome:** text is **"5 undefined"**, then y becomes **7**. Same as Example 6.
 
@@ -20205,9 +20205,9 @@ if (typeof firstName !== "undefined") text1 = firstName;
 if (typeof lastName !== "undefined") text2 = lastName;
 ```
 
-<img alt="js-varletconst example 1 source" src="./code_sandbox/snaps/js-varletconst-01-code.png" />
+![js-varletconst example 1 source](./code_sandbox/snaps/js-varletconst-01-code.png)
 
-<img alt="js-varletconst example 1 result" src="./code_sandbox/snaps/js-varletconst-01-result.png" />
+![js-varletconst example 1 result](./code_sandbox/snaps/js-varletconst-01-result.png)
 
 - [x] **Outcome:** text1 is **"John"** (var leaked). text2 stays **"unknown"** (let stayed in the `if` block).
 
@@ -20230,9 +20230,9 @@ try {
 }
 ```
 
-<img alt="js-varletconst example 2 source" src="./code_sandbox/snaps/js-varletconst-02-code.png" />
+![js-varletconst example 2 source](./code_sandbox/snaps/js-varletconst-02-code.png)
 
-<img alt="js-varletconst example 2 result" src="./code_sandbox/snaps/js-varletconst-02-result.png" />
+![js-varletconst example 2 result](./code_sandbox/snaps/js-varletconst-02-result.png)
 
 - [x] **Outcome:** After mutate, `user.name` is **"Bob"**. Replacing `user` throws **TypeError**.
 
@@ -20250,9 +20250,9 @@ var x = 1;
 var x = 2;
 ```
 
-<img alt="js-varletconst example 3 source" src="./code_sandbox/snaps/js-varletconst-03-code.png" />
+![js-varletconst example 3 source](./code_sandbox/snaps/js-varletconst-03-code.png)
 
-<img alt="js-varletconst example 3 result" src="./code_sandbox/snaps/js-varletconst-03-result.png" />
+![js-varletconst example 3 result](./code_sandbox/snaps/js-varletconst-03-result.png)
 
 - [x] **Outcome:** x is **2**. The second `var x` replaced the first.
 
@@ -20270,9 +20270,9 @@ let x = 1;
 let x = 2;
 ```
 
-<img alt="js-varletconst example 4 source" src="./code_sandbox/snaps/js-varletconst-04-code.png" />
+![js-varletconst example 4 source](./code_sandbox/snaps/js-varletconst-04-code.png)
 
-<img alt="js-varletconst example 4 result" src="./code_sandbox/snaps/js-varletconst-04-result.png" />
+![js-varletconst example 4 result](./code_sandbox/snaps/js-varletconst-04-result.png)
 
 - [x] **Outcome:** **SyntaxError** — Identifier `x` has already been declared.
 
@@ -20290,9 +20290,9 @@ const PI = 3.14;
 PI = 3.14159;
 ```
 
-<img alt="js-varletconst example 5 source" src="./code_sandbox/snaps/js-varletconst-05-code.png" />
+![js-varletconst example 5 source](./code_sandbox/snaps/js-varletconst-05-code.png)
 
-<img alt="js-varletconst example 5 result" src="./code_sandbox/snaps/js-varletconst-05-result.png" />
+![js-varletconst example 5 result](./code_sandbox/snaps/js-varletconst-05-result.png)
 
 - [x] **Outcome:** **TypeError** — Assignment to constant variable. PI stays **3.14**.
 
@@ -20310,9 +20310,9 @@ let shown = x;
 var x = 5;
 ```
 
-<img alt="js-varletconst example 6 source" src="./code_sandbox/snaps/js-varletconst-06-code.png" />
+![js-varletconst example 6 source](./code_sandbox/snaps/js-varletconst-06-code.png)
 
-<img alt="js-varletconst example 6 result" src="./code_sandbox/snaps/js-varletconst-06-result.png" />
+![js-varletconst example 6 result](./code_sandbox/snaps/js-varletconst-06-result.png)
 
 - [x] **Outcome:** shown is **undefined**. After the init line, x is **5**.
 
@@ -20330,9 +20330,9 @@ x = x + 1;  // error
 let x = 5;
 ```
 
-<img alt="js-varletconst example 7 source" src="./code_sandbox/snaps/js-varletconst-07-code.png" />
+![js-varletconst example 7 source](./code_sandbox/snaps/js-varletconst-07-code.png)
 
-<img alt="js-varletconst example 7 result" src="./code_sandbox/snaps/js-varletconst-07-result.png" />
+![js-varletconst example 7 result](./code_sandbox/snaps/js-varletconst-07-result.png)
 
 - [x] **Outcome:** **ReferenceError** before `let x = 5`. After the line, x is **5**.
 
@@ -20350,9 +20350,9 @@ console.log(x);  // error
 const x = 5;
 ```
 
-<img alt="js-varletconst example 8 source" src="./code_sandbox/snaps/js-varletconst-08-code.png" />
+![js-varletconst example 8 source](./code_sandbox/snaps/js-varletconst-08-code.png)
 
-<img alt="js-varletconst example 8 result" src="./code_sandbox/snaps/js-varletconst-08-result.png" />
+![js-varletconst example 8 result](./code_sandbox/snaps/js-varletconst-08-result.png)
 
 - [x] **Outcome:** **ReferenceError** before `const x = 5`. After the line, x is **5**.
 
@@ -20371,9 +20371,9 @@ let count = 0;
 count = count + 1;
 ```
 
-<img alt="js-varletconst example 9 source" src="./code_sandbox/snaps/js-varletconst-09-code.png" />
+![js-varletconst example 9 source](./code_sandbox/snaps/js-varletconst-09-code.png)
 
-<img alt="js-varletconst example 9 result" src="./code_sandbox/snaps/js-varletconst-09-result.png" />
+![js-varletconst example 9 result](./code_sandbox/snaps/js-varletconst-09-result.png)
 
 - [x] **Outcome:** MAX stays **100**. count is reassigned to **1**.
 
@@ -20563,9 +20563,9 @@ Sandbox: `code_sandbox/js-strict-mode/undeclared-x.html`
 x = 3.14;
 ```
 
-<img alt="js-strict-mode example 1 source" src="./code_sandbox/snaps/js-strict-mode-01-code.png" />
+![js-strict-mode example 1 source](./code_sandbox/snaps/js-strict-mode-01-code.png)
 
-<img alt="js-strict-mode example 1 result" src="./code_sandbox/snaps/js-strict-mode-01-result.png" />
+![js-strict-mode example 1 result](./code_sandbox/snaps/js-strict-mode-01-result.png)
 
 - [x] **Outcome:** **ReferenceError** (x is not defined). Strict mode does not create a global `x`.
 
@@ -20586,9 +20586,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-strict-mode example 2 source" src="./code_sandbox/snaps/js-strict-mode-02-code.png" />
+![js-strict-mode example 2 source](./code_sandbox/snaps/js-strict-mode-02-code.png)
 
-<img alt="js-strict-mode example 2 result" src="./code_sandbox/snaps/js-strict-mode-02-result.png" />
+![js-strict-mode example 2 result](./code_sandbox/snaps/js-strict-mode-02-result.png)
 
 - [x] **Outcome:** Calling `myFunction()` throws **ReferenceError** because `y` is not declared.
 
@@ -20610,9 +20610,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-strict-mode example 3 source" src="./code_sandbox/snaps/js-strict-mode-03-code.png" />
+![js-strict-mode example 3 source](./code_sandbox/snaps/js-strict-mode-03-code.png)
 
-<img alt="js-strict-mode example 3 result" src="./code_sandbox/snaps/js-strict-mode-03-result.png" />
+![js-strict-mode example 3 result](./code_sandbox/snaps/js-strict-mode-03-result.png)
 
 - [x] **Outcome:** Outer `x` is **3.14**. Inner `y = 3.14` throws **ReferenceError**.
 
@@ -20630,9 +20630,9 @@ Sandbox: `code_sandbox/js-strict-mode/undeclared-object.html`
 x = {p1: 10, p2: 20};
 ```
 
-<img alt="js-strict-mode example 4 source" src="./code_sandbox/snaps/js-strict-mode-04-code.png" />
+![js-strict-mode example 4 source](./code_sandbox/snaps/js-strict-mode-04-code.png)
 
-<img alt="js-strict-mode example 4 result" src="./code_sandbox/snaps/js-strict-mode-04-result.png" />
+![js-strict-mode example 4 result](./code_sandbox/snaps/js-strict-mode-04-result.png)
 
 - [x] **Outcome:** **ReferenceError** — undeclared `x` (same rule as a number).
 
@@ -20651,9 +20651,9 @@ let x = 3.14;
 delete x;
 ```
 
-<img alt="js-strict-mode example 5 source" src="./code_sandbox/snaps/js-strict-mode-05-code.png" />
+![js-strict-mode example 5 source](./code_sandbox/snaps/js-strict-mode-05-code.png)
 
-<img alt="js-strict-mode example 5 result" src="./code_sandbox/snaps/js-strict-mode-05-result.png" />
+![js-strict-mode example 5 result](./code_sandbox/snaps/js-strict-mode-05-result.png)
 
 - [x] **Outcome:** **SyntaxError** — applying `delete` to an unqualified identifier.
 
@@ -20671,9 +20671,9 @@ function x(p1, p2) {}
 delete x;
 ```
 
-<img alt="js-strict-mode example 6 source" src="./code_sandbox/snaps/js-strict-mode-06-code.png" />
+![js-strict-mode example 6 source](./code_sandbox/snaps/js-strict-mode-06-code.png)
 
-<img alt="js-strict-mode example 6 result" src="./code_sandbox/snaps/js-strict-mode-06-result.png" />
+![js-strict-mode example 6 result](./code_sandbox/snaps/js-strict-mode-06-result.png)
 
 - [x] **Outcome:** **SyntaxError** — cannot `delete` the function name `x`.
 
@@ -20691,9 +20691,9 @@ Sandbox: `code_sandbox/js-strict-mode/duplicate-params.html`
 function x(p1, p1) {}
 ```
 
-<img alt="js-strict-mode example 7 source" src="./code_sandbox/snaps/js-strict-mode-07-code.png" />
+![js-strict-mode example 7 source](./code_sandbox/snaps/js-strict-mode-07-code.png)
 
-<img alt="js-strict-mode example 7 result" src="./code_sandbox/snaps/js-strict-mode-07-result.png" />
+![js-strict-mode example 7 result](./code_sandbox/snaps/js-strict-mode-07-result.png)
 
 - [x] **Outcome:** **SyntaxError** — duplicate parameter name `p1`.
 
@@ -20711,9 +20711,9 @@ Sandbox: `code_sandbox/js-strict-mode/octal-literal.html`
 let x = 010;
 ```
 
-<img alt="js-strict-mode example 8 source" src="./code_sandbox/snaps/js-strict-mode-08-code.png" />
+![js-strict-mode example 8 source](./code_sandbox/snaps/js-strict-mode-08-code.png)
 
-<img alt="js-strict-mode example 8 result" src="./code_sandbox/snaps/js-strict-mode-08-result.png" />
+![js-strict-mode example 8 result](./code_sandbox/snaps/js-strict-mode-08-result.png)
 
 - [x] **Outcome:** **SyntaxError** — octal literals are not allowed in strict mode.
 
@@ -20731,9 +20731,9 @@ Sandbox: `code_sandbox/js-strict-mode/octal-escape.html`
 let x = "\010";
 ```
 
-<img alt="js-strict-mode example 9 source" src="./code_sandbox/snaps/js-strict-mode-09-code.png" />
+![js-strict-mode example 9 source](./code_sandbox/snaps/js-strict-mode-09-code.png)
 
-<img alt="js-strict-mode example 9 result" src="./code_sandbox/snaps/js-strict-mode-09-result.png" />
+![js-strict-mode example 9 result](./code_sandbox/snaps/js-strict-mode-09-result.png)
 
 - [x] **Outcome:** **SyntaxError** — octal escape `\010` in a string.
 
@@ -20753,9 +20753,9 @@ Object.defineProperty(obj, "x", {value: 0, writable: false});
 obj.x = 3.14;
 ```
 
-<img alt="js-strict-mode example 10 source" src="./code_sandbox/snaps/js-strict-mode-10-code.png" />
+![js-strict-mode example 10 source](./code_sandbox/snaps/js-strict-mode-10-code.png)
 
-<img alt="js-strict-mode example 10 result" src="./code_sandbox/snaps/js-strict-mode-10-result.png" />
+![js-strict-mode example 10 result](./code_sandbox/snaps/js-strict-mode-10-result.png)
 
 - [x] **Outcome:** **TypeError** — cannot assign to read-only property `x`.
 
@@ -20774,9 +20774,9 @@ const obj = { get x() { return 0; } };
 obj.x = 3.14;
 ```
 
-<img alt="js-strict-mode example 11 source" src="./code_sandbox/snaps/js-strict-mode-11-code.png" />
+![js-strict-mode example 11 source](./code_sandbox/snaps/js-strict-mode-11-code.png)
 
-<img alt="js-strict-mode example 11 result" src="./code_sandbox/snaps/js-strict-mode-11-result.png" />
+![js-strict-mode example 11 result](./code_sandbox/snaps/js-strict-mode-11-result.png)
 
 - [x] **Outcome:** **TypeError** — property `x` has only a getter.
 
@@ -20794,9 +20794,9 @@ Sandbox: `code_sandbox/js-strict-mode/delete-object-prototype.html`
 delete Object.prototype;
 ```
 
-<img alt="js-strict-mode example 12 source" src="./code_sandbox/snaps/js-strict-mode-12-code.png" />
+![js-strict-mode example 12 source](./code_sandbox/snaps/js-strict-mode-12-code.png)
 
-<img alt="js-strict-mode example 12 result" src="./code_sandbox/snaps/js-strict-mode-12-result.png" />
+![js-strict-mode example 12 result](./code_sandbox/snaps/js-strict-mode-12-result.png)
 
 - [x] **Outcome:** **TypeError** — cannot delete undeletable `Object.prototype`.
 
@@ -20814,9 +20814,9 @@ Sandbox: `code_sandbox/js-strict-mode/let-eval.html`
 let eval = 3.14;
 ```
 
-<img alt="js-strict-mode example 13 source" src="./code_sandbox/snaps/js-strict-mode-13-code.png" />
+![js-strict-mode example 13 source](./code_sandbox/snaps/js-strict-mode-13-code.png)
 
-<img alt="js-strict-mode example 13 result" src="./code_sandbox/snaps/js-strict-mode-13-result.png" />
+![js-strict-mode example 13 result](./code_sandbox/snaps/js-strict-mode-13-result.png)
 
 - [x] **Outcome:** **SyntaxError** — unexpected `eval` in strict mode.
 
@@ -20834,9 +20834,9 @@ Sandbox: `code_sandbox/js-strict-mode/let-arguments.html`
 let arguments = 3.14;
 ```
 
-<img alt="js-strict-mode example 14 source" src="./code_sandbox/snaps/js-strict-mode-14-code.png" />
+![js-strict-mode example 14 source](./code_sandbox/snaps/js-strict-mode-14-code.png)
 
-<img alt="js-strict-mode example 14 result" src="./code_sandbox/snaps/js-strict-mode-14-result.png" />
+![js-strict-mode example 14 result](./code_sandbox/snaps/js-strict-mode-14-result.png)
 
 - [x] **Outcome:** **SyntaxError** — unexpected `arguments` in strict mode.
 
@@ -20856,9 +20856,9 @@ with (Math) {
 }
 ```
 
-<img alt="js-strict-mode example 15 source" src="./code_sandbox/snaps/js-strict-mode-15-code.png" />
+![js-strict-mode example 15 source](./code_sandbox/snaps/js-strict-mode-15-code.png)
 
-<img alt="js-strict-mode example 15 result" src="./code_sandbox/snaps/js-strict-mode-15-result.png" />
+![js-strict-mode example 15 result](./code_sandbox/snaps/js-strict-mode-15-result.png)
 
 - [x] **Outcome:** **SyntaxError** — strict mode code may not include a `with` statement.
 
@@ -20877,9 +20877,9 @@ eval("x = 2");
 // x is not available here
 ```
 
-<img alt="js-strict-mode example 16 source" src="./code_sandbox/snaps/js-strict-mode-16-code.png" />
+![js-strict-mode example 16 source](./code_sandbox/snaps/js-strict-mode-16-code.png)
 
-<img alt="js-strict-mode example 16 result" src="./code_sandbox/snaps/js-strict-mode-16-result.png" />
+![js-strict-mode example 16 result](./code_sandbox/snaps/js-strict-mode-16-result.png)
 
 - [x] **Outcome:** **ReferenceError** — `x` is not created in this scope (and the eval assignment itself fails).
 
@@ -20898,9 +20898,9 @@ eval("var x = 2");
 // x is not available here
 ```
 
-<img alt="js-strict-mode example 17 source" src="./code_sandbox/snaps/js-strict-mode-17-code.png" />
+![js-strict-mode example 17 source](./code_sandbox/snaps/js-strict-mode-17-code.png)
 
-<img alt="js-strict-mode example 17 result" src="./code_sandbox/snaps/js-strict-mode-17-result.png" />
+![js-strict-mode example 17 result](./code_sandbox/snaps/js-strict-mode-17-result.png)
 
 - [x] **Outcome:** **ReferenceError** when reading `x` after `eval("var x = 2")` in strict mode.
 
@@ -20918,9 +20918,9 @@ eval("let x = 2");
 // x is not available here
 ```
 
-<img alt="js-strict-mode example 18 source" src="./code_sandbox/snaps/js-strict-mode-18-code.png" />
+![js-strict-mode example 18 source](./code_sandbox/snaps/js-strict-mode-18-code.png)
 
-<img alt="js-strict-mode example 18 result" src="./code_sandbox/snaps/js-strict-mode-18-result.png" />
+![js-strict-mode example 18 result](./code_sandbox/snaps/js-strict-mode-18-result.png)
 
 - [x] **Outcome:** **ReferenceError** — `let` in eval does not create an outer `x`.
 
@@ -20941,9 +20941,9 @@ function myFunction() {
 myFunction();
 ```
 
-<img alt="js-strict-mode example 19 source" src="./code_sandbox/snaps/js-strict-mode-19-code.png" />
+![js-strict-mode example 19 source](./code_sandbox/snaps/js-strict-mode-19-code.png)
 
-<img alt="js-strict-mode example 19 result" src="./code_sandbox/snaps/js-strict-mode-19-result.png" />
+![js-strict-mode example 19 result](./code_sandbox/snaps/js-strict-mode-19-result.png)
 
 - [x] **Outcome:** `myFunction()` returns **undefined**. `this === undefined` is **true**.
 
@@ -21154,9 +21154,9 @@ Sandbox: `code_sandbox/js-dates/new-date-now.html`
 const d = new Date();
 ```
 
-<img alt="js-dates example 1 source" src="./code_sandbox/snaps/js-dates-01-code.png" />
+![js-dates example 1 source](./code_sandbox/snaps/js-dates-01-code.png)
 
-<img alt="js-dates example 1 result" src="./code_sandbox/snaps/js-dates-01-result.png" />
+![js-dates example 1 result](./code_sandbox/snaps/js-dates-01-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local date/time** when it was taken (not a fake clock).
 
@@ -21173,9 +21173,9 @@ Sandbox: `code_sandbox/js-dates/date-iso-string.html`
 const d = new Date("2022-03-25");
 ```
 
-<img alt="js-dates example 2 source" src="./code_sandbox/snaps/js-dates-02-code.png" />
+![js-dates example 2 source](./code_sandbox/snaps/js-dates-02-code.png)
 
-<img alt="js-dates example 2 result" src="./code_sandbox/snaps/js-dates-02-result.png" />
+![js-dates example 2 result](./code_sandbox/snaps/js-dates-02-result.png)
 
 - [x] **Outcome:** A Date for **2022-03-25** (UTC). The printed string uses the **browser local** zone.
 
@@ -21192,9 +21192,9 @@ Sandbox: `code_sandbox/js-dates/date-long-string.html`
 const d = new Date("October 13, 2014 11:13:00");
 ```
 
-<img alt="js-dates example 3 source" src="./code_sandbox/snaps/js-dates-03-code.png" />
+![js-dates example 3 source](./code_sandbox/snaps/js-dates-03-code.png)
 
-<img alt="js-dates example 3 result" src="./code_sandbox/snaps/js-dates-03-result.png" />
+![js-dates example 3 result](./code_sandbox/snaps/js-dates-03-result.png)
 
 - [x] **Outcome:** **October 13, 2014, 11:13:00** local (string form).
 
@@ -21211,9 +21211,9 @@ Sandbox: `code_sandbox/js-dates/seven-numbers.html`
 const d = new Date(2018, 11, 24, 10, 33, 30, 0);
 ```
 
-<img alt="js-dates example 4 source" src="./code_sandbox/snaps/js-dates-04-code.png" />
+![js-dates example 4 source](./code_sandbox/snaps/js-dates-04-code.png)
 
-<img alt="js-dates example 4 result" src="./code_sandbox/snaps/js-dates-04-result.png" />
+![js-dates example 4 result](./code_sandbox/snaps/js-dates-04-result.png)
 
 - [x] **Outcome:** **December 24, 2018, 10:33:30** local time.
 
@@ -21230,9 +21230,9 @@ Sandbox: `code_sandbox/js-dates/month-overflow.html`
 const d = new Date(2018, 15, 24, 10, 33, 30);
 ```
 
-<img alt="js-dates example 5 source" src="./code_sandbox/snaps/js-dates-05-code.png" />
+![js-dates example 5 source](./code_sandbox/snaps/js-dates-05-code.png)
 
-<img alt="js-dates example 5 result" src="./code_sandbox/snaps/js-dates-05-result.png" />
+![js-dates example 5 result](./code_sandbox/snaps/js-dates-05-result.png)
 
 - [x] **Outcome:** **April 24, 2019, 10:33:30** local (overflow from month 15).
 
@@ -21249,9 +21249,9 @@ Sandbox: `code_sandbox/js-dates/month-overflow-equiv.html`
 const d = new Date(2019, 3, 24, 10, 33, 30);
 ```
 
-<img alt="js-dates example 6 source" src="./code_sandbox/snaps/js-dates-06-code.png" />
+![js-dates example 6 source](./code_sandbox/snaps/js-dates-06-code.png)
 
-<img alt="js-dates example 6 result" src="./code_sandbox/snaps/js-dates-06-result.png" />
+![js-dates example 6 result](./code_sandbox/snaps/js-dates-06-result.png)
 
 - [x] **Outcome:** **April 24, 2019, 10:33:30** local — same as the overflow example.
 
@@ -21268,9 +21268,9 @@ Sandbox: `code_sandbox/js-dates/day-overflow.html`
 const d = new Date(2018, 5, 35, 10, 33, 30);
 ```
 
-<img alt="js-dates example 7 source" src="./code_sandbox/snaps/js-dates-07-code.png" />
+![js-dates example 7 source](./code_sandbox/snaps/js-dates-07-code.png)
 
-<img alt="js-dates example 7 result" src="./code_sandbox/snaps/js-dates-07-result.png" />
+![js-dates example 7 result](./code_sandbox/snaps/js-dates-07-result.png)
 
 - [x] **Outcome:** **July 5, 2018, 10:33:30** local.
 
@@ -21286,9 +21286,9 @@ Sandbox: `code_sandbox/js-dates/day-overflow-equiv.html`
 const d = new Date(2018, 6, 5, 10, 33, 30);
 ```
 
-<img alt="js-dates example 8 source" src="./code_sandbox/snaps/js-dates-08-code.png" />
+![js-dates example 8 source](./code_sandbox/snaps/js-dates-08-code.png)
 
-<img alt="js-dates example 8 result" src="./code_sandbox/snaps/js-dates-08-result.png" />
+![js-dates example 8 result](./code_sandbox/snaps/js-dates-08-result.png)
 
 - [x] **Outcome:** **July 5, 2018, 10:33:30** local — same as the day-overflow example.
 
@@ -21304,9 +21304,9 @@ Sandbox: `code_sandbox/js-dates/six-numbers.html`
 const d = new Date(2018, 11, 24, 10, 33, 30);
 ```
 
-<img alt="js-dates example 9 source" src="./code_sandbox/snaps/js-dates-09-code.png" />
+![js-dates example 9 source](./code_sandbox/snaps/js-dates-09-code.png)
 
-<img alt="js-dates example 9 result" src="./code_sandbox/snaps/js-dates-09-result.png" />
+![js-dates example 9 result](./code_sandbox/snaps/js-dates-09-result.png)
 
 - [x] **Outcome:** **December 24, 2018, 10:33:30** local.
 
@@ -21322,9 +21322,9 @@ Sandbox: `code_sandbox/js-dates/five-numbers.html`
 const d = new Date(2018, 11, 24, 10, 33);
 ```
 
-<img alt="js-dates example 10 source" src="./code_sandbox/snaps/js-dates-10-code.png" />
+![js-dates example 10 source](./code_sandbox/snaps/js-dates-10-code.png)
 
-<img alt="js-dates example 10 result" src="./code_sandbox/snaps/js-dates-10-result.png" />
+![js-dates example 10 result](./code_sandbox/snaps/js-dates-10-result.png)
 
 - [x] **Outcome:** **December 24, 2018, 10:33:00** local.
 
@@ -21340,9 +21340,9 @@ Sandbox: `code_sandbox/js-dates/four-numbers.html`
 const d = new Date(2018, 11, 24, 10);
 ```
 
-<img alt="js-dates example 11 source" src="./code_sandbox/snaps/js-dates-11-code.png" />
+![js-dates example 11 source](./code_sandbox/snaps/js-dates-11-code.png)
 
-<img alt="js-dates example 11 result" src="./code_sandbox/snaps/js-dates-11-result.png" />
+![js-dates example 11 result](./code_sandbox/snaps/js-dates-11-result.png)
 
 - [x] **Outcome:** **December 24, 2018, 10:00:00** local.
 
@@ -21358,9 +21358,9 @@ Sandbox: `code_sandbox/js-dates/three-numbers.html`
 const d = new Date(2018, 11, 24);
 ```
 
-<img alt="js-dates example 12 source" src="./code_sandbox/snaps/js-dates-12-code.png" />
+![js-dates example 12 source](./code_sandbox/snaps/js-dates-12-code.png)
 
-<img alt="js-dates example 12 result" src="./code_sandbox/snaps/js-dates-12-result.png" />
+![js-dates example 12 result](./code_sandbox/snaps/js-dates-12-result.png)
 
 - [x] **Outcome:** **December 24, 2018** at local midnight.
 
@@ -21377,9 +21377,9 @@ Sandbox: `code_sandbox/js-dates/two-numbers.html`
 const d = new Date(2018, 11);
 ```
 
-<img alt="js-dates example 13 source" src="./code_sandbox/snaps/js-dates-13-code.png" />
+![js-dates example 13 source](./code_sandbox/snaps/js-dates-13-code.png)
 
-<img alt="js-dates example 13 result" src="./code_sandbox/snaps/js-dates-13-result.png" />
+![js-dates example 13 result](./code_sandbox/snaps/js-dates-13-result.png)
 
 - [x] **Outcome:** **December 1, 2018** at local midnight.
 
@@ -21396,9 +21396,9 @@ Sandbox: `code_sandbox/js-dates/one-number-ms.html`
 const d = new Date(2018);
 ```
 
-<img alt="js-dates example 14 source" src="./code_sandbox/snaps/js-dates-14-code.png" />
+![js-dates example 14 source](./code_sandbox/snaps/js-dates-14-code.png)
 
-<img alt="js-dates example 14 result" src="./code_sandbox/snaps/js-dates-14-result.png" />
+![js-dates example 14 result](./code_sandbox/snaps/js-dates-14-result.png)
 
 - [x] **Outcome:** **~2 seconds after** 1970-01-01 UTC (2018 milliseconds), **not** the year 2018.
 
@@ -21415,9 +21415,9 @@ Sandbox: `code_sandbox/js-dates/year-99.html`
 const d = new Date(99, 11, 24);
 ```
 
-<img alt="js-dates example 15 source" src="./code_sandbox/snaps/js-dates-15-code.png" />
+![js-dates example 15 source](./code_sandbox/snaps/js-dates-15-code.png)
 
-<img alt="js-dates example 15 result" src="./code_sandbox/snaps/js-dates-15-result.png" />
+![js-dates example 15 result](./code_sandbox/snaps/js-dates-15-result.png)
 
 - [x] **Outcome:** **December 24, 1999**. `getFullYear()` is **1999**.
 
@@ -21433,9 +21433,9 @@ Sandbox: `code_sandbox/js-dates/year-9.html`
 const d = new Date(9, 11, 24);
 ```
 
-<img alt="js-dates example 16 source" src="./code_sandbox/snaps/js-dates-16-code.png" />
+![js-dates example 16 source](./code_sandbox/snaps/js-dates-16-code.png)
 
-<img alt="js-dates example 16 result" src="./code_sandbox/snaps/js-dates-16-result.png" />
+![js-dates example 16 result](./code_sandbox/snaps/js-dates-16-result.png)
 
 - [x] **Outcome:** **December 24, 1909**. `getFullYear()` is **1909**.
 
@@ -21452,9 +21452,9 @@ Sandbox: `code_sandbox/js-dates/ms-positive.html`
 const d = new Date(100000000000);
 ```
 
-<img alt="js-dates example 17 source" src="./code_sandbox/snaps/js-dates-17-code.png" />
+![js-dates example 17 source](./code_sandbox/snaps/js-dates-17-code.png)
 
-<img alt="js-dates example 17 result" src="./code_sandbox/snaps/js-dates-17-result.png" />
+![js-dates example 17 result](./code_sandbox/snaps/js-dates-17-result.png)
 
 - [x] **Outcome:** About **3 March 1973** UTC (plus local offset when printed).
 
@@ -21470,9 +21470,9 @@ Sandbox: `code_sandbox/js-dates/ms-negative.html`
 const d = new Date(-100000000000);
 ```
 
-<img alt="js-dates example 18 source" src="./code_sandbox/snaps/js-dates-18-code.png" />
+![js-dates example 18 source](./code_sandbox/snaps/js-dates-18-code.png)
 
-<img alt="js-dates example 18 result" src="./code_sandbox/snaps/js-dates-18-result.png" />
+![js-dates example 18 result](./code_sandbox/snaps/js-dates-18-result.png)
 
 - [x] **Outcome:** About **31 October 1966** UTC (plus local offset when printed).
 
@@ -21490,9 +21490,9 @@ const d1 = new Date(24 * 60 * 60 * 1000);
 const d2 = new Date(86400000);
 ```
 
-<img alt="js-dates example 19 source" src="./code_sandbox/snaps/js-dates-19-code.png" />
+![js-dates example 19 source](./code_sandbox/snaps/js-dates-19-code.png)
 
-<img alt="js-dates example 19 result" src="./code_sandbox/snaps/js-dates-19-result.png" />
+![js-dates example 19 result](./code_sandbox/snaps/js-dates-19-result.png)
 
 - [x] **Outcome:** Both are **one day after** the epoch. The two constructors match.
 
@@ -21509,9 +21509,9 @@ Sandbox: `code_sandbox/js-dates/epoch-zero.html`
 const d = new Date(0);
 ```
 
-<img alt="js-dates example 20 source" src="./code_sandbox/snaps/js-dates-20-code.png" />
+![js-dates example 20 source](./code_sandbox/snaps/js-dates-20-code.png)
 
-<img alt="js-dates example 20 result" src="./code_sandbox/snaps/js-dates-20-result.png" />
+![js-dates example 20 result](./code_sandbox/snaps/js-dates-20-result.png)
 
 - [x] **Outcome:** **Epoch.** `toISOString()` is **1970-01-01T00:00:00.000Z**.
 
@@ -21529,9 +21529,9 @@ const d = new Date();
 d.toString();
 ```
 
-<img alt="js-dates example 21 source" src="./code_sandbox/snaps/js-dates-21-code.png" />
+![js-dates example 21 source](./code_sandbox/snaps/js-dates-21-code.png)
 
-<img alt="js-dates example 21 result" src="./code_sandbox/snaps/js-dates-21-result.png" />
+![js-dates example 21 result](./code_sandbox/snaps/js-dates-21-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local date/time** via **toString()**.
 
@@ -21548,9 +21548,9 @@ const d = new Date();
 d.toDateString();
 ```
 
-<img alt="js-dates example 22 source" src="./code_sandbox/snaps/js-dates-22-code.png" />
+![js-dates example 22 source](./code_sandbox/snaps/js-dates-22-code.png)
 
-<img alt="js-dates example 22 result" src="./code_sandbox/snaps/js-dates-22-result.png" />
+![js-dates example 22 result](./code_sandbox/snaps/js-dates-22-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local date** (date part only).
 
@@ -21567,9 +21567,9 @@ const d = new Date();
 d.toUTCString();
 ```
 
-<img alt="js-dates example 23 source" src="./code_sandbox/snaps/js-dates-23-code.png" />
+![js-dates example 23 source](./code_sandbox/snaps/js-dates-23-code.png)
 
-<img alt="js-dates example 23 result" src="./code_sandbox/snaps/js-dates-23-result.png" />
+![js-dates example 23 result](./code_sandbox/snaps/js-dates-23-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current** instant as a **UTC** string.
 
@@ -21586,9 +21586,9 @@ const d = new Date();
 d.toISOString();
 ```
 
-<img alt="js-dates example 24 source" src="./code_sandbox/snaps/js-dates-24-code.png" />
+![js-dates example 24 source](./code_sandbox/snaps/js-dates-24-code.png)
 
-<img alt="js-dates example 24 result" src="./code_sandbox/snaps/js-dates-24-result.png" />
+![js-dates example 24 result](./code_sandbox/snaps/js-dates-24-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current** instant as **ISO UTC**.
 
@@ -21786,9 +21786,9 @@ Sandbox: `code_sandbox/js-date-formats/iso-complete.html`
 const d = new Date("2015-03-25");
 ```
 
-<img alt="js-date-formats example 1 source" src="./code_sandbox/snaps/js-date-formats-01-code.png" />
+![js-date-formats example 1 source](./code_sandbox/snaps/js-date-formats-01-code.png)
 
-<img alt="js-date-formats example 1 result" src="./code_sandbox/snaps/js-date-formats-01-result.png" />
+![js-date-formats example 1 result](./code_sandbox/snaps/js-date-formats-01-result.png)
 
 - [x] **Outcome:** UTC is **2015-03-25T00:00:00.000Z**. Local print is **Tue Mar 24 2015 18:00:00 GMT-0600** (Mountain). The engine did **not** use March 25 local midnight.
 
@@ -21805,9 +21805,9 @@ Sandbox: `code_sandbox/js-date-formats/iso-year-month.html`
 const d = new Date("2015-03");
 ```
 
-<img alt="js-date-formats example 2 source" src="./code_sandbox/snaps/js-date-formats-02-code.png" />
+![js-date-formats example 2 source](./code_sandbox/snaps/js-date-formats-02-code.png)
 
-<img alt="js-date-formats example 2 result" src="./code_sandbox/snaps/js-date-formats-02-result.png" />
+![js-date-formats example 2 result](./code_sandbox/snaps/js-date-formats-02-result.png)
 
 - [x] **Outcome:** UTC is **2015-03-01T00:00:00.000Z**. Local print is **Sat Feb 28 2015 17:00:00 GMT-0700** (Mountain Standard — DST had not started yet).
 
@@ -21824,9 +21824,9 @@ Sandbox: `code_sandbox/js-date-formats/iso-year-only.html`
 const d = new Date("2015");
 ```
 
-<img alt="js-date-formats example 3 source" src="./code_sandbox/snaps/js-date-formats-03-code.png" />
+![js-date-formats example 3 source](./code_sandbox/snaps/js-date-formats-03-code.png)
 
-<img alt="js-date-formats example 3 result" src="./code_sandbox/snaps/js-date-formats-03-result.png" />
+![js-date-formats example 3 result](./code_sandbox/snaps/js-date-formats-03-result.png)
 
 - [x] **Outcome:** UTC is **2015-01-01T00:00:00.000Z**. Local print is **Wed Dec 31 2014 17:00:00 GMT-0700**.
 
@@ -21843,9 +21843,9 @@ Sandbox: `code_sandbox/js-date-formats/iso-datetime-z.html`
 const d = new Date("2015-03-25T12:00:00Z");
 ```
 
-<img alt="js-date-formats example 4 source" src="./code_sandbox/snaps/js-date-formats-04-code.png" />
+![js-date-formats example 4 source](./code_sandbox/snaps/js-date-formats-04-code.png)
 
-<img alt="js-date-formats example 4 result" src="./code_sandbox/snaps/js-date-formats-04-result.png" />
+![js-date-formats example 4 result](./code_sandbox/snaps/js-date-formats-04-result.png)
 
 - [x] **Outcome:** UTC stays **2015-03-25T12:00:00.000Z**. Local print is **Wed Mar 25 2015 06:00:00 GMT-0600**.
 
@@ -21862,9 +21862,9 @@ Sandbox: `code_sandbox/js-date-formats/iso-datetime-offset.html`
 const d = new Date("2015-03-25T12:00:00-06:30");
 ```
 
-<img alt="js-date-formats example 5 source" src="./code_sandbox/snaps/js-date-formats-05-code.png" />
+![js-date-formats example 5 source](./code_sandbox/snaps/js-date-formats-05-code.png)
 
-<img alt="js-date-formats example 5 result" src="./code_sandbox/snaps/js-date-formats-05-result.png" />
+![js-date-formats example 5 result](./code_sandbox/snaps/js-date-formats-05-result.png)
 
 - [x] **Outcome:** UTC is **2015-03-25T18:30:00.000Z**. Local print is **Wed Mar 25 2015 12:30:00 GMT-0600**.
 
@@ -21881,9 +21881,9 @@ Sandbox: `code_sandbox/js-date-formats/short-mm-dd-yyyy.html`
 const d = new Date("03/25/2015");
 ```
 
-<img alt="js-date-formats example 6 source" src="./code_sandbox/snaps/js-date-formats-06-code.png" />
+![js-date-formats example 6 source](./code_sandbox/snaps/js-date-formats-06-code.png)
 
-<img alt="js-date-formats example 6 result" src="./code_sandbox/snaps/js-date-formats-06-result.png" />
+![js-date-formats example 6 result](./code_sandbox/snaps/js-date-formats-06-result.png)
 
 - [x] **Outcome:** Local print is **Wed Mar 25 2015 00:00:00 GMT-0600**. ISO is **2015-03-25T06:00:00.000Z**.
 
@@ -21900,9 +21900,9 @@ Sandbox: `code_sandbox/js-date-formats/warn-no-leading-zero.html`
 const d = new Date("2015-3-25");
 ```
 
-<img alt="js-date-formats example 7 source" src="./code_sandbox/snaps/js-date-formats-07-code.png" />
+![js-date-formats example 7 source](./code_sandbox/snaps/js-date-formats-07-code.png)
 
-<img alt="js-date-formats example 7 result" src="./code_sandbox/snaps/js-date-formats-07-result.png" />
+![js-date-formats example 7 result](./code_sandbox/snaps/js-date-formats-07-result.png)
 
 - [x] **Outcome:** This V8 engine **parsed** it as **Wed Mar 25 2015 00:00:00** local — **not** Invalid Date. The format is still unsafe. Prefer **`2015-03-25`** (ISO, UTC) or a tested long/short form.
 
@@ -21918,9 +21918,9 @@ Sandbox: `code_sandbox/js-date-formats/warn-yyyy-slash.html`
 const d = new Date("2015/03/25");
 ```
 
-<img alt="js-date-formats example 8 source" src="./code_sandbox/snaps/js-date-formats-08-code.png" />
+![js-date-formats example 8 source](./code_sandbox/snaps/js-date-formats-08-code.png)
 
-<img alt="js-date-formats example 8 result" src="./code_sandbox/snaps/js-date-formats-08-result.png" />
+![js-date-formats example 8 result](./code_sandbox/snaps/js-date-formats-08-result.png)
 
 - [x] **Outcome:** This engine parsed it as **Wed Mar 25 2015 00:00:00** local. Still **do not rely** on slashes-in-ISO-order.
 
@@ -21937,9 +21937,9 @@ Sandbox: `code_sandbox/js-date-formats/warn-dd-mm-yyyy.html`
 const d = new Date("25-03-2015");
 ```
 
-<img alt="js-date-formats example 9 source" src="./code_sandbox/snaps/js-date-formats-09-code.png" />
+![js-date-formats example 9 source](./code_sandbox/snaps/js-date-formats-09-code.png)
 
-<img alt="js-date-formats example 9 result" src="./code_sandbox/snaps/js-date-formats-09-result.png" />
+![js-date-formats example 9 result](./code_sandbox/snaps/js-date-formats-09-result.png)
 
 - [x] **Outcome:** This engine returns **Invalid Date** (`getTime()` is **NaN**). Do not use day-first hyphen dates.
 
@@ -21956,9 +21956,9 @@ Sandbox: `code_sandbox/js-date-formats/long-mar-25.html`
 const d = new Date("Mar 25 2015");
 ```
 
-<img alt="js-date-formats example 10 source" src="./code_sandbox/snaps/js-date-formats-10-code.png" />
+![js-date-formats example 10 source](./code_sandbox/snaps/js-date-formats-10-code.png)
 
-<img alt="js-date-formats example 10 result" src="./code_sandbox/snaps/js-date-formats-10-result.png" />
+![js-date-formats example 10 result](./code_sandbox/snaps/js-date-formats-10-result.png)
 
 - [x] **Outcome:** **Wed Mar 25 2015 00:00:00 GMT-0600**. ISO **2015-03-25T06:00:00.000Z**.
 
@@ -21974,9 +21974,9 @@ Sandbox: `code_sandbox/js-date-formats/long-25-mar.html`
 const d = new Date("25 Mar 2015");
 ```
 
-<img alt="js-date-formats example 11 source" src="./code_sandbox/snaps/js-date-formats-11-code.png" />
+![js-date-formats example 11 source](./code_sandbox/snaps/js-date-formats-11-code.png)
 
-<img alt="js-date-formats example 11 result" src="./code_sandbox/snaps/js-date-formats-11-result.png" />
+![js-date-formats example 11 result](./code_sandbox/snaps/js-date-formats-11-result.png)
 
 - [x] **Outcome:** Same instant as `Mar 25 2015`: **Wed Mar 25 2015 00:00:00** local.
 
@@ -21992,9 +21992,9 @@ Sandbox: `code_sandbox/js-date-formats/long-january.html`
 const d = new Date("January 25 2015");
 ```
 
-<img alt="js-date-formats example 12 source" src="./code_sandbox/snaps/js-date-formats-12-code.png" />
+![js-date-formats example 12 source](./code_sandbox/snaps/js-date-formats-12-code.png)
 
-<img alt="js-date-formats example 12 result" src="./code_sandbox/snaps/js-date-formats-12-result.png" />
+![js-date-formats example 12 result](./code_sandbox/snaps/js-date-formats-12-result.png)
 
 - [x] **Outcome:** **Sun Jan 25 2015 00:00:00 GMT-0700** (Mountain Standard in January).
 
@@ -22010,9 +22010,9 @@ Sandbox: `code_sandbox/js-date-formats/long-jan.html`
 const d = new Date("Jan 25 2015");
 ```
 
-<img alt="js-date-formats example 13 source" src="./code_sandbox/snaps/js-date-formats-13-code.png" />
+![js-date-formats example 13 source](./code_sandbox/snaps/js-date-formats-13-code.png)
 
-<img alt="js-date-formats example 13 result" src="./code_sandbox/snaps/js-date-formats-13-result.png" />
+![js-date-formats example 13 result](./code_sandbox/snaps/js-date-formats-13-result.png)
 
 - [x] **Outcome:** Same as the full-month form: **Sun Jan 25 2015 00:00:00 GMT-0700**.
 
@@ -22028,9 +22028,9 @@ Sandbox: `code_sandbox/js-date-formats/long-january-commas.html`
 const d = new Date("JANUARY, 25, 2015");
 ```
 
-<img alt="js-date-formats example 14 source" src="./code_sandbox/snaps/js-date-formats-14-code.png" />
+![js-date-formats example 14 source](./code_sandbox/snaps/js-date-formats-14-code.png)
 
-<img alt="js-date-formats example 14 result" src="./code_sandbox/snaps/js-date-formats-14-result.png" />
+![js-date-formats example 14 result](./code_sandbox/snaps/js-date-formats-14-result.png)
 
 - [x] **Outcome:** Still **Sun Jan 25 2015 00:00:00 GMT-0700**.
 
@@ -22047,9 +22047,9 @@ Sandbox: `code_sandbox/js-date-formats/date-parse-msec.html`
 let msec = Date.parse("March 21, 2012");
 ```
 
-<img alt="js-date-formats example 15 source" src="./code_sandbox/snaps/js-date-formats-15-code.png" />
+![js-date-formats example 15 source](./code_sandbox/snaps/js-date-formats-15-code.png)
 
-<img alt="js-date-formats example 15 result" src="./code_sandbox/snaps/js-date-formats-15-result.png" />
+![js-date-formats example 15 result](./code_sandbox/snaps/js-date-formats-15-result.png)
 
 - [x] **Outcome:** This engine returned **1332309600000** (local midnight March 21, 2012 in Mountain time). The number is timezone-dependent.
 
@@ -22066,9 +22066,9 @@ let msec = Date.parse("March 21, 2012");
 const d = new Date(msec);
 ```
 
-<img alt="js-date-formats example 16 source" src="./code_sandbox/snaps/js-date-formats-16-code.png" />
+![js-date-formats example 16 source](./code_sandbox/snaps/js-date-formats-16-code.png)
 
-<img alt="js-date-formats example 16 result" src="./code_sandbox/snaps/js-date-formats-16-result.png" />
+![js-date-formats example 16 result](./code_sandbox/snaps/js-date-formats-16-result.png)
 
 - [x] **Outcome:** msec is **1332309600000**. d prints **Wed Mar 21 2012 00:00:00 GMT-0600**.
 
@@ -22289,9 +22289,9 @@ Sandbox: `code_sandbox/js-date-get/new-date-now.html`
 const d = new Date();
 ```
 
-<img alt="js-date-get example 1 source" src="./code_sandbox/snaps/js-date-get-01-code.png" />
+![js-date-get example 1 source](./code_sandbox/snaps/js-date-get-01-code.png)
 
-<img alt="js-date-get example 1 result" src="./code_sandbox/snaps/js-date-get-01-result.png" />
+![js-date-get example 1 result](./code_sandbox/snaps/js-date-get-01-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** date/time (not a hardcoded fake clock).
 
@@ -22309,9 +22309,9 @@ const d = new Date("2021-03-25");
 d.getFullYear();
 ```
 
-<img alt="js-date-get example 2 source" src="./code_sandbox/snaps/js-date-get-02-code.png" />
+![js-date-get example 2 source](./code_sandbox/snaps/js-date-get-02-code.png)
 
-<img alt="js-date-get example 2 result" src="./code_sandbox/snaps/js-date-get-02-result.png" />
+![js-date-get example 2 result](./code_sandbox/snaps/js-date-get-02-result.png)
 
 - [x] **Outcome:** `getFullYear()` is **2021**. Local print is **Wed Mar 24 2021 18:00:00 GMT-0600** — year did not roll back.
 
@@ -22328,9 +22328,9 @@ const d = new Date();
 d.getFullYear();
 ```
 
-<img alt="js-date-get example 3 source" src="./code_sandbox/snaps/js-date-get-03-code.png" />
+![js-date-get example 3 source](./code_sandbox/snaps/js-date-get-03-code.png)
 
-<img alt="js-date-get example 3 result" src="./code_sandbox/snaps/js-date-get-03-result.png" />
+![js-date-get example 3 result](./code_sandbox/snaps/js-date-get-03-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** four-digit year.
 
@@ -22348,9 +22348,9 @@ const d = new Date("2021-03-25");
 d.getMonth();
 ```
 
-<img alt="js-date-get example 4 source" src="./code_sandbox/snaps/js-date-get-04-code.png" />
+![js-date-get example 4 source](./code_sandbox/snaps/js-date-get-04-code.png)
 
-<img alt="js-date-get example 4 result" src="./code_sandbox/snaps/js-date-get-04-result.png" />
+![js-date-get example 4 result](./code_sandbox/snaps/js-date-get-04-result.png)
 
 - [x] **Outcome:** `getMonth()` is **2** (March). Local calendar day is the **24th**, still in March.
 
@@ -22367,9 +22367,9 @@ const d = new Date();
 d.getMonth();
 ```
 
-<img alt="js-date-get example 5 source" src="./code_sandbox/snaps/js-date-get-05-code.png" />
+![js-date-get example 5 source](./code_sandbox/snaps/js-date-get-05-code.png)
 
-<img alt="js-date-get example 5 result" src="./code_sandbox/snaps/js-date-get-05-result.png" />
+![js-date-get example 5 result](./code_sandbox/snaps/js-date-get-05-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** month number (0–11).
 
@@ -22387,9 +22387,9 @@ const d = new Date("2021-03-25");
 let month = months[d.getMonth()];
 ```
 
-<img alt="js-date-get example 6 source" src="./code_sandbox/snaps/js-date-get-06-code.png" />
+![js-date-get example 6 source](./code_sandbox/snaps/js-date-get-06-code.png)
 
-<img alt="js-date-get example 6 result" src="./code_sandbox/snaps/js-date-get-06-result.png" />
+![js-date-get example 6 result](./code_sandbox/snaps/js-date-get-06-result.png)
 
 - [x] **Outcome:** month is **"March"** (index **2**), even though local `getDate()` is **24**.
 
@@ -22407,9 +22407,9 @@ const d = new Date();
 let month = months[d.getMonth()];
 ```
 
-<img alt="js-date-get example 7 source" src="./code_sandbox/snaps/js-date-get-07-code.png" />
+![js-date-get example 7 source](./code_sandbox/snaps/js-date-get-07-code.png)
 
-<img alt="js-date-get example 7 result" src="./code_sandbox/snaps/js-date-get-07-result.png" />
+![js-date-get example 7 result](./code_sandbox/snaps/js-date-get-07-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** month **name**.
 
@@ -22427,9 +22427,9 @@ const d = new Date("2021-03-25");
 d.getDate();
 ```
 
-<img alt="js-date-get example 8 source" src="./code_sandbox/snaps/js-date-get-08-code.png" />
+![js-date-get example 8 source](./code_sandbox/snaps/js-date-get-08-code.png)
 
-<img alt="js-date-get example 8 result" src="./code_sandbox/snaps/js-date-get-08-result.png" />
+![js-date-get example 8 result](./code_sandbox/snaps/js-date-get-08-result.png)
 
 - [x] **Outcome:** `getDate()` is **24**, not 25. `2021-03-25` is UTC midnight = **March 24, 18:00** Mountain.
 
@@ -22446,9 +22446,9 @@ const d = new Date();
 d.getDate();
 ```
 
-<img alt="js-date-get example 9 source" src="./code_sandbox/snaps/js-date-get-09-code.png" />
+![js-date-get example 9 source](./code_sandbox/snaps/js-date-get-09-code.png)
 
-<img alt="js-date-get example 9 result" src="./code_sandbox/snaps/js-date-get-09-result.png" />
+![js-date-get example 9 result](./code_sandbox/snaps/js-date-get-09-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** day of the month.
 
@@ -22466,9 +22466,9 @@ const d = new Date("2021-03-25");
 d.getHours();
 ```
 
-<img alt="js-date-get example 10 source" src="./code_sandbox/snaps/js-date-get-10-code.png" />
+![js-date-get example 10 source](./code_sandbox/snaps/js-date-get-10-code.png)
 
-<img alt="js-date-get example 10 result" src="./code_sandbox/snaps/js-date-get-10-result.png" />
+![js-date-get example 10 result](./code_sandbox/snaps/js-date-get-10-result.png)
 
 - [x] **Outcome:** `getHours()` is **18** (6 PM Mountain), not 0. UTC hours would be **0** (`getUTCHours()`).
 
@@ -22485,9 +22485,9 @@ const d = new Date();
 d.getHours();
 ```
 
-<img alt="js-date-get example 11 source" src="./code_sandbox/snaps/js-date-get-11-code.png" />
+![js-date-get example 11 source](./code_sandbox/snaps/js-date-get-11-code.png)
 
-<img alt="js-date-get example 11 result" src="./code_sandbox/snaps/js-date-get-11-result.png" />
+![js-date-get example 11 result](./code_sandbox/snaps/js-date-get-11-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** hour.
 
@@ -22504,9 +22504,9 @@ const d = new Date("2021-03-25");
 d.getMinutes();
 ```
 
-<img alt="js-date-get example 12 source" src="./code_sandbox/snaps/js-date-get-12-code.png" />
+![js-date-get example 12 source](./code_sandbox/snaps/js-date-get-12-code.png)
 
-<img alt="js-date-get example 12 result" src="./code_sandbox/snaps/js-date-get-12-result.png" />
+![js-date-get example 12 result](./code_sandbox/snaps/js-date-get-12-result.png)
 
 - [x] **Outcome:** `getMinutes()` is **0** (UTC midnight has zero minutes).
 
@@ -22523,9 +22523,9 @@ const d = new Date();
 d.getMinutes();
 ```
 
-<img alt="js-date-get example 13 source" src="./code_sandbox/snaps/js-date-get-13-code.png" />
+![js-date-get example 13 source](./code_sandbox/snaps/js-date-get-13-code.png)
 
-<img alt="js-date-get example 13 result" src="./code_sandbox/snaps/js-date-get-13-result.png" />
+![js-date-get example 13 result](./code_sandbox/snaps/js-date-get-13-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** minutes.
 
@@ -22542,9 +22542,9 @@ const d = new Date("2021-03-25");
 d.getSeconds();
 ```
 
-<img alt="js-date-get example 14 source" src="./code_sandbox/snaps/js-date-get-14-code.png" />
+![js-date-get example 14 source](./code_sandbox/snaps/js-date-get-14-code.png)
 
-<img alt="js-date-get example 14 result" src="./code_sandbox/snaps/js-date-get-14-result.png" />
+![js-date-get example 14 result](./code_sandbox/snaps/js-date-get-14-result.png)
 
 - [x] **Outcome:** `getSeconds()` is **0**.
 
@@ -22561,9 +22561,9 @@ const d = new Date();
 d.getSeconds();
 ```
 
-<img alt="js-date-get example 15 source" src="./code_sandbox/snaps/js-date-get-15-code.png" />
+![js-date-get example 15 source](./code_sandbox/snaps/js-date-get-15-code.png)
 
-<img alt="js-date-get example 15 result" src="./code_sandbox/snaps/js-date-get-15-result.png" />
+![js-date-get example 15 result](./code_sandbox/snaps/js-date-get-15-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** seconds.
 
@@ -22580,9 +22580,9 @@ const d = new Date("2021-03-25");
 d.getMilliseconds();
 ```
 
-<img alt="js-date-get example 16 source" src="./code_sandbox/snaps/js-date-get-16-code.png" />
+![js-date-get example 16 source](./code_sandbox/snaps/js-date-get-16-code.png)
 
-<img alt="js-date-get example 16 result" src="./code_sandbox/snaps/js-date-get-16-result.png" />
+![js-date-get example 16 result](./code_sandbox/snaps/js-date-get-16-result.png)
 
 - [x] **Outcome:** `getMilliseconds()` is **0**.
 
@@ -22599,9 +22599,9 @@ const d = new Date();
 d.getMilliseconds();
 ```
 
-<img alt="js-date-get example 17 source" src="./code_sandbox/snaps/js-date-get-17-code.png" />
+![js-date-get example 17 source](./code_sandbox/snaps/js-date-get-17-code.png)
 
-<img alt="js-date-get example 17 result" src="./code_sandbox/snaps/js-date-get-17-result.png" />
+![js-date-get example 17 result](./code_sandbox/snaps/js-date-get-17-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** milliseconds.
 
@@ -22619,9 +22619,9 @@ const d = new Date("2021-03-25");
 d.getDay();
 ```
 
-<img alt="js-date-get example 18 source" src="./code_sandbox/snaps/js-date-get-18-code.png" />
+![js-date-get example 18 source](./code_sandbox/snaps/js-date-get-18-code.png)
 
-<img alt="js-date-get example 18 result" src="./code_sandbox/snaps/js-date-get-18-result.png" />
+![js-date-get example 18 result](./code_sandbox/snaps/js-date-get-18-result.png)
 
 - [x] **Outcome:** `getDay()` is **3** (Wednesday) because local time is **March 24**, not the UTC Thursday.
 
@@ -22638,9 +22638,9 @@ const d = new Date();
 d.getDay();
 ```
 
-<img alt="js-date-get example 19 source" src="./code_sandbox/snaps/js-date-get-19-code.png" />
+![js-date-get example 19 source](./code_sandbox/snaps/js-date-get-19-code.png)
 
-<img alt="js-date-get example 19 result" src="./code_sandbox/snaps/js-date-get-19-result.png" />
+![js-date-get example 19 result](./code_sandbox/snaps/js-date-get-19-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** weekday number.
 
@@ -22658,9 +22658,9 @@ const d = new Date("2021-03-25");
 let day = days[d.getDay()];
 ```
 
-<img alt="js-date-get example 20 source" src="./code_sandbox/snaps/js-date-get-20-code.png" />
+![js-date-get example 20 source](./code_sandbox/snaps/js-date-get-20-code.png)
 
-<img alt="js-date-get example 20 result" src="./code_sandbox/snaps/js-date-get-20-result.png" />
+![js-date-get example 20 result](./code_sandbox/snaps/js-date-get-20-result.png)
 
 - [x] **Outcome:** day is **"Wednesday"** (local Mar 24), not Thursday (UTC Mar 25).
 
@@ -22678,9 +22678,9 @@ const d = new Date();
 let day = days[d.getDay()];
 ```
 
-<img alt="js-date-get example 21 source" src="./code_sandbox/snaps/js-date-get-21-code.png" />
+![js-date-get example 21 source](./code_sandbox/snaps/js-date-get-21-code.png)
 
-<img alt="js-date-get example 21 result" src="./code_sandbox/snaps/js-date-get-21-result.png" />
+![js-date-get example 21 result](./code_sandbox/snaps/js-date-get-21-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** weekday **name**.
 
@@ -22698,9 +22698,9 @@ const d = new Date("1970-01-01");
 d.getTime();
 ```
 
-<img alt="js-date-get example 22 source" src="./code_sandbox/snaps/js-date-get-22-code.png" />
+![js-date-get example 22 source](./code_sandbox/snaps/js-date-get-22-code.png)
 
-<img alt="js-date-get example 22 result" src="./code_sandbox/snaps/js-date-get-22-result.png" />
+![js-date-get example 22 result](./code_sandbox/snaps/js-date-get-22-result.png)
 
 - [x] **Outcome:** `getTime()` is **0**. ISO is **1970-01-01T00:00:00.000Z**. Local print is **Wed Dec 31 1969 17:00:00 GMT-0700**.
 
@@ -22717,9 +22717,9 @@ const d = new Date("2021-03-25");
 d.getTime();
 ```
 
-<img alt="js-date-get example 23 source" src="./code_sandbox/snaps/js-date-get-23-code.png" />
+![js-date-get example 23 source](./code_sandbox/snaps/js-date-get-23-code.png)
 
-<img alt="js-date-get example 23 result" src="./code_sandbox/snaps/js-date-get-23-result.png" />
+![js-date-get example 23 result](./code_sandbox/snaps/js-date-get-23-result.png)
 
 - [x] **Outcome:** `getTime()` is **1616630400000** (`2021-03-25T00:00:00.000Z`).
 
@@ -22736,9 +22736,9 @@ const d = new Date();
 d.getTime();
 ```
 
-<img alt="js-date-get example 24 source" src="./code_sandbox/snaps/js-date-get-24-code.png" />
+![js-date-get example 24 source](./code_sandbox/snaps/js-date-get-24-code.png)
 
-<img alt="js-date-get example 24 result" src="./code_sandbox/snaps/js-date-get-24-result.png" />
+![js-date-get example 24 result](./code_sandbox/snaps/js-date-get-24-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current** millisecond timestamp (not a fake clock).
 
@@ -22755,9 +22755,9 @@ Sandbox: `code_sandbox/js-date-get/date-now.html`
 let ms = Date.now();
 ```
 
-<img alt="js-date-get example 25 source" src="./code_sandbox/snaps/js-date-get-25-code.png" />
+![js-date-get example 25 source](./code_sandbox/snaps/js-date-get-25-code.png)
 
-<img alt="js-date-get example 25 result" src="./code_sandbox/snaps/js-date-get-25-result.png" />
+![js-date-get example 25 result](./code_sandbox/snaps/js-date-get-25-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current** `Date.now()` value.
 
@@ -22778,9 +22778,9 @@ const year = day * 365;
 let years = Math.round(Date.now() / year);
 ```
 
-<img alt="js-date-get example 26 source" src="./code_sandbox/snaps/js-date-get-26-code.png" />
+![js-date-get example 26 source](./code_sandbox/snaps/js-date-get-26-code.png)
 
-<img alt="js-date-get example 26 result" src="./code_sandbox/snaps/js-date-get-26-result.png" />
+![js-date-get example 26 result](./code_sandbox/snaps/js-date-get-26-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current** rounded 365-day year count since 1970 (about **56** in 2026). It is not `getFullYear() - 1970`.
 
@@ -22798,9 +22798,9 @@ const d = new Date();
 let diff = d.getTimezoneOffset();
 ```
 
-<img alt="js-date-get example 27 source" src="./code_sandbox/snaps/js-date-get-27-code.png" />
+![js-date-get example 27 source](./code_sandbox/snaps/js-date-get-27-code.png)
 
-<img alt="js-date-get example 27 result" src="./code_sandbox/snaps/js-date-get-27-result.png" />
+![js-date-get example 27 result](./code_sandbox/snaps/js-date-get-27-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** offset in minutes (this Mountain daylight zone prints **360**).
 
@@ -22819,9 +22819,9 @@ d.getYear();
 d.getFullYear();
 ```
 
-<img alt="js-date-get example 28 source" src="./code_sandbox/snaps/js-date-get-28-code.png" />
+![js-date-get example 28 source](./code_sandbox/snaps/js-date-get-28-code.png)
 
-<img alt="js-date-get example 28 result" src="./code_sandbox/snaps/js-date-get-28-result.png" />
+![js-date-get example 28 result](./code_sandbox/snaps/js-date-get-28-result.png)
 
 - [x] **Outcome:** `getYear()` is **121** (2021 − 1900). `getFullYear()` is **2021**. Do **not** use `getYear()`.
 
@@ -22839,9 +22839,9 @@ const d = new Date("2021-03-25");
 d.getUTCDate();
 ```
 
-<img alt="js-date-get example 29 source" src="./code_sandbox/snaps/js-date-get-29-code.png" />
+![js-date-get example 29 source](./code_sandbox/snaps/js-date-get-29-code.png)
 
-<img alt="js-date-get example 29 result" src="./code_sandbox/snaps/js-date-get-29-result.png" />
+![js-date-get example 29 result](./code_sandbox/snaps/js-date-get-29-result.png)
 
 - [x] **Outcome:** `getUTCDate()` is **25**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22859,9 +22859,9 @@ const d = new Date("2021-03-25");
 d.getUTCFullYear();
 ```
 
-<img alt="js-date-get example 30 source" src="./code_sandbox/snaps/js-date-get-30-code.png" />
+![js-date-get example 30 source](./code_sandbox/snaps/js-date-get-30-code.png)
 
-<img alt="js-date-get example 30 result" src="./code_sandbox/snaps/js-date-get-30-result.png" />
+![js-date-get example 30 result](./code_sandbox/snaps/js-date-get-30-result.png)
 
 - [x] **Outcome:** `getUTCFullYear()` is **2021**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22879,9 +22879,9 @@ const d = new Date("2021-03-25");
 d.getUTCMonth();
 ```
 
-<img alt="js-date-get example 31 source" src="./code_sandbox/snaps/js-date-get-31-code.png" />
+![js-date-get example 31 source](./code_sandbox/snaps/js-date-get-31-code.png)
 
-<img alt="js-date-get example 31 result" src="./code_sandbox/snaps/js-date-get-31-result.png" />
+![js-date-get example 31 result](./code_sandbox/snaps/js-date-get-31-result.png)
 
 - [x] **Outcome:** `getUTCMonth()` is **2**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22899,9 +22899,9 @@ const d = new Date("2021-03-25");
 d.getUTCDay();
 ```
 
-<img alt="js-date-get example 32 source" src="./code_sandbox/snaps/js-date-get-32-code.png" />
+![js-date-get example 32 source](./code_sandbox/snaps/js-date-get-32-code.png)
 
-<img alt="js-date-get example 32 result" src="./code_sandbox/snaps/js-date-get-32-result.png" />
+![js-date-get example 32 result](./code_sandbox/snaps/js-date-get-32-result.png)
 
 - [x] **Outcome:** `getUTCDay()` is **4**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22919,9 +22919,9 @@ const d = new Date("2021-03-25");
 d.getUTCHours();
 ```
 
-<img alt="js-date-get example 33 source" src="./code_sandbox/snaps/js-date-get-33-code.png" />
+![js-date-get example 33 source](./code_sandbox/snaps/js-date-get-33-code.png)
 
-<img alt="js-date-get example 33 result" src="./code_sandbox/snaps/js-date-get-33-result.png" />
+![js-date-get example 33 result](./code_sandbox/snaps/js-date-get-33-result.png)
 
 - [x] **Outcome:** `getUTCHours()` is **0**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22939,9 +22939,9 @@ const d = new Date("2021-03-25");
 d.getUTCMinutes();
 ```
 
-<img alt="js-date-get example 34 source" src="./code_sandbox/snaps/js-date-get-34-code.png" />
+![js-date-get example 34 source](./code_sandbox/snaps/js-date-get-34-code.png)
 
-<img alt="js-date-get example 34 result" src="./code_sandbox/snaps/js-date-get-34-result.png" />
+![js-date-get example 34 result](./code_sandbox/snaps/js-date-get-34-result.png)
 
 - [x] **Outcome:** `getUTCMinutes()` is **0**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22959,9 +22959,9 @@ const d = new Date("2021-03-25");
 d.getUTCSeconds();
 ```
 
-<img alt="js-date-get example 35 source" src="./code_sandbox/snaps/js-date-get-35-code.png" />
+![js-date-get example 35 source](./code_sandbox/snaps/js-date-get-35-code.png)
 
-<img alt="js-date-get example 35 result" src="./code_sandbox/snaps/js-date-get-35-result.png" />
+![js-date-get example 35 result](./code_sandbox/snaps/js-date-get-35-result.png)
 
 - [x] **Outcome:** `getUTCSeconds()` is **0**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -22979,9 +22979,9 @@ const d = new Date("2021-03-25");
 d.getUTCMilliseconds();
 ```
 
-<img alt="js-date-get example 36 source" src="./code_sandbox/snaps/js-date-get-36-code.png" />
+![js-date-get example 36 source](./code_sandbox/snaps/js-date-get-36-code.png)
 
-<img alt="js-date-get example 36 result" src="./code_sandbox/snaps/js-date-get-36-result.png" />
+![js-date-get example 36 result](./code_sandbox/snaps/js-date-get-36-result.png)
 
 - [x] **Outcome:** `getUTCMilliseconds()` is **0**. ISO is **2021-03-25T00:00:00.000Z**. Local getters on the same object can disagree (see getDate / getHours / getDay).
 
@@ -23187,9 +23187,9 @@ const d = new Date("January 01, 2025");
 d.setFullYear(2020);
 ```
 
-<img alt="js-date-set example 1 source" src="./code_sandbox/snaps/js-date-set-01-code.png" />
+![js-date-set example 1 source](./code_sandbox/snaps/js-date-set-01-code.png)
 
-<img alt="js-date-set example 1 result" src="./code_sandbox/snaps/js-date-set-01-result.png" />
+![js-date-set example 1 result](./code_sandbox/snaps/js-date-set-01-result.png)
 
 - [x] **Outcome:** After the set, d is **Wed Jan 01 2020 00:00:00 GMT-0700**.
 
@@ -23207,9 +23207,9 @@ const d = new Date("January 01, 2025");
 d.setFullYear(2020, 11, 3);
 ```
 
-<img alt="js-date-set example 2 source" src="./code_sandbox/snaps/js-date-set-02-code.png" />
+![js-date-set example 2 source](./code_sandbox/snaps/js-date-set-02-code.png)
 
-<img alt="js-date-set example 2 result" src="./code_sandbox/snaps/js-date-set-02-result.png" />
+![js-date-set example 2 result](./code_sandbox/snaps/js-date-set-02-result.png)
 
 - [x] **Outcome:** After the set, d is **Thu Dec 03 2020 00:00:00 GMT-0700**.
 
@@ -23226,9 +23226,9 @@ const d = new Date("January 01, 2025");
 d.setMonth(11);
 ```
 
-<img alt="js-date-set example 3 source" src="./code_sandbox/snaps/js-date-set-03-code.png" />
+![js-date-set example 3 source](./code_sandbox/snaps/js-date-set-03-code.png)
 
-<img alt="js-date-set example 3 result" src="./code_sandbox/snaps/js-date-set-03-result.png" />
+![js-date-set example 3 result](./code_sandbox/snaps/js-date-set-03-result.png)
 
 - [x] **Outcome:** After the set, d is **Mon Dec 01 2025 00:00:00 GMT-0700**.
 
@@ -23245,9 +23245,9 @@ const d = new Date("January 01, 2025");
 d.setDate(15);
 ```
 
-<img alt="js-date-set example 4 source" src="./code_sandbox/snaps/js-date-set-04-code.png" />
+![js-date-set example 4 source](./code_sandbox/snaps/js-date-set-04-code.png)
 
-<img alt="js-date-set example 4 result" src="./code_sandbox/snaps/js-date-set-04-result.png" />
+![js-date-set example 4 result](./code_sandbox/snaps/js-date-set-04-result.png)
 
 - [x] **Outcome:** After the set, d is **Wed Jan 15 2025 00:00:00 GMT-0700**.
 
@@ -23265,9 +23265,9 @@ const d = new Date("January 01, 2025");
 d.setDate(d.getDate() + 50);
 ```
 
-<img alt="js-date-set example 5 source" src="./code_sandbox/snaps/js-date-set-05-code.png" />
+![js-date-set example 5 source](./code_sandbox/snaps/js-date-set-05-code.png)
 
-<img alt="js-date-set example 5 result" src="./code_sandbox/snaps/js-date-set-05-result.png" />
+![js-date-set example 5 result](./code_sandbox/snaps/js-date-set-05-result.png)
 
 - [x] **Outcome:** January 1 + 50 days is **Thu Feb 20 2025 00:00:00 GMT-0700**.
 
@@ -23284,9 +23284,9 @@ const d = new Date("January 01, 2025");
 d.setHours(22);
 ```
 
-<img alt="js-date-set example 6 source" src="./code_sandbox/snaps/js-date-set-06-code.png" />
+![js-date-set example 6 source](./code_sandbox/snaps/js-date-set-06-code.png)
 
-<img alt="js-date-set example 6 result" src="./code_sandbox/snaps/js-date-set-06-result.png" />
+![js-date-set example 6 result](./code_sandbox/snaps/js-date-set-06-result.png)
 
 - [x] **Outcome:** After the set, d is **Wed Jan 01 2025 22:00:00 GMT-0700**.
 
@@ -23303,9 +23303,9 @@ const d = new Date("January 01, 2025");
 d.setHours(22, 10, 20);
 ```
 
-<img alt="js-date-set example 7 source" src="./code_sandbox/snaps/js-date-set-07-code.png" />
+![js-date-set example 7 source](./code_sandbox/snaps/js-date-set-07-code.png)
 
-<img alt="js-date-set example 7 result" src="./code_sandbox/snaps/js-date-set-07-result.png" />
+![js-date-set example 7 result](./code_sandbox/snaps/js-date-set-07-result.png)
 
 - [x] **Outcome:** After the set, d is **Wed Jan 01 2025 22:10:20 GMT-0700**.
 
@@ -23322,9 +23322,9 @@ const d = new Date("January 01, 2025");
 d.setMinutes(30);
 ```
 
-<img alt="js-date-set example 8 source" src="./code_sandbox/snaps/js-date-set-08-code.png" />
+![js-date-set example 8 source](./code_sandbox/snaps/js-date-set-08-code.png)
 
-<img alt="js-date-set example 8 result" src="./code_sandbox/snaps/js-date-set-08-result.png" />
+![js-date-set example 8 result](./code_sandbox/snaps/js-date-set-08-result.png)
 
 - [x] **Outcome:** After the set, d is **Wed Jan 01 2025 00:30:00 GMT-0700**.
 
@@ -23341,9 +23341,9 @@ const d = new Date("January 01, 2025");
 d.setSeconds(30);
 ```
 
-<img alt="js-date-set example 9 source" src="./code_sandbox/snaps/js-date-set-09-code.png" />
+![js-date-set example 9 source](./code_sandbox/snaps/js-date-set-09-code.png)
 
-<img alt="js-date-set example 9 result" src="./code_sandbox/snaps/js-date-set-09-result.png" />
+![js-date-set example 9 result](./code_sandbox/snaps/js-date-set-09-result.png)
 
 - [x] **Outcome:** After the set, d is **Wed Jan 01 2025 00:00:30 GMT-0700**.
 
@@ -23368,9 +23368,9 @@ if (someday > today) {
 }
 ```
 
-<img alt="js-date-set example 10 source" src="./code_sandbox/snaps/js-date-set-10-code.png" />
+![js-date-set example 10 source](./code_sandbox/snaps/js-date-set-10-code.png)
 
-<img alt="js-date-set example 10 result" src="./code_sandbox/snaps/js-date-set-10-result.png" />
+![js-date-set example 10 result](./code_sandbox/snaps/js-date-set-10-result.png)
 
 - [x] **Outcome:** text is **"Today is before January 14, 2100."** (the snap’s `today` is the **browser's current local** time).
 
@@ -23388,9 +23388,9 @@ const d = new Date("January 01, 2025");
 d.setMilliseconds(500);
 ```
 
-<img alt="js-date-set example 11 source" src="./code_sandbox/snaps/js-date-set-11-code.png" />
+![js-date-set example 11 source](./code_sandbox/snaps/js-date-set-11-code.png)
 
-<img alt="js-date-set example 11 result" src="./code_sandbox/snaps/js-date-set-11-result.png" />
+![js-date-set example 11 result](./code_sandbox/snaps/js-date-set-11-result.png)
 
 - [x] **Outcome:** `getMilliseconds()` is **500**. ISO is **2025-01-01T07:00:00.500Z**.
 
@@ -23408,9 +23408,9 @@ const d = new Date("January 01, 2025");
 d.setTime(0);
 ```
 
-<img alt="js-date-set example 12 source" src="./code_sandbox/snaps/js-date-set-12-code.png" />
+![js-date-set example 12 source](./code_sandbox/snaps/js-date-set-12-code.png)
 
-<img alt="js-date-set example 12 result" src="./code_sandbox/snaps/js-date-set-12-result.png" />
+![js-date-set example 12 result](./code_sandbox/snaps/js-date-set-12-result.png)
 
 - [x] **Outcome:** `getTime()` is **0**. ISO is **1970-01-01T00:00:00.000Z**. Local print is **Wed Dec 31 1969 17:00:00 GMT-0700**.
 
@@ -23633,9 +23633,9 @@ Sandbox: `code_sandbox/js-date-methods/new-date-now.html`
 const d = new Date();
 ```
 
-<img alt="js-date-methods example 1 source" src="./code_sandbox/snaps/js-date-methods-01-code.png" />
+![js-date-methods example 1 source](./code_sandbox/snaps/js-date-methods-01-code.png)
 
-<img alt="js-date-methods example 1 result" src="./code_sandbox/snaps/js-date-methods-01-result.png" />
+![js-date-methods example 1 result](./code_sandbox/snaps/js-date-methods-01-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current local** date/time.
 
@@ -23653,9 +23653,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d instanceof Date;
 ```
 
-<img alt="js-date-methods example 2 source" src="./code_sandbox/snaps/js-date-methods-02-code.png" />
+![js-date-methods example 2 source](./code_sandbox/snaps/js-date-methods-02-code.png)
 
-<img alt="js-date-methods example 2 result" src="./code_sandbox/snaps/js-date-methods-02-result.png" />
+![js-date-methods example 2 result](./code_sandbox/snaps/js-date-methods-02-result.png)
 
 - [x] **Outcome:** d is a Date for **2021-03-25T15:30:45.123Z**. `instanceof Date` is **true**. Local print is **Thu Mar 25 2021 09:30:45 GMT-0600**.
 
@@ -23674,9 +23674,9 @@ d.constructor;
 d.constructor === Date;
 ```
 
-<img alt="js-date-methods example 3 source" src="./code_sandbox/snaps/js-date-methods-03-code.png" />
+![js-date-methods example 3 source](./code_sandbox/snaps/js-date-methods-03-code.png)
 
-<img alt="js-date-methods example 3 result" src="./code_sandbox/snaps/js-date-methods-03-result.png" />
+![js-date-methods example 3 result](./code_sandbox/snaps/js-date-methods-03-result.png)
 
 - [x] **Outcome:** `d.constructor` prints **function Date() { [native code] }**. `d.constructor === Date` is **true**.
 
@@ -23693,9 +23693,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getDate();
 ```
 
-<img alt="js-date-methods example 4 source" src="./code_sandbox/snaps/js-date-methods-04-code.png" />
+![js-date-methods example 4 source](./code_sandbox/snaps/js-date-methods-04-code.png)
 
-<img alt="js-date-methods example 4 result" src="./code_sandbox/snaps/js-date-methods-04-result.png" />
+![js-date-methods example 4 result](./code_sandbox/snaps/js-date-methods-04-result.png)
 
 - [x] **Outcome:** `getDate()` is **25** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23713,9 +23713,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getDay();
 ```
 
-<img alt="js-date-methods example 5 source" src="./code_sandbox/snaps/js-date-methods-05-code.png" />
+![js-date-methods example 5 source](./code_sandbox/snaps/js-date-methods-05-code.png)
 
-<img alt="js-date-methods example 5 result" src="./code_sandbox/snaps/js-date-methods-05-result.png" />
+![js-date-methods example 5 result](./code_sandbox/snaps/js-date-methods-05-result.png)
 
 - [x] **Outcome:** `getDay()` is **4** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23732,9 +23732,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getFullYear();
 ```
 
-<img alt="js-date-methods example 6 source" src="./code_sandbox/snaps/js-date-methods-06-code.png" />
+![js-date-methods example 6 source](./code_sandbox/snaps/js-date-methods-06-code.png)
 
-<img alt="js-date-methods example 6 result" src="./code_sandbox/snaps/js-date-methods-06-result.png" />
+![js-date-methods example 6 result](./code_sandbox/snaps/js-date-methods-06-result.png)
 
 - [x] **Outcome:** `getFullYear()` is **2021** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23751,9 +23751,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getHours();
 ```
 
-<img alt="js-date-methods example 7 source" src="./code_sandbox/snaps/js-date-methods-07-code.png" />
+![js-date-methods example 7 source](./code_sandbox/snaps/js-date-methods-07-code.png)
 
-<img alt="js-date-methods example 7 result" src="./code_sandbox/snaps/js-date-methods-07-result.png" />
+![js-date-methods example 7 result](./code_sandbox/snaps/js-date-methods-07-result.png)
 
 - [x] **Outcome:** `getHours()` is **9** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23770,9 +23770,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getMilliseconds();
 ```
 
-<img alt="js-date-methods example 8 source" src="./code_sandbox/snaps/js-date-methods-08-code.png" />
+![js-date-methods example 8 source](./code_sandbox/snaps/js-date-methods-08-code.png)
 
-<img alt="js-date-methods example 8 result" src="./code_sandbox/snaps/js-date-methods-08-result.png" />
+![js-date-methods example 8 result](./code_sandbox/snaps/js-date-methods-08-result.png)
 
 - [x] **Outcome:** `getMilliseconds()` is **123** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23789,9 +23789,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getMinutes();
 ```
 
-<img alt="js-date-methods example 9 source" src="./code_sandbox/snaps/js-date-methods-09-code.png" />
+![js-date-methods example 9 source](./code_sandbox/snaps/js-date-methods-09-code.png)
 
-<img alt="js-date-methods example 9 result" src="./code_sandbox/snaps/js-date-methods-09-result.png" />
+![js-date-methods example 9 result](./code_sandbox/snaps/js-date-methods-09-result.png)
 
 - [x] **Outcome:** `getMinutes()` is **30** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23809,9 +23809,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getMonth();
 ```
 
-<img alt="js-date-methods example 10 source" src="./code_sandbox/snaps/js-date-methods-10-code.png" />
+![js-date-methods example 10 source](./code_sandbox/snaps/js-date-methods-10-code.png)
 
-<img alt="js-date-methods example 10 result" src="./code_sandbox/snaps/js-date-methods-10-result.png" />
+![js-date-methods example 10 result](./code_sandbox/snaps/js-date-methods-10-result.png)
 
 - [x] **Outcome:** `getMonth()` is **2** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23828,9 +23828,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getSeconds();
 ```
 
-<img alt="js-date-methods example 11 source" src="./code_sandbox/snaps/js-date-methods-11-code.png" />
+![js-date-methods example 11 source](./code_sandbox/snaps/js-date-methods-11-code.png)
 
-<img alt="js-date-methods example 11 result" src="./code_sandbox/snaps/js-date-methods-11-result.png" />
+![js-date-methods example 11 result](./code_sandbox/snaps/js-date-methods-11-result.png)
 
 - [x] **Outcome:** `getSeconds()` is **45** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23847,9 +23847,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getTime();
 ```
 
-<img alt="js-date-methods example 12 source" src="./code_sandbox/snaps/js-date-methods-12-code.png" />
+![js-date-methods example 12 source](./code_sandbox/snaps/js-date-methods-12-code.png)
 
-<img alt="js-date-methods example 12 result" src="./code_sandbox/snaps/js-date-methods-12-result.png" />
+![js-date-methods example 12 result](./code_sandbox/snaps/js-date-methods-12-result.png)
 
 - [x] **Outcome:** `getTime()` is **1616686245123** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23867,9 +23867,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getTimezoneOffset();
 ```
 
-<img alt="js-date-methods example 13 source" src="./code_sandbox/snaps/js-date-methods-13-code.png" />
+![js-date-methods example 13 source](./code_sandbox/snaps/js-date-methods-13-code.png)
 
-<img alt="js-date-methods example 13 result" src="./code_sandbox/snaps/js-date-methods-13-result.png" />
+![js-date-methods example 13 result](./code_sandbox/snaps/js-date-methods-13-result.png)
 
 - [x] **Outcome:** `getTimezoneOffset()` is **360** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23886,9 +23886,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCDate();
 ```
 
-<img alt="js-date-methods example 14 source" src="./code_sandbox/snaps/js-date-methods-14-code.png" />
+![js-date-methods example 14 source](./code_sandbox/snaps/js-date-methods-14-code.png)
 
-<img alt="js-date-methods example 14 result" src="./code_sandbox/snaps/js-date-methods-14-result.png" />
+![js-date-methods example 14 result](./code_sandbox/snaps/js-date-methods-14-result.png)
 
 - [x] **Outcome:** `getUTCDate()` is **25** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23905,9 +23905,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCDay();
 ```
 
-<img alt="js-date-methods example 15 source" src="./code_sandbox/snaps/js-date-methods-15-code.png" />
+![js-date-methods example 15 source](./code_sandbox/snaps/js-date-methods-15-code.png)
 
-<img alt="js-date-methods example 15 result" src="./code_sandbox/snaps/js-date-methods-15-result.png" />
+![js-date-methods example 15 result](./code_sandbox/snaps/js-date-methods-15-result.png)
 
 - [x] **Outcome:** `getUTCDay()` is **4** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23924,9 +23924,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCFullYear();
 ```
 
-<img alt="js-date-methods example 16 source" src="./code_sandbox/snaps/js-date-methods-16-code.png" />
+![js-date-methods example 16 source](./code_sandbox/snaps/js-date-methods-16-code.png)
 
-<img alt="js-date-methods example 16 result" src="./code_sandbox/snaps/js-date-methods-16-result.png" />
+![js-date-methods example 16 result](./code_sandbox/snaps/js-date-methods-16-result.png)
 
 - [x] **Outcome:** `getUTCFullYear()` is **2021** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23943,9 +23943,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCHours();
 ```
 
-<img alt="js-date-methods example 17 source" src="./code_sandbox/snaps/js-date-methods-17-code.png" />
+![js-date-methods example 17 source](./code_sandbox/snaps/js-date-methods-17-code.png)
 
-<img alt="js-date-methods example 17 result" src="./code_sandbox/snaps/js-date-methods-17-result.png" />
+![js-date-methods example 17 result](./code_sandbox/snaps/js-date-methods-17-result.png)
 
 - [x] **Outcome:** `getUTCHours()` is **15** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23962,9 +23962,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCMilliseconds();
 ```
 
-<img alt="js-date-methods example 18 source" src="./code_sandbox/snaps/js-date-methods-18-code.png" />
+![js-date-methods example 18 source](./code_sandbox/snaps/js-date-methods-18-code.png)
 
-<img alt="js-date-methods example 18 result" src="./code_sandbox/snaps/js-date-methods-18-result.png" />
+![js-date-methods example 18 result](./code_sandbox/snaps/js-date-methods-18-result.png)
 
 - [x] **Outcome:** `getUTCMilliseconds()` is **123** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -23981,9 +23981,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCMinutes();
 ```
 
-<img alt="js-date-methods example 19 source" src="./code_sandbox/snaps/js-date-methods-19-code.png" />
+![js-date-methods example 19 source](./code_sandbox/snaps/js-date-methods-19-code.png)
 
-<img alt="js-date-methods example 19 result" src="./code_sandbox/snaps/js-date-methods-19-result.png" />
+![js-date-methods example 19 result](./code_sandbox/snaps/js-date-methods-19-result.png)
 
 - [x] **Outcome:** `getUTCMinutes()` is **30** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -24000,9 +24000,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCMonth();
 ```
 
-<img alt="js-date-methods example 20 source" src="./code_sandbox/snaps/js-date-methods-20-code.png" />
+![js-date-methods example 20 source](./code_sandbox/snaps/js-date-methods-20-code.png)
 
-<img alt="js-date-methods example 20 result" src="./code_sandbox/snaps/js-date-methods-20-result.png" />
+![js-date-methods example 20 result](./code_sandbox/snaps/js-date-methods-20-result.png)
 
 - [x] **Outcome:** `getUTCMonth()` is **2** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -24019,9 +24019,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getUTCSeconds();
 ```
 
-<img alt="js-date-methods example 21 source" src="./code_sandbox/snaps/js-date-methods-21-code.png" />
+![js-date-methods example 21 source](./code_sandbox/snaps/js-date-methods-21-code.png)
 
-<img alt="js-date-methods example 21 result" src="./code_sandbox/snaps/js-date-methods-21-result.png" />
+![js-date-methods example 21 result](./code_sandbox/snaps/js-date-methods-21-result.png)
 
 - [x] **Outcome:** `getUTCSeconds()` is **45** on `2021-03-25T15:30:45.123Z` (local **Thu Mar 25 2021 09:30:45 GMT-0600**).
 
@@ -24039,9 +24039,9 @@ d.getYear();
 d.getFullYear();
 ```
 
-<img alt="js-date-methods example 22 source" src="./code_sandbox/snaps/js-date-methods-22-code.png" />
+![js-date-methods example 22 source](./code_sandbox/snaps/js-date-methods-22-code.png)
 
-<img alt="js-date-methods example 22 result" src="./code_sandbox/snaps/js-date-methods-22-result.png" />
+![js-date-methods example 22 result](./code_sandbox/snaps/js-date-methods-22-result.png)
 
 - [x] **Outcome:** `getYear()` is **121**. `getFullYear()` is **2021**. Do **not** use `getYear()`.
 
@@ -24058,9 +24058,9 @@ Sandbox: `code_sandbox/js-date-methods/date-now.html`
 let ms = Date.now();
 ```
 
-<img alt="js-date-methods example 23 source" src="./code_sandbox/snaps/js-date-methods-23-code.png" />
+![js-date-methods example 23 source](./code_sandbox/snaps/js-date-methods-23-code.png)
 
-<img alt="js-date-methods example 23 result" src="./code_sandbox/snaps/js-date-methods-23-result.png" />
+![js-date-methods example 23 result](./code_sandbox/snaps/js-date-methods-23-result.png)
 
 - [x] **Outcome:** The snap shows the **browser's current** `Date.now()` millisecond count.
 
@@ -24076,9 +24076,9 @@ Sandbox: `code_sandbox/js-date-methods/date-parse.html`
 let msec = Date.parse("2021-03-25T15:30:45.123Z");
 ```
 
-<img alt="js-date-methods example 24 source" src="./code_sandbox/snaps/js-date-methods-24-code.png" />
+![js-date-methods example 24 source](./code_sandbox/snaps/js-date-methods-24-code.png)
 
-<img alt="js-date-methods example 24 result" src="./code_sandbox/snaps/js-date-methods-24-result.png" />
+![js-date-methods example 24 result](./code_sandbox/snaps/js-date-methods-24-result.png)
 
 - [x] **Outcome:** `Date.parse` of this ISO UTC string is **1616686245123** (same as `getTime()` on that instant).
 
@@ -24099,9 +24099,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toISODate();
 ```
 
-<img alt="js-date-methods example 25 source" src="./code_sandbox/snaps/js-date-methods-25-code.png" />
+![js-date-methods example 25 source](./code_sandbox/snaps/js-date-methods-25-code.png)
 
-<img alt="js-date-methods example 25 result" src="./code_sandbox/snaps/js-date-methods-25-result.png" />
+![js-date-methods example 25 result](./code_sandbox/snaps/js-date-methods-25-result.png)
 
 - [x] **Outcome:** `toISODate()` is **"2021-03-25"** (UTC calendar date). Isolated to this sandbox file.
 
@@ -24119,9 +24119,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setDate(1);
 ```
 
-<img alt="js-date-methods example 26 source" src="./code_sandbox/snaps/js-date-methods-26-code.png" />
+![js-date-methods example 26 source](./code_sandbox/snaps/js-date-methods-26-code.png)
 
-<img alt="js-date-methods example 26 result" src="./code_sandbox/snaps/js-date-methods-26-result.png" />
+![js-date-methods example 26 result](./code_sandbox/snaps/js-date-methods-26-result.png)
 
 - [x] **Outcome:** After `setDate(1)`, local print is **Mon Mar 01 2021 09:30:45 GMT-0700 (Mountain Standard Time)**. ISO is **2021-03-01T16:30:45.123Z**.
 
@@ -24139,9 +24139,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setFullYear(2020);
 ```
 
-<img alt="js-date-methods example 27 source" src="./code_sandbox/snaps/js-date-methods-27-code.png" />
+![js-date-methods example 27 source](./code_sandbox/snaps/js-date-methods-27-code.png)
 
-<img alt="js-date-methods example 27 result" src="./code_sandbox/snaps/js-date-methods-27-result.png" />
+![js-date-methods example 27 result](./code_sandbox/snaps/js-date-methods-27-result.png)
 
 - [x] **Outcome:** After `setFullYear(2020)`, local print is **Wed Mar 25 2020 09:30:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2020-03-25T15:30:45.123Z**.
 
@@ -24159,9 +24159,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setHours(0);
 ```
 
-<img alt="js-date-methods example 28 source" src="./code_sandbox/snaps/js-date-methods-28-code.png" />
+![js-date-methods example 28 source](./code_sandbox/snaps/js-date-methods-28-code.png)
 
-<img alt="js-date-methods example 28 result" src="./code_sandbox/snaps/js-date-methods-28-result.png" />
+![js-date-methods example 28 result](./code_sandbox/snaps/js-date-methods-28-result.png)
 
 - [x] **Outcome:** After `setHours(0)`, local print is **Thu Mar 25 2021 00:30:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T06:30:45.123Z**.
 
@@ -24179,9 +24179,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setMilliseconds(0);
 ```
 
-<img alt="js-date-methods example 29 source" src="./code_sandbox/snaps/js-date-methods-29-code.png" />
+![js-date-methods example 29 source](./code_sandbox/snaps/js-date-methods-29-code.png)
 
-<img alt="js-date-methods example 29 result" src="./code_sandbox/snaps/js-date-methods-29-result.png" />
+![js-date-methods example 29 result](./code_sandbox/snaps/js-date-methods-29-result.png)
 
 - [x] **Outcome:** After `setMilliseconds(0)`, local print is **Thu Mar 25 2021 09:30:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T15:30:45.000Z**.
 
@@ -24199,9 +24199,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setMinutes(0);
 ```
 
-<img alt="js-date-methods example 30 source" src="./code_sandbox/snaps/js-date-methods-30-code.png" />
+![js-date-methods example 30 source](./code_sandbox/snaps/js-date-methods-30-code.png)
 
-<img alt="js-date-methods example 30 result" src="./code_sandbox/snaps/js-date-methods-30-result.png" />
+![js-date-methods example 30 result](./code_sandbox/snaps/js-date-methods-30-result.png)
 
 - [x] **Outcome:** After `setMinutes(0)`, local print is **Thu Mar 25 2021 09:00:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T15:00:45.123Z**.
 
@@ -24219,9 +24219,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setMonth(0);
 ```
 
-<img alt="js-date-methods example 31 source" src="./code_sandbox/snaps/js-date-methods-31-code.png" />
+![js-date-methods example 31 source](./code_sandbox/snaps/js-date-methods-31-code.png)
 
-<img alt="js-date-methods example 31 result" src="./code_sandbox/snaps/js-date-methods-31-result.png" />
+![js-date-methods example 31 result](./code_sandbox/snaps/js-date-methods-31-result.png)
 
 - [x] **Outcome:** After `setMonth(0)`, local print is **Mon Jan 25 2021 09:30:45 GMT-0700 (Mountain Standard Time)**. ISO is **2021-01-25T16:30:45.123Z**.
 
@@ -24239,9 +24239,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setSeconds(0);
 ```
 
-<img alt="js-date-methods example 32 source" src="./code_sandbox/snaps/js-date-methods-32-code.png" />
+![js-date-methods example 32 source](./code_sandbox/snaps/js-date-methods-32-code.png)
 
-<img alt="js-date-methods example 32 result" src="./code_sandbox/snaps/js-date-methods-32-result.png" />
+![js-date-methods example 32 result](./code_sandbox/snaps/js-date-methods-32-result.png)
 
 - [x] **Outcome:** After `setSeconds(0)`, local print is **Thu Mar 25 2021 09:30:00 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T15:30:00.123Z**.
 
@@ -24259,9 +24259,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setTime(0);
 ```
 
-<img alt="js-date-methods example 33 source" src="./code_sandbox/snaps/js-date-methods-33-code.png" />
+![js-date-methods example 33 source](./code_sandbox/snaps/js-date-methods-33-code.png)
 
-<img alt="js-date-methods example 33 result" src="./code_sandbox/snaps/js-date-methods-33-result.png" />
+![js-date-methods example 33 result](./code_sandbox/snaps/js-date-methods-33-result.png)
 
 - [x] **Outcome:** After `setTime(0)`, local print is **Wed Dec 31 1969 17:00:00 GMT-0700 (Mountain Standard Time)**. ISO is **1970-01-01T00:00:00.000Z**.
 
@@ -24279,9 +24279,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCDate(1);
 ```
 
-<img alt="js-date-methods example 34 source" src="./code_sandbox/snaps/js-date-methods-34-code.png" />
+![js-date-methods example 34 source](./code_sandbox/snaps/js-date-methods-34-code.png)
 
-<img alt="js-date-methods example 34 result" src="./code_sandbox/snaps/js-date-methods-34-result.png" />
+![js-date-methods example 34 result](./code_sandbox/snaps/js-date-methods-34-result.png)
 
 - [x] **Outcome:** After `setUTCDate(1)`, local print is **Mon Mar 01 2021 08:30:45 GMT-0700 (Mountain Standard Time)**. ISO is **2021-03-01T15:30:45.123Z**.
 
@@ -24299,9 +24299,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCFullYear(2020);
 ```
 
-<img alt="js-date-methods example 35 source" src="./code_sandbox/snaps/js-date-methods-35-code.png" />
+![js-date-methods example 35 source](./code_sandbox/snaps/js-date-methods-35-code.png)
 
-<img alt="js-date-methods example 35 result" src="./code_sandbox/snaps/js-date-methods-35-result.png" />
+![js-date-methods example 35 result](./code_sandbox/snaps/js-date-methods-35-result.png)
 
 - [x] **Outcome:** After `setUTCFullYear(2020)`, local print is **Wed Mar 25 2020 09:30:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2020-03-25T15:30:45.123Z**.
 
@@ -24319,9 +24319,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCHours(0);
 ```
 
-<img alt="js-date-methods example 36 source" src="./code_sandbox/snaps/js-date-methods-36-code.png" />
+![js-date-methods example 36 source](./code_sandbox/snaps/js-date-methods-36-code.png)
 
-<img alt="js-date-methods example 36 result" src="./code_sandbox/snaps/js-date-methods-36-result.png" />
+![js-date-methods example 36 result](./code_sandbox/snaps/js-date-methods-36-result.png)
 
 - [x] **Outcome:** After `setUTCHours(0)`, local print is **Wed Mar 24 2021 18:30:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T00:30:45.123Z**.
 
@@ -24339,9 +24339,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCMilliseconds(0);
 ```
 
-<img alt="js-date-methods example 37 source" src="./code_sandbox/snaps/js-date-methods-37-code.png" />
+![js-date-methods example 37 source](./code_sandbox/snaps/js-date-methods-37-code.png)
 
-<img alt="js-date-methods example 37 result" src="./code_sandbox/snaps/js-date-methods-37-result.png" />
+![js-date-methods example 37 result](./code_sandbox/snaps/js-date-methods-37-result.png)
 
 - [x] **Outcome:** After `setUTCMilliseconds(0)`, local print is **Thu Mar 25 2021 09:30:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T15:30:45.000Z**.
 
@@ -24359,9 +24359,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCMinutes(0);
 ```
 
-<img alt="js-date-methods example 38 source" src="./code_sandbox/snaps/js-date-methods-38-code.png" />
+![js-date-methods example 38 source](./code_sandbox/snaps/js-date-methods-38-code.png)
 
-<img alt="js-date-methods example 38 result" src="./code_sandbox/snaps/js-date-methods-38-result.png" />
+![js-date-methods example 38 result](./code_sandbox/snaps/js-date-methods-38-result.png)
 
 - [x] **Outcome:** After `setUTCMinutes(0)`, local print is **Thu Mar 25 2021 09:00:45 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T15:00:45.123Z**.
 
@@ -24379,9 +24379,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCMonth(0);
 ```
 
-<img alt="js-date-methods example 39 source" src="./code_sandbox/snaps/js-date-methods-39-code.png" />
+![js-date-methods example 39 source](./code_sandbox/snaps/js-date-methods-39-code.png)
 
-<img alt="js-date-methods example 39 result" src="./code_sandbox/snaps/js-date-methods-39-result.png" />
+![js-date-methods example 39 result](./code_sandbox/snaps/js-date-methods-39-result.png)
 
 - [x] **Outcome:** After `setUTCMonth(0)`, local print is **Mon Jan 25 2021 08:30:45 GMT-0700 (Mountain Standard Time)**. ISO is **2021-01-25T15:30:45.123Z**.
 
@@ -24399,9 +24399,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setUTCSeconds(0);
 ```
 
-<img alt="js-date-methods example 40 source" src="./code_sandbox/snaps/js-date-methods-40-code.png" />
+![js-date-methods example 40 source](./code_sandbox/snaps/js-date-methods-40-code.png)
 
-<img alt="js-date-methods example 40 result" src="./code_sandbox/snaps/js-date-methods-40-result.png" />
+![js-date-methods example 40 result](./code_sandbox/snaps/js-date-methods-40-result.png)
 
 - [x] **Outcome:** After `setUTCSeconds(0)`, local print is **Thu Mar 25 2021 09:30:00 GMT-0600 (Mountain Daylight Time)**. ISO is **2021-03-25T15:30:00.123Z**.
 
@@ -24418,9 +24418,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.setYear(99);
 ```
 
-<img alt="js-date-methods example 41 source" src="./code_sandbox/snaps/js-date-methods-41-code.png" />
+![js-date-methods example 41 source](./code_sandbox/snaps/js-date-methods-41-code.png)
 
-<img alt="js-date-methods example 41 result" src="./code_sandbox/snaps/js-date-methods-41-result.png" />
+![js-date-methods example 41 result](./code_sandbox/snaps/js-date-methods-41-result.png)
 
 - [x] **Outcome:** After `setYear(99)`, local print is **Thu Mar 25 1999 09:30:45 GMT-0700**. `getFullYear()` is **1999**. Do **not** use `setYear()`.
 
@@ -24437,9 +24437,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toDateString();
 ```
 
-<img alt="js-date-methods example 42 source" src="./code_sandbox/snaps/js-date-methods-42-code.png" />
+![js-date-methods example 42 source](./code_sandbox/snaps/js-date-methods-42-code.png)
 
-<img alt="js-date-methods example 42 result" src="./code_sandbox/snaps/js-date-methods-42-result.png" />
+![js-date-methods example 42 result](./code_sandbox/snaps/js-date-methods-42-result.png)
 
 - [x] **Outcome:** `toDateString()` is **"Thu Mar 25 2021"**.
 
@@ -24457,9 +24457,9 @@ d.toGMTString();
 d.toUTCString();
 ```
 
-<img alt="js-date-methods example 43 source" src="./code_sandbox/snaps/js-date-methods-43-code.png" />
+![js-date-methods example 43 source](./code_sandbox/snaps/js-date-methods-43-code.png)
 
-<img alt="js-date-methods example 43 result" src="./code_sandbox/snaps/js-date-methods-43-result.png" />
+![js-date-methods example 43 result](./code_sandbox/snaps/js-date-methods-43-result.png)
 
 - [x] **Outcome:** Both print **"Thu, 25 Mar 2021 15:30:45 GMT"**. Do **not** use `toGMTString()`.
 
@@ -24476,9 +24476,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toISOString();
 ```
 
-<img alt="js-date-methods example 44 source" src="./code_sandbox/snaps/js-date-methods-44-code.png" />
+![js-date-methods example 44 source](./code_sandbox/snaps/js-date-methods-44-code.png)
 
-<img alt="js-date-methods example 44 result" src="./code_sandbox/snaps/js-date-methods-44-result.png" />
+![js-date-methods example 44 result](./code_sandbox/snaps/js-date-methods-44-result.png)
 
 - [x] **Outcome:** `toISOString()` is **"2021-03-25T15:30:45.123Z"**.
 
@@ -24496,9 +24496,9 @@ d.toJSON();
 JSON.stringify({ when: d });
 ```
 
-<img alt="js-date-methods example 45 source" src="./code_sandbox/snaps/js-date-methods-45-code.png" />
+![js-date-methods example 45 source](./code_sandbox/snaps/js-date-methods-45-code.png)
 
-<img alt="js-date-methods example 45 result" src="./code_sandbox/snaps/js-date-methods-45-result.png" />
+![js-date-methods example 45 result](./code_sandbox/snaps/js-date-methods-45-result.png)
 
 - [x] **Outcome:** `toJSON()` is **"2021-03-25T15:30:45.123Z"**. `JSON.stringify` uses that string.
 
@@ -24515,9 +24515,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toLocaleDateString();
 ```
 
-<img alt="js-date-methods example 46 source" src="./code_sandbox/snaps/js-date-methods-46-code.png" />
+![js-date-methods example 46 source](./code_sandbox/snaps/js-date-methods-46-code.png)
 
-<img alt="js-date-methods example 46 result" src="./code_sandbox/snaps/js-date-methods-46-result.png" />
+![js-date-methods example 46 result](./code_sandbox/snaps/js-date-methods-46-result.png)
 
 - [x] **Outcome:** The snap shows this browser's **locale date** for the same instant (local **March 25, 2021** — not a hardcoded fake).
 
@@ -24534,9 +24534,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toLocaleTimeString();
 ```
 
-<img alt="js-date-methods example 47 source" src="./code_sandbox/snaps/js-date-methods-47-code.png" />
+![js-date-methods example 47 source](./code_sandbox/snaps/js-date-methods-47-code.png)
 
-<img alt="js-date-methods example 47 result" src="./code_sandbox/snaps/js-date-methods-47-result.png" />
+![js-date-methods example 47 result](./code_sandbox/snaps/js-date-methods-47-result.png)
 
 - [x] **Outcome:** The snap shows this browser's **locale time** for **09:30:45** Mountain on that instant.
 
@@ -24553,9 +24553,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toLocaleString();
 ```
 
-<img alt="js-date-methods example 48 source" src="./code_sandbox/snaps/js-date-methods-48-code.png" />
+![js-date-methods example 48 source](./code_sandbox/snaps/js-date-methods-48-code.png)
 
-<img alt="js-date-methods example 48 result" src="./code_sandbox/snaps/js-date-methods-48-result.png" />
+![js-date-methods example 48 result](./code_sandbox/snaps/js-date-methods-48-result.png)
 
 - [x] **Outcome:** The snap shows this browser's **locale date+time** for the same instant.
 
@@ -24572,9 +24572,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toString();
 ```
 
-<img alt="js-date-methods example 49 source" src="./code_sandbox/snaps/js-date-methods-49-code.png" />
+![js-date-methods example 49 source](./code_sandbox/snaps/js-date-methods-49-code.png)
 
-<img alt="js-date-methods example 49 result" src="./code_sandbox/snaps/js-date-methods-49-result.png" />
+![js-date-methods example 49 result](./code_sandbox/snaps/js-date-methods-49-result.png)
 
 - [x] **Outcome:** `toString()` is **"Thu Mar 25 2021 09:30:45 GMT-0600 (Mountain Daylight Time)"**.
 
@@ -24591,9 +24591,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toTimeString();
 ```
 
-<img alt="js-date-methods example 50 source" src="./code_sandbox/snaps/js-date-methods-50-code.png" />
+![js-date-methods example 50 source](./code_sandbox/snaps/js-date-methods-50-code.png)
 
-<img alt="js-date-methods example 50 result" src="./code_sandbox/snaps/js-date-methods-50-result.png" />
+![js-date-methods example 50 result](./code_sandbox/snaps/js-date-methods-50-result.png)
 
 - [x] **Outcome:** `toTimeString()` is **"09:30:45 GMT-0600 (Mountain Daylight Time)"**.
 
@@ -24610,9 +24610,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toUTCString();
 ```
 
-<img alt="js-date-methods example 51 source" src="./code_sandbox/snaps/js-date-methods-51-code.png" />
+![js-date-methods example 51 source](./code_sandbox/snaps/js-date-methods-51-code.png)
 
-<img alt="js-date-methods example 51 result" src="./code_sandbox/snaps/js-date-methods-51-result.png" />
+![js-date-methods example 51 result](./code_sandbox/snaps/js-date-methods-51-result.png)
 
 - [x] **Outcome:** `toUTCString()` is **"Thu, 25 Mar 2021 15:30:45 GMT"**.
 
@@ -24630,9 +24630,9 @@ let ms = Date.UTC(2021, 2, 25, 15, 30, 45, 123);
 const d = new Date(ms);
 ```
 
-<img alt="js-date-methods example 52 source" src="./code_sandbox/snaps/js-date-methods-52-code.png" />
+![js-date-methods example 52 source](./code_sandbox/snaps/js-date-methods-52-code.png)
 
-<img alt="js-date-methods example 52 result" src="./code_sandbox/snaps/js-date-methods-52-result.png" />
+![js-date-methods example 52 result](./code_sandbox/snaps/js-date-methods-52-result.png)
 
 - [x] **Outcome:** `Date.UTC(2021, 2, 25, 15, 30, 45, 123)` is **1616686245123**. ISO is **2021-03-25T15:30:45.123Z**.
 
@@ -24650,9 +24650,9 @@ d.valueOf();
 d.getTime();
 ```
 
-<img alt="js-date-methods example 53 source" src="./code_sandbox/snaps/js-date-methods-53-code.png" />
+![js-date-methods example 53 source](./code_sandbox/snaps/js-date-methods-53-code.png)
 
-<img alt="js-date-methods example 53 result" src="./code_sandbox/snaps/js-date-methods-53-result.png" />
+![js-date-methods example 53 result](./code_sandbox/snaps/js-date-methods-53-result.png)
 
 - [x] **Outcome:** Both are **1616686245123**.
 
@@ -24858,9 +24858,9 @@ Sandbox: `code_sandbox/js-arrays/literal-cars.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-arrays example 1 source" src="./code_sandbox/snaps/js-arrays-01-code.png" />
+![js-arrays example 1 source](./code_sandbox/snaps/js-arrays-01-code.png)
 
-<img alt="js-arrays example 1 result" src="./code_sandbox/snaps/js-arrays-01-result.png" />
+![js-arrays example 1 result](./code_sandbox/snaps/js-arrays-01-result.png)
 
 - [x] **Outcome:** cars is **["Saab","Volvo","BMW"]**. The hero Tryit and the “Creating an Array” Tryit are the same snippet — shown once.
 
@@ -24880,9 +24880,9 @@ const cars = [
 ];
 ```
 
-<img alt="js-arrays example 2 source" src="./code_sandbox/snaps/js-arrays-02-code.png" />
+![js-arrays example 2 source](./code_sandbox/snaps/js-arrays-02-code.png)
 
-<img alt="js-arrays example 2 result" src="./code_sandbox/snaps/js-arrays-02-result.png" />
+![js-arrays example 2 result](./code_sandbox/snaps/js-arrays-02-result.png)
 
 - [x] **Outcome:** Same value: **["Saab","Volvo","BMW"]**.
 
@@ -24901,9 +24901,9 @@ cars[1] = "Volvo";
 cars[2] = "BMW";
 ```
 
-<img alt="js-arrays example 3 source" src="./code_sandbox/snaps/js-arrays-03-code.png" />
+![js-arrays example 3 source](./code_sandbox/snaps/js-arrays-03-code.png)
 
-<img alt="js-arrays example 3 result" src="./code_sandbox/snaps/js-arrays-03-result.png" />
+![js-arrays example 3 result](./code_sandbox/snaps/js-arrays-03-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -24920,9 +24920,9 @@ Sandbox: `code_sandbox/js-arrays/new-array-cars.html`
 const cars = new Array("Saab", "Volvo", "BMW");
 ```
 
-<img alt="js-arrays example 4 source" src="./code_sandbox/snaps/js-arrays-04-code.png" />
+![js-arrays example 4 source](./code_sandbox/snaps/js-arrays-04-code.png)
 
-<img alt="js-arrays example 4 result" src="./code_sandbox/snaps/js-arrays-04-result.png" />
+![js-arrays example 4 result](./code_sandbox/snaps/js-arrays-04-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]** — same as the literal.
 
@@ -24939,9 +24939,9 @@ const cars = ["Saab", "Volvo", "BMW"];
 let car = cars[0];
 ```
 
-<img alt="js-arrays example 5 source" src="./code_sandbox/snaps/js-arrays-05-code.png" />
+![js-arrays example 5 source](./code_sandbox/snaps/js-arrays-05-code.png)
 
-<img alt="js-arrays example 5 result" src="./code_sandbox/snaps/js-arrays-05-result.png" />
+![js-arrays example 5 result](./code_sandbox/snaps/js-arrays-05-result.png)
 
 - [x] **Outcome:** car is **"Saab"**.
 
@@ -24958,9 +24958,9 @@ const cars = ["Saab", "Volvo", "BMW"];
 cars[0] = "Opel";
 ```
 
-<img alt="js-arrays example 6 source" src="./code_sandbox/snaps/js-arrays-06-code.png" />
+![js-arrays example 6 source](./code_sandbox/snaps/js-arrays-06-code.png)
 
-<img alt="js-arrays example 6 result" src="./code_sandbox/snaps/js-arrays-06-result.png" />
+![js-arrays example 6 result](./code_sandbox/snaps/js-arrays-06-result.png)
 
 - [x] **Outcome:** **["Opel","Volvo","BMW"]**.
 
@@ -24977,9 +24977,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.toString();
 ```
 
-<img alt="js-arrays example 7 source" src="./code_sandbox/snaps/js-arrays-07-code.png" />
+![js-arrays example 7 source](./code_sandbox/snaps/js-arrays-07-code.png)
 
-<img alt="js-arrays example 7 result" src="./code_sandbox/snaps/js-arrays-07-result.png" />
+![js-arrays example 7 result](./code_sandbox/snaps/js-arrays-07-result.png)
 
 - [x] **Outcome:** **Banana,Orange,Apple,Mango**.
 
@@ -24996,9 +24996,9 @@ const cars = ["Saab", "Volvo", "BMW"];
 let text = String(cars);
 ```
 
-<img alt="js-arrays example 8 source" src="./code_sandbox/snaps/js-arrays-08-code.png" />
+![js-arrays example 8 source](./code_sandbox/snaps/js-arrays-08-code.png)
 
-<img alt="js-arrays example 8 result" src="./code_sandbox/snaps/js-arrays-08-result.png" />
+![js-arrays example 8 result](./code_sandbox/snaps/js-arrays-08-result.png)
 
 - [x] **Outcome:** **Saab,Volvo,BMW**.
 
@@ -25015,9 +25015,9 @@ const cars = ["Saab", "Volvo", "BMW"];
 let text = JSON.stringify(cars);
 ```
 
-<img alt="js-arrays example 9 source" src="./code_sandbox/snaps/js-arrays-09-code.png" />
+![js-arrays example 9 source](./code_sandbox/snaps/js-arrays-09-code.png)
 
-<img alt="js-arrays example 9 result" src="./code_sandbox/snaps/js-arrays-09-result.png" />
+![js-arrays example 9 result](./code_sandbox/snaps/js-arrays-09-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -25033,9 +25033,9 @@ Sandbox: `code_sandbox/js-arrays/array-numbered-person.html`
 const person = ["John", "Doe", 46];
 ```
 
-<img alt="js-arrays example 10 source" src="./code_sandbox/snaps/js-arrays-10-code.png" />
+![js-arrays example 10 source](./code_sandbox/snaps/js-arrays-10-code.png)
 
-<img alt="js-arrays example 10 result" src="./code_sandbox/snaps/js-arrays-10-result.png" />
+![js-arrays example 10 result](./code_sandbox/snaps/js-arrays-10-result.png)
 
 - [x] **Outcome:** **["John","Doe",46]**. `person[0]` is **"John"**.
 
@@ -25051,9 +25051,9 @@ Sandbox: `code_sandbox/js-arrays/object-named-person.html`
 const person = {firstName:"John", lastName:"Doe", age:46};
 ```
 
-<img alt="js-arrays example 11 source" src="./code_sandbox/snaps/js-arrays-11-code.png" />
+![js-arrays example 11 source](./code_sandbox/snaps/js-arrays-11-code.png)
 
-<img alt="js-arrays example 11 result" src="./code_sandbox/snaps/js-arrays-11-result.png" />
+![js-arrays example 11 result](./code_sandbox/snaps/js-arrays-11-result.png)
 
 - [x] **Outcome:** `firstName` is **"John"**.
 
@@ -25077,9 +25077,9 @@ myArray[1] = myFunction;
 myArray[2] = myCars;
 ```
 
-<img alt="js-arrays example 12 source" src="./code_sandbox/snaps/js-arrays-12-code.png" />
+![js-arrays example 12 source](./code_sandbox/snaps/js-arrays-12-code.png)
 
-<img alt="js-arrays example 12 result" src="./code_sandbox/snaps/js-arrays-12-result.png" />
+![js-arrays example 12 result](./code_sandbox/snaps/js-arrays-12-result.png)
 
 - [x] **Outcome:** `Date.now` is a **function**. `myArray[1]()` is **"hello"**. Nested cars are **["Saab","Volvo"]**.
 
@@ -25096,9 +25096,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let length = fruits.length;
 ```
 
-<img alt="js-arrays example 13 source" src="./code_sandbox/snaps/js-arrays-13-code.png" />
+![js-arrays example 13 source](./code_sandbox/snaps/js-arrays-13-code.png)
 
-<img alt="js-arrays example 13 result" src="./code_sandbox/snaps/js-arrays-13-result.png" />
+![js-arrays example 13 result](./code_sandbox/snaps/js-arrays-13-result.png)
 
 - [x] **Outcome:** **4**.
 
@@ -25115,9 +25115,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits[0];
 ```
 
-<img alt="js-arrays example 14 source" src="./code_sandbox/snaps/js-arrays-14-code.png" />
+![js-arrays example 14 source](./code_sandbox/snaps/js-arrays-14-code.png)
 
-<img alt="js-arrays example 14 result" src="./code_sandbox/snaps/js-arrays-14-result.png" />
+![js-arrays example 14 result](./code_sandbox/snaps/js-arrays-14-result.png)
 
 - [x] **Outcome:** **Banana**.
 
@@ -25134,9 +25134,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits[fruits.length - 1];
 ```
 
-<img alt="js-arrays example 15 source" src="./code_sandbox/snaps/js-arrays-15-code.png" />
+![js-arrays example 15 source](./code_sandbox/snaps/js-arrays-15-code.png)
 
-<img alt="js-arrays example 15 result" src="./code_sandbox/snaps/js-arrays-15-result.png" />
+![js-arrays example 15 result](./code_sandbox/snaps/js-arrays-15-result.png)
 
 - [x] **Outcome:** **Mango**.
 
@@ -25157,9 +25157,9 @@ for (let i = 0; i < fLen; i++) {
 }
 ```
 
-<img alt="js-arrays example 16 source" src="./code_sandbox/snaps/js-arrays-16-code.png" />
+![js-arrays example 16 source](./code_sandbox/snaps/js-arrays-16-code.png)
 
-<img alt="js-arrays example 16 result" src="./code_sandbox/snaps/js-arrays-16-result.png" />
+![js-arrays example 16 result](./code_sandbox/snaps/js-arrays-16-result.png)
 
 - [x] **Outcome:** **Banana, Orange, Apple, Mango**.
 
@@ -25180,9 +25180,9 @@ function myFunction(value) {
 }
 ```
 
-<img alt="js-arrays example 17 source" src="./code_sandbox/snaps/js-arrays-17-code.png" />
+![js-arrays example 17 source](./code_sandbox/snaps/js-arrays-17-code.png)
 
-<img alt="js-arrays example 17 result" src="./code_sandbox/snaps/js-arrays-17-result.png" />
+![js-arrays example 17 result](./code_sandbox/snaps/js-arrays-17-result.png)
 
 - [x] **Outcome:** **Banana Orange Apple Mango** (trailing space from the callback).
 
@@ -25199,9 +25199,9 @@ const fruits = ["Banana", "Orange", "Apple"];
 fruits.push("Lemon");
 ```
 
-<img alt="js-arrays example 18 source" src="./code_sandbox/snaps/js-arrays-18-code.png" />
+![js-arrays example 18 source](./code_sandbox/snaps/js-arrays-18-code.png)
 
-<img alt="js-arrays example 18 result" src="./code_sandbox/snaps/js-arrays-18-result.png" />
+![js-arrays example 18 result](./code_sandbox/snaps/js-arrays-18-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Apple","Lemon"]**.
 
@@ -25218,9 +25218,9 @@ const fruits = ["Banana", "Orange", "Apple"];
 fruits[fruits.length] = "Lemon";
 ```
 
-<img alt="js-arrays example 19 source" src="./code_sandbox/snaps/js-arrays-19-code.png" />
+![js-arrays example 19 source](./code_sandbox/snaps/js-arrays-19-code.png)
 
-<img alt="js-arrays example 19 result" src="./code_sandbox/snaps/js-arrays-19-result.png" />
+![js-arrays example 19 result](./code_sandbox/snaps/js-arrays-19-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Apple","Lemon"]**.
 
@@ -25238,9 +25238,9 @@ const fruits = ["Banana", "Orange", "Apple"];
 fruits[6] = "Lemon";
 ```
 
-<img alt="js-arrays example 20 source" src="./code_sandbox/snaps/js-arrays-20-code.png" />
+![js-arrays example 20 source](./code_sandbox/snaps/js-arrays-20-code.png)
 
-<img alt="js-arrays example 20 result" src="./code_sandbox/snaps/js-arrays-20-result.png" />
+![js-arrays example 20 result](./code_sandbox/snaps/js-arrays-20-result.png)
 
 - [x] **Outcome:** JSON **["Banana","Orange","Apple",null,null,null,"Lemon"]**. length **7**. `fruits[3]` is **undefined**. `3 in fruits` is **false**.
 
@@ -25259,9 +25259,9 @@ person[1] = "Doe";
 person[2] = 46;
 ```
 
-<img alt="js-arrays example 21 source" src="./code_sandbox/snaps/js-arrays-21-code.png" />
+![js-arrays example 21 source](./code_sandbox/snaps/js-arrays-21-code.png)
 
-<img alt="js-arrays example 21 result" src="./code_sandbox/snaps/js-arrays-21-result.png" />
+![js-arrays example 21 result](./code_sandbox/snaps/js-arrays-21-result.png)
 
 - [x] **Outcome:** length **3**. `person[0]` is **"John"**.
 
@@ -25281,9 +25281,9 @@ person["lastName"] = "Doe";
 person["age"] = 46;
 ```
 
-<img alt="js-arrays example 22 source" src="./code_sandbox/snaps/js-arrays-22-code.png" />
+![js-arrays example 22 source](./code_sandbox/snaps/js-arrays-22-code.png)
 
-<img alt="js-arrays example 22 result" src="./code_sandbox/snaps/js-arrays-22-result.png" />
+![js-arrays example 22 result](./code_sandbox/snaps/js-arrays-22-result.png)
 
 - [x] **Outcome:** length **0**. `person[0]` is **undefined**. `firstName` is **"John"**. It is still an Array object, but **not** a list of elements.
 
@@ -25300,9 +25300,9 @@ const a = new Array(40, 100, 1, 5, 25, 10);
 const b = [40, 100, 1, 5, 25, 10];
 ```
 
-<img alt="js-arrays example 23 source" src="./code_sandbox/snaps/js-arrays-23-code.png" />
+![js-arrays example 23 source](./code_sandbox/snaps/js-arrays-23-code.png)
 
-<img alt="js-arrays example 23 result" src="./code_sandbox/snaps/js-arrays-23-result.png" />
+![js-arrays example 23 result](./code_sandbox/snaps/js-arrays-23-result.png)
 
 - [x] **Outcome:** Both are **[40,100,1,5,25,10]**.
 
@@ -25319,9 +25319,9 @@ const fruits = ["Banana", "Orange", "Apple"];
 let type = typeof fruits;
 ```
 
-<img alt="js-arrays example 24 source" src="./code_sandbox/snaps/js-arrays-24-code.png" />
+![js-arrays example 24 source](./code_sandbox/snaps/js-arrays-24-code.png)
 
-<img alt="js-arrays example 24 result" src="./code_sandbox/snaps/js-arrays-24-result.png" />
+![js-arrays example 24 result](./code_sandbox/snaps/js-arrays-24-result.png)
 
 - [x] **Outcome:** **object**.
 
@@ -25338,9 +25338,9 @@ const fruits = ["Banana", "Orange", "Apple"];
 Array.isArray(fruits);
 ```
 
-<img alt="js-arrays example 25 source" src="./code_sandbox/snaps/js-arrays-25-code.png" />
+![js-arrays example 25 source](./code_sandbox/snaps/js-arrays-25-code.png)
 
-<img alt="js-arrays example 25 result" src="./code_sandbox/snaps/js-arrays-25-result.png" />
+![js-arrays example 25 result](./code_sandbox/snaps/js-arrays-25-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -25357,9 +25357,9 @@ const fruits = ["Banana", "Orange", "Apple"];
 fruits instanceof Array;
 ```
 
-<img alt="js-arrays example 26 source" src="./code_sandbox/snaps/js-arrays-26-code.png" />
+![js-arrays example 26 source](./code_sandbox/snaps/js-arrays-26-code.png)
 
-<img alt="js-arrays example 26 result" src="./code_sandbox/snaps/js-arrays-26-result.png" />
+![js-arrays example 26 result](./code_sandbox/snaps/js-arrays-26-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -25391,9 +25391,9 @@ for (let i in myObj.cars) {
 }
 ```
 
-<img alt="js-arrays example 27 source" src="./code_sandbox/snaps/js-arrays-27-code.png" />
+![js-arrays example 27 source](./code_sandbox/snaps/js-arrays-27-code.png)
 
-<img alt="js-arrays example 27 result" src="./code_sandbox/snaps/js-arrays-27-result.png" />
+![js-arrays example 27 result](./code_sandbox/snaps/js-arrays-27-result.png)
 
 - [x] **Outcome:** **Ford: Fiesta Focus Mustang BMW: 320 X3 X5 Fiat: 500 Panda** (trailing spaces).
 
@@ -25588,9 +25588,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-empty.html`
 const a = new Array();
 ```
 
-<img alt="js-array-constructor example 1 source" src="./code_sandbox/snaps/js-array-constructor-01-code.png" />
+![js-array-constructor example 1 source](./code_sandbox/snaps/js-array-constructor-01-code.png)
 
-<img alt="js-array-constructor example 1 result" src="./code_sandbox/snaps/js-array-constructor-01-result.png" />
+![js-array-constructor example 1 result](./code_sandbox/snaps/js-array-constructor-01-result.png)
 
 - [x] **Outcome:** **[]**. length **0**.
 
@@ -25607,9 +25607,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-3.html`
 const a = new Array(3);
 ```
 
-<img alt="js-array-constructor example 2 source" src="./code_sandbox/snaps/js-array-constructor-02-code.png" />
+![js-array-constructor example 2 source](./code_sandbox/snaps/js-array-constructor-02-code.png)
 
-<img alt="js-array-constructor example 2 result" src="./code_sandbox/snaps/js-array-constructor-02-result.png" />
+![js-array-constructor example 2 result](./code_sandbox/snaps/js-array-constructor-02-result.png)
 
 - [x] **Outcome:** JSON **[null,null,null]**. length **3**. `0 in a` is **false** (empty slots, not nulls).
 
@@ -25625,9 +25625,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-string-3.html`
 const a = new Array("3");
 ```
 
-<img alt="js-array-constructor example 3 source" src="./code_sandbox/snaps/js-array-constructor-03-code.png" />
+![js-array-constructor example 3 source](./code_sandbox/snaps/js-array-constructor-03-code.png)
 
-<img alt="js-array-constructor example 3 result" src="./code_sandbox/snaps/js-array-constructor-03-result.png" />
+![js-array-constructor example 3 result](./code_sandbox/snaps/js-array-constructor-03-result.png)
 
 - [x] **Outcome:** **["3"]**. length **1**.
 
@@ -25643,9 +25643,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-three-cars.html`
 const a = new Array("Saab", "Volvo", "BMW");
 ```
 
-<img alt="js-array-constructor example 4 source" src="./code_sandbox/snaps/js-array-constructor-04-code.png" />
+![js-array-constructor example 4 source](./code_sandbox/snaps/js-array-constructor-04-code.png)
 
-<img alt="js-array-constructor example 4 result" src="./code_sandbox/snaps/js-array-constructor-04-result.png" />
+![js-array-constructor example 4 result](./code_sandbox/snaps/js-array-constructor-04-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -25662,9 +25662,9 @@ Sandbox: `code_sandbox/js-array-constructor/array-fn-empty.html`
 const a = Array();
 ```
 
-<img alt="js-array-constructor example 5 source" src="./code_sandbox/snaps/js-array-constructor-05-code.png" />
+![js-array-constructor example 5 source](./code_sandbox/snaps/js-array-constructor-05-code.png)
 
-<img alt="js-array-constructor example 5 result" src="./code_sandbox/snaps/js-array-constructor-05-result.png" />
+![js-array-constructor example 5 result](./code_sandbox/snaps/js-array-constructor-05-result.png)
 
 - [x] **Outcome:** **[]**. length **0**.
 
@@ -25680,9 +25680,9 @@ Sandbox: `code_sandbox/js-array-constructor/array-fn-3.html`
 const a = Array(3);
 ```
 
-<img alt="js-array-constructor example 6 source" src="./code_sandbox/snaps/js-array-constructor-06-code.png" />
+![js-array-constructor example 6 source](./code_sandbox/snaps/js-array-constructor-06-code.png)
 
-<img alt="js-array-constructor example 6 result" src="./code_sandbox/snaps/js-array-constructor-06-result.png" />
+![js-array-constructor example 6 result](./code_sandbox/snaps/js-array-constructor-06-result.png)
 
 - [x] **Outcome:** JSON **[null,null,null]**. length **3**. `0 in a` is **false**.
 
@@ -25698,9 +25698,9 @@ Sandbox: `code_sandbox/js-array-constructor/array-fn-string-3.html`
 const a = Array("3");
 ```
 
-<img alt="js-array-constructor example 7 source" src="./code_sandbox/snaps/js-array-constructor-07-code.png" />
+![js-array-constructor example 7 source](./code_sandbox/snaps/js-array-constructor-07-code.png)
 
-<img alt="js-array-constructor example 7 result" src="./code_sandbox/snaps/js-array-constructor-07-result.png" />
+![js-array-constructor example 7 result](./code_sandbox/snaps/js-array-constructor-07-result.png)
 
 - [x] **Outcome:** **["3"]**.
 
@@ -25716,9 +25716,9 @@ Sandbox: `code_sandbox/js-array-constructor/array-fn-three-cars.html`
 const a = Array("Saab", "Volvo", "BMW");
 ```
 
-<img alt="js-array-constructor example 8 source" src="./code_sandbox/snaps/js-array-constructor-08-code.png" />
+![js-array-constructor example 8 source](./code_sandbox/snaps/js-array-constructor-08-code.png)
 
-<img alt="js-array-constructor example 8 result" src="./code_sandbox/snaps/js-array-constructor-08-result.png" />
+![js-array-constructor example 8 result](./code_sandbox/snaps/js-array-constructor-08-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -25735,9 +25735,9 @@ const a = new Array(40, 100, 1, 5, 25, 10);
 const b = [40, 100, 1, 5, 25, 10];
 ```
 
-<img alt="js-array-constructor example 9 source" src="./code_sandbox/snaps/js-array-constructor-09-code.png" />
+![js-array-constructor example 9 source](./code_sandbox/snaps/js-array-constructor-09-code.png)
 
-<img alt="js-array-constructor example 9 result" src="./code_sandbox/snaps/js-array-constructor-09-result.png" />
+![js-array-constructor example 9 result](./code_sandbox/snaps/js-array-constructor-09-result.png)
 
 - [x] **Outcome:** Both **[40,100,1,5,25,10]**.
 
@@ -25753,9 +25753,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-three-nums.html`
 const points = new Array(40, 100, 1);
 ```
 
-<img alt="js-array-constructor example 10 source" src="./code_sandbox/snaps/js-array-constructor-10-code.png" />
+![js-array-constructor example 10 source](./code_sandbox/snaps/js-array-constructor-10-code.png)
 
-<img alt="js-array-constructor example 10 result" src="./code_sandbox/snaps/js-array-constructor-10-result.png" />
+![js-array-constructor example 10 result](./code_sandbox/snaps/js-array-constructor-10-result.png)
 
 - [x] **Outcome:** **[40,100,1]**. length **3**.
 
@@ -25771,9 +25771,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-two-nums.html`
 const points = new Array(40, 100);
 ```
 
-<img alt="js-array-constructor example 11 source" src="./code_sandbox/snaps/js-array-constructor-11-code.png" />
+![js-array-constructor example 11 source](./code_sandbox/snaps/js-array-constructor-11-code.png)
 
-<img alt="js-array-constructor example 11 result" src="./code_sandbox/snaps/js-array-constructor-11-result.png" />
+![js-array-constructor example 11 result](./code_sandbox/snaps/js-array-constructor-11-result.png)
 
 - [x] **Outcome:** **[40,100]**. length **2**.
 
@@ -25790,9 +25790,9 @@ Sandbox: `code_sandbox/js-array-constructor/new-array-40-trap.html`
 const points = new Array(40);
 ```
 
-<img alt="js-array-constructor example 12 source" src="./code_sandbox/snaps/js-array-constructor-12-code.png" />
+![js-array-constructor example 12 source](./code_sandbox/snaps/js-array-constructor-12-code.png)
 
-<img alt="js-array-constructor example 12 result" src="./code_sandbox/snaps/js-array-constructor-12-result.png" />
+![js-array-constructor example 12 result](./code_sandbox/snaps/js-array-constructor-12-result.png)
 
 - [x] **Outcome:** length **40**. `0 in points` is **false**. `points[0]` is **undefined**.
 
@@ -25808,9 +25808,9 @@ Sandbox: `code_sandbox/js-array-constructor/literal-40.html`
 const points = [40];
 ```
 
-<img alt="js-array-constructor example 13 source" src="./code_sandbox/snaps/js-array-constructor-13-code.png" />
+![js-array-constructor example 13 source](./code_sandbox/snaps/js-array-constructor-13-code.png)
 
-<img alt="js-array-constructor example 13 result" src="./code_sandbox/snaps/js-array-constructor-13-result.png" />
+![js-array-constructor example 13 result](./code_sandbox/snaps/js-array-constructor-13-result.png)
 
 - [x] **Outcome:** **[40]**. length **1**.
 
@@ -25826,9 +25826,9 @@ Sandbox: `code_sandbox/js-array-constructor/literal-preferred.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-array-constructor example 14 source" src="./code_sandbox/snaps/js-array-constructor-14-code.png" />
+![js-array-constructor example 14 source](./code_sandbox/snaps/js-array-constructor-14-code.png)
 
-<img alt="js-array-constructor example 14 result" src="./code_sandbox/snaps/js-array-constructor-14-result.png" />
+![js-array-constructor example 14 result](./code_sandbox/snaps/js-array-constructor-14-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -26024,9 +26024,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let size = fruits.length;
 ```
 
-<img alt="js-array-methods example 1 source" src="./code_sandbox/snaps/js-array-methods-01-code.png" />
+![js-array-methods example 1 source](./code_sandbox/snaps/js-array-methods-01-code.png)
 
-<img alt="js-array-methods example 1 result" src="./code_sandbox/snaps/js-array-methods-01-result.png" />
+![js-array-methods example 1 result](./code_sandbox/snaps/js-array-methods-01-result.png)
 
 - [x] **Outcome:** **4**.
 
@@ -26043,9 +26043,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.length = 2;
 ```
 
-<img alt="js-array-methods example 2 source" src="./code_sandbox/snaps/js-array-methods-02-code.png" />
+![js-array-methods example 2 source](./code_sandbox/snaps/js-array-methods-02-code.png)
 
-<img alt="js-array-methods example 2 result" src="./code_sandbox/snaps/js-array-methods-02-result.png" />
+![js-array-methods example 2 result](./code_sandbox/snaps/js-array-methods-02-result.png)
 
 - [x] **Outcome:** **["Banana","Orange"]**.
 
@@ -26062,9 +26062,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let myList = fruits.toString();
 ```
 
-<img alt="js-array-methods example 3 source" src="./code_sandbox/snaps/js-array-methods-03-code.png" />
+![js-array-methods example 3 source](./code_sandbox/snaps/js-array-methods-03-code.png)
 
-<img alt="js-array-methods example 3 result" src="./code_sandbox/snaps/js-array-methods-03-result.png" />
+![js-array-methods example 3 result](./code_sandbox/snaps/js-array-methods-03-result.png)
 
 - [x] **Outcome:** **Banana,Orange,Apple,Mango**.
 
@@ -26081,9 +26081,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.at(2);
 ```
 
-<img alt="js-array-methods example 4 source" src="./code_sandbox/snaps/js-array-methods-04-code.png" />
+![js-array-methods example 4 source](./code_sandbox/snaps/js-array-methods-04-code.png)
 
-<img alt="js-array-methods example 4 result" src="./code_sandbox/snaps/js-array-methods-04-result.png" />
+![js-array-methods example 4 result](./code_sandbox/snaps/js-array-methods-04-result.png)
 
 - [x] **Outcome:** **Apple**.
 
@@ -26100,9 +26100,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits[2];
 ```
 
-<img alt="js-array-methods example 5 source" src="./code_sandbox/snaps/js-array-methods-05-code.png" />
+![js-array-methods example 5 source](./code_sandbox/snaps/js-array-methods-05-code.png)
 
-<img alt="js-array-methods example 5 result" src="./code_sandbox/snaps/js-array-methods-05-result.png" />
+![js-array-methods example 5 result](./code_sandbox/snaps/js-array-methods-05-result.png)
 
 - [x] **Outcome:** **Apple**.
 
@@ -26121,9 +26121,9 @@ let bracket = fruits[-1];
 let fromEnd = fruits.at(-1);
 ```
 
-<img alt="js-array-methods example 6 source" src="./code_sandbox/snaps/js-array-methods-06-code.png" />
+![js-array-methods example 6 source](./code_sandbox/snaps/js-array-methods-06-code.png)
 
-<img alt="js-array-methods example 6 result" src="./code_sandbox/snaps/js-array-methods-06-result.png" />
+![js-array-methods example 6 result](./code_sandbox/snaps/js-array-methods-06-result.png)
 
 - [x] **Outcome:** `fruits[-1]` is **undefined**. `fruits.at(-1)` is **Mango**.
 
@@ -26140,9 +26140,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.join(" * ");
 ```
 
-<img alt="js-array-methods example 7 source" src="./code_sandbox/snaps/js-array-methods-07-code.png" />
+![js-array-methods example 7 source](./code_sandbox/snaps/js-array-methods-07-code.png)
 
-<img alt="js-array-methods example 7 result" src="./code_sandbox/snaps/js-array-methods-07-result.png" />
+![js-array-methods example 7 result](./code_sandbox/snaps/js-array-methods-07-result.png)
 
 - [x] **Outcome:** **Banana * Orange * Apple * Mango**.
 
@@ -26159,9 +26159,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
 ```
 
-<img alt="js-array-methods example 8 source" src="./code_sandbox/snaps/js-array-methods-08-code.png" />
+![js-array-methods example 8 source](./code_sandbox/snaps/js-array-methods-08-code.png)
 
-<img alt="js-array-methods example 8 result" src="./code_sandbox/snaps/js-array-methods-08-result.png" />
+![js-array-methods example 8 result](./code_sandbox/snaps/js-array-methods-08-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Apple"]**.
 
@@ -26178,9 +26178,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.pop();
 ```
 
-<img alt="js-array-methods example 9 source" src="./code_sandbox/snaps/js-array-methods-09-code.png" />
+![js-array-methods example 9 source](./code_sandbox/snaps/js-array-methods-09-code.png)
 
-<img alt="js-array-methods example 9 result" src="./code_sandbox/snaps/js-array-methods-09-result.png" />
+![js-array-methods example 9 result](./code_sandbox/snaps/js-array-methods-09-result.png)
 
 - [x] **Outcome:** fruit is **"Mango"**. fruits is **["Banana","Orange","Apple"]**.
 
@@ -26197,9 +26197,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");
 ```
 
-<img alt="js-array-methods example 10 source" src="./code_sandbox/snaps/js-array-methods-10-code.png" />
+![js-array-methods example 10 source](./code_sandbox/snaps/js-array-methods-10-code.png)
 
-<img alt="js-array-methods example 10 result" src="./code_sandbox/snaps/js-array-methods-10-result.png" />
+![js-array-methods example 10 result](./code_sandbox/snaps/js-array-methods-10-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Apple","Mango","Kiwi"]**.
 
@@ -26216,9 +26216,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let length = fruits.push("Kiwi");
 ```
 
-<img alt="js-array-methods example 11 source" src="./code_sandbox/snaps/js-array-methods-11-code.png" />
+![js-array-methods example 11 source](./code_sandbox/snaps/js-array-methods-11-code.png)
 
-<img alt="js-array-methods example 11 result" src="./code_sandbox/snaps/js-array-methods-11-result.png" />
+![js-array-methods example 11 result](./code_sandbox/snaps/js-array-methods-11-result.png)
 
 - [x] **Outcome:** length **5**. fruits **["Banana","Orange","Apple","Mango","Kiwi"]**.
 
@@ -26235,9 +26235,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift();
 ```
 
-<img alt="js-array-methods example 12 source" src="./code_sandbox/snaps/js-array-methods-12-code.png" />
+![js-array-methods example 12 source](./code_sandbox/snaps/js-array-methods-12-code.png)
 
-<img alt="js-array-methods example 12 result" src="./code_sandbox/snaps/js-array-methods-12-result.png" />
+![js-array-methods example 12 result](./code_sandbox/snaps/js-array-methods-12-result.png)
 
 - [x] **Outcome:** **["Orange","Apple","Mango"]**.
 
@@ -26254,9 +26254,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.shift();
 ```
 
-<img alt="js-array-methods example 13 source" src="./code_sandbox/snaps/js-array-methods-13-code.png" />
+![js-array-methods example 13 source](./code_sandbox/snaps/js-array-methods-13-code.png)
 
-<img alt="js-array-methods example 13 result" src="./code_sandbox/snaps/js-array-methods-13-result.png" />
+![js-array-methods example 13 result](./code_sandbox/snaps/js-array-methods-13-result.png)
 
 - [x] **Outcome:** fruit is **"Banana"**. fruits is **["Orange","Apple","Mango"]**.
 
@@ -26273,9 +26273,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.unshift("Lemon");
 ```
 
-<img alt="js-array-methods example 14 source" src="./code_sandbox/snaps/js-array-methods-14-code.png" />
+![js-array-methods example 14 source](./code_sandbox/snaps/js-array-methods-14-code.png)
 
-<img alt="js-array-methods example 14 result" src="./code_sandbox/snaps/js-array-methods-14-result.png" />
+![js-array-methods example 14 result](./code_sandbox/snaps/js-array-methods-14-result.png)
 
 - [x] **Outcome:** **["Lemon","Banana","Orange","Apple","Mango"]**.
 
@@ -26292,9 +26292,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let length = fruits.unshift("Lemon");
 ```
 
-<img alt="js-array-methods example 15 source" src="./code_sandbox/snaps/js-array-methods-15-code.png" />
+![js-array-methods example 15 source](./code_sandbox/snaps/js-array-methods-15-code.png)
 
-<img alt="js-array-methods example 15 result" src="./code_sandbox/snaps/js-array-methods-15-result.png" />
+![js-array-methods example 15 result](./code_sandbox/snaps/js-array-methods-15-result.png)
 
 - [x] **Outcome:** length **5**. fruits **["Lemon","Banana","Orange","Apple","Mango"]**.
 
@@ -26311,9 +26311,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits[0] = "Kiwi";
 ```
 
-<img alt="js-array-methods example 16 source" src="./code_sandbox/snaps/js-array-methods-16-code.png" />
+![js-array-methods example 16 source](./code_sandbox/snaps/js-array-methods-16-code.png)
 
-<img alt="js-array-methods example 16 result" src="./code_sandbox/snaps/js-array-methods-16-result.png" />
+![js-array-methods example 16 result](./code_sandbox/snaps/js-array-methods-16-result.png)
 
 - [x] **Outcome:** **["Kiwi","Orange","Apple","Mango"]**.
 
@@ -26330,9 +26330,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits[fruits.length] = "Kiwi";
 ```
 
-<img alt="js-array-methods example 17 source" src="./code_sandbox/snaps/js-array-methods-17-code.png" />
+![js-array-methods example 17 source](./code_sandbox/snaps/js-array-methods-17-code.png)
 
-<img alt="js-array-methods example 17 result" src="./code_sandbox/snaps/js-array-methods-17-result.png" />
+![js-array-methods example 17 result](./code_sandbox/snaps/js-array-methods-17-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Apple","Mango","Kiwi"]**.
 
@@ -26349,9 +26349,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 Array.isArray(fruits);
 ```
 
-<img alt="js-array-methods example 18 source" src="./code_sandbox/snaps/js-array-methods-18-code.png" />
+![js-array-methods example 18 source](./code_sandbox/snaps/js-array-methods-18-code.png)
 
-<img alt="js-array-methods example 18 result" src="./code_sandbox/snaps/js-array-methods-18-result.png" />
+![js-array-methods example 18 result](./code_sandbox/snaps/js-array-methods-18-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -26368,9 +26368,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 delete fruits[0];
 ```
 
-<img alt="js-array-methods example 19 source" src="./code_sandbox/snaps/js-array-methods-19-code.png" />
+![js-array-methods example 19 source](./code_sandbox/snaps/js-array-methods-19-code.png)
 
-<img alt="js-array-methods example 19 result" src="./code_sandbox/snaps/js-array-methods-19-result.png" />
+![js-array-methods example 19 result](./code_sandbox/snaps/js-array-methods-19-result.png)
 
 - [x] **Outcome:** JSON **[null,"Orange","Apple","Mango"]**. `fruits[0]` is **undefined**. `0 in fruits` is **false**. length still **4**.
 
@@ -26388,9 +26388,9 @@ const myBoys = ["Emil", "Tobias", "Linus"];
 const myChildren = myGirls.concat(myBoys);
 ```
 
-<img alt="js-array-methods example 20 source" src="./code_sandbox/snaps/js-array-methods-20-code.png" />
+![js-array-methods example 20 source](./code_sandbox/snaps/js-array-methods-20-code.png)
 
-<img alt="js-array-methods example 20 result" src="./code_sandbox/snaps/js-array-methods-20-result.png" />
+![js-array-methods example 20 result](./code_sandbox/snaps/js-array-methods-20-result.png)
 
 - [x] **Outcome:** **["Cecilie","Lone","Emil","Tobias","Linus"]**. myGirls is unchanged.
 
@@ -26409,9 +26409,9 @@ const arr3 = ["Robin", "Morgan"];
 const myChildren = arr1.concat(arr2, arr3);
 ```
 
-<img alt="js-array-methods example 21 source" src="./code_sandbox/snaps/js-array-methods-21-code.png" />
+![js-array-methods example 21 source](./code_sandbox/snaps/js-array-methods-21-code.png)
 
-<img alt="js-array-methods example 21 result" src="./code_sandbox/snaps/js-array-methods-21-result.png" />
+![js-array-methods example 21 result](./code_sandbox/snaps/js-array-methods-21-result.png)
 
 - [x] **Outcome:** **["Cecilie","Lone","Emil","Tobias","Linus","Robin","Morgan"]**.
 
@@ -26428,9 +26428,9 @@ const arr1 = ["Emil", "Tobias", "Linus"];
 const myChildren = arr1.concat("Peter");
 ```
 
-<img alt="js-array-methods example 22 source" src="./code_sandbox/snaps/js-array-methods-22-code.png" />
+![js-array-methods example 22 source](./code_sandbox/snaps/js-array-methods-22-code.png)
 
-<img alt="js-array-methods example 22 result" src="./code_sandbox/snaps/js-array-methods-22-result.png" />
+![js-array-methods example 22 result](./code_sandbox/snaps/js-array-methods-22-result.png)
 
 - [x] **Outcome:** **["Emil","Tobias","Linus","Peter"]**.
 
@@ -26447,9 +26447,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.copyWithin(2, 0);
 ```
 
-<img alt="js-array-methods example 23 source" src="./code_sandbox/snaps/js-array-methods-23-code.png" />
+![js-array-methods example 23 source](./code_sandbox/snaps/js-array-methods-23-code.png)
 
-<img alt="js-array-methods example 23 result" src="./code_sandbox/snaps/js-array-methods-23-result.png" />
+![js-array-methods example 23 result](./code_sandbox/snaps/js-array-methods-23-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Banana","Orange"]**.
 
@@ -26466,9 +26466,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 fruits.copyWithin(2, 0, 2);
 ```
 
-<img alt="js-array-methods example 24 source" src="./code_sandbox/snaps/js-array-methods-24-code.png" />
+![js-array-methods example 24 source](./code_sandbox/snaps/js-array-methods-24-code.png)
 
-<img alt="js-array-methods example 24 result" src="./code_sandbox/snaps/js-array-methods-24-result.png" />
+![js-array-methods example 24 result](./code_sandbox/snaps/js-array-methods-24-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Banana","Orange","Kiwi"]**.
 
@@ -26485,9 +26485,9 @@ const myArr = [[1,2],[3,4],[5,6]];
 const newArr = myArr.flat();
 ```
 
-<img alt="js-array-methods example 25 source" src="./code_sandbox/snaps/js-array-methods-25-code.png" />
+![js-array-methods example 25 source](./code_sandbox/snaps/js-array-methods-25-code.png)
 
-<img alt="js-array-methods example 25 result" src="./code_sandbox/snaps/js-array-methods-25-result.png" />
+![js-array-methods example 25 result](./code_sandbox/snaps/js-array-methods-25-result.png)
 
 - [x] **Outcome:** **[1,2,3,4,5,6]**.
 
@@ -26504,9 +26504,9 @@ const myArr = [1, 2, 3, 4, 5, 6];
 const newArr = myArr.flatMap(x => [x, x * 10]);
 ```
 
-<img alt="js-array-methods example 26 source" src="./code_sandbox/snaps/js-array-methods-26-code.png" />
+![js-array-methods example 26 source](./code_sandbox/snaps/js-array-methods-26-code.png)
 
-<img alt="js-array-methods example 26 result" src="./code_sandbox/snaps/js-array-methods-26-result.png" />
+![js-array-methods example 26 result](./code_sandbox/snaps/js-array-methods-26-result.png)
 
 - [x] **Outcome:** **[1,10,2,20,3,30,4,40,5,50,6,60]**.
 
@@ -26523,9 +26523,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(2, 0, "Lemon", "Kiwi");
 ```
 
-<img alt="js-array-methods example 27 source" src="./code_sandbox/snaps/js-array-methods-27-code.png" />
+![js-array-methods example 27 source](./code_sandbox/snaps/js-array-methods-27-code.png)
 
-<img alt="js-array-methods example 27 result" src="./code_sandbox/snaps/js-array-methods-27-result.png" />
+![js-array-methods example 27 result](./code_sandbox/snaps/js-array-methods-27-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Lemon","Kiwi","Apple","Mango"]**.
 
@@ -26542,9 +26542,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let removed = fruits.splice(2, 2, "Lemon", "Kiwi");
 ```
 
-<img alt="js-array-methods example 28 source" src="./code_sandbox/snaps/js-array-methods-28-code.png" />
+![js-array-methods example 28 source](./code_sandbox/snaps/js-array-methods-28-code.png)
 
-<img alt="js-array-methods example 28 result" src="./code_sandbox/snaps/js-array-methods-28-result.png" />
+![js-array-methods example 28 result](./code_sandbox/snaps/js-array-methods-28-result.png)
 
 - [x] **Outcome:** fruits **["Banana","Orange","Lemon","Kiwi"]**. removed **["Apple","Mango"]**.
 
@@ -26561,9 +26561,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(0, 1);
 ```
 
-<img alt="js-array-methods example 29 source" src="./code_sandbox/snaps/js-array-methods-29-code.png" />
+![js-array-methods example 29 source](./code_sandbox/snaps/js-array-methods-29-code.png)
 
-<img alt="js-array-methods example 29 result" src="./code_sandbox/snaps/js-array-methods-29-result.png" />
+![js-array-methods example 29 result](./code_sandbox/snaps/js-array-methods-29-result.png)
 
 - [x] **Outcome:** **["Orange","Apple","Mango"]**.
 
@@ -26580,9 +26580,9 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const spliced = months.toSpliced(0, 1);
 ```
 
-<img alt="js-array-methods example 30 source" src="./code_sandbox/snaps/js-array-methods-30-code.png" />
+![js-array-methods example 30 source](./code_sandbox/snaps/js-array-methods-30-code.png)
 
-<img alt="js-array-methods example 30 result" src="./code_sandbox/snaps/js-array-methods-30-result.png" />
+![js-array-methods example 30 result](./code_sandbox/snaps/js-array-methods-30-result.png)
 
 - [x] **Outcome:** spliced **["Feb","Mar","Apr"]**. months still **["Jan","Feb","Mar","Apr"]**.
 
@@ -26599,9 +26599,9 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1);
 ```
 
-<img alt="js-array-methods example 31 source" src="./code_sandbox/snaps/js-array-methods-31-code.png" />
+![js-array-methods example 31 source](./code_sandbox/snaps/js-array-methods-31-code.png)
 
-<img alt="js-array-methods example 31 result" src="./code_sandbox/snaps/js-array-methods-31-result.png" />
+![js-array-methods example 31 result](./code_sandbox/snaps/js-array-methods-31-result.png)
 
 - [x] **Outcome:** **["Orange","Lemon","Apple","Mango"]**. fruits unchanged.
 
@@ -26618,9 +26618,9 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(3);
 ```
 
-<img alt="js-array-methods example 32 source" src="./code_sandbox/snaps/js-array-methods-32-code.png" />
+![js-array-methods example 32 source](./code_sandbox/snaps/js-array-methods-32-code.png)
 
-<img alt="js-array-methods example 32 result" src="./code_sandbox/snaps/js-array-methods-32-result.png" />
+![js-array-methods example 32 result](./code_sandbox/snaps/js-array-methods-32-result.png)
 
 - [x] **Outcome:** **["Apple","Mango"]**.
 
@@ -26637,9 +26637,9 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1, 3);
 ```
 
-<img alt="js-array-methods example 33 source" src="./code_sandbox/snaps/js-array-methods-33-code.png" />
+![js-array-methods example 33 source](./code_sandbox/snaps/js-array-methods-33-code.png)
 
-<img alt="js-array-methods example 33 result" src="./code_sandbox/snaps/js-array-methods-33-result.png" />
+![js-array-methods example 33 result](./code_sandbox/snaps/js-array-methods-33-result.png)
 
 - [x] **Outcome:** **["Orange","Lemon"]**.
 
@@ -26656,9 +26656,9 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(2);
 ```
 
-<img alt="js-array-methods example 34 source" src="./code_sandbox/snaps/js-array-methods-34-code.png" />
+![js-array-methods example 34 source](./code_sandbox/snaps/js-array-methods-34-code.png)
 
-<img alt="js-array-methods example 34 result" src="./code_sandbox/snaps/js-array-methods-34-result.png" />
+![js-array-methods example 34 result](./code_sandbox/snaps/js-array-methods-34-result.png)
 
 - [x] **Outcome:** **["Lemon","Apple","Mango"]**.
 
@@ -26675,9 +26675,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.toString();
 ```
 
-<img alt="js-array-methods example 35 source" src="./code_sandbox/snaps/js-array-methods-35-code.png" />
+![js-array-methods example 35 source](./code_sandbox/snaps/js-array-methods-35-code.png)
 
-<img alt="js-array-methods example 35 result" src="./code_sandbox/snaps/js-array-methods-35-result.png" />
+![js-array-methods example 35 result](./code_sandbox/snaps/js-array-methods-35-result.png)
 
 - [x] **Outcome:** **Banana,Orange,Apple,Mango**.
 
@@ -26694,9 +26694,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = String(fruits);
 ```
 
-<img alt="js-array-methods example 36 source" src="./code_sandbox/snaps/js-array-methods-36-code.png" />
+![js-array-methods example 36 source](./code_sandbox/snaps/js-array-methods-36-code.png)
 
-<img alt="js-array-methods example 36 result" src="./code_sandbox/snaps/js-array-methods-36-result.png" />
+![js-array-methods example 36 result](./code_sandbox/snaps/js-array-methods-36-result.png)
 
 - [x] **Outcome:** **Banana,Orange,Apple,Mango** — same as `toString()`.
 
@@ -26902,9 +26902,9 @@ const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.indexOf("Apple") + 1;
 ```
 
-<img alt="js-array-search example 1 source" src="./code_sandbox/snaps/js-array-search-01-code.png" />
+![js-array-search example 1 source](./code_sandbox/snaps/js-array-search-01-code.png)
 
-<img alt="js-array-search example 1 result" src="./code_sandbox/snaps/js-array-search-01-result.png" />
+![js-array-search example 1 result](./code_sandbox/snaps/js-array-search-01-result.png)
 
 - [x] **Outcome:** First index is **0**, so position is **1**.
 
@@ -26921,9 +26921,9 @@ const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.lastIndexOf("Apple") + 1;
 ```
 
-<img alt="js-array-search example 2 source" src="./code_sandbox/snaps/js-array-search-02-code.png" />
+![js-array-search example 2 source](./code_sandbox/snaps/js-array-search-02-code.png)
 
-<img alt="js-array-search example 2 result" src="./code_sandbox/snaps/js-array-search-02-result.png" />
+![js-array-search example 2 result](./code_sandbox/snaps/js-array-search-02-result.png)
 
 - [x] **Outcome:** Last index is **2**, so position is **3**.
 
@@ -26940,9 +26940,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.includes("Mango");
 ```
 
-<img alt="js-array-search example 3 source" src="./code_sandbox/snaps/js-array-search-03-code.png" />
+![js-array-search example 3 source](./code_sandbox/snaps/js-array-search-03-code.png)
 
-<img alt="js-array-search example 3 result" src="./code_sandbox/snaps/js-array-search-03-result.png" />
+![js-array-search example 3 result](./code_sandbox/snaps/js-array-search-03-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -26958,9 +26958,9 @@ Sandbox: `code_sandbox/js-array-search/includes-nan-vs-indexof.html`
 const a = [NaN];
 ```
 
-<img alt="js-array-search example 4 source" src="./code_sandbox/snaps/js-array-search-04-code.png" />
+![js-array-search example 4 source](./code_sandbox/snaps/js-array-search-04-code.png)
 
-<img alt="js-array-search example 4 result" src="./code_sandbox/snaps/js-array-search-04-result.png" />
+![js-array-search example 4 result](./code_sandbox/snaps/js-array-search-04-result.png)
 
 - [x] **Outcome:** `indexOf` is **-1**. `includes` is **true**.
 
@@ -26981,9 +26981,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-search example 5 source" src="./code_sandbox/snaps/js-array-search-05-code.png" />
+![js-array-search example 5 source](./code_sandbox/snaps/js-array-search-05-code.png)
 
-<img alt="js-array-search example 5 result" src="./code_sandbox/snaps/js-array-search-05-result.png" />
+![js-array-search example 5 result](./code_sandbox/snaps/js-array-search-05-result.png)
 
 - [x] **Outcome:** **25**.
 
@@ -27003,9 +27003,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-search example 6 source" src="./code_sandbox/snaps/js-array-search-06-code.png" />
+![js-array-search example 6 source](./code_sandbox/snaps/js-array-search-06-code.png)
 
-<img alt="js-array-search example 6 result" src="./code_sandbox/snaps/js-array-search-06-result.png" />
+![js-array-search example 6 result](./code_sandbox/snaps/js-array-search-06-result.png)
 
 - [x] **Outcome:** **3**.
 
@@ -27022,9 +27022,9 @@ const temp = [27, 28, 30, 40, 42, 35, 30];
 let high = temp.findLast(x => x > 40);
 ```
 
-<img alt="js-array-search example 7 source" src="./code_sandbox/snaps/js-array-search-07-code.png" />
+![js-array-search example 7 source](./code_sandbox/snaps/js-array-search-07-code.png)
 
-<img alt="js-array-search example 7 result" src="./code_sandbox/snaps/js-array-search-07-result.png" />
+![js-array-search example 7 result](./code_sandbox/snaps/js-array-search-07-result.png)
 
 - [x] **Outcome:** **42**.
 
@@ -27041,9 +27041,9 @@ const temp = [27, 28, 30, 40, 42, 35, 30];
 let pos = temp.findLastIndex(x => x > 40);
 ```
 
-<img alt="js-array-search example 8 source" src="./code_sandbox/snaps/js-array-search-08-code.png" />
+![js-array-search example 8 source](./code_sandbox/snaps/js-array-search-08-code.png)
 
-<img alt="js-array-search example 8 result" src="./code_sandbox/snaps/js-array-search-08-result.png" />
+![js-array-search example 8 result](./code_sandbox/snaps/js-array-search-08-result.png)
 
 - [x] **Outcome:** **4**.
 
@@ -27224,9 +27224,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
 ```
 
-<img alt="js-array-sort example 1 source" src="./code_sandbox/snaps/js-array-sort-01-code.png" />
+![js-array-sort example 1 source](./code_sandbox/snaps/js-array-sort-01-code.png)
 
-<img alt="js-array-sort example 1 result" src="./code_sandbox/snaps/js-array-sort-01-result.png" />
+![js-array-sort example 1 result](./code_sandbox/snaps/js-array-sort-01-result.png)
 
 - [x] **Outcome:** **["Apple","Banana","Mango","Orange"]**.
 
@@ -27243,9 +27243,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.reverse();
 ```
 
-<img alt="js-array-sort example 2 source" src="./code_sandbox/snaps/js-array-sort-02-code.png" />
+![js-array-sort example 2 source](./code_sandbox/snaps/js-array-sort-02-code.png)
 
-<img alt="js-array-sort example 2 result" src="./code_sandbox/snaps/js-array-sort-02-result.png" />
+![js-array-sort example 2 result](./code_sandbox/snaps/js-array-sort-02-result.png)
 
 - [x] **Outcome:** **["Mango","Apple","Orange","Banana"]**.
 
@@ -27263,9 +27263,9 @@ fruits.sort();
 fruits.reverse();
 ```
 
-<img alt="js-array-sort example 3 source" src="./code_sandbox/snaps/js-array-sort-03-code.png" />
+![js-array-sort example 3 source](./code_sandbox/snaps/js-array-sort-03-code.png)
 
-<img alt="js-array-sort example 3 result" src="./code_sandbox/snaps/js-array-sort-03-result.png" />
+![js-array-sort example 3 result](./code_sandbox/snaps/js-array-sort-03-result.png)
 
 - [x] **Outcome:** **["Orange","Mango","Banana","Apple"]**.
 
@@ -27282,9 +27282,9 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const sorted = months.toSorted();
 ```
 
-<img alt="js-array-sort example 4 source" src="./code_sandbox/snaps/js-array-sort-04-code.png" />
+![js-array-sort example 4 source](./code_sandbox/snaps/js-array-sort-04-code.png)
 
-<img alt="js-array-sort example 4 result" src="./code_sandbox/snaps/js-array-sort-04-result.png" />
+![js-array-sort example 4 result](./code_sandbox/snaps/js-array-sort-04-result.png)
 
 - [x] **Outcome:** sorted **["Apr","Feb","Jan","Mar"]**. months unchanged.
 
@@ -27301,9 +27301,9 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const reversed = months.toReversed();
 ```
 
-<img alt="js-array-sort example 5 source" src="./code_sandbox/snaps/js-array-sort-05-code.png" />
+![js-array-sort example 5 source](./code_sandbox/snaps/js-array-sort-05-code.png)
 
-<img alt="js-array-sort example 5 result" src="./code_sandbox/snaps/js-array-sort-05-result.png" />
+![js-array-sort example 5 result](./code_sandbox/snaps/js-array-sort-05-result.png)
 
 - [x] **Outcome:** reversed **["Apr","Mar","Feb","Jan"]**. months unchanged.
 
@@ -27320,9 +27320,9 @@ const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});
 ```
 
-<img alt="js-array-sort example 6 source" src="./code_sandbox/snaps/js-array-sort-06-code.png" />
+![js-array-sort example 6 source](./code_sandbox/snaps/js-array-sort-06-code.png)
 
-<img alt="js-array-sort example 6 result" src="./code_sandbox/snaps/js-array-sort-06-result.png" />
+![js-array-sort example 6 result](./code_sandbox/snaps/js-array-sort-06-result.png)
 
 - [x] **Outcome:** **[1,5,10,25,40,100]**.
 
@@ -27339,9 +27339,9 @@ const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return b - a});
 ```
 
-<img alt="js-array-sort example 7 source" src="./code_sandbox/snaps/js-array-sort-07-code.png" />
+![js-array-sort example 7 source](./code_sandbox/snaps/js-array-sort-07-code.png)
 
-<img alt="js-array-sort example 7 result" src="./code_sandbox/snaps/js-array-sort-07-result.png" />
+![js-array-sort example 7 result](./code_sandbox/snaps/js-array-sort-07-result.png)
 
 - [x] **Outcome:** **[100,40,25,10,5,1]**.
 
@@ -27360,9 +27360,9 @@ const alpha = points.slice().sort();
 const numeric = points.slice().sort(function(a, b){return a - b});
 ```
 
-<img alt="js-array-sort example 8 source" src="./code_sandbox/snaps/js-array-sort-08-code.png" />
+![js-array-sort example 8 source](./code_sandbox/snaps/js-array-sort-08-code.png)
 
-<img alt="js-array-sort example 8 result" src="./code_sandbox/snaps/js-array-sort-08-result.png" />
+![js-array-sort example 8 result](./code_sandbox/snaps/js-array-sort-08-result.png)
 
 - [x] **Outcome:** Alphabetic **[1,10,100,25,40,5]**. Numeric **[1,5,10,25,40,100]**.
 
@@ -27379,9 +27379,9 @@ const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(){return 0.5 - Math.random()});
 ```
 
-<img alt="js-array-sort example 9 source" src="./code_sandbox/snaps/js-array-sort-09-code.png" />
+![js-array-sort example 9 source](./code_sandbox/snaps/js-array-sort-09-code.png)
 
-<img alt="js-array-sort example 9 result" src="./code_sandbox/snaps/js-array-sort-09-result.png" />
+![js-array-sort example 9 result](./code_sandbox/snaps/js-array-sort-09-result.png)
 
 - [x] **Outcome:** The printed order is **random** (one permutation of 40, 100, 1, 5, 25, 10). Do not treat this shuffle as fair.
 
@@ -27403,9 +27403,9 @@ for (let i = points.length - 1; i > 0; i--) {
 }
 ```
 
-<img alt="js-array-sort example 10 source" src="./code_sandbox/snaps/js-array-sort-10-code.png" />
+![js-array-sort example 10 source](./code_sandbox/snaps/js-array-sort-10-code.png)
 
-<img alt="js-array-sort example 10 result" src="./code_sandbox/snaps/js-array-sort-10-result.png" />
+![js-array-sort example 10 result](./code_sandbox/snaps/js-array-sort-10-result.png)
 
 - [x] **Outcome:** The printed order is **random** but a **fair** permutation of the six numbers.
 
@@ -27424,9 +27424,9 @@ let lowest = points[0];
 let highest = points[points.length - 1];
 ```
 
-<img alt="js-array-sort example 11 source" src="./code_sandbox/snaps/js-array-sort-11-code.png" />
+![js-array-sort example 11 source](./code_sandbox/snaps/js-array-sort-11-code.png)
 
-<img alt="js-array-sort example 11 result" src="./code_sandbox/snaps/js-array-sort-11-result.png" />
+![js-array-sort example 11 result](./code_sandbox/snaps/js-array-sort-11-result.png)
 
 - [x] **Outcome:** Sorted **[1,5,10,25,40,100]**. lowest **1**, highest **100**.
 
@@ -27445,9 +27445,9 @@ let highest = points[0];
 let lowest = points[points.length - 1];
 ```
 
-<img alt="js-array-sort example 12 source" src="./code_sandbox/snaps/js-array-sort-12-code.png" />
+![js-array-sort example 12 source](./code_sandbox/snaps/js-array-sort-12-code.png)
 
-<img alt="js-array-sort example 12 result" src="./code_sandbox/snaps/js-array-sort-12-result.png" />
+![js-array-sort example 12 result](./code_sandbox/snaps/js-array-sort-12-result.png)
 
 - [x] **Outcome:** Sorted **[100,40,25,10,5,1]**. highest **100**, lowest **1**.
 
@@ -27467,9 +27467,9 @@ function myArrayMin(arr) {
 let min = myArrayMin(points);
 ```
 
-<img alt="js-array-sort example 13 source" src="./code_sandbox/snaps/js-array-sort-13-code.png" />
+![js-array-sort example 13 source](./code_sandbox/snaps/js-array-sort-13-code.png)
 
-<img alt="js-array-sort example 13 result" src="./code_sandbox/snaps/js-array-sort-13-result.png" />
+![js-array-sort example 13 result](./code_sandbox/snaps/js-array-sort-13-result.png)
 
 - [x] **Outcome:** **1**.
 
@@ -27489,9 +27489,9 @@ function myArrayMax(arr) {
 let max = myArrayMax(points);
 ```
 
-<img alt="js-array-sort example 14 source" src="./code_sandbox/snaps/js-array-sort-14-code.png" />
+![js-array-sort example 14 source](./code_sandbox/snaps/js-array-sort-14-code.png)
 
-<img alt="js-array-sort example 14 result" src="./code_sandbox/snaps/js-array-sort-14-result.png" />
+![js-array-sort example 14 result](./code_sandbox/snaps/js-array-sort-14-result.png)
 
 - [x] **Outcome:** **100**.
 
@@ -27518,9 +27518,9 @@ function myArrayMin(arr) {
 let min = myArrayMin(points);
 ```
 
-<img alt="js-array-sort example 15 source" src="./code_sandbox/snaps/js-array-sort-15-code.png" />
+![js-array-sort example 15 source](./code_sandbox/snaps/js-array-sort-15-code.png)
 
-<img alt="js-array-sort example 15 result" src="./code_sandbox/snaps/js-array-sort-15-result.png" />
+![js-array-sort example 15 result](./code_sandbox/snaps/js-array-sort-15-result.png)
 
 - [x] **Outcome:** **1**.
 
@@ -27547,9 +27547,9 @@ function myArrayMax(arr) {
 let max = myArrayMax(points);
 ```
 
-<img alt="js-array-sort example 16 source" src="./code_sandbox/snaps/js-array-sort-16-code.png" />
+![js-array-sort example 16 source](./code_sandbox/snaps/js-array-sort-16-code.png)
 
-<img alt="js-array-sort example 16 result" src="./code_sandbox/snaps/js-array-sort-16-result.png" />
+![js-array-sort example 16 result](./code_sandbox/snaps/js-array-sort-16-result.png)
 
 - [x] **Outcome:** **100**.
 
@@ -27569,9 +27569,9 @@ const cars = [
 ];
 ```
 
-<img alt="js-array-sort example 17 source" src="./code_sandbox/snaps/js-array-sort-17-code.png" />
+![js-array-sort example 17 source](./code_sandbox/snaps/js-array-sort-17-code.png)
 
-<img alt="js-array-sort example 17 result" src="./code_sandbox/snaps/js-array-sort-17-result.png" />
+![js-array-sort example 17 result](./code_sandbox/snaps/js-array-sort-17-result.png)
 
 - [x] **Outcome:** Three cars: Volvo 2016, Saab 2001, BMW 2010.
 
@@ -27592,9 +27592,9 @@ const cars = [
 cars.sort(function(a, b){return a.year - b.year});
 ```
 
-<img alt="js-array-sort example 18 source" src="./code_sandbox/snaps/js-array-sort-18-code.png" />
+![js-array-sort example 18 source](./code_sandbox/snaps/js-array-sort-18-code.png)
 
-<img alt="js-array-sort example 18 result" src="./code_sandbox/snaps/js-array-sort-18-result.png" />
+![js-array-sort example 18 result](./code_sandbox/snaps/js-array-sort-18-result.png)
 
 - [x] **Outcome:** Saab 2001, BMW 2010, Volvo 2016.
 
@@ -27621,9 +27621,9 @@ cars.sort(function(a, b){
 });
 ```
 
-<img alt="js-array-sort example 19 source" src="./code_sandbox/snaps/js-array-sort-19-code.png" />
+![js-array-sort example 19 source](./code_sandbox/snaps/js-array-sort-19-code.png)
 
-<img alt="js-array-sort example 19 result" src="./code_sandbox/snaps/js-array-sort-19-result.png" />
+![js-array-sort example 19 result](./code_sandbox/snaps/js-array-sort-19-result.png)
 
 - [x] **Outcome:** BMW, Saab, Volvo.
 
@@ -27646,9 +27646,9 @@ myArr.sort(function(a, b){return a.price - b.price});
 const names = myArr.map(o => o.name + " " + o.price);
 ```
 
-<img alt="js-array-sort example 20 source" src="./code_sandbox/snaps/js-array-sort-20-code.png" />
+![js-array-sort example 20 source](./code_sandbox/snaps/js-array-sort-20-code.png)
 
-<img alt="js-array-sort example 20 result" src="./code_sandbox/snaps/js-array-sort-20-result.png" />
+![js-array-sort example 20 result](./code_sandbox/snaps/js-array-sort-20-result.png)
 
 - [x] **Outcome:** **["X00 100","X01 100","X02 100","X03 100","X04 110","X05 110","X06 110","X07 110"]** — X00 stayed before X01, and so on.
 
@@ -27859,9 +27859,9 @@ for (let x of cars) {
 }
 ```
 
-<img alt="js-array-iterations example 1 source" src="./code_sandbox/snaps/js-array-iterations-01-code.png" />
+![js-array-iterations example 1 source](./code_sandbox/snaps/js-array-iterations-01-code.png)
 
-<img alt="js-array-iterations example 1 result" src="./code_sandbox/snaps/js-array-iterations-01-result.png" />
+![js-array-iterations example 1 result](./code_sandbox/snaps/js-array-iterations-01-result.png)
 
 - [x] **Outcome:** **BMW,Volvo,Mini,**
 
@@ -27881,9 +27881,9 @@ for (let x in cars) {
 }
 ```
 
-<img alt="js-array-iterations example 2 source" src="./code_sandbox/snaps/js-array-iterations-02-code.png" />
+![js-array-iterations example 2 source](./code_sandbox/snaps/js-array-iterations-02-code.png)
 
-<img alt="js-array-iterations example 2 result" src="./code_sandbox/snaps/js-array-iterations-02-result.png" />
+![js-array-iterations example 2 result](./code_sandbox/snaps/js-array-iterations-02-result.png)
 
 - [x] **Outcome:** **0,1,2,**
 
@@ -27903,9 +27903,9 @@ for (let x in cars) {
 }
 ```
 
-<img alt="js-array-iterations example 3 source" src="./code_sandbox/snaps/js-array-iterations-03-code.png" />
+![js-array-iterations example 3 source](./code_sandbox/snaps/js-array-iterations-03-code.png)
 
-<img alt="js-array-iterations example 3 result" src="./code_sandbox/snaps/js-array-iterations-03-result.png" />
+![js-array-iterations example 3 result](./code_sandbox/snaps/js-array-iterations-03-result.png)
 
 - [x] **Outcome:** **BMWVolvoMini** (the Tryit concatenates with an empty separator).
 
@@ -27926,9 +27926,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 4 source" src="./code_sandbox/snaps/js-array-iterations-04-code.png" />
+![js-array-iterations example 4 source](./code_sandbox/snaps/js-array-iterations-04-code.png)
 
-<img alt="js-array-iterations example 4 result" src="./code_sandbox/snaps/js-array-iterations-04-result.png" />
+![js-array-iterations example 4 result](./code_sandbox/snaps/js-array-iterations-04-result.png)
 
 - [x] **Outcome:** **45 4 9 16 25** (trailing space).
 
@@ -27949,9 +27949,9 @@ function myFunction(value) {
 }
 ```
 
-<img alt="js-array-iterations example 5 source" src="./code_sandbox/snaps/js-array-iterations-05-code.png" />
+![js-array-iterations example 5 source](./code_sandbox/snaps/js-array-iterations-05-code.png)
 
-<img alt="js-array-iterations example 5 result" src="./code_sandbox/snaps/js-array-iterations-05-result.png" />
+![js-array-iterations example 5 result](./code_sandbox/snaps/js-array-iterations-05-result.png)
 
 - [x] **Outcome:** **45 4 9 16 25** (trailing space).
 
@@ -27971,9 +27971,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 6 source" src="./code_sandbox/snaps/js-array-iterations-06-code.png" />
+![js-array-iterations example 6 source](./code_sandbox/snaps/js-array-iterations-06-code.png)
 
-<img alt="js-array-iterations example 6 result" src="./code_sandbox/snaps/js-array-iterations-06-result.png" />
+![js-array-iterations example 6 result](./code_sandbox/snaps/js-array-iterations-06-result.png)
 
 - [x] **Outcome:** New **[90,8,18,32,50]**. Original unchanged.
 
@@ -27993,9 +27993,9 @@ function myFunction(value) {
 }
 ```
 
-<img alt="js-array-iterations example 7 source" src="./code_sandbox/snaps/js-array-iterations-07-code.png" />
+![js-array-iterations example 7 source](./code_sandbox/snaps/js-array-iterations-07-code.png)
 
-<img alt="js-array-iterations example 7 result" src="./code_sandbox/snaps/js-array-iterations-07-result.png" />
+![js-array-iterations example 7 result](./code_sandbox/snaps/js-array-iterations-07-result.png)
 
 - [x] **Outcome:** **[90,8,18,32,50]**.
 
@@ -28012,9 +28012,9 @@ const myArr = [1, 2, 3, 4, 5, 6];
 const newArr = myArr.flatMap(x => [x, x * 10]);
 ```
 
-<img alt="js-array-iterations example 8 source" src="./code_sandbox/snaps/js-array-iterations-08-code.png" />
+![js-array-iterations example 8 source](./code_sandbox/snaps/js-array-iterations-08-code.png)
 
-<img alt="js-array-iterations example 8 result" src="./code_sandbox/snaps/js-array-iterations-08-result.png" />
+![js-array-iterations example 8 result](./code_sandbox/snaps/js-array-iterations-08-result.png)
 
 - [x] **Outcome:** **[1,10,2,20,3,30,4,40,5,50,6,60]**.
 
@@ -28034,9 +28034,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 9 source" src="./code_sandbox/snaps/js-array-iterations-09-code.png" />
+![js-array-iterations example 9 source](./code_sandbox/snaps/js-array-iterations-09-code.png)
 
-<img alt="js-array-iterations example 9 result" src="./code_sandbox/snaps/js-array-iterations-09-result.png" />
+![js-array-iterations example 9 result](./code_sandbox/snaps/js-array-iterations-09-result.png)
 
 - [x] **Outcome:** **[45,25]**.
 
@@ -28056,9 +28056,9 @@ function myFunction(value) {
 }
 ```
 
-<img alt="js-array-iterations example 10 source" src="./code_sandbox/snaps/js-array-iterations-10-code.png" />
+![js-array-iterations example 10 source](./code_sandbox/snaps/js-array-iterations-10-code.png)
 
-<img alt="js-array-iterations example 10 result" src="./code_sandbox/snaps/js-array-iterations-10-result.png" />
+![js-array-iterations example 10 result](./code_sandbox/snaps/js-array-iterations-10-result.png)
 
 - [x] **Outcome:** **[45,25]**.
 
@@ -28079,9 +28079,9 @@ function myFunction(total, value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 11 source" src="./code_sandbox/snaps/js-array-iterations-11-code.png" />
+![js-array-iterations example 11 source](./code_sandbox/snaps/js-array-iterations-11-code.png)
 
-<img alt="js-array-iterations example 11 result" src="./code_sandbox/snaps/js-array-iterations-11-result.png" />
+![js-array-iterations example 11 result](./code_sandbox/snaps/js-array-iterations-11-result.png)
 
 - [x] **Outcome:** **99** (45+4+9+16+25).
 
@@ -28101,9 +28101,9 @@ function myFunction(total, value) {
 }
 ```
 
-<img alt="js-array-iterations example 12 source" src="./code_sandbox/snaps/js-array-iterations-12-code.png" />
+![js-array-iterations example 12 source](./code_sandbox/snaps/js-array-iterations-12-code.png)
 
-<img alt="js-array-iterations example 12 result" src="./code_sandbox/snaps/js-array-iterations-12-result.png" />
+![js-array-iterations example 12 result](./code_sandbox/snaps/js-array-iterations-12-result.png)
 
 - [x] **Outcome:** **99**.
 
@@ -28123,9 +28123,9 @@ function myFunction(total, value) {
 }
 ```
 
-<img alt="js-array-iterations example 13 source" src="./code_sandbox/snaps/js-array-iterations-13-code.png" />
+![js-array-iterations example 13 source](./code_sandbox/snaps/js-array-iterations-13-code.png)
 
-<img alt="js-array-iterations example 13 result" src="./code_sandbox/snaps/js-array-iterations-13-result.png" />
+![js-array-iterations example 13 result](./code_sandbox/snaps/js-array-iterations-13-result.png)
 
 - [x] **Outcome:** **199**.
 
@@ -28145,9 +28145,9 @@ function myFunction(total, value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 14 source" src="./code_sandbox/snaps/js-array-iterations-14-code.png" />
+![js-array-iterations example 14 source](./code_sandbox/snaps/js-array-iterations-14-code.png)
 
-<img alt="js-array-iterations example 14 result" src="./code_sandbox/snaps/js-array-iterations-14-result.png" />
+![js-array-iterations example 14 result](./code_sandbox/snaps/js-array-iterations-14-result.png)
 
 - [x] **Outcome:** **99**.
 
@@ -28167,9 +28167,9 @@ function myFunction(total, value) {
 }
 ```
 
-<img alt="js-array-iterations example 15 source" src="./code_sandbox/snaps/js-array-iterations-15-code.png" />
+![js-array-iterations example 15 source](./code_sandbox/snaps/js-array-iterations-15-code.png)
 
-<img alt="js-array-iterations example 15 result" src="./code_sandbox/snaps/js-array-iterations-15-result.png" />
+![js-array-iterations example 15 result](./code_sandbox/snaps/js-array-iterations-15-result.png)
 
 - [x] **Outcome:** **99**.
 
@@ -28189,9 +28189,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 16 source" src="./code_sandbox/snaps/js-array-iterations-16-code.png" />
+![js-array-iterations example 16 source](./code_sandbox/snaps/js-array-iterations-16-code.png)
 
-<img alt="js-array-iterations example 16 result" src="./code_sandbox/snaps/js-array-iterations-16-result.png" />
+![js-array-iterations example 16 result](./code_sandbox/snaps/js-array-iterations-16-result.png)
 
 - [x] **Outcome:** **false** (4, 9, and 16 fail).
 
@@ -28211,9 +28211,9 @@ function myFunction(value) {
 }
 ```
 
-<img alt="js-array-iterations example 17 source" src="./code_sandbox/snaps/js-array-iterations-17-code.png" />
+![js-array-iterations example 17 source](./code_sandbox/snaps/js-array-iterations-17-code.png)
 
-<img alt="js-array-iterations example 17 result" src="./code_sandbox/snaps/js-array-iterations-17-result.png" />
+![js-array-iterations example 17 result](./code_sandbox/snaps/js-array-iterations-17-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -28233,9 +28233,9 @@ function myFunction(value, index, array) {
 }
 ```
 
-<img alt="js-array-iterations example 18 source" src="./code_sandbox/snaps/js-array-iterations-18-code.png" />
+![js-array-iterations example 18 source](./code_sandbox/snaps/js-array-iterations-18-code.png)
 
-<img alt="js-array-iterations example 18 result" src="./code_sandbox/snaps/js-array-iterations-18-result.png" />
+![js-array-iterations example 18 result](./code_sandbox/snaps/js-array-iterations-18-result.png)
 
 - [x] **Outcome:** **true** (45 and 25 pass).
 
@@ -28252,9 +28252,9 @@ let text = "ABCDEFG";
 const letters = Array.from(text);
 ```
 
-<img alt="js-array-iterations example 19 source" src="./code_sandbox/snaps/js-array-iterations-19-code.png" />
+![js-array-iterations example 19 source](./code_sandbox/snaps/js-array-iterations-19-code.png)
 
-<img alt="js-array-iterations example 19 result" src="./code_sandbox/snaps/js-array-iterations-19-result.png" />
+![js-array-iterations example 19 result](./code_sandbox/snaps/js-array-iterations-19-result.png)
 
 - [x] **Outcome:** **["A","B","C","D","E","F","G"]**.
 
@@ -28271,9 +28271,9 @@ const myNumbers = [1,2,3,4];
 const myArr = Array.from(myNumbers, (x) => x * 2);
 ```
 
-<img alt="js-array-iterations example 20 source" src="./code_sandbox/snaps/js-array-iterations-20-code.png" />
+![js-array-iterations example 20 source](./code_sandbox/snaps/js-array-iterations-20-code.png)
 
-<img alt="js-array-iterations example 20 result" src="./code_sandbox/snaps/js-array-iterations-20-result.png" />
+![js-array-iterations example 20 result](./code_sandbox/snaps/js-array-iterations-20-result.png)
 
 - [x] **Outcome:** **[2,4,6,8]**.
 
@@ -28294,9 +28294,9 @@ for (let x of keys) {
 }
 ```
 
-<img alt="js-array-iterations example 21 source" src="./code_sandbox/snaps/js-array-iterations-21-code.png" />
+![js-array-iterations example 21 source](./code_sandbox/snaps/js-array-iterations-21-code.png)
 
-<img alt="js-array-iterations example 21 result" src="./code_sandbox/snaps/js-array-iterations-21-result.png" />
+![js-array-iterations example 21 result](./code_sandbox/snaps/js-array-iterations-21-result.png)
 
 - [x] **Outcome:** **0 1 2 3** (trailing space).
 
@@ -28317,9 +28317,9 @@ for (let x of f) {
 }
 ```
 
-<img alt="js-array-iterations example 22 source" src="./code_sandbox/snaps/js-array-iterations-22-code.png" />
+![js-array-iterations example 22 source](./code_sandbox/snaps/js-array-iterations-22-code.png)
 
-<img alt="js-array-iterations example 22 result" src="./code_sandbox/snaps/js-array-iterations-22-result.png" />
+![js-array-iterations example 22 result](./code_sandbox/snaps/js-array-iterations-22-result.png)
 
 - [x] **Outcome:** **0,Banana1,Orange2,Apple3,Mango** (each pair stringifies as `index,value`).
 
@@ -28336,9 +28336,9 @@ const months = ["Januar", "Februar", "Mar", "April"];
 const myMonths = months.with(2, "March");
 ```
 
-<img alt="js-array-iterations example 23 source" src="./code_sandbox/snaps/js-array-iterations-23-code.png" />
+![js-array-iterations example 23 source](./code_sandbox/snaps/js-array-iterations-23-code.png)
 
-<img alt="js-array-iterations example 23 result" src="./code_sandbox/snaps/js-array-iterations-23-result.png" />
+![js-array-iterations example 23 result](./code_sandbox/snaps/js-array-iterations-23-result.png)
 
 - [x] **Outcome:** myMonths **["Januar","Februar","March","April"]**. Original still has **"Mar"**.
 
@@ -28356,9 +28356,9 @@ const arr2 = [4, 5, 6];
 const arr3 = [...arr1, ...arr2];
 ```
 
-<img alt="js-array-iterations example 24 source" src="./code_sandbox/snaps/js-array-iterations-24-code.png" />
+![js-array-iterations example 24 source](./code_sandbox/snaps/js-array-iterations-24-code.png)
 
-<img alt="js-array-iterations example 24 result" src="./code_sandbox/snaps/js-array-iterations-24-result.png" />
+![js-array-iterations example 24 result](./code_sandbox/snaps/js-array-iterations-24-result.png)
 
 - [x] **Outcome:** **[1,2,3,4,5,6]**.
 
@@ -28378,9 +28378,9 @@ const q4 = ["Oct", "Nov", "Des"];
 const year = [...q1, ...q2, ...q3, ...q4];
 ```
 
-<img alt="js-array-iterations example 25 source" src="./code_sandbox/snaps/js-array-iterations-25-code.png" />
+![js-array-iterations example 25 source](./code_sandbox/snaps/js-array-iterations-25-code.png)
 
-<img alt="js-array-iterations example 25 result" src="./code_sandbox/snaps/js-array-iterations-25-result.png" />
+![js-array-iterations example 25 result](./code_sandbox/snaps/js-array-iterations-25-result.png)
 
 - [x] **Outcome:** **["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Des"]**.
 
@@ -28397,9 +28397,9 @@ const arr1 = [1, 2, 3];
 const arr2 = [...arr1];
 ```
 
-<img alt="js-array-iterations example 26 source" src="./code_sandbox/snaps/js-array-iterations-26-code.png" />
+![js-array-iterations example 26 source](./code_sandbox/snaps/js-array-iterations-26-code.png)
 
-<img alt="js-array-iterations example 26 result" src="./code_sandbox/snaps/js-array-iterations-26-result.png" />
+![js-array-iterations example 26 result](./code_sandbox/snaps/js-array-iterations-26-result.png)
 
 - [x] **Outcome:** **[1,2,3]**. `arr1 === arr2` is **false** (different array).
 
@@ -28417,9 +28417,9 @@ let minValue = Math.min(...numbers);
 let maxValue = Math.max(...numbers);
 ```
 
-<img alt="js-array-iterations example 27 source" src="./code_sandbox/snaps/js-array-iterations-27-code.png" />
+![js-array-iterations example 27 source](./code_sandbox/snaps/js-array-iterations-27-code.png)
 
-<img alt="js-array-iterations example 27 result" src="./code_sandbox/snaps/js-array-iterations-27-result.png" />
+![js-array-iterations example 27 result](./code_sandbox/snaps/js-array-iterations-27-result.png)
 
 - [x] **Outcome:** min **21**, max **87**.
 
@@ -28437,9 +28437,9 @@ const arr1 = [1,2,3,4,5,6,7,8];
 [a, ...rest] = arr1;
 ```
 
-<img alt="js-array-iterations example 28 source" src="./code_sandbox/snaps/js-array-iterations-28-code.png" />
+![js-array-iterations example 28 source](./code_sandbox/snaps/js-array-iterations-28-code.png)
 
-<img alt="js-array-iterations example 28 result" src="./code_sandbox/snaps/js-array-iterations-28-result.png" />
+![js-array-iterations example 28 result](./code_sandbox/snaps/js-array-iterations-28-result.png)
 
 - [x] **Outcome:** a **1**. rest **[2,3,4,5,6,7,8]**.
 
@@ -28457,9 +28457,9 @@ const arr1 = [1,2,3,4,5,6,7,8];
 [a, b, ...rest] = arr1;
 ```
 
-<img alt="js-array-iterations example 29 source" src="./code_sandbox/snaps/js-array-iterations-29-code.png" />
+![js-array-iterations example 29 source](./code_sandbox/snaps/js-array-iterations-29-code.png)
 
-<img alt="js-array-iterations example 29 result" src="./code_sandbox/snaps/js-array-iterations-29-result.png" />
+![js-array-iterations example 29 result](./code_sandbox/snaps/js-array-iterations-29-result.png)
 
 - [x] **Outcome:** a **1**, b **2**, rest **[3,4,5,6,7,8]**.
 
@@ -28709,9 +28709,9 @@ Sandbox: `code_sandbox/js-array-reference/literal.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-array-reference example 1 source" src="./code_sandbox/snaps/js-array-reference-01-code.png" />
+![js-array-reference example 1 source](./code_sandbox/snaps/js-array-reference-01-code.png)
 
-<img alt="js-array-reference example 1 result" src="./code_sandbox/snaps/js-array-reference-01-result.png" />
+![js-array-reference example 1 result](./code_sandbox/snaps/js-array-reference-01-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -28727,9 +28727,9 @@ Sandbox: `code_sandbox/js-array-reference/new-array.html`
 const a = new Array();
 ```
 
-<img alt="js-array-reference example 2 source" src="./code_sandbox/snaps/js-array-reference-02-code.png" />
+![js-array-reference example 2 source](./code_sandbox/snaps/js-array-reference-02-code.png)
 
-<img alt="js-array-reference example 2 result" src="./code_sandbox/snaps/js-array-reference-02-result.png" />
+![js-array-reference example 2 result](./code_sandbox/snaps/js-array-reference-02-result.png)
 
 - [x] **Outcome:** **[]**.
 
@@ -28746,9 +28746,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.at(2);
 ```
 
-<img alt="js-array-reference example 3 source" src="./code_sandbox/snaps/js-array-reference-03-code.png" />
+![js-array-reference example 3 source](./code_sandbox/snaps/js-array-reference-03-code.png)
 
-<img alt="js-array-reference example 3 result" src="./code_sandbox/snaps/js-array-reference-03-result.png" />
+![js-array-reference example 3 result](./code_sandbox/snaps/js-array-reference-03-result.png)
 
 - [x] **Outcome:** **Apple**.
 
@@ -28765,9 +28765,9 @@ const a = ["Cecilie", "Lone"];
 const b = a.concat(["Emil"]);
 ```
 
-<img alt="js-array-reference example 4 source" src="./code_sandbox/snaps/js-array-reference-04-code.png" />
+![js-array-reference example 4 source](./code_sandbox/snaps/js-array-reference-04-code.png)
 
-<img alt="js-array-reference example 4 result" src="./code_sandbox/snaps/js-array-reference-04-result.png" />
+![js-array-reference example 4 result](./code_sandbox/snaps/js-array-reference-04-result.png)
 
 - [x] **Outcome:** **["Cecilie","Lone","Emil"]**.
 
@@ -28785,9 +28785,9 @@ fruits.constructor;
 fruits.constructor === Array;
 ```
 
-<img alt="js-array-reference example 5 source" src="./code_sandbox/snaps/js-array-reference-05-code.png" />
+![js-array-reference example 5 source](./code_sandbox/snaps/js-array-reference-05-code.png)
 
-<img alt="js-array-reference example 5 result" src="./code_sandbox/snaps/js-array-reference-05-result.png" />
+![js-array-reference example 5 result](./code_sandbox/snaps/js-array-reference-05-result.png)
 
 - [x] **Outcome:** `function Array() { [native code] }`. `=== Array` is **true**.
 
@@ -28804,9 +28804,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.copyWithin(2, 0);
 ```
 
-<img alt="js-array-reference example 6 source" src="./code_sandbox/snaps/js-array-reference-06-code.png" />
+![js-array-reference example 6 source](./code_sandbox/snaps/js-array-reference-06-code.png)
 
-<img alt="js-array-reference example 6 result" src="./code_sandbox/snaps/js-array-reference-06-result.png" />
+![js-array-reference example 6 result](./code_sandbox/snaps/js-array-reference-06-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Banana","Orange"]**.
 
@@ -28823,9 +28823,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 const pairs = Array.from(fruits.entries());
 ```
 
-<img alt="js-array-reference example 7 source" src="./code_sandbox/snaps/js-array-reference-07-code.png" />
+![js-array-reference example 7 source](./code_sandbox/snaps/js-array-reference-07-code.png)
 
-<img alt="js-array-reference example 7 result" src="./code_sandbox/snaps/js-array-reference-07-result.png" />
+![js-array-reference example 7 result](./code_sandbox/snaps/js-array-reference-07-result.png)
 
 - [x] **Outcome:** **[[0,"Banana"],[1,"Orange"],[2,"Apple"],[3,"Mango"]]**.
 
@@ -28842,9 +28842,9 @@ const numbers = [4, 9, 16, 25, 29];
 let ok = numbers.every(v => v > 18);
 ```
 
-<img alt="js-array-reference example 8 source" src="./code_sandbox/snaps/js-array-reference-08-code.png" />
+![js-array-reference example 8 source](./code_sandbox/snaps/js-array-reference-08-code.png)
 
-<img alt="js-array-reference example 8 result" src="./code_sandbox/snaps/js-array-reference-08-result.png" />
+![js-array-reference example 8 result](./code_sandbox/snaps/js-array-reference-08-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -28861,9 +28861,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.fill("Kiwi");
 ```
 
-<img alt="js-array-reference example 9 source" src="./code_sandbox/snaps/js-array-reference-09-code.png" />
+![js-array-reference example 9 source](./code_sandbox/snaps/js-array-reference-09-code.png)
 
-<img alt="js-array-reference example 9 result" src="./code_sandbox/snaps/js-array-reference-09-result.png" />
+![js-array-reference example 9 result](./code_sandbox/snaps/js-array-reference-09-result.png)
 
 - [x] **Outcome:** **["Kiwi","Kiwi","Kiwi","Kiwi"]**.
 
@@ -28880,9 +28880,9 @@ const numbers = [4, 9, 16, 25, 29];
 const over = numbers.filter(v => v > 18);
 ```
 
-<img alt="js-array-reference example 10 source" src="./code_sandbox/snaps/js-array-reference-10-code.png" />
+![js-array-reference example 10 source](./code_sandbox/snaps/js-array-reference-10-code.png)
 
-<img alt="js-array-reference example 10 result" src="./code_sandbox/snaps/js-array-reference-10-result.png" />
+![js-array-reference example 10 result](./code_sandbox/snaps/js-array-reference-10-result.png)
 
 - [x] **Outcome:** **[25,29]**.
 
@@ -28899,9 +28899,9 @@ const numbers = [4, 9, 16, 25, 29];
 let first = numbers.find(v => v > 18);
 ```
 
-<img alt="js-array-reference example 11 source" src="./code_sandbox/snaps/js-array-reference-11-code.png" />
+![js-array-reference example 11 source](./code_sandbox/snaps/js-array-reference-11-code.png)
 
-<img alt="js-array-reference example 11 result" src="./code_sandbox/snaps/js-array-reference-11-result.png" />
+![js-array-reference example 11 result](./code_sandbox/snaps/js-array-reference-11-result.png)
 
 - [x] **Outcome:** **25**.
 
@@ -28918,9 +28918,9 @@ const numbers = [4, 9, 16, 25, 29];
 let i = numbers.findIndex(v => v > 18);
 ```
 
-<img alt="js-array-reference example 12 source" src="./code_sandbox/snaps/js-array-reference-12-code.png" />
+![js-array-reference example 12 source](./code_sandbox/snaps/js-array-reference-12-code.png)
 
-<img alt="js-array-reference example 12 result" src="./code_sandbox/snaps/js-array-reference-12-result.png" />
+![js-array-reference example 12 result](./code_sandbox/snaps/js-array-reference-12-result.png)
 
 - [x] **Outcome:** **3**.
 
@@ -28937,9 +28937,9 @@ const temp = [27, 28, 30, 40, 42, 35, 30];
 let high = temp.findLast(x => x > 40);
 ```
 
-<img alt="js-array-reference example 13 source" src="./code_sandbox/snaps/js-array-reference-13-code.png" />
+![js-array-reference example 13 source](./code_sandbox/snaps/js-array-reference-13-code.png)
 
-<img alt="js-array-reference example 13 result" src="./code_sandbox/snaps/js-array-reference-13-result.png" />
+![js-array-reference example 13 result](./code_sandbox/snaps/js-array-reference-13-result.png)
 
 - [x] **Outcome:** **42**.
 
@@ -28956,9 +28956,9 @@ const temp = [27, 28, 30, 40, 42, 35, 30];
 let pos = temp.findLastIndex(x => x > 40);
 ```
 
-<img alt="js-array-reference example 14 source" src="./code_sandbox/snaps/js-array-reference-14-code.png" />
+![js-array-reference example 14 source](./code_sandbox/snaps/js-array-reference-14-code.png)
 
-<img alt="js-array-reference example 14 result" src="./code_sandbox/snaps/js-array-reference-14-result.png" />
+![js-array-reference example 14 result](./code_sandbox/snaps/js-array-reference-14-result.png)
 
 - [x] **Outcome:** **4**.
 
@@ -28974,9 +28974,9 @@ Sandbox: `code_sandbox/js-array-reference/flat.html`
 const newArr = [[1,2],[3,4]].flat();
 ```
 
-<img alt="js-array-reference example 15 source" src="./code_sandbox/snaps/js-array-reference-15-code.png" />
+![js-array-reference example 15 source](./code_sandbox/snaps/js-array-reference-15-code.png)
 
-<img alt="js-array-reference example 15 result" src="./code_sandbox/snaps/js-array-reference-15-result.png" />
+![js-array-reference example 15 result](./code_sandbox/snaps/js-array-reference-15-result.png)
 
 - [x] **Outcome:** **[1,2,3,4]**.
 
@@ -28992,9 +28992,9 @@ Sandbox: `code_sandbox/js-array-reference/flatmap.html`
 const newArr = [1, 2].flatMap(x => [x, x * 10]);
 ```
 
-<img alt="js-array-reference example 16 source" src="./code_sandbox/snaps/js-array-reference-16-code.png" />
+![js-array-reference example 16 source](./code_sandbox/snaps/js-array-reference-16-code.png)
 
-<img alt="js-array-reference example 16 result" src="./code_sandbox/snaps/js-array-reference-16-result.png" />
+![js-array-reference example 16 result](./code_sandbox/snaps/js-array-reference-16-result.png)
 
 - [x] **Outcome:** **[1,10,2,20]**.
 
@@ -29012,9 +29012,9 @@ let text = "";
 fruits.forEach(function(value){ text += value + " "; });
 ```
 
-<img alt="js-array-reference example 17 source" src="./code_sandbox/snaps/js-array-reference-17-code.png" />
+![js-array-reference example 17 source](./code_sandbox/snaps/js-array-reference-17-code.png)
 
-<img alt="js-array-reference example 17 result" src="./code_sandbox/snaps/js-array-reference-17-result.png" />
+![js-array-reference example 17 result](./code_sandbox/snaps/js-array-reference-17-result.png)
 
 - [x] **Outcome:** **Banana Orange Apple Mango** (trailing space).
 
@@ -29030,9 +29030,9 @@ Sandbox: `code_sandbox/js-array-reference/from.html`
 const letters = Array.from("ABC");
 ```
 
-<img alt="js-array-reference example 18 source" src="./code_sandbox/snaps/js-array-reference-18-code.png" />
+![js-array-reference example 18 source](./code_sandbox/snaps/js-array-reference-18-code.png)
 
-<img alt="js-array-reference example 18 result" src="./code_sandbox/snaps/js-array-reference-18-result.png" />
+![js-array-reference example 18 result](./code_sandbox/snaps/js-array-reference-18-result.png)
 
 - [x] **Outcome:** **["A","B","C"]**.
 
@@ -29049,9 +29049,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.includes("Mango");
 ```
 
-<img alt="js-array-reference example 19 source" src="./code_sandbox/snaps/js-array-reference-19-code.png" />
+![js-array-reference example 19 source](./code_sandbox/snaps/js-array-reference-19-code.png)
 
-<img alt="js-array-reference example 19 result" src="./code_sandbox/snaps/js-array-reference-19-result.png" />
+![js-array-reference example 19 result](./code_sandbox/snaps/js-array-reference-19-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -29068,9 +29068,9 @@ const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let i = fruits.indexOf("Apple");
 ```
 
-<img alt="js-array-reference example 20 source" src="./code_sandbox/snaps/js-array-reference-20-code.png" />
+![js-array-reference example 20 source](./code_sandbox/snaps/js-array-reference-20-code.png)
 
-<img alt="js-array-reference example 20 result" src="./code_sandbox/snaps/js-array-reference-20-result.png" />
+![js-array-reference example 20 result](./code_sandbox/snaps/js-array-reference-20-result.png)
 
 - [x] **Outcome:** **0**.
 
@@ -29087,9 +29087,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 Array.isArray(fruits);
 ```
 
-<img alt="js-array-reference example 21 source" src="./code_sandbox/snaps/js-array-reference-21-code.png" />
+![js-array-reference example 21 source](./code_sandbox/snaps/js-array-reference-21-code.png)
 
-<img alt="js-array-reference example 21 result" src="./code_sandbox/snaps/js-array-reference-21-result.png" />
+![js-array-reference example 21 result](./code_sandbox/snaps/js-array-reference-21-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -29106,9 +29106,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.join(" * ");
 ```
 
-<img alt="js-array-reference example 22 source" src="./code_sandbox/snaps/js-array-reference-22-code.png" />
+![js-array-reference example 22 source](./code_sandbox/snaps/js-array-reference-22-code.png)
 
-<img alt="js-array-reference example 22 result" src="./code_sandbox/snaps/js-array-reference-22-result.png" />
+![js-array-reference example 22 result](./code_sandbox/snaps/js-array-reference-22-result.png)
 
 - [x] **Outcome:** **Banana * Orange * Apple * Mango**.
 
@@ -29125,9 +29125,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 const keys = Array.from(fruits.keys());
 ```
 
-<img alt="js-array-reference example 23 source" src="./code_sandbox/snaps/js-array-reference-23-code.png" />
+![js-array-reference example 23 source](./code_sandbox/snaps/js-array-reference-23-code.png)
 
-<img alt="js-array-reference example 23 result" src="./code_sandbox/snaps/js-array-reference-23-result.png" />
+![js-array-reference example 23 result](./code_sandbox/snaps/js-array-reference-23-result.png)
 
 - [x] **Outcome:** **[0,1,2,3]**.
 
@@ -29144,9 +29144,9 @@ const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let i = fruits.lastIndexOf("Apple");
 ```
 
-<img alt="js-array-reference example 24 source" src="./code_sandbox/snaps/js-array-reference-24-code.png" />
+![js-array-reference example 24 source](./code_sandbox/snaps/js-array-reference-24-code.png)
 
-<img alt="js-array-reference example 24 result" src="./code_sandbox/snaps/js-array-reference-24-result.png" />
+![js-array-reference example 24 result](./code_sandbox/snaps/js-array-reference-24-result.png)
 
 - [x] **Outcome:** **2**.
 
@@ -29163,9 +29163,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let n = fruits.length;
 ```
 
-<img alt="js-array-reference example 25 source" src="./code_sandbox/snaps/js-array-reference-25-code.png" />
+![js-array-reference example 25 source](./code_sandbox/snaps/js-array-reference-25-code.png)
 
-<img alt="js-array-reference example 25 result" src="./code_sandbox/snaps/js-array-reference-25-result.png" />
+![js-array-reference example 25 result](./code_sandbox/snaps/js-array-reference-25-result.png)
 
 - [x] **Outcome:** **4**.
 
@@ -29181,9 +29181,9 @@ Sandbox: `code_sandbox/js-array-reference/map.html`
 const doubled = [4, 9, 16].map(v => v * 2);
 ```
 
-<img alt="js-array-reference example 26 source" src="./code_sandbox/snaps/js-array-reference-26-code.png" />
+![js-array-reference example 26 source](./code_sandbox/snaps/js-array-reference-26-code.png)
 
-<img alt="js-array-reference example 26 result" src="./code_sandbox/snaps/js-array-reference-26-result.png" />
+![js-array-reference example 26 result](./code_sandbox/snaps/js-array-reference-26-result.png)
 
 - [x] **Outcome:** **[8,18,32]**.
 
@@ -29200,9 +29200,9 @@ const a = Array.of(7);
 const b = Array.of(1, 2, 3);
 ```
 
-<img alt="js-array-reference example 27 source" src="./code_sandbox/snaps/js-array-reference-27-code.png" />
+![js-array-reference example 27 source](./code_sandbox/snaps/js-array-reference-27-code.png)
 
-<img alt="js-array-reference example 27 result" src="./code_sandbox/snaps/js-array-reference-27-result.png" />
+![js-array-reference example 27 result](./code_sandbox/snaps/js-array-reference-27-result.png)
 
 - [x] **Outcome:** **[7]** and **[1,2,3]**.
 
@@ -29219,9 +29219,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.pop();
 ```
 
-<img alt="js-array-reference example 28 source" src="./code_sandbox/snaps/js-array-reference-28-code.png" />
+![js-array-reference example 28 source](./code_sandbox/snaps/js-array-reference-28-code.png)
 
-<img alt="js-array-reference example 28 result" src="./code_sandbox/snaps/js-array-reference-28-result.png" />
+![js-array-reference example 28 result](./code_sandbox/snaps/js-array-reference-28-result.png)
 
 - [x] **Outcome:** **Mango**. fruits **["Banana","Orange","Apple"]**.
 
@@ -29242,9 +29242,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.last();
 ```
 
-<img alt="js-array-reference example 29 source" src="./code_sandbox/snaps/js-array-reference-29-code.png" />
+![js-array-reference example 29 source](./code_sandbox/snaps/js-array-reference-29-code.png)
 
-<img alt="js-array-reference example 29 result" src="./code_sandbox/snaps/js-array-reference-29-result.png" />
+![js-array-reference example 29 result](./code_sandbox/snaps/js-array-reference-29-result.png)
 
 - [x] **Outcome:** **Mango**. Isolated to this file — do not add this to shared pages.
 
@@ -29261,9 +29261,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let n = fruits.push("Kiwi");
 ```
 
-<img alt="js-array-reference example 30 source" src="./code_sandbox/snaps/js-array-reference-30-code.png" />
+![js-array-reference example 30 source](./code_sandbox/snaps/js-array-reference-30-code.png)
 
-<img alt="js-array-reference example 30 result" src="./code_sandbox/snaps/js-array-reference-30-result.png" />
+![js-array-reference example 30 result](./code_sandbox/snaps/js-array-reference-30-result.png)
 
 - [x] **Outcome:** length **5**. **["Banana","Orange","Apple","Mango","Kiwi"]**.
 
@@ -29280,9 +29280,9 @@ const numbers = [45, 4, 9, 16, 25];
 let sum = numbers.reduce((t, v) => t + v);
 ```
 
-<img alt="js-array-reference example 31 source" src="./code_sandbox/snaps/js-array-reference-31-code.png" />
+![js-array-reference example 31 source](./code_sandbox/snaps/js-array-reference-31-code.png)
 
-<img alt="js-array-reference example 31 result" src="./code_sandbox/snaps/js-array-reference-31-result.png" />
+![js-array-reference example 31 result](./code_sandbox/snaps/js-array-reference-31-result.png)
 
 - [x] **Outcome:** **99**.
 
@@ -29299,9 +29299,9 @@ const numbers = [45, 4, 9, 16, 25];
 let sum = numbers.reduceRight((t, v) => t + v);
 ```
 
-<img alt="js-array-reference example 32 source" src="./code_sandbox/snaps/js-array-reference-32-code.png" />
+![js-array-reference example 32 source](./code_sandbox/snaps/js-array-reference-32-code.png)
 
-<img alt="js-array-reference example 32 result" src="./code_sandbox/snaps/js-array-reference-32-result.png" />
+![js-array-reference example 32 result](./code_sandbox/snaps/js-array-reference-32-result.png)
 
 - [x] **Outcome:** **99**.
 
@@ -29318,9 +29318,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.reverse();
 ```
 
-<img alt="js-array-reference example 33 source" src="./code_sandbox/snaps/js-array-reference-33-code.png" />
+![js-array-reference example 33 source](./code_sandbox/snaps/js-array-reference-33-code.png)
 
-<img alt="js-array-reference example 33 result" src="./code_sandbox/snaps/js-array-reference-33-result.png" />
+![js-array-reference example 33 result](./code_sandbox/snaps/js-array-reference-33-result.png)
 
 - [x] **Outcome:** **["Mango","Apple","Orange","Banana"]**.
 
@@ -29337,9 +29337,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.shift();
 ```
 
-<img alt="js-array-reference example 34 source" src="./code_sandbox/snaps/js-array-reference-34-code.png" />
+![js-array-reference example 34 source](./code_sandbox/snaps/js-array-reference-34-code.png)
 
-<img alt="js-array-reference example 34 result" src="./code_sandbox/snaps/js-array-reference-34-result.png" />
+![js-array-reference example 34 result](./code_sandbox/snaps/js-array-reference-34-result.png)
 
 - [x] **Outcome:** **Banana**. fruits **["Orange","Apple","Mango"]**.
 
@@ -29356,9 +29356,9 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1, 3);
 ```
 
-<img alt="js-array-reference example 35 source" src="./code_sandbox/snaps/js-array-reference-35-code.png" />
+![js-array-reference example 35 source](./code_sandbox/snaps/js-array-reference-35-code.png)
 
-<img alt="js-array-reference example 35 result" src="./code_sandbox/snaps/js-array-reference-35-result.png" />
+![js-array-reference example 35 result](./code_sandbox/snaps/js-array-reference-35-result.png)
 
 - [x] **Outcome:** **["Orange","Lemon"]**.
 
@@ -29375,9 +29375,9 @@ const numbers = [4, 9, 16, 25, 29];
 let ok = numbers.some(v => v > 18);
 ```
 
-<img alt="js-array-reference example 36 source" src="./code_sandbox/snaps/js-array-reference-36-code.png" />
+![js-array-reference example 36 source](./code_sandbox/snaps/js-array-reference-36-code.png)
 
-<img alt="js-array-reference example 36 result" src="./code_sandbox/snaps/js-array-reference-36-result.png" />
+![js-array-reference example 36 result](./code_sandbox/snaps/js-array-reference-36-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -29394,9 +29394,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
 ```
 
-<img alt="js-array-reference example 37 source" src="./code_sandbox/snaps/js-array-reference-37-code.png" />
+![js-array-reference example 37 source](./code_sandbox/snaps/js-array-reference-37-code.png)
 
-<img alt="js-array-reference example 37 result" src="./code_sandbox/snaps/js-array-reference-37-result.png" />
+![js-array-reference example 37 result](./code_sandbox/snaps/js-array-reference-37-result.png)
 
 - [x] **Outcome:** **["Apple","Banana","Mango","Orange"]**.
 
@@ -29413,9 +29413,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(2, 0, "Lemon", "Kiwi");
 ```
 
-<img alt="js-array-reference example 38 source" src="./code_sandbox/snaps/js-array-reference-38-code.png" />
+![js-array-reference example 38 source](./code_sandbox/snaps/js-array-reference-38-code.png)
 
-<img alt="js-array-reference example 38 result" src="./code_sandbox/snaps/js-array-reference-38-result.png" />
+![js-array-reference example 38 result](./code_sandbox/snaps/js-array-reference-38-result.png)
 
 - [x] **Outcome:** **["Banana","Orange","Lemon","Kiwi","Apple","Mango"]**.
 
@@ -29432,9 +29432,9 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const reversed = months.toReversed();
 ```
 
-<img alt="js-array-reference example 39 source" src="./code_sandbox/snaps/js-array-reference-39-code.png" />
+![js-array-reference example 39 source](./code_sandbox/snaps/js-array-reference-39-code.png)
 
-<img alt="js-array-reference example 39 result" src="./code_sandbox/snaps/js-array-reference-39-result.png" />
+![js-array-reference example 39 result](./code_sandbox/snaps/js-array-reference-39-result.png)
 
 - [x] **Outcome:** **["Apr","Mar","Feb","Jan"]**. Original unchanged.
 
@@ -29451,9 +29451,9 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const sorted = months.toSorted();
 ```
 
-<img alt="js-array-reference example 40 source" src="./code_sandbox/snaps/js-array-reference-40-code.png" />
+![js-array-reference example 40 source](./code_sandbox/snaps/js-array-reference-40-code.png)
 
-<img alt="js-array-reference example 40 result" src="./code_sandbox/snaps/js-array-reference-40-result.png" />
+![js-array-reference example 40 result](./code_sandbox/snaps/js-array-reference-40-result.png)
 
 - [x] **Outcome:** **["Apr","Feb","Jan","Mar"]**. Original unchanged.
 
@@ -29470,9 +29470,9 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const spliced = months.toSpliced(0, 1);
 ```
 
-<img alt="js-array-reference example 41 source" src="./code_sandbox/snaps/js-array-reference-41-code.png" />
+![js-array-reference example 41 source](./code_sandbox/snaps/js-array-reference-41-code.png)
 
-<img alt="js-array-reference example 41 result" src="./code_sandbox/snaps/js-array-reference-41-result.png" />
+![js-array-reference example 41 result](./code_sandbox/snaps/js-array-reference-41-result.png)
 
 - [x] **Outcome:** **["Feb","Mar","Apr"]**. Original unchanged.
 
@@ -29489,9 +29489,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.toString();
 ```
 
-<img alt="js-array-reference example 42 source" src="./code_sandbox/snaps/js-array-reference-42-code.png" />
+![js-array-reference example 42 source](./code_sandbox/snaps/js-array-reference-42-code.png)
 
-<img alt="js-array-reference example 42 result" src="./code_sandbox/snaps/js-array-reference-42-result.png" />
+![js-array-reference example 42 result](./code_sandbox/snaps/js-array-reference-42-result.png)
 
 - [x] **Outcome:** **Banana,Orange,Apple,Mango**.
 
@@ -29508,9 +29508,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let n = fruits.unshift("Lemon");
 ```
 
-<img alt="js-array-reference example 43 source" src="./code_sandbox/snaps/js-array-reference-43-code.png" />
+![js-array-reference example 43 source](./code_sandbox/snaps/js-array-reference-43-code.png)
 
-<img alt="js-array-reference example 43 result" src="./code_sandbox/snaps/js-array-reference-43-result.png" />
+![js-array-reference example 43 result](./code_sandbox/snaps/js-array-reference-43-result.png)
 
 - [x] **Outcome:** length **5**. **["Lemon","Banana","Orange","Apple","Mango"]**.
 
@@ -29528,9 +29528,9 @@ fruits.valueOf() === fruits;
 String(fruits.valueOf());
 ```
 
-<img alt="js-array-reference example 44 source" src="./code_sandbox/snaps/js-array-reference-44-code.png" />
+![js-array-reference example 44 source](./code_sandbox/snaps/js-array-reference-44-code.png)
 
-<img alt="js-array-reference example 44 result" src="./code_sandbox/snaps/js-array-reference-44-result.png" />
+![js-array-reference example 44 result](./code_sandbox/snaps/js-array-reference-44-result.png)
 
 - [x] **Outcome:** `=== fruits` is **true**. String is **Banana,Orange,Apple,Mango**.
 
@@ -29547,9 +29547,9 @@ const months = ["Januar", "Februar", "Mar", "April"];
 const next = months.with(2, "March");
 ```
 
-<img alt="js-array-reference example 45 source" src="./code_sandbox/snaps/js-array-reference-45-code.png" />
+![js-array-reference example 45 source](./code_sandbox/snaps/js-array-reference-45-code.png)
 
-<img alt="js-array-reference example 45 result" src="./code_sandbox/snaps/js-array-reference-45-result.png" />
+![js-array-reference example 45 result](./code_sandbox/snaps/js-array-reference-45-result.png)
 
 - [x] **Outcome:** **["Januar","Februar","March","April"]**. Original still **"Mar"**.
 
@@ -29737,9 +29737,9 @@ Sandbox: `code_sandbox/js-array-const/const-declare.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-array-const example 1 source" src="./code_sandbox/snaps/js-array-const-01-code.png" />
+![js-array-const example 1 source](./code_sandbox/snaps/js-array-const-01-code.png)
 
-<img alt="js-array-const example 1 result" src="./code_sandbox/snaps/js-array-const-01-result.png" />
+![js-array-const example 1 result](./code_sandbox/snaps/js-array-const-01-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -29756,9 +29756,9 @@ const cars = ["Saab", "Volvo", "BMW"];
 cars = ["Toyota", "Volvo", "Audi"]; // ERROR
 ```
 
-<img alt="js-array-const example 2 source" src="./code_sandbox/snaps/js-array-const-02-code.png" />
+![js-array-const example 2 source](./code_sandbox/snaps/js-array-const-02-code.png)
 
-<img alt="js-array-const example 2 result" src="./code_sandbox/snaps/js-array-const-02-result.png" />
+![js-array-const example 2 result](./code_sandbox/snaps/js-array-const-02-result.png)
 
 - [x] **Outcome:** **TypeError: Assignment to constant variable.**
 
@@ -29776,9 +29776,9 @@ cars[0] = "Toyota";
 cars.push("Audi");
 ```
 
-<img alt="js-array-const example 3 source" src="./code_sandbox/snaps/js-array-const-03-code.png" />
+![js-array-const example 3 source](./code_sandbox/snaps/js-array-const-03-code.png)
 
-<img alt="js-array-const example 3 result" src="./code_sandbox/snaps/js-array-const-03-result.png" />
+![js-array-const example 3 result](./code_sandbox/snaps/js-array-const-03-result.png)
 
 - [x] **Outcome:** **["Toyota","Volvo","BMW","Audi"]**.
 
@@ -29796,9 +29796,9 @@ const cars;
 cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-array-const example 4 source" src="./code_sandbox/snaps/js-array-const-04-code.png" />
+![js-array-const example 4 source](./code_sandbox/snaps/js-array-const-04-code.png)
 
-<img alt="js-array-const example 4 result" src="./code_sandbox/snaps/js-array-const-04-result.png" />
+![js-array-const example 4 result](./code_sandbox/snaps/js-array-const-04-result.png)
 
 - [x] **Outcome:** **SyntaxError: Missing initializer in const declaration** (caught via `new Function`).
 
@@ -29815,9 +29815,9 @@ cars = ["Saab", "Volvo", "BMW"];
 var cars;
 ```
 
-<img alt="js-array-const example 5 source" src="./code_sandbox/snaps/js-array-const-05-code.png" />
+![js-array-const example 5 source](./code_sandbox/snaps/js-array-const-05-code.png)
 
-<img alt="js-array-const example 5 result" src="./code_sandbox/snaps/js-array-const-05-result.png" />
+![js-array-const example 5 result](./code_sandbox/snaps/js-array-const-05-result.png)
 
 - [x] **Outcome:** **["Saab","Volvo","BMW"]**.
 
@@ -29839,9 +29839,9 @@ let inside;
 let outside = cars[0];
 ```
 
-<img alt="js-array-const example 6 source" src="./code_sandbox/snaps/js-array-const-06-code.png" />
+![js-array-const example 6 source](./code_sandbox/snaps/js-array-const-06-code.png)
 
-<img alt="js-array-const example 6 result" src="./code_sandbox/snaps/js-array-const-06-result.png" />
+![js-array-const example 6 result](./code_sandbox/snaps/js-array-const-06-result.png)
 
 - [x] **Outcome:** Inside the block **"Toyota"**. After the block **"Saab"**.
 
@@ -29863,9 +29863,9 @@ let inside;
 let outside = cars[0];
 ```
 
-<img alt="js-array-const example 7 source" src="./code_sandbox/snaps/js-array-const-07-code.png" />
+![js-array-const example 7 source](./code_sandbox/snaps/js-array-const-07-code.png)
 
-<img alt="js-array-const example 7 result" src="./code_sandbox/snaps/js-array-const-07-result.png" />
+![js-array-const example 7 result](./code_sandbox/snaps/js-array-const-07-result.png)
 
 - [x] **Outcome:** Both inside and after the block: **"Toyota"**.
 
@@ -29883,9 +29883,9 @@ var cars = ["Toyota", "BMW"];
 cars = ["Volvo", "Saab"];
 ```
 
-<img alt="js-array-const example 8 source" src="./code_sandbox/snaps/js-array-const-08-code.png" />
+![js-array-const example 8 source](./code_sandbox/snaps/js-array-const-08-code.png)
 
-<img alt="js-array-const example 8 result" src="./code_sandbox/snaps/js-array-const-08-result.png" />
+![js-array-const example 8 result](./code_sandbox/snaps/js-array-const-08-result.png)
 
 - [x] **Outcome:** **["Volvo","Saab"]**.
 
@@ -29902,9 +29902,9 @@ var cars = ["Volvo", "BMW"];
 const cars = ["Volvo", "BMW"]; // Not allowed
 ```
 
-<img alt="js-array-const example 9 source" src="./code_sandbox/snaps/js-array-const-09-code.png" />
+![js-array-const example 9 source](./code_sandbox/snaps/js-array-const-09-code.png)
 
-<img alt="js-array-const example 9 result" src="./code_sandbox/snaps/js-array-const-09-result.png" />
+![js-array-const example 9 result](./code_sandbox/snaps/js-array-const-09-result.png)
 
 - [x] **Outcome:** **SyntaxError: Identifier 'cars' has already been declared** (caught via `new Function`).
 
@@ -29921,9 +29921,9 @@ const cars = ["Volvo", "BMW"];
 const cars = ["Volvo", "BMW"]; // Not allowed
 ```
 
-<img alt="js-array-const example 10 source" src="./code_sandbox/snaps/js-array-const-10-code.png" />
+![js-array-const example 10 source](./code_sandbox/snaps/js-array-const-10-code.png)
 
-<img alt="js-array-const example 10 result" src="./code_sandbox/snaps/js-array-const-10-result.png" />
+![js-array-const example 10 result](./code_sandbox/snaps/js-array-const-10-result.png)
 
 - [x] **Outcome:** **SyntaxError: Identifier 'cars' has already been declared** (caught via `new Function`).
 
@@ -29950,9 +29950,9 @@ let inner2;
 let outer = JSON.stringify(cars);
 ```
 
-<img alt="js-array-const example 11 source" src="./code_sandbox/snaps/js-array-const-11-code.png" />
+![js-array-const example 11 source](./code_sandbox/snaps/js-array-const-11-code.png)
 
-<img alt="js-array-const example 11 result" src="./code_sandbox/snaps/js-array-const-11-result.png" />
+![js-array-const example 11 result](./code_sandbox/snaps/js-array-const-11-result.png)
 
 - [x] **Outcome:** Inner blocks **["Toyota","BMW"]** and **["Saab","Audi"]**. Outer still **["Volvo","BMW"]**.
 
@@ -30131,9 +30131,9 @@ Sandbox: `code_sandbox/js-sets/new-set-array.html`
 const letters = new Set(["a","b","c"]);
 ```
 
-<img alt="js-sets example 1 source" src="./code_sandbox/snaps/js-sets-01-code.png" />
+![js-sets example 1 source](./code_sandbox/snaps/js-sets-01-code.png)
 
-<img alt="js-sets example 1 result" src="./code_sandbox/snaps/js-sets-01-result.png" />
+![js-sets example 1 result](./code_sandbox/snaps/js-sets-01-result.png)
 
 - [x] **Outcome:** letters is **["a","b","c"]**. size is **3**.
 
@@ -30152,9 +30152,9 @@ letters.add("b");
 letters.add("c");
 ```
 
-<img alt="js-sets example 2 source" src="./code_sandbox/snaps/js-sets-02-code.png" />
+![js-sets example 2 source](./code_sandbox/snaps/js-sets-02-code.png)
 
-<img alt="js-sets example 2 result" src="./code_sandbox/snaps/js-sets-02-result.png" />
+![js-sets example 2 result](./code_sandbox/snaps/js-sets-02-result.png)
 
 - [x] **Outcome:** Same result: **["a","b","c"]**, size **3**.
 
@@ -30176,9 +30176,9 @@ letters.add(b);
 letters.add(c);
 ```
 
-<img alt="js-sets example 3 source" src="./code_sandbox/snaps/js-sets-03-code.png" />
+![js-sets example 3 source](./code_sandbox/snaps/js-sets-03-code.png)
 
-<img alt="js-sets example 3 result" src="./code_sandbox/snaps/js-sets-03-result.png" />
+![js-sets example 3 result](./code_sandbox/snaps/js-sets-03-result.png)
 
 - [x] **Outcome:** Still **["a","b","c"]**. The variables were just another way to pass **"a"**, **"b"**, **"c"**.
 
@@ -30197,9 +30197,9 @@ letters.add("d");
 letters.add("e");
 ```
 
-<img alt="js-sets example 4 source" src="./code_sandbox/snaps/js-sets-04-code.png" />
+![js-sets example 4 source](./code_sandbox/snaps/js-sets-04-code.png)
 
-<img alt="js-sets example 4 result" src="./code_sandbox/snaps/js-sets-04-result.png" />
+![js-sets example 4 result](./code_sandbox/snaps/js-sets-04-result.png)
 
 - [x] **Outcome:** letters is **["a","b","c","d","e"]**. size is **5**.
 
@@ -30224,9 +30224,9 @@ letters.add("c");
 letters.add("c");
 ```
 
-<img alt="js-sets example 5 source" src="./code_sandbox/snaps/js-sets-05-code.png" />
+![js-sets example 5 source](./code_sandbox/snaps/js-sets-05-code.png)
 
-<img alt="js-sets example 5 result" src="./code_sandbox/snaps/js-sets-05-result.png" />
+![js-sets example 5 result](./code_sandbox/snaps/js-sets-05-result.png)
 
 - [x] **Outcome:** Six `add("c")` calls still leave **["a","b","c"]**. size stays **3**.
 
@@ -30246,9 +30246,9 @@ for (const x of letters) {
 }
 ```
 
-<img alt="js-sets example 6 source" src="./code_sandbox/snaps/js-sets-06-code.png" />
+![js-sets example 6 source](./code_sandbox/snaps/js-sets-06-code.png)
 
-<img alt="js-sets example 6 result" src="./code_sandbox/snaps/js-sets-06-result.png" />
+![js-sets example 6 result](./code_sandbox/snaps/js-sets-06-result.png)
 
 - [x] **Outcome:** text is **"abc"**. The loop concatenated **"a"**, **"b"**, **"c"** with no separator.
 
@@ -30266,9 +30266,9 @@ const letters = new Set(["a","b","c"]);
 typeof letters;
 ```
 
-<img alt="js-sets example 7 source" src="./code_sandbox/snaps/js-sets-07-code.png" />
+![js-sets example 7 source](./code_sandbox/snaps/js-sets-07-code.png)
 
-<img alt="js-sets example 7 result" src="./code_sandbox/snaps/js-sets-07-result.png" />
+![js-sets example 7 result](./code_sandbox/snaps/js-sets-07-result.png)
 
 - [x] **Outcome:** `typeof letters` is **object**.
 
@@ -30285,9 +30285,9 @@ const letters = new Set(["a","b","c"]);
 letters instanceof Set;
 ```
 
-<img alt="js-sets example 8 source" src="./code_sandbox/snaps/js-sets-08-code.png" />
+![js-sets example 8 source](./code_sandbox/snaps/js-sets-08-code.png)
 
-<img alt="js-sets example 8 result" src="./code_sandbox/snaps/js-sets-08-result.png" />
+![js-sets example 8 result](./code_sandbox/snaps/js-sets-08-result.png)
 
 - [x] **Outcome:** `instanceof Set` is **true**.
 
@@ -30305,9 +30305,9 @@ const obj = {n: 1};
 const letters = new Set([1, "1", obj, obj]);
 ```
 
-<img alt="js-sets example 9 source" src="./code_sandbox/snaps/js-sets-09-code.png" />
+![js-sets example 9 source](./code_sandbox/snaps/js-sets-09-code.png)
 
-<img alt="js-sets example 9 result" src="./code_sandbox/snaps/js-sets-09-result.png" />
+![js-sets example 9 result](./code_sandbox/snaps/js-sets-09-result.png)
 
 - [x] **Outcome:** The Set is **[1,"1",{"n":1}]**. size is **3** — `obj` was stored once.
 
@@ -30326,9 +30326,9 @@ const b = {x: 1};
 const letters = new Set([a, b]);
 ```
 
-<img alt="js-sets example 10 source" src="./code_sandbox/snaps/js-sets-10-code.png" />
+![js-sets example 10 source](./code_sandbox/snaps/js-sets-10-code.png)
 
-<img alt="js-sets example 10 result" src="./code_sandbox/snaps/js-sets-10-result.png" />
+![js-sets example 10 result](./code_sandbox/snaps/js-sets-10-result.png)
 
 - [x] **Outcome:** size is **2**. JSON is **[{"x":1},{"x":1}]** — same shape, two objects.
 
@@ -30501,9 +30501,9 @@ Sandbox: `code_sandbox/js-set-methods/new-set.html`
 const letters = new Set(["a","b","c"]);
 ```
 
-<img alt="js-set-methods example 1 source" src="./code_sandbox/snaps/js-set-methods-01-code.png" />
+![js-set-methods example 1 source](./code_sandbox/snaps/js-set-methods-01-code.png)
 
-<img alt="js-set-methods example 1 result" src="./code_sandbox/snaps/js-set-methods-01-result.png" />
+![js-set-methods example 1 result](./code_sandbox/snaps/js-set-methods-01-result.png)
 
 - [x] **Outcome:** letters is **["a","b","c"]**. size is **3**.
 
@@ -30521,9 +30521,9 @@ letters.add("d");
 letters.add("e");
 ```
 
-<img alt="js-set-methods example 2 source" src="./code_sandbox/snaps/js-set-methods-02-code.png" />
+![js-set-methods example 2 source](./code_sandbox/snaps/js-set-methods-02-code.png)
 
-<img alt="js-set-methods example 2 result" src="./code_sandbox/snaps/js-set-methods-02-result.png" />
+![js-set-methods example 2 result](./code_sandbox/snaps/js-set-methods-02-result.png)
 
 - [x] **Outcome:** After the two adds: **["a","b","c","d","e"]**, size **5**.
 
@@ -30547,9 +30547,9 @@ letters.add("c");
 letters.add("c");
 ```
 
-<img alt="js-set-methods example 3 source" src="./code_sandbox/snaps/js-set-methods-03-code.png" />
+![js-set-methods example 3 source](./code_sandbox/snaps/js-set-methods-03-code.png)
 
-<img alt="js-set-methods example 3 result" src="./code_sandbox/snaps/js-set-methods-03-result.png" />
+![js-set-methods example 3 result](./code_sandbox/snaps/js-set-methods-03-result.png)
 
 - [x] **Outcome:** Result is **["a","b","c"]**. size **3**.
 
@@ -30566,9 +30566,9 @@ const mySet = new Set(["a","b","c"]);
 mySet.size;
 ```
 
-<img alt="js-set-methods example 4 source" src="./code_sandbox/snaps/js-set-methods-04-code.png" />
+![js-set-methods example 4 source](./code_sandbox/snaps/js-set-methods-04-code.png)
 
-<img alt="js-set-methods example 4 result" src="./code_sandbox/snaps/js-set-methods-04-result.png" />
+![js-set-methods example 4 result](./code_sandbox/snaps/js-set-methods-04-result.png)
 
 - [x] **Outcome:** `mySet.size` is **3**.
 
@@ -30588,9 +30588,9 @@ for (const x of letters) {
 }
 ```
 
-<img alt="js-set-methods example 5 source" src="./code_sandbox/snaps/js-set-methods-05-code.png" />
+![js-set-methods example 5 source](./code_sandbox/snaps/js-set-methods-05-code.png)
 
-<img alt="js-set-methods example 5 result" src="./code_sandbox/snaps/js-set-methods-05-result.png" />
+![js-set-methods example 5 result](./code_sandbox/snaps/js-set-methods-05-result.png)
 
 - [x] **Outcome:** text is **"abc"**.
 
@@ -30608,9 +30608,9 @@ const letters = new Set(["a","b","c"]);
 const answer = letters.has("d");
 ```
 
-<img alt="js-set-methods example 6 source" src="./code_sandbox/snaps/js-set-methods-06-code.png" />
+![js-set-methods example 6 source](./code_sandbox/snaps/js-set-methods-06-code.png)
 
-<img alt="js-set-methods example 6 result" src="./code_sandbox/snaps/js-set-methods-06-result.png" />
+![js-set-methods example 6 result](./code_sandbox/snaps/js-set-methods-06-result.png)
 
 - [x] **Outcome:** `has("d")` is **false**. `has("a")` is **true**.
 
@@ -30631,9 +30631,9 @@ letters.forEach(function (value) {
 });
 ```
 
-<img alt="js-set-methods example 7 source" src="./code_sandbox/snaps/js-set-methods-07-code.png" />
+![js-set-methods example 7 source](./code_sandbox/snaps/js-set-methods-07-code.png)
 
-<img alt="js-set-methods example 7 result" src="./code_sandbox/snaps/js-set-methods-07-result.png" />
+![js-set-methods example 7 result](./code_sandbox/snaps/js-set-methods-07-result.png)
 
 - [x] **Outcome:** text is **"abc"**.
 
@@ -30655,9 +30655,9 @@ for (const entry of myIterator) {
 }
 ```
 
-<img alt="js-set-methods example 8 source" src="./code_sandbox/snaps/js-set-methods-08-code.png" />
+![js-set-methods example 8 source](./code_sandbox/snaps/js-set-methods-08-code.png)
 
-<img alt="js-set-methods example 8 result" src="./code_sandbox/snaps/js-set-methods-08-result.png" />
+![js-set-methods example 8 result](./code_sandbox/snaps/js-set-methods-08-result.png)
 
 - [x] **Outcome:** text is **"abc"**. `Array.from(letters.values())` is **["a","b","c"]**.
 
@@ -30677,9 +30677,9 @@ for (const entry of letters.values()) {
 }
 ```
 
-<img alt="js-set-methods example 9 source" src="./code_sandbox/snaps/js-set-methods-09-code.png" />
+![js-set-methods example 9 source](./code_sandbox/snaps/js-set-methods-09-code.png)
 
-<img alt="js-set-methods example 9 result" src="./code_sandbox/snaps/js-set-methods-09-result.png" />
+![js-set-methods example 9 result](./code_sandbox/snaps/js-set-methods-09-result.png)
 
 - [x] **Outcome:** Same concatenation: **"abc"**.
 
@@ -30701,9 +30701,9 @@ for (const x of myIterator) {
 }
 ```
 
-<img alt="js-set-methods example 10 source" src="./code_sandbox/snaps/js-set-methods-10-code.png" />
+![js-set-methods example 10 source](./code_sandbox/snaps/js-set-methods-10-code.png)
 
-<img alt="js-set-methods example 10 result" src="./code_sandbox/snaps/js-set-methods-10-result.png" />
+![js-set-methods example 10 result](./code_sandbox/snaps/js-set-methods-10-result.png)
 
 - [x] **Outcome:** text is **"abc"**. keys are **["a","b","c"]** — the values, reused as keys.
 
@@ -30723,9 +30723,9 @@ for (const x of letters.keys()) {
 }
 ```
 
-<img alt="js-set-methods example 11 source" src="./code_sandbox/snaps/js-set-methods-11-code.png" />
+![js-set-methods example 11 source](./code_sandbox/snaps/js-set-methods-11-code.png)
 
-<img alt="js-set-methods example 11 result" src="./code_sandbox/snaps/js-set-methods-11-result.png" />
+![js-set-methods example 11 result](./code_sandbox/snaps/js-set-methods-11-result.png)
 
 - [x] **Outcome:** text is **"abc"**.
 
@@ -30747,9 +30747,9 @@ for (const entry of myIterator) {
 }
 ```
 
-<img alt="js-set-methods example 12 source" src="./code_sandbox/snaps/js-set-methods-12-code.png" />
+![js-set-methods example 12 source](./code_sandbox/snaps/js-set-methods-12-code.png)
 
-<img alt="js-set-methods example 12 result" src="./code_sandbox/snaps/js-set-methods-12-result.png" />
+![js-set-methods example 12 result](./code_sandbox/snaps/js-set-methods-12-result.png)
 
 - [x] **Outcome:** `text += entry` stringifies each pair: **"a,ab,bc,c"**. The pairs themselves are **[["a","a"],["b","b"],["c","c"]]**.
 
@@ -30769,9 +30769,9 @@ for (const entry of letters.entries()) {
 }
 ```
 
-<img alt="js-set-methods example 13 source" src="./code_sandbox/snaps/js-set-methods-13-code.png" />
+![js-set-methods example 13 source](./code_sandbox/snaps/js-set-methods-13-code.png)
 
-<img alt="js-set-methods example 13 result" src="./code_sandbox/snaps/js-set-methods-13-result.png" />
+![js-set-methods example 13 result](./code_sandbox/snaps/js-set-methods-13-result.png)
 
 - [x] **Outcome:** text is again **"a,ab,bc,c"** (`Array.prototype.toString` joins with a comma, then the next pair is glued on).
 
@@ -30790,9 +30790,9 @@ const removed = letters.delete("b");
 const missing = letters.delete("z");
 ```
 
-<img alt="js-set-methods example 14 source" src="./code_sandbox/snaps/js-set-methods-14-code.png" />
+![js-set-methods example 14 source](./code_sandbox/snaps/js-set-methods-14-code.png)
 
-<img alt="js-set-methods example 14 result" src="./code_sandbox/snaps/js-set-methods-14-result.png" />
+![js-set-methods example 14 result](./code_sandbox/snaps/js-set-methods-14-result.png)
 
 - [x] **Outcome:** `delete("b")` is **true**. `delete("z")` is **false**. letters is **["a","c"]**, size **2**.
 
@@ -30809,9 +30809,9 @@ const letters = new Set(["a","b","c"]);
 letters.clear();
 ```
 
-<img alt="js-set-methods example 15 source" src="./code_sandbox/snaps/js-set-methods-15-code.png" />
+![js-set-methods example 15 source](./code_sandbox/snaps/js-set-methods-15-code.png)
 
-<img alt="js-set-methods example 15 result" src="./code_sandbox/snaps/js-set-methods-15-result.png" />
+![js-set-methods example 15 result](./code_sandbox/snaps/js-set-methods-15-result.png)
 
 - [x] **Outcome:** After `clear()`, size is **0** and `Array.from` is **[]**.
 
@@ -30982,9 +30982,9 @@ const B = new Set(["b","c","d"]);
 const C = A.union(B);
 ```
 
-<img alt="js-set-logic example 1 source" src="./code_sandbox/snaps/js-set-logic-01-code.png" />
+![js-set-logic example 1 source](./code_sandbox/snaps/js-set-logic-01-code.png)
 
-<img alt="js-set-logic example 1 result" src="./code_sandbox/snaps/js-set-logic-01-result.png" />
+![js-set-logic example 1 result](./code_sandbox/snaps/js-set-logic-01-result.png)
 
 - [x] **Outcome:** C is **["a","b","c","d"]**. A stays **["a","b","c"]**. B stays **["b","c","d"]**.
 
@@ -31002,9 +31002,9 @@ const B = new Set(["b","c","d"]);
 const C = A.intersection(B);
 ```
 
-<img alt="js-set-logic example 2 source" src="./code_sandbox/snaps/js-set-logic-02-code.png" />
+![js-set-logic example 2 source](./code_sandbox/snaps/js-set-logic-02-code.png)
 
-<img alt="js-set-logic example 2 result" src="./code_sandbox/snaps/js-set-logic-02-result.png" />
+![js-set-logic example 2 result](./code_sandbox/snaps/js-set-logic-02-result.png)
 
 - [x] **Outcome:** C is **["b","c"]**.
 
@@ -31022,9 +31022,9 @@ const B = new Set(["b","c","d"]);
 const C = A.difference(B);
 ```
 
-<img alt="js-set-logic example 3 source" src="./code_sandbox/snaps/js-set-logic-03-code.png" />
+![js-set-logic example 3 source](./code_sandbox/snaps/js-set-logic-03-code.png)
 
-<img alt="js-set-logic example 3 result" src="./code_sandbox/snaps/js-set-logic-03-result.png" />
+![js-set-logic example 3 result](./code_sandbox/snaps/js-set-logic-03-result.png)
 
 - [x] **Outcome:** `A.difference(B)` is **["a"]**. `B.difference(A)` is **["d"]**.
 
@@ -31042,9 +31042,9 @@ const B = new Set(["b","c","d"]);
 const C = A.symmetricDifference(B);
 ```
 
-<img alt="js-set-logic example 4 source" src="./code_sandbox/snaps/js-set-logic-04-code.png" />
+![js-set-logic example 4 source](./code_sandbox/snaps/js-set-logic-04-code.png)
 
-<img alt="js-set-logic example 4 result" src="./code_sandbox/snaps/js-set-logic-04-result.png" />
+![js-set-logic example 4 result](./code_sandbox/snaps/js-set-logic-04-result.png)
 
 - [x] **Outcome:** C is **["a","d"]**.
 
@@ -31063,9 +31063,9 @@ const B = new Set(["b","c","d"]);
 const answer = A.isSubsetOf(B);
 ```
 
-<img alt="js-set-logic example 5 source" src="./code_sandbox/snaps/js-set-logic-05-code.png" />
+![js-set-logic example 5 source](./code_sandbox/snaps/js-set-logic-05-code.png)
 
-<img alt="js-set-logic example 5 result" src="./code_sandbox/snaps/js-set-logic-05-result.png" />
+![js-set-logic example 5 result](./code_sandbox/snaps/js-set-logic-05-result.png)
 
 - [x] **Outcome:** `A.isSubsetOf(B)` is **false** because **"a"** is not in B.
 
@@ -31083,9 +31083,9 @@ const B = new Set(["b","c","d"]);
 const answer = A.isSupersetOf(B);
 ```
 
-<img alt="js-set-logic example 6 source" src="./code_sandbox/snaps/js-set-logic-06-code.png" />
+![js-set-logic example 6 source](./code_sandbox/snaps/js-set-logic-06-code.png)
 
-<img alt="js-set-logic example 6 result" src="./code_sandbox/snaps/js-set-logic-06-result.png" />
+![js-set-logic example 6 result](./code_sandbox/snaps/js-set-logic-06-result.png)
 
 - [x] **Outcome:** `A.isSupersetOf(B)` is **false** because **"d"** is not in A.
 
@@ -31103,9 +31103,9 @@ const B = new Set(["b","c","d"]);
 const answer = A.isDisjointFrom(B);
 ```
 
-<img alt="js-set-logic example 7 source" src="./code_sandbox/snaps/js-set-logic-07-code.png" />
+![js-set-logic example 7 source](./code_sandbox/snaps/js-set-logic-07-code.png)
 
-<img alt="js-set-logic example 7 result" src="./code_sandbox/snaps/js-set-logic-07-result.png" />
+![js-set-logic example 7 result](./code_sandbox/snaps/js-set-logic-07-result.png)
 
 - [x] **Outcome:** `A.isDisjointFrom(B)` is **false** because they share **"b"** and **"c"**.
 
@@ -31123,9 +31123,9 @@ const B = new Set(["a","b","c"]);
 const answer = A.isSubsetOf(B);
 ```
 
-<img alt="js-set-logic example 8 source" src="./code_sandbox/snaps/js-set-logic-08-code.png" />
+![js-set-logic example 8 source](./code_sandbox/snaps/js-set-logic-08-code.png)
 
-<img alt="js-set-logic example 8 result" src="./code_sandbox/snaps/js-set-logic-08-result.png" />
+![js-set-logic example 8 result](./code_sandbox/snaps/js-set-logic-08-result.png)
 
 - [x] **Outcome:** `A.isSubsetOf(B)` is **true**. `B.isSubsetOf(A)` is **false**.
 
@@ -31143,9 +31143,9 @@ const C = new Set(["b","c"]);
 const answer = A.isSupersetOf(C);
 ```
 
-<img alt="js-set-logic example 9 source" src="./code_sandbox/snaps/js-set-logic-09-code.png" />
+![js-set-logic example 9 source](./code_sandbox/snaps/js-set-logic-09-code.png)
 
-<img alt="js-set-logic example 9 result" src="./code_sandbox/snaps/js-set-logic-09-result.png" />
+![js-set-logic example 9 result](./code_sandbox/snaps/js-set-logic-09-result.png)
 
 - [x] **Outcome:** `A.isSupersetOf(C)` is **true**. `C.isSupersetOf(A)` is **false**.
 
@@ -31163,9 +31163,9 @@ const Z = new Set(["z"]);
 const answer = A.isDisjointFrom(Z);
 ```
 
-<img alt="js-set-logic example 10 source" src="./code_sandbox/snaps/js-set-logic-10-code.png" />
+![js-set-logic example 10 source](./code_sandbox/snaps/js-set-logic-10-code.png)
 
-<img alt="js-set-logic example 10 result" src="./code_sandbox/snaps/js-set-logic-10-result.png" />
+![js-set-logic example 10 result](./code_sandbox/snaps/js-set-logic-10-result.png)
 
 - [x] **Outcome:** `A.isDisjointFrom({z})` is **true**. Sharing **"a"** makes it **false**.
 
@@ -31334,9 +31334,9 @@ Sandbox: `code_sandbox/js-set-weakset/new-weakset.html`
 const mySet = new WeakSet();
 ```
 
-<img alt="js-set-weakset example 1 source" src="./code_sandbox/snaps/js-set-weakset-01-code.png" />
+![js-set-weakset example 1 source](./code_sandbox/snaps/js-set-weakset-01-code.png)
 
-<img alt="js-set-weakset example 1 result" src="./code_sandbox/snaps/js-set-weakset-01-result.png" />
+![js-set-weakset example 1 result](./code_sandbox/snaps/js-set-weakset-01-result.png)
 
 - [x] **Outcome:** `typeof` is **object**. `instanceof WeakSet` is **true**.
 
@@ -31355,9 +31355,9 @@ mySet.add(myObj);
 const answer = mySet.has(myObj);
 ```
 
-<img alt="js-set-weakset example 2 source" src="./code_sandbox/snaps/js-set-weakset-02-code.png" />
+![js-set-weakset example 2 source](./code_sandbox/snaps/js-set-weakset-02-code.png)
 
-<img alt="js-set-weakset example 2 result" src="./code_sandbox/snaps/js-set-weakset-02-result.png" />
+![js-set-weakset example 2 result](./code_sandbox/snaps/js-set-weakset-02-result.png)
 
 - [x] **Outcome:** `has(myObj)` is **true** after `add(myObj)`.
 
@@ -31377,9 +31377,9 @@ mySet.delete(myObj);
 const answer = mySet.has(myObj);
 ```
 
-<img alt="js-set-weakset example 3 source" src="./code_sandbox/snaps/js-set-weakset-03-code.png" />
+![js-set-weakset example 3 source](./code_sandbox/snaps/js-set-weakset-03-code.png)
 
-<img alt="js-set-weakset example 3 result" src="./code_sandbox/snaps/js-set-weakset-03-result.png" />
+![js-set-weakset example 3 result](./code_sandbox/snaps/js-set-weakset-03-result.png)
 
 - [x] **Outcome:** After delete, `has(myObj)` is **false**. A second `delete(myObj)` is also **false**.
 
@@ -31398,9 +31398,9 @@ const b = {fname:"John", lname:"Doe"};
 mySet.add(a);
 ```
 
-<img alt="js-set-weakset example 4 source" src="./code_sandbox/snaps/js-set-weakset-04-code.png" />
+![js-set-weakset example 4 source](./code_sandbox/snaps/js-set-weakset-04-code.png)
 
-<img alt="js-set-weakset example 4 result" src="./code_sandbox/snaps/js-set-weakset-04-result.png" />
+![js-set-weakset example 4 result](./code_sandbox/snaps/js-set-weakset-04-result.png)
 
 - [x] **Outcome:** `has(a)` is **true**. `has(b)` is **false** — `b` was never added.
 
@@ -31420,9 +31420,9 @@ mySet.add(obj);
 mySet.add("hello");
 ```
 
-<img alt="js-set-weakset example 5 source" src="./code_sandbox/snaps/js-set-weakset-05-code.png" />
+![js-set-weakset example 5 source](./code_sandbox/snaps/js-set-weakset-05-code.png)
 
-<img alt="js-set-weakset example 5 result" src="./code_sandbox/snaps/js-set-weakset-05-result.png" />
+![js-set-weakset example 5 result](./code_sandbox/snaps/js-set-weakset-05-result.png)
 
 - [x] **Outcome:** `add(obj)` works (`has` **true**). `add("hello")` and `add(42)` throw **TypeError: Invalid value used in weak set**. `add(null)` throws the same.
 
@@ -31442,9 +31442,9 @@ mySet.add(obj);
 for (const x of mySet) {}
 ```
 
-<img alt="js-set-weakset example 6 source" src="./code_sandbox/snaps/js-set-weakset-06-code.png" />
+![js-set-weakset example 6 source](./code_sandbox/snaps/js-set-weakset-06-code.png)
 
-<img alt="js-set-weakset example 6 result" src="./code_sandbox/snaps/js-set-weakset-06-result.png" />
+![js-set-weakset example 6 result](./code_sandbox/snaps/js-set-weakset-06-result.png)
 
 - [x] **Outcome:** `[...mySet]` and `for...of` throw **TypeError: mySet is not iterable**. `forEach` / `values()` throw **TypeError: mySet.forEach is not a function** (and the same for `values`).
 
@@ -31462,9 +31462,9 @@ mySet.size;
 mySet.clear();
 ```
 
-<img alt="js-set-weakset example 7 source" src="./code_sandbox/snaps/js-set-weakset-07-code.png" />
+![js-set-weakset example 7 source](./code_sandbox/snaps/js-set-weakset-07-code.png)
 
-<img alt="js-set-weakset example 7 result" src="./code_sandbox/snaps/js-set-weakset-07-result.png" />
+![js-set-weakset example 7 result](./code_sandbox/snaps/js-set-weakset-07-result.png)
 
 - [x] **Outcome:** `mySet.size` is **undefined**. `clear()` throws **TypeError: mySet.clear is not a function**. `typeof mySet.union` is **undefined**.
 
@@ -31497,9 +31497,9 @@ track(Ringo);
 track(Paul);
 ```
 
-<img alt="js-set-weakset example 8 source" src="./code_sandbox/snaps/js-set-weakset-08-code.png" />
+![js-set-weakset example 8 source](./code_sandbox/snaps/js-set-weakset-08-code.png)
 
-<img alt="js-set-weakset example 8 result" src="./code_sandbox/snaps/js-set-weakset-08-result.png" />
+![js-set-weakset example 8 result](./code_sandbox/snaps/js-set-weakset-08-result.png)
 
 - [x] **Outcome:** text is **"Paul, age41, is visiting for the first time Ringo, age42, is visiting for the first time Paul is visiting again. "** (page spacing). `has(Paul)` is **true**. `has(John)` is **false** — John never called `track`.
 
@@ -31520,9 +31520,9 @@ const held = mySet.has(myObj);
 myObj = null;
 ```
 
-<img alt="js-set-weakset example 9 source" src="./code_sandbox/snaps/js-set-weakset-09-code.png" />
+![js-set-weakset example 9 source](./code_sandbox/snaps/js-set-weakset-09-code.png)
 
-<img alt="js-set-weakset example 9 result" src="./code_sandbox/snaps/js-set-weakset-09-result.png" />
+![js-set-weakset example 9 result](./code_sandbox/snaps/js-set-weakset-09-result.png)
 
 - [x] **Outcome:** While the binding existed, `has` was **true**. After `myObj = null`, the variable is **null**. `has(null)` throws **TypeError: Invalid value used in weak set**. `[...mySet]` throws **TypeError: mySet is not iterable**. GC itself is **not** observable in the same turn.
 
@@ -31696,9 +31696,9 @@ Sandbox: `code_sandbox/js-set-reference/new-set.html`
 const letters = new Set(["a","b","c"]);
 ```
 
-<img alt="js-set-reference example 1 source" src="./code_sandbox/snaps/js-set-reference-01-code.png" />
+![js-set-reference example 1 source](./code_sandbox/snaps/js-set-reference-01-code.png)
 
-<img alt="js-set-reference example 1 result" src="./code_sandbox/snaps/js-set-reference-01-result.png" />
+![js-set-reference example 1 result](./code_sandbox/snaps/js-set-reference-01-result.png)
 
 - [x] **Outcome:** **["a","b","c"]**, size **3**.
 
@@ -31715,9 +31715,9 @@ const letters = new Set(["a","b","c"]);
 const ret = letters.add("d");
 ```
 
-<img alt="js-set-reference example 2 source" src="./code_sandbox/snaps/js-set-reference-02-code.png" />
+![js-set-reference example 2 source](./code_sandbox/snaps/js-set-reference-02-code.png)
 
-<img alt="js-set-reference example 2 result" src="./code_sandbox/snaps/js-set-reference-02-result.png" />
+![js-set-reference example 2 result](./code_sandbox/snaps/js-set-reference-02-result.png)
 
 - [x] **Outcome:** letters is **["a","b","c","d"]**. `add` returned the **same** Set (**true**).
 
@@ -31734,9 +31734,9 @@ const letters = new Set(["a","b","c"]);
 letters.clear();
 ```
 
-<img alt="js-set-reference example 3 source" src="./code_sandbox/snaps/js-set-reference-03-code.png" />
+![js-set-reference example 3 source](./code_sandbox/snaps/js-set-reference-03-code.png)
 
-<img alt="js-set-reference example 3 result" src="./code_sandbox/snaps/js-set-reference-03-result.png" />
+![js-set-reference example 3 result](./code_sandbox/snaps/js-set-reference-03-result.png)
 
 - [x] **Outcome:** size **0**, **[]**.
 
@@ -31753,9 +31753,9 @@ const letters = new Set(["a","b","c"]);
 const ok = letters.delete("b");
 ```
 
-<img alt="js-set-reference example 4 source" src="./code_sandbox/snaps/js-set-reference-04-code.png" />
+![js-set-reference example 4 source](./code_sandbox/snaps/js-set-reference-04-code.png)
 
-<img alt="js-set-reference example 4 result" src="./code_sandbox/snaps/js-set-reference-04-result.png" />
+![js-set-reference example 4 result](./code_sandbox/snaps/js-set-reference-04-result.png)
 
 - [x] **Outcome:** First `delete("b")` is **true**, letters **["a","c"]**. Second delete is **false**.
 
@@ -31774,9 +31774,9 @@ const B = new Set(["b","c","d"]);
 const C = A.difference(B);
 ```
 
-<img alt="js-set-reference example 5 source" src="./code_sandbox/snaps/js-set-reference-05-code.png" />
+![js-set-reference example 5 source](./code_sandbox/snaps/js-set-reference-05-code.png)
 
-<img alt="js-set-reference example 5 result" src="./code_sandbox/snaps/js-set-reference-05-result.png" />
+![js-set-reference example 5 result](./code_sandbox/snaps/js-set-reference-05-result.png)
 
 - [x] **Outcome:** C is **["a"]**.
 
@@ -31793,9 +31793,9 @@ const letters = new Set(["a","b","c"]);
 const pairs = Array.from(letters.entries());
 ```
 
-<img alt="js-set-reference example 6 source" src="./code_sandbox/snaps/js-set-reference-06-code.png" />
+![js-set-reference example 6 source](./code_sandbox/snaps/js-set-reference-06-code.png)
 
-<img alt="js-set-reference example 6 result" src="./code_sandbox/snaps/js-set-reference-06-result.png" />
+![js-set-reference example 6 result](./code_sandbox/snaps/js-set-reference-06-result.png)
 
 - [x] **Outcome:** pairs is **[["a","a"],["b","b"],["c","c"]]**.
 
@@ -31815,9 +31815,9 @@ letters.forEach(function (value) {
 });
 ```
 
-<img alt="js-set-reference example 7 source" src="./code_sandbox/snaps/js-set-reference-07-code.png" />
+![js-set-reference example 7 source](./code_sandbox/snaps/js-set-reference-07-code.png)
 
-<img alt="js-set-reference example 7 result" src="./code_sandbox/snaps/js-set-reference-07-result.png" />
+![js-set-reference example 7 result](./code_sandbox/snaps/js-set-reference-07-result.png)
 
 - [x] **Outcome:** text is **"abc"**.
 
@@ -31835,9 +31835,9 @@ letters.has("b");
 letters.has("z");
 ```
 
-<img alt="js-set-reference example 8 source" src="./code_sandbox/snaps/js-set-reference-08-code.png" />
+![js-set-reference example 8 source](./code_sandbox/snaps/js-set-reference-08-code.png)
 
-<img alt="js-set-reference example 8 result" src="./code_sandbox/snaps/js-set-reference-08-result.png" />
+![js-set-reference example 8 result](./code_sandbox/snaps/js-set-reference-08-result.png)
 
 - [x] **Outcome:** `has("b")` is **true**. `has("z")` is **false**.
 
@@ -31856,9 +31856,9 @@ const B = new Set(["b","c","d"]);
 const C = A.intersection(B);
 ```
 
-<img alt="js-set-reference example 9 source" src="./code_sandbox/snaps/js-set-reference-09-code.png" />
+![js-set-reference example 9 source](./code_sandbox/snaps/js-set-reference-09-code.png)
 
-<img alt="js-set-reference example 9 result" src="./code_sandbox/snaps/js-set-reference-09-result.png" />
+![js-set-reference example 9 result](./code_sandbox/snaps/js-set-reference-09-result.png)
 
 - [x] **Outcome:** C is **["b","c"]**.
 
@@ -31877,9 +31877,9 @@ const overlap = A.isDisjointFrom(B);
 const split = A.isDisjointFrom(new Set(['z']));
 ```
 
-<img alt="js-set-reference example 10 source" src="./code_sandbox/snaps/js-set-reference-10-code.png" />
+![js-set-reference example 10 source](./code_sandbox/snaps/js-set-reference-10-code.png)
 
-<img alt="js-set-reference example 10 result" src="./code_sandbox/snaps/js-set-reference-10-result.png" />
+![js-set-reference example 10 result](./code_sandbox/snaps/js-set-reference-10-result.png)
 
 - [x] **Outcome:** Overlap with B is **false**. Disjoint from `{z}` is **true**.
 
@@ -31897,9 +31897,9 @@ const B = new Set(["b","c","d"]);
 const small = new Set(['b','c']);
 ```
 
-<img alt="js-set-reference example 11 source" src="./code_sandbox/snaps/js-set-reference-11-code.png" />
+![js-set-reference example 11 source](./code_sandbox/snaps/js-set-reference-11-code.png)
 
-<img alt="js-set-reference example 11 result" src="./code_sandbox/snaps/js-set-reference-11-result.png" />
+![js-set-reference example 11 result](./code_sandbox/snaps/js-set-reference-11-result.png)
 
 - [x] **Outcome:** A ⊂ B is **false**. `{b,c} ⊂ A` is **true**.
 
@@ -31917,9 +31917,9 @@ const B = new Set(["b","c","d"]);
 const small = new Set(['b','c']);
 ```
 
-<img alt="js-set-reference example 12 source" src="./code_sandbox/snaps/js-set-reference-12-code.png" />
+![js-set-reference example 12 source](./code_sandbox/snaps/js-set-reference-12-code.png)
 
-<img alt="js-set-reference example 12 result" src="./code_sandbox/snaps/js-set-reference-12-result.png" />
+![js-set-reference example 12 result](./code_sandbox/snaps/js-set-reference-12-result.png)
 
 - [x] **Outcome:** A ⊃ B is **false**. A ⊃ `{b,c}` is **true**.
 
@@ -31936,9 +31936,9 @@ const letters = new Set(["a","b","c"]);
 const same = Array.from(letters.keys()).join() === Array.from(letters.values()).join();
 ```
 
-<img alt="js-set-reference example 13 source" src="./code_sandbox/snaps/js-set-reference-13-code.png" />
+![js-set-reference example 13 source](./code_sandbox/snaps/js-set-reference-13-code.png)
 
-<img alt="js-set-reference example 13 result" src="./code_sandbox/snaps/js-set-reference-13-result.png" />
+![js-set-reference example 13 result](./code_sandbox/snaps/js-set-reference-13-result.png)
 
 - [x] **Outcome:** keys are **["a","b","c"]**. Joined keys and values match (**true**).
 
@@ -31957,9 +31957,9 @@ const B = new Set(["b","c","d"]);
 const C = A.symmetricDifference(B);
 ```
 
-<img alt="js-set-reference example 14 source" src="./code_sandbox/snaps/js-set-reference-14-code.png" />
+![js-set-reference example 14 source](./code_sandbox/snaps/js-set-reference-14-code.png)
 
-<img alt="js-set-reference example 14 result" src="./code_sandbox/snaps/js-set-reference-14-result.png" />
+![js-set-reference example 14 result](./code_sandbox/snaps/js-set-reference-14-result.png)
 
 - [x] **Outcome:** C is **["a","d"]**.
 
@@ -31978,9 +31978,9 @@ const B = new Set(["b","c","d"]);
 const C = A.union(B);
 ```
 
-<img alt="js-set-reference example 15 source" src="./code_sandbox/snaps/js-set-reference-15-code.png" />
+![js-set-reference example 15 source](./code_sandbox/snaps/js-set-reference-15-code.png)
 
-<img alt="js-set-reference example 15 result" src="./code_sandbox/snaps/js-set-reference-15-result.png" />
+![js-set-reference example 15 result](./code_sandbox/snaps/js-set-reference-15-result.png)
 
 - [x] **Outcome:** C is **["a","b","c","d"]**.
 
@@ -31997,9 +31997,9 @@ const letters = new Set(["a","b","c"]);
 const list = Array.from(letters.values());
 ```
 
-<img alt="js-set-reference example 16 source" src="./code_sandbox/snaps/js-set-reference-16-code.png" />
+![js-set-reference example 16 source](./code_sandbox/snaps/js-set-reference-16-code.png)
 
-<img alt="js-set-reference example 16 result" src="./code_sandbox/snaps/js-set-reference-16-result.png" />
+![js-set-reference example 16 result](./code_sandbox/snaps/js-set-reference-16-result.png)
 
 - [x] **Outcome:** list is **["a","b","c"]**.
 
@@ -32016,9 +32016,9 @@ const mySet = new Set(["a","b","c"]);
 mySet.size;
 ```
 
-<img alt="js-set-reference example 17 source" src="./code_sandbox/snaps/js-set-reference-17-code.png" />
+![js-set-reference example 17 source](./code_sandbox/snaps/js-set-reference-17-code.png)
 
-<img alt="js-set-reference example 17 result" src="./code_sandbox/snaps/js-set-reference-17-result.png" />
+![js-set-reference example 17 result](./code_sandbox/snaps/js-set-reference-17-result.png)
 
 - [x] **Outcome:** `size` is **3**.
 
@@ -32200,9 +32200,9 @@ fruits.set("bananas", 300);
 fruits.set("oranges", 200);
 ```
 
-<img alt="js-maps example 1 source" src="./code_sandbox/snaps/js-maps-01-code.png" />
+![js-maps example 1 source](./code_sandbox/snaps/js-maps-01-code.png)
 
-<img alt="js-maps example 1 result" src="./code_sandbox/snaps/js-maps-01-result.png" />
+![js-maps example 1 result](./code_sandbox/snaps/js-maps-01-result.png)
 
 - [x] **Outcome:** fruits is **[["apples",500],["bananas",300],["oranges",200]]**. size **3**.
 
@@ -32222,9 +32222,9 @@ const fruits = new Map([
 ]);
 ```
 
-<img alt="js-maps example 2 source" src="./code_sandbox/snaps/js-maps-02-code.png" />
+![js-maps example 2 source](./code_sandbox/snaps/js-maps-02-code.png)
 
-<img alt="js-maps example 2 result" src="./code_sandbox/snaps/js-maps-02-result.png" />
+![js-maps example 2 result](./code_sandbox/snaps/js-maps-02-result.png)
 
 - [x] **Outcome:** Same three pairs. size **3**.
 
@@ -32245,9 +32245,9 @@ const fruits = new Map([
 fruits.set("mangos", 100);
 ```
 
-<img alt="js-maps example 3 source" src="./code_sandbox/snaps/js-maps-03-code.png" />
+![js-maps example 3 source](./code_sandbox/snaps/js-maps-03-code.png)
 
-<img alt="js-maps example 3 result" src="./code_sandbox/snaps/js-maps-03-result.png" />
+![js-maps example 3 result](./code_sandbox/snaps/js-maps-03-result.png)
 
 - [x] **Outcome:** Now **[["apples",500],["bananas",300],["oranges",200],["mangos",100]]**. size **4**.
 
@@ -32268,9 +32268,9 @@ const fruits = new Map([
 fruits.set("apples", 200);
 ```
 
-<img alt="js-maps example 4 source" src="./code_sandbox/snaps/js-maps-04-code.png" />
+![js-maps example 4 source](./code_sandbox/snaps/js-maps-04-code.png)
 
-<img alt="js-maps example 4 result" src="./code_sandbox/snaps/js-maps-04-result.png" />
+![js-maps example 4 result](./code_sandbox/snaps/js-maps-04-result.png)
 
 - [x] **Outcome:** `get("apples")` is **200**. The pairs are **[["apples",200],["bananas",300],["oranges",200]]**.
 
@@ -32291,9 +32291,9 @@ const fruits = new Map([
 fruits.get("apples");
 ```
 
-<img alt="js-maps example 5 source" src="./code_sandbox/snaps/js-maps-05-code.png" />
+![js-maps example 5 source](./code_sandbox/snaps/js-maps-05-code.png)
 
-<img alt="js-maps example 5 result" src="./code_sandbox/snaps/js-maps-05-result.png" />
+![js-maps example 5 result](./code_sandbox/snaps/js-maps-05-result.png)
 
 - [x] **Outcome:** `get("apples")` is **500**. `get("kiwi")` is **undefined**.
 
@@ -32314,9 +32314,9 @@ const fruits = new Map([
 typeof fruits;
 ```
 
-<img alt="js-maps example 6 source" src="./code_sandbox/snaps/js-maps-06-code.png" />
+![js-maps example 6 source](./code_sandbox/snaps/js-maps-06-code.png)
 
-<img alt="js-maps example 6 result" src="./code_sandbox/snaps/js-maps-06-result.png" />
+![js-maps example 6 result](./code_sandbox/snaps/js-maps-06-result.png)
 
 - [x] **Outcome:** `typeof fruits` is **object**.
 
@@ -32337,9 +32337,9 @@ const fruits = new Map([
 fruits instanceof Map;
 ```
 
-<img alt="js-maps example 7 source" src="./code_sandbox/snaps/js-maps-07-code.png" />
+![js-maps example 7 source](./code_sandbox/snaps/js-maps-07-code.png)
 
-<img alt="js-maps example 7 result" src="./code_sandbox/snaps/js-maps-07-result.png" />
+![js-maps example 7 result](./code_sandbox/snaps/js-maps-07-result.png)
 
 - [x] **Outcome:** `instanceof Map` is **true**.
 
@@ -32356,9 +32356,9 @@ const obj = {apples: 500};
 const fruits = new Map([['apples', 500]]);
 ```
 
-<img alt="js-maps example 8 source" src="./code_sandbox/snaps/js-maps-08-code.png" />
+![js-maps example 8 source](./code_sandbox/snaps/js-maps-08-code.png)
 
-<img alt="js-maps example 8 result" src="./code_sandbox/snaps/js-maps-08-result.png" />
+![js-maps example 8 result](./code_sandbox/snaps/js-maps-08-result.png)
 
 - [x] **Outcome:** `for...of obj` throws **TypeError: obj is not iterable**. `Array.from(fruits)` is **[["apples",500]]**.
 
@@ -32379,9 +32379,9 @@ const fruits = new Map([
 const obj = {apples: 500, bananas: 300, oranges: 200};
 ```
 
-<img alt="js-maps example 9 source" src="./code_sandbox/snaps/js-maps-09-code.png" />
+![js-maps example 9 source](./code_sandbox/snaps/js-maps-09-code.png)
 
-<img alt="js-maps example 9 result" src="./code_sandbox/snaps/js-maps-09-result.png" />
+![js-maps example 9 result](./code_sandbox/snaps/js-maps-09-result.png)
 
 - [x] **Outcome:** `fruits.size` is **3**. `obj.size` is **undefined**. `Object.keys(obj).length` is **3**.
 
@@ -32403,9 +32403,9 @@ fruits.set(1, 'num');
 fruits.set(key, 'obj');
 ```
 
-<img alt="js-maps example 10 source" src="./code_sandbox/snaps/js-maps-10-code.png" />
+![js-maps example 10 source](./code_sandbox/snaps/js-maps-10-code.png)
 
-<img alt="js-maps example 10 result" src="./code_sandbox/snaps/js-maps-10-result.png" />
+![js-maps example 10 result](./code_sandbox/snaps/js-maps-10-result.png)
 
 - [x] **Outcome:** Object.keys is **["1","[object Object]"]** — both coerced to strings. Map keys stay **1** and **{x:1}**. `get(key)` is **obj**. `get(1)` is **num**.
 
@@ -32429,9 +32429,9 @@ fruits.set('a', 2);
 fruits.set(1, 3);
 ```
 
-<img alt="js-maps example 11 source" src="./code_sandbox/snaps/js-maps-11-code.png" />
+![js-maps example 11 source](./code_sandbox/snaps/js-maps-11-code.png)
 
-<img alt="js-maps example 11 result" src="./code_sandbox/snaps/js-maps-11-result.png" />
+![js-maps example 11 result](./code_sandbox/snaps/js-maps-11-result.png)
 
 - [x] **Outcome:** Object.keys is **["1","z","a"]** (integer key first). Map keys are **["z","a",1]** (insertion order).
 
@@ -32448,9 +32448,9 @@ const obj = {};
 const fruits = new Map();
 ```
 
-<img alt="js-maps example 12 source" src="./code_sandbox/snaps/js-maps-12-code.png" />
+![js-maps example 12 source](./code_sandbox/snaps/js-maps-12-code.png)
 
-<img alt="js-maps example 12 result" src="./code_sandbox/snaps/js-maps-12-result.png" />
+![js-maps example 12 result](./code_sandbox/snaps/js-maps-12-result.png)
 
 - [x] **Outcome:** `'toString' in obj` is **true** (prototype). `hasOwnProperty` is **false**. `fruits.has('toString')` is **false**. size **0**.
 
@@ -32639,9 +32639,9 @@ const fruits = new Map([
 ]);
 ```
 
-<img alt="js-map-methods example 1 source" src="./code_sandbox/snaps/js-map-methods-01-code.png" />
+![js-map-methods example 1 source](./code_sandbox/snaps/js-map-methods-01-code.png)
 
-<img alt="js-map-methods example 1 result" src="./code_sandbox/snaps/js-map-methods-01-result.png" />
+![js-map-methods example 1 result](./code_sandbox/snaps/js-map-methods-01-result.png)
 
 - [x] **Outcome:** **[["apples",500],["bananas",300],["oranges",200]]**.
 
@@ -32662,9 +32662,9 @@ const fruits = new Map([
 fruits.get("apples");
 ```
 
-<img alt="js-map-methods example 2 source" src="./code_sandbox/snaps/js-map-methods-02-code.png" />
+![js-map-methods example 2 source](./code_sandbox/snaps/js-map-methods-02-code.png)
 
-<img alt="js-map-methods example 2 result" src="./code_sandbox/snaps/js-map-methods-02-result.png" />
+![js-map-methods example 2 result](./code_sandbox/snaps/js-map-methods-02-result.png)
 
 - [x] **Outcome:** `get("apples")` is **500**.
 
@@ -32683,9 +32683,9 @@ fruits.set("bananas", 300);
 fruits.set("oranges", 200);
 ```
 
-<img alt="js-map-methods example 3 source" src="./code_sandbox/snaps/js-map-methods-03-code.png" />
+![js-map-methods example 3 source](./code_sandbox/snaps/js-map-methods-03-code.png)
 
-<img alt="js-map-methods example 3 result" src="./code_sandbox/snaps/js-map-methods-03-result.png" />
+![js-map-methods example 3 result](./code_sandbox/snaps/js-map-methods-03-result.png)
 
 - [x] **Outcome:** Three pairs, size **3**.
 
@@ -32707,9 +32707,9 @@ const fruits = new Map([
 fruits.set("apples", 500);
 ```
 
-<img alt="js-map-methods example 4 source" src="./code_sandbox/snaps/js-map-methods-04-code.png" />
+![js-map-methods example 4 source](./code_sandbox/snaps/js-map-methods-04-code.png)
 
-<img alt="js-map-methods example 4 result" src="./code_sandbox/snaps/js-map-methods-04-result.png" />
+![js-map-methods example 4 result](./code_sandbox/snaps/js-map-methods-04-result.png)
 
 - [x] **Outcome:** `get("apples")` is still **500**. The key was overwritten with the same number.
 
@@ -32730,9 +32730,9 @@ const fruits = new Map([
 fruits.size;
 ```
 
-<img alt="js-map-methods example 5 source" src="./code_sandbox/snaps/js-map-methods-05-code.png" />
+![js-map-methods example 5 source](./code_sandbox/snaps/js-map-methods-05-code.png)
 
-<img alt="js-map-methods example 5 result" src="./code_sandbox/snaps/js-map-methods-05-result.png" />
+![js-map-methods example 5 result](./code_sandbox/snaps/js-map-methods-05-result.png)
 
 - [x] **Outcome:** `size` is **3**.
 
@@ -32753,9 +32753,9 @@ const fruits = new Map([
 const ok = fruits.delete("apples");
 ```
 
-<img alt="js-map-methods example 6 source" src="./code_sandbox/snaps/js-map-methods-06-code.png" />
+![js-map-methods example 6 source](./code_sandbox/snaps/js-map-methods-06-code.png)
 
-<img alt="js-map-methods example 6 result" src="./code_sandbox/snaps/js-map-methods-06-result.png" />
+![js-map-methods example 6 result](./code_sandbox/snaps/js-map-methods-06-result.png)
 
 - [x] **Outcome:** `delete("apples")` is **true**. size **2**. Remaining **[["bananas",300],["oranges",200]]**.
 
@@ -32776,9 +32776,9 @@ const fruits = new Map([
 fruits.clear();
 ```
 
-<img alt="js-map-methods example 7 source" src="./code_sandbox/snaps/js-map-methods-07-code.png" />
+![js-map-methods example 7 source](./code_sandbox/snaps/js-map-methods-07-code.png)
 
-<img alt="js-map-methods example 7 result" src="./code_sandbox/snaps/js-map-methods-07-result.png" />
+![js-map-methods example 7 result](./code_sandbox/snaps/js-map-methods-07-result.png)
 
 - [x] **Outcome:** size **0**, **[]**.
 
@@ -32799,9 +32799,9 @@ const fruits = new Map([
 fruits.has("apples");
 ```
 
-<img alt="js-map-methods example 8 source" src="./code_sandbox/snaps/js-map-methods-08-code.png" />
+![js-map-methods example 8 source](./code_sandbox/snaps/js-map-methods-08-code.png)
 
-<img alt="js-map-methods example 8 result" src="./code_sandbox/snaps/js-map-methods-08-result.png" />
+![js-map-methods example 8 result](./code_sandbox/snaps/js-map-methods-08-result.png)
 
 - [x] **Outcome:** `has("apples")` is **true**. `has("kiwi")` is **false**.
 
@@ -32823,9 +32823,9 @@ fruits.delete("apples");
 fruits.has("apples");
 ```
 
-<img alt="js-map-methods example 9 source" src="./code_sandbox/snaps/js-map-methods-09-code.png" />
+![js-map-methods example 9 source](./code_sandbox/snaps/js-map-methods-09-code.png)
 
-<img alt="js-map-methods example 9 result" src="./code_sandbox/snaps/js-map-methods-09-result.png" />
+![js-map-methods example 9 result](./code_sandbox/snaps/js-map-methods-09-result.png)
 
 - [x] **Outcome:** After `delete("apples")`, `has("apples")` is **false**. size **2**.
 
@@ -32850,9 +32850,9 @@ fruits.forEach(function (value, key) {
 });
 ```
 
-<img alt="js-map-methods example 10 source" src="./code_sandbox/snaps/js-map-methods-10-code.png" />
+![js-map-methods example 10 source](./code_sandbox/snaps/js-map-methods-10-code.png)
 
-<img alt="js-map-methods example 10 result" src="./code_sandbox/snaps/js-map-methods-10-result.png" />
+![js-map-methods example 10 result](./code_sandbox/snaps/js-map-methods-10-result.png)
 
 - [x] **Outcome:** text is **"apples = 500bananas = 300oranges = 200"** (no separator between pairs).
 
@@ -32876,9 +32876,9 @@ for (const x of fruits.entries()) {
 }
 ```
 
-<img alt="js-map-methods example 11 source" src="./code_sandbox/snaps/js-map-methods-11-code.png" />
+![js-map-methods example 11 source](./code_sandbox/snaps/js-map-methods-11-code.png)
 
-<img alt="js-map-methods example 11 result" src="./code_sandbox/snaps/js-map-methods-11-result.png" />
+![js-map-methods example 11 result](./code_sandbox/snaps/js-map-methods-11-result.png)
 
 - [x] **Outcome:** text is **"apples,500bananas,300oranges,200"**. Pairs are **[["apples",500],["bananas",300],["oranges",200]]**.
 
@@ -32902,9 +32902,9 @@ for (const x of fruits.keys()) {
 }
 ```
 
-<img alt="js-map-methods example 12 source" src="./code_sandbox/snaps/js-map-methods-12-code.png" />
+![js-map-methods example 12 source](./code_sandbox/snaps/js-map-methods-12-code.png)
 
-<img alt="js-map-methods example 12 result" src="./code_sandbox/snaps/js-map-methods-12-result.png" />
+![js-map-methods example 12 result](./code_sandbox/snaps/js-map-methods-12-result.png)
 
 - [x] **Outcome:** text is **"applesbananasoranges"**. keys are **["apples","bananas","oranges"]**.
 
@@ -32928,9 +32928,9 @@ for (const x of fruits.values()) {
 }
 ```
 
-<img alt="js-map-methods example 13 source" src="./code_sandbox/snaps/js-map-methods-13-code.png" />
+![js-map-methods example 13 source](./code_sandbox/snaps/js-map-methods-13-code.png)
 
-<img alt="js-map-methods example 13 result" src="./code_sandbox/snaps/js-map-methods-13-result.png" />
+![js-map-methods example 13 result](./code_sandbox/snaps/js-map-methods-13-result.png)
 
 - [x] **Outcome:** text is **"500300200"** (string concat from `""`). values are **[500,300,200]**.
 
@@ -32954,9 +32954,9 @@ for (const x of fruits.values()) {
 }
 ```
 
-<img alt="js-map-methods example 14 source" src="./code_sandbox/snaps/js-map-methods-14-code.png" />
+![js-map-methods example 14 source](./code_sandbox/snaps/js-map-methods-14-code.png)
 
-<img alt="js-map-methods example 14 result" src="./code_sandbox/snaps/js-map-methods-14-result.png" />
+![js-map-methods example 14 result](./code_sandbox/snaps/js-map-methods-14-result.png)
 
 - [x] **Outcome:** total is **1000** (500 + 300 + 200).
 
@@ -32979,9 +32979,9 @@ fruits.set(bananas, 300);
 fruits.set(oranges, 200);
 ```
 
-<img alt="js-map-methods example 15 source" src="./code_sandbox/snaps/js-map-methods-15-code.png" />
+![js-map-methods example 15 source](./code_sandbox/snaps/js-map-methods-15-code.png)
 
-<img alt="js-map-methods example 15 result" src="./code_sandbox/snaps/js-map-methods-15-result.png" />
+![js-map-methods example 15 result](./code_sandbox/snaps/js-map-methods-15-result.png)
 
 - [x] **Outcome:** JSON is **[[{"name":"Apples"},500],[{"name":"Bananas"},300],[{"name":"Oranges"},200]]**. `get(apples)` is **500**.
 
@@ -33000,9 +33000,9 @@ fruits.set(apples, 500);
 fruits.get("apples");
 ```
 
-<img alt="js-map-methods example 16 source" src="./code_sandbox/snaps/js-map-methods-16-code.png" />
+![js-map-methods example 16 source](./code_sandbox/snaps/js-map-methods-16-code.png)
 
-<img alt="js-map-methods example 16 result" src="./code_sandbox/snaps/js-map-methods-16-result.png" />
+![js-map-methods example 16 result](./code_sandbox/snaps/js-map-methods-16-result.png)
 
 - [x] **Outcome:** `get("apples")` is **undefined**. `get(apples)` is **500**.
 
@@ -33029,9 +33029,9 @@ function myCallback({ quantity }) {
 const result = Map.groupBy(fruits, myCallback);
 ```
 
-<img alt="js-map-methods example 17 source" src="./code_sandbox/snaps/js-map-methods-17-code.png" />
+![js-map-methods example 17 source](./code_sandbox/snaps/js-map-methods-17-code.png)
 
-<img alt="js-map-methods example 17 result" src="./code_sandbox/snaps/js-map-methods-17-result.png" />
+![js-map-methods example 17 result](./code_sandbox/snaps/js-map-methods-17-result.png)
 
 - [x] **Outcome:** result is **[["ok",[{"name":"apples","quantity":300},{"name":"bananas","quantity":500}]],["low",[{"name":"oranges","quantity":200},{"name":"kiwi","quantity":150}]]]**. `instanceof Map` is **true**. The input array is unchanged.
 
@@ -33058,9 +33058,9 @@ const obj = Object.groupBy(fruits, myCallback);
 const map = Map.groupBy(fruits, myCallback);
 ```
 
-<img alt="js-map-methods example 18 source" src="./code_sandbox/snaps/js-map-methods-18-code.png" />
+![js-map-methods example 18 source](./code_sandbox/snaps/js-map-methods-18-code.png)
 
-<img alt="js-map-methods example 18 result" src="./code_sandbox/snaps/js-map-methods-18-result.png" />
+![js-map-methods example 18 result](./code_sandbox/snaps/js-map-methods-18-result.png)
 
 - [x] **Outcome:** Object.groupBy JSON is **{"ok":[{"name":"apples","quantity":300},{"name":"bananas","quantity":500}],"low":[{"name":"oranges","quantity":200},{"name":"kiwi","quantity":150}]}**. `obj instanceof Map` is **false**. `map instanceof Map` is **true**.
 
@@ -33238,9 +33238,9 @@ Sandbox: `code_sandbox/js-map-weakmap/new-weakmap.html`
 const myMap = new WeakMap();
 ```
 
-<img alt="js-map-weakmap example 1 source" src="./code_sandbox/snaps/js-map-weakmap-01-code.png" />
+![js-map-weakmap example 1 source](./code_sandbox/snaps/js-map-weakmap-01-code.png)
 
-<img alt="js-map-weakmap example 1 result" src="./code_sandbox/snaps/js-map-weakmap-01-result.png" />
+![js-map-weakmap example 1 result](./code_sandbox/snaps/js-map-weakmap-01-result.png)
 
 - [x] **Outcome:** `typeof` is **object**. `instanceof WeakMap` is **true**.
 
@@ -33259,9 +33259,9 @@ myMap.set(myObj, "player");
 const type = myMap.get(myObj);
 ```
 
-<img alt="js-map-weakmap example 2 source" src="./code_sandbox/snaps/js-map-weakmap-02-code.png" />
+![js-map-weakmap example 2 source](./code_sandbox/snaps/js-map-weakmap-02-code.png)
 
-<img alt="js-map-weakmap example 2 result" src="./code_sandbox/snaps/js-map-weakmap-02-result.png" />
+![js-map-weakmap example 2 result](./code_sandbox/snaps/js-map-weakmap-02-result.png)
 
 - [x] **Outcome:** `get(myObj)` is **"player"**.
 
@@ -33279,9 +33279,9 @@ let myObj = {fname:"John", lname:"Doe"};
 myMap.set(myObj, "player");
 ```
 
-<img alt="js-map-weakmap example 3 source" src="./code_sandbox/snaps/js-map-weakmap-03-code.png" />
+![js-map-weakmap example 3 source](./code_sandbox/snaps/js-map-weakmap-03-code.png)
 
-<img alt="js-map-weakmap example 3 result" src="./code_sandbox/snaps/js-map-weakmap-03-result.png" />
+![js-map-weakmap example 3 result](./code_sandbox/snaps/js-map-weakmap-03-result.png)
 
 - [x] **Outcome:** `has(myObj)` is **true**. `has` of a **new** look-alike object is **false**.
 
@@ -33300,9 +33300,9 @@ myMap.set(myObj, "player");
 const ok = myMap.delete(myObj);
 ```
 
-<img alt="js-map-weakmap example 4 source" src="./code_sandbox/snaps/js-map-weakmap-04-code.png" />
+![js-map-weakmap example 4 source](./code_sandbox/snaps/js-map-weakmap-04-code.png)
 
-<img alt="js-map-weakmap example 4 result" src="./code_sandbox/snaps/js-map-weakmap-04-result.png" />
+![js-map-weakmap example 4 result](./code_sandbox/snaps/js-map-weakmap-04-result.png)
 
 - [x] **Outcome:** `delete` returns **true**. Then `has` is **false** and `get` is **undefined**.
 
@@ -33324,9 +33324,9 @@ myMap.set(unique, 'sym');
 myMap.set("nope", 1);
 ```
 
-<img alt="js-map-weakmap example 5 source" src="./code_sandbox/snaps/js-map-weakmap-05-code.png" />
+![js-map-weakmap example 5 source](./code_sandbox/snaps/js-map-weakmap-05-code.png)
 
-<img alt="js-map-weakmap example 5 result" src="./code_sandbox/snaps/js-map-weakmap-05-result.png" />
+![js-map-weakmap example 5 result](./code_sandbox/snaps/js-map-weakmap-05-result.png)
 
 - [x] **Outcome:** `get(obj)` is **"obj"**. `get(unique)` is **"sym"**. `set("nope", 1)` and `set(Symbol.for("x"), 1)` throw **TypeError: Invalid value used as weak map key**.
 
@@ -33345,9 +33345,9 @@ myMap.set(obj, "v");
 for (const x of myMap) {}
 ```
 
-<img alt="js-map-weakmap example 6 source" src="./code_sandbox/snaps/js-map-weakmap-06-code.png" />
+![js-map-weakmap example 6 source](./code_sandbox/snaps/js-map-weakmap-06-code.png)
 
-<img alt="js-map-weakmap example 6 result" src="./code_sandbox/snaps/js-map-weakmap-06-result.png" />
+![js-map-weakmap example 6 result](./code_sandbox/snaps/js-map-weakmap-06-result.png)
 
 - [x] **Outcome:** `[...myMap]` / `for...of` throw **TypeError: myMap is not iterable**. `forEach` and `keys()` throw **TypeError: myMap.forEach is not a function** (same pattern for `keys`).
 
@@ -33365,9 +33365,9 @@ myMap.size;
 myMap.clear();
 ```
 
-<img alt="js-map-weakmap example 7 source" src="./code_sandbox/snaps/js-map-weakmap-07-code.png" />
+![js-map-weakmap example 7 source](./code_sandbox/snaps/js-map-weakmap-07-code.png)
 
-<img alt="js-map-weakmap example 7 result" src="./code_sandbox/snaps/js-map-weakmap-07-result.png" />
+![js-map-weakmap example 7 result](./code_sandbox/snaps/js-map-weakmap-07-result.png)
 
 - [x] **Outcome:** `myMap.size` is **undefined**. `clear()` throws **TypeError: myMap.clear is not a function**.
 
@@ -33399,9 +33399,9 @@ track(Paul);
 track(John);
 ```
 
-<img alt="js-map-weakmap example 8 source" src="./code_sandbox/snaps/js-map-weakmap-08-code.png" />
+![js-map-weakmap example 8 source](./code_sandbox/snaps/js-map-weakmap-08-code.png)
 
-<img alt="js-map-weakmap example 8 result" src="./code_sandbox/snaps/js-map-weakmap-08-result.png" />
+![js-map-weakmap example 8 result](./code_sandbox/snaps/js-map-weakmap-08-result.png)
 
 - [x] **Outcome:** text is **"Paul, age 41, has visited 1 time(s). Ringo, age 42, has visited 1 time(s). Paul, age 41, has visited 2 time(s). Paul, age 41, has visited 3 time(s). John, age 40, has visited 1 time(s). "**. `get(Paul)` is **3**. `get(George)` is **undefined**.
 
@@ -33430,9 +33430,9 @@ const user1 = new User("John");
 const secret = user1.getSecret();
 ```
 
-<img alt="js-map-weakmap example 9 source" src="./code_sandbox/snaps/js-map-weakmap-09-code.png" />
+![js-map-weakmap example 9 source](./code_sandbox/snaps/js-map-weakmap-09-code.png)
 
-<img alt="js-map-weakmap example 9 result" src="./code_sandbox/snaps/js-map-weakmap-09-result.png" />
+![js-map-weakmap example 9 result](./code_sandbox/snaps/js-map-weakmap-09-result.png)
 
 - [x] **Outcome:** `getSecret()` is **"hidden data"**. `myMap.get(user1).secret` is also **"hidden data"** (same object key). `[...myMap]` throws **TypeError: myMap is not iterable**. `Array.from(myMap)` is **[]** (non-iterable objects become an empty array — not a leak).
 
@@ -33453,9 +33453,9 @@ const held = myMap.get(myObj);
 myObj = null;
 ```
 
-<img alt="js-map-weakmap example 10 source" src="./code_sandbox/snaps/js-map-weakmap-10-code.png" />
+![js-map-weakmap example 10 source](./code_sandbox/snaps/js-map-weakmap-10-code.png)
 
-<img alt="js-map-weakmap example 10 result" src="./code_sandbox/snaps/js-map-weakmap-10-result.png" />
+![js-map-weakmap example 10 result](./code_sandbox/snaps/js-map-weakmap-10-result.png)
 
 - [x] **Outcome:** Before nulling, `get` was **"secret"**. After, `myObj` is **null**. `get(null)` throws **TypeError: Invalid value used as weak map key**. You cannot iterate to see leftover pairs. GC is not immediate.
 
@@ -33628,9 +33628,9 @@ const fruits = new Map([
 ]);
 ```
 
-<img alt="js-map-reference example 1 source" src="./code_sandbox/snaps/js-map-reference-01-code.png" />
+![js-map-reference example 1 source](./code_sandbox/snaps/js-map-reference-01-code.png)
 
-<img alt="js-map-reference example 1 result" src="./code_sandbox/snaps/js-map-reference-01-result.png" />
+![js-map-reference example 1 result](./code_sandbox/snaps/js-map-reference-01-result.png)
 
 - [x] **Outcome:** **[["apples",500],["bananas",300],["oranges",200]]**, size **3**.
 
@@ -33651,9 +33651,9 @@ const fruits = new Map([
 fruits.clear();
 ```
 
-<img alt="js-map-reference example 2 source" src="./code_sandbox/snaps/js-map-reference-02-code.png" />
+![js-map-reference example 2 source](./code_sandbox/snaps/js-map-reference-02-code.png)
 
-<img alt="js-map-reference example 2 result" src="./code_sandbox/snaps/js-map-reference-02-result.png" />
+![js-map-reference example 2 result](./code_sandbox/snaps/js-map-reference-02-result.png)
 
 - [x] **Outcome:** size **0**, **[]**.
 
@@ -33674,9 +33674,9 @@ const fruits = new Map([
 const ok = fruits.delete("apples");
 ```
 
-<img alt="js-map-reference example 3 source" src="./code_sandbox/snaps/js-map-reference-03-code.png" />
+![js-map-reference example 3 source](./code_sandbox/snaps/js-map-reference-03-code.png)
 
-<img alt="js-map-reference example 3 result" src="./code_sandbox/snaps/js-map-reference-03-result.png" />
+![js-map-reference example 3 result](./code_sandbox/snaps/js-map-reference-03-result.png)
 
 - [x] **Outcome:** `delete("apples")` is **true**. Remaining **[["bananas",300],["oranges",200]]**.
 
@@ -33697,9 +33697,9 @@ const fruits = new Map([
 const pairs = Array.from(fruits.entries());
 ```
 
-<img alt="js-map-reference example 4 source" src="./code_sandbox/snaps/js-map-reference-04-code.png" />
+![js-map-reference example 4 source](./code_sandbox/snaps/js-map-reference-04-code.png)
 
-<img alt="js-map-reference example 4 result" src="./code_sandbox/snaps/js-map-reference-04-result.png" />
+![js-map-reference example 4 result](./code_sandbox/snaps/js-map-reference-04-result.png)
 
 - [x] **Outcome:** **[["apples",500],["bananas",300],["oranges",200]]**.
 
@@ -33723,9 +33723,9 @@ fruits.forEach(function (value, key) {
 });
 ```
 
-<img alt="js-map-reference example 5 source" src="./code_sandbox/snaps/js-map-reference-05-code.png" />
+![js-map-reference example 5 source](./code_sandbox/snaps/js-map-reference-05-code.png)
 
-<img alt="js-map-reference example 5 result" src="./code_sandbox/snaps/js-map-reference-05-result.png" />
+![js-map-reference example 5 result](./code_sandbox/snaps/js-map-reference-05-result.png)
 
 - [x] **Outcome:** text is **"apples=500;bananas=300;oranges=200;"**.
 
@@ -33746,9 +33746,9 @@ const fruits = new Map([
 fruits.get("bananas");
 ```
 
-<img alt="js-map-reference example 6 source" src="./code_sandbox/snaps/js-map-reference-06-code.png" />
+![js-map-reference example 6 source](./code_sandbox/snaps/js-map-reference-06-code.png)
 
-<img alt="js-map-reference example 6 result" src="./code_sandbox/snaps/js-map-reference-06-result.png" />
+![js-map-reference example 6 result](./code_sandbox/snaps/js-map-reference-06-result.png)
 
 - [x] **Outcome:** `get("bananas")` is **300**. `get("kiwi")` is **undefined**.
 
@@ -33773,9 +33773,9 @@ function myCallback({ quantity }) {
 const result = Map.groupBy(fruits, myCallback);
 ```
 
-<img alt="js-map-reference example 7 source" src="./code_sandbox/snaps/js-map-reference-07-code.png" />
+![js-map-reference example 7 source](./code_sandbox/snaps/js-map-reference-07-code.png)
 
-<img alt="js-map-reference example 7 result" src="./code_sandbox/snaps/js-map-reference-07-result.png" />
+![js-map-reference example 7 result](./code_sandbox/snaps/js-map-reference-07-result.png)
 
 - [x] **Outcome:** keys are **["ok","low"]**. **"ok"** has **2** fruits (apples, bananas). **"low"** has **2** (oranges, kiwi).
 
@@ -33796,9 +33796,9 @@ const fruits = new Map([
 fruits.has("oranges");
 ```
 
-<img alt="js-map-reference example 8 source" src="./code_sandbox/snaps/js-map-reference-08-code.png" />
+![js-map-reference example 8 source](./code_sandbox/snaps/js-map-reference-08-code.png)
 
-<img alt="js-map-reference example 8 result" src="./code_sandbox/snaps/js-map-reference-08-result.png" />
+![js-map-reference example 8 result](./code_sandbox/snaps/js-map-reference-08-result.png)
 
 - [x] **Outcome:** `has("oranges")` is **true**. `has("kiwi")` is **false**.
 
@@ -33819,9 +33819,9 @@ const fruits = new Map([
 const list = Array.from(fruits.keys());
 ```
 
-<img alt="js-map-reference example 9 source" src="./code_sandbox/snaps/js-map-reference-09-code.png" />
+![js-map-reference example 9 source](./code_sandbox/snaps/js-map-reference-09-code.png)
 
-<img alt="js-map-reference example 9 result" src="./code_sandbox/snaps/js-map-reference-09-result.png" />
+![js-map-reference example 9 result](./code_sandbox/snaps/js-map-reference-09-result.png)
 
 - [x] **Outcome:** **["apples","bananas","oranges"]**.
 
@@ -33842,9 +33842,9 @@ const fruits = new Map([
 const ret = fruits.set("apples", 200);
 ```
 
-<img alt="js-map-reference example 10 source" src="./code_sandbox/snaps/js-map-reference-10-code.png" />
+![js-map-reference example 10 source](./code_sandbox/snaps/js-map-reference-10-code.png)
 
-<img alt="js-map-reference example 10 result" src="./code_sandbox/snaps/js-map-reference-10-result.png" />
+![js-map-reference example 10 result](./code_sandbox/snaps/js-map-reference-10-result.png)
 
 - [x] **Outcome:** `get("apples")` is **200**. `set` returned the same Map (**true**).
 
@@ -33865,9 +33865,9 @@ const fruits = new Map([
 fruits.size;
 ```
 
-<img alt="js-map-reference example 11 source" src="./code_sandbox/snaps/js-map-reference-11-code.png" />
+![js-map-reference example 11 source](./code_sandbox/snaps/js-map-reference-11-code.png)
 
-<img alt="js-map-reference example 11 result" src="./code_sandbox/snaps/js-map-reference-11-result.png" />
+![js-map-reference example 11 result](./code_sandbox/snaps/js-map-reference-11-result.png)
 
 - [x] **Outcome:** `size` is **3**.
 
@@ -33888,9 +33888,9 @@ const fruits = new Map([
 const list = Array.from(fruits.values());
 ```
 
-<img alt="js-map-reference example 12 source" src="./code_sandbox/snaps/js-map-reference-12-code.png" />
+![js-map-reference example 12 source](./code_sandbox/snaps/js-map-reference-12-code.png)
 
-<img alt="js-map-reference example 12 result" src="./code_sandbox/snaps/js-map-reference-12-result.png" />
+![js-map-reference example 12 result](./code_sandbox/snaps/js-map-reference-12-result.png)
 
 - [x] **Outcome:** **[500,300,200]**.
 
@@ -34058,9 +34058,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-<img alt="js-iterations example 1 source" src="./code_sandbox/snaps/js-iterations-01-code.png" />
+![js-iterations example 1 source](./code_sandbox/snaps/js-iterations-01-code.png)
 
-<img alt="js-iterations example 1 result" src="./code_sandbox/snaps/js-iterations-01-result.png" />
+![js-iterations example 1 result](./code_sandbox/snaps/js-iterations-01-result.png)
 
 - [x] **Outcome:** text is five lines: **The number is 0** through **The number is 4**.
 
@@ -34082,9 +34082,9 @@ while (i < 10) {
 }
 ```
 
-<img alt="js-iterations example 2 source" src="./code_sandbox/snaps/js-iterations-02-code.png" />
+![js-iterations example 2 source](./code_sandbox/snaps/js-iterations-02-code.png)
 
-<img alt="js-iterations example 2 result" src="./code_sandbox/snaps/js-iterations-02-result.png" />
+![js-iterations example 2 result](./code_sandbox/snaps/js-iterations-02-result.png)
 
 - [x] **Outcome:** Lines **The number is 0** through **The number is 9**. After the loop, `i` is **10**.
 
@@ -34106,9 +34106,9 @@ do {
 } while (i < 10);
 ```
 
-<img alt="js-iterations example 3 source" src="./code_sandbox/snaps/js-iterations-03-code.png" />
+![js-iterations example 3 source](./code_sandbox/snaps/js-iterations-03-code.png)
 
-<img alt="js-iterations example 3 result" src="./code_sandbox/snaps/js-iterations-03-result.png" />
+![js-iterations example 3 result](./code_sandbox/snaps/js-iterations-03-result.png)
 
 - [x] **Outcome:** Same ten lines **0** through **9**. `i` is **10**. The body ran **before** the first test.
 
@@ -34129,9 +34129,9 @@ for (let x in person) {
 }
 ```
 
-<img alt="js-iterations example 4 source" src="./code_sandbox/snaps/js-iterations-04-code.png" />
+![js-iterations example 4 source](./code_sandbox/snaps/js-iterations-04-code.png)
 
-<img alt="js-iterations example 4 result" src="./code_sandbox/snaps/js-iterations-04-result.png" />
+![js-iterations example 4 result](./code_sandbox/snaps/js-iterations-04-result.png)
 
 - [x] **Outcome:** txt is **"John Doe 25 "** (keys `fname`, `lname`, `age` in that order here).
 
@@ -34152,9 +34152,9 @@ for (const car of cars) {
 }
 ```
 
-<img alt="js-iterations example 5 source" src="./code_sandbox/snaps/js-iterations-05-code.png" />
+![js-iterations example 5 source](./code_sandbox/snaps/js-iterations-05-code.png)
 
-<img alt="js-iterations example 5 result" src="./code_sandbox/snaps/js-iterations-05-result.png" />
+![js-iterations example 5 result](./code_sandbox/snaps/js-iterations-05-result.png)
 
 - [x] **Outcome:** text is **BMW**, **Volvo**, **Saab**, **Ford** (one per line) — the **values**, not indexes.
 
@@ -34175,9 +34175,9 @@ numbers.forEach(function (value) {
 });
 ```
 
-<img alt="js-iterations example 6 source" src="./code_sandbox/snaps/js-iterations-06-code.png" />
+![js-iterations example 6 source](./code_sandbox/snaps/js-iterations-06-code.png)
 
-<img alt="js-iterations example 6 result" src="./code_sandbox/snaps/js-iterations-06-result.png" />
+![js-iterations example 6 result](./code_sandbox/snaps/js-iterations-06-result.png)
 
 - [x] **Outcome:** text is **45**, **4**, **9**, **16**, **25** (one per line).
 
@@ -34351,9 +34351,9 @@ for (const x of name) {
 }
 ```
 
-<img alt="js-iterables example 1 source" src="./code_sandbox/snaps/js-iterables-01-code.png" />
+![js-iterables example 1 source](./code_sandbox/snaps/js-iterables-01-code.png)
 
-<img alt="js-iterables example 1 result" src="./code_sandbox/snaps/js-iterables-01-result.png" />
+![js-iterables example 1 result](./code_sandbox/snaps/js-iterables-01-result.png)
 
 - [x] **Outcome:** Nine lines: **W**, **3**, **S**, **c**, **h**, **o**, **o**, **l**, **s**.
 
@@ -34373,9 +34373,9 @@ for (const x of letters) {
 }
 ```
 
-<img alt="js-iterables example 2 source" src="./code_sandbox/snaps/js-iterables-02-code.png" />
+![js-iterables example 2 source](./code_sandbox/snaps/js-iterables-02-code.png)
 
-<img alt="js-iterables example 2 result" src="./code_sandbox/snaps/js-iterables-02-result.png" />
+![js-iterables example 2 result](./code_sandbox/snaps/js-iterables-02-result.png)
 
 - [x] **Outcome:** Lines **a**, **b**, **c**.
 
@@ -34395,9 +34395,9 @@ for (const x of numbers) {
 }
 ```
 
-<img alt="js-iterables example 3 source" src="./code_sandbox/snaps/js-iterables-03-code.png" />
+![js-iterables example 3 source](./code_sandbox/snaps/js-iterables-03-code.png)
 
-<img alt="js-iterables example 3 result" src="./code_sandbox/snaps/js-iterables-03-result.png" />
+![js-iterables example 3 result](./code_sandbox/snaps/js-iterables-03-result.png)
 
 - [x] **Outcome:** Lines **2**, **4**, **6**, **8**.
 
@@ -34417,9 +34417,9 @@ for (const x of letters) {
 }
 ```
 
-<img alt="js-iterables example 4 source" src="./code_sandbox/snaps/js-iterables-04-code.png" />
+![js-iterables example 4 source](./code_sandbox/snaps/js-iterables-04-code.png)
 
-<img alt="js-iterables example 4 result" src="./code_sandbox/snaps/js-iterables-04-result.png" />
+![js-iterables example 4 result](./code_sandbox/snaps/js-iterables-04-result.png)
 
 - [x] **Outcome:** Lines **a**, **b**, **c**.
 
@@ -34444,9 +34444,9 @@ for (const x of fruits) {
 }
 ```
 
-<img alt="js-iterables example 5 source" src="./code_sandbox/snaps/js-iterables-05-code.png" />
+![js-iterables example 5 source](./code_sandbox/snaps/js-iterables-05-code.png)
 
-<img alt="js-iterables example 5 result" src="./code_sandbox/snaps/js-iterables-05-result.png" />
+![js-iterables example 5 result](./code_sandbox/snaps/js-iterables-05-result.png)
 
 - [x] **Outcome:** text is **apples,500**, **bananas,300**, **oranges,200**. The first pair JSON is **["apples",500]**.
 
@@ -34477,9 +34477,9 @@ const c = n.next();
 const d = n.next();
 ```
 
-<img alt="js-iterables example 6 source" src="./code_sandbox/snaps/js-iterables-06-code.png" />
+![js-iterables example 6 source](./code_sandbox/snaps/js-iterables-06-code.png)
 
-<img alt="js-iterables example 6 result" src="./code_sandbox/snaps/js-iterables-06-result.png" />
+![js-iterables example 6 result](./code_sandbox/snaps/js-iterables-06-result.png)
 
 - [x] **Outcome:** a/b/c are **{"value":10,"done":false}**, **20**, **30**. The Tryit then prints `n.next().value` → **40**. `done` stays **false**.
 
@@ -34512,9 +34512,9 @@ for (const num of myNumbers) {
 }
 ```
 
-<img alt="js-iterables example 7 source" src="./code_sandbox/snaps/js-iterables-07-code.png" />
+![js-iterables example 7 source](./code_sandbox/snaps/js-iterables-07-code.png)
 
-<img alt="js-iterables example 7 result" src="./code_sandbox/snaps/js-iterables-07-result.png" />
+![js-iterables example 7 result](./code_sandbox/snaps/js-iterables-07-result.png)
 
 - [x] **Outcome:** Lines **10** through **90**. When `n` hits **100**, `done` is **true**, so **100 is omitted**. (The page assigns `done` as a sloppy global; this sandbox uses `let done`.)
 
@@ -34549,9 +34549,9 @@ while (true) {
 }
 ```
 
-<img alt="js-iterables example 8 source" src="./code_sandbox/snaps/js-iterables-08-code.png" />
+![js-iterables example 8 source](./code_sandbox/snaps/js-iterables-08-code.png)
 
-<img alt="js-iterables example 8 result" src="./code_sandbox/snaps/js-iterables-08-result.png" />
+![js-iterables example 8 result](./code_sandbox/snaps/js-iterables-08-result.png)
 
 - [x] **Outcome:** Same as `for...of`: **10** through **90**. The `{value:100, done:true}` step is not printed.
 
@@ -34736,9 +34736,9 @@ const second = it.next();
 const third = it.next();
 ```
 
-<img alt="js-iterators example 1 source" src="./code_sandbox/snaps/js-iterators-01-code.png" />
+![js-iterators example 1 source](./code_sandbox/snaps/js-iterators-01-code.png)
 
-<img alt="js-iterators example 1 result" src="./code_sandbox/snaps/js-iterators-01-result.png" />
+![js-iterators example 1 result](./code_sandbox/snaps/js-iterators-01-result.png)
 
 - [x] **Outcome:** first **{"value":"a","done":false}**, second **{"value":"b","done":false}**, third **{"done":true}** (`value` is **undefined**).
 
@@ -34759,9 +34759,9 @@ for (const x of myIterator) {
 }
 ```
 
-<img alt="js-iterators example 2 source" src="./code_sandbox/snaps/js-iterators-02-code.png" />
+![js-iterators example 2 source](./code_sandbox/snaps/js-iterators-02-code.png)
 
-<img alt="js-iterators example 2 result" src="./code_sandbox/snaps/js-iterators-02-result.png" />
+![js-iterators example 2 result](./code_sandbox/snaps/js-iterators-02-result.png)
 
 - [x] **Outcome:** Lines **1**, **2**, **3**.
 
@@ -34783,9 +34783,9 @@ for (const x of rest) {
 }
 ```
 
-<img alt="js-iterators example 3 source" src="./code_sandbox/snaps/js-iterators-03-code.png" />
+![js-iterators example 3 source](./code_sandbox/snaps/js-iterators-03-code.png)
 
-<img alt="js-iterators example 3 result" src="./code_sandbox/snaps/js-iterators-03-result.png" />
+![js-iterators example 3 result](./code_sandbox/snaps/js-iterators-03-result.png)
 
 - [x] **Outcome:** Only **6** remains (the first five values were dropped).
 
@@ -34803,9 +34803,9 @@ const myIterator = Iterator.from("123456789");
 let result = myIterator.every(x => x > 7);
 ```
 
-<img alt="js-iterators example 4 source" src="./code_sandbox/snaps/js-iterators-04-code.png" />
+![js-iterators example 4 source](./code_sandbox/snaps/js-iterators-04-code.png)
 
-<img alt="js-iterators example 4 result" src="./code_sandbox/snaps/js-iterators-04-result.png" />
+![js-iterators example 4 result](./code_sandbox/snaps/js-iterators-04-result.png)
 
 - [x] **Outcome:** **false** — `'1'` is not greater than 7. (`every` stops at the first failure.)
 
@@ -34826,9 +34826,9 @@ for (const x of filteredIterator) {
 }
 ```
 
-<img alt="js-iterators example 5 source" src="./code_sandbox/snaps/js-iterators-05-code.png" />
+![js-iterators example 5 source](./code_sandbox/snaps/js-iterators-05-code.png)
 
-<img alt="js-iterators example 5 result" src="./code_sandbox/snaps/js-iterators-05-result.png" />
+![js-iterators example 5 result](./code_sandbox/snaps/js-iterators-05-result.png)
 
 - [x] **Outcome:** Lines **32**, **33**, **40**. **16** is dropped.
 
@@ -34846,9 +34846,9 @@ const myIterator = Iterator.from([3, 10, 18, 30, 20]);
 let result = myIterator.find(x => x > 18);
 ```
 
-<img alt="js-iterators example 6 source" src="./code_sandbox/snaps/js-iterators-06-code.png" />
+![js-iterators example 6 source](./code_sandbox/snaps/js-iterators-06-code.png)
 
-<img alt="js-iterators example 6 result" src="./code_sandbox/snaps/js-iterators-06-result.png" />
+![js-iterators example 6 result](./code_sandbox/snaps/js-iterators-06-result.png)
 
 - [x] **Outcome:** result is **30**.
 
@@ -34870,9 +34870,9 @@ for (const x of mappedIterator) {
 }
 ```
 
-<img alt="js-iterators example 7 source" src="./code_sandbox/snaps/js-iterators-07-code.png" />
+![js-iterators example 7 source](./code_sandbox/snaps/js-iterators-07-code.png)
 
-<img alt="js-iterators example 7 result" src="./code_sandbox/snaps/js-iterators-07-result.png" />
+![js-iterators example 7 result](./code_sandbox/snaps/js-iterators-07-result.png)
 
 - [x] **Outcome:** Lines **1, 10, 2, 20, 3, 30, 4, 40, 5, 50, 6, 60**.
 
@@ -34890,9 +34890,9 @@ let text = "";
 myIterator.forEach(x => text += x);
 ```
 
-<img alt="js-iterators example 8 source" src="./code_sandbox/snaps/js-iterators-08-code.png" />
+![js-iterators example 8 source](./code_sandbox/snaps/js-iterators-08-code.png)
 
-<img alt="js-iterators example 8 result" src="./code_sandbox/snaps/js-iterators-08-result.png" />
+![js-iterators example 8 result](./code_sandbox/snaps/js-iterators-08-result.png)
 
 - [x] **Outcome:** text is **"123456789"** (the nine digit characters concatenated).
 
@@ -34914,9 +34914,9 @@ for (const x of mappedIterator) {
 }
 ```
 
-<img alt="js-iterators example 9 source" src="./code_sandbox/snaps/js-iterators-09-code.png" />
+![js-iterators example 9 source](./code_sandbox/snaps/js-iterators-09-code.png)
 
-<img alt="js-iterators example 9 result" src="./code_sandbox/snaps/js-iterators-09-result.png" />
+![js-iterators example 9 result](./code_sandbox/snaps/js-iterators-09-result.png)
 
 - [x] **Outcome:** Lines **2, 4, 6, 8, 10, 12, 14, 16, 18**.
 
@@ -34937,9 +34937,9 @@ const myIterator = Iterator.from([175, 50, 25]);
 let result = myIterator.reduce(myFunc);
 ```
 
-<img alt="js-iterators example 10 source" src="./code_sandbox/snaps/js-iterators-10-code.png" />
+![js-iterators example 10 source](./code_sandbox/snaps/js-iterators-10-code.png)
 
-<img alt="js-iterators example 10 result" src="./code_sandbox/snaps/js-iterators-10-result.png" />
+![js-iterators example 10 result](./code_sandbox/snaps/js-iterators-10-result.png)
 
 - [x] **Outcome:** result is **250** (`175 + 50 + 25`).
 
@@ -34957,9 +34957,9 @@ const myIterator = Iterator.from("123456789");
 let result = myIterator.some(x => x > 7);
 ```
 
-<img alt="js-iterators example 11 source" src="./code_sandbox/snaps/js-iterators-11-code.png" />
+![js-iterators example 11 source](./code_sandbox/snaps/js-iterators-11-code.png)
 
-<img alt="js-iterators example 11 result" src="./code_sandbox/snaps/js-iterators-11-result.png" />
+![js-iterators example 11 result](./code_sandbox/snaps/js-iterators-11-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -34980,9 +34980,9 @@ for (const x of firstFive) {
 }
 ```
 
-<img alt="js-iterators example 12 source" src="./code_sandbox/snaps/js-iterators-12-code.png" />
+![js-iterators example 12 source](./code_sandbox/snaps/js-iterators-12-code.png)
 
-<img alt="js-iterators example 12 result" src="./code_sandbox/snaps/js-iterators-12-result.png" />
+![js-iterators example 12 result](./code_sandbox/snaps/js-iterators-12-result.png)
 
 - [x] **Outcome:** Lines **1, 2, 3, 4, 5**. **6** is not taken.
 
@@ -35174,9 +35174,9 @@ for (let value of myGenerator) {
 }
 ```
 
-<img alt="js-generators example 1 source" src="./code_sandbox/snaps/js-generators-01-code.png" />
+![js-generators example 1 source](./code_sandbox/snaps/js-generators-01-code.png)
 
-<img alt="js-generators example 1 result" src="./code_sandbox/snaps/js-generators-01-result.png" />
+![js-generators example 1 result](./code_sandbox/snaps/js-generators-01-result.png)
 
 - [x] **Outcome:** text is **1** then **2**. **3 is omitted** because `return 3` sets **done: true**.
 
@@ -35202,9 +35202,9 @@ for (let value of myGenerator) {
 }
 ```
 
-<img alt="js-generators example 2 source" src="./code_sandbox/snaps/js-generators-02-code.png" />
+![js-generators example 2 source](./code_sandbox/snaps/js-generators-02-code.png)
 
-<img alt="js-generators example 2 result" src="./code_sandbox/snaps/js-generators-02-result.png" />
+![js-generators example 2 result](./code_sandbox/snaps/js-generators-02-result.png)
 
 - [x] **Outcome:** text is **1**, **2**, **3**.
 
@@ -35231,9 +35231,9 @@ const c = g.next();
 const d = g.next();
 ```
 
-<img alt="js-generators example 3 source" src="./code_sandbox/snaps/js-generators-03-code.png" />
+![js-generators example 3 source](./code_sandbox/snaps/js-generators-03-code.png)
 
-<img alt="js-generators example 3 result" src="./code_sandbox/snaps/js-generators-03-result.png" />
+![js-generators example 3 result](./code_sandbox/snaps/js-generators-03-result.png)
 
 - [x] **Outcome:** a **{"value":1,"done":false}**, b **{"value":2,"done":false}**, c **{"value":3,"done":true}** (the **return** value), d **{"done":true}** (`value` **undefined**).
 
@@ -35258,9 +35258,9 @@ const b = g.return(99);
 const c = g.next();
 ```
 
-<img alt="js-generators example 4 source" src="./code_sandbox/snaps/js-generators-04-code.png" />
+![js-generators example 4 source](./code_sandbox/snaps/js-generators-04-code.png)
 
-<img alt="js-generators example 4 result" src="./code_sandbox/snaps/js-generators-04-result.png" />
+![js-generators example 4 result](./code_sandbox/snaps/js-generators-04-result.png)
 
 - [x] **Outcome:** a **{"value":1,"done":false}**, b **{"value":99,"done":true}**, c **{"done":true}** (no more yields).
 
@@ -35289,9 +35289,9 @@ const b = g.throw("boom");
 const c = g.next();
 ```
 
-<img alt="js-generators example 5 source" src="./code_sandbox/snaps/js-generators-05-code.png" />
+![js-generators example 5 source](./code_sandbox/snaps/js-generators-05-code.png)
 
-<img alt="js-generators example 5 result" src="./code_sandbox/snaps/js-generators-05-result.png" />
+![js-generators example 5 result](./code_sandbox/snaps/js-generators-05-result.png)
 
 - [x] **Outcome:** a **{"value":1,"done":false}**, b **{"value":"caught:boom","done":false}**, c **{"value":3,"done":false}**.
 
@@ -35474,9 +35474,9 @@ Sandbox: `code_sandbox/js-math/math-pi.html`
 Math.PI;
 ```
 
-<img alt="js-math example 1 source" src="./code_sandbox/snaps/js-math-01-code.png" />
+![js-math example 1 source](./code_sandbox/snaps/js-math-01-code.png)
 
-<img alt="js-math example 1 result" src="./code_sandbox/snaps/js-math-01-result.png" />
+![js-math example 1 result](./code_sandbox/snaps/js-math-01-result.png)
 
 - [x] **Outcome:** `Math.PI` is **3.141592653589793**.
 
@@ -35500,9 +35500,9 @@ Math.LOG2E;
 Math.LOG10E;
 ```
 
-<img alt="js-math example 2 source" src="./code_sandbox/snaps/js-math-02-code.png" />
+![js-math example 2 source](./code_sandbox/snaps/js-math-02-code.png)
 
-<img alt="js-math example 2 result" src="./code_sandbox/snaps/js-math-02-result.png" />
+![js-math example 2 result](./code_sandbox/snaps/js-math-02-result.png)
 
 - [x] **Outcome:** **E** 2.718281828459045, **PI** 3.141592653589793, **SQRT2** 1.4142135623730951, **SQRT1_2** 0.7071067811865476, **LN2** 0.6931471805599453, **LN10** 2.302585092994046, **LOG2E** 1.4426950408889634, **LOG10E** 0.4342944819032518.
 
@@ -35518,9 +35518,9 @@ Sandbox: `code_sandbox/js-math/round-4-6.html`
 Math.round(4.6);
 ```
 
-<img alt="js-math example 3 source" src="./code_sandbox/snaps/js-math-03-code.png" />
+![js-math example 3 source](./code_sandbox/snaps/js-math-03-code.png)
 
-<img alt="js-math example 3 result" src="./code_sandbox/snaps/js-math-03-result.png" />
+![js-math example 3 result](./code_sandbox/snaps/js-math-03-result.png)
 
 - [x] **Outcome:** **5**.
 
@@ -35536,9 +35536,9 @@ Sandbox: `code_sandbox/js-math/round-4-5.html`
 Math.round(4.5);
 ```
 
-<img alt="js-math example 4 source" src="./code_sandbox/snaps/js-math-04-code.png" />
+![js-math example 4 source](./code_sandbox/snaps/js-math-04-code.png)
 
-<img alt="js-math example 4 result" src="./code_sandbox/snaps/js-math-04-result.png" />
+![js-math example 4 result](./code_sandbox/snaps/js-math-04-result.png)
 
 - [x] **Outcome:** **5**.
 
@@ -35554,9 +35554,9 @@ Sandbox: `code_sandbox/js-math/round-4-4.html`
 Math.round(4.4);
 ```
 
-<img alt="js-math example 5 source" src="./code_sandbox/snaps/js-math-05-code.png" />
+![js-math example 5 source](./code_sandbox/snaps/js-math-05-code.png)
 
-<img alt="js-math example 5 result" src="./code_sandbox/snaps/js-math-05-result.png" />
+![js-math example 5 result](./code_sandbox/snaps/js-math-05-result.png)
 
 - [x] **Outcome:** **4**.
 
@@ -35573,9 +35573,9 @@ Sandbox: `code_sandbox/js-math/ceil.html`
 Math.ceil(4.4);
 ```
 
-<img alt="js-math example 6 source" src="./code_sandbox/snaps/js-math-06-code.png" />
+![js-math example 6 source](./code_sandbox/snaps/js-math-06-code.png)
 
-<img alt="js-math example 6 result" src="./code_sandbox/snaps/js-math-06-result.png" />
+![js-math example 6 result](./code_sandbox/snaps/js-math-06-result.png)
 
 - [x] **Outcome:** 4.4 / 4.9 / 4.7 / 4.2 → **5**. **−4.2 → −4** (up toward +∞, not away from zero).
 
@@ -35592,9 +35592,9 @@ Sandbox: `code_sandbox/js-math/floor.html`
 Math.floor(4.7);
 ```
 
-<img alt="js-math example 7 source" src="./code_sandbox/snaps/js-math-07-code.png" />
+![js-math example 7 source](./code_sandbox/snaps/js-math-07-code.png)
 
-<img alt="js-math example 7 result" src="./code_sandbox/snaps/js-math-07-result.png" />
+![js-math example 7 result](./code_sandbox/snaps/js-math-07-result.png)
 
 - [x] **Outcome:** Positive values → **4**. **−4.2 → −5** (down, more negative).
 
@@ -35611,9 +35611,9 @@ Sandbox: `code_sandbox/js-math/trunc.html`
 Math.trunc(4.7);
 ```
 
-<img alt="js-math example 8 source" src="./code_sandbox/snaps/js-math-08-code.png" />
+![js-math example 8 source](./code_sandbox/snaps/js-math-08-code.png)
 
-<img alt="js-math example 8 result" src="./code_sandbox/snaps/js-math-08-result.png" />
+![js-math example 8 result](./code_sandbox/snaps/js-math-08-result.png)
 
 - [x] **Outcome:** Positives → **4**. **−4.2 → −4**.
 
@@ -35630,9 +35630,9 @@ Sandbox: `code_sandbox/js-math/sign.html`
 Math.sign(4);
 ```
 
-<img alt="js-math example 9 source" src="./code_sandbox/snaps/js-math-09-code.png" />
+![js-math example 9 source](./code_sandbox/snaps/js-math-09-code.png)
 
-<img alt="js-math example 9 result" src="./code_sandbox/snaps/js-math-09-result.png" />
+![js-math example 9 result](./code_sandbox/snaps/js-math-09-result.png)
 
 - [x] **Outcome:** **1**, **−1**, and **0**.
 
@@ -35648,9 +35648,9 @@ Sandbox: `code_sandbox/js-math/pow.html`
 Math.pow(8, 2);
 ```
 
-<img alt="js-math example 10 source" src="./code_sandbox/snaps/js-math-10-code.png" />
+![js-math example 10 source](./code_sandbox/snaps/js-math-10-code.png)
 
-<img alt="js-math example 10 result" src="./code_sandbox/snaps/js-math-10-result.png" />
+![js-math example 10 result](./code_sandbox/snaps/js-math-10-result.png)
 
 - [x] **Outcome:** **64**.
 
@@ -35666,9 +35666,9 @@ Sandbox: `code_sandbox/js-math/sqrt.html`
 Math.sqrt(64);
 ```
 
-<img alt="js-math example 11 source" src="./code_sandbox/snaps/js-math-11-code.png" />
+![js-math example 11 source](./code_sandbox/snaps/js-math-11-code.png)
 
-<img alt="js-math example 11 result" src="./code_sandbox/snaps/js-math-11-result.png" />
+![js-math example 11 result](./code_sandbox/snaps/js-math-11-result.png)
 
 - [x] **Outcome:** **8**.
 
@@ -35684,9 +35684,9 @@ Sandbox: `code_sandbox/js-math/abs.html`
 Math.abs(-4.7);
 ```
 
-<img alt="js-math example 12 source" src="./code_sandbox/snaps/js-math-12-code.png" />
+![js-math example 12 source](./code_sandbox/snaps/js-math-12-code.png)
 
-<img alt="js-math example 12 result" src="./code_sandbox/snaps/js-math-12-result.png" />
+![js-math example 12 result](./code_sandbox/snaps/js-math-12-result.png)
 
 - [x] **Outcome:** **4.7**.
 
@@ -35703,9 +35703,9 @@ Sandbox: `code_sandbox/js-math/sin-90deg.html`
 Math.sin(90 * Math.PI / 180);
 ```
 
-<img alt="js-math example 13 source" src="./code_sandbox/snaps/js-math-13-code.png" />
+![js-math example 13 source](./code_sandbox/snaps/js-math-13-code.png)
 
-<img alt="js-math example 13 result" src="./code_sandbox/snaps/js-math-13-result.png" />
+![js-math example 13 result](./code_sandbox/snaps/js-math-13-result.png)
 
 - [x] **Outcome:** **1** (sine of 90°).
 
@@ -35721,9 +35721,9 @@ Sandbox: `code_sandbox/js-math/cos-0deg.html`
 Math.cos(0 * Math.PI / 180);
 ```
 
-<img alt="js-math example 14 source" src="./code_sandbox/snaps/js-math-14-code.png" />
+![js-math example 14 source](./code_sandbox/snaps/js-math-14-code.png)
 
-<img alt="js-math example 14 result" src="./code_sandbox/snaps/js-math-14-result.png" />
+![js-math example 14 result](./code_sandbox/snaps/js-math-14-result.png)
 
 - [x] **Outcome:** **1** (cosine of 0°).
 
@@ -35739,9 +35739,9 @@ Sandbox: `code_sandbox/js-math/min.html`
 Math.min(0, 150, 30, 20, -8, -200);
 ```
 
-<img alt="js-math example 15 source" src="./code_sandbox/snaps/js-math-15-code.png" />
+![js-math example 15 source](./code_sandbox/snaps/js-math-15-code.png)
 
-<img alt="js-math example 15 result" src="./code_sandbox/snaps/js-math-15-result.png" />
+![js-math example 15 result](./code_sandbox/snaps/js-math-15-result.png)
 
 - [x] **Outcome:** **-200**.
 
@@ -35757,9 +35757,9 @@ Sandbox: `code_sandbox/js-math/max.html`
 Math.max(0, 150, 30, 20, -8, -200);
 ```
 
-<img alt="js-math example 16 source" src="./code_sandbox/snaps/js-math-16-code.png" />
+![js-math example 16 source](./code_sandbox/snaps/js-math-16-code.png)
 
-<img alt="js-math example 16 result" src="./code_sandbox/snaps/js-math-16-result.png" />
+![js-math example 16 result](./code_sandbox/snaps/js-math-16-result.png)
 
 - [x] **Outcome:** **150**.
 
@@ -35776,9 +35776,9 @@ Sandbox: `code_sandbox/js-math/random.html`
 Math.random();
 ```
 
-<img alt="js-math example 17 source" src="./code_sandbox/snaps/js-math-17-code.png" />
+![js-math example 17 source](./code_sandbox/snaps/js-math-17-code.png)
 
-<img alt="js-math example 17 result" src="./code_sandbox/snaps/js-math-17-result.png" />
+![js-math example 17 result](./code_sandbox/snaps/js-math-17-result.png)
 
 - [x] **Outcome:** The snap shows a **sample** in **[0, 1)**. Re-run for another value. Never **1**. The boolean check on a second draw is **true**.
 
@@ -35794,9 +35794,9 @@ Sandbox: `code_sandbox/js-math/log-1.html`
 Math.log(1);
 ```
 
-<img alt="js-math example 18 source" src="./code_sandbox/snaps/js-math-18-code.png" />
+![js-math example 18 source](./code_sandbox/snaps/js-math-18-code.png)
 
-<img alt="js-math example 18 result" src="./code_sandbox/snaps/js-math-18-result.png" />
+![js-math example 18 result](./code_sandbox/snaps/js-math-18-result.png)
 
 - [x] **Outcome:** **0**.
 
@@ -35812,9 +35812,9 @@ Sandbox: `code_sandbox/js-math/log-2.html`
 Math.log(2);
 ```
 
-<img alt="js-math example 19 source" src="./code_sandbox/snaps/js-math-19-code.png" />
+![js-math example 19 source](./code_sandbox/snaps/js-math-19-code.png)
 
-<img alt="js-math example 19 result" src="./code_sandbox/snaps/js-math-19-result.png" />
+![js-math example 19 result](./code_sandbox/snaps/js-math-19-result.png)
 
 - [x] **Outcome:** **0.6931471805599453** (equals `Math.LN2`).
 
@@ -35830,9 +35830,9 @@ Sandbox: `code_sandbox/js-math/log-3.html`
 Math.log(3);
 ```
 
-<img alt="js-math example 20 source" src="./code_sandbox/snaps/js-math-20-code.png" />
+![js-math example 20 source](./code_sandbox/snaps/js-math-20-code.png)
 
-<img alt="js-math example 20 result" src="./code_sandbox/snaps/js-math-20-result.png" />
+![js-math example 20 result](./code_sandbox/snaps/js-math-20-result.png)
 
 - [x] **Outcome:** **1.0986122886681096**.
 
@@ -35849,9 +35849,9 @@ Sandbox: `code_sandbox/js-math/log-10.html`
 Math.log(10);
 ```
 
-<img alt="js-math example 21 source" src="./code_sandbox/snaps/js-math-21-code.png" />
+![js-math example 21 source](./code_sandbox/snaps/js-math-21-code.png)
 
-<img alt="js-math example 21 result" src="./code_sandbox/snaps/js-math-21-result.png" />
+![js-math example 21 result](./code_sandbox/snaps/js-math-21-result.png)
 
 - [x] **Outcome:** **2.302585092994046** (equals `Math.LN10`).
 
@@ -35867,9 +35867,9 @@ Sandbox: `code_sandbox/js-math/log2-8.html`
 Math.log2(8);
 ```
 
-<img alt="js-math example 22 source" src="./code_sandbox/snaps/js-math-22-code.png" />
+![js-math example 22 source](./code_sandbox/snaps/js-math-22-code.png)
 
-<img alt="js-math example 22 result" src="./code_sandbox/snaps/js-math-22-result.png" />
+![js-math example 22 result](./code_sandbox/snaps/js-math-22-result.png)
 
 - [x] **Outcome:** **3** (2³ = 8).
 
@@ -35885,9 +35885,9 @@ Sandbox: `code_sandbox/js-math/log10-1000.html`
 Math.log10(1000);
 ```
 
-<img alt="js-math example 23 source" src="./code_sandbox/snaps/js-math-23-code.png" />
+![js-math example 23 source](./code_sandbox/snaps/js-math-23-code.png)
 
-<img alt="js-math example 23 result" src="./code_sandbox/snaps/js-math-23-result.png" />
+![js-math example 23 result](./code_sandbox/snaps/js-math-23-result.png)
 
 - [x] **Outcome:** **3** (10³ = 1000).
 
@@ -36107,9 +36107,9 @@ Sandbox: `code_sandbox/js-math-reference/abs.html`
 Math.abs(-4.7);
 ```
 
-<img alt="js-math-reference example 1 source" src="./code_sandbox/snaps/js-math-reference-01-code.png" />
+![js-math-reference example 1 source](./code_sandbox/snaps/js-math-reference-01-code.png)
 
-<img alt="js-math-reference example 1 result" src="./code_sandbox/snaps/js-math-reference-01-result.png" />
+![js-math-reference example 1 result](./code_sandbox/snaps/js-math-reference-01-result.png)
 
 - [x] **Outcome:** `Math.abs(-4.7)` is **4.7**.
 
@@ -36126,9 +36126,9 @@ Sandbox: `code_sandbox/js-math-reference/acos.html`
 Math.acos(0.5);
 ```
 
-<img alt="js-math-reference example 2 source" src="./code_sandbox/snaps/js-math-reference-02-code.png" />
+![js-math-reference example 2 source](./code_sandbox/snaps/js-math-reference-02-code.png)
 
-<img alt="js-math-reference example 2 result" src="./code_sandbox/snaps/js-math-reference-02-result.png" />
+![js-math-reference example 2 result](./code_sandbox/snaps/js-math-reference-02-result.png)
 
 - [x] **Outcome:** `Math.acos(0.5)` is **1.0471975511965979**.
 
@@ -36144,9 +36144,9 @@ Sandbox: `code_sandbox/js-math-reference/acosh.html`
 Math.acosh(2);
 ```
 
-<img alt="js-math-reference example 3 source" src="./code_sandbox/snaps/js-math-reference-03-code.png" />
+![js-math-reference example 3 source](./code_sandbox/snaps/js-math-reference-03-code.png)
 
-<img alt="js-math-reference example 3 result" src="./code_sandbox/snaps/js-math-reference-03-result.png" />
+![js-math-reference example 3 result](./code_sandbox/snaps/js-math-reference-03-result.png)
 
 - [x] **Outcome:** `Math.acosh(2)` is **1.3169578969248166**.
 
@@ -36163,9 +36163,9 @@ Sandbox: `code_sandbox/js-math-reference/asin.html`
 Math.asin(0.5);
 ```
 
-<img alt="js-math-reference example 4 source" src="./code_sandbox/snaps/js-math-reference-04-code.png" />
+![js-math-reference example 4 source](./code_sandbox/snaps/js-math-reference-04-code.png)
 
-<img alt="js-math-reference example 4 result" src="./code_sandbox/snaps/js-math-reference-04-result.png" />
+![js-math-reference example 4 result](./code_sandbox/snaps/js-math-reference-04-result.png)
 
 - [x] **Outcome:** `Math.asin(0.5)` is **0.5235987755982989**.
 
@@ -36181,9 +36181,9 @@ Sandbox: `code_sandbox/js-math-reference/asinh.html`
 Math.asinh(1);
 ```
 
-<img alt="js-math-reference example 5 source" src="./code_sandbox/snaps/js-math-reference-05-code.png" />
+![js-math-reference example 5 source](./code_sandbox/snaps/js-math-reference-05-code.png)
 
-<img alt="js-math-reference example 5 result" src="./code_sandbox/snaps/js-math-reference-05-result.png" />
+![js-math-reference example 5 result](./code_sandbox/snaps/js-math-reference-05-result.png)
 
 - [x] **Outcome:** `Math.asinh(1)` is **0.881373587019543**.
 
@@ -36200,9 +36200,9 @@ Sandbox: `code_sandbox/js-math-reference/atan.html`
 Math.atan(1);
 ```
 
-<img alt="js-math-reference example 6 source" src="./code_sandbox/snaps/js-math-reference-06-code.png" />
+![js-math-reference example 6 source](./code_sandbox/snaps/js-math-reference-06-code.png)
 
-<img alt="js-math-reference example 6 result" src="./code_sandbox/snaps/js-math-reference-06-result.png" />
+![js-math-reference example 6 result](./code_sandbox/snaps/js-math-reference-06-result.png)
 
 - [x] **Outcome:** `Math.atan(1)` is **0.7853981633974483**.
 
@@ -36219,9 +36219,9 @@ Sandbox: `code_sandbox/js-math-reference/atan2.html`
 Math.atan2(8, 4);
 ```
 
-<img alt="js-math-reference example 7 source" src="./code_sandbox/snaps/js-math-reference-07-code.png" />
+![js-math-reference example 7 source](./code_sandbox/snaps/js-math-reference-07-code.png)
 
-<img alt="js-math-reference example 7 result" src="./code_sandbox/snaps/js-math-reference-07-result.png" />
+![js-math-reference example 7 result](./code_sandbox/snaps/js-math-reference-07-result.png)
 
 - [x] **Outcome:** `Math.atan2(8, 4)` is **1.1071487177940904**.
 
@@ -36237,9 +36237,9 @@ Sandbox: `code_sandbox/js-math-reference/atanh.html`
 Math.atanh(0.5);
 ```
 
-<img alt="js-math-reference example 8 source" src="./code_sandbox/snaps/js-math-reference-08-code.png" />
+![js-math-reference example 8 source](./code_sandbox/snaps/js-math-reference-08-code.png)
 
-<img alt="js-math-reference example 8 result" src="./code_sandbox/snaps/js-math-reference-08-result.png" />
+![js-math-reference example 8 result](./code_sandbox/snaps/js-math-reference-08-result.png)
 
 - [x] **Outcome:** `Math.atanh(0.5)` is **0.5493061443340548**.
 
@@ -36255,9 +36255,9 @@ Sandbox: `code_sandbox/js-math-reference/cbrt.html`
 Math.cbrt(8);
 ```
 
-<img alt="js-math-reference example 9 source" src="./code_sandbox/snaps/js-math-reference-09-code.png" />
+![js-math-reference example 9 source](./code_sandbox/snaps/js-math-reference-09-code.png)
 
-<img alt="js-math-reference example 9 result" src="./code_sandbox/snaps/js-math-reference-09-result.png" />
+![js-math-reference example 9 result](./code_sandbox/snaps/js-math-reference-09-result.png)
 
 - [x] **Outcome:** `Math.cbrt(8)` is **2**.
 
@@ -36273,9 +36273,9 @@ Sandbox: `code_sandbox/js-math-reference/ceil.html`
 Math.ceil(4.4);
 ```
 
-<img alt="js-math-reference example 10 source" src="./code_sandbox/snaps/js-math-reference-10-code.png" />
+![js-math-reference example 10 source](./code_sandbox/snaps/js-math-reference-10-code.png)
 
-<img alt="js-math-reference example 10 result" src="./code_sandbox/snaps/js-math-reference-10-result.png" />
+![js-math-reference example 10 result](./code_sandbox/snaps/js-math-reference-10-result.png)
 
 - [x] **Outcome:** `Math.ceil(4.4)` is **5**.
 
@@ -36292,9 +36292,9 @@ Sandbox: `code_sandbox/js-math-reference/clz32.html`
 Math.clz32(1);
 ```
 
-<img alt="js-math-reference example 11 source" src="./code_sandbox/snaps/js-math-reference-11-code.png" />
+![js-math-reference example 11 source](./code_sandbox/snaps/js-math-reference-11-code.png)
 
-<img alt="js-math-reference example 11 result" src="./code_sandbox/snaps/js-math-reference-11-result.png" />
+![js-math-reference example 11 result](./code_sandbox/snaps/js-math-reference-11-result.png)
 
 - [x] **Outcome:** `Math.clz32(1)` is **31**.
 
@@ -36310,9 +36310,9 @@ Sandbox: `code_sandbox/js-math-reference/cos.html`
 Math.cos(0);
 ```
 
-<img alt="js-math-reference example 12 source" src="./code_sandbox/snaps/js-math-reference-12-code.png" />
+![js-math-reference example 12 source](./code_sandbox/snaps/js-math-reference-12-code.png)
 
-<img alt="js-math-reference example 12 result" src="./code_sandbox/snaps/js-math-reference-12-result.png" />
+![js-math-reference example 12 result](./code_sandbox/snaps/js-math-reference-12-result.png)
 
 - [x] **Outcome:** `Math.cos(0)` is **1**.
 
@@ -36328,9 +36328,9 @@ Sandbox: `code_sandbox/js-math-reference/cosh.html`
 Math.cosh(0);
 ```
 
-<img alt="js-math-reference example 13 source" src="./code_sandbox/snaps/js-math-reference-13-code.png" />
+![js-math-reference example 13 source](./code_sandbox/snaps/js-math-reference-13-code.png)
 
-<img alt="js-math-reference example 13 result" src="./code_sandbox/snaps/js-math-reference-13-result.png" />
+![js-math-reference example 13 result](./code_sandbox/snaps/js-math-reference-13-result.png)
 
 - [x] **Outcome:** `Math.cosh(0)` is **1**.
 
@@ -36346,9 +36346,9 @@ Sandbox: `code_sandbox/js-math-reference/e.html`
 Math.E;
 ```
 
-<img alt="js-math-reference example 14 source" src="./code_sandbox/snaps/js-math-reference-14-code.png" />
+![js-math-reference example 14 source](./code_sandbox/snaps/js-math-reference-14-code.png)
 
-<img alt="js-math-reference example 14 result" src="./code_sandbox/snaps/js-math-reference-14-result.png" />
+![js-math-reference example 14 result](./code_sandbox/snaps/js-math-reference-14-result.png)
 
 - [x] **Outcome:** `Math.E` is **2.718281828459045**.
 
@@ -36365,9 +36365,9 @@ Sandbox: `code_sandbox/js-math-reference/exp.html`
 Math.exp(1);
 ```
 
-<img alt="js-math-reference example 15 source" src="./code_sandbox/snaps/js-math-reference-15-code.png" />
+![js-math-reference example 15 source](./code_sandbox/snaps/js-math-reference-15-code.png)
 
-<img alt="js-math-reference example 15 result" src="./code_sandbox/snaps/js-math-reference-15-result.png" />
+![js-math-reference example 15 result](./code_sandbox/snaps/js-math-reference-15-result.png)
 
 - [x] **Outcome:** `Math.exp(1)` is **2.718281828459045**.
 
@@ -36383,9 +36383,9 @@ Sandbox: `code_sandbox/js-math-reference/expm1.html`
 Math.expm1(1);
 ```
 
-<img alt="js-math-reference example 16 source" src="./code_sandbox/snaps/js-math-reference-16-code.png" />
+![js-math-reference example 16 source](./code_sandbox/snaps/js-math-reference-16-code.png)
 
-<img alt="js-math-reference example 16 result" src="./code_sandbox/snaps/js-math-reference-16-result.png" />
+![js-math-reference example 16 result](./code_sandbox/snaps/js-math-reference-16-result.png)
 
 - [x] **Outcome:** `Math.expm1(1)` is **1.718281828459045**.
 
@@ -36402,9 +36402,9 @@ Sandbox: `code_sandbox/js-math-reference/f16round.html`
 Math.f16round(1.337);
 ```
 
-<img alt="js-math-reference example 17 source" src="./code_sandbox/snaps/js-math-reference-17-code.png" />
+![js-math-reference example 17 source](./code_sandbox/snaps/js-math-reference-17-code.png)
 
-<img alt="js-math-reference example 17 result" src="./code_sandbox/snaps/js-math-reference-17-result.png" />
+![js-math-reference example 17 result](./code_sandbox/snaps/js-math-reference-17-result.png)
 
 - [x] **Outcome:** **1.3369140625** (not an integer). Chrome implements this; Node 22 does not.
 
@@ -36420,9 +36420,9 @@ Sandbox: `code_sandbox/js-math-reference/floor.html`
 Math.floor(4.7);
 ```
 
-<img alt="js-math-reference example 18 source" src="./code_sandbox/snaps/js-math-reference-18-code.png" />
+![js-math-reference example 18 source](./code_sandbox/snaps/js-math-reference-18-code.png)
 
-<img alt="js-math-reference example 18 result" src="./code_sandbox/snaps/js-math-reference-18-result.png" />
+![js-math-reference example 18 result](./code_sandbox/snaps/js-math-reference-18-result.png)
 
 - [x] **Outcome:** `Math.floor(4.7)` is **4**.
 
@@ -36438,9 +36438,9 @@ Sandbox: `code_sandbox/js-math-reference/fround.html`
 Math.fround(1.337);
 ```
 
-<img alt="js-math-reference example 19 source" src="./code_sandbox/snaps/js-math-reference-19-code.png" />
+![js-math-reference example 19 source](./code_sandbox/snaps/js-math-reference-19-code.png)
 
-<img alt="js-math-reference example 19 result" src="./code_sandbox/snaps/js-math-reference-19-result.png" />
+![js-math-reference example 19 result](./code_sandbox/snaps/js-math-reference-19-result.png)
 
 - [x] **Outcome:** `Math.fround(1.337)` is **1.3370000123977661**.
 
@@ -36456,9 +36456,9 @@ Sandbox: `code_sandbox/js-math-reference/ln2.html`
 Math.LN2;
 ```
 
-<img alt="js-math-reference example 20 source" src="./code_sandbox/snaps/js-math-reference-20-code.png" />
+![js-math-reference example 20 source](./code_sandbox/snaps/js-math-reference-20-code.png)
 
-<img alt="js-math-reference example 20 result" src="./code_sandbox/snaps/js-math-reference-20-result.png" />
+![js-math-reference example 20 result](./code_sandbox/snaps/js-math-reference-20-result.png)
 
 - [x] **Outcome:** `Math.LN2` is **0.6931471805599453**.
 
@@ -36474,9 +36474,9 @@ Sandbox: `code_sandbox/js-math-reference/ln10.html`
 Math.LN10;
 ```
 
-<img alt="js-math-reference example 21 source" src="./code_sandbox/snaps/js-math-reference-21-code.png" />
+![js-math-reference example 21 source](./code_sandbox/snaps/js-math-reference-21-code.png)
 
-<img alt="js-math-reference example 21 result" src="./code_sandbox/snaps/js-math-reference-21-result.png" />
+![js-math-reference example 21 result](./code_sandbox/snaps/js-math-reference-21-result.png)
 
 - [x] **Outcome:** `Math.LN10` is **2.302585092994046**.
 
@@ -36492,9 +36492,9 @@ Sandbox: `code_sandbox/js-math-reference/log.html`
 Math.log(2);
 ```
 
-<img alt="js-math-reference example 22 source" src="./code_sandbox/snaps/js-math-reference-22-code.png" />
+![js-math-reference example 22 source](./code_sandbox/snaps/js-math-reference-22-code.png)
 
-<img alt="js-math-reference example 22 result" src="./code_sandbox/snaps/js-math-reference-22-result.png" />
+![js-math-reference example 22 result](./code_sandbox/snaps/js-math-reference-22-result.png)
 
 - [x] **Outcome:** `Math.log(2)` is **0.6931471805599453**.
 
@@ -36510,9 +36510,9 @@ Sandbox: `code_sandbox/js-math-reference/log10.html`
 Math.log10(1000);
 ```
 
-<img alt="js-math-reference example 23 source" src="./code_sandbox/snaps/js-math-reference-23-code.png" />
+![js-math-reference example 23 source](./code_sandbox/snaps/js-math-reference-23-code.png)
 
-<img alt="js-math-reference example 23 result" src="./code_sandbox/snaps/js-math-reference-23-result.png" />
+![js-math-reference example 23 result](./code_sandbox/snaps/js-math-reference-23-result.png)
 
 - [x] **Outcome:** `Math.log10(1000)` is **3**.
 
@@ -36528,9 +36528,9 @@ Sandbox: `code_sandbox/js-math-reference/log10e.html`
 Math.LOG10E;
 ```
 
-<img alt="js-math-reference example 24 source" src="./code_sandbox/snaps/js-math-reference-24-code.png" />
+![js-math-reference example 24 source](./code_sandbox/snaps/js-math-reference-24-code.png)
 
-<img alt="js-math-reference example 24 result" src="./code_sandbox/snaps/js-math-reference-24-result.png" />
+![js-math-reference example 24 result](./code_sandbox/snaps/js-math-reference-24-result.png)
 
 - [x] **Outcome:** `Math.LOG10E` is **0.4342944819032518**.
 
@@ -36546,9 +36546,9 @@ Sandbox: `code_sandbox/js-math-reference/log1p.html`
 Math.log1p(1);
 ```
 
-<img alt="js-math-reference example 25 source" src="./code_sandbox/snaps/js-math-reference-25-code.png" />
+![js-math-reference example 25 source](./code_sandbox/snaps/js-math-reference-25-code.png)
 
-<img alt="js-math-reference example 25 result" src="./code_sandbox/snaps/js-math-reference-25-result.png" />
+![js-math-reference example 25 result](./code_sandbox/snaps/js-math-reference-25-result.png)
 
 - [x] **Outcome:** `Math.log1p(1)` is **0.6931471805599453**.
 
@@ -36564,9 +36564,9 @@ Sandbox: `code_sandbox/js-math-reference/log2.html`
 Math.log2(8);
 ```
 
-<img alt="js-math-reference example 26 source" src="./code_sandbox/snaps/js-math-reference-26-code.png" />
+![js-math-reference example 26 source](./code_sandbox/snaps/js-math-reference-26-code.png)
 
-<img alt="js-math-reference example 26 result" src="./code_sandbox/snaps/js-math-reference-26-result.png" />
+![js-math-reference example 26 result](./code_sandbox/snaps/js-math-reference-26-result.png)
 
 - [x] **Outcome:** `Math.log2(8)` is **3**.
 
@@ -36582,9 +36582,9 @@ Sandbox: `code_sandbox/js-math-reference/log2e.html`
 Math.LOG2E;
 ```
 
-<img alt="js-math-reference example 27 source" src="./code_sandbox/snaps/js-math-reference-27-code.png" />
+![js-math-reference example 27 source](./code_sandbox/snaps/js-math-reference-27-code.png)
 
-<img alt="js-math-reference example 27 result" src="./code_sandbox/snaps/js-math-reference-27-result.png" />
+![js-math-reference example 27 result](./code_sandbox/snaps/js-math-reference-27-result.png)
 
 - [x] **Outcome:** `Math.LOG2E` is **1.4426950408889634**.
 
@@ -36600,9 +36600,9 @@ Sandbox: `code_sandbox/js-math-reference/max.html`
 Math.max(0, 150, 30, 20, -8, -200);
 ```
 
-<img alt="js-math-reference example 28 source" src="./code_sandbox/snaps/js-math-reference-28-code.png" />
+![js-math-reference example 28 source](./code_sandbox/snaps/js-math-reference-28-code.png)
 
-<img alt="js-math-reference example 28 result" src="./code_sandbox/snaps/js-math-reference-28-result.png" />
+![js-math-reference example 28 result](./code_sandbox/snaps/js-math-reference-28-result.png)
 
 - [x] **Outcome:** `Math.max(0, 150, 30, 20, -8, -200)` is **150**.
 
@@ -36618,9 +36618,9 @@ Sandbox: `code_sandbox/js-math-reference/min.html`
 Math.min(0, 150, 30, 20, -8, -200);
 ```
 
-<img alt="js-math-reference example 29 source" src="./code_sandbox/snaps/js-math-reference-29-code.png" />
+![js-math-reference example 29 source](./code_sandbox/snaps/js-math-reference-29-code.png)
 
-<img alt="js-math-reference example 29 result" src="./code_sandbox/snaps/js-math-reference-29-result.png" />
+![js-math-reference example 29 result](./code_sandbox/snaps/js-math-reference-29-result.png)
 
 - [x] **Outcome:** `Math.min(0, 150, 30, 20, -8, -200)` is **-200**.
 
@@ -36636,9 +36636,9 @@ Sandbox: `code_sandbox/js-math-reference/pi.html`
 Math.PI;
 ```
 
-<img alt="js-math-reference example 30 source" src="./code_sandbox/snaps/js-math-reference-30-code.png" />
+![js-math-reference example 30 source](./code_sandbox/snaps/js-math-reference-30-code.png)
 
-<img alt="js-math-reference example 30 result" src="./code_sandbox/snaps/js-math-reference-30-result.png" />
+![js-math-reference example 30 result](./code_sandbox/snaps/js-math-reference-30-result.png)
 
 - [x] **Outcome:** `Math.PI` is **3.141592653589793**.
 
@@ -36654,9 +36654,9 @@ Sandbox: `code_sandbox/js-math-reference/pow.html`
 Math.pow(8, 2);
 ```
 
-<img alt="js-math-reference example 31 source" src="./code_sandbox/snaps/js-math-reference-31-code.png" />
+![js-math-reference example 31 source](./code_sandbox/snaps/js-math-reference-31-code.png)
 
-<img alt="js-math-reference example 31 result" src="./code_sandbox/snaps/js-math-reference-31-result.png" />
+![js-math-reference example 31 result](./code_sandbox/snaps/js-math-reference-31-result.png)
 
 - [x] **Outcome:** `Math.pow(8, 2)` is **64**.
 
@@ -36673,9 +36673,9 @@ Sandbox: `code_sandbox/js-math-reference/random.html`
 Math.random();
 ```
 
-<img alt="js-math-reference example 32 source" src="./code_sandbox/snaps/js-math-reference-32-code.png" />
+![js-math-reference example 32 source](./code_sandbox/snaps/js-math-reference-32-code.png)
 
-<img alt="js-math-reference example 32 result" src="./code_sandbox/snaps/js-math-reference-32-result.png" />
+![js-math-reference example 32 result](./code_sandbox/snaps/js-math-reference-32-result.png)
 
 - [x] **Outcome:** The snap shows a **sample** in **[0, 1)**. Re-running yields another number. Never **1**.
 
@@ -36691,9 +36691,9 @@ Sandbox: `code_sandbox/js-math-reference/round.html`
 Math.round(4.5);
 ```
 
-<img alt="js-math-reference example 33 source" src="./code_sandbox/snaps/js-math-reference-33-code.png" />
+![js-math-reference example 33 source](./code_sandbox/snaps/js-math-reference-33-code.png)
 
-<img alt="js-math-reference example 33 result" src="./code_sandbox/snaps/js-math-reference-33-result.png" />
+![js-math-reference example 33 result](./code_sandbox/snaps/js-math-reference-33-result.png)
 
 - [x] **Outcome:** `Math.round(4.5)` is **5**.
 
@@ -36709,9 +36709,9 @@ Sandbox: `code_sandbox/js-math-reference/sign.html`
 Math.sign(-4);
 ```
 
-<img alt="js-math-reference example 34 source" src="./code_sandbox/snaps/js-math-reference-34-code.png" />
+![js-math-reference example 34 source](./code_sandbox/snaps/js-math-reference-34-code.png)
 
-<img alt="js-math-reference example 34 result" src="./code_sandbox/snaps/js-math-reference-34-result.png" />
+![js-math-reference example 34 result](./code_sandbox/snaps/js-math-reference-34-result.png)
 
 - [x] **Outcome:** `Math.sign(-4)` is **-1**.
 
@@ -36727,9 +36727,9 @@ Sandbox: `code_sandbox/js-math-reference/sin.html`
 Math.sin(Math.PI / 2);
 ```
 
-<img alt="js-math-reference example 35 source" src="./code_sandbox/snaps/js-math-reference-35-code.png" />
+![js-math-reference example 35 source](./code_sandbox/snaps/js-math-reference-35-code.png)
 
-<img alt="js-math-reference example 35 result" src="./code_sandbox/snaps/js-math-reference-35-result.png" />
+![js-math-reference example 35 result](./code_sandbox/snaps/js-math-reference-35-result.png)
 
 - [x] **Outcome:** `Math.sin(Math.PI / 2)` is **1**.
 
@@ -36745,9 +36745,9 @@ Sandbox: `code_sandbox/js-math-reference/sinh.html`
 Math.sinh(1);
 ```
 
-<img alt="js-math-reference example 36 source" src="./code_sandbox/snaps/js-math-reference-36-code.png" />
+![js-math-reference example 36 source](./code_sandbox/snaps/js-math-reference-36-code.png)
 
-<img alt="js-math-reference example 36 result" src="./code_sandbox/snaps/js-math-reference-36-result.png" />
+![js-math-reference example 36 result](./code_sandbox/snaps/js-math-reference-36-result.png)
 
 - [x] **Outcome:** `Math.sinh(1)` is **1.1752011936438014**.
 
@@ -36763,9 +36763,9 @@ Sandbox: `code_sandbox/js-math-reference/sqrt.html`
 Math.sqrt(64);
 ```
 
-<img alt="js-math-reference example 37 source" src="./code_sandbox/snaps/js-math-reference-37-code.png" />
+![js-math-reference example 37 source](./code_sandbox/snaps/js-math-reference-37-code.png)
 
-<img alt="js-math-reference example 37 result" src="./code_sandbox/snaps/js-math-reference-37-result.png" />
+![js-math-reference example 37 result](./code_sandbox/snaps/js-math-reference-37-result.png)
 
 - [x] **Outcome:** `Math.sqrt(64)` is **8**.
 
@@ -36781,9 +36781,9 @@ Sandbox: `code_sandbox/js-math-reference/sqrt1-2.html`
 Math.SQRT1_2;
 ```
 
-<img alt="js-math-reference example 38 source" src="./code_sandbox/snaps/js-math-reference-38-code.png" />
+![js-math-reference example 38 source](./code_sandbox/snaps/js-math-reference-38-code.png)
 
-<img alt="js-math-reference example 38 result" src="./code_sandbox/snaps/js-math-reference-38-result.png" />
+![js-math-reference example 38 result](./code_sandbox/snaps/js-math-reference-38-result.png)
 
 - [x] **Outcome:** `Math.SQRT1_2` is **0.7071067811865476**.
 
@@ -36799,9 +36799,9 @@ Sandbox: `code_sandbox/js-math-reference/sqrt2.html`
 Math.SQRT2;
 ```
 
-<img alt="js-math-reference example 39 source" src="./code_sandbox/snaps/js-math-reference-39-code.png" />
+![js-math-reference example 39 source](./code_sandbox/snaps/js-math-reference-39-code.png)
 
-<img alt="js-math-reference example 39 result" src="./code_sandbox/snaps/js-math-reference-39-result.png" />
+![js-math-reference example 39 result](./code_sandbox/snaps/js-math-reference-39-result.png)
 
 - [x] **Outcome:** `Math.SQRT2` is **1.4142135623730951**.
 
@@ -36818,9 +36818,9 @@ Sandbox: `code_sandbox/js-math-reference/tan.html`
 Math.tan(Math.PI / 4);
 ```
 
-<img alt="js-math-reference example 40 source" src="./code_sandbox/snaps/js-math-reference-40-code.png" />
+![js-math-reference example 40 source](./code_sandbox/snaps/js-math-reference-40-code.png)
 
-<img alt="js-math-reference example 40 result" src="./code_sandbox/snaps/js-math-reference-40-result.png" />
+![js-math-reference example 40 result](./code_sandbox/snaps/js-math-reference-40-result.png)
 
 - [x] **Outcome:** **0.9999999999999999** (not exactly 1).
 
@@ -36836,9 +36836,9 @@ Sandbox: `code_sandbox/js-math-reference/tanh.html`
 Math.tanh(1);
 ```
 
-<img alt="js-math-reference example 41 source" src="./code_sandbox/snaps/js-math-reference-41-code.png" />
+![js-math-reference example 41 source](./code_sandbox/snaps/js-math-reference-41-code.png)
 
-<img alt="js-math-reference example 41 result" src="./code_sandbox/snaps/js-math-reference-41-result.png" />
+![js-math-reference example 41 result](./code_sandbox/snaps/js-math-reference-41-result.png)
 
 - [x] **Outcome:** `Math.tanh(1)` is **0.7615941559557649**.
 
@@ -36854,9 +36854,9 @@ Sandbox: `code_sandbox/js-math-reference/trunc.html`
 Math.trunc(4.7);
 ```
 
-<img alt="js-math-reference example 42 source" src="./code_sandbox/snaps/js-math-reference-42-code.png" />
+![js-math-reference example 42 source](./code_sandbox/snaps/js-math-reference-42-code.png)
 
-<img alt="js-math-reference example 42 result" src="./code_sandbox/snaps/js-math-reference-42-result.png" />
+![js-math-reference example 42 result](./code_sandbox/snaps/js-math-reference-42-result.png)
 
 - [x] **Outcome:** `Math.trunc(4.7)` is **4**.
 
@@ -36873,9 +36873,9 @@ Sandbox: `code_sandbox/js-math-reference/hypot.html`
 Math.hypot(3, 4);
 ```
 
-<img alt="js-math-reference example 43 source" src="./code_sandbox/snaps/js-math-reference-43-code.png" />
+![js-math-reference example 43 source](./code_sandbox/snaps/js-math-reference-43-code.png)
 
-<img alt="js-math-reference example 43 result" src="./code_sandbox/snaps/js-math-reference-43-result.png" />
+![js-math-reference example 43 result](./code_sandbox/snaps/js-math-reference-43-result.png)
 
 - [x] **Outcome:** **5** (3-4-5 triangle).
 
@@ -36893,9 +36893,9 @@ Math.imul(2, 4);
 Math.imul(0xffffffff, 5);
 ```
 
-<img alt="js-math-reference example 44 source" src="./code_sandbox/snaps/js-math-reference-44-code.png" />
+![js-math-reference example 44 source](./code_sandbox/snaps/js-math-reference-44-code.png)
 
-<img alt="js-math-reference example 44 result" src="./code_sandbox/snaps/js-math-reference-44-result.png" />
+![js-math-reference example 44 result](./code_sandbox/snaps/js-math-reference-44-result.png)
 
 - [x] **Outcome:** `imul(2, 4)` is **8**. `imul(0xffffffff, 5)` is **−5** (32-bit wrap: −1 × 5).
 
@@ -37083,9 +37083,9 @@ Sandbox: `code_sandbox/js-math-random/random.html`
 Math.random();
 ```
 
-<img alt="js-math-random example 1 source" src="./code_sandbox/snaps/js-math-random-01-code.png" />
+![js-math-random example 1 source](./code_sandbox/snaps/js-math-random-01-code.png)
 
-<img alt="js-math-random example 1 result" src="./code_sandbox/snaps/js-math-random-01-result.png" />
+![js-math-random example 1 result](./code_sandbox/snaps/js-math-random-01-result.png)
 
 - [x] **Outcome:** The snap shows a **sample in [0, 1)**. Never **1**. A second draw still satisfies the range check.
 
@@ -37102,9 +37102,9 @@ Sandbox: `code_sandbox/js-math-random/int-0-9.html`
 Math.floor(Math.random() * 10);
 ```
 
-<img alt="js-math-random example 2 source" src="./code_sandbox/snaps/js-math-random-02-code.png" />
+![js-math-random example 2 source](./code_sandbox/snaps/js-math-random-02-code.png)
 
-<img alt="js-math-random example 2 result" src="./code_sandbox/snaps/js-math-random-02-result.png" />
+![js-math-random example 2 result](./code_sandbox/snaps/js-math-random-02-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [0, 9]**. Re-running can produce any integer in that range. The range check on a second draw is **true**.
 
@@ -37120,9 +37120,9 @@ Sandbox: `code_sandbox/js-math-random/int-0-10.html`
 Math.floor(Math.random() * 11);
 ```
 
-<img alt="js-math-random example 3 source" src="./code_sandbox/snaps/js-math-random-03-code.png" />
+![js-math-random example 3 source](./code_sandbox/snaps/js-math-random-03-code.png)
 
-<img alt="js-math-random example 3 result" src="./code_sandbox/snaps/js-math-random-03-result.png" />
+![js-math-random example 3 result](./code_sandbox/snaps/js-math-random-03-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [0, 10]**. Re-running can produce any integer in that range. The range check on a second draw is **true**.
 
@@ -37138,9 +37138,9 @@ Sandbox: `code_sandbox/js-math-random/int-0-99.html`
 Math.floor(Math.random() * 100);
 ```
 
-<img alt="js-math-random example 4 source" src="./code_sandbox/snaps/js-math-random-04-code.png" />
+![js-math-random example 4 source](./code_sandbox/snaps/js-math-random-04-code.png)
 
-<img alt="js-math-random example 4 result" src="./code_sandbox/snaps/js-math-random-04-result.png" />
+![js-math-random example 4 result](./code_sandbox/snaps/js-math-random-04-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [0, 99]**. Re-running can produce any integer in that range. The range check on a second draw is **true**.
 
@@ -37156,9 +37156,9 @@ Sandbox: `code_sandbox/js-math-random/int-0-100.html`
 Math.floor(Math.random() * 101);
 ```
 
-<img alt="js-math-random example 5 source" src="./code_sandbox/snaps/js-math-random-05-code.png" />
+![js-math-random example 5 source](./code_sandbox/snaps/js-math-random-05-code.png)
 
-<img alt="js-math-random example 5 result" src="./code_sandbox/snaps/js-math-random-05-result.png" />
+![js-math-random example 5 result](./code_sandbox/snaps/js-math-random-05-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [0, 100]**. Re-running can produce any integer in that range. The range check on a second draw is **true**.
 
@@ -37174,9 +37174,9 @@ Sandbox: `code_sandbox/js-math-random/int-1-10.html`
 Math.floor(Math.random() * 10) + 1;
 ```
 
-<img alt="js-math-random example 6 source" src="./code_sandbox/snaps/js-math-random-06-code.png" />
+![js-math-random example 6 source](./code_sandbox/snaps/js-math-random-06-code.png)
 
-<img alt="js-math-random example 6 result" src="./code_sandbox/snaps/js-math-random-06-result.png" />
+![js-math-random example 6 result](./code_sandbox/snaps/js-math-random-06-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [1, 10]**. Re-running can produce any integer in that range. The range check on a second draw is **true**.
 
@@ -37192,9 +37192,9 @@ Sandbox: `code_sandbox/js-math-random/int-1-100.html`
 Math.floor(Math.random() * 100) + 1;
 ```
 
-<img alt="js-math-random example 7 source" src="./code_sandbox/snaps/js-math-random-07-code.png" />
+![js-math-random example 7 source](./code_sandbox/snaps/js-math-random-07-code.png)
 
-<img alt="js-math-random example 7 result" src="./code_sandbox/snaps/js-math-random-07-result.png" />
+![js-math-random example 7 result](./code_sandbox/snaps/js-math-random-07-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [1, 100]**. Re-running can produce any integer in that range. The range check on a second draw is **true**.
 
@@ -37214,9 +37214,9 @@ function getRndInteger(min, max) {
 }
 ```
 
-<img alt="js-math-random example 8 source" src="./code_sandbox/snaps/js-math-random-08-code.png" />
+![js-math-random example 8 source](./code_sandbox/snaps/js-math-random-08-code.png)
 
-<img alt="js-math-random example 8 result" src="./code_sandbox/snaps/js-math-random-08-result.png" />
+![js-math-random example 8 result](./code_sandbox/snaps/js-math-random-08-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [0, 9]** from `getRndInteger(0, 10)`. Max is **excluded**. Clicking yields another value in that range.
 
@@ -37236,9 +37236,9 @@ function getRndInteger(min, max) {
 }
 ```
 
-<img alt="js-math-random example 9 source" src="./code_sandbox/snaps/js-math-random-09-code.png" />
+![js-math-random example 9 source](./code_sandbox/snaps/js-math-random-09-code.png)
 
-<img alt="js-math-random example 9 result" src="./code_sandbox/snaps/js-math-random-09-result.png" />
+![js-math-random example 9 result](./code_sandbox/snaps/js-math-random-09-result.png)
 
 - [x] **Outcome:** The snap shows a **sample integer in [1, 10]** from `getRndInteger(1, 10)`. Both ends **included**. Clicking yields another value in that range.
 
@@ -37423,9 +37423,9 @@ let text = "Visit W3Schools!";
 let result = text.search(/w3Schools/i);
 ```
 
-<img alt="js-regexp example 1 source" src="./code_sandbox/snaps/js-regexp-01-code.png" />
+![js-regexp example 1 source](./code_sandbox/snaps/js-regexp-01-code.png)
 
-<img alt="js-regexp example 1 result" src="./code_sandbox/snaps/js-regexp-01-result.png" />
+![js-regexp example 1 result](./code_sandbox/snaps/js-regexp-01-result.png)
 
 - [x] **Outcome:** **6** — `W3Schools` starts at index 6 in `Visit W3Schools!`.
 
@@ -37443,9 +37443,9 @@ let text = "Visit W3Schools!";
 let result = text.match(/W3Schools/);
 ```
 
-<img alt="js-regexp example 2 source" src="./code_sandbox/snaps/js-regexp-02-code.png" />
+![js-regexp example 2 source](./code_sandbox/snaps/js-regexp-02-code.png)
 
-<img alt="js-regexp example 2 result" src="./code_sandbox/snaps/js-regexp-02-result.png" />
+![js-regexp example 2 result](./code_sandbox/snaps/js-regexp-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**. Extra fields `index` / `input` are omitted by JSON.
 
@@ -37463,9 +37463,9 @@ let text = "Please visit Microsoft!";
 let result = text.replace(/Microsoft/, "W3Schools");
 ```
 
-<img alt="js-regexp example 3 source" src="./code_sandbox/snaps/js-regexp-03-code.png" />
+![js-regexp example 3 source](./code_sandbox/snaps/js-regexp-03-code.png)
 
-<img alt="js-regexp example 3 result" src="./code_sandbox/snaps/js-regexp-03-result.png" />
+![js-regexp example 3 result](./code_sandbox/snaps/js-regexp-03-result.png)
 
 - [x] **Outcome:** result is **"Please visit W3Schools!"**.
 
@@ -37483,9 +37483,9 @@ let text = "Visit W3Schools!";
 let result = text.search(/W3Schools/);
 ```
 
-<img alt="js-regexp example 4 source" src="./code_sandbox/snaps/js-regexp-04-code.png" />
+![js-regexp example 4 source](./code_sandbox/snaps/js-regexp-04-code.png)
 
-<img alt="js-regexp example 4 result" src="./code_sandbox/snaps/js-regexp-04-result.png" />
+![js-regexp example 4 result](./code_sandbox/snaps/js-regexp-04-result.png)
 
 - [x] **Outcome:** **6**.
 
@@ -37503,9 +37503,9 @@ let text = "Black, white, red, green, blue, yellow.";
 let result = text.match(/red|green|blue/g);
 ```
 
-<img alt="js-regexp example 5 source" src="./code_sandbox/snaps/js-regexp-05-code.png" />
+![js-regexp example 5 source](./code_sandbox/snaps/js-regexp-05-code.png)
 
-<img alt="js-regexp example 5 result" src="./code_sandbox/snaps/js-regexp-05-result.png" />
+![js-regexp example 5 result](./code_sandbox/snaps/js-regexp-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["red","green","blue"]**.
 
@@ -37524,9 +37524,9 @@ const pattern = /is/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp example 6 source" src="./code_sandbox/snaps/js-regexp-06-code.png" />
+![js-regexp example 6 source](./code_sandbox/snaps/js-regexp-06-code.png)
 
-<img alt="js-regexp example 6 result" src="./code_sandbox/snaps/js-regexp-06-result.png" />
+![js-regexp example 6 result](./code_sandbox/snaps/js-regexp-06-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["is","is"]** (`this` and the final `is`).
 
@@ -37544,9 +37544,9 @@ const pattern = /w3schools/i;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp example 7 source" src="./code_sandbox/snaps/js-regexp-07-code.png" />
+![js-regexp example 7 source](./code_sandbox/snaps/js-regexp-07-code.png)
 
-<img alt="js-regexp example 7 result" src="./code_sandbox/snaps/js-regexp-07-result.png" />
+![js-regexp example 7 result](./code_sandbox/snaps/js-regexp-07-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -37564,9 +37564,9 @@ const pattern = /\d/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp example 8 source" src="./code_sandbox/snaps/js-regexp-08-code.png" />
+![js-regexp example 8 source](./code_sandbox/snaps/js-regexp-08-code.png)
 
-<img alt="js-regexp example 8 result" src="./code_sandbox/snaps/js-regexp-08-result.png" />
+![js-regexp example 8 result](./code_sandbox/snaps/js-regexp-08-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","0","0"]**.
 
@@ -37584,9 +37584,9 @@ const pattern = /\w/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp example 9 source" src="./code_sandbox/snaps/js-regexp-09-code.png" />
+![js-regexp example 9 source](./code_sandbox/snaps/js-regexp-09-code.png)
 
-<img alt="js-regexp example 9 result" src="./code_sandbox/snaps/js-regexp-09-result.png" />
+![js-regexp example 9 result](./code_sandbox/snaps/js-regexp-09-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e","1","0","0"]**.
 
@@ -37605,9 +37605,9 @@ const pattern = /10?/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp example 10 source" src="./code_sandbox/snaps/js-regexp-10-code.png" />
+![js-regexp example 10 source](./code_sandbox/snaps/js-regexp-10-code.png)
 
-<img alt="js-regexp example 10 result" src="./code_sandbox/snaps/js-regexp-10-result.png" />
+![js-regexp example 10 result](./code_sandbox/snaps/js-regexp-10-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","10","10"]** (the lone `1`, then `10` from `100` and `1000`).
 
@@ -37625,9 +37625,9 @@ let text = "W3Schools tutorial";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp example 11 source" src="./code_sandbox/snaps/js-regexp-11-code.png" />
+![js-regexp example 11 source](./code_sandbox/snaps/js-regexp-11-code.png)
 
-<img alt="js-regexp example 11 result" src="./code_sandbox/snaps/js-regexp-11-result.png" />
+![js-regexp example 11 result](./code_sandbox/snaps/js-regexp-11-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -37645,9 +37645,9 @@ let text = "Hello W3Schools";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp example 12 source" src="./code_sandbox/snaps/js-regexp-12-code.png" />
+![js-regexp example 12 source](./code_sandbox/snaps/js-regexp-12-code.png)
 
-<img alt="js-regexp example 12 result" src="./code_sandbox/snaps/js-regexp-12-result.png" />
+![js-regexp example 12 result](./code_sandbox/snaps/js-regexp-12-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -37665,9 +37665,9 @@ let text = "Hello W3Schools";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp example 13 source" src="./code_sandbox/snaps/js-regexp-13-code.png" />
+![js-regexp example 13 source](./code_sandbox/snaps/js-regexp-13-code.png)
 
-<img alt="js-regexp example 13 result" src="./code_sandbox/snaps/js-regexp-13-result.png" />
+![js-regexp example 13 result](./code_sandbox/snaps/js-regexp-13-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -37685,9 +37685,9 @@ let text = "W3Schools tutorial";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp example 14 source" src="./code_sandbox/snaps/js-regexp-14-code.png" />
+![js-regexp example 14 source](./code_sandbox/snaps/js-regexp-14-code.png)
 
-<img alt="js-regexp example 14 result" src="./code_sandbox/snaps/js-regexp-14-result.png" />
+![js-regexp example 14 result](./code_sandbox/snaps/js-regexp-14-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -37705,9 +37705,9 @@ const pattern = /[0-9]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp example 15 source" src="./code_sandbox/snaps/js-regexp-15-code.png" />
+![js-regexp example 15 source](./code_sandbox/snaps/js-regexp-15-code.png)
 
-<img alt="js-regexp example 15 result" src="./code_sandbox/snaps/js-regexp-15-result.png" />
+![js-regexp example 15 result](./code_sandbox/snaps/js-regexp-15-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","0","0","0"]**.
 
@@ -37898,9 +37898,9 @@ const pattern = /is/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-flags example 1 source" src="./code_sandbox/snaps/js-regexp-flags-01-code.png" />
+![js-regexp-flags example 1 source](./code_sandbox/snaps/js-regexp-flags-01-code.png)
 
-<img alt="js-regexp-flags example 1 result" src="./code_sandbox/snaps/js-regexp-flags-01-result.png" />
+![js-regexp-flags example 1 result](./code_sandbox/snaps/js-regexp-flags-01-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["is","is"]**.
 
@@ -37918,9 +37918,9 @@ const pattern = /w3schools/i;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-flags example 2 source" src="./code_sandbox/snaps/js-regexp-flags-02-code.png" />
+![js-regexp-flags example 2 source](./code_sandbox/snaps/js-regexp-flags-02-code.png)
 
-<img alt="js-regexp-flags example 2 result" src="./code_sandbox/snaps/js-regexp-flags-02-result.png" />
+![js-regexp-flags example 2 result](./code_sandbox/snaps/js-regexp-flags-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -37940,9 +37940,9 @@ let result = text.match(pattern);
 let indexes = result.indices;
 ```
 
-<img alt="js-regexp-flags example 3 source" src="./code_sandbox/snaps/js-regexp-flags-03-code.png" />
+![js-regexp-flags example 3 source](./code_sandbox/snaps/js-regexp-flags-03-code.png)
 
-<img alt="js-regexp-flags example 3 result" src="./code_sandbox/snaps/js-regexp-flags-03-result.png" />
+![js-regexp-flags example 3 result](./code_sandbox/snaps/js-regexp-flags-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["aabb","aa","bb"]**. `indices` is **[[2,6],[2,4],[4,6]]**.
 
@@ -37961,9 +37961,9 @@ const pattern = /Line./gs;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-flags example 4 source" src="./code_sandbox/snaps/js-regexp-flags-04-code.png" />
+![js-regexp-flags example 4 source](./code_sandbox/snaps/js-regexp-flags-04-code.png)
 
-<img alt="js-regexp-flags example 4 result" src="./code_sandbox/snaps/js-regexp-flags-04-result.png" />
+![js-regexp-flags example 4 result](./code_sandbox/snaps/js-regexp-flags-04-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Line\n","Line."]** (the first match includes the newline).
 
@@ -37981,9 +37981,9 @@ let text = "\nIs th\nis it?";
 let result = text.match(/^is/m);
 ```
 
-<img alt="js-regexp-flags example 5 source" src="./code_sandbox/snaps/js-regexp-flags-05-code.png" />
+![js-regexp-flags example 5 source](./code_sandbox/snaps/js-regexp-flags-05-code.png)
 
-<img alt="js-regexp-flags example 5 result" src="./code_sandbox/snaps/js-regexp-flags-05-result.png" />
+![js-regexp-flags example 5 result](./code_sandbox/snaps/js-regexp-flags-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["is"]** (start of the line `is it?`). `Is th` does not match.
 
@@ -38003,9 +38003,9 @@ pattern.lastIndex = 4;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-flags example 6 source" src="./code_sandbox/snaps/js-regexp-flags-06-code.png" />
+![js-regexp-flags example 6 source](./code_sandbox/snaps/js-regexp-flags-06-code.png)
 
-<img alt="js-regexp-flags example 6 result" src="./code_sandbox/snaps/js-regexp-flags-06-result.png" />
+![js-regexp-flags example 6 result](./code_sandbox/snaps/js-regexp-flags-06-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["def"]**. After the match, `lastIndex` is **7**.
 
@@ -38025,9 +38025,9 @@ pattern.lastIndex = 4;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-flags example 7 source" src="./code_sandbox/snaps/js-regexp-flags-07-code.png" />
+![js-regexp-flags example 7 source](./code_sandbox/snaps/js-regexp-flags-07-code.png)
 
-<img alt="js-regexp-flags example 7 result" src="./code_sandbox/snaps/js-regexp-flags-07-result.png" />
+![js-regexp-flags example 7 result](./code_sandbox/snaps/js-regexp-flags-07-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["abc"]**. `lastIndex` stays **4** (unused).
 
@@ -38046,9 +38046,9 @@ const pattern = /\u{04DC0}/u;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-flags example 8 source" src="./code_sandbox/snaps/js-regexp-flags-08-code.png" />
+![js-regexp-flags example 8 source](./code_sandbox/snaps/js-regexp-flags-08-code.png)
 
-<img alt="js-regexp-flags example 8 result" src="./code_sandbox/snaps/js-regexp-flags-08-result.png" />
+![js-regexp-flags example 8 result](./code_sandbox/snaps/js-regexp-flags-08-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38067,9 +38067,9 @@ const pattern = /\u{04DC0}/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-flags example 9 source" src="./code_sandbox/snaps/js-regexp-flags-09-code.png" />
+![js-regexp-flags example 9 source](./code_sandbox/snaps/js-regexp-flags-09-code.png)
 
-<img alt="js-regexp-flags example 9 result" src="./code_sandbox/snaps/js-regexp-flags-09-result.png" />
+![js-regexp-flags example 9 result](./code_sandbox/snaps/js-regexp-flags-09-result.png)
 
 - [x] **Outcome:** **true** in this V8 (the pattern source is the hexagram). The page’s **false** is outdated here.
 
@@ -38088,9 +38088,9 @@ const pattern = /\p{Emoji}/v;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-flags example 10 source" src="./code_sandbox/snaps/js-regexp-flags-10-code.png" />
+![js-regexp-flags example 10 source](./code_sandbox/snaps/js-regexp-flags-10-code.png)
 
-<img alt="js-regexp-flags example 10 result" src="./code_sandbox/snaps/js-regexp-flags-10-result.png" />
+![js-regexp-flags example 10 result](./code_sandbox/snaps/js-regexp-flags-10-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38109,9 +38109,9 @@ const pattern = /\p{Emoji}/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-flags example 11 source" src="./code_sandbox/snaps/js-regexp-flags-11-code.png" />
+![js-regexp-flags example 11 source](./code_sandbox/snaps/js-regexp-flags-11-code.png)
 
-<img alt="js-regexp-flags example 11 result" src="./code_sandbox/snaps/js-regexp-flags-11-result.png" />
+![js-regexp-flags example 11 result](./code_sandbox/snaps/js-regexp-flags-11-result.png)
 
 - [x] **Outcome:** **false**. `pattern.source` is **`p{Emoji}`**.
 
@@ -38130,9 +38130,9 @@ const pattern = /(?i:W3Schools) tutorials/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-flags example 12 source" src="./code_sandbox/snaps/js-regexp-flags-12-code.png" />
+![js-regexp-flags example 12 source](./code_sandbox/snaps/js-regexp-flags-12-code.png)
 
-<img alt="js-regexp-flags example 12 result" src="./code_sandbox/snaps/js-regexp-flags-12-result.png" />
+![js-regexp-flags example 12 result](./code_sandbox/snaps/js-regexp-flags-12-result.png)
 
 - [x] **Outcome:** **true** — the group is case-insensitive; ` tutorials` matches as written.
 
@@ -38151,9 +38151,9 @@ const pattern = /(?i:W3Schools) tutorials/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-flags example 13 source" src="./code_sandbox/snaps/js-regexp-flags-13-code.png" />
+![js-regexp-flags example 13 source](./code_sandbox/snaps/js-regexp-flags-13-code.png)
 
-<img alt="js-regexp-flags example 13 result" src="./code_sandbox/snaps/js-regexp-flags-13-result.png" />
+![js-regexp-flags example 13 result](./code_sandbox/snaps/js-regexp-flags-13-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -38170,9 +38170,9 @@ const pattern = /W3Schools/s;
 let result = pattern.dotAll;
 ```
 
-<img alt="js-regexp-flags example 14 source" src="./code_sandbox/snaps/js-regexp-flags-14-code.png" />
+![js-regexp-flags example 14 source](./code_sandbox/snaps/js-regexp-flags-14-code.png)
 
-<img alt="js-regexp-flags example 14 result" src="./code_sandbox/snaps/js-regexp-flags-14-result.png" />
+![js-regexp-flags example 14 result](./code_sandbox/snaps/js-regexp-flags-14-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38189,9 +38189,9 @@ const pattern = /W3Schools/g;
 let result = pattern.global;
 ```
 
-<img alt="js-regexp-flags example 15 source" src="./code_sandbox/snaps/js-regexp-flags-15-code.png" />
+![js-regexp-flags example 15 source](./code_sandbox/snaps/js-regexp-flags-15-code.png)
 
-<img alt="js-regexp-flags example 15 result" src="./code_sandbox/snaps/js-regexp-flags-15-result.png" />
+![js-regexp-flags example 15 result](./code_sandbox/snaps/js-regexp-flags-15-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38208,9 +38208,9 @@ const pattern = /W3Schools/d;
 let result = pattern.hasIndices;
 ```
 
-<img alt="js-regexp-flags example 16 source" src="./code_sandbox/snaps/js-regexp-flags-16-code.png" />
+![js-regexp-flags example 16 source](./code_sandbox/snaps/js-regexp-flags-16-code.png)
 
-<img alt="js-regexp-flags example 16 result" src="./code_sandbox/snaps/js-regexp-flags-16-result.png" />
+![js-regexp-flags example 16 result](./code_sandbox/snaps/js-regexp-flags-16-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38227,9 +38227,9 @@ const pattern = /W3Schools/i;
 let result = pattern.ignoreCase;
 ```
 
-<img alt="js-regexp-flags example 17 source" src="./code_sandbox/snaps/js-regexp-flags-17-code.png" />
+![js-regexp-flags example 17 source](./code_sandbox/snaps/js-regexp-flags-17-code.png)
 
-<img alt="js-regexp-flags example 17 result" src="./code_sandbox/snaps/js-regexp-flags-17-result.png" />
+![js-regexp-flags example 17 result](./code_sandbox/snaps/js-regexp-flags-17-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38246,9 +38246,9 @@ const pattern = /W3Schools/m;
 let result = pattern.multiline;
 ```
 
-<img alt="js-regexp-flags example 18 source" src="./code_sandbox/snaps/js-regexp-flags-18-code.png" />
+![js-regexp-flags example 18 source](./code_sandbox/snaps/js-regexp-flags-18-code.png)
 
-<img alt="js-regexp-flags example 18 result" src="./code_sandbox/snaps/js-regexp-flags-18-result.png" />
+![js-regexp-flags example 18 result](./code_sandbox/snaps/js-regexp-flags-18-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38265,9 +38265,9 @@ const pattern = /W3Schools/y;
 let result = pattern.sticky;
 ```
 
-<img alt="js-regexp-flags example 19 source" src="./code_sandbox/snaps/js-regexp-flags-19-code.png" />
+![js-regexp-flags example 19 source](./code_sandbox/snaps/js-regexp-flags-19-code.png)
 
-<img alt="js-regexp-flags example 19 result" src="./code_sandbox/snaps/js-regexp-flags-19-result.png" />
+![js-regexp-flags example 19 result](./code_sandbox/snaps/js-regexp-flags-19-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38285,9 +38285,9 @@ const pattern = /\u{04DC0}/u;
 let result = pattern.unicode;
 ```
 
-<img alt="js-regexp-flags example 20 source" src="./code_sandbox/snaps/js-regexp-flags-20-code.png" />
+![js-regexp-flags example 20 source](./code_sandbox/snaps/js-regexp-flags-20-code.png)
 
-<img alt="js-regexp-flags example 20 result" src="./code_sandbox/snaps/js-regexp-flags-20-result.png" />
+![js-regexp-flags example 20 result](./code_sandbox/snaps/js-regexp-flags-20-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38305,9 +38305,9 @@ const pattern = /\p{Emoji}/v;
 let result = pattern.unicodeSets;
 ```
 
-<img alt="js-regexp-flags example 21 source" src="./code_sandbox/snaps/js-regexp-flags-21-code.png" />
+![js-regexp-flags example 21 source](./code_sandbox/snaps/js-regexp-flags-21-code.png)
 
-<img alt="js-regexp-flags example 21 result" src="./code_sandbox/snaps/js-regexp-flags-21-result.png" />
+![js-regexp-flags example 21 result](./code_sandbox/snaps/js-regexp-flags-21-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -38496,9 +38496,9 @@ const pattern = /[HW]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 1 source" src="./code_sandbox/snaps/js-regexp-classes-01-code.png" />
+![js-regexp-classes example 1 source](./code_sandbox/snaps/js-regexp-classes-01-code.png)
 
-<img alt="js-regexp-classes example 1 result" src="./code_sandbox/snaps/js-regexp-classes-01-result.png" />
+![js-regexp-classes example 1 result](./code_sandbox/snaps/js-regexp-classes-01-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["H","W"]**.
 
@@ -38516,9 +38516,9 @@ const pattern = /[A-Z]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 2 source" src="./code_sandbox/snaps/js-regexp-classes-02-code.png" />
+![js-regexp-classes example 2 source](./code_sandbox/snaps/js-regexp-classes-02-code.png)
 
-<img alt="js-regexp-classes example 2 result" src="./code_sandbox/snaps/js-regexp-classes-02-result.png" />
+![js-regexp-classes example 2 result](./code_sandbox/snaps/js-regexp-classes-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["T","W","S"]**.
 
@@ -38536,9 +38536,9 @@ const pattern = /[1234]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 3 source" src="./code_sandbox/snaps/js-regexp-classes-03-code.png" />
+![js-regexp-classes example 3 source](./code_sandbox/snaps/js-regexp-classes-03-code.png)
 
-<img alt="js-regexp-classes example 3 result" src="./code_sandbox/snaps/js-regexp-classes-03-result.png" />
+![js-regexp-classes example 3 result](./code_sandbox/snaps/js-regexp-classes-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","2","3","4"]**.
 
@@ -38556,9 +38556,9 @@ const pattern = /[1-4]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 4 source" src="./code_sandbox/snaps/js-regexp-classes-04-code.png" />
+![js-regexp-classes example 4 source](./code_sandbox/snaps/js-regexp-classes-04-code.png)
 
-<img alt="js-regexp-classes example 4 result" src="./code_sandbox/snaps/js-regexp-classes-04-result.png" />
+![js-regexp-classes example 4 result](./code_sandbox/snaps/js-regexp-classes-04-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","2","3","4"]**.
 
@@ -38576,9 +38576,9 @@ const pattern = /[a]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 5 source" src="./code_sandbox/snaps/js-regexp-classes-05-code.png" />
+![js-regexp-classes example 5 source](./code_sandbox/snaps/js-regexp-classes-05-code.png)
 
-<img alt="js-regexp-classes example 5 result" src="./code_sandbox/snaps/js-regexp-classes-05-result.png" />
+![js-regexp-classes example 5 result](./code_sandbox/snaps/js-regexp-classes-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a"]**. `"XYZ".match(/[a]/)` would be **null**.
 
@@ -38596,9 +38596,9 @@ const pattern = /[^a]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 6 source" src="./code_sandbox/snaps/js-regexp-classes-06-code.png" />
+![js-regexp-classes example 6 source](./code_sandbox/snaps/js-regexp-classes-06-code.png)
 
-<img alt="js-regexp-classes example 6 result" src="./code_sandbox/snaps/js-regexp-classes-06-result.png" />
+![js-regexp-classes example 6 result](./code_sandbox/snaps/js-regexp-classes-06-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["c","t"]**.
 
@@ -38616,9 +38616,9 @@ const pattern = /[abc]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 7 source" src="./code_sandbox/snaps/js-regexp-classes-07-code.png" />
+![js-regexp-classes example 7 source](./code_sandbox/snaps/js-regexp-classes-07-code.png)
 
-<img alt="js-regexp-classes example 7 result" src="./code_sandbox/snaps/js-regexp-classes-07-result.png" />
+![js-regexp-classes example 7 result](./code_sandbox/snaps/js-regexp-classes-07-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a","b","c"]**.
 
@@ -38636,9 +38636,9 @@ const pattern = /[^abc]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 8 source" src="./code_sandbox/snaps/js-regexp-classes-08-code.png" />
+![js-regexp-classes example 8 source](./code_sandbox/snaps/js-regexp-classes-08-code.png)
 
-<img alt="js-regexp-classes example 8 result" src="./code_sandbox/snaps/js-regexp-classes-08-result.png" />
+![js-regexp-classes example 8 result](./code_sandbox/snaps/js-regexp-classes-08-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["f","r","i"]**.
 
@@ -38656,9 +38656,9 @@ const pattern = /[a-z]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 9 source" src="./code_sandbox/snaps/js-regexp-classes-09-code.png" />
+![js-regexp-classes example 9 source](./code_sandbox/snaps/js-regexp-classes-09-code.png)
 
-<img alt="js-regexp-classes example 9 result" src="./code_sandbox/snaps/js-regexp-classes-09-result.png" />
+![js-regexp-classes example 9 result](./code_sandbox/snaps/js-regexp-classes-09-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["b"]**.
 
@@ -38676,9 +38676,9 @@ const pattern = /[^a-z]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 10 source" src="./code_sandbox/snaps/js-regexp-classes-10-code.png" />
+![js-regexp-classes example 10 source](./code_sandbox/snaps/js-regexp-classes-10-code.png)
 
-<img alt="js-regexp-classes example 10 result" src="./code_sandbox/snaps/js-regexp-classes-10-result.png" />
+![js-regexp-classes example 10 result](./code_sandbox/snaps/js-regexp-classes-10-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["A","1"]**.
 
@@ -38696,9 +38696,9 @@ const pattern = /[0-9]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 11 source" src="./code_sandbox/snaps/js-regexp-classes-11-code.png" />
+![js-regexp-classes example 11 source](./code_sandbox/snaps/js-regexp-classes-11-code.png)
 
-<img alt="js-regexp-classes example 11 result" src="./code_sandbox/snaps/js-regexp-classes-11-result.png" />
+![js-regexp-classes example 11 result](./code_sandbox/snaps/js-regexp-classes-11-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1"]**.
 
@@ -38716,9 +38716,9 @@ const pattern = /[^0-9]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-classes example 12 source" src="./code_sandbox/snaps/js-regexp-classes-12-code.png" />
+![js-regexp-classes example 12 source](./code_sandbox/snaps/js-regexp-classes-12-code.png)
 
-<img alt="js-regexp-classes example 12 result" src="./code_sandbox/snaps/js-regexp-classes-12-result.png" />
+![js-regexp-classes example 12 result](./code_sandbox/snaps/js-regexp-classes-12-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["A","b"]**.
 
@@ -38885,9 +38885,9 @@ const pattern = /\d/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 1 source" src="./code_sandbox/snaps/js-regexp-metachars-01-code.png" />
+![js-regexp-metachars example 1 source](./code_sandbox/snaps/js-regexp-metachars-01-code.png)
 
-<img alt="js-regexp-metachars example 1 result" src="./code_sandbox/snaps/js-regexp-metachars-01-result.png" />
+![js-regexp-metachars example 1 result](./code_sandbox/snaps/js-regexp-metachars-01-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","0","0"]**.
 
@@ -38905,9 +38905,9 @@ const pattern = /\D/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 2 source" src="./code_sandbox/snaps/js-regexp-metachars-02-code.png" />
+![js-regexp-metachars example 2 source](./code_sandbox/snaps/js-regexp-metachars-02-code.png)
 
-<img alt="js-regexp-metachars example 2 result" src="./code_sandbox/snaps/js-regexp-metachars-02-result.png" />
+![js-regexp-metachars example 2 result](./code_sandbox/snaps/js-regexp-metachars-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e"," ","%","!"]**.
 
@@ -38925,9 +38925,9 @@ const pattern = /\w/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 3 source" src="./code_sandbox/snaps/js-regexp-metachars-03-code.png" />
+![js-regexp-metachars example 3 source](./code_sandbox/snaps/js-regexp-metachars-03-code.png)
 
-<img alt="js-regexp-metachars example 3 result" src="./code_sandbox/snaps/js-regexp-metachars-03-result.png" />
+![js-regexp-metachars example 3 result](./code_sandbox/snaps/js-regexp-metachars-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e","1","0","0"]**.
 
@@ -38945,9 +38945,9 @@ const pattern = /\W/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 4 source" src="./code_sandbox/snaps/js-regexp-metachars-04-code.png" />
+![js-regexp-metachars example 4 source](./code_sandbox/snaps/js-regexp-metachars-04-code.png)
 
-<img alt="js-regexp-metachars example 4 result" src="./code_sandbox/snaps/js-regexp-metachars-04-result.png" />
+![js-regexp-metachars example 4 result](./code_sandbox/snaps/js-regexp-metachars-04-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **[" ","%","!"]**.
 
@@ -38965,9 +38965,9 @@ const pattern = /\s/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 5 source" src="./code_sandbox/snaps/js-regexp-metachars-05-code.png" />
+![js-regexp-metachars example 5 source](./code_sandbox/snaps/js-regexp-metachars-05-code.png)
 
-<img alt="js-regexp-metachars example 5 result" src="./code_sandbox/snaps/js-regexp-metachars-05-result.png" />
+![js-regexp-metachars example 5 result](./code_sandbox/snaps/js-regexp-metachars-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **[" "," "," "," "]** (four spaces). `String(result)` would look like ` , , , `.
 
@@ -38985,9 +38985,9 @@ const pattern = /\S/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 6 source" src="./code_sandbox/snaps/js-regexp-metachars-06-code.png" />
+![js-regexp-metachars example 6 source](./code_sandbox/snaps/js-regexp-metachars-06-code.png)
 
-<img alt="js-regexp-metachars example 6 result" src="./code_sandbox/snaps/js-regexp-metachars-06-result.png" />
+![js-regexp-metachars example 6 result](./code_sandbox/snaps/js-regexp-metachars-06-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e","1","0","0","%","!"]**.
 
@@ -39006,9 +39006,9 @@ const pattern = /\127/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 7 source" src="./code_sandbox/snaps/js-regexp-metachars-07-code.png" />
+![js-regexp-metachars example 7 source](./code_sandbox/snaps/js-regexp-metachars-07-code.png)
 
-<img alt="js-regexp-metachars example 7 result" src="./code_sandbox/snaps/js-regexp-metachars-07-result.png" />
+![js-regexp-metachars example 7 result](./code_sandbox/snaps/js-regexp-metachars-07-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W","W"]**.
 
@@ -39027,9 +39027,9 @@ let pattern = /\x6F/g;
 let result = text.replace(pattern, "*");
 ```
 
-<img alt="js-regexp-metachars example 8 source" src="./code_sandbox/snaps/js-regexp-metachars-08-code.png" />
+![js-regexp-metachars example 8 source](./code_sandbox/snaps/js-regexp-metachars-08-code.png)
 
-<img alt="js-regexp-metachars example 8 result" src="./code_sandbox/snaps/js-regexp-metachars-08-result.png" />
+![js-regexp-metachars example 8 result](./code_sandbox/snaps/js-regexp-metachars-08-result.png)
 
 - [x] **Outcome:** result is **"Visit W3Sch**ls. Hell* W*rld!"**.
 
@@ -39047,9 +39047,9 @@ const pattern = /\u0057/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-metachars example 9 source" src="./code_sandbox/snaps/js-regexp-metachars-09-code.png" />
+![js-regexp-metachars example 9 source](./code_sandbox/snaps/js-regexp-metachars-09-code.png)
 
-<img alt="js-regexp-metachars example 9 result" src="./code_sandbox/snaps/js-regexp-metachars-09-result.png" />
+![js-regexp-metachars example 9 result](./code_sandbox/snaps/js-regexp-metachars-09-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W","W"]**.
 
@@ -39211,9 +39211,9 @@ let text = "W3Schools tutorial";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 1 source" src="./code_sandbox/snaps/js-regexp-assertions-01-code.png" />
+![js-regexp-assertions example 1 source](./code_sandbox/snaps/js-regexp-assertions-01-code.png)
 
-<img alt="js-regexp-assertions example 1 result" src="./code_sandbox/snaps/js-regexp-assertions-01-result.png" />
+![js-regexp-assertions example 1 result](./code_sandbox/snaps/js-regexp-assertions-01-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -39231,9 +39231,9 @@ let text = "Hello W3Schools";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 2 source" src="./code_sandbox/snaps/js-regexp-assertions-02-code.png" />
+![js-regexp-assertions example 2 source](./code_sandbox/snaps/js-regexp-assertions-02-code.png)
 
-<img alt="js-regexp-assertions example 2 result" src="./code_sandbox/snaps/js-regexp-assertions-02-result.png" />
+![js-regexp-assertions example 2 result](./code_sandbox/snaps/js-regexp-assertions-02-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -39251,9 +39251,9 @@ let text = "Hello W3Schools";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 3 source" src="./code_sandbox/snaps/js-regexp-assertions-03-code.png" />
+![js-regexp-assertions example 3 source](./code_sandbox/snaps/js-regexp-assertions-03-code.png)
 
-<img alt="js-regexp-assertions example 3 result" src="./code_sandbox/snaps/js-regexp-assertions-03-result.png" />
+![js-regexp-assertions example 3 result](./code_sandbox/snaps/js-regexp-assertions-03-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -39271,9 +39271,9 @@ let text = "W3Schools tutorial";
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 4 source" src="./code_sandbox/snaps/js-regexp-assertions-04-code.png" />
+![js-regexp-assertions example 4 source](./code_sandbox/snaps/js-regexp-assertions-04-code.png)
 
-<img alt="js-regexp-assertions example 4 result" src="./code_sandbox/snaps/js-regexp-assertions-04-result.png" />
+![js-regexp-assertions example 4 result](./code_sandbox/snaps/js-regexp-assertions-04-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -39291,9 +39291,9 @@ let text = "HELLO, LOOK AT YOU!";
 let result = text.search(/\bLO/);
 ```
 
-<img alt="js-regexp-assertions example 5 source" src="./code_sandbox/snaps/js-regexp-assertions-05-code.png" />
+![js-regexp-assertions example 5 source](./code_sandbox/snaps/js-regexp-assertions-05-code.png)
 
-<img alt="js-regexp-assertions example 5 result" src="./code_sandbox/snaps/js-regexp-assertions-05-result.png" />
+![js-regexp-assertions example 5 result](./code_sandbox/snaps/js-regexp-assertions-05-result.png)
 
 - [x] **Outcome:** **7** — index of **LOOK** (`HELLO, ` is 7 characters).
 
@@ -39311,9 +39311,9 @@ let text = "HELLO, LOOK AT YOU!";
 let result = text.search(/LO\b/);
 ```
 
-<img alt="js-regexp-assertions example 6 source" src="./code_sandbox/snaps/js-regexp-assertions-06-code.png" />
+![js-regexp-assertions example 6 source](./code_sandbox/snaps/js-regexp-assertions-06-code.png)
 
-<img alt="js-regexp-assertions example 6 result" src="./code_sandbox/snaps/js-regexp-assertions-06-result.png" />
+![js-regexp-assertions example 6 result](./code_sandbox/snaps/js-regexp-assertions-06-result.png)
 
 - [x] **Outcome:** **3** — `LO` in **HELLO** starting at index 3.
 
@@ -39332,9 +39332,9 @@ let result = text.match(/\BScript/);
 let edge = text.match(/\bScript/);
 ```
 
-<img alt="js-regexp-assertions example 7 source" src="./code_sandbox/snaps/js-regexp-assertions-07-code.png" />
+![js-regexp-assertions example 7 source](./code_sandbox/snaps/js-regexp-assertions-07-code.png)
 
-<img alt="js-regexp-assertions example 7 result" src="./code_sandbox/snaps/js-regexp-assertions-07-result.png" />
+![js-regexp-assertions example 7 result](./code_sandbox/snaps/js-regexp-assertions-07-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Script"]**. `edge` is **null**.
 
@@ -39353,9 +39353,9 @@ let pattern = new RegExp("W3Schools(?=) Tutorials");
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 8 source" src="./code_sandbox/snaps/js-regexp-assertions-08-code.png" />
+![js-regexp-assertions example 8 source](./code_sandbox/snaps/js-regexp-assertions-08-code.png)
 
-<img alt="js-regexp-assertions example 8 result" src="./code_sandbox/snaps/js-regexp-assertions-08-result.png" />
+![js-regexp-assertions example 8 result](./code_sandbox/snaps/js-regexp-assertions-08-result.png)
 
 - [x] **Outcome:** **true** (empty lookahead does not test a following string).
 
@@ -39374,9 +39374,9 @@ const pattern = /W3Schools(?= Tutorials)/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-assertions example 9 source" src="./code_sandbox/snaps/js-regexp-assertions-09-code.png" />
+![js-regexp-assertions example 9 source](./code_sandbox/snaps/js-regexp-assertions-09-code.png)
 
-<img alt="js-regexp-assertions example 9 result" src="./code_sandbox/snaps/js-regexp-assertions-09-result.png" />
+![js-regexp-assertions example 9 result](./code_sandbox/snaps/js-regexp-assertions-09-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -39394,9 +39394,9 @@ let pattern = /W3Schools(?! Tutorials)/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 10 source" src="./code_sandbox/snaps/js-regexp-assertions-10-code.png" />
+![js-regexp-assertions example 10 source](./code_sandbox/snaps/js-regexp-assertions-10-code.png)
 
-<img alt="js-regexp-assertions example 10 result" src="./code_sandbox/snaps/js-regexp-assertions-10-result.png" />
+![js-regexp-assertions example 10 result](./code_sandbox/snaps/js-regexp-assertions-10-result.png)
 
 - [x] **Outcome:** **false** — the text **is** followed by ` Tutorials`.
 
@@ -39414,9 +39414,9 @@ let pattern = /(?<=Hello )W3Schools/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 11 source" src="./code_sandbox/snaps/js-regexp-assertions-11-code.png" />
+![js-regexp-assertions example 11 source](./code_sandbox/snaps/js-regexp-assertions-11-code.png)
 
-<img alt="js-regexp-assertions example 11 result" src="./code_sandbox/snaps/js-regexp-assertions-11-result.png" />
+![js-regexp-assertions example 11 result](./code_sandbox/snaps/js-regexp-assertions-11-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -39434,9 +39434,9 @@ let pattern = /(?<!Hello )W3Schools/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-assertions example 12 source" src="./code_sandbox/snaps/js-regexp-assertions-12-code.png" />
+![js-regexp-assertions example 12 source](./code_sandbox/snaps/js-regexp-assertions-12-code.png)
 
-<img alt="js-regexp-assertions example 12 result" src="./code_sandbox/snaps/js-regexp-assertions-12-result.png" />
+![js-regexp-assertions example 12 result](./code_sandbox/snaps/js-regexp-assertions-12-result.png)
 
 - [x] **Outcome:** **false** — it **is** preceded by `Hello `.
 
@@ -39568,7 +39568,7 @@ Assertions check a place in the string. Anchors (^ $) and word boundaries (\b \B
 
 ## Introduction
 
-Groups treat several tokens as one unit. (x) captures into the match array (index 0 = full match). (?<name>x) also fills match.groups. (?:x) groups without capturing. Lookahead/lookbehind are grouped assertions. (?i:x) / (?-i:x) are ES2025 group flag modifiers. Backreferences (\1) replay a capture. match and exec both return the same shape without /g; JSON.stringify hides index/input.
+Groups treat several tokens as one unit. (x) captures into the match array (index 0 = full match). `(?<name>x)` also fills match.groups. (?:x) groups without capturing. Lookahead/lookbehind are grouped assertions. (?i:x) / (?-i:x) are ES2025 group flag modifiers. Backreferences (\1) replay a capture. match and exec both return the same shape without /g; JSON.stringify hides index/input.
 
 This section has **12** examples:
 
@@ -39576,7 +39576,7 @@ This section has **12** examples:
 - [x] **Example 2:** exec — capturing groups (Tryit period) [View](#js-regexp-groups-example-02)
 - [x] **Example 3:** exec — capturing groups (Tryit hyphen) [View](#js-regexp-groups-example-03)
 - [x] **Example 4:** (\d{4})-(\d{2})-(\d{2}) — result array indices [View](#js-regexp-groups-example-04)
-- [x] **Example 5:** (?<name>x) — named capturing groups [View](#js-regexp-groups-example-05)
+- [x] **Example 5:** `(?<name>x)` — named capturing groups [View](#js-regexp-groups-example-05)
 - [x] **Example 6:** (?:x) — non-capturing group [View](#js-regexp-groups-example-06)
 - [x] **Example 7:** (?=x) — lookahead group [View](#js-regexp-groups-example-07)
 - [x] **Example 8:** (?<=x) — lookbehind group [View](#js-regexp-groups-example-08)
@@ -39608,9 +39608,9 @@ const pattern = /(\w+) loves (\w+)/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-groups example 1 source" src="./code_sandbox/snaps/js-regexp-groups-01-code.png" />
+![js-regexp-groups example 1 source](./code_sandbox/snaps/js-regexp-groups-01-code.png)
 
-<img alt="js-regexp-groups example 1 result" src="./code_sandbox/snaps/js-regexp-groups-01-result.png" />
+![js-regexp-groups example 1 result](./code_sandbox/snaps/js-regexp-groups-01-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Alice loves Bob","Alice","Bob"]**. The hyphen is outside the match.
 
@@ -39629,9 +39629,9 @@ const pattern = /(\w+) loves (\w+)/;
 let result = pattern.exec(text);
 ```
 
-<img alt="js-regexp-groups example 2 source" src="./code_sandbox/snaps/js-regexp-groups-02-code.png" />
+![js-regexp-groups example 2 source](./code_sandbox/snaps/js-regexp-groups-02-code.png)
 
-<img alt="js-regexp-groups example 2 result" src="./code_sandbox/snaps/js-regexp-groups-02-result.png" />
+![js-regexp-groups example 2 result](./code_sandbox/snaps/js-regexp-groups-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Alice loves Bob","Alice","Bob"]**. `result.index` is **0**.
 
@@ -39649,9 +39649,9 @@ const pattern = /(\w+) loves (\w+)/;
 let result = pattern.exec(text);
 ```
 
-<img alt="js-regexp-groups example 3 source" src="./code_sandbox/snaps/js-regexp-groups-03-code.png" />
+![js-regexp-groups example 3 source](./code_sandbox/snaps/js-regexp-groups-03-code.png)
 
-<img alt="js-regexp-groups example 3 result" src="./code_sandbox/snaps/js-regexp-groups-03-result.png" />
+![js-regexp-groups example 3 result](./code_sandbox/snaps/js-regexp-groups-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Alice loves Bob","Alice","Bob"]**.
 
@@ -39669,15 +39669,15 @@ const text = "2026-05-21";
 const result = text.match(regex);
 ```
 
-<img alt="js-regexp-groups example 4 source" src="./code_sandbox/snaps/js-regexp-groups-04-code.png" />
+![js-regexp-groups example 4 source](./code_sandbox/snaps/js-regexp-groups-04-code.png)
 
-<img alt="js-regexp-groups example 4 result" src="./code_sandbox/snaps/js-regexp-groups-04-result.png" />
+![js-regexp-groups example 4 result](./code_sandbox/snaps/js-regexp-groups-04-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["2026-05-21","2026","05","21"]**.
 
 <a id="js-regexp-groups-example-05"></a>
 
-### **Example 5: (?<name>x) — named capturing groups**
+### **Example 5: `(?<name>x)` — named capturing groups**
 
 - [x] **`(?<name>x)`** stores captures on **`match.groups`** (ES2018).
 - [x] The Tryit prints only `lastName`; this sandbox JSON-prints the groups object too.
@@ -39692,9 +39692,9 @@ let fName = result.groups.firstName;
 let lName = result.groups.lastName;
 ```
 
-<img alt="js-regexp-groups example 5 source" src="./code_sandbox/snaps/js-regexp-groups-05-code.png" />
+![js-regexp-groups example 5 source](./code_sandbox/snaps/js-regexp-groups-05-code.png)
 
-<img alt="js-regexp-groups example 5 result" src="./code_sandbox/snaps/js-regexp-groups-05-result.png" />
+![js-regexp-groups example 5 result](./code_sandbox/snaps/js-regexp-groups-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["John Doe","John","Doe"]**. `groups` is **{"firstName":"John","lastName":"Doe"}**.
 
@@ -39713,9 +39713,9 @@ let result = text.match(/(?:ha)+/);
 let cap = text.match(/(ha)+/);
 ```
 
-<img alt="js-regexp-groups example 6 source" src="./code_sandbox/snaps/js-regexp-groups-06-code.png" />
+![js-regexp-groups example 6 source](./code_sandbox/snaps/js-regexp-groups-06-code.png)
 
-<img alt="js-regexp-groups example 6 result" src="./code_sandbox/snaps/js-regexp-groups-06-result.png" />
+![js-regexp-groups example 6 result](./code_sandbox/snaps/js-regexp-groups-06-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["hahaha"]** (no group 1). `cap` is **["hahaha","ha"]** (last `ha` is group 1).
 
@@ -39732,9 +39732,9 @@ let text = "W3Schools Tutorials";
 let result = text.match(/W3Schools(?= Tutorials)/);
 ```
 
-<img alt="js-regexp-groups example 7 source" src="./code_sandbox/snaps/js-regexp-groups-07-code.png" />
+![js-regexp-groups example 7 source](./code_sandbox/snaps/js-regexp-groups-07-code.png)
 
-<img alt="js-regexp-groups example 7 result" src="./code_sandbox/snaps/js-regexp-groups-07-result.png" />
+![js-regexp-groups example 7 result](./code_sandbox/snaps/js-regexp-groups-07-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -39751,9 +39751,9 @@ let text = "Hello W3Schools";
 let result = text.match(/(?<=Hello )W3Schools/);
 ```
 
-<img alt="js-regexp-groups example 8 source" src="./code_sandbox/snaps/js-regexp-groups-08-code.png" />
+![js-regexp-groups example 8 source](./code_sandbox/snaps/js-regexp-groups-08-code.png)
 
-<img alt="js-regexp-groups example 8 result" src="./code_sandbox/snaps/js-regexp-groups-08-result.png" />
+![js-regexp-groups example 8 result](./code_sandbox/snaps/js-regexp-groups-08-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -39771,9 +39771,9 @@ const pattern = /(?i:W3Schools) tutorials/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-groups example 9 source" src="./code_sandbox/snaps/js-regexp-groups-09-code.png" />
+![js-regexp-groups example 9 source](./code_sandbox/snaps/js-regexp-groups-09-code.png)
 
-<img alt="js-regexp-groups example 9 result" src="./code_sandbox/snaps/js-regexp-groups-09-result.png" />
+![js-regexp-groups example 9 result](./code_sandbox/snaps/js-regexp-groups-09-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -39791,9 +39791,9 @@ const pattern = /(?i:W3Schools) tutorials/;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-groups example 10 source" src="./code_sandbox/snaps/js-regexp-groups-10-code.png" />
+![js-regexp-groups example 10 source](./code_sandbox/snaps/js-regexp-groups-10-code.png)
 
-<img alt="js-regexp-groups example 10 result" src="./code_sandbox/snaps/js-regexp-groups-10-result.png" />
+![js-regexp-groups example 10 result](./code_sandbox/snaps/js-regexp-groups-10-result.png)
 
 - [x] **Outcome:** **false**.
 
@@ -39812,9 +39812,9 @@ const pattern = /(?-i:W3Schools) tutorials/i;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-groups example 11 source" src="./code_sandbox/snaps/js-regexp-groups-11-code.png" />
+![js-regexp-groups example 11 source](./code_sandbox/snaps/js-regexp-groups-11-code.png)
 
-<img alt="js-regexp-groups example 11 result" src="./code_sandbox/snaps/js-regexp-groups-11-result.png" />
+![js-regexp-groups example 11 result](./code_sandbox/snaps/js-regexp-groups-11-result.png)
 
 - [x] **Outcome:** **false** if modifier groups work — `W3Schools` is case-sensitive inside the group, so `w3schools` fails. Engines without ES2025 modifiers report **SyntaxError: Invalid group**.
 
@@ -39833,9 +39833,9 @@ let result = text.match(/(\w+)\s+\1/);
 let miss = "hello world".match(/(\w+)\s+\1/);
 ```
 
-<img alt="js-regexp-groups example 12 source" src="./code_sandbox/snaps/js-regexp-groups-12-code.png" />
+![js-regexp-groups example 12 source](./code_sandbox/snaps/js-regexp-groups-12-code.png)
 
-<img alt="js-regexp-groups example 12 result" src="./code_sandbox/snaps/js-regexp-groups-12-result.png" />
+![js-regexp-groups example 12 result](./code_sandbox/snaps/js-regexp-groups-12-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["hello hello","hello"]**. `miss` is **null**.
 
@@ -39953,7 +39953,7 @@ Then open `http://127.0.0.1:8770/js-regexp-groups/`.
 
 ## Summary
 
-Use (x) to extract, (?:x) to structure, (?<name>x) to label, lookaround to assert, and \1 to repeat a capture. match/exec share the [full, groups…] shape without /g. Inline (?i:…) is ES2025.
+Use (x) to extract, (?:x) to structure, `(?<name>x)` to label, lookaround to assert, and \1 to repeat a capture. match/exec share the [full, groups…] shape without /g. Inline (?i:…) is ES2025.
 
 ## References
 
@@ -39999,9 +39999,9 @@ const pattern = /o+/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-quantifiers example 1 source" src="./code_sandbox/snaps/js-regexp-quantifiers-01-code.png" />
+![js-regexp-quantifiers example 1 source](./code_sandbox/snaps/js-regexp-quantifiers-01-code.png)
 
-<img alt="js-regexp-quantifiers example 1 result" src="./code_sandbox/snaps/js-regexp-quantifiers-01-result.png" />
+![js-regexp-quantifiers example 1 result](./code_sandbox/snaps/js-regexp-quantifiers-01-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["ooo","o","o","oo"]**.
 
@@ -40019,9 +40019,9 @@ const pattern = /lo*/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-quantifiers example 2 source" src="./code_sandbox/snaps/js-regexp-quantifiers-02-code.png" />
+![js-regexp-quantifiers example 2 source](./code_sandbox/snaps/js-regexp-quantifiers-02-code.png)
 
-<img alt="js-regexp-quantifiers example 2 result" src="./code_sandbox/snaps/js-regexp-quantifiers-02-result.png" />
+![js-regexp-quantifiers example 2 result](./code_sandbox/snaps/js-regexp-quantifiers-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["l","looo","l","l","lo","l"]**.
 
@@ -40039,9 +40039,9 @@ const pattern = /10?/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-quantifiers example 3 source" src="./code_sandbox/snaps/js-regexp-quantifiers-03-code.png" />
+![js-regexp-quantifiers example 3 source](./code_sandbox/snaps/js-regexp-quantifiers-03-code.png)
 
-<img alt="js-regexp-quantifiers example 3 result" src="./code_sandbox/snaps/js-regexp-quantifiers-03-result.png" />
+![js-regexp-quantifiers example 3 result](./code_sandbox/snaps/js-regexp-quantifiers-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","10","10"]**.
 
@@ -40059,9 +40059,9 @@ const pattern = /\d{4}/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-quantifiers example 4 source" src="./code_sandbox/snaps/js-regexp-quantifiers-04-code.png" />
+![js-regexp-quantifiers example 4 source](./code_sandbox/snaps/js-regexp-quantifiers-04-code.png)
 
-<img alt="js-regexp-quantifiers example 4 result" src="./code_sandbox/snaps/js-regexp-quantifiers-04-result.png" />
+![js-regexp-quantifiers example 4 result](./code_sandbox/snaps/js-regexp-quantifiers-04-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1000","1000"]**.
 
@@ -40079,9 +40079,9 @@ const pattern = /\d{3,4}/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-quantifiers example 5 source" src="./code_sandbox/snaps/js-regexp-quantifiers-05-code.png" />
+![js-regexp-quantifiers example 5 source](./code_sandbox/snaps/js-regexp-quantifiers-05-code.png)
 
-<img alt="js-regexp-quantifiers example 5 result" src="./code_sandbox/snaps/js-regexp-quantifiers-05-result.png" />
+![js-regexp-quantifiers example 5 result](./code_sandbox/snaps/js-regexp-quantifiers-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["100","1000","1000"]**.
 
@@ -40099,9 +40099,9 @@ const pattern = /\d{3,}/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-quantifiers example 6 source" src="./code_sandbox/snaps/js-regexp-quantifiers-06-code.png" />
+![js-regexp-quantifiers example 6 source](./code_sandbox/snaps/js-regexp-quantifiers-06-code.png)
 
-<img alt="js-regexp-quantifiers example 6 result" src="./code_sandbox/snaps/js-regexp-quantifiers-06-result.png" />
+![js-regexp-quantifiers example 6 result](./code_sandbox/snaps/js-regexp-quantifiers-06-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["100","1000","10000"]**.
 
@@ -40301,9 +40301,9 @@ const pattern = /(aa)(bb)/d;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 1 source" src="./code_sandbox/snaps/js-regexp-patterns-01-code.png" />
+![js-regexp-patterns example 1 source](./code_sandbox/snaps/js-regexp-patterns-01-code.png)
 
-<img alt="js-regexp-patterns example 1 result" src="./code_sandbox/snaps/js-regexp-patterns-01-result.png" />
+![js-regexp-patterns example 1 result](./code_sandbox/snaps/js-regexp-patterns-01-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["aabb","aa","bb"]**. `indices` is **[[2,6],[2,4],[4,6]]**.
 
@@ -40321,9 +40321,9 @@ const pattern = /is/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 2 source" src="./code_sandbox/snaps/js-regexp-patterns-02-code.png" />
+![js-regexp-patterns example 2 source](./code_sandbox/snaps/js-regexp-patterns-02-code.png)
 
-<img alt="js-regexp-patterns example 2 result" src="./code_sandbox/snaps/js-regexp-patterns-02-result.png" />
+![js-regexp-patterns example 2 result](./code_sandbox/snaps/js-regexp-patterns-02-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["is","is"]**.
 
@@ -40341,9 +40341,9 @@ const pattern = /w3schools/i;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 3 source" src="./code_sandbox/snaps/js-regexp-patterns-03-code.png" />
+![js-regexp-patterns example 3 source](./code_sandbox/snaps/js-regexp-patterns-03-code.png)
 
-<img alt="js-regexp-patterns example 3 result" src="./code_sandbox/snaps/js-regexp-patterns-03-result.png" />
+![js-regexp-patterns example 3 result](./code_sandbox/snaps/js-regexp-patterns-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -40360,9 +40360,9 @@ let text = "\nIs th\nis it?";
 let result = text.match(/^is/m);
 ```
 
-<img alt="js-regexp-patterns example 4 source" src="./code_sandbox/snaps/js-regexp-patterns-04-code.png" />
+![js-regexp-patterns example 4 source](./code_sandbox/snaps/js-regexp-patterns-04-code.png)
 
-<img alt="js-regexp-patterns example 4 result" src="./code_sandbox/snaps/js-regexp-patterns-04-result.png" />
+![js-regexp-patterns example 4 result](./code_sandbox/snaps/js-regexp-patterns-04-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["is"]**.
 
@@ -40380,9 +40380,9 @@ const pattern = /Line./gs;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 5 source" src="./code_sandbox/snaps/js-regexp-patterns-05-code.png" />
+![js-regexp-patterns example 5 source](./code_sandbox/snaps/js-regexp-patterns-05-code.png)
 
-<img alt="js-regexp-patterns example 5 result" src="./code_sandbox/snaps/js-regexp-patterns-05-result.png" />
+![js-regexp-patterns example 5 result](./code_sandbox/snaps/js-regexp-patterns-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Line\n","Line."]** .
 
@@ -40400,9 +40400,9 @@ const pattern = /\u{04DC0}/u;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-patterns example 6 source" src="./code_sandbox/snaps/js-regexp-patterns-06-code.png" />
+![js-regexp-patterns example 6 source](./code_sandbox/snaps/js-regexp-patterns-06-code.png)
 
-<img alt="js-regexp-patterns example 6 result" src="./code_sandbox/snaps/js-regexp-patterns-06-result.png" />
+![js-regexp-patterns example 6 result](./code_sandbox/snaps/js-regexp-patterns-06-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -40420,9 +40420,9 @@ const pattern = /\p{Emoji}/v;
 let result = pattern.test(text);
 ```
 
-<img alt="js-regexp-patterns example 7 source" src="./code_sandbox/snaps/js-regexp-patterns-07-code.png" />
+![js-regexp-patterns example 7 source](./code_sandbox/snaps/js-regexp-patterns-07-code.png)
 
-<img alt="js-regexp-patterns example 7 result" src="./code_sandbox/snaps/js-regexp-patterns-07-result.png" />
+![js-regexp-patterns example 7 result](./code_sandbox/snaps/js-regexp-patterns-07-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -40441,9 +40441,9 @@ pattern.lastIndex = 4;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 8 source" src="./code_sandbox/snaps/js-regexp-patterns-08-code.png" />
+![js-regexp-patterns example 8 source](./code_sandbox/snaps/js-regexp-patterns-08-code.png)
 
-<img alt="js-regexp-patterns example 8 result" src="./code_sandbox/snaps/js-regexp-patterns-08-result.png" />
+![js-regexp-patterns example 8 result](./code_sandbox/snaps/js-regexp-patterns-08-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["def"]**.
 
@@ -40461,9 +40461,9 @@ const pattern = /[a]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 9 source" src="./code_sandbox/snaps/js-regexp-patterns-09-code.png" />
+![js-regexp-patterns example 9 source](./code_sandbox/snaps/js-regexp-patterns-09-code.png)
 
-<img alt="js-regexp-patterns example 9 result" src="./code_sandbox/snaps/js-regexp-patterns-09-result.png" />
+![js-regexp-patterns example 9 result](./code_sandbox/snaps/js-regexp-patterns-09-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a"]**.
 
@@ -40481,9 +40481,9 @@ const pattern = /[^a]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 10 source" src="./code_sandbox/snaps/js-regexp-patterns-10-code.png" />
+![js-regexp-patterns example 10 source](./code_sandbox/snaps/js-regexp-patterns-10-code.png)
 
-<img alt="js-regexp-patterns example 10 result" src="./code_sandbox/snaps/js-regexp-patterns-10-result.png" />
+![js-regexp-patterns example 10 result](./code_sandbox/snaps/js-regexp-patterns-10-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["c","t"]**.
 
@@ -40501,9 +40501,9 @@ const pattern = /[abc]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 11 source" src="./code_sandbox/snaps/js-regexp-patterns-11-code.png" />
+![js-regexp-patterns example 11 source](./code_sandbox/snaps/js-regexp-patterns-11-code.png)
 
-<img alt="js-regexp-patterns example 11 result" src="./code_sandbox/snaps/js-regexp-patterns-11-result.png" />
+![js-regexp-patterns example 11 result](./code_sandbox/snaps/js-regexp-patterns-11-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a","b","c"]**.
 
@@ -40521,9 +40521,9 @@ const pattern = /[^abc]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 12 source" src="./code_sandbox/snaps/js-regexp-patterns-12-code.png" />
+![js-regexp-patterns example 12 source](./code_sandbox/snaps/js-regexp-patterns-12-code.png)
 
-<img alt="js-regexp-patterns example 12 result" src="./code_sandbox/snaps/js-regexp-patterns-12-result.png" />
+![js-regexp-patterns example 12 result](./code_sandbox/snaps/js-regexp-patterns-12-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["f","r","i"]**.
 
@@ -40541,9 +40541,9 @@ const pattern = /[a-z]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 13 source" src="./code_sandbox/snaps/js-regexp-patterns-13-code.png" />
+![js-regexp-patterns example 13 source](./code_sandbox/snaps/js-regexp-patterns-13-code.png)
 
-<img alt="js-regexp-patterns example 13 result" src="./code_sandbox/snaps/js-regexp-patterns-13-result.png" />
+![js-regexp-patterns example 13 result](./code_sandbox/snaps/js-regexp-patterns-13-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["b"]**.
 
@@ -40561,9 +40561,9 @@ const pattern = /[^a-z]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 14 source" src="./code_sandbox/snaps/js-regexp-patterns-14-code.png" />
+![js-regexp-patterns example 14 source](./code_sandbox/snaps/js-regexp-patterns-14-code.png)
 
-<img alt="js-regexp-patterns example 14 result" src="./code_sandbox/snaps/js-regexp-patterns-14-result.png" />
+![js-regexp-patterns example 14 result](./code_sandbox/snaps/js-regexp-patterns-14-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["A","1"]**.
 
@@ -40581,9 +40581,9 @@ const pattern = /[0-9]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 15 source" src="./code_sandbox/snaps/js-regexp-patterns-15-code.png" />
+![js-regexp-patterns example 15 source](./code_sandbox/snaps/js-regexp-patterns-15-code.png)
 
-<img alt="js-regexp-patterns example 15 result" src="./code_sandbox/snaps/js-regexp-patterns-15-result.png" />
+![js-regexp-patterns example 15 result](./code_sandbox/snaps/js-regexp-patterns-15-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1"]**.
 
@@ -40601,9 +40601,9 @@ const pattern = /[^0-9]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 16 source" src="./code_sandbox/snaps/js-regexp-patterns-16-code.png" />
+![js-regexp-patterns example 16 source](./code_sandbox/snaps/js-regexp-patterns-16-code.png)
 
-<img alt="js-regexp-patterns example 16 result" src="./code_sandbox/snaps/js-regexp-patterns-16-result.png" />
+![js-regexp-patterns example 16 result](./code_sandbox/snaps/js-regexp-patterns-16-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["A","b"]**.
 
@@ -40621,9 +40621,9 @@ const pattern = /a|b/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 17 source" src="./code_sandbox/snaps/js-regexp-patterns-17-code.png" />
+![js-regexp-patterns example 17 source](./code_sandbox/snaps/js-regexp-patterns-17-code.png)
 
-<img alt="js-regexp-patterns example 17 result" src="./code_sandbox/snaps/js-regexp-patterns-17-result.png" />
+![js-regexp-patterns example 17 result](./code_sandbox/snaps/js-regexp-patterns-17-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a"]**.
 
@@ -40641,9 +40641,9 @@ const pattern = /./g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 18 source" src="./code_sandbox/snaps/js-regexp-patterns-18-code.png" />
+![js-regexp-patterns example 18 source](./code_sandbox/snaps/js-regexp-patterns-18-code.png)
 
-<img alt="js-regexp-patterns example 18 result" src="./code_sandbox/snaps/js-regexp-patterns-18-result.png" />
+![js-regexp-patterns example 18 result](./code_sandbox/snaps/js-regexp-patterns-18-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a","b"]** — newline skipped.
 
@@ -40661,9 +40661,9 @@ const pattern = /\w/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 19 source" src="./code_sandbox/snaps/js-regexp-patterns-19-code.png" />
+![js-regexp-patterns example 19 source](./code_sandbox/snaps/js-regexp-patterns-19-code.png)
 
-<img alt="js-regexp-patterns example 19 result" src="./code_sandbox/snaps/js-regexp-patterns-19-result.png" />
+![js-regexp-patterns example 19 result](./code_sandbox/snaps/js-regexp-patterns-19-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e","1","0","0"]**.
 
@@ -40681,9 +40681,9 @@ const pattern = /\W/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 20 source" src="./code_sandbox/snaps/js-regexp-patterns-20-code.png" />
+![js-regexp-patterns example 20 source](./code_sandbox/snaps/js-regexp-patterns-20-code.png)
 
-<img alt="js-regexp-patterns example 20 result" src="./code_sandbox/snaps/js-regexp-patterns-20-result.png" />
+![js-regexp-patterns example 20 result](./code_sandbox/snaps/js-regexp-patterns-20-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **[" ","%","!"]**.
 
@@ -40701,9 +40701,9 @@ const pattern = /\d/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 21 source" src="./code_sandbox/snaps/js-regexp-patterns-21-code.png" />
+![js-regexp-patterns example 21 source](./code_sandbox/snaps/js-regexp-patterns-21-code.png)
 
-<img alt="js-regexp-patterns example 21 result" src="./code_sandbox/snaps/js-regexp-patterns-21-result.png" />
+![js-regexp-patterns example 21 result](./code_sandbox/snaps/js-regexp-patterns-21-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","0","0"]**.
 
@@ -40721,9 +40721,9 @@ const pattern = /\D/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 22 source" src="./code_sandbox/snaps/js-regexp-patterns-22-code.png" />
+![js-regexp-patterns example 22 source](./code_sandbox/snaps/js-regexp-patterns-22-code.png)
 
-<img alt="js-regexp-patterns example 22 result" src="./code_sandbox/snaps/js-regexp-patterns-22-result.png" />
+![js-regexp-patterns example 22 result](./code_sandbox/snaps/js-regexp-patterns-22-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e"," ","%","!"]**.
 
@@ -40741,9 +40741,9 @@ const pattern = /\s/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 23 source" src="./code_sandbox/snaps/js-regexp-patterns-23-code.png" />
+![js-regexp-patterns example 23 source](./code_sandbox/snaps/js-regexp-patterns-23-code.png)
 
-<img alt="js-regexp-patterns example 23 result" src="./code_sandbox/snaps/js-regexp-patterns-23-result.png" />
+![js-regexp-patterns example 23 result](./code_sandbox/snaps/js-regexp-patterns-23-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **[" "," "," "," "]**.
 
@@ -40761,9 +40761,9 @@ const pattern = /\S/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 24 source" src="./code_sandbox/snaps/js-regexp-patterns-24-code.png" />
+![js-regexp-patterns example 24 source](./code_sandbox/snaps/js-regexp-patterns-24-code.png)
 
-<img alt="js-regexp-patterns example 24 result" src="./code_sandbox/snaps/js-regexp-patterns-24-result.png" />
+![js-regexp-patterns example 24 result](./code_sandbox/snaps/js-regexp-patterns-24-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["G","i","v","e","1","0","0","%","!"]**.
 
@@ -40781,9 +40781,9 @@ const pattern = /[\b]/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 25 source" src="./code_sandbox/snaps/js-regexp-patterns-25-code.png" />
+![js-regexp-patterns example 25 source](./code_sandbox/snaps/js-regexp-patterns-25-code.png)
 
-<img alt="js-regexp-patterns example 25 result" src="./code_sandbox/snaps/js-regexp-patterns-25-result.png" />
+![js-regexp-patterns example 25 result](./code_sandbox/snaps/js-regexp-patterns-25-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\b"]** — backspace, not a word boundary.
 
@@ -40801,9 +40801,9 @@ const pattern = /\0/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 26 source" src="./code_sandbox/snaps/js-regexp-patterns-26-code.png" />
+![js-regexp-patterns example 26 source](./code_sandbox/snaps/js-regexp-patterns-26-code.png)
 
-<img alt="js-regexp-patterns example 26 result" src="./code_sandbox/snaps/js-regexp-patterns-26-result.png" />
+![js-regexp-patterns example 26 result](./code_sandbox/snaps/js-regexp-patterns-26-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\u0000"]**.
 
@@ -40821,9 +40821,9 @@ const pattern = /\n/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 27 source" src="./code_sandbox/snaps/js-regexp-patterns-27-code.png" />
+![js-regexp-patterns example 27 source](./code_sandbox/snaps/js-regexp-patterns-27-code.png)
 
-<img alt="js-regexp-patterns example 27 result" src="./code_sandbox/snaps/js-regexp-patterns-27-result.png" />
+![js-regexp-patterns example 27 result](./code_sandbox/snaps/js-regexp-patterns-27-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\n"]**.
 
@@ -40841,9 +40841,9 @@ const pattern = /\f/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 28 source" src="./code_sandbox/snaps/js-regexp-patterns-28-code.png" />
+![js-regexp-patterns example 28 source](./code_sandbox/snaps/js-regexp-patterns-28-code.png)
 
-<img alt="js-regexp-patterns example 28 result" src="./code_sandbox/snaps/js-regexp-patterns-28-result.png" />
+![js-regexp-patterns example 28 result](./code_sandbox/snaps/js-regexp-patterns-28-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\f"]**.
 
@@ -40861,9 +40861,9 @@ const pattern = /\r/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 29 source" src="./code_sandbox/snaps/js-regexp-patterns-29-code.png" />
+![js-regexp-patterns example 29 source](./code_sandbox/snaps/js-regexp-patterns-29-code.png)
 
-<img alt="js-regexp-patterns example 29 result" src="./code_sandbox/snaps/js-regexp-patterns-29-result.png" />
+![js-regexp-patterns example 29 result](./code_sandbox/snaps/js-regexp-patterns-29-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\r"]**.
 
@@ -40881,9 +40881,9 @@ const pattern = /\t/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 30 source" src="./code_sandbox/snaps/js-regexp-patterns-30-code.png" />
+![js-regexp-patterns example 30 source](./code_sandbox/snaps/js-regexp-patterns-30-code.png)
 
-<img alt="js-regexp-patterns example 30 result" src="./code_sandbox/snaps/js-regexp-patterns-30-result.png" />
+![js-regexp-patterns example 30 result](./code_sandbox/snaps/js-regexp-patterns-30-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\t"]**.
 
@@ -40901,9 +40901,9 @@ const pattern = /\v/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 31 source" src="./code_sandbox/snaps/js-regexp-patterns-31-code.png" />
+![js-regexp-patterns example 31 source](./code_sandbox/snaps/js-regexp-patterns-31-code.png)
 
-<img alt="js-regexp-patterns example 31 result" src="./code_sandbox/snaps/js-regexp-patterns-31-result.png" />
+![js-regexp-patterns example 31 result](./code_sandbox/snaps/js-regexp-patterns-31-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["\u000b"]**.
 
@@ -40921,9 +40921,9 @@ const pattern = /\p{L}/gu;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 32 source" src="./code_sandbox/snaps/js-regexp-patterns-32-code.png" />
+![js-regexp-patterns example 32 source](./code_sandbox/snaps/js-regexp-patterns-32-code.png)
 
-<img alt="js-regexp-patterns example 32 result" src="./code_sandbox/snaps/js-regexp-patterns-32-result.png" />
+![js-regexp-patterns example 32 result](./code_sandbox/snaps/js-regexp-patterns-32-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["H","e","l","l","o"]** — needs u/v.
 
@@ -40941,9 +40941,9 @@ const pattern = /\P{L}/gu;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 33 source" src="./code_sandbox/snaps/js-regexp-patterns-33-code.png" />
+![js-regexp-patterns example 33 source](./code_sandbox/snaps/js-regexp-patterns-33-code.png)
 
-<img alt="js-regexp-patterns example 33 result" src="./code_sandbox/snaps/js-regexp-patterns-33-result.png" />
+![js-regexp-patterns example 33 result](./code_sandbox/snaps/js-regexp-patterns-33-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **[" ","1"]**.
 
@@ -40961,9 +40961,9 @@ const pattern = /\127/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 34 source" src="./code_sandbox/snaps/js-regexp-patterns-34-code.png" />
+![js-regexp-patterns example 34 source](./code_sandbox/snaps/js-regexp-patterns-34-code.png)
 
-<img alt="js-regexp-patterns example 34 result" src="./code_sandbox/snaps/js-regexp-patterns-34-result.png" />
+![js-regexp-patterns example 34 result](./code_sandbox/snaps/js-regexp-patterns-34-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W","W"]** (octal 127 = W).
 
@@ -40981,9 +40981,9 @@ const pattern = /\x6F/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 35 source" src="./code_sandbox/snaps/js-regexp-patterns-35-code.png" />
+![js-regexp-patterns example 35 source](./code_sandbox/snaps/js-regexp-patterns-35-code.png)
 
-<img alt="js-regexp-patterns example 35 result" src="./code_sandbox/snaps/js-regexp-patterns-35-result.png" />
+![js-regexp-patterns example 35 result](./code_sandbox/snaps/js-regexp-patterns-35-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["o"]** (hex 6F).
 
@@ -41001,9 +41001,9 @@ const pattern = /\u0057/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 36 source" src="./code_sandbox/snaps/js-regexp-patterns-36-code.png" />
+![js-regexp-patterns example 36 source](./code_sandbox/snaps/js-regexp-patterns-36-code.png)
 
-<img alt="js-regexp-patterns example 36 result" src="./code_sandbox/snaps/js-regexp-patterns-36-result.png" />
+![js-regexp-patterns example 36 result](./code_sandbox/snaps/js-regexp-patterns-36-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W","W"]** (U+0057).
 
@@ -41021,9 +41021,9 @@ const pattern = /^W3Schools/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 37 source" src="./code_sandbox/snaps/js-regexp-patterns-37-code.png" />
+![js-regexp-patterns example 37 source](./code_sandbox/snaps/js-regexp-patterns-37-code.png)
 
-<img alt="js-regexp-patterns example 37 result" src="./code_sandbox/snaps/js-regexp-patterns-37-result.png" />
+![js-regexp-patterns example 37 result](./code_sandbox/snaps/js-regexp-patterns-37-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -41041,9 +41041,9 @@ const pattern = /^W3Schools/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 38 source" src="./code_sandbox/snaps/js-regexp-patterns-38-code.png" />
+![js-regexp-patterns example 38 source](./code_sandbox/snaps/js-regexp-patterns-38-code.png)
 
-<img alt="js-regexp-patterns example 38 result" src="./code_sandbox/snaps/js-regexp-patterns-38-result.png" />
+![js-regexp-patterns example 38 result](./code_sandbox/snaps/js-regexp-patterns-38-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **null**.
 
@@ -41061,9 +41061,9 @@ const pattern = /W3Schools$/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 39 source" src="./code_sandbox/snaps/js-regexp-patterns-39-code.png" />
+![js-regexp-patterns example 39 source](./code_sandbox/snaps/js-regexp-patterns-39-code.png)
 
-<img alt="js-regexp-patterns example 39 result" src="./code_sandbox/snaps/js-regexp-patterns-39-result.png" />
+![js-regexp-patterns example 39 result](./code_sandbox/snaps/js-regexp-patterns-39-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -41081,9 +41081,9 @@ const pattern = /\bLOOK/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 40 source" src="./code_sandbox/snaps/js-regexp-patterns-40-code.png" />
+![js-regexp-patterns example 40 source](./code_sandbox/snaps/js-regexp-patterns-40-code.png)
 
-<img alt="js-regexp-patterns example 40 result" src="./code_sandbox/snaps/js-regexp-patterns-40-result.png" />
+![js-regexp-patterns example 40 result](./code_sandbox/snaps/js-regexp-patterns-40-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["LOOK"]**.
 
@@ -41101,9 +41101,9 @@ const pattern = /\BScript/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 41 source" src="./code_sandbox/snaps/js-regexp-patterns-41-code.png" />
+![js-regexp-patterns example 41 source](./code_sandbox/snaps/js-regexp-patterns-41-code.png)
 
-<img alt="js-regexp-patterns example 41 result" src="./code_sandbox/snaps/js-regexp-patterns-41-result.png" />
+![js-regexp-patterns example 41 result](./code_sandbox/snaps/js-regexp-patterns-41-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["Script"]**.
 
@@ -41121,9 +41121,9 @@ const pattern = /W3Schools(?= Tutorials)/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 42 source" src="./code_sandbox/snaps/js-regexp-patterns-42-code.png" />
+![js-regexp-patterns example 42 source](./code_sandbox/snaps/js-regexp-patterns-42-code.png)
 
-<img alt="js-regexp-patterns example 42 result" src="./code_sandbox/snaps/js-regexp-patterns-42-result.png" />
+![js-regexp-patterns example 42 result](./code_sandbox/snaps/js-regexp-patterns-42-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -41141,9 +41141,9 @@ const pattern = /W3Schools(?! Tutorials)/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 43 source" src="./code_sandbox/snaps/js-regexp-patterns-43-code.png" />
+![js-regexp-patterns example 43 source](./code_sandbox/snaps/js-regexp-patterns-43-code.png)
 
-<img alt="js-regexp-patterns example 43 result" src="./code_sandbox/snaps/js-regexp-patterns-43-result.png" />
+![js-regexp-patterns example 43 result](./code_sandbox/snaps/js-regexp-patterns-43-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **null**.
 
@@ -41161,9 +41161,9 @@ const pattern = /(?<=Hello )W3Schools/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 44 source" src="./code_sandbox/snaps/js-regexp-patterns-44-code.png" />
+![js-regexp-patterns example 44 source](./code_sandbox/snaps/js-regexp-patterns-44-code.png)
 
-<img alt="js-regexp-patterns example 44 result" src="./code_sandbox/snaps/js-regexp-patterns-44-result.png" />
+![js-regexp-patterns example 44 result](./code_sandbox/snaps/js-regexp-patterns-44-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["W3Schools"]**.
 
@@ -41181,9 +41181,9 @@ const pattern = /(?<!Hello )W3Schools/;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 45 source" src="./code_sandbox/snaps/js-regexp-patterns-45-code.png" />
+![js-regexp-patterns example 45 source](./code_sandbox/snaps/js-regexp-patterns-45-code.png)
 
-<img alt="js-regexp-patterns example 45 result" src="./code_sandbox/snaps/js-regexp-patterns-45-result.png" />
+![js-regexp-patterns example 45 result](./code_sandbox/snaps/js-regexp-patterns-45-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **null**.
 
@@ -41201,9 +41201,9 @@ const pattern = /o+/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 46 source" src="./code_sandbox/snaps/js-regexp-patterns-46-code.png" />
+![js-regexp-patterns example 46 source](./code_sandbox/snaps/js-regexp-patterns-46-code.png)
 
-<img alt="js-regexp-patterns example 46 result" src="./code_sandbox/snaps/js-regexp-patterns-46-result.png" />
+![js-regexp-patterns example 46 result](./code_sandbox/snaps/js-regexp-patterns-46-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["ooo","o","o","oo"]**.
 
@@ -41221,9 +41221,9 @@ const pattern = /lo*/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 47 source" src="./code_sandbox/snaps/js-regexp-patterns-47-code.png" />
+![js-regexp-patterns example 47 source](./code_sandbox/snaps/js-regexp-patterns-47-code.png)
 
-<img alt="js-regexp-patterns example 47 result" src="./code_sandbox/snaps/js-regexp-patterns-47-result.png" />
+![js-regexp-patterns example 47 result](./code_sandbox/snaps/js-regexp-patterns-47-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["l","looo","l","l","lo","l"]**.
 
@@ -41241,9 +41241,9 @@ const pattern = /10?/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 48 source" src="./code_sandbox/snaps/js-regexp-patterns-48-code.png" />
+![js-regexp-patterns example 48 source](./code_sandbox/snaps/js-regexp-patterns-48-code.png)
 
-<img alt="js-regexp-patterns example 48 result" src="./code_sandbox/snaps/js-regexp-patterns-48-result.png" />
+![js-regexp-patterns example 48 result](./code_sandbox/snaps/js-regexp-patterns-48-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1","10","10"]**.
 
@@ -41261,9 +41261,9 @@ const pattern = /\d{4}/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 49 source" src="./code_sandbox/snaps/js-regexp-patterns-49-code.png" />
+![js-regexp-patterns example 49 source](./code_sandbox/snaps/js-regexp-patterns-49-code.png)
 
-<img alt="js-regexp-patterns example 49 result" src="./code_sandbox/snaps/js-regexp-patterns-49-result.png" />
+![js-regexp-patterns example 49 result](./code_sandbox/snaps/js-regexp-patterns-49-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["1000","1000"]**.
 
@@ -41281,9 +41281,9 @@ const pattern = /\d{3,4}/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 50 source" src="./code_sandbox/snaps/js-regexp-patterns-50-code.png" />
+![js-regexp-patterns example 50 source](./code_sandbox/snaps/js-regexp-patterns-50-code.png)
 
-<img alt="js-regexp-patterns example 50 result" src="./code_sandbox/snaps/js-regexp-patterns-50-result.png" />
+![js-regexp-patterns example 50 result](./code_sandbox/snaps/js-regexp-patterns-50-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["100","1000","1000"]**.
 
@@ -41301,9 +41301,9 @@ const pattern = /\d{3,}/g;
 let result = text.match(pattern);
 ```
 
-<img alt="js-regexp-patterns example 51 source" src="./code_sandbox/snaps/js-regexp-patterns-51-code.png" />
+![js-regexp-patterns example 51 source](./code_sandbox/snaps/js-regexp-patterns-51-code.png)
 
-<img alt="js-regexp-patterns example 51 result" src="./code_sandbox/snaps/js-regexp-patterns-51-result.png" />
+![js-regexp-patterns example 51 result](./code_sandbox/snaps/js-regexp-patterns-51-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["100","1000","10000"]**.
 
@@ -41469,9 +41469,9 @@ const pattern = /e/;
 let result = pattern.test("The best things in life are free!");
 ```
 
-<img alt="js-regexp-objects example 1 source" src="./code_sandbox/snaps/js-regexp-objects-01-code.png" />
+![js-regexp-objects example 1 source](./code_sandbox/snaps/js-regexp-objects-01-code.png)
 
-<img alt="js-regexp-objects example 1 result" src="./code_sandbox/snaps/js-regexp-objects-01-result.png" />
+![js-regexp-objects example 1 result](./code_sandbox/snaps/js-regexp-objects-01-result.png)
 
 - [x] **Outcome:** **true** — there is an `e` in `The`.
 
@@ -41487,9 +41487,9 @@ Sandbox: `code_sandbox/js-regexp-objects/test-oneliner.html`
 let result = /e/.test("The best things in life are free!");
 ```
 
-<img alt="js-regexp-objects example 2 source" src="./code_sandbox/snaps/js-regexp-objects-02-code.png" />
+![js-regexp-objects example 2 source](./code_sandbox/snaps/js-regexp-objects-02-code.png)
 
-<img alt="js-regexp-objects example 2 result" src="./code_sandbox/snaps/js-regexp-objects-02-result.png" />
+![js-regexp-objects example 2 result](./code_sandbox/snaps/js-regexp-objects-02-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -41506,9 +41506,9 @@ Sandbox: `code_sandbox/js-regexp-objects/exec.html`
 const result = /e/.exec("The best things in life are free!");
 ```
 
-<img alt="js-regexp-objects example 3 source" src="./code_sandbox/snaps/js-regexp-objects-03-code.png" />
+![js-regexp-objects example 3 source](./code_sandbox/snaps/js-regexp-objects-03-code.png)
 
-<img alt="js-regexp-objects example 3 result" src="./code_sandbox/snaps/js-regexp-objects-03-result.png" />
+![js-regexp-objects example 3 result](./code_sandbox/snaps/js-regexp-objects-03-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["e"]**. `result[0]` is **"e"**, `index` is **2**, `input` is the full sentence.
 
@@ -41524,9 +41524,9 @@ Sandbox: `code_sandbox/js-regexp-objects/exec-null.html`
 let result = /z/.exec("The best things in life are free!");
 ```
 
-<img alt="js-regexp-objects example 4 source" src="./code_sandbox/snaps/js-regexp-objects-04-code.png" />
+![js-regexp-objects example 4 source](./code_sandbox/snaps/js-regexp-objects-04-code.png)
 
-<img alt="js-regexp-objects example 4 result" src="./code_sandbox/snaps/js-regexp-objects-04-result.png" />
+![js-regexp-objects example 4 result](./code_sandbox/snaps/js-regexp-objects-04-result.png)
 
 - [x] **Outcome:** **null**.
 
@@ -41546,9 +41546,9 @@ const goodDigits = new RegExp("\\d+");
 const badDigits = new RegExp("\d+");
 ```
 
-<img alt="js-regexp-objects example 5 source" src="./code_sandbox/snaps/js-regexp-objects-05-code.png" />
+![js-regexp-objects example 5 source](./code_sandbox/snaps/js-regexp-objects-05-code.png)
 
-<img alt="js-regexp-objects example 5 result" src="./code_sandbox/snaps/js-regexp-objects-05-result.png" />
+![js-regexp-objects example 5 result](./code_sandbox/snaps/js-regexp-objects-05-result.png)
 
 - [x] **Outcome:** `lit` and `ctor` both print **`/ab+c/i`**. `goodDigits` is **`/\d+/`** and **`test("12")` is true**. `badDigits` is **`/d+/`** (the JS string `"\d+"` is just `d+`) so **`test("12")` is false**.
 
@@ -41572,9 +41572,9 @@ const c = pattern.exec(text);
 const li3 = pattern.lastIndex;
 ```
 
-<img alt="js-regexp-objects example 6 source" src="./code_sandbox/snaps/js-regexp-objects-06-code.png" />
+![js-regexp-objects example 6 source](./code_sandbox/snaps/js-regexp-objects-06-code.png)
 
-<img alt="js-regexp-objects example 6 result" src="./code_sandbox/snaps/js-regexp-objects-06-result.png" />
+![js-regexp-objects example 6 result](./code_sandbox/snaps/js-regexp-objects-06-result.png)
 
 - [x] **Outcome:** First `exec` is **["is"]** at index **5** (`this`), `lastIndex` **7**. Second is **["is"]** at **18**, `lastIndex` **20**. Third is **null**, `lastIndex` **0**.
 
@@ -41601,9 +41601,9 @@ try {
 }
 ```
 
-<img alt="js-regexp-objects example 7 source" src="./code_sandbox/snaps/js-regexp-objects-07-code.png" />
+![js-regexp-objects example 7 source](./code_sandbox/snaps/js-regexp-objects-07-code.png)
 
-<img alt="js-regexp-objects example 7 result" src="./code_sandbox/snaps/js-regexp-objects-07-result.png" />
+![js-regexp-objects example 7 result](./code_sandbox/snaps/js-regexp-objects-07-result.png)
 
 - [x] **Outcome:** When `RegExp.escape` exists: `safe` is **`"\\[\\*\\]"`** (JSON) and `result` is **"W3Schools is a web school."** Node 22 has no `RegExp.escape` — then `safe` is the error string.
 
@@ -41777,9 +41777,9 @@ const pattern = /abc/g;
 pattern.compile("def", "i");
 ```
 
-<img alt="js-regexp-methods example 1 source" src="./code_sandbox/snaps/js-regexp-methods-01-code.png" />
+![js-regexp-methods example 1 source](./code_sandbox/snaps/js-regexp-methods-01-code.png)
 
-<img alt="js-regexp-methods example 1 result" src="./code_sandbox/snaps/js-regexp-methods-01-result.png" />
+![js-regexp-methods example 1 result](./code_sandbox/snaps/js-regexp-methods-01-result.png)
 
 - [x] **Outcome:** After `compile("def", "i")`, `source` is **"def"**, `flags` is **"i"**, `String(pattern)` is **`/def/i`**. Still **deprecated**.
 
@@ -41796,9 +41796,9 @@ const pattern = /W3Schools/gi;
 const result = pattern.constructor;
 ```
 
-<img alt="js-regexp-methods example 2 source" src="./code_sandbox/snaps/js-regexp-methods-02-code.png" />
+![js-regexp-methods example 2 source](./code_sandbox/snaps/js-regexp-methods-02-code.png)
 
-<img alt="js-regexp-methods example 2 result" src="./code_sandbox/snaps/js-regexp-methods-02-result.png" />
+![js-regexp-methods example 2 result](./code_sandbox/snaps/js-regexp-methods-02-result.png)
 
 - [x] **Outcome:** `String(pattern.constructor)` is **function RegExp() { [native code] }**. `=== RegExp` is **true**.
 
@@ -41815,9 +41815,9 @@ const pattern = /W3Schools/s;
 let result = pattern.dotAll;
 ```
 
-<img alt="js-regexp-methods example 3 source" src="./code_sandbox/snaps/js-regexp-methods-03-code.png" />
+![js-regexp-methods example 3 source](./code_sandbox/snaps/js-regexp-methods-03-code.png)
 
-<img alt="js-regexp-methods example 3 result" src="./code_sandbox/snaps/js-regexp-methods-03-result.png" />
+![js-regexp-methods example 3 result](./code_sandbox/snaps/js-regexp-methods-03-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -41838,9 +41838,9 @@ try {
 }
 ```
 
-<img alt="js-regexp-methods example 4 source" src="./code_sandbox/snaps/js-regexp-methods-04-code.png" />
+![js-regexp-methods example 4 source](./code_sandbox/snaps/js-regexp-methods-04-code.png)
 
-<img alt="js-regexp-methods example 4 result" src="./code_sandbox/snaps/js-regexp-methods-04-result.png" />
+![js-regexp-methods example 4 result](./code_sandbox/snaps/js-regexp-methods-04-result.png)
 
 - [x] **Outcome:** With ES2025: JSON **`"\\[\\*\\]"`**. Otherwise a **TypeError** / missing-function message.
 
@@ -41857,9 +41857,9 @@ Sandbox: `code_sandbox/js-regexp-methods/exec.html`
 const result = /e/.exec("The best things in life are free!");
 ```
 
-<img alt="js-regexp-methods example 5 source" src="./code_sandbox/snaps/js-regexp-methods-05-code.png" />
+![js-regexp-methods example 5 source](./code_sandbox/snaps/js-regexp-methods-05-code.png)
 
-<img alt="js-regexp-methods example 5 result" src="./code_sandbox/snaps/js-regexp-methods-05-result.png" />
+![js-regexp-methods example 5 result](./code_sandbox/snaps/js-regexp-methods-05-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["e"]**. `index` is **2**.
 
@@ -41876,9 +41876,9 @@ const pattern = /W3Schools/gim;
 let result = pattern.flags;
 ```
 
-<img alt="js-regexp-methods example 6 source" src="./code_sandbox/snaps/js-regexp-methods-06-code.png" />
+![js-regexp-methods example 6 source](./code_sandbox/snaps/js-regexp-methods-06-code.png)
 
-<img alt="js-regexp-methods example 6 result" src="./code_sandbox/snaps/js-regexp-methods-06-result.png" />
+![js-regexp-methods example 6 result](./code_sandbox/snaps/js-regexp-methods-06-result.png)
 
 - [x] **Outcome:** **"gim"** (`g`, `i`, `m` alphabetically in the spec order `dgimsuvy`).
 
@@ -41895,9 +41895,9 @@ const pattern = /W3Schools/g;
 let result = pattern.global;
 ```
 
-<img alt="js-regexp-methods example 7 source" src="./code_sandbox/snaps/js-regexp-methods-07-code.png" />
+![js-regexp-methods example 7 source](./code_sandbox/snaps/js-regexp-methods-07-code.png)
 
-<img alt="js-regexp-methods example 7 result" src="./code_sandbox/snaps/js-regexp-methods-07-result.png" />
+![js-regexp-methods example 7 result](./code_sandbox/snaps/js-regexp-methods-07-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -41914,9 +41914,9 @@ const pattern = /W3Schools/d;
 let result = pattern.hasIndices;
 ```
 
-<img alt="js-regexp-methods example 8 source" src="./code_sandbox/snaps/js-regexp-methods-08-code.png" />
+![js-regexp-methods example 8 source](./code_sandbox/snaps/js-regexp-methods-08-code.png)
 
-<img alt="js-regexp-methods example 8 result" src="./code_sandbox/snaps/js-regexp-methods-08-result.png" />
+![js-regexp-methods example 8 result](./code_sandbox/snaps/js-regexp-methods-08-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -41933,9 +41933,9 @@ const pattern = /W3Schools/i;
 let result = pattern.ignoreCase;
 ```
 
-<img alt="js-regexp-methods example 9 source" src="./code_sandbox/snaps/js-regexp-methods-09-code.png" />
+![js-regexp-methods example 9 source](./code_sandbox/snaps/js-regexp-methods-09-code.png)
 
-<img alt="js-regexp-methods example 9 result" src="./code_sandbox/snaps/js-regexp-methods-09-result.png" />
+![js-regexp-methods example 9 result](./code_sandbox/snaps/js-regexp-methods-09-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -41959,9 +41959,9 @@ const c = pattern.exec(text);
 const li3 = pattern.lastIndex;
 ```
 
-<img alt="js-regexp-methods example 10 source" src="./code_sandbox/snaps/js-regexp-methods-10-code.png" />
+![js-regexp-methods example 10 source](./code_sandbox/snaps/js-regexp-methods-10-code.png)
 
-<img alt="js-regexp-methods example 10 result" src="./code_sandbox/snaps/js-regexp-methods-10-result.png" />
+![js-regexp-methods example 10 result](./code_sandbox/snaps/js-regexp-methods-10-result.png)
 
 - [x] **Outcome:** Match at **5** → `lastIndex` **7**; match at **18** → **20**; then **null** and **`lastIndex` 0**.
 
@@ -41978,9 +41978,9 @@ const pattern = /W3Schools/m;
 let result = pattern.multiline;
 ```
 
-<img alt="js-regexp-methods example 11 source" src="./code_sandbox/snaps/js-regexp-methods-11-code.png" />
+![js-regexp-methods example 11 source](./code_sandbox/snaps/js-regexp-methods-11-code.png)
 
-<img alt="js-regexp-methods example 11 result" src="./code_sandbox/snaps/js-regexp-methods-11-result.png" />
+![js-regexp-methods example 11 result](./code_sandbox/snaps/js-regexp-methods-11-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -41997,9 +41997,9 @@ const pattern = /W3Schools/gi;
 let result = pattern.source;
 ```
 
-<img alt="js-regexp-methods example 12 source" src="./code_sandbox/snaps/js-regexp-methods-12-code.png" />
+![js-regexp-methods example 12 source](./code_sandbox/snaps/js-regexp-methods-12-code.png)
 
-<img alt="js-regexp-methods example 12 result" src="./code_sandbox/snaps/js-regexp-methods-12-result.png" />
+![js-regexp-methods example 12 result](./code_sandbox/snaps/js-regexp-methods-12-result.png)
 
 - [x] **Outcome:** **"W3Schools"** (not `"/W3Schools/gi"`).
 
@@ -42016,9 +42016,9 @@ const pattern = /W3Schools/y;
 let result = pattern.sticky;
 ```
 
-<img alt="js-regexp-methods example 13 source" src="./code_sandbox/snaps/js-regexp-methods-13-code.png" />
+![js-regexp-methods example 13 source](./code_sandbox/snaps/js-regexp-methods-13-code.png)
 
-<img alt="js-regexp-methods example 13 result" src="./code_sandbox/snaps/js-regexp-methods-13-result.png" />
+![js-regexp-methods example 13 result](./code_sandbox/snaps/js-regexp-methods-13-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -42036,9 +42036,9 @@ const pattern = /e/;
 let result = pattern.test("The best things in life are free!");
 ```
 
-<img alt="js-regexp-methods example 14 source" src="./code_sandbox/snaps/js-regexp-methods-14-code.png" />
+![js-regexp-methods example 14 source](./code_sandbox/snaps/js-regexp-methods-14-code.png)
 
-<img alt="js-regexp-methods example 14 result" src="./code_sandbox/snaps/js-regexp-methods-14-result.png" />
+![js-regexp-methods example 14 result](./code_sandbox/snaps/js-regexp-methods-14-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -42055,9 +42055,9 @@ const pattern = /W3Schools/gim;
 let result = pattern.toString();
 ```
 
-<img alt="js-regexp-methods example 15 source" src="./code_sandbox/snaps/js-regexp-methods-15-code.png" />
+![js-regexp-methods example 15 source](./code_sandbox/snaps/js-regexp-methods-15-code.png)
 
-<img alt="js-regexp-methods example 15 result" src="./code_sandbox/snaps/js-regexp-methods-15-result.png" />
+![js-regexp-methods example 15 result](./code_sandbox/snaps/js-regexp-methods-15-result.png)
 
 - [x] **Outcome:** **"/W3Schools/gim"**.
 
@@ -42074,9 +42074,9 @@ const pattern = /\u{04DC0}/u;
 let result = pattern.unicode;
 ```
 
-<img alt="js-regexp-methods example 16 source" src="./code_sandbox/snaps/js-regexp-methods-16-code.png" />
+![js-regexp-methods example 16 source](./code_sandbox/snaps/js-regexp-methods-16-code.png)
 
-<img alt="js-regexp-methods example 16 result" src="./code_sandbox/snaps/js-regexp-methods-16-result.png" />
+![js-regexp-methods example 16 result](./code_sandbox/snaps/js-regexp-methods-16-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -42093,9 +42093,9 @@ const pattern = /\p{Emoji}/v;
 let result = pattern.unicodeSets;
 ```
 
-<img alt="js-regexp-methods example 17 source" src="./code_sandbox/snaps/js-regexp-methods-17-code.png" />
+![js-regexp-methods example 17 source](./code_sandbox/snaps/js-regexp-methods-17-code.png)
 
-<img alt="js-regexp-methods example 17 result" src="./code_sandbox/snaps/js-regexp-methods-17-result.png" />
+![js-regexp-methods example 17 result](./code_sandbox/snaps/js-regexp-methods-17-result.png)
 
 - [x] **Outcome:** **true**.
 
@@ -42115,9 +42115,9 @@ const all = text.match(/a(\d)/g);
 const miss = text.match(/z/);
 ```
 
-<img alt="js-regexp-methods example 18 source" src="./code_sandbox/snaps/js-regexp-methods-18-code.png" />
+![js-regexp-methods example 18 source](./code_sandbox/snaps/js-regexp-methods-18-code.png)
 
-<img alt="js-regexp-methods example 18 result" src="./code_sandbox/snaps/js-regexp-methods-18-result.png" />
+![js-regexp-methods example 18 result](./code_sandbox/snaps/js-regexp-methods-18-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a1","1"]**. `all` is **["a1","a2"]** (groups dropped). `miss` is **null**.
 
@@ -42134,9 +42134,9 @@ const text = "a1 a2";
 const result = [...text.matchAll(/a(\d)/g)].map((m) => [...m]);
 ```
 
-<img alt="js-regexp-methods example 19 source" src="./code_sandbox/snaps/js-regexp-methods-19-code.png" />
+![js-regexp-methods example 19 source](./code_sandbox/snaps/js-regexp-methods-19-code.png)
 
-<img alt="js-regexp-methods example 19 result" src="./code_sandbox/snaps/js-regexp-methods-19-result.png" />
+![js-regexp-methods example 19 result](./code_sandbox/snaps/js-regexp-methods-19-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **[["a1","1"],["a2","2"]]**.
 
@@ -42154,9 +42154,9 @@ let text = "Please visit Microsoft and Microsoft!";
 let result = text.replace(/Microsoft/, "W3Schools");
 ```
 
-<img alt="js-regexp-methods example 20 source" src="./code_sandbox/snaps/js-regexp-methods-20-code.png" />
+![js-regexp-methods example 20 source](./code_sandbox/snaps/js-regexp-methods-20-code.png)
 
-<img alt="js-regexp-methods example 20 result" src="./code_sandbox/snaps/js-regexp-methods-20-result.png" />
+![js-regexp-methods example 20 result](./code_sandbox/snaps/js-regexp-methods-20-result.png)
 
 - [x] **Outcome:** **"Please visit W3Schools and Microsoft!"** (only the first).
 
@@ -42173,9 +42173,9 @@ let text = "a1b2";
 let result = text.replaceAll(/\d/g, "*");
 ```
 
-<img alt="js-regexp-methods example 21 source" src="./code_sandbox/snaps/js-regexp-methods-21-code.png" />
+![js-regexp-methods example 21 source](./code_sandbox/snaps/js-regexp-methods-21-code.png)
 
-<img alt="js-regexp-methods example 21 result" src="./code_sandbox/snaps/js-regexp-methods-21-result.png" />
+![js-regexp-methods example 21 result](./code_sandbox/snaps/js-regexp-methods-21-result.png)
 
 - [x] **Outcome:** **"a*b*"**.
 
@@ -42194,9 +42194,9 @@ const hit = text.search(/W3Schools/);
 const miss = text.search(/z/);
 ```
 
-<img alt="js-regexp-methods example 22 source" src="./code_sandbox/snaps/js-regexp-methods-22-code.png" />
+![js-regexp-methods example 22 source](./code_sandbox/snaps/js-regexp-methods-22-code.png)
 
-<img alt="js-regexp-methods example 22 result" src="./code_sandbox/snaps/js-regexp-methods-22-result.png" />
+![js-regexp-methods example 22 result](./code_sandbox/snaps/js-regexp-methods-22-result.png)
 
 - [x] **Outcome:** `hit` is **6**. `miss` is **-1**.
 
@@ -42212,9 +42212,9 @@ Sandbox: `code_sandbox/js-regexp-methods/split.html`
 let result = "a,b;c".split(/[,;]/);
 ```
 
-<img alt="js-regexp-methods example 23 source" src="./code_sandbox/snaps/js-regexp-methods-23-code.png" />
+![js-regexp-methods example 23 source](./code_sandbox/snaps/js-regexp-methods-23-code.png)
 
-<img alt="js-regexp-methods example 23 result" src="./code_sandbox/snaps/js-regexp-methods-23-result.png" />
+![js-regexp-methods example 23 result](./code_sandbox/snaps/js-regexp-methods-23-result.png)
 
 - [x] **Outcome:** `JSON.stringify(result)` is **["a","b","c"]**.
 
@@ -42236,9 +42236,9 @@ const viaExec = pattern.exec(text);
 const liAfterExec = pattern.lastIndex;
 ```
 
-<img alt="js-regexp-methods example 24 source" src="./code_sandbox/snaps/js-regexp-methods-24-code.png" />
+![js-regexp-methods example 24 source](./code_sandbox/snaps/js-regexp-methods-24-code.png)
 
-<img alt="js-regexp-methods example 24 result" src="./code_sandbox/snaps/js-regexp-methods-24-result.png" />
+![js-regexp-methods example 24 result](./code_sandbox/snaps/js-regexp-methods-24-result.png)
 
 - [x] **Outcome:** `viaMatch` is **["a1","a2"]**, `lastIndex` **0**. Then `exec` is **["a1","1"]**, `lastIndex` **2**.
 
@@ -42452,9 +42452,9 @@ let length = 16;
 let weight = 7.5;
 ```
 
-<img alt="js-data-types example 1 source" src="./code_sandbox/snaps/js-data-types-01-code.png" />
+![js-data-types example 1 source](./code_sandbox/snaps/js-data-types-01-code.png)
 
-<img alt="js-data-types example 1 result" src="./code_sandbox/snaps/js-data-types-01-result.png" />
+![js-data-types example 1 result](./code_sandbox/snaps/js-data-types-01-result.png)
 
 - [x] **Outcome:** length is **16**, weight is **7.5**. typeof length is **"number"**.
 
@@ -42471,9 +42471,9 @@ Sandbox: `code_sandbox/js-data-types/type-bigint-n.html`
 let x = 1234567890123456789012345n;
 ```
 
-<img alt="js-data-types example 2 source" src="./code_sandbox/snaps/js-data-types-02-code.png" />
+![js-data-types example 2 source](./code_sandbox/snaps/js-data-types-02-code.png)
 
-<img alt="js-data-types example 2 result" src="./code_sandbox/snaps/js-data-types-02-result.png" />
+![js-data-types example 2 result](./code_sandbox/snaps/js-data-types-02-result.png)
 
 - [x] **Outcome:** x is **1234567890123456789012345n**. typeof is **"bigint"**.
 
@@ -42491,9 +42491,9 @@ let y = BigInt(1234567890123456789012345);
 let x = 1234567890123456789012345n;
 ```
 
-<img alt="js-data-types example 3 source" src="./code_sandbox/snaps/js-data-types-03-code.png" />
+![js-data-types example 3 source](./code_sandbox/snaps/js-data-types-03-code.png)
 
-<img alt="js-data-types example 3 result" src="./code_sandbox/snaps/js-data-types-03-result.png" />
+![js-data-types example 3 result](./code_sandbox/snaps/js-data-types-03-result.png)
 
 - [x] **Outcome:** y is **1234567890123456824475648n**, not the digits in the source. `x === y` is **false**. Prefer **`n`** or **`BigInt("…")`**.
 
@@ -42510,9 +42510,9 @@ let color = "Yellow";
 let lastName = "Johnson";
 ```
 
-<img alt="js-data-types example 4 source" src="./code_sandbox/snaps/js-data-types-04-code.png" />
+![js-data-types example 4 source](./code_sandbox/snaps/js-data-types-04-code.png)
 
-<img alt="js-data-types example 4 result" src="./code_sandbox/snaps/js-data-types-04-result.png" />
+![js-data-types example 4 result](./code_sandbox/snaps/js-data-types-04-result.png)
 
 - [x] **Outcome:** color is **"Yellow"**, lastName is **"Johnson"**. typeof is **"string"**.
 
@@ -42529,9 +42529,9 @@ let x = true;
 let y = false;
 ```
 
-<img alt="js-data-types example 5 source" src="./code_sandbox/snaps/js-data-types-05-code.png" />
+![js-data-types example 5 source](./code_sandbox/snaps/js-data-types-05-code.png)
 
-<img alt="js-data-types example 5 result" src="./code_sandbox/snaps/js-data-types-05-result.png" />
+![js-data-types example 5 result](./code_sandbox/snaps/js-data-types-05-result.png)
 
 - [x] **Outcome:** x is **true**, y is **false**. typeof is **"boolean"**.
 
@@ -42548,9 +42548,9 @@ let x;
 let y;
 ```
 
-<img alt="js-data-types example 6 source" src="./code_sandbox/snaps/js-data-types-06-code.png" />
+![js-data-types example 6 source](./code_sandbox/snaps/js-data-types-06-code.png)
 
-<img alt="js-data-types example 6 result" src="./code_sandbox/snaps/js-data-types-06-result.png" />
+![js-data-types example 6 result](./code_sandbox/snaps/js-data-types-06-result.png)
 
 - [x] **Outcome:** x is **undefined**. typeof x is **"undefined"**.
 
@@ -42568,9 +42568,9 @@ let x = null;
 let y = null;
 ```
 
-<img alt="js-data-types example 7 source" src="./code_sandbox/snaps/js-data-types-07-code.png" />
+![js-data-types example 7 source](./code_sandbox/snaps/js-data-types-07-code.png)
 
-<img alt="js-data-types example 7 result" src="./code_sandbox/snaps/js-data-types-07-result.png" />
+![js-data-types example 7 result](./code_sandbox/snaps/js-data-types-07-result.png)
 
 - [x] **Outcome:** x is **null**. typeof x is **"object"** (legacy).
 
@@ -42587,9 +42587,9 @@ const x = Symbol();
 const y = Symbol();
 ```
 
-<img alt="js-data-types example 8 source" src="./code_sandbox/snaps/js-data-types-08-code.png" />
+![js-data-types example 8 source](./code_sandbox/snaps/js-data-types-08-code.png)
 
-<img alt="js-data-types example 8 result" src="./code_sandbox/snaps/js-data-types-08-result.png" />
+![js-data-types example 8 result](./code_sandbox/snaps/js-data-types-08-result.png)
 
 - [x] **Outcome:** typeof x is **"symbol"**. `x === y` is **false**.
 
@@ -42605,9 +42605,9 @@ Sandbox: `code_sandbox/js-data-types/type-object.html`
 const person = {firstName:"John", lastName:"Doe"};
 ```
 
-<img alt="js-data-types example 9 source" src="./code_sandbox/snaps/js-data-types-09-code.png" />
+![js-data-types example 9 source](./code_sandbox/snaps/js-data-types-09-code.png)
 
-<img alt="js-data-types example 9 result" src="./code_sandbox/snaps/js-data-types-09-result.png" />
+![js-data-types example 9 result](./code_sandbox/snaps/js-data-types-09-result.png)
 
 - [x] **Outcome:** firstName is **"John"**. typeof is **"object"**. String(person) is **[object Object]**.
 
@@ -42623,9 +42623,9 @@ Sandbox: `code_sandbox/js-data-types/add-number-string.html`
 let x = 16 + "Volvo";
 ```
 
-<img alt="js-data-types example 10 source" src="./code_sandbox/snaps/js-data-types-10-code.png" />
+![js-data-types example 10 source](./code_sandbox/snaps/js-data-types-10-code.png)
 
-<img alt="js-data-types example 10 result" src="./code_sandbox/snaps/js-data-types-10-result.png" />
+![js-data-types example 10 result](./code_sandbox/snaps/js-data-types-10-result.png)
 
 - [x] **Outcome:** x is **"16Volvo"**. typeof is **"string"**.
 
@@ -42641,9 +42641,9 @@ Sandbox: `code_sandbox/js-data-types/add-string-number.html`
 let x = "Volvo" + 16;
 ```
 
-<img alt="js-data-types example 11 source" src="./code_sandbox/snaps/js-data-types-11-code.png" />
+![js-data-types example 11 source](./code_sandbox/snaps/js-data-types-11-code.png)
 
-<img alt="js-data-types example 11 result" src="./code_sandbox/snaps/js-data-types-11-result.png" />
+![js-data-types example 11 result](./code_sandbox/snaps/js-data-types-11-result.png)
 
 - [x] **Outcome:** x is **"Volvo16"**.
 
@@ -42659,9 +42659,9 @@ Sandbox: `code_sandbox/js-data-types/add-left-numbers-then-string.html`
 let x = 16 + 4 + "Volvo";
 ```
 
-<img alt="js-data-types example 12 source" src="./code_sandbox/snaps/js-data-types-12-code.png" />
+![js-data-types example 12 source](./code_sandbox/snaps/js-data-types-12-code.png)
 
-<img alt="js-data-types example 12 result" src="./code_sandbox/snaps/js-data-types-12-result.png" />
+![js-data-types example 12 result](./code_sandbox/snaps/js-data-types-12-result.png)
 
 - [x] **Outcome:** x is **"20Volvo"**.
 
@@ -42677,9 +42677,9 @@ Sandbox: `code_sandbox/js-data-types/add-string-then-numbers.html`
 let x = "Volvo" + 16 + 4;
 ```
 
-<img alt="js-data-types example 13 source" src="./code_sandbox/snaps/js-data-types-13-code.png" />
+![js-data-types example 13 source](./code_sandbox/snaps/js-data-types-13-code.png)
 
-<img alt="js-data-types example 13 result" src="./code_sandbox/snaps/js-data-types-13-result.png" />
+![js-data-types example 13 result](./code_sandbox/snaps/js-data-types-13-result.png)
 
 - [x] **Outcome:** x is **"Volvo164"** (not Volvo20).
 
@@ -42697,9 +42697,9 @@ x = 5;          // Number
 x = "John";     // String
 ```
 
-<img alt="js-data-types example 14 source" src="./code_sandbox/snaps/js-data-types-14-code.png" />
+![js-data-types example 14 source](./code_sandbox/snaps/js-data-types-14-code.png)
 
-<img alt="js-data-types example 14 result" src="./code_sandbox/snaps/js-data-types-14-result.png" />
+![js-data-types example 14 result](./code_sandbox/snaps/js-data-types-14-result.png)
 
 - [x] **Outcome:** After the last assignment, x is **"John"** and typeof is **"string"**.
 
@@ -42717,9 +42717,9 @@ typeof "John";
 typeof "John Doe";
 ```
 
-<img alt="js-data-types example 15 source" src="./code_sandbox/snaps/js-data-types-15-code.png" />
+![js-data-types example 15 source](./code_sandbox/snaps/js-data-types-15-code.png)
 
-<img alt="js-data-types example 15 result" src="./code_sandbox/snaps/js-data-types-15-result.png" />
+![js-data-types example 15 result](./code_sandbox/snaps/js-data-types-15-result.png)
 
 - [x] **Outcome:** All three are **"string"**.
 
@@ -42739,9 +42739,9 @@ typeof (3);
 typeof (3 + 4);
 ```
 
-<img alt="js-data-types example 16 source" src="./code_sandbox/snaps/js-data-types-16-code.png" />
+![js-data-types example 16 source](./code_sandbox/snaps/js-data-types-16-code.png)
 
-<img alt="js-data-types example 16 result" src="./code_sandbox/snaps/js-data-types-16-result.png" />
+![js-data-types example 16 result](./code_sandbox/snaps/js-data-types-16-result.png)
 
 - [x] **Outcome:** All five are **"number"**. `(3 + 4)` is **7**, still a number.
 
@@ -42758,9 +42758,9 @@ Sandbox: `code_sandbox/js-data-types/obj-array.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-data-types example 17 source" src="./code_sandbox/snaps/js-data-types-17-code.png" />
+![js-data-types example 17 source](./code_sandbox/snaps/js-data-types-17-code.png)
 
-<img alt="js-data-types example 17 result" src="./code_sandbox/snaps/js-data-types-17-result.png" />
+![js-data-types example 17 result](./code_sandbox/snaps/js-data-types-17-result.png)
 
 - [x] **Outcome:** Print is **Saab,Volvo,BMW**. cars[0] is **"Saab"**. typeof is **"object"**. `Array.isArray` is **true**.
 
@@ -42777,9 +42777,9 @@ const m = new Map([["apples", 500], ["bananas", 300]]);
 let n = m.get("apples");
 ```
 
-<img alt="js-data-types example 18 source" src="./code_sandbox/snaps/js-data-types-18-code.png" />
+![js-data-types example 18 source](./code_sandbox/snaps/js-data-types-18-code.png)
 
-<img alt="js-data-types example 18 result" src="./code_sandbox/snaps/js-data-types-18-result.png" />
+![js-data-types example 18 result](./code_sandbox/snaps/js-data-types-18-result.png)
 
 - [x] **Outcome:** get("apples") is **500**. size is **2**. typeof is **"object"**.
 
@@ -42796,9 +42796,9 @@ const s = new Set(["A", "B", "A"]);
 let n = s.size;
 ```
 
-<img alt="js-data-types example 19 source" src="./code_sandbox/snaps/js-data-types-19-code.png" />
+![js-data-types example 19 source](./code_sandbox/snaps/js-data-types-19-code.png)
 
-<img alt="js-data-types example 19 result" src="./code_sandbox/snaps/js-data-types-19-result.png" />
+![js-data-types example 19 result](./code_sandbox/snaps/js-data-types-19-result.png)
 
 - [x] **Outcome:** size is **2** (the second **"A"** was ignored). `has("A")` is **true**. typeof is **"object"**.
 
@@ -42817,9 +42817,9 @@ const wm = new WeakMap();
 wm.set(key, "secret");
 ```
 
-<img alt="js-data-types example 20 source" src="./code_sandbox/snaps/js-data-types-20-code.png" />
+![js-data-types example 20 source](./code_sandbox/snaps/js-data-types-20-code.png)
 
-<img alt="js-data-types example 20 result" src="./code_sandbox/snaps/js-data-types-20-result.png" />
+![js-data-types example 20 result](./code_sandbox/snaps/js-data-types-20-result.png)
 
 - [x] **Outcome:** get(key) is **"secret"**. has(key) is **true**. String(wm) is **[object WeakMap]**.
 
@@ -42837,9 +42837,9 @@ const ws = new WeakSet();
 ws.add(item);
 ```
 
-<img alt="js-data-types example 21 source" src="./code_sandbox/snaps/js-data-types-21-code.png" />
+![js-data-types example 21 source](./code_sandbox/snaps/js-data-types-21-code.png)
 
-<img alt="js-data-types example 21 result" src="./code_sandbox/snaps/js-data-types-21-result.png" />
+![js-data-types example 21 result](./code_sandbox/snaps/js-data-types-21-result.png)
 
 - [x] **Outcome:** has(item) is **true**. String(ws) is **[object WeakSet]**.
 
@@ -42857,9 +42857,9 @@ let pi = Math.PI;
 let abs = Math.abs(-3);
 ```
 
-<img alt="js-data-types example 22 source" src="./code_sandbox/snaps/js-data-types-22-code.png" />
+![js-data-types example 22 source](./code_sandbox/snaps/js-data-types-22-code.png)
 
-<img alt="js-data-types example 22 result" src="./code_sandbox/snaps/js-data-types-22-result.png" />
+![js-data-types example 22 result](./code_sandbox/snaps/js-data-types-22-result.png)
 
 - [x] **Outcome:** Math.PI is **3.141592653589793**. abs(-3) is **3**. typeof Math is **"object"**.
 
@@ -42876,9 +42876,9 @@ Sandbox: `code_sandbox/js-data-types/obj-date.html`
 const date = new Date("2022-03-25");
 ```
 
-<img alt="js-data-types example 23 source" src="./code_sandbox/snaps/js-data-types-23-code.png" />
+![js-data-types example 23 source](./code_sandbox/snaps/js-data-types-23-code.png)
 
-<img alt="js-data-types example 23 result" src="./code_sandbox/snaps/js-data-types-23-result.png" />
+![js-data-types example 23 result](./code_sandbox/snaps/js-data-types-23-result.png)
 
 - [x] **Outcome:** ISO is **2022-03-25T00:00:00.000Z**. Local print is **Thu Mar 24 2022 18:00:00 GMT-0600**. typeof is **"object"**.
 
@@ -42895,9 +42895,9 @@ const pat = /w3/i;
 let ok = pat.test("W3Schools");
 ```
 
-<img alt="js-data-types example 24 source" src="./code_sandbox/snaps/js-data-types-24-code.png" />
+![js-data-types example 24 source](./code_sandbox/snaps/js-data-types-24-code.png)
 
-<img alt="js-data-types example 24 result" src="./code_sandbox/snaps/js-data-types-24-result.png" />
+![js-data-types example 24 result](./code_sandbox/snaps/js-data-types-24-result.png)
 
 - [x] **Outcome:** String(pat) is **/w3/i**. test("W3Schools") is **true**. typeof is **"object"**.
 
@@ -42913,9 +42913,9 @@ Sandbox: `code_sandbox/js-data-types/obj-error.html`
 const err = new Error("Oops");
 ```
 
-<img alt="js-data-types example 25 source" src="./code_sandbox/snaps/js-data-types-25-code.png" />
+![js-data-types example 25 source](./code_sandbox/snaps/js-data-types-25-code.png)
 
-<img alt="js-data-types example 25 result" src="./code_sandbox/snaps/js-data-types-25-result.png" />
+![js-data-types example 25 result](./code_sandbox/snaps/js-data-types-25-result.png)
 
 - [x] **Outcome:** name is **"Error"**. message is **"Oops"**. String(err) is **"Error: Oops"**.
 
@@ -42933,9 +42933,9 @@ let text = JSON.stringify(obj);
 let back = JSON.parse(text);
 ```
 
-<img alt="js-data-types example 26 source" src="./code_sandbox/snaps/js-data-types-26-code.png" />
+![js-data-types example 26 source](./code_sandbox/snaps/js-data-types-26-code.png)
 
-<img alt="js-data-types example 26 result" src="./code_sandbox/snaps/js-data-types-26-result.png" />
+![js-data-types example 26 result](./code_sandbox/snaps/js-data-types-26-result.png)
 
 - [x] **Outcome:** stringify is **{"name":"John"}**. back.name is **"John"**. typeof JSON is **"object"**.
 
@@ -42952,9 +42952,9 @@ Sandbox: `code_sandbox/js-data-types/obj-promise.html`
 const p = Promise.resolve("ok");
 ```
 
-<img alt="js-data-types example 27 source" src="./code_sandbox/snaps/js-data-types-27-code.png" />
+![js-data-types example 27 source](./code_sandbox/snaps/js-data-types-27-code.png)
 
-<img alt="js-data-types example 27 result" src="./code_sandbox/snaps/js-data-types-27-result.png" />
+![js-data-types example 27 result](./code_sandbox/snaps/js-data-types-27-result.png)
 
 - [x] **Outcome:** typeof is **"object"**. instanceof Promise is **true**. String(p) is **[object Promise]**.
 
@@ -42970,9 +42970,9 @@ Sandbox: `code_sandbox/js-data-types/obj-int8array.html`
 const a = new Int8Array([1, 2, 3]);
 ```
 
-<img alt="js-data-types example 28 source" src="./code_sandbox/snaps/js-data-types-28-code.png" />
+![js-data-types example 28 source](./code_sandbox/snaps/js-data-types-28-code.png)
 
-<img alt="js-data-types example 28 result" src="./code_sandbox/snaps/js-data-types-28-result.png" />
+![js-data-types example 28 result](./code_sandbox/snaps/js-data-types-28-result.png)
 
 - [x] **Outcome:** Print is **1,2,3**. length **3**. BYTES_PER_ELEMENT **1**.
 
@@ -42988,9 +42988,9 @@ Sandbox: `code_sandbox/js-data-types/obj-int16array.html`
 const a = new Int16Array([1, 2, 3]);
 ```
 
-<img alt="js-data-types example 29 source" src="./code_sandbox/snaps/js-data-types-29-code.png" />
+![js-data-types example 29 source](./code_sandbox/snaps/js-data-types-29-code.png)
 
-<img alt="js-data-types example 29 result" src="./code_sandbox/snaps/js-data-types-29-result.png" />
+![js-data-types example 29 result](./code_sandbox/snaps/js-data-types-29-result.png)
 
 - [x] **Outcome:** Print is **1,2,3**. BYTES_PER_ELEMENT **2**.
 
@@ -43006,9 +43006,9 @@ Sandbox: `code_sandbox/js-data-types/obj-int32array.html`
 const a = new Int32Array([1, 2, 3]);
 ```
 
-<img alt="js-data-types example 30 source" src="./code_sandbox/snaps/js-data-types-30-code.png" />
+![js-data-types example 30 source](./code_sandbox/snaps/js-data-types-30-code.png)
 
-<img alt="js-data-types example 30 result" src="./code_sandbox/snaps/js-data-types-30-result.png" />
+![js-data-types example 30 result](./code_sandbox/snaps/js-data-types-30-result.png)
 
 - [x] **Outcome:** Print is **1,2,3**. BYTES_PER_ELEMENT **4**.
 
@@ -43025,9 +43025,9 @@ Sandbox: `code_sandbox/js-data-types/obj-float16array.html`
 const a = new Float16Array([1.5, 2]);
 ```
 
-<img alt="js-data-types example 31 source" src="./code_sandbox/snaps/js-data-types-31-code.png" />
+![js-data-types example 31 source](./code_sandbox/snaps/js-data-types-31-code.png)
 
-<img alt="js-data-types example 31 result" src="./code_sandbox/snaps/js-data-types-31-result.png" />
+![js-data-types example 31 result](./code_sandbox/snaps/js-data-types-31-result.png)
 
 - [x] **Outcome:** Print is **1.5,2**. constructor.name is **Float16Array**. typeof Float16Array is **"function"**.
 
@@ -43043,9 +43043,9 @@ Sandbox: `code_sandbox/js-data-types/obj-float32array.html`
 const a = new Float32Array([1.5, 2]);
 ```
 
-<img alt="js-data-types example 32 source" src="./code_sandbox/snaps/js-data-types-32-code.png" />
+![js-data-types example 32 source](./code_sandbox/snaps/js-data-types-32-code.png)
 
-<img alt="js-data-types example 32 result" src="./code_sandbox/snaps/js-data-types-32-result.png" />
+![js-data-types example 32 result](./code_sandbox/snaps/js-data-types-32-result.png)
 
 - [x] **Outcome:** Print is **1.5,2**. BYTES_PER_ELEMENT **4**.
 
@@ -43061,9 +43061,9 @@ Sandbox: `code_sandbox/js-data-types/obj-float64array.html`
 const a = new Float64Array([1.5, 2]);
 ```
 
-<img alt="js-data-types example 33 source" src="./code_sandbox/snaps/js-data-types-33-code.png" />
+![js-data-types example 33 source](./code_sandbox/snaps/js-data-types-33-code.png)
 
-<img alt="js-data-types example 33 result" src="./code_sandbox/snaps/js-data-types-33-result.png" />
+![js-data-types example 33 result](./code_sandbox/snaps/js-data-types-33-result.png)
 
 - [x] **Outcome:** Print is **1.5,2**. BYTES_PER_ELEMENT **8**.
 
@@ -43079,9 +43079,9 @@ Sandbox: `code_sandbox/js-data-types/obj-bigint64array.html`
 const a = new BigInt64Array([10n, 20n]);
 ```
 
-<img alt="js-data-types example 34 source" src="./code_sandbox/snaps/js-data-types-34-code.png" />
+![js-data-types example 34 source](./code_sandbox/snaps/js-data-types-34-code.png)
 
-<img alt="js-data-types example 34 result" src="./code_sandbox/snaps/js-data-types-34-result.png" />
+![js-data-types example 34 result](./code_sandbox/snaps/js-data-types-34-result.png)
 
 - [x] **Outcome:** Print is **10,20**. a[0] is **10n**. typeof a[0] is **"bigint"**.
 
@@ -43275,9 +43275,9 @@ let carName1 = "Volvo XC60";
 let carName2 = 'Volvo XC60';
 ```
 
-<img alt="js-primitive-data example 1 source" src="./code_sandbox/snaps/js-primitive-data-01-code.png" />
+![js-primitive-data example 1 source](./code_sandbox/snaps/js-primitive-data-01-code.png)
 
-<img alt="js-primitive-data example 1 result" src="./code_sandbox/snaps/js-primitive-data-01-result.png" />
+![js-primitive-data example 1 result](./code_sandbox/snaps/js-primitive-data-01-result.png)
 
 - [x] **Outcome:** Both are **"Volvo XC60"**. They **===** each other.
 
@@ -43295,9 +43295,9 @@ let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
 ```
 
-<img alt="js-primitive-data example 2 source" src="./code_sandbox/snaps/js-primitive-data-02-code.png" />
+![js-primitive-data example 2 source](./code_sandbox/snaps/js-primitive-data-02-code.png)
 
-<img alt="js-primitive-data example 2 result" src="./code_sandbox/snaps/js-primitive-data-02-result.png" />
+![js-primitive-data example 2 result](./code_sandbox/snaps/js-primitive-data-02-result.png)
 
 - [x] **Outcome:** answer1 is **"It's alright"**. answer2 is **"He is called 'Johnny'"**. answer3 is **"He is called \"Johnny\""**.
 
@@ -43314,9 +43314,9 @@ let x1 = 34.00;
 let x2 = 34;
 ```
 
-<img alt="js-primitive-data example 3 source" src="./code_sandbox/snaps/js-primitive-data-03-code.png" />
+![js-primitive-data example 3 source](./code_sandbox/snaps/js-primitive-data-03-code.png)
 
-<img alt="js-primitive-data example 3 result" src="./code_sandbox/snaps/js-primitive-data-03-result.png" />
+![js-primitive-data example 3 result](./code_sandbox/snaps/js-primitive-data-03-result.png)
 
 - [x] **Outcome:** Both are **34**. `x1 === x2` is **true**. typeof is **"number"**.
 
@@ -43333,9 +43333,9 @@ let y = 123e5;
 let z = 123e-5;
 ```
 
-<img alt="js-primitive-data example 4 source" src="./code_sandbox/snaps/js-primitive-data-04-code.png" />
+![js-primitive-data example 4 source](./code_sandbox/snaps/js-primitive-data-04-code.png)
 
-<img alt="js-primitive-data example 4 result" src="./code_sandbox/snaps/js-primitive-data-04-result.png" />
+![js-primitive-data example 4 result](./code_sandbox/snaps/js-primitive-data-04-result.png)
 
 - [x] **Outcome:** y is **12300000**. z is **0.00123**.
 
@@ -43351,9 +43351,9 @@ Sandbox: `code_sandbox/js-primitive-data/bigint-from-string.html`
 let x = BigInt("123456789012345678901234567890");
 ```
 
-<img alt="js-primitive-data example 5 source" src="./code_sandbox/snaps/js-primitive-data-05-code.png" />
+![js-primitive-data example 5 source](./code_sandbox/snaps/js-primitive-data-05-code.png)
 
-<img alt="js-primitive-data example 5 result" src="./code_sandbox/snaps/js-primitive-data-05-result.png" />
+![js-primitive-data example 5 result](./code_sandbox/snaps/js-primitive-data-05-result.png)
 
 - [x] **Outcome:** x is **123456789012345678901234567890n**. typeof is **"bigint"**.
 
@@ -43369,9 +43369,9 @@ Sandbox: `code_sandbox/js-primitive-data/bigint-mix-typeerror.html`
 1n + 1;
 ```
 
-<img alt="js-primitive-data example 6 source" src="./code_sandbox/snaps/js-primitive-data-06-code.png" />
+![js-primitive-data example 6 source](./code_sandbox/snaps/js-primitive-data-06-code.png)
 
-<img alt="js-primitive-data example 6 result" src="./code_sandbox/snaps/js-primitive-data-06-result.png" />
+![js-primitive-data example 6 result](./code_sandbox/snaps/js-primitive-data-06-result.png)
 
 - [x] **Outcome:** **TypeError: Cannot mix BigInt and other types, use explicit conversions**.
 
@@ -43389,9 +43389,9 @@ let y = 5;
 let z = 6;
 ```
 
-<img alt="js-primitive-data example 7 source" src="./code_sandbox/snaps/js-primitive-data-07-code.png" />
+![js-primitive-data example 7 source](./code_sandbox/snaps/js-primitive-data-07-code.png)
 
-<img alt="js-primitive-data example 7 result" src="./code_sandbox/snaps/js-primitive-data-07-result.png" />
+![js-primitive-data example 7 result](./code_sandbox/snaps/js-primitive-data-07-result.png)
 
 - [x] **Outcome:** `x == y` is **true**. `x == z` is **false**.
 
@@ -43409,9 +43409,9 @@ typeof "John";
 typeof "John Doe";
 ```
 
-<img alt="js-primitive-data example 8 source" src="./code_sandbox/snaps/js-primitive-data-08-code.png" />
+![js-primitive-data example 8 source](./code_sandbox/snaps/js-primitive-data-08-code.png)
 
-<img alt="js-primitive-data example 8 result" src="./code_sandbox/snaps/js-primitive-data-08-result.png" />
+![js-primitive-data example 8 result](./code_sandbox/snaps/js-primitive-data-08-result.png)
 
 - [x] **Outcome:** All three are **"string"**.
 
@@ -43431,9 +43431,9 @@ typeof (3);
 typeof (3 + 4);
 ```
 
-<img alt="js-primitive-data example 9 source" src="./code_sandbox/snaps/js-primitive-data-09-code.png" />
+![js-primitive-data example 9 source](./code_sandbox/snaps/js-primitive-data-09-code.png)
 
-<img alt="js-primitive-data example 9 result" src="./code_sandbox/snaps/js-primitive-data-09-result.png" />
+![js-primitive-data example 9 result](./code_sandbox/snaps/js-primitive-data-09-result.png)
 
 - [x] **Outcome:** All five are **"number"**.
 
@@ -43449,9 +43449,9 @@ Sandbox: `code_sandbox/js-primitive-data/undefined-declared.html`
 let car;
 ```
 
-<img alt="js-primitive-data example 10 source" src="./code_sandbox/snaps/js-primitive-data-10-code.png" />
+![js-primitive-data example 10 source](./code_sandbox/snaps/js-primitive-data-10-code.png)
 
-<img alt="js-primitive-data example 10 result" src="./code_sandbox/snaps/js-primitive-data-10-result.png" />
+![js-primitive-data example 10 result](./code_sandbox/snaps/js-primitive-data-10-result.png)
 
 - [x] **Outcome:** car is **undefined**. typeof is **"undefined"**.
 
@@ -43468,9 +43468,9 @@ let car = "Volvo";
 car = undefined;
 ```
 
-<img alt="js-primitive-data example 11 source" src="./code_sandbox/snaps/js-primitive-data-11-code.png" />
+![js-primitive-data example 11 source](./code_sandbox/snaps/js-primitive-data-11-code.png)
 
-<img alt="js-primitive-data example 11 result" src="./code_sandbox/snaps/js-primitive-data-11-result.png" />
+![js-primitive-data example 11 result](./code_sandbox/snaps/js-primitive-data-11-result.png)
 
 - [x] **Outcome:** After the assignment, car is **undefined** and typeof is **"undefined"**.
 
@@ -43486,9 +43486,9 @@ Sandbox: `code_sandbox/js-primitive-data/empty-string.html`
 let car = "";
 ```
 
-<img alt="js-primitive-data example 12 source" src="./code_sandbox/snaps/js-primitive-data-12-code.png" />
+![js-primitive-data example 12 source](./code_sandbox/snaps/js-primitive-data-12-code.png)
 
-<img alt="js-primitive-data example 12 result" src="./code_sandbox/snaps/js-primitive-data-12-result.png" />
+![js-primitive-data example 12 result](./code_sandbox/snaps/js-primitive-data-12-result.png)
 
 - [x] **Outcome:** value is **""**. typeof is **"string"** (JSON.stringify shows the quotes).
 
@@ -43504,9 +43504,9 @@ Sandbox: `code_sandbox/js-primitive-data/null-assign.html`
 let carName = null;
 ```
 
-<img alt="js-primitive-data example 13 source" src="./code_sandbox/snaps/js-primitive-data-13-code.png" />
+![js-primitive-data example 13 source](./code_sandbox/snaps/js-primitive-data-13-code.png)
 
-<img alt="js-primitive-data example 13 result" src="./code_sandbox/snaps/js-primitive-data-13-result.png" />
+![js-primitive-data example 13 result](./code_sandbox/snaps/js-primitive-data-13-result.png)
 
 - [x] **Outcome:** carName is **null**. typeof is **"object"** (legacy quirk — **null is still a primitive**).
 
@@ -43523,9 +43523,9 @@ Sandbox: `code_sandbox/js-primitive-data/null-typeof-object.html`
 typeof null;
 ```
 
-<img alt="js-primitive-data example 14 source" src="./code_sandbox/snaps/js-primitive-data-14-code.png" />
+![js-primitive-data example 14 source](./code_sandbox/snaps/js-primitive-data-14-code.png)
 
-<img alt="js-primitive-data example 14 result" src="./code_sandbox/snaps/js-primitive-data-14-result.png" />
+![js-primitive-data example 14 result](./code_sandbox/snaps/js-primitive-data-14-result.png)
 
 - [x] **Outcome:** typeof null is **"object"**.
 
@@ -43544,9 +43544,9 @@ null === undefined;
 null == undefined;
 ```
 
-<img alt="js-primitive-data example 15 source" src="./code_sandbox/snaps/js-primitive-data-15-code.png" />
+![js-primitive-data example 15 source](./code_sandbox/snaps/js-primitive-data-15-code.png)
 
-<img alt="js-primitive-data example 15 result" src="./code_sandbox/snaps/js-primitive-data-15-result.png" />
+![js-primitive-data example 15 result](./code_sandbox/snaps/js-primitive-data-15-result.png)
 
 - [x] **Outcome:** `null === null` is **true**. `null === undefined` is **false**. `null == undefined` is **true**.
 
@@ -43744,9 +43744,9 @@ Sandbox: `code_sandbox/js-object-types/person-object.html`
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 ```
 
-<img alt="js-object-types example 1 source" src="./code_sandbox/snaps/js-object-types-01-code.png" />
+![js-object-types example 1 source](./code_sandbox/snaps/js-object-types-01-code.png)
 
-<img alt="js-object-types example 1 result" src="./code_sandbox/snaps/js-object-types-01-result.png" />
+![js-object-types example 1 result](./code_sandbox/snaps/js-object-types-01-result.png)
 
 - [x] **Outcome:** firstName is **"John"**, age is **50**. typeof is **"object"**.
 
@@ -43762,9 +43762,9 @@ Sandbox: `code_sandbox/js-object-types/array-tryit.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-object-types example 2 source" src="./code_sandbox/snaps/js-object-types-02-code.png" />
+![js-object-types example 2 source](./code_sandbox/snaps/js-object-types-02-code.png)
 
-<img alt="js-object-types example 2 result" src="./code_sandbox/snaps/js-object-types-02-result.png" />
+![js-object-types example 2 result](./code_sandbox/snaps/js-object-types-02-result.png)
 
 - [x] **Outcome:** [0] **"Saab"**, [1] **"Volvo"**, [2] **"BMW"**. length **3**.
 
@@ -43782,9 +43782,9 @@ typeof "John";
 typeof "John Doe";
 ```
 
-<img alt="js-object-types example 3 source" src="./code_sandbox/snaps/js-object-types-03-code.png" />
+![js-object-types example 3 source](./code_sandbox/snaps/js-object-types-03-code.png)
 
-<img alt="js-object-types example 3 result" src="./code_sandbox/snaps/js-object-types-03-result.png" />
+![js-object-types example 3 result](./code_sandbox/snaps/js-object-types-03-result.png)
 
 - [x] **Outcome:** All three are **"string"**.
 
@@ -43804,9 +43804,9 @@ typeof (3);
 typeof (3 + 4);
 ```
 
-<img alt="js-object-types example 4 source" src="./code_sandbox/snaps/js-object-types-04-code.png" />
+![js-object-types example 4 source](./code_sandbox/snaps/js-object-types-04-code.png)
 
-<img alt="js-object-types example 4 result" src="./code_sandbox/snaps/js-object-types-04-result.png" />
+![js-object-types example 4 result](./code_sandbox/snaps/js-object-types-04-result.png)
 
 - [x] **Outcome:** All five are **"number"**.
 
@@ -43822,9 +43822,9 @@ Sandbox: `code_sandbox/js-object-types/math-not-constructor.html`
 new Math();
 ```
 
-<img alt="js-object-types example 5 source" src="./code_sandbox/snaps/js-object-types-05-code.png" />
+![js-object-types example 5 source](./code_sandbox/snaps/js-object-types-05-code.png)
 
-<img alt="js-object-types example 5 result" src="./code_sandbox/snaps/js-object-types-05-result.png" />
+![js-object-types example 5 result](./code_sandbox/snaps/js-object-types-05-result.png)
 
 - [x] **Outcome:** **TypeError: Math is not a constructor**.
 
@@ -43841,9 +43841,9 @@ Sandbox: `code_sandbox/js-object-types/obj-array.html`
 const cars = ["Saab", "Volvo", "BMW"];
 ```
 
-<img alt="js-object-types example 6 source" src="./code_sandbox/snaps/js-object-types-06-code.png" />
+![js-object-types example 6 source](./code_sandbox/snaps/js-object-types-06-code.png)
 
-<img alt="js-object-types example 6 result" src="./code_sandbox/snaps/js-object-types-06-result.png" />
+![js-object-types example 6 result](./code_sandbox/snaps/js-object-types-06-result.png)
 
 - [x] **Outcome:** Print is **Saab,Volvo,BMW**. cars[0] is **"Saab"**. typeof is **"object"**. `Array.isArray` is **true**.
 
@@ -43860,9 +43860,9 @@ const m = new Map([["apples", 500], ["bananas", 300]]);
 let n = m.get("apples");
 ```
 
-<img alt="js-object-types example 7 source" src="./code_sandbox/snaps/js-object-types-07-code.png" />
+![js-object-types example 7 source](./code_sandbox/snaps/js-object-types-07-code.png)
 
-<img alt="js-object-types example 7 result" src="./code_sandbox/snaps/js-object-types-07-result.png" />
+![js-object-types example 7 result](./code_sandbox/snaps/js-object-types-07-result.png)
 
 - [x] **Outcome:** get("apples") is **500**. size is **2**. typeof is **"object"**.
 
@@ -43879,9 +43879,9 @@ const s = new Set(["A", "B", "A"]);
 let n = s.size;
 ```
 
-<img alt="js-object-types example 8 source" src="./code_sandbox/snaps/js-object-types-08-code.png" />
+![js-object-types example 8 source](./code_sandbox/snaps/js-object-types-08-code.png)
 
-<img alt="js-object-types example 8 result" src="./code_sandbox/snaps/js-object-types-08-result.png" />
+![js-object-types example 8 result](./code_sandbox/snaps/js-object-types-08-result.png)
 
 - [x] **Outcome:** size is **2** (the second **"A"** was ignored). `has("A")` is **true**. typeof is **"object"**.
 
@@ -43900,9 +43900,9 @@ const wm = new WeakMap();
 wm.set(key, "secret");
 ```
 
-<img alt="js-object-types example 9 source" src="./code_sandbox/snaps/js-object-types-09-code.png" />
+![js-object-types example 9 source](./code_sandbox/snaps/js-object-types-09-code.png)
 
-<img alt="js-object-types example 9 result" src="./code_sandbox/snaps/js-object-types-09-result.png" />
+![js-object-types example 9 result](./code_sandbox/snaps/js-object-types-09-result.png)
 
 - [x] **Outcome:** get(key) is **"secret"**. has(key) is **true**. String(wm) is **[object WeakMap]**.
 
@@ -43920,9 +43920,9 @@ const ws = new WeakSet();
 ws.add(item);
 ```
 
-<img alt="js-object-types example 10 source" src="./code_sandbox/snaps/js-object-types-10-code.png" />
+![js-object-types example 10 source](./code_sandbox/snaps/js-object-types-10-code.png)
 
-<img alt="js-object-types example 10 result" src="./code_sandbox/snaps/js-object-types-10-result.png" />
+![js-object-types example 10 result](./code_sandbox/snaps/js-object-types-10-result.png)
 
 - [x] **Outcome:** has(item) is **true**. String(ws) is **[object WeakSet]**.
 
@@ -43940,9 +43940,9 @@ let pi = Math.PI;
 let abs = Math.abs(-3);
 ```
 
-<img alt="js-object-types example 11 source" src="./code_sandbox/snaps/js-object-types-11-code.png" />
+![js-object-types example 11 source](./code_sandbox/snaps/js-object-types-11-code.png)
 
-<img alt="js-object-types example 11 result" src="./code_sandbox/snaps/js-object-types-11-result.png" />
+![js-object-types example 11 result](./code_sandbox/snaps/js-object-types-11-result.png)
 
 - [x] **Outcome:** Math.PI is **3.141592653589793**. abs(-3) is **3**. typeof Math is **"object"**.
 
@@ -43959,9 +43959,9 @@ Sandbox: `code_sandbox/js-object-types/obj-date.html`
 const date = new Date("2022-03-25");
 ```
 
-<img alt="js-object-types example 12 source" src="./code_sandbox/snaps/js-object-types-12-code.png" />
+![js-object-types example 12 source](./code_sandbox/snaps/js-object-types-12-code.png)
 
-<img alt="js-object-types example 12 result" src="./code_sandbox/snaps/js-object-types-12-result.png" />
+![js-object-types example 12 result](./code_sandbox/snaps/js-object-types-12-result.png)
 
 - [x] **Outcome:** ISO is **2022-03-25T00:00:00.000Z**. Local print is **Thu Mar 24 2022 18:00:00 GMT-0600**. typeof is **"object"**.
 
@@ -43978,9 +43978,9 @@ const pat = /w3/i;
 let ok = pat.test("W3Schools");
 ```
 
-<img alt="js-object-types example 13 source" src="./code_sandbox/snaps/js-object-types-13-code.png" />
+![js-object-types example 13 source](./code_sandbox/snaps/js-object-types-13-code.png)
 
-<img alt="js-object-types example 13 result" src="./code_sandbox/snaps/js-object-types-13-result.png" />
+![js-object-types example 13 result](./code_sandbox/snaps/js-object-types-13-result.png)
 
 - [x] **Outcome:** String(pat) is **/w3/i**. test("W3Schools") is **true**. typeof is **"object"**.
 
@@ -43996,9 +43996,9 @@ Sandbox: `code_sandbox/js-object-types/obj-error.html`
 const err = new Error("Oops");
 ```
 
-<img alt="js-object-types example 14 source" src="./code_sandbox/snaps/js-object-types-14-code.png" />
+![js-object-types example 14 source](./code_sandbox/snaps/js-object-types-14-code.png)
 
-<img alt="js-object-types example 14 result" src="./code_sandbox/snaps/js-object-types-14-result.png" />
+![js-object-types example 14 result](./code_sandbox/snaps/js-object-types-14-result.png)
 
 - [x] **Outcome:** name is **"Error"**. message is **"Oops"**. String(err) is **"Error: Oops"**.
 
@@ -44016,9 +44016,9 @@ let text = JSON.stringify(obj);
 let back = JSON.parse(text);
 ```
 
-<img alt="js-object-types example 15 source" src="./code_sandbox/snaps/js-object-types-15-code.png" />
+![js-object-types example 15 source](./code_sandbox/snaps/js-object-types-15-code.png)
 
-<img alt="js-object-types example 15 result" src="./code_sandbox/snaps/js-object-types-15-result.png" />
+![js-object-types example 15 result](./code_sandbox/snaps/js-object-types-15-result.png)
 
 - [x] **Outcome:** stringify is **{"name":"John"}**. back.name is **"John"**. typeof JSON is **"object"**.
 
@@ -44035,9 +44035,9 @@ Sandbox: `code_sandbox/js-object-types/obj-promise.html`
 const p = Promise.resolve("ok");
 ```
 
-<img alt="js-object-types example 16 source" src="./code_sandbox/snaps/js-object-types-16-code.png" />
+![js-object-types example 16 source](./code_sandbox/snaps/js-object-types-16-code.png)
 
-<img alt="js-object-types example 16 result" src="./code_sandbox/snaps/js-object-types-16-result.png" />
+![js-object-types example 16 result](./code_sandbox/snaps/js-object-types-16-result.png)
 
 - [x] **Outcome:** typeof is **"object"**. instanceof Promise is **true**. String(p) is **[object Promise]**.
 
@@ -44053,9 +44053,9 @@ Sandbox: `code_sandbox/js-object-types/obj-int8array.html`
 const a = new Int8Array([1, 2, 3]);
 ```
 
-<img alt="js-object-types example 17 source" src="./code_sandbox/snaps/js-object-types-17-code.png" />
+![js-object-types example 17 source](./code_sandbox/snaps/js-object-types-17-code.png)
 
-<img alt="js-object-types example 17 result" src="./code_sandbox/snaps/js-object-types-17-result.png" />
+![js-object-types example 17 result](./code_sandbox/snaps/js-object-types-17-result.png)
 
 - [x] **Outcome:** Print is **1,2,3**. length **3**. BYTES_PER_ELEMENT **1**.
 
@@ -44071,9 +44071,9 @@ Sandbox: `code_sandbox/js-object-types/obj-int16array.html`
 const a = new Int16Array([1, 2, 3]);
 ```
 
-<img alt="js-object-types example 18 source" src="./code_sandbox/snaps/js-object-types-18-code.png" />
+![js-object-types example 18 source](./code_sandbox/snaps/js-object-types-18-code.png)
 
-<img alt="js-object-types example 18 result" src="./code_sandbox/snaps/js-object-types-18-result.png" />
+![js-object-types example 18 result](./code_sandbox/snaps/js-object-types-18-result.png)
 
 - [x] **Outcome:** Print is **1,2,3**. BYTES_PER_ELEMENT **2**.
 
@@ -44089,9 +44089,9 @@ Sandbox: `code_sandbox/js-object-types/obj-int32array.html`
 const a = new Int32Array([1, 2, 3]);
 ```
 
-<img alt="js-object-types example 19 source" src="./code_sandbox/snaps/js-object-types-19-code.png" />
+![js-object-types example 19 source](./code_sandbox/snaps/js-object-types-19-code.png)
 
-<img alt="js-object-types example 19 result" src="./code_sandbox/snaps/js-object-types-19-result.png" />
+![js-object-types example 19 result](./code_sandbox/snaps/js-object-types-19-result.png)
 
 - [x] **Outcome:** Print is **1,2,3**. BYTES_PER_ELEMENT **4**.
 
@@ -44108,9 +44108,9 @@ Sandbox: `code_sandbox/js-object-types/obj-float16array.html`
 const a = new Float16Array([1.5, 2]);
 ```
 
-<img alt="js-object-types example 20 source" src="./code_sandbox/snaps/js-object-types-20-code.png" />
+![js-object-types example 20 source](./code_sandbox/snaps/js-object-types-20-code.png)
 
-<img alt="js-object-types example 20 result" src="./code_sandbox/snaps/js-object-types-20-result.png" />
+![js-object-types example 20 result](./code_sandbox/snaps/js-object-types-20-result.png)
 
 - [x] **Outcome:** Print is **1.5,2**. constructor.name is **Float16Array**. typeof Float16Array is **"function"**.
 
@@ -44126,9 +44126,9 @@ Sandbox: `code_sandbox/js-object-types/obj-float32array.html`
 const a = new Float32Array([1.5, 2]);
 ```
 
-<img alt="js-object-types example 21 source" src="./code_sandbox/snaps/js-object-types-21-code.png" />
+![js-object-types example 21 source](./code_sandbox/snaps/js-object-types-21-code.png)
 
-<img alt="js-object-types example 21 result" src="./code_sandbox/snaps/js-object-types-21-result.png" />
+![js-object-types example 21 result](./code_sandbox/snaps/js-object-types-21-result.png)
 
 - [x] **Outcome:** Print is **1.5,2**. BYTES_PER_ELEMENT **4**.
 
@@ -44144,9 +44144,9 @@ Sandbox: `code_sandbox/js-object-types/obj-float64array.html`
 const a = new Float64Array([1.5, 2]);
 ```
 
-<img alt="js-object-types example 22 source" src="./code_sandbox/snaps/js-object-types-22-code.png" />
+![js-object-types example 22 source](./code_sandbox/snaps/js-object-types-22-code.png)
 
-<img alt="js-object-types example 22 result" src="./code_sandbox/snaps/js-object-types-22-result.png" />
+![js-object-types example 22 result](./code_sandbox/snaps/js-object-types-22-result.png)
 
 - [x] **Outcome:** Print is **1.5,2**. BYTES_PER_ELEMENT **8**.
 
@@ -44162,9 +44162,9 @@ Sandbox: `code_sandbox/js-object-types/obj-bigint64array.html`
 const a = new BigInt64Array([10n, 20n]);
 ```
 
-<img alt="js-object-types example 23 source" src="./code_sandbox/snaps/js-object-types-23-code.png" />
+![js-object-types example 23 source](./code_sandbox/snaps/js-object-types-23-code.png)
 
-<img alt="js-object-types example 23 result" src="./code_sandbox/snaps/js-object-types-23-result.png" />
+![js-object-types example 23 result](./code_sandbox/snaps/js-object-types-23-result.png)
 
 - [x] **Outcome:** Print is **10,20**. a[0] is **10n**. typeof a[0] is **"bigint"**.
 
@@ -44356,9 +44356,9 @@ const id2 = Symbol();
 let result = (id1 === id2);
 ```
 
-<img alt="js-symbols example 1 source" src="./code_sandbox/snaps/js-symbols-01-code.png" />
+![js-symbols example 1 source](./code_sandbox/snaps/js-symbols-01-code.png)
 
-<img alt="js-symbols example 1 result" src="./code_sandbox/snaps/js-symbols-01-result.png" />
+![js-symbols example 1 result](./code_sandbox/snaps/js-symbols-01-result.png)
 
 - [x] **Outcome:** result is **false**. typeof is **"symbol"**.
 
@@ -44376,9 +44376,9 @@ const id2 = Symbol("id");
 let result = (id1 === id2);
 ```
 
-<img alt="js-symbols example 2 source" src="./code_sandbox/snaps/js-symbols-02-code.png" />
+![js-symbols example 2 source](./code_sandbox/snaps/js-symbols-02-code.png)
 
-<img alt="js-symbols example 2 result" src="./code_sandbox/snaps/js-symbols-02-result.png" />
+![js-symbols example 2 result](./code_sandbox/snaps/js-symbols-02-result.png)
 
 - [x] **Outcome:** result is **false**. String(id1) is **"Symbol(id)"**.
 
@@ -44396,9 +44396,9 @@ const person = { firstName: "John", lastName: "Doe" };
 person[id] = 123;
 ```
 
-<img alt="js-symbols example 3 source" src="./code_sandbox/snaps/js-symbols-03-code.png" />
+![js-symbols example 3 source](./code_sandbox/snaps/js-symbols-03-code.png)
 
-<img alt="js-symbols example 3 result" src="./code_sandbox/snaps/js-symbols-03-result.png" />
+![js-symbols example 3 result](./code_sandbox/snaps/js-symbols-03-result.png)
 
 - [x] **Outcome:** person[id] is **123**. firstName is still **"John"**.
 
@@ -44415,9 +44415,9 @@ const id = Symbol("id");
 let type = typeof id;
 ```
 
-<img alt="js-symbols example 4 source" src="./code_sandbox/snaps/js-symbols-04-code.png" />
+![js-symbols example 4 source](./code_sandbox/snaps/js-symbols-04-code.png)
 
-<img alt="js-symbols example 4 result" src="./code_sandbox/snaps/js-symbols-04-result.png" />
+![js-symbols example 4 result](./code_sandbox/snaps/js-symbols-04-result.png)
 
 - [x] **Outcome:** type is **"symbol"**.
 
@@ -44441,9 +44441,9 @@ let id = Symbol("id");
 person[id] = 140353;
 ```
 
-<img alt="js-symbols example 5 source" src="./code_sandbox/snaps/js-symbols-05-code.png" />
+![js-symbols example 5 source](./code_sandbox/snaps/js-symbols-05-code.png)
 
-<img alt="js-symbols example 5 result" src="./code_sandbox/snaps/js-symbols-05-result.png" />
+![js-symbols example 5 result](./code_sandbox/snaps/js-symbols-05-result.png)
 
 - [x] **Outcome:** person[id] is **140353**. person.id (string key) is **undefined**.
 
@@ -44465,9 +44465,9 @@ for (let x in person) {
 }
 ```
 
-<img alt="js-symbols example 6 source" src="./code_sandbox/snaps/js-symbols-06-code.png" />
+![js-symbols example 6 source](./code_sandbox/snaps/js-symbols-06-code.png)
 
-<img alt="js-symbols example 6 result" src="./code_sandbox/snaps/js-symbols-06-result.png" />
+![js-symbols example 6 result](./code_sandbox/snaps/js-symbols-06-result.png)
 
 - [x] **Outcome:** text is **"firstName lastName "** (trailing space). person[id] is still **123**.
 
@@ -44486,9 +44486,9 @@ person[id] = 123;
 let text = JSON.stringify(person);
 ```
 
-<img alt="js-symbols example 7 source" src="./code_sandbox/snaps/js-symbols-07-code.png" />
+![js-symbols example 7 source](./code_sandbox/snaps/js-symbols-07-code.png)
 
-<img alt="js-symbols example 7 result" src="./code_sandbox/snaps/js-symbols-07-result.png" />
+![js-symbols example 7 result](./code_sandbox/snaps/js-symbols-07-result.png)
 
 - [x] **Outcome:** text is **{"name":"John"}**. The symbol value **123** is omitted.
 
@@ -44506,9 +44506,9 @@ const id2 = Symbol.for("id");
 let result = (id1 === id2);
 ```
 
-<img alt="js-symbols example 8 source" src="./code_sandbox/snaps/js-symbols-08-code.png" />
+![js-symbols example 8 source](./code_sandbox/snaps/js-symbols-08-code.png)
 
-<img alt="js-symbols example 8 result" src="./code_sandbox/snaps/js-symbols-08-result.png" />
+![js-symbols example 8 result](./code_sandbox/snaps/js-symbols-08-result.png)
 
 - [x] **Outcome:** result is **true** (unlike `Symbol("id")`).
 
@@ -44525,9 +44525,9 @@ const g = Symbol.for("id");
 const local = Symbol("id");
 ```
 
-<img alt="js-symbols example 9 source" src="./code_sandbox/snaps/js-symbols-09-code.png" />
+![js-symbols example 9 source](./code_sandbox/snaps/js-symbols-09-code.png)
 
-<img alt="js-symbols example 9 result" src="./code_sandbox/snaps/js-symbols-09-result.png" />
+![js-symbols example 9 result](./code_sandbox/snaps/js-symbols-09-result.png)
 
 - [x] **Outcome:** keyFor(g) is **"id"**. keyFor(local) is **undefined**.
 
@@ -44543,9 +44543,9 @@ Sandbox: `code_sandbox/js-symbols/symbol-plus-typeerror.html`
 Symbol("id") + "";
 ```
 
-<img alt="js-symbols example 10 source" src="./code_sandbox/snaps/js-symbols-10-code.png" />
+![js-symbols example 10 source](./code_sandbox/snaps/js-symbols-10-code.png)
 
-<img alt="js-symbols example 10 result" src="./code_sandbox/snaps/js-symbols-10-result.png" />
+![js-symbols example 10 result](./code_sandbox/snaps/js-symbols-10-result.png)
 
 - [x] **Outcome:** **TypeError: Cannot convert a Symbol value to a string**. `String(Symbol("id"))` would be **"Symbol(id)"**.
 
@@ -44579,9 +44579,9 @@ for (const x of myObject) {
 }
 ```
 
-<img alt="js-symbols example 11 source" src="./code_sandbox/snaps/js-symbols-11-code.png" />
+![js-symbols example 11 source](./code_sandbox/snaps/js-symbols-11-code.png)
 
-<img alt="js-symbols example 11 result" src="./code_sandbox/snaps/js-symbols-11-result.png" />
+![js-symbols example 11 result](./code_sandbox/snaps/js-symbols-11-result.png)
 
 - [x] **Outcome:** text is **"A B C "**. typeof Symbol.iterator is **"symbol"**.
 
@@ -44598,9 +44598,9 @@ typeof Symbol.asyncIterator;
 Symbol.asyncIterator === Symbol.asyncIterator;
 ```
 
-<img alt="js-symbols example 12 source" src="./code_sandbox/snaps/js-symbols-12-code.png" />
+![js-symbols example 12 source](./code_sandbox/snaps/js-symbols-12-code.png)
 
-<img alt="js-symbols example 12 result" src="./code_sandbox/snaps/js-symbols-12-result.png" />
+![js-symbols example 12 result](./code_sandbox/snaps/js-symbols-12-result.png)
 
 - [x] **Outcome:** typeof is **"symbol"**. String is **"Symbol(Symbol.asyncIterator)"**.
 
@@ -44617,9 +44617,9 @@ const o = { [Symbol.toStringTag]: "Foo" };
 let tag = Object.prototype.toString.call(o);
 ```
 
-<img alt="js-symbols example 13 source" src="./code_sandbox/snaps/js-symbols-13-code.png" />
+![js-symbols example 13 source](./code_sandbox/snaps/js-symbols-13-code.png)
 
-<img alt="js-symbols example 13 result" src="./code_sandbox/snaps/js-symbols-13-result.png" />
+![js-symbols example 13 result](./code_sandbox/snaps/js-symbols-13-result.png)
 
 - [x] **Outcome:** Object.prototype.toString.call(o) is **"[object Foo]"**. Default String(o) is still **[object Foo]** here via toString.
 
@@ -44640,9 +44640,9 @@ const o = {
 };
 ```
 
-<img alt="js-symbols example 14 source" src="./code_sandbox/snaps/js-symbols-14-code.png" />
+![js-symbols example 14 source](./code_sandbox/snaps/js-symbols-14-code.png)
 
-<img alt="js-symbols example 14 result" src="./code_sandbox/snaps/js-symbols-14-result.png" />
+![js-symbols example 14 result](./code_sandbox/snaps/js-symbols-14-result.png)
 
 - [x] **Outcome:** Number(o) is **42**. String(o) is **"ok"**. `o + 1` uses hint **"default"** → **"ok1"** (string concat).
 
@@ -44863,9 +44863,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-john.html`
 typeof "John";
 ```
 
-<img alt="js-typeof example 1 source" src="./code_sandbox/snaps/js-typeof-01-code.png" />
+![js-typeof example 1 source](./code_sandbox/snaps/js-typeof-01-code.png)
 
-<img alt="js-typeof example 1 result" src="./code_sandbox/snaps/js-typeof-01-result.png" />
+![js-typeof example 1 result](./code_sandbox/snaps/js-typeof-01-result.png)
 
 - [x] **Outcome:** `typeof "John"` is **"string"**.
 
@@ -44882,9 +44882,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-john-doe-concat.html`
 typeof ("John" + "Doe");
 ```
 
-<img alt="js-typeof example 2 source" src="./code_sandbox/snaps/js-typeof-02-code.png" />
+![js-typeof example 2 source](./code_sandbox/snaps/js-typeof-02-code.png)
 
-<img alt="js-typeof example 2 result" src="./code_sandbox/snaps/js-typeof-02-result.png" />
+![js-typeof example 2 result](./code_sandbox/snaps/js-typeof-02-result.png)
 
 - [x] **Outcome:** `typeof ("John" + "Doe")` is **"string"**.
 
@@ -44900,9 +44900,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-3-14.html`
 typeof 3.14;
 ```
 
-<img alt="js-typeof example 3 source" src="./code_sandbox/snaps/js-typeof-03-code.png" />
+![js-typeof example 3 source](./code_sandbox/snaps/js-typeof-03-code.png)
 
-<img alt="js-typeof example 3 result" src="./code_sandbox/snaps/js-typeof-03-result.png" />
+![js-typeof example 3 result](./code_sandbox/snaps/js-typeof-03-result.png)
 
 - [x] **Outcome:** `typeof 3.14` is **"number"**.
 
@@ -44918,9 +44918,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-33.html`
 typeof 33;
 ```
 
-<img alt="js-typeof example 4 source" src="./code_sandbox/snaps/js-typeof-04-code.png" />
+![js-typeof example 4 source](./code_sandbox/snaps/js-typeof-04-code.png)
 
-<img alt="js-typeof example 4 result" src="./code_sandbox/snaps/js-typeof-04-result.png" />
+![js-typeof example 4 result](./code_sandbox/snaps/js-typeof-04-result.png)
 
 - [x] **Outcome:** `typeof 33` is **"number"**.
 
@@ -44937,9 +44937,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-33-plus-66.html`
 typeof (33 + 66);
 ```
 
-<img alt="js-typeof example 5 source" src="./code_sandbox/snaps/js-typeof-05-code.png" />
+![js-typeof example 5 source](./code_sandbox/snaps/js-typeof-05-code.png)
 
-<img alt="js-typeof example 5 result" src="./code_sandbox/snaps/js-typeof-05-result.png" />
+![js-typeof example 5 result](./code_sandbox/snaps/js-typeof-05-result.png)
 
 - [x] **Outcome:** `typeof (33 + 66)` is **"number"**.
 
@@ -44955,9 +44955,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-true.html`
 typeof true;
 ```
 
-<img alt="js-typeof example 6 source" src="./code_sandbox/snaps/js-typeof-06-code.png" />
+![js-typeof example 6 source](./code_sandbox/snaps/js-typeof-06-code.png)
 
-<img alt="js-typeof example 6 result" src="./code_sandbox/snaps/js-typeof-06-result.png" />
+![js-typeof example 6 result](./code_sandbox/snaps/js-typeof-06-result.png)
 
 - [x] **Outcome:** `typeof true` is **"boolean"**.
 
@@ -44973,9 +44973,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-false.html`
 typeof false;
 ```
 
-<img alt="js-typeof example 7 source" src="./code_sandbox/snaps/js-typeof-07-code.png" />
+![js-typeof example 7 source](./code_sandbox/snaps/js-typeof-07-code.png)
 
-<img alt="js-typeof example 7 result" src="./code_sandbox/snaps/js-typeof-07-result.png" />
+![js-typeof example 7 result](./code_sandbox/snaps/js-typeof-07-result.png)
 
 - [x] **Outcome:** `typeof false` is **"boolean"**.
 
@@ -44991,9 +44991,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-bigint.html`
 typeof 1234n;
 ```
 
-<img alt="js-typeof example 8 source" src="./code_sandbox/snaps/js-typeof-08-code.png" />
+![js-typeof example 8 source](./code_sandbox/snaps/js-typeof-08-code.png)
 
-<img alt="js-typeof example 8 result" src="./code_sandbox/snaps/js-typeof-08-result.png" />
+![js-typeof example 8 result](./code_sandbox/snaps/js-typeof-08-result.png)
 
 - [x] **Outcome:** `typeof 1234n` is **"bigint"**.
 
@@ -45009,9 +45009,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-symbol.html`
 typeof Symbol();
 ```
 
-<img alt="js-typeof example 9 source" src="./code_sandbox/snaps/js-typeof-09-code.png" />
+![js-typeof example 9 source](./code_sandbox/snaps/js-typeof-09-code.png)
 
-<img alt="js-typeof example 9 result" src="./code_sandbox/snaps/js-typeof-09-result.png" />
+![js-typeof example 9 result](./code_sandbox/snaps/js-typeof-09-result.png)
 
 - [x] **Outcome:** `typeof Symbol()` is **"symbol"**.
 
@@ -45028,9 +45028,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-undeclared-x.html`
 typeof x;
 ```
 
-<img alt="js-typeof example 10 source" src="./code_sandbox/snaps/js-typeof-10-code.png" />
+![js-typeof example 10 source](./code_sandbox/snaps/js-typeof-10-code.png)
 
-<img alt="js-typeof example 10 result" src="./code_sandbox/snaps/js-typeof-10-result.png" />
+![js-typeof example 10 result](./code_sandbox/snaps/js-typeof-10-result.png)
 
 - [x] **Outcome:** `typeof x` is **"undefined"**.
 
@@ -45047,9 +45047,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-null.html`
 typeof null;
 ```
 
-<img alt="js-typeof example 11 source" src="./code_sandbox/snaps/js-typeof-11-code.png" />
+![js-typeof example 11 source](./code_sandbox/snaps/js-typeof-11-code.png)
 
-<img alt="js-typeof example 11 result" src="./code_sandbox/snaps/js-typeof-11-result.png" />
+![js-typeof example 11 result](./code_sandbox/snaps/js-typeof-11-result.png)
 
 - [x] **Outcome:** typeof null is **"object"**.
 
@@ -45066,9 +45066,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-nan.html`
 typeof NaN;
 ```
 
-<img alt="js-typeof example 12 source" src="./code_sandbox/snaps/js-typeof-12-code.png" />
+![js-typeof example 12 source](./code_sandbox/snaps/js-typeof-12-code.png)
 
-<img alt="js-typeof example 12 result" src="./code_sandbox/snaps/js-typeof-12-result.png" />
+![js-typeof example 12 result](./code_sandbox/snaps/js-typeof-12-result.png)
 
 - [x] **Outcome:** `typeof NaN` is **"number"**.
 
@@ -45084,9 +45084,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-object-literal.html`
 typeof {name: 'John'};
 ```
 
-<img alt="js-typeof example 13 source" src="./code_sandbox/snaps/js-typeof-13-code.png" />
+![js-typeof example 13 source](./code_sandbox/snaps/js-typeof-13-code.png)
 
-<img alt="js-typeof example 13 result" src="./code_sandbox/snaps/js-typeof-13-result.png" />
+![js-typeof example 13 result](./code_sandbox/snaps/js-typeof-13-result.png)
 
 - [x] **Outcome:** typeof {name:'John'} is **"object"**.
 
@@ -45103,9 +45103,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-array-lit.html`
 typeof [1, 2, 3, 4];
 ```
 
-<img alt="js-typeof example 14 source" src="./code_sandbox/snaps/js-typeof-14-code.png" />
+![js-typeof example 14 source](./code_sandbox/snaps/js-typeof-14-code.png)
 
-<img alt="js-typeof example 14 result" src="./code_sandbox/snaps/js-typeof-14-result.png" />
+![js-typeof example 14 result](./code_sandbox/snaps/js-typeof-14-result.png)
 
 - [x] **Outcome:** `typeof [1, 2, 3, 4]` is **"object"**.
 
@@ -45121,9 +45121,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-empty-object.html`
 typeof {};
 ```
 
-<img alt="js-typeof example 15 source" src="./code_sandbox/snaps/js-typeof-15-code.png" />
+![js-typeof example 15 source](./code_sandbox/snaps/js-typeof-15-code.png)
 
-<img alt="js-typeof example 15 result" src="./code_sandbox/snaps/js-typeof-15-result.png" />
+![js-typeof example 15 result](./code_sandbox/snaps/js-typeof-15-result.png)
 
 - [x] **Outcome:** `typeof {}` is **"object"**.
 
@@ -45139,9 +45139,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-empty-array.html`
 typeof [];
 ```
 
-<img alt="js-typeof example 16 source" src="./code_sandbox/snaps/js-typeof-16-code.png" />
+![js-typeof example 16 source](./code_sandbox/snaps/js-typeof-16-code.png)
 
-<img alt="js-typeof example 16 result" src="./code_sandbox/snaps/js-typeof-16-result.png" />
+![js-typeof example 16 result](./code_sandbox/snaps/js-typeof-16-result.png)
 
 - [x] **Outcome:** `typeof []` is **"object"**.
 
@@ -45157,9 +45157,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-new-object.html`
 typeof new Object();
 ```
 
-<img alt="js-typeof example 17 source" src="./code_sandbox/snaps/js-typeof-17-code.png" />
+![js-typeof example 17 source](./code_sandbox/snaps/js-typeof-17-code.png)
 
-<img alt="js-typeof example 17 result" src="./code_sandbox/snaps/js-typeof-17-result.png" />
+![js-typeof example 17 result](./code_sandbox/snaps/js-typeof-17-result.png)
 
 - [x] **Outcome:** `typeof new Object()` is **"object"**.
 
@@ -45175,9 +45175,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-new-array.html`
 typeof new Array();
 ```
 
-<img alt="js-typeof example 18 source" src="./code_sandbox/snaps/js-typeof-18-code.png" />
+![js-typeof example 18 source](./code_sandbox/snaps/js-typeof-18-code.png)
 
-<img alt="js-typeof example 18 result" src="./code_sandbox/snaps/js-typeof-18-result.png" />
+![js-typeof example 18 result](./code_sandbox/snaps/js-typeof-18-result.png)
 
 - [x] **Outcome:** `typeof new Array()` is **"object"**.
 
@@ -45193,9 +45193,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-new-date.html`
 typeof new Date();
 ```
 
-<img alt="js-typeof example 19 source" src="./code_sandbox/snaps/js-typeof-19-code.png" />
+![js-typeof example 19 source](./code_sandbox/snaps/js-typeof-19-code.png)
 
-<img alt="js-typeof example 19 result" src="./code_sandbox/snaps/js-typeof-19-result.png" />
+![js-typeof example 19 result](./code_sandbox/snaps/js-typeof-19-result.png)
 
 - [x] **Outcome:** `typeof new Date()` is **"object"**.
 
@@ -45211,9 +45211,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-new-set.html`
 typeof new Set();
 ```
 
-<img alt="js-typeof example 20 source" src="./code_sandbox/snaps/js-typeof-20-code.png" />
+![js-typeof example 20 source](./code_sandbox/snaps/js-typeof-20-code.png)
 
-<img alt="js-typeof example 20 result" src="./code_sandbox/snaps/js-typeof-20-result.png" />
+![js-typeof example 20 result](./code_sandbox/snaps/js-typeof-20-result.png)
 
 - [x] **Outcome:** `typeof new Set()` is **"object"**.
 
@@ -45229,9 +45229,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-new-map.html`
 typeof new Map();
 ```
 
-<img alt="js-typeof example 21 source" src="./code_sandbox/snaps/js-typeof-21-code.png" />
+![js-typeof example 21 source](./code_sandbox/snaps/js-typeof-21-code.png)
 
-<img alt="js-typeof example 21 result" src="./code_sandbox/snaps/js-typeof-21-result.png" />
+![js-typeof example 21 result](./code_sandbox/snaps/js-typeof-21-result.png)
 
 - [x] **Outcome:** `typeof new Map()` is **"object"**.
 
@@ -45248,9 +45248,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-function.html`
 typeof function () {};
 ```
 
-<img alt="js-typeof example 22 source" src="./code_sandbox/snaps/js-typeof-22-code.png" />
+![js-typeof example 22 source](./code_sandbox/snaps/js-typeof-22-code.png)
 
-<img alt="js-typeof example 22 result" src="./code_sandbox/snaps/js-typeof-22-result.png" />
+![js-typeof example 22 result](./code_sandbox/snaps/js-typeof-22-result.png)
 
 - [x] **Outcome:** `typeof function () {}` is **"function"**.
 
@@ -45267,9 +45267,9 @@ const fruits = ["apples", "bananas", "oranges"];
 Array.isArray(fruits);
 ```
 
-<img alt="js-typeof example 23 source" src="./code_sandbox/snaps/js-typeof-23-code.png" />
+![js-typeof example 23 source](./code_sandbox/snaps/js-typeof-23-code.png)
 
-<img alt="js-typeof example 23 result" src="./code_sandbox/snaps/js-typeof-23-result.png" />
+![js-typeof example 23 result](./code_sandbox/snaps/js-typeof-23-result.png)
 
 - [x] **Outcome:** Array.isArray(fruits) is **true**. Array.isArray({a:1}) is **false**.
 
@@ -45286,9 +45286,9 @@ const time = new Date();
 (time instanceof Date);
 ```
 
-<img alt="js-typeof example 24 source" src="./code_sandbox/snaps/js-typeof-24-code.png" />
+![js-typeof example 24 source](./code_sandbox/snaps/js-typeof-24-code.png)
 
-<img alt="js-typeof example 24 result" src="./code_sandbox/snaps/js-typeof-24-result.png" />
+![js-typeof example 24 result](./code_sandbox/snaps/js-typeof-24-result.png)
 
 - [x] **Outcome:** `time instanceof Date` is **true**. `time instanceof Array` is **false**.
 
@@ -45305,9 +45305,9 @@ const fruits = ["apples", "bananas", "oranges"];
 (fruits instanceof Array);
 ```
 
-<img alt="js-typeof example 25 source" src="./code_sandbox/snaps/js-typeof-25-code.png" />
+![js-typeof example 25 source](./code_sandbox/snaps/js-typeof-25-code.png)
 
-<img alt="js-typeof example 25 result" src="./code_sandbox/snaps/js-typeof-25-result.png" />
+![js-typeof example 25 result](./code_sandbox/snaps/js-typeof-25-result.png)
 
 - [x] **Outcome:** `fruits instanceof Array` is **true**.
 
@@ -45328,9 +45328,9 @@ const fruits = new Map([
 (fruits instanceof Map);
 ```
 
-<img alt="js-typeof example 26 source" src="./code_sandbox/snaps/js-typeof-26-code.png" />
+![js-typeof example 26 source](./code_sandbox/snaps/js-typeof-26-code.png)
 
-<img alt="js-typeof example 26 result" src="./code_sandbox/snaps/js-typeof-26-result.png" />
+![js-typeof example 26 result](./code_sandbox/snaps/js-typeof-26-result.png)
 
 - [x] **Outcome:** `instanceof Map` is **true**. `instanceof Array` is **false**.
 
@@ -45347,9 +45347,9 @@ const fruits = new Set(["apples", "bananas", "oranges"]);
 (fruits instanceof Set);
 ```
 
-<img alt="js-typeof example 27 source" src="./code_sandbox/snaps/js-typeof-27-code.png" />
+![js-typeof example 27 source](./code_sandbox/snaps/js-typeof-27-code.png)
 
-<img alt="js-typeof example 27 result" src="./code_sandbox/snaps/js-typeof-27-result.png" />
+![js-typeof example 27 result](./code_sandbox/snaps/js-typeof-27-result.png)
 
 - [x] **Outcome:** `fruits instanceof Set` is **true**.
 
@@ -45365,9 +45365,9 @@ Sandbox: `code_sandbox/js-typeof/typeof-undeclared-car.html`
 typeof car;
 ```
 
-<img alt="js-typeof example 28 source" src="./code_sandbox/snaps/js-typeof-28-code.png" />
+![js-typeof example 28 source](./code_sandbox/snaps/js-typeof-28-code.png)
 
-<img alt="js-typeof example 28 result" src="./code_sandbox/snaps/js-typeof-28-result.png" />
+![js-typeof example 28 result](./code_sandbox/snaps/js-typeof-28-result.png)
 
 - [x] **Outcome:** typeof car is **"undefined"**.
 
@@ -45384,9 +45384,9 @@ let car;
 typeof car;
 ```
 
-<img alt="js-typeof example 29 source" src="./code_sandbox/snaps/js-typeof-29-code.png" />
+![js-typeof example 29 source](./code_sandbox/snaps/js-typeof-29-code.png)
 
-<img alt="js-typeof example 29 result" src="./code_sandbox/snaps/js-typeof-29-result.png" />
+![js-typeof example 29 result](./code_sandbox/snaps/js-typeof-29-result.png)
 
 - [x] **Outcome:** car is **undefined**. typeof is **"undefined"**.
 
@@ -45403,9 +45403,9 @@ let car = "Volvo";
 car = undefined;
 ```
 
-<img alt="js-typeof example 30 source" src="./code_sandbox/snaps/js-typeof-30-code.png" />
+![js-typeof example 30 source](./code_sandbox/snaps/js-typeof-30-code.png)
 
-<img alt="js-typeof example 30 result" src="./code_sandbox/snaps/js-typeof-30-result.png" />
+![js-typeof example 30 result](./code_sandbox/snaps/js-typeof-30-result.png)
 
 - [x] **Outcome:** car is **undefined**. typeof is **"undefined"**.
 
@@ -45422,9 +45422,9 @@ let car = "";
 typeof car;
 ```
 
-<img alt="js-typeof example 31 source" src="./code_sandbox/snaps/js-typeof-31-code.png" />
+![js-typeof example 31 source](./code_sandbox/snaps/js-typeof-31-code.png)
 
-<img alt="js-typeof example 31 result" src="./code_sandbox/snaps/js-typeof-31-result.png" />
+![js-typeof example 31 result](./code_sandbox/snaps/js-typeof-31-result.png)
 
 - [x] **Outcome:** value is **""**. typeof is **"string"**.
 
@@ -45441,9 +45441,9 @@ let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 person = null;
 ```
 
-<img alt="js-typeof example 32 source" src="./code_sandbox/snaps/js-typeof-32-code.png" />
+![js-typeof example 32 source](./code_sandbox/snaps/js-typeof-32-code.png)
 
-<img alt="js-typeof example 32 result" src="./code_sandbox/snaps/js-typeof-32-result.png" />
+![js-typeof example 32 result](./code_sandbox/snaps/js-typeof-32-result.png)
 
 - [x] **Outcome:** person is **null**. typeof is **"object"**.
 
@@ -45460,9 +45460,9 @@ let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 person = undefined;
 ```
 
-<img alt="js-typeof example 33 source" src="./code_sandbox/snaps/js-typeof-33-code.png" />
+![js-typeof example 33 source](./code_sandbox/snaps/js-typeof-33-code.png)
 
-<img alt="js-typeof example 33 result" src="./code_sandbox/snaps/js-typeof-33-result.png" />
+![js-typeof example 33 result](./code_sandbox/snaps/js-typeof-33-result.png)
 
 - [x] **Outcome:** person is **undefined**. typeof is **"undefined"**.
 
@@ -45481,9 +45481,9 @@ null === undefined;
 null == undefined;
 ```
 
-<img alt="js-typeof example 34 source" src="./code_sandbox/snaps/js-typeof-34-code.png" />
+![js-typeof example 34 source](./code_sandbox/snaps/js-typeof-34-code.png)
 
-<img alt="js-typeof example 34 result" src="./code_sandbox/snaps/js-typeof-34-result.png" />
+![js-typeof example 34 result](./code_sandbox/snaps/js-typeof-34-result.png)
 
 - [x] **Outcome:** typeof undefined is **"undefined"**. typeof null is **"object"**. `===` is **false**. `==` is **true**.
 
@@ -45499,9 +45499,9 @@ Sandbox: `code_sandbox/js-typeof/constructor-object.html`
 let c = {name: 'John', age: 34}.constructor;
 ```
 
-<img alt="js-typeof example 35 source" src="./code_sandbox/snaps/js-typeof-35-code.png" />
+![js-typeof example 35 source](./code_sandbox/snaps/js-typeof-35-code.png)
 
-<img alt="js-typeof example 35 result" src="./code_sandbox/snaps/js-typeof-35-result.png" />
+![js-typeof example 35 result](./code_sandbox/snaps/js-typeof-35-result.png)
 
 - [x] **Outcome:** String(c) is **"function Object() { [native code] }"**. `c === Object` is **true**.
 
@@ -45517,9 +45517,9 @@ Sandbox: `code_sandbox/js-typeof/constructor-array.html`
 let c = [1, 2, 3, 4].constructor;
 ```
 
-<img alt="js-typeof example 36 source" src="./code_sandbox/snaps/js-typeof-36-code.png" />
+![js-typeof example 36 source](./code_sandbox/snaps/js-typeof-36-code.png)
 
-<img alt="js-typeof example 36 result" src="./code_sandbox/snaps/js-typeof-36-result.png" />
+![js-typeof example 36 result](./code_sandbox/snaps/js-typeof-36-result.png)
 
 - [x] **Outcome:** String(c) is **"function Array() { [native code] }"**. `c === Array` is **true**.
 
@@ -45536,9 +45536,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 let c = d.constructor;
 ```
 
-<img alt="js-typeof example 37 source" src="./code_sandbox/snaps/js-typeof-37-code.png" />
+![js-typeof example 37 source](./code_sandbox/snaps/js-typeof-37-code.png)
 
-<img alt="js-typeof example 37 result" src="./code_sandbox/snaps/js-typeof-37-result.png" />
+![js-typeof example 37 result](./code_sandbox/snaps/js-typeof-37-result.png)
 
 - [x] **Outcome:** String(c) is **"function Date() { [native code] }"**. `c === Date` is **true**.
 
@@ -45554,9 +45554,9 @@ Sandbox: `code_sandbox/js-typeof/constructor-set.html`
 let c = new Set().constructor;
 ```
 
-<img alt="js-typeof example 38 source" src="./code_sandbox/snaps/js-typeof-38-code.png" />
+![js-typeof example 38 source](./code_sandbox/snaps/js-typeof-38-code.png)
 
-<img alt="js-typeof example 38 result" src="./code_sandbox/snaps/js-typeof-38-result.png" />
+![js-typeof example 38 result](./code_sandbox/snaps/js-typeof-38-result.png)
 
 - [x] **Outcome:** String(c) is **"function Set() { [native code] }"**. `c === Set` is **true**.
 
@@ -45572,9 +45572,9 @@ Sandbox: `code_sandbox/js-typeof/constructor-map.html`
 let c = new Map().constructor;
 ```
 
-<img alt="js-typeof example 39 source" src="./code_sandbox/snaps/js-typeof-39-code.png" />
+![js-typeof example 39 source](./code_sandbox/snaps/js-typeof-39-code.png)
 
-<img alt="js-typeof example 39 result" src="./code_sandbox/snaps/js-typeof-39-result.png" />
+![js-typeof example 39 result](./code_sandbox/snaps/js-typeof-39-result.png)
 
 - [x] **Outcome:** String(c) is **"function Map() { [native code] }"**. `c === Map` is **true**.
 
@@ -45590,9 +45590,9 @@ Sandbox: `code_sandbox/js-typeof/constructor-function.html`
 let c = function () {}.constructor;
 ```
 
-<img alt="js-typeof example 40 source" src="./code_sandbox/snaps/js-typeof-40-code.png" />
+![js-typeof example 40 source](./code_sandbox/snaps/js-typeof-40-code.png)
 
-<img alt="js-typeof example 40 result" src="./code_sandbox/snaps/js-typeof-40-result.png" />
+![js-typeof example 40 result](./code_sandbox/snaps/js-typeof-40-result.png)
 
 - [x] **Outcome:** String(c) is **"function Function() { [native code] }"**. `c === Function` is **true**.
 
@@ -45609,9 +45609,9 @@ const myArray = [1, 2, 3, 4];
 (myArray.constructor === Array);
 ```
 
-<img alt="js-typeof example 41 source" src="./code_sandbox/snaps/js-typeof-41-code.png" />
+![js-typeof example 41 source](./code_sandbox/snaps/js-typeof-41-code.png)
 
-<img alt="js-typeof example 41 result" src="./code_sandbox/snaps/js-typeof-41-result.png" />
+![js-typeof example 41 result](./code_sandbox/snaps/js-typeof-41-result.png)
 
 - [x] **Outcome:** `myArray.constructor === Array` is **true**.
 
@@ -45629,9 +45629,9 @@ const myDate = d;
 (myDate.constructor === Date);
 ```
 
-<img alt="js-typeof example 42 source" src="./code_sandbox/snaps/js-typeof-42-code.png" />
+![js-typeof example 42 source](./code_sandbox/snaps/js-typeof-42-code.png)
 
-<img alt="js-typeof example 42 result" src="./code_sandbox/snaps/js-typeof-42-result.png" />
+![js-typeof example 42 result](./code_sandbox/snaps/js-typeof-42-result.png)
 
 - [x] **Outcome:** `myDate.constructor === Date` is **true**.
 
@@ -45649,9 +45649,9 @@ void 0;
 void (0);
 ```
 
-<img alt="js-typeof example 43 source" src="./code_sandbox/snaps/js-typeof-43-code.png" />
+![js-typeof example 43 source](./code_sandbox/snaps/js-typeof-43-code.png)
 
-<img alt="js-typeof example 43 result" src="./code_sandbox/snaps/js-typeof-43-result.png" />
+![js-typeof example 43 result](./code_sandbox/snaps/js-typeof-43-result.png)
 
 - [x] **Outcome:** `void 0` is **undefined**. typeof is **"undefined"**. `void (0)` is the same.
 
@@ -45857,9 +45857,9 @@ Sandbox: `code_sandbox/js-undefined/declared-no-value.html`
 let car;
 ```
 
-<img alt="js-undefined example 1 source" src="./code_sandbox/snaps/js-undefined-01-code.png" />
+![js-undefined example 1 source](./code_sandbox/snaps/js-undefined-01-code.png)
 
-<img alt="js-undefined example 1 result" src="./code_sandbox/snaps/js-undefined-01-result.png" />
+![js-undefined example 1 result](./code_sandbox/snaps/js-undefined-01-result.png)
 
 - [x] **Outcome:** car is **undefined**.
 
@@ -45876,9 +45876,9 @@ let car;
 typeof car;
 ```
 
-<img alt="js-undefined example 2 source" src="./code_sandbox/snaps/js-undefined-02-code.png" />
+![js-undefined example 2 source](./code_sandbox/snaps/js-undefined-02-code.png)
 
-<img alt="js-undefined example 2 result" src="./code_sandbox/snaps/js-undefined-02-result.png" />
+![js-undefined example 2 result](./code_sandbox/snaps/js-undefined-02-result.png)
 
 - [x] **Outcome:** typeof car is **"undefined"**.
 
@@ -45894,9 +45894,9 @@ Sandbox: `code_sandbox/js-undefined/empty-string-not-undefined.html`
 let text = "";
 ```
 
-<img alt="js-undefined example 3 source" src="./code_sandbox/snaps/js-undefined-03-code.png" />
+![js-undefined example 3 source](./code_sandbox/snaps/js-undefined-03-code.png)
 
-<img alt="js-undefined example 3 result" src="./code_sandbox/snaps/js-undefined-03-result.png" />
+![js-undefined example 3 result](./code_sandbox/snaps/js-undefined-03-result.png)
 
 - [x] **Outcome:** text is **""**. typeof is **"string"**. Concatenation `text + " " + typeof text` would be **" string"**.
 
@@ -45912,9 +45912,9 @@ Sandbox: `code_sandbox/js-undefined/missing-property.html`
 const person = {firstName:"John", lastName:"Doe"};
 ```
 
-<img alt="js-undefined example 4 source" src="./code_sandbox/snaps/js-undefined-04-code.png" />
+![js-undefined example 4 source](./code_sandbox/snaps/js-undefined-04-code.png)
 
-<img alt="js-undefined example 4 result" src="./code_sandbox/snaps/js-undefined-04-result.png" />
+![js-undefined example 4 result](./code_sandbox/snaps/js-undefined-04-result.png)
 
 - [x] **Outcome:** person.age is **undefined**. typeof is **"undefined"**.
 
@@ -45932,9 +45932,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-undefined example 5 source" src="./code_sandbox/snaps/js-undefined-05-code.png" />
+![js-undefined example 5 source](./code_sandbox/snaps/js-undefined-05-code.png)
 
-<img alt="js-undefined example 5 result" src="./code_sandbox/snaps/js-undefined-05-result.png" />
+![js-undefined example 5 result](./code_sandbox/snaps/js-undefined-05-result.png)
 
 - [x] **Outcome:** myFunction() is **undefined**. typeof is **"undefined"**. The inner `x` is unused.
 
@@ -45952,9 +45952,9 @@ const person = {firstName:"John", lastName:"Doe"};
 person = undefined;
 ```
 
-<img alt="js-undefined example 6 source" src="./code_sandbox/snaps/js-undefined-06-code.png" />
+![js-undefined example 6 source](./code_sandbox/snaps/js-undefined-06-code.png)
 
-<img alt="js-undefined example 6 result" src="./code_sandbox/snaps/js-undefined-06-result.png" />
+![js-undefined example 6 result](./code_sandbox/snaps/js-undefined-06-result.png)
 
 - [x] **Outcome:** **TypeError: Assignment to constant variable.** The object is unchanged. Use `let` to reassign.
 
@@ -45971,9 +45971,9 @@ let person = {firstName:"John", lastName:"Doe"};
 person = undefined;
 ```
 
-<img alt="js-undefined example 7 source" src="./code_sandbox/snaps/js-undefined-07-code.png" />
+![js-undefined example 7 source](./code_sandbox/snaps/js-undefined-07-code.png)
 
-<img alt="js-undefined example 7 result" src="./code_sandbox/snaps/js-undefined-07-result.png" />
+![js-undefined example 7 result](./code_sandbox/snaps/js-undefined-07-result.png)
 
 - [x] **Outcome:** person is **undefined**. typeof is **"undefined"**.
 
@@ -45990,9 +45990,9 @@ let person = {firstName:"John", lastName:"Doe"};
 person = null;
 ```
 
-<img alt="js-undefined example 8 source" src="./code_sandbox/snaps/js-undefined-08-code.png" />
+![js-undefined example 8 source](./code_sandbox/snaps/js-undefined-08-code.png)
 
-<img alt="js-undefined example 8 result" src="./code_sandbox/snaps/js-undefined-08-result.png" />
+![js-undefined example 8 result](./code_sandbox/snaps/js-undefined-08-result.png)
 
 - [x] **Outcome:** person is **null**. typeof is **"object"**.
 
@@ -46009,9 +46009,9 @@ Sandbox: `code_sandbox/js-undefined/undeclared-referenceerror.html`
 missing;
 ```
 
-<img alt="js-undefined example 9 source" src="./code_sandbox/snaps/js-undefined-09-code.png" />
+![js-undefined example 9 source](./code_sandbox/snaps/js-undefined-09-code.png)
 
-<img alt="js-undefined example 9 result" src="./code_sandbox/snaps/js-undefined-09-result.png" />
+![js-undefined example 9 result](./code_sandbox/snaps/js-undefined-09-result.png)
 
 - [x] **Outcome:** **ReferenceError: missing is not defined**. `typeof missing` would be **"undefined"** without throwing.
 
@@ -46029,9 +46029,9 @@ undefined == null;
 undefined === null;
 ```
 
-<img alt="js-undefined example 10 source" src="./code_sandbox/snaps/js-undefined-10-code.png" />
+![js-undefined example 10 source](./code_sandbox/snaps/js-undefined-10-code.png)
 
-<img alt="js-undefined example 10 result" src="./code_sandbox/snaps/js-undefined-10-result.png" />
+![js-undefined example 10 result](./code_sandbox/snaps/js-undefined-10-result.png)
 
 - [x] **Outcome:** `==` is **true**. `===` is **false**.
 
@@ -46211,9 +46211,9 @@ Sandbox: `code_sandbox/js-nan/div-apple.html`
 let x = 100 / "Apple";
 ```
 
-<img alt="js-nan example 1 source" src="./code_sandbox/snaps/js-nan-01-code.png" />
+![js-nan example 1 source](./code_sandbox/snaps/js-nan-01-code.png)
 
-<img alt="js-nan example 1 result" src="./code_sandbox/snaps/js-nan-01-result.png" />
+![js-nan example 1 result](./code_sandbox/snaps/js-nan-01-result.png)
 
 - [x] **Outcome:** x is **NaN**. typeof is **"number"**.
 
@@ -46229,9 +46229,9 @@ Sandbox: `code_sandbox/js-nan/typeof-nan.html`
 let x = NaN;
 ```
 
-<img alt="js-nan example 2 source" src="./code_sandbox/snaps/js-nan-02-code.png" />
+![js-nan example 2 source](./code_sandbox/snaps/js-nan-02-code.png)
 
-<img alt="js-nan example 2 result" src="./code_sandbox/snaps/js-nan-02-result.png" />
+![js-nan example 2 result](./code_sandbox/snaps/js-nan-02-result.png)
 
 - [x] **Outcome:** typeof NaN is **"number"**.
 
@@ -46247,9 +46247,9 @@ Sandbox: `code_sandbox/js-nan/div-numeric-string.html`
 let x = 100 / "10";
 ```
 
-<img alt="js-nan example 3 source" src="./code_sandbox/snaps/js-nan-03-code.png" />
+![js-nan example 3 source](./code_sandbox/snaps/js-nan-03-code.png)
 
-<img alt="js-nan example 3 result" src="./code_sandbox/snaps/js-nan-03-result.png" />
+![js-nan example 3 result](./code_sandbox/snaps/js-nan-03-result.png)
 
 - [x] **Outcome:** x is **10**. typeof is **"number"**.
 
@@ -46266,9 +46266,9 @@ let x = 100 / "Apple";
 isNaN(x);
 ```
 
-<img alt="js-nan example 4 source" src="./code_sandbox/snaps/js-nan-04-code.png" />
+![js-nan example 4 source](./code_sandbox/snaps/js-nan-04-code.png)
 
-<img alt="js-nan example 4 result" src="./code_sandbox/snaps/js-nan-04-result.png" />
+![js-nan example 4 result](./code_sandbox/snaps/js-nan-04-result.png)
 
 - [x] **Outcome:** isNaN(x) is **true**.
 
@@ -46285,9 +46285,9 @@ let x = NaN;
 x == x;
 ```
 
-<img alt="js-nan example 5 source" src="./code_sandbox/snaps/js-nan-05-code.png" />
+![js-nan example 5 source](./code_sandbox/snaps/js-nan-05-code.png)
 
-<img alt="js-nan example 5 result" src="./code_sandbox/snaps/js-nan-05-result.png" />
+![js-nan example 5 result](./code_sandbox/snaps/js-nan-05-result.png)
 
 - [x] **Outcome:** `x == x` is **false**. `x === x` is also **false**.
 
@@ -46303,9 +46303,9 @@ Sandbox: `code_sandbox/js-nan/nan-strict-ne.html`
 NaN !== NaN;
 ```
 
-<img alt="js-nan example 6 source" src="./code_sandbox/snaps/js-nan-06-code.png" />
+![js-nan example 6 source](./code_sandbox/snaps/js-nan-06-code.png)
 
-<img alt="js-nan example 6 result" src="./code_sandbox/snaps/js-nan-06-result.png" />
+![js-nan example 6 result](./code_sandbox/snaps/js-nan-06-result.png)
 
 - [x] **Outcome:** `NaN !== NaN` is **true**. `NaN === NaN` is **false**.
 
@@ -46322,9 +46322,9 @@ Number.isNaN(NaN);
 Number.isNaN(100 / "Apple");
 ```
 
-<img alt="js-nan example 7 source" src="./code_sandbox/snaps/js-nan-07-code.png" />
+![js-nan example 7 source](./code_sandbox/snaps/js-nan-07-code.png)
 
-<img alt="js-nan example 7 result" src="./code_sandbox/snaps/js-nan-07-result.png" />
+![js-nan example 7 result](./code_sandbox/snaps/js-nan-07-result.png)
 
 - [x] **Outcome:** Both are **true** (the division already produced NaN).
 
@@ -46342,9 +46342,9 @@ isNaN("Apple");
 Number.isNaN("Apple");
 ```
 
-<img alt="js-nan example 8 source" src="./code_sandbox/snaps/js-nan-08-code.png" />
+![js-nan example 8 source](./code_sandbox/snaps/js-nan-08-code.png)
 
-<img alt="js-nan example 8 result" src="./code_sandbox/snaps/js-nan-08-result.png" />
+![js-nan example 8 result](./code_sandbox/snaps/js-nan-08-result.png)
 
 - [x] **Outcome:** isNaN("Apple") is **true**. Number.isNaN("Apple") is **false**. Prefer **Number.isNaN**.
 
@@ -46361,9 +46361,9 @@ let x = NaN;
 let y = 5;
 ```
 
-<img alt="js-nan example 9 source" src="./code_sandbox/snaps/js-nan-09-code.png" />
+![js-nan example 9 source](./code_sandbox/snaps/js-nan-09-code.png)
 
-<img alt="js-nan example 9 result" src="./code_sandbox/snaps/js-nan-09-result.png" />
+![js-nan example 9 result](./code_sandbox/snaps/js-nan-09-result.png)
 
 - [x] **Outcome:** NaN + 5 is **NaN**.
 
@@ -46380,9 +46380,9 @@ let x = 0 / 0;
 let inf = 1 / 0;
 ```
 
-<img alt="js-nan example 10 source" src="./code_sandbox/snaps/js-nan-10-code.png" />
+![js-nan example 10 source](./code_sandbox/snaps/js-nan-10-code.png)
 
-<img alt="js-nan example 10 result" src="./code_sandbox/snaps/js-nan-10-result.png" />
+![js-nan example 10 result](./code_sandbox/snaps/js-nan-10-result.png)
 
 - [x] **Outcome:** 0 / 0 is **NaN**. 1 / 0 is **Infinity**.
 
@@ -46398,9 +46398,9 @@ Sandbox: `code_sandbox/js-nan/object-is-nan.html`
 Object.is(NaN, NaN);
 ```
 
-<img alt="js-nan example 11 source" src="./code_sandbox/snaps/js-nan-11-code.png" />
+![js-nan example 11 source](./code_sandbox/snaps/js-nan-11-code.png)
 
-<img alt="js-nan example 11 result" src="./code_sandbox/snaps/js-nan-11-result.png" />
+![js-nan example 11 result](./code_sandbox/snaps/js-nan-11-result.png)
 
 - [x] **Outcome:** Object.is(NaN, NaN) is **true**.
 
@@ -46417,9 +46417,9 @@ parseInt("abc");
 parseFloat("abc");
 ```
 
-<img alt="js-nan example 12 source" src="./code_sandbox/snaps/js-nan-12-code.png" />
+![js-nan example 12 source](./code_sandbox/snaps/js-nan-12-code.png)
 
-<img alt="js-nan example 12 result" src="./code_sandbox/snaps/js-nan-12-result.png" />
+![js-nan example 12 result](./code_sandbox/snaps/js-nan-12-result.png)
 
 - [x] **Outcome:** Both are **NaN**.
 
@@ -46597,9 +46597,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let myList = fruits.toString();
 ```
 
-<img alt="js-tostring example 1 source" src="./code_sandbox/snaps/js-tostring-01-code.png" />
+![js-tostring example 1 source](./code_sandbox/snaps/js-tostring-01-code.png)
 
-<img alt="js-tostring example 1 result" src="./code_sandbox/snaps/js-tostring-01-result.png" />
+![js-tostring example 1 result](./code_sandbox/snaps/js-tostring-01-result.png)
 
 - [x] **Outcome:** myList is **"Banana,Orange,Apple,Mango"**.
 
@@ -46617,9 +46617,9 @@ const d = new Date();
 let text = d.toString();
 ```
 
-<img alt="js-tostring example 2 source" src="./code_sandbox/snaps/js-tostring-02-code.png" />
+![js-tostring example 2 source](./code_sandbox/snaps/js-tostring-02-code.png)
 
-<img alt="js-tostring example 2 result" src="./code_sandbox/snaps/js-tostring-02-result.png" />
+![js-tostring example 2 result](./code_sandbox/snaps/js-tostring-02-result.png)
 
 - [x] **Outcome:** The snap shows this engine's **current local** `toString()` (Mountain, GMT-0600 / GMT-0700).
 
@@ -46636,9 +46636,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 let text = d.toString();
 ```
 
-<img alt="js-tostring example 3 source" src="./code_sandbox/snaps/js-tostring-03-code.png" />
+![js-tostring example 3 source](./code_sandbox/snaps/js-tostring-03-code.png)
 
-<img alt="js-tostring example 3 result" src="./code_sandbox/snaps/js-tostring-03-result.png" />
+![js-tostring example 3 result](./code_sandbox/snaps/js-tostring-03-result.png)
 
 - [x] **Outcome:** text is **"Thu Mar 25 2021 09:30:45 GMT-0600 (Mountain Daylight Time)"**.
 
@@ -46655,9 +46655,9 @@ let x = 123;
 let text = x.toString();
 ```
 
-<img alt="js-tostring example 4 source" src="./code_sandbox/snaps/js-tostring-04-code.png" />
+![js-tostring example 4 source](./code_sandbox/snaps/js-tostring-04-code.png)
 
-<img alt="js-tostring example 4 result" src="./code_sandbox/snaps/js-tostring-04-result.png" />
+![js-tostring example 4 result](./code_sandbox/snaps/js-tostring-04-result.png)
 
 - [x] **Outcome:** text is **"123"**. typeof is **"string"**.
 
@@ -46674,9 +46674,9 @@ let x = 123;
 let text = x.toString(2);
 ```
 
-<img alt="js-tostring example 5 source" src="./code_sandbox/snaps/js-tostring-05-code.png" />
+![js-tostring example 5 source](./code_sandbox/snaps/js-tostring-05-code.png)
 
-<img alt="js-tostring example 5 result" src="./code_sandbox/snaps/js-tostring-05-result.png" />
+![js-tostring example 5 result](./code_sandbox/snaps/js-tostring-05-result.png)
 
 - [x] **Outcome:** text is **"1111011"** (123 in base 2).
 
@@ -46694,9 +46694,9 @@ function add(a, b) { return a + b; }
 let text = add.toString();
 ```
 
-<img alt="js-tostring example 6 source" src="./code_sandbox/snaps/js-tostring-06-code.png" />
+![js-tostring example 6 source](./code_sandbox/snaps/js-tostring-06-code.png)
 
-<img alt="js-tostring example 6 result" src="./code_sandbox/snaps/js-tostring-06-result.png" />
+![js-tostring example 6 result](./code_sandbox/snaps/js-tostring-06-result.png)
 
 - [x] **Outcome:** text is **"function add(a, b) { return a + b; }"**.
 
@@ -46716,9 +46716,9 @@ let person = {
 let text = person.toString();
 ```
 
-<img alt="js-tostring example 7 source" src="./code_sandbox/snaps/js-tostring-07-code.png" />
+![js-tostring example 7 source](./code_sandbox/snaps/js-tostring-07-code.png)
 
-<img alt="js-tostring example 7 result" src="./code_sandbox/snaps/js-tostring-07-result.png" />
+![js-tostring example 7 result](./code_sandbox/snaps/js-tostring-07-result.png)
 
 - [x] **Outcome:** text is **"[object Object]"**.
 
@@ -46741,9 +46741,9 @@ let person = {
 let text = person.toString();
 ```
 
-<img alt="js-tostring example 8 source" src="./code_sandbox/snaps/js-tostring-08-code.png" />
+![js-tostring example 8 source](./code_sandbox/snaps/js-tostring-08-code.png)
 
-<img alt="js-tostring example 8 result" src="./code_sandbox/snaps/js-tostring-08-result.png" />
+![js-tostring example 8 result](./code_sandbox/snaps/js-tostring-08-result.png)
 
 - [x] **Outcome:** text is **"John Doe"**. String(person) also uses the override: **"John Doe"**.
 
@@ -46760,9 +46760,9 @@ true.toString();
 false.toString();
 ```
 
-<img alt="js-tostring example 9 source" src="./code_sandbox/snaps/js-tostring-09-code.png" />
+![js-tostring example 9 source](./code_sandbox/snaps/js-tostring-09-code.png)
 
-<img alt="js-tostring example 9 result" src="./code_sandbox/snaps/js-tostring-09-result.png" />
+![js-tostring example 9 result](./code_sandbox/snaps/js-tostring-09-result.png)
 
 - [x] **Outcome:** true → **"true"**. false → **"false"**.
 
@@ -46779,9 +46779,9 @@ Sandbox: `code_sandbox/js-tostring/null-tostring-typeerror.html`
 null.toString();
 ```
 
-<img alt="js-tostring example 10 source" src="./code_sandbox/snaps/js-tostring-10-code.png" />
+![js-tostring example 10 source](./code_sandbox/snaps/js-tostring-10-code.png)
 
-<img alt="js-tostring example 10 result" src="./code_sandbox/snaps/js-tostring-10-result.png" />
+![js-tostring example 10 result](./code_sandbox/snaps/js-tostring-10-result.png)
 
 - [x] **Outcome:** null.toString() is **TypeError: Cannot read properties of null (reading 'toString')**. undefined.toString() is the same kind of TypeError. String(null) is **"null"**. String(undefined) is **"undefined"**.
 
@@ -46952,9 +46952,9 @@ let num = 1234567.89;
 let text = num.toLocaleString();
 ```
 
-<img alt="js-tolocalestring example 1 source" src="./code_sandbox/snaps/js-tolocalestring-01-code.png" />
+![js-tolocalestring example 1 source](./code_sandbox/snaps/js-tolocalestring-01-code.png)
 
-<img alt="js-tolocalestring example 1 result" src="./code_sandbox/snaps/js-tolocalestring-01-result.png" />
+![js-tolocalestring example 1 result](./code_sandbox/snaps/js-tolocalestring-01-result.png)
 
 - [x] **Outcome:** This engine printed **"1,234,567.89"**. navigator.language is **"en-US"**.
 
@@ -46974,9 +46974,9 @@ let de = num.toLocaleString("de-DE");
 let no = num.toLocaleString("no-NO");
 ```
 
-<img alt="js-tolocalestring example 2 source" src="./code_sandbox/snaps/js-tolocalestring-02-code.png" />
+![js-tolocalestring example 2 source](./code_sandbox/snaps/js-tolocalestring-02-code.png)
 
-<img alt="js-tolocalestring example 2 result" src="./code_sandbox/snaps/js-tolocalestring-02-result.png" />
+![js-tolocalestring example 2 result](./code_sandbox/snaps/js-tolocalestring-02-result.png)
 
 - [x] **Outcome:** en-US **"1,234,567.89"**. de-DE **"1.234.567,89"**. no-NO **"1 234 567,89"** (nbsp spaces).
 
@@ -46995,9 +46995,9 @@ let euros = price.toLocaleString("de-DE", {style:"currency", currency:"EUR"});
 let kroner = price.toLocaleString("no-NO", {style:"currency", currency:"NOK"});
 ```
 
-<img alt="js-tolocalestring example 3 source" src="./code_sandbox/snaps/js-tolocalestring-03-code.png" />
+![js-tolocalestring example 3 source](./code_sandbox/snaps/js-tolocalestring-03-code.png)
 
-<img alt="js-tolocalestring example 3 result" src="./code_sandbox/snaps/js-tolocalestring-03-result.png" />
+![js-tolocalestring example 3 result](./code_sandbox/snaps/js-tolocalestring-03-result.png)
 
 - [x] **Outcome:** USD **"$1,299.95"**. EUR **"1.299,95 €"** (nbsp before €). NOK **"1 299,95 kr"** (nbsp grouping).
 
@@ -47014,9 +47014,9 @@ let score = 0.875;
 let result = score.toLocaleString("en-US", {style:"percent"});
 ```
 
-<img alt="js-tolocalestring example 4 source" src="./code_sandbox/snaps/js-tolocalestring-04-code.png" />
+![js-tolocalestring example 4 source](./code_sandbox/snaps/js-tolocalestring-04-code.png)
 
-<img alt="js-tolocalestring example 4 result" src="./code_sandbox/snaps/js-tolocalestring-04-result.png" />
+![js-tolocalestring example 4 result](./code_sandbox/snaps/js-tolocalestring-04-result.png)
 
 - [x] **Outcome:** result is **"88%"**.
 
@@ -47036,9 +47036,9 @@ let text = num.toLocaleString("en-US", {
 });
 ```
 
-<img alt="js-tolocalestring example 5 source" src="./code_sandbox/snaps/js-tolocalestring-05-code.png" />
+![js-tolocalestring example 5 source](./code_sandbox/snaps/js-tolocalestring-05-code.png)
 
-<img alt="js-tolocalestring example 5 result" src="./code_sandbox/snaps/js-tolocalestring-05-result.png" />
+![js-tolocalestring example 5 result](./code_sandbox/snaps/js-tolocalestring-05-result.png)
 
 - [x] **Outcome:** text is **"3.14"**.
 
@@ -47056,9 +47056,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 let text = d.toLocaleString("en-US");
 ```
 
-<img alt="js-tolocalestring example 6 source" src="./code_sandbox/snaps/js-tolocalestring-06-code.png" />
+![js-tolocalestring example 6 source](./code_sandbox/snaps/js-tolocalestring-06-code.png)
 
-<img alt="js-tolocalestring example 6 result" src="./code_sandbox/snaps/js-tolocalestring-06-result.png" />
+![js-tolocalestring example 6 result](./code_sandbox/snaps/js-tolocalestring-06-result.png)
 
 - [x] **Outcome:** This engine printed **"3/25/2021, 9:30:45 AM"** (Mountain, UTC−6).
 
@@ -47080,9 +47080,9 @@ let text = d.toLocaleString("en-US", {
 });
 ```
 
-<img alt="js-tolocalestring example 7 source" src="./code_sandbox/snaps/js-tolocalestring-07-code.png" />
+![js-tolocalestring example 7 source](./code_sandbox/snaps/js-tolocalestring-07-code.png)
 
-<img alt="js-tolocalestring example 7 result" src="./code_sandbox/snaps/js-tolocalestring-07-result.png" />
+![js-tolocalestring example 7 result](./code_sandbox/snaps/js-tolocalestring-07-result.png)
 
 - [x] **Outcome:** This engine printed **"Thursday, March 25, 2021"** (local calendar day — still March 25).
 
@@ -47106,9 +47106,9 @@ let size = 1536000;
 let text = fileSize(size);
 ```
 
-<img alt="js-tolocalestring example 8 source" src="./code_sandbox/snaps/js-tolocalestring-08-code.png" />
+![js-tolocalestring example 8 source](./code_sandbox/snaps/js-tolocalestring-08-code.png)
 
-<img alt="js-tolocalestring example 8 result" src="./code_sandbox/snaps/js-tolocalestring-08-result.png" />
+![js-tolocalestring example 8 result](./code_sandbox/snaps/js-tolocalestring-08-result.png)
 
 - [x] **Outcome:** 1536000 bytes → **"1.5 MB"** in this engine.
 
@@ -47129,9 +47129,9 @@ const dates = [
 let text = dates.toLocaleString("en-US");
 ```
 
-<img alt="js-tolocalestring example 9 source" src="./code_sandbox/snaps/js-tolocalestring-09-code.png" />
+![js-tolocalestring example 9 source](./code_sandbox/snaps/js-tolocalestring-09-code.png)
 
-<img alt="js-tolocalestring example 9 result" src="./code_sandbox/snaps/js-tolocalestring-09-result.png" />
+![js-tolocalestring example 9 result](./code_sandbox/snaps/js-tolocalestring-09-result.png)
 
 - [x] **Outcome:** This engine printed **"12/31/2025, 5:00:00 PM,12/23/2026, 5:00:00 PM"** — not Jan 1 / Dec 24 local. ISO stays **2026-01-01T00:00:00.000Z** and **2026-12-24T00:00:00.000Z**.
 
@@ -47148,9 +47148,9 @@ let n = 1234567890123456789n;
 let text = n.toLocaleString("en-US");
 ```
 
-<img alt="js-tolocalestring example 10 source" src="./code_sandbox/snaps/js-tolocalestring-10-code.png" />
+![js-tolocalestring example 10 source](./code_sandbox/snaps/js-tolocalestring-10-code.png)
 
-<img alt="js-tolocalestring example 10 result" src="./code_sandbox/snaps/js-tolocalestring-10-result.png" />
+![js-tolocalestring example 10 result](./code_sandbox/snaps/js-tolocalestring-10-result.png)
 
 - [x] **Outcome:** This engine printed **"1,234,567,890,123,456,789"**.
 
@@ -47347,9 +47347,9 @@ let result1 = ('5' + '2');
 let result2 = ('5' - '2');
 ```
 
-<img alt="js-type-coercion example 1 source" src="./code_sandbox/snaps/js-type-coercion-01-code.png" />
+![js-type-coercion example 1 source](./code_sandbox/snaps/js-type-coercion-01-code.png)
 
-<img alt="js-type-coercion example 1 result" src="./code_sandbox/snaps/js-type-coercion-01-result.png" />
+![js-type-coercion example 1 result](./code_sandbox/snaps/js-type-coercion-01-result.png)
 
 - [x] **Outcome:** result1 is **"52"** (string). result2 is **3** (number).
 
@@ -47365,9 +47365,9 @@ Sandbox: `code_sandbox/js-type-coercion/string-plus.html`
 let x = "5" + 2;
 ```
 
-<img alt="js-type-coercion example 2 source" src="./code_sandbox/snaps/js-type-coercion-02-code.png" />
+![js-type-coercion example 2 source](./code_sandbox/snaps/js-type-coercion-02-code.png)
 
-<img alt="js-type-coercion example 2 result" src="./code_sandbox/snaps/js-type-coercion-02-result.png" />
+![js-type-coercion example 2 result](./code_sandbox/snaps/js-type-coercion-02-result.png)
 
 - [x] **Outcome:** x is **"52"**. typeof is **"string"**.
 
@@ -47383,9 +47383,9 @@ Sandbox: `code_sandbox/js-type-coercion/numeric-minus.html`
 let x = "5" - 2;
 ```
 
-<img alt="js-type-coercion example 3 source" src="./code_sandbox/snaps/js-type-coercion-03-code.png" />
+![js-type-coercion example 3 source](./code_sandbox/snaps/js-type-coercion-03-code.png)
 
-<img alt="js-type-coercion example 3 result" src="./code_sandbox/snaps/js-type-coercion-03-result.png" />
+![js-type-coercion example 3 result](./code_sandbox/snaps/js-type-coercion-03-result.png)
 
 - [x] **Outcome:** x is **3**. typeof is **"number"**.
 
@@ -47401,9 +47401,9 @@ Sandbox: `code_sandbox/js-type-coercion/numeric-times.html`
 let x = "5" * 2;
 ```
 
-<img alt="js-type-coercion example 4 source" src="./code_sandbox/snaps/js-type-coercion-04-code.png" />
+![js-type-coercion example 4 source](./code_sandbox/snaps/js-type-coercion-04-code.png)
 
-<img alt="js-type-coercion example 4 result" src="./code_sandbox/snaps/js-type-coercion-04-result.png" />
+![js-type-coercion example 4 result](./code_sandbox/snaps/js-type-coercion-04-result.png)
 
 - [x] **Outcome:** x is **10**.
 
@@ -47419,9 +47419,9 @@ Sandbox: `code_sandbox/js-type-coercion/numeric-div.html`
 let x = "5" / 2;
 ```
 
-<img alt="js-type-coercion example 5 source" src="./code_sandbox/snaps/js-type-coercion-05-code.png" />
+![js-type-coercion example 5 source](./code_sandbox/snaps/js-type-coercion-05-code.png)
 
-<img alt="js-type-coercion example 5 result" src="./code_sandbox/snaps/js-type-coercion-05-result.png" />
+![js-type-coercion example 5 result](./code_sandbox/snaps/js-type-coercion-05-result.png)
 
 - [x] **Outcome:** x is **2.5**.
 
@@ -47437,9 +47437,9 @@ Sandbox: `code_sandbox/js-type-coercion/numeric-mod.html`
 let x = "5" % 2;
 ```
 
-<img alt="js-type-coercion example 6 source" src="./code_sandbox/snaps/js-type-coercion-06-code.png" />
+![js-type-coercion example 6 source](./code_sandbox/snaps/js-type-coercion-06-code.png)
 
-<img alt="js-type-coercion example 6 result" src="./code_sandbox/snaps/js-type-coercion-06-result.png" />
+![js-type-coercion example 6 result](./code_sandbox/snaps/js-type-coercion-06-result.png)
 
 - [x] **Outcome:** x is **1**.
 
@@ -47455,9 +47455,9 @@ Sandbox: `code_sandbox/js-type-coercion/unary-plus.html`
 let x = +"5";
 ```
 
-<img alt="js-type-coercion example 7 source" src="./code_sandbox/snaps/js-type-coercion-07-code.png" />
+![js-type-coercion example 7 source](./code_sandbox/snaps/js-type-coercion-07-code.png)
 
-<img alt="js-type-coercion example 7 result" src="./code_sandbox/snaps/js-type-coercion-07-result.png" />
+![js-type-coercion example 7 result](./code_sandbox/snaps/js-type-coercion-07-result.png)
 
 - [x] **Outcome:** x is **5**. typeof is **"number"**.
 
@@ -47473,9 +47473,9 @@ Sandbox: `code_sandbox/js-type-coercion/loose-eq-number-string.html`
 let x = (5 == "5");
 ```
 
-<img alt="js-type-coercion example 8 source" src="./code_sandbox/snaps/js-type-coercion-08-code.png" />
+![js-type-coercion example 8 source](./code_sandbox/snaps/js-type-coercion-08-code.png)
 
-<img alt="js-type-coercion example 8 result" src="./code_sandbox/snaps/js-type-coercion-08-result.png" />
+![js-type-coercion example 8 result](./code_sandbox/snaps/js-type-coercion-08-result.png)
 
 - [x] **Outcome:** x is **true**.
 
@@ -47491,9 +47491,9 @@ Sandbox: `code_sandbox/js-type-coercion/strict-eq-number-string.html`
 let x = (5 === "5");
 ```
 
-<img alt="js-type-coercion example 9 source" src="./code_sandbox/snaps/js-type-coercion-09-code.png" />
+![js-type-coercion example 9 source](./code_sandbox/snaps/js-type-coercion-09-code.png)
 
-<img alt="js-type-coercion example 9 result" src="./code_sandbox/snaps/js-type-coercion-09-result.png" />
+![js-type-coercion example 9 result](./code_sandbox/snaps/js-type-coercion-09-result.png)
 
 - [x] **Outcome:** x is **false**.
 
@@ -47509,9 +47509,9 @@ Sandbox: `code_sandbox/js-type-coercion/abc-minus-1.html`
 let x = "abc" - 1;
 ```
 
-<img alt="js-type-coercion example 10 source" src="./code_sandbox/snaps/js-type-coercion-10-code.png" />
+![js-type-coercion example 10 source](./code_sandbox/snaps/js-type-coercion-10-code.png)
 
-<img alt="js-type-coercion example 10 result" src="./code_sandbox/snaps/js-type-coercion-10-result.png" />
+![js-type-coercion example 10 result](./code_sandbox/snaps/js-type-coercion-10-result.png)
 
 - [x] **Outcome:** x is **NaN**.
 
@@ -47528,9 +47528,9 @@ Sandbox: `code_sandbox/js-type-coercion/falsy-0.html`
 !!0;
 ```
 
-<img alt="js-type-coercion example 11 source" src="./code_sandbox/snaps/js-type-coercion-11-code.png" />
+![js-type-coercion example 11 source](./code_sandbox/snaps/js-type-coercion-11-code.png)
 
-<img alt="js-type-coercion example 11 result" src="./code_sandbox/snaps/js-type-coercion-11-result.png" />
+![js-type-coercion example 11 result](./code_sandbox/snaps/js-type-coercion-11-result.png)
 
 - [x] **Outcome:** `!!0` is **false**.
 
@@ -47546,9 +47546,9 @@ Sandbox: `code_sandbox/js-type-coercion/falsy-empty-string.html`
 !!"";
 ```
 
-<img alt="js-type-coercion example 12 source" src="./code_sandbox/snaps/js-type-coercion-12-code.png" />
+![js-type-coercion example 12 source](./code_sandbox/snaps/js-type-coercion-12-code.png)
 
-<img alt="js-type-coercion example 12 result" src="./code_sandbox/snaps/js-type-coercion-12-result.png" />
+![js-type-coercion example 12 result](./code_sandbox/snaps/js-type-coercion-12-result.png)
 
 - [x] **Outcome:** `!!""` is **false**.
 
@@ -47564,9 +47564,9 @@ Sandbox: `code_sandbox/js-type-coercion/falsy-null.html`
 !!null;
 ```
 
-<img alt="js-type-coercion example 13 source" src="./code_sandbox/snaps/js-type-coercion-13-code.png" />
+![js-type-coercion example 13 source](./code_sandbox/snaps/js-type-coercion-13-code.png)
 
-<img alt="js-type-coercion example 13 result" src="./code_sandbox/snaps/js-type-coercion-13-result.png" />
+![js-type-coercion example 13 result](./code_sandbox/snaps/js-type-coercion-13-result.png)
 
 - [x] **Outcome:** `!!null` is **false**.
 
@@ -47582,9 +47582,9 @@ Sandbox: `code_sandbox/js-type-coercion/falsy-undefined.html`
 !!undefined;
 ```
 
-<img alt="js-type-coercion example 14 source" src="./code_sandbox/snaps/js-type-coercion-14-code.png" />
+![js-type-coercion example 14 source](./code_sandbox/snaps/js-type-coercion-14-code.png)
 
-<img alt="js-type-coercion example 14 result" src="./code_sandbox/snaps/js-type-coercion-14-result.png" />
+![js-type-coercion example 14 result](./code_sandbox/snaps/js-type-coercion-14-result.png)
 
 - [x] **Outcome:** `!!undefined` is **false**.
 
@@ -47600,9 +47600,9 @@ Sandbox: `code_sandbox/js-type-coercion/falsy-nan.html`
 !!NaN;
 ```
 
-<img alt="js-type-coercion example 15 source" src="./code_sandbox/snaps/js-type-coercion-15-code.png" />
+![js-type-coercion example 15 source](./code_sandbox/snaps/js-type-coercion-15-code.png)
 
-<img alt="js-type-coercion example 15 result" src="./code_sandbox/snaps/js-type-coercion-15-result.png" />
+![js-type-coercion example 15 result](./code_sandbox/snaps/js-type-coercion-15-result.png)
 
 - [x] **Outcome:** `!!NaN` is **false**.
 
@@ -47618,9 +47618,9 @@ Sandbox: `code_sandbox/js-type-coercion/falsy-false.html`
 !!false;
 ```
 
-<img alt="js-type-coercion example 16 source" src="./code_sandbox/snaps/js-type-coercion-16-code.png" />
+![js-type-coercion example 16 source](./code_sandbox/snaps/js-type-coercion-16-code.png)
 
-<img alt="js-type-coercion example 16 result" src="./code_sandbox/snaps/js-type-coercion-16-result.png" />
+![js-type-coercion example 16 result](./code_sandbox/snaps/js-type-coercion-16-result.png)
 
 - [x] **Outcome:** `!!false` is **false**.
 
@@ -47636,9 +47636,9 @@ Sandbox: `code_sandbox/js-type-coercion/truthy-object.html`
 !!{};
 ```
 
-<img alt="js-type-coercion example 17 source" src="./code_sandbox/snaps/js-type-coercion-17-code.png" />
+![js-type-coercion example 17 source](./code_sandbox/snaps/js-type-coercion-17-code.png)
 
-<img alt="js-type-coercion example 17 result" src="./code_sandbox/snaps/js-type-coercion-17-result.png" />
+![js-type-coercion example 17 result](./code_sandbox/snaps/js-type-coercion-17-result.png)
 
 - [x] **Outcome:** `!!{}` is **true**.
 
@@ -47654,9 +47654,9 @@ Sandbox: `code_sandbox/js-type-coercion/truthy-array.html`
 !![];
 ```
 
-<img alt="js-type-coercion example 18 source" src="./code_sandbox/snaps/js-type-coercion-18-code.png" />
+![js-type-coercion example 18 source](./code_sandbox/snaps/js-type-coercion-18-code.png)
 
-<img alt="js-type-coercion example 18 result" src="./code_sandbox/snaps/js-type-coercion-18-result.png" />
+![js-type-coercion example 18 result](./code_sandbox/snaps/js-type-coercion-18-result.png)
 
 - [x] **Outcome:** `!![]` is **true**.
 
@@ -47673,9 +47673,9 @@ Sandbox: `code_sandbox/js-type-coercion/loose-eq-zero-false.html`
 0 === false;
 ```
 
-<img alt="js-type-coercion example 19 source" src="./code_sandbox/snaps/js-type-coercion-19-code.png" />
+![js-type-coercion example 19 source](./code_sandbox/snaps/js-type-coercion-19-code.png)
 
-<img alt="js-type-coercion example 19 result" src="./code_sandbox/snaps/js-type-coercion-19-result.png" />
+![js-type-coercion example 19 result](./code_sandbox/snaps/js-type-coercion-19-result.png)
 
 - [x] **Outcome:** `==` is **true**. `===` is **false**.
 
@@ -47691,9 +47691,9 @@ Sandbox: `code_sandbox/js-type-coercion/loose-eq-empty-zero.html`
 "" == 0;
 ```
 
-<img alt="js-type-coercion example 20 source" src="./code_sandbox/snaps/js-type-coercion-20-code.png" />
+![js-type-coercion example 20 source](./code_sandbox/snaps/js-type-coercion-20-code.png)
 
-<img alt="js-type-coercion example 20 result" src="./code_sandbox/snaps/js-type-coercion-20-result.png" />
+![js-type-coercion example 20 result](./code_sandbox/snaps/js-type-coercion-20-result.png)
 
 - [x] **Outcome:** `"" == 0` is **true**. `"" === 0` is **false**.
 
@@ -47948,9 +47948,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-3-14.html`
 Number("3.14");
 ```
 
-<img alt="js-type-conversion example 1 source" src="./code_sandbox/snaps/js-type-conversion-01-code.png" />
+![js-type-conversion example 1 source](./code_sandbox/snaps/js-type-conversion-01-code.png)
 
-<img alt="js-type-conversion example 1 result" src="./code_sandbox/snaps/js-type-conversion-01-result.png" />
+![js-type-conversion example 1 result](./code_sandbox/snaps/js-type-conversion-01-result.png)
 
 - [x] **Outcome:** Number("3.14") is **3.14**.
 
@@ -47966,9 +47966,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-math-pi.html`
 Number(Math.PI);
 ```
 
-<img alt="js-type-conversion example 2 source" src="./code_sandbox/snaps/js-type-conversion-02-code.png" />
+![js-type-conversion example 2 source](./code_sandbox/snaps/js-type-conversion-02-code.png)
 
-<img alt="js-type-conversion example 2 result" src="./code_sandbox/snaps/js-type-conversion-02-result.png" />
+![js-type-conversion example 2 result](./code_sandbox/snaps/js-type-conversion-02-result.png)
 
 - [x] **Outcome:** Number(Math.PI) is **3.141592653589793**.
 
@@ -47984,9 +47984,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-space.html`
 Number(" ");
 ```
 
-<img alt="js-type-conversion example 3 source" src="./code_sandbox/snaps/js-type-conversion-03-code.png" />
+![js-type-conversion example 3 source](./code_sandbox/snaps/js-type-conversion-03-code.png)
 
-<img alt="js-type-conversion example 3 result" src="./code_sandbox/snaps/js-type-conversion-03-result.png" />
+![js-type-conversion example 3 result](./code_sandbox/snaps/js-type-conversion-03-result.png)
 
 - [x] **Outcome:** Number(" ") is **0**.
 
@@ -48002,9 +48002,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-empty.html`
 Number("");
 ```
 
-<img alt="js-type-conversion example 4 source" src="./code_sandbox/snaps/js-type-conversion-04-code.png" />
+![js-type-conversion example 4 source](./code_sandbox/snaps/js-type-conversion-04-code.png)
 
-<img alt="js-type-conversion example 4 result" src="./code_sandbox/snaps/js-type-conversion-04-result.png" />
+![js-type-conversion example 4 result](./code_sandbox/snaps/js-type-conversion-04-result.png)
 
 - [x] **Outcome:** Number("") is **0**.
 
@@ -48020,9 +48020,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-99-88.html`
 Number("99 88");
 ```
 
-<img alt="js-type-conversion example 5 source" src="./code_sandbox/snaps/js-type-conversion-05-code.png" />
+![js-type-conversion example 5 source](./code_sandbox/snaps/js-type-conversion-05-code.png)
 
-<img alt="js-type-conversion example 5 result" src="./code_sandbox/snaps/js-type-conversion-05-result.png" />
+![js-type-conversion example 5 result](./code_sandbox/snaps/js-type-conversion-05-result.png)
 
 - [x] **Outcome:** Number("99 88") is **NaN**.
 
@@ -48038,9 +48038,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-john.html`
 Number("John");
 ```
 
-<img alt="js-type-conversion example 6 source" src="./code_sandbox/snaps/js-type-conversion-06-code.png" />
+![js-type-conversion example 6 source](./code_sandbox/snaps/js-type-conversion-06-code.png)
 
-<img alt="js-type-conversion example 6 result" src="./code_sandbox/snaps/js-type-conversion-06-result.png" />
+![js-type-conversion example 6 result](./code_sandbox/snaps/js-type-conversion-06-result.png)
 
 - [x] **Outcome:** Number("John") is **NaN**.
 
@@ -48057,9 +48057,9 @@ parseFloat("10.33");
 parseFloat("99 88");
 ```
 
-<img alt="js-type-conversion example 7 source" src="./code_sandbox/snaps/js-type-conversion-07-code.png" />
+![js-type-conversion example 7 source](./code_sandbox/snaps/js-type-conversion-07-code.png)
 
-<img alt="js-type-conversion example 7 result" src="./code_sandbox/snaps/js-type-conversion-07-result.png" />
+![js-type-conversion example 7 result](./code_sandbox/snaps/js-type-conversion-07-result.png)
 
 - [x] **Outcome:** parseFloat("10.33") is **10.33**. parseFloat("99 88") is **99** (Number("99 88") was NaN).
 
@@ -48076,9 +48076,9 @@ parseInt("10.33");
 parseInt("99 88");
 ```
 
-<img alt="js-type-conversion example 8 source" src="./code_sandbox/snaps/js-type-conversion-08-code.png" />
+![js-type-conversion example 8 source](./code_sandbox/snaps/js-type-conversion-08-code.png)
 
-<img alt="js-type-conversion example 8 result" src="./code_sandbox/snaps/js-type-conversion-08-result.png" />
+![js-type-conversion example 8 result](./code_sandbox/snaps/js-type-conversion-08-result.png)
 
 - [x] **Outcome:** parseInt("10.33") is **10**. parseInt("99 88") is **99**.
 
@@ -48095,9 +48095,9 @@ let y = "5";
 let x = + y;
 ```
 
-<img alt="js-type-conversion example 9 source" src="./code_sandbox/snaps/js-type-conversion-09-code.png" />
+![js-type-conversion example 9 source](./code_sandbox/snaps/js-type-conversion-09-code.png)
 
-<img alt="js-type-conversion example 9 result" src="./code_sandbox/snaps/js-type-conversion-09-result.png" />
+![js-type-conversion example 9 result](./code_sandbox/snaps/js-type-conversion-09-result.png)
 
 - [x] **Outcome:** y is **"5"** (string). x is **5** (number).
 
@@ -48114,9 +48114,9 @@ let y = "John";
 let x = + y;
 ```
 
-<img alt="js-type-conversion example 10 source" src="./code_sandbox/snaps/js-type-conversion-10-code.png" />
+![js-type-conversion example 10 source](./code_sandbox/snaps/js-type-conversion-10-code.png)
 
-<img alt="js-type-conversion example 10 result" src="./code_sandbox/snaps/js-type-conversion-10-result.png" />
+![js-type-conversion example 10 result](./code_sandbox/snaps/js-type-conversion-10-result.png)
 
 - [x] **Outcome:** x is **NaN**. typeof is **"number"**.
 
@@ -48133,9 +48133,9 @@ let x = 123;
 String(x);
 ```
 
-<img alt="js-type-conversion example 11 source" src="./code_sandbox/snaps/js-type-conversion-11-code.png" />
+![js-type-conversion example 11 source](./code_sandbox/snaps/js-type-conversion-11-code.png)
 
-<img alt="js-type-conversion example 11 result" src="./code_sandbox/snaps/js-type-conversion-11-result.png" />
+![js-type-conversion example 11 result](./code_sandbox/snaps/js-type-conversion-11-result.png)
 
 - [x] **Outcome:** String(x) is **"123"**. typeof is **"string"**.
 
@@ -48151,9 +48151,9 @@ Sandbox: `code_sandbox/js-type-conversion/string-literal.html`
 String(123);
 ```
 
-<img alt="js-type-conversion example 12 source" src="./code_sandbox/snaps/js-type-conversion-12-code.png" />
+![js-type-conversion example 12 source](./code_sandbox/snaps/js-type-conversion-12-code.png)
 
-<img alt="js-type-conversion example 12 result" src="./code_sandbox/snaps/js-type-conversion-12-result.png" />
+![js-type-conversion example 12 result](./code_sandbox/snaps/js-type-conversion-12-result.png)
 
 - [x] **Outcome:** String(123) is **"123"**.
 
@@ -48169,9 +48169,9 @@ Sandbox: `code_sandbox/js-type-conversion/string-expression.html`
 String(100 + 23);
 ```
 
-<img alt="js-type-conversion example 13 source" src="./code_sandbox/snaps/js-type-conversion-13-code.png" />
+![js-type-conversion example 13 source](./code_sandbox/snaps/js-type-conversion-13-code.png)
 
-<img alt="js-type-conversion example 13 result" src="./code_sandbox/snaps/js-type-conversion-13-result.png" />
+![js-type-conversion example 13 result](./code_sandbox/snaps/js-type-conversion-13-result.png)
 
 - [x] **Outcome:** String(100 + 23) is **"123"**.
 
@@ -48188,9 +48188,9 @@ let x = 123;
 x.toString();
 ```
 
-<img alt="js-type-conversion example 14 source" src="./code_sandbox/snaps/js-type-conversion-14-code.png" />
+![js-type-conversion example 14 source](./code_sandbox/snaps/js-type-conversion-14-code.png)
 
-<img alt="js-type-conversion example 14 result" src="./code_sandbox/snaps/js-type-conversion-14-result.png" />
+![js-type-conversion example 14 result](./code_sandbox/snaps/js-type-conversion-14-result.png)
 
 - [x] **Outcome:** x.toString() is **"123"**.
 
@@ -48206,9 +48206,9 @@ Sandbox: `code_sandbox/js-type-conversion/tostring-literal.html`
 (123).toString();
 ```
 
-<img alt="js-type-conversion example 15 source" src="./code_sandbox/snaps/js-type-conversion-15-code.png" />
+![js-type-conversion example 15 source](./code_sandbox/snaps/js-type-conversion-15-code.png)
 
-<img alt="js-type-conversion example 15 result" src="./code_sandbox/snaps/js-type-conversion-15-result.png" />
+![js-type-conversion example 15 result](./code_sandbox/snaps/js-type-conversion-15-result.png)
 
 - [x] **Outcome:** (123).toString() is **"123"**.
 
@@ -48224,9 +48224,9 @@ Sandbox: `code_sandbox/js-type-conversion/tostring-expression.html`
 (100 + 23).toString();
 ```
 
-<img alt="js-type-conversion example 16 source" src="./code_sandbox/snaps/js-type-conversion-16-code.png" />
+![js-type-conversion example 16 source](./code_sandbox/snaps/js-type-conversion-16-code.png)
 
-<img alt="js-type-conversion example 16 result" src="./code_sandbox/snaps/js-type-conversion-16-result.png" />
+![js-type-conversion example 16 result](./code_sandbox/snaps/js-type-conversion-16-result.png)
 
 - [x] **Outcome:** (100 + 23).toString() is **"123"**.
 
@@ -48243,9 +48243,9 @@ let x = 123;
 x.toExponential();
 ```
 
-<img alt="js-type-conversion example 17 source" src="./code_sandbox/snaps/js-type-conversion-17-code.png" />
+![js-type-conversion example 17 source](./code_sandbox/snaps/js-type-conversion-17-code.png)
 
-<img alt="js-type-conversion example 17 result" src="./code_sandbox/snaps/js-type-conversion-17-result.png" />
+![js-type-conversion example 17 result](./code_sandbox/snaps/js-type-conversion-17-result.png)
 
 - [x] **Outcome:** this engine printed **"1.23e+2"** for 123.
 
@@ -48262,9 +48262,9 @@ let x = 123.456;
 x.toFixed(2);
 ```
 
-<img alt="js-type-conversion example 18 source" src="./code_sandbox/snaps/js-type-conversion-18-code.png" />
+![js-type-conversion example 18 source](./code_sandbox/snaps/js-type-conversion-18-code.png)
 
-<img alt="js-type-conversion example 18 result" src="./code_sandbox/snaps/js-type-conversion-18-result.png" />
+![js-type-conversion example 18 result](./code_sandbox/snaps/js-type-conversion-18-result.png)
 
 - [x] **Outcome:** toFixed(2) is **"123.46"**.
 
@@ -48281,9 +48281,9 @@ let x = 123.456;
 x.toPrecision(4);
 ```
 
-<img alt="js-type-conversion example 19 source" src="./code_sandbox/snaps/js-type-conversion-19-code.png" />
+![js-type-conversion example 19 source](./code_sandbox/snaps/js-type-conversion-19-code.png)
 
-<img alt="js-type-conversion example 19 result" src="./code_sandbox/snaps/js-type-conversion-19-result.png" />
+![js-type-conversion example 19 result](./code_sandbox/snaps/js-type-conversion-19-result.png)
 
 - [x] **Outcome:** toPrecision(4) is **"123.5"**.
 
@@ -48302,9 +48302,9 @@ Number(d);
 d.getTime();
 ```
 
-<img alt="js-type-conversion example 20 source" src="./code_sandbox/snaps/js-type-conversion-20-code.png" />
+![js-type-conversion example 20 source](./code_sandbox/snaps/js-type-conversion-20-code.png)
 
-<img alt="js-type-conversion example 20 result" src="./code_sandbox/snaps/js-type-conversion-20-result.png" />
+![js-type-conversion example 20 result](./code_sandbox/snaps/js-type-conversion-20-result.png)
 
 - [x] **Outcome:** Both are **1616686245123**.
 
@@ -48321,9 +48321,9 @@ Sandbox: `code_sandbox/js-type-conversion/string-date-now.html`
 String(Date());
 ```
 
-<img alt="js-type-conversion example 21 source" src="./code_sandbox/snaps/js-type-conversion-21-code.png" />
+![js-type-conversion example 21 source](./code_sandbox/snaps/js-type-conversion-21-code.png)
 
-<img alt="js-type-conversion example 21 result" src="./code_sandbox/snaps/js-type-conversion-21-result.png" />
+![js-type-conversion example 21 result](./code_sandbox/snaps/js-type-conversion-21-result.png)
 
 - [x] **Outcome:** The snap shows this engine's **current local** date/time string.
 
@@ -48339,9 +48339,9 @@ Sandbox: `code_sandbox/js-type-conversion/date-fn-tostring.html`
 Date().toString();
 ```
 
-<img alt="js-type-conversion example 22 source" src="./code_sandbox/snaps/js-type-conversion-22-code.png" />
+![js-type-conversion example 22 source](./code_sandbox/snaps/js-type-conversion-22-code.png)
 
-<img alt="js-type-conversion example 22 result" src="./code_sandbox/snaps/js-type-conversion-22-result.png" />
+![js-type-conversion example 22 result](./code_sandbox/snaps/js-type-conversion-22-result.png)
 
 - [x] **Outcome:** The snap shows this engine's **current local** date/time string (same family as String(Date())).
 
@@ -48359,9 +48359,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getFullYear().toString();
 ```
 
-<img alt="js-type-conversion example 23 source" src="./code_sandbox/snaps/js-type-conversion-23-code.png" />
+![js-type-conversion example 23 source](./code_sandbox/snaps/js-type-conversion-23-code.png)
 
-<img alt="js-type-conversion example 23 result" src="./code_sandbox/snaps/js-type-conversion-23-result.png" />
+![js-type-conversion example 23 result](./code_sandbox/snaps/js-type-conversion-23-result.png)
 
 - [x] **Outcome:** getFullYear is **2021**. toString is **"2021"**.
 
@@ -48378,9 +48378,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getMonth().toString();
 ```
 
-<img alt="js-type-conversion example 24 source" src="./code_sandbox/snaps/js-type-conversion-24-code.png" />
+![js-type-conversion example 24 source](./code_sandbox/snaps/js-type-conversion-24-code.png)
 
-<img alt="js-type-conversion example 24 result" src="./code_sandbox/snaps/js-type-conversion-24-result.png" />
+![js-type-conversion example 24 result](./code_sandbox/snaps/js-type-conversion-24-result.png)
 
 - [x] **Outcome:** getMonth is **2**. toString is **"2"**.
 
@@ -48397,9 +48397,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getDate().toString();
 ```
 
-<img alt="js-type-conversion example 25 source" src="./code_sandbox/snaps/js-type-conversion-25-code.png" />
+![js-type-conversion example 25 source](./code_sandbox/snaps/js-type-conversion-25-code.png)
 
-<img alt="js-type-conversion example 25 result" src="./code_sandbox/snaps/js-type-conversion-25-result.png" />
+![js-type-conversion example 25 result](./code_sandbox/snaps/js-type-conversion-25-result.png)
 
 - [x] **Outcome:** getDate is **25**. toString is **"25"**.
 
@@ -48416,9 +48416,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getDay().toString();
 ```
 
-<img alt="js-type-conversion example 26 source" src="./code_sandbox/snaps/js-type-conversion-26-code.png" />
+![js-type-conversion example 26 source](./code_sandbox/snaps/js-type-conversion-26-code.png)
 
-<img alt="js-type-conversion example 26 result" src="./code_sandbox/snaps/js-type-conversion-26-result.png" />
+![js-type-conversion example 26 result](./code_sandbox/snaps/js-type-conversion-26-result.png)
 
 - [x] **Outcome:** getDay is **4**. toString is **"4"**.
 
@@ -48435,9 +48435,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getHours().toString();
 ```
 
-<img alt="js-type-conversion example 27 source" src="./code_sandbox/snaps/js-type-conversion-27-code.png" />
+![js-type-conversion example 27 source](./code_sandbox/snaps/js-type-conversion-27-code.png)
 
-<img alt="js-type-conversion example 27 result" src="./code_sandbox/snaps/js-type-conversion-27-result.png" />
+![js-type-conversion example 27 result](./code_sandbox/snaps/js-type-conversion-27-result.png)
 
 - [x] **Outcome:** getHours is **9**. toString is **"9"**.
 
@@ -48454,9 +48454,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getMinutes().toString();
 ```
 
-<img alt="js-type-conversion example 28 source" src="./code_sandbox/snaps/js-type-conversion-28-code.png" />
+![js-type-conversion example 28 source](./code_sandbox/snaps/js-type-conversion-28-code.png)
 
-<img alt="js-type-conversion example 28 result" src="./code_sandbox/snaps/js-type-conversion-28-result.png" />
+![js-type-conversion example 28 result](./code_sandbox/snaps/js-type-conversion-28-result.png)
 
 - [x] **Outcome:** getMinutes is **30**. toString is **"30"**.
 
@@ -48473,9 +48473,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getSeconds().toString();
 ```
 
-<img alt="js-type-conversion example 29 source" src="./code_sandbox/snaps/js-type-conversion-29-code.png" />
+![js-type-conversion example 29 source](./code_sandbox/snaps/js-type-conversion-29-code.png)
 
-<img alt="js-type-conversion example 29 result" src="./code_sandbox/snaps/js-type-conversion-29-result.png" />
+![js-type-conversion example 29 result](./code_sandbox/snaps/js-type-conversion-29-result.png)
 
 - [x] **Outcome:** getSeconds is **45**. toString is **"45"**.
 
@@ -48492,9 +48492,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.getMilliseconds().toString();
 ```
 
-<img alt="js-type-conversion example 30 source" src="./code_sandbox/snaps/js-type-conversion-30-code.png" />
+![js-type-conversion example 30 source](./code_sandbox/snaps/js-type-conversion-30-code.png)
 
-<img alt="js-type-conversion example 30 result" src="./code_sandbox/snaps/js-type-conversion-30-result.png" />
+![js-type-conversion example 30 result](./code_sandbox/snaps/js-type-conversion-30-result.png)
 
 - [x] **Outcome:** getMilliseconds is **123**. toString is **"123"**.
 
@@ -48511,9 +48511,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 (d.getMonth() + 1).toString();
 ```
 
-<img alt="js-type-conversion example 31 source" src="./code_sandbox/snaps/js-type-conversion-31-code.png" />
+![js-type-conversion example 31 source](./code_sandbox/snaps/js-type-conversion-31-code.png)
 
-<img alt="js-type-conversion example 31 result" src="./code_sandbox/snaps/js-type-conversion-31-result.png" />
+![js-type-conversion example 31 result](./code_sandbox/snaps/js-type-conversion-31-result.png)
 
 - [x] **Outcome:** getMonth()+1 is **3**. toString is **"3"**.
 
@@ -48530,9 +48530,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 d.toLocaleString('default', { month: 'long' });
 ```
 
-<img alt="js-type-conversion example 32 source" src="./code_sandbox/snaps/js-type-conversion-32-code.png" />
+![js-type-conversion example 32 source](./code_sandbox/snaps/js-type-conversion-32-code.png)
 
-<img alt="js-type-conversion example 32 result" src="./code_sandbox/snaps/js-type-conversion-32-result.png" />
+![js-type-conversion example 32 result](./code_sandbox/snaps/js-type-conversion-32-result.png)
 
 - [x] **Outcome:** This engine printed **"March"**.
 
@@ -48548,9 +48548,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-false.html`
 Number(false);
 ```
 
-<img alt="js-type-conversion example 33 source" src="./code_sandbox/snaps/js-type-conversion-33-code.png" />
+![js-type-conversion example 33 source](./code_sandbox/snaps/js-type-conversion-33-code.png)
 
-<img alt="js-type-conversion example 33 result" src="./code_sandbox/snaps/js-type-conversion-33-result.png" />
+![js-type-conversion example 33 result](./code_sandbox/snaps/js-type-conversion-33-result.png)
 
 - [x] **Outcome:** Number(false) is **0**.
 
@@ -48566,9 +48566,9 @@ Sandbox: `code_sandbox/js-type-conversion/number-true.html`
 Number(true);
 ```
 
-<img alt="js-type-conversion example 34 source" src="./code_sandbox/snaps/js-type-conversion-34-code.png" />
+![js-type-conversion example 34 source](./code_sandbox/snaps/js-type-conversion-34-code.png)
 
-<img alt="js-type-conversion example 34 result" src="./code_sandbox/snaps/js-type-conversion-34-result.png" />
+![js-type-conversion example 34 result](./code_sandbox/snaps/js-type-conversion-34-result.png)
 
 - [x] **Outcome:** Number(true) is **1**.
 
@@ -48584,9 +48584,9 @@ Sandbox: `code_sandbox/js-type-conversion/string-false.html`
 String(false);
 ```
 
-<img alt="js-type-conversion example 35 source" src="./code_sandbox/snaps/js-type-conversion-35-code.png" />
+![js-type-conversion example 35 source](./code_sandbox/snaps/js-type-conversion-35-code.png)
 
-<img alt="js-type-conversion example 35 result" src="./code_sandbox/snaps/js-type-conversion-35-result.png" />
+![js-type-conversion example 35 result](./code_sandbox/snaps/js-type-conversion-35-result.png)
 
 - [x] **Outcome:** String(false) is **"false"**.
 
@@ -48602,9 +48602,9 @@ Sandbox: `code_sandbox/js-type-conversion/string-true.html`
 String(true);
 ```
 
-<img alt="js-type-conversion example 36 source" src="./code_sandbox/snaps/js-type-conversion-36-code.png" />
+![js-type-conversion example 36 source](./code_sandbox/snaps/js-type-conversion-36-code.png)
 
-<img alt="js-type-conversion example 36 result" src="./code_sandbox/snaps/js-type-conversion-36-result.png" />
+![js-type-conversion example 36 result](./code_sandbox/snaps/js-type-conversion-36-result.png)
 
 - [x] **Outcome:** String(true) is **"true"**.
 
@@ -48620,9 +48620,9 @@ Sandbox: `code_sandbox/js-type-conversion/false-tostring.html`
 false.toString();
 ```
 
-<img alt="js-type-conversion example 37 source" src="./code_sandbox/snaps/js-type-conversion-37-code.png" />
+![js-type-conversion example 37 source](./code_sandbox/snaps/js-type-conversion-37-code.png)
 
-<img alt="js-type-conversion example 37 result" src="./code_sandbox/snaps/js-type-conversion-37-result.png" />
+![js-type-conversion example 37 result](./code_sandbox/snaps/js-type-conversion-37-result.png)
 
 - [x] **Outcome:** false.toString() is **"false"**.
 
@@ -48638,9 +48638,9 @@ Sandbox: `code_sandbox/js-type-conversion/true-tostring.html`
 true.toString();
 ```
 
-<img alt="js-type-conversion example 38 source" src="./code_sandbox/snaps/js-type-conversion-38-code.png" />
+![js-type-conversion example 38 source](./code_sandbox/snaps/js-type-conversion-38-code.png)
 
-<img alt="js-type-conversion example 38 result" src="./code_sandbox/snaps/js-type-conversion-38-result.png" />
+![js-type-conversion example 38 result](./code_sandbox/snaps/js-type-conversion-38-result.png)
 
 - [x] **Outcome:** true.toString() is **"true"**.
 
@@ -48656,9 +48656,9 @@ Sandbox: `code_sandbox/js-type-conversion/auto-5-plus-null.html`
 5 + null;
 ```
 
-<img alt="js-type-conversion example 39 source" src="./code_sandbox/snaps/js-type-conversion-39-code.png" />
+![js-type-conversion example 39 source](./code_sandbox/snaps/js-type-conversion-39-code.png)
 
-<img alt="js-type-conversion example 39 result" src="./code_sandbox/snaps/js-type-conversion-39-result.png" />
+![js-type-conversion example 39 result](./code_sandbox/snaps/js-type-conversion-39-result.png)
 
 - [x] **Outcome:** 5 + null is **5**.
 
@@ -48674,9 +48674,9 @@ Sandbox: `code_sandbox/js-type-conversion/auto-str5-plus-null.html`
 "5" + null;
 ```
 
-<img alt="js-type-conversion example 40 source" src="./code_sandbox/snaps/js-type-conversion-40-code.png" />
+![js-type-conversion example 40 source](./code_sandbox/snaps/js-type-conversion-40-code.png)
 
-<img alt="js-type-conversion example 40 result" src="./code_sandbox/snaps/js-type-conversion-40-result.png" />
+![js-type-conversion example 40 result](./code_sandbox/snaps/js-type-conversion-40-result.png)
 
 - [x] **Outcome:** "5" + null is **"5null"**.
 
@@ -48692,9 +48692,9 @@ Sandbox: `code_sandbox/js-type-conversion/auto-str5-plus-2.html`
 "5" + 2;
 ```
 
-<img alt="js-type-conversion example 41 source" src="./code_sandbox/snaps/js-type-conversion-41-code.png" />
+![js-type-conversion example 41 source](./code_sandbox/snaps/js-type-conversion-41-code.png)
 
-<img alt="js-type-conversion example 41 result" src="./code_sandbox/snaps/js-type-conversion-41-result.png" />
+![js-type-conversion example 41 result](./code_sandbox/snaps/js-type-conversion-41-result.png)
 
 - [x] **Outcome:** "5" + 2 is **"52"**.
 
@@ -48710,9 +48710,9 @@ Sandbox: `code_sandbox/js-type-conversion/auto-str5-minus-2.html`
 "5" - 2;
 ```
 
-<img alt="js-type-conversion example 42 source" src="./code_sandbox/snaps/js-type-conversion-42-code.png" />
+![js-type-conversion example 42 source](./code_sandbox/snaps/js-type-conversion-42-code.png)
 
-<img alt="js-type-conversion example 42 result" src="./code_sandbox/snaps/js-type-conversion-42-result.png" />
+![js-type-conversion example 42 result](./code_sandbox/snaps/js-type-conversion-42-result.png)
 
 - [x] **Outcome:** "5" - 2 is **3**.
 
@@ -48728,9 +48728,9 @@ Sandbox: `code_sandbox/js-type-conversion/auto-str5-times-str2.html`
 "5" * "2";
 ```
 
-<img alt="js-type-conversion example 43 source" src="./code_sandbox/snaps/js-type-conversion-43-code.png" />
+![js-type-conversion example 43 source](./code_sandbox/snaps/js-type-conversion-43-code.png)
 
-<img alt="js-type-conversion example 43 result" src="./code_sandbox/snaps/js-type-conversion-43-result.png" />
+![js-type-conversion example 43 result](./code_sandbox/snaps/js-type-conversion-43-result.png)
 
 - [x] **Outcome:** "5" * "2" is **10**.
 
@@ -48747,9 +48747,9 @@ let myVar = {name: "Fjohn"};
 String(myVar);
 ```
 
-<img alt="js-type-conversion example 44 source" src="./code_sandbox/snaps/js-type-conversion-44-code.png" />
+![js-type-conversion example 44 source](./code_sandbox/snaps/js-type-conversion-44-code.png)
 
-<img alt="js-type-conversion example 44 result" src="./code_sandbox/snaps/js-type-conversion-44-result.png" />
+![js-type-conversion example 44 result](./code_sandbox/snaps/js-type-conversion-44-result.png)
 
 - [x] **Outcome:** String({name:"Fjohn"}) is **"[object Object]"**.
 
@@ -48766,9 +48766,9 @@ let myVar = [1, 2, 3, 4];
 String(myVar);
 ```
 
-<img alt="js-type-conversion example 45 source" src="./code_sandbox/snaps/js-type-conversion-45-code.png" />
+![js-type-conversion example 45 source](./code_sandbox/snaps/js-type-conversion-45-code.png)
 
-<img alt="js-type-conversion example 45 result" src="./code_sandbox/snaps/js-type-conversion-45-result.png" />
+![js-type-conversion example 45 result](./code_sandbox/snaps/js-type-conversion-45-result.png)
 
 - [x] **Outcome:** String([1,2,3,4]) is **"1,2,3,4"**.
 
@@ -48785,9 +48785,9 @@ const d = new Date("2021-03-25T15:30:45.123Z");
 String(d);
 ```
 
-<img alt="js-type-conversion example 46 source" src="./code_sandbox/snaps/js-type-conversion-46-code.png" />
+![js-type-conversion example 46 source](./code_sandbox/snaps/js-type-conversion-46-code.png)
 
-<img alt="js-type-conversion example 46 result" src="./code_sandbox/snaps/js-type-conversion-46-result.png" />
+![js-type-conversion example 46 result](./code_sandbox/snaps/js-type-conversion-46-result.png)
 
 - [x] **Outcome:** String(d) is **"Thu Mar 25 2021 09:30:45 GMT-0600 (Mountain Daylight Time)"**.
 
@@ -48803,9 +48803,9 @@ Sandbox: `code_sandbox/js-type-conversion/auto-string-number.html`
 String(123);
 ```
 
-<img alt="js-type-conversion example 47 source" src="./code_sandbox/snaps/js-type-conversion-47-code.png" />
+![js-type-conversion example 47 source](./code_sandbox/snaps/js-type-conversion-47-code.png)
 
-<img alt="js-type-conversion example 47 result" src="./code_sandbox/snaps/js-type-conversion-47-result.png" />
+![js-type-conversion example 47 result](./code_sandbox/snaps/js-type-conversion-47-result.png)
 
 - [x] **Outcome:** String(123) is **"123"**.
 
@@ -48822,9 +48822,9 @@ String(true);
 String(false);
 ```
 
-<img alt="js-type-conversion example 48 source" src="./code_sandbox/snaps/js-type-conversion-48-code.png" />
+![js-type-conversion example 48 source](./code_sandbox/snaps/js-type-conversion-48-code.png)
 
-<img alt="js-type-conversion example 48 result" src="./code_sandbox/snaps/js-type-conversion-48-result.png" />
+![js-type-conversion example 48 result](./code_sandbox/snaps/js-type-conversion-48-result.png)
 
 - [x] **Outcome:** true → **"true"**. false → **"false"**.
 
@@ -48841,9 +48841,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-false.html`
 let v = false;
 ```
 
-<img alt="js-type-conversion example 49 source" src="./code_sandbox/snaps/js-type-conversion-49-code.png" />
+![js-type-conversion example 49 source](./code_sandbox/snaps/js-type-conversion-49-code.png)
 
-<img alt="js-type-conversion example 49 result" src="./code_sandbox/snaps/js-type-conversion-49-result.png" />
+![js-type-conversion example 49 result](./code_sandbox/snaps/js-type-conversion-49-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **"false"**. Boolean → **false**.
 
@@ -48860,9 +48860,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-true.html`
 let v = true;
 ```
 
-<img alt="js-type-conversion example 50 source" src="./code_sandbox/snaps/js-type-conversion-50-code.png" />
+![js-type-conversion example 50 source](./code_sandbox/snaps/js-type-conversion-50-code.png)
 
-<img alt="js-type-conversion example 50 result" src="./code_sandbox/snaps/js-type-conversion-50-result.png" />
+![js-type-conversion example 50 result](./code_sandbox/snaps/js-type-conversion-50-result.png)
 
 - [x] **Outcome:** Number → **1**. String → **"true"**. Boolean → **true**.
 
@@ -48879,9 +48879,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-0.html`
 let v = 0;
 ```
 
-<img alt="js-type-conversion example 51 source" src="./code_sandbox/snaps/js-type-conversion-51-code.png" />
+![js-type-conversion example 51 source](./code_sandbox/snaps/js-type-conversion-51-code.png)
 
-<img alt="js-type-conversion example 51 result" src="./code_sandbox/snaps/js-type-conversion-51-result.png" />
+![js-type-conversion example 51 result](./code_sandbox/snaps/js-type-conversion-51-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **"0"**. Boolean → **false**.
 
@@ -48898,9 +48898,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-1.html`
 let v = 1;
 ```
 
-<img alt="js-type-conversion example 52 source" src="./code_sandbox/snaps/js-type-conversion-52-code.png" />
+![js-type-conversion example 52 source](./code_sandbox/snaps/js-type-conversion-52-code.png)
 
-<img alt="js-type-conversion example 52 result" src="./code_sandbox/snaps/js-type-conversion-52-result.png" />
+![js-type-conversion example 52 result](./code_sandbox/snaps/js-type-conversion-52-result.png)
 
 - [x] **Outcome:** Number → **1**. String → **"1"**. Boolean → **true**.
 
@@ -48917,9 +48917,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-str-0.html`
 let v = "0";
 ```
 
-<img alt="js-type-conversion example 53 source" src="./code_sandbox/snaps/js-type-conversion-53-code.png" />
+![js-type-conversion example 53 source](./code_sandbox/snaps/js-type-conversion-53-code.png)
 
-<img alt="js-type-conversion example 53 result" src="./code_sandbox/snaps/js-type-conversion-53-result.png" />
+![js-type-conversion example 53 result](./code_sandbox/snaps/js-type-conversion-53-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **"0"**. Boolean → **true**.
 
@@ -48936,9 +48936,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-str-000.html`
 let v = "000";
 ```
 
-<img alt="js-type-conversion example 54 source" src="./code_sandbox/snaps/js-type-conversion-54-code.png" />
+![js-type-conversion example 54 source](./code_sandbox/snaps/js-type-conversion-54-code.png)
 
-<img alt="js-type-conversion example 54 result" src="./code_sandbox/snaps/js-type-conversion-54-result.png" />
+![js-type-conversion example 54 result](./code_sandbox/snaps/js-type-conversion-54-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **"000"**. Boolean → **true**.
 
@@ -48955,9 +48955,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-str-1.html`
 let v = "1";
 ```
 
-<img alt="js-type-conversion example 55 source" src="./code_sandbox/snaps/js-type-conversion-55-code.png" />
+![js-type-conversion example 55 source](./code_sandbox/snaps/js-type-conversion-55-code.png)
 
-<img alt="js-type-conversion example 55 result" src="./code_sandbox/snaps/js-type-conversion-55-result.png" />
+![js-type-conversion example 55 result](./code_sandbox/snaps/js-type-conversion-55-result.png)
 
 - [x] **Outcome:** Number → **1**. String → **"1"**. Boolean → **true**.
 
@@ -48974,9 +48974,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-nan.html`
 let v = NaN;
 ```
 
-<img alt="js-type-conversion example 56 source" src="./code_sandbox/snaps/js-type-conversion-56-code.png" />
+![js-type-conversion example 56 source](./code_sandbox/snaps/js-type-conversion-56-code.png)
 
-<img alt="js-type-conversion example 56 result" src="./code_sandbox/snaps/js-type-conversion-56-result.png" />
+![js-type-conversion example 56 result](./code_sandbox/snaps/js-type-conversion-56-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"NaN"**. Boolean → **false**.
 
@@ -48993,9 +48993,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-infinity.html`
 let v = Infinity;
 ```
 
-<img alt="js-type-conversion example 57 source" src="./code_sandbox/snaps/js-type-conversion-57-code.png" />
+![js-type-conversion example 57 source](./code_sandbox/snaps/js-type-conversion-57-code.png)
 
-<img alt="js-type-conversion example 57 result" src="./code_sandbox/snaps/js-type-conversion-57-result.png" />
+![js-type-conversion example 57 result](./code_sandbox/snaps/js-type-conversion-57-result.png)
 
 - [x] **Outcome:** Number → **Infinity**. String → **"Infinity"**. Boolean → **true**.
 
@@ -49012,9 +49012,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-neginfinity.html`
 let v = -Infinity;
 ```
 
-<img alt="js-type-conversion example 58 source" src="./code_sandbox/snaps/js-type-conversion-58-code.png" />
+![js-type-conversion example 58 source](./code_sandbox/snaps/js-type-conversion-58-code.png)
 
-<img alt="js-type-conversion example 58 result" src="./code_sandbox/snaps/js-type-conversion-58-result.png" />
+![js-type-conversion example 58 result](./code_sandbox/snaps/js-type-conversion-58-result.png)
 
 - [x] **Outcome:** Number → **-Infinity**. String → **"-Infinity"**. Boolean → **true**.
 
@@ -49031,9 +49031,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-empty-str.html`
 let v = "";
 ```
 
-<img alt="js-type-conversion example 59 source" src="./code_sandbox/snaps/js-type-conversion-59-code.png" />
+![js-type-conversion example 59 source](./code_sandbox/snaps/js-type-conversion-59-code.png)
 
-<img alt="js-type-conversion example 59 result" src="./code_sandbox/snaps/js-type-conversion-59-result.png" />
+![js-type-conversion example 59 result](./code_sandbox/snaps/js-type-conversion-59-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **""**. Boolean → **false**.
 
@@ -49050,9 +49050,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-str-20.html`
 let v = "20";
 ```
 
-<img alt="js-type-conversion example 60 source" src="./code_sandbox/snaps/js-type-conversion-60-code.png" />
+![js-type-conversion example 60 source](./code_sandbox/snaps/js-type-conversion-60-code.png)
 
-<img alt="js-type-conversion example 60 result" src="./code_sandbox/snaps/js-type-conversion-60-result.png" />
+![js-type-conversion example 60 result](./code_sandbox/snaps/js-type-conversion-60-result.png)
 
 - [x] **Outcome:** Number → **20**. String → **"20"**. Boolean → **true**.
 
@@ -49069,9 +49069,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-str-twenty.html`
 let v = "twenty";
 ```
 
-<img alt="js-type-conversion example 61 source" src="./code_sandbox/snaps/js-type-conversion-61-code.png" />
+![js-type-conversion example 61 source](./code_sandbox/snaps/js-type-conversion-61-code.png)
 
-<img alt="js-type-conversion example 61 result" src="./code_sandbox/snaps/js-type-conversion-61-result.png" />
+![js-type-conversion example 61 result](./code_sandbox/snaps/js-type-conversion-61-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"twenty"**. Boolean → **true**.
 
@@ -49088,9 +49088,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-empty-arr.html`
 let v = [];
 ```
 
-<img alt="js-type-conversion example 62 source" src="./code_sandbox/snaps/js-type-conversion-62-code.png" />
+![js-type-conversion example 62 source](./code_sandbox/snaps/js-type-conversion-62-code.png)
 
-<img alt="js-type-conversion example 62 result" src="./code_sandbox/snaps/js-type-conversion-62-result.png" />
+![js-type-conversion example 62 result](./code_sandbox/snaps/js-type-conversion-62-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **""**. Boolean → **true**.
 
@@ -49107,9 +49107,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-arr-20.html`
 let v = [20];
 ```
 
-<img alt="js-type-conversion example 63 source" src="./code_sandbox/snaps/js-type-conversion-63-code.png" />
+![js-type-conversion example 63 source](./code_sandbox/snaps/js-type-conversion-63-code.png)
 
-<img alt="js-type-conversion example 63 result" src="./code_sandbox/snaps/js-type-conversion-63-result.png" />
+![js-type-conversion example 63 result](./code_sandbox/snaps/js-type-conversion-63-result.png)
 
 - [x] **Outcome:** Number → **20**. String → **"20"**. Boolean → **true**.
 
@@ -49126,9 +49126,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-arr-10-20.html`
 let v = [10, 20];
 ```
 
-<img alt="js-type-conversion example 64 source" src="./code_sandbox/snaps/js-type-conversion-64-code.png" />
+![js-type-conversion example 64 source](./code_sandbox/snaps/js-type-conversion-64-code.png)
 
-<img alt="js-type-conversion example 64 result" src="./code_sandbox/snaps/js-type-conversion-64-result.png" />
+![js-type-conversion example 64 result](./code_sandbox/snaps/js-type-conversion-64-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"10,20"**. Boolean → **true**.
 
@@ -49145,9 +49145,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-arr-twenty.html`
 let v = ["twenty"];
 ```
 
-<img alt="js-type-conversion example 65 source" src="./code_sandbox/snaps/js-type-conversion-65-code.png" />
+![js-type-conversion example 65 source](./code_sandbox/snaps/js-type-conversion-65-code.png)
 
-<img alt="js-type-conversion example 65 result" src="./code_sandbox/snaps/js-type-conversion-65-result.png" />
+![js-type-conversion example 65 result](./code_sandbox/snaps/js-type-conversion-65-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"twenty"**. Boolean → **true**.
 
@@ -49164,9 +49164,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-arr-ten-twenty.html`
 let v = ["ten", "twenty"];
 ```
 
-<img alt="js-type-conversion example 66 source" src="./code_sandbox/snaps/js-type-conversion-66-code.png" />
+![js-type-conversion example 66 source](./code_sandbox/snaps/js-type-conversion-66-code.png)
 
-<img alt="js-type-conversion example 66 result" src="./code_sandbox/snaps/js-type-conversion-66-result.png" />
+![js-type-conversion example 66 result](./code_sandbox/snaps/js-type-conversion-66-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"ten,twenty"**. Boolean → **true**.
 
@@ -49183,9 +49183,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-function.html`
 let v = function(){};
 ```
 
-<img alt="js-type-conversion example 67 source" src="./code_sandbox/snaps/js-type-conversion-67-code.png" />
+![js-type-conversion example 67 source](./code_sandbox/snaps/js-type-conversion-67-code.png)
 
-<img alt="js-type-conversion example 67 result" src="./code_sandbox/snaps/js-type-conversion-67-result.png" />
+![js-type-conversion example 67 result](./code_sandbox/snaps/js-type-conversion-67-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"function(){}"**. Boolean → **true**.
 
@@ -49202,9 +49202,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-object.html`
 let v = {};
 ```
 
-<img alt="js-type-conversion example 68 source" src="./code_sandbox/snaps/js-type-conversion-68-code.png" />
+![js-type-conversion example 68 source](./code_sandbox/snaps/js-type-conversion-68-code.png)
 
-<img alt="js-type-conversion example 68 result" src="./code_sandbox/snaps/js-type-conversion-68-result.png" />
+![js-type-conversion example 68 result](./code_sandbox/snaps/js-type-conversion-68-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"[object Object]"**. Boolean → **true**.
 
@@ -49221,9 +49221,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-null.html`
 let v = null;
 ```
 
-<img alt="js-type-conversion example 69 source" src="./code_sandbox/snaps/js-type-conversion-69-code.png" />
+![js-type-conversion example 69 source](./code_sandbox/snaps/js-type-conversion-69-code.png)
 
-<img alt="js-type-conversion example 69 result" src="./code_sandbox/snaps/js-type-conversion-69-result.png" />
+![js-type-conversion example 69 result](./code_sandbox/snaps/js-type-conversion-69-result.png)
 
 - [x] **Outcome:** Number → **0**. String → **"null"**. Boolean → **false**.
 
@@ -49240,9 +49240,9 @@ Sandbox: `code_sandbox/js-type-conversion/conv-undefined.html`
 let v = undefined;
 ```
 
-<img alt="js-type-conversion example 70 source" src="./code_sandbox/snaps/js-type-conversion-70-code.png" />
+![js-type-conversion example 70 source](./code_sandbox/snaps/js-type-conversion-70-code.png)
 
-<img alt="js-type-conversion example 70 result" src="./code_sandbox/snaps/js-type-conversion-70-result.png" />
+![js-type-conversion example 70 result](./code_sandbox/snaps/js-type-conversion-70-result.png)
 
 - [x] **Outcome:** Number → **NaN**. String → **"undefined"**. Boolean → **false**.
 
@@ -49467,9 +49467,9 @@ const person = {
 let {firstName, lastName} = person;
 ```
 
-<img alt="js-destructuring example 1 source" src="./code_sandbox/snaps/js-destructuring-01-code.png" />
+![js-destructuring example 1 source](./code_sandbox/snaps/js-destructuring-01-code.png)
 
-<img alt="js-destructuring example 1 result" src="./code_sandbox/snaps/js-destructuring-01-result.png" />
+![js-destructuring example 1 result](./code_sandbox/snaps/js-destructuring-01-result.png)
 
 - [x] **Outcome:** firstName is **"John"**. lastName is **"Doe"**. age is not unpacked.
 
@@ -49490,9 +49490,9 @@ const person = {
 let {lastName, firstName} = person;
 ```
 
-<img alt="js-destructuring example 2 source" src="./code_sandbox/snaps/js-destructuring-02-code.png" />
+![js-destructuring example 2 source](./code_sandbox/snaps/js-destructuring-02-code.png)
 
-<img alt="js-destructuring example 2 result" src="./code_sandbox/snaps/js-destructuring-02-result.png" />
+![js-destructuring example 2 result](./code_sandbox/snaps/js-destructuring-02-result.png)
 
 - [x] **Outcome:** Still **"John"** and **"Doe"** — swapping the names in `{ }` does not swap the values.
 
@@ -49513,9 +49513,9 @@ const person = {
 let {firstName, lastName, country = "US"} = person;
 ```
 
-<img alt="js-destructuring example 3 source" src="./code_sandbox/snaps/js-destructuring-03-code.png" />
+![js-destructuring example 3 source](./code_sandbox/snaps/js-destructuring-03-code.png)
 
-<img alt="js-destructuring example 3 result" src="./code_sandbox/snaps/js-destructuring-03-result.png" />
+![js-destructuring example 3 result](./code_sandbox/snaps/js-destructuring-03-result.png)
 
 - [x] **Outcome:** country is **"US"** (default). firstName/lastName still **"John"** / **"Doe"**. The original object is unchanged.
 
@@ -49536,9 +49536,9 @@ const person = {
 let {lastName: name} = person;
 ```
 
-<img alt="js-destructuring example 4 source" src="./code_sandbox/snaps/js-destructuring-04-code.png" />
+![js-destructuring example 4 source](./code_sandbox/snaps/js-destructuring-04-code.png)
 
-<img alt="js-destructuring example 4 result" src="./code_sandbox/snaps/js-destructuring-04-result.png" />
+![js-destructuring example 4 result](./code_sandbox/snaps/js-destructuring-04-result.png)
 
 - [x] **Outcome:** name is **"Doe"**. There is no `lastName` binding from this pattern.
 
@@ -49555,9 +49555,9 @@ let name = "W3Schools";
 let [a1, a2, a3, a4, a5] = name;
 ```
 
-<img alt="js-destructuring example 5 source" src="./code_sandbox/snaps/js-destructuring-05-code.png" />
+![js-destructuring example 5 source](./code_sandbox/snaps/js-destructuring-05-code.png)
 
-<img alt="js-destructuring example 5 result" src="./code_sandbox/snaps/js-destructuring-05-result.png" />
+![js-destructuring example 5 result](./code_sandbox/snaps/js-destructuring-05-result.png)
 
 - [x] **Outcome:** a1–a5 are **"W"**, **"3"**, **"S"**, **"c"**, **"h"**.
 
@@ -49574,9 +49574,9 @@ const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
 let [fruit1, fruit2] = fruits;
 ```
 
-<img alt="js-destructuring example 6 source" src="./code_sandbox/snaps/js-destructuring-06-code.png" />
+![js-destructuring example 6 source](./code_sandbox/snaps/js-destructuring-06-code.png)
 
-<img alt="js-destructuring example 6 result" src="./code_sandbox/snaps/js-destructuring-06-result.png" />
+![js-destructuring example 6 result](./code_sandbox/snaps/js-destructuring-06-result.png)
 
 - [x] **Outcome:** fruit1 is **"Bananas"**. fruit2 is **"Oranges"**.
 
@@ -49593,9 +49593,9 @@ const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
 let [fruit1, , , fruit2] = fruits;
 ```
 
-<img alt="js-destructuring example 7 source" src="./code_sandbox/snaps/js-destructuring-07-code.png" />
+![js-destructuring example 7 source](./code_sandbox/snaps/js-destructuring-07-code.png)
 
-<img alt="js-destructuring example 7 result" src="./code_sandbox/snaps/js-destructuring-07-result.png" />
+![js-destructuring example 7 result](./code_sandbox/snaps/js-destructuring-07-result.png)
 
 - [x] **Outcome:** fruit1 is **"Bananas"**. fruit2 is **"Mangos"** (Oranges and Apples skipped).
 
@@ -49612,9 +49612,9 @@ const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
 let {[0]: fruit1, [1]: fruit2} = fruits;
 ```
 
-<img alt="js-destructuring example 8 source" src="./code_sandbox/snaps/js-destructuring-08-code.png" />
+![js-destructuring example 8 source](./code_sandbox/snaps/js-destructuring-08-code.png)
 
-<img alt="js-destructuring example 8 result" src="./code_sandbox/snaps/js-destructuring-08-result.png" />
+![js-destructuring example 8 result](./code_sandbox/snaps/js-destructuring-08-result.png)
 
 - [x] **Outcome:** fruit1 is **"Bananas"**. fruit2 is **"Oranges"**.
 
@@ -49631,9 +49631,9 @@ const numbers = [10, 20, 30, 40, 50, 60, 70];
 const [a, b, ...rest] = numbers;
 ```
 
-<img alt="js-destructuring example 9 source" src="./code_sandbox/snaps/js-destructuring-09-code.png" />
+![js-destructuring example 9 source](./code_sandbox/snaps/js-destructuring-09-code.png)
 
-<img alt="js-destructuring example 9 result" src="./code_sandbox/snaps/js-destructuring-09-result.png" />
+![js-destructuring example 9 result](./code_sandbox/snaps/js-destructuring-09-result.png)
 
 - [x] **Outcome:** a is **10**, b is **20**, rest is **30,40,50,60,70**.
 
@@ -49649,9 +49649,9 @@ Sandbox: `code_sandbox/js-destructuring/array-defaults.html`
 let [a = "A", b = "B"] = ["Bananas"];
 ```
 
-<img alt="js-destructuring example 10 source" src="./code_sandbox/snaps/js-destructuring-10-code.png" />
+![js-destructuring example 10 source](./code_sandbox/snaps/js-destructuring-10-code.png)
 
-<img alt="js-destructuring example 10 result" src="./code_sandbox/snaps/js-destructuring-10-result.png" />
+![js-destructuring example 10 result](./code_sandbox/snaps/js-destructuring-10-result.png)
 
 - [x] **Outcome:** a is **"Bananas"** (provided). b is **"B"** (default).
 
@@ -49668,9 +49668,9 @@ const person = { firstName: "John", lastName: "Doe", age: 50 };
 let {firstName, ...rest} = person;
 ```
 
-<img alt="js-destructuring example 11 source" src="./code_sandbox/snaps/js-destructuring-11-code.png" />
+![js-destructuring example 11 source](./code_sandbox/snaps/js-destructuring-11-code.png)
 
-<img alt="js-destructuring example 11 result" src="./code_sandbox/snaps/js-destructuring-11-result.png" />
+![js-destructuring example 11 result](./code_sandbox/snaps/js-destructuring-11-result.png)
 
 - [x] **Outcome:** firstName is **"John"**. rest is **{"lastName":"Doe","age":50}**.
 
@@ -49690,9 +49690,9 @@ const user = {
 let { name, address: { city, zip } } = user;
 ```
 
-<img alt="js-destructuring example 12 source" src="./code_sandbox/snaps/js-destructuring-12-code.png" />
+![js-destructuring example 12 source](./code_sandbox/snaps/js-destructuring-12-code.png)
 
-<img alt="js-destructuring example 12 result" src="./code_sandbox/snaps/js-destructuring-12-result.png" />
+![js-destructuring example 12 result](./code_sandbox/snaps/js-destructuring-12-result.png)
 
 - [x] **Outcome:** name **"John"**, city **"Oslo"**, zip **"0001"**. There is no `address` binding unless you also name it.
 
@@ -49709,9 +49709,9 @@ const pair = [1, [2, 3], 4];
 let [a, [b, c], d] = pair;
 ```
 
-<img alt="js-destructuring example 13 source" src="./code_sandbox/snaps/js-destructuring-13-code.png" />
+![js-destructuring example 13 source](./code_sandbox/snaps/js-destructuring-13-code.png)
 
-<img alt="js-destructuring example 13 result" src="./code_sandbox/snaps/js-destructuring-13-result.png" />
+![js-destructuring example 13 result](./code_sandbox/snaps/js-destructuring-13-result.png)
 
 - [x] **Outcome:** a **1**, b **2**, c **3**, d **4**.
 
@@ -49735,9 +49735,9 @@ for (const [key, value] of fruits) {
 }
 ```
 
-<img alt="js-destructuring example 14 source" src="./code_sandbox/snaps/js-destructuring-14-code.png" />
+![js-destructuring example 14 source](./code_sandbox/snaps/js-destructuring-14-code.png)
 
-<img alt="js-destructuring example 14 result" src="./code_sandbox/snaps/js-destructuring-14-result.png" />
+![js-destructuring example 14 result](./code_sandbox/snaps/js-destructuring-14-result.png)
 
 - [x] **Outcome:** text is **"apples is 500bananas is 300oranges is 200"** (no extra spaces between entries — as written).
 
@@ -49755,9 +49755,9 @@ let lastName = "Doe";
 [firstName, lastName] = [lastName, firstName];
 ```
 
-<img alt="js-destructuring example 15 source" src="./code_sandbox/snaps/js-destructuring-15-code.png" />
+![js-destructuring example 15 source](./code_sandbox/snaps/js-destructuring-15-code.png)
 
-<img alt="js-destructuring example 15 result" src="./code_sandbox/snaps/js-destructuring-15-result.png" />
+![js-destructuring example 15 result](./code_sandbox/snaps/js-destructuring-15-result.png)
 
 - [x] **Outcome:** After the swap, firstName is **"Doe"**. lastName is **"John"**.
 
@@ -49775,9 +49775,9 @@ let { firstName } = person;
 firstName = "Jane";
 ```
 
-<img alt="js-destructuring example 16 source" src="./code_sandbox/snaps/js-destructuring-16-code.png" />
+![js-destructuring example 16 source](./code_sandbox/snaps/js-destructuring-16-code.png)
 
-<img alt="js-destructuring example 16 result" src="./code_sandbox/snaps/js-destructuring-16-result.png" />
+![js-destructuring example 16 result](./code_sandbox/snaps/js-destructuring-16-result.png)
 
 - [x] **Outcome:** The variable is **"Jane"**. person.firstName is still **"John"**.
 
@@ -49981,9 +49981,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 1 source" src="./code_sandbox/snaps/js-errors-intro-01-code.png" />
+![js-errors-intro example 1 source](./code_sandbox/snaps/js-errors-intro-01-code.png)
 
-<img alt="js-errors-intro example 1 result" src="./code_sandbox/snaps/js-errors-intro-01-result.png" />
+![js-errors-intro example 1 result](./code_sandbox/snaps/js-errors-intro-01-result.png)
 
 - [x] **Outcome:** status is **"try ran"**. The catch block did **not** run.
 
@@ -50004,9 +50004,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 2 source" src="./code_sandbox/snaps/js-errors-intro-02-code.png" />
+![js-errors-intro example 2 source](./code_sandbox/snaps/js-errors-intro-02-code.png)
 
-<img alt="js-errors-intro example 2 result" src="./code_sandbox/snaps/js-errors-intro-02-result.png" />
+![js-errors-intro example 2 result](./code_sandbox/snaps/js-errors-intro-02-result.png)
 
 - [x] **Outcome:** **TypeError**: Cannot read properties of **null** (reading **'foo'**). Catch ran.
 
@@ -50028,9 +50028,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 3 source" src="./code_sandbox/snaps/js-errors-intro-03-code.png" />
+![js-errors-intro example 3 source](./code_sandbox/snaps/js-errors-intro-03-code.png)
 
-<img alt="js-errors-intro example 3 result" src="./code_sandbox/snaps/js-errors-intro-03-result.png" />
+![js-errors-intro example 3 result](./code_sandbox/snaps/js-errors-intro-03-result.png)
 
 - [x] **Outcome:** **ReferenceError**: **y is not defined**.
 
@@ -50052,9 +50052,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 4 source" src="./code_sandbox/snaps/js-errors-intro-04-code.png" />
+![js-errors-intro example 4 source](./code_sandbox/snaps/js-errors-intro-04-code.png)
 
-<img alt="js-errors-intro example 4 result" src="./code_sandbox/snaps/js-errors-intro-04-result.png" />
+![js-errors-intro example 4 result](./code_sandbox/snaps/js-errors-intro-04-result.png)
 
 - [x] **Outcome:** **ReferenceError**: **Cannot access 'y' before initialization**.
 
@@ -50076,9 +50076,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 5 source" src="./code_sandbox/snaps/js-errors-intro-05-code.png" />
+![js-errors-intro example 5 source](./code_sandbox/snaps/js-errors-intro-05-code.png)
 
-<img alt="js-errors-intro example 5 result" src="./code_sandbox/snaps/js-errors-intro-05-result.png" />
+![js-errors-intro example 5 result](./code_sandbox/snaps/js-errors-intro-05-result.png)
 
 - [x] **Outcome:** **TypeError**: **anna is not a function**.
 
@@ -50100,9 +50100,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 6 source" src="./code_sandbox/snaps/js-errors-intro-06-code.png" />
+![js-errors-intro example 6 source](./code_sandbox/snaps/js-errors-intro-06-code.png)
 
-<img alt="js-errors-intro example 6 result" src="./code_sandbox/snaps/js-errors-intro-06-result.png" />
+![js-errors-intro example 6 result](./code_sandbox/snaps/js-errors-intro-06-result.png)
 
 - [x] **Outcome:** **TypeError**: **num.toUpperCase is not a function**.
 
@@ -50123,9 +50123,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 7 source" src="./code_sandbox/snaps/js-errors-intro-07-code.png" />
+![js-errors-intro example 7 source](./code_sandbox/snaps/js-errors-intro-07-code.png)
 
-<img alt="js-errors-intro example 7 result" src="./code_sandbox/snaps/js-errors-intro-07-result.png" />
+![js-errors-intro example 7 result](./code_sandbox/snaps/js-errors-intro-07-result.png)
 
 - [x] **Outcome:** **RangeError**: **Invalid array length**.
 
@@ -50147,9 +50147,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 8 source" src="./code_sandbox/snaps/js-errors-intro-08-code.png" />
+![js-errors-intro example 8 source](./code_sandbox/snaps/js-errors-intro-08-code.png)
 
-<img alt="js-errors-intro example 8 result" src="./code_sandbox/snaps/js-errors-intro-08-result.png" />
+![js-errors-intro example 8 result](./code_sandbox/snaps/js-errors-intro-08-result.png)
 
 - [x] **Outcome:** **RangeError**: **toPrecision() argument must be between 1 and 100**.
 
@@ -50170,9 +50170,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 9 source" src="./code_sandbox/snaps/js-errors-intro-09-code.png" />
+![js-errors-intro example 9 source](./code_sandbox/snaps/js-errors-intro-09-code.png)
 
-<img alt="js-errors-intro example 9 result" src="./code_sandbox/snaps/js-errors-intro-09-result.png" />
+![js-errors-intro example 9 result](./code_sandbox/snaps/js-errors-intro-09-result.png)
 
 - [x] **Outcome:** **URIError**: **URI malformed**.
 
@@ -50192,9 +50192,9 @@ let text = "John Doe);
 // This line will not be executed
 ```
 
-<img alt="js-errors-intro example 10 source" src="./code_sandbox/snaps/js-errors-intro-10-code.png" />
+![js-errors-intro example 10 source](./code_sandbox/snaps/js-errors-intro-10-code.png)
 
-<img alt="js-errors-intro example 10 result" src="./code_sandbox/snaps/js-errors-intro-10-result.png" />
+![js-errors-intro example 10 result](./code_sandbox/snaps/js-errors-intro-10-result.png)
 
 - [x] **Outcome:** **SyntaxError**: **Invalid or unexpected token** (via `new Function`). A raw script would stop the page.
 
@@ -50216,9 +50216,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 11 source" src="./code_sandbox/snaps/js-errors-intro-11-code.png" />
+![js-errors-intro example 11 source](./code_sandbox/snaps/js-errors-intro-11-code.png)
 
-<img alt="js-errors-intro example 11 result" src="./code_sandbox/snaps/js-errors-intro-11-result.png" />
+![js-errors-intro example 11 result](./code_sandbox/snaps/js-errors-intro-11-result.png)
 
 - [x] **Outcome:** **SyntaxError**: **missing ) after argument list**. Inner `catch` never ran — the snippet did not parse.
 
@@ -50241,9 +50241,9 @@ try {
 }
 ```
 
-<img alt="js-errors-intro example 12 source" src="./code_sandbox/snaps/js-errors-intro-12-code.png" />
+![js-errors-intro example 12 source](./code_sandbox/snaps/js-errors-intro-12-code.png)
 
-<img alt="js-errors-intro example 12 result" src="./code_sandbox/snaps/js-errors-intro-12-result.png" />
+![js-errors-intro example 12 result](./code_sandbox/snaps/js-errors-intro-12-result.png)
 
 - [x] **Outcome:** `new EvalError` has name **EvalError**. `eval("var = 1")` throws **SyntaxError**: **Unexpected token '='** — not EvalError.
 
@@ -50442,9 +50442,9 @@ try {
 }
 ```
 
-<img alt="js-errors-silent example 1 source" src="./code_sandbox/snaps/js-errors-silent-01-code.png" />
+![js-errors-silent example 1 source](./code_sandbox/snaps/js-errors-silent-01-code.png)
 
-<img alt="js-errors-silent example 1 result" src="./code_sandbox/snaps/js-errors-silent-01-result.png" />
+![js-errors-silent example 1 result](./code_sandbox/snaps/js-errors-silent-01-result.png)
 
 - [x] **Outcome:** Silent `1 / 0` is **Infinity** (no throw). The explicit throw is **Error**: **division produced Infinity**.
 
@@ -50466,9 +50466,9 @@ if (isActive = true) {   // assignment, not comparison
 }
 ```
 
-<img alt="js-errors-silent example 2 source" src="./code_sandbox/snaps/js-errors-silent-02-code.png" />
+![js-errors-silent example 2 source](./code_sandbox/snaps/js-errors-silent-02-code.png)
 
-<img alt="js-errors-silent example 2 result" src="./code_sandbox/snaps/js-errors-silent-02-result.png" />
+![js-errors-silent example 2 result](./code_sandbox/snaps/js-errors-silent-02-result.png)
 
 - [x] **Outcome:** Silent path: result is **"Active!"** and `isActive` is **true** (no throw). With `===` and `throw`, `isActive` stays **false** and the catch is **Error**: **not active**.
 
@@ -50487,9 +50487,9 @@ const result = parseInt("abc");
 // NaN - no error, just wrong data
 ```
 
-<img alt="js-errors-silent example 3 source" src="./code_sandbox/snaps/js-errors-silent-03-code.png" />
+![js-errors-silent example 3 source](./code_sandbox/snaps/js-errors-silent-03-code.png)
 
-<img alt="js-errors-silent example 3 result" src="./code_sandbox/snaps/js-errors-silent-03-result.png" />
+![js-errors-silent example 3 result](./code_sandbox/snaps/js-errors-silent-03-result.png)
 
 - [x] **Outcome:** Silent result is **NaN**. The throw path is **Error**: **parseInt produced NaN**.
 
@@ -50507,9 +50507,9 @@ const user = {};
 let result = user.name;
 ```
 
-<img alt="js-errors-silent example 4 source" src="./code_sandbox/snaps/js-errors-silent-04-code.png" />
+![js-errors-silent example 4 source](./code_sandbox/snaps/js-errors-silent-04-code.png)
 
-<img alt="js-errors-silent example 4 result" src="./code_sandbox/snaps/js-errors-silent-04-result.png" />
+![js-errors-silent example 4 result](./code_sandbox/snaps/js-errors-silent-04-result.png)
 
 - [x] **Outcome:** Silent `user.name` is **undefined**. The throw path is **Error**: **missing name**.
 
@@ -50528,9 +50528,9 @@ let result1 = ('5' + '2');  // 52
 let result2 = ('5' - '2');  // 3
 ```
 
-<img alt="js-errors-silent example 5 source" src="./code_sandbox/snaps/js-errors-silent-05-code.png" />
+![js-errors-silent example 5 source](./code_sandbox/snaps/js-errors-silent-05-code.png)
 
-<img alt="js-errors-silent example 5 result" src="./code_sandbox/snaps/js-errors-silent-05-result.png" />
+![js-errors-silent example 5 result](./code_sandbox/snaps/js-errors-silent-05-result.png)
 
 - [x] **Outcome:** Silent: result1 is **"52"** (string); result2 is **3** (number). Throw-if-types-differ on `"5" + 2` is **TypeError**: **mixed types in +**.
 
@@ -50547,9 +50547,9 @@ Sandbox: `code_sandbox/js-errors-silent/string-coercion-plus.html`
 let x = "5" + 2;  // x = "52"
 ```
 
-<img alt="js-errors-silent example 6 source" src="./code_sandbox/snaps/js-errors-silent-06-code.png" />
+![js-errors-silent example 6 source](./code_sandbox/snaps/js-errors-silent-06-code.png)
 
-<img alt="js-errors-silent example 6 result" src="./code_sandbox/snaps/js-errors-silent-06-result.png" />
+![js-errors-silent example 6 result](./code_sandbox/snaps/js-errors-silent-06-result.png)
 
 - [x] **Outcome:** x is **"52"** (`typeof` **string**). `Number("5") + 2` is **7**.
 
@@ -50566,9 +50566,9 @@ Sandbox: `code_sandbox/js-errors-silent/numeric-coercion-minus.html`
 let x = "5" - 2;  // x = 3
 ```
 
-<img alt="js-errors-silent example 7 source" src="./code_sandbox/snaps/js-errors-silent-07-code.png" />
+![js-errors-silent example 7 source](./code_sandbox/snaps/js-errors-silent-07-code.png)
 
-<img alt="js-errors-silent example 7 result" src="./code_sandbox/snaps/js-errors-silent-07-result.png" />
+![js-errors-silent example 7 result](./code_sandbox/snaps/js-errors-silent-07-result.png)
 
 - [x] **Outcome:** `"5" - 2` is **3**. `"abc" - 1` is **NaN** — silent, not a TypeError.
 
@@ -50585,9 +50585,9 @@ Sandbox: `code_sandbox/js-errors-silent/loose-equality.html`
 let x = (5 == "5");  // x = true
 ```
 
-<img alt="js-errors-silent example 8 source" src="./code_sandbox/snaps/js-errors-silent-08-code.png" />
+![js-errors-silent example 8 source](./code_sandbox/snaps/js-errors-silent-08-code.png)
 
-<img alt="js-errors-silent example 8 result" src="./code_sandbox/snaps/js-errors-silent-08-result.png" />
+![js-errors-silent example 8 result](./code_sandbox/snaps/js-errors-silent-08-result.png)
 
 - [x] **Outcome:** `5 == "5"` is **true**. `5 === "5"` is **false**. Throw-if-types-differ is **TypeError**: **loose compare mixed types**.
 
@@ -50775,9 +50775,9 @@ try {
 }
 ```
 
-<img alt="js-error-statements example 1 source" src="./code_sandbox/snaps/js-error-statements-01-code.png" />
+![js-error-statements example 1 source](./code_sandbox/snaps/js-error-statements-01-code.png)
 
-<img alt="js-error-statements example 1 result" src="./code_sandbox/snaps/js-error-statements-01-result.png" />
+![js-error-statements example 1 result](./code_sandbox/snaps/js-error-statements-01-result.png)
 
 - [x] **Outcome:** `1 + 1` is **2**. Catch did **not** run.
 
@@ -50799,9 +50799,9 @@ try {
 }
 ```
 
-<img alt="js-error-statements example 2 source" src="./code_sandbox/snaps/js-error-statements-02-code.png" />
+![js-error-statements example 2 source](./code_sandbox/snaps/js-error-statements-02-code.png)
 
-<img alt="js-error-statements example 2 result" src="./code_sandbox/snaps/js-error-statements-02-result.png" />
+![js-error-statements example 2 result](./code_sandbox/snaps/js-error-statements-02-result.png)
 
 - [x] **Outcome:** **ReferenceError**: **missing is not defined**. Catch ran.
 
@@ -50824,9 +50824,9 @@ try {
 }
 ```
 
-<img alt="js-error-statements example 3 source" src="./code_sandbox/snaps/js-error-statements-03-code.png" />
+![js-error-statements example 3 source](./code_sandbox/snaps/js-error-statements-03-code.png)
 
-<img alt="js-error-statements example 3 result" src="./code_sandbox/snaps/js-error-statements-03-result.png" />
+![js-error-statements example 3 result](./code_sandbox/snaps/js-error-statements-03-result.png)
 
 - [x] **Outcome:** Success path: finally **yes**, catch **no**. Error path: catch **yes**, finally **yes**.
 
@@ -50843,9 +50843,9 @@ Sandbox: `code_sandbox/js-error-statements/throw-string.html`
 throw "Too big";  // throw a text
 ```
 
-<img alt="js-error-statements example 4 source" src="./code_sandbox/snaps/js-error-statements-04-code.png" />
+![js-error-statements example 4 source](./code_sandbox/snaps/js-error-statements-04-code.png)
 
-<img alt="js-error-statements example 4 result" src="./code_sandbox/snaps/js-error-statements-04-result.png" />
+![js-error-statements example 4 result](./code_sandbox/snaps/js-error-statements-04-result.png)
 
 - [x] **Outcome:** Catch receives the string **"Too big"**. `err.name` is not an Error name (`(not an Error object)`).
 
@@ -50862,9 +50862,9 @@ Sandbox: `code_sandbox/js-error-statements/throw-number.html`
 throw 500;  // throw a number
 ```
 
-<img alt="js-error-statements example 5 source" src="./code_sandbox/snaps/js-error-statements-05-code.png" />
+![js-error-statements example 5 source](./code_sandbox/snaps/js-error-statements-05-code.png)
 
-<img alt="js-error-statements example 5 result" src="./code_sandbox/snaps/js-error-statements-05-result.png" />
+![js-error-statements example 5 result](./code_sandbox/snaps/js-error-statements-05-result.png)
 
 - [x] **Outcome:** Catch receives **500**. `String(err)` is **500** — not `Error: 500`.
 
@@ -50893,9 +50893,9 @@ function myFunction(x) {
 }
 ```
 
-<img alt="js-error-statements example 6 source" src="./code_sandbox/snaps/js-error-statements-06-code.png" />
+![js-error-statements example 6 source](./code_sandbox/snaps/js-error-statements-06-code.png)
 
-<img alt="js-error-statements example 6 result" src="./code_sandbox/snaps/js-error-statements-06-result.png" />
+![js-error-statements example 6 result](./code_sandbox/snaps/js-error-statements-06-result.png)
 
 - [x] **Outcome:** `""` → **Input is empty**. `"hello"` → **Input is not a number**. `"3"` → **Input is too low**. `"12"` → **Input is too high**. `"7"` → blank (valid; catch skipped).
 
@@ -50912,9 +50912,9 @@ Sandbox: `code_sandbox/js-error-statements/html-validation.html`
 <input id="demo" type="number" min="5" max="10" step="1">
 ```
 
-<img alt="js-error-statements example 7 source" src="./code_sandbox/snaps/js-error-statements-07-code.png" />
+![js-error-statements example 7 source](./code_sandbox/snaps/js-error-statements-07-code.png)
 
-<img alt="js-error-statements example 7 result" src="./code_sandbox/snaps/js-error-statements-07-result.png" />
+![js-error-statements example 7 result](./code_sandbox/snaps/js-error-statements-07-result.png)
 
 - [x] **Outcome:** `3` is **invalid** (`rangeUnderflow`). `7` is **valid**. `11` is **invalid** (`rangeOverflow`). No JS **throw**.
 
@@ -50946,9 +50946,9 @@ function myFunction() {
 }
 ```
 
-<img alt="js-error-statements example 8 source" src="./code_sandbox/snaps/js-error-statements-08-code.png" />
+![js-error-statements example 8 source](./code_sandbox/snaps/js-error-statements-08-code.png)
 
-<img alt="js-error-statements example 8 result" src="./code_sandbox/snaps/js-error-statements-08-result.png" />
+![js-error-statements example 8 result](./code_sandbox/snaps/js-error-statements-08-result.png)
 
 - [x] **Outcome:** `"3"` → **Input is too low** and field **cleared**. `"7"` → no error message, field **still cleared**.
 
@@ -51133,9 +51133,9 @@ const err = new Error();
 const err2 = new Error("Something went wrong");
 ```
 
-<img alt="js-error-object example 1 source" src="./code_sandbox/snaps/js-error-object-01-code.png" />
+![js-error-object example 1 source](./code_sandbox/snaps/js-error-object-01-code.png)
 
-<img alt="js-error-object example 1 result" src="./code_sandbox/snaps/js-error-object-01-result.png" />
+![js-error-object example 1 result](./code_sandbox/snaps/js-error-object-01-result.png)
 
 - [x] **Outcome:** `new Error()` → name **Error**, message **""**. `new Error("Something went wrong")` → message **Something went wrong**.
 
@@ -51154,9 +51154,9 @@ err.name;
 err.name = "MyError";
 ```
 
-<img alt="js-error-object example 2 source" src="./code_sandbox/snaps/js-error-object-02-code.png" />
+![js-error-object example 2 source](./code_sandbox/snaps/js-error-object-02-code.png)
 
-<img alt="js-error-object example 2 result" src="./code_sandbox/snaps/js-error-object-02-result.png" />
+![js-error-object example 2 result](./code_sandbox/snaps/js-error-object-02-result.png)
 
 - [x] **Outcome:** Default **`name`** is **"Error"**. After `err.name = "MyError"` it is **"MyError"** (message still **boom**).
 
@@ -51174,9 +51174,9 @@ const err = new Error("first");
 err.message = "second";
 ```
 
-<img alt="js-error-object example 3 source" src="./code_sandbox/snaps/js-error-object-03-code.png" />
+![js-error-object example 3 source](./code_sandbox/snaps/js-error-object-03-code.png)
 
-<img alt="js-error-object example 3 result" src="./code_sandbox/snaps/js-error-object-03-result.png" />
+![js-error-object example 3 result](./code_sandbox/snaps/js-error-object-03-result.png)
 
 - [x] **Outcome:** Constructor message is **"first"**. After assign, **`err.message`** is **"second"**.
 
@@ -51197,9 +51197,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 4 source" src="./code_sandbox/snaps/js-error-object-04-code.png" />
+![js-error-object example 4 source](./code_sandbox/snaps/js-error-object-04-code.png)
 
-<img alt="js-error-object example 4 result" src="./code_sandbox/snaps/js-error-object-04-result.png" />
+![js-error-object example 4 result](./code_sandbox/snaps/js-error-object-04-result.png)
 
 - [x] **Outcome:** Outer **Error**: **outer**. `err.cause` is **TypeError**: **inner**.
 
@@ -51217,9 +51217,9 @@ Error.isError(new Error("x"));
 Error.isError({ name: "Error", message: "x" });
 ```
 
-<img alt="js-error-object example 5 source" src="./code_sandbox/snaps/js-error-object-05-code.png" />
+![js-error-object example 5 source](./code_sandbox/snaps/js-error-object-05-code.png)
 
-<img alt="js-error-object example 5 result" src="./code_sandbox/snaps/js-error-object-05-result.png" />
+![js-error-object example 5 result](./code_sandbox/snaps/js-error-object-05-result.png)
 
 - [x] **Outcome:** **Error.isError** is a **function**. `new Error("x")` → **true**. `{name:"Error", message:"x"}` → **false**.
 
@@ -51241,9 +51241,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 6 source" src="./code_sandbox/snaps/js-error-object-06-code.png" />
+![js-error-object example 6 source](./code_sandbox/snaps/js-error-object-06-code.png)
 
-<img alt="js-error-object example 6 result" src="./code_sandbox/snaps/js-error-object-06-result.png" />
+![js-error-object example 6 result](./code_sandbox/snaps/js-error-object-06-result.png)
 
 - [x] **Outcome:** `new EvalError` has name **EvalError**. `eval("alert('Hello)")` throws **SyntaxError**: **Invalid or unexpected token**.
 
@@ -51265,9 +51265,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 7 source" src="./code_sandbox/snaps/js-error-object-07-code.png" />
+![js-error-object example 7 source](./code_sandbox/snaps/js-error-object-07-code.png)
 
-<img alt="js-error-object example 7 result" src="./code_sandbox/snaps/js-error-object-07-result.png" />
+![js-error-object example 7 result](./code_sandbox/snaps/js-error-object-07-result.png)
 
 - [x] **Outcome:** **RangeError**: **toPrecision() argument must be between 1 and 100**.
 
@@ -51289,9 +51289,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 8 source" src="./code_sandbox/snaps/js-error-object-08-code.png" />
+![js-error-object example 8 source](./code_sandbox/snaps/js-error-object-08-code.png)
 
-<img alt="js-error-object example 8 result" src="./code_sandbox/snaps/js-error-object-08-result.png" />
+![js-error-object example 8 result](./code_sandbox/snaps/js-error-object-08-result.png)
 
 - [x] **Outcome:** **ReferenceError**: **y is not defined**.
 
@@ -51313,9 +51313,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 9 source" src="./code_sandbox/snaps/js-error-object-09-code.png" />
+![js-error-object example 9 source](./code_sandbox/snaps/js-error-object-09-code.png)
 
-<img alt="js-error-object example 9 result" src="./code_sandbox/snaps/js-error-object-09-result.png" />
+![js-error-object example 9 result](./code_sandbox/snaps/js-error-object-09-result.png)
 
 - [x] **Outcome:** **SyntaxError**: **Invalid or unexpected token** (caught from `eval`, not from a parse-time script).
 
@@ -51337,9 +51337,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 10 source" src="./code_sandbox/snaps/js-error-object-10-code.png" />
+![js-error-object example 10 source](./code_sandbox/snaps/js-error-object-10-code.png)
 
-<img alt="js-error-object example 10 result" src="./code_sandbox/snaps/js-error-object-10-result.png" />
+![js-error-object example 10 result](./code_sandbox/snaps/js-error-object-10-result.png)
 
 - [x] **Outcome:** **TypeError**: **num.toUpperCase is not a function**.
 
@@ -51360,9 +51360,9 @@ try {
 }
 ```
 
-<img alt="js-error-object example 11 source" src="./code_sandbox/snaps/js-error-object-11-code.png" />
+![js-error-object example 11 source](./code_sandbox/snaps/js-error-object-11-code.png)
 
-<img alt="js-error-object example 11 result" src="./code_sandbox/snaps/js-error-object-11-result.png" />
+![js-error-object example 11 result](./code_sandbox/snaps/js-error-object-11-result.png)
 
 - [x] **Outcome:** **URIError**: **URI malformed** for `decodeURI("%%%")`. `encodeURI` of an unpaired surrogate is also **URIError**: **URI malformed**.
 
