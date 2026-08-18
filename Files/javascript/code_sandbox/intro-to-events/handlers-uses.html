@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>What event handlers are for</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Event handlers react to user and browser actions.</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText = [
+        "Things that should be done every time a page loads",
+        "Action when a user clicks a button",
+        "Content verified when a user inputs data"
+      ].join("\n");
+    </script>
+  </body>
+</html>

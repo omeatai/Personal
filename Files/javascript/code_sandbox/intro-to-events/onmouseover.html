@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Common event — onmouseover</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box" style="padding:12px;background:#eee;">Mouse Over Me</div>
+    <pre id="demo"></pre>
+    <script>
+      const box = document.getElementById("box");
+      box.onmouseover = function () { box.textContent = "hovered"; };
+      box.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+      document.getElementById("demo").innerText = box.textContent;
+    </script>
+  </body>
+</html>
