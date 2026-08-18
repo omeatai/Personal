@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>add(a, b) — pause on a line, then inspect result</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>add(a, b) — pause on a line, then inspect result</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function add(a, b) {
+        let result = a + b;
+        return result;
+      }
+      const results = [add(10, 5), add(10, 50), add(10, 500), add(10, 5000)];
+      document.getElementById("demo").innerText =
+        "add(10, 5) -> " + results[0] + "\n" +
+        "add(10, 50) -> " + results[1] + "\n" +
+        "add(10, 500) -> " + results[2] + "\n" +
+        "add(10, 5000) -> " + results[3] + "\n" +
+        "final innerHTML if assigned four times -> " + results[3];
+    </script>
+  </body>
+</html>

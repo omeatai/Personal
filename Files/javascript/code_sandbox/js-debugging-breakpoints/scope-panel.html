@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Scope: local y vs global x</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Scope: local y vs global x</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+
+      const __out = [];
+      let __indent = "";
+      const __times = Object.create(null);
+      const __counts = Object.create(null);
+      function __fmt(args) {
+        return Array.from(args).map(function (a) {
+          if (typeof a === "string") return a;
+          if (typeof a === "undefined") return "undefined";
+          if (typeof a === "symbol") return String(a);
+          if (a instanceof Error) return a.name + ": " + a.message;
+          try { return JSON.stringify(a); } catch (e) { return String(a); }
+        }).join(" ");
+      }
+      function __push(kind, args) {
+        const rest = __fmt(args);
+        __out.push(__indent + kind + (rest ? " " + rest : ""));
+      }
+      const __o = {
+        log: console.log.bind(console),
+        warn: console.warn.bind(console),
+        error: console.error.bind(console),
+        info: console.info.bind(console),
+        dir: console.dir.bind(console),
+        table: console.table.bind(console),
+        assert: console.assert.bind(console),
+        count: console.count.bind(console),
+        clear: console.clear.bind(console),
+        group: console.group.bind(console),
+        groupCollapsed: console.groupCollapsed.bind(console),
+        groupEnd: console.groupEnd.bind(console),
+        time: console.time.bind(console),
+        timeEnd: console.timeEnd.bind(console),
+        trace: console.trace.bind(console)
+      };
+      console.log = function () { __o.log.apply(console, arguments); __push("log:", arguments); };
+      console.warn = function () { __o.warn.apply(console, arguments); __push("warn:", arguments); };
+      console.error = function () { __o.error.apply(console, arguments); __push("error:", arguments); };
+      console.info = function () { __o.info.apply(console, arguments); __push("info:", arguments); };
+      console.dir = function (obj) {
+        __o.dir.apply(console, arguments);
+        try { __out.push(__indent + "dir: " + JSON.stringify(obj)); }
+        catch (e) { __out.push(__indent + "dir: " + String(obj)); }
+      };
+      console.table = function (data) {
+        __o.table.apply(console, arguments);
+        __out.push(__indent + "table: " + JSON.stringify(data));
+      };
+      console.assert = function (cond) {
+        __o.assert.apply(console, arguments);
+        if (!cond) {
+          const rest = Array.prototype.slice.call(arguments, 1);
+          __out.push(__indent + "assert: Assertion failed: " + __fmt(rest));
+        }
+      };
+      console.count = function (label) {
+        __o.count.apply(console, arguments);
+        label = label === undefined ? "default" : String(label);
+        __counts[label] = (__counts[label] || 0) + 1;
+        __out.push(__indent + "count: " + label + ": " + __counts[label]);
+      };
+      console.clear = function () {
+        __o.clear();
+        __out.length = 0;
+        __out.push("(console cleared)");
+      };
+      console.group = function () {
+        __o.group.apply(console, arguments);
+        __push("group:", arguments);
+        __indent += "  ";
+      };
+      console.groupCollapsed = function () {
+        __o.groupCollapsed.apply(console, arguments);
+        __push("groupCollapsed:", arguments);
+        __indent += "  ";
+      };
+      console.groupEnd = function () {
+        __o.groupEnd();
+        if (__indent.length >= 2) __indent = __indent.slice(0, -2);
+        __out.push(__indent + "groupEnd");
+      };
+      console.time = function (label) {
+        __o.time.apply(console, arguments);
+        label = label === undefined ? "default" : String(label);
+        __times[label] = performance.now();
+        __out.push(__indent + "time: started " + JSON.stringify(label));
+      };
+      console.timeEnd = function (label) {
+        __o.timeEnd.apply(console, arguments);
+        label = label === undefined ? "default" : String(label);
+        const started = __times[label];
+        const ms = started !== undefined ? (performance.now() - started) : NaN;
+        __out.push(__indent + "timeEnd: " + JSON.stringify(label) + ": " + (Number.isFinite(ms) ? ms.toFixed(1) + " ms" : "NaN"));
+      };
+      console.trace = function () {
+        __o.trace.apply(console, arguments);
+        const err = new Error(__fmt(arguments) || "trace");
+        __out.push(__indent + "trace:\\n" + String(err.stack || "stack"));
+      };
+      function __flush() {
+        document.getElementById("demo").innerText = __out.join("\n");
+      }
+
+      let x = 10;
+      function test() {
+        let y = 5;
+        console.log(x + y);
+      }
+      test();
+      try {
+        console.log(y);
+      } catch (e) {
+        console.log(e.name + ": " + e.message);
+      }
+      __flush();
+    </script>
+  </body>
+</html>
