@@ -1,7 +1,8 @@
 # JavaScript Tutorial — Build Plan (JS Home → JS JSONP)
 
 Master plan and **resume tracker** for documenting the full W3Schools JavaScript course into
-`Files/javascript/tutorial.md`, following the rule
+`Files/javascript/tutorial.md` (through **JS Destructuring**) and
+`Files/javascript/tutorial2.md` (**JS Errors** onward), following the rule
 `Files/javascript/.cursor/rules/javascript_tutorial.mdc`.
 
 Scope: **every tutorial page from `JS Home` (top) down to `JS JSONP` (bottom)** in left-nav order.
@@ -13,7 +14,7 @@ JS Website, JS Syllabus, JS Study Plan, JS Interview Prep, JS Bootcamp, JS Certi
 ## How to use this plan (read on every resume)
 
 1. Find the **first unchecked page** below (top to bottom). That is the next task.
-2. Do the page end-to-end per the rule: **read → rebuild every example in the sandbox → run → snap code + result → append one accordion** to `tutorial.md`. The accordion **Introduction** must list **every** Example title (all N of them).
+2. Do the page end-to-end per the rule: **read → rebuild every example in the sandbox → run → snap code + result → append one accordion** to `tutorial.md` (through JS Destructuring) or `tutorial2.md` (JS Errors onward). The accordion **Introduction** must list **every** Example title (all N of them).
 3. Tick the page here (`[ ]` → `[x]`) and update **Resume pointer** at the top of the tracker.
 4. Make **one git commit per page** (workflow rule: one task = one unit of work), then the user can `git push`.
 5. Move to the next unchecked page. Never batch multiple pages into one commit unless explicitly asked.
