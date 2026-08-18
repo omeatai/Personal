@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Standalone block: areal inside, ReferenceError outside</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Standalone block: areal inside, ReferenceError outside</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let inside;
+      {
+        let x = 10;
+        let y = 100;
+        let areal = x * y;
+        inside = areal;
+      }
+      let ox, oy, oa;
+      try { ox = x; } catch (e) { ox = e.name + ": " + e.message; }
+      try { oy = y; } catch (e) { oy = e.name + ": " + e.message; }
+      try { oa = areal; } catch (e) { oa = e.name + ": " + e.message; }
+      document.getElementById("demo").innerText =
+        "areal inside -> " + inside + "\n" +
+        "x outside -> " + ox + "\n" +
+        "y outside -> " + oy + "\n" +
+        "areal outside -> " + oa;
+    </script>
+  </body>
+</html>

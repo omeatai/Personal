@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `9.2` JS Code Blocks (new).
-- **Last completed:** `9.1` JS Scope.
+- **Next task:** `9.3` JS Hoisting (new).
+- **Last completed:** `9.2` JS Code Blocks.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -222,7 +222,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S9 — Scope
 
 - [x] `9.1` JS Scope — `js_scope.asp` (new)
-- [ ] `9.2` JS Code Blocks — `js_codeblocks.asp` (new)
+- [x] `9.2` JS Code Blocks — `js_codeblocks.asp` (new)
 - [ ] `9.3` JS Hoisting — `js_hoisting.asp` (new)
 - [ ] `9.4` JS var/let/const — `js_varletconst.asp` (new)
 - [ ] `9.5` JS Strict Mode — `js_strict.asp` (new)

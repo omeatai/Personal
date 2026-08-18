@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>while loop block</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>while loop block</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let i = 0;
+      let text = "";
+      while (i < 3) {
+        text += i + " ";
+        i++;
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "i -> " + String(i);
+    </script>
+  </body>
+</html>
