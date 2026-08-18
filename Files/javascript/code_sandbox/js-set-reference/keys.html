@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>keys() — same as values()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>keys() — same as values()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const letters = new Set(["a","b","c"]);
+      const same = Array.from(letters.keys()).join() === Array.from(letters.values()).join();
+      document.getElementById("demo").innerText = "Array.from(keys) -> " + String(JSON.stringify(Array.from(letters.keys()))) + "\n" + "keys === values (joined) -> " + String(same);
+    </script>
+  </body>
+</html>

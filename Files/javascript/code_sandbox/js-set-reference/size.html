@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>size — number of elements</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>size — number of elements</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const mySet = new Set(["a","b","c"]);
+      mySet.size;
+      document.getElementById("demo").innerText = "mySet.size -> " + String(mySet.size);
+    </script>
+  </body>
+</html>

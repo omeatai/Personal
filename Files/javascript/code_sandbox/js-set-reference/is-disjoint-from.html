@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>isDisjointFrom() — no elements in common</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>isDisjointFrom() — no elements in common</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const A = new Set(["a","b","c"]);
+      const B = new Set(["b","c","d"]);
+      const overlap = A.isDisjointFrom(B);
+      const split = A.isDisjointFrom(new Set(['z']));
+      document.getElementById("demo").innerText = "A.isDisjointFrom(B) -> " + String(A.isDisjointFrom(B)) + "\n" + "A.isDisjointFrom({z}) -> " + String(A.isDisjointFrom(new Set(['z'])));
+    </script>
+  </body>
+</html>

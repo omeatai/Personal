@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>delete() — removes an element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>delete() — removes an element</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const letters = new Set(["a","b","c"]);
+      const ok = letters.delete("b");
+      document.getElementById("demo").innerText = "ok -> " + String(ok) + "\n" + "Array.from(letters) -> " + String(JSON.stringify(Array.from(letters))) + "\n" + "letters.delete(\"b\") again -> " + String(letters.delete("b"));
+    </script>
+  </body>
+</html>

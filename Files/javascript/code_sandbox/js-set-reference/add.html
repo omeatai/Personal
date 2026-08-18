@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>add() — adds a new element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>add() — adds a new element</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const letters = new Set(["a","b","c"]);
+      const ret = letters.add("d");
+      document.getElementById("demo").innerText = "Array.from(letters) -> " + String(JSON.stringify(Array.from(letters))) + "\n" + "ret === letters -> " + String(ret === letters);
+    </script>
+  </body>
+</html>
