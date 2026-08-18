@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>isNaN(&quot;Apple&quot;) vs Number.isNaN(&quot;Apple&quot;)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>isNaN(&quot;Apple&quot;) vs Number.isNaN(&quot;Apple&quot;)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      isNaN("Apple");
+      Number.isNaN("Apple");
+      document.getElementById("demo").innerText = "isNaN(\"Apple\") -> " + String(isNaN("Apple")) + "\n" + "Number.isNaN(\"Apple\") -> " + String(Number.isNaN("Apple"));
+    </script>
+  </body>
+</html>

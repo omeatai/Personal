@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `17.7` JS NaN (new).
-- **Last completed:** `17.6` JS undefined.
+- **Next task:** `17.8` JS toString() (new).
+- **Last completed:** `17.7` JS NaN.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -299,7 +299,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `17.4` JS Symbols — `js_datatypes_symbol.asp` (new)
 - [x] `17.5` JS typeof — `js_typeof.asp` (new)
 - [x] `17.6` JS undefined — `js_undefined.asp` (new)
-- [ ] `17.7` JS NaN — `js_nan.asp` (new)
+- [x] `17.7` JS NaN — `js_nan.asp` (new)
 - [ ] `17.8` JS toString() — `js_tostring.asp` (new)
 - [ ] `17.9` JS toLocaleString() — `js_tolocalestring.asp` (new)
 - [ ] `17.10` JS Type Coercion — `js_type_coercion.asp` (new)
