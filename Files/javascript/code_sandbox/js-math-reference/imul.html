@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Math.imul(2, 4) — extra (not on the July 2025 table)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Math.imul(2, 4) — extra (not on the July 2025 table)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      Math.imul(2, 4);
+      Math.imul(0xffffffff, 5);
+      document.getElementById("demo").innerText = "Math.imul(2, 4) -> " + String(Math.imul(2, 4)) + "\n" + "Math.imul(0xffffffff, 5) -> " + String(Math.imul(0xffffffff, 5));
+    </script>
+  </body>
+</html>
