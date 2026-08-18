@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Keep the DOM small — search is cheaper</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Keep the DOM small — search is cheaper</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function countP(n) {
+        const root = document.createElement("div");
+        for (let i = 0; i < n; i++) root.appendChild(document.createElement("p"));
+        return root.getElementsByTagName("p").length;
+      }
+      document.getElementById("demo").innerText =
+        "small (2) -> " + countP(2) + "\n" +
+        "large (20) -> " + countP(20);
+    </script>
+  </body>
+</html>

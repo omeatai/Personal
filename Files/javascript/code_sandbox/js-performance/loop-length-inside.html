@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Bad: arr.length read every iteration</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Bad: arr.length read every iteration</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const arr = [1, 2, 3, 4];
+      let sum = 0;
+      for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+      }
+      document.getElementById("demo").innerText = "sum -> " + String(sum);
+    </script>
+  </body>
+</html>
