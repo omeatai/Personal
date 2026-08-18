@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>getRndInteger(min, max) — max excluded</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>getRndInteger(min, max) — max excluded</h2>
+    
+    <pre id="demo"></pre>
+    <p><button type="button" onclick="document.getElementById('demo').innerText = String(getRndInteger(0, 10))">Click Me</button></p>
+    <script>
+      function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+      document.getElementById("demo").innerText = String(getRndInteger(0, 10));
+    </script>
+  </body>
+</html>
