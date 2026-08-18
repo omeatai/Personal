@@ -81,8 +81,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `19.6` Debug Reference (new).
-- **Last completed:** `19.5` Debug Async.
+- **Next task:** `20.1` JS Style Guide (new).
+- **Last completed:** `19.6` Debug Reference.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -112,7 +112,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S16** RegExp (10)
 - [x] **S17** Data Types (12)
 - [x] **S18** Errors (4)
-- [ ] **S19** Debugging (6)
+- [x] **S19** Debugging (6)
 - [ ] **S20** Style Guide & Best Practices (4)
 - [ ] **S21** Reference (5)
 - [ ] **S22** Projects (5)
@@ -321,7 +321,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `19.3` Debug Breakpoints — `js_debugging_breakpoints.asp` (new)
 - [x] `19.4` Debug Errors — `js_debugging_errors.asp` (new)
 - [x] `19.5` Debug Async — `js_debugging_async.asp` (new)
-- [ ] `19.6` Debug Reference — `js_debugging_reference.asp` (new)
+- [x] `19.6` Debug Reference — `js_debugging_reference.asp` (new)
 
 ### S20 — Style Guide & Best Practices
 
