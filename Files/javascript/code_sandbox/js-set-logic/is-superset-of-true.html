@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>isSupersetOf() true case</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>isSupersetOf() true case</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const A = new Set(["a","b","c"]);
+      const C = new Set(["b","c"]);
+      const answer = A.isSupersetOf(C);
+      document.getElementById("demo").innerText = "A.isSupersetOf(C) -> " + String(A.isSupersetOf(C)) + "\n" + "C.isSupersetOf(A) -> " + String(C.isSupersetOf(A));
+    </script>
+  </body>
+</html>

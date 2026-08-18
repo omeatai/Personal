@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `12.3` JS Set Logic (new).
-- **Last completed:** `12.2` JS Set Methods.
+- **Next task:** `12.4` JS Set WeakSet (new).
+- **Last completed:** `12.3` JS Set Logic.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -254,7 +254,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 - [x] `12.1` JS Sets — `js_sets.asp` (new)
 - [x] `12.2` JS Set Methods — `js_set_methods.asp` (new)
-- [ ] `12.3` JS Set Logic — `js_set_logic.asp` (new)
+- [x] `12.3` JS Set Logic — `js_set_logic.asp` (new)
 - [ ] `12.4` JS Set WeakSet — `js_sets_weak.asp` (new)
 - [ ] `12.5` JS Set Reference — `js_set_reference.asp` (new)
 
