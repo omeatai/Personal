@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`toString()` bases 2–36</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`toString()` bases 2–36</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let myNumber = 32;
+      myNumber.toString(32);
+      myNumber.toString(16);
+      myNumber.toString(12);
+      myNumber.toString(10);
+      myNumber.toString(8);
+      myNumber.toString(2);
+      document.getElementById("demo").innerText = "toString(32) -> " + String(myNumber.toString(32)) + "\n" + "toString(16) -> " + String(myNumber.toString(16)) + "\n" + "toString(12) -> " + String(myNumber.toString(12)) + "\n" + "toString(10) -> " + String(myNumber.toString(10)) + "\n" + "toString(8) -> " + String(myNumber.toString(8)) + "\n" + "toString(2) -> " + String(myNumber.toString(2));
+    </script>
+  </body>
+</html>

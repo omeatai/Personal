@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Overflow to Infinity</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Overflow to Infinity</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let myNumber = 2;
+      while (myNumber != Infinity) {
+        myNumber = myNumber * myNumber;
+      }
+      document.getElementById("demo").innerText = "myNumber -> " + String(myNumber);
+    </script>
+  </body>
+</html>

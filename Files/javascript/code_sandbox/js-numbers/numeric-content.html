@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Numeric strings vs numbers</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Numeric strings vs numbers</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 100;      // x is a number
+      let y = "100";    // y is a string
+      document.getElementById("demo").innerText = "x -> " + String(x) + "\n" + "typeof x -> " + String(typeof x) + "\n" + "y -> " + String(y) + "\n" + "typeof y -> " + String(typeof y);
+    </script>
+  </body>
+</html>
