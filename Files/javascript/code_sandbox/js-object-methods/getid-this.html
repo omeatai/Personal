@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>getId using this.id</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>getId using this.id</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        getId: function () {
+          return this.id;
+        }
+      };
+      let number = person.getId();
+      document.getElementById("demo").innerText = "number -> " + String(number);
+    </script>
+  </body>
+</html>
