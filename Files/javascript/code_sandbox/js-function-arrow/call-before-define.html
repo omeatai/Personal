@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Calling an arrow before it is defined</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Calling an arrow before it is defined</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let early;
+      try {
+        early = hello();
+      } catch (e) {
+        early = e.name + ": " + e.message;
+      }
+      const hello = () => "Hello";
+      document.getElementById("demo").innerText =
+        "before const -> " + early + "\n" +
+        "after const -> " + hello();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Braces without return → undefined</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Braces without return → undefined</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let r1, r2, r3;
+      try {
+        r1 = String(((x, y) => { x * y })(4, 5));
+      } catch (e) {
+        r1 = e.name;
+      }
+      try {
+        eval("(x, y) => return x * y");
+        r2 = "parsed";
+      } catch (e) {
+        r2 = e.name;
+      }
+      try {
+        r3 = String(((x, y) => { return x * y })(4, 5));
+      } catch (e) {
+        r3 = e.name;
+      }
+      document.getElementById("demo").innerText =
+        "{ x * y } -> " + r1 + "\n" +
+        "=> return x * y -> " + r2 + "\n" +
+        "{ return x * y } -> " + r3;
+    </script>
+  </body>
+</html>
