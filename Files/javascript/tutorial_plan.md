@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `11.8` JS Array const (new).
-- **Last completed:** `11.7` JS Array Reference.
+- **Next task:** `12.1` JS Sets (new).
+- **Last completed:** `11.8` JS Array const.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -103,7 +103,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S8** Objects (7)
 - [x] **S9** Scope (5)
 - [x] **S10** Dates (5)
-- [ ] **S11** Arrays (8)
+- [x] **S11** Arrays (8)
 - [ ] **S12** Sets (5)
 - [ ] **S13** Maps (4)
 - [ ] **S14** Iterations (4)
@@ -248,7 +248,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `11.5` JS Array Sort — `js_array_sort.asp` (new)
 - [x] `11.6` JS Array Iterations — `js_array_iteration.asp` (new)
 - [x] `11.7` JS Array Reference — `js_array_reference.asp` (new)
-- [ ] `11.8` JS Array const — `js_array_const.asp` (new)
+- [x] `11.8` JS Array const — `js_array_const.asp` (new)
 
 ### S12 — Sets
 

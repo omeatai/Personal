@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>var does not have block scope source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];
+let inside;
+{
+  var cars = [&quot;Toyota&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];
+  inside = cars[0];
+}
+let outside = cars[0];</pre>
+  </body>
+</html>

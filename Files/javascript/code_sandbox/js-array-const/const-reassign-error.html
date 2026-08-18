@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>ERROR cannot reassign a const array</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ERROR cannot reassign a const array</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const cars = ["Saab", "Volvo", "BMW"];
+      let msg;
+      try {
+        cars = ["Toyota", "Volvo", "Audi"];
+        msg = "ran without error";
+      } catch (e) {
+        msg = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = msg;
+    </script>
+  </body>
+</html>
