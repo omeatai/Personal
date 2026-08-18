@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>The four timer functions</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The four timer functions</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myDisplayer(t) {
+        document.getElementById("demo").innerText = t;
+      }
+      let lines = [
+        "setTimeout() — run once after a delay",
+        "setInterval() — run repeatedly",
+        "clearTimeout() — cancel a timeout",
+        "clearInterval() — stop an interval"
+      ];
+      myDisplayer(lines.join("\n"));
+      setTimeout(function() {
+        lines.push("setTimeout(0) fired — ready");
+        myDisplayer(lines.join("\n"));
+      }, 0);
+
+    </script>
+  </body>
+</html>

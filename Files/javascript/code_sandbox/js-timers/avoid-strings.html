@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Avoid strings as timer code</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Avoid strings as timer code</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myDisplayer(t) {
+        document.getElementById("demo").innerText = t;
+      }
+      let log = [];
+      function myFunction(tag) {
+        log.push("myFunction ran" + (tag ? " (" + tag + ")" : ""));
+        myDisplayer(log.join("\n"));
+      }
+      setTimeout("myFunction('string')", 200);
+      setTimeout(function() { myFunction("function"); }, 400);
+
+    </script>
+  </body>
+</html>

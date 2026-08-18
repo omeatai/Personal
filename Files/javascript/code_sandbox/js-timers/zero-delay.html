@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Zero delay still Start End Timer</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Zero delay still Start End Timer</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myDisplayer(t) {
+        document.getElementById("demo").innerText = t;
+      }
+      let order = [];
+      function show(msg) {
+        order.push(msg);
+        myDisplayer(order.join(" "));
+      }
+      show("Start");
+      setTimeout(function() { show("Timer"); }, 0);
+      show("End");
+
+    </script>
+  </body>
+</html>

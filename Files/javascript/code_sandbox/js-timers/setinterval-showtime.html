@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>setInterval showTime</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>setInterval showTime</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myDisplayer(t) {
+        document.getElementById("demo").innerText = t;
+      }
+      setInterval(showTime, 1000);
+      function showTime() {
+        const date = new Date();
+        myDisplayer(date.toLocaleTimeString());
+      }
+      showTime();
+
+    </script>
+  </body>
+</html>

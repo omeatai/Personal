@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>clearTimeout — Timer stopped</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>clearTimeout — Timer stopped</h2>
+    
+    <pre id="demo"></pre>
+    <p><button type="button" onclick="startTimer()">Start Timer</button> <button type="button" onclick="stopTimer()">Stop Timer</button></p>
+    <script>
+      let timer;
+      function startTimer() {
+        timer = setTimeout(function() {
+          document.getElementById("demo").innerText = "Finished";
+        }, 5000);
+      }
+      function stopTimer() {
+        clearTimeout(timer);
+        document.getElementById("demo").innerText = "Timer stopped";
+      }
+      startTimer();
+      stopTimer();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Delay is a minimum (busy loop)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Delay is a minimum (busy loop)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myDisplayer(t) {
+        document.getElementById("demo").innerText = t;
+      }
+      let t0 = Date.now();
+      setTimeout(function() {
+        myDisplayer("Timer finished (" + (Date.now() - t0) + " ms real; loop was 4e7, page used 4e9)");
+      }, 1000);
+      let i = 4e7;
+      while (--i > 0);
+
+    </script>
+  </body>
+</html>

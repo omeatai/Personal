@@ -76,9 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `7.10` JS Timers (new).
-- **Last completed:** `7.9` Function Quiz.
-  **JS String Reference** accordion listed a method table and only fenced `trim()`.
+- **Next task:** `8.1` JS Objects (new).
+- **Last completed:** `7.10` JS Timers.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -96,7 +95,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [ ] **S4** Loops (6)
 - [ ] **S5** Strings (5)
 - [x] **S6** Numbers (6)
-- [ ] **S7** Functions (10)
+- [x] **S7** Functions (10)
 - [ ] **S8** Objects (7)
 - [ ] **S9** Scope (5)
 - [ ] **S10** Dates (5)
@@ -208,7 +207,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `7.7` Function Expressions — `js_function_expressions.asp` (new)
 - [x] `7.8` Function Arrow — `js_arrow_function.asp` (new)
 - [x] `7.9` Function Quiz — `js_function_quiz.asp` (new)
-- [ ] `7.10` JS Timers — `js_timers.asp` (new)
+- [x] `7.10` JS Timers — `js_timers.asp` (new)
 
 ### S8 — Objects
 

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Start / stop clock (clearInterval)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Start / stop clock (clearInterval)</h2>
+    
+    <pre id="demo"></pre>
+    <p><button type="button" onclick="startClock()">Start Clock</button> <button type="button" onclick="stopClock()">Stop Clock</button></p>
+    <script>
+      let timer;
+      function showTime() {
+        const date = new Date();
+        document.getElementById("demo").innerText = date.toLocaleTimeString();
+      }
+      function startClock() {
+        if (!timer) {
+          timer = setInterval(showTime, 1000);
+        }
+      }
+      function stopClock() {
+        clearInterval(timer);
+        timer = undefined;
+      }
+      startClock();
+      showTime();
+
+    </script>
+  </body>
+</html>
