@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Track visit counts with WeakMap source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>let text = &quot;&quot;;
+const visitsCount = new WeakMap();
+const John = {name:&quot;John&quot;, age:40};
+const Paul = {name:&quot;Paul&quot;, age:41};
+const Ringo = {name:&quot;Ringo&quot;, age:42};
+const George = {name:&quot;George&quot;, age:43};
+function track(visitor) {
+  let count = visitsCount.get(visitor) || 0;
+  count++;
+  visitsCount.set(visitor, count);
+  text += visitor.name + &quot;, age &quot; + visitor.age + &quot;, has visited &quot; + count + &quot; time(s). &quot;;
+}
+track(Paul);
+track(Ringo);
+track(Paul);
+track(Paul);
+track(John);</pre>
+  </body>
+</html>

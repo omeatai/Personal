@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>has(key)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>has(key)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myMap = new WeakMap();
+      let myObj = {fname:"John", lname:"Doe"};
+      myMap.set(myObj, "player");
+      document.getElementById("demo").innerText = "myMap.has(myObj) -> " + String(myMap.has(myObj)) + "\n" + "myMap.has({fname:'John', lname:'Doe'}) -> " + String(myMap.has({fname:'John', lname:'Doe'}));
+    </script>
+  </body>
+</html>

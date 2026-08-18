@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Dropping the only key reference (GC)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dropping the only key reference (GC)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myMap = new WeakMap();
+      let myObj = {fname:"John", lname:"Doe"};
+      myMap.set(myObj, "secret");
+      const held = myMap.get(myObj);
+      myObj = null;
+      let r0;
+      try {
+        r0 = held;
+      } catch (e) {
+        r0 = e.name + ": " + e.message;
+      }
+      let r1;
+      try {
+        r1 = myObj;
+      } catch (e) {
+        r1 = e.name + ": " + e.message;
+      }
+      let r2;
+      try {
+        r2 = myMap.get(null);
+      } catch (e) {
+        r2 = e.name + ": " + e.message;
+      }
+      let r3;
+      try {
+        r3 = [...myMap];
+      } catch (e) {
+        r3 = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = "held before null -> " + String(r0) + "\n" + "myObj after -> " + String(r1) + "\n" + "myMap.get(null) -> " + String(r2) + "\n" + "[...myMap] -> " + String(r3);
+    </script>
+  </body>
+</html>

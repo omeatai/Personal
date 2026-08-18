@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Track visit counts with WeakMap</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Track visit counts with WeakMap</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "";
+      const visitsCount = new WeakMap();
+      const John = {name:"John", age:40};
+      const Paul = {name:"Paul", age:41};
+      const Ringo = {name:"Ringo", age:42};
+      const George = {name:"George", age:43};
+      function track(visitor) {
+        let count = visitsCount.get(visitor) || 0;
+        count++;
+        visitsCount.set(visitor, count);
+        text += visitor.name + ", age " + visitor.age + ", has visited " + count + " time(s). ";
+      }
+      track(Paul);
+      track(Ringo);
+      track(Paul);
+      track(Paul);
+      track(John);
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "visitsCount.get(Paul) -> " + String(visitsCount.get(Paul)) + "\n" + "visitsCount.get(George) -> " + String(String(visitsCount.get(George)));
+    </script>
+  </body>
+</html>

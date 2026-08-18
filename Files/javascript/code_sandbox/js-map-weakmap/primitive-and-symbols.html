@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Keys: objects / unregistered symbols; primitives throw</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Keys: objects / unregistered symbols; primitives throw</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myMap = new WeakMap();
+      const obj = {x: 1};
+      const unique = Symbol('x');
+      let r0;
+      try {
+        r0 = (myMap.set(obj, 'obj'), myMap.get(obj));
+      } catch (e) {
+        r0 = e.name + ": " + e.message;
+      }
+      let r1;
+      try {
+        r1 = (myMap.set(unique, 'sym'), myMap.get(unique));
+      } catch (e) {
+        r1 = e.name + ": " + e.message;
+      }
+      let r2;
+      try {
+        r2 = myMap.set("nope", 1);
+      } catch (e) {
+        r2 = e.name + ": " + e.message;
+      }
+      let r3;
+      try {
+        r3 = myMap.set(Symbol.for('x'), 1);
+      } catch (e) {
+        r3 = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = "set/get object -> " + String(r0) + "\n" + "set/get Symbol('x') -> " + String(r1) + "\n" + "set(\"nope\", 1) -> " + String(r2) + "\n" + "set(Symbol.for('x'), 1) -> " + String(r3);
+    </script>
+  </body>
+</html>
