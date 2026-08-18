@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Common mistake — querySelector returns only the first match</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p class="item">A</p><p class="item">B</p>
+    <pre id="demo"></pre>
+    <script>
+      document.querySelector(".item").textContent = "only first";
+      const all = document.querySelectorAll(".item");
+      document.getElementById("demo").innerText = all[0].textContent + " / " + all[1].textContent;
+    </script>
+  </body>
+</html>

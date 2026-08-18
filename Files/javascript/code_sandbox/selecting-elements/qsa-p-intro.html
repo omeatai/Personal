@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>querySelectorAll(&quot;p.intro&quot;)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p class="intro">yes</p><div class="intro">no</div><p>plain</p>
+    <pre id="demo"></pre>
+    <script>
+      const x = document.querySelectorAll("p.intro");
+      document.getElementById("demo").innerText = "length=" + x.length + " text=" + x[0].textContent;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.body, document.title, document.head</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Document shortcuts</p>
+    <pre id="demo"></pre>
+    <script>
+      document.title = "Selecting Elements";
+      document.getElementById("demo").innerText = [
+        "body=" + document.body.tagName,
+        "head=" + document.head.tagName,
+        "root=" + document.documentElement.tagName,
+        "title=" + document.title
+      ].join("\n");
+    </script>
+  </body>
+</html>

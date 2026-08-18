@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Finding HTML Elements by Tag Name</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Red</p><p>Blue</p>
+    <pre id="demo"></pre>
+    <script>
+      const element = document.getElementsByTagName("p");
+      document.getElementById("demo").innerText =
+        element.length + ": " + element[0].textContent + ", " + element[1].textContent;
+    </script>
+  </body>
+</html>

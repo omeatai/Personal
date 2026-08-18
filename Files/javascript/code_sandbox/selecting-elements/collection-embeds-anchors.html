@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>document.embeds and document.anchors (legacy)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <embed id="e" type="text/plain" width="1" height="1"><a name="old">named anchor</a>
+    <pre id="demo"></pre>
+    <script>
+      let anc = "(gone)";
+      try { anc = String(document.anchors ? document.anchors.length : "undefined"); }
+      catch (e) { anc = e.name; }
+      document.getElementById("demo").innerText =
+        "embeds=" + document.embeds.length + "\nanchors=" + anc;
+    </script>
+  </body>
+</html>
