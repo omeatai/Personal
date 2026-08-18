@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Q8: What does this refer to in a method? → C The object that owns the method</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q8: What does this refer to in a method? → C The object that owns the method</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = {
+        name: "John",
+        getName: function() {
+          return this.name;
+        }
+      };
+      let text = person.getName();
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "answer -> " + String("C");
+    </script>
+  </body>
+</html>

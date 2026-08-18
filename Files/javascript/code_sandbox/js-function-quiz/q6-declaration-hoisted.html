@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Q6: Called before defined? → A Function declaration</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q6: Called before defined? → A Function declaration</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let fromDecl = add(2, 3);
+      function add(a, b) {
+        return a + b;
+      }
+      let fromExpr;
+      try {
+        fromExpr = extra(2, 3);
+      } catch (e) {
+        fromExpr = e.name;
+      }
+      const extra = function(a, b) {
+        return a + b;
+      };
+      document.getElementById("demo").innerText =
+        "declaration add(2, 3) -> " + fromDecl + "\n" +
+        "expression before const -> " + fromExpr + "\n" +
+        "answer -> A";
+    </script>
+  </body>
+</html>
