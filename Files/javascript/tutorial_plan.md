@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `17.12` JS Destructuring (new).
-- **Last completed:** `17.11` JS Type Conversion.
+- **Next task:** `18.1` JS Errors Intro (new).
+- **Last completed:** `17.12` JS Destructuring.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -109,7 +109,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S14** Iterations (4)
 - [x] **S15** Math (3)
 - [x] **S16** RegExp (10)
-- [ ] **S17** Data Types (12)
+- [x] **S17** Data Types (12)
 - [ ] **S18** Errors (4)
 - [ ] **S19** Debugging (6)
 - [ ] **S20** Style Guide & Best Practices (4)
@@ -304,7 +304,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `17.9` JS toLocaleString() — `js_tolocalestring.asp` (new)
 - [x] `17.10` JS Type Coercion — `js_type_coercion.asp` (new)
 - [x] `17.11` JS Type Conversion — `js_type_conversion.asp` (new)
-- [ ] `17.12` JS Destructuring — `js_destructuring.asp` (new)
+- [x] `17.12` JS Destructuring — `js_destructuring.asp` (new)
 
 ### S18 — Errors
 

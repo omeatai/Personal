@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Nested object destructuring</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Nested object destructuring</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const user = {
+        name: "John",
+        address: { city: "Oslo", zip: "0001" }
+      };
+      let { name, address: { city, zip } } = user;
+      document.getElementById("demo").innerText = "name -> " + String(name) + "\n" + "city -> " + String(city) + "\n" + "zip -> " + String(zip);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Array destructuring — first two</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Array destructuring — first two</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+      let [fruit1, fruit2] = fruits;
+      document.getElementById("demo").innerText = "fruit1 -> " + String(fruit1) + "\n" + "fruit2 -> " + String(fruit2);
+    </script>
+  </body>
+</html>

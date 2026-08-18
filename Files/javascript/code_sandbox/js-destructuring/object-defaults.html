@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Object default — country = &quot;US&quot;</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Object default — country = &quot;US&quot;</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50
+      };
+      let {firstName, lastName, country = "US"} = person;
+      document.getElementById("demo").innerText = "firstName -> " + String(firstName) + "\n" + "lastName -> " + String(lastName) + "\n" + "country -> " + String(country);
+    </script>
+  </body>
+</html>

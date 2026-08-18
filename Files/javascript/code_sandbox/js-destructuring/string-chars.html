@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>String destructuring — characters</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>String destructuring — characters</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let name = "W3Schools";
+      let [a1, a2, a3, a4, a5] = name;
+      document.getElementById("demo").innerText = "a1 -> " + String(a1) + "\n" + "a2 -> " + String(a2) + "\n" + "a3 -> " + String(a3) + "\n" + "a4 -> " + String(a4) + "\n" + "a5 -> " + String(a5);
+    </script>
+  </body>
+</html>
