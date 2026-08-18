@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>days[d.getDay()] on now</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>days[d.getDay()] on now</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      const d = new Date();
+      let day = days[d.getDay()];
+      document.getElementById("demo").innerText = "day -> " + String(day) + "\n" + "d.getDay() -> " + String(d.getDay());
+    </script>
+  </body>
+</html>
