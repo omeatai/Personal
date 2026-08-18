@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>add(object) then has(object)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>add(object) then has(object)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const mySet = new WeakSet();
+      let myObj = {fname:"John", lname:"Doe"};
+      mySet.add(myObj);
+      const answer = mySet.has(myObj);
+      document.getElementById("demo").innerText = "answer -> " + String(answer) + "\n" + "mySet.has(myObj) -> " + String(mySet.has(myObj));
+    </script>
+  </body>
+</html>

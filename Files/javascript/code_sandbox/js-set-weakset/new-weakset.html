@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>new WeakSet()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>new WeakSet()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const mySet = new WeakSet();
+      document.getElementById("demo").innerText = "typeof mySet -> " + String(typeof mySet) + "\n" + "mySet instanceof WeakSet -> " + String(mySet instanceof WeakSet);
+    </script>
+  </body>
+</html>

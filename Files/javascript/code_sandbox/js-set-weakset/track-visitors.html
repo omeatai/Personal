@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Track visitors with WeakSet</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Track visitors with WeakSet</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "";
+      const persons = new WeakSet();
+      const John = {name:"John", age:40};
+      const Paul = {name:"Paul", age:41};
+      const Ringo = {name:"Ringo", age:42};
+      const George = {name:"George", age:43};
+      function track(visitor) {
+        if (persons.has(visitor)) {
+          text += visitor.name + " is visiting again. ";
+        } else {
+          persons.add(visitor);
+          text += visitor.name + ", age" + visitor.age + ", is visiting for the first time ";
+        }
+      }
+      track(Paul);
+      track(Ringo);
+      track(Paul);
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "persons.has(Paul) -> " + String(persons.has(Paul)) + "\n" + "persons.has(John) -> " + String(persons.has(John));
+    </script>
+  </body>
+</html>
