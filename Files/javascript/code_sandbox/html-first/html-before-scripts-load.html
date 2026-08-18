@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML is visible before JavaScript loads</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <article><h1>Article title</h1><p>Readable immediately.</p></article>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText = document.querySelector("article").innerText.replace(/\s+/g, " ").trim();
+    </script>
+  </body>
+</html>

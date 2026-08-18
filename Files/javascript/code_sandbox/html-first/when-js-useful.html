@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>When JavaScript is still useful</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Load extra (needs JS)</button><p id="out">Base content always here.</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("b").onclick = function () {
+        document.getElementById("out").textContent += " Extra loaded.";
+      };
+      document.getElementById("b").click();
+      document.getElementById("demo").innerText = document.getElementById("out").textContent;
+    </script>
+  </body>
+</html>

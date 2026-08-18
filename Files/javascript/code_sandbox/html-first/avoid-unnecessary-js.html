@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Avoid unnecessary JavaScript</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Many sites can be built with more HTML, CSS, and less JavaScript.</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText = [
+        "Page speed",
+        "Accessibility",
+        "Search engine visibility",
+        "Maintainability",
+        "Reliability"
+      ].join("\n");
+    </script>
+  </body>
+</html>

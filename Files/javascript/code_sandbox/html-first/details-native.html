@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Browsers already understand details/summary</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <details open><summary>Click to read more</summary>This text can be opened and closed without JavaScript.</details>
+    <pre id="demo"></pre>
+    <script>
+      const d = document.querySelector("details");
+      document.getElementById("demo").innerText = "open=" + d.open + " (native widget, no JS toggle)";
+    </script>
+  </body>
+</html>

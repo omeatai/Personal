@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Progressive enhancement — form without JavaScript</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <form id="f" action="#" method="post"><label>Email: <input id="em" type="email" name="email" required></label> <button type="submit">Subscribe</button></form>
+    <pre id="demo"></pre>
+    <script>
+      const f = document.getElementById("f");
+      f.addEventListener("submit", function (e) { e.preventDefault(); });
+      document.getElementById("demo").innerText = "empty valid=" + f.checkValidity();
+    </script>
+  </body>
+</html>

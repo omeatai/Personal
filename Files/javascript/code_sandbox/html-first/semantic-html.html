@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Semantic HTML improves accessibility</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <main><article><h1>Use meaningful HTML first.</h1></article></main>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "h1 in article=" + document.querySelector("article h1").textContent;
+    </script>
+  </body>
+</html>
