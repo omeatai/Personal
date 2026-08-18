@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Assign onclick with the HTML DOM</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="myBtn">Try it</button><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      function displayDate() { document.getElementById("out").innerHTML = Date(); }
+      document.getElementById("myBtn").onclick = displayDate;
+      document.getElementById("myBtn").click();
+      document.getElementById("demo").innerText = document.getElementById("out").innerHTML;
+    </script>
+  </body>
+</html>

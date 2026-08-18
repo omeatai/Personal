@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Call a function and pass this</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="h">Click on this text!</h1>
+    <pre id="demo"></pre>
+    <script>
+      function changeText(id) { id.innerHTML = "Ooops!"; }
+      document.getElementById("h").onclick = function () { changeText(this); };
+      document.getElementById("h").click();
+      document.getElementById("demo").innerText = document.getElementById("h").innerHTML;
+    </script>
+  </body>
+</html>

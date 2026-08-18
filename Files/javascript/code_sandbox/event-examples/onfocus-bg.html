@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>More examples — onfocus background</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="n">
+    <pre id="demo"></pre>
+    <script>
+      const n = document.getElementById("n");
+      n.onfocus = function () { this.style.background = "yellow"; };
+      n.focus();
+      n.dispatchEvent(new FocusEvent("focus"));
+      document.getElementById("demo").innerText = "background=" + n.style.background;
+    </script>
+  </body>
+</html>

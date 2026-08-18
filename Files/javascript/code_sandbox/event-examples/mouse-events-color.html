@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>More examples — mouse events change color</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h2 id="h">Mouse over me</h2>
+    <pre id="demo"></pre>
+    <script>
+      const h = document.getElementById("h");
+      h.onmouseover = function () { this.style.color = "red"; };
+      h.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+      document.getElementById("demo").innerText = "color=" + h.style.color;
+    </script>
+  </body>
+</html>

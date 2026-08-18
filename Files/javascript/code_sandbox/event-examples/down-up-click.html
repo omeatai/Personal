@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>onmousedown, onmouseup, and onclick</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box" style="padding:12px;background:#eee;">Click Me</div>
+    <pre id="demo"></pre>
+    <script>
+      const box = document.getElementById("box");
+      const log = [];
+      box.onmousedown = function () { log.push("down"); };
+      box.onmouseup = function () { log.push("up"); };
+      box.onclick = function () { log.push("click"); };
+      box.dispatchEvent(new MouseEvent("mousedown", { bubbles: true }));
+      box.dispatchEvent(new MouseEvent("mouseup", { bubbles: true }));
+      box.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+      document.getElementById("demo").innerText = log.join(" -> ");
+    </script>
+  </body>
+</html>

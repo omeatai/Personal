@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>More examples — change an image while the mouse is down</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <img id="light" alt="bulb" width="48" height="48" src="up.svg">
+    <pre id="demo"></pre>
+    <script>
+      const img = document.getElementById("light");
+      img.onmousedown = function () { this.src = "down.svg"; };
+      img.onmouseup = function () { this.src = "up.svg"; };
+      img.dispatchEvent(new MouseEvent("mousedown", { bubbles: true }));
+      document.getElementById("demo").innerText = "src ends with " + img.getAttribute("src");
+    </script>
+  </body>
+</html>

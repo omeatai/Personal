@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>onmouseover and onmouseout</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box">Mouse Over Me</div>
+    <pre id="demo"></pre>
+    <script>
+      const box = document.getElementById("box");
+      const log = [];
+      box.onmouseover = function () { this.style.color = "red"; log.push("over"); };
+      box.onmouseout = function () { this.style.color = "black"; log.push("out"); };
+      box.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+      box.dispatchEvent(new MouseEvent("mouseout", { bubbles: true }));
+      document.getElementById("demo").innerText = log.join(" -> ") + " color=" + box.style.color;
+    </script>
+  </body>
+</html>

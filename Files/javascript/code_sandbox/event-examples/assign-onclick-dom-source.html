@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Assign onclick with the HTML DOM source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>&lt;button type=&quot;button&quot; id=&quot;myBtn&quot;&gt;Try it&lt;/button&gt;
+&lt;script&gt;
+document.getElementById(&quot;myBtn&quot;).onclick = displayDate;
+function displayDate() {
+  document.getElementById(&quot;out&quot;).innerHTML = Date();
+}
+&lt;/script&gt;</pre>
+  </body>
+</html>

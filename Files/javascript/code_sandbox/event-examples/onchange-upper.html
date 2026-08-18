@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>The onchange event — upperCase</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="fname">
+    <pre id="demo"></pre>
+    <script>
+      const f = document.getElementById("fname");
+      f.onchange = function () { this.value = this.value.toUpperCase(); };
+      f.value = "hello";
+      f.dispatchEvent(new Event("change", { bubbles: true }));
+      document.getElementById("demo").innerText = f.value;
+    </script>
+  </body>
+</html>
