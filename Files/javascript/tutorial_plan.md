@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `8.2` Object Intro (new).
-- **Last completed:** `8.1` JS Objects.
+- **Next task:** `8.3` Object Properties (new).
+- **Last completed:** `8.2` Object Intro.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -212,7 +212,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S8 — Objects
 
 - [x] `8.1` JS Objects — `js_objects.asp` (new)
-- [ ] `8.2` Object Intro — `js_object_intro.asp` (new)
+- [x] `8.2` Object Intro — `js_object_intro.asp` (new)
 - [ ] `8.3` Object Properties — `js_object_properties.asp` (new)
 - [ ] `8.4` Object Methods — `js_object_methods.asp` (new)
 - [ ] `8.5` Object this — `js_object_this.asp` (new)

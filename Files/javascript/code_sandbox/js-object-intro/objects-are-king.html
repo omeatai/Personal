@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Objects are king — typeof primitives vs objects</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Objects are king — typeof primitives vs objects</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const primitives = [
+        typeof "John",
+        typeof 3.14,
+        typeof 10n,
+        typeof true,
+        typeof undefined,
+        typeof Symbol("id"),
+        typeof null
+      ];
+      const objects = [
+        typeof {x: 1},
+        typeof [1, 2],
+        typeof new Date(),
+        typeof Math,
+        typeof new Map(),
+        typeof new Set(),
+        typeof /()/,
+        typeof new Error("e"),
+        typeof function () {}
+      ];
+      document.getElementById("demo").innerText = "primitives -> " + String(primitives.join(", ")) + "\n" + "objects -> " + String(objects.join(", "));
+    </script>
+  </body>
+</html>

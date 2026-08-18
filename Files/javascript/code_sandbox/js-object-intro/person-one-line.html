@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Example 1: person object on one line</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Example 1: person object on one line</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+      document.getElementById("demo").innerText = "person.firstName -> " + String(person.firstName) + "\n" + "person.lastName -> " + String(person.lastName) + "\n" + "person.age -> " + String(person.age) + "\n" + "person.eyeColor -> " + String(person.eyeColor);
+    </script>
+  </body>
+</html>
