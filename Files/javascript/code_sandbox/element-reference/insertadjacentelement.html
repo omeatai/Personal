@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>insertAdjacentElement()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+<div id="wrap" title="box" lang="en" dir="ltr" accesskey="w" tabindex="0" style="padding:8px;border:4px solid navy;width:220px;height:80px;overflow:auto;">
+  <p id="t" class="note item" data-k="v">Hello <b id="b">World</b></p>
+  <p id="u">Next</p>
+</div>
+<input id="inp" value="x">
+
+    <pre id="demo"></pre>
+    <script>
+      const s = document.createElement("span");
+      s.textContent = "X";
+      document.getElementById("t").insertAdjacentElement("afterend", s);
+      document.getElementById("demo").innerText = document.getElementById("wrap").innerText.replace(/\s+/g, " ");
+    </script>
+  </body>
+</html>
