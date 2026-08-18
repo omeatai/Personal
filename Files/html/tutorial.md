@@ -9,6 +9,10 @@ Section-by-section notes. Each accordion is one tutorial page: explained, coded 
 
 HTML is the **standard markup language** for creating Web pages. This section defines what HTML is, walks through a **simple HTML document**, explains **elements** (including empty ones like `<br>`), shows how **browsers** use tags without displaying them, outlines **page structure** (`<html>`, `<head>`, `<body>`), and sketches **HTML history** up to HTML5. This tutorial follows the **latest HTML5 standard**.
 
+This section has **1** example:
+
+- [x] **Example 1:** A Simple HTML Document [View](#html-introduction-example-01)
+
 ## Detailed Explanation
 
 - [x] **What is HTML?**
@@ -18,21 +22,6 @@ HTML is the **standard markup language** for creating Web pages. This section de
   - Consists of a **series of elements**.
   - Elements tell the **browser how to display** the content.
   - Elements **label** pieces of content: heading, paragraph, link, and so on.
-- [x] **A simple HTML document**
-  - The page example is a full HTML5 file: doctype, `html`, `head`/`title`, and `body` with one heading and one paragraph.
-  - Sandbox file: `code_sandbox/html-introduction/index.html`.
-  - Running it in the browser shows **My First Heading** and **My first paragraph.** The tab title is **Page Title**.
-
-<img alt="html-introduction result" src="./code_sandbox/snaps/html-introduction-result.png" />
-
-- [x] **Example explained**
-  - `<!DOCTYPE html>` declares an **HTML5** document.
-  - `<html>` is the **root** element of the page.
-  - `<head>` holds **meta information** about the page.
-  - `<title>` sets the title in the **browser tab / title bar**.
-  - `<body>` is the container for **all visible content** (headings, paragraphs, images, links, tables, lists, and so on).
-  - `<h1>` defines a **large heading**.
-  - `<p>` defines a **paragraph**.
 - [x] **What is an HTML element?**
   - An element is a **start tag**, **content**, and an **end tag**: `<tagname> Content goes here... </tagname>`.
   - The element is **everything** from the start tag through the end tag.
@@ -64,11 +53,23 @@ HTML is the **standard markup language** for creating Web pages. This section de
   - **2014:** W3C Recommendation: **HTML5**.
   - This tutorial follows the **latest HTML5 standard**.
 
+<a id="html-introduction-example-01"></a>
+
+### **Example 1: A Simple HTML Document**
+
+- [x] **A simple HTML document**
+  - The page example is a full HTML5 file: doctype, `html`, `head`/`title`, and `body` with one heading and one paragraph.
+  - Running it in the browser shows **My First Heading** and **My first paragraph.** The tab title is **Page Title**.
+- [x] **Example explained**
+  - `<!DOCTYPE html>` declares an **HTML5** document.
+  - `<html>` is the **root** element of the page.
+  - `<head>` holds **meta information** about the page.
+  - `<title>` sets the title in the **browser tab / title bar**.
+  - `<body>` is the container for **all visible content** (headings, paragraphs, images, links, tables, lists, and so on).
+  - `<h1>` defines a **large heading**.
+  - `<p>` defines a **paragraph**.
+
 Sandbox: `code_sandbox/html-introduction/index.html`
-
-Tested source (W3Schools **A Simple HTML Document**):
-
-<img alt="html-introduction source" src="./code_sandbox/snaps/html-introduction-code.png" />
 
 ```html
 <!DOCTYPE html>
@@ -83,9 +84,11 @@ Tested source (W3Schools **A Simple HTML Document**):
 </html>
 ```
 
-Rendered result (browser uses the tags; it does not print them):
+<img alt="html-introduction source" src="./code_sandbox/snaps/html-introduction-code.png" />
 
 <img alt="html-introduction result" src="./code_sandbox/snaps/html-introduction-result.png" />
+
+- [x] **Outcome:** Running it in the browser shows **My First Heading** and **My first paragraph.** The tab title is **Page Title**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -291,6 +294,11 @@ HTML is **Hyper Text Markup Language**: elements describe page **structure** and
 
 You do not need a professional IDE to learn HTML. A **simple text editor**—**Notepad** on Windows or **TextEdit** on Mac—is enough to write a page, save it as **`.htm` / `.html`** with **UTF-8** encoding, and open it in a browser. This section walks through that workflow and also points to W3Schools’ **online editor** (“Try it Yourself”) for fast tests.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Notepad / save-as index.htm example [View](#html-editors-example-01)
+- [x] **Example 2:** Online editor example [View](#html-editors-example-02)
+
 ## Detailed Explanation
 
 - [x] **A simple text editor is enough**
@@ -305,29 +313,21 @@ You do not need a professional IDE to learn HTML. A **simple text editor**—**N
   - **Preferences** → **Format** → choose **Plain Text** so files save correctly.
   - Under **Open and Save**, check **Display HTML files as HTML code instead of formatted text**.
   - Then open a **new document** for the code.
-- [x] **Step 2: Write some HTML**
-  - Copy this document into the editor (sandbox: `code_sandbox/html-editors/index.html`).
-
-<img alt="html-editors source" src="./code_sandbox/snaps/html-editors-code.png" />
-
 - [x] **Step 3: Save the HTML page**
   - **File** → **Save as**.
   - Name it **`index.htm`** (or **`index.html`**—the extensions are equivalent).
   - Set encoding to **UTF-8** (preferred for HTML files).
+
+<a id="html-editors-example-01"></a>
+
+### **Example 1: Notepad / save-as index.htm example**
+
+- [x] **Step 2: Write some HTML**
 - [x] **Step 4: View it in a browser**
   - Double-click the file, or right-click → **Open with** your browser.
   - The browser shows **My First Heading** and **My first paragraph.** (it does not print the tags).
 
-<img alt="html-editors result" src="./code_sandbox/snaps/html-editors-result.png" />
-
-- [x] **W3Schools online editor (“Try it Yourself”)**
-  - Edit HTML and see the result in the browser.
-  - Useful for **fast tests**; it has **color coding** and can **save / share** code.
-  - That example uses a `<title>` (**Page Title**), heading **This is a Heading**, and paragraph **This is a paragraph.** Sandbox: `code_sandbox/html-editors/tryit.html`.
-
-Sandbox: `code_sandbox/html-editors/index.html` (Notepad / save-as `index.htm` example)
-
-<img alt="html-editors source" src="./code_sandbox/snaps/html-editors-code.png" />
+Sandbox: `code_sandbox/html-editors/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -340,11 +340,21 @@ Sandbox: `code_sandbox/html-editors/index.html` (Notepad / save-as `index.htm` e
 </html>
 ```
 
+<img alt="html-editors source" src="./code_sandbox/snaps/html-editors-code.png" />
+
 <img alt="html-editors result" src="./code_sandbox/snaps/html-editors-result.png" />
 
-Sandbox: `code_sandbox/html-editors/tryit.html` (online editor example)
+- [x] **Outcome:** The browser shows **My First Heading** and **My first paragraph.** (it does not print the tags).
 
-<img alt="html-editors tryit source" src="./code_sandbox/snaps/html-editors-01-code.png" />
+<a id="html-editors-example-02"></a>
+
+### **Example 2: Online editor example**
+
+- [x] **W3Schools online editor (“Try it Yourself”)**
+  - Edit HTML and see the result in the browser.
+  - Useful for **fast tests**; it has **color coding** and can **save / share** code.
+
+Sandbox: `code_sandbox/html-editors/tryit.html`
 
 ```html
 <!DOCTYPE html>
@@ -359,7 +369,11 @@ Sandbox: `code_sandbox/html-editors/tryit.html` (online editor example)
 </html>
 ```
 
+<img alt="html-editors tryit source" src="./code_sandbox/snaps/html-editors-01-code.png" />
+
 <img alt="html-editors tryit result" src="./code_sandbox/snaps/html-editors-01-result.png" />
+
+- [x] **Outcome:** the browser shows **Page Title This is a Heading**, **This is a paragraph.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -502,56 +516,35 @@ Learn HTML in a **plain text editor** (Notepad or TextEdit). Write a basic docum
 
 This chapter shows **basic HTML examples**: a full document, the `<!DOCTYPE html>` declaration, **headings**, **paragraphs**, **links**, and **images**. The tags may be new; the point is to see the pattern. You can also **view page source** and **inspect** elements in the browser.
 
+This section has **5** examples:
+
+- [x] **Example 1:** A full document [View](#html-basic-example-01)
+- [x] **Example 2:** Headings [View](#html-basic-example-02)
+- [x] **Example 3:** Paragraphs [View](#html-basic-example-03)
+- [x] **Example 4:** Link [View](#html-basic-example-04)
+- [x] **Example 5:** Image [View](#html-basic-example-05)
+
 ## Detailed Explanation
-
-- [x] **HTML documents**
-  - Every document starts with a document type declaration: `<!DOCTYPE html>`.
-  - The document itself starts with `<html>` and ends with `</html>`.
-  - Visible content sits between `<body>` and `</body>`.
-  - Sandbox: `code_sandbox/html-basic/index.html`.
-
-<img alt="html-basic document result" src="./code_sandbox/snaps/html-basic-result.png" />
 
 - [x] **The `<!DOCTYPE>` declaration**
   - Represents the **document type** and helps browsers **display pages correctly**.
   - Must appear **once**, at the **top** of the page (before any HTML tags).
   - It is **not case sensitive**.
   - HTML5 doctype is: `<!DOCTYPE html>`.
-- [x] **HTML headings**
-  - Defined with `<h1>` through `<h6>`.
-  - `<h1>` is the **most important**; `<h6>` is the **least important**.
-  - Sandbox: `code_sandbox/html-basic/headings.html`.
-
-<img alt="html-basic headings result" src="./code_sandbox/snaps/html-basic-01-result.png" />
-
-- [x] **HTML paragraphs**
-  - Defined with the `<p>` tag.
-  - Sandbox: `code_sandbox/html-basic/paragraphs.html`.
-
-<img alt="html-basic paragraphs result" src="./code_sandbox/snaps/html-basic-02-result.png" />
-
-- [x] **HTML links**
-  - Defined with the `<a>` tag.
-  - The destination is the **`href` attribute**.
-  - Attributes add extra information about an element (covered in a later chapter).
-  - Sandbox: `code_sandbox/html-basic/link.html`.
-
-<img alt="html-basic link result" src="./code_sandbox/snaps/html-basic-03-result.png" />
-
-- [x] **HTML images**
-  - Defined with the `<img>` tag.
-  - Attributes: **`src`** (file), **`alt`** (alternative text), **`width`**, **`height`**.
-  - Sandbox: `code_sandbox/html-basic/img.html` (local `w3schools.jpg`, 104×142).
-
-<img alt="html-basic image result" src="./code_sandbox/snaps/html-basic-04-result.png" />
-
 - [x] **How to view HTML source**
   - **View Page Source:** `Ctrl`+`U`, or right-click the page → **View Page Source**. Opens a tab with the HTML source.
   - **Inspect an element:** right-click an element (or a blank area) → **Inspect**. Shows HTML and CSS; you can edit them on the fly in the Elements / Styles panel.
 
-Sandbox: `code_sandbox/html-basic/index.html`
+<a id="html-basic-example-01"></a>
 
-<img alt="html-basic document source" src="./code_sandbox/snaps/html-basic-code.png" />
+### **Example 1: A full document**
+
+- [x] **HTML documents**
+  - Every document starts with a document type declaration: `<!DOCTYPE html>`.
+  - The document itself starts with `<html>` and ends with `</html>`.
+  - Visible content sits between `<body>` and `</body>`.
+
+Sandbox: `code_sandbox/html-basic/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -563,11 +556,21 @@ Sandbox: `code_sandbox/html-basic/index.html`
 </html>
 ```
 
+<img alt="html-basic document source" src="./code_sandbox/snaps/html-basic-code.png" />
+
 <img alt="html-basic document result" src="./code_sandbox/snaps/html-basic-result.png" />
 
-Headings (`headings.html`):
+- [x] **Outcome:** the browser shows **My First Heading**, **My first paragraph.**.
 
-<img alt="html-basic headings source" src="./code_sandbox/snaps/html-basic-01-code.png" />
+<a id="html-basic-example-02"></a>
+
+### **Example 2: Headings**
+
+- [x] **HTML headings**
+  - Defined with `<h1>` through `<h6>`.
+  - `<h1>` is the **most important**; `<h6>` is the **least important**.
+
+Sandbox: `code_sandbox/html-basic/headings.html`
 
 ```html
 <h1>This is heading 1</h1>
@@ -575,38 +578,72 @@ Headings (`headings.html`):
 <h3>This is heading 3</h3>
 ```
 
+<img alt="html-basic headings source" src="./code_sandbox/snaps/html-basic-01-code.png" />
+
 <img alt="html-basic headings result" src="./code_sandbox/snaps/html-basic-01-result.png" />
 
-Paragraphs (`paragraphs.html`):
+- [x] **Outcome:** the browser shows **This is heading 1**, **This is heading 2**, **This is heading 3**.
 
-<img alt="html-basic paragraphs source" src="./code_sandbox/snaps/html-basic-02-code.png" />
+<a id="html-basic-example-03"></a>
+
+### **Example 3: Paragraphs**
+
+- [x] **HTML paragraphs**
+  - Defined with the `<p>` tag.
+
+Sandbox: `code_sandbox/html-basic/paragraphs.html`
 
 ```html
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
 
+<img alt="html-basic paragraphs source" src="./code_sandbox/snaps/html-basic-02-code.png" />
+
 <img alt="html-basic paragraphs result" src="./code_sandbox/snaps/html-basic-02-result.png" />
 
-Link (`link.html`):
+- [x] **Outcome:** the browser shows **This is a paragraph.**, **This is another paragraph.**.
 
-<img alt="html-basic link source" src="./code_sandbox/snaps/html-basic-03-code.png" />
+<a id="html-basic-example-04"></a>
+
+### **Example 4: Link**
+
+- [x] **HTML links**
+  - Defined with the `<a>` tag.
+  - The destination is the **`href` attribute**.
+  - Attributes add extra information about an element (covered in a later chapter).
+
+Sandbox: `code_sandbox/html-basic/link.html`
 
 ```html
 <a href="https://www.w3schools.com">This is a link</a>
 ```
 
+<img alt="html-basic link source" src="./code_sandbox/snaps/html-basic-03-code.png" />
+
 <img alt="html-basic link result" src="./code_sandbox/snaps/html-basic-03-result.png" />
 
-Image (`img.html`):
+- [x] **Outcome:** the browser shows **This is a link**.
 
-<img alt="html-basic image source" src="./code_sandbox/snaps/html-basic-04-code.png" />
+<a id="html-basic-example-05"></a>
+
+### **Example 5: Image**
+
+- [x] **HTML images**
+  - Defined with the `<img>` tag.
+  - Attributes: **`src`** (file), **`alt`** (alternative text), **`width`**, **`height`**.
+
+Sandbox: `code_sandbox/html-basic/img.html`
 
 ```html
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" />
 ```
 
+<img alt="html-basic image source" src="./code_sandbox/snaps/html-basic-04-code.png" />
+
 <img alt="html-basic image result" src="./code_sandbox/snaps/html-basic-04-result.png" />
+
+- [x] **Outcome:** the browser shows **W3Schools.com**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -752,6 +789,12 @@ A page starts with `<!DOCTYPE html>`, then `<html>` / `<body>`. Headings are `<h
 
 An HTML **element** is a **start tag**, **content**, and an **end tag**. Elements can be **nested**. Some elements are **empty** (no content, no end tag), such as `<br>`. Tags are **not case sensitive**, but this tutorial (and W3C) prefers **lowercase**.
 
+This section has **3** examples:
+
+- [x] **Example 1:** Nested HTML elements [View](#html-elements-example-01)
+- [x] **Example 2:** no endtag [View](#html-elements-example-02)
+- [x] **Example 3:** br [View](#html-elements-example-03)
+
 ## Detailed Explanation
 
 - [x] **What is an HTML element?**
@@ -767,36 +810,21 @@ An HTML **element** is a **start tag**, **content**, and an **end tag**. Element
 - [x] **Empty elements**
   - No content (example: `<br>`).
   - **No end tag**.
-- [x] **Nested HTML elements**
-  - Elements can contain other elements.
-  - A whole document is nested: `<html>` → `<body>` → `<h1>` and `<p>`.
-  - `<html>` is the **root** (whole document). `<body>` is the **visible body**. `<h1>` is a heading. `<p>` is a paragraph.
-  - Sandbox: `code_sandbox/html-elements/index.html`.
-
-<img alt="html-elements nested result" src="./code_sandbox/snaps/html-elements-result.png" />
-
-- [x] **Never skip the end tag**
-  - Some elements still **display** if you omit `</p>`.
-  - **Do not rely on that.** Missing end tags can cause unexpected results and errors.
-  - WHATWG HTML does allow **optional end tags** for a few elements (including `<p>` in some contexts). The tutorial’s advice still stands for learning: **write the end tag**.
-  - Sandbox: `code_sandbox/html-elements/no-endtag.html` (two paragraphs, no `</p>` — the browser still shows two blocks).
-
-<img alt="html-elements omitted end tags result" src="./code_sandbox/snaps/html-elements-01-result.png" />
-
-- [x] **Empty HTML elements (`<br>`)**
-  - `<br>` is a **line break** with no closing tag.
-  - Sandbox: `code_sandbox/html-elements/br.html`.
-
-<img alt="html-elements br result" src="./code_sandbox/snaps/html-elements-02-result.png" />
-
 - [x] **HTML is not case sensitive**
   - `<P>` means the same as `<p>`.
   - The HTML standard does not require lowercase, but **W3C recommends lowercase**, and **XHTML requires it**.
   - W3Schools always uses **lowercase** tag names.
 
-Nested document: `code_sandbox/html-elements/index.html`
+<a id="html-elements-example-01"></a>
 
-<img alt="html-elements nested source" src="./code_sandbox/snaps/html-elements-code.png" />
+### **Example 1: Nested HTML elements**
+
+- [x] **Nested HTML elements**
+  - Elements can contain other elements.
+  - A whole document is nested: `<html>` → `<body>` → `<h1>` and `<p>`.
+  - `<html>` is the **root** (whole document). `<body>` is the **visible body**. `<h1>` is a heading. `<p>` is a paragraph.
+
+Sandbox: `code_sandbox/html-elements/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -808,11 +836,22 @@ Nested document: `code_sandbox/html-elements/index.html`
 </html>
 ```
 
+<img alt="html-elements nested source" src="./code_sandbox/snaps/html-elements-code.png" />
+
 <img alt="html-elements nested result" src="./code_sandbox/snaps/html-elements-result.png" />
 
-Omitted end tags: `code_sandbox/html-elements/no-endtag.html`
+- [x] **Outcome:** the browser shows **My First Heading**, **My first paragraph.**.
 
-<img alt="html-elements omitted end tags source" src="./code_sandbox/snaps/html-elements-01-code.png" />
+<a id="html-elements-example-02"></a>
+
+### **Example 2: no endtag**
+
+- [x] **Never skip the end tag**
+  - Some elements still **display** if you omit `</p>`.
+  - **Do not rely on that.** Missing end tags can cause unexpected results and errors.
+  - WHATWG HTML does allow **optional end tags** for a few elements (including `<p>` in some contexts). The tutorial’s advice still stands for learning: **write the end tag**.
+
+Sandbox: `code_sandbox/html-elements/no-endtag.html`
 
 ```html
 <html>
@@ -823,11 +862,20 @@ Omitted end tags: `code_sandbox/html-elements/no-endtag.html`
 </html>
 ```
 
+<img alt="html-elements omitted end tags source" src="./code_sandbox/snaps/html-elements-01-code.png" />
+
 <img alt="html-elements omitted end tags result" src="./code_sandbox/snaps/html-elements-01-result.png" />
 
-Line break: `code_sandbox/html-elements/br.html`
+- [x] **Outcome:** the browser shows **This is a paragraph**, **This is a paragraph**.
 
-<img alt="html-elements br source" src="./code_sandbox/snaps/html-elements-02-code.png" />
+<a id="html-elements-example-03"></a>
+
+### **Example 3: br**
+
+- [x] **Empty HTML elements (`<br>`)**
+  - `<br>` is a **line break** with no closing tag.
+
+Sandbox: `code_sandbox/html-elements/br.html`
 
 ```html
 <p>
@@ -836,7 +884,11 @@ Line break: `code_sandbox/html-elements/br.html`
 </p>
 ```
 
+<img alt="html-elements br source" src="./code_sandbox/snaps/html-elements-02-code.png" />
+
 <img alt="html-elements br result" src="./code_sandbox/snaps/html-elements-02-result.png" />
+
+- [x] **Outcome:** the browser shows **This is a paragraph with a line break.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -963,6 +1015,15 @@ An element is **start tag + content + end tag**, except **empty** elements like 
 
 HTML **attributes** add extra information about an element. They go in the **start tag**, usually as `name="value"`. This chapter covers **`href`**, **`src`**, **`width`/`height`**, **`alt`**, **`style`**, **`lang`**, and **`title`**, plus quoting and lowercase conventions.
 
+This section has **6** examples:
+
+- [x] **Example 1:** `href` [View](#html-attributes-example-01)
+- [x] **Example 2:** Image size [View](#html-attributes-example-02)
+- [x] **Example 3:** Broken image + `alt` [View](#html-attributes-example-03)
+- [x] **Example 4:** `style` [View](#html-attributes-example-04)
+- [x] **Example 5:** `title` [View](#html-attributes-example-05)
+- [x] **Example 6:** The lang attribute [View](#html-attributes-example-06)
+
 ## Detailed Explanation
 
 - [x] **Attribute rules**
@@ -970,105 +1031,127 @@ HTML **attributes** add extra information about an element. They go in the **sta
   - Attributes provide **additional information** about elements.
   - Always specified in the **start tag**.
   - Usually **name/value** pairs: `name="value"`.
-- [x] **The `href` attribute**
-  - `<a>` is a hyperlink. **`href`** is the URL it goes to.
-  - Sandbox: `code_sandbox/html-attributes/href.html`.
-
-<img alt="html-attributes href result" src="./code_sandbox/snaps/html-attributes-result.png" />
-
 - [x] **The `src` attribute**
   - `<img>` embeds an image. **`src`** is the path.
   - **Absolute URL:** full address, e.g. `https://www.w3schools.com/images/img_girl.jpg`. External images can be copyrighted or disappear.
   - **Relative URL:** no domain. `img_girl.jpg` is relative to the **current page**; `/images/img_girl.jpg` is relative to the **domain**.
   - Prefer **relative** URLs so they do not break if the domain changes.
-- [x] **`width` and `height`**
-  - Size the image in **pixels**.
-  - Example: `width="500"` `height="600"` with `src="img_girl.jpg"`.
-  - Sandbox: `code_sandbox/html-attributes/img.html`.
-
-<img alt="html-attributes img size result" src="./code_sandbox/snaps/html-attributes-01-result.png" />
-
-- [x] **The `alt` attribute**
-  - **Required** on `<img>`. Alternate text if the image cannot be shown (slow connection, bad `src`, or a screen reader).
-  - Broken `src` (`img_typo.jpg`) still shows **Girl with a jacket**.
-  - Sandbox: `code_sandbox/html-attributes/alt-error.html`.
-
-<img alt="html-attributes alt fallback result" src="./code_sandbox/snaps/html-attributes-02-result.png" />
-
-- [x] **The `style` attribute**
-  - Adds styles (color, font, size, and more).
-  - Example: red paragraph.
-  - Sandbox: `code_sandbox/html-attributes/style.html`.
-
-<img alt="html-attributes style result" src="./code_sandbox/snaps/html-attributes-03-result.png" />
-
 - [x] **The `lang` attribute**
   - Put **`lang`** on `<html>` to declare the page language (helps search engines and browsers).
   - English: `<html lang="en">`. Country: `<html lang="en-US">` (language + country).
-- [x] **The `title` attribute**
-  - Extra information about an element.
-  - Shown as a **tooltip** on mouse over.
-  - Sandbox: `code_sandbox/html-attributes/title.html` (`title="I'm a tooltip"`).
-
-<img alt="html-attributes title result" src="./code_sandbox/snaps/html-attributes-04-result.png" />
-
 - [x] **Lowercase and quotes**
   - The HTML standard does not require lowercase names or quotes, but **W3C recommends** both; **XHTML requires** them.
   - W3Schools always uses **lowercase names** and **quoted values**.
   - Quotes are **required** when the value has a **space** (`title=Description of W3Schools` fails).
   - Double quotes are most common; use single quotes if the value itself contains double quotes (or the reverse).
 
-`href` (`href.html`):
+<a id="html-attributes-example-01"></a>
 
-<img alt="html-attributes href source" src="./code_sandbox/snaps/html-attributes-code.png" />
+### **Example 1: `href`**
+
+- [x] **The `href` attribute**
+  - `<a>` is a hyperlink. **`href`** is the URL it goes to.
+
+Sandbox: `code_sandbox/html-attributes/href.html`
 
 ```html
 <a href="https://www.w3schools.com">Visit W3Schools</a>
 ```
 
+<img alt="html-attributes href source" src="./code_sandbox/snaps/html-attributes-code.png" />
+
 <img alt="html-attributes href result" src="./code_sandbox/snaps/html-attributes-result.png" />
 
-Image size (`img.html`):
+- [x] **Outcome:** the browser shows **Visit W3Schools**.
 
-<img alt="html-attributes img source" src="./code_sandbox/snaps/html-attributes-01-code.png" />
+<a id="html-attributes-example-02"></a>
+
+### **Example 2: Image size**
+
+- [x] **`width` and `height`**
+  - Size the image in **pixels**.
+  - Example: `width="500"` `height="600"` with `src="img_girl.jpg"`.
+
+Sandbox: `code_sandbox/html-attributes/img.html`
 
 ```html
 <img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600" />
 ```
 
+<img alt="html-attributes img source" src="./code_sandbox/snaps/html-attributes-01-code.png" />
+
 <img alt="html-attributes img size result" src="./code_sandbox/snaps/html-attributes-01-result.png" />
 
-Broken image + `alt` (`alt-error.html`):
+- [x] **Outcome:** the browser shows **Girl with a jacket**.
 
-<img alt="html-attributes alt-error source" src="./code_sandbox/snaps/html-attributes-02-code.png" />
+<a id="html-attributes-example-03"></a>
+
+### **Example 3: Broken image + `alt`**
+
+- [x] **The `alt` attribute**
+  - **Required** on `<img>`. Alternate text if the image cannot be shown (slow connection, bad `src`, or a screen reader).
+  - Broken `src` (`img_typo.jpg`) still shows **Girl with a jacket**.
+
+Sandbox: `code_sandbox/html-attributes/alt-error.html`
 
 ```html
 <img src="img_typo.jpg" alt="Girl with a jacket" />
 ```
 
+<img alt="html-attributes alt-error source" src="./code_sandbox/snaps/html-attributes-02-code.png" />
+
 <img alt="html-attributes alt fallback result" src="./code_sandbox/snaps/html-attributes-02-result.png" />
 
-`style` (`style.html`):
+- [x] **Outcome:** the browser shows **Girl with a jacket**.
 
-<img alt="html-attributes style source" src="./code_sandbox/snaps/html-attributes-03-code.png" />
+<a id="html-attributes-example-04"></a>
+
+### **Example 4: `style`**
+
+- [x] **The `style` attribute**
+  - Adds styles (color, font, size, and more).
+  - Example: red paragraph.
+
+Sandbox: `code_sandbox/html-attributes/style.html`
 
 ```html
 <p style="color:red;">This is a red paragraph.</p>
 ```
 
+<img alt="html-attributes style source" src="./code_sandbox/snaps/html-attributes-03-code.png" />
+
 <img alt="html-attributes style result" src="./code_sandbox/snaps/html-attributes-03-result.png" />
 
-`title` (`title.html`):
+- [x] **Outcome:** the browser shows **This is a red paragraph.**.
 
-<img alt="html-attributes title source" src="./code_sandbox/snaps/html-attributes-04-code.png" />
+<a id="html-attributes-example-05"></a>
+
+### **Example 5: `title`**
+
+- [x] **The `title` attribute**
+  - Extra information about an element.
+  - Shown as a **tooltip** on mouse over.
+
+Sandbox: `code_sandbox/html-attributes/title.html`
 
 ```html
 <p title="I'm a tooltip">This is a paragraph.</p>
 ```
 
+<img alt="html-attributes title source" src="./code_sandbox/snaps/html-attributes-04-code.png" />
+
 <img alt="html-attributes title result" src="./code_sandbox/snaps/html-attributes-04-result.png" />
 
-`lang` on the document (used on these sandbox files):
+- [x] **Outcome:** the browser shows **This is a paragraph.**.
+
+<a id="html-attributes-example-06"></a>
+
+### **Example 6: The lang attribute**
+
+- [x] **The `lang` attribute**
+  - Put **`lang`** on `<html>` to declare the page language (helps search engines and browsers).
+  - English: `<html lang="en">`. Country: `<html lang="en-US">` (language + country).
+  - The sandbox files in this chapter use `lang="en"` on the document.
 
 ```html
 <!DOCTYPE html>
@@ -1078,6 +1161,8 @@ Broken image + `alt` (`alt-error.html`):
   </body>
 </html>
 ```
+
+- [x] **Outcome:** the document root is `<html lang="en">`, which tells the browser the page is in English.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1215,37 +1300,24 @@ Attributes live in the **start tag** as `name="value"`. **`href`** is the link U
 
 HTML **headings** are titles and subtitles on a page. They use `<h1>` through `<h6>`: **`<h1>` is most important**, **`<h6>` least**. Search engines and skimmers use them for **structure**. Use headings for **headings**, not just to make text big.
 
+This section has **3** examples:
+
+- [x] **Example 1:** Levels 1–6 [View](#html-headings-example-01)
+- [x] **Example 2:** Document structure [View](#html-headings-example-02)
+- [x] **Example 3:** Custom size [View](#html-headings-example-03)
+
 ## Detailed Explanation
+
+<a id="html-headings-example-01"></a>
+
+### **Example 1: Levels 1–6**
 
 - [x] **`<h1>` to `<h6>`**
   - Headings are titles or subtitles you want on a webpage.
   - `<h1>` = most important; `<h6>` = least important.
   - Browsers add **margin** (white space) before and after a heading.
-  - Sandbox: `code_sandbox/html-headings/index.html`.
 
-<img alt="html-headings h1 to h6 result" src="./code_sandbox/snaps/html-headings-result.png" />
-
-- [x] **Headings are important**
-  - Search engines **index** structure and content from headings.
-  - Users often **skim** by headings, so headings should show the **document structure**.
-  - Use `<h1>` for the **main** heading, then `<h2>`, then less important `<h3>`, and so on.
-  - Example outline: **Travel Guide** (`h1`) → **Europe** / **Asia** (`h2`) → countries (`h3`).
-  - **Tip:** use **only one `<h1>` per page** — it is the main topic or title.
-  - **Note:** use heading tags for headings only. **Do not** use them just to make text BIG or bold.
-  - Sandbox: `code_sandbox/html-headings/structure.html`.
-
-<img alt="html-headings structure result" src="./code_sandbox/snaps/html-headings-01-result.png" />
-
-- [x] **Bigger headings**
-  - Each heading has a **default size**.
-  - You can change size with the **`style`** attribute and CSS **`font-size`**.
-  - Example: `<h1 style="font-size:60px;">Heading 1</h1>`.
-  - That still **is** a heading (for structure); the style only changes how large it looks.
-  - Sandbox: `code_sandbox/html-headings/size.html`.
-
-Levels 1–6 (`index.html`):
-
-<img alt="html-headings h1 to h6 source" src="./code_sandbox/snaps/html-headings-code.png" />
+Sandbox: `code_sandbox/html-headings/index.html`
 
 ```html
 <h1>Heading 1</h1>
@@ -1256,11 +1328,25 @@ Levels 1–6 (`index.html`):
 <h6>Heading 6</h6>
 ```
 
+<img alt="html-headings h1 to h6 source" src="./code_sandbox/snaps/html-headings-code.png" />
+
 <img alt="html-headings h1 to h6 result" src="./code_sandbox/snaps/html-headings-result.png" />
 
-Document structure (`structure.html`):
+- [x] **Outcome:** the browser shows **Heading 1**, **Heading 2**, **Heading 3**, **Heading 4**, **Heading 5**.
 
-<img alt="html-headings structure source" src="./code_sandbox/snaps/html-headings-01-code.png" />
+<a id="html-headings-example-02"></a>
+
+### **Example 2: Document structure**
+
+- [x] **Headings are important**
+  - Search engines **index** structure and content from headings.
+  - Users often **skim** by headings, so headings should show the **document structure**.
+  - Use `<h1>` for the **main** heading, then `<h2>`, then less important `<h3>`, and so on.
+  - Example outline: **Travel Guide** (`h1`) → **Europe** / **Asia** (`h2`) → countries (`h3`).
+  - **Tip:** use **only one `<h1>` per page** — it is the main topic or title.
+  - **Note:** use heading tags for headings only. **Do not** use them just to make text BIG or bold.
+
+Sandbox: `code_sandbox/html-headings/structure.html`
 
 ```html
 <h1>Travel Guide</h1>
@@ -1274,17 +1360,33 @@ Document structure (`structure.html`):
 <h3>Thailand</h3>
 ```
 
+<img alt="html-headings structure source" src="./code_sandbox/snaps/html-headings-01-code.png" />
+
 <img alt="html-headings structure result" src="./code_sandbox/snaps/html-headings-01-result.png" />
 
-Custom size (`size.html`):
+- [x] **Outcome:** the browser shows **Travel Guide**, **Europe**, **France**, **Italy**, **Asia**.
 
-<img alt="html-headings font-size source" src="./code_sandbox/snaps/html-headings-02-code.png" />
+<a id="html-headings-example-03"></a>
+
+### **Example 3: Custom size**
+
+- [x] **Bigger headings**
+  - Each heading has a **default size**.
+  - You can change size with the **`style`** attribute and CSS **`font-size`**.
+  - Example: `<h1 style="font-size:60px;">Heading 1</h1>`.
+  - That still **is** a heading (for structure); the style only changes how large it looks.
+
+Sandbox: `code_sandbox/html-headings/size.html`
 
 ```html
 <h1 style="font-size:60px;">Heading 1</h1>
 ```
 
+<img alt="html-headings font-size source" src="./code_sandbox/snaps/html-headings-02-code.png" />
+
 <img alt="html-headings font-size result" src="./code_sandbox/snaps/html-headings-02-result.png" />
+
+- [x] **Outcome:** the browser shows **Heading 1**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1408,64 +1510,49 @@ Headings are `<h1>`–`<h6>`: **h1 most important**, **h6 least**. They outline 
 
 A **paragraph** (`<p>`) is a block of text that **starts on a new line**. Browsers add **margin** around it. Extra spaces and line breaks in the source **collapse**. Use `<hr>` for a thematic break, `<br>` for a line break inside a paragraph, and `<pre>` when you must keep the source layout (poems, code).
 
+This section has **6** examples:
+
+- [x] **Example 1:** Two paragraphs [View](#html-paragraphs-example-01)
+- [x] **Example 2:** Collapsed whitespace [View](#html-paragraphs-example-02)
+- [x] **Example 3:** Horizontal rules [View](#html-paragraphs-example-03)
+- [x] **Example 4:** Line breaks [View](#html-paragraphs-example-04)
+- [x] **Example 5:** Poem in `<p>` [View](#html-paragraphs-example-05)
+- [x] **Example 6:** Poem in `<pre>` [View](#html-paragraphs-example-06)
+
 ## Detailed Explanation
+
+<a id="html-paragraphs-example-01"></a>
+
+### **Example 1: Two paragraphs**
 
 - [x] **HTML paragraphs**
   - `<p>` defines a paragraph.
   - A paragraph always starts on a **new line**.
   - Browsers add **white space (margin)** before and after it.
-  - Sandbox: `code_sandbox/html-paragraphs/index.html`.
 
-<img alt="html-paragraphs result" src="./code_sandbox/snaps/html-paragraphs-result.png" />
-
-- [x] **HTML display (whitespace)**
-  - You cannot be sure how HTML will look: screen size and window size change the wrap.
-  - Extra **spaces** or **lines** in the source do **not** change the display.
-  - The browser **removes extra spaces and lines**; many spaces or newlines count as **one space**.
-  - Sandbox: `code_sandbox/html-paragraphs/display.html`.
-
-<img alt="html-paragraphs whitespace result" src="./code_sandbox/snaps/html-paragraphs-01-result.png" />
-
-- [x] **HTML horizontal rules**
-  - `<hr>` is a **thematic break**, usually shown as a horizontal line.
-  - Use it to **separate** content or mark a change.
-  - `<hr>` is **empty** (no end tag).
-  - Sandbox: `code_sandbox/html-paragraphs/hr.html`.
-
-<img alt="html-paragraphs hr result" src="./code_sandbox/snaps/html-paragraphs-02-result.png" />
-
-- [x] **HTML line breaks**
-  - `<br>` starts a **new line** without a new paragraph.
-  - `<br>` is **empty** (no end tag).
-  - Sandbox: `code_sandbox/html-paragraphs/br.html`.
-
-<img alt="html-paragraphs br result" src="./code_sandbox/snaps/html-paragraphs-03-result.png" />
-
-- [x] **The poem problem**
-  - A poem in `<p>` with blank lines in the source still **renders on one flow** (one paragraph).
-  - Sandbox: `code_sandbox/html-paragraphs/poem.html`.
-
-<img alt="html-paragraphs poem-in-p result" src="./code_sandbox/snaps/html-paragraphs-04-result.png" />
-
-- [x] **Solution: `<pre>`**
-  - `<pre>` is **preformatted** text: spaces and line breaks in the source are **kept**.
-  - Browsers typically show it in a **monospace** font.
-  - Sandbox: `code_sandbox/html-paragraphs/pre.html`.
-
-Two paragraphs (`index.html`):
-
-<img alt="html-paragraphs source" src="./code_sandbox/snaps/html-paragraphs-code.png" />
+Sandbox: `code_sandbox/html-paragraphs/index.html`
 
 ```html
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
 
+<img alt="html-paragraphs source" src="./code_sandbox/snaps/html-paragraphs-code.png" />
+
 <img alt="html-paragraphs result" src="./code_sandbox/snaps/html-paragraphs-result.png" />
 
-Collapsed whitespace (`display.html`):
+- [x] **Outcome:** the browser shows **This is a paragraph.**, **This is another paragraph.**.
 
-<img alt="html-paragraphs whitespace source" src="./code_sandbox/snaps/html-paragraphs-01-code.png" />
+<a id="html-paragraphs-example-02"></a>
+
+### **Example 2: Collapsed whitespace**
+
+- [x] **HTML display (whitespace)**
+  - You cannot be sure how HTML will look: screen size and window size change the wrap.
+  - Extra **spaces** or **lines** in the source do **not** change the display.
+  - The browser **removes extra spaces and lines**; many spaces or newlines count as **one space**.
+
+Sandbox: `code_sandbox/html-paragraphs/display.html`
 
 ```html
 <p>
@@ -1474,11 +1561,22 @@ Collapsed whitespace (`display.html`):
 </p>
 ```
 
+<img alt="html-paragraphs whitespace source" src="./code_sandbox/snaps/html-paragraphs-01-code.png" />
+
 <img alt="html-paragraphs whitespace result" src="./code_sandbox/snaps/html-paragraphs-01-result.png" />
 
-Horizontal rules (`hr.html`):
+- [x] **Outcome:** the browser shows **This paragraph contains a lot of lines in the source code, but the browser ignores it.**.
 
-<img alt="html-paragraphs hr source" src="./code_sandbox/snaps/html-paragraphs-02-code.png" />
+<a id="html-paragraphs-example-03"></a>
+
+### **Example 3: Horizontal rules**
+
+- [x] **HTML horizontal rules**
+  - `<hr>` is a **thematic break**, usually shown as a horizontal line.
+  - Use it to **separate** content or mark a change.
+  - `<hr>` is **empty** (no end tag).
+
+Sandbox: `code_sandbox/html-paragraphs/hr.html`
 
 ```html
 <h1>This is heading 1</h1>
@@ -1489,21 +1587,40 @@ Horizontal rules (`hr.html`):
 <hr />
 ```
 
+<img alt="html-paragraphs hr source" src="./code_sandbox/snaps/html-paragraphs-02-code.png" />
+
 <img alt="html-paragraphs hr result" src="./code_sandbox/snaps/html-paragraphs-02-result.png" />
 
-Line breaks (`br.html`):
+- [x] **Outcome:** the browser shows **This is heading 1**, **This is some text.**, **This is heading 2**, **This is some other text.**.
 
-<img alt="html-paragraphs br source" src="./code_sandbox/snaps/html-paragraphs-03-code.png" />
+<a id="html-paragraphs-example-04"></a>
+
+### **Example 4: Line breaks**
+
+- [x] **HTML line breaks**
+  - `<br>` starts a **new line** without a new paragraph.
+  - `<br>` is **empty** (no end tag).
+
+Sandbox: `code_sandbox/html-paragraphs/br.html`
 
 ```html
 <p>This is<br />a paragraph<br />with line breaks.</p>
 ```
 
+<img alt="html-paragraphs br source" src="./code_sandbox/snaps/html-paragraphs-03-code.png" />
+
 <img alt="html-paragraphs br result" src="./code_sandbox/snaps/html-paragraphs-03-result.png" />
 
-Poem in `<p>` (`poem.html`):
+- [x] **Outcome:** the browser shows **This is a paragraph with line breaks.**.
 
-<img alt="html-paragraphs poem source" src="./code_sandbox/snaps/html-paragraphs-04-code.png" />
+<a id="html-paragraphs-example-05"></a>
+
+### **Example 5: Poem in `<p>`**
+
+- [x] **The poem problem**
+  - A poem in `<p>` with blank lines in the source still **renders on one flow** (one paragraph).
+
+Sandbox: `code_sandbox/html-paragraphs/poem.html`
 
 ```html
 <p>
@@ -1512,11 +1629,21 @@ Poem in `<p>` (`poem.html`):
 </p>
 ```
 
+<img alt="html-paragraphs poem source" src="./code_sandbox/snaps/html-paragraphs-04-code.png" />
+
 <img alt="html-paragraphs poem-in-p result" src="./code_sandbox/snaps/html-paragraphs-04-result.png" />
 
-Poem in `<pre>` (`pre.html`):
+- [x] **Outcome:** the browser shows **My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies over the ocean. Oh, bring back my Bonnie to me.**.
 
-<img alt="html-paragraphs pre source" src="./code_sandbox/snaps/html-paragraphs-05-code.png" />
+<a id="html-paragraphs-example-06"></a>
+
+### **Example 6: Poem in `<pre>`**
+
+- [x] **Solution: `<pre>`**
+  - `<pre>` is **preformatted** text: spaces and line breaks in the source are **kept**.
+  - Browsers typically show it in a **monospace** font.
+
+Sandbox: `code_sandbox/html-paragraphs/pre.html`
 
 ```html
 <pre>
@@ -1530,7 +1657,11 @@ Poem in `<pre>` (`pre.html`):
 </pre>
 ```
 
+<img alt="html-paragraphs pre source" src="./code_sandbox/snaps/html-paragraphs-05-code.png" />
+
 <img alt="html-paragraphs pre result" src="./code_sandbox/snaps/html-paragraphs-05-result.png" />
+
+- [x] **Outcome:** the browser shows **My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies over the ocean. Oh, bring back my Bonnie to me.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1652,55 +1783,29 @@ Then open `http://127.0.0.1:8766/html-paragraphs/`.
 
 The HTML **`style`** attribute adds CSS to an element: **color**, **font**, **size**, alignment, and more. The syntax is `<tagname style="property:value;">`. You will learn more CSS later; this chapter is the inline `style` attribute.
 
+This section has **7** examples:
+
+- [x] **Example 1:** Intro colors and size [View](#html-styles-example-01)
+- [x] **Example 2:** Page background [View](#html-styles-example-02)
+- [x] **Example 3:** Element backgrounds [View](#html-styles-example-03)
+- [x] **Example 4:** Text color [View](#html-styles-example-04)
+- [x] **Example 5:** Fonts [View](#html-styles-example-05)
+- [x] **Example 6:** Text size [View](#html-styles-example-06)
+- [x] **Example 7:** Text alignment [View](#html-styles-example-07)
+
 ## Detailed Explanation
+
+<a id="html-styles-example-01"></a>
+
+### **Example 1: Intro colors and size**
 
 - [x] **The `style` attribute**
   - Setting the style of an HTML element can be done with **`style`**.
   - Syntax: `<tagname style="property:value;">`.
   - The **property** is a CSS property; the **value** is a CSS value.
   - Intro demo: normal, red, blue, and 50px text.
-  - Sandbox: `code_sandbox/html-styles/index.html`.
 
-<img alt="html-styles result" src="./code_sandbox/snaps/html-styles-result.png" />
-
-- [x] **Background color (`background-color`)**
-  - Defines the **background color** for an HTML element.
-  - Page background: `<body style="background-color:powderblue;">`.
-  - Sandbox: `code_sandbox/html-styles/background.html`.
-
-<img alt="html-styles body background result" src="./code_sandbox/snaps/html-styles-01-result.png" />
-
-- [x] **Background color on individual elements**
-  - The same property can style **different** elements (`h1` powderblue, `p` tomato).
-  - Sandbox: `code_sandbox/html-styles/background2.html`.
-
-<img alt="html-styles element backgrounds result" src="./code_sandbox/snaps/html-styles-02-result.png" />
-
-- [x] **Text color (`color`)**
-  - Defines the **text color** for an HTML element.
-  - Sandbox: `code_sandbox/html-styles/color.html`.
-
-<img alt="html-styles text color result" src="./code_sandbox/snaps/html-styles-03-result.png" />
-
-- [x] **Fonts (`font-family`)**
-  - Defines the **font** for an HTML element (Verdana heading, Courier paragraph).
-  - Sandbox: `code_sandbox/html-styles/font.html`.
-
-<img alt="html-styles font-family result" src="./code_sandbox/snaps/html-styles-04-result.png" />
-
-- [x] **Text size (`font-size`)**
-  - Defines the **text size**. Percentages are relative to the parent (here `300%` / `160%`).
-  - Sandbox: `code_sandbox/html-styles/size.html`.
-
-<img alt="html-styles font-size result" src="./code_sandbox/snaps/html-styles-05-result.png" />
-
-- [x] **Text alignment (`text-align`)**
-  - Defines **horizontal** text alignment (`center` in the example).
-  - Sandbox: `code_sandbox/html-styles/align.html`.
-
-Intro colors and size (`index.html`):
-
-<img alt="html-styles source" src="./code_sandbox/snaps/html-styles-code.png" />
+Sandbox: `code_sandbox/html-styles/index.html`
 
 ```html
 <p>I am normal</p>
@@ -1709,11 +1814,21 @@ Intro colors and size (`index.html`):
 <p style="font-size:50px;">I am big</p>
 ```
 
+<img alt="html-styles source" src="./code_sandbox/snaps/html-styles-code.png" />
+
 <img alt="html-styles result" src="./code_sandbox/snaps/html-styles-result.png" />
 
-Page background (`background.html`):
+- [x] **Outcome:** the browser shows **I am normal**, **I am red**, **I am blue**, **I am big**.
 
-<img alt="html-styles body background source" src="./code_sandbox/snaps/html-styles-01-code.png" />
+<a id="html-styles-example-02"></a>
+
+### **Example 2: Page background**
+
+- [x] **Background color (`background-color`)**
+  - Defines the **background color** for an HTML element.
+  - Page background: `<body style="background-color:powderblue;">`.
+
+Sandbox: `code_sandbox/html-styles/background.html`
 
 ```html
 <body style="background-color:powderblue;">
@@ -1722,62 +1837,111 @@ Page background (`background.html`):
 </body>
 ```
 
+<img alt="html-styles body background source" src="./code_sandbox/snaps/html-styles-01-code.png" />
+
 <img alt="html-styles body background result" src="./code_sandbox/snaps/html-styles-01-result.png" />
 
-Element backgrounds (`background2.html`):
+- [x] **Outcome:** the browser shows **This is a heading**, **This is a paragraph.**.
 
-<img alt="html-styles element backgrounds source" src="./code_sandbox/snaps/html-styles-02-code.png" />
+<a id="html-styles-example-03"></a>
+
+### **Example 3: Element backgrounds**
+
+- [x] **Background color on individual elements**
+  - The same property can style **different** elements (`h1` powderblue, `p` tomato).
+
+Sandbox: `code_sandbox/html-styles/background2.html`
 
 ```html
 <h1 style="background-color:powderblue;">This is a heading</h1>
 <p style="background-color:tomato;">This is a paragraph.</p>
 ```
 
+<img alt="html-styles element backgrounds source" src="./code_sandbox/snaps/html-styles-02-code.png" />
+
 <img alt="html-styles element backgrounds result" src="./code_sandbox/snaps/html-styles-02-result.png" />
 
-Text color (`color.html`):
+- [x] **Outcome:** the browser shows **This is a heading**, **This is a paragraph.**.
 
-<img alt="html-styles text color source" src="./code_sandbox/snaps/html-styles-03-code.png" />
+<a id="html-styles-example-04"></a>
+
+### **Example 4: Text color**
+
+- [x] **Text color (`color`)**
+  - Defines the **text color** for an HTML element.
+
+Sandbox: `code_sandbox/html-styles/color.html`
 
 ```html
 <h1 style="color:blue;">This is a heading</h1>
 <p style="color:red;">This is a paragraph.</p>
 ```
 
+<img alt="html-styles text color source" src="./code_sandbox/snaps/html-styles-03-code.png" />
+
 <img alt="html-styles text color result" src="./code_sandbox/snaps/html-styles-03-result.png" />
 
-Fonts (`font.html`):
+- [x] **Outcome:** the browser shows **This is a heading**, **This is a paragraph.**.
 
-<img alt="html-styles font-family source" src="./code_sandbox/snaps/html-styles-04-code.png" />
+<a id="html-styles-example-05"></a>
+
+### **Example 5: Fonts**
+
+- [x] **Fonts (`font-family`)**
+  - Defines the **font** for an HTML element (Verdana heading, Courier paragraph).
+
+Sandbox: `code_sandbox/html-styles/font.html`
 
 ```html
 <h1 style="font-family:verdana;">This is a heading</h1>
 <p style="font-family:courier;">This is a paragraph.</p>
 ```
 
+<img alt="html-styles font-family source" src="./code_sandbox/snaps/html-styles-04-code.png" />
+
 <img alt="html-styles font-family result" src="./code_sandbox/snaps/html-styles-04-result.png" />
 
-Text size (`size.html`):
+- [x] **Outcome:** the browser shows **This is a heading**, **This is a paragraph.**.
 
-<img alt="html-styles font-size source" src="./code_sandbox/snaps/html-styles-05-code.png" />
+<a id="html-styles-example-06"></a>
+
+### **Example 6: Text size**
+
+- [x] **Text size (`font-size`)**
+  - Defines the **text size**. Percentages are relative to the parent (here `300%` / `160%`).
+
+Sandbox: `code_sandbox/html-styles/size.html`
 
 ```html
 <h1 style="font-size:300%;">This is a heading</h1>
 <p style="font-size:160%;">This is a paragraph.</p>
 ```
 
+<img alt="html-styles font-size source" src="./code_sandbox/snaps/html-styles-05-code.png" />
+
 <img alt="html-styles font-size result" src="./code_sandbox/snaps/html-styles-05-result.png" />
 
-Text alignment (`align.html`):
+- [x] **Outcome:** the browser shows **This is a heading**, **This is a paragraph.**.
 
-<img alt="html-styles text-align source" src="./code_sandbox/snaps/html-styles-06-code.png" />
+<a id="html-styles-example-07"></a>
+
+### **Example 7: Text alignment**
+
+- [x] **Text alignment (`text-align`)**
+  - Defines **horizontal** text alignment (`center` in the example).
+
+Sandbox: `code_sandbox/html-styles/align.html`
 
 ```html
 <h1 style="text-align:center;">Centered Heading</h1>
 <p style="text-align:center;">Centered paragraph.</p>
 ```
 
+<img alt="html-styles text-align source" src="./code_sandbox/snaps/html-styles-06-code.png" />
+
 <img alt="html-styles text-align result" src="./code_sandbox/snaps/html-styles-06-result.png" />
+
+- [x] **Outcome:** the browser shows **Centered Heading**, **Centered paragraph.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -1899,7 +2063,25 @@ Use the **`style`** attribute for styling HTML elements. Use **`background-color
 
 HTML has several elements for text with a **special meaning**: bold, important, italic, emphasized, small, marked, deleted, inserted, subscript, and superscript. Some tags change **look** (`<b>`, `<i>`); others add **meaning** (`<strong>`, `<em>`).
 
+This section has **11** examples:
+
+- [x] **Example 1:** Formatting elements [View](#html-formatting-example-01)
+- [x] **Example 2:** Bold [View](#html-formatting-example-02)
+- [x] **Example 3:** Strong [View](#html-formatting-example-03)
+- [x] **Example 4:** Italic [View](#html-formatting-example-04)
+- [x] **Example 5:** Emphasized [View](#html-formatting-example-05)
+- [x] **Example 6:** Small [View](#html-formatting-example-06)
+- [x] **Example 7:** Mark [View](#html-formatting-example-07)
+- [x] **Example 8:** Deleted [View](#html-formatting-example-08)
+- [x] **Example 9:** Inserted [View](#html-formatting-example-09)
+- [x] **Example 10:** Subscript [View](#html-formatting-example-10)
+- [x] **Example 11:** Superscript [View](#html-formatting-example-11)
+
 ## Detailed Explanation
+
+<a id="html-formatting-example-01"></a>
+
+### **Example 1: Formatting elements**
 
 - [x] **Formatting elements**
   - `<b>` bold (no extra importance)
@@ -1913,59 +2095,8 @@ HTML has several elements for text with a **special meaning**: bold, important, 
   - `<sub>` subscript (e.g. H₂O)
   - `<sup>` superscript (e.g. footnotes)
   - Intro demo: bold, italic, subscript, and superscript.
-  - Sandbox: `code_sandbox/html-formatting/index.html`.
 
-<img alt="html-formatting result" src="./code_sandbox/snaps/html-formatting-result.png" />
-
-- [x] **`<b>` and `<strong>`**
-  - `<b>` is **bold** without extra importance.
-  - `<strong>` is **strong importance**; typically displayed bold.
-  - Sandbox: `code_sandbox/html-formatting/b.html`, `strong.html`.
-
-<img alt="html-formatting b result" src="./code_sandbox/snaps/html-formatting-01-result.png" />
-
-<img alt="html-formatting strong result" src="./code_sandbox/snaps/html-formatting-02-result.png" />
-
-- [x] **`<i>` and `<em>`**
-  - `<i>` is an **alternate voice or mood** (technical term, other language, thought, ship name); typically italic.
-  - `<em>` is **emphasized**; typically italic. A screen reader stresses the words.
-  - Sandbox: `code_sandbox/html-formatting/i.html`, `em.html`.
-
-<img alt="html-formatting i result" src="./code_sandbox/snaps/html-formatting-03-result.png" />
-
-<img alt="html-formatting em result" src="./code_sandbox/snaps/html-formatting-04-result.png" />
-
-- [x] **`<small>`**
-  - Defines **smaller** text.
-  - Sandbox: `code_sandbox/html-formatting/small.html`.
-
-<img alt="html-formatting small result" src="./code_sandbox/snaps/html-formatting-05-result.png" />
-
-- [x] **`<mark>`**
-  - Defines text that should be **marked or highlighted**.
-  - Sandbox: `code_sandbox/html-formatting/mark.html`.
-
-<img alt="html-formatting mark result" src="./code_sandbox/snaps/html-formatting-06-result.png" />
-
-- [x] **`<del>` and `<ins>`**
-  - `<del>` is **deleted** text; browsers usually **strike through**.
-  - `<ins>` is **inserted** text; browsers usually **underline**.
-  - Sandbox: `code_sandbox/html-formatting/del.html`, `ins.html`.
-
-<img alt="html-formatting del result" src="./code_sandbox/snaps/html-formatting-07-result.png" />
-
-<img alt="html-formatting ins result" src="./code_sandbox/snaps/html-formatting-08-result.png" />
-
-- [x] **`<sub>` and `<sup>`**
-  - `<sub>` sits **half a character below** the line (chemical formulas).
-  - `<sup>` sits **half a character above** the line (footnotes).
-  - Sandbox: `code_sandbox/html-formatting/sub.html`, `sup.html`.
-
-<img alt="html-formatting sub result" src="./code_sandbox/snaps/html-formatting-09-result.png" />
-
-Intro (`index.html`):
-
-<img alt="html-formatting source" src="./code_sandbox/snaps/html-formatting-code.png" />
+Sandbox: `code_sandbox/html-formatting/index.html`
 
 ```html
 <p><b>This text is bold</b></p>
@@ -1973,107 +2104,209 @@ Intro (`index.html`):
 <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
 ```
 
+<img alt="html-formatting source" src="./code_sandbox/snaps/html-formatting-code.png" />
+
 <img alt="html-formatting result" src="./code_sandbox/snaps/html-formatting-result.png" />
 
-Bold (`b.html`):
+- [x] **Outcome:** the browser shows **This text is bold**, **This text is italic**, **This is subscript and superscript**.
 
-<img alt="html-formatting b source" src="./code_sandbox/snaps/html-formatting-01-code.png" />
+<a id="html-formatting-example-02"></a>
+
+### **Example 2: Bold**
+
+- [x] **`<b>` and `<strong>`**
+  - `<b>` is **bold** without extra importance.
+  - `<strong>` is **strong importance**; typically displayed bold.
+
+Sandbox: `code_sandbox/html-formatting/b.html`
 
 ```html
 <b>This text is bold</b>
 ```
 
+<img alt="html-formatting b source" src="./code_sandbox/snaps/html-formatting-01-code.png" />
+
 <img alt="html-formatting b result" src="./code_sandbox/snaps/html-formatting-01-result.png" />
 
-Strong (`strong.html`):
+- [x] **Outcome:** the browser shows **This text is bold**.
 
-<img alt="html-formatting strong source" src="./code_sandbox/snaps/html-formatting-02-code.png" />
+<a id="html-formatting-example-03"></a>
+
+### **Example 3: Strong**
+
+- [x] **`<b>` and `<strong>`**
+  - `<b>` is **bold** without extra importance.
+  - `<strong>` is **strong importance**; typically displayed bold.
+
+Sandbox: `code_sandbox/html-formatting/strong.html`
 
 ```html
 <strong>This text is important!</strong>
 ```
 
+<img alt="html-formatting strong source" src="./code_sandbox/snaps/html-formatting-02-code.png" />
+
 <img alt="html-formatting strong result" src="./code_sandbox/snaps/html-formatting-02-result.png" />
 
-Italic (`i.html`):
+- [x] **Outcome:** the browser shows **This text is important!**.
 
-<img alt="html-formatting i source" src="./code_sandbox/snaps/html-formatting-03-code.png" />
+<a id="html-formatting-example-04"></a>
+
+### **Example 4: Italic**
+
+- [x] **`<i>` and `<em>`**
+  - `<i>` is an **alternate voice or mood** (technical term, other language, thought, ship name); typically italic.
+  - `<em>` is **emphasized**; typically italic. A screen reader stresses the words.
+
+Sandbox: `code_sandbox/html-formatting/i.html`
 
 ```html
 <i>This text is italic</i>
 ```
 
+<img alt="html-formatting i source" src="./code_sandbox/snaps/html-formatting-03-code.png" />
+
 <img alt="html-formatting i result" src="./code_sandbox/snaps/html-formatting-03-result.png" />
 
-Emphasized (`em.html`):
+- [x] **Outcome:** the browser shows **This text is italic**.
 
-<img alt="html-formatting em source" src="./code_sandbox/snaps/html-formatting-04-code.png" />
+<a id="html-formatting-example-05"></a>
+
+### **Example 5: Emphasized**
+
+- [x] **`<i>` and `<em>`**
+  - `<i>` is an **alternate voice or mood** (technical term, other language, thought, ship name); typically italic.
+  - `<em>` is **emphasized**; typically italic. A screen reader stresses the words.
+
+Sandbox: `code_sandbox/html-formatting/em.html`
 
 ```html
 <em>This text is emphasized</em>
 ```
 
+<img alt="html-formatting em source" src="./code_sandbox/snaps/html-formatting-04-code.png" />
+
 <img alt="html-formatting em result" src="./code_sandbox/snaps/html-formatting-04-result.png" />
 
-Small (`small.html`):
+- [x] **Outcome:** the browser shows **This text is emphasized**.
 
-<img alt="html-formatting small source" src="./code_sandbox/snaps/html-formatting-05-code.png" />
+<a id="html-formatting-example-06"></a>
+
+### **Example 6: Small**
+
+- [x] **`<small>`**
+  - Defines **smaller** text.
+
+Sandbox: `code_sandbox/html-formatting/small.html`
 
 ```html
 <small>This is some smaller text.</small>
 ```
 
+<img alt="html-formatting small source" src="./code_sandbox/snaps/html-formatting-05-code.png" />
+
 <img alt="html-formatting small result" src="./code_sandbox/snaps/html-formatting-05-result.png" />
 
-Mark (`mark.html`):
+- [x] **Outcome:** the browser shows **This is some smaller text.**.
 
-<img alt="html-formatting mark source" src="./code_sandbox/snaps/html-formatting-06-code.png" />
+<a id="html-formatting-example-07"></a>
+
+### **Example 7: Mark**
+
+- [x] **`<mark>`**
+  - Defines text that should be **marked or highlighted**.
+
+Sandbox: `code_sandbox/html-formatting/mark.html`
 
 ```html
 <p>Do not forget to buy <mark>milk</mark> today.</p>
 ```
 
+<img alt="html-formatting mark source" src="./code_sandbox/snaps/html-formatting-06-code.png" />
+
 <img alt="html-formatting mark result" src="./code_sandbox/snaps/html-formatting-06-result.png" />
 
-Deleted (`del.html`):
+- [x] **Outcome:** the browser shows **Do not forget to buy milk today.**.
 
-<img alt="html-formatting del source" src="./code_sandbox/snaps/html-formatting-07-code.png" />
+<a id="html-formatting-example-08"></a>
+
+### **Example 8: Deleted**
+
+- [x] **`<del>` and `<ins>`**
+  - `<del>` is **deleted** text; browsers usually **strike through**.
+  - `<ins>` is **inserted** text; browsers usually **underline**.
+
+Sandbox: `code_sandbox/html-formatting/del.html`
 
 ```html
 <p>My favorite color is <del>blue</del> red.</p>
 ```
 
+<img alt="html-formatting del source" src="./code_sandbox/snaps/html-formatting-07-code.png" />
+
 <img alt="html-formatting del result" src="./code_sandbox/snaps/html-formatting-07-result.png" />
 
-Inserted (`ins.html`):
+- [x] **Outcome:** the browser shows **My favorite color is blue red.**.
 
-<img alt="html-formatting ins source" src="./code_sandbox/snaps/html-formatting-08-code.png" />
+<a id="html-formatting-example-09"></a>
+
+### **Example 9: Inserted**
+
+- [x] **`<del>` and `<ins>`**
+  - `<del>` is **deleted** text; browsers usually **strike through**.
+  - `<ins>` is **inserted** text; browsers usually **underline**.
+
+Sandbox: `code_sandbox/html-formatting/ins.html`
 
 ```html
 <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
 ```
 
+<img alt="html-formatting ins source" src="./code_sandbox/snaps/html-formatting-08-code.png" />
+
 <img alt="html-formatting ins result" src="./code_sandbox/snaps/html-formatting-08-result.png" />
 
-Subscript (`sub.html`):
+- [x] **Outcome:** the browser shows **My favorite color is blue red .**.
 
-<img alt="html-formatting sub source" src="./code_sandbox/snaps/html-formatting-09-code.png" />
+<a id="html-formatting-example-10"></a>
+
+### **Example 10: Subscript**
+
+- [x] **`<sub>` and `<sup>`**
+  - `<sub>` sits **half a character below** the line (chemical formulas).
+  - `<sup>` sits **half a character above** the line (footnotes).
+
+Sandbox: `code_sandbox/html-formatting/sub.html`
 
 ```html
 <p>This is <sub>subscripted</sub> text.</p>
 ```
 
+<img alt="html-formatting sub source" src="./code_sandbox/snaps/html-formatting-09-code.png" />
+
 <img alt="html-formatting sub result" src="./code_sandbox/snaps/html-formatting-09-result.png" />
 
-Superscript (`sup.html`):
+- [x] **Outcome:** the browser shows **This is subscripted text.**.
 
-<img alt="html-formatting sup source" src="./code_sandbox/snaps/html-formatting-10-code.png" />
+<a id="html-formatting-example-11"></a>
+
+### **Example 11: Superscript**
+
+- [x] **`<sub>` and `<sup>`**
+  - `<sub>` sits **half a character below** the line (chemical formulas).
+  - `<sup>` sits **half a character above** the line (footnotes).
+
+Sandbox: `code_sandbox/html-formatting/sup.html`
 
 ```html
 <p>This is <sup>superscripted</sup> text.</p>
 ```
 
+<img alt="html-formatting sup source" src="./code_sandbox/snaps/html-formatting-10-code.png" />
+
 <img alt="html-formatting sup result" src="./code_sandbox/snaps/html-formatting-10-result.png" />
+
+- [x] **Outcome:** the browser shows **This is superscripted text.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -2201,56 +2434,27 @@ Use formatting tags for **meaning** and look: `<b>`/`<strong>`, `<i>`/`<em>`, `<
 
 This chapter covers **quotation and citation** elements: `<blockquote>`, `<q>`, `<abbr>`, `<address>`, `<cite>`, and `<bdo>`. They mark quotes, abbreviations, contact info, work titles, and text direction.
 
+This section has **6** examples:
+
+- [x] **Example 1:** Intro / blockquote [View](#html-quotations-example-01)
+- [x] **Example 2:** Short quotation [View](#html-quotations-example-02)
+- [x] **Example 3:** Abbreviation [View](#html-quotations-example-03)
+- [x] **Example 4:** Address [View](#html-quotations-example-04)
+- [x] **Example 5:** Cite [View](#html-quotations-example-05)
+- [x] **Example 6:** Bi-directional override [View](#html-quotations-example-06)
+
 ## Detailed Explanation
+
+<a id="html-quotations-example-01"></a>
+
+### **Example 1: Intro / blockquote**
 
 - [x] **`<blockquote>` for quotations**
   - Defines a section **quoted from another source**.
   - Browsers usually **indent** it.
   - Optional `cite` URL (here WWF).
-  - Sandbox: `code_sandbox/html-quotations/index.html`.
 
-<img alt="html-quotations blockquote result" src="./code_sandbox/snaps/html-quotations-result.png" />
-
-- [x] **`<q>` for short quotations**
-  - Defines a **short** quotation.
-  - Browsers normally insert **quotation marks**.
-  - Sandbox: `code_sandbox/html-quotations/q.html`.
-
-<img alt="html-quotations q result" src="./code_sandbox/snaps/html-quotations-02-result.png" />
-
-- [x] **`<abbr>` for abbreviations**
-  - Defines an **abbreviation or acronym** (HTML, CSS, Mr., Dr., ASAP, ATM).
-  - Helps browsers, translation systems, and search engines.
-  - Use the global **`title`** attribute so the description shows on **mouse over**.
-  - Sandbox: `code_sandbox/html-quotations/abbr.html`.
-
-<img alt="html-quotations abbr result" src="./code_sandbox/snaps/html-quotations-03-result.png" />
-
-- [x] **`<address>` for contact information**
-  - Contact info for the **author/owner** of a document or article (email, URL, physical address, phone, social handle).
-  - Usually **italic**. Browsers add a **line break** before and after.
-  - Sandbox: `code_sandbox/html-quotations/address.html`.
-
-<img alt="html-quotations address result" src="./code_sandbox/snaps/html-quotations-04-result.png" />
-
-- [x] **`<cite>` for work title**
-  - Title of a **creative work** (book, poem, song, movie, painting, sculpture).
-  - A person’s name is **not** the title of a work.
-  - Usually **italic**.
-  - Sandbox: `code_sandbox/html-quotations/cite.html`.
-
-<img alt="html-quotations cite result" src="./code_sandbox/snaps/html-quotations-05-result.png" />
-
-- [x] **`<bdo>` for bi-directional override**
-  - BDO = **Bi-Directional Override**.
-  - Overrides the current **text direction** (`dir="rtl"` in the example).
-  - Sandbox: `code_sandbox/html-quotations/bdo.html`.
-
-Intro / blockquote (`index.html`):
-
-<img alt="html-quotations intro" src="./code_sandbox/snaps/html-quotations-code.png" />
-
-<img alt="html-quotations blockquote source" src="./code_sandbox/snaps/html-quotations-01-code.png" />
+Sandbox: `code_sandbox/html-quotations/index.html`
 
 ```html
 <p>Here is a quote from WWF's website:</p>
@@ -2263,24 +2467,46 @@ Intro / blockquote (`index.html`):
 </blockquote>
 ```
 
+<img alt="html-quotations intro" src="./code_sandbox/snaps/html-quotations-code.png" />
+
+<img alt="html-quotations blockquote source" src="./code_sandbox/snaps/html-quotations-01-code.png" />
+
 <img alt="html-quotations blockquote result" src="./code_sandbox/snaps/html-quotations-result.png" />
 
-Short quotation (`q.html`):
+- [x] **Outcome:** the browser shows **Here is a quote from WWF's website:**, **For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.**.
 
-<img alt="html-quotations q source" src="./code_sandbox/snaps/html-quotations-02-code.png" />
+<a id="html-quotations-example-02"></a>
+
+### **Example 2: Short quotation**
+
+- [x] **`<q>` for short quotations**
+  - Defines a **short** quotation.
+  - Browsers normally insert **quotation marks**.
+
+Sandbox: `code_sandbox/html-quotations/q.html`
 
 ```html
 <p>
-  WWF's goal is to:
   <q>Build a future where people live in harmony with nature.</q>
 </p>
 ```
 
+<img alt="html-quotations q source" src="./code_sandbox/snaps/html-quotations-02-code.png" />
+
 <img alt="html-quotations q result" src="./code_sandbox/snaps/html-quotations-02-result.png" />
 
-Abbreviation (`abbr.html`):
+- [x] **Outcome:** the browser shows **WWF's goal is to: Build a future where people live in harmony with nature.**.
 
-<img alt="html-quotations abbr source" src="./code_sandbox/snaps/html-quotations-03-code.png" />
+<a id="html-quotations-example-03"></a>
+
+### **Example 3: Abbreviation**
+
+- [x] **`<abbr>` for abbreviations**
+  - Defines an **abbreviation or acronym** (HTML, CSS, Mr., Dr., ASAP, ATM).
+  - Helps browsers, translation systems, and search engines.
+  - Use the global **`title`** attribute so the description shows on **mouse over**.
+
+Sandbox: `code_sandbox/html-quotations/abbr.html`
 
 ```html
 <p>
@@ -2288,11 +2514,21 @@ Abbreviation (`abbr.html`):
 </p>
 ```
 
+<img alt="html-quotations abbr source" src="./code_sandbox/snaps/html-quotations-03-code.png" />
+
 <img alt="html-quotations abbr result" src="./code_sandbox/snaps/html-quotations-03-result.png" />
 
-Address (`address.html`):
+- [x] **Outcome:** the browser shows **The WHO was founded in 1948.**.
 
-<img alt="html-quotations address source" src="./code_sandbox/snaps/html-quotations-04-code.png" />
+<a id="html-quotations-example-04"></a>
+
+### **Example 4: Address**
+
+- [x] **`<address>` for contact information**
+  - Contact info for the **author/owner** of a document or article (email, URL, physical address, phone, social handle).
+  - Usually **italic**. Browsers add a **line break** before and after.
+
+Sandbox: `code_sandbox/html-quotations/address.html`
 
 ```html
 <address>
@@ -2304,27 +2540,52 @@ Address (`address.html`):
 </address>
 ```
 
+<img alt="html-quotations address source" src="./code_sandbox/snaps/html-quotations-04-code.png" />
+
 <img alt="html-quotations address result" src="./code_sandbox/snaps/html-quotations-04-result.png" />
 
-Cite (`cite.html`):
+- [x] **Outcome:** the browser shows **Written by John Doe. Visit us at: Example.com Box 564, Disneyland USA**.
 
-<img alt="html-quotations cite source" src="./code_sandbox/snaps/html-quotations-05-code.png" />
+<a id="html-quotations-example-05"></a>
+
+### **Example 5: Cite**
+
+- [x] **`<cite>` for work title**
+  - Title of a **creative work** (book, poem, song, movie, painting, sculpture).
+  - A person’s name is **not** the title of a work.
+  - Usually **italic**.
+
+Sandbox: `code_sandbox/html-quotations/cite.html`
 
 ```html
 <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 ```
 
+<img alt="html-quotations cite source" src="./code_sandbox/snaps/html-quotations-05-code.png" />
+
 <img alt="html-quotations cite result" src="./code_sandbox/snaps/html-quotations-05-result.png" />
 
-Bi-directional override (`bdo.html`):
+- [x] **Outcome:** the browser shows **The Scream by Edvard Munch. Painted in 1893.**.
 
-<img alt="html-quotations bdo source" src="./code_sandbox/snaps/html-quotations-06-code.png" />
+<a id="html-quotations-example-06"></a>
+
+### **Example 6: Bi-directional override**
+
+- [x] **`<bdo>` for bi-directional override**
+  - BDO = **Bi-Directional Override**.
+  - Overrides the current **text direction** (`dir="rtl"` in the example).
+
+Sandbox: `code_sandbox/html-quotations/bdo.html`
 
 ```html
 <bdo dir="rtl">This text will be written from right to left</bdo>
 ```
 
+<img alt="html-quotations bdo source" src="./code_sandbox/snaps/html-quotations-06-code.png" />
+
 <img alt="html-quotations bdo result" src="./code_sandbox/snaps/html-quotations-06-result.png" />
+
+- [x] **Outcome:** the browser shows **This text will be written from right to left**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -2449,52 +2710,53 @@ Use `<blockquote>` for a sourced block quote (usually indented), `<q>` for a sho
 
 HTML **comments** are **not displayed** in the browser. They document the source, hold reminders, and can **hide** content (temporarily, for debugging, or in the middle of a line). Syntax: `<!-- Write your comments here -->`. There is an **exclamation point** in the start tag, not the end tag.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Syntax [View](#html-comments-example-01)
+- [x] **Example 2:** Add comments [View](#html-comments-example-02)
+- [x] **Example 3:** Hide content [View](#html-comments-example-03)
+- [x] **Example 4:** Hide a section [View](#html-comments-example-04)
+- [x] **Example 5:** Hide inline [View](#html-comments-example-05)
+
 ## Detailed Explanation
+
+- [x] **Hide inline content**
+  - Comments can hide a **part of a line**.
+  - `This <!-- great text --> is a paragraph.` displays as “This is a paragraph.”
+
+<a id="html-comments-example-01"></a>
+
+### **Example 1: Syntax**
 
 - [x] **Comment syntax**
   - `<!-- Write your comments here -->`
   - `!` is only on the **start** tag.
   - Comments do **not** show in the browser; they document the source.
-
-<img alt="html-comments syntax" src="./code_sandbox/snaps/html-comments-code.png" />
-
 - [x] **Add comments (notifications and reminders)**
   - Place notes in the HTML: `<!-- This is a comment -->` and `<!-- Remember to add more information here -->`.
   - Only the paragraph is visible.
-  - Sandbox: `code_sandbox/html-comments/index.html`.
 
-<img alt="html-comments add result" src="./code_sandbox/snaps/html-comments-result.png" />
-
-- [x] **Hide content**
-  - Comment out markup to hide it **temporarily**.
-  - Everything between `<!--` and `-->` is hidden from display.
-  - Useful for **debugging**: comment out lines one at a time to find errors.
-  - Sandbox: `code_sandbox/html-comments/hide.html` (one paragraph commented out).
-
-<img alt="html-comments hide result" src="./code_sandbox/snaps/html-comments-02-result.png" />
-
-- [x] **Hide more than one line**
-  - A whole block (paragraph + image) can sit inside one comment.
-  - Sandbox: `code_sandbox/html-comments/hide-block.html`.
-
-<img alt="html-comments hide-block result" src="./code_sandbox/snaps/html-comments-03-result.png" />
-
-- [x] **Hide inline content**
-  - Comments can hide a **part of a line**.
-  - `This <!-- great text --> is a paragraph.` displays as “This is a paragraph.”
-  - Sandbox: `code_sandbox/html-comments/inline.html`.
-
-Syntax:
-
-<img alt="html-comments syntax source" src="./code_sandbox/snaps/html-comments-code.png" />
+Sandbox: `code_sandbox/html-comments/index.html`
 
 ```html
 <!-- Write your comments here -->
 ```
 
-Add comments (`index.html`):
+<img alt="html-comments syntax source" src="./code_sandbox/snaps/html-comments-code.png" />
 
 <img alt="html-comments add source" src="./code_sandbox/snaps/html-comments-01-code.png" />
+
+- [x] **Outcome:** the page demonstrates **Syntax** as shown in the result snap.
+
+<a id="html-comments-example-02"></a>
+
+### **Example 2: Add comments**
+
+- [x] **Add comments (notifications and reminders)**
+  - Place notes in the HTML: `<!-- This is a comment -->` and `<!-- Remember to add more information here -->`.
+  - Only the paragraph is visible.
+
+Sandbox: `code_sandbox/html-comments/index.html`
 
 ```html
 <!-- This is a comment -->
@@ -2504,11 +2766,22 @@ Add comments (`index.html`):
 <!-- Remember to add more information here -->
 ```
 
+<img alt="html-comments add source" src="./code_sandbox/snaps/html-comments-01-code.png" />
+
 <img alt="html-comments add result" src="./code_sandbox/snaps/html-comments-result.png" />
 
-Hide content (`hide.html`):
+- [x] **Outcome:** the browser shows **This is a paragraph.**.
 
-<img alt="html-comments hide source" src="./code_sandbox/snaps/html-comments-02-code.png" />
+<a id="html-comments-example-03"></a>
+
+### **Example 3: Hide content**
+
+- [x] **Hide content**
+  - Comment out markup to hide it **temporarily**.
+  - Everything between `<!--` and `-->` is hidden from display.
+  - Useful for **debugging**: comment out lines one at a time to find errors.
+
+Sandbox: `code_sandbox/html-comments/hide.html`
 
 ```html
 <p>This is a paragraph.</p>
@@ -2518,11 +2791,20 @@ Hide content (`hide.html`):
 <p>This is a paragraph too.</p>
 ```
 
+<img alt="html-comments hide source" src="./code_sandbox/snaps/html-comments-02-code.png" />
+
 <img alt="html-comments hide result" src="./code_sandbox/snaps/html-comments-02-result.png" />
 
-Hide a section (`hide-block.html`):
+- [x] **Outcome:** the browser shows **This is a paragraph.**, **This is another paragraph**, **--> This is a paragraph too.**.
 
-<img alt="html-comments hide-block source" src="./code_sandbox/snaps/html-comments-03-code.png" />
+<a id="html-comments-example-04"></a>
+
+### **Example 4: Hide a section**
+
+- [x] **Hide more than one line**
+  - A whole block (paragraph + image) can sit inside one comment.
+
+Sandbox: `code_sandbox/html-comments/hide-block.html`
 
 ```html
 <p>This is a paragraph.</p>
@@ -2533,11 +2815,19 @@ Hide a section (`hide-block.html`):
 <p>This is a paragraph too.</p>
 ```
 
+<img alt="html-comments hide-block source" src="./code_sandbox/snaps/html-comments-03-code.png" />
+
 <img alt="html-comments hide-block result" src="./code_sandbox/snaps/html-comments-03-result.png" />
 
-Hide inline (`inline.html`):
+- [x] **Outcome:** the browser shows **This is a paragraph.**, **Look at this cool image:**, **--> This is a paragraph too.**.
 
-<img alt="html-comments inline source" src="./code_sandbox/snaps/html-comments-04-code.png" />
+<a id="html-comments-example-05"></a>
+
+### **Example 5: Hide inline**
+
+- [x] This example runs the tested markup in `code_sandbox/html-comments/inline.html`.
+
+Sandbox: `code_sandbox/html-comments/inline.html`
 
 ```html
 <p>
@@ -2547,7 +2837,11 @@ Hide inline (`inline.html`):
 </p>
 ```
 
+<img alt="html-comments inline source" src="./code_sandbox/snaps/html-comments-04-code.png" />
+
 <img alt="html-comments inline result" src="./code_sandbox/snaps/html-comments-04-result.png" />
+
+- [x] **Outcome:** the browser shows **This is a paragraph.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -2653,43 +2947,25 @@ Comments use `<!-- … -->` (`!` only on the start tag). They do **not** display
 
 HTML colors are specified with **predefined color names**, or with **RGB**, **HEX**, **HSL**, **RGBA**, or **HSLA** values. This chapter shows named colors on backgrounds, then the same idea for **text** and **borders**, and finally the numeric color-value forms (including 50% transparency).
 
+This section has **5** examples:
+
+- [x] **Example 1:** Color names [View](#html-colors-example-01)
+- [x] **Example 2:** Background color [View](#html-colors-example-02)
+- [x] **Example 3:** Text color [View](#html-colors-example-03)
+- [x] **Example 4:** Border color [View](#html-colors-example-04)
+- [x] **Example 5:** Color values [View](#html-colors-example-05)
+
 ## Detailed Explanation
+
+<a id="html-colors-example-01"></a>
+
+### **Example 1: Color names**
 
 - [x] **Color names**
   - A color can be a **name** such as Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet, LightGray.
   - HTML supports **140 standard color names**.
-  - Sandbox: `code_sandbox/html-colors/index.html`.
 
-<img alt="html-colors names result" src="./code_sandbox/snaps/html-colors-result.png" />
-
-- [x] **Background color**
-  - Set an element’s background with `style="background-color:…"` (DodgerBlue heading, Tomato paragraph).
-  - Sandbox: `code_sandbox/html-colors/background.html`.
-
-<img alt="html-colors background result" src="./code_sandbox/snaps/html-colors-01-result.png" />
-
-- [x] **Text color**
-  - Set text with `style="color:…"` (Tomato heading, DodgerBlue and MediumSeaGreen paragraphs).
-  - Sandbox: `code_sandbox/html-colors/text.html`.
-
-<img alt="html-colors text result" src="./code_sandbox/snaps/html-colors-02-result.png" />
-
-- [x] **Border color**
-  - Set a border with `style="border:2px solid …"` (Tomato, DodgerBlue, Violet).
-  - Sandbox: `code_sandbox/html-colors/border.html`.
-
-<img alt="html-colors border result" src="./code_sandbox/snaps/html-colors-03-result.png" />
-
-- [x] **Color values**
-  - Besides names, use **RGB**, **HEX**, **HSL**, **RGBA**, and **HSLA**.
-  - `rgb(255, 99, 71)`, `#ff6347`, and `hsl(9, 100%, 64%)` are the same as **Tomato**.
-  - RGBA / HSLA add an **alpha** channel; `0.5` is **50% transparent**.
-  - RGB, HEX, and HSL are covered in more depth on the following color pages.
-  - Sandbox: `code_sandbox/html-colors/values.html`.
-
-Color names (`index.html`):
-
-<img alt="html-colors names source" src="./code_sandbox/snaps/html-colors-code.png" />
+Sandbox: `code_sandbox/html-colors/index.html`
 
 ```html
 <h1 style="background-color:Tomato;">Tomato</h1>
@@ -2702,11 +2978,20 @@ Color names (`index.html`):
 <h1 style="background-color:LightGray;">LightGray</h1>
 ```
 
+<img alt="html-colors names source" src="./code_sandbox/snaps/html-colors-code.png" />
+
 <img alt="html-colors names result" src="./code_sandbox/snaps/html-colors-result.png" />
 
-Background color (`background.html`):
+- [x] **Outcome:** the browser shows **Tomato**, **Orange**, **DodgerBlue**, **MediumSeaGreen**, **Gray**.
 
-<img alt="html-colors background source" src="./code_sandbox/snaps/html-colors-01-code.png" />
+<a id="html-colors-example-02"></a>
+
+### **Example 2: Background color**
+
+- [x] **Background color**
+  - Set an element’s background with `style="background-color:…"` (DodgerBlue heading, Tomato paragraph).
+
+Sandbox: `code_sandbox/html-colors/background.html`
 
 ```html
 <h1 style="background-color:DodgerBlue;">Hello World</h1>
@@ -2719,11 +3004,20 @@ Background color (`background.html`):
 </p>
 ```
 
+<img alt="html-colors background source" src="./code_sandbox/snaps/html-colors-01-code.png" />
+
 <img alt="html-colors background result" src="./code_sandbox/snaps/html-colors-01-result.png" />
 
-Text color (`text.html`):
+- [x] **Outcome:** the browser shows **Hello World**, **Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.**.
 
-<img alt="html-colors text source" src="./code_sandbox/snaps/html-colors-02-code.png" />
+<a id="html-colors-example-03"></a>
+
+### **Example 3: Text color**
+
+- [x] **Text color**
+  - Set text with `style="color:…"` (Tomato heading, DodgerBlue and MediumSeaGreen paragraphs).
+
+Sandbox: `code_sandbox/html-colors/text.html`
 
 ```html
 <h3 style="color:Tomato;">Hello World</h3>
@@ -2739,11 +3033,20 @@ Text color (`text.html`):
 </p>
 ```
 
+<img alt="html-colors text source" src="./code_sandbox/snaps/html-colors-02-code.png" />
+
 <img alt="html-colors text result" src="./code_sandbox/snaps/html-colors-02-result.png" />
 
-Border color (`border.html`):
+- [x] **Outcome:** the browser shows **Hello World**, **Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.**, **Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.**.
 
-<img alt="html-colors border source" src="./code_sandbox/snaps/html-colors-03-code.png" />
+<a id="html-colors-example-04"></a>
+
+### **Example 4: Border color**
+
+- [x] **Border color**
+  - Set a border with `style="border:2px solid …"` (Tomato, DodgerBlue, Violet).
+
+Sandbox: `code_sandbox/html-colors/border.html`
 
 ```html
 <h1 style="border: 2px solid Tomato;">Hello World</h1>
@@ -2753,11 +3056,23 @@ Border color (`border.html`):
 <h1 style="border: 2px solid Violet;">Hello World</h1>
 ```
 
+<img alt="html-colors border source" src="./code_sandbox/snaps/html-colors-03-code.png" />
+
 <img alt="html-colors border result" src="./code_sandbox/snaps/html-colors-03-result.png" />
 
-Color values (`values.html`):
+- [x] **Outcome:** the browser shows **Hello World**, **Hello World**, **Hello World**.
 
-<img alt="html-colors values source" src="./code_sandbox/snaps/html-colors-04-code.png" />
+<a id="html-colors-example-05"></a>
+
+### **Example 5: Color values**
+
+- [x] **Color values**
+  - Besides names, use **RGB**, **HEX**, **HSL**, **RGBA**, and **HSLA**.
+  - `rgb(255, 99, 71)`, `#ff6347`, and `hsl(9, 100%, 64%)` are the same as **Tomato**.
+  - RGBA / HSLA add an **alpha** channel; `0.5` is **50% transparent**.
+  - RGB, HEX, and HSL are covered in more depth on the following color pages.
+
+Sandbox: `code_sandbox/html-colors/values.html`
 
 ```html
 <p>Same as color name "Tomato":</p>
@@ -2773,7 +3088,11 @@ Color values (`values.html`):
 </h1>
 ```
 
+<img alt="html-colors values source" src="./code_sandbox/snaps/html-colors-04-code.png" />
+
 <img alt="html-colors values result" src="./code_sandbox/snaps/html-colors-04-result.png" />
+
+- [x] **Outcome:** the browser shows **Same as color name "Tomato":**, **rgb(255, 99, 71)**, **#ff6347**, **hsl(9, 100%, 64%)**, **Same as color name "Tomato", but 50% transparent:**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -2899,6 +3218,17 @@ Specify colors with **names** (140 standard names) or with **RGB / HEX / HSL / R
 
 **CSS** (Cascading Style Sheets) formats the layout of a webpage: color, font, size, spacing, position, backgrounds, and different displays for different devices. You can add CSS in **three** ways: **inline**, **internal**, and **external**. Cascading means a style on a parent also applies to children unless you override it.
 
+This section has **8** examples:
+
+- [x] **Example 1:** Inline [View](#html-css-example-01)
+- [x] **Example 2:** Internal [View](#html-css-example-02)
+- [x] **Example 3:** External HTML [View](#html-css-example-03)
+- [x] **Example 4:** `styles.css` [View](#html-css-example-04)
+- [x] **Example 5:** Fonts [View](#html-css-example-05)
+- [x] **Example 6:** Border [View](#html-css-example-06)
+- [x] **Example 7:** Padding [View](#html-css-example-07)
+- [x] **Example 8:** Margin [View](#html-css-example-08)
+
 ## Detailed Explanation
 
 - [x] **What is CSS?**
@@ -2910,49 +3240,6 @@ Specify colors with **names** (140 standard names) or with **RGB / HEX / HSL / R
   - **Internal** — `<style>` in the page `<head>`.
   - **External** — `<link rel="stylesheet" href="…">` to a `.css` file.
   - External files are the usual way for a site. This chapter uses inline and internal a lot because they are easier to try.
-- [x] **Inline CSS**
-  - Unique style on a **single** element.
-  - Example: blue `<h1>`, red `<p>`.
-  - Sandbox: `code_sandbox/html-css/index.html`.
-
-<img alt="html-css inline result" src="./code_sandbox/snaps/html-css-result.png" />
-
-- [x] **Internal CSS**
-  - Style for a **single page**, inside `<style>` in `<head>`.
-  - Example: powderblue `body`, blue headings, red paragraphs (all `h1` / `p` on that page).
-  - Sandbox: `code_sandbox/html-css/internal.html`.
-
-<img alt="html-css internal result" src="./code_sandbox/snaps/html-css-01-result.png" />
-
-- [x] **External CSS**
-  - One sheet for **many** pages.
-  - Link it from each page’s `<head>`: `<link rel="stylesheet" href="styles.css">`.
-  - The `.css` file is plain CSS only (no HTML).
-  - Changing that one file can restyle a whole site.
-  - Sandbox: `code_sandbox/html-css/external.html` + `styles.css` (looks the same as internal).
-
-<img alt="html-css external result" src="./code_sandbox/snaps/html-css-02-result.png" />
-
-- [x] **CSS colors, fonts, and sizes**
-  - `color` — text color.
-  - `font-family` — font (verdana heading, courier paragraph).
-  - `font-size` — size (`300%` / `160%` in the example).
-  - Sandbox: `code_sandbox/html-css/fonts.html`.
-
-<img alt="html-css fonts result" src="./code_sandbox/snaps/html-css-03-result.png" />
-
-- [x] **Border, padding, and margin**
-  - `border` — a border around an element (almost any element).
-  - `padding` — space **inside** the border (text to border).
-  - `margin` — space **outside** the border.
-  - Sandbox: `border.html`, `padding.html`, `margin.html`.
-
-<img alt="html-css border result" src="./code_sandbox/snaps/html-css-04-result.png" />
-
-<img alt="html-css padding result" src="./code_sandbox/snaps/html-css-05-result.png" />
-
-<img alt="html-css margin result" src="./code_sandbox/snaps/html-css-06-result.png" />
-
 - [x] **Linking to an external sheet (paths)**
   - Full URL: `href="https://www.w3schools.com/html/styles.css"`.
   - Site path: `href="/html/styles.css"`.
@@ -2967,9 +3254,15 @@ Specify colors with **names** (140 standard names) or with **RGB / HEX / HSL / R
 | `<style>` | Style information for an HTML document             |
 | `<link>`  | A link between a document and an external resource |
 
-Inline (`index.html`):
+<a id="html-css-example-01"></a>
 
-<img alt="html-css inline source" src="./code_sandbox/snaps/html-css-code.png" />
+### **Example 1: Inline**
+
+- [x] **Inline CSS**
+  - Unique style on a **single** element.
+  - Example: blue `<h1>`, red `<p>`.
+
+Sandbox: `code_sandbox/html-css/index.html`
 
 ```html
 <h1 style="color:blue;">A Blue Heading</h1>
@@ -2977,11 +3270,21 @@ Inline (`index.html`):
 <p style="color:red;">A red paragraph.</p>
 ```
 
+<img alt="html-css inline source" src="./code_sandbox/snaps/html-css-code.png" />
+
 <img alt="html-css inline result" src="./code_sandbox/snaps/html-css-result.png" />
 
-Internal (`internal.html`):
+- [x] **Outcome:** the browser shows **A Blue Heading**, **A red paragraph.**.
 
-<img alt="html-css internal source" src="./code_sandbox/snaps/html-css-01-code.png" />
+<a id="html-css-example-02"></a>
+
+### **Example 2: Internal**
+
+- [x] **Internal CSS**
+  - Style for a **single page**, inside `<style>` in `<head>`.
+  - Example: powderblue `body`, blue headings, red paragraphs (all `h1` / `p` on that page).
+
+Sandbox: `code_sandbox/html-css/internal.html`
 
 ```html
 <head>
@@ -3003,11 +3306,23 @@ Internal (`internal.html`):
 </body>
 ```
 
+<img alt="html-css internal source" src="./code_sandbox/snaps/html-css-01-code.png" />
+
 <img alt="html-css internal result" src="./code_sandbox/snaps/html-css-01-result.png" />
 
-External HTML (`external.html`):
+- [x] **Outcome:** the browser shows **body { background-color: powderblue; } h1 { color: blue; } p { color: red; } This is a heading**, **This is a paragraph.**.
 
-<img alt="html-css external source" src="./code_sandbox/snaps/html-css-02-code.png" />
+<a id="html-css-example-03"></a>
+
+### **Example 3: External HTML**
+
+- [x] **External CSS**
+  - One sheet for **many** pages.
+  - Link it from each page’s `<head>`: `<link rel="stylesheet" href="styles.css">`.
+  - The `.css` file is plain CSS only (no HTML).
+  - Changing that one file can restyle a whole site.
+
+Sandbox: `code_sandbox/html-css/external.html`
 
 ```html
 <head>
@@ -3015,9 +3330,17 @@ External HTML (`external.html`):
 </head>
 ```
 
-`styles.css`:
+<img alt="html-css external source" src="./code_sandbox/snaps/html-css-02-code.png" />
 
 <img alt="html-css styles.css source" src="./code_sandbox/snaps/html-css-03-code.png" />
+
+- [x] **Outcome:** the page demonstrates **External HTML** as shown in the result snap.
+
+<a id="html-css-example-04"></a>
+
+### **Example 4: `styles.css`**
+
+- [x] This example runs the tested markup.
 
 ```css
 body {
@@ -3031,11 +3354,22 @@ p {
 }
 ```
 
+<img alt="html-css styles.css source" src="./code_sandbox/snaps/html-css-03-code.png" />
+
 <img alt="html-css external result" src="./code_sandbox/snaps/html-css-02-result.png" />
 
-Fonts (`fonts.html`):
+- [x] **Outcome:** the browser shows **body { background-color: powderblue; } h1 { color: blue; } p { color: red; }**.
 
-<img alt="html-css fonts source" src="./code_sandbox/snaps/html-css-04-code.png" />
+<a id="html-css-example-05"></a>
+
+### **Example 5: Fonts**
+
+- [x] **CSS colors, fonts, and sizes**
+  - `color` — text color.
+  - `font-family` — font (verdana heading, courier paragraph).
+  - `font-size` — size (`300%` / `160%` in the example).
+
+Sandbox: `code_sandbox/html-css/fonts.html`
 
 ```css
 h1 {
@@ -3050,11 +3384,23 @@ p {
 }
 ```
 
+<img alt="html-css fonts source" src="./code_sandbox/snaps/html-css-04-code.png" />
+
 <img alt="html-css fonts result" src="./code_sandbox/snaps/html-css-03-result.png" />
 
-Border (`border.html`):
+- [x] **Outcome:** the browser shows **h1 { color: blue; font-family: verdana; font-size: 300%; } p { color: red; font-family: courier; font-size: 160%; }**.
 
-<img alt="html-css border source" src="./code_sandbox/snaps/html-css-05-code.png" />
+<a id="html-css-example-06"></a>
+
+### **Example 6: Border**
+
+- [x] **Border, padding, and margin**
+  - `border` — a border around an element (almost any element).
+  - `padding` — space **inside** the border (text to border).
+  - `margin` — space **outside** the border.
+  - Sandbox: `border.html`, `padding.html`, `margin.html`.
+
+Sandbox: `code_sandbox/html-css/border.html`
 
 ```css
 p {
@@ -3062,11 +3408,23 @@ p {
 }
 ```
 
+<img alt="html-css border source" src="./code_sandbox/snaps/html-css-05-code.png" />
+
 <img alt="html-css border result" src="./code_sandbox/snaps/html-css-04-result.png" />
 
-Padding (`padding.html`):
+- [x] **Outcome:** the browser shows **p { border: 2px solid powderblue; }**.
 
-<img alt="html-css padding source" src="./code_sandbox/snaps/html-css-06-code.png" />
+<a id="html-css-example-07"></a>
+
+### **Example 7: Padding**
+
+- [x] **Border, padding, and margin**
+  - `border` — a border around an element (almost any element).
+  - `padding` — space **inside** the border (text to border).
+  - `margin` — space **outside** the border.
+  - Sandbox: `border.html`, `padding.html`, `margin.html`.
+
+Sandbox: `code_sandbox/html-css/padding.html`
 
 ```css
 p {
@@ -3075,11 +3433,23 @@ p {
 }
 ```
 
+<img alt="html-css padding source" src="./code_sandbox/snaps/html-css-06-code.png" />
+
 <img alt="html-css padding result" src="./code_sandbox/snaps/html-css-05-result.png" />
 
-Margin (`margin.html`):
+- [x] **Outcome:** the browser shows **p { border: 2px solid powderblue; padding: 30px; }**.
 
-<img alt="html-css margin source" src="./code_sandbox/snaps/html-css-07-code.png" />
+<a id="html-css-example-08"></a>
+
+### **Example 8: Margin**
+
+- [x] **Border, padding, and margin**
+  - `border` — a border around an element (almost any element).
+  - `padding` — space **inside** the border (text to border).
+  - `margin` — space **outside** the border.
+  - Sandbox: `border.html`, `padding.html`, `margin.html`.
+
+Sandbox: `code_sandbox/html-css/margin.html`
 
 ```css
 p {
@@ -3088,7 +3458,11 @@ p {
 }
 ```
 
+<img alt="html-css margin source" src="./code_sandbox/snaps/html-css-07-code.png" />
+
 <img alt="html-css margin result" src="./code_sandbox/snaps/html-css-06-result.png" />
+
+- [x] **Outcome:** the browser shows **p { border: 2px solid powderblue; margin: 50px; }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3243,69 +3617,24 @@ Add CSS inline (`style`), internally (`<style>` in `<head>`), or externally (`<l
 
 HTML links are **hyperlinks**. Click one to jump to another document. The mouse pointer becomes a **hand** over a link. A link can be **text**, an **image**, or another element. The `<a>` tag defines a hyperlink; **`href`** is the destination.
 
+This section has **8** examples:
+
+- [x] **Example 1:** Syntax [View](#html-links-example-01)
+- [x] **Example 2:** Basic link [View](#html-links-example-02)
+- [x] **Example 3:** Target [View](#html-links-example-03)
+- [x] **Example 4:** Absolute vs relative [View](#html-links-example-04)
+- [x] **Example 5:** Image as a link [View](#html-links-example-05)
+- [x] **Example 6:** Email [View](#html-links-example-06)
+- [x] **Example 7:** Button [View](#html-links-example-07)
+- [x] **Example 8:** Title [View](#html-links-example-08)
+
 ## Detailed Explanation
-
-- [x] **Syntax**
-  - `<a href="url">link text</a>`
-  - The **link text** is what the reader sees; clicking it goes to the URL.
-
-<img alt="html-links syntax" src="./code_sandbox/snaps/html-links-code.png" />
 
 - [x] **Default look**
   - Unvisited: underlined **blue**.
   - Visited: underlined **purple**.
   - Active: underlined **red**.
   - You can restyle links with CSS.
-- [x] **A basic link**
-  - Example: Visit W3Schools.com.
-  - Sandbox: `code_sandbox/html-links/index.html`.
-
-<img alt="html-links basic result" src="./code_sandbox/snaps/html-links-result.png" />
-
-- [x] **The `target` attribute**
-  - Where to open the document.
-  - `_self` — same window/tab (default).
-  - `_blank` — new window or tab.
-  - `_parent` — parent frame.
-  - `_top` — full window.
-  - Sandbox: `code_sandbox/html-links/target.html`.
-
-<img alt="html-links target result" src="./code_sandbox/snaps/html-links-01-result.png" />
-
-- [x] **Absolute vs relative URLs**
-  - **Absolute** — full address (`https://www.w3.org/`, Google).
-  - **Relative** — a page on the same site (no `https://www` part).
-  - The chapter uses `html_images.asp` and `/css/default.asp`. The sandbox uses local `images.html` and `css.html` so the relative links run offline.
-  - Sandbox: `code_sandbox/html-links/urls.html`.
-
-<img alt="html-links urls result" src="./code_sandbox/snaps/html-links-02-result.png" />
-
-- [x] **Image as a link**
-  - Put `<img>` inside `<a>`.
-  - The page uses `smiley.gif` and `href="default.asp"`. The sandbox uses `smiley.png` and `href="index.html"` (the gif URL was blocked; the image is a local 42×42 smiley).
-  - Sandbox: `code_sandbox/html-links/image.html`.
-
-<img alt="html-links image result" src="./code_sandbox/snaps/html-links-03-result.png" />
-
-- [x] **Email link**
-  - `href="mailto:someone@example.com"` opens the user’s mail program.
-  - Sandbox: `code_sandbox/html-links/email.html`.
-
-<img alt="html-links email result" src="./code_sandbox/snaps/html-links-04-result.png" />
-
-- [x] **Button as a link**
-  - A `<button>` needs **JavaScript** for the click (`onclick` + `document.location`).
-  - The page uses `default.asp`; the sandbox uses `index.html`.
-  - Sandbox: `code_sandbox/html-links/button.html`.
-
-<img alt="html-links button result" src="./code_sandbox/snaps/html-links-05-result.png" />
-
-- [x] **Link titles**
-  - The `title` attribute is extra info, usually a **tooltip** on hover.
-  - Sandbox: `code_sandbox/html-links/title.html`.
-
-<img alt="html-links title result" src="./code_sandbox/snaps/html-links-06-result.png" />
-
 - [x] **More path forms**
   - Full URL, site path (`/html/default.asp`), or same-folder file (`default.asp`).
   - File paths are covered in **HTML File Paths**. Link **colors** and **bookmarks** are the next sidebar pages.
@@ -3314,37 +3643,80 @@ HTML links are **hyperlinks**. Click one to jump to another document. The mouse 
 | ----- | ------------------- |
 | `<a>` | Defines a hyperlink |
 
-Syntax:
+<a id="html-links-example-01"></a>
 
-<img alt="html-links syntax source" src="./code_sandbox/snaps/html-links-code.png" />
+### **Example 1: Syntax**
+
+- [x] **Syntax**
+  - `<a href="url">link text</a>`
+  - The **link text** is what the reader sees; clicking it goes to the URL.
+- [x] **A basic link**
+  - Example: Visit W3Schools.com.
+
+Sandbox: `code_sandbox/html-links/index.html`
 
 ```html
 <a href="url">link text</a>
 ```
 
-Basic link (`index.html`):
+<img alt="html-links syntax source" src="./code_sandbox/snaps/html-links-code.png" />
 
 <img alt="html-links basic source" src="./code_sandbox/snaps/html-links-01-code.png" />
+
+- [x] **Outcome:** the browser shows **link text**.
+
+<a id="html-links-example-02"></a>
+
+### **Example 2: Basic link**
+
+- [x] **A basic link**
+  - Example: Visit W3Schools.com.
+
+Sandbox: `code_sandbox/html-links/index.html`
 
 ```html
 <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
 ```
 
+<img alt="html-links basic source" src="./code_sandbox/snaps/html-links-01-code.png" />
+
 <img alt="html-links basic result" src="./code_sandbox/snaps/html-links-result.png" />
 
-Target (`target.html`):
+- [x] **Outcome:** the browser shows **Visit W3Schools.com!**.
 
-<img alt="html-links target source" src="./code_sandbox/snaps/html-links-02-code.png" />
+<a id="html-links-example-03"></a>
+
+### **Example 3: Target**
+
+- [x] **The `target` attribute**
+  - Where to open the document.
+  - `_self` — same window/tab (default).
+  - `_blank` — new window or tab.
+  - `_parent` — parent frame.
+  - `_top` — full window.
+
+Sandbox: `code_sandbox/html-links/target.html`
 
 ```html
 <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
 ```
 
+<img alt="html-links target source" src="./code_sandbox/snaps/html-links-02-code.png" />
+
 <img alt="html-links target result" src="./code_sandbox/snaps/html-links-01-result.png" />
 
-Absolute vs relative (`urls.html`):
+- [x] **Outcome:** the browser shows **Visit W3Schools!**.
 
-<img alt="html-links urls source" src="./code_sandbox/snaps/html-links-03-code.png" />
+<a id="html-links-example-04"></a>
+
+### **Example 4: Absolute vs relative**
+
+- [x] **Absolute vs relative URLs**
+  - **Absolute** — full address (`https://www.w3.org/`, Google).
+  - **Relative** — a page on the same site (no `https://www` part).
+  - The chapter uses `html_images.asp` and `/css/default.asp`. The sandbox uses local `images.html` and `css.html` so the relative links run offline.
+
+Sandbox: `code_sandbox/html-links/urls.html`
 
 ```html
 <h2>Absolute URLs</h2>
@@ -3356,11 +3728,21 @@ Absolute vs relative (`urls.html`):
 <p><a href="css.html">CSS Tutorial</a></p>
 ```
 
+<img alt="html-links urls source" src="./code_sandbox/snaps/html-links-03-code.png" />
+
 <img alt="html-links urls result" src="./code_sandbox/snaps/html-links-02-result.png" />
 
-Image as a link (`image.html`):
+- [x] **Outcome:** the browser shows **Absolute URLs**, **W3C**, **Google**, **Relative URLs**, **HTML Images**.
 
-<img alt="html-links image source" src="./code_sandbox/snaps/html-links-04-code.png" />
+<a id="html-links-example-05"></a>
+
+### **Example 5: Image as a link**
+
+- [x] **Image as a link**
+  - Put `<img>` inside `<a>`.
+  - The page uses `smiley.gif` and `href="default.asp"`. The sandbox uses `smiley.png` and `href="index.html"` (the gif URL was blocked; the image is a local 42×42 smiley).
+
+Sandbox: `code_sandbox/html-links/image.html`
 
 ```html
 <a href="index.html">
@@ -3368,31 +3750,59 @@ Image as a link (`image.html`):
 </a>
 ```
 
+<img alt="html-links image source" src="./code_sandbox/snaps/html-links-04-code.png" />
+
 <img alt="html-links image result" src="./code_sandbox/snaps/html-links-03-result.png" />
 
-Email (`email.html`):
+- [x] **Outcome:** the browser shows **HTML tutorial**.
 
-<img alt="html-links email source" src="./code_sandbox/snaps/html-links-05-code.png" />
+<a id="html-links-example-06"></a>
+
+### **Example 6: Email**
+
+- [x] **Email link**
+  - `href="mailto:someone@example.com"` opens the user’s mail program.
+
+Sandbox: `code_sandbox/html-links/email.html`
 
 ```html
 <a href="mailto:someone@example.com">Send email</a>
 ```
 
+<img alt="html-links email source" src="./code_sandbox/snaps/html-links-05-code.png" />
+
 <img alt="html-links email result" src="./code_sandbox/snaps/html-links-04-result.png" />
 
-Button (`button.html`):
+- [x] **Outcome:** the browser shows **Send email**.
 
-<img alt="html-links button source" src="./code_sandbox/snaps/html-links-06-code.png" />
+<a id="html-links-example-07"></a>
+
+### **Example 7: Button**
+
+- [x] **Button as a link**
+  - A `<button>` needs **JavaScript** for the click (`onclick` + `document.location`).
+  - The page uses `default.asp`; the sandbox uses `index.html`.
+
+Sandbox: `code_sandbox/html-links/button.html`
 
 ```html
 <button onclick="document.location='index.html'">HTML Tutorial</button>
 ```
 
+<img alt="html-links button source" src="./code_sandbox/snaps/html-links-06-code.png" />
+
 <img alt="html-links button result" src="./code_sandbox/snaps/html-links-05-result.png" />
 
-Title (`title.html`):
+- [x] **Outcome:** the browser shows **HTML Tutorial**.
 
-<img alt="html-links title source" src="./code_sandbox/snaps/html-links-07-code.png" />
+<a id="html-links-example-08"></a>
+
+### **Example 8: Title**
+
+- [x] **Link titles**
+  - The `title` attribute is extra info, usually a **tooltip** on hover.
+
+Sandbox: `code_sandbox/html-links/title.html`
 
 ```html
 <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"
@@ -3400,7 +3810,11 @@ Title (`title.html`):
 >
 ```
 
+<img alt="html-links title source" src="./code_sandbox/snaps/html-links-07-code.png" />
+
 <img alt="html-links title result" src="./code_sandbox/snaps/html-links-06-result.png" />
+
+- [x] **Outcome:** the browser shows **Visit our HTML Tutorial**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3527,39 +3941,15 @@ Use `<a href="…">` for hyperlinks. `target` chooses the window (`_blank` for a
 
 Images improve how a page looks. The empty `<img>` tag **links** an image into the page (it is a holding space, not “inserted” bytes). Required attributes: **`src`** (path) and **`alt`** (alternate text). Nested sidebar pages cover **image maps**, **background images**, and **`<picture>`**.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Syntax [View](#html-images-example-01)
+- [x] **Example 2:** Trulli [View](#html-images-example-02)
+- [x] **Example 3:** Broken `src` / alt [View](#html-images-example-03)
+- [x] **Example 4:** Size [View](#html-images-example-04)
+- [x] **Example 5:** Float [View](#html-images-example-05)
+
 ## Detailed Explanation
-
-- [x] **Syntax**
-  - `<img src="url" alt="alternatetext">`
-  - No end tag. Only attributes.
-
-<img alt="html-images syntax" src="./code_sandbox/snaps/html-images-01-code.png" />
-
-- [x] **`src`**
-  - Path (URL) to the image.
-  - The **browser** fetches it when the page loads, so the file must stay where `src` points.
-  - If it cannot find the image: broken-link icon + **alt** text.
-  - Examples on the page: `pic_trulli.jpg`, `img_girl.jpg`, `img_chania.jpg`.
-  - Sandbox: `code_sandbox/html-images/index.html` (Trulli).
-
-<img alt="html-images trulli result" src="./code_sandbox/snaps/html-images-result.png" />
-
-- [x] **`alt`**
-  - Required. Shown if the image cannot be viewed (slow connection, bad `src`, or a **screen reader**).
-  - The value should **describe** the image.
-  - Wrong filename example: `wrongname.gif` with `alt="Flowers in Chania"`.
-  - Sandbox: `code_sandbox/html-images/wrong.html`.
-
-<img alt="html-images alt result" src="./code_sandbox/snaps/html-images-01-result.png" />
-
-- [x] **Width and height**
-  - Prefer `style="width:…;height:…"` (pixels).
-  - Or `width` and `height` attributes (always pixels).
-  - Always set size so the page does not **flicker** while the image loads.
-  - Prefer **style** so a stylesheet cannot override the size (`width: 100%` in a sheet would stretch the `width`/`height` attributes, not the style).
-  - Sandbox: `size.html` (style 500×600), `attributes.html` (width/height attributes), `style.html` (html5.gif).
-
-<img alt="html-images size result" src="./code_sandbox/snaps/html-images-03-result.png" />
 
 - [x] **Other folders and other servers**
   - Sub-folder: include the folder in `src` (`images/html5.gif` in the sandbox; the page shows `/images/html5.gif`).
@@ -3571,12 +3961,6 @@ Images improve how a page looks. The empty `<img>` tag **links** an image into t
 - [x] **Image as a link**
   - Put `<img>` inside `<a>` (same idea as the Links chapter).
   - Sandbox: `link.html`.
-- [x] **Image floating**
-  - CSS `float:right` / `float:left` beside text.
-  - Sandbox: `float.html`.
-
-<img alt="html-images float result" src="./code_sandbox/snaps/html-images-02-result.png" />
-
 - [x] **Common formats** (all major browsers): APNG, GIF, ICO, JPEG, PNG, SVG.
 - [x] **Caution:** large images slow the page. Use them carefully.
 
@@ -3587,35 +3971,85 @@ Images improve how a page looks. The empty `<img>` tag **links** an image into t
 | `<area>`    | Clickable area inside an image map     |
 | `<picture>` | Container for multiple image resources |
 
-Syntax:
+<a id="html-images-example-01"></a>
 
-<img alt="html-images syntax source" src="./code_sandbox/snaps/html-images-01-code.png" />
+### **Example 1: Syntax**
+
+- [x] **Syntax**
+  - No end tag. Only attributes.
+- [x] **`src`**
+  - Path (URL) to the image.
+  - The **browser** fetches it when the page loads, so the file must stay where `src` points.
+  - If it cannot find the image: broken-link icon + **alt** text.
+  - Examples on the page: `pic_trulli.jpg`, `img_girl.jpg`, `img_chania.jpg`.
+
+Sandbox: `code_sandbox/html-images/index.html`
 
 ```html
 <img src="url" alt="alternatetext" />
 ```
 
-Trulli (`index.html`):
+<img alt="html-images syntax source" src="./code_sandbox/snaps/html-images-01-code.png" />
 
 <img alt="html-images trulli source" src="./code_sandbox/snaps/html-images-code.png" />
+
+- [x] **Outcome:** the browser shows **alternatetext**.
+
+<a id="html-images-example-02"></a>
+
+### **Example 2: Trulli**
+
+- [x] **`src`**
+  - Path (URL) to the image.
+  - The **browser** fetches it when the page loads, so the file must stay where `src` points.
+  - If it cannot find the image: broken-link icon + **alt** text.
+  - Examples on the page: `pic_trulli.jpg`, `img_girl.jpg`, `img_chania.jpg`.
+
+Sandbox: `code_sandbox/html-images/index.html`
 
 ```html
 <img src="pic_trulli.jpg" alt="Italian Trulli" />
 ```
 
+<img alt="html-images trulli source" src="./code_sandbox/snaps/html-images-code.png" />
+
 <img alt="html-images trulli result" src="./code_sandbox/snaps/html-images-result.png" />
 
-Broken `src` / alt (`wrong.html`):
+- [x] **Outcome:** the browser shows **Italian Trulli**.
 
-<img alt="html-images wrong source" src="./code_sandbox/snaps/html-images-02-code.png" />
+<a id="html-images-example-03"></a>
+
+### **Example 3: Broken `src` / alt**
+
+- [x] **`alt`**
+  - Required. Shown if the image cannot be viewed (slow connection, bad `src`, or a **screen reader**).
+  - The value should **describe** the image.
+  - Wrong filename example: `wrongname.gif` with `alt="Flowers in Chania"`.
+
+Sandbox: `code_sandbox/html-images/wrong.html`
 
 ```html
 <img src="wrongname.gif" alt="Flowers in Chania" />
 ```
 
+<img alt="html-images wrong source" src="./code_sandbox/snaps/html-images-02-code.png" />
+
 <img alt="html-images alt result" src="./code_sandbox/snaps/html-images-01-result.png" />
 
-Size (`size.html`):
+- [x] **Outcome:** the browser shows **Flowers in Chania**.
+
+<a id="html-images-example-04"></a>
+
+### **Example 4: Size**
+
+- [x] **Width and height**
+  - Prefer `style="width:…;height:…"` (pixels).
+  - Or `width` and `height` attributes (always pixels).
+  - Always set size so the page does not **flicker** while the image loads.
+  - Prefer **style** so a stylesheet cannot override the size (`width: 100%` in a sheet would stretch the `width`/`height` attributes, not the style).
+  - Sandbox: `size.html` (style 500×600), `attributes.html` (width/height attributes), `style.html` (html5.gif).
+
+Sandbox: `code_sandbox/html-images/size.html`
 
 ```html
 <img
@@ -3627,9 +4061,17 @@ Size (`size.html`):
 
 <img alt="html-images size result" src="./code_sandbox/snaps/html-images-03-result.png" />
 
-Float (`float.html`):
+- [x] **Outcome:** the browser shows **Girl in a jacket**.
 
-<img alt="html-images float source" src="./code_sandbox/snaps/html-images-03-code.png" />
+<a id="html-images-example-05"></a>
+
+### **Example 5: Float**
+
+- [x] **Image floating**
+  - CSS `float:right` / `float:left` beside text.
+  - Sandbox: `float.html`.
+
+Sandbox: `code_sandbox/html-images/float.html`
 
 ```html
 <p>
@@ -3651,7 +4093,11 @@ Float (`float.html`):
 </p>
 ```
 
+<img alt="html-images float source" src="./code_sandbox/snaps/html-images-03-code.png" />
+
 <img alt="html-images float result" src="./code_sandbox/snaps/html-images-02-result.png" />
+
+- [x] **Outcome:** the browser shows **The image will float to the right of the text.**, **The image will float to the left of the text.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3756,6 +4202,10 @@ Then open `http://127.0.0.1:8766/html-images/`.
 
 **HTML Project: Personal Page** is a guided, in-browser project (not a static example page). You build a **personal bio** with formatted text, a list, an image, and links, one step at a time in W3Schools’ editor. Difficulty: Easy. Reward: **+70 XP**.
 
+This section has **1** example:
+
+- [x] **Example 1:** Personal bio markup [View](#html-project-example-01)
+
 ## Detailed Explanation
 
 - [x] **What you build**
@@ -3775,7 +4225,12 @@ Then open `http://127.0.0.1:8766/html-images/`.
   - File: `index.html`.
   - There is no local sandbox copy of the interactive grader.
 
-No tested sandbox files. The runnable example is the site’s editor. Skills to use:
+<a id="html-project-example-01"></a>
+
+### **Example 1: Personal bio markup**
+
+- [x] There is **no local sandbox** for this chapter. The runnable example is W3Schools’ in-browser editor.
+- [x] The markup below is the skill set the project asks you to use: a heading, intro paragraph, list, image, and link.
 
 ```html
 <h1>Your name</h1>
@@ -3788,6 +4243,8 @@ No tested sandbox files. The runnable example is the site’s editor. Skills to 
 ```
 
 <img alt="html-project landing" src="./code_sandbox/snaps/html-project-result.png" />
+
+- [x] **Outcome:** the browser shows **Your name**, **Intro paragraph.**, **List item**, **A link**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3874,20 +4331,14 @@ This sidebar item is a **5-step** interactive project: build a personal bio usin
 
 A **favicon** is a small image next to the page title in the **browser tab**. Add it with `<link rel="icon">` in `<head>` after `<title>`. Keep the image **simple** and **high contrast**. A common filename is `favicon.ico`.
 
+This section has **1** example:
+
+- [x] **Example 1:** How to add it [View](#html-favicon-example-01)
+
 ## Detailed Explanation
 
 - [x] **Where it shows**
   - Left of the page title in the tab.
-- [x] **How to add it**
-  - Save the image in the site root, or in an `images` folder.
-  - In `index.html`, after `<title>`: `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">`.
-  - Reload; the tab should show the icon.
-  - You can make a favicon on sites like favicon.cc.
-  - The sandbox uses a local `favicon.ico` and `href="favicon.ico"`.
-  - Sandbox: `code_sandbox/html-favicon/index.html`. Tab title: **My Page Title**.
-
-<img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
-
 - [x] **Format support**
   - Edge, Chrome, Firefox, Opera, and Safari all support **ICO, PNG, GIF, JPEG, and SVG**.
 - [x] **Chapter summary**
@@ -3897,9 +4348,18 @@ A **favicon** is a small image next to the page title in the **browser tab**. Ad
 | -------- | -------------------------------------------------------- |
 | `<link>` | Relationship between a document and an external resource |
 
-Sandbox: `code_sandbox/html-favicon/index.html`
+<a id="html-favicon-example-01"></a>
 
-<img alt="html-favicon source" src="./code_sandbox/snaps/html-favicon-code.png" />
+### **Example 1: How to add it**
+
+- [x] **How to add it**
+  - Save the image in the site root, or in an `images` folder.
+  - In `index.html`, after `<title>`: `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">`.
+  - Reload; the tab should show the icon.
+  - You can make a favicon on sites like favicon.cc.
+  - The sandbox uses a local `favicon.ico` and `href="favicon.ico"`.
+
+Sandbox: `code_sandbox/html-favicon/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -3915,9 +4375,11 @@ Sandbox: `code_sandbox/html-favicon/index.html`
 </html>
 ```
 
+<img alt="html-favicon source" src="./code_sandbox/snaps/html-favicon-code.png" />
+
 <img alt="html-favicon result" src="./code_sandbox/snaps/html-favicon-result.png" />
 
-The chapter example used `href="/images/favicon.ico"`. The sandbox uses a local `favicon.ico` so it loads offline.
+- [x] **Outcome:** the browser shows **My Page Title This is a Heading**, **This is a paragraph.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4006,15 +4468,11 @@ Add a favicon with `<link rel="icon">` in `<head>` after `<title>`. Store `favic
 
 Every page should have a **`<title>`** that describes what the page means. The title appears in the **browser tab**, in **favorites**, and in **search results**. It matters for **SEO**.
 
+This section has **1** example:
+
+- [x] **Example 1:** The title element [View](#html-page-title-example-01)
+
 ## Detailed Explanation
-
-- [x] **The title element**
-  - Goes in `<head>`.
-  - Example title: **HTML Tutorial**.
-  - Body: `The content of the document......`
-  - Sandbox: `code_sandbox/html-page-title/index.html`. Tab title: **HTML Tutorial**.
-
-<img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
 
 - [x] **What is a good title?**
   - Describe the **content and meaning** of the page.
@@ -4026,9 +4484,16 @@ Every page should have a **`<title>`** that describes what the page means. The t
 | --------- | --------------------------------- |
 | `<title>` | Defines the title of the document |
 
-Sandbox: `code_sandbox/html-page-title/index.html`
+<a id="html-page-title-example-01"></a>
 
-<img alt="html-page-title source" src="./code_sandbox/snaps/html-page-title-code.png" />
+### **Example 1: The title element**
+
+- [x] **The title element**
+  - Goes in `<head>`.
+  - Example title: **HTML Tutorial**.
+  - Body: `The content of the document......`
+
+Sandbox: `code_sandbox/html-page-title/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -4042,7 +4507,11 @@ Sandbox: `code_sandbox/html-page-title/index.html`
 </html>
 ```
 
+<img alt="html-page-title source" src="./code_sandbox/snaps/html-page-title-code.png" />
+
 <img alt="html-page-title result" src="./code_sandbox/snaps/html-page-title-result.png" />
+
+- [x] **Outcome:** the browser shows **HTML Tutorial The content of the document......**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4132,55 +4601,24 @@ Put a meaningful `<title>` in `<head>`. It labels the tab, favorites, and search
 
 HTML tables arrange data in **rows** and **columns**. A table is cells inside rows. Nested sidebar pages cover borders, sizes, headers in more depth, padding, colspan/rowspan, styling, and colgroup. This chapter is the **HTML Tables** overview.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Company table [View](#html-tables-example-01)
+- [x] **Example 2:** Cells [View](#html-tables-example-02)
+- [x] **Example 3:** Rows [View](#html-tables-example-03)
+- [x] **Example 4:** Headers [View](#html-tables-example-04)
+
 ## Detailed Explanation
+
+<a id="html-tables-example-01"></a>
+
+### **Example 1: Company table**
 
 - [x] **Define a table**
   - `<table>` wraps the grid.
   - Example: Company / Contact / Country with Alfreds Futterkiste (Germany) and Centro comercial Moctezuma (Mexico).
-  - Sandbox: `code_sandbox/html-tables/index.html` (with a 1px black border so the grid is visible, as in the Try it examples).
 
-<img alt="html-tables company result" src="./code_sandbox/snaps/html-tables-result.png" />
-
-- [x] **Table cells (`<td>`)**
-  - **td** = table data. Content is between `<td>` and `</td>`.
-  - A cell can hold text, images, lists, links, even other tables.
-  - Example: Emil, Tobias, Linus in one row.
-  - Sandbox: `cells.html`.
-
-<img alt="html-tables cells result" src="./code_sandbox/snaps/html-tables-01-result.png" />
-
-- [x] **Table rows (`<tr>`)**
-  - **tr** = table row. Starts with `<tr>`, ends with `</tr>`.
-  - You can have as many rows as you like; keep the **same number of cells** in each row (uneven rows come in a later chapter).
-  - Example: names row plus 16 / 14 / 10.
-  - Sandbox: `rows.html`.
-
-<img alt="html-tables rows result" src="./code_sandbox/snaps/html-tables-02-result.png" />
-
-- [x] **Table headers (`<th>`)**
-  - Use `<th>` instead of `<td>` for header cells.
-  - **th** = table header. Default: **bold** and **centered** (changeable with CSS).
-  - Example: Person 1 / 2 / 3, then names, then ages.
-  - Sandbox: `headers.html`.
-
-<img alt="html-tables headers result" src="./code_sandbox/snaps/html-tables-03-result.png" />
-
-| Tag          | Description                           |
-| ------------ | ------------------------------------- |
-| `<table>`    | Defines a table                       |
-| `<th>`       | Defines a header cell                 |
-| `<tr>`       | Defines a row                         |
-| `<td>`       | Defines a cell                        |
-| `<caption>`  | Defines a table caption               |
-| `<colgroup>` | Group of columns for formatting       |
-| `<col>`      | Column properties inside `<colgroup>` |
-| `<thead>`    | Groups header content                 |
-| `<tbody>`    | Groups body content                   |
-| `<tfoot>`    | Groups footer content                 |
-
-Company table (`index.html`):
-
-<img alt="html-tables company source" src="./code_sandbox/snaps/html-tables-code.png" />
+Sandbox: `code_sandbox/html-tables/index.html`
 
 ```html
 <table>
@@ -4202,11 +4640,23 @@ Company table (`index.html`):
 </table>
 ```
 
+<img alt="html-tables company source" src="./code_sandbox/snaps/html-tables-code.png" />
+
 <img alt="html-tables company result" src="./code_sandbox/snaps/html-tables-result.png" />
 
-Cells (`cells.html`):
+- [x] **Outcome:** the browser shows **Company Contact Country Alfreds Futterkiste Maria Anders Germany Centro comercial Moctezuma Francisco Chang Mexico**.
 
-<img alt="html-tables cells source" src="./code_sandbox/snaps/html-tables-01-code.png" />
+<a id="html-tables-example-02"></a>
+
+### **Example 2: Cells**
+
+- [x] **Table cells (`<td>`)**
+  - **td** = table data. Content is between `<td>` and `</td>`.
+  - A cell can hold text, images, lists, links, even other tables.
+  - Example: Emil, Tobias, Linus in one row.
+  - Sandbox: `cells.html`.
+
+Sandbox: `code_sandbox/html-tables/cells.html`
 
 ```html
 <table>
@@ -4218,11 +4668,23 @@ Cells (`cells.html`):
 </table>
 ```
 
+<img alt="html-tables cells source" src="./code_sandbox/snaps/html-tables-01-code.png" />
+
 <img alt="html-tables cells result" src="./code_sandbox/snaps/html-tables-01-result.png" />
 
-Rows (`rows.html`):
+- [x] **Outcome:** the browser shows **Emil Tobias Linus**.
 
-<img alt="html-tables rows source" src="./code_sandbox/snaps/html-tables-02-code.png" />
+<a id="html-tables-example-03"></a>
+
+### **Example 3: Rows**
+
+- [x] **Table rows (`<tr>`)**
+  - **tr** = table row. Starts with `<tr>`, ends with `</tr>`.
+  - You can have as many rows as you like; keep the **same number of cells** in each row (uneven rows come in a later chapter).
+  - Example: names row plus 16 / 14 / 10.
+  - Sandbox: `rows.html`.
+
+Sandbox: `code_sandbox/html-tables/rows.html`
 
 ```html
 <table>
@@ -4239,11 +4701,35 @@ Rows (`rows.html`):
 </table>
 ```
 
+<img alt="html-tables rows source" src="./code_sandbox/snaps/html-tables-02-code.png" />
+
 <img alt="html-tables rows result" src="./code_sandbox/snaps/html-tables-02-result.png" />
 
-Headers (`headers.html`):
+- [x] **Outcome:** the browser shows **Emil Tobias Linus 16 14 10**.
 
-<img alt="html-tables headers source" src="./code_sandbox/snaps/html-tables-03-code.png" />
+<a id="html-tables-example-04"></a>
+
+### **Example 4: Headers**
+
+- [x] **Table headers (`<th>`)**
+  - Use `<th>` instead of `<td>` for header cells.
+  - **th** = table header. Default: **bold** and **centered** (changeable with CSS).
+  - Example: Person 1 / 2 / 3, then names, then ages.
+  - Sandbox: `headers.html`.
+    | Tag | Description |
+    | ------------ | ------------------------------------- |
+    | `<table>` | Defines a table |
+    | `<th>` | Defines a header cell |
+    | `<tr>` | Defines a row |
+    | `<td>` | Defines a cell |
+    | `<caption>` | Defines a table caption |
+    | `<colgroup>` | Group of columns for formatting |
+    | `<col>` | Column properties inside `<colgroup>` |
+    | `<thead>` | Groups header content |
+    | `<tbody>` | Groups body content |
+    | `<tfoot>` | Groups footer content |
+
+Sandbox: `code_sandbox/html-tables/headers.html`
 
 ```html
 <table>
@@ -4265,7 +4751,11 @@ Headers (`headers.html`):
 </table>
 ```
 
+<img alt="html-tables headers source" src="./code_sandbox/snaps/html-tables-03-code.png" />
+
 <img alt="html-tables headers result" src="./code_sandbox/snaps/html-tables-03-result.png" />
+
+- [x] **Outcome:** the browser shows **Person 1 Person 2 Person 3 Emil Tobias Linus 16 14 10**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4372,44 +4862,24 @@ Use `<table>` with `<tr>` rows and `<td>` cells. `<th>` is a header cell (bold, 
 
 HTML lists group related items. This chapter covers **unordered** lists (`<ul>`), **ordered** lists (`<ol>`), and **description** lists (`<dl>` / `<dt>` / `<dd>`). Nested sidebar pages cover unordered, ordered, and other lists in more detail.
 
+This section has **3** examples:
+
+- [x] **Example 1:** Unordered [View](#html-lists-example-01)
+- [x] **Example 2:** Ordered [View](#html-lists-example-02)
+- [x] **Example 3:** Description [View](#html-lists-example-03)
+
 ## Detailed Explanation
+
+<a id="html-lists-example-01"></a>
+
+### **Example 1: Unordered**
 
 - [x] **Unordered list**
   - Starts with `<ul>`. Each item is `<li>`.
   - Default marker: **bullets** (small black circles).
   - Example: Coffee, Tea, Milk.
-  - Sandbox: `code_sandbox/html-lists/index.html`.
 
-<img alt="html-lists unordered result" src="./code_sandbox/snaps/html-lists-result.png" />
-
-- [x] **Ordered list**
-  - Starts with `<ol>`. Each item is `<li>`.
-  - Default marker: **numbers**.
-  - Same three drinks, numbered.
-  - Sandbox: `ordered.html`.
-
-<img alt="html-lists ordered result" src="./code_sandbox/snaps/html-lists-01-result.png" />
-
-- [x] **Description list**
-  - A list of **terms** with a **description** of each.
-  - `<dl>` — the list. `<dt>` — the term. `<dd>` — the description.
-  - Example: Coffee — black hot drink; Milk — white cold drink.
-  - Sandbox: `description.html`.
-
-<img alt="html-lists description result" src="./code_sandbox/snaps/html-lists-02-result.png" />
-
-| Tag    | Description                              |
-| ------ | ---------------------------------------- |
-| `<ul>` | Defines an unordered list                |
-| `<ol>` | Defines an ordered list                  |
-| `<li>` | Defines a list item                      |
-| `<dl>` | Defines a description list               |
-| `<dt>` | Defines a term in a description list     |
-| `<dd>` | Describes the term in a description list |
-
-Unordered (`index.html`):
-
-<img alt="html-lists unordered source" src="./code_sandbox/snaps/html-lists-code.png" />
+Sandbox: `code_sandbox/html-lists/index.html`
 
 ```html
 <ul>
@@ -4419,11 +4889,23 @@ Unordered (`index.html`):
 </ul>
 ```
 
+<img alt="html-lists unordered source" src="./code_sandbox/snaps/html-lists-code.png" />
+
 <img alt="html-lists unordered result" src="./code_sandbox/snaps/html-lists-result.png" />
 
-Ordered (`ordered.html`):
+- [x] **Outcome:** the browser shows **Coffee**, **Tea**, **Milk**.
 
-<img alt="html-lists ordered source" src="./code_sandbox/snaps/html-lists-01-code.png" />
+<a id="html-lists-example-02"></a>
+
+### **Example 2: Ordered**
+
+- [x] **Ordered list**
+  - Starts with `<ol>`. Each item is `<li>`.
+  - Default marker: **numbers**.
+  - Same three drinks, numbered.
+  - Sandbox: `ordered.html`.
+
+Sandbox: `code_sandbox/html-lists/ordered.html`
 
 ```html
 <ol>
@@ -4433,11 +4915,31 @@ Ordered (`ordered.html`):
 </ol>
 ```
 
+<img alt="html-lists ordered source" src="./code_sandbox/snaps/html-lists-01-code.png" />
+
 <img alt="html-lists ordered result" src="./code_sandbox/snaps/html-lists-01-result.png" />
 
-Description (`description.html`):
+- [x] **Outcome:** the browser shows **Coffee**, **Tea**, **Milk**.
 
-<img alt="html-lists description source" src="./code_sandbox/snaps/html-lists-02-code.png" />
+<a id="html-lists-example-03"></a>
+
+### **Example 3: Description**
+
+- [x] **Description list**
+  - A list of **terms** with a **description** of each.
+  - `<dl>` — the list. `<dt>` — the term. `<dd>` — the description.
+  - Example: Coffee — black hot drink; Milk — white cold drink.
+  - Sandbox: `description.html`.
+    | Tag | Description |
+    | ------ | ---------------------------------------- |
+    | `<ul>` | Defines an unordered list |
+    | `<ol>` | Defines an ordered list |
+    | `<li>` | Defines a list item |
+    | `<dl>` | Defines a description list |
+    | `<dt>` | Defines a term in a description list |
+    | `<dd>` | Describes the term in a description list |
+
+Sandbox: `code_sandbox/html-lists/description.html`
 
 ```html
 <dl>
@@ -4448,7 +4950,11 @@ Description (`description.html`):
 </dl>
 ```
 
+<img alt="html-lists description source" src="./code_sandbox/snaps/html-lists-02-code.png" />
+
 <img alt="html-lists description result" src="./code_sandbox/snaps/html-lists-02-result.png" />
+
+- [x] **Outcome:** the browser shows **Coffee - black hot drink Milk - white cold drink**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4555,50 +5061,23 @@ Use `<ul>` for bullets, `<ol>` for numbers, and `<li>` for items in both. Use `<
 
 Every HTML element has a default **display** value. The two most common are **block** and **inline**. This chapter compares those display types, lists the tags in each group, and shows **`<div>`** (block container) and **`<span>`** (inline container) with CSS.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Block `<p>` and `<div>` [View](#html-block-inline-example-01)
+- [x] **Example 2:** Inline `<span>` [View](#html-block-inline-example-02)
+- [x] **Example 3:** Styled `<div>` [View](#html-block-inline-example-03)
+- [x] **Example 4:** Styled `<span>` [View](#html-block-inline-example-04)
+
 ## Detailed Explanation
 
 - [x] **Default display**
   - The browser assigns a default `display` depending on the element type.
   - The two most common values: **block** and **inline**.
-- [x] **Block-level elements**
-  - Always **start on a new line**.
-  - Browsers add some **margin** before and after.
-  - Take up the **full width** available (stretch left to right).
-  - Two common examples: `<p>` (paragraph) and `<div>` (division / section).
-  - Sandbox: `code_sandbox/html-block-inline/index.html`.
-
-<img alt="html-block-inline p and div result" src="./code_sandbox/snaps/html-block-inline-result.png" />
-
 - [x] **Block-level tags listed on the page**
   - `<address>` `<article>` `<aside>` `<blockquote>` `<canvas>` `<dd>` `<div>` `<dl>` `<dt>` `<fieldset>` `<figcaption>` `<figure>` `<footer>` `<form>` `<h1>`–`<h6>` `<header>` `<hr>` `<li>` `<main>` `<nav>` `<noscript>` `<ol>` `<p>` `<pre>` `<section>` `<table>` `<tfoot>` `<ul>` `<video>`
-- [x] **Inline elements**
-  - Do **not** start on a new line.
-  - Take up only as much **width as necessary**.
-  - Example: a `<span>` by itself sits on one line.
-  - **Note:** an inline element **cannot contain** a block-level element.
-  - Sandbox: `span.html`.
-
-<img alt="html-block-inline span result" src="./code_sandbox/snaps/html-block-inline-01-result.png" />
-
 - [x] **Inline tags listed on the page**
   - `<a>` `<abbr>` `<acronym>` `<b>` `<bdo>` `<big>` `<br>` `<button>` `<cite>` `<code>` `<dfn>` `<em>` `<i>` `<img>` `<input>` `<kbd>` `<label>` `<map>` `<object>` `<output>` `<q>` `<samp>` `<script>` `<select>` `<small>` `<span>` `<strong>` `<sub>` `<sup>` `<textarea>` `<time>` `<tt>` `<var>`
   - HTML5 treats **`<acronym>`**, **`<big>`**, and **`<tt>`** as obsolete (use `<abbr>`, CSS `font-size`, and `<code>` / `<kbd>` / `<samp>` instead). The other tags on the list remain valid.
-- [x] **The `<div>` element**
-  - A **block-level** container for other HTML elements.
-  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
-  - With CSS it can style a **block of content** (example: black background, white text, padding, heading **London** plus a paragraph).
-  - Sandbox: `div.html`. More on `<div>` in the next chapter.
-
-<img alt="html-block-inline styled div result" src="./code_sandbox/snaps/html-block-inline-02-result.png" />
-
-- [x] **The `<span>` element**
-  - An **inline** container for a part of text or a part of a document.
-  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
-  - With CSS it can style **parts of the text** (example: **blue** and **dark green** eye colors).
-  - Sandbox: `span-style.html`.
-
-<img alt="html-block-inline styled span result" src="./code_sandbox/snaps/html-block-inline-03-result.png" />
-
 - [x] **Chapter summary from the page**
   - Block: new line + full width.
   - Inline: same line + width as needed.
@@ -4609,30 +5088,63 @@ Every HTML element has a default **display** value. The two most common are **bl
 | `<div>`  | Defines a section in a document (block-level) |
 | `<span>` | Defines a section in a document (inline)      |
 
-Block `<p>` and `<div>` (`index.html`):
+<a id="html-block-inline-example-01"></a>
 
-<img alt="html-block-inline p and div source" src="./code_sandbox/snaps/html-block-inline-code.png" />
+### **Example 1: Block `<p>` and `<div>`**
+
+- [x] **Block-level elements**
+  - Always **start on a new line**.
+  - Browsers add some **margin** before and after.
+  - Take up the **full width** available (stretch left to right).
+  - Two common examples: `<p>` (paragraph) and `<div>` (division / section).
+
+Sandbox: `code_sandbox/html-block-inline/index.html`
 
 ```html
 <p>Hello World</p>
 <div>Hello World</div>
 ```
 
+<img alt="html-block-inline p and div source" src="./code_sandbox/snaps/html-block-inline-code.png" />
+
 <img alt="html-block-inline p and div result" src="./code_sandbox/snaps/html-block-inline-result.png" />
 
-Inline `<span>` (`span.html`):
+- [x] **Outcome:** the browser shows **Hello World**, **Hello World**.
 
-<img alt="html-block-inline span source" src="./code_sandbox/snaps/html-block-inline-01-code.png" />
+<a id="html-block-inline-example-02"></a>
+
+### **Example 2: Inline `<span>`**
+
+- [x] **Inline elements**
+  - Do **not** start on a new line.
+  - Take up only as much **width as necessary**.
+  - Example: a `<span>` by itself sits on one line.
+  - **Note:** an inline element **cannot contain** a block-level element.
+  - Sandbox: `span.html`.
+
+Sandbox: `code_sandbox/html-block-inline/span.html`
 
 ```html
 <span>Hello World</span>
 ```
 
+<img alt="html-block-inline span source" src="./code_sandbox/snaps/html-block-inline-01-code.png" />
+
 <img alt="html-block-inline span result" src="./code_sandbox/snaps/html-block-inline-01-result.png" />
 
-Styled `<div>` (`div.html`):
+- [x] **Outcome:** the browser shows **Hello World**.
 
-<img alt="html-block-inline styled div source" src="./code_sandbox/snaps/html-block-inline-02-code.png" />
+<a id="html-block-inline-example-03"></a>
+
+### **Example 3: Styled `<div>`**
+
+- [x] **The `<div>` element**
+  - A **block-level** container for other HTML elements.
+  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
+  - With CSS it can style a **block of content** (example: black background, white text, padding, heading **London** plus a paragraph).
+  - Sandbox: `div.html`. More on `<div>` in the next chapter.
+
+Sandbox: `code_sandbox/html-block-inline/div.html`
 
 ```html
 <div style="background-color:black;color:white;padding:20px;">
@@ -4644,11 +5156,23 @@ Styled `<div>` (`div.html`):
 </div>
 ```
 
+<img alt="html-block-inline styled div source" src="./code_sandbox/snaps/html-block-inline-02-code.png" />
+
 <img alt="html-block-inline styled div result" src="./code_sandbox/snaps/html-block-inline-02-result.png" />
 
-Styled `<span>` (`span-style.html`):
+- [x] **Outcome:** the browser shows **London**, **London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.**.
 
-<img alt="html-block-inline styled span source" src="./code_sandbox/snaps/html-block-inline-03-code.png" />
+<a id="html-block-inline-example-04"></a>
+
+### **Example 4: Styled `<span>`**
+
+- [x] **The `<span>` element**
+  - An **inline** container for a part of text or a part of a document.
+  - No required attributes; **`style`**, **`class`**, and **`id`** are common.
+  - With CSS it can style **parts of the text** (example: **blue** and **dark green** eye colors).
+  - Sandbox: `span-style.html`.
+
+Sandbox: `code_sandbox/html-block-inline/span-style.html`
 
 ```html
 <p>
@@ -4658,7 +5182,11 @@ Styled `<span>` (`span-style.html`):
 </p>
 ```
 
+<img alt="html-block-inline styled span source" src="./code_sandbox/snaps/html-block-inline-03-code.png" />
+
 <img alt="html-block-inline styled span result" src="./code_sandbox/snaps/html-block-inline-03-result.png" />
+
+- [x] **Outcome:** the browser shows **My mother has blue eyes and my father has dark green eyes.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4788,81 +5316,34 @@ Block elements start on a new line and fill the available width (`<p>`, `<div>`,
 
 The **`<div>`** element is a **block-level container** for other HTML elements. This chapter shows a full-width `<div>`, grouping content, **centering** with `margin: auto`, **multiple** containers, and four ways to put divs **side by side**: **float**, **inline-block**, **flex**, and **grid**.
 
+This section has **8** examples:
+
+- [x] **Example 1:** Full-width break [View](#html-div-example-01)
+- [x] **Example 2:** Container [View](#html-div-example-02)
+- [x] **Example 3:** Center [View](#html-div-example-03)
+- [x] **Example 4:** Multiple [View](#html-div-example-04)
+- [x] **Example 5:** Float [View](#html-div-example-05)
+- [x] **Example 6:** Inline-block [View](#html-div-example-06)
+- [x] **Example 7:** Flex [View](#html-div-example-07)
+- [x] **Example 8:** Grid [View](#html-div-example-08)
+
 ## Detailed Explanation
+
+- [x] **Side by side — overview**
+  - Pages often need two or more divs **in a row**.
+  - Common CSS methods: **float**, **inline-block**, **flex**, **grid**.
+
+<a id="html-div-example-01"></a>
+
+### **Example 1: Full-width break**
 
 - [x] **The `<div>` element**
   - Used as a **container** for other HTML elements.
   - Default: **block** — takes **all available width**, with **line breaks** before and after.
   - Example: `Lorem Ipsum <div>I am a div</div> dolor sit amet.` renders as three lines because the div breaks the sentence.
   - No required attributes; **`style`**, **`class`**, and **`id`** are common.
-  - Sandbox: `code_sandbox/html-div/index.html`.
 
-<img alt="html-div full-width result" src="./code_sandbox/snaps/html-div-result.png" />
-
-- [x] **`<div>` as a container**
-  - Often used to **group sections** of a page.
-  - Example: heading **London** plus two paragraphs inside one `<div>`.
-  - Sandbox: `container.html`.
-
-<img alt="html-div container result" src="./code_sandbox/snaps/html-div-01-result.png" />
-
-- [x] **Center-align a `<div>`**
-  - If the div is **not 100% wide**, set CSS **`margin: auto`** to center it.
-  - Example: `div { width: 300px; margin: auto; }`.
-  - Sandbox: `center.html`.
-
-<img alt="html-div centered result" src="./code_sandbox/snaps/html-div-02-result.png" />
-
-- [x] **Multiple `<div>` elements**
-  - You can have **many** `<div>` containers on the same page.
-  - Example: London, Oslo, and Rome stacked as three separate divs.
-  - Sandbox: `multiple.html`.
-
-<img alt="html-div multiple result" src="./code_sandbox/snaps/html-div-03-result.png" />
-
-- [x] **Side by side — overview**
-  - Pages often need two or more divs **in a row**.
-  - Common CSS methods: **float**, **inline-block**, **flex**, **grid**.
-- [x] **Float**
-  - `float` was not originally for aligning divs, but has been used that way for years.
-  - Positions content **horizontally** instead of only vertically.
-  - Wrap columns in `.mycontainer` with `width: 100%; overflow: auto;` and `float: left; width: 33%;` on the inner divs.
-  - Sandbox: `float.html`.
-
-<img alt="html-div float result" src="./code_sandbox/snaps/html-div-04-result.png" />
-
-- [x] **Inline-block**
-  - Change `display` from **block** to **`inline-block`**.
-  - The div **no longer adds a line break** before and after, so siblings sit **side by side**.
-  - Example: `div { width: 30%; display: inline-block; }`.
-  - Sandbox: `inline-block.html`.
-
-<img alt="html-div inline-block result" src="./code_sandbox/snaps/html-div-05-result.png" />
-
-- [x] **Flex**
-  - **Flexbox** is for flexible responsive layout **without float or positioning**.
-  - Surround the column divs with a container and set **`display: flex`**.
-  - Example: `.mycontainer { display: flex; }` and `.mycontainer > div { width: 33%; }`.
-  - Sandbox: `flex.html`.
-
-<img alt="html-div flex result" src="./code_sandbox/snaps/html-div-06-result.png" />
-
-- [x] **Grid**
-  - **CSS Grid** is rows and columns without floats/positioning.
-  - Similar to flex, but you can define **more than one row** and position each row.
-  - Surround columns with a grid container and set **column widths**.
-  - Example: `.grid-container { display: grid; grid-template-columns: 33% 33% 33%; }`.
-  - Sandbox: `grid.html`.
-
-<img alt="html-div grid result" src="./code_sandbox/snaps/html-div-07-result.png" />
-
-| Tag     | Description                                   |
-| ------- | --------------------------------------------- |
-| `<div>` | Defines a section in a document (block-level) |
-
-Full-width break (`index.html`):
-
-<img alt="html-div full-width source" src="./code_sandbox/snaps/html-div-code.png" />
+Sandbox: `code_sandbox/html-div/index.html`
 
 ```html
 Lorem Ipsum
@@ -4870,11 +5351,22 @@ Lorem Ipsum
 dolor sit amet.
 ```
 
+<img alt="html-div full-width source" src="./code_sandbox/snaps/html-div-code.png" />
+
 <img alt="html-div full-width result" src="./code_sandbox/snaps/html-div-result.png" />
 
-Container (`container.html`):
+- [x] **Outcome:** Example: `Lorem Ipsum <div>I am a div</div> dolor sit amet.` renders as three lines because the div breaks the sentence.
 
-<img alt="html-div container source" src="./code_sandbox/snaps/html-div-01-code.png" />
+<a id="html-div-example-02"></a>
+
+### **Example 2: Container**
+
+- [x] **`<div>` as a container**
+  - Often used to **group sections** of a page.
+  - Example: heading **London** plus two paragraphs inside one `<div>`.
+  - Sandbox: `container.html`.
+
+Sandbox: `code_sandbox/html-div/container.html`
 
 ```html
 <div>
@@ -4884,11 +5376,22 @@ Container (`container.html`):
 </div>
 ```
 
+<img alt="html-div container source" src="./code_sandbox/snaps/html-div-01-code.png" />
+
 <img alt="html-div container result" src="./code_sandbox/snaps/html-div-01-result.png" />
 
-Center (`center.html`):
+- [x] **Outcome:** the browser shows **London**, **London is the capital city of England.**, **London has over 9 million inhabitants.**.
 
-<img alt="html-div center source" src="./code_sandbox/snaps/html-div-02-code.png" />
+<a id="html-div-example-03"></a>
+
+### **Example 3: Center**
+
+- [x] **Center-align a `<div>`**
+  - If the div is **not 100% wide**, set CSS **`margin: auto`** to center it.
+  - Example: `div { width: 300px; margin: auto; }`.
+  - Sandbox: `center.html`.
+
+Sandbox: `code_sandbox/html-div/center.html`
 
 ```css
 div {
@@ -4897,11 +5400,22 @@ div {
 }
 ```
 
+<img alt="html-div center source" src="./code_sandbox/snaps/html-div-02-code.png" />
+
 <img alt="html-div centered result" src="./code_sandbox/snaps/html-div-02-result.png" />
 
-Multiple (`multiple.html`):
+- [x] **Outcome:** the browser shows **div { width: 300px; margin: auto; }**.
 
-<img alt="html-div multiple source" src="./code_sandbox/snaps/html-div-03-code.png" />
+<a id="html-div-example-04"></a>
+
+### **Example 4: Multiple**
+
+- [x] **Multiple `<div>` elements**
+  - You can have **many** `<div>` containers on the same page.
+  - Example: London, Oslo, and Rome stacked as three separate divs.
+  - Sandbox: `multiple.html`.
+
+Sandbox: `code_sandbox/html-div/multiple.html`
 
 ```html
 <div><!-- London --></div>
@@ -4909,11 +5423,23 @@ Multiple (`multiple.html`):
 <div><!-- Rome --></div>
 ```
 
+<img alt="html-div multiple source" src="./code_sandbox/snaps/html-div-03-code.png" />
+
 <img alt="html-div multiple result" src="./code_sandbox/snaps/html-div-03-result.png" />
 
-Float (`float.html`):
+- [x] **Outcome:** the page demonstrates **Multiple** as shown in the result snap.
 
-<img alt="html-div float source" src="./code_sandbox/snaps/html-div-04-code.png" />
+<a id="html-div-example-05"></a>
+
+### **Example 5: Float**
+
+- [x] **Float**
+  - `float` was not originally for aligning divs, but has been used that way for years.
+  - Positions content **horizontally** instead of only vertically.
+  - Wrap columns in `.mycontainer` with `width: 100%; overflow: auto;` and `float: left; width: 33%;` on the inner divs.
+  - Sandbox: `float.html`.
+
+Sandbox: `code_sandbox/html-div/float.html`
 
 ```css
 .mycontainer {
@@ -4926,11 +5452,23 @@ Float (`float.html`):
 }
 ```
 
+<img alt="html-div float source" src="./code_sandbox/snaps/html-div-04-code.png" />
+
 <img alt="html-div float result" src="./code_sandbox/snaps/html-div-04-result.png" />
 
-Inline-block (`inline-block.html`):
+- [x] **Outcome:** the browser shows **.mycontainer { width: 100%; overflow: auto; } .mycontainer div { width: 33%; float: left; }**.
 
-<img alt="html-div inline-block source" src="./code_sandbox/snaps/html-div-05-code.png" />
+<a id="html-div-example-06"></a>
+
+### **Example 6: Inline-block**
+
+- [x] **Inline-block**
+  - Change `display` from **block** to **`inline-block`**.
+  - The div **no longer adds a line break** before and after, so siblings sit **side by side**.
+  - Example: `div { width: 30%; display: inline-block; }`.
+  - Sandbox: `inline-block.html`.
+
+Sandbox: `code_sandbox/html-div/inline-block.html`
 
 ```css
 div {
@@ -4939,11 +5477,23 @@ div {
 }
 ```
 
+<img alt="html-div inline-block source" src="./code_sandbox/snaps/html-div-05-code.png" />
+
 <img alt="html-div inline-block result" src="./code_sandbox/snaps/html-div-05-result.png" />
 
-Flex (`flex.html`):
+- [x] **Outcome:** the browser shows **div { width: 30%; display: inline-block; }**.
 
-<img alt="html-div flex source" src="./code_sandbox/snaps/html-div-06-code.png" />
+<a id="html-div-example-07"></a>
+
+### **Example 7: Flex**
+
+- [x] **Flex**
+  - **Flexbox** is for flexible responsive layout **without float or positioning**.
+  - Surround the column divs with a container and set **`display: flex`**.
+  - Example: `.mycontainer { display: flex; }` and `.mycontainer > div { width: 33%; }`.
+  - Sandbox: `flex.html`.
+
+Sandbox: `code_sandbox/html-div/flex.html`
 
 ```css
 .mycontainer {
@@ -4954,11 +5504,27 @@ Flex (`flex.html`):
 }
 ```
 
+<img alt="html-div flex source" src="./code_sandbox/snaps/html-div-06-code.png" />
+
 <img alt="html-div flex result" src="./code_sandbox/snaps/html-div-06-result.png" />
 
-Grid (`grid.html`):
+- [x] **Outcome:** the browser shows **.mycontainer { display: flex; } .mycontainer > div { width: 33%; }**.
 
-<img alt="html-div grid source" src="./code_sandbox/snaps/html-div-07-code.png" />
+<a id="html-div-example-08"></a>
+
+### **Example 8: Grid**
+
+- [x] **Grid**
+  - **CSS Grid** is rows and columns without floats/positioning.
+  - Similar to flex, but you can define **more than one row** and position each row.
+  - Surround columns with a grid container and set **column widths**.
+  - Example: `.grid-container { display: grid; grid-template-columns: 33% 33% 33%; }`.
+  - Sandbox: `grid.html`.
+    | Tag | Description |
+    | ------- | --------------------------------------------- |
+    | `<div>` | Defines a section in a document (block-level) |
+
+Sandbox: `code_sandbox/html-div/grid.html`
 
 ```css
 .grid-container {
@@ -4967,7 +5533,11 @@ Grid (`grid.html`):
 }
 ```
 
+<img alt="html-div grid source" src="./code_sandbox/snaps/html-div-07-code.png" />
+
 <img alt="html-div grid result" src="./code_sandbox/snaps/html-div-07-result.png" />
+
+- [x] **Outcome:** the browser shows **.grid-container { display: grid; grid-template-columns: 33% 33% 33%; }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -5101,64 +5671,36 @@ Then open `http://127.0.0.1:8766/html-div/`.
 
 The HTML **`class`** attribute names a class for an element. **Multiple elements can share** the same class. CSS uses a **period** plus the class name (`.city`) to style them; JavaScript can select them with **`getElementsByClassName()`**.
 
+This section has **6** examples:
+
+- [x] **Example 1:** Shared `.city` boxes [View](#html-classes-example-01)
+- [x] **Example 2:** `.note` spans [View](#html-classes-example-02)
+- [x] **Example 3:** Class syntax [View](#html-classes-example-03)
+- [x] **Example 4:** Multiple classes [View](#html-classes-example-04)
+- [x] **Example 5:** Shared class on different tags [View](#html-classes-example-05)
+- [x] **Example 6:** JavaScript [View](#html-classes-example-06)
+
 ## Detailed Explanation
+
+- [x] **Tips from the page**
+  - The `class` attribute can be used on **any HTML element**.
+  - The class name is **case sensitive**.
+- [x] **Chapter summary from the page**
+  - `class` specifies **one or more** class names.
+  - CSS and JavaScript **select** elements by class.
+  - Usable on **any** element; **case sensitive**; different tags can share a class; JS uses **`getElementsByClassName()`**.
+
+<a id="html-classes-example-01"></a>
+
+### **Example 1: Shared `.city` boxes**
 
 - [x] **The `class` attribute**
   - Specifies a **class** for an HTML element.
   - Often points to a **class name in a style sheet**.
   - JavaScript can also **access and manipulate** elements with that class name.
   - Example: three `<div class="city">` boxes (London, Paris, Tokyo) share `.city` — tomato background, white text, black border, margin and padding.
-  - Sandbox: `code_sandbox/html-classes/index.html`.
 
-<img alt="html-classes city boxes result" src="./code_sandbox/snaps/html-classes-result.png" />
-
-- [x] **Same class on `<span>`**
-  - Two `<span class="note">` elements share `.note` (`font-size: 120%`, `color: red`).
-  - Example: **Important** in the heading and **important** in the paragraph.
-  - Sandbox: `note.html`.
-
-<img alt="html-classes note spans result" src="./code_sandbox/snaps/html-classes-01-result.png" />
-
-- [x] **Tips from the page**
-  - The `class` attribute can be used on **any HTML element**.
-  - The class name is **case sensitive**.
-- [x] **Syntax for a class**
-  - Write a **period (`.`)** then the class name, then CSS in **curly braces**.
-  - Example: `.city { background-color: tomato; color: white; padding: 10px; }` on three `<h2 class="city">` headings.
-  - Sandbox: `syntax.html`.
-
-<img alt="html-classes syntax result" src="./code_sandbox/snaps/html-classes-02-result.png" />
-
-- [x] **Multiple classes**
-  - An element can belong to **more than one** class.
-  - Separate names with a **space**: `<div class="city main">`.
-  - The element gets styles from **all** listed classes.
-  - Example: London has `city main` (centered); Paris and Tokyo have only `city`.
-  - Sandbox: `multiple.html`.
-
-<img alt="html-classes multiple classes result" src="./code_sandbox/snaps/html-classes-03-result.png" />
-
-- [x] **Different elements can share the same class**
-  - Example: `<h2>` and `<p>` both use `class="city"` and share the style.
-  - Sandbox: `share.html`.
-
-<img alt="html-classes shared class result" src="./code_sandbox/snaps/html-classes-04-result.png" />
-
-- [x] **JavaScript and classes**
-  - `document.getElementsByClassName("city")` returns those elements.
-  - Example: a button hides every `.city` (`display: none` in a loop).
-  - Sandbox: `js.html`. More JavaScript is in a later chapter.
-
-<img alt="html-classes javascript result" src="./code_sandbox/snaps/html-classes-05-result.png" />
-
-- [x] **Chapter summary from the page**
-  - `class` specifies **one or more** class names.
-  - CSS and JavaScript **select** elements by class.
-  - Usable on **any** element; **case sensitive**; different tags can share a class; JS uses **`getElementsByClassName()`**.
-
-Shared `.city` boxes (`index.html`):
-
-<img alt="html-classes city boxes source" src="./code_sandbox/snaps/html-classes-code.png" />
+Sandbox: `code_sandbox/html-classes/index.html`
 
 ```html
 <style>
@@ -5176,22 +5718,44 @@ Shared `.city` boxes (`index.html`):
 </div>
 ```
 
+<img alt="html-classes city boxes source" src="./code_sandbox/snaps/html-classes-code.png" />
+
 <img alt="html-classes city boxes result" src="./code_sandbox/snaps/html-classes-result.png" />
 
-`.note` spans (`note.html`):
+- [x] **Outcome:** the browser shows **.city { background-color: tomato; color: white; border: 2px solid black; margin: 20px; padding: 20px; } London**, **London is the capital of England.**.
 
-<img alt="html-classes note source" src="./code_sandbox/snaps/html-classes-01-code.png" />
+<a id="html-classes-example-02"></a>
+
+### **Example 2: `.note` spans**
+
+- [x] **Same class on `<span>`**
+  - Two `<span class="note">` elements share `.note` (`font-size: 120%`, `color: red`).
+  - Example: **Important** in the heading and **important** in the paragraph.
+  - Sandbox: `note.html`.
+
+Sandbox: `code_sandbox/html-classes/note.html`
 
 ```html
 <h1>My <span class="note">Important</span> Heading</h1>
 <p>This is some <span class="note">important</span> text.</p>
 ```
 
+<img alt="html-classes note source" src="./code_sandbox/snaps/html-classes-01-code.png" />
+
 <img alt="html-classes note spans result" src="./code_sandbox/snaps/html-classes-01-result.png" />
 
-Class syntax (`syntax.html`):
+- [x] **Outcome:** the browser shows **My Important Heading**, **This is some important text.**.
 
-<img alt="html-classes syntax source" src="./code_sandbox/snaps/html-classes-02-code.png" />
+<a id="html-classes-example-03"></a>
+
+### **Example 3: Class syntax**
+
+- [x] **Syntax for a class**
+  - Write a **period (`.`)** then the class name, then CSS in **curly braces**.
+  - Example: `.city { background-color: tomato; color: white; padding: 10px; }` on three `<h2 class="city">` headings.
+  - Sandbox: `syntax.html`.
+
+Sandbox: `code_sandbox/html-classes/syntax.html`
 
 ```css
 .city {
@@ -5201,11 +5765,24 @@ Class syntax (`syntax.html`):
 }
 ```
 
+<img alt="html-classes syntax source" src="./code_sandbox/snaps/html-classes-02-code.png" />
+
 <img alt="html-classes syntax result" src="./code_sandbox/snaps/html-classes-02-result.png" />
 
-Multiple classes (`multiple.html`):
+- [x] **Outcome:** the browser shows **.city { background-color: tomato; color: white; padding: 10px; }**.
 
-<img alt="html-classes multiple source" src="./code_sandbox/snaps/html-classes-03-code.png" />
+<a id="html-classes-example-04"></a>
+
+### **Example 4: Multiple classes**
+
+- [x] **Multiple classes**
+  - An element can belong to **more than one** class.
+  - Separate names with a **space**: `<div class="city main">`.
+  - The element gets styles from **all** listed classes.
+  - Example: London has `city main` (centered); Paris and Tokyo have only `city`.
+  - Sandbox: `multiple.html`.
+
+Sandbox: `code_sandbox/html-classes/multiple.html`
 
 ```html
 <h2 class="city main">London</h2>
@@ -5213,22 +5790,43 @@ Multiple classes (`multiple.html`):
 <h2 class="city">Tokyo</h2>
 ```
 
+<img alt="html-classes multiple source" src="./code_sandbox/snaps/html-classes-03-code.png" />
+
 <img alt="html-classes multiple classes result" src="./code_sandbox/snaps/html-classes-03-result.png" />
 
-Shared class on different tags (`share.html`):
+- [x] **Outcome:** the browser shows **London**, **Paris**, **Tokyo**.
 
-<img alt="html-classes share source" src="./code_sandbox/snaps/html-classes-04-code.png" />
+<a id="html-classes-example-05"></a>
+
+### **Example 5: Shared class on different tags**
+
+- [x] **Different elements can share the same class**
+  - Example: `<h2>` and `<p>` both use `class="city"` and share the style.
+  - Sandbox: `share.html`.
+
+Sandbox: `code_sandbox/html-classes/share.html`
 
 ```html
 <h2 class="city">Paris</h2>
 <p class="city">Paris is the capital of France</p>
 ```
 
+<img alt="html-classes share source" src="./code_sandbox/snaps/html-classes-04-code.png" />
+
 <img alt="html-classes shared class result" src="./code_sandbox/snaps/html-classes-04-result.png" />
 
-JavaScript (`js.html`):
+- [x] **Outcome:** the browser shows **Paris**, **Paris is the capital of France**.
 
-<img alt="html-classes javascript source" src="./code_sandbox/snaps/html-classes-05-code.png" />
+<a id="html-classes-example-06"></a>
+
+### **Example 6: JavaScript**
+
+- [x] **JavaScript and classes**
+  - `document.getElementsByClassName("city")` returns those elements.
+  - Example: a button hides every `.city` (`display: none` in a loop).
+  - Sandbox: `js.html`. More JavaScript is in a later chapter.
+
+Sandbox: `code_sandbox/html-classes/js.html`
 
 ```html
 <script>
@@ -5241,7 +5839,11 @@ JavaScript (`js.html`):
 </script>
 ```
 
+<img alt="html-classes javascript source" src="./code_sandbox/snaps/html-classes-05-code.png" />
+
 <img alt="html-classes javascript result" src="./code_sandbox/snaps/html-classes-05-result.png" />
+
+- [x] **Outcome:** the browser shows **function myFunction() { var x = document.getElementsByClassName("city"); for (var i = 0; i**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -5351,7 +5953,26 @@ Then open `http://127.0.0.1:8766/html-classes/`.
 
 The HTML **`id`** attribute gives an element a **unique** name in the document. CSS targets it with a **hash** (`#myHeader`). The same value also makes **bookmarks** (`href="#C4"`) and lets JavaScript use **`getElementById()`**. A **class** may be reused; an **id** may not.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Unique id [View](#html-id-example-01)
+- [x] **Example 2:** Class vs id [View](#html-id-example-02)
+- [x] **Example 3:** Bookmark [View](#html-id-example-03)
+- [x] **Example 4:** JavaScript [View](#html-id-example-04)
+
 ## Detailed Explanation
+
+- [x] **Id name rules (from the page)**
+  - The id name is **case sensitive**.
+  - Must contain **at least one character**.
+  - **Cannot start with a number**.
+  - Must **not contain whitespaces** (spaces, tabs, and so on).
+- [x] **Chapter summary from the page**
+  - Unique id per document; CSS and JS select it; **case sensitive**; also used for **bookmarks**; JS uses **`getElementById()`**.
+
+<a id="html-id-example-01"></a>
+
+### **Example 1: Unique id**
 
 - [x] **The `id` attribute**
   - Specifies a **unique id** for an HTML element.
@@ -5359,45 +5980,8 @@ The HTML **`id`** attribute gives an element a **unique** name in the document. 
   - Used to point to a **specific style** in a style sheet, and by JavaScript to access that element.
   - CSS syntax: **hash (`#`)** + id name + properties in `{}`.
   - Example: `<h1 id="myHeader">` styled by `#myHeader` (light blue, padding, centered).
-  - Sandbox: `code_sandbox/html-id/index.html`.
 
-<img alt="html-id header result" src="./code_sandbox/snaps/html-id-result.png" />
-
-- [x] **Id name rules (from the page)**
-  - The id name is **case sensitive**.
-  - Must contain **at least one character**.
-  - **Cannot start with a number**.
-  - Must **not contain whitespaces** (spaces, tabs, and so on).
-- [x] **Difference between class and id**
-  - A **class** name can be used by **multiple** elements.
-  - An **id** name must be used by **only one** element on the page.
-  - Example: unique `#myHeader` (“My Cities”) plus shared `.city` on London, Paris, Tokyo.
-  - Sandbox: `class.html`.
-
-<img alt="html-id class vs id result" src="./code_sandbox/snaps/html-id-01-result.png" />
-
-- [x] **HTML bookmarks with id and links**
-  - Bookmarks let readers **jump** to a part of a (often long) page.
-  - Create the bookmark: `<h2 id="C4">Chapter 4</h2>`.
-  - Same-page link: `<a href="#C4">Jump to Chapter 4</a>`.
-  - Other-page link: `<a href="html_demo.html#C4">Jump to Chapter 4</a>`.
-  - Sandbox: `bookmark.html`.
-
-<img alt="html-id bookmark result" src="./code_sandbox/snaps/html-id-02-result.png" />
-
-- [x] **JavaScript and id**
-  - `document.getElementById("myHeader")` accesses that one element.
-  - Example: set `innerHTML` to **Have a nice day!**.
-  - Sandbox: `js.html`.
-
-<img alt="html-id javascript result" src="./code_sandbox/snaps/html-id-03-result.png" />
-
-- [x] **Chapter summary from the page**
-  - Unique id per document; CSS and JS select it; **case sensitive**; also used for **bookmarks**; JS uses **`getElementById()`**.
-
-Unique id (`index.html`):
-
-<img alt="html-id header source" src="./code_sandbox/snaps/html-id-code.png" />
+Sandbox: `code_sandbox/html-id/index.html`
 
 ```html
 <style>
@@ -5411,11 +5995,23 @@ Unique id (`index.html`):
 <h1 id="myHeader">My Header</h1>
 ```
 
+<img alt="html-id header source" src="./code_sandbox/snaps/html-id-code.png" />
+
 <img alt="html-id header result" src="./code_sandbox/snaps/html-id-result.png" />
 
-Class vs id (`class.html`):
+- [x] **Outcome:** the browser shows **#myHeader { background-color: lightblue; color: black; padding: 40px; text-align: center; } My Header**.
 
-<img alt="html-id class vs id source" src="./code_sandbox/snaps/html-id-01-code.png" />
+<a id="html-id-example-02"></a>
+
+### **Example 2: Class vs id**
+
+- [x] **Difference between class and id**
+  - A **class** name can be used by **multiple** elements.
+  - An **id** name must be used by **only one** element on the page.
+  - Example: unique `#myHeader` (“My Cities”) plus shared `.city` on London, Paris, Tokyo.
+  - Sandbox: `class.html`.
+
+Sandbox: `code_sandbox/html-id/class.html`
 
 ```css
 #myHeader {
@@ -5426,22 +6022,46 @@ Class vs id (`class.html`):
 }
 ```
 
+<img alt="html-id class vs id source" src="./code_sandbox/snaps/html-id-01-code.png" />
+
 <img alt="html-id class vs id result" src="./code_sandbox/snaps/html-id-01-result.png" />
 
-Bookmark (`bookmark.html`):
+- [x] **Outcome:** the browser shows **#myHeader { /_ one unique id _/ } .city { /_ many elements _/ }**.
 
-<img alt="html-id bookmark source" src="./code_sandbox/snaps/html-id-02-code.png" />
+<a id="html-id-example-03"></a>
+
+### **Example 3: Bookmark**
+
+- [x] **HTML bookmarks with id and links**
+  - Bookmarks let readers **jump** to a part of a (often long) page.
+  - Create the bookmark: `<h2 id="C4">Chapter 4</h2>`.
+  - Same-page link: `<a href="#C4">Jump to Chapter 4</a>`.
+  - Other-page link: `<a href="html_demo.html#C4">Jump to Chapter 4</a>`.
+  - Sandbox: `bookmark.html`.
+
+Sandbox: `code_sandbox/html-id/bookmark.html`
 
 ```html
 <h2 id="C4">Chapter 4</h2>
 <a href="#C4">Jump to Chapter 4</a>
 ```
 
+<img alt="html-id bookmark source" src="./code_sandbox/snaps/html-id-02-code.png" />
+
 <img alt="html-id bookmark result" src="./code_sandbox/snaps/html-id-02-result.png" />
 
-JavaScript (`js.html`):
+- [x] **Outcome:** the browser shows **Chapter 4**, **Jump to Chapter 4**.
 
-<img alt="html-id javascript source" src="./code_sandbox/snaps/html-id-03-code.png" />
+<a id="html-id-example-04"></a>
+
+### **Example 4: JavaScript**
+
+- [x] **JavaScript and id**
+  - `document.getElementById("myHeader")` accesses that one element.
+  - Example: set `innerHTML` to **Have a nice day!**.
+  - Sandbox: `js.html`.
+
+Sandbox: `code_sandbox/html-id/js.html`
 
 ```html
 <script>
@@ -5451,7 +6071,11 @@ JavaScript (`js.html`):
 </script>
 ```
 
+<img alt="html-id javascript source" src="./code_sandbox/snaps/html-id-03-code.png" />
+
 <img alt="html-id javascript result" src="./code_sandbox/snaps/html-id-03-result.png" />
+
+- [x] **Outcome:** the browser shows **function displayResult() { document.getElementById("myHeader").innerHTML = "Have a nice day!"; }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -5569,22 +6193,62 @@ Then open `http://127.0.0.1:8766/html-id/`.
 
 Buttons let users **interact** with a page: submit forms, run JavaScript, or trigger actions. This chapter covers the **`<button>`** element, CSS styling, **`disabled`**, **`onclick`**, and the **`type`** values **`button`**, **`submit`**, and **`reset`**.
 
+This section has **6** examples:
+
+- [x] **Example 1:** Basic [View](#html-buttons-example-01)
+- [x] **Example 2:** Styled [View](#html-buttons-example-02)
+- [x] **Example 3:** Disabled [View](#html-buttons-example-03)
+- [x] **Example 4:** JavaScript [View](#html-buttons-example-04)
+- [x] **Example 5:** Types [View](#html-buttons-example-05)
+- [x] **Example 6:** Form [View](#html-buttons-example-06)
+
 ## Detailed Explanation
+
+<a id="html-buttons-example-01"></a>
+
+### **Example 1: Basic**
 
 - [x] **HTML button**
   - `<button>` defines a **clickable** button.
   - By itself it **does nothing** until you add an action.
   - Example: `<button>Click Me</button>`.
-  - Sandbox: `code_sandbox/html-buttons/index.html`.
+
+Sandbox: `code_sandbox/html-buttons/index.html`
+
+```html
+<button>Click Me</button>
+```
+
+<img alt="html-buttons click me source" src="./code_sandbox/snaps/html-buttons-code.png" />
 
 <img alt="html-buttons click me result" src="./code_sandbox/snaps/html-buttons-result.png" />
+
+- [x] **Outcome:** the browser shows **Click Me**.
+
+<a id="html-buttons-example-02"></a>
+
+### **Example 2: Styled**
 
 - [x] **Styling HTML buttons**
   - Buttons are often styled with **CSS**.
   - Example: `<button class="mytestbtn">Green Button</button>` (sandbox uses W3Schools green `#04AA6D`).
   - Sandbox: `styled.html`.
 
+Sandbox: `code_sandbox/html-buttons/styled.html`
+
+```html
+<button class="mytestbtn">Green Button</button>
+```
+
+<img alt="html-buttons styled source" src="./code_sandbox/snaps/html-buttons-01-code.png" />
+
 <img alt="html-buttons styled result" src="./code_sandbox/snaps/html-buttons-01-result.png" />
+
+- [x] **Outcome:** the browser shows **Green Button**.
+
+<a id="html-buttons-example-03"></a>
+
+### **Example 3: Disabled**
 
 - [x] **Disabled buttons**
   - The **`disabled`** attribute makes a button **unclickable**.
@@ -5592,14 +6256,42 @@ Buttons let users **interact** with a page: submit forms, run JavaScript, or tri
   - Example: `<button disabled>Disabled Button</button>`.
   - Sandbox: `disabled.html`.
 
+Sandbox: `code_sandbox/html-buttons/disabled.html`
+
+```html
+<button disabled>Disabled Button</button>
+```
+
+<img alt="html-buttons disabled source" src="./code_sandbox/snaps/html-buttons-02-code.png" />
+
 <img alt="html-buttons disabled result" src="./code_sandbox/snaps/html-buttons-02-result.png" />
+
+- [x] **Outcome:** the browser shows **Disabled Button**.
+
+<a id="html-buttons-example-04"></a>
+
+### **Example 4: JavaScript**
 
 - [x] **Button with JavaScript**
   - Run JS on click with **`onclick`**.
   - Example: `<button onclick="alert('Hello!')">Click Me</button>`.
   - Sandbox: `js.html`. More JS in the HTML JavaScript chapter.
 
+Sandbox: `code_sandbox/html-buttons/js.html`
+
+```html
+<button onclick="alert('Hello!')">Click Me</button>
+```
+
+<img alt="html-buttons onclick source" src="./code_sandbox/snaps/html-buttons-03-code.png" />
+
 <img alt="html-buttons onclick result" src="./code_sandbox/snaps/html-buttons-03-result.png" />
+
+- [x] **Outcome:** the browser shows **Click Me**.
+
+<a id="html-buttons-example-05"></a>
+
+### **Example 5: Types**
 
 - [x] **Button types**
   - **`type="button"`** — normal clickable button (does nothing by default).
@@ -5607,63 +6299,7 @@ Buttons let users **interact** with a page: submit forms, run JavaScript, or tri
   - **`type="reset"`** — resets all form fields.
   - Sandbox: `types.html`.
 
-<img alt="html-buttons types result" src="./code_sandbox/snaps/html-buttons-04-result.png" />
-
-- [x] **Buttons in a form**
-  - Submit sends form data to the server; reset clears the fields.
-  - Example: first-name input, **Submit**, **Reset Form**, `action="/action_page.php"`.
-  - **Always specify `type`**. Inside a form, the **default type is submit**, and browsers may differ if `type` is omitted.
-  - Sandbox: `form.html`. Forms are covered in a later chapter.
-
-<img alt="html-buttons form result" src="./code_sandbox/snaps/html-buttons-05-result.png" />
-
-| Tag        | Description                |
-| ---------- | -------------------------- |
-| `<button>` | Defines a clickable button |
-
-Basic (`index.html`):
-
-<img alt="html-buttons click me source" src="./code_sandbox/snaps/html-buttons-code.png" />
-
-```html
-<button>Click Me</button>
-```
-
-<img alt="html-buttons click me result" src="./code_sandbox/snaps/html-buttons-result.png" />
-
-Styled (`styled.html`):
-
-<img alt="html-buttons styled source" src="./code_sandbox/snaps/html-buttons-01-code.png" />
-
-```html
-<button class="mytestbtn">Green Button</button>
-```
-
-<img alt="html-buttons styled result" src="./code_sandbox/snaps/html-buttons-01-result.png" />
-
-Disabled (`disabled.html`):
-
-<img alt="html-buttons disabled source" src="./code_sandbox/snaps/html-buttons-02-code.png" />
-
-```html
-<button disabled>Disabled Button</button>
-```
-
-<img alt="html-buttons disabled result" src="./code_sandbox/snaps/html-buttons-02-result.png" />
-
-JavaScript (`js.html`):
-
-<img alt="html-buttons onclick source" src="./code_sandbox/snaps/html-buttons-03-code.png" />
-
-```html
-<button onclick="alert('Hello!')">Click Me</button>
-```
-
-<img alt="html-buttons onclick result" src="./code_sandbox/snaps/html-buttons-03-result.png" />
-
-Types (`types.html`):
-
-<img alt="html-buttons types source" src="./code_sandbox/snaps/html-buttons-04-code.png" />
+Sandbox: `code_sandbox/html-buttons/types.html`
 
 ```html
 <button type="button">Normal Button</button>
@@ -5671,11 +6307,26 @@ Types (`types.html`):
 <button type="reset">Reset</button>
 ```
 
+<img alt="html-buttons types source" src="./code_sandbox/snaps/html-buttons-04-code.png" />
+
 <img alt="html-buttons types result" src="./code_sandbox/snaps/html-buttons-04-result.png" />
 
-Form (`form.html`):
+- [x] **Outcome:** the browser shows **Normal Button**, **Submit**, **Reset**.
 
-<img alt="html-buttons form source" src="./code_sandbox/snaps/html-buttons-05-code.png" />
+<a id="html-buttons-example-06"></a>
+
+### **Example 6: Form**
+
+- [x] **Buttons in a form**
+  - Submit sends form data to the server; reset clears the fields.
+  - Example: first-name input, **Submit**, **Reset Form**, `action="/action_page.php"`.
+  - **Always specify `type`**. Inside a form, the **default type is submit**, and browsers may differ if `type` is omitted.
+  - Sandbox: `form.html`. Forms are covered in a later chapter.
+    | Tag | Description |
+    | ---------- | -------------------------- |
+    | `<button>` | Defines a clickable button |
+
+Sandbox: `code_sandbox/html-buttons/form.html`
 
 ```html
 <form action="/action_page.php">
@@ -5685,7 +6336,11 @@ Form (`form.html`):
 </form>
 ```
 
+<img alt="html-buttons form source" src="./code_sandbox/snaps/html-buttons-05-code.png" />
+
 <img alt="html-buttons form result" src="./code_sandbox/snaps/html-buttons-05-result.png" />
+
+- [x] **Outcome:** the browser shows **First name: Submit**, **Reset Form**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -5793,6 +6448,14 @@ Then open `http://127.0.0.1:8766/html-buttons/`.
 
 An HTML **iframe** displays a **web page inside a web page**. `<iframe>` is an **inline frame** that embeds another document. This chapter covers **`src`**, **`title`**, **height/width**, **borders**, and using an iframe as a **link target**.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Size attributes [View](#html-iframes-example-01)
+- [x] **Example 2:** CSS size [View](#html-iframes-example-02)
+- [x] **Example 3:** No border [View](#html-iframes-example-03)
+- [x] **Example 4:** Red border [View](#html-iframes-example-04)
+- [x] **Example 5:** Target [View](#html-iframes-example-05)
+
 ## Detailed Explanation
 
 - [x] **Syntax**
@@ -5800,31 +6463,6 @@ An HTML **iframe** displays a **web page inside a web page**. `<iframe>` is an *
   - **`src`** is the URL of the page to embed.
   - Always include **`title`** so screen readers can describe the iframe.
   - Local demo page: `demo_iframe.htm` (the W3Schools examples use the same filename).
-- [x] **Height and width**
-  - Default unit is **pixels**.
-  - Attributes: `height="200" width="300"`.
-  - Or CSS: `style="height:200px;width:300px;"`.
-  - Sandbox: `code_sandbox/html-iframes/index.html` and `css-size.html`.
-
-<img alt="html-iframes size result" src="./code_sandbox/snaps/html-iframes-result.png" />
-
-- [x] **Remove or style the border**
-  - An iframe has a **border by default**.
-  - Remove it: `style="border:none;"`.
-  - Change it: `style="border:2px solid red;"`.
-  - Sandbox: `noborder.html` and `redborder.html`.
-
-<img alt="html-iframes no border result" src="./code_sandbox/snaps/html-iframes-02-result.png" />
-
-<img alt="html-iframes red border result" src="./code_sandbox/snaps/html-iframes-03-result.png" />
-
-- [x] **Iframe as a link target**
-  - The link’s **`target`** must match the iframe’s **`name`**.
-  - Example: `name="iframe_a"` and `<a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a>`.
-  - Sandbox: `target.html`.
-
-<img alt="html-iframes target result" src="./code_sandbox/snaps/html-iframes-04-result.png" />
-
 - [x] **Chapter summary from the page**
   - `<iframe>` = inline frame; **`src`** = URL; always **`title`**; **height/width** set size; **`border:none;`** removes the border.
 
@@ -5832,9 +6470,16 @@ An HTML **iframe** displays a **web page inside a web page**. `<iframe>` is an *
 | ---------- | ----------------------- |
 | `<iframe>` | Defines an inline frame |
 
-Size attributes (`index.html`):
+<a id="html-iframes-example-01"></a>
 
-<img alt="html-iframes size source" src="./code_sandbox/snaps/html-iframes-code.png" />
+### **Example 1: Size attributes**
+
+- [x] **Height and width**
+  - Default unit is **pixels**.
+  - Attributes: `height="200" width="300"`.
+  - Or CSS: `style="height:200px;width:300px;"`.
+
+Sandbox: `code_sandbox/html-iframes/index.html`
 
 ```html
 <iframe
@@ -5845,11 +6490,22 @@ Size attributes (`index.html`):
 ></iframe>
 ```
 
+<img alt="html-iframes size source" src="./code_sandbox/snaps/html-iframes-code.png" />
+
 <img alt="html-iframes size result" src="./code_sandbox/snaps/html-iframes-result.png" />
 
-CSS size (`css-size.html`):
+- [x] **Outcome:** the page demonstrates **Size attributes** as shown in the result snap.
 
-<img alt="html-iframes css size source" src="./code_sandbox/snaps/html-iframes-01-code.png" />
+<a id="html-iframes-example-02"></a>
+
+### **Example 2: CSS size**
+
+- [x] **Height and width**
+  - Default unit is **pixels**.
+  - Attributes: `height="200" width="300"`.
+  - Or CSS: `style="height:200px;width:300px;"`.
+
+Sandbox: `code_sandbox/html-iframes/css-size.html`
 
 ```html
 <iframe
@@ -5859,11 +6515,23 @@ CSS size (`css-size.html`):
 ></iframe>
 ```
 
+<img alt="html-iframes css size source" src="./code_sandbox/snaps/html-iframes-01-code.png" />
+
 <img alt="html-iframes css size result" src="./code_sandbox/snaps/html-iframes-01-result.png" />
 
-No border (`noborder.html`):
+- [x] **Outcome:** the page demonstrates **CSS size** as shown in the result snap.
 
-<img alt="html-iframes no border source" src="./code_sandbox/snaps/html-iframes-02-code.png" />
+<a id="html-iframes-example-03"></a>
+
+### **Example 3: No border**
+
+- [x] **Remove or style the border**
+  - An iframe has a **border by default**.
+  - Remove it: `style="border:none;"`.
+  - Change it: `style="border:2px solid red;"`.
+  - Sandbox: `noborder.html` and `redborder.html`.
+
+Sandbox: `code_sandbox/html-iframes/noborder.html`
 
 ```html
 <iframe
@@ -5873,11 +6541,23 @@ No border (`noborder.html`):
 ></iframe>
 ```
 
+<img alt="html-iframes no border source" src="./code_sandbox/snaps/html-iframes-02-code.png" />
+
 <img alt="html-iframes no border result" src="./code_sandbox/snaps/html-iframes-02-result.png" />
 
-Red border (`redborder.html`):
+- [x] **Outcome:** the page demonstrates **No border** as shown in the result snap.
 
-<img alt="html-iframes red border source" src="./code_sandbox/snaps/html-iframes-03-code.png" />
+<a id="html-iframes-example-04"></a>
+
+### **Example 4: Red border**
+
+- [x] **Remove or style the border**
+  - An iframe has a **border by default**.
+  - Remove it: `style="border:none;"`.
+  - Change it: `style="border:2px solid red;"`.
+  - Sandbox: `noborder.html` and `redborder.html`.
+
+Sandbox: `code_sandbox/html-iframes/redborder.html`
 
 ```html
 <iframe
@@ -5887,18 +6567,33 @@ Red border (`redborder.html`):
 ></iframe>
 ```
 
+<img alt="html-iframes red border source" src="./code_sandbox/snaps/html-iframes-03-code.png" />
+
 <img alt="html-iframes red border result" src="./code_sandbox/snaps/html-iframes-03-result.png" />
 
-Target (`target.html`):
+- [x] **Outcome:** the page demonstrates **Red border** as shown in the result snap.
 
-<img alt="html-iframes target source" src="./code_sandbox/snaps/html-iframes-04-code.png" />
+<a id="html-iframes-example-05"></a>
+
+### **Example 5: Target**
+
+- [x] **Iframe as a link target**
+  - The link’s **`target`** must match the iframe’s **`name`**.
+  - Example: `name="iframe_a"` and `<a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a>`.
+  - Sandbox: `target.html`.
+
+Sandbox: `code_sandbox/html-iframes/target.html`
 
 ```html
 <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
 <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
 ```
 
+<img alt="html-iframes target source" src="./code_sandbox/snaps/html-iframes-04-code.png" />
+
 <img alt="html-iframes target result" src="./code_sandbox/snaps/html-iframes-04-result.png" />
+
+- [x] **Outcome:** the browser shows **W3Schools.com**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -5994,50 +6689,24 @@ Then open `http://127.0.0.1:8766/html-iframes/`.
 
 **JavaScript** makes HTML pages more **dynamic and interactive**. This chapter covers the **`<script>`** tag, `getElementById()`, changing **content**, **styles**, and **attributes**, and **`<noscript>`** for browsers without scripts.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Date button [View](#html-javascript-example-01)
+- [x] **Example 2:** Change content [View](#html-javascript-example-02)
+- [x] **Example 3:** Change styles [View](#html-javascript-example-03)
+- [x] **Example 4:** Change attributes [View](#html-javascript-example-04)
+- [x] **Example 5:** Noscript [View](#html-javascript-example-05)
+
 ## Detailed Explanation
+
+<a id="html-javascript-example-01"></a>
+
+### **Example 1: Date button**
 
 - [x] **My First JavaScript**
   - A button writes the current **date and time** into a paragraph.
-  - Sandbox: `code_sandbox/html-javascript/index.html`.
 
-<img alt="html-javascript date button result" src="./code_sandbox/snaps/html-javascript-result.png" />
-
-- [x] **The `<script>` tag**
-  - Defines a **client-side script** (JavaScript).
-  - Either contains statements, or points to an external file with **`src`**.
-  - Common uses: image manipulation, form validation, dynamic content.
-  - Selecting an element: **`document.getElementById()`**.
-  - Example: write **Hello JavaScript!** into `id="demo"`.
-  - Sandbox: `content.html`.
-
-<img alt="html-javascript content result" src="./code_sandbox/snaps/html-javascript-01-result.png" />
-
-- [x] **A taste of JavaScript**
-  - **Change content:** `innerHTML = "Hello JavaScript!"`.
-  - **Change styles:** `fontSize`, `color`, `backgroundColor`.
-  - **Change attributes:** `src` on an image (`picture.gif` in the sandbox).
-  - Sandbox: `styles.html` and `attribute.html`.
-
-<img alt="html-javascript styles result" src="./code_sandbox/snaps/html-javascript-02-result.png" />
-
-<img alt="html-javascript attribute result" src="./code_sandbox/snaps/html-javascript-03-result.png" />
-
-- [x] **The `<noscript>` tag**
-  - Alternate content if scripts are **disabled** or unsupported.
-  - Example: `Sorry, your browser does not support JavaScript!`
-  - With JS on, the script runs and noscript is hidden.
-  - Sandbox: `noscript.html`.
-
-<img alt="html-javascript noscript result" src="./code_sandbox/snaps/html-javascript-04-result.png" />
-
-| Tag          | Description                                                         |
-| ------------ | ------------------------------------------------------------------- |
-| `<script>`   | Defines a client-side script                                        |
-| `<noscript>` | Alternate content for users that do not support client-side scripts |
-
-Date button (`index.html`):
-
-<img alt="html-javascript date source" src="./code_sandbox/snaps/html-javascript-code.png" />
+Sandbox: `code_sandbox/html-javascript/index.html`
 
 ```html
 <button
@@ -6049,11 +6718,25 @@ Date button (`index.html`):
 <p id="demo"></p>
 ```
 
+<img alt="html-javascript date source" src="./code_sandbox/snaps/html-javascript-code.png" />
+
 <img alt="html-javascript date button result" src="./code_sandbox/snaps/html-javascript-result.png" />
 
-Change content (`content.html`):
+- [x] **Outcome:** the browser shows **Click me to display Date and Time**.
 
-<img alt="html-javascript content source" src="./code_sandbox/snaps/html-javascript-01-code.png" />
+<a id="html-javascript-example-02"></a>
+
+### **Example 2: Change content**
+
+- [x] **The `<script>` tag**
+  - Defines a **client-side script** (JavaScript).
+  - Either contains statements, or points to an external file with **`src`**.
+  - Common uses: image manipulation, form validation, dynamic content.
+  - Selecting an element: **`document.getElementById()`**.
+  - Example: write **Hello JavaScript!** into `id="demo"`.
+  - Sandbox: `content.html`.
+
+Sandbox: `code_sandbox/html-javascript/content.html`
 
 ```html
 <script>
@@ -6061,11 +6744,23 @@ Change content (`content.html`):
 </script>
 ```
 
+<img alt="html-javascript content source" src="./code_sandbox/snaps/html-javascript-01-code.png" />
+
 <img alt="html-javascript content result" src="./code_sandbox/snaps/html-javascript-01-result.png" />
 
-Change styles (`styles.html`):
+- [x] **Outcome:** the browser shows **document.getElementById("demo").innerHTML = "Hello JavaScript!";**.
 
-<img alt="html-javascript styles source" src="./code_sandbox/snaps/html-javascript-02-code.png" />
+<a id="html-javascript-example-03"></a>
+
+### **Example 3: Change styles**
+
+- [x] **A taste of JavaScript**
+  - **Change content:** `innerHTML = "Hello JavaScript!"`.
+  - **Change styles:** `fontSize`, `color`, `backgroundColor`.
+  - **Change attributes:** `src` on an image (`picture.gif` in the sandbox).
+  - Sandbox: `styles.html` and `attribute.html`.
+
+Sandbox: `code_sandbox/html-javascript/styles.html`
 
 ```js
 document.getElementById("demo").style.fontSize = "25px";
@@ -6073,27 +6768,59 @@ document.getElementById("demo").style.color = "red";
 document.getElementById("demo").style.backgroundColor = "yellow";
 ```
 
+<img alt="html-javascript styles source" src="./code_sandbox/snaps/html-javascript-02-code.png" />
+
 <img alt="html-javascript styles result" src="./code_sandbox/snaps/html-javascript-02-result.png" />
 
-Change attributes (`attribute.html`):
+- [x] **Outcome:** the browser shows **document.getElementById("demo").style.fontSize = "25px"; document.getElementById("demo").style.color = "red"; document.getElementById("demo").style.backgroundColor = "yellow";**.
 
-<img alt="html-javascript attribute source" src="./code_sandbox/snaps/html-javascript-03-code.png" />
+<a id="html-javascript-example-04"></a>
+
+### **Example 4: Change attributes**
+
+- [x] **A taste of JavaScript**
+  - **Change content:** `innerHTML = "Hello JavaScript!"`.
+  - **Change styles:** `fontSize`, `color`, `backgroundColor`.
+  - **Change attributes:** `src` on an image (`picture.gif` in the sandbox).
+  - Sandbox: `styles.html` and `attribute.html`.
+
+Sandbox: `code_sandbox/html-javascript/attribute.html`
 
 ```js
 document.getElementById("image").src = "picture.gif";
 ```
 
+<img alt="html-javascript attribute source" src="./code_sandbox/snaps/html-javascript-03-code.png" />
+
 <img alt="html-javascript attribute result" src="./code_sandbox/snaps/html-javascript-03-result.png" />
 
-Noscript (`noscript.html`):
+- [x] **Outcome:** the browser shows **document.getElementById("image").src = "picture.gif";**.
 
-<img alt="html-javascript noscript source" src="./code_sandbox/snaps/html-javascript-04-code.png" />
+<a id="html-javascript-example-05"></a>
+
+### **Example 5: Noscript**
+
+- [x] **The `<noscript>` tag**
+  - Alternate content if scripts are **disabled** or unsupported.
+  - Example: `Sorry, your browser does not support JavaScript!`
+  - With JS on, the script runs and noscript is hidden.
+  - Sandbox: `noscript.html`.
+    | Tag | Description |
+    | ------------ | ------------------------------------------------------------------- |
+    | `<script>` | Defines a client-side script |
+    | `<noscript>` | Alternate content for users that do not support client-side scripts |
+
+Sandbox: `code_sandbox/html-javascript/noscript.html`
 
 ```html
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 ```
 
+<img alt="html-javascript noscript source" src="./code_sandbox/snaps/html-javascript-04-code.png" />
+
 <img alt="html-javascript noscript result" src="./code_sandbox/snaps/html-javascript-04-result.png" />
+
+- [x] **Outcome:** the browser shows **Sorry, your browser does not support JavaScript!**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -6190,16 +6917,14 @@ Then open `http://127.0.0.1:8766/html-javascript/`.
 
 A **file path** is the location of a file in a site’s folder structure. Paths are used for pages, images, style sheets, and scripts. This chapter compares **absolute** (full URL) and **relative** paths, and recommends relative paths when possible.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Absolute [View](#html-file-paths-example-01)
+- [x] **Example 2:** Root-relative [View](#html-file-paths-example-02)
+- [x] **Example 3:** Current folder [View](#html-file-paths-example-03)
+- [x] **Example 4:** Parent folder [View](#html-file-paths-example-04)
+
 ## Detailed Explanation
-
-- [x] **File path examples (from the page)**
-
-| Path                              | Description                                        |
-| --------------------------------- | -------------------------------------------------- |
-| `<img src="picture.jpg">`         | Same folder as the current page                    |
-| `<img src="images/picture.jpg">`  | `images` folder in the current folder              |
-| `<img src="/images/picture.jpg">` | `images` folder at the **root** of the current web |
-| `<img src="../picture.jpg">`      | Folder **one level up**                            |
 
 - [x] **Used when linking to**
   - Web pages, images, style sheets, JavaScripts.
@@ -6209,7 +6934,36 @@ A **file path** is the location of a file in a site’s folder structure. Paths 
   - Sandbox: `code_sandbox/html-filepaths/absolute.html`.
 
 <img alt="html-filepaths absolute result" src="./code_sandbox/snaps/html-filepaths-result.png" />
+- [x] **Best practice**
+  - Prefer **relative** file paths when possible.
+  - Then pages are **not bound** to the current base URL.
+  - Links work on **localhost**, the current public domain, and **future** domains.
 
+<a id="html-file-paths-example-01"></a>
+
+### **Example 1: Absolute**
+
+- [x] This example runs the tested markup in `code_sandbox/html-file-paths/absolute.html`.
+
+Sandbox: `code_sandbox/html-file-paths/absolute.html`
+
+```html
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" />
+```
+
+<img alt="html-filepaths absolute source" src="./code_sandbox/snaps/html-filepaths-code.png" />
+
+<img alt="html-filepaths absolute result" src="./code_sandbox/snaps/html-filepaths-result.png" />
+
+- [x] **Outcome:** the browser shows **Mountain**.
+
+<a id="html-file-paths-example-02"></a>
+
+### **Example 2: Root-relative**
+
+- [x] **File path examples (from the page)**
+      | Path | Description |
+      | --------------------------------- | -------------------------------------------------- |
 - [x] **Relative file paths**
   - Point to a file **relative to the current page**.
   - Root of the site: `/images/picture.jpg` (sandbox serves this from `code_sandbox/images/`).
@@ -6217,56 +6971,61 @@ A **file path** is the location of a file in a site’s folder structure. Paths 
   - One level up (example on the page): `../images/picture.jpg` (sandbox: `nested/up.html`).
   - Sandbox: `root.html`, `folder.html`, `nested/up.html`. Same-folder also: `index.html` (`picture.jpg`).
 
-<img alt="html-filepaths root-relative result" src="./code_sandbox/snaps/html-filepaths-01-result.png" />
-
-<img alt="html-filepaths current-folder result" src="./code_sandbox/snaps/html-filepaths-02-result.png" />
-
-<img alt="html-filepaths parent-folder result" src="./code_sandbox/snaps/html-filepaths-03-result.png" />
-
-- [x] **Best practice**
-  - Prefer **relative** file paths when possible.
-  - Then pages are **not bound** to the current base URL.
-  - Links work on **localhost**, the current public domain, and **future** domains.
-
-Absolute (`absolute.html`):
-
-<img alt="html-filepaths absolute source" src="./code_sandbox/snaps/html-filepaths-code.png" />
-
-```html
-<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" />
-```
-
-<img alt="html-filepaths absolute result" src="./code_sandbox/snaps/html-filepaths-result.png" />
-
-Root-relative (`root.html`):
-
-<img alt="html-filepaths root source" src="./code_sandbox/snaps/html-filepaths-01-code.png" />
+Sandbox: `code_sandbox/html-file-paths/root.html`
 
 ```html
 <img src="/images/picture.jpg" alt="Mountain" />
 ```
 
+<img alt="html-filepaths root source" src="./code_sandbox/snaps/html-filepaths-01-code.png" />
+
 <img alt="html-filepaths root-relative result" src="./code_sandbox/snaps/html-filepaths-01-result.png" />
 
-Current folder (`folder.html`):
+- [x] **Outcome:** the browser shows **Mountain**.
 
-<img alt="html-filepaths folder source" src="./code_sandbox/snaps/html-filepaths-02-code.png" />
+<a id="html-file-paths-example-03"></a>
+
+### **Example 3: Current folder**
+
+- [x] **File path examples (from the page)**
+      | Path | Description |
+      | --------------------------------- | -------------------------------------------------- |
+- [x] **Relative file paths**
+  - Point to a file **relative to the current page**.
+  - Root of the site: `/images/picture.jpg` (sandbox serves this from `code_sandbox/images/`).
+  - Current folder: `images/picture.jpg`.
+  - One level up (example on the page): `../images/picture.jpg` (sandbox: `nested/up.html`).
+  - Sandbox: `root.html`, `folder.html`, `nested/up.html`. Same-folder also: `index.html` (`picture.jpg`).
+
+Sandbox: `code_sandbox/html-file-paths/folder.html`
 
 ```html
 <img src="images/picture.jpg" alt="Mountain" />
 ```
 
+<img alt="html-filepaths folder source" src="./code_sandbox/snaps/html-filepaths-02-code.png" />
+
 <img alt="html-filepaths current-folder result" src="./code_sandbox/snaps/html-filepaths-02-result.png" />
 
-Parent folder (`nested/up.html`):
+- [x] **Outcome:** the browser shows **Mountain**.
 
-<img alt="html-filepaths parent source" src="./code_sandbox/snaps/html-filepaths-03-code.png" />
+<a id="html-file-paths-example-04"></a>
+
+### **Example 4: Parent folder**
+
+- [x] This example runs the tested markup in `code_sandbox/html-file-paths/nested/up.html`.
+
+Sandbox: `code_sandbox/html-file-paths/nested/up.html`
 
 ```html
 <img src="../images/picture.jpg" alt="Mountain" />
 ```
 
+<img alt="html-filepaths parent source" src="./code_sandbox/snaps/html-filepaths-03-code.png" />
+
 <img alt="html-filepaths parent-folder result" src="./code_sandbox/snaps/html-filepaths-03-result.png" />
+
+- [x] **Outcome:** the browser shows **Mountain**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -6368,86 +7127,58 @@ Use file paths to locate pages, images, CSS, and JS. Absolute paths are full URL
 
 The HTML **`<head>`** element holds **metadata** (data about data): `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, and `<base>`. Metadata sits between `<html>` and `<body>` and is **not shown** as page content.
 
+This section has **6** examples:
+
+- [x] **Example 1:** Title [View](#html-head-example-01)
+- [x] **Example 2:** Style [View](#html-head-example-02)
+- [x] **Example 3:** Link [View](#html-head-example-03)
+- [x] **Example 4:** Meta [View](#html-head-example-04)
+- [x] **Example 5:** Script [View](#html-head-example-05)
+- [x] **Example 6:** Base [View](#html-head-example-06)
+
 ## Detailed Explanation
 
 - [x] **The `<head>` element**
   - Container for metadata between `<html>` and `<body>`.
   - Typical metadata: document **title**, **character set**, **styles**, **scripts**, other meta information.
+- [x] **Setting the viewport**
+  - Viewport = the user’s **visible area** (smaller on a phone).
+  - Include on **all** pages: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+  - `width=device-width` follows the device screen width; `initial-scale=1.0` is the initial zoom.
+
+<a id="html-head-example-01"></a>
+
+### **Example 1: Title**
+
 - [x] **The `<title>` element**
   - **Required.** Text-only title in the **tab / title bar**.
   - Important for **SEO** (search engines use it in rankings and result titles).
   - Also used in the toolbar and when the page is added to **favorites**.
   - Make the title **accurate and meaningful**.
   - Example: **A Meaningful Page Title**.
-  - Sandbox: `code_sandbox/html-head/index.html`.
+
+Sandbox: `code_sandbox/html-head/index.html`
+
+```html
+<title>A Meaningful Page Title</title>
+```
+
+<img alt="html-head title source" src="./code_sandbox/snaps/html-head-code.png" />
 
 <img alt="html-head title result" src="./code_sandbox/snaps/html-head-result.png" />
+
+- [x] **Outcome:** the browser shows **A Meaningful Page Title**.
+
+<a id="html-head-example-02"></a>
+
+### **Example 2: Style**
 
 - [x] **The `<style>` element**
   - Style information for a **single** page.
   - Example: powderblue body, red `h1`, blue `p`.
   - Sandbox: `style.html`.
 
-<img alt="html-head style result" src="./code_sandbox/snaps/html-head-01-result.png" />
-
-- [x] **The `<link>` element**
-  - Relationship to an **external resource**.
-  - Most often: `<link rel="stylesheet" href="mystyle.css">`.
-  - Sandbox: `link.html` + `mystyle.css`.
-
-<img alt="html-head link result" src="./code_sandbox/snaps/html-head-02-result.png" />
-
-- [x] **The `<meta>` element**
-  - Character set, description, keywords, author, viewport; not displayed.
-  - Used by browsers, search engines, and other services.
-  - Examples from the page: `charset="UTF-8"`; keywords; description **Free Web tutorials**; author **John Doe**; `http-equiv="refresh" content="30"` (reload every 30 seconds — omitted from the sandbox so it does not auto-refresh); viewport (below).
-  - Sandbox: `meta.html`.
-
-<img alt="html-head meta result" src="./code_sandbox/snaps/html-head-03-result.png" />
-
-- [x] **Setting the viewport**
-  - Viewport = the user’s **visible area** (smaller on a phone).
-  - Include on **all** pages: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
-  - `width=device-width` follows the device screen width; `initial-scale=1.0` is the initial zoom.
-- [x] **The `<script>` element**
-  - Client-side JavaScript.
-  - Example: `myFunction()` writes **Hello JavaScript!** into `#demo`.
-  - Sandbox: `script.html`.
-
-<img alt="html-head script result" src="./code_sandbox/snaps/html-head-04-result.png" />
-
-- [x] **The `<base>` element**
-  - Default **URL and/or target** for relative URLs.
-  - Must have **`href` or `target` or both**.
-  - **Only one** `<base>` per document.
-  - Example: `href="https://www.w3schools.com/" target="_blank"` so `images/stickman.gif` and `tags/tag_base.asp` resolve on W3Schools and open in a new tab.
-  - Sandbox: `base.html`.
-
-<img alt="html-head base result" src="./code_sandbox/snaps/html-head-05-result.png" />
-
-| Tag        | Description                                              |
-| ---------- | -------------------------------------------------------- |
-| `<head>`   | Defines information about the document                   |
-| `<title>`  | Defines the title of a document                          |
-| `<base>`   | Default address or target for all links on a page        |
-| `<link>`   | Relationship between a document and an external resource |
-| `<meta>`   | Metadata about an HTML document                          |
-| `<script>` | A client-side script                                     |
-| `<style>`  | Style information for a document                         |
-
-Title (`index.html`):
-
-<img alt="html-head title source" src="./code_sandbox/snaps/html-head-code.png" />
-
-```html
-<title>A Meaningful Page Title</title>
-```
-
-<img alt="html-head title result" src="./code_sandbox/snaps/html-head-result.png" />
-
-Style (`style.html`):
-
-<img alt="html-head style source" src="./code_sandbox/snaps/html-head-01-code.png" />
+Sandbox: `code_sandbox/html-head/style.html`
 
 ```html
 <style>
@@ -6463,21 +7194,44 @@ Style (`style.html`):
 </style>
 ```
 
+<img alt="html-head style source" src="./code_sandbox/snaps/html-head-01-code.png" />
+
 <img alt="html-head style result" src="./code_sandbox/snaps/html-head-01-result.png" />
 
-Link (`link.html`):
+- [x] **Outcome:** the browser shows **body { background-color: powderblue; } h1 { color: red; } p { color: blue; }**.
 
-<img alt="html-head link source" src="./code_sandbox/snaps/html-head-02-code.png" />
+<a id="html-head-example-03"></a>
+
+### **Example 3: Link**
+
+- [x] **The `<link>` element**
+  - Relationship to an **external resource**.
+  - Most often: `<link rel="stylesheet" href="mystyle.css">`.
+  - Sandbox: `link.html` + `mystyle.css`.
+
+Sandbox: `code_sandbox/html-head/link.html`
 
 ```html
 <link rel="stylesheet" href="mystyle.css" />
 ```
 
+<img alt="html-head link source" src="./code_sandbox/snaps/html-head-02-code.png" />
+
 <img alt="html-head link result" src="./code_sandbox/snaps/html-head-02-result.png" />
 
-Meta (`meta.html`):
+- [x] **Outcome:** the page demonstrates **Link** as shown in the result snap.
 
-<img alt="html-head meta source" src="./code_sandbox/snaps/html-head-03-code.png" />
+<a id="html-head-example-04"></a>
+
+### **Example 4: Meta**
+
+- [x] **The `<meta>` element**
+  - Character set, description, keywords, author, viewport; not displayed.
+  - Used by browsers, search engines, and other services.
+  - Examples from the page: `charset="UTF-8"`; keywords; description **Free Web tutorials**; author **John Doe**; `http-equiv="refresh" content="30"` (reload every 30 seconds — omitted from the sandbox so it does not auto-refresh); viewport (below).
+  - Sandbox: `meta.html`.
+
+Sandbox: `code_sandbox/html-head/meta.html`
 
 ```html
 <meta charset="UTF-8" />
@@ -6486,11 +7240,22 @@ Meta (`meta.html`):
 <meta name="author" content="John Doe" />
 ```
 
+<img alt="html-head meta source" src="./code_sandbox/snaps/html-head-03-code.png" />
+
 <img alt="html-head meta result" src="./code_sandbox/snaps/html-head-03-result.png" />
 
-Script (`script.html`):
+- [x] **Outcome:** the page demonstrates **Meta** as shown in the result snap.
 
-<img alt="html-head script source" src="./code_sandbox/snaps/html-head-04-code.png" />
+<a id="html-head-example-05"></a>
+
+### **Example 5: Script**
+
+- [x] **The `<script>` element**
+  - Client-side JavaScript.
+  - Example: `myFunction()` writes **Hello JavaScript!** into `#demo`.
+  - Sandbox: `script.html`.
+
+Sandbox: `code_sandbox/html-head/script.html`
 
 ```html
 <script>
@@ -6500,17 +7265,43 @@ Script (`script.html`):
 </script>
 ```
 
+<img alt="html-head script source" src="./code_sandbox/snaps/html-head-04-code.png" />
+
 <img alt="html-head script result" src="./code_sandbox/snaps/html-head-04-result.png" />
 
-Base (`base.html`):
+- [x] **Outcome:** the browser shows **function myFunction() { document.getElementById("demo").innerHTML = "Hello JavaScript!"; }**.
 
-<img alt="html-head base source" src="./code_sandbox/snaps/html-head-05-code.png" />
+<a id="html-head-example-06"></a>
+
+### **Example 6: Base**
+
+- [x] **The `<base>` element**
+  - Default **URL and/or target** for relative URLs.
+  - Must have **`href` or `target` or both**.
+  - **Only one** `<base>` per document.
+  - Example: `href="https://www.w3schools.com/" target="_blank"` so `images/stickman.gif` and `tags/tag_base.asp` resolve on W3Schools and open in a new tab.
+  - Sandbox: `base.html`.
+    | Tag | Description |
+    | ---------- | -------------------------------------------------------- |
+    | `<head>` | Defines information about the document |
+    | `<title>` | Defines the title of a document |
+    | `<base>` | Default address or target for all links on a page |
+    | `<link>` | Relationship between a document and an external resource |
+    | `<meta>` | Metadata about an HTML document |
+    | `<script>` | A client-side script |
+    | `<style>` | Style information for a document |
+
+Sandbox: `code_sandbox/html-head/base.html`
 
 ```html
 <base href="https://www.w3schools.com/" target="_blank" />
 ```
 
+<img alt="html-head base source" src="./code_sandbox/snaps/html-head-05-code.png" />
+
 <img alt="html-head base result" src="./code_sandbox/snaps/html-head-05-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Base** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -6610,6 +7401,11 @@ Then open `http://127.0.0.1:8766/html-head/`.
 
 Sites often show content in **multiple columns** (magazine/newspaper). HTML has **semantic** layout tags (`<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, `<footer>`, plus `<details>`/`<summary>`). This chapter also lists four **multicolumn techniques**: CSS **frameworks**, **float**, **flexbox**, and **grid**.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Semantic skeleton (float page `index.html` [View](#html-layout-example-01)
+- [x] **Example 2:** Flex [View](#html-layout-example-02)
+
 ## Detailed Explanation
 
 - [x] **Example layout**
@@ -6617,7 +7413,6 @@ Sites often show content in **multiple columns** (magazine/newspaper). HTML has 
   - Sandbox float version: `code_sandbox/html-layout/index.html`.
 
 <img alt="html-layout float result" src="./code_sandbox/snaps/html-layout-result.png" />
-
 - [x] **HTML layout elements**
   - `<header>` — header for a document or section.
   - `<nav>` — a set of navigation links.
@@ -6633,14 +7428,12 @@ Sites often show content in **multiple columns** (magazine/newspaper). HTML has 
   - **CSS float** — easy (`float` and `clear`); elements stay in document flow, which can limit flexibility.
   - **CSS flexbox** — predictable when the layout must fit **different screen sizes**.
   - **CSS grid** — rows and columns without floats/positioning.
-- [x] **Float vs flex in the sandbox**
-  - Float: `nav` 30% left, `article` 70% left, `section::after` clears.
-  - Flex: `section { display: flex; }` with the same 30%/70% widths.
-  - Sandbox: `flex.html`.
 
-Semantic skeleton (float page `index.html`):
+<a id="html-layout-example-01"></a>
 
-<img alt="html-layout float source" src="./code_sandbox/snaps/html-layout-code.png" />
+### **Example 1: Semantic skeleton (float page `index.html`**
+
+- [x] This example runs the tested markup.
 
 ```html
 <header>Cities</header>
@@ -6651,11 +7444,22 @@ Semantic skeleton (float page `index.html`):
 <footer>Footer</footer>
 ```
 
+<img alt="html-layout float source" src="./code_sandbox/snaps/html-layout-code.png" />
+
 <img alt="html-layout float result" src="./code_sandbox/snaps/html-layout-result.png" />
 
-Flex (`flex.html`):
+- [x] **Outcome:** the browser shows **Cities London Paris Tokyo London ... Footer**.
 
-<img alt="html-layout flex source" src="./code_sandbox/snaps/html-layout-01-code.png" />
+<a id="html-layout-example-02"></a>
+
+### **Example 2: Flex**
+
+- [x] **Float vs flex in the sandbox**
+  - Float: `nav` 30% left, `article` 70% left, `section::after` clears.
+  - Flex: `section { display: flex; }` with the same 30%/70% widths.
+  - Sandbox: `flex.html`.
+
+Sandbox: `code_sandbox/html-layout/flex.html`
 
 ```css
 section {
@@ -6669,7 +7473,11 @@ article {
 }
 ```
 
+<img alt="html-layout flex source" src="./code_sandbox/snaps/html-layout-01-code.png" />
+
 <img alt="html-layout flex result" src="./code_sandbox/snaps/html-layout-01-result.png" />
+
+- [x] **Outcome:** the browser shows **section { display: flex; } nav { width: 30%; } article { width: 70%; }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -6768,28 +7576,14 @@ Use semantic tags for page regions. Build columns with a framework, float, flexb
 
 **Responsive web design** makes pages look good on **all devices**. HTML and CSS **resize, hide, shrink, or enlarge** content for desktops, tablets, and phones. This chapter covers the **viewport** meta tag, **responsive images**, **vw** text, **media queries**, and CSS **frameworks** (W3.CSS, Bootstrap).
 
+This section has **4** examples:
+
+- [x] **Example 1:** Viewport [View](#html-responsive-example-01)
+- [x] **Example 2:** `width: 100%` [View](#html-responsive-example-02)
+- [x] **Example 3:** `max-width: 100%` [View](#html-responsive-example-03)
+- [x] **Example 4:** Media query [View](#html-responsive-example-04)
+
 ## Detailed Explanation
-
-- [x] **Viewport**
-  - Add to **all** pages: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
-  - Tells the browser how to control **dimensions and scaling**.
-  - Sandbox: `code_sandbox/html-responsive/index.html` (also shows `font-size:10vw`).
-
-<img alt="html-responsive viewport vw result" src="./code_sandbox/snaps/html-responsive-result.png" />
-
-- [x] **Responsive images — `width: 100%`**
-  - The image scales up and down with the browser.
-  - It can grow **larger than the original**.
-  - Sandbox: `width.html`.
-
-<img alt="html-responsive width 100 result" src="./code_sandbox/snaps/html-responsive-01-result.png" />
-
-- [x] **Responsive images — `max-width: 100%`**
-  - Scales **down** if needed, but **never larger** than the original.
-  - Often the **better** choice. Use with `height: auto`.
-  - Sandbox: `maxwidth.html`.
-
-<img alt="html-responsive max-width result" src="./code_sandbox/snaps/html-responsive-02-result.png" />
 
 - [x] **`<picture>` (from the page)**
   - Different images for different window sizes (`srcset` + `media`).
@@ -6797,51 +7591,83 @@ Use semantic tags for page regions. Build columns with a framework, float, flexb
 - [x] **Responsive text size**
   - Unit **`vw`** = viewport width. `1vw` = 1% of the viewport width.
   - Example: `<h1 style="font-size:10vw">Hello World</h1>`.
-- [x] **Media queries**
-  - Completely different styles for different sizes.
-  - Example: `.left`/`.right` 20%, `.main` 60% floated; at **max-width 800px** all become **100%** (stack).
-  - Sandbox: `media.html`.
-
-<img alt="html-responsive media query result" src="./code_sandbox/snaps/html-responsive-03-result.png" />
-
 - [x] **Frameworks**
   - Popular CSS frameworks include responsive design (free, easy).
   - **W3.CSS** — desktop/tablet/mobile by default; smaller/faster; no jQuery required.
   - **Bootstrap** — example uses Bootstrap 5 CDN and a three-column row.
 
-Viewport (`index.html`):
+<a id="html-responsive-example-01"></a>
 
-<img alt="html-responsive viewport source" src="./code_sandbox/snaps/html-responsive-code.png" />
+### **Example 1: Viewport**
+
+- [x] **Viewport**
+  - Add to **all** pages: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+  - Tells the browser how to control **dimensions and scaling**.
+
+Sandbox: `code_sandbox/html-responsive/index.html`
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
+<img alt="html-responsive viewport source" src="./code_sandbox/snaps/html-responsive-code.png" />
+
 <img alt="html-responsive viewport vw result" src="./code_sandbox/snaps/html-responsive-result.png" />
 
-`width: 100%` (`width.html`):
+- [x] **Outcome:** the page demonstrates **Viewport** as shown in the result snap.
 
-<img alt="html-responsive width source" src="./code_sandbox/snaps/html-responsive-01-code.png" />
+<a id="html-responsive-example-02"></a>
+
+### **Example 2: `width: 100%`**
+
+- [x] **Responsive images — `width: 100%`**
+  - The image scales up and down with the browser.
+  - It can grow **larger than the original**.
+  - Sandbox: `width.html`.
+
+Sandbox: `code_sandbox/html-responsive/width.html`
 
 ```html
 <img src="img_girl.jpg" style="width:100%;" />
 ```
 
+<img alt="html-responsive width source" src="./code_sandbox/snaps/html-responsive-01-code.png" />
+
 <img alt="html-responsive width 100 result" src="./code_sandbox/snaps/html-responsive-01-result.png" />
 
-`max-width: 100%` (`maxwidth.html`):
+- [x] **Outcome:** the page demonstrates **`width: 100%`** as shown in the result snap.
 
-<img alt="html-responsive max-width source" src="./code_sandbox/snaps/html-responsive-02-code.png" />
+<a id="html-responsive-example-03"></a>
+
+### **Example 3: `max-width: 100%`**
+
+- [x] **Responsive images — `max-width: 100%`**
+  - Scales **down** if needed, but **never larger** than the original.
+  - Often the **better** choice. Use with `height: auto`.
+  - Sandbox: `maxwidth.html`.
+
+Sandbox: `code_sandbox/html-responsive/maxwidth.html`
 
 ```html
 <img src="img_girl.jpg" style="max-width:100%;height:auto;" />
 ```
 
+<img alt="html-responsive max-width source" src="./code_sandbox/snaps/html-responsive-02-code.png" />
+
 <img alt="html-responsive max-width result" src="./code_sandbox/snaps/html-responsive-02-result.png" />
 
-Media query (`media.html`):
+- [x] **Outcome:** the page demonstrates **`max-width: 100%`** as shown in the result snap.
 
-<img alt="html-responsive media query source" src="./code_sandbox/snaps/html-responsive-03-code.png" />
+<a id="html-responsive-example-04"></a>
+
+### **Example 4: Media query**
+
+- [x] **Media queries**
+  - Completely different styles for different sizes.
+  - Example: `.left`/`.right` 20%, `.main` 60% floated; at **max-width 800px** all become **100%** (stack).
+  - Sandbox: `media.html`.
+
+Sandbox: `code_sandbox/html-responsive/media.html`
 
 ```css
 @media screen and (max-width: 800px) {
@@ -6853,7 +7679,11 @@ Media query (`media.html`):
 }
 ```
 
+<img alt="html-responsive media query source" src="./code_sandbox/snaps/html-responsive-03-code.png" />
+
 <img alt="html-responsive media query result" src="./code_sandbox/snaps/html-responsive-03-result.png" />
+
+- [x] **Outcome:** the browser shows **@media screen and (max-width: 800px) { .left, .main, .right { width: 100%; } }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -6952,60 +7782,44 @@ Add the viewport meta tag. Make images fluid with `max-width: 100%` (or `width: 
 
 HTML has elements for **user input and computer code**: `<kbd>`, `<samp>`, `<code>`, `<var>`, and `<pre>`. `<kbd>`, `<samp>`, and `<code>` use the browser’s **monospace** font. `<code>` does **not** keep extra whitespace; wrap it in `<pre>` to preserve line breaks.
 
+This section has **5** examples:
+
+- [x] **Example 1:** `<kbd>` [View](#html-computercode-example-01)
+- [x] **Example 2:** `<samp>` [View](#html-computercode-example-02)
+- [x] **Example 3:** `<code>` [View](#html-computercode-example-03)
+- [x] **Example 4:** `<pre><code>` [View](#html-computercode-example-04)
+- [x] **Example 5:** `<var>` [View](#html-computercode-example-05)
+
 ## Detailed Explanation
+
+<a id="html-computercode-example-01"></a>
+
+### **Example 1: `<kbd>`**
 
 - [x] **`<kbd>` — keyboard input**
   - Example: Save the document by pressing **Ctrl + S**.
-  - Sandbox: `code_sandbox/html-computercode/index.html`.
 
-<img alt="html-computercode kbd result" src="./code_sandbox/snaps/html-computercode-result.png" />
-
-- [x] **`<samp>` — program output**
-  - Example: **File not found. Press F1 to continue**.
-  - Sandbox: `samp.html`.
-
-<img alt="html-computercode samp result" src="./code_sandbox/snaps/html-computercode-01-result.png" />
-
-- [x] **`<code>` — computer code**
-  - Example: `x = 5; y = 6; z = x + y;` (newlines **collapse**).
-  - Sandbox: `code.html`.
-
-<img alt="html-computercode code result" src="./code_sandbox/snaps/html-computercode-02-result.png" />
-
-- [x] **Preserve line-breaks with `<pre>`**
-  - Put `<code>` inside `<pre>` to keep whitespace and line breaks.
-  - Sandbox: `pre.html`.
-
-<img alt="html-computercode pre result" src="./code_sandbox/snaps/html-computercode-03-result.png" />
-
-- [x] **`<var>` — variables**
-  - Programming or math. Typically **italic**.
-  - Example: area of a triangle 1/2 × **b** × **h**.
-  - Sandbox: `var.html`.
-
-<img alt="html-computercode var result" src="./code_sandbox/snaps/html-computercode-04-result.png" />
-
-| Tag      | Description       |
-| -------- | ----------------- |
-| `<code>` | Programming code  |
-| `<kbd>`  | Keyboard input    |
-| `<samp>` | Computer output   |
-| `<var>`  | A variable        |
-| `<pre>`  | Preformatted text |
-
-`<kbd>` (`index.html`):
-
-<img alt="html-computercode kbd source" src="./code_sandbox/snaps/html-computercode-code.png" />
+Sandbox: `code_sandbox/html-computercode/index.html`
 
 ```html
 <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
 ```
 
+<img alt="html-computercode kbd source" src="./code_sandbox/snaps/html-computercode-code.png" />
+
 <img alt="html-computercode kbd result" src="./code_sandbox/snaps/html-computercode-result.png" />
 
-`<samp>` (`samp.html`):
+- [x] **Outcome:** the browser shows **Save the document by pressing Ctrl + S**.
 
-<img alt="html-computercode samp source" src="./code_sandbox/snaps/html-computercode-01-code.png" />
+<a id="html-computercode-example-02"></a>
+
+### **Example 2: `<samp>`**
+
+- [x] **`<samp>` — program output**
+  - Example: **File not found. Press F1 to continue**.
+  - Sandbox: `samp.html`.
+
+Sandbox: `code_sandbox/html-computercode/samp.html`
 
 ```html
 <p>
@@ -7013,21 +7827,41 @@ HTML has elements for **user input and computer code**: `<kbd>`, `<samp>`, `<cod
 </p>
 ```
 
+<img alt="html-computercode samp source" src="./code_sandbox/snaps/html-computercode-01-code.png" />
+
 <img alt="html-computercode samp result" src="./code_sandbox/snaps/html-computercode-01-result.png" />
 
-`<code>` (`code.html`):
+- [x] **Outcome:** the browser shows **File not found. Press F1 to continue**.
 
-<img alt="html-computercode code source" src="./code_sandbox/snaps/html-computercode-02-code.png" />
+<a id="html-computercode-example-03"></a>
+
+### **Example 3: `<code>`**
+
+- [x] **`<code>` — computer code**
+  - Example: `x = 5; y = 6; z = x + y;` (newlines **collapse**).
+  - Sandbox: `code.html`.
+
+Sandbox: `code_sandbox/html-computercode/code.html`
 
 ```html
 <code> x = 5; y = 6; z = x + y; </code>
 ```
 
+<img alt="html-computercode code source" src="./code_sandbox/snaps/html-computercode-02-code.png" />
+
 <img alt="html-computercode code result" src="./code_sandbox/snaps/html-computercode-02-result.png" />
 
-`<pre><code>` (`pre.html`):
+- [x] **Outcome:** the browser shows **x = 5; y = 6; z = x + y;**.
 
-<img alt="html-computercode pre source" src="./code_sandbox/snaps/html-computercode-03-code.png" />
+<a id="html-computercode-example-04"></a>
+
+### **Example 4: `<pre><code>`**
+
+- [x] **Preserve line-breaks with `<pre>`**
+  - Put `<code>` inside `<pre>` to keep whitespace and line breaks.
+  - Sandbox: `pre.html`.
+
+Sandbox: `code_sandbox/html-computercode/pre.html`
 
 ```html
 <pre>
@@ -7039,11 +7873,29 @@ z = x + y;
 </pre>
 ```
 
+<img alt="html-computercode pre source" src="./code_sandbox/snaps/html-computercode-03-code.png" />
+
 <img alt="html-computercode pre result" src="./code_sandbox/snaps/html-computercode-03-result.png" />
 
-`<var>` (`var.html`):
+- [x] **Outcome:** the browser shows **x = 5; y = 6; z = x + y;**.
 
-<img alt="html-computercode var source" src="./code_sandbox/snaps/html-computercode-04-code.png" />
+<a id="html-computercode-example-05"></a>
+
+### **Example 5: `<var>`**
+
+- [x] **`<var>` — variables**
+  - Programming or math. Typically **italic**.
+  - Example: area of a triangle 1/2 × **b** × **h**.
+  - Sandbox: `var.html`.
+    | Tag | Description |
+    | -------- | ----------------- |
+    | `<code>` | Programming code |
+    | `<kbd>` | Keyboard input |
+    | `<samp>` | Computer output |
+    | `<var>` | A variable |
+    | `<pre>` | Preformatted text |
+
+Sandbox: `code_sandbox/html-computercode/var.html`
 
 ```html
 <p>
@@ -7052,7 +7904,11 @@ z = x + y;
 </p>
 ```
 
+<img alt="html-computercode var source" src="./code_sandbox/snaps/html-computercode-04-code.png" />
+
 <img alt="html-computercode var result" src="./code_sandbox/snaps/html-computercode-04-result.png" />
+
+- [x] **Outcome:** the browser shows **The area of a triangle is: 1/2 x b x h , where b is the base, and h is the vertical height.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -7140,6 +7996,14 @@ Use `<kbd>` for keys, `<samp>` for program output, `<code>` for snippets, and `<
 
 **Semantic** elements have **meaning** for the browser and the developer (`<article>` vs a meaningless `<div>`). This chapter covers `<section>`, `<article>`, `<header>`, `<footer>`, `<nav>`, `<aside>`, and `<figure>`/`<figcaption>`, plus why the semantic web matters.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Section [View](#html-semantics-example-01)
+- [x] **Example 2:** Article [View](#html-semantics-example-02)
+- [x] **Example 3:** Nav and footer [View](#html-semantics-example-03)
+- [x] **Example 4:** Aside [View](#html-semantics-example-04)
+- [x] **Example 5:** Figure [View](#html-semantics-example-05)
+
 ## Detailed Explanation
 
 - [x] **What are semantic elements?**
@@ -7147,23 +8011,6 @@ Use `<kbd>` for keys, `<samp>` for program output, `<code>` for snippets, and `<
   - Non-semantic: `<div>`, `<span>` (tell nothing about content).
   - Semantic: `<img>`, `<table>`, `<article>` (define the content).
   - Sites used to fake structure with `<div id="nav">`, `<div class="header">`, `<div id="footer">`. HTML now has real tags for those parts.
-- [x] **`<section>`**
-  - A **thematic grouping**, typically with a heading (W3C).
-  - Uses: chapters, introduction, news, contact.
-  - Example: two WWF sections.
-  - Sandbox: `code_sandbox/html-semantics/index.html`.
-
-<img alt="html-semantics section result" src="./code_sandbox/snaps/html-semantics-result.png" />
-
-- [x] **`<article>`**
-  - Independent, self-contained content you could **distribute alone**.
-  - Uses: forum posts, blogs, comments, product cards, newspaper articles.
-  - Nested styled browsers example (Chrome, Firefox, Edge).
-  - Sandbox: `article.html`.
-  - You **cannot** decide nesting from the definitions alone: pages nest `<section>` in `<article>` and the reverse.
-
-<img alt="html-semantics article result" src="./code_sandbox/snaps/html-semantics-01-result.png" />
-
 - [x] **`<header>`**
   - Introductory content or navigational links: headings, logo, authorship.
   - Several headers per document are OK.
@@ -7171,28 +8018,6 @@ Use `<kbd>` for keys, `<samp>` for program output, `<code>` for snippets, and `<
 - [x] **`<footer>`**
   - Authorship, copyright, contact, sitemap, back-to-top, related docs.
   - Several footers per document are OK.
-- [x] **`<nav>`**
-  - **Major** navigation blocks only (not every link).
-  - Helps screen readers skip or find nav.
-  - Sandbox: `nav-footer.html`.
-
-<img alt="html-semantics nav footer result" src="./code_sandbox/snaps/html-semantics-02-result.png" />
-
-- [x] **`<aside>`**
-  - Sidebar-like content **indirectly related** to the surroundings.
-  - Example: Epcot paragraph with a floated gray aside.
-  - Sandbox: `aside.html`.
-
-<img alt="html-semantics aside result" src="./code_sandbox/snaps/html-semantics-03-result.png" />
-
-- [x] **`<figure>` and `<figcaption>`**
-  - Self-contained illustrations, diagrams, photos, code listings.
-  - Caption is first or last child of `<figure>`.
-  - Example: Trulli photo, **Fig1. - Trulli, Puglia, Italy.**
-  - Sandbox: `figure.html`.
-
-<img alt="html-semantics figure result" src="./code_sandbox/snaps/html-semantics-04-result.png" />
-
 - [x] **Why semantic elements?**
   - W3C: a semantic Web lets data be **shared and reused** across applications, enterprises, and communities.
 
@@ -7212,9 +8037,16 @@ Use `<kbd>` for keys, `<samp>` for program output, `<code>` for snippets, and `<
 | `<summary>`    | Visible heading for `<details>`               |
 | `<time>`       | A date/time                                   |
 
-Section (`index.html`):
+<a id="html-semantics-example-01"></a>
 
-<img alt="html-semantics section source" src="./code_sandbox/snaps/html-semantics-code.png" />
+### **Example 1: Section**
+
+- [x] **`<section>`**
+  - A **thematic grouping**, typically with a heading (W3C).
+  - Uses: chapters, introduction, news, contact.
+  - Example: two WWF sections.
+
+Sandbox: `code_sandbox/html-semantics/index.html`
 
 ```html
 <section>
@@ -7223,11 +8055,24 @@ Section (`index.html`):
 </section>
 ```
 
+<img alt="html-semantics section source" src="./code_sandbox/snaps/html-semantics-code.png" />
+
 <img alt="html-semantics section result" src="./code_sandbox/snaps/html-semantics-result.png" />
 
-Article (`article.html`):
+- [x] **Outcome:** the browser shows **WWF**, **...**.
 
-<img alt="html-semantics article source" src="./code_sandbox/snaps/html-semantics-01-code.png" />
+<a id="html-semantics-example-02"></a>
+
+### **Example 2: Article**
+
+- [x] **`<article>`**
+  - Independent, self-contained content you could **distribute alone**.
+  - Uses: forum posts, blogs, comments, product cards, newspaper articles.
+  - Nested styled browsers example (Chrome, Firefox, Edge).
+  - Sandbox: `article.html`.
+  - You **cannot** decide nesting from the definitions alone: pages nest `<section>` in `<article>` and the reverse.
+
+Sandbox: `code_sandbox/html-semantics/article.html`
 
 ```html
 <article class="all-browsers">
@@ -7236,11 +8081,22 @@ Article (`article.html`):
 </article>
 ```
 
+<img alt="html-semantics article source" src="./code_sandbox/snaps/html-semantics-01-code.png" />
+
 <img alt="html-semantics article result" src="./code_sandbox/snaps/html-semantics-01-result.png" />
 
-Nav and footer (`nav-footer.html`):
+- [x] **Outcome:** the browser shows **Most Popular Browsers**, **...**.
 
-<img alt="html-semantics nav footer source" src="./code_sandbox/snaps/html-semantics-02-code.png" />
+<a id="html-semantics-example-03"></a>
+
+### **Example 3: Nav and footer**
+
+- [x] **`<nav>`**
+  - **Major** navigation blocks only (not every link).
+  - Helps screen readers skip or find nav.
+  - Sandbox: `nav-footer.html`.
+
+Sandbox: `code_sandbox/html-semantics/nav-footer.html`
 
 ```html
 <nav><a href="/html/">HTML</a> | <a href="/css/">CSS</a></nav>
@@ -7249,11 +8105,22 @@ Nav and footer (`nav-footer.html`):
 </footer>
 ```
 
+<img alt="html-semantics nav footer source" src="./code_sandbox/snaps/html-semantics-02-code.png" />
+
 <img alt="html-semantics nav footer result" src="./code_sandbox/snaps/html-semantics-02-result.png" />
 
-Aside (`aside.html`):
+- [x] **Outcome:** the browser shows **HTML**, **| CSS**, **Author: Hege Refsnes**.
 
-<img alt="html-semantics aside source" src="./code_sandbox/snaps/html-semantics-03-code.png" />
+<a id="html-semantics-example-04"></a>
+
+### **Example 4: Aside**
+
+- [x] **`<aside>`**
+  - Sidebar-like content **indirectly related** to the surroundings.
+  - Example: Epcot paragraph with a floated gray aside.
+  - Sandbox: `aside.html`.
+
+Sandbox: `code_sandbox/html-semantics/aside.html`
 
 ```html
 <aside>
@@ -7261,11 +8128,23 @@ Aside (`aside.html`):
 </aside>
 ```
 
+<img alt="html-semantics aside source" src="./code_sandbox/snaps/html-semantics-03-code.png" />
+
 <img alt="html-semantics aside result" src="./code_sandbox/snaps/html-semantics-03-result.png" />
 
-Figure (`figure.html`):
+- [x] **Outcome:** the browser shows **The Epcot center is a theme park...**.
 
-<img alt="html-semantics figure source" src="./code_sandbox/snaps/html-semantics-04-code.png" />
+<a id="html-semantics-example-05"></a>
+
+### **Example 5: Figure**
+
+- [x] **`<figure>` and `<figcaption>`**
+  - Self-contained illustrations, diagrams, photos, code listings.
+  - Caption is first or last child of `<figure>`.
+  - Example: Trulli photo, **Fig1. - Trulli, Puglia, Italy.**
+  - Sandbox: `figure.html`.
+
+Sandbox: `code_sandbox/html-semantics/figure.html`
 
 ```html
 <figure>
@@ -7274,7 +8153,11 @@ Figure (`figure.html`):
 </figure>
 ```
 
+<img alt="html-semantics figure source" src="./code_sandbox/snaps/html-semantics-04-code.png" />
+
 <img alt="html-semantics figure result" src="./code_sandbox/snaps/html-semantics-04-result.png" />
+
+- [x] **Outcome:** the browser shows **Fig1. - Trulli, Puglia, Italy.**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -7374,6 +8257,10 @@ Prefer semantic tags over anonymous divs. `<section>` groups themes; `<article>`
 
 **Consistent, clean, tidy** HTML is easier for others to read. This chapter is W3Schools’ **coding conventions**: doctype, lowercase names, quoted attributes, titles, `lang`, charset, viewport, comments, CSS/JS loading, and **lowercase file names**.
 
+This section has **1** example:
+
+- [x] **Example 1:** Good document [View](#html-style-guide-example-01)
+
 ## Detailed Explanation
 
 - [x] **Always declare document type** first: `<!DOCTYPE html>`.
@@ -7392,11 +8279,14 @@ Prefer semantic tags over anonymous divs. `<section>` groups themes; `<article>`
 - [x] Style sheets: `<link rel="stylesheet" href="styles.css">` (`type` not needed). Short CSS can be one line; long rules: `{` on the same line as the selector, two-space indent, semicolon including the last property, quotes only if the value has spaces.
 - [x] Scripts: `<script src="myscript.js">` (`type` not needed). Untidy HTML can cause JS errors: `Demo` vs `demo` are **different** ids.
 - [x] **Lowercase file names** (Apache/Unix are case-sensitive; IIS is not). Extensions: `.html`/`.htm`, `.css`, `.js`. `.htm` and `.html` are the same to browsers. Default filenames: `index.html`, `index.htm`, `default.html`, `default.htm` depending on the server.
-- [x] Sandbox good example: `code_sandbox/html-style-guide/index.html`.
 
-Good document (`index.html`):
+<a id="html-style-guide-example-01"></a>
 
-<img alt="html-style-guide source" src="./code_sandbox/snaps/html-style-guide-code.png" />
+### **Example 1: Good document**
+
+- [x] This example runs the tested markup in `code_sandbox/html-style-guide/index.html`.
+
+Sandbox: `code_sandbox/html-style-guide/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -7412,7 +8302,11 @@ Good document (`index.html`):
 </html>
 ```
 
+<img alt="html-style-guide source" src="./code_sandbox/snaps/html-style-guide-code.png" />
+
 <img alt="html-style-guide result" src="./code_sandbox/snaps/html-style-guide-result.png" />
+
+- [x] **Outcome:** the browser shows **HTML Style Guide and Coding Conventions Famous Cities**, **...**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -7516,6 +8410,10 @@ Start with `<!DOCTYPE html>`, use lowercase quoted markup, close tags, keep `tit
 
 Reserved characters in HTML must be replaced with **character entities**. This chapter covers entity **names** (`&lt;`) and **numbers** (`&#60;`), the **non-breaking space**, a table of useful entities, and **combining diacritical marks**.
 
+This section has **1** example:
+
+- [x] **Example 1:** Main document [View](#html-entities-example-01)
+
 ## Detailed Explanation
 
 - [x] **Reserved characters**
@@ -7539,11 +8437,14 @@ Reserved characters in HTML must be replaced with **character entities**. This c
   - Also: `&cent;` `&pound;` `&yen;` `&euro;` `&reg;` `&trade;`
 - [x] **Combining diacritical marks**
   - A glyph added to a letter (grave `` ` ``, acute ´). Combine with a letter: `a&#768;` → à, `a&#769;` → á, `a&#770;` → â, `a&#771;` → ã (same for `O`).
-- [x] Sandbox: `code_sandbox/html-entities/index.html`.
+
+<a id="html-entities-example-01"></a>
+
+### **Example 1: Main document**
+
+- [x] This example runs the tested markup in `code_sandbox/html-entities/index.html`.
 
 Sandbox: `code_sandbox/html-entities/index.html`
-
-<img alt="html-entities source" src="./code_sandbox/snaps/html-entities-code.png" />
 
 ```html
 <p>Less than: &lt;</p>
@@ -7554,7 +8455,11 @@ Sandbox: `code_sandbox/html-entities/index.html`
 <p>a grave: a&#768; &nbsp; a acute: a&#769;</p>
 ```
 
+<img alt="html-entities source" src="./code_sandbox/snaps/html-entities-code.png" />
+
 <img alt="html-entities result" src="./code_sandbox/snaps/html-entities-result.png" />
+
+- [x] **Outcome:** the browser shows **Less than: &lt;**, **Greater than: &gt;**, **Ampersand: &amp;**, **Copyright: &copy; W3Schools.com**, **10&nbsp;km/h &nbsp; 10&nbsp;PM**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -7655,6 +8560,10 @@ Use `&lt;` `&gt;` `&amp;` for reserved characters, `&nbsp;` for sticky or extra 
 
 Symbols that are **not on the keyboard** can be added with entity **names**, **decimal** numbers, or **hex** numbers. This chapter shows the euro sign three ways, then tables of common symbols, math operators, and Greek letters.
 
+This section has **1** example:
+
+- [x] **Example 1:** Main document [View](#html-symbols-example-01)
+
 ## Detailed Explanation
 
 - [x] **Three ways to write a symbol** (euro example)
@@ -7669,11 +8578,14 @@ Symbols that are **not on the keyboard** can be added with entity **names**, **d
 - [x] **Math entities** (examples): `&forall;` `&part;` `&exist;` `&empty;` `&nabla;` `&isin;` `&notin;` `&ni;` `&prod;` `&sum;`
 - [x] **Greek letters** (examples): `&Alpha;` `&Beta;` `&Gamma;` `&Delta;` `&Epsilon;` `&Zeta;`
 - [x] The page also shows more Unicode groups (currency, arrows, weather, chess, music, and so on) as a gallery, with links to full charset references.
-- [x] Sandbox: `code_sandbox/html-symbols/index.html`.
+
+<a id="html-symbols-example-01"></a>
+
+### **Example 1: Main document**
+
+- [x] This example runs the tested markup in `code_sandbox/html-symbols/index.html`.
 
 Sandbox: `code_sandbox/html-symbols/index.html`
-
-<img alt="html-symbols source" src="./code_sandbox/snaps/html-symbols-code.png" />
 
 ```html
 <p>I will display &euro;</p>
@@ -7684,7 +8596,11 @@ Sandbox: `code_sandbox/html-symbols/index.html`
 <p>&sum; &infin; &Alpha; &Omega;</p>
 ```
 
+<img alt="html-symbols source" src="./code_sandbox/snaps/html-symbols-code.png" />
+
 <img alt="html-symbols result" src="./code_sandbox/snaps/html-symbols-result.png" />
+
+- [x] **Outcome:** the browser shows **I will display &euro;**, **I will display &#8364;**, **I will display &#x20AC;**, **&copy; &reg; &trade; &larr; &uarr; &rarr; &darr;**, **&spades; &clubs; &hearts; &diams;**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -7784,6 +8700,10 @@ Add off-keyboard symbols with a name, a decimal (`&#8364;`), or a hex (`&#x20AC;
 
 Emojis look like images, but they are **UTF-8 characters**. This chapter sets `charset="UTF-8"`, shows entity numbers for letters and emojis, and sizes emojis with CSS `font-size` like any other character.
 
+This section has **1** example:
+
+- [x] **Example 1:** Main document [View](#html-emojis-example-01)
+
 ## Detailed Explanation
 
 - [x] **Emojis are characters**, not images — they come from the UTF-8 (Unicode) set (😄 😍 💗). UTF-8 covers almost all characters and symbols.
@@ -7796,11 +8716,14 @@ Emojis look like images, but they are **UTF-8 characters**. This chapter sets `c
   - 😍 `&#128525;`
   - 💗 `&#128151;`
 - [x] **Size like text**: `font-size:48px` on a paragraph of emoji entities.
-- [x] Sandbox: `code_sandbox/html-emojis/index.html` (first emoji, sized row, and A B C vs `&#65; &#66; &#67;`).
+
+<a id="html-emojis-example-01"></a>
+
+### **Example 1: Main document**
+
+- [x] This example runs the tested markup in `code_sandbox/html-emojis/index.html`.
 
 Sandbox: `code_sandbox/html-emojis/index.html`
-
-<img alt="html-emojis source" src="./code_sandbox/snaps/html-emojis-code.png" />
 
 ```html
 <h1>My First Emoji</h1>
@@ -7811,7 +8734,11 @@ Sandbox: `code_sandbox/html-emojis/index.html`
 <p>I will display &#65; &#66; &#67;</p>
 ```
 
+<img alt="html-emojis source" src="./code_sandbox/snaps/html-emojis-code.png" />
+
 <img alt="html-emojis result" src="./code_sandbox/snaps/html-emojis-result.png" />
+
+- [x] **Outcome:** the browser shows **My First Emoji**, **&#128512;**, **Sized Emojis**, **&#128512; &#128516; &#128525; &#128151;**, **I will display A B C**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -7910,6 +8837,11 @@ Emojis are UTF-8 letters. Declare `charset="UTF-8"`, write them as `&#number;`, 
 
 A browser must know the **character set** to display a page correctly. This chapter sets `charset` in `<meta>`, compares **ASCII**, **ANSI (Windows-1252)**, **ISO-8859-1**, and **UTF-8**, and shows why UTF-8 is the HTML recommendation.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Declare UTF-8, then put Unicode in the file [View](#html-charsets-example-01)
+- [x] **Example 2:** Sandbox body [View](#html-charsets-example-02)
+
 ## Detailed Explanation
 
 - [x] **Specify the set** in a meta tag: `<meta charset="UTF-8">`.
@@ -7922,17 +8854,30 @@ A browser must know the **character set** to display a page correctly. This chap
 - [x] **UTF-8**
   - Same as ASCII for 0–127; unused 128–159; same as ANSI and 8859-1 for 160–255; then continues from 256 to **10 000+** characters.
   - `<meta charset="UTF-8">`
-- [x] The page galleries **HTML UTF-8 Characters** (Basic Latin, Latin Extended A–E, IPA, punctuation, super/subscript, Braille). Sandbox: `code_sandbox/html-charsets/index.html`.
 
-Declare UTF-8, then put Unicode in the file:
+<a id="html-charsets-example-01"></a>
 
-<img alt="html-charsets source" src="./code_sandbox/snaps/html-charsets-code.png" />
+### **Example 1: Declare UTF-8, then put Unicode in the file**
+
+- [x] This example runs the tested markup in `code_sandbox/html-charsets/index.html`.
+
+Sandbox: `code_sandbox/html-charsets/index.html`
 
 ```html
 <meta charset="UTF-8" />
 ```
 
-Sandbox body (`html-charsets/index.html`):
+<img alt="html-charsets source" src="./code_sandbox/snaps/html-charsets-code.png" />
+
+- [x] **Outcome:** the page demonstrates **Declare UTF-8, then put Unicode in the file** as shown in the result snap.
+
+<a id="html-charsets-example-02"></a>
+
+### **Example 2: Sandbox body**
+
+- [x] This example runs the tested markup in `code_sandbox/html-charsets/html-charsets/index.html`.
+
+Sandbox: `code_sandbox/html-charsets/html-charsets/index.html`
 
 ```html
 <p>Basic Latin: ABCD abcd 0123 ?#$%</p>
@@ -7942,6 +8887,8 @@ Sandbox body (`html-charsets/index.html`):
 ```
 
 <img alt="html-charsets result" src="./code_sandbox/snaps/html-charsets-result.png" />
+
+- [x] **Outcome:** the browser shows **Basic Latin: ABCD abcd 0123 ?#$%**, **Latin Extended: Ā Ć Ē**, **Punctuation: ‰ ‼ ⁇**, **Diacritics: à á â ã**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -8041,6 +8988,10 @@ Put `<meta charset="UTF-8">` in the head. ASCII, ANSI, and ISO-8859-1 cover a sm
 
 A **URL** is a web address. This chapter explains URL **syntax**, common **schemes**, and **URL encoding**: non-ASCII characters become `%` plus hex, and spaces become `+` or `%20`.
 
+This section has **1** example:
+
+- [x] **Example 1:** Main document [View](#html-url-encode-example-01)
+
 ## Detailed Explanation
 
 - [x] **URL = web address** — words (`w3schools.com`) or an IP (`192.68.20.50`). Names are easier to remember.
@@ -8081,11 +9032,13 @@ A **URL** is a web address. This chapter explains URL **syntax**, common **schem
 | Ä         | `%C4`             | `%C3%84`    |
 | Å         | `%C5`             | `%C3%85`    |
 
-- [x] Sandbox: `code_sandbox/html-url-encode/index.html` (syntax notes + local GET form; the live W3Schools form posts to their server).
+<a id="html-url-encode-example-01"></a>
+
+### **Example 1: Main document**
+
+- [x] This example runs the tested markup in `code_sandbox/html-url-encode/index.html`.
 
 Sandbox: `code_sandbox/html-url-encode/index.html`
-
-<img alt="html-url-encode source" src="./code_sandbox/snaps/html-url-encode-code.png" />
 
 ```html
 <p>Example URL: https://www.w3schools.com/html/default.asp</p>
@@ -8097,7 +9050,11 @@ Sandbox: `code_sandbox/html-url-encode/index.html`
 </form>
 ```
 
+<img alt="html-url-encode source" src="./code_sandbox/snaps/html-url-encode-code.png" />
+
 <img alt="html-url-encode result" src="./code_sandbox/snaps/html-url-encode-result.png" />
+
+- [x] **Outcome:** the browser shows **Example URL: https://www.w3schools.com/html/default.asp**, **Syntax: scheme://prefix.domain:port/path/filename**, **Spaces become + or %20. Euro in UTF-8 is %E2%82%AC.**, **Try It Yourself: Submit**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -8198,6 +9155,13 @@ A URL is `scheme://prefix.domain:port/path/filename`. Use `https` for encrypted 
 
 **XHTML** is a **stricter, XML-based** version of HTML. This chapter defines XHTML, why it exists (well-formed markup and stricter error handling), and the rules that differ from HTML: a mandatory XHTML doctype and `xmlns`, required document elements, proper nesting, closed tags (including empty elements), lowercase names, quoted attributes, and **no attribute minimization**.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Minimum document [View](#html-vs-xhtml-example-01)
+- [x] **Example 2:** Nested and closed [View](#html-vs-xhtml-example-02)
+- [x] **Example 3:** Empty elements [View](#html-vs-xhtml-example-03)
+- [x] **Example 4:** Attributes [View](#html-vs-xhtml-example-04)
+
 ## Detailed Explanation
 
 - [x] **What is XHTML?**
@@ -8226,54 +9190,45 @@ A URL is `scheme://prefix.domain:port/path/filename`. Use `https` for encrypted 
   - Served here as `text/html` so Chrome still displays it. True XHTML is `application/xhtml+xml` and **stops on well-formedness errors**.
 
 <img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
+- [x] **Validate**
+  - The chapter links a **W3C Markup Validation Service** box for checking a URL.
+
+<a id="html-vs-xhtml-example-01"></a>
+
+### **Example 1: Minimum document**
+
+- [x] This example runs the tested markup in `code_sandbox/html-vs-xhtml/index.html`.
+
+Sandbox: `code_sandbox/html-vs-xhtml/index.html`
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Title of document</title>
+  </head>
+  <body>
+    some content here...
+  </body>
+</html>
+```
+
+<img alt="html-xhtml source" src="./code_sandbox/snaps/html-xhtml-code.png" />
+
+<img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
+
+- [x] **Outcome:** the browser shows **Title of document some content here...**.
+
+<a id="html-vs-xhtml-example-02"></a>
+
+### **Example 2: Nested and closed**
 
 - [x] **Proper nesting and closed elements**
   - Correct: `<b><i>Some text</i></b>`. Wrong: `<b><i>Some text</b></i>`.
   - Every `<p>` needs `</p>`. Unclosed paragraphs are invalid XHTML.
   - Sandbox: `nested.html`.
 
-<img alt="html-xhtml nested result" src="./code_sandbox/snaps/html-xhtml-01-result.png" />
-
-- [x] **Empty elements must be closed**
-  - Correct: `<br />`, `<hr />`, `<img src="happy.gif" alt="Happy face" />`.
-  - Wrong in XHTML: `<br>`, `<hr>`, `<img src="happy.gif" alt="Happy face">`.
-  - Sandbox: `empty.html`.
-
-<img alt="html-xhtml empty elements result" src="./code_sandbox/snaps/html-xhtml-02-result.png" />
-
-- [x] **Lowercase names, quoted values, no minimization**
-  - Use `<body>` / `<p>` / `href`, not `<BODY>` / `<P>` / `HREF`.
-  - Quote values: `href="https://www.w3schools.com/html/"` — not `href=https://www.w3schools.com/html/`.
-  - Write `checked="checked"` and `disabled="disabled"`, not bare `checked` / `disabled`.
-  - Sandbox: `attributes.html`.
-
-<img alt="html-xhtml attributes result" src="./code_sandbox/snaps/html-xhtml-03-result.png" />
-
-- [x] **Validate**
-  - The chapter links a **W3C Markup Validation Service** box for checking a URL.
-
-Minimum document (`index.html`):
-
-<img alt="html-xhtml source" src="./code_sandbox/snaps/html-xhtml-code.png" />
-
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Title of document</title>
-</head>
-<body>
-  some content here...
-</body>
-</html>
-```
-
-<img alt="html-xhtml result" src="./code_sandbox/snaps/html-xhtml-result.png" />
-
-Nested and closed (`nested.html`):
-
-<img alt="html-xhtml nested source" src="./code_sandbox/snaps/html-xhtml-01-code.png" />
+Sandbox: `code_sandbox/html-vs-xhtml/nested.html`
 
 ```html
 <b><i>Some text</i></b>
@@ -8281,23 +9236,45 @@ Nested and closed (`nested.html`):
 <p>This is another paragraph</p>
 ```
 
+<img alt="html-xhtml nested source" src="./code_sandbox/snaps/html-xhtml-01-code.png" />
+
 <img alt="html-xhtml nested result" src="./code_sandbox/snaps/html-xhtml-01-result.png" />
 
-Empty elements (`empty.html`):
+- [x] **Outcome:** the browser shows **Some text This is a paragraph**, **This is another paragraph**.
 
-<img alt="html-xhtml empty source" src="./code_sandbox/snaps/html-xhtml-02-code.png" />
+<a id="html-vs-xhtml-example-03"></a>
+
+### **Example 3: Empty elements**
+
+- [x] **Empty elements must be closed**
+  - Sandbox: `empty.html`.
+
+Sandbox: `code_sandbox/html-vs-xhtml/empty.html`
 
 ```html
 A break: <br />
-A horizontal rule: <hr />
+A horizontal rule:
+<hr />
 An image: <img src="happy.gif" alt="Happy face" />
 ```
 
+<img alt="html-xhtml empty source" src="./code_sandbox/snaps/html-xhtml-02-code.png" />
+
 <img alt="html-xhtml empty result" src="./code_sandbox/snaps/html-xhtml-02-result.png" />
 
-Attributes (`attributes.html`):
+- [x] **Outcome:** the browser shows **A break: A horizontal rule: An image:**.
 
-<img alt="html-xhtml attributes source" src="./code_sandbox/snaps/html-xhtml-03-code.png" />
+<a id="html-vs-xhtml-example-04"></a>
+
+### **Example 4: Attributes**
+
+- [x] **Lowercase names, quoted values, no minimization**
+  - Use `<body>` / `<p>` / `href`, not `<BODY>` / `<P>` / `HREF`.
+  - Quote values: `href="https://www.w3schools.com/html/"` — not `href=https://www.w3schools.com/html/`.
+  - Write `checked="checked"` and `disabled="disabled"`, not bare `checked` / `disabled`.
+  - Sandbox: `attributes.html`.
+
+Sandbox: `code_sandbox/html-vs-xhtml/attributes.html`
 
 ```html
 <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
@@ -8305,7 +9282,11 @@ Attributes (`attributes.html`):
 <input type="text" name="lastname" disabled="disabled" />
 ```
 
+<img alt="html-xhtml attributes source" src="./code_sandbox/snaps/html-xhtml-03-code.png" />
+
 <img alt="html-xhtml attributes result" src="./code_sandbox/snaps/html-xhtml-03-result.png" />
+
+- [x] **Outcome:** the browser shows **Visit our HTML tutorial**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -8448,6 +9429,14 @@ XHTML is HTML as XML: well-formed, lowercase, fully nested and closed (including
 
 An HTML **form** collects **user input**, most often sent to a **server** for processing. This chapter introduces `<form>` and `<input>`, **text fields**, `<label>`, **radio buttons**, **checkboxes**, the **submit** button (`action`), and why every submitted field needs a **`name`**.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Text fields [View](#html-forms-example-01)
+- [x] **Example 2:** Radio [View](#html-forms-example-02)
+- [x] **Example 3:** Checkboxes [View](#html-forms-example-03)
+- [x] **Example 4:** Submit [View](#html-forms-example-04)
+- [x] **Example 5:** Missing `name` [View](#html-forms-example-05)
+
 ## Detailed Explanation
 
 - [x] **`<form>`**
@@ -8456,129 +9445,152 @@ An HTML **form** collects **user input**, most often sent to a **server** for pr
 - [x] **`<input>`**
   - The most used form element. Appearance depends on **`type`**.
 
-| Type                    | Description                                      |
-| ----------------------- | ------------------------------------------------ |
-| `type="text"`           | Single-line text field                           |
-| `type="radio"`          | One of many choices                              |
-| `type="checkbox"`       | Zero or more of many choices                     |
-| `type="submit"`         | Submit the form                                  |
-| `type="button"`         | Clickable button                                 |
+| Type              | Description                  |
+| ----------------- | ---------------------------- |
+| `type="text"`     | Single-line text field       |
+| `type="radio"`    | One of many choices          |
+| `type="checkbox"` | Zero or more of many choices |
+| `type="submit"`   | Submit the form              |
+| `type="button"`   | Clickable button             |
 
-  - All types: **HTML Input Types**.
-- [x] **Text fields**
-  - `<input type="text">` is a **single-line** field. Default width is **20 characters**.
-  - The form box itself is **not visible**.
-  - Sandbox: `code_sandbox/html-forms/index.html`.
-
-<img alt="html-forms text fields result" src="./code_sandbox/snaps/html-forms-result.png" />
+- All types: **HTML Input Types**.
 
 - [x] **`<label>`**
   - Labels a form control. Screen readers read the label when the control is focused.
   - Clicking the label text also activates small controls (radio/checkbox).
   - Bind with **`for`** on `<label>` equal to **`id`** on `<input>`.
+
+<a id="html-forms-example-01"></a>
+
+### **Example 1: Text fields**
+
+- [x] **Text fields**
+  - `<input type="text">` is a **single-line** field. Default width is **20 characters**.
+  - The form box itself is **not visible**.
+
+Sandbox: `code_sandbox/html-forms/index.html`
+
+```html
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" />
+</form>
+```
+
+<img alt="html-forms text source" src="./code_sandbox/snaps/html-forms-code.png" />
+
+<img alt="html-forms text fields result" src="./code_sandbox/snaps/html-forms-result.png" />
+
+- [x] **Outcome:** the browser shows **First name: Last name:**.
+
+<a id="html-forms-example-02"></a>
+
+### **Example 2: Radio**
+
 - [x] **Radio buttons**
   - `<input type="radio">` — select **ONE** of a limited set.
   - Same **`name`** (`fav_language`) groups the options.
   - Sandbox: `radio.html`.
 
+Sandbox: `code_sandbox/html-forms/radio.html`
+
+```html
+<p>Choose your favorite Web language:</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML" />
+  <label for="html">HTML</label><br />
+  <input type="radio" id="css" name="fav_language" value="CSS" />
+  <label for="css">CSS</label><br />
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+<img alt="html-forms radio source" src="./code_sandbox/snaps/html-forms-01-code.png" />
+
 <img alt="html-forms radio result" src="./code_sandbox/snaps/html-forms-01-result.png" />
+
+- [x] **Outcome:** the browser shows **Choose your favorite Web language:**, **HTML CSS JavaScript**.
+
+<a id="html-forms-example-03"></a>
+
+### **Example 3: Checkboxes**
 
 - [x] **Checkboxes**
   - `<input type="checkbox">` — select **ZERO or MORE** options.
   - Sandbox: `checkbox.html`.
 
+Sandbox: `code_sandbox/html-forms/checkbox.html`
+
+```html
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+  <label for="vehicle1"> I have a bike</label><br />
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+  <label for="vehicle2"> I have a car</label><br />
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+
+<img alt="html-forms checkbox source" src="./code_sandbox/snaps/html-forms-02-code.png" />
+
 <img alt="html-forms checkbox result" src="./code_sandbox/snaps/html-forms-02-result.png" />
+
+- [x] **Outcome:** the browser shows **I have a bike I have a car I have a boat**.
+
+<a id="html-forms-example-04"></a>
+
+### **Example 4: Submit**
 
 - [x] **Submit button**
   - `<input type="submit">` sends data to the **form-handler** in **`action`** (here `/action_page.php`).
   - Example values: **John** / **Doe**.
   - Sandbox: `submit.html`.
 
+Sandbox: `code_sandbox/html-forms/submit.html`
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
+```
+
+<img alt="html-forms submit source" src="./code_sandbox/snaps/html-forms-03-code.png" />
+
 <img alt="html-forms submit result" src="./code_sandbox/snaps/html-forms-03-result.png" />
+
+- [x] **Outcome:** the browser shows **First name: Last name:**.
+
+<a id="html-forms-example-05"></a>
+
+### **Example 5: Missing `name`**
 
 - [x] **`name` is required to submit**
   - If **`name` is omitted**, that field is **not sent**.
   - Sandbox: `no-name.html` — First name has `id` and `value="John"` but **no `name`**.
 
-Text fields (`index.html`):
-
-<img alt="html-forms text source" src="./code_sandbox/snaps/html-forms-code.png" />
-
-```html
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form>
-```
-
-<img alt="html-forms text fields result" src="./code_sandbox/snaps/html-forms-result.png" />
-
-Radio (`radio.html`):
-
-<img alt="html-forms radio source" src="./code_sandbox/snaps/html-forms-01-code.png" />
-
-```html
-<p>Choose your favorite Web language:</p>
-<form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form>
-```
-
-<img alt="html-forms radio result" src="./code_sandbox/snaps/html-forms-01-result.png" />
-
-Checkboxes (`checkbox.html`):
-
-<img alt="html-forms checkbox source" src="./code_sandbox/snaps/html-forms-02-code.png" />
-
-```html
-<form>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> I have a car</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3"> I have a boat</label>
-</form>
-```
-
-<img alt="html-forms checkbox result" src="./code_sandbox/snaps/html-forms-02-result.png" />
-
-Submit (`submit.html`):
-
-<img alt="html-forms submit source" src="./code_sandbox/snaps/html-forms-03-code.png" />
+Sandbox: `code_sandbox/html-forms/no-name.html`
 
 ```html
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" value="John" /><br /><br />
+  <input type="submit" value="Submit" />
 </form>
 ```
-
-<img alt="html-forms submit result" src="./code_sandbox/snaps/html-forms-03-result.png" />
-
-Missing `name` (`no-name.html`):
 
 <img alt="html-forms missing name source" src="./code_sandbox/snaps/html-forms-04-code.png" />
 
-```html
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" value="John"><br><br>
-  <input type="submit" value="Submit">
-</form>
-```
-
 <img alt="html-forms missing name result" src="./code_sandbox/snaps/html-forms-04-result.png" />
+
+- [x] **Outcome:** the browser shows **First name:**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -8712,30 +9724,87 @@ Then open `http://127.0.0.1:8766/html-forms/`.
 
 This chapter covers attributes of **`<form>`**: **`action`**, **`target`**, **`method`** (GET vs POST), **`autocomplete`**, and **`novalidate`**, plus a short list of the other form attributes.
 
+This section has **5** examples:
+
+- [x] **Example 1:** `action` [View](#html-form-attributes-example-01)
+- [x] **Example 2:** `target` [View](#html-form-attributes-example-02)
+- [x] **Example 3:** `method` [View](#html-form-attributes-example-03)
+- [x] **Example 4:** `autocomplete` [View](#html-form-attributes-example-04)
+- [x] **Example 5:** `novalidate` [View](#html-form-attributes-example-05)
+
 ## Detailed Explanation
+
+- [x] **All `<form>` attributes** (from the page)
+
+| Attribute        | Description                               |
+| ---------------- | ----------------------------------------- |
+| `accept-charset` | Character encodings for submission        |
+| `action`         | Where to send the form-data               |
+| `autocomplete`   | Autocomplete on or off                    |
+| `enctype`        | How to encode data (`method="post"` only) |
+| `method`         | HTTP method                               |
+| `name`           | Name of the form                          |
+| `novalidate`     | Skip validation on submit                 |
+| `rel`            | Relationship to a linked resource         |
+| `target`         | Where to display the response             |
+
+<a id="html-form-attributes-example-01"></a>
+
+### **Example 1: `action`**
 
 - [x] **`action`**
   - What to do when the form is **submitted**. Usually a **server file** that handles the data.
   - Example: `action="/action_page.php"` with John / Doe.
   - **Tip:** If `action` is omitted, it is the **current page**.
-  - Sandbox: `code_sandbox/html-form-attributes/index.html`.
+
+Sandbox: `code_sandbox/html-form-attributes/index.html`
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
+```
+
+<img alt="html-form-attributes action source" src="./code_sandbox/snaps/html-form-attributes-code.png" />
 
 <img alt="html-form-attributes action result" src="./code_sandbox/snaps/html-form-attributes-result.png" />
 
+- [x] **Outcome:** the browser shows **First name: Last name:**.
+
+<a id="html-form-attributes-example-02"></a>
+
+### **Example 2: `target`**
+
 - [x] **`target`** — where to show the response
-
-| Value       | Description                    |
-| ----------- | ------------------------------ |
-| `_blank`    | New window or tab              |
-| `_self`     | Current window (**default**)   |
-| `_parent`   | Parent frame                   |
-| `_top`      | Full body of the window        |
-| `framename` | A named iframe                 |
-
+      | Value | Description |
+      | ----------- | ------------------------------ |
+      | `_blank` | New window or tab |
+      | `_self` | Current window (**default**) |
+      | `_parent` | Parent frame |
+      | `_top` | Full body of the window |
+      | `framename` | A named iframe |
   - Example: `target="_blank"`.
   - Sandbox: `target.html`.
 
+Sandbox: `code_sandbox/html-form-attributes/target.html`
+
+```html
+<form action="/action_page.php" target="_blank"></form>
+```
+
+<img alt="html-form-attributes target source" src="./code_sandbox/snaps/html-form-attributes-01-code.png" />
+
 <img alt="html-form-attributes target result" src="./code_sandbox/snaps/html-form-attributes-01-result.png" />
+
+- [x] **Outcome:** the page demonstrates **`target`** as shown in the result snap.
+
+<a id="html-form-attributes-example-03"></a>
+
+### **Example 3: `method`**
 
 - [x] **`method`** — HTTP method (default **GET**)
   - **GET:** data appended to the **URL** as name/value pairs. Visible in the address bar. URL length limit (~**2048** characters). Can be **bookmarked**. Never use GET for **sensitive** data. Good for search-style queries.
@@ -8744,91 +9813,60 @@ This chapter covers attributes of **`<form>`**: **`action`**, **`target`**, **`m
   - The page uses `action="/action_page.php"`. The sandbox GET/POST demo uses `action=""` so Submit GET shows `?fname=John&lname=Doe` locally.
   - Sandbox: `method.html`.
 
+Sandbox: `code_sandbox/html-form-attributes/method.html`
+
+```html
+<form action="/action_page.php" method="get">
+  <form action="/action_page.php" method="post"></form>
+</form>
+```
+
+<img alt="html-form-attributes method source" src="./code_sandbox/snaps/html-form-attributes-02-code.png" />
+
 <img alt="html-form-attributes method result" src="./code_sandbox/snaps/html-form-attributes-02-result.png" />
+
+- [x] **Outcome:** the page demonstrates **`method`** as shown in the result snap.
+
+<a id="html-form-attributes-example-04"></a>
+
+### **Example 4: `autocomplete`**
 
 - [x] **`autocomplete`**
   - `on` or `off` for the whole form. `on` fills values the user entered before.
   - A field can override: `autocomplete="off"` on the email input.
   - Sandbox: `autocomplete.html`.
 
+Sandbox: `code_sandbox/html-form-attributes/autocomplete.html`
+
+```html
+<form action="/action_page.php" autocomplete="on"></form>
+```
+
+<img alt="html-form-attributes autocomplete source" src="./code_sandbox/snaps/html-form-attributes-03-code.png" />
+
 <img alt="html-form-attributes autocomplete result" src="./code_sandbox/snaps/html-form-attributes-03-result.png" />
+
+- [x] **Outcome:** the page demonstrates **`autocomplete`** as shown in the result snap.
+
+<a id="html-form-attributes-example-05"></a>
+
+### **Example 5: `novalidate`**
 
 - [x] **`novalidate`**
   - Boolean. When present, the browser **does not validate** inputs on submit (so an invalid email can still submit).
   - Sandbox: `novalidate.html`.
 
-<img alt="html-form-attributes novalidate result" src="./code_sandbox/snaps/html-form-attributes-04-result.png" />
-
-- [x] **All `<form>` attributes** (from the page)
-
-| Attribute         | Description                                              |
-| ----------------- | -------------------------------------------------------- |
-| `accept-charset`  | Character encodings for submission                       |
-| `action`          | Where to send the form-data                              |
-| `autocomplete`    | Autocomplete on or off                                   |
-| `enctype`         | How to encode data (`method="post"` only)                |
-| `method`          | HTTP method                                              |
-| `name`            | Name of the form                                         |
-| `novalidate`      | Skip validation on submit                                |
-| `rel`             | Relationship to a linked resource                        |
-| `target`          | Where to display the response                            |
-
-`action` (`index.html`):
-
-<img alt="html-form-attributes action source" src="./code_sandbox/snaps/html-form-attributes-code.png" />
+Sandbox: `code_sandbox/html-form-attributes/novalidate.html`
 
 ```html
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
+<form action="/action_page.php" novalidate></form>
 ```
-
-<img alt="html-form-attributes action result" src="./code_sandbox/snaps/html-form-attributes-result.png" />
-
-`target` (`target.html`):
-
-<img alt="html-form-attributes target source" src="./code_sandbox/snaps/html-form-attributes-01-code.png" />
-
-```html
-<form action="/action_page.php" target="_blank">
-```
-
-<img alt="html-form-attributes target result" src="./code_sandbox/snaps/html-form-attributes-01-result.png" />
-
-`method` (`method.html`):
-
-<img alt="html-form-attributes method source" src="./code_sandbox/snaps/html-form-attributes-02-code.png" />
-
-```html
-<form action="/action_page.php" method="get">
-<form action="/action_page.php" method="post">
-```
-
-<img alt="html-form-attributes method result" src="./code_sandbox/snaps/html-form-attributes-02-result.png" />
-
-`autocomplete` (`autocomplete.html`):
-
-<img alt="html-form-attributes autocomplete source" src="./code_sandbox/snaps/html-form-attributes-03-code.png" />
-
-```html
-<form action="/action_page.php" autocomplete="on">
-```
-
-<img alt="html-form-attributes autocomplete result" src="./code_sandbox/snaps/html-form-attributes-03-result.png" />
-
-`novalidate` (`novalidate.html`):
 
 <img alt="html-form-attributes novalidate source" src="./code_sandbox/snaps/html-form-attributes-04-code.png" />
 
-```html
-<form action="/action_page.php" novalidate>
-```
-
 <img alt="html-form-attributes novalidate result" src="./code_sandbox/snaps/html-form-attributes-04-result.png" />
+
+- [x] **Outcome:** the page demonstrates **`novalidate`** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -8950,21 +9988,71 @@ Then open `http://127.0.0.1:8766/html-form-attributes/`.
 
 This chapter lists every common control you can put in a `<form>`: `<input>`, `<label>`, `<select>` / `<option>` / `<optgroup>`, `<textarea>`, `<button>`, `<fieldset>` / `<legend>`, `<datalist>`, and `<output>`.
 
+This section has **7** examples:
+
+- [x] **Example 1:** Input + select [View](#html-form-elements-example-01)
+- [x] **Example 2:** Size / multiple [View](#html-form-elements-example-02)
+- [x] **Example 3:** Textarea [View](#html-form-elements-example-03)
+- [x] **Example 4:** Button [View](#html-form-elements-example-04)
+- [x] **Example 5:** Fieldset [View](#html-form-elements-example-05)
+- [x] **Example 6:** Datalist [View](#html-form-elements-example-06)
+- [x] **Example 7:** Output [View](#html-form-elements-example-07)
+
 ## Detailed Explanation
 
 - [x] **`<form>` can contain** `<input>` `<label>` `<select>` `<textarea>` `<button>` `<fieldset>` `<legend>` `<datalist>` `<output>` `<option>` `<optgroup>`.
-- [x] **`<input>`** — most used; `type` changes the control. Sandbox: `code_sandbox/html-form-elements/index.html` (text field plus a car `<select>` with **Fiat** pre-selected).
+- [x] **`<label>`** — `for` must match the control’s `id`. Helps screen readers and makes small radios/checkboxes easier to click.
+- [x] **Tag list** from the page: `<form>` form; `<input>` control; `<textarea>` multiline; `<label>` label; `<fieldset>` group; `<legend>` caption; `<select>` drop-down; `<optgroup>` option group; `<option>` option; `<button>` button; `<datalist>` suggestions; `<output>` calculation result.
+
+<a id="html-form-elements-example-01"></a>
+
+### **Example 1: Input + select**
+
+- [x] This example runs the tested markup in `code_sandbox/html-form-elements/index.html`.
+
+Sandbox: `code_sandbox/html-form-elements/index.html`
+
+```html
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" />
+<select id="cars" name="cars">
+  <option value="fiat" selected>Fiat</option>
+</select>
+```
+
+<img alt="html-form-elements source" src="./code_sandbox/snaps/html-form-elements-code.png" />
 
 <img alt="html-form-elements input select result" src="./code_sandbox/snaps/html-form-elements-result.png" />
 
-- [x] **`<label>`** — `for` must match the control’s `id`. Helps screen readers and makes small radios/checkboxes easier to click.
+- [x] **Outcome:** the browser shows **First name: Fiat**.
+
+<a id="html-form-elements-example-02"></a>
+
+### **Example 2: Size / multiple**
+
 - [x] **`<select>` / `<option>`**
   - Drop-down. First option is selected unless another has **`selected`**.
   - **`size`** — how many options are visible.
   - **`multiple`** — select more than one.
   - Sandbox: `select.html`.
 
+Sandbox: `code_sandbox/html-form-elements/select.html`
+
+```html
+<select id="cars" name="cars" size="3">
+  <select id="cars" name="cars" size="4" multiple></select>
+</select>
+```
+
+<img alt="html-form-elements select source" src="./code_sandbox/snaps/html-form-elements-01-code.png" />
+
 <img alt="html-form-elements select size multiple result" src="./code_sandbox/snaps/html-form-elements-01-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Size / multiple** as shown in the result snap.
+
+<a id="html-form-elements-example-03"></a>
+
+### **Example 3: Textarea**
 
 - [x] **`<textarea>`**
   - Multi-line field. **`rows`** = visible lines, **`cols`** = visible width.
@@ -8972,65 +10060,7 @@ This chapter lists every common control you can put in a `<form>`: `<input>`, `<
   - Size can also be set with CSS (`width` / `height`).
   - Sandbox: `textarea.html`.
 
-<img alt="html-form-elements textarea result" src="./code_sandbox/snaps/html-form-elements-02-result.png" />
-
-- [x] **`<button>`**
-  - Example: `onclick="alert('Hello World!')"` — **Click Me!**
-  - **Always set `type`**. Browsers disagree on the default (`submit` vs `button`).
-  - Sandbox: `button.html`.
-
-<img alt="html-form-elements button result" src="./code_sandbox/snaps/html-form-elements-03-result.png" />
-
-- [x] **`<fieldset>` and `<legend>`**
-  - Group related fields; legend is the caption (**Personalia:**).
-  - Sandbox: `fieldset.html`.
-
-<img alt="html-form-elements fieldset result" src="./code_sandbox/snaps/html-form-elements-04-result.png" />
-
-- [x] **`<datalist>`**
-  - Predefined suggestions. Input **`list`** must match datalist **`id`**.
-  - Browsers: Edge, Firefox, Chrome, Opera, Safari.
-  - Sandbox: `datalist.html`.
-
-<img alt="html-form-elements datalist result" src="./code_sandbox/snaps/html-form-elements-05-result.png" />
-
-- [x] **`<output>`**
-  - Shows a calculation. `oninput="x.value=parseInt(a.value)+parseInt(b.value)"` — range + number.
-  - The sum updates when you move the slider or change the number (starts empty until input).
-  - Sandbox: `output.html`.
-
-<img alt="html-form-elements output result" src="./code_sandbox/snaps/html-form-elements-06-result.png" />
-
-- [x] **Tag list** from the page: `<form>` form; `<input>` control; `<textarea>` multiline; `<label>` label; `<fieldset>` group; `<legend>` caption; `<select>` drop-down; `<optgroup>` option group; `<option>` option; `<button>` button; `<datalist>` suggestions; `<output>` calculation result.
-
-Input + select (`index.html`):
-
-<img alt="html-form-elements source" src="./code_sandbox/snaps/html-form-elements-code.png" />
-
-```html
-<label for="fname">First name:</label>
-<input type="text" id="fname" name="fname">
-<select id="cars" name="cars">
-  <option value="fiat" selected>Fiat</option>
-</select>
-```
-
-<img alt="html-form-elements input select result" src="./code_sandbox/snaps/html-form-elements-result.png" />
-
-Size / multiple (`select.html`):
-
-<img alt="html-form-elements select source" src="./code_sandbox/snaps/html-form-elements-01-code.png" />
-
-```html
-<select id="cars" name="cars" size="3">
-<select id="cars" name="cars" size="4" multiple>
-```
-
-<img alt="html-form-elements select size multiple result" src="./code_sandbox/snaps/html-form-elements-01-result.png" />
-
-Textarea (`textarea.html`):
-
-<img alt="html-form-elements textarea source" src="./code_sandbox/snaps/html-form-elements-02-code.png" />
+Sandbox: `code_sandbox/html-form-elements/textarea.html`
 
 ```html
 <textarea name="message" rows="10" cols="30">
@@ -9038,21 +10068,42 @@ The cat was playing in the garden.
 </textarea>
 ```
 
+<img alt="html-form-elements textarea source" src="./code_sandbox/snaps/html-form-elements-02-code.png" />
+
 <img alt="html-form-elements textarea result" src="./code_sandbox/snaps/html-form-elements-02-result.png" />
 
-Button (`button.html`):
+- [x] **Outcome:** the browser shows **The cat was playing in the garden.**.
 
-<img alt="html-form-elements button source" src="./code_sandbox/snaps/html-form-elements-03-code.png" />
+<a id="html-form-elements-example-04"></a>
+
+### **Example 4: Button**
+
+- [x] **`<button>`**
+  - Example: `onclick="alert('Hello World!')"` — **Click Me!**
+  - **Always set `type`**. Browsers disagree on the default (`submit` vs `button`).
+  - Sandbox: `button.html`.
+
+Sandbox: `code_sandbox/html-form-elements/button.html`
 
 ```html
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
 ```
 
+<img alt="html-form-elements button source" src="./code_sandbox/snaps/html-form-elements-03-code.png" />
+
 <img alt="html-form-elements button result" src="./code_sandbox/snaps/html-form-elements-03-result.png" />
 
-Fieldset (`fieldset.html`):
+- [x] **Outcome:** the browser shows **Click Me!**.
 
-<img alt="html-form-elements fieldset source" src="./code_sandbox/snaps/html-form-elements-04-code.png" />
+<a id="html-form-elements-example-05"></a>
+
+### **Example 5: Fieldset**
+
+- [x] **`<fieldset>` and `<legend>`**
+  - Group related fields; legend is the caption (**Personalia:**).
+  - Sandbox: `fieldset.html`.
+
+Sandbox: `code_sandbox/html-form-elements/fieldset.html`
 
 ```html
 <fieldset>
@@ -9061,34 +10112,60 @@ Fieldset (`fieldset.html`):
 </fieldset>
 ```
 
+<img alt="html-form-elements fieldset source" src="./code_sandbox/snaps/html-form-elements-04-code.png" />
+
 <img alt="html-form-elements fieldset result" src="./code_sandbox/snaps/html-form-elements-04-result.png" />
 
-Datalist (`datalist.html`):
+- [x] **Outcome:** the browser shows **Personalia: ...**.
 
-<img alt="html-form-elements datalist source" src="./code_sandbox/snaps/html-form-elements-05-code.png" />
+<a id="html-form-elements-example-06"></a>
+
+### **Example 6: Datalist**
+
+- [x] **`<datalist>`**
+  - Predefined suggestions. Input **`list`** must match datalist **`id`**.
+  - Browsers: Edge, Firefox, Chrome, Opera, Safari.
+  - Sandbox: `datalist.html`.
+
+Sandbox: `code_sandbox/html-form-elements/datalist.html`
 
 ```html
-<input list="browsers">
+<input list="browsers" />
 <datalist id="browsers">
-  <option value="Edge">
+  <option value="Edge"></option>
 </datalist>
 ```
 
+<img alt="html-form-elements datalist source" src="./code_sandbox/snaps/html-form-elements-05-code.png" />
+
 <img alt="html-form-elements datalist result" src="./code_sandbox/snaps/html-form-elements-05-result.png" />
 
-Output (`output.html`):
+- [x] **Outcome:** the page demonstrates **Datalist** as shown in the result snap.
 
-<img alt="html-form-elements output source" src="./code_sandbox/snaps/html-form-elements-06-code.png" />
+<a id="html-form-elements-example-07"></a>
+
+### **Example 7: Output**
+
+- [x] **`<output>`**
+  - Shows a calculation. `oninput="x.value=parseInt(a.value)+parseInt(b.value)"` — range + number.
+  - The sum updates when you move the slider or change the number (starts empty until input).
+  - Sandbox: `output.html`.
+
+Sandbox: `code_sandbox/html-form-elements/output.html`
 
 ```html
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  0 <input type="range" id="a" name="a" value="50"> 100 +
-  <input type="number" id="b" name="b" value="50">
+  0 <input type="range" id="a" name="a" value="50" /> 100 +
+  <input type="number" id="b" name="b" value="50" />
   = <output name="x" for="a b"></output>
 </form>
 ```
 
+<img alt="html-form-elements output source" src="./code_sandbox/snaps/html-form-elements-06-code.png" />
+
 <img alt="html-form-elements output result" src="./code_sandbox/snaps/html-form-elements-06-result.png" />
+
+- [x] **Outcome:** the browser shows **0 100 + =**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -9211,21 +10288,66 @@ Forms are built from input, label, select/option, textarea, button, fieldset/leg
 
 This chapter lists every HTML **`<input type="...">`**. The default type is **`text`**. Many HTML5 types (color, date, email, and so on) show a picker or extra keyboard when the browser supports them.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Text / password / submit / reset [View](#html-input-types-example-01)
+- [x] **Example 2:** Choices [View](#html-input-types-example-02)
+- [x] **Example 3:** HTML5 types [View](#html-input-types-example-03)
+- [x] **Example 4:** Pickers [View](#html-input-types-example-04)
+
 ## Detailed Explanation
 
 - [x] **All types:** `button` `checkbox` `color` `date` `datetime-local` `email` `file` `hidden` `image` `month` `number` `password` `radio` `range` `reset` `search` `submit` `tel` `text` `time` `url` `week`.
 - [x] **`text`** — single-line field (default).
 - [x] **`password`** — characters are **masked** (asterisks or dots).
 - [x] **`submit`** — sends data to `action`. If **`value` is omitted**, the button gets **default text**.
+- [x] **Input restrictions** (preview of the next chapter): `checked` `disabled` `max` `maxlength` `min` `pattern` `readonly` `required` `size` `step` `value`.
+
+<a id="html-input-types-example-01"></a>
+
+### **Example 1: Text / password / submit / reset**
+
 - [x] **`reset`** — restores **default values**.
-  - Sandbox: `code_sandbox/html-input-types/index.html`.
+
+Sandbox: `code_sandbox/html-input-types/index.html`
+
+```html
+<input type="text" id="fname" name="fname" />
+<input type="password" id="pwd" name="pwd" />
+<input type="submit" value="Submit" />
+<input type="reset" value="Reset" />
+```
+
+<img alt="html-input-types source" src="./code_sandbox/snaps/html-input-types-code.png" />
 
 <img alt="html-input-types text password submit reset result" src="./code_sandbox/snaps/html-input-types-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Text / password / submit / reset** as shown in the result snap.
+
+<a id="html-input-types-example-02"></a>
+
+### **Example 2: Choices**
 
 - [x] **`radio`** — **ONLY ONE** of a set. **`checkbox`** — **ZERO or MORE**. **`button`** — clickable (`onclick` alert).
   - Sandbox: `choices.html`.
 
+Sandbox: `code_sandbox/html-input-types/choices.html`
+
+```html
+<input type="radio" name="fav_language" value="HTML" />
+<input type="checkbox" name="vehicle1" value="Bike" />
+<input type="button" onclick="alert('Hello World!')" value="Click Me!" />
+```
+
+<img alt="html-input-types choices source" src="./code_sandbox/snaps/html-input-types-01-code.png" />
+
 <img alt="html-input-types radio checkbox button result" src="./code_sandbox/snaps/html-input-types-01-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Choices** as shown in the result snap.
+
+<a id="html-input-types-example-03"></a>
+
+### **Example 3: HTML5 types**
 
 - [x] **HTML5 types** (sandbox: `html5.html`)
   - **`color`** — color picker (if supported).
@@ -9240,68 +10362,45 @@ This chapter lists every HTML **`<input type="...">`**. The default type is **`t
   - **`url`** — URL; may validate; phones may add **.com**.
   - **`hidden`** — not shown. Example `custId=3487`. **Not security** — still visible in View Source / DevTools.
 
-<img alt="html-input-types html5 types result" src="./code_sandbox/snaps/html-input-types-02-result.png" />
-
-- [x] **More pickers** (`pickers.html`): **`datetime-local`** (date+time, no time zone), **`month`**, **`time`**, **`week`**.
-
-<img alt="html-input-types date time pickers result" src="./code_sandbox/snaps/html-input-types-03-result.png" />
-
-- [x] **Input restrictions** (preview of the next chapter): `checked` `disabled` `max` `maxlength` `min` `pattern` `readonly` `required` `size` `step` `value`.
-
-Text / password / submit / reset (`index.html`):
-
-<img alt="html-input-types source" src="./code_sandbox/snaps/html-input-types-code.png" />
+Sandbox: `code_sandbox/html-input-types/html5.html`
 
 ```html
-<input type="text" id="fname" name="fname">
-<input type="password" id="pwd" name="pwd">
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
+<input type="color" />
+<input type="date" max="1979-12-31" />
+<input type="email" />
+<input type="file" />
+<input type="number" min="1" max="5" />
+<input type="range" min="0" max="50" />
+<input type="hidden" name="custId" value="3487" />
+<input type="image" src="img_submit.gif" alt="Submit" />
 ```
-
-<img alt="html-input-types text password submit reset result" src="./code_sandbox/snaps/html-input-types-result.png" />
-
-Choices (`choices.html`):
-
-<img alt="html-input-types choices source" src="./code_sandbox/snaps/html-input-types-01-code.png" />
-
-```html
-<input type="radio" name="fav_language" value="HTML">
-<input type="checkbox" name="vehicle1" value="Bike">
-<input type="button" onclick="alert('Hello World!')" value="Click Me!">
-```
-
-<img alt="html-input-types radio checkbox button result" src="./code_sandbox/snaps/html-input-types-01-result.png" />
-
-HTML5 types (`html5.html`):
 
 <img alt="html-input-types html5 source" src="./code_sandbox/snaps/html-input-types-02-code.png" />
 
-```html
-<input type="color">
-<input type="date" max="1979-12-31">
-<input type="email">
-<input type="file">
-<input type="number" min="1" max="5">
-<input type="range" min="0" max="50">
-<input type="hidden" name="custId" value="3487">
-<input type="image" src="img_submit.gif" alt="Submit">
-```
-
 <img alt="html-input-types html5 types result" src="./code_sandbox/snaps/html-input-types-02-result.png" />
 
-Pickers (`pickers.html`):
+- [x] **Outcome:** the browser shows **Submit**.
+
+<a id="html-input-types-example-04"></a>
+
+### **Example 4: Pickers**
+
+- [x] **More pickers** (`pickers.html`): **`datetime-local`** (date+time, no time zone), **`month`**, **`time`**, **`week`**.
+
+Sandbox: `code_sandbox/html-input-types/pickers.html`
+
+```html
+<input type="datetime-local" />
+<input type="month" />
+<input type="time" />
+<input type="week" />
+```
 
 <img alt="html-input-types pickers source" src="./code_sandbox/snaps/html-input-types-03-code.png" />
 
-```html
-<input type="datetime-local">
-<input type="month">
-<input type="time">
-<input type="week">
-```
-
 <img alt="html-input-types date time pickers result" src="./code_sandbox/snaps/html-input-types-03-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Pickers** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -9419,15 +10518,16 @@ Then open `http://127.0.0.1:8766/html-input-types/`.
 
 This chapter covers attributes of **`<input>`**: **`value`**, **`readonly`**, **`disabled`**, **`size`**, **`maxlength`**, **`min`/`max`**, **`multiple`**, **`pattern`**, **`placeholder`**, **`required`**, **`step`**, **`autofocus`**, **`height`/`width`**, **`list`**, and **`autocomplete`**. Browser checks are **not** enough — the **server** must validate too.
 
+This section has **3** examples:
+
+- [x] **Example 1:** Readonly / disabled [View](#html-input-attributes-example-01)
+- [x] **Example 2:** Limits [View](#html-input-attributes-example-02)
+- [x] **Example 3:** List / autocomplete / image [View](#html-input-attributes-example-03)
+
 ## Detailed Explanation
 
 - [x] **`value`** — initial/default text (John / Doe).
 - [x] **`readonly`** — cannot edit; **can** tab, highlight, copy; **is submitted**.
-- [x] **`disabled`** — unusable / un-clickable; **not submitted**.
-  - Sandbox: `code_sandbox/html-input-attributes/index.html`.
-
-<img alt="html-input-attributes value readonly disabled result" src="./code_sandbox/snaps/html-input-attributes-result.png" />
-
 - [x] **`size`** — visible width in **characters** (default **20**). Works with text, search, tel, url, email, password.
 - [x] **`maxlength`** — max characters; the field **stops accepting** more, but gives **no message** (use JS to alert).
 - [x] **`min` / `max`** — number, range, date, datetime-local, month, time, week.
@@ -9435,60 +10535,76 @@ This chapter covers attributes of **`<input>`**: **`value`**, **`readonly`**, **
 - [x] **`pattern`** — regex checked on submit (text, date, search, url, tel, email, password). Use **`title`** to explain (three-letter country code).
 - [x] **`placeholder`** — hint before typing (`123-45-678`).
 - [x] **`required`** — must be filled (text, search, url, tel, email, password, date pickers, number, checkbox, radio, file).
-- [x] **`step`** — legal intervals (`step="3"` → -3, 0, 3, 6…).
-  - Sandbox: `limits.html`.
-
-<img alt="html-input-attributes limits result" src="./code_sandbox/snaps/html-input-attributes-01-result.png" />
-
 - [x] **`autofocus`** — focus on load (omitted from the sandbox so snapping does not steal focus).
 - [x] **`height` / `width`** — size of `type="image"`. Set both so layout does not jump while the image loads.
 - [x] **`list`** — points at a `<datalist>` `id`.
-- [x] **`autocomplete`** — on/off for a form or field (text, search, url, tel, email, password, date pickers, range, color). Some browsers need autocomplete enabled in Preferences.
-  - Sandbox: `extra.html`.
-
-<img alt="html-input-attributes list autocomplete image result" src="./code_sandbox/snaps/html-input-attributes-02-result.png" />
-
 - [x] **Note:** Restrictions are **not foolproof**. Check again on the **server**.
 
-Readonly / disabled (`index.html`):
+<a id="html-input-attributes-example-01"></a>
+
+### **Example 1: Readonly / disabled**
+
+- [x] **`disabled`** — unusable / un-clickable; **not submitted**.
+
+Sandbox: `code_sandbox/html-input-attributes/index.html`
+
+```html
+<input type="text" name="fname" value="John" readonly />
+<input type="text" name="lname" value="Doe" disabled />
+```
 
 <img alt="html-input-attributes source" src="./code_sandbox/snaps/html-input-attributes-code.png" />
 
-```html
-<input type="text" name="fname" value="John" readonly>
-<input type="text" name="lname" value="Doe" disabled>
-```
-
 <img alt="html-input-attributes value readonly disabled result" src="./code_sandbox/snaps/html-input-attributes-result.png" />
 
-Limits (`limits.html`):
+- [x] **Outcome:** the page demonstrates **Readonly / disabled** as shown in the result snap.
+
+<a id="html-input-attributes-example-02"></a>
+
+### **Example 2: Limits**
+
+- [x] **`step`** — legal intervals (`step="3"` → -3, 0, 3, 6…).
+  - Sandbox: `limits.html`.
+
+Sandbox: `code_sandbox/html-input-attributes/limits.html`
+
+```html
+<input type="text" size="50" />
+<input type="text" maxlength="4" size="4" />
+<input type="number" min="1" max="5" />
+<input type="file" multiple />
+<input type="text" pattern="[A-Za-z]{3}" title="Three letter country code" />
+<input type="tel" placeholder="123-45-678" />
+<input type="text" required />
+<input type="number" step="3" />
+```
 
 <img alt="html-input-attributes limits source" src="./code_sandbox/snaps/html-input-attributes-01-code.png" />
 
-```html
-<input type="text" size="50">
-<input type="text" maxlength="4" size="4">
-<input type="number" min="1" max="5">
-<input type="file" multiple>
-<input type="text" pattern="[A-Za-z]{3}" title="Three letter country code">
-<input type="tel" placeholder="123-45-678">
-<input type="text" required>
-<input type="number" step="3">
-```
-
 <img alt="html-input-attributes limits result" src="./code_sandbox/snaps/html-input-attributes-01-result.png" />
 
-List / autocomplete / image (`extra.html`):
+- [x] **Outcome:** the page demonstrates **Limits** as shown in the result snap.
+
+<a id="html-input-attributes-example-03"></a>
+
+### **Example 3: List / autocomplete / image**
+
+- [x] **`autocomplete`** — on/off for a form or field (text, search, url, tel, email, password, date pickers, range, color). Some browsers need autocomplete enabled in Preferences.
+  - Sandbox: `extra.html`.
+
+Sandbox: `code_sandbox/html-input-attributes/extra.html`
+
+```html
+<input list="browsers" />
+<input type="email" autocomplete="off" />
+<input type="image" src="img_submit.gif" width="48" height="48" />
+```
 
 <img alt="html-input-attributes extra source" src="./code_sandbox/snaps/html-input-attributes-02-code.png" />
 
-```html
-<input list="browsers">
-<input type="email" autocomplete="off">
-<input type="image" src="img_submit.gif" width="48" height="48">
-```
-
 <img alt="html-input-attributes list autocomplete image result" src="./code_sandbox/snaps/html-input-attributes-02-result.png" />
+
+- [x] **Outcome:** the page demonstrates **List / autocomplete / image** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -9605,6 +10721,12 @@ Then open `http://127.0.0.1:8766/html-input-attributes/`.
 
 W3Schools page title: **HTML Input form\* Attributes**. These `form*` attributes on **`<input>`** override the parent `<form>`, or associate a control **outside** the form. Covered: **`form`**, **`formaction`**, **`formenctype`**, **`formmethod`**, **`formtarget`**, **`formnovalidate`**, plus form-level **`novalidate`**.
 
+This section has **3** examples:
+
+- [x] **Example 1:** `form` [View](#input-form-attributes-example-01)
+- [x] **Example 2:** Overrides [View](#input-form-attributes-example-02)
+- [x] **Example 3:** Novalidate [View](#input-form-attributes-example-03)
+
 ## Detailed Explanation
 
 - [x] **`form`**
@@ -9615,6 +10737,31 @@ W3Schools page title: **HTML Input form\* Attributes**. These `form*` attributes
 
 <img alt="html-input-form-attributes form= result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
 
+<a id="input-form-attributes-example-01"></a>
+
+### **Example 1: `form`**
+
+- [x] This example runs the tested markup in `code_sandbox/input-form-attributes/index.html`.
+
+Sandbox: `code_sandbox/input-form-attributes/index.html`
+
+```html
+<form action="/action_page.php" id="form1">
+  <input type="text" id="fname" name="fname" />
+</form>
+<input type="text" id="lname" name="lname" form="form1" />
+```
+
+<img alt="html-input-form-attributes source" src="./code_sandbox/snaps/html-input-form-attributes-code.png" />
+
+<img alt="html-input-form-attributes form= result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
+
+- [x] **Outcome:** the page demonstrates **`form`** as shown in the result snap.
+
+<a id="input-form-attributes-example-02"></a>
+
+### **Example 2: Overrides**
+
 - [x] **Overrides on `type="submit"` and `type="image"`** (except `formnovalidate`: submit only)
   - **`formaction`** — overrides `action` (example: **Submit as Admin** → `/action_page2.php`).
   - **`formenctype`** — overrides `enctype` (POST only). Second button: `multipart/form-data`.
@@ -9622,49 +10769,50 @@ W3Schools page title: **HTML Input form\* Attributes**. These `form*` attributes
   - **`formtarget`** — overrides `target` (example: `_blank`).
   - Sandbox: `override.html`.
 
+Sandbox: `code_sandbox/input-form-attributes/override.html`
+
+```html
+<input type="submit" formaction="/action_page2.php" value="Submit as Admin" />
+<input type="submit" formmethod="post" value="Submit using POST" />
+<input type="submit" formtarget="_blank" value="Submit to a new window/tab" />
+<input
+  type="submit"
+  formenctype="multipart/form-data"
+  value="Submit as Multipart"
+/>
+```
+
+<img alt="html-input-form-attributes overrides source" src="./code_sandbox/snaps/html-input-form-attributes-01-code.png" />
+
 <img alt="html-input-form-attributes override buttons result" src="./code_sandbox/snaps/html-input-form-attributes-01-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Overrides** as shown in the result snap.
+
+<a id="input-form-attributes-example-03"></a>
+
+### **Example 3: Novalidate**
 
 - [x] **`formnovalidate` vs `novalidate`**
   - `formnovalidate` on a **submit** button skips validation for that click.
   - `novalidate` on **`<form>`** skips validation for the whole form.
   - Sandbox: `novalidate.html`.
 
-`form` (`index.html`):
-
-<img alt="html-input-form-attributes source" src="./code_sandbox/snaps/html-input-form-attributes-code.png" />
+Sandbox: `code_sandbox/input-form-attributes/novalidate.html`
 
 ```html
-<form action="/action_page.php" id="form1">
-  <input type="text" id="fname" name="fname">
-</form>
-<input type="text" id="lname" name="lname" form="form1">
+<input
+  type="submit"
+  formnovalidate="formnovalidate"
+  value="Submit without validation"
+/>
+<form action="/action_page.php" novalidate></form>
 ```
-
-<img alt="html-input-form-attributes form= result" src="./code_sandbox/snaps/html-input-form-attributes-result.png" />
-
-Overrides (`override.html`):
-
-<img alt="html-input-form-attributes overrides source" src="./code_sandbox/snaps/html-input-form-attributes-01-code.png" />
-
-```html
-<input type="submit" formaction="/action_page2.php" value="Submit as Admin">
-<input type="submit" formmethod="post" value="Submit using POST">
-<input type="submit" formtarget="_blank" value="Submit to a new window/tab">
-<input type="submit" formenctype="multipart/form-data" value="Submit as Multipart">
-```
-
-<img alt="html-input-form-attributes override buttons result" src="./code_sandbox/snaps/html-input-form-attributes-01-result.png" />
-
-Novalidate (`novalidate.html`):
 
 <img alt="html-input-form-attributes novalidate source" src="./code_sandbox/snaps/html-input-form-attributes-02-code.png" />
 
-```html
-<input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
-<form action="/action_page.php" novalidate>
-```
-
 <img alt="html-input-form-attributes novalidate result" src="./code_sandbox/snaps/html-input-form-attributes-02-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Novalidate** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -9752,7 +10900,7 @@ Then open `http://127.0.0.1:8766/html-input-form-attributes/`.
 
 ## References
 
-- [HTML Input form* Attributes (W3Schools)](https://www.w3schools.com/html/html_form_attributes_form.asp)
+- [HTML Input form\* Attributes (W3Schools)](https://www.w3schools.com/html/html_form_attributes_form.asp)
 - [HTML Form Attributes](https://www.w3schools.com/html/html_forms_attributes.asp)
 - [MDN: `<input>` form attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form)
 - [MDN: `formaction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction)
@@ -9766,15 +10914,47 @@ Then open `http://127.0.0.1:8766/html-input-form-attributes/`.
 
 The HTML **`<canvas>`** element is a **container** for graphics drawn **on the fly with JavaScript**. This chapter shows an empty canvas, a **line**, a **circle**, **fill/stroke text**, **linear and radial gradients**, and **`drawImage`**. Canvas is supported by all major browsers.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Empty canvas [View](#html-canvas-example-01)
+- [x] **Example 2:** Shapes [View](#html-canvas-example-02)
+- [x] **Example 3:** Gradients [View](#html-canvas-example-03)
+- [x] **Example 4:** Image [View](#html-canvas-example-04)
+
 ## Detailed Explanation
+
+- [x] More in the **HTML Canvas Tutorial**.
+
+<a id="html-canvas-example-01"></a>
+
+### **Example 1: Empty canvas**
 
 - [x] **What canvas is**
   - Draw paths, boxes, circles, text, and images with JS.
   - Markup: `<canvas id="myCanvas" width="200" height="100"></canvas>`.
   - Always set **`id`**, **`width`**, and **`height`**. Add a border with **`style`**. Default: no border, no content.
-  - Sandbox: `code_sandbox/html-canvas/index.html`.
+
+Sandbox: `code_sandbox/html-canvas/index.html`
+
+```html
+<canvas
+  id="myCanvas"
+  width="200"
+  height="100"
+  style="border:1px solid #000000;"
+>
+</canvas>
+```
+
+<img alt="html-canvas source" src="./code_sandbox/snaps/html-canvas-code.png" />
 
 <img alt="html-canvas empty result" src="./code_sandbox/snaps/html-canvas-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Empty canvas** as shown in the result snap.
+
+<a id="html-canvas-example-02"></a>
+
+### **Example 2: Shapes**
 
 - [x] **JavaScript drawing** — `getElementById` → `getContext("2d")`.
   - **Line:** `moveTo(0, 0); lineTo(200, 100); stroke();`
@@ -9783,38 +10963,7 @@ The HTML **`<canvas>`** element is a **container** for graphics drawn **on the f
   - **Stroke text:** `strokeText("Hello World", 10, 50);`
   - Sandbox: `shapes.html`.
 
-<img alt="html-canvas shapes result" src="./code_sandbox/snaps/html-canvas-01-result.png" />
-
-- [x] **Gradients**
-  - Linear: `createLinearGradient(0, 0, 200, 0)` red → white, then `fillRect(10, 10, 150, 80)`.
-  - Circular: `createRadialGradient(75, 50, 5, 90, 60, 100)`.
-  - Sandbox: `gradient.html`.
-
-<img alt="html-canvas gradients result" src="./code_sandbox/snaps/html-canvas-02-result.png" />
-
-- [x] **Draw image**
-  - `ctx.drawImage(img, 10, 10)` after reading an `<img id="scream">`.
-  - The page script assumes the image is already loaded. The sandbox uses **`window.onload`** so `drawImage` runs after the file is ready (current browsers; otherwise the canvas can stay blank).
-  - Sandbox: `image.html` (local `picture.jpg` stands in for W3Schools’ The Scream).
-
-<img alt="html-canvas drawImage result" src="./code_sandbox/snaps/html-canvas-03-result.png" />
-
-- [x] More in the **HTML Canvas Tutorial**.
-
-Empty canvas (`index.html`):
-
-<img alt="html-canvas source" src="./code_sandbox/snaps/html-canvas-code.png" />
-
-```html
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-</canvas>
-```
-
-<img alt="html-canvas empty result" src="./code_sandbox/snaps/html-canvas-result.png" />
-
-Shapes (`shapes.html`):
-
-<img alt="html-canvas shapes source" src="./code_sandbox/snaps/html-canvas-01-code.png" />
+Sandbox: `code_sandbox/html-canvas/shapes.html`
 
 ```javascript
 ctx.moveTo(0, 0);
@@ -9826,11 +10975,22 @@ ctx.fillText("Hello World", 10, 50);
 ctx.strokeText("Hello World", 10, 50);
 ```
 
+<img alt="html-canvas shapes source" src="./code_sandbox/snaps/html-canvas-01-code.png" />
+
 <img alt="html-canvas shapes result" src="./code_sandbox/snaps/html-canvas-01-result.png" />
 
-Gradients (`gradient.html`):
+- [x] **Outcome:** the browser shows **ctx.moveTo(0, 0); ctx.lineTo(200, 100); ctx.stroke(); ctx.beginPath(); ctx.arc(95, 50, 40, 0, 2 \* Math.PI); ctx.fillText("Hello World", 10, 50); ctx.strokeText("Hello World", 10, 50);**.
 
-<img alt="html-canvas gradient source" src="./code_sandbox/snaps/html-canvas-02-code.png" />
+<a id="html-canvas-example-03"></a>
+
+### **Example 3: Gradients**
+
+- [x] **Gradients**
+  - Linear: `createLinearGradient(0, 0, 200, 0)` red → white, then `fillRect(10, 10, 150, 80)`.
+  - Circular: `createRadialGradient(75, 50, 5, 90, 60, 100)`.
+  - Sandbox: `gradient.html`.
+
+Sandbox: `code_sandbox/html-canvas/gradient.html`
 
 ```javascript
 var grd = ctx.createLinearGradient(0, 0, 200, 0);
@@ -9839,18 +10999,33 @@ grd.addColorStop(1, "white");
 ctx.fillRect(10, 10, 150, 80);
 ```
 
+<img alt="html-canvas gradient source" src="./code_sandbox/snaps/html-canvas-02-code.png" />
+
 <img alt="html-canvas gradients result" src="./code_sandbox/snaps/html-canvas-02-result.png" />
 
-Image (`image.html`):
+- [x] **Outcome:** the browser shows **var grd = ctx.createLinearGradient(0, 0, 200, 0); grd.addColorStop(0, "red"); grd.addColorStop(1, "white"); ctx.fillRect(10, 10, 150, 80);**.
 
-<img alt="html-canvas image source" src="./code_sandbox/snaps/html-canvas-03-code.png" />
+<a id="html-canvas-example-04"></a>
+
+### **Example 4: Image**
+
+- [x] **Draw image**
+  - `ctx.drawImage(img, 10, 10)` after reading an `<img id="scream">`.
+  - The page script assumes the image is already loaded. The sandbox uses **`window.onload`** so `drawImage` runs after the file is ready (current browsers; otherwise the canvas can stay blank).
+  - Sandbox: `image.html` (local `picture.jpg` stands in for W3Schools’ The Scream).
+
+Sandbox: `code_sandbox/html-canvas/image.html`
 
 ```javascript
 var img = document.getElementById("scream");
 ctx.drawImage(img, 10, 10);
 ```
 
+<img alt="html-canvas image source" src="./code_sandbox/snaps/html-canvas-03-code.png" />
+
 <img alt="html-canvas drawImage result" src="./code_sandbox/snaps/html-canvas-03-result.png" />
+
+- [x] **Outcome:** the browser shows **var img = document.getElementById("scream"); ctx.drawImage(img, 10, 10);**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -9962,6 +11137,11 @@ Canvas is a JS drawing surface. Set id, width, and height; get a 2D context; the
 
 **SVG** (Scalable Vector Graphics) describes **2D graphics in XML** and can be **embedded in HTML**. Graphics stay sharp when zoomed. This chapter draws a **circle**, **rectangles**, a **star**, a **gradient ellipse with text**, and compares SVG with **canvas**.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Circle [View](#html-svg-example-01)
+- [x] **Example 2:** Shapes [View](#html-svg-example-02)
+
 ## Detailed Explanation
 
 - [x] **What is SVG?**
@@ -9970,10 +11150,49 @@ Canvas is a JS drawing surface. Set id, width, and height; get a 2D context; the
   - A **W3C recommendation**; works with CSS, DOM, XSL, and JavaScript.
   - Supported by all major browsers.
 - [x] **`<svg>`** — container for paths, rectangles, circles, polygons, text, and more.
+- [x] **SVG vs Canvas**
+
+| SVG                    | Canvas                                  |
+| ---------------------- | --------------------------------------- |
+| Resolution independent | Resolution dependent                    |
+| Event handlers         | No event handlers                       |
+| Good text rendering    | Poor text rendering                     |
+| Slow if complex        | Can save as .png / .jpg                 |
+| Not suited for games   | Well suited for graphic-intensive games |
+
+- SVG: each shape is an **object** in the DOM; change an attribute and the browser **re-renders**.
+- Canvas: **pixel by pixel**; once drawn it is **forgotten** — move something and **redraw the whole scene**.
+
+<a id="html-svg-example-01"></a>
+
+### **Example 1: Circle**
+
 - [x] **Circle** — `cx` `cy` `r`, green stroke, yellow fill.
-  - Sandbox: `code_sandbox/html-svg/index.html`.
+
+Sandbox: `code_sandbox/html-svg/index.html`
+
+```html
+<svg width="100" height="100">
+  <circle
+    cx="50"
+    cy="50"
+    r="40"
+    stroke="green"
+    stroke-width="4"
+    fill="yellow"
+  />
+</svg>
+```
+
+<img alt="html-svg circle source" src="./code_sandbox/snaps/html-svg-code.png" />
 
 <img alt="html-svg circle result" src="./code_sandbox/snaps/html-svg-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Circle** as shown in the result snap.
+
+<a id="html-svg-example-02"></a>
+
+### **Example 2: Shapes**
 
 - [x] **More shapes** (`shapes.html`)
   - Blue rectangle, red stroke.
@@ -9981,45 +11200,28 @@ Canvas is a JS drawing surface. Set id, width, and height; get a 2D context; the
   - Lime/purple **star** polygon, `fill-rule: evenodd`.
   - Yellow→red **linearGradient** on an ellipse, white **SVG** text. Fallback: “Sorry, your browser does not support inline SVG.”
 
-<img alt="html-svg shapes result" src="./code_sandbox/snaps/html-svg-01-result.png" />
-
-- [x] **SVG vs Canvas**
-
-| SVG                                         | Canvas                                      |
-| ------------------------------------------- | ------------------------------------------- |
-| Resolution independent                      | Resolution dependent                        |
-| Event handlers                              | No event handlers                           |
-| Good text rendering                         | Poor text rendering                         |
-| Slow if complex                             | Can save as .png / .jpg                     |
-| Not suited for games                        | Well suited for graphic-intensive games     |
-
-  - SVG: each shape is an **object** in the DOM; change an attribute and the browser **re-renders**.
-  - Canvas: **pixel by pixel**; once drawn it is **forgotten** — move something and **redraw the whole scene**.
-
-Circle (`index.html`):
-
-<img alt="html-svg circle source" src="./code_sandbox/snaps/html-svg-code.png" />
+Sandbox: `code_sandbox/html-svg/shapes.html`
 
 ```html
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-</svg>
-```
-
-<img alt="html-svg circle result" src="./code_sandbox/snaps/html-svg-result.png" />
-
-Shapes (`shapes.html`):
-
-<img alt="html-svg shapes source" src="./code_sandbox/snaps/html-svg-01-code.png" />
-
-```html
-<rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+<rect
+  x="10"
+  y="10"
+  width="200"
+  height="100"
+  stroke="red"
+  stroke-width="6"
+  fill="blue"
+/>
 <polygon points="100,10 40,198 190,78 10,78 160,198" />
 <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
 <text fill="#ffffff" font-size="45" x="50" y="86">SVG</text>
 ```
 
+<img alt="html-svg shapes source" src="./code_sandbox/snaps/html-svg-01-code.png" />
+
 <img alt="html-svg shapes result" src="./code_sandbox/snaps/html-svg-01-result.png" />
+
+- [x] **Outcome:** the browser shows **SVG**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10119,6 +11321,10 @@ SVG is XML vector graphics inside `<svg>`. Draw circles, rects, polygons, and gr
 
 **Multimedia** on the web is sound, music, videos, movies, and animations. This chapter lists common **file extensions**, which **video and audio formats HTML supports**, and which older formats do **not** play in browsers. There is **no Try it Yourself** example on this page.
 
+This section has **1** example:
+
+- [x] **Example 1:** Format tables (no Tryit) [View](#html-media-example-01)
+
 ## Detailed Explanation
 
 - [x] **What is multimedia?**
@@ -10131,40 +11337,48 @@ SVG is XML vector graphics inside `<svg>`. Draw circles, rects, polygons, and gr
   - Media lives in **files**. The usual hint is the **extension**: `.wav` `.mp3` `.mp4` `.mpg` `.wmv` `.avi`.
 - [x] **Video formats** (page table)
 
-| Format    | File        | Notes                                                                 |
-| --------- | ----------- | --------------------------------------------------------------------- |
-| MPEG      | `.mpg/.mpeg`| First popular web video. **Not supported in HTML** anymore.           |
-| AVI       | `.avi`      | Microsoft. Cameras/TV. Windows, **not browsers**.                     |
-| WMV       | `.wmv`      | Microsoft. **Not browsers**.                                          |
-| QuickTime | `.mov`      | Apple. **Not browsers**.                                              |
-| RealVideo | `.rm/.ram`  | Streaming. **Does not play in browsers**.                             |
-| Flash     | `.swf/.flv` | Often needs a **plug-in**.                                            |
-| Ogg       | `.ogg`      | Theora Ogg. **Supported by HTML**.                                    |
-| WebM      | `.webm`     | Mozilla, Opera, Adobe, Google. **Supported by HTML**.                 |
-| MPEG-4 / MP4 | `.mp4`   | **All browsers**. **Recommended by YouTube**.                         |
+| Format       | File         | Notes                                                       |
+| ------------ | ------------ | ----------------------------------------------------------- |
+| MPEG         | `.mpg/.mpeg` | First popular web video. **Not supported in HTML** anymore. |
+| AVI          | `.avi`       | Microsoft. Cameras/TV. Windows, **not browsers**.           |
+| WMV          | `.wmv`       | Microsoft. **Not browsers**.                                |
+| QuickTime    | `.mov`       | Apple. **Not browsers**.                                    |
+| RealVideo    | `.rm/.ram`   | Streaming. **Does not play in browsers**.                   |
+| Flash        | `.swf/.flv`  | Often needs a **plug-in**.                                  |
+| Ogg          | `.ogg`       | Theora Ogg. **Supported by HTML**.                          |
+| WebM         | `.webm`      | Mozilla, Opera, Adobe, Google. **Supported by HTML**.       |
+| MPEG-4 / MP4 | `.mp4`       | **All browsers**. **Recommended by YouTube**.               |
 
-  - **Note:** Only **MP4, WebM, and Ogg** video are supported by the HTML standard.
+- **Note:** Only **MP4, WebM, and Ogg** video are supported by the HTML standard.
+
 - [x] **Audio formats**
 
-| Format    | File        | Notes                                                                 |
-| --------- | ----------- | --------------------------------------------------------------------- |
-| MIDI      | `.mid/.midi`| Notes, not recorded sound. **Not browsers**.                          |
-| RealAudio | `.rm/.ram`  | **Does not play in browsers**.                                        |
-| WMA       | `.wma`      | Microsoft. **Not browsers**.                                          |
-| AAC       | `.aac`      | Apple / iTunes. **Not browsers** (as a raw `.aac` type on this page). |
-| WAV       | `.wav`      | IBM/Microsoft. **Supported by HTML**.                                 |
-| Ogg       | `.ogg`      | **Supported by HTML**.                                                |
-| MP3       | `.mp3`      | Best compressed recorded music. **All browsers**.                     |
-| MP4       | `.mp4`      | Video container that can hold audio. **All browsers**.                |
+| Format    | File         | Notes                                                                 |
+| --------- | ------------ | --------------------------------------------------------------------- |
+| MIDI      | `.mid/.midi` | Notes, not recorded sound. **Not browsers**.                          |
+| RealAudio | `.rm/.ram`   | **Does not play in browsers**.                                        |
+| WMA       | `.wma`       | Microsoft. **Not browsers**.                                          |
+| AAC       | `.aac`       | Apple / iTunes. **Not browsers** (as a raw `.aac` type on this page). |
+| WAV       | `.wav`       | IBM/Microsoft. **Supported by HTML**.                                 |
+| Ogg       | `.ogg`       | **Supported by HTML**.                                                |
+| MP3       | `.mp3`       | Best compressed recorded music. **All browsers**.                     |
+| MP4       | `.mp4`       | Video container that can hold audio. **All browsers**.                |
 
-  - **Note:** Only **MP3, WAV, and Ogg** audio are supported by the HTML standard.
-  - If the site is **recorded music**, choose **MP3**.
+- **Note:** Only **MP3, WAV, and Ogg** audio are supported by the HTML standard.
+- If the site is **recorded music**, choose **MP3**.
 
-No tested sandbox files. The chapter has **no code example** — only format tables. Video and audio markup are in the next chapters.
+<a id="html-media-example-01"></a>
+
+### **Example 1: Format tables (no Tryit)**
+
+- [x] This chapter has **no Tryit page**. It is a format catalog; `<video>` and `<audio>` markup are in the next chapters.
+- [x] HTML video: **MP4, WebM, Ogg**. HTML audio: **MP3, WAV, Ogg**.
 
 ```text
 # No code snippets in this topic.
 ```
+
+- [x] **Outcome:** there is nothing to render here — only the format tables above.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10269,62 +11483,75 @@ HTML video is **MP4, WebM, Ogg** (YouTube: MP4). HTML audio is **MP3, WAV, Ogg**
 
 The HTML **`<video>`** element shows a video on a page. This chapter covers **`controls`**, **`<source>`** fallbacks, **width/height**, **autoplay** (and **muted** autoplay in Chromium), formats (**MP4, WebM, Ogg**), and a small **JavaScript** play/pause/size demo. Sample clip: **Big Buck Bunny**.
 
+This section has **3** examples:
+
+- [x] **Example 1:** Controls [View](#html-video-example-01)
+- [x] **Example 2:** Muted autoplay [View](#html-video-example-02)
+- [x] **Example 3:** JavaScript [View](#html-video-example-03)
+
 ## Detailed Explanation
+
+- [x] **Formats** — MP4 (`video/mp4`), WebM (`video/webm`), Ogg (`video/ogg`). Safari: MP4 and WebM yes, **Ogg no**. Other listed browsers: all three.
+- [x] **Tags:** `<video>` video; `<source>` alternate files; `<track>` text tracks.
+
+<a id="html-video-example-01"></a>
+
+### **Example 1: Controls**
 
 - [x] **Markup**
   - `controls` adds play, pause, and volume.
   - Always set **width and height** so the page does not flicker while the video loads.
   - `<source>` lists alternatives; the browser uses the **first recognized** format.
   - Text between the tags shows only if `<video>` is **unsupported**.
-  - Sandbox: `code_sandbox/html-video/index.html` (`movie.mp4`).
+
+Sandbox: `code_sandbox/html-video/index.html`
+
+```html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4" />
+  <source src="movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+```
+
+<img alt="html-video source" src="./code_sandbox/snaps/html-video-code.png" />
 
 <img alt="html-video controls result" src="./code_sandbox/snaps/html-video-result.png" />
+
+- [x] **Outcome:** a **320×240** video player with native **controls** (play, pause, volume).
+
+<a id="html-video-example-02"></a>
+
+### **Example 2: Muted autoplay**
 
 - [x] **Autoplay**
   - `autoplay` starts the video automatically.
   - **Chromium** usually blocks autoplay **with sound**. **Muted autoplay is allowed**: `autoplay muted`.
   - Sandbox: `autoplay.html`.
 
+Sandbox: `code_sandbox/html-video/autoplay.html`
+
+```html
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4" />
+</video>
+```
+
+<img alt="html-video autoplay source" src="./code_sandbox/snaps/html-video-01-code.png" />
+
 <img alt="html-video autoplay muted result" src="./code_sandbox/snaps/html-video-01-result.png" />
 
-- [x] **Formats** — MP4 (`video/mp4`), WebM (`video/webm`), Ogg (`video/ogg`). Safari: MP4 and WebM yes, **Ogg no**. Other listed browsers: all three.
+- [x] **Outcome:** the clip starts by itself because **`autoplay muted`** is set (Chromium blocks autoplay with sound).
+
+<a id="html-video-example-03"></a>
+
+### **Example 3: JavaScript**
+
 - [x] **DOM** — methods/properties/events to load, play, pause, set duration and volume.
   - Buttons: **Play/Pause**, **Big**, **Small**, **Normal**.
   - Sandbox: `js.html`.
 
-<img alt="html-video javascript controls result" src="./code_sandbox/snaps/html-video-02-result.png" />
-
-- [x] **Tags:** `<video>` video; `<source>` alternate files; `<track>` text tracks.
-
-Controls (`index.html`):
-
-<img alt="html-video source" src="./code_sandbox/snaps/html-video-code.png" />
-
-```html
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-```
-
-<img alt="html-video controls result" src="./code_sandbox/snaps/html-video-result.png" />
-
-Muted autoplay (`autoplay.html`):
-
-<img alt="html-video autoplay source" src="./code_sandbox/snaps/html-video-01-code.png" />
-
-```html
-<video width="320" height="240" autoplay muted>
-  <source src="movie.mp4" type="video/mp4">
-</video>
-```
-
-<img alt="html-video autoplay muted result" src="./code_sandbox/snaps/html-video-01-result.png" />
-
-JavaScript (`js.html`):
-
-<img alt="html-video js source" src="./code_sandbox/snaps/html-video-02-code.png" />
+Sandbox: `code_sandbox/html-video/js.html`
 
 ```html
 <button onclick="playPause()">Play/Pause</button>
@@ -10333,7 +11560,11 @@ JavaScript (`js.html`):
 <button onclick="makeNormal()">Normal</button>
 ```
 
+<img alt="html-video js source" src="./code_sandbox/snaps/html-video-02-code.png" />
+
 <img alt="html-video javascript controls result" src="./code_sandbox/snaps/html-video-02-result.png" />
+
+- [x] **Outcome:** the browser shows **Play/Pause**, **Big**, **Small**, **Normal**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10433,51 +11664,63 @@ Use `<video>` with `controls`, width/height, and `<source>` fallbacks. Autoplay 
 
 The HTML **`<audio>`** element plays a sound file. This chapter covers **`controls`**, **`<source>`** fallbacks, **autoplay** (and **muted** autoplay in Chromium), formats (**MP3, WAV, OGG**), media types, and the Audio/Video **DOM**.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Controls [View](#html-audio-example-01)
+- [x] **Example 2:** Muted autoplay [View](#html-audio-example-02)
+
 ## Detailed Explanation
+
+- [x] **Formats** — MP3 (`audio/mpeg`), WAV (`audio/wav`), OGG (`audio/ogg`). Safari: MP3 and WAV yes, **OGG no**. Edge/IE: WAV and OGG from **Edge 79**.
+- [x] **DOM** — load, play, pause, duration, volume, play/pause events (same family as `<video>`).
+- [x] **Tags:** `<audio>` sound; `<source>` alternate files.
+
+<a id="html-audio-example-01"></a>
+
+### **Example 1: Controls**
 
 - [x] **Markup**
   - `controls` adds play, pause, and volume.
   - `<source>` lists alternatives; the browser uses the **first recognized** format.
   - Inner text shows only if `<audio>` is **unsupported**.
-  - Sandbox: `code_sandbox/html-audio/index.html` (`horse.mp3`; the page also lists `horse.ogg`).
+
+Sandbox: `code_sandbox/html-audio/index.html`
+
+```html
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+```
+
+<img alt="html-audio source" src="./code_sandbox/snaps/html-audio-code.png" />
 
 <img alt="html-audio controls result" src="./code_sandbox/snaps/html-audio-result.png" />
+
+- [x] **Outcome:** an audio player with native **controls** for `horse.mp3`.
+
+<a id="html-audio-example-02"></a>
+
+### **Example 2: Muted autoplay**
 
 - [x] **Autoplay**
   - `autoplay` starts playback automatically.
   - Chromium usually **blocks** autoplay with sound. **Muted autoplay is allowed**: `controls autoplay muted`.
   - Sandbox: `autoplay.html`.
 
-<img alt="html-audio autoplay muted result" src="./code_sandbox/snaps/html-audio-01-result.png" />
-
-- [x] **Formats** — MP3 (`audio/mpeg`), WAV (`audio/wav`), OGG (`audio/ogg`). Safari: MP3 and WAV yes, **OGG no**. Edge/IE: WAV and OGG from **Edge 79**.
-- [x] **DOM** — load, play, pause, duration, volume, play/pause events (same family as `<video>`).
-- [x] **Tags:** `<audio>` sound; `<source>` alternate files.
-
-Controls (`index.html`):
-
-<img alt="html-audio source" src="./code_sandbox/snaps/html-audio-code.png" />
-
-```html
-<audio controls>
-  <source src="horse.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-```
-
-<img alt="html-audio controls result" src="./code_sandbox/snaps/html-audio-result.png" />
-
-Muted autoplay (`autoplay.html`):
-
-<img alt="html-audio autoplay source" src="./code_sandbox/snaps/html-audio-01-code.png" />
+Sandbox: `code_sandbox/html-audio/autoplay.html`
 
 ```html
 <audio controls autoplay muted>
-  <source src="horse.mp3" type="audio/mpeg">
+  <source src="horse.mp3" type="audio/mpeg" />
 </audio>
 ```
 
+<img alt="html-audio autoplay source" src="./code_sandbox/snaps/html-audio-01-code.png" />
+
 <img alt="html-audio autoplay muted result" src="./code_sandbox/snaps/html-audio-01-result.png" />
+
+- [x] **Outcome:** the sound starts by itself because **`autoplay muted`** is set.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10566,19 +11809,43 @@ Then open `http://127.0.0.1:8766/html-audio/`.
 
 **Plug-ins** extend the browser (Java applets, ActiveX, Flash, maps, virus scanners, bank IDs). **Most browsers no longer support** applets, plug-ins, ActiveX, or Shockwave Flash. This chapter still shows **`<object>`** and **`<embed>`** for including HTML or images.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Object [View](#html-plug-ins-example-01)
+- [x] **Example 2:** Embed [View](#html-plug-ins-example-02)
+
 ## Detailed Explanation
 
 - [x] **Warning**
   - Java Applets and plug-ins: **mostly gone**.
   - **ActiveX**: no longer supported in any browsers.
   - **Shockwave Flash**: turned off in modern browsers.
+
+<a id="html-plug-ins-example-01"></a>
+
+### **Example 1: Object**
+
 - [x] **`<object>`**
   - Supported by all browsers. Defines an **embedded object**.
   - Designed for plug-ins (applets, PDF, Flash) but can include **HTML in HTML** or an **image**.
   - Examples: `data="snippet.html"` (page used height **500px**; sandbox uses **200px** so the snap fits) and `data="audi.jpeg"`.
-  - Sandbox: `code_sandbox/html-plug-ins/index.html`.
+
+Sandbox: `code_sandbox/html-plug-ins/index.html`
+
+```html
+<object width="100%" height="500px" data="snippet.html"></object>
+<object data="audi.jpeg"></object>
+```
+
+<img alt="html-plug-ins object source" src="./code_sandbox/snaps/html-plug-ins-code.png" />
 
 <img alt="html-plug-ins object result" src="./code_sandbox/snaps/html-plug-ins-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Object** as shown in the result snap.
+
+<a id="html-plug-ins-example-02"></a>
+
+### **Example 2: Embed**
 
 - [x] **`<embed>`**
   - Supported in all major browsers. Was used for years but only became part of the spec in **HTML5**.
@@ -10586,27 +11853,18 @@ Then open `http://127.0.0.1:8766/html-audio/`.
   - Examples: `src="audi.jpeg"` and `src="snippet.html"`.
   - Sandbox: `embed.html`.
 
-Object (`index.html`):
-
-<img alt="html-plug-ins object source" src="./code_sandbox/snaps/html-plug-ins-code.png" />
+Sandbox: `code_sandbox/html-plug-ins/embed.html`
 
 ```html
-<object width="100%" height="500px" data="snippet.html"></object>
-<object data="audi.jpeg"></object>
+<embed src="audi.jpeg" />
+<embed width="100%" height="500px" src="snippet.html" />
 ```
-
-<img alt="html-plug-ins object result" src="./code_sandbox/snaps/html-plug-ins-result.png" />
-
-Embed (`embed.html`):
 
 <img alt="html-plug-ins embed source" src="./code_sandbox/snaps/html-plug-ins-01-code.png" />
 
-```html
-<embed src="audi.jpeg">
-<embed width="100%" height="500px" src="snippet.html">
-```
-
 <img alt="html-plug-ins embed result" src="./code_sandbox/snaps/html-plug-ins-01-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Embed** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10687,47 +11945,70 @@ Plug-ins (Java, ActiveX, Flash) are obsolete. Use `<object>` or `<embed>` to inc
 
 The easiest way to play video in HTML is **YouTube**. Skip local format conversion: upload the clip, copy the **video id**, and embed an **`<iframe>`**. This chapter covers the embed URL, **autoplay+mute**, **loop**, and **controls=0**.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Embed [View](#html-youtube-example-01)
+- [x] **Example 2:** URL parameters [View](#html-youtube-example-02)
+
 ## Detailed Explanation
 
 - [x] **Why YouTube?** Converting files is slow. Let YouTube play the video on your page.
 - [x] **Video id** — YouTube shows an id such as **`tgbNymZ7vqY`** when you save or play a video. Use that id in HTML.
-- [x] **Embed steps:** upload → note the id → `<iframe>` → `src` = video URL → `width` / `height` → extra query params.
-  - `src="https://www.youtube.com/embed/tgbNymZ7vqY"`
-  - Sandbox: `code_sandbox/html-youtube/index.html`.
-
-<img alt="html-youtube iframe result" src="./code_sandbox/snaps/html-youtube-result.png" />
-
 - [x] **Autoplay + mute**
   - `autoplay=1` starts on visit — **annoying** for visitors.
   - Chromium blocks most autoplay; **muted autoplay is allowed**: `autoplay=1&mute=1`.
 - [x] **Playlist / loop**
   - Playlist: comma-separated extra ids.
   - Loop forever: `playlist=videoID` **and** `loop=1`. `loop=0` (default) plays once.
+
+<a id="html-youtube-example-01"></a>
+
+### **Example 1: Embed**
+
+- [x] **Embed steps:** upload → note the id → `<iframe>` → `src` = video URL → `width` / `height` → extra query params.
+  - `src="https://www.youtube.com/embed/tgbNymZ7vqY"`
+
+Sandbox: `code_sandbox/html-youtube/index.html`
+
+```html
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY"
+>
+</iframe>
+```
+
+<img alt="html-youtube source" src="./code_sandbox/snaps/html-youtube-code.png" />
+
+<img alt="html-youtube iframe result" src="./code_sandbox/snaps/html-youtube-result.png" />
+
+- [x] **Outcome:** the page demonstrates **Embed** as shown in the result snap.
+
+<a id="html-youtube-example-02"></a>
+
+### **Example 2: URL parameters**
+
 - [x] **Controls**
   - `controls=0` hides the player controls. Default `controls=1` shows them.
   - Sandbox: `params.html`.
 
-Embed (`index.html`):
-
-<img alt="html-youtube source" src="./code_sandbox/snaps/html-youtube-code.png" />
-
-```html
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-```
-
-<img alt="html-youtube iframe result" src="./code_sandbox/snaps/html-youtube-result.png" />
-
-URL parameters (`params.html`):
-
-<img alt="html-youtube params source" src="./code_sandbox/snaps/html-youtube-01-code.png" />
+Sandbox: `code_sandbox/html-youtube/params.html`
 
 ```html
 <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+  <iframe
+    src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+  >
+    <iframe
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+    ></iframe></iframe
+></iframe>
 ```
+
+<img alt="html-youtube params source" src="./code_sandbox/snaps/html-youtube-01-code.png" />
+
+- [x] **Outcome:** the page demonstrates **URL parameters** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10826,6 +12107,10 @@ Upload to YouTube, copy the id, embed `youtube.com/embed/ID` in an iframe. Optio
 
 A **Web API** is an **Application Programming Interface for the Web**: functions that let you use browser features or data with simpler syntax. This chapter lists the main **HTML5 APIs**, how to use them safely, and **third-party** APIs. There is **no Try it Yourself** demo on this page.
 
+This section has **1** example:
+
+- [x] **Example 1:** HTML5 APIs overview [View](#html-web-apis-example-01)
+
 ## Detailed Explanation
 
 - [x] **Why APIs?** They can extend the browser, simplify complex work, and hide messy code behind easy syntax.
@@ -10843,11 +12128,17 @@ A **Web API** is an **Application Programming Interface for the Web**: functions
   - **Request user permission** — for sensitive data (Geolocation), **ask consent** first.
 - [x] **Third-party APIs** are **not** built into the browser. Download their code from the web. Examples: **YouTube** (videos), **Twitter** (tweets), **Facebook** (profile info).
 
-No tested sandbox files. The chapter has **no code example**.
+<a id="html-web-apis-example-01"></a>
+
+### **Example 1: HTML5 APIs overview**
+
+- [x] This chapter has **no Tryit page**. Later sections demo Geolocation, Drag and Drop, Web Storage, Web Workers, SSE, and Canvas.
 
 ```text
 # No code snippets in this topic.
 ```
+
+- [x] **Outcome:** there is nothing to render here — the APIs are listed in the bullets above.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -10936,6 +12227,10 @@ Web APIs wrap browser features. HTML5 highlights Geolocation, Drag and Drop, Web
 
 The **Geolocation API** reads the user’s **current location**. Because that is private, the browser **asks permission**. This chapter covers `navigator.geolocation`, **`getCurrentPosition()`**, **error codes**, returned **coords**, and **`watchPosition()` / `clearWatch()`**. It works on **secure contexts** (HTTPS or localhost).
 
+This section has **1** example:
+
+- [x] **Example 1:** `index.html` [View](#html-geolocation-example-01)
+
 ## Detailed Explanation
 
 - [x] **Privacy** — location is unavailable until the user **approves**.
@@ -10946,15 +12241,16 @@ The **Geolocation API** reads the user’s **current location**. Because that is
   - Sandbox: `code_sandbox/html-geolocation/index.html` (button **Try It**). Headless snaps will not grant permission.
 
 <img alt="html-geolocation result" src="./code_sandbox/snaps/html-geolocation-result.png" />
-
 - [x] **Error `code`:** `PERMISSION_DENIED`, `POSITION_UNAVAILABLE`, `TIMEOUT`, `UNKNOWN_ERROR`.
 - [x] **Uses:** local info, nearby points of interest, turn-by-turn GPS.
 - [x] **Always returned:** `coords.latitude`, `coords.longitude`, `coords.accuracy`. Optional: altitude, altitudeAccuracy, heading, speed, timestamp.
 - [x] **`watchPosition()`** — keeps updating as the user moves (needs a GPS device). **`clearWatch()`** stops it.
 
-`index.html`:
+<a id="html-geolocation-example-01"></a>
 
-<img alt="html-geolocation source" src="./code_sandbox/snaps/html-geolocation-code.png" />
+### **Example 1: `index.html`**
+
+- [x] This example runs the tested markup.
 
 ```javascript
 function getLocation() {
@@ -10966,7 +12262,11 @@ function getLocation() {
 }
 ```
 
+<img alt="html-geolocation source" src="./code_sandbox/snaps/html-geolocation-code.png" />
+
 <img alt="html-geolocation result" src="./code_sandbox/snaps/html-geolocation-result.png" />
+
+- [x] **Outcome:** the browser shows **function getLocation() { if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(success, error); } else { x.innerHTML = "Geolocation is not supported by this browser."; } }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -11056,6 +12356,10 @@ Ask permission, then `getCurrentPosition` (or `watchPosition`) on a secure conte
 
 The **HTML Drag and Drop API** lets you **grab** an element and drop it somewhere else. This chapter sets **`draggable="true"`**, sends an id with **`dataTransfer.setData`**, allows a drop with **`preventDefault` on dragover**, and **appends** the node on **drop**.
 
+This section has **1** example:
+
+- [x] **Example 1:** `index.html` [View](#html-drag-and-drop-example-01)
+
 ## Detailed Explanation
 
 - [x] **Make it draggable:** `draggable="true"` on an image, paragraph, heading, or link.
@@ -11069,12 +12373,13 @@ The **HTML Drag and Drop API** lets you **grab** an element and drop it somewher
   - Sandbox: `code_sandbox/html-drag-and-drop/index.html`.
 
 <img alt="html-drag-and-drop result" src="./code_sandbox/snaps/html-drag-and-drop-result.png" />
-
 - [x] **More examples on the page:** drag an `<h1>`, drag an `<a>`, drag an image **back and forth** between two divs.
 
-`index.html`:
+<a id="html-drag-and-drop-example-01"></a>
 
-<img alt="html-drag-and-drop source" src="./code_sandbox/snaps/html-drag-and-drop-code.png" />
+### **Example 1: `index.html`**
+
+- [x] This example runs the tested markup.
 
 ```javascript
 function dragstartHandler(ev) {
@@ -11090,7 +12395,11 @@ function dropHandler(ev) {
 }
 ```
 
+<img alt="html-drag-and-drop source" src="./code_sandbox/snaps/html-drag-and-drop-code.png" />
+
 <img alt="html-drag-and-drop result" src="./code_sandbox/snaps/html-drag-and-drop-result.png" />
+
+- [x] **Outcome:** the browser shows **function dragstartHandler(ev) { ev.dataTransfer.setData("text", ev.target.id); } function dragoverHandler(ev) { ev.preventDefault(); } function dropHandler(ev) { ev.preventDefault(); const data = ev.dataTransfer.getData("text"); ev.target.appendChild(document.getElementById(data)); }**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -11170,32 +12479,28 @@ Mark the source `draggable`, put its id in `dataTransfer` on dragstart, `prevent
 
 **Web Storage** keeps key/value data in the browser. It is **more secure** than cookies, **at least 5MB**, and is **never sent to the server**. This chapter covers **`localStorage`** (no expiry) and **`sessionStorage`** (one tab session).
 
+This section has **3** examples:
+
+- [x] **Example 1:** Click counter [View](#html-web-storage-example-01)
+- [x] **Example 2:** setItem [View](#html-web-storage-example-02)
+- [x] **Example 3:** sessionStorage [View](#html-web-storage-example-03)
+
 ## Detailed Explanation
 
 - [x] **Per origin** (domain + protocol). All pages of that origin share the same store.
 - [x] **`window.localStorage`** — data **survives** closing the tab.
 - [x] **`window.sessionStorage`** — data is **deleted** when that tab closes.
 - [x] **Feature detect:** `typeof(Storage) !== "undefined"`.
-- [x] **setItem / getItem**
-  - `localStorage.setItem("lastname", "Smith")` and `bgcolor` yellow.
-  - Values are always **strings** — convert when you need a number.
-  - Remove: `localStorage.removeItem("lastname")`.
-  - Sandbox: `code_sandbox/html-web-storage/names.html`.
 
-<img alt="html-web-storage names result" src="./code_sandbox/snaps/html-web-storage-01-result.png" />
+<a id="html-web-storage-example-01"></a>
+
+### **Example 1: Click counter**
 
 - [x] **Click counter (`localStorage.clickcount`)**
   - Convert with `Number(...)` then add 1.
   - Sandbox: `index.html`.
 
-<img alt="html-web-storage localStorage counter result" src="./code_sandbox/snaps/html-web-storage-result.png" />
-
-- [x] **sessionStorage counter** — same idea; count is “in this session”.
-  - Sandbox: `session.html`.
-
-Click counter (`index.html`):
-
-<img alt="html-web-storage counter source" src="./code_sandbox/snaps/html-web-storage-code.png" />
+Sandbox: `code_sandbox/html-web-storage/index.html`
 
 ```javascript
 if (localStorage.clickcount) {
@@ -11205,11 +12510,22 @@ if (localStorage.clickcount) {
 }
 ```
 
+<img alt="html-web-storage counter source" src="./code_sandbox/snaps/html-web-storage-code.png" />
+
 <img alt="html-web-storage localStorage counter result" src="./code_sandbox/snaps/html-web-storage-result.png" />
 
-setItem (`names.html`):
+- [x] **Outcome:** the browser shows **if (localStorage.clickcount) { localStorage.clickcount = Number(localStorage.clickcount) + 1; } else { localStorage.clickcount = 1; }**.
 
-<img alt="html-web-storage setItem source" src="./code_sandbox/snaps/html-web-storage-01-code.png" />
+<a id="html-web-storage-example-02"></a>
+
+### **Example 2: setItem**
+
+- [x] **setItem / getItem**
+  - `localStorage.setItem("lastname", "Smith")` and `bgcolor` yellow.
+  - Values are always **strings** — convert when you need a number.
+  - Remove: `localStorage.removeItem("lastname")`.
+
+Sandbox: `code_sandbox/html-web-storage/names.html`
 
 ```javascript
 localStorage.setItem("lastname", "Smith");
@@ -11217,17 +12533,30 @@ localStorage.setItem("bgcolor", "yellow");
 x.innerHTML = localStorage.getItem("lastname");
 ```
 
+<img alt="html-web-storage setItem source" src="./code_sandbox/snaps/html-web-storage-01-code.png" />
+
 <img alt="html-web-storage names result" src="./code_sandbox/snaps/html-web-storage-01-result.png" />
 
-sessionStorage (`session.html`):
+- [x] **Outcome:** the browser shows **localStorage.setItem("lastname", "Smith"); localStorage.setItem("bgcolor", "yellow"); x.innerHTML = localStorage.getItem("lastname");**.
+
+<a id="html-web-storage-example-03"></a>
+
+### **Example 3: sessionStorage**
+
+- [x] **sessionStorage counter** — same idea; count is “in this session”.
+  - Sandbox: `session.html`.
+
+Sandbox: `code_sandbox/html-web-storage/session.html`
+
+```javascript
+sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+```
 
 <img alt="html-web-storage session source" src="./code_sandbox/snaps/html-web-storage-02-code.png" />
 
-```javascript
-sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-```
-
 <img alt="html-web-storage sessionStorage counter result" src="./code_sandbox/snaps/html-web-storage-02-result.png" />
+
+- [x] **Outcome:** the browser shows **sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -11308,6 +12637,11 @@ Web storage is per-origin key/value data. localStorage lasts; sessionStorage die
 
 A **web worker** is an **external JavaScript file** that runs in the **background** so a heavy script does not freeze the page. This chapter builds `demo_workers.js` (a counter via **`postMessage`**), starts it with **`new Worker`**, listens with **`onmessage`**, and stops it with **`terminate()`**.
 
+This section has **2** examples:
+
+- [x] **Example 1:** `index.html` [View](#html-web-workers-example-01)
+- [x] **Example 2:** `demo_workers.js` [View](#html-web-workers-example-02)
+
 ## Detailed Explanation
 
 - [x] Scripts on the main page block UI until they finish. A worker runs **independently** — you can still click and select.
@@ -11323,23 +12657,32 @@ A **web worker** is an **external JavaScript file** that runs in the **backgroun
   - Sandbox: `code_sandbox/html-web-workers/index.html`.
 
 <img alt="html-web-workers result" src="./code_sandbox/snaps/html-web-workers-result.png" />
-
 - [x] **Workers cannot use** `window`, `document`, or `parent`.
 
-`index.html`:
+<a id="html-web-workers-example-01"></a>
 
-<img alt="html-web-workers source" src="./code_sandbox/snaps/html-web-workers-code.png" />
+### **Example 1: `index.html`**
+
+- [x] This example runs the tested markup.
 
 ```javascript
 w = new Worker("demo_workers.js");
-w.onmessage = function(event) {
+w.onmessage = function (event) {
   document.getElementById("result").innerHTML = event.data;
 };
 ```
 
+<img alt="html-web-workers source" src="./code_sandbox/snaps/html-web-workers-code.png" />
+
 <img alt="html-web-workers result" src="./code_sandbox/snaps/html-web-workers-result.png" />
 
-`demo_workers.js`:
+- [x] **Outcome:** the browser shows **w = new Worker("demo_workers.js"); w.onmessage = function(event) { document.getElementById("result").innerHTML = event.data; };**.
+
+<a id="html-web-workers-example-02"></a>
+
+### **Example 2: `demo_workers.js`**
+
+- [x] This example runs the tested markup.
 
 ```javascript
 var i = 0;
@@ -11350,6 +12693,8 @@ function timedCount() {
 }
 timedCount();
 ```
+
+- [x] **Outcome:** the browser shows **var i = 0; function timedCount() { i = i + 1; postMessage(i); setTimeout(timedCount, 500); } timedCount();**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -11430,36 +12775,48 @@ Put heavy work in an external `.js` worker. `new Worker`, `postMessage`/`onmessa
 
 **Server-Sent Events (SSE)** let the **server push** updates to the page over HTTP. The page does not poll. This chapter uses **`EventSource`**, `onmessage`, and a server that sends `text/event-stream` lines starting with **`data:`**. Examples: feeds, stocks, scores.
 
+This section has **2** examples:
+
+- [x] **Example 1:** Page [View](#html-sse-example-01)
+- [x] **Example 2:** PHP from the chapter [View](#html-sse-example-02)
+
 ## Detailed Explanation
 
 - [x] **One-way messaging** — server → page. Facebook/Twitter-style updates, news, sports.
 - [x] **Browser:** `new EventSource("demo_sse.php")` then `source.onmessage`.
   - Check: `typeof(EventSource) !== "undefined"`.
   - Each message appends `event.data` into `#result`.
+- [x] **EventSource events:** `onopen` (connected), `onmessage` (data), `onerror` (error).
+
+<a id="html-sse-example-01"></a>
+
+### **Example 1: Page**
+
 - [x] **Server**
   - Header **`Content-Type: text/event-stream`**, no cache.
   - Each event: `data: The server time is: …` then a **blank line**.
   - The page shows **PHP** and **ASP**. This sandbox has **no PHP**, so `sse_server.py` on **port 8767** sends the same `data:` stream and the page uses `EventSource("/sse")`.
-  - Sandbox: `code_sandbox/html-sse/index.html`.
 
-<img alt="html-sse result" src="./code_sandbox/snaps/html-sse-result.png" />
-
-- [x] **EventSource events:** `onopen` (connected), `onmessage` (data), `onerror` (error).
-
-Page (`index.html`):
-
-<img alt="html-sse source" src="./code_sandbox/snaps/html-sse-code.png" />
+Sandbox: `code_sandbox/html-sse/index.html`
 
 ```javascript
 var source = new EventSource("demo_sse.php");
-source.onmessage = function(event) {
+source.onmessage = function (event) {
   document.getElementById("result").innerHTML += event.data + "<br>";
 };
 ```
 
+<img alt="html-sse source" src="./code_sandbox/snaps/html-sse-code.png" />
+
 <img alt="html-sse result" src="./code_sandbox/snaps/html-sse-result.png" />
 
-PHP from the chapter (`demo_sse.php`):
+- [x] **Outcome:** the page opens an EventSource and appends each `data:` line into `#result`. The sandbox stand-in `sse_server.py` streams `The server time is: …` every second.
+
+<a id="html-sse-example-02"></a>
+
+### **Example 2: PHP from the chapter**
+
+- [x] This example runs the tested markup.
 
 ```php
 <?php
@@ -11471,7 +12828,7 @@ flush();
 ?>
 ```
 
-Python stand-in used in the sandbox (`sse_server.py`): streams `data: The server time is: …` every second on `GET /sse`.
+- [x] **Outcome:** the page demonstrates **PHP from the chapter** as shown in the result snap.
 
 <details>
   <summary>Terminal Commands</summary>
