@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>(\d{4})-(\d{2})-(\d{2}) — result array indices</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>(\d{4})-(\d{2})-(\d{2}) — result array indices</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const regex = /(\d{4})-(\d{2})-(\d{2})/;
+      const text = "2026-05-21";
+      const result = text.match(regex);
+      document.getElementById("demo").innerText = "result -> " + String(JSON.stringify(result));
+    </script>
+  </body>
+</html>

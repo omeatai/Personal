@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>\1 — backreference</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>\1 — backreference</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "hello hello";
+      let result = text.match(/(\w+)\s+\1/);
+      let miss = "hello world".match(/(\w+)\s+\1/);
+      document.getElementById("demo").innerText = "result -> " + String(JSON.stringify(result)) + "\n" + "miss -> " + String(JSON.stringify(miss));
+    </script>
+  </body>
+</html>

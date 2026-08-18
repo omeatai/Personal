@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>(?&lt;name&gt;x) — named capturing groups</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>(?&lt;name&gt;x) — named capturing groups</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const text = "Name: John Doe";
+      const regex = /(?<firstName>\w+) (?<lastName>\w+)/;
+      const result = text.match(regex);
+      let fName = result.groups.firstName;
+      let lName = result.groups.lastName;
+      document.getElementById("demo").innerText = "result -> " + String(JSON.stringify(result)) + "\n" + "result.groups -> " + String(JSON.stringify(result.groups)) + "\n" + "fName -> " + String(fName) + "\n" + "lName -> " + String(lName);
+    </script>
+  </body>
+</html>
