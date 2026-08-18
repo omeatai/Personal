@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML DOM Style object (inline only)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="box">box</p>
+    <pre id="demo"></pre>
+    <script>
+      const el = document.getElementById("box");
+      el.style.backgroundColor = "gold";
+      document.getElementById("demo").innerText =
+        "inline=" + el.style.backgroundColor +
+        "\ncomputed=" + getComputedStyle(el).backgroundColor;
+    </script>
+  </body>
+</html>

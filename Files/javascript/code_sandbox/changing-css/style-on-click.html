@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Change style when a button is clicked</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="id1">My Heading 1</h1>
+<button type="button" id="btn">Click Me!</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("btn").onclick = function () {
+        const h = document.getElementById("id1");
+        h.style.color = "red";
+        h.style.fontSize = "40px";
+      };
+      document.getElementById("btn").click();
+      const h = document.getElementById("id1");
+      document.getElementById("demo").innerText = "color=" + h.style.color + " fontSize=" + h.style.fontSize;
+    </script>
+  </body>
+</html>

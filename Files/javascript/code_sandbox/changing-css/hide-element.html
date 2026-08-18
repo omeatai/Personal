@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Make an element invisible with display:none</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="hide">I can vanish</p><button type="button" id="btn">Click Me!</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("btn").onclick = function () {
+        document.getElementById("hide").style.display = "none";
+      };
+      document.getElementById("btn").click();
+      document.getElementById("demo").innerText =
+        "display=" + document.getElementById("hide").style.display;
+    </script>
+  </body>
+</html>
