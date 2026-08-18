@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Start with HTML — a working form</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <form id="f" action="#" method="post"><h2>Newsletter Signup</h2><label>Email: <input type="email" name="email" required></label> <button type="submit">Join</button></form>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText = "method=" + document.getElementById("f").method + " required=" + document.querySelector("input").required;
+    </script>
+  </body>
+</html>

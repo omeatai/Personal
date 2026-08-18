@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Modern HTML that used to need JavaScript</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <details open><summary>Native</summary>No JS accordion.</details><img alt="" id="i" loading="lazy" width="1" height="1" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=">
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "details=" + document.querySelector("details").tagName +
+        " lazy=" + document.getElementById("i").loading;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>PE adds features later vs GD removes unsupported ones</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Feature detect, then enhance.</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "dialog.showModal=" + ("showModal" in document.createElement("dialog"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>PE focuses on accessibility; GD focuses on compatibility</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Real button (accessible)</button> <div id="d" role="button">Fake div button (harder)</div>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "button focusable=" + (document.getElementById("b").tabIndex >= 0) +
+        "\ndiv role=" + document.getElementById("d").getAttribute("role");
+    </script>
+  </body>
+</html>
