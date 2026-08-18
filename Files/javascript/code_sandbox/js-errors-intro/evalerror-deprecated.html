@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>EvalError — deprecated; eval throws SyntaxError instead</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>EvalError — deprecated; eval throws SyntaxError instead</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const made = new EvalError("still constructable");
+      let evalMsg;
+      try {
+        eval("var = 1");
+        evalMsg = "eval ran";
+      } catch (e) {
+        evalMsg = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "new EvalError().name -> " + made.name + "\n" +
+        "new EvalError().message -> " + made.message + "\n" +
+        "eval(\"var = 1\") -> " + evalMsg;
+    </script>
+  </body>
+</html>

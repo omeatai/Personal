@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>catch — runs when the try block throws</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>catch — runs when the try block throws</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let name = "(no throw)";
+      let message = "";
+      try {
+        null.foo;
+      } catch (e) {
+        if (e !== null && typeof e === "object") {
+          name = String(e.name);
+          message = String(e.message);
+        } else {
+          name = "(not an Error object)";
+          message = String(e);
+        }
+      }
+      document.getElementById("demo").innerText =
+        "err.name -> " + name + "\n" +
+        "err.message -> " + message;
+    </script>
+  </body>
+</html>
