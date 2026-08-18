@@ -81,8 +81,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `20.3` JS Mistakes (new).
-- **Last completed:** `20.2` JS Best Practices.
+- **Next task:** `20.4` JS Performance (new).
+- **Last completed:** `20.3` JS Mistakes.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -327,7 +327,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 - [x] `20.1` JS Style Guide — `js_conventions.asp` (new)
 - [x] `20.2` JS Best Practices — `js_best_practices.asp` (new)
-- [ ] `20.3` JS Mistakes — `js_mistakes.asp` (new)
+- [x] `20.3` JS Mistakes — `js_mistakes.asp` (new)
 - [ ] `20.4` JS Performance — `js_performance.asp` (new)
 
 ### S21 — Reference

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>if (x = 10) is true — assignment, not comparison</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>if (x = 10) is true — assignment, not comparison</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 0;
+      let ran = false;
+      if (x = 10) { ran = true; }
+      document.getElementById("demo").innerText = "x after -> " + String(x) + "\n" + "block ran -> " + String(ran);
+    </script>
+  </body>
+</html>

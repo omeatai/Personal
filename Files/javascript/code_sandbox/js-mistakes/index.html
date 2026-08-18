@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Mistakes</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JS Mistakes</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="if-eqeq-10.html">01 — if (x == 10) is false when x is 0</a></li>
+      <li><a href="if-assign-10.html">02 — if (x = 10) is true — assignment, not comparison</a></li>
+      <li><a href="if-assign-0.html">03 — if (x = 0) is false — 0 is falsy</a></li>
+      <li><a href="loose-eq-string-10.html">04 — 10 == &quot;10&quot; is true (loose comparison)</a></li>
+      <li><a href="strict-eq-string-10.html">05 — 10 === &quot;10&quot; is false (strict comparison)</a></li>
+      <li><a href="switch-case-10.html">06 — switch(x) case 10 matches number 10</a></li>
+      <li><a href="switch-case-string-10.html">07 — switch(x) case &quot;10&quot; does not match number 10</a></li>
+      <li><a href="plus-vs-concat.html">08 — 10 + 5 is 15; 10 += &quot;5&quot; is &quot;105&quot;</a></li>
+      <li><a href="plus-two-variables.html">09 — x + y is 15 or &quot;105&quot; depending on y&#x27;s type</a></li>
+      <li><a href="float-0-1-0-2.html">10 — 0.1 + 0.2 is not 0.3</a></li>
+      <li><a href="float-fix.html">11 — (x * 10 + y * 10) / 10 is 0.3</a></li>
+      <li><a href="break-statement-ok.html">12 — You may break a statement after = across two lines</a></li>
+      <li><a href="break-string-bad.html">13 — Breaking in the middle of a string is a SyntaxError</a></li>
+      <li><a href="break-string-backslash.html">14 — Backslash continues a string across lines</a></li>
+      <li><a href="misplaced-semicolon.html">15 — if (x == 19);{ } always runs the block</a></li>
+      <li><a href="return-no-semicolons.html">16 — return a * power works without semicolons (ASI)</a></li>
+      <li><a href="return-with-semicolons.html">17 — return a * power with semicolons — same result</a></li>
+      <li><a href="return-break-after-star.html">18 — You may break after `return a *` onto the next line</a></li>
+      <li><a href="return-newline.html">19 — Never break after return — it becomes return;</a></li>
+      <li><a href="return-semicolon-explained.html">20 — ASI reads that as return; a * power;</a></li>
+      <li><a href="array-numbered-indexes.html">21 — Arrays use numbered indexes — length 3, person[0] is John</a></li>
+      <li><a href="array-named-indexes.html">22 — person[&quot;firstName&quot;] turns the array into a plain object</a></li>
+      <li><a href="trailing-comma-js.html">23 — Trailing commas in objects/arrays are legal in ES5</a></li>
+      <li><a href="trailing-comma-json.html">24 — JSON.parse rejects trailing commas</a></li>
+      <li><a href="typeof-undefined.html">25 — if (typeof myObj === &quot;undefined&quot;) is safe</a></li>
+      <li><a href="null-check-order.html">26 — Test typeof !== undefined before !== null</a></li>
+    </ul>
+  </body>
+</html>

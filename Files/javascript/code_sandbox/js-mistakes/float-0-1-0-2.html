@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>0.1 + 0.2 is not 0.3</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>0.1 + 0.2 is not 0.3</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 0.1;
+      let y = 0.2;
+      let z = x + y;
+      document.getElementById("demo").innerText = "z -> " + String(z) + "\n" + "z === 0.3 -> " + String(z === 0.3);
+    </script>
+  </body>
+</html>
