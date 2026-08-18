@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>months.toSpliced(0, 1)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>months.toSpliced(0, 1)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const months = ["Jan", "Feb", "Mar", "Apr"];
+      const spliced = months.toSpliced(0, 1);
+      document.getElementById("demo").innerText = "spliced -> " + String(JSON.stringify(spliced)) + "\n" + "months -> " + String(JSON.stringify(months));
+    </script>
+  </body>
+</html>

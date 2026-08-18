@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>concat two arrays</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>concat two arrays</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myGirls = ["Cecilie", "Lone"];
+      const myBoys = ["Emil", "Tobias", "Linus"];
+      const myChildren = myGirls.concat(myBoys);
+      document.getElementById("demo").innerText = "myChildren -> " + String(JSON.stringify(myChildren)) + "\n" + "myGirls -> " + String(JSON.stringify(myGirls));
+    </script>
+  </body>
+</html>

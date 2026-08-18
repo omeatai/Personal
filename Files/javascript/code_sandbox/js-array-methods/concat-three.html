@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>concat three arrays</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>concat three arrays</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const arr1 = ["Cecilie", "Lone"];
+      const arr2 = ["Emil", "Tobias", "Linus"];
+      const arr3 = ["Robin", "Morgan"];
+      const myChildren = arr1.concat(arr2, arr3);
+      document.getElementById("demo").innerText = "myChildren -> " + String(JSON.stringify(myChildren));
+    </script>
+  </body>
+</html>
