@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `17.10` JS Type Coercion (new).
-- **Last completed:** `17.9` JS toLocaleString().
+- **Next task:** `17.11` JS Type Conversion (new).
+- **Last completed:** `17.10` JS Type Coercion.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -302,7 +302,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `17.7` JS NaN — `js_nan.asp` (new)
 - [x] `17.8` JS toString() — `js_tostring.asp` (new)
 - [x] `17.9` JS toLocaleString() — `js_tolocalestring.asp` (new)
-- [ ] `17.10` JS Type Coercion — `js_type_coercion.asp` (new)
+- [x] `17.10` JS Type Coercion — `js_type_coercion.asp` (new)
 - [ ] `17.11` JS Type Conversion — `js_type_conversion.asp` (new)
 - [ ] `17.12` JS Destructuring — `js_destructuring.asp` (new)
 
