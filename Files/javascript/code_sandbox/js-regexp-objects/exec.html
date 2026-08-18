@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>regex.exec(text)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>regex.exec(text)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const result = /e/.exec("The best things in life are free!");
+      document.getElementById("demo").innerText = "JSON.stringify(result) -> " + String(JSON.stringify(result)) + "\n" + "result[0] -> " + String(result[0]) + "\n" + "result.index -> " + String(result.index) + "\n" + "result.input -> " + String(result.input);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Literal /ab+c/i vs new RegExp</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Literal /ab+c/i vs new RegExp</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const lit = /ab+c/i;
+      const ctor = new RegExp("ab+c", "i");
+      const goodDigits = new RegExp("\\d+");
+      const badDigits = new RegExp("\d+");
+      document.getElementById("demo").innerText = "String(lit) -> " + String(String(lit)) + "\n" + "String(ctor) -> " + String(String(ctor)) + "\n" + "String(goodDigits) -> " + String(String(goodDigits)) + "\n" + "String(badDigits) -> " + String(String(badDigits)) + "\n" + "goodDigits.test('12') -> " + String(goodDigits.test('12')) + "\n" + "badDigits.test('12') -> " + String(badDigits.test('12'));
+    </script>
+  </body>
+</html>

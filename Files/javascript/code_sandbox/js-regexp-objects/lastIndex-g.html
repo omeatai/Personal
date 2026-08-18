@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>lastIndex mutation with /g and exec</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>lastIndex mutation with /g and exec</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const pattern = /is/g;
+      const text = "Is this all there is?";
+      const a = pattern.exec(text);
+      const li1 = pattern.lastIndex;
+      const b = pattern.exec(text);
+      const li2 = pattern.lastIndex;
+      const c = pattern.exec(text);
+      const li3 = pattern.lastIndex;
+      document.getElementById("demo").innerText = "JSON.stringify(a) -> " + String(JSON.stringify(a)) + "\n" + "a.index -> " + String(a.index) + "\n" + "li1 -> " + String(li1) + "\n" + "JSON.stringify(b) -> " + String(JSON.stringify(b)) + "\n" + "b.index -> " + String(b.index) + "\n" + "li2 -> " + String(li2) + "\n" + "JSON.stringify(c) -> " + String(JSON.stringify(c)) + "\n" + "li3 -> " + String(li3);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>RegExp.escape(&#x27;[*]&#x27;) then replace</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>RegExp.escape(&#x27;[*]&#x27;) then replace</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const oldText = "[*] is a web school.";
+      let safe;
+      let result;
+      try {
+        safe = RegExp.escape("[*]");
+        const regex = new RegExp(safe);
+        result = oldText.replace(regex, "W3Schools");
+      } catch (e) {
+        safe = e.name + ": " + e.message;
+        result = oldText;
+      }
+      document.getElementById("demo").innerText = "safe -> " + String(JSON.stringify(safe)) + "\n" + "result -> " + String(result);
+    </script>
+  </body>
+</html>
