@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>BigInt64Array</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>BigInt64Array</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const a = new BigInt64Array([10n, 20n]);
+      document.getElementById("demo").innerText = "a -> " + String(String(a)) + "\n" + "a[0] -> " + String(a[0]) + "\n" + "typeof a[0] -> " + String(typeof a[0]);
+    </script>
+  </body>
+</html>

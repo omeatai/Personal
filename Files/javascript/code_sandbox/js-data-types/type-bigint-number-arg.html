@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>BigInt(number) loses precision</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>BigInt(number) loses precision</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let y = BigInt(1234567890123456789012345);
+      let x = 1234567890123456789012345n;
+      document.getElementById("demo").innerText = "y -> " + String(y) + "\n" + "x === y -> " + String(x === y);
+    </script>
+  </body>
+</html>

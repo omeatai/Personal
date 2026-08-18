@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>WeakMap</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WeakMap</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const key = { id: 1 };
+      const wm = new WeakMap();
+      wm.set(key, "secret");
+      document.getElementById("demo").innerText = "wm.get(key) -> " + String(wm.get(key)) + "\n" + "wm.has(key) -> " + String(wm.has(key)) + "\n" + "String(wm) -> " + String(String(wm));
+    </script>
+  </body>
+</html>

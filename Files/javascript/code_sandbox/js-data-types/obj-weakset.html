@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>WeakSet</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WeakSet</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const item = { id: 1 };
+      const ws = new WeakSet();
+      ws.add(item);
+      document.getElementById("demo").innerText = "ws.has(item) -> " + String(ws.has(item)) + "\n" + "String(ws) -> " + String(String(ws));
+    </script>
+  </body>
+</html>

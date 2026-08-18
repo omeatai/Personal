@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>String</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>String</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let color = "Yellow";
+      let lastName = "Johnson";
+      document.getElementById("demo").innerText = "color -> " + String(color) + "\n" + "lastName -> " + String(lastName) + "\n" + "typeof color -> " + String(typeof color);
+    </script>
+  </body>
+</html>

@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `17.1` JS Data Types (new).
-- **Last completed:** `16.10` JS RegExp Methods.
+- **Next task:** `17.2` JS Primitive Data (new).
+- **Last completed:** `17.1` JS Data Types.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -293,7 +293,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ### S17 — Data Types
 
-- [ ] `17.1` JS Data Types — `js_datatypes.asp` (new)
+- [x] `17.1` JS Data Types — `js_datatypes.asp` (new)
 - [ ] `17.2` JS Primitive Data — `js_datatypes_primitives.asp` (new)
 - [ ] `17.3` JS Object Types — `js_datatypes_objects.asp` (new)
 - [ ] `17.4` JS Symbols — `js_datatypes_symbol.asp` (new)
