@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>&quot;firstName&quot; in person</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>&quot;firstName&quot; in person</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = { firstName: "John", lastName: "Doe" };
+      let hasFirst = ("firstName" in person);
+      let hasAge = ("age" in person);
+      document.getElementById("demo").innerText = "firstName in person -> " + String(hasFirst) + "\n" + "age in person -> " + String(hasAge);
+    </script>
+  </body>
+</html>
