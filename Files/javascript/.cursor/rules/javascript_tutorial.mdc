@@ -50,6 +50,18 @@ Accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Person
 - Topic accordion `<summary>` = the section title the user named (e.g. `JS Introduction`).
 - **Accordion spacing:** one blank line after every `</summary>` and one blank line before every `</details>`.
 - **Introduction**, **Detailed Explanation**, **Summary**, **References** = plain `##` headings (not child accordions).
+- **Introduction must list every Example title.** After the short prose (what the section is), list **all** `### **Example N: Title**` headings in order — if the section has 34 examples, list all 34. Do not summarize, skip, or group them. Use this shape (no code in the Introduction):
+
+```markdown
+This section has **N** examples:
+
+- [x] **Example 1:** Title of example 1
+- [x] **Example 2:** Title of example 2
+- [x] **Example N:** Title of example N
+```
+
+The titles must match the Detailed Explanation headings exactly. This list is a table of contents so the reader can see the whole section at a glance.
+
 - After Detailed Explanation, only these **closed child accordions**, in this order:
   1. **Terminal Commands**
   2. **Questions and Answers**
@@ -103,6 +115,11 @@ Deprecated **HTML wrapper** methods (`bold()`, `italics()`, …) may share **one
 ## Introduction
 
 What this section is, why it matters, and what you will be able to do after reading it. A few sentences; no code yet.
+
+This section has **2** examples:
+
+- [x] **Example 1:** Change HTML content
+- [x] **Example 2:** Next Tryit from the page
 
 ## Detailed Explanation
 
@@ -188,7 +205,7 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 - Document **this section only** (even inside a range). Do not mix in the next/previous chapter.
 - Preserve the site’s explanations, examples, exercises, tables, and warnings. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
 - **Be thorough.** Every Tryit, every reference-table row, and every named construct gets its own `### Example` block with explanation, tested code, code snap, result snap, and a written outcome. Add extra examples when they clarify a concept. A bullet list of method names is **not** coverage.
-- **Self-check before appending:** count Tryits + table rows + named constructs on the page; count `### **Example` headings in the accordion. If the accordion has fewer Examples than that count (HTML wrappers excepted as one grouped demo), you are not done — go back and add the missing headings. Do not file the section.
+- **Self-check before appending:** count Tryits + table rows + named constructs on the page; count `### **Example` headings in the accordion; count Introduction **Example N:** lines. All three must agree (HTML wrappers excepted as one grouped demo). If the Introduction omits any title, you are not done. Do not file the section.
 - Terminal Commands = only commands you actually used (server, open URL, `node`). If none, keep the child with a one-line placeholder.
 - Fenced code is the **tested** sandbox source. If you updated outdated snippets, fence what actually ran and say how it differs from the page.
 - If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.

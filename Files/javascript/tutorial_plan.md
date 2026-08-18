@@ -13,7 +13,7 @@ JS Website, JS Syllabus, JS Study Plan, JS Interview Prep, JS Bootcamp, JS Certi
 ## How to use this plan (read on every resume)
 
 1. Find the **first unchecked page** below (top to bottom). That is the next task.
-2. Do the page end-to-end per the rule: **read → rebuild every example in the sandbox → run → snap code + result → append one accordion** to `tutorial.md`.
+2. Do the page end-to-end per the rule: **read → rebuild every example in the sandbox → run → snap code + result → append one accordion** to `tutorial.md`. The accordion **Introduction** must list **every** Example title (all N of them).
 3. Tick the page here (`[ ]` → `[x]`) and update **Resume pointer** at the top of the tracker.
 4. Make **one git commit per page** (workflow rule: one task = one unit of work), then the user can `git push`.
 5. Move to the next unchecked page. Never batch multiple pages into one commit unless explicitly asked.
@@ -39,8 +39,11 @@ do **not** duplicate it.
       (NN matches the Example heading order; never one shared pair for a whole method table).
 - [ ] One accordion appended/updated in `tutorial.md` (Introduction, Detailed Explanation, Terminal Commands,
       Questions and Answers, Summary, References) with every example's written outcome.
+- [ ] **Introduction lists every Example title** (Example 1 … Example N) matching the Detailed Explanation
+      headings exactly — if there are 34 examples, list all 34; do not summarize or omit.
 - [ ] **Coverage count:** number of `### **Example` headings ≥ number of Tryits + reference-table rows +
       named constructs on the page (HTML wrappers may be one grouped Example that still runs every wrapper).
+      Introduction title-list count must equal that Example heading count.
 - [ ] Single git commit made for this page.
 
 #### Grain (do not collapse)
@@ -74,10 +77,10 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - **Next task:** `6.1` JS Numbers (new).
 - **Last completed:** Grain rewrite of `3.1`–`5.5` (JS Conditional → JS String Reference) after the thin
   **JS String Reference** accordion listed a method table and only fenced `trim()`.
-- **Notes:** Rule + this plan now require **JS Output grain**: one `### Example` per Tryit / table row /
-  named construct (39 Examples on String Reference, including every table row; HTML wrappers grouped but
-  every wrapper still runs). `tutorial.md` already has the rewritten accordions. Per-page git commits for
-  `3.1`–`5.5` were not made in that correction pass (user asked for the rewrite, not commits).
+- **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
+  named construct) and an **Introduction table of contents** that lists **every** Example title
+  (Example 1 … Example N; 39 titles on String Reference). `tutorial.md` already has both. Per-page git
+  commits for `3.1`–`5.5` were not made in that correction pass (user asked for the rewrite, not commits).
 
 ---
 

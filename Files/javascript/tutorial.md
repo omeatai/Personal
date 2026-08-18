@@ -9,6 +9,13 @@ Section-by-section notes. Each accordion is one tutorial page: explained, coded 
 
 JavaScript is the **programming language of the web**. This section shows what it can do in a page: **change HTML content**, **change attribute values**, **change CSS**, and **hide or show** elements. It also separates JavaScript from **Java**, and names **Brendan Eich (1995)** and the **ECMAScript / ECMA-262** standard.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Change HTML content
+- [x] **Example 2:** Change an HTML attribute value
+- [x] **Example 3:** Change an HTML style (CSS)
+- [x] **Example 4:** Hide and show elements
+
 ## Detailed Explanation
 
 - [x] **JavaScript is the programming language of the web**
@@ -278,6 +285,13 @@ JavaScript is the **programming language of the web**. It can change **HTML cont
 
 In HTML, JavaScript is inserted between **`<script>`** and **`</script>`**. This section shows scripts in the **`<head>`** or **`<body>`**, how **functions** run on events such as a button click, and how to load **external `.js` files** with the **`src`** attribute.
 
+This section has **4** examples:
+
+- [x] **Example 1:** The `<script>` tag
+- [x] **Example 2:** JavaScript in `<head>`
+- [x] **Example 3:** JavaScript in `<body>`
+- [x] **Example 4:** External JavaScript
+
 ## Detailed Explanation
 
 - [x] **The `<script>` tag holds JavaScript**
@@ -543,6 +557,14 @@ Put JavaScript between **`<script>`** tags in **`<head>`**, **`<body>`**, or bot
 
 JavaScript can **display data** in several ways: **`innerHTML`**, **`innerText`**, **`document.write()`**, **`window.alert()`**, **`console.log()`**, and (for printing the window) **`window.print()`**. This section shows each method and when **not** to use `document.write()`.
 
+This section has **5** examples:
+
+- [x] **Example 1:** Using `innerHTML`
+- [x] **Example 2:** Using `innerText`
+- [x] **Example 3:** Using `document.write()`
+- [x] **Example 4:** Using `window.alert()`
+- [x] **Example 5:** Using `console.log()`
+
 ## Detailed Explanation
 
 - [x] **JavaScript has four everyday ways to "display" data**
@@ -802,6 +824,13 @@ Display data with **`innerHTML`** (most common, can inject HTML), **`innerText`*
 
 JavaScript **syntax** is the set of rules for writing the language. Values are **literals** (fixed) or **variables**. This section covers **numbers**, **strings**, **keywords** (`let`, `const`), **identifiers**, **operators**, **expressions**, **case sensitivity**, and **camel case**.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Literals (fixed values)
+- [x] **Example 2:** Keywords, variables, and identifiers
+- [x] **Example 3:** Operators and expressions
+- [x] **Example 4:** Case sensitivity and camelCase
+
 ## Detailed Explanation
 
 - [x] **Syntax = the rules for how programs are constructed**
@@ -1018,6 +1047,12 @@ Syntax covers **literals** (numbers and quoted strings) and **variables** create
 
 A computer program is a list of **instructions** to **execute**. Those instructions are **statements**. JavaScript statements run **one by one** in the order they are written. In HTML, the **browser** executes the program. This section covers **semicolons**, **white space**, **line breaks**, **code blocks**, and **keywords**.
 
+This section has **3** examples:
+
+- [x] **Example 1:** Statements and execution order
+- [x] **Example 2:** Semicolons separate statements
+- [x] **Example 3:** Code blocks
+
 ## Detailed Explanation
 
 - [x] **A program is a list of statements**
@@ -1230,6 +1265,12 @@ Statements are instructions the browser runs **in order**. End them with **semic
 
 Comments **explain** code and make it **readable**. They can also **prevent execution** when you test alternatives. JavaScript has **single-line** comments (`//`) and **multi-line** comments (`/* ... */`).
 
+This section has **3** examples:
+
+- [x] **Example 1:** Single-line comments (`//`)
+- [x] **Example 2:** Multi-line comments (`/* ... */`)
+- [x] **Example 3:** Using comments to prevent execution
+
 ## Detailed Explanation
 
 - [x] **Comments do two jobs**
@@ -1392,6 +1433,13 @@ Use **`//`** for single-line comments and **`/* ... */`** for blocks. Comments e
 ## Introduction
 
 Variables are **containers** (labels) for data. You can declare them in **four** ways: automatically, **`var`**, **`let`**, and **`const`**. Modern code uses **`const`** by default and **`let`** when the value must change. Avoid **`var`** and undeclared variables.
+
+This section has **4** examples:
+
+- [x] **Example 1:** Declaring variables (`let` / `const` / `undefined`)
+- [x] **Example 2:** Identifiers (`_` and `$` count as letters)
+- [x] **Example 3:** Data types & multiple declarations
+- [x] **Example 4:** Assignment & arithmetic (`=` and `+`)
 
 ## Detailed Explanation
 
@@ -1648,6 +1696,13 @@ Variables hold data. Prefer **`const`**, then **`let`**; avoid **`var`** and aut
 
 **`let`** was added in **ES6 (2015)**. Variables declared with `let` have **block scope**, must be **declared before use**, and **cannot be redeclared** in the same scope. Prefer `let`/`const` over **`var`**.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Block scope with `let`
+- [x] **Example 2:** `var` is not block scoped
+- [x] **Example 3:** Redeclaring variables
+- [x] **Example 4:** Hoisting (`var` vs `let`)
+
 ## Detailed Explanation
 
 - [x] **`let` was added in ES6 (2015)** alongside `const`, giving JavaScript **block scope** for the first time (before that there were only **global** and **function** scope).
@@ -1892,6 +1947,13 @@ Then open `http://127.0.0.1:8770/js-let/`.
 
 **`const`** (ES6, 2015) declares a **block-scoped** binding that **cannot be redeclared or reassigned**. It must be **assigned when declared**. It is a constant **reference**, so you can still change **array elements** and **object properties**.
 
+This section has **4** examples:
+
+- [x] **Example 1:** `const` cannot be reassigned
+- [x] **Example 2:** Constant arrays (mutate, don't reassign)
+- [x] **Example 3:** Constant objects (change properties, don't reassign)
+- [x] **Example 4:** Block scope & hoisting
+
 ## Detailed Explanation
 
 - [x] **`const` (ES6, 2015)** declares a **block-scoped** binding that **cannot be redeclared or reassigned**, and it **must be assigned when declared**.
@@ -2117,6 +2179,13 @@ Then open `http://127.0.0.1:8770/js-const/`.
 ## Introduction
 
 A JavaScript variable can hold **8 types** of data. Use **`typeof`** to find the type of a value. This section covers **strings**, **numbers**, **booleans**, **undefined**, and **empty strings**.
+
+This section has **4** examples:
+
+- [x] **Example 1:** The `typeof` operator
+- [x] **Example 2:** Strings
+- [x] **Example 3:** Numbers
+- [x] **Example 4:** Booleans, `undefined` & empty string
 
 ## Detailed Explanation
 
@@ -2354,6 +2423,13 @@ JavaScript has **eight** datatypes and is **dynamically typed**. **`typeof`** re
 ## Introduction
 
 Operators perform **math and logic**. This page introduces **assignment (`=`)**, **addition (`+`)**, **multiplication (`*`)**, **comparison (`>`)**, **string concatenation**, and **logical** operators (`&&`, `||`, `!`).
+
+This section has **4** examples:
+
+- [x] **Example 1:** Arithmetic operators
+- [x] **Example 2:** Assignment operators
+- [x] **Example 3:** Comparison & logical operators
+- [x] **Example 4:** String operators
 
 ## Detailed Explanation
 
@@ -2594,6 +2670,13 @@ Operators come in families: **arithmetic** (`+ - * / % **`, `++`/`--`), **assign
 
 Arithmetic operators work on **numbers** (literals or variables). The numbers are **operands**; the symbol is the **operator**. This section covers `+ - * / % ++ -- **` and **precedence**.
 
+This section has **4** examples:
+
+- [x] **Example 1:** Basic arithmetic (`+ - * /`)
+- [x] **Example 2:** Modulus (`%`) and exponentiation (`**`)
+- [x] **Example 3:** Increment (`++`) and decrement (`--`)
+- [x] **Example 4:** Operator precedence
+
 ## Detailed Explanation
 
 - [x] **Arithmetic operators work on numbers** (literals or variables). In `100 + 50`, the numbers are the **operands** and `+` is the **operator**.
@@ -2807,6 +2890,17 @@ Arithmetic uses operands and operators: `+ - * / % ++ -- **`. `%` is the remaind
 ## Introduction
 
 Assignment operators **put values into variables**. The simple operator is **`=`**. Compound forms (`+=`, `-=`, `*=`, `**=`, `/=`, `%=`) update a variable in place (`x += 5` means `x = x + 5`). On strings, `+=` **concatenates**. ES2020 adds logical assignment (`&&=`, `||=`, `??=`). This page also shows the **spread** `...` operator, which splits an iterable into individual elements.
+
+This section has **8** examples:
+
+- [x] **Example 1:** Simple assignment (`=`)
+- [x] **Example 2:** Addition assignment (`+=`)
+- [x] **Example 3:** Other arithmetic assignments (`-= *= **= /= %=`)
+- [x] **Example 4:** String assignment (`=` and `+=`)
+- [x] **Example 5:** Logical AND assignment (`&&=`)
+- [x] **Example 6:** Logical OR assignment (`||=`)
+- [x] **Example 7:** Nullish coalescing assignment (`??=`)
+- [x] **Example 8:** Spread (`...`)
 
 ## Detailed Explanation
 
@@ -3144,6 +3238,14 @@ Then open `http://127.0.0.1:8770/js-assignment/`.
 
 Comparison operators compare two values and **always return `true` or `false`**. Use them in **conditional statements** (`if (age < 18) …`). The traps on this page are **`==` vs `===`**, **alphabetical string order**, and **mixed-type** compares that coerce a string to a number (or to `NaN`).
 
+This section has **5** examples:
+
+- [x] **Example 1:** Equal to (`==`) vs strict equal (`===`)
+- [x] **Example 2:** Not equal and relational operators
+- [x] **Example 3:** String comparison (alphabetical)
+- [x] **Example 4:** Comparing different types
+- [x] **Example 5:** Convert before you compare
+
 ## Detailed Explanation
 
 - [x] **Given `x = 5`**, the operators are `==` `===` `!=` `!==` `>` `<` `>=` `<=`.
@@ -3414,6 +3516,14 @@ Comparisons always return booleans. **`==` / `!=` coerce types**; **`===` / `!==
 ## Introduction
 
 Conditional statements run **different code** for different **true/false** conditions. This overview names **`if`**, **`else`**, **`else if`**, **`switch`**, and the **ternary** `? :`. The W3Schools page is mostly syntax; each named construct still has its own runnable Example below, with hours and weekday numbers **pinned** so the snaps are stable.
+
+This section has **5** examples:
+
+- [x] **Example 1:** The `if` statement
+- [x] **Example 2:** The `else` statement
+- [x] **Example 3:** The `else if` statement
+- [x] **Example 4:** The `switch` statement
+- [x] **Example 5:** The ternary operator (`? :`)
 
 ## Detailed Explanation
 
@@ -3690,6 +3800,14 @@ Conditionals choose a branch: **`if`** (`hour = 10` → **Good day**), **`else`*
 
 The **`if`** statement runs a block when a condition is **true**. Write **`if` in lowercase** — `If` or `IF` is a JavaScript **error**. This page walks a greeting, two driving ages, a **nested** country/age check, and the same check flattened with **`&&`**.
 
+This section has **5** examples:
+
+- [x] **Example 1:** `if` hour < 18 greeting
+- [x] **Example 2:** Age 18 can drive
+- [x] **Example 3:** Age 16 cannot drive
+- [x] **Example 4:** Nested `if` (USA, age 16)
+- [x] **Example 5:** Logical AND instead of nested `if`
+
 ## Detailed Explanation
 
 - [x] **`if` must be lowercase** — `If` / `IF` are not the keyword and throw an error.
@@ -3954,6 +4072,15 @@ Then open `http://127.0.0.1:8770/js-if-conditions/`.
 ## Introduction
 
 **Loops** run a block **many times**, usually with a **different value** each pass. They replace copy-paste when you walk an **array**. This overview covers **`for`**, **loop scope** with `let`, **`while`**, and **`do while`**.
+
+This section has **6** examples:
+
+- [x] **Example 1:** `for` over a cars array
+- [x] **Example 2:** `for` i < 5 — "The number is i"
+- [x] **Example 3:** Loop scope: outer `let i = 5`, loop reuses `i` (i is 10 after)
+- [x] **Example 4:** Loop scope: inner `let i` (outer i stays 5)
+- [x] **Example 5:** `while` i < 10
+- [x] **Example 6:** `do while` i < 10 (runs at least once)
 
 ## Detailed Explanation
 
@@ -4242,6 +4369,15 @@ Loops repeat a block: **`for`** walks **BMW … Audi** and prints **The number i
 ## Introduction
 
 The **`for`** statement creates a loop with **three optional expressions**: initialize, condition, and update. Omit any of them when you set or increment the counter **outside** the header — but if you omit the **condition**, you must **`break`** or the loop never ends.
+
+This section has **6** examples:
+
+- [x] **Example 1:** `for` i < 5 numbers
+- [x] **Example 2:** `for` collect car names
+- [x] **Example 3:** Omit exp1 (`i = 2` before the loop)
+- [x] **Example 4:** Omit exp3 (`i++` inside the body)
+- [x] **Example 5:** `var i` in the loop leaks (i is 10 after)
+- [x] **Example 6:** `let i` in the loop does not leak (outer i stays 5)
 
 ## Detailed Explanation
 
@@ -4532,6 +4668,13 @@ Then open `http://127.0.0.1:8770/js-loop-for/`.
 
 **While loops** run a block **as long as a condition is true**. JavaScript has **`while`** (test first) and **`do while`** (run first). A `while` is like a `for` with statement 1 and 3 omitted. Forgetting **`i++`** infinite-loops — the warning is in the bullets; the sandbox never omits the increment.
 
+This section has **4** examples:
+
+- [x] **Example 1:** `while` i < 10
+- [x] **Example 2:** `do while` i < 10
+- [x] **Example 3:** `for (; cars[i]; )` collect cars
+- [x] **Example 4:** `while (cars[i])` collect cars
+
 ## Detailed Explanation
 
 - [x] **`while`** — test, then maybe run. **`do while`** — run once, then test (**at least once**).
@@ -4771,6 +4914,14 @@ Then open `http://127.0.0.1:8770/js-loop-while/`.
 ## Introduction
 
 **`break`** **jumps out** of a **loop** or **`switch`**. In a loop it **stops immediately**. In a `switch` it prevents **fall-through**. With a **label**, `break` can leave a **nested loop** or even a **plain `{ }` block**.
+
+This section has **5** examples:
+
+- [x] **Example 1:** `break` when i === 3 in a for loop
+- [x] **Example 2:** `break` in a switch (dayNum = 3)
+- [x] **Example 3:** Labeled `break loop1` (leave the outer loop)
+- [x] **Example 4:** Labeled `break loop2` (leave the inner loop only)
+- [x] **Example 5:** Labeled `break` out of a block after the second car
 
 ## Detailed Explanation
 
@@ -5056,6 +5207,12 @@ Then open `http://127.0.0.1:8770/js-break/`.
 
 **`continue`** **skips the rest of the current iteration** and starts the **next** one. With a **label**, it can skip to the next pass of an **outer** loop, not only the inner one. Unlike `break`, the loop **keeps going**.
 
+This section has **3** examples:
+
+- [x] **Example 1:** `continue` skips i === 3 in a for loop
+- [x] **Example 2:** `continue loop1`
+- [x] **Example 3:** `continue loop2`
+
 ## Detailed Explanation
 
 - [x] **Skip one pass** — `i === 3` is omitted; **1 2 4 5 6 7 8 9** still print.
@@ -5278,6 +5435,14 @@ Then open `http://127.0.0.1:8770/js-continue/`.
 ## Introduction
 
 **Control flow** is the **order** statements run. By default JavaScript goes **top to bottom, left to right**. Conditions, loops, jumps, and function calls **change** that order. JavaScript is **single-threaded** (one thing at a time) unless you use **async** APIs — that idea is a bullet here, not a separate Example.
+
+This section has **5** examples:
+
+- [x] **Example 1:** Default sequential flow
+- [x] **Example 2:** Conditional `if` / `else` (age 20 Adult)
+- [x] **Example 3:** `for` loop i < 5
+- [x] **Example 4:** `break` when i === 3
+- [x] **Example 5:** Function `myFunction(p1, p2)` returns p1 * p2
 
 ## Detailed Explanation
 
@@ -5550,6 +5715,25 @@ Default flow is sequential (**z = 11**). **Conditions** branch (**age 20** → *
 ## Introduction
 
 Strings store **text**. Write them with **single** or **double** quotes (same result), or **backticks** (templates). Use **`length`**, **escape** quotes with `\`, break long lines **after an operator** or with **`+`**, and prefer **literals** over `new String()`. Each Tryit on the W3Schools page is its own Example, the same grain as **JS Output**.
+
+This section has **16** examples:
+
+- [x] **Example 1:** String with quotes
+- [x] **Example 2:** Single vs double quotes
+- [x] **Example 3:** Quotes inside quotes
+- [x] **Example 4:** Template backticks with mixed quotes
+- [x] **Example 5:** `length` of A-Z
+- [x] **Example 6:** Escape \" double quote
+- [x] **Example 7:** Escape \' single quote
+- [x] **Example 8:** Escape \\ backslash
+- [x] **Example 9:** Break a long line after an operator
+- [x] **Example 10:** Break a string with `+`
+- [x] **Example 11:** Multiline template string
+- [x] **Example 12:** `new String()` vs a literal
+- [x] **Example 13:** Literal `==` String object
+- [x] **Example 14:** Literal `===` String object
+- [x] **Example 15:** Two String objects with `==`
+- [x] **Example 16:** Two String objects with `===`
 
 ## Detailed Explanation
 
@@ -6038,6 +6222,15 @@ Strings are quoted text. Single and double quotes match; backticks add mixed quo
 
 Template strings (also called **template literals**) use **backticks** `` ` ``. They allow quotes inside the string, **multiline** text, and **`${...}` interpolation** of variables and expressions. ES6; modern browsers since 2017. Each Tryit is its own Example.
 
+This section has **6** examples:
+
+- [x] **Example 1:** Back-tick syntax
+- [x] **Example 2:** Quotes inside a template
+- [x] **Example 3:** Multiline template
+- [x] **Example 4:** Variable interpolation
+- [x] **Example 5:** Expression substitution
+- [x] **Example 6:** HTML templates
+
 ## Detailed Explanation
 
 - [x] **Back-tick syntax** — `` let text = `Hello World!`; ``
@@ -6278,6 +6471,55 @@ Templates use backticks. They keep mixed quotes and multiline text, substitute `
 ## Introduction
 
 Strings are **primitive and immutable**. Every method returns a **new** value; the original is unchanged. This page walks **every Tryit**: `length`, character access, `concat`, `slice` / `substring` / deprecated `substr`, case, well-formed, trim, pad, repeat, `replace` / `replaceAll`, and `split` (including why `split("")` is unsafe on emoji). Same grain as **JS Output** — one Example per Tryit.
+
+This section has **46** examples:
+
+- [x] **Example 1:** `length`
+- [x] **Example 2:** `charAt(0)`
+- [x] **Example 3:** `charCodeAt(0)`
+- [x] **Example 4:** `codePointAt(0)`
+- [x] **Example 5:** `at(2)`
+- [x] **Example 6:** Property access `[2]`
+- [x] **Example 7:** `at(-5)`
+- [x] **Example 8:** Property access `[0]`
+- [x] **Example 9:** Sloppy mode `text[0] = "A"`
+- [x] **Example 10:** `concat()` Hello World
+- [x] **Example 11:** `slice(7, 13)`
+- [x] **Example 12:** `slice(7)`
+- [x] **Example 13:** `slice(-12)`
+- [x] **Example 14:** `slice(-12, -6)`
+- [x] **Example 15:** `substring(7, 13)`
+- [x] **Example 16:** `substr(7, 6)` (deprecated)
+- [x] **Example 17:** `substr(7)` (deprecated)
+- [x] **Example 18:** `substr(-4)` (deprecated)
+- [x] **Example 19:** `toUpperCase()`
+- [x] **Example 20:** `toLowerCase()`
+- [x] **Example 21:** `isWellFormed()` true
+- [x] **Example 22:** `isWellFormed()` lone surrogate
+- [x] **Example 23:** `toWellFormed()`
+- [x] **Example 24:** `trim()`
+- [x] **Example 25:** `trimStart()`
+- [x] **Example 26:** `trimEnd()`
+- [x] **Example 27:** `padStart(4, "0")`
+- [x] **Example 28:** `padStart(4, "x")`
+- [x] **Example 29:** `padStart` on a number via `toString()`
+- [x] **Example 30:** `padEnd(4, "0")`
+- [x] **Example 31:** `padEnd(4, "x")`
+- [x] **Example 32:** `padEnd` on a number via `toString()`
+- [x] **Example 33:** `repeat(2)`
+- [x] **Example 34:** `repeat(4)`
+- [x] **Example 35:** `replace()` first Microsoft
+- [x] **Example 36:** `replace()` only the first of two
+- [x] **Example 37:** `replace("MICROSOFT")` case fail
+- [x] **Example 38:** `replace(/MICROSOFT/i)`
+- [x] **Example 39:** `replace(/Microsoft/g)`
+- [x] **Example 40:** `replaceAll("Cats")`
+- [x] **Example 41:** `replaceAll(/Cats/g)`
+- [x] **Example 42:** `split("")`
+- [x] **Example 43:** `split(" ")`
+- [x] **Example 44:** `split()` with no separator
+- [x] **Example 45:** `split("")` is unsafe for emoji
+- [x] **Example 46:** `Intl.Segmenter` safe split
 
 ## Detailed Explanation
 
@@ -7339,6 +7581,31 @@ String methods return **new** strings. Use `length`, `charAt` / `at` (negatives)
 
 Search methods find text **inside** a string: **position** (`indexOf`, `lastIndexOf`, `search`), **matches** (`match`, `matchAll`), or **true/false** (`includes`, `startsWith`, `endsWith`). Positions start at **0**. Missing text is **`-1`**. Each Tryit is its own Example.
 
+This section has **22** examples:
+
+- [x] **Example 1:** `indexOf("locate")`
+- [x] **Example 2:** `lastIndexOf("locate")`
+- [x] **Example 3:** `lastIndexOf("John")` is -1
+- [x] **Example 4:** `indexOf("locate", 15)`
+- [x] **Example 5:** `lastIndexOf("locate", 15)`
+- [x] **Example 6:** `search("locate")`
+- [x] **Example 7:** `search(/locate/)`
+- [x] **Example 8:** `match("ain")`
+- [x] **Example 9:** `match(/ain/)`
+- [x] **Example 10:** `match(/ain/g)`
+- [x] **Example 11:** `match(/ain/gi)`
+- [x] **Example 12:** `matchAll("Cats")`
+- [x] **Example 13:** `matchAll(/Cats/g)`
+- [x] **Example 14:** `matchAll(/Cats/gi)`
+- [x] **Example 15:** `includes("world")`
+- [x] **Example 16:** `includes("world", 12)`
+- [x] **Example 17:** `startsWith("Hello")`
+- [x] **Example 18:** `startsWith("world")`
+- [x] **Example 19:** `startsWith("world", 5)`
+- [x] **Example 20:** `startsWith("world", 6)`
+- [x] **Example 21:** `endsWith("Doe")`
+- [x] **Example 22:** `endsWith("world", 11)`
+
 ## Detailed Explanation
 
 - [x] **`indexOf` / `lastIndexOf`** — first vs last occurrence; **`-1`** if missing. Optional start index; `lastIndexOf` searches **backward**.
@@ -7916,6 +8183,48 @@ Use **`indexOf` / `lastIndexOf` / `search`** for positions (`locate` at **7** / 
 ## Introduction
 
 This page is the **complete String reference** (revised July 2025): every **property and method** from **`at()`** through **`valueOf()`**, plus the old **HTML wrappers**. All methods return a **new** value — they do **not** change the original string. Each table row below is its own Example, the same grain as **JS Output**.
+
+This section has **39** examples:
+
+- [x] **Example 1:** `at()`
+- [x] **Example 2:** `charAt()`
+- [x] **Example 3:** `charCodeAt()`
+- [x] **Example 4:** `codePointAt()`
+- [x] **Example 5:** `concat()`
+- [x] **Example 6:** `constructor`
+- [x] **Example 7:** `endsWith()`
+- [x] **Example 8:** `String.fromCharCode()`
+- [x] **Example 9:** `includes()`
+- [x] **Example 10:** `indexOf()`
+- [x] **Example 11:** `isWellFormed()`
+- [x] **Example 12:** `lastIndexOf()`
+- [x] **Example 13:** `length`
+- [x] **Example 14:** `localeCompare()`
+- [x] **Example 15:** `match()`
+- [x] **Example 16:** `matchAll()`
+- [x] **Example 17:** `padEnd()`
+- [x] **Example 18:** `padStart()`
+- [x] **Example 19:** `prototype`
+- [x] **Example 20:** `repeat()`
+- [x] **Example 21:** `replace()`
+- [x] **Example 22:** `replaceAll()`
+- [x] **Example 23:** `search()`
+- [x] **Example 24:** `slice()`
+- [x] **Example 25:** `split()`
+- [x] **Example 26:** `startsWith()`
+- [x] **Example 27:** `substr()` (deprecated)
+- [x] **Example 28:** `substring()`
+- [x] **Example 29:** `toLocaleLowerCase()`
+- [x] **Example 30:** `toLocaleUpperCase()`
+- [x] **Example 31:** `toLowerCase()`
+- [x] **Example 32:** `toString()`
+- [x] **Example 33:** `toUpperCase()`
+- [x] **Example 34:** `toWellFormed()`
+- [x] **Example 35:** `trim()`
+- [x] **Example 36:** `trimEnd()`
+- [x] **Example 37:** `trimStart()`
+- [x] **Example 38:** `valueOf()`
+- [x] **Example 39:** HTML wrapper methods (deprecated — do not use)
 
 ## Detailed Explanation
 
