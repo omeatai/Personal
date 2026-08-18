@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Finished project: valid submit → Form is valid! source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>const form = document.getElementById(&quot;signupForm&quot;);
+const nameInput = document.getElementById(&quot;name&quot;);
+const emailInput = document.getElementById(&quot;email&quot;);
+const passInput = document.getElementById(&quot;password&quot;);
+const confirmInput = document.getElementById(&quot;confirm&quot;);
+const nameError = document.getElementById(&quot;nameError&quot;);
+const emailError = document.getElementById(&quot;emailError&quot;);
+const passError = document.getElementById(&quot;passwordError&quot;);
+const confirmError = document.getElementById(&quot;confirmError&quot;);
+const result = document.getElementById(&quot;result&quot;);
+function showError(el, message) {
+  el.innerHTML = message;
+}
+function clearError(el) {
+  el.innerHTML = &quot;&quot;;
+}
+function validateName() {
+  let value = nameInput.value.trim();
+  if (value.length &lt; 2) {
+    showError(nameError, &quot;Name must be at least 2 characters.&quot;);
+    return false;
+  }
+  clearError(nameError);
+  return true;
+}
+function validateEmail() {
+  let value = emailInput.value.trim();
+  if (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))) {
+    showError(emailError, &quot;Enter a valid email address.&quot;);
+    return false;
+  }
+  clearError(emailError);
+  return true;
+}
+function validatePassword() {
+  let value = passInput.value;
+  if (value.length &lt; 8) {
+    showError(passError, &quot;Password must be at least 8 characters.&quot;);
+    return false;
+  }
+  clearError(passError);
+  return true;
+}
+function validateConfirm() {
+  let pass = passInput.value;
+  let confirm = confirmInput.value;
+  if (confirm === &quot;&quot;) {
+    showError(confirmError, &quot;Please confirm your password.&quot;);
+    return false;
+  }
+  if (confirm !== pass) {
+    showError(confirmError, &quot;Passwords do not match.&quot;);
+    return false;
+  }
+  clearError(confirmError);
+  return true;
+}
+function validateForm() {
+  let okName = validateName();
+  let okEmail = validateEmail();
+  let okPass = validatePassword();
+  let okConfirm = validateConfirm();
+  return okName &amp;&amp; okEmail &amp;&amp; okPass &amp;&amp; okConfirm;
+}
+form.addEventListener(&quot;submit&quot;, function (event) {
+  event.preventDefault();
+  result.innerHTML = &quot;&quot;;
+  if (validateForm()) {
+    result.innerHTML = &quot;Form is valid!&quot;;
+    result.className = &quot;ok&quot;;
+  } else {
+    result.innerHTML = &quot;Please fix the errors.&quot;;
+    result.className = &quot;error&quot;;
+  }
+});</pre>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>CSS: .error red, .ok green, .field spacing</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+input { padding: 8px; width: 260px; margin-bottom: 4px; }
+.error { color: red; margin: 0; }
+.ok { color: green; margin: 0; }
+.field { margin-bottom: 12px; }
+
+    </style>
+  </head>
+  <body>
+    <p class="error" id="e">Name must be at least 2 characters.</p>
+<p class="ok" id="o">Form is valid!</p>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+      note("error color -> " + getComputedStyle(document.getElementById("e")).color);
+      note("ok color -> " + getComputedStyle(document.getElementById("o")).color);
+
+    </script>
+  </body>
+</html>
