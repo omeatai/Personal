@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Symbol.iterator — custom for...of</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Symbol.iterator — custom for...of</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myObject = {
+        data: ["A", "B", "C"],
+        [Symbol.iterator]() {
+          let index = 0;
+          let data = this.data;
+          return {
+            next() {
+              if (index < data.length) {
+                return {value: data[index++], done: false};
+              }
+              return {done: true};
+            }
+          };
+        }
+      };
+      let text = "";
+      for (const x of myObject) {
+        text += x + " ";
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "typeof Symbol.iterator -> " + String(typeof Symbol.iterator);
+    </script>
+  </body>
+</html>

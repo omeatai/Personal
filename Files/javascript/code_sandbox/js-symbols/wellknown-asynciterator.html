@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Symbol.asyncIterator (well-known)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Symbol.asyncIterator (well-known)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      typeof Symbol.asyncIterator;
+      Symbol.asyncIterator === Symbol.asyncIterator;
+      document.getElementById("demo").innerText = "typeof Symbol.asyncIterator -> " + String(typeof Symbol.asyncIterator) + "\n" + "String(Symbol.asyncIterator) -> " + String(String(Symbol.asyncIterator));
+    </script>
+  </body>
+</html>

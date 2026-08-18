@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>for...in ignores symbol keys</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>for...in ignores symbol keys</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const id = Symbol("id");
+      const person = { firstName: "John", lastName: "Doe" };
+      person[id] = 123;
+      let text = "";
+      for (let x in person) {
+        text += x + " ";
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "person[id] -> " + String(person[id]);
+    </script>
+  </body>
+</html>
