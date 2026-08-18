@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Full Tryit: three ways to close source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>const modal = document.getElementById(&quot;modal&quot;);
+const openBtn = document.getElementById(&quot;openBtn&quot;);
+const closeBtn = document.getElementById(&quot;closeBtn&quot;);
+function openModal() {
+  modal.classList.add(&quot;show&quot;);
+}
+function closeModal() {
+  modal.classList.remove(&quot;show&quot;);
+}
+openBtn.addEventListener(&quot;click&quot;, openModal);
+closeBtn.addEventListener(&quot;click&quot;, closeModal);
+modal.addEventListener(&quot;click&quot;, function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+document.addEventListener(&quot;keydown&quot;, function (event) {
+  if (event.key === &quot;Escape&quot;) {
+    closeModal();
+  }
+});</pre>
+  </body>
+</html>

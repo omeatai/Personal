@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Close button (×) calls closeModal</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+.modal-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-overlay.show { display: block; }
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>Modal Popup</h2>
+<button type="button" id="openBtn">Open Modal</button>
+<div id="modal" class="modal-overlay">
+  <div class="modal-box">
+    <button type="button" id="closeBtn" class="modal-close">&times;</button>
+    <h3>Hello!</h3>
+    <p>This is a modal popup.</p>
+  </div>
+</div>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
+function openModal() {
+  modal.classList.add("show");
+}
+function closeModal() {
+  modal.classList.remove("show");
+}
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+      openBtn.click();
+      note("after open click -> " + modal.classList.contains("show"));
+      closeBtn.click();
+      note("after × click -> " + modal.classList.contains("show"));
+
+    </script>
+  </body>
+</html>
