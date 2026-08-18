@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>CSS pseudo — :required and :optional</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="req" required><input id="opt">
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "req=" + document.getElementById("req").matches(":required") +
+        "\nopt=" + document.getElementById("opt").matches(":optional");
+    </script>
+  </body>
+</html>

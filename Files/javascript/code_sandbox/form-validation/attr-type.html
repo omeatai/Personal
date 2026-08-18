@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Constraint attribute — type</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="e" type="email" value="not-an-email">
+    <pre id="demo"></pre>
+    <script>
+      const e = document.getElementById("e");
+      document.getElementById("demo").innerText =
+        "valid=" + e.checkValidity() + " typeMismatch=" + e.validity.typeMismatch;
+    </script>
+  </body>
+</html>

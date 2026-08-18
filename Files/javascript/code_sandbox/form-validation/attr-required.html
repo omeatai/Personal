@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Constraint attribute — required</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="r" required value="">
+    <pre id="demo"></pre>
+    <script>
+      const r = document.getElementById("r");
+      document.getElementById("demo").innerText =
+        "valid=" + r.checkValidity() + " valueMissing=" + r.validity.valueMissing;
+    </script>
+  </body>
+</html>

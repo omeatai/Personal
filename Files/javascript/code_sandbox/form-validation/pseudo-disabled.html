@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>CSS pseudo — :disabled</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      input:disabled { outline: 2px solid gray; }
+    </style>
+  </head>
+  <body>
+    <input id="d" disabled><input id="e" value="on">
+    <pre id="demo"></pre>
+    <script>
+      const el = document.querySelector("input:disabled");
+      document.getElementById("demo").innerText = "id=" + el.id + " matches=" + el.matches(":disabled");
+    </script>
+  </body>
+</html>

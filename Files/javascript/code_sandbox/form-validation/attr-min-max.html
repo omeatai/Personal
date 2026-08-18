@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Constraint attributes — min and max</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="n" type="number" min="1" max="10" value="0">
+    <pre id="demo"></pre>
+    <script>
+      const n = document.getElementById("n");
+      document.getElementById("demo").innerText =
+        "valid=" + n.checkValidity() +
+        " underflow=" + n.validity.rangeUnderflow +
+        " overflow=" + n.validity.rangeOverflow;
+    </script>
+  </body>
+</html>

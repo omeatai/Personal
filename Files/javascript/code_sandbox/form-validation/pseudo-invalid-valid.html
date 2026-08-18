@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>CSS pseudo — :invalid and :valid</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      :invalid { outline: 2px solid red; } :valid { outline: 2px solid green; }
+    </style>
+  </head>
+  <body>
+    <input id="bad" type="email" value="x"><input id="good" type="email" value="a@b.c">
+    <pre id="demo"></pre>
+    <script>
+      const bad = document.getElementById("bad");
+      const good = document.getElementById("good");
+      document.getElementById("demo").innerText =
+        "bad invalid=" + bad.matches(":invalid") +
+        "\ngood valid=" + good.matches(":valid");
+    </script>
+  </body>
+</html>

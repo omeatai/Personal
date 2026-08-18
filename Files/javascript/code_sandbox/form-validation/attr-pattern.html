@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Constraint attribute — pattern</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="p" pattern="[A-Za-z]{3}" value="12">
+    <pre id="demo"></pre>
+    <script>
+      const p = document.getElementById("p");
+      document.getElementById("demo").innerText =
+        "valid=" + p.checkValidity() + " patternMismatch=" + p.validity.patternMismatch;
+    </script>
+  </body>
+</html>

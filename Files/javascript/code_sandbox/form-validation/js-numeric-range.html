@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JavaScript — number between 1 and 10</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Please input a number between 1 and 10</p><input id="num" type="number"><button type="button" id="go">Submit</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("go").onclick = function () {
+        const v = Number(document.getElementById("num").value);
+        if (Number.isNaN(v) || v < 1 || v > 10) {
+          document.getElementById("demo").innerText = "Invalid: need 1–10";
+        } else {
+          document.getElementById("demo").innerText = "OK: " + v;
+        }
+      };
+      document.getElementById("num").value = "15";
+      document.getElementById("go").click();
+    </script>
+  </body>
+</html>
