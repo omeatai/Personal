@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Locales en-US, de-DE, no-NO</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Locales en-US, de-DE, no-NO</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let num = 1234567.89;
+      let us = num.toLocaleString("en-US");
+      let de = num.toLocaleString("de-DE");
+      let no = num.toLocaleString("no-NO");
+      document.getElementById("demo").innerText = "us -> " + String(us) + "\n" + "de -> " + String(de) + "\n" + "no -> " + String(no);
+    </script>
+  </body>
+</html>

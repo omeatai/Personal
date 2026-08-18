@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Date options weekday/year/month/day</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Date options weekday/year/month/day</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const d = new Date("2021-03-25T15:30:45.123Z");
+      let text = d.toLocaleString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+      document.getElementById("demo").innerText = "text -> " + String(text);
+    </script>
+  </body>
+</html>

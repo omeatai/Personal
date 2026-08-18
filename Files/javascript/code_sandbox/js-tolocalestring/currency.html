@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>style currency — USD, EUR, NOK</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>style currency — USD, EUR, NOK</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let price = 1299.95;
+      let dollars = price.toLocaleString("en-US", {style:"currency", currency:"USD"});
+      let euros = price.toLocaleString("de-DE", {style:"currency", currency:"EUR"});
+      let kroner = price.toLocaleString("no-NO", {style:"currency", currency:"NOK"});
+      document.getElementById("demo").innerText = "dollars -> " + String(dollars) + "\n" + "euros -> " + String(euros) + "\n" + "kroner -> " + String(kroner);
+    </script>
+  </body>
+</html>

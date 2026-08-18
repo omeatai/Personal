@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Readable file sizes</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Readable file sizes</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function fileSize(bytes) {
+        if (bytes < 1024) return bytes + " bytes";
+        if (bytes < 1024 * 1024) {
+          return (bytes / 1024).toLocaleString("en-US", {maximumFractionDigits: 1}) + " KB";
+        }
+        return (bytes / 1024 / 1024).toLocaleString("en-US", {maximumFractionDigits: 1}) + " MB";
+      }
+      let size = 1536000;
+      let text = fileSize(size);
+      document.getElementById("demo").innerText = "text -> " + String(text);
+    </script>
+  </body>
+</html>
