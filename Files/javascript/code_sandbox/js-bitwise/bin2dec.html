@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Binary to decimal</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Binary to decimal</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function bin2dec(bin) {
+        return parseInt(bin, 2).toString(10);
+      }
+      document.getElementById("demo").innerText = "bin2dec(\"101\") -> " + String(bin2dec("101")) + "\n" + "bin2dec(\"1111\") -> " + String(bin2dec("1111"));
+    </script>
+  </body>
+</html>
