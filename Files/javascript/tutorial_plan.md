@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `10.5` JS Date Methods (new).
-- **Last completed:** `10.4` JS Date Set.
+- **Next task:** `11.1` JS Arrays (new).
+- **Last completed:** `10.5` JS Date Methods.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -98,7 +98,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S7** Functions (10)
 - [x] **S8** Objects (7)
 - [x] **S9** Scope (5)
-- [ ] **S10** Dates (5)
+- [x] **S10** Dates (5)
 - [ ] **S11** Arrays (8)
 - [ ] **S12** Sets (5)
 - [ ] **S13** Maps (4)
@@ -233,7 +233,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `10.2` JS Date Formats — `js_date_formats.asp` (new)
 - [x] `10.3` JS Date Get — `js_date_methods.asp` (new)
 - [x] `10.4` JS Date Set — `js_date_methods_set.asp` (new)
-- [ ] `10.5` JS Date Methods — `js_date_reference.asp` (new)
+- [x] `10.5` JS Date Methods — `js_date_reference.asp` (new)
 
 ### S11 — Arrays
 

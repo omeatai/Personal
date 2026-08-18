@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>setSeconds(0)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>setSeconds(0)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const d = new Date("2021-03-25T15:30:45.123Z");
+      d.setSeconds(0);
+      document.getElementById("demo").innerText = "d -> " + String(String(d)) + "\n" + "d.toISOString() -> " + String(d.toISOString());
+    </script>
+  </body>
+</html>
