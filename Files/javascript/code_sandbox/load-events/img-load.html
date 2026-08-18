@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Image load</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <img id="myImg" alt="pic" width="32" height="32" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='32' height='32' fill='%2304AA6D'/%3E%3C/svg%3E"><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      const img = document.getElementById("myImg");
+      function done() { document.getElementById("out").innerHTML = "Image loaded!"; }
+      img.addEventListener("load", done);
+      if (img.complete) done();
+      document.getElementById("demo").innerText = document.getElementById("out").innerHTML;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>media-specific loading events</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <audio id='a'></audio>
+    <pre id="demo"></pre>
+    <script>
+      const a = document.getElementById("a");
+      document.getElementById("demo").innerText = "tag=AUDIO readyState=" + a.readyState + " (HAVE_NOTHING=0)";
+    </script>
+  </body>
+</html>
