@@ -252,7 +252,10 @@ def S(
     script: str | None = None,
     body: str = "",
     buttons: str = "",
-    wait_ms: int = 0,
+        wait_ms: int = 0,
+        full_html: str | None = None,
+        extra_files: dict[str, str] | None = None,
+        fence: str = "javascript",
 ) -> dict:
     if script is None:
         script = display_script(code, displays or [])
@@ -266,25 +269,33 @@ def S(
         body=body,
         buttons=buttons,
         wait_ms=wait_ms,
+        full_html=full_html,
+        extra_files=extra_files or {},
+        fence=fence,
     )
 
 
 def write_example(folder: Path, rec: dict) -> None:
     folder.mkdir(parents=True, exist_ok=True)
-    (folder / f"{rec['stem']}.html").write_text(
-        RESULT_TMPL.format(
-            title=html.escape(rec["title"]),
-            heading=html.escape(rec["title"]),
-            body=rec.get("body") or "",
-            buttons=rec.get("buttons") or "",
-            script=rec["script"],
-        ),
-        encoding="utf-8",
-    )
+    if rec.get("full_html"):
+        (folder / f"{rec['stem']}.html").write_text(rec["full_html"], encoding="utf-8")
+    else:
+        (folder / f"{rec['stem']}.html").write_text(
+            RESULT_TMPL.format(
+                title=html.escape(rec["title"]),
+                heading=html.escape(rec["title"]),
+                body=rec.get("body") or "",
+                buttons=rec.get("buttons") or "",
+                script=rec["script"],
+            ),
+            encoding="utf-8",
+        )
     (folder / f"{rec['stem']}-source.html").write_text(
         SOURCE_TMPL.format(title=html.escape(rec["title"]), code=html.escape(rec["code"])),
         encoding="utf-8",
     )
+    for name, content in (rec.get("extra_files") or {}).items():
+        (folder / name).write_text(content, encoding="utf-8")
 
 
 def write_index(folder: Path, title: str, items: list[tuple[str, str]]) -> None:
@@ -318,7 +329,7 @@ def md_example(slug: str, n: int, rec: dict) -> str:
 
 Sandbox: `code_sandbox/{slug}/{rec["stem"]}.html`
 
-```javascript
+```{rec.get("fence") or "javascript"}
 {rec["code"]}
 ```
 

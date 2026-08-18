@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML: #count and five onclick buttons</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Counter</h2>
+<p id="count" style="font-size:40px;">0</p>
+<button type="button" onclick="increaseCount()">+</button>
+<button type="button" onclick="decreaseCount()">-</button>
+<button type="button" onclick="resetCount()">Reset</button>
+<button type="button" onclick="saveCount()">Save</button>
+<button type="button" onclick="loadCount()">Load</button>
+    <pre id="log"></pre>
+    <script>
+      document.getElementById('log').innerText = 'HTML only — onclick names exist, functions are not defined yet';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>loadCount() — getItem + Number(saved)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Counter</h2>
+<p id="count" style="font-size:40px;">0</p>
+<button type="button" onclick="increaseCount()">+</button>
+<button type="button" onclick="decreaseCount()">-</button>
+<button type="button" onclick="resetCount()">Reset</button>
+<button type="button" onclick="saveCount()">Save</button>
+<button type="button" onclick="loadCount()">Load</button>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+let count = 0;
+function updateCount() {
+  document.getElementById("count").innerHTML = count;
+}
+function increaseCount() {
+  count++;
+  updateCount();
+}
+function decreaseCount() {
+  count--;
+  updateCount();
+}
+function resetCount() {
+  count = 0;
+  updateCount();
+}
+function saveCount() {
+  localStorage.setItem("count", count);
+}
+function loadCount() {
+  let saved = localStorage.getItem("count");
+  if (saved !== null) {
+    count = Number(saved);
+  }
+  updateCount();
+}
+      localStorage.removeItem("count");
+      count = 2;
+      updateCount();
+      loadCount();
+      note("load with no key (count stays) -> " + count);
+      count = 4;
+      saveCount();
+      count = 0;
+      updateCount();
+      loadCount();
+      note("load after save 4 -> " + count);
+      note("Number(\"4\") -> " + Number("4"));
+
+    </script>
+  </body>
+</html>

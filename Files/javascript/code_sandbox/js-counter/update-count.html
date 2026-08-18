@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>let count = 0 and updateCount()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="count" style="font-size:40px;">0</p>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+      let count = 0;
+      function updateCount() {
+        document.getElementById("count").innerHTML = count;
+      }
+      count = 7;
+      updateCount();
+      note("count -> " + count);
+      note("#count text -> " + document.getElementById("count").innerHTML);
+
+    </script>
+  </body>
+</html>

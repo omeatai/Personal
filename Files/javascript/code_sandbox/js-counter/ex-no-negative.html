@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Exercise 2: do not go below 0</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Counter</h2>
+<p id="count" style="font-size:40px;">0</p>
+<button type="button" onclick="increaseCount()">+</button>
+<button type="button" onclick="decreaseCount()">-</button>
+<button type="button" onclick="resetCount()">Reset</button>
+<button type="button" onclick="saveCount()">Save</button>
+<button type="button" onclick="loadCount()">Load</button>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+      let count = 0;
+      function updateCount() {
+        document.getElementById("count").innerHTML = count;
+      }
+      function decreaseCount() {
+        if (count > 0) {
+          count--;
+          updateCount();
+        }
+      }
+      decreaseCount();
+      note("from 0, minus -> " + count);
+      count = 2;
+      updateCount();
+      decreaseCount();
+      decreaseCount();
+      decreaseCount();
+      note("from 2, minus three times -> " + count);
+
+    </script>
+  </body>
+</html>
