@@ -41,6 +41,8 @@ do **not** duplicate it.
       Questions and Answers, Summary, References) with every example's written outcome.
 - [ ] **Introduction lists every Example title** (Example 1 … Example N) matching the Detailed Explanation
       headings exactly — if there are 34 examples, list all 34; do not summarize or omit.
+- [ ] Each Introduction example line ends with **`[View](#<slug>-example-NN)`**, and the matching
+      `<a id="<slug>-example-NN"></a>` sits immediately before that `### **Example N:**` heading.
 - [ ] **Coverage count:** number of `### **Example` headings ≥ number of Tryits + reference-table rows +
       named constructs on the page (HTML wrappers may be one grouped Example that still runs every wrapper).
       Introduction title-list count must equal that Example heading count.
@@ -78,9 +80,10 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - **Last completed:** Grain rewrite of `3.1`–`5.5` (JS Conditional → JS String Reference) after the thin
   **JS String Reference** accordion listed a method table and only fenced `trim()`.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
-  named construct) and an **Introduction table of contents** that lists **every** Example title
-  (Example 1 … Example N; 39 titles on String Reference). `tutorial.md` already has both. Per-page git
-  commits for `3.1`–`5.5` were not made in that correction pass (user asked for the rewrite, not commits).
+  named construct) and an **Introduction table of contents** that lists **every** Example title with a
+  **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
+  `tutorial.md` already has both. Per-page git commits for `3.1`–`5.5` were not made in that correction
+  pass (user asked for the rewrite, not commits).
 
 ---
 
