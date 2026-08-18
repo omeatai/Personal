@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`prototype`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>`prototype`</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      Number.prototype.twice = function () { return this * 2; };
+      (21).twice();
+      document.getElementById("demo").innerText = " (21).twice()  -> " + String((21).twice());
+    </script>
+  </body>
+</html>
