@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `11.4` JS Array Search (new).
-- **Last completed:** `11.3` JS Array Methods.
+- **Next task:** `11.5` JS Array Sort (new).
+- **Last completed:** `11.4` JS Array Search.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -244,7 +244,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `11.1` JS Arrays — `js_arrays.asp` (new)
 - [x] `11.2` JS Array Constructor — `js_array_constructor.asp` (new)
 - [x] `11.3` JS Array Methods — `js_array_methods.asp` (new)
-- [ ] `11.4` JS Array Search — `js_array_search.asp` (new)
+- [x] `11.4` JS Array Search — `js_array_search.asp` (new)
 - [ ] `11.5` JS Array Sort — `js_array_sort.asp` (new)
 - [ ] `11.6` JS Array Iterations — `js_array_iteration.asp` (new)
 - [ ] `11.7` JS Array Reference — `js_array_reference.asp` (new)

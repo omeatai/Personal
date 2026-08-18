@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>includes(NaN) vs indexOf(NaN)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>includes(NaN) vs indexOf(NaN)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const a = [NaN];
+      document.getElementById("demo").innerText = "a.indexOf(NaN) -> " + String(a.indexOf(NaN)) + "\n" + "a.includes(NaN) -> " + String(a.includes(NaN));
+    </script>
+  </body>
+</html>
