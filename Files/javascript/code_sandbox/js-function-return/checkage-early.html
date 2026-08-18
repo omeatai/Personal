@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>checkAge early return</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>checkAge early return</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function checkAge(age) {
+        if (age < 18) {
+          return "Too young";
+        }
+        return "Access granted";
+      }
+      let a = checkAge(15);
+      let b = checkAge(21);
+      document.getElementById("demo").innerText = "checkAge(15) -> " + String(a) + "\n" + "checkAge(21) -> " + String(b);
+    </script>
+  </body>
+</html>
