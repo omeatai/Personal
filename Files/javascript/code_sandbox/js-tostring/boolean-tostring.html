@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Boolean.prototype.toString</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Boolean.prototype.toString</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      true.toString();
+      false.toString();
+      document.getElementById("demo").innerText = "true.toString() -> " + String(true.toString()) + "\n" + "false.toString() -> " + String(false.toString());
+    </script>
+  </body>
+</html>
