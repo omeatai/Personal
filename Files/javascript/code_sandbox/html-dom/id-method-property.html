@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>id is HTML, getElementById is a method, innerHTML is a property</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id="demo-box">old</p>
+    <pre id="demo"></pre>
+    <script>
+      const el = document.getElementById("demo-box");
+      el.innerHTML = "Hello World!";
+      document.getElementById("demo").innerText =
+        "id=" + el.id + "\n" +
+        "typeof getElementById=" + typeof document.getElementById + "\n" +
+        "innerHTML=" + el.innerHTML;
+    </script>
+  </body>
+</html>

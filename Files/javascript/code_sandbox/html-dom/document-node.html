@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Document node — owner of the tree</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>The HTML DOM is a tree of nodes that represents this page.</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "nodeType=" + document.nodeType + "\n" +
+        "nodeName=" + document.nodeName;
+    </script>
+  </body>
+</html>

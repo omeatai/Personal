@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Text node — the words inside a heading</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="hdr">My Header</h1>
+    <pre id="demo"></pre>
+    <script>
+      const t = document.getElementById("hdr").firstChild;
+      document.getElementById("demo").innerText =
+        t.nodeName + " type=" + t.nodeType +
+        " value=" + JSON.stringify(t.nodeValue);
+    </script>
+  </body>
+</html>

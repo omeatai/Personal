@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>What you will learn — react to events</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="btn">Click me</button><p id="out"></p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("btn").onclick = function () {
+        document.getElementById("out").textContent = "Clicked!";
+      };
+      document.getElementById("btn").click();
+      document.getElementById("demo").innerText = document.getElementById("out").textContent;
+    </script>
+  </body>
+</html>

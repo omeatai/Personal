@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Element nodes — html, body, headings, tags</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="hdr">My Header</h1><p id="intro">Hello</p>
+    <pre id="demo"></pre>
+    <script>
+      const h = document.getElementById("hdr");
+      const p = document.getElementById("intro");
+      document.getElementById("demo").innerText =
+        h.nodeName + " type=" + h.nodeType + "\n" +
+        p.nodeName + " type=" + p.nodeType;
+    </script>
+  </body>
+</html>

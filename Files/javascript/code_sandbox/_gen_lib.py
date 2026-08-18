@@ -456,6 +456,10 @@ def screenshot_section(slug: str, records: list[dict], browser: str, default_wai
         result_png = str((SNAPS / f"{slug}-{nn}-result.png").resolve())
         code_png = str((SNAPS / f"{slug}-{nn}-code.png").resolve())
         wait = rec.get("wait_ms") or default_wait
+        print(f"snap {slug}-{nn} {rec['stem']}", flush=True)
+        if Path(result_png).is_file() and Path(code_png).is_file():
+            print(f"skip existing {slug}-{nn}", flush=True)
+            continue
         for url, out in ((source_html, code_png), (result_html, result_png)):
             cmd = [
                 browser,
@@ -468,7 +472,7 @@ def screenshot_section(slug: str, records: list[dict], browser: str, default_wai
                 f"--virtual-time-budget={wait}",
                 url,
             ]
-            subprocess.run(cmd, check=True, cwd=str(SNAPS), capture_output=True)
+            subprocess.run(cmd, check=True, cwd=str(SNAPS), capture_output=True, timeout=90)
 
 
 def build_and_snap(

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Attribute node — href on a link</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <a id="w3" href="https://www.w3schools.com">W3Schools</a>
+    <pre id="demo"></pre>
+    <script>
+      const a = document.getElementById("w3");
+      document.getElementById("demo").innerText =
+        "href=" + a.getAttribute("href") + "\n" +
+        "attrCount=" + a.attributes.length + "\n" +
+        "names=" + Array.from(a.attributes).map(x => x.name).join(",");
+    </script>
+  </body>
+</html>
