@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>new Date(24*60*60*1000) / 86400000</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>new Date(24*60*60*1000) / 86400000</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const d1 = new Date(24 * 60 * 60 * 1000);
+      const d2 = new Date(86400000);
+      document.getElementById("demo").innerText = "d1 -> " + String(String(d1)) + "\n" + "d2 -> " + String(String(d2)) + "\n" + "d1.getTime() === d2.getTime() -> " + String(d1.getTime() === d2.getTime());
+    </script>
+  </body>
+</html>
