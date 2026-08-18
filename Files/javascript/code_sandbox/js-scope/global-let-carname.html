@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Global let carName used inside a function</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Global let carName used inside a function</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let carName = "Volvo";
+      function myFunction() {
+        return carName;
+      }
+      document.getElementById("demo").innerText = "carName -> " + String(carName) + "\n" + "myFunction() -> " + String(myFunction());
+    </script>
+  </body>
+</html>

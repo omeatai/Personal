@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Block let x = 2 — outside is ReferenceError</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Block let x = 2 — outside is ReferenceError</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let inside;
+      {
+        let x = 2;
+        inside = x;
+      }
+      let outside;
+      try {
+        outside = x;
+      } catch (e) {
+        outside = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "inside block -> " + inside + "\n" +
+        "outside -> " + outside;
+    </script>
+  </body>
+</html>

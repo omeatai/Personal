@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Three types of scope</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Three types of scope</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      var x = 1;  // Global scope
+      let y = 2;  // Global scope
+      const z = 3;  // Global scope
+      function show() {
+        return x + ", " + y + ", " + z;
+      }
+      document.getElementById("demo").innerText = "x -> " + String(x) + "\n" + "y -> " + String(y) + "\n" + "z -> " + String(z) + "\n" + "show() -> " + String(show());
+    </script>
+  </body>
+</html>

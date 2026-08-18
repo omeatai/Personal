@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Undeclared assignment is automatically global</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Undeclared assignment is automatically global</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      myFunction();
+      // code here can use carName
+      function myFunction() {
+        carName = "Volvo";
+      }
+      document.getElementById("demo").innerText = "carName -> " + String(carName);
+    </script>
+  </body>
+</html>

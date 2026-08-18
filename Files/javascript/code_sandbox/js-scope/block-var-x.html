@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Block var x = 2 — still 2 outside (not recommended)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Block var x = 2 — still 2 outside (not recommended)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      {
+        var x = 2;
+      }
+      // x CAN be used here
+      document.getElementById("demo").innerText = "x -> " + String(x);
+    </script>
+  </body>
+</html>
