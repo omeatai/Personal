@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Don&#x27;t use new Object() — use literals</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Don&#x27;t use new Object() — use literals</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x1 = "";
+      let x2 = 0;
+      let x3 = false;
+      const x4 = {};
+      const x5 = [];
+      const x6 = /()/;
+      const x7 = function(){};
+      document.getElementById("demo").innerText = "typeof x1 -> " + String(typeof x1) + "\n" + "typeof x2 -> " + String(typeof x2) + "\n" + "typeof x3 -> " + String(typeof x3) + "\n" + "typeof x4 -> " + String(typeof x4) + "\n" + "Array.isArray(x5) -> " + String(Array.isArray(x5)) + "\n" + "x6 instanceof RegExp -> " + String(x6 instanceof RegExp) + "\n" + "typeof x7 -> " + String(typeof x7);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>5 + 7 is 12; 5 + &quot;7&quot; is &quot;57&quot;; 5 - &quot;7&quot; is -2</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>5 + 7 is 12; 5 + &quot;7&quot; is &quot;57&quot;; 5 - &quot;7&quot; is -2</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let a = 5 + 7;
+      let b = 5 + "7";
+      let c = "5" + 7;
+      let d = 5 - 7;
+      let e = 5 - "7";
+      let f = "5" - 7;
+      let g = 5 - "x";
+      document.getElementById("demo").innerText = "5 + 7 -> " + String(a + " " + typeof a) + "\n" + "5 + \"7\" -> " + String(JSON.stringify(b) + " " + typeof b) + "\n" + "\"5\" + 7 -> " + String(JSON.stringify(c) + " " + typeof c) + "\n" + "5 - 7 -> " + String(d) + "\n" + "5 - \"7\" -> " + String(e) + "\n" + "\"5\" - 7 -> " + String(f) + "\n" + "5 - \"x\" -> " + String(String(g));
+    </script>
+  </body>
+</html>

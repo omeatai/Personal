@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>ES2015 default parameters: function (a = 1, b = 1)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ES2015 default parameters: function (a = 1, b = 1)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function add(a = 1, b = 1) {
+        return a + b;
+      }
+      document.getElementById("demo").innerText = "add() -> " + String(add()) + "\n" + "add(5) -> " + String(add(5)) + "\n" + "add(5, 3) -> " + String(add(5, 3));
+    </script>
+  </body>
+</html>

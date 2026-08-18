@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Best Practices</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JS Best Practices</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="avoid-globals.html">01 — Avoid global variables — they can be overwritten</a></li>
+      <li><a href="declare-locals.html">02 — Always declare local variables (var / let / const)</a></li>
+      <li><a href="declarations-on-top.html">03 — Put all declarations at the top of the script or function</a></li>
+      <li><a href="initialize-variables.html">04 — Initialize variables when you declare them</a></li>
+      <li><a href="var-redeclare.html">05 — var carName = &quot;Volvo&quot;; var carName; keeps the value (not recommended)</a></li>
+      <li><a href="let-redeclare.html">06 — let carName twice — SyntaxError</a></li>
+      <li><a href="const-redeclare.html">07 — const carName twice — SyntaxError</a></li>
+      <li><a href="let-object-reassign.html">08 — let car = {...}; car = &quot;Fiat&quot; changes the type</a></li>
+      <li><a href="const-object-reassign.html">09 — const car = {...}; car = &quot;Fiat&quot; is not possible</a></li>
+      <li><a href="let-array-reassign.html">10 — let cars = [...]; cars = 3 changes array to number</a></li>
+      <li><a href="const-array-reassign.html">11 — const cars = [...]; cars = 3 is not possible</a></li>
+      <li><a href="no-new-object.html">12 — Don&#x27;t use new Object() — use literals</a></li>
+      <li><a href="type-change.html">13 — let x = &quot;Hello&quot;; x = 5 changes typeof to number</a></li>
+      <li><a href="plus-vs-minus-coercion.html">14 — 5 + 7 is 12; 5 + &quot;7&quot; is &quot;57&quot;; 5 - &quot;7&quot; is -2</a></li>
+      <li><a href="hello-minus-dolly.html">15 — &quot;Hello&quot; - &quot;Dolly&quot; returns NaN</a></li>
+      <li><a href="triple-equals.html">16 — Use === — 0 == &quot;&quot; is true; 0 === &quot;&quot; is false</a></li>
+      <li><a href="parameter-defaults-if.html">17 — Default a missing argument: if (y === undefined) y = 0</a></li>
+      <li><a href="default-parameters.html">18 — ES2015 default parameters: function (a = 1, b = 1)</a></li>
+      <li><a href="switch-default.html">19 — Always end switch with default</a></li>
+      <li><a href="string-vs-new-string.html">20 — &quot;John&quot; === new String(&quot;John&quot;) is false</a></li>
+      <li><a href="new-string-equals-new-string.html">21 — new String(&quot;John&quot;) == new String(&quot;John&quot;) is false</a></li>
+      <li><a href="avoid-eval.html">22 — Avoid eval() — it runs text as code</a></li>
+    </ul>
+  </body>
+</html>

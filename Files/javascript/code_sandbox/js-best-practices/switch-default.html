@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Always end switch with default</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Always end switch with default</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function nameDay(n) {
+        let day;
+        switch (n) {
+          case 0: day = "Sunday"; break;
+          case 1: day = "Monday"; break;
+          case 2: day = "Tuesday"; break;
+          case 3: day = "Wednesday"; break;
+          case 4: day = "Thursday"; break;
+          case 5: day = "Friday"; break;
+          case 6: day = "Saturday"; break;
+          default: day = "Unknown";
+        }
+        return day;
+      }
+      document.getElementById("demo").innerText =
+        "getDay() " + new Date().getDay() + " -> " + nameDay(new Date().getDay()) + "\n" +
+        "switch(99) -> " + nameDay(99);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Use === — 0 == &quot;&quot; is true; 0 === &quot;&quot; is false</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Use === — 0 == &quot;&quot; is true; 0 === &quot;&quot; is false</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+
+      document.getElementById("demo").innerText = "0 == \"\" -> " + String(0 == "") + "\n" + "1 == \"1\" -> " + String(1 == "1") + "\n" + "1 == true -> " + String(1 == true) + "\n" + "0 === \"\" -> " + String(0 === "") + "\n" + "1 === \"1\" -> " + String(1 === "1") + "\n" + "1 === true -> " + String(1 === true);
+    </script>
+  </body>
+</html>
