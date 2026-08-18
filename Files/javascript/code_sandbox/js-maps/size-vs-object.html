@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Object vs Map — size property</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Object vs Map — size property</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+      ]);
+      const obj = {apples: 500, bananas: 300, oranges: 200};
+      document.getElementById("demo").innerText = "fruits.size -> " + String(fruits.size) + "\n" + "obj.size -> " + String(obj.size) + "\n" + "Object.keys(obj).length -> " + String(Object.keys(obj).length);
+    </script>
+  </body>
+</html>

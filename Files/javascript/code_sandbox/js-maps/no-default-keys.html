@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Object vs Map — default keys</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Object vs Map — default keys</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const obj = {};
+      const fruits = new Map();
+      document.getElementById("demo").innerText = "'toString' in obj -> " + String('toString' in obj) + "\n" + "obj.hasOwnProperty('toString') -> " + String(obj.hasOwnProperty('toString')) + "\n" + "fruits.has('toString') -> " + String(fruits.has('toString')) + "\n" + "fruits.size -> " + String(fruits.size);
+    </script>
+  </body>
+</html>

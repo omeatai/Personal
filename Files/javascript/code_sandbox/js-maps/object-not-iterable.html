@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Object vs Map — not directly iterable</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Object vs Map — not directly iterable</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const obj = {apples: 500};
+      const fruits = new Map([['apples', 500]]);
+      let r0;
+      try {
+        r0 = (function () { for (const x of obj) {} return 'looped'; })();
+      } catch (e) {
+        r0 = e.name + ": " + e.message;
+      }
+      let r1;
+      try {
+        r1 = JSON.stringify(Array.from(fruits));
+      } catch (e) {
+        r1 = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = "for...of obj -> " + String(r0) + "\n" + "Array.from(fruits) -> " + String(r1);
+    </script>
+  </body>
+</html>
