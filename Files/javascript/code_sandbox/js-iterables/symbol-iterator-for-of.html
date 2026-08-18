@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Symbol.iterator homemade iterable + for...of</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Symbol.iterator homemade iterable + for...of</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myNumbers = {};
+      myNumbers[Symbol.iterator] = function() {
+        let n = 0;
+        let done = false;
+        return {
+          next() {
+            n += 10;
+            if (n == 100) { done = true; }
+            return {value:n, done:done};
+          }
+        };
+      };
+      let text = "";
+      for (const num of myNumbers) {
+        text += num + "\n";
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text);
+    </script>
+  </body>
+</html>

@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `14.2` JS Iterables (new).
-- **Last completed:** `14.1` JS Iterations.
+- **Next task:** `14.3` JS Iterators (new).
+- **Last completed:** `14.2` JS Iterables.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -268,7 +268,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S14 — Iterations
 
 - [x] `14.1` JS Iterations — `js_looping.asp` (new)
-- [ ] `14.2` JS Iterables — `js_iterables.asp` (new)
+- [x] `14.2` JS Iterables — `js_iterables.asp` (new)
 - [ ] `14.3` JS Iterators — `js_iterators.asp` (new)
 - [ ] `14.4` JS Generators — `js_generators.asp` (new)
 

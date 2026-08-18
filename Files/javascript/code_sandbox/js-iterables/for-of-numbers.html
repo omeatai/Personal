@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>for...of over [2, 4, 6, 8]</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>for...of over [2, 4, 6, 8]</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const numbers = [2,4,6,8];
+      let text = "";
+      for (const x of numbers) {
+        text += x + "\n";
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text);
+    </script>
+  </body>
+</html>
