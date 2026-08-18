@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>cause — sets or returns an error cause</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>cause — sets or returns an error cause</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let name, message, causeName, causeMessage;
+      try {
+        try {
+          throw new TypeError("inner");
+        } catch (inner) {
+          throw new Error("outer", { cause: inner });
+        }
+      } catch (e) {
+        name = e.name;
+        message = e.message;
+        causeName = e.cause && e.cause.name;
+        causeMessage = e.cause && e.cause.message;
+      }
+      document.getElementById("demo").innerText =
+        "err.name -> " + name + "\n" +
+        "err.message -> " + message + "\n" +
+        "err.cause.name -> " + causeName + "\n" +
+        "err.cause.message -> " + causeMessage;
+    </script>
+  </body>
+</html>

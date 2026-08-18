@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>new Error() — creates an Error object</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>new Error() — creates an Error object</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const err = new Error();
+      const err2 = new Error("Something went wrong");
+      document.getElementById("demo").innerText = "err.name -> " + String(err.name) + "\n" + "err.message -> " + String(JSON.stringify(err.message)) + "\n" + "err2.name -> " + String(err2.name) + "\n" + "err2.message -> " + String(err2.message);
+    </script>
+  </body>
+</html>

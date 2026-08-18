@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>URIError — decodeURI / encodeURI malformed</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>URIError — decodeURI / encodeURI malformed</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let dName, dMsg, eName, eMsg;
+      try {
+        decodeURI("%%%");
+      } catch (e) {
+        dName = e.name;
+        dMsg = e.message;
+      }
+      try {
+        encodeURI("\uD800");
+      } catch (e) {
+        eName = e.name;
+        eMsg = e.message;
+      }
+      document.getElementById("demo").innerText =
+        "decodeURI(\"%%%\") -> " + dName + ": " + dMsg + "\n" +
+        "encodeURI(unpaired surrogate) -> " + eName + ": " + eMsg;
+    </script>
+  </body>
+</html>
