@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>next() objects: value and done (including return)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>next() objects: value and done (including return)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function* myStream() {
+        yield 1;
+        yield 2;
+        return 3;
+      }
+      let g = myStream();
+      const a = g.next();
+      const b = g.next();
+      const c = g.next();
+      const d = g.next();
+      document.getElementById("demo").innerText = "a -> " + String(JSON.stringify(a)) + "\n" + "b -> " + String(JSON.stringify(b)) + "\n" + "c -> " + String(JSON.stringify(c)) + "\n" + "d -> " + String(JSON.stringify(d));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>generator.throw() caught inside the generator</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>generator.throw() caught inside the generator</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function* myStream() {
+        try {
+          yield 1;
+          yield 2;
+        } catch (e) {
+          yield "caught:" + e;
+        }
+        yield 3;
+      }
+      let g = myStream();
+      const a = g.next();
+      const b = g.throw("boom");
+      const c = g.next();
+      document.getElementById("demo").innerText = "a -> " + String(JSON.stringify(a)) + "\n" + "b -> " + String(JSON.stringify(b)) + "\n" + "c -> " + String(JSON.stringify(c));
+    </script>
+  </body>
+</html>
