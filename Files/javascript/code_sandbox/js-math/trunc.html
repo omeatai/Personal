@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Math.trunc — integer part</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Math.trunc — integer part</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      Math.trunc(4.7);
+      document.getElementById("demo").innerText = "Math.trunc(4.7) -> " + String(Math.trunc(4.7)) + "\n" + "Math.trunc(4.9) -> " + String(Math.trunc(4.9)) + "\n" + "Math.trunc(4.4) -> " + String(Math.trunc(4.4)) + "\n" + "Math.trunc(4.2) -> " + String(Math.trunc(4.2)) + "\n" + "Math.trunc(-4.2) -> " + String(Math.trunc(-4.2));
+    </script>
+  </body>
+</html>

@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `15.1` JS Math (new).
-- **Last completed:** `14.4` JS Generators.
+- **Next task:** `15.2` JS Math Reference (new).
+- **Last completed:** `15.1` JS Math.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -274,7 +274,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ### S15 — Math
 
-- [ ] `15.1` JS Math — `js_math.asp` (new)
+- [x] `15.1` JS Math — `js_math.asp` (new)
 - [ ] `15.2` JS Math Reference — `js_math_reference.asp` (new)
 - [ ] `15.3` JS Math Random — `js_random.asp` (new)
 
