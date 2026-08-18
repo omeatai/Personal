@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>BigInt bitwise AND/OR/XOR/NOT</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>BigInt bitwise AND/OR/XOR/NOT</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let a = 5n;
+      let b = 3n;
+      let x = (a & b);
+      let y = (a | b);
+      let z = (a ^ b);
+      let n = (~a);
+      document.getElementById("demo").innerText = "a & b -> " + String(x) + "\n" + "a | b -> " + String(y) + "\n" + "a ^ b -> " + String(z) + "\n" + "~a -> " + String(n);
+    </script>
+  </body>
+</html>

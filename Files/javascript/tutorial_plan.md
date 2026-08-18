@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `6.6` JS BigInt (new).
-- **Last completed:** `6.5` JS Bitwise.
+- **Next task:** `7.1` JS Functions (new).
+- **Last completed:** `6.6` JS BigInt.
   **JS String Reference** accordion listed a method table and only fenced `trim()`.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
@@ -95,7 +95,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [ ] **S3** Conditionals (7)
 - [ ] **S4** Loops (6)
 - [ ] **S5** Strings (5)
-- [ ] **S6** Numbers (6)
+- [x] **S6** Numbers (6)
 - [ ] **S7** Functions (10)
 - [ ] **S8** Objects (7)
 - [ ] **S9** Scope (5)
@@ -195,7 +195,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `6.3` JS Number Properties — `js_number_properties.asp` (new)
 - [x] `6.4` JS Number Reference — `js_number_reference.asp` (new)
 - [x] `6.5` JS Bitwise — `js_bitwise.asp` (new)
-- [ ] `6.6` JS BigInt — `js_bigint.asp` (new)
+- [x] `6.6` JS BigInt — `js_bigint.asp` (new)
 
 ### S7 — Functions
 

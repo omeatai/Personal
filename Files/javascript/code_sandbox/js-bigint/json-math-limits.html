@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JSON and Math do not accept BigInt</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JSON and Math do not accept BigInt</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let j, m;
+      try { j = JSON.stringify(1n); } catch (e) { j = e.name + ": " + e.message; }
+      try { m = Math.sqrt(16n); } catch (e) { m = e.name + ": " + e.message; }
+      document.getElementById("demo").innerText =
+        "JSON.stringify(1n) -> " + j + "\n" +
+        "Math.sqrt(16n) -> " + m;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>BigInt shifts `&lt;&lt;` `&gt;&gt;`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>BigInt shifts `&lt;&lt;` `&gt;&gt;`</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let big = 10n;
+      let x = (big << 2n);
+      let y = (big >> 1n);
+      let usr;
+      try { usr = big >>> 1n; } catch (e) { usr = e.name; }
+      document.getElementById("demo").innerText =
+        "10n << 2n -> " + x + "\n" +
+        "10n >> 1n -> " + y + "\n" +
+        "10n >>> 1n -> " + usr;
+    </script>
+  </body>
+</html>

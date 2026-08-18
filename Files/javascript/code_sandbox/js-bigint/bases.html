@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Hex, octal, binary BigInt literals</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hex, octal, binary BigInt literals</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let num = 256n;
+      let oct = 0o400n;
+      let hex = 0x100n;
+      let bin = 0b100000000n;
+      document.getElementById("demo").innerText = "num -> " + String(num) + "\n" + "oct -> " + String(oct) + "\n" + "hex -> " + String(hex) + "\n" + "bin -> " + String(bin) + "\n" + "all equal -> " + String(num === oct && oct === hex && hex === bin);
+    </script>
+  </body>
+</html>

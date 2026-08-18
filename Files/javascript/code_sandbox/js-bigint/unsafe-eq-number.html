@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>MAX+1 === MAX+2 is true for Number</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>MAX+1 === MAX+2 is true for Number</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      9007199254740992 === 9007199254740993;
+      document.getElementById("demo").innerText = "equal -> " + String(9007199254740992 === 9007199254740993);
+    </script>
+  </body>
+</html>

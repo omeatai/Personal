@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>No decimal BigInt; division</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>No decimal BigInt; division</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 5n;
+      let y = Number(x) / 2;
+      let truncated = 5n / 2n;
+      document.getElementById("demo").innerText =
+        "Number(5n) / 2 -> " + y + "\n" +
+        "5n / 2n -> " + truncated;
+    </script>
+  </body>
+</html>

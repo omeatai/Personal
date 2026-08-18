@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Huge hex / octal / binary BigInts</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Huge hex / octal / binary BigInts</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let hex = 0x20000000000003n;
+      let oct = 0o400000000000000003n;
+      let bin = 0b100000000000000000000000000000000000000000000000000011n;
+      document.getElementById("demo").innerText = "hex -> " + String(hex) + "\n" + "oct -> " + String(oct) + "\n" + "bin -> " + String(bin);
+    </script>
+  </body>
+</html>

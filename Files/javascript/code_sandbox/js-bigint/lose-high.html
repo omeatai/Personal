@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Lose precision above MAX_SAFE_INTEGER</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lose precision above MAX_SAFE_INTEGER</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 9007199254740991;
+      let y = x + 10;
+      document.getElementById("demo").innerText = "x -> " + String(x) + "\n" + "y -> " + String(y);
+    </script>
+  </body>
+</html>
