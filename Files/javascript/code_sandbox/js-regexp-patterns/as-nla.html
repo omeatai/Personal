@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>(?!...)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>(?!...)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "W3Schools Tutorials";
+      const pattern = /W3Schools(?! Tutorials)/;
+      let result = text.match(pattern);
+      document.getElementById("demo").innerText = "result -> " + String(JSON.stringify(result));
+    </script>
+  </body>
+</html>
