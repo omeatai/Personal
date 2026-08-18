@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Call sayHello() and store the message</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Call sayHello() and store the message</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function sayHello() {
+        return "Hello World";
+      }
+      let message = sayHello();
+      document.getElementById("demo").innerText = "message -> " + String(message);
+    </script>
+  </body>
+</html>

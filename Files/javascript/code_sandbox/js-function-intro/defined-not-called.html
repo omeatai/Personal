@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Function defined but not called</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Function defined but not called</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function sayHello() {
+        return "Hello World";
+      }
+      document.getElementById("demo").innerText = "typeof sayHello -> " + String(typeof sayHello) + "\n" + "called yet? -> " + String("no — definition only");
+    </script>
+  </body>
+</html>

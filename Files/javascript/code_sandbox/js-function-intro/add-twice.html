@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>add called twice (sum1, sum2)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>add called twice (sum1, sum2)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function add(a, b) {
+        return a + b;
+      }
+      let sum1 = add(5, 5);
+      let sum2 = add(50, 50);
+      document.getElementById("demo").innerText = "sum1 -> " + String(sum1) + "\n" + "sum2 -> " + String(sum2);
+    </script>
+  </body>
+</html>

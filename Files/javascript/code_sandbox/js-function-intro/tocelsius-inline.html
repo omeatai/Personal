@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>toCelsius used inline as a variable value</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>toCelsius used inline as a variable value</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function toCelsius(fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+      }
+      let x = toCelsius(77);
+      let text1 = "The temperature is " + x + " Celsius";
+      let text2 = "The temperature is " + toCelsius(77) + " Celsius";
+      document.getElementById("demo").innerText = "text1 -> " + String(text1) + "\n" + "text2 -> " + String(text2) + "\n" + "toCelsius(77) -> " + String(toCelsius(77));
+    </script>
+  </body>
+</html>

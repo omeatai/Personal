@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `7.2` Function Intro (new).
-- **Last completed:** `7.1` JS Functions.
+- **Next task:** `7.3` Function Invocation (new).
+- **Last completed:** `7.2` Function Intro.
   **JS String Reference** accordion listed a method table and only fenced `trim()`.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
@@ -200,7 +200,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S7 — Functions
 
 - [x] `7.1` JS Functions — `js_functions.asp` (new)
-- [ ] `7.2` Function Intro — `js_function_intro.asp` (new)
+- [x] `7.2` Function Intro — `js_function_intro.asp` (new)
 - [ ] `7.3` Function Invocation — `js_function_invocation.asp` (new)
 - [ ] `7.4` Function Parameters — `js_function_parameters.asp` (new)
 - [ ] `7.5` Function Returns — `js_function_return.asp` (new)
