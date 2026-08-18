@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Array iterator: Symbol.iterator + next()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Array iterator: Symbol.iterator + next()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const arr = ["a", "b"];
+      const it = arr[Symbol.iterator]();
+      const first = it.next();
+      const second = it.next();
+      const third = it.next();
+      document.getElementById("demo").innerText = "first -> " + String(JSON.stringify(first)) + "\n" + "second -> " + String(JSON.stringify(second)) + "\n" + "third -> " + String(JSON.stringify(third));
+    </script>
+  </body>
+</html>

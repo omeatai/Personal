@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>reduce sum of [175, 50, 25]</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>reduce sum of [175, 50, 25]</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myFunc(total, num) {
+        return total + num;
+      }
+      const myIterator = Iterator.from([175, 50, 25]);
+      let result = myIterator.reduce(myFunc);
+      document.getElementById("demo").innerText = "result -> " + String(result);
+    </script>
+  </body>
+</html>
