@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>wheel</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box">wheel me</div>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("box").addEventListener("wheel", function (event) {
+        document.getElementById("demo").innerText = "deltaY=" + event.deltaY;
+      });
+      document.getElementById("box").dispatchEvent(new WheelEvent("wheel", { deltaY: 100, bubbles: true }));
+    </script>
+  </body>
+</html>

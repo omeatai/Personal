@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>drag events</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="item" draggable="true" style="padding:8px;background:#fd8;">drag me</div>
+    <pre id="demo"></pre>
+    <script>
+      const item = document.getElementById("item");
+      item.addEventListener("dragstart", function () {
+        document.getElementById("demo").innerText = "dragstart";
+      });
+      item.dispatchEvent(new DragEvent("dragstart", { bubbles: true }));
+    </script>
+  </body>
+</html>

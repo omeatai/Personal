@@ -82,7 +82,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ## Resume pointer
 
 - **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `25.1` Intro to Events.
+- **Last completed:** `25.2` Mouse Events.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -381,7 +381,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S25 — JS HTML Events
 
 - [x] `25.1` Intro to Events — `js_events.asp` (new)
-- [ ] `25.2` Mouse Events — `js_events_mouse.asp` (new)
+- [x] `25.2` Mouse Events — `js_events_mouse.asp` (new)
 - [ ] `25.3` Keyboard Events — `js_events_keyboard.asp` (new)
 - [ ] `25.4` Load Events — `js_events_load.asp` (new)
 - [ ] `25.5` Manage Events — `js_events_management.asp` (new)

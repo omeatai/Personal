@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>contextmenu</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box">right-click</div>
+    <pre id="demo"></pre>
+    <script>
+      const box = document.getElementById("box");
+      box.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+        document.getElementById("demo").innerText = "contextmenu blocked";
+      });
+      box.dispatchEvent(new MouseEvent("contextmenu", { bubbles: true, cancelable: true }));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>mouseenter / mouseleave</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box" style="padding:16px;background:#cdf;"><span>child</span></div>
+    <pre id="demo"></pre>
+    <script>
+      const box = document.getElementById("box");
+      const log = [];
+      box.addEventListener("mouseenter", function () { log.push("enter"); });
+      box.addEventListener("mouseleave", function () { log.push("leave"); });
+      box.dispatchEvent(new MouseEvent("mouseenter"));
+      box.dispatchEvent(new MouseEvent("mouseleave"));
+      document.getElementById("demo").innerText = log.join(" -> ");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>mousemove</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box" style="height:60px;background:#eee;">move</div>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("box").addEventListener("mousemove", function (event) {
+        document.getElementById("demo").innerText = "X: " + event.clientX + " Y: " + event.clientY;
+      });
+      document.getElementById("box").dispatchEvent(new MouseEvent("mousemove", { clientX: 40, clientY: 50, bubbles: true }));
+    </script>
+  </body>
+</html>

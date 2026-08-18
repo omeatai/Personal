@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>mouseover and mouseout on a box</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box" style="width:240px;height:80px;background:#cfc;padding:8px;">Move mouse over this box</div>
+    <pre id="demo"></pre>
+    <script>
+      const box = document.getElementById("box");
+      box.addEventListener("mouseover", function () { box.innerHTML = "Mouse is over me!"; });
+      box.addEventListener("mouseout", function () { box.innerHTML = "Mouse is out!"; });
+      box.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+      box.dispatchEvent(new MouseEvent("mouseout", { bubbles: true }));
+      document.getElementById("demo").innerText = box.innerHTML;
+    </script>
+  </body>
+</html>

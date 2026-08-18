@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Mouse position — event.clientX and event.clientY source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>&lt;p id=&quot;out&quot;&gt;Move the mouse in this window!&lt;/p&gt;
+&lt;script&gt;
+document.addEventListener(&quot;mousemove&quot;, function (event) {
+  document.getElementById(&quot;out&quot;).innerHTML = &quot;X: &quot; + event.clientX + &quot; Y: &quot; + event.clientY;
+});
+&lt;/script&gt;</pre>
+  </body>
+</html>
