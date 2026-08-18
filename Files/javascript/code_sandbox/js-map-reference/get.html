@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>get() — value for a key</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>get() — value for a key</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+      ]);
+      fruits.get("bananas");
+      document.getElementById("demo").innerText = "fruits.get(\"bananas\") -> " + String(fruits.get("bananas")) + "\n" + "fruits.get(\"kiwi\") -> " + String(String(fruits.get("kiwi")));
+    </script>
+  </body>
+</html>

@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `13.4` JS Map Reference (new).
-- **Last completed:** `13.3` JS Map WeakMap.
+- **Next task:** `14.1` JS Iterations (new).
+- **Last completed:** `13.4` JS Map Reference.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -105,7 +105,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S10** Dates (5)
 - [x] **S11** Arrays (8)
 - [x] **S12** Sets (5)
-- [ ] **S13** Maps (4)
+- [x] **S13** Maps (4)
 - [ ] **S14** Iterations (4)
 - [ ] **S15** Math (3)
 - [ ] **S16** RegExp (10)
@@ -263,7 +263,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `13.1` JS Maps — `js_maps.asp` (new)
 - [x] `13.2` JS Map Methods — `js_map_methods.asp` (new)
 - [x] `13.3` JS Map WeakMap — `js_maps_weak.asp` (new)
-- [ ] `13.4` JS Map Reference — `js_map_reference.asp` (new)
+- [x] `13.4` JS Map Reference — `js_map_reference.asp` (new)
 
 ### S14 — Iterations
 
