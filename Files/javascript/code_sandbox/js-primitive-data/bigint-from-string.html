@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>BigInt(&quot;123456789012345678901234567890&quot;)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>BigInt(&quot;123456789012345678901234567890&quot;)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = BigInt("123456789012345678901234567890");
+      document.getElementById("demo").innerText = "x -> " + String(x) + "\n" + "typeof x -> " + String(typeof x);
+    </script>
+  </body>
+</html>

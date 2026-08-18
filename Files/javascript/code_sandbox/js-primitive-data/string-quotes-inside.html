@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Quotes inside a string</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Quotes inside a string</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'Johnny'";
+      let answer3 = 'He is called "Johnny"';
+      document.getElementById("demo").innerText = "answer1 -> " + String(answer1) + "\n" + "answer2 -> " + String(answer2) + "\n" + "answer3 -> " + String(answer3);
+    </script>
+  </body>
+</html>

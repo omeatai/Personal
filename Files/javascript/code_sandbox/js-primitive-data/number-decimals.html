@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Numbers with or without decimals</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Numbers with or without decimals</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x1 = 34.00;
+      let x2 = 34;
+      document.getElementById("demo").innerText = "x1 -> " + String(x1) + "\n" + "x2 -> " + String(x2) + "\n" + "x1 === x2 -> " + String(x1 === x2) + "\n" + "typeof x1 -> " + String(typeof x1);
+    </script>
+  </body>
+</html>

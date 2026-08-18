@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Strings — double or single quotes</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Strings — double or single quotes</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let carName1 = "Volvo XC60";
+      let carName2 = 'Volvo XC60';
+      document.getElementById("demo").innerText = "carName1 -> " + String(carName1) + "\n" + "carName2 -> " + String(carName2) + "\n" + "carName1 === carName2 -> " + String(carName1 === carName2);
+    </script>
+  </body>
+</html>
