@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>void 0 returns undefined</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>void 0 returns undefined</h2>
+    <p><a href="javascript:void(0)">Useless link</a></p>
+    <pre id="demo"></pre>
+    <p><button type="button" onclick="document.body.style.backgroundColor='red'">Click me to change the background color of body to red</button></p>
+    <script>
+      void 0;
+      void (0);
+      document.getElementById("demo").innerText = "void 0 -> " + String(void 0) + "\n" + "typeof void 0 -> " + String(typeof void 0) + "\n" + "void (0) -> " + String(void (0));
+    </script>
+  </body>
+</html>

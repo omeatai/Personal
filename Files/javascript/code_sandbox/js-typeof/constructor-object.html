@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>{name:&#x27;John&#x27;,age:34}.constructor</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>{name:&#x27;John&#x27;,age:34}.constructor</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let c = {name: 'John', age: 34}.constructor;
+      document.getElementById("demo").innerText = "String(c) -> " + String(String(c)) + "\n" + "c === Object -> " + String(c === Object);
+    </script>
+  </body>
+</html>

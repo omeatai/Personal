@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>let car = &quot;&quot;; typeof car</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>let car = &quot;&quot;; typeof car</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let car = "";
+      typeof car;
+      document.getElementById("demo").innerText = "JSON.stringify(car) -> " + String(JSON.stringify(car)) + "\n" + "typeof car -> " + String(typeof car);
+    </script>
+  </body>
+</html>

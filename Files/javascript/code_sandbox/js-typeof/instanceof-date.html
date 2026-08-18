@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>time instanceof Date</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>time instanceof Date</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const time = new Date();
+      (time instanceof Date);
+      document.getElementById("demo").innerText = "time instanceof Date -> " + String(time instanceof Date) + "\n" + "time instanceof Array -> " + String(time instanceof Array);
+    </script>
+  </body>
+</html>

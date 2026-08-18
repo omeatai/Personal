@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>typeof (&quot;John&quot; + &quot;Doe&quot;)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>typeof (&quot;John&quot; + &quot;Doe&quot;)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      typeof ("John" + "Doe");
+      document.getElementById("demo").innerText = "typeof (\"John\" + \"Doe\") -> " + String(typeof ("John" + "Doe"));
+    </script>
+  </body>
+</html>
