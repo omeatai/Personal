@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Final project: load + display on page open source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>let tasks = [];
+function displayTasks() {
+  let html = &quot;&quot;;
+  for (let i = 0; i &lt; tasks.length; i++) {
+    html += &quot;&lt;li&gt;&quot; + tasks[i] + &quot; &lt;button type=\&quot;button\&quot; onclick=\&quot;removeTask(&quot; + i + &quot;)\&quot;&gt;x&lt;/button&gt;&lt;/li&gt;&quot;;
+  }
+  document.getElementById(&quot;list&quot;).innerHTML = html;
+}
+function addTask() {
+  let taskInput = document.getElementById(&quot;task&quot;);
+  let text = taskInput.value;
+  if (text === &quot;&quot;) {
+    return;
+  }
+  tasks.push(text);
+  taskInput.value = &quot;&quot;;
+  saveTasks();
+  displayTasks();
+}
+function removeTask(i) {
+  tasks.splice(i, 1);
+  saveTasks();
+  displayTasks();
+}
+function clearAll() {
+  tasks = [];
+  saveTasks();
+  displayTasks();
+}
+function saveTasks() {
+  localStorage.setItem(&quot;tasks&quot;, JSON.stringify(tasks));
+}
+function loadTasks() {
+  let saved = localStorage.getItem(&quot;tasks&quot;);
+  if (saved !== null) {
+    tasks = JSON.parse(saved);
+  }
+}
+loadTasks();
+displayTasks();</pre>
+  </body>
+</html>
