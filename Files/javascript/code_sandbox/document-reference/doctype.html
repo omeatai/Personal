@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>doctype</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id='t'>Hello <b>World</b></p><p id='u'>Next</p>
+    <pre id="demo"></pre>
+    <script>
+      const dt = document.doctype;
+      document.getElementById("demo").innerText = dt ? (dt.name + " " + dt.publicId) : "null";
+    </script>
+  </body>
+</html>

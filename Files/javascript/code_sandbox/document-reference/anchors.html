@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>anchors</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <a name="top">top</a>
+    <pre id="demo"></pre>
+    <script>
+      let msg;
+      try { msg = "anchors.length=" + (document.anchors ? document.anchors.length : document.anchors); }
+      catch (e) { msg = e.name + ": " + e.message; }
+      document.getElementById("demo").innerText = msg + "\n(deprecated — do not use in new code)";
+    </script>
+  </body>
+</html>

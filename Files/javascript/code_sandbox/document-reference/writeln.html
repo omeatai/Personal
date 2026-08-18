@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>writeln()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <iframe id="f" style="width:100%;height:70px;border:1px solid #ccc;"></iframe>
+    <pre id="demo"></pre>
+    <script>
+      const d = document.getElementById("f").contentDocument;
+      d.open();
+      d.writeln("<pre>line1");
+      d.writeln("line2</pre>");
+      d.close();
+      document.getElementById("demo").innerText = JSON.stringify(d.body.innerText);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>activeElement</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Focus target is created in script.</p>
+    <pre id="demo"></pre>
+    <script>
+      const inp = document.createElement("input");
+      inp.id = "focusMe";
+      document.body.insertBefore(inp, document.getElementById("demo"));
+      inp.focus();
+      document.getElementById("demo").innerText = document.activeElement && document.activeElement.id;
+    </script>
+  </body>
+</html>

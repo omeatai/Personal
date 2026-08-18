@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>querySelector()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p id='t'>Hello <b>World</b></p><p id='u'>Next</p>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText = document.querySelector("#t b").textContent;
+    </script>
+  </body>
+</html>

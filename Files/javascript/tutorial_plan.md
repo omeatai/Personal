@@ -82,7 +82,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ## Resume pointer
 
 - **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `24.7` DOM Animations.
+- **Last completed:** `24.8` Document Reference.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -375,7 +375,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `24.5` Changing CSS — `js_htmldom_css.asp` (new)
 - [x] `24.6` Form Validation — `js_validation.asp` (new)
 - [x] `24.7` DOM Animations — `js_htmldom_animate.asp` (new)
-- [ ] `24.8` Document Reference — `js_htmldom_document.asp` (new)
+- [x] `24.8` Document Reference — `js_htmldom_document.asp` (new)
 - [ ] `24.9` Element Reference — `js_htmldom_element_reference.asp` (new)
 
 ### S25 — JS HTML Events

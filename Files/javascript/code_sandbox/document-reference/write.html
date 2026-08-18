@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>write()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <iframe id="f" style="width:100%;height:70px;border:1px solid #ccc;"></iframe>
+    <pre id="demo"></pre>
+    <script>
+      const d = document.getElementById("f").contentDocument;
+      d.open();
+      d.write("<strong>written</strong>");
+      d.close();
+      document.getElementById("demo").innerText = d.body.innerHTML;
+    </script>
+  </body>
+</html>
