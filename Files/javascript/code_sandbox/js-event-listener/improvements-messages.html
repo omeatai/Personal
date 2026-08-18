@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Improvements: Saved! / Loaded! via showMessage</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Counter</h2>
+<p id="count" style="font-size:40px;">0</p>
+<button type="button" id="btnPlus">+</button>
+<button type="button" id="btnMinus">-</button>
+<button type="button" id="btnReset">Reset</button>
+<button type="button" id="btnSave">Save</button>
+<button type="button" id="btnLoad">Load</button>
+<p id="message"></p>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+      let count = 0;
+      const countEl = document.getElementById("count");
+      const msgEl = document.getElementById("message");
+      function updateCount() { countEl.innerHTML = count; }
+      function showMessage(text) {
+        msgEl.innerHTML = text;
+        setTimeout(function () { msgEl.innerHTML = ""; }, 3000);
+      }
+      function saveCount() {
+        localStorage.setItem("count", count);
+        showMessage("Saved!");
+      }
+      function loadCount() {
+        let saved = localStorage.getItem("count");
+        if (saved !== null) {
+          count = Number(saved);
+          showMessage("Loaded!");
+        }
+        updateCount();
+      }
+      count = 3;
+      updateCount();
+      saveCount();
+      note("message after save -> " + msgEl.innerHTML);
+      count = 0;
+      updateCount();
+      loadCount();
+      note("message after load -> " + msgEl.innerHTML);
+      note("count -> " + count);
+
+    </script>
+  </body>
+</html>

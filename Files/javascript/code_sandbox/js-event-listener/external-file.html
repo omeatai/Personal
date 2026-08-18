@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JavaScript in counter.js + script at the bottom</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Counter</h2>
+<p id="count" style="font-size:40px;">0</p>
+<button type="button" id="btnPlus">+</button>
+<button type="button" id="btnMinus">-</button>
+<button type="button" id="btnReset">Reset</button>
+<button type="button" id="btnSave">Save</button>
+<button type="button" id="btnLoad">Load</button>
+<p id="message"></p>
+<script src="counter.js"></script>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.getElementById("btnPlus").click();
+          note("after plus click -> " + document.getElementById("count").innerHTML);
+        }, 50);
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Two click listeners on the same button</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="one">Click</button>
+    <pre id="log"></pre>
+    <script>
+      const __log = [];
+      function note(s) {
+        __log.push(s);
+        const el = document.getElementById("log");
+        if (el) el.innerText = __log.join("\n");
+      }
+      const btn = document.getElementById("one");
+      btn.addEventListener("click", function () { note("handler A"); });
+      btn.addEventListener("click", function () { note("handler B"); });
+      btn.click();
+
+    </script>
+  </body>
+</html>

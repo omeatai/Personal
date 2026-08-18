@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Cache getElementById in const variables</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Cache getElementById in const variables</h2>
+    <h2>Counter</h2>
+<p id="count" style="font-size:40px;">0</p>
+<button type="button" id="btnPlus">+</button>
+<button type="button" id="btnMinus">-</button>
+<button type="button" id="btnReset">Reset</button>
+<button type="button" id="btnSave">Save</button>
+<button type="button" id="btnLoad">Load</button>
+<p id="message"></p>
+    <pre id="demo"></pre>
+    
+    <script>
+      const countEl = document.getElementById("count");
+      const btnPlus = document.getElementById("btnPlus");
+      document.getElementById("demo").innerText = "countEl.id -> " + String(countEl.id) + "\n" + "btnPlus.id -> " + String(btnPlus.id);
+    </script>
+  </body>
+</html>

@@ -82,7 +82,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ## Resume pointer
 
 - **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `22.1` JS Counter.
+- **Last completed:** `22.2` JS Event Listener (Project).
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -341,7 +341,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ### S22 — Projects
 
 - [x] `22.1` JS Counter — `js_project_counter.asp` (new)
-- [ ] `22.2` JS Event Listener (Project) — `js_project_eventlistener.asp` (new)
+- [x] `22.2` JS Event Listener (Project) — `js_project_eventlistener.asp` (new)
 - [ ] `22.3` JS To-Do List — `js_project_todo.asp` (new)
 - [ ] `22.4` JS Modal Popup — `js_project_modal_popup.asp` (new)
 - [ ] `22.5` JS Form Validation (Project) — `js_project_form_validation.asp` (new)
