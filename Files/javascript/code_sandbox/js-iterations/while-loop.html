@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>while (i &lt; 10)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>while (i &lt; 10)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "";
+      let i = 0;
+      while (i < 10) {
+        text += "The number is " + i + "\n";
+        i++;
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "i after loop -> " + String(i);
+    </script>
+  </body>
+</html>
