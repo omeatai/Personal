@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>for...in over indexes (not recommended)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>for...in over indexes (not recommended)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const cars = ["BMW", "Volvo", "Mini"];
+      let text = "";
+      for (let x in cars) {
+        text += x + ",";
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text);
+    </script>
+  </body>
+</html>

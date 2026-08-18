@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>some value &gt; 18</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>some value &gt; 18</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const numbers = [45, 4, 9, 16, 25];
+      let someOver18 = numbers.some(myFunction);
+      function myFunction(value, index, array) {
+        return value > 18;
+      }
+      document.getElementById("demo").innerText = "someOver18 -> " + String(someOver18);
+    </script>
+  </body>
+</html>

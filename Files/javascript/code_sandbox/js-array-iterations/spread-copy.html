@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Spread copy an array</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Spread copy an array</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const arr1 = [1, 2, 3];
+      const arr2 = [...arr1];
+      document.getElementById("demo").innerText = "arr2 -> " + String(JSON.stringify(arr2)) + "\n" + "arr1 === arr2 -> " + String(arr1 === arr2);
+    </script>
+  </body>
+</html>
