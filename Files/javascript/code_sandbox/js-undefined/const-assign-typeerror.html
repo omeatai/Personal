@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>const person = undefined — TypeError</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>const person = undefined — TypeError</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const person = {firstName:"John", lastName:"Doe"};
+      let r0;
+      try {
+        r0 = (person = undefined);
+      } catch (e) {
+        r0 = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = "person = undefined -> " + String(r0);
+    </script>
+  </body>
+</html>
