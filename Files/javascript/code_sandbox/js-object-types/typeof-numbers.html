@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>typeof numbers — 0, 314, 3.14, (3), (3+4)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>typeof numbers — 0, 314, 3.14, (3), (3+4)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      typeof 0;
+      typeof 314;
+      typeof 3.14;
+      typeof (3);
+      typeof (3 + 4);
+      document.getElementById("demo").innerText = "typeof 0 -> " + String(typeof 0) + "\n" + "typeof 314 -> " + String(typeof 314) + "\n" + "typeof 3.14 -> " + String(typeof 3.14) + "\n" + "typeof (3) -> " + String(typeof (3)) + "\n" + "typeof (3 + 4) -> " + String(typeof (3 + 4));
+    </script>
+  </body>
+</html>
