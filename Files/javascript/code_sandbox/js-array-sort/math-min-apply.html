@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Math.min.apply(null, arr)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Math.min.apply(null, arr)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const points = [40, 100, 1, 5, 25, 10];
+      function myArrayMin(arr) {
+        return Math.min.apply(null, arr);
+      }
+      let min = myArrayMin(points);
+      document.getElementById("demo").innerText = "min -> " + String(min);
+    </script>
+  </body>
+</html>

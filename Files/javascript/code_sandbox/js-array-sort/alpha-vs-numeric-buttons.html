@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Default sort vs numeric sort (the button demo)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Default sort vs numeric sort (the button demo)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const points = [40, 100, 1, 5, 25, 10];
+      const alpha = points.slice().sort();
+      const numeric = points.slice().sort(function(a, b){return a - b});
+      document.getElementById("demo").innerText = "alpha -> " + String(JSON.stringify(alpha)) + "\n" + "numeric -> " + String(JSON.stringify(numeric));
+    </script>
+  </body>
+</html>

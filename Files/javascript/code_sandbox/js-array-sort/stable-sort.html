@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Stable sort by price (ES2019)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Stable sort by price (ES2019)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const myArr = [
+        {name:"X00",price:100}, {name:"X01",price:100},
+        {name:"X02",price:100}, {name:"X03",price:100},
+        {name:"X04",price:110}, {name:"X05",price:110},
+        {name:"X06",price:110}, {name:"X07",price:110}
+      ];
+      myArr.sort(function(a, b){return a.price - b.price});
+      const names = myArr.map(o => o.name + " " + o.price);
+      document.getElementById("demo").innerText = "names -> " + String(JSON.stringify(names));
+    </script>
+  </body>
+</html>

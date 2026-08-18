@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Home-made myArrayMax</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Home-made myArrayMax</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const points = [40, 100, 1, 5, 25, 10];
+      function myArrayMax(arr) {
+        let len = arr.length;
+        let max = -Infinity;
+        while (len--) {
+          if (arr[len] > max) {
+            max = arr[len];
+          }
+        }
+        return max;
+      }
+      let max = myArrayMax(points);
+      document.getElementById("demo").innerText = "max -> " + String(max);
+    </script>
+  </body>
+</html>

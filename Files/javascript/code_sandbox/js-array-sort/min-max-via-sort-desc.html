@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Highest / lowest after descending sort</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Highest / lowest after descending sort</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const points = [40, 100, 1, 5, 25, 10];
+      points.sort(function(a, b){return b - a});
+      let highest = points[0];
+      let lowest = points[points.length - 1];
+      document.getElementById("demo").innerText = "points -> " + String(JSON.stringify(points)) + "\n" + "highest -> " + String(highest) + "\n" + "lowest -> " + String(lowest);
+    </script>
+  </body>
+</html>

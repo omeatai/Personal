@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Home-made myArrayMin</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Home-made myArrayMin</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const points = [40, 100, 1, 5, 25, 10];
+      function myArrayMin(arr) {
+        let len = arr.length;
+        let min = Infinity;
+        while (len--) {
+          if (arr[len] < min) {
+            min = arr[len];
+          }
+        }
+        return min;
+      }
+      let min = myArrayMin(points);
+      document.getElementById("demo").innerText = "min -> " + String(min);
+    </script>
+  </body>
+</html>
