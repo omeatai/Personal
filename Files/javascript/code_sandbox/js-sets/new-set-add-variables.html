@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>add() variables</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>add() variables</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const letters = new Set();
+      const a = "a";
+      const b = "b";
+      const c = "c";
+      letters.add(a);
+      letters.add(b);
+      letters.add(c);
+      document.getElementById("demo").innerText = "Array.from(letters) -> " + String(JSON.stringify(Array.from(letters))) + "\n" + "letters.size -> " + String(letters.size);
+    </script>
+  </body>
+</html>

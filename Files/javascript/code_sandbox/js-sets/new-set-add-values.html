@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>new Set() then add() values</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>new Set() then add() values</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const letters = new Set();
+      letters.add("a");
+      letters.add("b");
+      letters.add("c");
+      document.getElementById("demo").innerText = "Array.from(letters) -> " + String(JSON.stringify(Array.from(letters))) + "\n" + "letters.size -> " + String(letters.size);
+    </script>
+  </body>
+</html>

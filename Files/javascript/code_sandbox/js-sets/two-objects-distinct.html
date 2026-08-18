@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Two similar objects are two values</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Two similar objects are two values</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const a = {x: 1};
+      const b = {x: 1};
+      const letters = new Set([a, b]);
+      document.getElementById("demo").innerText = "letters.size -> " + String(letters.size) + "\n" + "Array.from(letters) -> " + String(JSON.stringify(Array.from(letters)));
+    </script>
+  </body>
+</html>
