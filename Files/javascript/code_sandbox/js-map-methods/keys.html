@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>keys()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>keys()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+      ]);
+      let text = "";
+      for (const x of fruits.keys()) {
+        text += x;
+      }
+      document.getElementById("demo").innerText = "text -> " + String(text) + "\n" + "Array.from(fruits.keys()) -> " + String(JSON.stringify(Array.from(fruits.keys())));
+    </script>
+  </body>
+</html>

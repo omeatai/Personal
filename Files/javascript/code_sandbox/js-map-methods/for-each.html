@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>forEach()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>forEach()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+      ]);
+      let text = "";
+      fruits.forEach(function (value, key) {
+        text += key + " = " + value;
+      });
+      document.getElementById("demo").innerText = "text -> " + String(text);
+    </script>
+  </body>
+</html>

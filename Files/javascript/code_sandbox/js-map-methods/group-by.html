@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Map.groupBy()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Map.groupBy()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = [
+        {name:"apples", quantity:300},
+        {name:"bananas", quantity:500},
+        {name:"oranges", quantity:200},
+        {name:"kiwi", quantity:150}
+      ];
+      function myCallback({ quantity }) {
+        return quantity > 200 ? "ok" : "low";
+      }
+      const result = Map.groupBy(fruits, myCallback);
+      document.getElementById("demo").innerText = "Array.from(result) -> " + String(JSON.stringify(Array.from(result))) + "\n" + "result instanceof Map -> " + String(result instanceof Map) + "\n" + "JSON.stringify(fruits) unchanged -> " + String(JSON.stringify(fruits));
+    </script>
+  </body>
+</html>
