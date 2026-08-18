@@ -47,9 +47,7 @@ This output is a **detailed study tutorial**, not a thin recap. The reader must 
      - `<slug>-01-result.png`, `<slug>-02-result.png`, …
      - A single-example section may use `<slug>-code.png` / `<slug>-result.png`.
    - Embed **relative** images from `tutorial.md`: `./code_sandbox/snaps/<file>.png`
-6. **Append** one formatted accordion per section. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
-   - **Part 1** (`tutorial.md`): JS Home through **JS Destructuring**. After that accordion, keep the **[View PART 2 of Tutorial](./tutorial2.md)** link as the last content.
-   - **Part 2** (`tutorial2.md`): **JS Errors Intro** onward (GitHub line-limit split). If `tutorial2.md` has no `#` title yet, start with `# JavaScript Tutorial — Part 2` and a back-link to `tutorial.md`.
+6. **Append** one formatted accordion per section to `Personal/Files/javascript/tutorial.md`. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
 7. If `tutorial.md` has no `#` title yet, start the file with `# JavaScript Tutorial` then the accordion.
 
 ## Format Requirements
@@ -225,14 +223,14 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 
 ## File Paths
 
-| Purpose               | Path                                                                                                                            |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Format sample         | `Personal/bin/format.md`                                                                                                        |
-| Output (append)       | `Personal/Files/javascript/tutorial.md` (through JS Destructuring); `Personal/Files/javascript/tutorial2.md` (JS Errors onward) |
-| Sandbox (per section) | `Personal/Files/javascript/code_sandbox/<slug>/`                                                                                |
-| Snaps                 | `Personal/Files/javascript/code_sandbox/snaps/`                                                                                 |
-| This rule             | `Personal/Files/javascript/.cursor/rules/javascript_tutorial.mdc`                                                               |
-| Tutorial site         | https://www.w3schools.com/js/default.asp                                                                                        |
+| Purpose               | Path                                                              |
+| --------------------- | ----------------------------------------------------------------- |
+| Format sample         | `Personal/bin/format.md`                                          |
+| Output (append)       | `Personal/Files/javascript/tutorial.md`                           |
+| Sandbox (per section) | `Personal/Files/javascript/code_sandbox/<slug>/`                  |
+| Snaps                 | `Personal/Files/javascript/code_sandbox/snaps/`                   |
+| This rule             | `Personal/Files/javascript/.cursor/rules/javascript_tutorial.mdc` |
+| Tutorial site         | https://www.w3schools.com/js/default.asp                          |
 
 ## Invocation
 
