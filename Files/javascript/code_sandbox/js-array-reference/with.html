@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>with() — new array with an updated index</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>with() — new array with an updated index</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const months = ["Januar", "Februar", "Mar", "April"];
+      const next = months.with(2, "March");
+      document.getElementById("demo").innerText = "next -> " + String(JSON.stringify(next)) + "\n" + "months -> " + String(JSON.stringify(months));
+    </script>
+  </body>
+</html>

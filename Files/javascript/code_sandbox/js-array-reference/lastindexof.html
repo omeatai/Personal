@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>lastIndexOf() — last position</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>lastIndexOf() — last position</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = ["Apple", "Orange", "Apple", "Mango"];
+      let i = fruits.lastIndexOf("Apple");
+      document.getElementById("demo").innerText = "i -> " + String(i);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>valueOf() — primitive value of the array</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>valueOf() — primitive value of the array</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.valueOf() === fruits;
+      String(fruits.valueOf());
+      document.getElementById("demo").innerText = "fruits.valueOf() === fruits -> " + String(fruits.valueOf() === fruits) + "\n" + "String(fruits.valueOf()) -> " + String(String(fruits.valueOf()));
+    </script>
+  </body>
+</html>

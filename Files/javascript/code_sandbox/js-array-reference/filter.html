@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>filter() — keep elements that pass</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>filter() — keep elements that pass</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const numbers = [4, 9, 16, 25, 29];
+      const over = numbers.filter(v => v > 18);
+      document.getElementById("demo").innerText = "over -> " + String(JSON.stringify(over));
+    </script>
+  </body>
+</html>
