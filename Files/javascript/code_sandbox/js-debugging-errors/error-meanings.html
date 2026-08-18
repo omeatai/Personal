@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Cheat sheet: ReferenceError, TypeError, SyntaxError, NaN</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Cheat sheet: ReferenceError, TypeError, SyntaxError, NaN</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function label(fn) {
+        try { return fn(); }
+        catch (e) { return e.name + ": " + e.message; }
+      }
+      let syn;
+      try { new Function("if (x == 5 {"); syn = "ran"; }
+      catch (e) { syn = e.name + ": " + e.message; }
+      document.getElementById("demo").innerText =
+        "ReferenceError -> " + label(function () { return myValue; }) + "\n" +
+        "TypeError -> " + label(function () { return (undefined).n; }) + "\n" +
+        "SyntaxError -> " + syn + "\n" +
+        "NaN -> " + String("abc" * 5);
+    </script>
+  </body>
+</html>
