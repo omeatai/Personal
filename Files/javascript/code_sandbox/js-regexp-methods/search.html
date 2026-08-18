@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>String.search(regexp)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>String.search(regexp)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const text = "Visit W3Schools!";
+      const hit = text.search(/W3Schools/);
+      const miss = text.search(/z/);
+      document.getElementById("demo").innerText = "hit -> " + String(hit) + "\n" + "miss -> " + String(miss);
+    </script>
+  </body>
+</html>

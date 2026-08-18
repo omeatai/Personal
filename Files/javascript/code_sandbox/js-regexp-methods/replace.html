@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>String.replace(regexp, s)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>String.replace(regexp, s)</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let text = "Please visit Microsoft and Microsoft!";
+      let result = text.replace(/Microsoft/, "W3Schools");
+      document.getElementById("demo").innerText = "result -> " + String(result);
+    </script>
+  </body>
+</html>

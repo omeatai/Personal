@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `16.10` JS RegExp Methods (new).
-- **Last completed:** `16.9` JS RegExp Objects.
+- **Next task:** `17.1` JS Data Types (new).
+- **Last completed:** `16.10` JS RegExp Methods.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -108,7 +108,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S13** Maps (4)
 - [x] **S14** Iterations (4)
 - [x] **S15** Math (3)
-- [ ] **S16** RegExp (10)
+- [x] **S16** RegExp (10)
 - [ ] **S17** Data Types (12)
 - [ ] **S18** Errors (4)
 - [ ] **S19** Debugging (6)
@@ -289,7 +289,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `16.7` JS RegExp Quantifiers — `js_regexp_quantifiers.asp` (new)
 - [x] `16.8` JS RegExp Patterns — `js_regexp_patterns.asp` (new)
 - [x] `16.9` JS RegExp Objects — `js_regexp_objects.asp` (new)
-- [ ] `16.10` JS RegExp Methods — `js_regexp_methods.asp` (new)
+- [x] `16.10` JS RegExp Methods — `js_regexp_methods.asp` (new)
 
 ### S17 — Data Types
 

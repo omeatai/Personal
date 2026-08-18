@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>unicode</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>unicode</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const pattern = /\u{04DC0}/u;
+      let result = pattern.unicode;
+      document.getElementById("demo").innerText = "result -> " + String(result);
+    </script>
+  </body>
+</html>

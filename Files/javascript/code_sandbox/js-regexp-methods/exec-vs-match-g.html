@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>exec vs match with /g</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>exec vs match with /g</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const text = "a1 a2";
+      const pattern = /a(\d)/g;
+      const viaMatch = text.match(pattern);
+      const liAfterMatch = pattern.lastIndex;
+      const viaExec = pattern.exec(text);
+      const liAfterExec = pattern.lastIndex;
+      document.getElementById("demo").innerText = "viaMatch -> " + String(JSON.stringify(viaMatch)) + "\n" + "liAfterMatch -> " + String(liAfterMatch) + "\n" + "viaExec -> " + String(JSON.stringify(viaExec)) + "\n" + "liAfterExec -> " + String(liAfterExec);
+    </script>
+  </body>
+</html>
