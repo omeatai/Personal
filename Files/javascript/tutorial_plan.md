@@ -80,8 +80,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `16.1` JS RegExp (new).
-- **Last completed:** `15.3` JS Math Random.
+- **Next task:** `16.2` JS RegExp Flags (new).
+- **Last completed:** `16.1` JS RegExp.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -280,7 +280,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ### S16 — RegExp
 
-- [ ] `16.1` JS RegExp — `js_regexp.asp` (new)
+- [x] `16.1` JS RegExp — `js_regexp.asp` (new)
 - [ ] `16.2` JS RegExp Flags — `js_regexp_flags.asp` (new)
 - [ ] `16.3` JS RegExp Classes — `js_regexp_characters.asp` (new)
 - [ ] `16.4` JS RegExp Metachars — `js_regexp_meta_characters.asp` (new)
