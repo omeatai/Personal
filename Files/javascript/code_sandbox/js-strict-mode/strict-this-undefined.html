@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Strict function this is undefined</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Strict function this is undefined</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      "use strict";
+      function myFunction() {
+        return this;
+      }
+      let t = myFunction();
+      document.getElementById("demo").innerText =
+        "this -> " + String(t) + "\n" +
+        "this === undefined -> " + (t === undefined);
+    </script>
+  </body>
+</html>

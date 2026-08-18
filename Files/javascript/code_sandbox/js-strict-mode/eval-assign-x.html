@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>eval(&quot;x=2&quot;) then x — error</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>eval(&quot;x=2&quot;) then x — error</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      "use strict";
+      let evalMsg;
+      try {
+        eval("x = 2");
+        evalMsg = "eval ran";
+      } catch (e) {
+        evalMsg = e.name + ": " + e.message;
+      }
+      let readX;
+      try {
+        readX = x;
+      } catch (e) {
+        readX = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "eval(\"x = 2\") -> " + evalMsg + "\n" +
+        "x after eval -> " + readX;
+    </script>
+  </body>
+</html>

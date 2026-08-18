@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>&quot;use strict&quot;; x = 3.14 — undeclared variable</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>&quot;use strict&quot;; x = 3.14 — undeclared variable</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      "use strict";
+      let r0;
+      try {
+        r0 = (x = 3.14);
+      } catch (e) {
+        r0 = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = "x = 3.14 -> " + String(r0);
+    </script>
+  </body>
+</html>

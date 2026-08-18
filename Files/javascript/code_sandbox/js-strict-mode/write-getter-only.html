@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Write a getter-only property</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Write a getter-only property</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      "use strict";
+      const obj = { get x() { return 0; } };
+      let msg;
+      try {
+        obj.x = 3.14;
+        msg = "obj.x -> " + obj.x;
+      } catch (e) {
+        msg = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "obj.x getter -> " + obj.x + "\n" +
+        "obj.x = 3.14 -> " + msg;
+    </script>
+  </body>
+</html>

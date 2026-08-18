@@ -76,8 +76,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `9.5` JS Strict Mode (new).
-- **Last completed:** `9.4` JS var/let/const.
+- **Next task:** `10.1` JS Dates (new).
+- **Last completed:** `9.5` JS Strict Mode.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -97,7 +97,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S6** Numbers (6)
 - [x] **S7** Functions (10)
 - [x] **S8** Objects (7)
-- [ ] **S9** Scope (5)
+- [x] **S9** Scope (5)
 - [ ] **S10** Dates (5)
 - [ ] **S11** Arrays (8)
 - [ ] **S12** Sets (5)
@@ -225,7 +225,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `9.2` JS Code Blocks — `js_codeblocks.asp` (new)
 - [x] `9.3` JS Hoisting — `js_hoisting.asp` (new)
 - [x] `9.4` JS var/let/const — `js_varletconst.asp` (new)
-- [ ] `9.5` JS Strict Mode — `js_strict.asp` (new)
+- [x] `9.5` JS Strict Mode — `js_strict.asp` (new)
 
 ### S10 — Dates
 

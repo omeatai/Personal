@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Local strict in a function; outer assignment OK</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Local strict in a function; outer assignment OK</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      x = 3.14;
+      function myFunction() {
+        "use strict";
+        y = 3.14;
+      }
+      let inner;
+      try {
+        myFunction();
+        inner = "y -> " + y;
+      } catch (e) {
+        inner = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        "outer x -> " + x + "\n" +
+        "inner y = 3.14 -> " + inner;
+    </script>
+  </body>
+</html>

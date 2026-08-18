@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JS Strict Mode</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>JS Strict Mode</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="undeclared-x.html">01 — &quot;use strict&quot;; x = 3.14 — undeclared variable</a></li>
+      <li><a href="global-strict-in-function.html">02 — Global strict: undeclared y inside a function</a></li>
+      <li><a href="local-strict-only.html">03 — Local strict in a function; outer assignment OK</a></li>
+      <li><a href="undeclared-object.html">04 — Undeclared object x = {p1, p2}</a></li>
+      <li><a href="delete-variable.html">05 — delete x (let x) — not allowed</a></li>
+      <li><a href="delete-function.html">06 — delete function — not allowed</a></li>
+      <li><a href="duplicate-params.html">07 — Duplicate parameter names — SyntaxError</a></li>
+      <li><a href="octal-literal.html">08 — Octal literal 010 — SyntaxError</a></li>
+      <li><a href="octal-escape.html">09 — Octal escape &quot;\010&quot;</a></li>
+      <li><a href="write-readonly.html">10 — Write a read-only defineProperty (writable: false)</a></li>
+      <li><a href="write-getter-only.html">11 — Write a getter-only property</a></li>
+      <li><a href="delete-object-prototype.html">12 — delete Object.prototype</a></li>
+      <li><a href="let-eval.html">13 — let eval = 3.14</a></li>
+      <li><a href="let-arguments.html">14 — let arguments = 3.14</a></li>
+      <li><a href="with-statement.html">15 — with (Math) — SyntaxError</a></li>
+      <li><a href="eval-assign-x.html">16 — eval(&quot;x=2&quot;) then x — error</a></li>
+      <li><a href="eval-var-x.html">17 — eval(&quot;var x=2&quot;) then x — error in strict</a></li>
+      <li><a href="eval-let-x.html">18 — eval(&quot;let x=2&quot;) then x — error</a></li>
+      <li><a href="strict-this-undefined.html">19 — Strict function this is undefined</a></li>
+    </ul>
+  </body>
+</html>

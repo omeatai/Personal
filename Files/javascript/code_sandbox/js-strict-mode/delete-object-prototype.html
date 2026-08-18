@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>delete Object.prototype</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>delete Object.prototype</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      "use strict";
+      let r0;
+      try {
+        r0 = delete Object.prototype;
+      } catch (e) {
+        r0 = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText = "delete Object.prototype -> " + String(r0);
+    </script>
+  </body>
+</html>
