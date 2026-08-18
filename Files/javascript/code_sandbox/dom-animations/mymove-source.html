@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Full animation — myMove() diagonal slide source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>&lt;button type=&quot;button&quot; onclick=&quot;myMove()&quot;&gt;Move&lt;/button&gt;
+&lt;div id=&quot;container&quot;&gt;&lt;div id=&quot;animate&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script&gt;
+function myMove() {
+  let id = null;
+  const elem = document.getElementById(&quot;animate&quot;);
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + &quot;px&quot;;
+      elem.style.left = pos + &quot;px&quot;;
+    }
+  }
+}
+&lt;/script&gt;</pre>
+  </body>
+</html>

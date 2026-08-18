@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Full animation — myMove() diagonal slide</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+#container { width: 400px; height: 200px; position: relative; background: yellow; }
+#animate { width: 50px; height: 50px; position: absolute; background: red; }
+
+    </style>
+  </head>
+  <body>
+    <button type="button" id="go">Move</button><div id="container"><div id="animate"></div></div>
+    <pre id="demo"></pre>
+    <script>
+      function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+            document.getElementById("demo").innerText =
+              "top=" + elem.style.top + " left=" + elem.style.left;
+          } else {
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
+            if (pos === 120) {
+              document.getElementById("demo").innerText =
+                "moving top=" + elem.style.top + " left=" + elem.style.left;
+            }
+          }
+        }
+      }
+      myMove();
+    </script>
+  </body>
+</html>

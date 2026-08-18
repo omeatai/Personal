@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Animation code — setInterval and clearInterval</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Timer skeleton</p>
+    <pre id="demo"></pre>
+    <script>
+      let n = 0;
+      let id = setInterval(frame, 5);
+      function frame() {
+        n++;
+        if (n >= 3) {
+          clearInterval(id);
+          document.getElementById("demo").innerText = "stopped at n=" + n;
+        }
+      }
+    </script>
+  </body>
+</html>
