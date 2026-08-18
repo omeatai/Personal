@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>const TDZ — ReferenceError before declare</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>const TDZ — ReferenceError before declare</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let early;
+      try {
+        early = x;
+      } catch (e) {
+        early = e.name + ": " + e.message;
+      }
+      const x = 5;
+      document.getElementById("demo").innerText =
+        "before const x -> " + early + "\n" +
+        "after const x -> " + x;
+    </script>
+  </body>
+</html>

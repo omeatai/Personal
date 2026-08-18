@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Table demo: var leaks, let does not</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Table demo: var leaks, let does not</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      if (true) {
+        var firstName = "John";
+        let lastName = "Doe";
+      }
+      let text1 = text2 = "unknown";
+      if (typeof firstName !== "undefined") text1 = firstName;
+      if (typeof lastName !== "undefined") text2 = lastName;
+      document.getElementById("demo").innerText = "text1 -> " + String(text1) + "\n" + "text2 -> " + String(text2) + "\n" + "typeof firstName -> " + String(typeof firstName) + "\n" + "typeof lastName -> " + String(typeof lastName);
+    </script>
+  </body>
+</html>

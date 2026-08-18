@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>let redeclare same scope — SyntaxError</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>let redeclare same scope — SyntaxError</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let msg;
+      try {
+        new Function("let x = 1; let x = 2;")();
+        msg = "ran without error";
+      } catch (e) {
+        msg = e.name + ": " + e.message;
+      }
+      document.getElementById("demo").innerText =
+        msg + "\n" + "(caught via new Function; a raw <script> would fail to parse)";
+    </script>
+  </body>
+</html>
