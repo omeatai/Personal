@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Input validation — throw empty / not a number / too low / too high source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>function myFunction(x) {
+  const message = { innerHTML: &quot;&quot; };
+  try {
+    if (x.trim() == &quot;&quot;) throw &quot;empty&quot;;
+    if (isNaN(x)) throw &quot;not a number&quot;;
+    x = Number(x);
+    if (x &lt; 5) throw &quot;too low&quot;;
+    if (x &gt; 10) throw &quot;too high&quot;;
+  } catch (err) {
+    message.innerHTML = &quot;Input is &quot; + err;
+  }
+  return message.innerHTML;
+}</pre>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML validation — input type=number min=5 max=10</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>HTML validation — input type=number min=5 max=10</h2>
+    <p>Native HTML constraint validation (not a JS throw):</p>
+    <pre id="demo"></pre>
+    
+    <script>
+      function check(v) {
+        const el = document.createElement("input");
+        el.type = "number";
+        el.min = "5";
+        el.max = "10";
+        el.step = "1";
+        el.value = v;
+        return "value=" + v +
+          " checkValidity=" + el.checkValidity() +
+          " validity.rangeUnderflow=" + el.validity.rangeUnderflow +
+          " validity.rangeOverflow=" + el.validity.rangeOverflow;
+      }
+      document.getElementById("demo").innerText =
+        check("3") + "\n" + check("7") + "\n" + check("11");
+    </script>
+  </body>
+</html>

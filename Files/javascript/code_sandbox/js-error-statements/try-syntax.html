@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>try block — code that might throw</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>try block — code that might throw</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x;
+      let caught = false;
+      try {
+        x = 1 + 1;
+      } catch (error) {
+        caught = true;
+      }
+      document.getElementById("demo").innerText =
+        "x -> " + x + "\n" +
+        "catch ran -> " + caught;
+    </script>
+  </body>
+</html>

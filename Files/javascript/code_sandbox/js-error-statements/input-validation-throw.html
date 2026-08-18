@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Input validation — throw empty / not a number / too low / too high</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Input validation — throw empty / not a number / too low / too high</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function myFunction(raw) {
+        const message = { innerHTML: "" };
+        let x = raw;
+        try {
+          if (x.trim() == "") throw "empty";
+          if (isNaN(x)) throw "not a number";
+          x = Number(x);
+          if (x < 5) throw "too low";
+          if (x > 10) throw "too high";
+        } catch (err) {
+          message.innerHTML = "Input is " + err;
+        }
+        return message.innerHTML === "" ? "(blank — valid)" : message.innerHTML;
+      }
+      const samples = ["", "hello", "3", "12", "7"];
+      document.getElementById("demo").innerText = samples.map(function (s) {
+        return JSON.stringify(s) + " -> " + myFunction(s);
+      }).join("\n");
+    </script>
+  </body>
+</html>

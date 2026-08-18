@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>finally example — always clears the input</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>finally example — always clears the input</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      function run(raw) {
+        let msg = "";
+        let field = raw;
+        try {
+          let x = field;
+          if (x.trim() == "") throw "is empty";
+          if (isNaN(x)) throw "is not a number";
+          x = Number(x);
+          if (x > 10) throw "is too high";
+          if (x < 5) throw "is too low";
+        } catch (err) {
+          msg = "Input " + err;
+        } finally {
+          field = "";
+        }
+        return JSON.stringify(raw) + " -> message=" +
+          (msg === "" ? "(blank)" : msg) +
+          " fieldAfter=" + JSON.stringify(field);
+      }
+      document.getElementById("demo").innerText =
+        run("") + "\n" +
+        run("hello") + "\n" +
+        run("3") + "\n" +
+        run("12") + "\n" +
+        run("7");
+    </script>
+  </body>
+</html>

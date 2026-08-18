@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>finally — always runs, error or not</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>finally — always runs, error or not</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let ok = [];
+      try {
+        ok.push("try");
+      } catch (error) {
+        ok.push("catch");
+      } finally {
+        ok.push("finally");
+      }
+      let bad = [];
+      try {
+        missingFinallyDemo();
+        bad.push("try-after");
+      } catch (error) {
+        bad.push("catch:" + error.name);
+      } finally {
+        bad.push("finally");
+      }
+      document.getElementById("demo").innerText =
+        "no error -> " + ok.join(" | ") + "\n" +
+        "with error -> " + bad.join(" | ");
+    </script>
+  </body>
+</html>
