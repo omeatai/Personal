@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`do while` i < 10</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`do while` i &lt; 10</h2>
+    <pre id="demo"></pre>
+    <script>
+      function collect(start) {
+        let i = start;
+        let text = "";
+        do {
+          text += "The number is " + i + "\n";
+          i++;
+        } while (i < 10);
+        return text.trim();
+      }
+      document.getElementById("demo").innerText =
+        "start 0:\n" + collect(0) + "\n\n" +
+        "start 10 (still runs once):\n" + collect(10);
+    </script>
+  </body>
+</html>

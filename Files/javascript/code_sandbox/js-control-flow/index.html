@@ -1,44 +1,20 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <meta name="color-scheme" content="light" />
     <title>JS Control Flow</title>
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript Control Flow</h2>
-    <p id="out"></p>
-    <script>
-      let x = 5;
-      let y = 6;
-      let z = x + y;
-      let age = 18;
-      let who = age >= 18 ? "Adult" : "Minor";
-      let nums = "";
-      for (let i = 0; i < 5; i++) {
-        nums += i + " ";
-      }
-      let jumped = "";
-      for (let i = 0; i < 10; i++) {
-        if (i === 3) {
-          break;
-        }
-        jumped += i + " ";
-      }
-      function myFunction(p1, p2) {
-        return p1 * p2;
-      }
-      document.getElementById("out").innerHTML =
-        "sequential z = " +
-        z +
-        "<br>age 18 -> " +
-        who +
-        "<br>for 0..4 -> " +
-        nums.trim() +
-        "<br>break at 3 -> " +
-        jumped.trim() +
-        "<br>myFunction(4, 3) -> " +
-        myFunction(4, 3);
-    </script>
+    <h2>JS Control Flow</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="sequential.html">01 — Default sequential flow</a></li>
+      <li><a href="conditional.html">02 — Conditional `if` / `else` (age 20 Adult)</a></li>
+      <li><a href="for-loop.html">03 — `for` loop i &lt; 5</a></li>
+      <li><a href="break.html">04 — `break` when i === 3</a></li>
+      <li><a href="function.html">05 — Function `myFunction(p1, p2)` returns p1 * p2</a></li>
+    </ul>
   </body>
 </html>

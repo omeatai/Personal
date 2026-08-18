@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Logical AND instead of nested `if`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Logical AND instead of nested `if`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let age = 16;
+      let country = "USA";
+      let text = "You can Not drive!";
+      if (country == "USA" && age >= 16) {
+        text = "You can drive!";
+      }
+      document.getElementById("demo").innerText =
+        "country -> " + country + "\n" +
+        "age -> " + age + "\n" +
+        'country == "USA" && age >= 16 -> ' + (country == "USA" && age >= 16) + "\n" +
+        "text -> " + text;
+    </script>
+  </body>
+</html>

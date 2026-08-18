@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML templates</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>HTML templates</h2>
+    <pre id="demo"></pre>
+    <script>
+      let header = "Template Strings";
+      let tags = ["template strings", "javascript", "es6"];
+      let html = `<h2>${header}</h2><ul>`;
+      for (const x of tags) {
+        html += `<li>${x}</li>`;
+      }
+      html += `</ul>`;
+      document.getElementById("demo").innerText = "html -> " + html;
+    </script>
+  </body>
+</html>

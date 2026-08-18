@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`continue loop1`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`continue loop1`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "";
+      loop1: for (let j = 1; j < 5; j++) {
+        loop2: for (let i = 1; i < 5; i++) {
+          if (i === 3) {
+            continue loop1;
+          }
+          text += i;
+        }
+      }
+      document.getElementById("demo").innerText = "text -> " + text;
+    </script>
+  </body>
+</html>

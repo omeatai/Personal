@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`replaceAll("Cats")`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`replaceAll(&quot;Cats&quot;)`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+      text = text.replaceAll("Cats", "Dogs");
+      text = text.replaceAll("cats", "dogs");
+      document.getElementById("demo").innerText = "replaceAll -> " + text;
+    </script>
+  </body>
+</html>

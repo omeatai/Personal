@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Expression substitution</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Expression substitution</h2>
+    <pre id="demo"></pre>
+    <script>
+      let price = 10;
+      let VAT = 0.25;
+      let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+      document.getElementById("demo").innerText = "total -> " + total;
+    </script>
+  </body>
+</html>

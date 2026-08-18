@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML templates source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>let header = &quot;Template Strings&quot;;
+let tags = [&quot;template strings&quot;, &quot;javascript&quot;, &quot;es6&quot;];
+let html = `&lt;h2&gt;${header}&lt;/h2&gt;&lt;ul&gt;`;
+for (const x of tags) {
+  html += `&lt;li&gt;${x}&lt;/li&gt;`;
+}
+html += `&lt;/ul&gt;`;</pre>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`lastIndexOf()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`lastIndexOf()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "Please locate where 'locate' occurs!";
+      document.getElementById("demo").innerText =
+        'lastIndexOf("locate")     -> ' + text.lastIndexOf("locate") + "\n" +
+        'lastIndexOf("locate", 15) -> ' + text.lastIndexOf("locate", 15) + "\n" +
+        'lastIndexOf("John")       -> ' + text.lastIndexOf("John");
+    </script>
+  </body>
+</html>

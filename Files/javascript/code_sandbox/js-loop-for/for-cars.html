@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`for` collect car names</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`for` collect car names</h2>
+    <pre id="demo"></pre>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let len = cars.length;
+      let text = "";
+      for (let i = 0; i < len; i++) {
+        text += cars[i];
+      }
+      document.getElementById("demo").innerText =
+        "len -> " + len + "\n" +
+        "text -> " + text;
+    </script>
+  </body>
+</html>

@@ -1,46 +1,18 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <meta name="color-scheme" content="light" />
     <title>JS Continue</title>
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript Continue</h2>
-    <p id="out"></p>
-    <script>
-      let text = "";
-      for (let i = 1; i < 10; i++) {
-        if (i === 3) {
-          continue;
-        }
-        text += i + " ";
-      }
-      let t1 = "";
-      loop1: for (let j = 1; j < 5; j++) {
-        loop2: for (let i = 1; i < 5; i++) {
-          if (i === 3) {
-            continue loop1;
-          }
-          t1 += i;
-        }
-      }
-      let t2 = "";
-      loop1b: for (let j = 1; j < 5; j++) {
-        loop2b: for (let i = 1; i < 5; i++) {
-          if (i === 3) {
-            continue loop2b;
-          }
-          t2 += i;
-        }
-      }
-      document.getElementById("out").innerHTML =
-        "skip 3 -> " +
-        text.trim() +
-        "<br>continue loop1 -> " +
-        t1 +
-        "<br>continue loop2 -> " +
-        t2;
-    </script>
+    <h2>JS Continue</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="continue-for.html">01 — `continue` skips i === 3 in a for loop</a></li>
+      <li><a href="continue-loop1.html">02 — `continue loop1`</a></li>
+      <li><a href="continue-loop2.html">03 — `continue loop2`</a></li>
+    </ul>
   </body>
 </html>

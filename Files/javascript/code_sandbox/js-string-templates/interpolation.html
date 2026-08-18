@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Variable interpolation</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Variable interpolation</h2>
+    <pre id="demo"></pre>
+    <script>
+      let firstName = "John";
+      let lastName = "Doe";
+      let text = `Welcome ${firstName}, ${lastName}!`;
+      document.getElementById("demo").innerText = "text -> " + text;
+    </script>
+  </body>
+</html>

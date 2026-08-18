@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`padEnd` on a number via `toString()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`padEnd` on a number via `toString()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let numb = 5;
+      let text = numb.toString();
+      document.getElementById("demo").innerText =
+        "toString then padEnd(4, \"0\") -> " + text.padEnd(4, "0");
+    </script>
+  </body>
+</html>

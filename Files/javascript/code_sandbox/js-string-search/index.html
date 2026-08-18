@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript String Search</h2>
-    <p id="out"></p>
-    <script>
-      let text = "Please locate where 'locate' occurs!";
-      let rain = "The rain in SPAIN stays mainly in the plain";
-      let hello = "Hello world, welcome to the universe.";
-      document.getElementById("out").innerHTML =
-        "indexOf(locate) = " +
-        text.indexOf("locate") +
-        "<br>lastIndexOf(locate) = " +
-        text.lastIndexOf("locate") +
-        "<br>search(/locate/) = " +
-        text.search(/locate/) +
-        "<br>match(/ain/gi) = " +
-        rain.match(/ain/gi).join(", ") +
-        "<br>includes('world') = " +
-        hello.includes("world") +
-        "<br>startsWith('Hello') = " +
-        hello.startsWith("Hello") +
-        "<br>endsWith('Doe') = " +
-        "John Doe".endsWith("Doe");
-    </script>
+    <h2>JS String Search</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="indexOf.html">01 — `indexOf(&quot;locate&quot;)`</a></li>
+      <li><a href="lastIndexOf.html">02 — `lastIndexOf(&quot;locate&quot;)`</a></li>
+      <li><a href="lastIndexOf-missing.html">03 — `lastIndexOf(&quot;John&quot;)` is -1</a></li>
+      <li><a href="indexOf-start.html">04 — `indexOf(&quot;locate&quot;, 15)`</a></li>
+      <li><a href="lastIndexOf-start.html">05 — `lastIndexOf(&quot;locate&quot;, 15)`</a></li>
+      <li><a href="search-string.html">06 — `search(&quot;locate&quot;)`</a></li>
+      <li><a href="search-regex.html">07 — `search(/locate/)`</a></li>
+      <li><a href="match-string.html">08 — `match(&quot;ain&quot;)`</a></li>
+      <li><a href="match-regex.html">09 — `match(/ain/)`</a></li>
+      <li><a href="match-g.html">10 — `match(/ain/g)`</a></li>
+      <li><a href="match-gi.html">11 — `match(/ain/gi)`</a></li>
+      <li><a href="matchAll-string.html">12 — `matchAll(&quot;Cats&quot;)`</a></li>
+      <li><a href="matchAll-g.html">13 — `matchAll(/Cats/g)`</a></li>
+      <li><a href="matchAll-gi.html">14 — `matchAll(/Cats/gi)`</a></li>
+      <li><a href="includes.html">15 — `includes(&quot;world&quot;)`</a></li>
+      <li><a href="includes-start.html">16 — `includes(&quot;world&quot;, 12)`</a></li>
+      <li><a href="startsWith-hello.html">17 — `startsWith(&quot;Hello&quot;)`</a></li>
+      <li><a href="startsWith-world.html">18 — `startsWith(&quot;world&quot;)`</a></li>
+      <li><a href="startsWith-world-5.html">19 — `startsWith(&quot;world&quot;, 5)`</a></li>
+      <li><a href="startsWith-world-6.html">20 — `startsWith(&quot;world&quot;, 6)`</a></li>
+      <li><a href="endsWith-doe.html">21 — `endsWith(&quot;Doe&quot;)`</a></li>
+      <li><a href="endsWith-world-11.html">22 — `endsWith(&quot;world&quot;, 11)`</a></li>
+    </ul>
   </body>
 </html>

@@ -3413,28 +3413,50 @@ Comparisons always return booleans. **`==` / `!=` coerce types**; **`===` / `!==
 
 ## Introduction
 
-**Conditional statements** run different code for different **true/false** conditions. This overview covers **`if`**, **`else`**, **`else if`**, **`switch`**, and the **ternary** `? :`.
+Conditional statements run **different code** for different **true/false** conditions. This overview names **`if`**, **`else`**, **`else if`**, **`switch`**, and the **ternary** `? :`. The W3Schools page is mostly syntax; each named construct still has its own runnable Example below, with hours and weekday numbers **pinned** so the snaps are stable.
 
 ## Detailed Explanation
 
-- [x] **When to use them**
-  - Perform **different actions** for different conditions.
-- [x] **`if`**
-  - Run a block if a condition is **true**: `if (condition) { ... }`
-- [x] **`else`**
-  - Run a block if the same condition is **false**.
-- [x] **`else if`**
-  - Test a **new** condition if the first was false.
-- [x] **`switch`**
-  - Many alternative blocks: `switch(expression) { case x: ... break; default: ... }`
-- [x] **Ternary `? :`**
-  - Shorthand for if/else: `condition ? expression1 : expression2`
+- [x] **Core idea** — pick a branch from a Boolean test instead of running every line in order.
+- [x] **`if` / `else` / `else if`** — one test, the opposite branch, then extra tests. Only the **first true** branch runs.
+- [x] **`switch`** — many alternative blocks from **one** expression. Put **`break`** after each `case` (include **`default`**).
+- [x] **Ternary `? :`** — shorthand `if` / `else` that **returns** a value: `condition ? a : b`.
 
-Sandbox: `code_sandbox/js-conditional/index.html`
+### **Example 1: The `if` statement**
 
-<img alt="js-conditional source" src="./code_sandbox/snaps/js-conditional-code.png" />
+- [x] **`if (condition) { ... }`** runs the block only when the condition is **true**.
+- [x] This page is mostly syntax. The sandbox pins **`hour = 10`** so the snap is stable (the live Tryit often uses `new Date().getHours()`).
+- [x] Because **10 < 18**, the block runs and `greeting` becomes **Good day**.
+- [x] If the condition is false, `if` does **nothing** — that is why **`else`** exists (next Example).
+
+Sandbox: `code_sandbox/js-conditional/if.html`
 
 ```javascript
+let hour = 10;
+let greeting;
+if (hour < 18) {
+  greeting = "Good day";
+}
+```
+
+<img alt="js-conditional example 1 source" src="./code_sandbox/snaps/js-conditional-01-code.png" />
+
+<img alt="js-conditional example 1 result" src="./code_sandbox/snaps/js-conditional-01-result.png" />
+
+- [x] **Outcome:** With **hour = 10**, `hour < 18` is **true**, so greeting is **Good day**.
+
+
+### **Example 2: The `else` statement**
+
+- [x] **`else`** runs when the matching **`if`** condition is **false**.
+- [x] Pin **`hour = 20`**. **20 < 18** is false, so the `if` block is skipped and `else` assigns **Good evening**.
+- [x] One `if` / `else` pair tests **one** condition. Use **`else if`** when you have a **new** test (next Example).
+
+Sandbox: `code_sandbox/js-conditional/else.html`
+
+```javascript
+let hour = 20;
+let greeting;
 if (hour < 18) {
   greeting = "Good day";
 } else {
@@ -3442,9 +3464,91 @@ if (hour < 18) {
 }
 ```
 
-Rendered result:
+<img alt="js-conditional example 2 source" src="./code_sandbox/snaps/js-conditional-02-code.png" />
 
-<img alt="js-conditional result" src="./code_sandbox/snaps/js-conditional-result.png" />
+<img alt="js-conditional example 2 result" src="./code_sandbox/snaps/js-conditional-02-result.png" />
+
+- [x] **Outcome:** With **hour = 20**, `hour < 18` is **false**, so the `else` branch runs and greeting is **Good evening**.
+
+
+### **Example 3: The `else if` statement**
+
+- [x] **`else if`** tests a **new** condition only if every earlier test was **false**.
+- [x] Chain: `hour < 10` → **Good morning**; else `hour < 18` → **Good day**; else → **Good evening**.
+- [x] Pin **`hour = 8`**. **8 < 10** is true, so the first block runs and later branches are **skipped**.
+- [x] Same chain with **hour = 12** would be **Good day**; **hour = 20** would be **Good evening**. Only the **first matching** branch runs.
+
+Sandbox: `code_sandbox/js-conditional/else-if.html`
+
+```javascript
+let hour = 8;
+let greeting;
+if (hour < 10) {
+  greeting = "Good morning";
+} else if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+```
+
+<img alt="js-conditional example 3 source" src="./code_sandbox/snaps/js-conditional-03-code.png" />
+
+<img alt="js-conditional example 3 result" src="./code_sandbox/snaps/js-conditional-03-result.png" />
+
+- [x] **Outcome:** With **hour = 8**, the first test `hour < 10` is **true**, so greeting is **Good morning**. The `else if` and `else` blocks do not run.
+
+
+### **Example 4: The `switch` statement**
+
+- [x] **`switch (expression)`** picks a **`case`** that **strictly matches** (`===`) the expression.
+- [x] Use **`break`** after each case so execution does **not fall through** into the next case.
+- [x] **`default`** runs when no case matches (for example an unexpected day number).
+- [x] The live page uses `new Date().getDay()`. The sandbox pins **`dayNum = 3`** (Wednesday) so the snap always matches.
+
+Sandbox: `code_sandbox/js-conditional/switch.html`
+
+```javascript
+let dayNum = 3;
+let day;
+switch (dayNum) {
+  case 0: day = "Sunday"; break;
+  case 1: day = "Monday"; break;
+  case 2: day = "Tuesday"; break;
+  case 3: day = "Wednesday"; break;
+  case 4: day = "Thursday"; break;
+  case 5: day = "Friday"; break;
+  case 6: day = "Saturday"; break;
+  default: day = "Unknown";
+}
+```
+
+<img alt="js-conditional example 4 source" src="./code_sandbox/snaps/js-conditional-04-code.png" />
+
+<img alt="js-conditional example 4 result" src="./code_sandbox/snaps/js-conditional-04-result.png" />
+
+- [x] **Outcome:** With **dayNum = 3**, `case 3` matches, `break` exits the switch, and day is **Wednesday**.
+
+
+### **Example 5: The ternary operator (`? :`)**
+
+- [x] **`condition ? exprIfTrue : exprIfFalse`** is a one-line **`if` / `else`** that **returns a value**.
+- [x] `(hour < 18) ? "Good day" : "Good evening"` assigns the greeting in one expression.
+- [x] The sandbox prints **hour = 10** (true branch) and **hour = 20** (false branch) so you can see both sides.
+- [x] Keep ternaries **short**. A long chain is usually clearer as `if` / `else if`.
+
+Sandbox: `code_sandbox/js-conditional/ternary.html`
+
+```javascript
+let hour = 10;
+let greeting = (hour < 18) ? "Good day" : "Good evening";
+```
+
+<img alt="js-conditional example 5 source" src="./code_sandbox/snaps/js-conditional-05-code.png" />
+
+<img alt="js-conditional example 5 result" src="./code_sandbox/snaps/js-conditional-05-result.png" />
+
+- [x] **Outcome:** **hour 10** → **Good day** (condition true). **hour 20** → **Good evening** (condition false).
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3465,39 +3569,102 @@ Then open `http://127.0.0.1:8770/js-conditional/`.
 
 ## Questions and Answers
 
-### Question 1: What does `if` do?
+### Question 1: With `hour = 10`, what does the `if (hour < 18)` example assign to `greeting`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Runs a block if the condition is **true**.
+- [x] **Good day**.
+- [x] `10 < 18` is **true**, so the `if` block runs.
 
 </details>
 
-### Question 2: When do you use `else if`?
+### Question 2: With `hour = 20`, which branch of `if` / `else` runs?
 
 <details>
 <summary>Answer</summary>
 
-- [x] To test a **new** condition after the first was **false**.
+- [x] The **`else`** branch.
+- [x] `20 < 18` is **false**, so greeting is **Good evening**.
 
 </details>
 
-### Question 3: What is `? :`?
+### Question 3: In the `else if` chain, what is `greeting` when `hour = 8`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] The **ternary** operator, shorthand for if/else: `condition ? expression1 : expression2`.
+- [x] **Good morning**.
+- [x] `hour < 10` is true first, so later branches are skipped.
 
 </details>
 
-### Question 4: When is `switch` useful?
+### Question 4: In that same `else if` chain, what would `hour = 12` and `hour = 20` produce?
 
 <details>
 <summary>Answer</summary>
 
-- [x] When you need **many alternative** code blocks.
+- [x] **12** → **Good day** (`hour < 10` is false, `hour < 18` is true).
+- [x] **20** → **Good evening** (both tests false).
+
+</details>
+
+### Question 5: What does the `switch` print when `dayNum = 3`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Wednesday**.
+- [x] `case 3` matches and **`break`** stops further cases.
+
+</details>
+
+### Question 6: Why does each `switch` case end with `break`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Without `break`, execution **falls through** into the next case (and maybe `default`).
+- [x] `break` **exits** the switch after the matching case.
+
+</details>
+
+### Question 7: What does `(hour < 18) ? "Good day" : "Good evening"` return for hour 10 and hour 20?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **10** → **Good day**.
+- [x] **20** → **Good evening**.
+
+</details>
+
+### Question 8: When is `switch` a better fit than a long `if` / `else if` chain?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When you choose among **many alternative blocks** from **one** expression (like a weekday number).
+
+</details>
+
+### Question 9: Does `if` run any code when its condition is false and there is no `else`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** The `if` block is skipped.
+- [x] That is why Example 1 with a false hour would leave `greeting` **undefined** unless you add `else`.
+
+</details>
+
+### Question 10: Does `else if` test its condition even when an earlier `if` was already true?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Only the **first matching** branch runs.
+- [x] With `hour = 8`, `hour < 18` is never tested.
 
 </details>
 
@@ -3505,7 +3672,7 @@ Then open `http://127.0.0.1:8770/js-conditional/`.
 
 ## Summary
 
-Conditionals choose code from a true/false test: **`if`**, **`else`**, **`else if`**, **`switch`**, or ternary **`? :`**. Later chapters cover each in more detail.
+Conditionals choose a branch: **`if`** (`hour = 10` → **Good day**), **`else`** (`hour = 20` → **Good evening**), **`else if`** (`hour = 8` → **Good morning**), **`switch`** (`dayNum = 3` → **Wednesday**, with `break` / `default`), and ternary **`? :`** (10 → **Good day**, 20 → **Good evening**). Later chapters go deeper on each form.
 
 ## References
 
@@ -3521,35 +3688,134 @@ Conditionals choose code from a true/false test: **`if`**, **`else`**, **`else i
 
 ## Introduction
 
-The **`if`** statement runs a block when a condition is **true**. Write **`if` in lowercase** — `If` or `IF` is a JavaScript **error**. Nested `if` works, but **`&&`** is often clearer.
+The **`if`** statement runs a block when a condition is **true**. Write **`if` in lowercase** — `If` or `IF` is a JavaScript **error**. This page walks a greeting, two driving ages, a **nested** country/age check, and the same check flattened with **`&&`**.
 
 ## Detailed Explanation
 
-- [x] **Syntax**
-  - `if (condition) { // code if true }`
-  - **`if` must be lowercase.**
-- [x] **Greeting example**
-  - `if (hour < 18) { greeting = "Good day"; }`
-- [x] **Driving example**
-  - If `age >= 18`, set text to **"You can drive"**.
-- [x] **Nested `if`**
-  - You can put an `if` inside another `if` (country then age).
-  - Nested `if` can make code **more complex**.
-  - A better solution is the logical **AND** operator: `if (country == "USA" && age >= 16)`.
+- [x] **`if` must be lowercase** — `If` / `IF` are not the keyword and throw an error.
+- [x] **Default then overwrite** — start with a fallback string; the `if` block replaces it only when the test is true.
+- [x] **Nested `if` works** but gets busy; **`country == "USA" && age >= 16`** is the usual replacement.
 
-Sandbox: `code_sandbox/js-if-conditions/index.html`
+### **Example 1: `if` hour < 18 greeting**
 
-<img alt="js-if-conditions source" src="./code_sandbox/snaps/js-if-conditions-code.png" />
+- [x] Write **`if` in lowercase**. **`If`** or **`IF`** is a JavaScript **error** (it is not the `if` keyword).
+- [x] Syntax: `if (condition) { // code if true }`.
+- [x] Pin **`hour = 10`**. **10 < 18** is true, so `greeting` becomes **Good day**.
+- [x] The live Tryit often uses `new Date().getHours()`. Pinning the hour keeps the snap deterministic.
+
+Sandbox: `code_sandbox/js-if-conditions/if-hour.html`
 
 ```javascript
-if (new Date().getHours() < 18) {
-  document.getElementById("demo").innerHTML = "Good day!";
+let hour = 10;
+let greeting;
+if (hour < 18) {
+  greeting = "Good day";
 }
 ```
 
-Rendered result:
+<img alt="js-if-conditions example 1 source" src="./code_sandbox/snaps/js-if-conditions-01-code.png" />
 
-<img alt="js-if-conditions result" src="./code_sandbox/snaps/js-if-conditions-result.png" />
+<img alt="js-if-conditions example 1 result" src="./code_sandbox/snaps/js-if-conditions-01-result.png" />
+
+- [x] **Outcome:** **hour = 10** makes `hour < 18` **true**, so greeting is **Good day**.
+
+
+### **Example 2: Age 18 can drive**
+
+- [x] Start with a **default** string, then **overwrite** it inside `if` when the test is true.
+- [x] `let text = "You can Not drive"` then `if (age >= 18) { text = "You can drive"; }`.
+- [x] Pin **`age = 18`**. **18 >= 18** is true, so the block runs.
+
+Sandbox: `code_sandbox/js-if-conditions/age-18-drive.html`
+
+```javascript
+let age = 18;
+let text = "You can Not drive";
+if (age >= 18) {
+  text = "You can drive";
+}
+```
+
+<img alt="js-if-conditions example 2 source" src="./code_sandbox/snaps/js-if-conditions-02-code.png" />
+
+<img alt="js-if-conditions example 2 result" src="./code_sandbox/snaps/js-if-conditions-02-result.png" />
+
+- [x] **Outcome:** With **age = 18**, the `if` runs and text is **You can drive**.
+
+
+### **Example 3: Age 16 cannot drive**
+
+- [x] Same code as the previous Example, but **`age = 16`**.
+- [x] **16 >= 18** is **false**, so the `if` block is **skipped**.
+- [x] The default **You can Not drive** stays. (W3Schools capitalizes **Not** that way.)
+
+Sandbox: `code_sandbox/js-if-conditions/age-16-no-drive.html`
+
+```javascript
+let age = 16;
+let text = "You can Not drive";
+if (age >= 18) {
+  text = "You can drive";
+}
+```
+
+<img alt="js-if-conditions example 3 source" src="./code_sandbox/snaps/js-if-conditions-03-code.png" />
+
+<img alt="js-if-conditions example 3 result" src="./code_sandbox/snaps/js-if-conditions-03-result.png" />
+
+- [x] **Outcome:** With **age = 16**, the `if` does not run, so text stays **You can Not drive**.
+
+
+### **Example 4: Nested `if` (USA, age 16)**
+
+- [x] You can put an **`if` inside another `if`**. The inner test runs only if the outer test is true.
+- [x] Here: outer checks **`country == "USA"`**, inner checks **`age >= 16`**.
+- [x] With **country = USA** and **age = 16**, both tests pass, so text becomes **You can drive!**.
+- [x] Nested `if` works, but it can make code **harder to read**. The next Example flattens this with **`&&`**.
+
+Sandbox: `code_sandbox/js-if-conditions/nested-if.html`
+
+```javascript
+let age = 16;
+let country = "USA";
+let text = "You can Not drive!";
+if (country == "USA") {
+  if (age >= 16) {
+    text = "You can drive!";
+  }
+}
+```
+
+<img alt="js-if-conditions example 4 source" src="./code_sandbox/snaps/js-if-conditions-04-code.png" />
+
+<img alt="js-if-conditions example 4 result" src="./code_sandbox/snaps/js-if-conditions-04-result.png" />
+
+- [x] **Outcome:** **USA** and **age 16** both pass, so nested `if` sets text to **You can drive!**.
+
+
+### **Example 5: Logical AND instead of nested `if`**
+
+- [x] A **better** (flatter) form of the nested test: `if (country == "USA" && age >= 16)`.
+- [x] **`&&`** is true only when **both** sides are true. If country is not USA, `age` is not even required for the combined condition to fail.
+- [x] Same inputs (**USA**, **16**) produce the same result: **You can drive!**.
+- [x] Prefer **`&&`** for two required checks unless you truly need different inner/outer side effects.
+
+Sandbox: `code_sandbox/js-if-conditions/logical-and.html`
+
+```javascript
+let age = 16;
+let country = "USA";
+let text = "You can Not drive!";
+if (country == "USA" && age >= 16) {
+  text = "You can drive!";
+}
+```
+
+<img alt="js-if-conditions example 5 source" src="./code_sandbox/snaps/js-if-conditions-05-code.png" />
+
+<img alt="js-if-conditions example 5 result" src="./code_sandbox/snaps/js-if-conditions-05-result.png" />
+
+- [x] **Outcome:** **`&&`** is true for **USA** and **age 16**, so text is **You can drive!** — same outcome as the nested `if`, with one condition.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3570,30 +3836,101 @@ Then open `http://127.0.0.1:8770/js-if-conditions/`.
 
 ## Questions and Answers
 
-### Question 1: Must `if` be lowercase?
+### Question 1: Must `if` be written in lowercase?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **Yes.** `If` or `IF` causes a JavaScript **error**.
+- [x] **Yes.** `If` or `IF` is **not** the `if` keyword and causes a JavaScript **error**.
 
 </details>
 
-### Question 2: When does the `if` block run?
+### Question 2: With `hour = 10`, what is `greeting` after `if (hour < 18)`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] When the condition is **true**.
+- [x] **Good day**.
+- [x] `10 < 18` is **true**.
 
 </details>
 
-### Question 3: How can you avoid nested `if` for two checks?
+### Question 3: With `age = 18`, what is `text` after the driving `if`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Use logical **AND**: `if (country == "USA" && age >= 16)`.
+- [x] **You can drive**.
+- [x] The default **You can Not drive** is overwritten because `18 >= 18`.
+
+</details>
+
+### Question 4: With `age = 16`, what is `text` after the same driving `if`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **You can Not drive**.
+- [x] `16 >= 18` is **false**, so the block is skipped.
+
+</details>
+
+### Question 5: What is the starting value of `text` before those driving `if`s run?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **You can Not drive** (no exclamation on the simple age examples).
+- [x] The nested / `&&` examples start with **You can Not drive!**.
+
+</details>
+
+### Question 6: Nested `if` with `country = "USA"` and `age = 16`: what is `text`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **You can drive!**.
+- [x] The outer country test is true, then the inner age test is true.
+
+</details>
+
+### Question 7: How do you write that nested check as one condition?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `if (country == "USA" && age >= 16)`
+- [x] The sandbox result is still **You can drive!**.
+
+</details>
+
+### Question 8: If `country` were not `"USA"`, would the nested inner `if` run?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** The inner `if` only runs when the **outer** condition is true.
+- [x] With `&&`, the whole condition is false if country is wrong.
+
+</details>
+
+### Question 9: Does `if` without `else` leave the default string in place when the test is false?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** That is why age 16 still reads **You can Not drive**.
+
+</details>
+
+### Question 10: Why prefer `&&` over nested `if` for two required checks?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Nested `if` can make the code **more complex**.
+- [x] One combined condition is easier to read when both tests must pass.
 
 </details>
 
@@ -3601,7 +3938,7 @@ Then open `http://127.0.0.1:8770/js-if-conditions/`.
 
 ## Summary
 
-**`if`** (lowercase only) runs a block when a condition is true. You can nest `if`s, but combining conditions with **`&&`** is often simpler. `else` / `else if` are covered in the surrounding conditional chapters.
+`if` (lowercase only) runs a block when a condition is true. **hour 10** → **Good day**. **age 18** → **You can drive**; **age 16** → **You can Not drive**. Nested **USA / age 16** and **`&&`** both yield **You can drive!**. `else` / `else if` are covered in the surrounding conditional chapters.
 
 ## References
 
@@ -3616,41 +3953,154 @@ Then open `http://127.0.0.1:8770/js-if-conditions/`.
 
 ## Introduction
 
-**Loops** run a block **many times**, usually with a **different value** each pass. They replace copy-paste when you walk an **array** (or any repeating work). This overview covers **`for`**, **`while`**, **`do while`**, and **loop scope** with `let`.
+**Loops** run a block **many times**, usually with a **different value** each pass. They replace copy-paste when you walk an **array**. This overview covers **`for`**, **loop scope** with `let`, **`while`**, and **`do while`**.
 
 ## Detailed Explanation
 
-- [x] **Why loops**
-  - Same code, over and over, each time with a different value.
-  - Typical with **arrays**: instead of `text += cars[0]` … `cars[5]`, use `for (let i = 0; i < cars.length; i++)`.
-- [x] **`for`**
-  - `for (expr1; expr2; expr3) { … }`
-  - **expr1** runs **once** before the block (`let i = 0`).
-  - **expr2** is the **condition** (`i < 5`).
-  - **expr3** runs **after each** iteration (`i++`).
-- [x] **Loop scope**
-  - `let` / `const` declared **inside** the loop are visible **only** in the loop.
-  - Outer `let i = 5` stays **5** if the loop declares its own `let i`.
-- [x] **`while`**
-  - Repeats **while the condition is true**: `while (i < 10) { … i++; }`.
-  - If you forget to **increase** the condition variable, the loop **never ends** and can **crash the browser**.
-- [x] **`do while`**
-  - Runs the block **once first**, then tests the condition.
-  - Runs **at least once**, even if the condition starts **false**.
+- [x] **Why loops** — same code, over and over; typical with **arrays** instead of `cars[0]` … `cars[5]`.
+- [x] **`for (expr1; expr2; expr3)`** — init once, test, then update after each pass.
+- [x] **Loop scope** — a header `let i` is **only** visible in the loop; reusing an outer `i` **does** change that outer `i`.
+- [x] **`while`** tests then runs. **`do while`** runs then tests (**at least once**). Always **`i++`** (or equivalent) or the loop never ends — do **not** demo an infinite loop.
 
-Sandbox: `code_sandbox/js-loops/index.html`
+### **Example 1: `for` over a cars array**
 
-<img alt="js-loops source" src="./code_sandbox/snaps/js-loops-code.png" />
+- [x] Loops run the **same block many times**, usually with a **different value** each pass.
+- [x] Instead of `text += cars[0]` … `cars[5]`, use `for (let i = 0; i < cars.length; i++)`.
+- [x] This array has **six** names (indexes **0–5**), matching the page’s `cars[0]` … `cars[5]` copy-paste.
+- [x] `cars.length` is **6**, so `i < cars.length` visits every element once.
+
+Sandbox: `code_sandbox/js-loops/for-cars.html`
 
 ```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = "";
 for (let i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+  text += cars[i] + " ";
 }
 ```
 
-Rendered result:
+<img alt="js-loops example 1 source" src="./code_sandbox/snaps/js-loops-01-code.png" />
 
-<img alt="js-loops result" src="./code_sandbox/snaps/js-loops-result.png" />
+<img alt="js-loops example 1 result" src="./code_sandbox/snaps/js-loops-01-result.png" />
+
+- [x] **Outcome:** The loop concatenates all six names: **BMW Volvo Saab Ford Fiat Audi**.
+
+
+### **Example 2: `for` i < 5 — "The number is i"**
+
+- [x] `for (expr1; expr2; expr3)` — **expr1** once before, **expr2** the condition, **expr3** after each pass.
+- [x] `let i = 0` starts the counter. `i < 5` keeps going while i is 0, 1, 2, 3, 4. `i++` steps by one.
+- [x] **i = 5** is **not** printed: when `i < 5` becomes false, the loop **ends**.
+
+Sandbox: `code_sandbox/js-loops/for-numbers.html`
+
+```javascript
+let text = "";
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "\n";
+}
+```
+
+<img alt="js-loops example 2 source" src="./code_sandbox/snaps/js-loops-02-code.png" />
+
+<img alt="js-loops example 2 result" src="./code_sandbox/snaps/js-loops-02-result.png" />
+
+- [x] **Outcome:** The joined text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
+
+
+### **Example 3: Loop scope: outer `let i = 5`, loop reuses `i` (i is 10 after)**
+
+- [x] `let i = 5` is declared **outside**. The header `for (i = 0; i < 10; i++)` **reuses** that same `i` (no second `let`).
+- [x] The loop assigns `i = 0`, then increments until the condition fails.
+- [x] When `i` becomes **10**, `i < 10` is false. After the loop, the **outer** `i` is **10**.
+
+Sandbox: `code_sandbox/js-loops/scope-reuse.html`
+
+```javascript
+let i = 5;
+for (i = 0; i < 10; i++) {
+  // some code
+}
+// Here i is 10
+```
+
+<img alt="js-loops example 3 source" src="./code_sandbox/snaps/js-loops-03-code.png" />
+
+<img alt="js-loops example 3 result" src="./code_sandbox/snaps/js-loops-03-result.png" />
+
+- [x] **Outcome:** Outer **i** started at **5**. After `for (i = 0; i < 10; i++)`, **i is 10**.
+
+
+### **Example 4: Loop scope: inner `let i` (outer i stays 5)**
+
+- [x] `for (let i = 0; i < 10; i++)` declares a **new** `i` that exists **only inside** the loop.
+- [x] The outer `let i = 5` is a **different** binding. The loop does **not** change it.
+- [x] `let` / `const` declared **inside** a loop (including the header) are **loop-scoped**.
+
+Sandbox: `code_sandbox/js-loops/scope-inner-let.html`
+
+```javascript
+let i = 5;
+for (let i = 0; i < 10; i++) {
+  // some code
+}
+// Here i is 5
+```
+
+<img alt="js-loops example 4 source" src="./code_sandbox/snaps/js-loops-04-code.png" />
+
+<img alt="js-loops example 4 result" src="./code_sandbox/snaps/js-loops-04-result.png" />
+
+- [x] **Outcome:** After the loop, the **outer** `i` is still **5**. The header `let i` was loop-scoped.
+
+
+### **Example 5: `while` i < 10**
+
+- [x] **`while (condition) { ... }`** tests **first**, then maybe runs the block.
+- [x] Initialize **`i = 0`**, append text, then **`i++`**. The page warns: if you **forget `i++`**, the loop **never ends** and can **crash the browser**. This demo **does** increment.
+- [x] Numbers printed: **0 through 9** (not 10).
+
+Sandbox: `code_sandbox/js-loops/while.html`
+
+```javascript
+let i = 0;
+let text = "";
+while (i < 10) {
+  text += "The number is " + i + "\n";
+  i++;
+}
+```
+
+<img alt="js-loops example 5 source" src="./code_sandbox/snaps/js-loops-05-code.png" />
+
+<img alt="js-loops example 5 result" src="./code_sandbox/snaps/js-loops-05-result.png" />
+
+- [x] **Outcome:** The loop prints **The number is 0** … **The number is 9**. After it ends, **i is 10**. Forgetting `i++` would infinite-loop — do **not** run that.
+
+
+### **Example 6: `do while` i < 10 (runs at least once)**
+
+- [x] **`do { ... } while (condition);`** runs the block **once first**, then tests.
+- [x] It therefore runs **at least once**, even if the condition starts **false**.
+- [x] With `i = 0` you still get 0–9. The sandbox also starts at **10** to prove the extra first pass: it prints **The number is 10** once.
+- [x] Still increment the counter. Forgetting `i++` never ends — mentioned only, not executed.
+
+Sandbox: `code_sandbox/js-loops/do-while.html`
+
+```javascript
+let i = 0;
+let text = "";
+do {
+  text += "The number is " + i + "\n";
+  i++;
+} while (i < 10);
+```
+
+<img alt="js-loops example 6 source" src="./code_sandbox/snaps/js-loops-06-code.png" />
+
+<img alt="js-loops example 6 result" src="./code_sandbox/snaps/js-loops-06-result.png" />
+
+- [x] **Outcome:** Start **0** prints **The number is 0** … **The number is 9**. Start **10** still runs **once** → **The number is 10**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3671,17 +4121,77 @@ Then open `http://127.0.0.1:8770/js-loops/`.
 
 ## Questions and Answers
 
-### Question 1: Why use a loop with an array instead of listing each index?
+### Question 1: Why use a `for` loop over `cars` instead of writing `cars[0]` through `cars[5]`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] To run the **same code** for **each** element.
-- [x] Example: `for (let i = 0; i < cars.length; i++)` instead of `cars[0]` … `cars[5]`.
+- [x] To run the **same** code for **each** element.
+- [x] The sandbox result is **BMW Volvo Saab Ford Fiat Audi**.
 
 </details>
 
-### Question 2: What do the three `for` expressions do?
+### Question 2: What numbers does `for (let i = 0; i < 5; i++)` print in "The number is i"?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **0 1 2 3 4**.
+- [x] **5** is not printed because `i < 5` is then false.
+
+</details>
+
+### Question 3: After `let i = 5` and `for (i = 0; i < 10; i++)`, what is `i`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **10**.
+- [x] The loop reused the **outer** `i` until `i < 10` failed.
+
+</details>
+
+### Question 4: After `let i = 5` and `for (let i = 0; i < 10; i++)`, what is the outer `i`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **5**.
+- [x] The inner `let i` is **loop-scoped** and does not change the outer binding.
+
+</details>
+
+### Question 5: What values does `while (i < 10)` print when `i` starts at 0?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **The number is 0** through **The number is 9**.
+- [x] After the loop, `i` is **10**.
+
+</details>
+
+### Question 6: What happens if you forget `i++` in a `while`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The condition stays true and the loop **never ends**.
+- [x] That can **crash the browser**. The sandbox always increments.
+
+</details>
+
+### Question 7: How does `do while` differ from `while` when the condition starts false?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`do while`** still runs the block **once**, then tests.
+- [x] Start **10** still prints **The number is 10** once.
+
+</details>
+
+### Question 8: What do expr1, expr2, and expr3 mean in a `for` header?
 
 <details>
 <summary>Answer</summary>
@@ -3692,33 +4202,22 @@ Then open `http://127.0.0.1:8770/js-loops/`.
 
 </details>
 
-### Question 3: What happens if you declare `let i` both outside and inside a `for` loop?
+### Question 9: Are `let` / `const` declared inside a loop visible after the loop?
 
 <details>
 <summary>Answer</summary>
 
-- [x] The inner `let i` is **only** visible **inside** the loop.
-- [x] The outer `let i` is **unchanged** after the loop.
+- [x] **No.** They are visible **only in the loop**.
 
 </details>
 
-### Question 4: When does `do while` run compared with `while`?
+### Question 10: Does `i < 5` include `i === 5`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **`do while`** runs the block **once** before testing.
-- [x] It runs **at least once**, even if the condition starts **false**.
-
-</details>
-
-### Question 5: What if you forget to increment the `while` counter?
-
-<details>
-<summary>Answer</summary>
-
-- [x] The loop **never ends**.
-- [x] That can **crash the browser**.
+- [x] **No.** The loop stops when the condition is **false**.
+- [x] Printed numbers are **0–4**.
 
 </details>
 
@@ -3726,7 +4225,7 @@ Then open `http://127.0.0.1:8770/js-loops/`.
 
 ## Summary
 
-Loops repeat a block: **`for`** (init, condition, step), **`while`** (test then run), **`do while`** (run then test, at least once). Use them for arrays instead of copy-paste. `let`/`const` inside a loop stay **loop-scoped**. Always update the condition variable or the loop never ends.
+Loops repeat a block: **`for`** walks **BMW … Audi** and prints **The number is 0–4**. Reusing outer `i` leaves **i = 10**; inner `let i` leaves outer **i = 5**. **`while`** prints 0–9; **`do while`** does too and still runs once if `i` starts at 10. Always update the counter or the loop never ends.
 
 ## References
 
@@ -3746,39 +4245,152 @@ The **`for`** statement creates a loop with **three optional expressions**: init
 
 ## Detailed Explanation
 
-- [x] **Syntax**
-  - `for (exp1; exp2; exp3) { // code }`
-  - **exp1** once before the block (`let i = 0`).
-  - **exp2** condition (`i < 5`). If it is **false**, the loop **ends**.
-  - **exp3** after each pass (`i++`).
-- [x] **Cars example**
-  - `const cars = ["BMW", "Volvo", "Saab", "Ford"];`
-  - Loop `i` from `0` to `cars.length - 1` and concatenate names.
-- [x] **exp1 is optional**
-  - Set `i` before the loop, then `for (; i < len; i++)`.
-  - Starting at `i = 2` walks from **Saab** onward.
-- [x] **exp2 is optional**
-  - If omitted, you **must** `break` inside, or the loop **never ends** (browser crash).
-- [x] **exp3 is optional**
-  - Can be `i--`, `i = i + 15`, or increment **inside** the body: `for (; i < len; ) { … i++; }`.
-- [x] **Loop scope: `var` vs `let`**
-  - `var i` in the loop **redeclares** an outer `var i`; after the loop `i` is **10**.
-  - `let i` in the loop does **not** redeclare outer `let i`; outer stays **5**.
-  - Loop `let i` is visible **only inside** the loop.
+- [x] **`for (exp1; exp2; exp3)`** — init, test, update. All three are optional; keep the **semicolons**.
+- [x] **Omit exp1** — set `i` first (`i = 2` starts at Saab). **Omit exp3** — increment in the body.
+- [x] **Omit exp2** only with **`break`**, or the loop never ends (do **not** demo that).
+- [x] **`var i` leaks**; **`let i` does not.** After the `var` loop, `i` is **10**; after the `let` loop, outer `i` stays **5**.
 
-Sandbox: `code_sandbox/js-loop-for/index.html`
+### **Example 1: `for` i < 5 numbers**
 
-<img alt="js-loop-for source" src="./code_sandbox/snaps/js-loop-for-code.png" />
+- [x] `for (exp1; exp2; exp3)` — **exp1** once before (`let i = 0`), **exp2** condition (`i < 5`), **exp3** after each pass (`i++`).
+- [x] If exp2 is **false**, the loop **ends**. **i = 5** is not printed.
+- [x] All three expressions are **optional** (later Examples omit exp1 or exp3).
+
+Sandbox: `code_sandbox/js-loop-for/for-numbers.html`
 
 ```javascript
+let text = "";
 for (let i = 0; i < 5; i++) {
-  text += "The number is " + i + " ";
+  text += "The number is " + i + "\n";
 }
 ```
 
-Rendered result:
+<img alt="js-loop-for example 1 source" src="./code_sandbox/snaps/js-loop-for-01-code.png" />
 
-<img alt="js-loop-for result" src="./code_sandbox/snaps/js-loop-for-result.png" />
+<img alt="js-loop-for example 1 result" src="./code_sandbox/snaps/js-loop-for-01-result.png" />
+
+- [x] **Outcome:** The text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
+
+
+### **Example 2: `for` collect car names**
+
+- [x] `const cars = ["BMW", "Volvo", "Saab", "Ford"]` — **four** names (this page does not use Fiat/Audi).
+- [x] `let len = cars.length` then `for (let i = 0; i < len; i++) { text += cars[i]; }`.
+- [x] The page concatenates **with no spaces**, so the string is **BMWVolvoSaabFord**.
+
+Sandbox: `code_sandbox/js-loop-for/for-cars.html`
+
+```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let len = cars.length;
+let text = "";
+for (let i = 0; i < len; i++) {
+  text += cars[i];
+}
+```
+
+<img alt="js-loop-for example 2 source" src="./code_sandbox/snaps/js-loop-for-02-code.png" />
+
+<img alt="js-loop-for example 2 result" src="./code_sandbox/snaps/js-loop-for-02-result.png" />
+
+- [x] **Outcome:** The collected string is **BMWVolvoSaabFord** (no spaces). **len** is **4**.
+
+
+### **Example 3: Omit exp1 (`i = 2` before the loop)**
+
+- [x] **exp1 is optional.** Set the counter **before** the loop, then write `for (; i < len; i++)`.
+- [x] Keep the **semicolons**. The first slot is empty.
+- [x] Starting at **`i = 2`** skips BMW and Volvo and walks from **Saab** onward.
+
+Sandbox: `code_sandbox/js-loop-for/omit-exp1.html`
+
+```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let len = cars.length;
+let i = 2;
+let text = "";
+for (; i < len; i++) {
+  text += cars[i] + " ";
+}
+```
+
+<img alt="js-loop-for example 3 source" src="./code_sandbox/snaps/js-loop-for-03-code.png" />
+
+<img alt="js-loop-for example 3 result" src="./code_sandbox/snaps/js-loop-for-03-result.png" />
+
+- [x] **Outcome:** Starting at index **2** collects **Saab Ford**.
+
+
+### **Example 4: Omit exp3 (`i++` inside the body)**
+
+- [x] **exp3 is optional.** You can increment **inside** the body: `for (; i < len; ) { ... i++; }`.
+- [x] exp3 can also be `i--`, `i = i + 15`, or anything else — this demo uses `i++` in the body.
+- [x] If you omit **exp2** (the condition) you **must `break`**, or the loop never ends. This Example keeps `i < len`.
+
+Sandbox: `code_sandbox/js-loop-for/omit-exp3.html`
+
+```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let len = cars.length;
+let i = 0;
+let text = "";
+for (; i < len; ) {
+  text += cars[i] + " ";
+  i++;
+}
+```
+
+<img alt="js-loop-for example 4 source" src="./code_sandbox/snaps/js-loop-for-04-code.png" />
+
+<img alt="js-loop-for example 4 result" src="./code_sandbox/snaps/js-loop-for-04-result.png" />
+
+- [x] **Outcome:** Incrementing inside the body still collects **BMW Volvo Saab Ford**.
+
+
+### **Example 5: `var i` in the loop leaks (i is 10 after)**
+
+- [x] `var` is **function-scoped** (or global), not block-scoped.
+- [x] `var i = 5` then `for (var i = 0; i < 10; i++)` **redeclares the same** `i`.
+- [x] After the loop, **`i` is 10** — the loop counter **leaked** out.
+
+Sandbox: `code_sandbox/js-loop-for/var-leaks.html`
+
+```javascript
+var i = 5;
+for (var i = 0; i < 10; i++) {
+  // some code
+}
+// Here i is 10
+```
+
+<img alt="js-loop-for example 5 source" src="./code_sandbox/snaps/js-loop-for-05-code.png" />
+
+<img alt="js-loop-for example 5 result" src="./code_sandbox/snaps/js-loop-for-05-result.png" />
+
+- [x] **Outcome:** **var i** started at **5** and is **10** after the loop — the header `var i` leaked.
+
+
+### **Example 6: `let i` in the loop does not leak (outer i stays 5)**
+
+- [x] `let i` in the header is **loop-scoped**. It does **not** redeclare an outer `let i`.
+- [x] Outer `let i = 5` stays **5** after `for (let i = 0; i < 10; i++)`.
+- [x] The loop `i` is visible **only inside** the loop. Prefer **`let`** (or `const` when the binding does not reassign) over `var`.
+
+Sandbox: `code_sandbox/js-loop-for/let-no-leak.html`
+
+```javascript
+let i = 5;
+for (let i = 0; i < 10; i++) {
+  // some code
+}
+// Here i is 5
+```
+
+<img alt="js-loop-for example 6 source" src="./code_sandbox/snaps/js-loop-for-06-code.png" />
+
+<img alt="js-loop-for example 6 result" src="./code_sandbox/snaps/js-loop-for-06-result.png" />
+
+- [x] **Outcome:** Outer **let i** stays **5**. The loop `let i` did **not** leak.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3799,48 +4411,97 @@ Then open `http://127.0.0.1:8770/js-loop-for/`.
 
 ## Questions and Answers
 
-### Question 1: Are the three `for` expressions required?
+### Question 1: What numbers does `for (let i = 0; i < 5; i++)` append?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **The number is 0** through **The number is 4**.
+
+</details>
+
+### Question 2: What string does the cars collector build with `text += cars[i]` (no spaces)?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **BMWVolvoSaabFord**.
+- [x] `len` is **4**.
+
+</details>
+
+### Question 3: If you omit exp1 and start at `i = 2`, which cars are collected?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Saab Ford**.
+- [x] Indexes 0 and 1 (BMW, Volvo) are skipped.
+
+</details>
+
+### Question 4: If you omit exp3 and write `i++` in the body, what text do you get?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **BMW Volvo Saab Ford**.
+- [x] exp3 is optional as long as something still advances `i`.
+
+</details>
+
+### Question 5: After `var i = 5` and `for (var i = 0; i < 10; i++)`, what is `i`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **10**.
+- [x] `var` in the header **redeclares** the same function-scoped `i`.
+
+</details>
+
+### Question 6: After `let i = 5` and `for (let i = 0; i < 10; i++)`, what is the outer `i`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **5**.
+- [x] Loop `let i` is visible **only inside** the loop.
+
+</details>
+
+### Question 7: Are the three `for` expressions required?
 
 <details>
 <summary>Answer</summary>
 
 - [x] **No.** All three are **optional**.
-- [x] If you omit **exp2** (the condition), you must **`break`** or the loop never ends.
+- [x] If you omit **exp2**, you must **`break`** or the loop never ends.
 
 </details>
 
-### Question 2: What is exp1 used for?
+### Question 8: What is exp1 used for?
 
 <details>
 <summary>Answer</summary>
 
 - [x] To **initialize** the loop variable(s), e.g. `let i = 0`.
-- [x] You can set `i` **before** the loop and omit exp1.
+- [x] You can set `i` **before** the loop and leave exp1 empty.
 
 </details>
 
-### Question 3: What can exp3 do besides `i++`?
+### Question 9: What can exp3 do besides `i++`?
 
 <details>
 <summary>Answer</summary>
 
 - [x] Negative increment (`i--`).
 - [x] Larger steps (`i = i + 15`).
-- [x] Or increment **inside** the loop body and omit exp3.
+- [x] Or increment **inside** the body and omit exp3.
 
 </details>
 
-### Question 4: How does `var` in a `for` header differ from `let`?
-
-<details>
-<summary>Answer</summary>
-
-- [x] **`var i`** in the loop **redeclares** an outer `var i`; after the loop `i` is **10**.
-- [x] **`let i`** in the loop does **not** change an outer `let i`.
-
-</details>
-
-### Question 5: Where is a `let i` declared in the `for` header visible?
+### Question 10: Where is a `let i` declared in the `for` header visible?
 
 <details>
 <summary>Answer</summary>
@@ -3853,7 +4514,7 @@ Then open `http://127.0.0.1:8770/js-loop-for/`.
 
 ## Summary
 
-**`for (exp1; exp2; exp3)`** initializes, tests, then updates. All three expressions are optional. Omit exp2 only if you **`break`**. `var` in the header leaks out of the loop; **`let` stays loop-scoped**.
+`for` prints **0–4**, collects **BMWVolvoSaabFord**, starts at index **2** for **Saab Ford**, and still works when **`i++` is in the body**. **`var i` leaks to 10**; **`let i` keeps outer i at 5**. Omit the condition only if you **`break`**.
 
 ## References
 
@@ -3869,40 +4530,110 @@ Then open `http://127.0.0.1:8770/js-loop-for/`.
 
 ## Introduction
 
-**While loops** run a block **as long as a condition is true**. JavaScript has **`while`** (test first) and **`do while`** (run first). A `while` is like a `for` with statement 1 and 3 omitted.
+**While loops** run a block **as long as a condition is true**. JavaScript has **`while`** (test first) and **`do while`** (run first). A `while` is like a `for` with statement 1 and 3 omitted. Forgetting **`i++`** infinite-loops — the warning is in the bullets; the sandbox never omits the increment.
 
 ## Detailed Explanation
 
-- [x] **Two while loops**
-  - **`while`** — test, then maybe run.
-  - **`do while`** — run once, then test.
-- [x] **`while` syntax**
-  - `while (condition) { // code }`
-  - Example: while `i < 10`, append text and **`i++`**.
-  - Forgetting **`i++`** means the loop **never ends** (browser crash).
-- [x] **`do while` syntax**
-  - `do { // code } while (condition);`
-  - Runs **at least once**, even if the condition starts **false**.
-  - Still increment the counter or it never ends.
-- [x] **`for` vs `while` (same idea)**
-  - `for (; cars[i]; ) { text += cars[i]; i++; }`
-  - `while (cars[i]) { text += cars[i]; i++; }`
-  - Both walk `["BMW", "Volvo", "Saab", "Ford"]` until a falsy slot.
+- [x] **`while`** — test, then maybe run. **`do while`** — run once, then test (**at least once**).
+- [x] **Always increment** the condition variable. Do **not** run a loop that forgets `i++`.
+- [x] **`for (; cars[i]; )`** and **`while (cars[i])`** are the same idea: stop when the next slot is falsy.
 
-Sandbox: `code_sandbox/js-loop-while/index.html`
+### **Example 1: `while` i < 10**
 
-<img alt="js-loop-while source" src="./code_sandbox/snaps/js-loop-while-code.png" />
+- [x] JavaScript has two while-style loops: **`while`** and **`do while`**.
+- [x] `while (condition)` tests **first**. With `i = 0` and `i++` in the body you get **0–9**.
+- [x] **Warning:** forgetting **`i++`** means the loop **never ends** and can **crash the browser**. Mentioned only — this script increments.
+
+Sandbox: `code_sandbox/js-loop-while/while.html`
 
 ```javascript
+let i = 0;
+let text = "";
 while (i < 10) {
-  text += "The number is " + i;
+  text += "The number is " + i + "\n";
   i++;
 }
 ```
 
-Rendered result:
+<img alt="js-loop-while example 1 source" src="./code_sandbox/snaps/js-loop-while-01-code.png" />
 
-<img alt="js-loop-while result" src="./code_sandbox/snaps/js-loop-while-result.png" />
+<img alt="js-loop-while example 1 result" src="./code_sandbox/snaps/js-loop-while-01-result.png" />
+
+- [x] **Outcome:** **The number is 0** through **The number is 9**. After the loop, **i is 10**.
+
+
+### **Example 2: `do while` i < 10**
+
+- [x] `do { ... } while (condition);` runs the block **before** the test, so it runs **at least once**.
+- [x] Start **0** still prints 0–9. Start **10** (condition already false) still prints **The number is 10** once.
+- [x] Do not forget `i++` here either — infinite loops are described, not executed.
+
+Sandbox: `code_sandbox/js-loop-while/do-while.html`
+
+```javascript
+let i = 0;
+let text = "";
+do {
+  text += "The number is " + i + "\n";
+  i++;
+} while (i < 10);
+```
+
+<img alt="js-loop-while example 2 source" src="./code_sandbox/snaps/js-loop-while-02-code.png" />
+
+<img alt="js-loop-while example 2 result" src="./code_sandbox/snaps/js-loop-while-02-result.png" />
+
+- [x] **Outcome:** Start **0** → **The number is 0** … **The number is 9**. Start **10** still runs once → **The number is 10**.
+
+
+### **Example 3: `for (; cars[i]; )` collect cars**
+
+- [x] A `while` is like a `for` with **statement 1 and 3 omitted**.
+- [x] `for (; cars[i]; )` uses the **array value** as the condition: truthy names keep going; **`undefined`** past the end is falsy and **stops**.
+- [x] `i++` lives in the body. Cars: BMW, Volvo, Saab, Ford (concatenated with **no spaces** on this page).
+
+Sandbox: `code_sandbox/js-loop-while/for-cars-cond.html`
+
+```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 0;
+let text = "";
+for (; cars[i]; ) {
+  text += cars[i];
+  i++;
+}
+```
+
+<img alt="js-loop-while example 3 source" src="./code_sandbox/snaps/js-loop-while-03-code.png" />
+
+<img alt="js-loop-while example 3 result" src="./code_sandbox/snaps/js-loop-while-03-result.png" />
+
+- [x] **Outcome:** The `for (; cars[i]; )` collector builds **BMWVolvoSaabFord** and stops when `cars[i]` is **undefined** (`i` is **4**).
+
+
+### **Example 4: `while (cars[i])` collect cars**
+
+- [x] Same walk as the previous Example, written as **`while (cars[i])`**.
+- [x] No `cars.length` check is required in this pattern: it stops on the first **falsy** slot (`undefined` after the last name).
+- [x] Result matches the `for (; cars[i]; )` version: **BMWVolvoSaabFord**.
+
+Sandbox: `code_sandbox/js-loop-while/while-cars.html`
+
+```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 0;
+let text = "";
+while (cars[i]) {
+  text += cars[i];
+  i++;
+}
+```
+
+<img alt="js-loop-while example 4 source" src="./code_sandbox/snaps/js-loop-while-04-code.png" />
+
+<img alt="js-loop-while example 4 result" src="./code_sandbox/snaps/js-loop-while-04-result.png" />
+
+- [x] **Outcome:** `while (cars[i])` also builds **BMWVolvoSaabFord** and stops at **i = 4**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -3933,37 +4664,67 @@ Then open `http://127.0.0.1:8770/js-loop-while/`.
 
 </details>
 
-### Question 2: When does `do while` run if the condition is already false?
+### Question 2: What does `while (i < 10)` print when `i` starts at 0?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **The number is 0** through **The number is 9**.
+- [x] Afterward `i` is **10**.
+
+</details>
+
+### Question 3: When does `do while` run if the condition is already false?
 
 <details>
 <summary>Answer</summary>
 
 - [x] It still runs the block **once**.
-- [x] The test happens **after** the first run.
+- [x] Start **10** prints **The number is 10** once.
 
 </details>
 
-### Question 3: How is `while` like `for`?
+### Question 4: How is `while` like `for`?
 
 <details>
 <summary>Answer</summary>
 
 - [x] Like a `for` with **statement 1 and 3 omitted**.
-- [x] Example: `for (; cars[i]; )` vs `while (cars[i])`.
+- [x] `for (; cars[i]; )` vs `while (cars[i])`.
 
 </details>
 
-### Question 4: What happens if you never increment `i` in a `while`?
+### Question 5: What string does `for (; cars[i]; )` build from BMW, Volvo, Saab, Ford?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **BMWVolvoSaabFord**.
+- [x] It stops when `cars[i]` is **undefined** (`i === 4`).
+
+</details>
+
+### Question 6: What string does `while (cars[i])` build from the same array?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **BMWVolvoSaabFord** — the same result.
+- [x] No `length` check is required in this pattern.
+
+</details>
+
+### Question 7: What happens if you never increment `i` in a `while`?
 
 <details>
 <summary>Answer</summary>
 
 - [x] The loop **never ends**.
-- [x] That can **crash the browser**.
+- [x] That can **crash the browser**. The examples always `i++`.
 
 </details>
 
-### Question 5: Does `while (cars[i])` need a length check?
+### Question 8: Does `while (cars[i])` need `cars.length`?
 
 <details>
 <summary>Answer</summary>
@@ -3972,11 +4733,29 @@ Then open `http://127.0.0.1:8770/js-loop-while/`.
 
 </details>
 
+### Question 9: Why does `cars[4]` stop the collector?
+
+<details>
+<summary>Answer</summary>
+
+- [x] There is no index 4, so `cars[4]` is **`undefined`**, which is falsy.
+
+</details>
+
+### Question 10: Does `do while` need a semicolon after `while (condition)`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** The syntax is `do { ... } while (condition);`.
+
+</details>
+
 </details>
 
 ## Summary
 
-**`while`** tests then runs. **`do while`** runs then tests (at least once). Both need a changing counter. A `while` matches a `for` with the first and third expressions left empty.
+**`while`** tests then runs (0–9). **`do while`** runs then tests (at least once — start 10 still prints once). **`for (; cars[i]; )`** and **`while (cars[i])`** both collect **BMWVolvoSaabFord**. Always change the counter; never demo an infinite loop.
 
 ## References
 
@@ -3991,44 +4770,149 @@ Then open `http://127.0.0.1:8770/js-loop-while/`.
 
 ## Introduction
 
-**`break`** **jumps out** of a **loop** or **`switch`**. In a loop it **stops immediately** (no more iterations). In a `switch` it prevents **fall-through**. With a **label**, `break` can leave a **nested loop** or even a **plain `{ }` block**.
+**`break`** **jumps out** of a **loop** or **`switch`**. In a loop it **stops immediately**. In a `switch` it prevents **fall-through**. With a **label**, `break` can leave a **nested loop** or even a **plain `{ }` block**.
 
 ## Detailed Explanation
 
-- [x] **Break in loops**
-  - When `break` runs, the loop **terminates**.
-  - Control continues **after** the loop.
-  - Example: `if (i === 3) { break; }` → numbers **0 1 2** only.
-- [x] **Break in `switch`**
-  - Exits the switch after a matching **case**.
-  - Without `break`, execution **falls through** later cases (and `default`).
-- [x] **Labels**
-  - `labelname: statement;` or `labelname: { statements }`
-  - Identifier plus a **colon**.
-- [x] **Labeled `break`**
-  - `break labelname;`
-  - Useful to leave an **outer** loop from an **inner** one.
-  - `break loop1` stops **both** nested loops; `break loop2` stops only the **inner** loop.
-- [x] **Break a code block**
-  - Without a label, `break` only leaves a **loop** or **switch**.
-  - With a label, `break` can leave **any** `{ }` block (example: stop after the second car).
+- [x] **Loop `break`** — remaining iterations never run. `i === 3` leaves **0 1 2**.
+- [x] **`switch` `break`** — exit after the matching case (`dayNum = 3` → **Wednesday**).
+- [x] **Labels** — `name:` before a statement or block. `break loop1` leaves the **outer** loop; `break loop2` leaves only the **inner**.
+- [x] **Labeled block** — `break list` after two cars leaves **BMW Volvo**.
 
-Sandbox: `code_sandbox/js-break/index.html`
+### **Example 1: `break` when i === 3 in a for loop**
 
-<img alt="js-break source" src="./code_sandbox/snaps/js-break-code.png" />
+- [x] In a loop, **`break` terminates immediately**. No later iterations run. Control continues **after** the loop.
+- [x] `for (let i = 0; i < 10; i++)` would normally print 0–9. `if (i === 3) { break; }` stops **before** appending 3.
+- [x] The text is **The number is 0 The number is 1 The number is 2**. **3–9 never run.**
+
+Sandbox: `code_sandbox/js-break/break-for.html`
 
 ```javascript
+let text = "";
 for (let i = 0; i < 10; i++) {
   if (i === 3) {
     break;
   }
-  text += "The number is " + i + " ";
+  text += "The number is " + i + "\n";
 }
 ```
 
-Rendered result:
+<img alt="js-break example 1 source" src="./code_sandbox/snaps/js-break-01-code.png" />
 
-<img alt="js-break result" src="./code_sandbox/snaps/js-break-result.png" />
+<img alt="js-break example 1 result" src="./code_sandbox/snaps/js-break-01-result.png" />
+
+- [x] **Outcome:** **break** at **i === 3** leaves **The number is 0 The number is 1 The number is 2**. **3** is not appended.
+
+
+### **Example 2: `break` in a switch (dayNum = 3)**
+
+- [x] In a **`switch`**, `break` **exits** after the matching case so later cases do not **fall through**.
+- [x] The live page uses `new Date().getDay()`. The sandbox pins **`dayNum = 3`** → **Wednesday**.
+- [x] Without `break`, case 3 would keep running into Thursday, Friday, …
+
+Sandbox: `code_sandbox/js-break/break-switch.html`
+
+```javascript
+let dayNum = 3;
+let day;
+switch (dayNum) {
+  case 0: day = "Sunday"; break;
+  case 1: day = "Monday"; break;
+  case 2: day = "Tuesday"; break;
+  case 3: day = "Wednesday"; break;
+  case 4: day = "Thursday"; break;
+  case 5: day = "Friday"; break;
+  case 6: day = "Saturday";
+}
+```
+
+<img alt="js-break example 2 source" src="./code_sandbox/snaps/js-break-02-code.png" />
+
+<img alt="js-break example 2 result" src="./code_sandbox/snaps/js-break-02-result.png" />
+
+- [x] **Outcome:** **dayNum = 3** matches **case 3**, `break` exits, and day is **Wednesday**.
+
+
+### **Example 3: Labeled `break loop1` (leave the outer loop)**
+
+- [x] A **label** is an identifier plus a **colon**: `loop1: for (...)`.
+- [x] `break loop1` leaves the **outer** labeled loop, not just the inner one.
+- [x] Inner `i` goes 1, 2, then `i === 3` breaks **all** remaining nested work. Result text is **12**.
+
+Sandbox: `code_sandbox/js-break/break-loop1.html`
+
+```javascript
+let text = "";
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) {
+      break loop1;
+    }
+    text += i;
+  }
+}
+```
+
+<img alt="js-break example 3 source" src="./code_sandbox/snaps/js-break-03-code.png" />
+
+<img alt="js-break example 3 result" src="./code_sandbox/snaps/js-break-03-result.png" />
+
+- [x] **Outcome:** `break loop1` at **i === 3** stops **both** loops. text is **12**.
+
+
+### **Example 4: Labeled `break loop2` (leave the inner loop only)**
+
+- [x] `break loop2` leaves **only the inner** loop. The **outer** loop continues with the next `j`.
+- [x] Each outer pass appends **12** (i = 1, 2, then break inner; i = 4 never runs).
+- [x] `j` is 1..4, so the text is **12121212**.
+
+Sandbox: `code_sandbox/js-break/break-loop2.html`
+
+```javascript
+let text = "";
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) {
+      break loop2;
+    }
+    text += i;
+  }
+}
+```
+
+<img alt="js-break example 4 source" src="./code_sandbox/snaps/js-break-04-code.png" />
+
+<img alt="js-break example 4 result" src="./code_sandbox/snaps/js-break-04-result.png" />
+
+- [x] **Outcome:** `break loop2` stops only the **inner** loop. Four outer passes produce **12121212**.
+
+
+### **Example 5: Labeled `break` out of a block after the second car**
+
+- [x] Without a label, `break` only leaves a **loop** or **`switch`**.
+- [x] With a label, `break` can leave **any `{ }` block**.
+- [x] `list: { text += cars[0]; text += cars[1]; break list; text += cars[2]; ... }` never reaches Saab or Ford.
+- [x] `break` and `continue` are the only statements that can **jump out of** a `{ }` block.
+
+Sandbox: `code_sandbox/js-break/break-block.html`
+
+```javascript
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let text = "";
+list: {
+  text += cars[0] + " ";
+  text += cars[1] + " ";
+  break list;
+  text += cars[2] + " ";
+  text += cars[3] + " ";
+}
+```
+
+<img alt="js-break example 5 source" src="./code_sandbox/snaps/js-break-05-code.png" />
+
+<img alt="js-break example 5 result" src="./code_sandbox/snaps/js-break-05-result.png" />
+
+- [x] **Outcome:** `break list` after the second name leaves **BMW Volvo**. Saab and Ford are skipped.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4049,53 +4933,104 @@ Then open `http://127.0.0.1:8770/js-break/`.
 
 ## Questions and Answers
 
-### Question 1: What does `break` do in a loop?
+### Question 1: What does `break` do in `for (let i = 0; i < 10; i++)` when `i === 3`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] It **terminates** the loop immediately.
-- [x] No more iterations run.
+- [x] It **ends** the loop immediately.
+- [x] The text is **The number is 0 The number is 1 The number is 2**.
+- [x] **3** is not appended.
 
 </details>
 
-### Question 2: Why is `break` needed in `switch`?
+### Question 2: Does the `i === 3` iteration still append text before breaking in that Example?
 
 <details>
 <summary>Answer</summary>
 
-- [x] To **exit** after a matching case.
+- [x] **No.** `break` runs **before** `text += ...` in the sandbox order.
+- [x] So **3** never appears.
+
+</details>
+
+### Question 3: What does the switch print for `dayNum = 3`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Wednesday**.
+- [x] `break` after `case 3` prevents fall-through.
+
+</details>
+
+### Question 4: Why is `break` needed in `switch`?
+
+<details>
+<summary>Answer</summary>
+
 - [x] Without it, execution **falls through** later cases.
+- [x] `break` **exits** the switch after a matching case.
 
 </details>
 
-### Question 3: What is a label?
+### Question 5: What text does `break loop1` produce in the nested 1..4 loops?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **12**.
+- [x] It leaves the **outer** loop on the first `i === 3`.
+
+</details>
+
+### Question 6: What text does `break loop2` produce in the same nest?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **12121212**.
+- [x] Only the **inner** loop stops; the outer `j` still runs 1..4.
+
+</details>
+
+### Question 7: What is a label?
 
 <details>
 <summary>Answer</summary>
 
 - [x] An identifier followed by a **colon**.
-- [x] It names a statement or `{ }` block for flow control.
+- [x] It names a statement or `{ }` block for `break` / `continue`.
 
 </details>
 
-### Question 4: `break loop1` vs `break loop2` in nested loops?
+### Question 8: Can unlabeled `break` leave a plain `{ }` block?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **`break loop1`** leaves the **outer** loop (stops everything).
-- [x] **`break loop2`** leaves only the **inner** loop.
+- [x] **No.** Without a label, `break` only works in a **loop** or **switch**.
+- [x] With `break list`, the block Example leaves **BMW Volvo**.
 
 </details>
 
-### Question 5: Can `break` leave a plain `{ }` block?
+### Question 9: Which statements can jump out of a `{ }` block?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **Yes**, if the block has a **label** (`break list`).
-- [x] Without a label, `break` only works in a **loop** or **switch**.
+- [x] **`break`**
+- [x] **`continue`**
+
+</details>
+
+### Question 10: After `break list` on the cars block, are Saab and Ford included?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Those lines never run.
+- [x] The text is **BMW Volvo**.
 
 </details>
 
@@ -4103,7 +5038,7 @@ Then open `http://127.0.0.1:8770/js-break/`.
 
 ## Summary
 
-**`break`** exits a loop or `switch` immediately. In `switch` it stops fall-through. **Labels** let `break` target an outer loop or a named block. `break` and `continue` are the only statements that can jump out of a `{ }` block.
+`break` exits a loop (`i === 3` → **0 1 2**) or a switch (`dayNum = 3` → **Wednesday**). **`break loop1`** yields **12**; **`break loop2`** yields **12121212**. A labeled block can stop after **BMW Volvo**. Only `break` and `continue` jump out of a `{ }` block.
 
 ## References
 
@@ -4119,39 +5054,93 @@ Then open `http://127.0.0.1:8770/js-break/`.
 
 ## Introduction
 
-**`continue`** **skips the rest of the current iteration** and starts the **next** one. With a **label**, it can skip to the next pass of an **outer** loop, not only the inner one.
+**`continue`** **skips the rest of the current iteration** and starts the **next** one. With a **label**, it can skip to the next pass of an **outer** loop, not only the inner one. Unlike `break`, the loop **keeps going**.
 
 ## Detailed Explanation
 
-- [x] **Skip one pass**
-  - Remaining code in that iteration is **skipped**.
-  - Processing moves to the **next** iteration.
-  - Example: `if (i === 3) { continue; }` → **1 2 4 5 6 7 8 9** (no 3).
-- [x] **Labels (same idea as `break`)**
-  - `labelname: statement;`
-  - `continue labelname;`
-- [x] **Labeled `continue`**
-  - **`continue loop1`** skips the rest of the **outer** iteration (inner loop does not finish that outer pass).
-  - **`continue loop2`** skips only the **inner** iteration (`3` is omitted; `1 2 4` repeats).
-- [x] **Jump-out statements**
-  - **`break`** and **`continue`** are the only statements that can jump out of a `{ }` block.
+- [x] **Skip one pass** — `i === 3` is omitted; **1 2 4 5 6 7 8 9** still print.
+- [x] **`continue loop1`** — next **outer** iteration (**12121212**, no inner 4 on that pass).
+- [x] **`continue loop2`** — next **inner** iteration (**124124124124**).
+- [x] **`break` and `continue`** are the only statements that can jump out of a `{ }` block.
 
-Sandbox: `code_sandbox/js-continue/index.html`
+### **Example 1: `continue` skips i === 3 in a for loop**
 
-<img alt="js-continue source" src="./code_sandbox/snaps/js-continue-code.png" />
+- [x] **`continue`** skips the **rest of this iteration** and starts the **next** one. The loop does **not** stop.
+- [x] `for (let i = 1; i < 10; i++)` with `if (i === 3) { continue; }` before appending means **3** is missing.
+- [x] Printed: **1 2 4 5 6 7 8 9** (no 3). Contrast `break`, which would stop at 1 2.
+
+Sandbox: `code_sandbox/js-continue/continue-for.html`
 
 ```javascript
+let text = "";
 for (let i = 1; i < 10; i++) {
   if (i === 3) {
     continue;
   }
-  text += "The number is " + i + " ";
+  text += "The number is " + i + "\n";
 }
 ```
 
-Rendered result:
+<img alt="js-continue example 1 source" src="./code_sandbox/snaps/js-continue-01-code.png" />
 
-<img alt="js-continue result" src="./code_sandbox/snaps/js-continue-result.png" />
+<img alt="js-continue example 1 result" src="./code_sandbox/snaps/js-continue-01-result.png" />
+
+- [x] **Outcome:** `continue` at **i === 3** skips that pass only. The text is **The number is 1 The number is 2 The number is 4 The number is 5 The number is 6 The number is 7 The number is 8 The number is 9**.
+
+
+### **Example 2: `continue loop1`**
+
+- [x] `continue loop1` jumps to the **next iteration of the outer** labeled loop.
+- [x] When `i === 3`, the inner loop does **not** finish that outer pass (**i = 4** is skipped) and `j` advances.
+- [x] Each of `j = 1..4` appends **12**, so text is **12121212**.
+- [x] Same digits as `break loop2` on the Break page, but the meaning is different: here you **continue the outer** loop, not merely exit the inner one.
+
+Sandbox: `code_sandbox/js-continue/continue-loop1.html`
+
+```javascript
+let text = "";
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) {
+      continue loop1;
+    }
+    text += i;
+  }
+}
+```
+
+<img alt="js-continue example 2 source" src="./code_sandbox/snaps/js-continue-02-code.png" />
+
+<img alt="js-continue example 2 result" src="./code_sandbox/snaps/js-continue-02-result.png" />
+
+- [x] **Outcome:** `continue loop1` at **i === 3** skips the rest of that **outer** pass. text is **12121212**.
+
+
+### **Example 3: `continue loop2`**
+
+- [x] `continue loop2` skips only the **current inner** iteration. **`i = 4` still runs**.
+- [x] Each outer pass appends **124** (1, 2, skip 3, then 4).
+- [x] `j` is 1..4, so the text is **124124124124**.
+
+Sandbox: `code_sandbox/js-continue/continue-loop2.html`
+
+```javascript
+let text = "";
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) {
+      continue loop2;
+    }
+    text += i;
+  }
+}
+```
+
+<img alt="js-continue example 3 source" src="./code_sandbox/snaps/js-continue-03-code.png" />
+
+<img alt="js-continue example 3 result" src="./code_sandbox/snaps/js-continue-03-result.png" />
+
+- [x] **Outcome:** `continue loop2` skips only inner **3**. Each outer pass adds **124**, so text is **124124124124**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4172,13 +5161,13 @@ Then open `http://127.0.0.1:8770/js-continue/`.
 
 ## Questions and Answers
 
-### Question 1: What does `continue` do?
+### Question 1: What numbers remain when `continue` skips `i === 3` in `for (let i = 1; i < 10; i++)`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Skips the **rest of the current** iteration.
-- [x] The loop **keeps going** with the next pass.
+- [x] **1 2 4 5 6 7 8 9**.
+- [x] **3** is skipped; the loop does **not** stop.
 
 </details>
 
@@ -4192,27 +5181,46 @@ Then open `http://127.0.0.1:8770/js-continue/`.
 
 </details>
 
-### Question 3: What does `continue loop1` do in nested loops?
+### Question 3: What text does `continue loop1` produce?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Skips to the next iteration of the **outer** labeled loop.
-- [x] The inner loop does not finish that outer pass.
+- [x] **12121212**.
+- [x] At `i === 3` it jumps to the next **outer** `j`, so inner **4** is skipped.
 
 </details>
 
-### Question 4: What does `continue loop2` do?
+### Question 4: What text does `continue loop2` produce?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Skips only the **inner** loop’s current pass.
-- [x] The outer loop still runs its remaining inner iterations.
+- [x] **124124124124**.
+- [x] Only the inner pass **3** is skipped; **4** still runs.
 
 </details>
 
-### Question 5: Which statements can jump out of a `{ }` block?
+### Question 5: Why is there no `4` in each outer pass of `continue loop1`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `continue loop1` abandons the rest of that outer iteration, including remaining inner `i` values.
+
+</details>
+
+### Question 6: Do `continue loop1` and `break loop2` print the same digits in this nest?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes, both are 12121212** in this specific example.
+- [x] The meaning still differs: **continue outer** vs **break inner**.
+
+</details>
+
+### Question 7: Which statements can jump out of a `{ }` block?
 
 <details>
 <summary>Answer</summary>
@@ -4222,11 +5230,39 @@ Then open `http://127.0.0.1:8770/js-continue/`.
 
 </details>
 
+### Question 8: What is a label?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An identifier followed by a **colon** (`loop1:`).
+- [x] `continue labelname;` targets that loop.
+
+</details>
+
+### Question 9: After `continue` in a `for` loop, does exp3 (`i++`) still run?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** `continue` in `for` still runs the **update** expression, then re-tests the condition.
+
+</details>
+
+### Question 10: Does `continue` at `i === 3` prevent later values like 8 and 9?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Only that one pass is skipped. **8** and **9** still print.
+
+</details>
+
 </details>
 
 ## Summary
 
-**`continue`** skips the rest of **this** iteration and starts the next. Labels let it target an **outer** loop. Unlike `break`, the loop **does not stop**. Only `break` and `continue` jump out of a code block.
+`continue` skips **this** iteration: the 1..9 loop omits **3**. **`continue loop1`** → **12121212**; **`continue loop2`** → **124124124124**. The loop does **not** stop. Only `break` and `continue` jump out of a code block.
 
 ## References
 
@@ -4241,33 +5277,23 @@ Then open `http://127.0.0.1:8770/js-continue/`.
 
 ## Introduction
 
-**Control flow** is the **order** statements run. By default JavaScript goes **top to bottom, left to right**. Conditions, loops, jumps, and function calls **change** that order. JavaScript is **single-threaded** (one thing at a time) unless you use **async** APIs.
+**Control flow** is the **order** statements run. By default JavaScript goes **top to bottom, left to right**. Conditions, loops, jumps, and function calls **change** that order. JavaScript is **single-threaded** (one thing at a time) unless you use **async** APIs — that idea is a bullet here, not a separate Example.
 
 ## Detailed Explanation
 
-- [x] **Default flow**
-  - Sequential: `let x = 5; let y = 6; let z = x + y;` → **11**.
-- [x] **Conditional control flow**
-  - **`if`**, **`if...else`**, **`switch`**, ternary **`? :`**.
-  - Example: `age >= 18` → **Adult**, else **Minor**.
-- [x] **Loops (repetition)**
-  - **`for`**, **`while`**, **`do...while`**.
-  - Repeat until a condition is false (`i < 5`).
-- [x] **Jump statements**
-  - **`break`** — exit a loop or switch.
-  - **`continue`** — skip this iteration.
-  - **`return`** — exit a function.
-  - **`throw`** — jump to error handling.
-- [x] **Function flow**
-  - Functions are **callable, reusable** blocks.
-  - They run **when called**: `function myFunction(p1, p2) { return p1 * p2; }`.
-- [x] **Single-threaded**
-  - JavaScript does **one thing at a time**.
-  - Slow work (file/network) can **freeze** the page unless you use **asynchronous** programming (later Advanced chapter).
+- [x] **Default** — sequential: `x = 5`, `y = 6`, `z = x + y` → **11**.
+- [x] **Conditional** — `if` / `else` / `switch` / ternary. **age 20** → **Adult**; **age 16** → **Minor**.
+- [x] **Loops** — `for` / `while` / `do...while`. **`for i < 5`** prints 0–4.
+- [x] **Jumps** — `break`, `continue`, `return`, `throw`. **`break` at 3** leaves 0 1 2. **`return`** is shown via `myFunction(3, 4)` → **12**.
+- [x] **Single-threaded** — JavaScript does **one thing at a time**. A slow file or network call can **freeze** the page unless you use **asynchronous** APIs (later Advanced chapter). No extra Example; the point is the model, not a demo.
 
-Sandbox: `code_sandbox/js-control-flow/index.html`
+### **Example 1: Default sequential flow**
 
-<img alt="js-control-flow source" src="./code_sandbox/snaps/js-control-flow-code.png" />
+- [x] **Control flow** is the **order** statements run. By default JavaScript goes **top to bottom, left to right**.
+- [x] `let x = 5; let y = 6; let z = x + y;` runs in that order: x, then y, then the sum.
+- [x] **z** is **11**. Nothing branches or repeats yet.
+
+Sandbox: `code_sandbox/js-control-flow/sequential.html`
 
 ```javascript
 let x = 5;
@@ -4275,9 +5301,105 @@ let y = 6;
 let z = x + y;
 ```
 
-Rendered result:
+<img alt="js-control-flow example 1 source" src="./code_sandbox/snaps/js-control-flow-01-code.png" />
 
-<img alt="js-control-flow result" src="./code_sandbox/snaps/js-control-flow-result.png" />
+<img alt="js-control-flow example 1 result" src="./code_sandbox/snaps/js-control-flow-01-result.png" />
+
+- [x] **Outcome:** Sequential assignment yields **x = 5**, **y = 6**, **z = 11**.
+
+
+### **Example 2: Conditional `if` / `else` (age 20 Adult)**
+
+- [x] Conditions **branch** the flow: **`if`**, **`if...else`**, **`switch`**, ternary **`? :`**.
+- [x] `if (age >= 18) { text = "Adult"; } else { text = "Minor"; }`.
+- [x] Pin **`age = 20`** → **Adult**. The other branch: **age 16** would be **Minor** (called out in the labeled result).
+
+Sandbox: `code_sandbox/js-control-flow/conditional.html`
+
+```javascript
+let age = 20;
+let text = "Unknown";
+if (age >= 18) {
+  text = "Adult";
+} else {
+  text = "Minor";
+}
+```
+
+<img alt="js-control-flow example 2 source" src="./code_sandbox/snaps/js-control-flow-02-code.png" />
+
+<img alt="js-control-flow example 2 result" src="./code_sandbox/snaps/js-control-flow-02-result.png" />
+
+- [x] **Outcome:** **age 20** → **Adult**. The other branch **age 16** → **Minor**.
+
+
+### **Example 3: `for` loop i < 5**
+
+- [x] Loops **repeat** flow: **`for`**, **`while`**, **`do...while`**.
+- [x] `for (let i = 0; i < 5; i++)` keeps going until `i < 5` is false.
+- [x] Printed numbers: **0 1 2 3 4**.
+
+Sandbox: `code_sandbox/js-control-flow/for-loop.html`
+
+```javascript
+let text = "";
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "\n";
+}
+```
+
+<img alt="js-control-flow example 3 source" src="./code_sandbox/snaps/js-control-flow-03-code.png" />
+
+<img alt="js-control-flow example 3 result" src="./code_sandbox/snaps/js-control-flow-03-result.png" />
+
+- [x] **Outcome:** The loop text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
+
+
+### **Example 4: `break` when i === 3**
+
+- [x] **Jump** statements change flow abruptly: **`break`**, **`continue`**, **`return`**, **`throw`**.
+- [x] `break` **exits** a loop or switch. Here it stops when **i === 3** (before appending 3).
+- [x] Result: **The number is 0 The number is 1 The number is 2**.
+
+Sandbox: `code_sandbox/js-control-flow/break.html`
+
+```javascript
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) {
+    break;
+  }
+  text += "The number is " + i + "\n";
+}
+```
+
+<img alt="js-control-flow example 4 source" src="./code_sandbox/snaps/js-control-flow-04-code.png" />
+
+<img alt="js-control-flow example 4 result" src="./code_sandbox/snaps/js-control-flow-04-result.png" />
+
+- [x] **Outcome:** `break` at **i === 3** leaves **The number is 0 The number is 1 The number is 2**.
+
+
+### **Example 5: Function `myFunction(p1, p2)` returns p1 * p2**
+
+- [x] Functions are **callable, reusable** blocks. They run **when called**, not when defined.
+- [x] `function myFunction(p1, p2) { return p1 * p2; }` — **`return`** is a jump that **exits the function** with a value.
+- [x] Call **`myFunction(3, 4)`** → **12**.
+
+Sandbox: `code_sandbox/js-control-flow/function.html`
+
+```javascript
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+myFunction(3, 4);
+```
+
+<img alt="js-control-flow example 5 source" src="./code_sandbox/snaps/js-control-flow-05-code.png" />
+
+<img alt="js-control-flow example 5 result" src="./code_sandbox/snaps/js-control-flow-05-result.png" />
+
+- [x] **Outcome:** **myFunction(3, 4)** returns **12**. The function body runs only when it is **called**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4308,7 +5430,95 @@ Then open `http://127.0.0.1:8770/js-control-flow/`.
 
 </details>
 
-### Question 2: Which statements change flow with conditions?
+### Question 2: What is `z` after `let x = 5; let y = 6; let z = x + y`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **11**.
+
+</details>
+
+### Question 3: With `age = 20`, what does the `if` / `else` assign?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Adult**.
+- [x] `age >= 18` is true.
+
+</details>
+
+### Question 4: What would the other branch print for `age = 16`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Minor**.
+- [x] That is the `else` path shown in the labeled result.
+
+</details>
+
+### Question 5: What numbers does `for (let i = 0; i < 5; i++)` print?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **The number is 0** through **The number is 4**.
+
+</details>
+
+### Question 6: What does `break` at `i === 3` leave in the 0..9 loop?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **The number is 0 The number is 1 The number is 2**.
+
+</details>
+
+### Question 7: What does `myFunction(3, 4)` return when the body is `return p1 * p2`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **12**.
+- [x] The function runs **when it is called**, not when it is defined.
+
+</details>
+
+### Question 8: Name the four jump statements on this page.
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`break`** — exit a loop or switch.
+- [x] **`continue`** — skip this iteration.
+- [x] **`return`** — exit a function.
+- [x] **`throw`** — jump to error handling.
+
+</details>
+
+### Question 9: What does “JavaScript is single-threaded” mean?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It can do **one thing at a time**.
+- [x] Slow work can **freeze** the page unless you use **async** APIs.
+
+</details>
+
+### Question 10: When does a function change control flow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When it is **called**: execution jumps into the function, then **`return`** jumps back with a value (or `undefined`).
+
+</details>
+
+### Question 11: Which statements change flow with conditions?
 
 <details>
 <summary>Answer</summary>
@@ -4319,42 +5529,11 @@ Then open `http://127.0.0.1:8770/js-control-flow/`.
 
 </details>
 
-### Question 3: Name the four jump statements on this page.
-
-<details>
-<summary>Answer</summary>
-
-- [x] **`break`** — exit loop or switch.
-- [x] **`continue`** — skip this iteration.
-- [x] **`return`** — exit a function.
-- [x] **`throw`** — jump to error handling.
-
-</details>
-
-### Question 4: When does a function run?
-
-<details>
-<summary>Answer</summary>
-
-- [x] **When it is called**, not when it is defined.
-
-</details>
-
-### Question 5: What does “JavaScript is single-threaded” mean?
-
-<details>
-<summary>Answer</summary>
-
-- [x] It can do **one thing at a time**.
-- [x] Slow tasks can **freeze** the app unless you use **async** APIs.
-
-</details>
-
 </details>
 
 ## Summary
 
-Default flow is sequential. **Conditions** branch, **loops** repeat, **jumps** (`break`, `continue`, `return`, `throw`) cut across that order, and **functions** run when called. JavaScript is **single-threaded**; async work is covered later.
+Default flow is sequential (**z = 11**). **Conditions** branch (**age 20** → **Adult**). **Loops** repeat (**0–4**). **`break`** cuts the 0..9 loop to **0 1 2**. **`myFunction(3, 4)`** returns **12**. JavaScript is **single-threaded**; async work is covered later.
 
 ## References
 
@@ -4370,43 +5549,321 @@ Default flow is sequential. **Conditions** branch, **loops** repeat, **jumps** (
 
 ## Introduction
 
-**Strings** store **text**. Write them in **single** or **double** quotes (same result), or **backticks** (templates). Use **`length`**, **escape** quotes with `\`, and prefer **literals** over `new String()`.
+Strings store **text**. Write them with **single** or **double** quotes (same result), or **backticks** (templates). Use **`length`**, **escape** quotes with `\`, break long lines **after an operator** or with **`+`**, and prefer **literals** over `new String()`. Each Tryit on the W3Schools page is its own Example, the same grain as **JS Output**.
 
 ## Detailed Explanation
 
-- [x] **Quotes**
-  - Zero or more characters inside quotes: `let text = "John Doe";`
-  - `'Volvo XC60'` and `"Volvo XC60"` work the **same**.
-- [x] **Quotes inside quotes**
-  - Inner quotes must **differ** from the outer ones: `"It's alright"`, `'He is called "Johnny"'`.
-- [x] **Template strings (ES6)**
-  - Backticks: `` `He's often called "Johnny"` ``
-  - Allow both quote kinds inside, and **multiline** text.
-- [x] **`length`**
-  - `"ABCDEFGHIJKLMNOPQRSTUVWXYZ".length` is **26**.
-- [x] **Escape characters**
-  - `\"` `\'` `\\` put `"`, `'`, and `\` in a string.
-  - `\n` `\t` and similar exist; most do not matter in HTML.
-- [x] **Long lines**
-  - Break a statement **after an operator**, or split a string with **`+`**.
-- [x] **Do not use `new String()`**
-  - Literals are primitives: `let x = "John";`
-  - `new String("John")` is an **object** — slower, surprising `===` (literal vs object is **false**).
-  - Comparing two String **objects** with `==` / `===` is **false**.
+- [x] **Quotes** — `'text'` and `"text"` are the same; inner quotes must differ from the outer ones, or use a template / escape.
+- [x] **Escape** — `\"` `\'` `\\` put a quote or backslash in the string. Typewriter escapes like `\n` exist but do not matter in HTML.
+- [x] **Long lines** — break after an operator, or split a string with `+`. Templates may span lines.
+- [x] **Do not use `new String()`** — it is an object. `==` against a literal can be **true** while `===` is **false**; two String objects compare **false**.
 
-Sandbox: `code_sandbox/js-strings/index.html`
+### **Example 1: String with quotes**
 
-<img alt="js-strings source" src="./code_sandbox/snaps/js-strings-code.png" />
+- [x] A JavaScript string is **zero or more characters** written inside quotes.
+- [x] This Tryit stores the name **John Doe**.
+
+Sandbox: `code_sandbox/js-strings/quotes.html`
 
 ```javascript
 let text = "John Doe";
-let carName1 = "Volvo XC60";
-let carName2 = "Volvo XC60";
 ```
 
-Rendered result:
+<img alt="js-strings example 1 source" src="./code_sandbox/snaps/js-strings-01-code.png" />
 
-<img alt="js-strings result" src="./code_sandbox/snaps/js-strings-result.png" />
+<img alt="js-strings example 1 result" src="./code_sandbox/snaps/js-strings-01-result.png" />
+
+- [x] **Outcome:** The variable holds **John Doe**.
+
+
+### **Example 2: Single vs double quotes**
+
+- [x] You can use **single** or **double** quotes around a string.
+- [x] There is **no difference** between the two for ordinary text.
+
+Sandbox: `code_sandbox/js-strings/single-double.html`
+
+```javascript
+let carName1 = "Volvo XC60";
+let carName2 = 'Volvo XC60';
+```
+
+<img alt="js-strings example 2 source" src="./code_sandbox/snaps/js-strings-02-code.png" />
+
+<img alt="js-strings example 2 result" src="./code_sandbox/snaps/js-strings-02-result.png" />
+
+- [x] **Outcome:** Both values are **Volvo XC60**; they compare equal.
+
+
+### **Example 3: Quotes inside quotes**
+
+- [x] You can put quotes **inside** a string if they **do not match** the outer quotes.
+- [x] `"It's alright"` uses a double-quoted string so the apostrophe is legal.
+- [x] The third form uses single quotes around a name in **double** quotes.
+
+Sandbox: `code_sandbox/js-strings/quotes-inside.html`
+
+```javascript
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+```
+
+<img alt="js-strings example 3 source" src="./code_sandbox/snaps/js-strings-03-code.png" />
+
+<img alt="js-strings example 3 result" src="./code_sandbox/snaps/js-strings-03-result.png" />
+
+- [x] **Outcome:** The three strings are **It's alright**, **He is called 'Johnny'**, and **He is called "Johnny"**.
+
+
+### **Example 4: Template backticks with mixed quotes**
+
+- [x] **Template strings** (ES6) use **backticks** `` ` ``.
+- [x] Backticks allow **both** single and double quotes inside the same string.
+
+Sandbox: `code_sandbox/js-strings/template-quotes.html`
+
+```javascript
+let text = `He's often called "Johnny"`;
+```
+
+<img alt="js-strings example 4 source" src="./code_sandbox/snaps/js-strings-04-code.png" />
+
+<img alt="js-strings example 4 result" src="./code_sandbox/snaps/js-strings-04-result.png" />
+
+- [x] **Outcome:** The template prints **He's often called "Johnny"**.
+
+
+### **Example 5: `length` of A-Z**
+
+- [x] **`length`** is a **property**, not a method — no parentheses.
+- [x] It counts the characters in the string (UTF-16 code units).
+
+Sandbox: `code_sandbox/js-strings/length.html`
+
+```javascript
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+```
+
+<img alt="js-strings example 5 source" src="./code_sandbox/snaps/js-strings-05-code.png" />
+
+<img alt="js-strings example 5 result" src="./code_sandbox/snaps/js-strings-05-result.png" />
+
+- [x] **Outcome:** A-Z is **26** characters.
+
+
+### **Example 6: Escape \" double quote**
+
+- [x] JavaScript would **chop** `"We are the so-called "Vikings" ..."` at the inner quote.
+- [x] **`\"`** inserts a literal double quote inside a double-quoted string.
+
+Sandbox: `code_sandbox/js-strings/escape-double.html`
+
+```javascript
+let text = "We are the so-called \"Vikings\" from the north.";
+```
+
+<img alt="js-strings example 6 source" src="./code_sandbox/snaps/js-strings-06-code.png" />
+
+<img alt="js-strings example 6 result" src="./code_sandbox/snaps/js-strings-06-result.png" />
+
+- [x] **Outcome:** The printed text is **We are the so-called "Vikings" from the north.**
+
+
+### **Example 7: Escape \' single quote**
+
+- [x] **`\'`** inserts a literal apostrophe inside a single-quoted string.
+- [x] This is the other way to write **It's alright** without switching quote styles.
+
+Sandbox: `code_sandbox/js-strings/escape-single.html`
+
+```javascript
+let text = 'It\'s alright.';
+```
+
+<img alt="js-strings example 7 source" src="./code_sandbox/snaps/js-strings-07-code.png" />
+
+<img alt="js-strings example 7 result" src="./code_sandbox/snaps/js-strings-07-result.png" />
+
+- [x] **Outcome:** The printed text is **It's alright.**
+
+
+### **Example 8: Escape \\ backslash**
+
+- [x] **`\\`** inserts a literal **backslash**.
+- [x] The other typewriter-era escapes (`\n`, `\t`, `\b`, `\f`, `\r`, `\v`) are valid JS but do not matter in HTML.
+
+Sandbox: `code_sandbox/js-strings/escape-backslash.html`
+
+```javascript
+let text = "The character \\ is called backslash.";
+```
+
+<img alt="js-strings example 8 source" src="./code_sandbox/snaps/js-strings-08-code.png" />
+
+<img alt="js-strings example 8 result" src="./code_sandbox/snaps/js-strings-08-result.png" />
+
+- [x] **Outcome:** The printed text is **The character \ is called backslash.**
+
+
+### **Example 9: Break a long line after an operator**
+
+- [x] A **safe** place to break a statement is **after an operator** (here, after `=`).
+- [x] Do not break in the middle of a quoted string without `+` or a template.
+
+Sandbox: `code_sandbox/js-strings/break-operator.html`
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+```
+
+<img alt="js-strings example 9 source" src="./code_sandbox/snaps/js-strings-09-code.png" />
+
+<img alt="js-strings example 9 result" src="./code_sandbox/snaps/js-strings-09-result.png" />
+
+- [x] **Outcome:** The output is **Hello Dolly!**
+
+
+### **Example 10: Break a string with `+`**
+
+- [x] A safe way to split a **string** across lines is **string addition** with **`+`**.
+- [x] Each piece is its own quoted string; `+` concatenates them.
+
+Sandbox: `code_sandbox/js-strings/break-plus.html`
+
+```javascript
+document.getElementById("demo").innerHTML = "Hello " +
+"Dolly!";
+```
+
+<img alt="js-strings example 10 source" src="./code_sandbox/snaps/js-strings-10-code.png" />
+
+<img alt="js-strings example 10 result" src="./code_sandbox/snaps/js-strings-10-result.png" />
+
+- [x] **Outcome:** The joined string is **Hello Dolly!**
+
+
+### **Example 11: Multiline template string**
+
+- [x] Templates also allow **multiline** strings — newlines inside backticks are **kept**.
+- [x] This is the same backtick syntax as the quotes-inside example, now spanning lines.
+
+Sandbox: `code_sandbox/js-strings/multiline-template.html`
+
+```javascript
+let text =
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+```
+
+<img alt="js-strings example 11 source" src="./code_sandbox/snaps/js-strings-11-code.png" />
+
+<img alt="js-strings example 11 result" src="./code_sandbox/snaps/js-strings-11-result.png" />
+
+- [x] **Outcome:** The string keeps the line breaks: **The quick / brown fox / jumps over / the lazy dog**.
+
+
+### **Example 12: `new String()` vs a literal**
+
+- [x] Normally strings are **primitives** from literals: `let x = "John";`
+- [x] `new String("John")` creates a String **object**. Do **not** do this — it is slower and surprising.
+
+Sandbox: `code_sandbox/js-strings/string-objects.html`
+
+```javascript
+let x = "John";
+let y = new String("John");
+```
+
+<img alt="js-strings example 12 source" src="./code_sandbox/snaps/js-strings-12-code.png" />
+
+<img alt="js-strings example 12 result" src="./code_sandbox/snaps/js-strings-12-result.png" />
+
+- [x] **Outcome:** `x` is a **string** primitive; `y` is an **object**. Both display as **John**.
+
+
+### **Example 13: Literal `==` String object**
+
+- [x] **`==`** converts types, so a string literal and a String object with the same text compare **equal**.
+- [x] That hidden conversion is why `new String()` is a trap.
+
+Sandbox: `code_sandbox/js-strings/equal-loose.html`
+
+```javascript
+let x = "John";
+let y = new String("John");
+x == y;
+```
+
+<img alt="js-strings example 13 source" src="./code_sandbox/snaps/js-strings-13-code.png" />
+
+<img alt="js-strings example 13 result" src="./code_sandbox/snaps/js-strings-13-result.png" />
+
+- [x] **Outcome:** `x == y` is **true**.
+
+
+### **Example 14: Literal `===` String object**
+
+- [x] **`===`** requires the **same type** as well as the same value.
+- [x] A primitive string is **not** strictly equal to a String object.
+
+Sandbox: `code_sandbox/js-strings/equal-strict.html`
+
+```javascript
+let x = "John";
+let y = new String("John");
+x === y;
+```
+
+<img alt="js-strings example 14 source" src="./code_sandbox/snaps/js-strings-14-code.png" />
+
+<img alt="js-strings example 14 result" src="./code_sandbox/snaps/js-strings-14-result.png" />
+
+- [x] **Outcome:** `x === y` is **false**.
+
+
+### **Example 15: Two String objects with `==`**
+
+- [x] Comparing **two objects** with `==` still asks “are these the **same object**?”
+- [x] Two separately constructed String objects are never the same object.
+
+Sandbox: `code_sandbox/js-strings/two-objects-loose.html`
+
+```javascript
+let x = new String("John");
+let y = new String("John");
+x == y;
+```
+
+<img alt="js-strings example 15 source" src="./code_sandbox/snaps/js-strings-15-code.png" />
+
+<img alt="js-strings example 15 result" src="./code_sandbox/snaps/js-strings-15-result.png" />
+
+- [x] **Outcome:** `x == y` is **false**.
+
+
+### **Example 16: Two String objects with `===`**
+
+- [x] **`===`** between two objects is also identity: they must be the **same** object.
+- [x] Comparing two JavaScript objects **always returns false** when they are distinct instances.
+
+Sandbox: `code_sandbox/js-strings/two-objects-strict.html`
+
+```javascript
+let x = new String("John");
+let y = new String("John");
+x === y;
+```
+
+<img alt="js-strings example 16 source" src="./code_sandbox/snaps/js-strings-16-code.png" />
+
+<img alt="js-strings example 16 result" src="./code_sandbox/snaps/js-strings-16-result.png" />
+
+- [x] **Outcome:** `x === y` is **false**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4427,7 +5884,16 @@ Then open `http://127.0.0.1:8770/js-strings/`.
 
 ## Questions and Answers
 
-### Question 1: Is there a difference between `'text'` and `"text"`?
+### Question 1: What does `let text = "John Doe"` store?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The string **John Doe**.
+
+</details>
+
+### Question 2: Is `'Volvo XC60'` different from `"Volvo XC60"`?
 
 <details>
 <summary>Answer</summary>
@@ -4436,42 +5902,118 @@ Then open `http://127.0.0.1:8770/js-strings/`.
 
 </details>
 
-### Question 2: How do you put a quote inside a string?
+### Question 3: How do you put an apostrophe in a double-quoted string?
 
 <details>
 <summary>Answer</summary>
 
-- [x] Use the **other** quote style around the string.
-- [x] Or **escape** with `\'` or `\"`.
+- [x] Write `"It's alright"` — the inner `'` does not match the outer `"`.
+- [x] Or escape: `'It\'s alright.'`
 
 </details>
 
-### Question 3: How do template strings differ?
+### Question 4: What can a template store that a quoted string cannot without escapes?
 
 <details>
 <summary>Answer</summary>
 
-- [x] They use **backticks**.
-- [x] They allow **both** quote kinds inside and **multiline** text.
+- [x] **Both** quote kinds, and **multiline** text.
 
 </details>
 
-### Question 4: What does `length` return for A–Z?
+### Question 5: What does `"ABCDEFGHIJKLMNOPQRSTUVWXYZ".length` return?
 
 <details>
 <summary>Answer</summary>
 
 - [x] **26.**
+- [x] `length` is a **property**, not a method.
 
 </details>
 
-### Question 5: Why avoid `new String("John")`?
+### Question 6: How do you put double quotes inside a double-quoted string?
 
 <details>
 <summary>Answer</summary>
 
-- [x] It creates an **object**, not a primitive.
-- [x] It slows code and makes **`===`** fail against a string literal.
+- [x] Escape them: `\"Vikings\"`.
+- [x] The printed text is **We are the so-called "Vikings" from the north.**
+
+</details>
+
+### Question 7: What does `\` do in `'It\'s alright.'`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It inserts a literal **apostrophe**.
+
+</details>
+
+### Question 8: What does `"The character \\ is called backslash."` print?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **The character \ is called backslash.**
+
+</details>
+
+### Question 9: Where is a safe place to break a long statement?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **After an operator**, such as after `=`.
+- [x] The broken line still outputs **Hello Dolly!**
+
+</details>
+
+### Question 10: How do you split a string across two lines without a template?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **`+`**: `"Hello " + "Dolly!"`.
+- [x] The result is still **Hello Dolly!**
+
+</details>
+
+### Question 11: Does a multiline template keep the line breaks?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** Newlines inside backticks are part of the string.
+
+</details>
+
+### Question 12: What is `typeof new String("John")`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **object.** A literal `"John"` is **string**.
+
+</details>
+
+### Question 13: Is `"John" == new String("John")` true?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **true** with `==` (types convert).
+- [x] **false** with `===` (different types).
+
+</details>
+
+### Question 14: Are two `new String("John")` objects equal?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** `==` and `===` are both **false**.
+- [x] Comparing two distinct objects always returns false.
 
 </details>
 
@@ -4479,7 +6021,7 @@ Then open `http://127.0.0.1:8770/js-strings/`.
 
 ## Summary
 
-Strings are quoted text. Single and double quotes match; backticks add templates and multiline. Escape with `\`. Use **`length`**. Prefer **literals**; `new String()` is an object and surprises `===`.
+Strings are quoted text. Single and double quotes match; backticks add mixed quotes and multiline. Escape with `\`. `length` of A-Z is **26**. Break lines after an operator or with `+`. Prefer literals: `new String()` is an object, so `===` against a literal is **false** and two String objects never compare equal.
 
 ## References
 
@@ -4494,26 +6036,79 @@ Strings are quoted text. Single and double quotes match; backticks add templates
 
 ## Introduction
 
-**Template strings** (also called **template literals**) use **backticks** `` ` ``. They allow quotes inside the string, **multiline** text, and **`${…}` interpolation** of variables and expressions. ES6; modern browsers since 2017.
+Template strings (also called **template literals**) use **backticks** `` ` ``. They allow quotes inside the string, **multiline** text, and **`${...}` interpolation** of variables and expressions. ES6; modern browsers since 2017. Each Tryit is its own Example.
 
 ## Detailed Explanation
 
-- [x] **Back-tick syntax**
-  - ``let text = `Hello World!`;``
-- [x] **Quotes inside**
-  - `` `He's often called "Johnny"` ``
-- [x] **Multiline**
-  - Newlines inside backticks are **kept**.
-- [x] **Interpolation**
-  - `` `Welcome ${firstName}, ${lastName}!` ``
-- [x] **Expression substitution**
-  - `` `Total: ${(price * (1 + VAT)).toFixed(2)}` `` → **Total: 12.50** when price is 10 and VAT is 0.25.
-- [x] **HTML templates**
-  - You can build markup strings with backticks and a loop over tags (see the page’s HTML example).
+- [x] **Back-tick syntax** — `` let text = `Hello World!`; ``
+- [x] **Quotes and multiline** — both `'` and `"` are legal inside; newlines are kept.
+- [x] **Interpolation** — `` `Welcome ${firstName}, ${lastName}!` `` and expressions such as `` `Total: ${(price * (1 + VAT)).toFixed(2)}` ``.
+- [x] **HTML templates** — build markup with backticks and a loop over tags.
 
-Sandbox: `code_sandbox/js-string-templates/index.html`
+### **Example 1: Back-tick syntax**
 
-<img alt="js-string-templates source" src="./code_sandbox/snaps/js-string-templates-code.png" />
+- [x] Template strings use **backticks** `` ` `` rather than `""` or `''`.
+- [x] Also called **template literals**. ES6; modern browsers since 2017.
+
+Sandbox: `code_sandbox/js-string-templates/backticks.html`
+
+```javascript
+let text = `Hello World!`;
+```
+
+<img alt="js-string-templates example 1 source" src="./code_sandbox/snaps/js-string-templates-01-code.png" />
+
+<img alt="js-string-templates example 1 result" src="./code_sandbox/snaps/js-string-templates-01-result.png" />
+
+- [x] **Outcome:** The template stores **Hello World!**
+
+
+### **Example 2: Quotes inside a template**
+
+- [x] Templates allow **both** single and double quotes inside the string.
+- [x] No escape is required for `'` or `"` when the wrapper is a backtick.
+
+Sandbox: `code_sandbox/js-string-templates/quotes-inside.html`
+
+```javascript
+let text = `He's often called "Johnny"`;
+```
+
+<img alt="js-string-templates example 2 source" src="./code_sandbox/snaps/js-string-templates-02-code.png" />
+
+<img alt="js-string-templates example 2 result" src="./code_sandbox/snaps/js-string-templates-02-result.png" />
+
+- [x] **Outcome:** The result is **He's often called "Johnny"**.
+
+
+### **Example 3: Multiline template**
+
+- [x] Newlines typed inside backticks become **real newlines** in the string.
+- [x] You do not need `\n` or `+` to span lines.
+
+Sandbox: `code_sandbox/js-string-templates/multiline.html`
+
+```javascript
+let text =
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+```
+
+<img alt="js-string-templates example 3 source" src="./code_sandbox/snaps/js-string-templates-03-code.png" />
+
+<img alt="js-string-templates example 3 result" src="./code_sandbox/snaps/js-string-templates-03-result.png" />
+
+- [x] **Outcome:** The four lines are kept, starting with **The quick**.
+
+
+### **Example 4: Variable interpolation**
+
+- [x] Syntax: **`${...}`** inside backticks.
+- [x] Variables are substituted where the placeholders sit.
+
+Sandbox: `code_sandbox/js-string-templates/interpolation.html`
 
 ```javascript
 let firstName = "John";
@@ -4521,9 +6116,56 @@ let lastName = "Doe";
 let text = `Welcome ${firstName}, ${lastName}!`;
 ```
 
-Rendered result:
+<img alt="js-string-templates example 4 source" src="./code_sandbox/snaps/js-string-templates-04-code.png" />
 
-<img alt="js-string-templates result" src="./code_sandbox/snaps/js-string-templates-result.png" />
+<img alt="js-string-templates example 4 result" src="./code_sandbox/snaps/js-string-templates-04-result.png" />
+
+- [x] **Outcome:** The result is **Welcome John, Doe!**
+
+
+### **Example 5: Expression substitution**
+
+- [x] `${}` can hold a full **expression**, not just a variable name.
+- [x] `(price * (1 + VAT)).toFixed(2)` with **price 10** and **VAT 0.25** is **12.50**.
+
+Sandbox: `code_sandbox/js-string-templates/expression.html`
+
+```javascript
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+```
+
+<img alt="js-string-templates example 5 source" src="./code_sandbox/snaps/js-string-templates-05-code.png" />
+
+<img alt="js-string-templates example 5 result" src="./code_sandbox/snaps/js-string-templates-05-result.png" />
+
+- [x] **Outcome:** The result is **Total: 12.50**.
+
+
+### **Example 6: HTML templates**
+
+- [x] Templates are handy for building **markup** strings.
+- [x] Start with a header, **loop** the tags into list items, then close the list.
+- [x] This sandbox prints the generated HTML as text (same string W3Schools assigns with `innerHTML`).
+
+Sandbox: `code_sandbox/js-string-templates/html-template.html`
+
+```javascript
+let header = "Template Strings";
+let tags = ["template strings", "javascript", "es6"];
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+html += `</ul>`;
+```
+
+<img alt="js-string-templates example 6 source" src="./code_sandbox/snaps/js-string-templates-06-code.png" />
+
+<img alt="js-string-templates example 6 result" src="./code_sandbox/snaps/js-string-templates-06-result.png" />
+
+- [x] **Outcome:** The generated markup is **<h2>Template Strings</h2><ul><li>template strings</li><li>javascript</li><li>es6</li></ul>**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4553,7 +6195,34 @@ Then open `http://127.0.0.1:8770/js-string-templates/`.
 
 </details>
 
-### Question 2: How do you insert a variable?
+### Question 2: What does `` `Hello World!` `` store?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Hello World!**
+
+</details>
+
+### Question 3: Can a template contain both `'` and `"`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** Example: **He's often called "Johnny"**.
+
+</details>
+
+### Question 4: Do multiline templates keep the line breaks?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** You do not need `\n` or `+`.
+
+</details>
+
+### Question 5: How do you insert a variable?
 
 <details>
 <summary>Answer</summary>
@@ -4562,30 +6231,31 @@ Then open `http://127.0.0.1:8770/js-string-templates/`.
 
 </details>
 
-### Question 3: Can you put an expression in `${}`?
+### Question 6: What does `` `Welcome ${firstName}, ${lastName}!` `` print for John / Doe?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **Yes.** Example: `${(price * (1 + VAT)).toFixed(2)}`.
+- [x] **Welcome John, Doe!**
 
 </details>
 
-### Question 4: Do template strings allow multiline text?
+### Question 7: What is `` `Total: ${(price * (1 + VAT)).toFixed(2)}` `` when price is 10 and VAT is 0.25?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **Yes.** Newlines inside backticks are part of the string.
+- [x] **Total: 12.50**.
+- [x] 10 * 1.25 = 12.5, then `toFixed(2)` adds the cent.
 
 </details>
 
-### Question 5: When did browsers fully support this?
+### Question 8: What HTML does the tags loop produce?
 
 <details>
 <summary>Answer</summary>
 
-- [x] ES6 feature; modern browsers since **June 2017**.
+- [x] An **`<h2>Template Strings</h2>`** followed by a **`<ul>`** of three **`<li>`** items: template strings, javascript, es6.
 
 </details>
 
@@ -4593,7 +6263,7 @@ Then open `http://127.0.0.1:8770/js-string-templates/`.
 
 ## Summary
 
-Backtick strings hold quotes, multiple lines, and **`${…}`** substitutions (variables or expressions). They are ES6 template literals.
+Templates use backticks. They keep mixed quotes and multiline text, substitute `${variables}` and `${expressions}` (Welcome **John, Doe!**; **Total: 12.50**), and are a convenient way to build HTML strings in a loop.
 
 ## References
 
@@ -4607,46 +6277,881 @@ Backtick strings hold quotes, multiple lines, and **`${…}`** substitutions (va
 
 ## Introduction
 
-Strings are **primitive and immutable**. Every method returns a **new** string; the original is unchanged. This page covers **length**, character access, **slice/substring**, case, trim, pad, **replace**, and **split** (plus notes on deprecated `substr` and emoji-safe splitting).
+Strings are **primitive and immutable**. Every method returns a **new** value; the original is unchanged. This page walks **every Tryit**: `length`, character access, `concat`, `slice` / `substring` / deprecated `substr`, case, well-formed, trim, pad, repeat, `replace` / `replaceAll`, and `split` (including why `split("")` is unsafe on emoji). Same grain as **JS Output** — one Example per Tryit.
 
 ## Detailed Explanation
 
-- [x] **Immutable**
-  - Methods never edit in place; they **return a new string**.
-- [x] **`length`**
-  - `"ABCDEFGHIJKLMNOPQRSTUVWXYZ".length` → **26**.
-- [x] **Characters**
-  - `charAt(0)`, `charCodeAt(0)`, `codePointAt(0)`, ES2022 **`at(i)`** (supports **negative** indexes), and `text[0]`.
-  - `[]` looks like an array but is not; missing index is **`undefined`** (`charAt` returns `""`).
-  - `text[0] = "A"` does not change the string.
-- [x] **Parts**
-  - **`slice(start, end)`** — end not included; negatives count from the end. `"Apple, Banana, Kiwi".slice(7, 13)` → **Banana**.
-  - **`substring`** — like slice, but negative start/end become **0**.
-  - **`substr`** — second arg is **length**; **deprecated** (use `slice` / `substring`).
-- [x] **Case, trim, pad, repeat**
-  - `toUpperCase()` / `toLowerCase()`.
-  - `trim()`, `trimStart()`, `trimEnd()`.
-  - `padStart(4, "0")` / `padEnd`; pad a **string** (convert numbers first).
-  - `repeat(count)` copies the string.
-- [x] **Replace**
-  - `replace` changes the **first** match; case-sensitive unless `/i`.
-  - All matches: regex `/g`, or **`replaceAll()`** (ES2021).
-- [x] **`split`**
-  - Turns a string into an array (`""`, `","`, `" "`).
-  - `split("")` is **unsafe** for emojis (breaks UTF-16 surrogates). Prefer **`Intl.Segmenter`** for graphemes.
+- [x] **Immutable** — methods never edit in place; assign the return value if you need it.
+- [x] **Characters** — `charAt`, `charCodeAt`, `codePointAt`, ES2022 **`at()`** (negatives work), and `text[i]`. `text[0] = "A"` does not change the string.
+- [x] **Parts** — `slice(start, end)` (end not included; negatives from the end). `substring` treats negatives as 0. **`substr` is deprecated** (second arg is a length).
+- [x] **Replace / split** — `replace` changes the **first** match; `/g` or `replaceAll` changes every match. `split("")` breaks emoji; use **`Intl.Segmenter`**.
 
-Sandbox: `code_sandbox/js-string-methods/index.html`
+### **Example 1: `length`**
 
-<img alt="js-string-methods source" src="./code_sandbox/snaps/js-string-methods-code.png" />
+- [x] Strings are **primitive and immutable** — methods return a **new** string.
+- [x] **`length`** is a property. A-Z has **26** characters.
+
+Sandbox: `code_sandbox/js-string-methods/length.html`
+
+```javascript
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+```
+
+<img alt="js-string-methods example 1 source" src="./code_sandbox/snaps/js-string-methods-01-code.png" />
+
+<img alt="js-string-methods example 1 result" src="./code_sandbox/snaps/js-string-methods-01-result.png" />
+
+- [x] **Outcome:** The length is **26**.
+
+
+### **Example 2: `charAt(0)`**
+
+- [x] **`charAt(index)`** returns the character at that **0-based** position.
+- [x] A missing index returns **`""`**, not `undefined`.
+
+Sandbox: `code_sandbox/js-string-methods/charAt.html`
+
+```javascript
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+```
+
+<img alt="js-string-methods example 2 source" src="./code_sandbox/snaps/js-string-methods-02-code.png" />
+
+<img alt="js-string-methods example 2 result" src="./code_sandbox/snaps/js-string-methods-02-result.png" />
+
+- [x] **Outcome:** `charAt(0)` is **H**.
+
+
+### **Example 3: `charCodeAt(0)`**
+
+- [x] **`charCodeAt(index)`** returns the **UTF-16 code unit** (0-65535).
+- [x] For `'H'` that code is **72**.
+
+Sandbox: `code_sandbox/js-string-methods/charCodeAt.html`
+
+```javascript
+let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+```
+
+<img alt="js-string-methods example 3 source" src="./code_sandbox/snaps/js-string-methods-03-code.png" />
+
+<img alt="js-string-methods example 3 result" src="./code_sandbox/snaps/js-string-methods-03-result.png" />
+
+- [x] **Outcome:** The code is **72**.
+
+
+### **Example 4: `codePointAt(0)`**
+
+- [x] **`codePointAt(index)`** returns the Unicode **code point**.
+- [x] For BMP characters like `'H'` it matches `charCodeAt`. Prefer it for emoji.
+
+Sandbox: `code_sandbox/js-string-methods/codePointAt.html`
+
+```javascript
+let text = "HELLO WORLD";
+let code = text.codePointAt(0);
+```
+
+<img alt="js-string-methods example 4 source" src="./code_sandbox/snaps/js-string-methods-04-code.png" />
+
+<img alt="js-string-methods example 4 result" src="./code_sandbox/snaps/js-string-methods-04-result.png" />
+
+- [x] **Outcome:** The code point of **H** is **72**.
+
+
+### **Example 5: `at(2)`**
+
+- [x] ES2022 **`at(index)`** returns the character at that index.
+- [x] `at(2)` is the **third** character (indexes start at 0).
+
+Sandbox: `code_sandbox/js-string-methods/at.html`
+
+```javascript
+const name = "W3Schools";
+let letter = name.at(2);
+```
+
+<img alt="js-string-methods example 5 source" src="./code_sandbox/snaps/js-string-methods-05-code.png" />
+
+<img alt="js-string-methods example 5 result" src="./code_sandbox/snaps/js-string-methods-05-result.png" />
+
+- [x] **Outcome:** `at(2)` is **S**.
+
+
+### **Example 6: Property access `[2]`**
+
+- [x] `name[2]` is the older **property-access** way to get the third character.
+- [x] Same result as `at(2)` for a non-negative index.
+
+Sandbox: `code_sandbox/js-string-methods/property-2.html`
+
+```javascript
+const name = "W3Schools";
+let letter = name[2];
+```
+
+<img alt="js-string-methods example 6 source" src="./code_sandbox/snaps/js-string-methods-06-code.png" />
+
+<img alt="js-string-methods example 6 result" src="./code_sandbox/snaps/js-string-methods-06-result.png" />
+
+- [x] **Outcome:** `name[2]` is **S**.
+
+
+### **Example 7: `at(-5)`**
+
+- [x] **`at()` allows negative indexes**; `charAt()` does not.
+- [x] `at(-5)` is the fifth character **from the end**.
+
+Sandbox: `code_sandbox/js-string-methods/at-neg5.html`
+
+```javascript
+const name = "W3Schools";
+let letter = name.at(-5);
+```
+
+<img alt="js-string-methods example 7 source" src="./code_sandbox/snaps/js-string-methods-07-code.png" />
+
+<img alt="js-string-methods example 7 result" src="./code_sandbox/snaps/js-string-methods-07-result.png" />
+
+- [x] **Outcome:** `at(-5)` is **h**.
+
+
+### **Example 8: Property access `[0]`**
+
+- [x] `text[0]` looks like an array index, but **strings are not arrays**.
+- [x] A missing index is **`undefined`** (`charAt` would return `""`).
+- [x] Property access is **read-only**.
+
+Sandbox: `code_sandbox/js-string-methods/property-0.html`
+
+```javascript
+let text = "HELLO WORLD";
+let char = text[0];
+```
+
+<img alt="js-string-methods example 8 source" src="./code_sandbox/snaps/js-string-methods-08-code.png" />
+
+<img alt="js-string-methods example 8 result" src="./code_sandbox/snaps/js-string-methods-08-result.png" />
+
+- [x] **Outcome:** `text[0]` is **H**. `text[99]` is **undefined**.
+
+
+### **Example 9: Sloppy mode `text[0] = "A"`**
+
+- [x] In **sloppy mode**, `text[0] = "A"` does **not** throw and does **not** change the string.
+- [x] Strings are immutable. The assignment is silently ignored.
+
+Sandbox: `code_sandbox/js-string-methods/sloppy-assign.html`
+
+```javascript
+let text = "HELLO WORLD";
+try {
+  text[0] = "A";
+} catch (err) {
+  text = err.message;
+}
+```
+
+<img alt="js-string-methods example 9 source" src="./code_sandbox/snaps/js-string-methods-09-code.png" />
+
+<img alt="js-string-methods example 9 result" src="./code_sandbox/snaps/js-string-methods-09-result.png" />
+
+- [x] **Outcome:** No exception. The string is still **HELLO WORLD** (`text[0]` remains **H**).
+
+
+### **Example 10: `concat()` Hello World**
+
+- [x] **`concat()`** joins two or more strings and returns a **new** string.
+- [x] Same result as **`+`**: `"Hello" + " " + "World"`.
+
+Sandbox: `code_sandbox/js-string-methods/concat.html`
+
+```javascript
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+```
+
+<img alt="js-string-methods example 10 source" src="./code_sandbox/snaps/js-string-methods-10-code.png" />
+
+<img alt="js-string-methods example 10 result" src="./code_sandbox/snaps/js-string-methods-10-result.png" />
+
+- [x] **Outcome:** The joined string is **Hello World**.
+
+
+### **Example 11: `slice(7, 13)`**
+
+- [x] **`slice(start, end)`** copies a section; **end is not included**.
+- [x] Positions start at **0**. On `"Apple, Banana, Kiwi"`, index 7 is **B**.
+
+Sandbox: `code_sandbox/js-string-methods/slice-7-13.html`
 
 ```javascript
 let text = "Apple, Banana, Kiwi";
 let part = text.slice(7, 13);
 ```
 
-Rendered result:
+<img alt="js-string-methods example 11 source" src="./code_sandbox/snaps/js-string-methods-11-code.png" />
 
-<img alt="js-string-methods result" src="./code_sandbox/snaps/js-string-methods-result.png" />
+<img alt="js-string-methods example 11 result" src="./code_sandbox/snaps/js-string-methods-11-result.png" />
+
+- [x] **Outcome:** `slice(7, 13)` is **Banana**.
+
+
+### **Example 12: `slice(7)`**
+
+- [x] Omit the second parameter to take **the rest** of the string.
+
+Sandbox: `code_sandbox/js-string-methods/slice-7.html`
+
+```javascript
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7);
+```
+
+<img alt="js-string-methods example 12 source" src="./code_sandbox/snaps/js-string-methods-12-code.png" />
+
+<img alt="js-string-methods example 12 result" src="./code_sandbox/snaps/js-string-methods-12-result.png" />
+
+- [x] **Outcome:** `slice(7)` is **Banana, Kiwi**.
+
+
+### **Example 13: `slice(-12)`**
+
+- [x] A **negative** parameter counts from the **end** of the string.
+
+Sandbox: `code_sandbox/js-string-methods/slice-neg12.html`
+
+```javascript
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+```
+
+<img alt="js-string-methods example 13 source" src="./code_sandbox/snaps/js-string-methods-13-code.png" />
+
+<img alt="js-string-methods example 13 result" src="./code_sandbox/snaps/js-string-methods-13-result.png" />
+
+- [x] **Outcome:** `slice(-12)` is **Banana, Kiwi**.
+
+
+### **Example 14: `slice(-12, -6)`**
+
+- [x] Both start and end may be negative; end is still **not included**.
+
+Sandbox: `code_sandbox/js-string-methods/slice-neg12-neg6.html`
+
+```javascript
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12, -6);
+```
+
+<img alt="js-string-methods example 14 source" src="./code_sandbox/snaps/js-string-methods-14-code.png" />
+
+<img alt="js-string-methods example 14 result" src="./code_sandbox/snaps/js-string-methods-14-result.png" />
+
+- [x] **Outcome:** `slice(-12, -6)` is **Banana**.
+
+
+### **Example 15: `substring(7, 13)`**
+
+- [x] `substring()` is like `slice()`, but **negative** start/end become **0**.
+- [x] If start > end, `substring` **swaps** them; `slice` returns empty.
+
+Sandbox: `code_sandbox/js-string-methods/substring.html`
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+```
+
+<img alt="js-string-methods example 15 source" src="./code_sandbox/snaps/js-string-methods-15-code.png" />
+
+<img alt="js-string-methods example 15 result" src="./code_sandbox/snaps/js-string-methods-15-result.png" />
+
+- [x] **Outcome:** `substring(7, 13)` is **Banana**.
+
+
+### **Example 16: `substr(7, 6)` (deprecated)**
+
+- [x] **Deprecated.** The second argument is a **length**, not an end index.
+- [x] Use **`substring()`** or **`slice()`** in new code. Still runs for compatibility.
+
+Sandbox: `code_sandbox/js-string-methods/substr-7-6.html`
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+```
+
+<img alt="js-string-methods example 16 source" src="./code_sandbox/snaps/js-string-methods-16-code.png" />
+
+<img alt="js-string-methods example 16 result" src="./code_sandbox/snaps/js-string-methods-16-result.png" />
+
+- [x] **Outcome:** `substr(7, 6)` is **Banana**. Prefer **slice/substring**.
+
+
+### **Example 17: `substr(7)` (deprecated)**
+
+- [x] Omit the second parameter and `substr` takes the **rest** of the string.
+- [x] Still **deprecated**.
+
+Sandbox: `code_sandbox/js-string-methods/substr-7.html`
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7);
+```
+
+<img alt="js-string-methods example 17 source" src="./code_sandbox/snaps/js-string-methods-17-code.png" />
+
+<img alt="js-string-methods example 17 result" src="./code_sandbox/snaps/js-string-methods-17-result.png" />
+
+- [x] **Outcome:** `substr(7)` is **Banana, Kiwi**.
+
+
+### **Example 18: `substr(-4)` (deprecated)**
+
+- [x] A **negative** start counts from the end (length 4 here is **Kiwi**).
+- [x] Do not use `substr` in new code.
+
+Sandbox: `code_sandbox/js-string-methods/substr-neg4.html`
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(-4);
+```
+
+<img alt="js-string-methods example 18 source" src="./code_sandbox/snaps/js-string-methods-18-code.png" />
+
+<img alt="js-string-methods example 18 result" src="./code_sandbox/snaps/js-string-methods-18-result.png" />
+
+- [x] **Outcome:** `substr(-4)` is **Kiwi**.
+
+
+### **Example 19: `toUpperCase()`**
+
+- [x] Returns a **new** string with all letters in upper case.
+- [x] The original string is unchanged.
+
+Sandbox: `code_sandbox/js-string-methods/toUpperCase.html`
+
+```javascript
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+```
+
+<img alt="js-string-methods example 19 source" src="./code_sandbox/snaps/js-string-methods-19-code.png" />
+
+<img alt="js-string-methods example 19 result" src="./code_sandbox/snaps/js-string-methods-19-result.png" />
+
+- [x] **Outcome:** The new string is **HELLO WORLD!**; the original is still **Hello World!**
+
+
+### **Example 20: `toLowerCase()`**
+
+- [x] Returns a **new** string with all letters in lower case.
+
+Sandbox: `code_sandbox/js-string-methods/toLowerCase.html`
+
+```javascript
+let text1 = "Hello World!";
+let text2 = text1.toLowerCase();
+```
+
+<img alt="js-string-methods example 20 source" src="./code_sandbox/snaps/js-string-methods-20-code.png" />
+
+<img alt="js-string-methods example 20 result" src="./code_sandbox/snaps/js-string-methods-20-result.png" />
+
+- [x] **Outcome:** The result is **hello world!**
+
+
+### **Example 21: `isWellFormed()` true**
+
+- [x] Returns **`true`** if the string has no **lone surrogates** (broken UTF-16 pairs).
+- [x] Ordinary text like `Hello world!` is well formed.
+
+Sandbox: `code_sandbox/js-string-methods/isWellFormed-ok.html`
+
+```javascript
+let text = "Hello world!";
+let result = text.isWellFormed();
+```
+
+<img alt="js-string-methods example 21 source" src="./code_sandbox/snaps/js-string-methods-21-code.png" />
+
+<img alt="js-string-methods example 21 result" src="./code_sandbox/snaps/js-string-methods-21-result.png" />
+
+- [x] **Outcome:** **true** — this string is well formed.
+
+
+### **Example 22: `isWellFormed()` lone surrogate**
+
+- [x] A lone `\uD800` is not a valid UTF-16 pair, so the string is **not** well formed.
+
+Sandbox: `code_sandbox/js-string-methods/isWellFormed-bad.html`
+
+```javascript
+let text = "Hello World \uD800";
+let result = text.isWellFormed();
+```
+
+<img alt="js-string-methods example 22 source" src="./code_sandbox/snaps/js-string-methods-22-code.png" />
+
+<img alt="js-string-methods example 22 result" src="./code_sandbox/snaps/js-string-methods-22-result.png" />
+
+- [x] **Outcome:** **false** — the lone surrogate makes the string ill-formed.
+
+
+### **Example 23: `toWellFormed()`**
+
+- [x] Returns a new string where **lone surrogates** are replaced with **U+FFFD** (`�`).
+
+Sandbox: `code_sandbox/js-string-methods/toWellFormed.html`
+
+```javascript
+let text = "Hello World \uD800";
+let result = text.toWellFormed();
+```
+
+<img alt="js-string-methods example 23 source" src="./code_sandbox/snaps/js-string-methods-23-code.png" />
+
+<img alt="js-string-methods example 23 result" src="./code_sandbox/snaps/js-string-methods-23-result.png" />
+
+- [x] **Outcome:** The original is **not** well formed; `toWellFormed()` replaces the lone surrogate with **�**.
+
+
+### **Example 24: `trim()`**
+
+- [x] Removes **whitespace from both ends**. Spaces in the **middle** stay.
+
+Sandbox: `code_sandbox/js-string-methods/trim.html`
+
+```javascript
+let text1 = " Hello World! ";
+let text2 = text1.trim();
+```
+
+<img alt="js-string-methods example 24 source" src="./code_sandbox/snaps/js-string-methods-24-code.png" />
+
+<img alt="js-string-methods example 24 result" src="./code_sandbox/snaps/js-string-methods-24-result.png" />
+
+- [x] **Outcome:** The trimmed value is **'Hello World!'**.
+
+
+### **Example 25: `trimStart()`**
+
+- [x] Removes whitespace from the **start only** (ES2019). Alias: `trimLeft()`.
+
+Sandbox: `code_sandbox/js-string-methods/trimStart.html`
+
+```javascript
+let text1 = " Hello World! ";
+let text2 = text1.trimStart();
+```
+
+<img alt="js-string-methods example 25 source" src="./code_sandbox/snaps/js-string-methods-25-code.png" />
+
+<img alt="js-string-methods example 25 result" src="./code_sandbox/snaps/js-string-methods-25-result.png" />
+
+- [x] **Outcome:** Leading space is gone; trailing space remains: **'Hello World! '**.
+
+
+### **Example 26: `trimEnd()`**
+
+- [x] Removes whitespace from the **end only** (ES2019). Alias: `trimRight()`.
+
+Sandbox: `code_sandbox/js-string-methods/trimEnd.html`
+
+```javascript
+let text1 = " Hello World! ";
+let text2 = text1.trimEnd();
+```
+
+<img alt="js-string-methods example 26 source" src="./code_sandbox/snaps/js-string-methods-26-code.png" />
+
+<img alt="js-string-methods example 26 result" src="./code_sandbox/snaps/js-string-methods-26-result.png" />
+
+- [x] **Outcome:** Trailing space is gone; leading space remains: **' Hello World!'**.
+
+
+### **Example 27: `padStart(4, "0")`**
+
+- [x] Pads the **start** until the string reaches the given length.
+- [x] `"5".padStart(4, "0")` is a typical **zero-pad**.
+
+Sandbox: `code_sandbox/js-string-methods/padStart-0.html`
+
+```javascript
+let text = "5";
+let padded = text.padStart(4, "0");
+```
+
+<img alt="js-string-methods example 27 source" src="./code_sandbox/snaps/js-string-methods-27-code.png" />
+
+<img alt="js-string-methods example 27 result" src="./code_sandbox/snaps/js-string-methods-27-result.png" />
+
+- [x] **Outcome:** The result is **0005**.
+
+
+### **Example 28: `padStart(4, "x")`**
+
+- [x] The pad string can be any text, not just zeros.
+
+Sandbox: `code_sandbox/js-string-methods/padStart-x.html`
+
+```javascript
+let text = "5";
+let padded = text.padStart(4, "x");
+```
+
+<img alt="js-string-methods example 28 source" src="./code_sandbox/snaps/js-string-methods-28-code.png" />
+
+<img alt="js-string-methods example 28 result" src="./code_sandbox/snaps/js-string-methods-28-result.png" />
+
+- [x] **Outcome:** The result is **xxx5**.
+
+
+### **Example 29: `padStart` on a number via `toString()`**
+
+- [x] `padStart` is a **string** method. Convert a number with **`toString()`** first.
+
+Sandbox: `code_sandbox/js-string-methods/padStart-number.html`
+
+```javascript
+let numb = 5;
+let text = numb.toString();
+let padded = text.padStart(4, "0");
+```
+
+<img alt="js-string-methods example 29 source" src="./code_sandbox/snaps/js-string-methods-29-code.png" />
+
+<img alt="js-string-methods example 29 result" src="./code_sandbox/snaps/js-string-methods-29-result.png" />
+
+- [x] **Outcome:** The padded number-as-string is **0005**.
+
+
+### **Example 30: `padEnd(4, "0")`**
+
+- [x] Pads the **end** until the string reaches the given length.
+
+Sandbox: `code_sandbox/js-string-methods/padEnd-0.html`
+
+```javascript
+let text = "5";
+let padded = text.padEnd(4, "0");
+```
+
+<img alt="js-string-methods example 30 source" src="./code_sandbox/snaps/js-string-methods-30-code.png" />
+
+<img alt="js-string-methods example 30 result" src="./code_sandbox/snaps/js-string-methods-30-result.png" />
+
+- [x] **Outcome:** The result is **5000**.
+
+
+### **Example 31: `padEnd(4, "x")`**
+
+- [x] Pad character **x** is appended until length 4.
+
+Sandbox: `code_sandbox/js-string-methods/padEnd-x.html`
+
+```javascript
+let text = "5";
+let padded = text.padEnd(4, "x");
+```
+
+<img alt="js-string-methods example 31 source" src="./code_sandbox/snaps/js-string-methods-31-code.png" />
+
+<img alt="js-string-methods example 31 result" src="./code_sandbox/snaps/js-string-methods-31-result.png" />
+
+- [x] **Outcome:** The result is **5xxx**.
+
+
+### **Example 32: `padEnd` on a number via `toString()`**
+
+- [x] Same rule as `padStart`: convert the number **first**.
+
+Sandbox: `code_sandbox/js-string-methods/padEnd-number.html`
+
+```javascript
+let numb = 5;
+let text = numb.toString();
+let padded = text.padEnd(4, "0");
+```
+
+<img alt="js-string-methods example 32 source" src="./code_sandbox/snaps/js-string-methods-32-code.png" />
+
+<img alt="js-string-methods example 32 result" src="./code_sandbox/snaps/js-string-methods-32-result.png" />
+
+- [x] **Outcome:** The padded number-as-string is **5000**.
+
+
+### **Example 33: `repeat(2)`**
+
+- [x] **`repeat(count)`** returns a **new** string with that many copies.
+- [x] Does not change the original. `count` must be a non-negative integer.
+
+Sandbox: `code_sandbox/js-string-methods/repeat-2.html`
+
+```javascript
+let text = "Hello world!";
+let result = text.repeat(2);
+```
+
+<img alt="js-string-methods example 33 source" src="./code_sandbox/snaps/js-string-methods-33-code.png" />
+
+<img alt="js-string-methods example 33 result" src="./code_sandbox/snaps/js-string-methods-33-result.png" />
+
+- [x] **Outcome:** The result is **Hello world!Hello world!**
+
+
+### **Example 34: `repeat(4)`**
+
+- [x] Four copies of `Hello world!` are concatenated, original unchanged.
+
+Sandbox: `code_sandbox/js-string-methods/repeat-4.html`
+
+```javascript
+let text = "Hello world!";
+let result = text.repeat(4);
+```
+
+<img alt="js-string-methods example 34 source" src="./code_sandbox/snaps/js-string-methods-34-code.png" />
+
+<img alt="js-string-methods example 34 result" src="./code_sandbox/snaps/js-string-methods-34-result.png" />
+
+- [x] **Outcome:** The result is **Hello world!** repeated **four** times.
+
+
+### **Example 35: `replace()` first Microsoft**
+
+- [x] `replace` returns a **new** string. It does **not** change the original.
+- [x] By default it replaces only the **first** match.
+
+Sandbox: `code_sandbox/js-string-methods/replace-first.html`
+
+```javascript
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+```
+
+<img alt="js-string-methods example 35 source" src="./code_sandbox/snaps/js-string-methods-35-code.png" />
+
+<img alt="js-string-methods example 35 result" src="./code_sandbox/snaps/js-string-methods-35-result.png" />
+
+- [x] **Outcome:** The result is **Please visit W3Schools!**
+
+
+### **Example 36: `replace()` only the first of two**
+
+- [x] With two **Microsoft**s, a string search still changes **only the first**.
+
+Sandbox: `code_sandbox/js-string-methods/replace-first-of-two.html`
+
+```javascript
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+```
+
+<img alt="js-string-methods example 36 source" src="./code_sandbox/snaps/js-string-methods-36-code.png" />
+
+<img alt="js-string-methods example 36 result" src="./code_sandbox/snaps/js-string-methods-36-result.png" />
+
+- [x] **Outcome:** Only the first match changes: **Please visit W3Schools and Microsoft!**
+
+
+### **Example 37: `replace("MICROSOFT")` case fail**
+
+- [x] `replace` is **case-sensitive** by default.
+- [x] Searching for **MICROSOFT** does not match **Microsoft**.
+
+Sandbox: `code_sandbox/js-string-methods/replace-case-fail.html`
+
+```javascript
+let text = "Please visit Microsoft!";
+let newText = text.replace("MICROSOFT", "W3Schools");
+```
+
+<img alt="js-string-methods example 37 source" src="./code_sandbox/snaps/js-string-methods-37-code.png" />
+
+<img alt="js-string-methods example 37 result" src="./code_sandbox/snaps/js-string-methods-37-result.png" />
+
+- [x] **Outcome:** Nothing changes: **Please visit Microsoft!**
+
+
+### **Example 38: `replace(/MICROSOFT/i)`**
+
+- [x] A regex with the **`/i`** flag ignores case.
+- [x] Regular expressions are written **without quotes**.
+
+Sandbox: `code_sandbox/js-string-methods/replace-i.html`
+
+```javascript
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+```
+
+<img alt="js-string-methods example 38 source" src="./code_sandbox/snaps/js-string-methods-38-code.png" />
+
+<img alt="js-string-methods example 38 result" src="./code_sandbox/snaps/js-string-methods-38-result.png" />
+
+- [x] **Outcome:** Case-insensitive replace yields **Please visit W3Schools!**
+
+
+### **Example 39: `replace(/Microsoft/g)`**
+
+- [x] The **`/g`** flag replaces **every** match.
+- [x] Without `/g` (or `replaceAll`) only the first match changes.
+
+Sandbox: `code_sandbox/js-string-methods/replace-g.html`
+
+```javascript
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace(/Microsoft/g, "W3Schools");
+```
+
+<img alt="js-string-methods example 39 source" src="./code_sandbox/snaps/js-string-methods-39-code.png" />
+
+<img alt="js-string-methods example 39 result" src="./code_sandbox/snaps/js-string-methods-39-result.png" />
+
+- [x] **Outcome:** Both matches change: **Please visit W3Schools and W3Schools!**
+
+
+### **Example 40: `replaceAll("Cats")`**
+
+- [x] **`replaceAll()`** (ES2021) replaces **every** string match.
+- [x] This Tryit then lowercases **cats** as well, so both casings become dogs.
+
+Sandbox: `code_sandbox/js-string-methods/replaceAll-cats.html`
+
+```javascript
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+text = text.replaceAll("Cats", "Dogs");
+text = text.replaceAll("cats", "dogs");
+```
+
+<img alt="js-string-methods example 40 source" src="./code_sandbox/snaps/js-string-methods-40-code.png" />
+
+<img alt="js-string-methods example 40 result" src="./code_sandbox/snaps/js-string-methods-40-result.png" />
+
+- [x] **Outcome:** The result is **I love dogs. Dogs are very easy to love. Dogs are very popular.**
+
+
+### **Example 41: `replaceAll(/Cats/g)`**
+
+- [x] If the search is a **regex**, it **must** include **`g`** or you get a **TypeError**.
+- [x] A second `/cats/g` pass handles the lowercase word.
+
+Sandbox: `code_sandbox/js-string-methods/replaceAll-regex.html`
+
+```javascript
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+text = text.replaceAll(/Cats/g, "Dogs");
+text = text.replaceAll(/cats/g, "dogs");
+```
+
+<img alt="js-string-methods example 41 source" src="./code_sandbox/snaps/js-string-methods-41-code.png" />
+
+<img alt="js-string-methods example 41 result" src="./code_sandbox/snaps/js-string-methods-41-result.png" />
+
+- [x] **Outcome:** Same result: **I love dogs. Dogs are very easy to love. Dogs are very popular.**
+
+
+### **Example 42: `split("")`**
+
+- [x] `split("")` returns an array of **single UTF-16 units**.
+- [x] Fine for plain ASCII; **unsafe for emoji** (see later examples).
+
+Sandbox: `code_sandbox/js-string-methods/split-chars.html`
+
+```javascript
+let text = "Hi fox!";
+const myArr = text.split("");
+```
+
+<img alt="js-string-methods example 42 source" src="./code_sandbox/snaps/js-string-methods-42-code.png" />
+
+<img alt="js-string-methods example 42 result" src="./code_sandbox/snaps/js-string-methods-42-result.png" />
+
+- [x] **Outcome:** The array is **["H","i"," ","f","o","x","!"]**.
+
+
+### **Example 43: `split(" ")`**
+
+- [x] Splitting on a **space** yields an array of **words**.
+- [x] The W3Schools snippet for this Tryit accidentally shows `split("")`; the intended separator is `" "`.
+
+Sandbox: `code_sandbox/js-string-methods/split-spaces.html`
+
+```javascript
+let text = "The quick brown fox.";
+const myArr = text.split(" ");
+```
+
+<img alt="js-string-methods example 43 source" src="./code_sandbox/snaps/js-string-methods-43-code.png" />
+
+<img alt="js-string-methods example 43 result" src="./code_sandbox/snaps/js-string-methods-43-result.png" />
+
+- [x] **Outcome:** The array is **["The","quick","brown","fox."]**.
+
+
+### **Example 44: `split()` with no separator**
+
+- [x] If the separator is **omitted**, the array contains the **whole string** at index `[0]`.
+
+Sandbox: `code_sandbox/js-string-methods/split-omitted.html`
+
+```javascript
+let text = "The quick brown fox.";
+const myArr = text.split();
+```
+
+<img alt="js-string-methods example 44 source" src="./code_sandbox/snaps/js-string-methods-44-code.png" />
+
+<img alt="js-string-methods example 44 result" src="./code_sandbox/snaps/js-string-methods-44-result.png" />
+
+- [x] **Outcome:** The array is **["The quick brown fox."]**.
+
+
+### **Example 45: `split("")` is unsafe for emoji**
+
+- [x] `split("")` splits **UTF-16 code units** and **breaks** surrogate pairs and ZWJ sequences.
+- [x] The family emoji is sliced into many broken fragments.
+
+Sandbox: `code_sandbox/js-string-methods/split-emoji.html`
+
+```javascript
+let text = "👨‍👩‍👧‍👦";
+const myArr = text.split("");
+```
+
+<img alt="js-string-methods example 45 source" src="./code_sandbox/snaps/js-string-methods-45-code.png" />
+
+<img alt="js-string-methods example 45 result" src="./code_sandbox/snaps/js-string-methods-45-result.png" />
+
+- [x] **Outcome:** The family emoji splits into **many** UTF-16 pieces (length **11**), not one character.
+
+
+### **Example 46: `Intl.Segmenter` safe split**
+
+- [x] **`Intl.Segmenter`** with `granularity: "grapheme"` keeps complex emoji together.
+- [x] This is the **safe** way to walk visible characters.
+
+Sandbox: `code_sandbox/js-string-methods/segmenter.html`
+
+```javascript
+let text = "👨‍👩‍👧‍👦";
+const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
+const myArr = Array.from(segmenter.segment(text), (s) => s.segment);
+```
+
+<img alt="js-string-methods example 46 source" src="./code_sandbox/snaps/js-string-methods-46-code.png" />
+
+<img alt="js-string-methods example 46 result" src="./code_sandbox/snaps/js-string-methods-46-result.png" />
+
+- [x] **Outcome:** The segmenter yields **one** grapheme: the family emoji (length **1**).
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4677,17 +7182,63 @@ Then open `http://127.0.0.1:8770/js-string-methods/`.
 
 </details>
 
-### Question 2: What can `at()` do that `charAt()` cannot?
+### Question 2: What is `"ABCDEFGHIJKLMNOPQRSTUVWXYZ".length`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **Negative indexes** (count from the end).
-- [x] ES2022 method.
+- [x] **26.**
 
 </details>
 
-### Question 3: What does `slice(7, 13)` return from `"Apple, Banana, Kiwi"`?
+### Question 3: What does `"HELLO WORLD".charAt(0)` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **H.**
+
+</details>
+
+### Question 4: What does `charCodeAt(0)` / `codePointAt(0)` return for `'H'`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **72.**
+
+</details>
+
+### Question 5: What is `"W3Schools".at(2)`? What about `at(-5)`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `at(2)` is **S**.
+- [x] `at(-5)` is **h** (fifth from the end).
+
+</details>
+
+### Question 6: Does `text[0] = "A"` change `"HELLO WORLD"` in sloppy mode?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** The assignment is ignored.
+- [x] The string stays **HELLO WORLD**.
+
+</details>
+
+### Question 7: What does `"Hello".concat(" ", "World")` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Hello World.**
+
+</details>
+
+### Question 8: What does `"Apple, Banana, Kiwi".slice(7, 13)` return?
 
 <details>
 <summary>Answer</summary>
@@ -4696,23 +7247,72 @@ Then open `http://127.0.0.1:8770/js-string-methods/`.
 
 </details>
 
-### Question 4: Should you use `substr()`?
+### Question 9: What does `slice(7)` return on that fruit string?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Banana, Kiwi.**
+
+</details>
+
+### Question 10: Should you use `substr()`?
 
 <details>
 <summary>Answer</summary>
 
 - [x] **No.** It is **deprecated**.
 - [x] Use **`slice()`** or **`substring()`**.
+- [x] `substr(7, 6)` is still **Banana** if you run it.
 
 </details>
 
-### Question 5: Why is `split("")` unsafe for emojis?
+### Question 11: What does `"5".padStart(4, "0")` return? `padEnd`?
 
 <details>
 <summary>Answer</summary>
 
-- [x] It splits **UTF-16 code units** and can break surrogate pairs.
-- [x] **`Intl.Segmenter`** is the safe grapheme split.
+- [x] `padStart` → **0005**.
+- [x] `padEnd` → **5000**.
+- [x] Convert numbers with **`toString()`** first.
+
+</details>
+
+### Question 12: Does `replace("MICROSOFT", ...)` change `Please visit Microsoft!`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** `replace` is case-sensitive.
+- [x] Use **`/MICROSOFT/i`** to ignore case.
+
+</details>
+
+### Question 13: How do you replace every Microsoft?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A regex with **`/g`**, or **`replaceAll()`**.
+
+</details>
+
+### Question 14: What does `"Hi fox!".split("")` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **["H","i"," ","f","o","x","!"]**.
+
+</details>
+
+### Question 15: Why is `split("")` unsafe for the family emoji?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It splits **UTF-16 code units** and breaks the ZWJ sequence (length **11**).
+- [x] **`Intl.Segmenter`** keeps **one** grapheme.
 
 </details>
 
@@ -4720,14 +7320,14 @@ Then open `http://127.0.0.1:8770/js-string-methods/`.
 
 ## Summary
 
-String methods return **new** strings. Use `length`, `charAt`/`at`, `slice`/`substring` (not deprecated `substr`), case/trim/pad/repeat, `replace`/`replaceAll`, and `split`. Avoid `split("")` on emoji text.
+String methods return **new** strings. Use `length`, `charAt` / `at` (negatives), `slice` / `substring` (not deprecated `substr`), case / well-formed / trim / pad / repeat, `replace` / `replaceAll`, and `split`. `text[0] = "A"` does nothing. `replace` changes the first match unless `/g`. Avoid `split("")` on emoji; use `Intl.Segmenter`.
 
 ## References
 
 - [JS String Methods (W3Schools)](https://www.w3schools.com/js/js_string_methods.asp)
 - [MDN: String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-- [MDN: String.prototype.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/at)
 - [MDN: String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+- [MDN: String.prototype.replaceAll()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
 - [MDN: Intl.Segmenter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter)
 
 </details>
@@ -4737,37 +7337,420 @@ String methods return **new** strings. Use `length`, `charAt`/`at`, `slice`/`sub
 
 ## Introduction
 
-Search methods find text **inside** a string: **position** (`indexOf`, `lastIndexOf`, `search`), **matches** (`match`, `matchAll`), or **true/false** (`includes`, `startsWith`, `endsWith`). Positions start at **0**. Missing text is **`-1`**.
+Search methods find text **inside** a string: **position** (`indexOf`, `lastIndexOf`, `search`), **matches** (`match`, `matchAll`), or **true/false** (`includes`, `startsWith`, `endsWith`). Positions start at **0**. Missing text is **`-1`**. Each Tryit is its own Example.
 
 ## Detailed Explanation
 
-- [x] **`indexOf` / `lastIndexOf`**
-  - First vs **last** occurrence; **`-1`** if not found.
-  - `"Please locate where 'locate' occurs!".indexOf("locate")` → **7**.
-  - Optional second arg: **start position**. `lastIndexOf` searches **backward** from that index.
-- [x] **`search`**
-  - String or **regex**; returns the match **position**.
-  - **Not** the same as `indexOf`: `search` has **no** start-index argument; `indexOf` cannot take a **regex**.
-- [x] **`match` / `matchAll`**
-  - `match` returns an **array** of matches (or first match without `/g`).
-  - `/ain/gi` on the rain sentence finds **ain, AIN, ain, ain**.
-  - `matchAll` (ES2020) returns an **iterator**; regex needs the **`g`** flag.
-- [x] **Boolean checks (ES6)**
-  - `includes("world")`, `startsWith("Hello")`, `endsWith("Doe")`.
-  - All **case-sensitive**; optional start (or length for `endsWith`) argument.
+- [x] **`indexOf` / `lastIndexOf`** — first vs last occurrence; **`-1`** if missing. Optional start index; `lastIndexOf` searches **backward**.
+- [x] **`search`** — string or **regex**; no start-index argument. `indexOf` cannot take a regex.
+- [x] **`match` / `matchAll`** — `match` returns an array (`/g` for all; `/gi` also ignores case). `matchAll` returns an iterator and needs **`g`** on a regex.
+- [x] **Booleans (ES6)** — `includes`, `startsWith`, `endsWith` are case-sensitive; optional start (or length for `endsWith`).
 
-Sandbox: `code_sandbox/js-string-search/index.html`
+### **Example 1: `indexOf("locate")`**
 
-<img alt="js-string-search source" src="./code_sandbox/snaps/js-string-search-code.png" />
+- [x] **`indexOf(search)`** returns the **first** index, or **`-1`** if missing.
+- [x] Positions start at **0**.
+
+Sandbox: `code_sandbox/js-string-search/indexOf.html`
 
 ```javascript
 let text = "Please locate where 'locate' occurs!";
 let index = text.indexOf("locate");
 ```
 
-Rendered result:
+<img alt="js-string-search example 1 source" src="./code_sandbox/snaps/js-string-search-01-code.png" />
 
-<img alt="js-string-search result" src="./code_sandbox/snaps/js-string-search-result.png" />
+<img alt="js-string-search example 1 result" src="./code_sandbox/snaps/js-string-search-01-result.png" />
+
+- [x] **Outcome:** First **locate** is at index **7**.
+
+
+### **Example 2: `lastIndexOf("locate")`**
+
+- [x] **`lastIndexOf`** returns the **last** occurrence, or **`-1`**.
+
+Sandbox: `code_sandbox/js-string-search/lastIndexOf.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("locate");
+```
+
+<img alt="js-string-search example 2 source" src="./code_sandbox/snaps/js-string-search-02-code.png" />
+
+<img alt="js-string-search example 2 result" src="./code_sandbox/snaps/js-string-search-02-result.png" />
+
+- [x] **Outcome:** Last **locate** is at index **21**.
+
+
+### **Example 3: `lastIndexOf("John")` is -1**
+
+- [x] Both `indexOf` and `lastIndexOf` return **`-1`** when the text is not found.
+
+Sandbox: `code_sandbox/js-string-search/lastIndexOf-missing.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("John");
+```
+
+<img alt="js-string-search example 3 source" src="./code_sandbox/snaps/js-string-search-03-code.png" />
+
+<img alt="js-string-search example 3 result" src="./code_sandbox/snaps/js-string-search-03-result.png" />
+
+- [x] **Outcome:** **John** is missing, so the result is **-1**.
+
+
+### **Example 4: `indexOf("locate", 15)`**
+
+- [x] The optional second argument is the **start index** (search forward from there).
+
+Sandbox: `code_sandbox/js-string-search/indexOf-start.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate", 15);
+```
+
+<img alt="js-string-search example 4 source" src="./code_sandbox/snaps/js-string-search-04-code.png" />
+
+<img alt="js-string-search example 4 result" src="./code_sandbox/snaps/js-string-search-04-result.png" />
+
+- [x] **Outcome:** From index 15 the next **locate** is at **21**.
+
+
+### **Example 5: `lastIndexOf("locate", 15)`**
+
+- [x] `lastIndexOf` with a start index searches **backward** from that position.
+- [x] Start at 15 and walk toward the beginning — you hit the first **locate**.
+
+Sandbox: `code_sandbox/js-string-search/lastIndexOf-start.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+text.lastIndexOf("locate", 15);
+```
+
+<img alt="js-string-search example 5 source" src="./code_sandbox/snaps/js-string-search-05-code.png" />
+
+<img alt="js-string-search example 5 result" src="./code_sandbox/snaps/js-string-search-05-result.png" />
+
+- [x] **Outcome:** Searching backward from 15 finds **7**.
+
+
+### **Example 6: `search("locate")`**
+
+- [x] **`search()`** returns the **position** of a match (string or regex), or **`-1`**.
+
+Sandbox: `code_sandbox/js-string-search/search-string.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+text.search("locate");
+```
+
+<img alt="js-string-search example 6 source" src="./code_sandbox/snaps/js-string-search-06-code.png" />
+
+<img alt="js-string-search example 6 result" src="./code_sandbox/snaps/js-string-search-06-result.png" />
+
+- [x] **Outcome:** `search("locate")` returns **7**.
+
+
+### **Example 7: `search(/locate/)`**
+
+- [x] `search` can take a **regular expression**; `indexOf` cannot.
+- [x] `search` has **no** start-index argument; `indexOf` does.
+
+Sandbox: `code_sandbox/js-string-search/search-regex.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+text.search(/locate/);
+```
+
+<img alt="js-string-search example 7 source" src="./code_sandbox/snaps/js-string-search-07-code.png" />
+
+<img alt="js-string-search example 7 result" src="./code_sandbox/snaps/js-string-search-07-result.png" />
+
+- [x] **Outcome:** `search(/locate/)` also returns **7**.
+
+
+### **Example 8: `match("ain")`**
+
+- [x] `match` returns an **array** of match info (or `null`).
+- [x] A plain string search finds the **first** **ain** (inside **rain**).
+
+Sandbox: `code_sandbox/js-string-search/match-string.html`
+
+```javascript
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match("ain");
+```
+
+<img alt="js-string-search example 8 source" src="./code_sandbox/snaps/js-string-search-08-code.png" />
+
+<img alt="js-string-search example 8 result" src="./code_sandbox/snaps/js-string-search-08-result.png" />
+
+- [x] **Outcome:** The first **ain** is at index **5** (in **rain**).
+
+
+### **Example 9: `match(/ain/)`**
+
+- [x] A regex **without `/g`** also returns details of the **first** match only.
+
+Sandbox: `code_sandbox/js-string-search/match-regex.html`
+
+```javascript
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/);
+```
+
+<img alt="js-string-search example 9 source" src="./code_sandbox/snaps/js-string-search-09-code.png" />
+
+<img alt="js-string-search example 9 result" src="./code_sandbox/snaps/js-string-search-09-result.png" />
+
+- [x] **Outcome:** First regex match is still **ain** at index **5**.
+
+
+### **Example 10: `match(/ain/g)`**
+
+- [x] **`/g`** (global) returns **all** matches as a simple array of strings.
+- [x] Without `/i`, **AIN** in SPAIN is **not** included.
+
+Sandbox: `code_sandbox/js-string-search/match-g.html`
+
+```javascript
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/g);
+```
+
+<img alt="js-string-search example 10 source" src="./code_sandbox/snaps/js-string-search-10-code.png" />
+
+<img alt="js-string-search example 10 result" src="./code_sandbox/snaps/js-string-search-10-result.png" />
+
+- [x] **Outcome:** The matches are **ain,ain,ain** (rain, mainly, plain).
+
+
+### **Example 11: `match(/ain/gi)`**
+
+- [x] **`/gi`** is global **and** case-insensitive, so **AIN** in SPAIN is included.
+
+Sandbox: `code_sandbox/js-string-search/match-gi.html`
+
+```javascript
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/gi);
+```
+
+<img alt="js-string-search example 11 source" src="./code_sandbox/snaps/js-string-search-11-code.png" />
+
+<img alt="js-string-search example 11 result" src="./code_sandbox/snaps/js-string-search-11-result.png" />
+
+- [x] **Outcome:** The matches are **ain,AIN,ain,ain**.
+
+
+### **Example 12: `matchAll("Cats")`**
+
+- [x] **`matchAll()`** (ES2020) returns an **iterator** of all matches.
+- [x] Turn it into an array with **`Array.from`**.
+
+Sandbox: `code_sandbox/js-string-search/matchAll-string.html`
+
+```javascript
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+const iterator = text.matchAll("Cats");
+```
+
+<img alt="js-string-search example 12 source" src="./code_sandbox/snaps/js-string-search-12-code.png" />
+
+<img alt="js-string-search example 12 result" src="./code_sandbox/snaps/js-string-search-12-result.png" />
+
+- [x] **Outcome:** The iterator yields **Cats, Cats** (two capitalized matches).
+
+
+### **Example 13: `matchAll(/Cats/g)`**
+
+- [x] If the argument is a regex, it **must** have the **`g`** flag or you get a **TypeError**.
+
+Sandbox: `code_sandbox/js-string-search/matchAll-g.html`
+
+```javascript
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+const iterator = text.matchAll(/Cats/g);
+```
+
+<img alt="js-string-search example 13 source" src="./code_sandbox/snaps/js-string-search-13-code.png" />
+
+<img alt="js-string-search example 13 result" src="./code_sandbox/snaps/js-string-search-13-result.png" />
+
+- [x] **Outcome:** The iterator yields **Cats, Cats**.
+
+
+### **Example 14: `matchAll(/Cats/gi)`**
+
+- [x] Add **`i`** to match **cats** as well as **Cats**.
+
+Sandbox: `code_sandbox/js-string-search/matchAll-gi.html`
+
+```javascript
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+const iterator = text.matchAll(/Cats/gi);
+```
+
+<img alt="js-string-search example 14 source" src="./code_sandbox/snaps/js-string-search-14-code.png" />
+
+<img alt="js-string-search example 14 result" src="./code_sandbox/snaps/js-string-search-14-result.png" />
+
+- [x] **Outcome:** The iterator yields **cats, Cats, Cats** (three matches).
+
+
+### **Example 15: `includes("world")`**
+
+- [x] **`includes`** returns **`true`** if the substring exists anywhere.
+- [x] Case-sensitive ES6 method.
+
+Sandbox: `code_sandbox/js-string-search/includes.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+```
+
+<img alt="js-string-search example 15 source" src="./code_sandbox/snaps/js-string-search-15-code.png" />
+
+<img alt="js-string-search example 15 result" src="./code_sandbox/snaps/js-string-search-15-result.png" />
+
+- [x] **Outcome:** **true** — **world** is in the string.
+
+
+### **Example 16: `includes("world", 12)`**
+
+- [x] The optional second argument is the **start index**.
+- [x] **world** ends before index 12, so the search misses it.
+
+Sandbox: `code_sandbox/js-string-search/includes-start.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.includes("world", 12);
+```
+
+<img alt="js-string-search example 16 source" src="./code_sandbox/snaps/js-string-search-16-code.png" />
+
+<img alt="js-string-search example 16 result" src="./code_sandbox/snaps/js-string-search-16-result.png" />
+
+- [x] **Outcome:** **false** — the search starts past **world**.
+
+
+### **Example 17: `startsWith("Hello")`**
+
+- [x] **`startsWith`** is **true** if the string **begins** with that text.
+- [x] Case-sensitive ES6 method.
+
+Sandbox: `code_sandbox/js-string-search/startsWith-hello.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello");
+```
+
+<img alt="js-string-search example 17 source" src="./code_sandbox/snaps/js-string-search-17-code.png" />
+
+<img alt="js-string-search example 17 result" src="./code_sandbox/snaps/js-string-search-17-result.png" />
+
+- [x] **Outcome:** **true**.
+
+
+### **Example 18: `startsWith("world")`**
+
+- [x] The string begins with **Hello**, not **world**.
+
+Sandbox: `code_sandbox/js-string-search/startsWith-world.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.startsWith("world");
+```
+
+<img alt="js-string-search example 18 source" src="./code_sandbox/snaps/js-string-search-18-code.png" />
+
+<img alt="js-string-search example 18 result" src="./code_sandbox/snaps/js-string-search-18-result.png" />
+
+- [x] **Outcome:** **false**.
+
+
+### **Example 19: `startsWith("world", 5)`**
+
+- [x] The optional start index shifts where “the beginning” is.
+- [x] Index **5** is the **space** before **world**, so this is still false.
+
+Sandbox: `code_sandbox/js-string-search/startsWith-world-5.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.startsWith("world", 5);
+```
+
+<img alt="js-string-search example 19 source" src="./code_sandbox/snaps/js-string-search-19-code.png" />
+
+<img alt="js-string-search example 19 result" src="./code_sandbox/snaps/js-string-search-19-result.png" />
+
+- [x] **Outcome:** **false** — index 5 is a space, not **w**.
+
+
+### **Example 20: `startsWith("world", 6)`**
+
+- [x] Index **6** is the **w** of **world**, so the check succeeds.
+
+Sandbox: `code_sandbox/js-string-search/startsWith-world-6.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.startsWith("world", 6);
+```
+
+<img alt="js-string-search example 20 source" src="./code_sandbox/snaps/js-string-search-20-code.png" />
+
+<img alt="js-string-search example 20 result" src="./code_sandbox/snaps/js-string-search-20-result.png" />
+
+- [x] **Outcome:** **true**.
+
+
+### **Example 21: `endsWith("Doe")`**
+
+- [x] **`endsWith`** is **true** if the string **ends** with that text.
+
+Sandbox: `code_sandbox/js-string-search/endsWith-doe.html`
+
+```javascript
+let text = "John Doe";
+text.endsWith("Doe");
+```
+
+<img alt="js-string-search example 21 source" src="./code_sandbox/snaps/js-string-search-21-code.png" />
+
+<img alt="js-string-search example 21 result" src="./code_sandbox/snaps/js-string-search-21-result.png" />
+
+- [x] **Outcome:** **true**.
+
+
+### **Example 22: `endsWith("world", 11)`**
+
+- [x] The optional second argument is a **length**: treat the string as if it were only that long.
+- [x] The first **11** characters of `"Hello world, ..."` are `"Hello world"`, which ends with **world**.
+
+Sandbox: `code_sandbox/js-string-search/endsWith-world-11.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.endsWith("world", 11);
+```
+
+<img alt="js-string-search example 22 source" src="./code_sandbox/snaps/js-string-search-22-code.png" />
+
+<img alt="js-string-search example 22 result" src="./code_sandbox/snaps/js-string-search-22-result.png" />
+
+- [x] **Outcome:** **true** — the 11-character prefix ends with **world**.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4788,50 +7771,126 @@ Then open `http://127.0.0.1:8770/js-string-search/`.
 
 ## Questions and Answers
 
-### Question 1: What does `indexOf` return if the text is missing?
+### Question 1: What does `indexOf("locate")` return on the Please locate string?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **`-1`.**
+- [x] **7** — the first **locate**.
 
 </details>
 
-### Question 2: How do `indexOf` and `search` differ?
+### Question 2: What does `lastIndexOf("locate")` return on that string?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **`search`** cannot take a **start position**.
-- [x] **`indexOf`** cannot take a **regular expression**.
+- [x] **21** — the last **locate**.
 
 </details>
 
-### Question 3: What does `lastIndexOf` do with a start index of 15?
+### Question 3: What does `lastIndexOf("John")` return?
 
 <details>
 <summary>Answer</summary>
 
-- [x] It searches **backward** from position 15 toward the start.
+- [x] **-1** — the text is missing.
 
 </details>
 
-### Question 4: What does `includes` return?
+### Question 4: What does `indexOf("locate", 15)` return?
 
 <details>
 <summary>Answer</summary>
 
-- [x] **`true`** or **`false`**.
-- [x] Case-sensitive ES6 method.
+- [x] **21** — search forward from index 15.
 
 </details>
 
-### Question 5: When does `match` return only the first match?
+### Question 5: What does `lastIndexOf("locate", 15)` return?
 
 <details>
 <summary>Answer</summary>
 
-- [x] When the regex has **no** `/g` (global) flag.
+- [x] **7** — search **backward** from 15.
+
+</details>
+
+### Question 6: How do `indexOf` and `search` differ?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`search`** can take a **regex** but **not** a start index.
+- [x] **`indexOf`** can take a start index but **not** a regex.
+- [x] Both return **7** for `"locate"` here.
+
+</details>
+
+### Question 7: What does `match(/ain/g)` find in the rain sentence?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **ain,ain,ain** — rain, mainly, plain.
+- [x] **AIN** is skipped without `/i`.
+
+</details>
+
+### Question 8: What does `match(/ain/gi)` find?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **ain,AIN,ain,ain**.
+
+</details>
+
+### Question 9: What does `matchAll(/Cats/gi)` yield on the cats sentence?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **cats, Cats, Cats** (three matches).
+- [x] `matchAll("Cats")` without `/i` yields only **Cats, Cats**.
+
+</details>
+
+### Question 10: What does `includes("world")` return? From index 12?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **true** from the start.
+- [x] **false** if you start at **12** (past **world**).
+
+</details>
+
+### Question 11: When is `startsWith("world")` true on the Hello world string?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **false** from the start or from index **5** (a space).
+- [x] **true** from index **6**.
+
+</details>
+
+### Question 12: What does `endsWith("Doe")` return for `"John Doe"`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **true.**
+
+</details>
+
+### Question 13: What does `endsWith("world", 11)` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **true** — the first 11 characters are **Hello world**.
 
 </details>
 
@@ -4839,13 +7898,14 @@ Then open `http://127.0.0.1:8770/js-string-search/`.
 
 ## Summary
 
-Use **`indexOf` / `lastIndexOf` / `search`** for positions (`-1` if missing), **`match` / `matchAll`** for match lists, and **`includes` / `startsWith` / `endsWith`** for booleans. `search` takes regex; `indexOf` takes a start index.
+Use **`indexOf` / `lastIndexOf` / `search`** for positions (`locate` at **7** / **21**, missing is **-1**), **`match` / `matchAll`** for match lists (`/ain/gi` → ain,AIN,ain,ain), and **`includes` / `startsWith` / `endsWith`** for booleans. `search` takes regex; `indexOf` takes a start index. `startsWith("world", 6)` is true; `endsWith("world", 11)` is true.
 
 ## References
 
 - [JS String Search (W3Schools)](https://www.w3schools.com/js/js_string_search.asp)
 - [MDN: String.prototype.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 - [MDN: String.prototype.search()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+- [MDN: String.prototype.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 - [MDN: String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 
 </details>
@@ -4855,33 +7915,768 @@ Use **`indexOf` / `lastIndexOf` / `search`** for positions (`-1` if missing), **
 
 ## Introduction
 
-This page is the **complete String reference** (revised July 2025): properties and methods from **`at()`** through **`valueOf()`**. All methods return a **new** value. HTML wrapper methods (`bold()`, `italics()`, …) are **deprecated** — use CSS and the DOM instead.
+This page is the **complete String reference** (revised July 2025): every **property and method** from **`at()`** through **`valueOf()`**, plus the old **HTML wrappers**. All methods return a **new** value — they do **not** change the original string. Each table row below is its own Example, the same grain as **JS Output**.
 
 ## Detailed Explanation
 
-- [x] **Core idea**
-  - Methods do **not** change the original string.
-- [x] **Useful names on the table**
-  - Access: `at`, `charAt`, `charCodeAt`, `codePointAt`, `length`.
-  - Search: `indexOf`, `lastIndexOf`, `includes`, `startsWith`, `endsWith`, `search`, `match`, `matchAll`.
-  - Transform: `slice`, `substring`, `concat`, `repeat`, `replace`, `replaceAll`, `split`, `trim` / `trimStart` / `trimEnd`, `padStart` / `padEnd`, case converters.
-  - **`substr()` is deprecated** — use `substring()` or `slice()`.
-- [x] **HTML wrappers (do not use)**
-  - `anchor`, `big`, `blink`, `bold`, `fixed`, `fontcolor`, `fontsize`, `italics`, `link`, `small`, `strike`, `sub`, `sup`.
-  - Deprecated; kept only for compatibility.
+- [x] **Core idea** — string methods never mutate the original; they return a new string (or a number / boolean / array / iterator).
+- [x] **Table grain** — one Example per reference-table row. Deprecated HTML wrappers are one grouped Example that still **runs every wrapper**.
+- [x] **`substr()` is deprecated** — use `substring()` or `slice()`.
 
-Sandbox: `code_sandbox/js-string-reference/index.html`
+### **Example 1: `at()`**
 
-<img alt="js-string-reference source" src="./code_sandbox/snaps/js-string-reference-code.png" />
+- [x] **`at(index)`** returns the character at that index (0-based).
+- [x] **Negative indexes** count from the end (`at(-1)` is the last character).
+- [x] ES2022. **`charAt()` cannot take negatives**; use `at()` when you want that.
+
+Sandbox: `code_sandbox/js-string-reference/at.html`
+
+```javascript
+const name = "W3Schools";
+name.at(2);
+name.at(-5);
+```
+
+<img alt="js-string-reference example 1 source" src="./code_sandbox/snaps/js-string-reference-01-code.png" />
+
+<img alt="js-string-reference example 1 result" src="./code_sandbox/snaps/js-string-reference-01-result.png" />
+
+- [x] **Outcome:** `at(2)` is **S** (third character); `at(-5)` is **h**.
+
+
+### **Example 2: `charAt()`**
+
+- [x] **`charAt(index)`** returns the character at that position.
+- [x] A missing index returns **`""`** (empty string), not `undefined`.
+- [x] Does **not** accept negative indexes.
+
+Sandbox: `code_sandbox/js-string-reference/charAt.html`
+
+```javascript
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+```
+
+<img alt="js-string-reference example 2 source" src="./code_sandbox/snaps/js-string-reference-02-code.png" />
+
+<img alt="js-string-reference example 2 result" src="./code_sandbox/snaps/js-string-reference-02-result.png" />
+
+- [x] **Outcome:** `charAt(0)` is **H**. `charAt(99)` is an **empty string**.
+
+
+### **Example 3: `charCodeAt()`**
+
+- [x] **`charCodeAt(index)`** returns the **UTF-16 code unit** (0–65535) at that index.
+- [x] For `'H'` that code is **72**.
+
+Sandbox: `code_sandbox/js-string-reference/charCodeAt.html`
+
+```javascript
+let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+```
+
+<img alt="js-string-reference example 3 source" src="./code_sandbox/snaps/js-string-reference-03-code.png" />
+
+<img alt="js-string-reference example 3 result" src="./code_sandbox/snaps/js-string-reference-03-result.png" />
+
+- [x] **Outcome:** **72** — the UTF-16 code for **H**.
+
+
+### **Example 4: `codePointAt()`**
+
+- [x] **`codePointAt(index)`** returns the Unicode **code point** at that index.
+- [x] For BMP characters like `'H'` it matches `charCodeAt`. It is the right choice for characters outside the BMP (emoji).
+
+Sandbox: `code_sandbox/js-string-reference/codePointAt.html`
+
+```javascript
+let text = "HELLO WORLD";
+let code = text.codePointAt(0);
+```
+
+<img alt="js-string-reference example 4 source" src="./code_sandbox/snaps/js-string-reference-04-code.png" />
+
+<img alt="js-string-reference example 4 result" src="./code_sandbox/snaps/js-string-reference-04-result.png" />
+
+- [x] **Outcome:** **72** for `'H'`.
+
+
+### **Example 5: `concat()`**
+
+- [x] **`concat()`** joins two or more strings and returns a **new** string.
+- [x] Same result as **`+`**: `"Hello" + " " + "World!"`.
+
+Sandbox: `code_sandbox/js-string-reference/concat.html`
+
+```javascript
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+```
+
+<img alt="js-string-reference example 5 source" src="./code_sandbox/snaps/js-string-reference-05-code.png" />
+
+<img alt="js-string-reference example 5 result" src="./code_sandbox/snaps/js-string-reference-05-result.png" />
+
+- [x] **Outcome:** The joined string is **Hello World**.
+
+
+### **Example 6: `constructor`**
+
+- [x] The **`constructor`** property is the function that created the instance — for a string that is **`String`**.
+- [x] This is a **property**, not a method you call for everyday text work.
+
+Sandbox: `code_sandbox/js-string-reference/constructor.html`
+
+```javascript
+let text = "Hello";
+text.constructor === String;
+```
+
+<img alt="js-string-reference example 6 source" src="./code_sandbox/snaps/js-string-reference-06-code.png" />
+
+<img alt="js-string-reference example 6 result" src="./code_sandbox/snaps/js-string-reference-06-result.png" />
+
+- [x] **Outcome:** `constructor === String` is **true**; the name is **String**.
+
+
+### **Example 7: `endsWith()`**
+
+- [x] **`endsWith(search)`** returns **`true`** if the string ends with that text.
+- [x] Case-sensitive. Optional second argument: treat the string as if it were only that long.
+
+Sandbox: `code_sandbox/js-string-reference/endsWith.html`
+
+```javascript
+let text = "John Doe";
+text.endsWith("Doe");
+```
+
+<img alt="js-string-reference example 7 source" src="./code_sandbox/snaps/js-string-reference-07-code.png" />
+
+<img alt="js-string-reference example 7 result" src="./code_sandbox/snaps/js-string-reference-07-result.png" />
+
+- [x] **Outcome:** **true** for "Doe"; **false** for "John".
+
+
+### **Example 8: `String.fromCharCode()`**
+
+- [x] **Static** method on **`String`** (not `text.fromCharCode`).
+- [x] Turns UTF-16 code units into a string: `72, 69, 76, 76, 79` → **HELLO**.
+
+Sandbox: `code_sandbox/js-string-reference/fromCharCode.html`
+
+```javascript
+String.fromCharCode(72, 69, 76, 76, 79);
+```
+
+<img alt="js-string-reference example 8 source" src="./code_sandbox/snaps/js-string-reference-08-code.png" />
+
+<img alt="js-string-reference example 8 result" src="./code_sandbox/snaps/js-string-reference-08-result.png" />
+
+- [x] **Outcome:** The characters spell **HELLO**.
+
+
+### **Example 9: `includes()`**
+
+- [x] **`includes(search)`** returns **`true`** if the substring exists anywhere.
+- [x] Case-sensitive ES6 method. Optional start index.
+
+Sandbox: `code_sandbox/js-string-reference/includes.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+```
+
+<img alt="js-string-reference example 9 source" src="./code_sandbox/snaps/js-string-reference-09-code.png" />
+
+<img alt="js-string-reference example 9 result" src="./code_sandbox/snaps/js-string-reference-09-result.png" />
+
+- [x] **Outcome:** **true** from the start; **false** if you start searching at index **12** (past "world").
+
+
+### **Example 10: `indexOf()`**
+
+- [x] **`indexOf(search)`** returns the **first** index of the substring, or **`-1`** if missing.
+- [x] Positions start at **0**. Optional second argument: start index.
+
+Sandbox: `code_sandbox/js-string-reference/indexOf.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+```
+
+<img alt="js-string-reference example 10 source" src="./code_sandbox/snaps/js-string-reference-10-code.png" />
+
+<img alt="js-string-reference example 10 result" src="./code_sandbox/snaps/js-string-reference-10-result.png" />
+
+- [x] **Outcome:** First "locate" is at **7**; from index 15 the next is **21**; missing text is **-1**.
+
+
+### **Example 11: `isWellFormed()`**
+
+- [x] Returns **`true`** if the string has no **lone surrogates** (broken UTF-16 pairs).
+- [x] A lone `\uD800` makes it **false**.
+
+Sandbox: `code_sandbox/js-string-reference/isWellFormed.html`
+
+```javascript
+let ok = "Hello world!".isWellFormed();
+let bad = "Hello World \uD800".isWellFormed();
+```
+
+<img alt="js-string-reference example 11 source" src="./code_sandbox/snaps/js-string-reference-11-code.png" />
+
+<img alt="js-string-reference example 11 result" src="./code_sandbox/snaps/js-string-reference-11-result.png" />
+
+- [x] **Outcome:** Normal text is **true**; a lone surrogate is **false**.
+
+
+### **Example 12: `lastIndexOf()`**
+
+- [x] **`lastIndexOf(search)`** returns the **last** occurrence, or **`-1`**.
+- [x] With a start index it searches **backward** from that position.
+
+Sandbox: `code_sandbox/js-string-reference/lastIndexOf.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+text.lastIndexOf("locate");
+```
+
+<img alt="js-string-reference example 12 source" src="./code_sandbox/snaps/js-string-reference-12-code.png" />
+
+<img alt="js-string-reference example 12 result" src="./code_sandbox/snaps/js-string-reference-12-result.png" />
+
+- [x] **Outcome:** Last "locate" is **21**; searching backward from 15 finds **7**; "John" is **-1**.
+
+
+### **Example 13: `length`**
+
+- [x] **`length`** is a **property**, not a method — no parentheses.
+- [x] It counts UTF-16 code units (emoji can count as 2).
+
+Sandbox: `code_sandbox/js-string-reference/length.html`
+
+```javascript
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+```
+
+<img alt="js-string-reference example 13 source" src="./code_sandbox/snaps/js-string-reference-13-code.png" />
+
+<img alt="js-string-reference example 13 result" src="./code_sandbox/snaps/js-string-reference-13-result.png" />
+
+- [x] **Outcome:** A–Z is **26** characters.
+
+
+### **Example 14: `localeCompare()`**
+
+- [x] Compares two strings in the **current locale** and returns a **negative / 0 / positive** number (sort order).
+- [x] `"ab".localeCompare("cd")` is negative because **ab** comes first.
+
+Sandbox: `code_sandbox/js-string-reference/localeCompare.html`
+
+```javascript
+"ab".localeCompare("cd");
+"cd".localeCompare("ab");
+"ab".localeCompare("ab");
+```
+
+<img alt="js-string-reference example 14 source" src="./code_sandbox/snaps/js-string-reference-14-code.png" />
+
+<img alt="js-string-reference example 14 result" src="./code_sandbox/snaps/js-string-reference-14-result.png" />
+
+- [x] **Outcome:** **ab** vs **cd** is negative; reverse is positive; equal strings return **0**.
+
+
+### **Example 15: `match()`**
+
+- [x] Returns an **array** of matches (or `null` if none).
+- [x] Without **`/g`**, you get details of the **first** match. With **`/g`** (and `/i`) you get all matches.
+
+Sandbox: `code_sandbox/js-string-reference/match.html`
+
+```javascript
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/gi);
+```
+
+<img alt="js-string-reference example 15 source" src="./code_sandbox/snaps/js-string-reference-15-code.png" />
+
+<img alt="js-string-reference example 15 result" src="./code_sandbox/snaps/js-string-reference-15-result.png" />
+
+- [x] **Outcome:** The global, case-insensitive match is **ain,AIN,ain,ain**.
+
+
+### **Example 16: `matchAll()`**
+
+- [x] Returns an **iterator** of all matches (ES2020).
+- [x] If you pass a regex, it **must** have the **`g`** flag or you get a **TypeError**.
+
+Sandbox: `code_sandbox/js-string-reference/matchAll.html`
+
+```javascript
+let text = "I love Cats. Cats are great.";
+Array.from(text.matchAll(/Cats/g), m => m[0]);
+```
+
+<img alt="js-string-reference example 16 source" src="./code_sandbox/snaps/js-string-reference-16-code.png" />
+
+<img alt="js-string-reference example 16 result" src="./code_sandbox/snaps/js-string-reference-16-result.png" />
+
+- [x] **Outcome:** The iterator yields **Cats, Cats** (two matches).
+
+
+### **Example 17: `padEnd()`**
+
+- [x] Pads the **end** of the string until it reaches a given length.
+- [x] It is a **string** method — convert numbers with **`toString()`** first.
+
+Sandbox: `code_sandbox/js-string-reference/padEnd.html`
+
+```javascript
+let text = "5";
+text.padEnd(4, "0");
+text.padEnd(4, "x");
+```
+
+<img alt="js-string-reference example 17 source" src="./code_sandbox/snaps/js-string-reference-17-code.png" />
+
+<img alt="js-string-reference example 17 result" src="./code_sandbox/snaps/js-string-reference-17-result.png" />
+
+- [x] **Outcome:** **5000** and **5xxx**.
+
+
+### **Example 18: `padStart()`**
+
+- [x] Pads the **start** of the string until it reaches a given length.
+- [x] Useful for zero-padding: `"5".padStart(4, "0")` → **0005**.
+
+Sandbox: `code_sandbox/js-string-reference/padStart.html`
+
+```javascript
+let text = "5";
+text.padStart(4, "0");
+text.padStart(4, "x");
+```
+
+<img alt="js-string-reference example 18 source" src="./code_sandbox/snaps/js-string-reference-18-code.png" />
+
+<img alt="js-string-reference example 18 result" src="./code_sandbox/snaps/js-string-reference-18-result.png" />
+
+- [x] **Outcome:** **0005** and **xxx5**.
+
+
+### **Example 19: `prototype`**
+
+- [x] **`String.prototype`** is how you add methods that every string can use.
+- [x] Do this only for demos or shared libraries — extra prototype methods surprise other code.
+
+Sandbox: `code_sandbox/js-string-reference/prototype.html`
+
+```javascript
+String.prototype.exclaim = function () {
+  return this + "!";
+};
+"Hi".exclaim();
+```
+
+<img alt="js-string-reference example 19 source" src="./code_sandbox/snaps/js-string-reference-19-code.png" />
+
+<img alt="js-string-reference example 19 result" src="./code_sandbox/snaps/js-string-reference-19-result.png" />
+
+- [x] **Outcome:** `"Hi".exclaim()` returns **Hi!**.
+
+
+### **Example 20: `repeat()`**
+
+- [x] **`repeat(count)`** returns a **new** string with that many copies.
+- [x] Does not change the original. `count` must be a non-negative integer.
+
+Sandbox: `code_sandbox/js-string-reference/repeat.html`
+
+```javascript
+let text = "Ha";
+text.repeat(3);
+```
+
+<img alt="js-string-reference example 20 source" src="./code_sandbox/snaps/js-string-reference-20-code.png" />
+
+<img alt="js-string-reference example 20 result" src="./code_sandbox/snaps/js-string-reference-20-result.png" />
+
+- [x] **Outcome:** **HaHa** and **HaHaHaHa**. The original `Ha` is unchanged.
+
+
+### **Example 21: `replace()`**
+
+- [x] Replaces the **first** match only (unless you use a regex with **`/g`**).
+- [x] Case-sensitive by default; use **`/i`** to ignore case.
+
+Sandbox: `code_sandbox/js-string-reference/replace.html`
+
+```javascript
+let text = "Please visit Microsoft and Microsoft!";
+text.replace("Microsoft", "W3Schools");
+```
+
+<img alt="js-string-reference example 21 source" src="./code_sandbox/snaps/js-string-reference-21-code.png" />
+
+<img alt="js-string-reference example 21 result" src="./code_sandbox/snaps/js-string-reference-21-result.png" />
+
+- [x] **Outcome:** Without `/g` only the **first** Microsoft changes; with `/g` **both** change.
+
+
+### **Example 22: `replaceAll()`**
+
+- [x] Replaces **every** match (ES2021).
+- [x] If the search is a regex, it **must** include **`g`** or you get a **TypeError**.
+
+Sandbox: `code_sandbox/js-string-reference/replaceAll.html`
+
+```javascript
+let text = "I love Cats. Cats are great.";
+text.replaceAll("Cats", "Dogs");
+```
+
+<img alt="js-string-reference example 22 source" src="./code_sandbox/snaps/js-string-reference-22-code.png" />
+
+<img alt="js-string-reference example 22 result" src="./code_sandbox/snaps/js-string-reference-22-result.png" />
+
+- [x] **Outcome:** Both **Cats** become **Dogs**: **I love Dogs. Dogs are great.**
+
+
+### **Example 23: `search()`**
+
+- [x] Returns the **index** of a match (string or **regex**), or **`-1`**.
+- [x] **Not** the same as `indexOf`: `search` has **no** start-index argument; `indexOf` cannot take a regex.
+
+Sandbox: `code_sandbox/js-string-reference/search.html`
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+text.search("locate");
+text.search(/locate/);
+```
+
+<img alt="js-string-reference example 23 source" src="./code_sandbox/snaps/js-string-reference-23-code.png" />
+
+<img alt="js-string-reference example 23 result" src="./code_sandbox/snaps/js-string-reference-23-result.png" />
+
+- [x] **Outcome:** Both forms return **7** for this string.
+
+
+### **Example 24: `slice()`**
+
+- [x] **`slice(start, end)`** copies a section; **end is not included**.
+- [x] **Negative** indexes count from the end. Omit `end` to take the rest.
+
+Sandbox: `code_sandbox/js-string-reference/slice.html`
+
+```javascript
+let text = "Apple, Banana, Kiwi";
+text.slice(7, 13);
+text.slice(7);
+text.slice(-12, -6);
+```
+
+<img alt="js-string-reference example 24 source" src="./code_sandbox/snaps/js-string-reference-24-code.png" />
+
+<img alt="js-string-reference example 24 result" src="./code_sandbox/snaps/js-string-reference-24-result.png" />
+
+- [x] **Outcome:** `slice(7, 13)` is **Banana**; `slice(7)` is **Banana, Kiwi**; `slice(-12, -6)` is **Banana**.
+
+
+### **Example 25: `split()`**
+
+- [x] Turns a string into an **array** of pieces.
+- [x] `split("")` splits on every UTF-16 unit and is **unsafe for emoji**. Prefer **`Intl.Segmenter`** for graphemes.
+
+Sandbox: `code_sandbox/js-string-reference/split.html`
+
+```javascript
+let text = "The quick brown fox.";
+text.split(" ");
+```
+
+<img alt="js-string-reference example 25 source" src="./code_sandbox/snaps/js-string-reference-25-code.png" />
+
+<img alt="js-string-reference example 25 result" src="./code_sandbox/snaps/js-string-reference-25-result.png" />
+
+- [x] **Outcome:** `split(" ")` is **["The","quick","brown","fox."]**; `split("")` on `"Hi"` is **["H","i"]**.
+
+
+### **Example 26: `startsWith()`**
+
+- [x] Returns **`true`** if the string **begins** with the given text.
+- [x] Case-sensitive. Optional start index shifts where “the beginning” is.
+
+Sandbox: `code_sandbox/js-string-reference/startsWith.html`
+
+```javascript
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello");
+text.startsWith("world");
+```
+
+<img alt="js-string-reference example 26 source" src="./code_sandbox/snaps/js-string-reference-26-code.png" />
+
+<img alt="js-string-reference example 26 result" src="./code_sandbox/snaps/js-string-reference-26-result.png" />
+
+- [x] **Outcome:** **true** for "Hello"; **false** for "world" unless you start at index **6**.
+
+
+### **Example 27: `substr()` (deprecated)**
+
+- [x] **Deprecated.** The second argument is a **length**, not an end index.
+- [x] Still works for compatibility. **Use `substring()` or `slice()`** in new code.
+
+Sandbox: `code_sandbox/js-string-reference/substr.html`
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+str.substr(7, 6);
+str.substr(7);
+str.substr(-4);
+```
+
+<img alt="js-string-reference example 27 source" src="./code_sandbox/snaps/js-string-reference-27-code.png" />
+
+<img alt="js-string-reference example 27 result" src="./code_sandbox/snaps/js-string-reference-27-result.png" />
+
+- [x] **Outcome:** `substr(7, 6)` is **Banana**; from 7 to the end is **Banana, Kiwi**; `-4` is **Kiwi**. Prefer **slice/substring**.
+
+
+### **Example 28: `substring()`**
+
+- [x] Like `slice()`, but **negative start/end become 0** (they do not count from the end).
+- [x] If start > end, `substring` **swaps** them; `slice` returns empty.
+
+Sandbox: `code_sandbox/js-string-reference/substring.html`
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+str.substring(7, 13);
+```
+
+<img alt="js-string-reference example 28 source" src="./code_sandbox/snaps/js-string-reference-28-code.png" />
+
+<img alt="js-string-reference example 28 result" src="./code_sandbox/snaps/js-string-reference-28-result.png" />
+
+- [x] **Outcome:** `substring(7, 13)` is **Banana**. Negatives are treated as **0**, so you get the start of the string.
+
+
+### **Example 29: `toLocaleLowerCase()`**
+
+- [x] Lowercases using the **host locale** (important for languages like Turkish `I` → `ı`).
+- [x] For English text it matches `toLowerCase()`.
+
+Sandbox: `code_sandbox/js-string-reference/toLocaleLowerCase.html`
+
+```javascript
+let text = "Hello WORLD!";
+text.toLocaleLowerCase();
+```
+
+<img alt="js-string-reference example 29 source" src="./code_sandbox/snaps/js-string-reference-29-code.png" />
+
+<img alt="js-string-reference example 29 result" src="./code_sandbox/snaps/js-string-reference-29-result.png" />
+
+- [x] **Outcome:** The result is **hello world!**.
+
+
+### **Example 30: `toLocaleUpperCase()`**
+
+- [x] Uppercases using the **host locale**.
+- [x] Same idea as `toLocaleLowerCase()`, but toward capitals.
+
+Sandbox: `code_sandbox/js-string-reference/toLocaleUpperCase.html`
+
+```javascript
+let text = "Hello World!";
+text.toLocaleUpperCase();
+```
+
+<img alt="js-string-reference example 30 source" src="./code_sandbox/snaps/js-string-reference-30-code.png" />
+
+<img alt="js-string-reference example 30 result" src="./code_sandbox/snaps/js-string-reference-30-result.png" />
+
+- [x] **Outcome:** The result is **HELLO WORLD!**.
+
+
+### **Example 31: `toLowerCase()`**
+
+- [x] Returns a **new** string with all letters in lower case.
+- [x] The original string is unchanged.
+
+Sandbox: `code_sandbox/js-string-reference/toLowerCase.html`
+
+```javascript
+let text1 = "Hello World!";
+let text2 = text1.toLowerCase();
+```
+
+<img alt="js-string-reference example 31 source" src="./code_sandbox/snaps/js-string-reference-31-code.png" />
+
+<img alt="js-string-reference example 31 result" src="./code_sandbox/snaps/js-string-reference-31-result.png" />
+
+- [x] **Outcome:** The new string is **hello world!**; **Hello World!** is still the original.
+
+
+### **Example 32: `toString()`**
+
+- [x] Returns the string **primitive**. Useful on a `new String('Hello')` object.
+- [x] On a normal string literal it just returns the same text.
+
+Sandbox: `code_sandbox/js-string-reference/toString.html`
+
+```javascript
+let obj = new String("Hello");
+obj.toString();
+```
+
+<img alt="js-string-reference example 32 source" src="./code_sandbox/snaps/js-string-reference-32-code.png" />
+
+<img alt="js-string-reference example 32 result" src="./code_sandbox/snaps/js-string-reference-32-result.png" />
+
+- [x] **Outcome:** The object’s `toString()` is the primitive **Hello** (`typeof` **string**).
+
+
+### **Example 33: `toUpperCase()`**
+
+- [x] Returns a **new** string with all letters in upper case.
+
+Sandbox: `code_sandbox/js-string-reference/toUpperCase.html`
+
+```javascript
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+```
+
+<img alt="js-string-reference example 33 source" src="./code_sandbox/snaps/js-string-reference-33-code.png" />
+
+<img alt="js-string-reference example 33 result" src="./code_sandbox/snaps/js-string-reference-33-result.png" />
+
+- [x] **Outcome:** The result is **HELLO WORLD!**.
+
+
+### **Example 34: `toWellFormed()`**
+
+- [x] Returns a new string where **lone surrogates** are replaced with **U+FFFD** (`�`).
+- [x] Use with `isWellFormed()` when you need to sanitize broken UTF-16.
+
+Sandbox: `code_sandbox/js-string-reference/toWellFormed.html`
+
+```javascript
+let text = "Hello World \uD800";
+text.toWellFormed();
+```
+
+<img alt="js-string-reference example 34 source" src="./code_sandbox/snaps/js-string-reference-34-code.png" />
+
+<img alt="js-string-reference example 34 result" src="./code_sandbox/snaps/js-string-reference-34-result.png" />
+
+- [x] **Outcome:** The original is **not** well formed; `toWellFormed()` replaces the lone surrogate with **�**.
+
+
+### **Example 35: `trim()`**
+
+- [x] Removes **whitespace from both ends**. Does not change the original.
+- [x] Spaces in the **middle** stay.
+
+Sandbox: `code_sandbox/js-string-reference/trim.html`
 
 ```javascript
 let original = " Hello ";
 let trimmed = original.trim();
 ```
 
-Rendered result:
+<img alt="js-string-reference example 35 source" src="./code_sandbox/snaps/js-string-reference-35-code.png" />
 
-<img alt="js-string-reference result" src="./code_sandbox/snaps/js-string-reference-result.png" />
+<img alt="js-string-reference example 35 result" src="./code_sandbox/snaps/js-string-reference-35-result.png" />
+
+- [x] **Outcome:** The original still has spaces (`' Hello '`); `trim()` returns **`'Hello'`**.
+
+
+### **Example 36: `trimEnd()`**
+
+- [x] Removes whitespace from the **end only** (ES2019). Alias: `trimRight()`.
+
+Sandbox: `code_sandbox/js-string-reference/trimEnd.html`
+
+```javascript
+let text1 = " Hello World! ";
+let text2 = text1.trimEnd();
+```
+
+<img alt="js-string-reference example 36 source" src="./code_sandbox/snaps/js-string-reference-36-code.png" />
+
+<img alt="js-string-reference example 36 result" src="./code_sandbox/snaps/js-string-reference-36-result.png" />
+
+- [x] **Outcome:** Leading space remains; the trailing space is gone: **`' Hello World!'`**.
+
+
+### **Example 37: `trimStart()`**
+
+- [x] Removes whitespace from the **start only** (ES2019). Alias: `trimLeft()`.
+
+Sandbox: `code_sandbox/js-string-reference/trimStart.html`
+
+```javascript
+let text1 = " Hello World! ";
+let text2 = text1.trimStart();
+```
+
+<img alt="js-string-reference example 37 source" src="./code_sandbox/snaps/js-string-reference-37-code.png" />
+
+<img alt="js-string-reference example 37 result" src="./code_sandbox/snaps/js-string-reference-37-result.png" />
+
+- [x] **Outcome:** Trailing space remains; the leading space is gone: **`'Hello World! '`**.
+
+
+### **Example 38: `valueOf()`**
+
+- [x] Returns the **primitive** string value (same idea as `toString()` for String objects).
+- [x] JavaScript calls this automatically in most string operations.
+
+Sandbox: `code_sandbox/js-string-reference/valueOf.html`
+
+```javascript
+let obj = new String("Hello");
+obj.valueOf();
+```
+
+<img alt="js-string-reference example 38 source" src="./code_sandbox/snaps/js-string-reference-38-code.png" />
+
+<img alt="js-string-reference example 38 result" src="./code_sandbox/snaps/js-string-reference-38-result.png" />
+
+- [x] **Outcome:** `valueOf()` is the primitive **Hello** (`typeof` **string**), while `obj` itself is an **object**.
+
+
+### **Example 39: HTML wrapper methods (deprecated — do not use)**
+
+- [x] These methods wrap the string in an **HTML tag** (`bold()` → `<b>…</b>`).
+- [x] **Deprecated.** Not for new code. Style with **CSS** and create elements with the **DOM**.
+- [x] They exist only for old-page compatibility. The sandbox still **runs every wrapper** so you can recognize them.
+
+Sandbox: `code_sandbox/js-string-reference/html-wrappers.html`
+
+```javascript
+let t = "Hi";
+t.bold();
+t.italics();
+t.link("https://example.com");
+// also: anchor, big, blink, fixed, fontcolor, fontsize, small, strike, sub, sup
+```
+
+<img alt="js-string-reference example 39 source" src="./code_sandbox/snaps/js-string-reference-39-code.png" />
+
+<img alt="js-string-reference example 39 result" src="./code_sandbox/snaps/js-string-reference-39-result.png" />
+
+- [x] **Outcome:** Each call returns a **string of HTML** (for example `bold()` → `<b>Hi</b>`). Do **not** use these; use CSS/DOM instead.
 
 <details>
   <summary>Terminal Commands</summary>
@@ -4902,16 +8697,74 @@ Then open `http://127.0.0.1:8770/js-string-reference/`.
 
 ## Questions and Answers
 
-### Question 1: Do string methods mutate the original?
+### Question 1: Do string methods change the original string?
 
 <details>
 <summary>Answer</summary>
 
 - [x] **No.** They return a **new** value.
+- [x] Assign the result if you want to keep it.
 
 </details>
 
-### Question 2: What should you use instead of `substr()`?
+### Question 2: What does `at(-1)` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **last** character.
+- [x] `charAt()` cannot take a negative index.
+
+</details>
+
+### Question 3: What does `charAt(99)` return on a short string?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **empty string** `""`.
+- [x] `text[99]` would be **`undefined`** instead.
+
+</details>
+
+### Question 4: Is `length` a method?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** It is a **property** — `text.length`, not `text.length()`.
+
+</details>
+
+### Question 5: What does `indexOf` return when the text is missing?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`-1`.**
+
+</details>
+
+### Question 6: How do `indexOf` and `search` differ?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`search`** can take a **regex** but **not** a start index.
+- [x] **`indexOf`** can take a start index but **not** a regex.
+
+</details>
+
+### Question 7: Does `replace` change every match?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Only the **first**, unless you use a regex with **`/g`** or call **`replaceAll()`**.
+
+</details>
+
+### Question 8: What should you use instead of `substr()`?
 
 <details>
 <summary>Answer</summary>
@@ -4921,32 +8774,72 @@ Then open `http://127.0.0.1:8770/js-string-reference/`.
 
 </details>
 
-### Question 3: Should you use `bold()` / `italics()` string methods?
+### Question 9: Should you use `bold()` / `italics()`?
 
 <details>
 <summary>Answer</summary>
 
 - [x] **No.** HTML wrappers are **deprecated**.
-- [x] Use **CSS** and **DOM** APIs.
+- [x] Use **CSS** and the **DOM**.
 
 </details>
 
-### Question 4: What does `length` return?
+### Question 10: What does `isWellFormed()` check?
 
 <details>
 <summary>Answer</summary>
 
-- [x] The **length** of the string (a property, not a method).
+- [x] Whether the string has **lone surrogates** (broken UTF-16).
+- [x] Fix them with **`toWellFormed()`**, which inserts **�**.
 
 </details>
 
-### Question 5: Where is the full method list?
+### Question 11: What does `"5".padStart(4, "0")` return?
 
 <details>
 <summary>Answer</summary>
 
-- [x] On [JS String Reference (W3Schools)](https://www.w3schools.com/js/js_string_reference.asp).
-- [x] Also [MDN String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+- [x] **0005**.
+- [x] Pad a **string**; convert numbers with **`toString()`** first.
+
+</details>
+
+### Question 12: Why is `split("")` unsafe for emoji?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It splits **UTF-16 code units** and can break surrogate pairs.
+- [x] Use **`Intl.Segmenter`** for graphemes.
+
+</details>
+
+### Question 13: What does `String.fromCharCode(72, 69, 76, 76, 79)` return?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **HELLO**.
+- [x] It is a **static** method on `String`, not on a string value.
+
+</details>
+
+### Question 14: What does `match(/ain/gi)` find in the rain sentence?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **ain, AIN, ain, ain** — all matches, case-insensitive.
+
+</details>
+
+### Question 15: What do `toString()` and `valueOf()` do on `new String("Hello")`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They return the primitive **"Hello"**.
+- [x] `typeof` of the object is **object**; `typeof` of the return is **string**.
 
 </details>
 
@@ -4954,12 +8847,15 @@ Then open `http://127.0.0.1:8770/js-string-reference/`.
 
 ## Summary
 
-The String reference lists every property and method. Methods return new strings. Skip **`substr`** and the old **HTML wrapper** methods; style with CSS and the DOM.
+Every String property and method has its own Example. Methods return new values. Skip **`substr`** and the **HTML wrappers**; style with CSS and the DOM. `at()` supports negatives, `length` is a property, `indexOf` returns `-1` when missing, `replace` changes the first match, `replaceAll` changes every match, and `split("")` is unsafe on emoji.
 
 ## References
 
 - [JS String Reference (W3Schools)](https://www.w3schools.com/js/js_string_reference.asp)
 - [MDN: String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [MDN: String.prototype.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/at)
+- [MDN: String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+- [MDN: String.prototype.replaceAll()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
 - [W3Schools JavaScript Reference](https://www.w3schools.com/jsref/default.asp)
 
 </details>

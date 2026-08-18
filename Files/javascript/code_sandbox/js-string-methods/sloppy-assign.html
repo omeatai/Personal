@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Sloppy mode `text[0] = "A"`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Sloppy mode `text[0] = &quot;A&quot;`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "HELLO WORLD";
+      let threw = false;
+      try {
+        text[0] = "A";
+      } catch (err) {
+        threw = true;
+        text = err.message;
+      }
+      document.getElementById("demo").innerText =
+        "threw   -> " + threw + "\n" +
+        "text[0] -> " + text[0] + "\n" +
+        "text    -> " + text;
+    </script>
+  </body>
+</html>

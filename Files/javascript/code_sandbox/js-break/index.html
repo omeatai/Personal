@@ -1,82 +1,20 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <meta name="color-scheme" content="light" />
     <title>JS Break</title>
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript Break</h2>
-    <p id="out"></p>
-    <script>
-      let text = "";
-      for (let i = 0; i < 10; i++) {
-        if (i === 3) {
-          break;
-        }
-        text += i + " ";
-      }
-      let day;
-      switch (new Date().getDay()) {
-        case 0:
-          day = "Sunday";
-          break;
-        case 1:
-          day = "Monday";
-          break;
-        case 2:
-          day = "Tuesday";
-          break;
-        case 3:
-          day = "Wednesday";
-          break;
-        case 4:
-          day = "Thursday";
-          break;
-        case 5:
-          day = "Friday";
-          break;
-        case 6:
-          day = "Saturday";
-      }
-      let t1 = "";
-      loop1: for (let j = 1; j < 5; j++) {
-        loop2: for (let i = 1; i < 5; i++) {
-          if (i === 3) {
-            break loop1;
-          }
-          t1 += i;
-        }
-      }
-      let t2 = "";
-      loop1b: for (let j = 1; j < 5; j++) {
-        loop2b: for (let i = 1; i < 5; i++) {
-          if (i === 3) {
-            break loop2b;
-          }
-          t2 += i;
-        }
-      }
-      const cars = ["BMW", "Volvo", "Saab", "Ford"];
-      let block = "";
-      list: {
-        block += cars[0] + " ";
-        block += cars[1] + " ";
-        break list;
-        block += cars[2] + " ";
-        block += cars[3] + " ";
-      }
-      document.getElementById("out").innerHTML =
-        "break at 3 -> " +
-        text.trim() +
-        "<br>switch weekday -> " +
-        day +
-        "<br>break loop1 -> " +
-        t1 +
-        "<br>break loop2 -> " +
-        t2 +
-        "<br>break block -> " +
-        block.trim();
-    </script>
+    <h2>JS Break</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="break-for.html">01 — `break` when i === 3 in a for loop</a></li>
+      <li><a href="break-switch.html">02 — `break` in a switch (dayNum = 3)</a></li>
+      <li><a href="break-loop1.html">03 — Labeled `break loop1` (leave the outer loop)</a></li>
+      <li><a href="break-loop2.html">04 — Labeled `break loop2` (leave the inner loop only)</a></li>
+      <li><a href="break-block.html">05 — Labeled `break` out of a block after the second car</a></li>
+    </ul>
   </body>
 </html>

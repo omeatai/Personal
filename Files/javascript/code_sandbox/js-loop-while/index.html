@@ -1,48 +1,19 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <meta name="color-scheme" content="light" />
     <title>JS Loop while</title>
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript While Loops</h2>
-    <p id="out"></p>
-    <script>
-      let i = 0;
-      let w = "";
-      while (i < 10) {
-        w += i + " ";
-        i++;
-      }
-      i = 0;
-      let d = "";
-      do {
-        d += i + " ";
-        i++;
-      } while (i < 10);
-      const cars = ["BMW", "Volvo", "Saab", "Ford"];
-      i = 0;
-      let forText = "";
-      for (; cars[i]; ) {
-        forText += cars[i] + " ";
-        i++;
-      }
-      i = 0;
-      let whileText = "";
-      while (cars[i]) {
-        whileText += cars[i] + " ";
-        i++;
-      }
-      document.getElementById("out").innerHTML =
-        "while 0..9 -> " +
-        w.trim() +
-        "<br>do while 0..9 -> " +
-        d.trim() +
-        "<br>for (;cars[i];) -> " +
-        forText.trim() +
-        "<br>while (cars[i]) -> " +
-        whileText.trim();
-    </script>
+    <h2>JS Loop while</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="while.html">01 — `while` i &lt; 10</a></li>
+      <li><a href="do-while.html">02 — `do while` i &lt; 10</a></li>
+      <li><a href="for-cars-cond.html">03 — `for (; cars[i]; )` collect cars</a></li>
+      <li><a href="while-cars.html">04 — `while (cars[i])` collect cars</a></li>
+    </ul>
   </body>
 </html>

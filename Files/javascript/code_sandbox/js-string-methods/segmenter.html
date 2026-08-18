@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`Intl.Segmenter` safe split</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`Intl.Segmenter` safe split</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "👨‍👩‍👧‍👦";
+      const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
+      const myArr = Array.from(segmenter.segment(text), (s) => s.segment);
+      document.getElementById("demo").innerText =
+        "graphemes -> " + JSON.stringify(myArr) + "\n" +
+        "length    -> " + myArr.length;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`search()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`search()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "Please locate where 'locate' occurs!";
+      document.getElementById("demo").innerText =
+        'search("locate") -> ' + text.search("locate") + "\n" +
+        "search(/locate/) -> " + text.search(/locate/);
+    </script>
+  </body>
+</html>

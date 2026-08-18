@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`split()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`split()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "The quick brown fox.";
+      document.getElementById("demo").innerText =
+        'split(" ") -> ' + JSON.stringify(text.split(" ")) + "\n" +
+        'split("")  -> ' + JSON.stringify("Hi".split(""));
+    </script>
+  </body>
+</html>

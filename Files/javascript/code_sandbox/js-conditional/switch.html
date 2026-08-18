@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>The `switch` statement</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The `switch` statement</h2>
+    <pre id="demo"></pre>
+    <script>
+      let dayNum = 3;
+      let day;
+      switch (dayNum) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+          break;
+        default:
+          day = "Unknown";
+      }
+      document.getElementById("demo").innerText =
+        "dayNum -> " + dayNum + "\n" +
+        "day -> " + day;
+    </script>
+  </body>
+</html>

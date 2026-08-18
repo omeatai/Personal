@@ -7,42 +7,25 @@
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript Strings</h2>
-    <p id="out"></p>
-    <script>
-      let text = "John Doe";
-      let carName1 = "Volvo XC60";
-      let carName2 = "Volvo XC60";
-      let answer1 = "It's alright";
-      let answer2 = "He is called 'Johnny'";
-      let answer3 = 'He is called "Johnny"';
-      let tpl = `He's often called "Johnny"`;
-      let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      let escaped = 'We are the so-called "Vikings" from the north.';
-      let x = "John";
-      let y = new String("John");
-      document.getElementById("out").innerHTML =
-        text +
-        "<br>" +
-        carName1 +
-        " / " +
-        carName2 +
-        "<br>" +
-        answer1 +
-        " | " +
-        answer2 +
-        " | " +
-        answer3 +
-        "<br>template: " +
-        tpl +
-        "<br>length A-Z = " +
-        alphabet.length +
-        "<br>" +
-        escaped +
-        "<br>literal == object: " +
-        (x == y) +
-        "; === " +
-        (x === y);
-    </script>
+    <h2>JS Strings</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="quotes.html">01 — String with quotes</a></li>
+      <li><a href="single-double.html">02 — Single vs double quotes</a></li>
+      <li><a href="quotes-inside.html">03 — Quotes inside quotes</a></li>
+      <li><a href="template-quotes.html">04 — Template backticks with mixed quotes</a></li>
+      <li><a href="length.html">05 — `length` of A-Z</a></li>
+      <li><a href="escape-double.html">06 — Escape \&quot; double quote</a></li>
+      <li><a href="escape-single.html">07 — Escape \&#x27; single quote</a></li>
+      <li><a href="escape-backslash.html">08 — Escape \\ backslash</a></li>
+      <li><a href="break-operator.html">09 — Break a long line after an operator</a></li>
+      <li><a href="break-plus.html">10 — Break a string with `+`</a></li>
+      <li><a href="multiline-template.html">11 — Multiline template string</a></li>
+      <li><a href="string-objects.html">12 — `new String()` vs a literal</a></li>
+      <li><a href="equal-loose.html">13 — Literal `==` String object</a></li>
+      <li><a href="equal-strict.html">14 — Literal `===` String object</a></li>
+      <li><a href="two-objects-loose.html">15 — Two String objects with `==`</a></li>
+      <li><a href="two-objects-strict.html">16 — Two String objects with `===`</a></li>
+    </ul>
   </body>
 </html>

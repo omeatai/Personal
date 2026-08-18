@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`indexOf()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`indexOf()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "Please locate where 'locate' occurs!";
+      document.getElementById("demo").innerText =
+        'indexOf("locate")     -> ' + text.indexOf("locate") + "\n" +
+        'indexOf("locate", 15) -> ' + text.indexOf("locate", 15) + "\n" +
+        'indexOf("missing")    -> ' + text.indexOf("missing");
+    </script>
+  </body>
+</html>

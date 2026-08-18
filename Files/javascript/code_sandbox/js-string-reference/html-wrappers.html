@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML wrapper methods (deprecated — do not use)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>HTML wrapper methods (deprecated — do not use)</h2>
+    <pre id="demo"></pre>
+    <script>
+      const t = "Hi";
+      const rows = [
+        ["bold()", t.bold()],
+        ["italics()", t.italics()],
+        ["small()", t.small()],
+        ["strike()", t.strike()],
+        ["sub()", t.sub()],
+        ["sup()", t.sup()],
+        ["big()", t.big()],
+        ["blink()", t.blink()],
+        ["fixed()", t.fixed()],
+        ["anchor('x')", t.anchor("x")],
+        ["link(url)", t.link("https://example.com")],
+        ["fontcolor('red')", t.fontcolor("red")],
+        ["fontsize(7)", t.fontsize(7)],
+      ];
+      document.getElementById("demo").innerText =
+        "DEPRECATED — do not use in new code\n" +
+        rows.map(([n, v]) => n + " -> " + v).join("\n");
+    </script>
+  </body>
+</html>

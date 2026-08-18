@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`padStart` on a number via `toString()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`padStart` on a number via `toString()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let numb = 5;
+      let text = numb.toString();
+      document.getElementById("demo").innerText =
+        "toString then padStart(4, \"0\") -> " + text.padStart(4, "0");
+    </script>
+  </body>
+</html>

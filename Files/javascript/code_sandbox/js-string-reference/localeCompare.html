@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`localeCompare()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`localeCompare()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        '"ab".localeCompare("cd") -> ' + "ab".localeCompare("cd") + "\n" +
+        '"cd".localeCompare("ab") -> ' + "cd".localeCompare("ab") + "\n" +
+        '"ab".localeCompare("ab") -> ' + "ab".localeCompare("ab");
+    </script>
+  </body>
+</html>

@@ -7,37 +7,55 @@
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript String Methods</h2>
-    <p id="out"></p>
-    <script>
-      let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      let hello = "HELLO WORLD";
-      let name = "W3Schools";
-      let fruit = "Apple, Banana, Kiwi";
-      let padded = "5".padStart(4, "0");
-      let replaced = "Please visit Microsoft!".replace(
-        "Microsoft",
-        "W3Schools",
-      );
-      document.getElementById("out").innerHTML =
-        "length = " +
-        alphabet.length +
-        "<br>charAt(0) = " +
-        hello.charAt(0) +
-        "<br>at(2) / at(-5) = " +
-        name.at(2) +
-        " / " +
-        name.at(-5) +
-        "<br>slice(7, 13) = " +
-        fruit.slice(7, 13) +
-        "<br>toUpperCase = " +
-        "Hello World!".toUpperCase() +
-        "<br>padStart(4,'0') = " +
-        padded +
-        "<br>replace = " +
-        replaced +
-        "<br>split(' ') = " +
-        "The quick brown fox.".split(" ").join(", ");
-    </script>
+    <h2>JS String Methods</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="length.html">01 — `length`</a></li>
+      <li><a href="charAt.html">02 — `charAt(0)`</a></li>
+      <li><a href="charCodeAt.html">03 — `charCodeAt(0)`</a></li>
+      <li><a href="codePointAt.html">04 — `codePointAt(0)`</a></li>
+      <li><a href="at.html">05 — `at(2)`</a></li>
+      <li><a href="property-2.html">06 — Property access `[2]`</a></li>
+      <li><a href="at-neg5.html">07 — `at(-5)`</a></li>
+      <li><a href="property-0.html">08 — Property access `[0]`</a></li>
+      <li><a href="sloppy-assign.html">09 — Sloppy mode `text[0] = &quot;A&quot;`</a></li>
+      <li><a href="concat.html">10 — `concat()` Hello World</a></li>
+      <li><a href="slice-7-13.html">11 — `slice(7, 13)`</a></li>
+      <li><a href="slice-7.html">12 — `slice(7)`</a></li>
+      <li><a href="slice-neg12.html">13 — `slice(-12)`</a></li>
+      <li><a href="slice-neg12-neg6.html">14 — `slice(-12, -6)`</a></li>
+      <li><a href="substring.html">15 — `substring(7, 13)`</a></li>
+      <li><a href="substr-7-6.html">16 — `substr(7, 6)` (deprecated)</a></li>
+      <li><a href="substr-7.html">17 — `substr(7)` (deprecated)</a></li>
+      <li><a href="substr-neg4.html">18 — `substr(-4)` (deprecated)</a></li>
+      <li><a href="toUpperCase.html">19 — `toUpperCase()`</a></li>
+      <li><a href="toLowerCase.html">20 — `toLowerCase()`</a></li>
+      <li><a href="isWellFormed-ok.html">21 — `isWellFormed()` true</a></li>
+      <li><a href="isWellFormed-bad.html">22 — `isWellFormed()` lone surrogate</a></li>
+      <li><a href="toWellFormed.html">23 — `toWellFormed()`</a></li>
+      <li><a href="trim.html">24 — `trim()`</a></li>
+      <li><a href="trimStart.html">25 — `trimStart()`</a></li>
+      <li><a href="trimEnd.html">26 — `trimEnd()`</a></li>
+      <li><a href="padStart-0.html">27 — `padStart(4, &quot;0&quot;)`</a></li>
+      <li><a href="padStart-x.html">28 — `padStart(4, &quot;x&quot;)`</a></li>
+      <li><a href="padStart-number.html">29 — `padStart` on a number via `toString()`</a></li>
+      <li><a href="padEnd-0.html">30 — `padEnd(4, &quot;0&quot;)`</a></li>
+      <li><a href="padEnd-x.html">31 — `padEnd(4, &quot;x&quot;)`</a></li>
+      <li><a href="padEnd-number.html">32 — `padEnd` on a number via `toString()`</a></li>
+      <li><a href="repeat-2.html">33 — `repeat(2)`</a></li>
+      <li><a href="repeat-4.html">34 — `repeat(4)`</a></li>
+      <li><a href="replace-first.html">35 — `replace()` first Microsoft</a></li>
+      <li><a href="replace-first-of-two.html">36 — `replace()` only the first of two</a></li>
+      <li><a href="replace-case-fail.html">37 — `replace(&quot;MICROSOFT&quot;)` case fail</a></li>
+      <li><a href="replace-i.html">38 — `replace(/MICROSOFT/i)`</a></li>
+      <li><a href="replace-g.html">39 — `replace(/Microsoft/g)`</a></li>
+      <li><a href="replaceAll-cats.html">40 — `replaceAll(&quot;Cats&quot;)`</a></li>
+      <li><a href="replaceAll-regex.html">41 — `replaceAll(/Cats/g)`</a></li>
+      <li><a href="split-chars.html">42 — `split(&quot;&quot;)`</a></li>
+      <li><a href="split-spaces.html">43 — `split(&quot; &quot;)`</a></li>
+      <li><a href="split-omitted.html">44 — `split()` with no separator</a></li>
+      <li><a href="split-emoji.html">45 — `split(&quot;&quot;)` is unsafe for emoji</a></li>
+      <li><a href="segmenter.html">46 — `Intl.Segmenter` safe split</a></li>
+    </ul>
   </body>
 </html>

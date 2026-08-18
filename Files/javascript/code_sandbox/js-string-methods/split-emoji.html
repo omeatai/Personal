@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`split("")` is unsafe for emoji</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`split(&quot;&quot;)` is unsafe for emoji</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "👨‍👩‍👧‍👦";
+      const myArr = text.split("");
+      document.getElementById("demo").innerText =
+        'split("").length -> ' + myArr.length + "\n" +
+        "pieces           -> " + JSON.stringify(myArr);
+    </script>
+  </body>
+</html>

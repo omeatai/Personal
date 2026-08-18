@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`var i` in the loop leaks (i is 10 after)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`var i` in the loop leaks (i is 10 after)</h2>
+    <pre id="demo"></pre>
+    <script>
+      var i = 5;
+      const before = i;
+      for (var i = 0; i < 10; i++) {
+        /* same var i */
+      }
+      document.getElementById("demo").innerText =
+        "before loop, i -> " + before + "\n" +
+        "after loop, i -> " + i;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`constructor`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`constructor`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "Hello";
+      document.getElementById("demo").innerText =
+        "constructor === String -> " + (text.constructor === String) + "\n" +
+        "constructor.name -> " + text.constructor.name;
+    </script>
+  </body>
+</html>

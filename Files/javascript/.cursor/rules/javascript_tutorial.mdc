@@ -13,7 +13,7 @@ This output is a **detailed study tutorial**, not a thin recap. The reader must 
 
 ## Workflow Steps
 
-1. **Read** `Personal/bin/format.md` once for **accordion spacing and Q&A nesting only**. Ignore its Lab and Code children — they are removed in this rule. This rule’s heading order and Detailed Explanation layout win.
+1. **Read** `Personal/bin/format.md` once for **accordion spacing and Q&A nesting only**. Ignore its Lab and Code children — they are removed in this rule. This rule’s heading order and Detailed Explanation layout win. You can view the file in `Personal/Files/javascript/tutorial.md` to see how the final output should look.
 2. **Open the section in the browser**
    - Default site: [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp).
    - Use the existing Cursor browser tab if it is already on that tutorial.
@@ -23,7 +23,7 @@ This output is a **detailed study tutorial**, not a thin recap. The reader must 
 3. **Rebuild examples in the sandbox**
    - Create `Personal/Files/javascript/code_sandbox/<slug>/` (`JS Introduction` → `js-introduction`).
    - Write runnable files. Prefer `index.html` with the section’s scripts (inline `<script>` or `script.js` if the page uses a separate file). Extra `.css` only if the section uses it. Extra HTML files (`source.html`, extra demos) when the page has several Tryit examples.
-   - Recreate **every** Tryit / runnable example on the page. Do not invent unrelated features, and do not drop examples to save space. You **may** add small extra variations when they make a concept clearer — label them as your own example.
+   - Recreate **every** Tryit / runnable example **and every reference-table row** on the page. One HTML file per Example. Do not invent unrelated features, and do not drop examples or table rows to save space. You **may** add small extra variations when they make a concept clearer — label them as your own example.
    - If the section is **console-only** (no DOM output), still keep a small `index.html` when the tutorial shows a browser Tryit, **or** use a `.js` file run with `node` when the page is clearly Node/console. Match the tutorial’s environment.
    - If the section has **no** runnable example, skip the run/snap steps and say so in Detailed Explanation.
 4. **Run the example**
@@ -69,6 +69,32 @@ This is the heart of the tutorial and absorbs what used to be the separate **Cod
 5. **Result snap + written outcome** — `<img ... src="./code_sandbox/snaps/<slug>-NN-result.png" />`, immediately followed by at least one `- [x]` line that **describes the outcome in words** ("the paragraph now reads **Hello JavaScript**", "the console logs `15`"). The image must never be the only explanation of the result.
 
 Cover **all** examples this way — do not summarize several into one. If official docs required newer syntax than the page, keep **both**: the page’s idea and the working current form, and say how they differ. Prefer thoroughness: more examples and richer explanation is the goal.
+
+### Grain: one named thing = one `### Example` (JS Output is the model)
+
+**JS Output** is the required grain: the page named several output methods, and **each** got its own heading (`Example 1: Using innerHTML`, `Example 2: Using innerText`, …) with its own sandbox file, snaps, and outcome. Copy that pattern everywhere.
+
+**Never** list many methods / properties / operators / statements in a bullet and then show **one** representative snippet. That is how **JS String Reference** was done wrong (a table of `at`, `charAt`, `slice`, `replace`, … and only a `trim()` fence). Listing names is not teaching them.
+
+Walk the page in order and emit a **separate** `### **Example N: Title**` (all five parts) for **each** of:
+
+1. **Every Tryit / runnable example** on the page — including several Tryits of the _same_ method with different arguments (`slice(7, 13)`, `slice(7)`, `slice(-12)` are **three** Examples, not one).
+2. **Every row of a reference table** (String / Number / Array / Math / Date / Map / Set / RegExp / … Reference). One row = one Example. Use the table’s Name as the heading (`Example 1: at()`, `Example 2: charAt()`, …).
+3. **Every named construct** the page is teaching (`if`, `else`, `switch`, `for`, `while`, `break`, `continue`, each operator, each output method, …) even if the page only shows syntax — still build a small runnable demo.
+4. **Every heading/section** that introduces a distinct idea (notes, warnings, “do not use”, exercises). Deprecated APIs still get an Example that **runs** them and says not to use them; do not skip the row.
+
+**Reference / method-table pages (highest risk).** If the page is a catalog, you are not done until **every table row** has its own Example. You may **not**:
+
+- Collapse the table into “useful names” / “see the site for the full list”
+- Ship one sandbox that prints many results under a single Example heading
+- Pick a “typical” method (`trim`, `slice`, `indexOf`) as a stand-in for the rest
+- Group unrelated methods into one fence unless they are a **single** Tryit on the page
+
+Deprecated **HTML wrapper** methods (`bold()`, `italics()`, …) may share **one** Example **only if** that Example still **calls every wrapper**, shows each return value, and states they are obsolete. That exception does **not** apply to the main method/property table.
+
+**Sandbox layout:** one HTML file per Example (like `js-output/innertext.html`, `js-output/alert.html`), plus `index.html` linking them. Number snaps `<slug>-NN-code.png` / `<slug>-NN-result.png` in the **same order** as the Example headings. A single combined dump page is not a substitute.
+
+**Q&A** must ask about **several different Examples** (inputs and outputs), not five generic definitions while 30 methods went undemoed. Still 8–15 questions; spread them across the page.
 
 ````markdown
 <details>
@@ -161,7 +187,8 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 
 - Document **this section only** (even inside a range). Do not mix in the next/previous chapter.
 - Preserve the site’s explanations, examples, exercises, tables, and warnings. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
-- **Be thorough.** Every example on the page gets its own `### Example` block with explanation, tested code, code snap, result snap, and a written outcome. Add extra examples when they clarify a concept.
+- **Be thorough.** Every Tryit, every reference-table row, and every named construct gets its own `### Example` block with explanation, tested code, code snap, result snap, and a written outcome. Add extra examples when they clarify a concept. A bullet list of method names is **not** coverage.
+- **Self-check before appending:** count Tryits + table rows + named constructs on the page; count `### **Example` headings in the accordion. If the accordion has fewer Examples than that count (HTML wrappers excepted as one grouped demo), you are not done — go back and add the missing headings. Do not file the section.
 - Terminal Commands = only commands you actually used (server, open URL, `node`). If none, keep the child with a one-line placeholder.
 - Fenced code is the **tested** sandbox source. If you updated outdated snippets, fence what actually ran and say how it differs from the page.
 - If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.

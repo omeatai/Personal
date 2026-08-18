@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`for (; cars[i]; )` collect cars</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`for (; cars[i]; )` collect cars</h2>
+    <pre id="demo"></pre>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let i = 0;
+      let text = "";
+      for (; cars[i]; ) {
+        text += cars[i];
+        i++;
+      }
+      document.getElementById("demo").innerText =
+        "text -> " + text + "\n" +
+        "stopped when i -> " + i;
+    </script>
+  </body>
+</html>

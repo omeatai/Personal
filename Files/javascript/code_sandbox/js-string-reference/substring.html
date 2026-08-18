@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`substring()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`substring()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let str = "Apple, Banana, Kiwi";
+      document.getElementById("demo").innerText =
+        "substring(7, 13) -> " + str.substring(7, 13) + "\n" +
+        "substring(-3, 5) -> " + str.substring(-3, 5) + "  (negatives become 0)";
+    </script>
+  </body>
+</html>

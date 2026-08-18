@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Loop scope: inner `let i` (outer i stays 5)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Loop scope: inner `let i` (outer i stays 5)</h2>
+    <pre id="demo"></pre>
+    <script>
+      let i = 5;
+      for (let i = 0; i < 10; i++) {
+        /* inner i only */
+      }
+      document.getElementById("demo").innerText =
+        "after loop, outer i -> " + i;
+    </script>
+  </body>
+</html>

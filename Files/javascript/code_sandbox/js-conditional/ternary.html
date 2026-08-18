@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>The ternary operator (`? :`)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The ternary operator (`? :`)</h2>
+    <pre id="demo"></pre>
+    <script>
+      function greet(hour) {
+        return (hour < 18) ? "Good day" : "Good evening";
+      }
+      document.getElementById("demo").innerText =
+        "hour 10 -> " + greet(10) + "\n" +
+        "hour 20 -> " + greet(20);
+    </script>
+  </body>
+</html>

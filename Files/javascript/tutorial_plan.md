@@ -33,12 +33,29 @@ do **not** duplicate it.
 ### Per-page checklist (the "definition of done")
 
 - [ ] Section read fully in the browser (all headings, notes, tables, warnings, every Tryit example).
-- [ ] Sandbox folder `code_sandbox/<slug>/` created with runnable source for **every** example.
+- [ ] Sandbox folder `code_sandbox/<slug>/` created with **one HTML file per Example** (plus `index.html` hub).
 - [ ] Examples run over http (or `node` for console-only) and match the page.
-- [ ] Per-example snaps saved to `code_sandbox/snaps/`: `<slug>-NN-code.png` + `<slug>-NN-result.png`.
+- [ ] Per-example snaps saved to `code_sandbox/snaps/`: `<slug>-NN-code.png` + `<slug>-NN-result.png`
+      (NN matches the Example heading order; never one shared pair for a whole method table).
 - [ ] One accordion appended/updated in `tutorial.md` (Introduction, Detailed Explanation, Terminal Commands,
       Questions and Answers, Summary, References) with every example's written outcome.
+- [ ] **Coverage count:** number of `### **Example` headings ≥ number of Tryits + reference-table rows +
+      named constructs on the page (HTML wrappers may be one grouped Example that still runs every wrapper).
 - [ ] Single git commit made for this page.
+
+#### Grain (do not collapse)
+
+Model section: **JS Output** — one `### Example N` per named method (`innerHTML`, `innerText`, `document.write()`,
+`alert()`, `console.log()`), each with its own sandbox file and snaps.
+
+**Forbidden (real failure):** **JS String Reference** listed Access / Search / Transform methods in bullets and
+only fenced `trim()`. A name list is not an Example. On a **reference table**, every row (`at()`, `charAt()`,
+`slice()`, `replace()`, `split()`, … through `valueOf()`) needs its own Example heading, tested code, snaps,
+and written outcome. Teaching pages with many Tryits of the same method (`slice(7,13)`, `slice(7)`, `slice(-12)`)
+are also **one Example per Tryit**, not one combined dump.
+
+This applies to every later catalog too: Number / Array / Math / Date / Map / Set / RegExp / Object / Function
+Reference pages, operator lists, and overview pages that name `if` / `else` / `switch` / `for` / `while`.
 
 ### Conventions
 
@@ -54,9 +71,13 @@ do **not** duplicate it.
 
 ## Resume pointer
 
-- **Next task:** `3.1` — JS Conditional (improvement pass; user requested range JS Introduction → JS Strings).
-- **Last completed:** `2.4` JS Comparisons — rewritten to per-example standard (`==`/`===`, relational, string order, mixed types, Number()+isNaN).
-- **Notes:** `tutorial.md` currently has older accordions for JS Conditional → JS String Reference; these are the `(exists — improve)` pages. Working the user's range JS Introduction → JS Strings, one commit per page.
+- **Next task:** `6.1` JS Numbers (new).
+- **Last completed:** Grain rewrite of `3.1`–`5.5` (JS Conditional → JS String Reference) after the thin
+  **JS String Reference** accordion listed a method table and only fenced `trim()`.
+- **Notes:** Rule + this plan now require **JS Output grain**: one `### Example` per Tryit / table row /
+  named construct (39 Examples on String Reference, including every table row; HTML wrappers grouped but
+  every wrapper still runs). `tutorial.md` already has the rewritten accordions. Per-page git commits for
+  `3.1`–`5.5` were not made in that correction pass (user asked for the rewrite, not commits).
 
 ---
 
@@ -136,8 +157,8 @@ do **not** duplicate it.
 
 ### S3 — Conditionals
 
-- [ ] `3.1` JS Conditional — `js_conditionals.asp` (exists — improve)
-- [ ] `3.2` JS If Conditions — `js_if.asp` (exists — improve)
+- [x] `3.1` JS Conditional — `js_conditionals.asp` (exists — improve)
+- [x] `3.2` JS If Conditions — `js_if.asp` (exists — improve)
 - [ ] `3.3` JS If Else — `js_if_else.asp` (new)
 - [ ] `3.4` JS Ternary — `js_if_ternary.asp` (new)
 - [ ] `3.5` JS Switch — `js_switch.asp` (new)
@@ -146,20 +167,20 @@ do **not** duplicate it.
 
 ### S4 — Loops
 
-- [ ] `4.1` JS Loops — `js_loops.asp` (exists — improve)
-- [ ] `4.2` JS Loop for — `js_loop_for.asp` (exists — improve)
-- [ ] `4.3` JS Loop while — `js_loop_while.asp` (exists — improve)
-- [ ] `4.4` JS Break — `js_break.asp` (exists — improve)
-- [ ] `4.5` JS Continue — `js_continue.asp` (exists — improve)
-- [ ] `4.6` JS Control Flow — `js_control_flow.asp` (exists — improve)
+- [x] `4.1` JS Loops — `js_loops.asp` (exists — improve)
+- [x] `4.2` JS Loop for — `js_loop_for.asp` (exists — improve)
+- [x] `4.3` JS Loop while — `js_loop_while.asp` (exists — improve)
+- [x] `4.4` JS Break — `js_break.asp` (exists — improve)
+- [x] `4.5` JS Continue — `js_continue.asp` (exists — improve)
+- [x] `4.6` JS Control Flow — `js_control_flow.asp` (exists — improve)
 
 ### S5 — Strings
 
-- [ ] `5.1` JS Strings — `js_strings.asp` (exists — improve)
-- [ ] `5.2` JS String Templates — `js_string_templates.asp` (exists — improve)
-- [ ] `5.3` JS String Methods — `js_string_methods.asp` (exists — improve)
-- [ ] `5.4` JS String Search — `js_string_search.asp` (exists — improve)
-- [ ] `5.5` JS String Reference — `js_string_reference.asp` (exists — improve)
+- [x] `5.1` JS Strings — `js_strings.asp` (exists — improve)
+- [x] `5.2` JS String Templates — `js_string_templates.asp` (exists — improve)
+- [x] `5.3` JS String Methods — `js_string_methods.asp` (exists — improve)
+- [x] `5.4` JS String Search — `js_string_search.asp` (exists — improve)
+- [x] `5.5` JS String Reference — `js_string_reference.asp` (exists — improve)
 
 ### S6 — Numbers
 

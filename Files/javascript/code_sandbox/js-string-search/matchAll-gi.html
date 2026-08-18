@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`matchAll(/Cats/gi)`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`matchAll(/Cats/gi)`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+      const found = Array.from(text.matchAll(/Cats/gi), (m) => m[0]);
+      document.getElementById("demo").innerText =
+        "matchAll(/Cats/gi) -> " + found.join(", ");
+    </script>
+  </body>
+</html>

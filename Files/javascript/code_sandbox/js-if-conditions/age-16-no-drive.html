@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Age 16 cannot drive</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Age 16 cannot drive</h2>
+    <pre id="demo"></pre>
+    <script>
+      let age = 16;
+      let text = "You can Not drive";
+      if (age >= 18) {
+        text = "You can drive";
+      }
+      document.getElementById("demo").innerText =
+        "age -> " + age + "\n" +
+        "age >= 18 -> " + (age >= 18) + "\n" +
+        "text -> " + text;
+    </script>
+  </body>
+</html>

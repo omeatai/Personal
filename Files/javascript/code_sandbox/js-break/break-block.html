@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Labeled `break` out of a block after the second car</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Labeled `break` out of a block after the second car</h2>
+    <pre id="demo"></pre>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let text = "";
+      list: {
+        text += cars[0] + " ";
+        text += cars[1] + " ";
+        break list;
+        text += cars[2] + " ";
+        text += cars[3] + " ";
+      }
+      document.getElementById("demo").innerText = "text -> " + text.trim();
+    </script>
+  </body>
+</html>

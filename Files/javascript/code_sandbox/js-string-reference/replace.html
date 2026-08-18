@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`replace()`</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`replace()`</h2>
+    <pre id="demo"></pre>
+    <script>
+      let text = "Please visit Microsoft and Microsoft!";
+      document.getElementById("demo").innerText =
+        "replace first -> " + text.replace("Microsoft", "W3Schools") + "\n" +
+        "replace /g    -> " + text.replace(/Microsoft/g, "W3Schools");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>The `else` statement</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>The `else` statement</h2>
+    <pre id="demo"></pre>
+    <script>
+      let hour = 20;
+      let greeting;
+      if (hour < 18) {
+        greeting = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+      document.getElementById("demo").innerText =
+        "hour -> " + hour + "\n" +
+        "hour < 18 -> " + (hour < 18) + "\n" +
+        "greeting -> " + greeting;
+    </script>
+  </body>
+</html>

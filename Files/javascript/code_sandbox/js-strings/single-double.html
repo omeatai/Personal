@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Single vs double quotes</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Single vs double quotes</h2>
+    <pre id="demo"></pre>
+    <script>
+      let carName1 = "Volvo XC60";
+      let carName2 = 'Volvo XC60';
+      document.getElementById("demo").innerText =
+        "carName1 -> " + carName1 + "\n" +
+        "carName2 -> " + carName2 + "\n" +
+        "same     -> " + (carName1 === carName2);
+    </script>
+  </body>
+</html>

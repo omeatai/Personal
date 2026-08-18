@@ -1,52 +1,21 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <meta name="color-scheme" content="light" />
     <title>JS Loop for</title>
     <link rel="stylesheet" href="../sandbox.css" />
   </head>
   <body>
-    <h2>JavaScript For Loop</h2>
-    <p id="out"></p>
-    <script>
-      let nums = "";
-      for (let i = 0; i < 5; i++) {
-        nums += i + " ";
-      }
-      const cars = ["BMW", "Volvo", "Saab", "Ford"];
-      let len = cars.length;
-      let all = "";
-      for (let i = 0; i < len; i++) {
-        all += cars[i] + " ";
-      }
-      let i = 2;
-      let fromTwo = "";
-      for (; i < len; i++) {
-        fromTwo += cars[i] + " ";
-      }
-      i = 0;
-      let inside = "";
-      for (; i < len; ) {
-        inside += cars[i] + " ";
-        i++;
-      }
-      var v = 5;
-      for (var v = 0; v < 10; v++) {}
-      let outerLet = 5;
-      for (let i = 0; i < 10; i++) {}
-      document.getElementById("out").innerHTML =
-        "0..4 -> " +
-        nums.trim() +
-        "<br>cars -> " +
-        all.trim() +
-        "<br>omit exp1 (i=2) -> " +
-        fromTwo.trim() +
-        "<br>omit exp3 (i++ inside) -> " +
-        inside.trim() +
-        "<br>var after loop = " +
-        v +
-        "; outer let stays " +
-        outerLet;
-    </script>
+    <h2>JS Loop for</h2>
+    <p>Open each example:</p>
+    <ul>
+      <li><a href="for-numbers.html">01 — `for` i &lt; 5 numbers</a></li>
+      <li><a href="for-cars.html">02 — `for` collect car names</a></li>
+      <li><a href="omit-exp1.html">03 — Omit exp1 (`i = 2` before the loop)</a></li>
+      <li><a href="omit-exp3.html">04 — Omit exp3 (`i++` inside the body)</a></li>
+      <li><a href="var-leaks.html">05 — `var i` in the loop leaks (i is 10 after)</a></li>
+      <li><a href="let-no-leak.html">06 — `let i` in the loop does not leak (outer i stays 5)</a></li>
+    </ul>
   </body>
 </html>

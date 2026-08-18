@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>`new String()` vs a literal</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>`new String()` vs a literal</h2>
+    <pre id="demo"></pre>
+    <script>
+      let x = "John";
+      let y = new String("John");
+      document.getElementById("demo").innerText =
+        "typeof x -> " + typeof x + "\n" +
+        "typeof y -> " + typeof y + "\n" +
+        "x        -> " + x + "\n" +
+        "y        -> " + y;
+    </script>
+  </body>
+</html>

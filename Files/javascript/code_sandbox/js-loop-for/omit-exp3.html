@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Omit exp3 (`i++` inside the body)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+  </head>
+  <body>
+    <h2>Omit exp3 (`i++` inside the body)</h2>
+    <pre id="demo"></pre>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let len = cars.length;
+      let i = 0;
+      let text = "";
+      for (; i < len; ) {
+        text += cars[i] + " ";
+        i++;
+      }
+      document.getElementById("demo").innerText = "text -> " + text.trim();
+    </script>
+  </body>
+</html>
