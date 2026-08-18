@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Function expression is not hoisted</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Function expression is not hoisted</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let early;
+      try {
+        early = add(2, 3);
+      } catch (e) {
+        early = e.name + ": " + e.message;
+      }
+      const add = function(a, b) {
+        return a + b;
+      };
+      document.getElementById("demo").innerText =
+        "before const add -> " + early + "\n" +
+        "after const add -> " + add(2, 3);
+    </script>
+  </body>
+</html>

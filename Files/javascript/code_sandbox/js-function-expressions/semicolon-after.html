@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Semicolon after a function expression</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Semicolon after a function expression</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const add = function(a, b) {
+        return a + b;
+      };
+      document.getElementById("demo").innerText = "add(2, 3) -> " + String(add(2, 3));
+    </script>
+  </body>
+</html>
