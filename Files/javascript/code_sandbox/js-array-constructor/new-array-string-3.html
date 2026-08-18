@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>new Array(&quot;3&quot;) — one string element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>new Array(&quot;3&quot;) — one string element</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      const a = new Array("3");
+      document.getElementById("demo").innerText = "a -> " + String(JSON.stringify(a)) + "\n" + "a.length -> " + String(a.length);
+    </script>
+  </body>
+</html>
