@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Syntax — event, function, useCapture</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Go</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("b").addEventListener("click", function () {
+        document.getElementById("demo").innerText = "useCapture default false (bubble)";
+      }, false);
+      document.getElementById("b").click();
+    </script>
+  </body>
+</html>

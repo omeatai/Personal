@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Different event types on the same element</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="b" style="padding:12px;background:#eee;">target</div>
+    <pre id="demo"></pre>
+    <script>
+      const b = document.getElementById("b");
+      const log = [];
+      b.addEventListener("mouseover", function () { log.push("over"); });
+      b.addEventListener("click", function () { log.push("click"); });
+      b.addEventListener("mouseout", function () { log.push("out"); });
+      b.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+      b.click();
+      b.dispatchEvent(new MouseEvent("mouseout", { bubbles: true }));
+      document.getElementById("demo").innerText = log.join(" ");
+    </script>
+  </body>
+</html>

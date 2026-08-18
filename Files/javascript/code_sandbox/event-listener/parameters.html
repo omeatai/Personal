@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Passing parameters with an anonymous wrapper</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Go</button>
+    <pre id="demo"></pre>
+    <script>
+      function myFunction(p1, p2) {
+        document.getElementById("demo").innerText = p1 + " " + p2;
+      }
+      const p1 = "A", p2 = "B";
+      document.getElementById("b").addEventListener("click", function () { myFunction(p1, p2); });
+      document.getElementById("b").click();
+    </script>
+  </body>
+</html>

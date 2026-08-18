@@ -82,7 +82,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ## Resume pointer
 
 - **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `25.6` Event Examples.
+- **Last completed:** `25.7` Event Listener.
 - **Notes:** Rule + this plan now require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
@@ -118,7 +118,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S22** Projects (5)
 - [ ] **S23** Versions (17)
 - [x] **S24** JS HTML DOM (9)
-- [ ] **S25** JS HTML Events (7)
+- [x] **S25** JS HTML Events (7)
 - [ ] **S26** JS HTML First (4)
 - [ ] **S27** JS Window API / BOM (8)
 - [ ] **S28** JS JSON (8)
@@ -386,7 +386,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `25.4` Load Events — `js_events_load.asp` (new)
 - [x] `25.5` Manage Events — `js_events_management.asp` (new)
 - [x] `25.6` Event Examples — `js_htmldom_events.asp` (new)
-- [ ] `25.7` Event Listener — `js_htmldom_eventlistener.asp` (new)
+- [x] `25.7` Event Listener — `js_htmldom_eventlistener.asp` (new)
 
 ### S26 — JS HTML First
 

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Many handlers of the same type</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Go</button>
+    <pre id="demo"></pre>
+    <script>
+      const b = document.getElementById("b");
+      const log = [];
+      b.addEventListener("click", function myFunction() { log.push("first"); });
+      b.addEventListener("click", function mySecondFunction() { log.push("second"); });
+      b.click();
+      document.getElementById("demo").innerText = log.join(" ");
+    </script>
+  </body>
+</html>

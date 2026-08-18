@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Bubbling (useCapture false) for comparison</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="myDiv" style="padding:16px;background:#cfc;"><p id="myP" style="background:#fff;padding:8px;">click inner</p></div>
+    <pre id="demo"></pre>
+    <script>
+      const log = [];
+      function rec(name) { return function () { log.push(name); }; }
+      document.getElementById("myP").addEventListener("click", rec("P"), false);
+      document.getElementById("myDiv").addEventListener("click", rec("DIV"), false);
+      document.getElementById("myP").click();
+      document.getElementById("demo").innerText = "bubble: " + log.join(" then ");
+    </script>
+  </body>
+</html>
