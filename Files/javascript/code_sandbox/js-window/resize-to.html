@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>window.resizeTo() — resize the current window</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      try { window.resizeTo(800, 600); } catch (e) {}
+      document.getElementById("demo").innerText =
+        "typeof resizeTo=" + typeof window.resizeTo +
+        "\ninnerWidth=" + window.innerWidth + " innerHeight=" + window.innerHeight;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>window.document is the same object as document</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Header</h1>
+    <pre id="demo"></pre>
+    <script>
+      const a = window.document.getElementById("header");
+      const b = document.getElementById("header");
+      document.getElementById("demo").innerText =
+        "sameNode=" + (a === b) +
+        "\nwindow.document===document=" + (window.document === document) +
+        "\ntext=" + a.textContent;
+    </script>
+  </body>
+</html>

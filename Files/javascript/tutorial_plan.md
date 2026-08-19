@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `26.4` HTML First CSS.
+- **Next task:** `27.2` JS Screen (new).
+- **Last completed:** `27.1` JS Window.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -402,7 +402,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ### S27 — JS Window API (BOM)
 
-- [ ] `27.1` JS Window — `js_window.asp` (new)
+- [x] `27.1` JS Window — `js_window.asp` (new)
 - [ ] `27.2` JS Screen — `js_window_screen.asp` (new)
 - [ ] `27.3` JS Location — `js_window_location.asp` (new)
 - [ ] `27.4` JS History — `js_window_history.asp` (new)

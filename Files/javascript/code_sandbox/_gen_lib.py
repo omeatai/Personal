@@ -446,33 +446,65 @@ def find_browser() -> str | None:
     return None
 
 
-def screenshot_section(slug: str, records: list[dict], browser: str, default_wait: int = 4000) -> None:
+def screenshot_section(
+    slug: str,
+    records: list[dict],
+    browser: str,
+    default_wait: int = 4000,
+    *,
+    use_http: bool = False,
+    port: int = 8771,
+) -> None:
+    import sys
+    import time
+
     SNAPS.mkdir(parents=True, exist_ok=True)
     folder = ROOT / slug
-    for i, rec in enumerate(records, 1):
-        nn = f"{i:02d}"
-        result_html = (folder / f"{rec['stem']}.html").resolve().as_uri()
-        source_html = (folder / f"{rec['stem']}-source.html").resolve().as_uri()
-        result_png = str((SNAPS / f"{slug}-{nn}-result.png").resolve())
-        code_png = str((SNAPS / f"{slug}-{nn}-code.png").resolve())
-        wait = rec.get("wait_ms") or default_wait
-        print(f"snap {slug}-{nn} {rec['stem']}", flush=True)
-        if Path(result_png).is_file() and Path(code_png).is_file():
-            print(f"skip existing {slug}-{nn}", flush=True)
-            continue
-        for url, out in ((source_html, code_png), (result_html, result_png)):
-            cmd = [
-                browser,
-                "--headless=new",
-                "--disable-gpu",
-                "--hide-scrollbars",
-                "--force-device-scale-factor=1",
-                "--window-size=900,640",
-                f"--screenshot={out}",
-                f"--virtual-time-budget={wait}",
-                url,
-            ]
-            subprocess.run(cmd, check=True, cwd=str(SNAPS), capture_output=True, timeout=90)
+    proc = None
+    if use_http:
+        proc = subprocess.Popen(
+            [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+            cwd=str(ROOT),
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        time.sleep(0.7)
+    try:
+        for i, rec in enumerate(records, 1):
+            nn = f"{i:02d}"
+            if use_http:
+                result_html = f"http://127.0.0.1:{port}/{slug}/{rec['stem']}.html"
+                source_html = f"http://127.0.0.1:{port}/{slug}/{rec['stem']}-source.html"
+            else:
+                result_html = (folder / f"{rec['stem']}.html").resolve().as_uri()
+                source_html = (folder / f"{rec['stem']}-source.html").resolve().as_uri()
+            result_png = str((SNAPS / f"{slug}-{nn}-result.png").resolve())
+            code_png = str((SNAPS / f"{slug}-{nn}-code.png").resolve())
+            wait = rec.get("wait_ms") or default_wait
+            print(f"snap {slug}-{nn} {rec['stem']}", flush=True)
+            if Path(result_png).is_file() and Path(code_png).is_file():
+                print(f"skip existing {slug}-{nn}", flush=True)
+                continue
+            for url, out in ((source_html, code_png), (result_html, result_png)):
+                cmd = [
+                    browser,
+                    "--headless=new",
+                    "--disable-gpu",
+                    "--hide-scrollbars",
+                    "--force-device-scale-factor=1",
+                    "--window-size=900,640",
+                    f"--screenshot={out}",
+                    f"--virtual-time-budget={wait}",
+                    url,
+                ]
+                subprocess.run(cmd, check=True, cwd=str(SNAPS), capture_output=True, timeout=90)
+    finally:
+        if proc is not None:
+            proc.terminate()
+            try:
+                proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                proc.kill()
 
 
 def build_and_snap(
@@ -486,6 +518,8 @@ def build_and_snap(
     refs: list[tuple[str, str]],
     *,
     wait: int = 4000,
+    use_http: bool = False,
+    port: int = 8771,
 ) -> str:
     emit_section(slug, title, records)
     md = accordion(title, intro, concepts, records, slug, qa, summary_para, refs)
@@ -494,5 +528,7 @@ def build_and_snap(
     browser = find_browser()
     if not browser:
         raise RuntimeError("No Chrome/Edge found for screenshots")
-    screenshot_section(slug, records, browser, default_wait=wait)
+    screenshot_section(
+        slug, records, browser, default_wait=wait, use_http=use_http, port=port
+    )
     return md

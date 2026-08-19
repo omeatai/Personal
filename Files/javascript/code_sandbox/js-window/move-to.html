@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>window.moveTo() — move the current window</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      try { window.moveTo(0, 0); } catch (e) {}
+      document.getElementById("demo").innerText =
+        "after moveTo(0,0) screenX=" + window.screenX + " screenY=" + window.screenY;
+    </script>
+  </body>
+</html>

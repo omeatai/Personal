@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>window.open() — open a new window</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      let win = null;
+      try { win = window.open("about:blank", "_blank"); } catch (e) { win = null; }
+      const kind = win ? ("Window, closed=" + win.closed) : "null (blocked)";
+      if (win && !win.closed) { try { win.close(); } catch (e) {} }
+      document.getElementById("demo").innerText = "window.open -> " + kind;
+    </script>
+  </body>
+</html>
