@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Mistake — parsing JSON twice</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const person = JSON.parse('{"name":"John"}');
+      try {
+        JSON.parse(person);
+        document.getElementById("demo").innerText = "unexpected ok";
+      } catch (e) {
+        document.getElementById("demo").innerText = e.name;
+      }
+    </script>
+  </body>
+</html>

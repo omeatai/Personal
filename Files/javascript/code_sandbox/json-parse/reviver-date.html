@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Reviver — convert a date string to Date</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const myObject = JSON.parse(
+        '{"event":"Conference","date":"2026-07-22T11:28:00.000Z"}',
+        function (key, value) {
+          if (key === "date") { return new Date(value); }
+          return value;
+        }
+      );
+      document.getElementById("demo").innerText =
+        typeof myObject.date + " year=" + myObject.date.getUTCFullYear();
+    </script>
+  </body>
+</html>

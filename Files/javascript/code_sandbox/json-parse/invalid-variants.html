@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Invalid variants — single quotes, unquoted name, unquoted value</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const tests = ["{'name':\"John\"}", "{\"name\":'John'}", "{name:\"John\"}", "{\"name\":John}"];
+      const errs = tests.map(function (t) {
+        try { JSON.parse(t); return "ok"; }
+        catch (e) { return e.name; }
+      });
+      document.getElementById("demo").innerText = errs.join("\n");
+    </script>
+  </body>
+</html>

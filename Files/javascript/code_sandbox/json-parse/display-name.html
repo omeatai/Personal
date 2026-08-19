@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Common use — parse then show in HTML</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const person = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+      document.getElementById("demo").innerText = person.name;
+    </script>
+  </body>
+</html>

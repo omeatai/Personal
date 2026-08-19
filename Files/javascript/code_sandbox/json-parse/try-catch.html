@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Handling parse errors with try/catch</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      try {
+        JSON.parse("{name:'John'}");
+      } catch (err) {
+        document.getElementById("demo").innerText = err.name + ": " + err.message;
+      }
+    </script>
+  </body>
+</html>
