@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Browser API example — Geolocation coordinates</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const myElement = document.getElementById("demo");
+      function showPosition(position) {
+        myElement.innerText =
+          "Latitude: " + position.coords.latitude +
+          "\nLongitude: " + position.coords.longitude;
+      }
+      function showError(err) {
+        myElement.innerText =
+          "geolocation present=" + !!navigator.geolocation +
+          "\nerror=" + err.code + " " + err.message;
+      }
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError, { timeout: 1500 });
+        myElement.innerText = "geolocation present=true (waiting…)";
+      } else {
+        myElement.innerText = "Geolocation is not supported by this browser.";
+      }
+    </script>
+  </body>
+</html>

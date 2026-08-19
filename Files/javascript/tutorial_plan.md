@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `29.1` APIs Intro (new).
-- **Last completed:** `28.8` JSON vs XML.
+- **Next task:** `29.2` API Geolocation (new).
+- **Last completed:** `29.1` APIs Intro.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -424,7 +424,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ### S29 — JS Web API
 
-- [ ] `29.1` APIs Intro — `js_api_intro.asp` (new)
+- [x] `29.1` APIs Intro — `js_api_intro.asp` (new)
 - [ ] `29.2` API Geolocation — `js_api_geolocation.asp` (new)
 - [ ] `29.3` API Web Pointer — `js_api_pointer_events.asp` (new)
 - [ ] `29.4` API Web Storage — `js_api_web_storage.asp` (new)
