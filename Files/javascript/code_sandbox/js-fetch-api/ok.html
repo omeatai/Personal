@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>response.ok</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const out = [];
+        function show(v) { out.push(String(v)); }
+        try {
+          const response = await fetch("fetch.txt");
+          show(String(response.ok));
+        } catch (e) {
+          out.push(e.name + ": " + e.message);
+        }
+        document.getElementById("demo").innerText = out.join("\n");
+      })();
+    </script>
+  </body>
+</html>

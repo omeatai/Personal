@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `27.8` JS Fetch API (new).
-- **Last completed:** `27.7` JS Cookies.
+- **Next task:** `28.1` JSON Intro (new).
+- **Last completed:** `27.8` JS Fetch API.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -125,7 +125,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S24** JS HTML DOM (9)
 - [x] **S25** JS HTML Events (7)
 - [x] **S26** JS HTML First (4)
-- [ ] **S27** JS Window API / BOM (8)
+- [x] **S27** JS Window API / BOM (8)
 - [ ] **S28** JS JSON (8)
 - [ ] **S29** JS Web API (6)
 - [ ] **S30** JS Temporal (21)
@@ -409,7 +409,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `27.5` JS Navigator — `js_window_navigator.asp` (new)
 - [x] `27.6` JS Popup Alert — `js_popup.asp` (new)
 - [x] `27.7` JS Cookies — `js_cookies.asp` (new)
-- [ ] `27.8` JS Fetch API — `js_api_fetch.asp` (new)
+- [x] `27.8` JS Fetch API — `js_api_fetch.asp` (new)
 
 ### S28 — JS JSON
 

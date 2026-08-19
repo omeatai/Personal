@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Fetch vs XHR — error handling</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "Fetch: rejects on network failure; check response.ok for HTTP errors\n" +
+        "XHR: needs manual status checking";
+    </script>
+  </body>
+</html>

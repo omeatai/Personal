@@ -1,0 +1,2 @@
+Hello Fetch API
+This is fetch.txt from the sandbox.

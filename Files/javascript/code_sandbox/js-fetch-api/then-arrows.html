@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>fetch with arrow functions</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const out = [];
+        function show(v) { out.push(String(v)); }
+        try {
+          const data = await fetch("fetch.txt").then(r => r.text());
+          show(data.trim());
+        } catch (e) {
+          out.push(e.name + ": " + e.message);
+        }
+        document.getElementById("demo").innerText = out.join("\n");
+      })();
+    </script>
+  </body>
+</html>
