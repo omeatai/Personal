@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Full example — Start / Stop buttons</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <p>Count numbers: <output id="result"></output></p><button type="button" id="start">Start Worker</button> <button type="button" id="stop">Stop Worker</button>
+    <pre id="demo"></pre>
+    <script>
+      let w;
+      function startWorker() {
+        if (typeof w == "undefined") {
+          w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function (event) {
+          document.getElementById("result").textContent = event.data;
+        };
+      }
+      function stopWorker() {
+        w.terminate();
+        w = undefined;
+      }
+      document.getElementById("start").onclick = startWorker;
+      document.getElementById("stop").onclick = stopWorker;
+      startWorker();
+      setTimeout(function () {
+        const n = document.getElementById("result").textContent;
+        stopWorker();
+        document.getElementById("demo").innerText =
+          "result=" + n + " typeof w after stop=" + typeof w;
+      }, 1100);
+    </script>
+  </body>
+</html>

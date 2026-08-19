@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `29.6` API Web Worker (new).
-- **Last completed:** `29.5` API Validation.
+- **Next task:** `21.1` JS Alphabetic (new).
+- **Last completed:** `29.6` API Web Worker.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -127,7 +127,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S26** JS HTML First (4)
 - [x] **S27** JS Window API / BOM (8)
 - [x] **S28** JS JSON (8)
-- [ ] **S29** JS Web API (6)
+- [x] **S29** JS Web API (6)
 - [ ] **S30** JS Temporal (21)
 - [ ] **S31** Functions Advanced (11)
 - [ ] **S32** Objects Advanced (9)
@@ -429,7 +429,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `29.3` API Web Pointer — `js_api_pointer_events.asp` (new)
 - [x] `29.4` API Web Storage — `js_api_web_storage.asp` (new)
 - [x] `29.5` API Validation — `js_validation_api.asp` (new)
-- [ ] `29.6` API Web Worker — `js_api_web_workers.asp` (new)
+- [x] `29.6` API Web Worker — `js_api_web_workers.asp` (new)
 
 ### S30 — JS Temporal
 

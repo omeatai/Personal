@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>w.terminate() — stop the worker</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const w = new Worker("demo_workers.js");
+      let last = 0;
+      let after = "n/a";
+      w.onmessage = function (event) {
+        last = event.data;
+        if (last >= 1) {
+          w.terminate();
+          setTimeout(function () {
+            document.getElementById("demo").innerText =
+              "last=" + last + " terminated (no more updates)";
+          }, 600);
+        }
+      };
+    </script>
+  </body>
+</html>
