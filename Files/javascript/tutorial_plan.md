@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `28.5` JSON Stringify (new).
-- **Last completed:** `28.4` JSON Parse.
+- **Next task:** `28.6` JSON Fetch (new).
+- **Last completed:** `28.5` JSON Stringify.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -417,7 +417,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `28.2` JSON Syntax — `js_json_syntax.asp` (new)
 - [x] `28.3` JSON Values — `js_json_datatypes.asp` (new)
 - [x] `28.4` JSON Parse — `js_json_parse.asp` (new)
-- [ ] `28.5` JSON Stringify — `js_json_stringify.asp` (new)
+- [x] `28.5` JSON Stringify — `js_json_stringify.asp` (new)
 - [ ] `28.6` JSON Fetch — `js_json_server.asp` (new)
 - [ ] `28.7` JSON HTML — `js_json_html.asp` (new)
 - [ ] `28.8` JSON vs XML — `js_json_xml.asp` (new)

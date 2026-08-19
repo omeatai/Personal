@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Storing JSON in localStorage</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const myObj = {name: "John", age: 31, city: "New York"};
+      localStorage.setItem("testJSON", JSON.stringify(myObj));
+      const obj = JSON.parse(localStorage.getItem("testJSON"));
+      document.getElementById("demo").innerText = obj.name + " " + obj.age + " " + obj.city;
+    </script>
+  </body>
+</html>

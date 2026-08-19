@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Converting other values</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const lines = [
+        JSON.stringify("John"),
+        JSON.stringify(42),
+        JSON.stringify(false),
+        JSON.stringify(Boolean(0)),
+        JSON.stringify(true),
+        JSON.stringify(Boolean(1)),
+        String(JSON.stringify(undefined)),
+        JSON.stringify(null),
+        JSON.stringify(NaN),
+        JSON.stringify(Infinity)
+      ];
+      document.getElementById("demo").innerText = lines.join("\n");
+    </script>
+  </body>
+</html>

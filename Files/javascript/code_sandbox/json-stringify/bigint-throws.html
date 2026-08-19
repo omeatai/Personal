@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>BigInt throws TypeError</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      try { JSON.stringify(10n); }
+      catch (e) { document.getElementById("demo").innerText = e.name; }
+    </script>
+  </body>
+</html>

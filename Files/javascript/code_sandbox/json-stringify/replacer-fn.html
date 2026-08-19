@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Transforming values with a replacer function</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const text = JSON.stringify({ name: "John", age: 30 }, function (key, value) {
+        if (key == "age") { return value + 1; }
+        return value;
+      });
+      document.getElementById("demo").innerText = text;
+    </script>
+  </body>
+</html>

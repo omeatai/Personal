@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Stringifying dates</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const date = new Date("2026-07-22T11:28:00.000Z");
+      const text = JSON.stringify({ name: "John", today: date, city: "New York" });
+      document.getElementById("demo").innerText = text;
+    </script>
+  </body>
+</html>
