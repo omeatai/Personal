@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JSON number values — integer, fraction, exponent</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const o = JSON.parse('{"age":30,"height":1.82,"speed_of_light":2.997e8}');
+      document.getElementById("demo").innerText =
+        o.age + " " + o.height + " " + o.speed_of_light;
+    </script>
+  </body>
+</html>

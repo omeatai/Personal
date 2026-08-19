@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Boolean rule — 1 and 0 are numbers, not booleans</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const v = JSON.parse("1");
+      document.getElementById("demo").innerText = typeof v + " " + v;
+    </script>
+  </body>
+</html>

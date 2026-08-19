@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Dates are not a JSON type — store strings</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const o = JSON.parse('{"name":"John", "birth":"1986-12-14"}');
+      document.getElementById("demo").innerText = typeof o.birth + " " + o.birth;
+    </script>
+  </body>
+</html>

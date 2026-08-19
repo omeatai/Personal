@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Object as a property value</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const o = JSON.parse('{ "employee":{"name":"John", "age":30, "city":"New York"} }');
+      document.getElementById("demo").innerText = o.employee.name;
+    </script>
+  </body>
+</html>
