@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `27.6` JS Popup Alert (new).
-- **Last completed:** `27.5` JS Navigator.
+- **Next task:** `27.7` JS Cookies (new).
+- **Last completed:** `27.6` JS Popup Alert.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -407,7 +407,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `27.3` JS Location — `js_window_location.asp` (new)
 - [x] `27.4` JS History — `js_window_history.asp` (new)
 - [x] `27.5` JS Navigator — `js_window_navigator.asp` (new)
-- [ ] `27.6` JS Popup Alert — `js_popup.asp` (new)
+- [x] `27.6` JS Popup Alert — `js_popup.asp` (new)
 - [ ] `27.7` JS Cookies — `js_cookies.asp` (new)
 - [ ] `27.8` JS Fetch API — `js_api_fetch.asp` (new)
 

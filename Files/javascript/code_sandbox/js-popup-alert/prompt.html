@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>prompt() — ask for text</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+
+      window.alert = function (msg) {
+        document.getElementById("demo").innerText = "alert:\n" + String(msg);
+      };
+      window.confirm = function (msg) {
+        document.getElementById("demo").innerText =
+          (document.getElementById("demo").innerText + "\nconfirm: " + msg).trim();
+        return true;
+      };
+      window.prompt = function (msg, deflt) {
+        document.getElementById("demo").innerText =
+          "prompt: " + msg + " default=" + deflt;
+        return deflt;
+      };
+
+      let person = prompt("Please enter your name", "Harry Potter");
+      let text;
+      if (person == null || person == "") {
+        text = "User cancelled the prompt.";
+      } else {
+        text = "Hello " + person + "! How are you today?";
+      }
+      document.getElementById("demo").innerText += "\n" + text;
+    </script>
+  </body>
+</html>
