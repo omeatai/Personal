@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>validity.tooLong</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="id1" maxlength="3" value="ok">
+    <pre id="demo"></pre>
+    <script>
+      const el = document.getElementById("id1");
+      el.value = "hello";
+      document.getElementById("demo").innerText =
+        "tooLong=" + el.validity.tooLong + " length=" + el.value.length + " max=" + el.maxLength;
+    </script>
+  </body>
+</html>

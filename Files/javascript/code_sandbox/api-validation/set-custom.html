@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>setCustomValidity() method</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="id1" type="text">
+    <pre id="demo"></pre>
+    <script>
+      const inp = document.getElementById("id1");
+      inp.setCustomValidity("Choose a different name");
+      const a = inp.validity.customError + " " + inp.checkValidity();
+      inp.setCustomValidity("");
+      const b = inp.validity.customError + " " + inp.checkValidity();
+      document.getElementById("demo").innerText = "custom " + a + "\ncleared " + b;
+    </script>
+  </body>
+</html>

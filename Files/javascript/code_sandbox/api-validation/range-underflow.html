@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>validity.rangeUnderflow</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="id1" type="number" min="100" value="50">
+    <pre id="demo"></pre>
+    <script>
+      let text = "Value OK";
+      if (document.getElementById("id1").validity.rangeUnderflow) {
+        text = "Value too small";
+      }
+      document.getElementById("demo").innerText =
+        "rangeUnderflow=" + document.getElementById("id1").validity.rangeUnderflow + "\n" + text;
+    </script>
+  </body>
+</html>

@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `29.5` API Validation (new).
-- **Last completed:** `29.4` API Web Storage.
+- **Next task:** `29.6` API Web Worker (new).
+- **Last completed:** `29.5` API Validation.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -428,7 +428,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `29.2` API Geolocation — `js_api_geolocation.asp` (new)
 - [x] `29.3` API Web Pointer — `js_api_pointer_events.asp` (new)
 - [x] `29.4` API Web Storage — `js_api_web_storage.asp` (new)
-- [ ] `29.5` API Validation — `js_validation_api.asp` (new)
+- [x] `29.5` API Validation — `js_validation_api.asp` (new)
 - [ ] `29.6` API Web Worker — `js_api_web_workers.asp` (new)
 
 ### S30 — JS Temporal

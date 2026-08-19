@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>validity.stepMismatch</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="id1" type="number" min="0" step="2" value="3">
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "stepMismatch=" + document.getElementById("id1").validity.stepMismatch;
+    </script>
+  </body>
+</html>

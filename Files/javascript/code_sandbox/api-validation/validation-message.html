@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>validationMessage property</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="id1" type="number" required>
+    <pre id="demo"></pre>
+    <script>
+      const m = document.getElementById("id1").validationMessage;
+      document.getElementById("demo").innerText = "len=" + m.length + " msg=" + m;
+    </script>
+  </body>
+</html>
