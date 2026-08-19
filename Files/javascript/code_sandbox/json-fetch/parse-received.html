@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Receiving data — JSON.parse a text payload</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const myJSON = '{"name":"John", "age":31, "city":"New York"}';
+      const myObj = JSON.parse(myJSON);
+      document.getElementById("demo").innerText = myObj.name;
+    </script>
+  </body>
+</html>

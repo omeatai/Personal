@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Loading multiple JSON files with Promise.all</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const out = [];
+        function show(v) { out.push(String(v)); }
+        function myDisplayer(v) { show(v); }
+        try {
+          const [customerResponse, productsResponse, newsResponse] = await Promise.all([
+            fetch("customer.json"), fetch("products.json"), fetch("news.json")
+          ]);
+          const customer = await customerResponse.json();
+          const products = await productsResponse.json();
+          const news = await newsResponse.json();
+          myDisplayer("Customer name: " + customer.name);
+          myDisplayer(products.length + " products");
+          myDisplayer(news.length + " news items");
+        } catch (e) {
+          out.push(e.name + ": " + e.message);
+        }
+        document.getElementById("demo").innerText = out.join("\n");
+      })();
+    </script>
+  </body>
+</html>

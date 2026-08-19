@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Complete example — send name and age from inputs</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="name" value="John"> <input id="age" type="number" value="30"> <button type="button" id="send">Send</button>
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const person = {
+          name: document.getElementById("name").value,
+          age: Number(document.getElementById("age").value)
+        };
+        const result = await (await fetch("result.json")).json();
+        document.getElementById("demo").innerText =
+          JSON.stringify(person) + "\n" + result.message;
+      })();
+    </script>
+  </body>
+</html>

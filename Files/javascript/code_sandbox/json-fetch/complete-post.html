@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Complete sendPerson with try/catch</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const person = { name: "John", age: 30 };
+        const body = JSON.stringify(person);
+        try {
+          const response = await fetch("result.json");
+          if (!response.ok) { throw new Error("HTTP error " + response.status); }
+          const result = await response.json();
+          document.getElementById("demo").innerText = result.message + "\nwould POST " + body;
+        } catch (error) {
+          document.getElementById("demo").innerText = error.message;
+        }
+      })();
+    </script>
+  </body>
+</html>

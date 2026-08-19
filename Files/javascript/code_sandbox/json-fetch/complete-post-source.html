@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Complete sendPerson with try/catch source</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      body { background: #f1f1f1; }
+      pre {
+        margin: 0;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-left: 4px solid #04aa6d;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Example</h3>
+    <pre>async function sendPerson() {
+  const person = { name: &quot;John&quot;, age: 30 };
+  try {
+    const response = await fetch(&quot;/api/person&quot;, { method: &quot;POST&quot;,
+      headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+      body: JSON.stringify(person) });
+    if (!response.ok) { throw new Error(&quot;HTTP error &quot; + response.status); }
+    const result = await response.json();
+    document.getElementById(&quot;demo&quot;).textContent = result.message;
+  } catch (error) {
+    document.getElementById(&quot;demo&quot;).textContent = error.message;
+  }
+}</pre>
+  </body>
+</html>

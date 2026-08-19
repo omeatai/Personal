@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Older pattern — stringify onto a query string</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const myObj = {name: "John", age: 31, city: "New York"};
+      const myJSON = JSON.stringify(myObj);
+      document.getElementById("demo").innerText = "demo_json.php?x=" + myJSON;
+    </script>
+  </body>
+</html>

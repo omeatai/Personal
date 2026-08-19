@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Sending JSON — method, headers, body</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const person = { name: "John", age: 30 };
+        const body = JSON.stringify(person);
+        const headers = { "Content-Type": "application/json" };
+        const result = await (await fetch("result.json")).json();
+        document.getElementById("demo").innerText =
+          "method=POST\nContent-Type=" + headers["Content-Type"] +
+          "\nbody=" + body + "\nmock " + result.message;
+      })();
+    </script>
+  </body>
+</html>
