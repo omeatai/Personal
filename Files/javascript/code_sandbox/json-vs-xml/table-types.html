@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Difference — typed values vs text-only elements</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const n = JSON.parse('{"age":30}').age;
+      const xml = new DOMParser().parseFromString("<age>30</age>", "text/xml");
+      const t = xml.getElementsByTagName("age")[0].textContent;
+      document.getElementById("demo").innerText =
+        "json " + typeof n + " " + n + "\nxml " + typeof t + " " + t;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>XML attributes vs JSON fields</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const xml = '<product id="101" currency="USD"><name>Laptop</name><price>899</price></product>';
+      const el = new DOMParser().parseFromString(xml, "text/xml").documentElement;
+      document.getElementById("demo").innerText =
+        el.getAttribute("id") + " " + el.getAttribute("currency") + " " +
+        el.getElementsByTagName("name")[0].textContent;
+    </script>
+  </body>
+</html>

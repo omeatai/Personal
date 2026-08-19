@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>XML example — employee elements</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const xml = "<employees><employee><firstName>John</firstName><lastName>Doe</lastName></employee></employees>";
+      const doc = new DOMParser().parseFromString(xml, "text/xml");
+      document.getElementById("demo").innerText =
+        doc.getElementsByTagName("firstName")[0].textContent;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Difference — comments</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const doc = new DOMParser().parseFromString("<x><!-- hi --></x>", "text/xml");
+      const c = doc.documentElement.firstChild;
+      document.getElementById("demo").innerText =
+        "nodeType=" + c.nodeType + " data=" + c.data;
+    </script>
+  </body>
+</html>

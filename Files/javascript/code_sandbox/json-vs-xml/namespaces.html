@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>XML namespaces</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const xml = '<root xmlns:h="http://www.w3.org/TR/html4/" xmlns:f="https://example.com/furniture"><h:table xmlns:h="http://www.w3.org/TR/html4/"/><f:table xmlns:f="https://example.com/furniture"/></root>';
+      const el = new DOMParser().parseFromString(xml, "text/xml").documentElement;
+      document.getElementById("demo").innerText =
+        "xmlns:h=" + el.getAttribute("xmlns:h") + "\nxmlns:f=" + el.getAttribute("xmlns:f");
+    </script>
+  </body>
+</html>

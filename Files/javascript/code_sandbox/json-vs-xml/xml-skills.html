@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>XML uses elements — skills</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const xml = '<person id="101"><name>John</name><skills><skill>HTML</skill><skill>CSS</skill><skill>JavaScript</skill></skills></person>';
+      const doc = new DOMParser().parseFromString(xml, "text/xml");
+      const skills = doc.getElementsByTagName("skill");
+      document.getElementById("demo").innerText =
+        "skills=" + skills.length + " id=" + doc.documentElement.getAttribute("id") +
+        " first=" + skills[0].textContent;
+    </script>
+  </body>
+</html>

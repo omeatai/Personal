@@ -84,8 +84,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 ## Resume pointer
 
-- **Next task:** `28.8` JSON vs XML (new).
-- **Last completed:** `28.7` JSON HTML.
+- **Next task:** `29.1` APIs Intro (new).
+- **Last completed:** `28.8` JSON vs XML.
 - **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
   `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -126,7 +126,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] **S25** JS HTML Events (7)
 - [x] **S26** JS HTML First (4)
 - [x] **S27** JS Window API / BOM (8)
-- [ ] **S28** JS JSON (8)
+- [x] **S28** JS JSON (8)
 - [ ] **S29** JS Web API (6)
 - [ ] **S30** JS Temporal (21)
 - [ ] **S31** Functions Advanced (11)
@@ -420,7 +420,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [x] `28.5` JSON Stringify — `js_json_stringify.asp` (new)
 - [x] `28.6` JSON Fetch — `js_json_server.asp` (new)
 - [x] `28.7` JSON HTML — `js_json_html.asp` (new)
-- [ ] `28.8` JSON vs XML — `js_json_xml.asp` (new)
+- [x] `28.8` JSON vs XML — `js_json_xml.asp` (new)
 
 ### S29 — JS Web API
 
