@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JSON vs JS — unquoted names</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      let jsonOk = "fail";
+      try { JSON.parse('{name:"John"}'); } catch (e) { jsonOk = e.name; }
+      const jsOk = ({name: "John"}).name;
+      document.getElementById("demo").innerText = "JSON " + jsonOk + " / JS object " + jsOk;
+    </script>
+  </body>
+</html>

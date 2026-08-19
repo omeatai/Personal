@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JSON vs JS — trailing commas</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const js = { name: "John", age: 30, };
+      document.getElementById("demo").innerText = "JS trailing comma ok name=" + js.name;
+    </script>
+  </body>
+</html>
