@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>window.location.assign() — load a new document</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <input id="b" type="button" value="Load new document">
+    <pre id="demo"></pre>
+    <script>
+      function newDoc() {
+        document.getElementById("demo").innerText =
+          "would assign https://www.w3schools.com (not followed in snapshot)";
+      }
+      document.getElementById("b").onclick = newDoc;
+      newDoc();
+    </script>
+  </body>
+</html>
