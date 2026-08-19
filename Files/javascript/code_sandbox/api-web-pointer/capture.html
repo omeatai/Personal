@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>setPointerCapture — keep receiving events while dragging</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="pad">pad</div>
+    <pre id="demo"></pre>
+    <script>
+      const pad = document.getElementById("pad");
+      pad.addEventListener("pointerdown", function (e) {
+        pad.setPointerCapture(e.pointerId);
+        document.getElementById("demo").innerText =
+          "hasPointerCapture=" + pad.hasPointerCapture(e.pointerId);
+      });
+      pad.dispatchEvent(new PointerEvent("pointerdown", { bubbles: true, pointerId: 1, pointerType: "mouse" }));
+    </script>
+  </body>
+</html>

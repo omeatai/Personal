@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>CSS pointer-events: auto</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="pad" style="pointer-events:auto;width:100px;height:40px;background:#04AA6D">auto</div>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("demo").innerText =
+        "pointer-events=" + getComputedStyle(document.getElementById("pad")).pointerEvents;
+    </script>
+  </body>
+</html>

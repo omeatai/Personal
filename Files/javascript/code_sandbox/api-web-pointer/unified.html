@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Unified model — one listener for mouse, pen, and touch</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="pad">pad</div>
+    <pre id="demo"></pre>
+    <script>
+      const pad = document.getElementById("pad");
+      pad.addEventListener("pointerdown", function (e) {
+        document.getElementById("demo").innerText =
+          "PointerEvent=" + (e instanceof PointerEvent) +
+          " clientX=" + e.clientX +
+          " tiltX=" + e.tiltX;
+      });
+      pad.dispatchEvent(new PointerEvent("pointerdown", { bubbles: true, clientX: 10, tiltX: 0, pointerId: 1, pointerType: "mouse" }));
+    </script>
+  </body>
+</html>

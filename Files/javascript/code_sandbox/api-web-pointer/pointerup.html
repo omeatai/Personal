@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>pointerup event</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="pad" style="width:120px;height:40px;background:#04AA6D;color:#fff;text-align:center;line-height:40px">pad</div>
+    <pre id="demo"></pre>
+    <script>
+      const pad = document.getElementById("pad");
+      pad.addEventListener("pointerup", function () {
+        document.getElementById("demo").innerText = "pointerup";
+      });
+      pad.dispatchEvent(new PointerEvent("pointerup", { bubbles: true, pointerId: 1, pointerType: "mouse", isPrimary: true }));
+    </script>
+  </body>
+</html>
