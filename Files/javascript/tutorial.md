@@ -30,6 +30,7 @@ This section has **4** examples:
   - It also runs the same statement automatically when the URL ends in **`?run`**, so the screenshots below show the exact outcome the click produces.
 
 <a id="js-introduction-example-01"></a>
+
 ### **Example 1: Change HTML content**
 
 - [x] **`document.getElementById("demo")`** finds the `<p id="demo">`, and **`.innerHTML = "Hello JavaScript"`** replaces everything inside that paragraph.
@@ -57,6 +58,7 @@ Sandbox: `code_sandbox/js-introduction/index.html`
 - [x] **Outcome:** before the click the paragraph reads **JavaScript can change HTML content.**; after the click (shown above) it reads **Hello JavaScript**.
 
 <a id="js-introduction-example-02"></a>
+
 ### **Example 2: Change an HTML attribute value**
 
 - [x] The light-bulb demo swaps the **`src`** attribute of an `<img id="myImage">` between two files.
@@ -84,6 +86,7 @@ Sandbox: `code_sandbox/js-introduction/lightbulb.html`
 - [x] **Outcome:** the page starts on the grey **off** bulb; running the "on" statement swaps the image to the yellow **on** bulb (shown above) without reloading the page.
 
 <a id="js-introduction-example-03"></a>
+
 ### **Example 3: Change an HTML style (CSS)**
 
 - [x] Changing style is a variant of changing an attribute — you assign to properties on the element's **`style`** object.
@@ -107,6 +110,7 @@ Sandbox: `code_sandbox/js-introduction/style.html`
 - [x] **Outcome:** the paragraph jumps from normal size to a large **35px** heading-sized line (shown above).
 
 <a id="js-introduction-example-04"></a>
+
 ### **Example 4: Hide and show elements**
 
 - [x] Visibility is controlled through the **`display`** style.
@@ -309,6 +313,7 @@ This section has **4** examples:
   - Placement changes **when** the code runs relative to the HTML being parsed, which the examples below make concrete.
 
 <a id="js-where-to-example-01"></a>
+
 ### **Example 1: The `<script>` tag**
 
 - [x] A script placed directly in the page runs **as the browser reaches it** while parsing.
@@ -332,6 +337,7 @@ Sandbox: `code_sandbox/js-where-to/basic.html`
 - [x] **Outcome:** the paragraph loads already reading **My First JavaScript** (the inline script ran during page load), instead of the original **A Paragraph.**
 
 <a id="js-where-to-example-02"></a>
+
 ### **Example 2: JavaScript in `<head>`**
 
 - [x] The function `myFunction()` is **defined** in the `<head>`, but nothing runs until the button is clicked.
@@ -362,6 +368,7 @@ Sandbox: `code_sandbox/js-where-to/head.html`
 - [x] **Outcome:** after clicking **Try it**, the paragraph changes from **A Paragraph** to **Paragraph changed.** (shown above).
 
 <a id="js-where-to-example-03"></a>
+
 ### **Example 3: JavaScript in `<body>`**
 
 - [x] The exact same function works when placed at the **bottom of `<body>`**.
@@ -390,6 +397,7 @@ Sandbox: `code_sandbox/js-where-to/index.html`
 - [x] **Outcome:** clicking **Try it** again produces **Paragraph changed.** under the **Demo JavaScript in Body** heading (shown above).
 
 <a id="js-where-to-example-04"></a>
+
 ### **Example 4: External JavaScript**
 
 - [x] Code can live in a separate **`.js`** file and be loaded with **`src`**: `<script src="myScript.js"></script>`.
@@ -584,6 +592,7 @@ This section has **5** examples:
   - Most on-page output starts with **`document.getElementById(id)`** to grab an element by its `id`, then assigns a property.
 
 <a id="js-output-example-01"></a>
+
 ### **Example 1: Using `innerHTML`**
 
 - [x] `innerHTML` sets the element's content and **parses it as HTML**, so `"<h2>Hello World</h2>"` renders as a real heading.
@@ -608,6 +617,7 @@ Sandbox: `code_sandbox/js-output/index.html`
 - [x] **Outcome:** the empty paragraph becomes a large bold **Hello World** heading (the `<h2>` tags were parsed, not shown literally).
 
 <a id="js-output-example-02"></a>
+
 ### **Example 2: Using `innerText`**
 
 - [x] `innerText` sets the element's **plain text**; any HTML in the string would show up **literally**, not rendered.
@@ -631,6 +641,7 @@ Sandbox: `code_sandbox/js-output/innertext.html`
 - [x] **Outcome:** the paragraph shows plain, normal-sized **Hello World** — compare with Example 1's big heading to see the `innerHTML` vs `innerText` difference.
 
 <a id="js-output-example-03"></a>
+
 ### **Example 3: Using `document.write()`**
 
 - [x] `document.write()` writes straight into the HTML output **while the page is parsing** — here it prints `5 + 6`, i.e. **11**.
@@ -657,6 +668,7 @@ Sandbox: `code_sandbox/js-output/write.html`
 - [x] **Outcome:** during load the number **11** appears under the paragraph. If you instead clicked a **Try it** button after load, the entire page would be replaced by a bare **11**.
 
 <a id="js-output-example-04"></a>
+
 ### **Example 4: Using `window.alert()`**
 
 - [x] `window.alert(5 + 6)` pops a modal **alert box** showing **11**.
@@ -682,6 +694,7 @@ Sandbox: `code_sandbox/js-output/alert.html`
 - [x] **Outcome:** clicking **Show alert (5 + 6)** (or loading the auto-run version) opens a native dialog reading **11**; the page underneath is unchanged.
 
 <a id="js-output-example-05"></a>
+
 ### **Example 5: Using `console.log()`**
 
 - [x] `console.log()` writes to the **browser console** (DevTools), the standard tool for **debugging** — it does **not** change the page.
@@ -854,6 +867,7 @@ This section has **4** examples:
 - [x] Each example below is a small page that computes real values with `<script>` and prints them, so you can see what the rules produce.
 
 <a id="js-syntax-example-01"></a>
+
 ### **Example 1: Literals (fixed values)**
 
 - [x] **Number literals** are written with or without decimals: `10.50` (shows as `10.5`) and `1001`.
@@ -879,6 +893,7 @@ Sandbox: `code_sandbox/js-syntax/literals.html`
 - [x] **Outcome:** the page prints the numbers **10.5, 1001** and the strings **"John Doe", 'John Doe'**, confirming both number forms and both quote styles are valid.
 
 <a id="js-syntax-example-02"></a>
+
 ### **Example 2: Keywords, variables, and identifiers**
 
 - [x] **Keywords** define actions. **`let`** and **`const`** both create variables (`let x = 5;`, `const fname = "John";`).
@@ -903,6 +918,7 @@ y = 6;
 - [x] **Outcome:** the page reports **let x = 5**, **const fname = "John"**, and **y = 6** — the define-then-assign step worked.
 
 <a id="js-syntax-example-03"></a>
+
 ### **Example 3: Operators and expressions**
 
 - [x] The **assignment** operator `=` stores a value; **arithmetic** operators `+ - * /` compute values.
@@ -927,6 +943,7 @@ let sum = x + y; // 11
 - [x] **Outcome:** the page prints **x + y = 11**, **5 \* 10 = 50**, **(5 + 6) \* 10 = 110**, and **"John" + " " + "Doe" = John Doe**.
 
 <a id="js-syntax-example-04"></a>
+
 ### **Example 4: Case sensitivity and camelCase**
 
 - [x] Identifiers are **case-sensitive**: `lastName` and `lastname` are **two different variables** holding different values.
@@ -1078,6 +1095,7 @@ This section has **3** examples:
   - Statements are built from **values, operators, expressions, keywords, and comments**.
 
 <a id="js-statements-example-01"></a>
+
 ### **Example 1: Statements and execution order**
 
 - [x] The four numbered lines run **in sequence**: declare `x, y, z`; assign `x = 5`; assign `y = 6`; then compute `z = x + y`.
@@ -1101,6 +1119,7 @@ document.getElementById("demo").innerHTML = "Hello Dolly.";
 - [x] **Outcome:** the page prints **x = 5, y = 6, z = x + y = 11** and the message **Hello Dolly.**
 
 <a id="js-statements-example-02"></a>
+
 ### **Example 2: Semicolons separate statements**
 
 - [x] A **semicolon** ends an executable statement. Ending statements with `;` is **not strictly required** but **highly recommended**.
@@ -1128,6 +1147,7 @@ c = a + b;
 - [x] **Outcome:** the page reports **a = 5, b = 6, c = a + b = 11** — the three statements executed and produced the sum.
 
 <a id="js-statements-example-03"></a>
+
 ### **Example 3: Code blocks**
 
 - [x] Statements grouped inside **curly brackets `{ ... }`** form a **code block** that runs together.
@@ -1299,6 +1319,7 @@ This section has **3** examples:
 - [x] Comments are ignored by the engine — they never affect the output, only the readability/behaviour of which lines run.
 
 <a id="js-comments-example-01"></a>
+
 ### **Example 1: Single-line comments (`//`)**
 
 - [x] A `//` comment runs from the `//` to the **end of the line**; everything after it on that line is ignored.
@@ -1324,6 +1345,7 @@ let y = x + 2; // Declare y, give it the value of x + 2
 - [x] **Outcome:** despite the comments, the heading becomes **My First Page**, the paragraph **My first paragraph.**, and the page prints **x = 5, y = x + 2 = 7**.
 
 <a id="js-comments-example-02"></a>
+
 ### **Example 2: Multi-line comments (`/* ... */`)**
 
 - [x] Everything between **`/*`** and **`*/`** is ignored, across as many lines as you like — a **comment block**.
@@ -1349,6 +1371,7 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 - [x] **Outcome:** the block is ignored and both statements run, so the page shows **My First Page** and **My first paragraph.** — identical to Example 1's heading/paragraph.
 
 <a id="js-comments-example-03"></a>
+
 ### **Example 3: Using comments to prevent execution**
 
 - [x] Adding `//` in front of a statement turns it into a comment, so it **does not run** — great for temporarily disabling code while testing.
@@ -1472,6 +1495,7 @@ This section has **4** examples:
 - [x] **Identifiers (names)** can be short (`x`) or descriptive (`carName`); they may contain letters, digits, `_`, and `$`, but **cannot start with a digit** (that is how JS tells identifiers from numbers). They are **case sensitive** and cannot be reserved words.
 
 <a id="js-variables-example-01"></a>
+
 ### **Example 1: Declaring variables (`let` / `const` / `undefined`)**
 
 - [x] `let` and `const` both **create** (declare) a variable; you can compute from other variables (`let z = x + y;`).
@@ -1500,6 +1524,7 @@ carName = "Volvo"; // assign later with =
 - [x] **Outcome:** `x + y` is **11** and `a + b` is **11**; `carName` reads **undefined** before assignment and **Volvo** after — proof that a bare `let` starts life as `undefined`.
 
 <a id="js-variables-example-02"></a>
+
 ### **Example 2: Identifiers (`_` and `$` count as letters)**
 
 - [x] **`_`** is treated as a letter, so `_lastName`, `_x`, `_100` are valid names; a common convention is to start "private" names with an underscore.
@@ -1524,6 +1549,7 @@ let $myMoney = 5;
 - [x] **Outcome:** every name resolves normally — `_lastName = Johnson`, `$ = Hello World`, `$myMoney = 5` — showing `_` and `$` are ordinary letters to JavaScript.
 
 <a id="js-variables-example-03"></a>
+
 ### **Example 3: Data types & multiple declarations**
 
 - [x] **Numbers** are written **without quotes** (`const pi = 3.14;`); **strings** are wrapped in **quotes** (`let person = "John Doe";`).
@@ -1550,6 +1576,7 @@ let p2 = "John Doe",
 - [x] **Outcome:** `pi = 3.14`, `person = "John Doe"`, and the comma‑separated statement declares all three of `p2`, `carName`, `price` at once (`John Doe`, `Volvo`, `200`).
 
 <a id="js-variables-example-04"></a>
+
 ### **Example 4: Assignment & arithmetic (`=` and `+`)**
 
 - [x] The **`=`** operator **assigns**, it is not algebra: `x = x + 5` reads the old `x` (5), adds 5, and stores **10** back. The equal‑to comparison operator is **`==`**, not a single `=`.
@@ -1737,6 +1764,7 @@ This section has **4** examples:
 - [x] Inside a **function**, `var`, `let`, and `const` all share **function scope**; the differences below are about **blocks** (`{ }`) and **hoisting**.
 
 <a id="js-let-example-01"></a>
+
 ### **Example 1: Block scope with `let`**
 
 - [x] A variable declared with `let` inside `{ }` exists **only inside that block**; the outer variable of the same name is untouched.
@@ -1762,6 +1790,7 @@ let x = 10;
 - [x] **Outcome:** prints `x = 10` before the block, `x = 2` inside, and `x = 10` again after — the inner `let` never leaked out.
 
 <a id="js-let-example-02"></a>
+
 ### **Example 2: `var` is not block scoped**
 
 - [x] `var` **ignores blocks**: a `var` declared inside `{ }` is the **same** variable as one outside, so it can be read (and changed) after the block.
@@ -1787,6 +1816,7 @@ var x = 10;
 - [x] **Outcome:** after the block, `x = 2` — the `var` assignment inside the block **overwrote** the outer value, unlike `let` in Example 1.
 
 <a id="js-let-example-03"></a>
+
 ### **Example 3: Redeclaring variables**
 
 - [x] **`var` can be redeclared** in the same scope (`var x = 2; var x = 3;` is legal and just reassigns).
@@ -1813,6 +1843,7 @@ let y = 2;
 - [x] **Outcome:** `var x` becomes **3**, the outer `let y` stays **2**, and the block's own `let y` is **3** — same‑scope `let` redeclaration is rejected as a `SyntaxError`.
 
 <a id="js-let-example-04"></a>
+
 ### **Example 4: Hoisting (`var` vs `let`)**
 
 - [x] **`var` is hoisted and initialized to `undefined`**, so using it _before_ its line does not error — you just read `undefined`.
@@ -1992,6 +2023,7 @@ This section has **4** examples:
 - [x] The key subtlety: `const` locks the **binding (the reference)**, not the **contents**. You can still mutate what an array or object holds.
 
 <a id="js-const-example-01"></a>
+
 ### **Example 1: `const` cannot be reassigned**
 
 - [x] Assigning a new value to a `const` throws a **`TypeError`** at runtime (here caught with `try/catch`).
@@ -2016,6 +2048,7 @@ PI = 3.14; // TypeError: cannot reassign a const
 - [x] **Outcome:** `PI` keeps **3.14159265359**; the reassignment reports **TypeError**, and the note reminds that a value‑less `const` is a `SyntaxError`.
 
 <a id="js-const-example-02"></a>
+
 ### **Example 2: Constant arrays (mutate, don't reassign)**
 
 - [x] With a `const` array you **can** change elements (`cars[0] = "Toyota"`) and **add** items (`cars.push("Audi")`).
@@ -2040,6 +2073,7 @@ cars = ["Toyota"]; // TypeError: cannot reassign the array
 - [x] **Outcome:** after edits the array is **Toyota, Volvo, BMW, Audi**; trying to reassign the whole array raises **TypeError**.
 
 <a id="js-const-example-03"></a>
+
 ### **Example 3: Constant objects (change properties, don't reassign)**
 
 - [x] With a `const` object you **can** change existing properties (`car.color = "red"`) and **add** new ones (`car.owner = "Johnson"`).
@@ -2064,6 +2098,7 @@ car = { type: "Volvo" }; // TypeError: cannot reassign the object
 - [x] **Outcome:** the object updates to **type=Fiat, color=red, owner=Johnson**; reassigning the object reports **TypeError**.
 
 <a id="js-const-example-04"></a>
+
 ### **Example 4: Block scope & hoisting**
 
 - [x] Like `let`, a `const` inside `{ }` is a **separate** variable — a block `const x` does **not** affect the outer `x`.
@@ -2229,6 +2264,7 @@ This section has **4** examples:
 - [x] JavaScript is **dynamically typed:** the same variable can hold different types over time; `typeof` tells you what it currently holds.
 
 <a id="js-types-example-01"></a>
+
 ### **Example 1: The `typeof` operator**
 
 - [x] `typeof` returns a **string** naming the type: `"string"`, `"number"`, `"boolean"`, `"bigint"`, `"object"`, `"undefined"`.
@@ -2255,6 +2291,7 @@ typeof undefined; // "undefined"
 - [x] **Outcome:** each value prints its type; note `[1,2,3]` and `null` both come back as **object**, while `undefined` is its own type.
 
 <a id="js-types-example-02"></a>
+
 ### **Example 2: Strings**
 
 - [x] A **string** is a series of characters wrapped in **single or double quotes** — both are equivalent.
@@ -2280,6 +2317,7 @@ let answer3 = 'He is called "Johnny"';
 - [x] **Outcome:** all five strings print intact, including the ones with an inner apostrophe or inner quotes.
 
 <a id="js-types-example-03"></a>
+
 ### **Example 3: Numbers**
 
 - [x] All JavaScript numbers are **floating point** — with or without decimals (`34.00` and `34` both print as `34`).
@@ -2305,6 +2343,7 @@ let big = 9999999999999999; // beyond safe integer -> rounds
 - [x] **Outcome:** `34.00` and `34` both show **34**, the `e` forms expand to **12300000** and **0.00123**, and the huge integer rounds to **10000000000000000**.
 
 <a id="js-types-example-04"></a>
+
 ### **Example 4: Booleans, `undefined` & empty string**
 
 - [x] A **boolean** is only **`true`** or **`false`**; comparison operators (`>`, `<`, `==`, `!=`) return booleans.
@@ -2477,6 +2516,7 @@ This section has **4** examples:
 - [x] Each family below has its own runnable demo; the Arithmetic, Assignment, and Comparison chapters go deeper on each.
 
 <a id="js-operators-example-01"></a>
+
 ### **Example 1: Arithmetic operators**
 
 - [x] `+ - * /` do the usual math; **`%`** is the **remainder (modulus)** and **`**`** is **exponentiation (power)\*\*.
@@ -2509,6 +2549,7 @@ y--; // 4  decrement
 - [x] **Outcome:** `13, 7, 30, 3.333…, 1, 1000`, and the counters become **6** and **4**.
 
 <a id="js-operators-example-02"></a>
+
 ### **Example 2: Assignment operators**
 
 - [x] **`=`** assigns; the compound forms **`+= -= \*= /= %= **=`\*\* apply the operation to the current value and store the result.
@@ -2534,6 +2575,7 @@ x **= 3; // **=  x is 8
 - [x] **Outcome:** `x` walks through **10 → 15 → 12 → 24 → 6 → 2 → 8**.
 
 <a id="js-operators-example-03"></a>
+
 ### **Example 3: Comparison & logical operators**
 
 - [x] Comparison operators always return a **boolean**: **`==`** compares value only (loose), **`===`** compares value **and** type (strict).
@@ -2560,6 +2602,7 @@ Sandbox: `code_sandbox/js-operators/comparison.html`
 - [x] **Outcome:** loose `==` is **true** while strict `===` is **false**; the AND/OR expressions are **true** and the NOT flips to **false**.
 
 <a id="js-operators-example-04"></a>
+
 ### **Example 4: String operators**
 
 - [x] On strings, **`+`** is **concatenation** — it joins them (`"John" + " " + "Doe"` → `"John Doe"`).
@@ -2727,6 +2770,7 @@ This section has **4** examples:
 - [x] Each demo below isolates one idea: basic math, remainder/power, increment/decrement, and precedence.
 
 <a id="js-arithmetic-example-01"></a>
+
 ### **Example 1: Basic arithmetic (`+ - * /`)**
 
 - [x] The four everyday operators add, subtract, multiply, and divide their operands.
@@ -2751,6 +2795,7 @@ a / b; // 2     /  divide
 - [x] **Outcome:** `150, 50, 5000, 2`.
 
 <a id="js-arithmetic-example-02"></a>
+
 ### **Example 2: Modulus (`%`) and exponentiation (`**`)\*\*
 
 - [x] **`%`** returns the **remainder** of a division (`5 % 2` → `1`); it is `0` when one number divides the other evenly.
@@ -2776,6 +2821,7 @@ Math.pow(5, 2); // 25  same as 5 ** 2
 - [x] **Outcome:** the remainders are `1, 1, 0`, and the powers are `25, 1024`, with `Math.pow(5,2)` matching `5 ** 2`.
 
 <a id="js-arithmetic-example-03"></a>
+
 ### **Example 3: Increment (`++`) and decrement (`--`)**
 
 - [x] Both change a variable by **1**, but their **position** matters: **postfix** `x++` returns the **old** value then increments; **prefix** `++y` increments first and returns the **new** value.
@@ -2802,6 +2848,7 @@ z--; // decrement: z becomes 7
 - [x] **Outcome:** `x++` returned **5** (x is now 6), `++y` returned **6** (y is now 6), and `z--` left `z` at **7**.
 
 <a id="js-arithmetic-example-04"></a>
+
 ### **Example 4: Operator precedence**
 
 - [x] **`*` and `/` run before `+` and `-`**, so `100 + 50 * 3` is **250**, not `(100 + 50) * 3`.
@@ -2962,6 +3009,7 @@ This section has **8** examples:
 - [x] **The eight falsy values** are `false`, `0`, `-0`, `0n`, `""` / `''` / `` ` ` `` (empty strings), `null`, `undefined`, and `NaN`. Common traps that are actually **truthy**: `"0"`, `"false"`, `[]`, `{}`.
 
 <a id="js-assignment-example-01"></a>
+
 ### **Example 1: Simple assignment (`=`)**
 
 - [x] **`=`** evaluates the right-hand side, then stores that value in the variable on the left.
@@ -2983,6 +3031,7 @@ let z = 10 + y;
 - [x] **Outcome:** `x` is **10**, `y` is **5**, and `z` is **15**.
 
 <a id="js-assignment-example-02"></a>
+
 ### **Example 2: Addition assignment (`+=`)**
 
 - [x] **`x += 5`** is exactly **`x = x + 5`**. It reads the current value, adds 5, and writes the sum back.
@@ -3003,7 +3052,8 @@ x += 5;
 - [x] **Outcome:** after `x += 5`, `x` is **15**.
 
 <a id="js-assignment-example-03"></a>
-### **Example 3: Other arithmetic assignments (`-= *= **= /= %=`)**
+
+### **Example 3: Other arithmetic assignments (`-= \*= **= /= %=`)\*\*
 
 - [x] Each compound operator is shorthand for using the same variable on both sides:
   - `x -= 5` → `x = x - 5` → **5**
@@ -3017,11 +3067,16 @@ x += 5;
 Sandbox: `code_sandbox/js-assignment/others.html`
 
 ```javascript
-let x = 10; x -= 5;   // 5
-let a = 10; a *= 5;   // 50
-let b = 10; b **= 5;  // 100000
-let c = 10; c /= 5;   // 2
-let d = 10; d %= 5;   // 0
+let x = 10;
+x -= 5; // 5
+let a = 10;
+a *= 5; // 50
+let b = 10;
+b **= 5; // 100000
+let c = 10;
+c /= 5; // 2
+let d = 10;
+d %= 5; // 0
 ```
 
 ![js-assignment example 3 source](./code_sandbox/snaps/js-assignment-03-code.png)
@@ -3031,6 +3086,7 @@ let d = 10; d %= 5;   // 0
 - [x] **Outcome:** the five results are **5, 50, 100000, 2, 0**.
 
 <a id="js-assignment-example-04"></a>
+
 ### **Example 4: String assignment (`=` and `+=`)**
 
 - [x] **`=`** stores a string just like a number: `let text = "Hello"` makes `text` the string **Hello**.
@@ -3051,6 +3107,7 @@ text += " World";
 - [x] **Outcome:** `text` starts as **Hello** and becomes **Hello World** after `+=`.
 
 <a id="js-assignment-example-05"></a>
+
 ### **Example 5: Logical AND assignment (`&&=`)**
 
 - [x] **`x &&= 10`** assigns `10` to `x` **only if `x` is truthy**. If `x` is falsy, `x` is left alone (short-circuit).
@@ -3061,12 +3118,18 @@ text += " World";
 Sandbox: `code_sandbox/js-assignment/and.html`
 
 ```javascript
-let x = true;      let y = x &&= 10;
-let x = false;     let y = x &&= 10;
-let x = 1;         let y = x &&= 10;
-let x = 0;         let y = x &&= 10;
-let x = undefined; let y = x &&= 10;
-let x = null;      let y = x &&= 10;
+let x = true;
+let y = (x &&= 10);
+let x = false;
+let y = (x &&= 10);
+let x = 1;
+let y = (x &&= 10);
+let x = 0;
+let y = (x &&= 10);
+let x = undefined;
+let y = (x &&= 10);
+let x = null;
+let y = (x &&= 10);
 ```
 
 ![js-assignment example 5 source](./code_sandbox/snaps/js-assignment-05-code.png)
@@ -3076,6 +3139,7 @@ let x = null;      let y = x &&= 10;
 - [x] **Outcome:** truthy `x` becomes **10**; falsy `x` stays `false`, `0`, `undefined`, or `null`. `y` matches `x` in every row.
 
 <a id="js-assignment-example-06"></a>
+
 ### **Example 6: Logical OR assignment (`||=`)**
 
 - [x] **`x ||= 10`** assigns `10` **only if `x` is falsy**. If `x` is already truthy, it is left alone.
@@ -3086,10 +3150,14 @@ let x = null;      let y = x &&= 10;
 Sandbox: `code_sandbox/js-assignment/or.html`
 
 ```javascript
-let x = false;     let y = x ||= 10;
-let x = true;      let y = x ||= 10;
-let x = null;      let y = x ||= 10;
-let x = undefined; let y = x ||= 10;
+let x = false;
+let y = (x ||= 10);
+let x = true;
+let y = (x ||= 10);
+let x = null;
+let y = (x ||= 10);
+let x = undefined;
+let y = (x ||= 10);
 ```
 
 ![js-assignment example 6 source](./code_sandbox/snaps/js-assignment-06-code.png)
@@ -3099,6 +3167,7 @@ let x = undefined; let y = x ||= 10;
 - [x] **Outcome:** `false` / `null` / `undefined` become **10**; `true` stays **true**.
 
 <a id="js-assignment-example-07"></a>
+
 ### **Example 7: Nullish coalescing assignment (`??=`)**
 
 - [x] **`x ??= 10`** assigns `10` **only if `x` is `null` or `undefined`**. Other falsy values (`0`, `""`, `false`) are kept.
@@ -3109,11 +3178,17 @@ let x = undefined; let y = x ||= 10;
 Sandbox: `code_sandbox/js-assignment/nullish.html`
 
 ```javascript
-let a;             a ??= 10;
-let b = 0;         b ??= 10;
-let c = null;      c ??= 10;
-let d = undefined; d ??= 10;
-let x = 10; let y = 5; x ??= 10;
+let a;
+a ??= 10;
+let b = 0;
+b ??= 10;
+let c = null;
+c ??= 10;
+let d = undefined;
+d ??= 10;
+let x = 10;
+let y = 5;
+x ??= 10;
 ```
 
 ![js-assignment example 7 source](./code_sandbox/snaps/js-assignment-07-code.png)
@@ -3123,6 +3198,7 @@ let x = 10; let y = 5; x ??= 10;
 - [x] **Outcome:** `a`, `c`, and `d` become **10**; `b` stays **0**; `x` stays **10**.
 
 <a id="js-assignment-example-08"></a>
+
 ### **Example 8: Spread (`...`)**
 
 - [x] **`...`** splits an iterable into individual elements. A string is iterable **character by character**.
@@ -3310,6 +3386,7 @@ This section has **5** examples:
 - [x] Convert with **`Number()`** and guard with **`isNaN()`** before you compare user input.
 
 <a id="js-comparisons-example-01"></a>
+
 ### **Example 1: Equal to (`==`) vs strict equal (`===`)**
 
 - [x] With `x = 5`: `x == 8` is **false**, `x == 5` is **true**.
@@ -3321,11 +3398,11 @@ Sandbox: `code_sandbox/js-comparisons/equal.html`
 
 ```javascript
 let x = 5;
-x == 8;     // false
-x == 5;     // true
-x == "5";   // true   (loose)
-x === 5;    // true
-x === "5";  // false  (strict)
+x == 8; // false
+x == 5; // true
+x == "5"; // true   (loose)
+x === 5; // true
+x === "5"; // false  (strict)
 ```
 
 ![js-comparisons example 1 source](./code_sandbox/snaps/js-comparisons-01-code.png)
@@ -3335,6 +3412,7 @@ x === "5";  // false  (strict)
 - [x] **Outcome:** loose `== "5"` is **true**; strict `=== "5"` is **false**.
 
 <a id="js-comparisons-example-02"></a>
+
 ### **Example 2: Not equal and relational operators**
 
 - [x] **`!=`** is the loose “not equal”; **`!==`** is strict (not equal **value or type**).
@@ -3346,14 +3424,14 @@ Sandbox: `code_sandbox/js-comparisons/relational.html`
 
 ```javascript
 let x = 5;
-x != 8;     // true
-x !== 5;    // false
-x !== "5";  // true
-x !== 8;    // true
-x > 8;      // false
-x < 8;      // true
-x >= 8;     // false
-x <= 8;     // true
+x != 8; // true
+x !== 5; // false
+x !== "5"; // true
+x !== 8; // true
+x > 8; // false
+x < 8; // true
+x >= 8; // false
+x <= 8; // true
 ```
 
 ![js-comparisons example 2 source](./code_sandbox/snaps/js-comparisons-02-code.png)
@@ -3363,6 +3441,7 @@ x <= 8;     // true
 - [x] **Outcome:** `!= 8` is **true**; `!== 5` is **false**; `!== "5"` is **true**; `x < 8` and `x <= 8` are **true**; `x > 8` and `x >= 8` are **false**.
 
 <a id="js-comparisons-example-03"></a>
+
 ### **Example 3: String comparison (alphabetical)**
 
 - [x] `"A" < "B"` is **true** — `"A"` comes first in the alphabet.
@@ -3374,11 +3453,11 @@ Sandbox: `code_sandbox/js-comparisons/strings.html`
 ```javascript
 let text1 = "A";
 let text2 = "B";
-let result = text1 < text2;  // true
+let result = text1 < text2; // true
 
 let n1 = "20";
 let n2 = "5";
-n1 < n2;  // true  ("2" before "5")
+n1 < n2; // true  ("2" before "5")
 ```
 
 ![js-comparisons example 3 source](./code_sandbox/snaps/js-comparisons-03-code.png)
@@ -3388,6 +3467,7 @@ n1 < n2;  // true  ("2" before "5")
 - [x] **Outcome:** `"A" < "B"` is **true**, and `"20" < "5"` is **true** (text order, not numeric order).
 
 <a id="js-comparisons-example-04"></a>
+
 ### **Example 4: Comparing different types**
 
 - [x] Number vs number: `2 < 12` is **true**.
@@ -3399,14 +3479,14 @@ n1 < n2;  // true  ("2" before "5")
 Sandbox: `code_sandbox/js-comparisons/types.html`
 
 ```javascript
-2 < 12          // true
-2 < "12"        // true
-2 < "John"      // false
-2 > "John"      // false
-2 == "John"     // false
-"2" < "12"      // false
-"2" > "12"      // true
-"2" == "12"     // false
+2 < 12; // true
+2 < "12"; // true
+2 < "John"; // false
+2 > "John"; // false
+2 == "John"; // false
+"2" < "12"; // false
+"2" > "12"; // true
+"2" == "12"; // false
 ```
 
 ![js-comparisons example 4 source](./code_sandbox/snaps/js-comparisons-04-code.png)
@@ -3416,6 +3496,7 @@ Sandbox: `code_sandbox/js-comparisons/types.html`
 - [x] **Outcome:** mixed number/numeric-string works (`2 < "12"` **true**); `"John"` yields **false**; two strings sort alphabetically (`"2" > "12"` **true**).
 
 <a id="js-comparisons-example-05"></a>
+
 ### **Example 5: Convert before you compare**
 
 - [x] To get a **proper numeric result**, convert first: `age = Number(age)`.
@@ -3430,7 +3511,7 @@ age = Number(age);
 if (isNaN(age)) {
   voteable = "Input is not a number";
 } else {
-  voteable = (age < 18) ? "Too young" : "Old enough";
+  voteable = age < 18 ? "Too young" : "Old enough";
 }
 ```
 
@@ -3593,6 +3674,7 @@ This section has **5** examples:
 - [x] **Ternary `? :`** — shorthand `if` / `else` that **returns** a value: `condition ? a : b`.
 
 <a id="js-conditional-example-01"></a>
+
 ### **Example 1: The `if` statement**
 
 - [x] **`if (condition) { ... }`** runs the block only when the condition is **true**.
@@ -3616,8 +3698,8 @@ if (hour < 18) {
 
 - [x] **Outcome:** With **hour = 10**, `hour < 18` is **true**, so greeting is **Good day**.
 
-
 <a id="js-conditional-example-02"></a>
+
 ### **Example 2: The `else` statement**
 
 - [x] **`else`** runs when the matching **`if`** condition is **false**.
@@ -3642,8 +3724,8 @@ if (hour < 18) {
 
 - [x] **Outcome:** With **hour = 20**, `hour < 18` is **false**, so the `else` branch runs and greeting is **Good evening**.
 
-
 <a id="js-conditional-example-03"></a>
+
 ### **Example 3: The `else if` statement**
 
 - [x] **`else if`** tests a **new** condition only if every earlier test was **false**.
@@ -3671,8 +3753,8 @@ if (hour < 10) {
 
 - [x] **Outcome:** With **hour = 8**, the first test `hour < 10` is **true**, so greeting is **Good morning**. The `else if` and `else` blocks do not run.
 
-
 <a id="js-conditional-example-04"></a>
+
 ### **Example 4: The `switch` statement**
 
 - [x] **`switch (expression)`** picks a **`case`** that **strictly matches** (`===`) the expression.
@@ -3686,14 +3768,29 @@ Sandbox: `code_sandbox/js-conditional/switch.html`
 let dayNum = 3;
 let day;
 switch (dayNum) {
-  case 0: day = "Sunday"; break;
-  case 1: day = "Monday"; break;
-  case 2: day = "Tuesday"; break;
-  case 3: day = "Wednesday"; break;
-  case 4: day = "Thursday"; break;
-  case 5: day = "Friday"; break;
-  case 6: day = "Saturday"; break;
-  default: day = "Unknown";
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+    break;
+  default:
+    day = "Unknown";
 }
 ```
 
@@ -3703,8 +3800,8 @@ switch (dayNum) {
 
 - [x] **Outcome:** With **dayNum = 3**, `case 3` matches, `break` exits the switch, and day is **Wednesday**.
 
-
 <a id="js-conditional-example-05"></a>
+
 ### **Example 5: The ternary operator (`? :`)**
 
 - [x] **`condition ? exprIfTrue : exprIfFalse`** is a one-line **`if` / `else`** that **returns a value**.
@@ -3716,7 +3813,7 @@ Sandbox: `code_sandbox/js-conditional/ternary.html`
 
 ```javascript
 let hour = 10;
-let greeting = (hour < 18) ? "Good day" : "Good evening";
+let greeting = hour < 18 ? "Good day" : "Good evening";
 ```
 
 ![js-conditional example 5 source](./code_sandbox/snaps/js-conditional-05-code.png)
@@ -3880,6 +3977,7 @@ This section has **5** examples:
 - [x] **Nested `if` works** but gets busy; **`country == "USA" && age >= 16`** is the usual replacement.
 
 <a id="js-if-conditions-example-01"></a>
+
 ### **Example 1: `if` hour < 18 greeting**
 
 - [x] Write **`if` in lowercase**. **`If`** or **`IF`** is a JavaScript **error** (it is not the `if` keyword).
@@ -3903,8 +4001,8 @@ if (hour < 18) {
 
 - [x] **Outcome:** **hour = 10** makes `hour < 18` **true**, so greeting is **Good day**.
 
-
 <a id="js-if-conditions-example-02"></a>
+
 ### **Example 2: Age 18 can drive**
 
 - [x] Start with a **default** string, then **overwrite** it inside `if` when the test is true.
@@ -3927,8 +4025,8 @@ if (age >= 18) {
 
 - [x] **Outcome:** With **age = 18**, the `if` runs and text is **You can drive**.
 
-
 <a id="js-if-conditions-example-03"></a>
+
 ### **Example 3: Age 16 cannot drive**
 
 - [x] Same code as the previous Example, but **`age = 16`**.
@@ -3951,8 +4049,8 @@ if (age >= 18) {
 
 - [x] **Outcome:** With **age = 16**, the `if` does not run, so text stays **You can Not drive**.
 
-
 <a id="js-if-conditions-example-04"></a>
+
 ### **Example 4: Nested `if` (USA, age 16)**
 
 - [x] You can put an **`if` inside another `if`**. The inner test runs only if the outer test is true.
@@ -3979,8 +4077,8 @@ if (country == "USA") {
 
 - [x] **Outcome:** **USA** and **age 16** both pass, so nested `if` sets text to **You can drive!**.
 
-
 <a id="js-if-conditions-example-05"></a>
+
 ### **Example 5: Logical AND instead of nested `if`**
 
 - [x] A **better** (flatter) form of the nested test: `if (country == "USA" && age >= 16)`.
@@ -4160,6 +4258,7 @@ This section has **6** examples:
 - [x] **`while`** tests then runs. **`do while`** runs then tests (**at least once**). Always **`i++`** (or equivalent) or the loop never ends — do **not** demo an infinite loop.
 
 <a id="js-loops-example-01"></a>
+
 ### **Example 1: `for` over a cars array**
 
 - [x] Loops run the **same block many times**, usually with a **different value** each pass.
@@ -4183,8 +4282,8 @@ for (let i = 0; i < cars.length; i++) {
 
 - [x] **Outcome:** The loop concatenates all six names: **BMW Volvo Saab Ford Fiat Audi**.
 
-
 <a id="js-loops-example-02"></a>
+
 ### **Example 2: `for` i < 5 — "The number is i"**
 
 - [x] `for (expr1; expr2; expr3)` — **expr1** once before, **expr2** the condition, **expr3** after each pass.
@@ -4206,8 +4305,8 @@ for (let i = 0; i < 5; i++) {
 
 - [x] **Outcome:** The joined text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
 
-
 <a id="js-loops-example-03"></a>
+
 ### **Example 3: Loop scope: outer `let i = 5`, loop reuses `i` (i is 10 after)**
 
 - [x] `let i = 5` is declared **outside**. The header `for (i = 0; i < 10; i++)` **reuses** that same `i` (no second `let`).
@@ -4230,8 +4329,8 @@ for (i = 0; i < 10; i++) {
 
 - [x] **Outcome:** Outer **i** started at **5**. After `for (i = 0; i < 10; i++)`, **i is 10**.
 
-
 <a id="js-loops-example-04"></a>
+
 ### **Example 4: Loop scope: inner `let i` (outer i stays 5)**
 
 - [x] `for (let i = 0; i < 10; i++)` declares a **new** `i` that exists **only inside** the loop.
@@ -4254,8 +4353,8 @@ for (let i = 0; i < 10; i++) {
 
 - [x] **Outcome:** After the loop, the **outer** `i` is still **5**. The header `let i` was loop-scoped.
 
-
 <a id="js-loops-example-05"></a>
+
 ### **Example 5: `while` i < 10**
 
 - [x] **`while (condition) { ... }`** tests **first**, then maybe runs the block.
@@ -4279,8 +4378,8 @@ while (i < 10) {
 
 - [x] **Outcome:** The loop prints **The number is 0** … **The number is 9**. After it ends, **i is 10**. Forgetting `i++` would infinite-loop — do **not** run that.
 
-
 <a id="js-loops-example-06"></a>
+
 ### **Example 6: `do while` i < 10 (runs at least once)**
 
 - [x] **`do { ... } while (condition);`** runs the block **once first**, then tests.
@@ -4463,6 +4562,7 @@ This section has **6** examples:
 - [x] **`var i` leaks**; **`let i` does not.** After the `var` loop, `i` is **10**; after the `let` loop, outer `i` stays **5**.
 
 <a id="js-loop-for-example-01"></a>
+
 ### **Example 1: `for` i < 5 numbers**
 
 - [x] `for (exp1; exp2; exp3)` — **exp1** once before (`let i = 0`), **exp2** condition (`i < 5`), **exp3** after each pass (`i++`).
@@ -4484,8 +4584,8 @@ for (let i = 0; i < 5; i++) {
 
 - [x] **Outcome:** The text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
 
-
 <a id="js-loop-for-example-02"></a>
+
 ### **Example 2: `for` collect car names**
 
 - [x] `const cars = ["BMW", "Volvo", "Saab", "Ford"]` — **four** names (this page does not use Fiat/Audi).
@@ -4509,8 +4609,8 @@ for (let i = 0; i < len; i++) {
 
 - [x] **Outcome:** The collected string is **BMWVolvoSaabFord** (no spaces). **len** is **4**.
 
-
 <a id="js-loop-for-example-03"></a>
+
 ### **Example 3: Omit exp1 (`i = 2` before the loop)**
 
 - [x] **exp1 is optional.** Set the counter **before** the loop, then write `for (; i < len; i++)`.
@@ -4535,8 +4635,8 @@ for (; i < len; i++) {
 
 - [x] **Outcome:** Starting at index **2** collects **Saab Ford**.
 
-
 <a id="js-loop-for-example-04"></a>
+
 ### **Example 4: Omit exp3 (`i++` inside the body)**
 
 - [x] **exp3 is optional.** You can increment **inside** the body: `for (; i < len; ) { ... i++; }`.
@@ -4562,8 +4662,8 @@ for (; i < len; ) {
 
 - [x] **Outcome:** Incrementing inside the body still collects **BMW Volvo Saab Ford**.
 
-
 <a id="js-loop-for-example-05"></a>
+
 ### **Example 5: `var i` in the loop leaks (i is 10 after)**
 
 - [x] `var` is **function-scoped** (or global), not block-scoped.
@@ -4586,8 +4686,8 @@ for (var i = 0; i < 10; i++) {
 
 - [x] **Outcome:** **var i** started at **5** and is **10** after the loop — the header `var i` leaked.
 
-
 <a id="js-loop-for-example-06"></a>
+
 ### **Example 6: `let i` in the loop does not leak (outer i stays 5)**
 
 - [x] `let i` in the header is **loop-scoped**. It does **not** redeclare an outer `let i`.
@@ -4764,6 +4864,7 @@ This section has **4** examples:
 - [x] **`for (; cars[i]; )`** and **`while (cars[i])`** are the same idea: stop when the next slot is falsy.
 
 <a id="js-loop-while-example-01"></a>
+
 ### **Example 1: `while` i < 10**
 
 - [x] JavaScript has two while-style loops: **`while`** and **`do while`**.
@@ -4787,8 +4888,8 @@ while (i < 10) {
 
 - [x] **Outcome:** **The number is 0** through **The number is 9**. After the loop, **i is 10**.
 
-
 <a id="js-loop-while-example-02"></a>
+
 ### **Example 2: `do while` i < 10**
 
 - [x] `do { ... } while (condition);` runs the block **before** the test, so it runs **at least once**.
@@ -4812,8 +4913,8 @@ do {
 
 - [x] **Outcome:** Start **0** → **The number is 0** … **The number is 9**. Start **10** still runs once → **The number is 10**.
 
-
 <a id="js-loop-while-example-03"></a>
+
 ### **Example 3: `for (; cars[i]; )` collect cars**
 
 - [x] A `while` is like a `for` with **statement 1 and 3 omitted**.
@@ -4838,8 +4939,8 @@ for (; cars[i]; ) {
 
 - [x] **Outcome:** The `for (; cars[i]; )` collector builds **BMWVolvoSaabFord** and stops when `cars[i]` is **undefined** (`i` is **4**).
 
-
 <a id="js-loop-while-example-04"></a>
+
 ### **Example 4: `while (cars[i])` collect cars**
 
 - [x] Same walk as the previous Example, written as **`while (cars[i])`**.
@@ -5017,6 +5118,7 @@ This section has **5** examples:
 - [x] **Labeled block** — `break list` after two cars leaves **BMW Volvo**.
 
 <a id="js-break-example-01"></a>
+
 ### **Example 1: `break` when i === 3 in a for loop**
 
 - [x] In a loop, **`break` terminates immediately**. No later iterations run. Control continues **after** the loop.
@@ -5041,8 +5143,8 @@ for (let i = 0; i < 10; i++) {
 
 - [x] **Outcome:** **break** at **i === 3** leaves **The number is 0 The number is 1 The number is 2**. **3** is not appended.
 
-
 <a id="js-break-example-02"></a>
+
 ### **Example 2: `break` in a switch (dayNum = 3)**
 
 - [x] In a **`switch`**, `break` **exits** after the matching case so later cases do not **fall through**.
@@ -5055,13 +5157,26 @@ Sandbox: `code_sandbox/js-break/break-switch.html`
 let dayNum = 3;
 let day;
 switch (dayNum) {
-  case 0: day = "Sunday"; break;
-  case 1: day = "Monday"; break;
-  case 2: day = "Tuesday"; break;
-  case 3: day = "Wednesday"; break;
-  case 4: day = "Thursday"; break;
-  case 5: day = "Friday"; break;
-  case 6: day = "Saturday";
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
 }
 ```
 
@@ -5071,8 +5186,8 @@ switch (dayNum) {
 
 - [x] **Outcome:** **dayNum = 3** matches **case 3**, `break` exits, and day is **Wednesday**.
 
-
 <a id="js-break-example-03"></a>
+
 ### **Example 3: Labeled `break loop1` (leave the outer loop)**
 
 - [x] A **label** is an identifier plus a **colon**: `loop1: for (...)`.
@@ -5099,8 +5214,8 @@ loop1: for (let j = 1; j < 5; j++) {
 
 - [x] **Outcome:** `break loop1` at **i === 3** stops **both** loops. text is **12**.
 
-
 <a id="js-break-example-04"></a>
+
 ### **Example 4: Labeled `break loop2` (leave the inner loop only)**
 
 - [x] `break loop2` leaves **only the inner** loop. The **outer** loop continues with the next `j`.
@@ -5127,8 +5242,8 @@ loop1: for (let j = 1; j < 5; j++) {
 
 - [x] **Outcome:** `break loop2` stops only the **inner** loop. Four outer passes produce **12121212**.
 
-
 <a id="js-break-example-05"></a>
+
 ### **Example 5: Labeled `break` out of a block after the second car**
 
 - [x] Without a label, `break` only leaves a **loop** or **`switch`**.
@@ -5312,6 +5427,7 @@ This section has **3** examples:
 - [x] **`break` and `continue`** are the only statements that can jump out of a `{ }` block.
 
 <a id="js-continue-example-01"></a>
+
 ### **Example 1: `continue` skips i === 3 in a for loop**
 
 - [x] **`continue`** skips the **rest of this iteration** and starts the **next** one. The loop does **not** stop.
@@ -5336,8 +5452,8 @@ for (let i = 1; i < 10; i++) {
 
 - [x] **Outcome:** `continue` at **i === 3** skips that pass only. The text is **The number is 1 The number is 2 The number is 4 The number is 5 The number is 6 The number is 7 The number is 8 The number is 9**.
 
-
 <a id="js-continue-example-02"></a>
+
 ### **Example 2: `continue loop1`**
 
 - [x] `continue loop1` jumps to the **next iteration of the outer** labeled loop.
@@ -5365,8 +5481,8 @@ loop1: for (let j = 1; j < 5; j++) {
 
 - [x] **Outcome:** `continue loop1` at **i === 3** skips the rest of that **outer** pass. text is **12121212**.
 
-
 <a id="js-continue-example-03"></a>
+
 ### **Example 3: `continue loop2`**
 
 - [x] `continue loop2` skips only the **current inner** iteration. **`i = 4` still runs**.
@@ -5536,7 +5652,7 @@ This section has **5** examples:
 - [x] **Example 2:** Conditional `if` / `else` (age 20 Adult) [View](#js-control-flow-example-02)
 - [x] **Example 3:** `for` loop i < 5 [View](#js-control-flow-example-03)
 - [x] **Example 4:** `break` when i === 3 [View](#js-control-flow-example-04)
-- [x] **Example 5:** Function `myFunction(p1, p2)` returns p1 * p2 [View](#js-control-flow-example-05)
+- [x] **Example 5:** Function `myFunction(p1, p2)` returns p1 \* p2 [View](#js-control-flow-example-05)
 
 ## Detailed Explanation
 
@@ -5547,6 +5663,7 @@ This section has **5** examples:
 - [x] **Single-threaded** — JavaScript does **one thing at a time**. A slow file or network call can **freeze** the page unless you use **asynchronous** APIs (later Advanced chapter). No extra Example; the point is the model, not a demo.
 
 <a id="js-control-flow-example-01"></a>
+
 ### **Example 1: Default sequential flow**
 
 - [x] **Control flow** is the **order** statements run. By default JavaScript goes **top to bottom, left to right**.
@@ -5567,8 +5684,8 @@ let z = x + y;
 
 - [x] **Outcome:** Sequential assignment yields **x = 5**, **y = 6**, **z = 11**.
 
-
 <a id="js-control-flow-example-02"></a>
+
 ### **Example 2: Conditional `if` / `else` (age 20 Adult)**
 
 - [x] Conditions **branch** the flow: **`if`**, **`if...else`**, **`switch`**, ternary **`? :`**.
@@ -5593,8 +5710,8 @@ if (age >= 18) {
 
 - [x] **Outcome:** **age 20** → **Adult**. The other branch **age 16** → **Minor**.
 
-
 <a id="js-control-flow-example-03"></a>
+
 ### **Example 3: `for` loop i < 5**
 
 - [x] Loops **repeat** flow: **`for`**, **`while`**, **`do...while`**.
@@ -5616,8 +5733,8 @@ for (let i = 0; i < 5; i++) {
 
 - [x] **Outcome:** The loop text is **The number is 0 The number is 1 The number is 2 The number is 3 The number is 4**.
 
-
 <a id="js-control-flow-example-04"></a>
+
 ### **Example 4: `break` when i === 3**
 
 - [x] **Jump** statements change flow abruptly: **`break`**, **`continue`**, **`return`**, **`throw`**.
@@ -5642,9 +5759,9 @@ for (let i = 0; i < 10; i++) {
 
 - [x] **Outcome:** `break` at **i === 3** leaves **The number is 0 The number is 1 The number is 2**.
 
-
 <a id="js-control-flow-example-05"></a>
-### **Example 5: Function `myFunction(p1, p2)` returns p1 * p2**
+
+### **Example 5: Function `myFunction(p1, p2)` returns p1 \* p2**
 
 - [x] Functions are **callable, reusable** blocks. They run **when called**, not when defined.
 - [x] `function myFunction(p1, p2) { return p1 * p2; }` — **`return`** is a jump that **exits the function** with a value.
@@ -5842,6 +5959,7 @@ This section has **16** examples:
 - [x] **Do not use `new String()`** — it is an object. `==` against a literal can be **true** while `===` is **false**; two String objects compare **false**.
 
 <a id="js-strings-example-01"></a>
+
 ### **Example 1: String with quotes**
 
 - [x] A JavaScript string is **zero or more characters** written inside quotes.
@@ -5859,8 +5977,8 @@ let text = "John Doe";
 
 - [x] **Outcome:** The variable holds **John Doe**.
 
-
 <a id="js-strings-example-02"></a>
+
 ### **Example 2: Single vs double quotes**
 
 - [x] You can use **single** or **double** quotes around a string.
@@ -5870,7 +5988,7 @@ Sandbox: `code_sandbox/js-strings/single-double.html`
 
 ```javascript
 let carName1 = "Volvo XC60";
-let carName2 = 'Volvo XC60';
+let carName2 = "Volvo XC60";
 ```
 
 ![js-strings example 2 source](./code_sandbox/snaps/js-strings-02-code.png)
@@ -5879,8 +5997,8 @@ let carName2 = 'Volvo XC60';
 
 - [x] **Outcome:** Both values are **Volvo XC60**; they compare equal.
 
-
 <a id="js-strings-example-03"></a>
+
 ### **Example 3: Quotes inside quotes**
 
 - [x] You can put quotes **inside** a string if they **do not match** the outer quotes.
@@ -5901,8 +6019,8 @@ let answer3 = 'He is called "Johnny"';
 
 - [x] **Outcome:** The three strings are **It's alright**, **He is called 'Johnny'**, and **He is called "Johnny"**.
 
-
 <a id="js-strings-example-04"></a>
+
 ### **Example 4: Template backticks with mixed quotes**
 
 - [x] **Template strings** (ES6) use **backticks** `` ` ``.
@@ -5920,8 +6038,8 @@ let text = `He's often called "Johnny"`;
 
 - [x] **Outcome:** The template prints **He's often called "Johnny"**.
 
-
 <a id="js-strings-example-05"></a>
+
 ### **Example 5: `length` of A-Z**
 
 - [x] **`length`** is a **property**, not a method — no parentheses.
@@ -5940,8 +6058,8 @@ let length = text.length;
 
 - [x] **Outcome:** A-Z is **26** characters.
 
-
 <a id="js-strings-example-06"></a>
+
 ### **Example 6: Escape \" double quote**
 
 - [x] JavaScript would **chop** `"We are the so-called "Vikings" ..."` at the inner quote.
@@ -5950,7 +6068,7 @@ let length = text.length;
 Sandbox: `code_sandbox/js-strings/escape-double.html`
 
 ```javascript
-let text = "We are the so-called \"Vikings\" from the north.";
+let text = 'We are the so-called "Vikings" from the north.';
 ```
 
 ![js-strings example 6 source](./code_sandbox/snaps/js-strings-06-code.png)
@@ -5959,8 +6077,8 @@ let text = "We are the so-called \"Vikings\" from the north.";
 
 - [x] **Outcome:** The printed text is **We are the so-called "Vikings" from the north.**
 
-
 <a id="js-strings-example-07"></a>
+
 ### **Example 7: Escape \' single quote**
 
 - [x] **`\'`** inserts a literal apostrophe inside a single-quoted string.
@@ -5969,7 +6087,7 @@ let text = "We are the so-called \"Vikings\" from the north.";
 Sandbox: `code_sandbox/js-strings/escape-single.html`
 
 ```javascript
-let text = 'It\'s alright.';
+let text = "It's alright.";
 ```
 
 ![js-strings example 7 source](./code_sandbox/snaps/js-strings-07-code.png)
@@ -5978,8 +6096,8 @@ let text = 'It\'s alright.';
 
 - [x] **Outcome:** The printed text is **It's alright.**
 
-
 <a id="js-strings-example-08"></a>
+
 ### **Example 8: Escape \\ backslash**
 
 - [x] **`\\`** inserts a literal **backslash**.
@@ -5997,8 +6115,8 @@ let text = "The character \\ is called backslash.";
 
 - [x] **Outcome:** The printed text is **The character \ is called backslash.**
 
-
 <a id="js-strings-example-09"></a>
+
 ### **Example 9: Break a long line after an operator**
 
 - [x] A **safe** place to break a statement is **after an operator** (here, after `=`).
@@ -6007,8 +6125,7 @@ let text = "The character \\ is called backslash.";
 Sandbox: `code_sandbox/js-strings/break-operator.html`
 
 ```javascript
-document.getElementById("demo").innerHTML =
-"Hello Dolly!";
+document.getElementById("demo").innerHTML = "Hello Dolly!";
 ```
 
 ![js-strings example 9 source](./code_sandbox/snaps/js-strings-09-code.png)
@@ -6017,8 +6134,8 @@ document.getElementById("demo").innerHTML =
 
 - [x] **Outcome:** The output is **Hello Dolly!**
 
-
 <a id="js-strings-example-10"></a>
+
 ### **Example 10: Break a string with `+`**
 
 - [x] A safe way to split a **string** across lines is **string addition** with **`+`**.
@@ -6027,8 +6144,7 @@ document.getElementById("demo").innerHTML =
 Sandbox: `code_sandbox/js-strings/break-plus.html`
 
 ```javascript
-document.getElementById("demo").innerHTML = "Hello " +
-"Dolly!";
+document.getElementById("demo").innerHTML = "Hello " + "Dolly!";
 ```
 
 ![js-strings example 10 source](./code_sandbox/snaps/js-strings-10-code.png)
@@ -6037,8 +6153,8 @@ document.getElementById("demo").innerHTML = "Hello " +
 
 - [x] **Outcome:** The joined string is **Hello Dolly!**
 
-
 <a id="js-strings-example-11"></a>
+
 ### **Example 11: Multiline template string**
 
 - [x] Templates also allow **multiline** strings — newlines inside backticks are **kept**.
@@ -6047,8 +6163,7 @@ document.getElementById("demo").innerHTML = "Hello " +
 Sandbox: `code_sandbox/js-strings/multiline-template.html`
 
 ```javascript
-let text =
-`The quick
+let text = `The quick
 brown fox
 jumps over
 the lazy dog`;
@@ -6060,8 +6175,8 @@ the lazy dog`;
 
 - [x] **Outcome:** The string keeps the line breaks: **The quick / brown fox / jumps over / the lazy dog**.
 
-
 <a id="js-strings-example-12"></a>
+
 ### **Example 12: `new String()` vs a literal**
 
 - [x] Normally strings are **primitives** from literals: `let x = "John";`
@@ -6080,8 +6195,8 @@ let y = new String("John");
 
 - [x] **Outcome:** `x` is a **string** primitive; `y` is an **object**. Both display as **John**.
 
-
 <a id="js-strings-example-13"></a>
+
 ### **Example 13: Literal `==` String object**
 
 - [x] **`==`** converts types, so a string literal and a String object with the same text compare **equal**.
@@ -6101,8 +6216,8 @@ x == y;
 
 - [x] **Outcome:** `x == y` is **true**.
 
-
 <a id="js-strings-example-14"></a>
+
 ### **Example 14: Literal `===` String object**
 
 - [x] **`===`** requires the **same type** as well as the same value.
@@ -6122,8 +6237,8 @@ x === y;
 
 - [x] **Outcome:** `x === y` is **false**.
 
-
 <a id="js-strings-example-15"></a>
+
 ### **Example 15: Two String objects with `==`**
 
 - [x] Comparing **two objects** with `==` still asks “are these the **same object**?”
@@ -6143,8 +6258,8 @@ x == y;
 
 - [x] **Outcome:** `x == y` is **false**.
 
-
 <a id="js-strings-example-16"></a>
+
 ### **Example 16: Two String objects with `===`**
 
 - [x] **`===`** between two objects is also identity: they must be the **same** object.
@@ -6348,12 +6463,13 @@ This section has **6** examples:
 
 ## Detailed Explanation
 
-- [x] **Back-tick syntax** — `` let text = `Hello World!`; ``
+- [x] **Back-tick syntax** — ``let text = `Hello World!`;``
 - [x] **Quotes and multiline** — both `'` and `"` are legal inside; newlines are kept.
 - [x] **Interpolation** — `` `Welcome ${firstName}, ${lastName}!` `` and expressions such as `` `Total: ${(price * (1 + VAT)).toFixed(2)}` ``.
 - [x] **HTML templates** — build markup with backticks and a loop over tags.
 
 <a id="js-string-templates-example-01"></a>
+
 ### **Example 1: Back-tick syntax**
 
 - [x] Template strings use **backticks** `` ` `` rather than `""` or `''`.
@@ -6371,8 +6487,8 @@ let text = `Hello World!`;
 
 - [x] **Outcome:** The template stores **Hello World!**
 
-
 <a id="js-string-templates-example-02"></a>
+
 ### **Example 2: Quotes inside a template**
 
 - [x] Templates allow **both** single and double quotes inside the string.
@@ -6390,8 +6506,8 @@ let text = `He's often called "Johnny"`;
 
 - [x] **Outcome:** The result is **He's often called "Johnny"**.
 
-
 <a id="js-string-templates-example-03"></a>
+
 ### **Example 3: Multiline template**
 
 - [x] Newlines typed inside backticks become **real newlines** in the string.
@@ -6400,8 +6516,7 @@ let text = `He's often called "Johnny"`;
 Sandbox: `code_sandbox/js-string-templates/multiline.html`
 
 ```javascript
-let text =
-`The quick
+let text = `The quick
 brown fox
 jumps over
 the lazy dog`;
@@ -6413,8 +6528,8 @@ the lazy dog`;
 
 - [x] **Outcome:** The four lines are kept, starting with **The quick**.
 
-
 <a id="js-string-templates-example-04"></a>
+
 ### **Example 4: Variable interpolation**
 
 - [x] Syntax: **`${...}`** inside backticks.
@@ -6434,8 +6549,8 @@ let text = `Welcome ${firstName}, ${lastName}!`;
 
 - [x] **Outcome:** The result is **Welcome John, Doe!**
 
-
 <a id="js-string-templates-example-05"></a>
+
 ### **Example 5: Expression substitution**
 
 - [x] `${}` can hold a full **expression**, not just a variable name.
@@ -6455,8 +6570,8 @@ let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 
 - [x] **Outcome:** The result is **Total: 12.50**.
 
-
 <a id="js-string-templates-example-06"></a>
+
 ### **Example 6: HTML templates**
 
 - [x] Templates are handy for building **markup** strings.
@@ -6560,7 +6675,7 @@ Then open `http://127.0.0.1:8770/js-string-templates/`.
 <summary>Answer</summary>
 
 - [x] **Total: 12.50**.
-- [x] 10 * 1.25 = 12.5, then `toFixed(2)` adds the cent.
+- [x] 10 \* 1.25 = 12.5, then `toFixed(2)` adds the cent.
 
 </details>
 
@@ -6650,6 +6765,7 @@ This section has **46** examples:
 - [x] **Replace / split** — `replace` changes the **first** match; `/g` or `replaceAll` changes every match. `split("")` breaks emoji; use **`Intl.Segmenter`**.
 
 <a id="js-string-methods-example-01"></a>
+
 ### **Example 1: `length`**
 
 - [x] Strings are **primitive and immutable** — methods return a **new** string.
@@ -6668,8 +6784,8 @@ let length = text.length;
 
 - [x] **Outcome:** The length is **26**.
 
-
 <a id="js-string-methods-example-02"></a>
+
 ### **Example 2: `charAt(0)`**
 
 - [x] **`charAt(index)`** returns the character at that **0-based** position.
@@ -6688,8 +6804,8 @@ let char = text.charAt(0);
 
 - [x] **Outcome:** `charAt(0)` is **H**.
 
-
 <a id="js-string-methods-example-03"></a>
+
 ### **Example 3: `charCodeAt(0)`**
 
 - [x] **`charCodeAt(index)`** returns the **UTF-16 code unit** (0-65535).
@@ -6708,8 +6824,8 @@ let char = text.charCodeAt(0);
 
 - [x] **Outcome:** The code is **72**.
 
-
 <a id="js-string-methods-example-04"></a>
+
 ### **Example 4: `codePointAt(0)`**
 
 - [x] **`codePointAt(index)`** returns the Unicode **code point**.
@@ -6728,8 +6844,8 @@ let code = text.codePointAt(0);
 
 - [x] **Outcome:** The code point of **H** is **72**.
 
-
 <a id="js-string-methods-example-05"></a>
+
 ### **Example 5: `at(2)`**
 
 - [x] ES2022 **`at(index)`** returns the character at that index.
@@ -6748,8 +6864,8 @@ let letter = name.at(2);
 
 - [x] **Outcome:** `at(2)` is **S**.
 
-
 <a id="js-string-methods-example-06"></a>
+
 ### **Example 6: Property access `[2]`**
 
 - [x] `name[2]` is the older **property-access** way to get the third character.
@@ -6768,8 +6884,8 @@ let letter = name[2];
 
 - [x] **Outcome:** `name[2]` is **S**.
 
-
 <a id="js-string-methods-example-07"></a>
+
 ### **Example 7: `at(-5)`**
 
 - [x] **`at()` allows negative indexes**; `charAt()` does not.
@@ -6788,8 +6904,8 @@ let letter = name.at(-5);
 
 - [x] **Outcome:** `at(-5)` is **h**.
 
-
 <a id="js-string-methods-example-08"></a>
+
 ### **Example 8: Property access `[0]`**
 
 - [x] `text[0]` looks like an array index, but **strings are not arrays**.
@@ -6809,8 +6925,8 @@ let char = text[0];
 
 - [x] **Outcome:** `text[0]` is **H**. `text[99]` is **undefined**.
 
-
 <a id="js-string-methods-example-09"></a>
+
 ### **Example 9: Sloppy mode `text[0] = "A"`**
 
 - [x] In **sloppy mode**, `text[0] = "A"` does **not** throw and does **not** change the string.
@@ -6833,8 +6949,8 @@ try {
 
 - [x] **Outcome:** No exception. The string is still **HELLO WORLD** (`text[0]` remains **H**).
 
-
 <a id="js-string-methods-example-10"></a>
+
 ### **Example 10: `concat()` Hello World**
 
 - [x] **`concat()`** joins two or more strings and returns a **new** string.
@@ -6854,8 +6970,8 @@ let text3 = text1.concat(" ", text2);
 
 - [x] **Outcome:** The joined string is **Hello World**.
 
-
 <a id="js-string-methods-example-11"></a>
+
 ### **Example 11: `slice(7, 13)`**
 
 - [x] **`slice(start, end)`** copies a section; **end is not included**.
@@ -6874,8 +6990,8 @@ let part = text.slice(7, 13);
 
 - [x] **Outcome:** `slice(7, 13)` is **Banana**.
 
-
 <a id="js-string-methods-example-12"></a>
+
 ### **Example 12: `slice(7)`**
 
 - [x] Omit the second parameter to take **the rest** of the string.
@@ -6893,8 +7009,8 @@ let part = text.slice(7);
 
 - [x] **Outcome:** `slice(7)` is **Banana, Kiwi**.
 
-
 <a id="js-string-methods-example-13"></a>
+
 ### **Example 13: `slice(-12)`**
 
 - [x] A **negative** parameter counts from the **end** of the string.
@@ -6912,8 +7028,8 @@ let part = text.slice(-12);
 
 - [x] **Outcome:** `slice(-12)` is **Banana, Kiwi**.
 
-
 <a id="js-string-methods-example-14"></a>
+
 ### **Example 14: `slice(-12, -6)`**
 
 - [x] Both start and end may be negative; end is still **not included**.
@@ -6931,8 +7047,8 @@ let part = text.slice(-12, -6);
 
 - [x] **Outcome:** `slice(-12, -6)` is **Banana**.
 
-
 <a id="js-string-methods-example-15"></a>
+
 ### **Example 15: `substring(7, 13)`**
 
 - [x] `substring()` is like `slice()`, but **negative** start/end become **0**.
@@ -6951,8 +7067,8 @@ let part = str.substring(7, 13);
 
 - [x] **Outcome:** `substring(7, 13)` is **Banana**.
 
-
 <a id="js-string-methods-example-16"></a>
+
 ### **Example 16: `substr(7, 6)` (deprecated)**
 
 - [x] **Deprecated.** The second argument is a **length**, not an end index.
@@ -6971,8 +7087,8 @@ let part = str.substr(7, 6);
 
 - [x] **Outcome:** `substr(7, 6)` is **Banana**. Prefer **slice/substring**.
 
-
 <a id="js-string-methods-example-17"></a>
+
 ### **Example 17: `substr(7)` (deprecated)**
 
 - [x] Omit the second parameter and `substr` takes the **rest** of the string.
@@ -6991,8 +7107,8 @@ let part = str.substr(7);
 
 - [x] **Outcome:** `substr(7)` is **Banana, Kiwi**.
 
-
 <a id="js-string-methods-example-18"></a>
+
 ### **Example 18: `substr(-4)` (deprecated)**
 
 - [x] A **negative** start counts from the end (length 4 here is **Kiwi**).
@@ -7011,8 +7127,8 @@ let part = str.substr(-4);
 
 - [x] **Outcome:** `substr(-4)` is **Kiwi**.
 
-
 <a id="js-string-methods-example-19"></a>
+
 ### **Example 19: `toUpperCase()`**
 
 - [x] Returns a **new** string with all letters in upper case.
@@ -7031,8 +7147,8 @@ let text2 = text1.toUpperCase();
 
 - [x] **Outcome:** The new string is **HELLO WORLD!**; the original is still **Hello World!**
 
-
 <a id="js-string-methods-example-20"></a>
+
 ### **Example 20: `toLowerCase()`**
 
 - [x] Returns a **new** string with all letters in lower case.
@@ -7050,8 +7166,8 @@ let text2 = text1.toLowerCase();
 
 - [x] **Outcome:** The result is **hello world!**
 
-
 <a id="js-string-methods-example-21"></a>
+
 ### **Example 21: `isWellFormed()` true**
 
 - [x] Returns **`true`** if the string has no **lone surrogates** (broken UTF-16 pairs).
@@ -7070,8 +7186,8 @@ let result = text.isWellFormed();
 
 - [x] **Outcome:** **true** — this string is well formed.
 
-
 <a id="js-string-methods-example-22"></a>
+
 ### **Example 22: `isWellFormed()` lone surrogate**
 
 - [x] A lone `\uD800` is not a valid UTF-16 pair, so the string is **not** well formed.
@@ -7089,8 +7205,8 @@ let result = text.isWellFormed();
 
 - [x] **Outcome:** **false** — the lone surrogate makes the string ill-formed.
 
-
 <a id="js-string-methods-example-23"></a>
+
 ### **Example 23: `toWellFormed()`**
 
 - [x] Returns a new string where **lone surrogates** are replaced with **U+FFFD** (`�`).
@@ -7108,8 +7224,8 @@ let result = text.toWellFormed();
 
 - [x] **Outcome:** The original is **not** well formed; `toWellFormed()` replaces the lone surrogate with **�**.
 
-
 <a id="js-string-methods-example-24"></a>
+
 ### **Example 24: `trim()`**
 
 - [x] Removes **whitespace from both ends**. Spaces in the **middle** stay.
@@ -7127,8 +7243,8 @@ let text2 = text1.trim();
 
 - [x] **Outcome:** The trimmed value is **'Hello World!'**.
 
-
 <a id="js-string-methods-example-25"></a>
+
 ### **Example 25: `trimStart()`**
 
 - [x] Removes whitespace from the **start only** (ES2019). Alias: `trimLeft()`.
@@ -7146,8 +7262,8 @@ let text2 = text1.trimStart();
 
 - [x] **Outcome:** Leading space is gone; trailing space remains: **'Hello World! '**.
 
-
 <a id="js-string-methods-example-26"></a>
+
 ### **Example 26: `trimEnd()`**
 
 - [x] Removes whitespace from the **end only** (ES2019). Alias: `trimRight()`.
@@ -7165,8 +7281,8 @@ let text2 = text1.trimEnd();
 
 - [x] **Outcome:** Trailing space is gone; leading space remains: **' Hello World!'**.
 
-
 <a id="js-string-methods-example-27"></a>
+
 ### **Example 27: `padStart(4, "0")`**
 
 - [x] Pads the **start** until the string reaches the given length.
@@ -7185,8 +7301,8 @@ let padded = text.padStart(4, "0");
 
 - [x] **Outcome:** The result is **0005**.
 
-
 <a id="js-string-methods-example-28"></a>
+
 ### **Example 28: `padStart(4, "x")`**
 
 - [x] The pad string can be any text, not just zeros.
@@ -7204,8 +7320,8 @@ let padded = text.padStart(4, "x");
 
 - [x] **Outcome:** The result is **xxx5**.
 
-
 <a id="js-string-methods-example-29"></a>
+
 ### **Example 29: `padStart` on a number via `toString()`**
 
 - [x] `padStart` is a **string** method. Convert a number with **`toString()`** first.
@@ -7224,8 +7340,8 @@ let padded = text.padStart(4, "0");
 
 - [x] **Outcome:** The padded number-as-string is **0005**.
 
-
 <a id="js-string-methods-example-30"></a>
+
 ### **Example 30: `padEnd(4, "0")`**
 
 - [x] Pads the **end** until the string reaches the given length.
@@ -7243,8 +7359,8 @@ let padded = text.padEnd(4, "0");
 
 - [x] **Outcome:** The result is **5000**.
 
-
 <a id="js-string-methods-example-31"></a>
+
 ### **Example 31: `padEnd(4, "x")`**
 
 - [x] Pad character **x** is appended until length 4.
@@ -7262,8 +7378,8 @@ let padded = text.padEnd(4, "x");
 
 - [x] **Outcome:** The result is **5xxx**.
 
-
 <a id="js-string-methods-example-32"></a>
+
 ### **Example 32: `padEnd` on a number via `toString()`**
 
 - [x] Same rule as `padStart`: convert the number **first**.
@@ -7282,8 +7398,8 @@ let padded = text.padEnd(4, "0");
 
 - [x] **Outcome:** The padded number-as-string is **5000**.
 
-
 <a id="js-string-methods-example-33"></a>
+
 ### **Example 33: `repeat(2)`**
 
 - [x] **`repeat(count)`** returns a **new** string with that many copies.
@@ -7302,8 +7418,8 @@ let result = text.repeat(2);
 
 - [x] **Outcome:** The result is **Hello world!Hello world!**
 
-
 <a id="js-string-methods-example-34"></a>
+
 ### **Example 34: `repeat(4)`**
 
 - [x] Four copies of `Hello world!` are concatenated, original unchanged.
@@ -7321,8 +7437,8 @@ let result = text.repeat(4);
 
 - [x] **Outcome:** The result is **Hello world!** repeated **four** times.
 
-
 <a id="js-string-methods-example-35"></a>
+
 ### **Example 35: `replace()` first Microsoft**
 
 - [x] `replace` returns a **new** string. It does **not** change the original.
@@ -7341,8 +7457,8 @@ let newText = text.replace("Microsoft", "W3Schools");
 
 - [x] **Outcome:** The result is **Please visit W3Schools!**
 
-
 <a id="js-string-methods-example-36"></a>
+
 ### **Example 36: `replace()` only the first of two**
 
 - [x] With two **Microsoft**s, a string search still changes **only the first**.
@@ -7360,8 +7476,8 @@ let newText = text.replace("Microsoft", "W3Schools");
 
 - [x] **Outcome:** Only the first match changes: **Please visit W3Schools and Microsoft!**
 
-
 <a id="js-string-methods-example-37"></a>
+
 ### **Example 37: `replace("MICROSOFT")` case fail**
 
 - [x] `replace` is **case-sensitive** by default.
@@ -7380,8 +7496,8 @@ let newText = text.replace("MICROSOFT", "W3Schools");
 
 - [x] **Outcome:** Nothing changes: **Please visit Microsoft!**
 
-
 <a id="js-string-methods-example-38"></a>
+
 ### **Example 38: `replace(/MICROSOFT/i)`**
 
 - [x] A regex with the **`/i`** flag ignores case.
@@ -7400,8 +7516,8 @@ let newText = text.replace(/MICROSOFT/i, "W3Schools");
 
 - [x] **Outcome:** Case-insensitive replace yields **Please visit W3Schools!**
 
-
 <a id="js-string-methods-example-39"></a>
+
 ### **Example 39: `replace(/Microsoft/g)`**
 
 - [x] The **`/g`** flag replaces **every** match.
@@ -7420,8 +7536,8 @@ let newText = text.replace(/Microsoft/g, "W3Schools");
 
 - [x] **Outcome:** Both matches change: **Please visit W3Schools and W3Schools!**
 
-
 <a id="js-string-methods-example-40"></a>
+
 ### **Example 40: `replaceAll("Cats")`**
 
 - [x] **`replaceAll()`** (ES2021) replaces **every** string match.
@@ -7441,8 +7557,8 @@ text = text.replaceAll("cats", "dogs");
 
 - [x] **Outcome:** The result is **I love dogs. Dogs are very easy to love. Dogs are very popular.**
 
-
 <a id="js-string-methods-example-41"></a>
+
 ### **Example 41: `replaceAll(/Cats/g)`**
 
 - [x] If the search is a **regex**, it **must** include **`g`** or you get a **TypeError**.
@@ -7462,8 +7578,8 @@ text = text.replaceAll(/cats/g, "dogs");
 
 - [x] **Outcome:** Same result: **I love dogs. Dogs are very easy to love. Dogs are very popular.**
 
-
 <a id="js-string-methods-example-42"></a>
+
 ### **Example 42: `split("")`**
 
 - [x] `split("")` returns an array of **single UTF-16 units**.
@@ -7482,8 +7598,8 @@ const myArr = text.split("");
 
 - [x] **Outcome:** The array is **["H","i"," ","f","o","x","!"]**.
 
-
 <a id="js-string-methods-example-43"></a>
+
 ### **Example 43: `split(" ")`**
 
 - [x] Splitting on a **space** yields an array of **words**.
@@ -7502,8 +7618,8 @@ const myArr = text.split(" ");
 
 - [x] **Outcome:** The array is **["The","quick","brown","fox."]**.
 
-
 <a id="js-string-methods-example-44"></a>
+
 ### **Example 44: `split()` with no separator**
 
 - [x] If the separator is **omitted**, the array contains the **whole string** at index `[0]`.
@@ -7521,8 +7637,8 @@ const myArr = text.split();
 
 - [x] **Outcome:** The array is **["The quick brown fox."]**.
 
-
 <a id="js-string-methods-example-45"></a>
+
 ### **Example 45: `split("")` is unsafe for emoji**
 
 - [x] `split("")` splits **UTF-16 code units** and **breaks** surrogate pairs and ZWJ sequences.
@@ -7541,8 +7657,8 @@ const myArr = text.split("");
 
 - [x] **Outcome:** The family emoji splits into **many** UTF-16 pieces (length **11**), not one character.
 
-
 <a id="js-string-methods-example-46"></a>
+
 ### **Example 46: `Intl.Segmenter` safe split**
 
 - [x] **`Intl.Segmenter`** with `granularity: "grapheme"` keeps complex emoji together.
@@ -7781,6 +7897,7 @@ This section has **22** examples:
 - [x] **Booleans (ES6)** — `includes`, `startsWith`, `endsWith` are case-sensitive; optional start (or length for `endsWith`).
 
 <a id="js-string-search-example-01"></a>
+
 ### **Example 1: `indexOf("locate")`**
 
 - [x] **`indexOf(search)`** returns the **first** index, or **`-1`** if missing.
@@ -7799,8 +7916,8 @@ let index = text.indexOf("locate");
 
 - [x] **Outcome:** First **locate** is at index **7**.
 
-
 <a id="js-string-search-example-02"></a>
+
 ### **Example 2: `lastIndexOf("locate")`**
 
 - [x] **`lastIndexOf`** returns the **last** occurrence, or **`-1`**.
@@ -7818,8 +7935,8 @@ let index = text.lastIndexOf("locate");
 
 - [x] **Outcome:** Last **locate** is at index **21**.
 
-
 <a id="js-string-search-example-03"></a>
+
 ### **Example 3: `lastIndexOf("John")` is -1**
 
 - [x] Both `indexOf` and `lastIndexOf` return **`-1`** when the text is not found.
@@ -7837,8 +7954,8 @@ let index = text.lastIndexOf("John");
 
 - [x] **Outcome:** **John** is missing, so the result is **-1**.
 
-
 <a id="js-string-search-example-04"></a>
+
 ### **Example 4: `indexOf("locate", 15)`**
 
 - [x] The optional second argument is the **start index** (search forward from there).
@@ -7856,8 +7973,8 @@ let index = text.indexOf("locate", 15);
 
 - [x] **Outcome:** From index 15 the next **locate** is at **21**.
 
-
 <a id="js-string-search-example-05"></a>
+
 ### **Example 5: `lastIndexOf("locate", 15)`**
 
 - [x] `lastIndexOf` with a start index searches **backward** from that position.
@@ -7876,8 +7993,8 @@ text.lastIndexOf("locate", 15);
 
 - [x] **Outcome:** Searching backward from 15 finds **7**.
 
-
 <a id="js-string-search-example-06"></a>
+
 ### **Example 6: `search("locate")`**
 
 - [x] **`search()`** returns the **position** of a match (string or regex), or **`-1`**.
@@ -7895,8 +8012,8 @@ text.search("locate");
 
 - [x] **Outcome:** `search("locate")` returns **7**.
 
-
 <a id="js-string-search-example-07"></a>
+
 ### **Example 7: `search(/locate/)`**
 
 - [x] `search` can take a **regular expression**; `indexOf` cannot.
@@ -7915,8 +8032,8 @@ text.search(/locate/);
 
 - [x] **Outcome:** `search(/locate/)` also returns **7**.
 
-
 <a id="js-string-search-example-08"></a>
+
 ### **Example 8: `match("ain")`**
 
 - [x] `match` returns an **array** of match info (or `null`).
@@ -7935,8 +8052,8 @@ text.match("ain");
 
 - [x] **Outcome:** The first **ain** is at index **5** (in **rain**).
 
-
 <a id="js-string-search-example-09"></a>
+
 ### **Example 9: `match(/ain/)`**
 
 - [x] A regex **without `/g`** also returns details of the **first** match only.
@@ -7954,8 +8071,8 @@ text.match(/ain/);
 
 - [x] **Outcome:** First regex match is still **ain** at index **5**.
 
-
 <a id="js-string-search-example-10"></a>
+
 ### **Example 10: `match(/ain/g)`**
 
 - [x] **`/g`** (global) returns **all** matches as a simple array of strings.
@@ -7974,8 +8091,8 @@ text.match(/ain/g);
 
 - [x] **Outcome:** The matches are **ain,ain,ain** (rain, mainly, plain).
 
-
 <a id="js-string-search-example-11"></a>
+
 ### **Example 11: `match(/ain/gi)`**
 
 - [x] **`/gi`** is global **and** case-insensitive, so **AIN** in SPAIN is included.
@@ -7993,8 +8110,8 @@ text.match(/ain/gi);
 
 - [x] **Outcome:** The matches are **ain,AIN,ain,ain**.
 
-
 <a id="js-string-search-example-12"></a>
+
 ### **Example 12: `matchAll("Cats")`**
 
 - [x] **`matchAll()`** (ES2020) returns an **iterator** of all matches.
@@ -8013,8 +8130,8 @@ const iterator = text.matchAll("Cats");
 
 - [x] **Outcome:** The iterator yields **Cats, Cats** (two capitalized matches).
 
-
 <a id="js-string-search-example-13"></a>
+
 ### **Example 13: `matchAll(/Cats/g)`**
 
 - [x] If the argument is a regex, it **must** have the **`g`** flag or you get a **TypeError**.
@@ -8032,8 +8149,8 @@ const iterator = text.matchAll(/Cats/g);
 
 - [x] **Outcome:** The iterator yields **Cats, Cats**.
 
-
 <a id="js-string-search-example-14"></a>
+
 ### **Example 14: `matchAll(/Cats/gi)`**
 
 - [x] Add **`i`** to match **cats** as well as **Cats**.
@@ -8051,8 +8168,8 @@ const iterator = text.matchAll(/Cats/gi);
 
 - [x] **Outcome:** The iterator yields **cats, Cats, Cats** (three matches).
 
-
 <a id="js-string-search-example-15"></a>
+
 ### **Example 15: `includes("world")`**
 
 - [x] **`includes`** returns **`true`** if the substring exists anywhere.
@@ -8071,8 +8188,8 @@ text.includes("world");
 
 - [x] **Outcome:** **true** — **world** is in the string.
 
-
 <a id="js-string-search-example-16"></a>
+
 ### **Example 16: `includes("world", 12)`**
 
 - [x] The optional second argument is the **start index**.
@@ -8091,8 +8208,8 @@ text.includes("world", 12);
 
 - [x] **Outcome:** **false** — the search starts past **world**.
 
-
 <a id="js-string-search-example-17"></a>
+
 ### **Example 17: `startsWith("Hello")`**
 
 - [x] **`startsWith`** is **true** if the string **begins** with that text.
@@ -8111,8 +8228,8 @@ text.startsWith("Hello");
 
 - [x] **Outcome:** **true**.
 
-
 <a id="js-string-search-example-18"></a>
+
 ### **Example 18: `startsWith("world")`**
 
 - [x] The string begins with **Hello**, not **world**.
@@ -8130,8 +8247,8 @@ text.startsWith("world");
 
 - [x] **Outcome:** **false**.
 
-
 <a id="js-string-search-example-19"></a>
+
 ### **Example 19: `startsWith("world", 5)`**
 
 - [x] The optional start index shifts where “the beginning” is.
@@ -8150,8 +8267,8 @@ text.startsWith("world", 5);
 
 - [x] **Outcome:** **false** — index 5 is a space, not **w**.
 
-
 <a id="js-string-search-example-20"></a>
+
 ### **Example 20: `startsWith("world", 6)`**
 
 - [x] Index **6** is the **w** of **world**, so the check succeeds.
@@ -8169,8 +8286,8 @@ text.startsWith("world", 6);
 
 - [x] **Outcome:** **true**.
 
-
 <a id="js-string-search-example-21"></a>
+
 ### **Example 21: `endsWith("Doe")`**
 
 - [x] **`endsWith`** is **true** if the string **ends** with that text.
@@ -8188,8 +8305,8 @@ text.endsWith("Doe");
 
 - [x] **Outcome:** **true**.
 
-
 <a id="js-string-search-example-22"></a>
+
 ### **Example 22: `endsWith("world", 11)`**
 
 - [x] The optional second argument is a **length**: treat the string as if it were only that long.
@@ -8422,6 +8539,7 @@ This section has **39** examples:
 - [x] **`substr()` is deprecated** — use `substring()` or `slice()`.
 
 <a id="js-string-reference-example-01"></a>
+
 ### **Example 1: `at()`**
 
 - [x] **`at(index)`** returns the character at that index (0-based).
@@ -8442,8 +8560,8 @@ name.at(-5);
 
 - [x] **Outcome:** `at(2)` is **S** (third character); `at(-5)` is **h**.
 
-
 <a id="js-string-reference-example-02"></a>
+
 ### **Example 2: `charAt()`**
 
 - [x] **`charAt(index)`** returns the character at that position.
@@ -8463,8 +8581,8 @@ let char = text.charAt(0);
 
 - [x] **Outcome:** `charAt(0)` is **H**. `charAt(99)` is an **empty string**.
 
-
 <a id="js-string-reference-example-03"></a>
+
 ### **Example 3: `charCodeAt()`**
 
 - [x] **`charCodeAt(index)`** returns the **UTF-16 code unit** (0–65535) at that index.
@@ -8483,8 +8601,8 @@ let char = text.charCodeAt(0);
 
 - [x] **Outcome:** **72** — the UTF-16 code for **H**.
 
-
 <a id="js-string-reference-example-04"></a>
+
 ### **Example 4: `codePointAt()`**
 
 - [x] **`codePointAt(index)`** returns the Unicode **code point** at that index.
@@ -8503,8 +8621,8 @@ let code = text.codePointAt(0);
 
 - [x] **Outcome:** **72** for `'H'`.
 
-
 <a id="js-string-reference-example-05"></a>
+
 ### **Example 5: `concat()`**
 
 - [x] **`concat()`** joins two or more strings and returns a **new** string.
@@ -8524,8 +8642,8 @@ let text3 = text1.concat(" ", text2);
 
 - [x] **Outcome:** The joined string is **Hello World**.
 
-
 <a id="js-string-reference-example-06"></a>
+
 ### **Example 6: `constructor`**
 
 - [x] The **`constructor`** property is the function that created the instance — for a string that is **`String`**.
@@ -8544,8 +8662,8 @@ text.constructor === String;
 
 - [x] **Outcome:** `constructor === String` is **true**; the name is **String**.
 
-
 <a id="js-string-reference-example-07"></a>
+
 ### **Example 7: `endsWith()`**
 
 - [x] **`endsWith(search)`** returns **`true`** if the string ends with that text.
@@ -8564,8 +8682,8 @@ text.endsWith("Doe");
 
 - [x] **Outcome:** **true** for "Doe"; **false** for "John".
 
-
 <a id="js-string-reference-example-08"></a>
+
 ### **Example 8: `String.fromCharCode()`**
 
 - [x] **Static** method on **`String`** (not `text.fromCharCode`).
@@ -8583,8 +8701,8 @@ String.fromCharCode(72, 69, 76, 76, 79);
 
 - [x] **Outcome:** The characters spell **HELLO**.
 
-
 <a id="js-string-reference-example-09"></a>
+
 ### **Example 9: `includes()`**
 
 - [x] **`includes(search)`** returns **`true`** if the substring exists anywhere.
@@ -8603,8 +8721,8 @@ text.includes("world");
 
 - [x] **Outcome:** **true** from the start; **false** if you start searching at index **12** (past "world").
 
-
 <a id="js-string-reference-example-10"></a>
+
 ### **Example 10: `indexOf()`**
 
 - [x] **`indexOf(search)`** returns the **first** index of the substring, or **`-1`** if missing.
@@ -8623,8 +8741,8 @@ let index = text.indexOf("locate");
 
 - [x] **Outcome:** First "locate" is at **7**; from index 15 the next is **21**; missing text is **-1**.
 
-
 <a id="js-string-reference-example-11"></a>
+
 ### **Example 11: `isWellFormed()`**
 
 - [x] Returns **`true`** if the string has no **lone surrogates** (broken UTF-16 pairs).
@@ -8643,8 +8761,8 @@ let bad = "Hello World \uD800".isWellFormed();
 
 - [x] **Outcome:** Normal text is **true**; a lone surrogate is **false**.
 
-
 <a id="js-string-reference-example-12"></a>
+
 ### **Example 12: `lastIndexOf()`**
 
 - [x] **`lastIndexOf(search)`** returns the **last** occurrence, or **`-1`**.
@@ -8663,8 +8781,8 @@ text.lastIndexOf("locate");
 
 - [x] **Outcome:** Last "locate" is **21**; searching backward from 15 finds **7**; "John" is **-1**.
 
-
 <a id="js-string-reference-example-13"></a>
+
 ### **Example 13: `length`**
 
 - [x] **`length`** is a **property**, not a method — no parentheses.
@@ -8683,8 +8801,8 @@ let length = text.length;
 
 - [x] **Outcome:** A–Z is **26** characters.
 
-
 <a id="js-string-reference-example-14"></a>
+
 ### **Example 14: `localeCompare()`**
 
 - [x] Compares two strings in the **current locale** and returns a **negative / 0 / positive** number (sort order).
@@ -8704,8 +8822,8 @@ Sandbox: `code_sandbox/js-string-reference/localeCompare.html`
 
 - [x] **Outcome:** **ab** vs **cd** is negative; reverse is positive; equal strings return **0**.
 
-
 <a id="js-string-reference-example-15"></a>
+
 ### **Example 15: `match()`**
 
 - [x] Returns an **array** of matches (or `null` if none).
@@ -8724,8 +8842,8 @@ text.match(/ain/gi);
 
 - [x] **Outcome:** The global, case-insensitive match is **ain,AIN,ain,ain**.
 
-
 <a id="js-string-reference-example-16"></a>
+
 ### **Example 16: `matchAll()`**
 
 - [x] Returns an **iterator** of all matches (ES2020).
@@ -8735,7 +8853,7 @@ Sandbox: `code_sandbox/js-string-reference/matchAll.html`
 
 ```javascript
 let text = "I love Cats. Cats are great.";
-Array.from(text.matchAll(/Cats/g), m => m[0]);
+Array.from(text.matchAll(/Cats/g), (m) => m[0]);
 ```
 
 ![js-string-reference example 16 source](./code_sandbox/snaps/js-string-reference-16-code.png)
@@ -8744,8 +8862,8 @@ Array.from(text.matchAll(/Cats/g), m => m[0]);
 
 - [x] **Outcome:** The iterator yields **Cats, Cats** (two matches).
 
-
 <a id="js-string-reference-example-17"></a>
+
 ### **Example 17: `padEnd()`**
 
 - [x] Pads the **end** of the string until it reaches a given length.
@@ -8765,8 +8883,8 @@ text.padEnd(4, "x");
 
 - [x] **Outcome:** **5000** and **5xxx**.
 
-
 <a id="js-string-reference-example-18"></a>
+
 ### **Example 18: `padStart()`**
 
 - [x] Pads the **start** of the string until it reaches a given length.
@@ -8786,8 +8904,8 @@ text.padStart(4, "x");
 
 - [x] **Outcome:** **0005** and **xxx5**.
 
-
 <a id="js-string-reference-example-19"></a>
+
 ### **Example 19: `prototype`**
 
 - [x] **`String.prototype`** is how you add methods that every string can use.
@@ -8808,8 +8926,8 @@ String.prototype.exclaim = function () {
 
 - [x] **Outcome:** `"Hi".exclaim()` returns **Hi!**.
 
-
 <a id="js-string-reference-example-20"></a>
+
 ### **Example 20: `repeat()`**
 
 - [x] **`repeat(count)`** returns a **new** string with that many copies.
@@ -8828,8 +8946,8 @@ text.repeat(3);
 
 - [x] **Outcome:** **HaHa** and **HaHaHaHa**. The original `Ha` is unchanged.
 
-
 <a id="js-string-reference-example-21"></a>
+
 ### **Example 21: `replace()`**
 
 - [x] Replaces the **first** match only (unless you use a regex with **`/g`**).
@@ -8848,8 +8966,8 @@ text.replace("Microsoft", "W3Schools");
 
 - [x] **Outcome:** Without `/g` only the **first** Microsoft changes; with `/g` **both** change.
 
-
 <a id="js-string-reference-example-22"></a>
+
 ### **Example 22: `replaceAll()`**
 
 - [x] Replaces **every** match (ES2021).
@@ -8868,8 +8986,8 @@ text.replaceAll("Cats", "Dogs");
 
 - [x] **Outcome:** Both **Cats** become **Dogs**: **I love Dogs. Dogs are great.**
 
-
 <a id="js-string-reference-example-23"></a>
+
 ### **Example 23: `search()`**
 
 - [x] Returns the **index** of a match (string or **regex**), or **`-1`**.
@@ -8889,8 +9007,8 @@ text.search(/locate/);
 
 - [x] **Outcome:** Both forms return **7** for this string.
 
-
 <a id="js-string-reference-example-24"></a>
+
 ### **Example 24: `slice()`**
 
 - [x] **`slice(start, end)`** copies a section; **end is not included**.
@@ -8911,8 +9029,8 @@ text.slice(-12, -6);
 
 - [x] **Outcome:** `slice(7, 13)` is **Banana**; `slice(7)` is **Banana, Kiwi**; `slice(-12, -6)` is **Banana**.
 
-
 <a id="js-string-reference-example-25"></a>
+
 ### **Example 25: `split()`**
 
 - [x] Turns a string into an **array** of pieces.
@@ -8931,8 +9049,8 @@ text.split(" ");
 
 - [x] **Outcome:** `split(" ")` is **["The","quick","brown","fox."]**; `split("")` on `"Hi"` is **["H","i"]**.
 
-
 <a id="js-string-reference-example-26"></a>
+
 ### **Example 26: `startsWith()`**
 
 - [x] Returns **`true`** if the string **begins** with the given text.
@@ -8952,8 +9070,8 @@ text.startsWith("world");
 
 - [x] **Outcome:** **true** for "Hello"; **false** for "world" unless you start at index **6**.
 
-
 <a id="js-string-reference-example-27"></a>
+
 ### **Example 27: `substr()` (deprecated)**
 
 - [x] **Deprecated.** The second argument is a **length**, not an end index.
@@ -8974,8 +9092,8 @@ str.substr(-4);
 
 - [x] **Outcome:** `substr(7, 6)` is **Banana**; from 7 to the end is **Banana, Kiwi**; `-4` is **Kiwi**. Prefer **slice/substring**.
 
-
 <a id="js-string-reference-example-28"></a>
+
 ### **Example 28: `substring()`**
 
 - [x] Like `slice()`, but **negative start/end become 0** (they do not count from the end).
@@ -8994,8 +9112,8 @@ str.substring(7, 13);
 
 - [x] **Outcome:** `substring(7, 13)` is **Banana**. Negatives are treated as **0**, so you get the start of the string.
 
-
 <a id="js-string-reference-example-29"></a>
+
 ### **Example 29: `toLocaleLowerCase()`**
 
 - [x] Lowercases using the **host locale** (important for languages like Turkish `I` → `ı`).
@@ -9014,8 +9132,8 @@ text.toLocaleLowerCase();
 
 - [x] **Outcome:** The result is **hello world!**.
 
-
 <a id="js-string-reference-example-30"></a>
+
 ### **Example 30: `toLocaleUpperCase()`**
 
 - [x] Uppercases using the **host locale**.
@@ -9034,8 +9152,8 @@ text.toLocaleUpperCase();
 
 - [x] **Outcome:** The result is **HELLO WORLD!**.
 
-
 <a id="js-string-reference-example-31"></a>
+
 ### **Example 31: `toLowerCase()`**
 
 - [x] Returns a **new** string with all letters in lower case.
@@ -9054,8 +9172,8 @@ let text2 = text1.toLowerCase();
 
 - [x] **Outcome:** The new string is **hello world!**; **Hello World!** is still the original.
 
-
 <a id="js-string-reference-example-32"></a>
+
 ### **Example 32: `toString()`**
 
 - [x] Returns the string **primitive**. Useful on a `new String('Hello')` object.
@@ -9074,8 +9192,8 @@ obj.toString();
 
 - [x] **Outcome:** The object’s `toString()` is the primitive **Hello** (`typeof` **string**).
 
-
 <a id="js-string-reference-example-33"></a>
+
 ### **Example 33: `toUpperCase()`**
 
 - [x] Returns a **new** string with all letters in upper case.
@@ -9093,8 +9211,8 @@ let text2 = text1.toUpperCase();
 
 - [x] **Outcome:** The result is **HELLO WORLD!**.
 
-
 <a id="js-string-reference-example-34"></a>
+
 ### **Example 34: `toWellFormed()`**
 
 - [x] Returns a new string where **lone surrogates** are replaced with **U+FFFD** (`�`).
@@ -9113,8 +9231,8 @@ text.toWellFormed();
 
 - [x] **Outcome:** The original is **not** well formed; `toWellFormed()` replaces the lone surrogate with **�**.
 
-
 <a id="js-string-reference-example-35"></a>
+
 ### **Example 35: `trim()`**
 
 - [x] Removes **whitespace from both ends**. Does not change the original.
@@ -9133,8 +9251,8 @@ let trimmed = original.trim();
 
 - [x] **Outcome:** The original still has spaces (`' Hello '`); `trim()` returns **`'Hello'`**.
 
-
 <a id="js-string-reference-example-36"></a>
+
 ### **Example 36: `trimEnd()`**
 
 - [x] Removes whitespace from the **end only** (ES2019). Alias: `trimRight()`.
@@ -9152,8 +9270,8 @@ let text2 = text1.trimEnd();
 
 - [x] **Outcome:** Leading space remains; the trailing space is gone: **`' Hello World!'`**.
 
-
 <a id="js-string-reference-example-37"></a>
+
 ### **Example 37: `trimStart()`**
 
 - [x] Removes whitespace from the **start only** (ES2019). Alias: `trimLeft()`.
@@ -9171,8 +9289,8 @@ let text2 = text1.trimStart();
 
 - [x] **Outcome:** Trailing space remains; the leading space is gone: **`'Hello World! '`**.
 
-
 <a id="js-string-reference-example-38"></a>
+
 ### **Example 38: `valueOf()`**
 
 - [x] Returns the **primitive** string value (same idea as `toString()` for String objects).
@@ -9191,8 +9309,8 @@ obj.valueOf();
 
 - [x] **Outcome:** `valueOf()` is the primitive **Hello** (`typeof` **string**), while `obj` itself is an **object**.
 
-
 <a id="js-string-reference-example-39"></a>
+
 ### **Example 39: HTML wrapper methods (deprecated — do not use)**
 
 - [x] These methods wrap the string in an **HTML tag** (`bold()` → `<b>…</b>`).
@@ -9456,8 +9574,8 @@ This section has **32** examples:
 Sandbox: `code_sandbox/js-numbers/decimals.html`
 
 ```javascript
-let x = 3.14;    // A number with decimals
-let y = 3;       // A number without decimals
+let x = 3.14; // A number with decimals
+let y = 3; // A number without decimals
 ```
 
 ![js-numbers example 1 source](./code_sandbox/snaps/js-numbers-01-code.png)
@@ -9476,8 +9594,8 @@ let y = 3;       // A number without decimals
 Sandbox: `code_sandbox/js-numbers/scientific.html`
 
 ```javascript
-let x = 123e5;    // 12300000
-let y = 123e-5;   // 0.00123
+let x = 123e5; // 12300000
+let y = 123e-5; // 0.00123
 ```
 
 ![js-numbers example 2 source](./code_sandbox/snaps/js-numbers-02-code.png)
@@ -9497,8 +9615,8 @@ let y = 123e-5;   // 0.00123
 Sandbox: `code_sandbox/js-numbers/integer-precision.html`
 
 ```javascript
-let x = 999999999999999;   // x will be 999999999999999
-let y = 9999999999999999;  // y will be 10000000000000000
+let x = 999999999999999; // x will be 999999999999999
+let y = 9999999999999999; // y will be 10000000000000000
 ```
 
 ![js-numbers example 3 source](./code_sandbox/snaps/js-numbers-03-code.png)
@@ -9682,8 +9800,8 @@ let result = x + y + z;
 Sandbox: `code_sandbox/js-numbers/numeric-content.html`
 
 ```javascript
-let x = 100;      // x is a number
-let y = "100";    // y is a string
+let x = 100; // x is a number
+let y = "100"; // y is a string
 ```
 
 ![js-numbers example 12 source](./code_sandbox/snaps/js-numbers-12-code.png)
@@ -9967,7 +10085,7 @@ typeof Infinity;
 Sandbox: `code_sandbox/js-numbers/hex.html`
 
 ```javascript
-let x = 0xFF;
+let x = 0xff;
 ```
 
 ![js-numbers example 26 source](./code_sandbox/snaps/js-numbers-26-code.png)
@@ -10692,7 +10810,7 @@ Sandbox: `code_sandbox/js-number-methods/static-not-on-value.html`
 
 ```javascript
 let x = 10;
-x.isInteger();  // TypeError
+x.isInteger(); // TypeError
 ```
 
 ![js-number-methods example 19 source](./code_sandbox/snaps/js-number-methods-19-code.png)
@@ -11542,7 +11660,9 @@ Number.parseInt("10.33 years");
 Sandbox: `code_sandbox/js-number-reference/prototype.html`
 
 ```javascript
-Number.prototype.twice = function () { return this * 2; };
+Number.prototype.twice = function () {
+  return this * 2;
+};
 (21).twice();
 ```
 
@@ -11600,7 +11720,7 @@ Sandbox: `code_sandbox/js-number-reference/tolocalestring.html`
 ```javascript
 let n = 123456.789;
 n.toLocaleString();
-n.toLocaleString('de-DE');
+n.toLocaleString("de-DE");
 ```
 
 ![js-number-reference example 19 source](./code_sandbox/snaps/js-number-reference-19-code.png)
@@ -12300,8 +12420,8 @@ This section has **20** examples:
 Sandbox: `code_sandbox/js-bigint/number-15-digits.html`
 
 ```javascript
-let x = 999999999999999;   // 15 digits
-let y = 9999999999999999;  // 16 digits
+let x = 999999999999999; // 15 digits
+let y = 9999999999999999; // 16 digits
 ```
 
 ![js-bigint example 1 source](./code_sandbox/snaps/js-bigint-01-code.png)
@@ -12538,9 +12658,9 @@ let y = Number(x) / 2;
 Sandbox: `code_sandbox/js-bigint/compare.html`
 
 ```javascript
-let x = (10n > 5n);
-let y = (10n === 10);
-let z = (10n == 10);
+let x = 10n > 5n;
+let y = 10n === 10;
+let z = 10n == 10;
 ```
 
 ![js-bigint example 13 source](./code_sandbox/snaps/js-bigint-13-code.png)
@@ -12561,10 +12681,10 @@ Sandbox: `code_sandbox/js-bigint/bitwise.html`
 ```javascript
 let a = 5n;
 let b = 3n;
-let x = (a & b);
-let y = (a | b);
-let z = (a ^ b);
-let n = (~a);
+let x = a & b;
+let y = a | b;
+let z = a ^ b;
+let n = ~a;
 ```
 
 ![js-bigint example 14 source](./code_sandbox/snaps/js-bigint-14-code.png)
@@ -12584,8 +12704,8 @@ Sandbox: `code_sandbox/js-bigint/shift.html`
 
 ```javascript
 let big = 10n;
-let x = (big << 2n);
-let y = (big >> 1n);
+let x = big << 2n;
+let y = big >> 1n;
 ```
 
 ![js-bigint example 15 source](./code_sandbox/snaps/js-bigint-15-code.png)
@@ -12969,7 +13089,7 @@ let result = multiply(4, 5);
 Sandbox: `code_sandbox/js-functions/function-expressions.html`
 
 ```javascript
-const multiply = function(a, b) {
+const multiply = function (a, b) {
   return a * b;
 };
 let z = multiply(4, 3);
@@ -13275,7 +13395,7 @@ Sandbox: `code_sandbox/js-function-intro/local-carname.html`
 // code here can NOT use carName
 function myFunction() {
   let carName = "Volvo";
-  return carName;  // code here CAN use carName
+  return carName; // code here CAN use carName
 }
 // code here can NOT use carName
 ```
@@ -14200,9 +14320,9 @@ This section has **9** examples:
 
 - [x] **Example 1:** sayHello return stored [View](#js-function-return-example-01)
 - [x] **Example 2:** multiply(4, 5) = 20 [View](#js-function-return-example-02)
-- [x] **Example 3:** multiply(2, 3) * 10 = 60 [View](#js-function-return-example-03)
+- [x] **Example 3:** multiply(2, 3) \* 10 = 60 [View](#js-function-return-example-03)
 - [x] **Example 4:** fullName returns a string [View](#js-function-return-example-04)
-- [x] **Example 5:** Early return "Done" skips a * b [View](#js-function-return-example-05)
+- [x] **Example 5:** Early return "Done" skips a \* b [View](#js-function-return-example-05)
 - [x] **Example 6:** No return → undefined [View](#js-function-return-example-06)
 - [x] **Example 7:** checkAge early return [View](#js-function-return-example-07)
 - [x] **Example 8:** toCelsius innerHTML 77 [View](#js-function-return-example-08)
@@ -14260,7 +14380,7 @@ let result = multiply(4, 5);
 
 <a id="js-function-return-example-03"></a>
 
-### **Example 3: multiply(2, 3) * 10 = 60**
+### **Example 3: multiply(2, 3) \* 10 = 60**
 
 - [x] A function call can sit **inside another expression**.
 - [x] `multiply(2, 3)` returns 6, then `6 * 10` is 60.
@@ -14303,7 +14423,7 @@ let name = fullName("John", "Doe");
 
 <a id="js-function-return-example-05"></a>
 
-### **Example 5: Early return "Done" skips a * b**
+### **Example 5: Early return "Done" skips a \* b**
 
 - [x] When JavaScript hits `return`, the function **stops**.
 - [x] Code after `return` never runs.
@@ -14858,7 +14978,7 @@ Sandbox: `code_sandbox/js-function-arguments/pass-by-reference.html`
 function changeName(obj) {
   obj.name = "Jane";
 }
-let person = {name: "John"};
+let person = { name: "John" };
 changeName(person);
 ```
 
@@ -15045,7 +15165,7 @@ This section has **7** examples:
 Sandbox: `code_sandbox/js-function-expressions/const-multiply.html`
 
 ```javascript
-const multiply = function(a, b) {
+const multiply = function (a, b) {
   return a * b;
 };
 ```
@@ -15066,7 +15186,7 @@ const multiply = function(a, b) {
 Sandbox: `code_sandbox/js-function-expressions/let-z-multiply.html`
 
 ```javascript
-const multiply = function(a, b) {
+const multiply = function (a, b) {
   return a * b;
 };
 let z = multiply(4, 3);
@@ -15088,7 +15208,7 @@ let z = multiply(4, 3);
 Sandbox: `code_sandbox/js-function-expressions/semicolon-after.html`
 
 ```javascript
-const add = function(a, b) {
+const add = function (a, b) {
   return a + b;
 };
 ```
@@ -15112,7 +15232,7 @@ Sandbox: `code_sandbox/js-function-expressions/callback-run.html`
 function run(fn) {
   return fn();
 }
-const sayHello = function() {
+const sayHello = function () {
   return "Hello";
 };
 let result = run(sayHello);
@@ -15134,7 +15254,7 @@ let result = run(sayHello);
 Sandbox: `code_sandbox/js-function-expressions/sayhello-expression.html`
 
 ```javascript
-const sayHello = function() {
+const sayHello = function () {
   return "Hello World";
 };
 sayHello();
@@ -15178,8 +15298,8 @@ function add(a, b) {
 Sandbox: `code_sandbox/js-function-expressions/expression-not-hoisted.html`
 
 ```javascript
-let sum = add(2, 3);  // error
-const add = function(a, b) {
+let sum = add(2, 3); // error
+const add = function (a, b) {
   return a + b;
 };
 ```
@@ -15323,7 +15443,7 @@ Arrow functions are a short syntax for function expressions. You can omit functi
 
 This section has **12** examples:
 
-- [x] **Example 1:** const multiply = (a, b) => a * b [View](#js-function-arrow-example-01)
+- [x] **Example 1:** const multiply = (a, b) => a \* b [View](#js-function-arrow-example-01)
 - [x] **Example 2:** Before arrow: function expression multiply [View](#js-function-arrow-example-02)
 - [x] **Example 3:** hello arrow with no parameters [View](#js-function-arrow-example-03)
 - [x] **Example 4:** hello as a function expression [View](#js-function-arrow-example-04)
@@ -15345,7 +15465,7 @@ This section has **12** examples:
 
 <a id="js-function-arrow-example-01"></a>
 
-### **Example 1: const multiply = (a, b) => a * b**
+### **Example 1: const multiply = (a, b) => a \* b**
 
 - [x] Skip `function`, `return`, and `{}` when the body is one expression.
 - [x] The W3Schools page repeats this same Tryit under **Shorter Syntax / With Arrow** — included once.
@@ -15372,7 +15492,7 @@ let z = multiply(4, 5);
 Sandbox: `code_sandbox/js-function-arrow/before-arrow.html`
 
 ```javascript
-const multiply = function(a, b) {
+const multiply = function (a, b) {
   return a * b;
 };
 let z = multiply(4, 5);
@@ -15413,7 +15533,7 @@ let text = hello();
 Sandbox: `code_sandbox/js-function-arrow/hello-expression.html`
 
 ```javascript
-const hello = function() {
+const hello = function () {
   return "Hello World!";
 };
 let text = hello();
@@ -15453,7 +15573,7 @@ let z = square(5);
 Sandbox: `code_sandbox/js-function-arrow/square-no-parens.html`
 
 ```javascript
-const square = x => x * x;
+const square = (x) => x * x;
 let z = square(5);
 ```
 
@@ -15493,7 +15613,7 @@ let text = hello("World");
 Sandbox: `code_sandbox/js-function-arrow/hello-val-no-parens.html`
 
 ```javascript
-const hello = val => "Hello " + val;
+const hello = (val) => "Hello " + val;
 let text = hello("World");
 ```
 
@@ -15514,9 +15634,13 @@ let text = hello("World");
 Sandbox: `code_sandbox/js-function-arrow/braces-return-variants.html`
 
 ```javascript
-const a = (x, y) => { x * y };
+const a = (x, y) => {
+  x * y;
+};
 // const b = (x, y) => return x * y;  // SyntaxError
-const c = (x, y) => { return x * y };
+const c = (x, y) => {
+  return x * y;
+};
 ```
 
 ![js-function-arrow example 9 source](./code_sandbox/snaps/js-function-arrow-09-code.png)
@@ -15535,7 +15659,7 @@ const c = (x, y) => { return x * y };
 Sandbox: `code_sandbox/js-function-arrow/call-before-define.html`
 
 ```javascript
-hello();  // Error
+hello(); // Error
 const hello = () => "Hello";
 ```
 
@@ -15557,9 +15681,9 @@ Sandbox: `code_sandbox/js-function-arrow/method-this-function.html`
 ```javascript
 const person = {
   name: "John",
-  greet: function() {
+  greet: function () {
     return this.name;
-  }
+  },
 };
 let text = person.greet();
 ```
@@ -15584,7 +15708,7 @@ const person = {
   name: "John",
   greet: () => {
     return this.name;
-  }
+  },
 };
 let text = person.greet();
 ```
@@ -15927,9 +16051,9 @@ Sandbox: `code_sandbox/js-function-quiz/q8-this-owner.html`
 ```javascript
 const person = {
   name: "John",
-  getName: function() {
+  getName: function () {
     return this.name;
-  }
+  },
 };
 let text = person.getName();
 ```
@@ -15952,7 +16076,7 @@ Sandbox: `code_sandbox/js-function-quiz/q9-arrow-this.html`
 ```javascript
 const person = {
   name: "John",
-  greet: () => this.name
+  greet: () => this.name,
 };
 let text = person.greet();
 ```
@@ -16182,8 +16306,8 @@ function myFunction() {
 Sandbox: `code_sandbox/js-timers/pass-name-vs-call.html`
 
 ```javascript
-setTimeout(myFunction, 3000);     // correct
-setTimeout(myFunction(), 3000);   // incorrect — runs now
+setTimeout(myFunction, 3000); // correct
+setTimeout(myFunction(), 3000); // incorrect — runs now
 ```
 
 ![js-timers example 3 source](./code_sandbox/snaps/js-timers-03-code.png)
@@ -16201,7 +16325,7 @@ setTimeout(myFunction(), 3000);   // incorrect — runs now
 Sandbox: `code_sandbox/js-timers/anonymous-timeout.html`
 
 ```javascript
-setTimeout(function() {
+setTimeout(function () {
   myDisplayer("Hello!");
 }, 3000);
 ```
@@ -16223,7 +16347,9 @@ Sandbox: `code_sandbox/js-timers/start-end-timer.html`
 
 ```javascript
 myDisplayer("Start");
-setTimeout(function() { myDisplayer("Timer"); }, 3000);
+setTimeout(function () {
+  myDisplayer("Timer");
+}, 3000);
 myDisplayer("End");
 ```
 
@@ -16244,7 +16370,9 @@ Sandbox: `code_sandbox/js-timers/zero-delay.html`
 
 ```javascript
 myDisplayer("Start");
-setTimeout(function() { myDisplayer("Timer"); }, 0);
+setTimeout(function () {
+  myDisplayer("Timer");
+}, 0);
 myDisplayer("End");
 ```
 
@@ -16264,10 +16392,10 @@ myDisplayer("End");
 Sandbox: `code_sandbox/js-timers/delay-is-minimum.html`
 
 ```javascript
-setTimeout(function() {
+setTimeout(function () {
   myDisplayer("Timer finished");
 }, 1000);
-let i = 4e7;  // page used 4e9
+let i = 4e7; // page used 4e9
 while (--i > 0);
 ```
 
@@ -16289,7 +16417,7 @@ Sandbox: `code_sandbox/js-timers/cleartimeout.html`
 ```javascript
 let timer;
 function startTimer() {
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     document.getElementById("demo").innerHTML = "Finished";
   }, 5000);
 }
@@ -16421,7 +16549,7 @@ function startCountdown() {
   clearInterval(timer);
   let count = 10;
   myDisplayer(count);
-  timer = setInterval(function() {
+  timer = setInterval(function () {
     count--;
     myDisplayer(count);
     if (count === 0) {
@@ -16449,8 +16577,8 @@ function startCountdown() {
 Sandbox: `code_sandbox/js-timers/avoid-strings.html`
 
 ```javascript
-setTimeout("myFunction()", 1000);  // not recommended
-setTimeout(myFunction, 1000);     // recommended
+setTimeout("myFunction()", 1000); // not recommended
+setTimeout(myFunction, 1000); // recommended
 ```
 
 ![js-timers example 14 source](./code_sandbox/snaps/js-timers-14-code.png)
@@ -16469,8 +16597,8 @@ setTimeout(myFunction, 1000);     // recommended
 Sandbox: `code_sandbox/js-timers/long-callback-blocks.html`
 
 ```javascript
-setTimeout(function() {
-  let i = 4e7;  // page used 4e9
+setTimeout(function () {
+  let i = 4e7; // page used 4e9
   while (--i > 0);
   document.getElementById("demo").innerHTML = "Finished";
 }, 1000);
@@ -16492,8 +16620,8 @@ setTimeout(function() {
 Sandbox: `code_sandbox/js-timers/mistake-call-with-parens.html`
 
 ```javascript
-setTimeout(myFunction(), 1000);  // wrong
-setTimeout(myFunction, 1000);    // right
+setTimeout(myFunction(), 1000); // wrong
+setTimeout(myFunction, 1000); // right
 ```
 
 ![js-timers example 16 source](./code_sandbox/snaps/js-timers-16-code.png)
@@ -16734,7 +16862,7 @@ const car = {
   type: "Fiat",
   start: function () {
     return "started";
-  }
+  },
 };
 ```
 
@@ -16779,7 +16907,7 @@ Sandbox: `code_sandbox/js-objects/object-methods.html`
 const car = {
   start: function () {
     return "started";
-  }
+  },
 };
 let msg = car.start();
 ```
@@ -16804,7 +16932,7 @@ const person = {
   firstName: "John",
   greet: function () {
     return this.firstName;
-  }
+  },
 };
 ```
 
@@ -16974,7 +17102,6 @@ Then open `http://127.0.0.1:8770/js-objects/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -17044,7 +17171,12 @@ const car = { type: "Fiat", model: "500", color: "white" };
 Sandbox: `code_sandbox/js-object-intro/person-one-line.html`
 
 ```javascript
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+};
 ```
 
 ![js-object-intro example 2 source](./code_sandbox/snaps/js-object-intro-02-code.png)
@@ -17067,7 +17199,7 @@ const person = {
   firstName: "John",
   lastName: "Doe",
   age: 50,
-  eyeColor: "blue"
+  eyeColor: "blue",
 };
 ```
 
@@ -17114,7 +17246,7 @@ const person = new Object({
   firstName: "John",
   lastName: "Doe",
   age: 50,
-  eyeColor: "blue"
+  eyeColor: "blue",
 });
 ```
 
@@ -17134,7 +17266,12 @@ const person = new Object({
 Sandbox: `code_sandbox/js-object-intro/dot-notation.html`
 
 ```javascript
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+};
 let name = person.firstName;
 ```
 
@@ -17154,7 +17291,12 @@ let name = person.firstName;
 Sandbox: `code_sandbox/js-object-intro/bracket-notation.html`
 
 ```javascript
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+};
 let name = person["firstName"];
 ```
 
@@ -17180,7 +17322,7 @@ const person = {
   age: 50,
   fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
+  },
 };
 ```
 
@@ -17207,10 +17349,10 @@ const primitives = [
   typeof true,
   typeof undefined,
   typeof Symbol("id"),
-  typeof null
+  typeof null,
 ];
 const objects = [
-  typeof {x: 1},
+  typeof { x: 1 },
   typeof [1, 2],
   typeof new Date(),
   typeof Math,
@@ -17218,7 +17360,7 @@ const objects = [
   typeof new Set(),
   typeof /()/,
   typeof new Error("e"),
-  typeof function () {}
+  typeof function () {},
 ];
 ```
 
@@ -17354,7 +17496,6 @@ Then open `http://127.0.0.1:8770/js-object-intro/`.
 - [x] A property stores a **value**. A method stores a **function** you call with `()`.
 
 </details>
-
 
 </details>
 
@@ -17576,8 +17717,8 @@ Sandbox: `code_sandbox/js-object-properties/in-operator.html`
 
 ```javascript
 const person = { firstName: "John", lastName: "Doe" };
-let hasFirst = ("firstName" in person);
-let hasAge = ("age" in person);
+let hasFirst = "firstName" in person;
+let hasAge = "age" in person;
 ```
 
 ![js-object-properties example 9 source](./code_sandbox/snaps/js-object-properties-09-code.png)
@@ -17602,8 +17743,8 @@ const myObj = {
   myCars: {
     car1: "Ford",
     car2: "BMW",
-    car3: "Fiat"
-  }
+    car3: "Fiat",
+  },
 };
 ```
 
@@ -17626,7 +17767,7 @@ Sandbox: `code_sandbox/js-object-properties/nested-dot-bracket.html`
 const myObj = {
   name: "John",
   age: 30,
-  myCars: { car1: "Ford", car2: "BMW", car3: "Fiat" }
+  myCars: { car1: "Ford", car2: "BMW", car3: "Fiat" },
 };
 ```
 
@@ -17649,7 +17790,7 @@ Sandbox: `code_sandbox/js-object-properties/nested-brackets.html`
 const myObj = {
   name: "John",
   age: 30,
-  myCars: { car1: "Ford", car2: "BMW", car3: "Fiat" }
+  myCars: { car1: "Ford", car2: "BMW", car3: "Fiat" },
 };
 ```
 
@@ -17672,7 +17813,7 @@ Sandbox: `code_sandbox/js-object-properties/nested-variables.html`
 const myObj = {
   name: "John",
   age: 30,
-  myCars: { car1: "Ford", car2: "BMW", car3: "Fiat" }
+  myCars: { car1: "Ford", car2: "BMW", car3: "Fiat" },
 };
 let p1 = "myCars";
 let p2 = "car2";
@@ -17832,7 +17973,6 @@ Then open `http://127.0.0.1:8770/js-object-properties/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -17887,7 +18027,7 @@ const person = {
   age: 50,
   fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
+  },
 };
 ```
 
@@ -17913,7 +18053,7 @@ const person = {
   id: 5566,
   getId: function () {
     return this.id;
-  }
+  },
 };
 let number = person.getId();
 ```
@@ -17939,7 +18079,7 @@ const person = {
   lastName: "Doe",
   fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
+  },
 };
 let name = person.fullName();
 ```
@@ -17965,7 +18105,7 @@ const person = {
   lastName: "Doe",
   fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
+  },
 };
 let name = person.fullName;
 ```
@@ -18130,7 +18270,6 @@ Then open `http://127.0.0.1:8770/js-object-methods/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -18184,7 +18323,7 @@ const person = {
   age: 50,
   fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
+  },
 };
 ```
 
@@ -18208,13 +18347,13 @@ const person1 = {
   name: "John",
   hello: function () {
     return "Hello " + this.name;
-  }
+  },
 };
 const person2 = {
   name: "Anna",
   hello: function () {
     return "Hello " + this.name;
-  }
+  },
 };
 ```
 
@@ -18398,7 +18537,6 @@ Then open `http://127.0.0.1:8770/js-object-this/`.
 - [x] In an **object method** (the owner), in **strict** functions (**undefined**), and in other later cases (bind, arrows) covered on advanced pages.
 
 </details>
-
 
 </details>
 
@@ -18678,7 +18816,6 @@ Then open `http://127.0.0.1:8770/js-object-display/`.
 - [x] An array of **`[key, value]`** pairs, handy in `for...of`.
 
 </details>
-
 
 </details>
 
@@ -19199,7 +19336,6 @@ Then open `http://127.0.0.1:8770/js-object-constructors/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -19253,9 +19389,9 @@ This section has **8** examples:
 Sandbox: `code_sandbox/js-scope/three-scope-types.html`
 
 ```javascript
-var x = 1;  // Global scope
-let y = 2;  // Global scope
-const z = 3;  // Global scope
+var x = 1; // Global scope
+let y = 2; // Global scope
+const z = 3; // Global scope
 function show() {
   return x + ", " + y + ", " + z;
 }
@@ -19302,7 +19438,7 @@ Sandbox: `code_sandbox/js-scope/function-local-carname.html`
 // code here can NOT use carName
 function myFunction() {
   let carName = "Volvo";
-  return carName;  // code here CAN use carName
+  return carName; // code here CAN use carName
 }
 // code here can NOT use carName
 ```
@@ -19548,7 +19684,6 @@ Then open `http://127.0.0.1:8770/js-scope/`.
 - [x] **No.** Only when you intend a page-wide value.
 
 </details>
-
 
 </details>
 
@@ -19838,7 +19973,6 @@ Then open `http://127.0.0.1:8770/js-code-blocks/`.
 - [x] **Yes.** They were never declared in the outer scope.
 
 </details>
-
 
 </details>
 
@@ -20145,7 +20279,6 @@ Then open `http://127.0.0.1:8770/js-hoisting/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -20200,7 +20333,7 @@ if (true) {
   var firstName = "John";
   let lastName = "Doe";
 }
-let text1 = text2 = "unknown";
+let text1 = (text2 = "unknown");
 if (typeof firstName !== "undefined") text1 = firstName;
 if (typeof lastName !== "undefined") text2 = lastName;
 ```
@@ -20326,7 +20459,7 @@ var x = 5;
 Sandbox: `code_sandbox/js-varletconst/let-tdz-before-declare.html`
 
 ```javascript
-x = x + 1;  // error
+x = x + 1; // error
 let x = 5;
 ```
 
@@ -20346,7 +20479,7 @@ let x = 5;
 Sandbox: `code_sandbox/js-varletconst/const-tdz-before-declare.html`
 
 ```javascript
-console.log(x);  // error
+console.log(x); // error
 const x = 5;
 ```
 
@@ -20496,7 +20629,6 @@ Then open `http://127.0.0.1:8770/js-varletconst/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -20627,7 +20759,7 @@ Sandbox: `code_sandbox/js-strict-mode/undeclared-object.html`
 
 ```javascript
 "use strict";
-x = {p1: 10, p2: 20};
+x = { p1: 10, p2: 20 };
 ```
 
 ![js-strict-mode example 4 source](./code_sandbox/snaps/js-strict-mode-04-code.png)
@@ -20749,7 +20881,7 @@ Sandbox: `code_sandbox/js-strict-mode/write-readonly.html`
 ```javascript
 "use strict";
 const obj = {};
-Object.defineProperty(obj, "x", {value: 0, writable: false});
+Object.defineProperty(obj, "x", { value: 0, writable: false });
 obj.x = 3.14;
 ```
 
@@ -20770,7 +20902,11 @@ Sandbox: `code_sandbox/js-strict-mode/write-getter-only.html`
 
 ```javascript
 "use strict";
-const obj = { get x() { return 0; } };
+const obj = {
+  get x() {
+    return 0;
+  },
+};
 obj.x = 3.14;
 ```
 
@@ -21083,7 +21219,6 @@ Then open `http://127.0.0.1:8770/js-strict-mode/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -21124,7 +21259,7 @@ This section has **24** examples:
 - [x] **Example 16:** new Date(9, 11, 24) → 1909 [View](#js-dates-example-16)
 - [x] **Example 17:** new Date(100000000000) [View](#js-dates-example-17)
 - [x] **Example 18:** new Date(-100000000000) [View](#js-dates-example-18)
-- [x] **Example 19:** new Date(24*60*60*1000) / 86400000 [View](#js-dates-example-19)
+- [x] **Example 19:** new Date(24*60*60\*1000) / 86400000 [View](#js-dates-example-19)
 - [x] **Example 20:** new Date(0) — epoch [View](#js-dates-example-20)
 - [x] **Example 21:** d.toString() [View](#js-dates-example-21)
 - [x] **Example 22:** d.toDateString() [View](#js-dates-example-22)
@@ -21478,7 +21613,7 @@ const d = new Date(-100000000000);
 
 <a id="js-dates-example-19"></a>
 
-### **Example 19: new Date(24*60*60*1000) / 86400000**
+### **Example 19: new Date(24*60*60\*1000) / 86400000**
 
 - [x] One day is **86 400 000** ms (`24 * 60 * 60 * 1000`).
 - [x] The page Tryit shows both forms; they are the **same** instant.
@@ -21722,7 +21857,6 @@ Then open `http://127.0.0.1:8770/js-dates/`.
 - [x] **No.** Date-only ISO is **UTC midnight**, which can print as the **previous local evening**.
 
 </details>
-
 
 </details>
 
@@ -22205,7 +22339,6 @@ Then open `http://127.0.0.1:8770/js-date-formats/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -22382,7 +22515,20 @@ d.getMonth();
 Sandbox: `code_sandbox/js-date-get/month-name-fixed.html`
 
 ```javascript
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 const d = new Date("2021-03-25");
 let month = months[d.getMonth()];
 ```
@@ -22402,7 +22548,20 @@ let month = months[d.getMonth()];
 Sandbox: `code_sandbox/js-date-get/month-name-now.html`
 
 ```javascript
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 const d = new Date();
 let month = months[d.getMonth()];
 ```
@@ -22653,7 +22812,15 @@ d.getDay();
 Sandbox: `code_sandbox/js-date-get/day-name-fixed.html`
 
 ```javascript
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 const d = new Date("2021-03-25");
 let day = days[d.getDay()];
 ```
@@ -22673,7 +22840,15 @@ let day = days[d.getDay()];
 Sandbox: `code_sandbox/js-date-get/day-name-now.html`
 
 ```javascript
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 const d = new Date();
 let day = days[d.getDay()];
 ```
@@ -23126,12 +23301,11 @@ Then open `http://127.0.0.1:8770/js-date-get/`.
 
 </details>
 
-
 </details>
 
 ## Summary
 
-Read local fields with getFullYear, getMonth, getDate, getDay, and the time getters; read UTC with the getUTC* twins. Date-only ISO is UTC midnight, so US local getters can show the previous evening. getTime and Date.now are epoch milliseconds. Skip getYear.
+Read local fields with getFullYear, getMonth, getDate, getDay, and the time getters; read UTC with the getUTC\* twins. Date-only ISO is UTC midnight, so US local getters can show the previous evening. getTime and Date.now are epoch milliseconds. Skip getYear.
 
 ## References
 
@@ -23533,7 +23707,6 @@ Then open `http://127.0.0.1:8770/js-date-set/`.
 - [x] They mutate **the same object** and return the new **ms** timestamp (this sandbox prints the Date after the set).
 
 </details>
-
 
 </details>
 
@@ -24784,7 +24957,6 @@ Then open `http://127.0.0.1:8770/js-date-methods/`.
 
 </details>
 
-
 </details>
 
 ## Summary
@@ -24801,4 +24973,4 @@ The reference is a catalog: construct, get local or UTC fields, set local or UTC
 
 ---
 
-**[View PART 2 of Tutorial](./tutorial2.md)** — continues at **JS Arrays** through **JS Errors** (and later sections).
+**[View PART 2 of Tutorial](./tutorial2.md)** — continues at **JS Arrays**. **[Part 3](./tutorial3.md)** starts at **HTML DOM**.
