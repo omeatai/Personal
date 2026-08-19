@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Displaying the result in a map URL</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const latlon = "59.9,10.7";
+      const img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" +
+        latlon + "&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+      document.getElementById("demo").innerText = img_url;
+    </script>
+  </body>
+</html>

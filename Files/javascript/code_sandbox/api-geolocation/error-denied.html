@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Error PERMISSION_DENIED</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const code = (window.GeolocationPositionError && GeolocationPositionError.PERMISSION_DENIED) || 1;
+      let text = "";
+      switch (code) {
+        case 1: text = "User denied the request for Geolocation."; break;
+      }
+      document.getElementById("demo").innerText = "PERMISSION_DENIED=" + code + "\n" + text;
+    </script>
+  </body>
+</html>

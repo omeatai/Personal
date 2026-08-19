@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>getCurrentPosition — latitude and longitude</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const x = document.getElementById("demo");
+      if (!navigator.geolocation) {
+        x.innerText = "Geolocation is not supported by this browser.";
+      } else {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            x.innerText = "Latitude: " + position.coords.latitude +
+              "\nLongitude: " + position.coords.longitude;
+          },
+          function (err) {
+            x.innerText = "API present. error code=" + err.code + " " + err.message;
+          },
+          { timeout: 1500, maximumAge: 0 }
+        );
+      }
+    </script>
+  </body>
+</html>
