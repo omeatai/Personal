@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JSON round trip — stringify then parse</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const person = { name: "John", age: 30 };
+      const copy = JSON.parse(JSON.stringify(person));
+      document.getElementById("demo").innerText =
+        "name=" + copy.name + " sameRef=" + (copy === person);
+    </script>
+  </body>
+</html>

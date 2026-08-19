@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Display parsed employees[1] in HTML</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const obj = JSON.parse('{ "employees" : [' +
+        '{ "firstName":"John" , "lastName":"Doe" },' +
+        '{ "firstName":"Anna" , "lastName":"Smith" },' +
+        '{ "firstName":"Peter" , "lastName":"Jones" } ]}');
+      document.getElementById("demo").innerText =
+        obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+  </body>
+</html>

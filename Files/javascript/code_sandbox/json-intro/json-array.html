@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>JSON arrays — employees</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const text = '{ "employees" : [' +
+        '{ "firstName":"John" , "lastName":"Doe" },' +
+        '{ "firstName":"Anna" , "lastName":"Smith" },' +
+        '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+      const obj = JSON.parse(text);
+      document.getElementById("demo").innerText =
+        obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+  </body>
+</html>
