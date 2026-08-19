@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>popstate fires on Back/Forward</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      window.addEventListener("popstate", function () {
+        document.getElementById("demo").innerText = "Page changed";
+      });
+      history.pushState({page: "a"}, "", "?a=1");
+      history.pushState({page: "b"}, "", "?b=1");
+      history.back();
+    </script>
+  </body>
+</html>

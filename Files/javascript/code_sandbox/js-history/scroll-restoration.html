@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>history.scrollRestoration</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      history.scrollRestoration = "manual";
+      document.getElementById("demo").innerText = "scrollRestoration=" + history.scrollRestoration;
+    </script>
+  </body>
+</html>

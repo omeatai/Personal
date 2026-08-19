@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Simple History API example (Home / About)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="home">Home</button> <button type="button" id="about">About</button><p id="out">Home</p>
+    <pre id="demo"></pre>
+    <script>
+      function myDisplayer(page) {
+        document.getElementById("out").textContent = page;
+      }
+      function showPage(page) {
+        myDisplayer(page);
+        history.pushState({page: page}, "", "?page=" + page);
+      }
+      document.getElementById("home").onclick = function () { showPage("home"); };
+      document.getElementById("about").onclick = function () { showPage("about"); };
+      showPage("about");
+      document.getElementById("demo").innerText =
+        "out=" + document.getElementById("out").textContent + " search=" + location.search;
+    </script>
+  </body>
+</html>

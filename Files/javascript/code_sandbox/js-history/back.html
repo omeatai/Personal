@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>history.back() — previous session entry</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <button type="button" id="b">Go Back</button>
+    <pre id="demo"></pre>
+    <script>
+      document.getElementById("b").onclick = function () { history.back(); };
+      document.getElementById("demo").innerText =
+        "typeof back=" + typeof history.back + " length=" + history.length + " (not clicked)";
+    </script>
+  </body>
+</html>

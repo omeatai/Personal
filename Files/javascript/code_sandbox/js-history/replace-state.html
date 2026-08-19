@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>history.replaceState(state, &quot;&quot;, url)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const before = history.length;
+      history.replaceState({name:"example", page: 2}, "", "?page=2");
+      document.getElementById("demo").innerText =
+        "state=" + JSON.stringify(history.state) +
+        "\nlength before=" + before + " after=" + history.length;
+    </script>
+  </body>
+</html>

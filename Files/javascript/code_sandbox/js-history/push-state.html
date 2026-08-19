@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>history.pushState(state, &quot;&quot;, url)</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      history.pushState({name:"example", page: 2}, "", "?page=2");
+      document.getElementById("demo").innerText =
+        "state=" + JSON.stringify(history.state) +
+        "\nsearch=" + location.search +
+        "\nstill this document (no load)";
+    </script>
+  </body>
+</html>
