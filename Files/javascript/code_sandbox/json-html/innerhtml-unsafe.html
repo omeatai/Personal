@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>innerHTML is potentially unsafe</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      const el = document.createElement("div");
+      el.innerHTML = "John <b>Doe</b>";
+      document.getElementById("demo").innerText =
+        "childElementCount=" + el.childElementCount + " bold=" + !!el.querySelector("b");
+    </script>
+  </body>
+</html>

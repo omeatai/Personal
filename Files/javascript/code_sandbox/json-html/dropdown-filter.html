@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Dynamic table from a &lt;select&gt;</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <select id="myselect"><option value="">Choose</option><option value="customers">Customers</option><option value="products">Products</option></select><div id="box"></div>
+    <pre id="demo"></pre>
+    <script>
+      const data = {
+        customers: [{name:"John"},{name:"Anna"}],
+        products: [{name:"Laptop"},{name:"Mouse"},{name:"Keyboard"}]
+      };
+      function change_myselect(sel) {
+        const table = document.createElement("table");
+        table.setAttribute("border", "1");
+        for (const row of (data[sel] || [])) {
+          table.insertRow().insertCell().textContent = row.name;
+        }
+        const box = document.getElementById("box");
+        box.innerHTML = "";
+        box.appendChild(table);
+        document.getElementById("demo").innerText = table.innerText.replace(/\s+/g, " ");
+      }
+      document.getElementById("myselect").value = "products";
+      change_myselect("products");
+    </script>
+  </body>
+</html>

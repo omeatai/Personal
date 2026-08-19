@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Displaying JSON in a table</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <table id="t"><tr><th>Product</th><th>Price</th></tr></table>
+    <pre id="demo"></pre>
+    <script>
+      const products = [{name:"Laptop",price:899},{name:"Mouse",price:29},{name:"Keyboard",price:79}];
+      const table = document.getElementById("t");
+      for (const product of products) {
+        const row = table.insertRow();
+        row.insertCell().textContent = product.name;
+        row.insertCell().textContent = "$" + product.price;
+      }
+      document.getElementById("demo").innerText =
+        "rows=" + table.rows.length + " first=" + table.rows[1].cells[0].textContent;
+    </script>
+  </body>
+</html>

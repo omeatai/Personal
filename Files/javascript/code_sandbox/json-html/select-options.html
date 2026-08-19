@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>HTML drop-down from JSON names</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <pre id="demo"></pre>
+    <script>
+      const myObj = [{name:"John"},{name:"Anna"},{name:"Peter"}];
+      const sel = document.createElement("select");
+      for (const row of myObj) { sel.add(new Option(row.name)); }
+      document.getElementById("box").appendChild(sel);
+      document.getElementById("demo").innerText =
+        "options=" + sel.options.length + " first=" + sel.options[0].text;
+    </script>
+  </body>
+</html>

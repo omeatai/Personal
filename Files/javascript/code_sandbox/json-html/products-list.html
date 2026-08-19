@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Displaying an array of objects</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    <ul id="list"></ul>
+    <pre id="demo"></pre>
+    <script>
+      const products = JSON.parse('[{"name":"Laptop","price":899},{"name":"Mouse","price":29},{"name":"Keyboard","price":79}]');
+      const list = document.getElementById("list");
+      for (const product of products) {
+        const item = document.createElement("li");
+        item.textContent = product.name + ": $" + product.price;
+        list.appendChild(item);
+      }
+      document.getElementById("demo").innerText = list.innerText.replace(/\n/g, " | ");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Loading and displaying JSON</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      button { margin-right: 4px; }
+      
+    </style>
+  </head>
+  <body>
+    
+    <pre id="demo"></pre>
+    <script>
+      (async function () {
+        const response = await fetch("customer.json");
+        if (!response.ok) { throw new Error("HTTP error " + response.status); }
+        const customer = await response.json();
+        document.getElementById("demo").innerText = customer.name + ", " + customer.city;
+      })();
+    </script>
+  </body>
+</html>
