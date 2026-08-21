@@ -1,9 +1,8 @@
 # JavaScript Tutorial — Build Plan (JS Home → JS JSONP)
 
 Master plan and **resume tracker** for documenting the full W3Schools JavaScript course into
-`Files/javascript/tutorial.md` (through **JS Date Methods**),
-`Files/javascript/tutorial2.md` (**JS Arrays** through the last accordion before **HTML DOM**), and
-`Files/javascript/tutorial3.md` (**HTML DOM** onward), following the rule
+`Files/javascript/courses/<section>.md` (one file per page) with the ordered index in
+`Files/javascript/tutorial_main.md`, following the rule
 `Files/javascript/.cursor/rules/javascript_tutorial.mdc`.
 
 Scope: **every tutorial page from `JS Home` (top) down to `JS JSONP` (bottom)** in left-nav order.
@@ -15,22 +14,22 @@ JS Website, JS Syllabus, JS Study Plan, JS Interview Prep, JS Bootcamp, JS Certi
 ## How to use this plan (read on every resume)
 
 1. Find the **first unchecked page** below (top to bottom). That is the next task.
-2. Do the page end-to-end per the rule: **read → rebuild every example in the sandbox → run → snap code + result → append one accordion** to `tutorial.md` (through JS Date Methods), `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), or `tutorial3.md` (**HTML DOM** onward). The accordion **Introduction** must list **every** Example title (all N of them).
+2. Do the page end-to-end per the rule: **read → rebuild every example in the sandbox → run → snap code + result → write one course file** to `courses/<filename>.md` and tick the title on `tutorial_main.md`. The course-file **Introduction** must list **every** Example title (all N of them).
 3. Tick the page here (`[ ]` → `[x]`) and update **Resume pointer** at the top of the tracker.
 4. Make **one git commit per page** (workflow rule: one task = one unit of work), then the user can `git push`.
 5. Move to the next unchecked page. Never batch multiple pages into one commit unless explicitly asked.
 
-**Improvement pass:** pages tagged `(exists — improve)` already have an accordion in `tutorial.md` from an
+**Improvement pass:** pages tagged `(exists — improve)` already have a course file in `courses/` from an
 earlier, thinner pass. Rewrite them to the current, more-detailed standard (every example rebuilt + run + snapped,
-richer explanations, 8–15 Q&A). Replace the existing `<summary>` block in place (ask before replacing per the rule),
+richer explanations, 8–15 Q&A). Replace the existing course file in place (ask before replacing per the rule),
 do **not** duplicate it.
 
 ### Status legend
 
 - `[ ]` not started
-- `[x]` done to current standard (examples rebuilt, run, snapped, accordion appended/updated, committed)
-- Tag `(exists — improve)` = an older accordion exists and must be upgraded, not created fresh.
-- Tag `(new)` = no accordion yet.
+- `[x]` done to current standard (examples rebuilt, run, snapped, course file written/updated, committed)
+- Tag `(exists — improve)` = an older course file exists and must be upgraded, not created fresh.
+- Tag `(new)` = no course file yet.
 
 ### Per-page checklist (the "definition of done")
 
@@ -39,7 +38,7 @@ do **not** duplicate it.
 - [ ] Examples run over http (or `node` for console-only) and match the page.
 - [ ] Per-example snaps saved to `code_sandbox/snaps/`: `<slug>-NN-code.png` + `<slug>-NN-result.png`
       (NN matches the Example heading order; never one shared pair for a whole method table).
-- [ ] One accordion appended/updated in `tutorial.md` / `tutorial2.md` / `tutorial3.md` as appropriate
+- [ ] One course file written/updated in `courses/<filename>.md`, and `tutorial_main.md` ticked with a **View** link
       (Introduction, Detailed Explanation, Terminal Commands, Questions and Answers, Summary, References)
       with every example's written outcome.
 - [ ] **Introduction lists every Example title** (Example 1 … Example N) matching the Detailed Explanation
@@ -70,8 +69,8 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - **Slug** = page title lowercased, spaces → hyphens, punctuation dropped
   (e.g. `JS Numbers` → `js-numbers`, `toString()` → `js-tostring`, `var/let/const` → `js-varletconst`).
 - **Commit message** first line: `S.P: <Page Title> — document JS tutorial section`
-  (e.g. `6.1: JS Numbers — document JS tutorial section`). Stage the matching tutorial file
-  (`tutorial.md` / `tutorial2.md` / `tutorial3.md`), the page sandbox, and its snaps.
+  (e.g. `6.1: JS Numbers — document JS tutorial section`). Stage the course file
+  (`courses/<filename>.md`), `tutorial_main.md` if the index line changed, the page sandbox, and its snaps.
 - **Base URL** for each page: `https://www.w3schools.com/js/<file>.asp`.
 - **Local server** from `Files/javascript/code_sandbox`, e.g. `py -3 -m http.server 8770 --bind 127.0.0.1`,
   then open `http://127.0.0.1:8770/<slug>/`.
@@ -86,12 +85,12 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 - **Next task:** `21.1` JS Alphabetic (new).
 - **Last completed:** `29.6` API Web Worker.
-- **Notes:** Course text is split across three files: `tutorial.md` (through JS Date Methods),
-  `tutorial2.md` (JS Arrays through the last accordion before HTML DOM), `tutorial3.md` (**HTML DOM** onward).
+- **Notes:** Course text lives in `courses/<filename>.md` (one file per page). The ordered title list
+  and View links are in `tutorial_main.md`. Unfinished pages stay as `- [ ] Title` with no View link.
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
   named construct) and an **Introduction table of contents** that lists **every** Example title with a
   **`[View](#<slug>-example-NN)`** jump link (Example 1 … Example N; 39 titles on String Reference).
-  `tutorial.md` already has both. Per-page git commits for `3.1`–`5.5` were not made in that correction
+  Documented course files already have both. Per-page git commits for `3.1`–`5.5` were not made in that correction
   pass (user asked for the rewrite, not commits).
 
 ---

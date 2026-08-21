@@ -1,5 +1,5 @@
 ---
-description: Read named tutorial section(s) from the W3Schools HTML site, run every example in code_sandbox, snap code and results, and append one detailed study accordion per section to Files/html/tutorial.md
+description: Read named tutorial section(s) from the W3Schools HTML site, run every example in code_sandbox, snap code and results, and write one course file per section under Files/html/courses plus a View link on tutorial_main.md
 alwaysApply: false
 ---
 
@@ -7,11 +7,11 @@ alwaysApply: false
 
 When the user says **"apply to \<Section\>"** (or similar, e.g. `@html_tutorial.mdc apply to HTML Introduction`), document that tutorial section from the **open browser tab** (or the site they name, default [W3Schools HTML](https://www.w3schools.com/html/default.asp)).
 
-They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to HTML Editors to HTML Headings`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one accordion. A range = one accordion per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → run → snap → append) before starting the next.
+They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to HTML Editors to HTML Headings`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one course file in `courses/`. A range = one course file per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → run → snap → write course file → tick `tutorial_main.md`) before starting the next.
 
-This output is a **detailed study tutorial**, not a thin recap. The reader must be able to learn the whole section from the accordion alone — without ever opening W3Schools. That means **every idea explained in depth, every site example rebuilt and run, extra clarifying examples added where they help, and every result shown as a snap with a written description of what happened.** When in doubt, add more explanation and more examples, not less.
+This output is a **detailed study tutorial**, not a thin recap. The reader must be able to learn the whole section from the course file alone — without ever opening W3Schools. That means **every idea explained in depth, every site example rebuilt and run, extra clarifying examples added where they help, and every result shown as a snap with a written description of what happened.** When in doubt, add more explanation and more examples, not less.
 
-Match the grain and layout of `Personal/Files/javascript/tutorial.md` (Introduction example list + `[View]` jump links, one `### Example` per Tryit / named tag / table row, code and result snaps beside each example). You can view the HTML output in `Personal/Files/html/tutorial.md`.
+Match the grain and layout of `Personal/Files/javascript/courses/js_introduction.md` (Introduction example list + `[View]` jump links, one `### Example` per Tryit / named tag / table row, code and result snaps beside each example). You can view the HTML output in `Personal/Files/html/courses/html_introduction.md` and the index in `Personal/Files/html/tutorial_main.md`.
 
 ## Workflow Steps
 
@@ -39,16 +39,19 @@ Match the grain and layout of `Personal/Files/javascript/tutorial.md` (Introduct
      - `<slug>-01-code.png`, `<slug>-02-code.png`, …
      - `<slug>-01-result.png`, `<slug>-02-result.png`, …
      - A single-example section may use `<slug>-code.png` / `<slug>-result.png`.
-   - Embed **relative** images from `tutorial.md`: `./code_sandbox/snaps/<file>.png`
-6. **Append** one formatted accordion per section to `Personal/Files/html/tutorial.md`. **Never overwrite** the file. If an accordion with the same `<summary>` already exists, ask before replacing that block.
-7. If `tutorial.md` has no `#` title yet, start the file with `# HTML Tutorial` then the accordion.
+   - Embed **relative** images from the course file: `../code_sandbox/snaps/<file>.png`
+6. **Write** one course file per section to `Personal/Files/html/courses/<filename>.md`. **Never overwrite** an existing course file; if one with the same title already exists, ask before replacing it.
+   - Filename = section title lowercased, punctuation dropped, spaces/`/`/`&` → underscores (`HTML Introduction` → `html_introduction.md`, `HTML Block & Inline` → `html_block_and_inline.md`).
+   - File starts with `# <Section Title>`, then `[Back to HTML Tutorial](../tutorial_main.md)`, then the study body from **Introduction** onward. **No outer** `<details>` wrapper around the whole section. Terminal Commands and Questions and Answers stay as **closed child accordions**.
+7. **Tick the index.** In `Personal/Files/html/tutorial_main.md`, change the matching line from `- [ ] Title` to `- [x] Title [View](./courses/<filename>.md)`. If the title is missing, add it in nav order. Do not remove other titles.
 
 ## Format Requirements
 
-Accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Personal/bin/format.md`. Heading **order and children** follow this rule:
+Child-accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Personal/bin/format.md`. Heading **order and children** follow this rule:
 
-- Topic accordion `<summary>` = the section title the user named (e.g. `HTML Introduction`).
-- **Accordion spacing:** one blank line after every `</summary>` and one blank line before every `</details>`.
+- Course file `#` heading = the section title the user named (e.g. `HTML Introduction`).
+- After the `#` heading, a back-link: `[Back to HTML Tutorial](../tutorial_main.md)`.
+- **Accordion spacing** (Terminal Commands / Q&A / Answer only): one blank line after every `</summary>` and one blank line before every `</details>`.
 - **Introduction**, **Detailed Explanation**, **Summary**, **References** = plain `##` headings (not child accordions).
 - **Introduction must list every Example title.** After the short prose (what the section is), list **all** `### **Example N: Title**` headings in order — if the section has 34 examples, list all 34. Do not summarize, skip, or group them. Each line ends with a **`[View](#…)`** link that scrolls to that example. Use this shape (no code in the Introduction):
 
@@ -76,8 +79,8 @@ This is the heart of the tutorial and absorbs what used to be the separate **Cod
 1. **Heading** — `<a id="<slug>-example-NN"></a>` then `### **Example N: Title**` (title from the page, or a clear label). The `id` is what Introduction `[View](#<slug>-example-NN)` scrolls to.
 2. **Explanation** — `- [x]` lines describing **what the markup does, why those tags/attributes exist, and what the browser shows** (nesting, required attributes, defaults, accessibility notes, "do not" advice). Be generous: multiple bullets and nested sub-points, not one sentence. Explain any table, note, or warning here in the same style.
 3. **Tested code** — a fenced block (`html` / `css` / `javascript`) with the **actual sandbox source that ran** (never an untested paste from the site). Mention the sandbox path, e.g. `Sandbox: code_sandbox/<slug>/index.html`.
-4. **Code snap** — `<img ... src="./code_sandbox/snaps/<slug>-NN-code.png" />` right after the fence.
-5. **Result snap + written outcome** — `<img ... src="./code_sandbox/snaps/<slug>-NN-result.png" />`, immediately followed by at least one `- [x]` line that **describes the rendered outcome in words** ("a large bold heading over a paragraph", "a bulleted list of three items"). The image must never be the only explanation of the result.
+4. **Code snap** — `<img ... src="../code_sandbox/snaps/<slug>-NN-code.png" />` right after the fence.
+5. **Result snap + written outcome** — `<img ... src="../code_sandbox/snaps/<slug>-NN-result.png" />`, immediately followed by at least one `- [x]` line that **describes the rendered outcome in words** ("a large bold heading over a paragraph", "a bulleted list of three items"). The image must never be the only explanation of the result.
 
 Cover **all** examples this way — do not summarize several into one. If official docs required newer markup than the page, keep **both**: the page’s idea and the working current form, and say how they differ. Prefer thoroughness: more examples and richer explanation is the goal.
 
@@ -106,8 +109,9 @@ Walk the page in order and emit a **separate** `### **Example N: Title**` (all f
 **Q&A** must ask about **several different Examples** (tags, attributes, rendered output), not five generic definitions while 30 tags went undemoed. Still 8–15 questions; spread them across the page.
 
 ````markdown
-<details>
-  <summary>HTML Introduction</summary>
+# HTML Introduction
+
+[Back to HTML Tutorial](../tutorial_main.md)
 
 ## Introduction
 
@@ -146,9 +150,9 @@ Sandbox: `code_sandbox/html-introduction/index.html`
 </html>
 ```
 
-<img alt="html-introduction example 1 source" src="./code_sandbox/snaps/html-introduction-01-code.png" />
+<img alt="html-introduction example 1 source" src="../code_sandbox/snaps/html-introduction-01-code.png" />
 
-<img alt="html-introduction example 1 result" src="./code_sandbox/snaps/html-introduction-01-result.png" />
+<img alt="html-introduction example 1 result" src="../code_sandbox/snaps/html-introduction-01-result.png" />
 
 - [x] **Outcome:** the page shows a large heading with a paragraph directly beneath it.
 
@@ -197,8 +201,6 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 
 - [HTML Introduction (W3Schools)](https://www.w3schools.com/html/html_intro.asp)
 - [MDN: HTML basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content)
-
-</details>
 ````
 
 ## Content Guidelines
@@ -206,7 +208,7 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 - Document **this section only** (even inside a range). Do not mix in the next/previous chapter.
 - Preserve the site’s explanations, examples, exercises, tables, and warnings. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
 - **Be thorough.** Every Tryit, every reference-table row, and every named construct gets its own `### Example` block with explanation, tested markup, code snap, result snap, and a written outcome. Add extra examples when they clarify a concept. A bullet list of tag names is **not** coverage.
-- **Self-check before appending:** count Tryits + table rows + named constructs on the page; count `### **Example` headings in the accordion; count Introduction **Example N:** lines with a `[View](#<slug>-example-NN)` link. All three must agree. If the Introduction omits any title or View link, or an example heading is missing its `<a id="…">`, you are not done. Do not file the section.
+- **Self-check before filing:** count Tryits + table rows + named constructs on the page; count `### **Example` headings in the course file; count Introduction **Example N:** lines with a `[View](#<slug>-example-NN)` link. All three must agree. If the Introduction omits any title or View link, or an example heading is missing its `<a id="…">`, you are not done. Do not file the section.
 - Terminal Commands = only commands you actually used (server, open URL). If none, keep the child with a one-line placeholder.
 - Fenced markup is the **tested** sandbox source. If you updated outdated snippets, fence what actually ran and say how it differs from the page.
 - If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
@@ -216,7 +218,8 @@ Restate every major idea and the outcomes of the examples in a short paragraph t
 | Purpose               | Path                                                  |
 | --------------------- | ----------------------------------------------------- |
 | Format sample         | `Personal/bin/format.md`                              |
-| Output (append)       | `Personal/Files/html/tutorial.md`                     |
+| Index                 | `Personal/Files/html/tutorial_main.md`                |
+| Course file (write)   | `Personal/Files/html/courses/<filename>.md`           |
 | Sandbox (per section) | `Personal/Files/html/code_sandbox/<slug>/`            |
 | Snaps                 | `Personal/Files/html/code_sandbox/snaps/`             |
 | This rule             | `Personal/Files/html/.cursor/rules/html_tutorial.mdc` |
