@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>?? keeps 0; || treats 0 as missing</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>?? keeps 0; || treats 0 as missing</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let viaNullish = 0 ?? 5;
+      let viaOr = 0 || 5;
+      let emptyKeep = "" ?? "fallback";
+      let emptyOr = "" || "fallback";
+      document.getElementById("demo").innerText = "0 ?? 5 -> " + String(viaNullish) + "\n" + "0 || 5 -> " + String(viaOr) + "\n" + "\"\" ?? fallback -> " + String(emptyKeep) + "\n" + "\"\" || fallback -> " + String(emptyOr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Logical OR — x=6 y=-3 still true</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Logical OR — x=6 y=-3 still true</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 6;
+      let y = -3;
+      let z = (x > 0 || y > 0);
+      document.getElementById("demo").innerText = "x > 0 -> " + String(x > 0) + "\n" + "y > 0 -> " + String(y > 0) + "\n" + "z -> " + String(z);
+    </script>
+  </body>
+</html>

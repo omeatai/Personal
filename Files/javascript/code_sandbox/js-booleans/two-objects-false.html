@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Comparing two Boolean objects is false</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Comparing two Boolean objects is false</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let a = new Boolean(false);
+      let b = new Boolean(false);
+      document.getElementById("demo").innerText = "a == b -> " + String(a == b) + "\n" + "a === b -> " + String(a === b);
+    </script>
+  </body>
+</html>

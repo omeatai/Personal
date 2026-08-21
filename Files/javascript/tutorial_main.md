@@ -30,11 +30,11 @@ Each title is one course page. Completed sections have a **View** link.
 
 - [x] JS Conditional [View](./courses/js_conditional.md)
 - [x] JS If Conditions [View](./courses/js_if_conditions.md)
-- [ ] JS If Else
-- [ ] JS Ternary
-- [ ] JS Switch
-- [ ] JS Booleans
-- [ ] JS Logical
+- [x] JS If Else [View](./courses/js_if_else.md)
+- [x] JS Ternary [View](./courses/js_ternary.md)
+- [x] JS Switch [View](./courses/js_switch.md)
+- [x] JS Booleans [View](./courses/js_booleans.md)
+- [x] JS Logical [View](./courses/js_logical.md)
 
 ## Loops
 

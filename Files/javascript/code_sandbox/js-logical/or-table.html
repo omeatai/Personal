@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>|| OR — (x === 5 || y === 5) is false</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>|| OR — (x === 5 || y === 5) is false</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 6;
+      let y = 3;
+      let z = (x === 5 || y === 5);
+      document.getElementById("demo").innerText = "x === 5 -> " + String(x === 5) + "\n" + "y === 5 -> " + String(y === 5) + "\n" + "z -> " + String(z);
+    </script>
+  </body>
+</html>

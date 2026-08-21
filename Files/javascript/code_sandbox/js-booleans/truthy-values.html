@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Everything with a value is true</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Everything with a value is true</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let rows = [
+        ["100", Boolean(100)],
+        ["3.14", Boolean(3.14)],
+        ["-15", Boolean(-15)],
+        ["true", Boolean(true)],
+        ['"Hello"', Boolean("Hello")],
+        ['"false"', Boolean("false")],
+        ["7+1+3.14", Boolean(7 + 1 + 3.14)],
+        ["[]", Boolean([])],
+        ["{}", Boolean({})]
+      ];
+      document.getElementById("demo").innerText = "100 -> " + String(Boolean(100)) + "\n" + "3.14 -> " + String(Boolean(3.14)) + "\n" + "-15 -> " + String(Boolean(-15)) + "\n" + "true -> " + String(Boolean(true)) + "\n" + "Hello -> " + String(Boolean("Hello")) + "\n" + "\"false\" -> " + String(Boolean("false")) + "\n" + "7+1+3.14 -> " + String(Boolean(7 + 1 + 3.14)) + "\n" + "[] -> " + String(Boolean([])) + "\n" + "{} -> " + String(Boolean({}));
+    </script>
+  </body>
+</html>

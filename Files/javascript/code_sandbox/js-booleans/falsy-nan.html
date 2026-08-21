@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Boolean(NaN) is false</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Boolean(NaN) is false</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = 10 / "Hallo";
+      let result = Boolean(x);
+      document.getElementById("demo").innerText = "x -> " + String(x) + "\n" + "Number.isNaN(x) -> " + String(Number.isNaN(x)) + "\n" + "Boolean(x) -> " + String(Boolean(x));
+    </script>
+  </body>
+</html>

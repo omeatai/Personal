@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>typeof primitive boolean vs new Boolean()</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>typeof primitive boolean vs new Boolean()</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let x = false;
+      let y = new Boolean(false);
+      document.getElementById("demo").innerText = "typeof x -> " + String(typeof x) + "\n" + "typeof y -> " + String(typeof y);
+    </script>
+  </body>
+</html>

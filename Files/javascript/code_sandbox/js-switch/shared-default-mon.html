@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Shared cases — Monday 1 uses default</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Shared cases — Monday 1 uses default</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let dayNum = 1;
+      let text;
+      switch (dayNum) {
+        case 4:
+        case 5:
+          text = "Soon it is Weekend";
+          break;
+        case 0:
+        case 6:
+          text = "It is Weekend";
+          break;
+        default:
+          text = "Looking forward to the Weekend";
+      }
+      document.getElementById("demo").innerText = "dayNum -> " + String(dayNum) + "\n" + "text -> " + String(text);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>Random link — Math.random() 0.2 visits W3Schools</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Random link — Math.random() 0.2 visits W3Schools</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let n = 0.2; // pinned stand-in for Math.random()
+      let text;
+      if (n < 0.5) {
+        text = '<a href="https://www.w3schools.com">Visit W3Schools</a>';
+      } else {
+        text = '<a href="https://www.wwf.org">Visit WWF</a>';
+      }
+      document.getElementById("demo").innerText = "n -> " + String(n) + "\n" + "n < 0.5 -> " + String(n < 0.5) + "\n" + "text -> " + String(text);
+    </script>
+  </body>
+</html>

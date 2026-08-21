@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>else if — time 21 is Good evening</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>else if — time 21 is Good evening</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let time = 21;
+      let greeting;
+      if (time < 10) {
+        greeting = "Good morning";
+      } else if (time < 20) {
+        greeting = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+      document.getElementById("demo").innerText = "time -> " + String(time) + "\n" + "greeting -> " + String(greeting);
+    </script>
+  </body>
+</html>

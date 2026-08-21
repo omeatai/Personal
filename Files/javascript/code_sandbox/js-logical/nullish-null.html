@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light" />
+    <title>?? — null ?? &quot;missing&quot; is missing</title>
+    <link rel="stylesheet" href="../sandbox.css" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>?? — null ?? &quot;missing&quot; is missing</h2>
+    
+    <pre id="demo"></pre>
+    
+    <script>
+      let name = null;
+      let text = "missing";
+      let result = name ?? text;
+      document.getElementById("demo").innerText = "name -> " + String(name) + "\n" + "result -> " + String(result);
+    </script>
+  </body>
+</html>

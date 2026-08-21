@@ -84,7 +84,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 ## Resume pointer
 
 - **Next task:** `21.1` JS Alphabetic (new).
-- **Last completed:** `29.6` API Web Worker.
+- **Last completed:** `3.7` JS Logical.
 - **Notes:** Course text lives in `courses/<filename>.md` (one file per page). The ordered title list
   and View links are in `tutorial_main.md`. Unfinished pages stay as `- [ ] Title` with no View link.
   Rule + this plan require **JS Output grain** (one `### Example` per Tryit / table row /
@@ -100,7 +100,7 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 - [ ] **S0** Getting Started (3 + Home)
 - [ ] **S1** Syntax & Variables (7)
 - [ ] **S2** Operators (4)
-- [ ] **S3** Conditionals (7)
+- [x] **S3** Conditionals (7)
 - [ ] **S4** Loops (6)
 - [ ] **S5** Strings (5)
 - [x] **S6** Numbers (6)
@@ -173,11 +173,11 @@ Reference pages, operator lists, and overview pages that name `if` / `else` / `s
 
 - [x] `3.1` JS Conditional — `js_conditionals.asp` (exists — improve)
 - [x] `3.2` JS If Conditions — `js_if.asp` (exists — improve)
-- [ ] `3.3` JS If Else — `js_if_else.asp` (new)
-- [ ] `3.4` JS Ternary — `js_if_ternary.asp` (new)
-- [ ] `3.5` JS Switch — `js_switch.asp` (new)
-- [ ] `3.6` JS Booleans — `js_booleans.asp` (new)
-- [ ] `3.7` JS Logical — `js_logical.asp` (new)
+- [x] `3.3` JS If Else — `js_if_else.asp` (new)
+- [x] `3.4` JS Ternary — `js_if_ternary.asp` (new)
+- [x] `3.5` JS Switch — `js_switch.asp` (new)
+- [x] `3.6` JS Booleans — `js_booleans.asp` (new)
+- [x] `3.7` JS Logical — `js_logical.asp` (new)
 
 ### S4 — Loops
 
