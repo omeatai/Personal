@@ -1,0 +1,234 @@
+---
+description: Read named tutorial section(s) from the W3Schools Node.js site, run every example in code_sandbox, snap code and results, and write one course file per section under Files/node/courses plus a View link on tutorial_main.md
+alwaysApply: false
+---
+
+# Node.js Tutorial Section Rule
+
+When the user says **"apply to \<Section\>"** (or similar, e.g. `@node_tutorial.mdc apply to Node Intro`), document that tutorial section from the **open browser tab** (or the site they name, default [W3Schools Node.js](https://www.w3schools.com/nodejs/default.asp)).
+
+They may also name a **range**: **"apply to \<Start\> to \<End\>"** (e.g. `apply to Node Intro to Node Cmd Line`). Process every left/sidebar item from Start through End **inclusive**, in nav order. One named section = one course file in `courses/`. A range = one course file per section in that span. Do **not** crawl the rest of the course, skip items in the range, or continue past End. If Start or End does not match a nav item, list nearby items and stop — do not guess. Finish each section (read → sandbox → run → snap → write course file → tick `tutorial_main.md`) before starting the next.
+
+**Names mean the parent group, never a single child.** The user refers to the **H2 sidebar group** when the name matches a group heading. **Core Modules** expands to **HTTP Module** through **Readline Module**. **Asynchronous**, **Module Basics**, **Database Integration**, and other H2 groups work the same way. When a name matches both a group and a page, **choose the group**.
+
+- `"apply to Core Modules"` means **every Core Modules child**, not only the first page.
+- `"apply to Node Async to Node Errors Handling"` starts at **Node Async** and continues through **Node Errors Handling**.
+- If **Start** is a group, begin at that group's first child. If **End** is a group, finish at that group's last child.
+- Still do **not** continue into the **next sibling group** (after Core Modules, do not start JS & TS Features).
+- Trailing meta after Hardware & IoT (Certificate, Compiler, Server, Quiz, Exercises, Practice, Syllabus, Study Plan) is **out of scope** unless the user names those pages.
+
+This output is a **detailed study tutorial**, not a thin recap. The reader must be able to learn the whole section from the course file alone — without ever opening W3Schools. That means **every idea explained in depth, every site example rebuilt and run, extra clarifying examples added where they help, and every result shown as a snap with a written description of what happened.** When in doubt, add more explanation and more examples, not less.
+
+Match the grain and layout of `Personal/Files/javascript/courses/js_introduction.md`. You can view the index in `Personal/Files/node/tutorial_main.md`.
+
+## Workflow Steps
+
+1. **Read** `Personal/bin/format.md` once for **accordion spacing and Q&A nesting only**. Ignore its Lab and Code children — they are removed in this rule. This rule’s heading order and Detailed Explanation layout win.
+2. **Open the section in the browser**
+   - Default site: [https://www.w3schools.com/nodejs/default.asp](https://www.w3schools.com/nodejs/default.asp).
+   - Use the existing Cursor browser tab if it is already on that tutorial.
+   - If not, navigate to the site, then click the named item in the left/sidebar (or in-page heading). Example: **Node Intro**.
+   - If the name does not match, list nearby nav items and stop — do not guess a different section.
+   - Scroll the **full** section. Read every heading, note, example, exercise, table, and warning. Capture the **section URL**.
+3. **Rebuild examples in the sandbox**
+   - Create `Personal/Files/node/code_sandbox/<slug>/` (`Node Intro` → `node-intro`).
+   - Write runnable **`.js`** files (`.mjs` only when the page is ESM). Prefer `index.js`. One file per Example.
+   - Recreate **every** Tryit / runnable example **and every reference-table row** on the page. Do not invent unrelated features, and do not drop examples or table rows to save space. You **may** add small extra variations when they make a concept clearer — label them as your own example.
+   - HTTP / HTTPS examples need a small server file. Pick a **free high port** (do not assume `8080` is free). Extra modules (`express`, `mongodb`, …) only when that section installs them — put a local `package.json` in that slug folder.
+   - If the section has **no** runnable example, skip the run/snap steps and say so in Detailed Explanation.
+4. **Run the example**
+   - **CLI Tryits:** from the slug folder run `node <file>.js`. Treat stdout as the result.
+   - **HTTP Tryits:** start the server, then open `http://127.0.0.1:<port>/` in the Cursor browser. Confirm the response body matches the tutorial.
+   - If the example **errors** or will not run, research a fix — prefer **official docs** ([Node.js docs](https://nodejs.org/docs/latest/api/)). Tutorial sites often keep older snippets (`require` vs ESM, deprecated APIs). Use the current correct API in the sandbox, and note the mismatch in Detailed Explanation (what the page showed vs what works now). Do not invent unrelated features.
+   - Stop HTTP servers when snaps are done.
+5. **Snap source and result**
+   - **Result:** screenshot the **terminal stdout** for CLI examples, or the **browser response** for HTTP examples. That is the outcome the reader must see.
+   - **Code:** snap the sandbox source. Prefer **CodeSnap** (`CodeSnap 📸` / `codesnap.start`) on the editor selection. If the agent cannot fire CodeSnap, screenshot the example as shown (tutorial editor or sandbox source) and still save a PNG.
+   - Save PNGs under `Personal/Files/node/code_sandbox/snaps/`. Use **per-example numbering** so each example has its own pair:
+     - `<slug>-01-code.png`, `<slug>-02-code.png`, …
+     - `<slug>-01-result.png`, `<slug>-02-result.png`, …
+     - A single-example section may use `<slug>-code.png` / `<slug>-result.png`.
+   - Embed **relative** images from the course file: `../code_sandbox/snaps/<file>.png`
+6. **Write** one course file per section to `Personal/Files/node/courses/<filename>.md`. **Never overwrite** an existing course file; if one with the same title already exists, ask before replacing it.
+   - Filename = section title lowercased, punctuation dropped, spaces/`/`/`&` → underscores (`Node Intro` → `node_intro.md`, `File System (fs)` → `file_system_fs.md`, `Node package.json` → `node_package_json.md`).
+   - File starts with `# <Section Title>`, then `[Back to Node.js Tutorial](../tutorial_main.md)`, then the study body from **Introduction** onward. **No outer** `<details>` wrapper around the whole section. Terminal Commands and Questions and Answers stay as **closed child accordions**.
+7. **Tick the index.** In `Personal/Files/node/tutorial_main.md`, change the matching line from `- [ ] Title` to `- [x] Title [View](./courses/<filename>.md)`. If the title is missing, add it in nav order under the right `##` group. Do not remove other titles.
+
+## Format Requirements
+
+Child-accordion **spacing** matches `Personal/.cursor/rules/notes_doc.mdc` and `Personal/bin/format.md`. Heading **order and children** follow this rule:
+
+- Course file `#` heading = the section title the user named (e.g. `Node Intro`).
+- After the `#` heading, a back-link: `[Back to Node.js Tutorial](../tutorial_main.md)`.
+- **Accordion spacing** (Terminal Commands / Q&A / Answer only): one blank line after every `</summary>` and one blank line before every `</details>`.
+- **Introduction**, **Detailed Explanation**, **Summary**, **References** = plain `##` headings (not child accordions).
+- **Introduction must list every Example title.** After the short prose (what the section is), list **all** `### **Example N: Title**` headings in order — if the section has 34 examples, list all 34. Do not summarize, skip, or group them. Each line ends with a **`[View](#…)`** link that scrolls to that example. Use this shape (no code in the Introduction):
+
+```markdown
+This section has **N** examples:
+
+- [x] **Example 1:** Title of example 1 [View](#node-intro-example-01)
+- [x] **Example 2:** Title of example 2 [View](#node-intro-example-02)
+- [x] **Example N:** Title of example N [View](#node-intro-example-NN)
+```
+
+The titles must match the Detailed Explanation headings exactly. The **View** target is `#<slug>-example-NN` (slug from the section title: `Node Intro` → `node-intro`; NN is two digits). Place `<a id="<slug>-example-NN"></a>` immediately before the matching `### **Example N:**` heading so the link scrolls there. This list is a table of contents so the reader can see the whole section at a glance.
+
+- After Detailed Explanation, only these **closed child accordions**, in this order:
+  1. **Terminal Commands**
+  2. **Questions and Answers**
+- **No `Lab` section.** **No separate `Code` section.** All prose, fenced code, code snaps, and result snaps live **inside Detailed Explanation**, next to the idea they demonstrate.
+- Q&A: **8–15** questions that cover the actual examples (APIs, stdout, HTTP status, pitfalls), not just definitions; each answer is nested `<details><summary>Answer</summary>` with **only** `- [x]` lines.
+- First References link = the **section URL** from the browser. Then other links from that page (and nodejs.org when you used them).
+- If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
+
+### Detailed Explanation (the merged study body)
+
+This is the heart of the tutorial and absorbs what used to be the separate **Code** section. Write it as a **guided, example-driven walkthrough**. Start with a short `- [x]` concept list, then walk **every** example from the page in order (plus any extra variations you add). **For each example, always include all five parts, in this order:**
+
+1. **Heading** — `<a id="<slug>-example-NN"></a>` then `### **Example N: Title**` (title from the page, or a clear label). The `id` is what Introduction `[View](#<slug>-example-NN)` scrolls to.
+2. **Explanation** — `- [x]` lines describing **what it does, why it works, and what to notice** (callbacks vs promises, `require` vs `import`, ports, errors, "do not" advice). Be generous: multiple bullets and nested sub-points, not one sentence. Explain any table, note, or warning here in the same style.
+3. **Tested code** — a fenced block (`javascript`) with the **actual sandbox source that ran** (never an untested paste from the site). Mention the sandbox path, e.g. `Sandbox: code_sandbox/<slug>/index.js`.
+4. **Code snap** — `<img ... src="../code_sandbox/snaps/<slug>-NN-code.png" />` right after the fence.
+5. **Result snap + written outcome** — `<img ... src="../code_sandbox/snaps/<slug>-NN-result.png" />`, immediately followed by at least one `- [x]` line that **describes the outcome in words** ("stdout prints `Hello World!`", "the browser shows **Hello World!**"). The image must never be the only explanation of the result.
+
+Cover **all** examples this way — do not summarize several into one. If official docs required newer APIs than the page, keep **both**: the page’s idea and the working current form, and say how they differ. Prefer thoroughness: more examples and richer explanation is the goal.
+
+### Grain: one named thing = one `### Example` (HTTP Module is the model)
+
+**HTTP Module** is the required grain: the page names several methods / response steps, and **each** gets its own heading with its own sandbox file, snaps, and outcome. Same idea as **JS Output** in the JavaScript tutorial.
+
+**Never** list many methods / events / options in a bullet and then show **one** representative snippet. Listing names is not teaching them.
+
+Walk the page in order and emit a **separate** `### **Example N: Title**` (all five parts) for **each** of:
+
+1. **Every Tryit / runnable example** on the page — including several Tryits of the *same* API with different arguments (`fs.readFile` vs `fs.readFileSync` are **two** Examples).
+2. **Every row of a reference table** (built-in modules, EventEmitter methods, `fs` methods, crypto classes). One row = one Example. Use the table’s Name as the heading (`Example 1: createServer()`, `Example 2: writeHead()`, …).
+3. **Every named construct** the page is teaching (`require`, `import`, `createServer`, each core-module method, …) even if the page only shows syntax — still build a small runnable demo.
+4. **Every heading/section** that introduces a distinct idea (notes, warnings, “do not use”, exercises). Deprecated APIs still get an Example that **runs** them and says not to use them; do not skip the row.
+
+**Reference / method-table pages (highest risk).** If the page is a catalog, you are not done until **every table row** has its own Example. You may **not**:
+
+- Collapse the table into “useful names” / “see the site for the full list”
+- Ship one sandbox that prints many results under a single Example heading
+- Pick a “typical” method (`createServer`, `readFile`) as a stand-in for the rest
+- Group unrelated methods into one fence unless they are a **single** Tryit on the page
+
+**Sandbox layout:** one `.js` file per Example (like `http-module/create-server.js`, `file-system-fs/readfile.js`), plus `index.js` when a hub helps. Number snaps `<slug>-NN-code.png` / `<slug>-NN-result.png` in the **same order** as the Example headings. A single combined dump file is not a substitute.
+
+**Q&A** must ask about **several different Examples** (APIs and outputs), not five generic definitions while 30 methods went undemoed. Still 8–15 questions; spread them across the page.
+
+````markdown
+# Node Intro
+
+[Back to Node.js Tutorial](../tutorial_main.md)
+
+## Introduction
+
+What this section is, why it matters, and what you will be able to do after reading it. A few sentences; no code yet.
+
+This section has **2** examples:
+
+- [x] **Example 1:** Hello World CLI [View](#node-intro-example-01)
+- [x] **Example 2:** Next Tryit from the page [View](#node-intro-example-02)
+
+## Detailed Explanation
+
+- [x] **Core idea from the page**
+  - What it means in practice.
+  - How it connects to the examples below.
+
+<a id="node-intro-example-01"></a>
+### **Example 1: Hello World CLI**
+
+- [x] **`console.log`** writes to stdout. Node runs the file outside the browser with `node <file>.js`.
+- [x] Quotes may be single or double; both are valid string literals.
+
+Sandbox: `code_sandbox/node-intro/index.js`
+
+```javascript
+console.log("Hello World!");
+```
+
+<img alt="node-intro example 1 source" src="../code_sandbox/snaps/node-intro-01-code.png" />
+
+<img alt="node-intro example 1 result" src="../code_sandbox/snaps/node-intro-01-result.png" />
+
+- [x] **Outcome:** stdout prints **Hello World!**
+
+<a id="node-intro-example-02"></a>
+### **Example 2: Next Tryit from the page**
+
+- [x] Explain this example in full (APIs, statements, result, pitfalls).
+- [x] Show tested code, then code snap, then result snap, then a `- [x]` outcome line.
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# from Personal/Files/node/code_sandbox/node-intro
+node index.js
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How do you run a Node.js file?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Save the program as a **`.js`** file.
+- [x] Run **`node <file>.js`** in the terminal.
+
+</details>
+
+</details>
+
+## Summary
+
+Restate every major idea and the outcomes of the examples in a short paragraph the reader can review.
+
+## References
+
+- [Node Intro (W3Schools)](https://www.w3schools.com/nodejs/nodejs_intro.asp)
+- [Node.js docs](https://nodejs.org/docs/latest/api/)
+````
+
+## Content Guidelines
+
+- Document **this section only** (even inside a range). Do not mix in the next/previous chapter.
+- Preserve the site’s explanations, examples, exercises, tables, and warnings. Rewrite for study; do not paste ads, nav chrome, or cookie banners.
+- **Be thorough.** Every Tryit, every reference-table row, and every named construct gets its own `### Example` block with explanation, tested code, code snap, result snap, and a written outcome. Add extra examples when they clarify a concept. A bullet list of method names is **not** coverage.
+- **Self-check before filing:** count Tryits + table rows + named constructs on the page; count `### **Example` headings in the course file; count Introduction **Example N:** lines with a `[View](#<slug>-example-NN)` link. All three must agree. If the Introduction omits any title or View link, or an example heading is missing its `<a id="…">`, you are not done. Do not file the section.
+- Terminal Commands = only commands you actually used (`node`, `npm install`, server, open URL). If none, keep the child with a one-line placeholder.
+- Fenced code is the **tested** sandbox source. If you updated outdated snippets, fence what actually ran and say how it differs from the page.
+- If a snap file is missing, do not fake an `<img>` path. Finish the snaps first.
+
+## File Paths
+
+| Purpose               | Path                                                      |
+| --------------------- | --------------------------------------------------------- |
+| Format sample         | `Personal/bin/format.md`                                  |
+| Index                 | `Personal/Files/node/tutorial_main.md`                    |
+| Course file (write)   | `Personal/Files/node/courses/<filename>.md`               |
+| Sandbox (per section) | `Personal/Files/node/code_sandbox/<slug>/`                |
+| Snaps                 | `Personal/Files/node/code_sandbox/snaps/`                 |
+| This rule             | `Personal/Files/node/.cursor/rules/node_tutorial.mdc`     |
+| Tutorial site         | https://www.w3schools.com/nodejs/default.asp              |
+
+## Invocation
+
+```text
+@Personal/Files/node/.cursor/rules/node_tutorial.mdc apply to Node Intro
+@Personal/Files/node/.cursor/rules/node_tutorial.mdc apply to Node Intro to Node Cmd Line
+@Personal/Files/node/.cursor/rules/node_tutorial.mdc apply to Core Modules
+```
+
+The last form includes **HTTP Module** through **Readline Module**. Named labels always mean the **parent** sidebar group when one exists, not only the first child page.
