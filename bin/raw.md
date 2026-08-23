@@ -1,279 +1,195 @@
-## Access Evaluation Tools
+## IAM Best Practices
 
-In this lesson, we're going to look
+Hi guys.
 
-at a couple of tools you could use for evaluating
+In this quick lesson, we're going to go through some of the IAM best practices.
 
-the access that users have in the account.
+There will be a link attached to this lesson
 
-I'm in the IAM Management console here,
+and I recommend that you also go through the
 
-and the first place I'm gonna look is Access Analyzer.
+article on the AWS website to understand each of
 
-So Access Analyzer needs to be enabled for your account.
+these best practices in a bit more detail,
 
-If it's the first time you're here,
+but I'm going to run through them fairly quickly now.
 
-you'll find a little button.
+Ok
 
-It's just a single click
+The first one is to require human users to use federation
 
-and it will enable it for your account.
+with an identity provider to access AWS using temporary credentials.
 
-And then very quickly,
+So here, AWS have started pushing us towards using the AWS
 
-it's going to perform this access evaluation.
+IAM Identity center
 
-Now what it's found here is some findings
+or some form of Federation
 
-relating to S3 buckets and IAM roles.
+into AWS rather than using IAM user accounts.
 
-So for example, we can see here that a bucket policy
+Now, many, many companies are already using IAM users groups and roles.
 
-is allowing access levels of read.
+So they're not going to move away from that for some time.
 
-And this one is allowing write, read, and list.
+But this really applies to those who are new to AWS
 
-If you click on the finding ID,
+that you should start setting up
 
-then it's giving you a little bit of a warning here
+this identity provider federation configuration.
 
-that this finding is for a resource
+So that then each of your users is
 
-that is allowing public access.
+actually gaining temporary credentials which reduces any exposure
 
-So of course that could be an issue, not necessarily,
+If for example, a user account with a user name and password is compromised,
 
-but if it is, then you can use this finding
+it can also minimize the chance of that
 
-to actually resolve the issue.
+Happening in the first place.
 
-And here it's telling me the actual access level.
+Next is to require workloads to use temporary
 
-So the API Action S3 get Object is being allowed.
+credentials with IAM roles to access AWS.
 
-For the IAM role here,
+So again, this is about not storing things like access keys in applications.
 
-we can see this is in relation to the Cognito service.
+Instead, we want to
 
-So there's the access level of write,
+configure our applications to use roles so that they
 
-and that's for the Assume role with web identity.
+gain temporary credentials through the security token service.
 
-So again, it's just something you might wanna look into.
+Instead require multi factual authentication.
 
-So this is analyzing access and providing these findings,
+This is for all accounts, root accounts, privileged accounts.
 
-which might warn you about potentially
+Absolutely,
 
-something that's too open,
+everybody rotate access keys regularly For use
 
-that's allowing more access than you might want it to.
+cases that do require long term credentials.
 
-There's archive rules here about how you archive.
+AWS would prefer you don't use access keys but they are still quite useful.
 
-You can see the analyzers here as well,
+Lots of people do use them.
 
-you can create new analyzers
+So if you do use them, just rotate them over time quite regularly Obviously,
 
-and in the settings here,
+you don't want to exist for too long just in case they get compromised,
 
-you can see the Access Analyzer Administrator
+safeguard your root user credentials and don't use them for everyday tasks.
 
-and you can optionally add
+Typically companies will set a very complex password on the root user account,
 
-a delegated administrator as well.
+configure multifactor authentication
 
-Another tool we have here is the credential report.
+and lock that password away. They won't use that account for any purposes at all.
 
-So this is more about credentials obviously.
+All administrators should have their own accounts
 
-You can download this report
+apply at least privilege pretty straightforward
 
-and it's gonna look something like this.
+This one just means only give users the permissions
 
-So lemme just expand some of these rows or columns.
+that they need that applies to applications as well.
 
-And so what you can see
+So only ever provide the permissions that are
 
-is you can see that there's three users in this account,
+required for any user account to do their job
 
-plus the root account.
+or any application to perform whatever operations they need to perform in
 
-You can see when the user was created,
+AWS. Get started with
 
-whether there's a password for console access,
+AWS manage policies and move toward least privileged permissions.
 
-when the password was last used, last changed,
+AWS managed policies are great for anyone who is new to
 
-if it's gonna be rotated,
+AWS because they're pre configured for you for certain use cases and job roles,
 
-whether MFA has been enabled as well.
+but they might not provide least privileged permissions.
 
-So quite a bit of information here
+You might find that they provide a bit too much or maybe not enough in some cases.
 
-that you can use to understand
+So you want to kind of move away towards your
 
-how users are set up from a security perspective.
+own policies that lock down exactly what you need.
 
-The next tool I'm going to show you is IAM Policy Simulator.
+But do that once you gain experience and you know how to write the policies properly,
 
-In a Policy Simulator, you can see the users in the account.
+use the IAM access analyzer to generate
 
-Now if I choose a user like Jack
+least privileged policies based on access activity.
 
-and then select a service, let's say EC2
+So you can use this tool to look at the activity of
 
-and maybe I wanna select all actions
+users and then work out which API actions are they making,
 
-and then run a simulation.
+you know what they need in terms of the permissions.
 
-And it's gonna check what access this user has.
+And then you can adjust the permissions that
 
-Now in this case, the user we can see has a policy
+they have based on that information regularly
 
-called Administrator Access applied.
+review and remove unused users roles, permissions, policies and credentials.
 
-So obviously it's coming back and saying aloud.
+So really just about cleaning up. So you have less
 
-We can clear those results.
+exposure if you like for any sort of old user
 
-And then let's go back
+accounts or roles or permissions or credentials like access keys,
 
-and let's just choose this other user, Chris.
+use conditions in IAM policies to further restrict access.
 
-So Chris has a policy applied called bucket access.
+For example, we can configure a condition in a policy
 
-So let's have a look at S3.
+that means that somebody has to come from a specific
 
-So I'm gonna choose S3,
+IP address or range of IP addresses like the company
 
-but now I'm gonna check specific permissions.
+IP address range,
 
-So I'm interested in whether this user can create a bucket.
+they will only get access to the resources if they're coming from that range.
 
-What about are they able to delete an object
+That's just one example of using a condition to further restrict access,
 
-or delete a bucket?
+verify public and cross account access to resources with IAM access
 
-Do they have the Get Object API Action?
+analyzer. Very much like the first bullet point on this page.
 
-What about list all my buckets?
+This is about using this tool to have a look at what permissions are being used,
 
-So these are some of the API actions
+make sure that only the right permissions are granted and also to
 
-that the user might have.
+validate your IAM policies to ensure secure and functional permissions.
 
-And so I want to check those specific API actions.
+Very much the same thing here, establish permissions,
 
-So now I can run the simulation
+guardrails across multiple accounts.
 
-and we can see that most of these permissions were denied.
+This is really referring to where have multiple
 
-Now there might be other permissions
+AWS accounts and we want to essentially manage them
 
-that I haven't selected,
+including having some security and governance across those accounts.
 
-but in this case, only list all my buckets has been allowed.
+For example, we can use
 
-So that's a useful tool to see
+AWS organizations and AWS
 
-what permissions users are being granted
+Control tower to implement those security measures and use
 
-based on the policies that they have.
+permissions boundaries to delegate permissions management within an account.
 
-The last tool I'm gonna show you is if we go to Roles,
+A permissions boundary essentially
 
-there's a great tool which can help us with working out
+gives you a maximum amount of permissions that can be used by any particular user.
 
-what permissions we need for a Role.
+So it's a way of again restricting permissions just in
 
-So let's choose a Role,
+case someone accidentally grants too many permissions through a policy.
 
-maybe I'm gonna choose this
+Well, actually the boundary will sort of kick in
 
-Elastic Beanstalk EC2 role here.
-
-Now this role has multiple policies applied.
-
-Now at the bottom here,
-
-we can see this generate policy option.
-
-And this generates policies based on Cloudtrail events.
-
-So if this role has been used recently
-
-and you have a trail,
-
-it's gonna be able to generate a policy
-
-based on the API actions that we used
-
-by this role as can be seen in the Cloudtrail trail.
-
-So what you do is click on generate policy,
-
-choose the timeframe.
-
-So maybe I wanna say,
-
-yeah, in the last 60 days, choose the trail.
-
-I've got a trail in this region,
-
-specify the regions, so maybe US-East.
-
-And then you can choose to use an existing service role
-
-and generate policy. And then when you do that,
-
-it takes several minutes to generate the policy.
-
-So I actually already did it.
-
-I'll show you one which has completed,
-
-let's just put in EC2,
-
-and I've got this role, which I used recently.
-
-So I did exactly what I just showed you.
-
-And it's generated a policy
-
-and we can now view the generated policy.
-
-In the results here,
-
-we can see an option to review the permissions,
-
-and these are the permissions which
-
-AWS thinks we need for this role.
-
-So I can see the specific actions
-
-for systems manager and EC2.
-
-I could then go and add in
-
-additional permissions if I want to,
-
-and then I can click on next.
-
-I can customize it through the JSON editor here as well.
-
-And also add additional policy items
-
-from the right hand side.
-
-And then you can generate the policy
-
-and then apply the policy to a role.
-
-So that's another useful tool
-
-that can help you to tighten up the permissions
-
-you need to assign in this case to roles.
+and ensure that they don't have more than they're ever supposed to have.
