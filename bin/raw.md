@@ -1,195 +1,279 @@
-## IAM Best Practices
+## IAM Exam Cram
 
-Hi guys.
+Hi guys,
 
-In this quick lesson, we're going to go through some of the IAM best practices.
+there's an exam cram lesson for most sections in this course,
 
-There will be a link attached to this lesson
+so I just wanna explain quickly what they are before we get started.
 
-and I recommend that you also go through the
+Exam crams are a quick run-through of important facts,
 
-article on the AWS website to understand each of
+and I will go quite quickly.
 
-these best practices in a bit more detail,
+You can always change the playback speed if I'm too fast for you.
 
-but I'm going to run through them fairly quickly now.
+You should use these after going through the section for revision and cramming.
 
-Ok
+Mainly,
 
-The first one is to require human users to use federation
+I'm going to be reminding you about things rather than explaining.
 
-with an identity provider to access AWS using temporary credentials.
+Now that being said,
 
-So here, AWS have started pushing us towards using the AWS
+there may be some facts that are covered here
 
-IAM Identity center
+that weren't covered in the lessons or vice versa.
 
-or some form of Federation
+Some topics are quite suitable for this bullet point format,
 
-into AWS rather than using IAM user accounts.
+and I prefer to keep it as visual as possible and
 
-Now, many, many companies are already using IAM users groups and roles.
+as engaging as possible throughout the main lessons in the course.
 
-So they're not going to move away from that for some time.
+Now,
 
-But this really applies to those who are new to AWS
+most lessons in this course are highly visual,
 
-that you should start setting up
+but exam crams are absolutely not,
 
-this identity provider federation configuration.
+they are deaf by bullet points.
 
-So that then each of your users is
+I deliberately make sure that I have everyone
 
-actually gaining temporary credentials which reduces any exposure
+covered no matter what your learning style is.
 
-If for example, a user account with a user name and password is compromised,
+Some people are more visual,
 
-it can also minimize the chance of that
+some people like to read,
 
-Happening in the first place.
+and some people hands-on
 
-Next is to require workloads to use temporary
+is the most important way to learn.
 
-credentials with IAM roles to access AWS.
+So whatever way you learn best,
 
-So again, this is about not storing things like access keys in applications.
+you're covered in this course,
 
-Instead, we want to
+and exam crams are an additional tool which is gonna be useful for most people.
 
-configure our applications to use roles so that they
+So let's get started with the exam cram for IAM.
 
-gain temporary credentials through the security token service.
+IAM is used to securely control individual and group access to AWS resources.
 
-Instead require multi factual authentication.
+It makes it easy to provide multiple users with access to AWS resources.
 
-This is for all accounts, root accounts, privileged accounts.
+And with IAM you can manage users,
 
-Absolutely,
+groups,
 
-everybody rotate access keys regularly For use
+access policies,
 
-cases that do require long term credentials.
+and roles,
 
-AWS would prefer you don't use access keys but they are still quite useful.
+and also user credentials.
 
-Lots of people do use them.
+User password policies can be configured
 
-So if you do use them, just rotate them over time quite regularly Obviously,
+in IAM as well.
 
-you don't want to exist for too long just in case they get compromised,
+We can also enable multi-factor authentication,
 
-safeguard your root user credentials and don't use them for everyday tasks.
+and that's definitely recommended.
 
-Typically companies will set a very complex password on the root user account,
+We can also generate API keys for programmatic access to IAM.
 
-configure multifactor authentication
+By default,
 
-and lock that password away. They won't use that account for any purposes at all.
+all new users are created with no access to any services,
 
-All administrators should have their own accounts
+they can only log in to AWS but they can't actually do anything.
 
-apply at least privilege pretty straightforward
+Permissions must then be explicitly granted
 
-This one just means only give users the permissions
+to allow a user to access an AWS service.
 
-that they need that applies to applications as well.
+IAM users are the individuals who've been granted access to an AWS account.
 
-So only ever provide the permissions that are
+Now,
 
-required for any user account to do their job
+IAM is a universal or global service,
 
-or any application to perform whatever operations they need to perform in
+so it doesn't apply to specific regions.
 
-AWS. Get started with
+IAM is eventually consistent.
 
-AWS manage policies and move toward least privileged permissions.
+What that means is if you make a change and then you immediately try to read
 
-AWS managed policies are great for anyone who is new to
+from IAM you might not see that change.
 
-AWS because they're pre configured for you for certain use cases and job roles,
+It might just take a bit longer.
 
-but they might not provide least privileged permissions.
+For authentication methods,
 
-You might find that they provide a bit too much or maybe not enough in some cases.
+we've got console passwords for logging into the management console,
 
-So you want to kind of move away towards your
+access keys for programmatic access,
 
-own policies that lock down exactly what you need.
+server certificates,
 
-But do that once you gain experience and you know how to write the policies properly,
+which can be used for some services as well.
 
-use the IAM access analyzer to generate
+IAM users are the entities that represent a person or a service.
 
-least privileged policies based on access activity.
+By default,
 
-So you can use this tool to look at the activity of
+they cannot access anything in the account.
 
-users and then work out which API actions are they making,
+The root user credentials are the email address used to create the account,
 
-you know what they need in terms of the permissions.
+and there's a password associated with that account.
 
-And then you can adjust the permissions that
+The root account has full administrative
 
-they have based on that information regularly
+permissions and they cannot be restricted.
 
-review and remove unused users roles, permissions, policies and credentials.
+IM users can be created to represent
 
-So really just about cleaning up. So you have less
+applications,
 
-exposure if you like for any sort of old user
+and those are known then as service accounts.
 
-accounts or roles or permissions or credentials like access keys,
+You can have up to 5000 users per AWS account.
 
-use conditions in IAM policies to further restrict access.
+IAM groups are collections of users
 
-For example, we can configure a condition in a policy
+and have policies attached to them.
 
-that means that somebody has to come from a specific
+A group's not an identity in itself,
 
-IP address or range of IP addresses like the company
+so it can't be identified as a principle in a policy.
 
-IP address range,
+So where you have a policy statement and you put in the
 
-they will only get access to the resources if they're coming from that range.
+ARN
 
-That's just one example of using a condition to further restrict access,
+of a principal like a user,
 
-verify public and cross account access to resources with IAM access
+you can't do that with a group.
 
-analyzer. Very much like the first bullet point on this page.
+You use groups to assign permissions to users,
 
-This is about using this tool to have a look at what permissions are being used,
+and you should always follow the principle
 
-make sure that only the right permissions are granted and also to
+of lease privilege when assigning permissions.
 
-validate your IAM policies to ensure secure and functional permissions.
+You can't nest groups,
 
-Very much the same thing here, establish permissions,
+so you can't create a group within a group.
 
-guardrails across multiple accounts.
+IEM roles are created
 
-This is really referring to where have multiple
+and then assumed by trusted entities,
 
-AWS accounts and we want to essentially manage them
+and they're a way of delegating permissions to resources for users
 
-including having some security and governance across those accounts.
+and services.
 
-For example, we can use
+Users and services can assume a role to obtain temporary security credentials,
 
-AWS organizations and AWS
+and those are issued by the Security token Service,
 
-Control tower to implement those security measures and use
+the STS service.
 
-permissions boundaries to delegate permissions management within an account.
+IEM policies are documents that define the permissions,
 
-A permissions boundary essentially
+and they can be applied to users,
 
-gives you a maximum amount of permissions that can be used by any particular user.
+groups and roles,
 
-So it's a way of again restricting permissions just in
+and include key value pairs that consist of an attribute and a value.
 
-case someone accidentally grants too many permissions through a policy.
+All permissions are implicitly denied by default.
 
-Well, actually the boundary will sort of kick in
+The most restrictive policy is applied if
 
-and ensure that they don't have more than they're ever supposed to have.
+there's multiple policies with conflicting statements.
+
+Now,
+
+what are the types of policy?
+
+We've got identity-based policies which you can attach
+
+to users,
+
+groups or roles.
+
+We've got resource-based policies.
+
+They get attached to resources like S3 buckets,
+
+and you can define permissions for principals
+
+accessing the resources using a resource policy.
+
+We then got permissions boundaries.
+
+These set the maximum permissions that an identity-based policy can grant
+
+to an IAM entity.
+
+Permissions boundaries aren't really covered at the associate level,
+
+but they are at the professional level.
+
+We then have Organisation's Service Control policies.
+
+These specify the maximum permissions for an organization
+
+or an OU.
+
+And lastly,
+
+we have session policies that are used with assumed role API actions.
+
+Now,
+
+onto the IAM best practices,
+
+lock away your account root user access keys,
+
+create individual users,
+
+use groups to assign permissions to users,
+
+grant lease privilege,
+
+get started using permissions with AWS managed policies,
+
+and use customer managed policies instead of inline policies.
+
+Use access levels to review IM permissions,
+
+always bearing in mind that lease privilege,
+
+and configure a strong password policy for your users.
+
+Enable multi-factor authentication.
+
+Use roles for applications that run on EC2 instances,
+
+and use roles to delegate permissions.
+
+Do not share access keys,
+
+always keep them to yourself and use them only for your account,
+
+and rotate all credentials regularly
+
+and remove any unnecessary credentials.
+
+You can use policy conditions for extra
+
+security when you're writing your IM policies.
+
+And lastly,
+
+monitor activity in your account to see what's actually happening.
+
+And that's it for this exam cram.
