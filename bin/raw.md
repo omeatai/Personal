@@ -1,279 +1,81 @@
-## IAM Exam Cram
+## IAM Architecture Patterns
 
-Hi guys,
+Hello and welcome to the first Architecture Patterns lesson of the course.
 
-there's an exam cram lesson for most sections in this course,
+What I'm trying to do with these lessons is take some of the knowledge that you've learned and put it
 
-so I just wanna explain quickly what they are before we get started.
+into the context of the type of scenarios you're going to see both in the exam and in the real world.
 
-Exam crams are a quick run-through of important facts,
+So, imagine you're a solutions architect and you're working for some customers and those customers are saying
 
-and I will go quite quickly.
+that you need to build a solution. And they're going to present some specific requirements to you, present
 
-You can always change the playback speed if I'm too fast for you.
+some challenges that they're trying to deal with, and you've got to come up with the best solution
 
-You should use these after going through the section for revision and cramming.
+for the job.
 
-Mainly,
+That's the kind of thing that does come up in exam questions.
 
-I'm going to be reminding you about things rather than explaining.
+So, I'm going to pose a few scenarios for you here and give you my idea of what the best solution would
 
-Now that being said,
+be.
 
-there may be some facts that are covered here
+The first requirement is that a select group of users only should be allowed to change their IAM password.
 
-that weren't covered in the lessons or vice versa.
+So we don't want to let everybody change their IAM passwords. But we do want some privileged users to
 
-Some topics are quite suitable for this bullet point format,
+be able to do so.
 
-and I prefer to keep it as visual as possible and
+In this case, you can create a group for the users and apply a permissions policy that grants the IAM
 
-as engaging as possible throughout the main lessons in the course.
+change password API permission.
 
-Now,
+Moving on to the next requirement, an Amazon EC2 instance must be delegated with permissions to an Amazon
 
-most lessons in this course are highly visual,
+DynamoDB table.
 
-but exam crams are absolutely not,
+Now, we haven't covered DynamoDB yet, but it's another AWS service.
 
-they are deaf by bullet points.
+So how do you delegate permissions?
 
-I deliberately make sure that I have everyone
+Well, you will create a role, assign a permissions policy to the role that grants access to the DynamoDB
 
-covered no matter what your learning style is.
+database service.
 
-Some people are more visual,
+A company has created their first AWS account.
 
-some people like to read,
+They need to assign permissions to users based on job function.
 
-and some people hands-on
+Now, there's a couple of things to note here.
 
-is the most important way to learn.
+Firstly, this company has created their first ever AWS account, so they may well not have very good
 
-So whatever way you learn best,
+skills with AWS.
 
-you're covered in this course,
+So what do the IAM best practices tell you
 
-and exam crams are an additional tool which is gonna be useful for most people.
+in this scenario? Well, they suggest that you use the AWS managed policies. And those can be aligned
 
-So let's get started with the exam cram for IAM.
+with specific common job functions.
 
-IAM is used to securely control individual and group access to AWS resources.
+A solutions architect needs to restrict access to an AWS service based on the source IP address of the
 
-It makes it easy to provide multiple users with access to AWS resources.
+requester.
 
-And with IAM you can manage users,
+Remember, we looked at some example policies.
 
-groups,
+You can create an IAM permissions policy and use the condition element to control access based on source
 
-access policies,
+IP address. A developer needs to make programmatic API calls from the AWS CLI.
 
-and roles,
+In this case, you can instruct the developer to create a set of access keys and use those for any programmatic
 
-and also user credentials.
+access.
 
-User password policies can be configured
+A group of users require full access to all Amazon EC2 API actions.
 
-in IAM as well.
+Well, in that case, you could create a permissions policy that uses a wildcard for the action element
 
-We can also enable multi-factor authentication,
+relating to EC2. And that would look like the (ec2:\*) action.
 
-and that's definitely recommended.
-
-We can also generate API keys for programmatic access to IAM.
-
-By default,
-
-all new users are created with no access to any services,
-
-they can only log in to AWS but they can't actually do anything.
-
-Permissions must then be explicitly granted
-
-to allow a user to access an AWS service.
-
-IAM users are the individuals who've been granted access to an AWS account.
-
-Now,
-
-IAM is a universal or global service,
-
-so it doesn't apply to specific regions.
-
-IAM is eventually consistent.
-
-What that means is if you make a change and then you immediately try to read
-
-from IAM you might not see that change.
-
-It might just take a bit longer.
-
-For authentication methods,
-
-we've got console passwords for logging into the management console,
-
-access keys for programmatic access,
-
-server certificates,
-
-which can be used for some services as well.
-
-IAM users are the entities that represent a person or a service.
-
-By default,
-
-they cannot access anything in the account.
-
-The root user credentials are the email address used to create the account,
-
-and there's a password associated with that account.
-
-The root account has full administrative
-
-permissions and they cannot be restricted.
-
-IM users can be created to represent
-
-applications,
-
-and those are known then as service accounts.
-
-You can have up to 5000 users per AWS account.
-
-IAM groups are collections of users
-
-and have policies attached to them.
-
-A group's not an identity in itself,
-
-so it can't be identified as a principle in a policy.
-
-So where you have a policy statement and you put in the
-
-ARN
-
-of a principal like a user,
-
-you can't do that with a group.
-
-You use groups to assign permissions to users,
-
-and you should always follow the principle
-
-of lease privilege when assigning permissions.
-
-You can't nest groups,
-
-so you can't create a group within a group.
-
-IEM roles are created
-
-and then assumed by trusted entities,
-
-and they're a way of delegating permissions to resources for users
-
-and services.
-
-Users and services can assume a role to obtain temporary security credentials,
-
-and those are issued by the Security token Service,
-
-the STS service.
-
-IEM policies are documents that define the permissions,
-
-and they can be applied to users,
-
-groups and roles,
-
-and include key value pairs that consist of an attribute and a value.
-
-All permissions are implicitly denied by default.
-
-The most restrictive policy is applied if
-
-there's multiple policies with conflicting statements.
-
-Now,
-
-what are the types of policy?
-
-We've got identity-based policies which you can attach
-
-to users,
-
-groups or roles.
-
-We've got resource-based policies.
-
-They get attached to resources like S3 buckets,
-
-and you can define permissions for principals
-
-accessing the resources using a resource policy.
-
-We then got permissions boundaries.
-
-These set the maximum permissions that an identity-based policy can grant
-
-to an IAM entity.
-
-Permissions boundaries aren't really covered at the associate level,
-
-but they are at the professional level.
-
-We then have Organisation's Service Control policies.
-
-These specify the maximum permissions for an organization
-
-or an OU.
-
-And lastly,
-
-we have session policies that are used with assumed role API actions.
-
-Now,
-
-onto the IAM best practices,
-
-lock away your account root user access keys,
-
-create individual users,
-
-use groups to assign permissions to users,
-
-grant lease privilege,
-
-get started using permissions with AWS managed policies,
-
-and use customer managed policies instead of inline policies.
-
-Use access levels to review IM permissions,
-
-always bearing in mind that lease privilege,
-
-and configure a strong password policy for your users.
-
-Enable multi-factor authentication.
-
-Use roles for applications that run on EC2 instances,
-
-and use roles to delegate permissions.
-
-Do not share access keys,
-
-always keep them to yourself and use them only for your account,
-
-and rotate all credentials regularly
-
-and remove any unnecessary credentials.
-
-You can use policy conditions for extra
-
-security when you're writing your IM policies.
-
-And lastly,
-
-monitor activity in your account to see what's actually happening.
-
-And that's it for this exam cram.
+And that's it for this architecture patterns lesson.
