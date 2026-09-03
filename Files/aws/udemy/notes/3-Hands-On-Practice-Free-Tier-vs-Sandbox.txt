@@ -1,0 +1,90 @@
+Lecture: Hands-On Practice: Free Tier vs Sandbox
+URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28667198#content
+============================================================
+
+(sound logo chimes)
+In this quick video,
+I just want to discuss a couple of options
+for getting hands-on practice.
+Now whatever technology you are learning,
+there's no substitute
+for getting hands-on practice actually using the technology.
+It really is the best way to learn.
+Now in this course,
+I recommend you open your own AWS Free Tier account,
+but there's another additional tool
+that might be useful called a Sandbox.
+So let's start off with Free Tier.
+With the Free Tier,
+you are gonna create your very own AWS Free Tier account,
+and I'm gonna show you how to do that.
+Now you get full control over this account.
+It's your account,
+and that means you can do anything you want
+with the account.
+Now this does mean that you are responsible for any bills.
+You'll need to add a credit card when you sign up
+for your Free Tier account,
+and you'll have to pay any bills that you run up.
+Now we will operate in the Free Tier in this course,
+and if we ever go outside of the Free Tier,
+I'm gonna warn you,
+but you always have to follow my instructions
+and make sure you shut down resources to avoid bills.
+And we're gonna set a billing alarm
+so you get a notification if you reach a certain threshold.
+I highly recommend
+that you do open your own Free Tier account
+so you can follow along with my instructions
+as we go through the course in the hands-on lessons.
+An additional resource is known
+as a Sandbox or a Challenge Lab.
+Now in this model,
+the AWS account is actually hosted by a provider.
+It's not your account.
+Now that does mean that you will have limited control.
+For more advanced courses,
+it means you won't be able to do things
+like cross-account access
+because you'll only have one account
+and you'll have limited control over it.
+On the plus side, it means you get no cloud bills,
+you don't take any risk or responsibility.
+You pay for the service upfront,
+and there's no risk of running up any additional bills.
+With Challenge Labs, you get scenario-based challenges,
+so it's a great way to test your skills
+and learn new skills as well based on a scenario
+that's been pre-configured for you,
+it's been designed for you and the lab has been set up
+to accommodate that particular challenge.
+I recommend Challenge Labs as an additional training tool.
+If you do want to gain access to Challenge Labs,
+then we actually have some on our website.
+Now this is completely optional.
+It's not required for this course,
+but it's an extra learning tool.
+It does require registration
+and you have to pay an additional fee.
+There's a video on this page
+to show what they look like in action.
+And in this particular example,
+there are over 700 labs
+across many different cloud platforms and technologies.
+Alternatively, if you're just learning AWS,
+you can access the AWS Challenge Labs,
+and you can see an example here of the console.
+For those who are taking the SysOps exam,
+this is what you'll see in your AWS exam lab.
+This is the same provider that AWS use
+for their new exam labs.
+So you'll get the AWS Management Console on the left
+and some instructions on the right,
+or in the case of the exam or the more advanced labs,
+you just get a scenario and a few hints
+as to what you need to do,
+and it also verifies and validates the work
+that you've done.
+So these are completely optional,
+but they're definitely a very useful tool
+for getting extra practice and validating your own skills.
