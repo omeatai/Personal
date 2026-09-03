@@ -1,0 +1,328 @@
+# 1. Welcome and How to Use this Course
+
+**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)  
+**Lecture:** [Welcome and How to Use this Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28616728#content)  
+**Transcript:** [`udemy/notes/1-Welcome-and-How-to-Use-this-Course.txt`](../notes/1-Welcome-and-How-to-Use-this-Course.txt)
+
+---
+
+## Introduction
+
+Congratulations on investing in yourself. This **AWS Certified Solutions Architect Associate (SAA-C03)** course and its associated resources are designed so you have the best chance of passing the exam, **no matter what your background**. Everyone can pass with the right resources and the right approach to study.
+
+This opening lesson is a **map of the course**, not a hands-on lab. It explains how to use the downloads, how theory and HOL lessons fit together, what you get at the end of each section (architecture patterns, exam crams, quizzes, cheat sheets), and why you should follow the course **in order**.
+
+If you are new to AWS, treat this lesson as your orientation chapter. You do not need to open the AWS console yet. Your only job is to understand the study path so later lessons feel like a textbook you can follow step by step.
+
+## Detailed Explanation
+
+### Step 1 — Understand the goal of the course
+
+- [x] **Mindset and exam goal**
+  - Congratulations on being here and investing in yourself.
+  - The course and associated resources are built to give you the **best chance to pass**.
+  - Background does not block you: **everyone can pass** with the right resources and study approach.
+
+**Figure 1.** Opening slide of lecture 1. Neal Davis (Digital Cloud Training) welcomes you and sets the purpose of the course: how to use the materials so you can pass SAA-C03.
+
+![Figure 1. Welcome slide from lecture 1](images/1-welcome-fig1.png)
+
+*Figure 1 description:* The instructor appears on the right with a studio microphone. On the left, the slide title is **Welcome! How to use this course**, with the AWS Certified Solutions Architect Associate badge. The caption is “Hello and welcome to this course.”
+
+### Step 2 — Download the course resources first
+
+- [x] **Course download lesson (last lesson in this section)**
+  - Open the **course download** lesson at the end of this section.
+  - It links to the instructor website where you download course resources.
+  - From that page you can get:
+    - **Code** needed for the hands-on lessons
+    - A **study guide** for how to approach study
+    - **Slides** from the course for offline review
+- [x] **Study guide is a guideline, not a rigid script**
+  - Follow it to the letter if you want a structured plan.
+  - Or **tailor it** to your own needs, depending on how much time you have each day.
+
+**Figure 2.** Same welcome frame later in the video, while the instructor explains the study guide and other downloads.
+
+![Figure 2. Course resources and study guide](images/1-welcome-fig2.png)
+
+*Figure 2 description:* This is the visual you will keep seeing while Neal explains the download page. Remember this slide as the “home” of the orientation lesson: everything in this video is about using resources well, not about clicking in AWS yet.
+
+### Step 3 — Learn the two lesson types
+
+- [x] **Two types of lessons**
+  - **Theory lessons:** kept as visual as possible, with lots of **animated diagrams** to explain concepts.
+  - **Hands-on lessons (HOL):** the lesson name starts with **HOL**.
+  - In HOL lessons you use the **AWS console** in your own **free tier** account and follow along to build practical skills.
+
+**How a novice should use this:** watch the theory lesson first so the words make sense, then open AWS and repeat the HOL steps. Do not skip theory just to “get into the console.”
+
+### Step 4 — Use the extras at the end of each section
+
+- [x] **End-of-section extras**
+  - **Architecture Patterns:** take what you just learned and apply it to **workplace** and **exam** scenarios.
+  - Those lessons focus on problems companies solve with the technologies you just studied.
+  - You see example **requirements** and the **best solutions** for them.
+  - **Exam crams:** a fast-paced list of **bullet-point key facts** for the exam.
+  - Use exam crams for **last-minute revision** after theory and hands-on, when you want the core facts only.
+  - **Quiz:** tests understanding of the section you just finished.
+  - Section quizzes are **not** meant to match official exam question style.
+  - Exam-style questions live in the separate **practice tests**.
+- [x] **Practice tests**
+  - Use the **full practice test course** as well as this video course.
+  - Practice tests build a **broad understanding** of question types and hone **problem-solving** toward the best solutions.
+
+### Step 5 — Adjust playback and use cheat sheets
+
+- [x] **Playback, subtitles, and cheat sheets**
+  - If the instructor is too fast or too slow, change **playback speed**.
+  - Enable or disable **subtitles** at any time if you want to read along.
+  - **Cheat sheets** are linked at the end of each section.
+  - They list **core knowledge** that often appears on the exam, so you can review without wading through hundreds of AWS documentation pages.
+
+### Step 6 — Follow the course in order
+
+- [x] **Follow the course in order**
+  - Concepts **build on earlier lessons**.
+  - Labs reuse things created in previous sections.
+  - Follow the course **in order** and **do not skip lessons**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. Hands-on work starts in later **HOL** lessons using your own AWS free tier account.
+
+### **Overview**
+
+- [ ] This lesson orients you to the course resources; there is no console walkthrough here.
+- [ ] You will:
+  - [ ] Locate the **course download** lesson (last lesson in this section).
+  - [ ] Download the **code**, **study guide**, and **slides**.
+  - [ ] Plan to follow theory, then **HOL** labs, in order.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this welcome lesson. Later HOL lessons use the AWS console and, where needed, the AWS CLI.
+
+```bash
+# No commands in this topic; the lesson is course orientation only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No code in this welcome lesson. Download the hands-on code from the course download page when you reach HOL lessons.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is the main purpose of this course and its associated resources?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To give you the **best chance of passing** the AWS Certified Solutions Architect Associate (SAA-C03) exam, regardless of background.
+
+</details>
+
+### Question 2: Where do you find the link to download course resources?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the **course download** lesson, which is the **last lesson in this section**.
+- [x] That lesson links to the instructor **website**, where you download the files.
+
+</details>
+
+### Question 3: What three resources can you download from the course website?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Code** for the hands-on lessons
+- [x] A **study guide** for how to approach study
+- [x] Course **slides** for offline review
+
+</details>
+
+### Question 4: How should you treat the study guide?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is a **guideline**, not a rigid script.
+- [x] Follow it to the letter if you like, or **tailor it** to how much time you have each day.
+
+</details>
+
+### Question 5: What are the two types of lessons in this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Theory** lessons, with visual animated diagrams
+- [x] **Hands-on** lessons, identified by **HOL** in the lesson name
+
+</details>
+
+### Question 6: How do you recognise a hands-on lesson, and what do you do in it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The lesson name starts with **HOL**.
+- [x] You use the **AWS console** in your own **free tier** account and follow along.
+
+</details>
+
+### Question 7: What are Architecture Patterns lessons for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They apply section knowledge to **workplace** and **exam** scenarios.
+- [x] They cover problems companies solve, example **requirements**, and the **best solutions**.
+
+</details>
+
+### Question 8: What is an exam cram, and when should you use it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **fast-paced** list of **bullet-point key facts** for the exam.
+- [x] Use it for **last-minute revision** after theory and hands-on practice.
+
+</details>
+
+### Question 9: Do section quizzes match the style of the real exam questions?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Quizzes test understanding of the section.
+- [x] Exam-style questions are in the separate **practice tests**.
+
+</details>
+
+### Question 10: Why does the instructor recommend the full practice test course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To build a **broad understanding** of the types of questions that come up.
+- [x] To hone **problem-solving** and choosing the **best solutions**.
+
+</details>
+
+### Question 11: What can you do if the video feels too fast or too slow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Change the **playback speed**.
+- [x] Enable or disable **subtitles** if you want to read along.
+
+</details>
+
+### Question 12: What are cheat sheets, and where do you find them?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Lists of **core knowledge** that often appears on the exams.
+- [x] Links are at the **end of each section**.
+- [x] They help you review quickly without reading hundreds of pages of AWS docs.
+
+</details>
+
+### Question 13: Should you skip lessons or jump around the course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Follow the course **in order**.
+- [x] Concepts **build on earlier lessons**, and labs reuse resources created in previous sections.
+
+</details>
+
+### Question 14: Can someone with little AWS background still pass this exam using this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** The instructor states **everyone can pass** with the right resources and the right approach to study.
+
+</details>
+
+### Question 15: What account should you use for HOL lessons?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Your own **AWS free tier** account, working in the **AWS console**.
+
+</details>
+
+### Question 16: What extra lessons typically appear at the end of each section?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Architecture Patterns**
+- [x] **Exam crams**
+- [x] A **quiz**
+- [x] **Cheat sheet** links
+
+</details>
+
+### Question 17: Why are architecture pattern lessons useful for the exam as well as the workplace?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They train you to map **requirements** to **solutions**, which is how both workplace design and SAA-C03 scenario questions work.
+
+</details>
+
+### Question 18: What should you download before you start later hands-on lessons?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **code** for the hands-on lessons, from the course download page linked in the last lesson of this section.
+
+</details>
+
+</details>
+
+## Summary
+
+This welcome lesson maps how to use the SAA-C03 course: download **code**, the **study guide**, and **slides**; study **theory** then **HOL** labs in a free tier account; and use end-of-section **architecture patterns**, **exam crams**, **quizzes**, and **cheat sheets**. Section quizzes are not exam-style—use the **practice test course** for that. Follow the course **in order** and do not skip lessons, because later labs build on earlier work.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Welcome and How to Use this Course (lecture 1)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28616728#content)
+- [Neal Davis | Digital Cloud Training (Udemy instructor)](https://www.udemy.com/user/63f4a578-c67a-456b-916c-ddadf73e9a26/)
+- Transcript: [`../notes/1-Welcome-and-How-to-Use-this-Course.txt`](../notes/1-Welcome-and-How-to-Use-this-Course.txt)

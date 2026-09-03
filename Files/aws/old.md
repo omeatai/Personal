@@ -1,0 +1,6920 @@
+# AWS Certified Solutions Architect Associate (SAA-C03) Course by Neal Davis
+
+## [COURSE](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+
+<details>
+  <summary>Welcome to the Course</summary>
+
+## Introduction
+
+Congratulations on investing in yourself. This **AWS Certified Solutions Architect Associate (SAA-C03)** course and its associated resources are designed so you have the best chance of passing the exam, **no matter what your background**. Everyone can pass with the right resources and the right approach to study.
+
+This opening lesson is a **map of the course**, not a hands-on lab. It explains how to use the downloads, how theory and HOL lessons fit together, what you get at the end of each section (architecture patterns, exam crams, quizzes, cheat sheets), and why you should follow the course **in order**.
+
+## Detailed Explanation
+
+- [x] **Mindset and exam goal**
+  - Congratulations on being here and investing in yourself.
+  - The course and associated resources are built to give you the **best chance to pass**.
+  - Background does not block you: **everyone can pass** with the right resources and study approach.
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/28d877bf-3c45-49c3-95ff-69cde0e35a75" />
+
+- [x] **Course download lesson (last lesson in this section)**
+  - Open the **course download** lesson at the end of this section.
+  - It links to the instructor website where you download course resources.
+  - From that page you can get:
+    - **Code** needed for the hands-on lessons
+    - A **study guide** for how to approach study
+    - **Slides** from the course for offline review
+- [x] **Study guide is a guideline, not a rigid script**
+  - Follow it to the letter if you want a structured plan.
+  - Or **tailor it** to your own needs, depending on how much time you have each day.
+- [x] **Two types of lessons**
+  - **Theory lessons:** kept as visual as possible, with lots of **animated diagrams** to explain concepts.
+  - **Hands-on lessons (HOL):** the lesson name starts with **HOL**.
+  - In HOL lessons you use the **AWS console** in your own **free tier** account and follow along to build practical skills.
+- [x] **End-of-section extras**
+  - **Architecture Patterns:** take what you just learned and apply it to **workplace** and **exam** scenarios.
+  - Those lessons focus on problems companies solve with the technologies you just studied.
+  - You see example **requirements** and the **best solutions** for them.
+  - **Exam crams:** a fast-paced list of **bullet-point key facts** for the exam.
+  - Use exam crams for **last-minute revision** after theory and hands-on, when you want the core facts only.
+  - **Quiz:** tests understanding of the section you just finished.
+  - Section quizzes are **not** meant to match official exam question style.
+  - Exam-style questions live in the separate **practice tests**.
+- [x] **Practice tests**
+  - Use the **full practice test course** as well as this video course.
+  - Practice tests build a **broad understanding** of question types and hone **problem-solving** toward the best solutions.
+- [x] **Playback, subtitles, and cheat sheets**
+  - If the instructor is too fast or too slow, change **playback speed**.
+  - Enable or disable **subtitles** at any time if you want to read along.
+  - **Cheat sheets** are linked at the end of each section.
+  - They list **core knowledge** that often appears on the exam, so you can review without wading through hundreds of AWS documentation pages.
+- [x] **Follow the course in order**
+  - Concepts **build on earlier lessons**.
+  - Labs reuse things created in previous sections.
+  - Follow the course **in order** and **do not skip lessons**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. Hands-on work starts in later **HOL** lessons using your own AWS free tier account.
+
+### **Overview**
+
+- [ ] This lesson orients you to the course resources; there is no console walkthrough here.
+- [ ] You will:
+  - [ ] Locate the **course download** lesson (last lesson in this section).
+  - [ ] Download the **code**, **study guide**, and **slides**.
+  - [ ] Plan to follow theory, then **HOL** labs, in order.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this welcome lesson. Later HOL lessons use the AWS console and, where needed, the AWS CLI.
+
+```bash
+# No commands in this topic; the lesson is course orientation only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No code in this welcome lesson. Download the hands-on code from the course download page when you reach HOL lessons.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is the main purpose of this course and its associated resources?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To give you the **best chance of passing** the AWS Certified Solutions Architect Associate (SAA-C03) exam, regardless of background.
+
+</details>
+
+### Question 2: Where do you find the link to download course resources?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the **course download** lesson, which is the **last lesson in this section**.
+- [x] That lesson links to the instructor **website**, where you download the files.
+
+</details>
+
+### Question 3: What three resources can you download from the course website?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Code** for the hands-on lessons
+- [x] A **study guide** for how to approach study
+- [x] Course **slides** for offline review
+
+</details>
+
+### Question 4: How should you treat the study guide?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is a **guideline**, not a rigid script.
+- [x] Follow it to the letter if you like, or **tailor it** to how much time you have each day.
+
+</details>
+
+### Question 5: What are the two types of lessons in this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Theory** lessons, with visual animated diagrams
+- [x] **Hands-on** lessons, identified by **HOL** in the lesson name
+
+</details>
+
+### Question 6: How do you recognise a hands-on lesson, and what do you do in it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The lesson name starts with **HOL**.
+- [x] You use the **AWS console** in your own **free tier** account and follow along.
+
+</details>
+
+### Question 7: What are Architecture Patterns lessons for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They apply section knowledge to **workplace** and **exam** scenarios.
+- [x] They cover problems companies solve, example **requirements**, and the **best solutions**.
+
+</details>
+
+### Question 8: What is an exam cram, and when should you use it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **fast-paced** list of **bullet-point key facts** for the exam.
+- [x] Use it for **last-minute revision** after theory and hands-on practice.
+
+</details>
+
+### Question 9: Do section quizzes match the style of the real exam questions?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Quizzes test understanding of the section.
+- [x] Exam-style questions are in the separate **practice tests**.
+
+</details>
+
+### Question 10: Why does the instructor recommend the full practice test course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To build a **broad understanding** of the types of questions that come up.
+- [x] To hone **problem-solving** and choosing the **best solutions**.
+
+</details>
+
+### Question 11: What can you do if the video feels too fast or too slow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Change the **playback speed**.
+- [x] Enable or disable **subtitles** if you want to read along.
+
+</details>
+
+### Question 12: What are cheat sheets, and where do you find them?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Lists of **core knowledge** that often appears on the exams.
+- [x] Links are at the **end of each section**.
+- [x] They help you review quickly without reading hundreds of pages of AWS docs.
+
+</details>
+
+### Question 13: Should you skip lessons or jump around the course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Follow the course **in order**.
+- [x] Concepts **build on earlier lessons**, and labs reuse resources created in previous sections.
+
+</details>
+
+### Question 14: Can someone with little AWS background still pass this exam using this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** The instructor states **everyone can pass** with the right resources and the right approach to study.
+
+</details>
+
+### Question 15: What account should you use for HOL lessons?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Your own **AWS free tier** account, working in the **AWS console**.
+
+</details>
+
+### Question 16: What extra lessons typically appear at the end of each section?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Architecture Patterns**
+- [x] **Exam crams**
+- [x] A **quiz**
+- [x] **Cheat sheet** links
+
+</details>
+
+### Question 17: Why are architecture pattern lessons useful for the exam as well as the workplace?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They train you to map **requirements** to **solutions**, which is how both workplace design and SAA-C03 scenario questions work.
+
+</details>
+
+### Question 18: What should you download before you start later hands-on lessons?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **code** for the hands-on lessons, from the course download page linked in the last lesson of this section.
+
+</details>
+
+</details>
+
+## Summary
+
+This welcome lesson maps how to use the SAA-C03 course: download **code**, the **study guide**, and **slides**; study **theory** then **HOL** labs in a free tier account; and use end-of-section **architecture patterns**, **exam crams**, **quizzes**, and **cheat sheets**. Section quizzes are not exam-style—use the **practice test course** for that. Follow the course **in order** and do not skip lessons, because later labs build on earlier work.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Neal Davis | Digital Cloud Training (Udemy instructor)](https://www.udemy.com/user/63f4a578-c67a-456b-916c-ddadf73e9a26/)
+
+</details>
+
+<details>
+  <summary>The SAA-C03 Exam</summary>
+
+## Introduction
+
+**SAA-C03** is the exam code for the **AWS Certified Solutions Architect Associate**. It sits at the **associate** level—between **foundational** and **professional**. The exam is **130 minutes**, **65 questions**, **$150**, scored **100–1000** with a pass mark of **720** (~72%). Questions are **scenario-based** multiple choice and multiple response only (no hands-on). Content is grouped into **four domains** that match architectural priorities: **security**, **resilience**, **performance**, and **cost**.
+
+## Detailed Explanation
+
+- [x] **What SAA-C03 is**
+  - Exam code for **AWS Certified Solutions Architect Associate**.
+  - **Associate** level: between **foundational** and **professional**.
+  - AWS expects some **AWS knowledge** and **industry experience**.
+  - This course still starts from the beginning if you lack that background.
+  - Prior understanding of **compute**, **storage**, **networking**, and **databases** makes study easier.
+- [x] **Length, question count, and style**
+  - **130 minutes** and **65 questions**.
+  - Associate questions are **scenario-based**; some scenarios are complex and answers are tricky.
+  - Often **two answers look very tempting**; one is still clearly wrong—you must work out which.
+  - You may spend a few minutes on a hard question; **watch the timer**.
+  - Do not get stuck: **mark for review** and come back; other questions will go faster.
+- [x] **Cost and discount**
+  - Exam cost is **$150**.
+  - If you already passed another AWS certification, use your **voucher** for a **50% discount**.\
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a015a686-d456-4bef-ac29-a5bfe2722120" />
+
+- [x] **Delivery method**
+  - **Testing center** or **online** (if you meet the basic requirements).
+  - Online: **quiet room**, no one else around, **no noise**, **clutter-free desk**.
+  - After signup they email details; complete a **technical check** for **network**, **camera**, and **microphone**.
+- [x] **Scoring**
+  - **Scaled score** from **100 to 1000**.
+  - AWS does not publish more scoring detail—it is a **black box**.
+  - Pass mark is **720 / 1000**, about **72%**.
+- [x] **Question format**
+  - **Multiple choice:** **4** options, **1** correct, **3** incorrect.
+  - **Multiple response:** **2 or more** correct answers from **5 or more** options.
+  - **No hands-on** component—purely multiple choice and multiple response.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/080e9254-8ee4-4bed-9dcd-e1919b07c530" />
+
+- [x] **Four domains (security, resilience, performance, cost)**
+  - Domain 1: **Design secure architectures**
+    - Design **secure access** to AWS resources (security controls on resources).
+    - Design **secure workloads and applications**.
+    - Determine appropriate **data security controls** (customer responsibility in AWS).
+  - Domain 2: **Design resilient architectures**
+    - Design **scalable** and **loosely coupled** architectures.
+    - Design **highly available** and/or **fault-tolerant** architectures.
+  - Domain 3: **Design high-performing architectures**
+    - Scalable, performant **storage** solutions.
+    - Performant **elastic compute** solutions (methods, controls, deployment options to meet requirements).
+    - Task **3.3:** high-performing **database** solutions (e.g. scalable storage, **caching**).
+    - Task **3.4:** high-performing and/or scalable **network** architectures.
+    - Task **3.5:** high-performing **data ingestion and transformation** solutions.
+  - Domain 4: **Design cost-optimized architectures**
+    - Cost-optimized **storage**.
+    - Cost-optimized **compute**.
+    - Cost-optimized **database**.
+    - Cost-optimized **network** architectures.
+- [x] **Exam guide and in-scope services**
+  - For more detail, including **in-scope AWS services**, use the official **AWS exam guide** (linked from this lesson).
+  - This course covers those services and is **updated** so you have what you need for the exam.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. This lesson is an exam overview, not a console walkthrough.
+
+### **Overview**
+
+- [ ] Review the **SAA-C03** exam logistics (time, questions, cost, scoring, format).
+- [ ] Memorize the **four domains** and their task themes.
+- [ ] Open the official **AWS exam guide** for in-scope services.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this exam-overview lesson.
+
+```bash
+# No commands in this topic; the lesson is exam logistics and domains only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No code in this exam-overview lesson.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does the exam code **SAA-C03** stand for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **AWS Certified Solutions Architect Associate**.
+
+</details>
+
+### Question 2: Where does the associate exam sit relative to other AWS certification levels?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is **associate** level.
+- [x] That is between **foundational** and **professional**.
+
+</details>
+
+### Question 3: How long is the exam, and how many questions are there?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **130 minutes**
+- [x] **65 questions**
+
+</details>
+
+### Question 4: What style of questions should you expect at associate level?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Scenario-based** questions.
+- [x] Scenarios can be complex and answers can be tricky.
+- [x] Often **two options look tempting**; one is still wrong.
+
+</details>
+
+### Question 5: What should you do if you are stuck on a question?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Do **not** spend too long on it.
+- [x] **Mark it for review** and come back later.
+- [x] Watch the **timer** so you have enough time for the rest of the exam.
+
+</details>
+
+### Question 6: How much does the exam cost, and when can you get 50% off?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Cost is **$150**.
+- [x] If you already **passed** another AWS certification, use your **voucher** for a **50% discount**.
+
+</details>
+
+### Question 7: How can you take the exam, and what does online delivery require?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Testing center** or **online**.
+- [x] Online needs a **quiet room**, no one else around, **no noise**, and a **clutter-free desk**.
+- [x] Complete a **technical check** for **network**, **camera**, and **microphone**.
+
+</details>
+
+### Question 8: How is the exam scored, and what is the pass mark?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Scaled scoring** from **100 to 1000**.
+- [x] Scoring detail is a **black box**; AWS does not publish more than that.
+- [x] You need **720 / 1000** (~**72%**) to pass.
+
+</details>
+
+### Question 9: What is the difference between multiple choice and multiple response on this exam?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Multiple choice:** **4** answers, **1** correct, **3** incorrect.
+- [x] **Multiple response:** **2 or more** correct answers from **5 or more** options.
+
+</details>
+
+### Question 10: Is there a hands-on lab component on the SAA-C03 exam?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** It is purely **multiple choice** and **multiple response**.
+
+</details>
+
+### Question 11: What four architectural themes do the exam domains reflect?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Security**
+- [x] **Resilience**
+- [x] **Performance**
+- [x] **Cost**
+
+</details>
+
+### Question 12: What is Domain 1, and what must you be able to design?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Domain 1 is **Design secure architectures**.
+- [x] Design **secure access** to AWS resources.
+- [x] Design **secure workloads and applications**.
+- [x] Determine appropriate **data security controls** (customer responsibility in AWS).
+
+</details>
+
+### Question 13: What is Domain 2, and what kinds of architectures does it cover?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Domain 2 is **Design resilient architectures**.
+- [x] **Scalable** and **loosely coupled** architectures.
+- [x] **Highly available** and/or **fault-tolerant** architectures.
+
+</details>
+
+### Question 14: What is Domain 3, and which task numbers cover databases, networking, and data pipelines?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Domain 3 is **Design high-performing architectures**.
+- [x] Task **3.3:** high-performing **database** solutions (e.g. scalable storage, **caching**).
+- [x] Task **3.4:** high-performing and/or scalable **network** architectures.
+- [x] Task **3.5:** high-performing **data ingestion and transformation** solutions.
+
+</details>
+
+### Question 15: What else must you know for high-performing architectures besides databases and networks?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Scalable, performant **storage** solutions.
+- [x] Performant **elastic compute** solutions.
+- [x] The **methods**, **controls**, and **deployment options** that meet specified performance requirements.
+
+</details>
+
+### Question 16: What is Domain 4, and which four solution types must you cost-optimize?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Domain 4 is **Design cost-optimized architectures**.
+- [x] Cost-optimized **storage**
+- [x] Cost-optimized **compute**
+- [x] Cost-optimized **database**
+- [x] Cost-optimized **network** architectures
+
+</details>
+
+### Question 17: Where do you review which AWS services are in scope for the exam?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The official **AWS exam guide** (linked from this lesson).
+- [x] This course also covers those services and is **updated** for the exam.
+
+</details>
+
+### Question 18: Do you need prior AWS experience to start this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS expects some **experience and knowledge**, which makes the exam easier.
+- [x] If you do not have it, this course still **starts from the beginning**.
+- [x] Background in **compute**, **storage**, **networking**, and **databases** helps.
+
+</details>
+
+</details>
+
+## Summary
+
+**SAA-C03** is the associate Solutions Architect exam: **130 minutes**, **65** scenario questions, **$150** (50% off with a prior-cert voucher), **720/1000** to pass, testing center or online. Format is **multiple choice** (1 of 4) and **multiple response** (2+ of 5+), with **no hands-on**. Four domains cover **secure**, **resilient**, **high-performing**, and **cost-optimized** architectures. Use the **AWS exam guide** for in-scope services; do not linger on hard questions—**mark for review** and move on.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [AWS Certified Solutions Architect – Associate (SAA-C03) Exam Guide (PDF)](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)
+- [AWS Certified Solutions Architect – Associate (official exam page)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+
+</details>
+
+<details>
+  <summary>Create your own free AWS account</summary>
+
+## Introduction
+
+These lessons cover **what an AWS account is**, how **root** vs **IAM** access works, and how to **sign up** for your own account. Since **July 2025**, new customers choose a **Free plan** or a **Paid plan**. Both can receive up to **$200** in credits (**$100** at signup plus **$100** you can earn in the console). The Free plan is built so beginners do **not** get a surprise bill: when credits run out or **6 months** pass, AWS **closes** the account instead of charging the card. Later **HOL** lessons in this course use your own account, mostly in **US East (N. Virginia)**.
+
+## Detailed Explanation
+
+- [x] **What you need to open an AWS account**
+  - A **credit card** (required even on the Free plan, so AWS can charge you if you later switch to Paid).
+  - A **unique email address** that is **not** already tied to another AWS account.
+  - You **can** create **multiple** AWS accounts; each needs a **different email**.
+  - The **same credit card** can be reused across accounts.
+- [x] **Dynamic email aliases (Gmail and some other providers)**
+  - Example: if your inbox is `john@gmail.com`, you can use `john+awsaccount1@gmail.com`, `john+awsaccount2@gmail.com`, and so on.
+  - Mail still arrives in the same inbox; AWS treats each alias as a **unique** address.
+  - Match the alias to a memorable **account name** so you remember which inbox/login belongs to which account.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4baebe19-3815-478f-bcd1-d37df0327449" />
+
+- [x] **Account root user**
+  - Creating the account also creates the **root user**.
+  - Root signs in with the **signup email** and a **password**.
+  - Root has **full control**; you **cannot** meaningfully limit most of its permissions.
+  - Best practice: set a **very strong password**, then **do not use root** unless you specifically need it.
+- [x] **IAM instead of daily root use**
+  - Use **Identity and Access Management (IAM)** to create **users**, **groups**, **roles**, and **policies**.
+  - Typical pattern: create a **user**, put the user in a **group**, attach a **policy** (permissions) to the **group**.
+  - Log in afterwards as that IAM user (e.g. your own name), not as root.
+  - IAM best practice: **individual users**; **avoid root** except for the few tasks that require it.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/356d3bf0-b58a-4877-ba74-3601578784fd" />
+
+- [x] **Authentication, authorization, and ways to access AWS**
+  - After you have an account, the easiest start is the **AWS Management Console**.
+  - An **IAM principal** (such as a user) must **authenticate** (prove who they are), e.g. username and password.
+  - **Authorization** comes from **policies**: which **resources** you can use and at what **level**.
+  - Three common access methods (all require authentication):
+    - **Console**
+    - **CLI** (command line interface)
+    - **API** via an **SDK** when you write code
+  - Example resources a policy might allow: **EC2**, **RDS**, **S3**, load balancers.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5327a6be-c29d-4e34-a3b6-275858d70f5d" />
+
+- [x] **Where identities live**
+  - Identities and resources are created **inside an AWS account**.
+  - Multi-account setups can **centralize** some management, but each user still **exists in one account**.
+  - Accessing resources in **another** account needs extra measures (covered later).
+- [x] **Free plan vs Paid plan (from July 2025)**
+  - Before this change there was one signup model: a **12-month Free Tier** with per-service usage limits.
+  - New customers now **choose** **Free plan** or **Paid plan** at signup.
+  - Credits are for **new customers only** (you get them **once**, according to AWS).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/18f4fcb5-0c25-4acf-b806-9bad2e5ea29d" />
+
+- [x] **Credits on both plans**
+  - **$100** at signup, applied against **consumption-based** usage so AWS draws from credits instead of the card first.
+  - You can **earn another $100** by completing **actions in the console** (up to **$200** total).
+  - The extra-credit promo may be temporary; it was available when the lesson was recorded.
+  - Both plans also get **always-free** monthly usage on some services, plus **short-term trial** offers (Paid has fuller access).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/465329f0-9a1d-496d-b919-7b18d5bf7eb9" />
+
+- [x] **What the Free plan allows**
+  - Access to **select** services and features only—not everything.
+  - AWS blocks actions that would **burn credits instantly**.
+  - **Most** of this course’s labs fit the Free plan; some do **not** (see below).
+  - **EC2** is available only for **certain instance types**.
+  - **No charges** while you stay on Free; if credits run out, AWS **shuts the account** (or you **upgrade** to Paid).
+  - Free plan **expires after 6 months or when credits are used**, whichever comes first.
+- [x] **What the Paid plan allows**
+  - Access to **all** AWS services; you take the **billing risk**.
+  - After credits are gone, usage is billed to the **credit card**.
+  - The account **stays active**; it does not auto-close after 6 months.
+  - You can **scale** beyond credit limits.
+- [x] **After Free plan expiry (90-day grace)**
+  - When the account closes (6 months or credits gone), you have **90 days** to **upgrade to Paid** and reopen it.
+  - Remaining credits can then apply to future bills (until they expire).
+- [x] **Upgrading and AWS Organizations (do this before org labs)**
+  - You can upgrade **manually**, or a **service/feature** can convert you **automatically**.
+  - If conversion happens through **AWS Organizations**, **AWS Partner**, or other **enterprise** programs, **remaining Free Tier credits expire immediately** and are **not** applied to Paid usage.
+  - This course uses **AWS Organizations** in several labs. **Manually upgrade to Paid first**, then create the organization, so credits **carry over**.
+  - After a **manual** upgrade, credits last **12 months from the date you opened the account**.
+  - A Free plan account still **auto-shuts after 6 months** even if credits remain—upgrade if you need those credits for longer.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca33ecee-18ad-4d20-a23b-04dc96107555" />
+
+- [x] **Which plan to choose**
+  - **Free plan:** beginners who want **no surprise bill**; short-term use (one course, a couple of months); you do **not** need every service.
+  - **Paid plan:** you already know AWS **pricing** and **cost controls**; you need services **not** on Free (examples: **Route 53 domain registration**, **AWS Organizations**); you need the account **after 6 months**.
+  - Eventually **everyone** should move to Paid and learn how AWS charges.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/455b4fc9-3bd0-4a55-9726-b181470a14bc" />
+
+- [x] **Cost controls (your responsibility)**
+  - Learn what services cost; **terminate / delete** resources when a lab ends.
+  - HOL lessons usually **show** what to shut down; you still must **check** yourself.
+  - Set **billing alarms** (e.g. **$5 / $10 / $20**) so you get email when spend or forecast hits a limit (shown later in the course).
+- [x] **Account ID, account name, and alias**
+  - **Account ID:** long numeric identifier AWS assigns.
+  - **Account name:** a **friendly** name (words, easier to remember); must be **unique across AWS**.
+  - **Account alias:** also unique; used to build a **friendly login URL** (instead of typing the account ID).
+  - Instructor tip: make **email alias**, **account name**, and **account alias** the **same** string.
+- [x] **Sign-up extras**
+  - A **phone** is required for an **SMS verification** code during signup.
+  - After signup, AWS **activates** the account (can take a few minutes) and emails you when it is ready.
+  - First console landing region may follow your location; this course uses **United States (N. Virginia)** / **us-east-1** for most labs.
+  - Completing registration can leave you **already signed in as root**. After you **sign out**, the default login form asks for **account ID or alias** plus an **IAM username**—you do **not** have an IAM user yet. Use **Sign in using root user email**, then the signup email and root password.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This is a **console signup** walkthrough. Pause until you have a unique email, credit card, account name, and phone. Do **not** create an **AWS Organization** until you have **manually upgraded** to Paid if you want to keep credits.
+
+### **Overview**
+
+- [ ] Create your own **AWS Free plan** account so you can follow later **HOL** lessons.
+- [ ] You will:
+  - [ ] Collect signup details (email, card, name, phone).
+  - [ ] Sign up from the **AWS Free Tier** page.
+  - [ ] Choose **Free plan**, enter personal and billing details, and verify by SMS.
+  - [ ] Open the **Management Console**, switch to **N. Virginia**, and practice **root user** sign-in.
+- [ ] Success: you can sign in as **root** and see the console in **us-east-1**.
+
+### **Task 1: Gather signup details**
+
+- [ ] Confirm you have a **credit card** (needed even for Free plan).
+- [ ] Choose a **unique email** not used on any other AWS account.
+  - [ ] If you use Gmail, consider an alias such as `you+aws-saa@gmail.com`.
+- [ ] Pick a **unique AWS account name** (friendly name, not the numeric ID).
+- [ ] Optionally pick a matching **account alias** for a friendly login URL (you may set this later).
+- [ ] Have a **phone** ready for SMS verification.
+
+### **Task 2: Choose Free plan vs Paid plan**
+
+- [ ] Choose **Free plan** if you are new to AWS and want **no surprise bills** for a short course.
+- [ ] Choose **Paid plan** (or plan to **upgrade later**) if you will need:
+  - [ ] **AWS Organizations**
+  - [ ] **Route 53** domain registration
+  - [ ] Access to **all** services / instance types
+  - [ ] The account to stay open **after 6 months**
+- [ ] If you start on Free and later need Organizations: **manually upgrade to Paid first**, then create the organization, so remaining credits are **not** wiped.
+
+### **Task 3: Start signup on the Free Tier page**
+
+- [ ] Open [AWS Free Tier](https://aws.amazon.com/free/).
+- [ ] Click **Create a free tier account** (or **Create an AWS Account**).
+- [ ] Enter the **root user email address** (your unique email).
+- [ ] Enter the **AWS account name**.
+- [ ] Click **Verify email address**.
+- [ ] Open the inbox, copy the **verification code**, paste it, and click **Verify**.
+- [ ] Set a **strong root user password**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2cb31c86-96f4-425e-b706-7aaa22b8294b" />
+
+### **Task 4: Select the Free plan and contact details**
+
+- [ ] On the plan screen, review Free vs Paid (6 months, up to **$200** credits, no charges on Free unless you switch).
+- [ ] Click **Choose free plan** (unless you already decided on Paid).
+- [ ] Select **Personal** (your own learning; not a business account).
+- [ ] Fill in **name**, **phone**, **country/region**, **address**.
+- [ ] Agree to the **terms** and click **Continue**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9129a268-92cb-4af9-aae8-01070e80e76e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad6b462c-bb78-410c-9911-fa509c2fe2b0" />
+
+### **Task 5: Billing and identity verification**
+
+- [ ] Confirm **country** is correct.
+- [ ] Enter **credit card** number, **expiration**, **security code**, and **cardholder name**.
+- [ ] Click **Verify and continue**.
+- [ ] Enter your **phone number** and click **Send SMS**.
+- [ ] Enter the **SMS code** and click **Continue**.
+- [ ] Wait for AWS to **activate** the account (a few minutes) and for the **confirmation email**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b84516b7-7a16-4623-815a-4892a3c6fa2b" />
+
+### **Task 6: Open the console and set the region**
+
+- [ ] When activation completes, open the **AWS Management Console**.
+- [ ] If you landed in another region (e.g. Europe), switch the region to **US East (N. Virginia) `us-east-1`**.
+- [ ] Most activities in this course use **N. Virginia**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/89288dfc-4468-4d4b-8a4b-753972d6bf9d" />
+
+### **Task 7: Practice signing in as the root user**
+
+- [ ] **Sign out** of the console.
+- [ ] Go to sign in again.
+- [ ] The form asks for **Account ID or alias** and an **IAM user** name—you have **not** created an IAM user yet.
+- [ ] Click **Sign in using root user email**.
+- [ ] Enter the **signup email** and **root password**, then **Sign in**.
+- [ ] You are back in as **root**. Later lessons create an **IAM user** for daily use and add **billing alarms**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5ce8cf5-7866-44c4-9966-e10ac0d6a3d7" />
+
+Successfully created a Free plan account and signed in as the **root user**. Do not use root for daily work once IAM is set up.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this signup lesson. You work in the browser (AWS website and Management Console). Later lessons use the **AWS CLI** after you create IAM credentials.
+
+```bash
+# No commands in this topic; account creation is done in the AWS console.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code in this lesson. Signup is a console workflow.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What two things do you need before you can open an AWS account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **credit card**.
+- [x] A **unique email address** that is not already associated with another AWS account.
+
+</details>
+
+### Question 2: Can multiple AWS accounts share a credit card? Can they share an email?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes**, the **same credit card** can be used on multiple accounts.
+- [x] **No**, each account needs a **different email address**.
+
+</details>
+
+### Question 3: How can you create several unique emails that still land in one Gmail inbox?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use a **dynamic alias**, e.g. `john+awsaccount1@gmail.com` and `john+awsaccount2@gmail.com`.
+- [x] Gmail (and some other providers) deliver those to `john@gmail.com`.
+
+</details>
+
+### Question 4: How does the account root user sign in, and what can it do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Root signs in with the **email used at signup** and a **password**.
+- [x] It has **full control** of the account.
+- [x] You **cannot** meaningfully limit most root permissions.
+
+</details>
+
+### Question 5: What is the best practice for the root user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set a **very strong password**.
+- [x] **Do not use** root for daily work unless you **specifically need** it.
+
+</details>
+
+### Question 6: What should you use instead of root for day-to-day access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **IAM** (Identity and Access Management).
+- [x] Create a **user**, put the user in a **group**, and attach a **policy** to the **group**.
+- [x] Then log in as that **IAM user**.
+
+</details>
+
+### Question 7: What four IAM object types does the instructor list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Users**
+- [x] **Groups**
+- [x] **Roles**
+- [x] **Policies**
+
+</details>
+
+### Question 8: What three ways can you access and manage AWS, and what must you always do first?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Management Console**
+- [x] **CLI**
+- [x] **API** through an **SDK**
+- [x] You must always **authenticate** (prove who you are).
+
+</details>
+
+### Question 9: What do IAM policies define?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Which **resources** you may access.
+- [x] What **level of access** you have (authorization after authentication).
+
+</details>
+
+### Question 10: What changed in July 2025 for new AWS accounts?
+
+<details>
+<summary>Answer</summary>
+
+- [x] New customers now choose a **Free plan** or a **Paid plan** at signup.
+- [x] Previously there was essentially **one** account type with a simpler **12-month Free Tier** model.
+
+</details>
+
+### Question 11: How much Free Tier credit can a new customer get?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **$100** at signup.
+- [x] Up to **another $100** by completing **actions in the console**.
+- [x] Up to **$200** total, on **both** Free and Paid plans.
+- [x] Credits are for **new customers** and you get them **once**.
+
+</details>
+
+### Question 12: What happens on the Free plan if you use up all credits?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS **closes / shuts** the account.
+- [x] You are **not charged**.
+- [x] You can **upgrade to Paid** instead.
+
+</details>
+
+### Question 13: What happens on the Paid plan after credits are gone?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Further usage is **charged to your credit card**.
+- [x] The account **stays active**.
+
+</details>
+
+### Question 14: When does the Free plan expire, and what is the grace period?
+
+<details>
+<summary>Answer</summary>
+
+- [x] After **6 months** or when **credits are used up**, whichever comes first.
+- [x] You then have **90 days** to **upgrade to Paid** and reopen the account.
+
+</details>
+
+### Question 15: Why should you manually upgrade to Paid before using AWS Organizations?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Joining **Organizations** (or partner/enterprise programs) can **convert** Free to Paid **automatically**.
+- [x] Remaining Free Tier credits then **expire immediately** and are **not** applied to Paid usage.
+- [x] A **manual** upgrade first lets credits **carry over** to future bills.
+
+</details>
+
+### Question 16: How long do Free Tier credits last after a manual upgrade to Paid?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They expire **12 months from the date you opened the account**.
+- [x] A Free plan account still **auto-closes at 6 months** even if credits remain, so upgrade if you need them longer.
+
+</details>
+
+### Question 17: When should you choose the Free plan vs the Paid plan?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Free:** beginners who want **no surprise bill**; short-term / single-course use; you do not need every service.
+- [x] **Paid:** you are comfortable with **pricing** and **cost controls**; you need services not on Free; you need the account **after 6 months**.
+- [x] Eventually **everyone** should be on Paid and monitor spend.
+
+</details>
+
+### Question 18: Which course examples typically need the Paid plan?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Registering **Route 53** domain names.
+- [x] Using **AWS Organizations**.
+- [x] Labs that need **all** services or **any** EC2 instance type.
+
+</details>
+
+### Question 19: Why does AWS still require a credit card for a Free plan account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] So they can charge you if you **switch to a Paid plan**.
+
+</details>
+
+### Question 20: After you sign out, how do you sign back in as root?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The default form asks for **account ID or alias** and an **IAM username**.
+- [x] Click **Sign in using root user email**.
+- [x] Enter the **signup email** and **root password**.
+
+</details>
+
+</details>
+
+## Summary
+
+Open an AWS account with a **credit card** and a **unique email** (Gmail **plus-aliases** work). Signup creates an all-powerful **root** user—set a strong password and use **IAM** users/groups/policies for daily work. Since **July 2025**, pick **Free** (select services, **no charges**, closes after **6 months** or when credits run out, **90-day** upgrade window) or **Paid** (all services, billed after credits). Both can get up to **$200** in credits. **Manually upgrade before Organizations** so credits are not wiped. This course’s console work is mostly in **us-east-1**; after first logout, use **Sign in using root user email** until you create an IAM user. Set **billing alarms** and terminate lab resources yourself.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [AWS Free Tier](https://aws.amazon.com/free/)
+- [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/)
+- [Explore AWS services with AWS Free Tier (Billing user guide)](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html)
+- [Choosing an AWS Free Tier plan](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html)
+- [AWS Free Tier update: up to $200 in credits (AWS News Blog, July 2025)](https://aws.amazon.com/blogs/aws/aws-free-tier-update-new-customers-can-get-started-and-explore-aws-with-up-to-200-in-credits/)
+- [AWS Free Tier Terms](https://aws.amazon.com/free/terms/)
+- [IAM Identity Center and IAM best practices (root user)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
+
+</details>
+
+<details>
+  <summary>Configure Account and Create a Budget</summary>
+
+## Introduction
+
+After the account exists, configure it **before** you start HOL labs. Still signed in as **root**, you set an **account alias** so IAM users can log in with a memorable URL, enable **IAM access to billing**, turn on **Free Tier** and **CloudWatch billing** email alerts, request **PDF invoices**, and create a **$5 monthly AWS Budget**. That budget is the backup if you forget to terminate a resource. **Cost Explorer** shows an itemized spend breakdown, but a brand-new account needs about **24 hours** before data appears.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/221fe32c-6241-4300-bd72-fcc3697df7ab" />
+
+## Detailed Explanation
+
+- [x] **Why this lesson comes next**
+  - Make a few **account configuration** changes, then set a **budget** that emails you when spend is **forecast** to hit, or has **exceeded**, a monthly dollar threshold.
+  - You are still using the **root user**; an **IAM user** is created in a later lesson.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3d59862b-ceab-423e-b495-dd6f1c0e630b" />
+
+- [x] **IAM is a global service**
+  - Search for **IAM** in the console (you can **favorite** it).
+  - The console shows IAM is **global**: you do **not** pick a region.
+  - Create users and related IAM resources **once**; they apply across regions.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3303fe59-1774-4f10-a6cd-de22ccd43c5a" />
+
+- [x] **Account ID vs account alias vs sign-in URL**
+  - The IAM dashboard shows **AWS account**, the numeric **account ID**, and **account alias**.
+  - The **IAM user sign-in URL** includes the **account ID** by default—hard to remember.
+  - Create an **account alias** (must be **unique across all of AWS**). If someone else already took it, pick another.
+  - Instructor example: account name **DCT Lab training**, then the **same string** as the alias (yours must be unique; do not reuse his).
+  - Change the **account name** on the **Account** page if needed.
+  - After the alias exists, open/copy the **sign-in URL** and **save it**—you will use it later to log in as an IAM user.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c8090cfb-2400-4d49-a81d-e495ee62a74e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/45896974-2492-4281-b189-2989a098f39c" />
+
+- [x] **Account page: regions and IAM billing access**
+  - Top right → **Account**.
+  - Not **all regions** are enabled by default; enable extra regions only if you need them.
+  - Find **IAM user and role access to billing information**.
+  - Once you stop using root, billing pages often tell you to **sign in as root** unless this is on.
+  - **Enable** it so you can grant billing permissions through **IAM** and view bills as an admin user.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac3dad49-725b-42b3-a189-1c766e6d5be8" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/826967b5-b83c-46b6-aa55-92f2bb147c70" />
+
+- [x] **Billing preferences (alerts and invoices)**
+  - Left menu → **Billing preferences**.
+  - Under **alert preferences**, enable:
+    - **AWS Free Tier alerts**
+    - **CloudWatch billing alerts**
+  - Enter the **email** that should receive those alerts (email if you use up Free Tier credits).
+  - Enable **receive invoices as PDF** attached to email so you do not have to open the console to see charges.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6e6783e-5f14-407d-8083-21ea5e7fa420" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b75bf1ab-648e-4b28-8e38-c050be66b18a" />
+
+- [x] **AWS Budgets ($5 monthly cost budget)**
+  - Left menu → **Budgets and planning** → **Budgets** (AWS Budgets service).
+  - **Create a budget** using a **template**.
+  - Options include a **zero-spend** budget if you are extremely cost-sensitive.
+  - Instructor choice: **monthly cost budget** of **$5**.
+  - You get email when you are **forecast** to reach **$5** in the month, or when you **actually** reach it.
+  - The template notifies **twice** on actual spend: at **85%** and at **100%**.
+  - Enter your **email** and create the budget; AWS fills in the rest.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f1357bb-fb7e-45b2-a28c-b306ea41b423" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e35d43e9-b967-4bbc-843d-c6b6a040c666" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/089b8123-8826-46e7-a720-77d085733bb0" />
+
+- [x] **What might still cost a little (and what blows past $5)**
+  - Some items have small ongoing fees, e.g. a **Route 53 hosted zone** (usually **under $1/month**).
+  - Occasional couple-of-dollar charges can appear; following the course **shutdown/terminate** steps should keep you **under $5**.
+  - **Registering a domain** is the usual exception: cheapest domains are about **$5–$6**, which **exceeds** this budget.
+  - If you forget a resource, the budget email is the **backup**; then inspect spend in **Cost Explorer**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cd6b213c-4ffe-419d-b155-afa705e32256" />
+
+- [x] **Cost Explorer**
+  - Billing left menu → **Cost Explorer**.
+  - Shows an **itemized breakdown** of spend.
+  - A **new** account may say to wait **24 hours** before data appears.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Stay signed in as **root**. Set alias, billing access, alert preferences, a **$5** budget, and know where Cost Explorer lives. Pick your **own** unique alias; do not copy the instructor’s.
+
+### **Overview**
+
+- [ ] Configure the account so IAM logins and billing alerts work, then create a **$5 monthly budget**.
+- [ ] You will:
+  - [ ] Create an **account alias** and save the **IAM sign-in URL**.
+  - [ ] Enable **IAM user and role access to billing information**.
+  - [ ] Turn on **Free Tier** and **CloudWatch billing** alerts, plus **PDF invoices**.
+  - [ ] Create a **monthly cost budget** of **$5**.
+  - [ ] Open **Cost Explorer** (data may take 24 hours).
+- [ ] Success: the IAM sign-in URL uses your alias, billing access is on, and the $5 budget exists.
+
+### **Task 1: Open IAM and confirm it is global**
+
+- [ ] Sign in as the **root user**.
+- [ ] In the search bar, type **IAM** and open **Identity and Access Management**.
+- [ ] Optionally **favorite** IAM for later.
+- [ ] Confirm the console shows IAM as a **global** service (no region to choose).
+
+### **Task 2: Create an account alias and save the sign-in URL**
+
+- [ ] On the IAM dashboard, find **AWS account**.
+- [ ] Note the numeric **Account ID**.
+- [ ] Note the default **IAM user sign-in URL** (it contains the account ID).
+- [ ] Create an **account alias**:
+  - [ ] Use a string that is **unique across AWS**.
+  - [ ] Prefer matching your **account name** (instructor used **DCT Lab training**—choose your own).
+- [ ] If the alias is taken, try another until it succeeds.
+- [ ] Click the new **sign-in URL**, copy it, and **store it** somewhere you can find when you create an IAM user.
+
+### **Task 3: Review the Account page and enable IAM billing access**
+
+- [ ] Click the account menu in the **top right**.
+- [ ] Choose **Account**.
+- [ ] Confirm or change the **account name** if needed.
+- [ ] Scroll the **AWS Regions** list; note that **not all regions** are enabled by default.
+- [ ] Find **IAM user and role access to billing information**.
+- [ ] **Enable** this setting so future IAM admin users can view billing without signing in as root.
+
+### **Task 4: Set billing preferences and email alerts**
+
+- [ ] In the left menu, open **Billing preferences**.
+- [ ] Under **alert preferences**, enable:
+  - [ ] **Receive AWS Free Tier alerts**
+  - [ ] **Receive CloudWatch billing alerts**
+- [ ] Enter your **email address** for those alerts.
+- [ ] Enable **Receive PDF invoices by email**.
+- [ ] Save the preferences.
+
+### **Task 5: Create a $5 monthly budget**
+
+- [ ] Left menu → **Budgets and planning** → **Budgets**.
+- [ ] Click **Create a budget**.
+- [ ] Under **budget setup**, use a **template**.
+- [ ] Choose **Monthly cost budget** (or **Zero spend budget** if you want alerts at any spend).
+- [ ] Set the amount to **$5**.
+- [ ] Confirm notifications:
+  - [ ] Email when **forecast** spend reaches the budget.
+  - [ ] Email when **actual** spend reaches **85%**.
+  - [ ] Email when **actual** spend reaches **100%**.
+- [ ] Enter your **email address**.
+- [ ] Click **Create budget**.
+
+### **Task 6: Open Cost Explorer**
+
+- [ ] Left menu → **Cost Explorer**.
+- [ ] If the account is new, expect a message to wait about **24 hours**.
+- [ ] After data appears, use Cost Explorer for an **itemized breakdown** if a budget alert fires.
+
+Budget created. Keep terminating lab resources; expect to exceed **$5** mainly when you **register a domain**.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. Configuration is done in the **IAM**, **Account**, **Billing**, **Budgets**, and **Cost Explorer** consoles.
+
+```bash
+# No commands in this topic; use the AWS Management Console.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code in this lesson.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Which user are you signed in as during this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **root user**.
+- [x] An **IAM user** is created in a **later** lesson.
+
+</details>
+
+### Question 2: Is IAM regional, and why does that matter?
+
+<details>
+<summary>Answer</summary>
+
+- [x] IAM is a **global** service.
+- [x] You do **not** select a region.
+- [x] You create users and related resources **once**, not per region.
+
+</details>
+
+### Question 3: Why create an account alias?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The default IAM **sign-in URL** includes the numeric **account ID**, which is hard to remember.
+- [x] An alias gives a **friendly** login URL for **IAM users**.
+
+</details>
+
+### Question 4: Must an account alias be unique?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** It must be unique **across AWS**.
+- [x] If the name is taken, the create step **fails** and you pick another.
+
+</details>
+
+### Question 5: Where do you change the account name?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Top right → **Account**.
+- [x] You can edit the **account name** on that page.
+
+</details>
+
+### Question 6: Why enable IAM user and role access to billing information?
+
+<details>
+<summary>Answer</summary>
+
+- [x] After you stop using root, billing often requires a **root** login unless this is on.
+- [x] Enabling it lets you grant billing access through **IAM** and view bills as an admin user.
+
+</details>
+
+### Question 7: Are all AWS regions enabled by default?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Some regions must be **enabled** before you can use them.
+
+</details>
+
+### Question 8: Which two alert types should you enable in billing preferences?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **AWS Free Tier alerts**
+- [x] **CloudWatch billing alerts**
+- [x] Enter an **email address** so you are notified if you use up Free Tier credits.
+
+</details>
+
+### Question 9: Why enable PDF invoices by email?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Invoices are **attached to email**.
+- [x] You do not have to open the AWS console just to see what you were charged.
+
+</details>
+
+### Question 10: How do you open AWS Budgets from the account/billing area?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Left menu → **Budgets and planning** → **Budgets**.
+
+</details>
+
+### Question 11: What budget does the instructor create, and what is the zero-spend alternative?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **template** **monthly cost budget** of **$5**.
+- [x] A **zero-spend** budget is an option if you want alerts at any spend.
+
+</details>
+
+### Question 12: When does the $5 budget send email?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When you are **forecast** to reach **$5** in the month.
+- [x] When **actual** spend reaches **85%**.
+- [x] When **actual** spend reaches **100%**.
+
+</details>
+
+### Question 13: Should you stay under $5 if you follow the course shutdown steps?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes**, in normal HOL labs, if you **terminate** resources as instructed.
+- [x] Small fees can still appear (e.g. a **Route 53 hosted zone**, usually **under $1/month**).
+
+</details>
+
+### Question 14: What course activity is expected to exceed the $5 budget?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Registering a domain**.
+- [x] The cheapest domains are about **$5–$6**.
+
+</details>
+
+### Question 15: What should you do if a budget alert fires because you forgot a resource?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Treat the email as a **backup warning**.
+- [x] Open **Cost Explorer** for an **itemized** spend breakdown.
+
+</details>
+
+### Question 16: Why might Cost Explorer show no data on a new account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] New accounts often need about **24 hours** before Cost Explorer data appears.
+
+</details>
+
+### Question 17: What should you save after creating the account alias?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **IAM user sign-in URL** that uses the alias.
+- [x] You will use it later to log in as an **IAM user**.
+
+</details>
+
+</details>
+
+## Summary
+
+As **root**, create a unique **account alias** and save the **IAM sign-in URL**, enable **IAM access to billing**, turn on **Free Tier** and **CloudWatch billing** emails plus **PDF invoices**, and create a **$5 monthly budget** (alerts at forecast, **85%**, and **100%** actual). Stay under $5 by terminating labs; **domain registration** is the usual overage. Use **Cost Explorer** after ~**24 hours** if you need a spend breakdown.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Using an alias for your AWS account ID](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html)
+- [Activate access to the Billing and Cost Management console](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html)
+- [AWS Billing preferences](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-account-payment.html)
+- [Managing your costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)
+- [Analyzing your costs with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
+- [Using Amazon CloudWatch billing alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
+
+</details>
+
+<details>
+  <summary>Install Tools and Configure AWS CLI</summary>
+
+## Introduction
+
+This short setup lesson covers the **tools** you need before later **HOL** work: download the **course code** from the last lesson in this section (GitHub), install **Visual Studio Code**, install the **AWS CLI** on your computer, and confirm you can open **AWS CloudShell**. CloudShell is a **browser CLI** that is **already authenticated** as the user you are signed in as. The local CLI cannot run AWS commands until you configure credentials later, after you create an **IAM user**. AWS CLI commands are the **same** in CloudShell and on your machine; only **OS** file-system commands differ.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c57815e8-f988-4333-99ba-e0f78a1023a4" />
+
+## Detailed Explanation
+
+- [x] **Download the course code first**
+  - Finish this section by opening the **last lesson**—it contains the **code**.
+  - That lesson links to a **GitHub** page where you download the files.
+  - If you already use **Git**, you can **synchronize / clone** the repository instead of downloading a zip.
+- [x] **Visual Studio Code**
+  - Used to open **code snippets** and **instruction files** in later lessons.
+  - **Microsoft** product and **free**.
+  - Search for **Visual Studio Code**, download the build for **your OS**, and install it.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/997a02b7-e9e0-42bf-8803-9f5899276ddb" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fdf025c1-9cb1-4097-9401-7fd566bcc46e" />
+
+- [x] **AWS Command Line Interface (CLI)**
+  - Search for **AWS command line interface**, then open **Install or update to the latest version of the AWS CLI**.
+  - Lets you run **CLI commands from your computer**.
+  - Installers exist for **Linux**, **macOS**, and **Windows**—pick yours and follow the package steps.
+  - After install you still **cannot** run AWS commands until you **authenticate**.
+  - Credential setup is shown **later**, after you create an **individual IAM user**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/de0242a0-9b90-42fd-8754-4c00d9484f67" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a204020-6d45-4d0c-8d3d-d1c7b3343d32" />
+
+- [x] **AWS CloudShell**
+  - A **command line interface in the cloud** (browser), opened from the **Management Console**.
+  - The instructor now prefers it over a local CLI **in most cases**.
+  - It is **preconfigured with credentials** for the user you are **logged in as**.
+  - Search for **CloudShell**, click it, and wait for the environment (often up to **~30 seconds**).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/973dddc1-438d-402c-bd7b-7e64ad7b0f37" />
+
+- [x] **CloudShell may be blocked on some new accounts**
+  - AWS sometimes **restricts CloudShell** for **new accounts** that use a **new credit card** they have not seen before.
+  - Students who reuse a card they already used on other AWS accounts often do **not** hit this.
+  - If CloudShell will not start: **contact AWS Support** and ask them to **enable** it.
+  - If Support will not enable it yet, use the **AWS CLI on your computer** instead (same AWS commands).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b590b24d-7590-4bdf-a0c7-da7e15ac45a4" />
+
+- [x] **Same AWS CLI, different OS shell**
+  - **AWS CLI commands are identical** in CloudShell and on your PC.
+  - CloudShell is a **Linux** shell.
+  - On **Windows**, navigating the file system is different from what you see in CloudShell.
+- [x] **CloudShell usability and a first credential check**
+  - Font can be small: **top-right settings** → increase size.
+  - `aws help` opens CLI help; **spacebar** pages through it; **`q`** quits.
+  - `aws s3 ls` lists **S3 buckets**. A brand-new account may have **none**.
+  - **No error** (even with an empty list) means CloudShell already has **credentials** for that call.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f05210f-e59b-4759-8f6c-edc2233a19b9" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ef8f6f17-6479-4076-9f2b-8f8d3427ab5c" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Install the local tools, get the course code, and prove CloudShell (or the local CLI path) works. You still sign in as **root** for CloudShell; IAM credentials for the local CLI come in a later lesson.
+
+### **Overview**
+
+- [ ] Download the **course code**, install **VS Code** and the **AWS CLI**, and open **CloudShell**.
+- [ ] You will:
+  - [ ] Get the code from the **last lesson** in this section (GitHub download or `git` clone).
+  - [ ] Install **Visual Studio Code** for your OS.
+  - [ ] Install the **AWS CLI** for Linux, macOS, or Windows.
+  - [ ] Open **CloudShell**, enlarge the font, run `aws help` and `aws s3 ls`.
+  - [ ] If CloudShell is blocked, contact **AWS Support** or fall back to the local CLI later.
+- [ ] Success: VS Code and the AWS CLI are installed, and CloudShell runs `aws s3 ls` without an auth error (or you have a Support / local-CLI plan).
+
+### **Task 1: Download the course code**
+
+- [ ] Open the **last lesson** in this section (the one that contains the **code**).
+- [ ] Follow the link to the instructor **GitHub** page.
+- [ ] Either:
+  - [ ] **Download** the repository (zip) and extract it somewhere you will keep for HOL lessons.
+  - [ ] Or, if you use Git, **clone / synchronize** the repository.
+
+### **Task 2: Install Visual Studio Code**
+
+- [ ] Search for **Visual Studio Code** (Microsoft, free).
+- [ ] Open the official download page.
+- [ ] Choose the installer for **your operating system**.
+- [ ] Install VS Code and confirm it launches.
+- [ ] You will use it later to open **code snippets** and **instruction files**.
+
+### **Task 3: Install the AWS CLI**
+
+- [ ] Search for **AWS command line interface**.
+- [ ] Open **Install or update to the latest version of the AWS CLI**.
+- [ ] Follow the steps for **Linux**, **macOS**, or **Windows**.
+- [ ] Confirm the package installed (you will **not** run authenticated AWS commands on this machine until a later IAM-user lesson).
+
+### **Task 4: Open AWS CloudShell**
+
+- [ ] Sign in to the **AWS Management Console**.
+- [ ] Search for **CloudShell** and open it.
+- [ ] Wait for the environment to start (often up to **~30 seconds**).
+- [ ] If CloudShell fails on a **new account / new credit card**:
+  - [ ] Contact **AWS Support** and ask them to **enable CloudShell**.
+  - [ ] If they will not enable it yet, plan to use the **local AWS CLI** after credentials are configured.
+
+### **Task 5: Check CloudShell and credentials**
+
+- [ ] In CloudShell, open **settings** (top right) and **increase the font size** if the text is hard to read.
+- [ ] Run help and page through it:
+
+```bash
+aws help
+```
+
+- [ ] Press **spacebar** to page; type **`q`** to quit.
+- [ ] List S3 buckets (a new account may show none):
+
+```bash
+aws s3 ls
+```
+
+- [ ] Confirm you did **not** get an authentication error—that means CloudShell is **preconfigured with credentials**.
+
+Successfully installed the local tools and verified CloudShell (or documented the Support / local-CLI fallback). Local `aws` commands stay unauthenticated until the IAM user lesson.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+These AWS CLI commands are the **same** in **CloudShell** and on your computer. CloudShell is already authenticated; a local install is not until you configure credentials later.
+
+```bash
+# Open AWS CLI help (spacebar pages; q quits)
+aws help
+```
+
+```bash
+# List S3 buckets. Empty output with no error still means credentials work.
+aws s3 ls
+```
+
+CloudShell is a **Linux** shell. On **Windows**, `cd`, `dir` / `ls`, and paths differ, but the `aws …` commands do not.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code in this lesson. Download the HOL files from the **GitHub** link in the **last lesson** of this section (or clone the repo). You will open those files in **Visual Studio Code** later.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Where do you get the course code for later HOL lessons?
+
+<details>
+<summary>Answer</summary>
+
+- [x] From the **last lesson** in this section.
+- [x] That lesson links to a **GitHub** page.
+- [x] Download the files, or **clone / synchronize** the repo if you use Git.
+
+</details>
+
+### Question 2: Why install Visual Studio Code for this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To open **code snippets** and **instruction files**.
+- [x] It is a **free Microsoft** editor.
+- [x] Install the build that matches **your operating system**.
+
+</details>
+
+### Question 3: What official page should you use to install the AWS CLI?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Install or update to the latest version of the AWS CLI**.
+- [x] Choose the package for **Linux**, **macOS**, or **Windows**.
+
+</details>
+
+### Question 4: Can you run AWS CLI commands on your computer right after installing the CLI?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** You have not **authenticated** yet.
+- [x] Credential setup is shown **later**, after you create an **IAM user**.
+
+</details>
+
+### Question 5: What is AWS CloudShell?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **command line interface in the cloud**, opened from the **Management Console**.
+- [x] The instructor prefers it over a local CLI **in most cases**.
+
+</details>
+
+### Question 6: Why is CloudShell easier than the local AWS CLI at this point in the course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is **preconfigured with credentials** for the user you are **logged in as**.
+- [x] You do not need to run `aws configure` first.
+
+</details>
+
+### Question 7: How do you open CloudShell, and how long can startup take?
+
+<details>
+<summary>Answer</summary>
+
+- [x] In the console, search for **CloudShell** and click it.
+- [x] The environment often takes up to **~30 seconds** to start.
+
+</details>
+
+### Question 8: Why might CloudShell fail for some students?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS can **restrict CloudShell** on **new accounts** that use a **new credit card**.
+- [x] Reusing a card already known to AWS often avoids the problem.
+
+</details>
+
+### Question 9: What should you do if CloudShell is restricted on your account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Contact AWS Support** and ask them to **enable CloudShell**.
+- [x] If they will not enable it yet, use the **AWS CLI on your computer** instead.
+
+</details>
+
+### Question 10: Are AWS CLI commands different in CloudShell vs on your PC?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** The **AWS CLI commands are identical**.
+- [x] **Operating-system** commands (file-system navigation) can differ.
+- [x] CloudShell is **Linux**; a local **Windows** shell uses different navigation commands.
+
+</details>
+
+### Question 11: How do you make CloudShell text easier to read?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Open **settings** in the **top-right** corner.
+- [x] **Increase the font size**.
+
+</details>
+
+### Question 12: How do you use `aws help` in CloudShell?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Run `aws help`.
+- [x] Press **spacebar** to page through the help.
+- [x] Type **`q`** to quit.
+
+</details>
+
+### Question 13: What does `aws s3 ls` do, and what should a new account show?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It lists **Amazon S3 buckets**.
+- [x] A **brand-new** account may have **no buckets**.
+
+</details>
+
+### Question 14: How can you tell CloudShell already has working credentials?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Run `aws s3 ls`.
+- [x] **No error message** means you have credentials for that operation, even if the bucket list is empty.
+
+</details>
+
+### Question 15: What four setup checks does the instructor want before you leave this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Download the code**.
+- [x] Install **Visual Studio Code**.
+- [x] Install the **AWS CLI** if you want to run it on your computer.
+- [x] Confirm you can **access CloudShell**.
+
+</details>
+
+### Question 16: When will you configure local AWS CLI credentials?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Later**, after you create your **individual IAM user**.
+- [x] Not in this lesson.
+
+</details>
+
+### Question 17: If you use Windows locally and CloudShell in the browser, what stays the same and what changes?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`aws` commands stay the same**.
+- [x] **File-system** commands and paths follow the OS (**Linux** in CloudShell, **Windows** locally).
+
+</details>
+
+</details>
+
+## Summary
+
+Before HOL labs, get the **course code** from the **last lesson** (GitHub download or Git clone), install **Visual Studio Code**, and install the **AWS CLI** for your OS. Open **CloudShell** from the console—it is a Linux CLI **already authenticated** as the signed-in user. New accounts with a **new credit card** may have CloudShell blocked; ask **Support** or use the local CLI later. `aws help` and `aws s3 ls` confirm the CLI; **no error** on `aws s3 ls` means credentials work even with zero buckets. Local CLI auth waits until the **IAM user** lesson. AWS commands match everywhere; only OS navigation differs.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Download Visual Studio Code](https://code.visualstudio.com/download)
+- [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [What is AWS CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html)
+- [Getting started with AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html)
+- [aws s3 ls](https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html)
+
+</details>
+
+## AWS Identity and Access Management (IAM)
+
+<details>
+  <summary>AWS Identity and Access Management</summary>
+
+## Introduction
+
+This lesson introduces **AWS Identity and Access Management (IAM)**—the service you use to **authenticate** and **authorize** access to an AWS account. You connect through the **Management Console**, the **command line interface (CLI)**, and the **API** (including SDKs). The core identities are **users**, **user groups**, **roles**, and **policies**. You also cover **access keys**, **identity-based** and **resource-based policies**, **multi-factor authentication (MFA)**, **password policies**, **Amazon Resource Names (ARNs)**, and why you **lock away the root user** after setup.
+
+## Detailed Explanation
+
+- [x] **Why IAM comes first**
+  - The first thing to understand in detail is how to **securely connect** to your AWS account.
+  - You connect through the **console**, the **CLI**, and the **API**.
+  - Learn the constructs: **users**, **groups**, **roles**, and **policies**.
+  - Learn how you **authenticate** and are **authorized** to access AWS services.
+  - Mechanisms include **access keys**, **identity-based policies**, and **resource-based policies**.
+  - Configure **MFA** and **password policies** so accounts stay as secure as possible.
+  - Know IAM **best practices** for the exam and for keeping real accounts secure.
+- [x] **What IAM is**
+  - **IAM** = **Identity and Access Management** (sometimes said **I-am**).
+  - It is the service used for **authentication** and **authorization**.
+  - You manage AWS through the **console**, the **CLI**, and the **API** via **SDKs**.
+  - Through IAM you can create **users** and **roles**, use **federated users**, and enable **authentication for applications**.
+- [x] **Principals must be authenticated**
+  - All IAM **principals** must be **authenticated** to send requests (any **API request** to AWS).
+  - A **principal** is a **person** or **application** that requests an **API action / operation** on an AWS **resource**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a2222001-6d5c-4aef-975b-3e0e96e74118" />
+
+- [x] **Authentication vs authorization**
+  - **Authentication:** proving you are who you say you are (for example, supplying a **password**).
+  - **Authorization:** being **allowed** or **denied** access to resources.
+  - **Policies** (identity-based and resource-based) define **what you are allowed to do**.
+  - Flow: **authenticate first**, then AWS determines what you may do.
+  - Example authorized API actions:
+    - **RunInstances** on **EC2** — launch a virtual server
+    - **GetBucket** — retrieve information about buckets
+    - **CreateUser** — create a user in IAM
+  - API actions are authorized **on the AWS resources**.
+- [x] **Core IAM components**
+  - **Users**, **user groups**, **roles**, and **policies**.
+  - **User groups:** add users, then apply **permissions policies** to the group.
+  - A **user** can log in with a user account.
+  - A **policy** determines which **API actions** the user may take in the account or on a specific resource.
+  - Attach policies to a **group** so you manage **one policy** for many people with the same job role.
+  - Users **inherit** the permissions applied to the group through the policy.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e52c0364-d2d7-4101-905f-12689fd27cf3" />
+
+- [x] **Identity-based policies**
+  - Applied to **users**, **groups**, and **roles**.
+  - They grant the permissions those identities get when they make requests.
+- [x] **Roles (delegation)**
+  - Roles are used for **delegation** and are **assumed**.
+  - A role is an **identity** with permissions assigned via **policy**.
+  - You **assume the role** and take on those permissions (like putting on a **hat**).
+  - Example: put on a **development** hat for development permissions, then switch to an **ops** hat for ops permissions.
+- [x] **What policies do**
+  - Policies define **permissions** for the **identities** or **resources** they are associated with.
+- [x] **Root user vs creating IAM users**
+  - Creating the account with an **email address** creates the **root user**.
+  - Root has **full permissions**; you **cannot restrict most** of them.
+  - **Best practice:** do **not** use the root account for daily work.
+  - Set a **very strong password** and enable **MFA** on root.
+  - Then create **IAM user** accounts for people.
+  - You can create up to **5,000** individual user accounts.
+  - **New IAM users have no permissions by default** — an important exam fact.
+  - If you enable **Management Console** access, the user can **log in** but **cannot do anything** until you apply permissions.
+- [x] **Friendly name and ARN**
+  - Example user: **Andrea**.
+  - The **friendly name** is a simple **text string** (here, her name).
+  - She logs in with that name plus a **password**.
+  - Every AWS resource has an **Amazon Resource Name (ARN)** — a **unique identifier** in AWS.
+  - An IAM user ARN includes:
+    - That it is an **AWS** / **IAM** resource
+    - The **account number**
+    - The resource type **user**
+    - The **friendly name** (for example, Andrea)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/afa6d266-4ea9-46d3-a8a5-4bf5436efa13" />
+
+- [x] **How an IAM user authenticates**
+  - **Management Console:** **username** and **password**, optionally **MFA**.
+  - **CLI** and **API:** **access keys**.
+- [x] **User groups**
+  - Help from a **management** perspective.
+  - Example groups: **admin**, **development**, **operations**.
+  - Add users to groups; some users may be in **multiple groups**.
+  - Attach a **permissions policy** to the group; members **automatically inherit** it.
+  - If a user is in multiple groups, the permission sets are **combined**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e33ccd7-9bd9-4e8e-a705-01e2fad66265" />
+
+- [x] **Authentication methods in more detail**
+  - Console: **username / password** plus an **MFA token** for extra security (example: John authenticated and performing operations in the console).
+  - CLI and API need **credentials**.
+  - One way: generate an **access key ID** and a **secret access key** (like a username and password for programmatic use).
+  - Use those via the **CLI** and **API** to authenticate to the AWS API.
+  - **AWS Security Token Service (STS)** can generate **short-term credentials**.
+  - **Access keys** are for **programmatic access**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c3bb0672-ac60-4d5a-826c-e7d47e5b9fe3" />
+
+- [x] **Root user vs IAM user (summary)**
+  - **Root:** log in with the **email** used when you created the account; **full**, **unrestricted** access; some permissions **cannot** be restricted.
+  - A few actions still **require root**, but once the account is running you mostly **do not need it**.
+  - **Lock root away** and do not use it for daily work.
+  - **IAM user:** has a **friendly name**; you log in with the account **alias** or **account ID**.
+  - Permissions come from **permissions policies**.
+  - If **no policies** are applied **directly** or via **groups**, the user has **no permissions**.
+  - Enable permissions by assigning policies **directly**, or **preferably through a user group**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/13eea521-9f00-4216-942e-884ad51f9555" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. Hands-on IAM work comes in later **HOL** lessons.
+
+### **Overview**
+
+- [ ] This lesson explains IAM identities and authentication; there is no console walkthrough here.
+- [ ] You will:
+  - [ ] Distinguish **authentication** from **authorization**.
+  - [ ] Recall **users**, **groups**, **roles**, and **policies**.
+  - [ ] Remember that **new IAM users have no permissions by default**.
+  - [ ] Plan to **lock away root** (strong password + **MFA**) and use IAM users for daily work.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this IAM theory lesson. Later HOL lessons use the console, CLI, and access keys.
+
+```bash
+# No commands in this topic; the lesson is IAM concepts only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code in this lesson. The unique identifier for an IAM user is an **ARN**. Example shape:
+
+```text
+arn:aws:iam::123456789012:user/Andrea
+```
+
+- [x] **arn** — Amazon Resource Name
+- [x] **aws** — AWS partition
+- [x] **iam** — IAM service
+- [x] **123456789012** — account number
+- [x] **user** — resource type
+- [x] **Andrea** — friendly name
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is AWS IAM, and why is it important?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **IAM** is **Identity and Access Management**.
+- [x] It is the service used for **authentication** and **authorization**.
+- [x] You need it to **securely connect** to an AWS account through the **console**, **CLI**, and **API**.
+
+</details>
+
+### Question 2: What three ways can you manage AWS?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **Management Console**
+- [x] The **command line interface (CLI)**
+- [x] The **API** through **SDKs**
+
+</details>
+
+### Question 3: What is an IAM principal?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **person** or **application** that makes a request for an **API action / operation** on an AWS **resource**.
+- [x] All principals must be **authenticated** before they can send requests to AWS.
+
+</details>
+
+### Question 4: What is the difference between authentication and authorization?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Authentication** proves you are who you say you are (for example, a **password**).
+- [x] **Authorization** **allows** or **denies** access to resources.
+- [x] **Policies** define what you are allowed to do.
+
+</details>
+
+### Question 5: After you authenticate, what does AWS do next?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS determines **what you are allowed to do**.
+- [x] That includes authorizing **API actions** on AWS **resources**.
+
+</details>
+
+### Question 6: Give three example API actions mentioned in this lesson.
+
+<details>
+<summary>Answer</summary>
+
+- [x] **RunInstances** on **EC2** — launch a virtual server
+- [x] **GetBucket** — retrieve information about buckets
+- [x] **CreateUser** — create a user in IAM
+
+</details>
+
+### Question 7: What are the four core IAM components?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Users**
+- [x] **User groups**
+- [x] **Roles**
+- [x] **Policies**
+
+</details>
+
+### Question 8: How do user groups help you manage permissions?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Put users with a **common job role** in a group.
+- [x] Attach **one permissions policy** to the group.
+- [x] Members **inherit** those permissions, so you manage one policy instead of many.
+
+</details>
+
+### Question 9: What are identity-based policies applied to?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Users**
+- [x] **Groups**
+- [x] **Roles**
+
+</details>
+
+### Question 10: What is an IAM role?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **identity** with permissions assigned via **policy**.
+- [x] Used for **delegation**; you **assume** the role and take on those permissions.
+- [x] Like putting on a **hat** (for example, a development hat vs an ops hat).
+
+</details>
+
+### Question 11: What is the root user, and what is the best practice for it?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Created with the **email address** you used when you created the account.
+- [x] Has **full permissions**; you **cannot restrict most** of them.
+- [x] **Do not use it** for daily work.
+- [x] Set a **very strong password**, enable **MFA**, then **lock it away**.
+
+</details>
+
+### Question 12: How many IAM users can you create, and what permissions do they have by default?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Up to **5,000** individual user accounts.
+- [x] They have **no permissions by default**.
+- [x] They can log in if console access is enabled, but they **cannot do anything** until you apply permissions.
+
+</details>
+
+### Question 13: What is a friendly name, and what is an ARN?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **friendly name** is a simple **text string** used to log in (for example, **Andrea**).
+- [x] An **ARN** (**Amazon Resource Name**) is the **unique identifier** for that resource in AWS.
+- [x] An IAM user ARN includes that it is an **IAM user**, the **account number**, and the **friendly name**.
+
+</details>
+
+### Question 14: How does an IAM user authenticate to the console vs the CLI and API?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Console:** **username** and **password**, optionally **MFA**.
+- [x] **CLI** and **API:** **access keys** (**access key ID** and **secret access key**).
+
+</details>
+
+### Question 15: What happens if a user belongs to multiple groups?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The user gains **multiple sets of permissions**.
+- [x] Those permission sets are **combined**.
+
+</details>
+
+### Question 16: What are access keys, and what is STS used for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **access key ID** and **secret access key** are like a username and password for **programmatic access**.
+- [x] They authenticate the **CLI** and **API** to the AWS API.
+- [x] **AWS Security Token Service (STS)** generates **short-term credentials**.
+
+</details>
+
+### Question 17: When you log in as an IAM user, what do you supply besides the username?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **alias** for the account **or** the **account ID**.
+- [x] Plus the user’s credentials (password for the console).
+
+</details>
+
+### Question 18: How does an IAM user get permissions?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Through **permissions policies**.
+- [x] Policies can be attached **directly** to the user or via **groups**.
+- [x] If no policies apply, the user has **no permissions**.
+- [x] Prefer assigning policies through a **user group**.
+
+</details>
+
+### Question 19: Which IAM identities can you create besides users, and what else can IAM enable?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Roles**
+- [x] **Federated users**
+- [x] **Authentication for applications**
+
+</details>
+
+### Question 20: Besides policies and access keys, what two account-security features should you configure?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Multi-factor authentication (MFA)**
+- [x] **Password policies**
+
+</details>
+
+</details>
+
+## Summary
+
+**IAM** authenticates and authorizes **principals** (people or applications) before they can send **API** requests via the **console**, **CLI**, or **API/SDKs**. Core pieces are **users**, **groups**, **roles**, and **policies**. **Authenticate** first (prove who you are), then **authorization** (policies allow or deny actions on resources). **Identity-based policies** attach to users, groups, and roles; **roles** are **assumed**. **Root** has nearly unrestricted access—use a strong password and **MFA**, then **lock it away**. New IAM users have a **friendly name**, an **ARN**, and **no permissions by default**; grant access preferably via **groups**. Console login uses username/password (plus optional MFA); programmatic access uses **access keys**; **STS** issues **short-term credentials**.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+- [IAM identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)
+- [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
+- [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+- [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+- [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+- [The AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
+- [IAM identifiers (ARNs)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html)
+- [IAM access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
+- [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
+- [Multi-factor authentication](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+- [Setting an account password policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)
+
+</details>
+
+<details>
+  <summary>Creating IAM Users and Groups</summary>
+
+## Introduction
+
+This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, then creates an **IAM user** with **Management Console** access and adds that user to the group so they **inherit** admin permissions. You copy the one-time **console sign-in** details, log in from a **private window**, switch to **US East (N. Virginia)** if needed, and from this point use the **IAM user**—not **root**—for course labs. AWS recommends **IAM Identity Center** for SSO and multi-account access, but this course still uses **IAM** because it is **core to the exams**.
+
+## Detailed Explanation
+
+- [x] **Goal of this lesson**
+  - Open the **IAM** service in the **AWS Management Console**.
+  - Create a **user account** you can log in with.
+  - Assign that user to a **group**.
+  - Log in **as that user**.
+  - A new account may have **no IAM users** yet.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8578f52c-b9ca-4e92-b178-35c55046c8df" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a4c2821-1d16-4e5b-ad3d-37714e4de681" />
+
+- [x] **Create the group first (permissions live on the group)**
+  - The **user group** is how you assign permissions to the user.
+  - Attach the policy to the **group**, add the **user** to the group, and the user **inherits** those permissions.
+  - Instructor group name: **admins** (the user will be an administrative account).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d36978a-c826-47ce-8340-0bbcbe145533" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f720ca0b-c4ca-499a-a37d-60a90bdb6d9b" />
+
+- [x] **AdministratorAccess is a very powerful policy**
+  - Attach **AdministratorAccess**.
+  - IAM policies are written in **JSON** (**JavaScript Object Notation**).
+  - Expanding the policy shows:
+    - **Effect:** `Allow`
+    - **Action:** `*` — a **wildcard** meaning **any / all actions**
+    - **Resource:** `*` — another **wildcard**, **all resources**
+  - Meaning: **allow all actions on all resources** (you can do anything).
+  - That is what this course admin user needs.
+  - Create the group (bottom right).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ac90128-db2b-401f-a8ff-a93d1b0ae185" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d653e6bd-46d6-4a4f-8b44-2603a9bd040e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be09e8ec-2bc2-418c-8d2c-bdd00e55281c" />
+
+- [x] **Create the IAM user with console access**
+  - Open **Users** → **Create user**.
+  - Instructor username: **Neil** (use **your own** name).
+  - Select **Provide user access to the AWS Management Console**.
+  - That lets the user log in to the **console**, not only **programmatic** methods.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/425eafa6-48d6-4a02-b281-9c69771d6dc2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cadb6265-778b-413f-aba4-d57c8f865bb6" />
+
+- [x] **IAM user vs IAM Identity Center**
+  - AWS now **recommends** **IAM Identity Center**.
+  - Identity Center offers **single sign-on (SSO)**, access to **business applications**, and **multiple accounts**.
+  - It is a useful service; AWS is encouraging people to use it.
+  - This course covers Identity Center **later**.
+  - You still need **IAM**: it is **core to the AWS exams**, and the instructor uses IAM for most of his accounts because he often does **not** need SSO.
+  - For this lesson, choose **create an IAM user**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4941f3b2-9358-4531-bb6c-8514086dc073" />
+
+- [x] **Password options**
+  - Set a **custom password**.
+  - **Deselect** the requirement to **change the password at next login**.
+  - Click **Next**.
+- [x] **Add the user to the group (prefer groups over direct policies)**
+  - Add the user to the **admins** group.
+  - Other options exist: **copy permissions from existing users**, or **attach policies directly**.
+  - For **multiple users with the same permissions**, a **group** is better than attaching policies to every individual user—easier to **manage**.
+  - Click **Next**, then **Create user**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e17387e-0180-42f8-8b95-3e61b2711c09" />
+
+- [x] **Console sign-in details (copy now)**
+  - After create, AWS shows **console sign-in** details (the IAM sign-in URL from earlier, plus username and password).
+  - **Copy** them so you can log in as this user.
+  - Username example: **Neil**.
+  - The **console password** is shown **once**; if you forget it you must **change it later**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4568fab-4bfa-43b1-8c46-9f3c7d24c439" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7830a084-400a-42b9-919d-88537f6dd317" />
+
+- [x] **Log in as the IAM user**
+  - Return to the **user list**.
+  - Open a **private / incognito window** so you can log in separately (root can stay signed in in the original window).
+  - Paste the **IAM sign-in link**.
+  - Enter **username** and **password**, then **Sign in**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4f348af4-598f-497f-bb03-2bdd7d22cbbb" />
+
+- [x] **Region: N. Virginia for most course labs**
+  - After sign-in the console may land in another region (instructor was put in **Ohio** after being in **US East**).
+  - Switch back to **US East (N. Virginia) `us-east-1`**.
+  - Most labs in this course run in **N. Virginia**.
+  - It is **not always** essential, but often **required** depending on the **code** or **instructions** provided.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fdefa821-8fec-4d60-b22e-d9fd28e3999e" />
+
+- [x] **From now on, do not use root**
+  - You should see you are logged in as the IAM user (instructor: **Neil** at **DCT Lab training**).
+  - This account has **full administrative permissions** for the **lab exercises** in this course.
+  - From now on, log in with your **individual IAM user**, **not** the **root** account.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d99fe606-1ce6-4c3c-82a4-cd095799ae80" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Stay signed in as **root** in one browser session while you create the group and user. Then sign in as the new IAM user in a **private window**. Use **your** username, not the instructor’s **Neil**.
+
+### **Overview**
+
+- [ ] Create an **admins** group with **AdministratorAccess**, create a console IAM user, and log in as that user.
+- [ ] You will:
+  - [ ] Open **IAM** and create a group named **admins**.
+  - [ ] Attach **AdministratorAccess** (`Allow` / `*` / `*`).
+  - [ ] Create an IAM user with **console access** and a **custom password**.
+  - [ ] Add the user to **admins** and copy the **sign-in URL** and password.
+  - [ ] Sign in from a **private window** and switch to **N. Virginia** if needed.
+- [ ] Success: you are signed in as the IAM user with **admin** permissions, and you will use this user (not root) for later labs.
+
+### **Task 1: Open IAM**
+
+- [ ] Sign in to the **AWS Management Console** as **root** (this is the last root daily-use step).
+- [ ] Search for **IAM** and open **Identity and Access Management**.
+- [ ] Confirm there may be **no IAM users** yet.
+
+### **Task 2: Create the admins group**
+
+- [ ] Create a **user group** (do this **before** the user).
+- [ ] Name the group **admins**.
+- [ ] Attach the **AdministratorAccess** permissions policy.
+- [ ] Expand the policy and confirm it is **JSON**:
+  - [ ] **Effect:** `Allow`
+  - [ ] **Action:** `*` (wildcard — all actions)
+  - [ ] **Resource:** `*` (wildcard — all resources)
+- [ ] Meaning: **allow all actions on all resources**.
+- [ ] Click **Create group** (bottom right).
+
+<details>
+<summary>AdministratorAccess (JSON)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+### **Task 3: Create the IAM user with console access**
+
+- [ ] Open **Users** → **Create user**.
+- [ ] Enter a **username** (your name; instructor used **Neil**).
+- [ ] Select **Provide user access to the AWS Management Console**.
+- [ ] When AWS recommends **IAM Identity Center**, choose **create an IAM user** instead (Identity Center comes later; IAM is what the exam needs here).
+- [ ] Set a **custom password**.
+- [ ] **Deselect** **Users must create a new password at next sign-in**.
+- [ ] Click **Next**.
+
+### **Task 4: Add the user to admins and create the user**
+
+- [ ] Add the user to the **admins** group.
+- [ ] Do **not** attach policies directly unless you have a reason; groups are easier when several people share the same permissions.
+- [ ] Skip **copy permissions from existing users** unless you already have a template user.
+- [ ] Click **Next**, then **Create user**.
+
+### **Task 5: Copy console sign-in details**
+
+- [ ] On the success page, copy:
+  - [ ] The **console sign-in URL** (IAM user sign-in link from the earlier alias lesson)
+  - [ ] The **username**
+  - [ ] The **console password**
+- [ ] Store the password now — you **will not** see it again; you would have to **reset** it later.
+- [ ] Return to the **user list**.
+
+### **Task 6: Sign in as the IAM user**
+
+- [ ] Open a **private / incognito** browser window.
+- [ ] Paste the **IAM sign-in URL**.
+- [ ] Enter the **username** and **password**.
+- [ ] Click **Sign in**.
+- [ ] If the region is not **US East (N. Virginia) `us-east-1`** (for example **Ohio**), switch to **N. Virginia**.
+- [ ] Confirm the console shows you as **your-user@your-account** (instructor: **Neil** at **DCT Lab training**).
+- [ ] Confirm this user can perform admin work for later labs.
+
+Successfully created the **admins** group and an IAM user with **AdministratorAccess**, and signed in as that user. From now on, use this **IAM user**, not **root**.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. You create the group and user in the **IAM console** and sign in through the browser.
+
+```bash
+# No commands in this topic; the walkthrough is console-only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+**AdministratorAccess** is an AWS managed policy. `*` is a **wildcard**. Together, **Effect Allow**, **Action \***, and **Resource \*** mean the identity can perform **any API action** on **any resource**.
+
+<details>
+<summary>AdministratorAccess policy JSON</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Why create a user group before the IAM user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **group** is how you assign **permissions** to the user.
+- [x] Attach the policy to the **group**, add the **user** to the group, and the user **inherits** those permissions.
+
+</details>
+
+### Question 2: What group name and policy did the instructor use for the admin account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Group name: **admins**
+- [x] Policy: **AdministratorAccess**
+
+</details>
+
+### Question 3: What does the AdministratorAccess JSON statement allow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Effect:** `Allow`
+- [x] **Action:** `*` — **all actions** (wildcard)
+- [x] **Resource:** `*` — **all resources** (wildcard)
+- [x] Meaning: **allow all actions on all resources**.
+
+</details>
+
+### Question 4: What language are IAM policies written in?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **JSON** (**JavaScript Object Notation**)
+
+</details>
+
+### Question 5: What console option must you select so the IAM user can log in to the Management Console?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Provide user access to the AWS Management Console**
+- [x] Without it, the user would only have **programmatic** access methods.
+
+</details>
+
+### Question 6: What does AWS recommend instead of creating an IAM user, and why skip it here?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS recommends **IAM Identity Center**.
+- [x] It provides **SSO**, access to **business applications**, and **multiple accounts**.
+- [x] This course covers it **later**.
+- [x] You still create an **IAM user** because **IAM is core to the exams**.
+
+</details>
+
+### Question 7: Why does the instructor still use IAM for most of his accounts?
+
+<details>
+<summary>Answer</summary>
+
+- [x] He often does **not** need **single sign-on**.
+- [x] IAM is still what he uses for most accounts in this course.
+
+</details>
+
+### Question 8: How should you set the new user’s password in this lab?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set a **custom password**.
+- [x] **Deselect** the requirement to **change the password at next login**.
+
+</details>
+
+### Question 9: Besides adding a user to a group, what other permission options exist?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Copy permissions** from existing users.
+- [x] **Attach policies directly** to the user.
+
+</details>
+
+### Question 10: Why prefer a group over attaching policies to every user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When **multiple users** need the **same permissions**, one group policy is easier to **manage**.
+- [x] You do not attach the same policy to every individual user account.
+
+</details>
+
+### Question 11: What must you copy after you create the user, and why immediately?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **console sign-in URL**, **username**, and **console password**.
+- [x] The password is shown **once**; if you forget it you must **change / reset** it later.
+
+</details>
+
+### Question 12: Why sign in from a private / incognito window?
+
+<details>
+<summary>Answer</summary>
+
+- [x] So you can log in as the **IAM user** **separately**.
+- [x] The original window can stay signed in as **root** while you test the new user.
+
+</details>
+
+### Question 13: Which region should you use for most labs in this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **US East (N. Virginia) `us-east-1`**
+- [x] After IAM sign-in, the console may land elsewhere (instructor was put in **Ohio**).
+- [x] Switch back; many labs require N. Virginia because of **course code** or **instructions**.
+
+</details>
+
+### Question 14: After this lesson, which account should you use for daily lab work?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Your **individual IAM user**.
+- [x] **Not** the **root** account.
+- [x] The IAM user has **full administrative permissions** for the course labs.
+
+</details>
+
+### Question 15: What is the permission inheritance path used in this lab?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **AdministratorAccess** is attached to the **admins** group.
+- [x] The IAM user is a **member** of **admins**.
+- [x] The user **inherits** admin permissions from the group.
+
+</details>
+
+### Question 16: What does a star (`*`) mean in an IAM policy?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is a **wildcard**.
+- [x] On **Action**, it means **any / all actions**.
+- [x] On **Resource**, it means **all resources**.
+
+</details>
+
+</details>
+
+## Summary
+
+Create an **admins** group and attach **AdministratorAccess** (`Allow`, `Action *`, `Resource *` — all actions on all resources). Create an **IAM user** with **console access**, a **custom password**, and **no** forced password change, then add the user to **admins** so they **inherit** admin rights. Prefer **groups** over attaching policies to every user. Copy the **sign-in URL** and password **immediately** (the password is shown once). Sign in from a **private window**, switch to **N. Virginia (`us-east-1`)** if needed, and use this **IAM user**—not **root**—for remaining labs. Skip **IAM Identity Center** for now; IAM is still **core to the exams**.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+- [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+- [AWS managed policy: AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html)
+- [IAM JSON policy elements](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+- [How IAM users sign in to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_sign-in.html)
+- [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
+- [IAM and AWS STS condition context keys (Action / Resource wildcards)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)
+
+</details>
+
+<details>
+  <summary>Setup Individual User Account</summary>
+
+## Introduction
+
+This **HOL** creates the **individual IAM user** you will use for the rest of the course. There are two user types: the **root user** (the signup **email**, **full and unrestricted** access—**do not** use it day to day) and an **IAM user** (a **friendly name** plus the **account ID or alias**, with permissions from an **IAM policy**). You create the IAM user **with no permissions**, confirm that default, then create an **admins** group with the AWS managed **AdministratorAccess** policy, add the user to the group, **sign out of root**, and sign back in as the IAM user.
+
+## Detailed Explanation
+
+- [x] **Two types of user**
+  - **Root user:** created with the **email address** you specified when you created the AWS account.
+  - Root has **full and unrestricted** access; it is very difficult to **remove** those permissions or privileges.
+  - Root is a **very powerful** user; **best practice is not to use it**.
+  - After the account exists: set a **really strong password**, **hide it away**, and **do not use root again**.
+  - **IAM user:** a **friendly name** (for example **John**) plus the **account ID** or **alias**.
+  - That is what you use to **sign in to the console**.
+  - Apply permissions with an **IAM permissions policy**.
+- [x] **Create the IAM user (still signed in as root)**
+  - Open the **IAM** console (search for **IAM**).
+  - **Users** → **Add users**.
+  - Instructor username: **Neil** (use **your** name).
+  - Select **Provide user access to the AWS Management Console**.
+  - AWS recommends a **federated identity through IAM Identity Center**—**do not** use that option here.
+  - Choose **create an IAM user**.
+  - Specify a **custom password**.
+  - **Do not** force a password change at next login.
+  - Click **Next**.
+  - You **can** add permissions now; **skip that**—click **Next**, then **Create user**.
+- [x] **How this user signs in**
+  - Use the **console sign-in URL**, or specify the **account alias** when signing in as an IAM user.
+  - You also need the **username**.
+  - Return to the **users** list.
+- [x] **IAM users have no permissions by default (critical)**
+  - Open the user: **no permissions policies** assigned.
+  - **Groups:** **no groups** assigned.
+  - The account can exist and sign in, but it **cannot do anything** until you grant permissions.
+- [x] **Best way to grant permissions: a group**
+  - **User groups** → **Create group**.
+  - Instructor group name: **admins** (a very powerful group with **full administrator access**).
+  - Search for **administrator** and select **AdministratorAccess**.
+  - This is an **AWS managed** policy (pre-created by AWS).
+  - Expand with the **plus** to see the **JSON** (**JavaScript Object Notation**).
+  - This simple policy: **Effect** = **Allow**, **Action** = `*` (**wildcard** = all actions), **Resource** = `*` (all resources) → **allow everything**.
+  - **Create group**.
+  - Open the group → **Add users** → select the IAM user → **Add users**.
+  - The user is now a **full administrative** user with **full access** to AWS.
+- [x] **Sign out of root and sign in as the IAM user**
+  - Top right → **Sign out**.
+  - Log back in and choose **IAM user** (not **root user**).
+  - Enter the **account ID** or **alias** (instructor: **DCT-Labs-AWS** — use **your** alias from the earlier lesson).
+  - Click **Next**, then enter **username** and **password**.
+  - Top right shows you as the IAM user (instructor: **Neil** at **DCT-Labs-AWS**).
+  - This user has **full administrative permissions**.
+  - Use this account for **all remaining lessons** in the course.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Stay signed in as **root** while you create the user and group. Use **your** username and **your** account alias. Skip Identity Center. Create the user **without** permissions first so you can see the empty default.
+
+### **Overview**
+
+- [ ] Create an IAM user with console access, prove it has **no** permissions, then grant admin via an **admins** group and sign in as that user.
+- [ ] You will:
+  - [ ] Create an IAM user with a **custom password** and **no** forced password change.
+  - [ ] Confirm **no policies** and **no groups**.
+  - [ ] Create **admins** with **AdministratorAccess** and **add the user** to the group.
+  - [ ] **Sign out** of root and sign in as the IAM user with your **alias**.
+- [ ] Success: the console shows **your-user@your-alias**, and you will use this user (not root) for the rest of the course.
+
+### **Task 1: Open IAM as root**
+
+- [ ] Sign in to the **AWS Management Console** as the **root user**.
+- [ ] Search for **IAM** and open **Identity and Access Management**.
+- [ ] You should see a dashboard similar to the instructor’s.
+
+### **Task 2: Create the IAM user with no permissions**
+
+- [ ] Choose **Users** → **Add users**.
+- [ ] Enter a **username** (your name; instructor used **Neil**).
+- [ ] Select **Provide user access to the AWS Management Console**.
+- [ ] Skip **IAM Identity Center** / federated identity; choose **create an IAM user**.
+- [ ] Set a **custom password**.
+- [ ] **Deselect** the option to **change the password at next login**.
+- [ ] Click **Next**.
+- [ ] **Do not** add permissions yet.
+- [ ] Click **Next**, then **Create user**.
+- [ ] Note the **console sign-in URL** (or that you will use your **account alias** plus **username**).
+- [ ] Return to the **users** list.
+
+### **Task 3: Confirm the user has no permissions**
+
+- [ ] Open the new user.
+- [ ] Confirm there are **no permissions policies** assigned.
+- [ ] Open **Groups** on the user and confirm there are **no groups**.
+- [ ] Remember: IAM users have **no permissions by default**.
+
+### **Task 4: Create the admins group and add the user**
+
+- [ ] Open **User groups** → **Create group**.
+- [ ] Name the group **admins**.
+- [ ] Search for **administrator** and attach **AdministratorAccess**.
+- [ ] Confirm it is an **AWS managed** (pre-created) policy.
+- [ ] Expand the policy (**plus**) and confirm the JSON:
+  - [ ] **Effect:** `Allow`
+  - [ ] **Action:** `*` (wildcard — all actions)
+  - [ ] **Resource:** `*` (all resources)
+- [ ] Meaning: **allow everything**.
+- [ ] Click **Create group**.
+- [ ] Open the **admins** group.
+- [ ] Click **Add users**, select your IAM user, then **Add users**.
+- [ ] The user now has **full administrative** access.
+
+<details>
+<summary>AdministratorAccess (JSON)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+### **Task 5: Sign out of root and sign in as the IAM user**
+
+- [ ] Top right → **Sign out**.
+- [ ] Choose **log back in**.
+- [ ] Select **IAM user** (not **root user**).
+- [ ] Enter your **account alias** or **account ID** (instructor: **DCT-Labs-AWS** — use yours).
+- [ ] Click **Next**.
+- [ ] Enter the **username** and **password**.
+- [ ] Sign in.
+- [ ] Top right should show **your-user@your-alias** (instructor: **Neil** at **DCT-Labs-AWS**).
+
+Successfully created an IAM user, granted admin via the **admins** group, and signed in as that user. Use this account for the **remainder of the course**, not root.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. You create the user and group in the **IAM console** and sign in through the browser.
+
+```bash
+# No commands in this topic; the walkthrough is console-only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+**AdministratorAccess** is an **AWS managed** policy. `*` is a **wildcard**. **Effect Allow** plus **Action \*** plus **Resource \*** means **allow all actions on all resources**.
+
+<details>
+<summary>AdministratorAccess policy JSON</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What are the two types of user in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **root user**
+- [x] An **IAM user**
+
+</details>
+
+### Question 2: How is the root user created, and what access does it have?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is created with the **email address** you specified when you created the AWS account.
+- [x] It has **full and unrestricted** access.
+- [x] It is very difficult to **remove** those permissions or privileges.
+
+</details>
+
+### Question 3: What is the best practice for the root user after you create the account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set a **really strong password**.
+- [x] **Hide** that password away.
+- [x] **Do not use** the root user account again for daily work.
+
+</details>
+
+### Question 4: What do you use to sign in as an IAM user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **friendly name** (for example **John** or **Neil**)
+- [x] Plus the **account ID** or **account alias**
+- [x] Permissions come from an **IAM permissions policy**
+
+</details>
+
+### Question 5: Should you use IAM Identity Center in this lab?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** AWS recommends a **federated identity through Identity Center**, but you **skip** that option here.
+- [x] Create an **IAM user** instead.
+
+</details>
+
+### Question 6: How should you set the password when creating the IAM user in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Specify a **custom password**.
+- [x] **Do not** force a password change at next login.
+
+</details>
+
+### Question 7: Do you attach permissions while creating the user in this walkthrough?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Click **Next** without adding permissions, then **Create user**.
+- [x] Permissions are added later through a **group**.
+
+</details>
+
+### Question 8: What is the most important default about a new IAM user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The user has **no permissions by default**.
+- [x] There are **no permissions policies** assigned.
+- [x] There are **no groups** assigned.
+
+</details>
+
+### Question 9: What is the best way to assign permissions to the user in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Through a **user group**.
+- [x] Create the group, attach a policy, then **add the user** to the group.
+
+</details>
+
+### Question 10: What group and policy grant full admin in this lab?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Group name: **admins**
+- [x] Policy: **AdministratorAccess**
+- [x] It is an **AWS managed** policy (pre-created by AWS).
+
+</details>
+
+### Question 11: What does the AdministratorAccess JSON allow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Effect:** `Allow`
+- [x] **Action:** `*` — **wildcard**, all actions
+- [x] **Resource:** `*` — all resources
+- [x] Meaning: **allow everything**.
+
+</details>
+
+### Question 12: After the group exists, how do you attach the user in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Open the **admins** group.
+- [x] Click **Add users**, select the IAM user, then **Add users**.
+
+</details>
+
+### Question 13: How do you switch from root to the IAM user after setup?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Top right → **Sign out**.
+- [x] Log back in and choose **IAM user** (not **root user**).
+- [x] Enter the **account alias** or **account ID**, then **username** and **password**.
+
+</details>
+
+### Question 14: What alias did the instructor type at IAM sign-in?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **DCT-Labs-AWS**
+- [x] Use **your own** alias (or account ID), not his.
+
+</details>
+
+### Question 15: After you sign in as the IAM user, which account do you use for the rest of the course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] This **individual IAM user**.
+- [x] It has **full administrative permissions**.
+- [x] **Not** the **root** account.
+
+</details>
+
+### Question 16: In which language are IAM policies defined?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **JSON** (**JavaScript Object Notation**)
+
+</details>
+
+</details>
+
+## Summary
+
+**Root** is the signup **email** with **unrestricted** access—set a strong password and **stop using it**. Create an **IAM user** with a **friendly name**, **console access**, and a **custom password** (no forced change), and **do not** attach permissions at create time. New IAM users have **no policies and no groups**. Create an **admins** group, attach the AWS managed **AdministratorAccess** policy (`Allow` / `*` / `*`), **add the user** to the group, **sign out of root**, and sign in as the IAM user with your **account alias**. Use that admin IAM user for the **remainder of the course**. Skip **IAM Identity Center** for this lab.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
+- [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+- [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+- [The AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
+- [AWS managed policy: AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html)
+- [IAM JSON policy elements](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+- [How IAM users sign in to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_sign-in.html)
+- [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
+- [Using an alias for your AWS account ID](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html)
+
+</details>
+
+<details>
+  <summary>Setup Multi-Factor Authentication</summary>
+
+## Introduction
+
+This lesson covers **IAM authentication methods** and **multi-factor authentication (MFA)**. **Username and password** (optionally plus an **MFA token**) authenticate you to the **Management Console**. **Access keys** (**access key ID** plus **secret access key**) are **long-term credentials** for the **CLI** and **API**. MFA adds **something you have** (a virtual authenticator app or a hardware token) to **something you know** (your password). AWS does **not** use biometrics (**something you are**). Enable MFA on the **root** account and on your **IAM user**. The hands-on walkthrough assigns a virtual MFA device to your IAM user, then proves console sign-in now requires a one-time code.
+
+## Detailed Explanation
+
+- [x] **Two ways to authenticate to AWS**
+  - Example user: **John**.
+  - **Management Console:** **username** and **password**.
+  - Optionally supply an **MFA token** as well.
+  - After authentication, IAM **authorizes** the operations John can perform in the console.
+  - **CLI** and **API:** **access keys**, not the console password.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5f956b4d-de3c-40b9-842e-ff9946cea1ea" />
+
+- [x] **Access keys (programmatic / long-term credentials)**
+  - An access key has two parts: an **access key ID** and a **secret access key**.
+  - Think of them as a **username and password** for programmatic use.
+  - They are **long-term credentials**: you create them, they stay in the account, and you can use them while the key is **active**.
+  - You must **download a copy** when you create the key; AWS will not show the secret again.
+  - Use them with the **AWS CLI** or by calling the **API** directly (including SDKs).
+  - **Access keys** = programmatic access; **username and password** = console access.
+- [x] **What MFA adds (authentication factors)**
+  - **Something you know:** your **password** — a secret you should not write down or share.
+  - **Something you have:** a **physical device** in your possession.
+    - A **smartphone** with an authenticator app that generates a token.
+    - A **hardware token** / security key (cryptography on the device proves you have it).
+  - **Something you are (biometrics):** retina scans, fingerprints — **not used in AWS**.
+  - Even if someone learns your password, they still need the **second device**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9c7ee48-a514-4b98-a60f-be6a7c70a541" />
+
+- [x] **Virtual MFA vs hardware MFA**
+  - **Virtual MFA device:** an authenticator app on a phone or computer (examples: **Google Authenticator**, **Authy**).
+  - **Hardware:** **security keys** and **time-based one-time password (TOTP)** tokens.
+  - The second factor is an **authentication code / token** from that device.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0ee82e3d-9371-4c30-9b7d-427820842842" />
+
+- [x] **Best practice**
+  - Enable MFA for the **root** account.
+  - Enable MFA for **individual IAM user** accounts as well.
+  - You are then less exposed if a password is guessed, leaked, or lost.
+  - With MFA enabled, you must have the **physical device present** to sign in to the **console**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd3566c9-76f5-4936-8ad7-cd568e2b3004" />
+
+- [x] **MFA for CLI and API**
+  - MFA can also protect **CLI** and **API** access.
+  - That setup is covered **later in the course**; this lesson focuses on **console MFA**.
+- [x] **HOL: assign MFA to your IAM user**
+  - Sign in as your **individual IAM user** (not only as root).
+  - The IAM dashboard may recommend **Add MFA** for **root** and for **yourself**.
+  - Assign the device from the user’s **Security credentials** tab (you can also use the **Add MFA** button).
+  - Choose an **authenticator app**, name the device (instructor: **AuthyPhone**), scan the **QR code**, then enter **two consecutive** MFA codes.
+  - Sign out and sign back in: after password, AWS prompts for the **current MFA code**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5080b63f-f20e-4234-9002-4fc3243ef712" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/60bd8cb7-df86-4424-b410-df38d13d5ed5" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/56a6bee2-b4fa-489b-bd05-cd7d327cfd57" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f52487fa-bad5-4652-bbfd-1441552d6732" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96b80976-e800-4aa2-8746-3c6bfa522d3c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/79211840-3e76-425b-865e-e17007b08f6b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b27bb8a-a0c8-4532-9cf4-509306320143" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7239a011-6978-49b1-a3d3-4cfa4500f154" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4ed28301-8d1b-48dd-96ff-1a7526c6b6cb" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Stay signed in as your **individual IAM user**. Use **your** authenticator app and **your** one-time codes — the numbers in the video belong to the instructor and expire quickly. You can also enable MFA on **root**; this walkthrough does it for the IAM user.
+
+### **Overview**
+
+- [ ] Assign a **virtual MFA** device to your IAM user and prove console sign-in requires a second code.
+- [ ] You will:
+  - [ ] Open the IAM user → **Security credentials** → assign an MFA device.
+  - [ ] Choose an **authenticator app**, name the device, and scan the **QR code**.
+  - [ ] Enter **two consecutive** TOTP codes, then save.
+  - [ ] **Sign out** and sign back in with username, password, **and** MFA code.
+- [ ] Success: after password, the console asks for an MFA code, and you sign in with two-factor authentication.
+
+### **Task 1: Open IAM as your IAM user**
+
+- [ ] Sign in to the **AWS Management Console** as your **individual IAM user**.
+- [ ] Search for **IAM** and open **Identity and Access Management**.
+- [ ] Note the security recommendations if shown:
+  - [ ] **Add MFA** for the **root user**.
+  - [ ] **Add MFA** for your **IAM user**.
+- [ ] You could click **Add MFA**, but this walkthrough goes through the **user** record instead.
+
+### **Task 2: Start assigning an MFA device**
+
+- [ ] Open **Users** and choose **your username**.
+- [ ] Open the **Security credentials** tab.
+- [ ] Choose **Assign MFA device** (or equivalent **assign / manage MFA** action).
+- [ ] Select **Authenticator app** (examples: **Google Authenticator** or **Authy**).
+- [ ] Give the device a name (instructor: **AuthyPhone** — use a name you will recognize).
+- [ ] Note that **security keys** and **hardware tokens** are also options; this lab uses the app.
+- [ ] Click **Next**.
+
+### **Task 3: Register the authenticator app**
+
+- [ ] Complete the three setup steps:
+  - [ ] **Install** an authenticator app (for example **Google Authenticator** or **Authy**) on your phone or computer if you do not already have one.
+  - [ ] **Show the QR code** on the AWS page and **scan** it with the app.
+  - [ ] Or, if you cannot scan, **type the secret key** into the app instead.
+- [ ] After the app is linked, it displays a **six-digit** code that changes on a timer.
+
+### **Task 4: Enter two consecutive MFA codes**
+
+- [ ] Type the **current** MFA code from the app into the **first** code box (instructor example: **414018** — use yours).
+- [ ] Wait for that code to **expire**.
+- [ ] Type the **next** code into the **second** code box (instructor example: **561486** — use yours).
+- [ ] Confirm / **Add MFA**.
+- [ ] The virtual MFA device is now assigned to the IAM user.
+
+### **Task 5: Prove MFA at console sign-in**
+
+- [ ] **Sign out** of the console.
+- [ ] Sign in again as an **IAM user**.
+- [ ] Enter your **account ID** or **alias**, **username**, and **password**.
+- [ ] AWS now prompts for the **MFA code**.
+- [ ] Enter the **current** code from the app (instructor example: **820902** — use yours) and submit.
+- [ ] You should be signed in again, now with **two-factor authentication**.
+
+Successfully assigned a virtual MFA device to the IAM user and signed in with username, password, and MFA code.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. You assign MFA and sign in through the **IAM console**. MFA for the **CLI** and **API** is covered later in the course.
+
+```bash
+# No commands in this topic; the walkthrough is console-only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code in this lesson. MFA setup is done in the **IAM console** with an authenticator app (QR code or secret key) and two consecutive TOTP codes.
+
+```text
+# No code snippets in this topic.
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What credentials authenticate you to the AWS Management Console?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **username** and **password**.
+- [x] Optionally, an **MFA token** as well.
+
+</details>
+
+### Question 2: What credentials authenticate you to the CLI and API?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Access keys**.
+- [x] They are used for **programmatic access**, not console login.
+
+</details>
+
+### Question 3: What two values make up an access key?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **access key ID**.
+- [x] A **secret access key**.
+- [x] Together they work like a **username and password** for the API.
+
+</details>
+
+### Question 4: Why are access keys called long-term credentials?
+
+<details>
+<summary>Answer</summary>
+
+- [x] You create them and they are **stored in the account**.
+- [x] You can use them **as long as the key remains active**.
+- [x] You must **download a copy** when you create the key so you can use it yourself.
+
+</details>
+
+### Question 5: What is the difference between console credentials and access keys?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Username and password** are for **Management Console** access.
+- [x] **Access keys** are for **CLI** and **API** (programmatic) access.
+
+</details>
+
+### Question 6: What are the three classic authentication factors, and which does AWS MFA use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Something you know** — a **password**.
+- [x] **Something you have** — a phone app or hardware token.
+- [x] **Something you are** — biometrics (retina, fingerprint).
+- [x] AWS MFA uses **something you know** plus **something you have**.
+- [x] AWS does **not** use biometrics for this.
+
+</details>
+
+### Question 7: How does MFA help if someone learns your password?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They still need the **second factor** — the physical device or authenticator.
+- [x] You must have that device **present** to complete console sign-in.
+
+</details>
+
+### Question 8: What is a virtual MFA device?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **authenticator app** on a smartphone or computer.
+- [x] Examples from the lesson: **Google Authenticator** and **Authy**.
+- [x] It generates a **time-based one-time password (TOTP)** code.
+
+</details>
+
+### Question 9: What hardware MFA options does the lesson mention?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Security keys**.
+- [x] **Time-based one-time password (TOTP)** hardware tokens.
+
+</details>
+
+### Question 10: For which identities is MFA a best practice?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **root** account.
+- [x] **Individual IAM user** accounts as well.
+
+</details>
+
+### Question 11: Can you use MFA with the CLI and API in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] MFA **can** be used with the **CLI** and **API**.
+- [x] That configuration is covered **later in the course**.
+- [x] This lesson sets up MFA for **console** sign-in.
+
+</details>
+
+### Question 12: From which IAM page do you assign an MFA device to yourself in the lab?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Open your **IAM user**.
+- [x] Go to **Security credentials**.
+- [x] Choose **Assign MFA device**.
+- [x] You could also use the dashboard **Add MFA** button; the lab uses the user record.
+
+</details>
+
+### Question 13: What three steps register an authenticator app?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Install** the authenticator app on your phone or computer.
+- [x] **Scan the QR code** on the AWS page (or type the **secret key**).
+- [x] Enter **MFA codes** from the app to prove the device is linked.
+
+</details>
+
+### Question 14: Why does AWS ask for two MFA codes when you assign the device?
+
+<details>
+<summary>Answer</summary>
+
+- [x] You enter the **current** code, wait for it to **expire**, then enter the **next** code.
+- [x] Two consecutive TOTP codes prove the authenticator is in sync with AWS.
+
+</details>
+
+### Question 15: What extra prompt appears after MFA is enabled when you sign in to the console?
+
+<details>
+<summary>Answer</summary>
+
+- [x] After **account ID** (or alias), **username**, and **password**, AWS asks for the **MFA code**.
+- [x] You type the **current** code from the authenticator and submit.
+
+</details>
+
+### Question 16: After this lab, what authentication do you use for console access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Two-factor authentication**.
+- [x] Password (**something you know**) plus MFA code from the device (**something you have**).
+
+</details>
+
+### Question 17: Should you reuse the MFA codes shown in the video?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Those codes belong to the **instructor’s** authenticator and expire in seconds.
+- [x] Always use the **current** codes from **your** app.
+
+</details>
+
+</details>
+
+## Summary
+
+**Console** access uses **username and password** (plus optional **MFA**). **CLI** and **API** access use **access keys** (**access key ID** + **secret access key**) — **long-term** programmatic credentials you must **download** when created. MFA adds **something you have** (virtual app such as **Google Authenticator** / **Authy**, or a **security key** / TOTP hardware token) to **something you know**. AWS does **not** use biometrics. Enable MFA on **root** and on **IAM users**. In the lab, assign an **authenticator app** from **Security credentials**, scan the **QR code**, enter **two consecutive** codes, then sign out and sign back in with the extra MFA prompt.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [AWS multi-factor authentication in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+- [Assign an MFA device in the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable.html)
+- [Enable a virtual MFA device (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
+- [IAM user passwords](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords.html)
+- [Manage access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
+- [Configure MFA-protected API access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html)
+
+</details>
+
+<details>
+  <summary>Permissions Boundaries</summary>
+
+## Introduction
+
+**Permissions boundaries** are an **advanced IAM** feature. They set the **maximum permissions** an IAM **entity** can receive from an **identity-based policy**. The boundary is assigned to **users** and **roles**. Effective access is limited to what appears on **both** the identity-based policy **and** the boundary — extra actions on the policy but missing from the boundary are **blocked**. This lesson uses **Joanne** (developer vs boundary) and **Lindsay** (IAM full access vs privilege escalation) to show why boundaries matter and how they stop a created user from becoming **more powerful** than the person who created them.
+
+## Detailed Explanation
+
+- [x] **What a permissions boundary is**
+  - An **advanced IAM** feature.
+  - It defines the **maximum permissions** available to an IAM **entity** via an **identity-based policy**.
+  - You assign a boundary to **users** and to **roles**.
+  - The identity-based policy can _offer_ more; the boundary **caps** what is actually allowed.
+- [x] **Example: Joanne (developer policy + tighter boundary)**
+  - **Joanne** needs access to certain AWS resources.
+  - She has a **developer** identity-based policy with **full control** of:
+    - **Amazon S3**
+    - **Amazon CloudWatch**
+    - **Amazon EC2**
+    - **IAM**
+  - A **permissions boundary** is also assigned to Joanne **directly**.
+  - The boundary has **fewer** permissions: only **S3**, **CloudWatch**, and **EC2** (no IAM).
+  - Result: even though the developer policy includes **IAM**, IAM is **not** on the boundary, so those actions are **limited**.
+  - She **can** do things like **list buckets** in Amazon S3.
+  - She **cannot** **create a user** in IAM.
+  - The boundary restricted the **maximum** permissions that can be assigned to Joanne.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ee4ee652-51ca-4a82-ad7e-9347677150bb" />
+
+- [x] **Effective permissions (intersection)**
+  - Allowed actions must be present on the **identity-based policy** _and_ on the **permissions boundary**.
+  - Developer policy: S3 + CloudWatch + EC2 + IAM.
+  - Boundary: S3 + CloudWatch + EC2.
+  - Effective: **S3 + CloudWatch + EC2** only.
+- [x] **Privilege escalation (the attack)**
+  - **Lindsay** has **IAM Full Access**.
+  - She can do **anything in IAM**, but **not** other AWS services.
+  - She **cannot** launch **EC2** instances or create **VPCs**.
+  - She creates a user called **X-User**.
+  - Because she has IAM full access, she can **create users** and **attach any policy**.
+  - She attaches **AdministratorAccess** to **X-User**.
+  - **X-User** is now **more powerful than Lindsay**.
+  - She signs in as **X-User** and performs actions she should not (lesson example: **mine Bitcoins** on company spend).
+  - That is a **privilege escalation** attack: create a user with **more** permissions than you have, then act as that user.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f00e0857-1215-4e70-b7db-ba94bd0d9c8a" />
+
+- [x] **Mitigation with a permissions boundary**
+  - Lindsay still needs **IAM Full Access** — that is her **job role**.
+  - Add a **permissions boundary** so users **she creates** have the **same or fewer** permissions than she does.
+  - She can still create **X-User** and still attach **AdministratorAccess**.
+  - When she signs in as that user, the user does **not** get more permissions than Lindsay already has.
+  - The boundary **prevents privilege escalation**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91233bca-4ece-4805-a4a5-8a13136ed8ee" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. There is no console walkthrough. Later IAM lessons apply these ideas in HOL work.
+
+### **Overview**
+
+- [ ] This lesson explains **permissions boundaries** and **privilege escalation**; there is nothing to click in the console here.
+- [ ] You will:
+  - [ ] Remember that a boundary sets the **maximum** permissions for a **user** or **role**.
+  - [ ] Trace **Joanne**: developer policy includes IAM, boundary does not → she cannot create IAM users.
+  - [ ] Trace **Lindsay**: IAM Full Access without a boundary can create a more powerful user (**X-User** + **AdministratorAccess**).
+  - [ ] Remember that a boundary on created users keeps them at the **same or fewer** permissions than Lindsay.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. Permissions boundaries are explained conceptually; you do not attach them from the CLI here.
+
+```bash
+# No commands in this topic; the lesson is conceptual only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No policy JSON is shown in this lesson. Effective permissions are the **overlap** of the identity-based policy and the permissions boundary.
+
+```text
+# Joanne — identity-based (developer): S3, CloudWatch, EC2, IAM
+# Joanne — permissions boundary:        S3, CloudWatch, EC2
+# Joanne — effective permissions:       S3, CloudWatch, EC2
+# (IAM create-user is denied: it is on the policy but not on the boundary.)
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is a permissions boundary in IAM?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **advanced IAM** feature.
+- [x] It defines the **maximum permissions** an IAM **entity** can have via an **identity-based policy**.
+
+</details>
+
+### Question 2: Which IAM entities can you assign a permissions boundary to?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Users**
+- [x] **Roles**
+
+</details>
+
+### Question 3: How do an identity-based policy and a permissions boundary work together?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The boundary **caps** what the identity-based policy can grant.
+- [x] An action is allowed only if it is on **both** the policy **and** the boundary.
+- [x] Extra permissions on the policy that are **missing** from the boundary are **blocked**.
+
+</details>
+
+### Question 4: What services does Joanne’s developer policy allow full control of?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Amazon S3**
+- [x] **Amazon CloudWatch**
+- [x] **Amazon EC2**
+- [x] **IAM**
+
+</details>
+
+### Question 5: What services are on Joanne’s permissions boundary?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Amazon S3**
+- [x] **Amazon CloudWatch**
+- [x] **Amazon EC2**
+- [x] **Not IAM** — the boundary has **fewer** permissions than the developer policy.
+
+</details>
+
+### Question 6: Can Joanne list S3 buckets? Can she create an IAM user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes** — she can **list buckets** in Amazon S3 (S3 is on both the policy and the boundary).
+- [x] **No** — she **cannot create a user** in IAM (IAM is on the policy but **not** on the boundary).
+
+</details>
+
+### Question 7: What is privilege escalation in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Creating a user that has **more permissions** than you do.
+- [x] Then **signing in as that user** and performing API actions you should not be able to perform.
+
+</details>
+
+### Question 8: What can Lindsay do with IAM Full Access, and what can she not do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] She can do **anything in IAM**.
+- [x] She **cannot** use other AWS services with that policy alone.
+- [x] Examples she cannot do: **launch EC2** instances or **create VPCs**.
+
+</details>
+
+### Question 9: How does Lindsay escalate privileges in the attack scenario?
+
+<details>
+<summary>Answer</summary>
+
+- [x] She creates **X-User**.
+- [x] She attaches **AdministratorAccess** (she can assign **any** policy because she has IAM full access).
+- [x] **X-User** is now **more powerful than Lindsay**.
+- [x] She signs in as **X-User** and abuses the extra access (lesson example: **mine Bitcoins** on company spend).
+
+</details>
+
+### Question 10: Why can Lindsay attach AdministratorAccess to X-User in the attack?
+
+<details>
+<summary>Answer</summary>
+
+- [x] She has **IAM Full Access**.
+- [x] That lets her **create users** and **assign any policy** she wants.
+
+</details>
+
+### Question 11: After the boundary is applied, does Lindsay still get IAM Full Access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** She still needs those permissions for her **job role**.
+- [x] The boundary is added **in addition**, not as a replacement for her job policy.
+
+</details>
+
+### Question 12: How does a permissions boundary stop Lindsay’s privilege escalation?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Users **created by Lindsay** are limited to the **same or fewer** permissions than she has.
+- [x] She can still create **X-User** and still attach **AdministratorAccess**.
+- [x] When she signs in as that user, the user does **not** get more permissions than Lindsay already has.
+
+</details>
+
+### Question 13: After mitigation, can Lindsay still create X-User and attach AdministratorAccess?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes** — she can still create the user and attach the policy.
+- [x] The boundary means **X-User** still cannot exceed Lindsay’s maximum permissions.
+
+</details>
+
+### Question 14: Who is a permissions boundary assigned to in the Joanne example?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To **Joanne directly** (the IAM user / entity).
+- [x] It is **in addition to** her identity-based **developer** policy.
+
+</details>
+
+### Question 15: If a policy grants IAM but the boundary does not, what happens?
+
+<details>
+<summary>Answer</summary>
+
+- [x] IAM is **not** effectively allowed.
+- [x] The missing service on the boundary **limits** the entity.
+- [x] Example: Joanne cannot **create a user** even though the developer policy includes IAM.
+
+</details>
+
+</details>
+
+## Summary
+
+A **permissions boundary** sets the **maximum** permissions an IAM **user** or **role** can get from an **identity-based policy**. Effective access is the **overlap** of both. **Joanne** has a developer policy (S3, CloudWatch, EC2, **IAM**) and a tighter boundary (S3, CloudWatch, EC2 only), so she can **list S3 buckets** but **cannot create IAM users**. **Lindsay** with **IAM Full Access** can create **X-User**, attach **AdministratorAccess**, and sign in as a **more powerful** user (**privilege escalation**). Adding a boundary so users she creates have the **same or fewer** permissions than she does still lets her create users and attach admin, but blocks the extra power.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+- [When to use permissions boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html#access_policies_boundaries-when-to-use)
+- [AWS managed policy: IAMFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMFullAccess.html)
+- [AWS managed policy: AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html)
+- [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
+
+</details>
+
+<details>
+  <summary>IAM policy evaluation</summary>
+
+## Introduction
+
+This lesson covers **IAM policy evaluation logic**: what AWS does when a principal tries to access a resource. Every decision **starts with deny** (nothing is allowed by default). An **explicit deny** always wins. Then AWS walks applicable **SCPs**, **resource-based policies**, **identity-based policies**, **permissions boundaries**, and **session policies**, looking for an **allow**. Requests arrive from the **console**, **CLI**, or **API**; IAM **authenticates** first, then builds a **request context** and evaluates **all** relevant policies. Effective permissions depend on the combination: identity + resource is a **union**; identity + boundary or identity + SCP is an **intersection**.
+
+## Detailed Explanation
+
+- [x] **Default: start with deny**
+  - Every decision **starts with a deny**.
+  - Permissions are **not allowed by default** — everything is denied until AWS finds an **allow**.
+  - AWS then evaluates **all applicable policies**.
+- [x] **Explicit deny always wins**
+  - If any applicable policy has an **explicit deny**, the **final decision is deny**.
+  - An explicit deny **always overrides** any allow.
+  - If there is no explicit deny, evaluation continues.
+- [x] **AWS Organizations SCPs**
+  - AWS checks whether the principal’s **account** is in an **organization** with an applicable **service control policy (SCP)**.
+  - If **no** applicable SCP, skip to the next stage.
+  - If there **is** an SCP: there must be an **allow** for the action.
+  - SCP present but **no allow** → **deny**.
+  - SCP **allow** → continue.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c98c7faa-db9b-45a3-b952-1a19fa1951d8" />
+
+- [x] **Resource-based policy**
+  - Does the requested resource have a **resource-based policy**?
+  - Example: **Amazon S3 bucket policies**.
+  - If a resource-based policy exists, AWS checks for an **allow**.
+  - How resource-based and identity-based policies combine is covered **later**; if there is a resource-based allow, that path still matters.
+  - If there is **no** resource-based allow, evaluation continues to **identity-based** policies.
+- [x] **Identity-based policy**
+  - If an identity-based policy applies, AWS checks for an **allow**.
+  - **No allow** in the resource-based policy **and** **no allow** in the identity-based policy → **implicit deny**.
+  - If there **is** an allow for the action, evaluation continues.
+- [x] **Permissions boundary**
+  - AWS checks whether the principal has a **permissions boundary**.
+  - If **yes**, the boundary must also **allow** the action for that principal.
+  - Boundary allow → continue.
+  - Boundary does **not** allow → **deny**.
+- [x] **Session principal / session policy**
+  - AWS checks whether the principal is a **session principal**.
+  - If **no** → **allow** (at this stage).
+  - If **yes** → there must be a **session policy** with an **allow**; otherwise **deny**.
+  - The instructor also notes a **role session** check on the AWS chart (this stage is dense — spend time on the official evaluation diagram).
+- [x] **Steps for authorizing a request**
+  - Requests come from the **Management Console**, the **CLI**, or the **API**, and go to **IAM**.
+  - **1. Authenticate** the principal (prove who they are). Example: **username and password** for the console.
+  - **2. Form the request context**, then **process** it (evaluate policies).
+  - **3. Decide** whether the request is **allowed** or **denied**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/830afefb-b062-4dc8-bda9-f509fa6f858a" />
+
+- [x] **What is in the request context**
+  - **Actions:** operations the principal wants to perform.
+  - **Resources:** AWS objects/services the actions target.
+  - **Principal:** the **user**, **role**, **federated user**, or **application** that sent the request.
+  - **Environment data:** **IP address**, **user agent**, **SSL** status, and similar — needed for policies that restrict by **source IP**.
+  - **Resource data:** data related to the resource being requested.
+- [x] **Processing the request context (example)**
+  - The user has an **identity-based** policy.
+  - The **S3 bucket** has a **resource-based** policy (bucket policy).
+  - AWS evaluates **all** policies in the **account**.
+  - Example request: **S3 GetObject** to retrieve an object — allowed if the evaluation grants that action.
+- [x] **Policy types**
+  - **Identity-based policies:** attached to **users**, **groups**, and **roles**.
+  - **Resource-based policies:** attached to **resources**; they define permissions for a **specific principal** to access that resource.
+  - **Permissions boundaries:** set the **maximum** permissions identity-based policies can grant an **IAM entity**.
+  - **Organizations SCPs:** set the **maximum** permissions for an **organization** or **organizational unit (OU)** and the **accounts** in that org/OU.
+  - **Session policies:** used with **AssumeRole** API actions.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9157bf4b-e2b2-490a-af94-7bda5ab05078" />
+
+- [x] **Effective permissions when multiple policies apply**
+  - **Identity-based + resource-based:** effective permissions are those granted in **either** policy (**union**).
+  - **Identity-based + permissions boundary:** effective permissions are only those allowed in **both** (**intersection**).
+  - **Identity-based + Organizations SCP:** effective permissions are those granted in **both** (**intersection**).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5739ec8b-5fbe-4e12-8869-42f7c12ec210" />
+
+- [x] **Determination rules (exam facts)**
+  - By default, requests are **implicitly denied**.
+  - The **root user** has **full access**.
+  - An **explicit allow** in an **identity-based** or **resource-based** policy **overrides** the default deny.
+  - If a **permissions boundary**, **Organizations SCP**, or **session policy** is present, it **might override** that allow with an **implicit deny**.
+  - An **explicit deny** in **any** policy **overrides any allows**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e728dd00-622e-482c-a6e5-9dacd7b7cd4a" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. There is no console walkthrough. Use the evaluation chart and the determination rules for exam revision.
+
+### **Overview**
+
+- [ ] This lesson is **policy evaluation logic** only; you do not attach policies in the console here.
+- [ ] You will:
+  - [ ] Remember: default **deny**, then look for an **allow**; **explicit deny** always wins.
+  - [ ] Walk SCP → resource-based → identity-based → permissions boundary → session policy.
+  - [ ] Contrast **union** (identity + resource) vs **intersection** (identity + boundary, identity + SCP).
+  - [ ] Recite the **request context** fields: actions, resources, principal, environment data, resource data.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. Evaluation happens inside AWS when a request is made; you do not run a separate “evaluate policy” CLI in this video.
+
+```bash
+# No commands in this topic; the lesson is conceptual only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code in this lesson. Use this as a study sketch of **effective permissions** (not a runnable policy).
+
+```text
+# Combinations (as in the lesson)
+identity + resource-based     => UNION         (allow in either)
+identity + permissions boundary => INTERSECTION (allow in both)
+identity + Organizations SCP  => INTERSECTION  (allow in both)
+
+# Determination rules
+default          => implicit deny (except root: full access)
+explicit allow   => overrides default deny (identity- or resource-based)
+boundary / SCP / session policy present => may override allow with implicit deny
+explicit deny    => overrides any allow (any policy)
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How does every IAM authorization decision start?
+
+<details>
+<summary>Answer</summary>
+
+- [x] With a **deny**.
+- [x] Permissions are **not allowed by default**.
+- [x] AWS then looks for an **allow** while evaluating **all applicable policies**.
+
+</details>
+
+### Question 2: What happens if any policy contains an explicit deny?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **final decision is deny**.
+- [x] An **explicit deny always overrides** any allow.
+
+</details>
+
+### Question 3: When does AWS evaluate an Organizations SCP?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When the principal’s **account** is in an **organization** with an **applicable SCP**.
+- [x] If there is no applicable SCP, evaluation **skips** this stage.
+- [x] If an SCP applies but has **no allow**, the decision is **deny**.
+
+</details>
+
+### Question 4: What is an example of a resource-based policy in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **Amazon S3 bucket policy**.
+- [x] Resource-based policies are attached to the **resource**, not to the user.
+
+</details>
+
+### Question 5: When is the result an implicit deny at the identity/resource stage?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When there is **no allow** in the **resource-based** policy.
+- [x] **And** there is **no allow** in the **identity-based** policy.
+
+</details>
+
+### Question 6: What does AWS check if the principal has a permissions boundary?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Whether the **permissions boundary** also **allows** the action.
+- [x] If it does not allow → **deny**.
+- [x] If it allows → evaluation **continues**.
+
+</details>
+
+### Question 7: What happens if the principal is a session principal?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS checks for a **session policy** with an **allow**.
+- [x] Session policy allow → **allow**.
+- [x] No session-policy allow → **deny**.
+- [x] If the principal is **not** a session principal, this stage can result in **allow**.
+
+</details>
+
+### Question 8: Where can an access request come from, and what is the first IAM step?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **Management Console**, the **CLI**, or the **API**.
+- [x] First, IAM **authenticates** the principal (for example, **username and password** at the console).
+
+</details>
+
+### Question 9: What information is in the request context?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Actions** (operations the principal wants to perform)
+- [x] **Resources** (the AWS objects/services those actions target)
+- [x] **Principal** (user, role, federated user, or application)
+- [x] **Environment data** (IP address, user agent, SSL status, and similar)
+- [x] **Resource data** (data related to the requested resource)
+
+</details>
+
+### Question 10: Why is environment data (such as source IP) in the request context?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A policy might **restrict access** based on **source IP address**.
+- [x] AWS needs that information in the context to evaluate those conditions.
+
+</details>
+
+### Question 11: In the S3 example, which policies does AWS evaluate?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The user’s **identity-based** policy.
+- [x] The bucket’s **resource-based** policy.
+- [x] AWS evaluates **all** applicable policies in the **account**.
+- [x] The example action is **S3 GetObject**.
+
+</details>
+
+### Question 12: Where is each policy type attached, and what does it control?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Identity-based:** attached to **users**, **groups**, and **roles**.
+- [x] **Resource-based:** attached to **resources**; permissions for a **specific principal** to access that resource.
+- [x] **Permissions boundaries:** **maximum** permissions identity-based policies can grant an **IAM entity**.
+- [x] **Organizations SCPs:** **maximum** permissions for an **organization** or **OU** and the **accounts** in it.
+- [x] **Session policies:** used with **AssumeRole** API actions.
+
+</details>
+
+### Question 13: What are the effective permissions for identity-based plus resource-based policies?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Permissions granted in **either** policy.
+- [x] That is a **union**, not an intersection.
+
+</details>
+
+### Question 14: What are the effective permissions for identity-based plus a permissions boundary?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Only permissions allowed in **both** the identity-based policy **and** the boundary.
+- [x] That is an **intersection**.
+
+</details>
+
+### Question 15: What are the effective permissions for identity-based plus an Organizations SCP?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Permissions granted in **both** the **SCP** and the **identity-based** policy.
+- [x] That is an **intersection**.
+
+</details>
+
+### Question 16: What is the default for requests, and what is special about the root user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] By default, requests are **implicitly denied**.
+- [x] The **root user** has **full access**.
+
+</details>
+
+### Question 17: How can an explicit allow still fail, and what always wins?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **explicit allow** in an identity-based or resource-based policy **overrides** the default deny.
+- [x] A **permissions boundary**, **SCP**, or **session policy** might still override that allow with an **implicit deny**.
+- [x] An **explicit deny** in **any** policy **overrides any allows**.
+
+</details>
+
+</details>
+
+## Summary
+
+IAM evaluation **starts with deny**. An **explicit deny** in any policy **always wins**. AWS then checks an **Organizations SCP** (if the account is in an org), a **resource-based** policy (for example an **S3 bucket policy**), an **identity-based** policy, a **permissions boundary**, and a **session policy** for session principals. No allow in resource-based **and** identity-based is an **implicit deny**. Requests from the **console**, **CLI**, or **API** are **authenticated** first; the **request context** holds **actions**, **resources**, **principal**, **environment data**, and **resource data**. Identity + resource = **union**; identity + boundary and identity + SCP = **intersection**. Root has full access; default is implicit deny; boundary/SCP/session can turn an allow into an implicit deny.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+- [Determining whether a request is allowed or denied within an account](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic-access-policy-language.html)
+- [Policy types](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+- [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
+- [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+- [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+- [Session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session)
+
+</details>
+
+<details>
+  <summary>IAM policy structure</summary>
+
+## Introduction
+
+This lesson is about **reading IAM policies in JSON** (**JavaScript Object Notation**). In AWS, the console, CLI, and SDKs all call **API actions** (for example **EC2 RunInstances**, **RDS StopDBInstance**). A policy is a JSON document with a **Version**, one or more **Statement** blocks, and in each statement an **Effect** (`Allow` or `Deny`), **Action** (API operations, often with `*` wildcards), and **Resource** (**ARNs**). You can allow or deny a single action, a family of actions, or a whole service. JSON must be valid — a missing comma breaks the policy. The slide example allows **all S3 actions** on a bucket **and** its objects, plus **DynamoDB Describe\*** on a named table.
+
+## Detailed Explanation
+
+- [x] **Everything is an API action**
+  - Console, **CLI**, and **SDK** usage all make **API calls**.
+  - Each service has its **own set** of API actions.
+  - Launching an EC2 instance in the console calls **EC2 `RunInstances`**.
+  - Stopping an RDS database (CLI or console) calls **RDS `StopDBInstance`**.
+  - Policies can be **narrow** (one action) or **broad** (an entire service, or more).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4982836d-a747-44d0-bbaa-d8272515fe09" />
+
+- [x] **Policies are JSON**
+  - All AWS IAM policies are written in **JSON** (**JavaScript Object Notation**).
+  - Formatting is strict: miss a **comma** and the policy **breaks**.
+  - **Visual Studio Code** and the **AWS Management Console** policy editor usually **highlight** JSON errors.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec7bacfb-710e-4028-8539-c4bb8cc3930d" />
+
+- [x] **Version**
+  - The top-level **Version** looks like a date (commonly **`2012-10-17`**).
+  - It is **not** a typo or “wrong date.”
+  - It identifies the **JSON policy language** version being used.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6c030749-004c-4135-ab18-7092e04159f8" />
+
+- [x] **Statement**
+  - A **statement** is a block of policy code.
+  - Each statement has **Effect**, **Action**, **Resource**, and related elements, evaluated **together**.
+  - A policy may contain **more than one** permission statement.
+  - Extra statements are additional JSON objects in the `Statement` array, separated by **commas**.
+- [x] **Effect**
+  - Only two values: **`Allow`** or **`Deny`**.
+  - Choose whether you want to **allow** or **deny** the listed actions on the listed resources.
+- [x] **Action**
+  - Lists the **resource operations** (API actions) the statement affects.
+  - Example: allow or deny **S3** and **DynamoDB** operations.
+  - You can be **specific** or **generic**.
+  - Slide examples:
+    - **`s3:*`** — **wildcard**; **all** S3 API actions.
+    - **`dynamodb:Describe*`** — more specific: every DynamoDB action whose name starts with **Describe** (for example **DescribeTable**).
+- [x] **Resource (ARNs)**
+  - Lists the **specific resources** the statement applies to, as **Amazon Resource Names (ARNs)**.
+  - **S3 needs two resource lines** in this example:
+    - Bucket ARN (bucket-level actions).
+    - Same ARN with **`/*`** (object-level actions — the files **in** the bucket).
+  - S3 has **bucket-level** API actions and **object-level** API actions; objects can have their **own** permissions.
+  - **`*`** on those two ARNs together means **all bucket-level and all object-level** permissions for that bucket (here, **Allow**).
+  - **DynamoDB:** one table ARN that includes **region**, **account number**, and **table name**.
+- [x] **Wildcard `*`**
+  - Means **everything from that point onward**.
+  - **`s3:*`** = every API action that starts with **`s3:`** — all Amazon S3 actions.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. You read a JSON policy on a slide; you do not create one in the console here.
+
+### **Overview**
+
+- [ ] This lesson is **how to read IAM JSON**; there is no console walkthrough.
+- [ ] You will:
+  - [ ] Map console/CLI clicks to **API actions** (for example **RunInstances**, **StopDBInstance**).
+  - [ ] Identify **Version**, **Statement**, **Effect**, **Action**, and **Resource**.
+  - [ ] Explain **`s3:*`**, **`dynamodb:Describe*`**, and why S3 lists **two** ARNs (bucket and `/*` objects).
+  - [ ] Remember JSON is strict — a missing **comma** invalidates the policy.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. Policy structure is explained from a JSON slide, not from the CLI.
+
+```bash
+# No commands in this topic; the lesson is conceptual only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+Illustrative JSON matching the slide: **Allow** all **S3** actions on a bucket **and** its objects, plus **DynamoDB `Describe*`** on one table. Replace the bucket name, account, region, and table with yours. **`Version`** is the policy language version, not a “wrong date.”
+
+<details>
+<summary>Example identity-based policy (JSON)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:*", "dynamodb:Describe*"],
+      "Resource": [
+        "arn:aws:s3:::example-bucket",
+        "arn:aws:s3:::example-bucket/*",
+        "arn:aws:dynamodb:us-east-1:123456789012:table/example-table"
+      ]
+    }
+  ]
+}
+```
+
+</details>
+
+- [x] **`s3:*`** — all S3 API actions.
+- [x] **`dynamodb:Describe*`** — DynamoDB actions that start with **Describe**.
+- [x] Two S3 ARNs: bucket-level, then **`/*`** for objects.
+- [x] DynamoDB ARN includes **region**, **account ID**, and **table name**.
+- [x] A second statement would be another object in the `Statement` array, separated by a **comma**.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What are you actually doing when you use the console, CLI, or SDK?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Making an **API call**.
+- [x] Each service has its **own set** of API actions.
+
+</details>
+
+### Question 2: Which API actions match launching an EC2 instance and stopping an RDS database?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Launch EC2: **`RunInstances`**.
+- [x] Stop RDS: **`StopDBInstance`**.
+
+</details>
+
+### Question 3: In what language are IAM policies written?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **JSON** (**JavaScript Object Notation**).
+- [x] All AWS policies use JSON.
+
+</details>
+
+### Question 4: What is the Version field at the top of a policy?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **JSON policy language** version.
+- [x] The date (commonly **`2012-10-17`**) is **correct**, not a typo.
+
+</details>
+
+### Question 5: What is a Statement, and can a policy have more than one?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **statement** is a block that holds **Effect**, **Action**, **Resource**, and related elements.
+- [x] Those elements in a statement are evaluated **together**.
+- [x] A policy **may contain more than one** permission statement (comma-separated in JSON).
+
+</details>
+
+### Question 6: What happens if you miss a comma in a JSON policy?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The policy **breaks** (invalid JSON).
+- [x] **VS Code** and the **Management Console** policy editor usually **highlight** the error.
+
+</details>
+
+### Question 7: What values can Effect have?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`Allow`**
+- [x] **`Deny`**
+- [x] Those are the **only two** effects.
+
+</details>
+
+### Question 8: What does the Action element list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **resource operations** (API actions) the policy affects.
+- [x] You choose **allow** or **deny**, then **which** actions.
+
+</details>
+
+### Question 9: What does `s3:*` mean?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **wildcard**.
+- [x] **All** Amazon S3 API actions (every action that starts with **`s3:`**).
+
+</details>
+
+### Question 10: What does `dynamodb:Describe*` mean?
+
+<details>
+<summary>Answer</summary>
+
+- [x] DynamoDB actions whose names start with **Describe**.
+- [x] Example: **DescribeTable**.
+- [x] More specific than `dynamodb:*`, still broader than a single action.
+
+</details>
+
+### Question 11: What does the Resource element list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **specific resources** the statement applies to.
+- [x] Identified by **Amazon Resource Names (ARNs)**.
+
+</details>
+
+### Question 12: Why does the S3 example use two resource ARNs?
+
+<details>
+<summary>Answer</summary>
+
+- [x] One ARN is **bucket-level** (the bucket itself).
+- [x] The ARN with **`/*`** is **object-level** (objects **inside** the bucket).
+- [x] S3 has **bucket-level** and **object-level** API actions.
+- [x] Together they allow **all bucket-level and all object-level** permissions for that bucket.
+
+</details>
+
+### Question 13: What does a DynamoDB table ARN include in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **account number**.
+- [x] The **region**.
+- [x] The **table name**.
+
+</details>
+
+### Question 14: What does the `*` wildcard mean in a policy?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Everything from that point** onward.
+- [x] Example: **`s3:*`** = all S3 API actions.
+
+</details>
+
+### Question 15: Can a policy allow a whole service instead of one API action?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Yes.** You can restrict or allow **individual** API actions.
+- [x] You can also write **broader** policies that allow or deny an **entire service** (or more).
+
+</details>
+
+</details>
+
+## Summary
+
+Console, CLI, and SDK calls are **API actions** (for example **EC2 RunInstances**, **RDS StopDBInstance**). IAM policies are **JSON**: **Version** (policy language, often **`2012-10-17`**), one or more **Statement** blocks, **Effect** (`Allow` or `Deny` only), **Action**, and **Resource** (ARNs). JSON must be valid — a missing **comma** breaks the policy; editors highlight errors. **`s3:*`** is all S3 actions; **`dynamodb:Describe*`** is Describe-family DynamoDB actions. S3 often needs **two** ARNs: the **bucket** and **`bucket/*`** for **objects**. A DynamoDB table ARN includes **region**, **account**, and **table name**. `*` means everything from that point.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [IAM JSON policy elements](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+- [IAM JSON policy elements: Version](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html)
+- [IAM JSON policy elements: Effect](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html)
+- [IAM JSON policy elements: Action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)
+- [IAM JSON policy elements: Resource](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)
+- [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html)
+- [Actions, resources, and condition keys for Amazon S3](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html)
+- [RunInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html)
+- [StopDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopDBInstance.html)
+
+</details>
+
+<details>
+  <summary>IAM policy simulator</summary>
+
+## Introduction
+
+This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **user**, **group**, or **role**, see the **policies**, **permissions**, and **boundaries** attached to it, choose a **service** and **API actions**, and **run a simulation** to see which actions are **allowed** or **denied**. That is how you inspect **aggregate** permissions when several policies apply (inline, group, boundary). **Existing policies** mode tests what is already attached. **New policy** mode opens a **policy sandbox** so you can paste JSON you plan to attach and simulate **before** you apply it.
+
+## Detailed Explanation
+
+- [x] **Open the IAM Policy Simulator**
+  - The lesson includes a **link**; otherwise search for **IAM Policy Simulator**.
+  - You should land on a page where the **left** side is the **context** (who the simulation applies to).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/29832ad8-4694-47ae-ae11-a7a75f9cab04" />
+
+- [x] **Context: users, groups, or roles**
+  - Choose whether the simulation runs against **users**, **groups**, or **roles**.
+  - **Users** is the default.
+  - **Groups:** the instructor has one **admin** group.
+  - **Roles:** a long list of roles in the account.
+  - Switch back to **Users** for this walkthrough.
+- [x] **Which user to simulate**
+  - Instructor users: **Neil** (full **admin** permissions) and **testuser** (from the **IAM policy generator** lesson).
+  - **testuser** only has a **few** **S3** API actions and some **EC2 instance** API actions.
+  - That limited user is the **better** simulation target — the results are easier to read than a full-admin user.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ae0e6020-091e-4de5-8633-441abb30a913" />
+
+- [x] **What appears after you select the user**
+  - The simulator lists **policies**, **permissions**, **boundaries**, and similar items **attached** to that user.
+  - Instructor example: **testuser** has an **inline** policy named **test poll**.
+  - Other policies might come from **groups**.
+  - You can also see or **simulate a permissions boundary**.
+- [x] **Why the simulator matters**
+  - With one simple inline policy, you are checking what that policy grants in the console.
+  - With a **large** or **complex** policy, or **several** policies (group + inline + boundary), the simulator shows the **aggregate** permissions the principal actually has.
+- [x] **Select a service and actions, then run**
+  - Pick a service (for example **EC2**).
+  - Choose **specific** actions, or **select all**.
+  - Click **Run simulation**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e3ac96d4-0749-4b0c-84c6-67869ac5afb1" />
+
+- [x] **EC2 simulation (allowed)**
+  - With **all** EC2 actions selected, the instructor’s **testuser** simulation returned **Allow** for those actions (in the **EC2** context).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8bd7d98e-90cf-49a2-bda3-db76bc3c6fa7" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b171fda8-1531-4a31-aeff-7490b70549bb" />
+
+- [x] **EC2 Auto Scaling simulation (denied)**
+  - **Amazon EC2 Auto Scaling** was **not** allowed in the policy.
+  - The UI can be **finicky**: **clear** previous results, select the service, **select all**, then run again.
+  - Result: Auto Scaling actions are **denied**.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36da6569-3743-4c5d-add6-25b6ee5883f0" />
+
+- [x] **S3 simulation (mostly denied)**
+  - Switch to **S3**, **clear** results, **select all** S3 actions, run.
+  - Most S3 actions are **denied**.
+  - **Allowed** in this example:
+    - **GetBucketLocation**
+    - **GetObject**
+    - **ListAllMyBuckets**
+    - **ListBucket**
+  - That is exactly what **testuser** can do on S3.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/069f83b7-5663-4b22-846f-bfe6055d94dc" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/71431233-0793-4215-9f3b-41471a940e2b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ba58b71-d3fe-4729-ae96-d51c3fd35cc9" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9ffd8851-9c97-41bd-8b68-4d32f6cbfa4e" />
+
+- [x] **Mode: existing policies vs new policy (sandbox)**
+  - Default mode: **existing policies** (what is already attached).
+  - **New policy** opens a **policy sandbox**.
+  - Paste JSON you **plan** to attach to a **user**, **group**, or **role**.
+  - You can make the statement **more restrictive**, **apply** it in the sandbox, **clear** results, **select all**, and **run** again.
+  - Instructor example: after removing some actions, only **GetObject** and **ListAllMyBuckets** stayed **allowed**.
+  - Use this to simulate permissions **before** you attach the policy in IAM.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/21a0bc4f-98c1-407d-976f-451401c387fa" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac79568a-1145-4e99-9717-96d0afbd9975" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c35cbdb5-3b27-4b18-95dd-5d3ce29bf67a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d71f5715-9175-4d8f-9024-b82f01030b06" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c82a29d-5716-4ff2-83a7-a49fe60ee935" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9af007c5-86a7-4d55-a363-c84e2b9189ee" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e23f9d7e-750e-45c7-9e42-242997be2e97" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Use the **IAM Policy Simulator** against a **limited** user (instructor: **testuser** from the policy generator lesson). Compare **existing** attached policies with a **new-policy sandbox**. If your account names differ, use **your** limited user instead of **testuser**.
+
+### **Overview**
+
+- [ ] Simulate **Allow** vs **Deny** for **EC2**, **EC2 Auto Scaling**, and **S3**, then test a **stricter** policy in the **sandbox**.
+- [ ] You will:
+  - [ ] Open the **IAM Policy Simulator** and set context to **Users**.
+  - [ ] Select **testuser** (or your limited user) and review attached policies / boundaries.
+  - [ ] Run **all** **EC2** actions (expect **Allow** in the instructor demo).
+  - [ ] Clear, run **EC2 Auto Scaling** (expect **Deny**).
+  - [ ] Clear, run **all** **S3** actions and note the few **Allow** results.
+  - [ ] Switch to **New policy**, paste / restrict JSON, simulate again.
+- [ ] Success: you can explain which S3 actions **testuser** can call, and you have simulated a policy you have **not** attached yet.
+
+### **Task 1: Open the IAM Policy Simulator**
+
+- [ ] Use the **link** on the lesson page, **or** search for **IAM Policy Simulator**.
+- [ ] Confirm you see a page with **context** on the **left** (**Users**, **Groups**, **Roles**).
+
+### **Task 2: Choose context and inspect identities**
+
+- [ ] Context defaults to **Users** — leave it there after you look at the other tabs.
+- [ ] Open **Groups** and note the instructor’s **admin** group (or **your** groups).
+- [ ] Open **Roles** and note that many roles can appear.
+- [ ] Switch back to **Users**.
+- [ ] Instructor users:
+  - [ ] **Neil** — full **admin**.
+  - [ ] **testuser** — limited **S3** and **EC2 instance** actions.
+
+### **Task 3: Select testuser and review attached policies**
+
+- [ ] Select **testuser** (or your limited user).
+- [ ] Review whatever is attached:
+  - [ ] **Inline** policy (instructor: **test poll**).
+  - [ ] Policies from **groups**, if any.
+  - [ ] **Permissions boundary**, if any — you can **simulate** a boundary here too.
+- [ ] You are checking the **aggregate** permissions this principal would have.
+
+### **Task 4: Simulate all EC2 actions**
+
+- [ ] Under services, choose **EC2**.
+- [ ] **Select all** actions (or pick specific ones if you want a narrower test).
+- [ ] Click **Run simulation**.
+- [ ] Confirm the instructor result: **EC2** actions show **Allow**.
+
+### **Task 5: Simulate EC2 Auto Scaling (expect deny)**
+
+- [ ] **Clear** the previous results (the simulator can be **finicky** if you leave old selections).
+- [ ] Choose **EC2 Auto Scaling** (Amazon EC2 Auto Scaling).
+- [ ] **Select all**, then **Run simulation**.
+- [ ] Confirm actions are **denied** — Auto Scaling was **not** in the attached policy.
+
+### **Task 6: Simulate all S3 actions**
+
+- [ ] **Clear** results.
+- [ ] Type **S3**, select **S3**.
+- [ ] **Select all** S3 actions (or pick specific actions).
+- [ ] **Run simulation**.
+- [ ] Expect **mostly Deny**. Note the **Allow** rows in the instructor demo:
+  - [ ] **GetBucketLocation**
+  - [ ] **GetObject**
+  - [ ] **ListAllMyBuckets**
+  - [ ] **ListBucket**
+
+### **Task 7: New policy mode (policy sandbox)**
+
+- [ ] At the top, change mode from **existing policies** to **new policy**.
+- [ ] The **policy sandbox** appears.
+- [ ] Paste the policy JSON from the **previous lesson** (IAM policy generator).
+- [ ] **Restrict** the **Action** list further (instructor removed some of the allowed actions).
+- [ ] **Apply** the sandbox policy.
+- [ ] **Clear** results, **select all** for the service you are testing, **Run simulation**.
+- [ ] Instructor result after tightening: **GetObject** and **ListAllMyBuckets** still **allowed**; more actions **denied**.
+- [ ] This is how you test a policy you **plan** to attach to a **user**, **group**, or **role** **before** you save it in IAM.
+
+Successfully used the simulator to read **aggregate** permissions on an existing user and to dry-run a **sandbox** policy.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. The **IAM Policy Simulator** is a **console / web** tool (search for it, or use the lesson link).
+
+```bash
+# No commands in this topic; use the IAM Policy Simulator in the browser.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code. The sandbox accepts **IAM JSON**. The first block reconstructs the **S3 Allow** rows from the **existing-policies** simulation on **testuser**. The second is the **stricter** sandbox after the instructor removed actions. Replace this with **your** previous-lesson policy if it differs.
+
+<details>
+<summary>S3 actions allowed for testuser (from the simulation)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetBucketLocation",
+        "s3:GetObject",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+<details>
+<summary>Stricter sandbox policy (after removing actions)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:ListAllMyBuckets"],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+- [x] **Existing policies** mode uses JSON **already attached** (instructor inline policy **test poll**).
+- [x] **New policy** mode lets you **paste**, **restrict**, **apply** in the sandbox, then simulate.
+- [x] **EC2** was allowed in the demo; **EC2 Auto Scaling** was not in the policy, so it **denied**.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is the IAM Policy Simulator for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Another **IAM** tool for testing permissions.
+- [x] You simulate **API actions** against a **user**, **group**, or **role**.
+- [x] Results show whether each action is **allowed** or **denied**.
+
+</details>
+
+### Question 2: How do you open the IAM Policy Simulator in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use the **link** attached to the lesson.
+- [x] Or **search** for **IAM Policy Simulator**.
+
+</details>
+
+### Question 3: What context can you simulate against?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Users**
+- [x] **Groups**
+- [x] **Roles**
+- [x] **Users** is the **default**.
+
+</details>
+
+### Question 4: Why did the instructor simulate testuser instead of Neil?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Neil** has **full admin** permissions, so almost everything would show **Allow**.
+- [x] **testuser** has only a **few** **S3** actions and some **EC2 instance** actions.
+- [x] A **limited** principal makes **Allow** vs **Deny** easier to see.
+
+</details>
+
+### Question 5: What does the simulator list after you select a user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Policies**, **permissions**, **boundaries**, and similar items **attached** to that user.
+- [x] Instructor example: an **inline** policy named **test poll**.
+- [x] Other policies can come from **groups**.
+- [x] You can also **simulate a permissions boundary**.
+
+</details>
+
+### Question 6: When is the simulator especially useful?
+
+<details>
+<summary>Answer</summary>
+
+- [x] When the policy is **large** or **complex**.
+- [x] When **several** policies apply (**group** + **inline** on the user, plus a **boundary**).
+- [x] You need the **aggregate** permissions, not one statement in isolation.
+
+</details>
+
+### Question 7: After you pick a service, what do you select before running?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Specific** API actions, **or** **select all**.
+- [x] Then click **Run simulation**.
+
+</details>
+
+### Question 8: What did the EC2 simulation return for testuser?
+
+<details>
+<summary>Answer</summary>
+
+- [x] With **all** EC2 actions selected, the demo showed **Allow**.
+- [x] That is the **EC2** service context, matching the EC2 instance actions on the user.
+
+</details>
+
+### Question 9: What did the EC2 Auto Scaling simulation return, and why?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Deny** for the Auto Scaling actions.
+- [x] Auto Scaling was **not** allowed in the attached policy.
+- [x] **Clear** old results if the UI is **finicky**, then **select all** and run again.
+
+</details>
+
+### Question 10: Which S3 actions were allowed for testuser in the demo?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **GetBucketLocation**
+- [x] **GetObject**
+- [x] **ListAllMyBuckets**
+- [x] **ListBucket**
+- [x] Other S3 actions were **denied**.
+
+</details>
+
+### Question 11: What is the difference between existing policies mode and new policy mode?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Existing policies** tests what is **already attached**.
+- [x] **New policy** opens a **policy sandbox**.
+- [x] In the sandbox you **paste JSON**, optionally **restrict** it, **apply**, and simulate.
+
+</details>
+
+### Question 12: What can you test in the policy sandbox?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A policy you **plan** to attach to a **user**, **group**, or **role**.
+- [x] You see what permissions that JSON would grant **before** you apply it in IAM.
+
+</details>
+
+### Question 13: What happened after the instructor restricted the sandbox policy?
+
+<details>
+<summary>Answer</summary>
+
+- [x] More actions returned **Access denied**.
+- [x] **GetObject** and **ListAllMyBuckets** were still **allowed**.
+
+</details>
+
+### Question 14: Why clear results between simulations?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The simulator can be **finicky**.
+- [x] Leftover service/action selections can confuse the next run.
+- [x] **Clear**, select the service, **select all** (or the actions you want), then **run**.
+
+</details>
+
+### Question 15: Does the simulator replace attaching the policy in IAM?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** It **simulates** the decision.
+- [x] **Existing** mode reads attached policies; **new policy** mode tests JSON in a **sandbox**.
+- [x] You still **attach** the policy in IAM when you are ready to grant it for real.
+
+</details>
+
+### Question 16: What identities did the instructor have under Users and Groups?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Users: **Neil** (admin) and **testuser** (limited).
+- [x] Groups: one **admin** group.
+- [x] Roles: **many** roles in the account.
+
+</details>
+
+### Question 17: What is a permissions boundary doing in this screen?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The simulator can **show** a boundary attached to the principal.
+- [x] You can **simulate** a permissions boundary as part of the evaluation.
+- [x] Boundaries cap the **maximum** permissions identity policies can grant.
+
+</details>
+
+</details>
+
+## Summary
+
+The **IAM Policy Simulator** tests **Allow** vs **Deny** for **API actions** on a **user**, **group**, or **role**. Open it from the lesson **link** or by searching. Pick a **limited** principal (instructor: **testuser** with inline policy **test poll**) so you can see **aggregate** permissions from inline, **group**, and **boundary** policies. Select a **service**, choose actions or **select all**, and **run**; **clear** results if the UI is sticky. Demo: **EC2** allowed, **EC2 Auto Scaling** denied, **S3** mostly denied except **GetBucketLocation**, **GetObject**, **ListAllMyBuckets**, and **ListBucket**. **New policy** mode is a **sandbox**: paste JSON you plan to attach, tighten it, and simulate **before** applying it in IAM.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Testing IAM policies with the IAM policy simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html)
+- [IAM Policy Simulator](https://policysim.aws.amazon.com/)
+- [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+- [Actions, resources, and condition keys for Amazon S3](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html)
+- [Actions, resources, and condition keys for Amazon EC2](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html)
+- [Actions, resources, and condition keys for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2autoscaling.html)
+
+</details>
+
+<details>
+  <summary>Access Evaluation Tools</summary>
+
+## Introduction
+
+This lesson covers **four IAM console tools** for evaluating **who can do what** in an account: **IAM Access Analyzer** (external / overly open access **findings**), the **credential report** (how users are set up: passwords, rotation, **MFA**), the **IAM Policy Simulator** (Allow vs Deny for selected **API actions**), and **Generate policy** on a **role** (build a tighter policy from **CloudTrail** events). Access Analyzer is a **one-click enable**; findings are warnings to investigate, not always a problem. Policy generation from a trail can take **several minutes**.
+
+## Detailed Explanation
+
+- [x] **IAM Access Analyzer — enable it**
+  - Open the **IAM** Management Console and go to **Access Analyzer**.
+  - If it is the **first time**, click the button to **enable** it for the account (**single click**).
+  - It then runs an **access evaluation** quickly.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/77046bee-4c91-4b4d-8865-ee96e75d0d72" />
+
+- [x] **Access Analyzer findings**
+  - Instructor example: findings on **S3 buckets** and **IAM roles**.
+  - One bucket policy allows access level **read**.
+  - Another allows **write**, **read**, and **list**.
+  - Click the **finding ID** for details.
+- [x] **Public access finding (S3)**
+  - The finding can warn that the resource allows **public access**.
+  - That **might** be a problem — **not always** (some buckets are meant to be public).
+  - Use the finding to **investigate** and **resolve** if it is too open.
+  - Example access: **S3 `GetObject`** is allowed.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/f7f8610b-8358-46dd-8896-61167263a072" />
+
+- [x] **IAM role finding (Cognito)**
+  - Example finding on an IAM **role** related to **Amazon Cognito**.
+  - Access level **write**.
+  - API action: **`AssumeRoleWithWebIdentity`**.
+  - Again: something you **might** want to look into.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/fcf21b2f-57c8-4b32-b791-ef0bfa70c7a6" />
+
+- [x] **What Access Analyzer is for**
+  - Analyzes access and lists **findings**.
+  - Warns about access that may be **too open** (more than you intended).
+- [x] **Archive rules, analyzers, and settings**
+  - **Archive rules** control how you **archive** findings.
+  - You can view **analyzers** and **create** new ones.
+  - **Settings** show the **Access Analyzer Administrator**.
+  - You can optionally add a **delegated administrator**.
+- [x] **Credential report**
+  - About **credentials**, not resource policies.
+  - **Download** the report (spreadsheet-style rows/columns).
+  - Instructor account: **three IAM users** plus the **root** account.
+  - Columns include:
+    - When the user was **created**
+    - Whether there is a **password** for **console** access
+    - When the password was **last used** and **last changed**
+    - Whether the password will be **rotated**
+    - Whether **MFA** is enabled
+  - Use it to see how users are set up from a **security** perspective.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/fa8ab108-3ed0-4f3b-a51d-17a6514b2995" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/1779e548-89b1-43d0-bd85-1ad182b4371b" />
+
+- [x] **IAM Policy Simulator (users)**
+  - Lists **users** in the account.
+  - Pick a user, pick a **service**, select **all** or **specific** actions, **run simulation**.
+  - **Jack:** has **AdministratorAccess** → selected **EC2** actions (all) returned **Allow**.
+  - **Clear** results, then pick another user.
+  - **Chris:** has a policy named **bucket access**.
+  - For **S3**, the instructor checked **specific** actions: **CreateBucket**, **DeleteObject**, **DeleteBucket**, **GetObject**, **ListAllMyBuckets**.
+  - Result: **most denied**; only **ListAllMyBuckets** was **allowed**.
+  - Useful to see what permissions policies actually **grant**.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/6e75c588-9b14-4b50-871e-a965fd20f237" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/ccd86907-0aac-4897-9995-6f87eb3e3539" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/1900cc06-f58e-4bf7-b9cf-f0f088c107c4" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/af26466d-0f74-4982-ac36-cc3857ba5bc6" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/9ecd8a0d-57ae-4412-811c-3d8914d10907" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/9a450995-5b48-4cdc-8162-142f671a35ce" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/839f0d77-66bd-472a-b3e6-8697bc778828" />
+
+- [x] **Generate policy on a role (CloudTrail)**
+  - **IAM** → **Roles** → open a role (instructor: **Elastic Beanstalk EC2** role with **multiple** policies).
+  - At the **bottom**: **Generate policy**.
+  - Builds a policy from **CloudTrail** events for **API actions** that role recently used — you need a **trail**, and the role must have been **used**.
+  - Click **Generate policy**, choose a **timeframe** (example: last **60 days**), choose the **trail**, specify **regions** (example: **US East**), optionally use an **existing service role**, then generate.
+  - Generation takes **several minutes**.
+  - When complete: **view** the generated policy → **review the permissions** AWS thinks the role needs.
+  - Instructor example: specific **Systems Manager** and **EC2** actions.
+  - You can **add** more permissions, edit **JSON**, or add policy items from the **right-hand** side.
+  - Then **generate** and **apply** the policy to the role.
+  - Purpose: **tighten** the permissions you assign to **roles**.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/4b044118-4344-433d-aa44-75363158192b" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/55d03a34-d0cf-43bd-8a6f-937c477977b8" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/5f6d6b01-c847-4245-b27b-a94c5d6dc019" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/eb587be8-bed2-4dba-90a5-9c3d51444175" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+Walk the four tools in the **IAM** console. Your findings, users, and roles will differ from the instructor’s (**Jack**, **Chris**, Elastic Beanstalk EC2 role). Enable Access Analyzer if it is not on yet. Policy generation needs a **CloudTrail** trail and recent role activity; skip that generate step if you have no trail yet, but still locate the button.
+
+### **Overview**
+
+- [ ] Enable **Access Analyzer**, download a **credential report**, simulate two users, and find **Generate policy** on a role.
+- [ ] You will:
+  - [ ] Enable Access Analyzer (one click if first time) and open a **finding**.
+  - [ ] Note archive rules, analyzers, and optional **delegated administrator**.
+  - [ ] Download the **credential report** and scan password / MFA columns.
+  - [ ] Simulate **Jack** (or an admin user) on **EC2** (all actions).
+  - [ ] Simulate a limited user on **specific S3** actions.
+  - [ ] On a role, open **Generate policy** and (if you have a trail) start a CloudTrail-based generation.
+- [ ] Success: you can name the four tools and what each answers (external access, credential hygiene, Allow/Deny, least-privilege from CloudTrail).
+
+### **Task 1: Enable IAM Access Analyzer**
+
+- [ ] Sign in to the **AWS Management Console**.
+- [ ] Open **IAM**.
+- [ ] Go to **Access Analyzer**.
+- [ ] If it is the **first visit**, click the button to **enable** Access Analyzer for the account (**one click**).
+- [ ] Wait for the first **access evaluation**.
+
+### **Task 2: Review Access Analyzer findings**
+
+- [ ] Look for findings on **S3 buckets** and **IAM roles** (instructor examples).
+- [ ] Note access levels such as **read**, or **write / read / list**.
+- [ ] Click a **finding ID**.
+- [ ] If it warns that the resource allows **public access**:
+  - [ ] Read the **access level** and API action (instructor: **S3 `GetObject`**).
+  - [ ] Decide whether public access is **intentional**; if not, use the finding to **fix** it.
+- [ ] Open an **IAM role** finding if present (instructor: **Cognito**, access level **write**, **`AssumeRoleWithWebIdentity`**).
+- [ ] Treat findings as **investigate**, not automatic “this is always wrong.”
+
+### **Task 3: Archive rules, analyzers, and settings**
+
+- [ ] Open **archive rules** and see how findings can be **archived**.
+- [ ] Open **analyzers** (you can **create** additional analyzers).
+- [ ] Open **settings**.
+- [ ] Note the **Access Analyzer Administrator**.
+- [ ] Optionally add a **delegated administrator** (skip if you are not using Organizations / do not need one).
+
+### **Task 4: Download the credential report**
+
+- [ ] In **IAM**, open the **credential report**.
+- [ ] **Download** the report.
+- [ ] Expand columns and confirm you can see:
+  - [ ] IAM **users** plus **root**
+  - [ ] User **created** date
+  - [ ] Whether a **console password** exists
+  - [ ] Password **last used** and **last changed**
+  - [ ] Password **rotation**
+  - [ ] Whether **MFA** is enabled
+- [ ] Use this for a **security** snapshot of how users are set up.
+
+### **Task 5: Policy Simulator — admin user (all EC2 actions)**
+
+- [ ] Open the **IAM Policy Simulator**.
+- [ ] Select a user with **AdministratorAccess** (instructor: **Jack**).
+- [ ] Choose service **EC2**.
+- [ ] **Select all** actions.
+- [ ] **Run simulation**.
+- [ ] Confirm results are **Allow**.
+- [ ] **Clear** the results.
+
+### **Task 6: Policy Simulator — limited S3 user (specific actions)**
+
+- [ ] Select a user with a narrow S3 policy (instructor: **Chris**, policy **bucket access**).
+- [ ] Choose service **S3**.
+- [ ] Select **specific** actions, not all:
+  - [ ] **CreateBucket**
+  - [ ] **DeleteObject**
+  - [ ] **DeleteBucket**
+  - [ ] **GetObject**
+  - [ ] **ListAllMyBuckets**
+- [ ] **Run simulation**.
+- [ ] Instructor result: **most denied**; only **ListAllMyBuckets** **allowed**.
+- [ ] Other S3 actions you did **not** select are simply **not in this run**.
+
+### **Task 7: Generate a role policy from CloudTrail**
+
+- [ ] In **IAM**, open **Roles**.
+- [ ] Open a role that has been **used** (instructor: **Elastic Beanstalk EC2** role with **multiple** policies).
+- [ ] Scroll to the **bottom** and find **Generate policy**.
+- [ ] If you have **no CloudTrail trail** or the role has no recent activity, stop after locating the button — generation will not have events to use.
+- [ ] If you do have a trail:
+  - [ ] Click **Generate policy**.
+  - [ ] Set the **timeframe** (instructor: last **60 days**).
+  - [ ] Choose the **trail**.
+  - [ ] Specify **regions** (instructor: **US East**).
+  - [ ] Optionally use an **existing service role**.
+  - [ ] Start generation and wait (**several minutes**).
+- [ ] When a generation has **completed** (instructor showed a finished **EC2**-related role):
+  - [ ] **View** the generated policy.
+  - [ ] **Review the permissions** AWS thinks the role needs (instructor: **Systems Manager** and **EC2** actions).
+  - [ ] Optionally **add** permissions, edit in the **JSON** editor, or add items from the **right-hand** side.
+  - [ ] **Generate** the policy and **apply** it to the role only if you intend to **tighten** that role.
+
+Located all four tools. Access Analyzer is enabled (or already was), the credential report downloaded, simulations run, and **Generate policy** identified on a role.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. All four tools are used in the **IAM** console (Access Analyzer, credential report download, Policy Simulator, Generate policy on a role).
+
+```bash
+# No commands in this topic; use the IAM Management Console.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code. Access Analyzer and the Policy Simulator are console results. The credential report is a **download**. **Generate policy** produces **IAM JSON** from CloudTrail (instructor: **Systems Manager** and **EC2** actions). The sketch below is a study reminder of the **Chris** simulation, not a copy of the instructor’s **bucket access** policy.
+
+```text
+# Credential report (columns in the lesson)
+# users (IAM users + root), created, password (console),
+# password last used, last changed, rotation, MFA enabled
+```
+
+<details>
+<summary>Chris S3 simulation (what the run showed)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "WhatTheSimulationAllowed",
+      "Effect": "Allow",
+      "Action": ["s3:ListAllMyBuckets"],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+- [x] **Jack** + **AdministratorAccess** → selected **EC2** actions **Allow**.
+- [x] **Chris** + **bucket access** → of the five S3 actions tested, only **ListAllMyBuckets** **Allow**.
+- [x] Generated role policies list the **API actions CloudTrail** recorded for that role.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What four tools does this lesson use to evaluate access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **IAM Access Analyzer**
+- [x] The **credential report**
+- [x] The **IAM Policy Simulator**
+- [x] **Generate policy** on a **role** (from **CloudTrail**)
+
+</details>
+
+### Question 2: How do you turn on Access Analyzer the first time?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Open **Access Analyzer** in the **IAM** console.
+- [x] Click the button to **enable** it for the account (**one click**).
+- [x] It then runs an **access evaluation**.
+
+</details>
+
+### Question 3: What kinds of findings did the instructor see in Access Analyzer?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Findings on **S3 buckets** and **IAM roles**.
+- [x] Example bucket access levels: **read**, and **write / read / list**.
+
+</details>
+
+### Question 4: What can a finding ID tell you about public S3 access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The resource may be allowing **public access**.
+- [x] That **could** be a problem, but **not necessarily**.
+- [x] Use the finding to **investigate** and **resolve** it if it is too open.
+- [x] Instructor example: **S3 `GetObject`** allowed.
+
+</details>
+
+### Question 5: What did the Cognito-related role finding show?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **IAM role** related to **Amazon Cognito**.
+- [x] Access level **write**.
+- [x] Action **`AssumeRoleWithWebIdentity`**.
+
+</details>
+
+### Question 6: What else can you configure under Access Analyzer besides findings?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Archive rules** for how you archive findings.
+- [x] **Analyzers** (view and **create** new ones).
+- [x] **Settings**: **Access Analyzer Administrator**, optional **delegated administrator**.
+
+</details>
+
+### Question 7: What is the credential report for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **download** about **user credentials**, not resource policies.
+- [x] It shows how users are set up from a **security** perspective.
+
+</details>
+
+### Question 8: What columns does the credential report include in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Users in the account (instructor: **three IAM users** plus **root**)
+- [x] When the user was **created**
+- [x] Whether there is a **password** for **console** access
+- [x] Password **last used** and **last changed**
+- [x] Whether the password will be **rotated**
+- [x] Whether **MFA** is enabled
+
+</details>
+
+### Question 9: In the Policy Simulator, what happened when Jack ran all EC2 actions?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Jack** has **AdministratorAccess**.
+- [x] The simulation returned **Allow**.
+
+</details>
+
+### Question 10: Which S3 actions did the instructor test for Chris, and what was allowed?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **CreateBucket**
+- [x] **DeleteObject**
+- [x] **DeleteBucket**
+- [x] **GetObject**
+- [x] **ListAllMyBuckets**
+- [x] **Most denied**; only **ListAllMyBuckets** was **allowed**.
+- [x] Chris’s policy was named **bucket access**.
+
+</details>
+
+### Question 11: Why use the Policy Simulator instead of only reading a policy JSON?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It shows what the user is **granted** for the **actions you select**.
+- [x] You can test **all** actions on a service or **specific** API actions.
+
+</details>
+
+### Question 12: Where do you generate a policy based on CloudTrail, and what does it need?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **IAM** → **Roles** → open a role → **Generate policy** (at the **bottom**).
+- [x] The role should have been **used recently**.
+- [x] You need a **CloudTrail trail**.
+- [x] The policy is built from **API actions** in that trail.
+
+</details>
+
+### Question 13: What options do you set when generating a role policy from CloudTrail?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Timeframe** (instructor: last **60 days**)
+- [x] Which **trail** to use
+- [x] Which **regions** (instructor: **US East**)
+- [x] Optionally an **existing service role**
+- [x] Generation takes **several minutes**
+
+</details>
+
+### Question 14: After generation completes, what can you do with the result?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **View** the generated policy.
+- [x] **Review the permissions** AWS thinks the role needs.
+- [x] Instructor example: **Systems Manager** and **EC2** actions.
+- [x] **Add** more permissions if you want.
+- [x] Customize in the **JSON** editor or add items from the **right-hand** side.
+- [x] **Generate** and **apply** the policy to the role.
+
+</details>
+
+### Question 15: Why generate a policy from CloudTrail instead of leaving broad role policies?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It helps you **tighten** permissions on **roles**.
+- [x] You assign what the role **actually used**, not a wide managed policy by default.
+
+</details>
+
+### Question 16: Are Access Analyzer findings always a misconfiguration?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Public or cross-account access **might** be intentional.
+- [x] Findings are **warnings** to **look into**, then fix if the access is **too open**.
+
+</details>
+
+### Question 17: Which tool answers “is MFA on?” vs “can this user call GetObject?” vs “is this bucket public?”
+
+<details>
+<summary>Answer</summary>
+
+- [x] **MFA / password / rotation:** **credential report**
+- [x] **Can this user call this API action:** **IAM Policy Simulator**
+- [x] **Is this resource allowing public or unexpected access:** **Access Analyzer**
+
+</details>
+
+</details>
+
+## Summary
+
+Four **IAM** tools evaluate access. **Access Analyzer** is **enabled** once, then lists **findings** (instructor: **S3** read/write/list, possible **public** **`GetObject`**, a **Cognito** role with **`AssumeRoleWithWebIdentity`**). Findings are **investigate**, not always wrong; configure **archive rules**, **analyzers**, and an optional **delegated administrator**. The **credential report** downloads user security fields: created, console **password**, last used/changed, **rotation**, **MFA** (plus **root**). The **Policy Simulator** tests selected actions: **Jack** + **AdministratorAccess** → **EC2** **Allow**; **Chris** + **bucket access** → only **ListAllMyBuckets** **Allow** among the S3 actions tested. On a **role**, **Generate policy** uses **CloudTrail** (timeframe, trail, regions; **several minutes**) so you can **review**, edit **JSON**, and **apply** a **tighter** policy (instructor: **Systems Manager** and **EC2**).
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)
+- [Getting started with AWS Identity and Access Management Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-getting-started.html)
+- [Archive findings](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-archive-rules.html)
+- [Delegated administrator for IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-settings.html)
+- [Getting credential reports for your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)
+- [Testing IAM policies with the IAM policy simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html)
+- [IAM Access Analyzer policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html)
+- [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html)
+- [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
+
+</details>
+
+<details>
+  <summary>IAM Best Practices</summary>
+
+## Introduction
+
+This short theory lesson walks through **IAM security best practices**. AWS now pushes **federation** (**IAM Identity Center** or another **identity provider**) so **human users** get **temporary credentials**, and **workloads** should use **IAM roles** plus **STS** instead of long-lived **access keys** in applications. Also required: **MFA** (especially **root** and privileged accounts), **rotate** access keys if you must use them, **lock away root**, apply **least privilege**, start with **AWS managed policies** then tighten, use **IAM Access Analyzer**, clean up unused identities, add **policy conditions**, verify **public** and **cross-account** access, set **guardrails** across accounts (**Organizations** / **Control Tower**), and use **permissions boundaries** when you delegate IAM. Read the **AWS article** linked to the lesson for more depth.
+
+## Detailed Explanation
+
+- [x] **Read the AWS article too**
+  - This lesson is a **fast** run-through.
+  - A **link** is attached to the lesson; open the **AWS website** article and review each practice in more detail.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/79cbad8b-5dc5-44a0-bfd9-47b6602d2b9d" />
+
+- [x] **Require human users to federate with an identity provider (temporary credentials)**
+  - AWS now pushes **IAM Identity Center** or another form of **federation** into AWS, rather than long-lived **IAM user** accounts.
+  - Many companies already use **IAM users**, **groups**, and **roles** and will **not** move away soon.
+  - The recommendation especially applies if you are **new to AWS**: set up an **identity provider** federation configuration from the start.
+  - Each user then receives **temporary credentials**.
+  - That **reduces exposure** if a username-and-password account is compromised, and it **lowers the chance** of that happening in the first place.
+- [x] **Require workloads to use IAM roles (temporary credentials via STS)**
+  - Do **not** store **access keys** in applications.
+  - Configure applications to use **IAM roles**.
+  - The workload then gets **temporary credentials** from the **AWS Security Token Service (STS)**.
+- [x] **Require multi-factor authentication (MFA)**
+  - Require MFA for **all accounts**.
+  - Especially **root** and **privileged** accounts.
+  - The instructor’s bar: **everybody**.
+- [x] **Rotate access keys regularly when long-term credentials are required**
+  - AWS would **prefer** you do **not** use access keys, but they remain **useful** and many people still use them.
+  - If you do use them, **rotate** them regularly.
+  - Do not leave the same keys in place for too long in case they are **compromised**.
+- [x] **Safeguard root user credentials; do not use root for everyday tasks**
+  - Typical company pattern: set a **very complex password** on **root**, enable **MFA**, and **lock that password away**.
+  - Do **not** use the root account for day-to-day work (often **not for any purpose** once setup is done).
+  - All **administrators** should have their **own** accounts.
+- [x] **Apply least privilege**
+  - Give users **only** the permissions they need to do their job.
+  - The same rule applies to **applications**: only the permissions required for the operations they must perform in AWS.
+- [x] **Start with AWS managed policies, then move toward least privilege**
+  - **AWS managed policies** are useful when you are **new** to AWS: they are **preconfigured** for common **use cases** and **job roles**.
+  - They often do **not** provide true least privilege — they may grant **too much** or, sometimes, **not enough**.
+  - As you gain experience writing policies, move toward **your own** policies that lock down **exactly** what you need.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/e84d0b7a-dfb7-4733-9352-08bda9a46b65" />
+
+- [x] **Use IAM Access Analyzer to generate least-privilege policies from activity**
+  - Access Analyzer can look at **user activity** and show which **API actions** they actually call.
+  - Use that to work out what they **need**, then **adjust** their permissions.
+- [x] **Regularly review and remove unused identities and credentials**
+  - Clean up unused **users**, **roles**, **permissions**, **policies**, and **credentials** (including old **access keys**).
+  - Less leftover identity surface means **less exposure**.
+- [x] **Use conditions in IAM policies to further restrict access**
+  - Example: a **condition** that requires the caller to come from a **specific IP address** or **IP range** (for example the **company** range).
+  - The principal then gets access to the resources **only** if the request originates from that range.
+  - That is one example of tightening a policy beyond Allow / Action / Resource alone.
+- [x] **Verify public and cross-account access with IAM Access Analyzer**
+  - Same family of work as generating least-privilege policies: inspect what access is actually granted.
+  - Confirm only the **right** permissions are in place, including **public** and **cross-account** access.
+- [x] **Validate IAM policies for secure and functional permissions**
+  - Check that policies both **work** and stay **secure** — not overly open, and not missing required actions.
+- [x] **Establish permissions guardrails across multiple accounts**
+  - When you have **multiple AWS accounts**, manage them with shared **security** and **governance**.
+  - Tools the instructor names: **AWS Organizations** and **AWS Control Tower**.
+- [x] **Use permissions boundaries to delegate permissions management**
+  - A **permissions boundary** sets the **maximum** permissions a particular user can ever receive.
+  - Use it when you **delegate** who can attach policies inside an account.
+  - If someone accidentally grants **too many** permissions through a policy, the boundary still **caps** them so they never exceed what they are supposed to have.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. There is no console walkthrough. Apply these practices in later **HOL** IAM work and when you design accounts.
+
+### **Overview**
+
+- [ ] This lesson lists **IAM best practices**; there is nothing to click in the console here.
+- [ ] You will:
+  - [ ] Prefer **federation** / **IAM Identity Center** for humans, and **roles + STS** for workloads.
+  - [ ] Require **MFA**, protect **root**, and **rotate** access keys if you must use them.
+  - [ ] Apply **least privilege** (start with managed policies, then tighten; use **Access Analyzer**).
+  - [ ] Add **conditions**, clean up unused identities, and use **Organizations** / **Control Tower** plus **permissions boundaries** for guardrails.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. The practices are conceptual; later HOL lessons use the console and, where needed, the AWS CLI.
+
+```bash
+# No commands in this topic; the lesson is conceptual only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No policy JSON is shown in this lesson. The instructor’s examples are conceptual: **roles** instead of access keys, **IP conditions**, and a **permissions boundary** as a maximum cap.
+
+```text
+# Humans:  federate (Identity Center / IdP) → temporary credentials
+# Apps:    assume an IAM role → STS temporary credentials (do not embed access keys)
+# Extra:   Condition on source IP (company range) further restricts a policy
+# Cap:     permissions boundary = maximum permissions a user can ever receive
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: How does AWS want human users to access AWS, and why?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Require humans to use **federation** with an **identity provider** (for example **IAM Identity Center**).
+- [x] They then access AWS with **temporary credentials**.
+- [x] That **reduces exposure** if a username-and-password IAM user is compromised, and it **lowers the chance** of that happening.
+
+</details>
+
+### Question 2: Should existing companies immediately abandon IAM users, groups, and roles?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Many companies already use IAM users, groups, and roles and will **not** move away soon.
+- [x] The federation recommendation especially applies if you are **new to AWS**.
+
+</details>
+
+### Question 3: How should workloads authenticate to AWS?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **IAM roles** so the application gets **temporary credentials**.
+- [x] Those credentials come from the **AWS Security Token Service (STS)**.
+- [x] Do **not** store **access keys** in applications.
+
+</details>
+
+### Question 4: Who should use multi-factor authentication?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **All accounts**.
+- [x] Especially **root** and **privileged** accounts.
+- [x] The instructor’s bar: **everybody**.
+
+</details>
+
+### Question 5: What is AWS’s stance on access keys, and what should you do if you use them?
+
+<details>
+<summary>Answer</summary>
+
+- [x] AWS would **prefer** you do **not** use long-term access keys.
+- [x] They are still **useful**, and many people still use them.
+- [x] If you need long-term credentials, **rotate** the keys **regularly** so they are not left in place if compromised.
+
+</details>
+
+### Question 6: How should you treat the root user?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Set a **very complex password**, enable **MFA**, and **lock the password away**.
+- [x] Do **not** use root for **everyday** tasks (typically **not at all** after setup).
+- [x] Every **administrator** should have their **own** account.
+
+</details>
+
+### Question 7: What does least privilege mean for users and for applications?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Users get **only** the permissions they need to do their job.
+- [x] Applications get **only** the permissions required for the AWS operations they must perform.
+
+</details>
+
+### Question 8: Why start with AWS managed policies if they are not least privilege?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They are **preconfigured** for common **use cases** and **job roles**, which helps when you are **new** to AWS.
+- [x] They may grant **too much** or **not enough**.
+- [x] After you know how to write policies, move to **custom** policies that lock down **exactly** what you need.
+
+</details>
+
+### Question 9: How does IAM Access Analyzer help you reach least privilege?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It looks at **access activity** (which **API actions** users actually call).
+- [x] You then **generate** or **adjust** policies so they match what is **needed**.
+
+</details>
+
+### Question 10: What unused items should you regularly review and remove?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Unused **users**
+- [x] Unused **roles**
+- [x] Unused **permissions** and **policies**
+- [x] Unused **credentials** (including old **access keys**)
+- [x] Cleanup reduces **exposure**.
+
+</details>
+
+### Question 11: Give an example of using a condition in an IAM policy.
+
+<details>
+<summary>Answer</summary>
+
+- [x] Require the request to come from a **specific IP address** or **IP range** (for example the **company** range).
+- [x] Access is granted **only** if the caller comes from that range.
+
+</details>
+
+### Question 12: What kinds of access should you verify with IAM Access Analyzer besides unused activity?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Public** access to resources
+- [x] **Cross-account** access
+- [x] Confirm only the **right** permissions are granted.
+
+</details>
+
+### Question 13: What does “validate IAM policies” mean in this lesson?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Check that policies give **secure** and **functional** permissions.
+- [x] Same idea as the other Access Analyzer points: right access, not too open, and still usable.
+
+</details>
+
+### Question 14: How do you establish permissions guardrails across multiple AWS accounts?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Manage the accounts together with shared **security** and **governance**.
+- [x] Use **AWS Organizations** and **AWS Control Tower**.
+
+</details>
+
+### Question 15: What is a permissions boundary used for when you delegate IAM?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It sets the **maximum** permissions a particular user can ever receive.
+- [x] If someone accidentally attaches a policy that is **too open**, the boundary **caps** them.
+- [x] That lets you **delegate** permissions management inside an account without losing the cap.
+
+</details>
+
+### Question 16: What is the difference between federation for humans and roles for workloads?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Humans:** federate through an **IdP** / **IAM Identity Center** so people get **temporary** credentials instead of standing IAM user passwords.
+- [x] **Workloads:** applications **assume roles** and get temporary credentials from **STS**, instead of embedding **access keys**.
+
+</details>
+
+### Question 17: Which practices specifically reduce the blast radius of a leaked password or access key?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Federation** / **temporary credentials** instead of long-lived IAM user passwords.
+- [x] **Roles + STS** instead of access keys in applications.
+- [x] **MFA** on accounts (especially root and privileged).
+- [x] **Rotate** access keys if you still use them.
+- [x] **Remove unused** users, roles, and credentials.
+
+</details>
+
+</details>
+
+## Summary
+
+AWS wants **humans** to **federate** (**IAM Identity Center** or another **IdP**) and **workloads** to use **IAM roles** with **STS** **temporary credentials**—not standing IAM user passwords or access keys in apps. Require **MFA** for everyone, especially **root** and privileged users; **lock root away** after a strong password and MFA. If you must use **access keys**, **rotate** them. Apply **least privilege** to users and applications: start with **AWS managed policies**, then write tighter custom policies; use **IAM Access Analyzer** from real **API activity**, and to check **public** / **cross-account** access. Add **conditions** (for example a **company IP range**), delete unused identities and credentials, set multi-account **guardrails** with **Organizations** and **Control Tower**, and use a **permissions boundary** as a **maximum** cap when you delegate IAM. Read the **AWS article** linked to the lesson.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
+- [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)
+- [AWS Security Token Service (STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
+- [MFA in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+- [Rotating access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey)
+- [Root user best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)
+- [Grant least privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
+- [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
+- [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)
+- [IAM Access Analyzer policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html)
+- [IAM JSON policy elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html)
+- [IAM condition keys for source IP](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceip)
+- [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
+- [What is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
+- [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+
+</details>
+
+<details>
+  <summary>IAM Exam Cram</summary>
+
+## Introduction
+
+Most sections end with an **exam cram**: a **fast** run-through of **important facts** for **revision**, not a new explanation. Change **playback speed** if it is too fast. Crams are **bullet points** (not visual like the main lessons); some facts appear here but not in the theory videos, or the other way around. The instructor uses them so **visual**, **reading**, and **hands-on** learners all have a last-minute tool. This cram is **IAM**: what it controls, users / groups / roles / policies, consistency, authentication methods, policy types, and a best-practice checklist.
+
+## Detailed Explanation
+
+- [x] **What an exam cram is**
+  - A **quick** reminder of key facts after you finish the section.
+  - Use it for **revision** and **cramming**, not as the first pass.
+  - The instructor goes **fast**; slow the video if needed.
+  - Some bullets may be **new** vs the lessons, or the lessons may include topics **not** in the cram.
+  - Main lessons stay **visual**; crams are **death by bullet points** on purpose so **readers** are covered too.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/434ca0b5-78cf-4d41-a434-4c55c0776021" />
+
+- [x] **What IAM does**
+  - **Securely control** individual and **group** access to **AWS resources**.
+  - Makes it easy to give **multiple users** access to those resources.
+  - You manage **users**, **groups**, **access policies**, **roles**, and **user credentials**.
+  - You can configure **user password policies**.
+  - Enable **MFA** — **recommended**.
+  - Generate **API keys** for **programmatic** access.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/8f96f37c-5c8d-48f9-a1c0-95c189c542ff" />
+
+- [x] **Default for new IAM users**
+  - New users are created with **no access** to any services.
+  - They can **log in** to AWS but **cannot do anything**.
+  - Permissions must be **explicitly granted** before a user can use an AWS service.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/51db6540-21f5-4548-8545-d164dabb2157" />
+
+- [x] **IAM users**
+  - Individuals (or services) who have been **granted access** to an AWS account.
+  - An IAM user is an **entity** that represents a **person** or a **service**.
+  - By default they **cannot access anything** in the account.
+  - IAM users that represent applications are **service accounts**.
+  - Limit: up to **5,000 users** per AWS account.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/3669adc1-a77a-44cd-bcf2-d430166c6117" />
+
+- [x] **IAM is global and eventually consistent**
+  - IAM is a **universal / global** service — it is **not** tied to a specific **region**.
+  - IAM is **eventually consistent**.
+  - If you make a change and **immediately** read it back, you **might not see** the change yet; wait a bit.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/db29a0e0-c57e-445e-96bc-e3ed1f20e207" />
+
+- [x] **Authentication methods**
+  - **Console passwords** — sign in to the **Management Console**.
+  - **Access keys** — **programmatic** access (CLI / API).
+  - **Server certificates** — used with **some** services.
+- [x] **Root user**
+  - Credentials are the **email address** used to create the account, plus a **password**.
+  - Root has **full administrative** permissions.
+  - Those permissions **cannot be restricted**.
+- [x] **IAM groups**
+  - A **collection of users** with **policies** attached.
+  - A group is **not an identity** itself.
+  - A group **cannot** be identified as a **principal** in a policy (you cannot put a group **ARN** where a user principal goes).
+  - Use groups to **assign permissions** to users.
+  - Always follow **least privilege** when assigning permissions.
+  - You **cannot nest** groups (no group inside a group).
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/c62b0007-802f-4773-a147-08f4b270a865" />
+
+- [x] **IAM roles**
+  - Created, then **assumed** by **trusted entities**.
+  - A way to **delegate** permissions to **users** and **services**.
+  - Users and services assume a role to get **temporary security credentials**.
+  - Those credentials are issued by **AWS Security Token Service (STS)**.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/fec625e0-6b92-466f-a7d1-0e00bb52b95b" />
+
+- [x] **IAM policies**
+  - **Documents** that define permissions.
+  - Applied to **users**, **groups**, and **roles**.
+  - Written as **key-value** pairs (an **attribute** and a **value**).
+  - All permissions are **implicitly denied** by default.
+  - If multiple policies **conflict**, the **most restrictive** policy is applied.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/91987d46-18fe-4b3b-a18b-31931ff389e6" />
+
+- [x] **Policy types**
+  - **Identity-based policies** — attach to **users**, **groups**, or **roles**.
+  - **Resource-based policies** — attach to **resources** (example: **S3 buckets**); they define permissions for **principals** that access the resource.
+  - **Permissions boundaries** — set the **maximum** permissions an identity-based policy can grant to an IAM entity. **Not really covered** at **Associate**; they are on the **Professional** exam.
+  - **Organizations service control policies (SCPs)** — specify the **maximum** permissions for an **organization** or an **OU**.
+  - **Session policies** — used with **assumed-role** API actions.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/28465f36-6ad9-4c08-af78-8ec775ce184f" />
+
+- [x] **IAM best-practice checklist (exam cram list)**
+  - **Lock away** the account **root user access keys**.
+  - Create **individual users**.
+  - Use **groups** to assign permissions to users.
+  - Grant **least privilege**.
+  - Get started with **AWS managed policies**.
+  - Prefer **customer managed policies** over **inline** policies.
+  - Use **access levels** to review IAM permissions (still thinking **least privilege**).
+  - Configure a **strong password policy** for users.
+  - Enable **MFA**.
+  - Use **roles** for applications that run on **EC2** instances.
+  - Use **roles** to **delegate** permissions.
+  - Do **not share** access keys — keep them to yourself and use them only for your account.
+  - **Rotate** all credentials regularly.
+  - **Remove** unnecessary credentials.
+  - Use **policy conditions** for extra security.
+  - **Monitor** activity in your account.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/c3e3f2d7-9297-4d33-a4d6-69ff34411f1e" />
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/9ffc6262-90a7-4ee1-bdd4-80e0f711928a" />
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. This is a **revision** cram, not a console walkthrough.
+
+### **Overview**
+
+- [ ] Recite what **IAM** controls and the default for a **new user**.
+- [ ] You will:
+  - [ ] Distinguish **users**, **groups** (not a principal; no nesting), **roles** + **STS**, and **root**.
+  - [ ] Name the five **policy types** and the default **implicit deny**.
+  - [ ] Run through the **best-practice** checklist (root keys, groups, least privilege, MFA, roles on EC2, rotate / remove credentials).
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this exam cram. The lesson is bullet-point revision only.
+
+```bash
+# No commands in this topic; the lesson is conceptual only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No policy JSON is shown. Exam facts to keep straight: default deny, groups are not principals, roles get STS temps, and the five policy types.
+
+```text
+# New IAM user: can log in, cannot do anything until permissions are granted
+# Implicit deny by default; conflicts → most restrictive wins
+# Group: not a principal (no group ARN in Principal); cannot nest groups
+# Role assume → STS temporary credentials
+# Policy types:
+#   identity-based | resource-based | permissions boundary
+#   Organizations SCP (org / OU max) | session (assumed-role APIs)
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What is IAM used for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To **securely control** individual and **group** access to **AWS resources**.
+- [x] It makes it easy to give **multiple users** access.
+- [x] You manage **users**, **groups**, **access policies**, **roles**, and **credentials**.
+
+</details>
+
+### Question 2: What access does a new IAM user have by default?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **None** — no access to any services.
+- [x] They can **log in** but **cannot do anything**.
+- [x] Permissions must be **explicitly granted**.
+
+</details>
+
+### Question 3: Is IAM regional? What consistency model does it use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] IAM is **universal / global** — not tied to a specific **region**.
+- [x] It is **eventually consistent**.
+- [x] A change you write may **not show immediately** if you read it right away.
+
+</details>
+
+### Question 4: What authentication methods does this cram list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Console passwords** for the **Management Console**.
+- [x] **Access keys** for **programmatic** access.
+- [x] **Server certificates** for **some** services.
+
+</details>
+
+### Question 5: What are the root user’s credentials, and can you restrict root?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **email** used to create the account plus a **password**.
+- [x] Root has **full administrative** permissions.
+- [x] Those permissions **cannot be restricted**.
+
+</details>
+
+### Question 6: How many IAM users can you have per account, and what is a service account?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Up to **5,000 users** per AWS account.
+- [x] An IAM user that represents an **application** is a **service account**.
+
+</details>
+
+### Question 7: Why is an IAM group not a principal?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A group is **not an identity** itself.
+- [x] You **cannot** put a group **ARN** as the **principal** in a policy (the way you can a user).
+- [x] Groups exist to **attach policies** and assign permissions to **users**.
+
+</details>
+
+### Question 8: Can you nest IAM groups?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** You cannot create a group **inside** a group.
+
+</details>
+
+### Question 9: How do IAM roles grant access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A role is **assumed** by a **trusted entity** (user or service).
+- [x] That is how you **delegate** permissions.
+- [x] The assumer gets **temporary security credentials** from **STS**.
+
+</details>
+
+### Question 10: What is the default for IAM permissions, and what happens if policies conflict?
+
+<details>
+<summary>Answer</summary>
+
+- [x] All permissions are **implicitly denied** by default.
+- [x] If statements **conflict**, the **most restrictive** policy is applied.
+
+</details>
+
+### Question 11: What are identity-based vs resource-based policies?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Identity-based:** attach to **users**, **groups**, or **roles**.
+- [x] **Resource-based:** attach to a **resource** (example: an **S3 bucket**).
+- [x] A resource policy names the **principals** that may access that resource.
+
+</details>
+
+### Question 12: What do permissions boundaries, SCPs, and session policies each cap?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Permissions boundary:** maximum an **identity-based** policy can grant to an IAM **entity**.
+- [x] **SCP:** maximum permissions for an **organization** or an **OU**.
+- [x] **Session policy:** used with **assumed-role** API actions.
+- [x] Permissions boundaries are **not really** Associate-level; they are on the **Professional** exam.
+
+</details>
+
+### Question 13: What should you do with the root user according to this cram?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Lock away** the account **root user access keys**.
+- [x] Create **individual users** instead of working as root.
+
+</details>
+
+### Question 14: How should you assign permissions to people (groups, least privilege, policy style)?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **groups** to assign permissions to users.
+- [x] Grant **least privilege**.
+- [x] Start with **AWS managed policies**.
+- [x] Prefer **customer managed** policies over **inline** policies.
+- [x] Use **access levels** to review permissions against least privilege.
+
+</details>
+
+### Question 15: Which credential and password practices does the cram list?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Configure a **strong password policy**.
+- [x] Enable **MFA**.
+- [x] Do **not share** access keys.
+- [x] **Rotate** all credentials regularly.
+- [x] **Remove** unnecessary credentials.
+
+</details>
+
+### Question 16: When should you use IAM roles (best-practice list)?
+
+<details>
+<summary>Answer</summary>
+
+- [x] For **applications that run on EC2** instances.
+- [x] To **delegate** permissions.
+
+</details>
+
+### Question 17: What extra controls does the cram mention after writing policies?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **policy conditions** for extra security.
+- [x] **Monitor** activity in the account to see what is actually happening.
+
+</details>
+
+### Question 18: How should you use exam cram lessons in this course?
+
+<details>
+<summary>Answer</summary>
+
+- [x] After you finish the **section**, for **revision** / last-minute **cramming**.
+- [x] They **remind** you of facts; they are not the visual first-pass lessons.
+- [x] Slow **playback** if the instructor is too fast.
+- [x] A fact might appear in the cram **or** in the lessons, not always both.
+
+</details>
+
+</details>
+
+## Summary
+
+**Exam crams** are fast **bullet-point** revision after a section. **IAM** securely controls who can use AWS resources: you manage **users**, **groups**, **roles**, **policies**, **credentials**, **password policies**, **MFA**, and **API keys**. New users can **log in** but have **no access** until you **explicitly grant** it. IAM is **global** and **eventually consistent**. Auth methods: **console passwords**, **access keys**, **server certificates**. **Root** is the signup **email** + password, with **unrestrictable** full admin. Users (including **service accounts**) cap at **5,000** per account. **Groups** hold users and policies but are **not principals** and **cannot nest**. **Roles** are **assumed**; **STS** issues **temporary** credentials. Policies are documents; default is **implicit deny**; conflicts take the **most restrictive** statement. Policy types: **identity-based**, **resource-based**, **permissions boundaries** (Professional more than Associate), **SCPs** (org / OU max), **session** (assumed-role APIs). Best practices: lock **root keys**, individual users, **groups**, **least privilege**, managed then **customer managed** (not inline), review **access levels**, strong passwords, **MFA**, **roles** on **EC2** and for delegation, never **share** keys, **rotate** / **remove** credentials, **conditions**, **monitor**.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+- [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)
+- [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
+- [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+- [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+- [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)
+- [AWS Security Token Service (STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
+- [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+- [Identity-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
+- [Resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html#principal_vs_identity)
+- [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+- [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+- [Session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session)
+- [IAM and quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html)
+- [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [MFA in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+- [Setting an account password policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)
+
+</details>
+
+<details>
+  <summary>IAM Architecture Patterns</summary>
+
+## Introduction
+
+This is the first **Architecture Patterns** lesson. These lessons take section knowledge and put it in **exam** and **workplace** form: you are a **solutions architect**, the customer gives **requirements** and **challenges**, and you pick the **best solution**. That is the shape of many exam questions. Six IAM scenarios: who may **change passwords**, **EC2 → DynamoDB** via a **role**, **job-function** permissions on a **first AWS account**, **source IP** restrictions, **CLI access keys**, and **full EC2** via an **`ec2:*`** action wildcard.
+
+## Detailed Explanation
+
+- [x] **What Architecture Patterns lessons are for**
+  - Apply what you just learned to **exam** and **real-world** scenarios.
+  - Imagine you are a **solutions architect** building to a customer’s **requirements** and **challenges**.
+  - You must choose the **best** solution for the job.
+  - That is the kind of thinking that shows up in **exam questions**.
+  - The instructor poses scenarios and states **his** preferred solution.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/a25c2511-4293-465b-9a1a-c5a2a7b12f09" />
+
+- [x] **Requirement: only a select group may change their IAM password**
+  - Not everyone should change IAM passwords.
+  - Some **privileged** users should be allowed to.
+  - **Solution:** create a **group** for those users and attach a **permissions policy** that grants the IAM **ChangePassword** API (`iam:ChangePassword`).
+- [x] **Requirement: an EC2 instance must be delegated access to a DynamoDB table**
+  - **Amazon DynamoDB** is another AWS service (not covered in depth yet).
+  - **Delegation** is the point: how does the instance get permission to the table?
+  - **Solution:** create an **IAM role**, attach a **permissions policy** that grants access to **DynamoDB**, and use that role on the instance.
+- [x] **Requirement: first AWS account — assign permissions by job function**
+  - The company just created their **first** AWS account.
+  - They may **not** have strong AWS skills yet.
+  - They need permissions based on **job function**.
+  - **IAM best practices** for this case: start with **AWS managed policies**.
+  - Those policies can be aligned with common **job functions**.
+
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/edf44114-8f0f-49db-a810-c9495e114b56" />
+
+- [x] **Requirement: restrict access to a service by the requester’s source IP**
+  - The solutions architect must limit an AWS service based on **source IP**.
+  - **Solution:** create an **IAM permissions policy** and use the **Condition** element to control access by **source IP address**.
+- [x] **Requirement: a developer must make programmatic API calls from the AWS CLI**
+  - **Solution:** instruct the developer to create a set of **access keys** and use them for **programmatic** access.
+- [x] **Requirement: a group of users needs full access to all Amazon EC2 API actions**
+  - **Solution:** create a **permissions policy** whose **Action** uses a **wildcard** for EC2.
+  - That action looks like **`ec2:*`**.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. There is no console walkthrough. Treat each requirement as a flashcard: name the **best** IAM construct.
+
+### **Overview**
+
+- [ ] Practice the six **requirement → solution** mappings (exam-style).
+- [ ] You will:
+  - [ ] Password change for a **select group** → **group** + **`iam:ChangePassword`**.
+  - [ ] **EC2** needs **DynamoDB** → **role** + DynamoDB permissions policy.
+  - [ ] First account, permissions by **job function** → **AWS managed policies**.
+  - [ ] Restrict by **source IP** → policy **Condition**.
+  - [ ] Developer **CLI** API calls → **access keys**.
+  - [ ] Full **EC2** API access → Action **`ec2:*`**.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+No terminal commands in this lesson. The patterns are design choices, not a CLI walkthrough.
+
+```bash
+# No commands in this topic; the lesson is conceptual only.
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+The lesson names the **ChangePassword** API, a **Condition** on source IP, and the **`ec2:*`** action wildcard. Example shapes (not a full HOL policy):
+
+```text
+# Select group may change password  →  iam:ChangePassword on a group policy
+# EC2 → DynamoDB                    →  instance role + DynamoDB permissions
+# First account / job function      →  AWS managed policies
+# Restrict by requester IP          →  Condition (source IP)
+# Developer CLI                     →  access keys
+# Full EC2 APIs                     →  Action "ec2:*"
+```
+
+<details>
+<summary>Example: full EC2 API access (Action wildcard)</summary>
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "ec2:*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What are Architecture Patterns lessons for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They put section knowledge into **exam** and **workplace** scenarios.
+- [x] You act as a **solutions architect**: customer **requirements** and **challenges** → **best** solution.
+- [x] That is the shape of many **exam questions**.
+
+</details>
+
+### Question 2: Only a select group should change their IAM passwords. What do you do?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Create a **group** for those users.
+- [x] Attach a **permissions policy** that grants the IAM **ChangePassword** API (`iam:ChangePassword`).
+- [x] Do **not** give that permission to everybody.
+
+</details>
+
+### Question 3: An EC2 instance must access a DynamoDB table. How do you delegate that?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Create an **IAM role**.
+- [x] Attach a **permissions policy** that grants access to **DynamoDB**.
+- [x] That is how you **delegate** permissions to the instance (not by embedding long-lived keys in the lesson’s solution).
+
+</details>
+
+### Question 4: A company just created their first AWS account and needs permissions by job function. What do IAM best practices suggest?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Use **AWS managed policies**.
+- [x] Those policies align with common **job functions**.
+- [x] Fits a team that may **not** yet have strong AWS policy-writing skills.
+
+</details>
+
+### Question 5: Why are AWS managed policies the preferred starting point in that first-account scenario?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It is their **first** AWS account.
+- [x] They may not have good **AWS skills** yet.
+- [x] Managed policies are already aligned to **job functions**.
+
+</details>
+
+### Question 6: How do you restrict access to an AWS service based on the requester’s source IP?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Create an **IAM permissions policy**.
+- [x] Use the **Condition** element to control access by **source IP address**.
+
+</details>
+
+### Question 7: A developer needs to make programmatic API calls from the AWS CLI. What do you tell them?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Create a set of **access keys**.
+- [x] Use those keys for **programmatic** access (CLI / API).
+
+</details>
+
+### Question 8: A group of users needs full access to all Amazon EC2 API actions. What does the Action look like?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Create a **permissions policy**.
+- [x] Use a **wildcard** on the **Action** for EC2.
+- [x] The action is **`ec2:*`**.
+
+</details>
+
+### Question 9: Map each requirement to the IAM construct the instructor chose.
+
+<details>
+<summary>Answer</summary>
+
+- [x] Select users change password → **group** + **`iam:ChangePassword`**
+- [x] EC2 talks to DynamoDB → **role** + DynamoDB policy
+- [x] First account, job functions → **AWS managed policies**
+- [x] Restrict by IP → policy **Condition**
+- [x] Developer CLI → **access keys**
+- [x] Full EC2 APIs → Action **`ec2:*`**
+
+</details>
+
+### Question 10: Why is a role the right answer for EC2 → DynamoDB, not an IAM user password?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The requirement is to **delegate** permissions to an **EC2 instance**.
+- [x] You **create a role** and assign a policy that grants **DynamoDB** access.
+- [x] That is the delegation pattern for a **service / instance**, not a console login.
+
+</details>
+
+### Question 11: Does “full access to all Amazon EC2 API actions” require listing every EC2 action?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No.** Use the **Action** wildcard **`ec2:*`**.
+- [x] That covers **all** EC2 API actions.
+
+</details>
+
+### Question 12: Who should receive `iam:ChangePassword` in the first scenario?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Only a **select** / **privileged** group of users.
+- [x] Not every user in the account.
+
+</details>
+
+### Question 13: Which policy element implements “only from this source IP”?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The **Condition** element on an **IAM permissions policy**.
+- [x] It evaluates the requester’s **source IP address**.
+
+</details>
+
+### Question 14: Access keys vs a role — when does this lesson pick each?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Access keys:** a **developer** making **programmatic** calls from the **AWS CLI**.
+- [x] **Role:** an **EC2 instance** that must be **delegated** permissions to **DynamoDB**.
+
+</details>
+
+### Question 15: How do Architecture Patterns differ from exam crams?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Architecture Patterns:** **requirements** → **best solution** (exam / workplace scenarios).
+- [x] **Exam crams:** fast **bullet-point facts** for last-minute revision (covered in the IAM Exam Cram lesson).
+
+</details>
+
+</details>
+
+## Summary
+
+**Architecture Patterns** turn IAM theory into **requirement → best solution** (exam and workplace). Only a **select group** may change passwords: a **group** plus **`iam:ChangePassword`**. An **EC2** instance that must use **DynamoDB**: create a **role** and attach a DynamoDB **permissions policy**. A company’s **first** AWS account assigning access by **job function**: start with **AWS managed policies**. Restrict a service by the requester’s **source IP**: an IAM policy **Condition**. A developer calling APIs from the **CLI**: **access keys**. A group that needs every **EC2** API: Action **`ec2:*`**.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [ChangePassword](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ChangePassword.html)
+- [Allow users to change their own passwords](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_enable-user-change.html)
+- [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html)
+- [What is Amazon DynamoDB?](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+- [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
+- [Job functions managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html)
+- [IAM JSON policy elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html)
+- [IAM condition keys for source IP](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceip)
+- [Managing access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
+- [IAM JSON policy elements: Action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)
+- [Actions, resources, and condition keys for Amazon EC2](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html)
+
+</details>
+
+<details>
+  <summary>IAM Cheat Sheet</summary>
+
+## Introduction
+
+End-of-section **cheat sheets** list **core exam knowledge** so you can review without wading through AWS docs. This sheet is **IAM**: what you can manage, the **new-user** default, **users / groups / roles / policies**, **authentication** methods, **MFA**, **evaluation logic**, **managed vs inline** policies, **instance profiles**, **STS**, **federation**, and **cross-account** access. IAM is **not** for application-level authentication. It is **global**, **eventually consistent**, and replicates across data centers worldwide.
+
+## Detailed Explanation
+
+- [x] **What IAM is and what you manage**
+  - **IAM** = AWS **Identity and Access Management**.
+  - Securely control **individual** and **group** access to AWS resources.
+  - Makes it easy to give **multiple users** secure access.
+  - You can manage: **users**, **groups**, **access policies**, **roles**, **user credentials**, **password policies**, **MFA**, and **API keys** (CLI / programmatic).
+  - Provides **centralized control** of the account and **shared access**.
+- [x] **New users and IAM users**
+  - New users have **NO** access to any AWS services by default — they can only **log in** to the console.
+  - Permission must be **explicitly granted**.
+  - An IAM user is an individual granted access to an AWS account.
+  - Each user has three main components: a **username**, a **password**, and **permissions**.
+  - You can apply **granular** permissions and assign **access keys**, **passwords**, and **MFA** devices.
+  - IAM is **not** used for **application-level** authentication.
+- [x] **Federation (high level)**
+  - **Identity federation** (including **AD**, **Facebook**, and others) can give secure access **without** creating an IAM user.
+- [x] **MFA**
+  - Can be enabled / enforced on the **account** and on **individual users**.
+  - Uses a device that generates random **six-digit**, **single-use** codes.
+  - Three ways to authenticate with MFA:
+    - **Management Console** — username, password, and authentication code.
+    - **AWS API** — restrictions in IAM policies; developers request **temporary** credentials and pass MFA parameters in **STS** API requests.
+    - **AWS CLI** — temporary credentials from STS (`aws sts get-session-token`).
+  - Best practice: MFA for **all** users; **U2F** or **hardware** MFA for **privileged** users.
+- [x] **IAM is global and eventually consistent**
+  - IAM is **universal (global)** — it does **not** apply to regions.
+  - It is **eventually consistent**.
+  - Data is replicated across **multiple data centers** worldwide.
+- [x] **Root, power user, and temporary credentials**
+  - The **root account** is created when you set up AWS. It has complete **Admin** access by default (the only identity that does).
+  - Best practice: do **not** use root for anything other than **billing**.
+  - **Power user** access: all permissions **except** managing **groups** and **users** in IAM.
+  - Temporary security credentials = **access key ID** + **secret access key** + **security token**.
+  - IAM can assign temporary credentials so users get **temporary** access to services / resources.
+- [x] **Sign-in**
+  - You must provide **account ID** or **account alias** plus username and password.
+  - Sign-in URL includes the ID or alias, for example `https://My_AWS_Account_ID.signin.aws.amazon.com/console/`.
+  - Or sign in at `https://console.aws.amazon.com/` and enter the ID / alias manually.
+- [x] **Integrations and how to call IAM**
+  - IAM integrates with many AWS services.
+  - IAM supports **PCI DSS** compliance.
+  - AWS recommends **AWS SDKs** for programmatic IAM API calls.
+  - You can also use the **IAM Query API** to call the IAM web service directly.
+- [x] **IAM elements — principals and requests**
+  - A **principal** is an entity that can take an action on an AWS resource.
+  - Your administrative IAM user is your **first** principal.
+  - Users and services can **assume a role**; IAM supports **federated users** and **programmatic** application access.
+  - IAM **users**, **roles**, **federated users**, and **applications** are all principals.
+  - Principals send **requests** via the **console**, **CLI**, **SDKs**, or **APIs**.
+  - A request includes: the **action** (operation), the **resource**, and **principal / environment** information.
+  - AWS builds a **request context**: principal, **aggregate permissions**, environment data (**IP**, user agent, SSL status), and **resource** data.
+
+<img width="962" height="461" alt="image" src="https://github.com/user-attachments/assets/764845ed-5822-4deb-a469-cb4cd29469f5" />
+
+- [x] **Authentication vs authorization**
+  - A principal must be **authenticated** to send a request.
+  - Console: **username** and **password**.
+  - API / CLI: **access key** and **secret key**.
+  - **Authorization:** IAM uses the request context to find matching **policies** and allow or deny.
+  - Policies are **JSON** documents in IAM.
+  - Policy kinds here: **user (identity) based** and **resource-based**.
+  - IAM checks **each** policy that matches the request context.
+  - A single policy with a **deny** → IAM **denies** and **stops** evaluating (**explicit deny**).
+- [x] **Evaluation logic (cheat-sheet version)**
+  - By default all requests are denied (**implicit deny**).
+  - An **explicit allow** overrides the implicit deny.
+  - An **explicit deny** overrides any explicit allows.
+  - Only **root** has access to all resources by default.
+- [x] **Actions and resources**
+  - **Actions** are defined by a service — view, create, edit, delete, and so on.
+  - Actions not **explicitly allowed** are denied.
+  - To allow an action, include it in a policy on the **principal** or the **affected resource**.
+  - A **resource** is an entity in a service (examples: **EC2** instances, **S3** buckets, **IAM** users, **DynamoDB** tables).
+  - Each service defines the actions you can perform on its resources.
+- [x] **Authentication methods — console password**
+  - Password for interactive sessions such as the **Management Console**.
+  - You can allow users to change their own passwords.
+  - To allow only **selected** users: disable the “all users” option and grant change-password via an **IAM policy**.
+- [x] **Authentication methods — access keys**
+  - Combination of **access key ID** and **secret access key**.
+  - A user can have **two active** access keys at a time.
+  - Used for programmatic calls: **API**, **CLI**, **PowerShell**.
+  - You can create, modify, view, or **rotate** them.
+  - IAM returns the ID and secret at **creation**; the **secret is shown only then**. If lost, create a **new** key.
+  - Store keys **securely**.
+  - Users can change their own keys through **IAM policy** (not from the console).
+  - You can **disable** a key so it cannot be used for API calls.
+- [x] **Authentication methods — server certificates**
+  - **SSL/TLS** certificates to authenticate with **some** AWS services.
+  - AWS recommends **AWS Certificate Manager (ACM)** to provision, manage, and deploy them.
+  - Use IAM for certificates **only** when you must support **HTTPS** in a region **ACM does not** support.
+
+<img width="737" height="441" alt="image" src="https://github.com/user-attachments/assets/0e0f8402-b47b-497f-aa28-4c1a207ad0b8" />
+
+- [x] **IAM users (detail)**
+  - Entity that represents a **person** or a **service**.
+  - Can be assigned: access key ID + secret (API / CLI / SDK) and/or a **console password**.
+  - By default users **cannot access anything**.
+  - Root credentials: **email** used to create the account + **password**.
+  - Root has **full admin**; those permissions **cannot be restricted**.
+  - Root best practices: do **not** use root credentials, do **not share** them, create an IAM user with admin as needed, enable **MFA**.
+  - Users that represent applications are **service accounts**.
+  - Up to **5,000 users** per account.
+  - Each user has a **friendly name** and an **ARN** that uniquely identifies them across AWS.
+  - A **unique ID** is returned only when you create the user via **API**, **PowerShell**, or **CLI**.
+  - Create **individual** IAM accounts (do not share accounts).
+  - Access keys are **not** a console password and **cannot** log you into the console.
+  - Access key ID + secret can be generated **once**; regenerate if lost.
+  - A **password policy** can enforce length / complexity (applies to **all** users).
+  - Allow or disallow password changes with an IAM policy.
+  - Change access keys and passwords **regularly**.
+
+<img width="959" height="462" alt="image" src="https://github.com/user-attachments/assets/c1e3d56d-53cf-49f1-a837-798d298502f1" />
+
+- [x] **Groups**
+  - Collections of users with **policies** attached.
+  - A group is **not an identity** and **cannot** be a **principal** in a policy.
+  - Use groups to assign permissions; follow **least privilege**.
+  - You **cannot nest** groups.
+
+<img width="914" height="486" alt="image" src="https://github.com/user-attachments/assets/2c88a7b3-8851-4d37-8f0a-3e6a8c89365e" />
+
+- [x] **Roles**
+  - Created, then **assumed** by trusted entities; they define permissions for AWS service requests.
+  - Delegate permissions to users and services **without** permanent credentials (username / password).
+  - IAM users or AWS services assume a role to get **temporary** credentials for API calls.
+  - **No** password or access keys are stored on the role itself.
+  - Users can assume a role **temporarily** for a specific task.
+  - A **federated** user who signs in via an external IdP can be assigned a role.
+  - Temporary credentials with roles **automatically expire**.
+  - Assume via **console**, **CLI**, **PowerShell**, or **API**.
+
+<img width="575" height="487" alt="image" src="https://github.com/user-attachments/assets/c66967b7-b5a6-498e-a221-3c0135524164" />
+
+- [x] **IAM roles with EC2**
+  - Grant apps on **EC2** permission for AWS API requests using **instance profiles**.
+  - Only **one role** per EC2 instance at a time.
+  - Assign the role at **launch** or **any time after**.
+  - CLI / API: you must create **instance profiles** **manually** (the **console** does this automatically / transparently).
+  - Applications retrieve temporary credentials from **instance metadata**.
+- [x] **Role delegation (two policies)**
+  - **Permissions policy** — grants the role user the required permissions on a resource.
+  - **Trust policy** — specifies the **trusted accounts** allowed to assume the role.
+  - Wildcards (`*`) **cannot** be specified as a **principal**.
+  - A permissions policy must also be attached to the **user in the trusted account**.
+- [x] **Policies**
+  - Documents that define permissions; applied to users, groups, and roles.
+  - Written in **JSON** (attribute / value pairs).
+  - All permissions **implicitly denied** by default.
+  - The **most restrictive** policy is applied.
+  - Use the **IAM Policy Simulator** to understand, test, and validate policies.
+  - Use the **Condition** element for extra logic.
+
+<img width="619" height="499" alt="image" src="https://github.com/user-attachments/assets/c1fcff05-b8ed-4504-a48f-4abb3186188d" />
+
+- [x] **Three policy delivery types**
+  - **AWS managed** — created and administered by **AWS**; common **job-function** use cases; attach to many users / groups / roles **within and across** accounts; you **cannot** change the permissions.
+  - **Customer managed** — standalone policy you create in **your** account; attach to many identities **in that account only**; often copied from a managed policy then customized; use when AWS managed policies do not fit.
+  - **Inline** — embedded in the user, group, or role (**1:1**). Deleting the entity **deletes** the policy. AWS recommends **managed** in most cases. Inline is useful when you must be sure those permissions are **not** assigned to anyone else.
+- [x] **AWS managed policies are standalone**
+  - A standalone policy has its own **ARN** that includes the policy name.
+  - You cannot change permissions in AWS managed policies.
+  - Job-function managed policies include: **Administrator**, **Billing**, **Database Administrator**, **Data Scientist**, **Developer Power User**, **Network Administrator**, **Security Auditor**, **Support User**, **System Administrator**, **View-Only User**.
+- [x] **IAM policy evaluation logic (advanced)**
+  - Default: all requests **implicitly denied**. Root has **full access**.
+  - An **explicit allow** in an identity-based or resource-based policy overrides that default.
+  - If a **permissions boundary**, **Organizations SCP**, or **session policy** is present, it might override the allow with an **implicit deny**.
+  - An **explicit deny** in **any** policy overrides any allows.
+  - **Identity-based:** attached to a user, group, or role; grant permissions to entities (users and roles).
+  - **Resource-based:** grant permissions to the **principal** named on the resource.
+  - **Permissions boundary:** maximum an identity-based policy can grant to a user or role.
+  - **SCPs:** maximum for an **organization** or **OU**.
+  - **Session policies:** passed when you programmatically create a temporary session for a role or federated user.
+
+<img width="1024" height="470" alt="image" src="https://github.com/user-attachments/assets/f7713753-3341-4fb8-be0c-754b4ffeb668" />
+
+- [x] **IAM instance profiles**
+  - A **container** for an IAM role used to pass role information to an **EC2** instance when it **starts**.
+  - An instance profile can contain **only one** IAM role; a role can be in **multiple** instance profiles.
+
+<img width="1024" height="407" alt="image" src="https://github.com/user-attachments/assets/681c79dd-c895-42f2-897e-b4ae9df4d47e" />
+
+- [x] **AWS STS**
+  - Web service that issues **temporary**, **limited-privilege** credentials for IAM users or **federated** users you authenticate.
+  - By default STS is a **global** service; requests go to `https://sts.amazonaws.com`.
+  - You can send STS requests to **regional** endpoints (lower **latency**).
+  - Credentials still work **globally**.
+  - STS supports **CloudTrail** (logs to an **S3** bucket).
+  - Temporary credentials work like long-term access keys, except: they are **short-term** (minutes to hours); after **expiry** AWS no longer accepts them; they are **not stored** with the user — generated **dynamically**; the user can request **new** ones if still permitted.
+  - Advantages: no need to **distribute / embed** long-term keys; access without defining an AWS identity (basis of **roles** and **federation**); limited lifetime so you need not **rotate** or **revoke** them; after expiry they **cannot be reused** (you set duration up to a maximum).
+  - STS returns: access key ID + secret, a **session token**, and **expiration / duration**.
+- [x] **STS APIs**
+  - **`AssumeRole`** — IAM users only (can be used for **MFA**).
+  - **`AssumeRoleWithSAML`** — anyone who passes a **SAML** auth response from a known / trusted IdP.
+  - **`AssumeRoleWithWebIdentity`** — anyone who passes a **web identity token** from a known / trusted IdP.
+  - **`GetSessionToken`** — IAM user or **root** (can be used for **MFA**).
+  - **`GetFederationToken`** — IAM user or **root**.
+  - AWS recommends **Amazon Cognito** for federation with **Internet** identity providers.
+- [x] **Where users can come from**
+  - **Federation (typically AD):** **SAML 2.0**; temporary access from AD credentials; does **not** need an IAM user; **SSO** to the console without assigning IAM credentials.
+  - **Federation with mobile apps:** **Facebook / Amazon / Google** or other **OpenID** providers.
+  - **Cross-account access:** users in one account access resources in another — via a **resource-based** policy on the resource, **or** by **assuming a role** (identity-based) in that account.
+- [x] **STS identity-broker scenarios**
+  - **Scenario 1:** Identity Broker talks to **LDAP** and **STS**. Broker authenticates with **LDAP first**, then **STS**. The application then gets **temporary** access to AWS resources.
+  - **Scenario 2:** Broker talks to **LDAP** and **STS**. Broker authenticates with **LDAP first**, then gets an **IAM role** associated with the user. The application authenticates with **STS**, **assumes that role**, and uses the role to call the service.
+- [x] **Cross-account access**
+  - Useful when a customer has separate accounts (example: **development** and **production**).
+  - Makes it easier to work in a **multi-account** / **multi-role** environment by **switching roles** in the console.
+  - Sign in with your IAM username, then switch the console to manage another account **without** entering another username and password.
+  - Same two mechanisms: **resource-based** policy on the target resource, or **assume a role** in the other account.
+
+<img width="804" height="347" alt="image" src="https://github.com/user-attachments/assets/b013de18-433b-4d73-a946-8690cab3c420" />
+
+- [x] **IAM best-practice checklist**
+  - Lock away **root user access keys**.
+  - Use **roles** to delegate permissions.
+  - Grant **least privilege**.
+  - Get started with **AWS managed policies**.
+  - **Validate** your policies.
+  - Prefer **customer managed** over **inline**.
+  - Use **access levels** to review permissions.
+  - Configure a **strong password policy**.
+  - Enable **MFA**.
+  - Use roles for apps on **EC2**.
+  - Do **not share** access keys.
+  - **Rotate** credentials regularly.
+  - **Remove** unnecessary credentials.
+  - Use **policy conditions** for extra security.
+  - **Monitor** activity in the account.
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is a **cheat sheet**, not a console walkthrough. The notes mention a short video on root MFA and deleting the root access key — that is not reproduced here.
+
+### **Overview**
+
+- [ ] Use this sheet for **revision**, not as a first-pass lesson.
+- [ ] You will:
+  - [ ] Recite the **new-user** default, **root** vs **power user**, and **MFA** (console / API / CLI).
+  - [ ] Distinguish **managed**, **customer managed**, and **inline** policies.
+  - [ ] Trace **evaluation** (implicit deny → allow → boundary/SCP/session → explicit deny).
+  - [ ] Name **instance profiles**, **STS** APIs, and the two **identity-broker** flows.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+Instance-profile commands from the cheat sheet, plus STS session tokens for MFA / CLI.
+
+```bash
+# MFA / CLI: obtain temporary credentials from STS
+aws sts get-session-token
+```
+
+```bash
+# Create an instance profile (required manually on CLI / API; console does this for you)
+aws iam create-instance-profile
+```
+
+```bash
+# Add a role to an instance profile
+aws iam add-role-to-instance-profile
+```
+
+```bash
+# List instance profiles (account-wide, or those that include a role)
+aws iam list-instance-profiles
+aws iam list-instance-profiles-for-role
+```
+
+```bash
+# Get one instance profile
+aws iam get-instance-profile
+```
+
+```bash
+# Remove a role from an instance profile
+aws iam remove-role-from-instance-profile
+```
+
+```bash
+# Delete an instance profile
+aws iam delete-instance-profile
+```
+
+Default STS endpoint: `https://sts.amazonaws.com`. You can use a **regional** STS endpoint for lower latency; credentials still work **globally**.
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+No application code. Exam-shaped facts: sign-in URLs, evaluation order, STS return values, and role trust vs permissions.
+
+```text
+# Console sign-in (account in the URL)
+https://My_AWS_Account_ID.signin.aws.amazon.com/console/
+# Or enter account ID / alias at
+https://console.aws.amazon.com/
+
+# Evaluation (short)
+# 1) implicit deny (except root full access)
+# 2) explicit allow (identity- or resource-based) can allow
+# 3) boundary / SCP / session policy may implicit-deny that allow
+# 4) explicit deny in ANY policy wins and stops evaluation
+
+# Role delegation
+#   permissions policy → what the role can do
+#   trust policy       → who may assume (no * as Principal)
+#   plus a policy on the user in the trusted account
+
+# STS returns: access key ID + secret, session token, expiration
+# AssumeRole | AssumeRoleWithSAML | AssumeRoleWithWebIdentity
+# GetSessionToken | GetFederationToken
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What can you manage with IAM, and what is it not for?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Users, groups, access policies, roles, credentials, password policies, **MFA**, and **API keys**.
+- [x] Centralized control and **shared access** to the account.
+- [x] IAM is **not** for **application-level** authentication.
+
+</details>
+
+### Question 2: What access does a new IAM user have, and what three components does a user have?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **No** access to services — they can only **log in**.
+- [x] Permissions must be **explicitly granted**.
+- [x] Three components: **username**, **password**, **permissions**.
+
+</details>
+
+### Question 3: How can you authenticate with MFA (three ways), and what is the privileged-user best practice?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Console:** username, password, and a **six-digit** code.
+- [x] **API:** policy restrictions; pass MFA parameters on **STS** requests.
+- [x] **CLI:** `aws sts get-session-token`.
+- [x] MFA for **all** users; **U2F** or **hardware** MFA for **privileged** users.
+
+</details>
+
+### Question 4: Is IAM regional? What consistency model does it use?
+
+<details>
+<summary>Answer</summary>
+
+- [x] IAM is **universal / global** — not tied to a region.
+- [x] It is **eventually consistent**.
+- [x] Data is replicated across **multiple data centers** worldwide.
+
+</details>
+
+### Question 5: What is the root account for, and what does Power user allow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Root is created at signup and has complete **Admin** access by default.
+- [x] Best practice: use root for **billing** only.
+- [x] **Power user:** everything **except** managing IAM **users** and **groups**.
+
+</details>
+
+### Question 6: What makes up temporary security credentials?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Access key ID**
+- [x] **Secret access key**
+- [x] **Security token**
+
+</details>
+
+### Question 7: What is a principal, and what is in a request context?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A **principal** is an entity that can act on an AWS **resource** (users, roles, federated users, applications).
+- [x] Request context includes the **principal**, **aggregate permissions**, environment (**IP**, user agent, SSL), and **resource** data.
+
+</details>
+
+### Question 8: Recite the short evaluation rules (implicit / explicit).
+
+<details>
+<summary>Answer</summary>
+
+- [x] Default is **implicit deny** (except **root** has full access).
+- [x] An **explicit allow** overrides implicit deny.
+- [x] An **explicit deny** overrides any allows and **stops** evaluation.
+
+</details>
+
+### Question 9: Access keys — how many can be active, when is the secret shown, and can they log into the console?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Up to **two active** keys per user.
+- [x] The **secret** is returned **only at creation**; if lost, create a **new** key.
+- [x] Keys are **not** a password and **cannot** sign in to the console.
+
+</details>
+
+### Question 10: When do you use IAM for server certificates instead of ACM?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Prefer **ACM** to provision, manage, and deploy **SSL/TLS** certificates.
+- [x] Use **IAM** only when you need **HTTPS** in a region **ACM does not** support.
+
+</details>
+
+### Question 11: What cannot a group be, and can you nest groups?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A group is **not an identity** and **cannot** be a **principal** in a policy.
+- [x] You **cannot nest** groups.
+
+</details>
+
+### Question 12: What two policies are on a delegated role, and can the trust principal be `*`?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **Permissions policy** — what the role can do on resources.
+- [x] **Trust policy** — which **trusted accounts** may assume the role.
+- [x] Wildcards (`*`) **cannot** be specified as a **principal**.
+- [x] The user in the trusted account also needs a **permissions** policy.
+
+</details>
+
+### Question 13: How do IAM roles work with EC2 and instance profiles?
+
+<details>
+<summary>Answer</summary>
+
+- [x] An **instance profile** is a **container** that passes a role to an instance at **start**.
+- [x] **One role** per instance at a time; a role can sit in **multiple** profiles.
+- [x] Console creates the profile for you; **CLI / API** require creating it **manually**.
+- [x] Apps get temporary credentials from **instance metadata**.
+
+</details>
+
+### Question 14: AWS managed vs customer managed vs inline — who owns them, and when is inline useful?
+
+<details>
+<summary>Answer</summary>
+
+- [x] **AWS managed:** AWS owns them; job functions; attach **across accounts**; **cannot** edit permissions.
+- [x] **Customer managed:** you own them; attach only **in your account**; customize when managed policies do not fit.
+- [x] **Inline:** **1:1** with the entity; deleted when the entity is deleted.
+- [x] Prefer **managed**; use inline when those permissions must **not** be reused on anyone else.
+
+</details>
+
+### Question 15: If a boundary, SCP, or session policy is present, what can happen to an explicit allow?
+
+<details>
+<summary>Answer</summary>
+
+- [x] It might override the allow with an **implicit deny**.
+- [x] An **explicit deny** in **any** policy still wins over any allow.
+
+</details>
+
+### Question 16: Name the five STS APIs and who can call each.
+
+<details>
+<summary>Answer</summary>
+
+- [x] **`AssumeRole`** — IAM users only (can include **MFA**).
+- [x] **`AssumeRoleWithSAML`** — a **SAML** response from a trusted IdP.
+- [x] **`AssumeRoleWithWebIdentity`** — a **web identity token** from a trusted IdP.
+- [x] **`GetSessionToken`** — IAM user or **root** (can include **MFA**).
+- [x] **`GetFederationToken`** — IAM user or **root**.
+
+</details>
+
+### Question 17: What are the advantages of STS temporary credentials?
+
+<details>
+<summary>Answer</summary>
+
+- [x] You do not **distribute** or **embed** long-term keys in an application.
+- [x] Users can access AWS **without** an IAM identity (roles and **federation**).
+- [x] Limited lifetime — no need to **rotate** or **revoke** when done.
+- [x] After **expiry** they cannot be reused.
+
+</details>
+
+### Question 18: How do the two identity-broker scenarios differ?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Both: broker talks to **LDAP** and **STS**; **LDAP authenticates first**.
+- [x] **Scenario 1:** broker then authenticates with **STS**; the app gets **temporary** access.
+- [x] **Scenario 2:** broker gets the user’s **IAM role**; the app calls **STS**, **assumes the role**, and uses that role to call the service.
+
+</details>
+
+### Question 19: How do you get cross-account access?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Put a **resource-based** policy on the resource in the other account with the permissions you need.
+- [x] **Or** assume a **role** (identity-based) in that account.
+- [x] In the console you can **switch roles** without signing in again (useful for **dev** vs **prod** accounts).
+
+</details>
+
+### Question 20: How many IAM users per account, and what IDs does a user have?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Up to **5,000** users per account.
+- [x] A **friendly name** and an **ARN** that uniquely identifies the user across AWS.
+- [x] A **unique ID** is returned only when you create the user via **API**, **PowerShell**, or **CLI**.
+
+</details>
+
+</details>
+
+## Summary
+
+**IAM** centrally controls who can use AWS resources (**users**, **groups**, **roles**, **policies**, credentials, **MFA**, API keys). It is **not** for app-level auth. New users can **log in** with **no** access. IAM is **global** and **eventually consistent**. Use **root** for **billing** only; **Power user** cannot manage IAM users/groups. **MFA** is a six-digit code via console, API+STS, or `aws sts get-session-token`; hardware/U2F for privileged users. Auth methods: console **password**, **access keys** (two active; secret once; not for console login), **server certificates** (prefer **ACM**). **Groups** are not principals and cannot nest. **Roles** have no long-term keys; **trust** + **permissions** policies (no `*` principal); **EC2** uses an **instance profile** (one role per instance; CLI creates profiles manually). Evaluation: **implicit deny** → **explicit allow** → boundary/**SCP**/session may implicit-deny → **explicit deny** wins. Prefer **AWS** then **customer managed** policies; **inline** is 1:1. **STS** issues temporary credentials (`AssumeRole*`, `GetSessionToken`, `GetFederationToken`); federate with **SAML**/AD, **OpenID** mobile IdPs, or **cross-account** resource policies / role switch. Identity brokers: LDAP first, then STS (direct temps or assume a role). Best practices: lock root keys, least privilege, MFA, roles on EC2, rotate/remove credentials, conditions, monitor.
+
+## References
+
+- [AWS Certified Solutions Architect Associate (SAA-C03) Course – Neal Davis (Udemy)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+- [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [IAM Identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)
+- [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
+- [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+- [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+- [Using instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html)
+- [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+- [Managed policies and inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
+- [Job functions managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html)
+- [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+- [Testing IAM policies with the IAM policy simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html)
+- [MFA in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+- [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)
+- [AWS Security Token Service (STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
+- [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)
+- [AssumeRoleWithSAML](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html)
+- [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html)
+- [GetSessionToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html)
+- [GetFederationToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html)
+- [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)
+- [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)
+- [Switch to an IAM role (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-console.html)
+- [AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
+- [IAM and PCI DSS](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-compliance.html)
+
+</details>
+
+## Amazon Elastic Compute Cloud (EC2)
+
+
+
+

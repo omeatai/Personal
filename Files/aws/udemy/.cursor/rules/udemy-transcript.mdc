@@ -1,0 +1,87 @@
+---
+description: Extract Udemy transcript, write textbook docs, and update 01.md TOC
+globs: udemy/**
+alwaysApply: false
+---
+
+# Udemy Transcript + Textbook Documentation
+
+When this rule is applied or the user provides a Udemy lecture URL (or has one open), do **all** of these every time:
+
+1. Save the **transcript** to `Personal/Files/aws/udemy/notes/`
+2. Capture video frames every **5–10 seconds**, keep useful figures, delete the rest
+3. Write **textbook documentation** to `Personal/Files/aws/udemy/md/`
+4. Add or update the lecture link on the landing page `Personal/Files/aws/01.md`
+
+Use `Personal/Files/aws/udemy/sample.md` as the documentation style guide. Do **not** write lecture content into `01.md`. `01.md` is only the landing page + table of contents. Manual archive is `Personal/Files/aws/old.md`.
+
+## A. Extract the transcript
+
+1. Navigate to the lecture URL (`browser_navigate`) or use the open tab.
+2. Snapshot the page (`browser_snapshot`).
+3. Open the **Transcript** panel if it is closed (transcript toggle / `data-purpose="transcript-toggle"`).
+4. Collect cue lines in order (`role: button` names between video controls and **Autoscroll**).
+5. Get the lecture title and **sequence number** from course content (example: `Play 2. The SAA-C03 Exam` -> `2`).
+6. Save `Personal/Files/aws/udemy/notes/<sequence>-<Hyphenated-Title>.txt`:
+
+```
+Lecture: <title>
+URL: <url>
+============================================================
+
+<transcript lines>
+```
+
+Filename rules: spaces to `-`, keep readable Title-Case, drop special characters except hyphens.
+
+## B. Capture figures every 5–10 seconds
+
+Prefer **seeking** through the video at 5–10 second intervals (video time), not waiting in real time. Seeking is faster and still captures every illustration.
+
+1. Wait until `video` is loaded (`readyState >= 2`, non-zero duration). Play once if needed, then mute and pause.
+2. Create a temp folder if needed, e.g. `Personal/Files/aws/udemy/md/images/_tmp-<sequence>/`.
+3. Loop `currentTime` from `0` to `duration` in **8-second** steps (use 5s for short/dense diagram videos, 10s for long talking-head).
+4. After each seek, wait briefly for the frame, then `browser_take_screenshot`.
+5. Save raw frames as `_tmp-<sequence>/tXXX.png` (XXX = seconds).
+6. **Keep** a frame when it shows a new slide, diagram, table, console step, or important UI. Place keepers at `Personal/Files/aws/udemy/md/images/<sequence>-<short-slug>-figN.png`.
+7. **Delete** black/unloaded frames, near-duplicates of the same slide, and leftover `_tmp-*` files after documentation is written.
+8. If the player stays black, retry play/seek once. If still blocked, use the best available still and note that in the figure caption.
+9. CodeSnap is for editor/code captures only. For Udemy slides/console, use browser screenshots.
+
+Embed each kept figure next to the transcript content it illustrates, with **Figure N.** title and a short description.
+
+## C. Write textbook documentation
+
+Create `Personal/Files/aws/udemy/md/<sequence>-<Hyphenated-Title>.md` matching `sample.md`:
+
+- Title heading with lecture number
+- Course + lecture links + transcript path
+- **Introduction** (prose a novice can follow)
+- **Detailed Explanation** as numbered steps, with `- [x]` bullets from the transcript
+- **Figures** beside the matching step
+- Collapsible **Lab**, **Terminal Commands**, **Code**, **Questions and Answers**
+- **Summary**
+- **References** (Udemy lecture, official AWS docs, transcript file)
+
+For HOL/console lessons, write a real step-by-step tutorial a beginner can repeat. For theory lessons, say there is no lab and keep Q&A exam-focused.
+
+## D. Update the landing page
+
+In `Personal/Files/aws/01.md`, add the new lecture under the correct section in **Table of contents**:
+
+```
+N. [Lecture Title](udemy/md/N-Hyphenated-Title.md)
+```
+
+Do not duplicate an existing TOC row. Do not put full lecture notes in `01.md`.
+
+## Confirm
+
+Tell the user: transcript path + line count, doc path, figures kept vs deleted, and that `01.md` was updated.
+
+## Examples
+
+- Transcript: `udemy/notes/1-Welcome-and-How-to-Use-this-Course.txt`
+- Docs: `udemy/md/1-Welcome-and-How-to-Use-this-Course.md`
+- Transcript: `udemy/notes/2-The-SAA-C03-Exam.txt`
+- Docs: `udemy/md/2-The-SAA-C03-Exam.md`
