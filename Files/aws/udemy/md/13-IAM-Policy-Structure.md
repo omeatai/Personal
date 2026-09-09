@@ -10,6 +10,11 @@ This lesson is about **reading IAM policies in JSON** (**JavaScript Object Notat
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Understand that every operation is an API action</summary>
+
+### Step 1 — Understand that every operation is an API action
+
 - [x] **Everything is an API action**
   - Console, **CLI**, and **SDK** usage all make **API calls**.
   - Each service has its **own set** of API actions.
@@ -19,12 +24,26 @@ This lesson is about **reading IAM policies in JSON** (**JavaScript Object Notat
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4982836d-a747-44d0-bbaa-d8272515fe09" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Read IAM policies as strict JSON</summary>
+
+### Step 2 — Read IAM policies as strict JSON
+
 - [x] **Policies are JSON**
   - All AWS IAM policies are written in **JSON** (**JavaScript Object Notation**).
   - Formatting is strict: miss a **comma** and the policy **breaks**.
   - **Visual Studio Code** and the **AWS Management Console** policy editor usually **highlight** JSON errors.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec7bacfb-710e-4028-8539-c4bb8cc3930d" />
+
+</details>
+
+<details>
+  <summary>Step 3 — Identify the Version and Statement elements</summary>
+
+### Step 3 — Identify the Version and Statement elements
 
 - [x] **Version**
   - The top-level **Version** looks like a date (commonly **`2012-10-17`**).
@@ -38,6 +57,14 @@ This lesson is about **reading IAM policies in JSON** (**JavaScript Object Notat
   - Each statement has **Effect**, **Action**, **Resource**, and related elements, evaluated **together**.
   - A policy may contain **more than one** permission statement.
   - Extra statements are additional JSON objects in the `Statement` array, separated by **commas**.
+
+</details>
+
+<details>
+  <summary>Step 4 — Set the Effect and list the Action</summary>
+
+### Step 4 — Set the Effect and list the Action
+
 - [x] **Effect**
   - Only two values: **`Allow`** or **`Deny`**.
   - Choose whether you want to **allow** or **deny** the listed actions on the listed resources.
@@ -48,6 +75,14 @@ This lesson is about **reading IAM policies in JSON** (**JavaScript Object Notat
   - Slide examples:
     - **`s3:*`** — **wildcard**; **all** S3 API actions.
     - **`dynamodb:Describe*`** — more specific: every DynamoDB action whose name starts with **Describe** (for example **DescribeTable**).
+
+</details>
+
+<details>
+  <summary>Step 5 — Scope the statement to resources with ARNs and wildcards</summary>
+
+### Step 5 — Scope the statement to resources with ARNs and wildcards
+
 - [x] **Resource (ARNs)**
   - Lists the **specific resources** the statement applies to, as **Amazon Resource Names (ARNs)**.
   - **S3 needs two resource lines** in this example:
@@ -60,46 +95,7 @@ This lesson is about **reading IAM policies in JSON** (**JavaScript Object Notat
   - Means **everything from that point onward**.
   - **`s3:*`** = every API action that starts with **`s3:`** — all Amazon S3 actions.
 
-<details>
-  <summary>Lab</summary>
-
-## Lab
-
-No labs in this topic; the content is conceptual only. You read a JSON policy on a slide; you do not create one in the console here.
-
-### **Overview**
-
-- [ ] This lesson is **how to read IAM JSON**; there is no console walkthrough.
-- [ ] You will:
-  - [ ] Map console/CLI clicks to **API actions** (for example **RunInstances**, **StopDBInstance**).
-  - [ ] Identify **Version**, **Statement**, **Effect**, **Action**, and **Resource**.
-  - [ ] Explain **`s3:*`**, **`dynamodb:Describe*`**, and why S3 lists **two** ARNs (bucket and `/*` objects).
-  - [ ] Remember JSON is strict — a missing **comma** invalidates the policy.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. Policy structure is explained from a JSON slide, not from the CLI.
-
-```bash
-# No commands in this topic; the lesson is conceptual only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
 Illustrative JSON matching the slide: **Allow** all **S3** actions on a bucket **and** its objects, plus **DynamoDB `Describe*`** on one table. Replace the bucket name, account, region, and table with yours. **`Version`** is the policy language version, not a “wrong date.”
-
-<details>
-<summary>Example identity-based policy (JSON)</summary>
 
 ```json
 {
@@ -118,7 +114,48 @@ Illustrative JSON matching the slide: **Allow** all **S3** actions on a bucket *
 }
 ```
 
+- [x] **`s3:*`** — all S3 API actions.
+- [x] **`dynamodb:Describe*`** — DynamoDB actions that start with **Describe**.
+- [x] Two S3 ARNs: bucket-level, then **`/*`** for objects.
+- [x] DynamoDB ARN includes **region**, **account ID**, and **table name**.
+- [x] A second statement would be another object in the `Statement` array, separated by a **comma**.
+
 </details>
+
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. You read a JSON policy on a slide; you do not create one in the console here.
+
+### **Overview**
+
+- [ ] This lesson is **how to read IAM JSON**; there is no console walkthrough.
+- [ ] You will:
+  - [ ] Map console/CLI clicks to **API actions** (for example **RunInstances**, **StopDBInstance**).
+  - [ ] Identify **Version**, **Statement**, **Effect**, **Action**, and **Resource**.
+  - [ ] Explain **`s3:*`**, **`dynamodb:Describe*`**, and why S3 lists **two** ARNs (bucket and `/*` objects).
+  - [ ] Remember JSON is strict — a missing **comma** invalidates the policy.
+
+Illustrative JSON matching the slide: **Allow** all **S3** actions on a bucket **and** its objects, plus **DynamoDB `Describe*`** on one table. Replace the bucket name, account, region, and table with yours. **`Version`** is the policy language version, not a “wrong date.”
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:*", "dynamodb:Describe*"],
+      "Resource": [
+        "arn:aws:s3:::example-bucket",
+        "arn:aws:s3:::example-bucket/*",
+        "arn:aws:dynamodb:us-east-1:123456789012:table/example-table"
+      ]
+    }
+  ]
+}
+```
 
 - [x] **`s3:*`** — all S3 API actions.
 - [x] **`dynamodb:Describe*`** — DynamoDB actions that start with **Describe**.

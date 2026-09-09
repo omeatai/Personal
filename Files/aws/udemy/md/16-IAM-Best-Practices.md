@@ -10,11 +10,23 @@ This short theory lesson walks through **IAM security best practices**. AWS now 
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Start with the AWS best-practices article</summary>
+
+### Step 1 — Start with the AWS best-practices article
+
 - [x] **Read the AWS article too**
   - This lesson is a **fast** run-through.
   - A **link** is attached to the lesson; open the **AWS website** article and review each practice in more detail.
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/79cbad8b-5dc5-44a0-bfd9-47b6602d2b9d" />
+
+</details>
+
+<details>
+  <summary>Step 2 — Give humans and workloads temporary credentials</summary>
+
+### Step 2 — Give humans and workloads temporary credentials
 
 - [x] **Require human users to federate with an identity provider (temporary credentials)**
   - AWS now pushes **IAM Identity Center** or another form of **federation** into AWS, rather than long-lived **IAM user** accounts.
@@ -26,6 +38,19 @@ This short theory lesson walks through **IAM security best practices**. AWS now 
   - Do **not** store **access keys** in applications.
   - Configure applications to use **IAM roles**.
   - The workload then gets **temporary credentials** from the **AWS Security Token Service (STS)**.
+
+```text
+# Humans:  federate (Identity Center / IdP) → temporary credentials
+# Apps:    assume an IAM role → STS temporary credentials (do not embed access keys)
+```
+
+</details>
+
+<details>
+  <summary>Step 3 — Protect credentials with MFA, key rotation, and a locked-away root</summary>
+
+### Step 3 — Protect credentials with MFA, key rotation, and a locked-away root
+
 - [x] **Require multi-factor authentication (MFA)**
   - Require MFA for **all accounts**.
   - Especially **root** and **privileged** accounts.
@@ -38,6 +63,14 @@ This short theory lesson walks through **IAM security best practices**. AWS now 
   - Typical company pattern: set a **very complex password** on **root**, enable **MFA**, and **lock that password away**.
   - Do **not** use the root account for day-to-day work (often **not for any purpose** once setup is done).
   - All **administrators** should have their **own** accounts.
+
+</details>
+
+<details>
+  <summary>Step 4 — Apply least privilege, starting from AWS managed policies</summary>
+
+### Step 4 — Apply least privilege, starting from AWS managed policies
+
 - [x] **Apply least privilege**
   - Give users **only** the permissions they need to do their job.
   - The same rule applies to **applications**: only the permissions required for the operations they must perform in AWS.
@@ -47,6 +80,13 @@ This short theory lesson walks through **IAM security best practices**. AWS now 
   - As you gain experience writing policies, move toward **your own** policies that lock down **exactly** what you need.
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/e84d0b7a-dfb7-4733-9352-08bda9a46b65" />
+
+</details>
+
+<details>
+  <summary>Step 5 — Tighten and clean up permissions with Access Analyzer and conditions</summary>
+
+### Step 5 — Tighten and clean up permissions with Access Analyzer and conditions
 
 - [x] **Use IAM Access Analyzer to generate least-privilege policies from activity**
   - Access Analyzer can look at **user activity** and show which **API actions** they actually call.
@@ -63,6 +103,14 @@ This short theory lesson walks through **IAM security best practices**. AWS now 
   - Confirm only the **right** permissions are in place, including **public** and **cross-account** access.
 - [x] **Validate IAM policies for secure and functional permissions**
   - Check that policies both **work** and stay **secure** — not overly open, and not missing required actions.
+
+</details>
+
+<details>
+  <summary>Step 6 — Set guardrails across accounts with Organizations and boundaries</summary>
+
+### Step 6 — Set guardrails across accounts with Organizations and boundaries
+
 - [x] **Establish permissions guardrails across multiple accounts**
   - When you have **multiple AWS accounts**, manage them with shared **security** and **governance**.
   - Tools the instructor names: **AWS Organizations** and **AWS Control Tower**.
@@ -70,6 +118,13 @@ This short theory lesson walks through **IAM security best practices**. AWS now 
   - A **permissions boundary** sets the **maximum** permissions a particular user can ever receive.
   - Use it when you **delegate** who can attach policies inside an account.
   - If someone accidentally grants **too many** permissions through a policy, the boundary still **caps** them so they never exceed what they are supposed to have.
+
+```text
+# Extra:   Condition on source IP (company range) further restricts a policy
+# Cap:     permissions boundary = maximum permissions a user can ever receive
+```
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -86,28 +141,6 @@ No labs in this topic; the content is conceptual only. There is no console walkt
   - [ ] Require **MFA**, protect **root**, and **rotate** access keys if you must use them.
   - [ ] Apply **least privilege** (start with managed policies, then tighten; use **Access Analyzer**).
   - [ ] Add **conditions**, clean up unused identities, and use **Organizations** / **Control Tower** plus **permissions boundaries** for guardrails.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. The practices are conceptual; later HOL lessons use the console and, where needed, the AWS CLI.
-
-```bash
-# No commands in this topic; the lesson is conceptual only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No policy JSON is shown in this lesson. The instructor’s examples are conceptual: **roles** instead of access keys, **IP conditions**, and a **permissions boundary** as a maximum cap.
 
 ```text
 # Humans:  federate (Identity Center / IdP) → temporary credentials

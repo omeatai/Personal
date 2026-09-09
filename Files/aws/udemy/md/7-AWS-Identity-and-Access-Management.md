@@ -10,6 +10,11 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Understand what IAM is and why it comes first</summary>
+
+### Step 1 — Understand what IAM is and why it comes first
+
 - [x] **Why IAM comes first**
   - The first thing to understand in detail is how to **securely connect** to your AWS account.
   - You connect through the **console**, the **CLI**, and the **API**.
@@ -29,6 +34,13 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a2222001-6d5c-4aef-975b-3e0e96e74118" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Separate authentication from authorization</summary>
+
+### Step 2 — Separate authentication from authorization
+
 - [x] **Authentication vs authorization**
   - **Authentication:** proving you are who you say you are (for example, supplying a **password**).
   - **Authorization:** being **allowed** or **denied** access to resources.
@@ -39,6 +51,14 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
     - **GetBucket** — retrieve information about buckets
     - **CreateUser** — create a user in IAM
   - API actions are authorized **on the AWS resources**.
+
+</details>
+
+<details>
+  <summary>Step 3 — Learn the core IAM components</summary>
+
+### Step 3 — Learn the core IAM components
+
 - [x] **Core IAM components**
   - **Users**, **user groups**, **roles**, and **policies**.
   - **User groups:** add users, then apply **permissions policies** to the group.
@@ -48,6 +68,13 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
   - Users **inherit** the permissions applied to the group through the policy.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e52c0364-d2d7-4101-905f-12689fd27cf3" />
+
+</details>
+
+<details>
+  <summary>Step 4 — Attach identity-based policies and assume roles</summary>
+
+### Step 4 — Attach identity-based policies and assume roles
 
 - [x] **Identity-based policies**
   - Applied to **users**, **groups**, and **roles**.
@@ -59,6 +86,14 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
   - Example: put on a **development** hat for development permissions, then switch to an **ops** hat for ops permissions.
 - [x] **What policies do**
   - Policies define **permissions** for the **identities** or **resources** they are associated with.
+
+</details>
+
+<details>
+  <summary>Step 5 — Lock away root and create IAM users</summary>
+
+### Step 5 — Lock away root and create IAM users
+
 - [x] **Root user vs creating IAM users**
   - Creating the account with an **email address** creates the **root user**.
   - Root has **full permissions**; you **cannot restrict most** of them.
@@ -79,7 +114,25 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
     - The resource type **user**
     - The **friendly name** (for example, Andrea)
 
+```text
+arn:aws:iam::123456789012:user/Andrea
+```
+
+- [x] **arn** — Amazon Resource Name
+- [x] **aws** — AWS partition
+- [x] **iam** — IAM service
+- [x] **123456789012** — account number
+- [x] **user** — resource type
+- [x] **Andrea** — friendly name
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/afa6d266-4ea9-46d3-a8a5-4bf5436efa13" />
+
+</details>
+
+<details>
+  <summary>Step 6 — Authenticate IAM users and organize them into groups</summary>
+
+### Step 6 — Authenticate IAM users and organize them into groups
 
 - [x] **How an IAM user authenticates**
   - **Management Console:** **username** and **password**, optionally **MFA**.
@@ -103,6 +156,13 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c3bb0672-ac60-4d5a-826c-e7d47e5b9fe3" />
 
+</details>
+
+<details>
+  <summary>Step 7 — Compare root and IAM user access side by side</summary>
+
+### Step 7 — Compare root and IAM user access side by side
+
 - [x] **Root user vs IAM user (summary)**
   - **Root:** log in with the **email** used when you created the account; **full**, **unrestricted** access; some permissions **cannot** be restricted.
   - A few actions still **require root**, but once the account is running you mostly **do not need it**.
@@ -113,6 +173,8 @@ This lesson introduces **AWS Identity and Access Management (IAM)**—the servic
   - Enable permissions by assigning policies **directly**, or **preferably through a user group**.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/13eea521-9f00-4216-942e-884ad51f9555" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -130,27 +192,7 @@ No labs in this topic; the content is conceptual only. Hands-on IAM work comes i
   - [ ] Remember that **new IAM users have no permissions by default**.
   - [ ] Plan to **lock away root** (strong password + **MFA**) and use IAM users for daily work.
 
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this IAM theory lesson. Later HOL lessons use the console, CLI, and access keys.
-
-```bash
-# No commands in this topic; the lesson is IAM concepts only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code in this lesson. The unique identifier for an IAM user is an **ARN**. Example shape:
+Example IAM user ARN:
 
 ```text
 arn:aws:iam::123456789012:user/Andrea

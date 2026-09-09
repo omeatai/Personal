@@ -12,11 +12,23 @@ After the account exists, configure it **before** you start HOL labs. Still sign
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Know why account configuration comes before the labs</summary>
+
+### Step 1 — Know why account configuration comes before the labs
+
 - [x] **Why this lesson comes next**
   - Make a few **account configuration** changes, then set a **budget** that emails you when spend is **forecast** to hit, or has **exceeded**, a monthly dollar threshold.
   - You are still using the **root user**; an **IAM user** is created in a later lesson.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3d59862b-ceab-423e-b495-dd6f1c0e630b" />
+
+</details>
+
+<details>
+  <summary>Step 2 — Open IAM and create an account alias</summary>
+
+### Step 2 — Open IAM and create an account alias
 
 - [x] **IAM is a global service**
   - Search for **IAM** in the console (you can **favorite** it).
@@ -36,6 +48,13 @@ After the account exists, configure it **before** you start HOL labs. Still sign
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c8090cfb-2400-4d49-a81d-e495ee62a74e" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/45896974-2492-4281-b189-2989a098f39c" />
 
+</details>
+
+<details>
+  <summary>Step 3 — Enable IAM access to billing on the Account page</summary>
+
+### Step 3 — Enable IAM access to billing on the Account page
+
 - [x] **Account page: regions and IAM billing access**
   - Top right → **Account**.
   - Not **all regions** are enabled by default; enable extra regions only if you need them.
@@ -45,6 +64,13 @@ After the account exists, configure it **before** you start HOL labs. Still sign
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac3dad49-725b-42b3-a189-1c766e6d5be8" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/826967b5-b83c-46b6-aa55-92f2bb147c70" />
+
+</details>
+
+<details>
+  <summary>Step 4 — Turn on billing alerts and PDF invoices</summary>
+
+### Step 4 — Turn on billing alerts and PDF invoices
 
 - [x] **Billing preferences (alerts and invoices)**
   - Left menu → **Billing preferences**.
@@ -56,6 +82,13 @@ After the account exists, configure it **before** you start HOL labs. Still sign
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6e6783e-5f14-407d-8083-21ea5e7fa420" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b75bf1ab-648e-4b28-8e38-c050be66b18a" />
+
+</details>
+
+<details>
+  <summary>Step 5 — Create a $5 monthly cost budget</summary>
+
+### Step 5 — Create a $5 monthly cost budget
 
 - [x] **AWS Budgets ($5 monthly cost budget)**
   - Left menu → **Budgets and planning** → **Budgets** (AWS Budgets service).
@@ -70,6 +103,13 @@ After the account exists, configure it **before** you start HOL labs. Still sign
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e35d43e9-b967-4bbc-843d-c6b6a040c666" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/089b8123-8826-46e7-a720-77d085733bb0" />
 
+</details>
+
+<details>
+  <summary>Step 6 — Watch the small charges and inspect spend</summary>
+
+### Step 6 — Watch the small charges and inspect spend
+
 - [x] **What might still cost a little (and what blows past $5)**
   - Some items have small ongoing fees, e.g. a **Route 53 hosted zone** (usually **under $1/month**).
   - Occasional couple-of-dollar charges can appear; following the course **shutdown/terminate** steps should keep you **under $5**.
@@ -82,6 +122,8 @@ After the account exists, configure it **before** you start HOL labs. Still sign
   - Billing left menu → **Cost Explorer**.
   - Shows an **itemized breakdown** of spend.
   - A **new** account may say to wait **24 hours** before data appears.
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -159,32 +201,6 @@ Stay signed in as **root**. Set alias, billing access, alert preferences, a **$5
 - [ ] After data appears, use Cost Explorer for an **itemized breakdown** if a budget alert fires.
 
 Budget created. Keep terminating lab resources; expect to exceed **$5** mainly when you **register a domain**.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. Configuration is done in the **IAM**, **Account**, **Billing**, **Budgets**, and **Cost Explorer** consoles.
-
-```bash
-# No commands in this topic; use the AWS Management Console.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code in this lesson.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

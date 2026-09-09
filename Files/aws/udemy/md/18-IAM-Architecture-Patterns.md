@@ -10,6 +10,11 @@ This is the first **Architecture Patterns** lesson. These lessons take section k
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Understand how architecture pattern lessons work</summary>
+
+### Step 1 — Understand how architecture pattern lessons work
+
 - [x] **What Architecture Patterns lessons are for**
   - Apply what you just learned to **exam** and **real-world** scenarios.
   - Imagine you are a **solutions architect** building to a customer’s **requirements** and **challenges**.
@@ -19,14 +24,37 @@ This is the first **Architecture Patterns** lesson. These lessons take section k
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/a25c2511-4293-465b-9a1a-c5a2a7b12f09" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Limit password changes to a select group</summary>
+
+### Step 2 — Limit password changes to a select group
+
 - [x] **Requirement: only a select group may change their IAM password**
   - Not everyone should change IAM passwords.
   - Some **privileged** users should be allowed to.
   - **Solution:** create a **group** for those users and attach a **permissions policy** that grants the IAM **ChangePassword** API (`iam:ChangePassword`).
+
+</details>
+
+<details>
+  <summary>Step 3 — Delegate EC2 access to DynamoDB with a role</summary>
+
+### Step 3 — Delegate EC2 access to DynamoDB with a role
+
 - [x] **Requirement: an EC2 instance must be delegated access to a DynamoDB table**
   - **Amazon DynamoDB** is another AWS service (not covered in depth yet).
   - **Delegation** is the point: how does the instance get permission to the table?
   - **Solution:** create an **IAM role**, attach a **permissions policy** that grants access to **DynamoDB**, and use that role on the instance.
+
+</details>
+
+<details>
+  <summary>Step 4 — Assign permissions by job function on a first AWS account</summary>
+
+### Step 4 — Assign permissions by job function on a first AWS account
+
 - [x] **Requirement: first AWS account — assign permissions by job function**
   - The company just created their **first** AWS account.
   - They may **not** have strong AWS skills yet.
@@ -36,14 +64,63 @@ This is the first **Architecture Patterns** lesson. These lessons take section k
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/edf44114-8f0f-49db-a810-c9495e114b56" />
 
+</details>
+
+<details>
+  <summary>Step 5 — Restrict a service by the requester’s source IP</summary>
+
+### Step 5 — Restrict a service by the requester’s source IP
+
 - [x] **Requirement: restrict access to a service by the requester’s source IP**
   - The solutions architect must limit an AWS service based on **source IP**.
   - **Solution:** create an **IAM permissions policy** and use the **Condition** element to control access by **source IP address**.
+
+</details>
+
+<details>
+  <summary>Step 6 — Give a developer programmatic access from the CLI</summary>
+
+### Step 6 — Give a developer programmatic access from the CLI
+
 - [x] **Requirement: a developer must make programmatic API calls from the AWS CLI**
   - **Solution:** instruct the developer to create a set of **access keys** and use them for **programmatic** access.
+
+</details>
+
+<details>
+  <summary>Step 7 — Grant full EC2 API access with an action wildcard</summary>
+
+### Step 7 — Grant full EC2 API access with an action wildcard
+
 - [x] **Requirement: a group of users needs full access to all Amazon EC2 API actions**
   - **Solution:** create a **permissions policy** whose **Action** uses a **wildcard** for EC2.
   - That action looks like **`ec2:*`**.
+
+```text
+# Select group may change password  →  iam:ChangePassword on a group policy
+# EC2 → DynamoDB                    →  instance role + DynamoDB permissions
+# First account / job function      →  AWS managed policies
+# Restrict by requester IP          →  Condition (source IP)
+# Developer CLI                     →  access keys
+# Full EC2 APIs                     →  Action "ec2:*"
+```
+
+Example: full EC2 API access (Action wildcard)
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "ec2:*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -63,28 +140,6 @@ No labs in this topic; the content is conceptual only. There is no console walkt
   - [ ] Developer **CLI** API calls → **access keys**.
   - [ ] Full **EC2** API access → Action **`ec2:*`**.
 
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. The patterns are design choices, not a CLI walkthrough.
-
-```bash
-# No commands in this topic; the lesson is conceptual only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-The lesson names the **ChangePassword** API, a **Condition** on source IP, and the **`ec2:*`** action wildcard. Example shapes (not a full HOL policy):
-
 ```text
 # Select group may change password  →  iam:ChangePassword on a group policy
 # EC2 → DynamoDB                    →  instance role + DynamoDB permissions
@@ -94,8 +149,7 @@ The lesson names the **ChangePassword** API, a **Condition** on source IP, and t
 # Full EC2 APIs                     →  Action "ec2:*"
 ```
 
-<details>
-<summary>Example: full EC2 API access (Action wildcard)</summary>
+Example: full EC2 API access (Action wildcard)
 
 ```json
 {
@@ -109,8 +163,6 @@ The lesson names the **ChangePassword** API, a **Condition** on source IP, and t
   ]
 }
 ```
-
-</details>
 
 </details>
 

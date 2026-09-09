@@ -10,11 +10,24 @@
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Understand what a permissions boundary does</summary>
+
+### Step 1 — Understand what a permissions boundary does
+
 - [x] **What a permissions boundary is**
   - An **advanced IAM** feature.
   - It defines the **maximum permissions** available to an IAM **entity** via an **identity-based policy**.
   - You assign a boundary to **users** and to **roles**.
   - The identity-based policy can _offer_ more; the boundary **caps** what is actually allowed.
+
+</details>
+
+<details>
+  <summary>Step 2 — Trace the Joanne example: developer policy versus boundary</summary>
+
+### Step 2 — Trace the Joanne example: developer policy versus boundary
+
 - [x] **Example: Joanne (developer policy + tighter boundary)**
   - **Joanne** needs access to certain AWS resources.
   - She has a **developer** identity-based policy with **full control** of:
@@ -31,11 +44,33 @@
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ee4ee652-51ca-4a82-ad7e-9347677150bb" />
 
+</details>
+
+<details>
+  <summary>Step 3 — Work out effective permissions as an overlap</summary>
+
+### Step 3 — Work out effective permissions as an overlap
+
 - [x] **Effective permissions (intersection)**
   - Allowed actions must be present on the **identity-based policy** _and_ on the **permissions boundary**.
   - Developer policy: S3 + CloudWatch + EC2 + IAM.
   - Boundary: S3 + CloudWatch + EC2.
   - Effective: **S3 + CloudWatch + EC2** only.
+
+```text
+# Joanne — identity-based (developer): S3, CloudWatch, EC2, IAM
+# Joanne — permissions boundary:        S3, CloudWatch, EC2
+# Joanne — effective permissions:       S3, CloudWatch, EC2
+# (IAM create-user is denied: it is on the policy but not on the boundary.)
+```
+
+</details>
+
+<details>
+  <summary>Step 4 — See how privilege escalation happens without a boundary</summary>
+
+### Step 4 — See how privilege escalation happens without a boundary
+
 - [x] **Privilege escalation (the attack)**
   - **Lindsay** has **IAM Full Access**.
   - She can do **anything in IAM**, but **not** other AWS services.
@@ -49,6 +84,13 @@
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f00e0857-1215-4e70-b7db-ba94bd0d9c8a" />
 
+</details>
+
+<details>
+  <summary>Step 5 — Stop escalation by adding a permissions boundary</summary>
+
+### Step 5 — Stop escalation by adding a permissions boundary
+
 - [x] **Mitigation with a permissions boundary**
   - Lindsay still needs **IAM Full Access** — that is her **job role**.
   - Add a **permissions boundary** so users **she creates** have the **same or fewer** permissions than she does.
@@ -57,6 +99,8 @@
   - The boundary **prevents privilege escalation**.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91233bca-4ece-4805-a4a5-8a13136ed8ee" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -73,28 +117,6 @@ No labs in this topic; the content is conceptual only. There is no console walkt
   - [ ] Trace **Joanne**: developer policy includes IAM, boundary does not → she cannot create IAM users.
   - [ ] Trace **Lindsay**: IAM Full Access without a boundary can create a more powerful user (**X-User** + **AdministratorAccess**).
   - [ ] Remember that a boundary on created users keeps them at the **same or fewer** permissions than Lindsay.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. Permissions boundaries are explained conceptually; you do not attach them from the CLI here.
-
-```bash
-# No commands in this topic; the lesson is conceptual only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No policy JSON is shown in this lesson. Effective permissions are the **overlap** of the identity-based policy and the permissions boundary.
 
 ```text
 # Joanne — identity-based (developer): S3, CloudWatch, EC2, IAM

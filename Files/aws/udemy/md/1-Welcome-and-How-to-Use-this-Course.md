@@ -16,6 +16,9 @@ If you are new to AWS, treat this lesson as your orientation chapter. You do not
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Understand the goal of the course</summary>
+
 ### Step 1 — Understand the goal of the course
 
 - [x] **Mindset and exam goal**
@@ -28,6 +31,11 @@ If you are new to AWS, treat this lesson as your orientation chapter. You do not
 ![Figure 1. Welcome slide from lecture 1](../images/1/1-welcome-fig1.png)
 
 _Figure 1 description:_ The instructor appears on the right with a studio microphone. On the left, the slide title is **Welcome! How to use this course**, with the AWS Certified Solutions Architect Associate badge. The caption is “Hello and welcome to this course.”
+
+</details>
+
+<details>
+  <summary>Step 2 — Download the course resources first</summary>
 
 ### Step 2 — Download the course resources first
 
@@ -48,6 +56,11 @@ _Figure 1 description:_ The instructor appears on the right with a studio microp
 
 _Figure 2 description:_ This is the visual you will keep seeing while Neal explains the download page. Remember this slide as the “home” of the orientation lesson: everything in this video is about using resources well, not about clicking in AWS yet.
 
+</details>
+
+<details>
+  <summary>Step 3 — Learn the two lesson types</summary>
+
 ### Step 3 — Learn the two lesson types
 
 - [x] **Two types of lessons**
@@ -56,6 +69,11 @@ _Figure 2 description:_ This is the visual you will keep seeing while Neal expla
   - In HOL lessons you use the **AWS console** in your own **free tier** account and follow along to build practical skills.
 
 **How a novice should use this:** watch the theory lesson first so the words make sense, then open AWS and repeat the HOL steps. Do not skip theory just to “get into the console.”
+
+</details>
+
+<details>
+  <summary>Step 4 — Use the extras at the end of each section</summary>
 
 ### Step 4 — Use the extras at the end of each section
 
@@ -72,6 +90,11 @@ _Figure 2 description:_ This is the visual you will keep seeing while Neal expla
   - Use the **full practice test course** as well as this video course.
   - Practice tests build a **broad understanding** of question types and hone **problem-solving** toward the best solutions.
 
+</details>
+
+<details>
+  <summary>Step 5 — Adjust playback and use cheat sheets</summary>
+
 ### Step 5 — Adjust playback and use cheat sheets
 
 - [x] **Playback, subtitles, and cheat sheets**
@@ -80,12 +103,19 @@ _Figure 2 description:_ This is the visual you will keep seeing while Neal expla
   - **Cheat sheets** are linked at the end of each section.
   - They list **core knowledge** that often appears on the exam, so you can review without wading through hundreds of AWS documentation pages.
 
+</details>
+
+<details>
+  <summary>Step 6 — Follow the course in order</summary>
+
 ### Step 6 — Follow the course in order
 
 - [x] **Follow the course in order**
   - Concepts **build on earlier lessons**.
   - Labs reuse things created in previous sections.
   - Follow the course **in order** and **do not skip lessons**.
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -101,32 +131,6 @@ No labs in this topic; the content is conceptual only. Hands-on work starts in l
   - [ ] Locate the **course download** lesson (last lesson in this section).
   - [ ] Download the **code**, **study guide**, and **slides**.
   - [ ] Plan to follow theory, then **HOL** labs, in order.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this welcome lesson. Later HOL lessons use the AWS console and, where needed, the AWS CLI.
-
-```bash
-# No commands in this topic; the lesson is course orientation only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No code in this welcome lesson. Download the hands-on code from the course download page when you reach HOL lessons.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

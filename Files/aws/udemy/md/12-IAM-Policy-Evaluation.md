@@ -10,6 +10,11 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Start every decision with a deny</summary>
+
+### Step 1 — Start every decision with a deny
+
 - [x] **Default: start with deny**
   - Every decision **starts with a deny**.
   - Permissions are **not allowed by default** — everything is denied until AWS finds an **allow**.
@@ -18,6 +23,14 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - If any applicable policy has an **explicit deny**, the **final decision is deny**.
   - An explicit deny **always overrides** any allow.
   - If there is no explicit deny, evaluation continues.
+
+</details>
+
+<details>
+  <summary>Step 2 — Check for an applicable Organizations SCP</summary>
+
+### Step 2 — Check for an applicable Organizations SCP
+
 - [x] **AWS Organizations SCPs**
   - AWS checks whether the principal’s **account** is in an **organization** with an applicable **service control policy (SCP)**.
   - If **no** applicable SCP, skip to the next stage.
@@ -26,6 +39,13 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - SCP **allow** → continue.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c98c7faa-db9b-45a3-b952-1a19fa1951d8" />
+
+</details>
+
+<details>
+  <summary>Step 3 — Evaluate resource-based and identity-based policies</summary>
+
+### Step 3 — Evaluate resource-based and identity-based policies
 
 - [x] **Resource-based policy**
   - Does the requested resource have a **resource-based policy**?
@@ -37,6 +57,14 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - If an identity-based policy applies, AWS checks for an **allow**.
   - **No allow** in the resource-based policy **and** **no allow** in the identity-based policy → **implicit deny**.
   - If there **is** an allow for the action, evaluation continues.
+
+</details>
+
+<details>
+  <summary>Step 4 — Apply permissions boundaries and session policies</summary>
+
+### Step 4 — Apply permissions boundaries and session policies
+
 - [x] **Permissions boundary**
   - AWS checks whether the principal has a **permissions boundary**.
   - If **yes**, the boundary must also **allow** the action for that principal.
@@ -47,6 +75,14 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - If **no** → **allow** (at this stage).
   - If **yes** → there must be a **session policy** with an **allow**; otherwise **deny**.
   - The instructor also notes a **role session** check on the AWS chart (this stage is dense — spend time on the official evaluation diagram).
+
+</details>
+
+<details>
+  <summary>Step 5 — Trace how a request is authenticated and given context</summary>
+
+### Step 5 — Trace how a request is authenticated and given context
+
 - [x] **Steps for authorizing a request**
   - Requests come from the **Management Console**, the **CLI**, or the **API**, and go to **IAM**.
   - **1. Authenticate** the principal (prove who they are). Example: **username and password** for the console.
@@ -66,6 +102,14 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - The **S3 bucket** has a **resource-based** policy (bucket policy).
   - AWS evaluates **all** policies in the **account**.
   - Example request: **S3 GetObject** to retrieve an object — allowed if the evaluation grants that action.
+
+</details>
+
+<details>
+  <summary>Step 6 — Compare the policy types and their combined effect</summary>
+
+### Step 6 — Compare the policy types and their combined effect
+
 - [x] **Policy types**
   - **Identity-based policies:** attached to **users**, **groups**, and **roles**.
   - **Resource-based policies:** attached to **resources**; they define permissions for a **specific principal** to access that resource.
@@ -80,7 +124,21 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - **Identity-based + permissions boundary:** effective permissions are only those allowed in **both** (**intersection**).
   - **Identity-based + Organizations SCP:** effective permissions are those granted in **both** (**intersection**).
 
+```text
+# Combinations (as in the lesson)
+identity + resource-based     => UNION         (allow in either)
+identity + permissions boundary => INTERSECTION (allow in both)
+identity + Organizations SCP  => INTERSECTION  (allow in both)
+```
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5739ec8b-5fbe-4e12-8869-42f7c12ec210" />
+
+</details>
+
+<details>
+  <summary>Step 7 — Memorize the determination rules</summary>
+
+### Step 7 — Memorize the determination rules
 
 - [x] **Determination rules (exam facts)**
   - By default, requests are **implicitly denied**.
@@ -89,7 +147,17 @@ This lesson covers **IAM policy evaluation logic**: what AWS does when a princip
   - If a **permissions boundary**, **Organizations SCP**, or **session policy** is present, it **might override** that allow with an **implicit deny**.
   - An **explicit deny** in **any** policy **overrides any allows**.
 
+```text
+# Determination rules
+default          => implicit deny (except root: full access)
+explicit allow   => overrides default deny (identity- or resource-based)
+boundary / SCP / session policy present => may override allow with implicit deny
+explicit deny    => overrides any allow (any policy)
+```
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e728dd00-622e-482c-a6e5-9dacd7b7cd4a" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -106,28 +174,6 @@ No labs in this topic; the content is conceptual only. There is no console walkt
   - [ ] Walk SCP → resource-based → identity-based → permissions boundary → session policy.
   - [ ] Contrast **union** (identity + resource) vs **intersection** (identity + boundary, identity + SCP).
   - [ ] Recite the **request context** fields: actions, resources, principal, environment data, resource data.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. Evaluation happens inside AWS when a request is made; you do not run a separate “evaluate policy” CLI in this video.
-
-```bash
-# No commands in this topic; the lesson is conceptual only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code in this lesson. Use this as a study sketch of **effective permissions** (not a runnable policy).
 
 ```text
 # Combinations (as in the lesson)

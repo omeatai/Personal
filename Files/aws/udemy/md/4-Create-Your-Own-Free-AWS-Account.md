@@ -10,6 +10,11 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Gather what you need to open an account</summary>
+
+### Step 1 — Gather what you need to open an account
+
 - [x] **What you need to open an AWS account**
   - A **credit card** (required even on the Free plan, so AWS can charge you if you later switch to Paid).
   - A **unique email address** that is **not** already tied to another AWS account.
@@ -21,6 +26,13 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
   - Match the alias to a memorable **account name** so you remember which inbox/login belongs to which account.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4baebe19-3815-478f-bcd1-d37df0327449" />
+
+</details>
+
+<details>
+  <summary>Step 2 — Understand the root user and use IAM instead</summary>
+
+### Step 2 — Understand the root user and use IAM instead
 
 - [x] **Account root user**
   - Creating the account also creates the **root user**.
@@ -34,6 +46,13 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
   - IAM best practice: **individual users**; **avoid root** except for the few tasks that require it.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/356d3bf0-b58a-4877-ba74-3601578784fd" />
+
+</details>
+
+<details>
+  <summary>Step 3 — Authenticate, authorize, and choose an access method</summary>
+
+### Step 3 — Authenticate, authorize, and choose an access method
 
 - [x] **Authentication, authorization, and ways to access AWS**
   - After you have an account, the easiest start is the **AWS Management Console**.
@@ -51,6 +70,14 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
   - Identities and resources are created **inside an AWS account**.
   - Multi-account setups can **centralize** some management, but each user still **exists in one account**.
   - Accessing resources in **another** account needs extra measures (covered later).
+
+</details>
+
+<details>
+  <summary>Step 4 — Compare the Free plan and the Paid plan</summary>
+
+### Step 4 — Compare the Free plan and the Paid plan
+
 - [x] **Free plan vs Paid plan (from July 2025)**
   - Before this change there was one signup model: a **12-month Free Tier** with per-service usage limits.
   - New customers now **choose** **Free plan** or **Paid plan** at signup.
@@ -78,6 +105,14 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
   - After credits are gone, usage is billed to the **credit card**.
   - The account **stays active**; it does not auto-close after 6 months.
   - You can **scale** beyond credit limits.
+
+</details>
+
+<details>
+  <summary>Step 5 — Plan for expiry, upgrades, and AWS Organizations</summary>
+
+### Step 5 — Plan for expiry, upgrades, and AWS Organizations
+
 - [x] **After Free plan expiry (90-day grace)**
   - When the account closes (6 months or credits gone), you have **90 days** to **upgrade to Paid** and reopen it.
   - Remaining credits can then apply to future bills (until they expire).
@@ -90,12 +125,26 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca33ecee-18ad-4d20-a23b-04dc96107555" />
 
+</details>
+
+<details>
+  <summary>Step 6 — Decide which plan fits your situation</summary>
+
+### Step 6 — Decide which plan fits your situation
+
 - [x] **Which plan to choose**
   - **Free plan:** beginners who want **no surprise bill**; short-term use (one course, a couple of months); you do **not** need every service.
   - **Paid plan:** you already know AWS **pricing** and **cost controls**; you need services **not** on Free (examples: **Route 53 domain registration**, **AWS Organizations**); you need the account **after 6 months**.
   - Eventually **everyone** should move to Paid and learn how AWS charges.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/455b4fc9-3bd0-4a55-9726-b181470a14bc" />
+
+</details>
+
+<details>
+  <summary>Step 7 — Control costs and finish the signup details</summary>
+
+### Step 7 — Control costs and finish the signup details
 
 - [x] **Cost controls (your responsibility)**
   - Learn what services cost; **terminate / delete** resources when a lab ends.
@@ -111,6 +160,8 @@ These lessons cover **what an AWS account is**, how **root** vs **IAM** access w
   - After signup, AWS **activates** the account (can take a few minutes) and emails you when it is ready.
   - First console landing region may follow your location; this course uses **United States (N. Virginia)** / **us-east-1** for most labs.
   - Completing registration can leave you **already signed in as root**. After you **sign out**, the default login form asks for **account ID or alias** plus an **IAM username**—you do **not** have an IAM user yet. Use **Sign in using root user email**, then the signup email and root password.
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -202,32 +253,6 @@ This is a **console signup** walkthrough. Pause until you have a unique email, c
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5ce8cf5-7866-44c4-9966-e10ac0d6a3d7" />
 
 Successfully created a Free plan account and signed in as the **root user**. Do not use root for daily work once IAM is set up.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this signup lesson. You work in the browser (AWS website and Management Console). Later lessons use the **AWS CLI** after you create IAM credentials.
-
-```bash
-# No commands in this topic; account creation is done in the AWS console.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code in this lesson. Signup is a console workflow.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

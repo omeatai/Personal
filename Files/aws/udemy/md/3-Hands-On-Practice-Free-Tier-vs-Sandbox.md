@@ -25,6 +25,9 @@ _Figure 1 description:_ Digital Cloud Training title card. The heading is **Hand
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Why hands-on practice matters</summary>
+
 ### Step 1 — Why hands-on practice matters
 
 - [x] **There is no substitute for using the technology**
@@ -33,6 +36,11 @@ _Figure 1 description:_ Digital Cloud Training title card. The heading is **Hand
 - [x] **This course has two practice models**
   - **Primary recommendation:** your own **AWS Free Tier** account.
   - **Optional extra:** a **Sandbox / Challenge Lab**.
+
+</details>
+
+<details>
+  <summary>Step 2 — AWS Free Tier: your account, full control, you own the bill</summary>
 
 ### Step 2 — AWS Free Tier: your account, full control, you own the bill
 
@@ -53,6 +61,11 @@ _Figure 1 description:_ Digital Cloud Training title card. The heading is **Hand
   - Use it to follow HOL lessons as you go.
 
 **Novice rule:** Free Tier is not “always free.” It is a **limited free allowance** plus paid usage if you leave that allowance. Treat every resource as something you must stop or delete when the lab is done.
+
+</details>
+
+<details>
+  <summary>Step 3 — Sandbox / Challenge Lab: hosted account, no cloud bill, limited control</summary>
 
 ### Step 3 — Sandbox / Challenge Lab: hosted account, no cloud bill, limited control
 
@@ -87,6 +100,11 @@ _Figure 2 description:_ Memorize this table. **Free Tier:** create your own acco
 | AWS bill risk      | **You** pay any overage | **No** AWS cloud bill from the lab         |
 | Best use           | Follow **HOL** lessons  | Extra **scenario** practice                |
 
+</details>
+
+<details>
+  <summary>Step 4 — Challenge Labs are optional extra practice</summary>
+
 ### Step 4 — Challenge Labs are optional extra practice
 
 - [x] **Optional, not required**
@@ -117,11 +135,18 @@ _Figure 3 description:_ Digital Cloud Training page for **Hands-on Challenge Lab
 
 _Figure 4 description:_ Example lab **AWS-CL-002: Build VPC Resources Manually [Guided]**. Left pane is the AWS console (**Create VPC**, name `Lab VPC`, CIDR `10.0.0.0/16`). Right pane is the lab guide: steps, a table of values you can copy/paste, and hints. A second lab timer bar sits at the bottom. **SAA-C03** itself is multiple choice, not a lab exam. This UI is what **SysOps** exam labs look like.
 
+</details>
+
+<details>
+  <summary>Step 5 — What you should do next</summary>
+
 ### Step 5 — What you should do next
 
 1. Plan to create a **Free Tier** account in the next HOL lessons.
 2. Do **not** skip shutdown and billing-alarm steps.
 3. Ignore Challenge Labs until you want extra practice; they are optional.
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -135,32 +160,6 @@ No console lab in this topic. This lesson is a comparison of practice options. A
 - [ ] Decide to use a **Free Tier** account for this course.
 - [ ] Remember: **you** pay any bills; shut down resources; set a **billing alarm**.
 - [ ] Treat **Sandbox / Challenge Labs** as optional extra practice, not a replacement for HOL.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson.
-
-```bash
-# No commands in this topic; the lesson is Free Tier vs Sandbox only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No code in this lesson.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

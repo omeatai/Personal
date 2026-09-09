@@ -10,6 +10,11 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Open IAM and plan what you will build</summary>
+
+### Step 1 — Open IAM and plan what you will build
+
 - [x] **Goal of this lesson**
   - Open the **IAM** service in the **AWS Management Console**.
   - Create a **user account** you can log in with.
@@ -20,6 +25,13 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8578f52c-b9ca-4e92-b178-35c55046c8df" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a4c2821-1d16-4e5b-ad3d-37714e4de681" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Create the admins group first</summary>
+
+### Step 2 — Create the admins group first
+
 - [x] **Create the group first (permissions live on the group)**
   - The **user group** is how you assign permissions to the user.
   - Attach the policy to the **group**, add the **user** to the group, and the user **inherits** those permissions.
@@ -27,6 +39,13 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d36978a-c826-47ce-8340-0bbcbe145533" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f720ca0b-c4ca-499a-a37d-60a90bdb6d9b" />
+
+</details>
+
+<details>
+  <summary>Step 3 — Attach AdministratorAccess and read the policy JSON</summary>
+
+### Step 3 — Attach AdministratorAccess and read the policy JSON
 
 - [x] **AdministratorAccess is a very powerful policy**
   - Attach **AdministratorAccess**.
@@ -39,9 +58,31 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
   - That is what this course admin user needs.
   - Create the group (bottom right).
 
+**AdministratorAccess** is an AWS managed policy. `*` is a **wildcard**. Together, **Effect Allow**, **Action \***, and **Resource \*** mean the identity can perform **any API action** on **any resource**.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ac90128-db2b-401f-a8ff-a93d1b0ae185" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d653e6bd-46d6-4a4f-8b44-2603a9bd040e" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be09e8ec-2bc2-418c-8d2c-bdd00e55281c" />
+
+</details>
+
+<details>
+  <summary>Step 4 — Create the IAM user with console access</summary>
+
+### Step 4 — Create the IAM user with console access
 
 - [x] **Create the IAM user with console access**
   - Open **Users** → **Create user**.
@@ -66,6 +107,14 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
   - Set a **custom password**.
   - **Deselect** the requirement to **change the password at next login**.
   - Click **Next**.
+
+</details>
+
+<details>
+  <summary>Step 5 — Add the user to a group and copy the sign-in details</summary>
+
+### Step 5 — Add the user to a group and copy the sign-in details
+
 - [x] **Add the user to the group (prefer groups over direct policies)**
   - Add the user to the **admins** group.
   - Other options exist: **copy permissions from existing users**, or **attach policies directly**.
@@ -83,6 +132,13 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4568fab-4bfa-43b1-8c46-9f3c7d24c439" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7830a084-400a-42b9-919d-88537f6dd317" />
 
+</details>
+
+<details>
+  <summary>Step 6 — Sign in as the IAM user and switch region</summary>
+
+### Step 6 — Sign in as the IAM user and switch region
+
 - [x] **Log in as the IAM user**
   - Return to the **user list**.
   - Open a **private / incognito window** so you can log in separately (root can stay signed in in the original window).
@@ -99,12 +155,21 @@ This **HOL** creates an **IAM user group**, attaches **AdministratorAccess**, th
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fdefa821-8fec-4d60-b22e-d9fd28e3999e" />
 
+</details>
+
+<details>
+  <summary>Step 7 — Stop using root for everyday work</summary>
+
+### Step 7 — Stop using root for everyday work
+
 - [x] **From now on, do not use root**
   - You should see you are logged in as the IAM user (instructor: **Neil** at **DCT Lab training**).
   - This account has **full administrative permissions** for the **lab exercises** in this course.
   - From now on, log in with your **individual IAM user**, **not** the **root** account.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d99fe606-1ce6-4c3c-82a4-cd095799ae80" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -142,8 +207,7 @@ Stay signed in as **root** in one browser session while you create the group and
 - [ ] Meaning: **allow all actions on all resources**.
 - [ ] Click **Create group** (bottom right).
 
-<details>
-<summary>AdministratorAccess (JSON)</summary>
+**AdministratorAccess (JSON)**
 
 ```json
 {
@@ -158,7 +222,6 @@ Stay signed in as **root** in one browser session while you create the group and
 }
 ```
 
-</details>
 
 ### **Task 3: Create the IAM user with console access**
 
@@ -197,46 +260,6 @@ Stay signed in as **root** in one browser session while you create the group and
 - [ ] Confirm this user can perform admin work for later labs.
 
 Successfully created the **admins** group and an IAM user with **AdministratorAccess**, and signed in as that user. From now on, use this **IAM user**, not **root**.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. You create the group and user in the **IAM console** and sign in through the browser.
-
-```bash
-# No commands in this topic; the walkthrough is console-only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-**AdministratorAccess** is an AWS managed policy. `*` is a **wildcard**. Together, **Effect Allow**, **Action \***, and **Resource \*** mean the identity can perform **any API action** on **any resource**.
-
-<details>
-<summary>AdministratorAccess policy JSON</summary>
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*"
-    }
-  ]
-}
-```
-
-</details>
 
 </details>
 

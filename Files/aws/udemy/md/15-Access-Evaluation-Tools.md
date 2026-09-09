@@ -10,12 +10,24 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Enable IAM Access Analyzer</summary>
+
+### Step 1 — Enable IAM Access Analyzer
+
 - [x] **IAM Access Analyzer — enable it**
   - Open the **IAM** Management Console and go to **Access Analyzer**.
   - If it is the **first time**, click the button to **enable** it for the account (**single click**).
   - It then runs an **access evaluation** quickly.
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/77046bee-4c91-4b4d-8865-ee96e75d0d72" />
+
+</details>
+
+<details>
+  <summary>Step 2 — Investigate the findings it reports</summary>
+
+### Step 2 — Investigate the findings it reports
 
 - [x] **Access Analyzer findings**
   - Instructor example: findings on **S3 buckets** and **IAM roles**.
@@ -38,6 +50,13 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/fcf21b2f-57c8-4b32-b791-ef0bfa70c7a6" />
 
+</details>
+
+<details>
+  <summary>Step 3 — Manage analyzers, archive rules, and settings</summary>
+
+### Step 3 — Manage analyzers, archive rules, and settings
+
 - [x] **What Access Analyzer is for**
   - Analyzes access and lists **findings**.
   - Warns about access that may be **too open** (more than you intended).
@@ -46,6 +65,14 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
   - You can view **analyzers** and **create** new ones.
   - **Settings** show the **Access Analyzer Administrator**.
   - You can optionally add a **delegated administrator**.
+
+</details>
+
+<details>
+  <summary>Step 4 — Download and read the credential report</summary>
+
+### Step 4 — Download and read the credential report
+
 - [x] **Credential report**
   - About **credentials**, not resource policies.
   - **Download** the report (spreadsheet-style rows/columns).
@@ -61,6 +88,13 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/fa8ab108-3ed0-4f3b-a51d-17a6514b2995" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/1779e548-89b1-43d0-bd85-1ad182b4371b" />
 
+</details>
+
+<details>
+  <summary>Step 5 — Test individual users in the IAM Policy Simulator</summary>
+
+### Step 5 — Test individual users in the IAM Policy Simulator
+
 - [x] **IAM Policy Simulator (users)**
   - Lists **users** in the account.
   - Pick a user, pick a **service**, select **all** or **specific** actions, **run simulation**.
@@ -71,6 +105,22 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
   - Result: **most denied**; only **ListAllMyBuckets** was **allowed**.
   - Useful to see what permissions policies actually **grant**.
 
+Chris S3 simulation (what the run showed):
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "WhatTheSimulationAllowed",
+      "Effect": "Allow",
+      "Action": ["s3:ListAllMyBuckets"],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/6e75c588-9b14-4b50-871e-a965fd20f237" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/ccd86907-0aac-4897-9995-6f87eb3e3539" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/1900cc06-f58e-4bf7-b9cf-f0f088c107c4" />
@@ -78,6 +128,13 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/9ecd8a0d-57ae-4412-811c-3d8914d10907" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/9a450995-5b48-4cdc-8162-142f671a35ce" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/839f0d77-66bd-472a-b3e6-8697bc778828" />
+
+</details>
+
+<details>
+  <summary>Step 6 — Generate a tighter role policy from CloudTrail</summary>
+
+### Step 6 — Generate a tighter role policy from CloudTrail
 
 - [x] **Generate policy on a role (CloudTrail)**
   - **IAM** → **Roles** → open a role (instructor: **Elastic Beanstalk EC2** role with **multiple** policies).
@@ -95,6 +152,8 @@ This lesson covers **four IAM console tools** for evaluating **who can do what**
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/55d03a34-d0cf-43bd-8a6f-937c477977b8" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/5f6d6b01-c847-4245-b27b-a94c5d6dc019" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/eb587be8-bed2-4dba-90a5-9c3d51444175" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -155,6 +214,8 @@ Walk the four tools in the **IAM** console. Your findings, users, and roles will
   - [ ] Whether **MFA** is enabled
 - [ ] Use this for a **security** snapshot of how users are set up.
 
+Credential report columns in this lesson: **users** (IAM users + root), **created**, **password** (console), password **last used**, **last changed**, **rotation**, **MFA enabled**.
+
 ### **Task 5: Policy Simulator — admin user (all EC2 actions)**
 
 - [ ] Open the **IAM Policy Simulator**.
@@ -177,6 +238,22 @@ Walk the four tools in the **IAM** console. Your findings, users, and roles will
   - [ ] **ListAllMyBuckets**
 - [ ] **Run simulation**.
 - [ ] Instructor result: **most denied**; only **ListAllMyBuckets** **allowed**.
+
+Chris S3 simulation (what the run showed):
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "WhatTheSimulationAllowed",
+      "Effect": "Allow",
+      "Action": ["s3:ListAllMyBuckets"],
+      "Resource": "*"
+    }
+  ]
+}
+```
 - [ ] Other S3 actions you did **not** select are simply **not in this run**.
 
 ### **Task 7: Generate a role policy from CloudTrail**
@@ -199,57 +276,6 @@ Walk the four tools in the **IAM** console. Your findings, users, and roles will
   - [ ] **Generate** the policy and **apply** it to the role only if you intend to **tighten** that role.
 
 Located all four tools. Access Analyzer is enabled (or already was), the credential report downloaded, simulations run, and **Generate policy** identified on a role.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. All four tools are used in the **IAM** console (Access Analyzer, credential report download, Policy Simulator, Generate policy on a role).
-
-```bash
-# No commands in this topic; use the IAM Management Console.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code. Access Analyzer and the Policy Simulator are console results. The credential report is a **download**. **Generate policy** produces **IAM JSON** from CloudTrail (instructor: **Systems Manager** and **EC2** actions). The sketch below is a study reminder of the **Chris** simulation, not a copy of the instructor’s **bucket access** policy.
-
-```text
-# Credential report (columns in the lesson)
-# users (IAM users + root), created, password (console),
-# password last used, last changed, rotation, MFA enabled
-```
-
-<details>
-<summary>Chris S3 simulation (what the run showed)</summary>
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "WhatTheSimulationAllowed",
-      "Effect": "Allow",
-      "Action": ["s3:ListAllMyBuckets"],
-      "Resource": "*"
-    }
-  ]
-}
-```
-
-</details>
-
-- [x] **Jack** + **AdministratorAccess** → selected **EC2** actions **Allow**.
-- [x] **Chris** + **bucket access** → of the five S3 actions tested, only **ListAllMyBuckets** **Allow**.
-- [x] Generated role policies list the **API actions CloudTrail** recorded for that role.
 
 </details>
 

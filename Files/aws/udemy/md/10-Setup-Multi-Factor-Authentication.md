@@ -10,6 +10,11 @@ This lesson covers **IAM authentication methods** and **multi-factor authenticat
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Compare console and programmatic authentication</summary>
+
+### Step 1 — Compare console and programmatic authentication
+
 - [x] **Two ways to authenticate to AWS**
   - Example user: **John**.
   - **Management Console:** **username** and **password**.
@@ -19,6 +24,13 @@ This lesson covers **IAM authentication methods** and **multi-factor authenticat
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5f956b4d-de3c-40b9-842e-ff9946cea1ea" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Understand access keys as long-term credentials</summary>
+
+### Step 2 — Understand access keys as long-term credentials
+
 - [x] **Access keys (programmatic / long-term credentials)**
   - An access key has two parts: an **access key ID** and a **secret access key**.
   - Think of them as a **username and password** for programmatic use.
@@ -26,6 +38,14 @@ This lesson covers **IAM authentication methods** and **multi-factor authenticat
   - You must **download a copy** when you create the key; AWS will not show the secret again.
   - Use them with the **AWS CLI** or by calling the **API** directly (including SDKs).
   - **Access keys** = programmatic access; **username and password** = console access.
+
+</details>
+
+<details>
+  <summary>Step 3 — Learn the factors that MFA adds</summary>
+
+### Step 3 — Learn the factors that MFA adds
+
 - [x] **What MFA adds (authentication factors)**
   - **Something you know:** your **password** — a secret you should not write down or share.
   - **Something you have:** a **physical device** in your possession.
@@ -36,12 +56,26 @@ This lesson covers **IAM authentication methods** and **multi-factor authenticat
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9c7ee48-a514-4b98-a60f-be6a7c70a541" />
 
+</details>
+
+<details>
+  <summary>Step 4 — Choose between virtual and hardware MFA devices</summary>
+
+### Step 4 — Choose between virtual and hardware MFA devices
+
 - [x] **Virtual MFA vs hardware MFA**
   - **Virtual MFA device:** an authenticator app on a phone or computer (examples: **Google Authenticator**, **Authy**).
   - **Hardware:** **security keys** and **time-based one-time password (TOTP)** tokens.
   - The second factor is an **authentication code / token** from that device.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0ee82e3d-9371-4c30-9b7d-427820842842" />
+
+</details>
+
+<details>
+  <summary>Step 5 — Apply MFA best practice to root, users, and the CLI</summary>
+
+### Step 5 — Apply MFA best practice to root, users, and the CLI
 
 - [x] **Best practice**
   - Enable MFA for the **root** account.
@@ -54,6 +88,14 @@ This lesson covers **IAM authentication methods** and **multi-factor authenticat
 - [x] **MFA for CLI and API**
   - MFA can also protect **CLI** and **API** access.
   - That setup is covered **later in the course**; this lesson focuses on **console MFA**.
+
+</details>
+
+<details>
+  <summary>Step 6 — Assign a virtual MFA device to your IAM user</summary>
+
+### Step 6 — Assign a virtual MFA device to your IAM user
+
 - [x] **HOL: assign MFA to your IAM user**
   - Sign in as your **individual IAM user** (not only as root).
   - The IAM dashboard may recommend **Add MFA** for **root** and for **yourself**.
@@ -70,6 +112,8 @@ This lesson covers **IAM authentication methods** and **multi-factor authenticat
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b27bb8a-a0c8-4532-9cf4-509306320143" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7239a011-6978-49b1-a3d3-4cfa4500f154" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4ed28301-8d1b-48dd-96ff-1a7526c6b6cb" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -133,32 +177,6 @@ Stay signed in as your **individual IAM user**. Use **your** authenticator app a
 - [ ] You should be signed in again, now with **two-factor authentication**.
 
 Successfully assigned a virtual MFA device to the IAM user and signed in with username, password, and MFA code.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. You assign MFA and sign in through the **IAM console**. MFA for the **CLI** and **API** is covered later in the course.
-
-```bash
-# No commands in this topic; the walkthrough is console-only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code in this lesson. MFA setup is done in the **IAM console** with an authenticator app (QR code or secret key) and two consecutive TOTP codes.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

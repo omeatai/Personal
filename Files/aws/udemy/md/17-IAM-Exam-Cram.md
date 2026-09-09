@@ -10,6 +10,11 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Understand what an exam cram is for</summary>
+
+### Step 1 — Understand what an exam cram is for
+
 - [x] **What an exam cram is**
   - A **quick** reminder of key facts after you finish the section.
   - Use it for **revision** and **cramming**, not as the first pass.
@@ -18,6 +23,13 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
   - Main lessons stay **visual**; crams are **death by bullet points** on purpose so **readers** are covered too.
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/434ca0b5-78cf-4d41-a434-4c55c0776021" />
+
+</details>
+
+<details>
+  <summary>Step 2 — Recall what IAM does and the new-user default</summary>
+
+### Step 2 — Recall what IAM does and the new-user default
 
 - [x] **What IAM does**
   - **Securely control** individual and **group** access to **AWS resources**.
@@ -36,6 +48,13 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/51db6540-21f5-4548-8545-d164dabb2157" />
 
+</details>
+
+<details>
+  <summary>Step 3 — Know IAM users and IAM’s global, eventually consistent nature</summary>
+
+### Step 3 — Know IAM users and IAM’s global, eventually consistent nature
+
 - [x] **IAM users**
   - Individuals (or services) who have been **granted access** to an AWS account.
   - An IAM user is an **entity** that represents a **person** or a **service**.
@@ -52,6 +71,13 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/db29a0e0-c57e-445e-96bc-e3ed1f20e207" />
 
+</details>
+
+<details>
+  <summary>Step 4 — Compare authentication methods and the root user</summary>
+
+### Step 4 — Compare authentication methods and the root user
+
 - [x] **Authentication methods**
   - **Console passwords** — sign in to the **Management Console**.
   - **Access keys** — **programmatic** access (CLI / API).
@@ -60,6 +86,14 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
   - Credentials are the **email address** used to create the account, plus a **password**.
   - Root has **full administrative** permissions.
   - Those permissions **cannot be restricted**.
+
+</details>
+
+<details>
+  <summary>Step 5 — Assign permissions with groups and roles</summary>
+
+### Step 5 — Assign permissions with groups and roles
+
 - [x] **IAM groups**
   - A **collection of users** with **policies** attached.
   - A group is **not an identity** itself.
@@ -78,6 +112,13 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
 
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/fec625e0-6b92-466f-a7d1-0e00bb52b95b" />
 
+</details>
+
+<details>
+  <summary>Step 6 — Work through policies and the five policy types</summary>
+
+### Step 6 — Work through policies and the five policy types
+
 - [x] **IAM policies**
   - **Documents** that define permissions.
   - Applied to **users**, **groups**, and **roles**.
@@ -94,7 +135,24 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
   - **Organizations service control policies (SCPs)** — specify the **maximum** permissions for an **organization** or an **OU**.
   - **Session policies** — used with **assumed-role** API actions.
 
+```text
+# New IAM user: can log in, cannot do anything until permissions are granted
+# Implicit deny by default; conflicts → most restrictive wins
+# Group: not a principal (no group ARN in Principal); cannot nest groups
+# Role assume → STS temporary credentials
+# Policy types:
+#   identity-based | resource-based | permissions boundary
+#   Organizations SCP (org / OU max) | session (assumed-role APIs)
+```
+
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/28465f36-6ad9-4c08-af78-8ec775ce184f" />
+
+</details>
+
+<details>
+  <summary>Step 7 — Run the IAM best-practice checklist</summary>
+
+### Step 7 — Run the IAM best-practice checklist
 
 - [x] **IAM best-practice checklist (exam cram list)**
   - **Lock away** the account **root user access keys**.
@@ -117,6 +175,8 @@ Most sections end with an **exam cram**: a **fast** run-through of **important f
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/c3e3f2d7-9297-4d33-a4d6-69ff34411f1e" />
 <img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/9ffc6262-90a7-4ee1-bdd4-80e0f711928a" />
 
+</details>
+
 <details>
   <summary>Lab</summary>
 
@@ -130,29 +190,6 @@ No labs in this topic; the content is conceptual only. This is a **revision** cr
 - [ ] You will:
   - [ ] Distinguish **users**, **groups** (not a principal; no nesting), **roles** + **STS**, and **root**.
   - [ ] Name the five **policy types** and the default **implicit deny**.
-  - [ ] Run through the **best-practice** checklist (root keys, groups, least privilege, MFA, roles on EC2, rotate / remove credentials).
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this exam cram. The lesson is bullet-point revision only.
-
-```bash
-# No commands in this topic; the lesson is conceptual only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No policy JSON is shown. Exam facts to keep straight: default deny, groups are not principals, roles get STS temps, and the five policy types.
 
 ```text
 # New IAM user: can log in, cannot do anything until permissions are granted
@@ -163,6 +200,7 @@ No policy JSON is shown. Exam facts to keep straight: default deny, groups are n
 #   identity-based | resource-based | permissions boundary
 #   Organizations SCP (org / OU max) | session (assumed-role APIs)
 ```
+  - [ ] Run through the **best-practice** checklist (root keys, groups, least privilege, MFA, roles on EC2, rotate / remove credentials).
 
 </details>
 

@@ -16,6 +16,9 @@ If you are new to certifications, read this like a textbook chapter: first the f
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Place SAA-C03 on the AWS certification ladder</summary>
+
 ### Step 1 — Place SAA-C03 on the AWS certification ladder
 
 - [x] **What SAA-C03 is**
@@ -26,6 +29,11 @@ If you are new to certifications, read this like a textbook chapter: first the f
   - Prior understanding of **compute**, **storage**, **networking**, and **databases** makes study easier.
 
 **Novice note:** “Associate” does not mean easy. It means the questions assume you can choose an architecture, not only define a service. Foundational exams test vocabulary; this exam tests **trade-offs**.
+
+</details>
+
+<details>
+  <summary>Step 2 — Learn the logistics: time, questions, and exam-day tactics</summary>
 
 ### Step 2 — Learn the logistics: time, questions, and exam-day tactics
 
@@ -48,6 +56,11 @@ If you are new to certifications, read this like a textbook chapter: first the f
 
 _Figure 1 description:_ The slide lists **Length 130 minutes**, **65 questions**, **Cost $150**, **Delivery method Testing Center or Online**, **Scoring 100–1000**, and **Pass mark 720**. Use this figure as a one-page cheat sheet for exam logistics.
 
+</details>
+
+<details>
+  <summary>Step 3 — Choose a delivery method and prepare the room</summary>
+
 ### Step 3 — Choose a delivery method and prepare the room
 
 - [x] **Delivery method**
@@ -61,6 +74,11 @@ _Figure 1 description:_ The slide lists **Length 130 minutes**, **65 questions**
 2. Clear the desk of phones, notes, and extra monitors if the proctor forbids them.
 3. Run the technical check days before the exam, not 10 minutes before.
 4. Confirm camera and microphone work.
+
+</details>
+
+<details>
+  <summary>Step 4 — Understand scoring and question formats</summary>
 
 ### Step 4 — Understand scoring and question formats
 
@@ -78,6 +96,11 @@ _Figure 1 description:_ The slide lists **Length 130 minutes**, **65 questions**
 ![Figure 2. Question formats and four exam domains](../images/2/2-exam-fig2.png)
 
 _Figure 2 description:_ The left side explains **multiple choice** (4 answers, 1 correct) and **multiple response** (2+ correct from 5+ options). The right side lists the four domains: **Design secure architectures**, **Design resilient architectures**, **Design high-performing architectures**, and **Design cost-optimized architectures**. There is no lab on the real exam.
+
+</details>
+
+<details>
+  <summary>Step 5 — Memorize the four domains (the exam’s table of contents)</summary>
 
 ### Step 5 — Memorize the four domains (the exam’s table of contents)
 
@@ -110,6 +133,11 @@ _Figure 2 description:_ The left side explains **multiple choice** (4 answers, 1
 | High-performing | Will storage, compute, database, and network meet the speed/scale need? |
 | Cost-optimized  | Is there a cheaper design that still meets the requirement?             |
 
+</details>
+
+<details>
+  <summary>Step 6 — Use the official exam guide for in-scope services</summary>
+
 ### Step 6 — Use the official exam guide for in-scope services
 
 - [x] **Exam guide and in-scope services**
@@ -117,6 +145,8 @@ _Figure 2 description:_ The left side explains **multiple choice** (4 answers, 1
   - This course covers those services and is **updated** so you have what you need for the exam.
 
 The lesson resources include the official exam page: [AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/).
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -130,32 +160,6 @@ No labs in this topic; the content is conceptual only. This lesson is an exam ov
 - [ ] Review the **SAA-C03** exam logistics (time, questions, cost, scoring, format).
 - [ ] Memorize the **four domains** and their task themes.
 - [ ] Open the official **AWS exam guide** for in-scope services.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this exam-overview lesson.
-
-```bash
-# No commands in this topic; the lesson is exam logistics and domains only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No code in this exam-overview lesson.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

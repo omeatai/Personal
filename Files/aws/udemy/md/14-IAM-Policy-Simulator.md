@@ -10,6 +10,11 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Open the simulator and set the context</summary>
+
+### Step 1 — Open the simulator and set the context
+
 - [x] **Open the IAM Policy Simulator**
   - The lesson includes a **link**; otherwise search for **IAM Policy Simulator**.
   - You should land on a page where the **left** side is the **context** (who the simulation applies to).
@@ -29,6 +34,13 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ae0e6020-091e-4de5-8633-441abb30a913" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Review the policies attached to the principal</summary>
+
+### Step 2 — Review the policies attached to the principal
+
 - [x] **What appears after you select the user**
   - The simulator lists **policies**, **permissions**, **boundaries**, and similar items **attached** to that user.
   - Instructor example: **testuser** has an **inline** policy named **test poll**.
@@ -37,12 +49,27 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
 - [x] **Why the simulator matters**
   - With one simple inline policy, you are checking what that policy grants in the console.
   - With a **large** or **complex** policy, or **several** policies (group + inline + boundary), the simulator shows the **aggregate** permissions the principal actually has.
+
+</details>
+
+<details>
+  <summary>Step 3 — Choose a service and actions, then run the simulation</summary>
+
+### Step 3 — Choose a service and actions, then run the simulation
+
 - [x] **Select a service and actions, then run**
   - Pick a service (for example **EC2**).
   - Choose **specific** actions, or **select all**.
   - Click **Run simulation**.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e3ac96d4-0749-4b0c-84c6-67869ac5afb1" />
+
+</details>
+
+<details>
+  <summary>Step 4 — Read the EC2 and EC2 Auto Scaling results</summary>
+
+### Step 4 — Read the EC2 and EC2 Auto Scaling results
 
 - [x] **EC2 simulation (allowed)**
   - With **all** EC2 actions selected, the instructor’s **testuser** simulation returned **Allow** for those actions (in the **EC2** context).
@@ -57,6 +84,13 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36da6569-3743-4c5d-add6-25b6ee5883f0" />
 
+</details>
+
+<details>
+  <summary>Step 5 — Narrow down which S3 actions are actually allowed</summary>
+
+### Step 5 — Narrow down which S3 actions are actually allowed
+
 - [x] **S3 simulation (mostly denied)**
   - Switch to **S3**, **clear** results, **select all** S3 actions, run.
   - Most S3 actions are **denied**.
@@ -67,10 +101,37 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
     - **ListBucket**
   - That is exactly what **testuser** can do on S3.
 
+S3 actions allowed for **testuser** (from the simulation):
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetBucketLocation",
+        "s3:GetObject",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/069f83b7-5663-4b22-846f-bfe6055d94dc" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/71431233-0793-4215-9f3b-41471a940e2b" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ba58b71-d3fe-4729-ae96-d51c3fd35cc9" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9ffd8851-9c97-41bd-8b68-4d32f6cbfa4e" />
+
+</details>
+
+<details>
+  <summary>Step 6 — Dry-run a policy you have not attached yet</summary>
+
+### Step 6 — Dry-run a policy you have not attached yet
 
 - [x] **Mode: existing policies vs new policy (sandbox)**
   - Default mode: **existing policies** (what is already attached).
@@ -78,6 +139,21 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
   - Paste JSON you **plan** to attach to a **user**, **group**, or **role**.
   - You can make the statement **more restrictive**, **apply** it in the sandbox, **clear** results, **select all**, and **run** again.
   - Instructor example: after removing some actions, only **GetObject** and **ListAllMyBuckets** stayed **allowed**.
+
+Stricter sandbox policy (after removing actions):
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:ListAllMyBuckets"],
+      "Resource": "*"
+    }
+  ]
+}
+```
   - Use this to simulate permissions **before** you attach the policy in IAM.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/21a0bc4f-98c1-407d-976f-451401c387fa" />
@@ -87,6 +163,8 @@ This lesson is another **IAM** tool: the **IAM Policy Simulator**. You pick a **
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c82a29d-5716-4ff2-83a7-a49fe60ee935" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9af007c5-86a7-4d55-a363-c84e2b9189ee" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e23f9d7e-750e-45c7-9e42-242997be2e97" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -157,43 +235,7 @@ Use the **IAM Policy Simulator** against a **limited** user (instructor: **testu
   - [ ] **ListAllMyBuckets**
   - [ ] **ListBucket**
 
-### **Task 7: New policy mode (policy sandbox)**
-
-- [ ] At the top, change mode from **existing policies** to **new policy**.
-- [ ] The **policy sandbox** appears.
-- [ ] Paste the policy JSON from the **previous lesson** (IAM policy generator).
-- [ ] **Restrict** the **Action** list further (instructor removed some of the allowed actions).
-- [ ] **Apply** the sandbox policy.
-- [ ] **Clear** results, **select all** for the service you are testing, **Run simulation**.
-- [ ] Instructor result after tightening: **GetObject** and **ListAllMyBuckets** still **allowed**; more actions **denied**.
-- [ ] This is how you test a policy you **plan** to attach to a **user**, **group**, or **role** **before** you save it in IAM.
-
-Successfully used the simulator to read **aggregate** permissions on an existing user and to dry-run a **sandbox** policy.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. The **IAM Policy Simulator** is a **console / web** tool (search for it, or use the lesson link).
-
-```bash
-# No commands in this topic; use the IAM Policy Simulator in the browser.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code. The sandbox accepts **IAM JSON**. The first block reconstructs the **S3 Allow** rows from the **existing-policies** simulation on **testuser**. The second is the **stricter** sandbox after the instructor removed actions. Replace this with **your** previous-lesson policy if it differs.
-
-<details>
-<summary>S3 actions allowed for testuser (from the simulation)</summary>
+S3 actions allowed for **testuser** (from the simulation):
 
 ```json
 {
@@ -213,10 +255,17 @@ No application code. The sandbox accepts **IAM JSON**. The first block reconstru
 }
 ```
 
-</details>
+### **Task 7: New policy mode (policy sandbox)**
 
-<details>
-<summary>Stricter sandbox policy (after removing actions)</summary>
+- [ ] At the top, change mode from **existing policies** to **new policy**.
+- [ ] The **policy sandbox** appears.
+- [ ] Paste the policy JSON from the **previous lesson** (IAM policy generator).
+- [ ] **Restrict** the **Action** list further (instructor removed some of the allowed actions).
+- [ ] **Apply** the sandbox policy.
+- [ ] **Clear** results, **select all** for the service you are testing, **Run simulation**.
+- [ ] Instructor result after tightening: **GetObject** and **ListAllMyBuckets** still **allowed**; more actions **denied**.
+
+Stricter sandbox policy (after removing actions):
 
 ```json
 {
@@ -230,12 +279,9 @@ No application code. The sandbox accepts **IAM JSON**. The first block reconstru
   ]
 }
 ```
+- [ ] This is how you test a policy you **plan** to attach to a **user**, **group**, or **role** **before** you save it in IAM.
 
-</details>
-
-- [x] **Existing policies** mode uses JSON **already attached** (instructor inline policy **test poll**).
-- [x] **New policy** mode lets you **paste**, **restrict**, **apply** in the sandbox, then simulate.
-- [x] **EC2** was allowed in the demo; **EC2 Auto Scaling** was not in the policy, so it **denied**.
+Successfully used the simulator to read **aggregate** permissions on an existing user and to dry-run a **sandbox** policy.
 
 </details>
 

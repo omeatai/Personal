@@ -12,6 +12,11 @@ This short setup lesson covers the **tools** you need before later **HOL** work:
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Download the course code and install Visual Studio Code</summary>
+
+### Step 1 — Download the course code and install Visual Studio Code
+
 - [x] **Download the course code first**
   - Finish this section by opening the **last lesson**—it contains the **code**.
   - That lesson links to a **GitHub** page where you download the files.
@@ -24,6 +29,13 @@ This short setup lesson covers the **tools** you need before later **HOL** work:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/997a02b7-e9e0-42bf-8803-9f5899276ddb" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fdf025c1-9cb1-4097-9401-7fd566bcc46e" />
 
+</details>
+
+<details>
+  <summary>Step 2 — Install the AWS CLI on your computer</summary>
+
+### Step 2 — Install the AWS CLI on your computer
+
 - [x] **AWS Command Line Interface (CLI)**
   - Search for **AWS command line interface**, then open **Install or update to the latest version of the AWS CLI**.
   - Lets you run **CLI commands from your computer**.
@@ -34,6 +46,13 @@ This short setup lesson covers the **tools** you need before later **HOL** work:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/de0242a0-9b90-42fd-8754-4c00d9484f67" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a204020-6d45-4d0c-8d3d-d1c7b3343d32" />
 
+</details>
+
+<details>
+  <summary>Step 3 — Open AWS CloudShell from the console</summary>
+
+### Step 3 — Open AWS CloudShell from the console
+
 - [x] **AWS CloudShell**
   - A **command line interface in the cloud** (browser), opened from the **Management Console**.
   - The instructor now prefers it over a local CLI **in most cases**.
@@ -41,6 +60,13 @@ This short setup lesson covers the **tools** you need before later **HOL** work:
   - Search for **CloudShell**, click it, and wait for the environment (often up to **~30 seconds**).
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/973dddc1-438d-402c-bd7b-7e64ad7b0f37" />
+
+</details>
+
+<details>
+  <summary>Step 4 — Work around CloudShell restrictions on new accounts</summary>
+
+### Step 4 — Work around CloudShell restrictions on new accounts
 
 - [x] **CloudShell may be blocked on some new accounts**
   - AWS sometimes **restricts CloudShell** for **new accounts** that use a **new credit card** they have not seen before.
@@ -50,18 +76,47 @@ This short setup lesson covers the **tools** you need before later **HOL** work:
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b590b24d-7590-4bdf-a0c7-da7e15ac45a4" />
 
+</details>
+
+<details>
+  <summary>Step 5 — Tell AWS commands apart from operating-system commands</summary>
+
+### Step 5 — Tell AWS commands apart from operating-system commands
+
 - [x] **Same AWS CLI, different OS shell**
   - **AWS CLI commands are identical** in CloudShell and on your PC.
   - CloudShell is a **Linux** shell.
   - On **Windows**, navigating the file system is different from what you see in CloudShell.
+
+</details>
+
+<details>
+  <summary>Step 6 — Tune CloudShell and verify your credentials</summary>
+
+### Step 6 — Tune CloudShell and verify your credentials
+
 - [x] **CloudShell usability and a first credential check**
   - Font can be small: **top-right settings** → increase size.
   - `aws help` opens CLI help; **spacebar** pages through it; **`q`** quits.
   - `aws s3 ls` lists **S3 buckets**. A brand-new account may have **none**.
   - **No error** (even with an empty list) means CloudShell already has **credentials** for that call.
 
+These AWS CLI commands are the **same** in **CloudShell** and on your computer. CloudShell is already authenticated; a local install is not until you configure credentials later.
+
+```bash
+aws help
+```
+
+```bash
+aws s3 ls
+```
+
+CloudShell is a **Linux** shell. On **Windows**, `cd`, `dir` / `ls`, and paths differ, but the `aws …` commands do not.
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f05210f-e59b-4759-8f6c-edc2233a19b9" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ef8f6f17-6479-4076-9f2b-8f8d3427ab5c" />
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -132,40 +187,6 @@ aws s3 ls
 - [ ] Confirm you did **not** get an authentication error—that means CloudShell is **preconfigured with credentials**.
 
 Successfully installed the local tools and verified CloudShell (or documented the Support / local-CLI fallback). Local `aws` commands stay unauthenticated until the IAM user lesson.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-These AWS CLI commands are the **same** in **CloudShell** and on your computer. CloudShell is already authenticated; a local install is not until you configure credentials later.
-
-```bash
-# Open AWS CLI help (spacebar pages; q quits)
-aws help
-```
-
-```bash
-# List S3 buckets. Empty output with no error still means credentials work.
-aws s3 ls
-```
-
-CloudShell is a **Linux** shell. On **Windows**, `cd`, `dir` / `ls`, and paths differ, but the `aws …` commands do not.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code in this lesson. Download the HOL files from the **GitHub** link in the **last lesson** of this section (or clone the repo). You will open those files in **Visual Studio Code** later.
-
-```text
-# No code snippets in this topic.
-```
 
 </details>
 

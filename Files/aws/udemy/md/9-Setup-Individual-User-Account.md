@@ -10,6 +10,11 @@ This **HOL** creates the **individual IAM user** you will use for the rest of th
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Compare the root user and an IAM user</summary>
+
+### Step 1 — Compare the root user and an IAM user
+
 - [x] **Two types of user**
   - **Root user:** created with the **email address** you specified when you created the AWS account.
   - Root has **full and unrestricted** access; it is very difficult to **remove** those permissions or privileges.
@@ -18,6 +23,14 @@ This **HOL** creates the **individual IAM user** you will use for the rest of th
   - **IAM user:** a **friendly name** (for example **John**) plus the **account ID** or **alias**.
   - That is what you use to **sign in to the console**.
   - Apply permissions with an **IAM permissions policy**.
+
+</details>
+
+<details>
+  <summary>Step 2 — Create the IAM user while signed in as root</summary>
+
+### Step 2 — Create the IAM user while signed in as root
+
 - [x] **Create the IAM user (still signed in as root)**
   - Open the **IAM** console (search for **IAM**).
   - **Users** → **Add users**.
@@ -29,6 +42,14 @@ This **HOL** creates the **individual IAM user** you will use for the rest of th
   - **Do not** force a password change at next login.
   - Click **Next**.
   - You **can** add permissions now; **skip that**—click **Next**, then **Create user**.
+
+</details>
+
+<details>
+  <summary>Step 3 — Check how the user signs in and what it can do</summary>
+
+### Step 3 — Check how the user signs in and what it can do
+
 - [x] **How this user signs in**
   - Use the **console sign-in URL**, or specify the **account alias** when signing in as an IAM user.
   - You also need the **username**.
@@ -37,6 +58,14 @@ This **HOL** creates the **individual IAM user** you will use for the rest of th
   - Open the user: **no permissions policies** assigned.
   - **Groups:** **no groups** assigned.
   - The account can exist and sign in, but it **cannot do anything** until you grant permissions.
+
+</details>
+
+<details>
+  <summary>Step 4 — Grant admin permissions through a group</summary>
+
+### Step 4 — Grant admin permissions through a group
+
 - [x] **Best way to grant permissions: a group**
   - **User groups** → **Create group**.
   - Instructor group name: **admins** (a very powerful group with **full administrator access**).
@@ -44,9 +73,32 @@ This **HOL** creates the **individual IAM user** you will use for the rest of th
   - This is an **AWS managed** policy (pre-created by AWS).
   - Expand with the **plus** to see the **JSON** (**JavaScript Object Notation**).
   - This simple policy: **Effect** = **Allow**, **Action** = `*` (**wildcard** = all actions), **Resource** = `*` (all resources) → **allow everything**.
+
+**AdministratorAccess** is an **AWS managed** policy. `*` is a **wildcard**. **Effect Allow** plus **Action \*** plus **Resource \*** means **allow all actions on all resources**.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
   - **Create group**.
   - Open the group → **Add users** → select the IAM user → **Add users**.
   - The user is now a **full administrative** user with **full access** to AWS.
+
+</details>
+
+<details>
+  <summary>Step 5 — Sign out of root and sign in as the IAM user</summary>
+
+### Step 5 — Sign out of root and sign in as the IAM user
+
 - [x] **Sign out of root and sign in as the IAM user**
   - Top right → **Sign out**.
   - Log back in and choose **IAM user** (not **root user**).
@@ -55,6 +107,8 @@ This **HOL** creates the **individual IAM user** you will use for the rest of th
   - Top right shows you as the IAM user (instructor: **Neil** at **DCT-Labs-AWS**).
   - This user has **full administrative permissions**.
   - Use this account for **all remaining lessons** in the course.
+
+</details>
 
 <details>
   <summary>Lab</summary>
@@ -116,8 +170,7 @@ Stay signed in as **root** while you create the user and group. Use **your** use
 - [ ] Click **Add users**, select your IAM user, then **Add users**.
 - [ ] The user now has **full administrative** access.
 
-<details>
-<summary>AdministratorAccess (JSON)</summary>
+**AdministratorAccess (JSON)**
 
 ```json
 {
@@ -132,7 +185,6 @@ Stay signed in as **root** while you create the user and group. Use **your** use
 }
 ```
 
-</details>
 
 ### **Task 5: Sign out of root and sign in as the IAM user**
 
@@ -146,46 +198,6 @@ Stay signed in as **root** while you create the user and group. Use **your** use
 - [ ] Top right should show **your-user@your-alias** (instructor: **Neil** at **DCT-Labs-AWS**).
 
 Successfully created an IAM user, granted admin via the **admins** group, and signed in as that user. Use this account for the **remainder of the course**, not root.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-No terminal commands in this lesson. You create the user and group in the **IAM console** and sign in through the browser.
-
-```bash
-# No commands in this topic; the walkthrough is console-only.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-**AdministratorAccess** is an **AWS managed** policy. `*` is a **wildcard**. **Effect Allow** plus **Action \*** plus **Resource \*** means **allow all actions on all resources**.
-
-<details>
-<summary>AdministratorAccess policy JSON</summary>
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*"
-    }
-  ]
-}
-```
-
-</details>
 
 </details>
 

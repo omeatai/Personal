@@ -10,6 +10,11 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
 
 ## Detailed Explanation
 
+<details>
+  <summary>Step 1 — Know what IAM manages and how new users start</summary>
+
+### Step 1 — Know what IAM manages and how new users start
+
 - [x] **What IAM is and what you manage**
   - **IAM** = AWS **Identity and Access Management**.
   - Securely control **individual** and **group** access to AWS resources.
@@ -25,6 +30,14 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - IAM is **not** used for **application-level** authentication.
 - [x] **Federation (high level)**
   - **Identity federation** (including **AD**, **Facebook**, and others) can give secure access **without** creating an IAM user.
+
+</details>
+
+<details>
+  <summary>Step 2 — Enforce MFA and remember IAM’s global, eventually consistent design</summary>
+
+### Step 2 — Enforce MFA and remember IAM’s global, eventually consistent design
+
 - [x] **MFA**
   - Can be enabled / enforced on the **account** and on **individual users**.
   - Uses a device that generates random **six-digit**, **single-use** codes.
@@ -37,6 +50,14 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - IAM is **universal (global)** — it does **not** apply to regions.
   - It is **eventually consistent**.
   - Data is replicated across **multiple data centers** worldwide.
+
+</details>
+
+<details>
+  <summary>Step 3 — Handle root access, sign-in, and programmatic entry points</summary>
+
+### Step 3 — Handle root access, sign-in, and programmatic entry points
+
 - [x] **Root, power user, and temporary credentials**
   - The **root account** is created when you set up AWS. It has complete **Admin** access by default (the only identity that does).
   - Best practice: do **not** use root for anything other than **billing**.
@@ -52,6 +73,14 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - IAM supports **PCI DSS** compliance.
   - AWS recommends **AWS SDKs** for programmatic IAM API calls.
   - You can also use the **IAM Query API** to call the IAM web service directly.
+
+</details>
+
+<details>
+  <summary>Step 4 — Trace a request from principal to allow or deny</summary>
+
+### Step 4 — Trace a request from principal to allow or deny
+
 - [x] **IAM elements — principals and requests**
   - A **principal** is an entity that can take an action on an AWS resource.
   - Your administrative IAM user is your **first** principal.
@@ -77,12 +106,28 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - An **explicit allow** overrides the implicit deny.
   - An **explicit deny** overrides any explicit allows.
   - Only **root** has access to all resources by default.
+
+```text
+# Evaluation (short)
+# 1) implicit deny (except root full access)
+# 2) explicit allow (identity- or resource-based) can allow
+# 3) boundary / SCP / session policy may implicit-deny that allow
+# 4) explicit deny in ANY policy wins and stops evaluation
+```
 - [x] **Actions and resources**
   - **Actions** are defined by a service — view, create, edit, delete, and so on.
   - Actions not **explicitly allowed** are denied.
   - To allow an action, include it in a policy on the **principal** or the **affected resource**.
   - A **resource** is an entity in a service (examples: **EC2** instances, **S3** buckets, **IAM** users, **DynamoDB** tables).
   - Each service defines the actions you can perform on its resources.
+
+</details>
+
+<details>
+  <summary>Step 5 — Compare console passwords, access keys, and server certificates</summary>
+
+### Step 5 — Compare console passwords, access keys, and server certificates
+
 - [x] **Authentication methods — console password**
   - Password for interactive sessions such as the **Management Console**.
   - You can allow users to change their own passwords.
@@ -102,6 +147,13 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - Use IAM for certificates **only** when you must support **HTTPS** in a region **ACM does not** support.
 
 <img width="737" height="441" alt="image" src="https://github.com/user-attachments/assets/0e0f8402-b47b-497f-aa28-4c1a207ad0b8" />
+
+</details>
+
+<details>
+  <summary>Step 6 — Review users, groups, and roles in detail</summary>
+
+### Step 6 — Review users, groups, and roles in detail
 
 - [x] **IAM users (detail)**
   - Entity that represents a **person** or a **service**.
@@ -143,6 +195,13 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
 
 <img width="575" height="487" alt="image" src="https://github.com/user-attachments/assets/c66967b7-b5a6-498e-a221-3c0135524164" />
 
+</details>
+
+<details>
+  <summary>Step 7 — Attach roles to EC2 and delegate with trust policies</summary>
+
+### Step 7 — Attach roles to EC2 and delegate with trust policies
+
 - [x] **IAM roles with EC2**
   - Grant apps on **EC2** permission for AWS API requests using **instance profiles**.
   - Only **one role** per EC2 instance at a time.
@@ -154,6 +213,14 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - **Trust policy** — specifies the **trusted accounts** allowed to assume the role.
   - Wildcards (`*`) **cannot** be specified as a **principal**.
   - A permissions policy must also be attached to the **user in the trusted account**.
+
+</details>
+
+<details>
+  <summary>Step 8 — Write policies and choose a delivery type</summary>
+
+### Step 8 — Write policies and choose a delivery type
+
 - [x] **Policies**
   - Documents that define permissions; applied to users, groups, and roles.
   - Written in **JSON** (attribute / value pairs).
@@ -185,9 +252,37 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
 
 <img width="1024" height="470" alt="image" src="https://github.com/user-attachments/assets/f7713753-3341-4fb8-be0c-754b4ffeb668" />
 
+</details>
+
+<details>
+  <summary>Step 9 — Pass roles with instance profiles and issue STS credentials</summary>
+
+### Step 9 — Pass roles with instance profiles and issue STS credentials
+
 - [x] **IAM instance profiles**
   - A **container** for an IAM role used to pass role information to an **EC2** instance when it **starts**.
   - An instance profile can contain **only one** IAM role; a role can be in **multiple** instance profiles.
+
+```bash
+# Create an instance profile (required manually on CLI / API; console does this for you)
+aws iam create-instance-profile
+
+# Add a role to an instance profile
+aws iam add-role-to-instance-profile
+
+# List instance profiles (account-wide, or those that include a role)
+aws iam list-instance-profiles
+aws iam list-instance-profiles-for-role
+
+# Get one instance profile
+aws iam get-instance-profile
+
+# Remove a role from an instance profile
+aws iam remove-role-from-instance-profile
+
+# Delete an instance profile
+aws iam delete-instance-profile
+```
 
 <img width="1024" height="407" alt="image" src="https://github.com/user-attachments/assets/681c79dd-c895-42f2-897e-b4ae9df4d47e" />
 
@@ -205,8 +300,23 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - **`AssumeRoleWithSAML`** — anyone who passes a **SAML** auth response from a known / trusted IdP.
   - **`AssumeRoleWithWebIdentity`** — anyone who passes a **web identity token** from a known / trusted IdP.
   - **`GetSessionToken`** — IAM user or **root** (can be used for **MFA**).
+
+```bash
+# MFA / CLI: obtain temporary credentials from STS
+aws sts get-session-token
+```
+
+Default STS endpoint: `https://sts.amazonaws.com`. You can use a **regional** STS endpoint for lower latency; credentials still work **globally**.
   - **`GetFederationToken`** — IAM user or **root**.
   - AWS recommends **Amazon Cognito** for federation with **Internet** identity providers.
+
+</details>
+
+<details>
+  <summary>Step 10 — Federate users, cross accounts, and review best practices</summary>
+
+### Step 10 — Federate users, cross accounts, and review best practices
+
 - [x] **Where users can come from**
   - **Federation (typically AD):** **SAML 2.0**; temporary access from AD credentials; does **not** need an IAM user; **SSO** to the console without assigning IAM credentials.
   - **Federation with mobile apps:** **Facebook / Amazon / Google** or other **OpenID** providers.
@@ -239,6 +349,8 @@ End-of-section **cheat sheets** list **core exam knowledge** so you can review w
   - Use **policy conditions** for extra security.
   - **Monitor** activity in the account.
 
+</details>
+
 <details>
   <summary>Lab</summary>
 
@@ -255,73 +367,39 @@ No labs in this topic; the content is a **cheat sheet**, not a console walkthrou
   - [ ] Trace **evaluation** (implicit deny → allow → boundary/SCP/session → explicit deny).
   - [ ] Name **instance profiles**, **STS** APIs, and the two **identity-broker** flows.
 
-</details>
+```bash
+# Create an instance profile (required manually on CLI / API; console does this for you)
+aws iam create-instance-profile
 
-<details>
-  <summary>Terminal Commands</summary>
+# Add a role to an instance profile
+aws iam add-role-to-instance-profile
 
-## Terminal Commands
+# List instance profiles (account-wide, or those that include a role)
+aws iam list-instance-profiles
+aws iam list-instance-profiles-for-role
 
-Instance-profile commands from the cheat sheet, plus STS session tokens for MFA / CLI.
+# Get one instance profile
+aws iam get-instance-profile
+
+# Remove a role from an instance profile
+aws iam remove-role-from-instance-profile
+
+# Delete an instance profile
+aws iam delete-instance-profile
+```
 
 ```bash
 # MFA / CLI: obtain temporary credentials from STS
 aws sts get-session-token
 ```
 
-```bash
-# Create an instance profile (required manually on CLI / API; console does this for you)
-aws iam create-instance-profile
-```
-
-```bash
-# Add a role to an instance profile
-aws iam add-role-to-instance-profile
-```
-
-```bash
-# List instance profiles (account-wide, or those that include a role)
-aws iam list-instance-profiles
-aws iam list-instance-profiles-for-role
-```
-
-```bash
-# Get one instance profile
-aws iam get-instance-profile
-```
-
-```bash
-# Remove a role from an instance profile
-aws iam remove-role-from-instance-profile
-```
-
-```bash
-# Delete an instance profile
-aws iam delete-instance-profile
-```
-
 Default STS endpoint: `https://sts.amazonaws.com`. You can use a **regional** STS endpoint for lower latency; credentials still work **globally**.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application code. Exam-shaped facts: sign-in URLs, evaluation order, STS return values, and role trust vs permissions.
 
 ```text
 # Console sign-in (account in the URL)
 https://My_AWS_Account_ID.signin.aws.amazon.com/console/
 # Or enter account ID / alias at
 https://console.aws.amazon.com/
-
-# Evaluation (short)
-# 1) implicit deny (except root full access)
-# 2) explicit allow (identity- or resource-based) can allow
-# 3) boundary / SCP / session policy may implicit-deny that allow
-# 4) explicit deny in ANY policy wins and stops evaluation
 
 # Role delegation
 #   permissions policy → what the role can do

@@ -13,7 +13,7 @@ When this rule is applied or the user provides a Udemy lecture URL (or has one o
 3. Write **textbook documentation** to `Personal/Files/aws/udemy/md/`
 4. Add or update the lecture link on the landing page `Personal/Files/aws/01.md`
 
-Use `Personal/Files/aws/udemy/sample.md` as the documentation style guide. Do **not** write lecture content into `01.md`. `01.md` is only the landing page + table of contents. Manual archive is `Personal/Files/aws/old.md`.
+Use `Personal/Files/aws/udemy/sample.md` for **writing style** (novice prose, `- [x]` bullets, exam-style Q&A). Do **not** copy its old collapsible **Terminal Commands** / **Code** layout. Do **not** write lecture content into `01.md`. `01.md` is only the landing page + table of contents. Manual archive is `Personal/Files/aws/old.md`.
 
 ## A. Extract the transcript
 
@@ -54,18 +54,109 @@ Example for lecture 3:
 
 ## C. Write textbook documentation
 
-Create `Personal/Files/aws/udemy/md/<sequence>-<Hyphenated-Title>.md` matching `sample.md`:
+Create `Personal/Files/aws/udemy/md/<sequence>-<Hyphenated-Title>.md`. Every lecture page has **exactly these sections**, in this order:
 
-- Title heading with lecture number
-- Course + lecture links + transcript path
-- **Introduction** (prose a novice can follow)
-- **Detailed Explanation** as numbered steps, with `- [x]` bullets from the transcript
-- **Figures** beside the matching step, using only the images from `../images/<sequence>/`
-- Collapsible **Lab**, **Terminal Commands**, **Code**, **Questions and Answers**
-- **Summary**
-- **References** (Udemy lecture, official AWS docs, transcript file)
+1. Title heading with lecture number
+2. Course + lecture links + transcript path
+3. **Introduction** (prose a novice can follow)
+4. **Detailed Explanation** grouped into steps (see below)
+5. **Lab** (a real walkthrough for HOL/console lessons; for theory lessons, say there is no console lab and keep any study snippets here too)
+6. **Questions and Answers** (exam-focused; keep each **Answer** in a collapsible `<details>`)
+7. **Summary**
+8. **References** (Udemy lecture, official AWS docs, transcript file)
 
-For HOL/console lessons, write a real step-by-step tutorial a beginner can repeat. For theory lessons, say there is no lab and keep Q&A exam-focused.
+Do **not** create standalone **Terminal Commands** or **Code** sections.
+
+### Which sections are accordions
+
+Keep these headings **open** (no outer `<details>`): **Introduction**, **Detailed Explanation**, **Summary**, **References**.
+
+Wrap these in `<details>` accordions:
+
+- Each **Step** inside Detailed Explanation (one accordion per step)
+- The whole **Lab** section
+- The whole **Questions and Answers** section (individual **Answer** blocks stay nested `<details>` inside it)
+
+Do **not** wrap command or code snippets in their own nested accordions. They stay visible inside the Step or Lab that uses them.
+
+### Detailed Explanation must use the Step format
+
+This is the house style for **every** lecture page. Never write `## Detailed Explanation` as one flat list of bullets.
+
+1. Group the transcript's sub-topics into **4–7 steps** (up to ~10 for a very long cram/cheat-sheet lecture).
+2. Head each group with `### Step N — <short descriptive title>`, using an em dash `—` with a space on each side, sentence case, no trailing period.
+3. Steps run `1..N` in transcript order, with no gaps or duplicates.
+4. Put **each** step in its own accordion: `<details>` / `<summary>Step N — title</summary>` / the `### Step N — title` heading and its body / `</details>`.
+5. Under each step, keep the `- [x]` bullets (and their nested children) taken from the transcript.
+6. Place a figure inside the step whose bullets it illustrates, after those bullets.
+
+Example shape:
+
+```
+## Detailed Explanation
+
+<details>
+  <summary>Step 1 — Place SAA-C03 on the AWS certification ladder</summary>
+
+### Step 1 — Place SAA-C03 on the AWS certification ladder
+
+- [x] **What SAA-C03 is**
+  - Exam code for **AWS Certified Solutions Architect Associate**.
+
+</details>
+
+<details>
+  <summary>Step 2 — Learn the logistics: time, questions, and exam-day tactics</summary>
+
+### Step 2 — Learn the logistics: time, questions, and exam-day tactics
+
+- [x] **Length, question count, and style**
+  - **130 minutes** and **65 questions**.
+
+</details>
+```
+
+Lab and Q&A use the same accordion pattern:
+
+```
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+...
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: ...
+
+<details>
+<summary>Answer</summary>
+
+- [x] ...
+
+</details>
+
+</details>
+```
+
+Reference pages: `udemy/md/1-Welcome-and-How-to-Use-this-Course.md`, `udemy/md/2-The-SAA-C03-Exam.md`, `udemy/md/3-Hands-On-Practice-Free-Tier-vs-Sandbox.md`.
+
+### Terminal commands and code live in the step and the lab
+
+Never isolate commands or snippets in their own section. When a lecture uses a CLI command, JSON policy, ARN, URL, or other snippet:
+
+1. Put the fenced block **inside the Detailed Explanation step** that teaches it (after the bullets that introduce it).
+2. Put the **same** snippet again **inside the Lab** task (or Lab overview, for theory lessons) that actually uses it.
+
+Show the snippet inline. Do **not** hide it behind a nested `<details>` accordion. If a lesson has no commands and no code, write none — do not add placeholder `# No commands in this topic` blocks.
+
+For HOL/console lessons, write a real step-by-step tutorial a beginner can repeat. For theory lessons, say there is no console lab and keep Q&A exam-focused.
 
 ## D. Update the landing page
 
