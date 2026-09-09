@@ -1,3 +1,5 @@
+[← Course contents](../../01.md)
+
 # 9. Setup Individual User Account
 
 **Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)  

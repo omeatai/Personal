@@ -56,14 +56,15 @@ Example for lecture 3:
 
 Create `Personal/Files/aws/udemy/md/<sequence>-<Hyphenated-Title>.md`. Every lecture page has **exactly these sections**, in this order:
 
-1. Title heading with lecture number
-2. Course + lecture links + transcript path
-3. **Introduction** (prose a novice can follow)
-4. **Detailed Explanation** grouped into steps (see below)
-5. **Lab** (a real walkthrough for HOL/console lessons; for theory lessons, say there is no console lab and keep any study snippets here too)
-6. **Questions and Answers** (exam-focused; keep each **Answer** in a collapsible `<details>`)
-7. **Summary**
-8. **References** (Udemy lecture, official AWS docs, transcript file)
+1. A **back link** to the course table of contents as the **first line**: `[← Course contents](../../01.md)` (from `udemy/md/` that is `Personal/Files/aws/01.md`)
+2. Title heading with lecture number
+3. Course + lecture links + transcript path
+4. **Introduction** (prose a novice can follow)
+5. **Detailed Explanation** grouped into steps (see below)
+6. **Lab** (a real walkthrough for HOL/console lessons; for theory lessons, say there is no console lab and keep any study snippets here too)
+7. **Questions and Answers** (exam-focused; keep each **Answer** in a collapsible `<details>`)
+8. **Summary**
+9. **References** (Udemy lecture, official AWS docs, transcript file)
 
 Do **not** create standalone **Terminal Commands** or **Code** sections.
 
