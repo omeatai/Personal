@@ -9,7 +9,7 @@ alwaysApply: false
 When this rule is applied or the user provides a Udemy lecture URL (or has one open), do **all** of these every time:
 
 1. Save the **transcript** to `Personal/Files/aws/udemy/notes/`
-2. Use the **course images** the user placed in `Personal/Files/aws/udemy/md/images/<sequence>/`
+2. Use the **course images** the user placed in `Personal/Files/aws/udemy/images/<sequence>/`
 3. Write **textbook documentation** to `Personal/Files/aws/udemy/md/`
 4. Add or update the lecture link on the landing page `Personal/Files/aws/01.md`
 
@@ -38,19 +38,19 @@ Filename rules: spaces to `-`, keep readable Title-Case, drop special characters
 
 Do **not** screenshot the Udemy video player. The lecture stream is DRM-encrypted; seek-preview frames are black or unusable.
 
-1. Look in `Personal/Files/aws/udemy/md/images/<sequence>/`.
-2. Files are numbered in lecture order: `1.png`, `2.png`, `3.png`, … (keep the user’s filenames).
+1. Look in `Personal/Files/aws/udemy/images/<sequence>/`.
+2. Keep the user’s filenames (lecture 3 style: `1.png`, `2.png`, …).
 3. If that folder is missing or empty, **stop** and ask the user to drop the extracted course stills there before writing the lecture page.
 4. Use **every** image in that folder. Embed each one next to the transcript content it illustrates.
-5. From the lecture `.md` file, the path is `images/<sequence>/N.png` (example: `images/3/1.png`).
+5. From the lecture `.md` file in `udemy/md/`, the path is `../images/<sequence>/<filename>` (example: `../images/3/1.png`).
 6. Caption as **Figure N.** plus a short description of what the slide or UI actually shows. Do not invent extra figures that are not in the folder.
 
 Example for lecture 3:
 
-- `images/3/1.png` — title slide
-- `images/3/2.png` — Free Tier vs Sandbox comparison
-- `images/3/3.png` — Challenge Labs website
-- `images/3/4.png` — Challenge Lab console + instructions
+- `../images/3/1.png` — title slide
+- `../images/3/2.png` — Free Tier vs Sandbox comparison
+- `../images/3/3.png` — Challenge Labs website
+- `../images/3/4.png` — Challenge Lab console + instructions
 
 ## C. Write textbook documentation
 
@@ -60,7 +60,7 @@ Create `Personal/Files/aws/udemy/md/<sequence>-<Hyphenated-Title>.md` matching `
 - Course + lecture links + transcript path
 - **Introduction** (prose a novice can follow)
 - **Detailed Explanation** as numbered steps, with `- [x]` bullets from the transcript
-- **Figures** beside the matching step, using only the images from `images/<sequence>/`
+- **Figures** beside the matching step, using only the images from `../images/<sequence>/`
 - Collapsible **Lab**, **Terminal Commands**, **Code**, **Questions and Answers**
 - **Summary**
 - **References** (Udemy lecture, official AWS docs, transcript file)
@@ -79,7 +79,7 @@ Do not duplicate an existing TOC row. Do not put full lecture notes in `01.md`.
 
 ## Confirm
 
-Tell the user: transcript path + line count, doc path, figure list from `images/<sequence>/`, and that `01.md` was updated.
+Tell the user: transcript path + line count, doc path, figure list from `udemy/images/<sequence>/`, and that `01.md` was updated.
 
 ## Examples
 
@@ -87,4 +87,4 @@ Tell the user: transcript path + line count, doc path, figure list from `images/
 - Docs: `udemy/md/1-Welcome-and-How-to-Use-this-Course.md`
 - Transcript: `udemy/notes/3-Hands-On-Practice-Free-Tier-vs-Sandbox.txt`
 - Docs: `udemy/md/3-Hands-On-Practice-Free-Tier-vs-Sandbox.md`
-- Figures: `udemy/md/images/3/1.png` … `4.png`
+- Figures: `udemy/images/3/1.png` … `4.png`

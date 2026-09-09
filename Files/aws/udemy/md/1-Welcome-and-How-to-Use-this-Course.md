@@ -1,7 +1,7 @@
 # 1. Welcome and How to Use this Course
 
-**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)  
-**Lecture:** [Welcome and How to Use this Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28616728#content)  
+**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+**Lecture:** [Welcome and How to Use this Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28616728#content)
 **Transcript:** [`udemy/notes/1-Welcome-and-How-to-Use-this-Course.txt`](../notes/1-Welcome-and-How-to-Use-this-Course.txt)
 
 ---
@@ -25,9 +25,9 @@ If you are new to AWS, treat this lesson as your orientation chapter. You do not
 
 **Figure 1.** Opening slide of lecture 1. Neal Davis (Digital Cloud Training) welcomes you and sets the purpose of the course: how to use the materials so you can pass SAA-C03.
 
-![Figure 1. Welcome slide from lecture 1](images/1-welcome-fig1.png)
+![Figure 1. Welcome slide from lecture 1](../images/1/1-welcome-fig1.png)
 
-*Figure 1 description:* The instructor appears on the right with a studio microphone. On the left, the slide title is **Welcome! How to use this course**, with the AWS Certified Solutions Architect Associate badge. The caption is “Hello and welcome to this course.”
+_Figure 1 description:_ The instructor appears on the right with a studio microphone. On the left, the slide title is **Welcome! How to use this course**, with the AWS Certified Solutions Architect Associate badge. The caption is “Hello and welcome to this course.”
 
 ### Step 2 — Download the course resources first
 
@@ -44,9 +44,9 @@ If you are new to AWS, treat this lesson as your orientation chapter. You do not
 
 **Figure 2.** Same welcome frame later in the video, while the instructor explains the study guide and other downloads.
 
-![Figure 2. Course resources and study guide](images/1-welcome-fig2.png)
+![Figure 2. Course resources and study guide](../images/1/1-welcome-fig2.png)
 
-*Figure 2 description:* This is the visual you will keep seeing while Neal explains the download page. Remember this slide as the “home” of the orientation lesson: everything in this video is about using resources well, not about clicking in AWS yet.
+_Figure 2 description:_ This is the visual you will keep seeing while Neal explains the download page. Remember this slide as the “home” of the orientation lesson: everything in this video is about using resources well, not about clicking in AWS yet.
 
 ### Step 3 — Learn the two lesson types
 

@@ -1,7 +1,7 @@
 # 2. The SAA-C03 Exam
 
-**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)  
-**Lecture:** [The SAA-C03 Exam](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/33349752#content)  
+**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+**Lecture:** [The SAA-C03 Exam](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/33349752#content)
 **Transcript:** [`udemy/notes/2-The-SAA-C03-Exam.txt`](../notes/2-The-SAA-C03-Exam.txt)
 
 ---
@@ -44,9 +44,9 @@ If you are new to certifications, read this like a textbook chapter: first the f
 
 **Figure 1.** Exam facts slide: duration, question count, cost, delivery, scoring, and pass mark.
 
-![Figure 1. SAA-C03 exam facts](images/2-exam-fig1.png)
+![Figure 1. SAA-C03 exam facts](../images/2/2-exam-fig1.png)
 
-*Figure 1 description:* The slide lists **Length 130 minutes**, **65 questions**, **Cost $150**, **Delivery method Testing Center or Online**, **Scoring 100–1000**, and **Pass mark 720**. Use this figure as a one-page cheat sheet for exam logistics.
+_Figure 1 description:_ The slide lists **Length 130 minutes**, **65 questions**, **Cost $150**, **Delivery method Testing Center or Online**, **Scoring 100–1000**, and **Pass mark 720**. Use this figure as a one-page cheat sheet for exam logistics.
 
 ### Step 3 — Choose a delivery method and prepare the room
 
@@ -75,9 +75,9 @@ If you are new to certifications, read this like a textbook chapter: first the f
 
 **Figure 2.** Question format and exam domains. This is the most important visual in the lesson.
 
-![Figure 2. Question formats and four exam domains](images/2-exam-fig2.png)
+![Figure 2. Question formats and four exam domains](../images/2/2-exam-fig2.png)
 
-*Figure 2 description:* The left side explains **multiple choice** (4 answers, 1 correct) and **multiple response** (2+ correct from 5+ options). The right side lists the four domains: **Design secure architectures**, **Design resilient architectures**, **Design high-performing architectures**, and **Design cost-optimized architectures**. There is no lab on the real exam.
+_Figure 2 description:_ The left side explains **multiple choice** (4 answers, 1 correct) and **multiple response** (2+ correct from 5+ options). The right side lists the four domains: **Design secure architectures**, **Design resilient architectures**, **Design high-performing architectures**, and **Design cost-optimized architectures**. There is no lab on the real exam.
 
 ### Step 5 — Memorize the four domains (the exam’s table of contents)
 
@@ -103,12 +103,12 @@ If you are new to certifications, read this like a textbook chapter: first the f
 
 **Novice translation of the four domains:**
 
-| Domain | Everyday question the exam is asking |
-| --- | --- |
-| Secure | Who can access this, and how is data protected? |
-| Resilient | What happens if a component or Availability Zone fails? |
+| Domain          | Everyday question the exam is asking                                    |
+| --------------- | ----------------------------------------------------------------------- |
+| Secure          | Who can access this, and how is data protected?                         |
+| Resilient       | What happens if a component or Availability Zone fails?                 |
 | High-performing | Will storage, compute, database, and network meet the speed/scale need? |
-| Cost-optimized | Is there a cheaper design that still meets the requirement? |
+| Cost-optimized  | Is there a cheaper design that still meets the requirement?             |
 
 ### Step 6 — Use the official exam guide for in-scope services
 

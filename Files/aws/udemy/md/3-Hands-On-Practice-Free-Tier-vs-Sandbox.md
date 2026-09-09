@@ -19,7 +19,7 @@ You do not create an account in this 3-minute video. Later HOL lessons walk thro
 
 **Figure 1.** Opening title of lecture 3: Hands-On Practice, Free Tier vs Sandbox.
 
-![Figure 1. Lecture title slide](images/3/1.png)
+![Figure 1. Lecture title slide](../images/3/1.png)
 
 _Figure 1 description:_ Digital Cloud Training title card. The heading is **Hands-On Practice / Free Tier vs Sandbox**, with a test-tube graphic. This is the comparison lesson, not a console lab.
 
@@ -74,7 +74,7 @@ _Figure 1 description:_ Digital Cloud Training title card. The heading is **Hand
 
 **Figure 2.** Side-by-side comparison: AWS Free Tier vs Sandbox / Challenge Labs.
 
-![Figure 2. AWS Free Tier vs Sandbox / Challenge Labs](images/3/2.png)
+![Figure 2. AWS Free Tier vs Sandbox / Challenge Labs](../images/3/2.png)
 
 _Figure 2 description:_ Memorize this table. **Free Tier:** create your own account, **full control**, **you are responsible for bills**, operate in Free Tier and set a **billing alarm**, **recommended for following along** with HOL lessons. **Sandbox / Challenge Labs:** provider-hosted account, **limited control**, **no cloud bills**, scenario-based challenges, **recommended as an additional training tool**.
 
@@ -100,7 +100,7 @@ _Figure 2 description:_ Memorize this table. **Free Tier:** create your own acco
 
 **Figure 3.** Instructor website: Hands-on Challenge Labs (sandbox product page).
 
-![Figure 3. Hands-on Challenge Labs website](images/3/3.png)
+![Figure 3. Hands-on Challenge Labs website](../images/3/3.png)
 
 _Figure 3 description:_ Digital Cloud Training page for **Hands-on Challenge Labs**. The copy says labs are scenario-based exercises that run in a **secure sandbox environment**. This is an optional extra product, not this Udemy course. You register and pay a fee on the instructor site.
 
@@ -113,7 +113,7 @@ _Figure 3 description:_ Digital Cloud Training page for **Hands-on Challenge Lab
 
 **Figure 4.** AWS Challenge Lab layout: console on the left, instructions on the right.
 
-![Figure 4. AWS Challenge Lab console and instructions](images/3/4.png)
+![Figure 4. AWS Challenge Lab console and instructions](../images/3/4.png)
 
 _Figure 4 description:_ Example lab **AWS-CL-002: Build VPC Resources Manually [Guided]**. Left pane is the AWS console (**Create VPC**, name `Lab VPC`, CIDR `10.0.0.0/16`). Right pane is the lab guide: steps, a table of values you can copy/paste, and hints. A second lab timer bar sits at the bottom. **SAA-C03** itself is multiple choice, not a lab exam. This UI is what **SysOps** exam labs look like.
 
