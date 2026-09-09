@@ -1,7 +1,7 @@
 # 3. Hands-On Practice: Free Tier vs Sandbox
 
-**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)  
-**Lecture:** [Hands-On Practice: Free Tier vs Sandbox](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28667198#content)  
+**Course:** [AWS Certified Solutions Architect Associate (SAA-C03) – Neal Davis](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+**Lecture:** [Hands-On Practice: Free Tier vs Sandbox](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28667198#content)
 **Transcript:** [`udemy/notes/3-Hands-On-Practice-Free-Tier-vs-Sandbox.txt`](../notes/3-Hands-On-Practice-Free-Tier-vs-Sandbox.txt)
 
 ---
@@ -19,9 +19,9 @@ You do not create an account in this 3-minute video. Later HOL lessons walk thro
 
 **Figure 1.** Opening title of lecture 3: Hands-On Practice, Free Tier vs Sandbox.
 
-![Figure 1. Lecture title slide](images/3-free-tier-sandbox-fig1.png)
+![Figure 1. Lecture title slide](images/3/1.png)
 
-*Figure 1 description:* Digital Cloud Training title card for this comparison lesson. The rest of the video fills in what Free Tier and Sandbox each give you. These stills are Udemy seek-preview frames: the in-browser player stayed black because the lecture stream is DRM-encrypted.
+_Figure 1 description:_ Digital Cloud Training title card. The heading is **Hands-On Practice / Free Tier vs Sandbox**, with a test-tube graphic. This is the comparison lesson, not a console lab.
 
 ## Detailed Explanation
 
@@ -54,12 +54,6 @@ You do not create an account in this 3-minute video. Later HOL lessons walk thro
 
 **Novice rule:** Free Tier is not “always free.” It is a **limited free allowance** plus paid usage if you leave that allowance. Treat every resource as something you must stop or delete when the lab is done.
 
-**Figure 2.** Comparison slide while the Free Tier column is filled in.
-
-![Figure 2. AWS Free Tier column on the comparison slide](images/3-free-tier-sandbox-fig2.png)
-
-*Figure 2 description:* Left column **AWS Free Tier**: create your own account, **full control**, **you are responsible for bills**, operate in Free Tier and set a **billing alarm**, **recommended for following along** with HOL lessons. The Sandbox column is still empty at this point in the video.
-
 ### Step 3 — Sandbox / Challenge Lab: hosted account, no cloud bill, limited control
 
 - [x] **What a sandbox is**
@@ -78,20 +72,20 @@ You do not create an account in this 3-minute video. Later HOL lessons walk thro
   - The environment is **pre-configured** for that challenge.
   - Good for **testing skills** and learning from a designed scenario.
 
-**Figure 3.** Completed side-by-side comparison.
+**Figure 2.** Side-by-side comparison: AWS Free Tier vs Sandbox / Challenge Labs.
 
-![Figure 3. AWS Free Tier vs Sandbox / Challenge Labs](images/3-free-tier-sandbox-fig3.png)
+![Figure 2. AWS Free Tier vs Sandbox / Challenge Labs](images/3/2.png)
 
-*Figure 3 description:* Memorize this table. **Free Tier:** your account, full control, you pay bills, recommended for HOL. **Sandbox / Challenge Labs:** provider-hosted account, limited control, no cloud bills, scenario-based challenges.
+_Figure 2 description:_ Memorize this table. **Free Tier:** create your own account, **full control**, **you are responsible for bills**, operate in Free Tier and set a **billing alarm**, **recommended for following along** with HOL lessons. **Sandbox / Challenge Labs:** provider-hosted account, **limited control**, **no cloud bills**, scenario-based challenges, **recommended as an additional training tool**.
 
-| Topic | Free Tier (this course) | Sandbox / Challenge Lab |
-| --- | --- | --- |
-| Whose account? | **Yours** | **Provider-hosted** |
-| Control | **Full** | **Limited** |
-| Cross-account labs | Possible later | Often **not** possible |
-| Credit card | Required at AWS signup | You pay the **lab service**, not AWS usage |
-| AWS bill risk | **You** pay any overage | **No** AWS cloud bill from the lab |
-| Best use | Follow **HOL** lessons | Extra **scenario** practice |
+| Topic              | Free Tier (this course) | Sandbox / Challenge Lab                    |
+| ------------------ | ----------------------- | ------------------------------------------ |
+| Whose account?     | **Yours**               | **Provider-hosted**                        |
+| Control            | **Full**                | **Limited**                                |
+| Cross-account labs | Possible later          | Often **not** possible                     |
+| Credit card        | Required at AWS signup  | You pay the **lab service**, not AWS usage |
+| AWS bill risk      | **You** pay any overage | **No** AWS cloud bill from the lab         |
+| Best use           | Follow **HOL** lessons  | Extra **scenario** practice                |
 
 ### Step 4 — Challenge Labs are optional extra practice
 
@@ -103,6 +97,13 @@ You do not create an account in this 3-minute video. Later HOL lessons walk thro
   - They need **registration** and an **additional fee**.
   - The lecture page has a video showing them in action.
   - One catalog example: **700+ labs** across many cloud platforms (not AWS-only).
+
+**Figure 3.** Instructor website: Hands-on Challenge Labs (sandbox product page).
+
+![Figure 3. Hands-on Challenge Labs website](images/3/3.png)
+
+_Figure 3 description:_ Digital Cloud Training page for **Hands-on Challenge Labs**. The copy says labs are scenario-based exercises that run in a **secure sandbox environment**. This is an optional extra product, not this Udemy course. You register and pay a fee on the instructor site.
+
 - [x] **AWS-only Challenge Labs**
   - If you are focused on AWS, use **AWS Challenge Labs**.
   - Layout: **AWS Management Console on the left**, **instructions on the right**.
@@ -110,23 +111,11 @@ You do not create an account in this 3-minute video. Later HOL lessons walk thro
   - AWS uses the **same provider** for those exam labs (Skillable).
   - Advanced labs and the exam may give only a **scenario and hints**, then **verify** your work.
 
-**Figure 4.** Instructor website example of Hands-on Challenge Labs (catalog / launch page).
+**Figure 4.** AWS Challenge Lab layout: console on the left, instructions on the right.
 
-![Figure 4. Challenge Labs catalog](images/3-free-tier-sandbox-fig4.png)
+![Figure 4. AWS Challenge Lab console and instructions](images/3/4.png)
 
-*Figure 4 description:* Optional extra product, not this Udemy course. Labs run in a hosted sandbox. You register and pay a fee on the Digital Cloud Training site.
-
-**Figure 5.** Why Challenge Labs exist: practical experience, a large lab catalog, and no surprise cloud bills.
-
-![Figure 5. Why use Challenge Labs](images/3-free-tier-sandbox-fig5.png)
-
-*Figure 5 description:* The lecture cites **over 700 labs** across platforms. That is extra practice. You still need a Free Tier account to follow the HOL lessons in *this* course.
-
-**Figure 6.** AWS Challenge Lab layout: console work plus instructions, the same style AWS uses for exam labs.
-
-![Figure 6. How AWS Challenge Labs work](images/3-free-tier-sandbox-fig6.png)
-
-*Figure 6 description:* Typical hosted lab: log in to a temporary AWS environment, complete the scenario, and get scored. Console on one side, instructions or hints on the other. **SAA-C03** itself is multiple choice, not a lab exam. This UI is what **SysOps** exam labs look like.
+_Figure 4 description:_ Example lab **AWS-CL-002: Build VPC Resources Manually [Guided]**. Left pane is the AWS console (**Create VPC**, name `Lab VPC`, CIDR `10.0.0.0/16`). Right pane is the lab guide: steps, a table of values you can copy/paste, and hints. A second lab timer bar sits at the bottom. **SAA-C03** itself is multiple choice, not a lab exam. This UI is what **SysOps** exam labs look like.
 
 ### Step 5 — What you should do next
 
