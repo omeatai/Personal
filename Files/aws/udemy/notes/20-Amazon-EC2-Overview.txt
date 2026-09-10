@@ -1,3 +1,7 @@
+Lecture: Amazon EC2 Overview
+URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/43065346#content
+============================================================
+
 The Amazon Elastic Compute Cloud, EC2 is one of the original and most important services on AWS.
 
 EC2 enables you to run virtual servers in the cloud.
