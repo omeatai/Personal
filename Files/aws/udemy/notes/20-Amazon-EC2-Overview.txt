@@ -1,0 +1,809 @@
+The Amazon Elastic Compute Cloud, EC2 is one of the original and most important services on AWS.
+
+EC2 enables you to run virtual servers in the cloud.
+
+Running Linux, Windows, or Mac OS.
+
+It's also used by many other services in AWS, so it's really one of the most important technologies
+
+to understand before we move on.
+
+So in this section, you'll learn all about EC2 instances, what they are, how to deploy them, how to
+
+configure them and make sure that they have the right storage systems attached, the right IP addresses
+
+attached, and they can communicate on the network.
+
+You also need to understand the various pricing models as that can come out quite a bit in exam questions.
+
+So there's lots to get on with and lots of hands-on in this section, so I hope you enjoy it and I'll
+
+see you in the next lesson.
+
+
+Hey guys,
+
+welcome to this video.
+
+In this video,
+
+you're going to learn about the Amazon Elastic Compute Cloud
+
+Amazon EC2.
+
+So what is Amazon EC2?
+
+With EC2,
+
+you can launch on-demand EC2 instances in the cloud.
+
+Now an instance is essentially a virtual server
+
+or a virtual machine in other language.
+
+It's running in the AWS data centers,
+
+so you can just provision these virtual servers on demand at any time.
+
+The instances can run either the Windows or the Linux operating system.
+
+There is a Mac OS option as well,
+
+but it's actually dedicated hardware,
+
+so it's not virtual servers as it is when you're running Windows or Linux.
+
+There are a few options for how you can deploy
+
+your instances in EC2,
+
+and that does include virtual servers,
+
+that's mainly what we're talking about,
+
+but there are dedicated hardware options for
+
+EC2 running Windows,
+
+Linux or Mac OS.
+
+Mac OS is always dedicated hardware.
+
+EC2 instances are attached to the network within a VPC.
+
+More on that later,
+
+via an elastic network interface.
+
+Each instance will always have at least one ENI,
+
+and you can add additional network adapters as well.
+
+And you get a lot of control over the networking configuration
+
+within AWS.
+
+EC2 instances are launched into subnets within
+
+an Amazon virtual private cloud of VPC.
+
+Now you get to create your own VPCs.
+
+AWS does already provision some for you within each AWS region,
+
+but you can then add your own configurations as well.
+
+Now these are always private to you,
+
+so every VPC,
+
+whether it's created by AWS or created and configured by yourself,
+
+it's always a private space for networking
+
+within
+
+your own environment.
+
+And you can also attach it to.
+
+A internet gateway so that you can get public connectivity as well,
+
+that's what a public subnet is for.
+
+So we can choose whether our instances only have
+
+private networking and can only communicate amongst themselves,
+
+or perhaps we do want them to have internet connectivity or
+
+connectivity to other networks like on-premises data centers as well.
+
+All of that is within our control.
+
+For the storage layer,
+
+the main storage for an EC2 instance is the elasticlock store EBS.
+
+These are persistent storage volumes.
+
+This is an example
+
+of essentially hard disk drives or solid state drives in the cloud.
+
+So that means it's a
+
+block-based storage system.
+
+Within the AWS data centers,
+
+Amazon EC2 instances run on servers,
+
+and those servers are managed by AWS.
+
+Many instances can run on each of those
+
+physical host servers within the AWS data centers.
+
+The hosts of course are completely managed by AWS
+
+whereas the virtual instances that you run,
+
+those are managed by you,
+
+so those are virtual servers that you have control over.
+
+You get to choose which operating system,
+
+what hardware configuration,
+
+what applications you want to run,
+
+and you're also responsible for updating your own
+
+application stack and your operating system patches,
+
+securing.
+
+Your servers.
+
+Everything within the virtual machine itself
+
+is the responsibility of the customer.
+
+There's a selection of instance types available.
+
+That means that you can get different combinations of hardware profile.
+
+How much CPU do you want?
+
+How much memory do you want?
+
+What storage devices do you want to connect and
+
+what amount of networking capacity do you actually need?
+
+You get to choose those based on your own unique requirements for each workload.
+
+So instances are flexible and on demand.
+
+That means they can be stopped
+
+when they're not needed,
+
+which will save you cost
+
+because you're only paying for when it's running.
+
+Now a caveat to that is that the storage
+
+volumes are always charged based on the amount.
+
+Of space that you actually provision,
+
+not necessarily use.
+
+So if you provision a 100 gigabyte
+
+EBS volume,
+
+you will get charged for that 100 gigabytes,
+
+whether it's used or not,
+
+and it doesn't matter how much of the
+
+space within that volume you've actually used for
+
+actual data,
+
+you're still going to get charged for the capacity provisioned.
+
+For the instances themselves,
+
+you pay
+
+for when they're running,
+
+not when they're stopped.
+
+So when you're not using a workload,
+
+you can shut it down,
+
+for example,
+
+overnight if it's only used during business hours.
+
+And you pay different rates based on the instance type.
+
+We can always then just start them and
+
+of course all this can be done programmatically.
+
+So we can do this through a console or we
+
+can do it programmatically from a command line or through
+
+a software development kit through automated processes.
+
+When we no longer need an instance,
+
+we can simply terminate it
+
+and it will be completely deleted.
+
+EC2 provides a selection of instance families and instance types.
+
+The families provide varying combinations of hardware resources
+
+that are optimized for different compute workloads.
+
+For example,
+
+general purpose,
+
+we have compute optimized,
+
+memory optimized,
+
+accelerated computing and storage optimized,
+
+and there's more than that as well.
+
+There's a very wide selection
+
+of instance families and hundreds of instance types.
+
+For example here,
+
+a compute optimized instance
+
+will be one that has a higher ratio of CPU.
+
+compared to memory,
+
+whereas a memory optimized instance type will have
+
+a higher ratio of memory compared to CPU.
+
+So some workloads,
+
+of course,
+
+require more CPU than memory and others the opposite.
+
+So this gives us advantages here in choosing the
+
+one that's correct for whatever our use cases.
+
+Larger sizes,
+
+so instance types with higher amounts of CPU and memory and so on,
+
+will provide greater hardware capability,
+
+and of course you pay for that.
+
+Now when you look through all the instances,
+
+families and types,
+
+you will see,
+
+for example,
+
+them specified like this,
+
+M5.
+
+large.
+
+M in this case would be the family name,
+
+so this is a memory optimized instance.
+
+5 is the generation number and large is the size of the instance.
+
+Let's see some examples.
+
+Here on the left we have a T2 micro,
+
+it has 1 virtual CPU
+
+and 1 gigabyte of memory.
+
+In the middle we've got a C3.X large,
+
+4 VCPUs,
+
+7.5 gigabytes of memory,
+
+and on the right we've got an M4.16X large,
+
+which has 64 VCPUs and 256 gigabytes of memory.
+
+As you can see,
+
+the price per hour is very different going from left to right here.
+
+Now you don't need to correct me if the numbers are not correct,
+
+these prices change all the time.
+
+I'm just showing you these purely for a.
+
+Relative comparison,
+
+so you can see the difference between
+
+an instance that has one CPU and 1 gigabyte of
+
+memory versus one that has 64 BCPUs and 256 gigabytes.
+
+Of course that's gonna cost you a lot more on a monthly basis,
+
+compared to a lower
+
+profile instance type.
+
+So you've got to choose the right workload
+
+for your particular use case to make sure you're optimizing cost.
+
+Amazon EC2 instances are connected to the network via elastic network interfaces.
+
+The instances are always deployed within a virtual private cloud.
+
+Now AWS has what are called availability zones in every AWS region,
+
+and those are essentially the data centers in which AWS runs their infrastructure.
+
+Now.
+
+What we can do is then create virtual private clouds
+
+and create subnets,
+
+and those subnets must map to an availability zone.
+
+So they're actually sort of located within a data center,
+
+if you like.
+
+But this is a logical construct that we have control over,
+
+that's mapped to the physical world.
+
+Now,
+
+we can then launch our instances in subnets.
+
+If we launch an instance in a public subnet,
+
+it will have both a private IP address
+
+and a public IP address,
+
+which is optional,
+
+but if you want to actually have public connectivity,
+
+then it will need a public IP address.
+
+Now in a Linux instance that Ethernet interface would be E zero,
+
+and it's labeled a little differently if you're running Windows.
+
+But that is the first elastic network interface.
+
+attached to the instance.
+
+We can also launch our instances in private subnets.
+
+In this case,
+
+they will only have
+
+private IP addresses.
+
+There's no need for a public IP address within a private subnet.
+
+Instances can even be launched with multiple interfaces,
+
+and those can be in the same subnet or they can even be
+
+in different subnets as long as they're within the same availability zone.
+
+Let's explore the different types of IP address you can use with EC2.
+
+Firstly,
+
+a public IP address.
+
+This is a dynamic address picked up using the dynamic host configuration protocol.
+
+It's dynamic meaning
+
+that it will be lost
+
+if the instance is stopped and started again.
+
+These are used in public subnets.
+
+There is a small charge for using a public IP address.
+
+It's associated to the private IP address on the instance,
+
+which means if you run commands within
+
+your instance,
+
+such as IF config or IP config,
+
+you won't actually see the public IP address listed.
+
+Because as far as the instance operating system is concerned,
+
+there is only an elastic network interface that has a private IP address.
+
+The association to the public IP address is done externally to the instance.
+
+You can't move these public IP addresses between instances.
+
+The.
+
+IP address is actually retained if the instance is stopped and started again.
+
+They're used in public and private subnets,
+
+and an instance will always have a private IP address.
+
+An elastic IP address is a type of static public address.
+
+So if you need to rely on the address being the same.
+
+Then this is what you can do.
+
+You can provision an elastic IP address,
+
+you do pay a charge for these,
+
+and they also get associated to the private IP address on the instance,
+
+the same as a public IP address.
+
+The key difference is that these are static
+
+and they can also be moved between instances
+
+and elastic networks.
+
+Adapters.
+
+Now there are different types of network interface.
+
+The first one is the elastic network interface.
+
+We also have the elastic network adapter and the elastic fabric adapter.
+
+The ENI is the basic adapter type for
+
+when you don't have any high performance requirements,
+
+and you can use these with all instance types.
+
+The ENA is enhanced networking.
+
+It provides higher performance,
+
+higher bandwidth and lower interinstance latency,
+
+and you must choose supported instance types for using an ENA.
+
+The EFA is used with high performance computing
+
+deployments and MPI and machine learning use cases.
+
+It's good for tightly coupled applications where you need to have really low.
+
+Into instance latency,
+
+and you can use these with all instance types.
+
+The principal storage for Amazon EC2 instances is the elastic block store.
+
+This is an example of a block-based storage system for persistent storage.
+
+EBS volumes are attached directly to EC2 instances.
+
+In a Windows instance,
+
+you would see these as local drives,
+
+not as network drives.
+
+This is not like an example of a remote file system,
+
+this is a block-based storage system.
+
+Now,
+
+even though it's attached over the network,
+
+it does appear to the operating system to be a local storage device,
+
+just like if you installed a hard disk drive or solid state drive
+
+into the computer itself.
+
+The volume is attached over a network,
+
+as I mentioned.
+
+EBS volumes exist within an availability zone,
+
+and they must be in the same availability zone as
+
+the instance to which you want to attach them.
+
+The volume.
+
+are automatically replicated within the AZ for durability.
+
+Now,
+
+there are various different volume types.
+
+These are the current volume types.
+
+This may change over time,
+
+but we have the GP3 general purpose solid state drive,
+
+the GP2.
+
+We've got the IO2 and the IO1.
+
+These are for when you need much higher IOPS,
+
+that's IOPS or input output per second.
+
+Which means a lot more transactions are happening,
+
+a lot more read and write operations on the disk.
+
+So if you have very high volumes of IOPs,
+
+so read and write requests,
+
+then you might want to use one of those volume types.
+
+And of course you'll pay a
+
+a different rate for the different storage volumes
+
+based on the performance that they actually provide.
+
+ST one is better for throughport optimized.
+
+Those are hard disk drives.
+
+And the SE1 is a cold hard disk drive,
+
+so that's a lower performance,
+
+however,
+
+these are obviously lower cost as well.
+
+And the old magnetic standard,
+
+which is another type of hard disk drive,
+
+we don't use these much anymore.
+
+So a bit of data here for you on durability,
+
+the volume and minimum and maximum size,
+
+the max achievable IOPS,
+
+the IOPs,
+
+the max throughput that you can get per volume.
+
+And whether they support something called multi-attach.
+
+Now multi-attach is where
+
+we can attach multiple instances to one EBS volume.
+
+As you can see,
+
+only these two storage volume types in the middle here,
+
+IO 2 and IO1,
+
+they're the only ones that support multi-attach.
+
+Multi-attach would be where multiple instances of sharing a volume,
+
+perhaps for clustering purposes,
+
+for example.
+
+It's not like a shared file system.
+
+For a shared file system you're better off using Amazon Elastic
+
+file system for Linux or Amazon FSX for Windows servers.
+
+In this case,
+
+Multi-attach is still a block-based storage system,
+
+but it allows you to attach multiple instances and there are quite
+
+a few restrictions on how you can use the multi-attached volumes.
+
+So what are the various use cases?
+
+For GP3,
+
+it's most workloads,
+
+including databases and dev test environments.
+
+For GP 2,
+
+it's just an older version of GP3,
+
+good for boot volumes,
+
+dev test,
+
+general use.
+
+IO2 and IO1,
+
+these are for more high performance use cases where you need to drive a higher IOPs.
+
+For ST1 and SC1,
+
+these are the hard disk drive options.
+
+They have good freeput,
+
+but they're.
+
+What is good for IOPs.
+
+However,
+
+they do come at a lower cost per gigabyte,
+
+so they can be good for some use cases.
+
+Magnetic,
+
+we don't really use much anymore,
+
+but it is still there.
+
+Now,
+
+there's another concept called the instant store.
+
+I mentioned that EBS volumes are attached over the network.
+
+So as you can see in this diagram here,
+
+we have the host server,
+
+we have instances running,
+
+and then we have the.
+
+Interfaces,
+
+so in this case,
+
+the adapters connected to the host server,
+
+of course,
+
+the networking is then extended through to the virtual machine
+
+using an ENI.
+
+Now,
+
+the servers are connected
+
+across the network to the EBS storage system.
+
+That's where the volumes are attached from.
+
+And these are great for persistent storage.
+
+However,
+
+instant store volumes are these volumes here that are attached physically.
+
+To the host server,
+
+they offer very,
+
+very high performance,
+
+however,
+
+it's important to note
+
+that they are not persistent,
+
+so they're what we call ephemeral.
+
+That means the data will be lost whenever power is lost,
+
+a bit like a memory chip
+
+in a server.
+
+If you pull the power from the server,
+
+anything that was in that memory chip is gone.
+
+OK,
+
+whereas with a hard disk drive or a solid state drive,
+
+that is persistent storage.
+
+So you can't store anything on an instant store
+
+that you can't either recreate or that doesn't have sort of longer term value,
+
+so if you lose it,
+
+it doesn't actually matter.
+
+There are use cases for this,
+
+you can use it for temporary storage files,
+
+you can use it for data that is replicated many times
+
+so that if you lose an individual instance of that data,
+
+it doesn't matter.
+
+And of course you get that high performance.
+
+So there are use cases where instance stores do make sense for some data,
+
+but for all your persistent data,
+
+make sure you use EBS.
+
