@@ -1,0 +1,379 @@
+Lecture: Launching Amazon EC2 Instances
+URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/43065352#content
+============================================================
+
+In this lesson,
+
+I'm gonna show you how to launch virtual servers on Aws using the Amazon EC2 service.
+
+And we're gonna launch a Linux instance and a Windows instance.
+
+So when we're launching EC2 instances,
+
+we need to first select our instance type.
+
+So there's lots of different instance types and of course,
+
+they come with varying amounts of CPU and memory and storage as well.
+
+So we're gonna pay
+
+depending on the amount of those resources we require
+
+for most of the lessons in this course.
+
+If not all of them, we're gonna use the T two dot micro.
+
+This is a general purpose, easy two instance type and it's within the free tier.
+
+So the instance type defines the hardware profile and therefore the cost,
+
+we also need to select an Amazon machine image.
+
+The AMI S define which operating system we want to use and how it
+
+being configured it might have, for example, an application pre installed on it.
+
+You can choose an Ami that has Windows with
+
+a Microsoft SQL server database installed as an example.
+
+So the AMI defines the configuration of the instance,
+
+including the operating system and any software
+
+that's installed and how the virtual drives,
+
+the EBS volumes are defined.
+
+Now, these are backed by what's called a snapshot. So the actual data
+
+is stored in a snapshot.
+
+Snapshots are actually taken from live instances as
+
+a kind of backup and then we create an
+
+AMI from them and we can keep launching more
+
+instances that are the same as the original.
+
+So a snapshot is a point in time backup of an easy two instance.
+
+Once we've done that, we can create our own customized ami S.
+
+So for example, we might launch an existing AMI, we might
+
+make some customizations to it
+
+and then create our own ami that we can then launch instances from later on.
+
+So that's a little bit of theory.
+
+Let's head over to the console and start building this out.
+
+I'm back in the management console.
+
+I'm going to type EC2, add it to my favorites and then click on EC2. OK.
+
+So now on the EC2 management console, we've got a little bit of information here.
+
+We've got on the left hand side, we've got all the various
+
+different features and we can start going and working with resources
+
+by clicking on one of those on the main page here.
+
+We just get some summary information as well.
+
+There's a nice tile on the top right hand corner here which
+
+tells us how much of the free tier usage we've actually used.
+
+So that's very useful. So what I'm gonna do is click on launch instance.
+
+This is the same as going to instances here and then clicking on launch instance.
+
+But I'm just gonna use the button on the screen here.
+
+So now I can name my instance if I want to. That's optional.
+
+Well, I'm gonna call this Linux
+
+dash server. Let's scroll down a little way.
+
+Now, we can see the application and OS images, the Ami the Amazon machine image.
+
+Now by default,
+
+it's selected the Amazon Linux,
+
+that's a version of Linux that's been customized by A W SS.
+
+It includes a variety of things like it includes
+
+certain agents and the command line interface for AWS.
+
+The Amazon Linux, AMI has been customized by AWS and
+
+includes certain
+
+agents and the AWS command line interface. So it's very useful.
+
+So here we've chosen the Amazon Linux 2023 Ami that's actually been selected for us
+
+and it says free tier eligible, which is good news.
+
+Now, if we scroll down a little way, now we've got the incident type.
+
+So here T two micro is selected by default free tier eligible. That's good news.
+
+If we wanted to change it, we could click on the little arrow
+
+and then we can choose from
+
+one of the different options here. I'm gonna leave it as it is.
+
+Next, we have the key pair,
+
+key pairs are used for connecting to our instances using
+
+the secure shell if we're connecting from outside Aws,
+
+for example, now I don't have any key pairs.
+
+So I'm gonna create a new one.
+
+I'm going to leave the default Rs A and dot Pe M
+
+and I'm gonna give this a name that's descriptive. So I'll call this DC T lab training
+
+dash us E
+
+one. And then I'm just gonna create the key pair.
+
+Now, what's gonna happen is that will have downloaded a
+
+to my computer. This is actually using cryptography, public and private keys.
+
+The private key has been downloaded to your computer.
+
+It's probably in your downloads directory.
+
+Make sure you move that somewhere where you can find it later on
+
+and where it is kept securely because it is sensitive information.
+
+Anybody with that particular file will be able
+
+to connect to your instances and manage them.
+
+Ok? So that's all we need to do there for. Now. It's selected the key pair for us.
+
+Once we've created it for network settings,
+
+we're going to leave some of the defaults here,
+
+but we need to create a new security group.
+
+Now, if I do it from here, it's gonna give it a weird name. OK?
+
+So rather I would prefer to click on edit and then I can actually give it a name
+
+and I'm gonna call this web access.
+
+I'm gonna copy that name into the description
+
+and then
+
+here we have SSH OK. That's all I need for.
+
+Now, secure shell and it's going to allow any source address.
+
+The zeros means any source IP address.
+
+That's all good news that gives me the ability to connect. Ok?
+
+So let's scroll down a little way and we're
+
+gonna leave the con storage as the defaults.
+
+And actually that's all we need to do for now. There's some more advanced options.
+
+We'll get to those in another lesson.
+
+I just want one of these instances. I'm happy with the summary here.
+
+So I'm just gonna launch so that instance is launching,
+
+I can click on view all instances and we can see that it's pending.
+
+So that should change to a running state soon.
+
+We can see lots of information by clicking on the instance.
+
+And now I can see
+
+it's instance ID, a unique identifier, public IP address,
+
+the private IP address.
+
+It also has a public and private DNS name that we can use and
+
+there's various different tabs for monitoring information.
+
+We can see the security group we assigned.
+
+So that's essentially the firewall that's allowing access on port 20.
+
+In this case,
+
+there's lots of networking information we can see it's
+
+in the US East one D availability zone.
+
+And this is going to have been deployed in our default virtual private cloud,
+
+which for now is fine.
+
+We'll get on to some more details about that later on. So that is now running.
+
+That's great. Let's launch another instance.
+
+I'll call this One windows server and we're
+
+gonna scroll down here and choose windows.
+
+Now, by the way, you'll notice there's this browse more Ami S,
+
+let's see where that takes us.
+
+If I click on browse more Ami S, we've got
+
+the quickstart, Ami S got my Ami S.
+
+If we have our, our own custom Ami S, they'll be in here. There's marketplace Ami S.
+
+So now we've got lots of Ami S that include various software like VPN servers,
+
+backup and recovery software, networking, firewalls,
+
+like Palo Alto Splunk enterprise and so on
+
+built into the instance.
+
+And typically you'll pay a higher rate for these
+
+because the software charges are going to be included.
+
+That's not always the case,
+
+but that's sometimes the case.
+
+And then there's community AMI S which people in the
+
+community have created and shared for everyone else to use.
+
+And in fact, I'm gonna cancel out of that one,
+
+come back to here and just click on Windows
+
+and it chooses for me, the Microsoft Windows server 2022 base.
+
+That's great.
+
+Again, it's gonna be a T two micro for the key pair.
+
+It is very important for the Windows instances that we select this.
+
+We don't always need to assign a key pair
+
+for our Linux instances because we can often use
+
+a service called cloudshell to connect to them if
+
+we want to connect using the secure shell protocol,
+
+which I'll show you in another lesson.
+
+However, for Windows, in order to retrieve the password,
+
+we have to have a key pair assigned.
+
+So select the key pair name
+
+under network settings.
+
+We're gonna select an existing security group and choose web access.
+
+Now, in this case,
+
+web access does not have the rule that we need
+
+to connect to Windows at this point in time.
+
+So we're gonna have to go and edit that in a moment. So that's all I need to do.
+
+I can click on launch instance
+
+and now I'm gonna have my Windows instance up and running shortly.
+
+Let's go back to check it out. If I refresh the page here, we can see
+
+two different instances.
+
+By the way, you can filter by state up here.
+
+So for example, if I filter by running, I only see my running instances.
+
+So sometimes that happens for you by default.
+
+So if you can't see what you're expecting to see, make sure it's set to all states.
+
+Now, I need to be able to connect to my windows server
+
+and I want to use the remote desktop protocol.
+
+So under security here, I can see that I have a security group
+
+which has port 22 open. That's not for the remote desktop protocol.
+
+That's for the Linux server when we use the secure shell protocol. OK?
+
+So I can click on the security group here to edit
+
+it or on the left hand side under network and security,
+
+we can choose security groups and I can find the same security group here.
+
+I'll click on the ID. We have inbound and outbound rules.
+
+I only want to edit the inbound rules at the moment.
+
+So I'm gonna click on edit inbound rules.
+
+I'm going to add a rule,
+
+click on this box here and I'm going to type RDP to
+
+easily find the RDP protocol which will allow access on port 3389.
+
+And then I'm going to change
+
+to anywhere I PV four allowing any source address and then save rules. So that's it.
+
+We've launched our two instances
+
+and we have to wait a couple of minutes for the
+
+Windows instance before we're gonna be able to connect to it,
+
+the Linux server would be ready now.
+
+And that's what we're gonna do in another lesson.
+
+We're gonna leave these two running and I'm
+
+gonna show you how you can connect to Linux
+
+using the secure shell protocol and windows, using the remote desktop protocol.
