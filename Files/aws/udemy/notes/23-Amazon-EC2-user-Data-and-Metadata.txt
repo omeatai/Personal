@@ -1,0 +1,135 @@
+In this lesson, I'm going to cover easy two user data and metadata.
+
+So what are these two things?
+
+Instance metadata is data about your instance.
+
+It's available under this path.
+
+We've got 169254169254 slash latest slash metadata.
+
+And you can see it's an http URL.
+
+So for example, if I use the curl utility to access that path,
+
+it returns some of the available information
+
+like the AMI ID host name and so on.
+
+So I can then go a little bit further and run this curl
+
+command which goes to slash latest slash metadata slash local I PV four.
+
+And you can see here this is the I PV four address,
+
+OK? It's before the prompt by the way.
+
+So the way that the curl utility returns the information is before the prompt.
+
+So you gotta look back here for it. OK? I've highlighted it in red.
+
+In another example here, I'm looking for the public I PV four.
+
+So again at the beginning here before the prompt,
+
+I have the public address returned to me.
+
+Now there's two different versions of the instance metadata service
+
+V one and V two, V one is older and less secure
+
+V two is newer, more secure and requires a session token for authorization.
+
+The examples I just showed you were with Im Ds V one. I didn't have to authenticate.
+
+I just ran the curl command and it returned the information.
+
+Now, when you launch an EC2 instance,
+
+you can specify whether you want to enable V one or only V two.
+
+The default with the latest ami at the time of
+
+recording this video is that it defaults to V two.
+
+So you won't be able to run those curl commands.
+
+So the default launch settings may disable IM DS V one. It's not a bad thing.
+
+It's more it's for security. So we do want to leave those defaults for most purposes.
+
+We just need to specify a token.
+
+This is what it looks like when you're in the launch wizard.
+
+And you've gone down to enable advanced settings for EC2,
+
+you'll see the option metadata accessible.
+
+You can turn that off completely if you want to
+
+the and then we still have the version here. So V two only token required. OK?
+
+So you have to include a session token
+
+in all instance, metadata requests. Next up, we have user data.
+
+So user data is the ability to run code when the incident starts for the first time.
+
+It's basically like running a script.
+
+We can define the script in the user data field
+
+here or we can supply it at the command line interface
+
+and the code is going to run,
+
+we can also use batch and powershell scripts on Windows as well.
+
+So if you're launching Windows instances, you can still run user data.
+
+The example here is some code that's gonna run on a Linux instance to update patches
+
+and then install and start a web server.
+
+So in this case, we end up with an EC2 instance running a web server.
+
+So that's using the management console.
+
+As I mentioned, you can also do it via the cli.
+
+So here the user data is supplied by specifying the file
+
+in the CLI command.
+
+And this would be the script file or the contents of the script file,
+
+which we're then going to execute as the instance launches.
+
+So a little bit more information about user data,
+
+it must be base 64 encoded.
+
+This happens automatically when you're using the console and the cli user data
+
+is limited to 16 kilobytes in raw form before it's base 64 encoded.
+
+Now, user data only runs the first time you launch your instance,
+
+you can view the user data in the console.
+
+You can even stop your instance and edit the user data,
+
+but it still only runs the first time you launch your instance.
+
+So just bear that in mind.
+
+So user data is a way to run scripts when we start our instances.
+
+The first time metadata is the way that we
+
+can retrieve specific information about the instance itself and we
+
+can combine these two and we'll see that when we
+
+do hands on practice with user data and metadata.
