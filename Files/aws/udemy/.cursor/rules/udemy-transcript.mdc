@@ -1,5 +1,5 @@
 ---
-description: Extract Udemy transcript, write textbook docs from provided course images, and update 01.md TOC
+description: Get Udemy transcript and lecture stills (from notes/images or the course player), write textbook docs, and update 01.md TOC
 globs: udemy/**
 alwaysApply: false
 ---
@@ -8,21 +8,26 @@ alwaysApply: false
 
 When this rule is applied or the user provides a Udemy lecture URL (or has one open), do **all** of these every time:
 
-1. Save the **transcript** to `Personal/Files/aws/udemy/notes/`
-2. Use the **course images** the user placed in `Personal/Files/aws/udemy/images/<sequence>/`
+1. Get the **transcript** from `Personal/Files/aws/udemy/notes/` if it already exists; otherwise extract it from the Udemy player and save it there
+2. Get the **course images** from `Personal/Files/aws/udemy/images/<sequence>/` if that folder has stills; otherwise play the lecture in the browser and capture stills with **CodeSnap**
 3. Write **textbook documentation** to `Personal/Files/aws/udemy/md/`
 4. Add or update the lecture link on the landing page `Personal/Files/aws/01.md`
 
+Default course player: [https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/). Prefer a lecture URL the user gave (or an already-open tab). If you only have a sequence/title, open that player and click the matching item in **Course content**.
+
 Use `Personal/Files/aws/udemy/sample.md` for **writing style** (novice prose, `- [x]` bullets, exam-style Q&A). Do **not** copy its old collapsible **Terminal Commands** / **Code** layout. Do **not** write lecture content into `01.md`. `01.md` is only the landing page + table of contents. Manual archive is `Personal/Files/aws/old.md`.
 
-## A. Extract the transcript
+If a transcript fetch or image capture fails, **troubleshoot first** (login, wrong lecture, closed panel, player not started, CodeSnap command). If it still fails, **stop and tell the user** what you tried and what they need to do. Do not write a lecture page that invents figures or quotes a transcript you never saved.
 
-1. Navigate to the lecture URL (`browser_navigate`) or use the open tab.
-2. Snapshot the page (`browser_snapshot`).
-3. Open the **Transcript** panel if it is closed (transcript toggle / `data-purpose="transcript-toggle"`).
-4. Collect cue lines in order (`role: button` names between video controls and **Autoscroll**).
-5. Get the lecture title and **sequence number** from course content (example: `Play 2. The SAA-C03 Exam` -> `2`).
-6. Save `Personal/Files/aws/udemy/notes/<sequence>-<Hyphenated-Title>.txt`:
+## A. Get the transcript
+
+1. Look in `Personal/Files/aws/udemy/notes/` for `<sequence>-<Hyphenated-Title>.txt` (or the file the user attached). If it exists and has cue lines under the header, **use it** and skip the player scrape.
+2. If that file is missing or empty, open the lecture on Udemy (`browser_navigate` to the lecture URL, or the default `/learn/` player then the matching **Course content** row).
+3. Snapshot the page (`browser_snapshot`).
+4. Open the **Transcript** panel if it is closed (transcript toggle / `data-purpose="transcript-toggle"`).
+5. Collect cue lines in order (`role: button` names between video controls and **Autoscroll**).
+6. Get the lecture title and **sequence number** from course content (example: `Play 2. The SAA-C03 Exam` -> `2`).
+7. Save `Personal/Files/aws/udemy/notes/<sequence>-<Hyphenated-Title>.txt`:
 
 ```
 Lecture: <title>
@@ -34,16 +39,41 @@ URL: <url>
 
 Filename rules: spaces to `-`, keep readable Title-Case, drop special characters except hyphens.
 
-## B. Use the course images the user provides
+### Transcript errors
 
-Do **not** screenshot the Udemy video player. The lecture stream is DRM-encrypted; seek-preview frames are black or unusable.
+Retry once after a snapshot. Then tell the user, do not guess the lecture text:
+
+- Login / paywall / "Log in to continue": ask them to sign into Udemy in the Cursor browser and re-run.
+- Transcript toggle missing (article, quiz, practice test): say the lecture has no transcript panel.
+- Empty cue list with the panel open: scroll the transcript pane, wait for cues to load, retry; if still empty, stop.
+- Wrong lecture: confirm sequence + title in **Course content** before saving.
+
+## B. Get the course images
 
 1. Look in `Personal/Files/aws/udemy/images/<sequence>/`.
-2. Keep the user’s filenames (lecture 3 style: `1.png`, `2.png`, …).
-3. If that folder is missing or empty, **stop** and ask the user to drop the extracted course stills there before writing the lecture page.
-4. Use **every** image in that folder. Embed each one next to the transcript content it illustrates.
-5. From the lecture `.md` file in `udemy/md/`, the path is `../images/<sequence>/<filename>` (example: `../images/3/1.png`).
-6. Caption as **Figure N.** plus a short description of what the slide or UI actually shows. Do not invent extra figures that are not in the folder.
+2. If that folder has stills, **use them**. Keep the user’s filenames (lecture 3 style: `1.png`, `2.png`, …).
+3. If that folder is missing or empty, **do not stop**. Open the same lecture in the Udemy player (default `/learn/` URL or the lecture URL) and capture stills as follows.
+
+### Capture stills when the folder is empty
+
+Play the section video and snap each distinct slide, diagram, or console screen:
+
+1. Open the lecture, wait for the player, click **Play**. Pause on each new slide or UI (title card, diagram, AWS console, comparison table). Skip talking-head-only frames that add no diagram.
+2. Prefer **CodeSnap** (`CodeSnap 📸` / `codesnap.start`) to capture the visible lecture frame. Save each PNG as `Personal/Files/aws/udemy/images/<sequence>/N.png` (`1.png`, `2.png`, …).
+3. If CodeSnap cannot target the browser player, fall back to `browser_take_screenshot` of the **video player** (not the whole Udemy chrome). Save with the same `N.png` names.
+4. Discard black, blank, or duplicate frames. If a seek-preview is black, press Play, wait until the picture is visible, then pause and snap again.
+5. Use **every** saved image. Embed each one next to the transcript content it illustrates.
+6. From the lecture `.md` file in `udemy/md/`, the path is `../images/<sequence>/<filename>` (example: `../images/3/1.png`).
+7. Caption as **Figure N.** plus a short description of what the slide or UI actually shows. Do not invent extra figures that are not in the folder.
+
+### Image errors
+
+Troubleshoot, then tell the user if stills cannot be saved:
+
+- Player will not start: click the video, Play, wait for buffering; if a login modal appears, ask the user to sign in.
+- CodeSnap command missing or does nothing: fall back to `browser_take_screenshot` of the player and say you did.
+- Every frame is black after play + pause: DRM/seek preview failed; stop and ask the user to drop extracted stills in `udemy/images/<sequence>/`.
+- Wrong lecture playing: switch via **Course content** and recapture.
 
 Example for lecture 3:
 
@@ -171,7 +201,7 @@ Do not duplicate an existing TOC row. Do not put full lecture notes in `01.md`.
 
 ## Confirm
 
-Tell the user: transcript path + line count, doc path, figure list from `udemy/images/<sequence>/`, and that `01.md` was updated.
+Tell the user: transcript path + line count (and whether it came from `notes/` or was scraped from Udemy), doc path, figure list from `udemy/images/<sequence>/` (and whether those stills were already on disk or captured with CodeSnap / player screenshot), and that `01.md` was updated. If anything failed after troubleshooting, list that instead of pretending the lecture page is complete.
 
 ## Examples
 

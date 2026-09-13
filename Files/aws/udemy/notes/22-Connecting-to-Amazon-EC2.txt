@@ -1,0 +1,255 @@
+Welcome back in this lesson.
+
+I'm gonna show you how to connect to your EC2
+
+instances using the secure shell protocol and the RDP protocol.
+
+So you should have your Linux
+
+and Windows instance running in EC2 back in the EC2 management console.
+
+I've selected my Linux server. Now, we can see that we've got a public IP address
+
+and we've got a public IP DNS address as well.
+
+So if we want to, we can use those to connect from the outside world.
+
+Now, let's have a look at the various different ways that we can connect.
+
+If I click on connect with the instant selected,
+
+we can now use the easy two instance connect.
+
+That's what we're about to use or we can use session manager.
+
+This is using the systems manager service.
+
+It's one of the features of systems manager gives us
+
+a very secure way of connecting without opening any ports.
+
+We've then got the SSH client.
+
+So if you wanted to connect from your home computer, this is what you could use.
+
+You'd need your private key pair,
+
+uh your private key file that is so remember earlier on,
+
+we created a key pair and it downloaded a file to our computer.
+
+That's the private key file and it actually gives us the full command.
+
+So we can see the command is SSH dash.
+
+I, then the name of the PE M file, that's the file that was downloaded the key pair.
+
+So yours is gonna be different
+
+and then EC2 user,
+
+ec2 dash user at
+
+and then we've got the public DNS name or this could be the public IP address.
+
+That would be the full command that you
+
+would need to connect from your home computer.
+
+Now, I recommend if you're using Windows, you do install an SSH client.
+
+It is a feature of Windows.
+
+So you just have to Google how to do
+
+that for your particular version of the operating system.
+
+If you're on Mac, for example, you'll always have an SSH client installed,
+
+same with Linux.
+
+Now, what we're gonna use today is EC2 instance connects here.
+
+We're gonna connect using E two instance,
+
+connect the s the connection type on the left.
+
+The right hand, one is for where our instances are within a private subnet.
+
+And we have to create something called an endpoint first.
+
+But our instances have been launched into the default BBC,
+
+which by default has public subnets only.
+
+That means they have public addresses and we can
+
+connect to the instances directly from the internet.
+
+Now, the user name has been specified as EC2 dash user. That's correct.
+
+I'm gonna leave that
+
+as it is and let's click on connect.
+
+I'm now connected to the command line on my easy two instance, if I run something,
+
+like if config it shows me the IP addresses associated with the
+
+instance I should be able to ping google.com and get a response.
+
+And that proves that I can actually connect and then I
+
+have to hit control C by the way to stop that.
+
+Otherwise, it would just keep sending those ping requests over and over again.
+
+So that's good. That will work successfully.
+
+Now, if you do have any issues here,
+
+if a little red banner comes up saying it can't connect,
+
+there's two main things which you need to check.
+
+Firstly, you do need to have a public IP address.
+
+Secondly, your instance must have the port 22 open in its security group.
+
+So click on security port 22 with the source should be all zeros.
+
+That's any source address. That's what that actually means.
+
+OK?
+
+If you've got those two things selected,
+
+then instance connect should definitely work with the Amazon, Linux
+
+ami. OK? So that's Linux very, very easy to connect.
+
+And now we're free to manage this server from the command line.
+
+So next, let's move to Windows for Windows, we're gonna select the server,
+
+we're going to click on connect.
+
+The options are slightly different. Now,
+
+there is an option for session manager for remote powershell on the command line,
+
+but we're gonna use the RDP clients. So that's the remote desktop protocol.
+
+What we have to do here is we can download the remote desktop file
+
+and that's gonna download a file to our computer, which we can utilize
+
+or we can add the information directly for this exercise.
+
+You will need an RDP client. That's a bit of software on your computer.
+
+If you're using Windows, it's easy. There's always an RDP client installed.
+
+If you're using Mac like I am, then you have to download and install it.
+
+But you can find an RDP client on the internet. So just
+
+search for RDP client Mac and you'll be able to find some software to install.
+
+What I need to do is get the password for login.
+
+Ok. So we're gonna do that in just a moment.
+
+Firstly, I'm gonna copy the public DNS name.
+
+We can see that the user name is administrator.
+
+Ok. That's fine. Now, with my remote desktop software, I'm gonna click on add PC.
+
+Enter this as the PC name
+
+and click on add.
+
+Ok. So now it's ready to go.
+
+And what's gonna happen is I'm gonna connect and
+
+it's gonna ask for the user name and password.
+
+Now we need to go and retrieve the password first.
+
+So I'm just gonna cancel out here until I've got that information
+
+to retrieve the password. We click on get password
+
+and now we need to upload the private key file. So I've uploaded my private key file.
+
+That's the one that I downloaded in a previous lesson when we created that key pair.
+
+Ok,
+
+you can select the file and it's going to download all the contents for you.
+
+And then we can click on this option decrypt password
+
+and I can see the password. I know that the user name is administrator.
+
+So I'm just gonna copy the password
+
+and back in my ID P client.
+
+I'm going to double click, put in the administrator, user name,
+
+put in the password and then continue and let's continue again.
+
+And that should connect me to the desktop of the server.
+
+And there we go, I'm being logged into the desktop of a windows server on AWS.
+
+So here we are, we have the Windows desktop. This server is now ready to administer.
+
+Now, as with the Linux server, we need to have a certain port open for all this to work.
+
+So if it failed again, you can go back and check by clicking on your windows server,
+
+selecting security and checking that security group.
+
+And you need to make sure that you've got port 3389 open
+
+and the source has to be from anywhere. That's the remote desktop protocol.
+
+So that's basically it.
+
+We've now launched two virtual servers in the cloud running Windows and Linux
+
+and I've shown you how to connect to those instances so you can administer them.
+
+I finished with my Windows instance.
+
+So I'm gonna go ahead and terminate the instance.
+
+So up in the top menu here, you can choose instance state, you can stop instances.
+
+And that means you're not going to pay for the running compute and memory.
+
+You will still pay for the storage that's allocated to this server.
+
+You can reboot instances. And of course, you can terminate instances as well.
+
+And that essentially deletes them.
+
+When we click on terminate,
+
+we'll find that the instance changes to a terminated state fairly quickly
+
+and then it will stay in the console here for a while. Don't worry about it.
+
+It will disappear after a little while.
+
+The other thing that we can do in terms of administration under actions,
+
+there's a variety of other settings and we're gonna go through
+
+many more of these as we go through the course.
+
+But for now I'm leaving my Linux server running.
