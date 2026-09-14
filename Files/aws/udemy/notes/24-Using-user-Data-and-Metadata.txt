@@ -1,0 +1,409 @@
+OK. So the best way to learn is to get hands on.
+
+So let's play around with some user data and metadata on EC2.
+
+So you wanna be logged into the console.
+
+You also wanna open up this markdown file, you will find it in the course,
+
+download in the Amazon EC2 directory and it's called user data metadata dot MD.
+
+OK? So what we need to do first is go and launch instances.
+
+I'm gonna launch two instances.
+
+I'm gonna show you how to configure one that allows Im Ds version one
+
+and the other one which is gonna have the default setting,
+
+which does not allow Im Ds V one.
+
+So we have to use token based authentication. So let's see what all this means.
+
+Let's head over to EC2
+
+in EC2. I'm going to launch a couple of instances for the first one.
+
+I'm gonna give it a name so I can identify easily IM DS V one
+
+and I'm going to leave the default Linux 2023
+
+Ami or whatever the latest is for the Linux
+
+Ami from Amazon
+
+T two micro.
+
+I don't need a key pair and I wanna make sure that
+
+I have a security group that allows port 22 and port 80.
+
+OK?
+
+Port 22 for remote secure shell port 80 cos we're gonna run a web server a bit later on.
+
+In the exercise,
+
+I have one called web access. We'll check the port rules on that in a moment
+
+at the very bottom of the page here. Expand advanced details.
+
+We're gonna scroll right the way down
+
+until we see
+
+the metadata here. So we see metadata accessible.
+
+I do wanna have it enabled, but the default is V two only token required.
+
+So for V two requests,
+
+you must include the session token to all instance metadata requests.
+
+Now I'm gonna just flick it back so that I allow
+
+V one and V two and then the token is optional.
+
+And then I'm simply gonna launch this instance,
+
+I'll then do the same thing.
+
+But I'm gonna launch one with the default settings
+
+which will have V two only.
+
+So Im Ds V two as a label, same again, proceed about a key pair,
+
+use a security group and then that's it. This time, I'm not changing anything.
+
+It's gonna require token based authentication
+
+so I can just launch that instance
+
+coming back up. Let's just check our instances.
+
+I'm gonna go across to the security tab here and I can see my role.
+
+It's got a bunch of different ports from various testing I've been doing,
+
+but most importantly, it's got port 80 from any source and port 22 from any source.
+
+So this is gonna work for this lab.
+
+So just wanna give it a minute or two just to make sure the instance is up and running
+
+and then we're gonna connect using instance
+
+connect. So hopefully my first instance is ready to accept connections.
+
+I've selected it. Let's click on connect.
+
+We're gonna use the UE two instance connect here, click on connect again.
+
+I've got EC2 user as the user name.
+
+And here we are, I'm on the console through secure shell.
+
+So this is the first instance I launched,
+
+which will allow us to run these commands without the authentication token.
+
+So here are the commands.
+
+I'm gonna run the first one.
+
+So it's a curl command. So curl is basically a utility for making http connections.
+
+And then the 169254169254 local address for the metadata service.
+
+This one is going to retrieve the instance ID.
+
+So let's just pop that into
+
+the command line here.
+
+Now, the actual result is
+
+over here on the left hand side before the prompt.
+
+So we can see the instance ID is returned
+
+when I here to enter again, it just comes back to a normal prompt.
+
+I can do the same for AMI ID. Let's copy this one paste that in
+
+and my Ami ID gets returned in the left hand side here.
+
+So this is a very useful way of retrieving this information from our instance.
+
+Now you don't have to use the exact commands that I've shown you.
+
+If you back space back to metadata with a slash on the end,
+
+it's gonna return all of these different options.
+
+So for example, I could now add in, we've got one here that says placement.
+
+So I'll type in placement slash press enter
+
+and we can see it's returned the options under placement like availability zone.
+
+Let's put it in availability zone,
+
+availability dash zone. Make sure you put a slash on the end press enter.
+
+And right at the bottom of my screen here is us E one C.
+
+So it's retrieved the availability zone of the instance.
+
+So again, could be very useful information for us.
+
+So that's my instance that allows Im Ds version one.
+
+Let's now connect to the other instance,
+
+the IM DS V two only instance with the default settings that will not allow
+
+us to use these commands without an authentication token.
+
+So here we are, I'm on the instance.
+
+Let's come back and I'm just gonna copy one of these commands again.
+
+Maybe I'll try and get the
+
+instance type, put this in press enter and I get this message back.
+
+So it's telling me essentially unauthorized, we're not able to do that. All right,
+
+let's clear the screen. What do we need to do instead?
+
+What we need to do is firstly create a session
+
+and get a token. So that's this command here.
+
+Essentially we're configuring an environment variable,
+
+the environment variable will be token
+
+and the results of this command
+
+which is going to create a session and retrieve an authentication token
+
+is
+
+going to be stored as the environment variable.
+
+So we need to copy that entire line, copy that to my clipboard.
+
+I'll come back,
+
+I'll put it in press enter
+
+and that's actually achieved what I wanted it to.
+
+If I, for example, go echo dollar token,
+
+we can actually see the token that's being returned.
+
+It's being stored as this environment variable token.
+
+So now we have the token, let's use it in a command.
+
+What I'm gonna do is run this command to get the instance ID.
+
+It's very much like the one we ran earlier on.
+
+We got this curl command in here to retrieve the instance metadata information.
+
+Except what we're gonna do here is we have the dash H and we're supplying
+
+the authentication token here. So X aws E two metadata token
+
+is gonna correspond to the token that we have stored in this environment variable.
+
+So I can copy this entire command
+
+and let's try and run this one and it works. I get the instance ID right here.
+
+So we've done the authentication now,
+
+we can actually retrieve the information more securely than we did before.
+
+And you can do the same, of course, with the AMI ID here as well.
+
+So that's instant metadata, lots of information about our instance,
+
+what about user data?
+
+So user data is essentially like running a script when the instant
+
+starts for the first time and only for the first time.
+
+And what we can do is we can leverage metadata within user data.
+
+So here we have a script, this is a bash script.
+
+And with our user data, we always start with this,
+
+the shebang exclamation mark slash bin slash bash.
+
+That's the path to the interpreter,
+
+the bash interpreter that's gonna run the commands for us.
+
+So that's normal to have that there.
+
+After that, these items in green are just comments
+
+in the script and then these are the actual commands themselves.
+
+So here we're gonna run a yum update. So we're gonna update the latest patches.
+
+We're gonna install the Apache web service, http D
+
+we're gonna start and enable the web server.
+
+So it starts on boot, then we're utilizing metadata.
+
+So what's gonna happen with this script? It's gonna install a web server
+
+and it's gonna create a custom page and that custom page
+
+will include some information that's specific to that easy two instance
+
+because it's gonna be using metadata
+
+to retrieve the instance ID,
+
+the AMI id and the instance type and output that information onto the web page.
+
+Now, we can run this as user data,
+
+but I'll just show you you can run this as a script directly on the instance as well.
+
+So I'm gonna copy all of this information
+
+that's between um this enclosing bash with the, the free tick marks at the end
+
+and at the beginning.
+
+So just copy all of that information.
+
+We'll come back to the instance that's running with IM Ds V two. I'm gonna clear
+
+I'm gonna use Nano to create a script
+
+and I'll just unimaginatively call it script dot
+
+sh.
+
+And then let's save that.
+
+I need to make it executable. So I run ch mod plus X script
+
+and
+
+that should now have the permissions we need.
+
+OK. So it's now an executable script.
+
+So, what I need to do now is I'm gonna run it as pseudo.
+
+So I'll run pseudo dot slash script.
+
+And that's going to actually go ahead.
+
+You can see it's trying to install any updates
+
+that are missing on this particular Ami it's gonna install
+
+the Apache web service and then it's gonna create
+
+that custom web page with the metadata on it.
+
+Now that's finished. So let's come back to instances here.
+
+I'll select my IM DS V two instance, copy the public IP
+
+and let's paste this in. And let's see.
+
+And now we get this custom web page
+
+and it shows us the instance ID, the AMI ID
+
+and the instance type. So I just ran that directly on the instance as a script,
+
+user data is basically doing the same thing. What we're gonna do now is
+
+I'm gonna click on launch instances
+
+and just give us a label user data test.
+
+Again. I'm gonna leave mostly defaults don't need a keya
+
+do need a security group with port 80 open.
+
+So I'll choose my web access and now under advanced details,
+
+just go all the way to the bottom
+
+and we're gonna paste our user data in here.
+
+OK? So we have this box user data
+
+optional. So I'm gonna come back copy
+
+the exact same script,
+
+paste it exactly as it is in here and then click launch instance.
+
+And this is gonna have exactly the same effect.
+
+It's going to run through the script as the instance launches
+
+again. This only happens the first time the instance is run.
+
+Now, if I select the instance, you can actually come over to
+
+instant settings, edit user data.
+
+OK?
+
+But don't be fooled, you can't actually edit it in here while the instance is live,
+
+you can stop it and edit it, but it won't run.
+
+OK? But it's useful sometimes because you can view the information.
+
+So you wanna check, what was the user data I ran on this particular instance.
+
+So you can come in here and see it.
+
+OK?
+
+So I've given it a minute, it might take a bit longer,
+
+give this uh at least a minute or two
+
+just to boot up. Cos it does have to run that script as well.
+
+It's not a very complex script but uh it needs a little bit of time to boot.
+
+So I'm gonna see if mine is ready.
+
+Let's use the public IP address
+
+and it is.
+
+There we go.
+
+So we can see the instance ID,
+
+the AMI id
+
+and the instance type. So that is using metadata and user data together.
+
+Now I've finished with my instances.
+
+So I'm simply gonna come back and terminate all three instances.
