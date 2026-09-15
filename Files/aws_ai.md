@@ -1,5 +1,7 @@
 # AWS & AI by Ifeanyi Omeata
 
+[Back to Personal Page](../README.md)
+
 ## COURSES
 
 - [ ] [AWS CLOUD COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws)
