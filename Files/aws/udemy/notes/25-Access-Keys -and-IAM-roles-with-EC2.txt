@@ -1,0 +1,394 @@
+Lecture: Access Keys and IAM Roles with EC2
+URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/
+============================================================
+
+Hey guys and welcome to this lesson.
+
+So in this one,
+
+I'm going to talk about access keys and I am roles two different
+
+ways that we can actually supply permissions to Amazon E two instances.
+
+So let's see how this looks. So here we have an instance in a public subnet
+
+and AWS cli has been configured with access keys because we wanna work
+
+with an S3 bucket from the command line on this particular instance.
+
+Now the actual access keys are associated with an account.
+
+So whichever account created the access keys,
+
+that's the account they're associated with and they pick up the permissions
+
+assigned to any permissions policies assigned to that I am user.
+
+So essentially through this, I am user, we've created access keys,
+
+we've configured the command line interface on
+
+the instance with those access keys.
+
+So now whatever commands we run on that instance will
+
+have the same permissions as that user would have.
+
+So now we've found a way to give our instance permissions
+
+problem is when we use access keys,
+
+these are long term credentials and we wanna try and avoid using them as
+
+much as possible because if they're compromised
+
+and someone gets access to those keys,
+
+they get access essentially to our account
+
+and they are actually stored in plain text on the actual instance itself.
+
+So not really the most secure configuration
+
+instead,
+
+what we can do is we can utilize I AM rolls rolls have policies assigned to them.
+
+So now we can supply the permissions that we want our instance to have.
+
+There's no credentials stored on the instance.
+
+So we don't have that security exposure that we have with those access keys.
+
+Now,
+
+the instance is going to assume the role and gain
+
+the access permissions that it needs on the S3 bucket.
+
+OK? So two different ways of performing the same thing.
+
+But the second way, this way is more secure than using access key.
+
+So we wanna try and use this method whenever we can.
+
+One thing to note when we're using I AM rolls
+
+is it is utilizing the AWS security token service,
+
+Aws sts
+
+in order to gain credentials. So it's actually gaining essentially access keys.
+
+But those access keys have a much shorter expiration
+
+and the instance will automatically
+
+renegotiate with Sts and get some new credentials before they expire.
+
+So it's all happening automatically in the background.
+
+And those shorter term credentials are of course more secure than if we
+
+have the long term ones stored in plain text on the computer.
+
+So this is the best option we're gonna use these as much as possible.
+
+That's it for this. Lesson. I will see you in the next one.
+
+
+
+
+Hey guys in this lesson,
+
+we're going to work with access keys and I am roles on Amazon E two instances.
+
+So let's head over to the console back in the console here.
+
+I still have a Linux server running has a public
+
+IP address and I'm able to connect to this instance.
+
+So let's go ahead and connect using easy two instance connects.
+
+So I'm logged into the console. I can run commands on windows.
+
+Now,
+
+the great thing about the Amazon Linux 2023 AMI or one of
+
+the great things is it has the AWS command line interface already installed
+
+so I can run commands like AWS S3 LS.
+
+But when I do so
+
+I get this message unable to locate credentials.
+
+You can configure credentials by running aws configure.
+
+So it basically means we do not have any permissions.
+
+That makes sense. Even though I have permissions under my user account,
+
+Linux,
+
+the operating system does not have any permissions. That's a good thing.
+
+We don't want it to inherit permissions from us.
+
+In fact, we're actually logged in
+
+as a user called easy two user.
+
+That user account does not have too many permissions on.
+
+Linux certainly doesn't have any permissions to any Aws services.
+
+So, what we need to do is supply those permissions.
+
+Now, there's two ways of doing that. One is through access keys.
+
+That's when we use the Aws configure, the other is an I AM role.
+
+So let's head over to the I AM service and open that up in a new tab.
+
+And what I need to do to,
+
+to get some access keys. I'm gonna click on users,
+
+choose my user account,
+
+go to security credentials
+
+and then we're gonna come down here to where it says create access key.
+
+I'm gonna choose command line interface as the use case.
+
+And straight away you can see there's a bit of a warning here.
+
+There's better ways of doing this and there certainly are.
+
+This is not the recommended way to actually administer your servers or
+
+provide permissions to your servers so that they can access aws applications.
+
+The role is the better way
+
+for now. I'm ok with this because I just wanna demonstrate it to you.
+
+Let's click on next. I don't need a description and create access key.
+
+Now this information is displayed to you. Now
+
+you can retrieve the access key later on.
+
+You can only retrieve the secret access key now
+
+and optionally you can download it.
+
+This is very important information.
+
+This is essentially like a user name and password
+
+because anyone with this access key and secret access
+
+key are able to perform api actions in your
+
+account and they will inherit your user permissions.
+
+OK? So very dangerous. Watch out for that.
+
+Now, I'm gonna copy the access key come back to
+
+the server and I'm gonna run that AWS configure command.
+
+It's now gonna ask me for the access key ID,
+
+I'll paste it in.
+
+It's gonna ask for the secret access key.
+
+I'm gonna copy that come back,
+
+paste it in and then it wants the region name or the default region.
+
+I'm gonna set mine to us East one with
+
+dashes in between and press enter and enter again.
+
+So now let's try and rerun that command from earlier aws S3 LS
+
+and no response there. That actually means that we didn't get an error.
+
+That's good news. Ok? So that just means we now have permissions.
+
+In fact, I can run a service like AWS S3 MB to make a bucket.
+
+This will create a container.
+
+I'll call it my bucket and then make it unique with a bunch of random characters
+
+that creates a bucket which is basically like a folder that you can store data into.
+
+So now when I rerun that command,
+
+it actually comes back with a response and it shows me the buckets in my account.
+
+So that's just proven that we now have access to Aws services. Sounds good. However,
+
+there are some security problems here.
+
+If I change directory to this weird directory path,
+
+we can see and by the way that's the, the tilda
+
+slash dot aws.
+
+And now we can see these two files, config and credentials.
+
+Interesting. What's in those? I'm gonna use the cat utility.
+
+So cat config
+
+and in here we can see some of that information I entered when I ran Aws,
+
+configure the default region that we specified.
+
+But what about the other one, cat credentials? Oh, now I can see my access key
+
+and my secret access key. Remember, this is highly sensitive information.
+
+It's there on the hard drive of this computer.
+
+It's there in plain text for anyone who can get into this user account.
+
+If there was some kind of compromise of the server and they found this,
+
+they've now compromised your entire aws account.
+
+So it's not really very good.
+
+Here's what I'm gonna do.
+
+I'm gonna change directory upper level.
+
+Ok. So now we've got those two commands. Let me just clear screen.
+
+So now I'm back in my use directory.
+
+I am going to run RM dash RF tilda slash dot aws
+
+slash star.
+
+Ok. So let's remove those credentials.
+
+Let's rerun Aws S3 Ls.
+
+Ok. No credentials. They're gone. Now, let's do it the better way.
+
+Let's go back to I am and we're going to use a roll.
+
+Now, I've actually shown you my access keys, which is not very secure.
+
+Of course, because that's very sensitive information.
+
+So what we can do with our access keys is we can always deactivate them
+
+and after you've deactivated them,
+
+you can delete them.
+
+Ok? So now
+
+it's no use to anyone.
+
+So let's just copy this into the confirmation delete.
+
+Now, my account is secure again.
+
+So let's go to rolls. We're gonna create a roll for E two
+
+and
+
+here we're gonna choose the Aws service this time.
+
+So under use case with AWS service selected,
+
+I'm gonna type EC2, choose EC2
+
+and then I'll leave the default option.
+
+Click on next.
+
+Now, I need to supply some permissions.
+
+Let's provide S3 read only access.
+
+It's a useful permission to have. I'll call this 1 S3 read only
+
+and then it's just scroll down.
+
+We can see a couple of things here. So the trust policy very important.
+
+Remember, the trust policy with a role defines who is allowed to assume the role,
+
+who is able to perform this action, sts assumed role who or what?
+
+In this case, it's
+
+a service.
+
+So it's the principle is a service and it's E two.
+
+And when EC2 assumes this role, they will, it will gain these permissions.
+
+So let's create the role that's done.
+
+Now, we need to go back to EC2. Select the instance,
+
+go to actions,
+
+security
+
+and modify. I am roll.
+
+Now, the roles that appear here are the ones that have that trust policy.
+
+So we've just got the one at the moment S3 read only. Choose that option,
+
+select update I am roll and that's done. That should take instant effect.
+
+Let's rerun that command
+
+and now we get our bucket returned. So now we have credentials again. But guess what?
+
+There's nothing on the hard drive of this computer
+
+that, that directory with the credentials in does not exist anymore.
+
+I deleted those files. They're gone.
+
+My
+
+hard drive is secure.
+
+There's no plain text data stored in here for
+
+credentials that will essentially supply people access to my account
+
+so much better to use rolls which leverage those
+
+temporary credentials which don't get stored on the computer.
+
+Ok. So that's it for this lesson.
+
+I will leave that role where it is because it is useful.
+
+Sometimes we'll use it in other labs,
+
+but I'm finished with this particular Linux server.
+
+So I'm going to terminate this instance
+
+and that's it. We're all cleaned up.
