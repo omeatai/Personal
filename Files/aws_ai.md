@@ -11,19 +11,6 @@
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
 - [ ] [**-- LAB 1 --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
-- [ ] [Aws certified cloud practitioner](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+cloud+practitioner)
-- [ ] [Aws certified ai practitioner](https://www.udemy.com/courses/search/?q=aws+certified+ai+practitioner&src=sac&kw=AWS+Certified+AI+Pra)
-- [ ] [Aws certified solutions architect associate](https://www.udemy.com/courses/search/?q=aws+certified+solutions+architect+associate&src=sac&kw=aws+certified+solutions)
-- [ ] [Aws certified developer associate](https://www.udemy.com/courses/search/?q=aws+certified+developer+associate&src=sac&kw=AWS+certified+Developer)
-- [ ] [Aws certified cloudOps Engineer](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+cloudOps+Engineer)
-- [ ] [Aws certified machine Learning Engineer](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+machine+Learning+Engineer)
-- [ ] [Aws certified data Engineer](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+data+Engineer)
-- [ ] [Aws certified solutions architect professional](https://www.udemy.com/courses/search/?q=aws+certified+solutions+architect+professional&src=sac&kw=aws+certified+solutions+architect)
-- [ ] [Aws certified devops Engineer](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+devops+Engineer)
-- [ ] [Aws certified generative ai developer](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+generative+ai+developer)
-- [ ] [Aws certified security specialty](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+security+specialty)
-- [ ] [Aws certified advanced networking](https://www.udemy.com/courses/search/?src=ukw&q=aws+certified+advanced+networking)
-- [ ] [AWS certified machine learning specialty](https://www.udemy.com/courses/search/?src=ukw&q=AWS+certified+machine+learning+specialty)
 
 ## AWS LABS COURSES
 
