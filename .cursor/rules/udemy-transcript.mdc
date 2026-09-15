@@ -12,6 +12,7 @@ When this rule is applied or the user provides a Udemy lecture URL (or has one o
 2. Get the **course images** from `Personal/Files/aws/udemy/images/<sequence>/` if that folder has stills; otherwise play the lecture in the browser and capture stills with **CodeSnap**
 3. Write **textbook documentation** to `Personal/Files/aws/udemy/md/`
 4. Add or update the lecture link on the landing page `Personal/Files/aws/01.md`
+5. **Git commit** the lecture files in the `Personal` repo (see **E. Commit**) so the user can `git push` without committing themselves
 
 Default course player: [https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/). Prefer a lecture URL the user gave (or an already-open tab). If you only have a sequence/title, open that player and click the matching item in **Course content**.
 
@@ -199,9 +200,27 @@ N. [Lecture Title](udemy/md/N-Hyphenated-Title.md)
 
 Do not duplicate an existing TOC row. Do not put full lecture notes in `01.md`.
 
+## E. Commit (every request / task)
+
+At the **end of every request** that applies this rule (a new lecture page, a redo, a rule tweak, or any other task under this rule), create a **git commit** in `Personal` (`C:/Users/omeat/Downloads/GITHUB/Personal`). The user will **push**. Do **not** `git push` unless they ask.
+
+1. Run `git status`, `git diff`, and `git log -8 --oneline` in `Personal` before staging.
+2. Stage only the files this task changed (typically `Files/aws/udemy/notes/`, `Files/aws/udemy/images/<sequence>/`, `Files/aws/udemy/md/`, `Files/aws/01.md`, and this rule file). Do **not** stage `.env`, credentials, or unrelated dirty files.
+3. Commit with a **HEREDOC** message (no `git commit -i`, no `--no-verify`, no amend, no git config).
+4. Run `git status` after the commit and tell the user the **commit hash + message**.
+
+### Commit message
+
+Use the **section / lecture topic**, not a generic `Updates` message. Match existing style in this repo (`24-Using-user-Data-and-Metadata`):
+
+- Lecture docs: `N-Hyphenated-Title` (same as the `.md` filename without extension). Example: `25-Access-Keys-and-IAM-Roles-with-EC2`
+- Non-lecture work under this rule (this file, TOC-only, tooling): a short topic slug or imperative line. Example: `udemy-transcript-auto-commit`
+
+If the working tree is already clean, skip the commit and say so. If the lecture page was not written because transcript/images failed, **do not** commit a partial invented page.
+
 ## Confirm
 
-Tell the user: transcript path + line count (and whether it came from `notes/` or was scraped from Udemy), doc path, figure list from `udemy/images/<sequence>/` (and whether those stills were already on disk or captured with CodeSnap / player screenshot), and that `01.md` was updated. If anything failed after troubleshooting, list that instead of pretending the lecture page is complete.
+Tell the user: transcript path + line count (and whether it came from `notes/` or was scraped from Udemy), doc path, figure list from `udemy/images/<sequence>/` (and whether those stills were already on disk or captured with CodeSnap / player screenshot), that `01.md` was updated, and the **git commit hash + message** (or that there was nothing to commit). If anything failed after troubleshooting, list that instead of pretending the lecture page is complete.
 
 ## Examples
 
@@ -210,3 +229,4 @@ Tell the user: transcript path + line count (and whether it came from `notes/` o
 - Transcript: `udemy/notes/3-Hands-On-Practice-Free-Tier-vs-Sandbox.txt`
 - Docs: `udemy/md/3-Hands-On-Practice-Free-Tier-vs-Sandbox.md`
 - Figures: `udemy/images/3/1.png` … `4.png`
+- Commit: `25-Access-Keys-and-IAM-Roles-with-EC2`
