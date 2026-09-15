@@ -6,13 +6,13 @@
 - [ ] [AWS SERVERLESS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
 - [ ] [AI COURSES](https://www.udemy.com/courses/search/?src=ukw&q=ai)
 
-## AWS CERTIFIED COURSES
+## AWS CERTIFIED CLOUD COURSES
 
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
 - [ ] [**-- LAB 1 --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
 
-## AWS LABS COURSES
+## AWS SERVERLESS LABS COURSES
 
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
