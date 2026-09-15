@@ -2,9 +2,9 @@
 
 ## COURSES
 
-- [ ] [AWS CERTIFIED](https://www.udemy.com/courses/search/?src=ukw&q=aws)
-- [ ] [AWS LABS](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
-- [ ] [AI](https://www.udemy.com/courses/search/?src=ukw&q=ai)
+- [ ] [AWS CLOUD COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws)
+- [ ] [AWS SERVERLESS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
+- [ ] [AI COURSES](https://www.udemy.com/courses/search/?src=ukw&q=ai)
 
 ## AWS CERTIFIED COURSES
 
