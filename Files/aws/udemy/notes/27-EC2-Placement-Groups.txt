@@ -1,0 +1,291 @@
+Hey guys,
+
+in this video,
+
+we're gonna cover EC2 placement groups.
+
+Now there are 3 different types of placement group,
+
+and this is about the way that we deploy our instances across availability zones.
+
+The first one
+
+is called a cluster placement group.
+
+This packs instances close together for low latency,
+
+so you have
+
+essentially faster communications between your instances.
+
+It also gives very high net.
+
+throughput,
+
+so we've got fast
+
+networks,
+
+low latency between our instances.
+
+This is best used with elastic network adapters
+
+and elastic fabric adapters for high-performance computing
+
+and machine learning clusters and similar workloads.
+
+It works best when all instances are actually launched at the same time.
+
+So let's see what this one looks like with a cluster placement group,
+
+we're deploying our instances
+
+here within and.
+
+Availability zone.
+
+Now the instances can be in multiple subnets,
+
+but they have to be within the same AZ and that's how using the enhanced networking,
+
+we can get the high throughput and low latency
+
+between the instances,
+
+so inter instance traffic.
+
+The next type of placement group is a partition placement group.
+
+The idea here is it splits our instances into
+
+different partitions to keep them on separate hardware.
+
+OK,
+
+so we're trying to reduce correlation here
+
+when it comes to failures of underlying hardware.
+
+It reduces the risk of failure across the entire group of instances,
+
+good for large,
+
+spread out workloads like Hadoop,
+
+HDFS or Cassandra.
+
+You control how many partitions you want to use.
+
+Now,
+
+each partition is located on a separate AWS rack.
+
+So here we have partition one,
+
+we have some instances,
+
+they're on
+
+a particular rack in the AWS data center.
+
+Partition 2 is on a separate AWS rack,
+
+and
+
+they can be a.
+
+Across availability zones and subnets as well.
+
+So the partitions can be in multiple AZs and you can have up to 7
+
+of these partitions per availability zone.
+
+The last type is the spread placement group.
+
+This places every individual instance on separate hardware,
+
+so not just
+
+at a group level as per the partition
+
+where you have multiple instances within the partition,
+
+they're all on one particular AWS rack.
+
+Now,
+
+every single instance is on separate hardware,
+
+so we.
+
+Further reducing any kind of correlation of failures from the hardware level.
+
+This gives the highest failure isolation.
+
+It's best for small numbers of critical instances.
+
+You get a max of 7 instances per availability zone.
+
+So coming back to a diagram,
+
+we have our instances deployed across multiple availability zones,
+
+and each of these instances
+
+is deployed onto a separate AWS rack.
+
+Now let's compare these side by side,
+
+so.
+
+At the top of this table here on the left,
+
+we've got the goal.
+
+So the goal with a cluster placement group is lowest latency and high throughput.
+
+So especially for HBC as it says down there under use cases,
+
+big data and high speed applications,
+
+so where we need low latency and high bandwidth.
+
+For partition placement groups,
+
+the goal here
+
+is to isolate groups of instances,
+
+and with spread,
+
+we want to even further maximize the instance isolation
+
+from the underlying hardware.
+
+For AZ scope,
+
+we've got.
+
+Single AZ with cluster,
+
+multi AZ is allowed for both partition and spread.
+
+For subnet use,
+
+the cluster
+
+placement group can use multiple subnets,
+
+but they must be
+
+in the same availability zone,
+
+whereas with partition and spread,
+
+we have multiple subnets and multiple AZs.
+
+Hardware isolation with the cluster placement group is low,
+
+so if the hardware,
+
+the underlying hardware fails,
+
+you can expect a large number of instances to go out.
+
+It's medium with a partition placement group because each partition is.
+
+On a separate AWS rack and it's highest with the spread placement group because
+
+every
+
+instance is on a separate AWS rack,
+
+so one instance per rack.
+
+So use cases for cluster,
+
+again,
+
+HBC big data,
+
+high-speed applications.
+
+With partition placement groups,
+
+it's things like large distributed systems
+
+like HDFS or Cassandra database.
+
+With spread,
+
+it's critical workloads that cannot fail together.
+
+So we wanna make sure that if uh some hardware fails,
+
+it does not affect the.
+
+Remaining instances.
+
+For instance limits,
+
+there's no particular
+
+limits with cluster placement group.
+
+With partition,
+
+it's up to 7 partitions per AZ
+
+and we spread it's 7 instances per AZ.
+
+Now,
+
+the risk of correlated failure is,
+
+of course,
+
+much higher with cluster placement groups.
+
+With partition,
+
+it's lower,
+
+and then the lowest is spread.
+
+So based on this knowledge,
+
+let's connect some different use cases
+
+to the different types of placement group.
+
+So,
+
+for example,
+
+if we have a use.
+
+Case where we need to deploy a
+
+tightly coupled application that requires low latency,
+
+high throughput network traffic between instances,
+
+of course,
+
+that would be the cluster placement group.
+
+For a distributed and replicated noSQL database
+
+that requires separate hardware for node groups,
+
+partition placement group would be ideal.
+
+And then lastly,
+
+for a small number of critical instances that must be kept
+
+separate from each other,
+
+of course,
+
+a spread placement group would be ideal for that use case.

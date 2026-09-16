@@ -12,7 +12,7 @@
 
 Amazon EC2 tells you two different stories about a running instance. **Status checks** answer “is this instance actually able to run my application?” **Monitoring** answers “how is it performing?”
 
-Status checks live on the instance’s **Status and alarms** tab. There are two of them. A **system status check** watches the AWS-owned host: the hypervisor, the physical server, and the network layer underneath your VM. An **instance status check** watches *your* guest: the operating system and the instance’s own network stack. AWS owns the first kind of failure. You own the second.
+Status checks live on the instance’s **Status and alarms** tab. There are two of them. A **system status check** watches the AWS-owned host: the hypervisor, the physical server, and the network layer underneath your VM. An **instance status check** watches _your_ guest: the operating system and the instance’s own network stack. AWS owns the first kind of failure. You own the second.
 
 **Monitoring** is Amazon CloudWatch. Basic EC2 metrics (CPU, network) are collected automatically and shown on the instance **Monitoring** tab. **Basic monitoring** is free at **5-minute** granularity. **Detailed monitoring** is paid and gives **1-minute** data. Memory, swap, disk, and process metrics are **not** in that default set — you install the **CloudWatch agent** if you need them. You can also open the CloudWatch console, browse **EC2** per-instance metrics and **EBS** per-volume metrics, and attach **alarms** that notify you or take action when a check fails.
 
