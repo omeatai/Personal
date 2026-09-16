@@ -1,0 +1,349 @@
+Lecture: Status Checks and Monitoring
+URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/
+============================================================
+
+Hey guys,
+
+in this lesson we're gonna have a look at status checks and monitoring for EC2.
+
+I'm in the EC2 management console and I have an instance running.
+
+You know how to launch an instance,
+
+so if you want to follow along,
+
+just launch an EC2 instance with the default settings like a
+
+Amazon Linux 2023 AMI
+
+and put it into the default VPC.
+
+What we're really doing here is having a look at a couple of the tabs here.
+
+We've got status and alarms and then monitoring.
+
+So status on alarms,
+
+what we have in here is we have the status checks.
+
+Now note there's two different types of status checks.
+
+We've got system status
+
+and instant status.
+
+OK,
+
+so status checks are gonna detect problems that
+
+might impair your instance from running your applications.
+
+What's the difference though
+
+between system and instance?
+
+So system status checks,
+
+think of this as the underlying.
+
+Instances or the underlying infrastructure on which your instances are running.
+
+So that is things which are inside the control of AWS,
+
+not necessarily you as a customer on AWS.
+
+So systems data checks might mean that the underlying hypervisor or
+
+the host on which the instances are running has some.
+
+Kind of problem or maybe the network layer has some kind of problem.
+
+That's something which AWS needs to resolve.
+
+Instant status checks,
+
+on the other hand,
+
+is checking that the OS is running and the networking is running for your instance.
+
+So if you have a failure in your network stack for some reason,
+
+then your instant status checks may become impaired.
+
+Those are problems which are inside your control as an AWS customer.
+
+Now note that you can actually view the history here,
+
+so there's not really any history,
+
+everything is fine with this instance,
+
+uh but you'll be able to have a look at the system.
+
+Uh,
+
+status checks and the instant status checks here.
+
+And then also alarms if there are associated alarms,
+
+and that's because we can create alarms
+
+for those status checks so that we could then trigger an action
+
+if the instance became impaired in some way.
+
+OK,
+
+so that's status checks
+
+and alarms for status checks.
+
+And then we've got monitoring.
+
+So in monitoring,
+
+what you can see here
+
+is you can see some metrics straight away,
+
+so.
+
+AWS is gathering this information,
+
+your instance is sending this information to Cloudwatch and
+
+it's being surfaced in the console here within EC2.
+
+Now there's an option here where you can actually configure the cloudwatch agent
+
+and you can manage detailed monitoring.
+
+Now detailed monitoring means that you're going to get
+
+more granular monitoring information,
+
+so data available in 1 minute periods rather than 5.
+
+And you have to pay for that,
+
+whereas with the basic monitoring you don't.
+
+Now with the Cloudwatch agent,
+
+you would be able to configure some additional
+
+metrics.
+
+So I'll just show you quickly on that.
+
+We're not gonna do it in this lesson,
+
+um,
+
+but for example,
+
+if I just move through here and I have
+
+actually attached a role that has the right permissions,
+
+so I can continue through this wizard,
+
+but that's not something we're actually doing here.
+
+I just want to show you
+
+in the console,
+
+what you see here.
+
+So
+
+with Cloudwatch Agent,
+
+we can gather more information,
+
+for example,
+
+we can gather memory information.
+
+Now that's not available by default
+
+through the standard
+
+cloudwatch checks that happen from the operating system using
+
+basic monitoring or detailed monitoring for that matter.
+
+So it does give us some additional metrics
+
+if we're using that cloudwatch agent's CPU information,
+
+we already get some of that,
+
+but there's additional options in here
+
+in terms of what data you can collect.
+
+So that's if you wanna configure the cloudwatch agent.
+
+So you don't have to do that.
+
+By default,
+
+there are a series of metrics.
+
+We've got the CPU utilization,
+
+networking,
+
+uh,
+
+and then we've got some,
+
+there should be some storage data as well.
+
+We'll go over the cloudwatch and we'll see that for EBS.
+
+Uh,
+
+but in here we're seeing the instant,
+
+so the EC2 metrics,
+
+and then we'll also find.
+
+Some EBS metrics for the data volumes as well.
+
+So let's do that now,
+
+let's head across to cloudwatch.
+
+So I'll just open that up in a new console window here.
+
+And on the left-hand side,
+
+if we come down to metrics,
+
+all metrics,
+
+and I can now see several services mentioned,
+
+now this is dependent on the services you're actually
+
+using that have actually sent metrics to Cloudwatch,
+
+so your screen may look different to mine.
+
+But we can see EC2 and EBS.
+
+So if I go into EC2
+
+and then I can choose per instance metrics,
+
+or I can choose to sort by auto scaling group,
+
+in this case my instance is not in an auto scaling group,
+
+so I'm gonna choose per instance metrics.
+
+And then
+
+I can see
+
+the instance ID here,
+
+so it's 2BA.
+
+Let's just check,
+
+is that my instance here?
+
+Instance ID is 177.
+
+So what I can probably do is come back and actually search.
+
+And find
+
+the metrics associated with this particular instance,
+
+here we go.
+
+And then I can plot some data
+
+on the graph here.
+
+And as you can see,
+
+this is all CPU information here and then we've got
+
+here we've got the EBS metrics that I mentioned.
+
+So EBS read and write,
+
+uh,
+
+and so on,
+
+and then networking.
+
+So those are the metrics associated with EC2.
+
+Again,
+
+if we wanted to sort instead by,
+
+and then we just remove this.
+
+Now if we wanted to instead head up a level and then go to EBS.
+
+So we've got the data for EBS here,
+
+now we've got per volume metrics.
+
+So now you would actually be able to
+
+look for
+
+the individual EBS volumes associated with EC2 here.
+
+So,
+
+for example,
+
+if I come down to EBS volumes
+
+here,
+
+I've got a volume ID.
+
+So if I just copy that to my clipboard,
+
+and then
+
+coming back to cloudwatch,
+
+search,
+
+and there we go,
+
+we can see the metro.
+
+For this particular volume that's attached to my EC2 instance.
+
+So that's it for this video.
+
+You've seen status checks,
+
+so that's more about
+
+making sure that the instance is up and running and
+
+the underlying infrastructure on which it runs is operating correctly
+
+and then monitoring is where we've got the specific metrics that
+
+we want to monitor to check the performance of our instance.
+
+And also then we can associate cloudwatch alarms if we
+
+wish to that might trigger notifications or other actions.
