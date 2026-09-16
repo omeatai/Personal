@@ -195,11 +195,11 @@ There is **no console lab** in this lecture. Placement groups are created in the
 
 ### Study check (no AWS account required)
 
-| If the question says… | Pick |
-| --- | --- |
-| Single AZ, ENA/EFA, HPC or ML, launch together | **Cluster** |
+| If the question says…                                             | Pick          |
+| ----------------------------------------------------------------- | ------------- |
+| Single AZ, ENA/EFA, HPC or ML, launch together                    | **Cluster**   |
 | Separate racks for **groups** of nodes, up to 7 partitions per AZ | **Partition** |
-| **Each** instance on a separate rack, max 7 instances per AZ | **Spread** |
+| **Each** instance on a separate rack, max 7 instances per AZ      | **Spread**    |
 
 </details>
 
