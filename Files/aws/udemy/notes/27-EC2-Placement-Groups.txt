@@ -1,3 +1,7 @@
+Lecture: EC2 Placement Groups
+URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/
+============================================================
+
 Hey guys,
 
 in this video,
