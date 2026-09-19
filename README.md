@@ -1,9 +1,9 @@
 # Ifeanyi Omeata | Cloud | Network | Software Engineer | Cybersecurity
 
-<img width="792" height="732" alt="image" src="https://github.com/user-attachments/assets/ef911993-3304-4b6b-a220-fa8ed9ce360a" />
-
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
+
+<img width="507" height="532" alt="image" src="https://github.com/user-attachments/assets/fdc780c6-6784-4805-b004-3519a1a886c9" />
 
 <details>
   <summary>🧑‍💻 About Me</summary>
