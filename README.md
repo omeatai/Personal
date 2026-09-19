@@ -1,11 +1,13 @@
 # Ifeanyi Omeata | Cloud | Network | Software Engineer | Cybersecurity
 
-<details>
-  <summary>🧑‍💻 About Me</summary>
-
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
+      
+<img width="1181" height="757" alt="image" src="https://github.com/user-attachments/assets/0c684fe5-9b71-4db6-86ee-27725733fef8" />
 
+<details>
+  <summary>🧑‍💻 About Me</summary>
+  
 Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabilities in Cloud Engineering, Cybersecurity, Networking and Software Development. I specialize in designing, securing, and optimizing modern environments while ensuring reliability, compliance, and excellent user experience across systems.
 
 🔐 Network Engineering & Cybersecurity
