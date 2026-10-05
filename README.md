@@ -10,18 +10,39 @@
 
 Hi, my name is Ifeanyi. I am an engineer working across cloud, cybersecurity, networking, software, and AI. I build and secure infrastructure on AWS and Azure, design and troubleshoot enterprise networks, and ship applications and APIs — including LLM features — that stay reliable, compliant, and clear to use.
 
-Software & AI
-I design and ship applications in JavaScript, TypeScript, Java, and Python. Interfaces are built in React and React Native, often starting in Figma. Services and APIs are built with Node, Java, and Django REST Framework, with security treated as part of the product. I add AI where it earns its place: LLM features on OpenAI-compatible APIs, LangChain, and retrieval over vector stores such as Supabase.
+💻 Software & AI
 
-Cloud
-I build and run infrastructure on AWS and Azure: EC2, VPC, S3, Lambda, IAM, Microsoft Entra ID (Azure AD), and the networking that connects them. Identity gets particular attention — roles, policies, RBAC, MFA, and conditional access — because scale without access control is just a larger problem. I harden environments and automate the paths that should be repeatable.
+- [ ] ⚡Design and ship applications in JavaScript, TypeScript, Java, and Python.
+- [ ] ⚡Build interfaces in React and React Native, often starting in Figma.
+- [ ] ⚡Develop services and APIs with Node, Java, and Django REST Framework, with security treated as part of the product.
+- [ ] ⚡Add AI where it earns its place: LLM features on OpenAI-compatible APIs, LangChain, and retrieval over vector stores such as Supabase.
 
-Network & Cybersecurity
-I design, configure, and troubleshoot LAN/WAN environments — VLANs, routing, switching, firewalls, DNS, DHCP, and VPNs — and I stay with them after they go live. Monitoring, packet analysis, and written change records are how I keep performance high and surprises low. I detect threats and respond to incidents with Splunk, assess exposure through penetration testing and vulnerability work with Nmap, Nessus, and Metasploit, and map that work to NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS. When something looks wrong, I investigate it with forensic methods.
+☁️ Cloud
 
-Open to remote, hybrid, and on-site opportunities. If you are building something that has to be fast, trusted, and maintainable, I would like to hear about it.
+- [ ] ⚡Build and run infrastructure on AWS and Azure: EC2, VPC, S3, Lambda, IAM, Microsoft Entra ID (Azure AD), and the networking that connects them.
+- [ ] ⚡Give identity particular attention — roles, policies, RBAC, MFA, and conditional access — because scale without access control is just a larger problem.
+- [ ] ⚡Harden environments and automate the paths that should be repeatable.
 
-Networking · AWS · Azure · IAM · Splunk · Incident Response · React · Node · Python · Django · Java · LangChain · OpenAI · NIST · ISO 27001 · PCI-DSS · HIPAA
+🔐 Network & Cybersecurity
+
+- [ ] ⚡Design, configure, and troubleshoot LAN/WAN environments — VLANs, routing, switching, firewalls, DNS, DHCP, and VPNs — and stay with them after they go live.
+- [ ] ⚡Use monitoring, packet analysis, and written change records to keep performance high and surprises low.
+- [ ] ⚡Detect threats and respond to incidents with Splunk.
+- [ ] ⚡Assess exposure through penetration testing and vulnerability work with Nmap, Nessus, and Metasploit.
+- [ ] ⚡Map that work to NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS, and investigate what looks wrong with forensic methods.
+
+🛠️ Skills & Tools
+
+- [ ] ✅Networking: Routing & Switching, VLANs, Firewalls, DNS, DHCP, VPNs, Packet Analysis
+- [ ] ✅Cloud: AWS, Azure, EC2, VPC, IAM, S3, Lambda, Cloud Networking
+- [ ] ✅Cybersecurity: Threat Detection, Incident Response, Pen Testing, SIEM (Splunk), Vulnerability Management
+- [ ] ✅Software & AI: JavaScript, TypeScript, Java, React, Node, Python, Django, LangChain, OpenAI
+- [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
+- [ ] ✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
+- [ ] ✅Customer Support: Zendesk, Jira, Trello, CRM Platforms, Ticketing Systems
+
+🚀 Let’s Connect!
+🔍 Open to remote, hybrid, and on-site opportunities. If you are building something that has to be fast, trusted, and maintainable, I would like to hear about it.
 
 Cyber Security Analyst, SOC, GRC, IR & Forensics
 Lighthouse Labs
