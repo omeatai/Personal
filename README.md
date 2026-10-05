@@ -7,43 +7,26 @@
 
 <details>
   <summary>🧑‍💻 About Me</summary>
-  
-Hi, I'm Ifeanyi — a driven and solutions-oriented Engineer with strong capabilities in Cloud Engineering, Cybersecurity, Networking and Software Development. I specialize in designing, securing, and optimizing modern environments while ensuring reliability, compliance, and excellent user experience across systems.
 
-🔐 Network Engineering & Cybersecurity
+Hi, my name is Ifeanyi. I am an engineer working across cloud, cybersecurity, networking, software, and AI. I build and secure infrastructure on AWS and Azure, design and troubleshoot enterprise networks, and ship applications and APIs — including LLM features — that stay reliable, compliant, and clear to use.
 
-- [ ] ⚡Designed, configured, and troubleshot LAN/WAN, VLANs, routing, switching, and firewall rules to ensure secure, high-performance network operations.
-- [ ] ⚡Performed network monitoring, packet analysis, and traffic diagnostics using enterprise-grade tools.
-- [ ] ⚡Improved network reliability through structured documentation, change management, and proactive issue resolution.
-- [ ] ⚡Conducted threat detection, SIEM monitoring, and incident response using Splunk and network security tools.
-- [ ] ⚡Performed penetration testing and vulnerability assessments with Nmap, Nessus, and Metasploit.
-- [ ] ⚡Ensured compliance with NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, and other governance frameworks.
-- [ ] ⚡Investigated digital evidence and suspicious activity using forensic methodologies.
+Software & AI
+I design and ship applications in JavaScript, TypeScript, Java, and Python. Interfaces are built in React and React Native, often starting in Figma. Services and APIs are built with Node, Java, and Django REST Framework, with security treated as part of the product. I add AI where it earns its place: LLM features on OpenAI-compatible APIs, LangChain, and retrieval over vector stores such as Supabase.
 
-☁️ Cloud Engineering
+Cloud
+I build and run infrastructure on AWS and Azure: EC2, VPC, S3, Lambda, IAM, Microsoft Entra ID (Azure AD), and the networking that connects them. Identity gets particular attention — roles, policies, RBAC, MFA, and conditional access — because scale without access control is just a larger problem. I harden environments and automate the paths that should be repeatable.
 
-- [ ] ⚡Built and managed cloud infrastructures on AWS and Azure, including EC2, VPC, S3, IAM, Azure AD, and advanced networking architectures.
-- [ ] ⚡Configured and administered IAM roles, policies, RBAC, MFA, conditional access, and secure identity governance across cloud environments.
-- [ ] ⚡Implemented secure cloud access controls, automation workflows, and environment hardening for highly scalable and resilient deployments.
+Network & Cybersecurity
+I design, configure, and troubleshoot LAN/WAN environments — VLANs, routing, switching, firewalls, DNS, DHCP, and VPNs — and I stay with them after they go live. Monitoring, packet analysis, and written change records are how I keep performance high and surprises low. I detect threats and respond to incidents with Splunk, assess exposure through penetration testing and vulnerability work with Nmap, Nessus, and Metasploit, and map that work to NIST, MITRE ATT&CK, ISO 27001, and PCI-DSS. When something looks wrong, I investigate it with forensic methods.
 
-📌Software Engineering
+Open to remote, hybrid, and on-site opportunities. If you are building something that has to be fast, trusted, and maintainable, I would like to hear about it.
 
-- [ ] ⚡Designed and deployed scalable applications using JavaScript, TypeScript, Java, Python, React, Node, Django, and REST APIs.
-- [ ] ⚡Built user-centric interfaces with React, React Native, and Figma.
-- [ ] ⚡Developed secure backend services and APIs using Node, Java, and Django REST Framework.
+Networking · AWS · Azure · IAM · Splunk · Incident Response · React · Node · Python · Django · Java · LangChain · OpenAI · NIST · ISO 27001 · PCI-DSS · HIPAA
 
-🛠️ Skills & Tools
-
-- [ ] ✅Networking: Routing & Switching, VLANs, Firewalls, DNS, DHCP, VPNs, Packet Analysis
-- [ ] ✅Cloud: AWS, Azure, EC2, VPC, IAM, S3, Lambda, Cloud Networking
-- [ ] ✅Cybersecurity: Threat Detection, Incident Response, Pen Testing, SIEM (Splunk), QA Testing, Vulnerability Management
-- [ ] ✅Software Development: Javascript, Java, React, Typescript, Node, Python, Django, AWS, Azure.
-- [ ] ✅GRC & Compliance: NIST, MITRE ATT&CK, ISO 27001, PCI-DSS, PIPEDA, PHIPA, HIPAA
-- [ ] ✅Business Analysis: BRD, UAT, JAD Sessions, Process Modeling, Gap Analysis
-- [ ] ✅Customer Support: Zendesk, Jira, Trello, CRM Platforms, Ticketing Systems.
-
-🚀 Let’s Connect!
-🔍 Open to Remote, Hybrid, and On-Site Opportunities
+Cyber Security Analyst, SOC, GRC, IR & Forensics
+Lighthouse Labs
+August 2024
+January 2025
 
 </details>
 
