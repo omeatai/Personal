@@ -1,4 +1,4 @@
-# Ifeanyi Omeata | Cloud | Network | Software Engineer | Cybersecurity
+# Ifeanyi Omeata | Cloud | Software Engineer | Network & Cybersecurity
 
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
