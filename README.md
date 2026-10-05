@@ -55,7 +55,12 @@ Hi, my name is Ifeanyi. I am an engineer working across cloud, cybersecurity, ne
 
 ### 🏛️ COURSES
 
+- [ ] [TRYHACKME](https://github.com/omeatai/Personal/blob/main/Files/tryhackme.md)
+- [ ] [CYBERSECURITY](https://github.com/omeatai/Personal/blob/main/Files/cybersecurity.md)
+- [ ] [NETWORKING](https://github.com/omeatai/Personal/blob/main/Files/networking.md)
+- [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
 - [ ] [AWS](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
+- [ ] [AZURE](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
 - [ ] [DEVOPS](https://github.com/omeatai/Personal/blob/main/Files/devops.md)
 - [ ] [JANIS](https://github.com/omeatai/Personal/blob/main/Files/janis.md)
 - [ ] [W3SCHOOLS](https://github.com/omeatai/Personal/blob/main/Files/w3schools.md)
@@ -65,7 +70,6 @@ Hi, my name is Ifeanyi. I am an engineer working across cloud, cybersecurity, ne
 - [ ] [PYTHON](https://github.com/omeatai/Personal/blob/main/Files/python.md)
 - [ ] [JAVA](https://github.com/omeatai/Personal/blob/main/Files/java.md)
 - [ ] [SQL](https://github.com/omeatai/Personal/blob/main/Files/sql.md)
-- [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
 - [ ] [QA](https://github.com/omeatai/Personal/blob/main/Files/quality_assurance.md)
 
 ### ⚙️ MY TOOLS
