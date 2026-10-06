@@ -1,5 +1,7 @@
 # W3SCHOOLS by Ifeanyi Omeata
 
+[Back to Personal Page](../README.md)
+
 ## COURSES
 
 - [ ] [W3SCHOOLS](https://www.w3schools.com/)
