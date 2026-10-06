@@ -2,7 +2,7 @@
 
 [Back to Personal Page](../README.md)
 
-## COURSES
+## UDEMY COURSES
 
 - [ ] [JAVASCRIPT](https://www.udemy.com/courses/search/?src=ukw&q=javascript)
 - [ ] [TYPESCRIPT](https://www.udemy.com/courses/search/?src=ukw&q=typescript)
