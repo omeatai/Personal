@@ -1,5 +1,7 @@
 # QA by Ifeanyi Omeata
 
+[Back to Personal Page](../README.md)
+
 ## QA COURSES
 
 - [ ] [The Complete 2025 Software Testing Bootcamp](https://www.udemy.com/course/testerbootcamp/)
