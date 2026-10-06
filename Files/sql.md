@@ -1,6 +1,8 @@
 # SQL by Ifeanyi Omeata
 
-## COURSES
+[Back to Personal Page](../README.md)
+
+## UDEMY COURSES
 
 - [ ] [SQL](https://www.udemy.com/courses/search/?src=ukw&q=sql)
 - [ ] [MYSQL](https://www.udemy.com/courses/search/?src=ukw&q=mysql)
