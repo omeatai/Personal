@@ -6,13 +6,13 @@
 
 ### 1-Introduction to Cyber Security
 
-- [ ] [Offensive Security Intro](tryhackme/tryhackme_A.md#offensive-security-intro)
-- [ ] [Defensive Security Intro](tryhackme/tryhackme_A.md#defensive-security-intro)
-- [ ] [Careers in Cyber](tryhackme/tryhackme_A.md#careers-in-cyber)
+- [ ] [Offensive Security Intro](tryhackme/tryhackme_A/001_Offensive_Security_Intro.md)
+- [ ] [Defensive Security Intro](tryhackme/tryhackme_A/002_Defensive_Security_Intro.md)
+- [ ] [Careers in Cyber](tryhackme/tryhackme_A/003_Careers_in_Cyber.md)
 
 ### 2-Computer Fundamentals
 
-- [ ] [Inside a Computer System](tryhackme/tryhackme_A.md#inside-a-computer-system)
-- [ ] [Computer Types](tryhackme/tryhackme_A.md#computer-types)
-- [ ] [Client-Server Basics](tryhackme/tryhackme_A.md#client-server-basics)
-- [ ] [Virtualisation Basics](tryhackme/tryhackme_A.md#virtualisation-basics)
+- [ ] [Inside a Computer System](tryhackme/tryhackme_A/004_Inside_a_Computer_System.md)
+- [ ] [Computer Types](tryhackme/tryhackme_A/005_Computer_Types.md)
+- [ ] [Client-Server Basics](tryhackme/tryhackme_A/006_Client_Server_Basics.md)
+- [ ] [Virtualisation Basics](tryhackme/tryhackme_A/007_Virtualisation_Basics.md)

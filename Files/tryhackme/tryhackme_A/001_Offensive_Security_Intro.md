@@ -1,4 +1,6 @@
-[Back to TryHackMe](../tryhackme.md)
+# Offensive Security Intro
+
+[Back to TryHackMe](../../tryhackme.md)
 
 <details>
   <summary>Offensive Security Intro</summary>
@@ -62,22 +64,11 @@ dirb http://fakebank.thm
 - [ ] In the output, treat lines that start with `+` as discovered pages.
 - [ ] Confirm dirb reports `/images` and `/bank-transfer`.
 
-<details>
-<summary>Example dirb hits</summary>
-
-```text
-+ http://fakebank.thm/images
-+ http://fakebank.thm/bank-transfer
-```
-
-</details>
-
 ### **Task 3: Use the transfer page**
 
 - [ ] In the simulated browser, open `http://fakebank.thm/bank-transfer`.
-- [ ] On the transfer form, enter:
-  - [ ] Account number **8881**
-  - [ ] Amount **$2000** (or more)
+- [ ] Use account number **8881**.
+- [ ] Deposit **$2000** (or more).
 - [ ] Return to your account page and confirm the balance is positive.
 - [ ] Read the green pop-up: **BANK-HACKED** (ALL CAPS).
 
@@ -105,15 +96,7 @@ Example idea of what you are looking for: dirb reports existing paths such as `h
 
 ## Code
 
-When the simulated browser opens the hidden transfer page, the request looks like this:
-
-```http
-GET /bank-transfer HTTP/1.1
-Host: fakebank.thm
-
-```
-
-No application source is included in this room; the activity uses terminal commands (dirb) and the FakeBank web interface.
+No code sections in this room; the activity uses terminal commands (dirb) and the FakeBank web interface only.
 
 </details>
 
