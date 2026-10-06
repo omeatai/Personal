@@ -1,5 +1,7 @@
 # JAVASCRIPT by Ifeanyi Omeata
 
+[Back to Personal Page](../README.md)
+
 ## COURSES
 
 - [ ] [JAVASCRIPT](https://www.udemy.com/courses/search/?src=ukw&q=javascript)
