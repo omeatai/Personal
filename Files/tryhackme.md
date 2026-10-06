@@ -922,7 +922,7 @@ Careers in Cyber explains why security work is high-pay, exciting, and in demand
 
 </details>
 
-## 2-Computer Fundamentals
+### 2-Computer Fundamentals
 
 <details>
   <summary>Inside a Computer System</summary>
