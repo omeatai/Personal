@@ -1,6 +1,6 @@
-# TRYHACKME by Ifeanyi Omeata
+# TRYHACKME by Ifeanyi Omeata | [ONLINE](https://tryhackme.com/paths)
 
-# TRYHACKME.COM | [ONLINE](https://tryhackme.com/paths)
+[Back to Personal Page](../README.md)
 
 # A. PRE-SECURITY COURSE
 
