@@ -2,7 +2,7 @@
 
 [Back to Personal Page](../README.md)
 
-## COURSES
+## UDEMY COURSES
 
 - [ ] [AWS CLOUD COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws)
 - [ ] [AWS SERVERLESS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
