@@ -1,6 +1,6 @@
 # NETWORKING by Ifeanyi Omeata
 
-## COURSES
+## UDEMY COURSES
 
 - [ ] [NETWORKING](https://www.udemy.com/courses/search/?src=ukw&q=networking)
 - [ ] [CCNA](https://www.udemy.com/courses/search/?src=ukw&q=ccna)
