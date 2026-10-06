@@ -1,6 +1,8 @@
 # JANIS DEV by Ifeanyi Omeata
 
-## COURSES
+[Back to Personal Page](../README.md)
+
+## UDEMY COURSES
 
 - [ ] [CODING ADDICT - JANIS SMILGA](https://www.udemy.com/courses/search/?src=ukw&q=JANIS+SMILGA)
 
