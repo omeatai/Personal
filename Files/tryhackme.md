@@ -2,9 +2,9 @@
 
 [Back to Personal Page](../README.md)
 
-# A. PRE-SECURITY COURSE
+## A. PRE-SECURITY COURSE
 
-## 1-Introduction to Cyber Security
+### 1-Introduction to Cyber Security
 
 <details>
   <summary>Offensive Security Intro</summary>
