@@ -2,7 +2,7 @@
 
 [Back to Personal Page](../README.md)
 
-## COURSES
+## UDEMY COURSES
 
 - [ ] [REACT](https://www.udemy.com/courses/search/?src=ukw&q=react)
 - [ ] [REACT TESTING](https://www.udemy.com/courses/search/?src=ukw&q=react+testing)
