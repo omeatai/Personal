@@ -2,7 +2,7 @@
 
 [Back to Personal Page](../README.md)
 
-## COURSES
+## UDEMY COURSES
 
 - [ ] [GIT COURSES](https://www.udemy.com/courses/search/?src=ukw&q=Git)
 - [ ] [GITHUB ACTIONS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=Github+actions)
