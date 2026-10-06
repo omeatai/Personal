@@ -1,0 +1,123 @@
+---
+description: Format raw cybersecurity lab notes from rough.md as an accordion and append them to the file you specify
+alwaysApply: false
+---
+
+# Security Labs Documentation Rule
+
+When the user says **"apply the security_doc rule"** (or similar, e.g. "apply security_doc.mdc to tryhackme.md"), perform the documentation workflow below.
+
+## Workflow Steps
+
+1. **Read** `rough.md` for the raw content (room URL at the top, then pasted notes).
+2. **Read** `format.md` once — it is the only format sample. Match its section order, accordion nesting, checkbox style, Lab tasks, spacing, and child-accordion layout. Do not look for other template files.
+3. **Research and enrich** (do not stop at the paste). Search official sources and fill gaps before writing:
+   - The TryHackMe / Let's Defend / HTB / vendor **room or module page** from the URL at the top of `rough.md`
+   - Official docs for tools, protocols, and frameworks named in the notes (RFCs, NIST, vendor docs, MDN, Kali tool pages)
+   - Missing **References** (every link from the raw notes, plus authoritative extras you actually used)
+   - Thin **Introduction** / **Detailed Explanation** items (definitions, why it matters, common pitfalls)
+   - Missing **Lab** steps when the room has a machine, View Site, static site, or task list
+   - Do **not** invent room answers, flags, account numbers, IPs, or URLs. If a fact is not in the raw notes and you cannot verify it, omit it or mark it as unverified.
+   - Offensive content stays at the **room's intended walkthrough** and high-level concepts. Do not add new exploit procedures, payloads, or attack scripts.
+4. **Analyze** the raw content and map it to the accordion structure:
+   - Introduction (plain heading — **not** a child accordion)
+   - Detailed Explanation (plain heading — **not** a child accordion; use `- [x]` checkboxes and sub-items)
+   - Lab (**child accordion**; step-by-step process as in `format.md`; see Lab rules below)
+   - Terminal Commands (**child accordion**; fenced `bash` blocks with explanations)
+   - Code (**child accordion**; fenced code blocks with explanations)
+   - Questions and Answers (**child accordion**; 10–20 Q&A; each answer uses nested `<details><summary>Answer</summary>`; see child-accordion and bullet rules below)
+   - Summary (plain heading — **not** a child accordion)
+   - References (plain heading — **not** a child accordion)
+5. **Generate** 10–20 revision Q&A from the content to aid study.
+6. **Append** (do not overwrite) the formatted accordion to the **file the user named** when applying this rule. If they did not name a target file, default to `tryhackme.md`.
+
+## Format Requirements
+
+- Use HTML `<details>` and `<summary>` for accordion-style sections as in `format.md`.
+- **Accordion spacing:** For every `<details>` block, put **one blank line** after the closing `</summary>` tag and **one blank line** before `</details>`, so the inner content is visually separated from the tags. This applies to **topic** accordions (e.g. `<summary>Room Title</summary>`), **child** accordions (`Lab`, `Terminal Commands`, `Code`, `Questions and Answers`), and **answer** accordions (`<summary>Answer</summary>`).
+- Title for the accordion comes from the first `#` heading in `rough.md`.
+- First reference in References must be the source page link (pasted at the top of `rough.md`).
+- Every other link from the raw notes should also be added under References after that first link.
+- After research, add official docs you used (tool pages, RFCs, NIST, MDN) under References. Do not dump unrelated link farms.
+- **Child accordions:** Opening a topic must **not** stretch the page with Lab, Terminal Commands, Code, or Q&A. Those four stay in their own closed inner `<details>` blocks. Leave **Introduction**, **Detailed Explanation**, **Summary**, and **References** as normal `##` headings (never wrap those four in child accordions). After Detailed Explanation, emit the four children in this order, then Summary and References. Match `format.md`:
+
+````markdown
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+### **Overview**
+
+- [ ] Goal of the walkthrough.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
+## Terminal Commands
+
+```bash
+# example
+```
+
+</details>
+
+<details>
+  <summary>Code</summary>
+
+## Code
+
+```text
+# example
+```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: Example question?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Example answer.
+
+</details>
+
+</details>
+````
+
+- Each Q&A uses nested `<details><summary>Answer</summary>` **inside the Questions and Answers child accordion**, with blank lines after `</summary>` and before `</details>` as in **Accordion spacing** above.
+- **Answer formatting:** Inside `<details><summary>Answer</summary>`, use **checked task-list lines** (`- [x] …`) for every answer line—whether there is **one** fact or **many**. Do **not** use plain `- ` without `[x]` in Q&A answers. For multiple items, put **one `- [x]` line per item**, not one long comma-separated sentence.
+- **Lab:** Place the **Lab** child accordion immediately after Detailed Explanation (do not leave `## Lab` in the topic body outside that child). If the raw transcript includes a lab, machine, View Site, static site, or console/CLI walkthrough, generate a step-by-step process matching `format.md` (use `###` under `## Lab` so tasks stay inside this section):
+  - Start with `### **Overview**` using `- [ ]` lines that state the goal and what you will do.
+  - Then numbered tasks as `### **Task N: Title**` with `- [ ]` steps (unchecked, so the reader can tick them while doing the lab).
+  - Nest sub-steps under a task; put UI clicks, names, IPs, account numbers, URLs, and exact values from the **raw notes** on their own `- [ ]` lines.
+  - Include fenced `bash` / `text` / other code in the task where it is used; wrap long config/JSON/output in `<details>` as in `format.md`.
+  - End the last task with a short success line when the lab has a clear completion point (flag, pop-up, or confirmed state).
+  - If there is **no** lab or project in `rough.md`, still include `## Lab` with a brief placeholder, same pattern as Terminal Commands / Code when empty, e.g. `No labs in this topic; the content is conceptual only.`
+
+## Content Guidelines
+
+- Put **Lab**, **Terminal Commands**, **Code**, and **Questions and Answers** each in its own **child** accordion. Do not leave those headings or their bodies in the topic body outside the matching child.
+- For **Questions and Answers**, always format the answer body with **`- [x]`** lines inside `<details>`, not bare paragraphs or plain `-` bullets.
+- One topic per accordion.
+- Preserve all explanations, lab steps, terminal commands, and code from the raw content, then **enrich** thin spots with researched official material (still no invented flags or new attack steps).
+- Use checkboxes (`- [x]`) for breakdown items in Detailed Explanation.
+- Use unchecked checkboxes (`- [ ]`) for Lab walkthrough steps (as in `format.md`); do not use `- [x]` in Lab.
+- Include sub-items where appropriate.
+- If Terminal Commands, Code, or Lab has no content, still emit the **child accordion** with the heading and a brief placeholder (do not omit the Lab child).
+- Document **authorized platform labs** (TryHackMe, Let's Defend, and similar) at the room's intended level only. Prefer high-level concepts plus the walkthrough already in the notes.
+
+## File Paths
+
+| Purpose                        | Path                                   |
+| ------------------------------ | -------------------------------------- |
+| Input (raw paste)              | `rough.md`                             |
+| Format sample (read this only) | `format.md`                            |
+| Default output (append target) | `tryhackme.md` (or the file the user named) |
