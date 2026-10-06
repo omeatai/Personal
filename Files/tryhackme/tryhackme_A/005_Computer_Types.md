@@ -2,9 +2,6 @@
 
 [Back to TryHackMe](../../tryhackme.md)
 
-<details>
-  <summary>Computer Types</summary>
-
 ## Introduction
 
 Sophia was connecting a new device to her home WiFi when she noticed “NexusCool Fridge X17”—her neighbor’s smart refrigerator. The moment underscored a core idea of this TryHackMe room: computers are no longer only laptops and phones; they also hide in everyday objects (appliances, doorbells, and more). Through Sophia’s summer internship story at Nova Labs, the room teaches you to identify and distinguish computers you use directly (laptops, smartphones) and indirectly (servers, IoT devices, embedded systems), and why each type fits its purpose.
@@ -70,9 +67,6 @@ Sophia was connecting a new device to her home WiFi when she noticed “NexusCoo
   - Complete the static site (View Site) on computer types
   - Flag: `THM{8_computer_types}`
 
-<details>
-  <summary>Lab</summary>
-
 ## Lab
 
 This room uses one **interactive static site** (View Site) on eight computer types from Sophia's Nova Labs internship story.
@@ -99,37 +93,6 @@ This room uses one **interactive static site** (View Site) on eight computer typ
 - [ ] Submit to earn `THM{8_computer_types}`.
 
 Successfully classified the eight computer types on the static site.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-This room is conceptual and uses an interactive static-site exercise in the browser (View Site). There are no primary command-line tools.
-
-```bash
-# No primary terminal commands in this computer-types room.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No programming component; learning is through the Sophia narrative, comparison tables, and the static-site challenge.
-
-```py
-# No code snippets for this computer-types room.
-```
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -315,8 +278,6 @@ No programming component; learning is through the Sophia narrative, comparison t
 
 </details>
 
-</details>
-
 ## Summary
 
 Through Sophia’s Nova Labs internship, this room maps eight computer types—laptop, desktop, workstation, server, smartphone, tablet, IoT device, and embedded computer—and shows why purpose and trade-offs (mobility vs power, reliability vs cost, connectivity vs isolation) drive design. Interactive static-site completion yields `THM{8_computer_types}`. The takeaway: there is no best computer, only the right tool for the job—and many of the most important systems are the ones you never see.
@@ -325,5 +286,3 @@ Through Sophia’s Nova Labs internship, this room maps eight computer types—l
 
 - [Computer Types – TryHackMe](https://tryhackme.com/room/computertypes)
 - [NIST IoT initiatives](https://www.nist.gov/itl/applied-cybersecurity/nist-initiatives-iot)
-
-</details>

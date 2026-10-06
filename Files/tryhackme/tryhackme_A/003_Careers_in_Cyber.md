@@ -2,9 +2,6 @@
 
 [Back to TryHackMe](../../tryhackme.md)
 
-<details>
-  <summary>Careers in Cyber</summary>
-
 ## Introduction
 
 Cyber security careers are in high demand and often offer high salaries. Roles span offensive work (pentesting and reporting vulnerabilities) through defensive work (defending against and investigating attacks). This TryHackMe room explains why people enter cyber, outlines major job roles and responsibilities, and links learning paths and career guides so you can start building skills toward a target role.
@@ -90,9 +87,6 @@ Cyber security careers are in high demand and often offer high salaries. Roles s
   - Learning Paths: JR Penetration Tester, Offensive Pentesting, Red Teamer
   - Career Guides: Red Teaming: Job Roles, Salaries & Opportunities
 
-<details>
-  <summary>Lab</summary>
-
 ## Lab
 
 No labs in this topic; the content is conceptual only. The room is a career map (roles, learning paths, and guides), not a machine or View Site walkthrough.
@@ -103,33 +97,6 @@ No labs in this topic; the content is conceptual only. The room is a career map 
 - [ ] You will:
   - [ ] Compare analyst, engineer, IR, forensics, malware, pentest, and red-team work.
   - [ ] Note the TryHackMe learning paths listed for the role you want.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-This room is informational and career-focused. It does not centre on specific terminal commands; later learning paths introduce hands-on labs and CLI work.
-
-```bash
-# No primary terminal commands for this careers overview room.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No code sections in this room; the focus is understanding cyber security job roles, responsibilities, learning paths, and career resources.
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -346,8 +313,6 @@ No code sections in this room; the focus is understanding cyber security job rol
 
 </details>
 
-</details>
-
 ## Summary
 
 Careers in Cyber explains why security work is high-pay, exciting, and in demand (over 3.5 million unfilled roles), then surveys major roles: Security Analyst, Security Engineer, Incident Responder, Digital Forensics Examiner, Malware Analyst, Penetration Tester, and Red Teamer. For each role you get core purpose, responsibilities, and (where listed) TryHackMe learning paths and career guides to start building the right skills.
@@ -358,5 +323,3 @@ Careers in Cyber explains why security work is high-pay, exciting, and in demand
 - [NICE Framework Resource Center (NIST)](https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center)
 - [NIST SP 800-181 Rev. 1 — Workforce Framework for Cybersecurity](https://csrc.nist.gov/pubs/sp/800/181/r1/final)
 - [CISA cybersecurity career resources](https://www.cisa.gov/cybersecurity-career-resources)
-
-</details>

@@ -1,8 +1,5 @@
 [Back to TryHackMe](../tryhackme.md)
 
-<details>
-  <summary>Offensive Security Intro</summary>
-
 ## Introduction
 
 Offensive Security is about thinking like an attacker to find weaknesses before real hackers do. In this TryHackMe room, you hack your first website in a safe and legal environment using FakeBank, a fake banking application, to see how ethical hackers operate.
@@ -21,15 +18,30 @@ Offensive Security is about thinking like an attacker to find weaknesses before 
   - Use the terminal on the machine to run **dirb** (Dirbuster-style directory brute-forcing)
   - Lines in dirb output that start with `+` are pages that were found
   - Dirb finds two URLs on FakeBank: `/images` and `/bank-transfer`
+  - Pass the target URL to dirb. Lines that start with `+` are pages it found:
+
+```bash
+dirb http://fakebank.thm
+```
+
+```text
++ http://fakebank.thm/images
++ http://fakebank.thm/bank-transfer
+```
+
 - [x] **Attack the admin page**
   - The hidden admin panel at `/bank-transfer` lets you add money to an account
   - Open `http://fakebank.thm/bank-transfer` in the simulated browser (append `/bank-transfer` to the URL)
+  - The browser request for that hidden page is:
+
+```http
+GET /bank-transfer HTTP/1.1
+Host: fakebank.thm
+```
+
   - Use account number **8881** and deposit **$2000** (or more)
   - Return to your account page and confirm the balance is positive
   - When the balance turns positive, a green pop-up appears with the words **BANK-HACKED** (ALL CAPS)
-
-<details>
-  <summary>Lab</summary>
 
 ## Lab
 
@@ -62,19 +74,21 @@ dirb http://fakebank.thm
 - [ ] In the output, treat lines that start with `+` as discovered pages.
 - [ ] Confirm dirb reports `/images` and `/bank-transfer`.
 
-<details>
-<summary>Example dirb hits</summary>
-
 ```text
 + http://fakebank.thm/images
 + http://fakebank.thm/bank-transfer
 ```
 
-</details>
-
 ### **Task 3: Use the transfer page**
 
 - [ ] In the simulated browser, open `http://fakebank.thm/bank-transfer`.
+- [ ] That request is a GET for the hidden page:
+
+```http
+GET /bank-transfer HTTP/1.1
+Host: fakebank.thm
+```
+
 - [ ] On the transfer form, enter:
   - [ ] Account number **8881**
   - [ ] Amount **$2000** (or more)
@@ -82,43 +96,6 @@ dirb http://fakebank.thm
 - [ ] Read the green pop-up: **BANK-HACKED** (ALL CAPS).
 
 Successfully completed the FakeBank lab when the balance is positive and **BANK-HACKED** is shown.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-Dirb is used to discover hidden directories and pages on a target website. Pass the target URL; any output lines starting with `+` indicate discovered pages.
-
-```bash
-dirb http://fakebank.thm
-```
-
-Example idea of what you are looking for: dirb reports existing paths such as `http://fakebank.thm/images` and `http://fakebank.thm/bank-transfer`. Use the hidden `/bank-transfer` path in the browser to continue the attack.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-When the simulated browser opens the hidden transfer page, the request looks like this:
-
-```http
-GET /bank-transfer HTTP/1.1
-Host: fakebank.thm
-
-```
-
-No application source is included in this room; the activity uses terminal commands (dirb) and the FakeBank web interface.
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -260,8 +237,6 @@ No application source is included in this room; the activity uses terminal comma
 
 </details>
 
-</details>
-
 ## Summary
 
 This room introduces Offensive Security by having you think like a hacker against FakeBank. You start a virtual lab, note account **8881**, use **dirb** to find hidden pages (`/images` and `/bank-transfer`), abuse the exposed transfer panel to deposit funds, and capture the green flag **BANK-HACKED** when the balance turns positive.
@@ -272,5 +247,3 @@ This room introduces Offensive Security by having you think like a hacker agains
 - [Gobuster (OJ Reeves)](https://github.com/OJ/gobuster)
 - [dirb | Kali Tools](https://www.kali.org/tools/dirb/)
 - [OWASP WSTG — Information Gathering](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/README)
-
-</details>

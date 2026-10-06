@@ -2,9 +2,6 @@
 
 [Back to TryHackMe](../../tryhackme.md)
 
-<details>
-  <summary>Virtualisation Basics</summary>
-
 ## Introduction
 
 After computer components and client-server communication, this TryHackMe room explains how companies pack many workloads onto fewer physical machines. Running every website or application on its own server wastes money and capacity. **Virtualization** lets multiple isolated systems share one physical host, which is how modern internet infrastructure stays cheaper, faster to deploy, and easier to scale.
@@ -47,6 +44,7 @@ After computer components and client-server communication, this TryHackMe room e
     - Type 1: production server, database server, data center
     - Type 2: test malicious files, software testing, Kali Linux
   - Oracle VirtualBox is officially a **hosted / Type 2** hypervisor; VMware Workstation is the other Type 2 example named in the room
+  - On your own machine later, VirtualBox’s CLI is `VBoxManage`. This room’s lab stays in the View Site UI and does not use that CLI.
 - [x] **Malware-testing pitfall**
   - The guest can infect the host if isolation is weak
   - Room guidance: use a **different OS** for guest and host, or isolate the guest so it does not communicate with the host
@@ -70,6 +68,16 @@ After computer components and client-server communication, this TryHackMe room e
   - Physical server → hypervisor → lab machines → (optional) containers inside a VM
   - VMs = full apartment (maximum separation and OS flexibility)
   - Containers = lightweight rooms (fast, dense, scalable apps)
+
+```text
+Physical server
+└── Hypervisor (Type 1 on bare metal, or Type 2 on a host OS)
+    ├── Lab machine / VM  (guest OS + apps)
+    └── Lab machine / VM
+        ├── Container  (shares that VM’s kernel)
+        └── Container
+```
+
 - [x] **Virtualization Manager lab (AutoGalo)**
   - Simulated console with **Summary**, **Lab Machines**, and **Hosts**
   - Restart **Mail-SERVER** from Error with the blue square button
@@ -87,9 +95,6 @@ After computer components and client-server communication, this TryHackMe room e
 - [x] **Benefits and next step**
   - Cost savings, better resource usage, safer cyber-security testing, faster deployment, flexibility, portability, scalability, centralized management
   - Next room: **Cloud Computing Fundamentals** (virtualization + containerization + automation)
-
-<details>
-  <summary>Lab</summary>
 
 ## Lab
 
@@ -130,6 +135,14 @@ This is the room’s **View Site** walkthrough in **Virtualization Manager** for
   - [ ] CPU Cores: **4**
   - [ ] Memory (GB): **8**
   - [ ] Disk Size (GB): **100**
+
+```text
+Name:          Marketing-VM
+CPU Cores:     4
+Memory (GB):   8
+Disk Size (GB): 100
+```
+
 - [ ] Click **Create VM**.
 - [ ] Confirm **Marketing-VM** appears at the top of the Lab Machines list.
 
@@ -149,53 +162,6 @@ This is the room’s **View Site** walkthrough in **Virtualization Manager** for
 - [ ] Physical machine hosting the most VMs: **HV-PROD-02**
 
 Successfully completed the AutoGalo shift when Mail-SERVER is running, Marketing-VM exists, and the four task answers above are confirmed.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-This room uses the **View Site** Virtualization Manager UI. There is no primary CLI walkthrough.
-
-```bash
-# No primary terminal commands — manage VMs in the Virtualization Manager View Site
-```
-
-On your own Type 2 hypervisor later (not required here), Oracle VirtualBox and VMware Workstation expose GUI and CLI front ends. VirtualBox’s CLI is `VBoxManage`; do not invent flags or lab IPs for this room.
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No application source in this room. The stack relationship from the room diagram is:
-
-```text
-Physical server
-└── Hypervisor (Type 1 on bare metal, or Type 2 on a host OS)
-    ├── Lab machine / VM  (guest OS + apps)
-    └── Lab machine / VM
-        ├── Container  (shares that VM’s kernel)
-        └── Container
-```
-
-Marketing-VM create-form values used in the View Site:
-
-```text
-Name:          Marketing-VM
-CPU Cores:     4
-Memory (GB):   8
-Disk Size (GB): 100
-```
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -405,8 +371,6 @@ Disk Size (GB): 100
 
 </details>
 
-</details>
-
 ## Summary
 
 Virtualization replaces “one server = one application” with many isolated lab machines on one physical host. A **hypervisor** (Type 1 on bare metal, Type 2 on a host OS) allocates CPU, memory, and storage and keeps guests apart. **VMs** are full virtual computers; **containers** (often via Docker) share a kernel and pack more apps into the same VM. The AutoGalo View Site walks through restarting **Mail-SERVER**, creating **Marketing-VM** (4 CPU / 8 GB / 100 GB), and reading host pressure on **HV-PROD-02**. Room answers: physical server, hypervisor, type 2, containers, Monitoring-SYS, DB-Cluster-01, 8, HV-PROD-02. Next: Cloud Computing Fundamentals.
@@ -422,5 +386,3 @@ Virtualization replaces “one server = one application” with many isolated la
 - [Oracle VirtualBox — About Oracle VirtualBox (Type 2 / hosted hypervisor)](https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/Introduction.html)
 - [What is a container? – Docker Docs](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/)
 - [What is a Container? – Docker](https://www.docker.com/resources/what-container/)
-
-</details>

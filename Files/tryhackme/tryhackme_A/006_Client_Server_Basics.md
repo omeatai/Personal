@@ -2,9 +2,6 @@
 
 [Back to TryHackMe](../../tryhackme.md)
 
-<details>
-  <summary>Client-Server Basics</summary>
-
 ## Introduction
 
 Early computers mostly worked alone—local files, local programs, no communication with other machines. Organizations then interconnected systems for information exchange and resource sharing (precursors of the internet such as ARPANET, CYCLADES, NPL, and NSFNET). Interconnected systems specialized into roles that offer and consume services. This TryHackMe room explains how that works through the **client-server model**, using a pizza-takeaway analogy and a practical HTTP GET lab.
@@ -68,9 +65,6 @@ Early computers mostly worked alone—local files, local programs, no communicat
 - [x] **What comes next**
   - Next room covers the basics of **virtualization**—the infrastructure that supports internet services
 
-<details>
-  <summary>Lab</summary>
-
 ## Lab
 
 This is a **browser Network-inspector** walkthrough on the TryHackMe lab machine. Pause until the machine is on and the split view is visible.
@@ -121,37 +115,6 @@ This is a **browser Network-inspector** walkthrough on the TryHackMe lab machine
 - [ ] Remember: the response has a **header** (metadata) and a **body** (content).
 
 Successfully inspected a client GET and a server response in Firefox Developer Tools.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-This room uses a browser lab and Firefox Developer Tools (Network tab). There are no primary CLI tools; inspection is done in the UI.
-
-```bash
-# No primary terminal commands — inspect GET traffic via Firefox DevTools → Network on http://httpdemo.local:8080
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No programming component. HTTP GET requests and HTML responses are inspected in the browser.
-
-```py
-# No code snippets for the Client-Server Basics room.
-```
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -346,8 +309,6 @@ No programming component. HTTP GET requests and HTML responses are inspected in 
 
 </details>
 
-</details>
-
 ## Summary
 
 Client-Server Basics explains how networked machines offer and consume services: the client initiates requests, the server responds, protocols define the shared rules, ports identify services, and DNS maps names to IP addresses. A pizza analogy makes the model concrete; an HTTP GET lab in Firefox DevTools shows scheme, host, path, IP, status codes, and response headers/bodies. Room answers include Port, Internet Protocol address, host `www.iamlearning.thm`, and scheme `https`. Next up: virtualization.
@@ -359,5 +320,3 @@ Client-Server Basics explains how networked machines offer and consume services:
 - [RFC 1034 — Domain Names (concepts and facilities)](https://www.rfc-editor.org/rfc/rfc1034.html)
 - [MDN — HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
 - [MDN — URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)
-
-</details>

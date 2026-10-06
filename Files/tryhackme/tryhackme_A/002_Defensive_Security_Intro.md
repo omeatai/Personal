@@ -2,9 +2,6 @@
 
 [Back to TryHackMe](../../tryhackme.md)
 
-<details>
-  <summary>Defensive Security Intro</summary>
-
 ## Introduction
 
 Defensive security is about defending and securing devices and systems by detecting and investigating attacks, then responding before damage occurs. Unlike offensive security, you do not attack systems—you monitor and protect them. In this TryHackMe room, you help apprentice SOC analyst Joe use a monitoring dashboard to spot suspicious traffic, identify the attack, and contain it against FakeBank.
@@ -46,9 +43,6 @@ Defensive security is about defending and securing devices and systems by detect
     - **Updating security rules** — tightens access controls to sensitive pages the attacker slipped through
   - Success flag: **THM{FAKEBANK-SECURED}**
 
-<details>
-  <summary>Lab</summary>
-
 ## Lab
 
 This is the room's **SOC monitoring dashboard** walkthrough (View Site). You help apprentice analyst Joe detect, identify, and contain an attack on FakeBank.
@@ -83,33 +77,6 @@ This is the room's **SOC monitoring dashboard** walkthrough (View Site). You hel
 - [ ] Confirm the success flag: **THM{FAKEBANK-SECURED}**.
 
 Successfully contained the FakeBank attack by blocking **32.122.195.63**.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-This room uses an interactive monitoring dashboard in the browser (View Site). There are no primary command-line tools; investigation and response happen through the SOC-style UI (alerts, URL discovery list, and firewall rules).
-
-```bash
-# No primary terminal commands in this defensive dashboard lab.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No code sections in this room; the activity uses the monitoring dashboard and firewall rule controls only.
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -289,8 +256,6 @@ No code sections in this room; the activity uses the monitoring dashboard and fi
 
 </details>
 
-</details>
-
 ## Summary
 
 This room introduces defensive security by having you think like a defender with SOC analyst Joe. You use a monitoring dashboard to find the suspicious source IP **32.122.195.63**, identify URL discovery toward **https://fakebank.com/admin**, and contain the attack by blocking that IP with a firewall rule. Success yields the flag **THM{FAKEBANK-SECURED}**. Core idea: detect and respond—monitor, investigate, then contain before damage spreads.
@@ -300,5 +265,3 @@ This room introduces defensive security by having you think like a defender with
 - [Defensive Security Intro – TryHackMe](https://tryhackme.com/room/defensivesecurityintro)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide](https://csrc.nist.gov/pubs/sp/800/61/r2/final)
-
-</details>

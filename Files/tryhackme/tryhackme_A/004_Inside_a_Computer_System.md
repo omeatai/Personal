@@ -2,9 +2,6 @@
 
 [Back to TryHackMe](../../tryhackme.md)
 
-<details>
-  <summary>Inside a Computer System</summary>
-
 ## Introduction
 
 Before securing systems, you need to understand what you are securing. This TryHackMe room is the first in the Computer Fundamentals module and uses a castle analogy: you cannot defend a castle you have never seen. You learn the building blocks of a computer, how they connect, and what happens from power-on to a running operating system—kept at a fundamentals level without deep jargon.
@@ -66,9 +63,6 @@ Before securing systems, you need to understand what you are securing. This TryH
   - The boot process is especially important because it can be targeted by attackers
   - Next room (coming soon): Computer Types — how component combinations create different system types
 
-<details>
-  <summary>Lab</summary>
-
 ## Lab
 
 This room uses two **interactive static sites** (View Site): identify PC components, then walk the boot sequence.
@@ -107,37 +101,6 @@ This room uses two **interactive static sites** (View Site): identify PC compone
 - [ ] Complete the site to earn `THM{pc5ucce55fully5t4rt3d}`.
 
 Successfully identified the components and completed the boot-sequence exercise.
-
-</details>
-
-<details>
-  <summary>Terminal Commands</summary>
-
-## Terminal Commands
-
-This room is conceptual and uses interactive static-site exercises in the browser (View Site). There are no primary command-line tools.
-
-```bash
-# No primary terminal commands in this computer-components and boot-sequence room.
-```
-
-</details>
-
-<details>
-  <summary>Code</summary>
-
-## Code
-
-No programming component; learning is through explanations, diagrams, and static-site identification exercises.
-
-```py
-# No code snippets for the Inside a Computer System room.
-```
-
-</details>
-
-<details>
-  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -325,8 +288,6 @@ No programming component; learning is through explanations, diagrams, and static
 
 </details>
 
-</details>
-
 ## Summary
 
 Inside a Computer System covers the core PC building blocks—motherboard, CPU, RAM, storage (HDD/SSD), network adapter, PSU, graphics card, and I/O—using a human-body analogy, then walks through the five-step boot path from power button to UEFI/POST, boot-device selection, bootloader, and OS in RAM. Interactive static sites reinforce component ID and boot order; flags `THM{4llpccomp0n3nts1d3nt1f13d}` and `THM{pc5ucce55fully5t4rt3d}` mark completion. These fundamentals matter later because component roles and the boot process underpin many security topics.
@@ -336,5 +297,3 @@ Inside a Computer System covers the core PC building blocks—motherboard, CPU, 
 - [Inside a Computer System – TryHackMe](https://tryhackme.com/room/insideacomputer)
 - [UEFI Specifications](https://uefi.org/specifications)
 - [Power-on self-test (overview)](https://en.wikipedia.org/wiki/Power-on_self-test)
-
-</details>
