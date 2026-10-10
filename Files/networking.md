@@ -30,4 +30,14 @@
 - [ ] [The Complete Cisco CCNA & CCNP Course 2026](https://www.udemy.com/course/ccnp-routing-protocols-labs/)
 - [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/)
 
+## CCNP
+
+- [ ] [CCNP/CCIE ENCOR 350-401 v1.2 Mega Course by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-encor-350-401-by-arash-deljoo/)
+- [ ] [CCNA 200-301+CCNP/CCIE ENCOR 350-401 v1.2 by Arash Deljoo](https://www.udemy.com/course/ccna-200-301-ccnpccie-encor-350-401-by-arash-deljoo/)
+- [ ] [Cisco CCNP Enterprise ( ENARSI + ENCOR ) v1.2 Training](https://www.udemy.com/course/ccnp-all-in-one)
+- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 v1.2 Training](https://www.udemy.com/course/ccnpencor/)
+- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-1/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-12/)
+- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-2/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-22/)
+
+
 
