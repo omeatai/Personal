@@ -11,12 +11,23 @@
 ## NETWORKING COURSES
 
 - [ ] [GNS3 Build 3 Network Applications with Python](https://gns3.teachable.com/l/products)
-- [ ] [Build 3 Network Applications with Python and Machine Learning](https://gns3.teachable.com/courses/enrolled/2601147)
-- [ ] [GNS3 Fundamentals (Official Course) Part 1](https://www.udemy.com/course/gns3-fundamentals-official-course-part-1/?couponCode=24T2MT111524)
-- [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/?couponCode=24T2MT111524)
-- [ ] [CCNA 2019 200-125 Video Bootcamp With Chris Bryant](https://www.udemy.com/course/ccna-on-demand-video-boot-camp/?couponCode=24T2MT111524)
-- [ ] [CCNP All-in-1 Video Boot Camp With Chris Bryant](https://www.udemy.com/course/ccnpallinone/?couponCode=24T2MT111524)
-- [ ] [The Complete Cisco CCNA & CCNP Networking Labs Course 2025](https://www.udemy.com/course/ccnp-routing-protocols-labs/?couponCode=24T2MT111524)
-- [ ] [Learning Python 3 Network Programming for Network Engineers](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/?couponCode=24T2MT111524)
-- [ ] [Free DevOps Tutorial - Net DevOps: Cisco Python, Automation, NETCONF, SDN, Docker](https://www.udemy.com/course/net-devops-cisco-python-automation-netconf-sdn-docker/)
-- [ ] [Free Python Network Programming Tutorial - Network Automation - Python3 and Ansible](https://www.udemy.com/course/network-automation-python3-and-ansible-feb-2020-batch/)
+- [ ] [The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
+- [ ] [Introduction to Computer Networking - Beginner Crash Course](https://www.udemy.com/course/networkingbasics/)
+- [ ] [CompTIA Network+ (N10-009) Full Course](https://www.udemy.com/course/comptia-network-009/)
+- [ ] [Fundamentals of Network Engineering](https://www.udemy.com/course/fundamentals-of-networking-for-effective-backend-design/)
+- [ ] [Introduction to Computer Networks for Non-Techies](https://www.udemy.com/course/introduction-to-computer-networks/)
+- [ ] [Introduction to Networking](https://www.udemy.com/course/introduction-to-networking/)
+- [ ] [Python Network Programming for Network Engineers (Python 3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
+
+## CCNA
+
+- [ ] [Cisco CCNA 200-301 – The Complete Guide to Getting Certified](https://www.udemy.com/course/ccna-complete/)
+- [ ] [Master Cisco CCNA 200-301: Comprehensive All-in-One Course](https://www.udemy.com/course/ccna-jitl/)
+- [ ] [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
+- [ ] [Complete Cisco CCNA 200-301 Prep: From Beginner to Certified](https://www.udemy.com/course/complete-cisco-ccna-200-301-prep-from-beginner-to-certified/)
+- [ ] [Cisco CCNA 200-301 Networking v1.1](https://www.udemy.com/course/ccna-cisco-200-301-v11-your-complete-training-course/)
+- [ ] [Cisco CCNA 200-301 Complete Course: Packet Tracer Labs](https://www.udemy.com/course/cisco-ccna-icnd2-200-105-complete-course-sims-and-gns3/)
+- [ ] [The Complete Cisco CCNA & CCNP Course 2026](https://www.udemy.com/course/ccnp-routing-protocols-labs/)
+- [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/)
+
+
