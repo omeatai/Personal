@@ -46,6 +46,10 @@
 - [ ] [Neal Davis | AWS Certified Data Engineer Associate Practice Exams DEA-C01](https://www.udemy.com/course/aws-certified-data-engineer-associate-practice-exams-dea/)
 
 ### MLA-C01: AWS Certified Machine Learning Engineer – Associate
+- [ ] [Nikolai Schuler | AWS Certified Machine Learning Engineer - Associate MLA-C01](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01-exam-prep/)
+- [ ] [Nikolai Schuler | AWS Machine Learning Engineer - Associate Practice Exams](https://www.udemy.com/course/aws-machine-learning-engineer-associate-practice-exams/)
+- [ ] [Stephane Maarek | AWS Certified Machine Learning Engineer Associate: Hands On!](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/)
+- [ ] [Stephane Maarek | AWS Machine Learning Engineer Associate Cert Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-machine-learning-engineer-associate/)
 
 ### SAP-C03: AWS Certified Solutions Architect – Professional
 
@@ -54,6 +58,10 @@
 ### AIP-C01: AWS Certified Generative AI Developer – Professional 
 
 ### SCS-C03: AWS Certified Security – Speciality 
+- [ ] [Neal Davis | AWS Certified Security Specialty Course SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-course/)
+- [ ] [Neal Davis | AWS Certified Security Specialty Practice Exams SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-practice-exams-course/)
+- [ ] [Stephane Maarek | Ultimate AWS Certified Security Specialty NEW 2026 SCS-C03](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
+- [ ] [Stephane Maarek | Practice Exams | AWS Certified Security Specialty | SCS-C03](https://www.udemy.com/course/practice-exams-aws-certified-security-specialty/)
 
 ## AWS SERVERLESS
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
