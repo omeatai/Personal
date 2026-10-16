@@ -9,7 +9,7 @@
 
 ## AWS CLOUD
 
-### CLF-C02: AWS Certified Cloud Practitioner
+### CLF-C02: AWS Certified Cloud Practitioner - [x]
 - [ ] [Neal Davis | Introduction to Cloud Computing on AWS for Beginners 2026](https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/)
 - [ ] [Neal Davis | AWS Certified Cloud Practitioner (CLF-C02) Exam Training](https://www.udemy.com/course/aws-certified-cloud-practitioner-training-course/)
 - [ ] [Neal Davis | EXAM REVIEWER - AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-certification-training/)
