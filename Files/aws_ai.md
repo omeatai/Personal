@@ -10,11 +10,33 @@
 
 ## AWS CLOUD
 
+### CLF-C02: AWS Certified Cloud Practitioner
+
+### AIF-C01: AWS Certified AI Practitioner 
+
+### SAA-C03: AWS Certified Solutions Architect – Associate 
+
+### DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate 
+
+### SOA-C03: AWS Certified CloudOps Engineer – Associate 
+
+### DEA-C01: AWS Certified Data Engineer – Associate 
+
+### MLA-C01: AWS Certified Machine Learning Engineer – Associate
+
+### SAP-C03: AWS Certified Solutions Architect – Professional
+
+### DOP-C02: AWS Certified DevOps Engineer – Professional
+
+### AIP-C01: AWS Certified Generative AI Developer – Professional 
+
+### SCS-C03: AWS Certified Security – Specialty 
+
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
 - [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
 
-## AWS SERVERLESS LABS COURSES
+## AWS SERVERLESS
 
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
@@ -22,7 +44,7 @@
 - [ ] [AWS Lambda and the Serverless Framework - Hands On Learning!](https://www.udemy.com/course/aws-lambda-serverless/)
 - [ ] [AWS Lambda, Python(Boto3) & Serverless- Beginner to Advanced](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
 
-## AI COURSES
+## AI
 
 - [ ] [Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)](https://www.udemy.com/course/nextjs-chatgpt/)
 - [ ] [Next JS & Open AI / GPT: Next-generation Next JS & AI apps](https://www.udemy.com/course/next-js-ai/)
