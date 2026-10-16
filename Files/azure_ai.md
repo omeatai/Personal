@@ -13,35 +13,31 @@
 ## Phase 0: Fundamentals
 
 ### AZ-900: Azure Fundamentals
-
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/azure/01.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals | Practice Exams](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-practice-exams-tests/)
+- [ ] [Alan Rodrigues | AZ-900 Microsoft Azure Fundamentals](https://www.udemy.com/course/microsoft-azure-beginners-guide/)
 
 ### AI-901: Azure AI Fundamentals
-
 - [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
 - [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
 - [ ] [Nikolai Schuler | AI-901 Azure AI Fundamentals Complete Exam Prep](https://www.udemy.com/course/ai-900-azure-ai-fundamentals-complete-exam-prep/)
 - [ ] [Nikolai Schuler | AI-901: Microsoft Azure AI Fundamentals | 5 Practice Exams](https://www.udemy.com/course/ai-900-microsoft-azure-ai-fundamentals-5-practice-exams/)
 
 ### DP-900: Azure Data Fundamentals
-
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
 - [ ] [John Christopher | DP-900 Azure Data Fundamentals hands on course with sims](https://www.udemy.com/course/azure-data-fundamentals-hands-on-course-with-sims/)
 - [ ] [In28Minutes | DP-900: Microsoft Azure Data Fundamentals in a Weekend](https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/)
 
 ### SC-900: Microsoft Security, Compliance, and Identity Fundamentals
-
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
 - [ ] [John Christopher | SC-900: Microsoft Security, Compliance, & Identity with SIMS](https://www.udemy.com/course/sc-900-microsoft-security-compliance-identity-with-sims/)
 
 ### AZ-104: Azure Administrator Associate
-
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
@@ -81,9 +77,15 @@
 ## The Capstone Exam
 
 ### SC-100: Microsoft Cybersecurity Architect Expert
+- [ ] [Alan Rodrigues | SC-100: Microsoft Cybersecurity Architect](https://www.udemy.com/course/azure200/)
+
 
 ## AZURE SERVERLESS
 
+- [ ] [Alan Rodrigues | Terraform on Azure](https://www.udemy.com/course/terraform-on-azure-services/)
+- [ ] [Alan Rodrigues | Mastering Azure PowerShell](https://www.udemy.com/course/azure-powershell/)
+- [ ] [Alan Rodrigues | Docker and Kubernetes - Your complete guide](https://www.udemy.com/course/docker-and-more/)
+- [ ] [Alan Rodrigues | Programming with C#](https://www.udemy.com/course/programming-with-c-sharp/)
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
 
