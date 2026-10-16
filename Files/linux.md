@@ -34,8 +34,12 @@
 - [ ] [Linux Red Hat Certified Engineer (RHCE - EX294)](https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/)
 - [ ] [Red Hat Ansible Automation Training – RHEL 8/9 (RH294) 2026](https://www.udemy.com/course/red-hat-system-administration-lll/)
 
-## CCNA
+## CCNA - (200-301) | CCNP - (350-401 ENCOR, 300-410 ENARSI)
 
+- [ ] [CCNA Routing & Switching Packet Tracer Labs](https://youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct&si=ONsRzEZch5Hct-x2)
+- [ ] [Free CCNA v1.1 200-301 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
+- [ ] [CCNP ENCOR v1.1 350-401 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgOb2uny1CYEzyRy_mc-lE39)
+- [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [Cisco CCNA 200-301 – The Complete Guide to Getting Certified](https://www.udemy.com/course/ccna-complete/)
 - [ ] [Master Cisco CCNA 200-301: Comprehensive All-in-One Course](https://www.udemy.com/course/ccna-jitl/)
 - [ ] [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
@@ -44,9 +48,6 @@
 - [ ] [Cisco CCNA 200-301 Complete Course: Packet Tracer Labs](https://www.udemy.com/course/cisco-ccna-icnd2-200-105-complete-course-sims-and-gns3/)
 - [ ] [The Complete Cisco CCNA & CCNP Course 2026](https://www.udemy.com/course/ccnp-routing-protocols-labs/)
 - [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/)
-
-## CCNP
-
 - [ ] [CCNP/CCIE ENCOR 350-401 v1.2 Mega Course by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-encor-350-401-by-arash-deljoo/)
 - [ ] [CCNA 200-301+CCNP/CCIE ENCOR 350-401 v1.2 by Arash Deljoo](https://www.udemy.com/course/ccna-200-301-ccnpccie-encor-350-401-by-arash-deljoo/)
 - [ ] [Cisco CCNP Enterprise ( ENARSI + ENCOR ) v1.2 Training](https://www.udemy.com/course/ccnp-all-in-one)
