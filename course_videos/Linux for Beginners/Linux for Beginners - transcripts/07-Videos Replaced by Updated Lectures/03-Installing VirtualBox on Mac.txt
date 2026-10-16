@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Videos Replaced by Updated Lectures
+Lecture: Installing VirtualBox on Mac
+----------------------------------------
+
+Open up a web browser and visit virtualbox.org. Look for the downloads link. Now click on the installation file for your platform. In this case, we're downloading the Mac installation file. Once the download is complete, open the file. Now double click on VirtualBox.pkg. That will start the installation process. Click continue. Click continue again. You're just going to accept all the defaults, click install. At the end of the installation, you can start VirtualBox by opening up the finder, navigating to the applications folder and double clicking on VirtualBox.

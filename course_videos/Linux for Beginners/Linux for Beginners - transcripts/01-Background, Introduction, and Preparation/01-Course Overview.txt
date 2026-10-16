@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Background, Introduction, and Preparation.
+Lecture: Course Overview
+----------------------------------------
+
+Welcome to the Linux for Beginners Course! My goal is to help you feel comfortable and confident when using the Linux operating system. I not only want you to understand the fundamentals but also apply them in a practical way that makes you efficient and effective. In this course, we'll start out by learning what Linux is, how it came to be, and some of its strengths and weaknesses. Then we'll talk about how to gain access to a Linux system so you'll have a place to practice your new-found skills. Next, we'll start to really dive into the practical aspects of using the Linux operating system. You'll be introduced to the Linux command line interface, and learn when it's appropriate to use and when it's not. We'll cover everything you need to know about files and directories, including how to create, read, update, delete them and more. You'll also learn some powerful concepts and techniques, including how to redirect input and output and chain commands together using pipes. These are just some of the highlights and we'll be reviewing much more information along the way. By the end of the course, you'll be confident, efficient and effective when using the Linux operating system.

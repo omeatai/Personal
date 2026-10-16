@@ -1,0 +1,71 @@
+In this bonus section you'll find:
+
+ 1. Info on our   Cloud Mastery Bootcamp   - a 12 month training program with live instruction and hands-on projects to build real-world skills on AWS, Linux, Terraform, Python, Containers & Kubernetes, etc.
+
+ 2. Recommended hands-on training (  Challenge Labs  ) to supplement your courses on Udemy
+
+ 3. On-demand   cloud training     on the Digital Cloud Training platform
+
+ Happy learning 👍
+
+ Neal
+
+  Founder of     Digital Cloud Training
+
+  (1)    CLOUD MASTERY BOOTCAMP
+
+ Keen to elevate your cloud career? Enroll in our Cloud Mastery Bootcamp to become a Cloud Engineer, DevOps Engineer, or Solutions Architect! You’ll earn multiple  AWS certifications  and become proficient in  Linux, Terraform, Python, Containers & Kubernetes , etc.
+
+ This   12-month   program includes live training sessions, career coaching and  real-world projects  so you get to build hands-on experience that will set you up for success in the cloud computing industry.
+
+ To learn more about this opportunity, visit     https://digitalcloud.training/cloud-mastery-bootcamp/
+
+  (2)    CHALLENGE LABS
+
+ If you're looking to  build real-world cloud skills  without running the risk of a surprise cloud bill, our   hands-on Challenge Labs   are for you! These scenario-based exercises run in a secure sandbox environment and range from fully guided to advanced hands-on exercises - catering for all skill levels.
+
+ Expand your learning experience and develop practical cloud skills with Challenge Labs:   https://digitalcloud.training/hands-on-challenge-labs/
+
+  (3) ON-DEMAND    AWS TRAINING    ON THE DIGITAL CLOUD TRAINING PLATFORM
+
+ Check out our cost-efficient   monthly/yearly plans   that give you unlimited access to our on-demand cloud training - current and future - covering everything you need to know to pass your AWS certification exam with confidence.
+
+ To learn more about the various AWS certifications, visit:
+
+  AWS Certified Cloud Practitioner
+
+  https://digitalcloud.training/aws-certified-cloud-practitioner/
+
+  AWS Certified Solutions Architect Associate
+
+  https://digitalcloud.training/aws-certified-solutions-architect-associate/
+
+  AWS Certified Developer Associate
+
+  https://digitalcloud.training/aws-certified-developer-associate/
+
+  AWS Certified SysOps Administrator Associate
+
+  https://digitalcloud.training/aws-certified-sysops-administrator-associate/
+
+  AWS Certified Solutions Architect Professional
+
+  https://digitalcloud.training/aws-solutions-architect-professional/
+
+  AWS Security Specialty
+
+  https://digitalcloud.training/aws-certified-security-specialty/
+
+  AWS Advanced Networking Specialty
+
+  https://digitalcloud.training/aws-certified-advanced-networking-specialty/
+
+  AWS Machine Learning Specialty
+
+  https://digitalcloud.training/aws-certified-machine-learning-specialty/
+
+ PS: If you prefer studying on  Udemy  you can access the latest  Udemy coupon links  for our courses here:
+
+   https://digitalcloud.training/udemy-aws-coupon-neal-davis/
+
+ While the content is often comparable we offer additional features such as knowledge reviews and training mode for practice questions as well as ebooks on the Digital Cloud Training platform.PS: If you prefer studying on  Udemy

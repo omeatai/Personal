@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Advanced Command Line Techniques
+Lecture: Switching Users and Running Commands as Others - Text
+----------------------------------------
+
+[No transcript available for this lecture]

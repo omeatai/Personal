@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Files and Directories
+Lecture: Vi Cheat Sheet
+----------------------------------------
+
+[No transcript available for this lecture]

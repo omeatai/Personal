@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Advanced Command Line Techniques
+Lecture: Shell History, Tab Completion, and Command Line Editing - Text
+----------------------------------------
+
+[No transcript available for this lecture]

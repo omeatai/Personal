@@ -1,0 +1,5 @@
+To access your course materials - including code and files used in the course, exam cram PDF, course slides and study plan (optional, requires name/email), visit:
+
+  https://digitalcloud.training/aws-csaa-course-downloads/
+
+  Please make sure you are not behind a corporate firewall or proxy as they can interfere with the download.

@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Files and Directories
+Lecture: Welcome to Shell - Text
+----------------------------------------
+
+[No transcript available for this lecture]

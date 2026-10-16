@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Files and Directories
+Lecture: File and Directory Permissions Explained - Text
+----------------------------------------
+
+[No transcript available for this lecture]

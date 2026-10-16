@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Background, Introduction, and Preparation.
+Lecture: The Linux Directory Structure - Text
+----------------------------------------
+
+[No transcript available for this lecture]

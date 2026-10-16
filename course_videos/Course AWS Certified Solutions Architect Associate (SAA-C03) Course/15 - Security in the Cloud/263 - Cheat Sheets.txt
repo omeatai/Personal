@@ -1,0 +1,11 @@
+AWS IAM Cheat Sheet
+
+   Amazon Cognito Cheat Sheet
+
+   AWS Directory Service Cheat Sheet
+
+   AWS KMS Cheat Sheet
+
+   AWS CloudHSM Cheat Sheet
+
+   AWS WAF & Shield Cheat Sheet

@@ -2,4 +2,15 @@
 /.DS_Store
 */.DS_Store
 *.env
-/course_videos/
+*.webm
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.flv
+*.wmv
+*.m4v
+*.m4a
+*.m4b
+*.m4p
+*.m4v

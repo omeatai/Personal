@@ -1,0 +1,6 @@
+Course: Linux for Beginners
+Chapter: Summary
+Lecture: Conclusion - Congratulations and Thank You!
+----------------------------------------
+
+Congratulations on making it to the end of the course. We've covered a lot of topics along the way. First you started out by learning what Linux is, how it came to be and some of its strengths and weaknesses. Then you learned how to gain access to a Linux system, so you can practice your skills. You got an introduction to the command line interface and started using some basic commands. Next you learned how to manipulate files and directories. You also learned how to use the nano, vi and emacs editors. You conquered obscure Linux permissions and learned about I/O, redirection and pipes. Along the way you learned about how to customize your environment and picked up some tips at becoming efficient at the command line. At this point you not only know the fundamentals of the Linux operating system, but you can also use your knowledge to accomplish worthwhile tasks. Please let me know how these courses helped you and if there's anything I can do for you. I hope to see you again in another one of my courses. Thanks!
