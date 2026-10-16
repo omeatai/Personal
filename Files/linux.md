@@ -13,17 +13,17 @@
 ## LINUX COURSES
 
 - [ ] [CompTIA Linux+ Labs Course (XK0-006) - 7 Hour Free Exam Prep](https://www.youtube.com/watch?v=JXIaR23OdB8)
-- [ ] [**-- LAB --** | CompTIA Linux+ Labs Course (XK0-006) - 7 Hour Free Exam Prep](https://github.com/omeatai/Personal/blob/main/Files/linux/06.md)
+- [ ] [**-- LAB --** | CompTIA Linux+ Labs Course (XK0-006) - 7 Hour Free Exam Prep](https://github.com/omeatai/Personal/blob/main/Files/linux/01.md)
 - [ ] [CompTIA Linux+ (XK0-006) Complete Course & Exam](https://www.udemy.com/course/comptia-linux/)
-- [ ] [**-- LAB --** | CompTIA Linux+ (XK0-006) Complete Course & Exam](https://github.com/omeatai/Personal/blob/main/Files/linux/05.md)
+- [ ] [**-- LAB --** | CompTIA Linux+ (XK0-006) Complete Course & Exam](https://github.com/omeatai/Personal/blob/main/Files/linux/02.md)
 - [ ] [Complete Linux Training Course to Get Your Dream IT Job 2026](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/)
 - [ ] [**-- LAB --** | Complete Linux Training Course to Get Your Dream IT Job 2026](https://github.com/omeatai/Personal/blob/main/Files/linux/03.md)
 - [ ] [Linux for Beginners](https://www.udemy.com/course/linuxforbeginners/)
 - [ ] [**-- LAB --** | Linux for Beginners](https://github.com/omeatai/Personal/blob/main/Files/linux/04.md)
 - [ ] [Linux Command Line - Entire Tutorial Series](https://www.youtube.com/watch?v=avg65oY7sj4)
-- [ ] [**-- LAB --** | Linux Command Line - Entire Tutorial Series](https://github.com/omeatai/Personal/blob/main/Files/linux/01.md)
+- [ ] [**-- LAB --** | Linux Command Line - Entire Tutorial Series](https://github.com/omeatai/Personal/blob/main/Files/linux/05.md)
 - [ ] [Linux Security & Administration From Boot Process to Firewalls](https://www.youtube.com/watch?v=_WB3evmgxYA)
-- [ ] [**-- LAB --** | Linux Security & Administration From Boot Process to Firewalls](https://github.com/omeatai/Personal/blob/main/Files/linux/02.md)
+- [ ] [**-- LAB --** | Linux Security & Administration From Boot Process to Firewalls](https://github.com/omeatai/Personal/blob/main/Files/linux/06.md)
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
 - [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
@@ -64,4 +64,3 @@
 - [ ] [Introduction to Computer Networks for Non-Techies](https://www.udemy.com/course/introduction-to-computer-networks/)
 - [ ] [Introduction to Networking](https://www.udemy.com/course/introduction-to-networking/)
 - [ ] [Python Network Programming for Network Engineers (Python 3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
-
