@@ -18,6 +18,8 @@
 - [ ] [Stephane Maarek | 6 Practice Exams | AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/practice-exams-aws-certified-cloud-practitioner/)
 
 ### AIF-C01: AWS Certified AI Practitioner 
+- [ ] [Stephane Maarek | Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/)
+- [ ] [AWS Certified AI Practitioner - AIF-C01](https://www.udemy.com/course/practice-exams-aws-certified-ai-practitioner/)
 
 ### SAA-C03: AWS Certified Solutions Architect – Associate 
 
