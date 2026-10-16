@@ -42,8 +42,11 @@
 
 ### AZ-104: Azure Administrator Associate
 
-- [ ] [Scott Duffy | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
-- [ ] [Scott Duffy | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
+- [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
+- [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
+- [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
+- [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/)
+- [ ] [Alan Rodrigues | AZ-104 Microsoft Azure Administrator Certification](https://www.udemy.com/course/microsoft-certified-azure-administrator/)
 
 ## Phase 1: Hybrid & Identity Core
 
