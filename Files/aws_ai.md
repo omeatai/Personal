@@ -11,6 +11,7 @@
 ## AWS CLOUD
 
 ### CLF-C02: AWS Certified Cloud Practitioner
+- [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
 
 ### AIF-C01: AWS Certified AI Practitioner 
 
@@ -30,7 +31,7 @@
 
 ### AIP-C01: AWS Certified Generative AI Developer – Professional 
 
-### SCS-C03: AWS Certified Security – Specialty 
+### SCS-C03: AWS Certified Security – Speciality 
 
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
 - [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
