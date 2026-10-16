@@ -15,6 +15,7 @@
 ### AZ-900: Azure Fundamentals
 
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
+- [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/azure/01.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals | Practice Exams](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-practice-exams-tests/)
@@ -28,19 +29,18 @@
 
 ### DP-900: Azure Data Fundamentals
 
-- [ ] [Neal Davis | AWS Certified Solutions Architect Associate (SAA-C03) Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
-- [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
-- [ ] [Neal Davis | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/)
+- [ ] [Scott Duffy | AWS Certified Solutions Architect Associate (SAA-C03) Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [ ] [Scott Duffy | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/)
 
 ### SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 
-- [ ] [Neal Davis | AWS Certified Developer Associate Exam Training DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training)
-- [ ] [Neal Davis | AWS Certified Developer Associate Practice Exams DVA-C02](https://www.udemy.com/course/aws-developer-associate-practice-exams/)
+- [ ] [Scott Duffy | AWS Certified Developer Associate Exam Training DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training)
+- [ ] [Scott Duffy |AWS Certified Developer Associate Practice Exams DVA-C02](https://www.udemy.com/course/aws-developer-associate-practice-exams/)
 
 ### AZ-104: Azure Administrator Associate
 
-- [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
-- [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
+- [ ] [Scott Duffy | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
+- [ ] [Scott Duffy | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
 
 ## Phase 1: Hybrid & Identity Core
 
