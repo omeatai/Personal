@@ -23,6 +23,7 @@
 
 ### SAA-C03: AWS Certified Solutions Architect – Associate 
 - [ ] [Neal Davis | AWS Certified Solutions Architect Associate (SAA-C03) Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Neal Davis | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/)
 - [ ] [Stephane Maarek | Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
 - [ ] [Stephane Maarek | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
@@ -50,10 +51,6 @@
 ### AIP-C01: AWS Certified Generative AI Developer – Professional 
 
 ### SCS-C03: AWS Certified Security – Speciality 
-
-- [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
-- [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
-- [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
 
 ## AWS SERVERLESS
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
