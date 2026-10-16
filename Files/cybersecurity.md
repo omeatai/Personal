@@ -2,7 +2,7 @@
 
 [Back to Personal Page](../README.md)
 
-## UDEMY COURSES
+## TOPICS
 
 - [ ] [TRYHACKME](https://github.com/omeatai/Personal/blob/main/Files/tryhackme.md)
 - [ ] [CYBERSECURITY](https://www.udemy.com/courses/search/?src=ukw&q=cybersecurity)
