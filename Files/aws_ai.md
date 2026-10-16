@@ -2,13 +2,13 @@
 
 [Back to Personal Page](../README.md)
 
-## UDEMY COURSES
+## TOPICS
 
-- [ ] [AWS CLOUD COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws)
-- [ ] [AWS SERVERLESS COURSES](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
-- [ ] [AI COURSES](https://www.udemy.com/courses/search/?src=ukw&q=ai)
+- [ ] [AWS CLOUD](https://www.udemy.com/courses/search/?src=ukw&q=aws)
+- [ ] [AWS SERVERLESS](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
+- [ ] [AI](https://www.udemy.com/courses/search/?src=ukw&q=ai)
 
-## AWS CERTIFIED CLOUD COURSES
+## AWS CLOUD
 
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
 - [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
