@@ -5,6 +5,7 @@
 ## TOPICS
 
 - [ ] [LINUX](https://www.udemy.com/courses/search/?src=ukw&q=linux)
+- [ ] [RHCSA](https://www.udemy.com/courses/search/?src=ukw&q=rhcsa)
 - [ ] [CCNA](https://www.udemy.com/courses/search/?src=ukw&q=ccna)
 - [ ] [CCNP](https://www.udemy.com/courses/search/?src=ukw&q=ccnp)
 - [ ] [NETWORKING](https://www.udemy.com/courses/search/?src=ukw&q=networking)
@@ -26,6 +27,12 @@
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
 - [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
+
+## RHCSA/RHCE COURSES
+
+- [ ] [Linux Redhat Certified System Administrator (RHCSA - EX200)](https://www.udemy.com/course/unofficial-linux-redhat-certified-system-administrator-rhcsa)
+- [ ] [Linux Red Hat Certified Engineer (RHCE - EX294)](https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/)
+- [ ] [Red Hat Ansible Automation Training – RHEL 8/9 (RH294) 2026](https://www.udemy.com/course/red-hat-system-administration-lll/)
 
 ## CCNA
 
