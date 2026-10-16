@@ -13,8 +13,9 @@
 - [ ] [Neal Davis | Introduction to Cloud Computing on AWS for Beginners 2026](https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/)
 - [ ] [Neal Davis | AWS Certified Cloud Practitioner (CLF-C02) Exam Training](https://www.udemy.com/course/aws-certified-cloud-practitioner-training-course/)
 - [ ] [Neal Davis | EXAM REVIEWER - AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-certification-training/)
-- [ ] [AWS Certified Cloud Practitioner Practice Exams CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-practice-exams-c/)
-- [ ] 
+- [ ] [Neal Davis | AWS Certified Cloud Practitioner Practice Exams CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-practice-exams-c/)
+- [ ] [Stephane Maarek | Ultimate AWS Certified Cloud Practitioner CLF-C02 2026](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+- [ ] [Stephane Maarek | 6 Practice Exams | AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/practice-exams-aws-certified-cloud-practitioner/)
 
 ### AIF-C01: AWS Certified AI Practitioner 
 
