@@ -3,7 +3,7 @@
 - [ ] [https://ifeanyiomeata.com/](https://ifeanyiomeata.com/)
 - [ ] [https://www.linkedin.com/in/omeatai/](https://www.linkedin.com/in/omeatai/)
 
-<img width="507" height="532" alt="image" src="https://github.com/user-attachments/assets/fdc780c6-6784-4805-b004-3519a1a886c9" />
+<img width="591" height="566" alt="image" src="https://github.com/user-attachments/assets/c0bde4c6-3396-4296-905e-bd01946f156d" />
 
 <details>
   <summary>🧑‍💻 About Me</summary>
