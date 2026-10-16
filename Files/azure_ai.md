@@ -21,8 +21,10 @@
 
 ### AI-901: Azure AI Fundamentals
 
-- [ ] [Stephane Maarek | Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/)
-- [ ] [Stephane Maarek | AWS Certified AI Practitioner Practice Exams - AIF-C01](https://www.udemy.com/course/practice-exams-aws-certified-ai-practitioner/)
+- [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
+- [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
+- [ ] [Nikolai Schuler | AI-901 Azure AI Fundamentals Complete Exam Prep](https://www.udemy.com/course/ai-900-azure-ai-fundamentals-complete-exam-prep/)
+- [ ] [Nikolai Schuler | AI-901: Microsoft Azure AI Fundamentals | 5 Practice Exams](https://www.udemy.com/course/ai-900-microsoft-azure-ai-fundamentals-5-practice-exams/)
 
 ### DP-900: Azure Data Fundamentals
 
