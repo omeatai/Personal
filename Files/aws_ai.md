@@ -41,6 +41,9 @@
 - [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-cloudops-engineer/)
 
 ### DEA-C01: AWS Certified Data Engineer – Associate 
+- [ ] [Stephane Maarek | AWS Certified Data Engineer Associate 2026 - Hands On!](https://www.udemy.com/course/aws-data-engineer/)
+- [ ] [Stephane Maarek | AWS Certified Data Engineer - Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-data-engineer-associate-r/)
+- [ ] [Neal Davis | AWS Certified Data Engineer Associate Practice Exams DEA-C01](https://www.udemy.com/course/aws-certified-data-engineer-associate-practice-exams-dea/)
 
 ### MLA-C01: AWS Certified Machine Learning Engineer – Associate
 
