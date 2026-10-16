@@ -14,8 +14,10 @@
 
 ### AZ-900: Azure Fundamentals
 
-- [ ] [Neal Davis | Introduction to Cloud Computing on AWS for Beginners 2026](https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/)
-- [ ] [Neal Davis | AWS Certified Cloud Practitioner (CLF-C02) Exam Training](https://www.udemy.com/course/aws-certified-cloud-practitioner-training-course/)
+- [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
+- [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
+- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
+- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals | Practice Exams](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-practice-exams-tests/)
 
 ### AI-901: Azure AI Fundamentals
 
