@@ -36,6 +36,8 @@
 - [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
 - [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
 
+## Phase 1: Hybrid & Identity Core
+
 ### AZ-802: Windows Server Administrator Associate
 
 ### SC-300: Identity and Access Administrator Associate
