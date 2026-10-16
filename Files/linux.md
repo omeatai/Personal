@@ -9,7 +9,9 @@
 ## YOUTUBE
 
 - [ ] [Linux Command Line - Entire Tutorial Series](https://www.youtube.com/watch?v=avg65oY7sj4)
+- [ ] [**-- LAB --** | Linux Command Line - Entire Tutorial Series](https://github.com/omeatai/Personal/blob/main/Files/linux/01.md)
 - [ ] [Linux Security & Administration From Boot Process to Firewalls](https://www.youtube.com/watch?v=_WB3evmgxYA)
+- [ ] [**-- LAB --** | Linux Security & Administration From Boot Process to Firewalls](https://github.com/omeatai/Personal/blob/main/Files/linux/02.md)
 
 ## LINUX COURSES
 
