@@ -13,6 +13,8 @@
 ## Phase 0: Fundamentals
 
 ### AZ-900: Azure Fundamentals
+- [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-900/)
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [**-- LAB --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/01.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
