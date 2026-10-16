@@ -36,8 +36,9 @@
 
 ### SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 
-- [ ] [Scott Duffy | AWS Certified Developer Associate Exam Training DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training)
-- [ ] [Scott Duffy |AWS Certified Developer Associate Practice Exams DVA-C02](https://www.udemy.com/course/aws-developer-associate-practice-exams/)
+- [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
+- [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
+- [ ] [John Christopher | SC-900: Microsoft Security, Compliance, & Identity with SIMS](https://www.udemy.com/course/sc-900-microsoft-security-compliance-identity-with-sims/)
 
 ### AZ-104: Azure Administrator Associate
 
