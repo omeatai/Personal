@@ -26,9 +26,6 @@
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
 - [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
-- [ ] [The Linux Command Line Bootcamp: Beginner To Power User](https://www.udemy.com/course/the-linux-command-line-bootcamp/)
-- [ ] [Linux Mastery: Master the Linux Command Line in 11.5 Hours](https://www.udemy.com/course/linux-mastery/)
-- [ ] [Linux Administration: The Complete Linux Bootcamp](https://www.udemy.com/course/master-linux-administration/)
 
 ## CCNA
 
