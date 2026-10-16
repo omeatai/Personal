@@ -4,10 +4,15 @@
 
 ## UDEMY COURSES
 
+- [ ] [TRYHACKME](https://github.com/omeatai/Personal/blob/main/Files/tryhackme.md)
 - [ ] [CYBERSECURITY](https://www.udemy.com/courses/search/?src=ukw&q=cybersecurity)
 - [ ] [ETHICAL HACKING](https://www.udemy.com/courses/search/?src=ukw&q=ethical+hacking)
 - [ ] [PENETRATION TESTING](https://www.udemy.com/courses/search/?src=ukw&q=penetration+testing)
 - [ ] [SPLUNK](https://www.udemy.com/courses/search/?src=ukw&q=splunk)
+
+## TRYHACKME COURSES
+
+- [ ] [TRYHACKME](https://github.com/omeatai/Personal/blob/main/Files/tryhackme.md)
 
 ## CYBERSECURITY COURSES
 
