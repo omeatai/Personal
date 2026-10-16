@@ -10,7 +10,11 @@
 ## AWS CLOUD
 
 ### CLF-C02: AWS Certified Cloud Practitioner
-- [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
+- [ ] [Neal Davis | Introduction to Cloud Computing on AWS for Beginners 2026](https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/)
+- [ ] [Neal Davis | AWS Certified Cloud Practitioner (CLF-C02) Exam Training](https://www.udemy.com/course/aws-certified-cloud-practitioner-training-course/)
+- [ ] [Neal Davis | EXAM REVIEWER - AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-certification-training/)
+- [ ] [AWS Certified Cloud Practitioner Practice Exams CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-practice-exams-c/)
+- [ ] 
 
 ### AIF-C01: AWS Certified AI Practitioner 
 
@@ -37,7 +41,6 @@
 - [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
 
 ## AWS SERVERLESS
-
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
 - [ ] [The Complete Guide to Build Serverless Applications on AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
@@ -45,7 +48,6 @@
 - [ ] [AWS Lambda, Python(Boto3) & Serverless- Beginner to Advanced](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
 
 ## AI
-
 - [ ] [Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)](https://www.udemy.com/course/nextjs-chatgpt/)
 - [ ] [Next JS & Open AI / GPT: Next-generation Next JS & AI apps](https://www.udemy.com/course/next-js-ai/)
 - [ ] [Introduction to OpenAI API & ChatGPT API for Developers](https://www.udemy.com/course/introduction-to-openai-api-chatgpt-api-chatgpt-plugins/)
