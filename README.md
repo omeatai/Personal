@@ -53,7 +53,7 @@ Hi, my name is Ifeanyi. I am an engineer working across cloud, cybersecurity, ne
 - [ ] [AWS PROJECTS](https://github.com/omeatai/AWS-LABS-IFEANYI)
 - [ ] [AZURE PROJECTS](https://github.com/omeatai/AZURE-LABS-IFEANYI)
 
-### 🏛️ COURSES
+### 🏛️ LEARN
 
 - [ ] [CYBERSECURITY](https://github.com/omeatai/Personal/blob/main/Files/cybersecurity.md)
 - [ ] [LINUX & NETWORKING](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
