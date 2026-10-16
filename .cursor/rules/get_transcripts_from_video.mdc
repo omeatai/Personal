@@ -1,0 +1,90 @@
+---
+description: Transcribe a local video or a folder of videos into a sibling .txt transcript
+globs: Personal/course_videos/**/*.mp4,Personal/course_videos/**/*.mkv,Personal/course_videos/**/*.mov,Personal/course_videos/**/*.webm,Personal/course_videos/**/*.m4v,Personal/course_videos/**/*.avi
+alwaysApply: false
+---
+
+# Local video transcript fetcher
+
+## Role
+When this rule is applied to a local video, or to a folder of videos, write one transcript per video as a `.txt` file in the **same folder** as that video. Do not download video. Do not call YouTube, Tactiq, or any caption site. Do not commit or push unless the user asks.
+
+Applies to `Personal/course_videos/` and to any other local video or folder the user attaches.
+
+## Task
+Save `<video stem>.txt` beside the source. Keep spaces and punctuation in the stem. Recurse into subfolders. Ignore `OLD_FILES`.
+
+Skip a video whose sibling `.txt` already has timestamp cues and reaches the end of the video. If the `.txt` is empty, says `Transcript not available`, or stops well before the end, continue from the last good cue. Do not discard finished cues.
+
+Skip a file named `MERGED*` when that folder also has the source clips. If the folder contains only one video, transcribe it even when the title says "entire" or "merged".
+
+## Tool
+From the `Personal` root:
+
+```bash
+python bin/transcribe_local_videos.py --file "course_videos/<folder>/<video>.webm"
+python bin/transcribe_local_videos.py --dir "course_videos/<folder>"
+```
+
+Absolute paths are fine. The script uses `ffmpeg` / `ffprobe` and `faster-whisper`. Install `faster-whisper` only if the import fails (`python -m pip install faster-whisper`). Prefer CUDA `float16`. If inference reports a missing `cublas64_12.dll`, install `nvidia-cublas-cu12` and `nvidia-cudnn-cu12` and add their `bin` folders with `os.add_dll_directory` before loading the model. If CUDA still fails, retry once with `small.en` on CPU and record that fallback in the summary. Do not invent a second pipeline.
+
+Model order: `distil-large-v3`, then `small.en` if the larger model does not fit in GPU memory.
+
+## Process
+Work shortest file first when the batch is large.
+
+For each source video:
+
+1. Probe subtitle streams with `ffprobe`. If a text subtitle stream exists (`subrip`, `ass`, `ssa`, `mov_text`, `webvtt`), extract it with `ffmpeg` and turn cues into the timestamp lines below. Do not download a caption.
+2. If there is no text subtitle stream, decode mono 16 kHz audio with `ffmpeg` and transcribe it in 10-minute windows with faster-whisper (`language=en`, `vad_filter=True`, `beam_size=1`, `condition_on_previous_text=False`). Do not open the video through PyAV. Add each window's start time to the segment time. `BatchedInferencePipeline` is allowed when it uses those same settings.
+3. Write `<stem>.txt` in the video's folder. On a bad or unreadable file, write the placeholder below and continue.
+
+Report progress every 5 videos. On a long file, report every window.
+
+## Output
+
+```
+# [Video title from the filename]
+
+Source: [path relative to Personal, forward slashes]
+Fetched On: [YYYY-MM-DD HH:MM:SS]
+Language: English
+Transcript Type: Embedded subtitles | Local whisper (distil-large-v3, cuda)
+
+---
+
+[00:00] First segment.
+[00:14] Next segment.
+```
+
+Use `[MM:SS]` under one hour and `[HH:MM:SS]` at one hour or more. Keep the words the track or the model returned. Do not summarize them in this file.
+
+### Placeholder
+
+```
+# [Video title]
+
+Source: [relative path]
+Fetched On: [YYYY-MM-DD HH:MM:SS]
+Language: English
+Transcript Type: Unavailable
+
+---
+
+Transcript not available for: [Video title]
+Reason: [what failed]
+```
+
+### Summary
+Write `transcript_summary.md` in each folder you were asked to transcribe: considered, transcribed, skipped, failed (with the reason), and each `.txt` with its source path.
+
+If faster-whisper cannot be imported and cannot be installed, stop. Write that reason once in `course_videos/local_transcript_summary.md`. Do not emit a placeholder per video for a missing tool.
+
+## Quality checklist
+- [ ] A finished sibling `.txt` was not regenerated
+- [ ] Empty or truncated transcripts were continued, not left incomplete
+- [ ] `MERGED*` was skipped only when source clips exist in that folder
+- [ ] The `.txt` sits beside the video and uses the video stem
+- [ ] Timestamps are present and the source path is in the header
+- [ ] `transcript_summary.md` matches the files on disk
+- [ ] A failed file records the reason and the batch continues
