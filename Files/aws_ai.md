@@ -34,7 +34,10 @@
 - [ ] [Stephane Maarek | AWS Certified Developer Associate Practice Exams](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/)
 
 ### SOA-C03: AWS Certified CloudOps Engineer – Associate 
-
+- [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
+- [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
+- [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-associate/)
+- [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-cloudops-engineer/)
 
 ### DEA-C01: AWS Certified Data Engineer – Associate 
 
