@@ -5,14 +5,19 @@
 ## TOPICS
 
 - [ ] [TRYHACKME](https://github.com/omeatai/Personal/blob/main/Files/tryhackme.md)
+- [ ] [SPLUNK](https://www.udemy.com/courses/search/?src=ukw&q=splunk)
 - [ ] [CYBERSECURITY](https://www.udemy.com/courses/search/?src=ukw&q=cybersecurity)
 - [ ] [ETHICAL HACKING](https://www.udemy.com/courses/search/?src=ukw&q=ethical+hacking)
 - [ ] [PENETRATION TESTING](https://www.udemy.com/courses/search/?src=ukw&q=penetration+testing)
-- [ ] [SPLUNK](https://www.udemy.com/courses/search/?src=ukw&q=splunk)
 
 ## TRYHACKME COURSES
 
 - [ ] [TRYHACKME](https://github.com/omeatai/Personal/blob/main/Files/tryhackme.md)
+
+## SPLUNK
+
+- [ ] [Free Splunk Tutorial - Splunk Basics Course](https://www.udemy.com/course/splunk-basics-course/)
+- [ ] [Free Splunk Tutorial - A No-Nonsense Splunk Course | Getting Started Guide](https://www.udemy.com/course/no-nonsense-course-on-using-splunk/)
 
 ## CYBERSECURITY COURSES
 
@@ -36,8 +41,5 @@
 - [ ] [Learn Network Hacking From Scratch (WiFi & Wired)](https://www.udemy.com/course/wifi-hacking-penetration-testing-from-scratch/?couponCode=24T2MT111524)
 - [ ] [Wireshark: Packet Analysis and Ethical Hacking: Core Skills](https://www.udemy.com/course/wireshark-packet-analysis-and-ethical-hacking-core-skills/?couponCode=24T2MT111524)
 
-## SPLUNK
 
-- [ ] [Free Splunk Tutorial - Splunk Basics Course](https://www.udemy.com/course/splunk-basics-course/)
-- [ ] [Free Splunk Tutorial - A No-Nonsense Splunk Course | Getting Started Guide](https://www.udemy.com/course/no-nonsense-course-on-using-splunk/)
 
