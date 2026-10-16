@@ -29,8 +29,10 @@
 
 ### DP-900: Azure Data Fundamentals
 
-- [ ] [Scott Duffy | AWS Certified Solutions Architect Associate (SAA-C03) Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
-- [ ] [Scott Duffy | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/)
+- [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
+- [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
+- [ ] [John Christopher | DP-900 Azure Data Fundamentals hands on course with sims](https://www.udemy.com/course/azure-data-fundamentals-hands-on-course-with-sims/)
+- [ ] [In28Minutes | DP-900: Microsoft Azure Data Fundamentals in a Weekend](https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/)
 
 ### SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 
