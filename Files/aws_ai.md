@@ -3,7 +3,6 @@
 [Back to Personal Page](../README.md)
 
 ## TOPICS
-
 - [ ] [AWS CLOUD](https://www.udemy.com/courses/search/?src=ukw&q=aws)
 - [ ] [AWS SERVERLESS](https://www.udemy.com/courses/search/?src=ukw&q=aws+serverless)
 - [ ] [AI](https://www.udemy.com/courses/search/?src=ukw&q=ai)
