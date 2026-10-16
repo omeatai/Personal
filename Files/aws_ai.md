@@ -28,8 +28,13 @@
 - [ ] [Stephane Maarek | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
 
 ### DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate 
+- [ ] [Neal Davis | AWS Certified Developer Associate Exam Training DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training)
+- [ ] [Neal Davis | AWS Certified Developer Associate Practice Exams DVA-C02](https://www.udemy.com/course/aws-developer-associate-practice-exams/)
+- [ ] [Stephane Maarek | Ultimate AWS Certified Developer Associate 2026 DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
+- [ ] [Stephane Maarek | AWS Certified Developer Associate Practice Exams](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/)
 
 ### SOA-C03: AWS Certified CloudOps Engineer – Associate 
+
 
 ### DEA-C01: AWS Certified Data Engineer – Associate 
 
