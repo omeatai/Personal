@@ -6,6 +6,11 @@
 
 - [ ] [LINUX](https://www.udemy.com/courses/search/?src=ukw&q=linux)
 
+## YOUTUBE
+
+- [ ] [Linux Command Line - Entire Tutorial Series](https://www.youtube.com/watch?v=avg65oY7sj4)
+- [ ] [Linux Security & Administration From Boot Process to Firewalls](https://www.youtube.com/watch?v=_WB3evmgxYA)
+
 ## LINUX COURSES
 
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
@@ -17,10 +22,7 @@
 - [ ] [CompTIA Linux+ (XK0-006) Complete Course & Exam](https://www.udemy.com/course/comptia-linux/)
 - [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
 
-## YOUTUBE
 
-- [ ] [Linux Command Line - Entire Tutorial Series](https://www.youtube.com/watch?v=avg65oY7sj4)
-- [ ] [Linux Security & Administration From Boot Process to Firewalls](https://www.youtube.com/watch?v=_WB3evmgxYA)
 
 
 
