@@ -57,7 +57,7 @@ Hi, my name is Ifeanyi. I am an engineer working across cloud, cybersecurity, ne
 
 - [ ] [CYBERSECURITY](https://github.com/omeatai/Personal/blob/main/Files/cybersecurity.md)
 - [ ] [NETWORKING](https://github.com/omeatai/Personal/blob/main/Files/networking.md)
-- [ ] [LINUX](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
+- [ ] [LINUX & NETWORKING](https://github.com/omeatai/Personal/blob/main/Files/linux.md)
 - [ ] [AWS](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
 - [ ] [AZURE](https://github.com/omeatai/Personal/blob/main/Files/aws_ai.md)
 - [ ] [DEVOPS](https://github.com/omeatai/Personal/blob/main/Files/devops.md)
