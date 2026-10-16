@@ -19,9 +19,13 @@
 
 ### AIF-C01: AWS Certified AI Practitioner 
 - [ ] [Stephane Maarek | Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/)
-- [ ] [AWS Certified AI Practitioner - AIF-C01](https://www.udemy.com/course/practice-exams-aws-certified-ai-practitioner/)
+- [ ] [Stephane Maarek | AWS Certified AI Practitioner Practice Exams - AIF-C01](https://www.udemy.com/course/practice-exams-aws-certified-ai-practitioner/)
 
 ### SAA-C03: AWS Certified Solutions Architect – Associate 
+- [ ] [Neal Davis | AWS Certified Solutions Architect Associate (SAA-C03) Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+- [ ] [Neal Davis | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/)
+- [ ] [Stephane Maarek | Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
+- [ ] [Stephane Maarek | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
 
 ### DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate 
 
