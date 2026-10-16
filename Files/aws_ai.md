@@ -11,7 +11,7 @@
 ## AWS CERTIFIED CLOUD COURSES
 
 - [ ] [Neal Davis | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Neal+Davis)
-- [ ] [**-- LAB 1 --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
+- [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Stephane Maarek | AWS Certified](https://www.udemy.com/courses/search/?src=ukw&q=Stephane%20Maarek)
 
 ## AWS SERVERLESS LABS COURSES
