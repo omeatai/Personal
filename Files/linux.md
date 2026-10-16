@@ -11,6 +11,8 @@
 
 ## LINUX COURSES
 
+- [ ] [CompTIA Linux+ (XK0-006) Complete Course & Exam](https://www.udemy.com/course/comptia-linux/)
+- [ ] [**-- LAB --** | CompTIA Linux+ (XK0-006) Complete Course & Exam](https://github.com/omeatai/Personal/blob/main/Files/linux/05.md)
 - [ ] [Complete Linux Training Course to Get Your Dream IT Job 2026](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/)
 - [ ] [**-- LAB --** | Complete Linux Training Course to Get Your Dream IT Job 2026](https://github.com/omeatai/Personal/blob/main/Files/linux/03.md)
 - [ ] [Linux for Beginners](https://www.udemy.com/course/linuxforbeginners/)
@@ -21,11 +23,10 @@
 - [ ] [**-- LAB --** | Linux Security & Administration From Boot Process to Firewalls](https://github.com/omeatai/Personal/blob/main/Files/linux/02.md)
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
+- [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
 - [ ] [The Linux Command Line Bootcamp: Beginner To Power User](https://www.udemy.com/course/the-linux-command-line-bootcamp/)
 - [ ] [Linux Mastery: Master the Linux Command Line in 11.5 Hours](https://www.udemy.com/course/linux-mastery/)
 - [ ] [Linux Administration: The Complete Linux Bootcamp](https://www.udemy.com/course/master-linux-administration/)
-- [ ] [CompTIA Linux+ (XK0-006) Complete Course & Exam](https://www.udemy.com/course/comptia-linux/)
-- [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
 
 ## CCNA
 
