@@ -38,6 +38,9 @@
 - [ ] [John Christopher | SC-900: Microsoft Security, Compliance, & Identity with SIMS](https://www.udemy.com/course/sc-900-microsoft-security-compliance-identity-with-sims/)
 
 ### AZ-104: Azure Administrator Associate
+- [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-104/)
+- [ ] [Exam Prep 2](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/practice/assessment?assessment-type=practice&assessmentId=21&practice-assessment-type=certification&source=docs)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
