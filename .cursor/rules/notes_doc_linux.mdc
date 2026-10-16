@@ -1,0 +1,116 @@
+---
+description: Linux course notes from local videos — lab link, course index, chapter accordions, commands, and figures
+globs:
+  - Personal/Files/linux.md
+  - Personal/Files/linux/**/*.md
+alwaysApply: false
+---
+
+# Linux course notes
+
+Use this rule for Linux only. Trigger: **"apply the notes_doc_linux rule"**, or any request to document a Linux video or lab under `Personal/Files/`. Do not copy the Lab / Terminal Commands / Code child accordions from `notes_doc.mdc`.
+
+## Hub
+
+`Personal/Files/linux.md` is a link list. A lab row links to that course's index, same shape as the AWS lab row in `Personal/Files/aws_ai.md`. Do not paste the course into `linux.md`.
+
+```markdown
+- [ ] [**-- LAB --** | Course Title](https://github.com/omeatai/Personal/blob/main/Files/linux/01.md)
+```
+
+## Layout
+
+Mirror `Personal/Files/aws/01.md`, `Personal/Files/aws/udemy/md/`, and `Personal/Files/aws/udemy/images/`.
+
+| Course | Index | Chapters | Figures | Video and sibling `.txt` transcript |
+| --- | --- | --- | --- | --- |
+| Linux Command Line - Entire Tutorial Series | `Personal/Files/linux/01.md` | `Personal/Files/linux/command-line/md/NNN-title.md` | `Personal/Files/linux/command-line/images/NNN/1.jpg` | `Personal/course_videos/Linux Command Line - Entire Tutorial Series/` |
+| Linux Security & Administration From Boot Process to Firewalls | `Personal/Files/linux/02.md` | `Personal/Files/linux/security/md/NNN-title.md` | `Personal/Files/linux/security/images/NNN/1.jpg` | `Personal/course_videos/Linux Security & Administration From Boot Process to Firewalls/` |
+
+`NNN` is the chapter number padded to 3 digits. From a chapter file, figures are `../images/NNN/1.jpg`. The contents link is `../../01.md` or `../../02.md`.
+
+## Course index
+
+Match `Personal/Files/aws/01.md`:
+
+- Back link to `Files/linux.md`
+- `#` course title
+- `## [COURSE](url)` using the YouTube or course URL already on the `linux.md` row or in the transcript
+- `## Introduction`
+- `## Table of contents` with sections; each chapter number links to its own file
+
+## Chapter page
+
+Accordion spacing is the spacing in `Personal/bin/format.md`: one blank line after `</summary>` and one blank line before `</details>`.
+
+1. `[← Course contents](../../01.md)` (or `02.md`)
+2. `# N. Title`, course link, transcript link, video time range
+3. `## Introduction` (plain heading)
+4. `## Detailed Explanation` (plain heading) and one `<details>` step per topic
+5. Questions and Answers accordion — the only separate section, immediately before the summary
+6. `## Summary` (plain heading)
+7. `## References` (plain heading; first link is the course URL)
+
+Inside each step, mix notes, commands, code, and figures. Do **not** add child accordions named Lab, Terminal Commands, or Code.
+
+- `- [x]` notes for that step
+- fenced `bash` for commands spoken in that step
+- fenced code when the transcript shows config or file text
+- at least one figure: `![**Figure 1.** caption](../images/NNN/1.jpg)`
+
+Q&A answers use nested `<details><summary>Answer</summary>` and `- [x]` lines only.
+
+## Source of truth
+
+- Use the local video and its sibling transcript `.txt`. Do not invent flags, paths, or steps the transcript does not support.
+- Write spoken commands as real commands (`apt dash get` → `apt-get`, `LS dash L A H` → `ls -lah`).
+- If the video has embedded chapter markers, write one chapter doc per marker. Otherwise start a chapter where the transcript starts a new tutorial or lesson.
+- Inside a chapter, start a new step when the command or topic changes.
+
+## Figures
+
+- Grab stills with ffmpeg from the local video. Do not download images.
+- One frame per step: a command, man page, diagram, config file, or terminal result on screen, plus a frame at each chapter start.
+- If a frame is black or blank, grab another frame a few seconds later.
+- Do not save long runs of near-duplicate frames.
+- Name files `1.jpg`, `2.jpg`, … in that chapter's image folder.
+
+## Skeleton
+
+```markdown
+<details>
+  <summary>Step 1 — List the directory with ls</summary>
+
+### Step 1 — List the directory with ls
+
+- [x] **`ls` lists the current directory**
+  - With no options, `ls` uses the current directory as its argument.
+
+```bash
+ls
+ls -lah
+man ls
+```
+
+![**Figure 1.** ls beside the file manager](../images/003/1.jpg)
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
+
+## Questions and Answers
+
+### Question 1: What does `ls` list when it has no arguments?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The current directory.
+
+</details>
+
+</details>
+
+## Summary
+```
