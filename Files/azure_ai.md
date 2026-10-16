@@ -10,6 +10,8 @@
 
 ## AZURE CLOUD
 
+## Phase 0: Fundamentals
+
 ### AZ-900: Azure Fundamentals
 
 - [ ] [Neal Davis | Introduction to Cloud Computing on AWS for Beginners 2026](https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/)
@@ -42,9 +44,13 @@
 
 ### SC-300: Identity and Access Administrator Associate
 
+## Phase 2: Cloud Defence & SecOps
+
 ### SC-200: Security Operations Analyst Associate
 
 ### SC-500: Microsoft Cloud and AI Security Engineer Associate
+
+## Phase 3: Data Systems & Architecture
 
 ### DP-300: Azure Database Administrator Associate
 
@@ -54,11 +60,15 @@
 
 ### AZ-400: Azure DevOps Engineer Expert
 
+## Phase 4: Advanced AI & MLOps
+
 ### AI-200: Azure AI Cloud Developer Associate
 
 ### AI-103: Azure AI Apps and Agents Developer Associate
 
 ### AI-300: Machine Learning Operations (MLOps) Engineer Associate
+
+## The Capstone Exam
 
 ### SC-100: Microsoft Cybersecurity Architect Expert
 
