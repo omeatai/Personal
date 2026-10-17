@@ -93,6 +93,9 @@
 ## The Capstone Exam
 
 ### SC-100: Microsoft Cybersecurity Architect Expert
+- [ ] [Microsoft Learn | SC-100: Microsoft Cybersecurity Architect Expert](https://learn.microsoft.com/en-us/training/courses/sc-100t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-100/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Alan Rodrigues | SC-100: Microsoft Cybersecurity Architect](https://www.udemy.com/course/azure200/)
 
 
