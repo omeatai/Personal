@@ -33,12 +33,18 @@
 - [ ] [Nikolai Schuler | AI-901: Microsoft Azure AI Fundamentals | 5 Practice Exams](https://www.udemy.com/course/ai-900-microsoft-azure-ai-fundamentals-5-practice-exams/)
 
 ### DP-900: Azure Data Fundamentals
+- [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-900/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
 - [ ] [John Christopher | DP-900 Azure Data Fundamentals hands on course with sims](https://www.udemy.com/course/azure-data-fundamentals-hands-on-course-with-sims/)
 - [ ] [In28Minutes | DP-900: Microsoft Azure Data Fundamentals in a Weekend](https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/)
 
 ### SC-900: Microsoft Security, Compliance, and Identity Fundamentals
+- [ ] [Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
 - [ ] [John Christopher | SC-900: Microsoft Security, Compliance, & Identity with SIMS](https://www.udemy.com/course/sc-900-microsoft-security-compliance-identity-with-sims/)
@@ -47,6 +53,7 @@
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-104/)
 - [ ] [Exam Prep 2](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/practice/assessment?assessment-type=practice&assessmentId=21&practice-assessment-type=certification&source=docs)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
