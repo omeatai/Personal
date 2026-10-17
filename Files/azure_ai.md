@@ -91,18 +91,30 @@
 
 ### +AZ-305: Azure Solutions Architect Expert
 - [ ] [Microsoft Learn | AZ-305: Azure Solutions Architect Expert](https://learn.microsoft.com/en-us/training/courses/az-305t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-203/)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-305/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AZ-400: Azure DevOps Engineer Expert
+- [ ] [Microsoft Learn | AZ-400: Azure DevOps Engineer Expert](https://learn.microsoft.com/en-us/training/courses/az-400t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-400/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 4: Advanced AI & MLOps
 
 ### +AI-200: Azure AI Cloud Developer Associate
+- [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-200/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AI-103: Azure AI Apps and Agents Developer Associate
+- [ ] [Microsoft Learn | AI-103: Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-103t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-103/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
+- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## The Capstone Exam
 
