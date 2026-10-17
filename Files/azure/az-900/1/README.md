@@ -161,12 +161,102 @@ What if you're already established with VMware in a private cloud environment bu
 
 Next unit: Describe the consumption-based model
 
+Describe the consumption-based model
+Completed
+100 XP
+3 minutes
+Cloud computing operates on a consumption-based model. You pay for the IT resources you use, and nothing more. Instead of buying and maintaining your own datacenter infrastructure, you rent compute power and storage and release those resources when you're done.
 
+In traditional IT budgeting, you may hear the terms capital expenditure (CapEx) and operational expenditure (OpEx). CapEx refers to up-front spending on physical infrastructure like servers, network hardware, and datacenter space. OpEx refers to ongoing spending on services over time. Because you pay for cloud services as you consume them, cloud computing is classified as an operational expense.
 
+The consumption-based model offers several key benefits:
 
+No upfront costs for hardware or datacenter infrastructure.
+No need to purchase and manage capacity that may go underutilized.
+The ability to add resources when demand increases.
+The ability to release resources when demand decreases.
+Capacity planning: traditional vs. cloud
 
+<img width="1920" height="1100" alt="image" src="https://github.com/user-attachments/assets/c43e2d4e-72f6-4ac3-ae3a-5e55ae0bdc9e" />
 
+With a traditional datacenter, you estimate future resource needs in advance. Overestimate, and you overspend on infrastructure that sits idle. Underestimate, and your applications suffer degraded performance. Fixing the problem means ordering, installing, and provisioning additional hardware, power, and cooling.
 
+In a cloud-based model, you adjust resources to match actual demand. Add virtual machines when you need more capacity; remove them when demand drops. You pay only for what you use, not for idle capacity. In practice, you can scale out during peak demand and scale back in when traffic subsides.
+
+Cloud pricing
+Cloud providers use a pay-as-you-go pricing model. You typically pay only for the services you consume, which helps you:
+
+Plan and manage operating costs.
+Run infrastructure more efficiently.
+Scale as workload needs change.
+The cloud provider maintains the underlying infrastructure, including power, cooling, hardware, and networking, so you can focus on solving business problems and delivering new capabilities to your users.
+
+Next unit: Module assessment
+
+Module assessment
+200 XP
+5 minutes
+Choose the best response for each question.
+
+Check your knowledge
+
+1. What is cloud computing?
+
+Delivery of computing services over the internet.
+
+Delivery of storage services over the internet.
+
+Delivery of websites accessible via the internet.
+
+Answer: A
+2. Which cloud model uses some datacenters focused on providing cloud services to anyone that wants them, and some data centers that are focused on a single customer?
+
+Public cloud
+
+Hybrid cloud
+
+Multicloud
+Answer: B
+3. According to the shared responsibility model, which cloud service type places the most responsibility on the customer?
+
+Infrastructure as a Service (IaaS)
+
+Software as a Service (SaaS)
+
+Platform as a Service (PaaS)
+Answer: A
+
+Next unit: Summary
+
+Summary
+Completed
+100 XP
+2 minutes
+In this module, you learned about general cloud concepts. You started with an understanding of what cloud computing is. You also learned about the shared responsibility model and how you and your cloud provider share the responsibility of keeping your information in the cloud secure. You covered the differences between the cloud models (public, private, hybrid, and multicloud). Then, you wrapped up with a unit on how the cloud shifts IT spend from a capital expense to an operational expense.
+
+Learning objectives
+You should now be able to:
+
+Define cloud computing.
+Describe the shared responsibility model.
+Define cloud models, including public, private, and hybrid.
+Identify appropriate use cases for each cloud model.
+Describe the consumption-based model.
+Compare cloud pricing models.
+Additional resources
+The following resources provide more information on topics in this module or related to this module.
+
+Shared responsibility model - The sharing of responsibilities for the cloud between you and your cloud provider.
+Introduction to Azure VMware Solution - A Microsoft Learn course that dives deeper into Azure VMware Solution.
+Introduction to Azure hybrid cloud services - A Microsoft Learn course that explains hybrid cloud in greater detail.
+Explore with Copilot
+ Tip
+
+Try one of these prompts in Copilot Chat:
+
+"Explain shared responsibility across on-premises, IaaS, PaaS, and SaaS using one concrete business application example."
+"Compare public, private, hybrid, and multicloud models, then recommend the best fit for three different organizational scenarios."
+"Create a financial comparison of CapEx versus OpEx for moving a workload to a consumption-based cloud model."
 
 
 
