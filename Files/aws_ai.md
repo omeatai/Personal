@@ -10,6 +10,9 @@
 ## AWS CLOUD
 
 ### CLF-C02: AWS Certified Cloud Practitioner - [x]
+- [ ] [AWS Skill Builder | CLF-C02: AWS Certified Cloud Practitioner](https://skillbuilder.aws/learning-plan/8UUCEZGNX4/exam-prep-plan-aws-certified-cloud-practitioner-clfc02--english/1J2VTQSGU2)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner-clf-c02/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | Introduction to Cloud Computing on AWS for Beginners 2026](https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/)
 - [ ] [Neal Davis | AWS Certified Cloud Practitioner (CLF-C02) Exam Training](https://www.udemy.com/course/aws-certified-cloud-practitioner-training-course/)
 - [ ] [Neal Davis | EXAM REVIEWER - AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-certification-training/)
@@ -18,10 +21,16 @@
 - [ ] [Stephane Maarek | 6 Practice Exams | AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/practice-exams-aws-certified-cloud-practitioner/)
 
 ### AIF-C01: AWS Certified AI Practitioner 
+- [ ] [AWS Skill Builder | AIF-C01: AWS Certified AI Practitioner](https://skillbuilder.aws/learning-plan/3NRN71QZR2/exam-prep-plan-aws-certified-ai-practitioner-aifc01--english/FBV4STG94B)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-ai-practitioner-aif-c01/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Stephane Maarek | Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/)
 - [ ] [Stephane Maarek | AWS Certified AI Practitioner Practice Exams - AIF-C01](https://www.udemy.com/course/practice-exams-aws-certified-ai-practitioner/)
 
 ### SAA-C03: AWS Certified Solutions Architect – Associate 
+- [ ] [AWS Skill Builder | SAA-C03: AWS Certified Solutions Architect](https://skillbuilder.aws/learning-plan/UYRXS2DF85/exam-prep-plan-aws-certified-solutions-architect--associate-saac03--english/U991QUF9C3)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c03/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | AWS Certified Solutions Architect Associate (SAA-C03) Course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
 - [ ] [**-- LAB --** | AWS Certified Solutions Architect Associate](https://github.com/omeatai/Personal/blob/main/Files/aws/01.md)
 - [ ] [Neal Davis | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/)
