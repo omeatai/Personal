@@ -12,7 +12,7 @@
 
 ## Phase 0: Fundamentals
 
-### AZ-900: Azure Fundamentals
+### +AZ-900: Azure Fundamentals
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-900/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
@@ -22,7 +22,7 @@
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals | Practice Exams](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-practice-exams-tests/)
 
-### AI-901: Azure AI Fundamentals
+### +AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-901/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
@@ -38,14 +38,14 @@
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
 
-### SC-900: Microsoft Security, Compliance, and Identity Fundamentals
+### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 - [ ] [Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
 
-### AZ-104: Azure Administrator Associate
+### +AZ-104: Azure Administrator Associate
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-104/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
@@ -55,24 +55,24 @@
 
 ## Phase 1: Hybrid & Identity Core
 
-### AZ-802: Windows Server Administrator Associate
+### +AZ-802: Windows Server Administrator Associate
 - [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### SC-300: Identity and Access Administrator Associate
+### +SC-300: Identity and Access Administrator Associate
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 2: Cloud Defence & SecOps
 
-### SC-200: Security Operations Analyst Associate
+### +SC-200: Security Operations Analyst Associate
 - [ ] [Microsoft Learn | SC-200: Security Operations Analyst Associate](https://learn.microsoft.com/en-us/training/courses/sc-200t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-200/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### SC-500: Microsoft Cloud and AI Security Engineer Associate
+### +SC-500: Microsoft Cloud and AI Security Engineer Associate
 - [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
@@ -80,24 +80,33 @@
 ## Phase 3: Data Systems & Architecture
 
 ### DP-300: Azure Database Administrator Associate
+- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-203: Azure Data Engineer Associate
+- [ ] [Microsoft Learn | DP-203: Azure Data Engineer Associate]()
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-203/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### AZ-305: Azure Solutions Architect Expert
+### +AZ-305: Azure Solutions Architect Expert
+- [ ] [Microsoft Learn | AZ-305: Azure Solutions Architect Expert](https://learn.microsoft.com/en-us/training/courses/az-305t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-203/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### AZ-400: Azure DevOps Engineer Expert
+### +AZ-400: Azure DevOps Engineer Expert
 
 ## Phase 4: Advanced AI & MLOps
 
-### AI-200: Azure AI Cloud Developer Associate
+### +AI-200: Azure AI Cloud Developer Associate
 
-### AI-103: Azure AI Apps and Agents Developer Associate
+### +AI-103: Azure AI Apps and Agents Developer Associate
 
-### AI-300: Machine Learning Operations (MLOps) Engineer Associate
+### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
 
 ## The Capstone Exam
 
-### SC-100: Microsoft Cybersecurity Architect Expert
+### +SC-100: Microsoft Cybersecurity Architect Expert
 - [ ] [Microsoft Learn | SC-100: Microsoft Cybersecurity Architect Expert](https://learn.microsoft.com/en-us/training/courses/sc-100t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-100/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
