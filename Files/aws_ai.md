@@ -63,8 +63,8 @@
 - [ ] [Stephane Maarek | AWS Certified Data Engineer - Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-data-engineer-associate-r/)
 - [ ] [Neal Davis | AWS Certified Data Engineer Associate Practice Exams DEA-C01](https://www.udemy.com/course/aws-certified-data-engineer-associate-practice-exams-dea/)
 
-### MLA-C01: AWS Certified Machine Learning Engineer – Associate
-- [ ] [AWS Skill Builder | MLA-C01: AWS Certified Machine Learning Engineer – Associate](https://skillbuilder.aws/search?searchText=MLA-C01)
+### MLA-C02: AWS Certified Machine Learning Engineer – Associate
+- [ ] [AWS Skill Builder | MLA-C02: AWS Certified Machine Learning Engineer – Associate](https://skillbuilder.aws/learning-plan/XGYSGHMJD2/exam-prep-plan-aws-certified-machine-learning-engineer--associate-mlac02--english/5FD2DC27G1)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-machine-learning-engineer-associate-mla-c01/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Nikolai Schuler | AWS Certified Machine Learning Engineer - Associate MLA-C01](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01-exam-prep/)
@@ -73,6 +73,9 @@
 - [ ] [Stephane Maarek | AWS Machine Learning Engineer Associate Cert Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-machine-learning-engineer-associate/)
 
 ### SAP-C03: AWS Certified Solutions Architect – Professional
+- [ ] [AWS Skill Builder | SAP-C03: AWS Certified Solutions Architect – Professional](https://skillbuilder.aws/learning-plan/UYRXS2DF85/exam-prep-plan-aws-certified-solutions-architect--associate-saac03--english/U991QUF9C3)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### DOP-C02: AWS Certified DevOps Engineer – Professional
 
