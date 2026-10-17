@@ -56,8 +56,14 @@
 ## Phase 1: Hybrid & Identity Core
 
 ### AZ-802: Windows Server Administrator Associate
+- [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### SC-300: Identity and Access Administrator Associate
+- [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 2: Cloud Defence & SecOps
 
