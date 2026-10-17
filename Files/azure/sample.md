@@ -1,6 +1,6 @@
 [Back to Microsoft Learn | AZ-900: Azure Fundamentals ](../../../azure_ai.md)
 
-# 01 — Intro to Futures
+# Chapter 1 — Intro to Futures
 
 ## Table of Contents
 
