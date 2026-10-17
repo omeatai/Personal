@@ -78,10 +78,19 @@
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### DOP-C02: AWS Certified DevOps Engineer – Professional
+- [ ] [AWS Skill Builder | DOP-C02: AWS Certified DevOps Engineer – Professional](https://skillbuilder.aws/learning-plan/2PTQME1CCS/exam-prep-plan-aws-certified-devops-engineer--professional-dopc02--english/724EJD3G8X)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-devops-engineer-professional-dop-c02/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### AIP-C01: AWS Certified Generative AI Developer – Professional 
+- [ ] [AWS Skill Builder | AIP-C01: AWS Certified Generative AI Developer – Professional ](https://skillbuilder.aws/learning-plan/9VXVGYT38G/exam-prep-plan-aws-certified-generative-ai-developer--professional-aipc01--english/4SCMN2659K)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-generative-ai-developer-professional-aip-c01/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### SCS-C03: AWS Certified Security – Speciality 
+- [ ] [AWS Skill Builder | SCS-C03: AWS Certified Security – Speciality ](https://skillbuilder.aws/learning-plan/9VXVGYT38G/exam-prep-plan-aws-certified-generative-ai-developer--professional-aipc01--english/4SCMN2659K)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c03/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | AWS Certified Security Specialty Course SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-course/)
 - [ ] [Neal Davis | AWS Certified Security Specialty Practice Exams SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-practice-exams-course/)
 - [ ] [Stephane Maarek | Ultimate AWS Certified Security Specialty NEW 2026 SCS-C03](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
