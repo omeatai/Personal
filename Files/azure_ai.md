@@ -15,6 +15,9 @@
 ### +AZ-900: Azure Fundamentals
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-900/)
+- [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/1/)
+- [ ] [Chapter 2 - Introduction to Cloud Infrastructure: Describe Azure architecture and services](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/2/)
+- [ ] [Chapter 3 - Introduction to Cloud Infrastructure: Describe Azure management and governance](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/3/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [**-- LAB --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/01.md)
