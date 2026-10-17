@@ -43,4 +43,63 @@ This training helps you develop a broad understanding of Azure.
 
 Next unit: Introduction to cloud computing
 
+Introduction to cloud computing
+Completed
+100 XP
+1 minute
+In this module, you're introduced to general cloud concepts. You start with an introduction to the cloud in general. Then you dive into concepts like shared responsibility, different cloud models, and explore the unique pricing method for the cloud.
+
+If you're already familiar with cloud computing, this module may be largely review for you.
+
+Learning objectives
+After completing this module, you'll be able to:
+
+Define cloud computing.
+Describe the shared responsibility model.
+Define cloud models, including public, private, and hybrid.
+Identify appropriate use cases for each cloud model.
+Describe the consumption-based model.
+Compare cloud pricing models.
+Next unit: What is cloud computing
+
+What is cloud computing
+Completed
+100 XP
+3 minutes
+Cloud computing is the delivery of computing services over the internet. Computing services include common IT infrastructure such as virtual machines, storage, databases, and networking. Cloud services also expand the traditional IT offerings to include things like Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI).
+
+Because cloud computing uses the internet to deliver these services, it doesn’t have to be constrained by physical infrastructure the same way that a traditional datacenter is. That means if you need to increase your IT infrastructure rapidly, you don’t have to wait to build a new datacenter—you can use the cloud to rapidly expand your IT footprint.
+
+Practical example
+Suppose a retail team expects high traffic during a seasonal launch. Instead of buying and configuring extra physical servers months in advance, they can deploy additional compute capacity in the cloud for the launch period and scale down afterward. This approach improves agility and helps align spending to actual demand.
+
+At a fundamentals level, cloud computing changes infrastructure planning from long procurement cycles to on-demand provisioning. Teams can test faster, recover faster, and adapt capacity as requirements change.
+
+Cloud platforms also offer global reach, so teams can place services closer to users and design for regional resilience without building multiple physical datacenters.
+
+Next unit: Describe the shared responsibility model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
