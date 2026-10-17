@@ -21,7 +21,6 @@
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 - [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals | Practice Exams](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-practice-exams-tests/)
-- [ ] [Alan Rodrigues | AZ-900 Microsoft Azure Fundamentals](https://www.udemy.com/course/microsoft-azure-beginners-guide/)
 
 ### AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
