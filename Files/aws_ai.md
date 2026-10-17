@@ -47,17 +47,26 @@
 - [ ] [Stephane Maarek | AWS Certified Developer Associate Practice Exams](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/)
 
 ### SOA-C03: AWS Certified CloudOps Engineer – Associate 
+- [ ] [AWS Skill Builder | SOA-C03: AWS Certified CloudOps Engineer – Associate](https://skillbuilder.aws/learning-plan/S427S3T7B5/exam-prep-plan-aws-certified-cloudops-engineer--associate-soac03--english/D46WYPBKRS)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-cloudops-engineer-associate-soa-c03/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
 - [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
 - [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-associate/)
 - [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-cloudops-engineer/)
 
 ### DEA-C01: AWS Certified Data Engineer – Associate 
+- [ ] [AWS Skill Builder | DEA-C01: AWS Certified Data Engineer – Associate](https://skillbuilder.aws/learning-plan/QYZWVSMX4B/exam-prep-plan-aws-certified-data-engineer--associate-deac01--english/YTMBK7R698)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-data-engineer-associate-dea-c01/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Stephane Maarek | AWS Certified Data Engineer Associate 2026 - Hands On!](https://www.udemy.com/course/aws-data-engineer/)
 - [ ] [Stephane Maarek | AWS Certified Data Engineer - Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-data-engineer-associate-r/)
 - [ ] [Neal Davis | AWS Certified Data Engineer Associate Practice Exams DEA-C01](https://www.udemy.com/course/aws-certified-data-engineer-associate-practice-exams-dea/)
 
 ### MLA-C01: AWS Certified Machine Learning Engineer – Associate
+- [ ] [AWS Skill Builder | MLA-C01: AWS Certified Machine Learning Engineer – Associate](https://skillbuilder.aws/search?searchText=MLA-C01)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-machine-learning-engineer-associate-mla-c01/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Nikolai Schuler | AWS Certified Machine Learning Engineer - Associate MLA-C01](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01-exam-prep/)
 - [ ] [Nikolai Schuler | AWS Machine Learning Engineer - Associate Practice Exams](https://www.udemy.com/course/aws-machine-learning-engineer-associate-practice-exams/)
 - [ ] [Stephane Maarek | AWS Certified Machine Learning Engineer Associate: Hands On!](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/)
