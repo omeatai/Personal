@@ -68,8 +68,14 @@
 ## Phase 2: Cloud Defence & SecOps
 
 ### SC-200: Security Operations Analyst Associate
+- [ ] [Microsoft Learn | SC-200: Security Operations Analyst Associate](https://learn.microsoft.com/en-us/training/courses/sc-200t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-200/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### SC-500: Microsoft Cloud and AI Security Engineer Associate
+- [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 3: Data Systems & Architecture
 
