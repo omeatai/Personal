@@ -79,6 +79,114 @@ Cloud platforms also offer global reach, so teams can place services closer to u
 
 Next unit: Describe the shared responsibility model
 
+Describe the shared responsibility model
+Completed
+100 XP
+3 minutes
+You may have heard of the shared responsibility model, but you may not understand what it means or how it impacts cloud computing.
+
+How responsibilities shift in cloud
+Start with a traditional on-premises datacenter. Your team is responsible for maintaining the physical space, ensuring security, and maintaining or replacing the servers if anything happens. The IT department is responsible for maintaining all the infrastructure and software needed to keep the datacenter up and running. They're also likely to be responsible for keeping all systems patched and on the correct version.
+
+With the shared responsibility model, these responsibilities get shared between the cloud provider and the consumer. Physical security, power, cooling, and network connectivity are the responsibility of the cloud provider. The consumer isn’t collocated with the datacenter, so it wouldn’t make sense for the consumer to have any of those responsibilities.
+
+At the same time, the consumer is responsible for the data and information stored in the cloud. (You wouldn’t want the cloud provider to be able to read your information.) The consumer is also responsible for access security, meaning you only give access to those who need it.
+
+Then, for some things, the responsibility depends on the situation. If you’re using a cloud SQL database, the cloud provider would be responsible for maintaining the actual database. However, you’re still responsible for the data that gets ingested into the database. If you deployed a virtual machine and installed an SQL database on it, you’d be responsible for database patches and updates, as well as maintaining the data and information stored in the database.
+
+With an on-premises datacenter, you’re responsible for everything. With cloud computing, those responsibilities shift. The shared responsibility model is heavily tied into the cloud service types (covered later in this learning path): infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). IaaS places the most responsibility on the consumer, with the cloud provider being responsible for the basics of physical security, power, and connectivity. On the other end of the spectrum, SaaS places most of the responsibility with the cloud provider. PaaS, being a middle ground between IaaS and SaaS, rests somewhere in the middle and evenly distributes responsibility between the cloud provider and the consumer.
+
+Responsibility by service model
+The following diagram highlights how the Shared Responsibility Model informs who is responsible for what, depending on the cloud service type.
+
+<img width="1920" height="1180" alt="image" src="https://github.com/user-attachments/assets/731d03f9-f511-4ac0-b39b-fb90e571e728" />
+
+What always stays with you
+When using a cloud provider, you’ll always be responsible for:
+
+The information and data stored in the cloud
+Devices that are allowed to connect to your cloud (cell phones, computers, and so on)
+The accounts and identities of the people, services, and devices within your environment
+What the provider always owns
+The cloud provider is always responsible for:
+
+The physical datacenter
+The physical network
+The physical hosts
+Infrastructure
+What depends on the service type
+Your service model will determine responsibility for things like:
+
+Operating systems
+Network controls
+Applications
+Identity and access
+For example, identity and access is shared in PaaS and SaaS—you manage your own users, roles, and policies, while the provider runs the authentication platform (such as Microsoft Entra ID). Infrastructure, on the other hand, shifts entirely to the provider as soon as you move off-premises to IaaS.
+
+Next unit: Define cloud models
+
+Define cloud models
+Completed
+100 XP
+4 minutes
+What are cloud models? The cloud models define the deployment type of cloud resources. The three main cloud models are: private, public, and hybrid.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6f4d77d0-f401-4f5b-93b3-e068083e2d17" />
+
+Private cloud
+A private cloud is a cloud environment used by a single entity. It evolved naturally from the traditional datacenter model, delivering IT services over the internet while keeping resources dedicated to one organization. Private cloud provides much greater control for your IT team. However, it also comes with greater cost and fewer of the benefits of a public cloud deployment. A private cloud may be hosted from your on-site datacenter, or in a dedicated datacenter offsite, potentially even by a third party.
+
+Public cloud
+A public cloud is built, controlled, and maintained by a third-party cloud provider. With a public cloud, anyone that wants to purchase cloud services can access and use resources. The general public availability is a key difference between public and private clouds.
+
+Hybrid cloud
+A hybrid cloud is a computing environment that uses both public and private clouds in an inter-connected environment. A hybrid cloud environment can be used to allow a private cloud to surge for increased, temporary demand by deploying public cloud resources. Hybrid cloud can be used to provide an extra layer of security. For example, users can flexibly choose which services to keep in public cloud and which to deploy to their private cloud infrastructure.
+
+The following table highlights a few key comparative aspects between the cloud models.
+
+Public cloud	Private cloud	Hybrid cloud
+No capital expenditures to scale up	You have complete control over resources and security	Provides the most flexibility
+Applications can be quickly provisioned and deprovisioned	Data isn't collocated with other tenants' data	You determine where to run your applications
+You pay only for what you use	Hardware must be purchased for startup and maintenance	You control security, compliance, or legal requirements
+You don't have complete control over resources and security	You are responsible for hardware maintenance and updates	
+
+Multicloud
+A fourth, and increasingly likely scenario is a multicloud scenario. In a multicloud scenario, you use multiple public cloud providers. Maybe you use different features from different cloud providers. Or maybe you started your cloud journey with one provider and are in the process of migrating to a different provider. Regardless, in a multicloud environment you deal with two (or more) public cloud providers and manage resources and security in both environments.
+
+Azure Arc
+Azure Arc is a set of technologies that helps manage your cloud environment. Azure Arc can help manage your cloud environment whether it's a public cloud solely on Azure, a private cloud in your datacenter, a hybrid configuration, or even a multicloud environment running on multiple cloud providers at once.
+
+Azure VMware Solution
+What if you're already established with VMware in a private cloud environment but want to migrate to a public or hybrid cloud? Azure VMware Solution lets you run your VMware workloads in Azure with seamless integration and scalability.
+
+Next unit: Describe the consumption-based model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
