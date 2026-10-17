@@ -306,5 +306,3 @@ Carrie follows this video. She day trades futures in the premarket and also swin
 - [Investopedia: Theta](https://www.investopedia.com/terms/t/theta.asp)
 - [CME Group: Contract month codes](https://www.cmegroup.com/month-codes.html)
 - [Barchart futures](https://www.barchart.com/futures)
-
-**Disclaimer:** This document is for educational purposes only. Trading futures involves substantial risk of loss. Prop-firm prices and discount codes change. Confirm them with the firm before you pay.
