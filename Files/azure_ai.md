@@ -59,19 +59,9 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### +SC-300: Identity and Access Administrator Associate
-- [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
 ### DP-300: Azure Database Administrator Associate
 - [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-### DP-800: SQL AI Developer Associate
-- [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AZ-700: Azure Network Engineer Associate
@@ -79,16 +69,9 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-## Phase 3: AI Developer & SecOps
-
-### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
-- [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-200/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-### +AI-103: Azure AI Apps and Agents Developer Associate
-- [ ] [Microsoft Learn | AI-103: Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-103t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-103/)
+### +SC-300: Identity and Access Administrator Associate
+- [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +SC-200: Security Operations Analyst Associate
@@ -101,14 +84,21 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
-- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
+## Phase 3: Cloud AI Developer Core
+
+### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
+- [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-200/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
+### +AI-103: Azure AI Apps and Agents Developer Associate
+- [ ] [Microsoft Learn | AI-103: Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-103t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-103/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-800: SQL AI Developer Associate
+- [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 4: The Expert Core
@@ -129,16 +119,16 @@
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Alan Rodrigues | SC-100: Microsoft Cybersecurity Architect](https://www.udemy.com/course/azure200/)
 
-## Phase 5: Other Fabric Data Systems & Architecture
+## Phase 5: Other Data Systems & Architecture
 
-### DP-700: Fabric Data Engineer Associate
-- [ ] [Microsoft Learn | DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-700/)
+### +AZ-140: Azure Virtual Desktop Specialty
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### DP-600: Fabric Analytics Engineer Associate
-- [ ] [Microsoft Learn | DP-600: Fabric Analytics Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-600t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-600/)
+### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
+- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-750: Azure Databricks Data Engineer Associate
@@ -151,6 +141,15 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-420/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
+### DP-700: Fabric Data Engineer Associate
+- [ ] [Microsoft Learn | DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-700/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-600: Fabric Analytics Engineer Associate
+- [ ] [Microsoft Learn | DP-600: Fabric Analytics Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-600t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-600/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## AZURE SERVERLESS
 
