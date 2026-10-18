@@ -22,8 +22,6 @@
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [**-- LAB --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/sample.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
-- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
-- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals | Practice Exams](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-practice-exams-tests/)
 
 ### +AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
@@ -31,8 +29,6 @@
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
 - [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
-- [ ] [Nikolai Schuler | AI-901 Azure AI Fundamentals Complete Exam Prep](https://www.udemy.com/course/ai-900-azure-ai-fundamentals-complete-exam-prep/)
-- [ ] [Nikolai Schuler | AI-901: Microsoft Azure AI Fundamentals | 5 Practice Exams](https://www.udemy.com/course/ai-900-microsoft-azure-ai-fundamentals-5-practice-exams/)
 
 ### DP-900: Azure Data Fundamentals
 - [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
