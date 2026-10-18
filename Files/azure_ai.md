@@ -10,7 +10,7 @@
 
 ## AZURE CLOUD
 
-## Phase 0: Fundamentals
+## Phase 1: Fundamentals
 
 ### +AZ-900: Azure Fundamentals
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
@@ -52,7 +52,7 @@
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
 
-## Phase 1: Associate Hybrid & Identity Core
+## Phase 2: Associate Hybrid & Identity Core
 
 ### +AZ-802: Windows Server Administrator Associate
 - [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
@@ -79,7 +79,7 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-## Phase 2: AI Developer & SecOps
+## Phase 3: AI Developer & SecOps
 
 ### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
 - [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
@@ -111,7 +111,7 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-## Phase 3: The Expert Core
+## Phase 4: The Expert Core
 
 ### +AZ-305: Azure Solutions Architect Expert
 - [ ] [Microsoft Learn | AZ-305: Azure Solutions Architect Expert](https://learn.microsoft.com/en-us/training/courses/az-305t00)
@@ -129,7 +129,7 @@
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Alan Rodrigues | SC-100: Microsoft Cybersecurity Architect](https://www.udemy.com/course/azure200/)
 
-## Phase 4: Other Fabric Data Systems & Architecture
+## Phase 5: Other Fabric Data Systems & Architecture
 
 ### DP-700: Fabric Data Engineer Associate
 - [ ] [Microsoft Learn | DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
