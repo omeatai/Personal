@@ -79,11 +79,6 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
 ## Phase 2: Advanced AI Developer & MLOps
 
 ### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
@@ -99,6 +94,11 @@
 ### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
 - [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### +AZ-140: Azure Virtual Desktop Specialty
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 3: Cloud Defence & SecOps
