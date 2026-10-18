@@ -468,28 +468,138 @@ Try one of these prompts in Copilot Chat:
 "Design a KPI dashboard to measure whether cloud adoption is delivering the expected technical and business benefits."
 "Analyze tradeoffs where cloud benefits may be limited, including cost, governance complexity, and sustainability constraints."
 
+## Describe  Cloud Service Types
 
+Introduction
+Completed
+100 XP
+1 minute
+In this module, you're introduced to cloud service types. You learn how each cloud service type determines the flexibility you have with managing and configuring resources. You understand how the shared responsibility model applies to each cloud service type and explore various use cases for each cloud service type.
 
+Learning objectives
+After completing this module, you'll be able to:
 
+Describe infrastructure as a service (IaaS).
+Describe platform as a service (PaaS).
+Describe software as a service (SaaS).
+Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
+Next unit: Describe Infrastructure as a Service
 
+Describe Infrastructure as a Service
+Completed
+100 XP
+3 minutes
+Infrastructure as a service (IaaS) is the most flexible category of cloud services. It provides the maximum amount of control for your cloud resources. In an IaaS model, the cloud provider is responsible for maintaining the hardware, network connectivity to the internet, and physical security. You're responsible for everything else, including:
 
+Operating system installation, configuration, and maintenance
+Network configuration
+Database and storage configuration
+With IaaS, you're essentially renting the hardware in a cloud datacenter, but what you do with that hardware is up to you.
 
+Earlier, you learned how the shared responsibility model divides duties between you and the cloud provider. The following diagram shows the individual infrastructure layers, such as networking, storage, servers, and runtime. It highlights which layers you operate in each service model.
 
+<img width="1920" height="1090" alt="image" src="https://github.com/user-attachments/assets/9ebef677-7785-4b88-ad53-e6fed64351c5" />
 
+Responsibility focus in IaaS
+In IaaS, the cloud provider is responsible for the physical infrastructure and internet connectivity. You manage most of the workload stack, including operating systems, patching, configuration, and many security controls. This model gives you maximum flexibility and the largest operational responsibility.
 
+<img width="1920" height="880" alt="image" src="https://github.com/user-attachments/assets/d3622775-0493-49f6-a5c0-73b607bc4d76" />
 
+Scenarios
+Common scenarios where IaaS might make sense include:
 
+Lift-and-shift migration: You set up cloud resources similar to your on-premises datacenter, and then move your workloads to the IaaS infrastructure.
+Testing and development: You need to rapidly replicate established configurations for development and test environments. You can start up or shut down different environments rapidly with an IaaS structure while maintaining complete control.
+Next unit: Describe Platform as a Service
 
+Describe Platform as a Service
+Completed
+100 XP
+2 minutes
+Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet. They also maintain the operating systems, middleware, development tools, and analytics services that make up a cloud solution. In a PaaS scenario, you don't have to worry about the licensing or patching for operating systems and databases.
 
+PaaS is well suited to provide a complete development environment without the headache of maintaining all the development infrastructure.
 
+Responsibility focus in PaaS
+In PaaS, the cloud provider manages the physical infrastructure and platform components such as operating systems, middleware, and managed runtimes. You focus on your application code, data, and access controls. Depending on service configuration, some networking and application security settings are shared.
 
+<img width="1920" height="880" alt="image" src="https://github.com/user-attachments/assets/325ac27f-714e-4d2c-9d34-d27b71d1178c" />
 
+Scenarios
+Common scenarios where PaaS might make sense include:
 
+Development framework: PaaS provides a framework that developers can build upon to develop or customize cloud-based applications. Developers can create applications using built-in software components. Cloud features such as scalability, high availability, and multitenant capability are included, reducing the amount of coding that developers must do.
+Analytics or business intelligence: Tools provided as a service with PaaS allow teams to analyze and mine their data, find insights and patterns, and predict outcomes to improve planning and operational decisions.
+Next unit: Describe Software as a Service
 
+Describe Software as a Service
+Completed
+100 XP
+2 minutes
+Software as a service (SaaS) is the most complete cloud service model from a product perspective. With SaaS, you're essentially renting or using a fully developed application. Email, financial software, messaging applications, and connectivity software are all common examples of a SaaS implementation.
 
+While the SaaS model may be the least flexible, it's also the easiest to get up and running. It requires the least amount of technical knowledge or expertise to fully employ.
 
+Responsibility focus in SaaS
+In SaaS, the cloud provider manages almost all of the application stack, including infrastructure, platform, and application maintenance. You primarily manage your data, identity and access settings, and device access posture. SaaS has the lowest operational overhead for customers.
 
+<img width="1920" height="880" alt="image" src="https://github.com/user-attachments/assets/87d59d2a-26d4-4750-8109-5fc2959a3527" />
 
+For example, a team using a SaaS collaboration platform can focus on user onboarding, access controls, and data governance while the provider handles infrastructure patching, application updates, and availability.
+
+Scenarios
+Common scenarios for SaaS include:
+
+Email and messaging.
+Productivity applications.
+Finance and expense tracking.
+Next unit: Module assessment
+
+Module assessment
+200 XP
+3 minutes
+Choose the best response for each question.
+
+Check your knowledge
+
+1. Which cloud service type is most suited to a lift and shift migration from an on-premises datacenter to a cloud deployment?
+
+Infrastructure as a Service (IaaS)
+
+Platform as a Service (PaaS)
+
+Software as a Service (SaaS)
+Answer: A
+2. What type of cloud service type would a Finance and Expense tracking solution typically be in?
+
+Infrastructure as a Service (IaaS)
+
+Platform as a Service (PaaS)
+
+Software as a Service (SaaS)
+Answer: C
+
+Summary
+Completed
+100 XP
+2 minutes
+In this module, you learned about the cloud service types and some common scenarios for each type. You also reinforced how the shared responsibility model determines your responsibilities with different cloud service types.
+
+Learning objectives
+You should now be able to:
+
+Describe infrastructure as a service (IaaS).
+Describe platform as a service (PaaS).
+Describe software as a service (SaaS).
+Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
+Explore with Copilot
+ Tip
+
+Try one of these prompts in Copilot Chat:
+
+"For one application portfolio, choose IaaS, PaaS, or SaaS for each workload and explain the responsibility tradeoffs."
+"Show how operational responsibilities shift when moving from IaaS to PaaS, including security, patching, and scalability implications."
+"Create a short scenario quiz on cloud service types with answer explanations focused on selecting the right model."
 
 
 
