@@ -309,6 +309,183 @@ With horizontal scaling, if you suddenly experienced a steep jump in demand, you
 
 Next unit: Describe the benefits of reliability and predictability in the cloud
 
+Describe the benefits of reliability and predictability in the cloud
+Completed
+100 XP
+2 minutes
+Reliability and predictability are two crucial cloud benefits that help you develop solutions with confidence.
+
+Reliability
+
+<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/b74db325-ef84-42ee-9858-4f9a865d58ef" />
+
+Reliability is the ability of a system to recover from failures and continue to function. It's also one of the pillars of the Microsoft Azure Well-Architected Framework.
+
+The cloud, by virtue of its decentralized design, naturally supports a reliable and resilient infrastructure. With a decentralized design, the cloud enables you to have resources deployed in regions around the world. With this global scale, even if one region has a catastrophic event other regions are still up and running. You can design your applications to automatically take advantage of this increased reliability. In some cases, your cloud environment itself will automatically shift to a different region for you, with no action needed on your part. You’ll learn more about how Azure leverages global scale to provide reliability later in this series.
+
+Predictability
+
+<img width="1000" height="580" alt="image" src="https://github.com/user-attachments/assets/79b4c855-08c3-4d03-a728-3151ade79a3c" />
+
+Predictability in the cloud lets you move forward with confidence. Predictability can be focused on performance predictability or cost predictability. Both performance and cost predictability are heavily influenced by the Microsoft Azure Well-Architected Framework. Deploy a solution built around this framework and you have a solution whose cost and performance are predictable.
+
+Performance
+Performance predictability focuses on predicting the resources needed to deliver a positive experience for your customers. Autoscaling, load balancing, and high availability are just some of the cloud concepts that support performance predictability. If you suddenly need more resources, autoscaling can deploy additional resources to meet the demand, and then scale back when the demand drops. Or if the traffic is heavily focused on one area, load balancing will help redirect some of the overload to less stressed areas.
+
+Cost
+Cost predictability is focused on predicting or forecasting the cost of the cloud spend. With the cloud, you can track your resource use in real time, monitor resources to ensure that you’re using them in the most efficient way, and apply data analytics to find patterns and trends that help better plan resource deployments. By operating in the cloud and using cloud analytics and information, you can predict future costs and adjust your resources as needed. You can even use tools like the Azure Pricing Calculator to get an estimate of potential cloud spend.
+
+Next unit: Describe the benefits of security and governance in the cloud
+
+Describe the benefits of security and governance in the cloud
+Completed
+100 XP
+2 minutes
+Whether you're deploying infrastructure as a service or software as a service, cloud features support governance and compliance.
+
+<img width="1920" height="800" alt="image" src="https://github.com/user-attachments/assets/5206298a-ccc8-44bc-92bc-b768e522f83e" />
+
+Tools such as templates help ensure that deployed resources meet your technical standards and regulatory requirements. As standards change, you can update resources at scale. Cloud-based auditing helps flag resources that are out of compliance with your baseline and provides mitigation strategies. Depending on your operating model, software patches and updates may also be applied automatically, which helps with both governance and security.
+
+On the security side, you can find a cloud solution that matches your security needs. If you want maximum control of security, infrastructure as a service provides you with physical resources but lets you manage the operating systems and installed software, including patches and maintenance. If you want patches and maintenance taken care of automatically, platform as a service or software as a service deployments may be the best cloud strategies for you.
+
+Cloud providers are typically well suited to handle things like distributed denial of service (DDoS) attacks, making your network more robust and secure.
+
+By establishing a good governance footprint early, you can keep your cloud footprint updated, secure, and well managed.
+
+Next unit: Describe the benefits of manageability in the cloud
+
+Describe the benefits of manageability in the cloud
+Completed
+100 XP
+2 minutes
+A major benefit of cloud computing is the manageability options. There are two types of manageability for cloud computing, and both are excellent benefits.
+
+Management of the cloud
+
+<img width="1000" height="580" alt="image" src="https://github.com/user-attachments/assets/23b6f20d-c894-4a1e-af7c-6cebbf6ae959" />
+
+Management of the cloud speaks to managing your cloud resources. In the cloud, you can:
+
+Automatically scale resource deployment based on need.
+Deploy resources based on a preconfigured template, removing the need for manual configuration.
+Monitor the health of resources and automatically replace failing resources.
+Receive automatic alerts based on configured metrics, so you're aware of performance in real time.
+Management in the cloud
+
+<img width="1000" height="580" alt="image" src="https://github.com/user-attachments/assets/ca32644c-f3c1-423d-ba91-48e59fb25bf7" />
+
+Management in the cloud speaks to how you're able to manage your cloud environment and resources. You can manage these:
+
+Through a web portal.
+Using a command line interface.
+Using APIs.
+Using PowerShell.
+For example, an operations team can deploy resources from templates, monitor health in the portal, and automate recurring tasks with CLI or PowerShell scripts. This combination reduces manual effort and helps maintain consistent configurations.
+
+Next unit: Describe sustainability considerations in the cloud
+
+Describe sustainability considerations in the cloud
+Completed
+100 XP
+2 minutes
+Cloud computing can support sustainability goals when teams actively optimize how resources are deployed and used.
+
+<img width="1200" height="1120" alt="image" src="https://github.com/user-attachments/assets/d2d5b3de-f4fb-46c9-8590-3315546ab9b1" />
+
+Why cloud can improve efficiency
+Cloud providers operate at large scale, which can improve resource utilization compared to many isolated on-premises environments. In Azure, you can also reduce waste by matching deployed resources to actual demand.
+
+Sustainability-aligned cloud practices
+Examples of practices that support sustainability and cost efficiency include:
+
+Scaling resources down when demand decreases
+Turning off or deallocating resources that are not in use
+Choosing efficient services and configurations to reduce overprovisioning
+Using governance and monitoring to track usage trends and optimize deployments over time
+For example, a development environment that runs only during business hours can be automatically shut down overnight and on weekends. This practice reduces unnecessary consumption while still meeting team needs.
+
+At a fundamentals level, sustainability in the cloud is closely tied to good operational habits: right-size, automate, monitor, and continuously optimize.
+
+Next unit: Module assessment
+
+Module assessment
+200 XP
+3 minutes
+Choose the best response for each question.
+
+Check your knowledge
+
+1. Which type of scaling involves adding or removing resources (such as virtual machines or containers) to meet demand?
+
+Vertical scaling
+
+Horizontal scaling
+
+Direct scaling
+Answer: B
+2. What is characterized as the ability of a system to recover from failures and continue to function?
+
+Reliability
+
+Predictability
+
+Scalability
+Answer: A
+3. Which cloud practice most directly supports sustainability by reducing unnecessary resource use?
+
+Automatically scaling down resources when demand drops
+
+Deploying every workload as always-on peak capacity
+
+Using only on-premises hardware
+Answer: A
+
+Summary
+Completed
+100 XP
+2 minutes
+In this module, you learned about some of the benefits of operating in the cloud. You learned about high availability and reliability, and how those work to keep your applications running. You also learned about how the cloud can provide a more secure environment and support sustainability goals. Finally, you learned that the cloud provides a highly manageable environment for your resources.
+
+Learning objectives
+You should now be able to:
+
+Describe the benefits of high availability and scalability in the cloud.
+Describe the benefits of reliability and predictability in the cloud.
+Describe the benefits of security and governance in the cloud.
+Describe the benefits of manageability in the cloud.
+Describe sustainability considerations and benefits in the cloud.
+Additional resources
+The following resources provide more information on topics in this module or related to this module.
+
+Build great solutions with the Microsoft Azure Well-Architected Framework - A Microsoft Learn course that introduces you to the Microsoft Azure Well-Architected Framework.
+Explore with Copilot
+ Tip
+
+Try one of these prompts in Copilot Chat:
+
+"Evaluate an on-premises system and map cloud improvements for availability, scalability, reliability, security, and manageability."
+"Design a KPI dashboard to measure whether cloud adoption is delivering the expected technical and business benefits."
+"Analyze tradeoffs where cloud benefits may be limited, including cost, governance complexity, and sustainability constraints."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
