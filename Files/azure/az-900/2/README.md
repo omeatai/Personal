@@ -217,8 +217,37 @@ A single directory supports up to 10,000 management groups.
 Each management group and subscription can have only one parent.
 Next unit: Module assessment
 
+Module assessment
+200 XP
+4 minutes
+Choose the best response for each question.
 
+Check your knowledge
 
+1. How many resource groups can a resource be in at the same time?
+
+One
+
+Two
+
+Three
+Answer: A
+2. What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
+
+Current resources inherit the setting, but future resources don't.
+
+Future resources inherit the setting, but current ones don't.
+
+The setting is applied to current and future resources.
+Answer: C
+3. What Azure feature replicates resources across regions that are at least 300 miles away from each other?
+
+Region pairs
+
+Availability Zones
+
+Sovereign regions
+Answer: A
 
 
 
