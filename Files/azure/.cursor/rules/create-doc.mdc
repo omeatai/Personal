@@ -1,0 +1,49 @@
+---
+description: Refactor an Azure study note into the sample chapter layout (TOC, introduction, accordions, summary, references)
+alwaysApply: false
+---
+
+# Create doc
+
+When the user applies **create-doc** to a markdown file under `Personal/Files/azure/`, rewrite that file in place so it matches `Personal/Files/azure/sample.md`. Read `sample.md` once and follow its section order, accordion markup, and spacing. Do not rewrite `sample.md`. Do not append a second copy of the note.
+
+Only run this workflow when the user asks to apply the rule. Ordinary edits do not reformat the file.
+
+## Page order
+
+1. Keep the existing back link as the first line. Do not change its target.
+2. `# Chapter N — Title` with an em dash. Keep the chapter number and the subject of the original `#` heading.
+3. `## Table of Contents` linking Introduction, Detailed tutorial, each accordion, Summary, and References. Nest accordion links under Detailed tutorial.
+4. `## Introduction` — a few sentences on what the chapter teaches and why it matters. Not a copy of the first heading.
+5. `## Detailed tutorial` — one bold source line, then one `<details>` accordion per idea.
+6. `## Summary` — short bullets of the facts a reader should remember. Not a restatement of every heading.
+7. `## References` — links already in the file, then official Microsoft Learn pages for topics the chapter names. Do not invent URLs.
+
+## Accordions
+
+One accordion is one idea. Merge a unit's introduction, repeated learning objectives, and closing summary into the section they belong to. Drop LMS chrome: Completed, XP, minutes, and "Next unit".
+
+```markdown
+<details id="what-cloud-computing-is">
+<summary><strong>What cloud computing is</strong></summary>
+
+Cloud computing is the delivery of computing services over the internet.
+
+![Seasonal retail launch](https://example.invalid/image.png)
+
+_Figure: Extra capacity is added for a launch, then released when traffic falls._
+
+</details>
+```
+
+- `id` is the kebab-case slug used in the table of contents.
+- `<summary>` is sentence case, wrapped in `<strong>`, and names the idea.
+- One blank line after `</summary>` and one blank line before `</details>`.
+- Keep definitions, examples, numbers, exam weights, and quiz answers.
+- Turn tab-aligned comparisons into Markdown tables.
+- Keep every image. Give it meaningful alt text and an italic `*Figure: ...*` caption that says what the picture shows.
+- Put each module's knowledge check in its own accordion. State the correct option in words.
+
+## Voice
+
+Write the way the sample is written: short paragraphs, plain sentences, tables when a comparison is the point. Keep Microsoft's exam terms (IaaS, PaaS, SaaS, CapEx, OpEx, SLA). Do not add greetings, and do not leave the raw dump's navigation lines in the body.
