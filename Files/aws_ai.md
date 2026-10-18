@@ -20,14 +20,14 @@
 - [ ] [Stephane Maarek | Ultimate AWS Certified Cloud Practitioner CLF-C02 2026](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 - [ ] [Stephane Maarek | 6 Practice Exams | AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/practice-exams-aws-certified-cloud-practitioner/)
 
-### AIF-C01: AWS Certified AI Practitioner 
+### AIF-C01: AWS Certified AI Practitioner
 - [ ] [AWS Skill Builder | AIF-C01: AWS Certified AI Practitioner](https://skillbuilder.aws/learning-plan/3NRN71QZR2/exam-prep-plan-aws-certified-ai-practitioner-aifc01--english/FBV4STG94B)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-ai-practitioner-aif-c01/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Stephane Maarek | Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/)
 - [ ] [Stephane Maarek | AWS Certified AI Practitioner Practice Exams - AIF-C01](https://www.udemy.com/course/practice-exams-aws-certified-ai-practitioner/)
 
-### SAA-C03: AWS Certified Solutions Architect – Associate 
+### SAA-C03: AWS Certified Solutions Architect – Associate
 - [ ] [AWS Skill Builder | SAA-C03: AWS Certified Solutions Architect](https://skillbuilder.aws/learning-plan/UYRXS2DF85/exam-prep-plan-aws-certified-solutions-architect--associate-saac03--english/U991QUF9C3)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c03/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
@@ -37,7 +37,7 @@
 - [ ] [Stephane Maarek | Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
 - [ ] [Stephane Maarek | AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
 
-### DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate 
+### DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate
 - [ ] [AWS Skill Builder | DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate](https://skillbuilder.aws/learning-plan/ZWHYYQBTUK/exam-prep-plan-aws-certified-developer--associate-dvac02--english/NG34SRVV2G)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate-dva-c02/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
@@ -46,7 +46,7 @@
 - [ ] [Stephane Maarek | Ultimate AWS Certified Developer Associate 2026 DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
 - [ ] [Stephane Maarek | AWS Certified Developer Associate Practice Exams](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/)
 
-### SOA-C03: AWS Certified CloudOps Engineer – Associate 
+### SOA-C03: AWS Certified CloudOps Engineer – Associate
 - [ ] [AWS Skill Builder | SOA-C03: AWS Certified CloudOps Engineer – Associate](https://skillbuilder.aws/learning-plan/S427S3T7B5/exam-prep-plan-aws-certified-cloudops-engineer--associate-soac03--english/D46WYPBKRS)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-cloudops-engineer-associate-soa-c03/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
@@ -55,7 +55,7 @@
 - [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-associate/)
 - [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-cloudops-engineer/)
 
-### DEA-C01: AWS Certified Data Engineer – Associate 
+### DEA-C01: AWS Certified Data Engineer – Associate
 - [ ] [AWS Skill Builder | DEA-C01: AWS Certified Data Engineer – Associate](https://skillbuilder.aws/learning-plan/QYZWVSMX4B/exam-prep-plan-aws-certified-data-engineer--associate-deac01--english/YTMBK7R698)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-data-engineer-associate-dea-c01/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
@@ -82,12 +82,12 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-devops-engineer-professional-dop-c02/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
-### AIP-C01: AWS Certified Generative AI Developer – Professional 
+### AIP-C01: AWS Certified Generative AI Developer – Professional
 - [ ] [AWS Skill Builder | AIP-C01: AWS Certified Generative AI Developer – Professional ](https://skillbuilder.aws/learning-plan/9VXVGYT38G/exam-prep-plan-aws-certified-generative-ai-developer--professional-aipc01--english/4SCMN2659K)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-generative-ai-developer-professional-aip-c01/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
-### SCS-C03: AWS Certified Security – Speciality 
+### SCS-C03: AWS Certified Security – Speciality
 - [ ] [AWS Skill Builder | SCS-C03: AWS Certified Security – Speciality ](https://skillbuilder.aws/learning-plan/9VXVGYT38G/exam-prep-plan-aws-certified-generative-ai-developer--professional-aipc01--english/4SCMN2659K)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c03/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)

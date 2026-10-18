@@ -56,16 +56,6 @@
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
 
-### +AZ-700: Azure Network Engineer Associate
-- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
 ## Phase 1: Hybrid & Identity Core
 
 ### +AZ-802: Windows Server Administrator Associate
@@ -76,6 +66,21 @@
 ### +SC-300: Identity and Access Administrator Associate
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-300: Azure Database Administrator Associate
+- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### +AZ-700: Azure Network Engineer Associate
+- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### +AZ-140: Azure Virtual Desktop Specialty
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 2: Cloud Defence & SecOps
@@ -91,11 +96,6 @@
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 3: Data Systems & Architecture
-
-### DP-300: Azure Database Administrator Associate
-- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-700: Fabric Data Engineer Associate
 - [ ] [Microsoft Learn | DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
