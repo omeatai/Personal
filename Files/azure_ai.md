@@ -56,6 +56,16 @@
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
 
+### +AZ-700: Azure Network Engineer Associate
+- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### +AZ-140: Azure Virtual Desktop Specialty
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
 ## Phase 1: Hybrid & Identity Core
 
 ### +AZ-802: Windows Server Administrator Associate
@@ -87,9 +97,29 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-### DP-203: Azure Data Engineer Associate
-- [ ] [Microsoft Learn | DP-203: Azure Data Engineer Associate]()
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-203/)
+### DP-700: Fabric Data Engineer Associate
+- [ ] [Microsoft Learn | DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-700/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-600: Fabric Analytics Engineer Associate
+- [ ] [Microsoft Learn | DP-600: Fabric Analytics Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-600t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-600/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-420: Azure Cosmos DB Developer Specialty
+- [ ] [Microsoft Learn | DP-420: Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/training/courses/dp-420t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-420/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-750: Azure Databricks Data Engineer Associate
+- [ ] [Microsoft Learn | DP-750: Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-750t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-750/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-800: SQL AI Developer Associate
+- [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AZ-305: Azure Solutions Architect Expert
@@ -104,7 +134,7 @@
 
 ## Phase 4: Advanced AI & MLOps
 
-### +AI-200: Azure AI Cloud Developer Associate
+### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
 - [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-200/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
