@@ -2,7 +2,7 @@
 
 # Chapter 2 - Introduction to Cloud Infrastructure: Describe Azure architecture and services
 
-## Describe cloud computing
+## Describe the core architectural components of Azure
 
 New to the cloud? Introduction to Cloud Infrastructure is a four-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals. This is the second learning path in the series, Introduction to Cloud Infrastructure: Describe Azure architecture and services. The other learning paths in the series are Part 1: Describe cloud concepts, Part 3: Describe Azure management and governance, and Part 4: Apply Azure skills in guided projects.
 
@@ -273,6 +273,23 @@ Try one of these prompts in Copilot Chat:
 "Build a concept map that connects regions, Availability Zones, datacenters, resources, resource groups, subscriptions, and management groups."
 "Design a subscription and management-group structure for an organization with multiple departments and compliance boundaries."
 "Explain region pairs and sovereign regions, then recommend a resiliency approach for a workload with strict data residency requirements."
+
+## Describe Azure compute services
+
+This module focuses on core Azure compute services and when to use each option.
+
+Learning objectives
+Upon completion of this module, you'll be able to:
+
+Compare compute types, including container instances, virtual machines, and functions
+
+Describe virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, and availability sets
+
+Describe resources required for virtual machines
+
+Describe application hosting options, including Azure Web Apps, containers, and virtual machines
+
+Describe AI, machine learning, and IoT/Edge service categories in Azure
 
 
 
