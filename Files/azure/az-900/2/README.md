@@ -274,6 +274,23 @@ Try one of these prompts in Copilot Chat:
 "Design a subscription and management-group structure for an organization with multiple departments and compliance boundaries."
 "Explain region pairs and sovereign regions, then recommend a resiliency approach for a workload with strict data residency requirements."
 
+## Describe Azure compute services
+
+This module focuses on core Azure compute services and when to use each option.
+
+Learning objectives
+Upon completion of this module, you'll be able to:
+
+Compare compute types, including container instances, virtual machines, and functions
+
+Describe virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, and availability sets
+
+Describe resources required for virtual machines
+
+Describe application hosting options, including Azure Web Apps, containers, and virtual machines
+
+Describe AI, machine learning, and IoT/Edge service categories in Azure
+
 
 
 
