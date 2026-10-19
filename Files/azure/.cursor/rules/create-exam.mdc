@@ -17,7 +17,7 @@ When the user applies **create-exam** to a folder, read the question documents i
 
 Under `## Questions and Answers` (create the heading if it is missing), append one question accordion and one answer accordion per new item. Use the question number printed in the source.
 
-Skip an item when the file already has a summary that starts with `Question N` for that number, or the same question stem is already present. Skip its answer too.
+Skip an item when the file already has a summary that starts with `Question N` for that number, or the same question stem is already present. Skip its answer too. If that answer is missing **Why the others are wrong** or **Study further**, add the missing sections. Do not add a second copy of the question.
 
 Before the first accordion taken from a source file, add one bold source line linking that file, unless that file is already cited.
 
@@ -50,6 +50,15 @@ _Figure: Basic, Developer, Standard, and Professional Direct are in the answer a
 
 Basic can open billing and subscription requests. The three paid plans can open technical requests.
 
+**Why the others are wrong**
+
+- Premier is the option left out. It is not one of the Azure support plans you subscribe to in the portal.
+
+**Study further**
+
+- [Compare Azure support plans](https://azure.microsoft.com/en-us/support/plans)
+- [Create an Azure support request](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
+
 </details>
 ```
 
@@ -61,4 +70,6 @@ Basic can open billing and subscription requests. The three paid plans can open 
 - Every image that belongs to the question or the answer must be included. Do not replace a diagram with a text list and drop the picture. Save it under the exam directory in `figures/` as `question-NN-short-slug.png`. A solution diagram is `question-NN-answer.png`. Put question images in the question accordion and solution images in the answer accordion. Give each image meaningful alt text and an italic `*Figure: ...*` caption that says what the picture shows. Skip logos, vote bars, discussion icons, and other site chrome.
 - For drag and drop, the option diagram stays in the question. The filled answer diagram stays in the answer accordion.
 - The answer accordion names the correct choice in words, then one short reason tied to the requirements. If the source only gives a letter, name the matching choice. Follow the source's stated answer when the vote is split.
+- Then add **Why the others are wrong**: one bullet per incorrect choice, naming the choice and the requirement it misses. For a yes/no item, the other choice is the bullet. For drag and drop, the options left out of the answer area are the bullets.
+- Then add **Study further**: real links to Microsoft Learn or official Azure docs for that topic. Do not invent URLs. Prefer `learn.microsoft.com`. Use `azure.microsoft.com` when that is the official page, as with the support-plan comparison.
 - Repair wrapped lines. Keep the question's scenario and wording.
