@@ -33,11 +33,9 @@ Your company intends to subscribe to an Azure support plan. The plan must allow 
 
 Which of these plans allow that? Drag the correct options into the answer area.
 
-- Basic
-- Developer
-- Standard
-- Professional Direct
-- Premier
+![Support plan options with an empty answer area](figures/question-01-options.png)
+
+_Figure: Options are Basic, Developer, Standard, Professional Direct, and Premier. The answer area is empty._
 
 </details>
 
@@ -45,6 +43,10 @@ Which of these plans allow that? Drag the correct options into the answer area.
 <summary><strong>Answer 1</strong></summary>
 
 Basic, Developer, Standard, and Professional Direct. Premier stays out.
+
+![Support plans placed in the answer area](figures/question-01-answer.png)
+
+_Figure: Basic, Developer, Standard, and Professional Direct are in the answer area. Premier is not._
 
 Basic can open billing and subscription requests. The three paid plans can open technical requests.
 
@@ -56,6 +58,7 @@ Basic can open billing and subscription requests. The three paid plans can open 
 - Answer summary: `Answer N`, wrapped in `<strong>`. No extra title.
 - One blank line after `</summary>` and one blank line before `</details>`.
 - The question accordion holds the stem, requirements, and choices. It does not reveal the answer.
-- For drag and drop, list the options in the question. Put what belongs in the answer area in the answer accordion.
+- Every image that belongs to the question or the answer must be included. Do not replace a diagram with a text list and drop the picture. Save it under the exam directory in `figures/` as `question-NN-short-slug.png`. A solution diagram is `question-NN-answer.png`. Put question images in the question accordion and solution images in the answer accordion. Give each image meaningful alt text and an italic `*Figure: ...*` caption that says what the picture shows. Skip logos, vote bars, discussion icons, and other site chrome.
+- For drag and drop, the option diagram stays in the question. The filled answer diagram stays in the answer accordion.
 - The answer accordion names the correct choice in words, then one short reason tied to the requirements. If the source only gives a letter, name the matching choice. Follow the source's stated answer when the vote is split.
 - Repair wrapped lines. Keep the question's scenario and wording.
