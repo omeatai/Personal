@@ -1,0 +1,61 @@
+---
+description: Add exam questions and answers from a source folder into the exam markdown as accordions
+alwaysApply: false
+---
+
+# Create exam
+
+When the user applies **create-exam** to a folder, read the question documents in that folder and append any new questions to the exam's Questions and Answers markdown. Only run this workflow when the user asks to apply the rule. Ordinary edits do not add questions.
+
+## Which files
+
+- The folder the user names is the source folder. If they name an exam directory that contains `files/`, read `files/` instead.
+- Read every pdf, markdown, text, and html document in that folder. Skip preview images and site chrome (headers, footers, menus, Hide Solution, Discussion, Most Voted, vote charts).
+- The Questions and Answers file is the markdown in the exam directory (parent of `files/`) named after that directory. `exams/az-900/files` writes to `exams/az-900/az-900.md`. Do not create a second file. Keep the prep links and any other content already above the questions.
+
+## Add, do not duplicate
+
+Under `## Questions and Answers` (create the heading if it is missing), append one question accordion and one answer accordion per new item. Use the question number printed in the source.
+
+Skip an item when the file already has a summary that starts with `Question N` for that number, or the same question stem is already present. Skip its answer too.
+
+Before the first accordion taken from a source file, add one bold source line linking that file, unless that file is already cited.
+
+## Accordions
+
+A short title is a few words taken from the question, not the full stem.
+
+```markdown
+<details id="question-1-support-plans-that-open-requests">
+<summary><strong>Question 1 - Support plans that open requests</strong></summary>
+
+Your company intends to subscribe to an Azure support plan. The plan must allow new support requests to be opened.
+
+Which of these plans allow that? Drag the correct options into the answer area.
+
+- Basic
+- Developer
+- Standard
+- Professional Direct
+- Premier
+
+</details>
+
+<details id="answer-1">
+<summary><strong>Answer 1</strong></summary>
+
+Basic, Developer, Standard, and Professional Direct. Premier stays out.
+
+Basic can open billing and subscription requests. The three paid plans can open technical requests.
+
+</details>
+```
+
+- `id` is `question-N-kebab-title` or `answer-N`.
+- Question summary: `Question N - short title`, wrapped in `<strong>`.
+- Answer summary: `Answer N`, wrapped in `<strong>`. No extra title.
+- One blank line after `</summary>` and one blank line before `</details>`.
+- The question accordion holds the stem, requirements, and choices. It does not reveal the answer.
+- For drag and drop, list the options in the question. Put what belongs in the answer area in the answer accordion.
+- The answer accordion names the correct choice in words, then one short reason tied to the requirements. If the source only gives a letter, name the matching choice. Follow the source's stated answer when the vote is split.
+- Repair wrapped lines. Keep the question's scenario and wording.
