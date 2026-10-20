@@ -5,17 +5,17 @@ alwaysApply: false
 
 # Create exam
 
-When the user applies **create-exam** to a folder, read the question documents in that folder and append any new questions to the exam's Questions and Answers markdown. Only run this workflow when the user asks to apply the rule. Ordinary edits do not add questions.
+When the user applies **create-exam** to a folder, read the question documents in that folder and append any new questions to the set file for that range of ten. Only run this workflow when the user asks to apply the rule. Ordinary edits do not add questions.
 
 ## Which files
 
 - The folder the user names is the source folder. If they name an exam directory that contains `files/`, read `files/` instead.
 - Read every pdf, markdown, text, and html document in that folder. Skip preview images and site chrome (headers, footers, menus, Hide Solution, Discussion, Most Voted, vote charts).
-- The Questions and Answers file is the markdown in the exam directory (parent of `files/`) named after the exam. `az-900/exam/files` writes to `az-900/exam/az-900.md`. Do not create a second file. Keep the prep links and any other content already above the questions.
+- The exam index is the markdown in the exam directory named after the exam. It lists one link per set of ten questions and does not hold the questions. `az-900/exam/az-900.md` links to `az-900/exam/Q_A/01-10.md`, `11-20.md`, and so on. Write each range into `Q_A/`, and add its index link when that file is new. Keep any content already above the list.
 
 ## Add, do not duplicate
 
-Under `## Questions and Answers` (create the heading if it is missing), append one question accordion and one answer accordion per new item. Use the question number printed in the source.
+In the set file for that range (`Q_A/01-10.md` for questions 1–10), append one question accordion and one answer accordion per new item. Use the question number printed in the source. Create the set file and its index link when the range is new.
 
 Skip an item when the file already has a summary that starts with `Question N` for that number, or the same question stem is already present. Skip its answer too. If that answer is missing **Why the others are wrong** or **Study further**, add the missing sections. Do not add a second copy of the question.
 
@@ -33,7 +33,7 @@ Your company intends to subscribe to an Azure support plan. The plan must allow 
 
 Which of these plans allow that? Drag the correct options into the answer area.
 
-![Support plan options with an empty answer area](figures/question-01-options.png)
+![Support plan options with an empty answer area](../figures/question-01-options.png)
 
 _Figure: Options are Basic, Developer, Standard, Professional Direct, and Premier. The answer area is empty._
 
@@ -44,7 +44,7 @@ _Figure: Options are Basic, Developer, Standard, Professional Direct, and Premie
 
 Basic, Developer, Standard, and Professional Direct. Premier stays out.
 
-![Support plans placed in the answer area](figures/question-01-answer.png)
+![Support plans placed in the answer area](../figures/question-01-answer.png)
 
 _Figure: Basic, Developer, Standard, and Professional Direct are in the answer area. Premier is not._
 
@@ -67,7 +67,7 @@ Basic can open billing and subscription requests. The three paid plans can open 
 - Answer summary: `Answer N`, wrapped in `<strong>`. No extra title.
 - One blank line after `</summary>` and one blank line before `</details>`.
 - The question accordion holds the stem, requirements, and choices. It does not reveal the answer.
-- Every image that belongs to the question or the answer must be included. Do not replace a diagram with a text list and drop the picture. Save it under the exam directory in `figures/` as `question-NN-short-slug.png`. A solution diagram is `question-NN-answer.png`. Put question images in the question accordion and solution images in the answer accordion. Give each image meaningful alt text and an italic `*Figure: ...*` caption that says what the picture shows. Skip logos, vote bars, discussion icons, and other site chrome.
+- Every image that belongs to the question or the answer must be included. Do not replace a diagram with a text list and drop the picture. Save it under the exam directory in `figures/` as `question-NN-short-slug.png`. A solution diagram is `question-NN-answer.png`. From a set file in `Q_A/`, link it as `../figures/question-NN-short-slug.png`. Link a source PDF as `../files/01-10.pdf`. Put question images in the question accordion and solution images in the answer accordion. Give each image meaningful alt text and an italic `*Figure: ...*` caption that says what the picture shows. Skip logos, vote bars, discussion icons, and other site chrome.
 - For drag and drop, the option diagram stays in the question. The filled answer diagram stays in the answer accordion.
 - The answer accordion names the correct choice in words, then one short reason tied to the requirements. If the source only gives a letter, name the matching choice. Follow the source's stated answer when the vote is split.
 - Then add **Why the others are wrong**: one bullet per incorrect choice, naming the choice and the requirement it misses. For a yes/no item, the other choice is the bullet. For drag and drop, the options left out of the answer area are the bullets.
