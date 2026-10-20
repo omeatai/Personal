@@ -11,6 +11,7 @@
 - [ ] [OTHER NETWORKING](https://www.udemy.com/courses/search/?src=ukw&q=networking)
 - [ ] [CISCO WEBSITE](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html#accordion-f5dfa1d461-item-1da2b5a97a)
 - [ ] [CISCO NETWORK ACADEMY](https://www.netacad.com/catalogs/learn?category=course&certification=ccna)
+- [ ] [GNS3 ACADEMY](https://gns3.teachable.com/l/products?sortKey=in_progress&sortDirection=desc&page=1)
 
 ## LINUX COURSES
 
@@ -37,6 +38,7 @@
 
 ### +200-301 CCNA - Cisco Certified Network Associate (CCNA)
 
+- [ ] [The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [CCNA Routing & Switching Packet Tracer Labs](https://youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct&si=ONsRzEZch5Hct-x2)
 - [ ] [Free CCNA v1.1 200-301 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
@@ -81,7 +83,7 @@
 ## OTHER NETWORKING COURSES
 
 - [ ] [GNS3 Build 3 Network Applications with Python](https://gns3.teachable.com/l/products)
-- [ ] [The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
+
 - [ ] [Introduction to Computer Networking - Beginner Crash Course](https://www.udemy.com/course/networkingbasics/)
 - [ ] [CompTIA Network+ (N10-009) Full Course](https://www.udemy.com/course/comptia-network-009/)
 - [ ] [Fundamentals of Network Engineering](https://www.udemy.com/course/fundamentals-of-networking-for-effective-backend-design/)
