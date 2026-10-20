@@ -39,6 +39,8 @@
 ### +200-301 CCNA - Cisco Certified Network Associate (CCNA)
 
 - [ ] [The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
+- [ ] [Python Network Programming for Network Engineers (Python 3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
+
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [CCNA Routing & Switching Packet Tracer Labs](https://youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct&si=ONsRzEZch5Hct-x2)
 - [ ] [Free CCNA v1.1 200-301 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
@@ -80,13 +82,3 @@
 
 ### CCIE Enterprise Infrastructure lab exam v1.1
 
-## OTHER NETWORKING COURSES
-
-- [ ] [GNS3 Build 3 Network Applications with Python](https://gns3.teachable.com/l/products)
-
-- [ ] [Introduction to Computer Networking - Beginner Crash Course](https://www.udemy.com/course/networkingbasics/)
-- [ ] [CompTIA Network+ (N10-009) Full Course](https://www.udemy.com/course/comptia-network-009/)
-- [ ] [Fundamentals of Network Engineering](https://www.udemy.com/course/fundamentals-of-networking-for-effective-backend-design/)
-- [ ] [Introduction to Computer Networks for Non-Techies](https://www.udemy.com/course/introduction-to-computer-networks/)
-- [ ] [Introduction to Networking](https://www.udemy.com/course/introduction-to-networking/)
-- [ ] [Python Network Programming for Network Engineers (Python 3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
