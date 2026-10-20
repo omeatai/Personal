@@ -385,16 +385,135 @@ Use Azure Machine Learning when you need custom model development and management
 Use Azure IoT services when your solution centers on connected devices and telemetry.
 Next unit: Describe application hosting options
 
+Describe application hosting options
+Completed
+100 XP
+3 minutes
+If you need to host your application on Azure, you might initially turn to a virtual machine (VM) or containers. Both VMs and containers provide excellent hosting solutions. VMs give you maximum control of the hosting environment and allow you to configure it exactly how you want. VMs also may be the most familiar hosting method if you’re new to the cloud. Containers, with the ability to isolate and individually manage different aspects of the hosting solution, can also be a robust and compelling option.
+
+There are other hosting options that you can use with Azure, including Azure App Service.
+
+<img width="2640" height="1560" alt="image" src="https://github.com/user-attachments/assets/58a4bea6-9cae-49c5-85db-43690040fbe1" />
+
+Azure App Service
+App Service lets you build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability. App Service supports Windows and Linux and supports automated deployments from GitHub, Azure DevOps, or any Git repo for continuous deployment.
+
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It lets you focus on building and maintaining your app while Azure keeps the environment up and running. App Service supports multiple languages and frameworks, including .NET, .NET Core, Java, PHP, Python, and Node.js.
+
+Types of app services
+With App Service, you can host most common app styles:
+
+Web apps
+API apps
+WebJobs
+Mobile apps
+App Service handles most of the infrastructure decisions you deal with in hosting web-accessible apps:
+
+Deployment and management are integrated into the platform.
+Endpoints can be secured.
+Sites can be scaled quickly to handle high traffic loads.
+The built-in load balancing and traffic manager provide high availability.
+All of these app styles are hosted in the same infrastructure and share these benefits. This flexibility makes App Service the ideal choice to host web-oriented applications.
+
+Web apps
+App Service includes full support for hosting web apps by using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can choose either Windows or Linux as the host operating system.
+
+API apps
+Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. App Service provides full Swagger support and the ability to package and publish your API in Azure Marketplace. The published APIs can be consumed from any HTTP- or HTTPS-based client.
+
+WebJobs
+You can use the WebJobs feature to run a program (.exe, Java, PHP, Python, or Node.js) or script (.cmd, .bat, PowerShell, or Bash) in the same context as a web app, API app, or mobile app. They can be scheduled or run by a trigger. WebJobs are often used to run background tasks as part of your application logic.
+
+Mobile apps
+Use the Mobile Apps feature of App Service to quickly build a back end for iOS and Android apps. With just a few actions in the Azure portal, you can:
+
+Store mobile app data in a cloud-based SQL database.
+Authenticate customers against common social providers, such as MSA, Google, X, and Facebook.
+Send push notifications.
+Execute custom back-end logic in C# or Node.js.
+On the mobile app side, there's SDK support for native iOS and Android, Xamarin, and React Native apps.
+
+Next unit: Module assessment
+
+Module assessment
+Completed
+200 XP
+4 minutes
+Great job! You passed the module assessment.
+Module assessment passed
+
+Great job! You passed the module assessment.
+Score: 100%
+
+Choose the best response for each question.
+
+Check your knowledge
+
+1. Which Azure Virtual Machine feature staggers updates across VMs based on their update domain and fault domain?
+
+Availability sets
+Correct
+
+Scale sets
+
+Update sets
 
 
+2. Which Azure compute option is event-driven and serverless, so you can run code without managing virtual machines?
 
+Azure Functions
+Correct
 
+Azure Virtual Machines
 
+Azure Container Instances
+3. Which Azure service lets organizations host web apps and APIs without managing the underlying infrastructure?
 
+Azure App Service
+Correct
 
+Azure Virtual Machines
 
+Azure ExpressRoute
+4. Which Azure service category provides prebuilt APIs for capabilities like vision, speech, and language without training your own model from scratch?
 
+Azure AI services
+Correct
 
+Azure Virtual Machines
+
+Azure Virtual Networks
+Next unit: Summary
+
+Summary
+Completed
+100 XP
+2 minutes
+In this module, you learned about core Azure compute services and when to use them. You reviewed virtual machines and options such as virtual machine scale sets and virtual machine availability sets. You explored containers, Azure Functions, application hosting options, and Azure AI, machine learning, and IoT/Edge service categories.
+
+You learned that agentic AI is an application pattern that can be built by combining Azure AI capabilities with application logic when a solution needs multistep reasoning and tool use.
+
+Learning objectives
+You should now be able to:
+
+Compare compute types, including container instances, virtual machines, and functions.
+Describe virtual machine options, including virtual machines (VMs), virtual machine scale sets, and virtual machine availability sets.
+Describe resources required for virtual machines.
+Describe application hosting options, including Azure Web Apps, containers, and virtual machines.
+Describe AI, machine learning, and IoT/Edge service categories in Azure.
+Recognize agentic AI as an application pattern built from Azure AI capabilities.
+Additional resources
+The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
+
+Host a web application with Azure App Service is a Microsoft Learn module that explores the process of hosting a web application in Azure.
+Explore with Copilot
+ Tip
+
+Try one of these prompts in Copilot Chat:
+
+"Build a decision matrix for when to use virtual machines, containers, Azure Functions, and Azure App Service across three realistic workloads."
+"Explain scale sets, availability sets, and Availability Zones with one failure scenario that shows how each option improves resiliency."
+"Create a short architecture walkthrough that combines compute hosting with one AI or IoT Edge service and explains why each component was chosen."
 
 
 
