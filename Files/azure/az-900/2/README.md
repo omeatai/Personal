@@ -291,30 +291,99 @@ Describe application hosting options, including Azure Web Apps, containers, and 
 
 Describe AI, machine learning, and IoT/Edge service categories in Azure
 
+Describe Azure containers
+Completed
+100 XP
+6 minutes
+Virtual machines reduce costs compared to physical hardware, but they're still limited to a single operating system per VM. If you want to run multiple instances of an application on a single host machine, containers are an excellent choice.
 
+What are containers?
+Containers are a virtualization environment. Much like running multiple virtual machines on a single physical host, you can run multiple containers on a single physical or virtual host. Unlike virtual machines, you don't manage the operating system for a container. Each virtual machine runs its own operating system that you can connect to and manage. Containers are lightweight and designed to be created, scaled out, and stopped dynamically. You can create and deploy virtual machines as application demand increases, but containers are a lighter-weight, more agile method. Containers help you respond to changes on demand and restart quickly after a crash or hardware interruption. One of the most popular container engines is Docker, and Azure supports Docker.
 
+Compare virtual machines to containers
+The following video highlights several of the important differences between virtual machines and containers:
 
+Azure Container Instances
+Azure Container Instances offer the fastest and simplest way to run a container in Azure, without managing any virtual machines or adopting extra services. Azure Container Instances are a platform as a service (PaaS) offering. You upload your containers and the service runs them for you.
 
+Azure Container Apps
+Azure Container Apps are similar in many ways to a container instance. They let you get up and running right away, they remove the container management overhead, and they're a PaaS offering. Container Apps also include built-in load balancing and scaling, so your design can adapt to changing demand.
 
+Azure Kubernetes Service
+Azure Kubernetes Service (AKS) is a container orchestration service. An orchestration service manages the lifecycle of containers. When you're deploying a fleet of containers, AKS can make fleet management simpler and more efficient.
 
+<img width="2520" height="1560" alt="image" src="https://github.com/user-attachments/assets/592a8fca-72e4-46d8-a3f1-72d8532a407b" />
 
+Use containers in your solutions
+Containers are often used to create solutions that use a microservice architecture. In this architecture, you break solutions into smaller, independent pieces. For example, you might split a website into a container hosting your front end, another hosting your back end, and a third for storage. This split lets you maintain, scale, or update each part of your app independently.
 
+Imagine your website back end reaches capacity, but the front end and storage aren't stressed. With containers, you can scale the back end separately to improve performance. You can also change the storage service or modify the front end without affecting the other components.
 
+Next unit: Describe Azure functions
 
+Describe Azure functions
+Completed
+100 XP
+4 minutes
+Azure Functions is an event-driven, serverless compute option that doesn’t require maintaining virtual machines or containers. If you build an app using VMs or containers, those resources have to be “running” in order for your app to function. With Azure Functions, an event wakes the function, alleviating the need to keep resources provisioned when there are no events.
 
+<img width="2480" height="1520" alt="image" src="https://github.com/user-attachments/assets/defaedb0-e43c-4cbe-9cfa-4600758adc6b" />
 
+Serverless computing in Azure
 
+Benefits of Azure Functions
+Using Azure Functions is ideal when you're only concerned about the code running your service and not about the underlying platform or infrastructure. Functions are commonly used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
 
+Functions scale automatically based on demand, so they may be a good choice when demand is variable.
 
+Azure Functions runs your code when it's triggered and automatically deallocates resources when the function finishes. In this model, Azure charges you only for the CPU time used while your function runs.
 
+<img width="2360" height="1520" alt="image" src="https://github.com/user-attachments/assets/3493cb3a-e578-4d26-acbc-f76560dc49e9" />
 
+Functions can be either stateless or stateful. When they're stateless (the default), they behave as if they restart every time they respond to an event. When they're stateful (called Durable Functions), the runtime passes a context through the function to track prior activity.
 
+Functions are a key component of serverless computing. They're also a general compute platform for running any type of code. If the needs of your app change, you can deploy the project in an environment that isn't serverless. This flexibility lets you manage scaling, run on virtual networks, and even completely isolate the functions.
 
+Next unit: Describe AI, machine learning, and IoT/Edge services in Azure
 
+Describe AI, machine learning, and IoT/Edge services in Azure
+Completed
+100 XP
+4 minutes
+Azure includes service categories that help you build intelligent and connected solutions without starting from scratch.
 
+Azure AI services
+Azure AI services provides prebuilt capabilities for common AI scenarios, such as language, speech, vision, and document processing. These services are useful when you want to add intelligent features through APIs instead of training your own model first.
 
+Azure OpenAI Service is another AI option in Azure that supports generative AI scenarios, such as chat and content generation, with built-in security and governance controls.
 
+Agentic AI patterns
+Agentic applications combine an AI model with instructions, context, and tool use to complete multistep goals. In Azure, you usually build these patterns by combining Azure AI services and Azure OpenAI Service with your own application logic.
 
+At a fundamentals level, treat agentic AI as an application pattern built from Azure AI capabilities, not as a separate compute service category.
+
+Azure Machine Learning
+Use Azure Machine Learning when you need to build, train, and manage custom machine learning models. This option is a better fit when your scenario requires model development, experimentation, and lifecycle management.
+
+IoT and Edge services
+Azure IoT services help you connect, monitor, and manage devices.
+
+Azure IoT Hub enables secure, bi-directional communication between cloud services and IoT devices.
+Azure IoT Central provides a simplified software as a service (SaaS) IoT platform for solution builders.
+Azure IoT Edge extends cloud capabilities to edge devices so some workloads can run closer to where data is generated.
+This flow commonly starts with devices sending telemetry through IoT Hub, then uses cloud analytics to generate insights and model updates that IoT Edge runtime applies near the devices. IoT Central can simplify solution management for these connected-device scenarios.
+
+<img width="2720" height="1560" alt="image" src="https://github.com/user-attachments/assets/7c4b5412-c4d7-42eb-971c-4b010a6e98f0" />
+
+Choosing the right option
+At a fundamentals level, use this decision pattern:
+
+<img width="2240" height="1840" alt="image" src="https://github.com/user-attachments/assets/341b9339-1d79-47eb-b05e-10bb9cbd338b" />
+
+Use Azure AI services when you need prebuilt AI features exposed through APIs.
+Use Azure Machine Learning when you need custom model development and management.
+Use Azure IoT services when your solution centers on connected devices and telemetry.
+Next unit: Describe application hosting options
 
 
 
