@@ -12,6 +12,7 @@ When the user applies **create-exam** to a folder, read the question documents i
 - The folder the user names is the source folder. If they name an exam directory that contains `files/`, read `files/` instead.
 - Read every pdf, markdown, text, and html document in that folder. Skip preview images and site chrome (headers, footers, menus, Hide Solution, Discussion, Most Voted, vote charts).
 - The exam index is the markdown in the exam directory named after the exam. It lists one link per set of ten questions and does not hold the questions. `az-900/exam/az-900.md` links to `az-900/exam/Q_A/01-10.md`, `11-20.md`, and so on. Write each range into `Q_A/`, and add its index link when that file is new. Keep any content already above the list.
+- The first line of the index and of each set file is a back link to its parent. The index links to `azure_ai.md`. Each set file links to the index.
 
 ## Add, do not duplicate
 
