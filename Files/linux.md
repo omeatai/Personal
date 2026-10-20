@@ -9,6 +9,8 @@
 - [ ] [CCNP](https://www.udemy.com/courses/search/?src=ukw&q=ccnp)
 - [ ] [CCIE](https://www.udemy.com/courses/search/?src=ukw&q=ccnp)
 - [ ] [OTHER NETWORKING](https://www.udemy.com/courses/search/?src=ukw&q=networking)
+- [ ] [CISCO WEBSITE](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html#accordion-f5dfa1d461-item-1da2b5a97a)
+- [ ] [CISCO NETWORK ACADEMY](https://www.netacad.com/catalogs/learn?category=course&certification=ccna)
 
 ## LINUX COURSES
 
@@ -33,10 +35,12 @@
 
 ## CCNA COURSES
 
+### +200-301 CCNA - Cisco Certified Network Associate (CCNA)
+
+- [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [CCNA Routing & Switching Packet Tracer Labs](https://youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct&si=ONsRzEZch5Hct-x2)
 - [ ] [Free CCNA v1.1 200-301 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
 - [ ] [CCNP ENCOR v1.1 350-401 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgOb2uny1CYEzyRy_mc-lE39)
-- [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [Cisco CCNA 200-301 – The Complete Guide to Getting Certified](https://www.udemy.com/course/ccna-complete/)
 - [ ] [Master Cisco CCNA 200-301: Comprehensive All-in-One Course](https://www.udemy.com/course/ccna-jitl/)
 - [ ] [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
@@ -49,6 +53,18 @@
 
 ## CCNP COURSES
 
+### +350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies
+
+### +300-410 ENARSI: Implementing Cisco Enterprise Advanced Routing and Services
+
+### +300-415 ENSDWI: Implementing Cisco Catalyst SD-WAN Solutions
+
+### 300-420 ENSLD: Designing Cisco Enterprise Networks
+
+### 300-435 ENAUTO: Automating and Programming Cisco Enterprise Solutions
+
+### 300-440 ENCC: Designing and Implementing Secure Cloud Connectivity
+
 - [ ] [CCNP/CCIE ENCOR 350-401 v1.2 Mega Course by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-encor-350-401-by-arash-deljoo/)
 - [ ] [CCNA 200-301+CCNP/CCIE ENCOR 350-401 v1.2 by Arash Deljoo](https://www.udemy.com/course/ccna-200-301-ccnpccie-encor-350-401-by-arash-deljoo/)
 - [ ] [Cisco CCNP Enterprise ( ENARSI + ENCOR ) v1.2 Training](https://www.udemy.com/course/ccnp-all-in-one)
@@ -57,6 +73,10 @@
 - [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-2/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-22/)
 
 ## CCIE COURSES
+
+### 350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies
+
+### CCIE Enterprise Infrastructure lab exam v1.1
 
 ## OTHER NETWORKING COURSES
 
