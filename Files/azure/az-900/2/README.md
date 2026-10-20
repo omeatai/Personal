@@ -515,7 +515,7 @@ Try one of these prompts in Copilot Chat:
 "Explain scale sets, availability sets, and Availability Zones with one failure scenario that shows how each option improves resiliency."
 "Create a short architecture walkthrough that combines compute hosting with one AI or IoT Edge service and explains why each component was chosen."
 
-
+## Describe Azure networking services
 
 
 
