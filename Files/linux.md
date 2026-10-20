@@ -38,22 +38,14 @@
 
 ### +200-301 CCNA - Cisco Certified Network Associate (CCNA)
 
+- [ ] [Cisco CCNA 200-301 – The Complete Guide to Getting Certified](https://www.udemy.com/course/ccna-complete/?couponCode=MT261019G1)
+- [ ] [Master Cisco CCNA 200-301: Comprehensive All-in-One Course](https://www.udemy.com/course/ccna-jitl/?couponCode=MT261019G1)
+- [ ] [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/?couponCode=MT261019G1)
+- [ ] [Cisco CCNA 200-301 Complete Course: Packet Tracer Labs](https://www.udemy.com/course/cisco-ccna-icnd2-200-105-complete-course-sims-and-gns3/?couponCode=MT261019G1)
+- [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/?couponCode=MT261019G1)
 - [ ] [The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
-- [ ] [Python Network Programming for Network Engineers (Python 3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
-
-- [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
-- [ ] [CCNA Routing & Switching Packet Tracer Labs](https://youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct&si=ONsRzEZch5Hct-x2)
 - [ ] [Free CCNA v1.1 200-301 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
-- [ ] [CCNP ENCOR v1.1 350-401 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgOb2uny1CYEzyRy_mc-lE39)
-- [ ] [Cisco CCNA 200-301 – The Complete Guide to Getting Certified](https://www.udemy.com/course/ccna-complete/)
-- [ ] [Master Cisco CCNA 200-301: Comprehensive All-in-One Course](https://www.udemy.com/course/ccna-jitl/)
-- [ ] [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
-- [ ] [Complete Cisco CCNA 200-301 Prep: From Beginner to Certified](https://www.udemy.com/course/complete-cisco-ccna-200-301-prep-from-beginner-to-certified/)
-- [ ] [Cisco CCNA 200-301 Networking v1.1](https://www.udemy.com/course/ccna-cisco-200-301-v11-your-complete-training-course/)
-- [ ] [Cisco CCNA 200-301 Complete Course: Packet Tracer Labs](https://www.udemy.com/course/cisco-ccna-icnd2-200-105-complete-course-sims-and-gns3/)
-- [ ] [The Complete Cisco CCNA & CCNP Course 2026](https://www.udemy.com/course/ccnp-routing-protocols-labs/)
-- [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/)
-
+- [ ] [Python Network Programming for Network Engineers (Python 3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
 
 ## CCNP COURSES
 
@@ -68,13 +60,6 @@
 ### 300-435 ENAUTO: Automating and Programming Cisco Enterprise Solutions
 
 ### 300-440 ENCC: Designing and Implementing Secure Cloud Connectivity
-
-- [ ] [CCNP/CCIE ENCOR 350-401 v1.2 Mega Course by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-encor-350-401-by-arash-deljoo/)
-- [ ] [CCNA 200-301+CCNP/CCIE ENCOR 350-401 v1.2 by Arash Deljoo](https://www.udemy.com/course/ccna-200-301-ccnpccie-encor-350-401-by-arash-deljoo/)
-- [ ] [Cisco CCNP Enterprise ( ENARSI + ENCOR ) v1.2 Training](https://www.udemy.com/course/ccnp-all-in-one)
-- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 v1.2 Training](https://www.udemy.com/course/ccnpencor/)
-- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-1/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-12/)
-- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-2/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-22/)
 
 ## CCIE COURSES
 
