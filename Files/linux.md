@@ -4,11 +4,11 @@
 
 ## TOPICS
 
-- [ ] [LINUX](https://www.udemy.com/courses/search/?src=ukw&q=linux)
-- [ ] [RHCSA](https://www.udemy.com/courses/search/?src=ukw&q=rhcsa)
+- [ ] [LINUX/RHCSA](https://www.udemy.com/courses/search/?src=ukw&q=linux)
 - [ ] [CCNA](https://www.udemy.com/courses/search/?src=ukw&q=ccna)
 - [ ] [CCNP](https://www.udemy.com/courses/search/?src=ukw&q=ccnp)
-- [ ] [NETWORKING](https://www.udemy.com/courses/search/?src=ukw&q=networking)
+- [ ] [CCIE](https://www.udemy.com/courses/search/?src=ukw&q=ccnp)
+- [ ] [OTHER NETWORKING](https://www.udemy.com/courses/search/?src=ukw&q=networking)
 
 ## LINUX COURSES
 
@@ -27,14 +27,11 @@
 - [ ] [-------------------------------------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/linux/)
 - [ ] [linuxjourney.com](https://linuxjourney.com/)
 - [ ] [Mastering Linux: The Comprehensive Guide](https://www.udemy.com/course/mastering-linux/)
-
-## RHCSA/RHCE COURSES
-
 - [ ] [Linux Redhat Certified System Administrator (RHCSA - EX200)](https://www.udemy.com/course/unofficial-linux-redhat-certified-system-administrator-rhcsa)
 - [ ] [Linux Red Hat Certified Engineer (RHCE - EX294)](https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/)
 - [ ] [Red Hat Ansible Automation Training – RHEL 8/9 (RH294) 2026](https://www.udemy.com/course/red-hat-system-administration-lll/)
 
-## CCNA - (200-301) | CCNP - (350-401 ENCOR, 300-410 ENARSI)
+## CCNA COURSES
 
 - [ ] [CCNA Routing & Switching Packet Tracer Labs](https://youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct&si=ONsRzEZch5Hct-x2)
 - [ ] [Free CCNA v1.1 200-301 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
@@ -48,6 +45,10 @@
 - [ ] [Cisco CCNA 200-301 Complete Course: Packet Tracer Labs](https://www.udemy.com/course/cisco-ccna-icnd2-200-105-complete-course-sims-and-gns3/)
 - [ ] [The Complete Cisco CCNA & CCNP Course 2026](https://www.udemy.com/course/ccnp-routing-protocols-labs/)
 - [ ] [Cisco CCNA Packet Tracer Ultimate labs: CCNA 200-301 labs](https://www.udemy.com/course/cisco-ccna-packet-tracer-ultimate-labs-ccna-exam-prep-labs/)
+
+
+## CCNP COURSES
+
 - [ ] [CCNP/CCIE ENCOR 350-401 v1.2 Mega Course by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-encor-350-401-by-arash-deljoo/)
 - [ ] [CCNA 200-301+CCNP/CCIE ENCOR 350-401 v1.2 by Arash Deljoo](https://www.udemy.com/course/ccna-200-301-ccnpccie-encor-350-401-by-arash-deljoo/)
 - [ ] [Cisco CCNP Enterprise ( ENARSI + ENCOR ) v1.2 Training](https://www.udemy.com/course/ccnp-all-in-one)
@@ -55,7 +56,9 @@
 - [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-1/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-12/)
 - [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 Training Part-2/2](https://www.udemy.com/course/ccnpccie-enterprise-encor-350-401-training-part-22/)
 
-## NETWORKING COURSES
+## CCIE COURSES
+
+## OTHER NETWORKING COURSES
 
 - [ ] [GNS3 Build 3 Network Applications with Python](https://gns3.teachable.com/l/products)
 - [ ] [The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
