@@ -13,6 +13,8 @@
 ## Phase 1: Fundamentals
 
 ### +AZ-900: Azure Fundamentals
+<details>
+<summary><strong>+Contents</strong></summary>
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/1/README.md)
@@ -34,6 +36,7 @@
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [**-- LAB --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/sample.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
+</details>details>
 
 ### +AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
