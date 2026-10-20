@@ -11,7 +11,7 @@ When the user applies **create-exam** to a folder, read the question documents i
 
 - The folder the user names is the source folder. If they name an exam directory that contains `files/`, read `files/` instead.
 - Read every pdf, markdown, text, and html document in that folder. Skip preview images and site chrome (headers, footers, menus, Hide Solution, Discussion, Most Voted, vote charts).
-- The Questions and Answers file is the markdown in the exam directory (parent of `files/`) named after that directory. `exams/az-900/files` writes to `exams/az-900/az-900.md`. Do not create a second file. Keep the prep links and any other content already above the questions.
+- The Questions and Answers file is the markdown in the exam directory (parent of `files/`) named after the exam. `az-900/exam/files` writes to `az-900/exam/az-900.md`. Do not create a second file. Keep the prep links and any other content already above the questions.
 
 ## Add, do not duplicate
 

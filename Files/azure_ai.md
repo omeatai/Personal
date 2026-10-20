@@ -14,7 +14,7 @@
 
 ### +AZ-900: Azure Fundamentals
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-- [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/exams/az-900/az-900.md)
+- [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/1/README.md)
   - [ ] [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
   - [ ] [Describe the benefits of using cloud services](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/)
