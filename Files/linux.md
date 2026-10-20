@@ -51,6 +51,12 @@
 
 ### +350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies
 
+- [ ] [CCNP ENCOR v1.1 350-401 | Complete Course 2026](https://www.youtube.com/playlist?list=PLxbwE86jKRgOb2uny1CYEzyRy_mc-lE39)
+- [ ] [CCNP/CCIE ENCOR 350-401 v1.2 Mega Course by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-encor-350-401-by-arash-deljoo/?couponCode=MT261019G1)
+- [ ] [CCNP,CCIE Enterprise: ENCOR 350-401 v1.2 Training](https://www.udemy.com/course/ccnpencor/)
+- [ ] [Cisco ENCOR 350-401 Practice Exams: CCNP & CCIE Enterprise](https://www.udemy.com/course/ciscoencor/?couponCode=MT261019G1)
+- [ ] [CCNP/CCIE 350-401 ENCOR Practice Exams 1,080 Q v1.2](https://www.udemy.com/course/ccnpccie-350-401-encor-practice-exams-1080-q-v12/?couponCode=MT261019G1)
+
 ### +300-410 ENARSI: Implementing Cisco Enterprise Advanced Routing and Services
 
 ### +300-415 ENSDWI: Implementing Cisco Catalyst SD-WAN Solutions
