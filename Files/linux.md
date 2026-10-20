@@ -59,6 +59,12 @@
 
 ### +300-410 ENARSI: Implementing Cisco Enterprise Advanced Routing and Services
 
+- [ ] [CCNP ENARSI 300-410 v1.1 Masterclass by Arash Deljoo](https://www.udemy.com/course/complete-teaching-of-enarsi-300-410-by-arash-deljoo/?couponCode=MT261019G1)
+- [ ] [CCNP Enterprise: ENARSI 300-410 Training Part-1/2](https://www.udemy.com/course/ccnp-enterprise-enarsi-300-410-training-part-12/?couponCode=MT261019G1)
+- [ ] [CCNP Enterprise: ENARSI 300-410 Training Part-2/2](https://www.udemy.com/course/ccnp-enterprise-enarsi-300-410-training-part-22/?couponCode=MT261019G1)
+- [ ] [CCNP ENARSI 300-410 Practice Tests & Labs | 640 Questions](https://www.udemy.com/course/ccnp-enarsi-300-410-exam-prep-labs-640-questions-2026/?couponCode=MT261019G1)
+- [ ] [CCNP 300-410 ENARSI Practice Exams 945 Questions v1.1](https://www.udemy.com/course/ccnp-300-410-enarsi-practice-exams-945-questions-v11/?couponCode=MT261019G1)
+
 ### +300-415 ENSDWI: Implementing Cisco Catalyst SD-WAN Solutions
 
 ### 300-420 ENSLD: Designing Cisco Enterprise Networks
