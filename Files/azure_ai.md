@@ -36,7 +36,7 @@
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [**-- LAB --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/sample.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
-</details>details>
+</details>
 
 ### +AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
