@@ -35,7 +35,6 @@
 ### DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate
 - [ ] [AWS Skill Builder | DVA-C02/DVA-C03: AWS Certified Developer/Application development and serverless – Associate](https://skillbuilder.aws/learning-plan/ZWHYYQBTUK/exam-prep-plan-aws-certified-developer--associate-dvac02--english/NG34SRVV2G)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate-dva-c02/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | AWS Certified Developer Associate Exam Training DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training)
 - [ ] [Neal Davis | AWS Certified Developer Associate Practice Exams DVA-C02](https://www.udemy.com/course/aws-developer-associate-practice-exams/)
 - [ ] [Stephane Maarek | Ultimate AWS Certified Developer Associate 2026 DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
@@ -44,7 +43,6 @@
 ### SOA-C03: AWS Certified CloudOps Engineer – Associate
 - [ ] [AWS Skill Builder | SOA-C03: AWS Certified CloudOps Engineer – Associate](https://skillbuilder.aws/learning-plan/S427S3T7B5/exam-prep-plan-aws-certified-cloudops-engineer--associate-soac03--english/D46WYPBKRS)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-cloudops-engineer-associate-soa-c03/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/)
 - [ ] [Neal Davis | AWS Certified CloudOps Engineer Associate Practice Exams](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-aws-practice-exams/)
 - [ ] [Stephane Maarek | AWS Certified CloudOps Engineer Associate SOA-C03 2026](https://www.udemy.com/course/aws-certified-cloudops-associate/)
@@ -53,7 +51,6 @@
 ### DEA-C01: AWS Certified Data Engineer – Associate
 - [ ] [AWS Skill Builder | DEA-C01: AWS Certified Data Engineer – Associate](https://skillbuilder.aws/learning-plan/QYZWVSMX4B/exam-prep-plan-aws-certified-data-engineer--associate-deac01--english/YTMBK7R698)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-data-engineer-associate-dea-c01/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Stephane Maarek | AWS Certified Data Engineer Associate 2026 - Hands On!](https://www.udemy.com/course/aws-data-engineer/)
 - [ ] [Stephane Maarek | AWS Certified Data Engineer - Associate Practice Exams](https://www.udemy.com/course/practice-exams-aws-certified-data-engineer-associate-r/)
 - [ ] [Neal Davis | AWS Certified Data Engineer Associate Practice Exams DEA-C01](https://www.udemy.com/course/aws-certified-data-engineer-associate-practice-exams-dea/)
@@ -61,7 +58,6 @@
 ### MLA-C02: AWS Certified Machine Learning Engineer – Associate
 - [ ] [AWS Skill Builder | MLA-C02: AWS Certified Machine Learning Engineer – Associate](https://skillbuilder.aws/learning-plan/XGYSGHMJD2/exam-prep-plan-aws-certified-machine-learning-engineer--associate-mlac02--english/5FD2DC27G1)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-machine-learning-engineer-associate-mla-c01/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Nikolai Schuler | AWS Certified Machine Learning Engineer - Associate MLA-C01](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01-exam-prep/)
 - [ ] [Nikolai Schuler | AWS Machine Learning Engineer - Associate Practice Exams](https://www.udemy.com/course/aws-machine-learning-engineer-associate-practice-exams/)
 - [ ] [Stephane Maarek | AWS Certified Machine Learning Engineer Associate: Hands On!](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/)
@@ -70,22 +66,18 @@
 ### SAP-C03: AWS Certified Solutions Architect – Professional
 - [ ] [AWS Skill Builder | SAP-C03: AWS Certified Solutions Architect – Professional](https://skillbuilder.aws/learning-plan/UYRXS2DF85/exam-prep-plan-aws-certified-solutions-architect--associate-saac03--english/U991QUF9C3)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### DOP-C02: AWS Certified DevOps Engineer – Professional
 - [ ] [AWS Skill Builder | DOP-C02: AWS Certified DevOps Engineer – Professional](https://skillbuilder.aws/learning-plan/2PTQME1CCS/exam-prep-plan-aws-certified-devops-engineer--professional-dopc02--english/724EJD3G8X)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-devops-engineer-professional-dop-c02/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### AIP-C01: AWS Certified Generative AI Developer – Professional
 - [ ] [AWS Skill Builder | AIP-C01: AWS Certified Generative AI Developer – Professional ](https://skillbuilder.aws/learning-plan/9VXVGYT38G/exam-prep-plan-aws-certified-generative-ai-developer--professional-aipc01--english/4SCMN2659K)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-generative-ai-developer-professional-aip-c01/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 
 ### SCS-C03: AWS Certified Security – Speciality
 - [ ] [AWS Skill Builder | SCS-C03: AWS Certified Security – Speciality ](https://skillbuilder.aws/learning-plan/9VXVGYT38G/exam-prep-plan-aws-certified-generative-ai-developer--professional-aipc01--english/4SCMN2659K)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c03/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/aws/)
 - [ ] [Neal Davis | AWS Certified Security Specialty Course SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-course/)
 - [ ] [Neal Davis | AWS Certified Security Specialty Practice Exams SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-practice-exams-course/)
 - [ ] [Stephane Maarek | Ultimate AWS Certified Security Specialty NEW 2026 SCS-C03](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
