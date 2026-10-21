@@ -18,9 +18,6 @@
 </details>
   
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-- [ ] [**-- LAB --** | Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/1/README.md)
-- [ ] [**-- LAB --** | Chapter 2 - Introduction to Cloud Infrastructure: Describe Azure architecture and services](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/2/README.md)
-- [ ] [**-- LAB --** | Chapter 3 - Introduction to Cloud Infrastructure: Describe Azure management and governance](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/3/README.md)
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
   - [ ] [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
@@ -38,9 +35,7 @@
   - [ ] [Describe features and tools for managing and deploying Azure resources](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/)
   - [ ] [Describe monitoring tools in Azure](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/)
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
-- [ ] [**-- LAB --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/sample.md)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
-- [ ] [**-- QUIZ --** | Master Microsoft Azure Fundamentals: AZ-900](https://github.com/omeatai/Personal/blob/main/Files/azure/sample.md)
 
 ### +AZ-104: Azure Administrator Associate
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
