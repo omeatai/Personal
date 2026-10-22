@@ -24,7 +24,7 @@
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
 
 ### +AZ-104: Azure Administrator Associate
-- [ ] [AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
+- [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
@@ -33,23 +33,23 @@
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
 
 ### +AZ-802: Windows Server Administrator Associate
-- [ ] [AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
-- [ ] [Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/?couponCode=MT261019G1)
+- [ ] [John Christopher | AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
+- [ ] [John Christopher | Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/?couponCode=MT261019G1)
 - [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
 
 ### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/?couponCode=MT261019G1)
+- [ ] [John Christopher | AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/?couponCode=MT261019G1)
 - [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
 
 ## Phase 2: Security Core
 
 ### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
-- [ ] [Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
+- [ ] [John Christopher | Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
 
 ### +SC-300: Identity and Access Administrator Associate
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
@@ -60,7 +60,7 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-200/)
 
 ### +SC-500: Microsoft Cloud and AI Security Engineer Associate
-- [ ] [SC-500 Cloud & AI Security Engineer Associate HandsOn Course](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/?couponCode=MT261019G1)
+- [ ] [John Christopher | SC-500 Cloud & AI Security Engineer Associate HandsOn Course](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/?couponCode=MT261019G1)
 - [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
 
