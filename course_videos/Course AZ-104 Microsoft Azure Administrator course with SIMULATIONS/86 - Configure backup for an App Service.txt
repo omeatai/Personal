@@ -1,0 +1,59 @@
+# 86 - Configure backup for an App Service
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/86 - Configure backup for an App Service.mp4
+Fetched On: 2026-10-21 19:22:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at the backup solution we have for our app service.
+[00:05] Now, this is actually very easy,
+[00:07] very quick and easy to deal with,
+[00:09] and I don't think you'll find it to be too difficult.
+[00:10] Here we are on portal.azure.com.
+[00:13] Go to the menu button and go to all services,
+[00:15] and if I just search for app service,
+[00:17] I can open up app services and I'll open up my little app service here.
+[00:21] And then right up underneath settings, we have a blade called backups.
+[00:26] And you're going to see that backups are automatically turned on in this case,
+[00:30] and it backs up every hour automatically.
+[00:33] Okay, if I want, I can create a custom backup if I would like.
+[00:37] And in that case, it will want me to specify a storage account.
+[00:41] I can create a storage account here, new storage for app service, ELP.
+[00:48] Give it a name.
+[00:49] It's going to just do a general purpose one.
+[00:51] If you've got an existing one, that's fine.
+[00:53] You can create a new container.
+[00:54] We'll just call it backup.
+[00:57] Click create.
+[00:58] And at that point, I can also even set a schedule.
+[01:01] So you can set the schedule.
+[01:02] You can say repeat every day, set the start time,
+[01:04] the time zone, set what you want the retention to be.
+[01:08] It's very, very easy, very painless.
+[01:11] You can click advance and you can see
+[01:12] if you have backups for databases,
+[01:14] you can deal with database backup.
+[01:19] they are retiring some of this stuff.
+[01:21] All right, ultimately though, very easy.
+[01:24] I'm not actually gonna configure
+[01:25] because it's kind of just a waste of credit,
+[01:27] but that's how you would set that up.
+[01:29] And you can even trigger the backup if you want.
+[01:32] You can see that I've got these automatic backups.
+[01:34] And if I wanted to do a restore,
+[01:36] I can actually go in here very easy
+[01:38] and do a restore if I want, okay?
+[01:41] So specify what you want, which app service,
+[01:44] do your restore.
+[01:45] So very straightforward.
+[01:46] You've also got restore site configuration.
+[01:48] And by turning that on, basically what this is going to do is Azure will restore the site's
+[01:53] configuration settings along with the app content. So not just the app content, but it will restore
+[02:00] app settings, connection strings, authentication settings, custom domain name bindings, TLS, SSL
+[02:07] certificates and bindings, all of that stuff. So if you're looking to restore everything,
+[02:12] including the settings and not just the app, that's what this is going to do for you.
+[02:16] Okay. At that point, I would just click restore and then I'm, it'll go through and process the
+[02:21] restoration. So as you can see, doing dealing with the backup and restoration process of an app
+[02:27] services relatively straightforward.

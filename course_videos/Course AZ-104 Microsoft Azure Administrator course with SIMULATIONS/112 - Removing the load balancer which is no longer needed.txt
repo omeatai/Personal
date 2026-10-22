@@ -1,0 +1,24 @@
+# 112 - Removing the load balancer which is no longer needed
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/112 - Removing the load balancer which is no longer needed.mp4
+Fetched On: 2026-10-21 19:20:50
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Okay, I no longer need my load balancer,
+[00:03] and I want to conserve my Azure credits.
+[00:05] So I'm going to go ahead and delete my load balancer.
+[00:08] If you are still playing around with yours,
+[00:10] if you're doing this with me and you're playing around
+[00:11] with yours and want to leave it longer, you can.
+[00:13] That's fine, but I'm not going to really use it anymore.
+[00:15] So I'm going to delete it.
+[00:16] So here I'm on portal.azure.com,
+[00:18] I'm going to menu button,
+[00:19] go to all services and search load balancer.
+[00:23] All right, we'll open up our load balancer right here.
+[00:28] And then I'm just going to click delete, click yes.
+[00:31] And it is now going to delete that resource.
+[00:34] Now once that is deleted, I'm now ready to move on.

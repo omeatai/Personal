@@ -1,0 +1,30 @@
+# 02 - Understanding the Microsoft 365 and Azure Environment
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/02 - Understanding the Microsoft 365 and Azure Environment.mp4
+Fetched On: 2026-10-21 19:21:13
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now as we get ready to move on with the course, before we begin, there's a couple of quick
+[00:04] things I want to talk about.
+[00:06] All right now what I found is that a lot of people that come into one of these courses
+[00:11] they tend to think they've got everything they need jumping into it. When in reality they might
+[00:16] be missing a few bits and pieces on concepts that maybe they've not picked up over the years or in
+[00:22] previous courses they've taken. Even my most expert experienced students tend to be missing
+[00:30] some bits and pieces. So what I'm about to do with you in these next few lectures is we're going
+[00:35] a foundation lecture. We're going to talk about understanding things like on-premise
+[00:40] Active Directory domain services. We're going to talk about RAS and DMZs and virtualizations.
+[00:46] We're going to talk about the Microsoft
+[00:49] cloud services as a whole, including the ideas of Microsoft 365 and Azure and IaaS, PaaS,
+[00:58] and SaaS and what all of that stuff is.
+[01:01] And we're just going to make sure that we draw out a nice picture for you visually so
+[01:07] that you can help understand what these concepts are.
+[01:11] If you have taken some of my courses before you may have already seen all of this and you're more
+[01:16] than welcome just to skip over this. If you've already seen these types of concepts before
+[01:21] you can skip through this. But this is going to definitely help you make sure you have a solid
+[01:27] foundation before we move on. Alright now the other thing I want to mention is coming up too
+[01:33] you're going to see some videos that say do not skip or don't skip and it's very important that
+[01:40] that tag at the beginning of the name of the video. Alright, alright well with
+[01:44] that said let's go ahead and jump right into the foundation.

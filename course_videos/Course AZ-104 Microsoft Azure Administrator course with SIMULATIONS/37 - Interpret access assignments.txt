@@ -1,0 +1,56 @@
+# 37 - Interpret access assignments
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/37 - Interpret access assignments.mp4
+Fetched On: 2026-10-21 19:25:50
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to show you how we can look at the effective rights that someone will have over a particular resource in Azure.
+[00:08] So if I go over here to portal.azure.com, click the menu button, go down here to resource groups.
+[00:14] I got this VM role permissions demo resource group, which is the only resource group that matters in this video.
+[00:19] I'm going to click that.
+[00:24] All right, and then so from there I have I have some different options one of the options that I've got is it says
+[00:31] My access view my level of access to the resource so I can click view
+[00:36] my access and you can see these different roles right here.
+[00:39] Owner, okay, which pretty much means I can do whatever I want to the resource.
+[00:43] Then I've got user, access administrator, inherited, and then VM management, which is
+[00:49] the one I kind of want to look at.
+[00:51] That's the custom role that I've created.
+[00:53] I can click that.
+[00:54] I can see exactly what permissions it's got.
+[00:57] I can even look at the assignments to see who else might have been given that role.
+[01:05] right here it says check access. Review the level of access a user group, service
+[01:09] principal, or managed identity has to this resource. So we click check access.
+[01:14] You could then put in the name of a specific user. So in my case, I could put myself in there.
+[01:23] Okay, and then there you go. So I obviously I click that button here, view my access,
+[01:28] it gives me the same thing. But if I wanted to look at a specific user,
+[01:32] see what rights they have, that's how I can look at their effective rights. Okay, also,
+[01:39] if you have utilized PIM, privileged identity management, which is where you can schedule
+[01:45] somebody to get access at a certain time, date, whatever, you can look at eligible assignments
+[01:51] as well. See if they are eligible to get this right at any given time. Okay, now again,
+[02:02] You know, maybe you don't know what user I want to look up
+[02:04] Maybe I just want to see all users that have been assigned
+[02:07] Well, you go to role assignments at that point and you can look at all of the various users that have been signed
+[02:13] Now a lot of this stuff. This is actually
+[02:16] roles that Azure has given different various apps in Azure like defender and all of that stuff, but
+[02:22] You scroll down here and you can see the actual user accounts that have been given permissions
+[02:29] And then also you have the ability to select a name from there, right?
+[02:33] So I can actually look at a user's name and I can select a user's name and I can
+[02:38] look at their actual profile, see some more information about that user,
+[02:43] and then I can also click on the signed roles here and I can see what...
+[02:48] what roles they've been given from the intra ID perspective as well.
+[02:53] Not just the actual resource, but from intra ID.
+[02:56] So that's, that's a great way to really get a feel for what rights
+[03:01] somebody has over a resource.
+[03:02] And again, we're doing this over the resource group, but if you had a
+[03:05] resource inside the resource group, like a virtual machine or a storage
+[03:09] account or something like that, you could actually click on that resource
+[03:12] and click the I am blade and do it that way as well.
+[03:14] So there's multiple ways you can kind of dive in and, uh, and
+[03:17] look at that. Lastly, we've also got the ability to look at deny assignments to
+[03:22] see if somebody has been explicitly denied. You can do that as well. Alright,
+[03:27] so those are some of the various things you can do to just jump right in and
+[03:31] and see what rights somebody has and see what those effective permissions are over
+[03:36] Azure resources.

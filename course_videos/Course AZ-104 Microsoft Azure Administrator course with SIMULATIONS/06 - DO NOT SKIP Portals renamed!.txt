@@ -1,0 +1,34 @@
+# 06 - DO NOT SKIP Portals renamed!
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/06 - DO NOT SKIP Portals renamed!.mp4
+Fetched On: 2026-10-21 19:21:27
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now before we move on have something real quick. I want to tell you something very important
+[00:03] I hope you won't skip this video
+[00:05] I am going to be putting this video in all my various courses because this is very important
+[00:08] If you haven't already heard me say this, Microsoft loves to rename things.
+[00:13] Number one is Azure Active Directory was recently renamed to IntraID.
+[00:19] Be aware of that.
+[00:20] The crazy thing about that is that Microsoft has not even updated all of their documentation
+[00:25] yet.
+[00:26] So you may hear or see various references to that older name Azure AD and just remember
+[00:32] that it's now IntraID.
+[00:38] the portal links to get to various places. For example, the Microsoft 365
+[00:43] admin portal used to be portal.microsoft.com. And so if you hear or see
+[00:48] references to that, be aware that it's now admin.microsoft.com. They did the
+[00:53] same thing with the Defender portal. The Defender portal used to be security.microsoft.com.
+[00:57] Now it's defender.microsoft.com. The Purview portal is now purview.microsoft.com.
+[01:02] It used to be compliance.microsoft.com. Okay, and then even Intune used to
+[01:07] endpoint.microsoft.com and is now intune.microsoft.com. Anyway, I've created a page you can come to
+[01:13] to always have access to the latest and greatest portals when they rename them.
+[01:17] Okay, and it's going to be portals.examlabpractice.com. If you come here, you'll see the latest portals.
+[01:23] Also, I have this little text file you can download. If you right click and say save link,
+[01:27] you can save it as a text file to your desktop and you'll always have the latest
+[01:31] portals. Another thing you can do, but I want to kind of warn you to be aware because sometimes
+[01:35] these portal links change too, is you can go to the admin.microsoft.com and you can
+[01:41] click show all and then you can get some of the links right here as well. But again, this page
+[01:46] right here is always going to have the latest and greatest portal links for you.

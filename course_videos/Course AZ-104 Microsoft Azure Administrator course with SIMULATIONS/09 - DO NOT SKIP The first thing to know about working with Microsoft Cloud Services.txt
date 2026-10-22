@@ -1,0 +1,41 @@
+# 09 - DO NOT SKIP The first thing to know about working with Microsoft Cloud Services
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/09 - DO NOT SKIP The first thing to know about working with Microsoft Cloud Services.mp4
+Fetched On: 2026-10-21 19:21:50
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Okay, this is just a very quick video. I want to go over the first concept you should understand
+[00:05] when it comes to Microsoft's cloud. Alright, so the first concept of Microsoft's cloud. Now,
+[00:11] what is that? Okay, so here is the first thing you should understand guys.
+[00:15] Things are constantly changing. This is not like it was 20 years ago.
+[00:21] I've been in IT for over 20 years and I can tell you that
+[00:25] for the first time in IT things are constantly things have always been changing in IT but in the cloud
+[00:31] No joke, things are constantly changing.
+[00:34] This is not like with Windows Server where you'd have every three years or so something
+[00:39] big might change.
+[00:40] In the cloud, things can change from week to week.
+[00:44] No joke.
+[00:46] One week you could be using the Azure or Microsoft 365 and there's a button that's in a certain
+[00:51] spot and then the next week it's in a completely different place.
+[00:55] Okay, they've moved it.
+[00:59] utilizing Microsoft's cloud services and just know that going in that it is
+[01:04] constantly going to be changing. It is a never-ending uphill battle, alright. It's
+[01:09] impossible to stay on top of every single change. And so that's one thing I
+[01:14] want to point out to you guys right now. I do my darn is to stay on top of the
+[01:19] changes that are happening in the cloud and in my course, but it is impossible to
+[01:25] catch every single little change.
+[01:27] from week to week to week. But I want you to know it's important to me. I
+[01:31] definitely do like to try to stay up to date
+[01:34] and I try to stay on top of my courses. But feel free to get in touch with me
+[01:38] if you notice anything, especially anything big that might change. But
+[01:42] understand that this is just part of it. This is part of the
+[01:45] the cloud service. Things are constantly changing and the sooner you get used to
+[01:49] that, the sooner you understand that you're
+[01:51] going to have to hunt for things sometimes.
+[01:53] You're going to have to understand that things are going to move from one
+[01:57] going to change buttons are going to change things are going to get renamed the sooner
+[02:00] you understand that and get used to it the better because it is what it is but again
+[02:04] feel free to get in touch with me if you if you'd like to let me know if something's changed.

@@ -1,0 +1,49 @@
+# 130 - Configure and interpret reports and alerts for backups
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/130 - Configure and interpret reports and alerts for backups.mp4
+Fetched On: 2026-10-21 19:24:33
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now when it comes to dealing with logs and alerts involving
+[00:04] backups you can go to any of the vaults and look at the settings there.
+[00:09] So let me show you that here I am on portal.azure.com
+[00:12] And if I click the menu button and go to all services and just type the word backup. I've got the recovery service vault
+[00:19] I'll click on first. I can go into a backup vault and then from there if you scroll down
+[00:30] you'll see you have diagnostic settings and then from there you can add diagnostic settings.
+[00:35] You could say okay I want to back up or I want to generate logs for all of these items here.
+[00:40] Give it a name and just say backup logs. Send to an analytics workspace. In my case I do have one
+[00:49] called log workspace demo. If you don't have a logs analytics workspace you can just create one
+[00:59] Okay, and so that's going to then begin generating log information into that
+[01:05] Alright now if you go up to the menu and then go to all services and type back up can also look at backup vaults
+[01:12] Click on my backup vault
+[01:15] Okay, and then expand monitoring go to diagnostic settings add it's the same exact process
+[01:21] Okay backup vault log
+[01:25] Send to a log analytics workspace
+[01:29] click Save
+[01:30] and it's going to send it. Now as far as alerts go, I can generate alerts, click on alerts,
+[01:38] create an alert rule. All right, what signals do I care about? I can select all signals.
+[01:45] So you have these various signals to choose from and so you would just select whichever
+[01:54] create an alert. There's not really anything special about generating alerts
+[01:58] for backups as there is for anything else. You would select your alert, you go
+[02:02] through, you set your action group up, and away you go. Okay now also as far as
+[02:07] performing queries this is the same process as well. Once you've collected
+[02:11] data you can go right here to the menu button. You can go to monitor and then
+[02:16] you go to logs and you can specify some...
+[02:19] queries that you want, you could close out of this,
+[02:21] and you can look at tables, and you can do KQL.
+[02:24] So this is the same exact process
+[02:26] it's just done in regards to backups.
+[02:30] So that is the process if we wanted to generate logging data.
+[02:35] And keep in mind, if you go through this process,
+[02:37] it will take a while before the logging data will show up
+[02:40] because you actually have to go through
+[02:41] and trigger backups and all that,
+[02:42] and then you'll start seeing some stuff.
+[02:45] It's gonna be kind of empty at first though,
+[02:47] until you actually trigger backups.
+[02:48] But again, it's the same process as working with logs and the previous things you've seen
+[02:55] and the generating alerts.
+[02:56] It's really the same process.

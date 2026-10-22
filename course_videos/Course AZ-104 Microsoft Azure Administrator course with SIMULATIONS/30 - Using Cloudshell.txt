@@ -1,0 +1,77 @@
+# 30 - Using Cloudshell
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/30 - Using Cloudshell.mp4
+Fetched On: 2026-10-21 19:31:48
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now on top of being able to use PowerShell on
+[00:04] your own local machine to interact with Azure, which I'm a bigger fan of, there is actually a
+[00:12] way to interact with PowerShell in the cloud. It is a feature called Cloud Shell. It works pretty well and
+[00:19] if you're in a pinch and you're you want to just interact with PowerShell right there in your web browser
+[00:25] you can very quickly just jump right in and use it.
+[00:29] It's a little bit clunky.
+[00:30] I do like to kind of warn people of that.
+[00:32] It's a little bit buggy where you'll sometimes have text
+[00:35] overwriting other text on the screen
+[00:37] and you have to kind of clear the screen on occasions.
+[00:40] That's why I'm a little bit bigger of a fan
+[00:43] of using PowerShell on my local machine
+[00:45] to interact with Azure.
+[00:46] But, Cloud Shell works great
+[00:48] and you can also download the Microsoft app
+[00:52] on like your phone or tablet
+[00:54] with Cloud Shell that way, which is very helpful if you're in a tight situation
+[01:00] and you need to get something done. So let me show you how to use Cloud Shell.
+[01:04] Here I am on portal.azure.com. I'm gonna click on this little symbol right here.
+[01:08] This is the Cloud Shell symbol. I'm gonna go ahead and click that. Alright.
+[01:12] Now, there, when you do that, it's gonna say, okay, well you got to have a storage
+[01:17] account associated with your...
+[01:19] your cloud shell. So it's just to store log information and all that. Doesn't
+[01:24] really cost a lot of money to do that, but it is a requirement. So I'm just
+[01:28] gonna say, yep, go ahead and create the storage account that is needed so that
+[01:32] we can go ahead and continue and start using cloud shell. Now I also want to say
+[01:37] that there's two different approaches to cloud shell. There is PowerShell, which
+[01:42] of course, you know, is the traditional way that we do pretty much everything
+[01:49] And so there you have that, but then there's also what is known as the Azure CLI, which is basically bash.
+[01:59] So you have PowerShell and you have the bash way of doing it. So if I look right here, I have PowerShell and then I've got bash.
+[02:05] Now, actually, the interesting thing about using the PowerShell version of this is that you get access to all the bash commands as well.
+[02:12] So it says Azure CLI. So maybe if you're a Linux person you're probably familiar
+[02:17] with the bash way of doing things. If you're a Microsoft person you're
+[02:21] probably more familiar with the Microsoft way of doing things. Now I
+[02:24] will warn you that from an exam perspective you want to be focused a
+[02:28] little bit more on the PowerShell side of things even though there isn't really
+[02:31] a lot of PowerShell related content to stress over too much on the exam. There
+[02:36] is a little bit so this is why we're going through this. But
+[02:40] bash not so much they're more power shell driven than anything else because it's
+[02:44] Microsoft's command line environment so I guess you would kind of expect that right
+[02:49] uh so from there here I am in power shell if I want to switch over to bash I can switch over to
+[02:55] bash which again is the linux side of things but again the beautiful thing about using the
+[03:07] Here it is connecting back in. I got the git-command. I can hit enter and I can see all the commands that are available to me.
+[03:16] By the way, you can also adjust this.
+[03:18] Alright, if you want.
+[03:21] You can type git-command.
+[03:24] hit tab, auto complete dash noun and do the same thing.
+[03:28] Star users, or star user star,
+[03:31] and I can see what commands are available to me
+[03:34] for creating users and all that fun stuff.
+[03:37] There's the get az80 user command,
+[03:40] the same for groups and all that fun stuff.
+[03:44] Not to mention all the other commandlets
+[03:45] that are gonna let me interact with my Azure environment.
+[03:49] So this is just another way of.
+[03:52] working with Azure. I will also say that if you type something like get-az
+[03:59] and hit the tab key, one thing that's a little different is where in
+[04:07] PowerShell that's installed on your computer, it will just let you tab through each individual
+[04:12] command with Cloud Shell.
+[04:14] It actually wants to try to display it all on the screen for you instead of you tabbing
+[04:19] through each individual one.
+[04:20] So it's a little different from that perspective.
+[04:22] Okay.
+[04:24] So it's actually displaying every single command that starts with the letter AZ.
+[04:28] So it can get a little bit crazy sometimes when trying to do it.
+[04:33] But again, Cloud Shell is a great way to just jump right in and start using it.
+[04:38] You can use it from within your own web browser and you'll have the same
+[04:41] commands that you've got from the AZ module that you might have installed locally.

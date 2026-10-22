@@ -1,0 +1,54 @@
+# 108 - Configure inbound NAT rules
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/108 - Configure inbound NAT rules.mp4
+Fetched On: 2026-10-21 19:23:43
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to talk about utilizing inbound NAT rules.
+[00:04] Here I am on portal.azure.com.
+[00:06] If I go to the menu button and go to
+[00:07] all services and I just search for load balancers,
+[00:12] we can click on our load balancers resource
+[00:14] and then here is our load balancer.
+[00:15] I'm going to open that up and I'm going to go under
+[00:17] settings and there's a blade called inbound NAT rules.
+[00:21] We're just going to click on that and then I'm going to click Add.
+[00:24] Then from there, we will give it a name.
+[00:29] NAT for RDP. That's going to be the name of it. So what exactly does this do?
+[00:37] Tell you that an inbound NAT rule forged incoming traffic sent to an IP address and
+[00:44] port combination to a specific VM. They do tell you that they are retiring the older NAT rules version 1.
+[00:51] This will transition to version 2 eventually September 2027. Okay, but
+[00:58] If you go right here, what this is gonna do,
+[01:01] I wanna show you what's gonna happen.
+[01:03] Let's say that if somebody connects in
+[01:07] to our front end IP address on port 3389, okay?
+[01:15] That's gonna be the port number.
+[01:17] So if they hit it on port 3389,
+[01:20] It's going to direct the traffic on 3389, but we want it to go not to both VMs.
+[01:25] We don't want it to load balance.
+[01:26] We want it to go to a specific VM in this case, and that VM will be VM1.
+[01:31] Okay, so if we want it to go to a specific VM, it's going to hit this IP address, the
+[01:36] private IP address on VM1, if somebody hits this public address.
+[01:40] Okay, that's what this is going to do for us.
+[01:43] Now the service tag, this would be remote desktop protocol, and the protocol is TCP.
+[01:49] So we're going to go ahead and click save.
+[01:53] All right.
+[01:54] And then we can test this out.
+[01:57] All right.
+[01:57] All we need to do, all we need to know is we need to connect to this
+[02:01] public address right here.
+[02:02] So if I go to my personal computer right now and I search for remote desktop.
+[02:07] And I open up the remote desktop tool.
+[02:11] Okay.
+[02:12] This tool here.
+[02:14] I opened up the wrong one and then I'm gonna put in this address 172.191.83.99.
+[02:22] I'm gonna hit enter.
+[02:23] All right, after putting the credentials in, I hit yes and let's see.
+[02:30] It should be connecting me into VM1 right now.
+[02:34] And sure enough, here we are in front of VM1.
+[02:37] Let me just kind of adjust for resolution purposes here.
+[02:43] You can see on local server, I am connected into VM1.
+[02:47] So that is the idea of utilizing an inbound net rule.

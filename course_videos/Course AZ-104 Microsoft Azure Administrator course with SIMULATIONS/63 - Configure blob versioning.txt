@@ -1,0 +1,74 @@
+# 63 - Configure blob versioning
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/63 - Configure blob versioning.mp4
+Fetched On: 2026-10-21 19:27:43
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to go over the concepts of Blob versioning.
+[00:03] Now to do this, I have just opened up a Notepad file here.
+[00:06] Just open up Notepad and I've just written version one
+[00:09] and I've saved this to my desktop.
+[00:12] You'll see why this is going to come into play here in just a second.
+[00:15] So here I am on portal.azure.com.
+[00:17] I'm going to click the menu button,
+[00:18] and I'm going to go right here to storage account.
+[00:20] So I'm going to open up this little storage account right here.
+[00:23] Then from there, I am going to scroll down a little bit.
+[00:28] And I'm going to look at where it says data protection.
+[00:31] And I want to make sure that we have versioning enabled, which
+[00:35] we do.
+[00:36] So you'll notice this is enabled.
+[00:37] It says use versioning to automatically maintain
+[00:40] previous versions of your blobs.
+[00:41] Consider your workloads, their impact
+[00:43] on the number of versions created,
+[00:45] and the resulting cost.
+[00:47] Optimize cost by automatically managing the day lifecycle.
+[00:50] So use data lifecycle management to control the versioning
+[00:53] if you want.
+[00:53] Right now, I've got this set to keep all versions going.
+[00:57] forever essentially, but you do need to keep in mind if you got big amounts large amounts of data that could of course start stacking up
+[01:04] You can also have delete versions after a certain amount of days
+[01:07] So I'm gonna go ahead and set that to just delete after seven days and I'm gonna hit save
+[01:11] Okay, so it's gonna keep the version that's in play, but it's gonna delete the earlier versions
+[01:17] So that's fine now that we've done that we're gonna come up here to containers
+[01:22] All right, and then I've got a blob container called documents. So I'm gonna go into that
+[01:27] And I am going to upload this version text file.
+[01:33] So I'm gonna go ahead and upload that.
+[01:34] All right, so there it is.
+[01:35] I'm gonna click upload.
+[01:37] All right, we've now uploaded this file.
+[01:40] All right, so you can see that.
+[01:42] I can actually click download
+[01:44] and I can view that file right there if I want.
+[01:48] View edit.
+[01:50] Shows me what that says. Okay, so now what I'm gonna do is I'm gonna change this
+[01:53] I'm gonna come over here to this file and I'm gonna change it to version 2 and I'm going to hit save
+[01:58] So this file has now been changed and we're gonna upload it over the top of this old version. So we'll click upload
+[02:04] All right, and then I'm gonna add the file now
+[02:07] I will have to select override if I already exist because it does already exist. So we'll click upload
+[02:13] Alright now we've got a new version if we click on that it should show if we click on
+[02:20] View should show it. Yep version 2. Okay, that's fine
+[02:24] So now we're going to change the file to version 3 and I'm going to hit save and then I'm going to upload that
+[02:30] Over the top of the existing one so upload and I'm going to add the file
+[02:34] Alright, click the overwrite and then I'm going to upload. Alright, so now it should match version 3 if I go here and view
+[02:42] There it is. Okay. So when we view this file
+[02:47] Alright, if we click this file to view the data of the file, the details, metadata, and
+[02:53] all that of the file, we have a versions tab we can click on.
+[02:56] And you can see the previous versions.
+[02:59] This should be version one, this should be version two, and the existing version is version
+[03:02] three.
+[03:03] I can prove that if I click the little lip symbol here.
+[03:06] Alright, if I want to download it, I can.
+[03:10] There it is.
+[03:11] It's displaying it right here in my browser.
+[03:12] That's version one.
+[03:16] And let's click the ellipse symbol and then download and there's version 2
+[03:21] Alright, if we go right here and we want to take this to the current version
+[03:26] So let's go back over here. We're gonna make current version
+[03:30] So now we've made current version. Let's go back over here and view the current version should say version 1 and there you go
+[03:38] So as you can see it's very easy to utilize versions with blobs and definitely something
+[03:44] to test out on your own and see how it goes.

@@ -1,0 +1,56 @@
+# 96 - Troubleshoot network connectivity
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/96 - Troubleshoot network connectivity.mp4
+Fetched On: 2026-10-21 19:26:33
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now talk to you a little bit about the troubleshooting side of working with your VNets.
+[00:05] Now I'm also going to kind of warn you we're going to look at some troubleshooting items here,
+[00:09] but there is a major section coming up on this a little bit further into the course. So we're
+[00:15] going to really get deeper into it as we get further in. There's just a few basic things we're
+[00:21] going to look at in this video. Okay, so here I am on the VNet demo RG resource group.
+[00:27] and I'm just going to click on vnet one. Now the first thing I would need to do if I was having
+[00:32] some kind of connectivity problems and let's say the connectivity issue is happening between vnets.
+[00:39] I would first start by looking at peerings. So I want to go over here and I want to make sure
+[00:46] that everything is it's saying fully synchronized and connected. If we've got that we're doing
+[00:56] If you're not getting that then you can select these and you should be able to click sync and it'll try to retrigger and
+[01:02] Connect everything make sure everything is good. Okay, so that's gonna be your first step for troubleshooting
+[01:08] If there's a connectivity problem between your different V nets. The other thing would be your route table
+[01:15] If traffic is not flowing, connecting between VNets or it's not going where you need it to go,
+[01:20] you need to look and see if you've got a route table, which I do, I'm route table demo here,
+[01:25] I need to look at the routes themselves and see how traffic is set to flow. Okay, so that's
+[01:31] going to be another step that you're going to want to take. All right, coming back over to the VNet,
+[01:36] another thing I'm going to go to VNet one is another thing that I can do that's really nice.
+[01:42] is I've got this resource visualizer I can click on
+[01:46] and this gives me a little bit of a visualization of how things are laid out.
+[01:50] Okay, so you can see I've got VNet 1,
+[01:54] it's my hub, and I've got VNet 2 and VNet 3 are all
+[01:58] connected. You can see the piers right here. You can also see that the route
+[02:02] table is connected to all three of these. Okay, so
+[02:06] this is a great way just to get a nice visual of what's going on in
+[02:11] environment. Okay, so that's definitely something to think about, definitely something to check out
+[02:17] that can help. Another thing you can do is come down here and look under monitoring and then
+[02:21] topology and you get kind of another view of it, a little bit of a cleaner view right through here.
+[02:28] Okay, now the thing that I'm really not going to dive deep into in this video, not getting into
+[02:34] the monitoring alerts and all of that here, and then also there is something that's really helpful
+[02:38] and I'll just give you sort of a teaser on it in this video. But there's something that's really
+[02:43] helpful that we'll dive into a little bit later and that's called the network watcher. Okay,
+[02:49] and I can actually go here to all services and just search for the word network watcher.
+[02:56] and go in a network watcher and I have these tools.
+[02:59] I have IP flow verify, NSG diagnostic,
+[03:02] the next hop for testing hops,
+[03:05] effective rules to see if there's rules
+[03:08] that are blocking traffic.
+[03:09] If you're dealing with a VPN concentrator
+[03:11] and VPN gateway, you can troubleshoot that.
+[03:14] Packet capturing, you have a connection troubleshoot
+[03:17] between a source and destination virtual machine.
+[03:19] So you start putting virtual machines in there,
+[03:21] then
+[03:22] you can actually troubleshoot between those. So this is a great set of tools. Again, this is just
+[03:27] an honorable mention in this video, a teaser, because it's something we're going to dive deeper
+[03:32] into a little bit further on. But those are going to be some of your main things you're going to
+[03:36] want to think about if you're troubleshooting a connection issue with VNets.

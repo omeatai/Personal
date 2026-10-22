@@ -1,0 +1,25 @@
+# 08 - Order of concepts covered in the course
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/08 - Order of concepts covered in the course.mp4
+Fetched On: 2026-10-21 19:20:55
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I want to address something real quick. I get this question a lot from students. Students will ask me why I didn't cover the material in the exact order that the test objectives did or the exam objectives did.
+[00:14] And the reason for that, there's actually a very good reason, and that is because the exam objectives that they create, they don't put those in any specific order related to how you should learn stuff.
+[00:28] 20 some odd years all the way back into the 1990s and I can tell you that it is very important
+[00:33] that you
+[00:34] place objectives in an order for learning that's going to make sense that's going to help people
+[00:40] understand things. You sometimes have to explain some of the basic foundational concepts before
+[00:46] you get into the advanced concepts. If you look at their test objectives, you'll notice that in some
+[00:50] cases they've got the advanced concepts earlier in the objectives list and then they've got the
+[00:56] basic concepts later down the road. So it doesn't make any sense to cover it that way. So yes,
+[01:03] I cover the test objectives, but it's important that I cover them in a way that you're going
+[01:07] to understand it.
+[01:08] The other thing is you might notice I rename things sometimes slightly different because
+[01:11] sometimes I'll cover test objectives in, I'll cover multiple objectives in one video,
+[01:17] or sometimes I have to break them up into separate videos.
+[01:20] So things might be named a little different in some cases, but rest assured, things are
+[01:25] going to get covered and they're going to get covered in a way that will make sense.

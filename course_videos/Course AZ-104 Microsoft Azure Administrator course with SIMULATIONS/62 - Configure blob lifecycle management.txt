@@ -1,0 +1,66 @@
+# 62 - Configure blob lifecycle management
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/62 - Configure blob lifecycle management.mp4
+Fetched On: 2026-10-21 19:30:56
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to go through and look at the lifecycle management capabilities we have with blobs in our storage account.
+[00:06] So here we are on portal.azure.com. I'm going to click the menu button and go right here to storage accounts.
+[00:12] I'm going to open up this storage account right here.
+[00:14] And then I'm going to go down here towards the bottom and look under data management.
+[00:19] And I'm going to click on lifecycle management.
+[00:28] blobs into different storage access tiers over time.
+[00:34] Really the best way to get this is just to see it and do it.
+[00:38] So let me show it to you right now and it will make a lot more sense.
+[00:40] So I'm going to go to add a rule.
+[00:42] All right now I'm going to give the rule a name.
+[00:44] I'm just going to call it life cycle demo.
+[00:49] All right and then I've got my rule scope.
+[00:51] So this is going to...
+[00:54] define if I'm going to apply this rule to all the blobs in my storage account or if I want to limit which
+[00:59] Blobs it goes to so I could actually
+[01:02] Specify exactly which blobs I want to go I want to do this too
+[01:05] I'm going to do all blobs and then it says blob type or subtype so the blob type
+[01:11] This is going to define what kind of rule I want to apply
+[01:16] to
+[01:17] my life cycle management. I can do this to block blobs or pin blobs and then I can actually have
+[01:26] life cycle that goes to life cycle management. They can also go to snapshots and versions as well.
+[01:31] So block blobs is going to be the most common. It's used for documents, images, backups. A pin blobs would be used in
+[01:38] situations where you're dealing with things like logging where
+[01:42] data is being appended to an existing file. That's really what that's going to be for.
+[01:49] And then of course I've got the subtype that you'll see there. And so the idea of a blob subtype,
+[01:56] this is going to exist because Azure Blobs can include more than just the main base blob data.
+[02:04] It allows you to apply lifecycle rules to very specific parts of blob storage if you want.
+[02:11] using the features whether you're using versioning as well as snapshots if you're adding those you
+[02:16] can have life cycle management for that as well. All right so I'm going to go ahead and just leave
+[02:21] these settings in place we're going to click next and then this is where we set our conditions
+[02:27] and so we have if it says the base blobs were last modified or created so I could say 30 days
+[02:41] 30 days after it was last modified or 30 days after it was created. I in my case
+[02:46] I prefer to do it after last modified because you have data that's being constantly modified
+[02:50] Maybe you don't want to move it over to a colder storage, right?
+[02:53] I don't want to delete the blob but I could choose to move it to cool storage
+[02:59] Move to cold storage move to archive or delete it right?
+[03:03] So perhaps I'll say let's move to cool after 30 days. We can add another condition
+[03:09] And I could do the same thing after modified, right?
+[03:12] And then maybe we'll do the cold storage,
+[03:16] and we'll set that to 90 days.
+[03:18] And we'll add another condition that we'll
+[03:24] set to another action that will perform.
+[03:26] And we'll say last modified, and then we'll do,
+[03:29] let's set this to the archive, and we'll say 180 days.
+[03:35] OK.
+[03:36] We'll add this one more condition.
+[03:38] And by the way, it does say skip blobs that have been rehydrated in the last seven days.
+[03:43] Rehydrated means if it's moved over to cold storage but then it gets re-accessed, it gets
+[03:48] moved back over. So it's no longer having to be rehydrated. Rehydrated is where it's stored over
+[03:54] an archive and then it gets moved back because it's been accessed. Okay, so right here we'll say
+[04:01] delete.
+[04:02] Alright, we got that set to 180 days. Perhaps we delete after we can set that we'll say 200 days
+[04:08] Okay, so now we've created our lifecycle rules. We'll click add
+[04:13] All right, and we've now created our lifecycle management rules. You can see right here
+[04:18] We've got the rules set we can go into that if we want and we can edit those rules if we want
+[04:24] All right, but as you can see pretty straightforward we did apply this to all of our blobs
+[04:29] so whatever blobs we've got in these blob containers it's going to affect all of those.

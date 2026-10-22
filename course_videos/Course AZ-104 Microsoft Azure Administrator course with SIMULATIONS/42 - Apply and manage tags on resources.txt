@@ -1,0 +1,78 @@
+# 42 - Apply and manage tags on resources
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/42 - Apply and manage tags on resources.mp4
+Fetched On: 2026-10-21 19:32:19
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk to you about the concept of tags in Azure or sometimes referred to as tagging.
+[00:06] So this is something you'll see when you go to create a resource in Azure and then also existing resources can always be tagged as well.
+[00:14] For example, if I go here to portal.azure.com and I click the menu button and I go to resource groups and I click to create a resource group.
+[00:21] I'm just gonna call this resource group demo RG.
+[00:25] It'll be stored in the East US.
+[00:27] So one of the things you'll notice right here
+[00:28] is the tags tab.
+[00:31] I can click next, it'll take me straight over there
+[00:32] or I could just click it.
+[00:34] And so the idea here is tags are what we call
+[00:38] key value pairs, all right?
+[00:41] And the idea of a key value pair is to allow you
+[00:46] to apply a
+[00:48] tagging system where you can help organize, categorize, and manage your resources based on
+[00:55] these names that you associate with it. The purpose of tags will involve things like
+[01:00] cost management for things like helping you track costs based on the tag names.
+[01:05] It also helps with organization so that'll be things like
+[01:09] you know whether or not you want to specify if something is organized based on a project or
+[01:14] maybe who the owner of this is or maybe the environment it's involved in. Another thing
+[01:20] with tagging is you can use it for automation because based on the names you give the tags you
+[01:25] can have scripts and things like that that base the automation of the script on what something
+[01:32] is tagged. Another reason for using tags is governance. So when you get into things like
+[01:38] and you want to apply policies, maybe you want to apply policies based on the tag names, right?
+[01:44] So that's sort of the idea, okay? So one example of a tag might be something like the the name,
+[01:51] I might call it the environment that this is for, and then perhaps the value that goes with that
+[02:00] might be something like development or testing or production, okay?
+[02:07] And so that might be what we call it.
+[02:10] And since we're, this is sort of a lab environment,
+[02:13] I'm gonna put, how about we just put lab, all right?
+[02:17] Because this is a lab environment we're playing around with.
+[02:19] And then you can even have, you could base it on department.
+[02:22] I could have another one called department if I want.
+[02:25] Right?
+[02:26] And maybe what department is this gonna be?
+[02:28] We'll say IT, right?
+[02:31] And then you could have owner.
+[02:33] I could say owner.
+[02:35] And then the owner.
+[02:36] I could put the name of the owner, John Christopher. I could put an email address
+[02:40] jc at exam lab practice dot com. Okay, I could base this on a project. I could say project and
+[02:48] I could put the name of the project. I could associate this with a certain finance.
+[02:54] you know department or I could even have an application that this is associated with. Maybe
+[02:59] the the application is called web app one or something that we're working with on this.
+[03:05] Okay so you can you can utilize these tags in various ways. Okay tag by owner tag by applications.
+[03:15] You can
+[03:16] tagged by the automation lifecycle, maybe how long this is going to exist. You could put a date there
+[03:21] if you wanted. It could be you could involve classifications if you wanted. Okay, so if
+[03:29] this is a sensitive environment or something like that, you could base it on that. So there's lots
+[03:34] of ways that you could tag, right? So now I'll do that. I'll click review and create and then I'll
+[03:38] click to create.
+[03:40] and our little resource group is now going to be created,
+[03:43] and it's also going to include the tags.
+[03:46] If I click go to resource group, you'll see,
+[03:48] if I click on tags, so now you can see the various tags
+[03:51] for this resource group.
+[03:53] And keep in mind, you could create resources
+[03:55] inside this resource group,
+[03:57] and those resources can be tagged as well
+[03:59] or have different tags than what you got here.
+[04:02] But let me show you also one of the main benefits we get
+[04:05] is the fact that we can search for resources by tags.
+[04:10] If we come up here to this little search bar and we just type the word tag, you can see
+[04:15] you can click where it says tags right here and it'll show you all the various tags that
+[04:20] have been created.
+[04:21] Okay, and you can filter.
+[04:22] So if you had hundreds of tags, you could, you could filter which ones you want to see.
+[04:27] And then watch this.
+[04:33] Well, there you go. You can see you have this one resource group. Of course, that's going to be the case for all these.
+[04:38] But that's one of the big benefits you're going to get out of that is you're going to be able to search for it and you'll be able to utilize things that can filter based on those tags.

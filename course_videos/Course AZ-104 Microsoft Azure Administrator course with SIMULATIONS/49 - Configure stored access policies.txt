@@ -1,0 +1,53 @@
+# 49 - Configure stored access policies
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/49 - Configure stored access policies.mp4
+Fetched On: 2026-10-21 19:23:02
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to show you another nice little feature I have with my storage accounts.
+[00:04] This feature is called stored access policies.
+[00:08] Now before, when we were thinking about SaaS tokens, we were coming down here under the
+[00:13] actual storage account itself and we were creating a SaaS token for the whole storage
+[00:18] account.
+[00:20] policies for shared access signatures that are just specifically to a certain
+[00:26] container. Let me show you what I mean. If I look under data storage I can click
+[00:31] containers and then I'm gonna go into this images container I have and then
+[00:36] underneath where it says settings you'll see I have shared access tokens right?
+[00:41] Well check this out. I can go right here to access policy.
+[00:46] then I can create a new policy. I can set this, we'll call it temp policy, that'll
+[00:54] be my identifier, and I can set the permissions that I want to allow for
+[00:58] this temp policy, and I can even set a date. I'm just gonna say from today until
+[01:03] tomorrow, and that'll be fine. So we'll click OK.
+[01:07] Okay, now I've created this little policy.
+[01:11] Now check this out.
+[01:12] We'll go over here to shared access tokens.
+[01:14] Oh, I need to save it first.
+[01:16] Now we'll go over to shared access tokens.
+[01:18] And look at this, stored access policy.
+[01:22] I can set that to temp.
+[01:24] So, okay, great.
+[01:25] I've already got the dates.
+[01:25] I've set the permissions.
+[01:26] I got it.
+[01:27] I can generate the SAS for it.
+[01:29] and there you go. What's also nice about it is you can alter that policy on the fly. So I can come
+[01:37] right back over here, access policy, edit. I can edit this policy on the fly. So if I wanted to
+[01:45] extend out the dates or change the permissions, I can click okay, hit save, and just like that,
+[01:51] it's now been altered.
+[01:52] Okay, so that's a really nice little feature that we have in regards to supporting this access policy.
+[02:01] for dealing with containers.
+[02:03] Now also down here at the bottom,
+[02:04] you've got this immutable blob storage.
+[02:07] And the idea here is that I can set data in this blob
+[02:10] to where it can't be modified.
+[02:12] You can add a policy and you can implement
+[02:15] what they call worm, write once, read many.
+[02:17] And this would be used for things like legal hold
+[02:19] or maybe time-based retention
+[02:21] or maybe you just don't want anything to be changed.
+[02:24] So that is what the immutable.
+[02:26] blob storage is. But ultimately what I wanted to get across to you was this
+[02:30] stored access policies and hopefully now you have a better understanding of it.

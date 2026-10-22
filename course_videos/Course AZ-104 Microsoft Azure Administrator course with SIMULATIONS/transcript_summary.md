@@ -1,0 +1,46 @@
+# Transcript summary
+
+- Considered: 37
+- Transcribed: 37
+- Skipped: 0
+- Failed: 0
+
+## Files
+
+- transcribed: `89 - Removing App services that are no longer needed.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/89 - Removing App services that are no longer needed.mp4 — Local whisper (small.en, cpu)
+- transcribed: `112 - Removing the load balancer which is no longer needed.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/112 - Removing the load balancer which is no longer needed.mp4 — Local whisper (small.en, cpu)
+- transcribed: `08 - Order of concepts covered in the course.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/08 - Order of concepts covered in the course.mp4 — Local whisper (small.en, cpu)
+- transcribed: `24 - DONT SKIP Redoing simulations in the course.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/24 - DONT SKIP Redoing simulations in the course.mp4 — Local whisper (small.en, cpu)
+- transcribed: `02 - Understanding the Microsoft 365 and Azure Environment.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/02 - Understanding the Microsoft 365 and Azure Environment.mp4 — Local whisper (small.en, cpu)
+- transcribed: `06 - DO NOT SKIP Portals renamed!.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/06 - DO NOT SKIP Portals renamed!.mp4 — Local whisper (small.en, cpu)
+- transcribed: `101 - Configure service endpoints for Azure platform as a service (PaaS).txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/101 - Configure service endpoints for Azure platform as a service (PaaS).mp4 — Local whisper (small.en, cpu)
+- transcribed: `09 - DO NOT SKIP The first thing to know about working with Microsoft Cloud Services.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/09 - DO NOT SKIP The first thing to know about working with Microsoft Cloud Services.mp4 — Local whisper (small.en, cpu)
+- transcribed: `72 - Manage virtual machine sizes.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/72 - Manage virtual machine sizes.mp4 — Local whisper (small.en, cpu)
+- transcribed: `71 - Move a virtual machine to another resource group, subscription, or region.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/71 - Move a virtual machine to another resource group, subscription, or region.mp4 — Local whisper (small.en, cpu)
+- transcribed: `86 - Configure backup for an App Service.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/86 - Configure backup for an App Service.mp4 — Local whisper (small.en, cpu)
+- transcribed: `49 - Configure stored access policies.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/49 - Configure stored access policies.mp4 — Local whisper (small.en, cpu)
+- transcribed: `32 - Installing Azure CLI locally.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/32 - Installing Azure CLI locally.mp4 — Local whisper (small.en, cpu)
+- transcribed: `108 - Configure inbound NAT rules.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/108 - Configure inbound NAT rules.mp4 — Local whisper (small.en, cpu)
+- transcribed: `39 - Configure management groups.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/39 - Configure management groups.mp4 — Local whisper (small.en, cpu)
+- transcribed: `50 - Manage access keys.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/50 - Manage access keys.mp4 — Local whisper (small.en, cpu)
+- transcribed: `130 - Configure and interpret reports and alerts for backups.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/130 - Configure and interpret reports and alerts for backups.mp4 — Local whisper (small.en, cpu)
+- transcribed: `59 - Configure storage tiers.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/59 - Configure storage tiers.mp4 — Local whisper (small.en, cpu)
+- transcribed: `67 - Export a deployment & convert an Azure Resource Manager template to a Bicep file.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/67 - Export a deployment & convert an Azure Resource Manager template to a Bicep file.mp4 — Local whisper (small.en, cpu)
+- transcribed: `53 - Configure Azure Storage redundancy.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/53 - Configure Azure Storage redundancy.mp4 — Local whisper (small.en, cpu)
+- transcribed: `37 - Interpret access assignments.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/37 - Interpret access assignments.mp4 — Local whisper (small.en, cpu)
+- transcribed: `96 - Troubleshoot network connectivity.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/96 - Troubleshoot network connectivity.mp4 — Local whisper (small.en, cpu)
+- transcribed: `80 - Manage sizing and scaling for containers,including Azure Container Instances App.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/80 - Manage sizing and scaling for containers,including Azure Container Instances App.mp4 — Local whisper (small.en, cpu)
+- transcribed: `58 - Create and configure a container in Blob Storage.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/58 - Create and configure a container in Blob Storage.mp4 — Local whisper (small.en, cpu)
+- transcribed: `63 - Configure blob versioning.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/63 - Configure blob versioning.mp4 — Local whisper (small.en, cpu)
+- transcribed: `01 - Welcome to the course!.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/01 - Welcome to the course!.mp4 — Local whisper (small.en, cpu)
+- transcribed: `31 - Using Azure CLI Bash.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/31 - Using Azure CLI Bash.mp4 — Local whisper (small.en, cpu)
+- transcribed: `92 - Create and configure virtual networks and subnets with PowerShell.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/92 - Create and configure virtual networks and subnets with PowerShell.mp4 — Local whisper (small.en, cpu)
+- transcribed: `60 - Configure soft delete for blobs and containers.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/60 - Configure soft delete for blobs and containers.mp4 — Local whisper (small.en, cpu)
+- transcribed: `129 - Perform a failover to a secondary region by using Site Recovery.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/129 - Perform a failover to a secondary region by using Site Recovery.mp4 — Local whisper (small.en, cpu)
+- transcribed: `13 - Converting your Azure account name to a business account name.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/13 - Converting your Azure account name to a business account name.mp4 — Local whisper (small.en, cpu)
+- transcribed: `54 - Configure object replication.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/54 - Configure object replication.mp4 — Local whisper (small.en, cpu)
+- transcribed: `62 - Configure blob lifecycle management.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/62 - Configure blob lifecycle management.mp4 — Local whisper (small.en, cpu)
+- transcribed: `22 - Manage external users.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/22 - Manage external users.mp4 — Local whisper (small.en, cpu)
+- transcribed: `30 - Using Cloudshell.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/30 - Using Cloudshell.mp4 — Local whisper (small.en, cpu)
+- transcribed: `42 - Apply and manage tags on resources.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/42 - Apply and manage tags on resources.mp4 — Local whisper (small.en, cpu)
+- transcribed: `88 - Configure deployment slots for an App Service.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/88 - Configure deployment slots for an App Service.mp4 — Local whisper (small.en, cpu)

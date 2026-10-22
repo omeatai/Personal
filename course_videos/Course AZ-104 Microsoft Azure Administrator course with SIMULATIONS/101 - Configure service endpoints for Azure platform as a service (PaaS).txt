@@ -1,0 +1,36 @@
+# 101 - Configure service endpoints for Azure platform as a service (PaaS)
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/101 - Configure service endpoints for Azure platform as a service (PaaS).mp4
+Fetched On: 2026-10-21 19:21:39
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's now take a look at how we can set up a service endpoint connection between the
+[00:06] Virtual network that a virtual machine is sitting on and a storage account. Okay, you don't have to use a storage account
+[00:12] You could use various other service endpoints, but in this case, we're going to focus on a storage account
+[00:17] So here I am on portal dot Azure calm
+[00:20] We'll click the menu button and we're going to go right down here to virtual machines
+[00:24] and you can see I have this one virtual machine, WinServer1, and I'm going to go underneath
+[00:29] a networking and I'm going to click on networking settings and then from there you can see
+[00:35] that I have a virtual network called VNet demo for VMS and I have a subnet.
+[00:42] WinServer1 is connected to this virtual network.
+[00:46] Okay?
+[00:47] And if I click on that virtual network, you can see I have this VM subnet and all of
+[00:53] that.
+[00:54] That's actually the subnet where the virtual machine is sitting.
+[00:56] Okay?
+[00:57] Now, if I also look underneath settings, you can see this area down here called service
+[01:03] endpoints.
+[01:04] We're going to click on service endpoints and we're going to click add.
+[01:08] We're gonna drop this down. Here's all the various services that I can connect to as an endpoint
+[01:12] We're gonna choose Azure storage, which would connect me to Azure storage accounts
+[01:16] Okay, so then at that point we're gonna connect this subnet VM subnet
+[01:21] Which is the subnet the virtual machine is connected to we're gonna click add and just like that
+[01:26] After this is done saving, we will have established a service endpoint.
+[01:30] So the idea being that now if I have a storage account, you know, a storage account that I want
+[01:36] to make available for this Windows Server to be able to connect to, it's going to be able to
+[01:41] connect now to the storage area of Azure, to any storage accounts that I've got out there.
+[01:46] It's going to be able to do that without having to go out to the internet and then back in.
+[01:50] So there you go. As you can see, very easy to do that.

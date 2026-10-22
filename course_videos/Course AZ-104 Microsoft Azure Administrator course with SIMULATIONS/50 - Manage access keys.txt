@@ -1,0 +1,52 @@
+# 50 - Manage access keys
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/50 - Manage access keys.mp4
+Fetched On: 2026-10-21 19:24:18
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about the concept of access keys in regards to our storage account.
+[00:05] So here we are on portal.azure.com and we're just going to go ahead and click on, I'm going to open up my storage account here.
+[00:14] And then I'm going to look underneath security and networking and then we'll see right here it says access keys.
+[00:29] This is going to allow clients, apps, services, whatever it may be to authenticate and have
+[00:36] full complete access operations, meaning read, write, and delete on the storage account.
+[00:43] Okay, this will also give access to everything blobs files queues tables you name it. Okay, so you get two access keys
+[00:51] These are what they call base 64 encoded secret keys. They're basically like master passwords. Okay
+[00:59] You can use them for things like SDK software developer kits could be used for rest API as representational state transfer
+[01:06] application programming interface for developers
+[01:12] explorer. Okay, they are essentially keys to the kingdom as far as storage accounts are concerned.
+[01:21] All right, if there is any suspicion that a key has been compromised, you can always
+[01:26] rotate the key. So that's key rotation. You rotate one key, you know, while using apps temporarily,
+[01:33] it'll use...
+[01:34] Key two, for example.
+[01:36] So once apps are switched over, you rotate the second one,
+[01:39] and there's no downtime.
+[01:41] So you can do key rotation if you ever need to.
+[01:44] Right?
+[01:45] So example of this, let's say you're building an app
+[01:49] that's going to be uploading images, Blob storage,
+[01:51] whatever you could use key one in the connection string.
+[01:55] This gives the app full access to all the containers,
+[01:57] Blobs, operations, whatever it may be.
+[01:59] Now keep in mind,
+[02:02] This is just kind of like a security warning for you here.
+[02:05] Access keys are powerful and they're sensitive.
+[02:09] You don't want to just give these out to anyone.
+[02:12] Ideally, any type of key in regards to Azure will be stored in a secure place.
+[02:18] Like Microsoft has what's called Azure Key Vault and all that.
+[02:23] Again, these keys are secret.
+[02:26] You don't want to just make these available to anybody.
+[02:29] you would work these in conjunction possibly
+[02:31] with web developers and all that.
+[02:33] It's better to use shared access signatures
+[02:37] as far as giving web servers and things access to data
+[02:39] as opposed to just a full blown key.
+[02:41] But you could for software developer kits
+[02:42] and working with developers,
+[02:44] you might give out an access key
+[02:46] if a developer needed it, okay?
+[02:49] All right, well, hopefully now you have
+[02:50] a much better understanding of the concept
+[02:52] of what an access key is.

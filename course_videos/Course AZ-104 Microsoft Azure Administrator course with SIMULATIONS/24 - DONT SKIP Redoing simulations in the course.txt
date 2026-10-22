@@ -1,0 +1,34 @@
+# 24 - DONT SKIP Redoing simulations in the course
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/24 - DONT SKIP Redoing simulations in the course.mp4
+Fetched On: 2026-10-21 19:21:04
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now that you understand what an assignment is, I want to talk to you about something that can be a little bit frustrating to people.
+[00:05] One of the things that happens with Udemy is that once you complete an assignment,
+[00:10] they don't really make it easy for you to get right back in and do the assignment again if you want.
+[00:15] Which means, if you want to redo the simulations, they don't make that easy on you, okay?
+[00:20] So I want to talk to you about how you can do that very easily.
+[00:24] just by doing the following steps. Now the first thing I want to say is
+[00:27] the assignment that's currently on the screen may not even be in the course
+[00:30] you're taking. I am making this video that's going to be
+[00:34] in all of my courses so don't worry if you don't see an
+[00:37] assignment with the same name is what we've got here. My point is is once you
+[00:41] complete an assignment, if you try to return to the assignment
+[00:44] you're going to see a screen similar to this one.
+[00:47] Okay so if you complete an assignment you may try to go back to it and
+[00:53] similar to this and you'll notice there's no way to restart the assignment, right?
+[00:57] But you can do it very easily and here's how.
+[01:00] Look in the lower left hand corner and it says go to summary.
+[01:04] I'm going to click that.
+[01:05] Now I'm going to click back to assignment.
+[01:08] This is on the lower right and then I'm going to go up to the upper left where it says
+[01:13] instructions and there you go.
+[01:15] I've now got the instructions for doing the assignment again.
+[01:22] always go back to this anytime I want. So again, all I got to do to return and redo an assignment
+[01:27] to get access to a simulation is click go to summary, back to assignment, click instructions,
+[01:35] and there you go. Anytime you complete an assignment you can just go back to the
+[01:39] assignment and go and do those steps and you'll be able to find the link to the simulations.

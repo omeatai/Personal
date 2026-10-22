@@ -1,0 +1,68 @@
+# 53 - Configure Azure Storage redundancy
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/53 - Configure Azure Storage redundancy.mp4
+Fetched On: 2026-10-21 19:25:22
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I don't want to talk about configuring
+[00:02] redundancy on storage accounts.
+[00:05] The first thing to be aware of here is that we could
+[00:07] configure redundancy on an existing storage account,
+[00:11] or we can actually create a new storage account
+[00:13] and set the redundancy from there.
+[00:15] Now, in my case, I've actually already
+[00:17] got an existing storage account.
+[00:19] We're going to take a look at that first,
+[00:21] and then we're going to create a new storage account
+[00:23] and configure the redundancy there.
+[00:25] Here we are on portal.azure.com.
+[00:28] I'm going to click the menu button here and then I'm going to go down here and click storage
+[00:31] accounts. You can see my existing storage account. I'm going to click on that and then from there
+[00:36] I'm going to scroll down towards the bottom here and I'm going to expand where it says data
+[00:41] management. Okay I'm going to expand that out and then there's a blade called redundancy
+[00:46] and then from there you can see the existing redundancy settings that I've gotten. I've
+[00:54] storage. Okay, so currently I'm just doing LRS. It's just happening within one region,
+[01:01] which is the East US. Now, if I wanted to actually get geo redundant storage and all that,
+[01:07] I could actually select these other options here. You'll see GRS.
+[01:13] RA GRS, ZRS, and depending upon what regions of the world you're in, you'll have different options.
+[01:20] And so then I can click save if I want to save it. But in this case, here's what I want to do.
+[01:24] I'm actually going to create a new storage account and we'll actually choose to do the GRS
+[01:31] option there. So here we are, we're going to click back on storage accounts.
+[01:36] Not going to save those settings. I'm going to click to create a new storage account.
+[01:40] All right, I'm going to save this in my storage account demo,
+[01:44] RG resource group I've already got.
+[01:46] I'm going to create my storage account and I'm going to call it
+[01:49] storage ACCT JC2.
+[01:54] That's just going to be the name of my new storage account.
+[01:57] East US, my primary service will just be the Azure Blob Storage Gen2,
+[02:02] and then we'll just do standard,
+[02:04] recommended for most as a general purpose.
+[02:09] LRS, GRS, ZRS, GZRS, all of that, right?
+[02:14] I'm gonna go with GRS, so this will be
+[02:18] fell over to a secondary region, all right?
+[02:22] From there, I'm gonna go ahead,
+[02:24] I'm not gonna set change anything else,
+[02:26] so I'm just gonna click review and create
+[02:28] and let it validate.
+[02:30] Now once that's done, I'm gonna go ahead
+[02:31] and click to create, and I'll just pause recording
+[02:34] while this is getting created.
+[02:35] Now that that's done, I'm going to click Go to Resource and then look down here at Redundancy
+[02:41] which is under Data Management.
+[02:43] So we'll click on that.
+[02:45] And you can see that the redundancy is configured so that we have a copy.
+[02:50] The primary copy is in East US and then we have secondary and West US.
+[02:54] Now notice if I did want to switch to a different redundancy level like RAGZRS, I could.
+[03:01] All I got to do is click save and then it is going to make me type yes to confirm.
+[03:06] I'm not going to do that because this takes a while for it to take effect and it can
+[03:14] So I'm not going to switch right now,
+[03:16] but if I did want to switch,
+[03:18] I could go right here and type yes,
+[03:20] and that's how I could switch
+[03:21] to a different level of redundancy.
+[03:24] Okay, so hopefully you can now see
+[03:26] that it's relatively easy to manage the redundancy
+[03:29] in a storage account.

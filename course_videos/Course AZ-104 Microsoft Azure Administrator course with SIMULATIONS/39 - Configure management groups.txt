@@ -1,0 +1,57 @@
+# 39 - Configure management groups
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/39 - Configure management groups.mp4
+Fetched On: 2026-10-21 19:24:03
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] One consideration we have in Azure is in our organization we may have multiple
+[00:05] subscriptions. For example, I might have one subscription that is used for
+[00:08] production and all my production Azure resources go in it. However, we also
+[00:13] might be developing products of some kind or testing. And so we might have a
+[00:18] subscription that involves developers and we might have another subscription
+[00:22] that's just for testing. And so now you've got different types of
+[00:29] to containerize those subscriptions and that is called a management group. It's a
+[00:34] way of grouping together subscriptions. You also could consider that you might
+[00:39] have subscriptions in various places of the world. I might have subscriptions
+[00:42] that are tied to New York. I might have subscriptions that are tied to London.
+[00:46] You know and we have to consider that and so we might want to group these
+[00:49] things together utilizing what is called a management group. If I go here
+[00:53] on portal.azure.com, I click the menu button and I go to all services. I can
+[00:58] search for management groups and you'll see there is management groups right
+[01:04] there and then I can go in and this is where I would create it. Now also if you
+[01:07] actually go out and do a quick Google or Bing search on the keywords organize
+[01:11] your resources with management groups in Azure you'll come across an article
+[01:14] with that exact name and here is that article. I like their little
+[01:19] visualization so I wanted to just quickly show that to you. You can see
+[01:22] that
+[01:23] They've got an example of management groups here for a company called Contoso.
+[01:28] Now by default, you don't start out with any management groups,
+[01:31] but generally what happens is you create what is known as a root.
+[01:34] Okay, and that root, in this case, tenant root group,
+[01:39] then you can create multiple management groups under that.
+[01:41] And this is the case where they've got one company.
+[01:43] What if you had multiple companies?
+[01:45] you get a multiple of these hierarchies.
+[01:47] So they've got one called Contoso,
+[01:50] and then underneath that they've got other management groups,
+[01:52] platform landing zones, decommission, sandbox.
+[01:55] Under platform we got identity management connectivity.
+[01:58] And then as you get into those management groups,
+[02:00] we've got different subscriptions
+[02:02] tied to those management groups.
+[02:04] And of course, so that's a great way for us
+[02:06] to sort of...
+[02:07] categorize or containerize our management groups. Now in my case I've actually created a root group.
+[02:13] If you're creating a new Azure tenant you may not have that. You need to create one. You can go
+[02:17] right here and give it a name whatever you want to call it. Keep in mind the management group name
+[02:22] cannot have spaces. So if I tried to create one called production group I could do that but I
+[02:32] You'll see that right there.
+[02:33] Now, as far as name goes,
+[02:36] you can put spaces in the display name.
+[02:39] That's how you would go and you would create
+[02:41] that management group and then you can put your subscriptions,
+[02:45] you can link those directly underneath each management group.
+[02:49] That's the idea of management groups in Azure.

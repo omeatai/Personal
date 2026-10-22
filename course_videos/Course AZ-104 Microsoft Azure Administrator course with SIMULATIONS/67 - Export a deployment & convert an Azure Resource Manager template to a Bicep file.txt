@@ -1,0 +1,51 @@
+# 67 - Export a deployment & convert an Azure Resource Manager template to a Bicep file
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/67 - Export a deployment & convert an Azure Resource Manager template to a Bicep file.mp4
+Fetched On: 2026-10-21 19:25:06
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now one thing that's really nice about our ARM templates in regards to bicep and ARM is that Azure now has the ability to show us both when we look at a resource for deployment.
+[00:15] So like for example, I've got my I've got a storage account open right here.
+[00:21] And let's say I wanted to kind of cookie cutter that and I wanted to see the ARM template
+[00:26] and bicep file for that.
+[00:27] I just go down here towards the bottom under automation and then export template.
+[00:32] And then notice that I've got the ARM template for this and I've also got the bicep file
+[00:38] for this.
+[00:44] templates that people on the Internet have built.
+[00:46] Like for example, if you go to Google or being in a search for
+[00:49] ARM template repository,
+[00:51] you'll find the Azure Quick Start templates.
+[00:53] If I go there and then let's go and take a look under Quick Starts,
+[00:59] and we can look at Microsoft Compute.
+[01:07] Here is some things we could deploy.
+[01:10] Like for example, they've got two VMS internal load balance or all.
+[01:13] Let's just pick one.
+[01:14] We'll pick that.
+[01:15] Okay.
+[01:17] Here is the JSON file for that.
+[01:19] So I get this huge file, right?
+[01:22] And it's in JSON format, but I want to put it in bicep format.
+[01:26] I can just go here.
+[01:28] I could copy this.
+[01:30] Okay.
+[01:31] And then let's open up Visual Studio.
+[01:33] So if I open up Visual Studio Code on my computer, I can click New.
+[01:38] Text file just see it's all pasted in here. It is pasted in as Json, right?
+[01:44] now I'm gonna also click new file and
+[01:48] This will be a bicep file. I'm just gonna call this
+[01:54] Convert demo dot bicep
+[01:58] Okay, I'm gonna save that on my desktop
+[02:01] All right. And so now I've got both of these files, right? Let's split the window here. So we've got
+[02:10] We've got this file here. All right, and I'll just I'll copy all that now check this out
+[02:18] With this latest extension when we when we put bicep on Visual Studio code, they now have the ability to convert
+[02:25] Directly to bicep just by pasting in so watch this
+[02:28] Paste and look at that. It just auto converts it for me to bicep
+[02:35] So that gives us a very quick way in order to convert an ARM template over to a bicep file.
+[02:41] But again, don't forget as we're working inside of Azure now,
+[02:45] they've made things a lot more friendly in terms of just being able to utilize.
+[02:50] the ARM templates from an existing resource or existing resources that you have configured
+[02:56] and then jump between that and a bicep file if you would prefer that. So again, pretty easy.
+[03:02] They've made life a lot easier for us in terms of being able to deploy those templates.

@@ -1,0 +1,55 @@
+# 92 - Create and configure virtual networks and subnets with PowerShell
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/92 - Create and configure virtual networks and subnets with PowerShell.mp4
+Fetched On: 2026-10-21 19:28:48
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at how we could create virtual networks utilizing PowerShell.
+[00:05] So here I am in PowerShell as an admin.
+[00:09] And the first thing I want to do is just verify that I've got my AZ commands imported.
+[00:14] So you should already have those downloaded.
+[00:16] I should just be able to make sure that they're imported.
+[00:18] I can type import-module AZ.
+[00:21] That's just going to make sure it's all up in memory.
+[00:23] Then I need to connect to Azure.
+[00:27] Account and then I'm gonna connect I've already connected so I don't need to do that again
+[00:31] Okay, and then now if I just want to see what resource groups I have I could type get-az
+[00:38] resource group and
+[00:41] I can
+[00:43] Basically see what resource groups I have I have a resource group that I'm going to use
+[00:48] That I've already created and this is the vnet demo RG resource group so I can use that for
+[00:55] adding my VNet to. So I would want to make sure that my VNet demo RG is created. And by the way,
+[01:03] it does not matter if you don't have the same resource groups as me. The only one that's going
+[01:08] to matter is this VNet demo RG. So now I'm ready. Now what I need to do is I'm going to have to
+[01:13] define a variable for creating the subnet that's going to go inside of my VNet. So I'm going to
+[01:23] config is what I'm going to call it, equals new-az virtual network subnet config dash name
+[01:36] and I'm going to call this subnet 5a okay dash address prefix there it is and then that'll be
+[01:55] So that is now stored in a variable.
+[01:57] Now I'm ready to add the actual virtual network.
+[02:02] So I'm just going to clear the screen and I'm going to type
+[02:05] new-az virtual network-resource-group name
+[02:15] which is vnetdemo-rg-location is going to be east US for me.
+[02:26] of this VNet, it's gonna be called VNet 5.
+[02:31] Okay, the address prefix will be 10.5.00.16.
+[02:38] The subnet will be that dollar sign subnet config variable.
+[02:44] And I think I've got it all correct.
+[02:46] I'm gonna go ahead and hit enter.
+[02:48] We'll see if that creates it okay.
+[02:51] And don't forget.
+[02:53] Know that this can be complex in your mind when you see all this but you could you could do a quick Google or being
+[02:58] Search on this command and there's examples on how to use this command. Okay, so it's not like you're you know
+[03:04] You're not having to memorize everything
+[03:06] But it is good to get this in to get practice and make sure that we know what we're doing there
+[03:10] All right, so the that vnet did get created with all of that and I should be able to now even type get dash a Z
+[03:20] virtual network
+[03:24] There we go and hit enter or actually I could see all of them if I just hit enter I'm just gonna type dash name
+[03:30] V net five and hit enter and we'll see if it shows up and it does so it repeated basically this but
+[03:36] You could see all of them if you just
+[03:39] Got rid of that so I could see all my virtual networks now
+[03:43] If I jump back over into portal dot Azure calm, I'm gonna go to this resource group V net demo RG and
+[03:51] Look you there V net five
+[03:54] If I go into VNet 5 and I go over to subnets, you can see my subnet 5a has been created.
+[04:00] And that's how you can add VNets and subnets utilizing PowerShell.

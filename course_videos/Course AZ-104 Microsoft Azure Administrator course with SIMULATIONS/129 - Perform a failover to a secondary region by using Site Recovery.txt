@@ -1,0 +1,69 @@
+# 129 - Perform a failover to a secondary region by using Site Recovery
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/129 - Perform a failover to a secondary region by using Site Recovery.mp4
+Fetched On: 2026-10-21 19:29:34
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about failover when it comes to working with a Azure Site Recovery sequence.
+[00:07] So in our case we have a virtual machine that we've set up Azure Site Recovery with
+[00:13] and we want to take a look into failover. So here we are on portal.azure.com
+[00:18] and click the menu button and go to virtual machines. We can click on
+[00:21] this WinServer1 which is the one that I have gone and enabled.
+[00:26] this recovery capability. And if I look underneath Backup Disaster Recovery, I can click Disaster
+[00:32] Recovery, and I can see the replication health is healthy, status is protected. Now keep in mind,
+[00:39] if you just recently set this up, it may not have completed the replication yet, and you,
+[00:49] everything up here might be grayed out. You have to give it some time. And I mean, when I say give
+[00:56] it finally shows status protected.
+[00:58] OK, and so you'll notice here it says
+[01:01] last successful test failover.
+[01:03] We can go right here and click test failover.
+[01:07] Alright, OK, it says it's going
+[01:09] to create a recovery point.
+[01:10] OK, this little recovery point here,
+[01:13] last process recovery point for the disks.
+[01:16] OK, Azure Virtual Network.
+[01:18] So then we'll select that.
+[01:20] That's our our West US virtual
+[01:22] network and will click test failover.
+[01:26] So we'll go ahead and start that up and I'm just gonna
+[01:29] Go ahead and pause the recording while that is testing. All right, and that failover test is done and
+[01:37] You can see now it says everything is healthy, but it does say clean up test failover pending. So if I click on that
+[01:44] You can see everything went through successfully it checked the prerequisites
+[01:49] The create test virtual machine preparing the virtual machine
+[01:53] and then start the virtual machine. So all of that went through successfully. Let's go back
+[01:59] and we will go ahead and click clean the test failover. I'm just going to put the word good
+[02:06] and this is testing is complete. Delete the test failover virtual machine. That's fine. We'll click
+[02:10] okay and we'll go ahead and let that run through.
+[02:12] Alright, so it is done. You can see that after refreshing my screen, I've got the
+[02:17] failover button and all of that available. So now what I want to do is
+[02:22] I'm gonna go back over here to my virtual machines, WinServer1, and I'm
+[02:29] just gonna connect into it. So the usual, download the RDP file and we're just
+[02:37] gonna connect into that virtual machine real fast here. So I'm just gonna put
+[02:43] All right, so I am officially connecting in
+[02:48] Alright, I'm just gonna resize it so
+[02:52] Shows up a little bit better in this resolution that I've got here
+[02:56] So as you can see it's logging on to the virtual machine
+[02:59] The virtual machine is up and running and all that fun stuff now. I'm gonna jump back over to
+[03:04] Disaster recovery and we're gonna click failover
+[03:10] All right, so we're gonna failover. We just did a test failover. We're gonna do a real failover now
+[03:16] So source East US destination West US recovery point shutdown machine before beginning the failover
+[03:22] So you can you can see you have that option there to check that if you want to shut the virtual machine down
+[03:27] I'm just gonna say failover
+[03:29] Alright, so I'm gonna go ahead and trigger that and we'll give it some time
+[03:33] All right. So the failover is completed and I can see right here
+[03:39] my virtual machine is still up and running. So everything there ran through successfully. So as
+[03:46] you can see how everything is good there. I do have this option that says commit. So I'll go
+[03:52] ahead and click that says are you sure you want to commit the virtual machine once you commit you
+[03:57] cannot change the recovery point of the virtual machine. So I could say yes let's go ahead and
+[04:04] It says committing the failover.
+[04:06] The operation is in progress.
+[04:09] Okay.
+[04:09] And you know, pretty much that's the process.
+[04:12] This, it isn't, um, isn't too difficult to test it.
+[04:16] You can see the virtual machine here.
+[04:18] Everything has gone smoothly.
+[04:20] And, uh, if you're doing this along with me, I tell you to go ahead
+[04:24] and just feel free to try it out.

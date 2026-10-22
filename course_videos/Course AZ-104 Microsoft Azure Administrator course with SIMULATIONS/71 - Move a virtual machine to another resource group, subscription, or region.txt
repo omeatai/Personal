@@ -1,0 +1,56 @@
+# 71 - Move a virtual machine to another resource group, subscription, or region
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/71 - Move a virtual machine to another resource group, subscription, or region.mp4
+Fetched On: 2026-10-21 19:22:16
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now at some point in your Azure career,
+[00:03] you might find yourself in a situation where you need to move
+[00:06] some resources from one place to another.
+[00:09] Perhaps you want to move your virtual machine to a different place.
+[00:14] So I want to show you how we could do that.
+[00:16] Here I am on portal.azure.com
+[00:18] and I'm inside the VM demo resource group
+[00:21] where I've got these resources.
+[00:23] I'm just gonna select these resources.
+[00:25] And then there's a little move dropdown.
+[00:27] You can see that I have an option to move
+[00:29] to a different resource group
+[00:31] or move to a different subscription
+[00:33] or move to a different region.
+[00:35] I'm gonna select move to a different resource group.
+[00:38] It says, okay, well, where do you want to move it to?
+[00:40] You could have gone ahead and just created
+[00:42] a resource group beforehand.
+[00:44] I can also create one now.
+[00:45] I'm just gonna click create one.
+[00:47] I'm gonna call it VM destination.
+[00:50] Okay, so we're gonna move our resources
+[00:53] from the VM demo resource group to a new resource group
+[00:56] called VM destination.
+[00:57] We'll click okay to that.
+[00:59] We're gonna go ahead and click next,
+[01:00] and you'll see that it's just gonna validate
+[01:03] and make sure that.
+[01:04] Everything can be moved. So I'll just pause my recording while it's validating.
+[01:08] All right, now that the validation is done, I'm going to go ahead and click next.
+[01:12] It's just going to review everything, make sure everything's good. Then I'm going to click
+[01:16] I understand that tools and scripts associated with move resources will not work until I update
+[01:22] them to use new resource ID. So that's the idea there is if you have written some scripts
+[01:28] or utilized some tools that involved different
+[01:31] IDs that maybe involve that resource group you would need to update those so that's fine
+[01:37] I'm gonna go ahead and click move and I'm gonna pause recording while it's moving the resources. All right
+[01:41] I just got the move complete message so you can see
+[01:45] The items showing up in the VM demo if I refresh they should disappear
+[01:50] Yep, they're gone
+[01:52] And if we jump over to VM destination, that resource group, you can see that they are
+[01:57] appearing in the VM destination resource group.
+[02:00] So as you can see, they moved relatively smoothly.
+[02:03] And again, if I wanted to move, perhaps I want to move to a different subscription,
+[02:08] I can go through this wizard here.
+[02:10] I got to have a different subscription to move to, but you can do that.
+[02:14] If you want to move to a different region, you could use this little wizard right here.
+[02:18] So very easy to move objects within your Microsoft Azure environment from one place to another.

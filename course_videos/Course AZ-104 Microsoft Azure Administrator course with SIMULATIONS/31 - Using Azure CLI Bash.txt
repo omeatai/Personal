@@ -1,0 +1,57 @@
+# 31 - Using Azure CLI Bash
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/31 - Using Azure CLI Bash.mp4
+Fetched On: 2026-10-21 19:28:27
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now again, this being a Microsoft class, we sort of focus heavier on the PowerShell side of things
+[00:06] But as far as Azure CLI, which is bash, you can learn that as well
+[00:11] Microsoft has lots of documentation out there. If you do a quick search, you can say get help on Azure
+[00:18] CLI and Microsoft has
+[00:22] an entire
+[00:23] set of manual instructions on running the Azure CLI
+[00:27] commandlets and using using those.
+[00:30] OK, however, we come back over here we can go.
+[00:34] We can actually run the Azure CLI commands in PowerShell
+[00:38] by typing AZ, so everything will start with AZ.
+[00:42] If you just type AZ, you can you can get help here.
+[00:45] Or if you want to switch over to the official Azure CLI
+[00:53] Okay, so that brings us back over here. Okay, so if I wanted to create a user or something like that
+[01:00] with this, you could look up the command. All you got to do is just do a quick google search for
+[01:05] being searched for Azure CLI, create Azure AD user, and there's lots of documentation, but
+[01:12] the gist of it would be like this. So I would type AZ, I type AZ and hit enter,
+[01:25] on Bash it's clear instead of CLS and then I would type AZ AD user create
+[01:35] dash dash display so their parameters with the CLI will be a double dash and
+[01:40] then dash name so display name so maybe this user I'm going to create I'm just
+[01:58] Alright, the password I'm going to use, just going to use this password here, is my little
+[02:03] temp password that I like to always use, dash dash user dash principal, oops, principal,
+[02:13] you can hit tab for autocomplete, principal name, and then I'll say, we'll say joe hall
+[02:22] at exam lab practice dot com.
+[02:30] domain name in there. It may be an onmicrosoft.com name if you haven't gone through the process of
+[02:37] creating a custom DNS name. So then I'm going to say dash dash force change passwords at sign in
+[02:45] that's going to force the user to change password to sign on. I'm going to hit true and I'm going
+[02:49] to hit enter and let's see if we did this correctly. Looks like we did. One thing that
+[02:52] that a lot of people do like about using the bash tool is that it
+[02:57] it shows it to you in JSON. This can both be a good thing and a bad thing. It can be sometimes
+[03:02] annoying to see it in JSON format as instead of getting a more friendly format. But if you are
+[03:07] working with JSON it is helpful because you can copy and paste and all that. Let's go and look
+[03:12] and see if Joe Hall was created. Here we are on portal.azure.com. We'll click the menu button
+[03:17] or actually I've got Azure AD right here or you can click the menu button go to Azure Active
+[03:26] And let's see if Joe Hall was created.
+[03:29] And there's Joe Hall.
+[03:31] So Joe Hall was successfully created
+[03:32] and that is how you could use Bash.
+[03:35] Now keep in mind, I'm not a really, again,
+[03:37] I'm not doing, this is not a PowerShell slash Bash class.
+[03:41] We're just learning some basics here.
+[03:43] You can do searching on the internet
+[03:45] for running these commands.
+[03:47] So if there's something you don't know how to do,
+[03:49] there's lots and lots of documentation out there.
+[03:51] You just gotta look for it.
+[03:52] It doesn't take long to find it.
+[03:54] and you can learn how to build these commands and if you start learning scripting you can
+[03:59] automate the process of building objects and stuff using these different commands.

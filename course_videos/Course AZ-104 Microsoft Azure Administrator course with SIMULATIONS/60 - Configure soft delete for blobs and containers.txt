@@ -1,0 +1,58 @@
+# 60 - Configure soft delete for blobs and containers
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/60 - Configure soft delete for blobs and containers.mp4
+Fetched On: 2026-10-21 19:29:09
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's take a look now at how Soft Elite works in conjunction with our blobs and
+[00:05] blobs containers on our storage accounts. So here we are on portal.azure.com. I'm
+[00:11] gonna click the menu button and go right here to where it says storage
+[00:15] accounts. We're gonna open up our storage account and from there I'm gonna
+[00:20] first start by going down here towards the bottom under data management.
+[00:26] and there is a blade called the data protection. So we're going to open that up and then you're
+[00:31] going to see that you have the soft delete settings here. So the idea of soft delete is
+[00:37] simply that if an item gets deleted, a blob gets deleted, in this case we can just undelete that
+[00:43] blob and you can see that currently it's set to seven days right. I can have that set to seven days
+[00:52] have that turn on for blobs. These will be individual files.
+[00:56] Whereas you could also have it turn on for the entire blob container
+[00:59] which is right here. Okay. There is a Learn More article
+[01:03] about this that will talk to you more about the concept of deletion. It's sort
+[01:09] of like a recycling bin type scenario where when stuff gets deleted
+[01:15] it can be undeleted through this soft delete feature. Okay.
+[01:21] Items can be undeleted for up to 365 days.
+[01:29] That is the maximum amount of time.
+[01:33] There it is, I was trying to find that in this article.
+[01:35] So, we're gonna go ahead and do that.
+[01:40] specify retention period for deleted objects of between one and 365 days.
+[01:46] So that is the maximum amount of time that you can undelete something.
+[01:50] Okay.
+[01:51] So once you, so you can configure that the way you want, you can see this is just turned
+[01:55] on by default here.
+[01:56] I can also allow for permanent delete for soft delete items if I want here.
+[02:04] that to permanent. Permanent delete enables you to permanently delete a soft delete snapshot or
+[02:10] blob version before the retention period. So that is something you could turn on as well.
+[02:14] You can simply just click that and then click save and turn that on. I'm not going to turn
+[02:18] that on in my case, but you could. Now I want to jump over underneath data storage. We're going
+[02:24] to click on containers and I'm going to go here to this images container that I've got and I'm
+[02:32] domain and cloud services png file that I've got here. So I'm just gonna click the little lip symbol and then click delete and
+[02:40] Now this file has been deleted. Okay, so very easy to delete something now
+[02:45] We'll go right here to this little drop down where it says only show active blobs
+[02:48] we're gonna say show active and deleted blobs and
+[02:52] There you go. You can see that it's showing that the previous version of this blob is here
+[02:56] And if we go right here, we can click to
+[03:02] But that's not going to completely solve the problem if I go back over here and click only show active
+[03:07] You'll see it's still not going to show up. So let's go back and
+[03:12] if we go right into
+[03:16] Let's go back over here and click view versions. There's this there's the version right?
+[03:21] We've we've gone through and we've undeleted the version now if we click this we can choose to make current version
+[03:29] All right, so we've made current version
+[03:33] Now it says current version now, let's swap back over and there it is so you can see that it's back
+[03:39] Okay. Now not only can you do this with a blob you can do it with an entire container
+[03:44] If I go back over here and click to go and look at my containers. I could delete this whole container
+[03:49] Okay, and then I can do the same thing with that. I can say show active and deleted container
+[03:53] So it's really the same process just with the entire container
+[03:57] Okay. Well, hopefully now you have a better understanding of how we can utilize soft delete,
+[04:02] configure softly regarding our blobs and blob containers.

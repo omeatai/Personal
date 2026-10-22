@@ -1,0 +1,70 @@
+# 54 - Configure object replication
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/54 - Configure object replication.mp4
+Fetched On: 2026-10-21 19:30:27
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to show you how we can do object replication between storage accounts.
+[00:06] So here we are on portal.azure.com.
+[00:08] If we click the menu button here, we go down here and look at storage accounts.
+[00:12] You'll see I have two storage accounts.
+[00:14] And in the first storage account, this one right here, if I go into that, I can go
+[00:18] over here to containers under data storage.
+[00:22] Click on that.
+[00:25] Which contains an actual image so what I want to do is I want to replicate this images container over to the second storage account
+[00:32] First thing we need to do though is we need to create a container on that second storage account that will
+[00:39] Replicate this data to right so we'll go over storage counts. Here's the second storage account. We're gonna go to containers
+[00:46] We're gonna create a new container. I'm just gonna call this one images as well
+[00:51] So we'll just put images in there, that'll be fine, and I'm just going to click to create.
+[00:56] All right, so now that that's done, we've got this other container. It's empty, right? If we go in it,
+[01:01] there's no there's no images, right? But let's go back over to our storage account to this first one.
+[01:07] All right, now I'm going to go down here underneath where it says data management.
+[01:13] We're going to look for a blade called object replication. So we'll click on that.
+[01:17] Okay, so we can replicate to our own accounts if we want.
+[01:24] We also have the ability to, if we go to advanced settings, you can do cross-tenant replication.
+[01:30] They tell you this allows cross-tenant replication which will permit you to configure an object
+[01:38] is in one Azure tenant, destination is in another.
+[01:41] So if you wanted to do a different tenants, you could.
+[01:44] All right, and of course, in my case,
+[01:45] I'm doing that within my own tenant.
+[01:48] But I'm gonna go create application rules.
+[01:51] All right, so I've got destination subscription,
+[01:55] then the destination storage account.
+[01:57] So we're gonna choose that second storage account.
+[02:00] And now we're gonna choose our source container, right?
+[02:04] Which is gonna be images.
+[02:06] All right, destination container images.
+[02:09] So there you go.
+[02:10] So the source, so that's our destination.
+[02:13] See, we've currently got the original storage account open.
+[02:16] Then we selected our destination storage account.
+[02:20] And then from there, we're selecting images
+[02:23] as our source and destination will be images.
+[02:25] They don't have to have the same name, obviously.
+[02:27] You can also add filters
+[02:29] so you can specify what's called a prefix.
+[02:31] And they tell you that
+[02:32] A prefix match will find items like folders and blobs under the specified container
+[02:37] that start with the specified input. For example, if you inputted the A, the inputting the letter A
+[02:46] filter would filter any folders or blobs that start with the letter A. If you do multiple
+[02:54] any of these prefixes will be included. So that's the idea of a prefix. Now you'll also notice it
+[02:59] says copy over and currently this says only new objects. So that's kind of a problem. I've already
+[03:05] got an image inside that images container and I want to copy that over as well. If I just go
+[03:11] ahead and created this now then that image would not get created would not get copied over in the
+[03:16] replication. So we're going to click change and we're going to choose everything.
+[03:22] Now granted you could do custom as well. You can choose you know the starting time from all that
+[03:29] you can set but I'm going to do everything. We're going to click to save and now we're going to
+[03:33] click to create. All right we're just going to let that run through now. All right now keep in
+[03:39] mind you might need to wait two or three minutes for this to officially happen.
+[03:45] So if you go in and you check to see if the replication has occurred and it hasn't,
+[03:49] you need to give it a couple of minutes. All right, but we're going to go right now
+[03:53] and we'll go here to storage accounts, open up this other storage account,
+[03:58] this destination storage account. We'll go to containers under data storage,
+[04:02] and then we'll look in the images container. And there you go. As you can see, it has replicated.
+[04:14] container from the other storage account, right?
+[04:18] And then we've got the new copy that's in the destination container,
+[04:22] that's in the second storage account. And there you go.
+[04:26] As you can see, pretty easy to set up object replication.

@@ -1,0 +1,71 @@
+# 22 - Manage external users
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/22 - Manage external users.mp4
+Fetched On: 2026-10-21 19:31:21
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about how we can invite guests or external users to our environment.
+[00:04] This is used in a lot of these scenarios where perhaps we've hired a consultant,
+[00:10] contractor, this is like a B2B business business type scenario, and we want to give some access
+[00:17] to somebody that's not part of our organization. So let me talk about how we can do that. Here we
+[00:21] are on portal.azure.com. I click the menu button and I go down to Microsoft intra ID. We'll just
+[00:27] go over here to users and you'll see the option. If I click new user, I have this option says invite
+[00:37] specify the person's email address. So the idea here being that you're not going to be assigning
+[00:42] an email address from the company to this person. In this case they're going to be using their own
+[00:47] email. Now is it possible to assign a company email to a guest? Yes, but I'm not getting into
+[00:51] that right now. I would specify this person's personal email. So let's say that this person is
+[00:57] a consultant. Okay and we'll say that the user's name is Todd Jones. So I'm going to say Todd Jones
+[01:09] and then whatever, at Gmail, I don't want a real Todd Jones to be emailed right now.
+[01:15] So we're just gonna say Todd Jones 7845 at gmail.com.
+[01:22] Okay, I'm gonna assume there's not really a Todd Jones 7845 at gmail.com,
+[01:27] but that would be this person's email address.
+[01:29] Okay, and then display name Todd Jones.
+[01:39] welcome aboard maybe this is a contract you know for the next six months or
+[01:45] something we could also have somebody else emailed like myself JC at exam lab
+[01:53] practice calm CC'd on the email okay and the invite redirect URL this will be the
+[01:59] URL that gets created for that if I had some kind of custom when I wanted to use
+[02:08] This is the one that it created.
+[02:10] Alright, so I'm going to click next
+[02:12] and then we specify the user's name, Todd Jones.
+[02:16] Alright, and this user is a guest.
+[02:20] Same type of information you fill out for a regular user.
+[02:22] We'll say this person is a, let's say, marketing consultant.
+[02:27] Okay?
+[02:29] And then, you know, whatever, maybe the user is Todd Jones.
+[02:35] Marketing is the name of his company, okay, whatever.
+[02:38] And he's part of the marketing department, right?
+[02:41] So we could fill out all this information
+[02:44] and we'll go ahead and click next.
+[02:48] Let's use usage location, we'll just do United States.
+[02:54] Okay, that's fine.
+[02:56] Next.
+[02:57] And at that point, we could add it to a group,
+[03:00] add it to a role, whatever.
+[03:02] Not gonna do that right now.
+[03:03] I'm just gonna click.
+[03:04] Review and then invite. So here's what's going to happen
+[03:08] And you're welcome to try this
+[03:10] I encourage you to try this in your own environment try sending your personal email a guest invite if you're doing this stuff with me
+[03:17] Okay, but Todd Jones is going to get an email
+[03:21] Okay, and that email he'll be able to click that email. In fact, if I go to
+[03:26] www.office.com and I'm logging on to Office 365 like a user
+[03:33] Go right here
+[03:35] Let's look at apps and we'll go to Outlook.
+[03:39] All right. Remember I had the email that's going to CC me and there it is right there.
+[03:50] Microsoft Invitation, John Christopher, invited you access.
+[03:55] This is what the email looks like and the person can accept that invitation.
+[04:00] At that point, they'll be able to log on.
+[04:03] They can log on to Azure resources and access resources.
+[04:06] And we can grant them resources if we want.
+[04:09] Now you can also go to admin.microsoft.com on the Microsoft 365 side of all of this and then drop down users.
+[04:17] Don't click on active users, but click on guest and you can see there's Todd Jones.
+[04:21] But if I wanted to click to add a guest, watch what happens.
+[04:25] So really, you just get redirected back to the Azure side if you want to create a guest.
+[04:32] you go through this wizard here, invite a new user,
+[04:35] and it's the same exact process.
+[04:37] Okay, well hopefully that now gives you a better idea
+[04:40] of how you can invite guests with Microsoft Intra ID.
+[04:45] So,

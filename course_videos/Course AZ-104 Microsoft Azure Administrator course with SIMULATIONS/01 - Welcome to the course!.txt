@@ -1,0 +1,54 @@
+# 01 - Welcome to the course!
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/01 - Welcome to the course!.mp4
+Fetched On: 2026-10-21 19:28:04
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Hello and welcome to the AZ 104 Azure administration course. My name is John
+[00:06] Christopher and I'd like to introduce you to the class and also tell you a
+[00:08] little bit about myself.
+[00:10] I've been in the IT industry now of about 23-24 years. I started out in the 1990s as a junior
+[00:16] network administrator working with NT 3.50 and eventually NT4 got my MCSE for NT4 and got to be
+[00:25] one of the very first people in the world to get the MCSE for Windows 2000. And then Server 2003
+[00:31] and 2008 I worked with 2012-2016. The 2022 got to work with all the client operating systems and
+[00:39] all these years and I've also gotten to be a consultant so it's really nice I
+[00:45] kind of get to teach this stuff and get the jump back and forth from teaching it
+[00:49] to working with it hands-on in the industry and so one thing I want to make
+[00:54] very very clear to you about this course something that's very near and
+[00:57] dear to my heart and that is this is not going to be a death by PowerPoint
+[01:02] course where I just show PowerPoint slides the whole time you're taking it
+[01:08] of hands-on demonstrations. In fact, I'll say that the vast majority of this course is hands-on
+[01:15] and you'll be able to follow along. You'll be able to create your own little environment to
+[01:19] play around with and you're going to get lectured hands-on. I'm going to use real world examples.
+[01:26] And then one of the things that I'm most proud about in this class that I think is different
+[01:29] from any other course out there is that I actually provide you with hands-on simulations
+[01:37] pretty much all you need is a web browser. You don't even have to set up an
+[01:40] Azure account and you'll be able to do these simulations anytime, anywhere. In
+[01:46] fact, let me show you one of the simulations that you'll get to do in
+[01:48] class right now.
+[01:49] Now I'm a firm believer that you learn by doing and I really feel like these simulations will help you out a lot.
+[01:55] In this particular simulation you'll be creating a storage account and you'll be activating LRS which is Locally Redundant Services.
+[02:03] And then you'll also be creating what's called a blog container called images.
+[02:07] And so you'll basically start this and it tells you exactly where you're going to be doing this from.
+[02:11] And you'll actually get to make the clicks yourself for actually creating this storage account.
+[02:18] Alright, so as you can see, you get to go through this step by step of actually building
+[02:24] this storage account.
+[02:26] So just wanted to kind of demo that for you.
+[02:28] There's a lot to learn here and lots of hands-on experience that you're going to gain from
+[02:33] doing these.
+[02:34] Not only is there a tremendous amount of hands-on experience that you can gain from this course,
+[02:40] but the course is also designed to help you pass the AZ-104 exam. Alright, so I'm going to be
+[02:46] preparing you by going through the different concepts you need to know to get through this
+[02:51] exam on your first try. One of the things I do is I design the course around the test objectives
+[02:58] to go through each and every one of the test objectives. Alright, you pass the exam,
+[03:03] you get the Microsoft Certified Azure Administrator Associate certification.
+[03:07] Alright, so this course is going to try to help you knock out that exam on your first try.
+[03:12] Alright, something else I try to take pride in is that when Microsoft updates their exam objectives,
+[03:18] I do my best to update the course as well. And you will have updates.
+[03:23] included in this course for life. Every time they come out with updates I'm going to try to get
+[03:27] those in there and keep the course updated for you. Also try to be available to my students so
+[03:33] you you're able to contact me and if I can answer some questions for you I will. Alright,
+[03:38] so main thing is I want my students to be happy. I hope you'll leave a review and I

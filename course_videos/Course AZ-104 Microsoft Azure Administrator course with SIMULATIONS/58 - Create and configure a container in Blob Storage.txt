@@ -1,0 +1,62 @@
+# 58 - Create and configure a container in Blob Storage
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/58 - Create and configure a container in Blob Storage.mp4
+Fetched On: 2026-10-21 19:27:23
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk now about creating and configuring Blob containers inside of a storage account.
+[00:05] So here I am on portal.azure.com. If I click the menu button and then go right here into
+[00:11] storage accounts, I'm going to go ahead and open this storage account up here
+[00:14] that I have. And then if I look under data storage, you'll see containers. So a Blob container
+[00:21] is a logical grouping of Blob objects or files, if you will, that are inside the storage account.
+[00:29] So you can sort of think about it kind of like a folder in a file system
+[00:33] But it's more designed for cloud scale storage. Okay, so the idea of a
+[00:40] Blob container is it's just gonna have a flat name as you can see here
+[00:45] Like I've got some of the built-in there's some built-in containers that are already there
+[00:50] But I've also got some containers I've created like I have this one called images that I can go into and
+[00:59] From there you have your blog container called images, but then I can also add a directory for example
+[01:05] I could call it something like artwork
+[01:08] Click ok, and then I could upload into that you can have directories underneath that
+[01:15] Keep in mind you really kind of have to start putting stuff in there if you go back over here to images
+[01:20] You'll notice that I didn't stick anything in that directory
+[01:23] So there's nothing really there to look at right if I go back over here
+[01:29] To containers, all right, you'll see there's no directory.
+[01:33] Now if I go and I click add directory and I say artwork and I click OK,
+[01:40] and now I'm going to upload something.
+[01:43] So we'll upload a file and I just uploaded Microsoft.PNG.
+[01:47] It's just like a little logo.
+[01:48] I'm going to click upload and I've now added that.
+[01:51] Right.
+[01:52] So if we go back over to images, you'll notice that the directory
+[01:55] stays now that I've actually put something in it.
+[01:57] Okay, so that's the idea of a directory. You can have these directories inside of your
+[02:05] Actual container you can also alter the access level
+[02:10] You'd have private no access blob
+[02:13] anonymous read access for blobs only or container allow the whole entire container to be
+[02:19] Anonymous which means people can hit it over the web
+[02:22] All right, you know, I might already be familiar with some of that and I can have
+[02:25] shared access tokens and all that that allow access to it and all that fun stuff. So as far
+[02:31] as creating blobs are concerned, as you can see, it's very easy. I can go back over here. I could
+[02:36] create an additional blob if I wanted. You know, I could call this blob documents.
+[02:43] I could set the level right there. All right.
+[02:48] I could set encryption if I wanted to, but I could click create and I've now created another
+[02:53] blob container.
+[02:57] And then of course you can upload files into that so I could upload documents into that
+[03:01] and I could alter those same settings.
+[03:03] Creating the actual blob container itself and adding blobs, all pretty straightforward.
+[03:08] Once you have that storage account, you can go in and you can upload things and make those
+[03:15] the authentication method you want,
+[03:17] such as shared access tokens or whatever,
+[03:19] you can set role-based access control on the IAM blade.
+[03:23] You can allow other users that you want to have access to it.
+[03:26] Maybe you want people to have access
+[03:28] just to this one container.
+[03:30] You could do that through access control
+[03:32] or the entire storage account,
+[03:36] you would do that on this IAM blade,
+[03:38] on the storage account, okay?
+[03:40] And so that's how we can control containers
+[03:42] using our storage account.

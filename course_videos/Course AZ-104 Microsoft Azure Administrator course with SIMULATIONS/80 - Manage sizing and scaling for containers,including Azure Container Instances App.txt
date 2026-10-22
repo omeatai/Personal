@@ -1,0 +1,67 @@
+# 80 - Manage sizing and scaling for containers,including Azure Container Instances App
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/80 - Manage sizing and scaling for containers,including Azure Container Instances App.mp4
+Fetched On: 2026-10-21 19:26:59
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk about sizing and scaling when it comes to Azure container instances as well as Azure container apps
+[00:07] Now the first thing you should be aware of is that when it comes to Azure container instances
+[00:13] You cannot resize that and you can't really scale it either without some kind of auto scaling system like
+[00:22] Kubernetes services. So you could add a whole new service to your Azure environment,
+[00:28] AKS Azure Kubernetes service, and you could actually use that to help you with scaling out
+[00:35] an Azure container instance. But you need to remember that Azure container instance is meant
+[00:39] to be simple. It's meant to be a quick way just to deploy a container out there to use. It doesn't
+[00:44] have a lot of fancy features. Okay, so if I go and I look right now and I search for container
+[00:51] dot com and I go to container instances. I can look at my containers and I'm not
+[00:58] gonna see any resizing automation for scaling. I'm not gonna see any of that.
+[01:03] Now it is true that if you were to create a new container instance you do
+[01:09] have the ability to resize it when you create the new container. So the good
+[01:14] news is if you've got a container image you could always just create a new
+[01:20] resized what you want and tie it to that image.
+[01:24] So that's an opportunity to do it.
+[01:26] It's just there's no automation to that.
+[01:28] You can't do it on the fly or any of that.
+[01:30] Now, an Azure Container Application is a different ballgame.
+[01:35] An Azure Container Application actually
+[01:37] does have the ability to do all of that.
+[01:40] So if I come back over here to all services.
+[01:43] search for the word container go into container apps. I'll see I have this little container app right here that I've created
+[01:48] I can go into that
+[01:50] Okay, and we can do the scaling right here and this is where your scaling rules are
+[01:55] Okay, you should be familiar with those already and then if I want to resize it
+[02:02] Well, that's not really a problem either. I can I can resize
+[02:06] the
+[02:07] it pretty easily by going here to containers,
+[02:09] the containers blade, scroll down to the bottom,
+[02:11] take a look, container resource allocation.
+[02:14] Here's my options.
+[02:16] So if I want to do that, I can.
+[02:18] So again, the Azure Container app
+[02:22] is a bit more industrial strength.
+[02:24] You get a lot more features out of it.
+[02:26] You would definitely would want to price this
+[02:28] out because it's going to be more expensive.
+[02:30] But the rule of thumb is,
+[02:32] if you're just wanting to-
+[02:34] throw out a container very quickly to play around with testing development.
+[02:40] You don't need a lot of fancy features then you want to go with an Azure
+[02:42] container instance because it's very quick and easy to get things done.
+[02:46] But if you are going to be needing something that's got
+[02:50] scaling rules and the ability to resize and all that then you're going to want
+[02:54] to go with a container application. All right so that is going to be the thing
+[02:59] the way you sort of want to look at this. Okay
+[03:03] Now with that said, I am going, I don't need any of my services anymore regarding the Azure containers.
+[03:11] So...
+[03:12] I am going to go to my resource groups here.
+[03:16] I'm going to go into the container registry resource group.
+[03:18] Keep in mind, you may not see the exact same resource groups on your side as I do,
+[03:22] but this is the only one I care about in this video.
+[03:24] I'm going to completely delete this resource group,
+[03:28] which is going to wipe out all the objects inside of it.
+[03:31] So we're going to go to delete resource group,
+[03:33] copy, then I'll paste that in,
+[03:36] and then I'm going to delete it.
+[03:38] Then once I delete it, I'm ready to move on.

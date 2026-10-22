@@ -1,0 +1,42 @@
+# 32 - Installing Azure CLI locally
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/32 - Installing Azure CLI locally.mp4
+Fetched On: 2026-10-21 19:23:17
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] One last thing I'd like to show you involving the Azure CLI is that you can actually download
+[00:06] and install that locally to your computer.
+[00:09] If you go out to a search engine for example Google or Bing and just type download Azure
+[00:14] CLI, you can find skip the ads here.
+[00:20] Talks about how to install the Azure CLI.
+[00:28] I'm using Windows but if you had Mac you can put it on Mac.
+[00:31] So there's various ways you could do it.
+[00:34] Various operating systems, Debian, Ubuntu.
+[00:36] Anyway, I'm going to do install on Windows.
+[00:39] So we'll go down here.
+[00:41] Alright and from there all we got to do is go to install.
+[00:47] So we got information here.
+[00:50] There it is latest release of Azure CLI. So we'll click on that
+[00:54] And it's now gonna go ahead and install that or download that for me
+[00:58] And then all I got to do is just run that once it's done. So I'm just gonna install that on my computer
+[01:04] All right, so we'll just open that up. It doesn't take too long
+[01:07] But once it's installed what's nice about it is it'll be installed directly in there with PowerShell. So all you got to do is
+[01:16] just
+[01:17] load up PowerShell and you'll be able to
+[01:20] have access directly to
+[01:23] the Azure CLI as well.
+[01:26] Alright, so we're gonna go ahead and accept the terms here, and I'm just gonna click install and I
+[01:32] will go ahead and let this run through. I'll pause the recording while that's happening.
+[01:37] Okay, so that takes maybe a few minutes for it to finish installing.
+[01:40] I'm gonna go ahead and click finish and at that point I can open up PowerShell, which I already have open.
+[01:47] Again, right-click start.
+[01:49] go to PowerShell and if I am from there I can type az and I should be able to see the az
+[01:57] commands available to me. Alright there it is. If I want to log on to Azure I can type az login
+[02:04] hit enter. It's going to give me an opportunity to authenticate. It's going to pull up browser
+[02:11] and then from there I can put my password in. Alright it says that I've been successfully logged
+[02:21] And so I should be able to open back up PowerShell and there it is.
+[02:25] Okay and now I have the ability to run the same commands that I could run
+[02:30] through the cloud shell version of this can now be ran locally on my computer through PowerShell.

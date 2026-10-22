@@ -1,0 +1,18 @@
+# 89 - Removing App services that are no longer needed
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/89 - Removing App services that are no longer needed.mp4
+Fetched On: 2026-10-21 19:20:45
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I no longer need my app services, app services plan or any of that stuff, so I am now going
+[00:06] to remove all of that.
+[00:07] So here I am in my resource group, this Linux.
+[00:11] app service demo RG. I'm going to delete the entire resource group which is also
+[00:15] going to delete the resources that are inside that. Keep in mind if you're still
+[00:20] wanting to play around if you're doing this stuff with me and you want to play
+[00:22] around feel free to keep it around but I am going to go ahead and remove it on
+[00:25] my end to conserve Azure credit. Okay once this has been deleted I'm then
+[00:31] ready to move on.

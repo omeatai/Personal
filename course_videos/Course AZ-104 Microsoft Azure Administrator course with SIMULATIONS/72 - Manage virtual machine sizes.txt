@@ -1,0 +1,52 @@
+# 72 - Manage virtual machine sizes
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/72 - Manage virtual machine sizes.mp4
+Fetched On: 2026-10-21 19:22:02
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Something else that's pretty common when you're dealing with virtual machines is there may come a point to where you need to resize
+[00:06] that virtual machine and that'll involve the virtual CPUs and the memory and the
+[00:11] performance speed and all of that in terms of IOPS and
+[00:15] so this is just something that you might need to do occasionally to
+[00:19] Bring the price up bring the price down or just get better performance all together
+[00:23] in fact one of the companies that I
+[00:26] do IT work for not too long ago we went through this. They were paying too much for the amount
+[00:33] of resources. They didn't really need all of the resources out of that virtual machine.
+[00:37] They had too much performance and so we just scaled it back. You can do it very quickly.
+[00:43] You're going to see how easy it is to do it right now. So here I am on portal.azure.com.
+[00:47] If I click the menu button and go to virtual machines, I'm going to open up my virtual
+[00:52] All right, now I'm going to look underneath availability plus scale and then there is
+[00:56] a little blade called size.
+[00:58] I'm going to click on that and I can see the existing size of my virtual machine.
+[01:03] Keep in mind it's usually best practice to shut the virtual machine down before doing
+[01:07] this because you'll see more sizes if you do that.
+[01:11] Also you can leave it up and running, but it's going to do a restart anyway.
+[01:14] Okay.
+[01:17] looking at my size and I'm gonna go with this one right here. So I'm gonna move up
+[01:23] to this one that says memory optimized to virtual CPUs 14 RAM data disk size
+[01:29] and then the 12,800 IOPS and you can look at the prices right over here to
+[01:34] the right but I'm gonna go with this one.
+[01:36] and I'm gonna click to resize.
+[01:38] And keep in mind, if you're doing this with me,
+[01:40] you do not have to choose the same sizes
+[01:42] and all that as me.
+[01:43] You're welcome to keep what you got,
+[01:45] you're welcome to change it.
+[01:46] Ultimately, it's not really gonna cost me
+[01:48] a lot of Azure credit,
+[01:49] because I keep the thing shut down
+[01:51] when I'm not using it, okay?
+[01:53] And as you can see, it has now officially done the resize.
+[01:56] Sometimes it can take a minute,
+[01:58] I might have to refresh my browser.
+[01:59] It may take a minute before it always
+[02:01] reflects the new size.
+[02:02] Sometimes it happens quickly,
+[02:04] sometimes it doesn't, but.
+[02:05] you should be able to eventually see that the new size is what will be highlighted.
+[02:10] So there it is. Okay, you can see I've got this one selected and I've now got my new size set up.
+[02:17] I can go right over here to overview and I can verify the new size is listed there and
+[02:21] that is how easy it is to change the size on your virtual machines.

@@ -1,0 +1,87 @@
+# 13 - Converting your Azure account name to a business account name
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/13 - Converting your Azure account name to a business account name.mp4
+Fetched On: 2026-10-21 19:29:59
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] So now that I have my Azure account set up, there's a few things that I want to talk to you about.
+[00:05] The first thing to remember is that with Microsoft Azure and
+[00:10] IntraID, which is the directory services that Azure uses, it's all connected also to Microsoft 365.
+[00:18] So essentially you have Azure on one side of the coin and Microsoft 365 on the other and they're sort of sandwiched together
+[00:25] with directory services called IntraID.
+[00:29] The problem right now though is that we created our Azure account, we created it with a personal
+[00:35] email address and Microsoft 365 does not allow you to manage the business side of things
+[00:42] with a personal email address.
+[00:43] In fact, if I try to go to portal.microsoft.com and sign in, I get this error saying you
+[00:49] can't sign in here with a personal account.
+[00:52] So we go back over to portal.azure.com,
+[00:55] we click the menu button, we're gonna go down here,
+[00:58] this is the menu button,
+[00:59] also sometimes referred to as the hamburger,
+[01:01] people like to call it that.
+[01:02] We'll click on Microsoft Intra ID, okay?
+[01:07] Now we're gonna go to the user's blade, okay?
+[01:11] These things here are called blades,
+[01:13] and then we're gonna click on the user
+[01:15] that I have created.
+[01:16] In my case, I have user,
+[01:17] which is John Christopher, that is the account I'm logged on to right now.
+[01:21] And we're gonna go and click on that name.
+[01:24] Now, what I want to do is edit properties.
+[01:27] And then right here under user principal name.
+[01:30] Okay, I'm gonna change this name.
+[01:34] Like, I'm just gonna change it to JC.
+[01:37] Alright, I'm gonna erase everything that's there.
+[01:42] And I'm gonna put JC.
+[01:44] And then I'm gonna click save.
+[01:45] Alright.
+[01:48] Now in your case you could put anything you want there that obviously you don't have to call it JC
+[01:53] You name it what you want, right?
+[01:55] But I called mine JC and so when you see me demoing things
+[01:59] It'll my I've got a custom domain name
+[02:02] Called exam lab practice calm that I've registered
+[02:05] Which down here in custom domains you can register custom domain and I've registered exam lab practice icon
+[02:11] You don't need to worry about any of that right now
+[02:13] Your name will have a dot on Microsoft calm name on the end of it and that is perfectly fine
+[02:20] Perfectly fine. You'll have a different name than me. That's perfectly fine. It'll have on Microsoft calm on the end of it
+[02:26] That's normal. That's good. Okay, so now what we're gonna do
+[02:30] is we're going to attempt to sign out.
+[02:35] We're going to sign out of our account.
+[02:39] I'm going to go right here and I'm going to put in
+[02:43] JC at and then that name,
+[02:45] this on Microsoft.com name.
+[02:47] I'm going to click Next,
+[02:48] and then I'm going to put in my credentials.
+[02:52] Does help if you can remember what those are.
+[02:55] Now one thing I do want to warn you about right here is that in some cases Microsoft might
+[03:02] Require you to reset your password here
+[03:04] And what will happen is when you go to put your password in it's going to tell you you have the wrong password
+[03:09] This is the password that you use when you set up that personal account when you set your Azure account up, okay?
+[03:16] And remember what we've done is we changed our name from that personal account name to this name here
+[03:22] Which again, you're gonna have a different name than me
+[03:24] Um, but what we, what we would need to do if this happens, if we can't sign in, we're
+[03:29] going to say forgot password.
+[03:31] And then at that point we put this in.
+[03:34] It's, it's going to make us go through this, um, you know, robot test, make
+[03:41] sure we're not a robot.
+[03:42] Okay.
+[03:43] And then what it's gonna do is it's going to email a code
+[03:47] to your personal email address,
+[03:49] which in that case is this Outlook email address.
+[03:51] And then what I would do is I would go to outlook.com
+[03:54] in a different tab, I would sign in, I would get the code.
+[03:57] And then at that point, I would put that code
+[04:00] into this slot, okay.
+[04:03] I would click email, it'll send me the code,
+[04:05] I'll put it in the slot,
+[04:07] and then it'll let me reset my password.
+[04:09] And then at that point,
+[04:11] you should be able to go right back
+[04:13] to portal.azure.com, sign in with that account,
+[04:19] that long account name, not the personal one,
+[04:21] because remember we've changed it.
+[04:23] And we're going to click Sign In.
+[04:25] At that point, we've now got that set up.

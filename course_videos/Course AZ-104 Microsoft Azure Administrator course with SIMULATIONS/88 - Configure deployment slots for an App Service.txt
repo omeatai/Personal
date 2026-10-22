@@ -1,0 +1,76 @@
+# 88 - Configure deployment slots for an App Service
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/88 - Configure deployment slots for an App Service.mp4
+Fetched On: 2026-10-21 19:32:47
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about a very handy feature that we have with app services known as deployment
+[00:06] slots.
+[00:07] Now, a deployment slot is like a parallel environment such as like staging, testing,
+[00:15] or development, something along those lines where you can deploy your app without affecting
+[00:21] the production slot. So imagine you've got your app service site up and running and you
+[00:27] want to stage another version of that site, test it out, make sure things are good before
+[00:33] making it go live.
+[00:34] That's the idea. Each slot has its own URL, its own unique URL, its own configuration settings,
+[00:42] and it's running an app instance. You can swap that slot with the production at any time.
+[00:49] All right, so here we are on portal.azure.com. Let's go to the menu button, go to all services.
+[00:55] We'll just search for app service. I'm going to go into app services here, and I have my little
+[01:04] And then right underneath deployment, you'll see deployment slots.
+[01:09] Now I'm going to warn you when we get in here, we're going to see a little bit of a error message.
+[01:14] It's not really an error message. It's more of a, hey, you got an upgrade message.
+[01:17] But it wants me to upgrade to a standard or premium plan.
+[01:21] Now what it's talking about, if I scroll down here just a little bit and I look at my scale options,
+[01:28] I have scale up, app service plan, or scale out.
+[01:33] If we go there and we currently,
+[01:35] we look at what our current setup is,
+[01:38] I'm using a basic plan here.
+[01:40] So it's wanting me to scale up to a premium.
+[01:42] I'm gonna go ahead and scale up
+[01:44] to this premium V3 right here.
+[01:46] We'll click select, okay.
+[01:49] And we'll go ahead and upgrade our app service.
+[01:51] Now that we've done that,
+[01:54] let's go back over here to under deployment
+[01:56] and look at deployment slots.
+[01:58] And you can see that I can now officially add a slot.
+[02:04] Okay, and then I can give my slot a name, whatever I want to call it.
+[02:10] All right, I'll just call it staging.
+[02:13] All right, and then you'll see that the staging will get a unique URL for testing.
+[02:19] Now it says clone settings.
+[02:21] Now this is do not clone.
+[02:22] Basically you'd be create another site fresh or whatever.
+[02:25] I'm going to tell it to clone the existing site.
+[02:27] So we'll click add and we're going to let it clone.
+[02:30] Okay, now that that's done, you can see I have my production going here and then I have
+[02:34] the staging one.
+[02:36] Zero percent of my traffic is going into the staging one right now.
+[02:39] A hundred percent is going into the production one.
+[02:42] So if I click on the staging one, now you can see the information about it.
+[02:45] Here's the URL.
+[02:46] I can even go and we can paste that URL in.
+[02:49] All right.
+[02:52] So we can go and visit the staging site and it's pretty much identical to the original site
+[02:57] It's going to show the exact same information
+[02:59] although in the real world obviously what you would be doing here is you would be
+[03:03] updating this and altering it and this is just a way for you to test it out at that point if I go back over here to
+[03:10] the deployment slots
+[03:12] I could swap these out. So let's say that I get this website the way that I want it. Everything's
+[03:17] great. We tested it. We, you know, we've stress tested it. We're good. We're ready to make this
+[03:22] the real deal. We can go right here and click swap. Okay. And so you can say, all right, I'm gonna,
+[03:28] I'm gonna make this the source. Well, this will be the target. We're gonna go ahead and
+[03:33] swap this out, right? So I can do that if I want. Start swap. All right. Now it's gonna
+[03:41] Now that that's done, we've successfully swapped it. I've got a message here saying that it was done successfully.
+[03:48] So now our production includes the copy of the staging and it's been swapped.
+[03:53] And if I wanted to swap again, if I wanted to go into the staging now and make changes and all of that, I could.
+[03:58] And at that point, we can see that ultimately I could make changes to the staging one again and then swap out.
+[04:09] And so this is a great way for developers to go in and be able to make changes to their environment,
+[04:16] safely, securely stress test, and then they can come back in and they can have different slots.
+[04:22] And depending upon what scale level you've got here as far as scaling up plans go,
+[04:29] you can have multiple slot types. Okay, and this one they tell you deployment slots are live apps.
+[04:35] with their own host names, app content and configuration elements can be swapped between
+[04:39] two deployment slots, including the production slot. So I do have the ability to create another
+[04:45] slot if I wanted to. Okay, but hopefully that makes sense to you now and you understand the
+[04:50] concept of deployment slots.

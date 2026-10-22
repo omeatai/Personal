@@ -1,0 +1,66 @@
+# 59 - Configure storage tiers
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/59 - Configure storage tiers.mp4
+Fetched On: 2026-10-21 19:24:48
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] When you're working with storage accounts, you will come across
+[00:04] storage tiers or access tiers where you've got to choose between hot, cool, cold, or archive.
+[00:12] So your your cloud data is growing. It can grow quickly.
+[00:16] You're trying to store everything out there in the cloud these days.
+[00:20] And so you're trying to also keep the cost under control.
+[00:23] So you want to be smart about which of these tiers you go with whenever you're utilizing
+[00:29] blob data and all that. So you want to be the most you want to use the most cost-effective solutions. So
+[00:34] Here are your options, you have hot, okay,
+[00:37] this is gonna store data online, accessible very quickly,
+[00:41] so this is great for frequently accessed or modified data.
+[00:45] There's no minimum retention period for that.
+[00:48] This is gonna, as far as like storage costs,
+[00:50] this is gonna be the highest,
+[00:52] but the access cost is the lowest,
+[00:54] so accessing it very frequently.
+[00:56] So also latency and getting access is, you know,
+[00:58] down to milliseconds.
+[01:00] The next tier down is cool.
+[01:02] and you'll get access to your day. It's online, it's infrequently accessed or modified data.
+[01:07] The minimum retention is usually 30 days for that. Lower storage costs but higher access costs.
+[01:13] Latency is pretty low, not as low as hot though. The next tier down is cold. This is another online.
+[01:21] You can access it.
+[01:22] pretty quickly. Rarely accessed data is usually what this is going to be used for. Minimum
+[01:27] retention is 90 days. So even lower than what you get with cool.
+[01:32] The access cost is higher though and latency is medium so it's going to take a little longer
+[01:37] to get access to your data.
+[01:39] It's not as fast.
+[01:41] In the last tier you have is archive.
+[01:43] Your data will be stored offline.
+[01:46] This is going to be very rarely used data that you would do this with.
+[01:49] Minimum retention is 180 days.
+[01:52] The storage cost is going to be the lowest.
+[01:54] The access cost is going to be the highest but it can take hours to get access to your
+[01:58] data.
+[01:59] Alright.
+[01:59] for you to actually be able to pull it in.
+[02:02] So it's going to be utilized for backups and things like that.
+[02:05] So you really want to be strategic about which of
+[02:07] the storage tiers you go with when
+[02:09] you're working with the storage account.
+[02:11] So let me show you where we would interact with these on
+[02:14] our blobs within a storage account.
+[02:16] So here I am on portal.azure.com.
+[02:19] Click the menu button, go down to storage accounts.
+[02:21] I'm going to open up my storage account right here.
+[02:25] Now I'm going to go down here under storage containers.
+[02:27] Then I'm going to choose one of my blob containers. I'll do the images one and then if I look at the blobs
+[02:33] I have here
+[02:34] You can see what it's currently set to in this case hot and if I click the ellipse symbol here and I go to properties and
+[02:42] You'll see where it says changed here
+[02:44] You can see the tiers that are listed here and so this is how I can change that so you'll come across these various
+[02:50] access tiers
+[02:51] as you work inside of a storage account.
+[02:55] Alright, this is how you can alter that if you want
+[02:58] inside of a blob.
+[02:59] Alright, so hopefully that gives you a better understanding
+[03:01] of these access tiers.
