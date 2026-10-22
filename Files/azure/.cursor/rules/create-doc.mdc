@@ -1,37 +1,89 @@
 ---
-description: Refactor an Azure study note into the sample chapter layout (TOC, introduction, accordions, summary, references)
+description: Turn a folder of tutorial videos into a contents file and one sample-style chapter per video, including questions and answers
 alwaysApply: false
 ---
 
 # Create doc
 
-When the user applies **create-doc** to a markdown file under `Personal/Files/azure/`, rewrite that file in place so it matches `Personal/Files/azure/sample.md`. Read `sample.md` once and follow its section order, accordion markup, and spacing. Do not rewrite `sample.md`. Do not append a second copy of the note.
+When the user applies **create-doc** to a folder of tutorial videos, write one contents file and one chapter per video. Read `Personal/Files/azure/sample.md` once. Copy its section order, accordion markup, and spacing. Do not copy its sentences, and do not rewrite `sample.md`. Only run this workflow when the user asks to apply the rule.
 
-Only run this workflow when the user asks to apply the rule. Ordinary edits do not reformat the file.
+## Which folders
 
-## Page order
+The user names three places:
 
-1. Keep the existing back link as the first line. Do not change its target.
-2. `# Chapter N — Title` with an em dash. Keep the chapter number and the subject of the original `#` heading.
-3. `## Table of Contents` linking Introduction, Detailed tutorial, each accordion, Summary, and References. Nest accordion links under Detailed tutorial.
-4. `## Introduction` — a few sentences on what the chapter teaches and why it matters. Not a copy of the first heading.
+1. The video folder. Every `mp4`, `mkv`, `mov`, and `webm` in that folder is one chapter. Nested files count. Example: `Personal/course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS`.
+2. The folder, or the file path, for the contents file.
+3. The folder for the chapter files.
+
+If either output location is missing, ask before writing. A named file is the contents path. A named folder gets `{slug}.md` inside it: the exam code in the course title when it has one (`az-104.md`), otherwise the kebab-case course name.
+
+## Contents file
+
+The contents file is the index. It does not hold the lessons.
+
+The first line is a back link. Use the parent page the user names. When they do not name one and the file is under `Personal/Files/azure/`, link `azure_ai.md` with the relative path from the contents file, labeled `Back to AZURE & AI`.
+
+Then a `#` heading with the course title, then `## Table of Contents`, then one link per video. Sort by the number at the start of the filename. `2` comes before `10`. Keep gaps. The link text matches that chapter's `#` heading. The target is the chapter file, relative to the contents file. Paths below show the shape; compute the real relative path from the folders the user named.
+
+```markdown
+[Back to AZURE & AI](../../azure_ai.md)
+
+# AZ-104: Microsoft Azure Administrator
+
+## Table of Contents
+
+- [Chapter 45 — Understanding storage accounts](md/045-understanding-storage-accounts.md)
+- [Chapter 46 — Create and configure storage accounts](md/046-create-and-configure-storage-accounts.md)
+```
+
+When the contents file already exists, add links that are missing. Leave every other line as it is.
+
+## One chapter per video
+
+Write in numeric order. Skip a video whose chapter file is already there, unless the user asks to redo it. A range in the request limits which videos you write. Add that chapter's contents link as soon as the chapter file exists.
+
+Chapter filename: `{nnn}-{kebab-title}.md` in the chapter folder. `nnn` is the filename number, zero-padded to the width of the highest number, and at least three digits. The title is the filename after that number, without the extension.
+
+The chapter follows `sample.md`, then one more section:
+
+1. Back link to the contents file: `[Back to {course title}](relative-path)`.
+2. `# Chapter N — Title` with an em dash. N is the filename number, not padded. The title is the video title.
+3. `## Table of Contents` linking Introduction, Detailed tutorial, each tutorial accordion, Summary, References, and Questions and Answers. Nest tutorial accordions under Detailed tutorial. Nest each question under Questions and Answers.
+4. `## Introduction` — a few sentences on what this video teaches and why it matters.
 5. `## Detailed tutorial` — one bold source line, then one `<details>` accordion per idea.
-6. `## Summary` — short bullets of the facts a reader should remember. Not a restatement of every heading.
-7. `## References` — links already in the file, then official Microsoft Learn pages for topics the chapter names. Do not invent URLs.
+6. `## Summary` — short bullets of the facts a reader should remember.
+7. `## References` — the video, then official docs for topics the video names. For Azure, Microsoft Learn. Do not invent URLs.
+8. `## Questions and Answers` — 10 to 20 questions from this video. The answer is inside that question's accordion.
+
+The source line names the course and links the video. URL-encode spaces. Link a transcript only when you wrote one beside the video.
+
+```markdown
+**AZ-104 Microsoft Azure Administrator** · [46 - Create and configure storage accounts.mp4](../../course_videos/Course%20AZ-104%20Microsoft%20Azure%20Administrator%20course%20with%20SIMULATIONS/46%20-%20Create%20and%20configure%20storage%20accounts.mp4)
+```
+
+## Watch the video before writing
+
+Transcribe the audio and read the frames before writing the chapter. A chapter written from the filename is not done. If transcription fails, stop that video and say so. Do not fill the gap from the title.
+
+Blades, commands, settings, and numbers come from the video. When a caption disagrees with the screen, follow the screen and say so.
+
+Save a frame when the prose refers to a blade, diagram, command, or result. Skip a frame that only shows a talking head. Put frames in `figures/` next to the chapter files, named `{nnn}-{mm}-{ss}.jpg`. From the chapter, link `figures/046-12-08.jpg`. Meaningful alt text, then an italic caption:
+
+```markdown
+![12:08 — Storage account redundancy blade with RA-GRS selected](figures/046-12-08.jpg)
+
+*Figure: 12:08. Redundancy is set to read-access geo-redundant storage.*
+```
 
 ## Accordions
 
-One accordion is one idea. Merge a unit's introduction, repeated learning objectives, and closing summary into the section they belong to. Drop LMS chrome: Completed, XP, minutes, and "Next unit".
+One accordion is one idea. A simulation step that changes one setting is one idea. A sentence is not.
 
 ```markdown
-<details id="what-cloud-computing-is">
-<summary><strong>What cloud computing is</strong></summary>
+<details id="what-ra-grs-keeps">
+<summary><strong>What RA-GRS keeps</strong></summary>
 
-Cloud computing is the delivery of computing services over the internet.
-
-![Seasonal retail launch](https://example.invalid/image.png)
-
-_Figure: Extra capacity is added for a launch, then released when traffic falls._
+Read-access geo-redundant storage copies the account to the paired region and lets you read that copy.
 
 </details>
 ```
@@ -39,11 +91,30 @@ _Figure: Extra capacity is added for a launch, then released when traffic falls.
 - `id` is the kebab-case slug used in the table of contents.
 - `<summary>` is sentence case, wrapped in `<strong>`, and names the idea.
 - One blank line after `</summary>` and one blank line before `</details>`.
-- Keep definitions, examples, numbers, exam weights, and quiz answers.
-- Turn tab-aligned comparisons into Markdown tables.
-- Keep every image. Give it meaningful alt text and an italic `*Figure: ...*` caption that says what the picture shows.
-- Put each module's knowledge check in its own accordion. State the correct option in words.
+- Keep definitions, examples, numbers, and the names of blades and settings.
+- Turn comparisons into Markdown tables.
+
+## Questions and Answers
+
+This section comes after References. Use ten questions for a short video and up to twenty when it covers many settings or a long simulation. Stay inside 10–20. Every question is distinct and answerable from this video alone. Do not import questions from another video or from the practice-exam files. The summary does not give the answer.
+
+```markdown
+<details id="question-1-which-redundancy-is-readable">
+<summary><strong>Question 1 — Which redundancy is readable</strong></summary>
+
+Which redundancy option copies the storage account to the paired region and lets you read the copy before a failover?
+
+**Answer.** Read-access geo-redundant storage (RA-GRS). Geo-redundant storage copies to the paired region, but that copy stays unreadable until the account fails over.
+
+</details>
+```
+
+- `id` is `question-N-kebab-title`.
+- Summary: `Question N — short title`, wrapped in `<strong>`.
+- The body asks the question, then **Answer** states the correct choice in words and one short reason.
+- Same blank-line spacing as the other accordions.
+- The chapter table of contents links each question under Questions and Answers.
 
 ## Voice
 
-Write the way the sample is written: short paragraphs, plain sentences, tables when a comparison is the point. Keep Microsoft's exam terms (IaaS, PaaS, SaaS, CapEx, OpEx, SLA). Do not add greetings, and do not leave the raw dump's navigation lines in the body.
+Write the way the sample is written: short paragraphs, plain sentences, tables when a comparison is the point. Keep the product's own terms. Do not add greetings, and do not leave player chrome in the body.
