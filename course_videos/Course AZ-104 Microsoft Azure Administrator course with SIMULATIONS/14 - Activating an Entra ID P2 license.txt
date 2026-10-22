@@ -1,0 +1,81 @@
+# 14 - Activating an Entra ID P2 license
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/14 - Activating an Entra ID P2 license.mp4
+Fetched On: 2026-10-21 19:36:10
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now to do some of the hands-on that we're gonna be playing around with in this course,
+[00:04] we're gonna need a certain license for intra ID. Now if you're not familiar with intra ID,
+[00:09] intra ID is Microsoft's directory services. It's formally known as Azure AD and be aware that
+[00:15] there is still documentation out there that refers to it as Azure AD, Azure Active Directory,
+[00:20] but the new name is intra ID. And
+[00:23] When you sign up for Azure, you do get access to the free version of intra-ID, which works
+[00:29] for a lot of the different various things that you might want to do.
+[00:33] But the more advanced features will require an actual premium version of intra-ID.
+[00:38] If you actually go out and just do a quick Google or Bing search on the different versions
+[00:42] of intra-ID, you'll come across this Microsoft intra-ID licensing article, and you can see
+[00:53] you can get Microsoft Enter ID free and it comes with these.
+[00:56] particular features. You get Microsoft intra ID for global administrators, which you get a couple
+[01:03] extra features as a global administrator, okay, having all the authority over your environment,
+[01:08] the Office 365 version. And then what I really want to focus on is you have premium one and
+[01:13] premium two, and you can see that you get a lot of features available when you have the premium
+[01:19] one and premium two. Premium two gives you some more advanced features such as risk-based conditional
+[01:26] So some of the things that we'll be doing in the course will require you to have a premium version of intra ID.
+[01:33] It is not the end of the world if for some reason you can't get it.
+[01:36] You can still do the vast majority of the stuff we're going to play around with.
+[01:39] But ultimately if you want to be able to play around with everything,
+[01:42] you're going to want to have Microsoft intra ID premium too.
+[01:45] Okay, so how do I get that?
+[01:47] How can I set that up for free?
+[01:49] Okay, so you can set up a trial.
+[01:54] Okay, admin.microsoft.com, this portal just changed not too long ago.
+[01:59] It used to be portal.microsoft.com, and it's now admin.microsoft.com.
+[02:04] Or in this case, you'll see it even says admin.cloud.microsoft.
+[02:07] But admin.microsoft.com will bring you here, okay?
+[02:10] And then what I'm gonna do is go to Marketplace.
+[02:12] Now, let me warn you, depending upon what region of the world you're in.
+[02:16] it may not say marketplace. Most people in the world they'll see a marketplace blade here,
+[02:22] but if you are in certain regions of the world you may have to click billing and then there's a
+[02:27] little link called purchase services. So regardless if it says marketplace or go under billing and
+[02:33] look at purchase services you're going to go there. Alright in my case it says marketplace.
+[02:37] I'm going to go to marketplace. Alright so once I go to marketplace I'm going to go and I'm going
+[02:45] the intra licenses that are available. Okay, so I'm going to scroll down, lets me
+[02:50] search by product. I'm going to put intra. I'm going to hit enter and it's going to now just do
+[02:56] a quick search. And of course Microsoft changes the way all this looks all the time. So your
+[03:00] screen could look a little different than mine. There it is right there. Microsoft intra id premium
+[03:04] 2. It says it's 945 a month. I'm going to click details. And then once I do that, I would go
+[03:14] a license. All right, now the good news is that there should be an option to do this for free,
+[03:21] okay. There will either be a drop down for do a trial or there'll be a button that'll say
+[03:26] something along the lines of start a free trial, okay. So look for a drop down or look for a button.
+[03:32] Okay, now again let me warn you in certain areas of the world, regions of the world,
+[03:37] you may not have this available to you.
+[03:40] It may not show up when you do the search. It may not give you the free trial and
+[03:45] unfortunately there's nothing I can do about that. All right.
+[03:48] But keep in mind you can still do the vast majority of
+[03:52] the various things you're going to do in the course. You'll still be able to do
+[03:55] it even if you don't have that p2 license. Now there is something else you
+[03:58] can try if you don't have that Microsoft Enter IDP2
+[04:03] license available. Okay, what you can do is you can go over to portal.azure.com
+[04:10] click the menu button right here and then go to Microsoft Intra ID. Okay, look under manage
+[04:17] and then licenses and look for the all products. This is right up under manage and then from
+[04:24] right there it says try by we're going to click that and then there should be a Microsoft Intra
+[04:33] And then we can activate it.
+[04:35] Now let me warn you that it can take between 15 and 30 minutes before it completely becomes
+[04:40] active.
+[04:41] So just be aware of that.
+[04:42] But again, I want to say this one more time.
+[04:45] It is not the end of the world.
+[04:47] If for some reason you don't, if you are not able to enable this, you can still do the
+[04:52] vast majority of the stuff in the course.
+[04:54] And also, if you're looking at my licenses over here, my licenses are not going to match
+[04:58] your licenses.
+[04:59] So don't worry about any of that right now.
+[05:01] The only thing that really mattered in this video is getting Microsoft Enter IDP2 activated.
+[05:07] And if you can't get it activated, it doesn't mean you can't still do the vast majority.
+[05:11] Of course, there'll just be a few things that you won't be able to do, but ultimately,
+[05:15] you should still be able to do the vast majority of it.
+[05:17] Okay?
+[05:18] With that, we're now going to move on.

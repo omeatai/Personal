@@ -1,0 +1,103 @@
+# 38 - Manage subscriptions
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/38 - Manage subscriptions.mp4
+Fetched On: 2026-10-21 19:34:13
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk now about the concept of subscriptions in Azure.
+[00:04] Now in order for you to purchase services in Azure,
+[00:08] you're going to need a subscription.
+[00:10] There are various kinds of subscriptions
+[00:12] that people utilize,
+[00:13] but the most common one would be a subscription
+[00:16] that's going to be tied to a credit card.
+[00:18] And that credit card of course will be billed
+[00:20] as you start purchasing services.
+[00:22] Now where can I go and manage my subscriptions at?
+[00:25] Well here I am on portal.azure.com.
+[00:28] If I click the menu button,
+[00:29] I can go right here to all services,
+[00:33] subscription right here. And then I've added it as a favorite. Since I have added
+[00:38] as a favorite by clicking that star you can see that it also shows up on my menu
+[00:42] bar when I click the menu bar right here. Also some people like to call it the
+[00:47] hamburger, but I'll click that and go to subscriptions and you get you can see my
+[00:52] subscription right here. Okay and if I wanted to add an additional subscription
+[00:58] By the way, you can also see what the current cost is.
+[01:01] Keep in mind, if you're doing the free account and all that,
+[01:03] it's going to look a little different for you.
+[01:05] But if I go right here to add, this is where I would add another subscription.
+[01:09] I could select a billing account.
+[01:11] I can add that.
+[01:12] Add a billing account.
+[01:13] Choose the billing account.
+[01:14] and then I can go and try to add another subscription. You can also go right here
+[01:20] when you're setting up this next subscription. You've got some advanced settings here. This is
+[01:24] if you wanted to set it up under a management group which is a way to group together your
+[01:29] subscriptions. Okay, you can also set a budget. Whatever you want your budget to be. You can have
+[01:35] it send an alert when it reaches a certain percentage if you want.
+[01:38] Now I want to go back over here to basics because there is this thing here called add a different type of subscription
+[01:43] So there are different kinds of subscriptions that are available to you. You go to this page
+[01:49] You can see I've used up my free trial
+[01:52] So I'm doing a pay as you go, but I could set up another pay as you go
+[01:56] I've got as your student and then also
+[01:59] I can drop this down and I can
+[02:02] explore these other types of subscriptions.
+[02:05] You can click Check Eligibility to learn more
+[02:08] about it and see if you're eligible for it.
+[02:10] So that's something to consider as well in
+[02:12] your organization is these various other types of subscriptions.
+[02:16] You can get a description of these like for example,
+[02:19] if I'm a developer,
+[02:20] purchase developer support or appropriate for
+[02:24] individuals or companies using Azure in a non-production environment.
+[02:28] That's a good one. You could do Azure for students starter students using
+[02:33] Microsoft. Imagine can get access to a great Azure cloud services at no cost,
+[02:38] so those are things that you can check out. OK, of course, Azure students
+[02:43] would right here select this offer, innovate, explore and drive your career
+[02:47] with Azure credits plus popular free credit free products for 12 months.
+[02:52] Those are definitely some subscriptions that you could check out.
+[02:55] All right, so that is how I can go in here and I can look at the various subscriptions.
+[03:02] Another thing to consider is, let's go back over here to subscriptions.
+[03:07] You can control who has access to the subscription by clicking on the subscription.
+[03:13] In my case, it's called Azure subscription one.
+[03:15] And all subscriptions have an IAM blade.
+[03:18] And once you go into that blade, you can assign a role that would allow somebody to
+[03:25] resources with that subscription.
+[03:27] In fact, all I got to do is go right here to where it says
+[03:29] Add Role Assignment.
+[03:31] Now you're going to go over here where it says
+[03:32] Privileged Administrative Roles.
+[03:34] The role that you need to give somebody if they are going to
+[03:38] be able to purchase Azure-related resources
+[03:42] with a subscription is contributor.
+[03:45] We would do that.
+[03:46] We can click View and you can even see the permissions and all that,
+[03:50] but I'm actually going to go right here and I'm just going to go to Members.
+[03:54] And you'll notice selected role is contributor.
+[03:56] We would select users, groups or service principals select
+[03:59] and then we would choose whoever's gonna do that.
+[04:02] Again, you may not see the same users as me.
+[04:04] I'm just gonna pick a user just for demonstration purposes.
+[04:07] Bob Jones, click select and then I would click next.
+[04:11] Says okay, what kind of assignment is this?
+[04:13] We would go ahead and make it active.
+[04:15] There is what's called eligible,
+[04:17] which is where you can schedule this to happen.
+[04:21] for a limited period of time.
+[04:23] That's where you start getting
+[04:24] the privileged identity management.
+[04:26] Okay, you do have to have a certain,
+[04:28] you have to have a certain intra ID subscription
+[04:31] to do that, but I'm just gonna go ahead and make it active,
+[04:34] which would mean it would be permanent.
+[04:36] At that point, I would click next,
+[04:38] and then I would click review and assign,
+[04:40] and at that point, Bob Jones would be a user
+[04:42] who would be able to purchase services
+[04:44] with the subscription.
+[04:45] Okay, but all in all, hopefully you'll notice it is relatively easy to manage your subscriptions.
+[04:51] You have that whole area called subscriptions. You can add more subscriptions. You can test out
+[04:57] other subscriptions. And so it's very easy to jump right in and manage them.

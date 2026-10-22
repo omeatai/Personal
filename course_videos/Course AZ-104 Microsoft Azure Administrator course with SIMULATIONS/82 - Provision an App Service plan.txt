@@ -1,0 +1,83 @@
+# 82 - Provision an App Service plan
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/82 - Provision an App Service plan.mp4
+Fetched On: 2026-10-21 19:35:13
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about provisioning an app service plan.
+[00:04] Now, when it comes to dealing with an app service plan,
+[00:07] we can go right here to portal.azure.com.
+[00:09] We can go to all services from the menu and
+[00:11] then to search for app service plan.
+[00:14] But the question that I know is floating around in a lot of people's minds,
+[00:18] because I know for me when I was learning this,
+[00:20] this is one of the things that was floating around in my mind was,
+[00:23] Why would I want to use an app service plan to host some kind of web application versus just use a container?
+[00:30] So the analogy you want to think of here is that an app service plan is kind of like renting an apartment
+[00:37] This apartment is already furnished. It's ready to live in you
+[00:42] Just bring your stuff in other words like your app code, right and you start living or running your app
+[00:48] You don't worry about the plumbing the electricity the furniture
+[00:52] In other words, the infrastructure, the scaling, the SSL, any of that stuff, TLS, encryption, whatever.
+[00:59] So it's great for traditional websites and application programming interfaces where you don't want to deal with containers or servers.
+[01:07] You don't want having to deal with all those details.
+[01:10] Now containers, maybe you're using Azure Container Instances or maybe you're using an Azure Container app.
+[01:19] shipping your own custom built tiny home.
+[01:23] You control everything inside the container
+[01:27] from the floor plan to the wallpaper.
+[01:30] You're controlling everything inside of that container.
+[01:32] So there is some details there you have to deal with.
+[01:36] So it's great when you want full control, portability,
+[01:40] or maybe you're just using microservices
+[01:42] or some kind of DevOps workflow, whatever it may be.
+[01:46] That's when that's gonna be beneficial.
+[01:48] Okay, so an app service plan, this is great if you just want to deploy your code quickly.
+[01:53] You don't want to manage any infrastructure. Whereas containers are going to be more along
+[02:01] the lines of you already have a container image, maybe there's already been an image built.
+[02:06] You want to deal with event driven auto scaling. You're dealing with micro services or you're just
+[02:15] That's when containers are going to be great.
+[02:17] All right, so now I'm going to click right here where it says App Service Plans.
+[02:21] I'm going to click to create an App Service Plan.
+[02:23] I'm going to create a new resource group.
+[02:25] I'm going to call this Linux App Service Demo RG.
+[02:33] It's going to be my little resource group.
+[02:34] And then the App Service Plan is going to be Linux App Service.
+[02:39] plan very original name as always with me right and you probably guessed by the name I am going
+[02:44] to go with the the operating system the underlying operating system will be linux and remember that
+[02:49] with an app service plan there is going to be an underlying virtual machine that's going to be
+[02:53] running an operating system it'll either be running linux or windows now i'm going to set my
+[02:59] what i want my region to be now i'm going to go ahead and warn you that
+[03:03] As you start creating more virtual machines in your environment, unless you're deleting those,
+[03:07] it's going to limit you on how many virtual machines and virtual CPUs you can have.
+[03:11] And my tenant is going to be at its max at this point. I'm going to choose East US2.
+[03:16] So I'm going to choose a different region, a slightly different region.
+[03:23] app service plan because of virtual CPUs because of other things I've still got in my environment.
+[03:28] So I'm going to go with East US2 in this case. So then I get into pricing and I can explore the
+[03:34] pricing plans and so you can see you can look at what kind of performance you would get. So the
+[03:40] very the various hardware that you can support here and what the cost is going to be if this
+[03:49] Hardware view you've also got a feature view so it kind of breaks everything down into features for you
+[03:54] Okay, and I am going to go with this basic B2
+[04:01] Alright, so I'm gonna go with this one. I'm gonna hit select
+[04:04] alright and
+[04:06] At that point I'm ready to continue
+[04:09] Oh and then down here at the bottom my pricing that I went with does not support zone redundancy if you want to support zone
+[04:14] redundancy for that higher availability you can
+[04:18] You can choose a different plan.
+[04:19] Okay, but I'm gonna go ahead and click next.
+[04:23] Then I'm not gonna select any tags.
+[04:24] I'm gonna click review and create.
+[04:26] It's gonna validate,
+[04:27] make sure there's no issues there.
+[04:29] Okay, and then I'm gonna click to create
+[04:32] and I'll just pause recording while this is getting created.
+[04:35] Now that that's done, I'm gonna click go to resource
+[04:37] and I now officially have my app service plan
+[04:41] available to me, all right?
+[04:43] So you can see right here.
+[04:45] the CPU percentage, memory percentage, data in, data out, if you start hosting an app. Now keep
+[04:52] in mind this is just the app service plan. It's got support for the virtual machine,
+[04:58] the underlying virtual machine, and the power and the operating system with it, but we aren't
+[05:02] running any kind of app right now. So we haven't actually put an app service into the
+[05:08] app service plan. We just set up an app service plan.

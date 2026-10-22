@@ -1,0 +1,72 @@
+# 51 - Configure identity-based access for Azure Files
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/51 - Configure identity-based access for Azure Files.mp4
+Fetched On: 2026-10-21 19:34:46
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now talk about what's called identity-based access in regards to file shares on a storage account.
+[00:07] Let me jump in and just show this to you and then I'll explain it.
+[00:10] So here I am on portal.azure.com.
+[00:13] If I click the menu button and go to storage accounts, I'm going to open up my storage account here.
+[00:18] Okay, and then from there, we're just going to scroll down.
+[00:22] All right and we'll go to under data storage we'll look for file shares and then from there
+[00:28] you'll see that there is this identity based access. It says not configured currently. So
+[00:35] the idea here is with identity based access I can enable
+[00:39] a particular share in a storage account to allow identities like user accounts and all that to access data through a file share
+[00:48] just like they would if it was a file server that was an on-premises file server.
+[00:54] Now there are three different ways that this could be configured.
+[00:58] The first method is to use Active Directory domain services.
+[01:02] This would be sort of like the traditional way of doing it.
+[01:07] domain, Microsoft domain, suitable for a hybrid synced environment where you're synchronizing
+[01:14] users from the on-premises environment out to Azure.
+[01:19] So example, real world example would be like a company with an on-premise...
+[01:24] premises file server and they want to start moving things into Azure and get rid of their on-premises file server.
+[01:31] You can allow your your Windows PCs that are domain joined. They could then connect to this file share if this was
+[01:40] configured. Of course, you got to have the on-premises set up and all that going before you could do that. The second method
+[01:46] you'll see here is the Microsoft Intra domain services method. This uses Microsoft Intra domain services, which is
+[01:53] formerly known as Azure ADDS.
+[01:55] And what this was, was this was a,
+[01:57] this is I should say a virtual copy
+[02:01] of Active Directory stored in the cloud.
+[02:04] Again, and the reason I said was
+[02:07] is because it used to be called Azure ADDS,
+[02:09] Azure Active Directory Domain Services.
+[02:12] Now it's called Intradomain Services,
+[02:14] but basically it's a domain managed in
+[02:18] Azure. It's ideal for a cloud only setup where you still want to have a domain, an old school
+[02:25] active directory domain type system. It's not very commonly used to be honest with you, but it is
+[02:31] for companies that still want to have that traditional domain and have it completely hosted
+[02:36] in the cloud as opposed to on-premises. Alright, the third method we have is called Microsoft
+[02:46] This allows domain-less, intra-joined Windows PCs to access Azure files using Kerberos via IntraID,
+[02:54] but it will require hybrid identity synced identities from Active Directory.
+[03:02] It's kind of a weird idea, but here's a real-world example. Let's say you have an organization that
+[03:14] you are synchronizing on-premises Active Directory identities to IntraID.
+[03:20] They use Intra Kerberos to allow file share access directly from the cloud using their
+[03:27] synced Intra credentials. Okay, so again having an organization that uses let's say you got
+[03:33] Windows 11 laptops, note they're not joined to the domain.
+[03:36] but you are synchronizing user identities
+[03:39] that are on premises to the cloud.
+[03:41] And so in this case,
+[03:42] your organization could use Intra Kerberos
+[03:45] to allow file share access directly from the cloud
+[03:49] using their synced Intra credentials.
+[03:51] So that is the idea there.
+[03:54] Of all three of these,
+[03:55] this method right here is the most common
+[03:58] active directory domain services.
+[04:01] where you got a hybrid environment where you're syncing users to the cloud and you're sort of in this mixed environment.
+[04:07] Okay, so that is the that is going to be the idea in regards to working with identity based.
+[04:13] Okay, then down here at the bottom it says set share level permissions.
+[04:19] It says once you have enabled active directory or Microsoft intrasource.
+[04:24] on your storage account, you must configure share level access in order to get access to your file
+[04:29] shares. There are two ways you can assign share level permissions. You can assign them to all
+[04:36] authenticated identities as a default. Okay, and then you can also assign them to specific
+[04:44] Microsoft users. So you could just set it for all or you could be very specific. And that's
+[04:48] where they're going with that, right?
+[04:51] and then permissions for all authenticated users, default share permissions, disable permissions,
+[04:56] and no access is allowed for the file share by default or enable permissions for all
+[05:00] authenticated users and groups. So that is the idea there as far as just understanding
+[05:06] the concepts of identity-based access.

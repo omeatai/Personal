@@ -1,0 +1,91 @@
+# 43 - Configure resource locks
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/43 - Configure resource locks.mp4
+Fetched On: 2026-10-21 19:33:42
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I don't want to talk about locks in regards to resource groups.
+[00:04] Okay, so here I am on portal.azure.com and click the menu button, go to all services,
+[00:11] and if I search the word storage, you should see storage account. Although in my case that's
+[00:15] actually shown right here. So I can click on storage accounts. A storage account is
+[00:21] a resource that can store data.
+[00:24] This video is not a video where I'm diving deep into storage accounts. I just want to create a
+[00:30] storage account so that we can demonstrate locks. Okay, so I'm going to click to create.
+[00:35] All right, I'm going to store this in my demo RG resource group. If for any reason you do not
+[00:40] already have one, you can click to create resource group called demo RG. And then I'm going to give
+[00:51] for exam lab practice.
+[00:53] And if the name is already taken,
+[00:54] I'm gonna put ABC after that, okay?
+[00:58] All right, then it says region,
+[01:00] because one thing about storage accounts
+[01:02] is they have to have unique names
+[01:03] across the entire Azure environment.
+[01:06] Okay, region is gonna be East US.
+[01:08] All right, primary service,
+[01:10] I'm just gonna go with this one here,
+[01:11] Azure Blob Storage, all that good stuff.
+[01:14] And then standard for performance,
+[01:17] for redundancy, I'm going with this LRS.
+[01:21] And there's nothing else here. I don't I think I really need to do I'm going to click review and create
+[01:26] and we'll see it's going to validate and see if there's anything else. There's nothing. So I'm
+[01:30] going to click to create and then I'm going to let this get created. I'm going to pause recording
+[01:34] for a second and let it get created. Okay so that has now been created. If I click the menu button
+[01:39] here and I go to resource groups, I can see the demo RG resource group. I'm going to click on
+[01:44] that and you can see the storage account inside this resource group. Okay all right now what I
+[01:49] want to do is go right over here to this locks blade and that's going to be underneath settings.
+[01:55] to expand out settings and then I'm going to see locks. Currently there are no locks
+[02:00] so I would be able to pretty much do whatever I want. I can delete stuff, change things,
+[02:07] but what I want to do is click add and this is going to let me
+[02:10] add a lock. Now there are two main kinds of locks. There is a read-only lock and then there is delete.
+[02:18] So read-only, this is going to prevent changes to the resource group and its resources. You can
+[02:25] view everything but you can't change, update, or delete anything. Okay so it's basically like
+[02:31] putting the resource group into a view-only mode. Okay now if you choose delete then what this is
+[02:39] cannot delete anything.
+[02:41] So this is gonna allow reading and modifying
+[02:44] of your resources, but it's gonna prevent deletion.
+[02:48] So this is useful for protection,
+[02:50] protecting like a production environment
+[02:52] where you wanna make sure something
+[02:53] doesn't accidentally get deleted, okay?
+[02:56] So that's what I'm gonna do.
+[02:56] I'm gonna go right here.
+[02:57] I'm gonna create one called cannot delete.
+[03:02] And then you could put some notes in there if you want,
+[03:04] but I'm gonna click okay.
+[03:06] All right, we've now applied this lock.
+[03:08] So, watch what happens if we go back over here to overview and there is the storage
+[03:12] account inside there.
+[03:14] I'm going to click that storage account.
+[03:18] Now I'm going to try to delete the storage account.
+[03:22] So here we go.
+[03:23] I'm going to copy the name up here.
+[03:25] Oh look, I can't even paste the name because why?
+[03:30] It says can't be deleted because the resource or its parent has a delete lock on it.
+[03:37] resource. But I'm too smart for this thing. I'm going to come over here and I'm going to delete
+[03:43] the entire resource group. So let's do that. Let's copy the resource group name. Let's paste it in
+[03:49] and let's click delete. Uh oh, it stopped me. Look, the resource group demo RG is locked and
+[03:57] can't be deleted. That's that's proof right there that the lock does work. Okay, so now let's remove
+[04:05] Let's go here to locks and then let's just delete it.
+[04:10] Okay, so we just deleted the lock.
+[04:12] Now let's go back over here to overview.
+[04:13] We'll click on the actual storage account
+[04:17] and we're gonna click delete.
+[04:20] We'll copy the name.
+[04:21] Okay, notice that the lock,
+[04:23] it's still saying that the lock is on there,
+[04:25] so it hasn't updated yet.
+[04:27] So we have to give that just a minute.
+[04:30] We have to give it a minute.
+[04:31] Okay, there you go.
+[04:32] I just clicked refresh.
+[04:33] Now I'm gonna do that again.
+[04:34] Paste, hit delete, confirm delete, and it is going to delete that storage account.
+[04:41] Okay, so it may take a moment before this goes away, but eventually you should be able
+[04:46] to refresh this and it will be deleted.
+[04:51] And there we go.
+[04:52] It's gone.
+[04:53] So there you go.
+[04:54] Hopefully you have a better understanding now how locks work in Microsoft Azure.

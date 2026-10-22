@@ -7,3 +7,63 @@ Transcript Type: Local whisper (small.en, cpu)
 
 ---
 
+[00:00] I now want to take a look at creating users in bulk using the graphical portal.
+[00:04] So here I am on portal.azure.com. If I click the menu button and go down here to Microsoft
+[00:09] enter id, I can click users and then you'll see this option right here says bulk operations.
+[00:16] Keep in mind
+[00:17] probably heard me say this before, you're not going to see the exact same users I see here and keep
+[00:21] in also mind that they change the screens all the time. So don't be surprised if your screen looks a
+[00:26] little different than mine. I'm going to go right here though and click bulk operations and I have
+[00:30] an option for bulk create for creating users. I have an option for bulk invite for inviting
+[00:36] users as guests and bulk delete for deleting. I'm going to say bulk create and then what it
+[00:47] and I can open that little template up and take a look at it.
+[00:52] Now if I have Microsoft Excel on my computer, I can open it up in Excel and
+[00:57] that's a little easier to to view. So here is what it looks like
+[01:02] in Microsoft Excel. Okay and so essentially what you can do is
+[01:09] you can fill out
+[01:11] this information. Now imagine if you had gotten this information from a like your
+[01:17] HR department or something like that and you you could just sort of format
+[01:23] these fields as you see here the the spreadsheet your HR department gives you
+[01:28] could format those fields and then you could import that right in here and
+[01:33] that's how you could create your users. So in my case you know if I wanted to
+[01:39] you know create a user I'll you got a user I'll just call it user one and we'll say user two
+[01:50] and user three and then what do you want the user's name to be in this case I'll say user one at
+[01:59] in my case it'll be examlabpractice.com if you are doing this with me it's not going to be that
+[02:08] Domain name is for your tenant. If I go back over here in Azure, let me just open this in a different tab.
+[02:14] Your tenant name, if you go back over to portal.azure.com, and again, you got to be look at Microsoft entry ID,
+[02:21] you'll see your name right here. So that, in my case, that is
+[02:26] examlandpractice.com. Then I can specify what I want my password to be.
+[02:30] I'm just going to put a little exclamation point there.
+[02:33] And then I'm also just going to copy and paste this
+[02:37] just to make life a little easier.
+[02:40] So user two, and this will be user three.
+[02:44] Okay, and then I'll copy this password here.
+[02:48] I'm not gonna block sign in for these three users.
+[02:53] So now I'm gonna save this, this template.
+[02:58] Okay, in my case, I just saved it on my desktop.
+[03:01] So now if we come back over here to our users,
+[03:06] And again, all I did is go to Microsoft enter ID and then the users and then right over here where we have bulk create
+[03:13] I'm gonna click this folder icon and there is the file right there and
+[03:19] I'm just going to submit that file
+[03:23] Alright, and it says file upload successful. It says in progress. So I need to wait on it
+[03:29] So again the idea being
+[03:31] you know, maybe your company's going through a massive hiring spree and your HR department gives
+[03:36] you like a spreadsheet with 50 different people. There are different users and all of that. You
+[03:43] need to have these users created by this bulk enrollment, this bulk operation enrollment.
+[03:48] You can do that. So now it says my user has been created. Let me just do a search.
+[03:55] And there you go. You can see all three users, users one, two, and three. So that is how we can
+[04:02] Three users all right. I'm going to delete those because I don't actually need them
+[04:06] Now if I go over to admin
+[04:10] Microsoft calm
+[04:12] Let's jump over there real fast and we go to users and we'll go to active users
+[04:19] You'll also notice that I have this option says add multiple users
+[04:23] So this is through the Microsoft 365 portal and so they have a slightly different way you can do it
+[04:29] You can type the information to the users here,
+[04:32] but you also have this option I'd like to upload CSV.
+[04:36] So you can download, it's kind of the same process
+[04:38] just done through Microsoft 365 portal.
+[04:40] Okay, again, it all links back to Microsoft Intra
+[04:43] or Intra ID, so, you know,
+[04:45] it's all going back to the same place.
+[04:48] Well, hopefully this video has helped you now understand
+[04:50] the bulk automation of creating users a little bit better.

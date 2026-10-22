@@ -1,7 +1,7 @@
 # Transcript summary
 
-- Considered: 37
-- Transcribed: 37
+- Considered: 45
+- Transcribed: 45
 - Skipped: 0
 - Failed: 0
 
@@ -44,3 +44,11 @@
 - transcribed: `30 - Using Cloudshell.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/30 - Using Cloudshell.mp4 — Local whisper (small.en, cpu)
 - transcribed: `42 - Apply and manage tags on resources.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/42 - Apply and manage tags on resources.mp4 — Local whisper (small.en, cpu)
 - transcribed: `88 - Configure deployment slots for an App Service.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/88 - Configure deployment slots for an App Service.mp4 — Local whisper (small.en, cpu)
+- transcribed: `17 - Create users in bulk.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/17 - Create users in bulk.mp4 — Local whisper (small.en, cpu)
+- transcribed: `43 - Configure resource locks.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/43 - Configure resource locks.mp4 — Local whisper (small.en, cpu)
+- transcribed: `38 - Manage subscriptions.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/38 - Manage subscriptions.mp4 — Local whisper (small.en, cpu)
+- transcribed: `51 - Configure identity-based access for Azure Files.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/51 - Configure identity-based access for Azure Files.mp4 — Local whisper (small.en, cpu)
+- transcribed: `82 - Provision an App Service plan.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/82 - Provision an App Service plan.mp4 — Local whisper (small.en, cpu)
+- transcribed: `109 - Configure SNAT outbound rules.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/109 - Configure SNAT outbound rules.mp4 — Local whisper (small.en, cpu)
+- transcribed: `14 - Activating an Entra ID P2 license.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/14 - Activating an Entra ID P2 license.mp4 — Local whisper (small.en, cpu)
+- transcribed: `23 - Configure self-service password reset (SSPR).txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/23 - Configure self-service password reset (SSPR).mp4 — Local whisper (small.en, cpu)

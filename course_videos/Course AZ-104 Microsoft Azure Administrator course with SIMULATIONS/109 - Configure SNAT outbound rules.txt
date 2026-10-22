@@ -1,0 +1,87 @@
+# 109 - Configure SNAT outbound rules
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/109 - Configure SNAT outbound rules.mp4
+Fetched On: 2026-10-21 19:35:39
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about how Outbound Rules work with an Azure Load Balancer.
+[00:04] This one also involves SNAAT, source network address translation.
+[00:09] So here we are on portal.azure.com.
+[00:11] If I click the menu button, go to All Services and just search for Load Balancer.
+[00:15] I can open up my Load Balancer's resources here and then you'll see I have one Load
+[00:20] Balancer.
+[00:21] I'm going to open that up.
+[00:24] there is a blade called outbound rules and I can click add on that it opens up this little screen
+[00:29] here and it's going to ask for a rule name it's going to call this outbound rule. Now the idea here
+[00:36] the concept of an outbound rule outbound rules are going to define how outbound traffic from
+[00:43] your virtual machines in the back end pool reach the internet.
+[00:47] or other external networks. So in other words if I have two virtual machines,
+[00:52] how will these virtual machines get out to the internet?
+[00:55] Okay so that's what's going to happen here. Now I'm also going to tell you I'm
+[00:59] not going to be able to actually create this rule because my back end pool is not
+[01:03] eligible. You can see right here it says incompatible
+[01:07] and the reason is because it has public ip each of the virtual machines have
+[01:11] their own public ip address. So you would need to remove those public ip
+[01:16] that each of these virtual machines have before it would become compatible.
+[01:19] I'm not really going to do that. I don't think it's worth it because eventually I'm going to
+[01:22] delete my load balancer and I still want to be able to access these virtual machines if I want to.
+[01:26] Okay, so that's why I'm not going to do it, but I am going to explain what all this is. Okay, so...
+[01:32] You've got your your name. You've got your IP version. You've got the front end
+[01:36] Okay
+[01:37] This will be the front end IP address if I was going to allow my virtual machines to get out to the internet through this front
+[01:42] End address the load balancer as I could do that. I could say all or just TCP or just UDP. Okay, and then
+[01:49] Below that I've got the idle timeout. This is the time the connections will stay idle
+[01:55] Before they get closed
+[01:56] All right, and then you've got enable TCP reset.
+[01:59] This is where Azure sends a TCP reset packet when an idle connection times out.
+[02:04] Then you've got your back-end pool.
+[02:06] I already talked about why those are incompatible.
+[02:09] Then the outbound ports.
+[02:11] The idea here, this is what really talks about SNAT.
+[02:16] This is source network address translation.
+[02:20] This is where if you get in,
+[02:23] you enable the default port allocation.
+[02:25] This lets Azure automatically allocate
+[02:27] what they call ephemeral ports for SNAT.
+[02:31] And the problem is this isn't really recommended
+[02:33] because you just get a limited number of port ranges
+[02:37] that can also cause port exhaustion.
+[02:39] So when we initially set up the load balancer,
+[02:41] we set up the rules
+[02:43] and talked a little bit about this with SNAT.
+[02:45] what the concept is there, but you end up with port exhaustion if you do this default one.
+[02:52] And so they tell you, enabling port allocation will result in backend instances being assigned
+[02:57] a limited number of outbound ports based on the size of your backend pool.
+[03:02] Enabling this increases your risk of snap.
+[03:05] Exhaust and they're talking about port exhaust and there's only so many ports. So they tell you there's
+[03:10] 63,000 and eighty
+[03:11] 184 you got to imagine if you had a lot of machines and they were all connecting to all kinds of different things out on
+[03:17] The internet this could you could run out of combinations for that so they don't recommend that you enable that feature
+[03:23] Okay. Now they do they do tell you here that
+[03:29] You can you have allocated outbound ports per instance or maximum number that you can select
+[03:35] And the idea here is if I was to select allocated outbound ports per instance, you would be
+[03:42] essentially specifying how many snap ports each back-end VM will be allocated from an available
+[03:49] front-end IP. So for example you could allocate like 2048 ports per VM and you have if you have
+[04:01] That's a total of 4,096 because you have two VMs.
+[04:05] So if you want a predictable port distribution, you could go with that.
+[04:09] So as clients connect in, it's got to reply back.
+[04:14] It's got to reply back on a dynamic port.
+[04:17] That's just typical TCP stuff that's always been around.
+[04:20] It's got to have a certain port to reply back on if there's only so many ports available.
+[04:24] Then you can also just simply go with the maximum number of back end ports.
+[04:29] The idea there is you tell Azure just use the maximum amount that it can for your VMs.
+[04:35] All right, so Azure will automatically allocate the required ports to serve as many instances of VMs as it can.
+[04:42] So, example, let's say you expect up to 10 back-end VMs to be set up in your environment.
+[04:47] Well, Azure will divide the available ports, typically 64,000 per front-end IP across the 10.
+[04:55] So each VM would get roughly 6400 ports. That's the idea.
+[04:59] So you're just basically letting Azure do it.
+[05:01] Okay.
+[05:02] All right.
+[05:03] So that is how this would be set up.
+[05:05] If you were going to do an outbound rule, again, we can't do an outbound rule because
+[05:08] our virtual machines have public addresses and we're not going to change that.
+[05:12] But at least now you have, you know, you should understand the concept of the outbound
+[05:16] rules in a load balancer.
