@@ -12,38 +12,27 @@
 
 ## Phase 1: Foundation Core
 
-### +AZ-900: Azure Fundamentals 
 <details>
 <summary><strong>+Contents</strong></summary>
 </details>
-  
-- [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-- [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
-- [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  - [ ] [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
-  - [ ] [Describe the benefits of using cloud services](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/)
-  - [ ] [Describe cloud service types](https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/)
-- [ ] [Chapter 2 - Introduction to Cloud Infrastructure: Describe Azure architecture and services](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  - [ ] [Describe the core architectural components of Azure](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/)
-  - [ ] [Describe Azure compute services](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/)
-  - [ ] [Describe Azure networking services](https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/)
-  - [ ] [Describe Azure storage services](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/)
-  - [ ] [Describe Azure identity, access, and security](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/)
-- [ ] [Chapter 3 - Introduction to Cloud Infrastructure: Describe Azure management and governance](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
-  - [ ] [Describe cost management in Azure](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/)
-  - [ ] [Describe features and tools in Azure for governance and compliance](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/)
-  - [ ] [Describe features and tools for managing and deploying Azure resources](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/)
-  - [ ] [Describe monitoring tools in Azure](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/)
+
+### +AZ-900: Azure Fundamentals 
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
+- [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
+- [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
+- [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
+- [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+- [ ] [Chapter 2 - Introduction to Cloud Infrastructure: Describe Azure architecture and services](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+- [ ] [Chapter 3 - Introduction to Cloud Infrastructure: Describe Azure management and governance](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
 
 ### +AZ-104: Azure Administrator Associate
-- [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-104/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
+- [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
+- [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-104/view/)
+- [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
 
 ### +AZ-802: Windows Server Administrator Associate
 - [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
@@ -93,7 +82,12 @@
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-103/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
-## Phase 4: Fundamentals & Associate Hybrid
+### DP-800: SQL AI Developer Associate
+- [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+## Phase 4: Associate Hybrid
 
 ### +AZ-700: Azure Network Engineer Associate
 - [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
@@ -110,11 +104,6 @@
 ### DP-300: Azure Database Administrator Associate
 - [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-### DP-800: SQL AI Developer Associate
-- [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 5: The Expert Core
