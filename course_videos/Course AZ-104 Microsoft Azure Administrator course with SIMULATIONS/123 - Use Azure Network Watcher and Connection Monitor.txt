@@ -1,0 +1,176 @@
+# 123 - Use Azure Network Watcher and Connection Monitor
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/123 - Use Azure Network Watcher and Connection Monitor.mp4
+Fetched On: 2026-10-21 20:17:44
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about the network watcher resource that we have in Azure.
+[00:05] Now as soon as you create your first virtual network in Azure,
+[00:09] a network watcher resource will get created for the region where that virtual network is created.
+[00:17] If we go right here to the menu button,
+[00:20] we'll see that we can go down here to all services and then search for network watcher.
+[00:28] And you can see there it is right there.
+[00:30] We'll click on that.
+[00:32] All right.
+[00:32] And we can see that I've just got one for East US here
+[00:36] because that's where all of my virtual networks are.
+[00:38] They're all tied to East US, okay.
+[00:41] But what I wanna show you is let's take a look
+[00:43] at this network diagnostic tool.
+[00:45] So one of the things that the network watcher
+[00:47] really brings to the table.
+[00:49] is a series of network diagnostic tools which can be utilized for troubleshooting issues
+[00:57] involving your virtual networks and all that. The first one you have here is called IP Flow
+[01:03] Verify and this is a great little tool that we've got and the idea is that it's going to
+[01:10] check if a packet is allowed or denied based on a network security group rule. Okay between
+[01:18] a virtual machine and something else. So for example if I go here I'm going to choose VM1. I
+[01:23] have VM1 started up. I'm going to choose my virtual NIC and then the protocol in this case
+[01:30] will be TCP. Let's say inbound so I'm wanting to test connectivity inbound. Maybe I'm going to do
+[01:35] this on port 80.
+[01:37] Then we'll say the remote IP address. I'm just gonna put in like Google's DNS server, which is eight dot eight dot eight dot eight
+[01:43] And then we'll say port 80 for that as well
+[01:46] Then I'm gonna click verify IP flow and it's gonna let me know if there's anything that's blocking this connection. Okay
+[01:53] This does take just a moment, but it should pop up with a green message
+[01:58] There it is access allowed and what is allowing it? Well, it's that security group
+[02:03] This VM one security group on the right click that and open in a new tab so I can go look at it.
+[02:09] But this is the network security group, which is an IP filter that is allowing that allow any HTTP.
+[02:15] We also should be allowing RDP inbound as well, right?
+[02:20] So if we go over here and we were to test using port 3389, we could do that.
+[02:27] Okay, verify P flow and see if that's working.
+[02:32] Okay, of course you can test outbound as well. I'm just doing inbound in this case
+[02:37] To see if that's working so and it is so that is working. Let's just choose let's choose port 23
+[02:44] Which is telnet?
+[02:46] Okay
+[02:47] And see what kind of response we get with telnet
+[02:52] All right. Now, of course telnet's not really considered a secure port
+[02:55] obviously, and you'll see it's access denied. So it's getting the denier. All rules. So this is
+[03:01] great for testing that sort of thing. You can also go further. You have NSG Diagnostics with
+[03:07] testing for NSG issues. So this is going to provide information on NSG rules applied to a specific
+[03:13] NIC or subnet and how they are, how they affect traffic. So you know, if I go here and I select
+[03:25] IPv4 details, destination address.
+[03:29] So put in whatever IPv4 address here,
+[03:32] I was gonna say 8.8.8.8, destination port,
+[03:36] and we'll say port, let's say port 23 again,
+[03:41] and run NSG diagnostics.
+[03:45] We're gonna get some more information involving NSG.
+[03:48] So you can imagine because Microsoft has...
+[03:51] Focused on NSGs network security groups here NSGs can be a big problem
+[03:55] Where people are stacking multiple NSGs in there and they're causing conflicts and all that so you can see some deny
+[04:01] It gives you more details
+[04:03] So this is definitely good for wanting to troubleshoot and you get this nice little chart that would help you troubleshoot
+[04:09] What the issue is here? So really really nice here so you can see it was port 23
+[04:15] We're trying to get to you can see exactly what rule it was, you know that's affecting it
+[04:19] and all of that. Okay so that's a good one. Let's go back over here to network watcher. Then you
+[04:27] got next hop. So next hop this is going to identify the next hop or route for outbound traffic from a
+[04:34] VM to a destination IP. So if we go here let's put in uh let's do VM1 and we'll say the source IP
+[04:49] Google's DNS server, it should say next hop is like the internet because the
+[04:54] virtual machine has its own public address and can go straight out to the
+[04:58] internet. Okay, if it's configured the way usually, yeah, so there you go.
+[05:05] And so...
+[05:07] That would help you if you are having to pass through multiple VNets
+[05:11] or you know to route traffic you could see what the next hop is.
+[05:15] You got effective security rules. So the effective security rules this is going to show the combined
+[05:20] effective NSG rules applied to a NIC or a subnet. So we go here we choose you know
+[05:27] which virtual machine we want and this would be able to show us
+[05:33] the effective or applied rules that go along with that. Okay. And let's just make sure
+[05:41] there we go. It was kind of lagging a little bit behind, but you can see here.
+[05:45] So select your network interface below. There's the network interface associated in
+[05:49] as Jesus is a great way for you to see okay what NSGs and all that are associated and
+[05:53] I can go straight into those if I want and and view that information. Okay. All right.
+[06:00] So there we go kind of loading taking this one a moment to load up
+[06:04] But anyway, that's how you can tell you know
+[06:07] If there's an sg's associated with certain network interfaces if there are you know
+[06:12] If in this case an sg could be associated with the subnet all of that good stuff
+[06:17] The next thing we have is VPN troubleshoot
+[06:20] So this is for troubleshooting a VPN if you have set up a VPN in your environment
+[06:26] This is gonna help you troubleshoot issues with site-to-site VPN connect
+[06:30] So, if you were to set that up and you...
+[06:33] This is gonna basically analyze the tunnel status
+[06:36] and traffic logs and if there's any IPsec,
+[06:40] like encryption, security negotiations going on,
+[06:43] this would help you if there was some type of issue
+[06:45] with people connecting in.
+[06:47] The next thing we have is packet captures.
+[06:49] This is gonna capture packets sent to or from
+[06:52] a virtual machines NIC for deep analysis.
+[06:55] So it's kinda like if you've ever used
+[06:57] a Wireshark or something like that,
+[06:59] this idea of being able to capture packets, okay?
+[07:02] And then the last thing you'll see there is the connection troubleshoot.
+[07:06] So the idea here is we can test connectivity from one point to another, like maybe a virtual
+[07:13] machine to a public IP or something like that.
+[07:16] I can, you know, I can go in here and select, let's say, destination.
+[07:20] Maybe we want to see if this VM can connect to this WinServer1.
+[07:25] We could also specify manual IP address if we want.
+[07:28] Okay.
+[07:30] the preferred IP protocol, destination port,
+[07:34] I'll say port 80, source port 80,
+[07:36] and then run diagnostics against that.
+[07:39] Okay, and this would be a way for you to test.
+[07:41] So this is also great though,
+[07:42] if you had like two VMs
+[07:43] that were having problems connecting to each other,
+[07:46] you could troubleshoot with this tool,
+[07:48] run this little diagnostic testing,
+[07:51] and then you'll get back its information
+[07:53] that it's gonna give you, okay?
+[07:56] So another little helpful tool that we have
+[07:58] with connection troubleshoot.
+[07:59] Okay, so the next thing I want to show you is under monitoring here, it says topology.
+[08:05] And this is kind of neat because you can sort of get a visual on your topology in your environment.
+[08:11] So I've got East US, I can click on that. And you can look at traffic information,
+[08:19] connectivity information. And of course, it's going to show you the insights into that. But
+[08:29] and click on that little plus sign
+[08:32] and you can get a visualization
+[08:33] of your virtual networks right here.
+[08:36] Okay, and actually if I just wanna see certain ones,
+[08:40] in this case I've got VNet one,
+[08:42] which is like a hub VNet,
+[08:44] and then you've got these others.
+[08:46] But I could, let's just turn off,
+[08:49] let's go here, we'll just turn off load balancers.
+[08:53] We've got, yeah, those and apply.
+[08:57] And then let's click the little plus sign again.
+[08:59] We'll go right here and let's just look at, we'll do East US and as far as resources go,
+[09:14] let's take a look just at the VNet demo RG and click save.
+[09:20] There we go.
+[09:22] And so now you can see we got this little hub VNet, VNet 1,
+[09:26] it's connected to VNet 2.
+[09:27] So these are all paired together to VNet 1.
+[09:29] Anyway, this can just give you a visualization
+[09:32] of your topology as far as VNet's go.
+[09:35] Okay, and the last thing I wanna look at
+[09:37] is this connection monitor, okay?
+[09:41] And this connection monitor is a tool.
+[09:44] that if we click create here, tells you that this is going to let you monitor connectivity
+[09:50] with your Azure environment in a hybrid network, if you've set up a hybrid network. So if you've got
+[09:55] like on-premises servers and all that, this is going to help you with monitoring.
+[10:00] connectivity with that. So from there I can give this a name, just I'll just call it test. I can click next.
+[10:06] And then from there I would add a source. So maybe my source is going to be, you know, this virtual network here.
+[10:13] And then I could add a test and that would be like a destination like my on-premises environment.
+[10:18] Now I don't really have an on-premises environment, so I can't do that. But that's the idea of
+[10:23] utilizing this connection monitor. Okay, so connection monitor is great for that type of scenario.
+[10:30] Okay and one last thing I do want to mention as a bonus I did say that the connection monitor
+[10:35] was the last thing I was going to mention but I do want to talk real fast about this traffic
+[10:40] analytics and what it's going to provide. So traffic analytics is this is a traffic analysis
+[10:49] type tool that you can use and what it does is it
+[10:54] processes network security group flow logs and helps you visualize things like what types of
+[11:01] network traffic patterns you've got. This will tell you things like top talkers like who is
+[11:06] communicating the most in your environment, which machines are communicating the most in terms of
+[11:12] the source destination IPs, ports, protocols, all that. It'll also give you application usage so
+[11:22] It'll tell you the traffic volume trends. It'll tell you if there's any like possible security risk
+[11:27] It'll give you some compliance information
+[11:30] so that's kind of the idea there in order for you just to kind of get a feel for the types of
+[11:37] Situations that you've got you do need an analytics workspace and all of that set up, but you can
+[11:43] configure that and gather that information as well.
+[11:46] So hopefully this video has given you a better understanding
+[11:49] of these various resource objects that we have here.
+[11:53] For when I say resource, I should say the network watcher objects,
+[11:56] which is network watcher is the actual resource.
+[11:59] But these resource objects that we've got available here,
+[12:03] and obviously these can be really,
+[12:05] really handy for troubleshooting and dealing with issues involving
+[12:09] the network side of Microsoft Azure.

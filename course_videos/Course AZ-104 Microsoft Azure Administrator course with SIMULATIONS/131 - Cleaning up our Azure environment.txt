@@ -1,0 +1,143 @@
+# 131 - Cleaning up our Azure environment
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/131 - Cleaning up our Azure environment.mp4
+Fetched On: 2026-10-21 19:52:55
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now once you have completed everything and you are ready to clean up your Azure environment
+[00:05] You're just gonna go to portal dot Azure calm go to the menu button go to resource groups
+[00:10] And then go into each resource group and you're gonna go and delete each resource group one at a time
+[00:17] You just click delete resource group. You'll copy and you'll paste the name and now this particular resource group
+[00:24] Because it's got some backup related stuff in it,
+[00:26] it's not gonna let me delete it.
+[00:28] So if I try to delete it, hit delete,
+[00:30] you're gonna see that I'm gonna eventually
+[00:32] get an error message.
+[00:33] And first thing I'm gonna do here
+[00:35] is I'm gonna come over into that resource group
+[00:39] and we're gonna look for locks
+[00:41] and we're gonna delete these locks that we have here.
+[00:45] All right, so if you were to try to
+[00:47] get rid of that resource group,
+[00:49] you've got a resource group with the backup content
+[00:51] and stuff in there, you're gonna wanna do that.
+[00:53] Okay, so then if we come over here and we try to delete the resource group
+[00:58] copy and paste delete
+[01:01] Alright, it's gonna then go through and start trying to delete the resource group
+[01:06] All right
+[01:07] So after doing that you'll notice that the storage accounts got deleted but the backup vault did not
+[01:12] So what we got to do is we got to delete some stuff that's in the backup vault
+[01:15] So I'm just gonna right-click this and open up in a new tab
+[01:20] on this first one here
+[01:22] And we're going to delete the backups.
+[01:24] So in this case, I've got some backup data here.
+[01:27] I'm just going to click right here on this number.
+[01:29] We're showing the numeric value of the backup, how many backups
+[01:34] I've got, and then I've got this backup here.
+[01:36] For the storage account, I'm just going to go and try
+[01:39] to delete that.
+[01:42] So type the name of the backup instance,
+[01:44] which I'm just going to copy the name, which is right here.
+[01:49] Wants me to give it a reason.
+[01:53] I'm just going to say others and I want to delete.
+[02:00] That's going to be my reasoning and I'm going to hit delete.
+[02:03] So we'll go ahead and confirm that and it's going to start going through the operation
+[02:09] of deleting that backup data.
+[02:12] Okay, meanwhile, I'm going to jump back over here and we'll go into the other
+[02:17] vault that I have here.
+[02:19] Keep in mind if you're doing this with you, you may or may not have this vault,
+[02:24] Once I get in there, if I go right here and I try to delete this, it gives me a series
+[02:29] of steps for deleting it.
+[02:31] Okay, and I'm going to hit yes, I want to permanently delete it.
+[02:37] And we're going to click yes.
+[02:38] And it's going to throw some errors.
+[02:40] And these errors are good because they kind of tell me what it is I need to do to delete
+[02:44] this.
+[02:45] It tells me these are the three items
+[02:47] that I need to take care of.
+[02:48] So disable the soft delete and security features.
+[02:51] So we'll go to settings,
+[02:53] we'll turn off these settings that you see here
+[02:57] and we'll click save.
+[02:59] And then stop backup and delete cloud protected.
+[03:02] So we'll go to go back here
+[03:04] and right here where it says cloud storage,
+[03:06] we'll click Azure files there and we will delete,
+[03:10] we'll stop the backups that you see there.
+[03:14] Okay, delete and then it's for me to give the item name which is test
+[03:21] And I'm just gonna try to be quick about it
+[03:25] I'm just gonna say delete for my comment and then I'm gonna stop that and then I'm gonna go do the same thing for this
+[03:31] One again, you may not have to do this if you are doing this with me. You may not have all the same stuff here
+[03:39] But if you do this will come in handy because it walks you through how to get rid of all this
+[03:44] Okay, so it's stopping that now
+[03:51] Just waiting on that to finish
+[03:53] All right. We'll come back over here
+[03:58] to the vault we'll click delete and
+[04:04] See what else there was one more thing. Yeah. Well, this hadn't taken effect yet. Let's go back over here and make sure
+[04:10] Yeah, we still got one more that
+[04:12] so
+[04:13] One more of these will still eat back up data here type the name
+[04:21] delete
+[04:22] There we go
+[04:25] So this should eventually take effect
+[04:28] Alright
+[04:29] So stopping back up and deleting the backup data. Alright
+[04:36] So we'll come back over here to delete
+[04:40] And the next thing was site recovery go to replicated items. We have no replicated items. So that's fine
+[04:47] Let's go back in here and hit delete again clean up dependencies
+[04:51] Policies. Alright, and I think we're still in the process of deleting that
+[04:57] All right, so I paused my recording just to let that run through and so now we'll go here and say
+[05:03] I wish to permanently delete. Got this one more thing. So servers and storage accounts, there are
+[05:09] active servers and storage accounts associated with the vault cleanup associations of servers
+[05:15] and storage accounts to proceed. Okay, so that's our last and final thing. We go to backup
+[05:23] All right, and it says storage accounts.
+[05:26] We're going to go ahead and remove these unregister.
+[05:30] So it's asking me to type the name.
+[05:39] All right, and we're removing that one.
+[05:45] All right, and I'm going to go back over here
+[05:50] in a different tab and let that run through.
+[05:55] And we'll go ahead and do the second one here.
+[05:57] There it is.
+[05:58] Unregister.
+[06:01] I'm just going to copy paste the name.
+[06:10] All right.
+[06:14] Get that unregistered here.
+[06:17] So we're still in the process.
+[06:20] Just waiting on that to finish here.
+[06:22] Okay, so I just gave that a minute to run through.
+[06:26] And now if we come back over to our,
+[06:32] let's go back to our resource group here
+[06:35] and open up our recovery services vault
+[06:39] and click delete, permanently delete.
+[06:43] Let's see if we've done everything here.
+[06:45] If we have, it should delete.
+[06:47] and go get rid of it.
+[06:49] All right.
+[06:50] Now the other backup vault we have,
+[06:53] we might have to wait on a while
+[06:55] because it has a soft delete set up on it.
+[06:58] And if we come over here to this backup vault,
+[07:02] and if I try to delete it,
+[07:05] it's probably going to throw an error.
+[07:07] Error.
+[07:08] And if I look at the error,
+[07:09] cannot delete, it contains soft deleted items.
+[07:12] So if we go and we take a look,
+[07:17] And come back down here, this has been deleted,
+[07:21] but it's set to soft delete.
+[07:24] All right, if I actually go into that, it should tell me.
+[07:29] Yeah, it says the restore points for this backup item
+[07:33] has been deleted and retained and soft delete state.
+[07:36] They were deleted zero days ago
+[07:38] and will be available for 14 more days.
+[07:42] And then it'll permanently get deleted.
+[07:43] So eventually that's gonna get deleted as well.
+[07:45] But okay.
+[07:46] So that's it. I know that kind of took a while. These backup vaults and all that are kind of a
+[07:51] pain to delete. It's very easy to go through and delete our other resource groups and all that. All
+[07:57] we had to do is click on each one, click delete resource group, copy and paste the name in,
+[08:02] and click delete. But this particular one is a pain just because of these backup vaults. So it
+[08:07] took a few more steps, but now we've done that. And once this eventually goes away, you know,

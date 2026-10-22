@@ -1,0 +1,167 @@
+# 04 - Having a Solid Foundation of RAS, DMZ, and Virtualization
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/04 - Having a Solid Foundation of RAS, DMZ, and Virtualization.mp4
+Fetched On: 2026-10-21 20:22:02
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:03] I now want to talk about some concepts that are also sort of the foundation of how we've
+[00:11] done things over the years.
+[00:13] It's important to understand how we've done things over the years so we can understand
+[00:16] how things are now.
+[00:20] We have an Active Directory Domain, ADDS as it's called, Active Directory Domain Services,
+[00:25] which uses the LDAP Lightweight Director Access Protocol, which uses Kerberos for authentication,
+[00:30] or for this older, for the legacy back in the 90s devices that used NTLM, a new technology land
+[00:36] manager, which isn't all very new these days, but even Kerberos is pretty old considering,
+[00:44] you know, we've been using it for decades, and I think actually the protocol even came out back
+[00:49] you know, we got some data technologies,
+[00:51] but the technologies have been updated,
+[00:53] a lot of them over the years to be secure,
+[00:55] so you can still feel comfortable using those.
+[00:58] But let's talk about some different scenarios now.
+[01:01] The first thing I wanna look at is the scenario
+[01:04] of what happens when we have a user who is not...
+[01:10] At the office. So this person is working from home working from home is a lot more popular nowadays than it has been in the past
+[01:16] So it's very common and this person needs the ability perhaps
+[01:22] To you know be able to connect in and access
+[01:26] Services that are inside
+[01:29] Okay
+[01:30] And we've got a file server, but you know, ultimately we you probably are aware that you know in the past
+[01:37] It was always this mindset of do it yourself host your own server.
+[01:42] So, you know, your companies might have, they might have a file server, but then they might also have a, you know, they might be, they might have a SQL database server that that users need to access.
+[01:55] Let's, let's create that SQL.
+[01:58] All right.
+[02:02] Maybe Microsoft Exchange.
+[02:06] That was email, right?
+[02:07] Microsoft Exchange was used for email and then maybe even like SharePoint was very popular
+[02:17] by Microsoft on-premise. So here you've got these four servers providing a service to our devices.
+[02:24] And you've got users working from home and everything else needing to get access to those.
+[02:30] Let me just kind of move those a little bit over here, make a little bit of room here.
+[02:37] And I'm gonna shrink those down just a little bit as well.
+[02:40] All right, so this user who is working from home
+[02:43] needs to access these services,
+[02:44] but the person is not around.
+[02:47] Well, let me tell you what you shouldn't do.
+[02:48] You shouldn't just open up all the ports on the firewall
+[02:51] and allow this person in to get access to these devices.
+[02:56] unsecuredly. In fact, in the 90s a lot of companies did that. The very first company I ever worked for.
+[03:01] Back in the 90s they didn't really have a firewall so you literally could share out your
+[03:06] you had a public address and you could connect to it from home. It was really scary when I think
+[03:11] about it. Even in the 90s that was scary but nowadays it's incredibly scary. Why is it scary?
+[03:16] Because you got these people out there that want to do things that they shouldn't do.
+[03:22] you know, get access to companies' data and try to do damage and
+[03:25] Ransom and all of that ransomware and all that and and who are these people? Well, we we generally call them hackers, right?
+[03:31] So let me draw a little hacker this this little this little box here is going to represent my hacker
+[03:39] all right, and
+[03:41] Let's make him let's make this hacker look like he's up to no good. All right
+[03:45] I'm just gonna i'm gonna give him like a let's give him like a devil horns some devil horns here
+[03:51] and maybe like, you know, he's in a bad mood.
+[03:56] I'll give him a frowny face and give him some fangs
+[03:59] and maybe the fangs are dripping blood every...
+[04:02] Okay, no, I'm just kidding.
+[04:03] Sorry, sometimes I get carried away.
+[04:05] All right, but anyway, that's gonna be my hacker, all right?
+[04:09] Goofy looking little hacker person, all right?
+[04:11] And...
+[04:12] So we don't want this hacker like spying on my user. We don't want this hacker getting access
+[04:17] to resources inside. So how do we get around that? Well, usually the way we would do that is
+[04:22] you would use a VP in a virtual private network. So the way you would do that is you could
+[04:27] purchase what was called a VP concentrator. And basically it's a device that allows secure
+[04:33] connections in. But in the Microsoft world, we actually had a type of server we could set up
+[04:39] called a RAS server.
+[04:40] or also known as an R-RAS server because it stood for
+[04:44] routing and remote access services. But anyway remote access services is the
+[04:51] idea here and with that we have support for VPN.
+[04:54] Now what does that do? This allows this thing called a VPN tunnel to be created
+[04:59] which means that you have this encrypted communications
+[05:02] that goes through to that RAS server and then from there
+[05:06] that RAS server allows you to access other resources securely.
+[05:11] This hacker will not be able to see the traffic that's flowing through because it's all encrypted.
+[05:19] The only thing the hacker would be able to see is that it was going up to this firewall and that would be it.
+[05:23] Wouldn't be able to see what the traffic said.
+[05:25] So this is how we would we would definitely help secure things.
+[05:28] Now, the other thing that I want to talk to you about here is.
+[05:33] What happens when a company needs to have a service that is exposed to the internet?
+[05:40] For example, let's say that your company is going to host their own web server.
+[05:47] So you set up a web server.
+[05:52] Maybe this is going to be www.examlabpractice.com or whatever and people from the internet
+[05:57] need to be able to get to it anonymously.
+[06:00] Well, how are you gonna do that? Where are you gonna put that web server? Are you gonna put it internally
+[06:05] inside the domain like you see here? And the reason that's scary is because you would have to open up port 443 port 80
+[06:12] which is HTTP HTTP ports to allow traffic to get in which means
+[06:17] Not only could you know somebody out there on the internet anonymously get into this web server
+[06:22] But technically so could a hacker and if a hacker was ever to gain access over this website by hacking it
+[06:30] then something called pivoting could occur where a hacker could actually gain access to these other services that are on your network.
+[06:36] And so that's where things are really scary.
+[06:38] So you definitely won't want to host it internally most of the time, although there was a way to do something called a reverse proxy.
+[06:43] I won't get into that right now, but we would probably want to put this outside.
+[06:48] Right. So we want to put it out here.
+[06:53] But there's something else that's a problem on that.
+[06:59] you know, allowing traffic to come in, but the only that the scary thing about that is the fact that
+[07:07] this poor web server is now completely exposed to the internet. So with no protection. So the
+[07:13] way around that usually is people would get another firewall. So you'd have two firewalls.
+[07:21] This first firewall was would be called the internal
+[07:25] connected firewall and then you this firewall here would be called the external connected firewall. Now this little network between that
+[07:33] we would call that a
+[07:36] DMZ
+[07:37] Demilitarized zone or now the more popular term is perimeter network
+[07:42] Okay, so DMZ perimeter network are basically the same thing. All right
+[07:49] And so now what you would do is you'd only open, you would only open the ports like port
+[07:55] 80, 443, 53 for DNS if you put DNS in there, whatever ports there that you need and now
+[08:03] traffic would be able to get to this web server.
+[08:07] Okay?
+[08:11] even if a hacker you know somehow hacks this web server, you're not going to allow traffic
+[08:17] to pass through this firewall and get to these resources. The only traffic that you might allow
+[08:21] would be VPN, okay, and there's a bunch of authentication and all that that has to happen
+[08:26] to make that work. Alright, so that's the idea of remote access and VPNs and a nutshell for you
+[08:33] as well as the concept of DMZ and the perimeter network idea. Now the final thing I want to look
+[08:40] in this video is the idea of virtualization. So I talked about how in the past
+[08:48] it was always the mindset was we got to host everything ourselves. We got to have our own
+[08:53] little data center. We got to have our own servers, file, server, SQL, Exchange, SharePoint,
+[08:58] all that. It's all got to be hosted by us and that's the way things have always been done.
+[09:03] All right. Now...
+[09:05] Then what you'll find is as time went on a company called VMware came out with
+[09:13] a way of expanding on virtualization. Just so you know virtualization is not a
+[09:18] new term. Virtualization has been around for a very long time. In fact the term
+[09:22] hypervisor is the essentially the software that lets us emulate hardware.
+[09:27] And if you can emulate hardware you can also store software on that
+[09:35] that term hypervisor has been around since the 1970s. The idea of even mainframes dividing up
+[09:43] processing time and doing shared computing was a form virtualization. So this is not a new concept,
+[09:47] but VMware, they expanded on this idea and the thing that they did that really pushed the
+[10:00] different servers. And here's the other thing. Here's the other crazy thing. If
+[10:03] you wanted redundancy for those four servers, you'd really need eight servers,
+[10:07] right? You could do clustering those together. So you'd have eight servers to
+[10:10] provide redundancy for those. But with virtualization, I can set up a
+[10:16] hypervisor server, one server, and virtualize those other servers. Now in
+[10:26] the Microsoft world, we call that Hyper-V.
+[10:28] That is the software that does this Hyper-V, Hypervisor.
+[10:33] Microsoft is not the one that came up with that. VMware is not the first to ever come up with that.
+[10:38] VMware was the biggest contributor to this concept though, so I do have to give them credit where credit is due.
+[10:43] Alright, now the other beautiful thing though about this is you get a really, really powerful machine.
+[10:48] You virtualize your machines on those. You get these things called checkpoints.
+[10:55] in Microsoft. They used to be called snapshots and a lot of other companies still call them
+[10:59] snapshots where you can make changes without the worry of breaking anything because you can
+[11:04] revert back to before the change was made. The other thing that's wonderful about
+[11:10] using virtualization is if I want to have complete redundancy, I don't have to have eight servers.
+[11:17] I could literally, you know, purchase another server and have a copy
+[11:22] of the virtual machines on that other server, now I've only got two servers as opposed to having to
+[11:27] have a total eight servers. Okay, so this is a very powerful feature capability that kind of
+[11:36] started everything. Another thing that we got, and this is kind of where you start thinking about
+[11:40] cloud computing, is with virtualization comes the term elasticity, which basically means that
+[11:46] each of these machines can be given a certain amount of RAM processing power. But here's what's
+[11:51] interesting about that. If one of the servers isn't using all of the available RAM that it's been
+[11:56] given, it can share it with other servers. So for example, this file server has been given more RAM
+[12:01] than it needs. And then SQL needs that RAM, the file server can give up some of that RAM over
+[12:08] to SQL. And when SQL is done using that extra memory, it can release it back to everybody.
+[12:15] scenario where it gets released into a pool of RAM and pool of CPU and they can
+[12:20] grow and shrink as they need. That's the small way of sort of on-premise way of
+[12:25] looking at elasticity. Of course when you get into cloud computing you'll learn
+[12:29] that that can expand across multiple machines across the you know the board
+[12:33] in these big data centers but not to get into that just yet here. But that's
+[12:38] the idea. Hopefully that now helps you with understanding that concept of what
+[12:45] is really where you know cloud computing started to come into play which I'm not
+[12:48] explaining in this video but hopefully now you have a much better understanding of the concept of
+[12:55] of the ras vpn as well the dmz concepts and virtualization and now we'll in this next
+[13:04] section we'll start getting into the concept of cloud services

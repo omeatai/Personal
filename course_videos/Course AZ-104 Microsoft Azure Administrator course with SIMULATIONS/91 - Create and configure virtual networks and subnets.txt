@@ -1,0 +1,180 @@
+# 91 - Create and configure virtual networks and subnets
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/91 - Create and configure virtual networks and subnets.mp4
+Fetched On: 2026-10-21 20:15:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to jump in now and start creating some VNets.
+[00:03] So here I am on portal.azure.com,
+[00:07] and I'm going to click the menu button,
+[00:09] go down here to All Services,
+[00:11] and I'm just going to search for virtual networks.
+[00:13] You could also, if the virtual network shows up on
+[00:16] your menu blades here, you can click that.
+[00:19] So anyway you want to get into it,
+[00:21] but I'll go ahead and click that,
+[00:22] and then I'm just going to click to create a virtual network.
+[00:25] Now I'm going to create a
+[00:27] resource group for the virtual network. I'm going to call it VNet demo RG.
+[00:34] It's going to be the name of my resource group and then I'm going to give the virtual network a name.
+[00:38] I'm going to call this VNet 1.
+[00:43] Alright, so VNet 1, East US will be the region.
+[00:47] And then I'm going to go ahead and click next.
+[00:50] From there, I've got some options here on the security tab of the creation of this VNet.
+[00:55] The first thing you'll see there is the virtual network encryption.
+[01:00] So the idea here is that I can encrypt traffic from within the virtual network and it does
+[01:06] not encrypt the traffic to and from the internet or public IPs, but it does within the virtual
+[01:11] networks.
+[01:14] So this is something that will secure both RDP and SSH access to Azure virtual machines utilizing
+[01:21] TLS transfer layer security without needing a public IP.
+[01:26] for your VMs if you've got VMs out there.
+[01:28] So that's the idea there,
+[01:29] it's just a secure way of connecting into VMs.
+[01:31] I'm not deep diving that right now,
+[01:33] but that's the gist of it.
+[01:34] The next thing you'll see there is the Azure Firewall.
+[01:36] So this gives you a cloud native stateful network firewall
+[01:40] for controlling traffic to and from your VNet.
+[01:43] I'm not gonna enable that right now either.
+[01:45] The last thing you'll see there is the Azure DDoS.
+[01:48] network protection. This is a way of providing a distributed denial of service attack
+[01:55] type of protection that goes beyond the basic level that Azure provides because it does provide
+[02:01] some but this gives us a paid service for protecting against DDoS attacks. So this is
+[02:09] great if you're going to be running things like web applications and you're worried about...
+[02:13] DDoS attacks you could turn that on definitely want to look at the pricing on all of that before you jump in and turn it on
+[02:21] Okay with that. I'm going to go ahead and click next and now this is where I'm going to set my
+[02:25] IP address ranges that I want. So on my VNet A, I'm going to do 10.1.0.0 with slash 16. That's
+[02:35] 65,536 addresses though. The first address, the last address can't be used in Azure also
+[02:41] will reserve some other of its addresses as well. Now you'll also notice that you have this default
+[02:47] subnet. I'm going to edit that. I'm going to change the name of it. I'm going to call it
+[02:54] and you'll see that out of the 10.100 slash 16 that's a 65,000 it's going to carve out
+[03:01] 256 addresses by starting the address here 10.100 with a slash 24. That means the subnet mask
+[03:08] would be 255, 255, 255, 0. Now I'm not here really to do a deep dive into TCPIP. Hopefully you do
+[03:13] understand some of the basics of TCPIP but that's the idea. I'm going to start this at 10.1.1
+[03:22] And so the range will be 10.1.1.0 through 10.1.1.255.
+[03:27] Now, as I've already said,
+[03:29] the very, very first address is taken out of the range,
+[03:32] which is called the network address.
+[03:33] The very last address is taken out of the range,
+[03:35] which is called the broadcast address.
+[03:36] So both of these addresses you see here,
+[03:38] this first and last aren't really gonna be used.
+[03:40] Plus, Azure does reserve some for itself
+[03:43] for doing certain things.
+[03:45] But most of the addresses will be available, okay?
+[03:48] So with that, you can see that
+[03:51] You have this down here mentions include an IP version 6 address space.
+[03:56] It says the virtual network has no IP version 6 ranges.
+[03:59] Okay, I haven't added any kind of IP version 6 ranges.
+[04:03] All I've got is this IP version 4 range.
+[04:06] So that's not really going to be available to me.
+[04:09] If I wanted to make it available, I can go right here and I can add IP version 6 address space,
+[04:14] but not going to do that.
+[04:16] So right here it says private subnet.
+[04:18] So this is going to prevent default outbound internet access.
+[04:23] Okay, so the subnet cannot access the internet unless you explicitly configure access. So this
+[04:28] would be ideal for internal workloads like databases or back end services, things like that.
+[04:36] Okay, so I could enable private subnet, no default outbound. I'm not going to check that box.
+[04:42] So below that I've got security.
+[04:44] Okay, so it gets into the security concept here talking about NAT gateway.
+[04:49] It tells you simplify internet access for virtual machines by using a network address translation
+[04:55] gateway filter subnet traffic using a network security group.
+[05:00] So the idea here is I could use a NAT gateway.
+[05:03] This would allow outbound internet traffic from a subnet using a static public IP address
+[05:10] without exposing individual virtual machines to inbound internet traffic.
+[05:15] Usually you would use this. This would be used for like securing outbound communications,
+[05:19] especially when you're using private subnets. So an example of this, maybe you've got an
+[05:24] internal virtual machine and a private subnet that needs to download patches or make API calls
+[05:30] or whatever it may be, and you want to log or control this traffic using NAT, Network Address Translation.
+[05:36] Okay.
+[05:37] I can also go ahead and create a network security group, which is an IP filtering resource.
+[05:44] It's going to filter traffic.
+[05:45] I can control what traffic is going to filter in and out.
+[05:47] And then below that, I also could utilize a route table.
+[05:51] I'd need to create a route table,
+[05:52] but this would have controlled the routing of traffic
+[05:56] within the VNet if I wanted.
+[05:57] Okay, keep in mind, I'm not deep diving
+[05:59] into any of this stuff right now,
+[06:01] just giving you a brief overview.
+[06:03] So below that, I got, it mentions service endpoints.
+[06:06] So service endpoints, this is gonna allow secure
+[06:09] and direct access to certain Azure resources.
+[06:12] So for example, if I had a storage account and I wanted to have a secure connection with that
+[06:17] storage account, this is a easy way to do that. Okay, that's what a service endpoint is going to
+[06:22] do for you. And the next thing you've got is subnet delegation. This is going to allow the
+[06:28] subnet to be dedicated to a specific Azure resource. So as you can see here, I can
+[06:39] a particular Azure resource if I want. So that's the idea there. Okay, the last little bit of that
+[06:44] is network policy for private endpoints. So you can see you have different options there.
+[06:49] But this idea, the idea here is this is going to control whether your network security groups,
+[06:54] which is IP filtering, as well as what are called user defined routes, that's a routing table.
+[06:58] So this is going to control whether or not those network security groups or your routing tables
+[07:08] these network security groups and the UDR routing tables do not affect traffic to private endpoints.
+[07:15] But when you do enable it, you can apply those to those private endpoints.
+[07:20] Okay, so that gives you a brief overview of all of those different options.
+[07:24] I've got my subnet set up the way I want. I'm going to go ahead and hit save.
+[07:29] Alright, and there is my first subnet. I'm going to go ahead and add a second subnet.
+[07:34] This will be subnet 1B.
+[07:37] Okay.
+[07:38] and this will be 10.1.2.
+[07:41] All right, and I'm going to go ahead and click Add to that.
+[07:46] And so there you go. We got two subnets created for our VNet.
+[07:50] We're now going to click Review and Create.
+[07:54] It's going to validate and make sure there's no issues.
+[07:56] And then we're going to go ahead and click Create.
+[07:58] And I'll just pause the recording while that's getting created.
+[08:00] All right, now that that's done, I can click Go to Resource.
+[08:03] You can see my virtual network here.
+[08:07] All right, and I can expand out settings and I can look at the address space and you can see what the address space is here
+[08:14] And if I click on subnets, you can see both of the subnets here. So that is my first V net
+[08:20] I'm gonna go ahead now and I'm gonna create a couple of more V nets
+[08:24] Okay
+[08:25] So we'll go ahead and we'll just go into our resource group here V net demo will click create
+[08:31] And I'm just gonna search for virtual network
+[08:35] All right
+[08:40] I'll choose to create this virtual network right here
+[08:45] VNet demo and I'm going to call this VNet 2
+[08:50] click next
+[08:52] next and
+[08:53] This is going to be 10.2. I'll edit the default
+[08:58] We'll call this subnet
+[09:01] 2a and it'll be 10.2.1
+[09:05] And I'll click save so we've created our little subnet. We'll click review and create
+[09:10] Go ahead and click create
+[09:15] All right, and while that's getting created I'm gonna go ahead and
+[09:19] Create another V net so do a search for virtual networks
+[09:26] click to create
+[09:28] This will be called V net 3
+[09:35] Big surprise there, right?
+[09:37] All right
+[09:37] I'll click next next and then this will be ten dot three as the subnet range the V net range and then the subnet
+[09:44] will be I'll call it subnet 3a
+[09:49] and it'll be 10.3.1 as the start.
+[09:53] I'll click save, I'm gonna click review and create,
+[09:59] and we'll click create.
+[10:00] and let's go ahead and create one more. So I'll go back over here to all services,
+[10:06] virtual networks, create my VNet demo RG. Keep in mind it does not matter you
+[10:17] have if you have the same resource groups as me this is the only resource
+[10:21] group that matters if you're doing this with me. Alright this will be VNet 4. No
+[10:36] This will be subnet for a
+[10:40] Ten dot four dot one will be the starting IP range for slash 24 will click save
+[10:46] Review and create and we're gonna click create
+[10:50] So we'll go ahead and let that get created
+[10:53] All right
+[10:55] Go into V net demo RG. It's gonna take a moment before they all show up
+[11:00] The first three have shown up the fourth one will show up. Let's go into V net to now
+[11:05] I want to show you how you could add a subnet from the V net
+[11:08] So here I am in VNet 2, if I click subnets, you can see the first subnet showing up there.
+[11:15] Now I'll click subnet and let's create a new subnet.
+[11:20] We'll call this subnet 2B and it'll start with 10.2.2.
+[11:29] Click add and we've now added another subnet for our VNet 2.
+[11:35] So that's how easy that is.
+[11:37] Okay.
+[11:38] Now if we go back over here to overview, we look at our VNet demo RG, our resource group.
+[11:43] We should have the four VNets showing up now.
+[11:46] So the fourth VNet is there, VNet four, and it's subnet.
+[11:51] All right.
+[11:53] And so that's how easy it is to create VNets and subnets within your Azure environment.

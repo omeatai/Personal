@@ -1,0 +1,117 @@
+# 124 - Create a Recovery Services vault
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/124 - Create a Recovery Services vault.mp4
+Fetched On: 2026-10-21 19:49:24
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk now about the process of creating a recovery services vault in Microsoft Azure.
+[00:06] So if you are wanting to do some sort of backups with Microsoft Azure, there are various ways to do that.
+[00:13] But ultimately there are a couple of different resources that can be used for doing backups.
+[00:19] The first is called a...
+[00:21] Azure Recovery Services Vault.
+[00:24] And if we actually go over here to portal.azure.com
+[00:26] and click the menu button, go to All Services,
+[00:28] we can actually search for that recovery and then vault.
+[00:32] There you go, Recovery Services Vault.
+[00:34] And a Recovery Services Vault is a...
+[00:38] pretty broad backup solution supports the ability to backup Azure virtual machines.
+[00:44] You can even backup on-premises Windows servers.
+[00:47] There's actually a little agent software you can download called Mars Microsoft
+[00:53] Azure Recovery Services Agent and you can put that on an on-premises server and
+[00:58] you can actually link that into the recovery services vault and actually
+[01:02] back data up. You can do system state backups, which is the backup of the
+[01:08] included, it includes backing up Active Directory
+[01:10] if you have an on-premises domain.
+[01:13] You can back up SQL Server and SAP HANA databases,
+[01:18] Azure VMs, Azure File Shares,
+[01:20] all that stuff can be backed up with the...
+[01:22] recovery services vault. Now there is a different solution, a different vault
+[01:28] called the backup vault, Azure Backup Vault. In this video we're just going to
+[01:34] focus on the recovery services vault and we'll talk about the backup vault coming
+[01:41] up. So let's go here we're going to look at recovery services vault. Alright and
+[01:52] I'm just going to store this in my storage account demo resource group.
+[01:59] All right, and that's where I have a storage account. And I'm just going to call this backup
+[02:05] vault demo. All right, and then east us will be my region. And then from there, I could
+[02:13] Click next and I can choose if I want to do redundancy.
+[02:17] So if I want to backup storage redundancy, geo redundant,
+[02:20] I can have local redundant, redundant storage,
+[02:23] means just locally redundant within the same data centers,
+[02:27] zone redundant, multiple data centers,
+[02:29] or geo redundant in different locations.
+[02:32] I'm going to do locally redundant for now.
+[02:34] And then I'm going to go ahead and click next.
+[02:36] Then I can support encryption.
+[02:37] I can use Microsoft Manage Key, which is the default,
+[02:40] or I could do a customer manage key,
+[02:41] which means I would manage it using a recovery services vault
+[02:44] and all that.
+[02:45] OK, so from there, I'll click Next.
+[02:48] Then I've got the Enable Immutability Support.
+[02:53] If you look here, I tell you that immutability,
+[02:56] it's as if enabled here, will be reversible
+[02:59] and can be disabled using the vault's properties
+[03:03] after its creation.
+[03:05] You can further choose to lock it and make it irreversible also through the vaults property
+[03:11] So if we actually click the little learn more article for this they tell you that immutability is going to
+[03:18] prevent you from performing certain actions on the vault that could lead to data loss.
+[03:24] So this is going to be things like it's going to stop protection with the delete data.
+[03:29] So if a protected item can't have its recovery points deleted before their respective expiry
+[03:34] date.
+[03:35] So you have that you have modify backup policy to reduce retention.
+[03:39] So this is essentially any actions that reduce the retention period in a backup policy are
+[03:45] So if you've set it to retain data a certain amount of time, it's going to stop you from doing that.
+[03:49] And then you've got change backup policy to reduce retention. So any attempts to replace
+[03:53] a backup policy that's associated with this, with the backup item, or with another policy
+[04:00] with retention lower than the existing one is blocked. So that's the idea of utilizing the
+[04:07] submutability feature. We'll click next. So you can also connect the recovery services vault
+[04:15] via public IP address or privately using a private endpoint. The default is allow public access from
+[04:21] all networks. Then of course if you wanted to put some tags on it you could. I'm going to click
+[04:26] review and create and then I'm going to go ahead and click create and I'll just pause the recording
+[04:31] while this is getting created. All right now that that's created I can just click go to resource
+[04:35] and this is where I could start utilizing my
+[04:40] backup vault, right? You can see you have the ability to click back up here and then there's
+[04:45] basically the ability to go through and select the various items here that you want to back up,
+[04:52] okay? So notice the little drop down and then notice the various options that I've got available.
+[04:57] Now the first workload you'll see there is Azure and of course if you use this...
+[05:03] It's going to be used for things like backing up Azure virtual machines and SQL databases
+[05:09] and file shares.
+[05:10] Probably the most common option that people go with.
+[05:16] And so this is a Stack Hub is an extension of Microsoft Azure that allows you to run Azure services in your own data center or a disconnected environment. So like, for example, let's say you have a hospital and the hospital is using Azure Stack Hub to run applications locally due to residency requirements or something like that.
+[05:44] Azure Stack HCI. Now that stands for Hyper-Converged Infrastructure and this is used for organizations
+[05:52] running virtualized workloads on-premises using Hyper-V and Windows Server but connected to Azure
+[06:00] for cloud management. So you had that type of scenario you got on-premises Hyper-V running
+[06:08] through that you could.
+[06:10] So this would be perfect if you have like a company that runs a cluster of Hyper-V servers
+[06:16] on-premises using Azure Stack HCI and they want to back up those VMs with Azure Backup.
+[06:22] And then you've also just got plain old on-premises.
+[06:26] So this is for workloads that are running
+[06:28] on a traditional on-premises server,
+[06:32] not necessarily oriented towards Hyper-V
+[06:34] like this one would be,
+[06:36] but like you've just got an on-premises server,
+[06:38] you can install what's called the Mars Agent.
+[06:40] This is a little piece of software
+[06:42] you can install on a Windows server.
+[06:44] Stands from Microsoft Azure Recovery Services Agent, okay?
+[06:48] You've also got what is called the Azure Backup Server.
+[06:51] This is a more robust type of software you can install on a server.
+[06:55] So the Mars Agent is just a very lightweight little program.
+[06:59] And it's, you can put it on one server,
+[07:01] it's just going to back up the data from that one server.
+[07:03] You could also install the Azure Backup Server software,
+[07:06] and this will make it where you've got a on-premises Windows Server
+[07:09] that can back up a bunch of machines that are on-premises
+[07:12] and send those out to the cloud, send the backups out to the cloud.
+[07:15] So that's sort of the idea there.
+[07:17] Okay, all right, I'm just going to select Azure. And then from there, I can choose, you know,
+[07:21] what I want to back up, maybe want to back up a virtual machine, I can say, okay, I want to back
+[07:25] up. So then I go through here and I can create what is called a backup policy, select how I want
+[07:31] this backup to happen, and then I would enable backup, okay, I'm not going to go through the full
+[07:36] process of creating a policy in this video, I just wanted to give you the main idea was to get
+[07:46] kind of explain what these things were on that previous screen. But the policy
+[07:51] would be when you would want to do the backup and all of that. So you can kind
+[07:55] of see there the idea but not gonna not gonna trigger the backup right now in
+[07:59] this video.

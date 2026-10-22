@@ -1,0 +1,233 @@
+# 103 - Configure Azure DNS
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/103 - Configure Azure DNS.mp4
+Fetched On: 2026-10-21 20:29:31
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to spend some time helping you understand the concepts of Azure DNS.
+[00:04] Now the first concept really to think about here with Azure DNS is your Azure tenant name.
+[00:11] Okay, that tenant name is going to be the name that's associated with your Azure tenant
+[00:16] in the various Azure services like Microsoft intro with Microsoft 365 and all that can
+[00:21] utilize that.
+[00:23] tenant name for things like email and SharePoint and all that fun stuff. If I go here to portal.azure.com
+[00:31] and I click the menu button and then I go right here to Microsoft Intra ID, under manage I can
+[00:37] drop down that and I can go and you're going to see an area called
+[00:42] custom domain names and if I go right here I can click on custom domain names.
+[00:47] So before I do that though let me just say this, on the overview blade you can see my primary domain
+[00:53] name is examlampractors.com. Now in your case if you're doing this with me you've probably got a
+[00:59] name that was given to you by Microsoft and it'll be it'll be whatever name you chose and then it'll
+[01:04] be a dot on microsoft.com. That's what I mean by given to you by Microsoft. It'll be a on
+[01:12] And so the way that works is I come over here to custom domain name.
+[01:16] Now I purchased this name.
+[01:18] Okay.
+[01:19] In my case, I purchased it from GoDaddy.
+[01:22] And so once you do something like that, you purchase it, it's registered, you can have
+[01:27] it registered here, and then you can utilize it for things like email and again, SharePoint
+[01:32] and domain names type services.
+[01:35] So I can go here, I can add a custom domain name, whatever that custom domain name is going
+[01:40] Alright, I'll just say exam lab practice dot net.
+[01:45] Let's say I was purchasing that name.
+[01:47] I click add domain.
+[01:49] Now the thing it's going to make me do is it's going to make me verify it.
+[01:53] So that would involve going in.
+[01:55] What I would do is I would need to add this record to a text record by whatever registrar
+[02:02] owns the name.
+[02:03] So if it's GoDaddy, I could add that record into the GoDaddy DNS service.
+[02:09] So I'd log on to the GoDaddy website, I'd add this record into that, and then I'd
+[02:17] Now I don't own the name, so if I try to verify it, it's going to fail.
+[02:20] But that'd be the process, and that's the process for setting up a custom domain name
+[02:25] with within Azure.
+[02:27] Okay, so I don't really own that domain name, so I am going to delete that.
+[02:31] Okay, because I don't really own it.
+[02:33] I'm not going to try to register it or any of that right now.
+[02:35] So then it'll eventually get rid of it.
+[02:37] Now, that's great.
+[02:38] That's wonderful.
+[02:39] That has to do with your tenant name and Microsoft intra ID and all that.
+[02:45] when you would like to associate domain names with virtual machines and all of that fun stuff.
+[02:52] Okay, well if we go to the menu button here, we go to all services, you can search for the term DNS.
+[03:01] And you're going to see two things related to zones. Okay, that means that when they say zones,
+[03:08] they're going to host a database for DNS for you. And you have DNS zones right here,
+[03:15] private DNS zones. Okay, this would be a public DNS zone that you're going to
+[03:21] register and have Azure manage. This would be a private DNS zone
+[03:26] that you would use within the Azure space that's not going to be
+[03:29] accessible from the internet. Now let's start by looking at a private DNS zone.
+[03:34] Okay, so the idea would be
+[03:37] I can set up a private DNS database that I can allow my virtual machines and I can also allow anybody that's connected into the Azure environment through a VPN or perhaps through ExpressRoute, which is the private direct connection Azure.
+[03:51] Any of those methods, they can interact with your services using the DNS names associated with private DNS zones.
+[04:06] the name, let's call it exam lab practice dot internal. Okay, and so now what would happen
+[04:19] I can allow this namespace to be associated with virtual machines. I could have VM1.examlabpractice.internal,
+[04:27] VM2.examlabpractice.internal. Okay, so if I click next, it says all right, so you've got a
+[04:33] zone file. You can also upload a zone file. Zone file is a text file that contains details of every
+[04:38] DNS zone record.
+[04:40] They tell you it follows a standards format make it suitable for transferring DNS records between DNS system
+[04:46] So if you are hosting this name somewhere else you could export the zone file and you could import it here
+[04:51] That's what they're saying. I can click next
+[04:53] I could also add virtual networks that I want to associate with this so I could click add to that
+[04:59] Give it a link name. Maybe I'm gonna do this to you know V net one
+[05:05] Give it this name. I'll call it
+[05:07] for the link name I'll just call it vnet1dnslink.
+[05:12] So that'll connect it and you can also support auto registration
+[05:16] and they tell you here auto registration this setting enables automatic
+[05:19] creation of DNS records in the in the this private DNS
+[05:22] zone for the virtual machines connected to the virtual network. So if you have
+[05:25] any virtual machines connected to the network
+[05:27] you can have their names automatically registered which means it'll create
+[05:30] records automatically. That's the idea. Okay and then you've
+[05:35] fallback to internet and they tell you that setting the resolution policy for fallback to
+[05:39] public resolution in the virtual network link will enable public name resolution via Azure DNS to
+[05:45] occur in the event of receiving an authoritative fallback to public DNS response. So what this
+[05:51] ends up doing is if you have what is called a private link zone this checkbox will be
+[06:00] available, you'll be able to check it and enable it.
+[06:04] And if you do that, and what happens is when a query
+[06:08] comes into this private DNS zone database
+[06:11] that's gonna be created, okay,
+[06:13] if a query comes in and it can't answer the query,
+[06:16] then it just redirects it and then tries to resolve
+[06:19] that name using a public DNS name.
+[06:22] So it's just a redirect for trying
+[06:24] to resolve the name publicly.
+[06:26] Okay, so again that is why it's grayed out. That's what it does. Okay, we're gonna go ahead now
+[06:32] I'm just gonna click create and I'm gonna click review and create
+[06:37] It's gonna run through a little validation and we'll go ahead and click create. I'll just wait on this to get created
+[06:44] Now that that's done. I'm gonna click go to resource. So here I am inside the DNS
+[06:49] Private zone which is exam lab practice internal
+[06:53] And if I expand under DNS management,
+[06:55] you'll see I have records set,
+[06:56] and this is where you can set up DNS records.
+[06:59] Okay, so if I wanted to add a record,
+[07:03] let's say I had a web server that is associated
+[07:07] with one of the VNets here, examlabpractice.internal,
+[07:09] and maybe I want it to be www.examlabpractice.internal,
+[07:13] it's gonna point to one of the web servers.
+[07:14] I could click add, okay, and then I could put www.
+[07:20] That would be what's known as an A record, okay.
+[07:23] And then you've got the time to live set to one hour.
+[07:27] And basically what that means is that means that
+[07:29] when somebody queries for this name to the IP address,
+[07:34] they'll cache that for one hour
+[07:36] before they have to ask again, all right?
+[07:39] So that's what that is and that just makes DNS work faster because names don't have to constantly be
+[07:44] refreshed every single time somebody asks a question. So if my computer was to say who is
+[07:50] www.examilabpractice.internal it's going to give back the IP address. Let's say the IP address is
+[08:04] My computer doesn't have to ask for that again for an hour if I go back to it.
+[08:08] So every time I go to it within this hour, I don't have to ask DNS again.
+[08:12] Okay.
+[08:13] And so there you go.
+[08:14] I've now added that record.
+[08:15] Okay.
+[08:16] And so again, if you did have another virtual machine was associated with that
+[08:21] IP address and it was running web server and somebody's connected in Azure, the
+[08:26] Azure virtual machines can all communicate using that address.
+[08:29] Granted you you know routing and all of that is configured properly. You have other record types. You have quadruple a
+[08:36] Which is ip version 6
+[08:39] If you're doing an ip version 6 record, you have c name. That's a canonical name also known as an alias record
+[08:45] this allows you to create
+[08:47] records that
+[08:49] Link to an a record so I could have a bunch of names if I wanted them all to link to the www record
+[08:57] Okay
+[08:58] Like maybe, maybe this server is not only a web server, maybe it is an FTP server.
+[09:02] Maybe it is an email server.
+[09:04] Okay.
+[09:08] And so I could have a CNAME record called mail for email.
+[09:12] I could have one called FTP for FTP.
+[09:15] And so if it was an email server talking, it could say, well.
+[09:19] If you're looking for mail.examlab.practice.internal, it just links to whatever this IP address is.
+[09:26] And that way, if you had a bunch of services running on the same server, and you had to
+[09:31] have a bunch of names, you wouldn't want to create a bunch of A records.
+[09:35] Because if the IP address was to ever change, you'd have to change all the IP addresses
+[09:38] for all those records.
+[09:39] But if you do CDAM records and you link them to one A record, the idea is that you'd
+[09:43] as many names as you want and you'd only ever have to change one IP address here.
+[09:48] You change this 1A record and the senior record will reflect all that.
+[09:52] Then you got mail exchange record. If it is an email server you'd also have to create those.
+[09:55] That's how email servers recognize each other. You have SRV records. These are actually...
+[10:00] what Active Directory services and things like that use. They can recognize a service and a port number.
+[10:06] You have text records. Those can have contain any text you want. So
+[10:11] In a lot of cases, this is used for verification,
+[10:14] like one-time codes and things like that
+[10:16] that can be generated on the fly.
+[10:18] And then you have a point of record,
+[10:19] that's called a reverse lookup record.
+[10:21] And that's where you're doing IP address to name.
+[10:23] So an A record is what we call a forward lookup record,
+[10:26] and that's named to IP address.
+[10:29] And then if you're doing a reverse lookup,
+[10:31] if something is doing a reverse lookup,
+[10:32] that's IP to name, well,
+[10:33] that's what a point of record is.
+[10:35] So that's a quick rundown of your DNS records.
+[10:38] So there you go, we have our private...
+[10:40] internal DNS zone here, private DNS zone.
+[10:44] And again, you got to remember this is not going to be available on the internet if I go out and I go to
+[10:49] www.examelibebrech.internal that's not going to do anything out on the internet.
+[10:53] It would work though if you had virtual machines collaborating with each other
+[10:57] communicating with each other inside of Azure.
+[11:00] It would also work if you had a VPN gateway and you were connected into Azure that way
+[11:03] or if you had a at your company maybe you got a hybrid environment where you got what's called ExpressRoute
+[11:08] which is a direct connection in Azure.
+[11:13] zone can be recognized.
+[11:16] Okay, so let's now go back over to all services.
+[11:18] I'm gonna search for DNS.
+[11:20] Okay, this time we're gonna choose DNS zones
+[11:22] instead of private DNS zones.
+[11:23] This is a public DNS zone.
+[11:25] So we'll go there, we'll click create.
+[11:28] All right, and we specify a resource group.
+[11:31] Maybe we wanna store this in.
+[11:32] And then at that point,
+[11:34] it asks if this zone is gonna be a child
+[11:36] of an existing zone already hosted in Azure DNS.
+[11:39] So if you already hosted a name,
+[11:42] like let's say I was gonna host the name
+[11:43] examlabpractice.net or let's do EDU.
+[11:47] Let's say it was gonna be examlabpractice.edu, okay.
+[11:52] Would that be a child name of an existing Azure DNS?
+[11:56] If that was the case, maybe I've got a,
+[11:59] subdomain called teaching dot exam lab practice dot edu or students dot exam lab practice
+[12:05] dot edu that would be a child name but I'm not doing that that if I was going to do that
+[12:09] I would select this name here or this checkbox here but I'm going to put exam lab practice
+[12:14] dot edu.
+[12:16] Now keep in mind, I don't really own that name.
+[12:18] I could buy that name from GoDaddy.
+[12:21] So keep in mind that is something you'd have to do.
+[12:23] You'd need to buy this name if you were going to truly support this to its publicly on the
+[12:28] internet.
+[12:29] So I'd go here, same thing here.
+[12:31] I could import from a DNS zone namespace if I wanted.
+[12:35] I'm going to click Review and Create.
+[12:38] And then I'm waiting on it to validate and I'm going to click Create.
+[12:41] Okay.
+[12:42] Alright.
+[12:46] does not mean this name can be hit from the internet. There are some other processes that
+[12:53] have to happen. Again, you would need to buy the name from somebody like GoDaddy.
+[12:59] Alright, now what would happen is, let's go to resource here, we would need to buy the name.
+[13:04] Now they tell you these are the Azure name servers. So how do you get GoDaddy to now
+[13:16] Okay, well the way you do that is when you you can go into GoDaddy or whatever registrar you want
+[13:23] and you can tell that registrar these are the name servers for this name.
+[13:30] And so what happens is now anytime somebody queries that name on the internet they get redirected to these Azure name servers
+[13:37] which you have registered that name with with Azure.
+[13:45] about your name. The problem is, is the company that owns the name, whoever you
+[13:51] register the name through, they don't know that you own the name yet. So we
+[13:57] would have to do that. Okay, we would have to go through and we'd have to
+[14:02] register with GoDaddy. If I actually go to to Google and just type GoDaddy
+[14:15] where you can see where people have done this.
+[14:18] So like we go over here, look at DNS management.
+[14:21] Okay, oh here it is.
+[14:24] So basically when you go into GoDaddy,
+[14:26] there's an area where you can add the name service
+[14:28] for the name you registered
+[14:30] and you would paste these names in right here.
+[14:34] At that point, you would be alerting that registrar,
+[14:39] you're saying, okay, well now Azure owns the names.
+[14:42] So now the name would be accessible.
+[14:45] from the internet. Okay, the name would be accessible from the internet. And I could then go in,
+[14:51] and I could go under DNS management, and I could add records. Okay, just like you saw with the
+[14:57] private, but this is public. So it would be accessible from the internet. Now, of course,
+[15:02] I'm not going to buy a domain name, and I'm not expecting you to buy a domain name just to see
+[15:05] this happen. But you understand the process. And now hopefully you understand the concepts.
+[15:10] And you hopefully now you also understand the difference between using a public DNS zone,
+[15:15] in a private DNS zone.

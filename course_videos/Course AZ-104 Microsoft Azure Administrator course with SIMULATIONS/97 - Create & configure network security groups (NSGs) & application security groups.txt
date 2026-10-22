@@ -1,0 +1,293 @@
+# 97 - Create & configure network security groups (NSGs) & application security groups
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/97 - Create & configure network security groups (NSGs) & application security groups.mp4
+Fetched On: 2026-10-21 20:42:58
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about network security groups and the concept of application security groups and then we'll look at creating some security groups.
+[00:08] So to begin with a network security group is a set of IP filter rules.
+[00:15] Now if you're not if you didn't know this pretty much anything that can handle traffic inbound or outbound such as a network adapter card or routing or router.
+[00:27] All of those things can handle what is called IP filtering.
+[00:30] What is IP filtering?
+[00:32] IP filtering is where you decide to either allow or block traffic based on a source or a destination.
+[00:41] Or do you want to block based on port or you want to block based on a protocol?
+[00:45] Now a lot of people think that that's just a firewall that does that but no yes
+[00:49] I should say firewalls can do that
+[00:51] But no firewalls are not the only things that can handle IP filtering pretty much anything in TCP IP could technically
+[01:00] do IP filtering if it allows traffic to flow in and out of it. Now in Azure, the way that we control
+[01:08] IP filtering without involving a firewall or any of that is to something known as an NSG or a ASG.
+[01:16] Now NSG is a network security group and it is a resource that we can create and we can place
+[01:30] individual subnet or we could place it on a virtual NIC directly. Okay, so if I
+[01:36] wanted to stop traffic flowing in and out of a specific subnet or allow
+[01:42] certain types of traffic to flow in and out of a subnet I could use this I
+[01:49] could place the NSG on a specific subnet.
+[01:53] Okay, if I wanted to allow traffic to flow in and out of a specific NIC, I could place it on a
+[01:59] virtual NIC. That is the idea of a NSG. Now one other thing of note here, if I place an NSG on a
+[02:10] subnet and I allow something and I place an NSG on a virtual NIC and I deny something. So for
+[02:23] which is HTTP traffic to flow into the subnet. But then I deny port 80 traffic onto this VM.
+[02:31] Well, traffic trying to flow into port 80 into this VM through this NSG is going to get blocked.
+[02:37] So my point is that when you think in regards to traffic flowing into something,
+[02:44] the most restrictive NSG will win in a conflict. If traffic is flowing
+[02:51] into here and it's saying okay it's okay to let that traffic in and then the
+[02:56] traffic is trying to get into this VM because maybe that's a web server and
+[02:59] then the NSG that's attached to this vNIC says no well it's gonna get blocked.
+[03:05] On the flip side if you denied the traffic here and allowed the traffic
+[03:10] here then it would have gotten blocked when it got to this NSG.
+[03:14] Okay, so the thing to understand is the most restrictive NSG applies, that's what you're
+[03:20] going to get if there's ever a conflict between having multiple NSGs.
+[03:23] Now, I'll also tell you that Microsoft's rule of thumb on this is don't have a lot
+[03:27] of security groups, don't have a lot of NSGs, don't have a lot of ASGs.
+[03:33] Minimize the amount that you've got as much as possible because it ends up, you know,
+[03:39] you end up running into problems where you got so many of these things, like a lot
+[03:43] to place a different NSG on every one of their virtual NICs and on every one of their subnets
+[03:47] and then they get mixed up on what's allowing what and it ends up not working. So you want to
+[03:52] try to minimize this as much as you can. Now the other issue you run into is that some virtual
+[03:59] machines may have multiple NICs, multiple v-NICs. Okay so let's say I've got a virtual machine
+[04:13] uh and you want to have an nsg that's going to control traffic on this vm but maybe uh instead
+[04:22] of the old way you would have had to have done is you would have if you wanted to allow port 80 on
+[04:26] both vnix uh you'd either have to place it on the whole subnet or you'd have to create a separate
+[04:31] NSG for each vNIC. So the way that we get around that problem now is we use what's called an ASG.
+[04:39] An ASG is an application security group and what you can do with an ASG is you can associate it to
+[04:48] the whole VM and you can say allow port 80 or port 443 or port 3389
+[04:56] on the whole VM that'll allow it on all the NICs. So if you had a lot of NICs and you were doing
+[05:01] what's called NIC teaming you wouldn't have to deal with setting up an NSG for each individual one.
+[05:07] Okay so that's the idea of an application security group.
+[05:11] Now that we understand the concepts of a network security group and
+[05:15] application security group, let's jump in and get some hands-on.
+[05:19] So here I am on portal.azure.com. I'm in my resource group called vNet demo
+[05:23] RG. I'm going to click to create. Then we're just going to search for
+[05:28] network security group. All right, and then there is the resource
+[05:35] right there, network security group. So we'll click create network security
+[05:38] group. All right.
+[05:41] It's going to be stored in the vNet demo RG resource group.
+[05:44] And then I'm just going to call this NSG demo.
+[05:49] Okay, so we'll go ahead East US, click review and create.
+[05:53] and wait on it to finish validating.
+[05:55] All right, and then I'm gonna click create.
+[05:57] So meanwhile, while that's getting created,
+[05:59] I wanna jump over and look at a network security group
+[06:02] that I've already got for a virtual machine.
+[06:04] So I'm gonna click the menu button,
+[06:05] I'm gonna go to virtual machines
+[06:07] and I have a virtual machine that I had already created
+[06:09] called Win Server One, I'm gonna click on that.
+[06:12] All right, and so I have a network security group
+[06:17] for this.
+[06:18] virtual machine. Now how did it get a network security group attached to it?
+[06:23] Well it got that because it automatically when you create a virtual
+[06:29] machine it'll by default automatically create a network security group that's
+[06:32] going to be associated to it. Okay so looking at right up under networking
+[06:37] right I can see there's application security group which I'm not looking at
+[06:42] right now. I can look at my networking settings.
+[06:45] All right, and then if I scroll down a little bit I can see right here where it says network security group is called wind server
+[06:51] one dash NSG now this was automatically created for me and
+[06:56] It is located in my VM desk
+[06:59] I have a resource group called VM destination if I click on that you can see all the elements of the virtual machine
+[07:05] including
+[07:06] the actual NSG, the network security group. So again, a network security group is an IP
+[07:12] filtering. It is not a firewall, though it does some firewall like activities. One of the things
+[07:18] firewalls generally do is IP packet filtering, meaning they can decide to block IP packets,
+[07:24] network packets. That's the little bits of traffic traveling across the network,
+[07:29] or it can allow it. Okay, so if you look right here,
+[07:32] You can see that currently we have an inbound security set of rules that are on this
+[07:39] NSG network security group and an outbound on the inbound we have this rule right here that says
+[07:47] RDP port 3389 running the TCP protocol
+[07:52] Allow source any any IP address
+[07:55] Coming in a source and any destination IP address and that's allow so currently we are allowing
+[08:03] any traffic to utilize port 3389 which is the remote desktop protocol to communicate through this NSG
+[08:12] Coming in this NSG is attached to the nick card the network interface card of our virtual machine
+[08:19] So essentially what that's saying is we are allowing traffic to come in from the internet and talk to our
+[08:25] virtual machines
+[08:26] Network adapter card network interface card even though it's a virtual nick. It's still considered a network adapter card, right?
+[08:34] Now that's what this rule is saying, right?
+[08:38] And the way that these security rules work is the first rule that applies to the traffic is the one the traffic gets.
+[08:48] So if it's communicating on port 3389, it will get that rule right there.
+[08:56] Okay? That's the deal, right?
+[08:59] If it's not port 3389, then it goes down to the next rule. See that's what the priorities, the lower the number, the higher the priority.
+[09:06] So if it does, if the traffic coming into this NSG does not, is not port 3389, it goes down to the next one.
+[09:12] So is it allow, is it VNet trying to talk to another VNet? It would get this rule.
+[09:17] Is it a load balancer, allow load balancer? It would get this rule.
+[09:20] And if it doesn't, if it doesn't fit into the, any of these three categories, guess what happens?
+[09:26] You get the default deny rule.
+[09:28] That's what we call the implicit deny rule or the default deny rule.
+[09:33] Basically it's a last resort rule.
+[09:35] If you aren't allowed by one of these rules, then you're automatically denied.
+[09:40] Okay, so that's the way that's going to work.
+[09:44] Now, a lot of times people ask if you've got this default deny rule,
+[09:48] do you actually ever have to create any other deny rules?
+[09:51] Well, the answer to that question is yes.
+[09:54] But let's talk about a few things.
+[09:57] before I explain that to you thoroughly.
+[10:00] So the first thing to be aware of here is with this NSG,
+[10:04] okay, if I want to edit this,
+[10:06] I can go under Settings and I can click Inbound Security Rules.
+[10:09] Okay, there's my rules.
+[10:11] All right, I'm going to click Add and I'm going to say source,
+[10:15] any on source port will say,
+[10:19] well, any source port, destination,
+[10:22] any port 3389, and then I'm going to say deny.
+[10:31] All right, and then I'm going to click Add.
+[10:34] So I just added a security rule that says deny.
+[10:37] Now my point in explaining this and showing you this,
+[10:40] there isn't really any reason why you would do this,
+[10:42] but if you did this right here,
+[10:44] this rule would never ever get applied.
+[10:49] Why is that?
+[10:50] Because again, any traffic coming in on port 3389
+[10:54] will automatically...
+[10:56] use this rule. The very first rule that applies to that traffic is the one you get. Now what would happen
+[11:03] if we were to edit this and let's change the priority. Let's set it to 299.
+[11:11] That's going to give it a higher priority than this other rule. So guess what would happen now?
+[11:16] all RDP traffic would get denied.
+[11:19] You would never use the allow rule.
+[11:21] So again, there's not really any good reason to do that,
+[11:25] but I'm trying to explain to you what would happen
+[11:27] if you did, so you understand.
+[11:29] This is, the key here to understand is that this is not,
+[11:32] the way that these rules work,
+[11:34] they are not a most restrictive
+[11:37] or less restrictive type of scenario.
+[11:39] It's not like the most restrictive rule wins
+[11:41] or the less restrictive rule wins.
+[11:46] the traffic, that's what actually takes effect.
+[11:49] Okay, so that brings to question,
+[11:51] a lot of times students will ask me,
+[11:53] why would I even need a denial?
+[11:55] Well, maybe you're trying to explicitly deny
+[11:58] a specific address, okay?
+[11:59] For example, let's say that we want to allow RDP,
+[12:03] but we want to explicitly deny a certain address, okay?
+[12:06] Maybe that certain address is...
+[12:11] 68, 76, 92.12.
+[12:15] Okay, for whatever reason,
+[12:16] we don't ever want this IP address
+[12:19] communicating with our server on port 3389.
+[12:24] Well, now that would take care of that.
+[12:27] And you would want this deny to be above the allow.
+[12:30] If you were to alter this,
+[12:32] let's change it to 301 as the priority,
+[12:36] then now this rule will never take effect.
+[12:40] because if this person tries to connect in,
+[12:44] whoever this is, this IP address,
+[12:45] tries to connect in on RDP,
+[12:47] well, they're gonna get in
+[12:49] because of this rule right here.
+[12:50] This'll be the first rule that applies to them.
+[12:52] So you definitely always wanna make sure
+[12:55] that your deny rule,
+[12:58] if you ever have an explicit deny rule like that,
+[13:00] you'd always want that to go above that allow rule, okay?
+[13:04] So that is something to think about, you know, when you're working with these various rules, you can set the rules any way you want.
+[13:12] Now, why is there a warning message for RDP? Well, the warning message goes down here.
+[13:17] It says RDP port 3389 is exposed to the internet. This is only recommended for testing.
+[13:22] For production environments, we recommend using a VPN or private connection.
+[13:26] So what they're basically saying is that if you're going to support remoting into a virtual machine,
+[13:32] 33.89 is fine if you're just setting things up and testing, but in the long term for a
+[13:38] production environment they recommend doing a VPN. You've got a bastion host. There's other
+[13:45] options that are considered more secure. This is fine for a lab environment, but in the real world
+[13:50] they're just saying, hey, you don't want to expose RDP to that server.
+[13:55] You don't want to expose it to the world if it's a server or something because hackers
+[13:59] can discover it and they can try to break in and brute force attack it or whatever.
+[14:04] So that's why they're saying that.
+[14:07] So there are alternatives, I'm not getting into the alternatives, I'll just say, you
+[14:10] know, VPing gateways, Bastion host, there's other solutions that are better for this.
+[14:17] So now getting kind of back on track with some of the main things here.
+[14:22] NSG is associated with a virtual NIC.
+[14:27] And you can also associate NSGs with subnets.
+[14:32] So let's jump back over.
+[14:34] I'm gonna jump back over to, let's go to all services
+[14:39] and we're gonna just search for network security groups.
+[14:43] And let's go back over here.
+[14:44] And we got this other NSG,
+[14:46] the one we created a moment ago,
+[14:48] the very beginning of this.
+[14:49] nsg demo currently there is no rules for working with rdp or any of that if i wanted to add that
+[14:58] i could i could go right here and i could say add you know source any uh source port that's fine
+[15:05] destination any custom service you know you can go down here and if rdp is show there you could
+[15:16] And then we could click add and we're now saying, okay, we're going to allow RDP inbound
+[15:21] for that.
+[15:22] So we created this rule.
+[15:23] We didn't have to do that with that other NSG because when we set the virtual machine
+[15:27] up, it automatically did that.
+[15:29] So the next question though is how would you associate this NSG with...
+[15:35] a subnet because you imagine that currently there's two things that an NSG can be associated with,
+[15:40] right? Network interfaces and subnets. So if I wanted to associate this with the subnet,
+[15:46] I just go here to subnets and I click associate and then I can say, all right, I'm going to
+[15:50] associate this with vnet one and we can say, hey, we'll go ahead and associate it with subnet a,
+[15:56] right? And then we could go ahead and associate with subnet b as well. All right? And we could
+[16:06] Obviously go ahead and associate that with whatever we want to associate it with.
+[16:10] All right so that sets up that allows us to associate our actual NSG with our various subnets.
+[16:20] Now where does an ASG fit into all this? Well NSGs are great because you know they can be
+[16:29] Network interfaces they can be associated with subnets. It's usually better if you can just do it on a subnet
+[16:35] Although you could specifically do it on interfaces as well. Okay, but it but as geez
+[16:42] so with an as g
+[16:45] They
+[16:46] Can only be associated with?
+[16:49] Nix. All right, so it's a logical grouping of virtual machine Nix
+[16:54] So if you had a bunch of virtual machines or you had a bunch of Nix
+[16:59] that have a bunch of virtual machines,
+[17:01] NIC teaming and all that,
+[17:02] you're gonna group those NICs together with an ASG.
+[17:05] So let's actually go in, let's create an ASG.
+[17:08] I'm gonna go here and I'm gonna go to the menu here,
+[17:15] go to all services, we're gonna search for
+[17:17] application security group.
+[17:20] Okay, there it is right there.
+[17:22] Okay, currently we don't have
+[17:23] any application security groups.
+[17:24] We're gonna click to create an application security group.
+[17:28] All right, I can choose my resource group. I'm just going to do the VM demo RG and then I'm going
+[17:32] to give it a name. I'm going to call it app security group demo. East US is the region.
+[17:41] I'm going to click review and create and then I'm going to go ahead and click create. All right.
+[17:47] Now one thing that's interesting about application security groups that I want to make clear to you
+[17:52] is that they, you can't just go into the app security group. Like if I click go to resource,
+[17:58] and expand settings, you're not going to see the rules listed here. You actually have to go to the
+[18:03] resource they're attached to. So watch this. Let's go to the menu button. I'm going to go
+[18:08] down to virtual machines. I'm going to go into my WinServer1 virtual machine, and I'm going to expand
+[18:14] under networking, right? Go to networking settings here. Okay, so right here you can see
+[18:28] You have an inbound you have outbound port rules and all of that
+[18:32] These these are your NSG rules, right?
+[18:35] Now if we go over here to the left, we've got a blade called application security groups. We're gonna click that blade
+[18:41] We're gonna click to add an application security group and we've got this application security group
+[18:46] We're gonna go ahead and select that application security group
+[18:49] So we're now gonna link this application security group to it. All right, but let's go back
+[18:55] So we've got that linked to it
+[18:57] Right. So now if we go back over here to networking settings and we click to add a port rule
+[19:04] Okay inbound or outbound port rule now right up here where it says source
+[19:09] This is how I can link it and say hey, this is going to be associated with the application security group
+[19:14] So I click that go right here and select that so my source right?
+[19:20] application security group
+[19:22] Source security group now. I've got my port range
+[19:26] destination. I could say any.
+[19:29] Application security rule, group rule.
+[19:32] So I'm setting my rules up here
+[19:35] to be associated with the application security group.
+[19:38] Okay, so I could then say,
+[19:39] well, let's say destination port range, we'll say 443.
+[19:43] I'll say any for the protocol.
+[19:46] I can say allow or deny maybe I'm doing this
+[19:49] because I'm gonna be set a web service up on this.
+[19:51] It's gonna be running HTTPS, right?
+[19:54] And I'll just leave the default name.
+[19:55] Now I'll click add.
+[19:57] And at that point, it's now adding
+[20:00] this rule and it's the rule will be associated with the application security
+[20:04] group so you can see that right here and you can see that it's associated with
+[20:08] the application security group. Now the great thing about this is if I had
+[20:11] multiple network interfaces, multiple NICs, multiple virtual NICs, then this can
+[20:17] go across all those virtual NICs.
+[20:21] and I don't have to have separate NSGs
+[20:23] or any of that stuff, it can just go,
+[20:25] it can expand across all those virtual NICs.
+[20:27] And so that's the idea of using Application Security Group.
+[20:31] I'm not saying it's super common,
+[20:33] I'm gonna just tell you that, you know,
+[20:34] NSGs on subnets and vNICs, those are a lot more common.
+[20:38] But Application Security Groups can come in handy
+[20:41] under those circumstances where maybe you have
+[20:43] multiple vNICs and you want it to span
+[20:46] those multiple vNICs.
+[20:47] Okay, well hopefully this video has now given you a better understanding of NSGs and ASGs and how we can implement those.

@@ -1,0 +1,301 @@
+# 44 - Implement and manage Azure Policy
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/44 - Implement and manage Azure Policy.mp4
+Fetched On: 2026-10-21 20:38:06
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about the concept of Azure policies.
+[00:03] Now policies in general is a pretty old concept.
+[00:07] We've had the idea of policy for decades,
+[00:10] going back into the 1990s with Windows NT,
+[00:13] we had group policies to put restrictions on the operating system,
+[00:16] and then with Windows 2000 Active Directory and above,
+[00:19] we have GPOs, group policy objects,
+[00:21] and the idea being that I can deploy
+[00:24] rules and restrictions out to my environment.
+[00:26] Well, the Cloud is no different.
+[00:29] scenarios where we come up with certain rules and restrictions that we need to
+[00:34] put in place and have those deployed. Azure policies are a way that we can
+[00:39] enforce rules and settings in our Azure environment and make sure that
+[00:44] everything stays compliant with our organization's requirements. So you think
+[00:49] of it as sort of like a set of house rules for your cloud resources that have
+[00:58] Only certain locations can be used when creating certain resources and I'll demonstrate this here in a second
+[01:05] another would be let's say you want to block expensive types of virtual machines from being creative or
+[01:12] Let's say maybe you want to automatically add tags to every resource for cost tracking
+[01:20] Or perhaps you want to make sure encryption is always turned on for a storage account.
+[01:27] These are just some examples for you.
+[01:29] The other thing that's nice about Azure policies is that when somebody creates or updates some resource,
+[01:35] the Azure policies will be checked against the actions being performed and...
+[01:41] The policy could then deny that action.
+[01:44] It could audit what's going on or for compliance purposes,
+[01:48] it could even fix something that's happened.
+[01:50] It has the ability to do what's called remediation.
+[01:53] Let's take a look at Azure Policy.
+[01:55] Now, here we are on portal.azure.com.
+[01:58] I'm going to click the menu button and I'm going to click
+[02:00] to create a resource group.
+[02:02] I'm going to click to,
+[02:05] when I build this resource group,
+[02:06] I'm just going to call this resource group.
+[02:08] Let's just call it East.
+[02:11] US only RG and you can probably tell by the name I kind of kind of where this is go and I'm gonna make it where I
+[02:18] create a
+[02:20] resource group and
+[02:21] It's it's for the east US region and then we're gonna set policy to try to restrict
+[02:26] Things from being created in that resource group that aren't part of that region
+[02:31] So I'm just gonna click review and create
+[02:33] And then we're gonna click to create
+[02:36] So we've created our little resource group here. Now I'm gonna go to the menu button here
+[02:41] I'm gonna go to all services and I'm gonna search for storage and
+[02:45] We're gonna create a storage account
+[02:48] All right, click to create
+[02:51] Now again, this is not a deep dive into storage accounts. We just want to create a resource here for demonstration purposes
+[02:57] I'm gonna call this storage account
+[02:59] West US only storage
+[03:04] JC
+[03:06] That'll be the name of my storage account.
+[03:11] So it's West US and I'm going to switch this to West US.
+[03:15] We'll just do, let's just do West US 2.
+[03:17] In this case, that'll be fine.
+[03:20] And we're going to make sure that this is the East US only RG.
+[03:23] Keep in mind, we haven't put any rules in place yet, so we should be able to create
+[03:27] this resource, right?
+[03:30] This storage account.
+[03:31] All right.
+[03:32] So I'm just going to go here for primary service, choose this option here, standard.
+[03:37] I'm going to choose LRS for this and then that's fine.
+[03:40] For the bare minimum, I'm going to click review and create.
+[03:44] All right, it's going to validate, make sure there's no issues, and then I'm going to click create.
+[03:47] I'll go ahead and just pause the recording while this is getting created.
+[03:51] All right, so now that's done. See where it says resource group.
+[03:53] I'm going to click on the resource group and you can see the storage account.
+[03:57] has been created. It says location west us though the storage account is east us. Okay so now
+[04:05] let's go right over here underneath settings and look there's a blade called policies.
+[04:11] All right so we get into policies and
+[04:15] Here is the way that policies can work. You can assign a single policy at a time or you can assign
+[04:21] a group of policies. This is called an initiative. So if I just want to throw out a single policy
+[04:28] that's going to be in effect, I can choose just to assign a policy. If I want to assign a group
+[04:33] of policies, multiple policies at a time, I can do an initiative. I'm going to go right here though.
+[04:39] We'll click on assign policy.
+[04:41] And then it asked me what the scope is gonna be.
+[04:44] In this case, the scope would be I'm applying this
+[04:46] just to that one resource group.
+[04:49] If I click the ellipse symbol there,
+[04:51] you'll see it would show me other resource groups
+[04:54] I wanna assign it to.
+[04:54] My management group up here,
+[04:56] I could have other subscriptions,
+[04:58] but I've only got one of each of those.
+[04:59] So that's fine as far as subscriptions and management group.
+[05:02] So I'm just gonna do this resource group.
+[05:06] So from there,
+[05:08] I can also have exclusions.
+[05:11] So optionally select resources to exclude.
+[05:13] So if there was some resources in here
+[05:15] you wanted to exclude inside this resource group,
+[05:17] you could do that, right?
+[05:19] So that would that would be an option for you.
+[05:21] If I wanted to exclude this guy here, I could.
+[05:24] We'll leave that alone.
+[05:26] OK, then we want to choose our definition.
+[05:28] So a definition is actually the policy itself.
+[05:32] And it's made up of a language called
+[05:34] JSON, JavaScript Object Notation.
+[05:36] Pretty much all of the various policies
+[05:40] are based on that JavaScript Object Notation.
+[05:43] But I'll click here, and I'll click this little ellipse
+[05:45] symbol.
+[05:48] policies listed out here. Now the policy I want to implement involves location. So
+[05:54] I'm going to do a search for the word location.
+[05:56] All right, just hit enter on that and here is the policy I want to go with now. I have one called allowed locations
+[06:03] I have another one called allowed locations for resource groups
+[06:05] This would be for the creation of resource groups locations
+[06:09] But I want to control what's created inside the resource group
+[06:13] So I'm gonna go here and choose this one and then I'm gonna click add now as a side note if you're wondering
+[06:19] You know about these different policies and maybe you don't quite understand what they do
+[06:24] If I go, I'm just gonna go back over here and right click on all services and I'm gonna open
+[06:30] this in a new tab. We'll leave this screen open. We're gonna jump over to that new tab for a second
+[06:34] though. Okay, I'm gonna go to the menu button. I'm gonna go to resource groups. I'm gonna open up my
+[06:41] east US only resource group. I'm gonna click on policies and then I want to show you underneath
+[06:46] where it says authoring then definitions.
+[06:50] And this will let you see all of Microsoft's current policies
+[06:55] based on these definitions, okay?
+[06:58] And they've even got some initiatives which are groups, right?
+[07:01] If I do a quick search on the word location,
+[07:05] all right, you should be able to find that same one,
+[07:08] allowed location.
+[07:09] And if you want to look at it...
+[07:11] You can see information such as the name and the version, even the description.
+[07:15] If we kind of hover over this, you can read what it says.
+[07:17] As this policy enables you to restrict the locations,
+[07:20] your organization can specify when deploying resources.
+[07:23] All right.
+[07:24] So it gives you an idea. Also the actual JSON data for that policy is right here. So you can
+[07:30] kind of see the pattern that it takes and the fields and all that. There's lots of information
+[07:36] out there on the web about creating policies with the JSON and all of that. It's not something we
+[07:42] get into here, but definitely something you can look into if you want to learn more about
+[07:46] building custom policies. Okay. All right, let's jump back over to the policy that we're creating.
+[07:54] All right, and our assigning I should say.
+[07:57] So we've done policy definition, we got the version number.
+[08:01] So right here where you've got version number,
+[08:04] you can select a little ellipse symbol
+[08:06] and it tells you, it says this policy definition
+[08:08] has the following version.
+[08:09] Select the one you would like to assign.
+[08:12] Then it says the option you select
+[08:15] will determine the major version
+[08:17] this assignment will reference.
+[08:19] You can choose whether to automatically enroll
+[08:23] version upgrades and or previews. All assignments will always receive patch changes.
+[08:29] So you can have it automatically enroll in the minor version changes if you want, which is pretty neat.
+[08:35] You could also even have it include preview versions of new preview versions of this that come out.
+[08:42] So that's the idea of version. You've also got the Azure override
+[08:49] capability that we've got available to us here.
+[08:52] All right, so the idea of
+[08:55] This override they tell you using overrides
+[08:58] you can change the effects or reference versions of definitions for all or a subset of
+[09:04] resources evaluated by the assignment
+[09:06] Okay, so what exactly is that going to do? All right. Well think about it like this
+[09:13] Let's say you have a group of policy like initiative and one of them is set to audit all virtual machines
+[09:21] using large, certain large sizes.
+[09:25] Maybe you're not ready to enforce that rule just yet,
+[09:30] or maybe you don't even want to audit it.
+[09:32] So instead of editing the policy
+[09:34] and having to turn off that feature,
+[09:38] you could just say, hey, I want to ignore it today.
+[09:42] I'm just going to ignore it.
+[09:43] And so that's sort of the idea there,
+[09:45] of supporting overrides.
+[09:46] This allows you to temporarily override a policy,
+[09:50] if need be.
+[09:51] Then we got assignment name, allowed locations.
+[09:54] I could put a description here and then I could say,
+[09:57] okay, policy is going to be enforced.
+[09:59] That point I'm going to.
+[10:00] click next. Now I have to specify any parameters that this policy has. Now a
+[10:04] parameter is going to be a required piece of information that the policy is
+[10:09] going to need to know before it can be turned on. In fact if I try to do this
+[10:13] right now, if I click review and create and try to create this policy, it's gonna
+[10:18] fail. Okay because I haven't specified the parameter and if you think about
+[10:22] this logically this is gonna make perfect sense because
+[10:25] the parameter that's required is the allowed locations.
+[10:28] Well, what locations are you going to allow in this policy
+[10:33] if the policy is literally called allowed locations?
+[10:36] So I need to specify, and I'm going to say East US.
+[10:40] That's what's going to be allowed in my case.
+[10:42] So now I've specified my parameter.
+[10:44] Of course, some policies will have multiple parameters.
+[10:48] This one only has this one.
+[10:50] But I'm going to go ahead and click Next.
+[10:52] And then we have remediation.
+[10:53] Now it tells you right here, it says by default, this assignment will only take effect on newly created resources.
+[11:01] Existing resources can be updated via a remediation task after the policy is assigned.
+[11:17] And then for modify policies, the remediation task will edit tags on existing resources.
+[11:24] Okay.
+[11:25] All right.
+[11:26] So the idea there, let's just clarify, you know, what is remediation exactly?
+[11:32] The idea being that when a resource doesn't follow certain rules, then it's not compliant.
+[11:38] All right.
+[11:44] But this is only gonna work if the policy was written with
+[11:49] One of two special powers in the policy one being the deploy if not exist and that means that
+[11:56] There's something that needs to be deployed because it doesn't it doesn't exist at all
+[12:01] So for example if something's missing like maybe it's just a tag that's missing or some kind of setting needs to be
+[12:08] Added then it would create or deploy whatever it is. It's missing and then
+[12:14] That's there's also the modify
+[12:17] Power modify capability and that's a scenario where if something's wrong
+[12:23] It can change or fix it. Not all policies can support a full-blown remediation
+[12:29] Okay
+[12:31] So that's where that's going. The other thing is it tells you that for policies with the deploy if not exists
+[12:39] Capability in it power if you will and modify
+[12:43] effect types need the ability to deploy resources and edit tags on existing resources respectively.
+[12:49] It will need to create what's called a managed identity.
+[12:53] The managed identity is a temporary Azure account identity that Azure will create that will be given the power to perform this task,
+[13:08] the task is being performed.
+[13:10] So what happens is Azure will create this temporary account
+[13:13] that it'll use to perform this task
+[13:15] and then it'll delete the account when it's done.
+[13:16] That's the idea of this managed identity.
+[13:19] Okay, so I could turn that on and say,
+[13:21] okay, great, we'll do a managed identity,
+[13:24] system assigned managed identity,
+[13:26] or you could actually create one yourself.
+[13:28] Did you specify, or usually most everybody
+[13:31] just does in a system assigned one.
+[13:33] But you could create one yourself
+[13:34] and control exactly what permissions and stuff is given.
+[13:37] All right.
+[13:37] But that's the idea of utilizing remediation with policies. Again only certain policies will support remediation.
+[13:46] Okay I'm going to click next and then I can also have a if something is not compliant I can have a message.
+[13:53] I'm just going to say not compliant with a bunch of exclamation points like I'm yelling.
+[13:59] All right and then I'm going to click review and create and then at that point we're going to click to create.
+[14:05] Alright, so we've now officially created our policy.
+[14:08] Now I will warn you that like many,
+[14:11] many things in Azure, you have to.
+[14:13] You get a lot of hurry up and wait moments.
+[14:16] It don't expect the compliance state
+[14:18] on things to update very quickly.
+[14:21] Sometimes it could be 15 minutes.
+[14:22] Sometimes it could be an hour before you actually see
+[14:25] some information here.
+[14:27] Okay, so just be aware of that.
+[14:29] Now let's go over here.
+[14:32] Back into our resource group now, we already know this one violates the compliance
+[14:37] So eventually we should have a not compliant message here, but it's already created in this resource group
+[14:45] Before that policy was put in place. Let's see what happened if I was to try to create this
+[14:52] Resource group or a similar storage account
+[14:54] Sorry if I was to try to create a similar storage account in West US even though this is East US and now I have a policy
+[15:00] In place, so we're gonna go over here to the menu button all services
+[15:05] We could search for storage account. It may show up right here on the screen already if it does great
+[15:11] Okay, now I'm gonna click to create a new storage account in the east US are only RG. I'm gonna call it
+[15:19] the
+[15:20] New storage
+[15:23] ACCT ELP JC that's gonna be the name of this storage account and I'm gonna try to create it in West US to
+[15:32] All right. I'm gonna choose this as my storage primary service standard
+[15:38] LRS now I'm gonna click review and create and let's see what happens
+[15:43] And there you go, look, I've got a validation error.
+[15:46] So it doesn't let me go through the process
+[15:49] of creating the storage account
+[15:51] because it violates a policy.
+[15:54] You can see right here, the resource group says
+[16:00] the resource was disallowed by a policy, okay?
+[16:04] So it's not gonna be allowed.
+[16:06] And notice it says reason is not compliant
+[16:09] with a bunch of exclamation points, all right?
+[16:12] So it's not going to let me do that.
+[16:14] All right, now let's go back to the basics and let's just change it over to East US
+[16:17] and see if it'll let me do it.
+[16:19] So Review and Create.
+[16:20] All right, and then I'm going to click to Create.
+[16:27] We'll let that get created.
+[16:28] All right, now let's go up here where it says Resource Group.
+[16:31] We're going to click on this Resource Group and you're going to see that I now have
+[16:35] both storage accounts showing up, one in the East US, which should be compliant.
+[16:40] and then this guy here is not compliant,
+[16:43] but it's not gonna do anything other than
+[16:45] it should tell me now that it is not compliant.
+[16:48] Okay, so if we go over here under settings
+[16:51] and click policies, we should see 100% not compliant
+[16:56] for this one, yeah.
+[16:57] And actually if we click on allowed locations,
+[17:00] you can see that it's telling me that
+[17:04] the one resource is 100% not compliant.
+[17:08] Well, there's only one parameter which was the location.
+[17:11] So yeah, that's when it says 100%, that's what it's talking about.
+[17:14] So you can see right here that this one is not compliant.
+[17:17] Okay.
+[17:18] All right.
+[17:19] So anyway, hopefully that gives you an idea now of policies.
+[17:23] I encourage you to feel free to click on policies and go to definitions and kind of
+[17:28] explore and look at some of the different policy definitions.
+[17:37] Made available to you and there's also communities out there creating these things that can be imported in and all that fun stuff, okay?
+[17:46] But yeah, there's a lot of policies to play around with definitely
+[17:50] This is a incredibly powerful tool that's made available to us and it's a it's definitely something to play around with
+[17:57] All right. Now that that's done
+[17:58] The last thing I'm gonna do is I am gonna delete my resource group which will also delete the storage accounts because I no longer
+[18:04] Need those so I'm gonna go right here
+[18:06] to this East US only resource group. I'm going to click delete the resource group, copy the name,
+[18:14] paste it. It's also going to be deleting these storage accounts. All right,
+[18:19] and with that, I'm now ready to move on.

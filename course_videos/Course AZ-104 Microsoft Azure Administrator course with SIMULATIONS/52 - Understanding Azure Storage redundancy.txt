@@ -1,0 +1,184 @@
+# 52 - Understanding Azure Storage redundancy
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/52 - Understanding Azure Storage redundancy.mp4
+Fetched On: 2026-10-21 20:26:49
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to talk about the concept of Azure storage redundancy.
+[00:05] So probably one of the biggest concerns that a lot of us have is that we go through this process of
+[00:11] putting all this data out in the cloud, out in the Azure environment.
+[00:15] And, you know, yes, we care about security and getting it out there and being able to upload and download,
+[00:22] but one of the big concerns, of course, is redundancy, right?
+[00:29] something goes wrong in a Microsoft data center.
+[00:32] And of course, you know, just the great thing about the cloud is it sort of offloads this
+[00:36] responsibility of us having to deal with all this on-premise equipment and all the headaches
+[00:42] involved.
+[00:43] But rest assured that technically there's still data centers involved.
+[00:49] There's still equipment involved.
+[00:50] There's still human beings involved here.
+[00:52] It's just somebody else is dealing with it.
+[00:57] there is no such thing as cloud only somebody else's computer.
+[01:01] And technically that's sort of a little bit true, right? Because
+[01:05] really what you're doing is you're paying Microsoft,
+[01:08] you're paying their people and their facilities to basically hold your data.
+[01:12] And so you want to make sure that they are protecting your information.
+[01:16] And I will say that they, I would have to say that they
+[01:20] really are protecting your data, keeping it very,
+[01:24] redundant and understanding the different options for redundancy is important, right?
+[01:33] First off you have to also consider the fact that
+[01:35] uh some redundancy options are going to be more expensive than others just like many other things
+[01:40] in the cloud it is going to cost a little bit of money if you want to if you want the the really
+[01:45] really high amount of redundancy. So the first thing we need to do here though is we need to
+[01:50] understand what our different redundancy options are and all that. So first off what is storage redundancy?
+[01:57] Well, it's the concept of having multiple copies of your data
+[02:01] stored out there in case of a situation where there might be a hardware failure or maybe a network failure or a power outage or
+[02:09] maybe some kind of like a big natural disaster of some kind and we want to make sure that our data is highly available
+[02:16] You know has high durability is available at all times no matter what happens in a failure now
+[02:22] One of the things we do got to consider is
+[02:25] when we think about you know
+[02:27] cost versus high availability is there's different factors and these factors will involve things
+[02:33] like you know how is your data going to be replicated. So with with redundancy data redundancy
+[02:39] there's two main ways that data gets replicated. One is called synchronous replication and the
+[02:45] other is called asynchronous replication. Synchronous replication means that your data will be written
+[02:56] It gets written in multiple places simultaneously.
+[03:00] So let's say you have three, you know, three sets of replications here.
+[03:06] So your data isn't just getting written in one place and then replicating, it's getting
+[03:09] written to all three locations at the same time.
+[03:12] That is synchronous replication.
+[03:13] Then you have asynchronous replication, which involves your data getting written somewhere.
+[03:18] And then after it gets committed to that location, it replicates to the other locations.
+[03:23] Something else we want to be thinking about is if our data is being written to a different place,
+[03:31] if it's actually being written to multiple places in the same region,
+[03:36] or if your information is being written to multiple regions. In that case you have
+[03:41] like a global based global zone replication system and if that's the case usually these regions will
+[03:48] be hundreds of miles apart. So you might have a primary region you might have a secondary region
+[03:52] your data gets written to the primary region and then eventually replicated over the secondary
+[03:56] region within usually just a few seconds which of course is asynchronous replication. Now the other
+[04:05] to think about is your primary data is all going to be, you know, written there in that
+[04:10] primary location. It's all writable and everything, but that secondary is only really used if
+[04:15] the primary goes down. Well, you can also enable what's known as read access, which
+[04:19] allows your primary region to be the main writable location, but then the secondary
+[04:25] could also be read access for some of your users that are closer to those data centers.
+[04:29] So that's something else you want to consider.
+[04:32] when thinking about all this. But really trying to put all that together, and I know that's probably
+[04:38] a lot coming at you at one time. If you're new to all this, the easiest way to really understand
+[04:42] this is to really just break down each individual solution that Microsoft gives us. So that's what
+[04:49] I want to do with you right now. We're going to start out by talking about the most common
+[04:54] strategies that a lot of companies will use. And the first here you'll see is
+[04:59] redundancy in the primary region. So we have a primary region
+[05:04] Okay, and understand that in Azure, each region is made up usually of three zones, which is
+[05:11] generally three different data centers, or in some cases, they have these massive data center
+[05:15] warehouses where there's actually, it's like having three data centers in one data center.
+[05:21] Each of these zones, these data centers have their own power, their own networking,
+[05:27] they've got their own air conditioning systems, all of that that are separated from each other.
+[05:33] those zones in each in a single region. This is why Microsoft maybe has 60
+[05:40] something regions in the world but
+[05:42] they have like roughly three data centers or at least three zones
+[05:46] in each location giving them about 180 different impossible zones that data
+[05:52] can be written and that's not counting when you start
+[05:54] thinking in terms of the government and and and all that so but the two most
+[05:59] basic strategies for redundancy the first is called LRS okay LRS is
+[06:04] going to be your cheapest solution but it's also not going to provide as
+[06:07] high availability as some of the others right
+[06:10] It's going to basically do synchronous replication.
+[06:13] You'll have three copies of your data stored in a single physical location.
+[06:18] So imagine you've got a data center and three copies of your data are going to be stored
+[06:23] in three different places.
+[06:25] Or I should say...
+[06:26] a copy of your data will be stored in three different locations in the same
+[06:30] location. Alright and that's the idea of LRS. I'm going to explain this a little
+[06:35] better in this next slide. The then you have ZRS. ZRS is zone redundant storage.
+[06:40] You're going to have what are called availability zones. So you're not just
+[06:44] storing all your data in one data center in three places in the same data
+[06:48] center. You're actually storing a copy of your data
+[06:51] in three different availability zones. So it's the same region, but three different data centers,
+[06:57] or what they call a availability zone, which is again, each availability zone has its own power,
+[07:02] its own air conditioning, its own network equipment, everything is separated in each
+[07:07] individual availability zone. So let's take a deeper look at these now. We'll start with LRS,
+[07:13] locally redundant storage. All right.
+[07:15] you get what's called eleven nines of durability. Okay, so in a year's time
+[07:23] you could calculate the availability of you're talking about microseconds of downtime. Now the
+[07:30] downside of LRS, the major downside is all of your data you have three copies of your data
+[07:37] and they're all stored in the same data center, same zone, same data center, same region.
+[07:42] all in one place. Okay, so of course if there was some kind of a disaster that happened in
+[07:48] that data center, some kind of a fire or flooding or something like that was to occur, your data
+[07:55] would be 100% not available.
+[07:57] Okay, because you've got three copies. Now it will protect you from let's say one of the server racks
+[08:04] fail or a network rack fails because you got three different copies in there. Okay, so that's
+[08:11] that's where your benefit comes. But this is going to be the cheapest locate, the cheapest way to go
+[08:16] for redundancy, but it also doesn't provide the high amount of durability that some of these other
+[08:21] provide you with. Now it does do synchronous replication with LRS that means that
+[08:25] as data gets written it's going to write to all three places at one time in that data center.
+[08:32] Then you have zone redundant storage ZRS. Okay, so with zone redundant storage you'll notice in the little graphic there
+[08:38] We have our primary region each primary region has three different availability zones
+[08:44] Which again are like three different data centers keep in mind that sometimes the data centers are housed in the same massive building
+[08:49] But they're all separated
+[08:52] Power networking air conditioning is all separated out. Okay, so they give you 12 nines of durability as they call it
+[09:01] In this case, the benefit you get is an availability zone could go down, an entire building or entire data center could fail.
+[09:12] and you would still be okay. You would still have all your data. As long as the whole region doesn't
+[09:16] go down, like if you had a, of course that's where you get into a problem, if a power grid or something
+[09:21] goes down, they have generators and all that, but after a while your data may not be available
+[09:27] depending upon if it was like some kind of major disaster that was to occur to that entire region.
+[09:32] It could take out all three of the availability zones, but ultimately you get a higher amount of
+[09:39] availability with this than you do with LRS because your data is being copied to three different
+[09:45] availability zones. Okay. All right. The next one, this is the next level up, is called
+[09:52] geo-redundant storage. So that's GRS. And the idea of GRS is you get
+[10:00] in a single data center in each you get two regions primary and secondary and
+[10:06] The secondary will be a hundreds of miles away. Okay, the regions will be hundreds of miles away
+[10:12] Alright, and you get you get basically LRS in two different
+[10:17] Regions so a you get three copies in the same availability zone in both regions. Alright
+[10:25] So you're not getting?
+[10:27] you know, you're not getting three availability zones in each region. You're getting one availability zone
+[10:32] and three copies in that same availability zone in the primary region and the secondary region.
+[10:37] Now by default also the secondary region can only is only accessible if the primary region fails.
+[10:45] So that secondary region, the data that's there is not available for people to have access to
+[10:50] unless the primary was to go down.
+[10:52] Okay, of course the other downside of this is it does use asynchronous replication, which means
+[10:57] that as data is written it always gets written to the primary first and then gets written to
+[11:01] the secondary. So if something was to go down there could be a couple of seconds delay when
+[11:06] things are being replicated. Something could go down, the secondary region could be a few seconds
+[11:11] out of date on its data. So there is a you have to consider that. But the the big benefit here
+[11:16] with GRGRS
+[11:18] is you could have a catastrophic failure of some kind in that region.
+[11:23] Massive hurricane, tornado knocks down all the buildings, fires, whatever it may be,
+[11:30] and you've got a copy of all your data in that secondary region.
+[11:33] Now the other thing, and I'll go ahead and mention this now, but I'm going to mention
+[11:35] it here in just a minute as well, you can add a feature to this called RA, which is
+[11:40] read access.
+[11:42] RA GRS, okay, or sometimes people even refer to it as GRS RA, which is essentially what that is,
+[11:48] is that makes it where your secondary has read access to your for users. So it maybe I've got
+[11:56] I've got my primary region is East US and my secondary region is Central US.
+[12:02] and I might have some users that are closer to the central US and they could actually read the data
+[12:08] that's in the central US copy even though it's the secondary. So that's the idea of RAGRS.
+[12:18] So then you have GeoZone redundant storage, GZRS. Now the big difference between this one
+[12:32] zone redundant storage feature with the geo redundant store. So you're going to
+[12:36] get three availability zones in your primary and your secondary just has an
+[12:43] LRS has three copies in that location. So this is going to give you the
+[12:47] availability zone capabilities as well as the the geo redundant side of things.
+[12:53] Not to mention you're getting the 16 nines of durability which is obviously
+[13:00] insane amounts of durability, high availability as well. So even more
+[13:06] you know even more durability with this one. All right now last thing I want to talk about there
+[13:10] is that with that whole GRS and GZRS you can combine the RA with it. So you can have read access
+[13:19] geo redundant storage read access geo redundant geo zone redundant storage. So you can actually
+[13:32] read access, all right? And whatever secondary region that is, if you have users that are near
+[13:39] that region, they can be redirected and given access to be able to read that data, especially
+[13:45] if you're doing something like web services and all that. You have users that are closer
+[13:50] somewhere on the internet to a certain region, they will benefit from that, okay?
+[13:55] But ultimately those are the different redundancy options that we have available to us in Azure.
+[14:03] You can select those when you create a storage account.
+[14:06] You can also go back and change which of these options you want later.
+[14:10] You can also check the cost of this by using the Azure calculator.
+[14:15] So that might be something you want to definitely think about if you're going to implement zone
+[14:19] redundancy go through there and take a look at calculate it and go from there.
+[14:25] It needless to say they provide lots and lots of
+[14:29] redundancy, lots of different options, but one the last thing I want to say on that
+[14:33] is that not all of these redundancy options are available in all regions.
+[14:37] They're slowly but surely trying to implement all these options in the
+[14:42] different regions, but some regions they don't give you some of these
+[14:45] options. And the other thing is if you've got a trial account some of these
+[14:48] options are also not available to you there.
+[14:50] They want you to get in to be in like a full-blown
+[14:54] a business-based payment plan with them and then they'll make some of these other options available.

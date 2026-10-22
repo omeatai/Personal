@@ -1,0 +1,128 @@
+# 93 - Create and configure virtual network peering
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/93 - Create and configure virtual network peering.mp4
+Fetched On: 2026-10-21 19:55:50
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now one thing to be aware of when it comes to VNets is that subnets within a VNet can
+[00:05] communicate no problem.
+[00:07] They'll route to each other no problem.
+[00:09] but subnets between VNets will not route to each other by default.
+[00:15] You have to set up what is called a VNet pairing in order to make that happen.
+[00:20] All right. So let's take a look at what I'm talking about here.
+[00:23] So here I am on portal.azure.com.
+[00:26] I'll click the menu button and I'm just going to go right down here to
+[00:29] virtual networks and I'm going to click on VNet 1.
+[00:33] And now that I'm in VNet 1,
+[00:35] I'm going to look at my subnets.
+[00:36] Now, these subnets,
+[00:39] subnet 1a and subnet 1b, they could communicate. So if I was to set up a virtual machine and put
+[00:46] one virtual machine on subnet 1a and another virtual machine on subnet 1b, they would be able
+[00:51] to communicate with each other. Now if I was to put a virtual machine on subnet 1a and then I was
+[01:05] they would not be able to talk to each other, not by default.
+[01:09] Okay, so in order to make that work, we need to set up what is known as peering.
+[01:14] Alright, now I want to do that. Before I do that, I am going to delete VNet 5.
+[01:18] I do not need VNet 5. I just created that for a PowerShell demo.
+[01:24] So I'm going to go ahead and delete that.
+[01:27] and get rid of that.
+[01:28] So we're just gonna use the four VNets.
+[01:30] And I'm gonna sort of treat this as like a hub and spoke
+[01:33] scenario where VNet one is sort of like the hub
+[01:37] in our environment and then the VNet two, three and four
+[01:40] would be spokes coming off of that.
+[01:42] We might want the different VNets to be able to talk
+[01:46] to VNet one, it being the hub, all right?
+[01:49] So here I'm on VNet one and I'm gonna go ahead
+[01:53] and click on peerings and that's under the settings
+[01:55] dropdown.
+[01:56] Okay, so right now you can see there is no peerings that have taken effect.
+[02:02] We haven't set any of that up yet.
+[02:03] Okay, and I'll also kind of warn you that peerings go both ways.
+[02:07] So when you set a peering up, like if I set a peering up between VNet 1 and 2, there's
+[02:11] going to be a peering going to VNet 2 and then a peering coming back to VNet 1.
+[02:16] Now that we understand that, let's go ahead and click Add to Add a Peering.
+[02:20] Now the first thing it's going to say is remote virtual network summary peering link name.
+[02:25] So we're setting up the peering link name that's going to involve the other vnet being able to
+[02:30] talk to this vnet. Okay and then down here you'll see you have local virtual network summary.
+[02:38] This will be this vnet talking to the other vnet. So for remote peering name I'm going to say vnet
+[02:50] So virtual network deployment model we're going to use resource manager as the there's this older
+[02:55] Classic model that some of the older versions of Azure use we're not using that if you actually already if you knew the resource ID
+[03:02] Of the V net you can actually use resource IDs for tagging all this
+[03:08] But it's a whole lot easier just to drop it down and choose it. So
+[03:12] Okay, so that's the idea. So the virtual network
+[03:16] that we're talking about the one that's the remote virtual network listed here that's going
+[03:20] to be vnet2. That's the one we're trying to peer with right now, right? So then it says remote
+[03:25] virtual network peering settings. You have allow vnet2 to access vnet1. That means we do want
+[03:30] vnet2 to be able to communicate with vnet1. All right.
+[03:34] So if you had a virtual machine sitting on attached to vNet 2 and you wanted to be able to talk to
+[03:38] vNet a virtual machine on vNet 1, you're saying yes to that. The next is allow vNet 2 to receive
+[03:45] forwarded traffic from vNet 1. Now they tell you right here it says enabling this option will allow
+[03:51] vNet 2 to receive traffic from virtual networks peered to vNet 1. So for example if vNet 2
+[04:04] Appliance basically network virtual appliance like a load balancer firewall or whatever
+[04:08] Says if if vnet 2 has an NVA that receives traffic from outside of vnet 2
+[04:15] That gets forwarded to vnet 1 you can select this option to allow that traffic to reach vnet 1
+[04:22] From vnet 2 while enabling this capability allows the forwarded traffic through the peering it does not
+[04:30] create any user defined routes or network virtual appliances, you have to do that yourself.
+[04:35] So that user defined route that gets into where you set up a custom routing table to control the
+[04:39] flow of traffic or the network virtual appliances like a load balancer or firewall or something
+[04:44] like that. So if you want to allow that traffic that flows from the outside of this VNet and
+[04:55] The next is allow gateway or route server in vNet 2 forwarded to traffic to vNet 1.
+[05:01] That's talking about a VPN gateway. If you look at what that says, it says enabling this setting
+[05:07] will allow vNet 1 to receive traffic from vNet 2's gateway or route server. So if you were setting
+[05:13] up a VPN gateway in vNet 2 and you wanted vNet 1 to be able to communicate with it and receive
+[05:17] traffic and all that, you would check this box. The thing is that vNet 2 is not our hub.
+[05:24] it's a spoke. The VNet-1 is going to be our main hub. So imagine you want VNet-1 to be the one that
+[05:30] if there's going to be a firewall and you're going to have a
+[05:33] you know, load balancing and all this stuff coming in from the internet,
+[05:36] maybe it's going to flow through VNet one and then it would flow out to VNet
+[05:40] two, three, and four as our spoke VNets.
+[05:44] So we do it and turn that on. Plus, even if we did right now,
+[05:46] we're going to see a warning message.
+[05:48] So as VNet two does not have a VPN gateway or route server to enable this
+[05:51] option, VNet two needs to have a VPN gateway or route server.
+[05:54] So we're not going to do that.
+[05:56] The next is enable VNet 2 to use VNet 1's remote gateway or server.
+[06:00] So if you want VNet 2 to be able to talk to VNet 1's gateway remotes route server,
+[06:04] then you would check this box.
+[06:06] We're not going to do that right now because we don't have a remote VPN gateway or route server or any of that.
+[06:12] OK, so then we're going to come down here to the local virtual network summary.
+[06:16] So this was the remote, right?
+[06:18] So local, we're going to call this VNet 1-VNet 2.
+[06:25] That's gonna be the name of it.
+[06:27] All right, up here it's two to one, this is one to two.
+[06:29] So you have the same check boxes.
+[06:31] I'm gonna go ahead and select these.
+[06:32] I'm not gonna select the last two.
+[06:34] Then we're gonna go ahead and click Add.
+[06:35] All right, so we've now set up our peering
+[06:37] between VNet one and two.
+[06:40] Now I want you to notice I'm looking at VNet one
+[06:42] and I have VNet one to VNet two.
+[06:44] Now if I jump over to VNet two and I look at peerings,
+[06:51] let me refresh it, there it is.
+[06:53] You have VNet two to VNet one.
+[06:54] So you have a peering going both ways.
+[06:57] It's taking care of both directions.
+[07:00] Let's jump back over to vNet 1.
+[07:02] Now we're gonna create our peerings
+[07:04] with the rest of the vNets.
+[07:06] So I'll do that relatively quickly.
+[07:08] I'll go here to peerings.
+[07:11] I'm gonna click add.
+[07:13] All right, this will be called vNet 3-2 vNet 1.
+[07:21] Go down here, select number three.
+[07:23] I'm gonna choose the same options here.
+[07:28] to VNet 3. All right, click Add. Okay, it's creating the peerings now for from
+[07:40] one to three and then we'll go ahead and do the last one. Once this is done, we'll
+[07:45] do VNet 1 to 4. Okay, all right, so we'll add that. So VNet 4 to VNet 1.
+[08:05] And there you go. We have now officially set up our peerings.
+[08:08] And so VNet 1 is acting as our hub.
+[08:12] The other VNets are acting as spokes.
+[08:15] And so we can allow traffic to flow.
+[08:18] going through that hub VNet with these other VNets. And of course our VNet 1 could now,
+[08:23] if we wanted, we could even have an internet connection with that and allow traffic to flow
+[08:27] out of that. I'm obviously not going to get into that in this video. In this video,
+[08:31] we've accomplished what we wanted to accomplish and that was to understand the concept of

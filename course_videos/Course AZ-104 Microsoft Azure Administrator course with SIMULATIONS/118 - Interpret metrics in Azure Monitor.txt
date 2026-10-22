@@ -1,0 +1,195 @@
+# 118 - Interpret metrics in Azure Monitor
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/118 - Interpret metrics in Azure Monitor.mp4
+Fetched On: 2026-10-21 20:10:46
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to spend some time with you talking about Azure Monitor and how we deal with metrics in regards to our various Azure resources.
+[00:09] So if you didn't know, Azure Monitor is the main monitoring technology that we have in Microsoft Azure and it's got its little tendrils, as I like to say, connected to pretty much everything going on in Azure.
+[00:29] statistical data and it
+[00:32] it ties to logging, so all the logs that are going on and those are your two main things, right?
+[00:37] You've got metrics which are numeric values that are being gathered and then you've got logging
+[00:41] data, all right? And so Azure Monitor is going to link to all the various resources that allow us to
+[00:47] actually gather this information and then go through and look at what's going on in our
+[00:52] environment. So let's take a look at that right now. Here we are on portal.azure.com. If I click
+[01:01] monitor blade right there I can click on. Obviously if it doesn't show up you can
+[01:05] always go to all services and just search for it, but I'm gonna go ahead and
+[01:08] click on Azure Monitor here. And so here it is, and what we want to focus on
+[01:13] right now is the metrics blade. Okay, so the metrics blade is going to be one of
+[01:17] the main places that we go when working with Azure Monitor. Of course, again, as
+[01:22] soon as you go into that, as I joked about it having its little tendrils
+[01:26] all over, you can see that one of the first things that will happen is it's
+[01:30] us what the scope of this metrics that we're wanting to see. Now of course the
+[01:36] scope is going to involve which resources we want to monitor. You can see
+[01:40] I have various resource groups here and again it does not matter if you don't
+[01:44] see the exact same resource groups on your side as I have on my side. That is
+[01:48] not a big deal. Don't worry about it.
+[01:50] There is gonna be stuff for you to look at for sure.
+[01:53] I'm gonna look at this one here called storage account demo
+[01:56] and I have storage accounts inside
+[01:58] that storage account demo.
+[02:00] I have one here, this exam lab practice storage JC.
+[02:03] I'm gonna go ahead and click on that.
+[02:05] Now I can expand that out.
+[02:07] I want you to notice that you can expand that out
+[02:09] and you can just look at individual items
+[02:13] inside that storage account such as the blob
+[02:16] and the file and queue and table.
+[02:17] But I'm gonna look at the whole storage account.
+[02:20] And then I'm gonna click apply.
+[02:23] All right, and so from there,
+[02:25] you can see the type of metrics
+[02:28] that are available for that.
+[02:30] So this is gonna kind of go hand in hand with something,
+[02:33] you know, we've monitored the performance
+[02:35] and the data for various services
+[02:38] in our on-premises world for many, many decades.
+[02:41] In fact, with Windows Server
+[02:43] and pretty much all of our Windows client operating systems,
+[02:46] we had a
+[02:47] program called Performance Monitor that you might already be familiar with.
+[02:51] So this is sort of similar to that in that,
+[02:53] with Performance Monitor and our various operating systems,
+[02:56] we had all these metrics we could look at.
+[02:58] Well, here we are with Azure and Azure has the ability to look
+[03:01] at metrics for the various resources as well.
+[03:04] So there's some similarities there if you are familiar with how
+[03:07] Performance Monitor worked in our on-premises environment.
+[03:10] But if not-
+[03:11] That's okay too.
+[03:12] You don't have to be familiar with Performance Monitor
+[03:14] to understand what I'm looking at.
+[03:16] So the great thing about this is,
+[03:17] is I hover over a metric,
+[03:19] it gives you a nice little description
+[03:21] as to what that metric is.
+[03:23] So for example, I'm looking at availability here
+[03:25] and it tells you that this is gonna be
+[03:27] the percentage of availability for the storage service
+[03:29] or the specified API operation.
+[03:32] Tells you that availability is calculated
+[03:33] by the total billable request value
+[03:40] number of applicable request. So you can always look at a description. Here's the
+[03:45] egress and they tell you this is the amount of egress data. The number of the
+[03:49] number includes the egress to external clients from Azure storage as well as
+[03:54] egress within Azure.
+[03:57] So as a result, this number does not reflect billable egress.
+[04:01] And then if you look at ingress, you've got the amount of ingress data in bytes.
+[04:05] This is going to be the number that includes ingress from an external client
+[04:09] into Azure storage as well as ingress within Azure.
+[04:14] So that's what that is.
+[04:15] And so again, you can hover over these and you can see descriptions as to what's going on.
+[04:20] You can click on this.
+[04:22] And then this is when you'll start seeing some actual information.
+[04:24] I haven't had a lot going on on my storage account, so you're not going to probably see
+[04:28] tons of information, but you can see some little spikes here that kind of gives you an idea.
+[04:33] And this I'm clicking on Egress here and then here's Ingress.
+[04:36] Okay, so you can see I've got some spiking happening here.
+[04:40] The other thing you can do is you can look at the aggregation and you can look at the
+[04:46] add the sum, which adds it all up.
+[04:48] You have the average, the minimum, or maximum.
+[04:51] Okay, so I can also, you know, click on those aggregations and that's going to give me some good information as well.
+[04:58] Something else that I can do is I can also, you'll see here it says add metrics.
+[05:03] So I could, I've got this option that says add with builder. Okay, and that's what's kind of bringing me into here. Okay.
+[05:11] So if you wanted to do that, you can also add filter.
+[05:15] So if you want to filter it, you can filter by API name,
+[05:18] authentication, or geotype.
+[05:20] And you can set operators for the types of information
+[05:24] maybe you're looking for.
+[05:25] OK, so that's what that's going to do.
+[05:27] You've also got allow splitting.
+[05:29] Now this will let you see these individual items
+[05:32] on the graph separately.
+[05:34] So if I actually select these, you
+[05:36] can see kind of how it all splits it up
+[05:39] into these separate dimensions.
+[05:41] as they call them. All right, and so that's just another way of being able to kind of break things
+[05:46] up and see additional information. All right, so ultimately though you can see using the
+[05:53] monitor to view metrics is relatively straightforward. Okay, let me close out of this
+[05:59] here. All right, and let's say we want to let's go back over and let's add a new metric.
+[06:11] This time, we'll go right here.
+[06:14] We could look under, let's look,
+[06:16] we have a VM destination,
+[06:17] and I think I've got a virtual machine.
+[06:19] Yeah, I've got a virtual machine here.
+[06:21] So if I select that virtual machine, hit apply, okay,
+[06:25] you can then see metrics that are available
+[06:27] involving that virtual machine, okay?
+[06:30] Available memory bytes.
+[06:31] you'll notice there isn't really anything showing up here. There's a good reason for that. That
+[06:35] virtual machine is not started. So if I actually go here and I right click virtual machines,
+[06:42] I'm going to go over here and I'm just going to start up that virtual machine real quick.
+[06:46] So Win Server 1, we'll go right here and hit start. It's okay if you don't have a virtual
+[06:54] machine to look at on this. It's okay if you just want to watch me. If you still have virtual
+[07:01] That's fine, but I'm going to go ahead and start that one up.
+[07:04] Now what I will do too is I'm just going to pause the recording
+[07:07] for a couple of minutes so that the virtual machine can start up and then
+[07:11] we'll go and we'll see if we can review this.
+[07:13] Alright, so after giving that some time, I just came up here and hit refresh and you
+[07:16] can see that it is logging some information here.
+[07:19] You can see the available memory.
+[07:21] You'll see that it's showing available memory in bytes.
+[07:24] Average on WinServer1 is 12.3 GIB.
+[07:28] I can of course switch that to any other metrics and just like before, you can hover
+[07:32] over the metrics to see a description of what the metric is there.
+[07:38] Okay.
+[07:40] You've got quite a few metrics that you can review when it comes to looking at a virtual machine.
+[07:46] Now keep in mind you can also monitor your on-premises machines with Azure Monitor as well,
+[07:54] but you do have to install a special agent in order to do that, which I'm not going to get
+[07:59] into in this video, but there's a little piece of software and all that you can use.
+[08:03] for linking your on-premises servers with Azure
+[08:06] and use the Azure Monitor for monitoring.
+[08:09] But ultimately, I hope you can see here
+[08:12] that looking at the metrics
+[08:14] and just linking to the different scopes
+[08:16] of the things that maybe you wanna monitor
+[08:18] is relatively straightforward.
+[08:20] And then it's just a matter of figuring out
+[08:22] which metric it is you want to monitor
+[08:24] and the aggregation,
+[08:25] whether you're wanting to look at things like
+[08:27] the account, the amount of things,
+[08:29] average, minimal, maximum, or sum.
+[08:32] All right, one last thing I will show you here is you do have the ability to come up here and click
+[08:38] New Chart. Okay, and if you click New Chart, you'll notice that so I've got this data here,
+[08:46] I can scroll down and you'll see I've got, I clicked that a few times, you can see I can go
+[08:51] down here and I can scroll and look at these as well. Okay, so you can delete that. Let's just
+[09:00] happen here a little bit better. So let's just delete these charts. Okay so click
+[09:06] new chart. Now notice there's a new one. So I could go down here and I've got
+[09:10] WinServer1 I'm on her but if I wanted to go and maybe I wanted to monitor my
+[09:16] storage account with a instead of monitoring the virtual machine there I
+[09:21] can I could expand that out.
+[09:23] There's a storage account, hit apply.
+[09:25] So I'm looking now, I've got Win Server 1,
+[09:27] I could monitor here certain metrics,
+[09:29] and then I've got my storage account,
+[09:31] I could be monitoring certain metrics.
+[09:33] So all that's easily available to you.
+[09:35] The other thing you can do is you can share that out.
+[09:37] So you could download to Excel,
+[09:39] so if you had to share this with
+[09:40] your boss or something like that,
+[09:42] you could, you can copy a link and provide a link.
+[09:44] So there's various things you can do.
+[09:46] Another thing you can also do is you can
+[09:49] save this to your dashboard.
+[09:52] Let's just pin this to my dashboard.
+[09:55] Okay, I can make it private or shared available
+[09:58] to people that have access to this.
+[10:00] subscription you can also that's if you've got a default dashboard but you
+[10:03] could create a new one as well I'll just call this win server one dashboard so if
+[10:09] I hit create and pin watch this if I click the little menu button here I can
+[10:14] click dashboards and then I've got dashboards available I can drop this down
+[10:20] and there is that new dashboard I can click on and so you can
+[10:23] see it's got that one monitoring metric that it's doing.
+[10:27] Of course, you could have a bunch of these if you want.
+[10:29] So this is great for somebody that wants to set up all their metrics in one place
+[10:34] and just view a dashboard that has it all in one place.
+[10:37] Maybe in the morning when you come in,
+[10:39] you just want to quickly look at the average types of
+[10:43] metrics that are going on within that WinServer1.
+[10:46] That's a great way to handle that.
+[10:48] All right. Well, hopefully now you have a better understanding of

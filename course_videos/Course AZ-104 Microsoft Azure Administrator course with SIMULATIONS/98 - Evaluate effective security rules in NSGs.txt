@@ -1,0 +1,189 @@
+# 98 - Evaluate effective security rules in NSGs
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/98 - Evaluate effective security rules in NSGs.mp4
+Fetched On: 2026-10-21 20:33:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I want to spend some time now making sure that we understand how effective rules work when it comes to
+[00:07] IP filtering in regards to using NSGs or ASGs, network security groups or application security groups. Now
+[00:15] as you can see in the the drawing here this is this as a whole is kind of representing the
+[00:22] Azure environment and in our Azure environment we're going to say that we've got this VNet here.
+[00:28] which is the 10.100 slash 16 address space.
+[00:33] That's 60, roughly 65,000 ish addresses.
+[00:37] And then we've got a subnet on that called,
+[00:40] that I've just called subnet and it's 10.1.1.0
+[00:45] and it's slash 24.
+[00:46] That means we've basically taken this 65,000 range
+[00:50] and we've broken it up into a range of about.
+[00:53] 250. It's supposed to be 256 but you got to subtract two and then
+[00:58] azure uses some of them so you get 250 251 addresses available to you. Okay this is a
+[01:05] virtual machine that has been booted up on this subnet maybe running windows or linux whatever
+[01:13] and it has a virtual nick on it and that virtual nick of course can communicate with
+[01:20] services that are in Azure that virtual nick can also communicate with the internet going
+[01:29] outbound if we want.
+[01:31] Okay so we can allow outbound internet because Azure supports network address translation
+[01:38] NAT, which means it can allow private addresses to talk to the internet.
+[01:44] the ability for traffic to come back in if you want, let's say, people out on the internet
+[01:52] or services out on the internet like this box right here to be able to interact with that VM.
+[01:57] There's various ways you can do it. One of the most basic ways you could do it would be to
+[02:02] assign a public IP address, right? So I can use a pip, all right?
+[02:09] public IP address and at that point traffic if we assign that public address
+[02:15] to this VM then that means traffic could flow into this VM based on a public
+[02:22] address which will say the public address is 687692.12 which I just you
+[02:29] know pulling that number out of thin air okay that means that
+[02:32] people could hit that service from the internet and we could even
+[02:36] with the help of DNS we could even register a name to that.
+[02:40] So if this was like a web server or something then I could say
+[02:44] you know www.examlabpractice.com if I wanted. Now...
+[02:50] You can do all of that and I'm not really getting into the Azure Firewall stuff in this video.
+[02:57] I would like to say though that there are better approaches to this than just to expose a VM like that just directly to the internet and expect an NSG or ASG filter rules to handle the...
+[03:11] the security of it. Microsoft recommends using an Azure Firewall and if you implement an Azure
+[03:17] Firewall then what you would do is you would have the public IP address coming into the Azure
+[03:22] Firewall and the translation from there. So you'd have traffic hitting the firewall, it would have
+[03:28] to successfully make it through the firewall and then the firewall could forward it to your web
+[03:31] service if you wanted. Okay, so
+[03:36] But just for the sake of helping you understand filter rules, because really we're not getting into Azure firewall stuff.
+[03:42] We're just trying to understand how effective rules work with the security group features.
+[03:47] So the next question would be where if I'm going to implement filtering and I'm going to filter certain types of traffic coming in or going out, how do I do that?
+[03:56] Well, again, NSG, ASG.
+[04:08] So this little box is going to represent an NSG.
+[04:12] I can place that NSG in one of two places.
+[04:15] I can place it on a subnet.
+[04:18] I can't put it on the whole entire VNet, but I can put it on individual subnets in which
+[04:23] at that point it will be able to police traffic flowing into anything that flows in or out
+[04:30] of that subnet.
+[04:37] a v-nic. Okay and at that point I could have rules that are affecting traffic flowing in
+[04:44] and out of that v-nic. Now with an asg I can place it directly on the vm and it'll police all nics.
+[04:53] However many nics you got, virtual nics, if you're using multiple nics and you team them together
+[04:59] it'll it'll work with all those. But traditionally most people,
+[05:02] my experience has been most people are using nsgs more
+[05:05] more than ASGs. But you do have ASGs
+[05:10] available you could use to police an entire VM and all of its nicks if you want and that
+[05:15] that ASG could also be assigned to other virtual machines as well if you want. But anyway,
+[05:21] so from there we have this this is our rules, right?
+[05:26] This is inbound, but you could also, you have one of these for outbound as well.
+[05:31] Inbound is the one most everybody kind of focuses on, and that's what I want to look at with you right now.
+[05:36] I have various rules here. The first rule that I've got is this, it says priority 100, and it says allow RDP
+[05:45] on port 3389, that's remote desktop, that's what lets you remote into a virtual machine.
+[05:52] The TCP protocol...
+[05:55] and you're saying source any destination any. So it doesn't matter who it is out on the internet
+[06:03] that wants to communicate with this virtual machine on port 3389. It is saying you are
+[06:08] going to allow them. Now granted when I say you're going to allow them they still have to
+[06:12] you know have credentials to log on to this virtual machine on port 3389.
+[06:17] But anybody can hit this machine across the internet on 3389.
+[06:21] Okay, and then the destination well is any. So what this NSG is saying is it doesn't matter
+[06:29] wherever this NSG is attached or this NSG whichever one you're looking at
+[06:34] it's going to allow it. Okay, it's going to allow it source and destination for anybody. Okay,
+[06:43] so that is how that's going to work. All right, now to understand effective rules it's important
+[06:52] you'll notice that the lower the number, the higher the priority. So these other rules that we've got here have lower priority over this first rule.
+[07:02] Okay? And the way that the rules work is the first rule that applies to you is the one you get. It does not go any further than that.
+[07:22] Alright, this right here and I were to say let's just say deny.
+[07:29] Let's pull this down.
+[07:33] Alright, this deny rule and let's give it we'll say a priority of we'll say 101.
+[07:41] Alright, so priority of 101 and let's just set the font to that right there.
+[07:54] Let's try that again.
+[07:56] There we go.
+[07:57] It's gonna be below the top one as far as priority goes.
+[08:02] So a lot of people are like,
+[08:03] oh, well, isn't it most restrictive?
+[08:05] No, it is not most restrictive.
+[08:07] It is the first rule that applies
+[08:09] to you is the one you get.
+[08:11] So if you were connecting, if this was you
+[08:13] and you were connecting in using this public IP address
+[08:16] on port 3389, you would be allowed,
+[08:19] you would never be denied.
+[08:21] Now on the flip side,
+[08:23] If you flipped these two, okay, so let's move this right here, and then let's move this down.
+[08:33] Alright, and so now the top one is deny, okay, now we got a problem.
+[08:42] You're never allowing RDP at that point. You will never get to this.
+[08:47] So a lot of people might say, well, what if I only wanted to, well, what if this guy right here is an admin, okay?
+[08:54] Let's say that this person that's sitting at this computer is an admin and he has an address.
+[09:00] He or she has an address of, I don't know, we'll just make up an IP address.
+[09:05] 57.67.34.2, okay.
+[09:12] And you just wanted to allow that, that admin.
+[09:17] And that admin always has that address, okay.
+[09:21] So let's say that's the case.
+[09:23] So let's just copy that address.
+[09:26] Okay, so at that point where would I put it?
+[09:27] Would I put it under source or destination?
+[09:30] Well, I would put it under source, right?
+[09:32] That's where it's coming from.
+[09:33] This is an inbound rule.
+[09:35] So if I'm wanting to allow that admin,
+[09:37] I would put it right here.
+[09:39] But is that going to make any difference?
+[09:42] Is the admin gonna be allowed at this point?
+[09:45] Well, if you said no to that, you're correct.
+[09:47] They are not going to be allowed right now
+[09:52] deny rule is denying them. So this you would not want to have this deny everybody rule.
+[10:00] above the above this allow rule.
+[10:04] Alright now it also if you have this this allow rule this way it also doesn't really
+[10:12] even make sense because you might say well what if I want to deny everybody everybody else what
+[10:17] if I want to deny everybody else okay so if you wanted to deny everybody else wouldn't it make
+[10:29] Let's move this here. We'll move this over here. We'll move this one down. Would it make sense just to flip these?
+[10:38] All right. And now you're denying everybody else. Well, you didn't really accomplish much.
+[10:47] And let me tell you why you didn't accomplish much. Because you will deny everybody else,
+[10:54] but you would have denied everybody else if this rule did not exist. Let's take this rule out.
+[11:01] Okay, pretend like that rule is just gone. Like it's not there. Alright.
+[11:06] Somebody connects in that does not have this address. This 57 67 34 dot 2.
+[11:14] Well, this rule would not apply to them for port 3389. So then you know what Azure does?
+[11:20] The NSG is going to do or ASG is going to go to the next rule down which would be this one.
+[11:24] Does this rule apply to the person? No. Does this rule apply to the person? No.
+[11:29] Well, this rule basically applies to everything.
+[11:32] So essentially, if none of these first four rules apply to you, then you get what we call
+[11:40] the default deny policy or default deny rule, which is deny everybody.
+[11:45] And they also sometimes refer to that as an implicit deny.
+[11:50] So a lot of times people then ask the question, well, wouldn't I then, would I never use
+[11:57] deny then?
+[11:58] Because it seems to me like if you've already got this default deny, you would only ever use allow rules.
+[12:04] And the answer to that question is yes, you will still use deny in certain circumstances.
+[12:09] And it's when you want to explicitly deny something.
+[12:14] Okay? When you want to explicitly deny something.
+[12:17] Alright?
+[12:19] So let's say that you are wanting to deny...
+[12:28] RDP for a specific... well let's say you just want to deny a specific range of addresses
+[12:37] for RDP. You're gonna... let's change this back. Okay, I'm gonna put this back to any. Okay,
+[12:46] so it's no longer going to be just the admin. We're going to say any. But we want to block
+[12:50] a certain range of addresses. Okay, maybe we've got a situation where we have got some hackers.
+[12:59] Let's just make some hackers here. We'll say that this is going to be our little hacker.
+[13:06] Devilhorn, Deviltail, Mean Look on his face here, some fangs. Got to have some good fangs if you're
+[13:12] going to be a hacker, right? Okay, not really. Okay, so let's take our hacker. Okay, here's our hacker,
+[13:28] They're located in some other country.
+[13:32] I'm not going to point out any specific country, maybe just some country out there in the world.
+[13:38] And there is no reason in the world that these people, maybe this whole ISP is just full of hackers.
+[13:45] And you've discovered what the range of addresses are that they're using.
+[13:48] So maybe they are addresses that start with 34.78.x.x.
+[13:57] whatever comes after. It could be any any range of addresses. Maybe you've done a lot of logging and you've discovered
+[14:02] these addresses and you know what they are. You could actually go and you can block that.
+[14:09] Alright, you could say 34.78.0.0 actually and the 0.0 can act as wild cards.
+[14:20] Alright, and you can apply that in your source.
+[14:24] Alright.
+[14:25] And that would basically, you could basically then, you are now explicitly denying, but you're only explicitly denying people that start with that address.
+[14:35] Alright. Now I also want to point out that that is one way you can explicitly deny things.
+[14:40] And so, um, the idea here though is that if you really want to get down and dirty with stopping hackers, that's where you get into the Azure firewall.
+[14:49] But not talking about that a whole lot here. I just wanted to throw it out there.
+[14:53] The thing I want to clarify here now is that if somebody tried to connect in, this rule would get checked against.
+[15:01] Let's say one of the hackers tries to connect in, they start out with that address.
+[15:04] This rule is going to get checked first. This rule would not apply to them.
+[15:09] I'm sorry, this rule would apply to them. And that's a problem. That's an issue.
+[15:14] Because if they're trying to connect in through 30 through 89, do they fall into the category of any, any? Yes, they do.
+[15:23] So we would want to, we would want to switch that, right?
+[15:29] We would wanna switch that
+[15:33] and let's just say we're flipping these, hold on,
+[15:36] and we'll move the allow down
+[15:42] and the deny up now, we would be able to block the hackers.
+[15:48] All right, cause they would connect in,
+[15:51] it would hit this address or this rule.
+[15:54] This rule would apply to them and it wouldn't go any further. So this is when this is called an explicit deny
+[16:01] Whereas this default deny we call that an implicit deny when you want to explicitly deny something
+[16:06] So yes, there is reasons why you might want to
+[16:09] deny something. But if you are going to ever explicitly deny something, you want to make sure that your
+[16:15] explicit rule is always above any explicit deny rule, is always above any allow rules that might conflict with it.
+[16:21] Okay, that's the the important thing. If there's any kind of a conflict,
+[16:26] you want to make sure the deny is always above the allow if there's a conflict. Alright, if you're explicitly denying something.
+[16:32] Alright, so hopefully that now helps you get a much better understanding of how effective rules work in
+[16:38] the different security groups that we have in Azure.

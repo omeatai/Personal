@@ -1,0 +1,555 @@
+# 68 - Create a virtual machine
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/68 - Create a virtual machine.mp4
+Fetched On: 2026-10-21 20:48:42
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk now about creating virtual machines in Microsoft Azure.
+[00:06] But before we do, let's also talk about the purpose.
+[00:09] So the purpose of Azure Virtual Machines is to allow you to be able to run Windows or Linux-based operating systems in the cloud without needing to purchase or maintain any physical hardware, right?
+[00:23] They're going to provide you with an on-demand, scalable type of computing resource
+[00:29] for providing various types of purposes, including things like enabling businesses
+[00:34] and developers to deploy applications, be able to test software,
+[00:38] support enterprise workloads. Some real-world scenarios for
+[00:42] utilizing this would be things like web hosting. Maybe you're a small business
+[00:45] and you want to deploy a website on Azure. You could use an Azure VM for
+[00:53] internet information services, Linux, Apache, Engine X.
+[00:57] So web hosting is a good one.
+[00:59] Another would be application development and testing.
+[01:02] So you could have developers that can connect in
+[01:03] to Azure VM and that way they have an isolated environment
+[01:07] for testing and developing their applications.
+[01:09] Another reason would be disaster recovery.
+[01:12] You could replicate your on-premises types of servers
+[01:17] In the Azure environment for testing and this way you're not having to do a bunch of testing on physical hardware
+[01:23] You've got
+[01:25] Another option would be maybe just want to run a legacy application. You have older applications
+[01:29] and you need to do that in a secure environment. Another would be virtual desktops. You can
+[01:35] actually provide client operating systems with Azure. You could support a Windows client
+[01:40] operating system out there if you needed to. Another reason would be training for labs and
+[01:44] demos. That's kind of like what I'm doing here when I play around with Azure VMs. And lastly,
+[01:54] or my sequel or something like that,
+[01:56] that'd be another reason.
+[01:57] So there's a lot of reasons for using Azure virtual machines.
+[02:01] Now, as we get into creating Azure virtual machines here,
+[02:04] I want you to understand that I'm not gonna do a deep dive
+[02:08] on every little feature that we see on the screen
+[02:10] because we'll, in a lot of cases,
+[02:12] we'll get to those in later.
+[02:15] the later discussions, we'll dive deeper into those. But you gotta wait till we get there.
+[02:22] This video would end up being like three or four hours long if I tried to do a deep dive on every
+[02:28] single little feature. So just be aware that I am going to spend a lot of time on certain things,
+[02:33] and then I'm going to move quickly through other things. We're going to definitely learn
+[02:36] the things we need to know.
+[02:38] on that get into the point of creating virtual machines in this video but we're not going to
+[02:42] learn everything in this video there is to know about virtual machines it's going to take time
+[02:46] because you got to understand other fundamentals that don't get explained till later okay so just
+[02:51] get ready you're going to hear me say that you know that i'm not going to there'll be times where
+[02:56] i'm not going to dive deep into something i'm just going to explain it i'll give you a basic
+[02:59] idea of something and then we'll move on all right but anyway the other thing to be aware of
+[03:06] used to this, but I want to say it again. Microsoft changes this stuff very frequently and creating
+[03:12] virtual machines is one of those things it feels like they change like just about every week.
+[03:16] So don't be surprised if your your screen and the wizard everything look a little different on your
+[03:21] end. The main thing is understand the concepts and the fact that if the screens change a little bit
+[03:25] it's not going to be a big deal to you. Okay so we're ready to go. Here we are on portal.azure.com.
+[03:31] We're going to click the menu button here.
+[03:33] I'm gonna go and click on virtual machines if for any reason virtual machines does not show up on the sidebar
+[03:39] I can always search for it over here in the all services area
+[03:42] So I'm gonna go to virtual machines and I'm gonna click to create a new virtual machine
+[03:49] So here we are on the virtual machine creation screen
+[03:53] And the first thing I need to do is have a resource group the resource group I'm gonna use
+[03:58] I'm gonna call this resource group VM demo. So I'm gonna create a new
+[04:03] resource group called VM demo
+[04:05] I'm gonna click OK and then I'm gonna give my virtual machine a name.
+[04:09] The name that I'm going to give my virtual machine, I'm just gonna call it Win Server
+[04:13] 1.
+[04:14] This will be a Windows Server and this is gonna be in the East US region for me.
+[04:20] Of course, if you're doing this with me, you could choose whatever region you're in.
+[04:24] And then availability options.
+[04:26] So as you get into availability options, the idea with this, as far as availability goes,
+[04:35] This is for allowing your virtual machines to be a little bit more resilient. This will improve
+[04:41] your uptime and try to minimize the impact of a hardware failure or maybe a data center issue or
+[04:48] something along those lines. We have a few different options there when it comes to working
+[04:54] with the availability of all of this. So for one...
+[05:00] If we want, we can go with no infrastructure redundancy required, which is what I'm going to go with. This keeps the cost down.
+[05:08] The virtual machine is going to be employed without any special fault tolerance in place.
+[05:12] Okay, it's great for development testing lab environments like we're in, and it's the cheapest option.
+[05:18] You could go with availability zone. This places your VM in a specific physical data center within the region.
+[05:26] You can then place it in different zones. There's usually three zones in a region.
+[05:32] Okay, so I could have copies of it, so there's no single point of failure.
+[05:37] that. Okay, no single point of failure if I do an availability zone, have the three
+[05:42] zones, and here's your you can specify you know that you want it in these
+[05:46] different zones. You can see the cost going up when I do that as well, right?
+[05:50] Okay, so that's the idea of availability zone. Another option is to do a virtual
+[05:57] machine scale set. This will automatically deploy and manage a set of
+[06:02] identical VMs across.
+[06:04] different zones and what they call fault domains for scaling or redundancy.
+[06:09] The use case for this would be a scenario where maybe you have apps
+[06:13] that running on the server that need to scale out like a front-end for a very
+[06:17] large website something like that. An example would be a scale set maybe of
+[06:23] 10 virtual machines running a containerized app spread across multiple
+[06:27] zones for tons of redundancy. Okay and then
+[06:31] The last thing you've got there is just an availability set.
+[06:34] So an availability set the basic meaning of this is this groups two or more virtual machines across
+[06:41] fault domains. Now what is that? The idea of a fault domain is multiple racks inside the
+[06:46] same data center. So a fault domain it means you have a separate power supply and separate rack
+[06:55] data center. See it's spread out, it's in the same data center, but it's spread out so you've got these fault domains.
+[07:01] This is a cheaper solution than these others, but not as cheap as no redundancy.
+[07:06] We're gonna go with no redundancy as I've already said. Okay. All right, so then
+[07:13] we get down to the security type and we've got these various options here standard
+[07:19] This is the one I'm going to go with. This is a cheaper one.
+[07:22] You get basic level of security for your VMs. It does not include advanced
+[07:25] protections like a secure boot features to protect the boot
+[07:29] process. And it also doesn't support a virtual TPM,
+[07:33] a virtual trusted platform module which is used for
+[07:36] special types of encryptions and all that. Again...
+[07:39] I'm going to go with standard, so that doesn't give me all of that.
+[07:42] Now I can go with trusted launch virtual machines. With that, I will get the secure boot features
+[07:47] with the operating system and I will get the virtual TPM. So that's more for production
+[07:54] environment as opposed to testing, which is what we're doing here.
+[07:57] Okay, the last one is the confidential virtual machine. So this adds confidential computing
+[08:03] capabilities on top of the trusted launch support that the other one gives me. So data is encrypted
+[08:09] in use, not just at rest and in transit like you get with the others. Okay, so you get that
+[08:14] additional layer of protection. So it uses what's known as a hardware-based TEE, which is Trusted
+[08:23] protect and isolate code and data and all that. So this is great in a maximum security type of
+[08:28] scenario or a maximum privacy type scenario. Okay again in my case I'm going with standard.
+[08:35] Then it's asking me what image I want to use. So the image is going to be which operating system
+[08:40] type image that we're going to go with. In my case I am going to use Windows Server 2022 data center.
+[08:52] See all images to see additional images as well that you could potentially go with if you wanted to okay
+[08:58] So here is I clicked on that and there's all these various ones that we could go with right?
+[09:04] But I'm gonna go with this one right here Windows Server 2022 data center. Okay now below that we've got our VM architecture right now
+[09:12] With this image and hardware and all that all I've got available is x64. They do have a RM 64
+[09:19] which stands for Advanced Risk Machine.
+[09:22] That would be used in a situation perhaps where you're developing an
+[09:24] application or something that's an ARM based app and
+[09:27] you would want to go with that. All right below that we've got Run with
+[09:31] Azure Spot Discounts. This is a discount feature you can turn on
+[09:35] where what it does is it stores the virtual machine
+[09:39] data
+[09:39] in a part of the data center in your region that is not being currently used.
+[09:45] Now the downside of that is that if that region's data center start really getting used at max
+[09:52] capacity your virtual machine might be evicted which means it gets shut down in order to make way for
+[09:59] the
+[10:00] the non-spot image based virtual machines.
+[10:03] So this is just a discount you can do.
+[10:04] It's great for lab testing environments,
+[10:06] so it's definitely something you can do
+[10:08] to keep the cost down.
+[10:10] Below that, we've got the size.
+[10:12] So the size is gonna be things like
+[10:15] the number of virtual CPUs,
+[10:16] the memory and the cost and all of that.
+[10:19] And you can see some of the common ones that are here,
+[10:21] recently used ones that are here.
+[10:23] You can also click see all sizes.
+[10:26] and you can select what size that you want to go with. It'll give you kind of a look at the cost.
+[10:31] Okay, as you can see in this case, I've got this, you know, this one selected general purpose one,
+[10:38] the 3.5 gigs of RAM, I'm sorry, GIB of RAM, and then you've got the four data disks,
+[10:47] maximum IOPS, input outs, puts per second. So you can select whichever of these you want to go with.
+[10:55] depending upon what kind of power or whatever you feel like you need in terms of working with your
+[11:01] virtual machine. I'm going to go with this one right here, this DS2V2 one. Now at first glance
+[11:08] you may say $173. That's a lot of money.
+[11:12] Well keep in mind that in my case we're testing all this. We're not going to leave this up and running the full amount of time.
+[11:17] Now if you left it up and running the entire month, then yes, the $173.74 is what it would cost.
+[11:24] But if you keep the virtual machine shut down when you're not using it and playing around with it, it's not going to cost that.
+[11:30] It's not going to cost anywhere near that.
+[11:32] So in my case I'm going to use a virtual machine for a little bit of testing and playing around and I'm going to keep it shut down most of the time.
+[11:38] So I'm going to select that one.
+[11:40] All right, and so that is the one I have gone with here. All right now below that
+[11:47] You've got enable hibernation
+[11:50] Okay, and they tell you this will this hibernate saves you time and money by deallocating your virtual machine and saving the contents of
+[11:59] Its RAM to the root volume allowing you to resume
+[12:03] from where you left off when your virtual machine starts.
+[12:06] Once it's enabled and extension,
+[12:08] it's supporting this feature will be automatically installed.
+[12:12] Okay, so that's the idea there.
+[12:15] And be aware that not all the virtual machine sizes
+[12:19] support the Hibernate feature.
+[12:20] So it depends on the virtual machine sizes
+[12:22] that whether or not it'll support it.
+[12:24] Okay, below that, I'm gonna put in my admin username
+[12:27] and password, so I'm gonna say ELP admin.
+[12:29] That's gonna be the name of my admin user account and then I'm gonna put in a password that I'm gonna remember
+[12:34] Now this is very important if you're doing this
+[12:37] Lots of people tend to go through and they set their username and they set a password and they somehow managed to forget the password
+[12:44] So you're gonna want to remember what that is to get into it. Okay now below that we specify our port rules
+[12:50] This is to allow us to connect into it. So by default
+[12:55] Windows virtual machines are going to support RDP port 3389 so we can use remote desktop to get in.
+[13:00] Now they also do have a warning. It says this will allow all IP addresses to access your virtual machine.
+[13:05] This is only recommended for testing which is what we're doing. In the end, ultimately what you want
+[13:10] to do is secure this so that it's not allowing just anybody from the internet to connect into it.
+[13:15] You can use a Azure Bastion. There's a few different features that I'm not going to dive into here.
+[13:22] this isn't really the place to do it, but ultimately you can lock things down a lot tighter.
+[13:27] We're not going to do that because we're doing this for testing right now.
+[13:30] Below that I've got licensing. It says save up to 49% with a license you already own using
+[13:36] Azure Hybrid Benefit. So this is a situation where perhaps you your company has an on-premises
+[13:42] server. You've bought licenses for on-premises servers. You can use those licenses to cut the
+[13:48] in regards to Azure. Okay, this is one of the things Microsoft is trying to do to encourage
+[13:52] people to start moving things to the cloud is they're trying to get people to utilize their
+[13:58] existing licenses. Alright, so that's the idea there. Okay, alright, we're going to go ahead now
+[14:04] and click next. That'll bring us over to the disk tab. Alright.
+[14:09] So right out of the gates here we get into disk the ID here is to specify how the disk you're going to be set up
+[14:14] A virtual these will be virtual disk that can be set up with our virtual machine
+[14:18] The first thing you'll see there is the VM disk encryption and the purpose of this is to control encryption of data stored on
+[14:26] Your Azure managed disk. Okay, so you have encryption at the host
+[14:30] This is going to encrypt data before it reaches the physical disk on the host computer. So the physical
+[14:38] equipment that this is sitting on is not going to be able to have access to your data. It's all going to be encrypted.
+[14:44] So that's the idea there. So for sensitive workloads like maybe you're in healthcare or
+[14:49] finance world or government or whatever that is going to support that. Now depending upon your
+[14:56] subscription, you will or will not support that. Okay, in my case, I don't.
+[15:02] They tell you encryption at the host is not registered for the selected subscription.
+[15:05] So you can learn more and you can get that based on a subscription.
+[15:09] Okay, below that I've got the operating system disk.
+[15:12] The default image size is going to be 127 GIB.
+[15:16] You can alter that here if you want.
+[15:19] 127 is fine for what we're doing.
+[15:21] And then below that we get into the OS disk type.
+[15:26] So the operating system disk type, you have some different options.
+[15:30] Okay.
+[15:31] The first thing you've got is the premium SSD and that's of course is going to be one of the more expensive ones
+[15:37] This gives you a high performance virtual machine disk
+[15:41] Low latency. This is great for mission critical workloads in our case, you know, we're doing this for lab purposes
+[15:47] We're not gonna want to go with that
+[15:49] But if you're doing something like a sequel server or something with a lot of transaction processing going you're gonna want to go with that
+[15:55] Okay
+[15:56] And by the way, notice this is local redundant storage as well.
+[15:59] So this uses LRS in terms of the replication that it's doing.
+[16:04] So local redundant storage, it keeps everything
+[16:06] within the same region.
+[16:08] Then you've got standard SSD.
+[16:11] So this is a general purpose, more general purpose workload based type scenario. It's better than
+[16:16] what you get with standard HDD. It's faster but it's not as good as premium. Less expensive,
+[16:21] great for web servers, maybe a developer test environment. And then the last one underneath
+[16:28] the LRS solution, you have standard HDD. Okay, so standard HDD, that's actually the one we're
+[16:38] infrequently accessed, lower cost, this is good for backups, archive, testing, things like that,
+[16:44] which is what we're using this for. Okay, now notice again this says local redundant storage,
+[16:48] so data is replicated within a single data center. It's not replicated to different,
+[16:53] different, you know, zones or any of that. So you get down here to zone redundant storage.
+[16:59] The idea is data is going to be replicated across three availability zones within a region. So you
+[17:08] data center was to fail in that region,
+[17:10] your data is still replicated to a different one.
+[17:12] So you can do premium or standard SSD for that.
+[17:15] Okay, so I'm gonna go right here with LRS,
+[17:16] I'm going with the cheaper solution
+[17:18] which is gonna be standard, all right?
+[17:21] Okay, so the next thing we've got,
+[17:24] the next thing we have down on the screen
+[17:26] is delete with VM, all right?
+[17:30] And so what that is, that is the operating system disk
+[17:34] is deleted when the VM is deleted.
+[17:37] So we want that turned on,
+[17:38] we wanna make sure that when the virtual machine
+[17:40] is deleted, the disk gets deleted.
+[17:41] Now if you didn't want to do that,
+[17:43] if you wanted to be able to delete the virtual machine
+[17:45] but have the disk remain in Azure, you could do that.
+[17:47] So you could reattach this disk
+[17:48] to a different virtual machine if you wanted to.
+[17:51] Below that we have key management.
+[17:53] And with key management,
+[17:55] we have some different options for that.
+[17:58] Okay, so you'll notice that
+[18:00] the different options you have is platform managed key.
+[18:04] So this allows Azure to manage the encryption keys
+[18:06] automatically and just let it handle it.
+[18:09] Nothing fancy we have to do there.
+[18:11] Most users do go with this option.
+[18:14] It's simple, it's easy, it lets Azure manage everything.
+[18:17] So if you're just spinning up a VM for whatever,
+[18:20] maybe internal web hosting or whatever you may be doing,
+[18:23] this is a great solution.
+[18:25] You've also got customer managed, all right?
+[18:28] I do tell you currently no available disk encryption sets to use this one.
+[18:33] So but you could you could manage your encryption keys yourself, but you have to create an Azure
+[18:38] Key Vault, which is another resource for storing that.
+[18:42] This is good for regulated environments like HIPAA and you know the financial types environment
+[18:47] government things like that.
+[18:49] Okay.
+[18:50] The last thing you'll see there is the platform managing and customer managed keys.
+[18:56] This is not available because we don't have a customer manage key available. Okay
+[19:01] We're just gonna go with platform manage key
+[19:03] Okay as our as our solution
+[19:07] Alright, okay. So then below that we've got enable ultra disk compatibility. So this is used for high performance
+[19:15] I owe workloads. This is only works with supported VM sizes
+[19:18] So you're it's not supported by this size that I went with but it is something you could do and it does give you
+[19:26] much more powerful type of disk support and compatibility to support this ultra disk compatibility.
+[19:33] So you're going to get, you know...
+[19:35] they tell you right here, you know, Azure Ultra Disk delivers high throughput, high input outputs per second,
+[19:42] a consistent low latency disk storage for your Azure infrastructures of service VMs.
+[19:48] It's suited for data intensive workloads such as SAP, HANA, its top tier databases,
+[19:54] transaction heavy workloads, things like that. So that's something to look into if you're in that situation.
+[20:00] Then we get towards the bottom here.
+[20:01] It talks about data disks for Win Server 1.
+[20:04] That's my virtual machine name.
+[20:06] If I want to create another disk, I can.
+[20:10] So right now, just imagine you've got a server
+[20:13] that's just got one disk in it.
+[20:14] But if you wanted to have another virtual disk
+[20:16] that has data stored on it,
+[20:17] maybe separate your data away from the drive
+[20:21] with the operating system, you could.
+[20:22] In fact, a lot of people recommend that.
+[20:23] You have a different disk for your data.
+[20:25] But I'm not gonna do that right now.
+[20:27] I'm just gonna leave that alone.
+[20:29] Okay, and you know we'll just we won't worry about that. Alright, so then below that we have
+[20:36] a little advanced drop down that we can click and you'll see the default says use managed disk.
+[20:43] So the idea here is that Azure handles your storage account, your scaling, your availability,
+[20:51] and your redundancy.
+[20:53] all within its own platform for that virtual disk. Okay, why does this matter? Well, you don't have
+[20:58] to manage anything if you do that. You don't have to manage any of the underlying storage
+[21:03] manually or any of that. So this is great for that type of scenario. Maybe your developer team
+[21:10] or something that wants to deploy 50 VMs without worrying about dealing with storage management.
+[21:15] This is going to make life easier. Now, you could go you'll see with ephemeral
+[21:21] operating system disk. Okay, now what what exactly is that? Well the idea is the operating system disk
+[21:28] is not persisted to the storage account and to the azure storage and is not is instead stored on
+[21:37] a local VM host temporarily.
+[21:41] So why does this even matter? Well, it gives you a faster read write, lower latency, no storage cost, but the data is lost when the VM is stopped or deallocated.
+[21:51] The common use case for something like that would be ideal for stateless workloads like a VDI, virtual desktop infrastructure, batch processing, maybe an auto scaling web server or something like that.
+[22:09] critical but in certain you know you could use it in those types of circumstances.
+[22:13] So the ephemeral operating system disk you'll see some of these are grayed out the options
+[22:17] are grayed out and why are they grayed out because the virtual machine size that I used
+[22:21] doesn't support these features. Okay so you have none.
+[22:26] Which means just use a standard persistent operating system disk stored in Azure managed storage
+[22:32] So we're not you know, the disk is not gonna be stored somewhere else. You have OS cache placement
+[22:37] This puts the ephemeral operating system disk on the host
+[22:41] operating system cache drive and
+[22:45] You'll notice here the little message says the image is too large for the operating system cache and that's
+[22:51] you know again getting into the reason this is all grayed out. Then you got temp disk placement.
+[22:56] You could use a temporary storage drive for the VM. You've also got NVMe. So this uses an ultra
+[23:04] fast NVMe local storage solution. Which NVMe this is non-volatile memory express. It's a
+[23:16] utilizes flash stores like SS solid states and can use the PCIe
+[23:23] Peripheral component interconnect Express interfaces and all that so that's a benefit that we can't have sometimes with our
+[23:30] Datacenters, okay, we're good with these settings. We're not going to select anything there
+[23:34] We're going to go ahead and click next and that's going to bring us into networking
+[23:38] Okay, so here we can configure network settings if we want
+[23:43] We have the first thing we've got is a virtual network. This is going to be a
+[23:48] virtual network that allows data to travel across this little virtual
+[23:52] network. So we had multiple VMs, virtual machines, we could set them on the same
+[23:55] virtual network and they could share data back and forth. Okay so this is the
+[24:00] idea of our little virtual machine sitting on a virtual network. And if we
+[24:05] wanted to we can also control the IP addressing and all of that. If I wanted
+[24:11] create a different type of virtual network maybe I'll just I'll create a I'll call it
+[24:15] gives it a default name if I wanted to name it something else I'll call it vnet dash demo dash
+[24:21] four dash VMs okay and then here is the default IP addressing system it's going to give it I'm
+[24:35] range of network that I'll have for this this will be the virtual network is as a whole here and then if I want to
+[24:43] Too I can have a virtual subnet that that's gonna go with
+[24:47] All right, so we'll go there click. Okay. Yeah, there we go. So we'll set our virtual subnet name
+[24:53] So the virtual subnet I'll just call it. Let's just call it VM subnet VM
+[24:59] subnet that'll be the name and then the range will be 10.11.0.0 slash 24.
+[25:06] Okay not that we're you know diving deep into TCP IP here but essentially that
+[25:12] would fix that would set our give us a certain amount of IP addresses that
+[25:19] would be available to us. Okay all right so we got our address space here
+[25:27] created and we've got our subnet created and there you go. So all that is now set
+[25:36] the way we want it and so then below that we've got the NIC network security
+[25:42] group that's called an NSG. NSG is an IP filtering type of system that our
+[25:51] virtual machine supports. It's going to let us control traffic in and out of
+[25:57] I can set that to none, which basically just says no security rules applied.
+[26:03] It's not going to block anything.
+[26:04] You can do basic, which is just going to let you
+[26:08] it's going to set some predefined rules. Like it's going to allow RDP if it's Windows, if it's
+[26:12] if it's a Linux virtual machine, it's going to allow SSH because we have to have a way to get
+[26:16] into it. Or if we want, we can go into Advanced and we could actually define and customize it
+[26:22] and all that which I'm not doing right now. So I'm going to click Basic and then we've got
+[26:26] Public Inbound Ports. We're going to allow port 3389. That means we're going to let Remote Desktop
+[26:34] And again, in the real world, this is a production machine.
+[26:37] You're gonna wanna do some things to lock it down,
+[26:39] but we're not doing that in this video.
+[26:41] Okay, below that, as we get into the delete public IP,
+[26:48] and the NIC when VM is deleted,
+[26:50] same kind of ideas with the disk.
+[26:52] If you want all of this to get deleted,
+[26:54] if you delete the VM, you can have all that other stuff
+[26:58] deleted with it if you want.
+[26:59] So that's what that's going to do.
+[27:01] All right.
+[27:01] Below that we have enable accelerated network.
+[27:03] This is going to enable a lower latency and higher throughput
+[27:07] network by bypassing the host.
+[27:10] Great example this would be for high performance workloads
+[27:13] like SQL Server and high performance web servers
+[27:17] and things like that.
+[27:18] You'll see that that is turned on by default.
+[27:20] OK.
+[27:21] Then below that we have load balancing.
+[27:24] If we wanted to support a load balancer, and this would be great if you had multiple virtual machines that you wanted a load balance between the two.
+[27:33] Okay, or maybe the two or the three or however many you have.
+[27:37] Alright, which I can do a standard, what's known as just a standard Azure load balancer,
+[27:41] you can actually go to an application layer gateway, which is a more high intensive type of load balancer.
+[27:46] We're going to leave that set to none.
+[27:48] We're going to click manage.
+[27:50] Okay, so as we get over here to manage,
+[27:54] You have a few things that are located on the screen. First off it says Microsoft Defender Cloud.
+[27:59] Microsoft Defender for Cloud is going to be something that can provide some extra threat
+[28:03] protection and security posture to strengthen the defenses of your virtual machine. So this is
+[28:09] something that can be implemented with this. So if you're going to deploy a web server or something
+[28:13] you want to lock things down and secure it and protect against misconfigurations and things,
+[28:17] you can use Defender for Cloud. Depending upon what kind of subscription you have
+[28:23] it doesn't matter. So it doesn't really matter if we got it or not for what
+[28:27] we're doing here. Okay below that we have identity and you'll see it says
+[28:31] enable system assigned to manage identity. This is going to grant the VM
+[28:34] an automatically managed identity for Microsoft IntraID. If we turn that on
+[28:39] it just automatically authenticates with IntraID. Okay
+[28:44] I'm done, I don't really need that for what I'm doing here so I'm not going to worry about it.
+[28:48] Okay then below that if you wanted to allow this to log on to IntraID using your IntraID user credentials
+[28:57] you could select this box. In my case I'm not going to do that, I'm just going to use that admin account that I created earlier
+[29:02] at the beginning. Then I can do auto shutdown, I am going to do auto shutdown, this is just a
+[29:07] sort of a guarantee. I don't, if I was to, you know, set up my virtual machine today and then like walk
+[29:13] away and forget about it, it's just going to shut it down at 7 p.m. In my case, I'm going to set that
+[29:19] to uh to Eastern time. So I need to go find that.
+[29:23] And there it is. Okay, so 7 p.m. Eastern time. It's gonna shut down. Okay, I can also have a notification
+[29:29] Before shut down if I want have it an email sent out you can do all that if you want
+[29:35] I'm not gonna do it. I'm just gonna turn that off
+[29:36] I can also enable backup support for this if I want which I'm not getting into a whole lot with backups right now
+[29:42] You do what's called site recovery as well. So that's another type of
+[29:47] Backup solution that you can you know, you can go with so quite a few little
+[29:52] extra capabilities and features that you can do to help lock things and secure things in your environment.
+[30:00] Okay, you've got guest operating system updates.
+[30:03] You can support that.
+[30:04] This is where it evaluates
+[30:05] whether the guest operating system,
+[30:06] in this case, the guest operating system
+[30:07] is Windows Server 2022.
+[30:10] It's gonna monitor to see if it's missing patches,
+[30:12] security updates.
+[30:14] This is a good feature in terms of dealing with your,
+[30:18] you know, a production environment for sure.
+[30:21] So you could turn that on and support that if you want.
+[30:25] You've got the enable.
+[30:27] periodic assessment again that just periodically checks to see if you're missing anything. You've also got hot patch.
+[30:33] I tell you it's not available in this image,
+[30:35] but if that if it is an image that supports it, that what this will do is it'll install critical updates without
+[30:41] requiring a reboot. So that's kind of a nice little feature.
+[30:44] The last thing you'll see there is the patch orchestration.
+[30:47] So
+[30:48] You can see there are some different options there for patch orchestration
+[30:52] and you can support the automatic by operating system.
+[30:56] It just lets Windows decide when to install its patches.
+[30:59] So it just does its own thing.
+[31:00] Let's Windows handle it.
+[31:01] Whatever the default settings are in that case.
+[31:04] Then you got Azure Orchestration.
+[31:05] This lets Azure coordinate patching across multiple virtual machines if you want.
+[31:11] So you have multiple VMs, like imagine you got like three web servers that have identical setups.
+[31:16] You know, it can coordinate, it can leave like the three on.
+[31:20] It can shut one down while the other two keep running.
+[31:22] And then when that one comes back up after it's been rebooted with patches,
+[31:26] it'll shut another one down but leave the other two up.
+[31:29] So it can do some coordination.
+[31:31] And then of course you've got manual.
+[31:33] So manual updates.
+[31:35] You get to control.
+[31:36] the updates yourself, Azure doesn't control any of it. Okay, it'll also turn off the Windows
+[31:42] automatic updates. So that's just going to let you manually do everything. And then image default.
+[31:48] Okay, so uses default settings embedded with the operating system image itself, which in this case,
+[31:54] the default is just going to use the automatic Windows updates. All right,
+[31:59] now we're going to click monitoring. That'll bring us over to the monitoring tab.
+[32:03] So on monitoring first thing you'll see there is I've got enable recommended alert rules
+[32:10] So what this does is gonna it automatically sets up basic alerts such as when the CPU usage is too high or the VM becomes
+[32:18] Unavailable, you know, it's gonna generate an alert
+[32:21] All right, so just gonna have some alert rules that get set up
+[32:24] Below that you have a diagnostics you have boot diagnostics
+[32:29] So the idea here this is going to provide logs and screenshots
+[32:33] From the virtual machines boot process to help us troubleshoot boot failures if we want the three option
+[32:39] You've got you got enable with manage storage account. That's basically does it where Azure automatically manages the storage account for
+[32:47] Saving boot logs and screenshots. It'll it'll do it on its own
+[32:51] Okay, so it's a good one
+[32:53] You know a lot of people like to go with that one you can also custom and do custom if you do custom you manually
+[32:59] specify a storage account to store
+[33:02] Diagnostics so it's gonna
+[33:03] Instead of letting Azure deal with it and create the storage account and all that you could manually do it yourself and then disabled
+[33:09] Which is actually what I'm gonna do because it saves our Azure credits. I don't really need this right now
+[33:14] I'm gonna just gonna set that to disabled. That's just gonna turn that off
+[33:17] Okay below that we have enable operating system guest diagnostics.
+[33:22] So what that's going to do this will collect performance metrics like your CPU, memory,
+[33:27] disk, network usage and it's logs and it's going to basically log from the inside of the virtual
+[33:34] machine to the virtual machine using a little agent. So you gather some intel from the guest
+[33:45] So that's a but you'll have to have a storage account and it'll cost a little extra.
+[33:49] Below that you have health enable application health monitoring. So what this does it's going
+[33:54] to monitor the health of applications running on the virtual machine like if you had I don't know
+[33:59] IIS internet information services which is Microsoft's web server or whatever it may be
+[34:04] it's going to install a little health extension and it's going to look for the apps running and
+[34:08] monitor the health of those. All right where that's it we're going to click next and go to advanced.
+[34:15] And then we're almost there. I know this was a this is a long video. We're almost there
+[34:20] Okay, so the next is advanced and on advanced just sort of looking at the stuff here
+[34:26] the the first thing you've got is extensions so the idea of an extension is you can add a
+[34:33] Post-deployment script if you want or some kind of little agent that you want to sell like a maybe an antivirus tool or monitoring tools
+[34:39] You there's a whole
+[34:41] selection screen of
+[34:42] of these extensions you could add. So you could add an extension if you want and go ahead and have that
+[34:47] you know going once the virtual machine gets installed it'll go ahead and put the extension
+[34:51] on there the extra extension. So that's what that is below that you have VM applications. So the
+[34:56] idea here is to deploy like a pre-packaged application to the VM automatically after the
+[35:01] deployment is done. So you can select some of the available applications that that have been
+[35:07] installed within your Azure environment. In my case you'll see I don't have any but
+[35:11] If you had some all right, so then below that you have custom data if you want to introduce some custom data
+[35:18] Like you could supply a script
+[35:21] Like maybe like a cloud init file or something to execute
+[35:26] This will happen during the provisioning of the virtual machine. You could have that you put that in there
+[35:32] Then you got user data. This is similar to custom data, but it persists for apps using like it's used during the
+[35:40] virtual machines life not just for provisioning so you can provide a script that's going to continuously run.
+[35:46] You know throughout the life of the VM boot up and all that.
+[35:49] Below that performance NVMe you can enable capabilities to enhance the performance if you're again if you're supporting that in my case the size I've select doesn't support the NVMe.
+[36:00] Okay and below that we have the host what are called host groups so you can do that the
+[36:07] You run your virtual machine on a dedicated physical server for isolation, compliance, licensing.
+[36:14] You could do that, so they tell you Azure dedicated host, this is allowing you to provision on a physical server without our...
+[36:22] data centers that are dedicated to your Azure subscription.
+[36:26] So the idea of dedicated host gives you your assurance
+[36:29] that only VMs from your subscription are on the host.
+[36:34] So you can learn more about that
+[36:35] and that's something that could be utilized
+[36:36] in a very high security compliance type of environment.
+[36:39] You also get to control the capacity
+[36:41] reservation for that, which would reserve
+[36:45] virtual machine capacity ahead of time
+[36:47] to ensure the availability on a virtual machine
+[36:51] The idea is it's going to meet the service level agreement.
+[36:57] So example, let's say you're launching a lot of VMs at one time
+[37:03] and this is going to happen during peak hours of a data center.
+[37:07] The reserve capacity is a guarantee that they've put the resources aside for your virtual machines
+[37:16] to come up all at the same time.
+[37:19] That's the gist of that. You could learn more about setting that up if you wanted to. Then you've got
+[37:23] proximity placement. This is where you can group VMs physically close together to get better
+[37:31] performance out of that. So you get better latency. So this would be used in like a three-tier
+[37:36] app type scenario. Like let's say you've got a web server, you know, it's got applications that
+[37:41] have to tie back to a database or something. You want the web servers and the databases to be
+[37:49] Okay and then from there we can click next and go to tags if we want to put any tags on there we can
+[37:55] then we'll click review and create and then it's just going to validate make sure we didn't make
+[38:00] any mistakes make sure everything is in order and if everything is in order at that point I'm
+[38:04] now ready to click create so I'm going to go ahead and click create and then I'm going to
+[38:08] pause my recording while this is getting created. Alright so that's now done I'm going to click on
+[38:18] Okay, if I actually click on the resource group here called VM demo, you can see all the elements that were created
+[38:25] So the actual virtual machine is right here when server one you can see there's a virtual network
+[38:31] Okay, you've got a virtual NIC, virtual network interface, which is of course going to be linked
+[38:37] to that virtual network. All right, we got this thing called an NSG, which is a network security
+[38:43] group. This is a, it's not exactly a firewall, but it does some IP filtering for us. And there is
+[38:51] our actual disk right there. I'm going to click back on the server. Oh, and we've also got a
+[39:00] Here in just a second, so I'm gonna go back into the server here, and I'm gonna click connect
+[39:05] Connect again
+[39:07] Alright, and I'm gonna download the remote desktop file
+[39:10] There's that public IP address by the way, but I'm gonna download the RDP file
+[39:15] I'm gonna click keep up here, and then I'm gonna open this file up, and it's going to allow me to connect in
+[39:21] So I'll go right here. I'm gonna click connect
+[39:24] Alright ELP admin is my username
+[39:27] And then the password, I'm going to put my password in that I put in when I created this virtual machine.
+[39:32] So I'm going to do that, I'm going to click yes, and it's going to start opening up that virtual machine.
+[39:39] So there you go, I'm now connected in. You'll see that this Windows Server just opens up Server Manager.
+[39:44] I'll just close out of this little message. You can see it's still loading up here.
+[39:48] But I can go down here and I can interact with the server just like I was sitting in front of a physical server.
+[39:54] I've got all the tools and everything that you would normally have on a Windows Server.
+[40:00] There you go.
+[40:00] I know this was kind of a long video, a lot to sit through.
+[40:04] Hopefully you learned a good bit from just the process
+[40:07] of creating the virtual machine.
+[40:08] And now we've successfully created our virtual machine
+[40:11] and we've also now successfully connected into it.
+[40:14] Now I'm going to close out of that and I'm going to keep that virtual machine shut down when I'm not using it.
+[40:19] Okay, so I'm going to go right over here back on WinServer1, click Overview, and I'm just going to say to stop the virtual machine, I'm going to click Yes, it's going to shut that thing down.
+[40:29] And I can always turn it back on when I want to play around with it some more.
+[40:35] So I can come right back in here and I can click Start when I want to play around with it some more.
+[40:43] You know, when you need to get back into the virtual machine, you can always start it back up.
+[40:46] All right. OK, well, there you go.
+[40:48] Hopefully this helped. Hopefully this helped you learn and understand the concept of creating a Microsoft Azure virtual machine.

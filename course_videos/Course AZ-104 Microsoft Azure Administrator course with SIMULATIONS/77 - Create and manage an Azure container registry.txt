@@ -1,0 +1,155 @@
+# 77 - Create and manage an Azure container registry
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/77 - Create and manage an Azure container registry.mp4
+Fetched On: 2026-10-21 19:58:05
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to spend some time helping you understand the concepts of Azure Container
+[00:04] Registries, also known as ACR. Now, if you are going to start working with
+[00:11] Docker images and all of that for storage of your containers and managing things that way
+[00:17] You're gonna want to consider having a container registry that you get to manage
+[00:24] In other words if your company is gonna be utilizing a bunch of container images to deploy containers with and you want to be able
+[00:30] To manage those and store those and authenticate who's connecting to them and all that
+[00:34] Then you're probably gonna want to use an Azure container registry. So that is the idea
+[00:40] So why use this mainly to centralize storage
+[00:44] of your container images to secure and privatize those.
+[00:48] It also makes it very fast for deployment
+[00:51] and then also to sort of automate the workflows of things
+[00:54] like the building, the testing, the updating
+[00:56] and all of that, okay?
+[00:58] You could use these for various things.
+[01:00] You know, this is could be used
+[01:01] in pretty much any industry.
+[01:02] If you want some examples, how about a healthcare app?
+[01:05] deployment for example. Maybe you're at a hospital and you have a web page for
+[01:09] managing patient appointments. You want to build container images
+[01:14] instead of pushing it to like a public docker registry that's
+[01:18] out there on the internet open to the public you can do you can privatize it
+[01:22] with an ACR with an azure container registry. You could use this
+[01:28] for various projects. That's just one example. Okay so here I am on portal.azure.com
+[01:34] We're gonna go to the menu button and go to all services and I'm gonna search for container
+[01:39] Registry and you'll see this little resource right here
+[01:43] We'll click on that and then I'm gonna click to create a container registry
+[01:49] Okay, so then I'm gonna choose it's gonna ask me if I want to create a new resource group or use an existing one
+[01:55] So I am gonna create a new resource group. I'm just gonna call this
+[02:01] container
+[02:05] RG for resource group container registry RG
+[02:09] So we'll click OK on that and then the name of this container registry. I'm gonna call this container registry
+[02:17] registry
+[02:18] test
+[02:20] ELP
+[02:21] Okay
+[02:22] Keep in mind if you are doing this with me, you may not be able to use the exact same name as me
+[02:27] Okay, because this will be
+[02:29] out there to the internet.
+[02:31] Even when I delete mine,
+[02:32] people will still end up using this name at some point.
+[02:36] So just, I recommend using a different name.
+[02:37] But registry test ELP,
+[02:40] that's of course if you're doing this with me.
+[02:42] Okay, registry test ELP
+[02:43] is gonna be the name of my registry.
+[02:45] It'll have a .azurecr.io,
+[02:48] it'll tag on the end of that.
+[02:50] I'm gonna use East US.
+[02:52] And then the next thing it's asking is the domain name label scope. So the idea here is
+[02:59] is that when you create this ACR it is going to consider the name uniqueness that gets associated
+[03:08] with all of it. And you have different options that you can go with here. The first says Unsecure.
+[03:15] This is going to use the exact name that I've provided for my registry.
+[03:20] So in my case, that'll be registry test elp.azurecr.io.
+[03:26] Okay. The use case for this would be if you're creating
+[03:30] a registry with a unique name and want a clean, predictable DNS name.
+[03:34] that's going to be sort of the way you could go with it. The risk of this, of course, if there's
+[03:38] another registry out there with the same name that already exists in Azure, it could cause a
+[03:43] failure of the creation of this. Okay, the next would be a tenant reuse name. So if you create,
+[03:50] if you try to create a registry with the same name anywhere in the same Azure tenant,
+[03:56] Azure adds a hash suffix to it to avoid
+[03:59] any conflicts. So it might be something like registry test elp-abc123.azurecr.io.
+[04:09] So this is good if you got multiple subscriptions or resource groups in the same tenant,
+[04:13] you want to avoid any issues there.
+[04:17] You've got the subscription reuse.
+[04:20] This is similar to the tenant reuse,
+[04:22] but it's scoped only at the subscription level
+[04:24] instead of the whole tenant level.
+[04:26] And then you've got the resource group reuse.
+[04:28] So this limits uniqueness to the same resource group
+[04:31] within the same tenant and subscription.
+[04:35] So if you're creating a resource
+[04:37] in the same resource group during an automated testing
+[04:40] or something like that, you could go with the resource
+[04:43] group option.
+[04:44] And then the next would be no reuse.
+[04:47] always adds a unique hash string to the register DNS name even if no conflict exists.
+[04:54] So if you want to guarantee uniqueness every time you create a registry such as you know
+[04:59] maybe you're doing large amounts of web content deployments or something you just want to
+[05:05] guarantee uniqueness and you've got code that's checking the the DNS name every time this is
+[05:10] probably going to be the best solution. All right I am going to go with this no reuse.
+[05:17] And then from there, I'm not gonna be using
+[05:20] any availability zones or any of that.
+[05:22] This is the little registry domain name
+[05:24] it is gonna use based on what I've selected,
+[05:26] but I'm not doing availability zones.
+[05:27] And then I got pricing plans here.
+[05:30] And of course you can go out and you can look at the
+[05:33] learn more of the pricing info article on this,
+[05:36] and it kind of breaks it down for you.
+[05:39] Essentially,
+[05:40] At the least that the creation is video basic you're gonna get about two gigs worth you're gonna get two gigs worth of storage
+[05:47] The base cost it's about like point one six seven per day
+[05:53] Operations and throughput kind of the lowest limits you get a one thousand read
+[05:59] operations per second
+[06:02] Let's see what's standard instead of 10 gigs you get a hundred gigs of storage
+[06:07] The cost is $1.008 per day.
+[06:12] All right, they increased the throughput from 1000 read ops to 3000 read ops,
+[06:18] from 100 write ops to 500 write ops, and then with premium you get 500 gigs of storage.
+[06:25] The cost is...
+[06:27] $2.52 a day, instead of the $3,000 you got with standard, you would get $10,000 read
+[06:34] ops, instead of the $500 write ops, you get $2,000 write ops.
+[06:38] Okay, so that's fine.
+[06:39] We're just going to go with standard.
+[06:42] And then it's asking if I want to do, what kind of role assignment I want to do, I can
+[06:46] just do the RBAC, registry permissions, role-based access control.
+[06:51] You can also combine this with what's called ABAC, attribute-based access control as
+[06:56] well.
+[06:56] So the standard RBAC is the pretty common one that we've pretty much always had and it's just
+[07:01] roll based access control like it normally is but.
+[07:04] If you use RBAC plus ABAC, you get a little bit more advanced, more fine grain control
+[07:11] because you can use attribute conditions. So you can create custom conditions like I could have
+[07:18] a condition like the name of the container repository. I can have a time of access or
+[07:23] user's department tag and link it all based on that and control access based on the different
+[07:31] attributes associated with who's connecting in and all that. We're not
+[07:35] gonna do any of that here but I at least wanted to give you an idea what that
+[07:39] was. Alright so I'm gonna go ahead and click next and then it's asking me
+[07:44] about networking. Says alright private access recommended is only for premium.
+[07:50] You'd have to go premium if you wanted to do private access. That's fine I'm
+[07:53] gonna go with public. We're gonna click next for encryption.
+[07:57] It tells you customer managed key is only available premium.
+[07:59] That's fine.
+[08:00] We chose standard.
+[08:01] Not going to put any tags here.
+[08:02] I'm going to click Review and Create.
+[08:05] Let it validate.
+[08:06] And I'm going to click to create.
+[08:07] I'm going to pause recording while this is getting created.
+[08:10] All right, now that that's done, I can click Go to Resource.
+[08:13] And here I am in the actual container registry.
+[08:17] And of course, I don't have anything in my repository.
+[08:20] If I expand services and go to repository,
+[08:22] you can see I don't have anything in there at the moment.
+[08:24] So I have no images or any of that.
+[08:27] Now one thing I do need to do, I'm going to go over here under settings and click on access keys
+[08:31] and I do need to set up my admin credentials.
+[08:34] So I'm going to click to enable that.
+[08:38] All right, the username it's going to create will be called this the registry test ELP.
+[08:44] It's just going to be the username.
+[08:45] I'm going to want to know that.
+[08:46] And then eventually I would need to know the password here so I can click show in
+[08:50] order to copy this password.
+[08:52] And that's what's going to let me authenticate into this registry, but we
+[08:56] won't be doing that in this video.
+[08:57] This video, we just wanted to get the container registry created and
+[09:01] we have successfully done that.
+[09:03] So we are ready to move on.

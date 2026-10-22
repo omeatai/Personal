@@ -1,0 +1,118 @@
+# 87 - Configure networking settings for an App Service
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/87 - Configure networking settings for an App Service.mp4
+Fetched On: 2026-10-21 19:53:31
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at the networking settings that we have involving our app service.
+[00:04] So here we are on portal.azure.com. We go to the menu button and go to all services. Let's just
+[00:10] search for app service. We go to app services right here and we've got this Linux app service
+[00:17] demo that we've created. And then from there, once we get into our Linux app service demo,
+[00:22] we're going to go down here to networking.
+[00:26] All right, so once we are in networking, a couple things here we'll notice. All right,
+[00:32] we've got, you'll notice is mainly just it's broken up into different sections here. We got
+[00:36] an inbound traffic configuration and an outbound traffic configuration. So under inbound traffic
+[00:43] configuration, we've got public network access. So this of course is going to involve, you know,
+[00:48] things trying to connect in from the internet, from the public, right? We've got public network
+[00:54] access enabled with no access restrictions, and this is probably where the majority of
+[00:59] the configuration for all this will come from. If we click on that, enable with no access restrictions,
+[01:05] that basically means that right now anything that can hit the public address can access this.
+[01:11] So I'll go ahead and click on that.
+[01:13] And then once I get in there, you'll notice it says public access is applied to both main site and advanced tool site.
+[01:20] I'll explain a little bit about more about that in a second.
+[01:23] Deny public network access will block all incoming traffic except that comes from the private endpoints.
+[01:32] Okay, so right now...
+[01:35] Public access is applied and it says enable from all networks. That basically means hey, we're going to enable it. We're going to allow traffic from anywhere.
+[01:45] If we were to enable deny, which we haven't, right, we've got allow currently enabled.
+[01:53] Deny is going to block everything except for traffic that's set up.
+[02:00] through what's called a private endpoint, okay?
+[02:04] Private endpoint being things within Azure
+[02:06] that we are allowing.
+[02:08] Okay, so right now it says public network access enabled from all networks. This will clear all
+[02:14] current access restrictions or I can say enable from select virtual networks and IP addresses.
+[02:19] Okay, so that's another option we can just say hey we just want to allow virtual networks VNets
+[02:25] to access this resource or we can just say hey we just want to disable public access
+[02:30] all together right now. So now if we come down here
+[02:35] And also, so again, currently this is set to allow.
+[02:39] If we wanna go and we set this to enable
+[02:43] for virtual networks, we can come down here
+[02:45] and we can choose, allow or deny,
+[02:49] change this to deny if we want.
+[02:52] Also, if we go that route,
+[02:55] we have the ability to click add
+[02:57] and we can set a priority list based on
+[03:01] what type of restriction here we would like to set.
+[03:06] And we can give it a name, we can set a priority,
+[03:09] the lower the number, the higher the priority,
+[03:11] we can base this on a type, IPv4, IPv6, virtual network,
+[03:16] we can set the service tag there, all that.
+[03:20] We can set...
+[03:22] HTTP different types of HTTP headers. If you go out there on the internet you can look up various
+[03:27] types of headers that can be set. I really wouldn't stress over knowing all the various headers.
+[03:32] There's lots of those that can be configured though when it comes to dealing with HTTP and
+[03:38] HTTPS. This is especially helpful though if you have if you're a web developer or you're working
+[03:44] with a web developer and web developers need to pass HTTP headers back and forth. That's where
+[03:51] Okay, but that's where you would want to do that now. That is allowing traffic usually to pass between
+[03:59] VNets if you had different web apps that were doing that. Now what if you are dealing in a
+[04:05] situation perhaps where you are needing to pass traffic to on-premise, you need to control
+[04:19] those headers, that type of header traffic going back and forth, well...
+[04:23] Or I should also say not just passing traffic to on-premise, but also what if you've got to set
+[04:30] huge ranges of IP addresses that are going to be allowed for various VNets?
+[04:36] That's where this advanced tool site is going to come into play and you actually have to use PowerShell commands for that.
+[04:43] And so if we actually go here to learn more,
+[04:46] Microsoft has a little article where they talk a little bit more about this. So you got
+[04:53] This little drawing here that kind of shows you, you've got the app service, you've got your Azure VNet,
+[04:57] you even possibly have a hybrid network, which I'm going to explain a little more here in a moment,
+[05:02] but you're trying to pass information throughout your environment, through your app services,
+[05:09] possibly through these various headers, and you have to prove various ranges of addresses.
+[05:15] Let's scroll down a little bit and I'll show you.
+[05:17] That's where these blocks of addresses might have to have to come into play.
+[05:25] So multi source rules.
+[05:27] So multi source rule allow you to combine up to eight ranges or eight service tags in
+[05:32] a single rule.
+[05:33] So you must use a multi-source rule if you have more than 512 IP ranges or you want
+[05:40] to create logical rules.
+[05:44] And so this is where that comes in handy.
+[05:46] You have to use this.
+[05:48] this PowerShell command to do that. I really, to be honest with you, I really
+[05:52] wouldn't stress over memorizing all this for what we're learning here. So
+[05:57] just be aware that's kind of where the advanced concept, the advanced tool coming
+[06:01] in, but I really wouldn't stress over memorizing all this. Just be aware that
+[06:04] this is an option. If you have more than 512 ranges,
+[06:10] a very, very large environment, perhaps that's where that's going to come in
+[06:17] I want to jump back right here to networking again.
+[06:21] Now we can look at app assigned address.
+[06:24] So this would be essentially where you can have
+[06:28] various custom domain names associated with your app,
+[06:31] and the IP address associated with that.
+[06:34] You could also buy an app service domain name here.
+[06:37] Going back over to networking,
+[06:39] we have private endpoints.
+[06:40] So this is linking to your private.
+[06:44] endpoints within Azure, your various VNets.
+[06:48] So these are direct links inside Azure.
+[06:51] I'm not going to dive deep into that right now in this particular section.
+[06:55] This is Azure Front Door,
+[06:56] so this is firewall services that can be utilized to
+[07:00] protect with your app service again,
+[07:02] not diving into that right now deep into this section.
+[07:05] Now we get to outbound traffic configuration.
+[07:09] You have a virtual network integration,
+[07:11] if I click on that, so it's VNet.
+[07:13] integration. This is how we can add our VNets here if I want with this. Then you got hybrid
+[07:20] network or hybrid connections. So if I go right there, this is going to let me link to a hybrid
+[07:27] environment. So that's kind of nice. MicroSaw has a little article here. They get into this
+[07:32] a little bit. I have this little graphic here I kind of wanted to show you where I could have
+[07:41] connections between our app service and our on-premise environment. So that's helpful to
+[07:47] relay HTTPS traffic over port 443. So that's obviously TLS 1.2 encrypted traffic being
+[07:56] relayed to your on-premise environment. That's great if you've got some kind of database or
+[08:00] something like that that needs to relay back and forth. That's what is going to allow you to do
+[08:05] that. So you could set that up through that little environment there.
+[08:09] So here's your outbound connections and that's pretty much your network setting.
+[08:12] Some of the various things that you can configure there.
+[08:14] Keep in mind this is yet another little area that seems to change all the time.
+[08:19] So don't be surprised sometimes if you come here, it may look a little bit different for you.
+[08:23] But hopefully that gives you a nice little rundown now of the networking section of app services.

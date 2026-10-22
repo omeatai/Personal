@@ -1,0 +1,153 @@
+# 18 - Understanding Groups in Azure and Microsoft 365
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/18 - Understanding Groups in Azure and Microsoft 365.mp4
+Fetched On: 2026-10-21 20:05:25
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to spend some time helping you understand the idea of groups in Azure
+[00:04] Microsoft 365 and IntraID. Now before we go too deep into this, I also want to clarify that
+[00:11] really this all ties to IntraID.
+[00:14] So whether you're talking about Azure, whether you're talking about Microsoft 365 or any of the cloud services that Microsoft offers,
+[00:21] remember that IntraID is the directory services repository where the various identities are stored.
+[00:28] So that's going to include user identities, groups or group identities, as well as our device identities and all that fun stuff.
+[00:37] So ultimately, it really all ties back to IntraID.
+[00:41] formerly known as Azure AD, okay?
+[00:43] So there are four group types.
+[00:46] I'll tell you that.
+[00:47] two of these are the most common groups and if you want to know what the most common group is,
+[00:52] it is the Microsoft 365 group. The second most common group that's used is a security group.
+[00:57] We're going to talk about all four of these and I'm going to go into more detail on each one. I'll
+[01:03] give you a quick overview of each one right now. The Microsoft 365 group again is the most common
+[01:10] type of group that we use out there. It can do almost everything in terms of what you would
+[01:17] a group. And what do you want out of a group? Well, one of the main things you want out
+[01:20] of a group is to be able to group objects together and then be able to allow them to
+[01:25] have access to various types of resources. And of course, with Microsoft 365 group, you
+[01:31] can do that. It can be associated with Teams and SharePoint and all that. So it's a very,
+[01:37] very powerful common type of group that everybody uses. There's one thing that a Microsoft
+[01:46] identities. So you can't put device identities in it if you want to control devices like a
+[01:52] desktop machines, laptops, smartphones, tablets, you can't use a Microsoft 365 group. That is what
+[01:57] a security group really brings to the table. The second type of group is a distribution group.
+[02:02] This goes back to the exchange world where we had distribution list. This was a group you could
+[02:08] create. The group gets an email address and then you can email the group and it goes to every
+[02:14] the email would go to everyone in the group.
+[02:16] Then you've also got what is called a mail enabled security group.
+[02:19] That's number three there.
+[02:20] And that group also gets an email address,
+[02:22] but can also be given permissions to resources.
+[02:25] But unlike a Microsoft 365 group,
+[02:28] doesn't support all of the crazy features that it does,
+[02:31] like creating a team and SharePoint and all of that.
+[02:34] Again, we're going to dive deeper into that in a moment.
+[02:36] Just again, give you an overview.
+[02:38] The last one is a security group.
+[02:40] Security groups are strictly used for permissions.
+[02:43] The big claim to fame for a security group is that
+[02:46] They can contain users, but one of the big things that it does is you can put devices in this type of group.
+[02:52] So it's great for controlling resources.
+[02:54] So if you're using something like Microsoft Intune and you need to control what these devices can do and access and,
+[03:00] you know, for controlling resources with those devices, the security group is the greatest way to go about it.
+[03:05] All right.
+[03:06] All right. Let's take a deeper look now at our four group types.
+[03:12] So we'll start with the main one, the Microsoft 365 group.
+[03:17] this is the most common by far group. It used to be called a Office 365 group and then before that
+[03:25] in the early days they call it a unified group. So the name has changed a few times it wouldn't
+[03:29] surprise me they changed the name again in the future. But anyway, Microsoft 365 groups,
+[03:34] these are collaboration ready groups. They will automatically include a shared mailbox so anybody
+[03:45] The copy of the email can go to out to everybody that's tied to that group
+[03:49] They have a shared calendar so you can put things on a calendar involving the group and everybody can see it
+[03:54] That's in the group's share point site can create a share point site and people that are part of the group get access to that
+[04:00] OneNote and planner
+[04:01] All of that links together.
+[04:03] It also integrates with Microsoft Teams.
+[04:06] So Teams is a big part of this as well.
+[04:09] So it's used as the backbone for Microsoft Team.
+[04:12] Anybody that's in it automatically gets access to Teams
+[04:15] if they've got a Teams license.
+[04:16] It enables chat with them.
+[04:18] They can do meetings and file sharing.
+[04:20] It also supports guest access.
+[04:22] So external users can be added to communicate
+[04:25] and utilize this group.
+[04:26] And it supports what is known as dynamic or assigned,
+[04:29] which involves you can manually.
+[04:31] put people in the group or you can also handle it automatically using what are
+[04:35] called dynamic rules which towards the end of this little video I'm gonna
+[04:38] explain that a little bit better so if you don't really understand the
+[04:40] difference between dynamic and assigned stay tuned okay all right the second
+[04:45] type of group is a distribution group so a distribution group has an email
+[04:49] only functionality it's meant to sort of be like a distribution list meaning
+[04:52] you create a group it gets an email address so for example if I created a
+[05:00] It would get an email address like marketing at exam lab practice.com.
+[05:05] Anybody that you put in the group, if somebody emails marketing at exam lab practice.com,
+[05:10] the email would go out to everybody in the group.
+[05:13] Keep in mind a Microsoft 365 group can do that as well, but a lot more.
+[05:17] So distribution groups are kind of an older type of group.
+[05:20] They've been around forever going back to the exchange, you know, early days of exchange
+[05:24] back when it was just called a distribution list and all that.
+[05:30] Sort of the same idea as what you saw with dynamic or assigned.
+[05:35] The manual dynamic means you can statically put people in the group
+[05:39] or it can be dynamically controlled based on filters.
+[05:42] So it's a little different than this idea of what we have Microsoft 365 dynamic,
+[05:46] but it's the same basic concept.
+[05:49] You can automate membership of the group, okay?
+[05:52] You have internal communication.
+[05:55] Primarily intended for internal announcements or department wide emails.
+[05:59] The big thing that you can't do with the distribution group, the key thing to
+[06:03] remember here, it doesn't have access control to anything. You cannot assign
+[06:07] permissions to resources like SharePoint or Teams or any of that. So can't be used
+[06:13] for that sort of thing. Alright the third type of group we have is a mail
+[06:17] enabled security group. So this gives you a dual purpose. You have a security
+[06:25] It can contain, it can be given permissions out to resources and all of that good stuff.
+[06:30] Okay, so it's email capable. You can assign permissions to it. It has a shared email
+[06:36] address allowing group members to receive messages like a distribution list.
+[06:40] Access control can be used to manage access to things like SharePoint OneDrive, Intune,
+[06:45] other resources, but no collaboration features.
+[06:48] It does not include Teams, shared calendar, or document libraries like the Microsoft 365
+[06:53] group does.
+[06:54] So that's the thing to not get mixed up on.
+[06:56] You're not going to automatically create a Teams, not going to automatically create a
+[06:59] SharePoint site or any of that.
+[07:01] It's not going to support any of that collaboration stuff.
+[07:04] So just remember that.
+[07:05] Okay.
+[07:10] So security groups that it's primarily going to be used to assign permissions to resources like SharePoint sites apps and intune
+[07:18] policies
+[07:19] Has no email functionality. So you can't email a security group the big claim to fame
+[07:25] The big thing to remember is that with a security group
+[07:30] Not only can you contain users, but you can contain devices.
+[07:34] You'll notice I've highlighted that on the screen for you because that's a very
+[07:37] important key point I want you to remember.
+[07:39] So it can support users, devices, and service principles for flexible
+[07:43] management and all that. It also does support dynamic
+[07:47] and assigned rules, meaning you can manually add people to the group
+[07:52] or it can be dynamically managed with what are called dynamic rules.
+[07:57] Speaking of which...
+[07:58] Let's explain a little bit more in depth about what dynamic and assigned groups mean.
+[08:06] Okay, so when it comes to Microsoft 365 groups and security groups, you can utilize what
+[08:14] is called an assigned version of that group or a dynamic version of that group.
+[08:18] Okay, an assigned group is more of a traditional style of group.
+[08:28] Okay, although you can delegate somebody as an owner of the group and they can manually
+[08:33] add or remove people as well.
+[08:35] So this is best for small teams or fixed membership.
+[08:38] So if you don't have a lot going on, this is an easy group to set up.
+[08:42] It's very simple to set up and control.
+[08:45] Nothing too complex.
+[08:46] Okay.
+[08:47] Now, a dynamic group, the membership is going to be based on rules.
+[08:57] Every user that has the letters HR in their department property of their user account
+[09:07] are automatically a member of this group.
+[09:09] So if I created a group called HR, then everyone that has HR as their department property for
+[09:16] their user identity, well, they automatically become part of this group.
+[09:22] If a user was to move departments, okay, let's say somebody joined the HR department,
+[09:28] but then it turned out that they were better with finance than they were HR,
+[09:32] and we moved them to the finance department, well, as soon as you change that department
+[09:37] attribute, they would no longer be part of that group. Okay, so users and devices are
+[09:42] automatically added, removed as attributes change.
+[09:46] Okay, it's ideal for large organizations that need and you know have automated management.
+[09:51] This is going to be perfect for that. So that is the difference between an assigned group
+[09:56] and dynamic group and hopefully now you have a better understanding of the
+[10:00] different types of groups that we have available in the Azure
+[10:03] Microsoft 365 World and Intra ID.

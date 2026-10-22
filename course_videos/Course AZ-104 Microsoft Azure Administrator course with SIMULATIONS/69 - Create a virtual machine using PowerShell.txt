@@ -1,0 +1,176 @@
+# 69 - Create a virtual machine using PowerShell
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/69 - Create a virtual machine using PowerShell.mp4
+Fetched On: 2026-10-21 20:11:45
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at how we could deploy a virtual machine using PowerShell.
+[00:06] Now the first thing to be aware of here is that you will need the AZ commands installed
+[00:12] on your machine before you can do this.
+[00:15] So hopefully you've already got that, but if not, you would open up PowerShell by right
+[00:20] clicking start on your Windows computer.
+[00:22] going to terminal admin or PowerShell admin,
+[00:24] and then I'll bring you in here.
+[00:26] You could run this command here,
+[00:28] install-module-nameaz-4,
+[00:31] so I'll call it, I've already done all that.
+[00:33] I've got the AZ commands.
+[00:35] The next thing is I would need to make sure that I've
+[00:37] connected to Azure.
+[00:39] I can do that by typing connect-az-account and hit
+[00:44] enter and then it's going to pop a box up.
+[00:47] I'm going to authenticate. All right.
+[01:00] If I get this little box here, I'm not going to worry about them.
+[01:02] So hit no.
+[01:04] Don't need to join my organization and now I'm officially linked into Azure.
+[01:10] Now the first thing to be aware of a course is what commands I will want to use to do this and you can always search for commands.
+[01:18] I can type get dash command and then space dash noun and then I can use wildcards to help me search for command.
+[01:26] I'm looking for.
+[01:27] Okay, perhaps I'm wanting to do a virtual machine.
+[01:30] So I'd say star VM star, I hit enter, and I can see all these VM commands.
+[01:35] I know that the verb for creating a virtual machine would probably be the word
+[01:39] new. So I might say get dash command dash verb new, then dash noun, and then
+[01:47] I'll say star VM star.
+[01:49] So you can see all these commandlets here that would have something to do with
+[01:52] creating something new in the letters VM.
+[01:54] This would be the command I want right here.
+[01:57] Okay.
+[01:58] I actually wanna create a resource group first.
+[02:01] Now there is a command that I can use
+[02:03] to create a resource group called
+[02:05] the new-az resource group.
+[02:07] So I'm gonna type new-az resource group.
+[02:12] All right, space.
+[02:14] Then I'm gonna put dash resource.
+[02:18] Just waitin' on it to catch up.
+[02:22] There it goes.
+[02:23] Resource group name.
+[02:25] I'm going to call this VM Power Shell Demo.
+[02:30] That's going to be the name of my resource group.
+[02:32] Then I'm going to specify the location.
+[02:34] So I'm going to put space and then put dash location east US.
+[02:40] All right. So that should be enough to create my resource group.
+[02:43] So we're going to go ahead and hit enter and it should create our resource group.
+[02:47] So there it is. You can see that it did successfully create the resource group.
+[02:53] Oh, and by the way, if for some reason you start trying to run commands and you get an error,
+[02:58] it could be that you need to re-import your AZ commands, you can always type import-module-az
+[03:03] and that will just re-import it all into memory. But you shouldn't necessarily have to do that.
+[03:08] Things are properly installed. Okay, now we're ready to create a virtual machine. Now...
+[03:14] Remember, always remember that there are help articles on how to use these commands.
+[03:20] So if you're confused on, you know, what's the syntax and how do I do it?
+[03:24] There's help articles.
+[03:25] If I go out to Google right now and I just do a search for new-azvm and hit enter, there's
+[03:30] an article about this command.
+[03:32] I can click on it and it'll even provide examples.
+[03:35] Okay.
+[03:36] And again, I can't say enough good things also about using AI for this sort of thing.
+[03:42] So you can always go and you can, you could use AI like I've got copilot right here on
+[03:52] how can I use the new-azvm command to deploy a VM into Azure?
+[04:07] Okay. So I can put that in there.
+[04:09] And it's going to give me examples on how to actually do this command.
+[04:13] And you could copy and paste.
+[04:15] If you get an error, you can always say, okay, well, I got this error and it can help you fix it.
+[04:19] So I can't say enough good things about AI when it comes to running commands and things like this.
+[04:24] It's definitely something to consider.
+[04:26] Okay.
+[04:27] Now the other question that comes up with people, and I might have addressed this, maybe, maybe not,
+[04:31] but people say, why would I ever want to do this?
+[04:34] Because you can write scripts that could automate.
+[04:38] deploying a bunch of virtual machines and all that at one time.
+[04:41] Okay, that's why people like to use scripts for
+[04:45] automating things. Okay, you have ARM templates and bicep and all that, but
+[04:49] people still like to write scripts. Okay, so this is the reason why it's
+[04:54] good to understand, you know, how to do commands and all that. But don't,
+[04:57] you don't have to stress and say you don't have to memorize every commandlet
+[04:59] and in parameter and all that. This is a, but
+[05:03] it's good to practice and learn sort of the flow of all this.
+[05:07] We're now ready to create our command and one of the things are to deploy our virtual machine.
+[05:15] But the one thing that we are going to need to do when we specify this virtual machine is we're
+[05:18] going to need to have credentials that will be used for authenticating with our virtual machine.
+[05:25] That's going to be one of the things that will be required. So we're going to create a little
+[05:28] variable. It's dollar sign cred for credential. I'm going to say equals get dash
+[05:33] credentials. Now this is going to help us build a variable that will be stored in memory
+[05:37] that we can call upon when we're deploying our virtual machine for putting the credentials
+[05:42] in needed for the admin account in regards to working with this virtual machine. So we're
+[05:47] going to hit enter and it should pop a little box up and I'm going to do elp admin in a
+[05:53] password. Alright, and there you go. We've now done that. If you try to call upon that
+[06:01] variable it's going to show you and but it's going to show you that it's
+[06:04] encrypted it's not going to tell you what the password is okay so I'm going
+[06:07] to clear the screen and now we're ready so we're going to put new-azvm
+[06:14] that's going to be our little command our commandlet dash resource group name
+[06:32] US for me dash name and then whatever I want to call
+[06:37] This virtual machine. All right, so whatever you want to name the virtual machine you would put the name of the virtual machine
+[06:44] I'm just gonna call this
+[06:46] My VM for lack of a better name and I'm gonna put dash
+[06:51] Virtual network. You do have to specify a virtual network name
+[06:56] The virtual network. I'm gonna just have it create a virtual network called VM
+[07:01] PowerShell vnet.
+[07:05] All right?
+[07:06] And the names you see here and all that,
+[07:09] this isn't case sensitive or any of that.
+[07:13] Okay, so now that I've done that,
+[07:14] I've got to specify subnet to go with that virtual network.
+[07:17] I'm gonna put dash subnet name.
+[07:21] Okay, subnet, I'm just gonna put default PowerShell sub
+[07:27] is just gonna be what that's gonna be called.
+[07:29] and then I'll put dash security group name.
+[07:34] This is gonna be the little network security group
+[07:36] which is a little IP filtering set of rules
+[07:40] that controls what can go in and out
+[07:42] of the virtual machine, virtual network, okay?
+[07:46] I'm just gonna call this NSG PowerShell VNIC,
+[07:55] all right, for virtual NIC.
+[07:58] All right, then I'm gonna hit space
+[07:59] and I'm gonna put dash public.
+[08:01] address name, I'm gonna call this PowerShell pip
+[08:09] for public IP address, all right.
+[08:13] Then I'm gonna put dash open ports.
+[08:16] So these are gonna be the ports that I'll allow open
+[08:19] and that will be port 80, port 443, and port 3389.
+[08:26] So that's HTTP, HTTPS, and RDP, Remote Desktop Protocol.
+[08:33] The next thing I've got to put in here would be the credentials.
+[08:40] I'm going to put dollar sign cred.
+[08:42] Okay.
+[08:44] And I believe we have entered everything here that we need to enter.
+[08:48] I believe I haven't left anything off.
+[08:50] But you one thing is for sure.
+[08:52] If you mess something up, PowerShell is going to let you know.
+[08:55] So let's go ahead and hit enter and see if I missed anything.
+[08:59] All right.
+[09:00] Everything's working so far.
+[09:05] It did say I didn't specify size,
+[09:07] I could have specified a size for my VM,
+[09:10] but since I didn't,
+[09:11] you can see it's going to use one of the default sizes.
+[09:15] Well, I'm going to go ahead and pause the recording and let this run through now.
+[09:19] That only took a couple of minutes,
+[09:21] and as you can see, it did go through successfully.
+[09:23] Now, if I open up portal.azure.com and go to
+[09:26] my resource group called VM PowerShell demo, look what's there.
+[09:34] there. Okay, I can click on that virtual machine. Alright, I could even connect to
+[09:41] it. Click connect, download the remote desktop file, click open, connect, put my
+[09:51] credentials in, click yes.
+[10:00] I've now successfully remoted into that virtual machine.
+[10:06] Alright, so I'm just inside of server here.
+[10:08] I didn't specify anything.
+[10:10] I didn't specify operating system.
+[10:11] I didn't specify size.
+[10:13] I could have done that by the way.
+[10:15] You know, you could, if I hit the up arrow right here, it's like one of the parameters
+[10:21] you can put in is the size and you could have specified the size data that you want.
+[10:27] what that size would be, you could specify,
+[10:30] you operating system image, all of that.
+[10:32] All you gotta do is look up the parameters
+[10:34] and you can totally do that, all right?
+[10:36] All right, so I've got my virtual machine created
+[10:40] and all of that for my PowerShell.
+[10:41] I actually don't need this virtual machine.
+[10:43] I'm gonna get rid of it.
+[10:44] So I'm just gonna go right here
+[10:46] to this PowerShell demo resource group
+[10:49] and I'm gonna click delete and copy this.
+[10:54] I'm gonna apply force delete.
+[10:56] and then I'm going to click delete and that is how you can create a virtual machine with PowerShell.

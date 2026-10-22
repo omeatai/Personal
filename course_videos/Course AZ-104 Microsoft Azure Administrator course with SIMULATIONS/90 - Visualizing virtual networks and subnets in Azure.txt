@@ -1,0 +1,287 @@
+# 90 - Visualizing virtual networks and subnets in Azure
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/90 - Visualizing virtual networks and subnets in Azure.mp4
+Fetched On: 2026-10-21 20:44:46
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to go through the process of helping understand VNets and subnets.
+[00:05] Now the first thing I want to say in regards to Azure and virtual networks is that if you
+[00:11] have an understanding of just how physical networking works, even in like a traditional
+[00:17] on-premise environment where you have to have what are called subnets and you're running
+[00:26] Still to this day, even though we do have TCP IP version 6 out there
+[00:31] The majority of everything that's running is still TCP IP version 4
+[00:34] Which is what Azure is running and kind of what we're focused on here
+[00:39] your virtual networking concept is very, very much like on-premise networking.
+[00:45] So the same kind of concepts that you have learned and used in the on-premise side of things,
+[00:52] in regards to TCPIP, is pretty much what you're going to find is running in Azure.
+[00:58] Now when you start using resources, there are all sorts of types of resources out there that...
+[01:03] communicate and work on a virtual network or VNet as it's called.
+[01:07] Alright, of course virtual machines are going to have VNICs and those VNICs are going to
+[01:13] interact.
+[01:14] Virtual network interface cards is what that stands for.
+[01:17] They're going to interact on the virtual networks.
+[01:19] Alright, now.
+[01:20] The virtual network is within Azure, within their Azure networking space, and it's able to route
+[01:27] traffic across that virtual network and communicate with the internet if you attach public IP addresses
+[01:33] and all that. And the virtual networks even have a DHCP service, a dynamic host configuration
+[01:38] protocol service that will issue out the addresses that you set up in the address space
+[01:43] that you have. So what I want to do now, I want to draw some of this out and help you visualize it
+[01:50] in and using it. Okay, so we'll start by setting up a VNet in this graphic. Now the VNet is
+[01:55] going to represent a network as a whole, alright? And we'll say that this rectangle is going
+[02:03] to represent the VNet as a whole. A VNet is going to be made up of an address space,
+[02:09] alright? A range, an entire range of addresses that make up the whole virtual network,
+[02:18] I might call this VNet, we'll call it VNet A.
+[02:25] All right, let me lower the font down just a little bit here,
+[02:28] because it's taking up a little bit too much room.
+[02:30] But we'll call this VNet A, all right?
+[02:33] So let's see, there we go.
+[02:36] And basically VNet A, the address space will be, let's say from,
+[02:47] 1.00 slash 16. Now I'm not here to teach you TCPIP, you kind of have to have a little bit of
+[02:54] understanding of TCPIP coming into this, but that if you do the math on that in TCPIP there's
+[03:01] basically 65,000 addresses that would be available within this address space. Okay.
+[03:10] This is a very common type of address space in a private network that you use.
+[03:14] The slash 16 means that this would have a subnet mask of 255.255.0.0, okay?
+[03:22] And that would make up basically 65,000.
+[03:24] There'd be a total of 65,536 addresses.
+[03:29] You have to really subtract a couple there, but roughly 65,000 addresses.
+[03:38] on all of our given subnets because ultimately here's the thing you have your virtual network
+[03:43] which is this square as a whole but then you have to set up what are called subnets just like in
+[03:49] traditional TCPIP networks you have the network as a whole that might represent the whole network
+[03:54] and then you might have subnets that go inside that network okay so from there um I might have
+[04:09] This is gonna represent a subnet.
+[04:12] And we'll call this subnet A.
+[04:17] Alright.
+[04:18] And so from there it might be 10.1.1.0.
+[04:24] Slash 24.
+[04:26] Okay.
+[04:27] So you're slicing off a piece of that 65,000 chunk of addresses by doing that.
+[04:34] You're basically saying that you're gonna roughly have 256 addresses.
+[04:39] in TCPIP you probably know this if you know TCPIP you have to subtract two, you can't use the very
+[04:45] first address on an addressing system and you can't use the very last address. The very first
+[04:49] address represents what is called the network address in TCPIP and the very last address is
+[04:56] what we call the broadcast address. So in reality you would have a range of addresses that would be
+[05:08] 1.1.254. Now Azure also does reserve a couple of other addresses for itself but not going to get
+[05:16] into that right now. That would be your actual range that would be available. So the virtual
+[05:21] machines and all that that go on this virtual network would be able to take you know those
+[05:28] addresses and you'd have a DHCP service that would handle this for each service each subnet
+[05:37] another subnet over here let's create another subnet and we'll call this subnet b all right
+[05:46] and then maybe subnet b is going to be 10.1.2.0.24 which means you would have a range of 10.1.2.1
+[05:57] to 10.1.2.254 that would be your range all right of addresses that are available on that subnet okay
+[06:06] And then of course let's say you want to have another subnet. We'll say subnet C over here.
+[06:16] Each subnet could contain different virtual machines and you could be putting them on
+[06:19] different subnets for that purpose. One of the reasons for putting things on different subnets
+[06:24] and not just doing one big subnet is that you can you could have security rules and stuff for
+[06:29] that specific subnet if you want but not getting into the the IP filtering just yet.
+[06:37] Subnet C might be 10.1.3.0.24. Hopefully you're seeing a pattern here and you would basically
+[06:44] have a 10.1.3.1 to 10.1.3.254 and that would be your range. So again you can you can put your
+[06:55] different
+[06:56] virtual machines on the subnets and from there they would be able to communicate.
+[07:01] One of the interesting things about having subnets in the same VNet is that they can
+[07:06] automatically talk to each other. So for example if you had a virtual machine here,
+[07:12] we'll say this is a VM, and of course virtual machines have VNICs. A VNIC is going to be
+[07:22] the object that represents the adapter card for that virtual machine, that v-neck would
+[07:32] automatically get an address from the DHCP service that the v-neck uses. And then if I had another
+[07:37] virtual machine down here and maybe another virtual machine over here, all of these could talk to each
+[07:43] other automatically. They could automatically communicate, they could automatically talk to
+[07:50] traffic could flow between those different subnets. That's automatic. Now, there is this thing
+[07:58] that is called an NSG. An NSG is called a network security group. NSG. All right, I'm gonna...
+[08:08] put a little square around it. NSGs are IP filtering capabilities and what they
+[08:13] basically do is they can restrict traffic from flowing to one place to
+[08:18] the other if we want. NSGs can be placed either directly on a v-neck or they can
+[08:25] be placed on a subnet as a whole. So for example if I had some kind of VM here
+[08:30] and I really needed a lockdown what could talk to it maybe I want
+[08:35] the virtual machine in subnet a to talk to this VM but not the one in subnet b.
+[08:40] I could actually do that by using NSG. I could place the NSG on the whole subnet and restrict
+[08:45] it this VM from talking to the whole subnet or I could just place it on this v-neck and restrict
+[08:51] traffic from talking restrict this guy from talking to this v-neck. And of course that can
+[08:55] include things coming from the internet and all of that stuff as well.
+[08:59] Alright? Because of course that is the other thing that I'm not looking at just yet, but you can assign
+[09:03] public IP addresses to all this too and you can allow things from the internet to get in. In this
+[09:07] case right now, since I don't have any kind of public IP address, there's nothing that's actually
+[09:12] talking from the internet to these machines. Alright? These machines can actually go out to
+[09:17] the internet if you want them to, but things can't flow in from the internet. Alright?
+[09:22] So, you know, kind of summarizing what we're seeing here, we've created, we've got a VNet
+[09:27] called VNet A, and we've only got one VNet, and we've set the whole entire range, which
+[09:33] is 10.1.
+[09:35] 0 0 now if you would actually think about that whole range you would have ten dot one dot zero zero zero zero dot one
+[09:42] Generally up to ten dot one dot two fifty five dot two fifty four that would be the full
+[09:48] Range the full sixty five thousand range and what these subnets are doing is they're breaking these up into
+[09:55] Smaller chunks smaller more manageable chunks the general rule of thumb most people kind of go
+[10:00] this. You don't have to go by this, but the general rule of thumb is your subnet should be
+[10:04] slash 24 based. That's 255, 255, 255, 0 on the subnet mask which gives you roughly 254 addresses,
+[10:11] even though Azure does reserve a few more than that. You get roughly 250 when it's all said and
+[10:17] done, okay, depending upon what Azure reserves for itself for routing traffic, all right. But again,
+[10:28] because they're part of the same VNet.
+[10:30] And the NSG could be used to restrict that.
+[10:34] Now don't think of an NSG as a firewall.
+[10:36] It is an IP filtering system,
+[10:38] which is something firewalls can do.
+[10:40] But Microsoft actually has a thing called
+[10:42] the Azure firewall that handles the more intense stuff
+[10:46] in regards to securing things.
+[10:49] Alright. Now...
+[10:52] This is just looking at this from the perspective of a single v-net.
+[10:56] Alright, now in your enterprise you might have multiple v-nets that are associated with different projects and things like that that you're working on.
+[11:06] So what I want to do now is I want to look at this from the perspective of not just one v-net but multiple v-nets.
+[11:13] Alright, so looking at this from a larger standpoint here, imagine you got...
+[11:19] multiple VNets that you're working with. Maybe you've got different projects going on and
+[11:25] each project is dealing with its own VNet. There's various things you could do here.
+[11:30] But so we'll do this. We'll say that this represents our
+[11:37] first VNet here.
+[11:39] All right, we'll call this instead of VNet A we're going to call them VNet. We'll do VNet 1, 2, 3, so on and so forth.
+[11:47] Okay, so
+[11:50] VNet 1 and we'll say that the range is going to be, put the range up here for this.
+[11:59] 10.1.00 slash 16.
+[12:03] Alright.
+[12:05] And then let's do, we'll say VNet 2 and the range will be the 10.2.00 slash 16.
+[12:19] Alright.
+[12:31] because I want to fit one more in there. VNet 3 is going to be 10.3.00.16
+[12:40] and then we'll do one more over here try to fit that in and that will be VNet 4.
+[12:52] All right 10.4.00.16 and we'll just kind of center this stuff a little bit better.
+[13:03] Okay, now this is actually a pretty common scenario too where you might have what is known as a hub and spoke
+[13:10] Scenario a hub and spoke scenario might be where you've got you know
+[13:13] One main v-net where sort of is the is the hub where everything comes in and then different spoke v-nets that are
+[13:21] Interacting with that hub v-net. All right
+[13:24] and so of course now you've also got to consider you've got some some subnets that
+[13:30] Can can fit on to this right? So maybe we've got
+[13:35] Let's do this. We'll say this. This is going to be, we'll call this subnet 1A, and maybe
+[13:47] the range for that would be 10.1.1.0.24. And then maybe we've got another subnet over here.
+[14:08] So we're just slicing this up into chunks of 254, roughly 250,
+[14:13] when it's all said and done from this full range here.
+[14:17] And then of course you can do the same thing on the subnets over here.
+[14:21] You can have, you could have, you know, subnet 2A,
+[14:29] and this would be 10.2.1.0. You can use the 10.2.0 subnet as well.
+[14:36] But I like to do it that way I like to to use the the one
+[14:41] Because it's the first letter of the alphabet if I'm naming this but so then we could do another here
+[14:47] All right, we'll say subnet
+[14:52] to be
+[14:54] That would be ten dot two dot two dots there. You see the pattern I'd imagine at this point and then over here
+[15:01] Let's just just keep it simple. Let's just give each one of these. We'll just give them one subnet
+[15:08] Alright, so then we'll say this is gonna be subnet 3a and that'll be 10.3.1.0.24 and then
+[15:18] we'll do the same thing over here.
+[15:19] We'll just keep it simple and give it one subnet and it'll be subnet 4a and then that
+[15:31] would be 10.4.1.0.24.
+[15:34] Okay.
+[15:36] So this is my strategy. Now the other thing I want to clarify is that you have to consider the fact that
+[15:44] you may at some point connect your on-premise network with Azure and you've got to make sure
+[15:50] the addressing system that you're using in Azure does not conflict with the addressing system
+[15:56] that you're using on-premise. That's very important.
+[15:59] it's a huge pain if you've got conflicts. So if you're using this addressing system
+[16:05] on your internal network, you don't want to be using that in Azure. You want to use something
+[16:10] different. This is why we use the TIN because a lot of companies are using the 192.168 or the 172.16
+[16:15] strategy on their on-premise network. Alright, so just think about that. Alright, now the other
+[16:27] you know these subnets can talk to each other and these two subnets can talk to each other.
+[16:34] Essentially no none of the subnets can cross vnets at this time. So unfortunately the the thing you
+[16:41] got to understand about all of this is that when you have separate vnets they don't automatically
+[16:47] have routing between them. Okay like up here these subnets are all part of the same vnet.
+[16:57] what is known as system routing enabled.
+[17:00] And so they automatically can route traffic between these different subnets.
+[17:04] But down here, we don't have that automatically.
+[17:08] So there is a way to handle that, and it's a thing called peering.
+[17:13] Peering allows traffic to flow between the different VNets.
+[17:22] This peering actually happens from both sides here.
+[17:27] That's why I'm drawing these two little arrows.
+[17:30] Um, if I want.
+[17:32] And this is traditional if you're doing a hub and spoke type scenario, you would do it this way.
+[17:39] Instead of connecting them all together, I'm going to make everything travel through the hub.
+[17:44] Now in the hub VNet, what I might do is I might have what's called the Azure Firewall.
+[17:50] And the Azure Firewall can basically police traffic flowing between the VNets.
+[17:57] Alright, now keep in mind you can still have NSGs, which will do IP filtering and all of that.
+[18:04] But the NSG is not a full blown firewall.
+[18:09] It just does what's called packet filtering.
+[18:12] If you want to police things, maybe you've got a...
+[18:15] Here's the internet right here.
+[18:17] All right.
+[18:19] Let me just kind of clean the...
+[18:20] Get rid of the little thought bubble thing here that it puts on there.
+[18:25] But let's say this is the internet, okay?
+[18:28] And you are...
+[18:29] You're trying to allow traffic to flow...
+[18:33] you know, from the internet into your Azure environment,
+[18:38] which you very well can do,
+[18:39] you can set up a public IP address and all that.
+[18:42] You might set up a Azure firewall, all right?
+[18:46] We'll say Azure firewall right here.
+[18:51] This is what we call a virtual appliance.
+[18:54] And it might be hooked into that subnet
+[18:56] and you might have a pip, a public IP address
+[19:01] coming in here.
+[19:03] And what happens is traffic trying to flow to any of these other subnets.
+[19:08] Maybe you've got some virtual machines.
+[19:10] Let's just copy this just to keep it simple.
+[19:13] You know, maybe you got a virtual machine here and you got a virtual machine over here.
+[19:18] Maybe you got what this is a web server or something like that.
+[19:21] And you're having to police traffic flowing in.
+[19:23] Everything would have to flow through this Azure firewall before it could get to any of these VMs.
+[19:28] And same thing if you wanted to allow.
+[19:31] these various virtual machines to communicate with each other, you know, maybe you're going
+[19:36] to allow this guy to communicate with this guy over here. You can make it where everything's got
+[19:40] to go through this firewall. So Azure, once you set your peerings up, and let me just kind of
+[19:48] clarify in my diagram that that's what those lines are real quick. All right, so this is a
+[20:00] Once you've set that up, you've got two pairings really because it's a send and receive.
+[20:06] You can actually make it where you can send traffic from a VNet to another VNet but you
+[20:10] can't receive traffic.
+[20:12] That's something else you can do.
+[20:13] But in this case, I'm allowing traffic to flow both ways.
+[20:15] But anyway, I can use these things called UDRs, which is called a user-defined route.
+[20:29] route, this will allow me to direct traffic and force traffic to go through something
+[20:36] if I want.
+[20:37] In other words, I can make it where any of these subnets want to talk to each other,
+[20:43] they have to flow through the Azure Firewalk and use this thing called a user defined route
+[20:47] to control that traffic.
+[20:51] If I want.
+[21:00] Just barely fit, but it did fit.
+[21:03] I can require everything to have to go
+[21:07] through that Azure firewall if I want.
+[21:10] The other thing I can have is I can have
+[21:12] load balancers and everything else.
+[21:14] You can do what is known as
+[21:18] virtual load balancing which is really neat. And you can you could maybe if you
+[21:24] are in a situation where you had a web server here and a web server here and a
+[21:28] web server here and you wanted a load balance between those three you could do
+[21:31] that. Alright and then finally again talking about our on-premise network
+[21:39] This triangle is going to represent your on-premise network.
+[21:42] Maybe your company has a Microsoft domain and the symbol of a triangle is always going to represent a domain.
+[21:48] Alright, so this is what we call adds active directory domain services and that is on-premise.
+[21:56] Alright
+[21:58] We have various ways that we can actually connect an on-premise network into Azure.
+[22:04] One of the things we can do is we can do this thing called a
+[22:09] Alright, a VPN gateway, VPNGW here.
+[22:16] A VPN gateway is another type of appliance that we can have.
+[22:21] Alright, and it can establish a connection with an on-premise domain.
+[22:28] So traffic can flow securely into this VPN gateway.
+[22:34] And really what's happening, just to give you a better...
+[22:37] a better look at it is it's really you would have to have a
+[22:43] what's called a VPN concentrator and that VPN concentrator would be
+[22:50] on premise. Let's make it let's make it orange.
+[22:55] It would be on premise. Right?
+[22:58] And this VPN concentrator could establish a internet connection
+[23:04] and then from that internet connection
+[23:07] you could connect it into this VPN gateway.
+[23:10] From there, traffic can flow from
+[23:13] on-premise directly into your subnets if you want.
+[23:16] There's another solution that will connect
+[23:19] everything together called ExpressRoute.
+[23:21] Again, this is called ExpressRoute.
+[23:23] Some people will call it a direct route
+[23:25] or direct connection into Azure.
+[23:28] But what you basically do is you work with
+[23:31] a telecommunication provider and they
+[23:33] install hardware at your office.
+[23:37] They install hardware at your office and what that basically does is it uses the
+[23:43] telecommunication private network and connect directly into Azure that way.
+[23:49] So you can use a VPN concentrator to do what's called a VPN gateway and connect into Azure.
+[23:53] It uses the internet so it's virtually private or you can use a direct connection from your
+[24:00] on-premise environment into the cloud as well. So those and of course that that's going to be
+[24:06] but you have a private connection through the telecommunications provider with Azure and you can
+[24:13] have insanely from speeds of 10 gigabits per second up to a hundred gigabits per second in certain
+[24:19] regions if you spend the money. Of course again you're talking some serious money when you start
+[24:25] getting into that. All right.
+[24:27] Alright, so hopefully these drawings, I know this is a bit of a mess, but hopefully this
+[24:33] drawing gives you a better, at least a visualization now of kind of how all this sort of works
+[24:37] together.
+[24:38] I know I haven't really explained doing any of this yet through Azure, but now at least
+[24:43] you can kind of visualize it before jumping in and doing it.

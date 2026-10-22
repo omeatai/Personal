@@ -1,0 +1,231 @@
+# 40 - Manage costs by using alerts, budgets, and Azure Advisor recommendations
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/40 - Manage costs by using alerts, budgets, and Azure Advisor recommendations.mp4
+Fetched On: 2026-10-21 20:24:10
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now one of the number one concerns people have when they start using Azure is
+[00:04] What is it gonna cost me when I start utilizing the resources right there are so many resources in Azure and of course?
+[00:13] Some stuff is free, but there's obviously the majority of the things that you do is gonna cost money
+[00:19] So how do we figure that out? Well Microsoft has actually created a calculator
+[00:23] That can make your life a whole lot easier in terms of estimating what something's gonna cost if you go out to Google or being
+[00:29] and to search for Azure Calculator,
+[00:32] okay, you'll see you have the Azure Pricing Calculator.
+[00:35] Yes, there is a way from Azure to get into that calculator,
+[00:38] but it's a little bit more complicated
+[00:40] than just searching for it through a search engine.
+[00:42] So I like to actually just do it that way.
+[00:44] But when you come into the Calculator,
+[00:46] you can see it...
+[00:47] breaks everything down into various types of product categories and you can expand those
+[00:53] out and then you got some of your most popular stuff just listed right here on the screen.
+[00:58] So for example, let's say I was going to set up a virtual machine and I didn't know what
+[01:02] the cost was going to be.
+[01:03] I'll just go ahead and click that.
+[01:04] All right, and then right here, I'm going to click where it says view and it just pops
+[01:13] this is what the cost is going to be per month, but I can go in and I can alter what's what that's
+[01:18] going to be, right? So I can say well my region is going to be east US, the operating system will be
+[01:25] Windows or Linux whichever one, type operating system you've got what's known as biz talk and
+[01:31] SQL, I'm doing operating system only, and then standard basic. That's where you start getting
+[01:36] into some of the the benefits of doing it and obviously we're not diving deep into
+[01:40] tiers right now in this video because we're not really getting into intricacies of virtual machines
+[01:44] in this video. But you could look at the difference in cost right there. You'll see basic is 13,
+[01:52] 14 a month whereas standard you know you get gets more expensive with this 1460
+[01:59] listed there. Okay now something else we consider is
+[02:04] the instance, you can see there's different,
+[02:07] a series of instances here and how much RAM
+[02:11] and all of that you're gonna use, how much storage, RAM.
+[02:15] Okay, so let's go down here and let's say,
+[02:17] well, I'm gonna want, let's see, I want.
+[02:24] Just for fun 128 gigs of RAM and 600 gigs of temporary storage
+[02:30] We'll click on that that's gonna be 1302 per month now keep in mind. That's if
+[02:36] You kept this virtual machine up and running 24 hours a day seven days a week for a month. That's
+[02:43] 730 hours
+[02:44] Remember that if you're just
+[02:46] testing and all of that here, you wouldn't do that.
+[02:50] In fact, as I go through this course,
+[02:52] and I start playing around with virtual machines
+[02:55] and all of that, I generally will shut
+[02:57] the virtual machines down when I'm not using them,
+[02:59] and that way it's not costing anything.
+[03:03] Okay, so keep that in mind.
+[03:05] But yeah, this virtual machine,
+[03:08] with these different resources that it's providing you,
+[03:12] this would be your...
+[03:13] monthly cost if you kept it up and running 24 seven for the
+[03:17] 730 hours. This is a pay as you go account windows license is
+[03:23] included. So they do have some other things you could do savings
+[03:26] plan where you pay a bolt pricing and it can reduce the
+[03:30] the cost you get a discount and all of that. But again,
+[03:34] The thing to do here when you're starting to play
+[03:36] with Azure resources, come in here and add various things
+[03:39] that you want to check, see what the cost is gonna be.
+[03:42] That'll give you a great idea of what that is gonna cost.
+[03:44] Now, one other thing, if I come back up here
+[03:47] and let's say I add something else,
+[03:49] let's go and add a storage account.
+[03:52] Okay, I want you to notice that if you add a storage
+[03:55] account, that virtual machine is still on the screen.
+[04:00] Okay, so if I go down here and I start adding a storage account, storage account is going to store data in Microsoft Azure.
+[04:07] So I start adding that, it's going to basically go through and it's going to add that cost on top of the virtual machine costs as well.
+[04:20] click that little trash can symbol and get rid of, you know, and clear out what's already on the
+[04:26] calculator before you start adding a bunch of stuff. Okay, so that's the Azure calculator.
+[04:31] Definitely something you want to check out. Now let's jump back over to portal.azure.com.
+[04:36] If we click the menu button and go to all services, we can search for subscription,
+[04:39] or if you've got it as a favorite, you can click it down there. Okay.
+[04:43] We'll come into our subscriptions and right out of the gates here too when we see our subscription. We should also see the current cost
+[04:50] Now I have added some stuff previously that cost me just the 34 cents
+[04:57] but
+[04:58] yours is going to look different than mine. I'm going to click on my little subscription right here.
+[05:02] So right out of the gates when you come in here they give you just a little overview of what your
+[05:07] cost is. They give you a little bit of a breakdown. Okay now I've got some some different things
+[05:13] here just because I have used this subscription for other courses that I build. You might have
+[05:21] to in it every single time I build a class or update a course or any of that. So I have to use
+[05:26] the same one. So I do have some stuff here that it's not going to match probably perfectly with
+[05:31] yours. Plus I don't have free credit anymore so I have to actually use the page you go. But
+[05:38] you'll just see here you have various things you can click on. You can
+[05:41] You got cost by resources. In my case, I got Azure Defender coverage. I can click on view details and I can click view
+[05:47] You know additional information this basically brings me to the cost analysis and I want that's really one of the things
+[05:52] I want to show you let me go back over here though
+[05:55] I can get to cost analysis, not only by clicking view details, but I can go right under cost
+[06:01] management and you'll see this blade called cost analysis. So I'll click on that and this is where
+[06:06] it sort of breaks everything down for you. So you get the various service names, you get location
+[06:12] that you've been using, you get resource group names if you created resource groups and gives
+[06:17] you a cost of what.
+[06:18] what was inside those resource groups.
+[06:20] And I get resource group of course being a container
+[06:23] that contains Azure resources.
+[06:25] And you have to store Azure resources in a resource group.
+[06:28] That is a rule.
+[06:30] Pretty much all Azure resources
+[06:31] will go inside of a resource group.
+[06:33] Okay.
+[06:34] So you can see what the actual cost is.
+[06:38] This is a forecast based on if I was to keep.
+[06:40] doing the average stuff that I've been doing,
+[06:44] it's giving you an average forecast, okay?
+[06:47] So that is the cost analysis.
+[06:49] This gives you a great little look at what's going on.
+[06:51] You can also download this if you want,
+[06:54] and it'll let you download it as a PNG file,
+[06:57] Excel spreadsheet or a CSV file.
+[07:00] So that's kinda nice, okay?
+[07:02] So you can click that if you want,
+[07:03] and you can have a nice little download.
+[07:05] And by the way, here is what that little chart
+[07:08] as an image, as a PNG file.
+[07:09] looks like for you. Alright minimizing that, now I'm going to jump over to cost alerts.
+[07:16] And so here is where I can create an alert that will alert me if the cost reaches a certain point.
+[07:23] If I click to add right here, can do that. Alright and then I've got alert type and we have anomaly
+[07:31] or reservation utilization. It says anomaly, send an alert when anomaly is detected.
+[07:37] Okay, so the idea being there, if something is, you know, out of the ordinary, not your
+[07:43] average cost, send an alert.
+[07:46] You've also got reservation.
+[07:47] So it's not available for subscriptions.
+[07:49] Please change scope to billing profile, customer scope, or an enterprise agreement.
+[07:53] So you get this if you have what's known as an enterprise agreement with Microsoft.
+[07:58] Right?
+[07:59] But I can go here.
+[08:02] Subject cost anomaly detected in Azure subscription one.
+[08:06] That's my subscription name.
+[08:07] You can specify message if you want,
+[08:10] and then at that point you can click to create an alert.
+[08:13] Now currently I have no alerts to displays.
+[08:15] I've had any alerts, but I can go view
+[08:17] the alert rules right here by clicking this little button,
+[08:21] and then from there that's where you'll
+[08:22] see that one I just created.
+[08:25] So daily anomaly.
+[08:27] If I want to add additional alerts,
+[08:29] I can do that.
+[08:31] So that is the idea of creating alerts.
+[08:34] Let's go back over here to the subscription
+[08:37] and we're gonna click on Budgets.
+[08:39] So Budgets is one of the things
+[08:42] that you definitely want to consider doing.
+[08:44] This gives you a set amount of money
+[08:47] that you might want to spend on a particular subscription.
+[08:51] So I can go right here to Add.
+[08:53] Now from there it says create a budget and set alerts.
+[08:57] to help you monitor your costs. So obviously this is a great feature in terms of just making
+[09:02] sure we're in the loop on how much something is costing as far as a subscription goes. So it says
+[09:09] the budget you create will be assigned to the selected scope. This case is my subscription.
+[09:15] You can use additional filters like resource groups to have your budget
+[09:23] If you start creating multiple resources groups, right, maybe you've got a resource group that is
+[09:29] called development virtual machines and you got another resource group called production virtual
+[09:34] machines and you needed to monitor, you need to have a budget for each one of those. You can
+[09:40] totally do that with the help of filters here. Okay, so that is the idea of utilizing these filters
+[09:48] and you see you have all these various things that you could use as a filter.
+[09:51] Okay, so that's really cool. Then you can go over here, you can give it a name. Now
+[09:55] you're also going to notice that it's very particular about what name you give it. I'm going to call...
+[10:00] it exam lab practice budget. Notice that I didn't use any spaces. If I put a space
+[10:10] there, they don't like spaces. So I just called it exam lab practice budget. I
+[10:15] can also use underscores. You'll see that that's not an issue. All right.
+[10:21] But the good news is with Azure for the most part if they don't like the thing you if you give it a name
+[10:26] They don't like your name. They're gonna let you know sometimes they don't want capitalization
+[10:30] Sometimes they don't want spaces. Sometimes they don't want either. They'll let you know so you got a reset period
+[10:36] This is monthly. So every month it would it would reset the budget. You can do quarterly annually
+[10:41] Okay, you can set your creation date and then your expiration date
+[10:46] Go down here to the bottom, what do you want your budget to be?
+[10:48] I'm going to say $50 in my case.
+[10:51] All right.
+[10:55] So you want to set an alert.
+[10:57] What do you want your alert condition to be?
+[10:59] Select type.
+[11:00] I could say actual, or I could do forecasted.
+[11:03] So actual means it's not going to alert you unless it gets to this amount.
+[11:07] Forecasted means, hey.
+[11:09] your forecasted to go up to this amount. I'm going to say actual and then percentage of budget.
+[11:14] I'm going to say alert me when it's at 50 percent. Okay. In that case it would be 20,
+[11:19] 25 right. And we don't have what is known as an action group in this case.
+[11:25] an action group is something you can create that will take action if that occurs. I can actually
+[11:30] go right here and click manage action group and you can create something called an action group
+[11:36] which gets a little deeper than we need to get into right now but it's something that can take
+[11:40] action in a situation where this occurs. All right.
+[11:45] So there are various types of actions that can occur from doing what's called a run automation
+[11:51] of runbooks, Azure functions, event hubs, ITSM, Logic App, secure web hook, all of that.
+[11:57] It's really kind of outside the scope of this particular video, but I just wanted to briefly
+[12:02] touch on that. Let's go back over here though. Okay, so we'll go back over to creating our budget.
+[12:09] All right, I just clicked on the little link up here, also known as a breadcrumb,
+[12:15] So I don't need an action group in this case.
+[12:17] Okay, what alert?
+[12:18] I am just going to do an email.
+[12:20] So I'll say just email JC at exam lab practice dot com.
+[12:25] Okay.
+[12:26] And then at that point we have languages.
+[12:28] So you'll see languages listed here.
+[12:31] And then there you go.
+[12:32] We've created it.
+[12:33] We're going to set up our alert and I'm going to go and click create.
+[12:38] And now we have officially set up our budget, which also will generate an alert.
+[12:45] create budgets with alerts. Now we're going to go back over here to
+[12:49] up underneath cost management and we're going to look at advisor recommendation.
+[12:54] So something else we have with Microsoft Azure
+[12:57] is we have what is known as the Azure Advisor.
+[13:02] you'll see Azure advisors periodically throughout Azure and they'll just give you a bunch of
+[13:07] recommendations. Okay, and so these are ideas and things like that that you could potentially do to
+[13:14] improve something. In this case, the recommendations would be cost recommendations because obviously
+[13:20] that's what we're talking about, right? But as you get into other items like as you start
+[13:27] you'll have recommendations through Azure Advisor
+[13:29] that would involve security.
+[13:30] But I can go right here, I can click
+[13:32] see list of cost recommendations.
+[13:34] And in this case, it brings me to this page
+[13:36] and just gives me a list of things
+[13:38] that I could consider doing.
+[13:40] All right, so that is the Azure Advisor, okay?
+[13:43] And in this case, there's not really a whole lot
+[13:45] to see with Azure Advisor.
+[13:47] Sometimes they might actually pop recommendations up
+[13:49] as little links you click on.
+[13:50] In this case, they just have a bunch
+[13:52] of reading material I can do.
+[13:54] All right.
+[13:54] And with that said, hopefully now you have a much better understanding of what we can
+[13:59] do with the cost analysis of our Azure resources.
+[14:03] We know how to look at cost.
+[14:05] We look at cost analysis.
+[14:06] We understand how to generate alerts as well as budgets.

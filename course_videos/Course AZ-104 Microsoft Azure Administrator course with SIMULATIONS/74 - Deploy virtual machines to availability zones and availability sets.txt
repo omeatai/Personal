@@ -1,0 +1,156 @@
+# 74 - Deploy virtual machines to availability zones and availability sets
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/74 - Deploy virtual machines to availability zones and availability sets.mp4
+Fetched On: 2026-10-21 20:06:19
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I don't want to get into the concepts of implementing an availability set or
+[00:04] availability zone on a virtual machine. Now the first thing to be aware of here
+[00:09] is this is going to provide some high availability. But the main thing I want
+[00:13] you to be aware of is that this is something that's got to be done at the
+[00:16] creation of a VM. This is not something that can be done to a virtual machine
+[00:21] that's already been created. So you can't go into an existing virtual machine
+[00:26] and then set up what is called an availability zone or availability set.
+[00:29] you could do is you could create an image and then create the availability
+[00:33] set and availability zone, settle, set all that up.
+[00:36] And then you could, you could regenerate a new virtual machine.
+[00:41] And with that image utilize that image to do it.
+[00:43] You could do that.
+[00:45] What you can't do is you can't go in though and edit an existing virtual machine.
+[00:49] So if I've already got a virtual machine, I'm not going to be able to implement
+[00:52] an availability set availability zone.
+[00:54] to on that virtual machine.
+[00:56] I have to do this at the creation.
+[00:58] So we're going to go into that right now.
+[01:00] We're going to go to the menu button here on portal.azure.com.
+[01:03] We're going to go to virtual machines.
+[01:05] We're going to click to create a new virtual machine.
+[01:07] Then here is our availability options right here.
+[01:11] For creating this virtual machine,
+[01:13] we can specify these options here.
+[01:16] We have no infrastructure redundancy required,
+[01:20] which means I don't want any high availability for it.
+[01:23] We've got availability zone, virtual machine scale set, and availability set.
+[01:27] Now in this video, we're just focused on these two items right here.
+[01:30] We're going to talk about an availability zone and availability set.
+[01:34] Okay, obviously the cheapest solution with a virtual machine would be to go
+[01:38] with no infrastructure redundancy required.
+[01:42] The next level up from that would be to do an availability set.
+[01:46] Now I want to talk about that.
+[01:48] We'll talk about availability set first,
+[01:50] then we'll jump in and talk about availability zone.
+[01:52] So if I click on availability set,
+[01:54] it gives me the option to choose an existing one if I already had one,
+[01:59] or to create a new one.
+[02:01] So when it says existing one,
+[02:03] I actually could go over here with Azure,
+[02:05] all services, and I could search for the words availability,
+[02:10] and I could choose to create an availability set.
+[02:12] This is before I ever even create a virtual machine,
+[02:14] or you can do like we're doing here where we would
+[02:17] create one while we're creating our virtual machine.
+[02:20] So I would click to create a new one, and then I would give it a name.
+[02:25] I'll call it a set one.
+[02:28] And then it has two things it's listing out here.
+[02:31] One is called a fault domain, and the other is called an update domain.
+[02:36] Okay?
+[02:37] So what is a fault domain?
+[02:38] This is physical separation of hardware.
+[02:42] All right?
+[02:43] You have to imagine that in a server room, in a server room where you've got all these equipment,
+[02:49] let's just put data center. Let's just do a quick image search on data center. Okay,
+[02:55] so when you think about a data center, you have all this equipment on all these various racks,
+[03:01] right? Okay, so you have all this equipment on all these various racks. Each rack
+[03:08] has its own power supply, okay, it's got its own network equipment, and so that is what
+[03:17] a fault domain involves.
+[03:18] So the ideal would be to have, if you have multiple virtual machines that you're trying
+[03:24] to get high availability for these virtual machines, then you would have your virtual
+[03:35] actual equipment on that same rack shares the same power and network and all that
+[03:39] it would be on different racks so that is what your fault domain is gonna do
+[03:44] for you okay they tell you this right here virtual machines in the same fault
+[03:47] domain share a common power source and physical network switch they will let you
+[03:51] have up to three
+[03:54] fault domains. Okay, so if I had three virtual machines, each virtual machine would each
+[04:00] be on its own fault domain. If I had nine virtual machines, then three would be on one,
+[04:06] three would be on another, three would be on another, so on and so forth. Okay. And
+[04:10] so that is to protect against unexpected outages on the Microsoft data center side
+[04:23] situations where a whole region could go out, but that's or a whole a whole data center could go up
+[04:30] That's where you start getting into availability zone, which I'll talk about in a minute
+[04:33] If we're just talking right now with an availability set
+[04:36] We're focused on the the power going out or the network switch going out or something along those lines
+[04:42] This is what the fault domain is going to protect against the next thing you've got is an update domain
+[04:47] So this has to do with
+[04:49] a logical separation of dealing with simultaneous reboots for maintenance. So occasionally they
+[04:57] might have to reboot their equipment and an update domain is going to protect against from
+[05:03] the equipment all being rebooted at the same time. Okay, so that's what your update domain is.
+[05:09] So the idea being, you know, if I had, let's just say I had three
+[05:14] Let's go with three virtual machines and I've got three update domains.
+[05:19] Then it would, you know, it would redo the first one would be done first.
+[05:23] The first update domain would be done first and the next and then the next.
+[05:27] Instead of all of it being rebooted at the same time, you can have up to
+[05:31] 20 update domains and so depending upon how many virtual machines you have it's going to be spread out amongst those 20 update domains
+[05:40] Okay to sort of protect against this type of situation
+[05:44] Alright, and so this is gonna really help with you know
+[05:49] Trying to make sure that these updates that are happening don't update all your virtual machines at the same time. Okay, so
+[05:57] that is the idea of an update domain. They tell you this virtual machines in the same update domain
+[06:02] will be restarted together during planned maintenance. Azure never restarts more than
+[06:07] one update domain at a time. And so depending on how many virtual machines you have will sort
+[06:13] of depend on how it splits it up. Okay, that's sort of the idea there, right? All right.
+[06:21] So, I can choose the update domains and then I would click OK and at that point I've selected
+[06:26] what I kind of want to use for my availability set.
+[06:29] It's going to create a new availability set.
+[06:30] Now the thing to remember here is that this does not automatically generate more virtual
+[06:37] machines.
+[06:38] It's not going to automatically generate more multiple virtual machines.
+[06:41] You would actually have to create another virtual machine.
+[06:44] You're responsible for dealing with creating another virtual machine and the data and all
+[06:49] that.
+[06:50] And then you could associate it to the same availability set.
+[06:54] Okay.
+[06:56] Now it is possible to use what is called a scale set where it auto scales out in multiple instances of your virtual machines
+[07:04] But we're not looking at that in this video
+[07:06] Okay, so the downside though an avail of an availability set is an availability set is all going to be kept in the same
+[07:15] Data center the same zone same data center. And so that's where you might want to consider using an availability zone
+[07:24] Okay
+[07:25] So an availability zone, if I do that,
+[07:28] I'm going to get more redundancy.
+[07:31] With that, I can choose the three different zones.
+[07:35] So what that is, is like each region of the world,
+[07:39] every Azure region of the world generally has three zones,
+[07:42] and you can think of them as three different data centers.
+[07:47] They've each got their own air conditioning,
+[07:50] their own power,
+[07:52] their own network equipment. Okay, and so I can actually get all three of those going if I want
+[08:00] at the same time and I got what happens there is is it spreads everything out amongst the
+[08:06] availability zones. Okay, so if you have multiple virtual machines it's going to spread those out
+[08:12] amongst the three availability zones within that region.
+[08:16] All right, so they tell you here based on your zone set selection, we will place three
+[08:21] virtual machines, one in each selected zone.
+[08:24] You may want to create this resource as a virtual machine scale set instead, which allows
+[08:29] you to manage, configure, and scale load balancing.
+[08:32] So you'll have, in this case, you'll actually have replica, one replica of each of your
+[08:39] virtual machine.
+[08:43] but you'll get one replica,
+[08:45] and two of them were acting as a backup.
+[08:49] So if one fails, you have a complete backup, okay?
+[08:54] So that's the, you have two backups actually,
+[08:57] and that's sort of the idea there
+[08:59] of utilizing the availability zone options.
+[09:03] This is gonna distribute VMs across physical separated zones.
+[09:07] So this is gonna be a higher level of redundancy for that.
+[09:11] It does not automatically scale out and load balance and all that you're you're still only it's you're still only gonna be treated as
+[09:18] Though you have one virtual machine running here, but there's replicas in case the actual data center fails
+[09:24] Okay, and that is the idea of an availability zone
+[09:28] So you can go no redundancy you can go availability set which is next level up
+[09:34] That's sort of just protecting within the same data center and equipment racks and updates and things like that
+[09:40] taking you down that's going to protect against that. You can go with an
+[09:43] availability zone which is going to spread replicas of your virtual machine
+[09:47] amongst three up to three data centers. Okay three zones, own air conditioner,
+[09:53] power, network equipment, everything. And then this last one which I'm not getting
+[09:57] into this video would be to auto scale out.
+[10:00] with load balancing and all that. Okay but now in this video at least hopefully
+[10:03] now you understand the difference between an availability set and an
+[10:06] availability zone.

@@ -1,0 +1,302 @@
+# 70 - Configure Azure Disk Encryption
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/70 - Configure Azure Disk Encryption.mp4
+Fetched On: 2026-10-21 20:36:30
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk now about configuring Azure disk encryption.
+[00:05] All right. So in Azure,
+[00:08] of course, we have virtual disks.
+[00:10] These virtual disks can be associated with
+[00:12] virtual machines and we can interact with them and all of that.
+[00:16] Of course, we're going to be interested in encryption.
+[00:20] Now, if we actually go to portal.azure.com,
+[00:24] we click the menu button.
+[00:25] And we come down here to virtual machines. I have this virtual machine called wind server one
+[00:30] I'm going to click on that and inside wind server one. I
+[00:34] have a
+[00:35] Virtual machine here running Windows server and of course it is associated with a virtual disk
+[00:42] In fact, if I come right here to this resource group VM demo that this virtual machine is in
+[00:49] I can see that virtual disk right here, WinServer1 OS Disk 1. I'm going to click on that and go
+[00:56] into that virtual disk and then I'm going to click on settings and there's an area called
+[01:01] encryption. So a blade called encryption under settings. So again I got to go to the disk and
+[01:06] then I'm going to click on encryption. All right from there I can click on that and I have this
+[01:11] little drop down. Now let me warn you that before you can do any of this stuff involving encryption
+[01:18] virtual server is shut down. Okay, so if I go back over here to the menu button, click on virtual
+[01:24] machines, click on my WinServer1, just make sure that I stop that and I need to give it a couple
+[01:29] of minutes to shut down before I continue. So I've already done that, so but if you're doing
+[01:35] this with me you're going to want to make sure your virtual machine is shut down. Okay,
+[01:39] all right, so from there I'm going to go back over here to disks, click on my disk for WinServer1,
+[01:47] go under settings and then go to where it talks about encryption,
+[01:50] encryption blade, and then I got this drop down.
+[01:53] Now right out of the gates you can see where you in what's called a platform
+[01:57] manage key, which means we are encrypting our disk.
+[02:02] So the question though is
+[02:05] If I am encrypting my disk, why do I care about all of this?
+[02:09] Well, you definitely care about encrypting the data that's on the disk using what's called server-side encryption.
+[02:14] Every disk is going to be encrypted at rest, and of course this is going to happen automatically.
+[02:19] It's going to be transparent. You're not having to like decrypt it every time you boot the machine up or anything like that to access the disk.
+[02:25] So you don't really have to do anything.
+[02:27] So why do we care though about Azure Disk Encryption?
+[02:31] Well, obviously we care about the disk encryption to encrypt the data, but why
+[02:35] don't we care about these other options that we have here?
+[02:38] Customer managed key, platform managed and customer managed key support,
+[02:42] meaning we have both.
+[02:44] Well, mostly for regulatory, uh, compliance type requirements.
+[02:49] So maybe HIPAA or the GDPR or whatever, if you're in some kind of government
+[02:53] agency and you require to manage your own encryption keys, as opposed to letting
+[02:57] Azure completely and utterly automatically manage them, then you would do this.
+[03:02] There's the idea of BYOK, which is bring your own key. You can set up your own key
+[03:09] encryptions. You can do your own monitoring and auditing for all of it. So this is the main
+[03:14] reason why we care about doing a customer managed key. But you'll notice that when we look at it,
+[03:19] it's grayed out. We don't have the access to mess with that.
+[03:25] And this is because we have to create
+[03:26] what's called a disk encryption set, all right?
+[03:30] Where we supply the key.
+[03:32] Now before you can create a disk encryption set,
+[03:36] there are a few fundamental things you need to know.
+[03:39] Number one, you're gonna need something
+[03:41] called an Azure Key Vault, okay?
+[03:45] You're gonna need an Azure Key Vault.
+[03:47] So what exactly is an Azure Key Vault? It's a cloud-based service provided by Microsoft Azure that lets you
+[03:55] securely store encryption keys. Sense of information like encryption keys, you can store secrets like passwords, you can store digital
+[04:03] certificates, all of that. So it's a centralized management
+[04:07] solution for key management, storing encryption keys, generating keys.
+[04:13] Okay.
+[04:13] It's protected under the FIPS 140-level two validated a hardware security
+[04:19] module, so that means it's you're protected.
+[04:21] You can have protected by hardware security models inside of
+[04:24] Microsoft's cloud service.
+[04:26] So there's.
+[04:28] that's the idea of an Azure Key Vault.
+[04:30] So we're gonna have to do that first.
+[04:31] So I just want you to remember
+[04:32] all this is grayed out right now,
+[04:33] but we're gonna solve this problem.
+[04:35] So we're gonna go to the menu button,
+[04:36] we're gonna go to all services,
+[04:37] we're gonna search for Key Vault.
+[04:40] And then you'll see this resource called a Key Vault.
+[04:42] So we'll go in there, we'll click to create.
+[04:45] All right, the resource group I'm gonna use
+[04:47] is the VM demo.
+[04:49] And then the Key Vault name,
+[04:51] I'm gonna call this myKeyVaultELP.
+[04:59] All right, that's gonna be the my name keep in mind
+[05:01] It's got to be a unique name you try to do this you may not be able to use the same name as me
+[05:06] Okay, so my key vault elp is gonna be the name of it
+[05:09] I'm gonna do East US as my region.
+[05:11] Then you have a pricing tier.
+[05:13] You can do standard or you can do premium.
+[05:14] If you do premium, it's gonna support a physical HSM,
+[05:19] you have physical HSM backed keys.
+[05:22] So you can do that.
+[05:23] You might wanna look at the pricing calculator
+[05:25] and look at the difference.
+[05:26] I'm just gonna go with standard.
+[05:27] Okay, then it talks about recovery options.
+[05:30] So down at the bottom.
+[05:31] You have days to retain deleted vaults.
+[05:34] So if the default is to leave, you have 90 days.
+[05:36] You also have what's called purge protection.
+[05:38] So they tell you here that's set to disable, disable purge protection and allow
+[05:42] key vault and objects to be purged during a retention period or enable purge
+[05:46] protection, enforce a mandatory retention period for deleted options.
+[05:50] So once enabled, this option cannot be disabled.
+[05:53] You have to actually to do what we're wanting to do with the disk
+[05:57] encryption set, you absolutely have to have purge protection turned on.
+[06:00] That is a requirement.
+[06:00] If you try to do this without it, you'll get an error.
+[06:03] So let's just confirm we know what this is.
+[06:05] Purge protection in a key vault is going to be a security feature that's designed to prevent
+[06:11] the permanent deletion of a key vault or the objects that are in the key vault, like
+[06:16] keys or secret password or certificates, anything like that.
+[06:20] So when this is enabled, even after an object is deleted, like soft deleted, it cannot be
+[06:26] Meaning it cannot be permanently deleted until a retention period ends. Okay, this is going to protect against accidental or even malicious
+[06:35] deletions
+[06:36] Okay, so an example this let's say you have an admin that accidentally deletes a secret or key used
+[06:43] by a production app when the purge protection is enabled the secret key will be soft deleted
+[06:48] but it will remain recoverable for 90 days so the admin can go and restore it and get it back.
+[06:54] Alright so anyway we got to have this turned on that's the moral of the story here if we're
+[06:58] going to do an encryption set. So we're going to click next.
+[07:02] And then it's going to ask us what our permission model is going to be.
+[07:05] If we want to use role-based access control,
+[07:08] we're going to let the Azure Key Vault control its own policy.
+[07:12] And that's what we're going to do.
+[07:13] We want to be doing a customer
+[07:16] managed deployment and all that.
+[07:18] We're going to do that.
+[07:18] So as far as resources,
+[07:20] is this going to be for Azure Virtual Machines,
+[07:22] Resource Manager, Disk Encryption?
+[07:24] I'm just going to select all three of these.
+[07:26] Then we've got our user down here
+[07:28] who's been given privileges.
+[07:30] We're going to come back and talk about
+[07:31] giving privileges out more here in a minute
+[07:33] because there's going to be
+[07:34] another step we have to perform.
+[07:36] So we'll click Next.
+[07:37] And then it's talking about like what networks this key vault can be accessed by we'll say all networks
+[07:43] So you could select certain virtual networks if you wanted
+[07:46] Enable public access means it's web enabled can can be contacted via public IP address
+[07:52] All right, we'll click to review and create and we're gonna click to create
+[07:59] Okay. Now the other thing that we're gonna have to have the other ingredient while this is getting created
+[08:04] We're gonna have to have we're gonna have to have what's called a user
+[08:08] identity. All right. I'm sorry, user assigned managed identity. All right. So we're going to type
+[08:16] managed identity right here. We're going to go to this thing called managed identities.
+[08:21] All right. We're going to click to create a managed identity. I'm going to store it in
+[08:27] the VM demo resource group. All right. Now the idea here, what is a user managed identity?
+[08:35] Okay, this is a type of managed identity, so it's stored in Azure that you create as a standalone
+[08:42] Azure resource. So it's represented as an Azure resource. You can assign it to resources that
+[08:48] need to be authenticated securely. And that's going to be a requirement with our Azure Key Vault
+[08:54] and this disk encryption set we're about to utilize. All right, so it's going to be a requirement
+[09:05] and be able to utilize since we were doing.
+[09:08] Remember, this is a customer managed thing,
+[09:11] whereas before how easy it was where you
+[09:13] didn't have to do any of this stuff.
+[09:14] You just let Azure management and I'll be honest,
+[09:16] most of the most organizations just let Azure manage all this,
+[09:20] but we're wanting to manage it.
+[09:22] So therefore we're having to go through a little bit more trouble here.
+[09:24] So we got to create a user assigned managed identity.
+[09:29] The next thing we have here is the isolation scope after our region and we can link this to none,
+[09:34] meaning we're not going to link the managed identity to a particular region that we're
+[09:38] selecting. If you choose regional it's going to link it to specifically this region only.
+[09:43] So you can be a little bit more protective if you choose that option. Okay, so now we're going
+[09:48] to give it a name, whatever we're going to call this managed identity. All right, I'm going to call
+[09:58] Then I'm going to click.
+[10:00] to review and create, and then we're gonna click to create.
+[10:05] All right, so we're gonna create this user.
+[10:08] Now, I wanna show you that you're gonna have to give
+[10:10] some privileges to this user,
+[10:11] so I'm going to trigger an error on purpose.
+[10:15] You don't have to do this with me if you don't want to,
+[10:17] if you're following along, you can just watch me
+[10:19] do this error, and then we're gonna fix this error.
+[10:22] So here's what we're gonna do,
+[10:23] we're gonna go to the menu button here,
+[10:24] we're gonna go to all services,
+[10:26] and we're gonna create our disk encryption set.
+[10:28] So we're gonna say,
+[10:30] encryption. So there it is, disk encryption set. We're going to click to create. I'm going to choose
+[10:39] my VM demo resource group and then I'm going to give it a name, demo encryption set. Okay, east US.
+[10:52] All right, we can do the encryption at rest with customer managed key. We can double the strength
+[10:57] of that encryption or confidential disk with the customer encryption key.
+[11:03] So what does all this mean? Well this first option is just encryption at rest with a customer
+[11:07] managed key. It's the same thing that we normally use it just encrypt your data at rest and all of
+[11:13] that. It's just it's using your key instead of Microsoft's key. The double encryption with
+[11:18] platform managed and customer that's going to double the strength by using the first layer will
+[11:25] be encrypted with Microsoft's key and the second layer will be your key. The third option is a
+[11:32] scenario where I could combine a customer managed key with what are called secure enclaves that Microsoft supports and this will encrypt
+[11:41] data
+[11:42] Not only at rest but also while the data is in use so
+[11:48] You get a another layer of strength utilizing that of course, you know, you have to you really want to price things out
+[11:54] Okay, I'm just gonna go with this first option encrypt encryption at rest. Okay, then we got a select
+[12:00] a Azure Key Vault and Key, all right?
+[12:04] Or we can do Azure Key Vault Manage HSM and Key.
+[12:07] That's if we're using the hardware security module,
+[12:10] this is where it gets a little bit more expensive.
+[12:11] Or you can use a URI, a Uniform Resource Identifier,
+[12:15] so you can link to a specific key that way.
+[12:17] I'm just gonna have it selected.
+[12:18] It's a whole lot easier just to go right here and go,
+[12:20] okay, there's my Key Vault.
+[12:22] And then it's gonna.
+[12:23] it's gonna see if I've got a key or not.
+[12:26] Now if I don't have a key, that's fine.
+[12:27] I don't have a key, so I'm gonna create a key.
+[12:29] I've got a key vault, so it'll create a key.
+[12:31] All right, and I'm just gonna call this
+[12:33] my encryption disk key.
+[12:38] All right, it's kind of a lot of letters.
+[12:41] You can choose the levels of encryption,
+[12:44] you can have an expiration, activation date, all that.
+[12:48] But I'm gonna go ahead and click to create the key.
+[12:50] All right.
+[12:52] And now I've got to select my user assigned identity.
+[12:55] So we'll click select, we'll click up here.
+[12:59] All right, and this is where of course,
+[13:00] we're gonna look for our user.
+[13:02] There it is, user disk identity.
+[13:04] We have that, we're gonna click add.
+[13:06] And we're not doing multi-tenant applications,
+[13:08] that'd be if you have applications across tenants.
+[13:11] We can also support auto key rotation
+[13:13] where it swaps out the key.
+[13:15] If we have, we could turn that on for an additional layer,
+[13:18] not gonna worry about that.
+[13:20] Okay, I'm gonna click Review and Create,
+[13:21] and I want to show you it's gonna validate it,
+[13:24] but it's also gonna throw an error.
+[13:26] And this error is gonna involve some permissions
+[13:28] that have to be set.
+[13:30] So let's take a look, all right?
+[13:32] I'll wait till the error pops up on the screen.
+[13:34] Okay, so there's the error. So if we read the error, it tells you that you need to grant your identity some privileges, the get wrap and unwrap key permissions to your user identity. So we're going to go fix that problem right now. Okay.
+[13:49] And so what we're going to do, we're going to come over to the menu button, go to all services, we're going to search for key vault and go to the key vault, open up the key vault.
+[14:06] You can see that my user account has privileges,
+[14:09] but there's no privileges for that user assigned
+[14:13] managed identity.
+[14:13] So we're gonna click to create, all right?
+[14:17] And we can set our permissions right here, right?
+[14:21] And, you know, we have get with some of our permissions,
+[14:27] get, we just need to do it for keys.
+[14:29] We could do it for all these others too,
+[14:30] but we'll just say get, right?
+[14:33] And then you've got
+[14:35] wrap key, that was the other permission they mentioned, and then unwrap. So you had to grant
+[14:41] get wrap and unwrap, those were our three permissions that were required. So now we're just going to click
+[14:48] next. Our user identity that we have that we created, we got to find that there it is,
+[14:56] user disk identity. So we'll select that, we'll click next, next, and create.
+[15:03] Okay, so now we've got our permissions now, let's go back over to all services
+[15:08] search for disk encryption sets
+[15:12] We'll click to create a disk encryption set. All right my disk
+[15:21] Encryption set ELP. Okay region
+[15:29] Specify encryption at rest select the key vaults
+[15:34] There's my key vaults
+[15:36] Okay
+[15:38] And then we would select a key. The encryption key actually did get created even though I had an error.
+[15:42] So I should I don't have to create a new one. Okay specify this
+[15:47] Diversion that's listed here for this then my identity
+[15:52] Select the user identity. There it is. Add
+[15:56] No application none of that. Okay, we're gonna click review and create and then create
+[16:04] This time it should get created successfully and it did
+[16:08] Okay, so now we're going to click on this resource group here, VM demo. We're going to go down here
+[16:13] to the actual disk of our virtual machine and click that. And we're going to come over here to
+[16:19] the encryption blade, which is under the settings drop down. And there you go. Notice that it's now
+[16:27] available for us to choose a customer managed key. All right, so we can select that. We can click
+[16:40] And there you go, just like that. We've now set up our disk encryption. I know that was kind of a lot of steps
+[16:46] But hopefully you understood why we were doing what we're doing
+[16:50] It's again a whole lot easier just to do platform managed key
+[16:54] But if you want to do want to manage it for regulatory reasons or whatever you can do a customer managed key
+[17:00] And now you know the steps for doing that
+[17:02] Alright, so now that all that's done, I am gonna get rid of some stuff.
+[17:06] I'm gonna do some cleaning up just to kind of save on Azure credit.
+[17:10] But now that we've seen this process take place, I'm gonna switch this back over to
+[17:13] Platform Manage Key.
+[17:15] I'm gonna hit Save.
+[17:16] Alright.
+[17:18] And then of course, now that that's done, I'm gonna go back to my resource group, which
+[17:22] is the VM demo resource group.
+[17:24] And I'm gonna get rid of these extra objects that I no longer need.
+[17:28] If you feel like you want to keep playing around,
+[17:29] if you're doing this with me,
+[17:30] you want to play around some more, you can.
+[17:32] But just to kind of save on Azure credit,
+[17:34] I'm gonna get rid of all that stuff.
+[17:35] So I'm gonna delete the objects that you see here,
+[17:38] Key Vault and all that.
+[17:39] I'm gonna leave the rest of these objects.
+[17:41] So I'm getting rid of the Disk Encryption Set,
+[17:43] the Key Vault and the Managed Identity.
+[17:45] We're gonna leave the rest in place.
+[17:48] So we've selected those, we're gonna click Delete.
+[17:52] Here's the things that are getting deleted.
+[17:53] It's gonna make me type the word delete,
+[17:56] and then I'm gonna click OK.
+[17:57] or click delete. Now I'm going to click delete again and it's going to go through and start
+[18:01] deleting those. All right, now that I'm done with that, I am ready to move on.

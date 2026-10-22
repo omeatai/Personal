@@ -1,0 +1,125 @@
+# 47 - Configure Azure Storage firewalls and virtual networks
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/47 - Configure Azure Storage firewalls and virtual networks.mp4
+Fetched On: 2026-10-21 19:51:32
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now when you configure a storage account in Azure,
+[00:03] one of the very first things you have to sort of think about
+[00:06] is how people interact with that storage account
+[00:10] or how other services interact with that storage account.
+[00:13] So I wanna dive in and talk about that right now.
+[00:16] We're gonna focus on
+[00:18] this idea of dealing with the Azure Storage Firewall settings
+[00:22] and VNet settings that are involved in connecting in.
+[00:25] So here we are on portal.azure.com.
+[00:28] We can click the menu button and go to storage accounts.
+[00:31] We can search for storage accounts right here.
+[00:33] I'm just gonna click storage accounts
+[00:34] and you'll see I have this storage account here.
+[00:36] I'm gonna go ahead and open that up.
+[00:38] All right, now I'm inside that storage account.
+[00:42] And if we look underneath Security Plus Networking,
+[00:45] we have a blade there called Networking.
+[00:50] We'll go ahead and click on that networking blade
+[00:52] and then you have this tab called
+[00:54] Firewalls and Virtual Networks.
+[00:56] And that's really what I wanna focus on in this video.
+[00:59] I wanna talk about the various settings
+[01:01] that we have here.
+[01:02] The first thing to think about here is
+[01:05] it lists out public network access.
+[01:08] Public network access is going to control who can access the storage account from the internet.
+[01:14] Okay, so who can get to it from the internet? The first option says enable from all networks and
+[01:20] this is exactly what it sounds like it is. Anyone on the internet can reach your storage account.
+[01:27] So this is going to be ideal if you are using a storage account that's going to be dishing out
+[01:32] web images and website type related content.
+[01:36] that's when this is going to be beneficial.
+[01:38] Okay, now the next option says
+[01:41] enabled from selected virtual networks and IP addresses.
+[01:46] So if you choose that,
+[01:47] then only trusted sources like internal applications
+[01:52] or corporate offices can access it.
+[01:54] And the idea being that you could set up a virtual network
+[01:59] or a set of virtual networks within Azure
+[02:06] this particular resource, this storage account, right?
+[02:10] So you'll notice here that I could add an existing virtual network if we've got a
+[02:15] virtual network or I could add a new virtual network.
+[02:18] So I could create a new virtual network and you could go through this wizard here
+[02:23] and add a virtual network that would be able to link to
+[02:28] this resource, okay? So if you set up a virtual network,
+[02:32] and you have resources that are tied to that virtual network,
+[02:35] they would be able to interact with this storage account.
+[02:40] That's the idea, okay? The last option you see there is just disabled
+[02:45] and this is pretty obvious what this is going to do. This is going to completely
+[02:49] block public access altogether. So use only
+[02:53] with private endpoints if you choose this. In other words, only things within
+[02:59] your Azure space right now resources that are here inside my Microsoft Azure environment.
+[03:06] would be able to interact directly with this storage account.
+[03:10] So nothing public in other words,
+[03:12] nothing from the internet would be allowed to connect in.
+[03:15] So that is the idea of disabled.
+[03:17] Now in my case, I am going to leave this set
+[03:20] to enabled from all networks.
+[03:22] I actually do want to be able to interact with this
+[03:25] from the internet and do some setup there.
+[03:27] So I'm gonna leave that set.
+[03:29] Now the next thing we have is network routing
+[03:32] and it tells you here,
+[03:33] it says determine how you would like
+[03:36] as it travels from its source to an Azure endpoint.
+[03:39] Microsoft routing is recommended for most customers.
+[03:42] Okay, so the idea here, Microsoft network routing
+[03:46] is the defaulted selected answer here
+[03:49] based on when the storage account was created.
+[03:52] And that means
+[03:53] The traffic that accesses this storage account will be using Microsoft's secure optimized
+[04:00] backbone network. This is going to be preferred in terms of performance and security for the
+[04:06] majority of the enterprises out there. Now you can select internet routing. If you do that,
+[04:13] this is just going to use a regular internet path.
+[04:16] connecting in. It's not using Microsoft's backbone for somebody to connect into this storage account.
+[04:23] This may be slower or less secure. This will be useful though if you're wanting to do some
+[04:29] testing or maybe a public low priority application and you're testing connectivity and performance.
+[04:36] But ultimately most everybody will tell you especially Microsoft,
+[04:40] it's better to use the Microsoft Network routing solution.
+[04:44] Okay, the last thing we've got here is public route specific endpoints.
+[04:49] And we have a couple of check boxes here. The first one says Microsoft Network Routing.
+[04:55] This would publish your an endpoint tied to Microsoft routing if you choose that.
+[05:01] Okay, whereas with internet routing, this would publish an endpoint tied to regular internet
+[05:06] routing. Now to better understand this, you really need to think about the endpoint section
+[05:11] of a storage account. I can find that if I come down here and expand under settings,
+[05:18] you'll see a blade called endpoints. If I click on endpoints,
+[05:23] You can see the various endpoints that are currently set up here and these are all just regular Microsoft endpoints.
+[05:29] These would be the URLs that are linked to in regards to this storage account.
+[05:34] Now watch this. I want you to look at what's here.
+[05:37] You see there's two entries for each one of these services, right?
+[05:41] Now, if we jump back over to networking up here under security and.
+[05:46] networking and then we go ahead and we'll just check both of these and we'll click save.
+[05:51] It's now going to make two more endpoints available, right? If I come down here and
+[05:57] click on endpoints, I want you to notice now that we have the Microsoft network routing based
+[06:03] endpoint and then we have the internet routing based endpoint because we selected both of those.
+[06:15] the Microsoft network routing based endpoint that can be used, and then the internet routing
+[06:20] based endpoint that can be used based on our choices up here under networking. So that is
+[06:26] what these two options are going to be used for. Okay. All right. So hopefully that gives you a,
+[06:32] you know, a little bit better understanding of that concept. I know that's a little bit,
+[06:36] it's a little bit strange at first, but you know, that's kind of the logic. Now,
+[06:43] I'll give you an example. Let's say you're dealing with...
+[06:47] Let's talk about the Microsoft Network routing one first.
+[06:51] And so let's say you're a healthcare company that needs to comply with HIPAA
+[06:55] and you need end-to-end control over routing.
+[06:59] Then...
+[07:01] you're gonna have better control with Microsoft network routing. You can set routing preferences.
+[07:06] You can publish a Microsoft based routed endpoint and clients might utilize Azure through
+[07:14] a private connection to Azure through perhaps something called ExpressRoute. That's a private
+[07:20] connection with Azure. And so that's going to be ideal for a Microsoft network routing
+[07:30] Think about it more along the lines of something like maybe a mobile app.
+[07:34] Maybe you got a mobile app and it's for public users that are worldwide and they
+[07:40] need a fast geographically distributed access to maybe a video library that that
+[07:45] public app that mobile app is going to use. So with this you would set the routing preference
+[07:51] for internet routing. This is going to publish an internet routed endpoint as opposed to a
+[07:56] Microsoft one. And so public clients can connect to this endpoint and the traffic is going to flow
+[08:02] over the regular internet backbone as opposed to the Microsoft one. Okay. All right. With that
+[08:08] said, hopefully now you have a better understanding of the firewall and virtual networks capability

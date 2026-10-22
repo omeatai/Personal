@@ -1,0 +1,107 @@
+# 81 - Understanding App Service plans
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/81 - Understanding App Service plans.mp4
+Fetched On: 2026-10-21 19:50:07
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now if you were somebody that is looking to host web-related services into Azure such as a web application
+[00:07] Then you come to the right place with Azure because not only do we have
+[00:11] Just regular Azure container instances for handling web-based containers to you know, the industrial strength Kubernetes
+[00:19] There is another solution called
+[00:22] Azure app service plans. So what are Azure app service plans? Well, this is a
+[00:29] Another solution that allows us to specify some computing resources that are located in the Azure Cloud data centers that essentially is going to act kind of like a server farm.
+[00:42] How you would have a bunch of servers working together to provide some kind of a web server or web service or web application for web hosting purposes.
+[00:53] You are essentially going to very easily set up this app service plan, specify what size of services that you're getting.
+[01:02] There's basically going to be a bunch of virtual machines that are going to be working together.
+[01:06] You'll specify the operating system.
+[01:08] There's two options there Windows and Linux of course those are the types of operating systems that they've got for handling containers and of course
+[01:15] Containers can sit inside this app service plan. So it's another way of basically producing
+[01:21] Containers we would specify the region the number of VM instances we want
+[01:26] All right and then of course it can you can have this grow so it can support load balancing and
+[01:33] having more VMs that get generated you have number of VM instances and allow the
+[01:39] small, medium, or large size instances depending upon the size you're looking for and the
+[01:45] performance you're looking for. And of course the pricing is going to be based on that. Now
+[01:49] what's really neat about this is Microsoft does allow you to set up this for free.
+[01:53] You can have a free pricing tier where you can essentially go in and play around with
+[01:59] your app service plan and set things up and then you can of course expand later
+[02:03] but there's free there's shared basic standard premium there's premium version
+[02:07] two version three isolated isolated converted to isolated version two
+[02:12] there's various different options there for setting this up
+[02:16] the the thing about the to understand about app service plans is
+[02:20] it's a little more user friendly for somebody that
+[02:25] you know, doesn't want to dig deep into like Kubernetes and understanding all the
+[02:29] command line stuff for managing nodes. With Kubernetes and all that you have a
+[02:33] lot more control, especially if you learn the
+[02:36] all of the different commands for dealing with it. Whereas with App Service Plan it's mostly
+[02:41] graphical oriented and it's pretty user friendly, pretty easy to use, easy to size things and manage
+[02:49] but it can be more expensive to go the route of an App Service Plan for a company.
+[02:55] So you're kind of getting a trade-off here.
+[02:58] App Service Plan is going to be,
+[03:00] could be a little bit more expensive for you,
+[03:02] but ease of use is really one of the big things
+[03:04] that you're getting out of it.
+[03:05] All right.
+[03:06] So what are the pricing tiers here?
+[03:09] Well, with App Service Plan,
+[03:11] the features that you're looking for is going to sort of be the deciding factor on you know
+[03:17] which pricing tier you're going to go with. There is what's called shared compute and this is
+[03:22] complete this is free and shared. They give you basically two tiers that'll run this.
+[03:28] Basically allow you to play around with setting up a web service and there's a lot of limitations
+[03:38] but it does let you set up an app and test it out from a developer standpoint.
+[03:42] All right, you get you get quite a bit of limitations as far as CPU usage and all that
+[03:49] put on you as well. Then you got dedicated computing, you have basic standard premium
+[03:55] premium 2, premium 3, and of course obviously as you move up the ladder things are getting a little
+[04:01] it's going to get more expensive but it's going to allow you to have a lot more VMs and a lot more
+[04:06] capabilities than what you got with the shared compute the free model essentially.
+[04:12] And then you have isolated so you have isolated version 2.
+[04:17] Essentially these are dedicated VMs that are going to run on a dedicated Azure network.
+[04:22] This is going to provide some additional isolation for your
+[04:26] applications and it also provides the maximum level of scale out capabilities
+[04:31] that you can possibly get with this. Alright so how does my app run in scale?
+[04:36] Well first off if you've got the free or shared tier your app doesn't scale.
+[04:41] So you can't use scaling with that. You'd have to change to a different tier.
+[04:45] But basically when you set up your app service, the app itself is going to run on all instances
+[04:50] of your VM. So however many VMs you've got dedicated to this, you're going to have
+[04:55] instances of that app running on all the VMs. You have multiple apps on the app service plan,
+[05:01] it's running across them all, right? So your app service plan essentially is your scaling unit.
+[05:08] If the plan is configured to say run five virtual machine instances, then all apps in the plan run on all five instances.
+[05:16] That's sort of the way you want to look at it. You can also of course have auto scaling set up
+[05:22] so that it has auto scaling rules to scale out when need be.
+[05:25] How much does it cost? That's one of the big things everybody kind of wonders
+[05:29] because again this can get a little bit more pricey. You get the ease of use and
+[05:33] app service plan is a lot easier to use and then setting up Azure container
+[05:38] instances or setting up Kubernetes by far. And so what's the pricing? So the
+[05:44] pricing is essentially based on the different tiers you go with. With shared,
+[05:50] well free is free right? You have shared, the app receives basically a quote of
+[05:55] minutes that it's allowed to use.
+[05:57] Alright then you have basic standard premium it's going to kind of go up from there and
+[06:02] you're going to be charged based on.
+[06:03] you know, which of those you go with, you get different CPU, RAM, usage and all that.
+[06:08] When you set this up, you're going to see all this.
+[06:09] So don't worry when you see it, when you actually get in there and play around with it, they
+[06:13] tell you the ins and outs of what you get out of each one.
+[06:17] So that'll help when you actually go through and create this.
+[06:21] So the VM instances are going to be basically are charged the same regardless of how many
+[06:27] apps you're using.
+[06:30] an app service plan, you're going to be charged the same regardless.
+[06:34] All right. It's based on how many VM instances and all that you have. Now
+[06:37] isolated isolated version 2, the app service environment
+[06:43] is going to define the number of isolated workers that run your apps.
+[06:47] So this will get into the amount of VMs and stuff that's
+[06:50] that's supported on the hardware that you've chosen.
+[06:53] All right. And lastly, with resize, one of the things about app
+[06:58] Service plans that makes it very easy to deal with is the fact that you can resize very easily what I mean by I'm not
+[07:05] Talking about scaling out. I'm talking about I can go and change plans very quickly
+[07:10] So again, I might have selected the free plan just to set things up
+[07:14] But then now I'm ready to go up to a higher level plan
+[07:16] I can do that very quickly very easily and I can scale back very easily as well
+[07:22] So you could start out with free
+[07:24] and then go up if you want add new features you know later down the road maybe you want to add
+[07:29] TLS binding and some of the more so you know some of the security features more memory more
+[07:34] virtual cpu core support storage whatever it may be you can very quickly do that and if you want to
+[07:41] go backwards you can.
+[07:42] This is another thing that makes this a sought-after solution as opposed to using some of the others like Kubernetes and all that because it's a lot harder to do that sort of thing with Azure Container Instances as well as Kubernetes.
+[07:55] So resizing is easy. You'll see that when you jump right in and start using it how easy it is to do this.

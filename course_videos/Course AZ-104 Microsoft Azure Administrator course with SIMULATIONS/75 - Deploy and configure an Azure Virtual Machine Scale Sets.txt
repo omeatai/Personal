@@ -1,0 +1,238 @@
+# 75 - Deploy and configure an Azure Virtual Machine Scale Sets
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/75 - Deploy and configure an Azure Virtual Machine Scale Sets.mp4
+Fetched On: 2026-10-21 20:30:53
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about virtual machine scale sets, also known as VMSS.
+[00:05] Now this is a service that Azure has that allows you to deploy and manage a group of
+[00:10] identical load balanced virtual machines.
+[00:13] The main thing that it provides is a way of scaling.
+[00:16] So it's going to automatically increase or decrease the number of virtual machines on
+[00:20] demand.
+[00:21] So it auto scales.
+[00:22] It'll deal with the traffic load as well as the CPU usage.
+[00:29] set be the same image, they'll have the same configuration, same application version.
+[00:34] So it's going to make it very, very uniform and it's going to make updates and management
+[00:39] and all that really easy.
+[00:40] Everything is load balanced and it provides that high availability that we're looking
+[00:44] for.
+[00:45] Okay, so I always like to use the analogy of it's kind of like imagine you're an e-commerce
+[00:49] company and you have a web store and you're selling stuff online and there's certain
+[00:54] times of the year where you need a lot more resources.
+[00:58] lot more traffic. Like imagine maybe the holiday season every year is like peak for you and so
+[01:05] you're going to need a lot more resources. So with with the VMSS it's going to scale you out. It'll
+[01:10] generate multiple more virtual machines to handle the load coming in and then it'll scale it back
+[01:17] when you no longer need those load.
+[01:19] as in the real world the old school way of doing it you would have had to have bought a bunch more
+[01:23] of equipment to be able to handle it and then you'd have servers that were just sitting there
+[01:27] not being used when you weren't at peak load. So this is a really great feature for handling that
+[01:32] scenario. Alright so now what I want to do let's jump in and let's take a look. Now VMSS kind of
+[01:37] like with with availability zones and availability sets this is something that you have to create
+[01:46] associate this with the virtual machine after it's created.
+[01:49] You got to do this ahead of time.
+[01:50] Now, if we were to go right here on portal.azure.com
+[01:53] and click the menu button and go to virtual machines,
+[01:55] you'll see that when I go to create,
+[01:57] I have the option to create a virtual machine scale set.
+[01:59] Or if you were to go in to create a new virtual machine,
+[02:03] and you were to select that you wanted to
+[02:05] create a virtual machine scale set right here.
+[02:09] Watch what happens when you look to create new.
+[02:11] So if you had an existing one, you could select it.
+[02:13] But when you go to create a new one,
+[02:14] it's just going to redirect you to creating
+[02:15] a virtual machine scale set.
+[02:17] Another option would be if you go to all services
+[02:20] and you just type scale set.
+[02:22] You'll see virtual machine scale sets as an option.
+[02:25] So there's multiple ways you can get into this little
+[02:27] wizard, but this is where you would create
+[02:29] the virtual machine scale set.
+[02:31] Okay, and then of course you could have a resource group.
+[02:34] I'm just going to call this VMSS demo, okay.
+[02:37] And the other thing I want to tell you is a lot of creating a virtual machine scale set is the same as creating a virtual machine.
+[02:44] So I'm not going to go over every little intricate feature like I've done with my virtual machine.
+[02:49] If you...some of these stuff I'm going to move quickly through because you've already heard it all.
+[02:54] If you haven't...
+[02:56] If you've skipped over into this video and skipped this stuff on virtual machine creating a virtual machine
+[03:01] You should go back and watch that because I do explain pretty much everything there
+[03:04] But some of the stuff that we haven't heard before I'm gonna go over the stuff we have heard before
+[03:08] I'm gonna I'm gonna skip over that. Okay, so then I would come in here and I would give the virtual machine scale set a
+[03:14] Name so I could call this whatever I want. All right, I'm just gonna call this
+[03:20] VMSS machine
+[03:22] Alright, that's gonna be the name of it
+[03:25] and then region is East US, I could do availability zone if I want, I'm gonna leave that alone.
+[03:30] And then I come across and I got this thing where it mentions orchestration.
+[03:35] So orchestration mode, so I have two options here.
+[03:38] It tells you with orchestration, it tells you that a scale set has a scale set mode
+[03:44] that defines the attributes of virtual machine. It's the size, the number of disk.
+[03:48] As the number of instances in the scale set
+[03:52] changes, new instances are added based on the scale set model. So the first one is flexible.
+[04:00] And this is going to let you mix virtual machine types and availability zones if you want. So this
+[04:04] is great for high availability web applications. You also can do uniform. And the idea here is this
+[04:12] is optimized for maybe a simpler stateless workloads where all virtual machines are going to be
+[04:18] Okay, and so that's the the idea there. I'm gonna go with uniform and then I can choose my security type
+[04:24] You should be familiar with these
+[04:26] Standard trusted launch virtual machines confidential. I'm gonna go with standard and then it asked about scaling modes
+[04:32] So the scaling modes
+[04:35] you can define, by default this is set manual, and if you do this manual, you define a fixed
+[04:41] amount of instances of your virtual machine. You're responsible for controlling all of that.
+[04:46] Now one of the things people really love about virtual machine scale sets is the auto scaling
+[04:59] that has rules that decide how the scaling is going to work.
+[05:03] And if we click on configure there,
+[05:06] then I've got these little options right here.
+[05:09] I have a scaling set of conditions here,
+[05:14] and then I've got these default conditions,
+[05:16] as you can see, where I can look at the various options
+[05:19] right here that I could go with, all right?
+[05:23] So I've got...
+[05:24] It says this is the auto created default condition.
+[05:28] This condition cannot be deleted.
+[05:30] Instead, you can disable auto scale to turn off auto scale.
+[05:34] Since this condition is executed when no schedules of this other scale conditions match, scheduling
+[05:41] will not be needed for this condition.
+[05:43] So I've got manual update capacity, manual auto scaling, which is what I've gone into
+[05:48] here.
+[05:51] that I can go with. The first you'll see is the default instant count and that's set to 2.
+[05:57] Okay this is how many virtual machines that it's going to default to and then you can set that as
+[06:02] the minimum as well. This is the lowest it'll ever go and then you can set the maximum of the maximum
+[06:08] you want it to go. So in this case it'll go up to 20. Okay so it could grow up to 20 instances
+[06:20] Okay, and with this this gets into sort of the CPU usage side of it
+[06:25] So these thresholds you're seeing here determine when to scale out or add VMs in other words
+[06:31] Okay, and also when to scale in which is to remove VM. So right now I'm saying that
+[06:36] And the CPU threshold is greater than 80%. We're going to increase our count by one.
+[06:41] So if we had two, it would go to three, so on and so forth. And then we have a scale in.
+[06:47] So this is CPU threshold is less than 20%. So if it goes down to less than 20%,
+[06:53] then at that point, it's going to scale in. Okay. So the decrease instance count by one.
+[07:00] just subtracts one. So if that was three it would go back to two. All right and then and then down
+[07:06] here when you look at...
+[07:09] the idea of query duration.
+[07:11] So that is where Azure checks the CPU usage for
+[07:15] the past 10 minutes to avoid reacting to priority spikes.
+[07:19] So you don't want it just to spike up to 80 percent or spike down to 20 percent.
+[07:23] To cause it, it would just keep adding and removing,
+[07:25] it would never work very smoothly.
+[07:27] So this is how long that's going to take.
+[07:29] So they tell you this is the engine will query
+[07:31] the CPU usage for the past 10 minutes before executing the scaling.
+[07:35] So that's fine. We're going to-
+[07:37] We're going to go with that. Then you've also got this predictive auto scaling. Enable forecast
+[07:43] for predictive auto scaling. So that's another option. And so the idea is it's going to look
+[07:49] at historical patterns based on like a machine learning type system where it's going to pro
+[07:54] actively add and remove based on predictive learning. Okay, so that's another option you've
+[07:59] got. And then of course you've got diagnostic logs where you could turn on diagnostic logs.
+[08:04] basically enable you to send auto scale activity log data to a storage account where you can do
+[08:10] auditing and troubleshooting. Okay, so from there I'm going to go ahead and click save,
+[08:15] right, and then we can choose our image. In this case, Windows Server 2022 data center. That's fine.
+[08:20] Architecture. All this is fine. We can, we can choose our size here, our admin information.
+[08:31] I'm going to put all that in.
+[08:33] This is all pretty much the same as with a virtual machine.
+[08:36] Licensing, then we can do the spot instance.
+[08:40] This lets us take advantage of
+[08:42] Azure's unused capacity at a discounted rate.
+[08:45] So you could utilize that.
+[08:47] Keep in mind, the idea is that in Azure Data Centers,
+[08:50] they've got equipment that's just sitting there.
+[08:52] Your virtual machine scale set can sit on that equipment.
+[08:56] The only downside is if things get really busy,
+[08:59] virtual machine scale set could be turned off. This is not good
+[09:02] you know like mostly in a production scenario or high
+[09:06] high availability scenario but it is good in a scenario where you're doing
+[09:11] development testing all that you just or you just really need to
+[09:14] save money. So that's what that's going to do.
+[09:17] Disc we can choose the kind of disc we want.
+[09:19] All right, I'm just going to go with standard HDD. Most of this should be the same. Should be familiar with it. I'm going to click
+[09:26] Networking. We go to Network and it creates a virtual network. This is pretty much all the same. Then I've got management
+[09:32] Okay
+[09:34] And then the only other thing here, this is the defender. All this mostly is the same. Only other thing is an upgrade policy. You do have
+[09:41] What is called an upgrade policy there?
+[09:44] That uh that they mentioned and there's three options there. You have manual
+[09:49] which makes it where admins most manually trigger upgrades to this.
+[09:54] You have automatic Azure upgrades instance immediately in random order.
+[10:00] it'll pick which virtual machine to upgrade in random
+[10:04] or rolling, which Azure upgrades in batches.
+[10:07] So it'll pauses between them for validation
+[10:11] and it does it in a batch.
+[10:14] So upgrades roll out in batches with optional pausing.
+[10:18] All right, so this, you know,
+[10:19] that kind of scenario would be good
+[10:21] if you had like a web application back in
+[10:23] where gradual upgrades minimize downtime
+[10:25] and maybe allow testing and all of that.
+[10:27] So that's what that's gonna be.
+[10:29] Okay, and I think most everything else there should be mostly the same.
+[10:40] Yeah, and then so let's go to health. Now. This is new. I haven't seen this before. Enable application health monitoring.
+[10:47] So I can turn that on and
+[10:50] what this is going to basically do for us, this is going to allow us to have our health monitored
+[10:57] on the the VMSS and what it does is Azure will periodically probe your services that are running
+[11:05] in the virtual machine to make sure that they're still up and if they're in that it lets it know
+[11:09] that it's healthy okay and then if it's not healthy it can stop directing traffic to the
+[11:14] places not to the virtual machines that aren't healthy so if I go here to configure okay it's
+[11:22] You've got binary, healthy or unhealthy or rich, advanced, gives more detail on the reporting.
+[11:28] You've got the protocol you can choose there, the port number, I could say port 80.
+[11:32] Maybe this is going to be a web server and then you can specify an exact like page or place it's
+[11:38] supposed to check to see if anything if things are working. I'm just going to put a slash that
+[11:42] would just be sort of like the root directory of the web service itself. Okay.
+[11:48] So you could put that in there, whatever you want the directory to be.
+[11:52] If there's a certain page for it, like perhaps you want to do the, you know, slash health,
+[11:58] you could do that if you wanted.
+[12:00] I could have a page called slash health that it's checking.
+[12:03] Okay.
+[12:04] And then I could click save.
+[12:06] All right.
+[12:07] And so that's how that is going to operate.
+[12:11] Okay.
+[12:12] As far as health.
+[12:15] Okay, so you'll see down towards the bottom there it says recovery says Azure can help
+[12:20] you recover your instances from control plane and application failures before enabling the
+[12:26] automatic repairs policies to review the requirements. So you could do automatic repairs,
+[12:30] delete unhealthy instances automatically and recreate new ones. So that's where it'll
+[12:34] actually try to create new VMs and replace those VMs itself.
+[12:40] Okay, so it tells you you can repair your virtual machine by re-imaging or restarting or redeploying. So I would say let's restart
+[12:48] That's lay in it as you know in the Windows world a restart will fix 99% of the world's problems
+[12:54] So we could just have it restart, right? You can have a grace period for that
+[12:57] They tell you this is the amount of time for which automatic repairs are suspended due to a state change on a VM
+[13:04] So if something changes on the VM, it's just a grace period
+[13:07] so it doesn't always assume something bad has happened. Then we go to advanced. The majority
+[13:13] of this stuff here with advanced should already be familiar with you. All right, you do have a
+[13:21] allocation policy. You can enable scaling beyond 100 instances. You could allow that if you want.
+[13:28] Your tenant has to support that. Else there'll be some rules put in place and you won't be able
+[13:37] for strictly even balance across zones. If you have availability zones, you can have that. You've
+[13:43] also got a spreaded algorithm, which you can do there. Spreaded algorithms, so you have max spreading.
+[13:50] This is going to distribute VMs across as many fault domains as possible. So getting into
+[13:57] availability sets. And then if you do fixed spreading, this uses a fixed fault domain count
+[14:04] placement.
+[14:05] is you can specify the fault domain count here if you want.
+[14:08] All right, but again, the majority of this other stuff here we've seen.
+[14:13] All right, and then at that point, I'm going to click Review and Create,
+[14:17] and it's going to validate and tell me if I've missed anything.
+[14:21] I've gotten anything wrong. It's like I everything's good.
+[14:24] Now I'm going to go ahead and click Create,
+[14:25] and I'll pause recording while this is getting created.
+[14:28] All right, so now that that's done, I'm going to click Go to Resource,
+[14:31] and that's going to bring me into the virtual machine scale set.
+[14:35] All right, and I can go right over here and I can look at the instances.
+[14:39] I click instances.
+[14:42] You can see the instances right here.
+[14:44] Now it's going to say unhealthy.
+[14:46] And the reason it's gonna say unhealthy is because we haven't actually set up anything for it to monitor
+[14:52] So you actually have to you know connect in and set up the web service
+[14:56] You can install like IIS on there and then set up the directory that it's supposed to monitor and that point it would start
+[15:02] showing a healthy state, okay
+[15:05] but that is how we can get this going and
+[15:10] If we wanted to connect into it and all that
+[15:13] Can and set up the web service and all that. Okay
+[15:16] So that's how we can do our virtual machine scale set.
+[15:20] And I no longer really need this,
+[15:22] that's really all the demoing we're gonna do with it.
+[15:24] So I am going to go in and I'm gonna just wipe out
+[15:27] the whole resource group, which will get rid of this
+[15:29] because I don't wanna waste the Azure credit.
+[15:32] So I'm gonna go right in here to the resource group,
+[15:34] which is the VMSS demo.
+[15:37] and delete it. You are welcome to leave it if you want to play around with it some more. You can
+[15:43] keep it and play around with it or you can delete it. I will leave that completely up to you.

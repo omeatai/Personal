@@ -1,0 +1,223 @@
+# 76 - Understanding Azure Containers
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/76 - Understanding Azure Containers.mp4
+Fetched On: 2026-10-21 20:28:07
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to spend some time helping you understand the concept of Azure containers.
+[00:05] But what is a container?
+[00:07] So in the shipping industry, we have these massive containers that contain different
+[00:14] types of products that people are shipping all over the world, right?
+[00:18] We have these different ships and trains that are used to transport these containers.
+[00:27] We have an approach that's similar kind of idea more in a virtual mindset, of course,
+[00:33] but it's a similar idea known as containerization.
+[00:37] So the idea is that you can have a standard package of software known as a container
+[00:43] that bundles an application's code together.
+[00:46] which will also contain all of the related configuration files, the libraries, and any other dependency
+[00:54] that's going to be required to run that application.
+[00:57] The idea is, if you bundle all of that together inside of a container, this container can be
+[01:04] placed on various platforms and it's always going to play the same. The only difference would be
+[01:10] the you might get better performance based on the amount of CPU, memory, and all of that. But the
+[01:16] idea is the application is always going to be the same no matter where you put it. Just like if I
+[01:22] take a big shipping container and I place it on a boat and then at some point we move it over to
+[01:32] products that were in it when it was on that boat is when it goes on that train. Right? So this is
+[01:37] sort of the idea. This is the mindset you want to have. Now, why are containers so helpful?
+[01:44] Well, one of the problems that's always been something we've had to deal with in the past is when you develop a piece of software and then you run that piece of software on one piece of hardware and then run it on another piece of software, it doesn't run the same.
+[01:58] In the past, companies would spend ridiculous amounts of money having every kind of computer architecture known to man so that they could test their applications on all the different types of hardware.
+[02:13] is just because you'd have different configurations running on different hardware. You had different
+[02:17] library requirements. You had different dependencies that had to be present in order for that software
+[02:23] run. With containers, they're going to address this problem by providing a lightweight, immutable
+[02:30] infrastructure for application packages and deployment. And application is acting as a
+[02:42] in the same container. So where the application data files go, well so does all the dependencies
+[02:50] that are going to be needed to run that application. So the containerization of an
+[02:55] application can be tested as a unit somewhere like maybe on a local personal computer and then it can
+[03:01] be deployed as container image out there in the cloud or on a host server and what's great about
+[03:12] So here's the big question though that's usually on a lot of people's heads
+[03:16] What's the difference between a container versus a virtual machine?
+[03:21] Well, let's start by talking about virtual machines first and have this little graphic on here where you can see you have the host
+[03:29] Computer and all of its hardware and then on top of that you have the hypervisor
+[03:34] Where your host operating system files and libraries and all that are run and then from there
+[03:39] you've got your virtual machines. So at a high level your VMs
+[03:43] virtualize the underlying hardware so that multiple operating system
+[03:48] instances can run on that hardware. Each virtual machine
+[03:52] runs an operating system and has access to the virtualized resources
+[03:56] representing that underlying hardware. Now the VMs have some benefits though.
+[04:03] The benefits are going to include the ability to run many different operating
+[04:08] more efficient, it's cost effective, good utilization of your hardware,
+[04:14] you faster server provisioning, you got good failover redundancy.
+[04:18] On the flip side, each virtual machine contains an operating system image,
+[04:25] all the libraries needed, all the dynamic link libraries in the Windows
+[04:28] world, libraries for whatever operating system you're using.
+[04:31] Even Linux, you're going to have things like that. You have
+[04:34] applications that run on it.
+[04:36] And of course you have to consider other things that go along with that.
+[04:40] So you have more items that you got to consider when you're dealing with the virtual machine.
+[04:45] Okay, it's a virtual computer essentially.
+[04:47] Okay, these virtual machines can become quite large in size.
+[04:52] Now let's talk about a container.
+[04:55] All right, so you have slightly of a different mindset now.
+[04:59] A container virtualizes the underlying operating system and causes the containerized app to perceive
+[05:08] that it has the operating system including CPU, memory, file storage, network connections all to itself.
+[05:17] because the differences in the underlying operating system and the infrastructure are abstracted,
+[05:22] as long as the base image is consistent, the container can be deployed and run anywhere.
+[05:27] Okay, so what am I saying there?
+[05:29] Well, the container, unlike a virtual machine where you have,
+[05:33] you know, you've got an entire operating system and all of its files inside that virtual machine.
+[05:39] A container doesn't do that.
+[05:41] A container just contains the app.
+[05:45] and it just contains the dynamic link libraries or libraries for whatever operating system you're using.
+[05:52] I say DLLs because that sort of has the Windows mindset, but you know again you could be doing this with Linux as well.
+[05:59] It has all the libraries that are needed.
+[06:02] So all the files and services are all in there,
+[06:04] but you don't have to have an entire operating system
+[06:07] in there, okay?
+[06:09] It just puts the dependency files that are needed.
+[06:13] So you have the application data,
+[06:15] you have the dependencies inside that container.
+[06:17] It's a lot smaller and it's a lot more lightweight.
+[06:20] than what you have with a full-blown virtual machine.
+[06:24] So since the containers share the host operating system,
+[06:28] they don't need to boot an entire operating system
+[06:31] and load up all the operating system libraries.
+[06:33] So this enables the container to be much more efficient
+[06:36] and much more lighter weight.
+[06:38] And this is one of the big benefits
+[06:41] of being able to deploy these very rapidly
+[06:43] and on a much larger scale, okay?
+[06:46] It also makes dealing with maintenance and patching and updates and all of that a whole lot easier.
+[06:54] Now in the world of containers, there's a really big name that's called on over the years and
+[07:00] that's Docker. Docker is again the leader. They're not the only company out there that
+[07:06] worked with containers but they're the
+[07:08] They're the biggest and they partnered up with Microsoft a few years ago. They were a Linux only
+[07:13] company and then they eventually branched out to Microsoft. Microsoft poured
+[07:17] quite a few million dollars into that company to help it grow to support Windows.
+[07:22] Docker supports both Linux and Windows containers.
+[07:26] It supports the Windows Server Core, Nano Server.
+[07:28] It's great for running microservices,
+[07:30] lightweight app workloads, okay, web applications.
+[07:35] Docker, you have Docker Desktop,
+[07:37] which is a graphical interface that you can use with Docker,
+[07:39] but it's also of course got Command Line.
+[07:42] It integrates with Kubernetes
+[07:43] for orchestration of containers, all right?
+[07:46] The scaling in, scaling out,
+[07:48] and it's got some of the other technologies out there.
+[07:50] that you work with as well, like enabling secure image workflows with the Docker content
+[07:55] trust, notary s-bombs, all of that.
+[07:58] It's...
+[08:02] Now Docker is a standalone piece of software that you can run on your own personal computer,
+[08:08] but ultimately it does integrate with the cloud and can work with the cloud.
+[08:11] So it's going to support Linux and Windows containers with the Azure service.
+[08:14] It does support what they call AKS, that's Azure Kubernetes service, that's orchestration
+[08:19] of apps.
+[08:20] You've got Azure container instances and Azure app service, which I'm about to actually
+[08:24] talk about all three of those here coming up.
+[08:27] So this is going to let you deploy microservices, manage containers through the Azure portal or from command line.
+[08:33] You can control permissions and all that using role based access control.
+[08:37] It's integrated with Microsoft Intra ID. So it's going to offer end to end security.
+[08:43] It's going to support Microsoft Defender. There's just a lot of benefits of having these two technologies work together.
+[08:50] All right. Now let's talk about the technologies that we have in Azure for supporting containers.
+[08:56] The very first one, the fastest, most simplistic, basic type of container technology we have
+[09:03] is called an Azure Container Instance.
+[09:06] And that is referred to as ACI.
+[09:08] With ACI, you can just deploy a container out there extremely fast. There's no special infrastructure needed to manage it.
+[09:17] Okay, ACI runs your containers without needing to set up a bunch of virtual machines. It's perfect for fast and simplified operations.
+[09:25] It's got an extremely fast startup. So it's great for just
+[09:29] needing to throw something out there, needing to throw a container up and get it running as quickly as possible.
+[09:34] It's very cost efficient, okay, with per second billing.
+[09:37] So you only pay for the resources you're using while the container's running.
+[09:41] You shut the container down anytime you want.
+[09:43] It's great for what they call burst workloads, where you need to rapidly deploy a container almost instantly.
+[09:49] It's got a secure support for connecting to your network. It integrates with VNets.
+[09:57] without the use of Kubernetes.
+[10:00] doesn't have to have any kind of orchestrator.
+[10:01] Of course, that's also one of the downsides.
+[10:04] If you do want to orchestrate ACI,
+[10:06] if you want to support scaling,
+[10:09] where you can scale out,
+[10:11] meaning if you got a web app that's running in a container
+[10:14] and you needed to instantly generate
+[10:17] a new version of that web app,
+[10:18] you can't really do that with ACI on its own.
+[10:21] That's where you would need Kubernetes.
+[10:23] Azure Kubernetes.
+[10:25] is an extremely powerful technology.
+[10:28] Kubernetes was something that was created years ago by Google
+[10:31] and then it was kind of being open-sourced out to the world.
+[10:34] Microsoft's version of Kubernetes is called AKS Kubernetes
+[10:38] and it is an orchestrator.
+[10:39] So the idea of Kubernetes is you can create a bunch of rules
+[10:43] and set up all these features where it can rapidly
+[10:46] deploy containers for you.
+[10:48] So even though Azure Container Instances can't deploy,
+[10:52] you can't scale it out.
+[10:54] by setting rules with Kubernetes you can. Okay so it's a very powerful technology. Now the
+[11:00] downside to Kubernetes is that it's it's pretty advanced. There's a lot to learn and have to
+[11:08] deal with to set up Kubernetes. And so that's where Microsoft came out with this next one and
+[11:14] the final one and this is sort of the best of both worlds. You have what's called an Azure
+[11:23] as Azure Container Instances.
+[11:26] But-
+[11:27] it can support the same things as the container instance.
+[11:31] It's not as fast as an Azure container instance either,
+[11:35] but you get a lot of the same benefits. And the main thing you get
+[11:39] is you get automatic scaling based on demand. So I can set up scaling rules
+[11:44] where it'll scale out if I need it to. I can even have it scale back to
+[11:48] zero containers running if I want. So if somebody's accessing a site
+[11:52] and they're not actually accessing the web app that's needed,
+[11:56] and if somebody is trying to open up something that's going to involve that app, we can have that
+[12:01] We can have that container be instantly or relatively quickly generated. It's a fully managed environment
+[12:08] You don't actually have to have Kubernetes to utilize it, but you get a lot of the same benefits you get with
+[12:15] Kubernetes, okay, so you get the power of the Kubernetes without having to manage that what is called the
+[12:20] kubernetes clusters or understand the complexity of writing what are called yaml files these
+[12:27] actual text
+[12:28] types of files you have to deal with. So it supports
+[12:32] ingress revision and what they call blue-green deployment. That gets into where
+[12:35] you got traffic splitting. So if you're a web developer and you're having to
+[12:39] have different versions of your site and you're working on it and you're trying to
+[12:42] update these sites very quickly, you can do that very fast.
+[12:45] This is integrated with Azure tools and various services so you can utilize the
+[12:50] Azure Container Registry.
+[12:51] And what that is essentially is just a repository for managing your various containers.
+[12:58] So it gives you a great easy way to manage containers.
+[13:04] Azure Container Apps is a more industrial strength version of the Azure Container Instances.
+[13:11] Azure Container Instances is very lightweight, it's cheap, you can generate a container very fast,
+[13:17] but you don't get all the features, the scaling features and all that that you get with Azure Container Apps.
+[13:21] So...
+[13:22] The last thing I want to say is what's the main differences here between Azure Container Instances
+[13:27] versus Azure Container Apps. Well you can see here the purpose. Azure Container Instances run
+[13:33] individual containers quickly without managing services whereas the Azure Container Apps is going
+[13:39] to be scalable.
+[13:40] event-driven and supporting micro services. The use cases for these
+[13:44] with the Azure Container Instances is simple tasks like scripts, batch jobs,
+[13:48] isolated containers. With Azure Container Apps you're going to get
+[13:53] apps with APIs, background processes, multiple services.
+[13:57] With Azure Container Instances,
+[13:59] you can only do manual types of scalings with it.
+[14:02] Basic scaling only, you don't get auto scaling
+[14:05] or any of that.
+[14:06] The only way you can get any real scaling
+[14:07] with Azure Container Instances
+[14:09] is if you start using Kubernetes.
+[14:11] The advanced capabilities of it,
+[14:13] there's not really a whole lot of
+[14:14] advanced capabilities with the container instances,
+[14:16] but with the Azure container apps,
+[14:18] you get what you see there.
+[14:20] The built-in Kubernetes with the KEDA.
+[14:23] This is the auto scales based on events.
+[14:27] Dapper that helps microservices talk to each other.
+[14:30] The Envoy manages traffic routing
+[14:32] and security between services.
+[14:34] Traffic control and version,
+[14:36] you can see it's not even available with Azure.
+[14:38] container instances, but you do get that with Azure container apps.
+[14:42] And then the Azure container instances is ideal for developers who just need a fast single container
+[14:47] that just to get it out there running. And then the Azure container apps is going to be for
+[14:52] developers that are doing more modern cloud apps in a production environment usually.
+[14:57] All right, well hopefully that now gives you a better understanding of what containers are
+[15:02] and you understand the different
+[15:04] A couple of the different container options, mainly you understand the differences between
+[15:08] Azure Container Instances as well as Azure Container Apps.

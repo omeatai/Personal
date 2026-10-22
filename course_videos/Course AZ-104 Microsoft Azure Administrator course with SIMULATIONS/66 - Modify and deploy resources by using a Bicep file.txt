@@ -1,0 +1,151 @@
+# 66 - Modify and deploy resources by using a Bicep file
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/66 - Modify and deploy resources by using a Bicep file.mp4
+Fetched On: 2026-10-21 20:14:46
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now when working with Azure Bicep files, you're going to need Visual Studios and I would recommend Visual Studios code.
+[00:08] It's very lightweight. If you just do a search for download Visual Studios code, you'll see it right here.
+[00:14] You can download it for Mac, Linux, Windows and just install it on your machine.
+[00:19] I've already installed it. Another option is go through the Microsoft Store.
+[00:22] So if you open up Microsoft Store.
+[00:25] You can get it that way as well.
+[00:28] So just do a search for Visual Studio and you'll see,
+[00:34] eventually, there it is right there, Visual Studio's code.
+[00:39] Once you have that, we can open up Visual Studio's code here.
+[00:49] Then we're going to go right here to where the extensions are and just search for bicep.
+[01:00] There's bicep right there. We'll click on it and we'll click install
+[01:03] All right
+[01:04] So that's gonna install the extension and of course the extension is what you need in order for using the IntelliSense and all that
+[01:11] That'll be utilized with
+[01:14] Bicep files so as you can see right here
+[01:16] You can open up existing when you can create a new bicep file by clicking
+[01:21] Create bicep file. All right. Okay. So now it's just asking me where I want to store the bicep file to store it on my desktop
+[01:32] and we've now got our bicep file,
+[01:37] and here it is right over here.
+[01:39] If I just move this over here,
+[01:42] I can move all of this out of the way,
+[01:45] and now I've got my file I can create.
+[01:47] So with Azure bicep,
+[01:50] the way that it's the code works,
+[01:52] again, you don't really need to be an expert on
+[01:53] the code going through this,
+[01:55] so I wouldn't stress over that a whole lot.
+[01:56] But with Azure bicep,
+[01:59] you start with what's called a target scope.
+[02:02] and the target scope will usually be made up of either a management group, a resource group,
+[02:09] a subscription, or tenant. In my case, I'm going to do subscription because this is going to be
+[02:14] like maybe I'm going to deploy a resource group, right? And so then I've got my
+[02:23] subscription target scope basically meaning hey whatever I deploy I'm going to deploy it to
+[02:32] And then maybe I want to specify a resource. So I would say like resource and then let's give it a name. Let's just call it.
+[02:45] RG demo bicep. All right. And then we'll specify the
+[02:55] the Azure compute of it. That's the resource is basically going to you're going to be creating through.
+[03:03] the Azure Resource Manager. So in my case it's going to be Microsoft.resources
+[03:11] okay slash resource groups because I'm going to create a resource group and then you can
+[03:17] specify the API version just go with whatever the latest one is. All right and then from there I'm
+[03:24] going to put equals and we'll say opening a curly brace and then of course our code for
+[03:32] this what we want to specify here would go here.
+[03:35] So for example, name and then I'll do,
+[03:40] and this is kind of following the same format the JSON uses, right?
+[03:44] Then we would specify, well,
+[03:46] this will be the default name,
+[03:48] and again, we'll just call it resource group demo bicep.
+[03:55] like that. Alright, the next would be the location. We have to specify a location.
+[04:00] So perhaps the location is going to be based on our region. Alright, so what do
+[04:08] we want our region to be? Well you'll notice I've got little squiggly lines
+[04:12] here it's letting me know there's a problem. The hover over that it tells you
+[04:16] that region does not exist. That basically means that I need to define a
+[04:19] parameter for the region.
+[04:22] Okay, so if I go down here, I'll go right, it needs to be above this line obviously.
+[04:28] So then I would specify param for parameter region and then we'll say the string that's going to be
+[04:35] the name of it essentially the words that are going to make it up and then maybe we'll do east
+[04:45] line over that indicating there's no more problems there and there's little
+[04:49] light bulbs that kind of give you recommendations like hey you want to add
+[04:52] a description for this I could say add a description for the parameter and it
+[04:59] might be something like location for where the resource is okay in this case
+[05:14] Now that I've done that,
+[05:17] I can go right here and I can save my file, main.bicep.
+[05:23] At that point, if you want,
+[05:25] you could deploy it. So you could deploy it utilizing
+[05:28] something like Azure CLI, all of that.
+[05:31] So if I want to jump into Azure CLI and do this, I have to install Azure CLI.
+[05:37] If you don't have that installed, all you got to do is go out and do a quick Google search on Google or being on Azure CLI download and it's installed for Windows or whatever operating system.
+[05:46] In my case, I've already installed it on my Windows computer.
+[05:49] I can right click start, go to Windows PowerShell as an admin.
+[06:01] Azure CLI Bash in other words is installed on my machine.
+[06:06] Okay, which it is.
+[06:10] The next thing I can do is type Azure,
+[06:14] or sorry, AZ account list,
+[06:17] and I can see.
+[06:18] Azure accounts on my machine so you can see right here. That's my account this little command right here az account set
+[06:26] Subscription you can specify your subscription ID if you have multiple
+[06:30] Subscriptions installed you can you can use that syntax right there for getting the correct
+[06:38] Subscription connected which I do okay
+[06:41] Now I'm just going to go to the path of where my bicep file is.
+[06:44] In my case, that is going to be in cd users.
+[06:48] Tech in desktop.
+[06:49] That's where my desktop folder is and that's where my bicep file is.
+[06:53] So now I'm going to type az deployment sub create dash dash location.
+[07:12] template file so template-file and forward slash and it'll be main.bicep
+[07:20] that's the name of that file right and then at that point we'll specify
+[07:27] parameters because we we require a region right region if I wanted to change
+[07:35] the location right here I could in this case region equals
+[07:43] Just keep it the same East US
+[07:46] Alright
+[07:50] And so just checking everything AZ deployment sub create location East US template file
+[07:58] main dot bicep parameters
+[08:01] Region equals East US
+[08:04] So let's just go ahead and hit enter. Alright, so it's basically telling me that I have in it
+[08:10] I've been disconnected for too long. So let me just reconnect
+[08:16] AZ login
+[08:19] It's just gonna make me re-authenticate real fast here.
+[08:28] So I'm just putting my credentials in.
+[08:33] There we go.
+[08:35] So let's hit the up arrow.
+[08:36] Look at there.
+[08:38] So yeah, let's go ahead and hit the up arrow
+[08:41] a couple times and hit to see if it works.
+[08:47] Hopefully it won't get an error this time.
+[08:53] All right, it's running as you can see.
+[08:56] So current status is running.
+[08:59] Just letting that run through here.
+[09:01] All right, looks like it completed.
+[09:04] So now let's just jump into Azure and see if it's there.
+[09:09] So we'll go to portal.azure.com,
+[09:13] click on resource groups, and there it is right there.
+[09:21] Okay. And don't worry if your screen looks a little different than mine as far as like what resources you group,
+[09:27] resource groups you have at this time.
+[09:29] I just want to remind you that I'm constantly upgrading my videos and upgrading updating course when the
+[09:37] objectives change and all that. So that's why sometimes I'll have to update a video and may
+[09:42] not have the exact same resource groups as you. The only resource group we care about is this one.
+[09:47] So that was created for us and so it did successfully work. All right. Now what if I
+[09:54] want to modify some existing templates that other people have created?
+[10:00] I can actually go, if I go and just do like
+[10:05] ARM Quick Start Gallery, I know that says ARM,
+[10:11] but it's bicep as well.
+[10:12] If we go to Azure Quick Start Gallery,
+[10:15] if I go there, scroll down a little bit,
+[10:17] you can do a search for bicep,
+[10:20] and then find something here, like for example,
+[10:22] create a standard load balance.
+[10:24] If I go there, you'll see that
+[10:28] We can click browse code and we can look at,
+[10:31] there's a bicep main.bicep file.
+[10:34] I could copy and paste this in if I wanted to.
+[10:38] And, you know, I could create a new bicep file, copy and paste that in here, and then
+[10:43] I could edit that, and then I could use that.
+[10:45] So that's how we could modify an existing bicep file if we wanted to.
+[10:50] So again, the goal here is obviously, we're not learning all the code and all that, that's
+[10:55] really outside the scope of what we're learning here.
+[11:00] bicep is a more compressed language than this the traditional arm i would still tell you focus
+[11:08] your efforts more on understanding arm not so stressed out about bicep right now but because
+[11:15] arm is going to be more important going forward but bicep is coming as time goes on microsoft will
+[11:21] put a little heavier emphasis on bicep and from a developer standpoint, I would say learning
+[11:28] bicep is going to be helpful because it's a more compressed code system. It's easier
+[11:34] to write code in it once you learn it.
+[11:36] as far as being an expert on understanding the code, you don't really have to understand all that
+[11:39] for what we're doing here, okay? But hopefully that gives you a much better understanding now
+[11:44] of just the basics of if I wanted to create a bicep file, also how we can modify an existing one.

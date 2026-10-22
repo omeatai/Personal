@@ -1,0 +1,226 @@
+# 46 - Create and configure storage accounts
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/46 - Create and configure storage accounts.mp4
+Fetched On: 2026-10-21 20:25:28
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to get into the concepts of creating and configuring a storage account in Microsoft Azure.
+[00:07] So here we are on portal.azure.com.
+[00:11] If you click the menu button and go to all services, you can see I've got the option to create one right here to click into it.
+[00:18] If you don't see that, if you're doing this with me, you just search for the word storage.
+[00:21] and you'll see storage accounts. And then from there I'm going to click to create a storage
+[00:26] account. Now the first thing to be aware of here, I like to always say this, a lot of my videos you
+[00:32] might have heard it before, but just know that they are constantly changing these portals.
+[00:37] They're adding features, removing features, renaming things, and no matter how often I update my
+[00:42] videos, it's impossible to stay on top of everything. The main thing here is to understand
+[00:49] isn't that big of a deal. If you get the concepts you should be able to figure things out. But here
+[00:54] we are and I'm just going to click to create a new resource group. I'm going to call this resource
+[00:59] group storage account demo like so. And then I need to give the storage account a name.
+[01:07] The storage account name must be a unique name. Exam lab practice storage
+[01:19] take away that letter A and that name is unique.
+[01:22] So I'm going to go with that.
+[01:24] My region is going to be East US, the primary service.
+[01:28] I could choose Azure Blob Storage or Data Lake,
+[01:31] Azure Files or other, I'm going to do Azure Blob Stores
+[01:34] or Azure Data Lake.
+[01:36] And then for my performance, I'm going to go with standard.
+[01:39] This is going to be for general purpose to account
+[01:42] as opposed to premium.
+[01:43] This keeps it a little cheaper as well.
+[01:45] And then redundancy, I'm just gonna go with LRS.
+[01:47] This is gonna cut down on the cost as well.
+[01:50] Now we're gonna go ahead and click next,
+[01:53] and that'll bring us into advanced.
+[01:55] And so we get in here to advanced.
+[01:58] Keep in mind I'm going to explain some of these settings and all that to you but in some of the
+[02:02] later videos we might dive deeper into those. So we'll give a summary of some of it and we'll dive
+[02:07] deeper into it and a lot of it later. Alright so here we are and it's mentioning configure security
+[02:13] settings that impact your storage count. The first one says require secure transfer
+[02:20] for REST API.
+[02:21] That's REST API is Representational State Transfer
+[02:25] Application Programming Interface.
+[02:26] This is gonna force all data to be transferred
+[02:29] over HTTPS, which is gonna improve your security.
+[02:32] And this is gonna be checked by default.
+[02:34] The second option here is just allow enabling
+[02:36] anonymous access on individual containers.
+[02:38] This is gonna let specific containers be accessed
+[02:41] without authentication if you want.
+[02:43] So this is gonna be useful for public data,
+[02:45] but introduces also some risk if you turn that on.
+[02:49] The next is enable storage account key access.
+[02:52] This is gonna allow using access keys.
+[02:55] to connect storage accounts.
+[02:57] So this will be a special type of key
+[02:59] that can be utilized for accessing storage accounts
+[03:02] for things like web traffic and all that.
+[03:04] So this is gonna be checked by default,
+[03:05] but if you disable this, it would force you to do
+[03:07] what's known as identity-based access
+[03:10] with authentication user identities and all that.
+[03:13] The next we have is default to Microsoft
+[03:16] intra-authorization in the Azure portal.
+[03:19] If this gets enabled, users accessing the portal
+[03:22] must use intra-ID based.
+[03:24] authentication are back rather than access keys for authentication. Then you
+[03:30] got the minimum version of TLS that we're going to support. Really in this
+[03:33] day and age don't want to go below 1.2. Then you've got permitted scope for
+[03:39] copy operations. This is going to limit the source from which data can be copied
+[03:44] into this storage account. So this will include things from like any storage
+[03:53] I've got from any from storage accounts in the same Microsoft
+[03:55] entertainment or from storage accounts that have private
+[03:58] endpoints to the same virtual network.
+[04:00] So those are your various options there.
+[04:03] So then we get into the hierarchical namespace.
+[04:06] We have enable hierarchical namespace.
+[04:08] This is going to enable Azure Data Lake storage Gen2
+[04:11] features such as directories and file level access control.
+[04:15] This is required initially for big data analytics and any
+[04:22] like access control list that you want to use with it.
+[04:26] Okay so I could enable that if I want below that we've got access protocols
+[04:30] this will include enable s
+[04:33] FTP that's secure file transfer protocol for accessing your storage account
+[04:37] This is available in the hierarchical namespaces if you enable that so you'll notice I can turn that on and that gets enabled if I
+[04:44] Want to support that I've also got enabled network file system
+[04:48] That's NFS version 3 a lot of people familiar with Unix and Linux may be familiar with that
+[04:53] But it's also going to require that hierarchical feature to be turned on okay
+[04:59] Then below that I've got the blob storage. This is gonna I can support allow cross tenant
+[05:06] replication so when you enable this this allows replication of blob data across various Azure tenants, so
+[05:14] even different intra ID directories. It's useful for a multi-tenant type scenario or maybe an
+[05:20] organization with multiple tenants I should say. Okay so then below that I've got access tier hot,
+[05:26] cool, cold. So the idea there this is going to define the default storage tier for blobs in the
+[05:32] account. If you select hot this is optimized for data that's accessed frequently. So higher storage
+[05:43] you a little bit more to store the data, but if it's accessed more frequently it's
+[05:48] gonna come down in cost. Then you've got cool...
+[05:52] COOL is going to be best for infrequently accessed data. So lower storage costs but higher access
+[05:58] costs. The more it's accessed the more expensive it gets. And then COLD is going to be suitable
+[06:03] for rarely accessed data or long-term backups. So that you get a lower storage cost there,
+[06:10] highest access cost, and retrieval latency. So it takes some time to get access to the data.
+[06:15] All right, below that we've got Azure Files,
+[06:19] enable large file shares.
+[06:21] This allows support for file shares over the five TI-B
+[06:26] up to 100 TI-B.
+[06:29] So this setting is gonna be grayed out
+[06:31] if the, you know, in the idea being
+[06:34] that the storage account type you've gone with
+[06:37] that I've selected doesn't support the large file shares.
+[06:41] It also can be a regional.
+[06:43] Problem as well. So just keep that in mind. Here's more information about that
+[06:48] Okay, now I'm gonna go ahead and click next and that's gonna bring me into the network access area
+[06:53] And so right out of the gates here,
+[06:55] it says you can connect to your storage account
+[06:57] either publicly via public IP addresses
+[07:00] or service endpoints or privately using a private endpoint.
+[07:03] So the current network access I've got
+[07:05] is enable public access from all networks.
+[07:08] This means anyone with proper permissions
+[07:10] can access the storage account from any network.
+[07:13] This is gonna be the least secure option.
+[07:15] So it's not recommended.
+[07:17] unless public access is truly needed. If this is going to be dishing out web images and all of that
+[07:22] then that's going to be more along the lines of what you would do here. Then you've got the next
+[07:26] option is enable public access from selected virtual networks and IP addresses. This is going
+[07:32] to limit access to a list of trusted vnets and IP addresses to sort of tighten up your security.
+[07:38] The last is disable public access and use private access. This is going to be the most restrictive.
+[07:46] it's only going to be within the Azure environment and you would authorize what can access it.
+[07:52] This is again going to be the most locked down of the options. If we want to do a private endpoint,
+[07:58] so here it says create a private endpoint to allow a private connection to this resource.
+[08:04] Additionally, private endpoint connections can be created within the storage account
+[08:08] or private link center. So this is going to let you add
+[08:11] What's known as a private endpoint, this is going to provide a private IP in your virtual networks
+[08:17] that securely connect to this storage account. This is going to avoid exposure to the public
+[08:25] internet and use the Azure backbone network only. So that's the idea there. So you could add a
+[08:31] private endpoint if you wanted. Below that we have network routing. It says determine how to
+[08:38] as it travels from the source to its Azure endpoint.
+[08:43] Microsoft Network Routing is recommended for most customers.
+[08:47] So idea here is if I go with Microsoft Network Routing,
+[08:50] traffic uses the Microsoft Global Backbone
+[08:54] for better reliability and performance.
+[08:57] This is again going to be recommended in most scenarios, but you could also go internet routing.
+[09:01] Traffic travels over the public internet. This might reduce the cost in some cases,
+[09:07] but it may also increase latency and risk since it's going across the public network,
+[09:12] public internet. Okay, so now we're going to go to next. That brings us to data protection. All right.
+[09:20] The first thing it talks about with data protection is recovery.
+[09:23] Protect your data from accidental or erroneous deletion or modification.
+[09:29] So the first thing I've got there is enable point in time restore for containers. This is going to
+[09:33] allow you to roll back containers in the storage account to a specific earlier point in time. This
+[09:39] is going to be useful for recovering from an unintended change or deletion. The other thing
+[09:46] is to consider is it will require what's called versioning and
+[09:51] This will support what's known as soft delete features so you can go back if you need to.
+[09:57] The next thing you've got is enable soft delete for
+[10:00] So this is going to allow recovery or deleted or overwritten blobs if you
+[10:06] needed to. The days to retain deleted blobs, well this is going to be the
+[10:11] number of days that deleted blobs are kept before permanently deleted, before
+[10:16] they're permanently removed, right? So that's the idea there. Then you've got
+[10:20] enable soft delete for
+[10:23] Containers and file shares, it's kind of the same idea,
+[10:26] but it's geared towards containers and file shares
+[10:29] as opposed to blobs, right?
+[10:31] So that's the idea there.
+[10:33] So we'll go down and look at tracking now.
+[10:36] So this is gonna help track changes
+[10:38] and maintain a historical versioning of your blob data.
+[10:43] The first is enable versioning for blobs.
+[10:45] And of course, with that checkbox, I can...
+[10:51] essentially automatically keep older versions of blobs whenever they are
+[10:56] modified or overwritten. This is going to be useful for things like auditing,
+[11:00] rollback, or accidental overwrites of data. So it can increase your storage
+[11:05] though, so you want to consider that it can increase the storage usage and cost.
+[11:08] So just be aware of that capability if you go that route.
+[11:14] Okay, as far as that goes.
+[11:18] That's a you know, just some of the stuff you want to be thinking about in regards to dealing with that
+[11:23] now I'll also say that
+[11:27] We have access control here and there's the feature enable version level immutability support.
+[11:35] We could turn that on and this is something that's going to allow you to apply a time-based retention policy across blob versions.
+[11:45] It's going to prevent blob versions from being modified or deleted until the retention.
+[11:51] period expires. It will require you to have blob versioning enabled first though.
+[11:57] So even without enabling this setting you can still configure immutability at
+[12:03] the container level or for individual versions. But again the idea here is it's
+[12:09] going to allow the the time-based retention policy to be enacted if you
+[12:14] turn that on.
+[12:15] So that is data protection. Let's talk about encryption now going next to the encryption area
+[12:21] So there's two options for encryption type you have mmk, which is Microsoft managed keys and you have cmk customer managed keys
+[12:29] So all of the data that's in a storage account is going
+[12:32] get encrypted by default by the MMK,
+[12:35] the Microsoft Managed Key.
+[12:36] So with this, encryption keys are managed by Microsoft.
+[12:40] This doesn't require any additional configuration
+[12:43] and it's gonna suit most of your standard use cases
+[12:46] of storage accounts.
+[12:47] If you go with customer managed key,
+[12:51] then this is gonna let you manage your own encryption keys
+[12:54] using the Azure Key Vault.
+[12:56] It's gonna offer more control and compliance,
+[12:59] but it's also gonna require more setup on your end.
+[13:02] if you go that route.
+[13:03] Below that we have enable support
+[13:05] for customer managed keys.
+[13:06] It says blobs and files only.
+[13:09] So with this, if you were to go the CMK route,
+[13:13] like the customer managed keys,
+[13:15] it's applied only to blob and file services
+[13:19] if you were to do that, right?
+[13:22] Then you also have all service types.
+[13:25] So if you go that route,
+[13:27] it's a broader encryption coverage,
+[13:30] this choice is going to be permanent, cannot be changed after the storage count is created.
+[13:35] So just keep that in mind.
+[13:37] So with this, enable support for customer managed keys, you go for that,
+[13:43] just for, you could do it just for your blobs and files,
+[13:46] or you can go all types, but they do tell you this option cannot be changed
+[13:50] after the storage count is created, right?
+[13:53] The last thing we've got, it says enable infrastructure encryption.
+[13:57] This adds an additional layer, a second layer of encryption on top of the standard encryption.
+[14:03] This is intended for customers that need a higher compliance standard or maybe some kind of security compliant they have to deal with.
+[14:11] This is optional, but it does strengthen your data protection at rest.
+[14:17] So it provides a data at rest, strengthens it at rest even more than it already is.
+[14:22] It is something you could consider turning it on if you want it.
+[14:27] From there, if we wanted to put any tags in place we could, and we're going to go ahead and click next,
+[14:32] it's going to validate, make sure we didn't miss anything, and then I'm going to go ahead and click create,
+[14:38] and then I'll pause recording while this is getting created.
+[14:41] Alright, so that just takes a minute or so, and then I'm going to click go to resource,
+[14:44] and I've now officially got my storage account created,
+[14:48] and I have access to the various items that I could use for storing data, and that's what we wanted to do in this video.

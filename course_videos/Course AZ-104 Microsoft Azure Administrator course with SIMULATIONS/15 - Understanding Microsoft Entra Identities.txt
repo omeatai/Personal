@@ -1,0 +1,196 @@
+# 15 - Understanding Microsoft Entra Identities
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/15 - Understanding Microsoft Entra Identities.mp4
+Fetched On: 2026-10-21 20:18:45
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now spend some time helping you understand the concept of identities in Microsoft
+[00:05] and Tri-ID. So the thing to be aware of is that the terminology has changed a little bit over the
+[00:10] years. For the decades we always referred to objects as user accounts, computer accounts,
+[00:15] and I'm not saying you can't still do that. In fact, a lot of people still do. I'll occasionally
+[00:19] still say it, but the newer terminology that Microsoft likes to use to refer to these objects
+[00:25] is the term identity.
+[00:26] Alright, so you're gonna see that term identity versus the word account a lot these days.
+[00:32] Alright, so with intra ID, you want to remember that it is going to be the central
+[00:38] repository, the central directory services that store these identities. And user identities can
+[00:45] be created directly inside user device identities, all that can be created directly inside of IntraID.
+[00:51] You can also have things synchronized from on-premise Active Directory, also known as
+[01:04] You can have identities that are just created into the cloud,
+[01:09] into Microsoft Enter ID.
+[01:10] You can have identities that are stored on premise
+[01:13] and that are synced to Enter ID.
+[01:17] So the multiple ways that you're going to manage identities,
+[01:20] the Azure portal, which is portal.azure.com,
+[01:23] is one of the most common ways that you'll
+[01:25] get into Enter ID and manage identities.
+[01:27] There's also the Microsoft 365 admin center,
+[01:30] which you can get to at admin.microsoft.com.
+[01:34] If you're working with Azure services,
+[01:36] you're gonna spend your time on portal.azure.com.
+[01:38] If you're working on the Microsoft 365 side more,
+[01:41] you'll spend your time on admin.microsoft.com.
+[01:44] Keep in mind there are certain things
+[01:46] you can only do through one portal or the other.
+[01:49] For example, I can't manage and create, I can't add licenses and all that through the
+[01:54] Azure portal anymore.
+[01:55] I can only do that by jumping over to admin.microsoft.com.
+[01:59] Another thing we have is the Intra portal, intra.microsoft.com, where I can manage identities
+[02:06] and all of that as well.
+[02:07] Another option, of course, is if you are synchronizing your on-premise user accounts out to Microsoft
+[02:18] services for that. So if you're familiar with working with the various tools in
+[02:23] Active Directory, Active Directory users and computers and all that fun stuff,
+[02:28] then you'll use that for managing a lot of your user settings. Then those
+[02:33] settings will get synchronized to the cloud. And then of course there's
+[02:35] command line options for working with identities. There's PowerShell which is a
+[02:41] one of the most common ways we'll use what's called Microsoft Graph to interact PowerShell to Microsoft Intra
+[02:46] and then there's Azure CLI which is a bash based type of system so for you that are familiar with
+[02:53] Unix and Linux bash and all that you would feel more right at home if you're doing command line
+[02:57] stuff using what's called Azure CLI the command line interface.
+[03:02] Let's take a deeper look at the various types of identities now. The first type of identity,
+[03:07] one of the most common, is user identities. So user identities, these are going to be
+[03:12] you know human users usually, right?
+[03:14] who are going to be accessing your services.
+[03:16] So you have what are called member users.
+[03:18] These are going to be typically employees
+[03:20] that are going to be created directly in IntraID
+[03:23] or they could be synchronized from on-premise
+[03:25] Active Directory out there into IntraID.
+[03:28] And then you also have what's called guest users
+[03:30] or external users.
+[03:31] These users are going to be invited
+[03:33] through something like a B2B collaboration
+[03:36] of business to business collaboration,
+[03:38] something along those lines.
+[03:39] So
+[03:40] The idea there, their identity is managed in their home directory where they're granted
+[03:44] limited access.
+[03:45] You can kind of limit what guest users get access to in your environment.
+[03:50] Next up, we have what is called a service principle.
+[03:52] Now, if you go back a couple of decades, we used to have what were called service accounts.
+[03:58] You may say, you don't have to go that far.
+[03:59] Well, a couple of decades ago, we used to have to create user accounts and we would
+[04:05] assign user accounts to our services.
+[04:09] difficult in dealing with that because it was an actual user account and people
+[04:14] would forget to deal with that user account. So as time has gone on they
+[04:18] created what was the idea of a service account and of course in Intra we have
+[04:21] what is known as a service principle. These are going to represent
+[04:25] applications or services that need to authenticate and access resources. Now
+[04:29] you can create these manually. However one thing that's really nice is that
+[04:33] when you register an app with Microsoft Intra,
+[04:37] it'll create one automatically for you, okay?
+[04:41] And so it's great for assigning permissions, some running automation, or securing access
+[04:47] without having to have human interaction.
+[04:50] Okay, you can however manage the credentials, you can manage passwords and certificates
+[04:55] and all that and there is some manual overhead involved there if you want to manipulate it
+[05:00] at all. An example of this would be a web app that needs to have read write access to,
+[05:06] you know, from Microsoft Graph or maybe to access the Azure Key Vault which is where
+[05:10] encryption keys and all that are stored.
+[05:12] So these are great for web-based type of applications.
+[05:16] All right, so then we have managed identity.
+[05:20] And at first glance, this is gonna sound a lot
+[05:22] like the same idea as a service principle,
+[05:24] but if you'll bear with me, I'll explain the difference.
+[05:26] So these are special identities for Azure resources.
+[05:30] This is going to be utilized for things like virtual machines or what are called function apps
+[05:35] that are going to be performing actions and they're going to be used to access other Azure
+[05:40] resources and it all happens securely. And the great thing about this is you're not having to
+[05:43] store any credentials at all. Okay, so there's no no credentials that you're having to manage
+[05:51] and that's going to be one of your differences right there between this and a service principle.
+[05:54] Okay, there's two types.
+[05:56] there's what's called a system assigned.
+[05:59] And this is going to be tied to one resource.
+[06:01] And the lifecycle will match the resource.
+[06:03] In other words, whatever resource
+[06:05] that this is going to be linked to, like VM
+[06:07] or whatever it may be, if you terminate that,
+[06:10] well, the system assigned managed identity
+[06:12] is terminated as well.
+[06:14] And then there's also what is called a user assigned.
+[06:17] This is a standalone identity that can be reused across multiple resources as opposed to just a single resource.
+[06:26] Here's an example of using this. You have an Azure VM accessing storage account.
+[06:31] It's going to use a signed or a system identity to access that storage account. Storage account in Azure VM
+[06:37] terminology is simply a place to store data outside of the VM itself.
+[06:42] Okay, so just kind of
+[06:45] you know, looking at the differences here, when I think about a service principle, going back for a second,
+[06:52] you know, you can create it manually or it's registered by an app.
+[06:55] you manage its credentials like passwords and certificates,
+[06:58] you can control the restrictions and all that on that.
+[07:02] You can use it for logging on
+[07:04] and authenticating with Azure.
+[07:06] It's flexible, but it can also work inside
+[07:09] or outside of Azure itself.
+[07:11] So it can work with third party and all that.
+[07:13] That's really good, okay?
+[07:15] But ultimately, you'll be responsible
+[07:18] for securing, rotating key encryption keys and all that
+[07:21] if there's any of that involved.
+[07:23] Alright, and then with managed identities, there's no need to manage any secrets or credentials.
+[07:27] Azure will deal with all that for you. It's only going to work within Azure though,
+[07:33] so it's not meant for third-party services like a service principal is. Okay, and it can be a
+[07:42] system assigned, meaning one identity per resource or user assigned, multiple resources. Okay.
+[07:48] And then I guess, you know, if you want to look at this from a simple analogy term,
+[07:53] then I would say a service principal, you give your app a key to building
+[07:59] and you're responsible for changing that key when needed.
+[08:03] So if you use encryption key for building a web app or something like that,
+[08:06] you'll be responsible for dealing with the encryption key yourself.
+[08:09] With a managed identity, Azure gives your app encryption keys and updates
+[08:14] and it all happens automatically.
+[08:17] You know, so you're not having to deal with all of that stuff.
+[08:21] But just keep in mind that, as I said, managed identities are only going to work within the Azure space, not third party.
+[08:29] Okay.
+[08:30] And last up we have device identities. So this would be the equivalent of what we called a
+[08:36] computer account back in the day. Of course nowadays we're not dealing with just desktop
+[08:41] computers and laptops. We're dealing with smartphones and tablets and all of that
+[08:45] fun stuff. We're dealing with different operating systems from Windows to iOS, Android, Linux,
+[08:56] A device identity is a way to represent a device to Microsoft Intra.
+[09:01] Each device that can join Microsoft Intra, or maybe if it's a hybrid join, will get an identity
+[09:07] in Microsoft Intra ID. These device identities can be used in conjunction with conditional access,
+[09:13] which is of course going to control
+[09:15] whether or not you're allowed to connect in and access any resources that we have to offer in Azure and Microsoft 365.
+[09:22] It also involves compliance policies, which makes sure that our devices are at a certain level of security compliance
+[09:28] before they're allowed to access resources.
+[09:30] And we've even utilized this with Intune, which is Microsoft's MDM, Mobile Device Management, Mobile Application Management Service,
+[09:37] which is what's going to set policies and rules and regulations and all that.
+[09:42] And actually Intune can work in conjunction with conditional accessing.
+[09:45] and compliance, which is also on the screen there.
+[09:48] But now there's sort of three ways of looking
+[09:50] at a device identity when it comes to Microsoft IntraID.
+[09:54] You have what is called an IntraID joined device.
+[09:58] And that is a full blown.
+[10:00] device that is linked into intra ID that we as a organization can completely
+[10:05] manage it. We can put all the rules in the world on the thing whether it's a
+[10:10] device, laptop, desktop, you get into the smartphone, tablets. If it's intra ID
+[10:17] joined we have complete control over it. Okay then you got hybrid AD joined
+[10:25] This is also kind of goes hand in hand with IntraID, but hybrid AD join would be if you've got a device on premise that's joined to a Microsoft domain and then it's being synchronized out to the cloud.
+[10:35] So we still generally would have control over it, but we would also not only be dealing with it in Intra, it would also be dealt with in a Microsoft domain environment as well.
+[10:45] And the last one.
+[10:46] is intra-ID registered.
+[10:49] And that's where things get a little confusing
+[10:50] because people say, well, what's the difference
+[10:52] between join and register?
+[10:53] It's actually very simple.
+[10:54] Joined, if it's intra-ID joined,
+[10:56] we have full control over it.
+[10:58] It's usually a business-owned device.
+[11:00] If it's intra-ID registered, then it's BYOD.
+[11:03] Bring your own device.
+[11:04] It's usually a personal device that somebody owns
+[11:07] that they want to interact with our...
+[11:10] resources. So that's going to be using a scenario where let's say you have somebody that works from
+[11:15] home and the company doesn't didn't buy them a computer they're using their own computer from
+[11:19] home. Well while they access resources that we offer through Azure and Microsoft 365 and all
+[11:26] that we still need to control what that device can and cannot do right. So we can't restrict
+[11:32] the device and lock the device down as much as we can if it's intra id joined but we can
+[11:38] restrict what it can and cannot do with our resources.
+[11:42] Same thing with smartphones and tablets. So that's the idea of IntraID
+[11:46] register. We have some control over it while it accesses our resources
+[11:51] and we can make sure that there's certain things like for example if you
+[11:54] have a device that's not updated we can just
+[11:56] denied access and until they update their device they can't get access. So that's the idea though
+[12:01] of an enter ID registry. It's going to be for personal BYOD type scenario bring your own device
+[12:06] whereas joined means it's usually owned by us and we have full control over it. So hopefully now
+[12:12] in this video with this video you have gotten a better understanding of the concept of identities
+[12:17] in Microsoft enter ID.

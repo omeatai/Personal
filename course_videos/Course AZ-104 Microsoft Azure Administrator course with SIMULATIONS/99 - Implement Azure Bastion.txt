@@ -1,0 +1,152 @@
+# 99 - Implement Azure Bastion
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/99 - Implement Azure Bastion.mp4
+Fetched On: 2026-10-21 19:54:17
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to talk about implementing Azure Bastion.
+[00:04] Now, before I really explain a lot about Bastion,
+[00:07] we need to understand the need for Azure Bastion.
+[00:10] So here we are on portal.azure.com,
+[00:13] and I'm going to click on Virtual Machines,
+[00:15] and I have a virtual machine called WinServer1.
+[00:18] I'm going to click on that.
+[00:19] The way that I would ordinarily connect to
+[00:23] WinServer1 is through remote desktop.
+[00:27] I can go right here on this overview blade, click connect.
+[00:32] Okay, I can download this RDP file, open it up,
+[00:36] and I am then connected. So I've actually got the
+[00:39] RDP connection open here. This is the connection window I'm moving around, and
+[00:44] I can manipulate this server.
+[00:49] By the way, I didn't say it, but I did start up my virtual machine
+[00:53] I usually keep it shut down and all I had to do is start it up
+[00:56] We'll just come over here to overview and then just start it up
+[00:58] Okay, but here I am connected in as you can see I can control this it's a server and all of that now
+[01:05] Here's the problem with that
+[01:07] If we come underneath networking and we look at networking set, network settings, you can
+[01:11] see the NSG, the network security group, which is the IP filtering for this.
+[01:16] I have some rules and I've created some rules previous.
+[01:19] I actually don't need this rule, so I'm going to go ahead and get rid of it.
+[01:22] But you're going to notice this RDP rule right here.
+[01:25] And it's got this little warning message next to it.
+[01:27] If I click on that, it says right here, RDP port 3389 is exposed to the internet.
+[01:35] This is only recommended for testing.
+[01:37] For production environments, we recommend using a VPN or private connection.
+[01:41] Okay.
+[01:44] It's been around since sort of, well, when I say forever, it's been around for
+[01:47] years, even before Microsoft even offered a bastion.
+[01:51] Okay.
+[01:53] So a bastion came along as a newer option, but used to be, you would want to
+[01:57] use a VPN connection or something like express route will now.
+[02:01] they've introduced another secure way of connecting into this server without having to expose port 3389.
+[02:09] And the reason we don't want to expose port 3389 is if hackers discover that port is open,
+[02:14] they could try that they could start attempting to brute force attack into the server.
+[02:19] Okay, ideally what we want to do is make it where we allow port 443, but we don't allow
+[02:28] 4.4.3 is HTTPS and pretty much every web server under the sun has that open.
+[02:35] And so it's a secure way of connecting in and not having to expose that other port,
+[02:40] that 3389.
+[02:42] Okay, so let's see how we can do that.
+[02:46] What we can do, we can come over here and you'll see there's a blade called bastion
+[02:51] that we can click on and we can deploy a bastion.
+[02:57] or even if you go to the overview and click connect,
+[02:59] you'll notice there's an option here for connect via Bastion.
+[03:02] Okay.
+[03:03] And so that's going to bring you right here.
+[03:06] And we could deploy that.
+[03:07] Now, before we deploy that, all right,
+[03:09] there's a learn more on that.
+[03:11] You can look at the pricing, okay?
+[03:14] So give you an idea of the pricing.
+[03:16] I always recommend look at the calculator.
+[03:18] So go to Google, search for Azure Calculator,
+[03:20] or Bing, search for Azure Calculator.
+[03:22] Go to the pricing calculator,
+[03:24] and then just search Bastion.
+[03:26] Okay, so go into the bastion and from there you can kind of get an idea.
+[03:34] There's basic standard and premium.
+[03:36] You can see the monthly cost.
+[03:38] So you kind of need to know what you're getting yourself into here if you implement bastion
+[03:42] because it is going to cost some money.
+[03:44] This is not a free thing.
+[03:46] So you have basic standard.
+[03:48] You see standard in my case is 211 and then you've got premium.
+[03:53] All right.
+[03:54] And also you have to understand the amount of outbound traffic.
+[03:58] This is if you're doing the five gig deal.
+[04:00] So the outbound traffic's gonna cost you a little bit more money as you go up.
+[04:04] Okay?
+[04:05] And so that's a month.
+[04:06] All right?
+[04:07] So that's total cost a month.
+[04:09] Looks like I've got this thing added twice here.
+[04:14] Let's get rid of that.
+[04:16] Okay.
+[04:17] And go back in here now.
+[04:20] There we go.
+[04:22] It's a lot better actually. It was showing the double amount, but there you go. So there's your cost basic
+[04:29] and then you got standard and then
+[04:32] You got premium
+[04:34] All right, so you'll see it gets definitely more expensive. So what's really the difference?
+[04:38] Well, if we come over and we do a Google search on just Azure Bastion and then open up this article
+[04:44] You're about Azure Bastion
+[04:45] You can see key benefits and the SKU the stock keeping units
+[04:50] You have basic standard premium and you can see the features you get
+[04:53] So with basic you get all these features connect to target VMs same virtual network period virtual networks Linux
+[05:00] SSH RDP, okay, and then
+[05:02] As you get into basic, it kind of cuts off after that.
+[05:05] Then you get to standard, you get all these features.
+[05:07] Connect to Linux VM using RDP, Windows VM using SSH,
+[05:12] so on and so forth, on and on and on.
+[05:14] Then you get down to standard.
+[05:15] You don't get these last two, session recording
+[05:17] and private only deployment.
+[05:18] That's a premium feature.
+[05:20] Okay, so what exactly is going on here?
+[05:24] So let's take a look at this little picture here.
+[05:25] I like this little drawing.
+[05:27] So you have a user.
+[05:29] Who is essentially able to connect over port 443 that's HTTPS which uses TLS encryption?
+[05:36] So this is what we pretty much used for
+[05:38] all the security out there for websites is really the the best really out there you get when you
+[05:43] just go and connecting to a standard site. You're connecting through their bastion which is acting
+[05:49] as a middleman. It's dealing with the encryption and all of that. You've got protection on it.
+[05:55] It's encrypting all of your traffic and it's converting the traffic to RDP for Windows or SSH
+[06:07] secure. So it's translating from 443 to 3389 if it's RDP or 22 of its SSH. And
+[06:13] it's encrypting all of that and you're not exposing port 443. So that is gonna
+[06:19] be your benefit. Okay and it is gonna cost you to implement that but that's
+[06:25] gonna be your benefit. So let's go back over here to the server and I'm gonna
+[06:28] go ahead and click deploy. Alright
+[06:30] So it's going to go through the process of deploying this bastion.
+[06:34] And I will tell you this can take a while.
+[06:36] I'm going to pause the recording and let this run through.
+[06:39] All right, so that took about 10, 15 minutes, something like that.
+[06:43] And it took me to this screen here.
+[06:45] Now before I connect into the bastion,
+[06:47] I'm going to close out of my existing RDP session here.
+[06:50] So we're just going to close that.
+[06:53] And we're ready to connect.
+[06:54] So all I have to do to connect to the bastion is...
+[06:58] Come over here to the portal and as you can see under connect, I have Bastion click on that and then I can put in my username and password.
+[07:06] So ELP admin and I'm going to put my password in and we'll click connect.
+[07:14] All right now again, the key here I want you to notice is that we're connecting across HTTPS colon slash slash.
+[07:22] We are not using RDP to make this connection.
+[07:25] All right.
+[07:26] So here we are within the web browser itself. We are successfully connecting into our virtual
+[07:33] machine with the bastion. All right, so we're no longer having to use that remote desktop
+[07:40] protocol. Okay, so that's going to be your benefits of create of utilizing a bastion.
+[07:44] That's how you create a bastion. I come back over here to my VM destination resource group.
+[07:53] I have my bastion right here and I am going to delete that because it is going to use
+[07:59] up some of my Azure credit and I don't want it to use my Azure credit.
+[08:02] So I'm going to go ahead and click on that and I'm going to click delete.
+[08:05] So now that you've seen it work and connected in, we're no longer going to keep that resource.
+[08:09] We're going to get rid of it just to kind of save on Azure credit.
+[08:12] All right.
+[08:17] I'm gonna just keep my virtual machine shut down as well.
+[08:21] So if you're still playing around
+[08:23] and you're doing this with me,
+[08:24] you can leave your virtual machine up and running,
+[08:26] but if not, you can just keep your virtual machine shut down.
+[08:29] All right, with that said, we're now ready to move on.

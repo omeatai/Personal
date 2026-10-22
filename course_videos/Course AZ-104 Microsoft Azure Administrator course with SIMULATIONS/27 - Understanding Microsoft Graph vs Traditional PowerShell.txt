@@ -1,0 +1,140 @@
+# 27 - Understanding Microsoft Graph vs Traditional PowerShell
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/27 - Understanding Microsoft Graph vs Traditional PowerShell.mp4
+Fetched On: 2026-10-21 20:09:56
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now before you can really jump in and start playing around with PowerShell
+[00:03] involving Microsoft Graph, I kind of feel like it's important to understand
+[00:07] what is Microsoft Graph and what is this whole shift to a modern API platform all
+[00:13] about. Well Microsoft Graph is meant to be a unified API endpoint for all the
+[00:21] various Microsoft 365 and Azure services.
+[00:24] So what exactly does that mean?
+[00:25] Well, first off, an API is an application programming interface.
+[00:29] And the idea of being unified endpoint is having one central repository that
+[00:34] allows us to interact with all of these various services, right?
+[00:40] Uh, instead of having to create different tools that have different entry
+[00:44] ways into interacting with these services, we have a central way to do that.
+[00:51] developer out there, if you are a developer out there and you're developing different tools,
+[00:56] whether they're graphical tools, whether they're command line tools, whether they're tools that
+[01:01] are going to use AI, it makes sense to have a central way to do all of that, to interact with
+[01:09] these services. And this is something they didn't have in the past until Microsoft created the idea
+[01:21] for again, building, allowing developers to build tools.
+[01:25] This will include Microsoft developers.
+[01:26] This will include third party developers.
+[01:28] Okay.
+[01:29] But they can build tools that can interact with graph,
+[01:32] which in turn can interact with pretty much everything.
+[01:35] Microsoft entry ID, Teams, Outlook, OneDrive, Intune,
+[01:39] and all the various services out there.
+[01:42] So it's a single endpoint.
+[01:44] It uses all of the latest and greatest
+[01:47] types of internet standards.
+[01:49] And this will include
+[01:51] OAuth 2.0 and all of that. This is going to support automation, reporting. It can be
+[01:57] integrated with the various applications. This will include third-party applications.
+[02:01] So there's just a lot of reasons for having something like this out there for developers to
+[02:08] use and to make life easier for interacting with everything. All right, so what is the limitations
+[02:14] of traditional PowerShell?
+[02:17] Well, a lot of you may already know PowerShell has been around since about the year 2006
+[02:22] When they first really developed before that we used command line
+[02:26] options based on the DOS standards, right and of course when
+[02:32] 2007 came out Microsoft really started pushing
+[02:35] PowerShell with Exchange 2007.
+[02:38] And that sort of, it sort of took off from there
+[02:40] as one of our main ways of interacting with servers
+[02:43] and all of that.
+[02:44] The limitations though of your traditional PowerShell
+[02:46] is that it's very service specific.
+[02:49] You would have separate modules for Exchange,
+[02:52] for Azure AD, which of course is now called Intra ID,
+[02:57] and SharePoint and all of that.
+[02:59] Of course, you know, for years,
+[03:02] The PowerShell also has required its own remote methods for remoting into and managing these
+[03:11] services like Microsoft Exchange. It's also not very...
+[03:16] adapted to cross-platform support. It was geared mostly just towards Windows. Okay,
+[03:21] it used all the Windows standards for remoting into stuff, right? And then of course it used
+[03:28] legacy authentication. So basic authentication, of course that's you know deprecated. They're
+[03:34] deprecating things these days. Also it was complex to automate these services, all right, with
+[03:44] any type of automation across the various services, it could be very difficult because
+[03:49] you require different standards to interact with different services. So this is really where
+[03:57] the traditional PowerShell model of interacting with things falls apart and now we need something
+[04:09] Did Microsoft move to graph? Well, I think that question has pretty much been answered,
+[04:14] but let's go over the key points here. Number one, we need unification. We need a unified access
+[04:21] model that's going to reduce the complexity of everything. And that's kind of where I've been
+[04:26] going so far in this video, right? We need something to unify everything. We need something
+[04:32] that can work across the various operating systems, including Windows, macOS, and Linux.
+[04:38] All right, we need something too that's secure but also future proof.
+[04:43] Okay, so that was one of our big problems. The whole future proofing has been a problem with
+[04:48] PowerShell since going all the way back to the year 2006 when it came out. What would happen is
+[04:55] standards would change and then they have to recreate new commands. Okay, and it just became
+[05:07] they created a module to interact with Azure AD back when IntraID was called Azure AD.
+[05:12] They had a module of commands that were called the Azure AD commands. Well then when they got
+[05:18] dated they changed to a new set of commands called AZ and then they also came out with a
+[05:23] different set of module based commands in PowerShell called the MSOL, the Microsoft
+[05:30] Online commands, and then they deprecated that. All of these have gotten deprecated
+[05:35] I think some of the AZ commands are still available, but the Azure AD commands are deprecated.
+[05:40] The MSOL are deprecated, and that's been an ongoing, never-ending process.
+[05:45] So it's important for there to be some type of...
+[05:47] future proofing involved here. So with Microsoft Graph we're going to support token based auth
+[05:53] and conditional access. These are the main standards that we use for interacting with
+[05:58] Azure to begin with, Azure Microsoft 365. So the other thing is Graph is going to support
+[06:04] your latest and greatest developer tools. It's going to support automation. It's going to enable
+[06:11] Alright, it's it's geared towards performant data access being able to perform actions and manage and and
+[06:18] Have a nice scalable system to grow over time
+[06:22] Versus what we had with traditional power shell. All right, so Microsoft graph power shell advantages
+[06:29] You get a single module called Microsoft graph for the mini services
+[06:36] So this one interface is one set of modules
+[06:41] One module I should say that's that's full of the various commands and tools that are used to interact with the many services that are out there
+[06:49] There's no need for remote sessions when you use Microsoft graph. You'll be able to interact directly
+[06:56] using
+[06:57] HTTPS URL URL based standards, so you're not having to use
+[07:03] any of the older remote standards that didn't have the security that they needed.
+[07:08] You're using the latest and greatest web-based standards to interact with these services.
+[07:13] So no need for remote sessions. It's more efficient and it's scalable for doing bulk operations,
+[07:19] which is one of the main huge advantages of using PowerShell to begin with,
+[07:24] is to perform bulk operations. Okay, many times people wonder why we even want to run commands to
+[07:33] a lot of things faster with PowerShell. As I always like to say, you know, you might
+[07:39] do something that takes 50 clicks of your mouse to do something. Well, I might be able
+[07:43] to do it with one little line of text, but imagine if you had to perform the 50 clicks
+[07:48] against 50 things out there on the internet or 50 machines or whatever it is. I can run
+[07:53] a script that just to say run this against all 50 of these, the objects or 50 machines
+[08:02] to make life easier on bulk operations. But now we can really do that without having to worry about
+[08:07] various commands across the different types of modules that we had that keep getting deprecated.
+[08:15] It's ideal for cross-service workflows for your job, workflow, having a process for managing all
+[08:22] these things. Another thing is continuously updates. Continuous updates. So it's continuously
+[08:31] Microsoft 365 services get updated so does graph this makes it where again
+[08:35] you're not constantly having to download new packages and commands get
+[08:39] deprecated and all of that all right I'm not saying they might not
+[08:43] still phase out certain commands, but the great thing about it is is the actual graph API itself is being
+[08:51] Upgraded and that's what you're interacting with as opposed to the various commands that have logic in them that aren't being updated
+[08:57] And they're having to be removed and re-re-you know phased out and then replaced all right
+[09:03] So that's gonna be you know the the advantages of that all right sort of wrapping things up now
+[09:10] You know which should you so?
+[09:12] We still have, we have Microsoft Graph, but there is still the traditional PowerShell tool that are,
+[09:17] some of the commands are still out there. So when should you do one or the other? Well,
+[09:22] the key here is pretty simple. Use Microsoft Graph for all modern operation and future
+[09:28] compatibility. Use traditional tools only if there's not a Graph-based replacement. So
+[09:35] you can still use some of those older tools, but I would only do it if
+[09:38] for some reason you can't do it through graph.
+[09:41] All right, they're pretty much though trying to replace
+[09:43] all the old commands and all that with graph.
+[09:46] So if you're interacting with cloud services,
+[09:48] you wanna be using graph.
+[09:49] Organizations should transition to graph-based tools
+[09:54] for long-term support,
+[09:55] because that's where Microsoft is going forward.
+[09:58] They're going forward with graph, full steam ahead.
+[10:00] on graph. Microsoft is deprecating many of the traditional
+[10:04] commandlets in favor of graphs. So that's the key. Remember,
+[10:09] to put it simply, Microsoft Graph is going to be recommended for modern
+[10:14] automation and future compatibility while traditional PowerShell is going to
+[10:18] be used only when graph is not available. That's going to be the thing
+[10:21] you want to remember.
+[10:24] Well hopefully this has given you an idea of what Graph is, why it's important.
+[10:28] PowerShell is going to be used to interact with Graph.
+[10:32] So it's not that you're going to stop using PowerShell, it's just PowerShell is going to use a Graph module to interact with Graph out on the internet.
+[10:40] Which is going to essentially let you touch all of your Azure and Microsoft 365 services.

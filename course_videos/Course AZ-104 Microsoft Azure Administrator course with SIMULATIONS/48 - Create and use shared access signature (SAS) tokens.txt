@@ -1,0 +1,273 @@
+# 48 - Create and use shared access signature (SAS) tokens
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/48 - Create and use shared access signature (SAS) tokens.mp4
+Fetched On: 2026-10-21 20:39:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to spend some time helping you understand the concept of
+[00:03] SaaS tokens in regards to our storage account.
+[00:06] Now SaaS stands for Shared Access Signature.
+[00:10] And the idea here is imagine you're in a situation where you're going to be
+[00:13] hosting a bunch of web content maybe...
+[00:16] images, video, whatever it may be, and you need people from the internet or services from the
+[00:22] internet to be able to utilize these images, videos, whatever it may be. Okay, that is the
+[00:29] idea of needing to need to dish out lots of content, but also perhaps you need whoever is
+[00:35] accessing this information needs to be authorized. So a SaaS token is something that can be
+[00:44] given to someone or something, a service, and it would give them access to the resource
+[00:50] that you're dishing out.
+[00:51] Okay, and of course that can expire after a set amount of time.
+[00:56] You can also have web developers, if you're working with web developers,
+[01:00] they can automate this process where these tokens can be generated on the fly
+[01:04] and they have a set amount of time. They're valid before they expire.
+[01:07] And this is also of course one of those things you really just need to see and
+[01:10] play around with and once you do that it'll make a lot more sense to you.
+[01:13] So here I am on portal.azure.com
+[01:16] and we'll click the menu button
+[01:18] and we'll just go into storage accounts.
+[01:19] I'm gonna open up my storage account that I've got here.
+[01:22] Now the first thing I wanna make clear
+[01:24] is that currently we are not allowing anyone
+[01:29] from the internet who has not logged on to Azure
+[01:32] to access anything in this storage account.
+[01:34] So I'm gonna change that.
+[01:36] I'm gonna go down here underneath settings
+[01:38] and then I'm gonna go to configuration.
+[01:40] and I'm going to allow Blob Anonymous Access right here. So I'm going to turn that on.
+[01:46] Go ahead and turn that on and I'm going to click save. Okay, now that I've done that,
+[01:51] now that that is turned on, we're going to go under data storage and then containers. This
+[01:57] is short for Blob Containers and this would allow you to create what is known as a Blob Container.
+[02:05] Okay, a blob container is going to store blob related data.
+[02:08] Okay, this would be data I want to dish out like in a web server type of environment,
+[02:14] as opposed to a file share environment, which is geared more towards like a file server
+[02:18] or databases with queues and tables and all that.
+[02:21] But I'm going to click add container.
+[02:22] All right, now let's say that I would like to issue out images.
+[02:27] So I'm just going to create a container called images.
+[02:29] All right, and then it says anonymous access.
+[02:34] No anonymous access or I could say blob anonymous read access for blobs only
+[02:39] Which means whatever the specific item is you could give access to that
+[02:44] But maybe you don't give access to the whole container
+[02:47] Or if you want to give access to the whole container and not just as an individual item inside of it
+[02:53] You would choose this option here
+[02:55] Okay, so I can choose whichever of those. I'm going to go ahead and go with container for right now,
+[02:59] but we're going to alter this. Okay, then I've got advanced and then it asks me if I would like to
+[03:05] utilize encryption. Now you have to enable some encryption capabilities before this will be turned on.
+[03:12] And that can be done by expanding over here where it says security plus networking.
+[03:18] And then I'm going to right click encryption.
+[03:20] I'm going to say open a new tab so I don't lose what I'm working on here.
+[03:23] And then once I get into this new tab, I can click on encryption scopes and I can
+[03:30] add support.
+[03:32] I can enable this to support the scope if I wanted to use it to support either
+[03:38] a Microsoft managed key or customer managed key.
+[03:40] for doing this extra encryption here.
+[03:42] But I don't actually need it for what I'm doing here,
+[03:45] so I'm not actually gonna turn that on,
+[03:46] but if I did wanna turn it on, I could.
+[03:48] I could use this encryption code for all blobs
+[03:50] in the container, enable version level immutability.
+[03:53] And they tell you here the idea is to specify,
+[03:57] if you wanna enable this,
+[03:59] this'll enable version level immutability,
+[04:02] and it can be applied to specific blobs,
+[04:05] specific objects inside there,
+[04:07] specific files or whatever objects you've got.
+[04:09] So this idea would be for blobs of version level immutability.
+[04:15] If you set that, blob overrides will be allowed,
+[04:20] but Azure will maintain immutable versions of each blob if you want.
+[04:24] So once it's enabled, the setting also can't be removed.
+[04:27] And so that's the idea there.
+[04:30] But you could turn that on if you wanted to if you enabled this extra encryption scope.
+[04:35] But I'm not going to turn that on right now.
+[04:38] I'm going to click to create and I've now created my container.
+[04:43] So now I'm going to open my container and I'm going to upload a file to it.
+[04:48] So we're going to go here to upload and I'm going to upload an image from my desktop right
+[04:52] now.
+[04:53] Okay.
+[04:54] I've got my image selected.
+[04:55] It tells me I can override if the file already exists.
+[04:58] I've also got some features right here that I could utilize.
+[05:06] block, blob, page, blob, or append, blob. A block blob would be best for most types of
+[05:13] files, documents, images, and backups.
+[05:16] PageBlob is more optimized for frequent read and write capabilities. It's great for if you're doing
+[05:24] virtual hard drives for files like Azure Managed Disk maybe for a virtual machine.
+[05:30] And then you got a pin blob which is for logs or streaming type data. Okay so block blob is going
+[05:37] to be the most common though that people generally go with. You can also set your block size
+[05:45] as well here. And you kind of want to gear that towards the most common sizes of chunks of data
+[05:54] that you're going to go with. So you'll see it's broken up into the four MIB. This is going to be
+[06:00] your default probably efficient for medium size files. Larger sizes can improve upload speed.
+[06:08] for bigger files. So if you're looking at like the average file sizes that's kind of what you
+[06:14] want to be thinking about. Then you have your access tier. The access tier will be broken into
+[06:20] you'll see right here the hot, cool, cold, or archive. And so it kind of gets into you know
+[06:27] hot would be frequent frequently accessed data. So then you'll notice also it says hot or hot
+[06:35] Infer just means Azure applied the hot tier based on the container's accounts default.
+[06:41] If you choose hot that means you're explicitly choosing and saying hey this is this is hot data, right?
+[06:47] So that's the the difference there idea there when you're looking at that.
+[06:51] Okay, so then below that we have cool.
+[06:55] Alright, and cool is infrequent access, lower storage cost, higher read cost.
+[07:03] You've got cold, which is going to be even cooler than cool.
+[07:08] And generally speaking, the way you want to think about it is like cool is for infrequently
+[07:12] access data with the lower storage cost than with hot, but it'll also be higher access
+[07:18] cost.
+[07:23] It's great for things like weekly backups, older logs, things like that.
+[07:28] Now cold is for even more rarely accessed data.
+[07:34] So even lower storage costs than cool, but higher access costs.
+[07:39] Minimum retention is usually going to be 90 days.
+[07:41] Okay, it's great for disaster recovery backups, legacy data sets, things like that.
+[07:47] And then lastly you have archive which is at the bottom. This is the offline tier,
+[07:52] very low storage costs but requires what they call rehydration which can take hours to bring
+[07:59] data back over. It's usually good for minimum retention of 180 days and longer. So long-term
+[08:07] type stuff, legal records, things like that. Alright, so that is the idea when it comes to
+[08:15] you know these different access tiers that you can go with in regards to all of this. Okay.
+[08:23] Alright, so then we have...
+[08:26] upload to folder. That's our next item on the list here. This will let you specify a virtual
+[08:31] folder path inside the container. So like Azure Blob Storage is flat but it can mimic folder
+[08:38] systems. So I could actually have items inside their folders inside there. I could specify that
+[08:43] if I wanted to in regards to this. And then I could also specify some tags right here.
+[08:48] And then below that I have the encryption scope.
+[08:51] I can use the default container, whatever I chose there. In my case, I didn't choose anything. Or I
+[08:55] could choose a specific scope if I did enable the scope options that we saw earlier. The last thing
+[09:02] we have is a retention policy. If we are using retention policy, so in this case, it's all grayed
+[09:10] out. All right, so there's no retention.
+[09:13] In this case because we haven't set up a retention policy, which is not really something
+[09:18] We're doing in this video, but we could set up a retention policy for how long to retain this this data
+[09:23] Okay, so from there those were your advanced options. I'm gonna go ahead and click upload now
+[09:28] All right, and our object has been uploaded. I'm gonna click on it
+[09:32] It's a little picture of a domain in cloud services, and then I'm gonna copy that
+[09:38] And I'm gonna open up my web browser in
+[09:41] the in private window which means I'm not going to be authenticated to Azure in this window. Okay,
+[09:47] so I'm going to paste that in and as you can see I can see this image with no problem. Okay,
+[09:54] I can see it with no problem because I'm allowing anonymous access to this.
+[10:00] this image right. So again anybody could currently get to this image if they've got this
+[10:06] URL that's listed here. Okay so now what we're going to do though is we're going to go right
+[10:11] here we're going to change the access tier and we're going to make this private no anonymous access.
+[10:21] We're going to click okay.
+[10:23] All right, we've now set it to private no anonymous access.
+[10:27] And if I pull this back up and I'm going to refresh my web browser, you're going to see
+[10:30] that I get an error now.
+[10:32] So this is no longer available anonymously.
+[10:37] So the point of this was to get into the concept of a SAS token.
+[10:41] So we're going to do just that.
+[10:46] of SAS tokens in regards to our storage accounts.
+[10:50] So to do that, we'll click back on the storage accounts here.
+[10:55] I'm going to open up my storage account.
+[10:57] And then from there, we're going to look
+[11:00] under Security and Networking, and we're
+[11:02] going to click on Shared Access Signature.
+[11:06] All right.
+[11:07] OK.
+[11:08] So the thing to understand is that a SAS token,
+[11:12] they tell you this is a URI.
+[11:15] that grants restricted access rights to Azure Storage resources.
+[11:20] When it says restricted,
+[11:22] you get to set the permissions that are going to be available.
+[11:26] It's going to generate a signature.
+[11:29] Along with this URL, if you don't know much about digital signatures, digital signatures use keys
+[11:37] that generate an encryption code. In fact, if I click on access keys here, you can see I have a
+[11:41] couple of encryption keys here that are created. I can actually change those out and regenerate
+[11:47] new keys, but these keys will be used for making this signature. Okay.
+[11:53] And then I can set the permissions and all that.
+[11:55] I can set what's allowed and what's not.
+[11:57] So currently, the SAS is gonna allow all four of these.
+[12:01] So I could use SAS, this shared access signature,
+[12:05] for all four of these if I want.
+[12:07] Okay.
+[12:07] and then I can also do allowed resource type. I can do a service like access to a service level
+[12:13] operation like just being able to list things like listing a container. You could specify that
+[12:19] I'm going to support this with containers. This is going to give access to the container.
+[12:24] or a share itself. I could do an object access to individual specific items if I choose that.
+[12:33] Okay, so I can specify what I want to allow. Maybe I want to allow all three of these, right?
+[12:39] Then I can set my permissions. So you have various permissions first you have read which is going to allow you to view files
+[12:46] Blobs cues tables is going to allow downloading a file viewing
+[12:51] Messages if you're doing the cue messages and all that you've got right which would modify allow the modification of existing data
+[12:58] You have delete which allows you to remove information
+[13:01] You've got list which allows you to enumerate the items in a container share. What does enumerate me?
+[13:06] That means you can list out the items
+[13:08] that are in that container. You have add, you can add messages to queues. If you're
+[13:14] dealing with queues you can you got create. This will allow you to create a
+[13:17] new blob or a file or some kind of entity inside of a container. You have
+[13:22] update. This will allow you to modify existing data so you know more specific
+[13:27] than than write is in certain contexts. So like maybe I want to upload a new
+[13:32] table or something like that I can do that. I have process which...
+[13:36] allows you to read and remove messages from a queue. Some of that's going to be, again,
+[13:41] a few of these are more oriented towards the queuing and databases and all of that.
+[13:45] You have immutable storage. This enables immutable operations on blobs like doing things
+[13:50] like legal hold type scenarios in the compliance world and things like that. And then finally,
+[13:56] you have permanent delete. This is going to, this is required to permanently delete soft
+[14:01] deleted blobs. So when stuff gets deleted, you want to be able to undelete it. If you wanted
+[14:06] it. Okay, so that is the idea there. Alright, then we've got blob version permissions. I can,
+[14:14] I have enabled deletion of versions. This is going to allow deleting post, I'm sorry, past
+[14:19] versions. I could do a, I could allow deleting of past versions of blobs in a, that are,
+[14:25] that have been versions. So if you've got versioning enabled and you want to be able to
+[14:29] delete past versions of something, that's what this is going to do. Then you've got a loud blob
+[14:34] index permissions. So I've got read write and filter. So the read write means you can access
+[14:42] access to blob index tags like metadata and all that is allowed. And then filter allows you to do
+[14:48] searching and filtering things based on tags. So if you created tags you could filter based on that.
+[14:54] Then you can set your your time period here for when you want this to be valid. How long you
+[15:04] the hours that currently this would be available.
+[15:09] And you can set that to whatever you want.
+[15:11] I'm set to Eastern Time.
+[15:12] I can even have a certain allowed IP addresses.
+[15:15] I can support HTTPS only, which is what I'm gonna do.
+[15:18] Or if you wanted to support HTTPS and just regular HTTP,
+[15:22] you could do that as well.
+[15:23] Below that, you got your preferred routing method.
+[15:26] You can choose basic.
+[15:27] that's going to allow Azure to choose the best routing path.
+[15:29] Or you could do Microsoft Network routing,
+[15:31] which is the majority of the time,
+[15:33] that's what BASIC is going to choose,
+[15:34] or Internet routing if you want to specifically
+[15:37] say just route it across the Internet backbone.
+[15:39] Then below here is going to tell you what key is
+[15:42] actually going to generate this token and sign the token.
+[15:46] So I'm going to go ahead and click
+[15:47] Generate SAS Connection String,
+[15:50] and right here is the SAS token.
+[15:53] So I'm gonna copy this by clicking this button and now we're gonna open up
+[16:00] This screen now again, I can't view the SAS token
+[16:03] I'm sorry
+[16:04] I can't view this image because it currently is set to private but I'm gonna paste the token on
+[16:10] the end of this if we come over
+[16:14] the actual thing to understand here is you'll see right here where it says this
+[16:20] the image I'm going to put a question mark right there and I'm going to hit enter.
+[16:25] Now that question mark marks the beginning of the token.
+[16:29] Now web developer that's working with you on this they would know to do all that you would work with them
+[16:34] And but the the question mark marks the beginning of the token and the rest of it is the token itself
+[16:40] So as you can see I was able to view that and I will be for the next few hours based on that token
+[16:46] Okay, now let's actually open up and look at what the token itself looks like
+[16:52] So I just opened up Notepad and I'm just gonna paste that in. So if you look through this you can see that
+[17:00] Let's just expand this out.
+[17:01] You can see the beginning of the URL right here,
+[17:04] all the way up to the question mark.
+[17:06] And then this is where the real token begins.
+[17:09] And so the token is going to specify
+[17:12] a bunch of information about this.
+[17:14] This is what we call a URI.
+[17:16] So you have a regular URL plus the rest of it, the URI,
+[17:20] which is gonna indicate the date period,
+[17:23] the time start period, the version,
+[17:29] all of that and even the permissions are listed here. And then at the end of it you have the
+[17:35] signature. So you might say well why can't a hacker let's say just simply go in here and change
+[17:43] the expiration date or time to a different expiration period. Because this mathematical
+[17:52] signature is
+[17:54] would no longer mathematically work out with this data. So this data right here,
+[18:02] when ran through their signature algorithm, generates this code. And if you were to alter
+[18:08] this in one binary bit, it would no longer generate this code. Okay.
+[18:13] And you might say, well, couldn't you just couldn't a hacker alter this and then go through and screw the signature with the signature?
+[18:20] The only way they could mess with the signature is if they actually knew the encryption keys that you have, right?
+[18:27] These access keys, they would actually have to know these access keys to do that.
+[18:32] So that's the reason they can't just go in and alter that.
+[18:35] OK.
+[18:36] All right.
+[18:37] Well, hopefully this video has given you a better understanding of the idea of a SaaS
+[18:41] token.
+[18:42] And again, if you're working with a developer, there's documentation out there, SDK, software
+[18:47] developer kits and all that for working with all this.
+[18:50] And a developer would be able to actually request and have these keys, these signatures
+[18:54] generated on the fly at any time if it was working with a web service.
+[18:59] Okay.
+[19:00] But hopefully you have a better understanding now of the idea of the storage account working
+[19:04] with SaaS tokens.

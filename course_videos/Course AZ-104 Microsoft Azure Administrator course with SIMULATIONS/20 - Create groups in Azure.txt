@@ -1,0 +1,165 @@
+# 20 - Create groups in Azure
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/20 - Create groups in Azure.mp4
+Fetched On: 2026-10-21 20:07:11
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to spend some time helping you understand the process for creating and managing groups
+[00:05] through Microsoft Azure.
+[00:07] Now before I do that, I want to remind you that it really doesn't matter
+[00:11] where you create a group, it's all going to end up in IntraID.
+[00:16] This all ties back to IntraID.
+[00:18] So whether it's created through Azure
+[00:19] or through the Microsoft 365 side of things
+[00:22] or through the Intra portal or PowerShell
+[00:24] or the Azure CLI, which is like the bash way of doing it,
+[00:28] it's all still happening in Microsoft IntraID.
+[00:32] Okay, but let's take a look at how this works inside the Azure portal.
+[00:37] So here I am on portal.azure.com.
+[00:40] If I click the menu button and go down to Microsoft Intra ID, okay,
+[00:44] I'm gonna then click on the groups blade.
+[00:47] And this is where I can start working with the groups, all right?
+[00:51] I'm gonna go right here, I could click to create a new group.
+[00:54] And I could see all of my groups by clicking on all groups, but
+[00:57] I'm gonna click to create a new group, all right?
+[01:02] So right out of the gate, it's going to ask me what type of group I want to create.
+[01:05] I want you to notice that you can only create two types of groups through the Azure portal.
+[01:10] Now, if you do this through the Microsoft 365 portal, you can create four types of groups.
+[01:15] But through the Azure portal, you can create the two types of groups.
+[01:19] And these are actually the two most common types of groups that anyone ever creates.
+[01:25] All right.
+[01:26] Security and Microsoft 365.
+[01:29] The other thing that's interesting about doing this to
+[01:31] the Azure portal is that you can also do
+[01:33] assign or dynamic groups through here.
+[01:37] We'll start with looking at how I could
+[01:40] create a Microsoft 365 group first.
+[01:43] I'll select that and then I'll give it a name.
+[01:45] This is going to be called the sales group.
+[01:47] Notice that it can get an e-mail address.
+[01:49] It is a Microsoft 365 type of group.
+[01:54] So it can get an email address and I can have a description for it
+[01:58] Also, it says Microsoft intra roles can be assigned
+[02:01] So this gets into giving out roles and permissions and all that which I'm not doing in this video
+[02:05] Then I've got membership type assigned so I could make it a manual type of group and assign group where you select and specify
+[02:13] your members if you want
+[02:16] Manually or you can do a dynamic group where it can be done dynamically
+[02:23] Okay, which is what I'm gonna go with.
+[02:25] Sensitivity label, you may not have that
+[02:28] in your environment.
+[02:28] I have implemented sensitivity labels
+[02:30] and that's outside the scope of what we're learning
+[02:32] right now in this video, okay?
+[02:34] But that gets into sensitivity and compliance
+[02:37] and all that stuff.
+[02:37] But don't worry about that.
+[02:38] If you don't see that in your own,
+[02:40] if you're doing this on your own right now,
+[02:41] don't worry about it if you don't see that.
+[02:43] Okay, but let's talk about what a dynamic user is.
+[02:47] Okay, so I can do a sign that's manual or dynamic user.
+[02:53] Let me specify group owner first. So I will do that and I'll just say JC. I'll be the group owner.
+[02:59] So John Christopher right here, select. But here is where you're going to set your dynamic rules.
+[03:04] So a dynamic query. So a dynamic query is going to be what decides who's a part of this group.
+[03:09] Okay. So if I go and I click add dynamic query and dynamic queries are going to be based on rules
+[03:17] that are based on what we call expressions.
+[03:19] This expression is going to contain some properties and then what is called an operator that decides whether or not you are part of this.
+[03:27] Okay, so let me show you an example. So if we go to property, look, these are all the properties that you can have with users.
+[03:33] Let's go with department and let's say equals and we'll put sales.
+[03:46] And you don't have to worry about case sensitivity and all that.
+[03:49] It's not case sensitive.
+[03:51] So go ahead and add.
+[03:54] That'll be our expression.
+[03:56] I'll click this white area here and then you should see the save button up here.
+[04:01] Also you'll see the rule syntax.
+[04:04] Rules came out used to have to learn the syntax and you can still do that you can still write your own syntax
+[04:10] But now with this little drop down it makes life a little easier, but also if I wanted to I could say add another
+[04:17] expression I could say or and then the property will be let's do
+[04:23] job title so even if they didn't have the word sales as
+[04:28] Their department will say if their job title
+[04:32] We'll say, let's say add all and any ends with equals greater than, end less than or
+[04:41] equal to, not not equal to, starts with, not starts with.
+[04:45] Okay, we'll say starts with the word sales.
+[04:49] Okay, so maybe you have like different titles sales manager and things like that.
+[04:55] Then that would also put the person in the group.
+[04:58] And then that would be it would require both of these right? But or means it only requires one of these.
+[05:04] Okay, so at that point we're going to click save
+[05:08] And we've got we've saved that now we're going to click to create the group
+[05:13] All right
+[05:14] Now if we come over here to all groups
+[05:17] And keep in mind you won't see the exact same groups as me. I'm going to search for the word sales
+[05:22] And there is the word sales notice. It says membership type is dynamic microsoft 365
+[05:30] expand where it says manage. Okay, you can click members and you'll be able to see,
+[05:37] let's go all members, members and you'd be able to see members that are part of
+[05:42] this. Now let me go ahead and warn you that when you first create one of these
+[05:45] it may be up to 15 minutes or so before you'll start seeing membership show up
+[05:52] in here.
+[05:53] All right, so don't be surprised if you look at this and you're not seeing any members right out of the gates
+[06:00] Okay, you can see
+[06:03] Dynamic rules by going right here to dynamic rules and if you wanted to change that you could all right now
+[06:08] Let's go ahead and let's create
+[06:12] Another group this time we're gonna do a security group. So I'm gonna go right over here and
+[06:18] We'll say
+[06:20] Let's go just click this groups, all groups breadcrumb.
+[06:23] We'll click to create a new group.
+[06:25] This time I'm gonna do a security group, okay?
+[06:28] And at that point, we can give the group a name, all right?
+[06:36] So perhaps we want to create a group
+[06:39] that will contain devices
+[06:44] and maybe those devices will be, we'll say Windows.
+[06:50] device. We'll say we have Windows. How about this? Let's say New York Windows
+[06:58] devices. So maybe we have a location that's in New York and we want all
+[07:04] Windows devices to automatically be part of that as long as they're in New York.
+[07:09] Okay, so what we'll do, we'll switch this to, notice we have dynamic device.
+[07:14] We didn't have that with Microsoft 365, we just had dynamic users.
+[07:18] That's because Microsoft 365 groups cannot contain devices.
+[07:21] It's very important to remember that.
+[07:23] Okay, so we'll go here, we'll set that to dynamic, we can set an owner, JC.
+[07:32] All right, remember that you can't manually put people
+[07:36] in a dynamic group or devices in a dynamic.
+[07:38] You cannot manually, if it's a dynamic.
+[07:40] Only assigned groups will allow you to manually, okay?
+[07:43] So owner can still do things like, you know,
+[07:44] rename and manage a group.
+[07:45] They can't add or remove things if it's dynamic.
+[07:48] So we'll go right here, add a dynamic query.
+[07:51] Now let's say that all of our devices in New York start with the letters NYC for New York City.
+[07:59] So if you have that standards, then what I can do is I go right here to choose a property
+[08:04] and then I go to display name and I'm going to choose an operator and it's going to be starts
+[08:09] with and we'll put NYC. All right. And
+[08:15] that would be how you could do that.
+[08:17] And you could also, if you had another situation
+[08:19] where maybe they don't all say NYC and maybe they,
+[08:22] we could say or, you know,
+[08:25] maybe they start with the words New York and all that.
+[08:28] We could add that, all right?
+[08:29] But let's do this.
+[08:30] We're also gonna say and, all right?
+[08:33] Cause we want it to be Windows.
+[08:34] Well, they have this option here, device OS type.
+[08:38] And we will say equals Windows.
+[08:43] So all Windows operating systems have this attribute
+[08:48] The last few versions at least going back to the Windows 10 and all of that
+[08:53] Have this device OS type property and they'll automatically identify themselves as a Windows device
+[09:00] in fact, believe it or not, you can actually do that with Android they'll identify themselves as Android and
+[09:07] iOS devices will identify themselves as iOS. So this is a great feature. Okay
+[09:12] But anyway, I want to create a group that's going to, you know, put devices in the group
+[09:16] automatically based on their display name starts with NYC as well as their windows.
+[09:22] So there you go. We're going to go ahead and click save. And we're going to click to create.
+[09:27] And we've now created our group. Okay. Well, let's go back over here to to,
+[09:36] let's look at the sales group, click on sales again and click members.
+[09:42] And you can see that I have some users that are automatically part of that group.
+[09:48] You may not see the same thing as me, but here are some groups, some users that have
+[09:52] the word sales in their attributes.
+[09:55] So if I click on Greg Johnson, for example, and I scroll down and go to edit properties.
+[10:00] In Greg Johnson's case, if I click all right here,
+[10:04] you can see all the information.
+[10:06] You can see the job title has the word sales in it,
+[10:09] as opposed to the department.
+[10:11] So that's why he's part of it.
+[10:12] Okay, well hopefully this video has given you
+[10:15] a better understanding of working with groups
+[10:17] involving Microsoft Azure.

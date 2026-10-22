@@ -1,0 +1,132 @@
+# 41 - Manage resource groups
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/41 - Manage resource groups.mp4
+Fetched On: 2026-10-21 20:01:13
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to talk about resource groups in Microsoft Azure.
+[00:04] So what is a resource group?
+[00:06] It's a logical container that's gonna be used
+[00:09] to group your Azure resources together.
+[00:12] So all the various Azure resources
+[00:15] have to be stored in a resource group, okay?
+[00:18] So we're talking about virtual machines,
+[00:20] storage accounts, databases, virtual networks, you name it.
+[00:26] They gotta be stored inside of a resource group.
+[00:29] Okay resource groups cannot be stored inside of other resource groups so you cannot nest
+[00:36] resource groups. The organizational structure of resource groups though you can have what's called
+[00:43] a management group.
+[00:44] and the management group can store subscriptions and then of course your subscriptions you'll have
+[00:50] resource groups that are linked to subscriptions. In fact if I do a quick google search on
+[00:54] azure resource groups you'll see Microsoft has their learn article here and I can click on that
+[01:00] and you'll see their little diagram here management groups and then subscriptions and then resource
+[01:06] groups go underneath that and the resource groups can be tied to a subscription okay.
+[01:12] And then of course your resources go inside of the resource groups.
+[01:15] And by the way, just because a resource group is tied to a different subscription doesn't
+[01:21] mean the resources can't communicate with each other.
+[01:24] So the resource groups over here that are tied to this subscription can communicate
+[01:29] with the resource groups over here.
+[01:30] So the resources in those resources groups, I should say, can communicate with one another
+[01:35] across the different resource groups, even if they are in different regions of the world.
+[01:41] So just keep that in mind. Now all resources in a resource group share the same life cycle.
+[01:48] What that means is if you delete a resource group, you deleted not just the resource group,
+[01:53] but all the resources that are in that resource group gets deleted as well. So it's kind of like
+[01:58] a folder on your hard drive. You store files on it and you delete the folder. Well, you just
+[02:02] deleted all the files with it as well. Okay. All right.
+[02:06] So keep that in mind, resource groups also don't have to reside in the same region.
+[02:10] You could have, you know, this resource group could be stored in the west United States
+[02:15] region data centers. This could be stored in the east US region data centers. This could be stored
+[02:22] over in Europe somewhere, okay. They don't have to be stored in the same place. The other interesting
+[02:27] thing is, is the resources themselves don't have to be stored in the same region as the resource
+[02:35] So this resource group here could be stored in West US while this actual resources could be stored somewhere else.
+[02:44] It's not always the most efficient way to do things, but you could do that if you needed to.
+[02:49] So it really doesn't matter where the actual resource group metadata is as far as which data center it's stored in and all of that.
+[02:58] All right.
+[02:59] So of course Azure being made up of data centers are all over the world and it's all broken out into different regions.
+[03:05] Okay, and the actual data for the objects are going to be stored in some region.
+[03:11] Okay, now the other thing about resource groups is the role based access control,
+[03:17] where you grant permissions to users or admins, all of that can also be controlled.
+[03:23] right there on the resource group or at the resource level itself.
+[03:27] I could grant a user access over the entire resource group to do stuff,
+[03:31] or if I wanted, I could grant access to the user to have access to
+[03:34] just one resource in that resource group or multiple in that resource group.
+[03:39] That's the idea. Let's jump back over to Azure, portal.azure.com.
+[03:45] If I click the menu button, I should see there's a resource group's blade and I can click on that and then I can click to create a resource group.
+[03:53] So it's not really going to cost you anything to create a resource group.
+[03:56] Of course, once you start creating resources in the resource group, that's where it'll start costing you money.
+[04:01] When you get here with the resource group,
+[04:05] you have to specify a subscription.
+[04:08] Okay, in my case that's gonna be this Azure subscription one.
+[04:11] Okay, and then you give the resource group a name.
+[04:14] Now as far as naming the resource group,
+[04:16] there's different strategies that people use.
+[04:18] One strategy would be based on like the environment
+[04:22] and maybe the application and location
+[04:25] where this is gonna be stored.
+[04:27] So for example, I might first tag the object
+[04:30] with just the letters RG that indicates
+[04:33] that it's a resource group.
+[04:35] Alright, so when you're searching for objects, you see objects in a large list.
+[04:38] You'll see the RG that just indicates it's a resource group and I might say
+[04:41] PROD that indicates that it's production.
+[04:44] And then I might say web app to indicate that this is a web application
+[04:49] based resource group. That maybe is what it's going to contain. And then I might
+[04:52] put a dash and say east us which just indicates that it is east us.
+[04:57] So that is one strategy. Another strategy that people will use
+[05:03] and then workload type and maybe the environment. So maybe I might call it,
+[05:09] if it's related to the finance department, I might say finance dash and then it might be a,
+[05:15] I might be storing databases in it and then maybe it's for development. So I might indicate the,
+[05:20] it's for the in the development environment. So that's another strategy. Another one would be if
+[05:26] you you're basing this off of projects or solution. So I might say
+[05:30] RG dash project X whatever the project name is and then if this is one of those
+[05:36] things where there are like shared resources inside there I might put the
+[05:40] word shared next to it. And then finally another option would be role based or
+[05:45] tier based solution. So maybe I would say something like this is a web related
+[05:51] it's gonna have web content related stuff in it. It's a tiered type of
+[05:58] Okay, and then that's kind of how I would leave it, right?
+[06:02] So you can do different strategies now. I'll be honest with you for the most part in in what I'm doing here
+[06:08] I'm just gonna use just
+[06:10] Normal. Hey, this is just a demo resource group. I may call it something like that demo RG or I might call it
+[06:19] VM RG for virtual machine. So in my examples, those are the kinds of names I'll use because I'm gonna you know
+[06:25] just use very basic names, but
+[06:28] that the strategies I was giving you there just some of the common things that people call them in the real world.
+[06:33] Okay, so again, if I wanted to give it a name call it what I want.
+[06:39] I'll call it demo RG. It's gonna be East US. That's the region.
+[06:44] That's where the metadata for this object will be stored. Remember you can store objects inside of it that are in different regions.
+[06:50] Okay, and then at that point we we can click review and create and then we'll click to create.
+[06:56] And then the resource group is probably the fastest resource in Azure that gets created.
+[07:01] Okay, so they get created very quickly. Even though they get created very quickly,
+[07:05] they don't always show up right here on the list very fast. So sometimes you have to give it a few
+[07:10] seconds. But there it is. There's the demo RG. I can now go in that resource group. And then at
+[07:16] that point, I could start adding resources or creating resources. How do you create resources?
+[07:24] then you can go through and look through this catalog of resources. For example, if
+[07:28] I wanted to add a Windows Server, I could add a Windows Virtual Server into that.
+[07:31] Now another option for adding resources is besides just clicking create here is
+[07:37] to go to like the menu button and then go to all services and find resources
+[07:41] through here. So for example, if I wanted to do a storage account, you'll see I
+[07:45] have storage account here. I could search for it. I could click storage
+[07:48] account and then I could click to create one. And so when I go to create
+[07:53] resource group option here and I can select which resource group go in. Of course I've only got one,
+[07:58] so that's kind of easy to figure out, right? All right, I'm gonna go back over here to resource groups and
+[08:05] click on my resource group and then from there I've got
+[08:10] the IAM blade and this is how I can grant permission.
+[08:14] So if I want people to be able to contribute and add things in this resource group, I can make them a contributor,
+[08:20] right? You can go here, add role assignment,
+[08:23] Go right here to privilege administrators and make somebody a contributor.
+[08:28] So that's how I can give permissions for this resource group.
+[08:31] Okay.
+[08:32] So that is how we can add a resource group. Now another consideration when it comes to this
+[08:38] is that I can, any resources I have added to a resource group, I can see what the cost
+[08:44] management is going to be about it. And that's one thing I really like. I can go right here and
+[08:49] look at cost analysis and it gives me a breakdown of the cost with the, that's going to be
+[08:54] associated with this resource group. So that's really nice. Instead of me having to...
+[08:58] you know look at it from the entire subscription level, I could look at it from just this resource
+[09:03] group level. Okay so now that's another benefit when it comes to working with your resource groups.
+[09:10] All right. All right well hopefully this has been instructive so you now understand the concept of
+[09:14] resource group. I am going to delete this resource group just by clicking resource group, delete
+[09:18] resource group here. It's going to make you copy the name and paste it down here.
+[09:22] and then I'm going to click delete. Remember when you delete a resource group it deletes
+[09:26] everything inside that resource group.

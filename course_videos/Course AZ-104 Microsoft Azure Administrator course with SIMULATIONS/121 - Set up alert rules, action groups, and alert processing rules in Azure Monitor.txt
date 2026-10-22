@@ -1,0 +1,182 @@
+# 121 - Set up alert rules, action groups, and alert processing rules in Azure Monitor
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/121 - Set up alert rules, action groups, and alert processing rules in Azure Monitor.mp4
+Fetched On: 2026-10-21 20:13:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] It's now time to take a look at alert rules and action groups and alert processing rules in regards to our Azure monitor.
+[00:09] So here we are on portal.azure.com. We're going to click the menu button and go down here to monitor blade.
+[00:16] And then from there we've got this blade called alerts.
+[00:23] what is known as an alert rule that's going to generate an alert when something gets triggered.
+[00:29] So let's see how we could do that. All right, we're going to click create. We have to create
+[00:34] an alert rule. You're also going to notice you can create what's called an action group,
+[00:38] which means you want to perform an action when that alert occurs. And you have alert processing
+[00:42] rule, which is going to involve being able to suppress alerts if there's too many alerts
+[00:50] Okay, and then we could specify what resource we want to do this on you're gonna notice shows various resource groups
+[00:55] It does not matter if you don't see the same resource groups on your end as I do
+[00:59] But I am gonna pick a resource group that has a virtual machine in it and for me that's gonna be VM destination
+[01:05] Okay, so I'm gonna choose VM destination. I'm gonna choose Win server one
+[01:10] Which is my virtual machine? Okay, and I'm gonna go ahead now and click
+[01:15] Next. So then what happens is you have what is called a signal. A signal is what is going to generate the alert.
+[01:22] In other words, when the Azure Monitor notices a certain signal that occurs, it can generate the alert.
+[01:29] So we can select various signals that are available or we can say see all signals.
+[01:34] What I want to do is I want to have an alert generated when a virtual machine gets shut down.
+[01:39] Obviously you can scroll through and look at some of these other various things you could do as well.
+[01:44] But I'm going to put the word shut in there.
+[01:47] And you're going to see that I have this option here called shut down virtual machine.
+[01:52] So I'm going to choose that signal.
+[01:54] I'm going to hit apply.
+[01:56] Okay, and then from there I've got query type, so how is it going to know if the alerts been
+[02:01] generated is going to do queries.
+[02:02] You've got aggregated logs, it's going to look at the actual log data and then get notified
+[02:07] based on that.
+[02:08] Or you got something newer here called single event, which is get notified.
+[02:12] if a specific message appears in the log. We're going to leave this set to aggregated log,
+[02:17] and then from there we can have measurement. So measure based on table, and this is all based on
+[02:24] the Cousteau query language it's going to be querying for, and you can adjust the measurement
+[02:29] that it's looking for and data it's going to pull in, and that's where all that comes from.
+[02:34] You also have an estimated monthly cost for this alert. Okay, so
+[02:39] If we don't want to, we don't really want to keep this alert around too long because
+[02:42] it would cost money if it's not something that's important.
+[02:45] But if it is something that's important, you would want to keep it obviously.
+[02:47] So we're going to go ahead and click next and go to actions.
+[02:51] And this is where creating an action group is going to come into play.
+[02:57] going to perform an action when this alert occurs. Okay, you do have some quick
+[03:03] actions that you can choose from here. You can also go and use action group.
+[03:08] That's what I want to do. So I'm going to use action group. I'm going to go to
+[03:10] create a new action group. Okay, and then ask me for resource group. You know, what
+[03:17] resource group do I want to use? Okay, so I could give that, specify a resource
+[03:23] group for that. I'll just
+[03:24] do VM destination because that's where my VM is. And then region you choose various regions here.
+[03:29] I'm just going to leave this set to global and then for action group I'm going to give it a name.
+[03:33] I'm going to call it VM alert action.
+[03:39] All right, and then for the display name,
+[03:41] I'm just gonna copy and paste that,
+[03:43] just use the same thing.
+[03:44] Oh, it does say the field has a limit of 12 characters
+[03:48] in this case, so I'll just say VM alert,
+[03:51] and that'll be fine.
+[03:52] So now we'll click next.
+[03:54] And then for notification type,
+[03:56] we could use email Azure Resource Manager role,
+[03:58] email SMS message, push voice, I'm gonna choose that one.
+[04:01] And so you can see all these various methods
+[04:04] you could use for being alerted.
+[04:05] I'm just gonna do an email.
+[04:07] jc at exam lab practice dot com. All right and then I'm going to click OK for that. All right
+[04:15] and then I got to give it a name. It's going to call it email notification. All right I'll just
+[04:21] you know what I'll just call it email JC. There we go and then I'll click next for actions. OK and so then
+[04:29] Not only can you be notified,
+[04:31] you can choose various action types here.
+[04:33] So if you want to add to this and do a specific action, you can.
+[04:37] I have Automation Runbook.
+[04:39] This is going to trigger an Azure Automation Runbook,
+[04:42] which is like a script or a workflow.
+[04:45] The idea here being maybe if a VM was shut down
+[04:48] and you needed it to be started back up for some reason at a certain time,
+[04:52] maybe it happens at a certain time of day,
+[04:54] it's got to be started back up, you could do that.
+[04:55] You could use a Runbook to do that.
+[04:58] Then you got Azure function. So this executes a what's called a serverless Azure function in response to the alert
+[05:06] Like for example, maybe you want to send a custom notification or write data to a database or something
+[05:13] You know, for example, maybe I want to alert triggers
+[05:17] Maybe you have an alert that's going to trigger an Azure function that writes the alert into a cosmos database or something
+[05:23] Then you've got event hub
+[05:25] So this sends alert data to the Azure Event Hub,
+[05:29] which can also be integrated with other systems.
+[05:32] So this is great for streaming alerts into
+[05:34] like a real-time processing pipeline of some kind.
+[05:38] So for example, maybe I want to have
+[05:40] an Azure alert that sends data to the Event Hub,
+[05:43] which then is consumed by something like Apache Spark
+[05:47] on Azure Databricks or something like that.
+[05:49] Maybe you're going to do that for further analysis.
+[05:52] Okay, the next thing we've got is ITSM. This is going to create a ticket in your
+[05:59] IT service management tool like ServiceNow for example. So if you wanted to open up a ticket,
+[06:05] that would be a way to do that. The next thing you've got is Logic App.
+[06:08] So this starts an Azure Logic App Workflow,
+[06:11] and this could be used for things like performing
+[06:14] multi-step processing, like maybe it has to go through
+[06:17] like an approval process, maybe it's gotta be escalated,
+[06:21] and then maybe you're having it integrated
+[06:22] with something like Microsoft Teams or Slack
+[06:25] or something like that, okay?
+[06:27] The next thing we have is Secure Webhook.
+[06:31] So this is gonna send an HTTP post with an alert data.
+[06:35] to maybe like a secured endpoint, some kind of web secured endpoint.
+[06:40] So good use case for this. This would be great for,
+[06:42] you know, to like notify external systems or APIs
+[06:46] with higher security requirements or something like that.
+[06:49] Maybe I want to post an alert data to like a secure third party incident response system or something along those lines.
+[06:57] And then the last thing would just be the webhook.
+[06:59] And this is kind of along the same lines, it's just going to send an HTTP post with alert details to a specific URL.
+[07:07] This is great for notifying systems or trigger a script hosted on some website somewhere, you know, something along those lines.
+[07:15] All right, so I'm not going to choose any of those.
+[07:17] I'm going to click review and create,
+[07:19] and we're going to click to create.
+[07:21] So this is going to create our action group.
+[07:24] And once that's been created, you
+[07:26] can see it brings me right back into creating the alert rule.
+[07:31] So now I'll go ahead and I'm going to click next for details.
+[07:35] And you can also have like what severity
+[07:38] is this alert level going to be.
+[07:39] You can set that.
+[07:40] You can give the rule a name.
+[07:42] All right, I'm just going to call this alert VM shutdown.
+[07:48] Make sure that's a valid name and it is.
+[07:50] Could give it a description, region, and then identity.
+[07:54] I'm just going to let use the default identity for that.
+[07:57] As far as being able to identify itself as a system.
+[08:00] You can also do like a system assigned identity
+[08:02] or you can specify user assigned identity there.
+[08:06] And you can even go with some advanced options,
+[08:08] customizing.
+[08:09] properties which would be additional information that would be sent like if this was going to be
+[08:14] in an email or something or text or whatever this would be additional information that would be in
+[08:18] the the payload of that alert. Okay so then
+[08:22] You've got enable upon creation, automatically resolve alerts.
+[08:27] You can mute the actions. So check this for a specific period of time to mute it.
+[08:32] Require workspace link storage count. So you could link that to a workspace,
+[08:36] a log analytics workspace if you want. Okay, now I'm going to click review and create.
+[08:42] And it says I've got something I've got to fix. So we'll come back over here and we'll find out
+[08:51] So a alert logic greater than we'll say, well, if you put zero, right?
+[08:58] That means, hey, every time it shuts down, essentially, right?
+[09:03] So we could set that, or if you wanted to set that to one or you want to set that to 10,
+[09:07] you could set it to whatever, okay? We'll set it to five.
+[09:11] So then we'll click Review and Create, and we're going to click to Create.
+[09:15] All right. So at that point, it would create that alert rule.
+[09:19] and I can see that it was created here.
+[09:22] And you're seeing this screen here is just showing
+[09:24] that there hasn't been any alerts that have been generated.
+[09:27] Okay, now I can also go and I've got alert processing rule.
+[09:32] So what is an alert processing rule exactly?
+[09:37] This is in Azure Monitor,
+[09:39] this is a rule that's gonna modify
+[09:41] how alerts are handled after they're generated.
+[09:45] So before any action groups are triggered,
+[09:48] This is what's going to take effect, right?
+[09:51] Think of it as like a filter or some kind of like modifier that operates on
+[09:56] Alerts once they're fired allowing you to control or maybe
+[10:00] suppress the flow of alerts under specific conditions.
+[10:05] So I can suppress alerts if I want,
+[10:07] which is gonna temporarily stop alert notifications
+[10:10] during like maybe a maintenance windows.
+[10:12] Like for example, let's say you wanted to suppress
+[10:15] all alerts.
+[10:16] from a VM, a virtual machine between like 2am and 4am during a scheduled maintenance or something.
+[10:23] Another thing you can do is route alerts. So I can redirect a specific alerts to a different
+[10:30] action group if I want or modify alerts. So add some kind of override property like tags
+[10:39] or like a severity level or something like that.
+[10:41] Okay, so that's kind of the idea. Okay, now if you're looking for like maybe a use case scenario,
+[10:47] imagine that you have got an alert that deals with backups and maybe your backups happen on the weekend.
+[10:58] But
+[10:59] sometimes in some cases the backups run into the night and you are getting notified because of the
+[11:07] alerts of the backup happening at like one or two o'clock in the morning on sunday right and maybe
+[11:12] you want to suppress how much alerts you get in that regards so that's kind of the idea of
+[11:24] and all that. So that's the idea of working with a alert processing rule.
+[11:30] Okay, so I encourage you to kind of play around with this. If you've got a VM and you want to
+[11:34] trigger a bunch of shutdowns and see if you can generate an alert, you can. It does take time
+[11:38] before anything shows up, but I encourage you to feel free to play around if you want to.

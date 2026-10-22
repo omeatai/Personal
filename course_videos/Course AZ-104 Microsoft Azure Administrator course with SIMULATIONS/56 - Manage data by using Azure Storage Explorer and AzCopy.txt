@@ -1,0 +1,168 @@
+# 56 - Manage data by using Azure Storage Explorer and AzCopy
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/56 - Manage data by using Azure Storage Explorer and AzCopy.mp4
+Fetched On: 2026-10-21 20:08:04
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about some of the different ways that we get data inside of our storage account.
+[00:04] Now obviously one of the most common ways would be just to go here to portal.azure.com,
+[00:09] click the menu button here, we'd go into storage accounts, we'll open up our storage account,
+[00:15] and then from there we can expand data storage and interact with these different blades here.
+[00:21] In my case I have a container.
+[00:23] a blob container called images and I can go right there and I can upload data in there.
+[00:29] So that's easy enough. I've already got this little image and that's fine. Another option
+[00:35] is I can go back over here to the storage account. I've got this thing called storage browser.
+[00:40] I can click on that and it's kind of a graphical way of just sort of browsing
+[00:44] the various items here without having to dig as deep.
+[00:48] by having to expand things or click things. So I just go expand and click the various levels.
+[00:55] So I could just go right here, blog containers, you can see it's all listed right there. It's
+[00:59] all expanded out for me. It's a little bit more user friendly to do it this way. But a lot of us
+[01:06] out there, we are used to working with file servers and all that.
+[01:12] We're used to having something like Windows Explorer as our app for managing files and folders on a hard drive.
+[01:18] So Microsoft, realizing that, has created a tool to assist us to make life a little bit easier when it comes to managing our storage accounts.
+[01:29] Another thing is not just like managing a single storage account, but what happens when you've got multiple storage accounts and you really need to be able to see them all in one place and control the folders, containers, all that stuff all in one place.
+[01:40] Well...
+[01:41] Wouldn't it be great to have a tool that could do that?
+[01:43] Well, that's exactly what Storage Explorer does for us.
+[01:48] So Storage Explorer is a tool you can download
+[01:51] and install on your computer,
+[01:53] and it will give you access to all of your storage accounts
+[01:56] and containers and all of that all in one place.
+[02:00] So if we go out to Google
+[02:02] and just search for download Azure Storage Explorer,
+[02:07] okay, we have this little link right here.
+[02:10] we can go to, and then there's a download button right here we can click
+[02:15] and then from there it says download now and then I can choose what version. I
+[02:19] have Windows on my computer 64-bit so I'm going to go with that. Obviously
+[02:23] we've got different versions you could go with though depending upon your
+[02:26] operating system. So we're going to go ahead and download
+[02:29] and install that. All right so I just just downloaded it
+[02:34] now I'm going to go ahead and open that.
+[02:42] accept the terms, I'm going to click install, next, next,
+[02:47] and it's now installing.
+[02:49] So I'm going to wait on that to get done installing.
+[02:51] Now that that's done, it says launch Microsoft Azure Storage Explorer.
+[02:55] So I'm going to click finish and it should go ahead and open that up,
+[02:58] launch it up on the screen.
+[03:01] Okay, so here it is right here and of course if I just try to start expanding things out
+[03:05] I don't have anything really to look at because I haven't logged on so I'm gonna click this little icon right here and click
+[03:11] Sign in with Azure
+[03:13] So I am gonna choose Azure as my environment. I'm gonna click next
+[03:18] This is now gonna bring you through like a little web portal where I've got to authenticate
+[03:22] Okay, it says that
+[03:25] You can return to Storage Explorer.
+[03:28] You might need to authenticate again
+[03:30] if you close the browser tab.
+[03:31] So it's just letting me know that.
+[03:33] All right, so I'm now officially authenticated.
+[03:35] So now I'm gonna go right over here
+[03:36] where it says open Explorer.
+[03:38] And then when I do that, I can expand out.
+[03:42] under Azure subscription one storage accounts
+[03:46] and you can see my two storage accounts.
+[03:48] And then from there, I'll expand this storage account
+[03:52] and I'll expand a blog containers
+[03:54] and you can see images there.
+[03:57] Okay.
+[03:58] And so clearly you can see this nice little app.
+[04:02] It makes it a little easier.
+[04:03] I can view everything in one place.
+[04:05] If I have multiple storage accounts, I can view those.
+[04:08] I can view my containers.
+[04:10] I can upload and download stuff pretty easily
+[04:13] from this upload a folder, upload files.
+[04:15] So this makes it a lot easier.
+[04:18] All right, so definitely something to check out.
+[04:20] This will definitely make life a little easier
+[04:22] from the, you know, an admin perspective that's.
+[04:25] for somebody that's having to deal with a lot of storage counts at the same time.
+[04:29] Okay, so that is the idea of using Azure Storage Explorer and the benefits of that.
+[04:36] So let's now move on and let's talk about another solution for uploading.
+[04:44] data into Microsoft Azure. Now this method is a method called AZ copy. AZ copy is an old command.
+[04:52] It's been around sort of since the beginning of Azure and it used to be one of the main ways that
+[04:56] you would upload data into Azure. And it's still there's some benefits to it. The main benefits
+[05:02] being that you can...
+[05:03] create scripts that can upload large amounts to Azure as well.
+[05:07] There's even scripts out there people have created that can be utilized or you
+[05:11] could write your own script and all of that fun stuff.
+[05:14] But let's take a look at AZ copy now.
+[05:16] So if I go out to Google and I just search the words download AZ copy,
+[05:22] all right, you'll come across a little article here copied or
+[05:26] moved data to Azure storage.
+[05:29] So I'm going to click on that and then I'm going to scroll down.
+[05:33] and we will look for, so you have some examples of commands and all that, but I want to look
+[05:39] for this download. So here it is, Windows 64-bit in my case. So I'm going to go ahead and download
+[05:44] that little zip file. Okay, so I just opened up the little zip file and I copied it to a folder
+[05:50] called AZCopy on my C drive. Okay, so it's on my C drive in a folder called AZCopy. Now, I've
+[06:03] went into Microsoft Paint and I just created an image called AZCopyWorks.
+[06:08] Yay! And I saved that in that same folder on my C drive called AZCopy. So if if I
+[06:16] right-click my start button on my Windows operating system, I'm going to go
+[06:20] into terminal admin here. Now inside of PowerShell
+[06:26] I'm gonna type cd space backslash az copy and that's gonna bring me into that az copy folder
+[06:33] Inside of PowerShell and if I type dir you can see I have az copy command and then there's that little
+[06:39] Image file. I just saved which is the
+[06:42] This image here az copy works. Yay. Okay
+[06:46] So now what I want to do is I want to run az copy now if I just type az copy
+[06:51] Dot exe and I just hit enter. Oops, even if you
+[06:55] typo it. You'll see I get an error. Now PowerShell wants me to type a exact path of the file.
+[07:04] To do that I'm going to type .backslash azcopy.exe and hit enter. Now it runs the command but you
+[07:12] can see it's really just telling me that hey you're running this command but you've got to
+[07:16] specify additional parameters to go with it. In my case I want to copy something out to the
+[07:25] Okay, and if you read about the way this works in conjunction with their article and all
+[07:32] that, you'll learn that they are going to require a SAS token.
+[07:37] So I'm going to need a SAS token and they give you the example here, azcopy, copy,
+[07:43] the path of the file you want to copy and then the destination will involve a SAS token.
+[07:52] I'm going to click the menu button and go to storage accounts.
+[07:56] I'm going to open up my exam lab practice JC storage account,
+[08:00] and then I'm going to go down here under Data Storage Containers,
+[08:04] and I'm going to go into this images container,
+[08:07] and then right here, shared access token,
+[08:10] I'm going to select that.
+[08:12] Then we're going to set the permissions.
+[08:16] I'm going to need more than read permission,
+[08:17] I'm going to need write permission as well.
+[08:19] So we're going to go ahead and do that.
+[08:20] Then we're going to generate the token.
+[08:22] And then I'm gonna copy this whole token right here,
+[08:26] this whole blob sash URL.
+[08:29] So we're gonna copy that.
+[08:30] Now I'm gonna open back up my PowerShell.
+[08:36] And I'll go ahead and clear the screen,
+[08:37] so maybe it'll be a little easier to read.
+[08:39] I'm gonna type .backslash a z copy .exe,
+[08:45] and then the word copy.
+[08:47] And I'm gonna put the little quote mark there,
+[08:53] Oops, I don't want to right click yet. I actually need to...
+[08:56] That's the SAS token, so let's erase that. We don't want to put the SAS token in yet.
+[09:01] I'm actually going to specify the path to where the image file is.
+[09:05] In my case, that's going to be C colon slash AZ copy slash AZ copy dot jpg.
+[09:11] And then close that quote. Now I'm going to hit space. Now I'm going to put the destination.
+[09:16] So I'm going to do another quote there and I'm going to right click and paste.
+[09:18] So that's where I actually want to right click.
+[09:21] that's going to place the SAS token in place there.
+[09:24] So you can see the whole SAS token.
+[09:25] So we have our source here, and then we have our destination.
+[09:29] We're going to go ahead and hit Enter.
+[09:32] And let's see if it works.
+[09:34] All right, number of file transfers, one.
+[09:37] It says transfers completed, one.
+[09:40] So that's a good sign.
+[09:41] Let's go ahead and jump back over.
+[09:44] And we'll go into our containers right here.
+[09:47] We'll go into images.
+[09:48] And look at there, the azcopy.jpg file has officially been uploaded into our storage account.
+[09:57] So, what does that mean?
+[09:59] azc-
+[10:00] copyworks yay alright okay so that is how AZ copy works now
+[10:05] The thing about AZ copy is there is large amounts of documentation you can read about
+[10:11] the commands that are supported with it.
+[10:12] There's a lot of various commands that you can use uploading and downloading copying
+[10:17] between accounts.
+[10:18] So it's definitely something, depending on what your company is doing, if you wanted
+[10:22] to write a script that would assist you with these types of activities, this is a great
+[10:26] way to get it done.
+[10:27] But hopefully now that you've seen this, you have a better understanding of the idea
+[10:32] of Storage Explorer as well as AZ copy.

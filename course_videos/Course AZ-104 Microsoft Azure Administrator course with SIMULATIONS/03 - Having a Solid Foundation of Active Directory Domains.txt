@@ -1,0 +1,188 @@
+# 03 - Having a Solid Foundation of Active Directory Domains
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/03 - Having a Solid Foundation of Active Directory Domains.mp4
+Fetched On: 2026-10-21 20:16:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:04] Now, if you're going to be working in any type of Microsoft administration services
+[00:09] these days, there are some fundamental principles that are very important to understand.
+[00:14] So what I want to do is I want to get into some of the foundations of understanding things
+[00:19] like Microsoft domains, understanding some of the networking technologies, RAS and VPNs
+[00:26] and virtualization.
+[00:28] And also we're going to talk about the cloud services and how all that fits into this.
+[00:34] from the beginning so you can understand
+[00:35] where things have been,
+[00:37] understand where things are going,
+[00:39] and you have to consider the fact that, you know,
+[00:41] the world is transitioning now
+[00:42] more into a cloud-oriented environment,
+[00:45] but in the past, everything was managed on-prem
+[00:49] or on-premise, and we gotta talk about this transition
+[00:52] and how things were and how things are now
+[00:54] and where Microsoft is going.
+[00:56] So to start with, you know,
+[00:58] we go back in time to the 1950s, 1960s,
+[01:02] they had mainframes.
+[01:03] gigantic computers that would take up like entire rooms. They used vacuum tubes.
+[01:09] And then as we moved into the 1970s something miraculous happened. They
+[01:14] created what was known as an IC, an integrated circuit, which allowed
+[01:17] basically binary math to be processed through little chips. And this is where
+[01:22] personal computing became popular. So in the 1980s personal computers started
+[01:28] coming out. I'm gonna draw this little
+[01:30] symbol here to represent a computer and I tell you what I'm gonna
+[01:36] Create another little symbol here to kind of represent a bunch of computers in the 1980s
+[01:40] Company started buying PCs and personal computers
+[01:45] and they started showing up in people's offices and eventually you know they were networking them
+[01:49] together and all of that and so this is where things really get started. Now of course in
+[01:56] those days one of the problems was we lived in what was called a peer-to-peer network.
+[02:00] So what would happen is these computers were you could network these computers together
+[02:05] with various technologies but
+[02:07] There was no centralization, meaning each computer was equal.
+[02:12] There was no computer that controls all the other computers.
+[02:14] A network admin would have to, if they wanted to make changes, they'd have to sit down at each and every computer to make those changes or get users to help them, which was always a nightmare.
+[02:23] And so that didn't, you know, it worked, but it didn't work very efficiently, alright?
+[02:28] Now, as we moved into the 1990s, there was a company...
+[02:32] that was gaining ground called novel.
+[02:36] Novel and they had a product called Netware,
+[02:38] which was the idea of that was to use a server
+[02:42] that would help manage machines and also allow people to share files easier.
+[02:47] Whereas in a peer-to-peer network back originally,
+[02:50] these machines would have to share files with each other,
+[02:52] and people would have to know each other's passwords.
+[02:54] It just didn't work very well.
+[02:55] Well, eventually with the creation of the file server concept,
+[02:58] you had a more powerful machine that you could share files on and all that.
+[03:02] And eventually, Novell even came out with the idea of a server that could manage other
+[03:07] machines.
+[03:08] Now this is kind of where Microsoft comes in.
+[03:09] Microsoft created their product called Nt.
+[03:12] and they created this concept of a domain controller,
+[03:16] which is a special type of server
+[03:18] that can manage these other servers.
+[03:20] Now, fast forward, they came out
+[03:21] with what was known as a domain,
+[03:22] but fast forward to the year 2000,
+[03:25] Microsoft releases their newest domain technology
+[03:30] and they call it Active Directory.
+[03:34] And Active Directory domains were represented by a triangle.
+[03:38] All right, and a domain controller was a server essentially that had a database on it and
+[03:45] that database was the Active Directory database.
+[03:49] So let's just kind of fix that here.
+[03:52] This little cylinder looking thing I'm going to make here is going to represent my Active
+[03:57] Directory database.
+[03:58] So AD.
+[04:00] All right.
+[04:03] This is what we still call to this day, we call it ADDS, Active Directory
+[04:10] Domain Services and usually if you hear that term
+[04:14] Active Directory Domain Services, it means it's an on-premise domain. So anyway
+[04:20] you would always want to have more than one domain controller.
+[04:23] The reason you would have more than one domain controller is because same reason you have more than one of any type of server really.
+[04:29] One reason being
+[04:31] to break up the disbursement of load, these machines will authenticate with these domain controllers and the more machines you got
+[04:39] you know you don't want all of that just going to one domain controller right.
+[04:43] The other consideration is redundancy if you only have one and that server goes down well
+[04:48] you're in trouble right. So we want to have multiple. The other thing about domain controllers
+[04:52] that are interesting is that they replicate. So for example make a I'm going to make a little
+[04:57] smiley face guy here and this little smiley face guy is going to represent my user. So we create a
+[05:05] on a domain controller. Now the interesting thing about user accounts or the interesting thing
+[05:11] really about domain controllers is that they replicate. So everything you do on one will
+[05:17] replicate over to the other. So if I create a user account on that first one, well replication is going
+[05:22] to occur between.
+[05:24] both of them. And so this little arrow thing I'm going to make here is going to represent replication.
+[05:30] So domain controllers replicate. That means that this user could log on to any one of these
+[05:34] thousand machine and it's going to you know authenticate with the domain controller.
+[05:39] Alright, the authentication protocol that is used is the protocol known as Kerberos.
+[05:48] Alright, Kerberos is the authentication protocol.
+[05:53] What is a protocol? It's like a language basically, okay?
+[05:57] Now there was an older protocol that that that it also supported called NTLN that was for legacy for older
+[06:05] prior to the year 2000 machines now the
+[06:09] That protocol allowed us to have encrypted passwords and all that and authenticate securely and all that fun stuff
+[06:15] The other thing is is Active Directory uses a language
+[06:18] known as the directory service language and that language was called LDAP
+[06:24] lightweight directory access protocol. Now all that is again this is all
+[06:28] decades old at this point at the time when it came out it was cutting-edge but
+[06:32] it's it is a bit dated nowadays but it still works and it's still pretty secure
+[06:38] though there are some considerations on security that I'm not going to explain
+[06:42] right now. Now the other thing that's important about active directory is
+[06:47] all machines have to have a name and the name must be of course associated with an IP address
+[06:54] and and all of that and so there is a service that we use that we use it on the internet all
+[06:58] the time called DNS, Domain Name Service. Our domain must have a name.
+[07:05] Usually when you name your domain,
+[07:07] you would name it after your company,
+[07:09] and a lot of people even name their domains
+[07:10] based on their web presence.
+[07:12] So for example, my domain might be called examlabpractice.com.
+[07:18] That's my company, my web presence.
+[07:20] And I'm gonna need to have a server in my domain
+[07:26] that can associate the names and IP addresses together.
+[07:29] So that server is called a DNS server.
+[07:34] DNS, Domain Name System Server. And that server will also have to have a little database on it.
+[07:39] And that database will be our DNS database. Okay. So we'll just draw another little cylinder.
+[07:47] And what I'm going to do is I'm going to highlight this border it with red. And then I'm going to
+[07:53] color code the database red, which means that this database, the DNS database,
+[07:57] is associated with that name. Now what happens is our machines
+[08:02] clients to make sure we also might even have,
+[08:04] let's draw a file server over here.
+[08:07] Pretty common that we have file servers in our environment.
+[08:10] Okay.
+[08:12] All of these machines would register with our DNS.
+[08:19] All right.
+[08:20] And this allows for the centralization of name resolution,
+[08:25] meaning
+[08:26] they register their IP addresses into this database,
+[08:30] and then now, anytime a machine needs to find
+[08:33] another machine,
+[08:34] it can query DNS. So for example, these machines all have to authenticate by your domain controllers.
+[08:39] They can query DNS and say, hey, DNS, do you know what the address is of one of my domain controllers?
+[08:46] So I can authenticate and DNS can reply back and say, yeah, here is the information. At that point,
+[08:51] the client can go and authenticate. So it works very efficiently. Now all of this together,
+[08:57] This idea of domain controllers, this triangle you see here,
+[09:02] this provides centralization.
+[09:04] So we moved away from peer to peer networking
+[09:08] back in the day where every machine was kind of
+[09:11] its own boss and there was no centralized way
+[09:13] of managing things to now we are working
+[09:16] in a centralized environment.
+[09:18] These domain controllers help us centralize
+[09:20] as DNS service helps us centralize.
+[09:24] So we now have some central control over things.
+[09:26] One of the great things about our domain controls too is we have these wonderful things called
+[09:34] GPOs, group policy objects.
+[09:37] A group policy object is this object that you can create that has all these settings,
+[09:42] parameters, you know, any type of attribute you want to configure or change on machines,
+[09:48] you can do it through a GPO.
+[09:54] force the firewalls to be turned on all these machines. I want to make sure that
+[09:58] the antivirus is always
+[10:00] up to date. I want you to disable the wallpaper feature. I don't want people
+[10:05] putting crazy wallpapers on their machine.
+[10:09] So I mean you could disguise the limit there are literally thousands of things you can do inside of a GPO
+[10:15] But what happens is that GPO can instruct these machines to turn things on and turn things off GPOs also replicate
+[10:21] So when you create a GPO on a domain controller replicates over to the other domain controller
+[10:26] So it doesn't matter which machines, you know authenticate with which domain controller
+[10:29] All right
+[10:30] So these GPOs can be deployed out to these machines and this how you turn things on turn things off
+[10:35] You could even deploy software with that if you wanted to
+[10:38] So it was a very, very powerful system for managing everything.
+[10:46] Of course, let's throw the internet into the mix here.
+[10:50] Let's say that this little cloud is going to represent the internet.
+[10:55] Let's talk a little bit about how that fits into the picture.
+[10:59] Let me just clean it up here.
+[11:01] with the mighty stroke of my paintbrush,
+[11:03] I will clean up the internet, all right?
+[11:07] All right, so then we have the internet, right?
+[11:09] So maybe we've got an internet connection
+[11:12] that's coming in here, all right?
+[11:15] And of course you don't wanna just leave
+[11:17] your internal network exposed,
+[11:19] so your company would generally have a firewall, right?
+[11:25] And we would, we'll just put that firewall right here.
+[11:32] you know a secure way for traffic to flow out to the internet and
+[11:37] the only things that can come in would be things that we send out and we could allow things through that firewall if we want to.
+[11:43] Now this is a
+[11:46] traditional domain. This is the way we've done things for 20 years. Alright
+[11:53] and in this next little section I want to talk about
+[11:58] expansion on all of this and where where things have gone with things like razz and all that and vpn and virtualization so
+[12:07] That'll wrap this little section up and we'll move on to the next

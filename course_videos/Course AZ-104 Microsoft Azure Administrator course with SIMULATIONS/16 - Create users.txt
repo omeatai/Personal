@@ -1,0 +1,174 @@
+# 16 - Create users
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/16 - Create users.mp4
+Fetched On: 2026-10-21 20:03:40
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at the various ways we can create user identities using the various portals.
+[00:05] Now it really doesn't matter what portal you deal with in the cloud services of Microsoft,
+[00:10] they're all going to tie back to Microsoft Intra. Alright, Intra ID. So here I am on portal.azure.com.
+[00:16] I'm going to click the menu button and I'm going to go down here to Microsoft Intra ID. And then
+[00:21] from there I'm going to click users. And right out of the gates there you'll see I can click
+[00:28] So create a new user, I can also invite an external user or a guest.
+[00:32] So I'm going to click to create a new user.
+[00:34] Alright, and then from there it's going to ask me what the user principal name is.
+[00:40] And what's a user principal name?
+[00:41] Well that's going to be sort of like a username, email address type name.
+[00:44] Okay.
+[00:45] In my case, it's going to say exam lab practice calm your case
+[00:48] It may not if you're doing this with me. It may say something like on micro something dot on Microsoft calm
+[00:53] Which is fine, but I'm gonna go right here. I'm gonna create a user named Greg
+[00:57] Johnson and
+[00:59] The user principal name is Greg Johnson at exam lab practice calm
+[01:03] Which means if I associate email address and all that to it
+[01:06] with Exchange Online or whatever, that would be the email address. But I'm going to go down here now,
+[01:10] it says mail nickname that again, that will be the email address, nickname Greg Johnson,
+[01:14] derived from the user principal name, I'm allowed to change that if I want. And then I've got
+[01:18] display name, I'm going to say Greg Johnson for that. Okay. And then of course, I can give this
+[01:25] user a password, or it will auto generate one. Now if I choose to give it a password,
+[01:35] force the user to change that password when they first log on. Okay. And then of course saying
+[01:40] account enabled, that means account will be enabled when the user when the user is created.
+[01:46] Of course, I could have the user disabled and maybe I'm creating the account. So maybe Greg
+[01:50] Johnson is going to start work in the next two weeks and then I would enable it when he starts.
+[01:54] That'd be you know why you might use that. By the way,
+[01:58] Microsoft does like to change these portals about every week, so don't be surprised if your screen looks a little different than mine.
+[02:03] The main thing here is to understand the concept.
+[02:05] So I'm going to go ahead and click next, and then this is where I could fill out other profile information or properties information.
+[02:11] These are user attributes.
+[02:13] that identify this user and also can be used for associating things in Microsoft
+[02:18] Intra. So I could say, okay, first name Greg, last name Johnson, and then of course
+[02:23] user type. This is going to be a member as opposed to a guest or external user.
+[02:27] Guest or external user would be a limited...
+[02:30] type of user has limitations on it on restrictions and something that we can
+[02:35] put restrictions on it and limit what it can do a little bit more you've also got
+[02:39] authorization where you could add what are called digital certificates and all
+[02:43] of that with this we're not really looking into adding certificates in
+[02:46] this video but I'm gonna go down here job title we'll say that Greg Johnson
+[02:50] maybe he is the sales manager and the company say exam lab practice is the
+[02:56] company
+[02:58] Department is sales.
+[03:01] All right, keep in mind one of the great things
+[03:03] about identifying some of these attributes about the user
+[03:06] is that they can be associated with things like groups
+[03:09] and all of that when you want to say,
+[03:11] okay, I wanna create a group and I want everybody
+[03:14] to be a part of this group
+[03:15] that's part of the sales department, okay?
+[03:17] So that's really cool.
+[03:18] So pretty neat stuff that you can do
+[03:20] that you can look at later down the road.
+[03:22] Okay, office location,
+[03:24] maybe this user is located in New York.
+[03:26] That's office location. We can specify manager, address information. Okay, but that's enough.
+[03:31] We filled out enough information. We'll go ahead and click next. So this is where we could assign
+[03:36] the user to a group, all right, which we can group users together to grant them access or give them
+[03:43] access to various things. And then, you know, it could be associated with Teams and all of that
+[03:52] this gives permissions to things and then you have what's called an administrative unit
+[03:57] which is going to involve grouping things together to give admins over certain groups of users,
+[04:03] certain what are called administrative units of users. So in other words if I have an admin that
+[04:08] needs to control rights over a certain group of people we can do that. Not again, not in this
+[04:14] video we're not diving into the details on that nor groups or roles but you know this is all stuff
+[04:21] you can learn as we continue on here.
+[04:22] But anyway, I'm going to go ahead and click
+[04:24] Next to review create.
+[04:27] So we've now filled out everything here,
+[04:30] and then we're going to go ahead and click to create.
+[04:32] So I want you to notice that when we created
+[04:34] this user through the Azure portal,
+[04:36] we had certain options available to us.
+[04:40] Now we're going to jump over.
+[04:44] If we if we click on users, well, let's just verify that Greg is there and by the way when you do if you do this
+[04:49] With me you're not gonna see all the same users as me
+[04:51] But if you create a great great Johnson, you should should see Greg Johnson
+[04:55] But now what I want to do is I want to jump over to portal. I'm sorry to admin Microsoft calm
+[05:01] So let's go over there
+[05:02] So this is the Microsoft 365 side of things.
+[05:06] And you should know that by now,
+[05:08] that Microsoft 365 and Microsoft
+[05:11] Intro with Azure all linked together,
+[05:13] they all share the same directory service,
+[05:16] which is Microsoft Enter ID.
+[05:18] So when I get to admin.Microsoft.com,
+[05:20] if I drop down Users and I click Active Users,
+[05:23] we should be able to search for the word Greg here.
+[05:26] We should see Greg Johnson is located here.
+[05:28] Okay, so let's go ahead though. We're gonna create a user through this screen now through this portal add user
+[05:35] All right. So notice it's a little different a lot of the same information but a little different
+[05:39] So this time I'm going to create a user named John Smith and then display name
+[05:46] John Smith username. This is a user principal name
+[05:50] John Smith, okay
+[05:53] We could say automatically create the password or we could set the password to something we know,
+[05:56] which of course when the user logs on, they will have to change their password.
+[06:00] We could also, and you also can select that to force that right if you want.
+[06:05] Then we'll click next.
+[06:07] So one of the things that you'll notice you can do
+[06:10] that you didn't see in the Azure portal
+[06:12] is you can assign a license.
+[06:14] Now keep in mind, you may not have the exact same licenses
+[06:16] as me that I have on this screen, okay?
+[06:19] But this is also where you could assign licenses.
+[06:21] Okay, you also select a location.
+[06:24] In my case, that'll be United States.
+[06:26] All right, I'm not gonna assign a license for right now.
+[06:30] And then I'm gonna click next.
+[06:32] This is where I could assign roles.
+[06:34] Okay, roles will involve permissions. Again, not getting into that right now.
+[06:38] Then I got profiles. This is where I could fill out profile information.
+[06:41] So in the case of John Smith, we're going to say he is a IT, let's say IT,
+[06:51] no, let's make him a manager as well. So IT manager, he's part of the IT department.
+[06:57] He is also part of the New York office. We could specify
+[07:01] Office phone, mobile, all of this information if we wanted.
+[07:05] We're going to go ahead and click next.
+[07:07] And then at that point, we're going
+[07:08] to click to finish creating the user.
+[07:10] So now John Smith has been created.
+[07:12] We can search the name John.
+[07:14] There is John Smith.
+[07:16] OK, and again, if we go back over to portal.azure.com
+[07:21] and we take a look at Microsoft intro from there,
+[07:24] we should again see that this is all linked together, right?
+[07:31] our Microsoft interest so going back over to users and searching the name John
+[07:37] There is John Smith. Okay. Now I want to go to
+[07:40] intra dot Microsoft com
+[07:43] This is the intra portal. Okay. This is a newer portal that Microsoft is introduced. So we'll go over there and
+[07:52] Right up under identity here. We'll go to users all users
+[07:57] Okay, and
+[07:59] Right there you should be able to search for John
+[08:03] Okay, and you should also be able to search for Greg
+[08:06] Okay, and then if we click to create a new user
+[08:09] All right, you're gonna notice that this is
+[08:12] The equivalent of what we saw in Azure. So I'll create a username Bob Jones
+[08:18] so Bob Jones
+[08:20] Okay, that's all fine display name would be Bob Jones. I can set a password for whatever I want it to be
+[08:27] Let's try that again
+[08:31] And it might help if you uncheck the checkbox, right? There we go
+[08:36] And then if I wanted auto-generator code, I'm going to enable the account.
+[08:39] I'm going to click next.
+[08:42] And then we'll specify the properties identity.
+[08:44] We'll say Bob Jones.
+[08:46] Okay.
+[08:47] I'm going to say member.
+[08:49] We could.
+[08:50] We could say guest if we want.
+[08:51] I wanted to make the user a guest.
+[08:55] Job title.
+[08:56] Bob Jones will be a finance manager.
+[08:59] We'll just make all three of these people managers.
+[09:01] Okay.
+[09:02] Company, exam, lab, practice.
+[09:08] Okay.
+[09:09] Department, Finance, and then we could fill out other information we want, but we're not going to.
+[09:16] Okay, we're going to go ahead now, we're going to click Next.
+[09:18] Not going to assign any of that. We're going to click Reun create, and then we'll click Create.
+[09:24] So we've now created Greg Johnson.
+[09:26] So we've created three, I'm sorry, we've now created Bob Jones.
+[09:30] So now we have...
+[09:32] we've created three total users, Bob Jones, Greg Johnson,
+[09:36] John Smith, and Bob Jones, and we did all of that
+[09:39] using these three different portals.
+[09:42] All right, well hopefully that gives you an idea now
+[09:45] of the various, the common ways that we would create users
+[09:49] in Microsoft IntraID.

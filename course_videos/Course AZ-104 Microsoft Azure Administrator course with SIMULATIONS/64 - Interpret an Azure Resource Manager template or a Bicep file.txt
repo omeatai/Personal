@@ -1,0 +1,199 @@
+# 64 - Interpret an Azure Resource Manager template or a Bicep file
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/64 - Interpret an Azure Resource Manager template or a Bicep file.mp4
+Fetched On: 2026-10-21 20:20:53
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now if you go out and do a quick google or being search on the term what are ARM templates you'll
+[00:05] come across this little article right here on Microsoft Learn and this is a great way of just
+[00:10] kind of getting an understanding of what the concept of ARM templates is going to do for you
+[00:16] and why they're beneficial and I want to go ahead and explain that to you help you kind of look at
+[00:20] interpreting the the language that's used and we'll also talk about bicep as well.
+[00:27] And it's important just to kind of have that little bit of an understanding as we move on to you know
+[00:31] Getting hands-on experience. So the idea of an ARM template is it's sort of like a cookie cutter type scenario being that
+[00:39] you
+[00:40] In Azure, you have all these different resources that you can create.
+[00:45] But what happens when you've got to create the same resources over and over and over a bunch of
+[00:50] times, right? For example, if you had a bunch of virtual machines, maybe a group of virtual
+[00:55] machines that you had to use in a cookie cutter format to where perhaps you're going to have to
+[01:01] recreate, maybe it's like three web servers and maybe a load balancer. You can actually create an
+[01:09] Create all of that for you once you trigger that arm template
+[01:15] So the azure resource manager which of course is what arm stands for
+[01:20] Is sort of like an engine in azure that you can tell it what you want?
+[01:24] And as long as you put it in a format that it understands it can generate those resources for you in fact
+[01:31] One of the big things that they sort of push here is that it uses
+[01:35] declarative syntax as opposed to imperative. Imperative gets into where you would have to...
+[01:44] Take a standard PowerShell or Azure Cloud Shell.
+[01:48] You would have to write each little tiny bit of code
+[01:52] you wanted to utilize in order to create something
+[01:56] in Azure like a virtual machine.
+[01:58] You would have to specify that you want to create
+[02:00] the virtual machine, you have to create the name of it,
+[02:02] you have to specify all the ingredients
+[02:04] that make up that virtual machine.
+[02:06] as opposed to just being able to declare what you want.
+[02:09] It's sort of like, I use the analogy of it's like, okay, I can cook at my home.
+[02:14] I could cook steak and potatoes and vegetables and, you know,
+[02:19] cook all that up the way I want.
+[02:20] Or I could go to a restaurant and I could just say, hey, this is what I want.
+[02:25] And the kitchen will prepare it for me.
+[02:27] So imperative is sort of like you, you know, you cooking yourself.
+[02:31] You have to buy all the ingredients.
+[02:34] You have to set it all up individually in a certain order,
+[02:37] cook it a certain way for it to come out correctly.
+[02:42] With declarative syntax, with ARM templates,
+[02:44] essentially what you're doing is you're saying,
+[02:46] hey, this is the things I want.
+[02:48] You don't have to be very specific.
+[02:50] In fact, if you aren't very specific,
+[02:52] then the ARM will, it will use defaults,
+[02:58] but you can be very specific.
+[02:59] What I mean by that is like, for example,
+[03:01] I could say, create me a virtual machine.
+[03:03] If you don't specify things like the network, the VNet information, all that, then it'll
+[03:09] create you a VNet.
+[03:10] It'll use a default VNet that it'll create to be used.
+[03:14] But you can, if you want, when you're creating the virtual machine, you can specify VNet
+[03:19] information.
+[03:20] So you can be as explicit or non-explicit as you want.
+[03:23] Okay?
+[03:24] So that's sort of the idea of declarative syntax. It has repeated or results mean you it's cookie cutter
+[03:30] You can redo it as much as you want and one of the major purposes of this is orchestration, right?
+[03:34] To help orchestrate to be able to deploy out
+[03:39] This over and over and over again as much as you want
+[03:41] The other thing that's great about these is we can share these with each other now
+[03:45] ARM templates are built using the JSON language
+[03:49] And it's basically a text file, JavaScript object notation.
+[03:53] It's basically a text file.
+[03:55] And there are various things that you identify in there.
+[03:58] For example, you have a section called parameters.
+[04:01] parameters are values that have to be specified in order for you to use the template. Okay, for example
+[04:08] on a virtual machine I might require that the virtual machine's name is a parameter you have
+[04:13] to specify and maybe like the admin password, admin name and password maybe those are all
+[04:23] that you can specify that can be reused over and over and over again. So for example when you
+[04:27] actually create a parameters that have to be specified they become variables that can be
+[04:32] reused over and over and over but you can also have other additional criteria. For example with a
+[04:37] vnet I could say well I can make it where you don't have to specify a vnet and if you don't
+[04:43] then it'll create you a vnet but I'll also make it where you can specify the vnet information that
+[04:48] you want to create and in which that information gets stored in a variable and it can be reused
+[04:53] needed when it's creating the virtual machine to specify vnet information or
+[04:58] the actual vnet details all of that. You have user defined functions these are
+[05:04] actions that you can have it perform for example I could say hey I want to add a
+[05:10] Not only do I want to add a VNet, I want to add a firewall to that VNet.
+[05:14] And it's an action that can be performed. You can actually do this repeatedly.
+[05:18] So for example, maybe you're creating three VNets with this virtual machine and you could have
+[05:23] three firewalls created for each VNet if you wanted. Just giving an example.
+[05:28] You also get to specify exactly what resources you want.
+[05:31] in this virtual machine that basically the ingredients that you want and then the resources
+[05:37] that you're going to get out of that and then the outputs will be the data that gets displayed on
+[05:41] somebody's screen when this ARM template is created. Now don't let this stress you out if
+[05:48] you still aren't in it you know don't feel like oh what
+[05:51] And I'm not like don't feel like I'm an expert on this section or whatever. No, no
+[05:56] No, because when you see it when you do it, this is gonna make a lot more sense to you
+[06:00] So don't worry don't stress over all of this is just trying to give you a quick overview of what these items are now
+[06:06] when you look at kind of interpreting a
+[06:09] ARM template
+[06:11] This is what it looks like
+[06:13] This is JSON right here. This is just a very small part of JSON they're showing you but
+[06:20] you'll notice that with JSON JavaScript object notation it identifies something like the word
+[06:24] resources and then you'll have a a parenthesis here.
+[06:31] I'm sorry, not a parenthesis, opening square bracket here and then opening curly brace.
+[06:37] Inside that curly brace is all the data that you're trying to specify.
+[06:41] Now here's the good thing. You don't really have to be an expert.
+[06:45] on JavaScript or any of this to kind of understand what's going on. And a lot of
+[06:49] this is you make clicks visually it'll build the template for you visually.
+[06:54] But if you do learn the language the JavaScript object notation language you
+[06:58] can get really really detailed with all of this. Although you
+[07:01] don't really have to be an expert for what we're learning here,
+[07:05] you just want to be able to kind of interpret and see what it is you're
+[07:08] looking at. So you can see here they're they're creating a storage account.
+[07:12] the version number, they're specifying a name for the storage account, specifying location,
+[07:16] the SKU, standard LRS, local redundant storage, and then the kind is going to be a storage V2.
+[07:23] So there, this is sort of like bare minimum, hey, I'm going to create a storage account,
+[07:26] here's the criteria that's going to go in the ARIM template. So from there, you could basically
+[07:33] use this as a cookie cutter. You could trigger this VNet, I'm sorry, this ARIM template,
+[07:41] as many times you want it'll generate a new um ARM resource storage account based on that you can
+[07:49] even make it where the parameter is the name so the name has to be different every time you create
+[07:54] one but you could be very specific about the data that goes in here so that's the idea the template
+[08:00] design again you could create this this one template here and they're saying it's three tier
+[08:06] templates one template but it creates
+[08:08] all these resources together. So you got a virtual machine and app service,
+[08:12] a database going together. You can even have nested templates, a parent template that has
+[08:17] nested templates that generates these different things. There's different strategies you could
+[08:22] go with or a different template for each resource. It's sort of up to you and they're shareable.
+[08:27] So you can share these templates.
+[08:29] So that is the idea of an ARM template.
+[08:32] Now, if you were to go to Google or Bing
+[08:34] and do a search for the term, what is Azure Bicep?
+[08:37] You'll come across this article here.
+[08:39] So Bicep is a newer take on this idea of
+[08:44] declarative syntax.
+[08:46] Bicep is a newer language, domain specific language as they call it.
+[08:52] It's a declarative language.
+[08:53] It's very similar, but there's one major difference.
+[08:57] Okay.
+[08:58] Simple syntax.
+[09:00] You're going to find that with bicep you can specify a whole lot less information than
+[09:08] with JSON.
+[09:13] You specify what your parameters are with it and then the data you want.
+[09:18] Now if you look, this is bicep.
+[09:20] If we click over here on JSON, the equivalent of this in JSON is all of this code right
+[09:27] here.
+[09:28] These would be all the things you'd have to specify in JSON.
+[09:32] But with bicep, you're able to specify a lot less.
+[09:40] way to do it. It hasn't fully caught on a whole lot yet and I would say that
+[09:46] ARM templates are definitely more important for what you're learning here.
+[09:50] You want to spend more time on ARM templates than I would worry about Bicep
+[09:55] because Bicep is still kind of new. It's just starting to kind of catch on.
+[10:00] ARIM templates is definitely what you want to focus your time on though. But
+[10:05] ultimately and again you don't have to be an expert for what we're doing here
+[10:08] you don't have to be an expert on any of the code or any of that so I wouldn't
+[10:12] stress over that just familiarize yourself with what we're you know what
+[10:15] we're looking at here. So we're specifying the parameters that need to
+[10:18] be specified in this case there one requirement would be the location of
+[10:22] where this is going to be the next requirement would be the name and then
+[10:26] from there we're
+[10:28] creating the actual bicep resource. This is all just done through a text file.
+[10:37] And the other thing about bicep that is a benefit is if you have Visual Studios,
+[10:42] and a lot of people do use Visual Studios, you can get the bicep extension which installs
+[10:48] individual studios and it just it has all of this. If you'll notice in this little animation,
+[10:56] It supports IntelliSense for all of it,
+[11:00] which is a big benefit versus
+[11:02] the standard ARM template way of doing it.
+[11:05] You have all this IntelliSense,
+[11:07] you have a ton of IntelliSense for doing this.
+[11:09] So even if you're not an expert at writing code,
+[11:12] this thing babies you through creating
+[11:15] the code and letting you know through Visual Studios
+[11:17] if there's some kind of an error
+[11:19] or something along those lines.
+[11:21] So that's another benefit.
+[11:22] So if you really want to know the main difference here,
+[11:25] Bicep uses its own scripting format different than Java object notation JSON.
+[11:33] Even JSON is a little bit more vendor neutral across the world.
+[11:37] Other vendors are beginning to use Bicep as well.
+[11:39] The major benefit to Bicep would be it's more compact code, smaller code.
+[11:49] Visual Studio extension that you can get if you install Visual Studio makes things easier for creating as well
+[11:57] Essentially both the RM templates and bicep
+[12:00] Accomplished the same thing. They're both
+[12:02] Declarative it's a cookie-cutters type scenario
+[12:05] It's used for being able to not have to reinvent the wheel
+[12:08] You can create a resource and a bunch of resources you utilize the the template file to just
+[12:15] basically pump out those resources over and over and over.
+[12:18] It also makes it easy for people to share these files
+[12:22] and use them in their Azure environments
+[12:24] for generating specialized resources, okay?
+[12:28] So there you go, those are the differences.
+[12:30] That's kind of how you look at,
+[12:32] interpret what you're looking at here.
+[12:35] I definitely encourage you
+[12:37] if you wanna check this little learn out,
+[12:39] this learn article out.
+[12:41] You can and kind of look at the difference and understand that bicep is definitely going to be a little bit more user-friendly
+[12:48] But if you want to know what I would recommend that you know, your your time is better spent
+[12:53] I would say focusing more on ARM templates just because that's the the more heavily focused
+[12:59] Type of material for what we're learning here. Okay, and
+[13:03] Other than that, we're now ready to move on

@@ -1,0 +1,138 @@
+# 83 - Configure scaling for an App Service plan
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/83 - Configure scaling for an App Service plan.mp4
+Fetched On: 2026-10-21 20:00:26
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at configuring
+[00:02] scaling with our App Service Plan.
+[00:05] Here I am on portal.azure.com.
+[00:08] If I click the menu button here,
+[00:10] go to All Services, and I'm just going to search for
+[00:12] App Service Plan and you can see right here,
+[00:16] the resource object called App Service Plans.
+[00:18] I'm going to click on that and open that up.
+[00:20] I've got an App Service Plan currently
+[00:22] called Linux App Service Plan.
+[00:24] I'm going to open that up.
+[00:26] then from there I'm gonna look underneath settings. So we'll expand out
+[00:32] settings and you're gonna see there are two different options here, two
+[00:36] different blades involving scaling. One is to scale up and one is to scale out.
+[00:42] Alright so scaling out...
+[00:45] involves scaling out generating multiple instances of virtual machines that are hosting whatever
+[00:53] this app service plan is that I've got, which you can see the memory, the maximum scale instance
+[00:58] is set to three, and then the active instance count is currently set to one. So if I want,
+[01:06] I can support scaling out even further.
+[01:10] and basically have more instances and support and all of that.
+[01:15] Currently I've got this basic B2 plan that I've got,
+[01:19] and you can see that it says for automatic,
+[01:22] if you want to set up automatic scaling,
+[01:25] as opposed to manual scaling,
+[01:28] that you have to essentially go and use a premium plan.
+[01:32] Okay, so right now I do have the ability
+[01:36] to adjust this and manually,
+[01:39] scale out if I want, but if I want to support auto scaling rules or rule based scaling I've got to
+[01:46] actually go to a premium plan. So that's where scaling up comes into play. So scaling out
+[01:53] is essentially having more instances of virtual machines, okay, to handle the amount of load
+[02:04] the CPU, the memory, and all of that.
+[02:07] Right?
+[02:08] And so we can see right here I'm currently using basic B2.
+[02:13] All right? And if I'm gonna go, maybe I'll go over to this one right here.
+[02:15] This premium V3, P0 V3.
+[02:20] And keep in mind you may see different ones than me.
+[02:22] They're always changing things and depending upon the regions and all that
+[02:24] there's different ones available.
+[02:26] But you can see what the cost is going to be.
+[02:28] Okay. So I can go ahead and I can select that.
+[02:31] All right. I'm going to go ahead and click upgrade.
+[02:33] So the main thing I want you to take away right now from this is you need to know the difference between scaling up and
+[02:40] scaling out.
+[02:41] Okay, scaling up is going to involve increasing the performance of the virtual machines you have, right?
+[02:48] So this is going to involve the performance of the virtual CPU, the memory, all of that. Now with
+[02:55] scaling out you're talking about the
+[02:58] instance count, the amount of instances of virtual machine you can have.
+[03:02] And when you do that, and you'll notice now that I've got a premium,
+[03:06] I can scale out and I can still do manual or I can set automatic, which they tell you this is
+[03:11] platform managed scale out and it's based on traffic. Or you can do rule based where you
+[03:17] define the rules. So if I choose automatic, then it's going to go platform based at that point.
+[03:23] It can burst out and have multiple up to 30 because of the tier I went with the actual scale up tier
+[03:30] I went with okay, or I can do rule based
+[03:33] It says rule based scaling will be ignored if automatic scaling is enabled
+[03:37] So if I choose the rule based and click configure, it's gonna bring me over here and it's gonna let me
+[03:44] Decide what I want to do and I can set the manual scale man it maintain a fixed count
+[03:49] That's manual or I can go custom auto scale
+[03:52] and then it's going to give me some rules to go off of.
+[03:55] All right.
+[03:56] And so when I get to that, you see it's got the name of this little resource that it's going to generate,
+[04:02] the resource group, the current instant count, and then it says delete warning.
+[04:07] The very last or default recurrence rule cannot be deleted.
+[04:12] Instead, you can disable auto scaling.
+[04:14] So they're basically telling you have to have a rule.
+[04:17] And I've got a default one here.
+[04:21] I can do that. I can different you can have different rules added. Okay, I'm just going to use the default now when I go with the default
+[04:29] I can go scale based on a metric
+[04:32] They tell you that scale is based on metric trigger rules, but no rules is defined currently
+[04:39] So click add a rule to create a rule for example add a rule that increases the instance count by one when the CPU
+[04:46] percentage is above 70%
+[04:48] If no rules is defined, the resource will be set to the default instance count.
+[04:52] Okay, so from there I can go here. This is set to minimum. This minimum is one. The maximum
+[05:01] currently is set to one. And then this is the default. All right, so if I go here, I click add
+[05:07] add a rule. I can set the the metric rule to what I want. Okay, so standard metrics CPU can
+[05:18] That's what we're going to do, but you have all these various ones you could go off of for making the decision.
+[05:23] All right.
+[05:24] And the operator is if the instance is equal to, okay.
+[05:28] And you could set your...
+[05:30] your values. So what do you want your values? This is just all values. So it's going to be monitoring
+[05:35] all values involving the CPU percentage. And then another option of course is to click add here and
+[05:41] you have add custom dimension value. And so this is going to refer to the individual instances of
+[05:48] your app service plan. So for example, if your app service plan scales to three instances,
+[05:59] So this dimension essentially that you're talking about here allows Azure to filter or group the metric like the CPU percentage by instance
+[06:09] Okay, so that's the idea of going with that right there
+[06:13] So I've got my CPU percentage and currently right now this it's just showing a double dash here
+[06:19] Which essentially means that it hadn't collected any data to go off of
+[06:22] Below that I have enable metric divide by instance and they tell you that if you do this,
+[06:28] the metric value is going to be divided by the total number of instances.
+[06:31] In other words, the total number of virtual machine instances that you have.
+[06:35] So if a message count is 300 and there are five instances, then that's calculated a metric
+[06:41] value is 60 messages per instance.
+[06:44] They tell you that the property may be applicable for all metrics.
+[06:50] I've got greater than, greater than equal to,
+[06:52] less than, less than equal to, equal to, not equal to.
+[06:55] This case, greater than or equal to 70.
+[06:58] So that's currently what the metric is set to.
+[07:01] I'd say that's pretty common.
+[07:03] And then you've got the duration.
+[07:04] This is the condition that must be true for,
+[07:08] in this case, 10 continuous minutes, right?
+[07:11] And then the time grain in minutes,
+[07:13] the idea is the CPU is sampled every minute.
+[07:17] You got your time grain statistic and so this is the average value
+[07:23] That's going to be calculated per time per time grain. So every minute is checking for an average
+[07:29] Okay, and then time aggregation. This is where the rule looks at the average over the whole 10 minute period
+[07:37] So it's looking at it over the entire 10 minute period and doing an average based on that
+[07:42] Okay, and then so then once you these are all your conditions your triggering conditions and then you have an action
+[07:49] So increase the count by what?
+[07:51] Well increase it by one. Okay
+[07:54] you could have decrease, decrease percent, decrease count to, and this says five minute
+[08:00] cooldown. So that just means after you've after scaling has occurred wait five minutes before
+[08:06] considering another scale action. All right, so that's how your scale rule is going to work.
+[08:11] So that was the scale based on a metric, but you also have scaled to a specific instance.
+[08:16] And all this is is just it's basically scale based on a schedule.
+[08:21] So if you know at a certain time of day you want to scale out to a certain type of certain
+[08:25] amount of instances and scale back at a certain time of day you can set a schedule.
+[08:29] All right.
+[08:30] That can be done by clicking add a scale condition and you can set your schedule here.
+[08:34] All right.
+[08:35] So that is how we can set up our auto scaling.
+[08:38] I am not going to actually configure auto scaling and all that.
+[08:41] I'm trying to keep the cost down on the Azure credit.
+[08:44] So I'm going to leave that set to manual, but I'm also going to go back to where it
+[08:50] and I'm gonna scale back, scale down to a lower tier just to keep the the cost in this little
+[08:58] sucker from being costing me too much. So I'm just going to go back over to this B2
+[09:04] and then I'm going to click select and I'm going to downgrade it. Alright, hopefully now after
+[09:10] watching this video you have a better understanding of the scaling up, scaling out, and that's the
+[09:18] Be aware that to do auto scaling and all that you do need to do premium.
+[09:21] That's sort of the takeaways from this video.

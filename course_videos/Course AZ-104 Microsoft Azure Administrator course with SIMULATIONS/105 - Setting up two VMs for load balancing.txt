@@ -1,0 +1,202 @@
+# 105 - Setting up two VMs for load balancing
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/105 - Setting up two VMs for load balancing.mp4
+Fetched On: 2026-10-21 20:19:52
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now if we're going to learn the concepts of load balancing,
+[00:03] we're going to need a couple of virtual machines
+[00:05] to play around with that we can actually load balance.
+[00:08] So I want to go ahead and do that now.
+[00:10] I'm going to create some virtual machines
+[00:12] and we are going to set up load balancing
+[00:15] for those virtual machines.
+[00:16] First thing we're going to do here on portal.azure.com though,
+[00:19] is we're going to create a virtual network.
+[00:22] So here I am on portal.azure.com, all services,
+[00:25] and I'm just going to search for virtual network.
+[00:30] Okay.
+[00:31] Click on virtual networks.
+[00:33] We're going to click to create a new virtual network.
+[00:36] I'm going to store this in demo RG.
+[00:37] Now, if you are doing this with me,
+[00:39] you do not have to have the same exact resource groups as me.
+[00:43] But I've got one called demo RG.
+[00:46] I'm going to use that demo RG resource group.
+[00:48] The VNet that I'm going to create, I'm going to call this.
+[00:53] We'll just keep it simple.
+[00:55] We'll call it load balancing VNet.
+[01:01] OK.
+[01:02] We'll click next.
+[01:04] I'm gonna leave all this alone.
+[01:06] I'm gonna click next.
+[01:07] And then for the IP,
+[01:08] we'll use this default IP address system here.
+[01:12] And you have the default subnet right there.
+[01:15] That's fine.
+[01:16] We'll click Review and Create.
+[01:19] And we're gonna click to Create.
+[01:21] Okay, so we'll just give that just a moment to get created.
+[01:25] Now that that's done,
+[01:26] I'm gonna click the Menu button
+[01:27] and go to Virtual Machines.
+[01:28] I'm gonna create a new virtual machine.
+[01:31] I'm gonna store that in the demo,
+[01:33] the DMO RG resource group,
+[01:36] and I'm gonna call this virtual machine VM1.
+[01:40] I'm gonna store in East US availability zones.
+[01:42] It's gonna set that to no redundancy
+[01:45] for standard security type.
+[01:46] For security type, I'm just gonna go with standard.
+[01:49] The image will be Windows Server 2022 data center.
+[01:52] That's fine.
+[01:53] We'll do X64 architecture.
+[01:55] I'm just gonna leave this to the default
+[01:56] that I've got here.
+[01:58] And then I'm gonna set my admin username
+[02:00] and password ELP admin.
+[02:02] and then I'm gonna set a password that I know.
+[02:08] I'm gonna leave the RDP enabled, that's fine.
+[02:10] We'll click to disk.
+[02:11] I'm gonna use standard HDD
+[02:13] just to kind of cut down on Azure cost.
+[02:15] We'll click next for networking
+[02:17] and then we wanna make sure that we've got
+[02:19] this load balancing VNet selected.
+[02:22] Okay, which we do, so we're good there.
+[02:24] It will create a public IP address, that's fine.
+[02:26] We'll leave all this alone for management.
+[02:29] We'll go next and go to management.
+[02:30] I am gonna do an auto shutdown.
+[02:32] I'm gonna have that shutdown at 7 p.m.
+[02:34] and I'll set that for Eastern time, which is my time zone.
+[02:38] I'm gonna click monitoring
+[02:39] and I'm gonna disable boot diagnostics monitoring.
+[02:41] That'll also cut down on some Azure cost.
+[02:44] We'll click advance, nothing on advanced.
+[02:47] We'll go to review and create.
+[02:51] All right, we'll let that validate.
+[02:53] and then I'm going to go ahead and click create. While that's getting created, I'm going to go
+[02:58] ahead and start creating a second VM. Okay, so we'll let that go. We're going to go back over
+[03:04] to virtual machines. So the menu button, I'm going to go to virtual machines, I'm going to
+[03:09] click to create a virtual machine. I'm going to go right here and make sure that I choose my
+[03:13] demo RG resource group, the same one that I put VM one in. And I'm going to call this VM two.
+[03:19] I'm basically going to choose the exact same options.
+[03:23] So we'll go here, no infrastructure standard for that.
+[03:27] Leave this as default.
+[03:28] I'm going to set my admin username and password, ELP admin, and then my password.
+[03:38] Okay.
+[03:40] Leave all this alone.
+[03:41] I'm going to click next.
+[03:42] I'm going to set this to standard HDD.
+[03:44] We'll click networking and make sure that we've selected, we've got load balancing VNet
+[03:50] selected, which we do.
+[03:51] All this is fine. We'll click next. I am going to do the auto shutdown at 7 p.m. Eastern time my time.
+[03:59] All right, I'm going to click monitoring. I'm going to turn off the boot diagnostics
+[04:03] and I'm going to click review and create. So we'll let that go ahead and validate
+[04:10] and as soon as that's done validating I'm going to click create. So now we'll get that going.
+[04:15] We got virtual 2 getting created. We're going to jump back over
+[04:18] to the virtual machines and we're going to go into virtual machine 1.
+[04:23] Okay, so let that get submitted and then I'm gonna go well
+[04:26] We'll just go to demo RG and then we should see VM one. So there's VM one
+[04:30] I'm gonna click on that and then I'm gonna go ahead and connect to it
+[04:35] So I'm gonna download the RDP file and then I'm gonna go into it put in the password and
+[04:50] Connecting into it now
+[04:52] Alright, so I'm now connected into VM one and I'm gonna scroll down and I'm going to go down to the search bar here
+[05:00] And we're just going to open up control panel. So I'm just going to type the word control
+[05:05] And it's a little bit slow because it's still kind of loading up
+[05:08] Plus these virtual machines don't have a lot of memory once I'm in control panel
+[05:12] I'll go here to miss which the category view to large icons
+[05:15] And I'm going to click Windows Defender firewall, and I'm going to turn the firewall off
+[05:21] because we don't want the firewall enabled right now. We'll interfere with what we're trying to do.
+[05:26] Plus, if we're going to use a firewall, we're going to use a real firewall, which is the Azure
+[05:29] firewall, not the built-in firewall right now for the server. Okay, so now that the firewall is
+[05:34] turned off, I'm also going to go over here to local server, and I'm going to turn off this
+[05:39] enhanced security configuration for Internet Explorer, which can mess with browser settings.
+[05:44] So we're just going to turn that off. And then I'm going to go to manage.
+[05:48] I'm going to go to add roles and features and we're going to install IIS, which is Microsoft's
+[05:53] web server.
+[05:54] So we'll go right here.
+[05:55] All right, go through there and we're going to look for where it says web server.
+[06:00] We're going to turn that on.
+[06:01] Add features.
+[06:02] We'll click next.
+[06:04] Click next.
+[06:05] Next.
+[06:07] And I'm going to go ahead and click install.
+[06:09] So I'm just going to go ahead and pause the recording while that's getting installed.
+[06:13] Okay, so that just took a couple of minutes. I'm gonna go ahead and close out of the wizard now that it's done now
+[06:18] What we're gonna do is gonna open a file explorer. So there's file explorer. I just right-click to start open up file explorer
+[06:24] I'm gonna go to this PC
+[06:26] We'll go to the C drive and there is this folder called INET pub
+[06:30] That is a folder that IIS uses for websites. So we'll open that up
+[06:34] Okay, and then we're gonna go in this folder called www root that would be the root folder of a website if you were setting
+[06:40] Up a website and right now all they've got when you go to the page if we open this up
+[06:44] All that they've got is just a little image that they show okay?
+[06:49] So just opening this up on my browser. Let me quickly get through this little edge wizard
+[06:57] Okay, there it is. So this is what the image looks like what I'm gonna. Do is I'm gonna edit this image
+[07:03] Okay
+[07:04] So we're going to edit the image and right click by and click edit and we're going to,
+[07:08] this will open it up in MS Paint. And then I'm going to go right here and I'm going to put
+[07:13] this is, hold on it's taking a little while to catch up with me, this is VM1. We need a way to
+[07:23] tell the virtual machine websites apart. So we're just going to put this is VNet 1 right there.
+[07:31] And then I'm going to click file and then save. Now I'm going to close out of that. If we refresh
+[07:36] web browser here. Yeah, it says this is VM1. So now we know if you connect to this web server,
+[07:42] it's going to say this is VM1. Okay, so that's what we wanted to accomplish there. Okay, now
+[07:47] that we're done with this web server, we're going to jump back over and connect into the second web
+[07:54] server. So we're going to, I'm going to close out of VM1 and we're going to go to VM2. So we'll go
+[08:04] And you should see VM2. So there's VM2. I'm gonna click connect, download the RDP file,
+[08:14] open that file up,
+[08:16] put in my password, and we're starting to connect in.
+[08:25] Alright, so I'm now here in Server Manager on VM2, and I'm gonna go to control panel.
+[08:32] So I'm just gonna go down to the little search bar, and we will open up control panel as soon as it loads. There we go.
+[08:41] Switch to large icons.
+[08:43] Go to the Windows Defender firewall.
+[08:45] I'm going to turn the firewall off.
+[08:47] Alright, now we'll go back up here into Server Manager, Local Server.
+[08:53] We're going to turn off the IE Enhanced Security.
+[08:57] Okay, and now we're going to go to Manage, Add Roles and Features,
+[09:04] Next, Next, and Next, and we're going to install IIS, the web server.
+[09:10] Click Next, Next, Next.
+[09:15] Next and install and I'll just pause the recording while that's getting installed. Okay now that that's done
+[09:21] I'm gonna close out of that little wizard. We're gonna go into file explorer
+[09:25] So we'll come down here to the bottom right click start
+[09:29] Open file explorer. I'm gonna expand where it says this PC go to the C drive I net pub
+[09:38] Www route and then we're gonna edit
+[09:42] This IIS start we'll put this is
+[09:50] VM2. Just waiting on it to catch up to me. It's a little bit sluggish. There we go. I'll just move the font.
+[10:00] maybe just a little bit bigger. There we go. Alright, now we're just gonna go File, Save.
+[10:07] I'll close out of that. And then if we open up the web page by clicking the IAS start, of course,
+[10:18] we're gonna have to go through this little wizard again here. There we go. And it says VM2.
+[10:25] Okay. Now, if we jump back over to our portal here, we can see VM2. We look at Overview. Okay.
+[10:32] You can even see the IP address of VM2.
+[10:36] So that IP address, if we paste that IP address in,
+[10:42] you're going to see I can't connect to it. Now the reason I can't connect to it
+[10:46] is because we have a
+[10:50] NSG on each of the vNICs that's blocking port 80. So what we need to do
+[10:57] is we need to go underneath networking settings right here.
+[11:03] And then we're looking at the NSG.
+[11:05] This is VM2's NSG.
+[11:06] We'll do this with NSG for VM1.2 also,
+[11:10] because we'll go here to create port rule.
+[11:13] We'll click inbound port rule.
+[11:15] We'll say source any, source port, destination,
+[11:20] okay, any, and then the service will be HTTP.
+[11:24] That'll be port 80, okay.
+[11:26] We can obviously use HTTPS and add a certificate and all that. We're not doing that right now though. So we'll go here
+[11:31] Allow HTTP inbound. So we'll click add
+[11:35] So if now we're adding that rule to NSG
+[11:39] Okay, so that that rule is there now. So let's go over to
+[11:43] VM1 now, let's do the same thing for VM1. Let's go back over to the demo RG resource group. We'll click VM1
+[11:50] Okay networking settings
+[11:53] Here's our NSG for VM1
+[11:55] click create inbound rule. All right, HTTP, allow, click add. So we've now added that rule.
+[12:07] So if we go to your overview, copy this IP address, we'll paste the IP address in and look at there.
+[12:14] Well, VM2 is already showing up, but there's VM1. That's based on its public address.
+[12:20] And then if we go over to demo RG to VM2, we'll copy its address.
+[12:26] and put that in and it should say this is VM2. Okay so that's fine. It all those are up and
+[12:33] running. Obviously we're not load balanced yet but we do have our two VMs set up.
+[12:39] Everything's configured and now we'll be ready to load balance.

@@ -1,0 +1,138 @@
+# 110 - Troubleshoot load balancing
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/110 - Troubleshoot load balancing.mp4
+Fetched On: 2026-10-21 19:50:50
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now spend some time talking about troubleshooting a load balancer issue.
+[00:04] Now the first thing of course to know is do I have a load balancer issue?
+[00:08] And the question there would be perhaps you're trying to go to a service that...
+[00:13] The load balancer is load balancing and you're not able to reach the service.
+[00:17] So the first thing that you should always do is check the service health
+[00:21] of load balancing in Azure. Microsoft Azure occasionally does have hiccups
+[00:26] where things aren't working and they have a nice little area here
+[00:30] that you can look at called service health that'll tell you if there are any
+[00:33] health problems in their Azure environment.
+[00:36] So let's take a look at that. Here we are on portal.azure.com.
+[00:39] We'll click the menu button to go to all services and just search for
+[00:44] You'll see right there service health and then we're gonna come down here to where it says resource health
+[00:50] And then it showed you your subscription and all the resource types you have that
+[00:57] You possibly are using and I'm gonna scroll down and we're gonna look for load balancer. So there we go load balancer
+[01:04] It's going to tell me if I do have one of those and you can see right here
+[01:07] There's a green check mark. So that's a good sign if I click on that you can see that it says it's available
+[01:12] So as far as Azure knows there are not any issues with the load balancer
+[01:17] Another thing we can do is click diagnose and solve problems
+[01:21] Now you can get into there by doing what I just did
+[01:25] There's another way you can get into the same area if we go over here and we look at
+[01:30] If we search all services and go to load balancer, you can also get to the same area through here.
+[01:35] Okay, so you open up your load balancer and then from there if you look right here,
+[01:40] there is a blade called diagnose and solve problems. So you can go there. Now Microsoft
+[01:45] will have some things that it can do to check. Okay, it can let you know if there's any issues.
+[01:50] You can also look to see what changes have occurred. It tells you
+[01:54] 21 changes to the resource in the last 72 hours.
+[01:57] That's of course because we've set it up,
+[01:58] but we can also view change details
+[02:00] and it'll give us a change analysis
+[02:02] of all the things that happen.
+[02:04] Ultimately, the things that have happened though
+[02:05] is we have made some changes to it.
+[02:07] So that's very helpful to be able to go
+[02:10] and take a look at the changes that have occurred.
+[02:11] This will let you know if maybe another admin
+[02:13] has made some changes to that resource.
+[02:16] But we can go down here and we can see some of the things
+[02:18] that are available to us for troubleshooting, okay?
+[02:22] For one, we could look at performance, for example,
+[02:25] and say, okay, well, what kind of performance
+[02:27] is maybe it's load distribution issues,
+[02:29] we can click next, and they have these,
+[02:32] so the idea here is you have these little
+[02:33] troubleshooting wizards that are gonna try to help you
+[02:35] with troubleshooting a problem, perhaps,
+[02:37] that's going on with your load balancer, okay?
+[02:41] So that's what that's doing there.
+[02:43] I can look at configuration and setup.
+[02:45] So we say, okay, well, configuration setup,
+[02:48] what kind of issue are we talking about here?
+[02:50] Is it maybe the inbound NAT rules?
+[02:54] We click next.
+[02:55] It's going to give you some information on that.
+[02:57] So the idea here is to try to sort of walk you
+[03:00] through potentially troubleshooting
+[03:03] the issue with the load balancer.
+[03:04] You've got to figure out what's going on.
+[03:06] Again, what has driven you to need
+[03:09] to troubleshoot the load balancer?
+[03:11] Again, if it's a situation where people aren't able to get
+[03:14] to the resource, then
+[03:16] it might not be the red it might not actually be the load balancer that's bad that you're having
+[03:20] issues with it could very well just simply be the resource itself so make sure that the virtual
+[03:25] machines are up that you're load balancing as well and of course to do that
+[03:30] We would need to look at if we go right over here to back in pool. We can see we have two virtual machines
+[03:37] So this is how you would sort of know
+[03:38] Okay
+[03:41] VM 1 VM 2 so then I would go and I would look for those virtual machines and I would make sure that they're not that
+[03:47] They're currently up and running as you can see
+[03:49] it's currently up and running, it's not stopped, so that's good. Maybe if you can connect in and
+[03:54] verify that they're up and running and make sure the service is running on the virtual machine.
+[03:58] So you want to troubleshoot the virtual machines too and make sure that the virtual machines are
+[04:03] actually up and running like they're supposed to be. So that's going to be another troubleshooting
+[04:08] technique as well as just making sure that the actual resources that are being load balanced
+[04:13] make sure those are up and running. Okay.
+[04:16] You've got your health probes set up. So that's good. So no issues there and then we've also got some some log information here
+[04:23] That's available to us. So you have a log there's not really any log data to look at at the moment, but I
+[04:31] Can there's sometimes there'll be some queries here that I can run that'll give me some log data
+[04:35] That might tell me what's going on if there's any anything happening
+[04:39] But in our case there isn't really anything going on. We don't have a very big environment to look at here, but
+[04:46] We've also got support and troubleshooting.
+[04:48] So they have this little area down here,
+[04:51] the bottom, you can search for possible solutions.
+[04:56] There's also CoPilot as another option.
+[05:00] So you can go in here to CoPilot and you can let it know,
+[05:05] you say, okay, I have an Azure load balancer
+[05:09] and currently traffic is not making it.
+[05:15] to the server, the we'll say the VMs.
+[05:20] The VMs are not responding.
+[05:23] So we hit enter on that.
+[05:25] Copilot is going to try to help you and assist you.
+[05:27] So obviously Copilot is another solution, you know, utilize some AI content.
+[05:34] And it's the nice thing about it too is it'll actually look at the resources and see what
+[05:41] Okay, so here it gives you a series of troubleshooters, troubleshooting techniques,
+[05:45] you know, a lot of which is the stuff I'm looking at. One of the things that actually it's mentioning
+[05:49] was my next topic, which is you need to check your NSGs, your network security groups as well,
+[05:56] and make sure it's not blocking something. The question you always ask yourself is,
+[06:01] has this ever worked or has it not ever worked? In other words, you set all this up. We know
+[06:10] the first time you had set it all up and you still things weren't working and now
+[06:14] you're trying to troubleshoot this for the first time. So that's the question
+[06:18] you always ask yourself when troubleshooting something like this. Has
+[06:21] this ever worked or is this the first time we've tried to get it to work and
+[06:25] it's not working? So if it's if it's never worked well something's obviously
+[06:30] not configured correctly to begin with probably right. If it has worked and now
+[06:34] it's stopped working then you have to ask yourself what has changed since
+[06:39] This has happened, right?
+[06:41] So let's take a look.
+[06:43] Let's say we were having issues with NSGs.
+[06:45] We come over here.
+[06:47] We'll go to our virtual machines.
+[06:51] Right?
+[06:53] And we would check the network security groups that are associated with our virtual machines.
+[06:59] So we go under networking, click networking settings,
+[07:01] and we would look to make sure that there was not an issue with rules.
+[07:05] As you can see here,
+[07:08] I do have a allow rule for HTTP,
+[07:12] so everything should be working there.
+[07:14] I would wanna see that if we are allowing port 80,
+[07:16] that would be the rule we need to have there, right?
+[07:18] And we have that rule there, which is good.
+[07:20] If we go over to VM2, we should have the same thing.
+[07:24] But you definitely need to check your NSGs,
+[07:26] see if there are any other NSGs.
+[07:28] Now, if you continue on, as we get deeper in,
+[07:32] we are going to...
+[07:34] Learn about some tools that will assist even further with this so stay tuned on that that's coming up
+[07:41] And you could use these additional tools namely this namely this thing called the network watcher that we're gonna be getting into just a bit
+[07:49] Later this network watcher is a great tool for testing and that'll also help you with troubleshooting as well
+[07:55] Okay, but those are the things that you want to be thinking about in terms of troubleshooting a load balancer

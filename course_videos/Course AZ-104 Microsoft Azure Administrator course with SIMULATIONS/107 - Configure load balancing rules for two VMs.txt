@@ -1,0 +1,148 @@
+# 107 - Configure load balancing rules for two VMs
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/107 - Configure load balancing rules for two VMs.mp4
+Fetched On: 2026-10-21 19:58:54
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about setting up the rules for actually deploying a load balancer.
+[00:05] So here I am in portal.azure.com.
+[00:07] I'm in the demo RG resource group and I've got my VM one and VM two.
+[00:12] Those are my two virtual machines, both are running a web server and I've got my load
+[00:16] balancer that I've set up here.
+[00:20] All right, and then we'll expand settings and we can look at front end IP configuration.
+[00:26] You can see we have a front end public IP address right here.
+[00:29] And then our back end pool, these are our two VMs.
+[00:33] And so ultimately what we will need to do is we need to set up a rule that when
+[00:36] somebody hits this front end from the internet, they get redirected to one of
+[00:41] these two back end virtual machines on port 80.
+[00:45] Okay, so we'll see how we can do that. Let's go over here to load balancing rules. We're going to click add.
+[00:51] Okay, the load balancing rule, we're going to call this load balancing rule. I'm just going to call it VM balancing rule for lack of a better name.
+[01:01] All right, obviously you call it what you want. And then here we specify we're using IP version for front end IP address. We're going to use this front end pip that we set up.
+[01:11] And then back in we're going to use our back end pool. We're going to use TCP.
+[01:16] as the protocol, all right?
+[01:20] You're not really gonna use UDP
+[01:21] unless it's something like streaming services
+[01:24] and things like that.
+[01:24] Most of the time you'll be using TCP.
+[01:26] We're gonna do port 80,
+[01:28] and then we've got our,
+[01:30] that'll be our port people hit.
+[01:31] Then if there was gonna be a different port,
+[01:33] then on the backend that you're communicating
+[01:36] with these web servers on,
+[01:37] you would put a different port,
+[01:38] like 8080 or something, but no,
+[01:40] in our case it's 80.
+[01:41] We're just using 80.
+[01:43] Now you can also set up health probes, all right?
+[01:46] So this is just a way of checking to make sure that the virtual machines are still up and running.
+[01:52] That way it doesn't direct traffic. It doesn't load balance traffic if for some reason one of
+[01:56] the servers is not working. So we can click create and we can call this you know whatever we want
+[02:01] to call it. I'll just call it uh HTTP and then this because this is going to be the port I want
+[02:08] to check. The protocol is TCP port 80. It's going to check every five seconds to see if it's
+[02:16] And so that's the idea of having a health probe.
+[02:20] So every five seconds it's gonna go
+[02:23] and it's gonna try to check to see
+[02:24] if Port 80 is up on our various HTTP web servers, right?
+[02:31] So then we get to session persistence here
+[02:34] and you'll see we have three options.
+[02:37] None is the default and that's the most common way people do it.
+[02:42] And what that does is it just essentially tells you, it tells you here,
+[02:45] it says, successive requests from the same client may be handled by any virtual machine.
+[02:49] So every time a client connects in any of the virtual machines will handle it.
+[02:53] And that client can, can connect in, you know, within one minute in the next.
+[02:58] you know, a few minutes later they may get sent to a different virtual machine. In our case because
+[03:02] they're all equal, yes we'll just leave that set to none. But you also have source IP. If you do
+[03:07] that then it just looks at the client's IP address and it just decides to send to the same web server
+[03:13] every single...
+[03:14] time they connect in and then it'll go to the same server. If you do source and IP protocol
+[03:20] then it'll match just the it'll match not only the the IP address but also the protocol and make
+[03:24] a decision based on that. So it'll always use if they're if they're always using the same port
+[03:29] it's our same IP address same protocol it's going to send to the same VM every time. We're going to
+[03:35] choose none.
+[03:36] And then we have idle timeout set to four minutes
+[03:39] So that just is the amount of time that it tries to keep a session alive
+[03:43] With your clients that are connecting in it'll keep that session alive for
+[03:48] four minutes. So even if the client is not doing anything, if they just open the website and they
+[03:52] just leave it running, it'll try to keep the session alive for four minutes before it kills
+[03:57] the session. If it kills the session after four minutes, the client would have to reestablish a
+[04:01] new session, which isn't really a big deal. You're talking about milliseconds here, but if you had,
+[04:05] you know, hundreds of thousands of connections coming in, it can save time by not having
+[04:09] to reestablish sessions. But it also does use a little bit of memory in order to keep
+[04:13] sessions alive. That's nothing new. That is how web servers pretty much have worked since
+[04:18] Okay, next up we have the enable TCP reset. So the idea here is that when this is checked
+[04:24] The setting allows the load balancer to send a TCP reset also known as an RST
+[04:31] packet to the client on the back end when a session times out or when a back end becomes unhealthy now
+[04:38] Just to kind of give you an example of when this would be used, imagine you had a client that connects to your web server app on port 80.
+[04:45] If the back-end VM was to crash...
+[04:48] and the connection would be dropped.
+[04:50] So a TCP reset would let the client immediately know
+[04:55] that the connection is no longer valid.
+[04:57] So this is gonna be helpful for quickly closing
+[04:59] idle or broken sessions.
+[05:01] The next thing you've got is enable floating IP.
+[05:04] So the idea there, this is gonna allow the same back end VM
+[05:08] to be used across multiple load balancer rules
+[05:12] or front end IPs.
+[05:13] So this will enable what they call direct server return DSR.
+[05:17] which is used in high availability scenarios.
+[05:20] So just an example of that,
+[05:22] imagine you're using a SQL.
+[05:24] Always on the sequel always on or maybe another clustering solution some kind of clustering happening between servers the floating IP
+[05:33] option
+[05:34] Must be enabled for the listener to work correctly in that type of situation because the response to a request
+[05:42] Doesn't go back through the load balancer, but directly to the client
+[05:47] Alright, so this is the idea of a floating IP. Alright
+[05:51] There's also more, you can read more about that if you want.
+[05:54] They're a little example here, they tell you with
+[05:56] the Azure Exposed Traditional Load Balancer IP
+[05:58] mapped scheme for ease of use for VM instances.
+[06:04] In other words, like multiple instances,
+[06:05] like if you've clustered in a scenario where you've clustered.
+[06:08] So enable this, the floating IP changes the IP address mapping
+[06:12] to the front end IP of
+[06:13] the load balancer to allow for additional flexibility.
+[06:16] Then below that, you've got SNAAT.
+[06:19] Okay, so this is source network address translation is what that stands for.
+[06:25] And the first option you've got there is to use outbound rules, which is recommended. So this
+[06:31] uses dedicated outbound rules for outbound connections from your back end pull virtual
+[06:37] machines to the internet. So an example would be your back end VM.
+[06:42] needs to download updates, let's say, or connect to an external API for some reason.
+[06:48] With this method, it ensures consistent source NAT behavior and avoids port exhaustion.
+[06:56] If you choose the last option, in this case, this is the default port. So the back end VMs
+[07:03] share a limited set of source NAT ports to connect to the internet. So if you select this,
+[07:12] have many like outbound connections like calling external APIs from a VM,
+[07:16] you might run into snap port exhaustion where new connections are dropped due to
+[07:23] no available ports being available. You know that's where you start you kind of
+[07:27] have to think in terms of just there's only so many ports and versus the amount
+[07:31] of connections you've got connecting in. So most everybody just recommends and
+[07:35] Azure recommends just leaving it set to recommended.
+[07:40] And we've now set up our rules.
+[07:44] So in theory, if everything is now set up correctly,
+[07:49] we should be able to go over here to our frontend IP
+[07:51] address and copy this address.
+[07:53] And we should be able to go to that location.
+[07:58] So if I go over here and I just paste this into,
+[08:02] let me open up a new tab.
+[08:04] I'm going to paste this in.
+[08:05] I'm going to take away the word frontend on there
+[08:09] and hit Enter.
+[08:09] Alright, and you can see that it's directed me to VM2 and it probably will keep doing
+[08:16] that.
+[08:17] Let me try opening up like an in private mode and then pasting it in again.
+[08:24] And let's see what happens.
+[08:25] I have a space in there.
+[08:29] Yeah, I'm going to hit continue to the site because it's noticing that it's not secure.
+[08:33] Oh, look at there.
+[08:35] I'm on VM1.
+[08:37] So there you go.
+[08:38] You can see load balancing happened before your own eyes.
+[08:40] Alright, I first connected here.
+[08:43] through my normal browser and then I opened up incognito mode or in private mode and
+[08:49] It went to this other one though
+[08:50] I did have to click on that warning message because we aren't encrypting these pages. We're just going to them
+[08:56] So there you go. You can clearly see load balancing
+[09:00] Happening right in front of you and we've now officially set up our load balancer with our load balancer rules

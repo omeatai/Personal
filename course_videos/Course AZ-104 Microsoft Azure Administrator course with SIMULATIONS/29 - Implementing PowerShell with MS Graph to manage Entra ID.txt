@@ -1,0 +1,343 @@
+# 29 - Implementing PowerShell with MS Graph to manage Entra ID
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/29 - Implementing PowerShell with MS Graph to manage Entra ID.mp4
+Fetched On: 2026-10-21 20:41:21
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to learn how we can interact with Microsoft intro with the help of graph through PowerShell.
+[00:08] First thing we're going to do is just make sure we're connected.
+[00:11] Especially if it's been a while since you've connected.
+[00:13] So I'm going to type connect dash mg graph space scopes space and then in quotation marks I'm going to type group dot read write dot all.
+[00:30] and then comma, and then I'm going to put user.readwrite.all
+[00:39] and that should give me access to those scopes.
+[00:43] Okay, now if I hadn't logged on already,
+[00:46] I would get a little pop up
+[00:47] and I would put my credentials in
+[00:48] for Microsoft Azure, which is Intra.
+[00:52] Okay, same as with Microsoft 365 as well.
+[00:55] Okay, but I am connected in.
+[00:57] All right, so now
+[00:59] I want to see how we can view,
+[01:02] I'd like to view my users in Microsoft intro.
+[01:06] So I'm going to type,
+[01:08] this would also be for Microsoft 365 because remember
+[01:10] Microsoft 365 links back to Microsoft intro ID.
+[01:13] So your users are stored in Microsoft intro,
+[01:15] so you're going to see those in all the other services as well.
+[01:20] Command I'm going to type is get-mguser-all,
+[01:29] and I'm going to hit enter.
+[01:32] all of my users.
+[01:35] All right.
+[01:37] Let me just, it's making me verify my credentials again.
+[01:40] There we go.
+[01:41] So now I can see, now keep in mind,
+[01:42] if you're doing this with me,
+[01:43] you are not going to see the same users as me.
+[01:45] I have lots of users that I've played around with
+[01:48] and created from various courses.
+[01:50] So you won't see the exact same stuff as me,
+[01:52] but this is the command that would let me see my users.
+[01:55] So as you can see,
+[01:56] I can see my users utilizing that command.
+[01:59] All right.
+[01:59] Now I'm going to go through the process of creating a user.
+[02:04] I want to encourage you again to,
+[02:07] when you want to learn a command,
+[02:09] there is the git-help commandlet.
+[02:12] And I could type new-mg user and hit enter,
+[02:18] and it's going to display it.
+[02:19] But I'm not a fan of that.
+[02:20] I prefer to use the help information that they provide.
+[02:24] Okay.
+[02:25] So they do provide help information.
+[02:28] You can see right here I got this little link.
+[02:32] I can go and I can paste that into my browser and take me there and I can see examples on
+[02:39] how to use the command.
+[02:40] But I want to go ahead and show you this command myself.
+[02:42] Oh, and don't forget also, AI.
+[02:46] Whether it's Copile or ChatGPT or one of the other AIs, AI is fantastic with helping
+[02:52] with PowerShell commands. It's also fantastic for troubleshooting with PowerShell.
+[02:57] Okay, there's no shame in my game. I use it. When I'm working with it, I use it. I love it.
+[03:01] All right. So let's take a look now. We're going to see how we can create a user. We're going to
+[03:06] type new dash mg user space dash account enabled.
+[03:14] because we do want this account being able to put a colon
+[03:17] and then whenever you do a boolean, a true or false statement,
+[03:19] you do a colon and then a dollar sign and it'll say true.
+[03:23] All right.
+[03:24] Then I'm going to do display name.
+[03:27] The user, I'm going to call this user Justin Blakely.
+[03:33] That's just a random name I came up with.
+[03:35] Okay.
+[03:36] Justin Blakely.
+[03:38] And then space dash male nickname.
+[03:44] We'll just do lowercase Justin.
+[03:46] Blakely, all right, and then we'll do user principal name.
+[03:54] The user principal name is gonna be the email address name.
+[03:57] Now, in my case, that's gonna be,
+[04:00] I'm gonna say Justin Blakely at examlabpractice.com.
+[04:07] Now, if you're doing this along with me,
+[04:09] you need to know what your tenant name is, okay?
+[04:14] You'll need to know what that is.
+[04:18] then you can go, it'll probably be an onmicrosoft.com name
+[04:22] or whatever, but you can go into your web browser,
+[04:24] go to portal.azure.com, menu button,
+[04:28] go to Microsoft entry ID,
+[04:31] and you're gonna see your domain name right here.
+[04:35] So that's what you would put in.
+[04:36] It's probably gonna be like an onmicrosoft.com name
+[04:39] or something like that,
+[04:40] unless you've got a custom domain name, okay?
+[04:42] But I'm gonna go back in here, all right?
+[04:44] So there it is, I've typed that out Justin Blakely.
+[04:48] at examlabpractice.com, okay?
+[04:54] Typoed that, but it's not that big of a deal.
+[04:57] Okay, so now we'll go here, password policies.
+[05:05] I don't wanna do password policy,
+[05:06] I wanna do password profile, all right?
+[05:09] And this is where it gets a little bit complicated
+[05:11] because it just requires you to put a password in.
+[05:13] So I'm gonna put at symbol,
+[05:16] and then I'm gonna do open curly brace, all right?
+[05:20] And we're going to do force, change password, next sign in.
+[05:31] Alright, equals true.
+[05:36] Alright, and then semicolon, password equals, and then this password.
+[05:45] I'll just do password one two three with an exclamation point.
+[05:53] And then close curly brace.
+[05:56] Now, hopefully I didn't typo anything.
+[05:58] We'll find out though, right?
+[06:01] Hit enter.
+[06:02] Looks like I did not typo anything, so that's good.
+[06:03] It did work.
+[06:05] Alright.
+[06:07] And again, I do want to revisit something here.
+[06:09] A lot of times students ask me, why would I want to go through all this trouble of typing
+[06:13] all this out?
+[06:14] Okay, well front one thing you can copy and paste.
+[06:17] The other thing is remember if you had to create a bunch of user accounts, understanding
+[06:21] some of the syntax or if you needed to edit a bunch of user accounts, understanding the
+[06:26] syntax and understanding this can make your life a lot easier.
+[06:30] So in fact, I'll...
+[06:32] go over this in a minute,
+[06:34] we're going to talk about being able to bulk
+[06:36] enroll using these commands and all that.
+[06:39] Let's go just verify,
+[06:41] let's make sure that that user is created.
+[06:43] One thing I can do is I can run this command again,
+[06:47] and I can see that,
+[06:49] let's see Justin Blakely, there he is.
+[06:52] But I can also go into my web browser here,
+[06:55] open up portal.azure.com,
+[06:57] going to Microsoft Intra.
+[07:00] and I'll expand it where it says manage, I'll go to users.
+[07:04] And again, you're not gonna have all the same users as me,
+[07:06] but I'm gonna search for Justin, and there he is.
+[07:10] So you can see that user has been created, right?
+[07:13] All right, so I don't really need this user,
+[07:15] so I'm just gonna delete the user, okay?
+[07:18] Oh, keep in mind, I could also do that in PowerShell.
+[07:21] We can do remove-mguser.
+[07:26] I don't want to tab through all those, so I'll just put a U.
+[07:28] There we go.
+[07:29] So that would be the commandlet for that.
+[07:31] All right.
+[07:32] And okay, so now what I want to talk about,
+[07:34] I want to talk about a bulk enrollment.
+[07:36] So in Intra, we go here and keep in mind
+[07:41] that Microsoft constantly changes these portals.
+[07:43] So don't be surprised if yours looks different than mine.
+[07:44] But if I go new, okay, when I go to create a user,
+[07:48] that's individual user, right?
+[07:50] But also, what about if you look over here
+[07:51] to the right, you have bulk?
+[07:52] Bulk create. So you can bulk create users as well. So how would we do that with PowerShell? Well, imagine you have an HR department that when new employees get hired, they store their information in a spreadsheet and maybe they send you that spreadsheet. And then ideally what you want to do is just be able to import that spreadsheet into Microsoft Intra.
+[08:17] and have those created.
+[08:19] Of course, they do provide a graphical way to do that,
+[08:21] but we're looking at PowerShell right now.
+[08:23] So, if I, I've got a spreadsheet available right here,
+[08:27] and there's three different columns here.
+[08:31] We've got display name,
+[08:33] mail nickname, and user principal name.
+[08:35] Those are going to be our three basic pieces of information we're going to need.
+[08:39] Now, I've just got three different fake people I've listed here.
+[08:43] Now, you can take that information,
+[08:46] and it can be saved as a CSV file. And I'm going to save it in a folder called test on the C drive
+[08:54] as users.csv. Okay, so we can we can save that and you also could just do this through notepad.
+[09:07] don't have Excel on your computer,
+[09:09] which you very well might not.
+[09:11] Here is that exact same information
+[09:14] as comma separated value format in this text file.
+[09:17] Okay, again, I'm gonna go file, save as,
+[09:21] I'm gonna go to my C drive,
+[09:25] I'm just gonna create a folder called test
+[09:29] and then I'm gonna name this users.csv.
+[09:35] Okay, so that's going to be the name of this file.
+[09:38] All right, users.csv.
+[09:42] So we'll hit save.
+[09:44] Now I'm going to go back into PowerShell.
+[09:47] Okay, so there is the command we're going to use to do this
+[09:52] is the import CSV command.
+[09:54] So I'm just going to type cd space test,
+[09:58] dir and there is our
+[10:00] user's
+[10:01] File right there. So now we're gonna type dollar sign password
+[10:07] profile
+[10:09] Equals so we're gonna declare what we want the password to be for all these users and we're storing this data in a variable
+[10:16] So we're gonna go at symbol open curly brace
+[10:21] password
+[10:22] Equals and then I'm this is the password I'm gonna use
+[10:26] Alright and closing semicolon, which means I'm essentially ending that
+[10:33] variable and then I'm also going to say force change password next sign in equals
+[10:46] dollar sign true closing curly brace all right so we've now basically we've got
+[10:55] all that stored in memory this password profile and we're now ready to run the
+[11:07] I'm going to click screen first.
+[11:08] All right, import-csv.
+[11:11] That's going to be the command that's going to do this.
+[11:13] dash path.
+[11:16] I'm going to say, quote, open quotation mark dot backslash
+[11:21] users dot CSV.
+[11:23] Closing quotation mark.
+[11:24] So we're saying, hey, we want to import that CSV.
+[11:26] OK.
+[11:27] Now we're going to pipe that, which
+[11:28] means we're going to take the output of that
+[11:30] and plug it into the input of this next command, which
+[11:32] will be for each dash object.
+[11:36] You may be aware if you've done any programming for each is what we call loop.
+[11:40] A loop is where you want to perform an action against multiple objects.
+[11:44] In this case, we're going to create a bunch of users against the fields that are inside of our
+[11:51] spreadsheet. Notice these are so we're going to run a command against each one of these three.
+[11:58] And we're going to I want you to remember these names display name,
+[12:01] male nickname, and user principal name, because we're going to call those using what is called
+[12:06] All right, to be stored in memory and call them.
+[12:09] So we're gonna say forEach and then open curly brace,
+[12:13] which means we wanna run a command inside of the command.
+[12:16] This is the action we want to run
+[12:17] against each field in the CSV file.
+[12:21] This will be new-mguser, space dash account enabled colon.
+[12:28] We're gonna say dollar sign true
+[12:30] means the counts will be enabled.
+[12:32] And then we'll say dash display name.
+[12:35] All right.
+[12:35] And then here's the way you call the variables,
+[12:38] call the data that's inside the spreadsheet.
+[12:40] We're gonna do this little trick,
+[12:41] it's called dollar sign underscore.
+[12:44] All right, so dollar sign underscore, dot,
+[12:47] and then display name,
+[12:50] which is what it's called inside the spreadsheet, right?
+[12:54] The display name.
+[12:55] And then we're gonna do the same thing
+[12:56] with mail nickname, okay, mail nickname,
+[13:00] dollar sign underscore, dot, mail nickname, okay?
+[13:07] and then same thing with user principal name.
+[13:10] All right, so user principal name,
+[13:12] dollar sign underscore dot user principal name.
+[13:18] All right, so we've typed that in.
+[13:21] Now we're gonna call the password profile
+[13:22] that we just created,
+[13:24] password dot space dash password profile,
+[13:28] and then dollar sign password profile.
+[13:31] There is our exact variable.
+[13:34] All right.
+[13:34] So only other thing we need to do is closing curly brace and
+[13:39] we're going to go ahead and hit enter.
+[13:40] All right, and we'll see if it creates our users.
+[13:42] It looks like it did.
+[13:43] We can verify that by going over to portal.azure.com and going to
+[13:47] Intra and then our users.
+[13:49] We just search for the names.
+[13:50] I'll search for Justin first.
+[13:52] All right. So there's Justin Blakely.
+[13:57] That was our first user we created.
+[13:59] There's another one called Sarah.
+[14:01] Sarah Lee. Then the last one,
+[14:06] that we created was a user named Robert Kim.
+[14:09] And there's the user account, you can see it did work.
+[14:12] Now I wanna show you real quick
+[14:13] how we can delete all the users.
+[14:15] I'm just gonna paste the command in
+[14:17] so you don't have to watch me type
+[14:18] the whole thing out this time, but we'll go here,
+[14:23] paste the command in import-csv-path,
+[14:26] the users for each, we're calling a variable, user, get.
+[14:32] dash mg user we're filtering by user principal name based on what's in that csv file and then
+[14:37] we're going to run this command remove dash mg user based on that so i'm going to go ahead and hit enter
+[14:43] and that should delete our users okay coming back in here if we go back over here to users
+[14:51] and we search based on robert robert's gone zara's gone and justin is gone so as you can see
+[15:05] By using that command that I've got up on the screen. All right now I want to show you
+[15:12] How if we wanted to we can associate?
+[15:18] licenses for our users
+[15:20] Okay, so
+[15:23] We can use a command called get dash mg
+[15:27] subscribe
+[15:29] Subscribe skew and we can see the various
+[15:32] subscriptions that are
+[15:34] Microsoft 365 services and all that has of course when you look at it at first
+[15:38] It doesn't make a lot of sense because it's just it's all written in this table view
+[15:41] So what I'm gonna do I'm gonna run this command here get-mg subscribe skew pipe that over to
+[15:48] select dash object and
+[15:50] That's just gonna make it where I'm only gonna show certain pieces of information the information I want to see will be the skew
+[15:57] part number comma
+[16:00] skew ID comma
+[16:02] consumed units. That's going to show me how many units are available. So we'll
+[16:08] hit enter. Alright you can see the subscriptions. This actually is the
+[16:13] Microsoft 365 subscription. Okay you could go into admin.microsoft.com and go
+[16:20] to user to look at your your licenses and you'll see the skew ID and all that
+[16:23] but that is actually the Microsoft 365 license right there. So let's say I
+[16:31] or Justin Blakely or whoever,
+[16:35] I could type this command set-mguserlicense-userid.
+[16:45] Okay, and then I'll put in jc at examlabpractice.com
+[16:51] for myself, give myself a license.
+[16:55] I actually had already given myself a license
+[16:57] but I removed it so I could do this demo.
+[17:00] dash add a license but if you want to do this to any other user this is how you would do it.
+[17:05] So add license and then we'll do at open curly brace and then skew id equals and then this id
+[17:18] number right here. I'm just going to copy that and then we'll put that in quotation marks. I'm
+[17:30] Then the last bit is remove licenses at opening, closing parentheses. Now what that's actually
+[17:40] doing is it's saying don't remove licenses. I know that sounds weird because the name of the
+[17:47] parameter but it is saying don't remove any licenses. So we're going to go ahead and hit enter
+[17:54] and at that point John Christopher should now officially have that license and it's showing
+[18:00] a license to a user. And of course you could write a script to do this in bulk if you wanted to
+[18:07] now that you know that much. Alright, last thing I want to show you here, let's look at how we
+[18:11] could create a group. So let's say we wanted to create a Microsoft 365 group. We can type
+[18:31] 365 group. That'll be the name of it.
+[18:37] Okay. Space dash mail enabled. True.
+[18:44] That means it'll be a group that gets an email address.
+[18:47] It's one of the benefits of a Microsoft 365 group.
+[18:50] Dash mail nickname. I'm going to call it test M365 group.
+[18:56] That'll be its nickname. Okay.
+[18:59] dash security enabled that means do I want it to be given permissions and things like that I'm
+[19:05] gonna say no to that so colon false okay dash group type group types and then at open parentheses
+[19:16] and the word unified which oddly enough that is the old name of the Microsoft 365
+[19:27] Actually, before Microsoft 365 group,
+[19:29] they were called Office 365 group,
+[19:30] and then before that, they were called Unified.
+[19:32] So Microsoft loves to change the names.
+[19:34] You probably already know that.
+[19:35] But I think I've done everything correctly.
+[19:37] I'm going to hit Enter, and it's now created my group.
+[19:41] So if I open up here,
+[19:43] go back into port.azure.com,
+[19:46] go to Microsoft Intra,
+[19:48] by going here, Microsoft Intra, go to Groups.
+[19:51] Let's just search for the word.
+[19:53] Let's go to All Groups,
+[19:54] and we'll just search for the word Test.
+[19:56] you may not see the same groups as me and
+[20:00] And there it is, test m365 group.
+[20:03] All right.
+[20:05] And so that is how we can create a group.
+[20:09] And I know this is getting longer and longer,
+[20:12] but if you did wanna add a user to a group,
+[20:15] you can use the new dash mg group member commandlet,
+[20:19] which will allow you to actually add users to the group.
+[20:22] But I'm gonna leave it with that.
+[20:24] I hope this has been instructive to you.
+[20:26] I hope you've learned a good bit
+[20:29] going through the motions of working with PowerShell with Graph and Microsoft Intra.
+[20:35] This is just one of those things you just got to jump in and start playing around with it to
+[20:38] learn it. Don't forget use the the Learn documents and use AI to assist you in learning this. It'll
+[20:45] make your life a lot easier. With that said, you're now ready to move on.

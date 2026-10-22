@@ -1,0 +1,135 @@
+# 94 - Configure public IP addresses
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/94 - Configure public IP addresses.mp4
+Fetched On: 2026-10-21 19:55:03
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about adding public IP resources into your Azure environment.
+[00:06] Currently, I am on portal.azure.com and I'm inside my vNet demo RG resource group.
+[00:12] You can see I have four vNets.
+[00:15] VNet one is sort of like my hub vNet and it is paired to two, three, and four.
+[00:21] So they are spoke.
+[00:22] VNets. Okay, so we do have peering and all of that enabled. Now the issue right now is is that
+[00:29] I do not have any public IP addresses that are available. So if I wanted to associate a public
+[00:34] IP address to a virtual machine or I wanted to associate it to a load balancer to an Azure
+[00:40] firewall or some kind of virtual appliance like that, I don't have a public IP address to do that.
+[00:45] Now for the most part, I'll also kind of tell you that yes, you can go ahead and create a
+[00:51] now which is what we're gonna do but another alternative is for the most part
+[00:56] when you go to add virtual appliances or you add a virtual machine or you add you
+[01:00] know load balance or whatever it gives you the opportunity to add and create a
+[01:04] public IP address from within the creation of those resources as well so
+[01:09] it's not always critical that you create a public IP address ahead of time
+[01:13] but we're gonna do that in this video I'm gonna go right here and click to
+[01:21] public IP, all right, so public IP addresses,
+[01:27] and we're gonna look for Microsoft,
+[01:29] there it is right there, Microsoft's public IP address.
+[01:31] We're gonna click to create public IP address,
+[01:34] and keep in mind, you could have just searched for this,
+[01:37] you know, through the search capabilities as well,
+[01:39] all services and all of that,
+[01:41] but that's just another way to do it.
+[01:43] So here I am inside, I'm gonna go with my
+[01:45] VNet demo RG resource group,
+[01:48] I'm gonna do the East US region,
+[01:51] I've got to specify what I want to name this IP. I'm gonna name it PIP demo IP
+[02:00] So PIP is just public IP address. It's what that stands for. Okay, and so
+[02:06] From there, I specify my version.
+[02:07] You have version four, version six.
+[02:09] I'm gonna go ahead and tell you that the vast majority
+[02:10] of everything out there uses version four in Azure.
+[02:13] There are a few things that use version six,
+[02:15] but actually you have the most flexibility with version four,
+[02:18] believe it or not, even though it's the older version.
+[02:21] Then you have your SKU, your stock keeping unit.
+[02:23] You'll see that you have a whopping one option here
+[02:26] for that.
+[02:26] That's because most recently Microsoft has decided
+[02:29] they're gonna deprecate the older one,
+[02:31] which is called basic.
+[02:33] So there used to be an option called basic.
+[02:35] And now you have just standard basic gave you the ability to use dynamic and standard
+[02:40] gave you the ability to use static and all of that.
+[02:43] But as of right now, they've decided to deprecate basic.
+[02:46] So then we got our availability zone.
+[02:48] We can choose to utilize availability zones if we want for redundancy of this, but I'm
+[02:53] going to choose no zone for that.
+[02:55] Next we have the tier and you can see there's two options there, regional or global.
+[03:00] So regional means the public IP address is going to be tied to a specific Azure region like East US or West Europe or whatever region you're utilizing.
+[03:10] It can be associated with resources like your virtual machines, load balancers, application gateways, but it's going to be within that region only.
+[03:18] So it'll be tied to a specific region.
+[03:20] Most of your virtual network resources are going to utilize this model of regional.
+[03:26] So that's pretty common.
+[03:29] Now, as far as global goes, if you're building some kind of global service, like there's
+[03:33] a few things out there like Azure front, what they call Azure front door traffic manager,
+[03:38] that's actually used to balance traffic between regions. That's when you'd have to go with the
+[03:45] global tier. Okay, most of the time, though, you're just going to stick with regional.
+[03:49] Okay, so below that I've got the IP address assignment.
+[03:52] You'll see dynamic and static.
+[03:54] You'll see dynamic is grayed out.
+[03:55] You only can choose dynamic if you have a basic skew, which they are deprecating that.
+[04:00] All right, eventually this is all going to change.
+[04:03] As always, Microsoft likes to change their screens constantly.
+[04:06] So if you're watching this video, it might be that this is not even available anymore.
+[04:11] Okay.
+[04:13] I do update my videos pretty often, but yes, they change these things very very frequently
+[04:19] Okay, so static is my only option. That means I have an address that I'm gonna keep
+[04:23] Dynamic would have meant that the address could change periodically, but static means I keep the same thing then I've got the routing preferences here
+[04:31] which is Microsoft network,
+[04:33] it just means traffic is going to be routed
+[04:35] through the Microsoft backbone.
+[04:37] If you choose Internet, it means traffic will just route
+[04:40] directly through the Internet backbone based on your ISP,
+[04:43] and all that doesn't use the Microsoft backbone for routing.
+[04:45] Most people like the Microsoft network
+[04:47] because they're routing with Azure resources,
+[04:50] you get better performance.
+[04:52] Then you have the idle timeout.
+[04:55] So this gets into what they call keep-alives.
+[04:59] with TCP IP. If you know anything about TCP IP, you know that when a session, a connection is
+[05:04] established between one device and another device, it's going to keep that session alive for a certain
+[05:10] amount of time. So they tell you that here it says keep a TCP or HTTP connection open without
+[05:16] relying on clients to send keep alive messages. It'll just automatically keep the connection going.
+[05:22] All right. And you can see that set to four minutes by default. Then you have a DNS label.
+[05:27] So, your DNS label is going to be whatever you want your DNS name to be associated with
+[05:33] this.
+[05:34] Obviously, you can set up a custom name.
+[05:37] I'm going to call this exam lab practice pip.
+[05:44] Okay, but keep in mind again, I could set up a custom name.
+[05:47] I could have an actual custom domain name through DNS and all that.
+[05:50] But right now it's going to be examlabpracticepip.eastus.cloudapp.azure.com.
+[05:55] That'll be the name it gets.
+[05:57] All right, and then below that I have domain name label scope.
+[06:00] So the concept of domain name label scope is that this is going to protect
+[06:05] you against what's called dangling DNS names.
+[06:08] It's kind of a funny term, but the idea is when you have a resource that gets deleted that has a DNS label associated with it,
+[06:16] it could be that that DNS label could be left behind and it could be hijacked by somebody and utilized against you in some way.
+[06:24] So utilizing this feature means that Azure adds what's called a hash segment to your fully qualified domain name
+[06:32] and it'll be based on whatever scope...
+[06:34] option you choose here. This is going to ensure that the names aren't reused by some unauthorized resource or individuals.
+[06:41] The options you've got, you've got what's called tenant reuse.
+[06:46] And this the hash is essentially going to use your tenant name plus a subscription name and a resource group
+[06:52] associated with that domain name. So this is a very long one. Then you've got
+[06:56] Subscription reuse. This is going to do the subscription, the resource group, and the domain
+[07:02] label. So it's a little smaller. Then you got resource group reuse. It's just going to use
+[07:06] the resource group name along with the domain label. And then no reuse, which is just a random
+[07:14] GWT. What's called a globally unique identifier. Just adds a globally unique identifier to it. And
+[07:20] then of course you can do none, which doesn't do any of that stuff.
+[07:24] Okay, and that's actually what I'm going to do.
+[07:27] All right, as opposed to using one of these. I'm just going to choose none.
+[07:31] All right, at that point, I'm going to click next, and then I could utilize the
+[07:36] DDOS protection. The default is to use whatever the virtual network is using. So whatever virtual
+[07:41] network is associated, it's just going to use that. If you have distributed denial of service
+[07:47] attack protection, you could add a distributed denial of service attack.
+[07:52] protection for the specific IP or you can just have this disabled all together. I'm just going
+[07:56] to leave it set to the default. Then I'm going to click review and create. It's going to validate,
+[08:02] make sure everything is good, and then I'm going to go ahead and create the IP. We'll just pause
+[08:06] the recording while it's getting created. Now I'm going to click go to resource and there you
+[08:11] go. We've now got our public IP address added.
+[08:14] Currently it's got this DNS name associated with it.
+[08:17] And if we were to set up a virtual machine or some kind of virtual appliance,
+[08:21] a load balance or whatever it may be, we could associate this public IP address with it.
+[08:25] If I go into my vNet demo RG, you can see that it shows up as a resource.
+[08:30] So that's how you can add public IP addresses within your Azure environment.

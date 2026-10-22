@@ -1,0 +1,241 @@
+# 05 - Having a Solid Foundation of the Microsoft Cloud Services
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/05 - Having a Solid Foundation of the Microsoft Cloud Services.mp4
+Fetched On: 2026-10-21 20:34:58
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:03] So with the creation of virtualization, it got companies thinking, companies like Amazon and Google and Intel and IBM and eventually even Microsoft that,
+[00:13] hey, we've got these massive data centers. Why not allow people to pay us to host their virtual machines on our data center?
+[00:31] to host their virtual machines and they don't have to deal with all the headaches
+[00:36] of dealing with everything on premise. So this is really the idea
+[00:41] of where cloud services came from. And so I'm going to draw this kind of big
+[00:47] cloud here. This is going to represent cloud computing if you will. We'll
+[00:52] have a connection coming down here. Okay, and I will just kind of clean that up
+[01:01] somewhat look nice. So this being you know the big guy big thing is this is not
+[01:06] a new concept of if you think about humans as a whole we have offered
+[01:12] services for years. I know how to change the oil in my car but I don't
+[01:16] necessarily enjoy doing it. So I can pay a mechanic shop
+[01:23] the the fee and they will do it for me as a service right well this is the idea
+[01:29] of cloud services so there's some acronyms i want to introduce you to the first one being the term
+[01:34] IaaS and that is infrastructure as a service so infrastructure as a service
+[01:40] means the cloud provider is offering their infrastructure for a fee
+[01:46] as a service. Okay, so the idea being something like this instead of me having to host my virtual
+[01:54] machines and all that in an on-premise environment, I can pay this cloud company
+[01:58] to host virtual machines for me. They can also host a virtual network for you. They can host
+[02:05] They can have storage that's offered to you.
+[02:09] They can have firewalls, virtual firewalls that are associated on those virtual networks
+[02:14] and virtual load balancers.
+[02:17] Okay, they can have apps out there that are available.
+[02:22] They can have virtual databases that are hosted in the cloud.
+[02:25] So essentially just about anything you could imagine that you can host on premise can
+[02:29] be hosted out there in the cloud service.
+[02:33] Amazon, Google, IBM, Intel, Microsoft, these various companies offer this Microsoft's cloud service that does this.
+[02:43] Their IaaS service is called Azure.
+[02:46] Now, let me just kind of clarify.
+[02:48] You may pronounce that name, that word a little different than I do, Azure or Azure or Azure.
+[02:54] Actually, years ago when I was first learning Azure, I actually went to...
+[02:59] the internet and started watching videos of the developers that created Azure and
+[03:04] the first few developers that I watched,
+[03:06] that's how they pronounced it.
+[03:07] They pronounced it Azure.
+[03:08] So that's how I just assumed
+[03:10] that it needed to be pronounced.
+[03:12] Of course, I learned later down the road
+[03:14] that not all the developers even agree
+[03:16] on how to pronounce that word.
+[03:17] Some of them pronounced it Azure, Azure, Azure.
+[03:21] I've even heard somebody pronounce it Azure-ray.
+[03:23] So this is one of those tomato, tomato,
+[03:25] pronounce that word any way you wanna pronounce it.
+[03:27] That's how I say it, which is Azure, okay?
+[03:30] So Azure is Microsoft's official.
+[03:33] in our infrastructure as a service.
+[03:36] And the way that it all works is you pay a fee for what you use every month.
+[03:40] Basically how much CPU, memory, storage, network, all of that that you use.
+[03:46] That's what you're going to pay for.
+[03:48] Okay.
+[03:48] Now there are some other terms, other acronyms that I want to introduce you to.
+[03:55] There is an acronym...
+[03:56] called PAAS which stands for Platform as a Service and an acronym called SaaS which is
+[04:03] Software as a Service. Now the the the idea there
+[04:08] being that there are, well we'll start with software as a service first.
+[04:12] Software as a service, the idea is that there is a fully functional app or application that is 100% ready for you to start using
+[04:21] or your users to start using. All you got to do is just jump right in and start using it.
+[04:26] Okay, so there are some Azure services that are...
+[04:31] Software as a service. There's also what are called platforms as a service. Now, platform as a service is kind of a
+[04:36] There's a little bit more work involved from an admin standpoint
+[04:39] So a platform as a service means there is a some type of software platform that is available for you to start using
+[04:47] and it's 100% ready for you to use but you have to go and administer it and use it
+[04:53] before it's going to really do anything. A good example of this is Microsoft's
+[04:58] directory services in the cloud is called intra id.
+[05:03] intra id.
+[05:05] Alright, which I want to make it's very important that you realize that this was formally called Azure AD and there's still a lot of
+[05:14] Documentation out there that refers to this as Azure AD. So it's very important that
+[05:20] That you are aware of that
+[05:22] Now, you are taking my course right now and you should realize that I have hundreds of hours of videos that still may...
+[05:30] that I've got to update that involve that term Azure AD. There are literally hundreds of hours that I have recorded using the term Azure AD.
+[05:40] And I'm in the process of updating videos but be aware that I don't have them all upgraded.
+[05:45] So you may hear me refer in the course...
+[05:48] to stuff as Azure AD. I actually have a video on this for you to watch after these foundation videos.
+[05:55] It's a video that says do not skip. So please do not skip that video. Make sure you watch that video
+[06:01] because it's going to talk about this name change. So anyway the name is now intra-id.
+[06:07] It's just a name change.
+[06:08] They changed it to Azure AD.
+[06:10] The services are pretty much all the same.
+[06:12] It's just a name change.
+[06:14] Okay, so IntraID is a platform as a service.
+[06:18] Now it is Microsoft's directory services.
+[06:20] This is where your user accounts and passwords
+[06:23] and groups and permissions, role permissions
+[06:26] and all that are all managed
+[06:28] through IntraID formally Azure AD, okay?
+[06:32] Whereas on premise in a domain, we called it
+[06:36] ADDS, Active Directory Domain Services.
+[06:38] I think that's part of the reason Microsoft changed the name to kind of distinguish the
+[06:41] difference between the on-premise Active Directory and the former Active Directory
+[06:46] Azure AD to IntraID. Anyway, this platform as a service is ready for you to use, but there's only
+[06:54] like one user and that's the admin and then you're responsible for going in there as an admin and
+[07:00] adding users and controlling things. That's why it's a platform as a service. It's not
+[07:05] 100% set up. You have to administer it. Now Microsoft's main platform as a service
+[07:14] functions and software as a service. They have something called Microsoft 365. So
+[07:21] There's really two parts to the Microsoft Cloud Service.
+[07:24] There's Azure, which is mostly focused on the IaaS side of things.
+[07:30] And don't get me wrong, in Azure, there are also some
+[07:33] Platform-as-a-Services and Software-as-a-Services,
+[07:35] but it's mostly geared towards IaaS.
+[07:39] Whereas Microsoft 365 is mostly geared towards Platform-as-a-Service.
+[07:43] Now, these two are very related.
+[07:46] Microsoft 365 sits on top of Azure.
+[07:49] You can't have Microsoft 365 without Azure.
+[07:52] And if you create an Azure account,
+[07:54] then it'll allow you to automatically create
+[07:57] a Microsoft 365 account.
+[07:58] So these are all related.
+[08:00] You're not just gonna create an Azure account
+[08:01] or not just gonna create a Microsoft 365 account.
+[08:03] They're pretty much linked together.
+[08:06] Okay, now in the Microsoft 365 services,
+[08:09] you have lots of platform as a services
+[08:10] and software as a service.
+[08:12] For example, we have
+[08:15] the what are called the Microsoft 365 apps for enterprise which that was formally called Office 365
+[08:25] and that's the downloadable version of the Microsoft 365 apps formally the Office 365 apps like Word, Excel, PowerPoint all that
+[08:33] and there is also something called Office
+[08:36] for the web. Now that is fully a software as a service. The Microsoft 365 apps for enterprise,
+[08:44] that is actually a mix. It's a platform as a service and a software as a service. Most
+[08:47] people refer to it as a software as a service because they're downloadable apps. But as an
+[08:51] admin, from an admin standpoint, we have to administer that. So the administration side
+[08:56] of it is platform as a service. Office for the web is 100 percent
+[09:01] Software as a service, these are web-based versions of the Office apps that are ready for you for your users to use
+[09:07] They get it once they get a license. They can use it. Okay, then we have
+[09:12] Exchange online, okay
+[09:14] So the administration side of that is a platform as a service
+[09:18] But the user side of that is a software as a service, right? And then we've got SharePoint
+[09:24] Online, which is the same idea. It's a
+[09:26] you know, admin side is a platform as a service, but the user side, which is what most everybody
+[09:30] focuses on, is a software as a service. We have Microsoft Teams, same thing for that. Okay,
+[09:38] you know, for messaging and all of that fun stuff, we have a product called Intune, which is an
+[09:44] incredibly powerful product. Mobile device management, mobile application management.
+[09:53] the place of GPOs in the cloud.
+[09:56] So on premise, we can control the settings and parameters.
+[10:00] attributes and we could deploy software and all that using GPOs on-premise. Well
+[10:04] now when it comes to the cloud service we can use Intune. We can actually
+[10:07] control on-premise machines from Intune. So it is very very powerful and
+[10:13] incredibly powerful product. Then we've got we've got OneDrive for business.
+[10:19] OneDrive for Business is a cloud-based storage
+[10:22] that users can have access to.
+[10:24] So anyway, there's actually so many products
+[10:28] that are cloud-based products,
+[10:29] there's no way I could put them all in here,
+[10:31] but here's some of the main things.
+[10:33] Now, as far as the licensing and all of that,
+[10:36] with Azure, you are paying for what you use,
+[10:39] CPU, RAM, storage, and network.
+[10:41] But for the Microsoft 365 services,
+[10:43] you have what are called subscriptions,
+[10:46] and you purchase a subscription
+[10:48] So for example, if I purchase a Microsoft 365 subscription, I can purchase certain amount of licenses and I can issue those out to my users
+[10:55] and I will pay a monthly fee for however many licenses that I've got with my subscription.
+[11:01] Okay, and that's just giving you a basic understanding of how that works exactly.
+[11:06] Okay, so ultimately though, if I could kind of color code this
+[11:13] will say that the Azure side of this, IAS,
+[11:18] and again, Azure does have some platform as a service stuff
+[11:20] as well as software as a service,
+[11:22] but it's mostly geared to be a infrastructure service.
+[11:26] And then the Microsoft 365
+[11:30] is mostly platform as a service, software as a service.
+[11:34] So if I was to kind of draw a,
+[11:37] you know, kind of just draw around these,
+[11:39] we would say that the, these right here,
+[11:43] all geared towards Microsoft 365 and then this these are geared towards the
+[11:50] infrastructure service which is Azure and both of these Azure and Microsoft
+[11:55] 365 they share intra ID. They share intra ID okay. Red and blue make
+[12:04] purple right? Okay so they actually you create users in the Azure side
+[12:11] or the Microsoft 365 site, you're going to see the same users because they are linked together.
+[12:16] They share the same directory service. So it's important to understand that.
+[12:20] Now the other piece of this is what about situations where you want to link all this together?
+[12:28] So it's not uncommon nowadays for companies, you know, to have this triangle, to have this
+[12:32] on-premise domain and then also start utilizing Microsoft's cloud services. And then...
+[12:38] you know, in the for years and years, they've always pushed this thing called SSO. SSO is single sign on where you have a user has a user account and that user account gives them access to everything they need.
+[12:51] Well, we don't get SSO if you have to have a user account to access things in your domain and then a different user to access things in the cloud, right?
+[13:00] Well, Microsoft has ways around that.
+[13:04] services that you can use for linking these together.
+[13:09] And that service, let me just kind of move some of this
+[13:12] around a little bit so I can make a little bit more room.
+[13:16] We'll put the DNS server there.
+[13:18] We'll move this little RAS server down over here.
+[13:22] And the server is called Microsoft Intra Connect.
+[13:33] formally Azure AD Connect.
+[13:37] Okay, so then so again,
+[13:40] it's called Intra Connect now,
+[13:43] and it used to be called Azure AD Connect.
+[13:46] And I'm definitely, I like to refer to it with the old name as well just because be advised you really kind of need to know the old name as well because there's still a lot of documentation that will refer to this as the older name.
+[13:58] The newer names, Intra Connect, the older name is Azure AD Connect.
+[14:03] But this was a server you could set up on premise and what it would do is it'll synchronize your user accounts out to the cloud.
+[14:16] whatever users you have on-premise,
+[14:18] and you don't have to synchronize them all,
+[14:19] you could pick and choose which one you synchronize,
+[14:21] but your user accounts are gonna sync out to intra ID.
+[14:25] And now what'll happen is,
+[14:27] you have this thing called seamless SSO,
+[14:29] where when your users log onto the domain,
+[14:32] it logs them on in both places.
+[14:34] They log onto the on-premise domain,
+[14:37] as well as in the cloud, which is really, really cool.
+[14:40] Now that is a heavier weight version.
+[14:45] a lighter weight version that's a very very lightweight application. You don't
+[14:49] actually have to dedicate a server to it like they kind of want you to with
+[14:52] Interconnect. There is actually another lighter weight tool called
+[14:57] Intrasync or Intra ID sync which is a lighter weight. Now there's some
+[15:01] pluses and minuses to go in either route which I'm not going to get into
+[15:05] right now but the the traditional way to do this was
+[15:08] to use this here, Intra Connect, formerly Azure AD Connect.
+[15:12] Now the other thing I'll tell you is this does not sync back.
+[15:15] So it would sync users out,
+[15:18] but it won't sync users that are created out in the cloud
+[15:21] back to on-premise.
+[15:22] You cannot currently do that.
+[15:24] You can't synchronize users that are created in Intra ID
+[15:28] down here, but any users can be synced out
+[15:32] and it'll even make it where if they change their password,
+[15:35] like out in the cloud, it'll sync that as well.
+[15:38] So anyway, that kind of gives you a rundown of that.
+[15:41] Now, I'll also tell you that Microsoft is moving away from domains.
+[15:46] In fact, if you got an on-premise domain like what you see here,
+[15:53] then yeah, it's a great idea to utilize this.
+[15:55] But if you're a new company, and this really pains me to say it because I have...
+[16:00] fed my family for over two decades by not only teaching about Active Directory on premise,
+[16:05] but also implementing Active Directory on premise as a consultant. And so it kind of pains me to say this, but...
+[16:11] As a consultant now, I'm not even recommending that newer companies implement a domain anymore.
+[16:17] A lot of companies are now moving to the cloud and there's ups and downs of that, but to be honest with you, in most cases,
+[16:24] your company gets out cheaper by utilizing cloud services.
+[16:37] in the cloud. You can even have client machines hosted in the cloud, but I'm not going to
+[16:40] dive into that right now. Ultimately though, if you are a company that's been around for
+[16:45] a while, then the traditional approach that you see here where you've got a domain and
+[16:51] then you're starting to move into the cloud, you can set up Intra Connect, formerly Azure
+[16:56] AD Connect, or Intra ID Sync, which is the lighter weight version, and you can have
+[17:05] Alright, well hopefully these foundation videos have been instructional to you.
+[17:11] I hope you got a lot out of this and you're ready to move on.

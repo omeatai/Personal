@@ -1,0 +1,173 @@
+# 78 - Provision a container by using Azure Container Instances
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/78 - Provision a container by using Azure Container Instances.mp4
+Fetched On: 2026-10-21 20:12:41
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now, one of the most common ways that people will host containers inside of Azure is with
+[00:05] what is called a container instance.
+[00:07] If I go here to the menu button and I go to all services, I can search for container.
+[00:13] You're going to see the container instances resource.
+[00:18] I can go here and I can create and all of that.
+[00:21] But if you are going to want to provision a container based
+[00:25] on a Azure Container Registry,
+[00:28] you're going to want to customize and
+[00:30] manage things a little bit on your own,
+[00:32] and you're usually going to use Docker for that.
+[00:34] Docker is the sort of the-
+[00:36] leader in the world for dealing with containers.
+[00:40] So we're going to download install docker on our computer here.
+[00:43] I'm running Windows so I'm just going to download the Windows version and install
+[00:46] it on my Windows computer. If I go out to Google and I just type
+[00:50] download docker hit enter. Okay I can go right here to
+[01:00] You can see there's different versions. I'm gonna go with obviously the desktop version windows and then I would go with this doctor Docker
+[01:07] Siki 4-bit now I've already done that if you're doing this with me
+[01:11] Just you download it and just choose all the defaults and then it will ask you to reboot your computer
+[01:18] Okay, so once you have done that
+[01:21] You are then gonna be able to
+[01:24] Open up Docker from the command line after you review your computer
+[01:28] So you could right-click start and go to terminal as an admin or PowerShell as an admin at that point
+[01:34] I'm in my PowerShell and I can type Docker and it will show the Docker command
+[01:40] So that's how you're gonna know that Docker has successfully been installed
+[01:44] But that's gonna be the first step of course is to just to get Docker installed to begin with right? Okay
+[01:51] So the next thing is going to be that I need to log on to my Azure registry.
+[01:59] If I'm going to interact with it and I'm going to download and do things with my Azure registry,
+[02:05] I need to log on and authenticate to that.
+[02:07] So let me go back over here to portal.azure.com, go to the menu button.
+[02:12] All services and I'm going to search for registry and then I've got container registries
+[02:18] and I have this container registry that I've already created called registry test elp.
+[02:24] Okay I need to make sure that I know what my credentials are so if I go over here to access
+[02:31] keys I know my username is going to be this name here registry help registry registry elp. Okay
+[02:42] from Docker
+[02:43] Okay, so the actual domain name for this I'm gonna copy this I'm gonna go over here to overview
+[02:48] I'm gonna copy this domain name
+[02:51] And I'm gonna go back over here and I'm gonna put
+[02:54] Docker
+[02:56] login
+[02:57] And then that registry name and I'm gonna hit enter it's gonna ask me for my username now. I know what my username is
+[03:07] Right that is gonna be the
+[03:11] registry
+[03:14] test
+[03:16] That's the name of my admin, registry test, EOP.
+[03:20] But then the password is a little bit more complicated than that. I'm going to
+[03:23] go back over here to my Azure portal, go to access keys,
+[03:29] show the key, and then I'm going to copy that. Now I'm
+[03:32] going to go back in here. I'm going to paste that key in by right clicking. Now
+[03:35] even though I did right click, you can't see the key on the screen.
+[03:38] It did paste it in. It's just not showing it. So I'm going to hit enter and
+[03:45] Okay, so one thing you can do with Docker is
+[03:50] When you can look at the Docker
+[03:54] Repositories and all that that's out there if you open up the Docker desktop app you can look at the various containers that are out there
+[04:02] Microsoft also have some that you can test. I'm just gonna I'm gonna create a real simple one called hello world
+[04:08] That Microsoft has put out there and so I'm gonna run this command Docker
+[04:13] Pull which means I want to pull a container image and this is going to be Microsoft's little URL mcr.microsoft.com
+[04:24] slash mcr
+[04:26] Hello, dash world
+[04:28] Okay, so mcr.microsoft.com slash mcr slash. Hello dash world
+[04:34] Alright, so we're gonna go ahead and run that and it's gonna download this little image
+[04:38] So it does say that it it did download this little image
+[04:41] That was downloaded successfully.
+[04:43] Now in order to set up a image out there in your registry,
+[04:51] okay, in other words, if I go back over here to my registry,
+[04:54] let's go back into here, and I look at repositories.
+[04:58] You can see that I have nothing right now.
+[05:01] Now in order for me to do this, whatever I'm gonna upload,
+[05:04] it must have what is called a tag.
+[05:06] A tag is a way of...
+[05:08] distinguishing between different images. They can have different versions and
+[05:12] tags. The tags indicate sort of like what version it is you want to upload. So you
+[05:17] have to have a tag associated with it. So I'm gonna run this little command
+[05:20] here. Docker tag mcr.microsoft.com slash mcr slash hello-world. Okay that's
+[05:33] gonna be the command.
+[05:35] And then I'm there that's gonna be the the the image I'm trying to associate here with the tag and I'm gonna put
+[05:42] Registry and I need to copy this name right here
+[05:46] So I'm gonna copy that name is gonna highlight it with my mouse right click and then I'm gonna paste that in
+[05:53] All right, then I'm gonna put slash
+[05:56] Hello
+[05:58] Dash world and I'm gonna hit enter
+[06:01] Okay, so I've now put a tag on this image that I'm going to now push out to that
+[06:08] Registry, so this is the command. It's gonna. Let me push it out Docker
+[06:13] push
+[06:14] All right, and I'm gonna copy this right here all of this
+[06:21] Paste that in and I'm gonna hit enter. Okay. It says it's using tag latest
+[06:26] Didn't get an error. So that's a good sign now. Let's go back over here to my portal and I'm gonna hit refresh
+[06:32] and look at there.
+[06:34] And the main thing I need to see when I click on this
+[06:36] is I've got to see that it says tag.
+[06:38] There needs to be a tag there.
+[06:39] If you don't have a tag there,
+[06:40] that's gonna be a problem, okay?
+[06:43] All right, so we've got our little registry.
+[06:46] So now, let's go to, right here,
+[06:50] we'll go to the menu button and go to all services
+[06:53] and I'm gonna search for container instance.
+[06:57] All right, so we're just gonna deploy this container.
+[07:00] We'll click create, all right?
+[07:03] I can create a new resource group if I want or I can use an existing resource group. I'm going
+[07:09] to go with my container registry resource group and keep in mind that list of resource groups
+[07:14] that I just showed you. You may not see the same resource groups as me. This is the only one I care
+[07:18] about in this video. Okay and then I'm going to give this a name so I can name this whatever I
+[07:30] regions east US, not going to worry about availability zones or any of that.
+[07:34] I can choose from the SKU here, stock keeping unit, standard container group with hypervisor
+[07:40] isolation or confidential, confidential container group provides end use memory encryption,
+[07:46] hardware isolation.
+[07:47] I'm just going to go with standard.
+[07:48] You can price this out.
+[07:50] Now we're gonna go, we have image source.
+[07:53] We can use Quick Start images.
+[07:54] These are images that Microsoft made available
+[07:56] through Azure.
+[07:57] We've got the Azure Container Registry
+[07:58] or we could actually specify a different registry.
+[08:01] We're gonna go with the Azure Container Registry.
+[08:03] I have one already.
+[08:05] There it is, that one I've created.
+[08:07] The image that's available,
+[08:08] I only got one image that's available.
+[08:09] So it's the Hello World one and then the tag.
+[08:12] Now if it did not have a tag,
+[08:13] then this, you wouldn't be able to list anything here.
+[08:15] So the latest is that tag and that's
+[08:17] based on what we did right here. So that command. Alright, we can also set a size. One virtual CPU,
+[08:27] 1.5 GIB. We can alter the RAM, give it more RAM if we want. All of that. I don't need to do any
+[08:36] of that. Okay, from there I'll click next. So then I can have a networking name and I can have a
+[08:47] ELP. All right, and that's fine. Port 80, monitoring. I don't really need to do any
+[08:55] monitoring here. I'm going to turn that off and then I'm going to go advanced.
+[08:58] Nothing really here with advanced. I just have it just has a restart policy if
+[09:02] something notices something out of the ordinary or restart it. And for as far
+[09:06] encryption keys goes is using a Microsoft Manage key as opposed to your
+[09:09] customer manage key. So we're going to click review and create and then I'm
+[09:16] Alright, and now we'll click go to resource and at that point you can see the FQDN of
+[09:22] it.
+[09:23] We can actually start this container instance if we want and let it start running and it
+[09:29] will be serving its purpose.
+[09:31] In this case it's just Hello World, but okay, I want to show you something else though.
+[09:36] Let's go over here to the menu button.
+[09:37] Let's go to all services.
+[09:42] We'll go into container instance.
+[09:44] We're going to click to create a new container instance.
+[09:47] This time we're going to just do a little, uh, we'll call it web server.
+[09:55] ELP in my case.
+[09:58] All right.
+[10:00] I want to use a quick start image. So I want to show you what happens if you just use some of the default stuff
+[10:03] Microsoft has. Okay, so it's just going to use you could choose these different images. I'm going to do engine X this little engine X Linux
+[10:11] server here
+[10:12] Okay next for networking. I'm going to call this web server ELP for the DNS label public IP address
+[10:20] That's fine. Don't need any monitoring. I'm going to click review and create and
+[10:25] Then I'm going to click to create. All right. I'm just pause recording while that's getting created
+[10:30] All right now that that's done I'm going to click go to resource. Here is the domain name for that.
+[10:35] This actually does have a working web server and I can paste the link in for that and hit enter
+[10:42] and you can see the little web server here. So you could actually you know set up this container
+[10:47] with an actual working website whatever you want to put in there but you can see the website is
+[10:51] working. All right I am going to stop the container right now so it's not using any resources.
+[11:00] I want to make sure that my other container image is
+[11:06] stopped as well, so let's go to the Hello World,
+[11:09] and yeah, it's good, it's stopped.
+[11:11] There you go. We've now seen how we can deploy
+[11:14] a container instance to
+[11:17] our Container Registry and then deploy it out into Azure.
+[11:23] We've also seen how we could use one of
+[11:25] Azure's container instances to play around with as well.

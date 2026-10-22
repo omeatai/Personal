@@ -1,0 +1,167 @@
+# 119 - Configure log settings in Azure Monitor
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/119 - Configure log settings in Azure Monitor.mp4
+Fetched On: 2026-10-21 20:09:04
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now go over configuring log settings in order to actually gather log information
+[00:07] with the help of Azure Monitor.
+[00:10] Now there's a few things you got to consider here, some prerequisites involving all this.
+[00:15] In order to understand that, I need to show you a couple of things.
+[00:18] So let's do that now.
+[00:22] If we click the menu button and click on the monitor blade,
+[00:25] again, if that doesn't show up for you,
+[00:27] you can always go to all services and search for it.
+[00:29] But once we get into the monitor blade,
+[00:31] we can then click on the logs blade.
+[00:34] And of course it's gonna bring up this area
+[00:37] where we can perform queries against logged data, okay?
+[00:41] But there's a problem.
+[00:43] You have to collect log data
+[00:45] before you can query logged data.
+[00:48] So for example,
+[00:49] If I wanted to look at the log information for storage accounts,
+[00:54] let's go find that real quick in this little list.
+[00:58] There it is.
+[01:00] You'll see I've got a series of queries that are available to me that I can perform.
+[01:05] And if I just start trying to run some of these queries,
+[01:08] I'm not going to see anything.
+[01:10] There's no data.
+[01:11] Okay.
+[01:12] Now the problem with that is, is that you have to actually specify which items in...
+[01:17] Azure you want to log and you also have to have a place to store that log data.
+[01:22] So let me show you a little bit about that now.
+[01:24] Here we are inside of the monitor in logs and there's not really any way for me to set up
+[01:30] my log settings and all that within here.
+[01:32] So we need to go to the resource that we actually want to log.
+[01:36] Okay, and enable logging.
+[01:38] So we're going to go right up here to the menu button and let's go to storage accounts.
+[01:43] All right.
+[01:43] I actually have a storage account called exam lab practice JC, a storage JC.
+[01:48] If you don't have the same storage account as me, it doesn't matter.
+[01:50] Any storage account will do. I'm going to click on that storage account.
+[01:54] Okay. And you can always create one if you needed to. But I'm going to go into that storage account
+[01:59] and I'm going to scroll down and I'm going to look under here where it says monitoring. And
+[02:05] I'm not actually going to click on log. That's probably where you think I would go.
+[02:08] I'm going to click diagnostic settings. Okay.
+[02:12] And then you can see currently that there's no diagnostic information being collected
+[02:18] involving this storage account.
+[02:21] So I'm going to select the storage account itself.
+[02:24] And then it says, okay, if you want to be able to collect information, you got to add
+[02:28] diagnostic settings.
+[02:29] We're going to click that.
+[02:31] And then from there, you would give it a name.
+[02:34] I'm going to say log collection for storage account.
+[02:40] All right.
+[02:41] give it a name or description and then you have to say okay well you're going to gather all the
+[02:46] transactions that interact with the storage account but then where are you going to put it?
+[02:51] Here's the problem. Where am I going to put it? Send to Log Analytics workspace,
+[02:57] archive the storage account, stream to an event hub, send a partner solution. Okay,
+[03:03] generally speaking if you're going to want to perform a bunch of queries against the data
+[03:11] workspace. So if I select that, I actually do have one that is actually from a previous activity,
+[03:19] but I'm going to create one because this is not where I want to store it. So I'm going to go up
+[03:23] here to the menu button. We're going to go to all services. We're going to search for log analytics
+[03:32] workspace. Okay. So there is the little option right there. I'm going to click on it.
+[03:40] Specify a resource group. I'm just going to call it log demo RG. Okay, that's a fine name for what I'm doing here
+[03:50] Okay, so now I'm going to give it a name. What do you want to call it? I'm going to call it
+[03:55] log workspace demo
+[03:58] Alright, and it's going to tell me that name is okay. I'm going to do it in the East US region
+[04:04] And I'm going to click review and create
+[04:06] Let it validate and then I'm going to click create
+[04:11] Now I'm just going to pause recording while this is getting created.
+[04:14] Okay, now that that's done, I can click go to resource and you can see this is sort of what
+[04:17] it looks like, but we don't have any information that's being stored in here at the moment.
+[04:22] So now we're going to go back and click the menu button, go to storage accounts.
+[04:27] I'm going to click on this storage account.
+[04:30] All right, scroll down and under monitoring go to diagnostic settings,
+[04:37] diagnostic settings and here we go we're going to select transaction I'm going to call this
+[04:43] log data for storage account all right that's just my little settings name and then you've
+[04:53] got your destination now just to clarify because I didn't explain what all these were before
+[04:59] let's talk just a little bit about each one of these the one we're going to be going with is
+[05:03] send to log analytics workspace
+[05:06] This is what's going to be is going to be great for being
+[05:10] able to query and visualize setting up alerts and it's
+[05:13] going to you can utilize the KQL the Kusto query language in
+[05:17] Azure Monitor. So this is really what we want to do
+[05:19] because we want to be able to query the information that's
+[05:22] collected. Okay, you've also got archived to a storage
+[05:26] account. Now this is going to be for long term storage
+[05:29] usually.
+[05:30] This is going to be helpful if you're in a like a compliance or auditing type scenario.
+[05:35] So maybe you want to retain your information or you're logged out of for like seven years for compliance reasons.
+[05:41] That would be a good one for that.
+[05:43] The next would be stream to an event hub.
+[05:46] So this is for integration with external SIM or custom analytic tools.
+[05:51] Okay.
+[05:52] So, um, that gets into products like Splunk and
+[05:57] Microsoft Sentinel and all that these are monitoring services that are used
+[06:02] for security purposes. Okay all right so that's the idea there with your
+[06:10] stream to an event hub and then you've got send to partner solution. So this is
+[06:17] gonna be like direct integration with one of Microsoft Azure's partnering
+[06:26] DataDog or New Relic or one of those resources. That's what that's going to be for.
+[06:31] But again, the one that's going to give you the most flexibility in terms of performing
+[06:35] queries is going to be this first one, which is the Log Analytics workspace,
+[06:38] which is why we created that. So I'm going to select that. And then from there, by now,
+[06:44] this is should be available. If it's not available when you do this, you need to give
+[06:48] it a minute. But there it is. I'm going to go ahead and select that. And then I'm going to
+[06:54] And just like that, we've now configured our LogSad settings for our storage account
+[07:01] and it can now gather information.
+[07:03] And pretty much this process is going to be the same for a lot of the resources that you want to be able to monitor
+[07:10] with the help of your log, okay?
+[07:14] Okay, now that we've done that, we've only done that on the actual parent object for the storage account.
+[07:23] for diagnostics. Let's go right here. Let's just switch back there. You'll see that we have it
+[07:30] enabled now for the main parent storage account, but it does not automatically filter down to all
+[07:36] these child resources. So if we want to do this with the blob queue table file, we would need to
+[07:43] turn that on as well. So I'm going to go ahead and do that. We'll go right here real quick.
+[07:51] Alright, I'm just gonna select all logs, alright, and transaction.
+[07:56] I'm gonna say blob log for lack of a better name.
+[08:02] We'll select our storage account and we're just gonna click save again.
+[08:06] Alright, so we'll let that save. We'll go back over here.
+[08:09] I'm just gonna swap back and forth again.
+[08:11] Now we've got this enabled for blob.
+[08:13] I'm not gonna worry about it for queue,
+[08:15] but I will, or table, or I am gonna turn it on for file.
+[08:19] So we'll go right here.
+[08:20] We'll say all logs, transaction, and we'll say file log,
+[08:28] and we'll send this to our workspace.
+[08:31] Now we'll click save.
+[08:32] So at that point, if we go back,
+[08:36] swap back and forth here real quick,
+[08:38] you can see that we've got it turned on
+[08:39] for the main parent storage account,
+[08:41] the blob part of the storage account,
+[08:44] as well as the file part of the storage account.
+[08:47] Okay, and so now what's great about that is with the storage account
+[08:52] You know you start going in there and and doing stuff with the storage account or whoever's using is doing stuff with the storage account
+[08:59] like if we go under data storage and like you have containers and
+[09:04] You know various like containers. I'm just gonna add a container called test and
+[09:10] Got a blob container test
+[09:15] folder or container
+[09:18] and then click create and we've now got a container called test. We can go in
+[09:24] here and we can add things, add directories, we can upload files. We'll
+[09:29] just click upload and I'm just gonna throw a file in there real fast. Alright,
+[09:33] I just have a little image file called Microsoft logo that you can just, you
+[09:37] know, you can just Google search it and download it but I'll just upload that.
+[09:47] Okay, I'll just create a new file share just called test
+[09:51] review and create
+[09:54] create
+[09:56] Alright, so it's now deploying that little file share and I'm just gonna upload
+[10:00] the same image in there.
+[10:03] All right, now the thing you also gotta remember
+[10:05] is as you are doing all of this stuff,
+[10:07] it can take some time before everything begins showing up
+[10:11] with logging and all that.
+[10:12] We're not really gonna view the logs in this video.
+[10:15] What we're trying to do here is just get things set up.
+[10:18] Okay, so now I'm just gonna upload
+[10:21] and I just uploaded the same file.
+[10:23] Just gonna click upload and there we go.
+[10:26] All right.
+[10:26] So I've done everything that I wanted to do as far as getting the configuring settings
+[10:31] with our storage account here, diagnostic settings.
+[10:36] We've got everything set up I wanted to do in terms of just making sure that it was logging
+[10:40] some information.
+[10:42] And now we're ready to move on.

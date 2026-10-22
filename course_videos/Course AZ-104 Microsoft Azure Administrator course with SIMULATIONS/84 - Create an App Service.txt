@@ -1,0 +1,158 @@
+# 84 - Create an App Service
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/84 - Create an App Service.mp4
+Fetched On: 2026-10-21 19:52:13
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now once you have an app service plan,
+[00:02] obviously one of the first things you're going to want to do
+[00:05] is deploy an actual app service into it.
+[00:08] So I want to show you how we can do that.
+[00:10] Here we are on portal.azure.com.
+[00:13] We'll click the menu button, go to All Services.
+[00:15] I'm going to search for App Service.
+[00:18] you see you have app service as opposed to app service plans.
+[00:22] So I'm going to click to create an app service. I'm going to click on that and
+[00:25] then I can click to create and you'll see that we have four
+[00:28] little options here. Of course, Microsoft is changing things all the time so
+[00:31] don't be surprised if it could look different for you.
+[00:34] But the first option that we have here is to deploy a web app.
+[00:37] Alright, this is probably the most common thing that people utilize when
+[00:41] they come here, but a web app is going to be used to
+[00:48] like .NET, Node.js, Java, Python, PHP.
+[00:53] So this is definitely geared towards
+[00:55] those types of scenarios.
+[00:57] You've got static web app content.
+[00:59] This is just a basic website.
+[01:01] You're just gonna deploy HTML, CSS, JavaScript,
+[01:04] maybe with an optional serverless backend,
+[01:07] using Azure functions.
+[01:08] So this is great for just like,
+[01:10] if you're gonna deploy a simple website,
+[01:12] maybe it's gonna be a portfolio website.
+[01:14] Something along those lines was just
+[01:17] That's going to be the best solution.
+[01:20] The third is to deploy a web app that quickly, you want to deploy a web app quickly that's
+[01:25] got a back-end database.
+[01:27] This is great for, you know, maybe you're doing a blog platform, PHP with MySQL, something
+[01:34] along those lines.
+[01:35] Speaking of which, that's actually one of the most popular with that would be WordPress.
+[01:39] WordPress being the most, one of the most popular types of websites out there, web platforms
+[01:46] This will have a little MySQL database that goes with it.
+[01:48] This will let you set up WordPress
+[01:50] and have WordPress themes and all of that.
+[01:53] If you're not familiar with WordPress,
+[01:54] you should check it out.
+[01:56] Very, very, very popular.
+[01:57] One of the most popular platforms
+[01:59] for deploying a simple, easy to use website.
+[02:02] All right, but we're gonna go with web app.
+[02:05] All right, and then from there,
+[02:07] I'm gonna choose my resource group
+[02:08] that has my Linux app service in it.
+[02:12] And then at that point, I am going to name what the instance is going to be for this web app.
+[02:18] And in my case, I'm going to call this Linux app service demo.
+[02:24] You'll notice that it'll assign this big, long, unique name to it.
+[02:27] I'm going to turn off the secure unique name.
+[02:31] I'm going to go with this and see if this name already exists.
+[02:34] And if it does already exist, then I'll just put ELP at the end of it.
+[02:38] There we go. Keep in mind, if you're doing this with me, you probably want to use a different name than that.
+[02:43] All right. So then what do I want to publish? I just want to publish code. And a lot of times that's what people do.
+[02:49] With one of the main reasons people like to use app services is to publish the code directly onto the platform.
+[02:54] But you can also use containers. In my case, I'm going to do a container because it just has a
+[03:01] nice little website that's already set up that we can look at.
+[03:04] my region. In my case, I'm going to go with East US 2. And then from here, you can see that it
+[03:09] detects that I already have a Linux app service plan. So I'm going to go with that. Okay, it's got
+[03:15] the pricing already associated with it because of the app service plan. So that's fine. I don't
+[03:20] have the zone redundancy feature with my app service plan, because I went with a more basic
+[03:24] one. But from there, I'm going to go ahead now and I'm going to click next.
+[03:28] And then it also tells you that if I wanted to have a database associated with it, I'd need to create a new app service plan.
+[03:34] So I didn't, I don't have a database associated with it. So that's fine.
+[03:37] I'm going to click next. This is going to bring me into the container area of the screen here, or of the wizard that we're using, the template we're using to create all of this.
+[03:47] And so you'll notice that I have an option here called Sidecar.
+[03:55] So what exactly is
+[03:57] Sidecar this would allow us to essentially add an additional web app container that they call a side car
+[04:06] That can work in conjunction with this container
+[04:10] So I could do that if I want I could turn that on and then I could actually have another container associated with this
+[04:16] I'm not gonna do that. There's there are some benefits that if you're really heavily into web development. You can learn more there
+[04:22] Image source, we can do quick start,
+[04:24] we can do Azure container registry,
+[04:27] other container registries,
+[04:28] I'm just gonna go quick start,
+[04:29] we're just gonna do an Nginx website, that'll be fine.
+[04:32] And now we're gonna go ahead and click next,
+[04:34] and that's gonna bring us over to the networking area here.
+[04:38] And when I get to the networking area,
+[04:42] essentially I can choose between enable public access,
+[04:46] I have that turned on or off.
+[04:48] And so the idea here with,
+[04:50] the networking section is this is going to define how your web app connects to the internet
+[04:57] and or if you've got private Azure networks if you're going to allow that.
+[05:01] Okay, so ultimately what they're saying here is that you know your web apps can either be public or they could be private.
+[05:10] Public meaning accessible from the internet,
+[05:11] private meaning they're isolated
+[05:13] to just virtual networks in Azure.
+[05:15] You can also configure outbound access,
+[05:18] such as letting your app connect
+[05:19] to other internal services, databases,
+[05:22] APIs, virtual networks, all of that.
+[05:25] And so this is gonna let me have a little bit
+[05:27] of flexibility on what I choose.
+[05:29] Keep in mind that you can always alter these settings
+[05:31] after this is done.
+[05:33] So I can always come back and change these if I want.
+[05:36] So if I wanna enable public access,
+[05:37] I'll have that set to on, which I am.
+[05:39] and then I can also say enable virtual network integration.
+[05:42] So if I've got virtual networks,
+[05:43] I can actually link to those as well.
+[05:46] All right.
+[05:46] So from there, I'm gonna go ahead and click to go next,
+[05:49] and that's gonna bring us into monitoring.
+[05:52] All right.
+[05:53] And so with monitoring is just gonna support
+[05:55] whether or not I wanna have the insights activated.
+[05:58] So they tell you with Azure Monitor,
+[06:00] the application insights, you can have...
+[06:03] support for the services for developers and DevOps professionals can go in
+[06:08] monitoring grab insights from this. So if I enable this going to automatically
+[06:13] monitor my application it can detect performance anomalies it can look for
+[06:18] and it'll provide some analytic tools and try to help you diagnose
+[06:24] issues and things like that. So of course that does cost so I'm not going to turn
+[06:31] If that's part of my licensing and subscriptions,
+[06:33] I can, I have Defender for Cloud
+[06:35] that's already activated on my subscription.
+[06:36] This may look different from you,
+[06:38] and if it does, it's not a problem.
+[06:40] I have Defender for Cloud that I've,
+[06:41] that's part of what I am doing.
+[06:44] But anyway, I'm gonna go ahead and click Next.
+[06:46] I'm not gonna set any tags,
+[06:48] and I'm gonna click Review and Create,
+[06:50] and then I'm gonna click to Create.
+[06:52] And I'm gonna go ahead and pause recording
+[06:53] while this is getting created.
+[06:55] All right, now that that is done,
+[06:56] I just clicked Go to Resource,
+[07:01] service that I have. All right, keep in mind that if I go back over to my
+[07:05] resource group, this one here Linux App Service demo RG, you can see I have my
+[07:09] app service plan and then the app service. If I go into the app service plan,
+[07:14] all right, and expand under settings and I can click on apps, you can see which
+[07:19] apps that you have sitting on this app service plan. So there it is right there.
+[07:23] If I click on it, it brings me back into it. Okay, now I can also test
+[07:28] If this is actually working,
+[07:30] keep in mind I picked a slower tier,
+[07:33] but I can also test that this is working by going right here
+[07:38] to the default domain that I've got.
+[07:41] I'm going to copy that and I can just paste that in to a URL,
+[07:45] hit enter, and there you go.
+[07:47] It says, hey, App Service Developers,
+[07:48] your App Service is up and running.
+[07:50] Time to take the next steps so you can get into deployment.
+[07:54] Which gets into deploying your code for the app service and all that which we're not getting into this but if you're a developer
+[08:01] That would be the next step. This is really about being a developer. It's about managing this the resources that are needed
+[08:06] So but that's how I can tell that it's up and running
+[08:09] So as you can see we've now officially got our app service running on an app service plan

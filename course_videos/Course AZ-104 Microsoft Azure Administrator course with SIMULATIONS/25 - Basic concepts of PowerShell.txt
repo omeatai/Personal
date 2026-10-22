@@ -1,0 +1,363 @@
+# 25 - Basic concepts of PowerShell
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/25 - Basic concepts of PowerShell.mp4
+Fetched On: 2026-10-21 20:46:39
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to help you get a good foundation for understanding PowerShell.
+[00:04] Now PowerShell has been around in our various operating systems since going back to the year 2006.
+[00:11] It became a big part of the server world in 2007 when Microsoft Exchange 2007 came out and it's
+[00:17] pretty much been a go-to standard for being able to manage things with command line in the
+[00:29] when it comes to administering things on a bigger scale.
+[00:33] Now, one thing, one question that comes up a lot of times
+[00:37] that I wanna just go ahead and answer is this.
+[00:39] Students will ask me,
+[00:41] why would I want to write out a big long command
+[00:44] to do things when I can do things graphically?
+[00:47] Well, the answer to that question is, on average,
+[00:50] you can actually achieve things faster
+[00:52] if you know the commands and do it
+[00:54] through something like PowerShell,
+[00:56] then you can doing things graphically.
+[00:58] take you 50 clicks of the mouse to achieve one little line of text, might be able to
+[01:04] achieve that as well. But really where PowerShell gets its claim to fame is the fact that you
+[01:09] can do things in bulk. You can do a lot of things at one time. I can write a little
+[01:15] script that might be able to do, let's say you had to perform those 50 clicks to achieve
+[01:21] something on a server or in the cloud. Let's say you had to do those 50 clicks 50 times,
+[01:27] a little script, a little PowerShell script that basically just does all of that in one
+[01:33] fail swoop for you.
+[01:34] In other words, it just automates it all, right?
+[01:37] So PowerShell can really make things easier for us.
+[01:41] And it's a big part of administering things remotely, whether it be...
+[01:45] are a client machines or whether it be servers. It's now it's used in Azure, it's used in Microsoft
+[01:50] 365. You start getting into Teams, you get into Microsoft Exchange, Exchange Online, SharePoint,
+[01:56] Microsoft Defender, Microsoft Purview, all of the various services out there.
+[02:02] Again, in one way, shape, or form, utilize PowerShell.
+[02:04] So it's very, very powerful.
+[02:07] And one thing I'll also say is it's very intuitive.
+[02:10] You'll see that if there is such a thing as an intuitive
+[02:13] or easy to learn type of command line, PowerShell is it.
+[02:17] Now you might not think that at first
+[02:18] if this is your first time seeing it,
+[02:20] but just bear with me, okay?
+[02:22] First thing I wanna tell you is how do you open PowerShell?
+[02:24] Whether, you know, whatever operating system you're in,
+[02:27] usually you can right click the start button
+[02:29] and it'll either say terminal or PowerShell.
+[02:31] You want to go in as terminal admin or PowerShell admin.
+[02:35] That gives you admin rights.
+[02:37] Okay.
+[02:38] And that'll bring you into Microsoft PowerShell.
+[02:41] You can also do a search on your operating system
+[02:43] for the word PowerShell.
+[02:44] Also, if you're in command prompt,
+[02:46] you can actually type the word PowerShell and get there.
+[02:50] Okay, so as I mentioned that PowerShell is intuitive, it utilizes what's called a verb noun system.
+[02:56] That means that when you type a command, the first word you type is going to be a verb,
+[03:01] and then the second will be a noun.
+[03:04] the verb being an action you want to perform,
+[03:07] and then the noun being sort of like what it is
+[03:09] you want to perform this action against.
+[03:11] And of course there'll be a dash that separates the two.
+[03:14] So a verb like get means I want to get some information,
+[03:19] I want to see something, I want to read something.
+[03:21] Then you might want to alter what it is you're looking at.
+[03:24] So then you use the word set.
+[03:27] If you want to delete something,
+[03:28] you'd use the word remove.
+[03:30] If you want to copy something, you use the word copy.
+[03:34] If you wanna start something like a Windows service,
+[03:37] you'd use start.
+[03:38] And if you wanted to stop something like a Windows service,
+[03:40] you'd use stop.
+[03:41] So for example, if we were talking about services,
+[03:44] for example, I could type get,
+[03:46] and then I'm gonna put a dash,
+[03:48] and then I could put in the word service.
+[03:51] And I could hit enter,
+[03:52] and it's gonna show me my services.
+[03:54] Okay, now if I want to clear my screen, I'm gonna type CLS for clear screen
+[03:59] That just cleans everything up. Now. The other thing I want to tell you is that PowerShell supports intellisense
+[04:05] Which means if I type the word get dash and put the letter s I can hit the tab key and it'll let me tab through
+[04:12] Every one of the commands and if I accidentally pass the command which I did I passed the word services or service
+[04:19] I can use shift and I can go backwards
+[04:22] Okay, so there it is. I just passed it again, and I'll go forward by hitting tab. So now it says get service, okay?
+[04:29] So that is very helpful to know in the IntelliSense part of it is very helpful to know now another thing about the syntax
+[04:36] Of PowerShell is once you type a command or what they call a commandlet
+[04:40] That's a commandlet, but most people will just call them commands
+[04:44] Get dash service you can put in parameters now a parameter is going to be
+[04:51] something additional you want to get or find or do within that command.
+[04:58] For example, if I just type get service,
+[05:01] you see it list out all the services.
+[05:04] But what if I just want to see the one service called win RM?
+[05:08] Let me clear the screen again.
+[05:10] By the way, I'm going to hit the up arrow,
+[05:12] and I can toggle through these commands.
+[05:15] I just toggle to get-service.
+[05:19] Now I'm going to hit space and see there's always going to be a space between the commandlet and the
+[05:25] and parameters. You don't ever want to put a parameter right after the command there needs
+[05:29] to be a space. So I'm going to put dash and then check this out. I can tab through the commandlet
+[05:36] or the parameters as well. Watch this. I can tab through every parameter that's supported.
+[05:43] So that's really helpful as well. So if I put dash name space and then I'm going to type win RM
+[05:52] Alright and notice how it just displays that one service. Alright, so that's that's really nice
+[06:00] I can utilize parameters to
+[06:03] Display additional information or to filter certain types of information as well. Alright, let's uh, let's type get dash
+[06:13] All right, space, dash, and then notice that I can tab through.
+[06:19] Take a look at that.
+[06:20] That's interesting.
+[06:21] Dash computer name.
+[06:22] And so I could actually display a service on another computer.
+[06:27] Like for example, if I had another computer called client 10, let's say, then I could
+[06:32] display service running on that machine called client 10.
+[06:36] All right.
+[06:38] Now I can also erase the command that I've got on the screen just by hitting escape.
+[06:42] on my keyboard. Let's check out, so I was mentioning that I could type that dash computer
+[06:50] name, get dash service dash computer name. Well there's another way you can actually
+[06:56] remote into a computer to run commands. It's called enter dash ps session dash computer
+[07:05] client 10. That's how I get it. If it was a server, maybe server 1, I could remote into
+[07:12] that computer by running that command. Okay, so that is helpful as well. It lets you remote into
+[07:19] machines. Let's run another command git dash process. This is going to view all the, let me
+[07:25] view all the processes that I've got running on this machine right now. Okay, so that's helpful.
+[07:34] See processes running on a bunch of machines at one time. Let me clear the screen. I'm gonna say git-process
+[07:41] dash computer name
+[07:43] And I could say client
+[07:47] 10 client 11 client 12 and if I actually had real computers out there
+[07:55] I could actually remote into those as long as I have admin rights
+[07:58] I could remote into those and it would display all the processes another thing you can do of course
+[08:04] that displays all those processes is you can out, you can do what's called out file, which
+[08:10] allows me to essentially have the data that would be displayed on the screen show up on
+[08:17] into a text file. And I could actually do that by running the pipe command.
+[08:23] So what is the pipe command or pipe character?
+[08:27] on here and that's the little character above the enter key if you hold down shift on your keyboard
+[08:32] and what that does is that takes the output from the previous command and plugs it into the input
+[08:41] of another command. Alright so in this case if I say out dash file and I go c colon slash
+[08:56] into that text file, okay?
+[09:00] And it would be located on my C drive, right?
+[09:04] So that's the idea there.
+[09:06] Of course granted, I don't really have those
+[09:09] actual computers out there,
+[09:11] but if I just ran it like this, back spaced out,
+[09:15] it's now gonna display it that way.
+[09:17] If I type DIR, I can see the client processes
+[09:22] file right there, and I can actually open up
+[09:26] and go to my C drive.
+[09:31] Let me open up on my computer.
+[09:33] If I open up my C drive and I go to,
+[09:36] there it is right there,
+[09:38] to open that up,
+[09:39] you can see all of that information inside that text file.
+[09:43] So that is the idea there.
+[09:44] So another thing we can do is search for commands
+[09:48] that we are looking for.
+[09:50] So for example,
+[09:52] you can run a command that shows you all of the commands that PowerShell supports and then you
+[09:57] can filter that to make it...
+[10:00] a little easier on yourself. So if I type git-command and I hit enter, you're going to be able to
+[10:06] see all of the various commands that are currently in PowerShell in memory right now. Of course
+[10:13] it's taken a little while, but there you go. Now of course this gets a little intimidating
+[10:17] because you really run through these cmdlets and there's just thousands and thousands of
+[10:23] In fact, I don't want to sit here and wait forever, so I'm just going to hit control C
+[10:27] and then CLS and clear my screen. But what if I'm trying to search for a specific
+[10:32] commandlet? Perhaps maybe I am looking for all of the git commands. Well, I can type
+[10:40] git dash command space dash verb git.
+[10:47] Now here's every command that starts where the verb is getting.
+[10:51] Of course there's tons of those so I'm going to clear screen.
+[10:53] I hit control C to exit that.
+[10:55] I could also do remove.
+[10:57] Let's say I want to see every command that has the word remove as a verb.
+[11:01] There you go.
+[11:02] Okay, clear screen.
+[11:04] How about we do this.
+[11:06] Let's change it to noun.
+[11:09] And let's search for every command that has the word net as the noun.
+[11:14] There is none. So when I hit enter nothing happens, but check this out. What if I search for every command?
+[11:22] That starts with the word net. I only want to search a command if it starts with the word net
+[11:28] Let's see if there is any well to do that
+[11:30] I'm gonna put a star at the end of that word net that asterisk essentially is a wild card and it means
+[11:37] Show me everything that starts with the word net and doesn't matter what comes after it
+[11:42] There you go. There's a lot of those commands. Look at all these commands that have the word
+[11:48] net
+[11:49] Let's start with the word net. How about ends with the word net?
+[11:53] Let's clear the screen
+[11:55] All right to do that
+[11:57] We'll put the star at the beginning
+[11:58] There is no commands that end with the word net now if you did want to search for every command that has the word net
+[12:04] Any in it at all you would put star net star
+[12:07] That's going to show you every command that has a word net in it all now you can also
+[12:11] further filter this, let's do this, let's put
+[12:15] dash verb, really doesn't matter, I could have put the verb at the end
+[12:18] and then I'll say the word remove. So show me every command
+[12:21] that has the verb is removed and has the word net in it. There you go.
+[12:28] Okay, so part of the trick of course with PowerShell
+[12:32] is just trying to find the command you're looking for and you can
+[12:35] look up help information on that as you'll see and then also
+[12:40] You can you can use AI I'll talk more about that here coming up as well now what if we
+[12:48] run a command and
+[12:50] That command requires some additional information or additional
+[12:54] Parameters in order to achieve anything we can get help on that for example. There's a command called get dash
+[13:01] event log
+[13:03] now this
+[13:04] command will show you the event log on a Windows operating system. All the events, log data on the
+[13:10] operating system. The problem is if you just hit enter, it tells you that it's missing a parameter.
+[13:15] It has what's called a mandatory parameter, meaning you have to specify a parameter to go with it
+[13:21] in order for it to continue. So what I can do, I'm just going to hit enter and notice that
+[13:25] it gives me some red text, all right, which essentially is letting me know that hey,
+[13:30] there's an error here and it tries to give you a little bit
+[13:33] more information than a normal command line does on that. But if I want to get help, I can type get
+[13:38] dash help and then I'm going to type the command I want help on get dash event log and I'm hitting
+[13:44] tab to tab through it. All right and there you go. It'll display that. It'll display the
+[13:51] help information. But I'll tell you I'm not a massive fan of the help output that it provides.
+[14:00] prefer to actually get help by going out to Google or Bing because Microsoft provides a
+[14:09] actual document on all of these. There is actually a command you can run on some commands that'll
+[14:15] just open the page, but I don't like to use that command because it does not every command
+[14:20] supported. So please don't message me and say there's a command that you can display the website.
+[14:24] The reason I don't do that is because not every command supports it.
+[14:27] Okay, I'll show you though, we can do a quick search through Google or Bing,
+[14:32] and we can get help on how to run a command very easy, right?
+[14:36] So I'm just going to highlight the git dash event log and copy that,
+[14:40] and then I'm going to open up my web browser, and we'll go to Google and paste that in.
+[14:44] Alright, so I'm just going to paste that into Google, I'm going to hit enter,
+[14:47] and I'm going to look for... making me show that I'm not a robot, apparently.
+[14:55] Alright, I'm going to look for get-event-log and I'm going to look for this little learn
+[15:00] document right here and go there and here is their help information for get-event-log.
+[15:07] If I scroll down, one of the things I love about it is they give examples.
+[15:12] Yes, there is a way you can run in PowerShell.
+[15:15] There are some commands will show examples as well, but I really prefer to look at it
+[15:19] this way.
+[15:20] So again, I know a lot of people like to message me and say, you can run this to see example.
+[15:24] I love their examples right here on the learn document so I can see how to run this command.
+[15:31] Like for example, I love this right here.
+[15:33] Get recent entries from an event log on the local computer.
+[15:37] I can see some of the syntax here that what I've got to do is I got to type get-eventlog
+[15:43] logname and then the name of the log that I'm wanting to look at.
+[15:48] Alright, so if I actually, if I do that in PowerShell, I could actually run this little
+[15:54] command right here.
+[15:55] You can see the newest entries.
+[15:58] We'll see what it looks like without doing newest and then we'll put that parameter
+[16:01] in.
+[16:02] Alright, so I just right clicked and it pasted it in.
+[16:06] get-event-log-logname. Remember there is going to be a space. Let me clear the screen do it here at
+[16:13] the top for you so it's easier to see. There's going to be a space that separates the command
+[16:20] or commandlet. There's going to be a space right here that separates that and the parameter and
+[16:25] there's going to be a space between the parameter and then the information going into that parameter.
+[16:31] So just keep that in mind. I'm gonna hit enter and there you go. Look at all of this information that it shows now
+[16:36] The problem is I'm gonna control seeing clear screen
+[16:40] That stops it. The problem is I don't want to see all those maybe I just want to see the latest five entries
+[16:46] So that's where this newest
+[16:48] Space five comes in and you can see it showing me the newest five if I want to see the newest ten
+[16:54] I can say show me the newest ten. Okay, and that's going to
+[16:59] you know, give me some good information.
+[17:01] Now another problem is that it displays all this
+[17:04] in a table view and I don't actually get to see
+[17:06] all of the information, it's abbreviated.
+[17:09] So watch this, I'm gonna hit the up arrow
+[17:11] and then I'm gonna do, I'm gonna pipe this.
+[17:15] So I'm taking the output of this command
+[17:19] and I'm gonna plug it into the input of another command.
+[17:21] And then this command is gonna be called format.
+[17:25] dash list that means format the data as a list check this out so now
+[17:31] Instead of showing is a table view and abbreviating things it shows it in a list view
+[17:36] So I get all of that and if I wanted to pipe it again
+[17:39] I could hit the up arrow and I'm gonna pipe and I'm gonna go I'm gonna do
+[17:44] Out-file showed you that a minute ago C colon slash security
+[17:50] log dot txt
+[17:52] So now that is all in a text file called security log.
+[17:57] Okay, something else I'll show you is that you can use variables just like, you know,
+[18:03] PowerShell is a is a programming language in of itself.
+[18:06] So you can use variables.
+[18:08] Variables are words that are associated with an area of memory that you can recall anytime
+[18:12] you want.
+[18:13] So for example, to call upon a variable, let's create a variable called computer name.
+[18:22] PowerShell will start with a dollar sign and then we will put equals after that. Make sure that's
+[18:28] spaced and then whatever it is you want to put in that variable. So for example, maybe I've got a
+[18:35] computer called client 10 and this variable is going to contain text. I want to make sure that
+[18:42] I put quotation marks there and I'm going to hit enter. Now I can call upon that variable simply
+[18:52] And I can tab through all variables, start with letter C,
+[18:56] believe it or not, PowerShell is a bunch of variables already in memory, and hit enter.
+[19:00] Okay, and you can see that it displays it.
+[19:02] So if I was to do get-event,
+[19:06] actually let's just hit the up arrow,
+[19:08] make our life a little easier.
+[19:09] There it is. So get-event log,
+[19:12] and there's that full.
+[19:13] So let's say I wanted to remote into client 10.
+[19:16] I'll put it right here after the log dash computer name.
+[19:23] $computer name. So now whatever is written here is going to be here when you hit enter.
+[19:30] And granted, I don't really have a computer called client 10 out there, but that's what
+[19:34] would happen, right? Variables can be used for calculations and all of that. Like I could
+[19:41] say $num1 equals 1. I don't have to put quotation mark there because I'm not stored text. I'm
+[19:50] dollar sign number two equals two
+[19:54] Okay, and then I could say
+[19:57] dollar sign num one plus
+[20:00] $num2 and outputs 3 right I could change those variables anytime
+[20:05] I want $num1 equals 5
+[20:08] $num2 equals 10 and I could say
+[20:14] You know let's just hit the up arrow
+[20:17] Add those two together you get 15. Okay, so that is the
+[20:22] Considerations you have when you think about calculations PowerShell could do calculations just like any other programming language
+[20:28] the last thing I want to show you in this video is
+[20:31] That sometimes you might want to run scripts as an admin in PowerShell and PowerShell will try to restrict you by default on
+[20:40] Various operating systems. I've already
+[20:43] disabled that I'll show you how to do it but there's a command that'll show you
+[20:47] if your operating system is going to prevent you from running scripts
+[20:50] and the command is called git dash execution policy okay and that means the execution policy
+[20:58] tries to prevent you from executing scripts even as an admin. If I hit enter you'll see
+[21:02] mine says bypass but if you run that command it may not so it may say restricted so um
+[21:09] I'm gonna type set-executionpolicy, space, hit dash,
+[21:15] that's our parameter, we'll tab through it.
+[21:17] Of course, there it is, execution.
+[21:19] And then I can tab through the various options here,
+[21:23] and the one I'm gonna go with is bypass,
+[21:25] which means, hey, I'm not gonna require any questions
+[21:31] or anything like that before I...
+[21:33] try to run a script, I'm not gonna prevent you
+[21:35] from running a script, I'm gonna let you
+[21:37] just bypass the execution policy.
+[21:39] Of course, this is a good idea
+[21:40] if you're gonna be running a lot of scripts
+[21:41] and doing a lot of things, like an admin workstation.
+[21:45] Obviously, if you are in a normal environment with users,
+[21:50] this will be set to restricted, right?
+[21:54] And they wouldn't be able to do that.
+[21:56] So you might say, well, what if I needed to run a...
+[22:00] command against a large amount of machines in my environment.
+[22:03] Like maybe I got a hundred machines and I want to run a command against
+[22:06] a hundred machines or whatever.
+[22:08] Uh, they're all going to be restricted.
+[22:10] Well, there's ways around that, which I'm not going to dive deep into in this video.
+[22:13] I'll just tell you that you can, you can look it up and there's
+[22:15] directions on how to do it.
+[22:17] You can actually use GPOs if they're part of a domain group, policy
+[22:21] objects to
+[22:22] Set all the machines to like bypass or whatever. So that's how you can do that or if you're using Microsoft in tune
+[22:29] You can do it
+[22:30] There are so there's various ways if they're linked to the cloud you use in tune
+[22:35] But there's various ways that you can switch that to bypass if you want to do it on a single machine
+[22:41] We're gonna run that command right there and that's really what I wanted to show you there.
+[22:44] Okay, so wrapping things up in this video, we've now got hopefully a basic foundation
+[22:50] of PowerShell. I want to encourage you again that anytime you don't understand how to use a command,
+[22:58] there's two things I want to encourage you to do. First, Google or Bing search the command. Okay,
+[23:04] go out there to Google or Bing, whatever.
+[23:07] and search the command and look up the Microsoft Learn article on the command.
+[23:14] So Microsoft will have a Learn article on that command. Here it is for this one here.
+[23:20] And I can see an example on how to use it and it'll tell me the various details about that command.
+[23:27] Okay, like all sign, there's what bypass means. Nothing is blocked. Here's what remote sign
+[23:37] Use AI to your advantage as well AI does a fantastic job of helping with
+[23:44] PowerShell scripts, so if you've got access to co-pilot or chat GPT or whatever it may be
+[23:51] Use that to your advantage because it's really really helpful. I'm telling you, you know, I can go here and I can
+[24:02] Type a command like this right here. Let's just copy that
+[24:08] go back over here and I can say explain this command paste that in and it's going to explain
+[24:17] to you what that command is going to do. Alright now watch this I'm going to introduce an error
+[24:23] into the command I'm going to take away this right here and let's see if it can help me fix that error
+[24:42] Command watch this paste
+[24:44] It looks like there's a problem. Yep get required there
+[24:48] It is requires you to specify a log name without the dash log name. So I took that out
+[24:54] See that it knows exactly what the problem is
+[24:57] Okay
+[24:59] so
+[25:00] You could
+[25:02] Use this to your advantage use AI to assist you with running PowerShell commands. Okay, so that's my two biggest tips for you
+[25:12] Open up the documents that Microsoft has to help you learn a command, but also use AI to your advantage.

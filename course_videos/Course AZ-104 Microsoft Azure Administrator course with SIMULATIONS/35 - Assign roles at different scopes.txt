@@ -7,3 +7,99 @@ Transcript Type: Local whisper (small.en, cpu)
 
 ---
 
+[00:00] I want to spend some time now understanding the different principles on the scope of Azure resources and how role-based access control is going to apply to those.
+[00:10] So it's important to kind of get a feel for the fact that the resources in Azure are in a hierarchy.
+[00:17] And so when you are managing access control, where you apply that access control is going to affect things in that hierarchy.
+[00:30] we have what is called a management group.
+[00:33] Now, a management group is a root system,
+[00:38] a root hierarchical system that allows us
+[00:41] to separate our different subscriptions.
+[00:44] So really to understand the management group,
+[00:47] you kind of have to understand a little bit
+[00:48] about the subscription side of things,
+[00:50] which of course a subscription is what allows you
+[00:53] to purchase Azure.
+[00:55] resources and every Azure resource that you purchase must be associated with a subscription.
+[01:02] Even free resources like resource groups have to be associated with a subscription.
+[01:09] And so the goal of a management group is to break those different subscriptions up into groups
+[01:16] so that it's easier for us to control those. Now in the beginning when you first start
+[01:22] Azure, you don't have you don't really have a management group.
+[01:26] You have to actually go in and say you want to create a management group.
+[01:30] And at that point, you'll have a route and then you can create sub management groups.
+[01:34] Not all organizations even need management groups.
+[01:37] It's when you're a very large organization or maybe medium to large that it kind of
+[01:42] becomes important.
+[01:44] Or if you're even if you're in a small environment you have a series of different projects going on that might be another reason for doing this
+[01:51] But so so like right here at the top. I've got I might have a
+[01:56] Management group I might just call it
+[01:58] You know it'll be the root management group and then below that I might have different management groups that are used for different reasons
+[02:04] so for example this might be called the
+[02:08] I might call this the dev management group and this is for development.
+[02:13] So the creation of the development of applications and different services at our company.
+[02:21] And then right here we might have, this might be a production management group.
+[02:28] This is for the production elements of our company, the different resources involved in production.
+[02:33] And then you might even have a subcategory below that.
+[02:36] Of course, I might even have multiple of these different production subcategories of different resources.
+[02:43] There might be different products that our company is involved in.
+[02:47] And I might have a management group for each of the big huge product lines that we manufacture or whatever it is.
+[02:58] to really think of how you might set your management groups up. And remember
+[03:02] that management groups are not critical for all companies. They're just there to
+[03:06] help us break up our different subscriptions. So then these little key
+[03:11] symbols here, these are your subscriptions, right? And the subscriptions are going to
+[03:15] be the different payment methods you use. And maybe you got, you know, one
+[03:18] credit card for this subscription, different credit card for that
+[03:20] subscription. And you might...
+[03:23] give authority over different people in the billing department or different team members or management
+[03:29] for who has access over subscription. Now keep in mind, as far as RBAC goes, you can give somebody like a global administrator will have the authority over the route and everything below it.
+[03:41] in the development management group I might have a lead developer or
+[03:46] might even be somebody in the accounts payable department or billing department
+[03:50] or whatever that has authority over this and they
+[03:53] make the key decisions over what the developers are allowed to
+[03:57] you know spend money on right and so you can
+[04:02] set your
+[04:03] role-based access control based on that. And then another thing role-based access
+[04:07] control can be set directly on just a subscription. So there might be two, let's
+[04:12] say you have two different lead developers and you don't want to give
+[04:14] both lead developers access over both subscriptions. You could, if you wanted,
+[04:18] you could give them just authority over
+[04:21] one developer lead developer number one would have authority over this subscription lead developer number two have authority under that subscription
+[04:28] So where you put your are back privileges?
+[04:34] Let's just make a little symbol for that real quick
+[04:39] Where you put your are back privileges will control what somebody's got access to so if you you put it up here at the
+[04:47] if the route and give somebody
+[04:49] Root privilege they have access over everything
+[04:51] If you put it over prod then then they would have access over everything below or development of access over everything below.
+[05:00] But if you just gave them authority over one individual subscription that's all they've got authority under.
+[05:06] Now the other aspect of this it goes a little deeper than that and I'm going to go down here this next little illustration.
+[05:17] Below management groups you have subscriptions and then below subscriptions
+[05:21] That's where your resource groups are now remember that a resource group is a container and all Azure services
+[05:27] Have to be in a container and you have to be in a resource group and you cannot nest resource groups
+[05:33] So you cannot have a resource group underneath another resource group, okay?
+[05:37] So you can have your resources broken up that way. So
+[05:42] You notice maybe this is like a web service and a database. This is a virtual machine.
+[05:46] This is what we call a virtual network. You have applications. Over here is a storage account.
+[05:52] So you might have a resource group that involves, that you might call web services, right?
+[05:59] You might have a resource here for virtual machines.
+[06:03] You might have a resource group here called storage accounts. All right?
+[06:07] Keep in mind that you technically could put all of those things together, but this lecture that I'm doing right now is not about
+[06:14] understanding the intricacies of resource groups. Keep that in mind. This is not what
+[06:18] we're going over here. I just wanted to throw that out there. You could actually put all
+[06:21] these together. But it's always a great idea to categorize or group things together into
+[06:28] a container. And this is what resource groups are for. They're for grouping your different
+[06:32] resources into a container. And of course, again, you can't nest those. But
+[06:37] Moral of the story is if you give authority over somebody at the management group level everything below it is they'll have authority over
+[06:45] If you give somebody authority over a
+[06:48] Specific subscription they're gonna have authority over everything below that subscription if you give authority over a resource group
+[06:55] They're gonna have access they're gonna
+[06:57] permissions over everything in that resource group. And then individually you
+[07:01] can also give authority just to individual resources. Remember that each
+[07:05] one of these things has a blade called I am. I am associated with it. Okay? Let's
+[07:15] just move this.
+[07:16] right here. Everything's got an I am blade associated with it. Alright, and so from there
+[07:23] you can set your access control over those blades and then everything below it, that
+[07:29] person, whoever you've given access to. So if I make somebody contributor or an owner
+[07:34] or a reader or whatever, everything below it they're going to have access to. Okay, and
+[07:39] that's the way you want to think about working with RBAC scoping. Okay, so all in all it's
+[07:45] that hard to understand, but you do have to think about it from the perspective that it is a
+[07:51] it is a hierarchy and
+[07:53] When you you give somebody privileges at a higher level, it's going to filter down to the lower levels

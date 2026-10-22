@@ -1,0 +1,152 @@
+# 65 - Modify, export and deploy resources using an Azure Resource Manager template
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/65 - Modify, export and deploy resources using an Azure Resource Manager template.mp4
+Fetched On: 2026-10-21 20:02:47
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I want to do something fun now. I am going to create a virtual machine and from there we are
+[00:06] going to see how we could deploy another virtual machine from that virtual machines template.
+[00:11] So the idea of this to be sort of like a cookie cutter you could set up a virtual machine,
+[00:15] configure it the way you want, and then if you wanted to deploy another
+[00:20] virtual machine in a cookie cutter type scenario you could.
+[00:24] All right, now I also want to point out the point of this
+[00:27] video is not to get into the intricacies of
+[00:31] deploying a bunch of virtual machines or understanding all of the
+[00:35] the details of creating virtual machines.
+[00:38] The point of this video is just to see how we could
+[00:40] deploy a virtual machine using an ARM template.
+[00:43] But we're going to go ahead and create a virtual machine,
+[00:45] and we'll use the template from that.
+[00:47] So here we are on portal.azure.com.
+[00:49] If we click the menu button and go to all services,
+[00:52] we can click virtual machines right here,
+[00:53] or if that doesn't show up,
+[00:54] we can always search for it right here.
+[00:56] But I'm going to go ahead and click virtual machines.
+[00:59] We're going to click to create an Azure virtual machine.
+[01:03] And then from there, we're gonna create a resource group.
+[01:07] I'm just gonna call the resource group, ARM demo,
+[01:11] click okay, and then from there,
+[01:13] we'll say virtual machines name.
+[01:15] I'm just gonna call this ARM-demo-vm.
+[01:20] This'll be East US availability options.
+[01:22] I'm gonna set that to no infrastructure security,
+[01:27] set that to standard.
+[01:28] I'm gonna do just a Windows, maybe like Windows 2019 data center and then we'll go here and
+[01:35] leave, I'm gonna leave the rest of this as the default. Again, I'm not explaining in this video
+[01:38] what all this is. We'll go right here for the admin account. I'm gonna put in
+[01:43] ELP admin, set a password that I'm gonna remember. Okay, and then from there we will
+[01:52] click next and go to disk. For disk I'm just going to set this to a standard
+[01:57] HDD to save a little bit on Azure credit. Networking, I'll just leave all
+[02:01] that alone and then for management I am going to have it auto shut down after
+[02:06] 7 p.m. This will just save me a little bit of Azure credit if I was to forget
+[02:11] to shut this down. That being a good feature in a lab environment. Alright so
+[02:15] from there we'll click monitoring. I'm going to turn off boot diagnostics
+[02:18] because that is going to use a little extra Azure credit and then we're going
+[02:22] and wait on that to finish and then I'm gonna click to create. So I'm gonna go
+[02:29] ahead and let this get created. I'm gonna pause the recording while this is getting
+[02:33] created. Alright now that that is complete I'm gonna click to go to my
+[02:39] resource group which is an ARib demo and then I'm going to go right here and
+[02:44] click export template. Now that that's loaded up I'm gonna click deploy
+[02:50] And I want to go ahead and jump in and click edit template.
+[02:53] I want to tell you that there's a few things that Microsoft doesn't exactly advertise
+[03:00] that's kind of trial and error.
+[03:02] I know the first time I went in and tried to deploy a template, there was a few things
+[03:05] I didn't know.
+[03:06] The good news is that when you try to do it, if you get an error message, it kind
+[03:10] of tells you what the problem is and you can go fix it.
+[03:17] so that we can deploy this template. Now the first thing to understand here
+[03:21] is again the ARM, I use the analogy of it's like a restaurant
+[03:25] and you're ordering stuff from it but there are certain parameters
+[03:29] that it needs to know. So for example you sit down at a restaurant maybe you're
+[03:32] going to order a steak dinner that's going to have steak,
+[03:35] potatoes, maybe a vegetable and salad with salad dressing and all that to go
+[03:41] with it.
+[03:42] There's going to be parameters you got to specify. For example, one of the parameters of the steak is how is it cooked?
+[03:47] Is it rare? Is it medium? Is it well? How do we want that steak cooked? And that might be something I have to tell.
+[03:53] the waiter or waitress. Then I've got, I've got to specify what kind of salad
+[03:57] dressing I want on my salad. I got to specify how I want my potato. Maybe it's a
+[04:01] baked potato and I want butter and sour cream and cheese on it or whatever. You
+[04:06] know, you have to specify that. How do you, what kind of vegetables you want?
+[04:09] Maybe you want broccoli. You know, what kind of vegetables do you want with it?
+[04:13] So there's, there's parameters that got to be specified. Now if you don't
+[04:16] specify parameters, in some cases it'll just take liberties. It'll take defaults.
+[04:22] from there
+[04:24] You might you know, they might just cook your steak well because you didn't tell them what you wanted you they might just give you
+[04:31] they might just give you a potato with nothing on it if you didn't specify that, right? So you've
+[04:37] got to specify what you want. And so that's what we're looking at here with JSON, JavaScript
+[04:42] Object Temptation. Now keep in mind you don't have to be an expert in JSON for this. Just looking at
+[04:47] some basic fundamentals here. But the first thing I got to do, I'm going to copy this
+[04:53] and I'm going to put it over a notepad because I can just open up notepad here.
+[05:00] on my computer, I'm gonna paste that in,
+[05:02] because I can do searches that way really easily.
+[05:05] And the first thing I wanna do is search
+[05:06] for the keyword admin, because there's a parameter
+[05:09] that they don't specify on here,
+[05:11] and that's the admin password.
+[05:14] You need to add admin password.
+[05:15] So I'm gonna go right here,
+[05:16] and I'm gonna put admin password,
+[05:21] and I gotta make sure I don't typo anything here, colon.
+[05:25] And the password I'm gonna use
+[05:26] is just this password right here.
+[05:28] Just real simple.
+[05:30] you know, generic password, because you do have to have an admin password. If you don't specify that,
+[05:35] then it will cause it to crash when it starts to create it. I'm going to put a comma right after
+[05:40] that, which means go down to this next line. And the next thing I want to search for is the word
+[05:48] managed. So I'm going to let's go back up to the top here, and I'm going to search for the word
+[06:00] Starting with this comma all the way to the end of this little quotation mark
+[06:08] here, I'm gonna get rid of this. This involves what is called a managed disk,
+[06:12] which I'm not gonna dive into all of what that is right now, but that's not
+[06:15] gonna be allowed for this ARM deployment. So I'm just gonna get rid of that
+[06:19] altogether, okay? And I think that is
+[06:24] going to do it there. The next thing, the last thing I'm going to do is I'm going to search the
+[06:29] keyword guest. All right, and we're looking for this right here, required guest provisioning. I'm
+[06:36] not going to dive into the details on that, but that's also not going to be allowed when deploying
+[06:40] this template. So we're just going to get rid of that, and then I'm going to highlight all this,
+[06:46] and I'm going to copy, and then I'm going to paste it in right here.
+[06:51] then I'm gonna click Save. So now I'm gonna tell it to create a new resource
+[06:57] group. I'm gonna call this ARM destination VM RG. Alright, we'll click
+[07:04] OK and we'll give this another name. Call it, I can call it what I want. I could,
+[07:09] I'll just put a B after it. So this would be a different name. I'll put B
+[07:15] after the VM name completely here.
+[07:18] All right, and remember if you had created lots of VMs in this you would be deploying a bunch of VMs if you wanted to.
+[07:25] But we'll click, I think we've done everything we need to do. We're going to click Review and Create.
+[07:32] And we're going to click to Create.
+[07:35] So at that point we just got to wait. So we'll give this just a moment to get created.
+[07:40] I'll pause the recording while that's happening.
+[07:42] All right looks like that's done. So if I want I can click on
+[07:47] go to resource group that'll bring me into the resource group and then there is my virtual machine.
+[07:52] I could go to that virtual machine if I wanted to connect to that virtual machine right now.
+[07:57] I could actually connect and use remote desktop. All I would need to do is go right here and click
+[08:11] Keep in mind you might get a little warning message you'll have to click
+[08:14] connect and then I'm just going to put in my
+[08:17] username and password that I set earlier. Click yes to this little message
+[08:25] and it should be connecting me into the virtual machine right now.
+[08:29] And again, not diving deep into this, I just wanted to show you that this virtual machine
+[08:34] is working.
+[08:35] We are able to successfully get into it.
+[08:38] So we have officially deployed a virtual machine using an ARM template from an existing
+[08:45] virtual machine that we created earlier.
+[08:47] So you can see all of this sort of loading up.
+[08:50] It's kind of does take its time a little bit when you first open up.
+[08:54] This is a server, right?
+[08:58] but you can see that it is in the process of doing that.
+[09:02] All right, I'm gonna go ahead now and close out of that.
+[09:05] And we no longer need this virtual machine.
+[09:08] We're gonna keep our other little virtual machine
+[09:11] around the first one we created, the source one,
+[09:15] but we are gonna delete this destination one.
+[09:17] So to do that, I'm gonna go back to the resource group
+[09:21] called ARM destination, VMRG.
+[09:23] I'm gonna click that,
+[09:24] and we are going to delete this resource group,
+[09:28] I'm going to paste, apply, and I'm going to delete it.
+[09:33] Oh yeah, and just to add to this video,
+[09:35] you can go ahead and delete the ARM demo resource group as well,
+[09:39] or if you want to play around a little bit more with that,
+[09:42] you can leave it around. I'll leave that up to you.
+[09:44] You can either delete it or you can leave it around as long as you want.

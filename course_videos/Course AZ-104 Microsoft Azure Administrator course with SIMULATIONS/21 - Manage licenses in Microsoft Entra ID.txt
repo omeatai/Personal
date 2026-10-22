@@ -1,0 +1,152 @@
+# 21 - Manage licenses in Microsoft Entra ID
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/21 - Manage licenses in Microsoft Entra ID.mp4
+Fetched On: 2026-10-21 20:04:32
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk to you about understanding the available versions of Microsoft Intra ID.
+[00:06] How can we tell what version we have and then what's available?
+[00:10] Well let's take a look in this video.
+[00:12] So here I am on portal.azure.com.
+[00:14] If I click the menu button here and I go down to Microsoft Intra ID, you can see that
+[00:21] it tells you the license that I currently have is Microsoft Intra ID P2.
+[00:27] But what does all that mean? Well if you go out to Google and you just do a quick search on
+[00:32] intra id pricing you'll find this article right here. Alright Microsoft intra intra plans and
+[00:41] pricing and we can see that there are three primary types of pricing that's available.
+[00:49] Now I'll also tell you that there is a free version of intra id as well if you do a quick search
+[00:56] Microsoft intra ID free you'll come across this article and they tell you that you know, you can utilize Microsoft intra ID completely free
+[01:04] The services that are included you get user and group management on-premise directory synchronization some basic reports
+[01:11] You can self-service password change for cloud users single sign on across Azure Microsoft 365 and the many popular
+[01:20] SaaS applications. So billing and account management don't have to worry about, you know, being billed because it's free. All right
+[01:27] You can upgrade any time to the other versions
+[01:31] But you don't get to take advantage of a lot of the more advanced features which we go back
+[01:35] We can take a look at those in this article right here. All right, so you can see we have Microsoft
+[01:42] Enter ID P1 P2 and the Microsoft interest suite now
+[01:47] P is for premium, so you have Microsoft Enter ID premium one and then premium two.
+[01:51] At the creation of this video you can see the pricing, of course be advised that they seem like
+[01:56] they're raising the pricing all the time, so who knows what the pricing could be when you're
+[02:00] watching this video because it does change pretty often. But you can see the pricing here in the
+[02:05] United States at least, and then they've got a nice little table that sort of breaks down
+[02:15] They basically tell you, you know, you're going to get all the features there.
+[02:18] You see a white check mark then, or gray in this case, I guess, you're
+[02:24] getting some of the features you, I'm going to click expand all.
+[02:28] All right.
+[02:29] And we can see that with premium one and premium two,
+[02:32] and then the Microsoft interest suite.
+[02:34] With Microsoft interest suite,
+[02:35] they tell you the interest suite
+[02:37] is going to combine network access, identity protection,
+[02:40] governance, identity verification solutions,
+[02:43] subscription to Microsoft enter IDP1,
+[02:45] or a package that includes Microsoft enter IDP1 is required.
+[02:50] And they tell you there's some special pricing available
+[02:52] for intra IDP2 and Microsoft 365 E5 customers.
+[02:58] I'll talk more about the E5 stuff here in just a moment bear with me.
+[03:01] Okay but anyway let's let's focus on these two right here first.
+[03:05] We have Microsoft Enter ID P1 and P2. We scroll down.
+[03:10] We can see that we get things like conditional access for you know
+[03:16] controlling who can who can connect in who can't.
+[03:19] Our back.
+[03:20] Role-based administration that gets handling permission advanced group management working with what are called dynamic groups
+[03:26] And again, you're not going to understand what all these features are right now
+[03:29] Alright, so don't stress about that but cross tenant synchronization sharepoint limited access session management session lifetime management global password
+[03:37] protection management application launch portal and user application
+[03:41] Collection self-service password change reset unlock all of that. All right
+[03:46] You get advanced security and usage reports.
+[03:50] All right, risk-based conditional may access.
+[03:54] So you'll notice that we don't get that with P1.
+[03:57] Real-time dynamic sign-in assessment,
+[04:00] real-time dynamic user assessment,
+[04:02] authentication, context, step-up authentication.
+[04:05] All right, device and application filters for conditional access.
+[04:10] Token protection, don't get that with P1.
+[04:16] Don't get that p1 some of this involves machine learning and AI and all that
+[04:21] risk event investigation
+[04:24] Automated user provisioning to software as a service apps
+[04:29] Automated user provisioning on-premise apps automated group provisioning HR driven provisioning in terms of use a test station
+[04:37] basic access certifications are abused don't get that with p1 so then you start getting a machine learning assisted access see
+[04:44] You know, don't get that with either of these basic entitlement management,
+[04:48] entitlement management, custom extension, entitlement management,
+[04:51] well, Microsoft entry, a verified ID, uh, life cycle, workflows,
+[04:56] identity governance dashboard, privileged identity management,
+[05:00] also known as PIM.
+[05:01] All right.
+[05:02] Verifiable credentials issuance, verify credentials, verification,
+[05:08] high assurance entitlement, uh, face check.
+[05:12] high assurance facial matching verification.
+[05:16] All right, see there's some limitations there.
+[05:20] Then you get flexible deployment options,
+[05:22] universal tenant restrictions, source IP restoration,
+[05:24] user universal conditional access, traffic logging,
+[05:28] web category, fully qualified domain name, filtering,
+[05:32] identity centric zero trust, network access,
+[05:35] conditional access across.
+[05:37] All private apps and resources adapt to multi-factor authentication,
+[05:41] seamless single sign-on, fast and easy access to global scale.
+[05:44] So there's a lot of capabilities, a lot of features here.
+[05:47] They don't really dive into all the details on that,
+[05:50] but you can see you get certain things included with each one of these.
+[05:56] Now if I jump back over to portal.azure.com,
+[05:59] I can click the menu button here and go down here to Microsoft
+[06:03] IntraID and underneath Manage you're going to see
+[06:06] a blade called Licenses. That Licenses blade will show you all of the licensed
+[06:13] features that you currently support. Now I do have
+[06:16] IntraID Premium 2 enabled. In fact it says it right here that I've
+[06:22] got that enabled. So these are these features that I have
+[06:25] to me. Okay and I can even click learn more to learn more about each feature.
+[06:29] Okay obviously I'm not going to do a deep dive on all the features right now,
+[06:33] but if I go over here to all products I can see the licenses I have available.
+[06:40] Now keep in mind you will probably not see the exact same stuff as me. Okay
+[06:45] I've got Microsoft 365 E5
+[06:49] You may not have that, you may have a P2, doesn't matter. It does not matter that we don't have the
+[06:54] same licenses. I have to have different licenses because I create so many different courses and
+[06:59] Microsoft does not allow me to create a free account every time I do this. So don't worry
+[07:04] if you don't see the same licenses as I do. Okay, now one thing I do want to say is when I get to
+[07:09] this screen, a couple neat things. I can click try and buy and I can actually do some free trials
+[07:17] For example, I could do intra ID premium two free trial, but I'll also tell you something else that's changed recently Microsoft
+[07:24] Took away the ability to assign licenses right here. You can no longer assign licenses from this screen
+[07:32] Okay, you have to go into the Microsoft 365 admin center
+[07:36] You can see that I can click this link. It'll take me straight there or if I go to admin
+[07:41] Microsoft com put that in that'll bring me here
+[07:46] And I can drop down billing and I can click licenses and I can see the
+[07:52] Licenses that I've got available right here. So you see these exact same things. I can even click
+[07:58] the Microsoft 365 E5 and I could see who has been given that. Or in your case you may see
+[08:04] different licenses here. Click on those licenses you can see who it is issued to. Or if you click
+[08:09] on a license you can assign that license to a user that way. Also if you want to get other licenses
+[08:18] there's usually two ways you'll do this. Depending upon what region you're in when you want to
+[08:27] licenses that way. Now if you're in a different region, certain regions won't
+[08:32] have marketplace. They'll have under billing, they'll have a thing called
+[08:36] purchase services. So you're either gonna see a marketplace or you're gonna see
+[08:40] something under billing called purchase.
+[08:42] services. Okay, now keep in mind this is sort of more of the Microsoft 365 neck of the woods
+[08:49] where we purchase licenses and we get access to applications and all that stuff. When you
+[08:54] start thinking in regards to Azure and its resources, well you're going to be it's more
+[08:59] of a pay per use model where you're paying money to use
+[09:03] their products as opposed to licensing products.
+[09:07] So you're gonna find as far as licensing goes,
+[09:09] yes, we're gonna license intra ID and all of that.
+[09:13] but for a lot of the applications,
+[09:15] we'll have licenses for those
+[09:17] like the Microsoft 365 license.
+[09:19] But when you start getting into creating virtual machines
+[09:22] and Azure and the various resources
+[09:25] you're setting up virtual machines,
+[09:26] you're setting up applications
+[09:27] and stuff like that on the Azure side,
+[09:29] that gets in more into you pay for per use model.
+[09:34] This video is about licenses,
+[09:36] so I wanted to kind of explain that,
+[09:38] but I also wanted to point out
+[09:39] that when it comes to Azure,
+[09:40] it's more of a pay as you go.
+[09:42] You pay for what you use, how much processing power and RAM and storage and all of that
+[09:48] that you use.
+[09:49] Okay?
+[09:50] Alright.
+[09:51] Well hopefully this video has given you a better understanding of the concept of how
+[09:55] licenses are going to work when it comes to our Microsoft Intra environment.
+[10:00] which of course we know that Intra is the directory services that we use in
+[10:03] Azure and Microsoft 365.

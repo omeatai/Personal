@@ -1,0 +1,117 @@
+# 34 - Manage built-in Azure roles
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/34 - Manage built-in Azure roles.mp4
+Fetched On: 2026-10-21 19:59:42
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to talk about implementing role-based access control in Microsoft Azure.
+[00:07] So here we are on portal.azure.com.
+[00:11] We're just going to click the menu button here and we're going to go down here to where it says Microsoft Intra.
+[00:16] And the thing to understand is there is a couple of different ways that role-based access control gets implemented within the Azure and Intra environment.
+[00:29] privileged identity perspective
+[00:31] And privilege access management which involves your administrators and this involves giving out privileges to your administrator
+[00:39] So I do that through intra ID and I can go right here to roles and administrators. Keep in mind you can also
+[00:48] control access through the Microsoft 365 side of things for admins as well, but I'm not jumping into that in this video.
+[00:56] Now I also want to point out if you go to Google or Bing and just do a quick search on Azure
+[01:02] Role-based access control, you'll see this article here.
+[01:05] What is Azure RBAC?
+[01:07] You can find that article and they kind of break it down for you and they tell you the
+[01:12] idea here is that you're giving out security principles access to resources.
+[01:18] What's a security principle?
+[01:19] Users, groups, what's called a service principle, which would be services in the
+[01:23] water known as managed identities, which can also be involved in resources, but not
+[01:29] diving deep into that right now.
+[01:35] a role definition.
+[01:37] Role definitions are collections of permissions that provide rights to the different roles,
+[01:44] right?
+[01:45] And this can be read, write, delete, things like that.
+[01:49] All right?
+[01:50] And this is all built off of JSON.
+[01:53] The great thing about a role is that roles will always identify what rights an identity
+[01:59] is given.
+[02:01] it is a requirement of the role. So you can always see exactly what rights that role has been given.
+[02:09] Now from a perspective of an admin, I want to jump back over into here,
+[02:18] write on roles and administrators and you can see the various roles that are available. Some of
+[02:25] privilege because they are given special admin privileges over various resources in Azure.
+[02:32] The most powerful role that we have in Azure in IntraID is the global administrator role.
+[02:39] You are a global administrator, then you have the highest level of privileges that is available
+[02:47] intra-environment and for the most part as well as Microsoft 365 services as well.
+[02:53] Alright, if you click on a role such as the global administrator role and then go to description,
+[02:59] it gives you a description of what that role can do. You can also sometimes click learn more and
+[03:07] it'll even break things down even more for you on certain aspects of it. But ultimately
+[03:14] It's a good idea to look at the description,
+[03:16] but also you can see the actual permissions and the different directories and
+[03:21] intra and the Azure environment that this role has access to.
+[03:26] So you can see there is a lot of privileges here that this has access to.
+[03:32] All right. If you go to assignment,
+[03:34] you can see who has been assigned this role.
+[03:37] Now, keep in mind if you're doing this with me,
+[03:39] you're not going to see the same thing I'm seeing here,
+[03:41] but you can see which roles I have and
+[03:44] Keep in mind I have created various courses over the years using my Azure environment.
+[03:50] So I've got some different users here that I've assigned privileges to.
+[03:54] I've got also, if I go over to role settings, I can see that we have some different capabilities
+[04:05] and features here as well.
+[04:12] the concept of privileged identity management, which I'm not really diving too much into
+[04:17] this video, but this gets into giving out temporary rights to a role if you need.
+[04:23] You can have activation occur. It says activation maximum duration is eight hours. So if you
+[04:28] temporarily give somebody access to this role, it'll be a maximum of eight hours. Okay, of course,
+[04:38] You can require MFA for the person as well if you're gonna give this out.
+[04:42] So like let's say I was gonna go out of town next week and I needed to give somebody temporary global admin rights.
+[04:47] I could do that and it would require them to authenticate with MFA.
+[04:50] Alright, you can even require approvals. Again, I'm not diving too deep into this because I'm not getting into...
+[04:56] Pym in this video, Privilege Identity Management. But that's what a lot of this is going to govern.
+[05:02] Okay, so again, if I did want to assign somebody, I can go to assignments and I click Add Assignment
+[05:07] and this is where I would do that. Alright, which I'm not going to do in this video on that.
+[05:12] Then you've got Global Readers. So this is somebody that has global rights to read everything in the
+[05:18] environment. Okay, they can't do everything a global administrator can do because they can
+[05:24] privileges of this, you can see a lot of read permissions here.
+[05:29] So they can pretty much read anything involving the Azure
+[05:34] Intra ID, Microsoft 365 services,
+[05:37] and all of that for the most part.
+[05:39] You have other admins like Help Desk Admin,
+[05:42] Identity Governance Admin, Intune Administrator.
+[05:46] You've got, let's see,
+[05:53] There it is exchange administrator you've got SharePoint administrator
+[05:57] So it just kind of depends on what it is that you are
+[06:01] Wanting to give somebody authority over I wanted to give somebody just SharePoint admin rights
+[06:05] I could without giving them you know the keys to the kingdom as I like to say
+[06:10] and give them all the rights in the world. So instead of making somebody a global admin,
+[06:14] they just needed access over SharePoint, make them a SharePoint admin. They just need admin
+[06:17] rights over Exchange, make them Exchange admin. Alright, you've even got Teams administrator.
+[06:23] Alright, the main thing I want to kind of in playing in your mind here is that when you're
+[06:28] messing with roles, always click on a role. Alright, that you're that you're interested in.
+[06:35] like security administrator, maybe I don't know the difference between security administrator and security operator.
+[06:40] Click on it, click the description, read the description, and then look at some of these different permissions
+[06:46] and they give a little bit of a definition as to what these permissions do.
+[06:50] Okay, that'll familiarize you.
+[06:53] So you got security administrator, then come over here to security operator and read the difference.
+[06:58] Okay, don't worry, you don't have to be an expert on all the...
+[07:01] various roles here but it is a good idea to familiarize yourself when you are studying
+[07:07] roles.
+[07:08] Okay?
+[07:09] Alright.
+[07:10] Again, if you want to give out a certain role to somebody, all you got to do is click on
+[07:15] a role, go to that particular role that you want, add assignment, and then you could select
+[07:23] who you want to have that role, any user you want.
+[07:27] Okay?
+[07:30] create a user. Maybe I want to give this user Greg Johnson again. You may not, you're not going
+[07:34] to have the same users as me, but you're always welcome to create a user. And if you just wanted
+[07:38] to go through the process of doing it, that's how you would do that. So I could now assign that user.
+[07:44] I can make it active now, or I can make it eligible. That's going to get into more about
+[07:50] privileged identity management, which I'm not getting into in this video. But I'm going to
+[07:54] go ahead and make it active now, which means it just gives that user the rights. I'm going to
+[07:58] I could I could do that very quickly this user needs full access to this role so
+[08:07] maybe I'm not doing it temporarily I'm doing it full-on so there you go and now
+[08:12] I just do that with security reader okay
+[08:14] So that is the idea there. Now keep in mind that because I did grant that user access actively right now, they have that role until somebody was to take it away from them.
+[08:27] I did not use privileged identity management, meaning I did not give this out temporarily to the user. The user now has that role for good until it is taken away.
+[08:37] Hence the reason why it's a good idea to utilize temporary access if this person does not need this access all the time.
+[08:44] But there are of course circumstances where users do need access all of the time.
+[08:49] And so maybe that is the reason I gave that right out to that user full time.
+[08:53] Okay. Alright.
+[09:02] the Microsoft Enter ID. Remember this will be reflected in Microsoft 365 services as well,
+[09:07] though I'm not jumping into that in this video.

@@ -1,0 +1,230 @@
+# 33 - Understanding roles
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/33 - Understanding roles.mp4
+Fetched On: 2026-10-21 20:32:15
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to spend some time helping you understand the concept of roles in Azure,
+[00:04] Microsoft 365, and IntraID. Now, one thing I will go ahead and say is that ultimately,
+[00:09] IntraID is the directory services where user identities live and group identities and all
+[00:16] that. And these are the things that you're going to be assigning roles to in order to
+[00:21] give permissions to resources. So even though I mentioned here Azure, Microsoft 365, it really
+[00:28] intra ID. So what are roles? Roles define what users can do within the Microsoft
+[00:36] services. Okay, this is going to control their their capabilities, right? What
+[00:40] actions users can perform within various services, all right? This is based on
+[00:47] the principle of least privilege, which simply means that whenever you are
+[00:50] giving out roles to
+[00:52] Identities you want to make sure you give them the least amount of privilege as possible
+[00:57] Don't give them too many rights. So you really want to think about what rights they need before assigning any roles
+[01:03] Okay
+[01:03] We have central to RBAC or role-based access control.
+[01:07] That's the model in which is used here for granting access.
+[01:12] It's known as RBAC.
+[01:13] And the idea being that if you're talking about an Azure
+[01:17] resource, for example, let's say we have a virtual machine
+[01:21] in Azure that we would like to grant.
+[01:24] certain users access to, we can do that through what is known as an RBAC based Azure role.
+[01:31] And so we can give grant rights to users that way.
+[01:35] Okay, and don't worry, I'm going to give some more information on this in just a moment.
+[01:39] But the next type of way that roles are used is within Azure in the Microsoft 365 and Intra.
+[01:47] access environment to control access to those actual management services.
+[01:54] So in other words, if you want to grant an admin the right to control Azure, not just
+[01:58] granting somebody access to a resource, but giving them the right to control Azure or
+[02:04] giving somebody the right to control parts of Microsoft 365 or Intra itself. Well,
+[02:09] that's another way that roles are going to be used. All right. And again, don't worry. I'm
+[02:14] Give you more depth on that in just a moment.
+[02:17] An example of all of this is,
+[02:19] you have a user with the user administrator role.
+[02:24] That user administrator role
+[02:26] is allowed to reset users' passwords,
+[02:28] but they cannot delete subscriptions.
+[02:31] They can't...
+[02:32] take away what is called a subscription, which is what users could use to purchase
+[02:36] Azure services and all that. The user administrator role is limited, okay, whereas you have another
+[02:41] type of role called the global administrator role. The global administrator role is the most
+[02:45] powerful role that we have in intra id. It can pretty much do everything involving intra id.
+[02:51] So a user administrator role, if you just had somebody that needed to be able to
+[02:55] reset passwords, it's better to give them that role than it is to give them a global
+[03:00] All right, let's take a deeper look at the Azure RBAC based roles.
+[03:06] So when you hear that term Azure RBAC roles,
+[03:09] the idea is these are role-based access control permissions that
+[03:15] manage who can access Azure resources.
+[03:19] But not only that,
+[03:20] Not only does it manage who can access it, it manages what they can do when they access it.
+[03:26] It also controls what's called the scope and I'll explain that in a second. That's a hierarchy.
+[03:32] So again, going back to what I said a moment ago, if I had a user that needed access to a virtual
+[03:47] So these are going to be roles that contain permissions that allow them to do certain things.
+[03:54] For example, some of the key role types are owner. So if I make somebody a give them the
+[04:02] role owner over, let's say a virtual machine in Azure, well, they have full access,
+[04:06] including the ability to sign roles to other people. You have contributor.
+[04:11] Which means they can create and manage resources involving a certain resource. For example in Azure
+[04:17] We have something called a resource group, which is a container. That container allows you to create things underneath it
+[04:24] Like other virtual machines if you make somebody a contributor, they are not the owner
+[04:29] They can't do everything but they do have the ability to add resources underneath that container
+[04:35] That's the idea of a contributor and then you have a reader
+[04:38] If you give somebody the role reader,
+[04:40] they can view everything about that resource.
+[04:44] So if I make you a reader of a virtual machine,
+[04:46] you can view the data involving
+[04:49] that virtual machine and all of that inside Azure,
+[04:51] but you can't make any changes to it.
+[04:54] Then you have custom roles where you as
+[04:57] an administrator can define
+[04:59] specific permissions you want somebody to perform.
+[05:03] Now another thing about admin roles, these, sorry, these Azure RBAC roles is that they are managed at what we call the scope.
+[05:11] The scope is different levels. In Azure...
+[05:15] We have what's called a management group,
+[05:17] which is a way of grouping together what are known as subscriptions.
+[05:21] Subscriptions are a type of resource that we use
+[05:25] to be linked to our way of paying for Azure services.
+[05:30] There are different subscriptions that might be tied to things like
+[05:33] different credit cards that the company uses,
+[05:36] and these are used to purchase Azure services.
+[05:39] You can group together subscriptions.
+[05:41] I could have a management group called developers.
+[05:44] and inside that developers management group we have subscriptions that certain developers can use
+[05:50] to purchase Azure services and we have another management group under another department
+[05:55] and that's the idea and they can have their own subscriptions. Well
+[05:58] Every resource that we create must be stored in what's called a resource group.
+[06:04] That's a container that contains resource.
+[06:07] So when I say I have a virtual machine,
+[06:09] well a virtual machine would be a resource.
+[06:12] That resource must be kept inside of a resource group.
+[06:16] The resource group is linked to a subscription that's
+[06:19] paying for the resources involving that resource group.
+[06:22] So when you get into Azure RBAC roles,
+[06:28] at all four of the levels you see here. And if I assign, if I give somebody owner access of a
+[06:34] management group, then they have owner access of that management group and everything below.
+[06:39] including the subscription, the resource group, and the resources in it.
+[06:42] If I give them owner access over just a subscription,
+[06:45] then they have owner access over just the one subscription
+[06:48] and anything linked to it.
+[06:50] Any resource group and resources.
+[06:52] If I give you owner access over the resource group,
+[06:54] then you are the owner of that container and anything below it.
+[06:58] If I give you owner access just over a specific resource,
+[07:01] well, you have owner access just over that specific resource.
+[07:04] So that is the idea of...
+[07:06] RBAC roles. These are going to be roles that give permissions to people in the Azure environment so they have access to resources.
+[07:14] Azure RBAC roles are not so much about somebody managing the Azure services from an administrative perspective.
+[07:24] You're not using these for creating user accounts and groups and all that. That is what the next type of role is for.
+[07:32] intra ID roles formerly known as Azure AD roles. Okay, back when intra ID was called Azure AD,
+[07:41] that was the term for it. intra ID roles are predefined sets of permissions that control
+[07:47] access to identity and directory resources across both Microsoft 365 and Azure. So this all
+[07:54] actually links to Microsoft 365 as well, even though I am going to show you a different
+[08:02] roles that are usually geared towards administrators
+[08:06] or even lower level, lower tier IT people,
+[08:10] a lot of times that have specific things they wanna do.
+[08:13] Some role examples on the screen are global administrator,
+[08:16] that's the most powerful role we have in intra ID
+[08:19] that's used in both Azure and Microsoft 365 services.
+[08:23] You have the user administrator,
+[08:25] they can manage users in groups,
+[08:26] but they have certain restrictions put on them.
+[08:28] You have a security reader,
+[08:30] which has the ability to read all security settings involving intra-ID,
+[08:35] that'll include Microsoft 365, and then you have Security Administrator,
+[08:39] which has the ability to manage the security settings, not just view it.
+[08:44] You have a Cloud Application Administrator,
+[08:46] that's somebody that can administer and manage your applications,
+[08:50] your app registrations and configurations,
+[08:51] that's where you're essentially setting up apps inside of Azure.
+[08:56] Roles can be assigned to users, groups, or service principles.
+[09:00] Okay, if you assign a role to a group, whatever users are in that group will also inherit that role.
+[09:06] Alright, that's the idea. So that's intra ID role. Now when we jump over to Microsoft 365 roles,
+[09:12] note that this all ties back to intra. Okay.
+[09:17] So it all links back to Microsoft Intra. Microsoft 365 roles are built-in
+[09:22] administrative roles that grant user specific permissions that are geared
+[09:25] towards the Microsoft 365 services as opposed to just pure Azure. And so the
+[09:32] idea here is you're giving you're going to be giving
+[09:36] control over administration control over to exchange,
+[09:39] SharePoint teams, and even some of the compliance security
+[09:43] compliance features that we have in Microsoft 365.
+[09:47] Here's some of the built-in roles.
+[09:48] There's the global admin, which you already know,
+[09:50] same as enter ID.
+[09:52] Again, it all ties back to enter ID.
+[09:54] You have exchange admin.
+[09:55] This is somebody that you give control
+[09:57] over your Microsoft Exchange.
+[09:58] But the great thing about it is
+[10:00] The global admin has admin rights over exchange, SharePoint teams, the compliance admin, but
+[10:05] what if you don't want to give somebody...
+[10:07] All access to everything. What if I do have just an admin who needs to administer exchange?
+[10:12] What if I have just an admin that needs to administer SharePoint or just an admin that
+[10:16] needs to manage teams? Well, that's the idea. You have these various roles and you can assign these
+[10:21] out to these different admins and they would only be able to perform the permissions that are
+[10:27] linked to those roles. Okay. All right. You know, you've heard the principle of least privilege.
+[10:36] in a little bit more depth. Well, the principle of least privilege is to give out the least
+[10:41] amount of rights but still provide users the ability to do their job. So whatever tasks
+[10:47] somebody needs to perform, okay?
+[10:50] If you're again, if you're talking about maybe you have somebody that's managing a VM in Azure,
+[10:54] okay, or maybe you have somebody that's managing Exchange in Microsoft 365,
+[11:00] you would consider giving out the least amount of rights to still let them do their job.
+[11:04] You don't want to make them a global admin if they don't need that level of privileges.
+[11:09] For Exchange, I might say, okay, well your Exchange admin, for Teams, your Teams admin,
+[11:19] that one VM. So Microsoft always encourages this principle. Okay, another
+[11:24] thing is you can mix this with what we call PIM.
+[11:27] privileged identity management and this will help you achieve what's called just in time JIT
+[11:33] administration within roles. What does that mean? Well it's a neat capability where I can
+[11:39] essentially say okay I've got this role that you can have access to but only if you need it. Like
+[11:44] let me give you an example. Let's say that I am the main administrator for my company but I'm
+[11:49] going to be going out of town for the next two weeks and there's a chance that the company may
+[11:56] a couple of new employees and maybe I've got a junior level admin that I work with.
+[12:02] Now this junior level admin is not somebody that I'm giving a lot of control over to yet.
+[12:08] I don't want them creating users anytime they want but I do want to give this junior level
+[12:14] admin the ability to create users if I'm out of town. So what I could do is for the next two weeks
+[12:22] where with privileged identity management for the next two weeks, if I'm going to be out of town for the next 14 days or whatever,
+[12:27] I can give this lower level admin the user administrator role, but only when they need it.
+[12:34] And so the user can can actually go through the portal, and if they needed to create some users,
+[12:40] because maybe the company hired some users, they can then...
+[12:43] Grab that role they can request it even and I could even have it where somebody has to approve it before it goes through
+[12:49] But they can request that role and it's on a timer
+[12:53] We can limit how long they get that role we can even make it where after they've created the user
+[12:58] They no longer have the role and if they want the role again, they have to request it
+[13:01] So this is the idea of PIM privileged identity management and it provides JIT just-in-time
+[13:08] Administration meaning you you get access to it when you absolutely need it
+[13:12] Now let's summarize and talk about the best practice here. So in summary roles equals permissions
+[13:18] Okay, so the idea is with roles. We are giving permissions
+[13:24] With whatever it is that you're you're in you're talking about. So again, if I'm
+[13:29] giving you a owner ownership rights over something then you're getting
+[13:34] ownership right giving you read only you're getting read only so whatever
+[13:38] role I'm giving you based on the permissions that are linked to that role
+[13:41] you'll inherit those permissions with intra ID intra ID is very identity
+[13:46] focused so you're talking about users you're talking about groups it's it's
+[13:51] based on identities and
+[13:53] as far as the roles that are specifically for intra-ID,
+[13:57] they're geared towards administering those identities.
+[14:00] Within Azure, Azure is resource focused.
+[14:03] So that's where you start getting into the various resources that are being
+[14:06] hosted in Azure and we want to give access to those specific resources.
+[14:11] With Microsoft 365, well they actually tie hand-in-hand with intra-ID in terms
+[14:16] of their identity focus for controlling the identities in Microsoft 365,
+[14:22] You'll notice it says app focused there is because ultimately within Microsoft
+[14:26] 3065 that's what we're usually trying to do. We're trying to control apps or
+[14:30] give access to apps. So things like Exchange and SharePoint and Teams and all
+[14:35] of that. Some best practices as we wrap this up, assign roles to groups not
+[14:41] individuals. That's a good idea unless it's an administrative role then then
+[14:46] you would generally would want to do it to an individual.
+[14:49] a higher level, you know, more powerful roles. You want to be a little bit more specific about that.
+[14:53] Okay, but the more general roles you want to assign to groups, not individuals. And each
+[14:59] person that's in the group will get those privileges. Okay, follow the least privileged
+[15:03] principle. We talked about that a couple of times. Give out the least amount of rights
+[15:07] that still allows somebody to do their job. And then lastly, regularly review role assignments.
+[15:18] and consider using privileged identity management.
+[15:22] There's another little feature I won't dive deep into in this video
+[15:25] but it's called access reviews where you can schedule periodic reviews
+[15:30] of somebody being a part of a group.
+[15:32] So if you've given a roll out to a group,
+[15:34] you can have a scheduled time where you get an email that reminds you,
+[15:38] hey, you need to review these groups that have these privileges
+[15:42] and make sure that people are still in need.
+[15:45] of the privileges that have been assigned.
+[15:47] Okay, so that is another best practice
+[15:51] and something to consider.
+[15:52] Okay, hopefully you now have a nice general
+[15:55] understanding of the idea behind roles
+[15:58] that we use in Azure Microsoft 365 and IntraID.

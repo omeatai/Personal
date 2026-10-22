@@ -1,0 +1,196 @@
+# 45 - Understanding storage accounts
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/45 - Understanding storage accounts.mp4
+Fetched On: 2026-10-21 20:23:04
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to spend some time helping you understand the concept of storage accounts in Microsoft Azure.
+[00:06] So what are storage accounts?
+[00:08] Well, storage accounts are providing a storage service in the cloud.
+[00:13] Okay?
+[00:14] Each storage account has a unique namespace that you can interact with it over the web.
+[00:26] namespace even if you don't plan to interact with it directly through a URL publicly,
+[00:32] it will still have a URL associated with it. So you can be interacted with with HTTP HTTPS.
+[00:41] The data in the storage account is made extremely highly available and durable. It's also very
+[00:54] space. All right, so you want to sort of think about it as like in a normal
+[01:00] on-premises network we had what was called a SAN, right? Storage Area Network.
+[01:04] Well, this is the equivalent of that but it's in Microsoft's data centers in the
+[01:10] cloud, right? An Azure storage account contains all of your Azure storage data
+[01:17] objects. This can include blobs,
+[01:19] which stands for binary large objects. A blob can essentially be anything. A file, an image,
+[01:26] video, raw text, you name it. Okay, it can be a blob. You've also got file shares,
+[01:33] which is more like a traditional
+[01:35] file server type scenario with our on-premises network where we'd have
+[01:39] files and we'd share out folders and people could access that shared data.
+[01:43] You've got queues and tables. This gets into dealing with databases and passing
+[01:47] messages back and forth and then you've actually got disk and
+[01:51] that'll get more into like having virtual disk and all of that that can
+[01:55] be utilized in conjunction with virtual machines and all of that fun stuff.
+[02:00] Now before you get into the different types of
+[02:02] Storage accounts it's important to understand the redundancy of all of this and I wanted to also clarify
+[02:08] I'm going to give you just kind of a summary of the redundancy options here
+[02:12] This is not the video where I deep dive this. Okay, we're just getting a basic understanding
+[02:17] So with Azure storage one of the considerations you have is the redundancy and there's different levels of redundancy
+[02:24] And of course as you go deeper into these levels, of course things are going to get more expensive
+[02:29] The first level of redundancy we can utilize
+[02:32] with our storage accounts will involve LRS that's locally redundant storage
+[02:37] and essentially what that's going to give you is three copies of your data
+[02:41] stored in the same data center. So this is going to protect from you know
+[02:46] different racks of your equipment in a data center failing you still have
+[02:50] multiple copies of it but if a data center fails well you're still going
+[02:54] to be in trouble in terms of redundancy. Okay so it's a local
+[02:58] replication that's going to occur. So it's very cost effective, but there's minimum redundancy.
+[03:03] Then you got ZRS, that's zone redundant storage. You get three copies across three availability
+[03:10] zones in a region. So this is all happening within this regional environment. Okay, so it's
+[03:16] highly available within the region. And most regions will have three different locations that
+[03:28] have a copy of your data in two other locations.
+[03:31] So this is highly available, but it's going to be within the same region.
+[03:35] So for example, if I was in East US and the entire East US got taken out for some reason,
+[03:40] well, I'd still be in trouble.
+[03:42] Then you got GRS.
+[03:43] This is Geo Redundant Storage.
+[03:45] This is LRS plus async copy to another region.
+[03:49] What that essentially is, is you get the three copies within two data centers.
+[03:57] region, okay, and then it's gonna replicate to another region. So you get your actual replication
+[04:04] of your data being replicated to multiple regions. So this means if I had my data in East US and I
+[04:10] had a replication that was replicated over to Central US, then East US could be taken out and
+[04:15] I'd still have a copy of all of my data in that other region. Okay, then you've got...
+[04:20] RA GRS, that's read access GRS.
+[04:24] So this gives you the equivalent of GRS, but you also get read access to a second region
+[04:30] as well.
+[04:31] So cross region readable.
+[04:34] Okay.
+[04:35] Now, what is the main difference there?
+[04:38] you get a copy of your data that's sent over to this other region and the data in the other region
+[04:43] is readable. Whereas with GRS the other copy is not readable unless the main copy fails.
+[04:50] So with read access GRS we have our copy of our data in a different region and that copy that's
+[04:57] in that other region is readable. So this is great if you have apps that need read access
+[05:07] not just a backup, but that capability.
+[05:09] Okay?
+[05:10] Then you get GZRS, that's GeoZone Redundant Storage.
+[05:14] So that gives you ZRS,
+[05:17] which was the zone redundant storage,
+[05:19] three copies across three availability zones, okay?
+[05:22] And it asyncs a copy to another region.
+[05:26] So you get another copy of your data
+[05:29] in a completely different region.
+[05:31] So you get multi-zone cross region.
+[05:34] This is gonna give you the highest availability
+[05:37] for a disaster recovery type scenario. Okay, so those are your different storage redundancy options.
+[05:44] Again, I'm not deep diving those in this video. Okay, but that gives you a summary of those.
+[05:49] Now let's talk about the types of storage accounts that we have available to us. So there
+[05:54] are various types of storage accounts, and certain types of storage accounts are going
+[05:58] to be more suited for certain scenarios. The first type of storage account you'll see there
+[06:05] Version 2 this replaces the older version called version 1 back in the day the standard general purpose version 2
+[06:13] The great thing about it is it's sort of like a it supports everything an all-in-one type of storage account
+[06:18] So you can choose this if you just want a storage account that supports everything
+[06:23] It may not be as efficient for certain features, but it can support everything
+[06:29] This is a jack-of-all-trades
+[06:31] type of storage account. Okay, you get all the various redundancy options you see on the screen
+[06:36] there. The usage of that is for standard storage accounts. If you want to support blobs and file
+[06:41] shares, queues and tables, it's great for most scenarios and it's probably one of the most common
+[06:48] types of storage account people use. Okay, then you got premium block blob storage account.
+[06:53] This is geared towards blob storage and what they call a data lake type of scenario. Okay,
+[07:01] you get premium storage. So very high-end, super good, high performance when it comes to
+[07:09] dealing with blob type scenarios. So this is going to be great in a situation where you are
+[07:15] dishing out high amounts of web traffic, video streaming, video files, audio files.
+[07:22] web content involving images, things like that.
+[07:25] That's why this is going to be beneficial to you.
+[07:28] The next one down from that is premium file share.
+[07:31] So this would be using a file sharing scenario
+[07:34] as opposed to like a website streaming video audio.
+[07:38] When you think about that, you want to be thinking about blobs.
+[07:41] But when you're thinking about a file server type scenario,
+[07:44] that's where file shares are really going to shine.
+[07:47] So you get a high performance solution with that.
+[07:51] And the last one would be premium page blobs.
+[07:55] So this is another premium storage type
+[07:59] for dishing out blob related content.
+[08:02] It's very, very high performance.
+[08:04] Data is stored in memory.
+[08:06] So you're talking about extremely high performance scenario
+[08:11] here with dishing out blob type data, okay?
+[08:14] So that is what premium page blob is.
+[08:18] Okay, so storage account names.
+[08:20] Something about storage accounts to be aware when you go to create a storage account the names must be between three and twenty-four characters in length and
+[08:27] They may contain numbers and lowercase letters only so no capitalization
+[08:32] Your storage account name must be unique within Azure
+[08:36] Completely, so there are no two storage account names out there that are the same
+[08:41] across the board. Storage accounts have what are known as endpoints.
+[08:47] The endpoint will be a URL based name. So storage account name will be a unique
+[08:53] namespace in Azure for all your data. Every object that you store in the Azure
+[08:58] storage will have a URL associated with it
+[09:02] with a unique name. The combination of the account name and the service
+[09:06] endpoint
+[09:07] forms the endpoints for the storage account,
+[09:09] meaning when anything connects to the storage account,
+[09:12] that URL is going to be the endpoint.
+[09:14] There's two types of endpoints with storage accounts.
+[09:18] You have what's called a standard endpoint,
+[09:20] which is generally what they recommend.
+[09:22] You can create up to 250 storage accounts per region
+[09:27] with standard endpoints in a given subscription.
+[09:30] You can also do what are called Azure DNS endpoints.
+[09:33] You can create up to 5,000 storage accounts,
+[09:36] per region with the Azure DNS zone endpoint.
+[09:40] So what you have there is a custom DNS name
+[09:42] that you can associate with it.
+[09:44] So they'll let you have a lot more of those.
+[09:46] So within a single subscription,
+[09:48] you can create accounts with either standard
+[09:50] or Azure DNS endpoints for a maximum
+[09:53] of 5,250 accounts per subscription.
+[09:57] Standard endpoints, just a basic view of what they...
+[10:00] look like. So when you do a standard service endpoint in the Azure storage, this is going
+[10:04] to include HTTPS as the protocol. The storage account name will be the as a sub domain and
+[10:11] a fixed domain name that will include the name of the service. So here's an example
+[10:16] on the table here. You'll see blobs will be HTTPS colon slash slash whatever the storage
+[10:21] account name is that has to be unique. And that's based on what I said over here,
+[10:29] And then it'll be a .blob.core.windows.net
+[10:33] and then static website, Blob Storage, you can see that.
+[10:36] It'll be web.core, Data Lake Storage Gen 2,
+[10:40] DFS.core, Azure Files will be file.core,
+[10:43] queue storage, queue.core, table storage, table.core,
+[10:48] and that's gonna be your name space
+[10:49] as far as the standard endpoints.
+[10:51] Now, if you go with Azure DNS zones,
+[10:54] this is where you can customize the naming a little bit.
+[10:59] When you create an Azure storage account with Azure DNS zone endpoints,
+[11:04] your Azure storage will dynamically select an Azure DNS name
+[11:09] and assigns it to the storage account.
+[11:12] So when you create it, so the new storage accounts endpoints are created in
+[11:16] the dynamically selected Azure DNS zone.
+[11:20] So an Azure DNS zone service endpoint
+[11:22] in a storage account will include the same thing.
+[11:24] It'll be HTTPS as the protocol,
+[11:27] but the storage account name will be a subdomain
+[11:31] and the domain that includes the name of the service
+[11:33] and the identifier for the DNS.
+[11:36] So the way that'll work is the identifier for DNS zones
+[11:40] will always begin with Z and can range from Z00
+[11:45] So you see example of that right there on what the namespace would be then.
+[11:51] So that's what again allows you to have a lot more storage accounts.
+[11:55] All right, based on the Azure DNS zone in points.
+[11:58] And the last thing to consider here would be the storage account billing.
+[12:02] So this gets into how the billing is going to be handled.
+[12:06] And all objects in your storage account are going to be billed together as a group.
+[12:11] And your storage cost is going to be calculated based on the following.
+[12:15] The region, so based on the region where that storage account is being held,
+[12:19] some regions are going to be more expensive than another,
+[12:22] especially if they're very busy regions.
+[12:24] Then you've got account type.
+[12:26] So refer to the type of storage account you're using, the access tier, which is the usage pattern,
+[12:32] such as if you're using a general purpose version 2 or blob storage account, the capacity, this is
+[12:38] going to get into how much of your storage account allotment you're using to store data,
+[12:44] the redundancy you're going with. So this will determine how many copies of your data is going
+[12:50] The transactions, this will refer to all the read and write operations happening in your storage account.
+[12:56] And then you have the data egress.
+[12:58] This is going to refer to any data transferred out of an Azure region.
+[13:03] So when the data in your storage account is accessed by an application that isn't running in the same region,
+[13:09] you're going to be charged for data egress.
+[13:12] Alright, well hopefully now you have a better understanding of the concepts of what a storage
+[13:16] account is and some of the features of it, and now you're ready to jump in and get some hands-on
+[13:21] experience with it.

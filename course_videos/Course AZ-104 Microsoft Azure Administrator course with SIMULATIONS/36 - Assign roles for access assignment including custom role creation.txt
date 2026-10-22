@@ -1,0 +1,130 @@
+# 36 - Assign roles for access assignment including custom role creation
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/36 - Assign roles for access assignment including custom role creation.mp4
+Fetched On: 2026-10-21 19:56:37
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to spend some time helping you understand how we manage Azure resources in regards to permissions with roles in Azure.
+[00:10] Now, it should already be kind of known that if I go to portal.azure.com and I click the menu button and I go down to Microsoft Enter ID,
+[00:19] I can go right here to...
+[00:21] where you can manage roles from an intra ID perspective.
+[00:26] Now that can be done right here, roles and administrators,
+[00:29] and this is going to be how we manage our roles and all that when it comes to
+[00:32] admins managing intra and all the intra services.
+[00:36] This also carries over to Microsoft 365. However...
+[00:39] What about permissions to your Azure resources themselves?
+[00:44] Okay, like let's say you're gonna host some virtual machines
+[00:47] and all of that stuff in Azure.
+[00:49] How are we managing permissions to that?
+[00:52] So essentially the way that is managed is everything
+[00:56] in Azure is stored in a resource group.
+[00:58] A resource group is a container.
+[01:00] that contains resources. So I would go over here to the menu button. I click on resource groups and
+[01:06] currently I don't have any resource groups in this instance of my tenant. Now in your environment you
+[01:10] may have some resource groups here. You do not have to see the exact same thing I see on my
+[01:15] screen right now. So don't worry about that. I'm going to create a resource group and that's really
+[01:19] the only resource group that matters in the instance of what I'm showing you right here.
+[01:23] So I'm going to click create. All right.
+[01:26] I'm going to tie this to my subscription and then resource group.
+[01:30] I'm just going to call this resource group.
+[01:32] I'm going to call it VM role permissions demo.
+[01:40] That's just going to be what I call it.
+[01:41] Okay.
+[01:42] And then I'm just going to click review and create.
+[01:44] and then I'm going to click create. So now that resource group is created, I can now put
+[01:50] resources inside of it such as virtual machines. So if I click on this, I could start adding
+[01:56] resources. But really what I want to show you here is I want to show you how we manage
+[02:01] the permissions of this resource group and then
+[02:05] the resources that go in it. So that's all managed using this right here. Access control,
+[02:11] also known as the IAM blade. IAM stands for Identity and Access Management. So if I click that,
+[02:18] you're going to see right here that I can click add and I can add role assignment. I can have
+[02:23] add co administrator and a custom role. Now add role assignment, these are just the standard
+[02:28] roles where you can give permissions, various permissions to somebody.
+[02:32] to be able to perform the various actions that you might want them to be able to perform.
+[02:38] You can see the different roles that are available.
+[02:40] You can click view and you can see the permissions.
+[02:43] But what we need to focus on in this video is custom.
+[02:48] So what I want to do is I want to go back here and I want to click add and I want to
+[02:51] click add custom role.
+[02:53] Now before we get too deep into this, I want you to understand that one of the reasons you're
+[03:02] there is not already a role that does what you want it to do.
+[03:06] Now the other thing to understand is when it comes to managing roles within
+[03:09] Azure you have something called the control plane
+[03:13] and you've got something called the data plane. If you actually do
+[03:17] a quick google or beam search on
+[03:21] these keywords Azure control plane and data plane.
+[03:24] You'll find this little article right here if you want to look deeper into it.
+[03:27] They give an idea.
+[03:29] They tell you that Azure's operations are essentially going to be
+[03:32] divided into two different categories of control in the data plane.
+[03:35] The idea is you're going to use the control plane to
+[03:39] manage resources in your subscription itself,
+[03:42] and then you'll use the data plane to utilize
+[03:46] the capabilities exposed by whatever that resource is.
+[03:50] In other words, the control plane is going to be managing the actual resource itself.
+[03:56] So like, let's say, in my case, the resource group is a resource in itself, but then a
+[04:01] VM would be also a resource inside there.
+[04:04] Okay, so the control plane is going to help me manage permissions to that resource.
+[04:10] But then the data plane is essentially what data gets exposed and can be seen and managed
+[04:17] by other people.
+[04:19] accessed, managed, all of that by other people.
+[04:22] Okay, so they give an example even.
+[04:25] It says you create a virtual machine through the control plane, right?
+[04:30] After the virtual machine is created, you interact with it through the data plane,
+[04:34] such as with RDP, where you would connect into another example.
+[04:37] You create a storage account through the control plane.
+[04:40] Use the data plane to read and write data into the control account, the storage account.
+[04:45] Okay, so that's sort of the idea.
+[04:47] Here's another one.
+[04:48] You create a Cosmos database through the control plane
+[04:50] to query the Azure Cosmos database, use the data plane.
+[04:54] So that's sort of how Azure looks at it all.
+[04:57] All requests from the control plane operations
+[05:00] are sent using an Azure Resource Manager URL,
+[05:03] ARM, Azure Resource Manager URL.
+[05:07] And the URLs will vary based on what you're basically doing here.
+[05:11] So it's all handled through URL URL based actions.
+[05:16] Okay.
+[05:17] Using the rest API, a representational state transfer and all that.
+[05:21] Don't really have to dive that deep into, into all that for this, but that's the
+[05:25] idea of the control plane and data plane.
+[05:27] Now, if I come over here, let's say I want to create a role.
+[05:30] I'm just going to call it VM management.
+[05:32] for virtual machine management. We can clone an existing role, start from scratch, or if you
+[05:36] really want to get down and dirty and you know JSON JavaScript object notation, you could write
+[05:41] that that code if you wanted. But we'll say start from scratch and then we'll click next.
+[05:47] And then at that point we got to add permissions. So we're going to click add permissions.
+[05:52] And I'm just going to search for the keywords compute. You can just select it. You can find
+[06:00] I'll search Keywords Compute right here, and then I'm going to scroll down and let's find
+[06:08] Virtual Machines. There's a bunch of these virtual machine scale sets, but we're going to go below
+[06:12] that and look for, here it is, Microsoft.Compute- virtual machines. So let's say we just want to
+[06:18] want to create three different writes here, read, write, and delete. Okay, so from there I'm going
+[06:29] All right, now you can also have exclude permissions if there is a situation where you want to
+[06:35] Exclude something in particular. All right, and they tell you that
+[06:40] You can click add but also to add a wildcard a star
+[06:44] You must manually add the permissions in
+[06:47] On the J's on tab so you'd have to come over here and look at the J's on side of all of this and
+[06:53] And add a star for a wildcard. They have a learn more article
+[06:57] Where you can you can read more about that and they tell you the idea here is depending on how you choose to start
+[07:03] You might have permissions with wild cards a wild card is going to extend the permission to everything that matches the action string
+[07:10] You you provide all right
+[07:13] So basically everything that comes after something you're saying hey, I want to grant this based on that wild card
+[07:22] That's not super critical, but I did want to explain that just briefly to you.
+[07:26] And then you also can exclude to exclude specific permissions from a wildcard.
+[07:30] They tell you the same thing.
+[07:31] They provide a little article about that as well.
+[07:34] So if you want to exclude permissions here, you can.
+[07:38] Um, that's all, you know, all doable.
+[07:42] Now, if there's ever a situation where you have include permissions that.
+[07:47] conflict with exclude permissions because perhaps it's a wildcard or
+[07:53] something grouped in with another set of permissions exclude will always
+[07:57] override include permissions okay so any of the included base permissions that
+[08:05] we have here so where I say add permissions those are include based
+[08:08] types of permissions exclude will will override okay so at that point we click
+[08:16] We will click create
+[08:18] All right. This is you have successfully created the custom role via management does tell you that it will take several minutes
+[08:27] It could take up several minutes or a few minutes to display within your roles
+[08:31] Okay, so at that point we've now created a custom role and that's what I wanted to show you in this video

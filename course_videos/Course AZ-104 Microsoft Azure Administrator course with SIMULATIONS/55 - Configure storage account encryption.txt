@@ -1,0 +1,114 @@
+# 55 - Configure storage account encryption
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/55 - Configure storage account encryption.mp4
+Fetched On: 2026-10-21 19:57:20
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about working with the storage encryption features that we have available in our storage account.
+[00:06] So here we are on portal.azure.com. I'm gonna click the menu button and go right here to storage accounts.
+[00:13] I'm gonna select this first storage account that I have and then I'm gonna look below where it says security plus networking
+[00:19] and we're gonna look for a blade called encryption. So from there you're gonna notice that it tells you that
+[00:26] The storage service encryption protects your data at rest, sometimes referred to as SSE,
+[00:31] storage service encryption. It tells you that Azure storage encrypts your data as it's written in...
+[00:38] our data centers and automatically decrypts it for you as you access it. So this is an automated
+[00:45] process. The data is going to get encrypted as you access it. It can decrypt it on the fly.
+[00:50] It says please note that after enabling storage service encryption only new data will be encrypted
+[00:55] and any existing files in the storage account will be retroactively get
+[00:59] encrypted by a background encryption process. Okay now
+[01:04] We've got this set to enable support for customer managed keys blobs and files only currently
+[01:10] We're currently using
+[01:13] Microsoft manage encryption keys. That means Microsoft is managing the keys there. It's an automated process
+[01:20] There's nothing fancy about it, but it is handled completely by Microsoft
+[01:24] Okay on their end now the other thing you'll notice is this is infrastructure encryption is disabled. This is a
+[01:32] multiple layered encryption, you can add an additional layer of encryption to your storage account if you want.
+[01:39] So they tell you here, it says by default Azure encrypt storage
+[01:43] account data at rest, infrastructure encryption adds a second layer of encryption for your storage account. Now, the problem is
+[01:49] they tell you this option can only be enabled during the storage account creation.
+[01:56] So you cannot turn this on unless you did it at storage account creation.
+[02:02] Alright, if I go right here and I open this in a new link and I go and I say I want to
+[02:07] create a new storage account, I'll show you that here it is creating a new storage account.
+[02:13] If I go over here encryption, see there's the checkbox right there.
+[02:16] I could have enabled this if I wanted it.
+[02:18] So that's an additional layer of security you could implement if you want, but we cannot
+[02:23] implement that now because it was not done at the creation of the storage account.
+[02:27] So no big deal.
+[02:30] Again, Microsoft Managed with Key is what most people will use.
+[02:35] However, you may choose, depending upon what industry you're in, to use Customer Managed Key.
+[02:41] Now, a Customer Managed Key is going to provide a way for you to manage your own keys, your encryption keys and all that.
+[02:51] And the way you do that is you can create something called an Azure Key Vault.
+[03:00] that can securely store encryption keys.
+[03:04] And we have access to it.
+[03:06] All right, and we can even create our own encryption keys
+[03:10] using some type of on-premises software,
+[03:14] like you can get into digital certificates and all of that.
+[03:17] And then you can have that key placed
+[03:19] in that Azure Key Vault, right?
+[03:21] So that's the idea there.
+[03:23] This is gonna let us manage all of the encryption.
+[03:26] keys and all that, but I have to create what is known as an Azure Key Vault.
+[03:31] Alright, I can actually, if I wanted to create, I'm not going to create a Key Vault right now in this video,
+[03:36] but if I wanted to, I can go right over here to All Services, I can search for the keywords Azure Key Vault.
+[03:44] Okay, and then here it is, Key Vaults. I can click on that and I could then create...
+[03:50] Azure Key Vault. Okay, and then at that point I'd be able to select it right here.
+[03:54] Now another option is when you do create a Key Vault, if you had multiple Key
+[03:59] Vaults and you wanted to just, each key can be given what's called a URI. So
+[04:04] instead of actually having to select an Azure Key Vault, you could actually put
+[04:07] the URI in, which is just a string, a actual URI base. It looks like a URL
+[04:13] string of characters for that key, the location of that key if I wanted to.
+[04:20] All right, I can specify the subscription that it's linked to and all that.
+[04:23] Now, below that, I've also got identity type because in order for all of this to work,
+[04:30] it must be authenticated.
+[04:32] So the system assigned is the default what most everybody uses.
+[04:37] This means that Azure will assign its own identity every time you're accessing.
+[04:43] This data right it's going to use a system assignment now you could create your own user and
+[04:50] Use that instead and that's a user based identity, right?
+[04:56] So that is the idea there you could do that. So you would manually
+[05:00] Choose that identity and it would always use the same identity and that's one of the benefits of using this if you need to
+[05:06] Set some strict permissions or something on an identity instead of an identity getting created every time somebody's accessing data like with system identity
+[05:14] It's going to be an identity that
+[05:18] Can be reused by you and you can control it and all of that. Okay, so that's the idea of
+[05:25] Doing a user identity as opposed to a system identity
+[05:29] Down at the very bottom we have advanced and then it says multi-tenant application.
+[05:34] So it's a pretty simple idea here. You can link an app like let's say you've got an application
+[05:39] being managed through Azure. Okay you can link an app that works across multiple tenants in
+[05:45] your organization if you want. So if you had multiple Azure tenants you could have an application
+[05:51] that is
+[05:52] Being the encrypting data here and it could all be linked within this little encryption area here
+[06:00] So for example, let's say I have a third-party analytics app that needs a secure access to encrypted data
+[06:07] That's in this storage account. That would be why I might use something like that. Okay
+[06:13] So that's the idea of doing this advanced feature. You course need to have an application before that's gonna be available to you
+[06:21] Okay
+[06:22] Alright, so the next thing we've got is encryption scopes.
+[06:27] So an encryption scope, if I click add, this allows me to use both in certain situations.
+[06:34] Okay, so I could have, you know, I could say, well, this is going to be this MMK method if
+[06:42] I want.
+[06:43] Oh, that's right.
+[06:50] and between four and 63 characters. So I'll say mmk1 and then that's my Microsoft managed key one
+[06:58] and I could click to if I want to enable that infrastructure encryption. So that's
+[07:04] So what's the difference between doing it here and doing it there?
+[07:07] Well, what would I, what you just saw, if we go back over here, what you just saw is that we can't enable this infrastructure encryption for the entire storage account.
+[07:17] But what we can do is we can do encryption scopes.
+[07:21] So if I go over here...
+[07:22] MMK1, I can enable that infrastructure encryption, that double layer encryption right there,
+[07:28] I could click create.
+[07:30] And now I can also add a, I could do a different customer manage key if I want.
+[07:35] All right, I'm going to do another one, I'm going to say MMK2, except on this one, I'm
+[07:39] going to keep infrastructure encryption disabled.
+[07:43] Okay.
+[07:52] Data storage containers and let's go to add a new container
+[07:57] I'm just gonna call this container test and then drop down advanced and look what we can do
+[08:04] We can choose which type of encryption we want to use on
+[08:08] That specific container. So if I want to use that
+[08:13] Right there, I can. It says use this encryption scope for all blobs in the container.
+[08:16] So that'd be everything below.
+[08:18] You can also do the version level immutability, which means, hey, I might want to have versioning
+[08:23] and make it where certain versions can never be deleted.
+[08:26] So I could turn that on if I want as well.
+[08:28] So then I would just click create, and I've now created my container.
+[08:34] Alright, so there it is.
+[08:36] I've got my little container created, and we've got that level of encryption going.
+[08:43] and all that fun stuff. So very easy, very straightforward, but hopefully now
+[08:48] you've got an idea of how we can manage the encryption that we support with our storage accounts.

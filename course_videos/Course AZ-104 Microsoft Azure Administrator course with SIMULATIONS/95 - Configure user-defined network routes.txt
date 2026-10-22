@@ -1,0 +1,159 @@
+# 95 - Configure user-defined network routes
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/95 - Configure user-defined network routes.mp4
+Fetched On: 2026-10-21 20:02:00
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about the concepts of configuring a UDR or user-defined route.
+[00:06] Now, I'm inside my VNet demo RG.
+[00:09] I'm on portal.azure.com and you can see I've got four VNets.
+[00:15] Currently, I've set up a hub and spoke scenario where VNet one is my hub,
+[00:20] and then I've got peering from VNet one to two, three, and four.
+[00:23] Got a little public IP address I've set up.
+[00:26] Now, the thing to understand is that,
+[00:29] you know inside of a vnet if we go inside vnet 1 you automatically can communicate between subnets
+[00:37] right they within a subnet if i put a v if i put a virtual machine on subnet 1a and a virtual
+[00:42] machine on subnet 1b they would be able to talk to each other okay and i've also set up peering
+[00:48] so now we've got the ability to communicate between
+[00:53] the different VNets. So I could have you know a virtual machine in VNet 1 communicating with
+[00:59] the virtual machine over in VNet 4 if I want. Now the thing is though is that that is just built-in
+[01:06] system routing. That's called a system route. That's just automatic. Once you set up your
+[01:11] subnets and all that, they can communicate and we've set up hearing and all of that.
+[01:14] But what if you were in a situation where you had a
+[01:18] virtual appliance, what they call an NVA,
+[01:20] network virtual appliance.
+[01:21] Like for example, what if we had a firewall
+[01:24] or a load balancer or something
+[01:26] and we wanted traffic to have to flow through that.
+[01:29] And let's say, let's just use Azure Firewall as an example.
+[01:32] Let's say we had an Azure Firewall and it was in VNet 1
+[01:36] and we wanna make it where traffic flowing out
+[01:39] to the internet would have to flow
+[01:41] through that Azure Firewall.
+[01:42] And we also wanna make it where traffic flows
+[01:44] in from the internet,
+[01:45] it'd have to go through that Azure Firewall.
+[01:47] Okay, so to do that, we would need a UDR.
+[01:51] We would need user-defined routing.
+[01:53] So let's go ahead and create a UDR route table.
+[01:57] So I'm gonna go right here and click create.
+[01:59] Keep in mind, you can search for this,
+[02:00] go to all services and all that.
+[02:01] I'm just gonna click create though,
+[02:03] and we're gonna search for route table.
+[02:06] And this is the resource we're gonna go with,
+[02:09] Microsoft route table.
+[02:10] We'll click create a route table.
+[02:12] All right.
+[02:13] And then from there we'll choose our vNet demo RG resource group and I'm going to do East US is my region and then I'm going to give the route table a name.
+[02:21] All right, I'm going to call it route table demo.
+[02:30] All right, and then it's going to ask me if I want to propagate the gateway routes.
+[02:42] Like a VPN gateway that was inside of my one of my V nets and I wanted to allow traffic
+[02:49] to route between the V net and that
+[02:53] VPN gateway because maybe the VPN gateway is connected to an on-premises network. I'm saying yes to that
+[02:59] I'm gonna allow traffic to flow
+[03:01] To and from that on-premise network on-premises network. Okay, so I'm gonna say yes to that
+[03:06] Obviously, I could say no, but I'm gonna say yes to that. All right
+[03:10] And I'm going to go ahead and click Review and Create.
+[03:13] Alright, and it's going to just validate and make sure everything is good there,
+[03:17] and it looks like it is, so we're going to go ahead and click to create.
+[03:20] Okay, now that we've done that, we are going to create a new subnet.
+[03:24] I'm going to jump back over to the vNet demo resource group.
+[03:27] I'm going to let that get created.
+[03:28] We're going to go to vNet 1.
+[03:30] And we're going to create a new subnet.
+[03:33] Okay, as though perhaps this new subnet
+[03:36] is where the firewall is going.
+[03:37] Now I'm not really diving into creating firewalls
+[03:39] and all that in this video,
+[03:41] but I will tell you that to create an Azure firewall,
+[03:44] it has to have a specific subnet with a specific name.
+[03:49] You can't just use one of these existing subnets.
+[03:52] So I'm gonna click to create a subnet.
+[03:53] One of the things that's newer, that's kind of cool,
+[03:56] is that we can just now select
+[03:58] that we're wanting this to be Azure firewall
+[04:00] and it puts the name in there for us.
+[04:02] to remember that this was the name and everything that you had to had to use for it. All right.
+[04:08] So the range for this firewall subnet we're gonna we're gonna say we've got the 10 1 1
+[04:14] 1 0 0 but we're gonna start the starting address it will be 10.1.10.0 slash 24 and
+[04:29] subnets that we could use if we wanted to but that's going to be our little subnet range.
+[04:32] Okay and then from there I'm just going to go ahead now and I'm going to click to add.
+[04:37] All right we'll add the subnet so it's going to go ahead and create the little firewall subnet.
+[04:42] Okay so if we were going to put a firewall on that in this environment on that subnet we could
+[04:47] I'm not going to do that right now keep in mind that when you add an Azure firewall it uses a
+[04:51] ton of Azure credit to keep it up and running so that's not something we want to do right now
+[04:57] It's just it's expensive even when you do play around with the firewalls always suggest leading them immediately after you're done using them
+[05:04] Okay, but alright, so we've got our little azure firewall subnet created. Alright, so now what we're gonna do
+[05:13] is we're going to go to our route table that we've created.
+[05:17] So I'm going to click back on my resource group and I'm going to refresh the screen
+[05:21] and we should see that the route table demo is created.
+[05:24] So our user-defined routing table is there.
+[05:26] We're going to go into that routing table.
+[05:29] Okay. So you can see that there is currently no routes that have been set up.
+[05:35] All right. We can expand settings and go to routes.
+[05:38] Now we're going to click add,
+[05:39] and then we're going to give the route a name.
+[05:42] Okay, so route is going to be a destination to allow traffic to flow.
+[05:46] Right. And so we're going to give this route a specific name, we're just going to call it
+[05:52] through firewall. That's what this routes job is going to do. It's going to be to route traffic
+[05:59] through the firewall, right? We're pretending like we've got an Azure firewall, right?
+[06:04] Okay. And so what's the destination type going to be? It's going to be an IP address,
+[06:12] And by the way, you choose IP address or you can do what's called a service tag.
+[06:15] Service tags are predefined identifiers that are going to represent a category of something.
+[06:19] It's kind of an older way of doing things, but it is a possibility to do it that way.
+[06:24] IP address is the most common way.
+[06:26] So we'll go right here and the destination, this is going to be the destination IP address
+[06:31] is involving the actual subnet it's your routing traffic to, which is 10.1.10.0.24.
+[06:38] And then the next hop.
+[06:40] So is this a virtual network gateway we're routing to?
+[06:43] Meaning maybe you're routing to VP gateway,
+[06:45] it's gonna go out and connect to an on-premises network.
+[06:48] Is it a virtual network?
+[06:50] Is it the internet?
+[06:51] Is it virtual appliance or not?
+[06:52] It's gonna be at a virtual appliance.
+[06:54] Okay, and so we're gonna pretend like
+[06:56] our actual Azure firewall is 10.1.10.10.
+[07:00] That's gonna be the address we're gonna say
+[07:02] that it has, all right?
+[07:04] And then we're gonna click add.
+[07:05] Okay, so at that point,
+[07:10] Set up this route, but there's still something that's left out and this is the part that people forget a lot of times
+[07:17] So you set the route table up it's in the resource group, but it's not linked to any subnets at the moment
+[07:24] So you actually have to link it to some subnet so if we come over here and click on subnets
+[07:29] We're gonna associate it. All right, we can select the subnets. It's gonna be associated to all right
+[07:36] so I've got subnet a
+[07:39] I'm gonna go ahead and click that for subnet 1A.
+[07:43] All right, we've got it associated to 1A.
+[07:46] I can do, we'll do 1B, associate it.
+[07:51] I keep hoping that one of these days,
+[07:53] they're gonna make it where you can just select
+[07:56] a bunch at a time, but unfortunately,
+[07:58] they haven't gotten to do that yet.
+[08:00] All right, so you kinda have to take your time
+[08:04] and do one at a time and just get them added.
+[08:09] Slowly, but surely so we're adding to be now
+[08:13] Alright, so that takes care of 1a 1b 2a and 2b
+[08:18] So that'll bring us to subnet 3a
+[08:23] Alright, and then we got 4a and then we will have got them
+[08:27] Alright, alright, and we've now officially got all of our subnets associated with this route table. So this route table will override
+[08:39] system routing
+[08:40] The system routing will still take effect if there's no route specifically because we've really only created one route.
+[08:46] So if this route would it would override anything a system route says.
+[08:51] But the system routes are all still there so it's still going to allow traffic.
+[08:55] But this will this makes it now where all traffic will have to flow through this firewall.
+[09:02] You know if I'm if I'm wanting to police all the traffic I can make it where this firewall would be.
+[09:08] sort of the police of all the traffic.
+[09:10] Everything could flow through it
+[09:12] and I could have the Azure firewall
+[09:13] and then I could set the firewall up
+[09:15] to allow traffic to pass through.
+[09:16] And I could even allow the firewall
+[09:18] to pass out to the internet if I wanted to.
+[09:20] Okay, that's if I set up the Azure firewall.
+[09:22] But now we should have an understanding
+[09:24] of setting up user-defined routes in a routing table.
