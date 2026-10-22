@@ -1,0 +1,112 @@
+# 73 - Manage virtual machine disks
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/73 - Manage virtual machine disks.mp4
+Fetched On: 2026-10-21 19:44:34
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Another common procedure that we might have to perform in regards to the life of a virtual machine is we might need to add additional data disks.
+[00:09] to that VM. Now the idea being that we might want to have more storage or we might want to
+[00:16] do separate our storage. The virtual machines generally will come with an operating system
+[00:21] virtual disk but it's always a best practice if you can to separate your data from the operating
+[00:28] system you'll get better performance. This has even been true for decades in the physical server
+[00:32] realm not just in the virtual space. So let's take a look at how we can do that. Here we are
+[00:39] If I click the menu button and go into virtual machines here, I'm going to
+[00:43] notice my virtual machine here, WinServer1. I'm going to click on that
+[00:46] virtual machine and then I'm going to expand settings and go to disks and you
+[00:51] can see right here that I have this one disk listed and it has the size and the
+[00:57] IOPS and the maximum throughput and all of that and I can also go over here
+[01:01] and take a look at the host caching feature.
+[01:06] Now, when you look at host caching, there is essentially three options there.
+[01:10] Host caching, the idea is, this is also sometimes referred to as disk caching.
+[01:15] And it's all about trying to improve the performance of disk operations by using a local solid
+[01:21] state storage on a physical host machine to basically temporarily store data.
+[01:27] The idea being that it's going to reduce latency and improve the throughput for reads and writes
+[01:32] Depending on the cache mode that you select now if you choose none
+[01:37] That is obviously not going to use any kind of cache mode the use case for this would be recommended
+[01:42] Maybe in a situation where data disk
+[01:45] were
+[01:46] need to have consistency and durability as something that's critical perhaps in a situation
+[01:53] where you have like database log files and you don't want any kind of caching affecting
+[01:59] that type of situation.
+[02:00] So again if you're looking for something like a database logs transaction log type scenario
+[02:06] then setting the host caching to none is going to be the best solution.
+[02:13] So this is where only read operations are cached locally.
+[02:18] So use case for this would be best for data that's read frequently but rarely updated,
+[02:24] such as an application binaries or static content.
+[02:27] Maybe you got a web server or something that's hosting static files or some HTML files,
+[02:31] images, it's going to be good from a read-only standpoint.
+[02:36] And then the last one is the read-write, which is the default.
+[02:41] you're dealing with caching for both read and write,
+[02:45] this is gonna be suitable for operating system disk.
+[02:49] So it's great for that type of situation,
+[02:51] which is why this is the default
+[02:52] because that is the operating system disk, okay?
+[02:55] So you're using a Windows Server operating system disk,
+[02:58] read-write caching, this is gonna boost your performance
+[03:00] for the operating system, okay?
+[03:02] So that's what your host cache mode is.
+[03:05] Those are your different features.
+[03:06] You got the encryption enabled here.
+[03:09] This is...
+[03:10] and that's just all defaulted.
+[03:12] So we've got all that set up.
+[03:13] Now what if we wanted to add a second data disk?
+[03:15] Now, before I do that,
+[03:17] I'm gonna jump over to the virtual machine itself.
+[03:19] I've already started it.
+[03:21] And I'm gonna jump over to the virtual machine itself,
+[03:23] and I wanna show you something real quick.
+[03:25] We jump into the virtual machine.
+[03:27] Here we are in Server Manager, okay?
+[03:29] If we don't know how to get into Server Manager,
+[03:31] all we gotta do is hit Start.
+[03:32] We can find it there,
+[03:33] or it'll be down here on the taskbar.
+[03:35] We'll go into Server Manager.
+[03:37] We're going to go right here to file and storage services and we're going to look at disks.
+[03:42] Okay and you can see right here that I've got this, you'll see the Windows Server here,
+[03:50] couple little virtual disk, GPT disk, MBR. This is all being done though on one
+[04:00] physical disk that has been set up for this server. Okay.
+[04:05] So this is what we've currently got.
+[04:08] The C drive here, it says 126 gig capacity,
+[04:12] 115 gig free space,
+[04:14] okay, and we don't have any additional disk currently added.
+[04:20] So we're going to do that right now.
+[04:21] We're going to jump back over to this screen here in portal.azure.com on the disk.
+[04:26] I'm going to click create and attach a new disk.
+[04:30] All right. So it's going to do.
+[04:32] give you a LUN number. LUN stands for logical unit number. Okay. That's just how storage area
+[04:38] networks and all that link everything. Logical unit numbers. That's fine. Zero. And I can give
+[04:43] it a name. I'm going to call it data disk. As you can see, very creative name. And then I can
+[04:48] specify which of these I want to go with. In this case, premium solid state local redundant.
+[04:55] And that's based on my original
+[04:57] The reason I've got this option is based on the original sizes and all that that I did when I set up the virtual machine
+[05:02] Okay, I can set my size
+[05:05] So you got size within gib i'm going to set that let's just go with 100
+[05:11] And then you can do maximum iops
+[05:14] You got your throughput and then you're doing a platform managed key just like I did up here as opposed to customer managed key
+[05:19] I have to set up a customer managed key and all that and then I got my host caching. All right
+[05:25] And we'll say that perhaps this is gonna be for application data and all that, so
+[05:31] we're gonna leave that set to read only. Okay, we're gonna go ahead and hit apply.
+[05:36] All right, and we'll give that just a moment to get created. All right, so that second disk has
+[05:40] now been added. I'm going to jump back over to the virtual machine, and I'm going to go right
+[05:45] up here to tasks, and I'm going to tell it to rescan the storage.
+[05:50] Click yes, and it's going to go through and rescan and look at there another disc has magically shown up here
+[05:57] 100 gigs and I could click to create volume
+[06:01] I'll click next this is okay. You do a win server. This is going to be labeled a disc to that's fine next
+[06:09] Okay, do need to select that you've selected a disc, but we brought online and initialized
+[06:16] Alright, that's fine. And then I can do the whole size or I could
+[06:19] Format it as multiple partitions if I want. I'm just going to do one big partition. We'll click next. That'll be drive letter E
+[06:27] I'll click next
+[06:28] And by the way, you'll notice that D is not available. It's being used. So we'll go ahead and click next
+[06:35] Okay, NTFS file system. We can give it a new volume
+[06:38] I'll just call it data drive as the volume label will click next and we'll click create
+[06:44] It's now going through and formatting the partition
+[06:47] All right
+[06:49] Now come down here and if I open up File Explorer,
+[06:56] I now have eDrive and I can start saving data on it.
+[07:00] So as you can see, it's very easy, very quick and easy
+[07:03] to set up a new data disk on our virtual machine.
