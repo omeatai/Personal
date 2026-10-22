@@ -25,6 +25,7 @@
 
 ### +AZ-104: Azure Administrator Associate
 - [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
+- [ ] [*** NOTES *** | John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/course/1.md)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
