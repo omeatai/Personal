@@ -1,0 +1,9 @@
+# 35 - Assign roles at different scopes
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/35 - Assign roles at different scopes.mp4
+Fetched On: 2026-10-21 19:48:37
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+

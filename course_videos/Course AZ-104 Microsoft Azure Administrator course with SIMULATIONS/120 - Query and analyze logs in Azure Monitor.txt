@@ -1,0 +1,109 @@
+# 120 - Query and analyze logs in Azure Monitor
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/120 - Query and analyze logs in Azure Monitor.mp4
+Fetched On: 2026-10-21 19:45:14
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] All right, I now want to show you how we can query and analyze logs that we've collected
+[00:05] with the help of Azure Monitor.
+[00:07] Now the first thing to be aware of here is that there's a couple of ways you can view
+[00:10] logging data.
+[00:11] One is to just go straight to the resource that you're actually monitoring and go to
+[00:17] logs from there.
+[00:18] So for example, I can go right here on portal.azure.com, click the menu button, go to storage accounts.
+[00:25] I can go down here under monitoring and then I can click logs and I can manage logging data
+[00:31] through here.
+[00:32] Okay, I have some pre-made queries I can run or I can go in here and I can run queries directly
+[00:39] under the various tables of data that's been collected. Okay, now the other option of course
+[00:44] is to just go straight into Azure Monitor. If I click the menu button and I go to monitor,
+[00:49] I can then click logs and then I can select the resource type. In this case, I've already
+[00:57] and then I can run queries. These are some pre-made queries that Microsoft has built for us,
+[01:03] but I'm going to close out of that and I'm going to switch over to KQL mode so I can actually see
+[01:08] the queries. Okay, and I've got some queries I've already ran. I can clear those out just by
+[01:15] deleting those if I want.
+[01:17] Okay, so any of those you you anytime you've ran previous queries you can easily delete those if you want to
+[01:23] But let's take a look at some new queries here if I go over here, and I click this little tables
+[01:29] Button so the tables you got to remember that this logging data is stored in a database type
+[01:35] scenario, right? So like in many databases you have tables, right? So tables are the collected
+[01:41] sort of parent object where the data is going to be stored. So you can see here I have three sets
+[01:47] of tables, right? You've got Azure metrics. So metrics data emitted by Azure services that
+[01:54] measure the health and performance. You've got the storage blob log data. So that goes with the blob
+[02:05] When we activated all of this, if we go back over and we look at our storage account,
+[02:11] okay, you'll notice that under, let's go under monitoring diagnostic settings, you can see the
+[02:19] things that are turned on. So I've got logging turned on for the parent object and then for
+[02:23] blobs and then files. So you're actually seeing tables related to that, right? Okay. So this time
+[02:33] We'll close this, we'll open up tables and you should be able to see the three tables there.
+[02:38] So let's take a look at blob and you can see the various items here that we can look at.
+[02:45] All right so if we click on those you've got access to your
+[02:50] account name, authentication hash,
+[02:53] and this uses the KQL, the Cousteau Query Language,
+[02:57] as far as running queries goes.
+[03:00] Okay, so like if you go back, let's just go back here
+[03:02] and you see some of these pre-made queries,
+[03:04] like let's look at this one called performance.
+[03:06] If I was to click run on that, okay,
+[03:09] it's gonna go ahead and try to run this query
+[03:11] and it's going to display some information.
+[03:13] And they've tried to make it simplistic,
+[03:14] but if I wanna see the actual Cousteau Query Language,
+[03:19] click KQL mode and then you can actually see it.
+[03:22] Now we're not gonna be diving deep into KQL,
+[03:24] it's kind of outside the scope of what we're looking at here.
+[03:26] But you can learn this language,
+[03:28] it's a lot like SQL, the language of SQL,
+[03:31] and you can learn the syntax of it
+[03:34] and you can customize these queries any way you want.
+[03:38] And one thing you can do
+[03:40] is if you just wanna see everything
+[03:43] that this thing has to offer,
+[03:44] you can just clear everything up to the table, all right?
+[03:48] So the table is listed there now. That's the only thing listed. If I just click run, it's going to display the entire
+[03:55] entire table for the last 24 hours. So you can see every piece of information
+[04:01] that's stored inside that table, which is a lot of information.
+[04:05] So what the query does, essentially what you can do with Kusto Query Language
+[04:09] is kind of filter through that and have it only show certain types of information. They've got some
+[04:15] Brie built-in filtering like show me the last 24 hours. Show me the last hour
+[04:20] Show me a thousand results five thousand fifteen thousand you have max limit or you can customize it
+[04:25] And so that's how you kind of customize some of the stuff that you want to to see there
+[04:30] Okay, but this is great because it's gonna let me go in and sort of drill down and see the types of
+[04:38] Information that I might want to see now. Also. I'd like to share something with you now
+[04:43] where you can also explore a little bit deeper with this.
+[04:48] The downside of having such a small environment
+[04:50] is we don't have tons and tons of log information
+[04:54] to really dive into.
+[04:55] But Microsoft has like a little lab environment
+[04:59] or playground, if you will,
+[05:01] where they've pre-populated some logs
+[05:04] that you can explore.
+[05:05] So I wanna show that to you right now.
+[05:06] So if I go to Google or Bing and just search these keywords, Log Analytics Demo Environment,
+[05:12] and you can do this with me if you want, you'll see a tutorial link here that you can go into.
+[05:18] And if you go scroll down a little bit, you'll see right here where it says Prerequisites,
+[05:22] it says Log Analytics Demo Environment. Keep in mind, they may change this screen.
+[05:27] It could change, you might have to dig a little bit, but as of this creation of this video,
+[05:35] It may ask me to log back into Azure,
+[05:37] depending upon if it's been a while since I've logged on to Azure.
+[05:40] It hasn't been a while since I've logged on to it,
+[05:42] so it just goes right into it.
+[05:43] Now, at first glance,
+[05:45] you may think you're just looking in your own environment, but you're not.
+[05:49] See, it says demo right here.
+[05:51] If you click the tables icon,
+[05:54] you can see there's even more.
+[05:57] tables to look at. So I want to encourage you to come in here and just explore and
+[06:03] see some of the stuff that they have available in this case.
+[06:06] As you can see, I'm not only got Azure resources,
+[06:09] but I've got things like Microsoft Sentinel and Security and Audit.
+[06:13] But I also want to warn you that they don't always keep populating this constantly.
+[06:19] If I click on Container Log here,
+[06:22] you may have to set a custom range to see anything.
+[06:26] You can see that I've set my custom range back quite a while ago.
+[06:31] and I'm able to actually see some information. So just be aware of that that you know at first
+[06:37] if you do like you know like what's the last hour there's nothing in the last hour there's
+[06:41] nothing in the last four hours there might not be anything in the last 24 hours you may have to
+[06:46] go in custom and go back in time before you start seeing some data okay. So ultimately though the
+[07:00] You know, you can run these queries, you can see a whole entire table if you want,
+[07:04] but you can also learn KQL, Kusto Query Language, if you want to filter the logging data you're looking for.

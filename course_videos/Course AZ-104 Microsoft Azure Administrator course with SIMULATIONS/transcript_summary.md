@@ -1,7 +1,7 @@
 # Transcript summary
 
-- Considered: 58
-- Transcribed: 58
+- Considered: 64
+- Transcribed: 64
 - Skipped: 0
 - Failed: 0
 
@@ -65,3 +65,9 @@
 - transcribed: `79 - Provision a container by using Azure Container Apps.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/79 - Provision a container by using Azure Container Apps.mp4 — Local whisper (small.en, cpu)
 - transcribed: `12 - Creating a free Azure Account.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/12 - Creating a free Azure Account.mp4 — Local whisper (small.en, cpu)
 - transcribed: `19 - Create groups in Microsoft 365.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/19 - Create groups in Microsoft 365.mp4 — Local whisper (small.en, cpu)
+- transcribed: `73 - Manage virtual machine disks.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/73 - Manage virtual machine disks.mp4 — Local whisper (small.en, cpu)
+- transcribed: `120 - Query and analyze logs in Azure Monitor.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/120 - Query and analyze logs in Azure Monitor.mp4 — Local whisper (small.en, cpu)
+- transcribed: `125 - Create an Azure Backup vault.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/125 - Create an Azure Backup vault.mp4 — Local whisper (small.en, cpu)
+- transcribed: `104 - Visualizing Azure load balancing.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/104 - Visualizing Azure load balancing.mp4 — Local whisper (small.en, cpu)
+- transcribed: `61 - Configure snapshots and soft delete for Azure Files.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/61 - Configure snapshots and soft delete for Azure Files.mp4 — Local whisper (small.en, cpu)
+- transcribed: `128 - Configure Azure Site Recovery for Azure resources.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/128 - Configure Azure Site Recovery for Azure resources.mp4 — Local whisper (small.en, cpu)

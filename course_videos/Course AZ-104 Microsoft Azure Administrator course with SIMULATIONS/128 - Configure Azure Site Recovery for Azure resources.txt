@@ -1,0 +1,125 @@
+# 128 - Configure Azure Site Recovery for Azure resources
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/128 - Configure Azure Site Recovery for Azure resources.mp4
+Fetched On: 2026-10-21 19:47:58
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about Azure Site Recovery.
+[00:04] Now, Azure Site Recovery is going to involve being able to have information replicated
+[00:11] from one site to another.
+[00:14] Okay, so for example, if I wanted to have a virtual machine that gets replicated over
+[00:22] to another location in case of a situation where perhaps the entire region goes down,
+[00:29] then we could do that.
+[00:30] Okay, and so this is what Azure Site Recovery is going to bring to the table.
+[00:35] Now in order to do this, we are going to do a couple of preliminary things.
+[00:43] Azure Recovery Services Vault, but I'm going to create it in a different region.
+[00:47] So here I am on portal.azure.com. All right, and I'm just going to search for, I mean,
+[00:52] in all services, I'm going to search for Recovery Services Vault, and I'm going to click to create
+[00:59] a new Recovery Services Vault, and I'm going to create a new virtual, I'm going to create a new
+[01:14] All right replicated VMRG and I'll just give this name West US recovery vault and of course
+[01:25] we're going to put this over on West US. Okay so then from there we got redundancy don't really
+[01:34] have anything here I need to do backup storage redundancy we got geo redundant cross region
+[01:45] and then don't have anything with encryption, nothing with immutability, connectivity, allow
+[01:54] public access, that's all fine. So we'll just click review and create and then we're going to click
+[02:01] to create. So this is going to go ahead and create our recovery services vault. Okay and so next
+[02:12] What we're gonna be doing, if I come over here to virtual machines, I'm gonna make sure that I have WinServer1 is turned on.
+[02:19] It doesn't really matter if you have the same virtual machines as I do at this point, as long as you have a virtual machine
+[02:26] that you can kind of test this with. It is currently started.
+[02:30] Okay, and
+[02:32] if I look underneath...
+[02:34] where it talks about availability and security and all these things here. If we expand out
+[02:39] backup plus disaster recovery, you'll see that you have an area called disaster recovery. And
+[02:45] this is going to involve exactly what we're wanting to do. Okay, support replication to
+[02:52] another location. And in this case, that's going to be West US. Okay, so I can actually go through
+[03:03] And then it's going to try to detect and see what I've already got out there.
+[03:07] In this case, I got my subscription listed.
+[03:10] I've got a VM, a VM resource group.
+[03:15] Okay.
+[03:16] Which I could choose this replicated VM RG, a virtual network that it'll create.
+[03:22] Okay.
+[03:23] And then my availability, I can have just a single instance if I want, or I
+[03:27] could use availability set, virtual machine scale set, all of that.
+[03:31] Okay.
+[03:32] And then it talks about the proximity placement,
+[03:38] this WinServer proximity placement group
+[03:42] that it's gonna use to do this.
+[03:45] All right, it's gonna create all this new for me.
+[03:48] All right, and so then from there,
+[03:53] I've got capacity reservation,
+[03:54] so it's gonna reserve a capacity at the destination, okay?
+[03:59] Mentions capacity.
+[04:01] reservation groups listed there.
+[04:03] If I'm gonna do that, this is on-demand capacity,
+[04:06] reservation enables you to reserve compute capacity.
+[04:10] So it'll have CPU performance and all that,
+[04:13] and it's gonna use that size based on the same size
+[04:15] that we have in our original location.
+[04:18] I've got storage settings.
+[04:20] So this will involve the fact that it's got to
+[04:23] basically recreate the same disks and all of that.
+[04:28] You've got replication.
+[04:29] Okay, so it's got the recovery services vault.
+[04:32] I've already created my recovery services vault,
+[04:35] as you can see there.
+[04:39] Now on the flip side of this, I did wanna mention
+[04:42] as we go to do all of this,
+[04:45] that we could have gone another route
+[04:48] to achieve all of this.
+[04:50] Instead of going into the VM
+[04:52] and setting up disaster recovery,
+[04:54] which is the Azure site replication,
+[04:57] we could have done it,
+[04:58] through the recovery vault. I'm going to leave this up on the screen for just a moment, but I'm
+[05:02] going to right click and open up a new tab. All right, so I just right clicked all services there
+[05:09] and I'm opening up a new tab and I'm going to search for my recovery vault. We'll go to recovery
+[05:15] services vault. Okay, here is the West US vault. We can click on that. Okay, and then if we look
+[05:27] So this is just another way to accomplish the same thing.
+[05:30] So I wanted to replicate Azure Virtual Machines,
+[05:32] VMware machines, Hyper-V machines.
+[05:36] In this case, I'm doing Azure Virtual Machines.
+[05:37] I click Enable Replication,
+[05:39] and you're gonna go through essentially
+[05:40] the same type of stuff where you have to specify,
+[05:44] except you will be specifying the virtual machines.
+[05:46] Since I'm doing it from the context of the virtual machine,
+[05:48] I did not have to select it.
+[05:50] So I just wanted to point out that's another route
+[05:52] we could have taken for this, okay?
+[05:55] All right.
+[05:56] And so then it mentions extension settings.
+[05:59] This is to support the ASR,
+[06:01] which is Azure Site Recovery, okay,
+[06:04] for replication and all that.
+[06:06] So we can create that, all right.
+[06:10] We're gonna let it go through and create everything
+[06:12] that it needs to create in order for this to work.
+[06:15] And I'll just pause the recording while that's happening.
+[06:17] All right, now that that's done,
+[06:18] I'm gonna click Review and start the replication
+[06:22] and then it just kinda lets you read through,
+[06:25] Clicked anything and then we're going to click start replication
+[06:29] So we're going to go ahead and initiate that replication of that virtual machine
+[06:33] And I'll just pause my recording and let this run through
+[06:36] So now if I click on wind server one
+[06:40] And I go down here under this disaster recovery area and click disaster recovery
+[06:46] You can see that replication health and all of that is there and the infrastructure
+[06:54] You can see the infrastructure that's created.
+[06:57] Okay.
+[06:58] Another thing you can do if we go over to our recovery services vault.
+[07:04] Let's go here and just search for the recovery services vault and we open up this West US
+[07:10] recovery vault.
+[07:11] Now we're going to come down here and look under manage and we're going to look at
+[07:15] this site recovery infrastructure.
+[07:19] And then we can look at network mapping for where it says for virtual machines and we should see a
+[07:25] New network created this V net demo for VMS ASR West US that was created for us when we did all of that
+[07:33] Okay, we've also got this replication policy
+[07:38] Listed their 24-hour retention policy
+[07:40] so anyway
+[07:42] you can see that it laid down the infrastructure
+[07:44] that it needed to support that replication.
+[07:47] So that is how we can set up
+[07:48] that site recovery replication capability
+[07:51] with a virtual machine.

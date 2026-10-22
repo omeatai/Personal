@@ -1,0 +1,110 @@
+# 125 - Create an Azure Backup vault
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/125 - Create an Azure Backup vault.mp4
+Fetched On: 2026-10-21 19:46:02
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about creating a backup vault. So the first thing to be aware of here is, you know,
+[00:06] we've got the recovery services vault, a recovery services vault, and then you've got a backup vault.
+[00:13] So what's the difference? A recovery services vault is built more for like a traditional type of scenario
+[00:21] where you are
+[00:23] you know, wanting to support a broad range of backup and disaster recovery workloads for
+[00:28] Azure VMs, on-premises servers, SQL, SAP workloads, Azure Files, Azure Site Recovery.
+[00:38] Those are the kinds of the things that Recovery Services Vault are geared towards. Backup Vault
+[00:43] is a newer, more sort of modern solution that they've added. And
+[00:49] It's really geared more towards cloud-native capabilities as opposed to mixing with the on-premises world.
+[00:57] So if you're really, you want to separate these two in your head,
+[01:02] Recover Services Vault, this was created first.
+[01:05] It supports a wide variety of things you can do for backups,
+[01:10] but it's not as oriented towards the cloud services as a backup vault.
+[01:15] backup vaults can be more specific in terms of backing up things like storage accounts.
+[01:20] So you get into blob storage and all of that, you know, just individual things involving the
+[01:26] storage accounts. It creates more frequent snapshot backups of your virtual disk
+[01:33] and it's very scalable. It's more cost efficient. It's more security hardened than the recovery
+[01:45] even though they've got both of these introduced, these vaults introduced, they're sort of moving
+[01:49] towards the backup vault as more companies begin moving into the cloud and going native with cloud
+[01:56] services. So that's what you want to really think of when you think of backup vault. Think of cloud
+[02:00] native-oriented types of backups. Okay, so we're going to go right here. We're going to click
+[02:04] backup vaults, and we're going to click to create backup vault.
+[02:08] And I'm just gonna put this in my storage account demo resource group
+[02:11] And again does not matter if you have the same storage accounts as me
+[02:15] And even if you don't have a storage account demo research group, you can create one the backup vault name
+[02:20] So I'm just gonna call this my backup vault demo
+[02:26] Okay
+[02:27] And that's fine.
+[02:28] And the region will be East US.
+[02:30] And then I could say backup storage.
+[02:32] You can do geo redundant, zone redundant,
+[02:34] local redundant.
+[02:35] Okay, so locally redundant means it's redundant
+[02:37] within that same set of data center.
+[02:41] And then zone redundant, you have multiple data centers,
+[02:43] multiple zones, copy of your data backed up.
+[02:46] So if a whole data center gets taken out,
+[02:48] your data is still there.
+[02:49] Did you ever redundant?
+[02:50] this is going to be multiple geographic locations. I'm going to go with locally redundant
+[02:54] and then I'm going to go ahead and click next for vault properties.
+[02:58] And then you've got to find the security settings of your backup vault with regards to immutability
+[03:04] and retention of deleted recovery points for a longer duration. So I can enable this. And again,
+[03:09] this is going to make it where I can have features that make sure that certain things don't get
+[03:15] They get retained, so if I set like a retention policy on how long data it has to stay in there,
+[03:20] it doesn't get affected if somebody tries to alter it.
+[03:24] I'm gonna leave that turned off, but obviously that is something I could turn on if I wanted to.
+[03:28] Then you got enable soft delete. It tells you soft delete functionality is not available in the selected region.
+[03:32] So this is a feature you'd have depending upon what region it's going to be in.
+[03:36] So soft delete gets into being able to delete stuff and recovery stuff very quickly.
+[03:40] Sort of like a recycling bin.
+[03:42] You've got managed identity settings enable system identity
+[03:45] So it's just going to use a system identity for authenticating with this vault if you turn that off you could use a user
+[03:51] Identity so you create your own identity that's going to be used for authenticating with the vault and then you got your restore settings
+[03:57] So choose whether backups within a vault a backup vault can be restored to a different subscription region right now
+[04:04] That's turned on okay, but that's what that's going to do based on that little description there
+[04:08] So I'm going to click review and create
+[04:10] And then I'm gonna go ahead and click create,
+[04:13] and then I'll just pause recording
+[04:14] while this is getting created.
+[04:16] Now that that's done, I'm gonna click go to resource,
+[04:19] and here I am inside the backup vault.
+[04:22] So I could click to backup,
+[04:24] and then at that point you would go through
+[04:26] and you would specify what you wanna backup.
+[04:28] So you can see these various options right here.
+[04:31] And you can see the default one that's selected in my case is the Azure database for PostgreSQL
+[04:38] servers. And what this is, is this is a single instance backup for the PostgreSQL. It's not
+[04:46] a flexible server. The example this would be if you wanted to like host an app that logs
+[04:52] sensor data in a PostgreSQL single server. So this option is just going to let you back that up.
+[04:59] right for long-term retention or point in time restores. You've got Azure disk so this is going
+[05:05] to back up your Azure managed disk. You've got Azure blobs that's for backing up a blob blobs
+[05:10] from storage accounts. You've got the Kubernetes services so if you are running the Kubernetes
+[05:16] container services for orchestration of containers then that's going to let you back that up. Okay
+[05:22] you've then got
+[05:24] the Azure database for PostgreSQL flexible servers.
+[05:28] So that's as opposed to Unflexible, which is this one, right?
+[05:32] And so this backs up, this has support for MySQL flexible server.
+[05:36] It's another sort of modern DBaaS platform that we have in Azure.
+[05:41] It's similar to PostgreSQL flexible server backup as well.
+[05:46] In example, that would be like maybe if you had an e-commerce app that uses MySQL.
+[05:51] Flexible server for managing orders or something this would let you back that up right the next would be the
+[05:59] So you have these two here?
+[06:00] So the post great flexible sequel in the my sequel my my sequel which I just talked about then you got elastic sand volumes
+[06:07] from there
+[06:09] This allows you to back up volumes provisioned through the Azure Elastic San.
+[06:13] So software-defined storage area network storage in other words.
+[06:18] So example that would be maybe you're a financial service firm that uses
+[06:23] Elastic San to store large volume transaction logs or something like that.
+[06:29] This would allow you to back that up.
+[06:30] The last thing you'll see there is the Azure Data Lake storage.
+[06:34] This backs up Microsoft's Azure Data Lake.
+[06:37] Gen 2 storage and all that is useful for protecting big data environments in any scenario where
+[06:44] you're collecting this big data for analytic workloads or something.
+[06:48] An example that might be again maybe a healthcare organization that stores and analyzes like
+[06:54] a large amount of patient data sets in this data lake.
+[06:59] This option would basically allow you to back up and recover that.
+[07:03] Okay.
+[07:07] I'll just choose blob storage here, and then I'm going to click next and this is where I would create a
+[07:12] Backup policy which I'm not going to I'm not going to do in this exact video
+[07:16] But stay tuned because this is exactly where we're going with all of this

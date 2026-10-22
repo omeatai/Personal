@@ -1,0 +1,112 @@
+# 104 - Visualizing Azure load balancing
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/104 - Visualizing Azure load balancing.mp4
+Fetched On: 2026-10-21 19:46:41
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now get into the concepts behind load balancing in Azure.
+[00:04] Now, when it comes to load balancing with virtual machines, Microsoft has a couple of options available to you.
+[00:11] The first option is to just do a basic load balancer, okay?
+[00:16] A standard load balancer, which is what we call a layer four load balancer.
+[00:20] When they refer to it as a layer four load balancer, that's...
+[00:23] that basically is going to involve what is called the OSI model.
+[00:29] model that kind of describes the different ways that the traffic can
+[00:35] flow across a network and the different hardware and equipment that interacts
+[00:40] at these different layers. Now if you're not, if you've never gone through like a
+[00:44] networking fundamentals course or something like that, you may not be
+[00:48] familiar with it. In the end it...
+[00:49] does it make a huge difference?
+[00:51] The biggest thing here is that when it comes to layers,
+[00:55] the higher the layer number,
+[00:57] the more intelligent and more capabilities
+[00:59] that something has.
+[01:00] So the load balancer option that you have with Azure
+[01:05] is a layer four,
+[01:06] which is what we call the transport layer.
+[01:09] load balancing and then you have what is called an application gateway which is
+[01:13] also a load balancer but it's a layer 7 load balancer.
+[01:16] As you can probably imagine the application gateway load balancer is
+[01:20] going to be more expensive than the standard load balancer and of
+[01:24] course the standard load balancer
+[01:27] you know it's just gonna it just does basic load balancing while the layer 7
+[01:31] application gateway load balancer can have more features and capabilities.
+[01:35] But let's let's kind of break down the difference between the two right now.
+[01:39] All right so first thing to look at here is with your standard load balancer.
+[01:45] You'll notice that we've got we've got your the load balancing option object is right here, right? Public load balancer
+[01:52] There's also what they're calling an internal so you're actually looking at two load balancers in this example. All right, you got a V net
+[01:59] And you've got an internet connection here. It's running this case. It's running TCP port 80. So it's a web server right port 80
+[02:07] HTTP, of course, you could do 443 as well. But in this case
+[02:12] You've got a web tier here, web tier subnet, and you've got a public address that is going
+[02:18] to be taking traffic from the internet. Now what happens is this load balancer has a public IP
+[02:23] address and traffic is going to flow in to that load balancer and load balancer is going to
+[02:30] balance that load one at a time. So the first connection would go here, the next connection
+[02:34] would go there, next connection would go there, so on and so forth. Okay.
+[02:40] Now, that is what we call a public load balancer technique where you're allowing traffic to
+[02:48] be publicly load balanced between your virtual machines.
+[02:52] You can also support internal load balancing if you want.
+[02:58] So in this case, you've got these VMs needing to interact with these VMs on the back end,
+[03:03] sometimes referred to what we call a front end back end topology.
+[03:07] Okay, so you got load balancing flowing into these machines and then maybe this VM has got to interact
+[03:13] with this VM for something. At that point it can be load balanced to there and same thing here,
+[03:22] same thing there. Each one of these machines
+[03:26] could be load balance with that internal load balancer. Now do you need, do you have to have
+[03:31] it set up this way? No, not necessarily. You're just doing a standard web service that you need
+[03:36] load balance and you've got three VMs in this case. You could have just done this option right
+[03:41] here and just have this one load balancer. Internal load balancers could be used for front and back
+[03:48] end topology like what you're seeing here or
+[03:50] An internal load balancer might be utilized by some internal virtual machines.
+[03:54] It could be that we have some internal virtual machines that let's just take the internet
+[04:02] out of the mix entirely here.
+[04:04] And it might be that these virtual machines are...
+[04:08] on the internal Azure network and they never really talk to the internet
+[04:12] but the they do have some kind of a web app that our employees use and then maybe these are databases
+[04:18] database servers that are running uh these are VMs that are running databases and so you're
+[04:23] using an internal load balancer for that reason. Now in this case they're doing both they've got
+[04:28] a front end back end topology they're accepting traffic from the web that's being load balanced
+[04:32] to the front end here and then these VMs are having to talk to these back end VMs in this
+[04:38] to your subnet as they're calling it here and it's being load balanced on the internal
+[04:42] side as well.
+[04:45] Load balancing
+[04:46] With the standard load balancer pretty straightforward, you do have what are called health probes
+[04:50] that are monitoring these VMs.
+[04:53] So if for some reason one of the VMs dies, like let's say that VM dies, it will just
+[04:58] stop load balancing traffic to that VM.
+[05:01] It will only be load balancing traffic to the VMs that are still up and running.
+[05:05] Of course if that VM does come back online, then at that point it will continue to load,
+[05:13] Okay, so let's go over to the application gateway side now. The application gateway
+[05:18] basically can do the same thing as a basic load balancer, but it can go a step further,
+[05:23] a few step furthers really.
+[05:26] You have the ability to load balance based on the URL that somebody is going to in this case somebody is going to
+[05:34] contoso.com
+[05:36] And if they go to slash image images, they could be going to this set of
+[05:40] VMs and if they type if they're going to a slash video if they're viewing a video that would go to these VMs
+[05:46] Not only that but you could have
+[05:49] this the same scenario
+[05:53] Let's just move this up here and I'll make a copy.
+[05:57] And instead of Contoso.com being the website, let's say it's exam lab practice.com.
+[06:04] Alright, so if somebody types contoso.com, they get sent to one set of VMs.
+[06:11] If they type exam lab practice.com, they get sent to another set of VMs.
+[06:23] linked into your application gateway, you wouldn't have to have two. I know it
+[06:27] kind of, that's kind of how it was, you're probably visualizing it when you're
+[06:30] drawing two there, but my point was I could have multiple DNS names and the
+[06:35] DNS names can be routed to a specific set of VMs. Alright, so you can route, you
+[06:43] can basically have that traffic load balanced based on
+[06:47] the folder names, directory names people go into,
+[06:50] the actual DNS names, and of course,
+[06:53] it'll still do load balancing based on port numbers
+[06:55] and all that that the load balancer at the layer four will.
+[06:59] It's just, again, application gateways
+[07:00] are gonna be more expensive.
+[07:02] And what you can do is you can jump
+[07:03] into the Azure calculator,
+[07:05] you kinda look at the difference.
+[07:06] There is even a free version of this load balancer here.
+[07:10] You can only use port 80 for it,
+[07:12] but you can play around with load balancers
+[07:14] for essentially, for free.
+[07:16] application gateway again is going to be more expensive.
+[07:19] Alright, but hopefully that now gives you an idea, helps you understand the fundamentals
+[07:22] between these two different types of load balancers.

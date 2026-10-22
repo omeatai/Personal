@@ -1,0 +1,95 @@
+# 61 - Configure snapshots and soft delete for Azure Files
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/61 - Configure snapshots and soft delete for Azure Files.mp4
+Fetched On: 2026-10-21 19:47:21
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now before you can jump in and start playing around and getting some hands-on with the concept of Azure file
+[00:07] Snapshots and soft delete. I thought it was important for us to understand the difference between the two
+[00:12] So when it comes to dealing with Azure file shares
+[00:16] You can consider a couple of different options for keeping your data safe and all that one being the the snapshots
+[00:24] for a recovery scenario and then the other being soft delete.
+[00:28] So with snapshots, the purpose of that is going to be to help you create a point in time backup
+[00:34] of an entire file share or even individual files. You'll be able to manually or automatically
+[00:41] create snapshots. This can be done via the Azure Backup. You could use the command line interface
+[00:52] all files and folders at a specific moment in time when you create the snapshot. Now as far as
+[00:58] restoration goes you can browse, compare, or restore specific files or folders from the snapshot.
+[01:05] The other thing is snapshots exist until you delete them. So they'll be valid and available
+[01:12] to you until you actually delete them. The billing for that, well you're charged for the
+[01:16] storage used by the delta, the changes in other words, the changed data blocks.
+[01:21] A use case for that would be a scenario where maybe you want to recover from a user error.
+[01:26] Oops, I overrode a file yesterday.
+[01:29] And so you've got a snapshot of that data and it got overwritten.
+[01:34] All right, as opposed to somebody just flat-out deleting something, this would be more like,
+[01:39] oh no, I accidentally overwrote some data.
+[01:42] So let's talk now more about soft delete versus the snapshot.
+[01:46] So the purpose of soft delete would be to protect against accidental deletion of an
+[01:51] entire file share.
+[01:53] User action for this is this is something that's just automatically triggered when a
+[01:57] file share is deleted.
+[02:02] you know schedule this to happen or manually set it, it just it happens. The scope of this
+[02:07] it's going to apply only to whole file shares not individual files. Okay so soft delete is linked to
+[02:16] the entire file share as opposed to just the individual files. The restoration of this you
+[02:22] can undelite the entire share.
+[02:25] from the deleted state with a retention period of up to 365 days. Deleted shares are also going
+[02:32] to be retained for a configured amount of time after which they're permanently deleted.
+[02:38] The billing on this you are still billed for the storage of soft deleted shares as well. So
+[02:43] whatever the storage is you're going to you'll be billed for those. Use case for this would be
+[02:48] just a recovery from an accidental deletion. This is as opposed to somebody just overwriting
+[02:54] Accident deletion. So if somebody just overwrites data, then soft delete isn't really going to help you. This would be used in a deletion scenario.
+[03:02] Okay, so now that you understand the differences between snapshots and soft delete, let's jump in and play around with it.
+[03:08] So here I am on portal.azure.com. I'm going to click the menu button and go right here to my storage accounts.
+[03:14] From there, I'm going to open up this storage account.
+[03:17] And we'll go down here and look at file shares.
+[03:21] Okay, so you can see I have a file share just called docs right here.
+[03:25] All right, and I can click on that docs file share.
+[03:30] And I can upload data if I want.
+[03:31] So I'm going to click upload.
+[03:32] I'm just going to upload in a document.
+[03:35] And I just uploaded this snapshots versus soft delete PDF file, which was the data that
+[03:40] I just had on the screen, the slide I just had up on the screen for you a second ago.
+[03:44] I'm going to click upload and there you go.
+[03:47] In there if I click browse I can actually see that file right there
+[03:52] Okay, and so there it is. So here's what I'm gonna do. I'm gonna jump back over here to overview and we're gonna click to
+[04:00] go through the process of
+[04:03] Setting up a snapshot now, how do I do that? Well, you can create a snapshot
+[04:09] By clicking snapshots under operation. We'll click add snapshot. I'm just gonna call this test
+[04:17] on docs. Okay, that's going to be the comment that I give it. I'm just going to click OK.
+[04:23] So I've now officially created the snapshot. Right. So that's done. Now I can go right here,
+[04:32] back over here to browse. And I could have this file, it could be overwritten or it could be
+[04:46] All right, so it's now officially been deleted, but if it was overwritten this would work the same way now
+[04:51] I'm gonna go back over to snapshots
+[04:53] And you see I've got my snapshot. I'm gonna click that snapshot
+[04:57] Open it up, and I'm gonna click so there's the file right there, so if I wanted to just restore that I
+[05:04] Could I could go right here and click restore you've also got connect
+[05:09] This would let me connect into that snapshot like a map to drive and all that I'm gonna go right here
+[05:14] I'm gonna click to restore
+[05:17] Okay, it says restore file restore as a copy and rename it or overwrite the original
+[05:22] Say overwrite original
+[05:24] So if the file was still there and had just been overwritten like changed then it would just overwrite the original
+[05:30] Okay, we'll click back on this little link here and
+[05:33] As you can see if we click browse you can see the file has returned
+[05:37] So as you can see very easy to create a snapshot
+[05:41] under the operations area here
+[05:44] So I go back over here on my storage account and look at file shares and
+[05:49] You can see the file share there now also want to show you it says soft delete seven days. So that's set seven days
+[05:57] Alright, we can set that up to 365 total seven days is fine for what we're doing
+[06:02] But now what I want to do is show you soft delete and I'm gonna go right here and I'm gonna delete this entire
+[06:08] file share
+[06:10] Delete share it's gonna make me copy the name of it paste it down here
+[06:15] Wants me to give feedback, but I'm not gonna do any of that right now
+[06:18] I'm gonna hit delete and delete now
+[06:20] Let me warn you when you go to delete a file share like that
+[06:24] It can take a couple of minutes before it'll let you undelete it in fact if I
+[06:29] go right here and click show deleted shares. It may still be trying to go through the deletion
+[06:34] process. So if I try to undelete it, it may not let me. Yes. So see it through an error. So you
+[06:39] do need to give it a couple of minutes before it's going to let you go through and undelete that
+[06:45] file share. But again, you can see here that I do have that capability of going in and undeleting
+[06:59] too long didn't take a couple minutes like I thought it would it only took about 30 seconds
+[07:03] but you can see I did just go through and undelete it if I go back over here now and
+[07:07] look at my file shares let's just refresh file share is there I can go in the file share
+[07:13] and of course my data in all of that is there as well okay so there you go very easy to utilize
+[07:21] snapshots and work with soft delete on a file share
