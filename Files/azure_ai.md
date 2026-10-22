@@ -22,11 +22,9 @@
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-- [ ] [Chapter 1 - Introduction to Cloud Infrastructure: Describe cloud concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-- [ ] [Chapter 2 - Introduction to Cloud Infrastructure: Describe Azure architecture and services](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-- [ ] [Chapter 3 - Introduction to Cloud Infrastructure: Describe Azure management and governance](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
 
 ### +AZ-104: Azure Administrator Associate
+- [ ] [AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
@@ -35,61 +33,61 @@
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
 
 ### +AZ-802: Windows Server Administrator Associate
+- [ ] [AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
+- [ ] [Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/?couponCode=MT261019G1)
 - [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### +AZ-140: Azure Virtual Desktop Specialty
+- [ ] [AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/?couponCode=MT261019G1)
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
 
 ## Phase 2: Security Core
 
 ### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 - [ ] [Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
 
 ### +SC-300: Identity and Access Administrator Associate
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +SC-200: Security Operations Analyst Associate
 - [ ] [Microsoft Learn | SC-200: Security Operations Analyst Associate](https://learn.microsoft.com/en-us/training/courses/sc-200t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-200/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +SC-500: Microsoft Cloud and AI Security Engineer Associate
+- [ ] [SC-500 Cloud & AI Security Engineer Associate HandsOn Course](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/?couponCode=MT261019G1)
 - [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 3: AI Developer Core
 
 ### +AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-901/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
 - [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
 
 ### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
 - [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-200/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AI-103: Azure AI Apps and Agents Developer Associate
 - [ ] [Microsoft Learn | AI-103: Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-103t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-103/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-800: SQL AI Developer Associate
 - [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ## Phase 4: Associate Hybrid
 
 ### +AZ-700: Azure Network Engineer Associate
+- [ ] [AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/?couponCode=MT261019G1)
 - [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
@@ -125,11 +123,6 @@
 - [ ] [Alan Rodrigues | SC-100: Microsoft Cybersecurity Architect](https://www.udemy.com/course/azure200/)
 
 ## Phase 6: Other Data Systems & Architecture
-
-### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
 - [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
