@@ -1,0 +1,111 @@
+# 19 - Create groups in Microsoft 365
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/19 - Create groups in Microsoft 365.mp4
+Fetched On: 2026-10-21 19:43:54
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now like to take a look at how we can create groups within the Microsoft 365 Admin Center.
+[00:06] So here we are on admin.microsoft.com and of course the first thing to note here is to just
+[00:13] be aware that Microsoft changes these portals constantly. So if your screen looks a little
+[00:18] different than mine just be aware of that. I know you probably heard me say that a lot,
+[00:22] but I do like to warn people. Alright so here I am. I'm going to click on Teams and Groups.
+[00:29] I'm gonna click active teams and groups. So this is where your groups are gonna
+[00:34] be managed within this portal. Now listen carefully and be aware that because I do
+[00:38] have some extra licenses that you may not have, I do have a few options here
+[00:44] that you may not see.
+[00:45] these options do not matter. So if you're wondering why you're missing certain options on this screen,
+[00:51] if you're doing this with me, don't worry about it. It's because I have some additional licenses.
+[00:56] Only the stuff that I do in this video are even going to matter. It's not going to matter that
+[01:00] you don't have the exact same licenses as me. So don't worry about that. There's no need to
+[01:06] message me and ask me why you're missing some stuff that you don't see on this screen,
+[01:10] such as some of the buttons that you're seeing.
+[01:13] Also, be aware you are not going to see the exact same groups as me.
+[01:17] Okay, so right out of the gates here,
+[01:19] you can see that I can add,
+[01:21] says Teams and Microsoft 365 groups right here.
+[01:25] Then I've got distribution list right here,
+[01:30] and then I've got security groups right here.
+[01:35] you'll notice that under security groups, I've got add a security group or a
+[01:39] mail enabled security group. So there is where you sort of get your four
+[01:43] types of groups that we can support. Microsoft 365 groups, distribution list
+[01:50] which is a distribution group, and then a security group or mail
+[01:54] enabled security group. So that's where you can create your
+[01:57] different types of groups. We're going to create a Microsoft 365 group.
+[02:04] Under Microsoft 365 and I'm gonna click add a Microsoft 365 group
+[02:10] So we'll click that all right, and then at that point I want to give the group a name
+[02:16] I'm gonna call it the finance group. Maybe it's gonna represent the the finance department
+[02:22] We'll click next and then this is where I would add an owner
+[02:26] So what is a group owner? A group owner is a user that can add or remove members,
+[02:32] delete conversations from the shared inbox, change group settings. Group owners
+[02:37] can also rename the group. They can update the description and things like
+[02:41] that. Alright, I'm gonna go right here. I'm just gonna add myself as the group
+[02:45] owner. JC at examlabpractice.com. So I'll select myself. Notice that it says that
+[02:53] JC has access to teams.
+[02:56] So that means I have a license that can support teams.
+[02:59] All right, so I'll go ahead and click next.
+[03:01] And then this is where I would add my group members.
+[03:05] Okay, now, interestingly enough,
+[03:08] you'll notice it's not giving me an option here
+[03:10] to make this a dynamic group.
+[03:13] So in this Microsoft 365 admin center,
+[03:16] it's not given the option to use
+[03:17] what is known as a dynamic group here.
+[03:19] All right, but says group members have access to everything in the group, including group content
+[03:25] like email messages, files and a shared calendar by default group members can invite guests to join
+[03:31] your group, but they can't edit group settings. I'm going to add members will add I got a user
+[03:38] named Bob Jones. I'll just add Bob Jones, but really doesn't matter. And again, if you don't
+[03:43] have the same users as me, that's not a big deal. You can just add yourself if you want,
+[03:48] type Bob Jones, I'm going to click next, and then I'm going to give the group an email address. So
+[03:52] it says Microsoft 365 Groups allow team collaboration by giving them a group email and a shared
+[03:58] workspace for conversations, files, and calendars. Choose settings for your Microsoft 365 groups. So
+[04:03] I'm going to call this finance. So if you were to email finance at examlabpractice.com, it would go
+[04:09] to everyone in the group. Then you have privacy settings, and you'll notice it says public or private.
+[04:15] Public groups can be joined by everyone without getting approval from the group owner.
+[04:21] Anyone can access the group content.
+[04:25] Private groups aren't open for everyone to join and group owners are the ones that can add members, right?
+[04:32] So only members can access the group content.
+[04:35] I'm going to say private.
+[04:36] This is called the finance group for crying out loud.
+[04:38] So we wouldn't want this to be a public group, probably.
+[04:41] Right.
+[04:42] Okay.
+[04:43] Not dealing with roles right now.
+[04:45] All right, and then add Microsoft Teams to your group.
+[04:50] So if you wanted to create a team with this group,
+[04:53] you would actually choose this right here.
+[04:55] And this would actually create a Microsoft team.
+[04:58] All right, so then I'm gonna go ahead and click next,
+[05:00] and then I'm gonna click to create the group.
+[05:03] And as you can see, it's adding the group right now.
+[05:06] It's also adding the owner.
+[05:07] It's adding the members.
+[05:08] Whoever's going to be a member of it.
+[05:10] And there you go.
+[05:11] We've now got this group created.
+[05:13] If we hit Close, we can go right here.
+[05:17] And we can search.
+[05:20] You'll see the finance group.
+[05:23] All right.
+[05:24] Notice that it's an assigned group.
+[05:27] It is not a dynamic group.
+[05:30] Now, we can go to the Properties of that group.
+[05:32] we can click the membership, see who the members are. Now this is going to be, when I look at
+[05:38] membership, this is owners. I can look at actual members by clicking this. All right, I can learn
+[05:43] more about permissions, about teams, and all that by clicking this link. Channels, this will involve
+[05:48] Microsoft Teams as well. Currently, there'll be just a channel called General if you were to open
+[05:53] up the team for this. And then I've got group settings right here. Not using sensitivity labels,
+[06:01] Most of these settings you'll see involve Teams, but if I did want to switch this to public, I could.
+[06:06] Let people outside the organization email this team, send copies of Teams email and events
+[06:12] to team members' inboxes. Don't show team email addresses. Most of this is pretty self-explanatory,
+[06:19] right? But don't show team email address and Outlook. So you can now allow members to edit
+[06:24] their sent messages, allow members to delete their sent messages in Teams for Teams channels.
+[06:31] Teams members can add channels and edit existing channels team members can add and edit private
+[06:37] Channels team members can add delete channels. So if you wanted to alter some of that stuff you could
+[06:42] Okay, but we can only have this group be an assigned group if we create the group through the Microsoft 365
+[06:51] Portal if you want to have dynamic groups, that's where you'll do you'll do that through your
+[06:58] Azure portal
+[06:59] Okay, but in this video I just wanted to show you how you could create and manage a group
+[07:05] within the Microsoft 365 admin center.

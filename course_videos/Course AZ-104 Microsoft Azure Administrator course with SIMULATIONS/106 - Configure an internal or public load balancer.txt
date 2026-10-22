@@ -1,0 +1,100 @@
+# 106 - Configure an internal or public load balancer
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/106 - Configure an internal or public load balancer.mp4
+Fetched On: 2026-10-21 19:40:02
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd like to now get into how we can set up a load balancer here in Azure.
+[00:04] So currently what we have is we have two virtual machines, VM1,
+[00:09] and we have another virtual machine called VM2.
+[00:12] These are both located inside the demo RG resource group.
+[00:15] See there's VM1, there's VM2.
+[00:17] Now I've already, to save time,
+[00:19] I've already remoted into both of these.
+[00:22] So here is VM1.
+[00:24] and I've just right-clicked start and went to PowerShell and typed IP config.
+[00:29] You can see the IP address for VM 1 10.0.0.4. That is the private IP of this
+[00:36] virtual machine. Okay now we've got VM 2. Here's VM 2. Did the same thing. It's
+[00:41] 10.0.0.5. That's the private IP of that. I can so the two the two are set up and
+[00:53] If I go into Microsoft Edge, okay, and all I've done is just edited the little image
+[01:02] of that site for IIS to reflect that I'm connected to VM1 or 2.
+[01:08] So this if I put 10, I'm connected.
+[01:11] Now keep in mind I'm connected inside the web browser of VM2 right now.
+[01:16] And I'm just opening up the web browser.
+[01:23] getting a little bit of lag. These virtual machines don't have a lot of memory, but
+[01:26] if I hit 1004, this is going to hit VM1. So you can see VM1 says this is VM1.
+[01:32] And if I hit 1005, I should see VM2. And there it is. This is VM2. So we know that
+[01:38] the web servers are working, but we are currently not load balancing
+[01:42] anything. So we're going to change that now. We're going to go ahead
+[01:46] and we're going to change that. So I'm back over here in Azure, portal.azure.com.
+[01:50] I'm going to click the menu button and I'm going to go to all services and I'm just going to search for
+[01:55] load balancer
+[01:57] So there you go. There's a resource right there called load balancers
+[02:00] We're going to click on load balancers and we're going to click to create a standard load balancer here
+[02:05] alright
+[02:06] So our resource group will be the demo RG resource group and then I'm going to give it a name my load balancer
+[02:15] ELP is going to be the name of it
+[02:17] And then I've got the region, East US,
+[02:19] and then I can specify the SKU here, standard or gateway.
+[02:23] All right, so standard is...
+[02:26] distributing traffic to back end resources.
+[02:28] This is actually what we're trying to do.
+[02:29] Our virtual machines are acting as our back end resources.
+[02:33] They have private IP addresses
+[02:34] that we're gonna direct traffic to.
+[02:35] Now, you've also got this option gateway.
+[02:37] This is gonna direct traffic to network virtual appliances.
+[02:40] So if you were gonna direct traffic
+[02:41] to like an Azure firewall or Barracuda
+[02:44] or whatever it may be that sits between VNets,
+[02:47] you could use this option.
+[02:49] We're gonna go with this
+[02:50] because that's exactly what we're trying to do,
+[02:51] back end resources that are going to virtual machines.
+[02:55] It says type. Is this a public or internal? So is it going to be accessible from the internet or
+[02:59] are you just routing traffic within an internal environment? So that's going to be your difference.
+[03:03] If it's going to be accessible from the internet publicly, you would want to go public. If it's
+[03:08] going to be a private internal where you're just balancing traffic within an internal environment,
+[03:14] maybe it's going to a bunch of databases and they need to be distributed that way,
+[03:17] that's when internal would be used. We're going to go with public. And the next thing you've got
+[03:24] or global. So regional, this would be load balancer is going to be confined to a single
+[03:28] Azure region. Global would make it available across to things like the Azure front door traffic
+[03:35] manager. So this is if you're working between regions. So we're going to go with regional.
+[03:41] We're going to click next for front end IP address. And then we're going to click add,
+[03:46] add a front end IP address. Okay. And then our front end IP, we're just going to call it front
+[03:54] pip alright for public IP address
+[03:58] Okay, and then IP version 4 IP type IP address
+[04:02] as opposed to an IP prefix. We'll do IP address. Okay with prefix they tell you you can be
+[04:08] associated with load balancer or cannot be associated with load balancer if you have
+[04:11] prefixes that have been set up but we're going to go with IP address and if you already have an
+[04:16] existing IP address you can select that. I'm actually going to create one just so we don't
+[04:20] have one that's connected to anything right now and I'm just going to call this for the name of
+[04:32] It's specified if we want to do kind of redundancy and all that we want.
+[04:35] We don't want zone redundancy.
+[04:36] I'm just going to cut cost on all of that.
+[04:39] I'm going to hit save and then I don't have a gateway load balancer,
+[04:43] like an application gateway load balancer in this environment.
+[04:46] So I'm going to hit save.
+[04:48] At that point, we're going to click to go to back end pools.
+[04:52] And then so our back end pool, these are going to be our virtual machines.
+[04:54] OK, so the back end pool, I can just call this back end
+[05:01] my VNet for this, which is load balancing VNet.
+[05:06] All right, and then from there I can add the virtual machines based on their Nix
+[05:12] or you could do it based on IP. Okay, we'll do it based on Nix
+[05:17] and we're going to go ahead and click save and we're going to click next. And
+[05:21] at that point I can create my rules, what are called inbound rules and all
+[05:24] that. I'm going to I'm going to not do that in this video. We'll do it coming up though.
+[05:28] I'm not going to do outbound rules either in this video.
+[05:31] We're just going to get the load balancer created,
+[05:34] but then we'll continue after that.
+[05:35] So we'll click Review and Create,
+[05:37] wait for validation to complete, and we'll click Create.
+[05:42] All right, now click Go to Resource,
+[05:44] and we've now officially got our load balancer created.
+[05:47] We don't have any rules or anything,
+[05:48] so we're not quite ready to start load balancing yet,
+[05:51] but we do have it created,
+[05:52] and that's what I wanted to accomplish in this video.

@@ -1,0 +1,111 @@
+# 122 - Configure and interpret monitoring of VMs, etc by using Azure Monitor Insights
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/122 - Configure and interpret monitoring of VMs, etc by using Azure Monitor Insights.mp4
+Fetched On: 2026-10-21 19:42:09
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Let's talk now about insights in regards to Azure Monitor.
+[00:05] So first off, what are insights?
+[00:08] Well, traditionally when you think of Azure Monitor, it's collecting log data and it's collecting metrics, right?
+[00:15] But what about all the extra things that Azure could tell you about your resources?
+[00:21] This is the idea of insights. It uses some intelligent systems to help you with knowing
+[00:29] certain types of things you should probably turn on or turn off. So it's going to give
+[00:33] you recommendation, in other words, insights into what they recommend you should do with
+[00:38] that resource. So let's take a look. Here we are on portal.azure.com. We'll click the menu button
+[00:45] and then we're going to go down to monitor and then from there we can expand insights.
+[00:51] Okay and so you have insights on these various items. We'll click on virtual machines but you'll
+[00:55] notice that in order for virtual machines to do this we need to go over here it says configure
+[01:00] insights and then we could select the virtual machines that are available. I'm just going to do
+[01:08] I am and keep in mind I've made sure that when server one is already turned on it's already started and
+[01:13] At that point I'm gonna click to enable that
+[01:16] Okay, so it from there sets up a data collection rule within that to tie to your Azure monitor
+[01:25] We'll go ahead and click configure
+[01:27] Okay
+[01:28] And so it's now submitting that.
+[01:30] And so now it has the ability to gather information
+[01:34] so that we can actually see insight information.
+[01:37] OK, so that's fine.
+[01:39] We'll let that go ahead and process through.
+[01:42] Now I'm going to jump over to storage accounts.
+[01:45] And from there, you can see your various storage accounts.
+[01:47] And you can see that it already has some insights information
+[01:50] about storage accounts.
+[01:51] I'll go ahead and click on this particular storage
+[01:53] account right here.
+[01:54] And you can see some insight data.
+[01:57] So it tells you here all data provided in this report view are Azure monitor metrics for storage
+[02:04] Metrics are the numerical values collected in regular time intervals. So that's what you're seeing
+[02:09] You're basically seeing some metric data and it puts it into it some nice little charts for us to take a look at right?
+[02:15] That's what you're seeing here from there. You can also see failures
+[02:19] So if we've had any kinds of failure issues and you know, you can see here
+[02:24] There's been like we had a little bit of a spike right here.
+[02:27] Okay, during this time frame. So this would be great if you were having
+[02:32] complaints about people not being able to interact with
+[02:34] your storage account for whatever reason.
+[02:36] You can look for you know failures. You've got performance information.
+[02:42] So you can see performance data right here.
+[02:45] See what kind of performance you're getting. This is showing you in
+[02:52] You can see all this information regarding blobs and files and all that.
+[02:56] Right?
+[02:57] And then you've got availability.
+[03:00] So this is going to tell you what your availability is.
+[03:02] Okay?
+[03:03] Right now I'm at 100%.
+[03:05] I've got 100% availability.
+[03:07] Everything is up and running.
+[03:09] And then capacity.
+[03:10] Right?
+[03:11] So you can see what your capacity is on that storage account.
+[03:14] So those are some of the things you can explore involving storage accounts.
+[03:18] Okay?
+[03:19] With insights.
+[03:20] So another thing we can do let's go back over to the monitor. We've got networks
+[03:27] So we can see the various networks and network interfaces.
+[03:30] So this would be involving traffic flowing in and out of our networks.
+[03:35] So you can see here it says I got three network interfaces.
+[03:38] I've got four network security groups.
+[03:40] I got some public IPs,
+[03:41] route tables, virtual networks.
+[03:44] And I can click on that,
+[03:45] like I just clicked on virtual networks.
+[03:46] You can see those virtual networks.
+[03:48] I'm going to click on this one right here, vNet demo.
+[03:50] for VMS, that's actually the one my virtual machine is on,
+[03:53] and it'll take you straight into that actual resource.
+[03:57] So then if I wanted to go further
+[03:59] and look at some of the monitoring stuff from there,
+[04:01] I could, okay?
+[04:02] But ultimately there's not an insane amount
+[04:05] of insight information that you'll see with networks.
+[04:08] Just a few things here.
+[04:09] You can see the network health,
+[04:11] you can see connectivity, okay?
+[04:14] And you can see traffic, all right?
+[04:16] So you can see how much traffic
+[04:20] kind of gives you a little bit of a look at that. But in my case, I don't really have a lot going on.
+[04:25] This is not a real world environment, it's a lab environment. So you don't really see a whole lot.
+[04:29] Let's jump over to virtual machines. Okay, and from there, let's go back over here to overview,
+[04:36] or go over to overview, I should say. And you can see WinServer1 listed there. Now, if I just
+[04:48] Keep in mind we haven't really had a whole lot that's gone on simply because
+[04:53] Well, this is there's not really a lot going on with this virtual machine
+[04:56] But you can see the types of information that it's going to try to give you and if you give it enough time
+[05:01] You'll start seeing some of this stuff populate. So you'll see things like the CPU utilization
+[05:06] Available memory logical disk IOPS and of course we can get all of that from the metrics anyway
+[05:11] But it'll also start throwing recommendations up here as well. You can also click map
+[05:17] It says enable the map feature, configure process and dependencies and data collection rules.
+[05:22] And it does tell you it says you are using an operating system version that is not supported.
+[05:28] So only, you know, certain supports is going to be available for this map feature that they've got.
+[05:34] Okay. And you can actually click here and you can click the support matrix and you can see
+[05:39] what the options are as far as supporting that. And you'll see this is geared towards
+[05:47] you know so there's not really a lot of options as far as windows goes in terms of the map feature
+[05:52] okay but that is the idea of insights there's nothing it's not really too complicated just
+[05:59] keep in mind that as you get into a real world environment when you click on these items you'll
+[06:03] start seeing recommendations things like you should we recommend you turn this on or you turn
+[06:13] you'll notice I've gone back into my VM and look at performance and you can see it's populating.
+[06:18] So my metrics and all of that are being populated now. And so that gives me some good information
+[06:24] as far as all that goes. Alright, with that VM, just keep in mind, you might have to give it a
+[06:30] little time if you're doing this as well. And in the real world, you start getting
+[06:34] recommendations and all of that. Alright.

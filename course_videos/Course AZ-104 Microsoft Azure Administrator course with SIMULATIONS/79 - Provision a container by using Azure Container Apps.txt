@@ -1,0 +1,94 @@
+# 79 - Provision a container by using Azure Container Apps
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/79 - Provision a container by using Azure Container Apps.mp4
+Fetched On: 2026-10-21 19:42:43
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about the concepts involving Azure Container apps.
+[00:04] Now this is different than Azure Container instances.
+[00:08] In fact, if I go here to portal.azure.com and I click the menu button, go to all services,
+[00:12] and I just type the word container, you're going to see we have container apps and container
+[00:16] instances. Now container instances, this is more of a lightweight solution. It's on demand. It's a
+[00:24] great way just to get a container up really fast, just working in our environment. Okay,
+[00:30] so it's kind of, this is great for short-lived or maybe simple task batch process, and maybe
+[00:37] Maybe if you don't really care too much about doing auto scaling, traffic routing, any of that stuff, it's great for that.
+[00:46] So you're going to run containers directly without any special infrastructure set up.
+[00:49] There's no scaling, no load balancing.
+[00:51] None of that stuff is really utilized a whole lot with the container instance.
+[00:56] Now when you get into start thinking about Azure container apps, this is more industrial strength if you will.
+[01:06] Azure Container Apps is a fully managed service for running things like microservices modern apps with Kubernetes type.
+[01:15] features if you know what that is a Kubernetes being this massive engine that can just deploy
+[01:20] insane amounts of containers very quickly. So this is great for microservice running,
+[01:26] running long APIs application programming interfaces where you got you maybe got
+[01:30] background worker processes that need to happen for web services. It's very good for event driven
+[01:36] architectures. So the big thing to remember about container apps though is that it supports
+[01:44] out, supports multiple revisions so if you're in a situation where you're
+[01:49] having to make lots of revisions to like a website or something is great for that.
+[01:52] Okay, but the main thing is the auto scaling features and all that's just
+[01:57] built right into it. Alright, so that's gonna be your biggest benefit in terms
+[02:01] of container apps. Okay, so I'm gonna go right here and click on container apps
+[02:05] and I'm gonna click create container app and I'm just gonna store in my
+[02:13] container registry, yeah, container registry,
+[02:17] RG container, which is fine,
+[02:19] and I'm just gonna call this test container app,
+[02:24] ELP, for exam lab practice.
+[02:27] All right, I can also support optimize for Azure functions.
+[02:31] So this is the built-in auto scaling capabilities.
+[02:33] If you wanna use that, that can be turned on.
+[02:36] And you can specify down here at the bottom,
+[02:40] it says container apps environment.
+[02:41] So I can have show containers in all regions if I want or I'm just gonna do East US.
+[02:47] This is gonna be the little apps environment it'll create based on the name and then I'll click next.
+[02:52] Now you can do an Azure container registry.
+[02:55] You can use the Docker registries or you can just do a quick start image to get things up and running.
+[02:59] I'm just gonna do a quick start image and then I'm gonna click review and create.
+[03:04] Now that that's done, I'm gonna click create and I'm gonna pause my recording while it's getting created.
+[03:09] All right, now that that has finished, I'm going to click Go to Resource.
+[03:13] And here we are inside of our little app container app here.
+[03:18] There's the little URL that it generated.
+[03:20] All right.
+[03:21] And so you can see that it has successfully working.
+[03:25] If I copy this and we'll paste it in up here, this is the little...
+[03:34] It says here your functions 4.0 app is up and running so you can see that the application
+[03:39] is running successfully.
+[03:41] Now let me show you one of the big differences between this and a container instance.
+[03:46] So if we come over here to the left, look under application, you're going to see scale
+[03:51] and you can see you have auto scaling capabilities with this.
+[03:55] Okay.
+[03:56] So it tells you here control automatic scaling by setting the range of application replicas
+[04:01] that'll be deployed in response to a trigger event.
+[04:04] Use scale rules to determine the type of event that.
+[04:07] trigger scaling. So the first thing you'll notice there is this min
+[04:12] replica. So this is the minimum number of replicas allowed for the revision at any
+[04:16] given time. Okay, they tell you this will override the actual scale rules if you select this.
+[04:25] So example would be sort of like let's say you have a value of zero. This is going to mean that
+[04:30] You know, your app can scale down to zero when idle, reducing the cost.
+[04:35] So this is going to be useful for like a background task or event driven app or
+[04:39] something like that.
+[04:40] Then you've got max replica.
+[04:42] And so this is the maximum number of replicas the app can scale up to based on
+[04:47] demand. So example, this like with 10, the app will never go beyond 10 replicas,
+[04:52] even under high load.
+[04:55] This is again, kind of ensure cost control.
+[04:58] Now you've got cool down period.
+[04:59] So the this is the time Azure waits after scaling out or in before evaluating another scaling action. So making a decision.
+[05:08] So 300 seconds, that's five minutes means if a scale out occurs, Azure waits five minutes before making any more scaling decision.
+[05:17] This will just prevent it from frequently just going, you know, flapping scale, flapping as they call it going out and in, out and in.
+[05:26] You have polling interval and this is how often Azure checks the scaling rules to decide if scaling is needed
+[05:33] So this is that 30 seconds 30 seconds is gonna mean that Azure checks every half
+[05:38] Minute if the scaling conditions are met. Okay, and then here we have the current number of replicas
+[05:45] This just shows how many instances are currently running. So I just have one we just got one instance. That's actually running
+[05:51] Okay, and then right down here
+[05:54] It mentions scale rules.
+[05:57] So you've got your scale rules.
+[05:58] These define when to scale based on the triggers
+[06:02] such as HTTP traffic, CPU usage, all of that good stuff.
+[06:07] So it's just gonna be based on that, on these items here.
+[06:13] All right.
+[06:14] So that is how the scaling is gonna work
+[06:17] in regards to working with your app container.
+[06:22] So there isn't a massive difference here.
+[06:24] in terms of container instances, in terms of just setting it up, but the fact that you can do the auto-scaling features and all of that makes this a little bit more powerful than just using a standard container instance for your containers.

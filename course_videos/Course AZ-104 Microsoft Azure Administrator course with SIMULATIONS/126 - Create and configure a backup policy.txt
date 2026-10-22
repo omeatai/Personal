@@ -1,0 +1,104 @@
+# 126 - Create and configure a backup policy
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/126 - Create and configure a backup policy.mp4
+Fetched On: 2026-10-21 19:39:30
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now when you want to create a backup,
+[00:03] whether it is with a recovery services vault or a backup vault,
+[00:08] you got to have a backup policy.
+[00:10] Now the good news is when you go to perform a backup,
+[00:12] if you don't already have a backup policy,
+[00:15] it will allow you to create one.
+[00:17] But in this video,
+[00:18] I just want to show you how we go through the process of
+[00:21] actually creating a backup policy.
+[00:23] Now if we come over here to portal.azure.com,
+[00:26] and we go to the menu button go to all services and we just search for
+[00:31] recovery vault
+[00:33] Does help if you don't typo everything like I do
+[00:36] But anyway, if I go to recovery services vault and I'll click on this recovery services vault
+[00:42] I have here called backup vault demo
+[00:44] Okay, and if I expand manage, you'll see a blade called Backup Policies. And then so from there,
+[00:50] I can click to create one. You'll notice there are some default ones that Microsoft throws in
+[00:54] there for an hourly and a default and an enhance. You can click on any of these you want, you can
+[01:00] see what those schedules are for. Like you can see this one, the frequency is daily and 12 am,
+[01:06] so it does it at midnight. You can specify retention of weekly.
+[01:11] monthly, yearly, but none of that's selected by default.
+[01:14] Okay, so you can look at these,
+[01:17] you can look at the enhanced one.
+[01:19] You'll see it's hourly at 8 a.m., every four hours.
+[01:22] So 12 hours.
+[01:23] So with that, the duration is 12 hours,
+[01:27] but with that, I can create my own, right?
+[01:30] I can click add, and then I can specify, you know,
+[01:33] maybe what this policy is gonna be for.
+[01:35] Maybe it's gonna be for an Azure virtual machine.
+[01:37] Okay, and I'll just call this VM backup policy.
+[01:40] Okay, for lack of a better name.
+[01:42] I could then, if I wanted to enhance,
+[01:44] they tell you that you'll get multiple backups per day,
+[01:46] up to 30 days operational tier retention,
+[01:49] support for trusted launch Azure VMs,
+[01:51] support for VMs with Ultra Disk and Premium.
+[01:54] Or you can just do standard, okay?
+[01:57] And once a day backup, up to five day operational.
+[02:01] Okay, so I'm gonna do that daily.
+[02:03] Go through here, you can say the retention.
+[02:06] is you have retain instant recovery snapshots for up to two days.
+[02:10] So I could do recovery snapshots of VMs, retention of daily backup point.
+[02:15] This is set here at 8 a.m. and it's of course you can figure that up here
+[02:20] and then for however many days you want to support retention.
+[02:24] You can also do retention for a week, monthly or yearly.
+[02:27] And then going towards the bottom you've got enable tiering.
+[02:31] And the idea of tiering is when you enable...
+[02:34] this feature you'll get a scenario where Azure can automatically transition older recovery points
+[02:42] from the more expensive like standard tier into the cheaper archive tier. So if it's long-term
+[02:47] storage you can utilize that. But it's only supported with certain retention features. You'll
+[02:53] notice it says move to vault archive tier option is not available based on the retention range
+[02:58] selected. So you'd have to modify your retention range for how long you want to keep it.
+[03:04] Then down at the bottom, you've got Azure Backup Resource Group.
+[03:07] And they tell you this is just a little optional feature
+[03:10] that you can go with.
+[03:12] So the idea here is that Azure will
+[03:14] create a separate resource group to store instant recovery
+[03:18] snapshots.
+[03:19] OK.
+[03:20] And so this will happen during backups is great for.
+[03:24] being able to instantly recover a snapshot scenario with like virtual disk
+[03:29] and all of that. You can create a default resource group for this
+[03:34] but you can also name it what you want. So you'll be called like Azure
+[03:39] backup and then it'll have like you know an underscore you can have it
+[03:45] specify like the
+[03:47] region and then it'll just throw a numeric value at the end just to make sure everything is unique.
+[03:52] Okay so I'm not going to do that but I am going to click create
+[03:56] and then I've now created a backup policy. Okay now to do this I'm with a backup vault that was
+[04:04] what the if I wanted to do this with a backup recovery services vault, Azure recovery services
+[04:09] vault. Let's look at how we would do this with a backup vault. So we'll go over here to backup vaults.
+[04:17] I'll go into my backup vault demo that I've got here,
+[04:20] which is my backup vault.
+[04:22] If I expand Manage,
+[04:23] you'll see backup policies.
+[04:25] You'll notice I can click Add,
+[04:28] and I can create a policy for this.
+[04:31] I'll just call this backup vault policy demo.
+[04:37] Data source, what am I going to actually backup?
+[04:40] I'm going to do Azure Blobs.
+[04:43] You can see the various options we've got there,
+[04:46] but I'm going to do Azure Blobs and then I'm going to go ahead and click Next.
+[04:49] This is going to let me set my schedule.
+[04:51] So you can see the default here and the default retention.
+[04:57] So specify your retention duration for backups defaults 30 days operational.
+[05:01] So that's how long you want it to retain the data,
+[05:03] give you the details if there's any additional details.
+[05:07] Then specify your schedule, daily, weekly, whatever you want that to be.
+[05:11] Right, so the fault is daily at 8 30 a.m. You can specify the time zone and at that point if you
+[05:18] wanted to add you know additional retention rules here you could do that like every month
+[05:25] set that and or I put six months I'm sorry put six months and then I'm going to click review and create.
+[05:33] And then I'm going to click to create, and that is how we can create our backup policy.
+[05:37] So you can see there's a couple of different types of backup policies.
+[05:40] One would be for recovery services vault, and of course the other would be for a backup
+[05:44] vault.

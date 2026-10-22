@@ -1,0 +1,129 @@
+# 127 - Perform backup and restore operations by using Azure Backup
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/127 - Perform backup and restore operations by using Azure Backup.mp4
+Fetched On: 2026-10-21 19:41:04
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to take a look at how we can use a backup vault for backup and restores.
+[00:05] So here I am on portal.azure.com,
+[00:08] and if I click the menu button,
+[00:10] go to all services, I can search for backup vaults.
+[00:14] I can click on it, you'll see I have a backup vault here
+[00:17] called My Backup Vault Demo.
+[00:18] I'm gonna click on that and then from there,
+[00:21] I'm gonna click to backup.
+[00:23] I'm right here on the overview blade
+[00:25] and then you should see the backup button.
+[00:26] So we'll go ahead and click that.
+[00:28] And then I can choose what I wanna backup.
+[00:29] I'm gonna choose Azure Blob Storage
+[00:33] and I'm gonna call this My Backup Vault Demo.
+[00:36] All right, and then from there, I'm gonna click Next.
+[00:40] And notice that I have a backup vault policy.
+[00:44] If I did not have a backup vault policy,
+[00:46] I could create one, but I've already created one.
+[00:49] So I'm going to use that.
+[00:51] Then I'm going to click Next.
+[00:52] And then at that point, it's asking me
+[00:54] what my data sources are going to be.
+[00:56] So I'm going to click Add and Edit.
+[00:58] And I'm going to choose this exam lab practice storage
+[01:01] JC storage account.
+[01:04] And from there, click to select that.
+[01:06] And then I'm just waiting on it to validate.
+[01:08] OK.
+[01:09] Now it takes a minute for it to validate, but after it tried to validate, you'll notice you get this little message.
+[01:14] Okay, now this is letting you know that you have to set a permission on the storage account.
+[01:18] Alright, so we're going to go and do that.
+[01:21] Alright, I'm going to click the menu button up here,
+[01:25] and I'm going to right-click storage accounts and open in a new tab.
+[01:28] This is the way I can leave this screen up without losing it.
+[01:32] Okay, so I'm just going to open a new tab,
+[01:35] then I'm going to click on that new tab.
+[01:37] And this is going to, let me go to storage account.
+[01:39] So I'm going to open up this storage account,
+[01:41] which is the one that involves the backup.
+[01:44] From there, I'm going to click on the access control
+[01:47] little IM blade here, and we're going to click add
+[01:50] and then add roll assignment.
+[01:53] From there, we're going to scroll down.
+[01:54] We're going to look for a permission, a roll set here
+[01:58] that's going to give us permission, I should say,
+[02:00] called storage account backup contributor.
+[02:03] lets you perform backup and restore operations
+[02:06] using Azure Backup on a storage account.
+[02:08] This is what we need.
+[02:09] So we're gonna click View, okay?
+[02:12] Shows you all the permissions that you're gonna get.
+[02:14] That's great.
+[02:15] Go to Assignments, and we're gonna add an assignment.
+[02:19] Okay?
+[02:20] And let's go ahead and select it here.
+[02:23] There we go.
+[02:24] Select it.
+[02:25] click next, user group or service principal.
+[02:28] In our case, that's gonna be the option we go with.
+[02:30] We're gonna click select members.
+[02:32] Now, you would think you'd be adding yourself
+[02:35] or a user group or something like that,
+[02:37] but in this case, you're actually gonna add the vault.
+[02:39] You gotta give the vault permission.
+[02:41] So we're gonna search for the name My,
+[02:44] and I called it My Backup Vault Demo.
+[02:46] So I'm gonna select that,
+[02:47] and then we're gonna click select.
+[02:49] That point we're gonna click next.
+[02:52] All right.
+[02:54] It's telling me no role was selected.
+[02:58] So let me just make sure let's add that storage account.
+[03:01] There we go.
+[03:02] Storage account backup contributor.
+[03:05] And then we're gonna review and assign.
+[03:08] Okay, at that point, I'm gonna jump back over
+[03:11] to that screen that I did not close
+[03:13] and I'm gonna click revalidate.
+[03:16] And we'll give this just a moment
+[03:17] to go through that validation process.
+[03:20] All right, so I've got another error.
+[03:24] This has to do with a couple things. I've got a replication policy and I've got a lock put on my
+[03:31] storage account. This is actually good for you to see because this could happen in the real world
+[03:36] and this is how you would fix this. So let's go and fix it. I'm going to right click my menu
+[03:40] button, then right click resource groups. I'm going to go and open in a new tab.
+[03:45] It does not matter if you have the same resource groups as me.
+[03:48] for this demo. So don't worry about seeing my resource groups and wondering if yours match
+[03:53] mine. They don't matter. The only one that matters is this one right here in my case.
+[03:56] That's where my storage account is. So I'm going to go there and I'm going to click on locks. I
+[04:00] just want to make sure I don't have any locks and I do. So I'm going to delete these locks.
+[04:05] Okay. To stop me from being able to change things. All right. Now that I've done that,
+[04:12] we'll go back over here to overview. We're going to go into this exam line practice storage JC.
+[04:18] And I'm just going to scroll down and I'm looking for object replication.
+[04:23] This is a type of backup that when I played around with this exam lab practice storage
+[04:28] JC I was playing around with object replication and of course that creates a problem.
+[04:34] So I need to actually go in here and delete these the rules that are there.
+[04:40] Okay now we'll jump back over to this screen here and we're going to run revalidate yet
+[04:48] All right, and this time we have sweet victory.
+[04:51] It says success.
+[04:53] So we're good to go there.
+[04:55] And we're gonna go ahead and click next.
+[04:57] And we're gonna click configure backup.
+[05:00] And we're gonna let this go ahead and run through.
+[05:02] All right, so once that little backup process is done,
+[05:05] I might have to refresh, click refresh button to see,
+[05:08] but you should see that Azure Blob here.
+[05:11] Now I'm gonna click to restore
+[05:12] if I wanted to perform restore.
+[05:14] Select my backup instance. That's going to be this exam lab practice storage JC.
+[05:20] We'll select that. We'll click next and then the restore point. Select restore point.
+[05:25] We'll have to select the time frame that we're going to do restore and
+[05:28] does tell you that there's a certain time frame which you can, which would be, you know, recovering.
+[05:34] So I'm just going to check this little green time frame here.
+[05:38] and then I'm going to click select, we'll click restore parameters, and then we have select option
+[05:44] to restore the blobs. I'm going to restore all blobs or I could select specific containers to
+[05:49] restore or I could base it on a prefix that I want to type, right? I'm going to do restore all blobs
+[05:58] and then we're going to click validate and let this little validation process run through.
+[06:06] Review and restore and we are going to click restore.
+[06:09] There you go. That is the process for
+[06:13] performing a backup and restore utilizing a Azure Backup Vault.

@@ -1,0 +1,94 @@
+# 12 - Creating a free Azure Account
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/12 - Creating a free Azure Account.mp4
+Fetched On: 2026-10-21 19:43:17
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now if you're going to work with Azure, the first thing you're going to need to do is set up an Azure account.
+[00:06] Now you can of course learn Azure if you've already got an account with your company or something along those lines.
+[00:13] and you can do pay as you go and you can definitely learn Azure and play around with a lot of the resources by just
+[00:21] you know going through
+[00:23] The uh the learning process and then just removing Azure resources when you're done playing around
+[00:28] The majority of the Azure resources aren't going to really cost you anything as long as you don't leave them running for long periods of time
+[00:35] for example, I can create a virtual machine
+[00:37] and play around with that for a few hours today and you're talking about a couple of
+[00:43] pennies, you know, a few pennies worth of cost there. But one thing you can also do
+[00:50] is set up a free account and get what's called Azure Credit.
+[00:55] All right, so what I'm going to do is show you how to do that right now.
+[00:58] All right, so the first thing I want you to know is Microsoft changes the link
+[01:03] for the free Azure account on occasion. So what I've done is I've set up a link on my web page
+[01:08] that allows me to update this link anytime Microsoft changes it.
+[01:12] So if you'll go to examlabpractice.com slash Azure.
+[01:19] Okay, right up here.
+[01:20] If you'll type that into your URL,
+[01:22] it'll take you to this page right here.
+[01:24] And then you've got a link that says,
+[01:27] set up a free Azure account.
+[01:29] So we're gonna click that link.
+[01:30] So once we go to this next screen and keep in mind they change the screen frequently your screen might look a little different than mine but no big deal should be pretty easy to go from here.
+[01:41] You should be able to find a button that says start free. But before we do that let's just look at a couple of things.
+[01:58] Keep in mind you do have to associate a credit card with that but I'll mention that a little
+[02:01] bit more in a minute. But you do get 30 days of $200 credit. They will not charge you for that.
+[02:09] And the other interesting thing is even though you might associate it,
+[02:12] you'll have to associate a credit card with the account.
+[02:14] it does not begin charging your credit card after that either.
+[02:19] Basically, you have to manually switch it to what is called a pay-as-you-go account
+[02:24] before they'll ever charge you.
+[02:25] So don't stress over that.
+[02:28] But you will need some kind of a credit card in order to get the free account started.
+[02:36] We also get a bunch of free services for 12 months, okay?
+[02:40] So that's pretty neat.
+[02:42] You get $200 credit to play around with and add some of the paid services for 30 days.
+[02:47] And then there's actually quite a few of these free services that are available as
+[02:51] well.
+[02:52] They tell you 40 plus other services are free always that you get to play around with.
+[02:56] And then for up to a year up to 12 months.
+[02:59] a bunch of free services. So $200 credit for 30 days that you can put towards paid
+[03:04] services and then a bunch of free services that are available for 12 months.
+[03:09] So if you take a look here though it says after your credit keep getting the
+[03:14] free services. So check this out you get a bunch of free services you get Azure
+[03:20] Linux virtual machine to play
+[03:22] Play around with an Azure Windows virtual machine to play around with
+[03:26] SQL databases blob storage now a lot of the stuff you may not know what it is
+[03:30] But just stand by on that but ultimately though you get quite a few different services to play around with if you want to
+[03:36] See some of these other services you can simply just click
+[03:39] See all free services here, right and you can look at look at a few of the other things that you can do there
+[03:45] All right. So once we are ready to create a free account. We're just gonna click start free
+[03:50] At that point, it is going to require you to have an email address, okay?
+[03:56] So at that point if you have an existing email address you can use, you can do that.
+[04:02] However, I always recommend if you're starting out fresh, if this is you're just beginning with Azure
+[04:08] and or maybe you're really nervous about mixing it up with your company somehow, mixing up this
+[04:14] new account with your company's account or something, I recommend using a different browser
+[04:23] email address. Okay, that would be my advice. And so I'm going to click use another account.
+[04:31] And then from there it says, all right, do you have an email address? I'm gonna say no account,
+[04:34] I'm going to create one, right? So from there you can you can go right here, say create an account.
+[04:43] And if you don't have an email address, you can say get a new email address. So I'm just going to
+[04:54] Practice and I'll just say azure at Outlook.com, right?
+[05:00] So then I'll click Next.
+[05:02] All right, if it says it's not available, okay.
+[05:05] And it might not be available,
+[05:07] maybe somebody's used the name already,
+[05:10] maybe they don't like the name Azure
+[05:13] to be in the email address,
+[05:15] you know, there's various things they could do there.
+[05:17] So I'll just say, Exam Lab Practice.
+[05:20] Jc at Outlook.com. Okay, so that name is not taken at that point. I just need to create a email a password
+[05:29] So I'm just gonna put a password in there real quick and we'll click next
+[05:34] Set a you know set you up a birthday
+[05:41] I'll just put in there we go and then at that point it's creating you a email address
+[05:53] Alright, of course you gotta prove that you're not a robot, that's always fun, right?
+[05:57] Pick the penguin, there we go.
+[06:01] And we've now created ourselves an email address.
+[06:04] And again, I highly recommend doing that.
+[06:06] I highly recommend creating an email address just because...
+[06:09] That way you won't mix it up with any kind of a previous account or anything along those lines.
+[06:15] So at that point you just fill this out and I'm not going to be creating, I'm not going to fill this out myself just because I'm actually using it in a paid account that I've got because I've already set up too many free accounts as it is.
+[06:27] But you basically will fill this form out and then from there you'll finish up the form, submit it.
+[06:35] And at that point you should have your Azure account.
+[06:38] And from there you will log on to Azure by going to portal.azure.com.
+[06:44] All right. And you should be able to log on and you now officially get your account set up.
+[06:51] Which my account is the JC at examlabpractice.com and you are now officially
+[06:57] in Azure and ready to start working with some hands-on.

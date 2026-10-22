@@ -1,7 +1,7 @@
 # Transcript summary
 
-- Considered: 49
-- Transcribed: 49
+- Considered: 58
+- Transcribed: 58
 - Skipped: 0
 - Failed: 0
 
@@ -56,3 +56,12 @@
 - transcribed: `26 - Installing the Az commands and connecting to Azure.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/26 - Installing the Az commands and connecting to Azure.mp4 — Local whisper (small.en, cpu)
 - transcribed: `100 - Visualizing service endpoints and private endpoints.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/100 - Visualizing service endpoints and private endpoints.mp4 — Local whisper (small.en, cpu)
 - transcribed: `07 - Questions for John Christopher.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/07 - Questions for John Christopher.mp4 — Local whisper (small.en, cpu)
+- transcribed: `126 - Create and configure a backup policy.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/126 - Create and configure a backup policy.mp4 — Local whisper (small.en, cpu)
+- transcribed: `106 - Configure an internal or public load balancer.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/106 - Configure an internal or public load balancer.mp4 — Local whisper (small.en, cpu)
+- transcribed: `102 - Configure private endpoints for Azure PaaS.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/102 - Configure private endpoints for Azure PaaS.mp4 — Local whisper (small.en, cpu)
+- transcribed: `127 - Perform backup and restore operations by using Azure Backup.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/127 - Perform backup and restore operations by using Azure Backup.mp4 — Local whisper (small.en, cpu)
+- transcribed: `85 - Configure certificates & Transport Layer Security (TLS) & Map custom DNS names.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/85 - Configure certificates & Transport Layer Security (TLS) & Map custom DNS names.mp4 — Local whisper (small.en, cpu)
+- transcribed: `122 - Configure and interpret monitoring of VMs, etc by using Azure Monitor Insights.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/122 - Configure and interpret monitoring of VMs, etc by using Azure Monitor Insights.mp4 — Local whisper (small.en, cpu)
+- transcribed: `79 - Provision a container by using Azure Container Apps.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/79 - Provision a container by using Azure Container Apps.mp4 — Local whisper (small.en, cpu)
+- transcribed: `12 - Creating a free Azure Account.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/12 - Creating a free Azure Account.mp4 — Local whisper (small.en, cpu)
+- transcribed: `19 - Create groups in Microsoft 365.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/19 - Create groups in Microsoft 365.mp4 — Local whisper (small.en, cpu)

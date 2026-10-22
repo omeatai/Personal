@@ -1,0 +1,111 @@
+# 102 - Configure private endpoints for Azure PaaS
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/102 - Configure private endpoints for Azure PaaS.mp4
+Fetched On: 2026-10-21 19:40:35
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I don't want to take a look at how we could utilize a private endpoint with a VNet virtual machine, all that fun stuff.
+[00:08] Here I am on portal.azure.com.
+[00:10] If I go to virtual machines, you can see I have a virtual machine called WinServer1.
+[00:15] And then from there, if I click on networking, go under networking, click networking settings,
+[00:19] you can see my virtual network that this virtual machine is associated with and the subnet that it's on, VM subnet.
+[00:28] private endpoints right down here. We'll click on that and you can see there is none nor is there
+[00:33] a way to add it here. So to do that I'm going to go back to all services and I'm just going to
+[00:37] search for private endpoint. Now it's going to show up as private link. There we go you'll see
+[00:45] private link. We're going to go ahead and click that. All right and then from there it says
+[00:50] private endpoint. We're going to click to create private endpoint. Okay specify resource group.
+[00:56] Okay, so I could specify whatever resource group I want. I'll just do VM destination. That's where my virtual machine is. Give it a name
+[01:02] I'm just gonna call this private endpoint
+[01:07] demo
+[01:08] And you can see it's creating a little virtual NIC with that name. That's fine. We'll click next
+[01:14] Alright, and it says alright resources private link offers options to create private endpoints for different Azure resources like your private link service SQL
+[01:22] Azure storage account
+[01:23] All of that. So connection method will connect to an Azure resource in the directory. You can go by
+[01:28] resource ID. We're going to do directory. That's the most common way everybody does these days.
+[01:33] And we'll go resource type. All right. This is going to be a Azure storage account, right?
+[01:40] So we have to go through here and we have to look for that. So let's scan down the list.
+[01:51] There we go. Storage accounts.
+[01:53] And then we have our storage account.
+[01:56] I have a couple storage accounts.
+[01:57] I'm gonna go with this one here,
+[01:58] this exam lab practice one.
+[02:00] All right, that I'll select.
+[02:02] And then I can say, okay, we're just gonna target,
+[02:04] we'll link to blob storage.
+[02:07] Next, it's gonna detect the virtual networks,
+[02:11] but if there's different virtual networks
+[02:12] you wanted to use, you could.
+[02:14] So then Private IP, it'll just do a dynamic allocation,
+[02:16] although you could do a static address if you wanted.
+[02:18] Also, if you had an application security group,
+[02:20] you could specify that as well, okay?
+[02:24] Click next for DNS.
+[02:27] This is all right.
+[02:28] You're gonna use, it says you can integrate
+[02:30] a private DNS zone.
+[02:31] So if you set up what is called a private DNS zone,
+[02:33] we have a private DNS namespace, you could put that in.
+[02:37] I'm not gonna worry about any of that right now,
+[02:38] but if I did have that integrated private,
+[02:40] I could set that up with private DNS.
+[02:43] All right, so we'll go ahead and click next,
+[02:46] review and create.
+[02:48] It's gonna do a validation,
+[02:50] and then we're gonna go ahead and click to create.
+[02:52] I'll pause the recording while it's getting created.
+[02:55] All right, now that that's done, I'll just click Go to Resource, and here I am in the
+[02:59] Private Endpoint.
+[03:00] So you can see the Private Endpoint's been set up there.
+[03:03] All right.
+[03:04] And we did, I did just leave the default of the DNS name stuff, so it did create a Private
+[03:09] DNS name and all that fun stuff.
+[03:13] Okay.
+[03:14] So now, if I go back over, you can see that I've got this Private Endpoint NIC.
+[03:22] to my virtual machine. So we'll go back over to virtual machines here.
+[03:26] Win server 1. Alright.
+[03:30] We'll look under networking settings.
+[03:33] Alright. So we've got our networking settings for our virtual machine.
+[03:40] We've got our VNet here. Our VNet, sorry, our VNet.
+[03:44] Alright. We go down here to where it says private endpoints and you can see the private endpoint.
+[03:51] Linked there.
+[03:52] All right, so the private endpoint is right there.
+[03:56] It's been set up and when we look at our VNet,
+[04:02] it's connected to that VNet, our machine is on that VNet,
+[04:06] and so we've now got our private link set up, all right?
+[04:09] Okay, so with that being done now,
+[04:11] I actually don't wanna waste the Azure credit on that,
+[04:14] so I am gonna delete it.
+[04:15] I just wanna show you how we could set that up.
+[04:17] I'm gonna go over here to overview,
+[04:19] and I'm gonna click my VM destination resource group.
+[04:23] and I'm going to get rid of the following.
+[04:25] I'm going to get rid of these items here,
+[04:27] the stuff that involves the private link.
+[04:32] I believe that should be fine.
+[04:36] Yeah, the private link,
+[04:38] the private NIC, the DNS,
+[04:40] and we'll go ahead and go to delete.
+[04:44] I'm going to type the word delete,
+[04:46] and we'll delete those resources,
+[04:48] so they're not using Azure Credit.
+[04:50] Okay, now after I tried to delete all that I realized that I had messed something up here
+[04:55] I forgot that inside of this private link dot blob dot core dot windows dot net private DNS
+[05:01] There is something that needs to be taken care of so we're gonna open that up
+[05:06] Okay, once we've done that
+[05:08] We'll go right up under here under DNS management record set and then our virtual links
+[05:14] Virtual network links and then we're gonna delete this
+[05:18] Link right here this link name. So we're just gonna delete that and
+[05:23] Then once that gets deleted we should be able to successfully delete this
+[05:28] Private DNS zone name as well. Okay
+[05:32] So we'll just wait on that to get deleted. Okay now that that's done. We'll go back over here to overview
+[05:38] We'll click delete
+[05:39] It's gonna make us type the name
+[05:42] So I'm just gonna copy the name here and just paste that in and we'll click delete
+[05:48] And then we'll just wait and make sure that it gets deleted.
+[05:51] Alright, and that's it.
+[05:52] Good deal.
+[05:53] Got deleted.
+[05:54] And we are now ready to move on.

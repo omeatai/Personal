@@ -1,0 +1,80 @@
+# 85 - Configure certificates & Transport Layer Security (TLS) & Map custom DNS names
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/85 - Configure certificates & Transport Layer Security (TLS) & Map custom DNS names.mp4
+Fetched On: 2026-10-21 19:41:38
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I now want to talk about dealing with some of the security features that we
+[00:04] have involving our Azure App Services. Now this is going to involve working with
+[00:08] certificates and utilizing TLS transport layer security. So here I am on
+[00:13] portal.azure.com and if I click the menu button and go to all services I'll
+[00:18] just search for app service. You can see app services right here. So I'm going to
+[00:23] go into that and then here is the app service I have available. I'm going to
+[00:26] open that up. All right.
+[00:28] Now the first thing to be aware of when it comes to working with all of this is that, well, you actually do have security right out of the gates if you're using a default domain name with your Azure app service.
+[00:58] You can see the certificate is a TLS-based certificate,
+[01:02] Transport Layer Security, but it's based on Microsoft's Azure websites.net.
+[01:07] So you can see this is a website that Microsoft supports and owns.
+[01:12] But what about a situation where you want your own custom website name,
+[01:18] domain name in other words, and you want to use a certificate?
+[01:21] Well, I go over here under Settings and I look at Certificates.
+[01:28] All right, and I can click add, but I also have to have a custom domain name.
+[01:33] So if I close out of that, I come over here to custom domain names, you can purchase a
+[01:38] custom domain name that can be associated with this Azure app.
+[01:42] I can go here to add custom, and then you'll see these options right here.
+[01:46] The first says domain provider.
+[01:48] And so this is the idea that, you know, you've got to specify where your custom domain is
+[01:53] hosted or purchased from.
+[01:58] In this case, if you purchase domain directly through the Azure App Service,
+[02:02] okay, you would have to buy a name through the App Service, or you could say all other domain
+[02:06] services, that would be like third party, like perhaps you've purchased your name through
+[02:09] somebody like GoDaddy, right? So then at that point, you'd have to enter in the name that
+[02:16] you've purchased. So maybe I've purchased the name, examlabpracticeappservice.com. Okay,
+[02:27] I would then have to validate that I own the name.
+[02:30] And it would say you can validate it by essentially going and adding this text record.
+[02:34] And then you can click validate and it would validate that you own it.
+[02:37] So you would do that through the actual registrar, the company that you...
+[02:43] purchase the name through. So that's the idea there. Another thing you'll notice
+[02:47] there is the TLS SSI type and it says SNI SSL or IP based SSL. So SNI is
+[02:54] server name indication and I'd say this is probably the most common. It uses a
+[02:59] shared IP address that can be used for multiple sites using different host
+[03:04] headers. So it works well for almost all browsers and operating systems. So
+[03:12] that use the same IP but TLS will still route securely by domain name. So it
+[03:18] gives you a little bit more flexibility. The IP based SSL, this is a
+[03:25] dedicated public IP address. Okay it's going to be assigned to your app service
+[03:30] just for that one certificate. This is going to cost more but you could use
+[03:35] that if you're wanting a dedicated IP address and all that.
+[03:39] So when should you use this? I would say you're dealing with maybe a legacy client that doesn't support the newer SNI type
+[03:47] Okay, so then you've got you know the certificates gonna be TLS SSL certificate
+[03:52] I'm gonna do an app service managed certificate or I'll say just add the app the certificate later
+[03:57] Right and at that point I would click add a service domain well
+[04:01] I don't have a service domain, so I could say let's create one. So then you come in here and
+[04:05] this is where you get into actually going through and purchasing a domain name. Now I'm not actually
+[04:09] going to do that, but obviously you could purchase a domain name. Once you purchase a domain name,
+[04:14] now you'll be able to come over here to certificates and you'd be able to add
+[04:19] a certificate for that custom domain name. Okay.
+[04:22] Now another alternative is that you could be purchasing a certificate or create a certificate through some other service like GoDaddy or one of those and at that point you can actually import through a PFX file or a you can also supply if you're just doing digital signatures you can use what's called the public key certificate which is a CRE file.
+[04:43] But that's that's if you're going to host it, the certificate is coming from somewhere else,
+[04:47] third party or whatever. But that's where you can go and you can add a certificate. Now the other
+[04:52] piece of this that I want to show you is right here on configuration. So go to settings and
+[04:58] then configuration. And this is where we can go through and validate that we are going to support
+[05:04] a certain version of TLS. So right here, you can see that the minimum version is 1.2. And these
+[05:12] shouldn't go below 1.2 for security purposes, but they will let you if you had no choice.
+[05:19] All right, maybe you've got some backwards compatibility, you need to go with an older one.
+[05:22] But the other thing is this HTTPS only. So you don't you generally speaking, you don't usually
+[05:27] want a website these days to ever be HTTP. In fact, a lot of web browsers, if you go to a website
+[05:38] keeps people from wanting to visit the website because they get that security warning. So generally
+[05:42] you always want HTTPS to be there. So the main takeaways here from all of this is to know that
+[05:50] you've got a certificate with your app service. You're just using Microsoft's.
+[05:55] If you're wanting to use a custom domain,
+[05:58] then you will have to figure out another way to get a certificate. And so
+[06:01] generally speaking you would go and you would purchase a custom domain either
+[06:05] through a third-party registrar like GoDaddy or somebody like that. Okay. Or
+[06:10] you can purchase it directly through here. Then you've you basically you got
+[06:15] that domain and that point you can set up a digital certificate.
+[06:18] Then you can use that custom domain with that digital certificate
+[06:22] So it's actually pretty straightforward and then if you want to configure the version of TLS and force
+[06:27] HTTPS you'll do that from the configuration blade
