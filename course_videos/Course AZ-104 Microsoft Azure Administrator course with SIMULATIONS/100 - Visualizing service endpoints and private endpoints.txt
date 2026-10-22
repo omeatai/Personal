@@ -1,0 +1,71 @@
+# 100 - Visualizing service endpoints and private endpoints
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/100 - Visualizing service endpoints and private endpoints.mp4
+Fetched On: 2026-10-21 19:38:20
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] I'd now like to help you understand the difference between something called a service endpoint
+[00:04] versus a private endpoint.
+[00:07] Okay, so first thing I'm going to do is we're going to just move this up here and we're
+[00:15] going to split the screen in half here.
+[00:18] Half of the screen will represent service endpoint, the other half will represent the
+[00:22] private endpoint.
+[00:30] here and an internet connection over here. Okay this is going to represent the
+[00:38] Azure environment. This box here so this is going to be Azure representing Azure
+[00:45] as a whole and I am just gonna copy and paste that over. Okay all right we move
+[00:54] the internet up a little bit over here. Alright and there you go. So there's our
+[01:02] And the thing you understand is obviously that Azure is producing different types of services.
+[01:09] These services are in the forms of resources that Azure is providing.
+[01:13] And we have different, we have other resources such as virtual machines that need to interact
+[01:20] with these different services that are running inside of Azure. For example, you might have a
+[01:26] storage account. Okay. And that
+[01:30] storage account resource obviously is providing access to data maybe blobs or
+[01:37] something like that for Azure okay and of course you've got a let's say this is
+[01:44] a virtual machine all right and let me create a vnet here this is going to be
+[01:52] our vnet and then over here we have subnet so the
+[02:01] the virtual machine is sitting on a subnet.
+[02:04] Okay.
+[02:05] So all that's fine and dandy, right?
+[02:07] Now, this virtual machine needs to interact with that storage account.
+[02:12] Now, traditionally, the way that storage accounts work, and some other services in Azure is,
+[02:17] they're connected to the internet, and what happens is your virtual machine goes, would
+[02:21] end up having to use the address of the storage account to get to it, it actually has to go
+[02:27] out to the internet.
+[02:30] doesn't make a lot of sense if the storage account is on the Azure network and the virtual
+[02:35] machine is on the Azure network. Why can't this virtual machine just talk directly to the storage
+[02:41] account? Well that is exactly what a service endpoint does. A service endpoint allows virtual
+[02:48] machines to be able to communicate directly with storage accounts on the Azure environment without
+[02:59] Okay, now you're going to find that this is essentially also what a private endpoint does,
+[03:06] but let's talk about some differences. With service endpoints, you could have
+[03:13] multiple storage accounts, and when you enable a service endpoint,
+[03:19] all storage accounts in your region become available.
+[03:24] to that virtual machine to communicate with directly.
+[03:27] No longer does it have to go out to the internet and then back in
+[03:30] you can talk to those directly. Now with a let's copy this information and
+[03:38] we're going to move it over to the private endpoint side of things.
+[03:42] This is the private endpoint method. With a private endpoint it's a one-to-one
+[03:47] connection.
+[03:48] Okay, and so what ends up happening is when you establish a private endpoint, you are just going to attach a single storage account.
+[03:58] Now, to clarify something else that's kind of interesting here is that your storage account will actually get a vNIC.
+[04:18] storage account is linked through that vNIC and it can have a private IP address.
+[04:23] Over here, these storage accounts continue to have their public address, but when your
+[04:30] virtual machine hits the public address, maybe it queries the DNS name of the storage account or
+[04:35] whatever, uh...
+[04:36] Even though it's hitting the public address, it never leaves the Azure network.
+[04:39] It never actually has to route outside of Azure onto the internet and back in.
+[04:43] It stays within Azure.
+[04:44] And that's the way it would work for both of these.
+[04:46] But with a private endpoint, when you set that up, the storage account gets a vNIC associated
+[04:53] with it, which can be associated with the subnet.
+[04:56] And the virtual machine can talk to that vNIC and talk to the storage account directly.
+[05:00] And it is a one-to-one communication.
+[05:03] This storage account would be accessible by this VM without having to go out to the Internet, but this one would not.
+[05:09] And so you really kind of have to decide which route you want to go.
+[05:14] It's more work, obviously, to do it this way, but there are the benefit of having a private address and you have that one-to-one communication going if you want.
+[05:24] But ultimately you can still go this route.
+[05:27] and get the job done quickly. And my experience has been most people just you just enable service
+[05:32] endpoints and not do a whole lot with private endpoints. But you have both options available
+[05:37] to you and they're relatively easy to activate.

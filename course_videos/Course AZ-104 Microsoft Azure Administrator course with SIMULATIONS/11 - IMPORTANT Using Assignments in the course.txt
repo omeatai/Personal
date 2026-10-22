@@ -7,3 +7,77 @@ Transcript Type: Local whisper (small.en, cpu)
 
 ---
 
+[00:00] Alright everybody, so before we get started, it's very important that you understand how assignments work.
+[00:05] Now assignments are where the simulations are going to be. You're going to see these assignments
+[00:10] periodically throughout the course and you're going to get to practice the simulations.
+[00:15] But one of the problems that sometimes people will complain about is when they finish the
+[00:19] simulation it doesn't get checked off. And I want to show you how to how to do this. I want to show
+[00:29] that uses LRS then create a container. So we'll click start assignment. You need
+[00:34] to read this information right here first. Alright one of the things that
+[00:38] it's going to tell you to do is right click where it says click here and
+[00:42] you're going to click open in a new tab. So whatever web browser you're using you
+[00:46] need to open the simulation in a new tab. Now why do you need to do that?
+[00:50] Because unfortunately I can't host the simulations on Udemy and the
+[00:57] the simulation website that hosts it for me. I can't just redirect you back to this page.
+[01:02] So what you want to do is open it in a new tab, do the simulation, close the tab, and you'll be
+[01:07] back on this screen. Okay, so I'll open in a new tab. Here we are on the simulation. I'll start it.
+[01:14] Okay, I'm just going to click through it real quick.
+[01:17] Alright, of course in the actual course itself you're going to learn what all this stuff
+[01:21] is that you're actually doing.
+[01:23] So if you're looking at it and you don't really know what you're doing, don't worry because
+[01:26] I will be explaining all this.
+[01:28] You'll get a chance to learn what all of the clicks are.
+[01:32] So ultimately though you're going to get to the end of the assignment after performing
+[01:36] the assignment.
+[01:37] You're going to come to this screen.
+[01:38] It says, congratulations you've completed a simulation.
+[01:40] You can close this browser tab.
+[01:42] Alright, so if you close the browser tab, that's going to bring you back to the assignment
+[01:49] screen.
+[01:50] At that point, there's going to be a question.
+[01:53] You click next, did it work smoothly for you?
+[01:55] So you can just put yes if it works smoothly for you.
+[01:58] And then what you need to do is you need to submit it.
+[02:03] And so you're going to submit it.
+[02:08] If you made sure you submitted it, you should be able to refresh your web browser and the checkbox will get checked off
+[02:14] Okay, but here's the thing
+[02:15] It really does not matter if that checkbox is checked off or not.
+[02:19] I have had I have seen bugs in the Udemy system where it won't check off.
+[02:23] It does not matter. You will still be able to get your certificate at the end
+[02:27] of the course. As long as all the videos are checked off,
+[02:31] it does not matter if the assignments are checked off.
+[02:34] So don't stress if that checkbox doesn't get checked off, but you should
+[02:37] be able to refresh your web browser and it should get checked off.
+[02:40] Alright guys, I did want to say one more small thing.
+[02:44] I just have a small request from you guys.
+[02:46] I work really hard to try to put together a solid course for you guys.
+[02:53] I really really try to get the simulations working really well for you guys.
+[02:58] I've put hours of time in on those and I hope you enjoy those.
+[03:03] And that's one of the big things that I'm trying to do with examlabpractice.com is provide
+[03:08] these hands-on tutorials, hands-on simulations, and
+[03:12] make this course different from the other courses. And as far as I know,
+[03:16] I'm the only instructor that's out there putting these little sims together as well as trying
+[03:21] to provide that hands-on with you.
+[03:24] For exam-related courses, a lot of the exams now have the hands-on side of it, and the
+[03:31] simulations are going to prepare you for those and give you a chance to practice those.
+[03:37] One thing that you've got to understand is things are always changing.
+[03:43] always changing and from one week to the other something can change. I try to stay on top of
+[03:49] things on that. I try to make sure that the course courses are updated and I try to really do take
+[03:55] pride in that and it's very important to me. One thing that's important to me is I take it
+[04:00] personally. Your happiness as one of my students is incredibly important to me and I want you guys
+[04:11] to try to get back to you and make sure you're happy with things.
+[04:16] And I ask something out of you and that is if you're unhappy with something
+[04:20] please please let me know. It's hard sometimes if somebody
+[04:25] jumps to a conclusion on something and they just give a
+[04:28] bad rating on the course and it severely hurts the course.
+[04:32] when people give bad ratings and sometimes things will be unfounded
+[04:38] and sometimes things are just small little requests that can be fixed and
+[04:42] I'm not asking you not to rate the course bad. I'm not asking you to rate the course
+[04:46] good but I want you to be honest but I also want you to give me a chance if possible to fix things.
+[04:51] So if you're ever unhappy with something please let me know and again I want to
+[04:57] be available to you for other things. If you're struggling with something
+[05:01] get in touch with me. I try to go over and beyond the norm but you gotta communicate
+[05:07] with me in order to do that. I just want you guys to know I really do care and I would really
+[05:12] appreciate you rating the course and giving me some feedback and helping me improve and
+[05:19] if there's anything I can do just let me know. Alright guys I appreciate it and I hope you
+[05:24] enjoy the course.

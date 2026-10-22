@@ -1,0 +1,96 @@
+# 26 - Installing the Az commands and connecting to Azure
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/26 - Installing the Az commands and connecting to Azure.mp4
+Fetched On: 2026-10-21 19:37:46
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Now when you plan to manage resources in Azure with PowerShell, there's a few fundamental things to be aware of.
+[00:07] There's going to be two main ways that you interact with your cloud services regarding Azure.
+[00:14] Number one, you're going to be managing Azure resources with PowerShell.
+[00:23] AZ commands, also sometimes referred to as the AZ commandlets. And these commands are going to
+[00:28] be utilizing the ability to do things like creating and modifying virtual machines and resource groups
+[00:36] and
+[00:36] you know, your storage that you're storing in the cloud, storage accounts, and load balancers,
+[00:42] and virtual networks, and you name it. These are called the AZ commands. Okay, now on the other
+[00:48] side of that, when you're interacting with Microsoft Intra, Intra ID, that's where you
+[00:53] start getting into managing users and groups and things like that. That's going to use
+[00:58] what's called the Graph API Commandments.
+[01:01] And this is another way of doing things.
+[01:04] Now in this video, I'm only gonna be focusing
+[01:06] on getting the AZ commands installed
+[01:10] so that we can use those commands.
+[01:12] I'm not gonna jump into Graph in this video.
+[01:14] We're just gonna focus on getting the Azure commands.
+[01:17] So where do these AZ commands come from?
+[01:20] Well, if we go out to the PowerShell Gallery,
+[01:22] powershellgallery.com, this is a repository
+[01:25] where Microsoft has all their various
+[01:28] types of commands and the commands are stored in these things called modules.
+[01:31] Okay, in fact I can go right here and just search the letters AZ, hit enter and
+[01:35] you can see the AZ module right here. It's made up of a lot of different
+[01:40] commands. They tell you how many people have downloaded it and all of that stuff,
+[01:44] the different versions. Okay, now in my case I'm gonna I'm gonna use this
+[01:48] command right here to install but I'm gonna modify it just a little bit. So
+[01:51] here's what we're gonna do. We're gonna type install-module
+[01:56] space dash name space AZ space dash force that means go ahead and force it
+[02:07] to install don't pop any messages up just agree to whatever so you can get
+[02:12] the thing installed and then
+[02:14] dash allow clobber that's if there is an older version already on the hard drive of these commandlets
+[02:20] I'm gonna go ahead and overwrite those
+[02:22] Okay
+[02:22] Now something else I want to mention here is that when we go to install it if it's the very first time you've ever
+[02:28] installed anything from PowerShell gallery you may get a message that has you
+[02:33] confirm that it's okay to configure something called nougat nougat is a
+[02:38] Provider that is allows you to download commands
+[02:42] from places like the PowerShell Gallery.
+[02:45] So just be aware of that.
+[02:46] You might get a message about installing NuGet.
+[02:50] If that's the case, you're just gonna hit yes to that.
+[02:52] I'm not gonna see that on my screen
+[02:54] because I've already installed commands in the past.
+[02:57] Okay, so I'm gonna hit enter.
+[03:00] Now.
+[03:00] In your case, if this is the first time you've ever installed these commandlets,
+[03:04] it may take a little while for them to get installed.
+[03:08] All right, you may see, you may or may not see some things flashing across the screen.
+[03:12] Ultimately, it should get installed within a couple of minutes or so,
+[03:17] and then you'll be able to connect into Azure. I'm going to pause the recording while this
+[03:21] is getting installed on my end. All right, now that that's done, I can connect to...
+[03:26] my Azure environment. So I'm going to use this command connect dash AZ. I'm going to hit the
+[03:32] tab key. It's going to auto fill that in. I'm going to hit enter and then it should pop a box up.
+[03:38] In my case it's telling me it's as both AZ and Azure modules were detected on the machine.
+[03:44] I can remove that other module. I'm not going to worry about any of that right now.
+[03:48] Okay, I'm going to hit work or school here. Continue. I'm going to authenticate.
+[03:58] Okay, it's asking me I want to join my organization.
+[04:02] I've got some different types of configurations
+[04:05] installed on my environment.
+[04:06] Yours may or may not do this if you're doing this with me.
+[04:09] I'm not gonna support that right now.
+[04:11] I'm gonna say no this app only.
+[04:13] And I should be authenticated here.
+[04:15] So I'm now connected to my Azure environment.
+[04:18] If I type git dash command,
+[04:22] and I can type dash noun, and we'll say,
+[04:26] AZ star you can see it's going to
+[04:31] Cycle through hundreds of Azure related commands, okay
+[04:36] Let's say I want to see one involving a virtual machine. I could type get command dash noun
+[04:42] It will say star VM star
+[04:47] Okay, you can see all these commands involving a virtual machine
+[04:53] Okay, including if I wanted to create
+[04:56] a new virtual machine, I'd use that.
+[04:59] If you're talking about a resource group,
+[05:01] just hit the up arrow a couple of times,
+[05:03] let's say resource group star.
+[05:08] You can see commands for creating resource groups.
+[05:10] Okay. Not diving into creating a bunch
+[05:12] of resources and all that in this video.
+[05:15] The only thing I wanted to accomplish here was just
+[05:16] getting connected into Azure.
+[05:19] Then also helping you understand that when you're
+[05:21] working with Azure resources,
+[05:23] you'll mostly be using these AZ commands.
+[05:27] Regarding Azure where you're creating users and groups,
+[05:29] that's where Graph comes into play.

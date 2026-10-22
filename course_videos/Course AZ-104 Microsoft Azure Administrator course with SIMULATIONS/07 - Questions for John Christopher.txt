@@ -1,0 +1,88 @@
+# 07 - Questions for John Christopher
+
+Source: course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/07 - Questions for John Christopher.mp4
+Fetched On: 2026-10-21 19:38:50
+Language: English
+Transcript Type: Local whisper (small.en, cpu)
+
+---
+
+[00:00] Hey everyone, I just wanted to make a quick video involving
+[00:04] questions and comments that you guys have for me. Now first off I want you to
+[00:09] know that this video is going to be in all my courses from this point on so if
+[00:14] you've already seen this video you don't have to watch it. Alright, but I would
+[00:17] like you to watch it if you haven't seen it. I want you all to know that
+[00:22] you're always welcome to message me with questions. I love hearing from you
+[00:26] guys. Anytime you want to get in touch with me you're always more than
+[00:34] I've got tens of thousands of people that are taking my courses at any given time and
+[00:39] I'm very, very thankful for that and I feel very blessed to have the opportunity to teach
+[00:44] so many people.
+[00:46] But with that comes the fact that I'm getting bombarded with lots and lots of questions
+[00:51] and I do my very best to answer every single question that I get.
+[01:00] going over answering questions. So much so that I felt like I needed to address this.
+[01:07] So just a couple of fast things here. First off, please be patient with me. Again, because
+[01:12] I am getting tens of thousands of people taking my courses at any given time, it's
+[01:16] very tough for me to be able to respond to the amount of questions that I'm getting in
+[01:21] a short period of time. So please be patient. I will definitely try to respond to you as
+[01:25] soon as I can. Okay?
+[01:28] Secondly, if you feel like you really need to get your question answered as fast as possible,
+[01:36] I want to show you a couple of quick tricks for looking things up involving official information
+[01:42] and getting your question answered maybe before I can respond back to you.
+[01:45] So let me show you something real fast.
+[01:47] Okay, now before you look at the screen and you laugh and you say, John Christopher is
+[01:50] just going to show us how to Google stuff.
+[01:55] how to search for specific pieces of information
+[01:58] and find it in the official documentation, okay,
+[02:02] that Microsoft puts out, all right.
+[02:04] So let's say that I'm trying to look up something
+[02:06] on Microsoft 365 dynamic query based groups, right.
+[02:12] I can go right here and I can just search
+[02:13] for the word Microsoft 365
+[02:16] and I'm gonna put in dynamic groups, okay.
+[02:19] Of course if you typo it you can always fix that right?
+[02:22] And what you want to look for is this these headings right here docs.microsoft.com.
+[02:28] Those are the official articles and you can always get the latest and greatest information there.
+[02:34] Okay remember that Microsoft is constantly changing things
+[02:39] and it's a constant battle with me to try to update things but
+[02:42] I always tell people you just got to get used to changes in the cloud.
+[02:46] Microsoft is constantly changing things and it is what it is.
+[02:51] They change things week after week after week.
+[02:53] If I...
+[02:55] updated my videos every single week I still wouldn't be able to stay on top of it because
+[03:02] they're updating things so fast.
+[03:03] They're changing buttons, moving things around.
+[03:05] Our life and IT is we just got to get used to that.
+[03:08] So you can find the latest and greatest articles right here.
+[03:13] So look for docs.microsoft.com.
+[03:15] You can go there.
+[03:17] And you can look at their official content right here.
+[03:21] And most of the time, the vast majority of the questions that I get...
+[03:27] can you can quickly find your answers right there in those articles okay but
+[03:31] again i'm not trying to discourage you guys messaging me please message me if
+[03:34] you want to message me just please be patient with me
+[03:36] and i definitely will uh we'll get back to you uh as fast as i can the other
+[03:41] the other thing i get a lot of is uh do you have this course out do you have
+[03:44] that course out you can find all of the courses the
+[03:47] current courses that i have available on exam lab practice.com those are all
+[03:56] go there you can view that all the courses are there that I currently have available.
+[04:00] Alright, so feel free to always check that website out.
+[04:04] Also sometimes there'll be deals running and things like that.
+[04:08] So definitely, you know, definitely check that out.
+[04:10] The next thing that I get the question I get a lot is I can't get one of the assignments
+[04:14] to work or I need I can't get my certificate because the course the courses I'm not done
+[04:21] you need to watch the video on assignments at the beginning of the class. That means you probably skipped over it, you didn't watch it.
+[04:27] Please watch that video and that will take care of you. Okay. The last thing I want to address is...
+[04:34] Actually, second to last thing I want to address is, is the course updated?
+[04:38] I work very, very hard to update my courses. I take a lot of pride in that. Okay.
+[04:43] So yeah, I definitely am trying to stay on top of keeping the courses updated.
+[04:49] Alright, but I get that question constantly.
+[04:51] Just know that I'll try to respond back to you as soon as I can.
+[04:55] Alright, and the last thing I want to mention is if you're taking a course that involves an exam...
+[05:01] do I have any exam questions and all that. I'm not allowed to recommend anything other than
+[05:07] Udemy on that. So when you'll get a response from me that'll basically say you have to go to Udemy
+[05:12] and you can search for questions on there. I'm literally not allowed to recommend another place
+[05:19] for you. So you have to get your questions off Udemy. That's the only response I can give you.
+[05:24] All right. All right everybody. Thank you for watching this video and again I hope you enjoy
+[05:31] free to get in touch with me anytime you want. You can message me. I'll do my best
+[05:35] to get back to you. Alright and I'm very excited to have you on board with the
+[05:39] course and and go on this adventure.

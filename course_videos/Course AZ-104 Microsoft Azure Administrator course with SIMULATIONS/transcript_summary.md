@@ -1,7 +1,7 @@
 # Transcript summary
 
-- Considered: 45
-- Transcribed: 45
+- Considered: 49
+- Transcribed: 49
 - Skipped: 0
 - Failed: 0
 
@@ -52,3 +52,7 @@
 - transcribed: `109 - Configure SNAT outbound rules.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/109 - Configure SNAT outbound rules.mp4 — Local whisper (small.en, cpu)
 - transcribed: `14 - Activating an Entra ID P2 license.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/14 - Activating an Entra ID P2 license.mp4 — Local whisper (small.en, cpu)
 - transcribed: `23 - Configure self-service password reset (SSPR).txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/23 - Configure self-service password reset (SSPR).mp4 — Local whisper (small.en, cpu)
+- transcribed: `11 - IMPORTANT Using Assignments in the course.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/11 - IMPORTANT Using Assignments in the course.mp4 — Local whisper (small.en, cpu)
+- transcribed: `26 - Installing the Az commands and connecting to Azure.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/26 - Installing the Az commands and connecting to Azure.mp4 — Local whisper (small.en, cpu)
+- transcribed: `100 - Visualizing service endpoints and private endpoints.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/100 - Visualizing service endpoints and private endpoints.mp4 — Local whisper (small.en, cpu)
+- transcribed: `07 - Questions for John Christopher.txt` — course_videos/Course AZ-104 Microsoft Azure Administrator course with SIMULATIONS/07 - Questions for John Christopher.mp4 — Local whisper (small.en, cpu)
