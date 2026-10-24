@@ -4,9 +4,7 @@
 
 ## TOPICS
 
-- [ ] [AZURE CLOUD](https://www.udemy.com/courses/search/?src=ukw&q=azure)
-- [ ] [AZURE SERVERLESS](https://www.udemy.com/courses/search/?src=ukw&q=azure+serverless)
-- [ ] [AI](https://www.udemy.com/courses/search/?src=ukw&q=ai)
+- [ ] [AZURE - UDEMY](https://www.udemy.com/courses/search/?src=ukw&q=azure)
 
 ## AZURE CLOUD
 
