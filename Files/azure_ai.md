@@ -8,7 +8,7 @@
 
 ## AZURE CLOUD
 
-## Phase 1: Foundation Core
+## Phase 0: Fundamentals
 
 <details>
 <summary><strong>+Contents</strong></summary>
@@ -20,6 +20,13 @@
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
+
+
+## Phase 1: Foundation Core
+
+
+
+
 
 ### +AZ-104: Azure Administrator Associate
 - [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
