@@ -21,12 +21,27 @@
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
 
+### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
+- [ ] [John Christopher | Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
+- [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
+- [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
 
-## Phase 1: Foundation Core
+### +AI-901: Azure AI Fundamentals
+- [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-901/)
+- [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
+- [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
+
+### DP-900: Azure Data Fundamentals
+- [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-900/)
+- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+- [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
+- [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
 
 
-
-
+## Phase 1: Associate Core
 
 ### +AZ-104: Azure Administrator Associate
 - [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
@@ -37,25 +52,6 @@
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/exam/az-104.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-104/view/)
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
-
-### +AZ-802: Windows Server Administrator Associate
-- [ ] [John Christopher | AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
-- [ ] [John Christopher | Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
-
-### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [John Christopher | AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
-
-## Phase 2: Security Core
-
-### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
-- [ ] [John Christopher | Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
-- [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
-- [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
 
 ### +SC-300: Identity and Access Administrator Associate
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
@@ -70,13 +66,28 @@
 - [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
 
-## Phase 3: AI Developer Core
+### +AZ-700: Azure Network Engineer Associate
+- [ ] [AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/?couponCode=MT261019G1)
+- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
 
-### +AI-901: Azure AI Fundamentals
-- [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-901/)
-- [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
-- [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
+### DP-300: Azure Database Administrator Associate
+- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
+
+### +AZ-802: Windows Server Administrator Associate
+- [ ] [John Christopher | AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
+- [ ] [John Christopher | Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/?couponCode=MT261019G1)
+- [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
+
+### +AZ-140: Azure Virtual Desktop Specialty
+- [ ] [John Christopher | AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/?couponCode=MT261019G1)
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
+
+
+## Phase 2: AI Developer Core
 
 ### +AI-200: Azure AI Cloud Developer Associate (replaces AZ-204, retired July 31, 2026)
 - [ ] [Microsoft Learn | AI-200: Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/training/courses/ai-200t00)
@@ -90,27 +101,8 @@
 - [ ] [Microsoft Learn | DP-800: SQL AI Developer Associate](https://learn.microsoft.com/en-us/training/courses/dp-800t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-800/)
 
-## Phase 4: Associate Hybrid
 
-### +AZ-700: Azure Network Engineer Associate
-- [ ] [AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-### DP-900: Azure Data Fundamentals
-- [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-900/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-- [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
-- [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
-
-### DP-300: Azure Database Administrator Associate
-- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-## Phase 5: The Expert Core
+## Phase 3: The Expert Core
 
 ### +AZ-305: Azure Solutions Architect Expert
 - [ ] [Microsoft Learn | AZ-305: Azure Solutions Architect Expert](https://learn.microsoft.com/en-us/training/courses/az-305t00)
@@ -128,32 +120,29 @@
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Alan Rodrigues | SC-100: Microsoft Cybersecurity Architect](https://www.udemy.com/course/azure200/)
 
-## Phase 6: Other Data Systems & Architecture
+
+## Phase 4: Other Data Systems & Architecture
 
 ### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
 - [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-750: Azure Databricks Data Engineer Associate
 - [ ] [Microsoft Learn | DP-750: Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-750t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-750/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
-
-### DP-420: Azure Cosmos DB Developer Specialty
-- [ ] [Microsoft Learn | DP-420: Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/training/courses/dp-420t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-420/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-700: Fabric Data Engineer Associate
 - [ ] [Microsoft Learn | DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-700/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 
 ### DP-600: Fabric Analytics Engineer Associate
 - [ ] [Microsoft Learn | DP-600: Fabric Analytics Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-600t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-600/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
+
+### DP-420: Azure Cosmos DB Developer Specialty
+- [ ] [Microsoft Learn | DP-420: Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/training/courses/dp-420t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-420/)
+
 
 ## AZURE SERVERLESS
 
