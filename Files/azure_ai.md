@@ -2,11 +2,7 @@
 
 [Back to Personal Page](../README.md)
 
-## TOPICS
-
-- [ ] [AZURE - UDEMY](https://www.udemy.com/courses/search/?src=ukw&q=azure)
-
-## AZURE CLOUD
+## AZURE CLOUD [| UDEMY](https://www.udemy.com/courses/search/?src=ukw&q=azure)
 
 ## Phase 0: Fundamentals
 
