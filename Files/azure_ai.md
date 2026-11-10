@@ -6,10 +6,6 @@
 
 ## Phase 0: Fundamentals
 
-<details>
-<summary><strong>+Contents</strong></summary>
-</details>
-
 ### +AZ-900: Azure Fundamentals 
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
