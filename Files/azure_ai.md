@@ -12,14 +12,15 @@
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend ](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 - [ ] [John Christopher | AZ-900 Microsoft Azure Fundamentals with SIMULATIONS](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-with-simulations/)
+- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend ](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 
 ### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
-- [ ] [John Christopher | Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
 - [ ] [Scott Duffy | SC-900 Microsoft Security Exam Practice Tests](https://www.udemy.com/course/sc900-azure-tests/)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-900/)
+- [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/sc-900/)
+- [ ] [Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
+- [ ] [John Christopher | SC-900: Microsoft Security, Compliance, & Identity with SIMS](https://www.udemy.com/course/sc-900-microsoft-security-compliance-identity-with-sims/)
 
 ### +AI-901: Azure AI Fundamentals
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
