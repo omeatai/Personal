@@ -12,6 +12,8 @@
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-900/exam/az-900.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
+- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend ](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
+- [ ] [John Christopher | AZ-900 Microsoft Azure Fundamentals with SIMULATIONS](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-with-simulations/)
 
 ### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 - [ ] [John Christopher | Microsoft Learn | SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
