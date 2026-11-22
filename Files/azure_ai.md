@@ -45,21 +45,28 @@
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/exam/az-104.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-104/view/)
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
-- [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
+- [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/)
 - [ ] [*** NOTES *** | John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/course/1.md)
 
 ### +SC-300: Identity and Access Administrator Associate
-- [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
+- [ ] [Scott Duffy | SC-300 Microsoft Identity and Access Administrator Exam Prep](https://www.udemy.com/course/sc300-azure/)
+- [ ] [Scott Duffy | SC-300 Identity and Access Admin Practice Tests 2026]([https://www.udemy.com/course/az104-examcram/](https://www.udemy.com/course/sc300-azure-practice/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
+- [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
+- [ ] [John Christopher | SC-300 Course: Microsoft Identity and Access Administrator](https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/)
 
 ### +SC-200: Security Operations Analyst Associate
-- [ ] [Microsoft Learn | SC-200: Security Operations Analyst Associate](https://learn.microsoft.com/en-us/training/courses/sc-200t00)
+- [ ] [John Christopher | SC-200 Microsoft Security Operations Analyst Course & SIMs](https://www.udemy.com/course/microsoft-security-operations-analyst-course-sims/)
+- [ ] [John Christopher | SC-200 Microsoft Security Operations Analyst Practice Exams](https://www.udemy.com/course/microsoft-security-operations-analyst-sc-200-practice-exams/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-200/)
+- [ ] [Microsoft Learn | SC-200: Security Operations Analyst Associate](https://learn.microsoft.com/en-us/training/courses/sc-200t00)
 
 ### +SC-500: Microsoft Cloud and AI Security Engineer Associate
-- [ ] [John Christopher | SC-500 Cloud & AI Security Engineer Associate HandsOn Course](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
+- [ ] [Scott Duffy | SC-500 Microsoft Azure Security Technologies Exam Prep](https://www.udemy.com/course/az500-azure/)
+- [ ] [Scott Duffy | SC-500 Cloud and AI Security Engineer Practice Tests](https://www.udemy.com/course/sc500-tests/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-500/)
+- [ ] [Microsoft Learn | SC-500: Microsoft Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
+- [ ] [John Christopher | SC-500 Cloud & AI Security Engineer Associate HandsOn Course](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/)
 
 ### +AZ-700: Azure Network Engineer Associate
 - [ ] [AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/?couponCode=MT261019G1)
