@@ -28,16 +28,12 @@
 - [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
 - [ ] [John Christopher | AI-901: Microsoft Azure AI Course with Hands On Simulations](https://www.udemy.com/course/ai-901-microsoft-azure-ai-course-with-hands-on-simulations/)
 
-
 ### DP-900: Azure Data Fundamentals
 - [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-900/)
 - [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
-
-
-## Phase 1: Associate Core
 
 ### +AZ-104: Azure Administrator Associate
 - [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
@@ -70,6 +66,10 @@
 ### DP-300: Azure Database Administrator Associate
 - [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
+
+### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
+- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
 
 ### +AZ-802: Windows Server Administrator Associate
 - [ ] [John Christopher | AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
@@ -118,10 +118,6 @@
 
 
 ## Phase 4: Other Data Systems & Architecture
-
-### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
-- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
 
 ### DP-750: Azure Databricks Data Engineer Associate
 - [ ] [Microsoft Learn | DP-750: Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/training/courses/dp-750t00)
