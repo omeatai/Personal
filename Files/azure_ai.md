@@ -13,7 +13,6 @@
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-900/view/)
 - [ ] [Microsoft Learn | AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/training/courses/az-900t00)
 - [ ] [John Christopher | AZ-900 Microsoft Azure Fundamentals with SIMULATIONS](https://www.udemy.com/course/az-900-microsoft-azure-fundamentals-with-simulations/)
-- [ ] [In28Minutes | AZ-900 Microsoft Azure Fundamentals in a Weekend ](https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/)
 
 ### +SC-900: Microsoft Security, Compliance, and Identity Fundamentals
 - [ ] [Scott Duffy | SC-900 Microsoft Security Fundamentals Exam Prep](https://www.udemy.com/course/sc900-azure/)
@@ -23,10 +22,12 @@
 - [ ] [John Christopher | SC-900: Microsoft Security, Compliance, & Identity with SIMS](https://www.udemy.com/course/sc-900-microsoft-security-compliance-identity-with-sims/)
 
 ### +AI-901: Azure AI Fundamentals
-- [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-901/)
 - [ ] [Scott Duffy | AI-901 Azure AI Fundamentals Exam Preparation](https://www.udemy.com/course/ai900-azure/)
 - [ ] [Scott Duffy | AI-900 Azure AI Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/ai900-azure-tests/)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-901/)
+- [ ] [Microsoft Learn | AI-901: Azure AI Fundamentals](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
+- [ ] [John Christopher | AI-901: Microsoft Azure AI Course with Hands On Simulations](https://www.udemy.com/course/ai-901-microsoft-azure-ai-course-with-hands-on-simulations/)
+
 
 ### DP-900: Azure Data Fundamentals
 - [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
