@@ -79,8 +79,11 @@
 - [ ] [John Christopher | AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/)
 
 ### DP-300: Azure Database Administrator Associate
-- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
+- [ ] [Scott Duffy | DP-300: Azure Relational Database Administrator Exam Prep](https://www.udemy.com/course/dp300-azure/)
+- [ ] [Scott Duffy | DP-300: Administering Azure SQL 100% Original Practice Exam](https://www.udemy.com/course/dp300-azure-practice/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-300/)
+- [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
+- [ ] [Phillip Burton | DP-300 prep: Azure Database Administrator Associate (DBA)](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/)
 
 ### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
 - [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
