@@ -29,23 +29,24 @@
 - [ ] [John Christopher | AI-901: Microsoft Azure AI Course with Hands On Simulations](https://www.udemy.com/course/ai-901-microsoft-azure-ai-course-with-hands-on-simulations/)
 
 ### DP-900: Azure Data Fundamentals
-- [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
-- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-900/)
-- [ ] [-----------------------------------------------------](https://github.com/omeatai/Personal/blob/main/Files/azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
+- [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-900/)
+- [ ] [Microsoft Learn | DP-900: Azure Data Fundamentals](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
+- [ ] [John Christopher | DP-900 Azure Data Fundamentals hands on course with sims](https://www.udemy.com/course/azure-data-fundamentals-hands-on-course-with-sims/)
+
 
 ## Phase 1: Associate Core
 
 ### +AZ-104: Azure Administrator Associate
-- [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
-- [ ] [*** NOTES *** | John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/course/1.md)
 - [ ] [Scott Duffy | AZ-104 Microsoft Azure Administrator - Complete Exam Prep](https://www.udemy.com/course/70533-azure/)
 - [ ] [Scott Duffy | AZ-104 Exam Cram: Microsoft Azure Administrator in 3 Hours](https://www.udemy.com/course/az104-examcram/)
 - [ ] [Scott Duffy | AZ-104 Azure Administrator Original Practice Tests 2026](https://www.udemy.com/course/az104-azure-practice/)
 - [ ] [Practice Exam](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/exam/az-104.md)
 - [ ] [Exam Prep ](https://www.secexams.com/exams/Microsoft/az-104/view/)
 - [ ] [Microsoft Learn | AZ-104: Azure Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-104t00)
+- [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
+- [ ] [*** NOTES *** | John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/course/1.md)
 
 ### +SC-300: Identity and Access Administrator Associate
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
