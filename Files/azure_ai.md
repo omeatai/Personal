@@ -6,6 +6,9 @@
 
 ## Phase 0: Fundamentals
 
+### Azure Basics
+- [ ] [Memi Lavi | Microsoft Azure: From Zero to Hero - The Complete Guide](https://www.udemy.com/course/microsoft-azure-from-zero-to-hero-the-complete-guide/)
+
 ### +AZ-900: Azure Fundamentals 
 - [ ] [Scott Duffy | Master Microsoft Azure Fundamentals: AZ-900](https://www.udemy.com/course/az900-azure/)
 - [ ] [Scott Duffy | AZ-900: Microsoft Azure Fundamentals Original Practice Tests](https://www.udemy.com/course/az900-azure-tests/)
@@ -50,7 +53,7 @@
 
 ### +SC-300: Identity and Access Administrator Associate
 - [ ] [Scott Duffy | SC-300 Microsoft Identity and Access Administrator Exam Prep](https://www.udemy.com/course/sc300-azure/)
-- [ ] [Scott Duffy | SC-300 Identity and Access Admin Practice Tests 2026]([https://www.udemy.com/course/az104-examcram/](https://www.udemy.com/course/sc300-azure-practice/)
+- [ ] [Scott Duffy | SC-300 Identity and Access Admin Practice Tests 2026](https://www.udemy.com/course/sc300-azure-practice/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/sc-300/)
 - [ ] [Microsoft Learn | SC-300: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
 - [ ] [John Christopher | SC-300 Course: Microsoft Identity and Access Administrator](https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/)
@@ -69,9 +72,11 @@
 - [ ] [John Christopher | SC-500 Cloud & AI Security Engineer Associate HandsOn Course](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/)
 
 ### +AZ-700: Azure Network Engineer Associate
-- [ ] [AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
+- [ ] [Scott Duffy | AZ-700 Designing and Implementing Azure Networking Exam Prep](https://www.udemy.com/course/az700-azure/)
+- [ ] [Scott Duffy | AZ-700 Azure Networking 100% Original Practice Exam](https://www.udemy.com/course/az700-azure-practice/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-700/)
+- [ ] [Microsoft Learn | AZ-700: Azure Network Engineer Associate](https://learn.microsoft.com/en-us/training/courses/az-700t00)
+- [ ] [John Christopher | AZ-700 Designing & Implementing Azure Networking with SIMS](https://www.udemy.com/course/az-700-designing-implementing-azure-networking-with-sims/)
 
 ### DP-300: Azure Database Administrator Associate
 - [ ] [Microsoft Learn | DP-300: Azure Database Administrator Associate](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
