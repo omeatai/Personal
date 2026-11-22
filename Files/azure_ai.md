@@ -150,9 +150,7 @@
 - [ ] [Microsoft Learn | DP-420: Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/training/courses/dp-420t00)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/dp-420/)
 
-
-## AZURE SERVERLESS
-
+### AZURE SERVERLESS
 - [ ] [Alan Rodrigues | Terraform on Azure](https://www.udemy.com/course/terraform-on-azure-services/)
 - [ ] [Alan Rodrigues | Mastering Azure PowerShell](https://www.udemy.com/course/azure-powershell/)
 - [ ] [Alan Rodrigues | Docker and Kubernetes - Your complete guide](https://www.udemy.com/course/docker-and-more/)
@@ -160,8 +158,7 @@
 - [ ] [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers)
 - [ ] [AWS Serverless APIs & Apps - A Complete Introduction](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
 
-## AI
-
+### AI
 - [ ] [Next JS ChatGPT clone with Next.JS & OpenAI (NextJS 13 2023)](https://www.udemy.com/course/nextjs-chatgpt/)
 - [ ] [Next JS & Open AI / GPT: Next-generation Next JS & AI apps](https://www.udemy.com/course/next-js-ai/)
 - [ ] [Introduction to OpenAI API & ChatGPT API for Developers](https://www.udemy.com/course/introduction-to-openai-api-chatgpt-api-chatgpt-plugins/)
