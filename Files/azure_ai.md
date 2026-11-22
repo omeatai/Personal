@@ -86,20 +86,24 @@
 - [ ] [Phillip Burton | DP-300 prep: Azure Database Administrator Associate (DBA)](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/)
 
 ### +AI-300: Machine Learning Operations (MLOps) Engineer Associate
-- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
+- [ ] [Christopher Nett | AI-300: Machine Learning Operations Engineer Associate](https://www.udemy.com/course/ai-300-machine-learning-operations-engineer-associate-z/)
+- [ ] [Joel Palmer | AI-300 Practice Tests 2026 Machine Learning Associate](https://www.udemy.com/course/ai-300-practice-tests-march-2026-machine-learning-associate/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/ai-300/)
+- [ ] [Microsoft Learn | AI-300: Machine Learning Operations (MLOps) Engineer Associat](https://learn.microsoft.com/en-us/training/courses/ai-300t00)
+- [ ] [Kiljot Singh | AI-300: Azure Machine Learning Operations Engineer Exam Prep](https://www.udemy.com/course/ai-300-azure-machine-learning-operations-engineer-exam-prep/)
 
 ### +AZ-802: Windows Server Administrator Associate
-- [ ] [John Christopher | AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/?couponCode=MT261019G1)
-- [ ] [John Christopher | Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
+- [ ] [John Christopher | AZ-802: Administering Windows Server Certification Course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/)
+- [ ] [John Christopher | Windows Server: Advanced Administration Hands On Course](https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/)
+- [ ] [Scott Duffy | AZ-802 Windows Server Administrator Practice Tests](https://www.udemy.com/course/az802-tests/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-802/)
+- [ ] [Microsoft Learn | AZ-802: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/training/courses/az-802t00)
 
 ### +AZ-140: Azure Virtual Desktop Specialty
-- [ ] [John Christopher | AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/?couponCode=MT261019G1)
-- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
+- [ ] [John Christopher | AZ-140 Configuring & Operating MS Azure Virtual Desktop AVD](https://www.udemy.com/course/az-140-configuring-operating-ms-azure-virtual-desktop-avd/)
+- [ ] [Scott Duffy | AZ-140 Azure Virtual Desktop Practice Tests 2026](https://www.udemy.com/course/azure-az140-test/)
 - [ ] [Exam Prep ](https://www.examtopics.com/exams/microsoft/az-140/)
-
+- [ ] [Microsoft Learn | AZ-140: Azure Virtual Desktop Specialty](https://learn.microsoft.com/en-us/training/courses/az-140t00)
 
 ## Phase 2: AI Developer Core
 
