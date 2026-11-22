@@ -35,6 +35,8 @@
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals Exam Preparation](https://www.udemy.com/course/dp900-azure/)
 - [ ] [Scott Duffy | DP-900 Azure Data Fundamentals 100% Original Practice Exam](https://www.udemy.com/course/dp900-azure-practice/)
 
+## Phase 1: Associate Core
+
 ### +AZ-104: Azure Administrator Associate
 - [ ] [John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://www.udemy.com/course/az-104-microsoft-azure-administrator-course-with-simulations/?couponCode=MT261019G1)
 - [ ] [*** NOTES *** | John Christopher | AZ-104 Microsoft Azure Administrator course with SIMULATIONS](https://github.com/omeatai/Personal/blob/main/Files/azure/az-104/course/1.md)
